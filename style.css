@@ -2,38 +2,39 @@ body{
     background:#000;
     color:#fff;
     font-family:Arial,sans-serif;
-    font-size:22px;
-    line-height:2;
+    font-size:24px;
+    line-height:2.4;
     max-width:900px;
     margin:auto;
-    padding:25px;
+    padding:30px;
+    word-spacing:2px;
 }
 
 h1{
-    font-size:38px;
-    font-weight:bold;
+    font-size:40px;
+    font-weight:900;
     text-align:center;
-    color:#fff;
-    margin-bottom:25px;
+    margin-bottom:35px;
 }
 
 h2{
-    font-size:30px;
-    font-weight:bold;
-    color:#fff;
-    border-bottom:2px solid #fff;
-    padding-bottom:10px;
-    margin-top:30px;
+    font-size:32px;
+    font-weight:900;
+    margin-top:40px;
+    margin-bottom:25px;
+    border-bottom:3px solid #fff;
+    padding-bottom:12px;
 }
 
 p{
-    font-size:22px;
+    margin-bottom:28px;
     text-align:justify;
-    margin-bottom:20px;
 }
 
-a{
-    color:#4da3ff;
-    text-decoration:none;
-    font-weight:bold;
+li{
+    margin-bottom:18px;
+}
+
+strong{
+    color:#ffd700;
 }
