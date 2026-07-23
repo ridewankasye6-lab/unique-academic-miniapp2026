@@ -93,3 +93,16 @@ body.dark .card {
     width: 100%;
     cursor: pointer;
 }
+.chapterNav {
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.chapterNav a {
+    background:#007bff;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    text-decoration:none;
+}
