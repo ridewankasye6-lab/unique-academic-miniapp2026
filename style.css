@@ -137,3 +137,21 @@ body.dark .card {
 .startBtn:hover{
     background:#0056b3;
 }
+<div class="stats">
+
+<div class="statBox">
+<h3>12</h3>
+<p>📚 Subjects</p>
+</div>
+
+<div class="statBox">
+<h3>100+</h3>
+<p>📄 Notes</p>
+</div>
+
+<div class="statBox">
+<h3>24/7</h3>
+<p>🎓 Study Anytime</p>
+</div>
+
+</div>
