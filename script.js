@@ -58,3 +58,24 @@ bookmarks.forEach((button, index)=>{
 });
 
 });
+const progressBar = document.getElementById("progressBar");
+const progressText = document.getElementById("progressText");
+
+if(progressBar){
+
+progressBar.oninput = function(){
+
+progressText.innerHTML = progressBar.value + "%";
+
+localStorage.setItem("progress", progressBar.value);
+
+};
+
+let savedProgress = localStorage.getItem("progress");
+
+if(savedProgress){
+    progressBar.value = savedProgress;
+    progressText.innerHTML = savedProgress + "%";
+}
+
+}
