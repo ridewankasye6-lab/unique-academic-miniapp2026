@@ -152,6 +152,9 @@ body.dark .card{
 /* Added because your HTML uses .stats and .statBox */
 .stats{
     display:flex;
+justify-content:center;
+flex-wrap:wrap;
+    display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
