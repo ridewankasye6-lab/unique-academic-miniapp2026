@@ -82,3 +82,10 @@ body.dark .card {
     border-radius: 20px;
     cursor: pointer;
 }
+.bookmarkBtn {
+    background: #ffc107;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
