@@ -12,3 +12,15 @@ function searchSubjects() {
         }
     }
 }
+const modeBtn = document.getElementById("modeBtn");
+
+modeBtn.onclick = function(){
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        modeBtn.innerHTML = "☀️ Light Mode";
+    }
+    else{
+        modeBtn.innerHTML = "🌙 Dark Mode";
+    }
+}
