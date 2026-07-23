@@ -51,3 +51,13 @@ footer{
     border-radius:12px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+#search{
+    width:90%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+    padding:12px;
+    font-size:16px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
