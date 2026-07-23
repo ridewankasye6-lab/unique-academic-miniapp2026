@@ -1,113 +1,119 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.8;
+}
 
-body{  
-    font-family: Arial, sans-serif;  
-    margin:0;  
-    background:#f4f6f9;  
-    color:#333;  
-    line-height:1.8;  
-}  
-  
-header{  
-    background:#1e3a8a;  
-    color:white;  
-    text-align:center;  
-    padding:25px;  
-}  
-  
-.card{  
-    background:white;  
-    margin:15px;  
-    padding:20px;  
-    border-radius:12px;  
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);  
-}  
-  
-.button{  
-    display:inline-block;  
-    background:#2563eb;  
-    color:white;  
-    padding:10px 18px;  
-    text-decoration:none;  
-    border-radius:8px;  
-}  
-  
-.button:hover{  
-    background:#1d4ed8;  
-}  
-  
-footer{  
-    text-align:center;  
-    padding:20px;  
-    background:#1e3a8a;  
-    color:white;  
-    margin-top:30px;  
-}  
-  
-/* Chapter pages */  
-.chapter{  
-    max-width:900px;  
-    margin:25px auto;  
-    padding:25px;  
-    background:white;  
-    border-radius:12px;  
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);  
-}  
-#search{  
-    width:90%;  
-    max-width:500px;  
-    display:block;  
-    margin:20px auto;  
-    padding:12px;  
-    font-size:16px;  
-    border-radius:10px;  
-    border:1px solid #ccc;  
-}  
-  
-body.dark {  
-    background: #121212;  
-    color: white;  
-}  
-  
-body.dark header {  
-    background: #000;  
-}  
-  
-body.dark .card {  
-    background: #1e1e1e;  
-    color: white;  
-}  
-  
-#modeBtn {  
-    padding: 10px 15px;  
-    border: none;  
-    border-radius: 20px;  
-    cursor: pointer;  
-}  
-.bookmarkBtn {  
-    background: #ffc107;  
-    border: none;  
-    padding: 8px 15px;  
-    border-radius: 15px;  
-    cursor: pointer;  
-}  
-#progressBar {  
-    width: 100%;  
-    cursor: pointer;  
-}  
-.chapterNav {  
-    display:flex;  
-    justify-content:space-between;  
-    margin-top:30px;  
-}  
-  
-.chapterNav a {  
-    background:#007bff;  
-    color:white;  
-    padding:10px 20px;  
-    border-radius:20px;  
-    text-decoration:none;  
-}  
-hero{
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.card{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.button{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.button:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1e3a8a;
+    color:white;
+    margin-top:30px;
+}
+
+/* Chapter pages */
+.chapter{
+    max-width:900px;
+    margin:25px auto;
+    padding:25px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+#search{
+    width:90%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+    padding:12px;
+    font-size:16px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+body.dark{
+    background:#121212;
+    color:white;
+}
+
+body.dark header{
+    background:#000;
+}
+
+body.dark .card{
+    background:#1e1e1e;
+    color:white;
+}
+
+#modeBtn{
+    padding:10px 15px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.bookmarkBtn{
+    background:#ffc107;
+    border:none;
+    padding:8px 15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+/* Fixed: class instead of ID */
+.progressBar{
+    width:100%;
+    cursor:pointer;
+}
+
+.chapterNav{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.chapterNav a{
+    background:#007bff;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+/* Fixed: .hero instead of hero */
+.hero{
     text-align:center;
     padding:40px 20px;
 }
@@ -139,3 +145,29 @@ hero{
     background:#0056b3;
 }
 
+/* Added because your HTML uses .stats and .statBox */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px auto;
+}
+
+.statBox{
+    background:white;
+    width:200px;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.statBox h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.statBox p{
+    margin:0;
+}
