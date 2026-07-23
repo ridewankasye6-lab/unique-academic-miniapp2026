@@ -58,24 +58,26 @@ bookmarks.forEach((button, index)=>{
 });
 
 });
-const progressBar = document.getElementById("progressBar");
-const progressText = document.getElementById("progressText");
+const progressBars = document.querySelectorAll(".progressBar");
+const progressTexts = document.querySelectorAll(".progressText");
 
-if(progressBar){
 
-progressBar.oninput = function(){
+progressBars.forEach((bar,index)=>{
 
-progressText.innerHTML = progressBar.value + "%";
+let saved = localStorage.getItem("progress"+index);
 
-localStorage.setItem("progress", progressBar.value);
-
-};
-
-let savedProgress = localStorage.getItem("progress");
-
-if(savedProgress){
-    progressBar.value = savedProgress;
-    progressText.innerHTML = savedProgress + "%";
+if(saved){
+    bar.value = saved;
+    progressTexts[index].innerHTML = saved+"%";
 }
 
+
+bar.oninput = function(){
+
+progressTexts[index].innerHTML = bar.value+"%";
+
+localStorage.setItem("progress"+index, bar.value);
+
 }
+
+});
