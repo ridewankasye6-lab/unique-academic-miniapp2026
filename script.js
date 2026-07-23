@@ -24,3 +24,21 @@ modeBtn.onclick = function(){
         modeBtn.innerHTML = "🌙 Dark Mode";
     }
 }
+const bookmarks = document.querySelectorAll(".bookmarkBtn");
+
+bookmarks.forEach(button => {
+
+    button.onclick = function(){
+
+        if(button.innerHTML === "⭐ Bookmark"){
+            button.innerHTML = "⭐ Saved";
+            button.style.background = "green";
+        }
+        else{
+            button.innerHTML = "⭐ Bookmark";
+            button.style.background = "#ffc107";
+        }
+
+    };
+
+});
