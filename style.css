@@ -250,3 +250,30 @@ footer{
         gap:20px;
     }
 }
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px auto;
+}
+
+.statBox{
+    background:#fff;
+    width:200px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.statBox h3{
+    color:#1e3a8a;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.statBox p{
+    margin:0;
+}
