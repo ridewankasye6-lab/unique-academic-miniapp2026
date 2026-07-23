@@ -61,3 +61,24 @@ footer{
     border-radius:10px;
     border:1px solid #ccc;
 }
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark header {
+    background: #000;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+#modeBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
