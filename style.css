@@ -112,12 +112,12 @@ body.dark .card{
     text-decoration:none;
 }
 
-/* Fixed: .hero instead of hero */
 .hero{
     text-align:center;
     padding:40px 20px;
+    max-width:900px;
+    margin:0 auto;
 }
-
 .hero h2{
     font-size:32px;
     margin-bottom:15px;
@@ -130,9 +130,10 @@ body.dark .card{
     font-size:18px;
 }
 
+
 .startBtn{
     display:inline-block;
-    margin-top:20px;
+    margin:20px auto;
     padding:12px 25px;
     background:#007bff;
     color:white;
@@ -140,7 +141,6 @@ body.dark .card{
     border-radius:25px;
     font-weight:bold;
 }
-
 .startBtn:hover{
     background:#0056b3;
 }
