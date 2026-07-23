@@ -24,33 +24,37 @@ modeBtn.onclick = function(){
         modeBtn.innerHTML = "🌙 Dark Mode";
     }
 }
+document.addEventListener("DOMContentLoaded", function(){
+
 const bookmarks = document.querySelectorAll(".bookmarkBtn");
 
-bookmarks.forEach((button, index) => {
+bookmarks.forEach((button, index)=>{
 
-    // Check saved bookmarks
-    if(localStorage.getItem("bookmark" + index) === "saved"){
+    if(localStorage.getItem("bookmark"+index) === "saved"){
         button.innerHTML = "⭐ Saved";
         button.style.background = "green";
     }
 
     button.onclick = function(){
 
-        if(button.innerHTML === "⭐ Bookmark"){
+        if(button.innerHTML.includes("Bookmark")){
 
             button.innerHTML = "⭐ Saved";
             button.style.background = "green";
 
-            localStorage.setItem("bookmark" + index, "saved");
+            localStorage.setItem("bookmark"+index,"saved");
 
-        } else {
+        }else{
 
             button.innerHTML = "⭐ Bookmark";
             button.style.background = "#ffc107";
 
-            localStorage.removeItem("bookmark" + index);
+            localStorage.removeItem("bookmark"+index);
+
         }
 
     };
+
+});
 
 });
