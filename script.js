@@ -26,17 +26,29 @@ modeBtn.onclick = function(){
 }
 const bookmarks = document.querySelectorAll(".bookmarkBtn");
 
-bookmarks.forEach(button => {
+bookmarks.forEach((button, index) => {
+
+    // Check saved bookmarks
+    if(localStorage.getItem("bookmark" + index) === "saved"){
+        button.innerHTML = "⭐ Saved";
+        button.style.background = "green";
+    }
 
     button.onclick = function(){
 
         if(button.innerHTML === "⭐ Bookmark"){
+
             button.innerHTML = "⭐ Saved";
             button.style.background = "green";
-        }
-        else{
+
+            localStorage.setItem("bookmark" + index, "saved");
+
+        } else {
+
             button.innerHTML = "⭐ Bookmark";
             button.style.background = "#ffc107";
+
+            localStorage.removeItem("bookmark" + index);
         }
 
     };
