@@ -45,15 +45,49 @@ footer{
 }
 
 /* Chapter pages */
+
 .chapter{
     max-width:900px;
-    margin:25px auto;
-    padding:25px;
-    background:white;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    margin:30px auto;
+    padding:35px;
+    background:#111;
+    color:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    line-height:2;
+    font-size:18px;
+}
+.chapter h1{
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:25px;
 }
 
+.chapter h2{
+    color:#ffd54f;
+    font-size:28px;
+    font-weight:bold;
+    margin-top:30px;
+}
+
+.chapter p{
+    font-size:18px;
+    line-height:2;
+    margin-bottom:18px;
+    text-align:justify;
+}
+
+.chapter b{
+    color:#ffffff;
+    font-weight:bold;
+}
+
+.chapter a{
+    color:#4da3ff;
+    text-decoration:none;
+    font-weight:bold;
+}
 #search{
     text-align:center;
 margin:20px auto;
