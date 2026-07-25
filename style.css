@@ -212,3 +212,38 @@ flex-wrap:wrap;
 .statBox p{
     margin:0;
 }
+.dashboard{
+    max-width:900px;
+    margin:30px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.dashboardGrid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.dashCard{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.dashCard a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    font-size:18px;
+}
+
+body.dark .dashCard{
+    background:#1e1e1e;
+}
+
+body.dark .dashCard a{
+    color:white;
+}
