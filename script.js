@@ -81,3 +81,36 @@ localStorage.setItem("progress"+index, bar.value);
 }
 
 });
+// Continue Learning
+const openButtons = document.querySelectorAll(".button");
+
+openButtons.forEach(button => {
+
+    if(button.innerHTML.includes("📖 Open")){
+
+        button.onclick = function(){
+
+            localStorage.setItem("lastSubject", button.parentElement.querySelector("h3").innerText);
+
+            localStorage.setItem("lastLink", button.href);
+
+        }
+
+    }
+
+});
+
+const lastSubject = localStorage.getItem("lastSubject");
+const lastLink = localStorage.getItem("lastLink");
+
+if(lastSubject){
+
+    document.getElementById("continueText").innerHTML =
+    "Last opened: " + lastSubject;
+
+    document.getElementById("continueBtn").href = lastLink;
+
+    document.getElementById("continueBtn").innerHTML =
+    "Continue Reading";
+
+}
