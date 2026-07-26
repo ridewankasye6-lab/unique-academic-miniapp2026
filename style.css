@@ -247,3 +247,19 @@ body.dark .dashCard{
 body.dark .dashCard a{
     color:white;
 }
+.note{
+background:#fff8c4;
+padding:15px;
+border-left:5px solid orange;
+border-radius:10px;
+margin:20px 0;
+}
+
+h2{
+color:#2563eb;
+margin-top:25px;
+}
+
+b{
+color:#d32f2f;
+}
