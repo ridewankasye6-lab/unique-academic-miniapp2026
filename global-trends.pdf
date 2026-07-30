@@ -1,0 +1,651 @@
+Your PDF content has been converted directly into clean HTML, exactly preserving all text, bullet points (including checks, squares, and circles), headings, bold text, and formatting structure to fit within your existing chapter page.
+### Converted HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Trends - Chapter 2</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, 'Abyssinica SIL', 'Nyala';
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #111;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px 40px;
+        }
+        .header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .header-title {
+            font-size: 20pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header-subtitle {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #444;
+            margin-top: 5px;
+        }
+        .telegram-note {
+            font-size: 9.5pt;
+            color: #555;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #1a252f;
+            border-left: 4px solid #2c3e50;
+            padding-left: 8px;
+        }
+        h3 {
+            font-size: 11.5pt;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        .bullet-square {
+            list-style-type: square;
+        }
+        .bullet-check {
+            list-style-type: none;
+            position: relative;
+            padding-left: 18px;
+        }
+        .bullet-check::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .bullet-circle {
+            list-style-type: disc;
+        }
+        .bullet-open-circle {
+            list-style-type: circle;
+        }
+        .note-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-title">Global Trends</div>
+    <div class="header-subtitle">Chapter 2</div>
+    <div class="telegram-note">More Quick Notes, Telegram: @campus_handout / https://t.me/campus_handout</div>
+</div>
+
+<h2>Chapter Two: Understanding Foreign Policy and Diplomacy</h2>
+
+<h3>Foreign policy</h3>
+<ul>
+    <li>It is the actions, decisions and goals that states pursue towards the outside world</li>
+    <li>the deriving motives behind foreign policy is the pursuit of national interest
+        <ul>
+            <li class="bullet-check">States adopt foreign policy to achieve and promote their national interests</li>
+        </ul>
+    </li>
+    <li>Foreign policy is shaped by both external/systemic factors and internal factors</li>
+</ul>
+
+<p><strong>external/systemic factor</strong></p>
+<ul>
+    <li>International regimes, international organizations</li>
+    <li>the prevalence of great powers at international level</li>
+</ul>
+
+<p><strong>internal factors</strong></p>
+<ul>
+    <li>economic, technological and military capabilities of states</li>
+</ul>
+
+<h2>2.1. Defining National Interest</h2>
+
+<h3>National interest</h3>
+<ul>
+    <li>the raison de tat, (the reason of state), to justify its actions and policy towards other states at international level</li>
+    <li>set of values, orientation, goals and objectives a given country would like to achieve in its international relations</li>
+</ul>
+
+<p><strong>controversies on the exact meaning, scope and contents of national interests</strong></p>
+
+<p><strong>According to A. K. Holsti</strong></p>
+<ul>
+    <li class="bullet-check">an image of the future state of affairs and future set of conditions that governments through individual policy makers aspire to bring about by wielding influence abroad and by changing or sustaining the behaviors of other states</li>
+    <li class="bullet-check">Power or the ability to influence the behaviors of other states is underscored as the primary instrument to implement national interest</li>
+</ul>
+
+<p><strong>According to Seabury</strong></p>
+<ul>
+    <li class="bullet-check">In normative sense - set of purposes which a nation...should seek to realize in the conduct of its foreign relations</li>
+    <li class="bullet-check">descriptive sense - those purposes which the nation [states] through its leadership appears to pursue persistently over time</li>
+</ul>
+
+<p><strong>whether national interest can be defined objectively(science) or whether it is a subjective enterprise (art)</strong></p>
+
+<p><strong>For Plato</strong></p>
+<ul>
+    <li>the good of the polis (that is the public good) could best be arrived at by philosopher king aided by a few highly learned, detached and fair-minded advisors</li>
+    <li>Plato's ideas have been used as the inspiration for dictatorial forms of government
+        <ul>
+            <li class="bullet-check">assuming that they should emphasize substance and wisdom of policies rather than procedural issues such as public debate, consultation, participation and criticism</li>
+            <li class="bullet-check">one person with strength, wisdom, knowledge, and, above all, power can make good decisions than participatory decision making</li>
+        </ul>
+    </li>
+    <li>foreign policy decision is not necessarily a clear-cut and rational process, Policies are often generated through great internal political and bureaucratic debates</li>
+</ul>
+
+<h3>criteria used in defining national interest</h3>
+
+<h4>1. Operational Philosophy</h4>
+<ul>
+    <li class="bullet-square">Depending on time, location, your orientation toward the world around you, and in particular the action of your predecessors, you may choose one of two major style of operation</li>
+</ul>
+
+<p><strong>act in a bold and sweeping fashion/ synoptic orientation</strong></p>
+<ul>
+    <li class="bullet-check">Up on taking office, introduce major new practices, policies, and institutions and discontinue</li>
+    <li class="bullet-check">assuming there is enough information to develop a major policy with some confidence that its consequence can be predicted or controlled</li>
+</ul>
+
+<p><strong>act in caution, probing, and experimental fashion/ incremental</strong></p>
+<ul>
+    <li class="bullet-check">following the trial and error approach</li>
+    <li class="bullet-check">assuming complexity of political and economic problems and worrying about their consequence</li>
+    <li class="bullet-check">seeks to perfect existing legislations, policies, institutions and practices</li>
+</ul>
+
+<h4>2. Ideological Criteria</h4>
+<ul>
+    <li class="bullet-square">identify their friends or enemies countries using the litmus test of ideology</li>
+    <li>Example: During cold war, the ideology of communism and capitalism</li>
+</ul>
+
+<h4>3. Moral and Legal Criteria</h4>
+<ul>
+    <li class="bullet-square">act morally</li>
+    <li class="bullet-square">moral behavior, in international politics involves:
+        <ul>
+            <li class="bullet-check">keeping your promise-treaties</li>
+            <li class="bullet-check">living and letting others live (the poor and the disadvantaged)</li>
+            <li class="bullet-check">avoiding exploitation and uneven development between the developing countries and the developed ones</li>
+        </ul>
+    </li>
+    <li class="bullet-square">Generally standing up for the principles to which you are morally committed and that are widely accepted in your culture</li>
+</ul>
+
+<h4>4. Pragmatic Criteria</h4>
+<ul>
+    <li class="bullet-square">orientation is low key, matter of fact, not on emotions and professions</li>
+    <li class="bullet-square">look at issues and events around you and the world with sense of prudence and with sort of rationality</li>
+    <li class="bullet-square">Act on the basis of the scientific analysis of cost and benefit or merit and demerit to your country interest
+        <ul>
+            <li>without considering normative issues, issues that involves judgment, be it bad or good</li>
+        </ul>
+    </li>
+</ul>
+
+<h4>5. Professional Advancement Criteria</h4>
+<ul>
+    <li class="bullet-square">consideration of your professional survival and growth, in short your personal success</li>
+    <li class="bullet-square">leaders might choose conformity to either to popular pressure or to strong elites whose support they consider indispensable for their political survival</li>
+    <li class="bullet-square">This attitude has been referred to cynically as the "go along to get along effect"</li>
+</ul>
+
+<h4>6. Partisan Criteria</h4>
+<ul>
+    <li class="bullet-square">equate the survival and the success of your political party, or ethnic or religious origin with the survival and success of your country</li>
+    <li>equate the interest of your organization (the army, the foreign office, and so forth) with the national interest</li>
+</ul>
+
+<h4>7. Foreign Dependency Criteria</h4>
+<ul>
+    <li class="bullet-square">usually applies to less developing countries, who had fallen under the yoke of colonialism, and now, even after political independence, kept the colonial ties with their ex-masters intact
+        <ul>
+            <li>dependent on their ex-colonial states for technical aid, expertise and technology, sometimes even for their security</li>
+        </ul>
+    </li>
+    <li class="bullet-square">As a result of this state of dependency, the less developing countries face difficulties to defend and promote their national interest</li>
+</ul>
+
+<h3>Views on determination of national interest</h3>
+
+<h4>A. Realist view</h4>
+<ul>
+    <li class="bullet-check">prioritize pragmatic criteria when defining national interest and employing foreign policy</li>
+    <li class="bullet-check">defines national interest in terms of pursuits of power
+        <ul>
+            <li>power is about establishing control or influencing the behaviors of others, either diplomatically or use of coercion</li>
+        </ul>
+    </li>
+    <li class="bullet-check">International politics is a struggle among states and thus the prime interest of state is survival and security among other things</li>
+    <li class="bullet-check">national interest - ensuring survival and security of a state, than talking about justice and morality</li>
+    <li class="bullet-check">Leaders must be aware of that scope of national interest and their foreign policy should be proportional to their capabilities
+        <ul>
+            <li>prudence should be the virtue of leaders</li>
+            <li>Prudence is the ability to assess one's needs and aspirations while carefully balancing them against the needs and aspirations of others</li>
+        </ul>
+    </li>
+</ul>
+
+<h4>B. Idealists view</h4>
+<ul>
+    <li class="bullet-check">strong belief in the relevance of legal, ideological and moral elements</li>
+    <li>They don't see legal and moral factors apart from the so called "reality"</li>
+    <li class="bullet-check">specific actions and objective of foreign policy have often been derived from general moral and legal guidelines and principles etc.</li>
+</ul>
+
+<div class="note-box">
+    Note:
+    <ul>
+        <li>Realists fail to recognize and prescribe solutions for addressing global problems because of the exclusive emphasis given to state and national interest</li>
+        <li>Idealists believe on the prevalence of common problems of human beings as environmental pollution, ecological imbalance, depletion of resource</li>
+        <li>The establishment of new institutions with global orientation may play vital role in addressing global problems, instead of the state-centric particularism, States could no longer be viable actors in addressing cross-cutting problems by themselves</li>
+    </ul>
+</div>
+
+<h2>2.2. Understanding Foreign Policy and Foreign Policy Behaviors</h2>
+
+<h3>2.2.1. Defining Foreign Policy</h3>
+
+<p><strong>Foreign policy</strong></p>
+<ul>
+    <li>It is something that a state would like to achieve in its external relations with others</li>
+    <li>It involves the general purposes and specific strategies a state employs to achieve or promote its national interest</li>
+</ul>
+
+<p><strong>According to Rochester, foreign policy refers to</strong></p>
+<ul>
+    <li class="bullet-square">the set of priorities and percepts established by national leaders to serve as guidelines for choosing among various courses of action in specific situations in international affairs</li>
+</ul>
+
+<p>These objectives, visions and goals state aspire to achieve is commonly referred as national interest</p>
+<ul>
+    <li class="bullet-square">All states would like to promote their national interest as their capability or power allows them to do</li>
+    <li class="bullet-square">scope and content of foreign policy of a state is often determined by the capabilities of the concerned state
+        <ul>
+            <li class="bullet-check">minimum goal a state would like to achieve is survival - protect their physical, political, and cultural identities against any encroachment by other states</li>
+            <li class="bullet-check">Foreign policy also involves specific instruments and tactics that must be employed to realize those objectives and goals. The most widely employed instruments include:
+                <ul>
+                    <li class="bullet-open-circle">diplomatic bargaining</li>
+                    <li class="bullet-open-circle">economic instruments</li>
+                    <li class="bullet-open-circle">propaganda</li>
+                    <li class="bullet-open-circle">terrorism (sabotage)</li>
+                    <li class="bullet-open-circle">use of force (war)</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>Each instrument is used to affect the behaviors of other states, and has an element of power</p>
+<ul>
+    <li class="bullet-check">Diplomacy - states attempt to affect the behavior of others through bargaining that involves less element of power as compared to other instruments</li>
+</ul>
+
+<h3>2.2.2. Foreign Policy Objectives</h3>
+<ul>
+    <li>Foreign policy, just like any policy, sets short term, middle term and long term goals and objectives to be achieved in proportion to a state's capability</li>
+    <li>Such classifications of foreign policy objectives is based on the combination of the three criteria:
+        <ul>
+            <li>the value placed on the objective</li>
+            <li>the time element placed on its achievement</li>
+            <li>the kind of demands the objective imposes on other states in international system</li>
+        </ul>
+    </li>
+    <li>the foreign policy objectives of states categorizes in to three:</li>
+</ul>
+
+<h4>1. Core Interests and Values (Short Range Objectives)</h4>
+<ul>
+    <li class="bullet-square">those kinds of goals for which most people are willing to make ultimate sacrifices</li>
+    <li class="bullet-square">stated in the form of basic principles of foreign policy and become article of faith that society accepts without any questioning it</li>
+    <li class="bullet-square">related to the self preservation of political and economic systems, the people and its culture, and the territorial integrity of a state
+        <ul>
+            <li class="bullet-check">core interests and values, is to ensure the sovereignty and independence</li>
+            <li>others goals cannot be realized if the existence of the state and its political units are not ensured</li>
+        </ul>
+    </li>
+    <li class="bullet-square">The exact definition of core value or interest in any given country depends on the attitudes of those who make foreign policy
+        <ul>
+            <li>Some governments place great values on controlling or defending neighboring territories</li>
+            <li>Extraterritoriality - when the national interest and claims of a country is projected beyond the limit of its geographic boundary. Example: Israel and the United States</li>
+            <li>States may think that their national interest is at risk when the interests and security of citizens, or kin ethnic or religious groups living in the neighboring states and other states are threatened</li>
+            <li class="bullet-check">So, liberating or protecting the interests of such individuals and groups might be considered as part of its core national interest</li>
+        </ul>
+    </li>
+</ul>
+
+<h4>2. Middle Range Objectives</h4>
+<ul>
+    <li class="bullet-square">Unlike, the short range objective, the middle range objectives drastically varies across states, due to difference in the level of economic and technological progress, as well as the military capability</li>
+    <li class="bullet-square">Yet, bottom point that a state would like to achieve in its medium term is:
+        <ul>
+            <li>to take a course of actions that have the highest impact on the domestic economic and welfare needs and expectation</li>
+        </ul>
+    </li>
+    <li class="bullet-square">Social welfare and economic development, cannot be achieved through self-help, as most states have only limited resources, administrative services, and technical skills.
+        <ul>
+            <li class="bullet-check">Interdependence means that to satisfy domestic needs and aspirations, states would have to interact with others</li>
+            <li class="bullet-check">Trade, foreign aid, access to communication facilities, sources of supply, and foreign market are for most states necessary for increasing social welfare</li>
+        </ul>
+    </li>
+</ul>
+
+<h4>3. Long- Range Objectives</h4>
+<ul>
+    <li class="bullet-square">Long range goals are those plans, dreams, and visions concerning the ultimate political or ideological organization of the international system, and rules governing relations in that system</li>
+</ul>
+
+<div class="note-box">
+    Note: In pressing for middle range goals, states make particular demands against particular interest
+    <ul>
+        <li class="bullet-square">in pursuing long range goals, states normally make universal demands, for their purpose is no less than to reconstruct an entire international system according to a universally applicable plan or vision</li>
+        <li>long range visions and dreams may have international repercussions as far as they are complemented by the capabilities and powers</li>
+        <li>Every country has its own visions and ambition proportional to its relative strength and capabilities to be realized in the long run</li>
+    </ul>
+</div>
+
+<h3>2.2.3. Foreign Policy Behavior: Patterns and Trends</h3>
+<ul>
+    <li>Foreign policy behavior refers to the actions states take towards each other
+        <ul>
+            <li class="bullet-check">these actions usually are not as ends in themselves, but are tied in some way with larger purposes, from long range objectives to short term objectives</li>
+        </ul>
+    </li>
+    <li>all foreign policy behavior ultimately boils down to three possible pattern</li>
+</ul>
+
+<p><strong>1) self-preservation (maintaining the status quo)</strong></p>
+<ul>
+    <li>maintaining the status quo/ the existing reality for one own benefit</li>
+    <li>Example: USA
+        <ul>
+            <li class="bullet-check">international institutions (IMF, World Bank, GATT/WTO) that were established following Second World War have been strongly shaped by United States</li>
+            <li class="bullet-check">underlying philosophy of such institutions, and even the decision making procedures are all shaped to serve the global interests of the country</li>
+        </ul>
+    </li>
+    <li>These days U.S has become the sole defender of the international system and the liberal economic-political order</li>
+</ul>
+
+<p><strong>2) self-extension (revising the status quo in one's own favor)</strong></p>
+<ul>
+    <li class="bullet-square">Changing the reality for one own benefit</li>
+    <li class="bullet-square">Newly emerging powers such as China, India, Brazil, Germany and others are competing to restructure the international institutions and different regimes so as to create enabling environment to promote their national interest</li>
+</ul>
+
+<p><strong>3) self-abnegation (revising the status quo in some else's favor)</strong></p>
+<ul>
+    <li class="bullet-square">reflects the foreign policy trends that are being displayed in Less Developing Countries</li>
+    <li class="bullet-square">Such countries may succumb to such challenges and compromise its long lasting national interest for temporary and immediate benefits</li>
+</ul>
+
+<h3>2.2.4. Foreign Policy Dimensions</h3>
+<ul>
+    <li>behavior can change over time and with different style of leaderships and circumstances</li>
+    <li>There are three Foreign Policy Dimensions</li>
+</ul>
+
+<h4>I. Alignment</h4>
+<ul>
+    <li class="bullet-square">alignment tendencies - whether national leaders choose to ally with certain countries or to remain neutral</li>
+    <li class="bullet-square">A country's alignment behavior can vary from time to time during its history in response to changing circumstances and policy decisions</li>
+    <li class="bullet-square">alignment tendencies classified in to three</li>
+</ul>
+
+<p><strong>A. Alliances</strong></p>
+<ul>
+    <li class="bullet-check">formal agreements to provide mutual military assistance</li>
+    <li>Allied countries can pool their military resources, acquire access to foreign bases and stake out territories that enemies are on notice</li>
+    <li class="bullet-check">alliance state also risks interference by allies in its domestic affairs, the possibility being dragged</li>
+</ul>
+
+<p><strong>B. Neutrality</strong></p>
+<ul>
+    <li class="bullet-check">stance of formal non partisanship in world affairs</li>
+    <li class="bullet-check">keeping a low profile, neutrals may avoid some of the problems associated with alliances, particularly the generating of potential enemies and counter alliances</li>
+    <li class="bullet-check">Example: Switzerland - neutrality to an extreme case in refusing membership to United Nations till 2002</li>
+</ul>
+
+<p><strong>C. Nonalignment</strong></p>
+<ul>
+    <li class="bullet-check">foreign policy pattern of most developing state during cold war</li>
+    <li class="bullet-check">movement-Non Alignment Movement (NAM) in which they called for a new foreign policy path/choice/ to be followed disregarding the both the West and East bloc politics and alliances</li>
+    <li>Although that was practically impossible, NAM had noble agenda that called for the South-south cooperation</li>
+</ul>
+
+<h4>II. Scope</h4>
+<ul>
+    <li class="bullet-square">Refers the scope of a country's activities and interests</li>
+    <li class="bullet-square">There are three kind of actors regarding scope:</li>
+</ul>
+
+<p><strong>1. Global actors - act in Global terms</strong></p>
+<ul>
+    <li>interacting regularly with countries in nearly every region of the world</li>
+    <li>Example: USA, China</li>
+</ul>
+
+<p><strong>2. regional actors - Act in regional terms</strong></p>
+<ul>
+    <li>interacting primarily with neighboring states in the same geographical area except for contacts, frequently concerning economic issues such as trade</li>
+    <li>Example:
+        <ul>
+            <li class="bullet-check">South Africa - in Africa in general and in Southern Africa in Particular</li>
+            <li class="bullet-check">India - in South Asian region</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>3. Isolationism</strong></p>
+<ul>
+    <li>scope of a country's foreign policy to become so narrow that isolationism</li>
+    <li>Result by Some moments in history, such as key weakness or geographic remoteness
+        <ul>
+            <li>Few countries have ever been totally cut off from the outside world</li>
+        </ul>
+    </li>
+    <li>in an age of interdependence, isolationism becomes an increasingly less viable foreign policy orientation</li>
+    <li>Example: Burma in 1960 and 70s</li>
+</ul>
+
+<h4>III. Mode of Operation/ "Modus Opernadi"</h4>
+<ul>
+    <li class="bullet-check">the method of operation to address different issues</li>
+</ul>
+
+<p><strong>Multilateral means</strong></p>
+<ul>
+    <li class="bullet-check">greater its tendency to seek solutions to problems through diplomatic forums in which several states participate, such as the United Nations, rather than utilizing purely bilateral, country to country approaches</li>
+    <li class="bullet-check">Most developing countries used the multilateral approaches because:
+        <ul>
+            <li>multilateral forum would enhance collective barraging power of these countries vis-a-vis other developed countries</li>
+            <li>establishing bilateral relations (establishing Embassies and assigning diplomatic staffs) are often found to be costly</li>
+        </ul>
+    </li>
+    <li class="bullet-check">Regardless of the power and capability question, countries may opt to use multilateral frameworks as the best strategy to address issues. Example: Germany, Scandinavian countries</li>
+</ul>
+
+<p><strong>Unilateral means</strong></p>
+<ul>
+    <li>They play the carrot and stick diplomacy to affect the outcomes of events or influence the behaviors of others</li>
+    <li>like Intervention, threat of use of force and some time, use of force</li>
+    <li>The more unilateral a state is the more likely to initiate actions in international relations or to resist initiatives taken by others</li>
+</ul>
+
+<h3>2.2.5. Instruments of Foreign Policy</h3>
+
+<h4>1. Diplomacy</h4>
+<ul>
+    <li>Diplomacy process between actors (diplomats, usually representing a state) who exist within a system (international relations) and engage in private and public dialogue
+        <ul>
+            <li class="bullet-check">diplomacy can promote exchanges that enhance trade, culture, wealth and knowledge</li>
+        </ul>
+    </li>
+    <li>Diplomacy is not foreign policy but part of foreign policy</li>
+    <li>state's foreign policy has two key ingredients; its actions and its strategies for achieving its goals</li>
+</ul>
+<p>The interaction one state has with another is considered the act of its foreign policy. This act typically takes place via interactions between government personnel through diplomacy</p>
+<ul>
+    <li>Diplomacy is a complex game of maneuver in which the goal is to influence the behaviors of others in ones interest</li>
+</ul>
+
+<p><strong>Past democracy</strong></p>
+<p>practiced in formalistic and somewhat rigid manner that was limited to the bilateral relations of countries</p>
+
+<p><strong>Now days democracy</strong></p>
+<p>involves powerful actors that are not states like international non-governmental organizations (INGOs) and international governmental organizations (IGOs), These actors regularly partake in areas of diplomacy and often materially shape outcomes.</p>
+<p>There arose multilateral diplomacy, public diplomacy, leader-to-leader (summitry diplomacy) in sharp contrast to secret diplomacy and bilateral diplomacy.</p>
+
+<ul>
+    <li>The essence of diplomacy is bargaining
+        <ul>
+            <li>a means of settling differences over priorities between contestants through an exchange of proposals for mutually acceptable solutions</li>
+        </ul>
+    </li>
+    <li>Diplomatic bargaining is used primarily to reach agreements, compromises, and settlements where governments objectives conflict</li>
+    <li>The attempt to change the policies, actions, attitudes and objectives of other government and their diplomats by persuasion, offering rewards, exchange concessions, or making threats
+        <ul>
+            <li class="bullet-check">Thus, like any foreign policy instruments, diplomatic bargaining also espouses an element of power or influence</li>
+        </ul>
+    </li>
+    <li><strong>Rules of Effective Diplomacy:</strong>
+        <ul>
+            <li><strong>Be realistic</strong> - have goals that much your ability to achieve them</li>
+            <li><strong>Be careful about what you say</strong> - plans out and weighs words carefully</li>
+            <li><strong>Seek common ground</strong> - maintain a degree of flexibility</li>
+            <li><strong>Understand the other side</strong> - Like appreciate an opponent's perspective even if you do not agree with it</li>
+            <li><strong>Be patient</strong> - Being overly anxious can lead to concessions that are unwise and may convey weakness to an opponent</li>
+            <li><strong>Leave avenues of retreat open</strong> - it is important to leave yourself and your opponent an "Out"</li>
+        </ul>
+    </li>
+    <li>In general, states make considerable use of what are known to be "carrot and stick" approaches</li>
+</ul>
+
+<p><strong>stick approach</strong></p>
+<ul>
+    <li class="bullet-check">Threats - involve hypothetical action</li>
+    <li class="bullet-check">Punishment involve area action</li>
+</ul>
+
+<p><strong>carrot approach</strong></p>
+<ul>
+    <li class="bullet-check">Promise - is hypothetical action, aims at influencing the behaviors based on the future hope of giving something is a promise in action</li>
+    <li class="bullet-check">Reward</li>
+</ul>
+
+<h4>2. Economic</h4>
+<ul>
+    <li>modern states rely up on each other for resources and commodities that enable them to develop and sustain viable economies</li>
+    <li>degree of dependence and interdependence varies across states</li>
+    <li>states often uses their economic muscle to influence the behavior (action, perception and role) of others
+        <ul>
+            <li class="bullet-check">States may reward or punish states through the manipulation of economic policies</li>
+        </ul>
+    </li>
+    <li>economic, particularly trade instruments of foreign policy are normally used for three purposes, namely:
+        <ol>
+            <li>to achieve any foreign policy objective</li>
+            <li>to increase a state's capability or deprive a potential enemy's capabilities</li>
+            <li>to create economic satellites (guaranteed markets and resources of supply)</li>
+        </ol>
+    </li>
+    <li>When rewards are offered or economic punishment are threatened, at least two conditions must be fulfilled to make the exercise of influence effective:
+        <ul>
+            <li>the target of the influence or act must perceive that there is a genuine need for the reward or for the avoidance of the punishment</li>
+            <li>no alternative market or source of supply must be easily available to the target</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>Techniques of economic reward and punishment</strong></p>
+
+<p><strong>1. Tariff</strong></p>
+<ul>
+    <li class="bullet-square">Almost all foreign made products coming into a country are taxed for the purpose of raising revenue, protecting domestic producers from foreign competition, or other domestic economic reasons</li>
+    <li class="bullet-square">tariff structure can be used effectively as an inducement or punishment</li>
+</ul>
+
+<p><strong>2. Quota</strong></p>
+<ul>
+    <li>To control imports of some commodities</li>
+    <li class="bullet-square">supplier usually sends his goods into the country at a favorable price, but is allowed to sell only a certain amount in a given time period</li>
+</ul>
+
+<p><strong>3. Boycott</strong></p>
+<ul>
+    <li>eliminates the import of either a specific commodity or the total range of export products sold by the country against which the boycott is organized</li>
+</ul>
+
+<p><strong>4. Embargo</strong></p>
+<ul>
+    <li class="bullet-square">to deprive another country of goods prohibits its own business men from concluding its transactions with commercial organization in the country against which the embargo is organized</li>
+    <li class="bullet-square">An embargo may be enforced either on specific category of goods or on the total range of goods that private businessmen normally send to the country being punished</li>
+</ul>
+
+<p><strong>5. Loans, Credits and Currency Manipulations</strong></p>
+<ul>
+    <li class="bullet-square">Rewards may include favorable tariff rates and quotas, granting loans (favorable reward offered by the major powers to developing countries) or extending credits</li>
+    <li class="bullet-square">The choice of a technique or combinations of techniques to be used will be influenced by:
+        <ul>
+            <li class="bullet-check">the goals being pursued</li>
+            <li>the type of economic sensitivity & vulnerability</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>6. Foreign Aid</strong></p>
+<ul>
+    <li class="bullet-square">transfer of money, goods, or technical advice from donor to recipient</li>
+    <li class="bullet-square">There are main type of aid program including, military aid, technical assistance, grants and commodity import program, and development loans</li>
+</ul>
+
+<div class="note-box">
+    Note:
+    <ul>
+        <li>Most aid programs are obviously not undertaken solely for humanitarian purpose</li>
+        <li>vast portion of the aid goes to a few countries-and sometimes not the countries with the most pressing needs Because their strategic and symbolic importance in world politics</li>
+        <li>Donors can easily manipulate economic and military aid program to change the internal and external policies of a government</li>
+    </ul>
+</div>
+
+<p><strong>7. Military Aid</strong></p>
+<ul>
+    <li class="bullet-square">probably the oldest type of aid which had been used for buttressing alliances</li>
+    <li class="bullet-square">In this aid scheme, the donors supply money and material, while the recipient provided most of the man power</li>
+    <li>By helping recipients build up modern forces, the donors hope to obtain some immediate political or security objective</li>
+        <ul>
+            <li>military aid is used to create local power balances or preponderances, thus reducing the likelihood that the donor will have to station troops abroad or intervene militarily to protect its interests</li>
+        </ul>
+</ul>
+
+<h2>2.3. Overview of Foreign Policy of Ethiopia</h2>
+
+</body>
+</html>
+
+```
