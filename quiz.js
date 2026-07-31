@@ -1,12 +1,14 @@
-let url = new URLSearchParams(window.location.search);
+let urlParams = new URLSearchParams(window.location.search);
 
-let subject = url.get("subject");
-let chapter = Number(url.get("chapter"));
+let subject = urlParams.get("subject");
+
+let chapter = Number(urlParams.get("chapter"));
+
+let questions = QUESTIONS[subject][chapter];
+
 let currentQuestion = 0;
+
 let score = 0;
-
-let quizData = QUESTIONS[subject][chapter];
-
 
 const questionText = document.getElementById("question");
 const answersBox = document.getElementById("answers");
