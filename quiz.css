@@ -86,3 +86,35 @@ header h1{
     color:#999;
     font-weight:bold;
 }
+.quizCard{
+background:white;
+margin:20px;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.answer{
+width:100%;
+padding:18px;
+margin-top:15px;
+border:none;
+border-radius:12px;
+background:#f2f2f2;
+font-size:18px;
+text-align:left;
+cursor:pointer;
+}
+
+.answer:hover{
+background:#e8e8e8;
+}
+
+.explanation{
+display:none;
+margin-top:25px;
+padding:18px;
+background:#eef8ff;
+border-left:6px solid #2196f3;
+border-radius:12px;
+}
