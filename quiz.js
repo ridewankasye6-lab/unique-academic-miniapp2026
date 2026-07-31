@@ -1,6 +1,7 @@
-let subject = "global-trends";
-let chapter = 1;
+let url = new URLSearchParams(window.location.search);
 
+let subject = url.get("subject");
+let chapter = Number(url.get("chapter"));
 let currentQuestion = 0;
 let score = 0;
 
