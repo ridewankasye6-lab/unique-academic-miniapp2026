@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Unique Academic Quiz</title>
+
 <link rel="stylesheet" href="quiz.css">
+
 </head>
+
 
 <body>
 
-<header>
 
-<a href="javascript:history.back()" class="backBtn">←</a>
+<div class="quiz-box">
 
-<h1 id="subjectTitle">Unique Academic Quiz</h1>
+<h1>🎓 Unique Academic</h1>
 
-</header>
+<h2 id="subject">📚 Global Trends</h2>
 
-<div class="quizCard">
+<h3 id="chapter">Chapter 1 Quiz</h3>
 
-<div id="progressText">
+
+<div id="progress">
 Question 1 / 100
 </div>
 
-<div class="progressBar">
-
-<div id="progressFill"></div>
-
-</div>
 
 <h2 id="question">
-
-Loading Question...
-
+Loading question...
 </h2>
 
-<div id="answers">
 
-</div>
+<div id="options"></div>
 
-<div id="result">
 
-</div>
-
-<button id="nextBtn">
-
-Next Question →
-
+<button onclick="nextQuestion()">
+Next Question
 </button>
 
+
+<div id="result"></div>
+
+
 </div>
 
-<script src="questions.js"></script>
+
+<script src="questions/global-trends/chapter1.js"></script>
 
 <script src="quiz.js"></script>
 
+
 </body>
+
 </html>
