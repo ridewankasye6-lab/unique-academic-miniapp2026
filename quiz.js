@@ -9,10 +9,10 @@ let quizData = QUESTIONS[subject][chapter];
 
 const questionText = document.getElementById("question");
 const answersBox = document.getElementById("answers");
-const progressText = document.getElementById("progressText");
-const progressFill = document.getElementById("progressFill");
 const resultBox = document.getElementById("result");
 const nextBtn = document.getElementById("nextBtn");
+const progressText = document.getElementById("progressText");
+const progressFill = document.getElementById("progressFill");
 
 
 function loadQuestion(){
@@ -20,25 +20,28 @@ function loadQuestion(){
 let q = quizData[currentQuestion];
 
 
-progressText.innerHTML =
-"Question " + (currentQuestion + 1) +
-" / " + quizData.length;
-
-
-let percent =
-((currentQuestion) / quizData.length) * 100;
-
-
-progressFill.style.width = percent + "%";
-
-
 questionText.innerHTML = q.question;
 
 
 answersBox.innerHTML="";
 
+resultBox.style.display="none";
+
+nextBtn.style.display="none";
+
+
+progressText.innerHTML =
+"Question " + (currentQuestion + 1) +
+" / " + quizData.length;
+
+
+progressFill.style.width =
+((currentQuestion) / quizData.length * 100) + "%";
+
+
 
 q.answers.forEach(function(answer,index){
+
 
 let button=document.createElement("button");
 
@@ -56,20 +59,18 @@ checkAnswer(button,index);
 
 answersBox.appendChild(button);
 
+
 });
 
-
-resultBox.style.display="none";
-
-nextBtn.style.display="none";
 
 }
 
 
 
-function checkAnswer(button,selected){
+function checkAnswer(button,index){
 
-let q = quizData[currentQuestion];
+
+let q=quizData[currentQuestion];
 
 
 let buttons=document.querySelectorAll(".answer");
@@ -82,7 +83,9 @@ btn.disabled=true;
 });
 
 
-if(selected === q.correct){
+
+if(index===q.correct){
+
 
 button.style.background="#2ecc71";
 
@@ -90,7 +93,18 @@ button.style.color="white";
 
 score++;
 
-}else{
+
+resultBox.innerHTML=
+"✅ Correct!<br><br>"+
+"🇬🇧 "+q.english+
+"<br><br>"+
+"🇪🇹 "+q.amharic;
+
+
+}
+
+else{
+
 
 button.style.background="#e74c3c";
 
@@ -101,28 +115,31 @@ buttons[q.correct].style.background="#2ecc71";
 
 buttons[q.correct].style.color="white";
 
+
+resultBox.innerHTML=
+"❌ Wrong<br><br>"+
+"✅ Correct Answer: "+
+q.answers[q.correct]+
+"<br><br>"+
+"🇬🇧 "+q.english+
+"<br><br>"+
+"🇪🇹 "+q.amharic;
+
+
 }
 
 
 resultBox.style.display="block";
 
-
-resultBox.innerHTML=
-
-"<b>🇬🇧 Explanation:</b><br>"+
-q.english+
-"<br><br>"+
-"<b>🇪🇹 ማብራሪያ:</b><br>"+
-q.amharic;
-
-
 nextBtn.style.display="block";
+
 
 }
 
 
 
 nextBtn.onclick=function(){
+
 
 currentQuestion++;
 
@@ -131,7 +148,9 @@ if(currentQuestion < quizData.length){
 
 loadQuestion();
 
-}else{
+}
+
+else{
 
 
 localStorage.setItem("score",score);
@@ -141,6 +160,7 @@ window.location.href="result.html";
 
 
 }
+
 
 };
 
