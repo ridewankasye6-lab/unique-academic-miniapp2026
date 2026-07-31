@@ -53,5 +53,30 @@ document.getElementById("btn"+q.correct).style.background = "green";
 }
 
 document.getElementById("nextBtn").style.display = "block";
+    }
+function nextQuestion(){
+
+currentQuestion++;
+
+if(currentQuestion < questions.length){
+
+document.getElementById("btn0").style.background = "";
+document.getElementById("btn1").style.background = "";
+document.getElementById("btn2").style.background = "";
+document.getElementById("btn3").style.background = "";
+
+document.getElementById("nextBtn").style.display = "none";
+
+showQuestion();
+
+}else{
+
+localStorage.setItem("score", score);
+
+localStorage.setItem("total", questions.length);
+
+window.location.href = "result.html";
+
+}
 
 }
