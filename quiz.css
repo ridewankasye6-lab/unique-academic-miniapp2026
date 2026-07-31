@@ -236,9 +236,14 @@ border-radius:12px;
 cursor:pointer;
 
 }
-
+#nextBtn{
+display:none;
+width:100%;
+margin-top:20px;
+}
 #nextBtn:hover{
 
 background:#5121a8;
 
 }
+
