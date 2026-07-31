@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-<title>Unique Academic Quiz</title>
+<title>Quiz</title>
 
-<link rel="stylesheet" href="quiz.css">
-<script src="questions.js"></script>
+<link rel="stylesheet" href="style.css">
 
-<script src="quiz.js"></script>
 </head>
-
 
 <body>
 
+<div class="quiz-container">
 
-<div class="quiz-box">
+<h1 id="quizTitle">📝 Quiz</h1>
 
-<h1>🎓 Unique Academic</h1>
+<div class="progress">
 
-<h2 id="subject">📚 Global Trends</h2>
+<p id="progress">Question 1 / 10</p>
 
-<h3 id="chapter">Chapter 1 Quiz</h3>
-
-
-<div id="progress">
-Question 1 / 100
 </div>
 
+<div class="question-box">
 
-<h2 id="question">
-Loading question...
-</h2>
+<h2 id="question">Loading...</h2>
 
+</div>
 
-<div id="options"></div>
+<div class="answers">
 
+<button class="answer-btn" onclick="checkAnswer(0)" id="btn0"></button>
 
-<button onclick="nextQuestion()">
-Next Question
+<button class="answer-btn" onclick="checkAnswer(1)" id="btn1"></button>
+
+<button class="answer-btn" onclick="checkAnswer(2)" id="btn2"></button>
+
+<button class="answer-btn" onclick="checkAnswer(3)" id="btn3"></button>
+
+</div>
+
+<button id="nextBtn" class="button" onclick="nextQuestion()">
+
+Next ➜
+
 </button>
 
-
-<div id="result"></div>
-
-
 </div>
+
+<script src="questions.js"></script>
 
 <script src="quiz.js"></script>
 
-
 </body>
-
 </html>
