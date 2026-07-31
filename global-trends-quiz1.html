@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Global Trends Quiz - Chapter 1</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+<header>
+
+<a class="backBtn" href="global-trends-quiz.html">←</a>
+
+<h1>Chapter 1 Quiz</h1>
+
+</header>
+
+<div class="quizCard">
+
+<h2>Question 1</h2>
+
+<p><b>International Relations (IR) mainly studies:</b></p>
+
+<button class="answer" onclick="checkAnswer(this,false)">
+A. Domestic family relations
+</button>
+
+<button class="answer" onclick="checkAnswer(this,true)">
+B. Relations among states
+</button>
+
+<button class="answer" onclick="checkAnswer(this,false)">
+C. Farming methods
+</button>
+
+<button class="answer" onclick="checkAnswer(this,false)">
+D. Hospital management
+</button>
+
+<div id="explanation" class="explanation">
+
+<b>✅ Correct Answer: B</b>
+
+<p><b>English:</b> International Relations studies the interactions among states and other international actors.</p>
+
+<p><b>አማርኛ:</b> ዓለም አቀፍ ግንኙነት በመንግስታትና በሌሎች ዓለም አቀፍ ተዋናዮች መካከል ያለውን ግንኙነት ያጠናል።
+
+</div>
+
+<br>
+
+<a class="button" href="global-trends-quiz2.html">
+Next Question →
+</a>
+
+</div>
+
+<script>
+
+function checkAnswer(button,correct){
+
+let buttons=document.querySelectorAll(".answer");
+
+buttons.forEach(function(btn){
+
+btn.disabled=true;
+
+});
+
+if(correct){
+
+button.style.background="#2ecc71";
+
+button.style.color="white";
+
+}else{
+
+button.style.background="#e74c3c";
+
+button.style.color="white";
+
+buttons.forEach(function(btn){
+
+if(btn.innerHTML.includes("Relations among states")){
+
+btn.style.background="#2ecc71";
+
+btn.style.color="white";
+
+}
+
+});
+
+}
+
+document.getElementById("explanation").style.display="block";
+
+}
+
+</script>
+
+</body>
+
+</html>
