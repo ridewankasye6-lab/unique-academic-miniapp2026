@@ -10,6 +10,8 @@ let currentQuestion = 0;
 
 let score = 0;
 
+document.getElementById("quizTitle").innerHTML =
+subject.toUpperCase() + " - Chapter " + chapter;
 const questionText = document.getElementById("question");
 const answersBox = document.getElementById("answers");
 const resultBox = document.getElementById("result");
