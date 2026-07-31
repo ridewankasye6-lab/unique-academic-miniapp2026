@@ -33,3 +33,25 @@ function showQuestion() {
 }
 
 showQuestion();
+
+function checkAnswer(index){
+
+let q = questions[currentQuestion];
+
+if(index == q.correct){
+
+score++;
+
+document.getElementById("btn"+index).style.background = "green";
+
+}else{
+
+document.getElementById("btn"+index).style.background = "red";
+
+document.getElementById("btn"+q.correct).style.background = "green";
+
+}
+
+document.getElementById("nextBtn").style.display = "block";
+
+}
