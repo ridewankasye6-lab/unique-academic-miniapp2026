@@ -123,3 +123,41 @@ body{
     font-size:18px;
     color:#333;
 }
+
+/* Navigation */
+
+.quiz-navigation{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    gap:15px;
+}
+
+.nav-btn{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.previous-btn{
+    background:#e5e7eb;
+    color:#333;
+}
+
+.previous-btn:hover{
+    background:#d1d5db;
+}
+
+.next-btn{
+    background:#2563EB;
+    color:white;
+}
+
+.next-btn:hover{
+    background:#1d4ed8;
+}
