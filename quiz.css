@@ -118,3 +118,64 @@ body{
     background:linear-gradient(90deg,#2563EB,#4F46E5);
     border-radius:20px;
 }
+/* ===========================
+   Question Card
+=========================== */
+
+.question-card{
+    background:#fff;
+    margin-top:20px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+
+.question-title{
+    display:inline-block;
+    background:#2563EB;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.question-text{
+    font-size:24px;
+    color:#222;
+    line-height:1.5;
+    margin-bottom:25px;
+}
+
+.answers{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.answer-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border:2px solid #E5E7EB;
+    border-radius:16px;
+    cursor:pointer;
+    transition:.3s;
+    background:#fff;
+}
+
+.answer-card:hover{
+    border-color:#2563EB;
+    background:#EEF4FF;
+}
+
+.answer-card input{
+    width:20px;
+    height:20px;
+}
+
+.answer-card span{
+    font-size:17px;
+    color:#333;
+}
