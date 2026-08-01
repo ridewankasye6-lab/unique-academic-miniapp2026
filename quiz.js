@@ -11,12 +11,31 @@ const questions = quizData[subject][chapter];
 let currentQuestion = 0;
 
 // Load first question
-loadQuestion();
 function loadQuestion(){
 
     const q = questions[currentQuestion];
 
     document.getElementById("question").textContent =
         q.question;
+
+    const optionsDiv =
+        document.getElementById("options");
+
+    optionsDiv.innerHTML = "";
+
+    q.options.forEach((option,index)=>{
+
+        const button =
+            document.createElement("button");
+
+        button.className = "option-btn";
+
+        button.textContent = "○ " + option;
+
+        button.onclick = ()=>checkAnswer(index);
+
+        optionsDiv.appendChild(button);
+
+    });
 
 }
