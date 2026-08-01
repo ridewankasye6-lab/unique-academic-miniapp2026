@@ -254,12 +254,13 @@ body{
     text-align:right;
 }
 
+
 .next-btn{
     background:#2563EB;
     color:white;
     border:none;
-    padding:14px 28px;
-    border-radius:12px;
+    border-radius:14px;
+    padding:14px 30px;
     font-size:16px;
     font-weight:bold;
     cursor:pointer;
@@ -269,11 +270,8 @@ body{
 
 .next-btn:hover{
     background:#1D4ED8;
+    transform:translateY(-2px);
 }
-/* ===========================
-   Explanation Cards
-=========================== */
-
 .explanation-card{
     background:#F8FAFC;
     border-left:5px solid #2563EB;
