@@ -245,3 +245,26 @@ body{
 .next-btn:hover{
     background:#1D4ED8;
 }
+/* ===========================
+   Explanation Cards
+=========================== */
+
+.explanation-card{
+    background:#F8FAFC;
+    border-left:5px solid #2563EB;
+    padding:18px;
+    margin-top:18px;
+    border-radius:12px;
+}
+
+.explanation-card h3{
+    color:#2563EB;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.explanation-card p{
+    color:#333;
+    line-height:1.8;
+    font-size:16px;
+}
