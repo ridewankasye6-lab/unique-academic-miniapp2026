@@ -102,3 +102,9 @@ document.getElementById("nextBtn").onclick = function(){
     }
 
 };
+
+document.getElementById("backBtn").onclick = function(){
+
+    window.location.href = subject + ".html";
+
+};
