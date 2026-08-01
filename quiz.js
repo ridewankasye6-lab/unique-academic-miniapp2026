@@ -39,3 +39,44 @@ function loadQuestion(){
     });
 
 }
+function checkAnswer(selectedIndex){
+
+    const q = questions[currentQuestion];
+
+    const buttons =
+        document.querySelectorAll(".option-btn");
+
+    buttons.forEach((button,index)=>{
+
+        button.disabled = true;
+
+        if(index === q.answer){
+
+            button.classList.add("correct");
+
+        }
+
+        if(index === selectedIndex &&
+           index !== q.answer){
+
+            button.classList.add("wrong");
+
+        }
+
+    });
+
+    document.getElementById(
+        "englishExplanation"
+    ).textContent =
+        q.englishExplanation;
+
+    document.getElementById(
+        "amharicExplanation"
+    ).textContent =
+        q.amharicExplanation;
+
+    document.querySelector(
+        ".answer-box"
+    ).style.display="block";
+
+}
