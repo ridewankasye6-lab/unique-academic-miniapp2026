@@ -1,30 +1,31 @@
 const quizData = {
 
-  "global-trends": {
+    "global-trends": {
 
-    1: [
+        1: [
 
-      {
-        question: "What is International Relations primarily concerned with?",
+            {
+                question: "What is International Relations primarily concerned with?",
 
-        options: [
-          "Domestic Politics",
-          "Relations Between States",
-          "Economics Only",
-          "History Only"
-        ],
+                options: [
+                    "Domestic Politics",
+                    "Relations Between States",
+                    "Economics",
+                    "History"
+                ],
 
-        answer: 1,
+                answer: 1,
 
-        englishExplanation:
-          "International Relations studies relationships between states, international organizations and global actors.",
+                englishExplanation:
+                "International Relations studies relationships between states and international organizations.",
 
-        amharicExplanation:
-          "የአለም አቀፍ ግንኙነት በመንግስታት፣ በዓለም አቀፍ ድርጅቶች እና በሌሎች ዓለም አቀፍ ተዋናዮች መካከል ያለውን ግንኙነት ያጠናል።"
-      }
+                amharicExplanation:
+                "የአለም አቀፍ ግንኙነት በመንግስታት እና በዓለም አቀፍ ድርጅቶች መካከል ያለውን ግንኙነት ያጠናል።"
 
-    ]
+            }
 
-  }
+        ]
+
+    }
 
 };
