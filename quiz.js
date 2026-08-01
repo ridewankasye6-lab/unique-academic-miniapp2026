@@ -11,6 +11,8 @@ const questions = quizData[subject][chapter];
 let currentQuestion = 0;
 
 // Load first question
+loadQuestion();
+
 function loadQuestion(){
 
     const q = questions[currentQuestion];
@@ -23,10 +25,15 @@ function loadQuestion(){
 
     optionsDiv.innerHTML = "";
 
+    // Hide explanation
+    document.querySelector(".answer-box").style.display = "none";
+
+    // Hide Next button
+    document.getElementById("nextBtn").style.display = "none";
+
     q.options.forEach((option,index)=>{
 
-        const button =
-            document.createElement("button");
+        const button = document.createElement("button");
 
         button.className = "option-btn";
 
@@ -39,6 +46,7 @@ function loadQuestion(){
     });
 
 }
+
 function checkAnswer(selectedIndex){
 
     const q = questions[currentQuestion];
@@ -65,30 +73,25 @@ function checkAnswer(selectedIndex){
 
     });
 
-    document.getElementById(
-        "englishExplanation"
-    ).textContent =
+    document.getElementById("englishExplanation").textContent =
         q.englishExplanation;
 
-    document.getElementById(
-        "amharicExplanation"
-    ).textContent =
+    document.getElementById("amharicExplanation").textContent =
         q.amharicExplanation;
 
-    document.querySelector(
-        ".answer-box"
-    ).style.display="block";
+    // Show explanation
+    document.querySelector(".answer-box").style.display = "block";
+
+    // Show Next button
+    document.getElementById("nextBtn").style.display = "inline-block";
 
 }
+
 document.getElementById("nextBtn").onclick = function(){
 
     currentQuestion++;
 
     if(currentQuestion < questions.length){
-
-        document.querySelector(".answer-box").style.display = "none";
-
-        document.getElementById("nextBtn").style.display = "none";
 
         loadQuestion();
 
