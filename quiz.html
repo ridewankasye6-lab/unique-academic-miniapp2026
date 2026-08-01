@@ -3,14 +3,13 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Unique Academic Quiz</title>
+<title>Unique Academic Quiz</title>
 
-    <link rel="stylesheet" href="quiz.css">
+<link rel="stylesheet" href="quiz.css">
 
 </head>
 
@@ -19,104 +18,108 @@
 <div class="quiz-container">
 
     <!-- Header -->
-
     <header class="quiz-header">
 
         <button class="back-btn" id="backBtn">
-    ←
-</button>
+            ←
+        </button>
 
         <div>
-
             <h1>Unique Academic</h1>
-
             <p>Learning Platform</p>
-
         </div>
 
     </header>
+
+    <!-- Progress -->
+    <div class="progress-card">
+
+        <div class="progress-top">
+
+            <span class="question-count">
+                Question 1 of 20
+            </span>
+
+            <span class="progress-percent">
+                5%
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Subject -->
     <div class="subject-card">
-        <div class="progress-card">
 
-    <div class="progress-top">
-
-        <span class="question-count">
-            Question 1 of 20
+        <span class="subject-name">
+            🌍 Global Trends
         </span>
 
-        <span class="progress-percent">
-            5%
-        </span>
+        <h2>
+            Chapter 1 Quiz
+        </h2>
+
+        <p>
+            Understanding International Relations
+        </p>
 
     </div>
 
-    <div class="progress-bar">
-     <div class="question-card">
+    <!-- Question -->
+    <div class="question-card">
 
-    <h2 class="question-text" id="question">
-    Loading question...
-</h2>
+        <h2 class="question-text" id="question">
+            Loading question...
+        </h2>
 
-    <div class="options" id="options">
+        <div class="options" id="options">
 
-</div>
+        </div>
 
     </div>
 
+    <!-- Explanation -->
     <div class="answer-box">
 
-    <div class="explanation-card">
+        <div class="explanation-card">
 
-        <h3>📖 English Explanation</h3>
+            <h3>📖 English Explanation</h3>
 
-        <p id="englishExplanation"></p>
+            <p id="englishExplanation"></p>
+
+        </div>
+
+        <div class="explanation-card">
+
+            <h3>🇪🇹 የአማርኛ ማብራሪያ</h3>
+
+            <p id="amharicExplanation"></p>
+
+        </div>
 
     </div>
 
-    <div class="explanation-card">
+    <!-- Next Button -->
 
-        <h3>🇪🇹 የአማርኛ ማብራሪያ</h3>
+    <div class="next-area">
 
-        <p id="amharicExplanation"></p>
+        <button id="nextBtn" class="next-btn">
 
-    </div>
+            Next Question →
 
-</div>
-    <button id="nextBtn" class="next-btn">
-        Next Question →
-    </button>
-
-</div>
-};
-    </div>
-
-</div>   
-
-
-</div>
-        <div class="progress-fill"></div>
+        </button>
 
     </div>
 
 </div>
 
-    <span class="subject-name">
-        🌍 Global Trends
-    </span>
-
-    <h2>
-        Chapter 1 Quiz
-    </h2>
-
-    <p>
-        Understanding International Relations
-    </p>
-
-</div>
-
-</div>
-
- <script src="quizData.js"></script>
+<script src="quizData.js"></script>
 <script src="quiz.js"></script>
 
 </body>
