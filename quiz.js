@@ -80,3 +80,22 @@ function checkAnswer(selectedIndex){
     ).style.display="block";
 
 }
+document.getElementById("nextBtn").onclick = function(){
+
+    currentQuestion++;
+
+    if(currentQuestion < questions.length){
+
+        document.querySelector(".answer-box").style.display = "none";
+
+        document.getElementById("nextBtn").style.display = "none";
+
+        loadQuestion();
+
+    }else{
+
+        alert("🎉 You have completed this chapter quiz!");
+
+    }
+
+};
