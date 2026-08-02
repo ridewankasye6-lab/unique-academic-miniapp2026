@@ -92,7 +92,16 @@ document.getElementById("nextBtn").onclick = function(){
     currentQuestion++;
 
     if(currentQuestion < questions.length){
+// Subject Name
+document.getElementById("subjectName").textContent =
+subject.replace("-", " ").replace(/\b\w/g,
+c => c.toUpperCase());
 
+// Chapter Title
+document.getElementById("chapterTitle").textContent =
+"Chapter " + chapter + " Quiz";
+ document.getElementById("chapterSubtitle").textContent =
+"Unique Academic Learning Quiz";
         loadQuestion();
 
     }else{
