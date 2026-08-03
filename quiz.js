@@ -1,287 +1,68 @@
+// ==========================
+// UNIQUE ACADEMIC QUIZ
+// Lesson 3A
+// ==========================
+
+// Read URL
 const params = new URLSearchParams(window.location.search);
 
 const subject = params.get("subject");
 const chapter = params.get("chapter");
 
-
+// Get questions
 const questions = quizData[subject]?.[chapter] || [];
 
-
+// Current question
 let currentQuestion = 0;
-let score = 0;
 
-
-
-const questionBox = document.getElementById("question");
-const optionsBox = document.getElementById("options");
-
-const englishBox = document.getElementById("englishExplanation");
-const amharicBox = document.getElementById("amharicExplanation");
-
-const nextBtn = document.getElementById("nextBtn");
-
+// HTML Elements
 const subjectName = document.getElementById("subjectName");
-const chapterTitle = document.getElementById("chapterTitle");
+const chapterName = document.getElementById("chapterName");
+const questionNumber = document.getElementById("questionNumber");
+const question = document.getElementById("question");
+const options = document.getElementById("options");
 
+// Show subject name
+subjectName.textContent = subject
+    ? subject.replace(/-/g, " ").toUpperCase()
+    : "Unknown Subject";
 
+// Show chapter
+chapterName.textContent = "Chapter " + chapter;
 
+// No questions
+if (questions.length === 0) {
 
-// Show subject information
+    question.textContent = "No questions found.";
 
-if(subjectName){
+} else {
 
-    subjectName.textContent = subject || "";
-
-}
-
-
-if(chapterTitle){
-
-    chapterTitle.textContent = "Chapter " + chapter;
-
-}
-
-
-
-
-
-// Check questions
-
-if(questions.length === 0){
-
-
-    questionBox.textContent = 
-    "No questions added yet.";
-
-
-    optionsBox.innerHTML = "";
-
-
-    nextBtn.style.display = "none";
-
+    loadQuestion();
 
 }
 
-else{
+// Load question
+function loadQuestion() {
 
+    const q = questions[currentQuestion];
 
-    showQuestion();
+    questionNumber.textContent =
+        `Question ${currentQuestion + 1} / ${questions.length}`;
 
+    question.textContent = q.question;
 
-}
+    options.innerHTML = "";
 
+    q.options.forEach((option) => {
 
-
-
-
-
-
-function showQuestion(){
-
-
-    let q = questions[currentQuestion];
-
-
-    questionBox.textContent = q.question;
-
-
-    optionsBox.innerHTML = "";
-
-
-    englishBox.textContent = "";
-
-    amharicBox.textContent = "";
-
-
-
-
-    q.options.forEach((option,index)=>{
-
-
-        let button = document.createElement("button");
-
-
-        button.textContent = option;
-
+        const button = document.createElement("button");
 
         button.className = "optionBtn";
 
+        button.textContent = option;
 
-        button.onclick = function(){
-
-            checkAnswer(index);
-
-        };
-
-
-
-        optionsBox.appendChild(button);
-
-
+        options.appendChild(button);
 
     });
 
-
-
 }
-
-
-
-
-
-
-
-function checkAnswer(selected){
-
-
-
-    let q = questions[currentQuestion];
-
-
-    let buttons = document.querySelectorAll(".optionBtn");
-
-
-
-    buttons.forEach((btn,index)=>{
-
-
-        btn.disabled = true;
-
-
-
-        if(index === q.answer){
-
-
-            btn.style.background = "green";
-
-            btn.style.color = "white";
-
-
-        }
-
-
-
-        if(index === selected && selected !== q.answer){
-
-
-            btn.style.background = "red";
-
-            btn.style.color = "white";
-
-
-        }
-
-
-
-    });
-
-
-
-
-    englishBox.innerHTML = q.englishExplanation || "";
-
-    amharicBox.innerHTML = q.amharicExplanation || "";
-
-
-
-
-    if(selected === q.answer){
-
-        score++;
-
-    }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-nextBtn.onclick = function(){
-
-
-
-    currentQuestion++;
-
-
-
-    if(currentQuestion < questions.length){
-
-
-
-        showQuestion();
-
-
-
-    }
-
-    else{
-
-
-        questionBox.textContent = "🎉 Quiz Completed";
-
-
-        optionsBox.innerHTML = 
-        "Your Score: " + score + "/" + questions.length;
-
-
-
-        englishBox.innerHTML = "";
-
-        amharicBox.innerHTML = "";
-
-
-        nextBtn.style.display = "none";
-
-
-    }
-
-
-
-};
-
-
-
-
-
-
-
-// Back button
-
-const backBtn = document.getElementById("backBtn");
-
-
-if(backBtn){
-
-
-    backBtn.onclick = function(){
-
-
-        window.history.back();
-
-
-    };
-
-
-}
-// Back button
-document.getElementById("backBtn").addEventListener("click", function () {
-    window.history.back();
-});
-
-// Home button
-document.getElementById("homeBtn").addEventListener("click", function () {
-    window.location.href = "index.html";
-});
-
-
-
-
-
-
