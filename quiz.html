@@ -2,156 +2,82 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Unique Academic Quiz</title>
-
-<link rel="stylesheet" href="quiz.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Academic Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
-
 
 <body>
 
+<div class="container">
 
-<div class="quiz-container">
+    <!-- Header -->
+    <header class="header">
 
+        <button id="backBtn" class="btn backBtn">
+            ← Back
+        </button>
 
-<header class="quiz-header">
-
-
-    <button class="back-btn" id="backBtn">
-    ←
-</button>
-
-
-    <div>
         <h1>Unique Academic</h1>
+
+        <button id="homeBtn" class="btn homeBtn">
+            🏠 Home
+        </button>
+
+    </header>
+
+    <!-- Subject -->
+    <div class="subjectBox">
+
+        <h2 id="subjectName">Subject</h2>
+
+        <p id="chapterName">Chapter 1</p>
+
     </div>
 
+    <!-- Progress -->
+    <div class="progress">
 
-</header>
+        <span id="questionNumber">
+            Question 1 / 10
+        </span>
 
-
-
-
-
-<div class="subject-card">
-
-
-    <span class="subject-name" id="subjectName"></span>
-
-
-    <h2 id="chapterTitle"></h2>
-
-
-</div>
-
-
-
-
-
-
-<div class="question-card">
-
-
-    <h2 
-    class="question-text" 
-    id="question">
-    </h2>
-
-
-
-    <div 
-    class="options" 
-    id="options">
     </div>
 
+    <!-- Question -->
+    <div class="questionBox">
 
-</div>
+        <h2 id="question"></h2>
 
+        <div id="options"></div>
 
+    </div>
 
+    <!-- Explanation -->
+    <div class="explanation">
 
-
-
-
-<div class="answer-box">
-
-
-    <div class="explanation-card">
-
-
-        <h3>
-        📖 English Explanation
-        </h3>
-
+        <h3>📖 English Explanation</h3>
 
         <p id="englishExplanation"></p>
 
-
-    </div>
-
-
-
-
-
-    <div class="explanation-card">
-
-
-        <h3>
-        🇪🇹 የአማርኛ ማብራሪያ
-        </h3>
-
+        <h3>🇪🇹 የአማርኛ ማብራሪያ</h3>
 
         <p id="amharicExplanation"></p>
 
-
     </div>
 
-
-</div>
-
-
-
-
-
-
-
-
-<div class="next-area">
-
-
-    <button 
-    id="nextBtn" 
-    class="next-btn">
+    <!-- Next -->
+    <button id="nextBtn" class="nextBtn">
 
         Next Question →
 
     </button>
 
-
 </div>
-
-
-
-
-
-
-</div>
-
-
-
-
-
 
 <script src="quizData.js"></script>
-
 <script src="quiz.js"></script>
 
-
 </body>
-
 </html>
