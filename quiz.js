@@ -2,10 +2,23 @@
 const params = new URLSearchParams(window.location.search);
 
 const subject = params.get("subject");
-const chapter = params.get("chapter");
+const chapter = Number(params.get("chapter"));
 
-// Get question list
+// Show Subject & Chapter
+document.getElementById("subjectName").textContent =
+subject.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+document.getElementById("chapterTitle").textContent =
+"Chapter " + chapter + " Quiz";
+
+const subtitle = document.getElementById("chapterSubtitle");
+if (subtitle) {
+    subtitle.textContent = "Unique Academic Learning Quiz";
+}
+
+// Get Questions
 const questions = quizData[subject]?.[chapter] || [];
+
 if (questions.length === 0) {
 
     document.getElementById("question").textContent =
@@ -18,12 +31,10 @@ if (questions.length === 0) {
     document.getElementById("nextBtn").style.display = "none";
 
     throw new Error("No questions found.");
-
 }
-// Start from first question
+
 let currentQuestion = 0;
 
-// Load first question
 loadQuestion();
 
 function loadQuestion(){
@@ -31,17 +42,19 @@ function loadQuestion(){
     const q = questions[currentQuestion];
 
     document.getElementById("question").textContent =
-        q.question;
+    q.question;
 
     const optionsDiv =
-        document.getElementById("options");
+    document.getElementById("options");
 
     optionsDiv.innerHTML = "";
 
-    // Hide explanation
     document.querySelector(".answer-box").style.display = "none";
 
-    // Hide Next button
+    document.getElementById("englishExplanation").textContent = "";
+
+    document.getElementById("amharicExplanation").textContent = "";
+
     document.getElementById("nextBtn").style.display = "none";
 
     q.options.forEach((option,index)=>{
@@ -65,7 +78,7 @@ function checkAnswer(selectedIndex){
     const q = questions[currentQuestion];
 
     const buttons =
-        document.querySelectorAll(".option-btn");
+    document.querySelectorAll(".option-btn");
 
     buttons.forEach((button,index)=>{
 
@@ -87,15 +100,13 @@ function checkAnswer(selectedIndex){
     });
 
     document.getElementById("englishExplanation").textContent =
-        q.englishExplanation;
+    q.englishExplanation || "";
 
     document.getElementById("amharicExplanation").textContent =
-        q.amharicExplanation;
+    q.amharicExplanation || "";
 
-    // Show explanation
     document.querySelector(".answer-box").style.display = "block";
 
-    // Show Next button
     document.getElementById("nextBtn").style.display = "inline-block";
 
 }
@@ -105,16 +116,7 @@ document.getElementById("nextBtn").onclick = function(){
     currentQuestion++;
 
     if(currentQuestion < questions.length){
-// Subject Name
-document.getElementById("subjectName").textContent =
-subject.replace("-", " ").replace(/\b\w/g,
-c => c.toUpperCase());
 
-// Chapter Title
-document.getElementById("chapterTitle").textContent =
-"Chapter " + chapter + " Quiz";
- document.getElementById("chapterSubtitle").textContent =
-"Unique Academic Learning Quiz";
         loadQuestion();
 
     }else{
