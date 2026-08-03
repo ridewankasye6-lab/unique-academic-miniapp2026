@@ -103,7 +103,6 @@ function checkAnswer(selected){
 
 }
 
-
 nextBtn.onclick = ()=>{
 
 
@@ -114,22 +113,44 @@ nextBtn.onclick = ()=>{
 
         showQuestion();
 
-    }else{
+    }
+
+    else{
 
 
-        questionBox.textContent = 
-        "Quiz Finished 🎉 Score: " + score + "/" + questions.length;
+        questionBox.textContent =
+        "🎉 Quiz Completed";
 
 
-        optionsBox.innerHTML="";
+        optionsBox.innerHTML =
+        "Your Score: " + score + "/" + questions.length;
 
-        explanationBox.innerHTML="";
+
+        document.getElementById("englishExplanation").innerHTML = "";
+
+        document.getElementById("amharicExplanation").innerHTML = "";
 
 
-        nextBtn.style.display="none";
+        nextBtn.style.display = "none";
 
 
     }
 
+
+};
+
+};
+// Back button
+document.getElementById("backBtn").onclick = function(){
+
+    window.history.back();
+
+};
+
+
+// Home button
+document.getElementById("homeBtn").onclick = function(){
+
+    window.location.href = "index.html";
 
 };
