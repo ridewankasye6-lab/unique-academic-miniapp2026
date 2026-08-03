@@ -141,16 +141,29 @@ nextBtn.onclick = ()=>{
 
 };
 // Back button
-document.getElementById("backBtn").onclick = function(){
+// Back button
+const backBtn = document.getElementById("backBtn");
 
-    window.history.back();
+if(backBtn){
 
-};
+    backBtn.onclick = function(){
+
+        window.history.back();
+
+    };
+
+}
 
 
 // Home button
-document.getElementById("homeBtn").onclick = function(){
+const homeBtn = document.getElementById("homeBtn");
 
-    window.location.href = "index.html";
+if(homeBtn){
 
-};
+    homeBtn.onclick = function(){
+
+        window.location.href = "index.html";
+
+    };
+
+}
