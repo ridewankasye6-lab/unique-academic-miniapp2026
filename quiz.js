@@ -1,134 +1,135 @@
-// Read URL
 const params = new URLSearchParams(window.location.search);
 
 const subject = params.get("subject");
-const chapter = Number(params.get("chapter"));
+const chapter = params.get("chapter");
 
-// Show Subject & Chapter
-document.getElementById("subjectName").textContent =
-subject.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-
-document.getElementById("chapterTitle").textContent =
-"Chapter " + chapter + " Quiz";
-
-const subtitle = document.getElementById("chapterSubtitle");
-if (subtitle) {
-    subtitle.textContent = "Unique Academic Learning Quiz";
-}
-
-// Get Questions
 const questions = quizData[subject]?.[chapter] || [];
+
+let currentQuestion = 0;
+let score = 0;
+
+const questionBox = document.getElementById("question");
+const optionsBox = document.getElementById("options");
+const explanationBox = document.getElementById("explanation");
+const nextBtn = document.getElementById("nextBtn");
+
 
 if (questions.length === 0) {
 
-    document.getElementById("question").textContent =
-    "No questions have been added for this chapter yet.";
+    questionBox.textContent = "No questions added yet.";
+    optionsBox.innerHTML = "";
 
-    document.getElementById("options").innerHTML = "";
+} else {
 
-    document.querySelector(".answer-box").style.display = "none";
+    showQuestion();
 
-    document.getElementById("nextBtn").style.display = "none";
-
-    throw new Error("No questions found.");
 }
 
-let currentQuestion = 0;
 
-loadQuestion();
+function showQuestion(){
 
-function loadQuestion(){
+    let q = questions[currentQuestion];
 
-    const q = questions[currentQuestion];
+    questionBox.textContent = q.question;
 
-    document.getElementById("question").textContent =
-    q.question;
+    optionsBox.innerHTML = "";
 
-    const optionsDiv =
-    document.getElementById("options");
-
-    optionsDiv.innerHTML = "";
-
-    document.querySelector(".answer-box").style.display = "none";
-
-    document.getElementById("englishExplanation").textContent = "";
-
-    document.getElementById("amharicExplanation").textContent = "";
-
-    document.getElementById("nextBtn").style.display = "none";
+    explanationBox.innerHTML = "";
 
     q.options.forEach((option,index)=>{
 
-        const button = document.createElement("button");
+        let button = document.createElement("button");
 
-        button.className = "option-btn";
+        button.textContent = option;
 
-        button.textContent = "○ " + option;
+        button.className = "optionBtn";
 
         button.onclick = ()=>checkAnswer(index);
 
-        optionsDiv.appendChild(button);
+        optionsBox.appendChild(button);
 
     });
 
 }
 
-function checkAnswer(selectedIndex){
 
-    const q = questions[currentQuestion];
+function checkAnswer(selected){
 
-    const buttons =
-    document.querySelectorAll(".option-btn");
+    let q = questions[currentQuestion];
 
-    buttons.forEach((button,index)=>{
+    let buttons = document.querySelectorAll(".optionBtn");
 
-        button.disabled = true;
+
+    buttons.forEach((btn,index)=>{
+
+        btn.disabled = true;
+
 
         if(index === q.answer){
 
-            button.classList.add("correct");
+            btn.style.background = "green";
+            btn.style.color = "white";
 
         }
 
-        if(index === selectedIndex &&
-           index !== q.answer){
 
-            button.classList.add("wrong");
+        if(index === selected && selected !== q.answer){
+
+            btn.style.background = "red";
+            btn.style.color = "white";
 
         }
 
     });
 
-    document.getElementById("englishExplanation").textContent =
-    q.englishExplanation || "";
 
-    document.getElementById("amharicExplanation").textContent =
-    q.amharicExplanation || "";
+    explanationBox.innerHTML = `
 
-    document.querySelector(".answer-box").style.display = "block";
+    <h3>Explanation</h3>
 
-    document.getElementById("nextBtn").style.display = "inline-block";
+    <p>${q.englishExplanation}</p>
 
-}
+    <p>${q.amharicExplanation}</p>
 
-document.getElementById("nextBtn").onclick = function(){
+    `;
 
-    currentQuestion++;
 
-    if(currentQuestion < questions.length){
+    if(selected === q.answer){
 
-        loadQuestion();
-
-    }else{
-
-        alert("🎉 You have completed this chapter quiz!");
+        score++;
 
     }
 
-};
 
-document.getElementById("backBtn").onclick = function(){
+}
 
-    window.location.href = subject + ".html";
+
+nextBtn.onclick = ()=>{
+
+
+    currentQuestion++;
+
+
+    if(currentQuestion < questions.length){
+
+        showQuestion();
+
+    }else{
+
+
+        questionBox.textContent = 
+        "Quiz Finished 🎉 Score: " + score + "/" + questions.length;
+
+
+        optionsBox.innerHTML="";
+
+        explanationBox.innerHTML="";
+
+
+        nextBtn.style.display="none";
+
+
+    }
+
 
 };
