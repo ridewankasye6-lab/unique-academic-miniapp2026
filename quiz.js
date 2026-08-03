@@ -270,7 +270,15 @@ if(backBtn){
 
 
 }
+// Back button
+document.getElementById("backBtn").addEventListener("click", function () {
+    window.history.back();
+});
 
+// Home button
+document.getElementById("homeBtn").addEventListener("click", function () {
+    window.location.href = "index.html";
+});
 
 
 
