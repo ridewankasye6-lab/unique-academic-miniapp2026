@@ -2,7 +2,7 @@ const quizData = {
 
     "global-trends": {
 
-        1: [[
+        1: [
   {
     "question": "1. IR is more concentrated on domestic relations.",
     "options": [
@@ -107,8 +107,7 @@ const quizData = {
     "englishExplanation": "",
     "amharicExplanation": "📚 internal sovereignty አንዲት ሀገራ በራሷ ግዛት(በራሷ ደንበር ውስጥ) የፈለገችው ነገር ያለምንም የውጭ ሀገራት ጣልቃ ገብነት የማድረግ ሙሉ ሀይል እንዳላት ይገልጣል :: ለምሳሌ ግብር መሰብሰብ፤የ ሀገሪቱን የጦር ሀይል ማደራጀት የመሳሰሉት ....በሀገሪቱ ውስጥ::"
   }
-]
- ],
+],
         2: [],
         3: [],
         4: [],
