@@ -66,3 +66,5 @@ function loadQuestion() {
     });
 
 }
+alert(subject);
+alert(chapter);
