@@ -18,6 +18,7 @@
 
 <div class="quiz-container">
 
+
 <header class="quiz-header">
 
 
@@ -35,91 +36,70 @@
     </div>
 
 
+
     <div>
         <h1>Unique Academic</h1>
     </div>
 
 
 </header>
-   
-    <!-- Subject Information -->
-
-    <div class="subject-card">
-
-        <span class="subject-name" id="subjectName">
-        </span>
 
 
-        <h2 id="chapterTitle">
-        </h2>
 
 
+
+<div class="subject-card">
+
+
+    <span class="subject-name" id="subjectName"></span>
+
+
+    <h2 id="chapterTitle"></h2>
+
+
+</div>
+
+
+
+
+
+
+<div class="question-card">
+
+
+    <h2 
+    class="question-text" 
+    id="question">
+    </h2>
+
+
+
+    <div 
+    class="options" 
+    id="options">
     </div>
 
 
-
-
-    <!-- Question Area -->
-
-    <div class="question-card">
-
-
-        <h2 
-        class="question-text" 
-        id="question">
-        </h2>
-
-
-
-        <div 
-        class="options" 
-        id="options">
-        </div>
-
-
-
-    </div>
+</div>
 
 
 
 
 
-    <!-- Explanation Area -->
-
-    <div class="answer-box">
 
 
-        <div class="explanation-card">
+<div class="answer-box">
 
 
-            <h3>
-            📖 English Explanation
-            </h3>
+    <div class="explanation-card">
 
 
-            <p id="englishExplanation">
-            </p>
+        <h3>
+        📖 English Explanation
+        </h3>
 
 
-        </div>
-
-
-
-
-        <div class="explanation-card">
-
-
-            <h3>
-            🇪🇹 የአማርኛ ማብራሪያ
-            </h3>
-
-
-            <p id="amharicExplanation">
-            </p>
-
-
-        </div>
-
+        <p id="englishExplanation"></p>
 
 
     </div>
@@ -128,22 +108,45 @@
 
 
 
-
-    <!-- Next Button -->
-
-    <div class="next-area">
+    <div class="explanation-card">
 
 
-        <button 
-        id="nextBtn" 
-        class="next-btn">
+        <h3>
+        🇪🇹 የአማርኛ ማብራሪያ
+        </h3>
 
-            Next Question →
 
-        </button>
+        <p id="amharicExplanation"></p>
 
 
     </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="next-area">
+
+
+    <button 
+    id="nextBtn" 
+    class="next-btn">
+
+        Next Question →
+
+    </button>
+
+
+</div>
+
+
+
 
 
 
@@ -153,10 +156,10 @@
 
 
 
-<script src="quizData.js" defer></script>
 
-<script src="quiz.js" defer></script>
+<script src="quizData.js"></script>
 
+<script src="quiz.js"></script>
 
 
 </body>
