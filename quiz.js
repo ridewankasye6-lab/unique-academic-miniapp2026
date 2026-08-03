@@ -277,21 +277,3 @@ if(backBtn){
 
 
 
-// Home button
-
-const homeBtn = document.getElementById("homeBtn");
-
-
-if(homeBtn){
-
-
-    homeBtn.onclick = function(){
-
-
-        window.location.href = "index.html";
-
-
-    };
-
-
-}
