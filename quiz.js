@@ -5,8 +5,21 @@ const subject = params.get("subject");
 const chapter = params.get("chapter");
 
 // Get question list
-const questions = quizData[subject][chapter];
+const questions = quizData[subject]?.[chapter] || [];
+if (questions.length === 0) {
 
+    document.getElementById("question").textContent =
+    "No questions have been added for this chapter yet.";
+
+    document.getElementById("options").innerHTML = "";
+
+    document.querySelector(".answer-box").style.display = "none";
+
+    document.getElementById("nextBtn").style.display = "none";
+
+    throw new Error("No questions found.");
+
+}
 // Start from first question
 let currentQuestion = 0;
 
