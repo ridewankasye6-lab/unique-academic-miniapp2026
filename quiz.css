@@ -1,293 +1,120 @@
-/* ===== Unique Academic Quiz ===== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f3f7ff;
+    background:#f5f7fb;
+    padding:20px;
 }
 
-.quiz-container{
+.container{
     max-width:700px;
     margin:auto;
+    background:white;
+    border-radius:15px;
     padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.quiz-header{
-    background:linear-gradient(135deg,#2563EB,#4F46E5);
-    color:white;
-    border-radius:24px;
-    padding:25px;
-    display:flex;
-    align-items:center;
-    gap:18px;
-    box-shadow:0 10px 25px rgba(37,99,235,.25);
-}
-
-.back-btn{
-    width:48px;
-    height:48px;
-    border:none;
-    border-radius:50%;
-    background:rgba(255,255,255,.2);
-    color:white;
-    font-size:22px;
-    cursor:pointer;
-}
-
-.quiz-header h1{
-    font-size:28px;
-    margin-bottom:5px;
-}
-
-.quiz-header p{
-    color:#E8ECFF;
-    font-size:16px;
-}
-.subject-card{
-    background:#fff;
-    margin-top:20px;
-    border-radius:20px;
-    padding:20px;
-    box-shadow:0 6px 16px rgba(0,0,0,.08);
-}
-
-.subject-name{
-    display:inline-block;
-    background:#E8F0FF;
-    color:#2563EB;
-    padding:6px 12px;
-    border-radius:20px;
-    font-weight:bold;
-    margin-bottom:12px;
-}
-
-.subject-card h2{
-    color:#222;
-    margin-bottom:8px;
-}
-
-.subject-card p{
-    color:#666;
-}
-/* ===========================
-   Progress Card
-=========================== */
-
-.progress-card{
-    background:#fff;
-    margin-top:20px;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 6px 16px rgba(0,0,0,.08);
-}
-
-.progress-top{
+.header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:15px;
-}
-
-.question-count{
-    font-size:16px;
-    font-weight:bold;
-    color:#222;
-}
-
-.progress-percent{
-    color:#2563EB;
-    font-weight:bold;
-}
-
-.progress-bar{
-    width:100%;
-    height:10px;
-    background:#E5E7EB;
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.progress-fill{
-    width:5%;
-    height:100%;
-    background:linear-gradient(90deg,#2563EB,#4F46E5);
-    border-radius:20px;
-}
-/* ===========================
-   Question Card
-=========================== */
-
-.question-card{
-    background:#fff;
-    margin-top:20px;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 6px 16px rgba(0,0,0,.08);
-}
-
-.question-title{
-    display:inline-block;
-    background:#2563EB;
-    color:#fff;
-    padding:8px 14px;
-    border-radius:20px;
-    font-size:14px;
     margin-bottom:20px;
 }
 
-.question-text{
+.header h1{
     font-size:24px;
-    color:#222;
-    line-height:1.5;
-    margin-bottom:25px;
+    color:#007bff;
 }
 
-.answers{
+.btn{
+    border:none;
+    background:#007bff;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+.subjectBox{
+    background:#eef5ff;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.subjectBox h2{
+    color:#007bff;
+}
+
+.progress{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.questionBox{
+    margin-bottom:20px;
+}
+
+#question{
+    margin-bottom:15px;
+}
+
+#options{
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:10px;
 }
 
-.answer-card{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    padding:18px;
-    border:2px solid #E5E7EB;
-    border-radius:16px;
-    cursor:pointer;
-    transition:.3s;
-    background:#fff;
-}
-
-.answer-card:hover{
-    border-color:#2563EB;
-    background:#EEF4FF;
-}
-
-.answer-card input{
-    width:20px;
-    height:20px;
-}
-
-.answer-card span{
-    font-size:17px;
-    color:#333;
-}
-.option-btn{
+.optionBtn{
     width:100%;
+    padding:14px;
+    border:2px solid #ddd;
+    background:white;
+    border-radius:10px;
+    cursor:pointer;
     text-align:left;
-    padding:18px;
-    margin-bottom:15px;
+    font-size:16px;
+}
+
+.optionBtn:hover{
+    border-color:#007bff;
+}
+
+.explanation{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.explanation h3{
+    margin-top:10px;
+    color:#007bff;
+}
+
+.nextBtn{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
     border:none;
-    border-radius:15px;
-    background:#F8FAFC;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.option-btn:hover{
-    background:#EEF4FF;
-}
-
-.correct{
-    background:#DCFCE7;
-    border:2px solid #22C55E;
-    color:#166534;
-    font-weight:bold;
-    transform:scale(1.02);
-    transition:.3s;
-}
-
-.wrong{
-    background:#FEE2E2;
-    border:2px solid #EF4444;
-    color:#991B1B;
-    font-weight:bold;
-    transform:scale(1.02);
-    transition:.3s;
-}
-
-.option-btn:disabled{
-    cursor:not-allowed;
-    opacity:.95;
-}
-
-.answer-box{
-    display:none;
-    animation:fadeIn .4s ease;
-}
-
-@keyframes fadeIn{
-
-    from{
-        opacity:0;
-        transform:translateY(15px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
-
-
-.answer-box h3{
-    margin-bottom:10px;
-    color:#2563EB;
-}
-
-.answer-box p{
-    margin-bottom:18px;
-    line-height:1.7;
-}
-.next-area{
-    margin-top:25px;
-    text-align:right;
-}
-
-
-.next-btn{
-    background:#2563EB;
+    border-radius:10px;
+    background:#28a745;
     color:white;
-    border:none;
-    border-radius:14px;
-    padding:14px 30px;
-    font-size:16px;
-    font-weight:bold;
+    font-size:17px;
     cursor:pointer;
-    display:none;
-    transition:.3s;
 }
 
-.next-btn:hover{
-    background:#1D4ED8;
-    transform:translateY(-2px);
-}
-.explanation-card{
-    background:#F8FAFC;
-    border-left:5px solid #2563EB;
-    padding:18px;
-    margin-top:18px;
-    border-radius:12px;
-}
-
-.explanation-card h3{
-    color:#2563EB;
-    margin-bottom:10px;
-    font-size:18px;
-}
-
-.explanation-card p{
-    color:#333;
-    line-height:1.8;
-    font-size:16px;
+.nextBtn:hover{
+    background:#218838;
 }
