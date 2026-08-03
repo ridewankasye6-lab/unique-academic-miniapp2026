@@ -37,12 +37,7 @@ if (questions.length === 0) {
 
 } else {
 
-    loadQuestion();
-
-}
-
-// Load question
-function loadQuestion() {
+    function loadQuestion() {
 
     const q = questions[currentQuestion];
 
@@ -53,7 +48,10 @@ function loadQuestion() {
 
     options.innerHTML = "";
 
-    q.options.forEach((option) => {
+    document.getElementById("englishExplanation").textContent = "";
+    document.getElementById("amharicExplanation").textContent = "";
+
+    q.options.forEach((option, index) => {
 
         const button = document.createElement("button");
 
@@ -61,10 +59,45 @@ function loadQuestion() {
 
         button.textContent = option;
 
+        button.onclick = function () {
+            checkAnswer(index);
+        };
+
         options.appendChild(button);
 
     });
 
 }
-alert(subject);
-alert(chapter);
+    function checkAnswer(selectedIndex) {
+
+    const q = questions[currentQuestion];
+
+    const buttons = document.querySelectorAll(".optionBtn");
+
+    buttons.forEach((button, index) => {
+
+        button.disabled = true;
+
+        if (index === q.answer) {
+
+            button.style.backgroundColor = "green";
+            button.style.color = "white";
+
+        }
+
+        if (index === selectedIndex && index !== q.answer) {
+
+            button.style.backgroundColor = "red";
+            button.style.color = "white";
+
+        }
+
+    });
+
+    document.getElementById("englishExplanation").textContent =
+        q.englishExplanation;
+
+    document.getElementById("amharicExplanation").textContent =
+        q.amharicExplanation;
+
+}
