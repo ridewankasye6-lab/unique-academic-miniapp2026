@@ -84,19 +84,19 @@ const quizData = {
     "amharicExplanation": "💡 Hint: Conventional ማለት traditional ማለት ነው::"
   },
   {
-    "question": "19. Which international relation theories can be taken as utopian?",
+    "question": "9. Which international relation theories can be taken as utopian?",
     "options": [
-      "Liberalism",
-      "Marxism",
-      "Idealism",
-      "A and C",  
+      "Liberalism"
+      "Marxism"
+      "Idealism"
+      "A and"C, 
     ],
     "answer": 3,
     "englishExplanation": "",
     "amharicExplanation": "📚 utopian ሀሳባዊ(ideal) የሆነ ፅንሰ ሀሳብ ሲሆን የሚያመላክተውም by nature perfect፤ደግ እትሁት የሆነ ማህበረሰብ ወይም አለምን ነው::"
   },
   {
-    "question": "20. ____________ can be defined as a state's ultimate authority within its territorial entity?",
+    "question": "10. ____________ can be defined as a state's ultimate authority within its territorial entity?",
     "options": [
       "Internal sovereignty",
       "External sovereignty",
