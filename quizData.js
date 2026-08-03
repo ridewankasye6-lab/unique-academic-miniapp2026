@@ -83,18 +83,18 @@ const quizData = {
     "englishExplanation": "Conventional International Relations (IR), in its traditional form, was not concerned with potential distinctions between different levels of analysis or theoretical perspectives. Traditional IR focused more on state-centric approaches and the interactions",
     "amharicExplanation": "💡 Hint: Conventional ማለት traditional ማለት ነው::"
   },
-  {
-    "question": "9. Which international relation theories can be taken as utopian?",
-    "options": [
-      "Liberalism"
-      "Marxism"
-      "Idealism"
-      "A and"C, 
-    ],
-    "answer": 3,
-    "englishExplanation": "",
-    "amharicExplanation": "📚 utopian ሀሳባዊ(ideal) የሆነ ፅንሰ ሀሳብ ሲሆን የሚያመላክተውም by nature perfect፤ደግ እትሁት የሆነ ማህበረሰብ ወይም አለምን ነው::"
-  },
+ {
+  "question": "9. Which international relation theories can be taken as utopian?",
+  "options": [
+    "Liberalism",
+    "Marxism",
+    "Idealism",
+    "A and C"
+  ],
+  "answer": 3,
+  "englishExplanation": "",
+  "amharicExplanation": "📚 utopian ሀሳባዊ (ideal) የሆነ ፅንሰ ሀሳብ ሲሆን የሚያመላክተውም by nature perfect፤ ደግ እና እትሁት የሆነ ማህበረሰብ ወይም ዓለምን ነው::"
+},
   {
     "question": "10. ____________ can be defined as a state's ultimate authority within its territorial entity?",
     "options": [
