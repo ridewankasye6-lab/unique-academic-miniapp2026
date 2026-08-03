@@ -2,29 +2,121 @@ const quizData = {
 
     "global-trends": {
 
-        1: [
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
 
-            {
-                question: "What is International Relations primarily concerned with?",
+    },
 
-                options: [
-                    "Domestic Politics",
-                    "Relations Between States",
-                    "Economics",
-                    "History"
-                ],
+    "economics": {
 
-                answer: 1,
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
 
-                englishExplanation:
-                "International Relations studies relationships between states and international organizations.",
+    },
 
-                amharicExplanation:
-                "የአለም አቀፍ ግንኙነት በመንግስታት እና በዓለም አቀፍ ድርጅቶች መካከል ያለውን ግንኙነት ያጠናል።"
+    "logic": {
 
-            }
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
 
-        ]
+    },
+
+    "psychology": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "anthropology": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "history": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "geography": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "entrepreneurship": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "emerging-technology": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "english1": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "english2": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    },
+
+    "civic": {
+
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
 
     }
 
