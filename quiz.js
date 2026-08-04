@@ -29,6 +29,8 @@ chapterName.textContent = chapter
 // Get questions
 const questions = quizData[subject]?.[chapter] || [];
 
+console.log(quizData);
+console.log(questions);
 // Check if there are questions
 if (questions.length === 0) {
 
