@@ -29,7 +29,7 @@ chapterName.textContent = chapter
 
 // Load Questions
 const questions = quizData[subject]?.[chapter] || [];
-
+console.log(questions.length);
 let currentQuestion = 0;
 
 // No Questions
