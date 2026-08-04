@@ -40,14 +40,19 @@ if (questions.length === 0) {
 
 } else {
 
+    function loadQuestion() {
+
     const q = questions[currentQuestion];
 
     questionNumber.textContent =
-        `Question 1 / ${questions.length}`;
+        `Question ${currentQuestion + 1} / ${questions.length}`;
 
     question.textContent = q.question;
 
     options.innerHTML = "";
+
+    document.getElementById("englishExplanation").textContent = "";
+    document.getElementById("amharicExplanation").textContent = "";
 
     q.options.forEach(option => {
 
@@ -57,15 +62,16 @@ if (questions.length === 0) {
 
         button.textContent = option;
 
-button.onclick = function () {
-    checkAnswer(button, q, button.textContent);
-};
+        button.onclick = function () {
+            checkAnswer(button, q, button.textContent);
+        };
 
-options.appendChild(button);
+        options.appendChild(button);
 
     });
 
 }
+    loadQuestion();
 
 function checkAnswer(clickedButton, q, selectedOption) {
 
@@ -83,7 +89,20 @@ function checkAnswer(clickedButton, q, selectedOption) {
         }
 
     });
+    
+const nextBtn = document.getElementById("nextBtn");
 
+nextBtn.onclick = function () {
+
+    if (currentQuestion < questions.length - 1) {
+
+        currentQuestion++;
+
+        loadQuestion();
+
+    }
+
+};
     if (selectedOption !== q.options[q.answer]) {
 
         clickedButton.style.background = "red";
