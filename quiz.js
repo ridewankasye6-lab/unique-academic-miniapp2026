@@ -90,6 +90,12 @@ function checkAnswer(clickedButton, q, selectedOption) {
 
     });
     
+function checkAnswer(...) {
+
+   ...
+
+}   // <-- checkAnswer ends here
+
 const nextBtn = document.getElementById("nextBtn");
 
 nextBtn.onclick = function () {
