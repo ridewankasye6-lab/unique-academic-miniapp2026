@@ -28,6 +28,7 @@ chapterName.textContent = chapter
 
 // Get questions
 const questions = quizData[subject]?.[chapter] || [];
+let currentQuestion = 0;
 
 console.log(quizData);
 console.log(questions);
@@ -39,7 +40,7 @@ if (questions.length === 0) {
 
 } else {
 
-    const q = questions[0];
+    const q = questions[currentQuestion];
 
     questionNumber.textContent =
         `Question 1 / ${questions.length}`;
@@ -56,8 +57,43 @@ if (questions.length === 0) {
 
         button.textContent = option;
 
-        options.appendChild(button);
+button.onclick = function () {
+    checkAnswer(button, q, button.textContent);
+};
+
+options.appendChild(button);
 
     });
 
+}
+
+function checkAnswer(clickedButton, q, selectedOption) {
+
+    const buttons = document.querySelectorAll(".optionBtn");
+
+    buttons.forEach(btn => {
+
+        btn.disabled = true;
+
+        if (btn.textContent === q.options[q.answer]) {
+
+            btn.style.background = "green";
+            btn.style.color = "white";
+
+        }
+
+    });
+
+    if (selectedOption !== q.options[q.answer]) {
+
+        clickedButton.style.background = "red";
+        clickedButton.style.color = "white";
+
+    }
+
+    document.getElementById("englishExplanation").textContent =
+        q.englishExplanation;
+
+    document.getElementById("amharicExplanation").textContent =
+        q.amharicExplanation;
 }
