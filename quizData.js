@@ -2,7 +2,7 @@ const quizData = {
 
     "global-trends": {
 
-        1:1: [
+    1: [
 
 {
   "question": "1. IR is more concentrated on domestic relations.",
