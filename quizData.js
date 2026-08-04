@@ -107,7 +107,96 @@ const quizData = {
     "englishExplanation": "",
     "amharicExplanation": "📚 internal sovereignty አንዲት ሀገራ በራሷ ግዛት(በራሷ ደንበር ውስጥ) የፈለገችው ነገር ያለምንም የውጭ ሀገራት ጣልቃ ገብነት የማድረግ ሙሉ ሀይል እንዳላት ይገልጣል :: ለምሳሌ ግብር መሰብሰብ፤የ ሀገሪቱን የጦር ሀይል ማደራጀት የመሳሰሉት ....በሀገሪቱ ውስጥ::"
   }
-],
+ },
+{
+  "question": "11. Realists maintain optimistic view of international relations.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "Realists do not have an optimistic view of international relations. They have a pessimistic view because they believe states mainly act according to their own interests.",
+  "amharicExplanation": "📚 Realists ለዓለም አቀፍ ግንኙነቶች ጥሩ የሆነ optimistic view ሳይሆን pessimistic አመለካከት አላቸው። ምክንያቱም ሀገራት ከሌሎች ሀገራት ጋር የሚፈጥሩት ግንኙነት ለራሳቸው ጥቅም እንደሆነ ያምናሉ።"
+},
+
+{
+  "question": "12. Westphalian treaty is one of the turning points for the progress of international relations.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "The Treaty of Westphalia (1648), which ended the Thirty Years' War, is considered one of the turning points in organizing international politics and developing international relations.",
+  "amharicExplanation": "📚 የ Westphalia ስምምነት በ1648 የ30 ዓመታት ጦርነትን ካበቃ በኋላ የዓለም አቀፍ ፖለቲካ አደረጃጀት ላይ ትልቅ ለውጥ ያመጣ ስለሆነ ከ IR ዋና የለውጥ ወቅቶች አንዱ ነው።"
+},
+
+{
+  "question": "13. Nowadays, the words nation, state and country are used interchangeably.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "Although people sometimes use nation, state, and country interchangeably in daily language, they have different meanings in international relations.",
+  "amharicExplanation": "📚 በዕለታዊ ንግግር nation, state እና country በተመሳሳይ ሊጠቀሙ ይችላሉ፤ ነገር ግን በ IR ውስጥ የተለያዩ ትርጉሞች አላቸው።"
+},
+
+{
+  "question": "14. Participation in international relations or politics is escapable.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "Participation in international relations is inescapable because no country can live completely independently without interacting with others.",
+  "amharicExplanation": "📚 በዓለም ላይ ራሱን ችሎ ብቻውን የሚኖር ሀገር ስለሌለ በዓለም አቀፍ ግንኙነት ከመሳተፍ ማምለጥ አይቻልም። It is inescapable, not escapable."
+},
+
+{
+  "question": "15. In the Contemporary period, global interactions related to global finance, production, and labor migration are conducted solely via state actors.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "Contemporary global interactions are not conducted only by states. Non-state actors and individuals also participate in global finance, production, and labor migration.",
+  "amharicExplanation": "📚 በዘመናዊው ጊዜ global interactions በመንግስት actors ብቻ አይደረጉም። መንግስታዊ ያልሆኑ ተቋማትና ግለሰቦችም ይሳተፋሉ።"
+},
+
+{
+  "question": "16. The conventional definition of the field IR is state-centric.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "The traditional definition of International Relations focuses mainly on relations between states, so it is state-centric.",
+  "amharicExplanation": "📚 የቀድሞው የ IR ትርጉም በዋናነት በሀገራት መካከል ባለው ግንኙነት ላይ ያተኮረ ስለነበር state-centric ነው።"
+},
+
+{
+  "question": "17. Anarchic is a vertical authority structure.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "An anarchic system has no central authority or superior power. States are considered equal, making it a horizontal structure, not vertical.",
+  "amharicExplanation": "📚 Anarchic system ማለት የበላይ central power የሌለበት ስርዓት ነው። ሀገራት እኩል ስለሆኑ horizontal structure ነው እንጂ vertical አይደለም።"
+},
+
+{
+  "question": "18. All are the variables we consider in applying system level of explanation except:",
+  "options": [
+    "Personal behaviours, preferences and visions",
+    "The location of resources and distribution",
+    "The nature of system poles",
+    "Nature of international system"
+  ],
+  "answer": 0,
+  "englishExplanation": "System level of explanation focuses on the international system as a whole, not personal behaviours, preferences, or individual visions.",
+  "amharicExplanation": "📚 System level of explanation ዓለም አቀፍ ስርዓቱን በአጠቃላይ ይመለከታል። Personal behaviours, preferences and visions የግለሰብ ደረጃ ስለሆኑ አይካተቱም።"
+}    
         2: [],
         3: [],
         4: [],
