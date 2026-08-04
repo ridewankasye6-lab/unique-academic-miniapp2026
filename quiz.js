@@ -1,6 +1,5 @@
 // ===============================
 // UNIQUE ACADEMIC QUIZ
-// Step 2 - Load First Question
 // ===============================
 
 // Read URL
@@ -9,38 +8,47 @@ const params = new URLSearchParams(window.location.search);
 const subject = params.get("subject");
 const chapter = params.get("chapter");
 
-// Get HTML elements
+// HTML Elements
 const subjectName = document.getElementById("subjectName");
 const chapterName = document.getElementById("chapterName");
 const questionNumber = document.getElementById("questionNumber");
 const question = document.getElementById("question");
 const options = document.getElementById("options");
+const englishExplanation = document.getElementById("englishExplanation");
+const amharicExplanation = document.getElementById("amharicExplanation");
+const nextBtn = document.getElementById("nextBtn");
 
-// Show subject
+// Show Subject & Chapter
 subjectName.textContent = subject
     ? subject.replace(/-/g, " ").toUpperCase()
     : "Unknown Subject";
 
-// Show chapter
 chapterName.textContent = chapter
     ? "Chapter " + chapter
     : "Unknown Chapter";
 
-// Get questions
+// Load Questions
 const questions = quizData[subject]?.[chapter] || [];
+
 let currentQuestion = 0;
 
-console.log(quizData);
-console.log(questions);
-// Check if there are questions
+// No Questions
 if (questions.length === 0) {
 
     question.textContent = "No questions found.";
     questionNumber.textContent = "Question 0 / 0";
+    nextBtn.style.display = "none";
 
 } else {
 
-    function loadQuestion() {
+    loadQuestion();
+
+}
+
+// ===============================
+// Load Question
+// ===============================
+function loadQuestion() {
 
     const q = questions[currentQuestion];
 
@@ -51,10 +59,10 @@ if (questions.length === 0) {
 
     options.innerHTML = "";
 
-    document.getElementById("englishExplanation").textContent = "";
-    document.getElementById("amharicExplanation").textContent = "";
+    englishExplanation.textContent = "";
+    amharicExplanation.textContent = "";
 
-    q.options.forEach(option => {
+    q.options.forEach((option, index) => {
 
         const button = document.createElement("button");
 
@@ -63,7 +71,7 @@ if (questions.length === 0) {
         button.textContent = option;
 
         button.onclick = function () {
-            checkAnswer(button, q, button.textContent);
+            checkAnswer(index);
         };
 
         options.appendChild(button);
@@ -71,33 +79,44 @@ if (questions.length === 0) {
     });
 
 }
-    loadQuestion();
 
-function checkAnswer(clickedButton, q, selectedOption) {
+// ===============================
+// Check Answer
+// ===============================
+function checkAnswer(selectedIndex) {
+
+    const q = questions[currentQuestion];
 
     const buttons = document.querySelectorAll(".optionBtn");
 
-    buttons.forEach(btn => {
+    buttons.forEach((button, index) => {
 
-        btn.disabled = true;
+        button.disabled = true;
 
-        if (btn.textContent === q.options[q.answer]) {
+        if (index === q.answer) {
 
-            btn.style.background = "green";
-            btn.style.color = "white";
+            button.style.backgroundColor = "green";
+            button.style.color = "white";
+
+        }
+
+        if (index === selectedIndex && index !== q.answer) {
+
+            button.style.backgroundColor = "red";
+            button.style.color = "white";
 
         }
 
     });
-    
-function checkAnswer(...) {
 
-   ...
+    englishExplanation.textContent = q.englishExplanation;
+    amharicExplanation.textContent = q.amharicExplanation;
 
-}   // <-- checkAnswer ends here
+}
 
-const nextBtn = document.getElementById("nextBtn");
-
+// ===============================
+// Next Question
+// ===============================
 nextBtn.onclick = function () {
 
     if (currentQuestion < questions.length - 1) {
@@ -106,19 +125,20 @@ nextBtn.onclick = function () {
 
         loadQuestion();
 
+    } else {
+
+        questionNumber.textContent = `Question ${questions.length} / ${questions.length}`;
+
+        question.innerHTML = "🎉 Quiz Completed!";
+
+        options.innerHTML = "";
+
+        englishExplanation.textContent = "";
+        amharicExplanation.textContent = "";
+
+        nextBtn.disabled = true;
+        nextBtn.textContent = "Finished";
+
     }
 
 };
-    if (selectedOption !== q.options[q.answer]) {
-
-        clickedButton.style.background = "red";
-        clickedButton.style.color = "white";
-
-    }
-
-    document.getElementById("englishExplanation").textContent =
-        q.englishExplanation;
-
-    document.getElementById("amharicExplanation").textContent =
-        q.amharicExplanation;
-}
