@@ -142,3 +142,16 @@ nextBtn.onclick = function () {
     }
 
 };
+// ===============================
+// Back Button
+// ===============================
+document.getElementById("backBtn").onclick = function () {
+    history.back();
+};
+
+// ===============================
+// Home Button
+// ===============================
+document.getElementById("homeBtn").onclick = function () {
+    window.location.href = "index.html";
+};
