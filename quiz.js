@@ -143,15 +143,27 @@ nextBtn.onclick = function () {
 
 };
 // ===============================
-// Back Button
+// Previous Question
 // ===============================
-document.getElementById("backBtn").onclick = function () {
-    history.back();
-};
+const backBtn = document.getElementById("backBtn");
 
-// ===============================
-// Home Button
-// ===============================
-document.getElementById("homeBtn").onclick = function () {
+backBtn.onclick = function () {
+
+    if (currentQuestion > 0) {
+
+        currentQuestion--;
+
+        loadQuestion();
+
+    } else {
+
+        alert("This is the first question.");
+
+    }
+
+};
+const homeBtn = document.getElementById("homeBtn");
+
+homeBtn.onclick = function () {
     window.location.href = "index.html";
 };
