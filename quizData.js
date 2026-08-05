@@ -476,7 +476,151 @@ const quizData = {
   "answer": 1,
   "englishExplanation": "Businesses cannot ignore their environment. Ignoring environmental factors leads to failure, not safety.",
   "amharicExplanation": "📚 ማንኛውም ንግድ ከከበበው አካባቢ ተነጥሎ መኖር አይችልም፤ አካባቢውን ችላ ማለት ወደ ውድቀት (peril) ያመራል እንጂ ወደ ደህንነት (safety) አይመራም።"
-},],
+},{
+  "question": "7. A favourable set of circumstances that creates a need for a new product, service or business refers:",
+  "options": [
+    "Innovation",
+    "Creativity",
+    "Opportunity",
+    "Entrepreneurship"
+  ],
+  "answer": 2,
+  "englishExplanation": "An opportunity is a favorable situation in the market that creates the potential to introduce new goods or services.",
+  "amharicExplanation": "📚 Opportunity ማለት አዲስ ምርት ወይም አገልግሎት ለማቅረብ የሚፈጥር ምቹ የገበያ አጋጣሚ ነው።"
+},
+{
+  "question": "8. All of the following factors obstruct entrepreneurial growth except:",
+  "options": [
+    "Sudden political upsurge",
+    "Unfavourable market fluctuations",
+    "Decrease in the cost of inputs",
+    "Unreliable supply of power, finance, and other inputs"
+  ],
+  "answer": 2,
+  "englishExplanation": "Lower input costs reduce business expenses and encourage entrepreneurial growth.",
+  "amharicExplanation": "📚 የግብዓት ዋጋ መቀነስ ለንግድ እድገት አጋዥ ነው፤ ሌሎቹ አማራጮች ግን እንቅፋቶች ናቸው።"
+},
+{
+  "question": "9. Identify the incorrect statement from the following:",
+  "options": [
+    "All business persons are entrepreneurs",
+    "Being entrepreneur has relationship with gender",
+    "Every social environment has its own way of filling the entrepreneurial function",
+    "A & B",
+    "B & C"
+  ],
+  "answer": 3,
+  "englishExplanation": "Statements A and B are incorrect. Not all business people are entrepreneurs, and entrepreneurship is not determined by gender.",
+  "amharicExplanation": "📚 A እና B ሁለቱም ስህተት ናቸው። ሁሉም ነጋዴዎች entrepreneur አይደሉም፤ entrepreneurship ከጾታ ጋር ግንኙነት የለውም።"
+},
+{
+  "question": "10. One of the following is different from the other:",
+  "options": [
+    "Leadership Skill",
+    "Communication Skill",
+    "Financial Skill",
+    "Delegation Skill"
+  ],
+  "answer": 2,
+  "englishExplanation": "Financial skill is a technical business skill, while the others are managerial and interpersonal skills.",
+  "amharicExplanation": "📚 Financial Skill ቴክኒካል ክህሎት ሲሆን፣ Leadership፣ Communication እና Delegation የአመራር እና የግንኙነት ክህሎቶች ናቸው።"
+},
+{
+  "question": "11. All are barriers to creativity except:",
+  "options": [
+    "Blindly following the rules",
+    "Avoiding ambiguity",
+    "Fearing mistakes and failure",
+    "Believing that 'I'm creative'"
+  ],
+  "answer": 3,
+  "englishExplanation": "Believing in your creativity encourages innovation, while the other choices are barriers to creativity.",
+  "amharicExplanation": "📚 'እኔ ፈጣሪ ነኝ' ብሎ ማመን ለፈጠራ ያበረታታል፤ ሌሎቹ ግን የፈጠራ እንቅፋቶች ናቸው።"
+},
+{
+  "question": "12. Benefits of risk-taking include all of the following except:",
+  "options": [
+    "Creating strong motivation to complete a job well",
+    "Create a feeling of leadership",
+    "Leading to rewards",
+    "Building insecurity"
+  ],
+  "answer": 3,
+  "englishExplanation": "Building insecurity is not a benefit of taking calculated risks.",
+  "amharicExplanation": "📚 Building insecurity የስጋት መውሰድ ጥቅም ሳይሆን አሉታዊ ውጤት ነው።"
+},{
+  "question": "11. Producing maximum output with a little wasted effort indicates:",
+  "options": [
+    "Efficiency",
+    "Quality",
+    "Persuasion",
+    "Self confidence"
+  ],
+  "answer": 0,
+  "englishExplanation": "Efficiency means producing the maximum possible output with minimum waste of time, effort, and resources.",
+  "amharicExplanation": "📚 Efficiency (ውጤታማነት) ማለት በትንሽ ጊዜ፣ ጉልበት እና ሀብት ከፍተኛ ውጤት ማምጣት ነው።"
+},
+{
+  "question": "12. Identify the incorrect statement about opportunity identification:",
+  "options": [
+    "It is ability to see, discover and exploit opportunities that others miss",
+    "It is the process of combining resources to pursue a market opportunity identified",
+    "It is the process of seeking out better ways of competing",
+    "None"
+  ],
+  "answer": 1,
+  "englishExplanation": "Option B describes resource mobilization, not opportunity identification.",
+  "amharicExplanation": "📚 Opportunity identification ማለት እድሎችን መለየት ነው፤ Option B ደግሞ resource mobilization ይገልጻል።"
+},
+{
+  "question": "13. Hanna is a student at BDU in the department of Management, and by this academic semester she has planned to obtain CGPA of 3.5. Why didn't she plan to obtain 4.0?",
+  "options": [
+    "Attainability",
+    "Measurability",
+    "Specificity",
+    "Time bounded"
+  ],
+  "answer": 0,
+  "englishExplanation": "Objectives should be realistic and achievable. A CGPA of 3.5 is an attainable objective.",
+  "amharicExplanation": "📚 Objectives ሊደረስባቸው የሚችሉ (Attainable) መሆን አለባቸው። 3.5 ተጨባጭ ግብ ነው።"
+},
+{
+  "question": "14. All of the following are general management skills except:",
+  "options": [
+    "Negotiation skills",
+    "Time Management skills",
+    "Marketing skills",
+    "Project Management skills"
+  ],
+  "answer": 0,
+  "englishExplanation": "Negotiation is considered an interpersonal skill rather than a general management skill.",
+  "amharicExplanation": "📚 Negotiation skill ከGeneral Management Skills ይልቅ interpersonal skill ነው።"
+},
+{
+  "question": "15. The entrepreneurial quality which refers to the concerted effort towards the successful completion of a goal is:",
+  "options": [
+    "Goal setting",
+    "Persevering",
+    "Planning",
+    "Opportunity seeking"
+  ],
+  "answer": 1,
+  "englishExplanation": "Perseverance means continuing to work hard until a goal is achieved despite difficulties.",
+  "amharicExplanation": "📚 Persevering (ፅናት) ማለት ችግር ቢኖርም እስከ ግብ ድረስ ጥረትን መቀጠል ነው።"
+},
+{
+  "question": "16. One of the following is not a critical element of the entrepreneurial process:",
+  "options": [
+    "Innovation",
+    "The ability to perceive an opportunity",
+    "The refusal of risk or failure",
+    "A & B",
+    "All"
+  ],
+  "answer": 2,
+  "englishExplanation": "Entrepreneurs take calculated risks. Refusing risk is not part of the entrepreneurial process.",
+  "amharicExplanation": "📚 ስጋትን ሙሉ በሙሉ መከልከል የEntrepreneurial Process አካል አይደለም፤ ኢንተርፕረነሮች calculated risk ይወስዳሉ።"
+}],
         2: [],
         3: [],
         4: [],
