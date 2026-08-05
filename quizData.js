@@ -262,7 +262,152 @@ const quizData = {
 
     "geography": {
 
-        1: [],
+        1: [{
+  "question": "1. The relative location expresses location of a place relative to the landmass and water bodies.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "Relative location describes the position of a place in relation to surrounding physical features like landmasses, seas, and neighboring countries.",
+  "amharicExplanation": "📚 አዛማጅ ቦታ (Relative location) የአንድን ቦታ መገኛ ከዙሪያው ከሚገኙ የየብስ አካላት፣ የውሃ አካላት እና ጎረቤት ሀገራት አንጻር ይገልጻል።"
+},
+{
+  "question": "2. Movement of water points (Oasis) is one of the drivers for boundary conflicts between nomadic pastoralist communities.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "Pastoralist communities move in search of shifting water sources and pasture, which frequently causes territorial conflicts over border areas.",
+  "amharicExplanation": "📚 ዘዘዋዋሪ አርብቶ አደሮች ውሃና ሳር ፍለጋ ስለሚንቀሳቀሱ የውሃ ምንጮች መቀያየር በወሰን አካባቢዎች ግጭት እንዲፈጠር ምክንያት ይሆናል።"
+},
+{
+  "question": "3. Compact shaped state is easier for defense, socio-economic and cultural integration than elongated shape.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "A compact shape has shorter boundaries to defend and shorter internal distances, making administration and integration much easier than in elongated states.",
+  "amharicExplanation": "📚 ክቡ/የተቀራረበ ቅርፅ ያለው ሀገር የድንበር ርዝመቱ አጭር በመሆኑ ለመከላከል እና ለህዝብ ግንኙነት ከረዥም (elongated) ቅርፅ ይልቅ ይመቻል።"
+},
+{
+  "question": "4. Distance decay theory states that interaction between two places increases as distance increases.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "Distance decay theory states that interaction between two places decreases as the distance between them increases.",
+  "amharicExplanation": "📚 የርቀት መቀነስ ፅንሰ-ሀሳብ (Distance decay theory) እንደሚያስረዳው በሁለት ቦታዎች መካከል ያለው ርቀት ሲጨምር ግንኙነታቸው ይቀንሳል እንጂ አይጨምርም።"
+},
+{
+  "question": "5. Regional development is easier for compact shaped state than fragmented shape state.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "Fragmented states are geographically divided, creating infrastructure barriers, whereas compact states allow easy transport and unified regional development.",
+  "amharicExplanation": "📚 የተቆራረጠ (Fragmented) ቅርፅ ያላቸው ሀገራት ለመሰረተ ልማት አስቸጋሪ ሲሆኑ፣ ክቡ (Compact) ቅርፅ ያላቸው ሀገራት ግን ለቀጣናዊ ልማት በጣም ይመቻሉ።"
+},
+{
+  "question": "6. Which one of the following is correct about absolute location?",
+  "options": [
+    "A position of a place expressed in terms of astronomical grid system",
+    "Expresses position of a place relative to landmass and water bodies",
+    "Expresses position of a place relative to neighboring countries",
+    "None"
+  ],
+  "answer": 0,
+  "englishExplanation": "Absolute location is strictly defined using latitudes and longitudes (the astronomical grid system).",
+  "amharicExplanation": "📚 ፍጹማዊ መገኛ (Absolute location) የሚገለፀው የኬክሮስ እና የኬንትሮስ (astronomical grid system) መስመሮችን በመጠቀም ብቻ ነው።"
+},
+{
+  "question": "7. Which of the following is the main character of Mesozoic era in Ethiopia?",
+  "options": [
+    "Epeirogenic land movement and transgression of the sea",
+    "Orogenic movement and formation of fold mountains",
+    "Volcanic activity and formation of lava plateau",
+    "Glaciation and formation of lakes"
+  ],
+  "answer": 0,
+  "englishExplanation": "The Mesozoic era in Ethiopia was mainly marked by land sinking/rising (epeirogenic movement) and the alternate entering and retreat of the sea.",
+  "amharicExplanation": "📚 በኢትዮጵያ የሜሶዞይክ ዘመን (Mesozoic era) ዋነኛ መገለጫ የመሬት ዝቅና ከፍ ማለት (epeirogenic movement) እና የባህር መግባትና መውጣት ነበር።"
+},
+{
+  "question": "8. Which of the following is NOT correct about shape of a state?",
+  "options": [
+    "Compact shape is the ideal shape for a state",
+    "Elongated shape states are easy to defend",
+    "Fragmented shape states face challenges in national integration",
+    "Perforated shape state completely surrounds another state"
+  ],
+  "answer": 1,
+  "englishExplanation": "Elongated states have long, stretched borders which make defense and communication very difficult, not easy.",
+  "amharicExplanation": "📚 ረዥም እና ጠባብ (Elongated) ቅርፅ ያላቸው ሀገራት ረዥም ድንበር ስላላቸው ለመከላከል አስቸጋሪ ናቸው እንጂ ቀላል አይደሉም።"
+},
+{
+  "question": "9. Which one of the following is a drawback of a compact shaped state?",
+  "options": [
+    "Increased length of borders to defend",
+    "May lack cultural unity due to diversity",
+    "High transport cost due to long distance",
+    "Difficulty in national integration"
+  ],
+  "answer": 1,
+  "englishExplanation": "Compact states are efficient, but because populations are closely packed within a rounded territory, diverse ethnic groups must manage cultural integration.",
+  "amharicExplanation": "📚 ክቡ (Compact) ሀገራት ለግንኙነት ቢመቹም በተቀራረበ ቦታ ውስጥ የተለያዩ ብሔረሰቦች አብረው ስለሚኖሩ የባህል ልዩነቶችን ለማስተናገድ ፈተና ሊሆን ይችላል።"
+},
+{
+  "question": "10. Which of the following landforms is formed as a result of Tertiary volcanic activity?",
+  "options": [
+    "The Northwestern Plateau",
+    "The Southeastern Plateau",
+    "The Rift Valley",
+    "All of the above"
+  ],
+  "answer": 3,
+  "englishExplanation": "Massive Tertiary lava flows and tectonic activity created the Northwestern Plateau, Southeastern Plateau, and the Ethiopian Rift Valley.",
+  "amharicExplanation": "📚 በተርሸሪ (Tertiary) ዘመን በነበረው የእሳተ ገሞራ ፍንዳታ ሰሜን ምዕራብ ደጋ፣ ደቡብ ምስራቅ ደጋ እና የስንጥቅ ሸለቆ (Rift Valley) ተፈጠሩ።"
+},
+{
+  "question": "11. A state that completely surrounds another state is called:",
+  "options": [
+    "Perforated state",
+    "Elongated state",
+    "Fragmented state",
+    "Compact state"
+  ],
+  "answer": 0,
+  "englishExplanation": "A perforated state completely surrounds another independent state (for example, South Africa completely surrounds Lesotho).",
+  "amharicExplanation": "📚 ፐርፎሬትድ (Perforated) ሀገር ማለት ሌላ ሀገርን ሙሉ በሙሉ በውስጡ አቅፎ የሚገኝ ሀገር ነው።"
+},
+{
+  "question": "12. Which of the following is an advantage of large territorial size of a state?",
+  "options": [
+    "Possibility of having diverse climate and resources",
+    "High cost of defense and administration",
+    "Difficulty in national integration",
+    "Potential for boundary conflicts"
+  ],
+  "answer": 0,
+  "englishExplanation": "Larger geographic land area increases the probability of possessing varied climates, minerals, and natural resources.",
+  "amharicExplanation": "📚 የአንድ ሀገር የቆዳ ስፋት ትልቅ መሆን የተለያዩ የአየር ጠባዮች እና ተፈጥሯዊ ሀብቶች እንዲኖሩት ትልቅ ዕድል ይሰጣል።"
+},
+{
+  "question": "13. What is the approximate location of Ethiopia in terms of latitude and longitude?",
+  "options": [
+    "3°N - 15°N latitude and 33°E - 48°E longitude",
+    "15°N - 33°N latitude and 3°E - 48°E longitude",
+    "3°S - 15°S latitude and 33°W - 48°W longitude",
+    "33°N - 48°N latitude and 3°E - 15°E longitude"
+  ],
+  "answer": 0,
+  "englishExplanation": "Ethiopia is astronomically located in the Horn of Africa between 3°N to 15°N latitudes and 33°E to 48°E longitudes.",
+  "amharicExplanation": "📚 የኢትዮጵያ ፍጹማዊ መገኛ በ3° ሰሜን እስከ 15° ሰሜን ኬክሮስ እና 33° ምስራቅ እስከ 48° ምስራቅ ኬንትሮስ መካከል ይገኛል።"
+}],
         2: [],
         3: [],
         4: [],
