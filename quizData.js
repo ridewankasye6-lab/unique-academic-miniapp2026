@@ -417,10 +417,6 @@ const quizData = {
 
     "entrepreneurship": {
 
-        1: [const quizData = {
-
-  "entrepreneurship": {
-
     1: [
 
       {
