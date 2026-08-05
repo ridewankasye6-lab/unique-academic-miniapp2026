@@ -416,42 +416,37 @@ const quizData = {
     },
 
     "entrepreneurship": {
-
-    1: [
-
-      {
-        "question": "1. When environment mitigates entrepreneurship it must be modified.",
-        "options": ["True", "False"],
-        "answer": 0,
-        "englishExplanation": "If external factors or environmental conditions hinder business growth, the entrepreneur should modify the strategy or business approach.",
-        "amharicExplanation": "📚 የአካባቢ ሁኔታዎች ለስራ ፈጠራ እንቅፋት ሲሆኑ ኢንተርፕረነሩ ስትራቴጂውን ማስተካከል አለበት።"
-      },
-
-      {
-        "question": "2. Entrepreneurs are job creators and risk averters.",
-        "options": ["True", "False"],
-        "answer": 1,
-        "englishExplanation": "Entrepreneurs create jobs but they are calculated risk-takers, not risk averters.",
-        "amharicExplanation": "📚 ኢንተርፕረነሮች የስራ እድል ፈጣሪዎች ናቸው፣ ነገር ግን risk averters አይደሉም።"
-      }
-
-      // ...continue with Question 3 up to Question 16
-
-    ]
-
-  }
-
-};{
+        
+        1: [{
+  "question": "1. When environment mitigates entrepreneurship it must be modified.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 0,
+  "englishExplanation": "If external factors or environmental conditions hinder business growth, the entrepreneur must modify the strategy, operations, or business approach to adapt.",
+  "amharicExplanation": "📚 የአካባቢ ሁኔታዎች (environment) ለስራ ፈጠራ እድገት እንቅፋት በሚፈጥሩበት ጊዜ፣ ኢንተርፕረነሩ ስትራቴጂውን እና አሰራሩን ከአካባቢው ጋር ማስተካከል (modify) አለበት።"
+},
+{
+  "question": "2. Entrepreneurs are job creators and risk averters.",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": 1,
+  "englishExplanation": "Entrepreneurs create jobs, but they are calculated risk-takers, not risk averters.",
+  "amharicExplanation": "📚 ኢንተርፕረነሮች የስራ እድል ፈጣሪዎች ቢሆኑም፣ ስጋትን የሚሸሹ (risk averters) ሳይሆኑ አስልተው ስጋት የሚወስዱ (calculated risk takers) ናቸው።"
+},
+{
   "question": "3. Entrepreneurship is environmentally determined; both internal and external factors are controllable.",
   "options": [
     "True",
     "False"
   ],
   "answer": 1,
-  "englishExplanation": "Internal factors can be controlled, but external factors such as politics, laws, and market conditions cannot be fully controlled by the business.",
-  "amharicExplanation": "📚 Internal factors በቁጥጥር ስር ሊውሉ ይችላሉ፤ External factors ግን ሙሉ በሙሉ ሊቆጣጠሩ አይችሉም።"
+  "englishExplanation": "Internal factors can be controlled, but external factors such as political, legal, and market conditions cannot be fully controlled.",
+  "amharicExplanation": "📚 የውስጥ ሁኔታዎች (internal factors) በቁጥጥር ስር ሊሆኑ ይችላሉ፤ የውጭ ሁኔታዎች (external factors) ግን ሙሉ በሙሉ ሊቆጣጠሩ አይችሉም።"
 },
-
 {
   "question": "4. Goals are specific and measurable.",
   "options": [
@@ -459,10 +454,9 @@ const quizData = {
     "False"
   ],
   "answer": 1,
-  "englishExplanation": "Objectives are specific and measurable, while goals are broad and general.",
+  "englishExplanation": "Objectives are specific and measurable, whereas goals are broad and general.",
   "amharicExplanation": "📚 Goals አጠቃላይ ናቸው፤ Objectives ግን specific እና measurable ናቸው።"
 },
-
 {
   "question": "5. The creative process is one of putting things together in unexpected ways.",
   "options": [
@@ -470,10 +464,9 @@ const quizData = {
     "False"
   ],
   "answer": 0,
-  "englishExplanation": "Creativity involves combining ideas, concepts, or materials in new and unexpected ways.",
-  "amharicExplanation": "📚 Creativity ማለት ሀሳቦችን ወይም ቁሳቁሶችን በአዲስ እና ባልተጠበቀ መንገድ ማቀናጀት ነው።"
+  "englishExplanation": "Creativity involves combining ideas, concepts, or materials into new and unexpected combinations.",
+  "amharicExplanation": "📚 ፈጠራ (Creativity) ማለት ነባር ሀሳቦችን ወይም ቁሳቁሶችን ባልተጠበቀ እና አዲስ በሆነ መንገድ በማቀናጀት አዲስ ነገር መፍጠር ነው።"
 },
-
 {
   "question": "6. No business concern can ignore the environment around it except at its own safety.",
   "options": [
@@ -481,136 +474,8 @@ const quizData = {
     "False"
   ],
   "answer": 1,
-  "englishExplanation": "Businesses cannot ignore their environment. Ignoring it leads to failure, not safety.",
-  "amharicExplanation": "📚 ንግድ አካባቢውን ችላ ማለት ወደ ውድቀት ያመራል እንጂ ወደ ደህንነት አይመራም።"
-},{
-  "question": "7. A favourable set of circumstances that creates a need for a new product, service or business refers:",
-  "options": [
-    "Innovation",
-    "Creativity",
-    "Opportunity",
-    "Entrepreneurship"
-  ],
-  "answer": 2,
-  "englishExplanation": "An opportunity is a favorable situation that creates the potential for introducing a new product, service, or business.",
-  "amharicExplanation": "📚 Opportunity ማለት አዲስ ምርት ወይም አገልግሎት ለማቅረብ የሚፈጥር ምቹ አጋጣሚ ነው።"
-},
-
-{
-  "question": "8. All of the following factors obstruct entrepreneurial growth except:",
-  "options": [
-    "Sudden political upsurge",
-    "Unfavourable market fluctuations",
-    "Decrease in the cost of inputs",
-    "Unreliable supply of power, finance and other inputs"
-  ],
-  "answer": 2,
-  "englishExplanation": "A decrease in input costs encourages business growth, while the other factors hinder entrepreneurship.",
-  "amharicExplanation": "📚 የግብዓት ዋጋ መቀነስ ለንግድ እድገት ይረዳል፤ ሌሎቹ ግን እንቅፋቶች ናቸው።"
-},
-
-{
-  "question": "9. Identify the incorrect statement from the following:",
-  "options": [
-    "All business persons are entrepreneurs",
-    "Being entrepreneur has relationship with gender",
-    "Every social environment has its own way of filling the entrepreneurial function",
-    "A & B",
-    "B & C"
-  ],
-  "answer": 3,
-  "englishExplanation": "Statements A and B are incorrect. Not every business person is an entrepreneur, and entrepreneurship is not determined by gender.",
-  "amharicExplanation": "📚 A እና B ሁለቱም ስህተት ናቸው። ሁሉም ነጋዴዎች entrepreneur አይደሉም፤ entrepreneurship ከጾታ ጋር ግንኙነት የለውም።"
-},
-
-{
-  "question": "10. One of the following is different from the other:",
-  "options": [
-    "Leadership Skill",
-    "Communication Skill",
-    "Financial Skill",
-    "Delegation Skill"
-  ],
-  "answer": 2,
-  "englishExplanation": "Financial skill is a technical business skill, while the others are interpersonal or managerial skills.",
-  "amharicExplanation": "📚 Financial Skill ቴክኒካል ክህሎት ነው፤ Leadership፣ Communication እና Delegation የአመራር እና የግንኙነት ክህሎቶች ናቸው።"
-},{
-  "question": "11. All are barriers to creativity except:",
-  "options": [
-    "Blindly following the rules",
-    "Avoiding ambiguity",
-    "Fearing mistakes and failure",
-    "Believing that 'I'm creative'"
-  ],
-  "answer": 3,
-  "englishExplanation": "Believing in your creativity builds confidence and encourages innovation. The other choices are barriers to creativity.",
-  "amharicExplanation": "📚 'እኔ ፈጣሪ ነኝ' ብሎ ማመን ለፈጠራ ድጋፍ ነው፤ ሌሎቹ ግን የፈጠራ እንቅፋቶች ናቸው።"
-},
-
-{
-  "question": "12. Benefits of risk-taking include all of the following except:",
-  "options": [
-    "Creating strong motivation to complete a job well",
-    "Create a feeling of leadership",
-    "Leading to rewards",
-    "Building insecurity"
-  ],
-  "answer": 3,
-  "englishExplanation": "Building insecurity is not a benefit of taking calculated risks.",
-  "amharicExplanation": "📚 Building insecurity የስጋት መውሰድ ጥቅም ሳይሆን አሉታዊ ውጤት ነው።"
-},
-
-{
-  "question": "13. Which one of the following indicates the pattern of flow of responsibilities and duties amongst people in the organization?",
-  "options": [
-    "Operational plan",
-    "Organizational plan",
-    "Financial plan",
-    "Marketing plan"
-  ],
-  "answer": 1,
-  "englishExplanation": "An organizational plan defines responsibilities, authority, and reporting relationships within an organization.",
-  "amharicExplanation": "📚 Organizational plan በድርጅት ውስጥ የሰራተኞችን ኃላፊነትና የስራ ክፍፍል ያሳያል።"
-},
-
-{
-  "question": "14. The tendency to generate ideas, alternatives, or possibilities that may be useful in solving problems refers:",
-  "options": [
-    "Entrepreneurship",
-    "Innovation",
-    "Invention",
-    "Creativity"
-  ],
-  "answer": 3,
-  "englishExplanation": "Creativity is the ability to generate new ideas and alternative solutions.",
-  "amharicExplanation": "📚 Creativity ችግርን ለመፍታት አዳዲስ ሀሳቦችንና አማራጮችን የማመንጨት ችሎታ ነው።"
-},
-
-{
-  "question": "15. Which step in the creative process is best described by the statement 'the person keeps the assembled information in mind for a while'?",
-  "options": [
-    "Insight",
-    "Incubation",
-    "Immersion",
-    "Problem recognition"
-  ],
-  "answer": 1,
-  "englishExplanation": "Incubation is the stage where information is processed subconsciously before a solution appears.",
-  "amharicExplanation": "📚 Incubation ማለት የተሰበሰበውን መረጃ በአእምሮ ውስጥ ለጊዜው በመቆየት ሀሳቡ እንዲበስል ማድረግ ነው።"
-},
-
-{
-  "question": "16. For the capitalist philosopher an entrepreneur is:",
-  "options": [
-    "A person typically driven by certain forces to obtain or attain something",
-    "One who creates wealth for others as well, who finds better ways to utilize resources and reduce waste",
-    "One who brings resources, labor, materials, and other assets into combinations that increase value",
-    "A & C",
-    "A & B"
-  ],
-  "answer": 1,
-  "englishExplanation": "Capitalist philosophy emphasizes wealth creation, efficient use of resources, and value creation for society.",
-  "amharicExplanation": "📚 በካፒታሊስት አስተሳሰብ፣ ኢንተርፕረነር ሀብትን በተሻለ ሁኔታ በመጠቀም ለራሱም ሆነ ለሌሎች የሚፈጥር ሰው ነው።"
+  "englishExplanation": "Businesses cannot ignore their environment. Ignoring environmental factors leads to failure, not safety.",
+  "amharicExplanation": "📚 ማንኛውም ንግድ ከከበበው አካባቢ ተነጥሎ መኖር አይችልም፤ አካባቢውን ችላ ማለት ወደ ውድቀት (peril) ያመራል እንጂ ወደ ደህንነት (safety) አይመራም።"
 },],
         2: [],
         3: [],
