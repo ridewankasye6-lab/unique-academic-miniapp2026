@@ -640,8 +640,10 @@ const quizData = {
 
     "english1": {
 
-        1: [{
-"question": "1. A: I think that the grade my teacher gave me on my test is wrong.\nB: Really? You ____________ to her after class today.",
+},
+        1: [
+{
+"question": "1. A: I think that the grade my teacher gave me on my test is wrong. B: Really? You ____________ to her after class today.",
 "options": [
 "ought talk",
 "should to talk",
@@ -650,7 +652,7 @@ const quizData = {
 ],
 "answer": 2,
 "englishExplanation": ""Ought to talk" is correct because "ought to" is a modal verb used to give advice, and it is always followed by the base form of the verb — in this case, "talk."",
-"amharicExplanation": "📚 "Ought to talk" ትክክለኛ ነው ምክንያቱም "ought to" ምክር ለመስጠት የሚያገለግል ሞዳል ግስ ስለሆነ እና ሁልጊዜም ከመሠረታዊ ግሱ ቅርጽ ጋር ይከተላል።"
+"amharicExplanation": "📚 "Ought to talk" ትክክል ነው ምክንያቱም "ought to" ምክር ለመስጠት የሚያገለግል ሞዳል ግስ ነው፣ እና ሁልጊዜም በግሱ መሠረታዊ ቅርጽ ይከተላል — በዚህ ሁኔታ "talk"።"
 },
 {
 "question": "2. My mother isn't feeling well, so I told her that she ____________ to the doctor.",
@@ -662,7 +664,7 @@ const quizData = {
 ],
 "answer": 2,
 "englishExplanation": ""Ought to" is used to give advice in a formal manner. The phrase "ought to go" suggests that it is advisable for her to visit the doctor.",
-"amharicExplanation": "📚 "Ought to" በይፋዊ መንገድ ምክር ለመስጠት ያገለግላል። "ought to go" የሚለው ሐረግ ወደ ሐኪም መሄድ ለእሷ ተገቢ መሆኑን ያሳያል።"
+"amharicExplanation": "📚 "Ought to" በመደበኛ መንገድ ምክር ለመስጠት ይጠቅማል። "Ought to go" የሚለው ሐረግ ወደ ሐኪም መሄድ ለእሷ ተገቢ መሆኑን ይጠቁማል።"
 },
 {
 "question": "3. I need help, doctor. My baby doesn't sleep well. What ____________?",
@@ -674,7 +676,7 @@ const quizData = {
 ],
 "answer": 0,
 "englishExplanation": ""Should I do" is the correct form for asking for advice in a general context. It uses the modal verb "should" followed by the subject "I" and the base verb "do."",
-"amharicExplanation": "📚 "Should I do" በአጠቃላይ ሁኔታዎች ምክር ለመጠየቅ ትክክለኛው ቅርጽ ነው። "should" የሚለውን ሞዳል ግስ በመጠቀም በይግባኝ "I" እና በመሠረታዊ ግሱ "do" ይከተላል።"
+"amharicExplanation": "📚 "Should I do" በአጠቃላይ አውድ ውስጥ ምክር ለመጠየቅ ትክክለኛው ቅርጽ ነው። ሞዳል ግስ "should" ን ተከትሎ ጉዳዩ "I" እና መሠረታዊ ግስ "do" ን ይጠቀማል።"
 },
 {
 "question": "4. It's raining and I don't want to get my dress wet. I ____________ an umbrella.",
@@ -686,7 +688,7 @@ const quizData = {
 ],
 "answer": 2,
 "englishExplanation": ""Had better bring" is the correct form to use when giving advice with a sense of urgency or necessity. It implies that bringing an umbrella is strongly advised to avoid getting the dress wet.",
-"amharicExplanation": "📚 "Had better bring" አጣዳፊነት ወይም አስፈላጊነት ስሜት ያለው ምክር ሲሰጥ የሚመረጥ ትክክለኛው ቅርጽ ነው። ቀሚሱ እንዳይረጭ ☂️ (ឆንጥ) ይዞ መሄድ በጥብቅ ይመከራል።"
+"amharicExplanation": "📚 "Had better bring" በአስቸኳይ ሁኔታ ወይም አስፈላጊነት ስሜት ምክር በሚሰጥበት ጊዜ የሚጠቅም ትክክለኛ ቅርጽ ነው። ትርጉሙ እርጥበት ላለመሆን ጃንጥላ ማምጣት እንደሚመከር ያሳያል።"
 },
 {
 "question": "5. I'm so hot. You ____________ your coat!",
@@ -698,7 +700,7 @@ const quizData = {
 ],
 "answer": 2,
 "englishExplanation": ""Should take off" is the correct form to use when giving advice about removing the coat to feel more comfortable. It uses the modal verb "should" followed by the base verb "take off."",
-"amharicExplanation": "📚 "Should take off" የበለጠ ምቾት እንዲሰማን ኮቱን ለማውለቅ ምክር ሲሰጥ ትክክለኛው ቅርጽ ነው። "should" የሚለውን ሞዳል ግስ ተከትሎ "take off" የሚለው መሠረታዊ ግስ ይመጣል።"
+"amharicExplanation": "📚 "Should take off" ኮት ለማውለቅ እና በተሻለ ሁኔታ ለመሰማት ምክር በሚሰጥበት ጊዜ የሚጠቅም ትክክለኛ ቅርጽ ነው። ሞዳል ግስ "should" ን ተከትሎ መሠረታዊ ግስ "take off" ን ይጠቀማል።"
 },
 {
 "question": "6. The airline only allows two pieces of luggage. You ____________ pack too much or you will have to take it out at the airport!",
@@ -710,7 +712,7 @@ const quizData = {
 ],
 "answer": 2,
 "englishExplanation": ""Had better not" is used here to strongly advise against packing too much. It indicates that packing too much could lead to problems at the airport.",
-"amharicExplanation": "📚 "Had better not" እዚህ ላይ ብዙ ዕቃ እንዳይይዙ በጥብቅ ለመምከር ያገለግላል። ብዙ ማሸግ ኤርፖርት ላይ ችግር ሊያስከትል እንደሚችል ያሳያል።"
+"amharicExplanation": "📚 "Had better not" እዚህ ላይ በጣም ብዙ እንዳይጫኑ ከፍተኛ ምክር ለመስጠት ይጠቅማል። በጣም ብዙ ማሸግ በአውሮፕላን ማረፊያ ላይ ችግር ሊያስከትል እንደሚችል ያሳያል።"
 },
 {
 "question": "7. Dave loves chocolate, but he ____________ too much or he will get fat.",
@@ -722,7 +724,7 @@ const quizData = {
 ],
 "answer": 1,
 "englishExplanation": ""Shouldn't eat" is the correct form for advising against eating too much chocolate to avoid gaining weight. It uses the modal verb "shouldn't" to express negative advice.",
-"amharicExplanation": "📚 "Shouldn't eat" ክብደት እንዳይጨምር ከመጠን በላይ ቸኮሌት እንዳይመገቡ ለመምከር ትክክለኛው ቅርጽ ነው። አሉታዊ ምክርን ለመግለጽ "shouldn't" የሚለውን ሞዳል ግስ ይጠቀማል።"
+"amharicExplanation": "📚 "Shouldn't eat" ክብደት እንዳይጨምርበት ከመጠን በላይ ቸኮሌት እንዳይበላ ምክር ለመስጠት ትክክለኛው ቅርጽ ነው። አሉታዊ ምክርን ለማሳየት ሞዳል ግስ "shouldn't" ይጠቀማል።"
 },
 {
 "question": "8. I'm going to visit your country. Where ____________ if I want to go shopping?",
@@ -734,7 +736,7 @@ const quizData = {
 ],
 "answer": 2,
 "englishExplanation": ""Should I go" is the correct form for asking where to go for shopping in a polite and general manner. It uses the modal verb "should" to seek advice.",
-"amharicExplanation": "📚 "Should I go" በጨዋነት እና በአጠቃላይ ሁኔታ የት መሄድ እንዳለብኝ ለመጠየቅ ትክክለኛው ቅርጽ ነው። ምክር ለመጠየቅ "should" የሚለውን ሞዳል ግስ ይጠቀማል።"
+"amharicExplanation": "📚 "Should I go" ለገበያ መሄድ የሚችሉበት ቦታ ጨዋ እና አጠቃላይ በሆነ መንገድ ለመጠየቅ ትክክለኛው ቅርጽ ነው። ምክር ለመጠየቅ ሞዳል ግስ "should" ይጠቀማል።"
 },
 {
 "question": "9. You ____________ step in to the head master's office without permission.",
@@ -745,8 +747,8 @@ const quizData = {
 "should"
 ],
 "answer": 1,
-"englishExplanation": "had better not የየራሳቸውን ማስረጃ (ከእንግሊዝኛ የተገኘውን ትርጉም) እንደሚያመለክተው ያለፈቃድ ወደ ዳይሬክተሩ ቢሮ መግባት የለብዎትም የሚል ጠንካራ ማስጠንቀቂያ ይሰጣል።",
-"amharicExplanation": "📚 had better not በጥብቅ የተከለከለ ወይም ፈቃድ ሳይኖር መደረግ የሌለበትን ተግባር ለመግለጽ ያገለግላል።"
+"englishExplanation": ""Had better not" is used here because entering the head master's office without permission is a serious rule violation. It strongly advises against doing it.",
+"amharicExplanation": "📚 "Had better not" እዚህ ጥቅም ላይ ውሏል ምክንያቱም ያለ ፈቃድ ወደ ርዕሰ መምህሩ ቢሮ መግባት ከባድ ደንብ መጣስ ነው። ይህን ከማድረግ ከፍተኛ ምክር ይሰጣል።"
 },
 {
 "question": "10. I feel ill, doctor, what ____________?",
@@ -757,11 +759,538 @@ const quizData = {
 "ought to"
 ],
 "answer": 0,
-"englishExplanation": "ፈጣን እና ትክክለኛውን የሐኪም ምክር ለመጠየቅ Should I do የሚለው ቅርጽ ትክክለኛ ነው።",
-"amharicExplanation": "📚 አዲስ ሐኪም ዘንድ ሲሄዱ ምን ማድረግ እንዳለብዎ ለመጠየቅ Should I do የሚለውን አወቃቀር መጠቀም ይገባል።"
+"englishExplanation": ""Should I do" is the correct interrogative form used when asking for guidance or advice from a professional, like a doctor.",
+"amharicExplanation": "📚 "Should I do" እንደ ሐኪም ካሉ ባለሙያ መመሪያ ወይም ምክር በሚጠይቁበት ጊዜ የሚጠቅም ትክክለኛ የጥያቄ ቅርጽ ነው።"
+},
+{
+"question": "11. My doctor suggests that I ____________ exercise more because I am out of shape and want to lose weight.",
+"options": [
+"should did",
+"may",
+"ought to do",
+"had better not do"
+],
+"answer": 2,
+"englishExplanation": ""Ought to do" is used here to express a moral obligation or necessity to exercise more, as suggested by the doctor for health reasons.",
+"amharicExplanation": "📚 "Ought to do" እዚህ ላይ በሐኪሙ ሐሳብ መሠረት ተጨማሪ የአካል ብቃት እንቅስቃሴ ለማድረግ የሞራል ግዴታ ወይም አስፈላጊነትን ለማሳየት ይጠቅማል።"
+},
+{
+"question": "13. Today, there are more displaced people in Ethiopia than were in the past. These people ____________ . This should be a moral obligation to every one of us.",
+"options": [
+"must help",
+"could have been helped",
+"can be helped",
+"must be helped"
+],
+"answer": 3,
+"englishExplanation": ""Must be helped" is the correct passive form used to express a strong obligation. It clearly states that helping these people is a moral necessity for everyone.",
+"amharicExplanation": "📚 "Must be helped" ጠንካራ ግዴታን ለማሳየት የሚጠቅም ትክክለኛ ስም-አልባ (passive) ቅርጽ ነው። እነዚህን ሰዎች መርዳት ለሁሉም ሞራላዊ ግዴታ መሆኑን በግልጽ ይገልጻል።"
+},
+{
+"question": "14. I think all drivers ____________ wear a seat belt.",
+"options": [
+"Should",
+"Can",
+"had better",
+"must"
+],
+"answer": 0,
+"englishExplanation": ""Should" is used here to give general advice or express an opinion. While a seat belt may be a law (making "must" technically correct in some cases), in the context of expressing a personal opinion about a general rule, "should" is the most appropriate and commonly used choice.",
+"amharicExplanation": "📚 "Should" አጠቃላይ ምክር ለመስጠት ወይም አስተያየት ለመግለጽ እዚህ ይጠቅማል። ምንም እንኳን የደህንነት ቀበቶ ህግ ሊሆን ይችላል (በአንዳንድ አጋጣሚዎች "must" ን ትክክል ያደርገዋል)፣ ስለ አጠቃላይ ደንብ የግል አስተያየት በምንሰጥበት አውድ ውስጥ "should" በጣም ተገቢው እና በተለምዶ ጥቅም ላይ የሚውለው ምርጫ ነው።"
+},
+{
+"question": "15. You don't look very well. You ____________ to work today.",
+"options": [
+"Had better not go",
+"Had not better go",
+"Shouldn't go",
+"had better go not"
+],
+"answer": 0,
+"englishExplanation": ""Had better not go" is the correct negative form of the modal phrase. It strongly advises against going to work because of the person's health condition.",
+"amharicExplanation": "📚 "Had better not go" የሞዳል ሐረጉ ትክክለኛ አሉታዊ ቅርጽ ነው። በሰውዬው የጤና ሁኔታ ምክንያት ወደ ሥራ እንዳይሄድ ጠንካራ ምክር ይሰጣል።"
+},
+{
+"question": "16. I wonder where Genet is. She ____________ here by now.",
+"options": [
+"Must be",
+"Ought to be",
+"Should be",
+"Had better be"
+],
+"answer": 2,
+"englishExplanation": ""Should be" is used to express an expectation. The speaker expects Genet to be here by now, based on what is likely or normal.",
+"amharicExplanation": "📚 "Should be" ምን ይሆናል ተብሎ የሚጠበቀውን ለማሳየት ይጠቅማል። ተናጋሪው በአሁኑ ሰዓት ጄኔት እዚህ መሆን እንደምትችል ይጠብቃል።"
+},
+{
+"question": "17. You ____________ to our conversation. It was private.",
+"options": [
+"Might not have been listening",
+"Couldn't have been listening",
+"Shouldn't have been listening",
+"Mustn't have been listening"
+],
+"answer": 2,
+"englishExplanation": ""Shouldn't have been listening" is used to say that the action (listening) was wrong or inappropriate in the past. It's a criticism or a negative opinion about the past action.",
+"amharicExplanation": "📚 "Shouldn't have been listening" ያለፈው ተግባር (ማዳመጥ) ስህተት ወይም ተገቢ ያልሆነ ነበር ለማለት ይጠቅማል። ስለ ያለፈ ተግባር ትችት ወይም አሉታዊ አስተያየት ነው።"
+},
+{
+"question": "19. It's raining heavily. You ____________ take your own umbrella.",
+"options": [
+"Should",
+"had better",
+"must",
+"could"
+],
+"answer": 0,
+"englishExplanation": ""Should" is used here to give advice. Since it is raining heavily, the person is advised to take an umbrella.",
+"amharicExplanation": "📚 "Should" እዚህ ላይ ምክር ለመስጠት ይጠቅማል። ዝናቡ በጣም ስለሚዘንብ፣ ሰውዬው ጃንጥላ እንዲይዝ ይመከራል።"
+},
+{
+"question": "20. Where is the groom? He ______ wear his suit on time.",
+"options": [
+"should",
+"must",
+"could",
+"ought to"
+],
+"answer": 1,
+"englishExplanation": "Must is used for strong necessity or obligation. In this context, wearing a suit on time for a wedding is a firm requirement.",
+"amharicExplanation": "📚 must ጠንካራ አስፈላጊነትን ወይም ግዴታን ለማሳየት ይጠቅማል። በዚህ አውድ ውስጥ ለሠርግ ልብስን በጊዜ መልበስ ጠንካራ መስፈርት ነው።"
+},
+{
+"question": "21. In England you ______ drive on the left side of the road but in other European countries you ______.",
+"options": [
+"should/ shouldn't",
+"Had better/ had better not",
+"must/ mustn't",
+"could/ couldn't"
+],
+"answer": 2,
+"englishExplanation": "Must is used for a law or rule (driving on the left in England). Mustn't is used for prohibition (you are not allowed to drive on the left in other European countries).",
+"amharicExplanation": "📚 must ለህግ ወይም ደንብ ይጠቅማል (በእንግሊዝ በግራ በኩል ማሽከርከር)። mustn't ለመከልከል ይጠቅማል (በሌሎች አውሮፓ አገሮች በግራ በኩል ማሽከርከር አይፈቀድልህም)።"
+},
+{
+"question": "22. Everyone in the world ______ get enough food to eat.",
+"options": [
+"Should",
+"ought to",
+"had better",
+"A & B"
+],
+"answer": 3,
+"englishExplanation": "Both 'should' and 'ought to' can be used for moral obligations. Since both options A and B are correct in this context, 'A & B' is the right choice.",
+"amharicExplanation": "📚 ሁለቱም 'should' እና 'ought to' ለሞራል ግዴታዎች መጠቀም ይቻላል። በዚህ አውድ ውስጥ ሁለቱም አማራጮች A እና B ትክክል ስለሆኑ 'A & B' ትክክለኛው ምርጫ ነው።"
+},
+{
+"question": "23. Gebeyehu ______ to the wedding, but he forgot.",
+"options": [
+"Ought have gone",
+"must have gone",
+"had better gone",
+"could have gone"
+],
+"answer": 0,
+"englishExplanation": "'Ought to have gone' is used to express that it was the right or advisable thing to do in the past, but it didn't happen. The past form is 'ought to have + past participle'.",
+"amharicExplanation": "📚 'Ought to have gone' ያለፈ ጊዜ ውስጥ ማድረግ የሚገባው ወይም ምክር የሚሰጥበት ነገር እንደነበረ ለማሳየት ይጠቅማል፣ ነገር ግን አልተከናወነም። ያለፈ ጊዜ ቅርጽ 'ought to have + past participle' ነው።"
+},
+{
+"question": "24. You ______ go to bed early. Tomorrow is Sunday.",
+"options": [
+"Ought not to",
+"should",
+"had better",
+"shouldn't"
+],
+"answer": 0,
+"englishExplanation": "'Ought not to' is used to advise against doing something. Since tomorrow is Sunday, it suggests there is no strong reason to go to bed early, so it advises against it.",
+"amharicExplanation": "📚 'Ought not to' አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። ነገ እሁድ ስለሆነ፣ ቀደም ብሎ መተኛት ጠንካራ ምክንያት እንደሌለ ይጠቁማል፣ ስለዚህ ከመተኛት ይመክራል።"
+},
+{
+"question": "25. The meat doesn't smell fresh. We ______ it.",
+"options": [
+"Shouldn't eat",
+"Needn't eat",
+"have to buy",
+"ought not to cook"
+],
+"answer": 0,
+"englishExplanation": "'Shouldn't eat' is used to give advice against eating the meat because it doesn't smell fresh and might be unsafe.",
+"amharicExplanation": "📚 'Shouldn't eat' ሥጋው ትኩስ እንደማይመስል እና ለጤና አስተማማኝ ላይሆን ስለሚችል ላለመብላት ምክር ለመስጠት ይጠቅማል።"
+},
+{
+"question": "26. You're going to miss the school bus. You ______ hurry.",
+"options": [
+"Shouldn't",
+"Had better not",
+"had better",
+"ought not to"
+],
+"answer": 2,
+"englishExplanation": "'Had better' is used for urgent advice. Missing the bus is a serious consequence, so 'had better' is the most appropriate choice for urgent advice.",
+"amharicExplanation": "📚 'Had better' ለአስቸኳይ ምክር ይጠቅማል። አውቶቡስ መዝለል ከባድ መዘዝ ስለሚያስከትል 'had better' ለምክር በጣም ተስማሚው ምርጫ ነው።"
+},
+{
+"question": "27. Getachew: exam coordinator strictly tells us not to bring mobile phones to the exam room, but some students keep bringing them. Megertu: They ______ perform according to the campus rule.",
+"options": [
+"Had better not",
+"Had better",
+"had not better",
+"had better to"
+],
+"answer": 1,
+"englishExplanation": "'Had better' is used to give strong advice or a warning. It means they strongly need to follow the campus rule to avoid serious consequences.",
+"amharicExplanation": "📚 'Had better' ጠንካራ ምክር ወይም ማስጠንቀቂያ ለመስጠት ይጠቅማል። ትርጉሙ ከባድ ውጤት ላለማስከተል በጥብቅ የካምፓስ ደንቡን መከተል እንዳለባቸው ይጠቁማል።"
+},
+{
+"question": "28. Almaz: I have got a sore throat. Mahi: You ______ drink cold water.",
+"options": [
+"should",
+"shouldn't",
+"had better",
+"had not better"
+],
+"answer": 1,
+"englishExplanation": "'Shouldn't' is used to give advice against doing something. Drinking cold water can make a sore throat worse, so it's advisable not to do it.",
+"amharicExplanation": "📚 'Shouldn't' አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። ቀዝቃዛ ውሃ መጠጣት የጉሮሮ መቁሰልን ሊያባብሰው ይችላል፣ ስለዚህ እንዳትጠጡ መመከር ነው።"
+},
+{
+"question": "29. Winta: My husband snores a lot and I can't sleep. Haset: I think you ______ warn him.",
+"options": [
+"had better",
+"shouldn't",
+"needn't",
+"ought"
+],
+"answer": 0,
+"englishExplanation": "'Had better' is used for urgent advice. The situation is making it impossible to sleep, so warning him is a necessary and urgent recommendation.",
+"amharicExplanation": "📚 'Had better' ለአስቸኳይ ምክር ይጠቅማል። ሁኔታው መተኛት ስለሚከለክል፣ እሱን ማስጠንቀቅ አስፈላጊ እና አስቸኳይ ምክር ነው።"
+},
+{
+"question": "30. This meat doesn't smell fresh. We ______ it.",
+"options": [
+"shouldn't eat",
+"needn't taste",
+"have to buy",
+"ought to not cook"
+],
+"answer": 0,
+"englishExplanation": "'Shouldn't eat' advises against consuming the meat because it might be spoiled. It is a recommendation for safety.",
+"amharicExplanation": "📚 'Shouldn't eat' ሥጋው ሊበላሽ ስለሚችል ላለመብላት ምክር ይሰጣል። ለደህንነት የሚሰጥ ምክር ነው።"
+},
+{
+"question": "31. Abreham: alex has got a temperature. Mikyas: ______.",
+"options": [
+"He had better not see a doctor",
+"He had better not stay in bed",
+"He shouldn't have a cold shower",
+"He shouldn't go to the hospital"
+],
+"answer": 2,
+"englishExplanation": "Having a temperature means he is sick. Taking a cold shower would be harmful advice. 'He shouldn't have a cold shower' is the correct negative advice.",
+"amharicExplanation": "📚 ሙቀት መኖሩ ማለት ታምሟል ማለት ነው። ቀዝቃዛ ሻወር መውሰድ ጎጂ ምክር ነው። 'He shouldn't have a cold shower' ትክክለኛው አሉታዊ ምክር ነው።"
+},
+{
+"question": "32. Felimon: Tirfe is 80 kilos and she still eats junk food. Haymi: I think she ______ go on a diet.",
+"options": [
+"should",
+"shouldn't",
+"mustn't",
+"can't"
+],
+"answer": 0,
+"englishExplanation": "'Should' is used to give advice about going on a diet to improve health and lose weight.",
+"amharicExplanation": "📚 'Should' ጤናን ለማሻሻል እና ክብደት ለመቀነስ አመጋገብ ላይ መሄድን በተመለከተ ምክር ለመስጠት ይጠቅማል።"
+},
+{
+"question": "33. I have an important exam tomorrow. I ______ to go out tonight.",
+"options": [
+"shouldn't",
+"had better not",
+"had better",
+"ought not"
+],
+"answer": 3,
+"englishExplanation": "'Ought not' is a formal way to advise against going out due to the importance of the exam tomorrow.",
+"amharicExplanation": "📚 'Ought not' ነገ ፈተና ስላለ ከቤት እንዳይወጡ በመደበኛ መንገድ ምክር ለመስጠት ይጠቅማል።"
+},
+{
+"question": "34. Ermi: I have a bad toothache. Fire B: I think you ______ go to the dentist.",
+"options": [
+"shouldn't",
+"should",
+"ought",
+"had better not"
+],
+"answer": 1,
+"englishExplanation": "'Should' is used to recommend going to the dentist for a toothache. It is good advice.",
+"amharicExplanation": "📚 'Should' የጥርስ ህመም ላለበት ወደ ጥርስ ሐኪም መሄድን ለመምከር ይጠቅማል። ጥሩ ምክር ነው።"
+},
+{
+"question": "35. A: I can't see the blackboard well. B: I think ______.",
+"options": [
+"you should sit at the back",
+"you shouldn't ask your teacher",
+"you had better sit close to the blackboard",
+"you had better change your class"
+],
+"answer": 2,
+"englishExplanation": "'Had better' gives urgent and practical advice. Sitting close to the blackboard is a direct solution to the problem.",
+"amharicExplanation": "📚 'Had better' አስቸኳይ እና ተግባራዊ ምክር ይሰጣል። ለችግሩ መፍትሄ ሆኖ ከሰሌዳው አጠገብ መቀመጥ ቀጥተኛ መፍትሄ ነው።"
+},
+{
+"question": "36. Melat: My phone bill is enormous. Melkam: I think you ______.",
+"options": [
+"you not ought to talk too much",
+"you ought not to talk too much",
+"you ought to talk too much",
+"you ought talk too much"
+],
+"answer": 1,
+"englishExplanation": "'Ought not to' is used to give advice against doing something. Talking too much led to the huge bill, so she ought not to do it.",
+"amharicExplanation": "📚 'Ought not to' አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። ብዙ መናገር ወደ ትልቅ ሂሳብ ስለመራ፣ ይህን ማድረግ የለባትም።"
+},
+{
+"question": "37. A: I can't sleep at nights. B: —",
+"options": [
+"You ought to drink coffee at nights.",
+"You should drink coffee at nights.",
+"You had better not drink coffee at nights.",
+"You had better drink coffee at nights."
+],
+"answer": 2,
+"englishExplanation": "'Had better not' is used to strongly advise against drinking coffee at night, because it is the cause of the sleep problem.",
+"amharicExplanation": "📚 'Had better not' በሌሊት ቡና እንዳትጠጡ ጠንካራ ምክር ለመስጠት ይጠቅማል፣ ምክንያቱም የእንቅልፍ ችግሩ መንስኤ ስለሆነ ነው።"
+},
+{
+"question": "38. A: Gerry hasn't got his glasses and he wants to drive home. B: I think he ______ take a taxi.",
+"options": [
+"had better",
+"shouldn't",
+"mustn't",
+"can't"
+],
+"answer": 0,
+"englishExplanation": "'Had better' is used to strongly advise taking a taxi instead of driving without glasses for safety.",
+"amharicExplanation": "📚 'Had better' ያለ መነፅር ከማሽከርከር ይልቅ ታክሲ ለመውሰድ ለደህንነት ጠንካራ ምክር ለመስጠት ይጠቅማል።"
+},
+{
+"question": "39. Jason's room is always in a mess. He can't find anything. I think ______.",
+"options": [
+"he shouldn't tidy it",
+"he ought to tidy it",
+"he should to tidy it",
+"he had better to tidy it"
+],
+"answer": 1,
+"englishExplanation": "'Ought to' suggests a recommendation for Jason to clean and organize his room because it is messy.",
+"amharicExplanation": "📚 'Ought to' ክፍሉ የተበታተነ በመሆኑ ጄሰን ክፍሉን እንዲያጸዳ እና እንዲያስተካክል ምክር ይሰጣል።"
+},
+{
+"question": "40. A: I can't sleep at nights. B: —",
+"options": [
+"You ought to drink coffee at nights.",
+"You should drink coffee at nights.",
+"You had better not drink coffee at nights.",
+"You had better drink coffee at nights."
+],
+"answer": 2,
+"englishExplanation": "'Had better not' is used to strongly advise against drinking coffee at night, because it is the cause of the sleep problem.",
+"amharicExplanation": "📚 'Had better not' በሌሊት ቡና እንዳትጠጡ ጠንካራ ምክር ለመስጠት ይጠቅማል፣ ምክንያቱም የእንቅልፍ ችግሩ መንስኤ ስለሆነ ነው።"
+},
+{
+"question": "41. I have a birthday party on Friday. Who do you think I __?",
+"options": [
+"should invite not",
+"should invite",
+"ought invite",
+"had invite better"
+],
+"answer": 1,
+"englishExplanation": ""Should invite" is the correct form for recommending who to invite to a party. It is a standard way to ask for suggestions.",
+"amharicExplanation": "📚 "Should invite" ለድግስ ማንን መጋበዝ እንዳለቦት ለመምከር ትክክለኛው ቅርጽ ነው። ሐሳብ ለመጠየቅ መደበኛ መንገድ ነው።"
+},
+{
+"question": "42. What a chilly day is today! I feel cold. What ___ do to warm myself?",
+"options": [
+"I had better",
+"I should",
+"ought I",
+"should I"
+],
+"answer": 3,
+"englishExplanation": ""Should I" is the correct interrogative form used to ask for advice on what actions to take. In this question, the speaker is seeking advice on how to warm up.",
+"amharicExplanation": "📚 "Should I" በምን አይነት እርምጃዎች ላይ ምክር ለመጠየቅ የሚጠቅም ትክክለኛ የጥያቄ ቅርጽ ነው። በዚህ ጥያቄ ውስጥ፣ ተናጋሪው እንዴት እንደሚሞቅ ምክር እየጠየቀ ነው።"
+},
+{
+"question": "43. Which of the following negative interrogative forms sounds correct?",
+"options": [
+"Shouldn't I visit the library every day?",
+"Had I not better visit the library every day?",
+"Had not I better visit the library every day?",
+"Ought I not to visit the library every day?"
+],
+"answer": 0,
+"englishExplanation": ""Shouldn't I" is the correct grammatically standard negative interrogative form. The other options use awkward or incorrect word orders.",
+"amharicExplanation": "📚 "Shouldn't I" በሰዋሰው ደረጃ ትክክለኛው አሉታዊ የጥያቄ ቅርጽ ነው። ሌሎቹ አማራጮች የቃላት አቀማመጥ የተሳሳተ ነው።"
+},
+{
+"question": "44. The negative form of ought to is ______.",
+"options": [
+"Not ought to",
+"Ought to not",
+"ought not to",
+"none"
+],
+"answer": 2,
+"englishExplanation": "The correct negative form of the modal verb "ought to" is "ought not to". The 'not' goes between 'ought' and 'to'.",
+"amharicExplanation": "📚 "Ought to" የሚለው ሞዳል ግስ ትክክለኛ አሉታዊ ቅርጽ "ought not to" ነው። 'not' የሚለው ቃል በ 'ought' እና 'to' መካከል ይቀመጣል።"
+},
+{
+"question": "45. The negative form of had better is ______.",
+"options": [
+"Not had better",
+"Had better not",
+"had not better",
+"none"
+],
+"answer": 1,
+"englishExplanation": "The correct negative form of the modal phrase "had better" is "had better not". The 'not' comes after 'better'.",
+"amharicExplanation": "📚 "Had better" የሚለው ሞዳል ሐረግ ትክክለኛ አሉታዊ ቅርጽ "had better not" ነው። 'not' የሚለው ቃል ከ 'better' በኋላ ይመጣል።"
+},
+{
+"question": "46. Addisu: I have no idea about note taking and paraphrasing. Yodit: ________ (strong advice)",
+"options": [
+"You should consult your English Instructor.",
+"You had better consult your English Instructor.",
+"Consult your English Instructor.",
+"You ought to consult your English Instructor."
+],
+"answer": 1,
+"englishExplanation": ""Had better" is used for strong advice. Since Addisu has no idea, consulting an instructor is strongly recommended.",
+"amharicExplanation": "📚 "Had better" ለጠንካራ ምክር ይጠቅማል። አዲሱ ምንም እንደማያውቅ ስለሆነ፣ አስተማሪን ማማከር በጥብቅ ይመከራል።"
+},
+{
+"question": "47. I think I ______ have failed the test, but I'm not sure.",
+"options": [
+"ought to",
+"might",
+"shall"
+],
+"answer": 1,
+"englishExplanation": ""Might" is used to express a logical possibility about a past event. Here, the speaker is guessing about failing the test, but isn't sure.",
+"amharicExplanation": "📚 "Might" ስለተፈጠረ ክስተት ምክንያታዊ ሊሆን የሚችል ነገር ለማሳየት ይጠቅማል። እዚህ ላይ፣ ተናጋሪው ፈተናውን እንዳላለፈ እየገመተ ነው፣ ግን እርግጠኛ አይደለም።"
+},
+{
+"question": "48. We have to rush. We ______ miss the last bus home.",
+"options": [
+"needn't",
+"couldn't",
+"mustn't",
+"should"
+],
+"answer": 2,
+"englishExplanation": ""Mustn't" is used for prohibition. It means we are not allowed or it is absolutely necessary not to miss the last bus.",
+"amharicExplanation": "📚 "Mustn't" ለመከልከል ይጠቅማል። ትርጉሙ የመጨረሻውን አውቶቡስ እንዳናጣ ፍጹም አስፈላጊ መሆኑን ያሳያል።"
+},
+{
+"question": "49. If you had let me know earlier, I ______ have been able to come.",
+"options": [
+"would",
+"will",
+"shall",
+"might"
+],
+"answer": 0,
+"englishExplanation": "This is a 3rd conditional sentence. The correct structure for the main clause is "would have + past participle" to express a past unrealized outcome.",
+"amharicExplanation": "📚 ይህ 3ኛ ሁኔታዊ ዓረፍተ ነገር ነው። ያለፈ ያልተፈጸመ ውጤትን ለማሳየት ዋናው ክፍል "would have + past participle" ቅርጽ ነው መያዝ ያለበት።"
+},
+{
+"question": "50. You ______ help me!",
+"options": [
+"must to",
+"should to",
+"have to",
+"might"
+],
+"answer": 2,
+"englishExplanation": ""Have to" is used to express necessity or obligation. "Must to" and "should to" are incorrect because modal verbs are followed directly by the bare infinitive without 'to'.",
+"amharicExplanation": "📚 "Have to" አስፈላጊነትን ወይም ግዴታን ለማሳየት ይጠቅማል። "Must to" እና "should to" ስህተት ናቸው ምክንያቱም ሞዳል ግሶች ከ'to' በላይ ባለው ቀላል ግስ ይከተላሉ።"
+},
+{
+"question": "51. ______ anybody attend the lecture or is it just for registered students?",
+"options": [
+"Will",
+"Can",
+"Must",
+"Should"
+],
+"answer": 1,
+"englishExplanation": ""Can" is used to ask about permission. The speaker is asking if anyone is allowed to attend the lecture.",
+"amharicExplanation": "📚 "Can" ስለፈቃድ ለመጠየቅ ይጠቅማል። ተናጋሪው ማንም ንግግሩን እንዲከታተል ይፈቀድለት እንደሆነ እየጠየቀ ነው።"
+},
+{
+"question": "52. You ______ have bothered coming. I've done it already.",
+"options": [
+"wouldn't",
+"mightn't",
+"needn't",
+"couldn't"
+],
+"answer": 2,
+"englishExplanation": ""Needn't" indicates that something was not necessary. It is used here because the action (coming) wasn't required as the task was already completed.",
+"amharicExplanation": "📚 "Needn't" አንድ ነገር አስፈላጊ እንዳልነበረ ያሳያል። ተግባሩ አስቀድሞ ስለተጠናቀቀ መምጣት አስፈላጊ ስላልነበረ እዚህ ይጠቅማል።"
+},
+{
+"question": "53. If there is an age restriction then you ______ go in as you are too young.",
+"options": [
+"should",
+"shouldn't",
+"shall not",
+"might"
+],
+"answer": 1,
+"englishExplanation": ""Shouldn't" is used to give advice against doing something. In this case, it advises the person not to enter because of the age restriction.",
+"amharicExplanation": "📚 "Shouldn't" አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። በዚህ ሁኔታ፣ በእድሜ ገደብ ምክንያት እንዳይገቡ ይመክራል።"
+},
+{
+"question": "54. The government ______ vote on the issue tomorrow. It's scheduled for 10am.",
+"options": [
+"will",
+"may",
+"would",
+"might"
+],
+"answer": 0,
+"englishExplanation": ""Will" is used for definite plans in the future. Because the vote is scheduled, it's a fixed arrangement, making 'will' the correct choice.",
+"amharicExplanation": "📚 "Will" ወደፊት ለሚከናወኑ የተረጋገጡ እቅዶች ይጠቅማል። ድምጽ መስጫው ቀጠሮ ስለተያዘለት፣ ይህ የተወሰነ ዝግጅት ነው፣ ስለዚህ 'will' ትክክለኛው ምርጫ ነው።"
+},
+{
+"question": "55. ______ we leave now or do you want to wait?",
+"options": [
+"Will",
+"Mightn't",
+"Shall",
+"Should"
+],
+"answer": 2,
+"englishExplanation": ""Shall" is used for making suggestions or offers. It is the appropriate modal for asking a question that offers a choice (to leave now or wait).",
+"amharicExplanation": "📚 "Shall" ሐሳቦችን ወይም የእርዳታ ማቅረቢያዎችን ለማቅረብ ይጠቅማል። አሁን ለመሄድ ወይም ለመጠበቅ ምርጫን የሚሰጥ ጥያቄ ለመጠየቅ ተስማሚው ሞዳል ነው።"
+},
+{
+"question": "56. You ______ have worked so hard last week. You look so tired now.",
+"options": [
+"must not",
+"ought not to",
+"can't",
+"shouldn't"
+],
+"answer": 1,
+"englishExplanation": ""Ought not to" is used for giving advice or expressing that it wasn't necessary or advisable to work so hard, given how tired the person looks.",
+"amharicExplanation": "📚 "Ought not to" ምክር ለመስጠት ወይም ተናጋሪው ሰውዬው ስለሚደክም በጣም መስራት አስፈላጊ እንዳልነበረ ለማሳየት ይጠቅማል።"
 }
 ],
-        2: [],
+    2: [],
         3: [],
         4: [],
         5: []
