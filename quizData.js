@@ -775,7 +775,7 @@ const quizData = {
 "amharicExplanation": "📚 "Ought to do" እዚህ ላይ በሐኪሙ ሐሳብ መሠረት ተጨማሪ የአካል ብቃት እንቅስቃሴ ለማድረግ የሞራል ግዴታ ወይም አስፈላጊነትን ለማሳየት ይጠቅማል።"
 },
 {
-"question": "13. Today, there are more displaced people in Ethiopia than were in the past. These people ____________ . This should be a moral obligation to every one of us.",
+"question": "12. Today, there are more displaced people in Ethiopia than were in the past. These people ____________ . This should be a moral obligation to every one of us.",
 "options": [
 "must help",
 "could have been helped",
@@ -787,7 +787,7 @@ const quizData = {
 "amharicExplanation": "📚 "Must be helped" ጠንካራ ግዴታን ለማሳየት የሚጠቅም ትክክለኛ ስም-አልባ (passive) ቅርጽ ነው። እነዚህን ሰዎች መርዳት ለሁሉም ሞራላዊ ግዴታ መሆኑን በግልጽ ይገልጻል።"
 },
 {
-"question": "14. I think all drivers ____________ wear a seat belt.",
+"question": "13. I think all drivers ____________ wear a seat belt.",
 "options": [
 "Should",
 "Can",
@@ -799,7 +799,7 @@ const quizData = {
 "amharicExplanation": "📚 "Should" አጠቃላይ ምክር ለመስጠት ወይም አስተያየት ለመግለጽ እዚህ ይጠቅማል። ምንም እንኳን የደህንነት ቀበቶ ህግ ሊሆን ይችላል (በአንዳንድ አጋጣሚዎች "must" ን ትክክል ያደርገዋል)፣ ስለ አጠቃላይ ደንብ የግል አስተያየት በምንሰጥበት አውድ ውስጥ "should" በጣም ተገቢው እና በተለምዶ ጥቅም ላይ የሚውለው ምርጫ ነው።"
 },
 {
-"question": "15. You don't look very well. You ____________ to work today.",
+"question": "14. You don't look very well. You ____________ to work today.",
 "options": [
 "Had better not go",
 "Had not better go",
@@ -811,7 +811,7 @@ const quizData = {
 "amharicExplanation": "📚 "Had better not go" የሞዳል ሐረጉ ትክክለኛ አሉታዊ ቅርጽ ነው። በሰውዬው የጤና ሁኔታ ምክንያት ወደ ሥራ እንዳይሄድ ጠንካራ ምክር ይሰጣል።"
 },
 {
-"question": "16. I wonder where Genet is. She ____________ here by now.",
+"question": "15. I wonder where Genet is. She ____________ here by now.",
 "options": [
 "Must be",
 "Ought to be",
@@ -823,7 +823,7 @@ const quizData = {
 "amharicExplanation": "📚 "Should be" ምን ይሆናል ተብሎ የሚጠበቀውን ለማሳየት ይጠቅማል። ተናጋሪው በአሁኑ ሰዓት ጄኔት እዚህ መሆን እንደምትችል ይጠብቃል።"
 },
 {
-"question": "17. You ____________ to our conversation. It was private.",
+"question": "16. You ____________ to our conversation. It was private.",
 "options": [
 "Might not have been listening",
 "Couldn't have been listening",
@@ -835,7 +835,7 @@ const quizData = {
 "amharicExplanation": "📚 "Shouldn't have been listening" ያለፈው ተግባር (ማዳመጥ) ስህተት ወይም ተገቢ ያልሆነ ነበር ለማለት ይጠቅማል። ስለ ያለፈ ተግባር ትችት ወይም አሉታዊ አስተያየት ነው።"
 },
 {
-"question": "19. It's raining heavily. You ____________ take your own umbrella.",
+"question": "17. It's raining heavily. You ____________ take your own umbrella.",
 "options": [
 "Should",
 "had better",
@@ -847,7 +847,7 @@ const quizData = {
 "amharicExplanation": "📚 "Should" እዚህ ላይ ምክር ለመስጠት ይጠቅማል። ዝናቡ በጣም ስለሚዘንብ፣ ሰውዬው ጃንጥላ እንዲይዝ ይመከራል።"
 },
 {
-"question": "20. Where is the groom? He ______ wear his suit on time.",
+"question": "18. Where is the groom? He ______ wear his suit on time.",
 "options": [
 "should",
 "must",
@@ -859,7 +859,7 @@ const quizData = {
 "amharicExplanation": "📚 must ጠንካራ አስፈላጊነትን ወይም ግዴታን ለማሳየት ይጠቅማል። በዚህ አውድ ውስጥ ለሠርግ ልብስን በጊዜ መልበስ ጠንካራ መስፈርት ነው።"
 },
 {
-"question": "21. In England you ______ drive on the left side of the road but in other European countries you ______.",
+"question": "19. In England you ______ drive on the left side of the road but in other European countries you ______.",
 "options": [
 "should/ shouldn't",
 "Had better/ had better not",
@@ -871,7 +871,7 @@ const quizData = {
 "amharicExplanation": "📚 must ለህግ ወይም ደንብ ይጠቅማል (በእንግሊዝ በግራ በኩል ማሽከርከር)። mustn't ለመከልከል ይጠቅማል (በሌሎች አውሮፓ አገሮች በግራ በኩል ማሽከርከር አይፈቀድልህም)።"
 },
 {
-"question": "22. Everyone in the world ______ get enough food to eat.",
+"question": "20. Everyone in the world ______ get enough food to eat.",
 "options": [
 "Should",
 "ought to",
@@ -883,7 +883,7 @@ const quizData = {
 "amharicExplanation": "📚 ሁለቱም 'should' እና 'ought to' ለሞራል ግዴታዎች መጠቀም ይቻላል። በዚህ አውድ ውስጥ ሁለቱም አማራጮች A እና B ትክክል ስለሆኑ 'A & B' ትክክለኛው ምርጫ ነው።"
 },
 {
-"question": "23. Gebeyehu ______ to the wedding, but he forgot.",
+"question": "21. Gebeyehu ______ to the wedding, but he forgot.",
 "options": [
 "Ought have gone",
 "must have gone",
@@ -895,7 +895,7 @@ const quizData = {
 "amharicExplanation": "📚 'Ought to have gone' ያለፈ ጊዜ ውስጥ ማድረግ የሚገባው ወይም ምክር የሚሰጥበት ነገር እንደነበረ ለማሳየት ይጠቅማል፣ ነገር ግን አልተከናወነም። ያለፈ ጊዜ ቅርጽ 'ought to have + past participle' ነው።"
 },
 {
-"question": "24. You ______ go to bed early. Tomorrow is Sunday.",
+"question": "22. You ______ go to bed early. Tomorrow is Sunday.",
 "options": [
 "Ought not to",
 "should",
@@ -907,7 +907,7 @@ const quizData = {
 "amharicExplanation": "📚 'Ought not to' አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። ነገ እሁድ ስለሆነ፣ ቀደም ብሎ መተኛት ጠንካራ ምክንያት እንደሌለ ይጠቁማል፣ ስለዚህ ከመተኛት ይመክራል።"
 },
 {
-"question": "25. The meat doesn't smell fresh. We ______ it.",
+"question": "23. The meat doesn't smell fresh. We ______ it.",
 "options": [
 "Shouldn't eat",
 "Needn't eat",
@@ -919,7 +919,7 @@ const quizData = {
 "amharicExplanation": "📚 'Shouldn't eat' ሥጋው ትኩስ እንደማይመስል እና ለጤና አስተማማኝ ላይሆን ስለሚችል ላለመብላት ምክር ለመስጠት ይጠቅማል።"
 },
 {
-"question": "26. You're going to miss the school bus. You ______ hurry.",
+"question": "24. You're going to miss the school bus. You ______ hurry.",
 "options": [
 "Shouldn't",
 "Had better not",
@@ -931,7 +931,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better' ለአስቸኳይ ምክር ይጠቅማል። አውቶቡስ መዝለል ከባድ መዘዝ ስለሚያስከትል 'had better' ለምክር በጣም ተስማሚው ምርጫ ነው።"
 },
 {
-"question": "27. Getachew: exam coordinator strictly tells us not to bring mobile phones to the exam room, but some students keep bringing them. Megertu: They ______ perform according to the campus rule.",
+"question": "25. Getachew: exam coordinator strictly tells us not to bring mobile phones to the exam room, but some students keep bringing them. Megertu: They ______ perform according to the campus rule.",
 "options": [
 "Had better not",
 "Had better",
@@ -943,7 +943,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better' ጠንካራ ምክር ወይም ማስጠንቀቂያ ለመስጠት ይጠቅማል። ትርጉሙ ከባድ ውጤት ላለማስከተል በጥብቅ የካምፓስ ደንቡን መከተል እንዳለባቸው ይጠቁማል።"
 },
 {
-"question": "28. Almaz: I have got a sore throat. Mahi: You ______ drink cold water.",
+"question": "26. Almaz: I have got a sore throat. Mahi: You ______ drink cold water.",
 "options": [
 "should",
 "shouldn't",
@@ -955,7 +955,7 @@ const quizData = {
 "amharicExplanation": "📚 'Shouldn't' አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። ቀዝቃዛ ውሃ መጠጣት የጉሮሮ መቁሰልን ሊያባብሰው ይችላል፣ ስለዚህ እንዳትጠጡ መመከር ነው።"
 },
 {
-"question": "29. Winta: My husband snores a lot and I can't sleep. Haset: I think you ______ warn him.",
+"question": "27. Winta: My husband snores a lot and I can't sleep. Haset: I think you ______ warn him.",
 "options": [
 "had better",
 "shouldn't",
@@ -967,7 +967,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better' ለአስቸኳይ ምክር ይጠቅማል። ሁኔታው መተኛት ስለሚከለክል፣ እሱን ማስጠንቀቅ አስፈላጊ እና አስቸኳይ ምክር ነው።"
 },
 {
-"question": "30. This meat doesn't smell fresh. We ______ it.",
+"question": "28. This meat doesn't smell fresh. We ______ it.",
 "options": [
 "shouldn't eat",
 "needn't taste",
@@ -979,7 +979,7 @@ const quizData = {
 "amharicExplanation": "📚 'Shouldn't eat' ሥጋው ሊበላሽ ስለሚችል ላለመብላት ምክር ይሰጣል። ለደህንነት የሚሰጥ ምክር ነው።"
 },
 {
-"question": "31. Abreham: alex has got a temperature. Mikyas: ______.",
+"question": "29. Abreham: alex has got a temperature. Mikyas: ______.",
 "options": [
 "He had better not see a doctor",
 "He had better not stay in bed",
@@ -991,7 +991,7 @@ const quizData = {
 "amharicExplanation": "📚 ሙቀት መኖሩ ማለት ታምሟል ማለት ነው። ቀዝቃዛ ሻወር መውሰድ ጎጂ ምክር ነው። 'He shouldn't have a cold shower' ትክክለኛው አሉታዊ ምክር ነው።"
 },
 {
-"question": "32. Felimon: Tirfe is 80 kilos and she still eats junk food. Haymi: I think she ______ go on a diet.",
+"question": "30. Felimon: Tirfe is 80 kilos and she still eats junk food. Haymi: I think she ______ go on a diet.",
 "options": [
 "should",
 "shouldn't",
@@ -1003,7 +1003,7 @@ const quizData = {
 "amharicExplanation": "📚 'Should' ጤናን ለማሻሻል እና ክብደት ለመቀነስ አመጋገብ ላይ መሄድን በተመለከተ ምክር ለመስጠት ይጠቅማል።"
 },
 {
-"question": "33. I have an important exam tomorrow. I ______ to go out tonight.",
+"question": "31. I have an important exam tomorrow. I ______ to go out tonight.",
 "options": [
 "shouldn't",
 "had better not",
@@ -1015,7 +1015,7 @@ const quizData = {
 "amharicExplanation": "📚 'Ought not' ነገ ፈተና ስላለ ከቤት እንዳይወጡ በመደበኛ መንገድ ምክር ለመስጠት ይጠቅማል።"
 },
 {
-"question": "34. Ermi: I have a bad toothache. Fire B: I think you ______ go to the dentist.",
+"question": "32. Ermi: I have a bad toothache. Fire B: I think you ______ go to the dentist.",
 "options": [
 "shouldn't",
 "should",
@@ -1027,7 +1027,7 @@ const quizData = {
 "amharicExplanation": "📚 'Should' የጥርስ ህመም ላለበት ወደ ጥርስ ሐኪም መሄድን ለመምከር ይጠቅማል። ጥሩ ምክር ነው።"
 },
 {
-"question": "35. A: I can't see the blackboard well. B: I think ______.",
+"question": "33. A: I can't see the blackboard well. B: I think ______.",
 "options": [
 "you should sit at the back",
 "you shouldn't ask your teacher",
@@ -1039,7 +1039,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better' አስቸኳይ እና ተግባራዊ ምክር ይሰጣል። ለችግሩ መፍትሄ ሆኖ ከሰሌዳው አጠገብ መቀመጥ ቀጥተኛ መፍትሄ ነው።"
 },
 {
-"question": "36. Melat: My phone bill is enormous. Melkam: I think you ______.",
+"question": "34. Melat: My phone bill is enormous. Melkam: I think you ______.",
 "options": [
 "you not ought to talk too much",
 "you ought not to talk too much",
@@ -1051,7 +1051,7 @@ const quizData = {
 "amharicExplanation": "📚 'Ought not to' አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። ብዙ መናገር ወደ ትልቅ ሂሳብ ስለመራ፣ ይህን ማድረግ የለባትም።"
 },
 {
-"question": "37. A: I can't sleep at nights. B: —",
+"question": "35. A: I can't sleep at nights. B: —",
 "options": [
 "You ought to drink coffee at nights.",
 "You should drink coffee at nights.",
@@ -1063,7 +1063,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better not' በሌሊት ቡና እንዳትጠጡ ጠንካራ ምክር ለመስጠት ይጠቅማል፣ ምክንያቱም የእንቅልፍ ችግሩ መንስኤ ስለሆነ ነው።"
 },
 {
-"question": "38. A: Gerry hasn't got his glasses and he wants to drive home. B: I think he ______ take a taxi.",
+"question": "36. A: Gerry hasn't got his glasses and he wants to drive home. B: I think he ______ take a taxi.",
 "options": [
 "had better",
 "shouldn't",
@@ -1075,7 +1075,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better' ያለ መነፅር ከማሽከርከር ይልቅ ታክሲ ለመውሰድ ለደህንነት ጠንካራ ምክር ለመስጠት ይጠቅማል።"
 },
 {
-"question": "39. Jason's room is always in a mess. He can't find anything. I think ______.",
+"question": "37. Jason's room is always in a mess. He can't find anything. I think ______.",
 "options": [
 "he shouldn't tidy it",
 "he ought to tidy it",
@@ -1087,7 +1087,7 @@ const quizData = {
 "amharicExplanation": "📚 'Ought to' ክፍሉ የተበታተነ በመሆኑ ጄሰን ክፍሉን እንዲያጸዳ እና እንዲያስተካክል ምክር ይሰጣል።"
 },
 {
-"question": "40. A: I can't sleep at nights. B: —",
+"question": "38. A: I can't sleep at nights. B: —",
 "options": [
 "You ought to drink coffee at nights.",
 "You should drink coffee at nights.",
@@ -1099,7 +1099,7 @@ const quizData = {
 "amharicExplanation": "📚 'Had better not' በሌሊት ቡና እንዳትጠጡ ጠንካራ ምክር ለመስጠት ይጠቅማል፣ ምክንያቱም የእንቅልፍ ችግሩ መንስኤ ስለሆነ ነው።"
 },
 {
-"question": "41. I have a birthday party on Friday. Who do you think I __?",
+"question": "39. I have a birthday party on Friday. Who do you think I __?",
 "options": [
 "should invite not",
 "should invite",
@@ -1111,7 +1111,7 @@ const quizData = {
 "amharicExplanation": "📚 "Should invite" ለድግስ ማንን መጋበዝ እንዳለቦት ለመምከር ትክክለኛው ቅርጽ ነው። ሐሳብ ለመጠየቅ መደበኛ መንገድ ነው።"
 },
 {
-"question": "42. What a chilly day is today! I feel cold. What ___ do to warm myself?",
+"question": "40. What a chilly day is today! I feel cold. What ___ do to warm myself?",
 "options": [
 "I had better",
 "I should",
@@ -1123,7 +1123,7 @@ const quizData = {
 "amharicExplanation": "📚 "Should I" በምን አይነት እርምጃዎች ላይ ምክር ለመጠየቅ የሚጠቅም ትክክለኛ የጥያቄ ቅርጽ ነው። በዚህ ጥያቄ ውስጥ፣ ተናጋሪው እንዴት እንደሚሞቅ ምክር እየጠየቀ ነው።"
 },
 {
-"question": "43. Which of the following negative interrogative forms sounds correct?",
+"question": "41. Which of the following negative interrogative forms sounds correct?",
 "options": [
 "Shouldn't I visit the library every day?",
 "Had I not better visit the library every day?",
@@ -1135,7 +1135,7 @@ const quizData = {
 "amharicExplanation": "📚 "Shouldn't I" በሰዋሰው ደረጃ ትክክለኛው አሉታዊ የጥያቄ ቅርጽ ነው። ሌሎቹ አማራጮች የቃላት አቀማመጥ የተሳሳተ ነው።"
 },
 {
-"question": "44. The negative form of ought to is ______.",
+"question": "42. The negative form of ought to is ______.",
 "options": [
 "Not ought to",
 "Ought to not",
@@ -1147,7 +1147,7 @@ const quizData = {
 "amharicExplanation": "📚 "Ought to" የሚለው ሞዳል ግስ ትክክለኛ አሉታዊ ቅርጽ "ought not to" ነው። 'not' የሚለው ቃል በ 'ought' እና 'to' መካከል ይቀመጣል።"
 },
 {
-"question": "45. The negative form of had better is ______.",
+"question": "43. The negative form of had better is ______.",
 "options": [
 "Not had better",
 "Had better not",
@@ -1159,7 +1159,7 @@ const quizData = {
 "amharicExplanation": "📚 "Had better" የሚለው ሞዳል ሐረግ ትክክለኛ አሉታዊ ቅርጽ "had better not" ነው። 'not' የሚለው ቃል ከ 'better' በኋላ ይመጣል።"
 },
 {
-"question": "46. Addisu: I have no idea about note taking and paraphrasing. Yodit: ________ (strong advice)",
+"question": "44. Addisu: I have no idea about note taking and paraphrasing. Yodit: ________ (strong advice)",
 "options": [
 "You should consult your English Instructor.",
 "You had better consult your English Instructor.",
@@ -1171,7 +1171,7 @@ const quizData = {
 "amharicExplanation": "📚 "Had better" ለጠንካራ ምክር ይጠቅማል። አዲሱ ምንም እንደማያውቅ ስለሆነ፣ አስተማሪን ማማከር በጥብቅ ይመከራል።"
 },
 {
-"question": "47. I think I ______ have failed the test, but I'm not sure.",
+"question": "45. I think I ______ have failed the test, but I'm not sure.",
 "options": [
 "ought to",
 "might",
@@ -1182,7 +1182,7 @@ const quizData = {
 "amharicExplanation": "📚 "Might" ስለተፈጠረ ክስተት ምክንያታዊ ሊሆን የሚችል ነገር ለማሳየት ይጠቅማል። እዚህ ላይ፣ ተናጋሪው ፈተናውን እንዳላለፈ እየገመተ ነው፣ ግን እርግጠኛ አይደለም።"
 },
 {
-"question": "48. We have to rush. We ______ miss the last bus home.",
+"question": "46. We have to rush. We ______ miss the last bus home.",
 "options": [
 "needn't",
 "couldn't",
@@ -1194,7 +1194,7 @@ const quizData = {
 "amharicExplanation": "📚 "Mustn't" ለመከልከል ይጠቅማል። ትርጉሙ የመጨረሻውን አውቶቡስ እንዳናጣ ፍጹም አስፈላጊ መሆኑን ያሳያል።"
 },
 {
-"question": "49. If you had let me know earlier, I ______ have been able to come.",
+"question": "47. If you had let me know earlier, I ______ have been able to come.",
 "options": [
 "would",
 "will",
@@ -1206,7 +1206,7 @@ const quizData = {
 "amharicExplanation": "📚 ይህ 3ኛ ሁኔታዊ ዓረፍተ ነገር ነው። ያለፈ ያልተፈጸመ ውጤትን ለማሳየት ዋናው ክፍል "would have + past participle" ቅርጽ ነው መያዝ ያለበት።"
 },
 {
-"question": "50. You ______ help me!",
+"question": "48. You ______ help me!",
 "options": [
 "must to",
 "should to",
@@ -1218,7 +1218,7 @@ const quizData = {
 "amharicExplanation": "📚 "Have to" አስፈላጊነትን ወይም ግዴታን ለማሳየት ይጠቅማል። "Must to" እና "should to" ስህተት ናቸው ምክንያቱም ሞዳል ግሶች ከ'to' በላይ ባለው ቀላል ግስ ይከተላሉ።"
 },
 {
-"question": "51. ______ anybody attend the lecture or is it just for registered students?",
+"question": "49. ______ anybody attend the lecture or is it just for registered students?",
 "options": [
 "Will",
 "Can",
@@ -1230,7 +1230,7 @@ const quizData = {
 "amharicExplanation": "📚 "Can" ስለፈቃድ ለመጠየቅ ይጠቅማል። ተናጋሪው ማንም ንግግሩን እንዲከታተል ይፈቀድለት እንደሆነ እየጠየቀ ነው።"
 },
 {
-"question": "52. You ______ have bothered coming. I've done it already.",
+"question": "50. You ______ have bothered coming. I've done it already.",
 "options": [
 "wouldn't",
 "mightn't",
@@ -1242,7 +1242,7 @@ const quizData = {
 "amharicExplanation": "📚 "Needn't" አንድ ነገር አስፈላጊ እንዳልነበረ ያሳያል። ተግባሩ አስቀድሞ ስለተጠናቀቀ መምጣት አስፈላጊ ስላልነበረ እዚህ ይጠቅማል።"
 },
 {
-"question": "53. If there is an age restriction then you ______ go in as you are too young.",
+"question": "51. If there is an age restriction then you ______ go in as you are too young.",
 "options": [
 "should",
 "shouldn't",
@@ -1254,7 +1254,7 @@ const quizData = {
 "amharicExplanation": "📚 "Shouldn't" አንድን ነገር እንዳታደርጉ ምክር ለመስጠት ይጠቅማል። በዚህ ሁኔታ፣ በእድሜ ገደብ ምክንያት እንዳይገቡ ይመክራል።"
 },
 {
-"question": "54. The government ______ vote on the issue tomorrow. It's scheduled for 10am.",
+"question": "52. The government ______ vote on the issue tomorrow. It's scheduled for 10am.",
 "options": [
 "will",
 "may",
@@ -1266,7 +1266,7 @@ const quizData = {
 "amharicExplanation": "📚 "Will" ወደፊት ለሚከናወኑ የተረጋገጡ እቅዶች ይጠቅማል። ድምጽ መስጫው ቀጠሮ ስለተያዘለት፣ ይህ የተወሰነ ዝግጅት ነው፣ ስለዚህ 'will' ትክክለኛው ምርጫ ነው።"
 },
 {
-"question": "55. ______ we leave now or do you want to wait?",
+"question": "53. ______ we leave now or do you want to wait?",
 "options": [
 "Will",
 "Mightn't",
@@ -1278,7 +1278,7 @@ const quizData = {
 "amharicExplanation": "📚 "Shall" ሐሳቦችን ወይም የእርዳታ ማቅረቢያዎችን ለማቅረብ ይጠቅማል። አሁን ለመሄድ ወይም ለመጠበቅ ምርጫን የሚሰጥ ጥያቄ ለመጠየቅ ተስማሚው ሞዳል ነው።"
 },
 {
-"question": "56. You ______ have worked so hard last week. You look so tired now.",
+"question": "54. You ______ have worked so hard last week. You look so tired now.",
 "options": [
 "must not",
 "ought not to",
