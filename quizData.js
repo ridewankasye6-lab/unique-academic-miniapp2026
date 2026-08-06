@@ -640,7 +640,127 @@ const quizData = {
 
     "english1": {
 
-        1: [],
+        1: [{
+"question": "1. A: I think that the grade my teacher gave me on my test is wrong.\nB: Really? You ____________ to her after class today.",
+"options": [
+"ought talk",
+"should to talk",
+"ought to talk",
+"must to talk"
+],
+"answer": 2,
+"englishExplanation": ""Ought to talk" is correct because "ought to" is a modal verb used to give advice, and it is always followed by the base form of the verb — in this case, "talk."",
+"amharicExplanation": "📚 "Ought to talk" ትክክለኛ ነው ምክንያቱም "ought to" ምክር ለመስጠት የሚያገለግል ሞዳል ግስ ስለሆነ እና ሁልጊዜም ከመሠረታዊ ግሱ ቅርጽ ጋር ይከተላል።"
+},
+{
+"question": "2. My mother isn't feeling well, so I told her that she ____________ to the doctor.",
+"options": [
+"ought go",
+"ought",
+"ought to go",
+"should to go"
+],
+"answer": 2,
+"englishExplanation": ""Ought to" is used to give advice in a formal manner. The phrase "ought to go" suggests that it is advisable for her to visit the doctor.",
+"amharicExplanation": "📚 "Ought to" በይፋዊ መንገድ ምክር ለመስጠት ያገለግላል። "ought to go" የሚለው ሐረግ ወደ ሐኪም መሄድ ለእሷ ተገቢ መሆኑን ያሳያል።"
+},
+{
+"question": "3. I need help, doctor. My baby doesn't sleep well. What ____________?",
+"options": [
+"should I do",
+"I should do",
+"had I better do",
+"must I do"
+],
+"answer": 0,
+"englishExplanation": ""Should I do" is the correct form for asking for advice in a general context. It uses the modal verb "should" followed by the subject "I" and the base verb "do."",
+"amharicExplanation": "📚 "Should I do" በአጠቃላይ ሁኔታዎች ምክር ለመጠየቅ ትክክለኛው ቅርጽ ነው። "should" የሚለውን ሞዳል ግስ በመጠቀም በይግባኝ "I" እና በመሠረታዊ ግሱ "do" ይከተላል።"
+},
+{
+"question": "4. It's raining and I don't want to get my dress wet. I ____________ an umbrella.",
+"options": [
+"had better not bring",
+"had better to bring",
+"had better bring",
+"should bring"
+],
+"answer": 2,
+"englishExplanation": ""Had better bring" is the correct form to use when giving advice with a sense of urgency or necessity. It implies that bringing an umbrella is strongly advised to avoid getting the dress wet.",
+"amharicExplanation": "📚 "Had better bring" አጣዳፊነት ወይም አስፈላጊነት ስሜት ያለው ምክር ሲሰጥ የሚመረጥ ትክክለኛው ቅርጽ ነው። ቀሚሱ እንዳይረጭ ☂️ (ឆንጥ) ይዞ መሄድ በጥብቅ ይመከራል።"
+},
+{
+"question": "5. I'm so hot. You ____________ your coat!",
+"options": [
+"should put on",
+"should to take off",
+"should take off",
+"must take off"
+],
+"answer": 2,
+"englishExplanation": ""Should take off" is the correct form to use when giving advice about removing the coat to feel more comfortable. It uses the modal verb "should" followed by the base verb "take off."",
+"amharicExplanation": "📚 "Should take off" የበለጠ ምቾት እንዲሰማን ኮቱን ለማውለቅ ምክር ሲሰጥ ትክክለኛው ቅርጽ ነው። "should" የሚለውን ሞዳል ግስ ተከትሎ "take off" የሚለው መሠረታዊ ግስ ይመጣል።"
+},
+{
+"question": "6. The airline only allows two pieces of luggage. You ____________ pack too much or you will have to take it out at the airport!",
+"options": [
+"better not",
+"had not better",
+"had better not",
+"should not"
+],
+"answer": 2,
+"englishExplanation": ""Had better not" is used here to strongly advise against packing too much. It indicates that packing too much could lead to problems at the airport.",
+"amharicExplanation": "📚 "Had better not" እዚህ ላይ ብዙ ዕቃ እንዳይይዙ በጥብቅ ለመምከር ያገለግላል። ብዙ ማሸግ ኤርፖርት ላይ ችግር ሊያስከትል እንደሚችል ያሳያል።"
+},
+{
+"question": "7. Dave loves chocolate, but he ____________ too much or he will get fat.",
+"options": [
+"should eat not",
+"shouldn't eat",
+"should eat",
+"must eat"
+],
+"answer": 1,
+"englishExplanation": ""Shouldn't eat" is the correct form for advising against eating too much chocolate to avoid gaining weight. It uses the modal verb "shouldn't" to express negative advice.",
+"amharicExplanation": "📚 "Shouldn't eat" ክብደት እንዳይጨምር ከመጠን በላይ ቸኮሌት እንዳይመገቡ ለመምከር ትክክለኛው ቅርጽ ነው። አሉታዊ ምክርን ለመግለጽ "shouldn't" የሚለውን ሞዳል ግስ ይጠቀማል።"
+},
+{
+"question": "8. I'm going to visit your country. Where ____________ if I want to go shopping?",
+"options": [
+"ought to I go",
+"I should go",
+"should I go",
+"must I go"
+],
+"answer": 2,
+"englishExplanation": ""Should I go" is the correct form for asking where to go for shopping in a polite and general manner. It uses the modal verb "should" to seek advice.",
+"amharicExplanation": "📚 "Should I go" በጨዋነት እና በአጠቃላይ ሁኔታ የት መሄድ እንዳለብኝ ለመጠየቅ ትክክለኛው ቅርጽ ነው። ምክር ለመጠየቅ "should" የሚለውን ሞዳል ግስ ይጠቀማል።"
+},
+{
+"question": "9. You ____________ step in to the head master's office without permission.",
+"options": [
+"Ought to",
+"had better not",
+"had better",
+"should"
+],
+"answer": 1,
+"englishExplanation": "had better not የየራሳቸውን ማስረጃ (ከእንግሊዝኛ የተገኘውን ትርጉም) እንደሚያመለክተው ያለፈቃድ ወደ ዳይሬክተሩ ቢሮ መግባት የለብዎትም የሚል ጠንካራ ማስጠንቀቂያ ይሰጣል።",
+"amharicExplanation": "📚 had better not በጥብቅ የተከለከለ ወይም ፈቃድ ሳይኖር መደረግ የሌለበትን ተግባር ለመግለጽ ያገለግላል።"
+},
+{
+"question": "10. I feel ill, doctor, what ____________?",
+"options": [
+"Should I do",
+"Ought to talk",
+"I should do",
+"ought to"
+],
+"answer": 0,
+"englishExplanation": "ፈጣን እና ትክክለኛውን የሐኪም ምክር ለመጠየቅ Should I do የሚለው ቅርጽ ትክክለኛ ነው።",
+"amharicExplanation": "📚 አዲስ ሐኪም ዘንድ ሲሄዱ ምን ማድረግ እንዳለብዎ ለመጠየቅ Should I do የሚለውን አወቃቀር መጠቀም ይገባል።"
+}
+],
         2: [],
         3: [],
         4: [],
