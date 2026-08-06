@@ -200,9 +200,7 @@ const quizData = {
   "answer": 0,
   "englishExplanation": "System-level analysis focuses on the international system, not individual behaviour.",
   "amharicExplanation": "📚 System level of explanation አጠቃላይ የዓለም አቀፍ ስርዓቱን ይመለከታል። Personal behaviours የindividual level ናቸው።"
-}
-
-],
+}],
         2: [],
         3: [],
         4: [],
@@ -639,10 +637,8 @@ const quizData = {
     },
 
     "english1": {
-
-},
         1: [
-{
+            {
 "question": "1. A: I think that the grade my teacher gave me on my test is wrong. B: Really? You ____________ to her after class today.",
 "options": [
 "ought talk",
@@ -1288,8 +1284,7 @@ const quizData = {
 "answer": 1,
 "englishExplanation": ""Ought not to" is used for giving advice or expressing that it wasn't necessary or advisable to work so hard, given how tired the person looks.",
 "amharicExplanation": "📚 "Ought not to" ምክር ለመስጠት ወይም ተናጋሪው ሰውዬው ስለሚደክም በጣም መስራት አስፈላጊ እንዳልነበረ ለማሳየት ይጠቅማል።"
-}
-],
+}],
     2: [],
         3: [],
         4: [],
