@@ -704,13 +704,7 @@ const quizData = {
         answer: 2,
         englishExplanation: "'Should take off' is correct because 'should' is followed by the base verb.",
         amharicExplanation: "📚 'Should take off' ኮቱን ማውለቅ እንደሚገባ ምክር ይሰጣል።"
-      }
-
-    ]
-
-  }
-
-};],
+      }],
         2: [],
         3: [],
         4: [],
