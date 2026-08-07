@@ -636,7 +636,7 @@ const quizData = {
 
     },
 
-    "english1": {
+    "english": {
         1: [
             {
 "question": "1. A: I think that the grade my teacher gave me on my test is wrong. B: Really? You ____________ to her after class today.",
@@ -647,9 +647,7 @@ const quizData = {
 "must to talk"
 ],
 "answer": 2,
-"englishExplanation": ""Ought to talk" is correct because "ought to" is a modal verb used to give advice, and it is always followed by the base form of the verb — in this case, "talk."",
-"amharicExplanation": "📚 "Ought to talk" ትክክል ነው ምክንያቱም "ought to" ምክር ለመስጠት የሚያገለግል ሞዳል ግስ ነው፣ እና ሁልጊዜም በግሱ መሠረታዊ ቅርጽ ይከተላል — በዚህ ሁኔታ "talk"።"
-},
+ "englishExplanation": "'Ought to talk' is correct because 'ought to' is a modal verb..."
 {
 "question": "2. My mother isn't feeling well, so I told her that she ____________ to the doctor.",
 "options": [
