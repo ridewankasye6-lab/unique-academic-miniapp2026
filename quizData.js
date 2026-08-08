@@ -426,9 +426,9 @@ const quizData = {
     ],
     answer: 1,
     englishExplanation: "The difference threshold is the minimum amount of change needed to tell two stimuli apart, noticed 50% of the time.",
-    amharicExplanation: "የልዩነት ዕንታ (difference threshold) ማለት በሁለት ማነቃቂያዎች መካከል ያለውን ልዩነት በ50 በመቶ ጊዜ ውስጥ ለመለየት የሚያስፈልገው አነስተኛ ለውጥ ነው።" },
-
-{     question: "20. The process by which our brains organize and interpret sensory information, sorting it into useful information is:",
+    amharicExplanation: "የልዩነት ዕንታ (difference threshold) ማለት በሁለት ማነቃቂያዎች መካከል ያለውን ልዩነት በ50 በመቶ ጊዜ ውስጥ ለመለየት የሚያስፈልገው አነስተኛ ለውጥ ነው።"
+},{
+    question: "20. The process by which our brains organize and interpret sensory information, sorting it into useful information is:",
     options: [
         "Sensation",
         "Perception",
@@ -438,6 +438,8 @@ const quizData = {
     answer: 1,
     englishExplanation: "Perception is the higher-level cognitive process of organizing and giving meaning to raw sensory information.",
     amharicExplanation: "ፐርሴፕሽን (Perception) አእምሯችን ጥሬ የስሜት መረጃዎችን አደራጅቶና ተርጉሞ ጠቃሚ ትርጉም የሚሰጥበት ሂደት ነው።"
+},
+
 {
     question: "21. A binocular cue that allows for depth perception by comparing images from 2 eyeballs or retina is?",
     options: [
@@ -450,7 +452,6 @@ const quizData = {
     englishExplanation: "\"Retinal disparity\" is a binocular depth cue that relies on the slight difference between the visual images projected on the retinas of both eyes, helping the brain calculate distance and depth.",
     amharicExplanation: "\"Retinal Disparity\" በሁለት አይኖች ሬቲና ላይ የሚፈጠሩትን ትንሽ የምስል ልዩነቶች በማነጻጸር ጥልቀትን (depth) እንድንለይ የሚያስችል የሁለት አይን (binocular) ዘዴ ነው።"
 },
-
 {
     question: "22. Which of the following are monocular cues?",
     options: [
