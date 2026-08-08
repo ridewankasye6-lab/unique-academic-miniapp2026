@@ -1101,6 +1101,267 @@ const quizData = {
     answer: 1,
     englishExplanation: "Behaviorists like Watson and Skinner argued that internal mental events cannot be scientifically measured, so psychology should focus strictly on external, observable behavior.",
     amharicExplanation: "ቢሄቪየሪስቶች (Behaviorism) የአእምሮን ውስጣዊ ሁኔታዎች በዓላማ እና በግልጽ ማጥናት ስለማይቻል ሳይኮሎጂ በአስተዋጽኦ ሊለካ በሚችል ውጫዊ ባህሪ ላይ ብቻ ማተኮር አለበት ብለው ያምናሉ።"
+},Absolutely bro. Here are 21–40 in the exact format you showed, ready to copy directly into your JavaScript question array.
+
+{
+    question: "21. A forensic psychologist would be most likely to study:",
+    options: [
+        "A. the accuracy of eyewitness memory",
+        "B. the impact of advertising on shopping behaviour",
+        "C. the effect of hormones on decision making",
+        "D. gender differences in learning styles"
+    ],
+    answer: 0,
+    englishExplanation: "Forensic psychologists apply psychological principles to legal issues. Studying the accuracy of eyewitness testimony is a classic forensic application because it directly impacts the criminal justice system and courtroom trials.",
+    amharicExplanation: "የፎረንሲክ ሳይኮሎጂስቶች የስነ-ልቦና እውቀትን ከህግ ጉዳዮች ጋር አብረው ያያይዛሉ። የምስክር ትውስታ ምን ያህል ትክክለኛ እንደሆነ ማጥናት በወንጀል ፍትህ ስርዓት እና በፍርድ ቤት ሂደቶች ውስጥ ወሳኝ ሚና አለው።"
+},
+
+{
+    question: "22. Which field of psychology would be most likely to study the influence of over-crowding on conformity?",
+    options: [
+        "A. personality",
+        "B. cognitive",
+        "C. clinical",
+        "D. social"
+    ],
+    answer: 3,
+    englishExplanation: "Social psychology focuses on how individuals are influenced by their social environment, interactions, and group pressures, such as how crowding affects conformity.",
+    amharicExplanation: "ማህበራዊ ሳይኮሎጂ (Social Psychology) ግለሰቦች በማህበራዊ አካባቢያቸው፣ በግንኙነቶቻቸው እና በቡድን ጫናዎች እንዴት እንደሚነኩ ያጠናል፤ መጨናነቅ በሰዎች ስምምነት (conformity) ላይ የሚኖረው ተጽዕኖ በዚህ ስር ይመደባል።"
+},
+
+{
+    question: "23. In experimental research, which of the following variables is controlled by the researcher?",
+    options: [
+        "A. Confounding",
+        "B. Experimental",
+        "C. Dependent",
+        "D. Independent"
+    ],
+    answer: 3,
+    englishExplanation: "The independent variable is the one manipulated or controlled by the researcher to observe its effect on the dependent variable.",
+    amharicExplanation: "በሙከራ ጥናት (experimental research) ውስጥ ነጻ ተለዋዋጭ (independent variable) በባለሙያው ወይም በባለጥናቱ የሚቀያየር ወይም ቁጥጥር የሚደረግበት ተለዋዋጭ ነው።"
+},
+
+{
+    question: "24. A professor wanted to learn more about the body image concerns of young teenage girls. She randomly selected 200 girls from local middle schools to complete her questionnaire. These girls were:",
+    options: [
+        "A. a random population.",
+        "B. an experimental group.",
+        "C. a representative sample.",
+        "D. the sampling frame."
+    ],
+    answer: 2,
+    englishExplanation: "A representative sample is a smaller subset of a population that accurately reflects the characteristics of the larger group.",
+    amharicExplanation: "ተወካይ ናሙና (representative sample) ማለት አጠቃላይ ህዝብን ወይም ማህበረሰብን በትክክል ሊወክል የሚችል አነስተኛ የናሙና ስብስብ ነው።"
+},
+
+{
+    question: "25. An unethical experimenter wants to test the relationship between discomfort and aggression. On a hot day, she turns off the air conditioning in one dorm and leaves it on in another, then has her research assistants count occurrences of verbal aggression in common areas of the buildings. Students in the air-conditioned dorm would be the _, and students in the overheated dorm would be the _.",
+    options: [
+        "A. representative sample; random sample",
+        "B. study population; sampling frame",
+        "C. control group; experimental group",
+        "D. independent sample; dependent sample"
+    ],
+    answer: 2,
+    englishExplanation: "The air-conditioned dorm acts as the control group under normal conditions, while the overheated dorm serves as the experimental group subjected to the manipulated discomfort condition.",
+    amharicExplanation: "ኤር ኮንዲሽነር ያለው ክፍል መቆጣጠሪያ ቡድን (control group) ሲሆን፣ የተሞቀው (overheated) ክፍል ደግሞ ሙከራው የሚደረግበት ቡድን (experimental group) ተብሎ ይጠራል።"
+},
+
+{
+    question: "26. To identify the most popular exhibits at a science museum, visitors were asked every day for six weeks to rate how much they enjoyed each exhibit. The data were analyzed to look for age and sex differences in exhibit preferences. This was an example of:",
+    options: [
+        "A. naturalistic observation.",
+        "B. survey research.",
+        "C. case study research",
+        "D. experimental research"
+    ],
+    answer: 1,
+    englishExplanation: "Survey research involves gathering data from a large number of people through questionnaires or ratings to study opinions, preferences, or behaviors.",
+    amharicExplanation: "የዳሰሳ ጥናት (survey research) ሰዎችን በሃሳባቸው፣ ምርጫዎቻቸው ወይም ባህሪያቸው ላይ መረጃዎችን በመጠይቆች ወይም ደረጃዎች (ratings) መሰብሰብን ያካትታል።"
+},
+
+{
+    question: "27. The branch of psychology that deals with the understanding and treating personal problems and correct abnormal behavior is:",
+    options: [
+        "A. Clinical Psychology",
+        "B. Educational Psychology",
+        "C. Development Psychology",
+        "D. Experimental Psychology"
+    ],
+    answer: 0,
+    englishExplanation: "Clinical psychology focuses on diagnosing, understanding, and treating mental, emotional, and behavioral disorders.",
+    amharicExplanation: "ክሊኒካል ሳይኮሎጂ (Clinical Psychology) የአእምሮ፣ የስሜት እና የባህሪ መታወክ ችግሮችን በመመርመር፣ በመረዳት እና በማከም ላይ ያተኮረ የሳይኮሎጂ ዘርፍ ነው።"
+},
+
+{
+    question: "28. The person who established the first psychological laboratory for research is:",
+    options: [
+        "A. Sigmund Freud",
+        "B. John B. Watson",
+        "C. Wilhelm Wundt",
+        "D. Max Wertheimer"
+    ],
+    answer: 2,
+    englishExplanation: "Wilhelm Wundt established the first psychological laboratory in Leipzig, Germany, in 1879, marking the formal beginning of psychology as a science.",
+    amharicExplanation: "ቪልሄልም ውንድት (Wilhelm Wundt) በፈረንጆቹ 1879 በጀርመን ላይፕዚግ ከተማ የመጀመሪያውን የስነ-ልቦና ምርምር ላብራቶሪ በማቋቋም ይታወቃል።"
+},
+
+{
+    question: "29. The school of thought in psychology that is concerned with the unconscious motives of behavior is:",
+    options: [
+        "A. Humanistic Psychology",
+        "B. Psychoanalysis",
+        "C. Behaviorism",
+        "D. Structuralism"
+    ],
+    answer: 1,
+    englishExplanation: "Psychoanalysis, founded by Sigmund Freud, focuses on understanding how unconscious desires, hidden motives, and unresolved conflicts influence human behavior.",
+    amharicExplanation: "ሳይኮአናሊሲስ (Psychoanalysis) በሲግመንድ ፍሮይድ የተመሰረተ ሲሆን፣ በንቃተ-ህሊና ውስጥ ያሉ የተደበቁ ፍላጎቶች እና ግጭቶች በባህሪያችን ላይ የሚፈጥሩትን ተጽዕኖ ያጠናል።"
+},
+
+{
+    question: "30. The branch of psychology that applies psychological principles in improving performance in the workplace is:",
+    options: [
+        "A. Health Psychology",
+        "B. Industrial/Organizational Psychology",
+        "C. Forensic Psychology",
+        "D. Sports Psychology"
+    ],
+    answer: 1,
+    englishExplanation: "Industrial/Organizational (I/O) Psychology focuses on applying psychological principles to workplace issues, such as improving employee performance, motivation, and job satisfaction.",
+    amharicExplanation: "ኢንዱስትሪያል/ኦርጋናይዜሽናል ሳይኮሎጂ (Industrial/Organizational Psychology) የስነ-ልቦና ህጎችን በመጠቀም በስራ ቦታዎች ላይ ቅልጥፍናን፣ ተነሳሽነትን እና የስራ አፈፃፀምን ለማሻሻል ይረዳል።"
+},
+
+{
+    question: "31. The branch of psychology that looks into the relationships between behavior and biological processes of the body is:",
+    options: [
+        "A. Developmental Psychology",
+        "B. Physiological Psychology",
+        "C. Social Psychology",
+        "D. Clinical Psychology"
+    ],
+    answer: 1,
+    englishExplanation: "Physiological psychology examines how biological processes, such as the brain, nervous system, and genetics, influence behavior.",
+    amharicExplanation: "ፊዚዮሎጂካል ሳይኮሎጂ (Physiological Psychology) የሰውነት ባዮሎጂያዊ ሂደቶች፣ ለምሳሌ አንጎል እና የነርቭ ስርዓት፣ በባህሪ ላይ ያላቸውን ተጽዕኖ ይመረምራል።"
+},
+
+{
+    question: "32. The school of thought in psychology that deals with the purpose of consciousness is:",
+    options: [
+        "A. Structuralism",
+        "B. Gestalt Psychology",
+        "C. Humanistic Psychology",
+        "D. Functionalism"
+    ],
+    answer: 3,
+    englishExplanation: "Functionalism focuses on the purpose of consciousness and how behaviors help individuals adapt to their environment.",
+    amharicExplanation: "ፈንክሽናሊዝም (Functionalism) የንቃተ-ህሊናን ዓላማ እና ሰዎች ከአካባቢያቸው ጋር እንዲላመዱ እንዴት እንደሚረዳቸው ያጠናል።"
+},
+
+{
+    question: "33. The school of thought in psychology that grew out of the works of Abraham Maslow and Carl Rogers is:",
+    options: [
+        "A. Humanistic Psychology",
+        "B. Structuralism",
+        "C. Behaviorism",
+        "D. Psychoanalysis"
+    ],
+    answer: 0,
+    englishExplanation: "Humanistic psychology, developed by figures like Abraham Maslow and Carl Rogers, emphasizes personal growth, self-actualization, and human potential.",
+    amharicExplanation: "ሁማኒስቲክ ሳይኮሎጂ (Humanistic Psychology) በአብራሃም ማዝሎው እና ካል ሮጀርስ የተሰራጨ ሲሆን በግለሰብ እራስን ማጎልበት እና እምቅ አቅምን ማዳበር ላይ ያተኩራል።"
+},
+
+{
+    question: "34. This school of psychology emphasizes human processes particularly the uniqueness of the individual, the validity of subjective experience, freedom of choice, and the tendency of each individual to strive to realize his or her potential.",
+    options: [
+        "A. Humanistic Psychology",
+        "B. Behaviorism",
+        "C. Psychoanalysis",
+        "D. Gestalt Psychology"
+    ],
+    answer: 0,
+    englishExplanation: "Humanistic psychology values subjective human experiences, free will, and the innate drive of individuals to achieve their full potential.",
+    amharicExplanation: "ሁማኒስቲክ ሳይኮሎጂ የሰውን ግለሰባዊ ልዩነት፣ የግል ልምዶችን ትክክለኛነት፣ የመምረጥ ነፃነት እና እያንዳንዱ ሰው አቅሙን ለመወጣት የሚያደርገውን ጥረት ያጎላል።"
+},
+
+{
+    question: "35. This field of psychology is concerned with changes that take place in people during their life span, as they grow from birth to old age.",
+    options: [
+        "A. Educational Psychology",
+        "B. Counseling Psychology",
+        "C. Developmental Psychology",
+        "D. Genetic Psychology"
+    ],
+    answer: 2,
+    englishExplanation: "Developmental psychology studies physical, cognitive, and social changes across a person's entire lifespan, from infancy to old age.",
+    amharicExplanation: "ዴቨሎፕመንታል ሳይኮሎጂ (Developmental Psychology) ሰዎች ከልጅነት እስከ እርጅና በህይወት ዘመናቸው ውስጥ የሚያልፉትን የስነ-ልቦና፣ የአካል እና የማህበራዊ እድገት ለውጦች ያጠናል።"
+},
+
+{
+    question: "36. Psychology is best defined as the study of:",
+    options: [
+        "A. mental health.",
+        "B. consciousness and intuition.",
+        "C. the mind and behavior.",
+        "D. learning and developmental delay.",
+        "E. all"
+    ],
+    answer: 2,
+    englishExplanation: "Psychology is formally defined as the scientific study of the mind, including mental processes, and behavior.",
+    amharicExplanation: "ሳይኮሎጂ በአጠቃላይ የሰውን አእምሮ (የውስጥ ሂደቶች) እና ባህሪ ሳይንሳዊ ጥናት ተብሎ ይገለጻል።"
+},
+
+{
+    question: "37. Which of the following approaches to psychology did Edward Titchener advocate in the late 1800s?",
+    options: [
+        "A. Humanistic psychology",
+        "B. Psychoanalysis",
+        "C. Functionalism",
+        "D. Structuralism"
+    ],
+    answer: 3,
+    englishExplanation: "Edward Titchener, a student of Wilhelm Wundt, developed Structuralism, which aimed to break down mental processes into their basic structural components through introspection.",
+    amharicExplanation: "ኤድዋርድ ቲችነር ስትራክቸራሊዝም (Structuralism) የተባለውን ትምህርት በማስተዋወቅ የአእምሮ ሂደቶችን ወደ መሰረታዊ ክፍሎቻቸው በመክፈል አጥንቷል።"
+},
+
+{
+    question: "38. A researcher is interested in exploring whether children's emotional intelligence is affected by the Kana TV show. For this purpose, children in Group A are allowed to watch Kana TV, and those in Group B are not allowed to watch. From the above experiment, which one is the independent variable?",
+    options: [
+        "A. Kana TV show",
+        "B. Children's emotional intelligence",
+        "C. Children not allowed to watch Kana",
+        "D. Children allowed to watch Kana"
+    ],
+    answer: 0,
+    englishExplanation: "The independent variable is the manipulated condition or treatment introduced by the researcher—in this case, exposure to the Kana TV show.",
+    amharicExplanation: "ነጻ ተለዋዋጭ (independent variable) በጥናቱ ውስጥ በባለሙያው የሚቀየረው ወይም የሚፈተነው ነገር ነው፤ በዚህ ምሳሌ የካና ቲቪ ፕሮግራም መታየት ወይም አለመታየት ነው።"
+},
+
+{
+    question: "39. From the above experiment, which one is the dependent variable?",
+    options: [
+        "A. Kana TV show",
+        "B. Children's emotional intelligence",
+        "C. Children not allowed to watch Kana",
+        "D. Children allowed to watch Kana"
+    ],
+    answer: 1,
+    englishExplanation: "The dependent variable is the measured outcome or response resulting from changes in the independent variable—here, children's emotional intelligence.",
+    amharicExplanation: "ጥገኛ ተለዋዋጭ (dependent variable) በነጻ ተለዋዋጭ መለወጥ ምክንያት የሚለካው ውጤት ነው፤ ይኸውም የልጆቹ የስሜት እውቀት (emotional intelligence) መለካት ነው።"
+},
+
+{
+    question: "40. From the above experiment, which one is the control group?",
+    options: [
+        "A. Children's emotional intelligence",
+        "B. Kana TV show",
+        "C. Children allowed to watch Kana",
+        "D. Children not allowed to watch Kana"
+    ],
+    answer: 3,
+    englishExplanation: "The control group is the group that does not receive the experimental treatment. In this experiment, it is the group of children who are not allowed to watch Kana TV, serving as a baseline for comparison.",
+    amharicExplanation: "መቆጣጠሪያ ቡድን (control group) ሙከራው የማይደረግበት ወይም የሙከራውን ተጽዕኖ የማይቀበል ቡድን ነው፤ በዚህ ምሳሌ የካና ቲቪ የማይመለከቱት ልጆች ናቸው።"
 },],
         3: [],
         4: [],
