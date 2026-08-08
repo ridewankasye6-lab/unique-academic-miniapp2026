@@ -1322,8 +1322,8 @@ const quizData = {
     ],
     answer: "you ought not to talk too much",
     explanation: {
-      en: '"Ought not to" advises against talking too much.',
-      am: '"Ought not to" ብዙ ማውራት እንዳይገባ ምክር ይሰጣል።'
+      englishexplanatiom: '"Ought not to" advises against talking too much.',
+      amharicexplanation: '"Ought not to" ብዙ ማውራት እንዳይገባ ምክር ይሰጣል።'
     }
   },
 
@@ -1340,9 +1340,7 @@ const quizData = {
     explanation: {
       englishexplanation : '"Had better not" gives strong advice against drinking coffee at night.',
       amharicexplnation: '"Had better not" ማታ ቡና እንዳይጠጣ ጠንካራ ምክር ይሰጣል።'
-    },Absolutely bro 😄 I got you now. You want 38–55 in exactly the same JavaScript-object format as 18–37, with question, options, answer index, English explanation, and Amharic explanation.
-
-{
+    },{
     question: "38. Which of the following modal verbs is most appropriate to express a strict obligation imposed by an external authority?",
     options: [
         "might",
