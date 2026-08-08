@@ -230,7 +230,214 @@ const quizData = {
 
     "psychology": {
 
-        1: [],
+        1: [{     question: "1. According to the law of closure, elements that are closer are grouped together.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "This statement describes the law of proximity, not closure. The law of proximity states that things close to one another appear to be grouped together.",
+    amharicExplanation: "ይህ አባባል የሚገልጸው የቅርበት ህግን (law of proximity) እንጂ የመዘጋት ህግን (law of closure) አይደለም። የቅርበት ህግ እርስ በርሳቸው የቀራረቡ ነገሮች በአንድ ላይ እንደተመደቡ ያሳያል።" },
+
+{     question: "2. One of the characteristics of sensation is its selective nature.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Selective nature or attention is a characteristic of perception, not sensation. Sensation is just the raw registration of stimuli by sensory receptors.",
+    amharicExplanation: "መራጭነት ወይም ትኩረት (selective nature) የፐርሴፕሽን (perception) ባህሪ እንጂ የሴንሴሽን አይደለም። ሴንሴሽን ማለት የስሜት ህዋሳት ማነቃቂያዎችን መቀበል ብቻ ነው።" },
+
+{     question: "3. Objects in motion tend to be perceived as moving together if they appear to move in the same direction.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "This refers to the Gestalt law of common fate, where objects moving in the same direction are perceived as a single group.",
+    amharicExplanation: "ይህ የሚመለከተው የጋራ ዕጣ ፈንታ ህግን (law of common fate) ሲሆን፣ በአንድ አቅጣጫ የሚንቀሳቀሱ ነገሮች አንድ ላይ እንደሆኑ ይታያሉ።" },
+
+{     question: "4. Sensory adaptation is being less sensitive to changing stimulation.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Sensory adaptation is becoming less sensitive to unchanging or constant stimulation, not changing stimulation. For example, getting used to a constant background noise or smell.",
+    amharicExplanation: "ሴንሴሽን አዳፕቴሽን ማለት በማይለወጥ (ቋሚ) ማነቃቂያ ላይ ስሜታዊነታችን እየቀነሰ መሄድ እንጂ የሚለወጥ ማነቃቂያ ላይ አይደለም።" },
+
+{     question: "5. Sensation is a cognitive process that arranges sensory stimuli into a coherent and semantically significant configuration?",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "This defines perception, not sensation. Sensation is purely the collection of raw sensory data, whereas perception involves organizing and interpreting that data.",
+    amharicExplanation: "ይህ የሚገልጸው ፐርሴፕሽንን (perception) እንጂ ሴንሴሽንን አይደለም። ሴንሴሽን ጥሬ መረጃዎችን መቀበል ብቻ ሲሆን ፐርሴፕሽን ግን መረጃውን ማደራጀትና መተርጎም ነው።" },
+
+{     question: "6. Figure-ground perception is the perceptual relationship between the object and the field.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Figure-ground organization is our tendency to visually divide our world into a main figure, which is the object of focus, and a background, which is the field.",
+    amharicExplanation: "ፊገር-ግራውንድ ፐርሴፕሽን በአንድ ነገር (ፊገር) እና በዙሪያው ባለው ዳራ (ግራውንድ) መካከል ያለውን ግንኙነት መለየት ነው።" },
+
+{     question: "7. Regarding sensation and perception, which of the following statements is TRUE?",
+    options: [
+        "Perception generally precedes sensation in our processing of a stimulus.",
+        "Sensation and perception are essentially synonyms.",
+        "Sensation involves the interpretation of a stimulus, whereas perception does not.",
+        "Sensation involves the activation of sense receptors; perception involves interpretation."
+    ],
+    answer: 3,
+    englishExplanation: "Sensation is the physical process of detecting stimuli through receptors, while perception is the psychological process of interpreting those signals.",
+    amharicExplanation: "ሴንሴሽን የስሜት ህዋሳትን ማነቃቃትን ሲያካትት ፐርሴፕሽን ደግሞ የተገኘውን መረጃ መተርጎምን ይጨምራል።" },
+
+{     question: "8. A snack manufacturer finds that it must increase the salt content of its chips by 8 percent in order for a sample of consumers to notice that the chips are saltier than they were before. This example most nearly illustrates the concept of a(n)...",
+    options: [
+        "absolute threshold",
+        "difference threshold",
+        "just noticeable difference",
+        "Both B and C",
+        "All"
+    ],
+    answer: 3,
+    englishExplanation: "The minimum change needed to notice a difference is called the difference threshold, which is also known as the just noticeable difference (JND). Thus, both B and C are correct.",
+    amharicExplanation: "በሁለት ማነቃቂያዎች መካከል ያለውን ትንሹን የልዩነት መጠን ማወቅ የሚችሉት በዲፈረንስ ትሬሽሆልድ (difference threshold) ወይም ጀስት ኖቲስኤብል ዲፈረንስ (JND) አማካኝነት ነው። ስለዚህ B እና C ትክክል ናቸው።" },
+
+{     question: "9. From the window of an office on a skyscraper’s 90th floor, taxis on the street look tiny. Of course, you know they’re not toy cars; you’re just really far up. This example illustrates the __ depth cue of __.",
+    options: [
+        "monocular; relative size",
+        "binocular; relative size",
+        "monocular; texture gradient",
+        "binocular; texture gradient"
+    ],
+    answer: 0,
+    englishExplanation: "Because smaller objects appear farther away and can be seen with one eye, this uses a monocular depth cue called relative size.",
+    amharicExplanation: "ትንንሽ ሆኖ የሚታየው ነገር ከሩቅ በመሆኑ እና በአንድ ዓይን ብቻ ሊታይ ስለሚችል ይህ የሞኖኩላር (monocular) ጥልቀት ማሳያ relative size ይባላል።" },
+
+{     question: "10. In a beginning drawing class, your instructor suggests that an illusion of depth may be created in a two-dimensional picture by including parallel lines that converge at a vanishing point. Your instructor is making reference to a cue known as:",
+    options: [
+        "linear perspective",
+        "linear parallax",
+        "relative size",
+        "texture gradient"
+    ],
+    answer: 0,
+    englishExplanation: "Linear perspective is a monocular cue where parallel lines appear to meet or converge as they stretch out into the distance.",
+    amharicExplanation: "ሊንየር ፐርስፔክቲቭ (linear perspective) ትይዩ መስመሮች ሩቅ ሲሄዱ በአንድ ነጥብ ላይ የሚቀራረቡ ወይም የሚገናኙ የሚመስሉበት የጥልቀት ማሳያ ዘዴ ነው።" },
+
+{     question: "11. Which of the following is NOT a monocular cue?",
+    options: [
+        "linear perspective",
+        "motion parallax",
+        "relative size",
+        "convergence"
+    ],
+    answer: 3,
+    englishExplanation: "Convergence is a binocular depth cue because it requires both eyes to move inward to focus on close objects. The others are monocular cues.",
+    amharicExplanation: "ኮንቨርጀንስ (convergence) የሁለት ዓይን (binocular) ጥልቀት ማሳያ ነው ምክንያቱም ቅርብ ያሉ ነገሮችን ለማየት ሁለቱ ዓይኖች ወደ ውስጥ መጠምዘዝ አለባቸው።" },
+
+{     question: "12. The binocular depth cue, derived from inward movement of the eyes as an object comes closer, is known as",
+    options: [
+        "Retinal disparity",
+        "Convergence",
+        "Accommodation",
+        "Linear perspective"
+    ],
+    answer: 1,
+    englishExplanation: "Convergence is the inward turning of our eyes when we focus on something close to us.",
+    amharicExplanation: "ኮንቨርጀንስ ማለት አንድ ነገር ወደ እኛ ሲጠጋ ሁለቱ ዓይኖቻችን ወደ ውስጥ የሚደረጉት እንቅስቃሴ ነው።" },
+
+{     question: "13. Human beings tend to supply missing information to incomplete objects and perceive a complete entity. According to Gestalt psychologists, this law of perceptual organization is referred to as__?",
+    options: [
+        "The law of proximity",
+        "The law of closure",
+        "The law of continuity",
+        "The law of similarity"
+    ],
+    answer: 1,
+    englishExplanation: "The law of closure explains our psychological tendency to mentally fill in the blanks and complete broken or incomplete shapes.",
+    amharicExplanation: "የዝግጅት ወይም የመዘጋት ህግ (law of closure) የተቆራረጡ ምስሎችን በአእምሯችን በማሟላት ሙሉ አድርገን እንድንገነዘብ የሚያደርገን ህግ ነው።" },
+
+{     question: "14. Consider what happens as you finish a conversation with a friend and she begins to walk away from you. As you watch her walk down the street, the image on your retina becomes smaller and smaller. Despite the very real change in the retinal image, you do not perceive her as getting smaller. This illustrates--------------",
+    options: [
+        "Shape constancy",
+        "Size constancy",
+        "Location constancy",
+        "Brightness constancy"
+    ],
+    answer: 1,
+    englishExplanation: "Size constancy is our ability to perceive an object as remaining the same actual size even though the image it casts on the retina changes with distance.",
+    amharicExplanation: "ሳይዝ ኮንስታንሲ (Size constancy) ማለት አንድ ነገር ቢራራቅና በሬቲናችን ላይ ያለው ምስል ቢቀነስም፣ የእቃው እውነተኛ መጠን ግን እንዳለ ሆኖ እንዲታሰበን የማድረግ አቅም ነው።" },
+
+{     question: "15. When you go by bus, telephone poles and trees fly by your retina, however because you know that your body is moving, you perceive the poles and trees as staying fixed. This can be a typical example for--------------",
+    options: [
+        "Color Constancy",
+        "Location Constancy",
+        "Brightness Constancy",
+        "Size Constancy"
+    ],
+    answer: 1,
+    englishExplanation: "Location constancy allows us to perceive stationary objects as remaining in a fixed location even though our own viewpoint and the retinal images are shifting.",
+    amharicExplanation: "ሎኬሽን ኮንስታንሲ (Location constancy) የሚንቀሳቀስ አካል ሆኖ ቋሚ የሆኑ ነገሮች (እንደ ዛፎች እና መብራት ምሰሶዎች) ቦታቸውን እንዳልለወጡ አድርገን እንድንገነዘብ ይረዳናል።" },
+
+{     question: "16. While traveling through the Midwest, you notice that you can see individual stalks of wheat near the road, but in the distance the wheat stalks blend together into a smooth blanket of yellow. This is an example of the monocular cue known as",
+    options: [
+        "Interposition",
+        "Aerial perspective",
+        "Texture gradient",
+        "Linear perspective"
+    ],
+    answer: 2,
+    englishExplanation: "Texture gradient occurs when fine details can be seen clearly up close, but become less distinct and blur together as they get further away.",
+    amharicExplanation: "ቴክስቸር ግሬዲየንት (Texture gradient) ቅርብ ያሉ ነገሮች በግልጽ ሲታዩ፣ ሩቅ ያሉ ነገሮች ግን ድብዝዝ ብለውና ተቀላቅለው የሚታዩበት የጥልቀት ማሳያ ነው።" },
+
+{     question: "17. If I am testing your absolute sound threshold, what percentage of the time must you hear the minimum stimulus in order for the absolute threshold to have been found?",
+    options: [
+        "30%",
+        "100%",
+        "25%",
+        "50%"
+    ],
+    answer: 3,
+    englishExplanation: "The absolute threshold is formally defined as the lowest intensity of a stimulus that a person can detect 50% of the time.",
+    amharicExplanation: "ፍጹም የመስማት ዕንታ (absolute threshold) ማለት አንድ ሰው ማነቃቂያውን በ50 በመቶ ጊዜ ውስጥ መለየት የሚችልበት ዝቅተኛው መጠን ነው።" },
+
+{     question: "18. I have just walked into a very smelly house. After a while, I do not notice the smell as bad or at all. What process makes this possible?",
+    options: [
+        "Sensory Deafness",
+        "Sensory Adaptation",
+        "Sensory Overload",
+        "Motor Fixing"
+    ],
+    answer: 1,
+    englishExplanation: "Sensory adaptation is the reduction in sensitivity to a constant stimulus over time, such as getting used to a strong odor.",
+    amharicExplanation: "ሴንሰሪ አዳፕቴሽን (Sensory adaptation) ቋሚ በሆነ ማነቃቂያ ላይ (ለምሳሌ መጥፎ ሽታ) ለረጅም ጊዜ ስንቆይ ስሜታዊነታችን እየቀነሰ ሲመጣ የሚፈጠር ሂደት ነው።" },
+
+{     question: "19. The difference threshold is:",
+    options: [
+        "The difference between the two stimuli.",
+        "The difference between two stimuli required for detection 50% of the time.",
+        "The difference between two stimuli required for detection 25% of the time.",
+        "There is no such term."
+    ],
+    answer: 1,
+    englishExplanation: "The difference threshold is the minimum amount of change needed to tell two stimuli apart, noticed 50% of the time.",
+    amharicExplanation: "የልዩነት ዕንታ (difference threshold) ማለት በሁለት ማነቃቂያዎች መካከል ያለውን ልዩነት በ50 በመቶ ጊዜ ውስጥ ለመለየት የሚያስፈልገው አነስተኛ ለውጥ ነው።" },
+
+{     question: "20. The process by which our brains organize and interpret sensory information, sorting it into useful information is:",
+    options: [
+        "Sensation",
+        "Perception",
+        "Subliminal",
+        "None of the above"
+    ],
+    answer: 1,
+    englishExplanation: "Perception is the higher-level cognitive process of organizing and giving meaning to raw sensory information.",
+    amharicExplanation: "ፐርሴፕሽን (Perception) አእምሯችን ጥሬ የስሜት መረጃዎችን አደራጅቶና ተርጉሞ ጠቃሚ ትርጉም የሚሰጥበት ሂደት ነው።" },],
         2: [],
         3: [],
         4: [],
