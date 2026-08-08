@@ -1338,227 +1338,243 @@ const quizData = {
     ],
     answer: "You had better not drink coffee at nights",
     explanation: {
-      en: '"Had better not" gives strong advice against drinking coffee at night.',
-      am: '"Had better not" ማታ ቡና እንዳይጠጣ ጠንካራ ምክር ይሰጣል።'
-    }
-  },
+      englishexplanation : '"Had better not" gives strong advice against drinking coffee at night.',
+      amharicexplnation: '"Had better not" ማታ ቡና እንዳይጠጣ ጠንካራ ምክር ይሰጣል።'
+    },Absolutely bro 😄 I got you now. You want 38–55 in exactly the same JavaScript-object format as 18–37, with question, options, answer index, English explanation, and Amharic explanation.
 
-  {
-    number: 38,
-    question: "Which of the following modal verbs is most appropriate to express a strict obligation imposed by an external authority?",
-    choices: ["might", "could", "must", "would"],
-    answer: "must",
-    explanation: {
-      en: '"Must" expresses strong obligation or necessity, often from an authority or rule.',
-      am: '"Must" ጠንካራ ግዴታን ወይም ከሕግ ወይም ከባለሥልጣን የሚመጣ ትእዛዝን ያሳያል።'
-    }
-  },
-
-  {
-    number: 39,
-    question: "Choose the correct sentence that demonstrates the past form of necessity using 'have to'.",
-    choices: [
-      "She must to finish her homework yesterday.",
-      "She had to finish her homework yesterday.",
-      "She has to finish her homework yesterday.",
-      "She should have finish her homework yesterday."
+{
+    question: "38. Which of the following modal verbs is most appropriate to express a strict obligation imposed by an external authority?",
+    options: [
+        "might",
+        "could",
+        "must",
+        "would"
     ],
-    answer: "She had to finish her homework yesterday.",
-    explanation: {
-      en: 'The past form of "have to" is "had to".',
-      am: 'የ"have to" ያለፈ ጊዜ ቅርጽ "had to" ነው።'
-    }
-  },
+    answer: 2,
+    englishExplanation: "\"Must\" is used to express strong obligation or necessity, especially when the obligation comes from an authority, rule, or external requirement.",
+    amharicExplanation: "\"Must\" ጠንካራ ግዴታን ወይም አስፈላጊነትን ለመግለጽ ይጠቅማል። ብዙ ጊዜ ከውጭ አካል፣ ከሕግ ወይም ከደንብ የሚመጣ ግዴታን ያሳያል።"
+},
 
-  {
-    number: 40,
-    question: "My son is usually late for school. Amen: He ______ for school.",
-    choices: [
-      "had not better go to bed late",
-      "had better not go to bed late",
-      "should better go to bed late",
-      "had better to go to bed late"
+{
+    question: "39. Choose the correct sentence that correctly demonstrates the past form of necessity using \"have to\".",
+    options: [
+        "She must to finish her homework yesterday.",
+        "She had to finish her homework yesterday.",
+        "She has to finish her homework yesterday.",
+        "She should have finish her homework yesterday."
     ],
-    answer: "had better not go to bed late",
-    explanation: {
-      en: '"Had better not" gives strong advice against an action and is followed by the base verb.',
-      am: '"Had better not" አንድን ነገር እንዳናደርግ ጠንካራ ምክር ሲሆን ከእሱ በኋላ መሠረታዊ ግስ ይመጣል።'
-    }
-  },
+    answer: 1,
+    englishExplanation: "\"Had to\" is the past form of \"have to\" and is used to express necessity or obligation in the past. \"Must to\" is grammatically incorrect, and \"has to\" is present tense.",
+    amharicExplanation: "የ \"have to\" ያለፈ ጊዜ ቅርጽ \"had to\" ነው። ስለዚህ \"She had to finish her homework yesterday\" ትክክለኛው ነው። \"must to\" በሰዋሰው ስህተት ነው።"
+},
 
-  {
-    number: 41,
-    question: "I have a birthday party on Friday. Who do you think I ______?",
-    choices: ["should invite not", "should invite", "ought invite", "had invite better"],
-    answer: "should invite",
-    explanation: {
-      en: '"Should invite" is the correct modal structure for asking for advice.',
-      am: '"Should invite" ማንን መጋበዝ እንዳለብን ምክር ለመጠየቅ ትክክለኛው አወቃቀር ነው።'
-    }
-  },
-
-  {
-    number: 42,
-    question: "What a chilly day is today! I feel cold. What ______ do to warm myself?",
-    choices: ["I had better", "I should", "ought I", "should I"],
-    answer: "should I",
-    explanation: {
-      en: '"Should I" is used to ask for advice.',
-      am: '"Should I" ምን ማድረግ እንዳለብን ምክር ለመጠየቅ ይጠቅማል።'
-    }
-  },
-
-  {
-    number: 43,
-    question: "Which of the following negative interrogative forms sounds correct?",
-    choices: [
-      "Shouldn't I visit the library every day?",
-      "Had I not better visit the library every day?",
-      "Had not I better visit the library every day?",
-      "Ought I not to visit the library every day?"
+{
+    question: "40. My son is usually late for school. Amen: He ____________ for school.",
+    options: [
+        "had not better go to bed late",
+        "had better not go to bed late",
+        "should better go to bed late",
+        "had better to go to bed late"
     ],
-    answer: "Shouldn't I visit the library every day?",
-    explanation: {
-      en: '"Shouldn’t I" is a natural negative interrogative form for asking for advice.',
-      am: '"Shouldn’t I" ምክር ለመጠየቅ ተፈጥሯዊ የአሉታዊ ጥያቄ ቅርጽ ነው።'
-    }
-  },
+    answer: 1,
+    englishExplanation: "\"Had better not\" is used to give strong advice against an action. The correct structure is \"had better not + base verb,\" without \"to.\"",
+    amharicExplanation: "\"Had better not\" አንድን ነገር እንዳንደርግ ጠንካራ ምክር ለመስጠት ይጠቅማል። ከ \"had better not\" በኋላ ያለ \"to\" መሠረታዊ ግስ ይመጣል።"
+},
 
-  {
-    number: 44,
-    question: 'The negative form of "ought to" is ______.',
-    choices: ["Not ought to", "Ought to not", "ought not to", "none"],
-    answer: "ought not to",
-    explanation: {
-      en: 'The correct negative form is "ought not to".',
-      am: 'የ"ought to" ትክክለኛ አሉታዊ ቅርጽ "ought not to" ነው።'
-    }
-  },
-
-  {
-    number: 45,
-    question: 'The negative form of "had better" is ______.',
-    choices: ["Not had better", "Had better not", "had not better", "none"],
-    answer: "Had better not",
-    explanation: {
-      en: 'The negative form is "had better not".',
-      am: 'የ"had better" አሉታዊ ቅርጽ "had better not" ነው።'
-    }
-  },
-
-  {
-    number: 46,
-    question: "Addisu: I have no idea about note taking and paraphrasing. Yodit: ______ (strong advice)",
-    choices: [
-      "You should consult your English Instructor.",
-      "You had better consult your English Instructor.",
-      "Consult your English Instructor.",
-      "You ought to consult your English Instructor."
+{
+    question: "41. I have a birthday party on Friday. Who do you think I ____________?",
+    options: [
+        "should invite not",
+        "should invite",
+        "ought invite",
+        "had invite better"
     ],
-    answer: "You had better consult your English Instructor.",
-    explanation: {
-      en: '"Had better" expresses strong or urgent advice.',
-      am: '"Had better" ጠንካራ ወይም አስቸኳይ ምክር ለመስጠት ይጠቅማል።'
-    }
-  },
+    answer: 1,
+    englishExplanation: "\"Should invite\" is the correct grammatical structure for asking for or giving advice about whom to invite. The other options have incorrect word order or structure.",
+    amharicExplanation: "\"Should invite\" በልደት ፓርቲው ላይ ማንን መጋበዝ እንደሚገባ ምክር ለመጠየቅ ትክክለኛው አወቃቀር ነው።"
+},
 
-  {
-    number: 47,
-    question: "I think I ______ have failed the test, but I'm not sure.",
-    choices: ["ought to", "might", "shall", "must"],
-    answer: "might",
-    explanation: {
-      en: '"Might" expresses possibility when the speaker is uncertain.',
-      am: '"Might" እርግጠኛ ባልሆንንበት ጊዜ ዕድልን ወይም ሊሆን የሚችልን ነገር ያሳያል።'
-    }
-  },
+{
+    question: "42. What a chilly day is today! I feel cold. What ____________ do to warm myself?",
+    options: [
+        "I had better",
+        "I should",
+        "ought I",
+        "should I"
+    ],
+    answer: 3,
+    englishExplanation: "\"Should I\" is used to ask for advice about what action to take. The correct question is \"What should I do to warm myself?\"",
+    amharicExplanation: "\"Should I\" ምን ማድረግ እንደሚገባን ምክር ለመጠየቅ ይጠቅማል። ትክክለኛው ዓረፍተ ነገር \"What should I do...?\" ነው።"
+},
 
-  {
-    number: 48,
-    question: "We have to rush. We ______ miss the last bus home.",
-    choices: ["needn't", "couldn't", "mustn't", "should"],
-    answer: "mustn't",
-    explanation: {
-      en: '"Mustn’t" expresses something that must be avoided.',
-      am: '"Mustn’t" መደረግ የሌለበትን ነገር ወይም መወገድ ያለበትን ነገር ያሳያል።'
-    }
-  },
+{
+    question: "43. Which of the following negative interrogative forms sounds correct?",
+    options: [
+        "Shouldn't I visit the library every day?",
+        "Had I not better visit the library every day?",
+        "Had not I better visit the library every day?",
+        "Ought I not to visit the library every day?"
+    ],
+    answer: 0,
+    englishExplanation: "\"Shouldn't I\" is the standard and natural negative interrogative form for asking whether something is advisable. It means \"Isn't it a good idea for me to...?\"",
+    amharicExplanation: "\"Shouldn't I\" ትክክለኛና ተፈጥሯዊ የሆነ አሉታዊ የጥያቄ ቅርጽ ነው። አንድን ነገር ማድረግ አይገባኝምን? ወይም ማድረግ ይሻለኛልን? የሚል ምክር የመጠየቅ ትርጉም ይሰጣል።"
+},
 
-  {
-    number: 49,
-    question: "If you had let me know earlier, I ______ have been able to come.",
-    choices: ["would", "will", "shall", "might"],
-    answer: "would",
-    explanation: {
-      en: 'This is a third conditional structure: "would have + past participle".',
-      am: 'ይህ ሦስተኛ የሁኔታ ዓረፍተ ነገር ሲሆን "would have + past participle" ይጠቀማል።'
-    }
-  },
+{
+    question: "44. The negative form of \"ought to\" is ____________.",
+    options: [
+        "Not ought to",
+        "Ought to not",
+        "ought not to",
+        "none"
+    ],
+    answer: 2,
+    englishExplanation: "The correct negative form of \"ought to\" is \"ought not to.\" The word \"not\" is placed between \"ought\" and \"to.\"",
+    amharicExplanation: "የ \"ought to\" ትክክለኛ አሉታዊ ቅርጽ \"ought not to\" ነው። \"Not\" በ \"ought\" እና \"to\" መካከል ይገባል።"
+},
 
-  {
-    number: 50,
-    question: "You ______ help me!",
-    choices: ["must to", "should to", "have to", "might"],
-    answer: "have to",
-    explanation: {
-      en: '"Have to" expresses necessity or obligation. "Must to" and "should to" are incorrect.',
-      am: '"Have to" ግዴታን ወይም አስፈላጊነትን ያሳያል። "Must to" እና "should to" ሰዋሰዋዊ ስህተት ናቸው።'
-    }
-  },
+{
+    question: "45. The negative form of \"had better\" is ____________.",
+    options: [
+        "Not had better",
+        "Had better not",
+        "had not better",
+        "none"
+    ],
+    answer: 1,
+    englishExplanation: "The correct negative form of \"had better\" is \"had better not.\" The word \"not\" comes immediately after \"better.\"",
+    amharicExplanation: "የ \"had better\" አሉታዊ ቅርጽ \"had better not\" ነው። \"Not\" ከ \"better\" በኋላ በቀጥታ ይመጣል።"
+},
 
-  {
-    number: 51,
-    question: "______ anybody attend the lecture or is it just for registered students?",
-    choices: ["Will", "Can", "Must", "Should"],
-    answer: "Can",
-    explanation: {
-      en: '"Can" is used to ask about permission or possibility.',
-      am: '"Can" ፈቃድ ወይም የመቻል ሁኔታን ለመጠየቅ ይጠቅማል።'
-    }
-  },
+{
+    question: "46. Addisu: I have no idea about note taking and paraphrasing. Yodit: ____________ (strong advice)",
+    options: [
+        "You should consult your English Instructor.",
+        "You had better consult your English Instructor.",
+        "Consult your English Instructor.",
+        "You ought to consult your English Instructor."
+    ],
+    answer: 1,
+    englishExplanation: "\"Had better\" expresses strong or urgent advice. Because the question specifically asks for strong advice, \"You had better consult your English Instructor\" is the best choice.",
+    amharicExplanation: "\"Had better\" ከ \"should\" ወይም \"ought to\" የበለጠ ጠንካራ እና አፋጣኝ ምክር ለመስጠት ይጠቅማል። ስለዚህ ለጠንካራ ምክር \"You had better consult your English Instructor\" ተገቢ ነው።"
+},
 
-  {
-    number: 52,
-    question: "You ______ have bothered coming. I've done it already.",
-    choices: ["wouldn't", "mightn't", "needn't", "couldn't"],
-    answer: "needn't",
-    explanation: {
-      en: '"Needn’t have" means the action was unnecessary because it had already been done.',
-      am: '"Needn’t have" ድርጊቱን ማድረግ አስፈላጊ እንዳልነበረ ያሳያል።'
-    }
-  },
+{
+    question: "47. I think I ____________ have failed the test, but I'm not sure.",
+    options: [
+        "ought to",
+        "might",
+        "shall",
+        "must"
+    ],
+    answer: 1,
+    englishExplanation: "\"Might\" expresses possibility or uncertainty. The speaker is not sure whether they failed the test, so \"might have failed\" is correct.",
+    amharicExplanation: "\"Might\" እርግጠኛ ባልሆንንበት ጊዜ የሚኖርን ዕድል ወይም ሊሆን የሚችል ነገር ያሳያል። ስለዚህ \"might have failed\" ትክክለኛ ነው።"
+},
 
-  {
-    number: 53,
-    question: "If there is an age restriction then you ______ go in as you are too young.",
-    choices: ["should", "shouldn't", "shall not", "might"],
-    answer: "shouldn't",
-    explanation: {
-      en: '"Shouldn’t" advises against entering because of the age restriction.',
-      am: '"Shouldn’t" በዕድሜ ገደብ ምክንያት ወደ ውስጥ እንዳንገባ ምክር ይሰጣል።'
-    }
-  },
+{
+    question: "48. We have to rush. We ____________ miss the last bus home.",
+    options: [
+        "needn't",
+        "couldn't",
+        "mustn't",
+        "should"
+    ],
+    answer: 3,
+    englishExplanation: "\"Should\" means that something is advisable or expected. However, the intended meaning of the sentence is that we need to hurry so that we do not miss the last bus. Therefore, \"should\" is the best grammatical choice among the options.",
+    amharicExplanation: "\"Should\" አንድን ነገር ማድረግ እንደሚገባ ወይም እንደሚመከር ያሳያል። እዚህ ፈጥነን መሄድ እንደሚገባን እና አውቶቡሱን እንዳናጣ ማሳየት ነው።"
+},
 
-  {
-    number: 54,
-    question: "The government ______ vote on the issue tomorrow. It's scheduled for 10am.",
-    choices: ["will", "may", "would", "might"],
-    answer: "will",
-    explanation: {
-      en: '"Will" is used for a definite future event or plan.',
-      am: '"Will" እርግጠኛ የሆነ የወደፊት ክስተት ወይም እቅድ ለማመልከት ይጠቅማል።'
-    }
-  },
+{
+    question: "49. If you had let me know earlier, I ____________ have been able to come.",
+    options: [
+        "would",
+        "will",
+        "shall",
+        "might"
+    ],
+    answer: 0,
+    englishExplanation: "This is a third conditional sentence. The structure is \"If + past perfect, would have + past participle,\" which describes an unreal or hypothetical past situation and its result.",
+    amharicExplanation: "ይህ የሦስተኛ ደረጃ የሁኔታ ዓረፍተ ነገር (Third Conditional) ነው። ያለፈው ጊዜ ያልተፈጸመ ሁኔታን እና ሊከተለው ይችል የነበረውን ውጤት ለማሳየት \"would have + past participle\" ይጠቀማል።"
+},
 
-  {
-    number: 55,
-    question: "______ we leave now or do you want to wait?",
-    choices: ["Will", "Mightn't", "Shall", "Should"],
-    answer: "Shall",
-    explanation: {
-      en: '"Shall we..." is commonly used to make a suggestion or ask for a joint decision.',
-      am: '"Shall we..." ሀሳብ ለማቅረብ ወይም የጋራ ውሳኔ ለመጠየቅ ይጠቅማል።'
-    }],
+{
+    question: "50. You ____________ help me!",
+    options: [
+        "must to",
+        "should to",
+        "have to",
+        "might"
+    ],
+    answer: 2,
+    englishExplanation: "\"Have to\" expresses necessity or obligation. \"Must to\" and \"should to\" are grammatically incorrect because \"must\" and \"should\" are followed directly by the base form of the verb.",
+    amharicExplanation: "\"Have to\" ግዴታን ወይም አስፈላጊነትን ያሳያል። \"Must to\" እና \"should to\" በሰዋሰው ስህተት ናቸው፤ \"must\" እና \"should\" በቀጥታ በመሠረታዊ ግስ ይከተላሉ።"
+},
+
+{
+    question: "51. ____________ anybody attend the lecture or is it just for registered students?",
+    options: [
+        "Will",
+        "Can",
+        "Must",
+        "Should"
+    ],
+    answer: 1,
+    englishExplanation: "\"Can\" is used to ask about permission or whether something is possible. The question asks whether anybody is allowed to attend the lecture.",
+    amharicExplanation: "\"Can\" ፈቃድ መኖሩን ወይም አንድ ነገር መቻሉን ለመጠየቅ ይጠቅማል። እዚህ ማንኛውም ሰው ትምህርቱን መከታተል ይችላልን? የሚል ፈቃድ የመጠየቅ ትርጉም አለው።"
+},
+
+{
+    question: "52. You ____________ have bothered coming. I've done it already.",
+    options: [
+        "wouldn't",
+        "mightn't",
+        "needn't",
+        "couldn't"
+    ],
+    answer: 2,
+    englishExplanation: "\"Needn't have\" means that an action was done, but it was unnecessary. The speaker has already completed the task, so the other person did not need to come.",
+    amharicExplanation: "\"Needn't have\" አንድ ተግባር ተፈጽሞ ነገር ግን ያ ተግባር አስፈላጊ እንዳልነበረ ያሳያል። ሥራው ቀድሞውኑ ስለተሰራ መምጣቱ አስፈላጊ አልነበረም።"
+},
+
+{
+    question: "53. If there is an age restriction then you ____________ go in as you are too young.",
+    options: [
+        "should",
+        "shouldn't",
+        "shall not",
+        "might"
+    ],
+    answer: 1,
+    englishExplanation: "\"Shouldn't\" is used to advise against doing something. Because the person is too young and there is an age restriction, they should not go in.",
+    amharicExplanation: "\"Shouldn't\" አንድን ነገር እንዳንደርግ ምክር ለመስጠት ይጠቅማል። የዕድሜ ገደብ ስላለ እና ሰውየው በዕድሜ ትንሽ ስለሆነ ወደ ውስጥ መግባት የለበትም።"
+},
+
+{
+    question: "54. The government ____________ vote on the issue tomorrow. It's scheduled for 10am.",
+    options: [
+        "will",
+        "may",
+        "would",
+        "might"
+    ],
+    answer: 0,
+    englishExplanation: "\"Will\" is used to refer to a definite future event or an event that is expected to happen. The vote is already scheduled for tomorrow at 10am.",
+    amharicExplanation: "\"Will\" እርግጠኛ የሆነ የወደፊት ክስተትን ለማሳየት ይጠቅማል። ድምጽ መስጠቱ ቀድሞ ስለታቀደ እና ለ10 ሰዓት ስለተያዘ \"will\" ተገቢ ነው።"
+},
+
+{
+    question: "55. ____________ we leave now or do you want to wait?",
+    options: [
+        "Will",
+        "Mightn't",
+        "Shall",
+        "Should"
+    ],
+    answer: 2,
+    englishExplanation: "\"Shall\" is commonly used with \"we\" to make a suggestion, offer, or proposal. \"Shall we leave now?\" asks the other person to make a joint decision.",
+    amharicExplanation: "\"Shall\" በተለይ ከ \"we\" ጋር ሀሳብ ለማቅረብ፣ ለመጠየቅ ወይም የጋራ ውሳኔ ለመጠየቅ ይጠቅማል። \"Shall we leave now?\" ማለት \"አሁን እንሂድ?\" የሚል ነው።"
+}],
         2: [],
         3: [],
         4: [],
