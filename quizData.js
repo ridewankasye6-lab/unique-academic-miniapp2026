@@ -1101,8 +1101,7 @@ const quizData = {
     answer: 1,
     englishExplanation: "Behaviorists like Watson and Skinner argued that internal mental events cannot be scientifically measured, so psychology should focus strictly on external, observable behavior.",
     amharicExplanation: "ቢሄቪየሪስቶች (Behaviorism) የአእምሮን ውስጣዊ ሁኔታዎች በዓላማ እና በግልጽ ማጥናት ስለማይቻል ሳይኮሎጂ በአስተዋጽኦ ሊለካ በሚችል ውጫዊ ባህሪ ላይ ብቻ ማተኮር አለበት ብለው ያምናሉ።"
-},Absolutely bro. Here are 21–40 in the exact format you showed, ready to copy directly into your JavaScript question array.
-
+},
 {
     question: "21. A forensic psychologist would be most likely to study:",
     options: [
