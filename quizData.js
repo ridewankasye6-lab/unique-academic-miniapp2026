@@ -437,8 +437,7 @@ const quizData = {
     ],
     answer: 1,
     englishExplanation: "Perception is the higher-level cognitive process of organizing and giving meaning to raw sensory information.",
-    amharicExplanation: "ፐርሴፕሽን (Perception) አእምሯችን ጥሬ የስሜት መረጃዎችን አደራጅቶና ተርጉሞ ጠቃሚ ትርጉም የሚሰጥበት ሂደት ነው።" },Absolutely bro 😎 Here are 21–40, all cleaned up and converted into the exact JavaScript-object format you want:
-
+    amharicExplanation: "ፐርሴፕሽን (Perception) አእምሯችን ጥሬ የስሜት መረጃዎችን አደራጅቶና ተርጉሞ ጠቃሚ ትርጉም የሚሰጥበት ሂደት ነው።"
 {
     question: "21. A binocular cue that allows for depth perception by comparing images from 2 eyeballs or retina is?",
     options: [
