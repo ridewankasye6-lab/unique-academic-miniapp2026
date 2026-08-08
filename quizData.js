@@ -1362,7 +1362,136 @@ const quizData = {
     answer: 3,
     englishExplanation: "The control group is the group that does not receive the experimental treatment. In this experiment, it is the group of children who are not allowed to watch Kana TV, serving as a baseline for comparison.",
     amharicExplanation: "መቆጣጠሪያ ቡድን (control group) ሙከራው የማይደረግበት ወይም የሙከራውን ተጽዕኖ የማይቀበል ቡድን ነው፤ በዚህ ምሳሌ የካና ቲቪ የማይመለከቱት ልጆች ናቸው።"
-},],
+},{
+    question: "41. From the above experiment, which one is the experimental group?",
+    options: [
+        "A. Kana TV show",
+        "B. Children's emotional intelligence",
+        "C. Children not allowed to watch Kana",
+        "D. Children allowed to watch Kana"
+    ],
+    answer: 3,
+    englishExplanation: "The experimental group is the group that receives the treatment or manipulation. In this experiment, the children who are allowed to watch the Kana TV show receive the experimental treatment.",
+    amharicExplanation: "የሙከራ ቡድን (experimental group) ማለት ሕክምናውን ወይም ለውጡን የሚቀበለው ቡድን ነው። በዚህ ሙከራ የካና ቴሌቪዥን ትርኢት እንዲመለከቱ የተፈቀደላቸው ልጆች የሙከራ ቡድኑ ናቸው።"
+},
+
+{
+    question: "42. Which of the following best captures the essence of psychology as a scientific discipline?",
+    options: [
+        "A. Psychology is the study of the mind and its influence on human behavior.",
+        "B. Psychology is the systematic study of behavior and mental processes using empirical methods.",
+        "C. Psychology is the analysis of individual and group behaviors in social contexts.",
+        "D. Psychology is the exploration of human consciousness and unconsciousness."
+    ],
+    answer: 1,
+    englishExplanation: "Psychology is fundamentally defined as the scientific and systematic study of behavior and mental processes using empirical methods, which rely on observable and measurable evidence.",
+    amharicExplanation: "ሳይኮሎጂ በሳይንሳዊ እና ስልታዊ መንገድ የሚታዩ ባህሪያትን እና ውስጣዊ አዕምሯዊ ሂደቶችን በተጨባጭ የምርምር መረጃዎች በመጠቀም ማጥናት ነው።"
+},
+
+{
+    question: "43. The term 'psychology' is derived from Greek words that mean:",
+    options: [
+        "A. Soul and logic",
+        "B. Mind and knowledge",
+        "C. Spirit and reason",
+        "D. Psyche and discourse"
+    ],
+    answer: 3,
+    englishExplanation: "The word 'psychology' comes from the Greek words 'psyche', meaning mind, soul, or spirit, and 'logos', meaning study, discourse, or knowledge.",
+    amharicExplanation: "'ሳይኮሎጂ' የሚለው ቃል ከግሪክ ቃላት 'psyche' እና 'logos' የመጣ ነው። 'Psyche' ማለት አዕምሮ፣ ነፍስ ወይም መንፈስ ሲሆን 'logos' ደግሞ ጥናት፣ ትንታኔ ወይም ዲስኮርስ ማለት ነው።"
+},
+
+{
+    question: "44. Which of the following is NOT an example of a covert behavior?",
+    options: [
+        "A. Daydreaming about a vacation",
+        "B. Solving a math problem in your head",
+        "C. Writing an essay",
+        "D. Feeling nervous before an exam"
+    ],
+    answer: 2,
+    englishExplanation: "Covert behaviors are internal behaviors that are hidden and cannot be directly observed by others, such as thinking and feeling. Writing an essay is an overt behavior because it is a physical action that can be directly observed.",
+    amharicExplanation: "ስውር ባህሪያት (covert behaviors) በውጭ የማይታዩ እና በውስጥ የሚከናወኑ ሂደቶች ናቸው፣ ለምሳሌ ማሰብ እና መሰማት። ድርሰት መጻፍ ግን በውጭ የሚታይ እና በቀጥታ ሊታዘብ የሚችል የአካል ባህሪ (overt behavior) ነው።"
+},
+
+{
+    question: "45. In what way does psychology differ fundamentally from sociology and anthropology?",
+    options: [
+        "A. Psychology focuses on the biological aspects of behavior.",
+        "B. Psychology examines individual behavior rather than group behavior.",
+        "C. Psychology uses qualitative methods exclusively.",
+        "D. Psychology studies cultural influences on behavior."
+    ],
+    answer: 1,
+    englishExplanation: "Psychology primarily focuses on the behavior and mental processes of individuals, while sociology and anthropology more often emphasize groups, societies, and cultures. However, psychology can also study groups and social influences.",
+    amharicExplanation: "ሳይኮሎጂ በዋነኝነት በግለሰብ ባህሪ እና አዕምሯዊ ሂደቶች ላይ ያተኩራል። ሶሻሎጂ እና አንትሮፖሎጂ ግን በብዙ ጊዜ ቡድኖችን፣ ማህበረሰቦችን እና ባህሎችን ያጠናሉ። ሆኖም ሳይኮሎጂ የቡድን ባህሪንና ማህበራዊ ተጽዕኖዎችንም ሊያጠና ይችላል።"
+},
+
+{
+    question: "46. Which of the following best describes the scientific method used in psychology?",
+    options: [
+        "A. Formulating hypotheses based on philosophical reasoning.",
+        "B. Collecting and analyzing empirical data to test hypotheses.",
+        "C. Observing behaviors without forming any hypotheses.",
+        "D. Using introspection to understand mental processes."
+    ],
+    answer: 1,
+    englishExplanation: "The scientific method relies on collecting and analyzing empirical, measurable evidence through systematic observation and experimentation to test research hypotheses.",
+    amharicExplanation: "ሳይንሳዊ ዘዴ የሚባለው ግምቶችን (hypotheses) ለመፈተሽ በተጨባጭ እና ሊለካ በሚችል መረጃ (empirical data) ላይ በመመስረት ምርምርን በስልታዊ መንገድ ማካሄድ ነው።"
+},
+
+{
+    question: "47. Why is psychology considered a unique field among the behavioral sciences?",
+    options: [
+        "A. It integrates both biological and social perspectives to understand behavior.",
+        "B. It exclusively studies the influence of culture on behavior.",
+        "C. It relies solely on qualitative research methods.",
+        "D. It focuses only on the observable aspects of behavior."
+    ],
+    answer: 0,
+    englishExplanation: "Psychology is unique because it integrates biological, cognitive, and social perspectives to understand behavior and mental processes, considering both internal and external influences.",
+    amharicExplanation: "ሳይኮሎጂ ልዩ የሆነበት ምክንያት የሰውን ባህሪ እና አዕምሯዊ ሂደቶች ለመረዳት የባዮሎጂ፣ የአዕምሮ እና የማህበራዊ አመለካከቶችን አቀናጅቶ ስለሚጠቀም ነው።"
+},
+
+{
+    question: "48. Which of the following is NOT one of the four primary goals of psychology?",
+    options: [
+        "A. Description",
+        "B. Explanation",
+        "C. Prediction",
+        "D. Manipulation",
+        "E. None"
+    ],
+    answer: 3,
+    englishExplanation: "The four primary goals of psychology are description, explanation, prediction, and control or change of behavior. 'Manipulation' is not normally listed as one of the four primary goals.",
+    amharicExplanation: "የሳይኮሎጂ አራቱ ዋና ግቦች መግለጽ (description)፣ ማብራራት (explanation)፣ መተንበይ (prediction) እና ባህሪን መቆጣጠር ወይም መቀየር (control/change) ናቸው። 'Manipulation' በተለምዶ ከአራቱ ዋና ግቦች ውስጥ አይገባም።"
+},
+
+{
+    question: "49. Why is the goal of 'description' important in psychology?",
+    options: [
+        "A. It helps in understanding the underlying causes of behavior.",
+        "B. It allows psychologists to predict future behaviors.",
+        "C. It involves modifying undesirable behaviors.",
+        "D. It provides a detailed account of behaviors and mental processes."
+    ],
+    answer: 3,
+    englishExplanation: "Description involves carefully observing and recording behavior and mental processes. It provides a detailed and factual account of what is happening before psychologists attempt to explain, predict, or control it.",
+    amharicExplanation: "መግለጽ (description) ማለት ባህሪ ወይም አዕምሯዊ ሂደት ምን እንደሚመስል በጥንቃቄ በመመልከትና በመመዝገብ ዝርዝር እና ተጨባጭ መረጃ መስጠት ነው። ይህም ሌሎች ግቦችን ከመተግበራቸው በፊት ምን እየተፈጠረ እንዳለ ለመረዳት ይረዳል።"
+},
+
+{
+    question: "50. Which goal of psychology involves understanding the causes of behavior?",
+    options: [
+        "A. Description",
+        "B. Explanation",
+        "C. Prediction",
+        "D. Control"
+    ],
+    answer: 1,
+    englishExplanation: "The goal of explanation goes beyond describing what happened. It seeks to understand why the behavior occurred by identifying its underlying causes.",
+    amharicExplanation: "የማብራራት (explanation) ግብ ባህሪው ምን እንደሆነ ከመግለጽ በላይ ለምን እንደተከሰተ ለመረዳት የባህሪውን ዋና ምክንያቶች መለየት ነው።"
+}],
         3: [],
         4: [],
         5: []
