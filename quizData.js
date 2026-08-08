@@ -220,7 +220,258 @@ const quizData = {
 
     "logic": {
 
-        1: [],
+        1: [{
+    question: "1. To philosophize is merely associated with reading and knowing philosophy; with limited skills of argumentation to be advanced?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Philosophizing is an active and critical process of thinking, questioning, and reasoning. It is not merely reading or memorizing what other philosophers have thought.",
+    amharicExplanation: "ፈላስፋ መሆን ማለት የሌሎችን ሐሳብ ማንበብ እና ማወቅ ብቻ ሳይሆን፣ ጥልቅ የሆነ የማመዛዘን እና የመከራከር ክህሎትን የሚጠይቅ ገባሪ (active) ተግባር ነው።"
+},
+
+{
+    question: "2. The formal sense of philosophy is understood as a set of views about life and the universe which are often held uncritically?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Views about life and the universe that are held uncritically belong to the informal or popular sense of philosophy. The formal sense requires deep and critical reflection.",
+    amharicExplanation: "ያለ ምንም ጥያቄና ትችት (uncritically) በሕይወት እና በአጽናፈ ዓለም ላይ የሚኖረን አመለካከት መደበኛ ያልሆነ (informal) የፊልሶፍ አረዳድ ሲሆን፣ መደበኛው (formal) ግን ጥብቅ ትችትን እና ጥልቅ ማመዛዘንን ይጠይቃል።"
+},
+
+{
+    question: "3. Rationality, critiques and disagreement are among the features of philosophy?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Philosophy relies on rationality, critical evaluation of arguments, and the examination of different viewpoints. Therefore, rationality, critique, and disagreement are important features of philosophy.",
+    amharicExplanation: "ፍልስፍና በምክንያታዊነት (rationality)፣ በነቀፌታ ወይም ትችት (critique) እና በተለያዩ አመለካከቶች አለመስማማት (disagreement) ላይ የተመሠረተ ነው።"
+},
+
+{
+    question: "4. The critical task of philosophy is providing a defensive answer to certain questions/problems?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "The critical task of philosophy is to analyze, question, and evaluate beliefs and arguments rather than simply providing defensive answers to questions or problems.",
+    amharicExplanation: "የፊልሶፍ ዋና የትችት ተግባር ጠባቂ ወይም defensive መልስ መስጠት ሳይሆን፣ ሐሳቦችን መፈተሽ፣ መጠየቅ እና መተቸት ነው።"
+},
+
+{
+    question: "5. Philosophy and religion vary in that the earlier analyzes life's issues on a logical basis, whilst the latter examines life's questions based on a supernatural deity?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Philosophy generally examines questions about life, reality, and existence through reason and logical argument, while religion commonly relies on faith, revelation, and beliefs concerning the supernatural or divine.",
+    amharicExplanation: "ፍልስፍና የሕይወትን ጉዳዮች በምክንያት እና በሎጂክ ሲመረምር፣ ሃይማኖት ደግሞ በእምነት፣ በመገለጥ እና ከተፈጥሮ በላይ በሆነ መለኮታዊ እምነት ላይ ይመሠረታል።"
+},
+
+{
+    question: "6. Intuition as a source of human knowledge deals with direct awareness of knowledge that is not derived from conscious reasoning?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Intuition provides immediate awareness or insight without requiring conscious, step-by-step logical reasoning or deduction.",
+    amharicExplanation: "ውስጣዊ ስሜት (Intuition) የምንለው ያለ ረጅም እና የተከታታይ ሎጂካዊ ማመዛዘን በቀጥታ የሚመጣን እውቀት ወይም ግንዛቤ መረዳት ነው።"
+},
+
+{
+    question: "7. The field of philosophy that studies knowledge is cosmology?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Epistemology is the branch of philosophy that studies knowledge, including its nature, sources, limits, and validity. Cosmology studies the origin, structure, and nature of the universe.",
+    amharicExplanation: "እውቀትን የሚያጠናው የፊልስፍና ዘርፍ ኤፒስቲሞሎጂ (Epistemology) ይባላል። ኮስሞሎጂ (Cosmology) ግን የአጽናፈ ዓለምን አፈጣጠር፣ አወቃቀር እና ተፈጥሮ ያጠናል።"
+},
+
+{
+    question: "8. Metaphysics is a branch of philosophy, which studies reality and existence?",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Metaphysics is the branch of philosophy that examines the fundamental nature of reality, being, existence, and what ultimately exists.",
+    amharicExplanation: "ሜታፊዚክስ (Metaphysics) የእውነትን ተፈጥሮ፣ ሕልውናን እና መኖርን የሚያጠና የፊልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "9. Identify the wrong statement about the basic features of philosophy and philosophers?",
+    options: [
+        "A. To philosophize is merely to read and know philosophy and the thought of philosophers.",
+        "B. A genuine philosophical attitude is searching the truth, open-minded, tolerant and willing to look at all sides of an issue without prejudice.",
+        "C. Philosophers are reflective, critical and they take a second look at the material provided by common sense.",
+        "D. Philosophy is a set of views and beliefs about life and the universe.",
+        "E. All except A"
+    ],
+    answer: 0,
+    englishExplanation: "The statement that philosophizing is merely reading and knowing philosophy is wrong. Philosophizing requires active reflection, critical thinking, questioning, reasoning, and evaluation of ideas.",
+    amharicExplanation: "ፍልስፍናን ማንበብ እና ማወቅ ብቻ ፈላስፋ አያደርግም። ፍልስፍና ንቁ ማሰብን፣ መጠየቅን፣ ማመዛዘንን እና ሐሳቦችን በትችት መመርመርን ይጠይቃል።"
+},
+
+{
+    question: "10. All are the basic features of philosophy except:",
+    options: [
+        "A. It is a set of views or beliefs about life and the universe.",
+        "B. It is a rational attempt to look at the world as a whole.",
+        "C. It is the process of trying to give correct answer for all questions.",
+        "D. It is a process of reflecting and criticizing our most deeply held beliefs.",
+        "E. None"
+    ],
+    answer: 2,
+    englishExplanation: "Philosophy does not claim to provide a final and absolutely correct answer to every question. Instead, it encourages questioning, rational reflection, critical analysis, and examination of deeply held beliefs.",
+    amharicExplanation: "ፍልስፍና ለሁሉም ጥያቄዎች ትክክለኛውን የመጨረሻ መልስ ለመስጠት ብቻ የሚሞክር አይደለም። ይልቁንም መጠየቅን፣ በምክንያት ማሰብን እና ጥልቅ እምነቶችን በትችት መመርመርን ያበረታታል።"
+},
+
+{
+    question: "11. Which one of the following is not true about Philosophy?",
+    options: [
+        "A. It is a set of views or beliefs about life and the universe.",
+        "B. It is irrational attempt to look at the world as a whole.",
+        "C. It is a process of reflecting and criticizing on our conceptions and beliefs.",
+        "D. It clarifies the meaning and use of terms in science and everyday affairs of life.",
+        "E. All"
+    ],
+    answer: 1,
+    englishExplanation: "Philosophy is a rational attempt to understand the world as a whole. Therefore, describing philosophy as an irrational attempt is incorrect.",
+    amharicExplanation: "ፍልስፍና ዓለምን በአጠቃላይ ለመረዳት የሚደረግ ምክንያታዊ (rational) ጥረት ነው። ስለዚህ ኢ-ምክንያታዊ (irrational) ጥረት ነው ማለት ትክክል አይደለም።"
+},
+
+{
+    question: "12. Identify the wrong idea in relation to philosophy:",
+    options: [
+        "A. It is a particular field.",
+        "B. It is evolutionary.",
+        "C. It inquires deepest problems.",
+        "D. It is an activity.",
+        "E. None"
+    ],
+    answer: 0,
+    englishExplanation: "Philosophy is not limited to one particular narrow field. It is a broad intellectual activity that examines fundamental questions about reality, knowledge, values, reasoning, and human existence.",
+    amharicExplanation: "ፍልስፍና የተወሰነና የጠበበ የጥናት መስክ (particular field) ብቻ አይደለም። ስለ እውነታ፣ እውቀት፣ እሴቶች፣ ማመዛዘን እና ሰው ሕልውና ያሉ መሠረታዊ ጥያቄዎችን የሚመረምር ሰፊ እንቅስቃሴ ነው።"
+},
+
+{
+    question: "13. Philosophy is relevant for all of the following, except:",
+    options: [
+        "A. Creative and Critical Thinker",
+        "B. Flexibility and Open-Mindedness",
+        "C. Moral-worthy and well-thought",
+        "D. To rely on the ideas of others",
+        "E. None"
+    ],
+    answer: 3,
+    englishExplanation: "Philosophy encourages independent, creative, and critical thinking. It does not encourage people to blindly rely on the ideas of others without examining them.",
+    amharicExplanation: "ፍልስፍና ራስን ችሎ ማሰብን፣ ፈጠራን እና ትችታዊ አስተሳሰብን ያበረታታል። የሌሎችን ሐሳብ ሳንመረምር በዓይነ ስውር መቀበልን አያበረታታም።"
+},
+
+{
+    question: "14. A branch of philosophy which studies about the nature, scope, meaning, source, validity and possibility of knowledge is called:",
+    options: [
+        "A. Metaphysics",
+        "B. Axiology",
+        "C. Epistemology",
+        "D. Logic",
+        "E. None"
+    ],
+    answer: 2,
+    englishExplanation: "Epistemology is the branch of philosophy that studies knowledge, including its nature, sources, scope, limits, meaning, and validity.",
+    amharicExplanation: "ስለ እውቀት ተፈጥሮ፣ ምንጭ፣ ወሰን፣ ትርጉም፣ ትክክለኛነት እና የመኖር ዕድል የሚያጠናው የፊልስፍና ዘርፍ ኤፒስቲሞሎጂ (Epistemology) ይባላል።"
+},
+
+{
+    question: "15. Which one of the following is not a question of Metaphysics?",
+    options: [
+        "A. What are the attributes of God?",
+        "B. Did the universe come by accident?",
+        "C. Is beauty objective or subjective?",
+        "D. Is reality composed of one element?"
+    ],
+    answer: 2,
+    englishExplanation: "The question of whether beauty is objective or subjective belongs primarily to aesthetics, a branch of axiology. Metaphysics instead deals with questions about reality, existence, being, and ultimate reality.",
+    amharicExplanation: "ውበት ተጨባጭ (objective) ነው ወይስ ግላዊ (subjective)? የሚለው ጥያቄ በዋነኝነት የአክሲዮሎጂ (Axiology) የውበት ጥናት የሆነው ኤስቴቲክስ (Aesthetics) ውስጥ ይመደባል። ሜታፊዚክስ ግን ስለ እውነታ፣ ሕልውና እና መኖር ይመረምራል።"
+},
+
+{
+    question: "16. The science that deals with the philosophical study of moral principles, values, codes, and rules, which may be used as standards for determining what kind of human conduct/action is said to be good or bad is:",
+    options: [
+        "A. Social philosophy",
+        "B. Moral Philosophy",
+        "C. Logic",
+        "D. Epistemology"
+    ],
+    answer: 1,
+    englishExplanation: "Moral philosophy, also called ethics, studies moral principles, values, and standards used to evaluate human conduct as right or wrong and good or bad.",
+    amharicExplanation: "የሰውን ሥነ-ምግባር፣ እሴቶች፣ ደንቦች እና መርሆች በማጥናት የሰው ድርጊት ጥሩ ወይም መጥፎ፣ ትክክል ወይም ስህተት መሆኑን የሚመረምረው Moral Philosophy ወይም Ethics ነው።"
+},
+
+{
+    question: "17. One of the following is an aspect of epistemology that claimed religious books and prophets are the sources of knowledge?",
+    options: [
+        "A. Rationalism",
+        "B. Revelation",
+        "C. Intuition",
+        "D. Authority",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Revelation is a source of knowledge understood as knowledge received through divine communication, religious scriptures, or prophets.",
+    amharicExplanation: "በመጽሐፍ ቅዱሳት፣ በነብያት እና በመለኮታዊ መገለጥ በኩል የሚገኝ እውቀት መገለጥ (Revelation) ይባላል።"
+},
+
+{
+    question: "18. Identify the incorrect correlation:",
+    options: [
+        "A. Anthropology ----) nature of human beings",
+        "B. Cosmology ------) origin of universe",
+        "C. Theology ------) nature of God",
+        "D. Ontology ------) nature of existence",
+        "E. None",
+        "F. All"
+    ],
+    answer: 4,
+    englishExplanation: "All the listed pairs are correctly matched. Anthropology studies human beings, cosmology studies the universe and its origin, theology studies God, and ontology studies the nature of being and existence. Therefore, there is no incorrect correlation.",
+    amharicExplanation: "ሁሉም የተዘረዘሩት ጥንዶች ትክክለኛ ትስስር አላቸው። Anthropology የሰውን ተፈጥሮ፣ Cosmology የአጽናፈ ዓለምን አመጣጥ፣ Theology የእግዚአብሔርን ተፈጥሮ እና Ontology የሕልውናን ተፈጥሮ ያጠናሉ። ስለዚህ የተሳሳተ ትስስር የለም (None)።"
+},
+
+{
+    question: "19. Which one of the following is correctly matched?",
+    options: [
+        "A. Aesthetics ---) Reasoning",
+        "B. Logic ---) Reasoning",
+        "C. Ethics ---) Beauty",
+        "D. Aesthetics ----) Moral standards"
+    ],
+    answer: 1,
+    englishExplanation: "Logic is the branch of philosophy concerned with correct reasoning, argumentation, and the principles used to distinguish valid reasoning from invalid reasoning.",
+    amharicExplanation: "ሎጂክ (Logic) ትክክለኛ ማመዛዘንን፣ ክርክርን እና ትክክለኛ ከሆነ ማመዛዘን ስህተት ከሆነው ማመዛዘን ለመለየት የሚረዱ መርሆችን የሚያጠና የፊልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "20. A branch of philosophy that studies about value is?",
+    options: [
+        "A. Axiology",
+        "B. Metaphysics",
+        "C. Epistemology",
+        "D. Logic"
+    ],
+    answer: 0,
+    englishExplanation: "Axiology is the branch of philosophy that studies value or worth. It includes areas such as ethics, which studies moral values, and aesthetics, which studies beauty and artistic value.",
+    amharicExplanation: "ዋጋዎችን ወይም እሴቶችን (values/worth) የሚያጠናው የፊልስፍና ዘርፍ አክሲዮሎጂ (Axiology) ይባላል። እሱም Ethics የሥነ-ምግባር እሴቶችን እና Aesthetics የውበት እና የጥበብ እሴቶችን ያጠናል።"
+},],
         2: [],
         3: [],
         4: [],
