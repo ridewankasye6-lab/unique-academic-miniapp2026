@@ -850,7 +850,258 @@ const quizData = {
     englishExplanation: "The absolute threshold is the minimum stimulation needed to detect a particular stimulus 50 percent of the time, such as hearing a faint watch tick 20 feet away in total quiet.",
     amharicExplanation: "'Absolute threshold' አንድ ማነቃቂያ በ50 በመቶ ዕድል ሊታወቅ የሚችልበት ዝቅተኛው የማነቃቂያ መጠን ነው። ለምሳሌ፡- ፍጹም ዝምታ ባለበት ክፍል ውስጥ የሰዓት መቃጠል ከ20 ጫማ ርቀት ላይ መስማት።"
 }],
-        2: [],
+        2: [{
+    question: "1. As a goal of psychology, prediction involves anticipating the consequence of behavior.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Anticipating the future actions or consequences of behavior is the core definition of prediction as one of the primary goals of psychology.",
+    amharicExplanation: "በሳይኮሎጂ ግቦች ውስጥ ትንበያ (prediction) ማለት አንድ አካል በሚያደርገው ድርጊት ወይም በሚያሳየው ባህሪ ወደፊት ሊከሰት የሚችለውን ውጤት መገመት ማለት ነው።"
+},
+
+{
+    question: "2. Structuralists believe that it is possible to analyze psychological events into pieces.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Structuralism focuses on breaking down mental processes and experiences into basic components or structures, such as sensations, images, and feelings.",
+    amharicExplanation: "ስትራክቸራሊስቶች (Structuralists) እንደሚያምኑት የአእምሮ ሂደቶችን እና ተሞክሮዎችን ወደ መሰረታዊ ክፍሎች (እንደ ስሜት፣ ምስሎች እና ሀሳቦች) በመከፋፈል መተንተን ይቻላል።"
+},
+
+{
+    question: "3. The higher the correlation coefficient, the stronger the relationship would be.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "A correlation coefficient closer to +1.00 or -1.00 indicates a stronger relationship between the variables, regardless of the sign.",
+    amharicExplanation: "የኮሪሌሽን ኮፊሸንቱ (correlation coefficient) ቁጥር ሲጨምር ወይም ወደ 1 ወይም -1 ሲጠጋ በንብረቶቹ/በተለዋዋጮቹ መካከል ያለው ዝምድና ወይም ግንኙነት ጠንካራ መሆኑን ያሳያል።"
+},
+
+{
+    question: "4. A researcher who wants to establish evidence for a cause-effect relationship between variables may use correlational research.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "While correlation shows relationships and strength, it does not prove causation; an experimental design is required to establish cause and effect.",
+    amharicExplanation: "ኮሪሌሽን በሰዎች/ነገሮች መካከል ግንኙነት መኖሩን እንጂ የምክንያት እና ውጤት (cause-effect) ግንኙነትን በርግጠኛነት አያረጋግጥም። የምክንያት እና ውጤት ግንኙነት ለማረጋገጥ ሙከራ (experiment) ያስፈልጋል።"
+},
+
+{
+    question: "5. Counseling psychology is concerned with helping individuals with severe psychological problems.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Counseling psychology deals with individuals experiencing milder, everyday personal or emotional problems, whereas clinical psychology typically handles more severe disorders.",
+    amharicExplanation: "የማማከር ሳይኮሎጂ (Counseling psychology) ትኩረት ቀላል እና የዕለት ተዕለት የግል ወይም ማህበራዊ ችግሮች እያጋጠሟቸው ያሉ ሰዎችን መርዳት ሲሆን፣ ከባድ የስነ-ልቦና ችግሮች የሚታከሙት በክሊኒካል ሳይኮሎጂስቶች ነው።"
+},
+
+{
+    question: "6. According to Behaviorists, all behavior can be explained by internal forces.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Behaviorists focus strictly on observable, measurable behavior driven by external environmental stimuli rather than internal mental processes.",
+    amharicExplanation: "ቢሄቪየሪስቶች (Behaviorists) ባህሪ የሚወሰነው በውጫዊ አካባቢያዊ ሁኔታዎች እንጂ በውስጣዊ የአእምሮ ሂደቶች አይደለም ብለው ስለሚያምኑ ሀሳቡ የተሳሳተ ነው።"
+},
+
+{
+    question: "7. Seble is a chemist, she wanted to analyze and understand water (H2O) in such a way that by separately examining those chemical elements. She found that water is made up of two hydrogen atoms and one oxygen atom. Which of the following Psychologist would follow the same approach as Seble to understand human behavior or internal mental processes?",
+    options: [
+        "A. Wundt",
+        "B. Watson",
+        "C. Freud",
+        "D. James",
+        "E. none"
+    ],
+    answer: 0,
+    englishExplanation: "Wilhelm Wundt founded structuralism, which breaks down mental experiences into basic elements, mirroring Seble's chemical breakdown approach.",
+    amharicExplanation: "ቪልሄልም ዊንድ (Wundt) የአእምሮን ይዘት ወደ መሰረታዊ ክፍሎች በመክፈል ያጠና የነበረ ሲሆን፣ ይህ አቀራረብ ከሴብል የኬሚስትሪ አሰራር (ውሃን ወደ ሃይድሮጅን እና ኦክስጅን መክፈል) ጋር ተመሳሳይነት አለው።"
+},
+
+{
+    question: "8. Which one of the following is an example of positive correlation?",
+    options: [
+        "A. Self-esteem and depression",
+        "B. The more gasoline you put in your car, the farther it can go",
+        "C. Alcohol consumption and driving ability",
+        "D. High level of stress and academic performance"
+    ],
+    answer: 1,
+    englishExplanation: "In a positive correlation, both variables move in the same direction—as gasoline increases, distance traveled also increases.",
+    amharicExplanation: "አዎንታዊ ኮሪሌሽን (Positive correlation) ማለት ሁለቱም ተለዋዋጮች በአንድ አቅጣጫ የሚንቀሳቀሱበት (አንዱ ሲጨምር ሌላውም የሚጨምርበት) ነው። ቤንዚን ሲጨምር መኪናው የሚሄደው ርቀት ጨምሮ ይታያል።"
+},
+
+{
+    question: "9. Which of the following perspectives argues that human behavior develops in certain ways because it serves a useful purpose?",
+    options: [
+        "A. Psychoanalysis",
+        "B. Cognitive psychology",
+        "C. Behaviorism",
+        "D. Functionalism",
+        "E. none"
+    ],
+    answer: 3,
+    englishExplanation: "Functionalism, championed by William James, examines how behavior and mental processes help organisms adapt to their environment and serve a practical purpose.",
+    amharicExplanation: "ፈንክሽናሊዝም (Functionalism) ባህሪ እና አእምሯዊ ሂደቶች ሰዎች ከአካባቢያቸው ጋር እንዲላመዱ እና ጠቃሚ አገልግሎት እንዲሰጡ እንዴት እንደሚረዱ ያጠናል፤ ትኩረቱም በዓላማ እና ጥቅሙ ላይ ነው።"
+},
+
+{
+    question: "10. A quarter in your hand casts a different image on your retina than a quarter taped to the wall across the room, yet you know that the quarters have exactly the same dimensions. This phenomenon would be best explained by a",
+    options: [
+        "A. behaviorist",
+        "B. Gestalt psychologist",
+        "C. evolutionary psychologist",
+        "D. structuralist"
+    ],
+    answer: 1,
+    englishExplanation: "Gestalt psychology focuses on perception and how the human mind organizes sensory information into a meaningful whole (perceptual constancy).",
+    amharicExplanation: "ጌስታልት ሳይኮሎጂ (Gestalt psychology) የተሟላ ግንዛቤን እና የሰዎች አእምሮ የተለያየ ምስል ቢደርሰውም ነገሮችን እንደ ሙሉነታቸው የመረዳት አቅም (perceptual constancy) ያጠናል።"
+},
+
+{
+    question: "11. Forensic psychology applies psychological principles to:",
+    options: [
+        "A. legal issues",
+        "B. animal behavior",
+        "C. cognitive functions",
+        "D. social factors"
+    ],
+    answer: 0,
+    englishExplanation: "Forensic psychology bridges the gap between psychology and the legal system, dealing with criminal behavior, court evaluations, and legal settings.",
+    amharicExplanation: "ፎረንሲክ ሳይኮሎጂ (Forensic psychology) የስነ-ልቦና መርሆዎችን እና እውቀቶችን ከህግ እና ፍርድ ቤት ጉዳዮች ጋር በማገናኘት የሚሰራ የሳይኮሎጂ ዘርፍ ነው።"
+},
+
+{
+    question: "12. The school of psychology that places unconscious impulses and desires at the center of human behavior is:",
+    options: [
+        "A. psychoanalysis",
+        "B. structuralism",
+        "C. functionalism",
+        "D. Gestalt psychology"
+    ],
+    answer: 0,
+    englishExplanation: "Psychoanalysis, founded by Sigmund Freud, highlights the heavy influence of unconscious desires, childhood experiences, and hidden drives on behavior.",
+    amharicExplanation: "ሳይኮአናሊሲስ (Psychoanalysis) በሲግመንድ ፍሮይድ የተመሰረተ ሲሆን፣ የሰዎችን ባህሪ በመቅረጽ ረገድ ንቃተ-ህሊና የሌላቸው (unconscious) ፍላጎቶች እና የልጅነት ተሞክሮዎች ከፍተኛ ሚና እንዳላቸው ያምናል።"
+},
+
+{
+    question: "13. Assume that your families, and the mass media influence you in a dramatic way to change your attitude towards a particular product. In the long run, you like to develop a positive reaction for that product. Which school of thought best describes this statement?",
+    options: [
+        "A. Gestalt",
+        "B. Humanistic",
+        "C. Socio-cultural",
+        "D. Functionalism"
+    ],
+    answer: 2,
+    englishExplanation: "The socio-cultural perspective looks at how social influences, family background, and media culture shape our behaviors, attitudes, and reactions.",
+    amharicExplanation: "ሶሺዮ-ካልቸራል (Socio-cultural) አመለካከት ማህበራዊ አካባቢ፣ ቤተሰብ እና መገናኛ ብዙኃን (media) በሰዎች አመለካከት እና ባህሪ ላይ ያላቸውን ከፍተኛ ተጽዕኖ ያጠናል።"
+},
+
+{
+    question: "14. According to Freud, which of the following represents a primary source of influence on personality?",
+    options: [
+        "A. heredity",
+        "B. life experiences after beginning school",
+        "C. the relative strengths of the id, ego, superego",
+        "D. the problems experienced during adolescence",
+        "E. All"
+    ],
+    answer: 2,
+    englishExplanation: "Sigmund Freud's psychoanalytic theory posits that human personality is shaped by the dynamic interplay and relative strengths of the id, ego, and superego.",
+    amharicExplanation: "በሲግመንድ ፍሮይድ ንድፈ ሀሳብ መሰረት የሰዎች ስብዕና (personality) የሚወሰነው በ id, ego, እና superego መካከል ባለው መስተጋብር እና አንጻራዊ ጥንካሬ ነው።"
+},
+
+{
+    question: "15. A market researcher wanted to examine the behavior of shoppers in a shoe store. In doing so, he hid a video camera to record the behavior of shoppers. The type of research method which is more pertinent to the above idea is:",
+    options: [
+        "A. experimental case study",
+        "B. case study",
+        "C. naturalistic observation",
+        "D. survey",
+        "E. all"
+    ],
+    answer: 2,
+    englishExplanation: "Naturalistic observation involves watching and recording subjects in their natural environment without interfering or manipulating variables.",
+    amharicExplanation: "ናቹራሊስቲክ ኦብዘርቬሽን (Naturalistic observation) ማለት ሰዎችን በተፈጥሯዊ አካባቢያቸው ያለ ምንም ጣልቃ ገብነት በመመልከትና በመቅረጽ የሚደረግ ጥናት ነው።"
+},
+
+{
+    question: "16. Humanistic psychologists would not say that",
+    options: [
+        "A. human nature is innately good",
+        "B. human beings have a natural tendency toward self-actualization",
+        "C. human beings have free will",
+        "D. researchers should focus primarily on observable behavior"
+    ],
+    answer: 3,
+    englishExplanation: "Focusing purely on observable behavior defines behaviorism, whereas humanistic psychology values subjective experience, free will, and personal growth.",
+    amharicExplanation: "በሰዎች የሚታይ ውጫዊ ባህሪ ላይ ብቻ ማተኮር የቢሄቪየሪስቶች አካሄድ እንጂ የሁማኒስቲክ ሳይኮሎጂስቶች እምነት አይደለም፤ ሁማኒስቶች በሰዎች ውስጣዊ ስሜት እና ነጻ ፍላጎት ያምናሉ።"
+},
+
+{
+    question: "17. A psychologist conducted a study on 'Gender Differences in Helping Behavior among X University Freshman Students'. He calculated the overall engagement of helping behavior for both genders. As a result, he found that female students performed better than males in terms of helping behavior. Based on the finding, he arranged places that can enhance males' engagement in helping behavior. Which goal of psychology best describes the psychologist's action?",
+    options: [
+        "A. Description",
+        "B. Explanation",
+        "C. Prediction",
+        "D. Control"
+    ],
+    answer: 3,
+    englishExplanation: "Taking actionable steps to influence, improve, or alter behavior (such as arranging environments to enhance helping behavior) represents the goal of control/modification.",
+    amharicExplanation: "በምርምር ውጤት ላይ በመመስረት ሁኔታዎችን በማስተካከል ወይም አዲስ አሰራር በመዘርጋት ባህሪን ለመለወጥ ወይም ለማሻሻል መስራት የቁጥጥር ወይም የመቆጣጠር (Control) ግብን ይወክላል።"
+},
+
+{
+    question: "18. Which of the following is the first step in the scientific research process?",
+    options: [
+        "A. Drawing conclusion",
+        "B. Developing the hypothesis",
+        "C. Testing the hypothesis",
+        "D. Observing the issue",
+        "E. None"
+    ],
+    answer: 3,
+    englishExplanation: "The scientific method always starts with identifying and observing a problem or issue of interest before forming a hypothesis.",
+    amharicExplanation: "ሳይንሳዊ የምርምር ሂደት ሁልጊዜ የሚጀምረው ሊጠና የሚገባውን ችግር ወይም ጉዳይ በመለየት እና በመመልከት (Observing the issue) ነው።"
+},
+
+{
+    question: "19. ________ was to structuralism as ________ was to functionalism.",
+    options: [
+        "A. Wundt, Titchener",
+        "B. Wundt, James",
+        "C. James, Titchener",
+        "D. Milner, Thompson"
+    ],
+    answer: 1,
+    englishExplanation: "Wilhelm Wundt is recognized as the key founder of structuralism, while William James is recognized as the principal founder of functionalism.",
+    amharicExplanation: "ቪልሄልም ዊንድ (Wundt) የስትራክቸራሊዝም መሥራች ሲሆን ዊልያም ጄምስ (James) ደግሞ የፈንክሽናሊዝም መሥራች በመሆን ይታወቃሉ።"
+},
+
+{
+    question: "20. Which school of psychology believes that it is impossible to objectively study the mind?",
+    options: [
+        "A. functionalism",
+        "B. behaviorism",
+        "C. humanism",
+        "D. socialism"
+    ],
+    answer: 1,
+    englishExplanation: "Behaviorists like Watson and Skinner argued that internal mental events cannot be scientifically measured, so psychology should focus strictly on external, observable behavior.",
+    amharicExplanation: "ቢሄቪየሪስቶች (Behaviorism) የአእምሮን ውስጣዊ ሁኔታዎች በዓላማ እና በግልጽ ማጥናት ስለማይቻል ሳይኮሎጂ በአስተዋጽኦ ሊለካ በሚችል ውጫዊ ባህሪ ላይ ብቻ ማተኮር አለበት ብለው ያምናሉ።"
+},],
         3: [],
         4: [],
         5: []
