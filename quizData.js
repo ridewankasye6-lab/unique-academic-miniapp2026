@@ -703,7 +703,138 @@ const quizData = {
         answer: 2,
         englishExplanation: "'Should take off' is correct because 'should' is followed by the base verb.",
         amharicExplanation: "📚 'Should take off' ኮቱን ማውለቅ እንደሚገባ ምክር ይሰጣል።"
-      }],
+      },{
+  "question": "6. The airline only allows two pieces of luggage. You ____________ pack too much or you will have to take it out at the airport!",
+  "options": [
+    "better not",
+    "had not better",
+    "had better not",
+    "should not"
+  ],
+  "answer": 2,
+  "englishExplanation": "\"Had better not\" is used to give a strong warning or advice against doing something. Packing too much luggage may cause problems at the airport.",
+  "amharicExplanation": "📚 \"Had better not\" ጠንካራ ምክር ወይም ማስጠንቀቂያ ለመስጠት ይጠቅማል። ከመጠን በላይ ሻንጣ መያዝ በአውሮፕላን ማረፊያ ችግር ሊያመጣ ይችላል።"
+},
+{
+  "question": "7. Dave loves chocolate, but he ____________ too much or he will get fat.",
+  "options": [
+    "should eat not",
+    "shouldn't eat",
+    "should eat",
+    "must eat"
+  ],
+  "answer": 1,
+  "englishExplanation": "\"Shouldn't eat\" gives negative advice. Dave is advised not to eat too much chocolate because it may make him gain weight.",
+  "amharicExplanation": "📚 \"Shouldn't eat\" አሉታዊ ምክር ለመስጠት ይጠቅማል። ዴቭ ከመጠን በላይ ቸኮሌት እንዳይበላ ይመከራል።"
+},
+{
+  "question": "8. I'm going to visit your country. Where ____________ if I want to go shopping?",
+  "options": [
+    "ought to I go",
+    "I should go",
+    "should I go",
+    "must I go"
+  ],
+  "answer": 2,
+  "englishExplanation": "\"Should I go\" is the correct question form for asking for advice about the best place to go shopping.",
+  "amharicExplanation": "📚 \"Should I go\" ለገበያ የት መሄድ እንዳለብኝ ምክር ለመጠየቅ የሚጠቅም ትክክለኛ ቅርጽ ነው።"
+},
+{
+  "question": "9. You ____________ step into the head master's office without permission.",
+  "options": [
+    "Ought to",
+    "had better not",
+    "had better",
+    "should"
+  ],
+  "answer": 1,
+  "englishExplanation": "\"Had better not\" is used to give a strong warning. Entering the head master's office without permission may have serious consequences.",
+  "amharicExplanation": "📚 \"Had better not\" ያለፈቃድ ወደ ርዕሰ መምህሩ ቢሮ መግባት እንዳትፈጽም ጠንካራ ማስጠንቀቂያ ይሰጣል።"
+},
+{
+  "question": "10. I feel ill, doctor. What ____________?",
+  "options": [
+    "Should I do",
+    "Ought to talk",
+    "I should do",
+    "ought to"
+  ],
+  "answer": 0,
+  "englishExplanation": "\"What should I do?\" is the correct question used to ask a doctor for advice.",
+  "amharicExplanation": "📚 \"What should I do?\" ከሐኪም ምክር ለመጠየቅ የሚጠቅም ትክክለኛ የጥያቄ ቅርጽ ነው።"
+},
+{
+  "question": "11. My doctor suggests that I ____________ exercise more because I am out of shape and want to lose weight.",
+  "options": [
+    "should did",
+    "may",
+    "ought to do",
+    "had better not do"
+  ],
+  "answer": 2,
+  "englishExplanation": "\"Ought to do\" expresses strong advice or obligation. The doctor recommends exercising more to improve health and lose weight.",
+  "amharicExplanation": "📚 \"Ought to do\" ጠንካራ ምክር ወይም አስፈላጊነትን ያሳያል። ሐኪሙ ተጨማሪ የአካል እንቅስቃሴ እንድታደርግ ይመክራል።"
+},
+{
+  "question": "13. Today, there are more displaced people in Ethiopia than were in the past. These people ____________. This should be a moral obligation to every one of us.",
+  "options": [
+    "must help",
+    "could have been helped",
+    "can be helped",
+    "must be helped"
+  ],
+  "answer": 3,
+  "englishExplanation": "\"Must be helped\" is the correct passive form expressing a strong moral obligation.",
+  "amharicExplanation": "📚 \"Must be helped\" ጠንካራ የሞራል ግዴታን የሚያሳይ የተቀባይ (passive) ቅርጽ ነው።"
+},
+{
+  "question": "14. I think all drivers ____________ wear a seat belt.",
+  "options": [
+    "Should",
+    "Can",
+    "had better",
+    "must"
+  ],
+  "answer": 0,
+  "englishExplanation": "\"Should\" is used to give general advice or express what is right or advisable.",
+  "amharicExplanation": "📚 \"Should\" አጠቃላይ ምክር ወይም አስተያየት ለመግለጽ ይጠቅማል።"
+},
+{
+  "question": "15. You don't look very well. You ____________ to work today.",
+  "options": [
+    "Had better not go",
+    "Had not better go",
+    "Shouldn't go",
+    "had better go not"
+  ],
+  "answer": 0,
+  "englishExplanation": "\"Had better not go\" gives strong advice not to do something because it may have bad consequences.",
+  "amharicExplanation": "📚 \"Had better not go\" በጤና ሁኔታህ ምክንያት ወደ ሥራ እንዳትሄድ ጠንካራ ምክር ይሰጣል።"
+},
+{
+  "question": "16. I wonder where Genet is. She ____________ here by now.",
+  "options": [
+    "Must be",
+    "Ought to be",
+    "Should be",
+    "Had better be"
+  ],
+  "answer": 2,
+  "englishExplanation": "\"Should be\" expresses expectation. The speaker expects Genet to have arrived by now.",
+  "amharicExplanation": "📚 \"Should be\" የሚጠበቅ ነገርን ያሳያል። ጄኔት በዚህ ሰዓት እዚህ መሆን ነበረባት።"
+},
+{
+  "question": "17. You ____________ to our conversation. It was private.",
+  "options": [
+    "Might not have been listening",
+    "Couldn't have been listening",
+    "Shouldn't have been listening",
+    "Mustn't have been listening"
+  ],
+  "answer": 2,
+  "englishExplanation": "\"Shouldn't have been listening\" criticizes a past action. It means listening to the private conversation was wrong.",
+  "amharicExplanation": "📚 \"Shouldn't have been listening\" ያለፈ ተግባርን ለመተቸት ይጠቅማል። የግል ውይይቱን ማዳመጥ ትክክል አልነበረም።"
+}],
         2: [],
         3: [],
         4: [],
