@@ -437,7 +437,284 @@ const quizData = {
     ],
     answer: 1,
     englishExplanation: "Perception is the higher-level cognitive process of organizing and giving meaning to raw sensory information.",
-    amharicExplanation: "ፐርሴፕሽን (Perception) አእምሯችን ጥሬ የስሜት መረጃዎችን አደራጅቶና ተርጉሞ ጠቃሚ ትርጉም የሚሰጥበት ሂደት ነው።" },],
+    amharicExplanation: "ፐርሴፕሽን (Perception) አእምሯችን ጥሬ የስሜት መረጃዎችን አደራጅቶና ተርጉሞ ጠቃሚ ትርጉም የሚሰጥበት ሂደት ነው።" },Absolutely bro 😎 Here are 21–40, all cleaned up and converted into the exact JavaScript-object format you want:
+
+{
+    question: "21. A binocular cue that allows for depth perception by comparing images from 2 eyeballs or retina is?",
+    options: [
+        "Depth Perception",
+        "Perceptual Constancy",
+        "Color Constancy",
+        "Retinal Disparity"
+    ],
+    answer: 3,
+    englishExplanation: "\"Retinal disparity\" is a binocular depth cue that relies on the slight difference between the visual images projected on the retinas of both eyes, helping the brain calculate distance and depth.",
+    amharicExplanation: "\"Retinal Disparity\" በሁለት አይኖች ሬቲና ላይ የሚፈጠሩትን ትንሽ የምስል ልዩነቶች በማነጻጸር ጥልቀትን (depth) እንድንለይ የሚያስችል የሁለት አይን (binocular) ዘዴ ነው።"
+},
+
+{
+    question: "22. Which of the following are monocular cues?",
+    options: [
+        "Light and Shadow",
+        "Linear Perspective",
+        "Interposition",
+        "Relative Size",
+        "All of the above"
+    ],
+    answer: 4,
+    englishExplanation: "All the listed options—light and shadow, linear perspective, interposition, and relative size—are monocular cues, meaning they can be perceived using only a single eye.",
+    amharicExplanation: "የተዘረዘሩት አማራጮች ሁሉም በአንድ አይን ብቻ በመታገዝ ጥልቀትን ለማወቅ የሚያስችሉ የሞኖኩላር (monocular) መለኪያዎች ናቸው።"
+},
+
+{
+    question: "23. Detection of the sound of a bell ringing is referred to as a __________. Once you interpret the stimulus as the sound of your alarm clock, it is referred to as a ___________.",
+    options: [
+        "perception; sensory adaptation",
+        "sensation; perception",
+        "perception; sensation",
+        "sensory code; perception"
+    ],
+    answer: 1,
+    englishExplanation: "\"Sensation\" is the raw detection of environmental energy, such as hearing a bell, while \"perception\" is the organization and interpretation of that stimulus, such as recognizing it as an alarm clock.",
+    amharicExplanation: "\"Sensation\" የድምፅ ማዕበልን መቀበል ወይም ማስተዋል ሲሆን፣ \"Perception\" ደግሞ ያንን ድምፅ ተርጉሞ ምንነቱን መረዳት ነው።"
+},
+
+{
+    question: "24. Which of the following scenarios best illustrates the size cue for monocular depth perception?",
+    options: [
+        "While walking down a street, you can tell that something is close if it doesn't move as quickly as you move.",
+        "While turning the pages of your book, you perceive the pages as moving rectangles.",
+        "While walking on the beach, you perceive that your friend is far away because he looks very small.",
+        "While riding on the train, the world seems to race past you as if it were moving and you were stationary."
+    ],
+    answer: 2,
+    englishExplanation: "\"Relative size\" is a monocular depth cue in which, when two objects are assumed to be similar in actual size, the one that appears smaller is perceived as being farther away.",
+    amharicExplanation: "\"Relative Size\" አንድ ነገር ከሌላው ያነሰ ሆኖ ሲታይ ከእኛ የራቀ እንደሆነ አድርገን እንድንገነዘብ የሚያደርግ የሞኖኩላር ጥልቀት መለኪያ ነው።"
+},
+
+{
+    question: "25. Size constancy refers to",
+    options: [
+        "The changes that occur in your visual acuity, based on how large an object is.",
+        "Your perception that an object retains the same shape, regardless of the angle from which you view it.",
+        "Your perception that an object remains the same size, even as you get closer or farther away.",
+        "Your ability to accurately judge the color of an object across different lighting contexts."
+    ],
+    answer: 2,
+    englishExplanation: "\"Size constancy\" is the perception that an object's actual size remains the same even though the size of its retinal image changes as the viewing distance changes.",
+    amharicExplanation: "\"Size Constancy\" ማለት አንድ እቃ ቢርቀንም ወይም ቢጠጋንም የሬቲና ምስሉ መጠን ቢለወጥም፣ እቃው በእውነቱ መጠኑ እንዳልተለወጠ አድርገን የምንገነዘበው ነው።"
+},
+
+{
+    question: "26. Which of the following is NOT an example of a monocular visual depth perception cue?",
+    options: [
+        "Texture gradient",
+        "Motion parallax",
+        "Interposition",
+        "Opponent process",
+        "Relative size",
+        "none"
+    ],
+    answer: 3,
+    englishExplanation: "\"Opponent process\" theory is related to color vision and explains how colors are perceived through opposing pairs such as red-green and blue-yellow. It is not a monocular depth cue.",
+    amharicExplanation: "\"Opponent Process\" ከቀለም ግንዛቤ ጋር የተያያዘ ንድፈ ሀሳብ እንጂ የጥልቀት የሞኖኩላር መለኪያ አይደለም። እንደ ቀይ-አረንጓዴ እና ሰማያዊ-ቢጫ ያሉ ተቃራኒ የቀለም ጥንዶችን ለመረዳት ይረዳል።"
+},
+
+{
+    question: "27. The Gestalt concept of perceptual continuity refers to",
+    options: [
+        "our tendency to see objects near to each other as belonging to the same group",
+        "our tendency to see objects that are closer to us as larger than objects that are farther away",
+        "our tendency to see fluid or complete forms rather than irregular or incomplete forms",
+        "our tendency to see similar-looking objects as part of the same group",
+        "our tendency to see two slightly different images from each of our eyes"
+    ],
+    answer: 2,
+    englishExplanation: "The Gestalt principle of continuity describes our tendency to perceive smooth, continuous patterns and lines rather than disconnected or irregular fragments.",
+    amharicExplanation: "የጌስታልት የContinuity መርህ የተቆራረጡ ወይም የተበታተኑ መስመሮችን ከማየት ይልቅ ቀጣይነት ያላቸው ለስላሳ ቅርጾችንና መስመሮችን እንድናይ የሚያደርገንን ዝንባሌ ይገልጻል።"
+},
+
+{
+    question: "28. The amount of a stimulus required to determine that a stimulus has changed just a little bit is called the",
+    options: [
+        "difference threshold",
+        "absolute threshold",
+        "just noticeable difference",
+        "just noticeable threshold",
+        "taste aversion"
+    ],
+    answer: 2,
+    englishExplanation: "The \"just noticeable difference\" (JND), also called the difference threshold, is the minimum change in stimulation required for a person to detect that a change has occurred.",
+    amharicExplanation: "\"Just Noticeable Difference\" (JND) ወይም \"difference threshold\" ማለት በማነቃቂያ ላይ የተፈጠረን ትንሽ ለውጥ ለመለየት የሚያስፈልገው አነስተኛ የልዩነት መጠን ነው።"
+},
+
+{
+    question: "29. Your tendency to see the words 'went' and 'ties,' rather than the word 'twenties' when you look at T WENT TIES is best explained by the organizing principle of",
+    options: [
+        "bottom-up processing",
+        "closure",
+        "continuity",
+        "figure-ground",
+        "proximity"
+    ],
+    answer: 4,
+    englishExplanation: "\"Proximity\" is the Gestalt principle that objects or elements located close to one another are perceived as belonging together. The spacing makes the letters appear to form separate words.",
+    amharicExplanation: "\"Proximity\" እርስ በእርሳቸው ተቀራርበው የሚገኙ ነገሮችን በአንድ ቡድን ውስጥ እንዳሉ አድርገን የምንገነዘብበት የጌስታልት መርህ ነው። የፊደሎቹ አቀማመጥ እንደተለያዩ ቃላት እንድናያቸው ያደርገናል።"
+},
+
+{
+    question: "30. A landscape painting shows boats on a lake in the foreground and mountains farther away. Of the following, which cue would not contribute to your perception that the mountains are farther away than the boats in the picture?",
+    options: [
+        "texture gradient",
+        "linear perspective",
+        "relative height",
+        "retinal disparity",
+        "interposition"
+    ],
+    answer: 3,
+    englishExplanation: "\"Retinal disparity\" is a binocular depth cue that depends on the different images received by the two eyes. A flat 2D painting cannot provide true retinal disparity between objects at different physical distances.",
+    amharicExplanation: "\"Retinal Disparity\" የሁለት አይን (binocular) የጥልቀት ማሳያ ስለሆነ በጠፍጣፋ 2D ስዕል ውስጥ በእውነተኛ ርቀት ያሉ ነገሮችን ለመለየት ሊሰጥ አይችልም።"
+},
+
+{
+    question: "31. Sensation refers to the",
+    options: [
+        "detection of stimulus energy from the environment",
+        "conversion of stimulus energy into neural code",
+        "organization and interpretation of stimulus energy",
+        "adaptation to an unchanging stimulus, resulting in diminished sensitivity",
+        "relaying of information that occurs in the brain"
+    ],
+    answer: 0,
+    englishExplanation: "Sensation is the initial process of detecting physical stimulus energy from the environment through sensory receptors.",
+    amharicExplanation: "ሴንሴሽን (Sensation) በአካባቢያችን ያሉ ማነቃቂያዎችን በስሜት ተቀባዮች (sensory receptors) አማካኝነት የመለየት የመጀመሪያ ሂደት ነው።"
+},
+
+{
+    question: "32. When Sue first went outside she found the cold unbearable. She complained how cold it was, but after a while the temperature did not seem to bother her. Which sensational process allowed Sue to tolerate the cold?",
+    options: [
+        "transduction",
+        "selective attention",
+        "sensory adaptation",
+        "accommodation",
+        "perceptual set"
+    ],
+    answer: 2,
+    englishExplanation: "\"Sensory adaptation\" is the decrease in sensitivity that occurs after prolonged exposure to a constant stimulus. Sue gradually became less sensitive to the cold.",
+    amharicExplanation: "\"Sensory Adaptation\" ለአንድ ቋሚ ማነቃቂያ ለረጅም ጊዜ ስንጋለጥ የስሜት ህዋሳችን ምላሽ እየቀነሰ የሚሄድበት ሂደት ነው። ሱ በብርዱ ሙቀት ላይ ከቆየች በኋላ ብርዱን መልመድ ጀመረች።"
+},
+
+{
+    question: "33. According to the Gestalt principle of proximity",
+    options: [
+        "objects that display the same features are grouped together",
+        "objects that are close together are interpreted as belonging together",
+        "monocular cues allow the size of an object to remain constant",
+        "binocular cues allow the color of an object to remain constant",
+        "objects that are farther away look as if they are moving more slowly than do closer objects"
+    ],
+    answer: 1,
+    englishExplanation: "The Gestalt principle of proximity states that objects or elements that are physically close to one another are perceived as belonging to the same group.",
+    amharicExplanation: "የፕሮክሲሚቲ (Proximity) ህግ እርስ በርሳቸው የቀረቡ እቃዎች ወይም ቅርጾች አንድ ቡድን እንደሆኑ አድርገን የምንገነዘብበትን ዝንባሌ ይገልጻል።"
+},
+
+{
+    question: "34. Which of the following would be most difficult for a person who only had one eye?",
+    options: [
+        "inserting a toothpick into a horizontal straw",
+        "watching a movie at a theatre",
+        "correctly identifying the color of a car",
+        "organizing objects into similar patterns or colors",
+        "understanding that a line continues despite a break in it"
+    ],
+    answer: 0,
+    englishExplanation: "Inserting a toothpick into a horizontal straw requires precise three-dimensional depth perception. Binocular cues from two eyes are especially helpful for this kind of accurate depth judgment.",
+    amharicExplanation: "የጥርስ ማጽጃን ወደ አግድም ቱቦ ውስጥ ማስገባት ትክክለኛ የ3D ጥልቀት ግንዛቤን ይጠይቃል። ለዚህ ዓይነት ትክክለኛ የጥልቀት ግምገማ ሁለት አይኖች የሚሰጡት የbinocular መረጃ በጣም ጠቃሚ ነው።"
+},
+
+{
+    question: "35. The ability to talk on the phone and type on the computer at the same time is the result of",
+    options: [
+        "bottom-up processing",
+        "perceptual processing",
+        "selective attention",
+        "closure",
+        "convergence"
+    ],
+    answer: 2,
+    englishExplanation: "\"Selective attention\" allows us to allocate attention to relevant information and manage more than one activity when one of the activities is sufficiently automatic. Talking and typing can therefore be performed together in this context.",
+    amharicExplanation: "\"Selective Attention\" ትኩረታችንን በሚያስፈልጉ መረጃዎች ላይ እንድናተኩር እና አንዳንድ ስራዎች አውቶማቲክ ሲሆኑ ከሌላ ስራ ጋር እንድናከናውናቸው ይረዳናል።"
+},
+
+{
+    question: "36. Laticia is listening to her teacher conduct a lesson on the parts and functions of the brain. Laticia can distinguish her teacher from the board because of which Gestalt principle?",
+    options: [
+        "proximity",
+        "closure",
+        "similarity",
+        "continuity",
+        "figure-ground"
+    ],
+    answer: 4,
+    englishExplanation: "The figure-ground principle allows us to separate a main object of attention, called the figure, from its surrounding background, called the ground. Here, the teacher is the figure and the board is the ground.",
+    amharicExplanation: "የFigure-Ground መርህ ዋናውን ነገር (figure) ከዙሪያው ካለው ዳራ (ground) ለይተን እንድንገነዘብ ይረዳናል። እዚህ አስተማሪው figure ሲሆን ቦርዱ ground ነው።"
+},
+
+{
+    question: "37. Awareness, integration, and organization of information into meaningful information is known as",
+    options: [
+        "sensation",
+        "perception",
+        "illusions",
+        "false perception",
+        "convergence"
+    ],
+    answer: 1,
+    englishExplanation: "\"Perception\" is the higher-level cognitive process of organizing, integrating, and interpreting sensory information so that it becomes meaningful.",
+    amharicExplanation: "\"Perception\" የስሜት መረጃዎችን በማቀናጀት፣ በማደራጀት እና በመተርጎም ትርጉም የመስጠት ከፍተኛ የአእምሮ ሂደት ነው።"
+},
+
+{
+    question: "38. Signal detection theory is most closely associated with",
+    options: [
+        "vision",
+        "sensory adaptation",
+        "absolute threshold",
+        "hearing",
+        "context effects"
+    ],
+    answer: 2,
+    englishExplanation: "Signal detection theory is closely related to the concept of the absolute threshold because it examines the detection of weak signals. It also recognizes that factors such as expectations, motivation, attention, and fatigue can affect detection.",
+    amharicExplanation: "Signal Detection Theory ከAbsolute Threshold ጋር በቅርብ የተያያዘ ነው። ደካማ ማነቃቂያዎችን የመለየት ችሎታችንን ይመለከታል፣ እንዲሁም እንደ ትኩረት፣ ተስፋ፣ ተነሳሽነት እና ድካም ያሉ ሁኔታዎች ማነቃቂያን በመለየት ላይ ተፅዕኖ እንደሚያሳድሩ ያስረዳል።"
+},
+
+{
+    question: "39. Which of the following represents perceptual constancy?",
+    options: [
+        "We recognize the taste of McDonald's food each time we eat it.",
+        "In the photos with people, the people almost always are perceived as figure and everything else as ground.",
+        "We know that the brightness of a printed page has not changed as it moves from sunlight to shadow.",
+        "From the time they are very young, most people can recognize the smell of a dentist's office.",
+        "The cold water in a lake doesn't seem so cold after you have been swimming in it for a few minutes."
+    ],
+    answer: 2,
+    englishExplanation: "Brightness constancy is a form of perceptual constancy in which we perceive an object's brightness as remaining relatively stable even when the lighting conditions change, such as moving from sunlight into shadow.",
+    amharicExplanation: "የBrightness Constancy የPerceptual Constancy አንዱ ዓይነት ነው። የብርሃን ሁኔታ ቢለወጥም አንድ ነገር በእውነቱ ያለው ብሩህነት እንዳልተለወጠ አድርገን እንገነዘባለን።"
+},
+
+{
+    question: "40. The Gestalt psychologists were interested in",
+    options: [
+        "depth perception and how it allows us to survive in the world",
+        "why we see an object near us as closer rather than larger",
+        "how an organized whole is formed out of its component pieces",
+        "what the smallest units of perception are",
+        "the similarities between shape constancy and size constancy"
+    ],
+    answer: 2,
+    englishExplanation: "Gestalt psychology focuses on how the mind organizes separate elements into meaningful and organized wholes. Its central idea is that the whole is more than simply the sum of its individual parts.",
+    amharicExplanation: "የጌስታልት (Gestalt) ስነ-ልቦና ዋና ትኩረቱ የተለያዩ ክፍሎች እንዴት ተደራጅተው አንድ ሙሉ እና ትርጉም ያለው ነገር እንደሚፈጥሩ ማጥናት ነው። ዋናው ሀሳቡም ሙሉው ነገር ከእያንዳንዱ ክፍል ድምር በላይ ነው የሚለው ነው።"
+},],
         2: [],
         3: [],
         4: [],
