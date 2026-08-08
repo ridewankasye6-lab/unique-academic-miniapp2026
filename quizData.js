@@ -714,6 +714,141 @@ const quizData = {
     answer: 2,
     englishExplanation: "Gestalt psychology focuses on how the mind organizes separate elements into meaningful and organized wholes. Its central idea is that the whole is more than simply the sum of its individual parts.",
     amharicExplanation: "የጌስታልት (Gestalt) ስነ-ልቦና ዋና ትኩረቱ የተለያዩ ክፍሎች እንዴት ተደራጅተው አንድ ሙሉ እና ትርጉም ያለው ነገር እንደሚፈጥሩ ማጥናት ነው። ዋናው ሀሳቡም ሙሉው ነገር ከእያንዳንዱ ክፍል ድምር በላይ ነው የሚለው ነው።"
+},{
+    question: "41. Which of the following is not a Gestalt grouping principle?",
+    options: [
+        "proximity",
+        "similarity",
+        "closure",
+        "continuity",
+        "figure-ground"
+    ],
+    answer: 4,
+    englishExplanation: "Figure-ground is a perceptual principle where we distinguish an object from its background, rather than a Gestalt grouping principle (which includes proximity, similarity, closure, and continuity for organizing elements together).",
+    amharicExplanation: "'figure-ground' የጌስታልት የቡድን ስብስብ (grouping) ህግ አይደለም፤ ይልቅስ አንድን ነገር ከበስተጀርባው (ከባራገውን) ለይቶ የማወቅ ሂደት ነው። (proximity, similarity, closure እና continuity የጌስታልት የቡድን ህጎች ናቸው)።"
+},
+
+{
+    question: "42. The two monocular depth cues that are most responsible for our ability to know that a jet flying high overhead is at an elevation of several miles are relative size and",
+    options: [
+        "relative motion",
+        "retinal disparity",
+        "interposition",
+        "light and shadow",
+        "linear perspective"
+    ],
+    answer: 0,
+    englishExplanation: "Relative motion (motion parallax) and relative size are monocular cues. When objects move or differ in perceived size, we judge distance; relative motion helps us understand that distant objects appear to move slower or shift less relative to our viewpoint.",
+    amharicExplanation: "አንጻራዊ እንቅስቃሴ (relative motion) እና አንጻራዊ መጠን (relative size) በአንድ ዓይን ብቻ ርቀትን ለመለካት የሚረዱ (monocular depth cues) ሲሆኑ፣ በሰማይ ላይ የሚበር አውሮፕላን ያለበትን ከፍታና ርቀት ለመገንዘብ ይረዳሉ።"
+},
+
+{
+    question: "43. As she looks at a face, Jamie is able to recognize it as the face of her mother. Which of the following explains why she can recognize her mother's face?",
+    options: [
+        "selective attention",
+        "transduction",
+        "bottom-up processing",
+        "top-down processing",
+        "signal detection theory"
+    ],
+    answer: 3,
+    englishExplanation: "Top-down processing involves using prior knowledge, memories, and expectations to interpret sensory information, allowing Jamie to instantly recognize her mother's face.",
+    amharicExplanation: "'Top-down processing' ያለፈውን እውቀት፣ ትዝታ እና ግምት በመጠቀም የስሜት ህዋሳትን መረጃ የመተርጎም ሂደት ነው፤ ጄሚ የእናቷን ፊት ወዲያው እንድታውቅ የሚያስችላት ይህ ነው።"
+},
+
+{
+    question: "44. Natalia is washing her hands, and she adjusts the faucet handle until the water feels just slightly hotter than it did before. Natalia's adjustment until she feels the change in temperature is an example of:",
+    options: [
+        "a subliminal stimulus",
+        "an absolute threshold",
+        "a difference threshold",
+        "signal detection",
+        "perceptual constancy"
+    ],
+    answer: 2,
+    englishExplanation: "The difference threshold (or just noticeable difference - JND) is the minimum difference between two stimuli required for detection 50 percent of the time, such as noticing a slight change in water temperature.",
+    amharicExplanation: "'Difference threshold' ማለት በሁለት ማነቃቂያዎች መካከል ያለውን አነስተኛ የልዩነት መጠን ማስተዋል የሚቻልበት ወሰን ነው (ለምሳሌ የውሃውን ሙቀት ትንሽ ከፍ ሲያደርጉ ለውጡን ማስተዋል)።"
+},
+
+{
+    question: "45. Tyshane went swimming with friends who did not want to get into the pool because the water felt cold. Tyshane jumped in and after a few minutes declared, 'It was cold when I first got in, but now it's fine. Come on in!' Tyshane's body became accustomed to the water temperature due to:",
+    options: [
+        "priming",
+        "absolute threshold",
+        "difference threshold",
+        "selective attention",
+        "sensory adaptation"
+    ],
+    answer: 4,
+    englishExplanation: "Sensory adaptation is the diminished sensitivity to a constant, unchanging stimulus over time, which is why the pool water eventually stopped feeling cold to Tyshane.",
+    amharicExplanation: "'Sensory adaptation' ማለት ቋሚና የማይለወጥ ማነቃቂያ ሲኖር የስሜት ህዋሳት ለውጡን እየለማመዱ ሲሄዱ ስሜቱ እየቀነሰ መምጣት ነው። ውሃው ሲቀዝቅቆ ቆይቶ ከጥቂት ደቂቃዎች በኋላ ሳይቀዘቅዝ መምሰሉ በዚሁ ምክንያት ነው።"
+},
+
+{
+    question: "46. After losing an eye in a BB gun accident, Ralph can no longer enjoy 3D movies, which rely on:",
+    options: [
+        "linear perspective",
+        "motion parallax",
+        "binocular disparity",
+        "interposition",
+        "relative size"
+    ],
+    answer: 2,
+    englishExplanation: "Binocular disparity requires both eyes to compare two slightly different images projected on the retinas to create depth perception, which is essential for 3D movies.",
+    amharicExplanation: "'Binocular disparity' በሁለቱም ዓይኖች የሚታዩትን ሁለት የተለያዩ ምስሎች በማቀናጀት ጥልቀትን (depth) ለመረዳት የሚረዳ ሲሆን፣ የ3ዲ (3D) ፊልሞች በዚህ ላይ የተመሰረቱ ናቸው። አንድ ዓይን ያለው ሰው ይህንን ማየት አይችልም።"
+},
+
+{
+    question: "47. Which of the following is NOT a Gestalt Law?",
+    options: [
+        "common fate",
+        "simplicity",
+        "closure",
+        "convergence",
+        "similarity"
+    ],
+    answer: 3,
+    englishExplanation: "Convergence is a binocular depth cue related to the inward turning of the eyes when focusing on nearby objects, not a Gestalt law of perceptual organization.",
+    amharicExplanation: "'Convergence' የጌስታልት ህግ አይደለም፤ ይልቅስ ዓይኖች ወደ ውስጥ ተጠግተው ቅርብ ያለ ነገር ላይ ሲያተኩሩ የሚፈጠር የጥልቀት መለኪያ (binocular depth cue) ነው።"
+},
+
+{
+    question: "48. Which of the following best describes the difference between sensation and perception?",
+    options: [
+        "Sensation involves interpreting sensory information, while perception involves detecting stimuli.",
+        "Sensation is the process of detecting stimuli, while perception is the process of interpreting sensory information.",
+        "Sensation and perception are the same processes.",
+        "Sensation involves the brain, while perception involves the sensory organs."
+    ],
+    answer: 1,
+    englishExplanation: "Sensation is the bottom-up process of our sensory receptors detecting environmental stimuli, whereas perception is the top-down process of organizing and interpreting that sensory information in the brain.",
+    amharicExplanation: "'Sensation' ማነቃቂያዎችን የመቀበል ወይም የመለየት ሂደት ሲሆን፣ 'Perception' ደግሞ እነዚያን የተሰባሰቡ የስሜት መረጃዎችን አእምሮ የመተርጎም እና ትርጉም የመስጠት ሂደት ነው።"
+},
+
+{
+    question: "49. Which of the following best illustrates the difference between sensation and perception?",
+    options: [
+        "Hearing a melody and recognizing it as your favorite song.",
+        "Feeling the warmth of the sun and deciding to wear sunglasses.",
+        "Seeing a color and identifying it as red.",
+        "Touching a surface and feeling its texture."
+    ],
+    answer: 0,
+    englishExplanation: "Hearing the musical notes is the raw sensory input (sensation), while recognizing and identifying the melody as your favorite song involves cognitive interpretation (perception).",
+    amharicExplanation: "ዜማውን መስማት የስሜት መቀበያ ሂደቱ (sensation) ሲሆን፣ ያንን ዜማ ለይቶ ማወቅና የእኛ ተወዳጅ ዘፈን መሆኑን መረዳት ግን የአእምሮ ትርጉም አሰጣጥ ሂደት (perception) ነው።"
+},
+
+{
+    question: "50. Which of the following scenarios best describes the concept of absolute threshold?",
+    options: [
+        "Detecting the difference between two shades of blue.",
+        "Hearing a watch ticking 20 feet away in a quiet room.",
+        "Noticing the increase in sweetness after adding sugar to coffee.",
+        "Feeling the difference in weight between two objects."
+    ],
+    answer: 1,
+    englishExplanation: "The absolute threshold is the minimum stimulation needed to detect a particular stimulus 50 percent of the time, such as hearing a faint watch tick 20 feet away in total quiet.",
+    amharicExplanation: "'Absolute threshold' አንድ ማነቃቂያ በ50 በመቶ ዕድል ሊታወቅ የሚችልበት ዝቅተኛው የማነቃቂያ መጠን ነው። ለምሳሌ፡- ፍጹም ዝምታ ባለበት ክፍል ውስጥ የሰዓት መቃጠል ከ20 ጫማ ርቀት ላይ መስማት።"
 }],
         2: [],
         3: [],
