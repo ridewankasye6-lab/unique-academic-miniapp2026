@@ -834,7 +834,265 @@ const quizData = {
   "answer": 2,
   "englishExplanation": "\"Shouldn't have been listening\" criticizes a past action. It means listening to the private conversation was wrong.",
   "amharicExplanation": "📚 \"Shouldn't have been listening\" ያለፈ ተግባርን ለመተቸት ይጠቅማል። የግል ውይይቱን ማዳመጥ ትክክል አልነበረም።"
-}],
+},{
+    question: "18. A: I am feeling very tired all day. B: I think you ____________ get more rest.",
+    options: [
+        "should",
+        "shouldn't",
+        "had better not",
+        "can't"
+    ],
+    answer: 0,
+    englishExplanation: "\"Should\" is used to give friendly and positive advice. The speaker recommends getting more rest because the person feels tired.",
+    amharicExplanation: "\"Should\" መልካም እና አዎንታዊ ምክር ለመስጠት ይጠቅማል። ሰውየው በጣም ስለደከመ ተጨማሪ እረፍት እንዲያደርግ ምክር ይሰጣል።"
+},
+
+{
+    question: "19. A: I keep failing my quizzes. B: I think you ____________ study harder.",
+    options: [
+        "ought to",
+        "shouldn't",
+        "mustn't",
+        "needn't"
+    ],
+    answer: 0,
+    englishExplanation: "\"Ought to\" is used to give strong advice or a recommendation. Since the student keeps failing quizzes, studying harder is recommended.",
+    amharicExplanation: "\"Ought to\" ጠንካራ ምክር ወይም ማስጠንቀቂያ ለመስጠት ይጠቅማል። ተማሪው ፈተናዎችን ስለሚያጣ በተሻለ ሁኔታ እንዲያጠና ምክር ይሰጣል።"
+},
+
+{
+    question: "20. A: My car keeps breaking down. B: You ____________ buy a new one.",
+    options: [
+        "had better",
+        "shouldn't",
+        "can't",
+        "mustn't"
+    ],
+    answer: 0,
+    englishExplanation: "\"Had better\" is used to give strong or urgent advice. Since the car keeps breaking down, buying a new one is strongly recommended.",
+    amharicExplanation: "\"Had better\" ጠንካራ ወይም አፋጣኝ ምክር ለመስጠት ይጠቅማል። መኪናው በተደጋጋሚ ስለሚበላሽ አዲስ መኪና መግዛት የተሻለ ምክር ነው።"
+},
+
+{
+    question: "21. In England you ____________ drive on the left side of the road, but in other European countries you ____________.",
+    options: [
+        "should / shouldn't",
+        "had better / had better not",
+        "must / mustn't",
+        "could / couldn't"
+    ],
+    answer: 2,
+    englishExplanation: "\"Must\" expresses an obligation or legal requirement, while \"mustn't\" expresses prohibition. However, the sentence is grammatically and factually awkward because drivers in other European countries generally drive on the right, rather than simply \"mustn't\" drive on the left.",
+    amharicExplanation: "\"Must\" ግዴታን ወይም የሕግ መስፈርትን ያሳያል፤ \"mustn't\" ደግሞ ክልከላን ያሳያል። ሆኖም ጥያቄው በትክክል አልተዘጋጀም፤ በአብዛኛዎቹ የአውሮፓ አገሮች መኪና በቀኝ በኩል ይነዳል።"
+},
+
+{
+    question: "22. Everyone in the world ____________ get enough food to eat.",
+    options: [
+        "should",
+        "ought to",
+        "had better",
+        "A & B"
+    ],
+    answer: 3,
+    englishExplanation: "Both \"should\" and \"ought to\" can express a moral obligation or strong recommendation. Therefore, \"A & B\" is correct.",
+    amharicExplanation: "\"Should\" እና \"ought to\" ሁለቱም የሞራል ግዴታን ወይም ጠንካራ ምክርን ሊያሳዩ ይችላሉ። ስለዚህ \"A & B\" ትክክለኛ መልስ ነው።"
+},
+
+{
+    question: "23. Gebeyehu ____________ to the wedding, but he forgot.",
+    options: [
+        "ought to have gone",
+        "must have gone",
+        "had better gone",
+        "could have gone"
+    ],
+    answer: 0,
+    englishExplanation: "\"Ought to have gone\" expresses an action that was expected or advisable in the past but did not happen. The phrase \"but he forgot\" confirms that he did not go.",
+    amharicExplanation: "\"Ought to have gone\" ባለፈው ጊዜ መደረግ የነበረበትን ነገር ግን ያልተደረገ ተግባር ያሳያል። \"but he forgot\" ስለሚል ወደ ሠርጉ መሄድ ነበረበት ማለት ነው።"
+},
+
+{
+    question: "24. You ____________ go to bed early. Tomorrow is Sunday.",
+    options: [
+        "ought not to",
+        "should",
+        "had better",
+        "shouldn't"
+    ],
+    answer: 1,
+    englishExplanation: "\"Should\" is the most natural choice if the intended meaning is to recommend going to bed early. However, the phrase \"Tomorrow is Sunday\" does not provide a clear reason for this advice.",
+    amharicExplanation: "\"Should\" ቶሎ መተኛት እንደሚገባ ምክር ለመስጠት ተገቢ ነው። ሆኖም \"Tomorrow is Sunday\" የሚለው ምክንያት ከጥያቄው ጋር በግልጽ አይገናኝም።"
+},
+
+{
+    question: "25. The meat doesn't smell fresh. We ____________ eat it.",
+    options: [
+        "shouldn't",
+        "needn't",
+        "have to",
+        "ought to"
+    ],
+    answer: 0,
+    englishExplanation: "\"Shouldn't\" is used to advise against eating the meat because it may be spoiled or unsafe.",
+    amharicExplanation: "\"Shouldn't\" ሥጋው የተበላሸ ወይም ለጤና አደገኛ ሊሆን ስለሚችል እንዳንበላው ምክር ለመስጠት ይጠቅማል።"
+},
+
+{
+    question: "26. You're going to miss the school bus. You ____________ hurry.",
+    options: [
+        "shouldn't",
+        "had better not",
+        "had better",
+        "ought not to"
+    ],
+    answer: 2,
+    englishExplanation: "\"Had better\" gives strong or urgent advice. Since the person is going to miss the bus, hurrying is necessary.",
+    amharicExplanation: "\"Had better\" ጠንካራ ወይም አፋጣኝ ምክር ለመስጠት ይጠቅማል። አውቶቡሱን ላለማጣት ፈጥኖ መሄድ ያስፈልጋል።"
+},
+
+{
+    question: "27. Getachew: The exam coordinator strictly tells us not to bring mobile phones to the exam room, but some students keep bringing them. Megertu: They ____________ perform according to the campus rule.",
+    options: [
+        "had better not",
+        "had better",
+        "had not better",
+        "had better to"
+    ],
+    answer: 0,
+    englishExplanation: "\"Had better not\" is correct because the students are being strongly advised not to bring mobile phones into the examination room. It matches the rule stated in the question.",
+    amharicExplanation: "\"Had better not\" ትክክለኛ ነው፤ ተማሪዎቹ ሞባይል ስልክ ወደ ፈተና ክፍል እንዳያስገቡ ጠንካራ ምክር ይሰጣል።"
+},
+
+{
+    question: "28. Almaz: I have a sore throat. Mahi: You ____________ drink cold water.",
+    options: [
+        "should",
+        "shouldn't",
+        "had better",
+        "had not better"
+    ],
+    answer: 1,
+    englishExplanation: "\"Shouldn't\" is used to advise against drinking cold water in this context.",
+    amharicExplanation: "\"Shouldn't\" በዚህ አውድ የጉሮሮ ህመም ስላለ ቀዝቃዛ ውሃ እንዳይጠጣ ምክር ለመስጠት ይጠቅማል።"
+},
+
+{
+    question: "29. Winta: My husband snores a lot and I can't sleep. Haset: I think you ____________ warn him.",
+    options: [
+        "had better",
+        "shouldn't",
+        "needn't",
+        "ought"
+    ],
+    answer: 0,
+    englishExplanation: "\"Had better\" gives strong advice because the snoring is causing an immediate problem with sleep.",
+    amharicExplanation: "\"Had better\" ባለቤቷ ብዙ ስለሚያንኮራፋ የእንቅልፍ ችግሩን ለመፍታት ጠንካራ ምክር ለመስጠት ይጠቅማል።"
+},
+
+{
+    question: "30. This meat doesn't smell fresh. We ____________ it.",
+    options: [
+        "shouldn't eat",
+        "needn't taste",
+        "have to buy",
+        "ought to not cook"
+    ],
+    answer: 0,
+    englishExplanation: "\"Shouldn't eat\" is the best choice because the meat does not smell fresh and may be unsafe to eat.",
+    amharicExplanation: "\"Shouldn't eat\" ትክክለኛ ምርጫ ነው፤ ሥጋው ትኩስ ስለማይመስል ለጤና አደገኛ ሊሆን ስለሚችል መብላት የለብንም።"
+},
+
+{
+    question: "31. Abreham: Alex has a temperature. Mikyas: ____________",
+    options: [
+        "He had better not see a doctor",
+        "He had better not stay in bed",
+        "He shouldn't have a cold shower",
+        "He shouldn't go to the hospital"
+    ],
+    answer: 2,
+    englishExplanation: "\"He shouldn't have a cold shower\" is the most reasonable choice among the given options. A person with a fever should generally avoid unnecessarily cold showers.",
+    amharicExplanation: "ከተሰጡት ምርጫዎች \"He shouldn't have a cold shower\" በአውዱ የበለጠ ተገቢ ነው። ትኩሳት ያለው ሰው በጣም ቀዝቃዛ ሻወር እንዳይወስድ ምክር ይሰጣል።"
+},
+
+{
+    question: "32. Felimon: Tirfe is 80 kilos and she still eats junk food. Haymi: I think she ____________ go on a diet.",
+    options: [
+        "should",
+        "shouldn't",
+        "mustn't",
+        "can't"
+    ],
+    answer: 0,
+    englishExplanation: "\"Should\" is used to give advice. The speaker recommends that Tirfe improve her diet.",
+    amharicExplanation: "\"Should\" ምክር ለመስጠት ይጠቅማል። ትርፌ አመጋገቧን እንድታሻሽል ምክር እየተሰጣት ነው።"
+},
+
+{
+    question: "33. I have an important exam tomorrow. I ____________ go out tonight.",
+    options: [
+        "shouldn't",
+        "had better not",
+        "had better",
+        "ought not"
+    ],
+    answer: 1,
+    englishExplanation: "\"Had better not\" gives strong advice against going out because there is an important exam the next day.",
+    amharicExplanation: "\"Had better not\" ጠንካራ አሉታዊ ምክር ለመስጠት ይጠቅማል። ነገ አስፈላጊ ፈተና ስላለ ዛሬ ማታ መውጣት እንደሌለበት ያሳያል።"
+},
+
+{
+    question: "34. Ermi: I have a bad toothache. Fire B: I think you ____________ go to the dentist.",
+    options: [
+        "shouldn't",
+        "should",
+        "ought",
+        "had better not"
+    ],
+    answer: 1,
+    englishExplanation: "\"Should\" is used to give advice. The speaker recommends going to the dentist because of the bad toothache.",
+    amharicExplanation: "\"Should\" ምክር ለመስጠት ይጠቅማል። ጠንካራ የጥርስ ህመም ስላለ ወደ ጥርስ ሐኪም መሄድ ይመከራል።"
+},
+
+{
+    question: "35. A: I can't see the blackboard well. B: I think ____________.",
+    options: [
+        "you should sit at the back",
+        "you shouldn't ask your teacher",
+        "you had better sit close to the blackboard",
+        "you had better change your class"
+    ],
+    answer: 2,
+    englishExplanation: "\"You had better sit close to the blackboard\" gives strong advice that directly solves the problem of not seeing the blackboard clearly.",
+    amharicExplanation: "\"You had better sit close to the blackboard\" የጥቁር ሰሌዳውን በግልጽ ለማየት በቅርብ እንዲቀመጥ ጠንካራ ምክር ይሰጣል።"
+},
+
+{
+    question: "36. Melat: My phone bill is enormous. Melkam: I think ____________.",
+    options: [
+        "you not ought to talk too much",
+        "you ought not to talk too much",
+        "you ought to talk too much",
+        "you ought talk too much"
+    ],
+    answer: 1,
+    englishExplanation: "\"Ought not to\" is the correct negative form of \"ought to\". It advises the person not to talk too much in order to reduce the phone bill.",
+    amharicExplanation: "\"Ought not to\" የ\"ought to\" ትክክለኛ አሉታዊ ቅርጽ ነው። የስልክ ክፍያውን ለመቀነስ ብዙ ማውራት እንዳይችል ምክር ይሰጣል።"
+},
+
+{
+    question: "37. A: I can't sleep at night. B: ____________.",
+    options: [
+        "You ought to drink coffee at night",
+        "You should drink coffee at night",
+        "You had better not drink coffee at night",
+        "You had better drink coffee at night"
+    ],
+    answer: 2,
+    englishExplanation: "\"Had better not\" gives strong advice against drinking coffee at night because caffeine may make it more difficult to sleep.",
+    amharicExplanation: "\"Had better not\" ማታ ቡና እንዳይጠጣ ጠንካራ ምክር ይሰጣል፤ ካፌይን እንቅልፍን ሊያስቸግር ይችላል።"
+},],
         2: [],
         3: [],
         4: [],
