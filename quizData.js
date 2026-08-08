@@ -714,7 +714,7 @@ const quizData = {
     answer: 2,
     englishExplanation: "Gestalt psychology focuses on how the mind organizes separate elements into meaningful and organized wholes. Its central idea is that the whole is more than simply the sum of its individual parts.",
     amharicExplanation: "የጌስታልት (Gestalt) ስነ-ልቦና ዋና ትኩረቱ የተለያዩ ክፍሎች እንዴት ተደራጅተው አንድ ሙሉ እና ትርጉም ያለው ነገር እንደሚፈጥሩ ማጥናት ነው። ዋናው ሀሳቡም ሙሉው ነገር ከእያንዳንዱ ክፍል ድምር በላይ ነው የሚለው ነው።"
-},],
+}],
         2: [],
         3: [],
         4: [],
