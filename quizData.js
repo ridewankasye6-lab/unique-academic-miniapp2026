@@ -1483,7 +1483,1106 @@ const quizData = {
     englishExplanation: "An inductive argument is cogent only when it is strong and has true premises. Therefore, any weak inductive argument fails the strength requirement and is necessarily uncogent.",
     amharicExplanation: "'Cogent' ለመሆን ክርክሩ ጠንካራ (strong) እና እውነተኛ ግቢዎች ሊኖሩት ይገባል። ስለዚህ ማንኛውም ደካማ (weak) ክርክር የግድ uncogent ይሆናል።"
 },  {     question: "More than 99% of all airplane flights land safely. Therefore, probably the next flight to depart from JFK International Airport will land safely.",     options: [       "Deductive, valid.",       "Inductive, strong.",       "Inductive, weak.",       "Deductive, invalid.",       "Inductive, uncogent."     ],     answer: 1,     englishExplanation: "This is an inductive argument because the conclusion uses 'probably' and predicts a future case based on statistical evidence rather than guaranteeing the conclusion with absolute certainty. It is strong because more than 99% of flights land safely, giving very strong support to the prediction.",     amharicExplanation: "ይህ ኢንዳክቲቭ ክርክር ነው፤ ምክንያቱም 'probably' የሚለው ቃል መደምደሚያው ፍጹም እርግጠኛ ሳይሆን በስታቲስቲካዊ መረጃ ላይ ተመስርቶ የወደፊት ሁኔታን እንደሚተነብይ ያሳያል። ከ99% በላይ የሚሆኑ በረራዎች በደህና ስለሚያርፉ ለመደምደሚያው ከፍተኛ ድጋፍ አለ፤ ስለዚህ ጠንካራ (strong) ነው።"   },    {     question: "Trees bearing apples, pears, and apricots all thrive in Washington state. It must be the case that all fruit trees thrive in Washington state.",     options: [       "Inductive, weak.",       "Deductive, sound.",       "Deductive, invalid.",       "Deductive, valid.",       "Inductive, strong."     ],     answer: 0,     englishExplanation: "This argument makes a broad generalization about all fruit trees from only a few specific types: apples, pears, and apricots. Therefore, it is inductive. It is weak because the evidence is not sufficient to support the conclusion about every kind of fruit tree.",     amharicExplanation: "ይህ ክርክር ከጥቂት የፍራፍሬ ዛፎች ማለትም ከአፕል፣ ፒር እና አፕሪኮት ተነስቶ ስለሁሉም የፍራፍሬ ዛፎች አጠቃላይ ድምዳሜ ይሰጣል። ስለዚህ ኢንዳክቲቭ ነው። ጥቂት ምሳሌዎች ብቻ ሁሉም የፍራፍሬ ዛፎች በዋሽንግተን እንደሚበቅሉ ለማረጋገጥ በቂ ስላልሆኑ ደካማ (weak) ነው።"   },    {     question: "DNA tests of blood found at the crime scene indicate a match with the defendant's blood. Therefore, the defendant must have been present at the crime scene.",     options: [       "Inductive, weak.",       "Inductive, strong.",       "Deductive, valid.",       "Deductive, invalid.",       "Inductive, cogent."     ],     answer: 1,     englishExplanation: "The DNA match provides very strong empirical evidence that the defendant's blood was at the crime scene. However, the evidence does not logically guarantee that the defendant himself was present, because there can be other explanations. Therefore, the argument is inductive and strong.",     amharicExplanation: "የዲኤንኤ ምርመራው የተጠርጣሪው ደም በወንጀል ቦታው እንደነበር ከፍተኛ ማስረጃ ይሰጣል። ነገር ግን ይህ ብቻ ተጠርጣሪው በእርግጥ በቦታው ነበር ብሎ በሎጂክ ፍጹም አያረጋግጥም። ስለዚህ ኢንዳክቲቭ እና ጠንካራ (strong) ነው።"   },    {     question: "Of the following choices, which one is a sound argument?",     options: [       "All human beings are mortals in that all women are human beings and all women are mortals.",       "All women are mortals given that all human beings are mortals and all women are human beings.",       "All mammals are animals for all cows are mammals and all cows are animals.",       "All mammals are animals for all bats are mammals and all bats are animals."     ],     answer: 1,     englishExplanation: "A sound deductive argument must be valid and have true premises. Choice B has the correct logical structure: all human beings are mortal, all women are human beings, therefore all women are mortal. The premises are also true, so the argument is sound.",     amharicExplanation: "Sound የሆነ ዲዳክቲቭ ክርክር ሁለት መስፈርቶችን ያሟላል፤ ትክክለኛ የሎጂክ አወቃቀር (valid) እና እውነተኛ መነሻ ሀሳቦች (true premises) ሊኖሩት ይገባል። በB ላይ ሁሉም ሰዎች ሟች ናቸው፣ ሁሉም ሴቶች ሰዎች ናቸው፣ ስለዚህ ሁሉም ሴቶች ሟች ናቸው የሚል ትክክለኛ አወቃቀር አለ።"   },    {     question: "The four main divisions of philosophy are metaphysics, epistemology, axiology, and ____.",     options: [       "Bioethics",       "Logic",       "Aesthetics",       "Categorical logic"     ],     answer: 1,     englishExplanation: "The four traditional major branches of philosophy are metaphysics, epistemology, axiology, and logic. Metaphysics studies reality, epistemology studies knowledge, axiology studies values, and logic studies correct reasoning.",     amharicExplanation: "የፍልስፍና አራቱ ዋና ዋና ክፍሎች ሜታፊዚክስ፣ ኤፒስቲሞሎጂ፣ አክሲዮሎጂ እና ሎጂክ ናቸው። ሜታፊዚክስ እውነታን፣ ኤፒስቲሞሎጂ እውቀትን፣ አክሲዮሎጂ እሴቶችን እና ሎጂክ ትክክለኛ አስተሳሰብን ያጠናል።"   },    {     question: "The study of reality in the broadest sense, an inquiry into the elemental nature of the universe and the things in it, is known as ____.",     options: [       "Metaphysics",       "Epistemology",       "Quantum physics",       "Axiology"     ],     answer: 0,     englishExplanation: "Metaphysics is the branch of philosophy concerned with the fundamental nature of reality, existence, being, and the universe.",     amharicExplanation: "ሜታፊዚክስ (Metaphysics) ስለ እውነታ፣ ሕልውና፣ መኖር እና የአጽናፈ ዓለም መሠረታዊ ባህርይ የሚያጠና የፍልስፍና ዘርፍ ነው።"   },    {     question: "Questions like 'What is knowledge?' and 'What is truth?' are mainstays in the branch of philosophy known as ____.",     options: [       "Logic",       "Metaphysics",       "Epistemology",       "Aesthetics"     ],     answer: 2,     englishExplanation: "Epistemology is the branch of philosophy that studies knowledge, including its nature, sources, justification, limits, and the nature of truth.",     amharicExplanation: "ኤፒስቲሞሎጂ (Epistemology) እውቀት ምን እንደሆነ፣ ከየት እንደሚገኝ፣ እንዴት እንደሚረጋገጥ እና የእውቀት ወሰን ምን እንደሆነ የሚያጠና የፍልስፍና ክፍል ነው።"   },    {     question: "An argument in logic consists of:",     options: [       "Obviously true statements.",       "Controversial statements.",       "A collection of statements that include one or more premises and a conclusion.",       "True statements."     ],     answer: 2,     englishExplanation: "In logic, an argument is a collection of statements containing one or more premises and a conclusion. The premises provide reasons or evidence for accepting the conclusion.",     amharicExplanation: "በሎጂክ ክርክር (Argument) ማለት አንድ ወይም ከዚያ በላይ መነሻ ሀሳቦች (Premises) እና አንድ መደምደሚያ (Conclusion) የያዘ የሐሳቦች ስብስብ ነው።"   },    {     question: "A valid deductive argument must have",     options: [       "True premises.",       "A true conclusion.",       "False premises and a true conclusion.",       "True premises supporting a true conclusion."     ],     answer: 3,     englishExplanation: "Among the choices given, D is the intended answer because it describes a deductive argument with true premises and a true conclusion. However, strictly speaking, validity itself does not require true premises; an argument is valid when its conclusion necessarily follows from its premises. A valid argument with true premises is sound.",     amharicExplanation: "ከተሰጡት ምርጫዎች D የታሰበው መልስ ነው። ሆኖም በሎጂክ ትክክለኛነት (Validity) ብቻ የመነሻ ሀሳቦች እውነት መሆን ግዴታ አይደለም። Valid ማለት ከመነሻ ሀሳቦች የተነሳ መደምደሚያው በሎጂክ ግዴታ መከተል ማለት ነው። Valid እና እውነተኛ premises ያለው ክርክር Sound ይባላል።"   },    {     question: "Inductive arguments rely on",     options: [       "Observed cases to infer the recurrence of unobserved cases.",       "Unobserved cases to infer the recurrence of observed cases.",       "A valid inference from premises to conclusion.",       "Lack of evidence."     ],     answer: 0,     englishExplanation: "Inductive arguments use observed cases, experiences, or evidence to make predictions or generalizations about cases that have not yet been observed.",     amharicExplanation: "ኢንዳክቲቭ ክርክሮች የተመለከቱ ጉዳዮችን ወይም ማስረጃዎችን በመጠቀም ገና ያልተመለከቱ ጉዳዮችን ለመተንበይ ወይም አጠቃላይ ድምዳሜ ለመስጠት ይጠቀማሉ።"   },    {     question: "Which of the following is a necessary condition for cooking an egg?",     options: [       "Boiling it.",       "Raising its temperature.",       "Frying it.",       "Poaching it.",       "Breaking its shell."     ],     answer: 1,     englishExplanation: "A necessary condition is something that must occur for an event to happen. An egg can be cooked by boiling, frying, baking, or other methods, but its temperature must be raised sufficiently to cook it.",     amharicExplanation: "አስፈላጊ ቅድመ-ሁኔታ (Necessary condition) ማለት አንድ ነገር እንዲፈጠር የግድ መሟላት ያለበት ሁኔታ ነው። እንቁላልን መቀቀል፣ መጥበስ ወይም በሌላ መንገድ ማብሰል ይቻላል፤ ነገር ግን ለማብሰል የሙቀት መጠኑ መጨመር አለበት።"   },    {     question: "Which of the following is a sufficient condition for being a bird?",     options: [       "Having a tail.",       "Being a canary.",       "Laying eggs.",       "Being able to fly.",       "Having a brain."     ],     answer: 1,     englishExplanation: "A sufficient condition is a condition that guarantees the result. Being a canary is sufficient for being a bird because every canary is a bird. Having a tail, laying eggs, or being able to fly does not necessarily guarantee that something is a bird.",     amharicExplanation: "በቂ ቅድመ-ሁኔታ (Sufficient condition) ማለት ከተሟላ የሚፈለገውን ውጤት ዋስትና የሚሰጥ ሁኔታ ነው። ካናሪ መሆን ወፍ መሆንን ያረጋግጣል፤ ምክንያቱም ካናሪዎች ሁሉ ወፎች ናቸው። ጅራት መኖር ወይም መብረር ግን ብቻውን ወፍ መሆንን አያረጋግጥም።"   },    {     question: "Given that n is an integer, it follows that 2n is an even integer.",     options: [       "Inductive, strong.",       "Deductive, valid.",       "Deductive, sound.",       "Inductive, weak.",       "Deductive, invalid."     ],     answer: 1,     englishExplanation: "This is a deductive argument because the conclusion necessarily follows from the mathematical definition of an even integer. For any integer n, 2n is divisible by 2 and therefore is even. Thus, the argument is valid.",     amharicExplanation: "ይህ ዲዳክቲቭ (Deductive) ክርክር ነው፤ ምክንያቱም መደምደሚያው ከሂሳባዊ ደንብ በግዴታ ይከተላል። n ማንኛውም ኢንቲጀር ከሆነ 2n በ2 ስለሚካፈል ሁልጊዜ ኢቨን (even) ኢንቲጀር ይሆናል። ስለዚህ valid ነው።"   },    {     question: "Which of the following is a deductive argument?",     options: [       "An expository passage.",       "An argument from authority.",       "A causal inference.",       "A disjunctive syllogism.",       "A command."     ],     answer: 3,     englishExplanation: "A disjunctive syllogism is a standard deductive form. For example: Either A or B. Not A. Therefore, B. If the premises are true, the conclusion necessarily follows.",     amharicExplanation: "Disjunctive syllogism የተለመደ የዲዳክቲቭ ክርክር አወቃቀር ነው። ለምሳሌ፦ 'A ወይም B ነው። A አይደለም። ስለዚህ B ነው።' የሚል አወቃቀር ነው።"   },    {     question: "Which of the following are all conclusion indicators?",     options: [       "Implies that, accordingly, since.",       "For the reason that, it follows that, inasmuch as.",       "Therefore, for this reason, entails that.",       "Hence, thus, given that.",       "Given that, as indicated by, seeing that."     ],     answer: 2,     englishExplanation: "Therefore, for this reason, and entails that are conclusion indicators. They signal that a conclusion is being presented or follows from the preceding reasons.",     amharicExplanation: "Therefore (ስለዚህ)፣ for this reason (በዚህ ምክንያት) እና entails that የሚሉት ቃላት መደምደሚያ (Conclusion) መቅረቡን የሚያመለክቱ ቃላት ናቸው።"   },    {     question: "Which of the following is an inductive argument?",     options: [       "An argument from analogy.",       "A categorical syllogism.",       "A consequent.",       "A piece of advice.",       "An argument from definition."     ],     answer: 0,     englishExplanation: "An argument from analogy compares two or more things and uses their similarities to infer that what is true of one is probably true of another. Because the conclusion is probable rather than guaranteed, it is inductive.",     amharicExplanation: "Argument from analogy ሁለት ወይም ከዚያ በላይ ነገሮችን በመመሳሰል ላይ በመመስረት መደምደሚያ የሚሰጥ ነው። ውጤቱ ፍጹም እርግጠኛ ሳይሆን እድላዊ ስለሆነ ኢንዳክቲቭ ነው።"   },    {     question: "In the argument 'All animals are living things for all plants are animals and all plants are living things,' which of the following best identifies the premise and conclusion?",     options: [       "Premises: All plants are animals, All plants are living things; Conclusion: All animals are living things.",       "Premises: All animals are living things, All plants are living things; Conclusion: All plants are animals.",       "Premises: All plants are animals, All animals are living things; Conclusion: All plants are living things."     ],     answer: 0,     englishExplanation: "The word 'for' functions as a premise indicator in this argument. The statements after 'for' provide the premises, while 'All animals are living things' is the conclusion being supported.",     amharicExplanation: "'for' የሚለው ቃል መነሻ ሀሳብ (Premise) መኖሩን የሚያመለክት ነው። ከ'for' በኋላ ያሉት ሁለት ሐሳቦች መነሻዎች ሲሆኑ፣ 'All animals are living things' ደግሞ መደምደሚያ ነው።"   },    {     question: "An argument may legitimately be spoken of as 'true' or 'false.'",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "In logic, statements can be true or false. Arguments, however, are evaluated as valid or invalid in deductive logic and strong or weak in inductive logic. Therefore, an argument as a whole is not normally called true or false.",     amharicExplanation: "በሎጂክ ነጠላ ሐሳቦች (Statements) እውነት ወይም ውሸት ሊባሉ ይችላሉ። ክርክር (Argument) ግን በዲዳክቲቭ ሎጂክ valid ወይም invalid እና በኢንዳክቲቭ ሎጂክ strong ወይም weak ተብሎ ይገመገማል።"   },    {     question: "Some arguments, while not completely valid, are almost valid.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Deductive validity is absolute. An argument is either valid or invalid; there are no degrees of deductive validity. An argument cannot be technically 'almost valid.'",     amharicExplanation: "የዲዳክቲቭ ክርክር validity ፍጹም ነው። አንድ ክርክር valid ወይም invalid ነው፤ 'almost valid' የሚባል መካከለኛ ደረጃ የለም።"   },    {     question: "If an argument has true premises and a true conclusion, we know that it is a perfectly good argument.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "True premises and a true conclusion alone do not guarantee that an argument is valid or sound. The conclusion must also follow logically from the premises. An argument can have true premises and a true conclusion while still having faulty reasoning.",     amharicExplanation: "መነሻ ሀሳቦቹም መደምደሚያውም እውነት መሆናቸው ብቻ ክርክሩ ፍጹም ጥሩ ወይም sound እንደሆነ አያረጋግጥም። መደምደሚያው በሎጂክ ከመነሻ ሀሳቦቹ መከተል አለበት።"   }],
-        3: [],
+        3: [{
+    question: "1. Which of the following are all denoted by the term 'city'?",
+    options: [
+        "A. Museums, schools, banks, restaurants.",
+        "B. French, Italian, Spanish American",
+        "C. France, Italy, Spain, United States",
+        "D. Paris, Rome, Madrid, San Francisco."
+    ],
+    answer: 3,
+    englishExplanation: "The extension (denotation) of a term consists of the specific objects or members that the term describes. Paris, Rome, Madrid, and San Francisco are all actual individual cities, whereas the other options list buildings/features, nationalities, or countries.",
+    amharicExplanation: "የቃሉ ማራዘሚያ (extension/denotation) ቃሉ የሚያመለክታቸውን ትክክለኛ ነገሮች ይይዛል። 'ፓሪስ፣ ሮም፣ ማድሪድ እና ሳን ፍራንሲስኮ' ሁሉም ትክክለኛ ከተሞች በመሆናቸው ትክክለኛው መልስ ይሆናሉ።"
+},
+
+{
+    question: "2. 'Industrious' means 'hardworking'",
+    options: [
+        "A. Definition by genus and difference",
+        "B. Demonstrative",
+        "C. Operational",
+        "D. Synonymous"
+    ],
+    answer: 3,
+    englishExplanation: "A synonymous definition is one in which the definiendum is defined by providing another word or phrase that has the same meaning (a synonym). 'Industrious' and 'hardworking' mean the same thing.",
+    amharicExplanation: "ተመሳሳይ ቃል (Synonymous definition) ማለት አንድን ቃል ተመሳሳይ ትርጉም ባለው ሌላ ቃል መግለፅ ነው። 'ኢንዱስትሪየስ' (Industrious) እና 'ሃርድዎርኪንግ' (Hardworking) ተመሳሳይ ትርጉም አላቸው።"
+},
+
+{
+    question: "3. Which of the following are both extensional definitions?",
+    options: [
+        "A. Enumerative definition, synonymous definition.",
+        "B. Operational definition, enumerative definition.",
+        "C. Definition by genus and difference, definition by subclass.",
+        "D. Definition by subclass, demonstrative definition."
+    ],
+    answer: 3,
+    englishExplanation: "Extensional definitions assign meaning to a term by giving examples or members of the class. Both definitions by subclass (naming subclasses) and demonstrative definitions (pointing to examples) fall under extensional types.",
+    amharicExplanation: "ኤክስቴንሽናል ፍቺዎች (Extensional definitions) ማለት የቃሉን ትርጉም ምሳሌዎችን ወይም ንዑስ ክፍሎችን በመጥቀስ የሚያስረዱ ናቸው። በንዑስ ክፍል መወሰን እና በምሳሌ ማሳየት (demonstrative) ሁለቱም የዚህ አይነት ፍቺዎች ናቸው።"
+},
+
+{
+    question: "4. Which of the following words is a term?",
+    options: [
+        "A. Overly generous.",
+        "B. Highly promising.",
+        "C. Resignation.",
+        "D. For sale."
+    ],
+    answer: 2,
+    englishExplanation: "In logic, a term is a word or group of words that can serve as the subject of a statement and refers to a specific concept or object without ambiguity. 'Resignation' is a distinct noun term, while the other choices are descriptive phrases.",
+    amharicExplanation: "በሎጂክ ውስጥ 'ተርም' (term) ማለት የዓረፍተ ነገር ሐረግ ወይም ርዕሰ ጉዳይ ሆኖ ሊያገለግል የሚችል እና ግልጽ ትርጉም ያለው ቃል ነው። 'Resignation' ነጠላ ቃል ሲሆን ሌሎች አማራጮች ግን ገላጭ ሐረጎች ናቸው።"
+},
+
+{
+    question: "5. Words and statements that have cognitive meaning are those that",
+    options: [
+        "A. Convey opinions.",
+        "B. Convey information.",
+        "C. Evoke feelings.",
+        "D. Express rational connections between statements."
+    ],
+    answer: 1,
+    englishExplanation: "Cognitive meaning refers to language that communicates factual content, knowledge, or information, rather than just expressing emotions or opinions.",
+    amharicExplanation: "የግንዛቤ ትርጉም (cognitive meaning) ማለት እውነታዎችን፣ እውቀትን ወይም መረጃዎችን የሚያስተላልፍ እንጂ ስሜቶችን ወይም አመለካከቶችን ብቻ የሚገልጽ አይደለም።"
+},
+
+{
+    question: "6. 'Labyrinth' means an intricate structure of intercommunicating passages, through which it is difficult to find one's way without a clue.",
+    options: [
+        "A. Theoretical definition",
+        "B. Stipulative definition",
+        "C. Lexical definition",
+        "D. Persuasive definition"
+    ],
+    answer: 2,
+    englishExplanation: "A lexical definition reports the conventional, everyday meaning of a word as it is actually used in a language, such as the meaning found in a dictionary.",
+    amharicExplanation: "ሌክሲካል ፍቺ (Lexical definition) ማለት ቃሉ በዕለት ተዕለት ቋንቋ ውስጥ የሚታወቅበትን የተለመደ ትርጉም (በመዝገበ-ቃላት ውስጥ የሚገኘውን) የሚያሳይ ነው።"
+},
+
+{
+    question: "7. 'Red' means this, and this, and this (as you point successively to a red fire truck, a red apple, and a red crayon).",
+    options: [
+        "A. Enumerative",
+        "B. Synonymous",
+        "C. Ostensive",
+        "D. Definition by subclass"
+    ],
+    answer: 2,
+    englishExplanation: "An ostensive (or demonstrative) definition explains the meaning of a term by directly pointing to physical examples of the term in the real world.",
+    amharicExplanation: "ኦስቴንቲቭ (ostensive) ወይም ዴሞንስትሬቲቭ ፍቺ ማለት እቃዎችን ወይም ነገሮችን በእጅ በመጠቆም ወይም በማሳየት ትርጉም መስጠት ማለት ነው።"
+},
+
+{
+    question: "8. Which one of the following is false?",
+    options: [
+        "A. The meaning given to a word by a precising definition is completely arbitrary.",
+        "B. Theoretical definitions provide a theoretical characterization of the entity or entities denoted by the word being defined.",
+        "C. The definiendum is the word or term that is supposed to be defined.",
+        "D. A lexical definition reports the way a word is actually used in a language."
+    ],
+    answer: 0,
+    englishExplanation: "Precising definitions are not completely arbitrary; they are created to reduce vagueness, but they must still conform to how the term is commonly understood within a context. Thus, calling them completely arbitrary is false.",
+    amharicExplanation: "የትክክለኛነት ፍቺዎች (Precising definitions) ሙሉ በሙሉ የዘፈቀደ (arbitrary) አይደሉም፤ ግልጽ እንዳልሆኑ ለመቀነስ ይረዳሉ እንጂ ካለው አጠቃቀም ጋር መጣጣም አለባቸው። ስለዚህ 'ሙሉ በሙሉ የዘፈቀደ ናቸው' የሚለው ሐሳብ ውሸት ነው።"
+},
+
+{
+    question: "9. The definition 'Colossal' means huge is an example of",
+    options: [
+        "A. A definition by genus and difference",
+        "B. An enumerative definition.",
+        "C. An extensional definition.",
+        "D. A synonymous definition."
+    ],
+    answer: 3,
+    englishExplanation: "Defining 'colossal' by using the single equivalent word 'huge' is an example of a synonymous definition because it equates a term with a direct synonym.",
+    amharicExplanation: "'ኮሎሳል' (colossal) ማለት 'ግዙፍ' (huge) ማለት ነው ሲባል ተመሳሳይ ትርጉም ያለው ቃል በመስጠት ሲሆን ይህም ተመሳሳይ ቃል ፍቺ (synonymous definition) ይባላል።"
+},
+
+{
+    question: "10. A claim that something is good, bad, right, or wrong is called a ---------",
+    options: [
+        "A. Ambiguous claim",
+        "B. Traditional claim",
+        "C. Factual claim.",
+        "D. Value claim."
+    ],
+    answer: 3,
+    englishExplanation: "A value claim expresses a moral, ethical, or aesthetic judgment regarding whether something possesses positive or negative qualities such as good, bad, right, or wrong.",
+    amharicExplanation: "የሞራል፣ የዕሴት ወይም የውበት ፍርድ የሚሰጥበት (ጥሩ፣ መጥፎ፣ ትክክል ወይም ስህተት የሚል) አቋም የዕሴት ጥያቄ (Value claim) ይባላል።"
+},
+
+{
+    question: "11. Which of the following statements is ambiguous?",
+    options: [
+        "A. Professor Andrews talked about sex with his students.",
+        "B. The problems on this math test are easy.",
+        "C. Aristotle was born in 1596.",
+        "D. Frances lost the election for student body president."
+    ],
+    answer: 0,
+    englishExplanation: "This statement is ambiguous because it can be interpreted in two different ways: the professor may have discussed the topic of sex with his students, or the wording can be interpreted in another way because of the phrase 'talked about sex with his students.'",
+    amharicExplanation: "ይህ ዓረፍተ ነገር ድርብ ትርጉም (ambiguous) አለው። ፕሮፌሰሩ ስለ sex ርዕሰ ጉዳይ ከተማሪዎቹ ጋር ተወያዩ ሊባል ይችላል፣ አገላለጹም በሌላ መንገድ ሊተረጎም ይችላል።"
+},
+
+{
+    question: "12. 'Tree' means this, and this, and this (as you point to a number of trees).",
+    options: [
+        "A. Enumerative",
+        "B. Possessive",
+        "C. Demonstrative",
+        "D. Operational"
+    ],
+    answer: 2,
+    englishExplanation: "Pointing directly at multiple physical objects while saying 'this, and this' is the hallmark of a demonstrative (ostensive) definition.",
+    amharicExplanation: "ጣትን ወደ ተለያዩ ዛፎች በመጥቆም 'ይህ፣ ይህ እና ይህ' እያሉ ማሳየት የዴሞንስትሬቲቭ (Demonstrative) ፍቺ ዋና መገለጫ ነው።"
+},
+
+{
+    question: "13. 'Done' means, in reference to a baking cake, that a wooden toothpick poked into the center comes out clean.",
+    options: [
+        "A. Managerial",
+        "B. Operational",
+        "C. Technical",
+        "D. Strategic"
+    ],
+    answer: 1,
+    englishExplanation: "An operational definition specifies concrete, physical procedures or tests to determine if a term applies, such as testing a cake with a toothpick.",
+    amharicExplanation: "ኦፕሬሽናል ፍቺ (Operational definition) ማለት አንድ ነገር መፈጸሙን ወይም መሟላቱን የሚያረጋግጥ ተግባራዊ ፈተና ወይም እርምጃ ያስቀምጣል። ለምሳሌ ኬክ መብሰሉን በጥርስ ማጽጃ ማረጋገጥ።"
+},
+
+{
+    question: "14. A triangle is 'equilateral' if and only if a compass, when placed sequentially on two vertices and properly adjusted, strikes through the other two vertices.",
+    options: [
+        "A. Managerial",
+        "B. Strategic",
+        "C. Operational",
+        "D. Technical"
+    ],
+    answer: 2,
+    englishExplanation: "This provides a measurable, step-by-step physical procedure using a compass to define a geometric property, which makes it an operational definition.",
+    amharicExplanation: "ኮምፓስን በመጠቀም የሚደረግ የተለካ አካሄድ ወይም እርምጃ ስለሆነ ይህ ኦፕሬሽናል (Operational) ፍቺ ይባላል።"
+},
+
+{
+    question: "15. 'Angel' is a word that originates from the Greek word angelos, which means messenger.",
+    options: [
+        "A. Subclass",
+        "B. Operational",
+        "C. Etymological",
+        "D. Enumerative"
+    ],
+    answer: 2,
+    englishExplanation: "An etymological definition explains the historical root, origin, or ancestry of a word in an older language, such as Greek or Latin.",
+    amharicExplanation: "ኤቲሞሎጂካል ፍቺ (Etymological definition) የቃሉን ትውፊት፣ ታሪካዊ መነሻ ወይም ከየትኛው ጥንታዊ ቋንቋ እንደመጣ የሚያሳይ ነው።"
+},
+
+{
+    question: "16. 'Philosopher' means someone such as Plato, Aristotle, Descartes, or Kant.",
+    options: [
+        "A. Informative",
+        "B. Enumerative",
+        "C. Operational",
+        "D. Qualitative"
+    ],
+    answer: 1,
+    englishExplanation: "An enumerative definition assigns meaning by listing individual, specific examples that fall under the category being defined.",
+    amharicExplanation: "ኢኑሜሬቲቭ ፍቺ (Enumerative definition) ማለት በምድቡ ውስጥ የሚገኙ ግለሰባዊ ምሳሌዎችን በመጥቀስ ትርጉም መስጠት ማለት ነው። ለምሳሌ Plato፣ Aristotle፣ Descartes እና Kant።"
+},
+
+{
+    question: "17. 'Hot' means, for an electric iron, that your wetted finger sizzles when placed momentarily in contact with it.",
+    options: [
+        "A. Managerial",
+        "B. Technical",
+        "C. Operational",
+        "D. Strategic"
+    ],
+    answer: 2,
+    englishExplanation: "Defining heat behavior through a direct, testable physical reaction, such as water sizzling on an iron, is a classic example of an operational definition.",
+    amharicExplanation: "በእርጥብ ጣት ብረቱን በመንካት የሚፈጠረውን ድምጽና ምላሽ በማየት ሙቀትን መለካት ስለሚያሳይ ኦፕሬሽናል (Operational) ፍቺ ይባላል።"
+},
+
+{
+    question: "18. 'Universe' originates from the Latin word universum, which means whole or entire.",
+    options: [
+        "A. Synonymous",
+        "B. Enumerative",
+        "C. Etymological",
+        "D. Operational"
+    ],
+    answer: 2,
+    englishExplanation: "Tracing a word back to its root Latin form and historical meaning, 'universum', makes this an etymological definition.",
+    amharicExplanation: "'ዩኒቨርስ' የሚለው ቃል ከላቲን ቋንቋ እንደመጣና ትርጉሙም ሙሉ ወይም ሙሉውን ዓለም ማለት መሆኑን የሚያሳይ በመሆኑ ኤቲሞሎጂካል (Etymological) ፍቺ ይባላል።"
+},
+
+{
+    question: "19. Which of the following is always an extensional definition?",
+    options: [
+        "A. Precising definition.",
+        "B. Stipulative definition.",
+        "C. Theoretical definition.",
+        "D. Demonstrative definition."
+    ],
+    answer: 3,
+    englishExplanation: "Demonstrative definitions, which point at physical items, rely on showing real-world members or examples of the term, making them exclusively extensional definitions.",
+    amharicExplanation: "ዴሞንስትሬቲቭ ፍቺዎች (Demonstrative definitions) ሁልጊዜም ነገሮችን በአካል በመጥቆም ወይም ምሳሌዎችን በማሳየት የሚሰሩ በመሆኑ ሙሉ በሙሉ ኤክስቴንሽናል (extensional) ናቸው።"
+},
+
+{
+    question: "20. The definition 'Whistleblower' means a back-stabbing employee who reveals company secrets to enemies on the outside' is an example of:",
+    options: [
+        "A. A lexical definition.",
+        "B. A persuasive definition.",
+        "C. A demonstrative definition.",
+        "D. A stipulative definition."
+    ],
+    answer: 1,
+    englishExplanation: "A persuasive definition is crafted to evoke strong emotional attitudes or bias, either positive or negative, to influence someone's point of view. Calling a whistleblower a 'back-stabbing employee' uses emotionally loaded language.",
+    amharicExplanation: "አሳማኝ ፍቺ (Persuasive definition) የሰዎችን ስሜት ለመቀየር ወይም አመለካከት ላይ ተጽዕኖ ለማሳደር ሐሳብን ወይም ቃልን በአሉታዊ ወይም በአዎንታዊ ስሜት ቀስቃሽ መንገድ መግለፅ ነው።"
+},{
+    question: "21. The intension of a term consists of:",
+    options: [
+        "A. The members of the class that the term denotes.",
+        "B. The objectives to be accomplished by using the term.",
+        "C. The qualities or attributes that the term connotes.",
+        "D. The subjective feelings in the mind of the speaker or writer.",
+        "E. The class of definitions that a term may have."
+    ],
+    answer: 2,
+    englishExplanation: "The intension (or connotation) of a term refers to the collection of properties, attributes, or qualities that a term implies or specifies, rather than the actual objects it points to.",
+    amharicExplanation: "የቃሉ ኢንቴንሽን (Intension) ወይም ኮኖቴሽን (Connotation) ማለት ቃሉ የሚያመለክታቸውን ትክክለኛ እቃዎች ሳይሆን፣ ቃሉ የሚያያዛቸውን ወይም የሚወክላቸውን ባህሪያት፣ መገለጫዎች ወይም ጥራቶች ያካትታል።"
+},
+
+{
+    question: "22. Denotation means roughly the same thing as:",
+    options: [
+        "A. Extension.",
+        "B. Difference.",
+        "C. Intension.",
+        "D. Connotation.",
+        "E. Species."
+    ],
+    answer: 0,
+    englishExplanation: "In logic, denotation is synonymous with extension, which refers to the group or collection of all actual objects or members that the term describes.",
+    amharicExplanation: "በሎጂክ ጥናት ውስጥ ዲኖቴሽን (Denotation) ከ ኤክስቴንሽን (Extension) ጋር ተመሳሳይ ትርጉም አለው። ይኸውም ቃሉ የሚወክላቸውን ወይም የሚገልጻቸውን ትክክለኛ እቃዎች ወይም አባላት በሙሉ ይመለከታል።"
+},
+
+{
+    question: "23. The definition \"Phonograph\" is a word derived from the Greek words 'phon,' meaning 'sound' and 'graphein,' meaning 'to write' is an example of:",
+    options: [
+        "A. An etymological definition.",
+        "B. A precising definition.",
+        "C. An extensional definition.",
+        "D. A stipulative definition.",
+        "E. A definition by genus and difference."
+    ],
+    answer: 0,
+    englishExplanation: "An etymological definition explains the linguistic origin, root, or historical development of a word, showing what the word meant in an older language such as Greek or Latin.",
+    amharicExplanation: "የቃላት መነሻ (Etymological definition) የሚባለው የቃሉን የቋንቋ ምንጭ፣ ስርወ-ቃል ወይም ታሪካዊ እድገት የሚያሳይ እና ቃሉ በፊት በነበረ ቋንቋ ምን ማለት እንደነበረ የሚገልጽ ነው።"
+},
+
+{
+    question: "24. The term \"currently living dinosaur\" has:",
+    options: [
+        "A. Closed extension.",
+        "B. Empty intension.",
+        "C. Empty extension.",
+        "D. Meaningless connotation.",
+        "E. Ambiguous extension."
+    ],
+    answer: 2,
+    englishExplanation: "An empty extension occurs when a term describes a class that has no actual existing members in the real world. Dinosaurs are extinct, so there are no currently living dinosaurs.",
+    amharicExplanation: "ባዶ ኤክስቴንሽን (Empty extension) የሚኖረው አንድ ቃል በእውነተኛው ዓለም ውስጥ ምንም እውነተኛ አባል የሌለውን ነገር ሲያመለክት ነው። ዳይኖሰሮች ስለጠፉ በአሁኑ ጊዜ ሕያው ዳይኖሰር የለም።"
+},
+
+{
+    question: "25. In the definition \"Mandolin\" means a twelve-stringed lute, the words \"a twelve-stringed lute\" are the:",
+    options: [
+        "A. Exalanandum.",
+        "B. Definiendum.",
+        "C. Explanans.",
+        "D. Definiens.",
+        "E. Explicandum."
+    ],
+    answer: 3,
+    englishExplanation: "The definiens is the group of words or symbols that defines the term, whereas the term being defined is called the definiendum.",
+    amharicExplanation: "ዲፊኒየንስ (Definiens) ማለት ቃሉን ለመግለጽ ወይም ለመተርጎም የሚያገለግለው የቃላት ስብስብ ነው። የሚገለጸው ቃል ራሱ ደግሞ ዲፊኒየንዱም (Definiendum) ይባላል።"
+},
+
+{
+    question: "26. The definition \"Mind\" means the region of the brain that manipulates symbols is an example of a:",
+    options: [
+        "A. Lexical definition.",
+        "B. Stipulative definition.",
+        "C. Persuasive definition.",
+        "D. Theoretical definition.",
+        "E. Precising definition."
+    ],
+    answer: 3,
+    englishExplanation: "A theoretical definition attempts to formulate a characterization of a term based on a systematic, scientific, or philosophical theory.",
+    amharicExplanation: "ቲዎሪቲካል ትርጉም (Theoretical definition) ማለት አንድን ቃል ወይም ሀሳብ ስልታዊ፣ ሳይንሳዊ ወይም ፍልስፍናዊ በሆነ ቲዎሪ ወይም ንድፈ ሀሳብ ላይ በመመስረት ለመግለጽ የሚደረግ ሙከራ ነው።"
+},
+
+{
+    question: "27. The definition \"Welfare\" means a handout made by the government to lazy people who refuse to work is an example of a:",
+    options: [
+        "A. Lexical definition.",
+        "B. Persuasive definition.",
+        "C. Precising definition.",
+        "D. Theoretical definition.",
+        "E. Stipulative definition."
+    ],
+    answer: 1,
+    englishExplanation: "A persuasive definition is loaded with emotive or biased language designed to influence the listener's attitude or emotional reaction toward the term rather than giving a neutral meaning.",
+    amharicExplanation: "አሳማኝ ትርጉም (Persuasive definition) ማለት ገለልተኛ ትርጉም ከመስጠት ይልቅ የማዳመጠኞችን አመለካከትና ስሜት ለመቀየር የተጫነ ወይም ስሜታዊ ቋንቋ የሚጠቀም ትርጉም ነው።"
+},
+
+{
+    question: "28. \"Facade\" means face.",
+    options: [
+        "A. Enumerative",
+        "B. Synonymous",
+        "C. Synthetic",
+        "D. Demonstrative"
+    ],
+    answer: 1,
+    englishExplanation: "A synonymous definition gives a word or phrase with the same or nearly the same meaning as the term being defined. \"Face\" is used as a synonym for \"facade.\"",
+    amharicExplanation: "ተመሳሳይ ቃል ትርጉም (Synonymous definition) ማለት ከሚገለጸው ቃል ጋር ተመሳሳይ ወይም በጣም የቀረበ ትርጉም ያለውን ሌላ ቃል በመስጠት መግለጽ ነው።"
+},
+
+{
+    question: "29. \"Error\" means mistake.",
+    options: [
+        "A. Emblematic",
+        "B. Enumerative",
+        "C. Synonymous",
+        "D. Synthetic"
+    ],
+    answer: 2,
+    englishExplanation: "Defining \"error\" as \"mistake\" uses a direct equivalent word, which makes it a synonymous definition.",
+    amharicExplanation: "\"Error\" ማለት \"mistake\" ማለት ነው በሚለው አገላለጽ አንድ ቃልን በተመሳሳይ ትርጉም ባለው ሌላ ቃል ስለገለጸ ይህ ተመሳሳይ ቃል (Synonymous) ፍቺ ነው።"
+},
+
+{
+    question: "30. \"Rapier\" means sword.",
+    options: [
+        "A. Synthetic",
+        "B. Enumerative",
+        "C. Synonymous",
+        "D. Demonstrative"
+    ],
+    answer: 2,
+    englishExplanation: "Providing \"sword\" as a direct equivalent word for \"rapier\" is an example of a synonymous definition.",
+    amharicExplanation: "\"Rapier\" ማለት \"sword\" ማለት ነው የሚለው አገላለጽ ተመሳሳይ ትርጉም ያላቸውን ቃላት በቀጥታ የሚያገናኝ በመሆኑ ተመሳሳይ ቃል (Synonymous) ፍቺ ይባላል።"
+},
+
+{
+    question: "31. \"Truck\" means a vehicle used for hauling.",
+    options: [
+        "A. Increasing intension",
+        "B. Operational",
+        "C. Subclass",
+        "D. Genus and difference"
+    ],
+    answer: 3,
+    englishExplanation: "A definition by genus and difference identifies a broader category (genus), such as \"vehicle,\" and then specifies a distinguishing feature (difference), such as \"used for hauling.\"",
+    amharicExplanation: "በጂነስ እና ልዩነት (Genus and difference) የሚሰጥ ትርጉም ሰፋ ያለውን ምድብ (Genus) እና የሚለየውን ልዩ ባህሪ (Difference) በማጣመር የሚሰጥ ትርጉም ነው። \"Vehicle\" ጂነስ ሲሆን \"used for hauling\" ደግሞ ልዩነቱ ነው።"
+},
+
+{
+    question: "32. \"State\" means something such as Ohio, Arkansas, Minnesota, and Tennessee.",
+    options: [
+        "A. Enumerative",
+        "B. Operational",
+        "C. Qualitative",
+        "D. Informative"
+    ],
+    answer: 0,
+    englishExplanation: "An enumerative definition clarifies a term by explicitly listing individual examples or members that belong to the class denoted by the term.",
+    amharicExplanation: "ዘርዘር ያለ ትርጉም (Enumerative definition) ማለት አንድን ቃል ለማብራራት በቃሉ ስር የሚጠቃለሉትን ግለሰባዊ ምሳሌዎች ወይም አባላት በስም በመጥቀስ የሚሰጥ ፍቺ ነው።"
+},
+
+{
+    question: "33. \"Painting\" means something like da Vinci's Mona Lisa, van Gogh's Starry Night, Botticelli's Birth of Venus, or Rembrandt's Night Watch.",
+    options: [
+        "A. Operational",
+        "B. Enumerative",
+        "C. Qualitative",
+        "D. Informative"
+    ],
+    answer: 1,
+    englishExplanation: "Listing specific famous paintings as examples to explain what the term \"painting\" means is an enumerative definition.",
+    amharicExplanation: "የተወሰኑ ዝነኛ ስዕሎችን እንደ ምሳሌ በመጥቀስ \"Painting\" የሚለውን ቃል ማብራራት ዘርዘር ያለ ትርጉም (Enumerative definition) ይባላል።"
+},
+
+{
+    question: "34. \"Poignant\" is a word derived from the Latin word pungere, which means to prick, pierce, or sting.",
+    options: [
+        "A. Operational",
+        "B. Enumerative",
+        "C. Synonymous",
+        "D. Etymological"
+    ],
+    answer: 3,
+    englishExplanation: "Tracing the linguistic and historical roots of a word back to Latin, such as \"pungere,\" makes this an etymological definition.",
+    amharicExplanation: "የቃሉን ታሪካዊና ስርወ-ቃል ከላቲን ቋንቋ በመነሳት ማብራራቱ የቃላት መነሻ (Etymological definition) ያሰኘዋል።"
+},
+
+{
+    question: "35. \"Language\" means something such as French, German, Spanish, English, and so on.",
+    options: [
+        "A. Informative",
+        "B. Qualitative",
+        "C. Enumerative",
+        "D. Operational"
+    ],
+    answer: 2,
+    englishExplanation: "Providing a list of specific languages to explain the term \"language\" exemplifies an enumerative definition.",
+    amharicExplanation: "\"ቋንቋ\" የሚለውን ቃል ለማብራራት French, German, Spanish, English የመሳሰሉ የተለያዩ ቋንቋዎችን በዝርዝር መጥቀስ ዘርዘር ያለ ትርጉም (Enumerative definition) ይሰኛል።"
+},
+
+{
+    question: "36. \"Insect\" means something such as a fly, an ant, a wasp, or a caterpillar.",
+    options: [
+        "A. Demonstrative",
+        "B. Superclass",
+        "C. Subclass",
+        "D. Subsystem"
+    ],
+    answer: 2,
+    englishExplanation: "Listing types or subclasses of insects, such as flies, ants, wasps, and caterpillars, provides examples of subgroups under the general term \"insect.\"",
+    amharicExplanation: "እንደ ዝንብ፣ ጉንዳን፣ ተርብ እና አባ ጨጓሬ የመሳሰሉ የነፍሳት ንዑስ ቡድኖችን በመጥቀስ ማብራራት ንዑስ ክፍል (Subclass) ትርጉም ምድብ ውስጥ ይመደባል።"
+},
+
+{
+    question: "37. \"Hammer\" means a tool used for pounding.",
+    options: [
+        "A. Increasing intension",
+        "B. Genus and difference",
+        "C. Operational",
+        "D. Subclass"
+    ],
+    answer: 1,
+    englishExplanation: "\"Tool\" serves as the general category or genus, while \"used for pounding\" provides the distinguishing feature or difference. Therefore, this is a definition by genus and difference.",
+    amharicExplanation: "\"Tool\" አጠቃላይ ምድብ (Genus) ሲሆን \"used for pounding\" ደግሞ ልዩ ባህሪ (Difference) ነው። ስለዚህ ይህ በጂነስ እና ልዩነት (Genus and difference) የተሰጠ ፍቺ ነው።"
+},
+
+{
+    question: "38. Which of the following words or groups of words is not a term?",
+    options: [
+        "A. Author of Evangeline",
+        "B. Easily readable",
+        "C. Most expensive bottle of wine",
+        "D. New Guinea",
+        "E. Agility"
+    ],
+    answer: 1,
+    englishExplanation: "In logic, a term is a word or group of words that can serve as the subject of a statement. \"Easily readable\" is a descriptive phrase that cannot function as a term by itself in the intended categorical proposition context.",
+    amharicExplanation: "በሎጂክ ጥናት መሠረት Term ማለት የመግለጫ ወይም የአረፍተ ነገር Subject ሆኖ ሊያገለግል የሚችል ቃል ወይም የቃላት ስብስብ ነው። \"Easily readable\" የሚለው ገላጭ ሐረግ ብቻውን በታሰበው የcategorical proposition አውድ ውስጥ term ሆኖ አይወሰድም።"
+},
+
+{
+    question: "39. The primary danger of emotively charged words is that they:",
+    options: [
+        "A. Cause arguments to be invalid",
+        "B. Lead us to confuse premises with conclusion",
+        "C. Cause arguments to be unsound",
+        "D. Prompt us to leap to unjustified conclusions",
+        "E. Incline us to confuse inductive arguments with deductive arguments"
+    ],
+    answer: 3,
+    englishExplanation: "Emotively charged words manipulate feelings rather than reason. They can bypass critical thinking and cause people to leap to conclusions that are not adequately supported by evidence or reasoning.",
+    amharicExplanation: "በስሜታዊነት የተሞሉ ቃላት ዋናው አደጋ ከምክንያታዊነት ይልቅ ስሜትን የሚቆጣጠሩ መሆናቸው ነው። ይህም ሰዎች በበቂ ማስረጃ ወይም ምክንያት ሳይደገፉ ወደ ያልተረጋገጡ መደምደሚያዎች (Unjustified conclusions) እንዲዘሉ ሊያደርግ ይችላል።"
+},{
+    question: "Words such as 'excessive,' 'fresh,' and 'normal' tend to be:",
+    options: [
+      "Emotive",
+      "Ambiguous",
+      "Vague",
+      "Factual",
+      "Extensional"
+    ],
+    answer: 2,
+    englishExplanation: "Words like 'excessive,' 'fresh,' and 'normal' are considered vague because their meanings lack precise boundaries and can change depending on context or personal interpretation.",
+    amharicExplanation: "እንደ 'excessive' (ከመጠን በላይ)፣ 'fresh' (አዲስ/ፍሬሽ) እና 'normal' (መደበኛ) ያሉ ቃላት vague ይባላሉ። ምክንያቱም ትርጉማቸው ጥብቅ የሆነ ወሰን የሌለውና እንደ ሁኔታው ወይም እንደ ግለሰቡ አተረጓጎም ሊለዋወጥ የሚችል ስለሆነ ነው።"
+  },
+
+  {
+    question: "The newspaper headline 'Farmer Bill Dies in House' is primarily:",
+    options: [
+      "Vague",
+      "Ambiguous",
+      "Evocative",
+      "Analytic",
+      "Conventional"
+    ],
+    answer: 1,
+    englishExplanation: "The headline is ambiguous because it can have more than one distinct interpretation. 'House' could mean a residential building or a legislative house such as parliament.",
+    amharicExplanation: "የጋዜጣው 'Farmer Bill Dies in House' የሚለው አረፍተ ነገር ambiguous (አሻሚ) ነው። ምክንያቱም 'House' የሚለው ቃል ቤት ወይም የሕግ መወሰኛ ቤት/ፓርላማ ማለት ሊሆን ስለሚችል ከአንድ በላይ ትርጉም ይኖረዋል።"
+  },
+
+  {
+    question: "The intension of a term consists of:",
+    options: [
+      "The members of the class that the term denotes",
+      "The objectives to be accomplished by using the term",
+      "The qualities or attributes that the term connotes",
+      "The subjective feelings in the mind of the speaker or writer",
+      "The class of definitions that a term may have"
+    ],
+    answer: 2,
+    englishExplanation: "Intension refers to the qualities, attributes, or characteristics associated with a term rather than the actual objects it refers to.",
+    amharicExplanation: "የቃሉ intension ማለት ቃሉ የሚያመለክታቸው ነገሮች ሳይሆኑ ቃሉ የሚያስተላልፋቸው ባሕርያት፣ ጥራቶች እና መገለጫዎች ናቸው።"
+  },
+
+  {
+    question: "Which of the following are all connoted by the term 'novelist'?",
+    options: [
+      "Moby Dick, The Scarlet Letter, Gone With the Wind",
+      "Melville, Hawthorne, Mitchell",
+      "Creative, literary, imaginative",
+      "Melville, Moby Dick, adventure story",
+      "Love story, horror story, adventure story"
+    ],
+    answer: 2,
+    englishExplanation: "The term 'novelist' connotes qualities associated with writing fiction, such as being creative, literary, and imaginative. Specific authors and books belong to extension rather than intension.",
+    amharicExplanation: "'Novelist' (ደራሲ) የሚለው ቃል creative (ፈጣሪ)፣ literary (ስነ-ጽሑፋዊ) እና imaginative (ምናባዊ/ሀሳብ አነቃቂ) የሆኑ ባሕርያትን ያመለክታል። የተወሰኑ ደራሲዎች ወይም መጽሐፍት ግን extension ጋር ይያያዛሉ።"
+  },
+
+  {
+    question: "Denotation means roughly the same thing as:",
+    options: [
+      "Extension",
+      "Difference",
+      "Intension",
+      "Connotation",
+      "Species"
+    ],
+    answer: 0,
+    englishExplanation: "Denotation and extension have essentially the same meaning in logic. Both refer to the actual objects or members that a term applies to.",
+    amharicExplanation: "Denotation እና Extension በሎጂክ ውስጥ በአብዛኛው ተመሳሳይ ትርጉም አላቸው። ሁለቱም ቃሉ የሚወክላቸውን ትክክለኛ ነገሮች ወይም አባላት ያመለክታሉ።"
+  },
+
+  {
+    question: "Conventional connotation is introduced to deal with the problem that arises because:",
+    options: [
+      "Proper names have no intension",
+      "Intension determines extension",
+      "Some words have empty extension",
+      "Increasing intension does not always correspond to decreasing extension",
+      "Words mean different things to different people"
+    ],
+    answer: 4,
+    englishExplanation: "Conventional connotation provides a shared and agreed meaning for words because different people may otherwise give different subjective meanings to the same word.",
+    amharicExplanation: "Conventional connotation የሚያስፈልገው ሰዎች ለአንድ ቃል የተለያዩ ግላዊ ትርጉሞችን እንዳይሰጡ የጋራ እና የተስማማ ትርጉም ለማቋቋም ነው።"
+  },
+
+  {
+    question: "Which of the following best describes Semiotics?",
+    options: [
+      "The scientific investigation into symbolic representation of cultural norms",
+      "The manipulation and usage of symbols for understanding signified content in communication processes",
+      "The study of abstract concepts and metaphors used in linguistic exchanges",
+      "The exploration of subjective emotions expressed through non-verbal cues",
+      "None / All"
+    ],
+    answer: 1,
+    englishExplanation: "Semiotics is the study of signs and symbols and how they are used to communicate and understand meaning.",
+    amharicExplanation: "Semiotics ማለት ምልክቶችና ምልክታዊ ነገሮች ትርጉምን ለማስተላለፍና ለመረዳት በግንኙነት ሂደት እንዴት እንደሚጠቀሙ የሚያጠና ዘርፍ ነው።"
+  },
+
+  {
+    question: "Which function of language is most relevant to the study of logic?",
+    options: [
+      "Expressive function",
+      "Cognitive function",
+      "Directive function",
+      "Hypothetical function",
+      "None / All"
+    ],
+    answer: 1,
+    englishExplanation: "Logic is concerned with reasoning, truth, and information. Therefore, the cognitive function of language is the most relevant.",
+    amharicExplanation: "ሎጂክ ከእውነት፣ ከሐሰት፣ ከምክንያታዊ አስተሳሰብ እና ከመረጃ ጋር ስለሚያያዝ Cognitive function በጣም ጠቃሚው የቋንቋ ተግባር ነው።"
+  },
+
+  {
+    question: "Which of the following statements is not an example of the directive function of language?",
+    options: [
+      "Leave me alone!",
+      "Do not close that door!",
+      "Ethiopia has its own prestigious airlines.",
+      "Give me your pen!",
+      "A and C / None"
+    ],
+    answer: 2,
+    englishExplanation: "Directive language is used to command, request, or direct someone to perform an action. 'Ethiopia has its own prestigious airlines' simply gives information, so it is cognitive.",
+    amharicExplanation: "Directive function ሰዎች አንድ ድርጊት እንዲፈጽሙ ለማዘዝ ወይም ለመጠየቅ ይጠቅማል። 'Ethiopia has its own prestigious airlines' ግን መረጃ የሚሰጥ ስለሆነ Cognitive function ነው።"
+  },
+
+  {
+    question: "Which of the following questions is least relevant to the philosophy of language?",
+    options: [
+      "What is meaning?",
+      "How does language refer to the real world?",
+      "How can one develop perfect pronunciation in a language?",
+      "Is language learned or innate?",
+      "None / All"
+    ],
+    answer: 2,
+    englishExplanation: "Developing perfect pronunciation is mainly a concern of phonetics, linguistics, and speech training, rather than the philosophical study of meaning and language.",
+    amharicExplanation: "ፍጹም አጠራር እንዴት ማዳበር እንደሚቻል በዋናነት ከphonetics እና ከቋንቋ ስልጠና ጋር ይያያዛል። Philosophy of language ግን ትርጉም፣ ማመልከት እና የቋንቋ ባህሪን ይመለከታል።"
+  },
+
+  {
+    question: "Why is the study of definitions important in logic?",
+    options: [
+      "Because definitions allow us to identify the emotional tone of arguments.",
+      "Because terms in arguments may be vague or ambiguous, and definitions help clarify meanings.",
+      "Because definitions establish the subjective opinions behind each argument.",
+      "Because definitions help convey non-verbal communication more effectively.",
+      "All"
+    ],
+    answer: 1,
+    englishExplanation: "Terms used in arguments can be vague or ambiguous. Definitions help clarify their meanings so that reasoning can be evaluated accurately.",
+    amharicExplanation: "በሎጂክ ውስጥ ቃላት vague ወይም ambiguous ሊሆኑ ስለሚችሉ ትርጉማቸውን በግልጽ ለማስቀመጥ definitions ያስፈልጋሉ።"
+  },
+
+  {
+    question: "Which of the following is an example of the expressive function of language?",
+    options: [
+      "Leave the room immediately.",
+      "The capital city of Ethiopia is Addis Ababa.",
+      "I love spending time with my family.",
+      "Please hand me that book.",
+      "Excellent work! You got it right!"
+    ],
+    answer: 2,
+    englishExplanation: "The expressive function communicates feelings, emotions, or attitudes. 'I love spending time with my family' expresses a personal feeling.",
+    amharicExplanation: "Expressive function የግል ስሜትን፣ ስሜታዊ አመለካከትን ወይም ስሜትን ለመግለጽ ይጠቅማል። 'I love spending time with my family' የግል ስሜትን ይገልጻል።"
+  },
+
+  {
+    question: "Which of the following would most likely not be a concern of the philosophy of language?",
+    options: [
+      "How language expresses thought and ideas.",
+      "The origin and structure of grammatical rules.",
+      "The ways language influences behavior and decision-making.",
+      "The relationship between words and the objects they represent.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "The origin and structure of grammatical rules are mainly studied in linguistics and syntax, rather than being a central concern of philosophy of language.",
+    amharicExplanation: "የሰዋሰው ሕጎች አመጣጥና አወቃቀር በዋናነት በLinguistics እና Syntax ይጠናል። Philosophy of language ግን ትርጉምን፣ ሀሳብን እና ቃላት ከእውነተኛ ነገሮች ጋር ያላቸውን ግንኙነት ይመለከታል።"
+  },
+
+  {
+    question: "Which of the following illustrates the cognitive function of language?",
+    options: [
+      "I am so angry right now!",
+      "Do not touch that!",
+      "Water boils at 100 degrees Celsius.",
+      "Can you close the window, please?",
+      "You're unstoppable! Great job!"
+    ],
+    answer: 2,
+    englishExplanation: "The cognitive function communicates information, facts, and knowledge that can be evaluated as true or false. 'Water boils at 100 degrees Celsius' gives factual information.",
+    amharicExplanation: "Cognitive function እውነታን፣ መረጃን እና እውቀትን ያስተላልፋል። 'Water boils at 100 degrees Celsius' እውነታን የሚገልጽ መረጃ ነው።"
+  },
+
+  {
+    question: "What is the main purpose of the directive function of language?",
+    options: [
+      "To communicate emotions and personal feelings.",
+      "To express commands, instructions, or requests.",
+      "To provide objective information about the world.",
+      "To clarify the meaning of abstract concepts.",
+      "Amazing work! You're setting the bar high!"
+    ],
+    answer: 1,
+    englishExplanation: "The directive function is used to influence someone's behavior by giving commands, instructions, or requests.",
+    amharicExplanation: "Directive function ዋና ዓላማው ትዕዛዝ፣ መመሪያ ወይም ጥያቄ በመስጠት ሰውን አንድ ድርጊት እንዲፈጽም ማድረግ ነው።"
+  },
+
+  {
+    question: "What is a term in the context of logic and language?",
+    options: [
+      "A linguistic expression used primarily in informal conversations.",
+      "Any word or arrangement of words that serves as the subject of a statement.",
+      "A set of symbols used to represent abstract concepts.",
+      "A specific type of metaphor or analogy used in philosophical arguments.",
+      "You're making it happen! Keep going!"
+    ],
+    answer: 1,
+    englishExplanation: "In logic, a term is a word or group of words that can serve as the subject of a statement or proposition.",
+    amharicExplanation: "በሎጂክ ውስጥ Term ማለት የአረፍተ ነገር ወይም proposition ርዕሰ ጉዳይ (subject) ሆኖ ሊያገለግል የሚችል ቃል ወይም የቃላት ስብስብ ነው።"
+  },
+
+  {
+    question: "Which of the following is not a proper name?",
+    options: [
+      "Ayele",
+      "South Ethiopia",
+      "John",
+      "House",
+      "None / D and A"
+    ],
+    answer: 3,
+    englishExplanation: "Proper names identify specific individuals or entities. 'Ayele,' 'John,' and 'South Ethiopia' can designate specific entities, while 'House' is a general/common noun.",
+    amharicExplanation: "Proper names የተወሰኑ ሰዎችን፣ ቦታዎችን ወይም አካላትን ይወክላሉ። 'House' ግን አጠቃላይ ስም ስለሆነ proper name አይደለም።"
+  },
+
+  {
+    question: "Which of the following phrases would not be considered a term in logic?",
+    options: [
+      "The first president of Ethiopia",
+      "Person",
+      "More importantly",
+      "Animal",
+      "None / All"
+    ],
+    answer: 2,
+    englishExplanation: "'More importantly' is an adverbial or transitional phrase and does not denote an object, person, or class that can serve as the subject of a logical statement.",
+    amharicExplanation: "'More importantly' የሚለው ሐረግ አንድን ነገር፣ ሰው ወይም የነገሮችን ስብስብ አይወክልም። ስለዚህ በሎጂክ ውስጥ Term አይባልም።"
+  },
+
+  {
+    question: "What is the extensional meaning of the term 'Inventor'?",
+    options: [
+      "A person who is clever, intuitive, creative, and imaginative.",
+      "The qualities that define someone who invents.",
+      "Specific individuals like Thomas Edison and Alexander Graham Bell.",
+      "The mental processes involved in creating new devices or ideas.",
+      "Excellent work! You got it right!"
+    ],
+    answer: 2,
+    englishExplanation: "Extensional meaning refers to the actual members or individuals included in the class represented by a term. Thomas Edison and Alexander Graham Bell are examples of inventors.",
+    amharicExplanation: "Extensional meaning የሚያመለክተው ቃሉ የሚወክላቸውን ትክክለኛ አባላት ነው። Thomas Edison እና Alexander Graham Bell የInventor ቃል የሚወክላቸው ምሳሌዎች ናቸው።"
+  },
+
+  {
+    question: "Which of the following would have an empty extension?",
+    options: [
+      "The current king of Ethiopia",
+      "The president of the United States",
+      "The mayor of Addis Ababa",
+      "The first female astronaut",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation: "The term 'the current king of Ethiopia' has an empty extension because Ethiopia is a republic and currently has no king.",
+    amharicExplanation: "'The current king of Ethiopia' የሚለው ቃል empty extension አለው። ምክንያቱም ኢትዮጵያ ሪፐብሊክ ስለሆነች በአሁኑ ጊዜ ንጉሥ የላትም።"
+  },
+
+  {
+    question: "Which of the following best describes the relationship between intensional and extensional meanings of a term?",
+    options: [
+      "Intensional meaning always decreases as extensional meaning increases.",
+      "Intensional meaning determines extensional meaning.",
+      "Extensional meaning refers to the qualities or attributes of a term.",
+      "Extensional meaning remains constant, regardless of context.",
+      "You're leveling up your knowledge!"
+    ],
+    answer: 1,
+    englishExplanation: "The intensional meaning provides the qualities or criteria that determine which objects belong to the extension of a term.",
+    amharicExplanation: "Intensional meaning የቃሉን ባሕርያትና መስፈርቶች ይወስናል። እነዚህ መስፈርቶች የትኞቹ ነገሮች በextensional meaning ውስጥ እንደሚገቡ ይወስናሉ።"
+  },
+
+  {
+    question: "Which of the following represents an example of increasing intension?",
+    options: [
+      "Addis Ababa, Ethiopia, East Africa, Africa",
+      "Africa, East Africa, Ethiopia, Addis Ababa",
+      "Addis Ababa, Africa, East Africa, Ethiopia",
+      "East Africa, Africa, Addis Ababa, Ethiopia, Africa",
+      "None / All"
+    ],
+    answer: 1,
+    englishExplanation: "Increasing intension moves from a broad concept to increasingly specific concepts with more attributes: Africa → East Africa → Ethiopia → Addis Ababa.",
+    amharicExplanation: "Increasing intension ማለት ከሰፊ ጽንሰ-ሀሳብ ወደ ይበልጥ ጠባብና ብዙ ባሕርያት ወዳለው ጽንሰ-ሀሳብ መሄድ ነው። Africa → East Africa → Ethiopia → Addis Ababa ትክክለኛው ቅደም ተከተል ነው።"
+  },
+
+  {
+    question: "Which of the following is an example of decreasing extension?",
+    options: [
+      "Ethiopia, East Africa, Africa",
+      "Africa, East Africa, Ethiopia, Addis Ababa",
+      "Addis Ababa, Ethiopia, East Africa, Africa",
+      "Addis Ababa, Africa, Ethiopia, East Africa",
+      "None / All"
+    ],
+    answer: 2,
+    englishExplanation: "The sequence moves from a smaller class to progressively larger classes: Addis Ababa → Ethiopia → East Africa → Africa. As the class becomes larger, the intension decreases.",
+    amharicExplanation: "ይህ ቅደም ተከተል ከትንሽ ስብስብ ወደ ትልቅ ስብስብ ይሄዳል፦ Addis Ababa → Ethiopia → East Africa → Africa። ስለዚህ extension እየጨመረ ሲሄድ intension ይቀንሳል።"
+  },
+
+  {
+    question: "Which of the following best defines the term 'definiens'?",
+    options: [
+      "The word or group of words that is being defined.",
+      "The concept behind a term's meaning.",
+      "The word or group of words that gives meaning to the definiendum.",
+      "The process of explaining the origin of a word.",
+      "Nailed it! You're doing amazing!"
+    ],
+    answer: 2,
+    englishExplanation: "The definiens is the word or group of words that explains or gives meaning to the definiendum. The definiendum is the term being defined.",
+    amharicExplanation: "Definiens ማለት definiendum ለሆነው ቃል ትርጉም የሚሰጠው ቃል ወይም የቃላት ስብስብ ነው።"
+  },
+
+  {
+    question: "In the definition 'diffident' means 'lacking confidence in oneself', which part is the definiendum?",
+    options: [
+      "Diffident",
+      "Lacking confidence in oneself",
+      "Characterized by modest reserve",
+      "Means",
+      "Right on target! Keep aiming high!"
+    ],
+    answer: 0,
+    englishExplanation: "The definiendum is the word or term that is being defined. In this definition, 'diffident' is the word being defined.",
+    amharicExplanation: "Definiendum ማለት ትርጉም የሚሰጠው ወይም የሚገለጸው ቃል ነው። በዚህ ምሳሌ 'diffident' የሚለው ቃል definiendum ነው።"
+  },
+
+  {
+    question: "What is the extensional meaning of the term 'Inventor'?",
+    options: [
+      "A person who is clever, intuitive, creative, and imaginative.",
+      "The qualities that define someone who invents.",
+      "Specific individuals like Thomas Edison and Alexander Graham Bell.",
+      "The mental processes involved in creating new devices or ideas.",
+      "Excellent work! You got it right!"
+    ],
+    answer: 2,
+    englishExplanation: "The extension of a term refers to the actual members or real-world individuals included in the class represented by the term. Thomas Edison and Alexander Graham Bell are examples of inventors.",
+    amharicExplanation: "የInventor የextensional meaning ትክክለኛ የሆኑ የዚህ ክፍል አባላትን ያመለክታል። Thomas Edison እና Alexander Graham Bell የInventor ምሳሌዎች ናቸው።"
+  },
+  {
+    question: "Which of the following is the primary purpose of a stipulative definition?",
+    options: [
+      "To eliminate ambiguity in the meaning of a term.",
+      "To introduce a new word or assign a new meaning to an existing word.",
+      "To give a definition found in dictionaries.",
+      "To persuade people to accept a particular viewpoint."
+    ],
+    answer: 1,
+    englishExplanation:
+      "A stipulative definition is used when someone introduces a completely new word or assigns a brand-new meaning to an existing word. Its main purpose is to set up a specific meaning for a term rather than reporting how people already use it.",
+    amharicExplanation:
+      "Stipulative definition (የመጀመሪያ ማቋቋሚያ ትርጉም) አዲስ ቃል ሲፈጠር ወይም ላለ ቃል አዲስ ትርጉም ሲሰጥ የሚያገለግል ነው። ዋናው ዓላማው ሰዎች ቃሉን እንዴት እንደሚጠቀሙበት ከማሳየት ይልቅ ለአንድ የተወሰነ አውድ አዲስ ትርጉም መስጠት ነው።"
+  },
+
+  {
+    question: "Which of the following definitions is an example of a stipulative definition?",
+    options: [
+      "Defining 'bank' as a financial institution or the side of a river.",
+      "Defining 'rich' as someone who has significant wealth.",
+      "Creating the term 'Tigon' to describe the offspring of a tiger and a lion.",
+      "Defining 'peace' as the absence of war.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Creating the word 'Tigon' to describe a hybrid animal (offspring of a tiger and a lion) is a classic example of a stipulative definition because a new word or meaning is being coined.",
+    amharicExplanation:
+      "'Tigon' የሚለውን ቃል ነብርና አንበሳን ለማቀላቀል ማውጣት የ stipulative ትርጉም ምሳሌ ነው፤ ምክንያቱም አዲስ ቃል ወይም ጽንሰ-ሐሳብ እዚያው ላይ ተፈጥሯል።"
+  },
+
+  {
+    question: "What is the primary purpose of a stipulative definition?",
+    options: [
+      "To eliminate ambiguity in the meaning of a term.",
+      "To introduce a new word or assign a new meaning to an existing word.",
+      "To give a definition found in dictionaries.",
+      "To persuade people to accept a particular viewpoint."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Stipulative definitions function to introduce new terminology or assign novel meanings to existing terms. They establish a specific meaning for a particular purpose or context.",
+    amharicExplanation:
+      "Stipulative definition አዲስ ቃል ለማስተዋወቅ ወይም ነባር ቃል አዲስ ትርጉም ለመስጠት ይጠቅማል። በተወሰነ አውድ ውስጥ ቃሉ ምን ማለት እንደሆነ ያቋቁማል።"
+  },
+
+  {
+    question: "Which of the following definitions is an example of a stipulative definition?",
+    options: [
+      "Defining 'bank' as a financial institution or the side of a river.",
+      "Defining 'rich' as someone who has significant wealth.",
+      "Creating the term 'Tigon' to describe the offspring of a tiger and a lion.",
+      "Defining 'peace' as the absence of war."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Coining 'Tigon' represents establishing a brand-new definition for a newly created term, which is the main feature of a stipulative definition.",
+    amharicExplanation:
+      "'Tigon' የሚለውን ቃል መፍጠር አዲስ ትርጉም የመስጠት ሂደትን የሚያሳይ ነው። ስለዚህ stipulative definition ነው።"
+  },
+
+  {
+    question: "Which of the following is not a purpose of definitions in logic?",
+    options: [
+      "To avoid misleading use of words and phrases.",
+      "To persuade others to adopt specific beliefs.",
+      "To avoid unnecessary disputes and conflicts over the meaning of terms.",
+      "To introduce new and innovative words into the language."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Definitions in logic are meant to clarify meanings and avoid confusion. Persuading people to adopt specific beliefs is not the general purpose of definitions; that is associated with persuasive definitions.",
+    amharicExplanation:
+      "በሎጂክ ውስጥ የትርጉም ዓላማ ሰዎችን ማሳመን አይደለም። ዋና ዓላማው ቃላትን ግልጽ ማድረግ፣ የተሳሳተ አጠቃቀምን ማስወገድ እና አለመግባባትን መቀነስ ነው።"
+  },
+
+  {
+    question: "Which of the following would be considered a lexical definition?",
+    options: [
+      "Defining 'sound' as both something heard and a body of water.",
+      "Coining the term 'Operation Sun Set' for a military victory.",
+      "Defining 'Tigon' as a hybrid between a tiger and a lion.",
+      "Creating a new word to describe a fashion trend."
+    ],
+    answer: 0,
+    englishExplanation:
+      "A lexical definition reports the actual, established meanings of a word as it is commonly used. Defining 'sound' as both something heard and a body of water reflects standard dictionary meanings.",
+    amharicExplanation:
+      "Lexical definition ማለት ቃሉ በቋንቋው ውስጥ በመደበኛነት ያለውን ትርጉም መግለጽ ነው። 'Sound' የሚለው ቃል ድምፅ እና የውሃ አካል ማለትም ስለሚችል ይህ የlexical definition ምሳሌ ነው።"
+  },
+
+  {
+    question: "Which of the following terms is vague?",
+    options: [
+      "Bank",
+      "Sound",
+      "Love",
+      "Race"
+    ],
+    answer: 2,
+    englishExplanation:
+      "A vague term has unclear or blurred boundaries. 'Love' is vague because its meaning can vary depending on the person, situation, and context.",
+    amharicExplanation:
+      "'Love' (ፍቅር) ግልጽ ያልሆነ ወሰን ያለው vague ቃል ነው። ትርጉሙ እንደ ሰውዬው፣ እንደ ሁኔታው እና እንደ አውዱ ሊለያይ ይችላል።"
+  },
+
+  {
+    question: "Which of the following terms is ambiguous due to having more than one distinct meaning?",
+    options: [
+      "Peace",
+      "Right",
+      "Happiness",
+      "Fresh"
+    ],
+    answer: 1,
+    englishExplanation:
+      "An ambiguous term has two or more distinct meanings. 'Right' can mean correct, or it can refer to the direction opposite to left.",
+    amharicExplanation:
+      "'Right' የሚለው ቃል ከአንድ በላይ የተለያዩ ትርጉሞች ስላሉት ambiguous ቃል ነው። 'Right' ማለት ትክክል ማለት ወይም ከግራ ተቃራኒ የሆነ አቅጣጫ ማለት ይችላል።"
+  },
+
+  {
+    question: "Which of the following represents a persuasive definition?",
+    options: [
+      "Defining 'humanity' as the collective species of Homo sapiens.",
+      "Defining 'capitalism' as the exploitation of the working class.",
+      "Defining 'bank' as both a financial institution and the edge of a river.",
+      "Defining 'light' as radiant energy."
+    ],
+    answer: 1,
+    englishExplanation:
+      "A persuasive definition uses emotionally charged or biased language to influence someone's attitude or viewpoint. Describing capitalism as 'the exploitation of the working class' is designed to create a negative attitude toward capitalism.",
+    amharicExplanation:
+      "Persuasive definition ማለት ሰዎችን ስሜታዊ በማድረግ አመለካከታቸውን ለመቀየር የሚጠቅም ትርጉም ነው። ካፒታሊዝምን 'የሰራተኛው ክፍል መበዝበዣ' ብሎ መግለጽ አሉታዊ ስሜት ለመፍጠር የተጫነ ቃላትን ይጠቀማል።"
+  },
+
+  {
+    question: "Which of the following types of definitions helps to reduce vagueness and make terms more precise?",
+    options: [
+      "Lexical Definition",
+      "Theoretical Definition",
+      "Precising Definition",
+      "Stipulative Definition"
+    ],
+    answer: 2,
+    englishExplanation:
+      "A precising definition is specifically designed to reduce vagueness by making the boundaries of an existing term clearer and more precise.",
+    amharicExplanation:
+      "Precising definition የቃላትን ግልጽ አለመሆን (vagueness) ለመቀነስ እና ወሰናቸውን ይበልጥ ግልጽና ትክክለኛ ለማድረግ ይጠቅማል።"
+  },
+
+  {
+    question: "Which of the following definitions would be most likely found in a dictionary?",
+    options: [
+      "Stipulative definition",
+      "Lexical definition",
+      "Persuasive definition",
+      "Precising definition"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Dictionaries contain lexical definitions because they report the standard and commonly accepted meanings of words in a language.",
+    amharicExplanation:
+      "መዝገበ-ቃላት (dictionary) ውስጥ Lexical definitions በብዛት ይገኛሉ። ምክንያቱም ቃላት በቋንቋው ውስጥ ያላቸውን መደበኛና የተለመደ ትርጉም ስለሚያሳዩ ነው።"
+  },
+
+  {
+    question: "What is a primary goal of using theoretical definitions in logic?",
+    options: [
+      "To introduce a new word.",
+      "To clarify the meaning of a word through a theory or system of thought.",
+      "To create a secret code for military use.",
+      "To reduce ambiguity in everyday language."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Theoretical definitions clarify the meaning of a term by connecting it to a broader theory, scientific framework, or philosophical system of thought.",
+    amharicExplanation:
+      "Theoretical definition የአንድን ቃል ትርጉም ከንድፈ-ሐሳብ (theory)፣ ከሳይንሳዊ ስርዓት ወይም ከፍልስፍና ስርዓት ጋር በማያያዝ ግልጽ ለማድረግ ይጠቅማል።"
+  },
+
+  {
+    question: "Which of the following statements best differentiates a précising definition from a stipulative definition?",
+    options: [
+      "A précising definition is arbitrary in its meaning assignment, whereas a stipulative definition is not.",
+      "A stipulative definition applies primarily to new words, while a précising definition provides more specificity to existing vague terms.",
+      "A stipulative definition is used in science and mathematics, whereas a précising definition is philosophical.",
+      "A précising definition is used to introduce new words, while a stipulative definition clarifies legal terms."
+    ],
+    answer: 1,
+    englishExplanation:
+      "A stipulative definition assigns a new meaning to a word or introduces a new term. A précising definition takes an existing vague term and makes its meaning more specific and precise.",
+    amharicExplanation:
+      "Stipulative definition በአብዛኛው ለአዲስ ቃል ትርጉም ለመስጠት ወይም ለነባር ቃል አዲስ ትርጉም ለመመደብ ይጠቅማል። Precising definition ግን ነባር እና vague የሆነ ቃልን ይበልጥ ግልጽና ጥርት ያለ ያደርገዋል።"
+  },
+
+  {
+    question: "Which of the following is not an example of a précising definition?",
+    options: [
+      "Defining 'poor' as someone with a monthly income below Birr 150.",
+      "Defining 'force' as mass times acceleration in physics.",
+      "Defining 'substance' as something that supports different qualities.",
+      "Defining 'energy' as the capacity to do work."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Defining 'substance' as something that supports different qualities is a philosophical or theoretical definition rather than a précising definition. A précising definition normally gives a sharper boundary to an existing vague term.",
+    amharicExplanation:
+      "'Substance' የሚለውን ቃል እንደ 'something that supports different qualities' መግለጽ የtheoretical ወይም philosophical definition ምሳሌ ነው። የprecising definition ግን ግልጽ ያልሆነን ቃል የበለጠ ጥርት ያለ ወሰን ይሰጠዋል።"
+  },
+
+  {
+    question: "Which of the following definitions is an example of a persuasive definition?",
+    options: [
+      "'Substance' means something that supports different qualities.",
+      "'Force' means an interaction that changes the motion of an object.",
+      "'Abortion' means the ruthless murdering of innocent human beings.",
+      "'Justice' means to give each individual what he or she deserves."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Defining abortion as 'the ruthless murdering of innocent human beings' uses strongly emotional and loaded language to influence people's attitudes. Therefore, it is a persuasive definition.",
+    amharicExplanation:
+      "ውርጃን 'ንጹሐን ሰዎችን በግፍ መግደል' ብሎ መግለጽ እጅግ ስሜታዊና አሳማኝ ቃላትን ይጠቀማል። ዓላማውም የሰዎችን አመለካከት ለመቀየር ስለሆነ Persuasive definition ይባላል።"
+  }],
         4: [],
         5: []
 
