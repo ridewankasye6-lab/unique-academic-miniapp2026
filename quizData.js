@@ -990,7 +990,499 @@ const quizData = {
     englishExplanation: "Questioning the obvious helps push beyond surface-level assumptions to foster deep critical thinking and creativity.",
     amharicExplanation: "በግልጽ የሚታዩ ነገሮችን መመርመር ወይም መጠየቅ ዋናው ዓላማ ፈጠራን እና ሂሳዊ አስተሳሰብን (critical thinking) ለማዳበር ነው።"
 }],
-        2: [],
+        2: [{
+    question: "1. All sentences are statements that can be asserted or denied.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Not all sentences are statements. Only sentences that have a truth value (i.e., can be true or false) are statements. Questions, commands, and exclamations are sentences, but they cannot be true or false.",
+    amharicExplanation: "ሁሉም ሐረጎች (sentences) መግለጫዎች (statements) አይደሉም። እውነት ወይም ውሸት ሊሆኑ የሚችሉት (truth value ያላቸው) ሐረጎች ብቻ መግለጫዎች ይባላሉ። ጥያቄዎች፣ ትዕዛዞች እና የገራረም ሐረጎች sentence ቢሆኑም እውነት ወይም ውሸት ሊባሉ ስለማይችሉ statement አይደሉም።"
+},
+
+{
+    question: "2. To say an argument is an argument, it is mandatory for the premises to present actual evidence or true reasons to the conclusion.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "An argument requires premises that purport to provide support for the conclusion, but those premises do not necessarily have to be factually true for the passage to qualify as an argument.",
+    amharicExplanation: "አንድ ክርክር (argument) ለመባል ሰበቦቹ (premises) በእርግጥ እውነተኛ ማስረጃዎችን ማቅረብ ግዴታ አይደለም። አከራካሪው ሐሳብ ድምዳሜውን ለመደገፍ የቀረበ ምክንያት እስካለው ድረስ እውነትም ይሁን ውሸት argument ይባላል።"
+},
+
+{
+    question: "3. The premises of an inductive argument guarantee the truth of its conclusion.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "In an inductive argument, the premises provide probability or support, but they do not guarantee absolute truth for the conclusion, unlike deductive arguments.",
+    amharicExplanation: "በኢንደክቲቭ ክርክር (inductive argument) ውስጥ ያሉት መሠረቶች (premises) የድምዳሜውን 100 በመቶ እውነትነት አያረጋግጡም፤ የሚያሳዩት የተወሰነ ዕድል ወይም ፕሮባቢሊቲ ብቻ ነው።"
+},
+
+{
+    question: "4. A valid argument will not have true premises if it is sound.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "By definition, a sound argument must have a valid structure and all true premises. Therefore, a sound argument does have true premises.",
+    amharicExplanation: "ሳውንድ (sound) ክርክር ማለት ትክክለኛ (valid) መዋቅር ያለው እና እውነተኛ መሠረቶች (true premises) ያሉት ማለት ነው። ስለዚህ እውነተኛ premises የሉትም የሚለው ሐሳብ ውሸት ነው።"
+},
+
+{
+    question: "5. The premise of an unsound argument is always false.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "An unsound argument can fail either because it is invalid or because it has at least one false premise. Thus, its premises are not always false; some or all of them can still be true.",
+    amharicExplanation: "አንሳውንድ (unsound) የሆነ ክርክር መሠረቶቹ ሁልጊዜ ውሸት ናቸው ማለት አይደለም። ክርክሩ ትክክል (invalid) ካለመሆኑ የተነሳ ወይም ቢያንስ አንዱ premise ውሸት በመሆኑ ምክንያት unsound ሊሆን ይችላል።"
+},
+
+{
+    question: "6. A deductive argument whose statements have 'true' truth value is always valid.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Having true premises and a true conclusion does not automatically make a deductive argument valid. Validity depends entirely on the logical connection between the statements, not just their individual truth values.",
+    amharicExplanation: "የdeductive ክርክር ውስጥ ያሉ ሁሉም መግለጫዎች እውነት (True) መሆናቸው ብቻውን ክርክሩን valid አያደርገውም። Validity የሚወሰነው በመሠረቱ እና በድምዳሜው መካከል ባለው የሐሳብ ትስስር እንጂ ሐረጎቹ እውነት መሆን አለመሆናቸው ብቻ አይደለም።"
+},
+
+{
+    question: "7. Every sound argument is valid.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "By definition, a sound argument is a deductive argument that is both valid and has all true premises. Therefore, every sound argument is necessarily valid.",
+    amharicExplanation: "በትርጉሙ መሠረት ሳውንድ (sound) ክርክር ማለት ቫሊድ (valid) የሆነ እና እውነተኛ መሠረቶች ያሉት ክርክር ማለት ነው። ስለዚህ እያንዳንዱ sound ክርክር በግዴታ valid ነው።"
+},
+
+{
+    question: "8. If the premises and the conclusion of an argument are true, then the argument is sound.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "True premises and a true conclusion are not enough; the argument must also be valid to be sound. If the logical structure is invalid, the argument is unsound even if everything in it happens to be true.",
+    amharicExplanation: "መሠረቶቹ እና ድምዳሜው እውነት መሆናቸው ብቻውን ክርክሩን sound አያደርገውም። ክርክሩ በተጨማሪ valid መሆን አለበት። መዋቅሩ የተሳሳተ ከሆነ ሁሉም ነገር እውነት ቢሆንም sound ሊባል አይችልም።"
+},
+
+{
+    question: "9. If an argument is sound, then its premises and conclusions are true.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "By definition, a sound argument must be valid and must possess true premises. Because the argument is valid, true premises logically guarantee a true conclusion.",
+    amharicExplanation: "አንድ ክርክር ሳውንድ (sound) ከሆነ፣ መሠረቶቹ እና ድምዳሜው በግዴታ እውነተኞች ናቸው፤ ምክንያቱም sound ለመሆን እውነተኛ premises እና ትክክለኛ መዋቅር ሊኖረው ይገባል።"
+},
+
+{
+    question: "10. It is impossible to produce a valid argument for a false conclusion.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "A valid argument can have a false conclusion if one or more of its premises are false. Validity only means that if the premises were true, the conclusion would have to be true.",
+    amharicExplanation: "ሐሰተኛ ድምዳሜ (false conclusion) ላለው ክርክር ቫሊድ (valid) የሆነ መዋቅር ማዘጋጀት ይቻላል፤ ይህ የሚሆነው አንዱ ወይም ከዚያ በላይ መሠረቶች (premises) ሐሰተኛ ሲሆኑ ነው።"
+},
+
+{
+    question: "11. If an argument is invalid, then its conclusion is false.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Invalidity only means that the conclusion does not strictly follow from the premises. It does not mean the conclusion itself is automatically false; it could happen to be true.",
+    amharicExplanation: "ክርክሩ ኢንቫሊድ (invalid) መሆኑ ድምዳሜው በግዴታ ውሸት ነው አያሰኝም፤ ትርጉሙ ድምዳሜው ከሰቦቹ በቂ የሆነ ሎጂካዊ ትስስር አላገኘም ማለት ብቻ ነው።"
+},
+
+{
+    question: "12. If the premises in an argument are controversial, then the argument can still be sound.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "For an argument to be sound, its premises must be true and its deductive structure must be valid. If the premises are controversial, their truth is not established, so the argument cannot be considered sound based on that information.",
+    amharicExplanation: "ክርክር ሳውንድ (sound) ለመሆን መሠረቶቹ እውነተኛ መሆን እና ክርክሩም valid መሆን አለበት። መሠረቶቹ አከራካሪ (controversial) ከሆኑ እውነትነታቸው ስላልተረጋገጠ sound ሊባል አይችልም።"
+},
+
+{
+    question: "13. Sound arguments are true arguments.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "Arguments are neither true nor false. Only statements or propositions are true or false. Arguments are evaluated as valid or invalid and sound or unsound.",
+    amharicExplanation: "ክርክሮች (arguments) እውነት ወይም ውሸት ሊባሉ አይችሉም፤ እውነት ወይም ውሸት ሊባሉ የሚችሉት መግለጫዎች (statements) ብቻ ናቸው። ክርክሮች የሚገመገሙት በvalidity ወይም soundness ነው።"
+},
+
+{
+    question: "14. To judge whether an argument is valid, you do not need to know whether the premises or the conclusion are true or false.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Validity is purely about the logical form or structure of the argument. You can determine whether the conclusion follows from the premises without knowing whether the statements are actually true or false.",
+    amharicExplanation: "አንድ ክርክር valid መሆን አለመሆኑን ለመመዘን የሐረጎቹን እውነተኛነት ማወቅ አያስፈልግም። የሚታየው መዋቅሩ ከሰቦቹ ወደ ድምዳሜው በትክክል መሄድ አለመሄዱን ብቻ ነው።"
+},
+
+{
+    question: "15. If two people agree about what an argument says and disagree about whether it is sound, then one of them must be wrong.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Soundness is an objective matter based on whether the argument is valid and all its premises are true. If both people fully understand the same argument, they cannot both be correct if they disagree about its soundness.",
+    amharicExplanation: "Soundness በዕውነታ ላይ የተመሠረተ ሐቅ ስለሆነ፣ ሁለቱ ሰዎች ክርክሩን ተመሳሳይ ሆኖ ሲረዱት አንዱ ስለ soundness ያለው ግምገማ ትክክል ሲሆን ሌላኛው ስህተት መሆን አለበት።"
+},
+
+{
+    question: "16. An argument, for the purposes of logic, is made up of:",
+    options: [
+        "A. Unconnected statements.",
+        "B. A set of statements that one of the statements does actually support the other.",
+        "C. A set of statements that is supposed to support another statement.",
+        "D. True statements.",
+        "E. A set of statements that may or may not have inferential claim."
+    ],
+    answer: 2,
+    englishExplanation: "By definition, an argument is a group of statements consisting of one or more premises that are supposed to provide support for a conclusion.",
+    amharicExplanation: "በሎጂክ ትርጉም መሠረት ክርክር ማለት አንዱን መግለጫ (ድምዳሜ) ለመደገፍ የታሰቡ ሌሎች መግለጫዎች (ሰበቦች) ስብስብ ነው።"
+},
+
+{
+    question: "17. Of the following, one is not a typical premise indicator word/phrase:",
+    options: [
+        "A. Because",
+        "B. Accordingly",
+        "C. Given that",
+        "D. For the reason that"
+    ],
+    answer: 1,
+    englishExplanation: "\"Accordingly\" is a conclusion indicator, whereas \"Because,\" \"Given that,\" and \"For the reason that\" are typical premise indicators.",
+    amharicExplanation: "\"Accordingly\" የሚለው ቃል የድምዳሜ ማሳያ (conclusion indicator) ሲሆን፣ ሌሎቹ \"Because\", \"Given that\", እና \"For the reason that\" የመሠረት (premise) ማሳያዎች ናቸው።"
+},
+
+{
+    question: "18. The unique type of indicator word among the following is:",
+    options: [
+        "A. Therefore",
+        "B. As a result",
+        "C. Because",
+        "D. For this reason"
+    ],
+    answer: 2,
+    englishExplanation: "\"Because\" indicates a premise or reason, while \"Therefore,\" \"As a result,\" and \"For this reason\" indicate conclusions. Thus, \"Because\" is the unique one.",
+    amharicExplanation: "\"Because\" ማብራሪያ ወይም ሰበብ (premise) የሚያሳይ ሲሆን፣ \"Therefore\", \"As a result\", እና \"For this reason\" ድምዳሜን ያሳያሉ። ስለዚህ ከሌሎቹ ለየት የሚለው \"Because\" ነው።"
+},
+
+{
+    question: "19. Identify the wrongly matched one with regard to forming an argument, which one is it?",
+    options: [
+        "A. Premises ----- at least one",
+        "B. Conclusion ----- only one",
+        "C. Statement ----- at least two (or similar contextual structuring rules)",
+        "D. Conclusion ----- at least one"
+    ],
+    answer: 3,
+    englishExplanation: "A standard logical argument has at least one premise and one conclusion. The conclusion is normally treated as one statement. Therefore, matching conclusion with \"at least one\" is the wrongly matched option in this context.",
+    amharicExplanation: "መደበኛ ክርክር ቢያንስ አንድ premise እና አንድ conclusion ይኖረዋል። ድምዳሜ (Conclusion) በመደበኛ ክርክር አንድ ብቻ ነው። ስለዚህ \"Conclusion ----- at least one\" የሚለው በዚህ አውድ የተሳሳተ ማዛመጃ ነው።"
+},
+
+{
+    question: "20. A non-argumentative passage that consists of statements or a group of statements intended to shed light on some phenomenon that is usually accepted as a matter of fact is called:",
+    options: [
+        "A. Illustrations",
+        "B. Elaborations",
+        "C. Explanation",
+        "D. Pieces of advice"
+    ],
+    answer: 2,
+    englishExplanation: "An explanation aims to shed light on or clarify an accepted matter of fact by answering why or how something is. This makes it distinct from an argument, which tries to establish that something is true.",
+    amharicExplanation: "አስቀድሞ የታወቀ ወይም ተቀባይነት ያለውን ሐቅ ለማብራራት ወይም ግልጽ ለማድረግ የሚረዳ ሐረጎች ስብስብ Explanation (ማብራሪያ) ይባላል።"
+},{
+    question: "21. The most vital thing that decides a passage as part of an argument is:",
+    options: [
+        "A. Form or structure",
+        "B. Claim",
+        "C. Objective Truth Value",
+        "D. Indicator words"
+    ],
+    answer: 1,
+    englishExplanation: "An argument requires an inferential claim—a claim that one statement is supported by others. Without a claim stating that reasons support a conclusion, a passage is just a collection of statements, not an argument.",
+    amharicExplanation: "ክርክር ለመሆን ዋናው እና በጣም አስፈላጊው ነገር የይገባኛል ጥያቄ (inferential claim) መኖር ነው። አንዱ ሐሳብ በሌላው እንደሚደገፍ የሚያሳይ ሐሳብ ከሌለ ሐሳቡ ክርክር ሊሆን አይችልም።"
+},
+
+{
+    question: "22. Of the following, which one is incorrect?",
+    options: [
+        "A. In explanation, the explanans is the statement that does the explaining",
+        "B. Any passage that contains an argument must contain a claim that something is supported by reasons",
+        "C. Passages that contain indicator words such as 'thus,' 'since,' and 'because' are always arguments.",
+        "D. A and C",
+        "E. None"
+    ],
+    answer: 2,
+    englishExplanation: "Indicator words like 'since' or 'because' often signal arguments, but they can also be used in explanations or conditional statements. Therefore, they do not automatically guarantee that a passage is an argument.",
+    amharicExplanation: "እንደ 'since' እና 'because' ያሉ አመላካች ቃላት ክርክርን ሊያሳዩ ቢችሉም ሁልጊዜ ግን ክርክርን አያረጋግጡም፤ ምክንያቱም በማብራሪያዎች (explanations) ውስጥም ሊገቡ ስለሚችሉ። ስለዚህ C የተሳሳተ ሐሳብ ነው።"
+},
+
+{
+    question: "23. Which of the following is incorrect statement?",
+    options: [
+        "A. If the premises necessarily support the conclusion, such argument is deductive",
+        "B. A single conditional statement is an argument",
+        "C. A passage that contain indicator words may or may not be an argument",
+        "D. All statements are sentences but not all sentences are statements",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "A single conditional statement, such as an 'if-then' statement, is a single compound statement, not an argument. An argument requires premises and a conclusion.",
+    amharicExplanation: "አንድ የሁኔታ (conditional) ዓረፍተ ነገር ብቻውን ክርክር ሊሆን አይችልም። ክርክር ለመሆን ቢያንስ አንድ ግቢ (premise) እና አንድ መደምደሚያ (conclusion) ሊኖረው ይገባል።"
+},
+
+{
+    question: "24. Identify the wrong statement.",
+    options: [
+        "A. Inferential claim is the best method to identify argumentative passages from non-argumentative ones.",
+        "B. The premises of a deductive argument guarantee the truth of its conclusion.",
+        "C. The premises of an inductive argument necessarily support its conclusion.",
+        "D. Validity is not a question of factual claim rather it is a matter of inferential claim."
+    ],
+    answer: 2,
+    englishExplanation: "In an inductive argument, premises support the conclusion only probably or likely, not with necessity or certainty. Deductive arguments are the ones where premises claim to guarantee the conclusion necessarily.",
+    amharicExplanation: "በኢንዳክቲቭ (inductive) ክርክር ውስጥ ግቢዎች መደምደሚያውን የሚደግፉት በእርግጠኛነት (necessarily) ሳይሆን በዕድል ወይም በግምት (probably) ነው። ስለዚህ C የተሳሳተ ነው።"
+},
+
+{
+    question: "25. Of the following options, which one is an inductive argument?",
+    options: [
+        "A. Disjunctive syllogism",
+        "B. Categorical syllogism",
+        "C. Hypothetical syllogism",
+        "D. Causal inference"
+    ],
+    answer: 3,
+    englishExplanation: "Disjunctive, categorical, and hypothetical syllogisms are standard forms of deductive arguments. Causal inference involves reasoning about causes and effects and is generally inductive because its conclusion is probabilistic.",
+    amharicExplanation: "Causal inference (የምክንያት እና ውጤት ትንተና) አብዛኛውን ጊዜ በግምት ወይም በዕድል ላይ የተመሠረተ ስለሆነ የኢንዳክቲቭ (inductive) ክርክር ምድብ ውስጥ ይወድቃል። የተቀሩት ሦስቱ የደዳክቲቭ (deductive) ዓይነቶች ናቸው።"
+},
+
+{
+    question: "26. In which pure form of argument does the conclusion does the conclusion claimed to follow from the premises with the force of certainty?",
+    options: [
+        "A. Argument from causation",
+        "B. Argument from mathematics",
+        "C. Argument from authority",
+        "D. Argument from analogy"
+    ],
+    answer: 1,
+    englishExplanation: "An argument from mathematics claims that the conclusion follows from the premises with certainty and necessity. Mathematical reasoning is therefore a deductive form of argument.",
+    amharicExplanation: "በሂሳብ ላይ የተመሠረተ ክርክር (Argument from mathematics) መደምደሚያው በፍጹም እርግጠኛነት (certainty) የሚከተልበት የደዳክቲቭ ክርክር ዓይነት ነው።"
+},
+
+{
+    question: "27. Argument based on citation, interview, or witness of a person who has a better position or access to the required qualification is:",
+    options: [
+        "A. Argument from analogy",
+        "B. Argument from authority",
+        "C. Inductive generalization",
+        "D. Causal inference"
+    ],
+    answer: 1,
+    englishExplanation: "When an argument relies on the testimony or statement of an expert, witness, or qualified authority to support its conclusion, it is called an argument from authority.",
+    amharicExplanation: "ክርክሩ የተመሠረተው በባለሙያ ምስክርነት፣ በቃለ መጠይቅ ወይም በባለስልጣን አካል እውቀት ላይ ከሆነ Argument from authority (በሥልጣን/በባለሙያ ላይ የተመሠረተ ክርክር) ይባላል።"
+},
+
+{
+    question: "28. Which of the following is a correct statement about Categorical syllogism?",
+    options: [
+        "A. An argument formed by conditional statements",
+        "B. It is an inductive form of argument based on syllogism",
+        "C. It begins with 'all,' 'no,' 'some'",
+        "D. It is an 'either.......or' statement"
+    ],
+    answer: 2,
+    englishExplanation: "A categorical syllogism is a deductive argument consisting of categorical propositions. These propositions commonly use quantifiers such as 'all,' 'no,' and 'some.'",
+    amharicExplanation: "ካቴጎሪካል ሲሎጅዝም (Categorical syllogism) በ 'all' (ሁሉም)፣ 'no' (ምንም) ወይም 'some' (አንዳንዶች) ቃላት የሚጀምሩ መደቦች ያሉት የደዳክቲቭ ክርክር ዓይነት ነው።"
+},
+
+{
+    question: "29. Which one of the following is not a form/style of a deductive argument?",
+    options: [
+        "A. Over the top of this building, there is a CBE flag. So, in the building, CBE services are being provided",
+        "B. This class has a height of 20cm, its width is 7cm and its length is 7cm. Therefore the total area of this class is 980cm^2",
+        "C. The government of Ethiopia has been adopting the system of Parliamentary. This implies that, the government recognizes division of power between federal and regional government",
+        "D. Since Nazrawit is the mother of Eden and the sister of Nati, it follows that Nati is the uncle of Eden"
+    ],
+    answer: 0,
+    englishExplanation: "Option A is an argument based on a sign. A sign provides evidence that something is likely to be the case, so this is generally treated as an inductive form rather than a strict deductive argument.",
+    amharicExplanation: "ምርጫ A ምልክትን መሠረት ያደረገ (argument based on sign) ሲሆን ይህም በአጠቃላይ የኢንዳክቲቭ ዘይቤ እንጂ የጥብቅ ደዳክቲቭ አይነት አይደለም። የተቀሩት በሂሳብ፣ በትርጉም ወይም በጥብቅ ሎጂካዊ ግንኙነት የሚሰሩ ናቸው።"
+},
+
+{
+    question: "30. Unlike monkeys, today's humans have feet that are not suited for grasping objects. Therefore, a thousand years from now, probably humans will still have feet that are not suited for grasping objects.",
+    options: [
+        "A. Argument based on prediction",
+        "B. Argument based on analogy",
+        "C. Argument based on authority",
+        "D. Inductive generalization"
+    ],
+    answer: 0,
+    englishExplanation: "This argument makes a claim about the future based on present conditions. Since it predicts what will probably happen later, it is an argument based on prediction.",
+    amharicExplanation: "ይህ ክርክር ስለ ወደፊቱ ጊዜ ('ከአንድ ሺህ ዓመት በኋላ') የሚገምት በመሆኑ Argument based on prediction (ትንበያን መሠረት ያደረገ ክርክር) ይባላል።"
+},
+
+{
+    question: "31. 'The Encyclopaedia Aethiopica says that Ras Dasheen is taller than Kilimanjaro. In general, the Encyclopaedia Aethiopica is a highly reliable source of information. Therefore, it's probably true that Ras Dasheen is taller than Kilimanjaro.' The passage is:",
+    options: [
+        "A. Argument from Authority",
+        "B. Causal Argument",
+        "C. Predictive Argument",
+        "D. Argument based on sign"
+    ],
+    answer: 0,
+    englishExplanation: "The argument supports its conclusion by relying on the credibility of a reference source, the Encyclopaedia Aethiopica. Therefore, it is an argument from authority.",
+    amharicExplanation: "ክርክሩ የተመሠረተው በታመነ የመረጃ ምንጭ፣ ማለትም Encyclopaedia Aethiopica ላይ ስለሆነ Argument from Authority ይባላል።"
+},
+
+{
+    question: "32. Alemu is a philosophy professor and he told me that philosophy is more of an art than science. In view of Professor Alemu, philosophy is an art and not essentially a science. The argument is:",
+    options: [
+        "A. Deductive: Generalization",
+        "B. Inductive: Generalization",
+        "C. Deductive: Argument from definition",
+        "D. Inductive: Argument from authority",
+        "E. Deductive: Argument from authority"
+    ],
+    answer: 3,
+    englishExplanation: "The argument relies on the opinion of Professor Alemu, who is presented as an authority in philosophy. Since an appeal to authority normally provides probable rather than certain support, it is an inductive argument from authority.",
+    amharicExplanation: "ሐሳቡ የቀረበው የፍልስፍና ፕሮፌሰር የሆነውን አለሙን በመጥቀስ ላይ ስለሆነ እና የባለሙያ ሐሳብ ብዙውን ጊዜ ፍጹም እርግጠኛነት ሳይሆን ዕድልን (probability) ስለሚያሳይ Inductive: Argument from authority ይሆናል።"
+},
+
+{
+    question: "33. God is omniscient. So, he must know everything. The argument is:",
+    options: [
+        "A. Disjunctive syllogism",
+        "B. Categorical syllogism",
+        "C. Argument from definition",
+        "D. Hypothetical syllogism"
+    ],
+    answer: 2,
+    englishExplanation: "The conclusion follows directly from the definition of 'omniscient,' which means knowing everything. Therefore, this is an argument from definition.",
+    amharicExplanation: "'Omniscient' ማለት ሁሉን አዋቂ ማለት ነው። መደምደሚያው የተገኘው ከዚህ ቃል ትርጉም (definition) በመነሳት ስለሆነ Argument from definition ይባላል።"
+},
+
+{
+    question: "34. Either Cairo or Addis Ababa is the head quarter of AU. Cairo is not the head quarter of AU. Therefore, Addis Ababa is the head quarter of AU. The argument is:",
+    options: [
+        "A. Hypothetical syllogism",
+        "B. Disjunctive syllogism",
+        "C. Categorical syllogism",
+        "D. Argument from definition"
+    ],
+    answer: 1,
+    englishExplanation: "A disjunctive syllogism contains an either-or premise, followed by the rejection of one alternative and the affirmation of the remaining alternative.",
+    amharicExplanation: "ይህ ክርክር 'Either...or' (ይህ ወይም ያ) የሚጀምር አማራጭ የያዘ ሲሆን አንዱን ውድቅ በማድረግ ሌላውን ስለሚያረጋግጥ Disjunctive syllogism ይባላል።"
+},
+
+{
+    question: "35. Of the following options, which one is true?",
+    options: [
+        "A. All invalid arguments have false premises and false conclusion.",
+        "B. All invalid arguments have true premises and true conclusion.",
+        "C. An invalid argument can never have true premises and true conclusion.",
+        "D. An invalid argument can have true premises and true conclusion."
+    ],
+    answer: 3,
+    englishExplanation: "Validity concerns the logical structure of an argument, not simply the truth values of its statements. Therefore, an invalid argument can have both true premises and a true conclusion.",
+    amharicExplanation: "የክርክር ሕጋዊ አለመሆን (invalidity) በቀጥታ ከእውነተኛነት ጋር አይያያዝም። ልክ ያልሆነ (invalid) ክርክር እንኳ እውነተኛ ግቢዎችና እውነተኛ መደምደሚያ ሊኖሩት ይችላሉ።"
+},
+
+{
+    question: "36. If an inductive argument has true premises and probably true conclusion, then we know:",
+    options: [
+        "A. It is weak",
+        "B. It is strong",
+        "C. It is cogent",
+        "D. It is impossible to determine about its strength"
+    ],
+    answer: 3,
+    englishExplanation: "Knowing that the premises are true and the conclusion is probably true does not by itself tell us whether the argument is strong. Strength depends on how well the premises support the conclusion.",
+    amharicExplanation: "ግቢዎቹ እውነተኛ እና መደምደሚያው በዕድል እውነት ሊሆን ይችላል ማለት ብቻ የክርክሩን ጥንካሬ (strength) አያረጋግጥም። ጥንካሬውን ለመወሰን ግቢዎቹ መደምደሚያውን ምን ያህል በጥሩ ሁኔታ እንደሚደግፉ መመርመር ያስፈልጋል።"
+},
+
+{
+    question: "37. If a deductive argument has a false premise and a true conclusion, then we know:",
+    options: [
+        "A. It is sound.",
+        "B. It is strong.",
+        "C. It is valid.",
+        "D. It is invalid.",
+        "E. Nothing as such about its validity."
+    ],
+    answer: 4,
+    englishExplanation: "The truth values of an individual premise and conclusion do not by themselves determine validity. A valid argument can have a false premise and a true conclusion, and an invalid argument can also have them.",
+    amharicExplanation: "የግቢዎችና የመደምደሚያ የሐሰት ወይም እውነት መሆን ብቻውን የደዳክቲቭ ክርክር ሕጋዊነትን (validity) አያሳይም። ስለዚህ ስለ validity ምንም የተወሰነ ድምዳሜ ማድረግ አይቻልም።"
+},
+
+{
+    question: "38. Which one of the following options is valid but unsound?",
+    options: [
+        "A. All cats are dogs given that all rats are dogs and all rats are cats.",
+        "B. All human beings are mortals in that all philosophers are human beings and all philosophers are mortals.",
+        "C. All cows are goats for all sheep are goats and all cows are sheep.",
+        "D. All cows are goats for all goats are sheep and all cows are goats."
+    ],
+    answer: 2,
+    englishExplanation: "A valid but unsound argument has a valid logical structure but at least one false premise. In option C, the premises are factually false, while the conclusion follows from the premises through the stated categorical structure.",
+    amharicExplanation: "'Valid but unsound' ማለት መዋቅሩ ትክክል (valid) የሆነ ግን ቢያንስ አንድ ሐሰተኛ ግቢ ያለው ክርክር ማለት ነው። በምርጫ C ያሉት ግቢዎች በእውነታ ሐሰተኛ ቢሆኑም የሎጂክ መዋቅሩ ግን ትክክል (valid) ስለሆነ መልሱ C ነው።"
+},
+
+{
+    question: "39. Given that x - y = 13 and x = 18. It follows that y = 4.",
+    options: [
+        "A. Inductive, strong.",
+        "B. Deductive, invalid.",
+        "C. Deductive, uncogent.",
+        "D. Inductive, weak.",
+        "E. Deductive, valid."
+    ],
+    answer: 1,
+    englishExplanation: "If x = 18 and x - y = 13, then 18 - y = 13, so y must equal 5, not 4. Therefore, the conclusion does not follow from the premises, making the deductive argument invalid.",
+    amharicExplanation: "x = 18 እና x - y = 13 ከሆነ 18 - y = 13 ይሆናል። ስለዚህ y = 5 መሆን አለበት እንጂ 4 አይደለም። ስለዚህ መደምደሚያው ከግቢዎቹ በትክክል ስለማይከተል ደዳክቲቭ ክርክሩ invalid ነው።"
+},
+
+{
+    question: "40. Of the following options, which one is true?",
+    options: [
+        "A. All weak arguments are uncogent.",
+        "B. All weak arguments are invalid and unsound.",
+        "C. All uncogent arguments are necessarily weak.",
+        "D. All uncogent arguments are invalid as well as weak."
+    ],
+    answer: 0,
+    englishExplanation: "An inductive argument is cogent only when it is strong and has true premises. Therefore, any weak inductive argument fails the strength requirement and is necessarily uncogent.",
+    amharicExplanation: "'Cogent' ለመሆን ክርክሩ ጠንካራ (strong) እና እውነተኛ ግቢዎች ሊኖሩት ይገባል። ስለዚህ ማንኛውም ደካማ (weak) ክርክር የግድ uncogent ይሆናል።"
+},],
         3: [],
         4: [],
         5: []
