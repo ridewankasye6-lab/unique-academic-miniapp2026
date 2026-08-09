@@ -3209,7 +3209,7 @@ const quizData = {
       "This is a False Dichotomy because it presents only two choices—buy the expensive jeans or be considered out of style—while ignoring many other realistic alternatives.",
     amharicExplanation:
       "ይህ የ'False Dichotomy' ወይም False Dilemma ስህተት ነው። ሁለት ምርጫዎች ብቻ እንዳሉ አድርጎ ያቀርባል፤ ወይ 200 ዶላር የሚያወጣ ልብስ ግዛ ወይም ከፋሽን ውጭ ነህ ተብለህ ትታያለህ ይላል። ነገር ግን ሌሎች ብዙ አማራጮች አሉ።"
-  }]
+  }],
 
     },
 
