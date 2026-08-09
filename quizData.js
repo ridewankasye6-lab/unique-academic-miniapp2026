@@ -2583,7 +2583,312 @@ const quizData = {
     amharicExplanation:
       "ውርጃን 'ንጹሐን ሰዎችን በግፍ መግደል' ብሎ መግለጽ እጅግ ስሜታዊና አሳማኝ ቃላትን ይጠቀማል። ዓላማውም የሰዎችን አመለካከት ለመቀየር ስለሆነ Persuasive definition ይባላል።"
   }],
-        4: [],
+        4: [ {
+    question: "Critical thinking is about supporting our beliefs with ____",
+    options: [
+      "basic moral feelings",
+      "our desires",
+      "popular ideas",
+      "reasons and arguments"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Critical thinking involves backing up our beliefs with solid reasons and well-constructed arguments. This process ensures that our conclusions are logical, evidence-based, and rational, rather than being driven by blind emotion.",
+    amharicExplanation:
+      "ሂሳዊ አስተሳሰብ (Critical thinking) እምነቶቻችንን በጠንካራ ምክንያቶች እና በሰከኑ ክርክሮች ላይ እንድንመሰርት ይረዳናል። ይህ ሂደት ድምዳሜዎቻችን በስሜት ሳይሆን በምክንያት እና በማስረጃ ላይ የተመሰረቱ እንዲሆኑ ያረጋግጣል።"
+  },
+
+  {
+    question: "Critical thinking is ____",
+    options: [
+      "negative",
+      "cynical",
+      "creatively constrained",
+      "systematic"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Critical thinking is a systematic process. It involves structured and methodical approaches to analyzing and evaluating information.",
+    amharicExplanation:
+      "ሂሳዊ አስተሳሰብ ስልታዊ (systematic) ሂደት ነው። መረጃዎችን ለመተንተን እና ለመገምገም የተዋቀሩ እና የተስተካከሉ ዘዴዎችን ይጠቀማል።"
+  },
+
+  {
+    question:
+      "Glaser’s definition of critical thinking owes a lot to Dewey’s original definition.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Glaser’s definition of critical thinking is very similar to Dewey’s original definition. Glaser uses the term 'evidence' instead of 'grounds,' but the second half is very similar.",
+    amharicExplanation:
+      "የግሌሰር (Glaser) የሂሳዊ አስተሳሰብ ትርጉም ከድዊ (Dewey) የመጀመሪያ ትርጉም ጋር እጅግ ተመሳሳይ ነው። ግሌሰር 'grounds' ከሚለው ቃል ይልቅ 'evidence' የሚለውን ቃል ይጠቀማል እንጂ ትርጉሙ በጣም የቀራረበ ነው።"
+  },
+
+  {
+    question:
+      "Critical thinkers are indifferent for the clarity of language even if they seek clarity of thought.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Critical thinkers strive for clarity of language and seek maximum clarity of thought. Language and thought are closely connected, and clear language is essential for clear thinking.",
+    amharicExplanation:
+      "ሂሳዊ አስተሳሰብ ያላቸው ሰዎች ለቋንቋ ግልጽነት ግድየለሾች አይደሉም፤ ይልቁንም ከፍተኛ የሆነ የቋንቋ እና የአስተሳሰብ ግልጽነት ይፈልጋሉ። ቋንቋ እና አስተሳሰብ በጥብቅ የተሳሰሩ ናቸውና ግልጽ የሆነ ቋንቋ ለግልጽ አስተሳሰብ አስፈላጊ ነው።"
+  },
+
+  {
+    question:
+      "Unlike others, highly educated and intelligent people are never victim to egocentrism.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Egocentrism is a common barrier to critical thinking and can affect everyone, including highly educated and intelligent people. It is the tendency to see reality as centered on oneself.",
+    amharicExplanation:
+      "ራዕይ ማዕከል አድራጊነት (Egocentrism) በሂሳዊ አስተሳሰብ ላይ ትልቅ እንቅፋት ሲሆን የተማሩትንም ሆነ ብልሆችን ጨምሮ ማንኛውንም ሰው ሊጎዳ ይችላል። ማንኛውም ሰው እውነታውን በራሱ ዙሪያ ብቻ የማየት ዝንባሌ (Egocentrism) ሊኖረው ይችላል።"
+  },
+
+  {
+    question:
+      "Critical thinking helps us to investigate data, belief or facts accurately and partially.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Critical thinking leads to an impartial investigation of data, beliefs, and facts. It aims to evaluate information fairly and accurately rather than examining it partially or with bias.",
+    amharicExplanation:
+      "ሂሳዊ አስተሳሰብ መረጃዎችን፣ እምነቶችን እና እውነታዎችን በከፊል (partially) ሳይሆን ፍትሃዊ በሆነ እና የማያዳላ (impartial) በሆነ መንገድ እንድንመረምር ይረዳናል።"
+  },
+
+  {
+    question:
+      "Which principle of a good argument requires the premises to provide evidences that have connection to the truth or merit of the conclusion?",
+    options: [
+      "The Sufficiency principle",
+      "The Rebuttal principle",
+      "The Structural principle",
+      "The Relevance principle"
+    ],
+    answer: 3,
+    englishExplanation:
+      "The Relevance Principle requires the reasons or premises presented in an argument to have a direct connection to the truth or merit of the conclusion.",
+    amharicExplanation:
+      "የአግባብነት መርህ (Relevance Principle) በክርክር ውስጥ የሚቀርቡ ምክንያቶች ከድምዳሜው እውነት ወይም ትክክለኛነት ጋር ቀጥተኛ ቁርኝት እንዲኖራቸው ይጠይቃል።"
+  },
+
+  {
+    question:
+      "Which principle of Critical thinking refers to the assumption that one should give reason or justification for his/her argument if the claimant raises a question?",
+    options: [
+      "Charity",
+      "Resolution",
+      "Burden of Proof",
+      "Truth Seeking"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The Burden of Proof principle states that the person making a claim has the responsibility to provide evidence or justification supporting that claim when it is questioned.",
+    amharicExplanation:
+      "የማስረጃ ሸክም መርህ (Burden of Proof) ማለት ጥያቄ ሲነሳ ሃሳብ አቅራቢው አካል ለተናገረው ነገር በቂ ምክንያት ወይም ማስረጃ ማቅረብ አለበት የሚለውን መርህ ያመለክታል።"
+  },
+
+  {
+    question: "Robert Ennis defined critical thinking as:",
+    options: [
+      "A journey to arrive at the most useful destinations while evaluating claims for scientific truth.",
+      "A reasonable and reflective thinking focusing on deciding what to believe or do.",
+      "An attitude of being disposed to consider in a thoughtful way.",
+      "An academic competency."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Robert Ennis defined critical thinking as reasonable and reflective thinking focused on deciding what to believe or what to do. It emphasizes careful judgment and decision-making.",
+    amharicExplanation:
+      "ሮበርት ኤኒስ (Robert Ennis) ሂሳዊ አስተሳሰብን ምን እናድርግ ወይም ምን እንመን ለሚለው ውሳኔ ለመድረስ የሚረዳ አስተዋይ እና አሳቢ (reasonable and reflective) አስተሳሰብ ነው ብሎ ይገልጸዋል።"
+  },
+
+  {
+    question: "Which one of the following statements is Correct?",
+    options: [
+      "Man is by nature rational being; thus, he/she is a critical thinker.",
+      "Critical thinking is to think by disregarding a society's norm, value, law and tradition.",
+      "Critical thinking is less helpful to be successful in academic areas.",
+      "It is unsound to assume that everyone can be equally be a critical thinker."
+    ],
+    answer: 3,
+    englishExplanation:
+      "Although humans have the capacity for reasoning, critical thinking is a skill that must be developed and refined. It is not reasonable to assume that everyone is equally skilled at critical thinking.",
+    amharicExplanation:
+      "ሰዎች በተፈጥሯቸው የማሰብ ችሎታ ቢኖራቸውም፣ ሂሳዊ አስተሳሰብ በልምምድ እና በክህሎት የሚዳብር ነው። ሁሉም ሰው በእኩል ደረጃ ሂሳዊ አስተሳሰብ አለው ብሎ ማሰብ ትክክል አይደለም።"
+  },
+
+  {
+    question:
+      "One of the following alternatives is correctly matched regarding barriers of critical thinking:",
+    options: [
+      "Relativistic thinking — subjective truth",
+      "Sociocenterism — superiority bias",
+      "Egocenterism — group conformism",
+      "Unsupported assumption — wishful thinking"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Relativistic thinking is correctly matched with subjective truth because it assumes that truth is relative to each person's perspective or point of view.",
+    amharicExplanation:
+      "አንጻራዊ አስተሳሰብ (Relativistic thinking) ከተገደበ ወይም ከግለሰብ አመለካከት ጋር የተያያዘ እውነት (subjective truth) ጋር በትክክል ተዛምዷል። ምክንያቱም እውነት እንደየግለሰቡ አመለካከት ይለያያል ብሎ ስለሚያምን ነው።"
+  },
+
+  {
+    question:
+      "Identify the habitual use of immature defense mechanisms when our worldviews are challenged.",
+    options: [
+      "Egocentrism",
+      "Ethnocentrism",
+      "Absolutism",
+      "Conformism"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Egocentrism can involve using immature defensive mechanisms when one's personal worldview or beliefs are challenged. The person focuses heavily on protecting their own perspective.",
+    amharicExplanation:
+      "የዓለም አመለካከታችን ሲፈታተን የራስን አስተሳሰብ ለማስጠበቅ የጎለመሱ ያልሆኑ የመከላከያ ዘዴዎችን በተደጋጋሚ መጠቀም ከEgocentrism ጋር ይያያዛል።"
+  },
+
+  {
+    question:
+      "Which barriers to critical thinking accept or reject ideas as true or false based on the benefit or cost to the individuals?",
+    options: [
+      "Relativism",
+      "Egocentrism",
+      "Sociocentrism",
+      "Stereotype",
+      "Wishful thinking"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Egocentrism can appear as self-interest thinking, where ideas are accepted or rejected based on how much they benefit or harm the individual rather than on objective evidence.",
+    amharicExplanation:
+      "ሃሳቦችን እውነት ወይም ሐሰት ብሎ መቀበል ወይም አለመቀበል በግለሰቡ ላይ በሚያመጣው ጥቅም ወይም ወጪ ላይ ብቻ ማመስረት Egocentrism ከሚባለው እንቅፋት ጋር ይያያዛል።"
+  },
+
+  {
+    question: "Which one of the following is ODD about critical thinking?",
+    options: [
+      "The intellect is equally important like the body in the due process of critical thinking.",
+      "Being intelligent is sufficient by itself to be a critical thinker.",
+      "It is acquired by nature.",
+      "None of the above."
+    ],
+    answer: 3,
+    englishExplanation:
+      "According to the provided answer key, 'None of the above' is the correct choice. Critical thinking should not be reduced to intelligence alone or treated as an automatically acquired ability.",
+    amharicExplanation:
+      "በተሰጠው የመልስ ቁልፍ መሠረት 'None of the above' ትክክለኛው መልስ ነው። ሂሳዊ አስተሳሰብን በብልህነት ብቻ መወሰን ወይም በተፈጥሮ በራሱ የሚገኝ ችሎታ እንደሆነ መቁጠር ተገቢ አይደለም።"
+  },
+
+  {
+    question:
+      "One of the following is not among the characteristics of a critical thinker.",
+    options: [
+      "Inquisitive",
+      "Compassionate",
+      "Gut feeling",
+      "Disposition"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Critical thinkers prioritize evidence-based reasoning rather than relying mainly on gut feelings or intuition. They use careful analysis and logical evaluation to form judgments.",
+    amharicExplanation:
+      "ሂሳዊ አስተሳሰብ ያላቸው ሰዎች በደመ ነፍስ (Gut feeling) ወይም በስሜት ላይ ብቻ ሳይመሰረቱ በማስረጃ፣ በጥንቃቄ ትንተና እና በሎጂካዊ ምክንያት ላይ ይመሰረታሉ።"
+  },
+
+  {
+    question: "In our commitment to be rational we stand not against ____",
+    options: [
+      "Bias",
+      "Superstition",
+      "Genuine Evidence",
+      "Emotional Appeals"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Rational thinking relies on valid and genuine evidence to support claims and make decisions. Therefore, rationality does not oppose genuine evidence; it actively seeks and evaluates it.",
+    amharicExplanation:
+      "ምክንያታዊ ለመሆን ስንጥር ከትክክለኛ ማስረጃ (Genuine Evidence) ጋር አንቃወምም። ይልቁንም እውነተኛ ማስረጃዎችን እንፈልጋለን፣ እንመረምራለን እና ውሳኔዎቻችንን በእነሱ ላይ እንመሰርታለን።"
+  },
+
+  {
+    question:
+      "Which one of the following statements does not describe the basic feature of critical thinkers?",
+    options: [
+      "Critical thinkers try to develop and meet the standards of critical thinking such as clarity, precision and accuracy.",
+      "Critical thinkers are often indifferent to truths and lack the curiosity to know.",
+      "Critical thinkers are open-minded and they try to support their assertions with evidence.",
+      "Critical thinkers do not blindly follow group standards of beliefs.",
+      "Critical thinkers are flexible and they try to evaluate ideas and beliefs impartially."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Critical thinkers are not indifferent to truth. They are curious, open-minded, and committed to seeking accurate information and evaluating evidence fairly.",
+    amharicExplanation:
+      "ሂሳዊ አስተሳሰብ ያላቸው ሰዎች ለእውነት ግድየለሾች አይደሉም። በተቃራኒው ከፍተኛ የማወቅ ፍላጎት (curiosity) አላቸው፣ ማስረጃን ይፈልጋሉ እና ሃሳቦችን በፍትሃዊነት ይገምግማሉ።"
+  },
+
+  {
+    question:
+      "Which principle of critical thinking requires that the duty to collect the necessary evidence in support of an idea lies on those who propose the idea?",
+    options: [
+      "The acceptability principle",
+      "The resolution principle",
+      "The suspension of judgment",
+      "The burden of proof principle",
+      "None"
+    ],
+    answer: 3,
+    englishExplanation:
+      "The Burden of Proof principle states that the person who makes a claim has the responsibility to provide the necessary evidence to support that claim.",
+    amharicExplanation:
+      "የማስረጃ ሸክም መርህ (Burden of Proof principle) አንድን ሃሳብ ወይም ጥያቄ ያቀረበው አካል ያንን ሃሳብ ለመደገፍ የሚያስፈልገውን ማስረጃ የማቅረብ ኃላፊነት አለበት ይላል።"
+  },
+
+  {
+    question:
+      "Critical thinking chiefly deals with the careful consideration of knowledge and the evidence that support it and the further implication that follows from it.",
+    options: [
+      "John Dewey",
+      "Richard Paul",
+      "Edward Glaser",
+      "Robert Ennis"
+    ],
+    answer: 0,
+    englishExplanation:
+      "John Dewey emphasized that critical thinking involves an active, persistent, and careful consideration of beliefs or knowledge in light of the grounds or evidence that support them and the implications that follow.",
+    amharicExplanation:
+      "ጆን ዲዊ (John Dewey) ሂሳዊ አስተሳሰብ ማለት ስለ እውቀት እና እውቀቱን ስለሚደግፉ ማስረጃዎች ጥንቃቄ የተሞላበት ምርመራ ማድረግ እና ከዚያ የሚከተሉትን ውጤቶች ማሰብ እንደሆነ ገልጿል።"
+  },
+
+  {
+    question:
+      "Any successful discussion of an issue must be carried on in language that all the parties involved can understand.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "For a discussion to be successful, the language used must be clear and understandable to all participants. Vague, confusing, or ambiguous language can prevent effective communication.",
+    amharicExplanation:
+      "ማንኛውም ውይይት ስኬታማ እንዲሆን የተጠቀመበት ቋንቋ በውይይቱ ውስጥ ያሉ ሁሉም አካላት ሊረዱት የሚችሉ ግልጽ ቋንቋ መሆን አለበት። ግልጽ ያልሆነ ወይም ግራ የሚያጋባ ቋንቋ ውጤታማ የሆነ ግንኙነትን ሊያደናቅፍ ይችላል።"
+  },{     question: "Which one of the following is wrong about critical thinking?",     options: [       "It is a partial investigation of data and facts.",       "It is a wide range of cognitive skills and intellectual dispositions.",       "It is methods of applying logical inquiry and reasoning.",       "It is thinking clearly, fairly, rationally, objectively, and independently."     ],     answer: 0,     englishExplanation:       "Critical thinking involves a thorough and comprehensive investigation of data and facts rather than a partial one. Therefore, stating that it is a 'partial investigation' is incorrect.",     amharicExplanation:       "ሂሳዊ አስተሳሰብ (Critical thinking) የውሂብ እና እውነታዎችን የተሟላና ጥልቅ ምርመራ እንጂ ከፊል (partial) ምርመራ አይደለም። ስለዚህ 'It is a partial investigation of data and facts' የሚለው የተሳሳተ ነው።"   },    {     question: "A discussion is said to be effective, only if it meets:",     options: [       "Principles of good argument.",       "Principles that dictate individuals not to accept their initial position as fallible.",       "Principles of critical thinking.",       "A and C."     ],     answer: 3,     englishExplanation:       "An effective discussion requires both the principles of good argument and the principles of critical thinking. Therefore, A and C are correct.",     amharicExplanation:       "ውጤታማ ውይይት እንዲኖር ጥሩ የክርክር መርሆዎችን እና የሂሳዊ አስተሳሰብ መርሆዎችን ማሟላት ይጠይቃል። ስለዚህ 'A and C' ትክክለኛው መልስ ነው።"   },    {     question: "Among the following standards of critical thinking, one is concerned about correct or genuine information:",     options: [       "Precision",       "Accuracy",       "Clarity",       "Consistency"     ],     answer: 1,     englishExplanation:       "The standard of accuracy focuses on whether information is correct, true, genuine, and free from errors.",     amharicExplanation:       "የትክክለኛነት (Accuracy) መስፈርት ዋና ትኩረቱ መረጃው ትክክለኛ፣ እውነተኛ እና ከስህተት የጸዳ መሆኑን ማረጋገጥ ነው።"   },    {     question: "Mr. X happens to believe that Ethiopia will become one of the most developed and prosperous countries in the coming year. Mr. X is said to be affected by:",     options: [       "Sociocentrism",       "Relativist thinking",       "Wishful thinking",       "Egocentrism"     ],     answer: 2,     englishExplanation:       "Wishful thinking occurs when someone believes something will happen simply because they want it to happen, without sufficient objective evidence.",     amharicExplanation:       "የምኞት አስተሳሰብ (Wishful thinking) ማለት አንድ ነገር እንዲሆን ስለምንፈልግ ብቻ እውን ይሆናል ብሎ ማመን ነው።"   },    {     question: "No one in Collin's circle of friends likes rap music. But if everyone else hates it, he reasons that he is probably wrong, so he eventually convinces himself to hate rap too.",     options: [       "Conformity",       "Relativism",       "Wishful thinking",       "Confirmation Bias"     ],     answer: 0,     englishExplanation:       "Conformity is the tendency to change one's beliefs, attitudes, or behavior to match those of a group, often because of social pressure or the desire for acceptance.",     amharicExplanation:       "ማህበራዊ ተስማሚነት (Conformity) ማለት ከሌሎች ጋር ለመስማማት ወይም ተቀባይነት ለማግኘት የራስን አመለካከት ከቡድኑ ጋር ማመሳሰል ነው።"   },    {     question: "Jeannette has an upcoming exam in anatomy and physiology. Despite her faith in her studying memory, her lack of studying results in an F on the exam. Which barrier to critical thinking does this illustrate?",     options: [       "Relativism",       "Subjectivism",       "Wishful thinking",       "Conformity"     ],     answer: 2,     englishExplanation:       "Jeannette expects to pass despite not studying because she believes her memory will be enough. This is wishful thinking because her expectation is based on what she wants rather than the evidence of her preparation.",     amharicExplanation:       "ጂኔት ሳትጠና በጥሩ ትውስታዋ ብቻ ፈተናውን ማለፏ አይቀርም ብላ ማሰቧ የምኞት አስተሳሰብ (Wishful thinking) ማሳያ ነው። እምነቷ በቂ ዝግጅት ላይ ሳይሆን በምኞቷ ላይ ተመስርቷል።"   },    {     question: "Barriers to critical thinking include ____________, ethnocentrism, conformity, ____________, relativism vs objectivism and intimidation by authority.",     options: [       "Egocentrism, unexamined assumptions",       "Objectivism, positive thinking",       "Egocentrism, objectivism",       "Positive thinking, unexamined assumptions"     ],     answer: 0,     englishExplanation:       "Major barriers to critical thinking include egocentrism and unexamined assumptions, along with ethnocentrism, conformity, relativism, and intimidation by authority.",     amharicExplanation:       "ከሂሳዊ አስተሳሰብ እንቅፋቶች መካከል ራስን ማዕከል ማድረግ (Egocentrism) እና ያልተመረመሩ ግምቶች (unexamined assumptions) ይጠቀሳሉ።"   },    {     question: "The principle of charity refers to:",     options: [       "The burden of proving one's positions",       "Expressing an opponent's argument in its strongest version",       "Suspending judgment about the issue at hand",       "Resolving the issue at hand"     ],     answer: 1,     englishExplanation:       "The principle of charity requires interpreting and presenting an opponent's argument in its strongest and most reasonable form before evaluating or criticizing it.",     amharicExplanation:       "የልግስና መርህ (Principle of Charity) ማለት የተቃዋሚውን ክርክር ከማጥቃት በፊት በጠንካራ፣ ትክክለኛ እና ተቀባይነት ባለው መልኩ መተርጎምና ማቅረብ ማለት ነው።"   },    {     question: "Among the following, one is not a basic trait of critical thinkers:",     options: [       "They don't recognize their limitations.",       "They are honest with themselves.",       "They base judgments on evidence.",       "They control their feelings."     ],     answer: 0,     englishExplanation:       "Critical thinkers recognize and accept their limitations. Therefore, failing to recognize one's limitations is not a trait of a critical thinker.",     amharicExplanation:       "ሂሳዊ አስተሳሰብ ያላቸው ሰዎች የራሳቸውን ውስንነት ይገነዘባሉ። ስለዚህ 'They don't recognize their limitations' የሚለው የሂሳዊ አሳቢ ባህሪ አይደለም።"   },    {     question: "One of the following alternatives refers to the tendency to follow the crowd:",     options: [       "Group-bias",       "Egocentrism",       "Conformism",       "Subjectivism"     ],     answer: 2,     englishExplanation:       "Conformism is the tendency to follow or align with the opinions, attitudes, or behavior of a group instead of making an independent judgment.",     amharicExplanation:       "ሕዝቡን ወይም ቡድኑን የመከተል ዝንባሌ ማህበራዊ ተስማሚነት (Conformism) ይባላል። ሰውዬው በራሱ ከመወሰን ይልቅ የቡድኑን አመለካከት ይከተላል።"   },    {     question: "Select the element which is not part of the critical thinking standards:",     options: [       "Clarity",       "Relevance",       "Relativistic thinking",       "Completeness"     ],     answer: 2,     englishExplanation:       "Relativistic thinking is not an intellectual standard of critical thinking. Clarity, relevance, and completeness are standards used to evaluate the quality of thinking.",     amharicExplanation:       "አንጻራዊ አስተሳሰብ (Relativistic thinking) የሂሳዊ አስተሳሰብ መስፈርት አይደለም። Clarity, Relevance እና Completeness ግን የሂሳዊ አስተሳሰብ መስፈርቶች ናቸው።"   },    {     question: "Which is not the characteristic of a critical thinker among the following?",     options: [       "They use logical skills in reasoning.",       "They refuse to recognize the limitations of their mind and consistently pursue excellence.",       "They think independently and do not always succumb to peer pressure.",       "They uphold the standards of critical thinking."     ],     answer: 1,     englishExplanation:       "Critical thinkers recognize the limitations of their minds and practice intellectual humility. Refusing to recognize those limitations contradicts critical thinking.",     amharicExplanation:       "ሂሳዊ አስተሳሰብ ያላቸው ሰዎች የአዕምሮአቸውን ውስንነት ይቀበላሉ። ስለዚህ ውስንነታቸውን ለመቀበል እቢ ማለት የሂሳዊ አሳቢ ባህሪ አይደለም።"   },    {     question: "What is the exact problem with relativistic thinking?",     options: [       "There is no problem at all.",       "Relativistic thinking always promotes group opinions.",       "Relativistic thinking promotes a view that something is the truth because it is the truth in my point of view.",       "Relativistic thinking promotes absolute truth."     ],     answer: 2,     englishExplanation:       "Relativistic thinking treats truth as dependent on an individual's perspective, suggesting that something is true simply because it is true from one's own point of view.",     amharicExplanation:       "አንጻራዊ አስተሳሰብ (Relativistic thinking) እውነት እንደየግለሰቡ አመለካከት ይለወጣል የሚል እይታን ያራምዳል። ስለዚህ 'እኔ እንደማስበው እውነት ነው' ብቻ በቂ ማስረጃ አይሆንም።"   },    {     question: "What is the definition of critical thinking?",     options: [       "Higher-level thinking that aims to solve a problem.",       "Finding faults and weaknesses in other people's arguments.",       "Logically analyzing arguments in a critical way.",       "Disciplined thinking and judgment."     ],     answer: 3,     englishExplanation:       "Critical thinking is fundamentally disciplined thinking and judgment. It involves applying intellectual skills and standards to analyze, evaluate, and make reasonable judgments.",     amharicExplanation:       "ሂሳዊ አስተሳሰብ (Critical thinking) ማለት ዲሲፕሊን ያለው አስተሳሰብ እና ፍርድ መስጠት ነው። መረጃን በመተንተንና በመገምገም ምክንያታዊ ውሳኔ ላይ ለመድረስ ይረዳል።"   },    {     question: "For this entire semester, I've been playing and having fun every day. My studies are not going well. However, I believe I can score an A for the exam next week. What is the mistake that the person has committed here with respect to critical thinking?",     options: [       "Wishful thinking",       "Egocentrism",       "Self-confident thinking",       "Moral subjectivism"     ],     answer: 0,     englishExplanation:       "The person expects an excellent result despite having done little or no preparation. This relies on desire rather than evidence and is therefore an example of wishful thinking.",     amharicExplanation:       "ሙሉ ሴሚስተሩን ሲጫወት እና ሲዝናና ከቆየ በኋላ ሳይዘጋጅ A እንደሚያመጣ ማመን የምኞት አስተሳሰብ (Wishful thinking) ነው። እምነቱ በማስረጃ ላይ ሳይሆን በምኞት ላይ ተመስርቷል።"   },    {     question: "Lecturer: You all should focus on this section. It's a critical section that requires a lot of thought and review. Peter: Ah, I know everything. This section is not a problem for me. I don't need to learn this. What mistake has Peter committed here with respect to critical thinking?",     options: [       "Group bias",       "Moral subjectivism",       "Self-serving bias",       "Relativistic thinking"     ],     answer: 2,     englishExplanation:       "Peter dismisses the need to study because he believes his own abilities are already sufficient. This reflects self-serving bias and an unwillingness to recognize his own limitations.",     amharicExplanation:       "ፒተር 'ሁሉንም ነገር አውቃለሁ' በማለት ትምህርቱን መማር አያስፈልገኝም ማለቱ የራስ ወዳድነት አድልዎ (Self-serving bias) ስህተት ነው። ይህም የራሱን አቅም ከመጠን በላይ መተማመንን ያሳያል።"   },    {     question: "What is the worst thing for a critical thinker?",     options: [       "A logical mind",       "An emotional mind",       "Reaching to conclusion too soon.",       "None of the above"     ],     answer: 2,     englishExplanation:       "Reaching a conclusion too soon prevents careful analysis, evidence evaluation, and proper reasoning. A critical thinker should examine relevant evidence before making a conclusion.",     amharicExplanation:       "ለሂሳዊ አስተሳሰብ በጣም አደገኛው ነገር በቂ ማስረጃና ምርመራ ሳይኖር በፍጥነት ወደ መደምደሚያ መድረስ ነው።"   },    {     question: "Abebe believes that theft is morally wrong. However, he was caught stealing a cellphone from a nearby shop last week. Accordingly, Abebe is said to be violating one of the following standards of critical thinking:",     options: [       "Fairness",       "Consistency",       "Clarity",       "Precision"     ],     answer: 1,     englishExplanation:       "Abebe says that stealing is morally wrong but then engages in stealing himself. This contradiction between his stated belief and his behavior violates the standard of consistency.",     amharicExplanation:       "አበበ ስርቆት እኩይ ተግባር ነው ብሎ አምኖ ራሱ ግን ስርቆት መፈጸሙ በእምነቱና በተግባሩ መካከል ተቃርኖ ይፈጥራል። ስለዚህ የወጥነት (Consistency) መስፈርትን ይጥሳል።"   },    {     question: "Critical thinking is a transferable skill, because:",     options: [       "It helps us to apply skills and dispositions to solve problems in other subjects.",       "It helps us to apply skills and dispositions to solve most problems in our personal life.",       "A and B",       "None"     ],     answer: 2,     englishExplanation:       "Critical thinking is transferable because its skills and intellectual dispositions can be applied across different academic subjects as well as in personal and everyday life situations.",     amharicExplanation:       "ሂሳዊ አስተሳሰብ በሌሎች የትምህርት ዘርፎችም ሆነ በግል ሕይወታችን ውስጥ ችግሮችን ለመፍታት ሊተገበር ስለሚችል ተዘዋዋሪ (transferable) ክህሎት ይባላል። ስለዚህ 'A and B' ትክክለኛው መልስ ነው።"   },    {     question: "Gemechu believes that we can create our own truth. Hence, he has his own truth independent of others'. Accordingly, Gemechu is believed to be affected by one of the barriers to critical thinking among others:",     options: [       "Relativist thinking",       "Wishful thinking",       "Unwarranted assumptions",       "Stereotype"     ],     answer: 0,     englishExplanation:       "Gemechu's belief that everyone can create their own independent truth reflects relativist thinking, which treats truth as dependent on individual perspectives.",     amharicExplanation:       "ገመቹ እያንዳንዱ ሰው የራሱን እውነት መፍጠር ይችላል ብሎ ማመኑ በአንጻራዊ አስተሳሰብ (Relativist thinking) እንደተጎዳ ያሳያል። ይህ እውነትን በግለሰብ አመለካከት ላይ ብቻ የሚመሰርት አስተሳሰብ ነው።"   }, {     question: "What is the primary focus of critical thinking?",     options: [       "Memorizing facts and data",       "Evaluating the quality of reasoning and arguments",       "Winning every debate or discussion",       "Accepting popular opinions blindly"     ],     answer: 1,     englishExplanation:       "Critical thinking does not focus on simple memorization or winning arguments; rather, it analyzes how well reasons support a conclusion.",     amharicExplanation:       "ሂሳዊ ማስተዋል (Critical Thinking) ትኩረት የሚያደርገው ሀሳቦችን በቃል በመያዝ ወይም ክርክር በማሸነፍ ላይ ሳይሆን፣ የቀረቡ ምክንያቶች መደምደሚያውን ምን ያህል እንደሚደግፉ በመገምገም ላይ ነው።"   },    {     question: "The aim of critical thinking is to arrive at well-reasoned, considered, and justifiable conclusions.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Critical thinking aims to develop well-reasoned, considered, and justifiable conclusions by carefully analyzing and evaluating information.",     amharicExplanation:       "የሂሳዊ ማስተዋል ዋና ግብ ጥንቃቄ በተሞላበት ትንተና እና ግምገማ ላይ የተመሰረቱ፣ በምክንያት የታጀቡ እና ተቀባይነት ያላቸው መደምደሚያዎች ላይ መድረስ ነው።"   },    {     question: "Critical thinking is chiefly concerned with the quality of our beliefs.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Critical thinking is not solely concerned with the quality of our beliefs but also with the processes we use to arrive at those beliefs, including evaluating evidence and reasoning logically.",     amharicExplanation:       "ሂሳዊ ማስተዋል በዕምነቶቻችን ጥራት ላይ ብቻ ሳይሆን፣ እነዚያን ዕምነቶች ለመቅረጽ የምንጠቀምባቸውን ሂደቶች፣ ማስረጃዎችን መገምገም እና በምክንያታዊነት ማሰብን ጭምር ይመለከታል።"   },    {     question: "In critical thinking, the principal reason for being charitable toward one another's argument is ethical rather than practical.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Being charitable toward another's argument primarily stems from ethical considerations. It promotes fairness, respect, and constructive discussion when evaluating different viewpoints.",     amharicExplanation:       "በሌሎች ሰዎች ክርክር ላይ ፍትሃዊ እና አክብሮት የተሞላበት አቀራረብ መያዝ ከሥነ-ምግባር (ethical) እይታ አንጻር የሚመነጭ እንጂ ከተግባራዊ (practical) ጥቅም ብቻ አይደለም።"   },    {     question: "Critical thinking is rarely used outside of academia.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Critical thinking is widely used beyond academic settings. It is important in everyday decision-making, professional environments, evaluating information, and personal relationships.",     amharicExplanation:       "ሂሳዊ ማስተዋል በትምህርት ቤቶች ብቻ የሚወሰን አይደለም፤ በዕለት ተዕለት ውሳኔዎች፣ በሥራ ቦታዎች፣ መረጃዎችን በመገምገም እና በግንኙነቶች ውስጥ ከፍተኛ ጠቀሜታ አለው።"   },    {     question: "Fair thinking involves considering all relevant information objectively and with bias.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Fair thinking involves considering all relevant information objectively and without bias. Personal prejudices should be set aside to ensure a balanced assessment.",     amharicExplanation:       "ፍትሃዊ ማሰብ ማለት ሁሉንም ተዛማጅ መረጃዎች ያለ አድልዎ (without bias) እና በተጨባጭ ሁኔታ መመልከት ማለት ነው። የግል አድልዎዎችን በመተው ሚዛናዊ ግምገማ ማድረግ ያስፈልጋል።"   },    {     question: "Critical thinking necessarily makes a person cynical and negative.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Critical thinking encourages questioning and skepticism, but this does not make a person cynical or negative. Instead, it promotes a balanced and reasoned approach to understanding problems.",     amharicExplanation:       "ሂሳዊ ማስተዋል መጠየቅን እና መርምሮ ማወቅን ቢያበረታታም፣ ሰውን አፍራሽ (cynical) እና አሉታዊ አመለካከት ያለው አያደርገውም። ይልቁንም የተመጣጠነ እና ምክንያታዊ አቀራረብን ያበረታታል።"   },    {     question: "Logic and critical thinking are not synonymous.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Logic and critical thinking are not synonymous. Logic is an important component of critical thinking that focuses on valid reasoning, while critical thinking includes broader skills such as evaluating evidence and analyzing arguments.",     amharicExplanation:       "ሎጂክ እና ሂሳዊ ማስተዋል ሙሉ በሙሉ አንድ አይነት (synonymous) አይደሉም። ሎጂክ የሂሳዊ ማስተዋል አንድ አካል ሲሆን፣ ሂሳዊ ማስተዋል ግን ማስረጃዎችን መገምገምን እና ክርክሮችን መተንተንን ጨምሮ የተለያዩ ሰፋፊ ክህሎቶችን ይይዛል።"   },    {     question: "Strong statements are the main focus of critical thinking.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Critical thinking is not about making strong statements. It focuses on analyzing, evaluating, and synthesizing information to reach well-reasoned conclusions based on evidence.",     amharicExplanation:       "ሂሳዊ ማስተዋል ትኩረት የሚያደርገው ጠንካራ አባባሎችን በመናገር ላይ ሳይሆን፣ በማስረጃ ላይ ተመስርቶ ምክንያታዊ መደምደሚያ ላይ ለመድረስ መረጃዎችን መተንተን እና መገምገም ላይ ነው።"   },    {     question: "A consequence of not thinking critically is a loss of personal freedom.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Without the ability to analyze and evaluate information independently, individuals may become vulnerable to manipulation and misinformation. This can reduce personal freedom and autonomy.",     amharicExplanation:       "በራስ መረጃዎችን የመተንተን እና የመገምገም ችሎታ ከሌለ ሰው በቀላሉ ለሐሰተኛ መረጃ እና ለመተንኮስ (manipulation) ሊጋለጥ ይችላል። ይህም የግል ነፃነትን እና ራስን በራስ የመወሰን አቅምን ሊያሳጣ ይችላል።"   },    {     question: "Critical thinking is the enemy of human emotions.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Critical thinking is not the enemy of emotions. It can help people understand and manage emotional reactions while making more rational and informed decisions.",     amharicExplanation:       "ሂሳዊ ማስተዋል የስሜቶች ጠላት አይደለም። ይልቁንም ግለሰቦች ስሜታቸውን እንዲረዱና እንዲቆጣጠሩ እና በምክንያታዊነት የተመሰረቱ ውሳኔዎችን እንዲወስኑ ይረዳል።"   },    {     question: "Among the most important intellectual standards of Critical Thinking, ______ is a matter of being exact, accurate & careful in the process of reasoning?",     options: [       "Precision",       "Consistency",       "Accuracy",       "Clarity",       "All"     ],     answer: 0,     englishExplanation:       "Precision refers to being exact, specific, and detailed in the process of reasoning. It helps prevent vague or unclear statements.",     amharicExplanation:       "Precision (ጥርት ያለ ትክክለኛነት) ማለት በምክንያታዊ ሂደት ውስጥ ትክክለኛ፣ ዝርዝር እና ግልጽ መረጃን መጠቀም ማለት ነው።"   },    {     question: "An arguer requires that the formulations of all positions, defenses, and attacks should be free of any kind of linguistic confusion. In which of the following critical thinking principles is this mentioned?",     options: [       "The Fallibility Principle",       "The Clarity Principle",       "The Truth-Seeking Principle",       "The Burden of Proof Principle"     ],     answer: 1,     englishExplanation:       "The Clarity Principle requires that positions, defenses, and attacks in an argument should be expressed clearly and should be free from linguistic confusion or ambiguity.",     amharicExplanation:       "የClarity Principle (የግልጽነት መርህ) በክርክር ውስጥ የሚቀርቡ ሐሳቦች፣ መከላከያዎች እና ጥቃቶች ከማንኛውም የቋንቋ ግራ መጋባት ወይም አሻሚነት ነፃ እና ግልጽ መሆን እንዳለባቸው ያሳያል።"   },    {     question: "A thinking is said to be fair when:",     options: [       "New and unfamiliar ideas are contemptuously rejected.",       "Treating with favor ideas which come from one's preferred group.",       "Analyze issues impartially, weighting the available data and facts.",       "Putting one's own self-interest in a second importance of order.",       "Always giving priority and more importance to the interest of others."     ],     answer: 2,     englishExplanation:       "Fair thinking requires examining issues impartially and objectively weighing all available data, evidence, and facts without prejudice or favoritism.",     amharicExplanation:       "ፍትሃዊ አስተሳሰብ ማለት ጉዳዮችን ያለ አድልዎ (impartially) መመርመር እና ያሉትን መረጃዎች፣ ማስረጃዎች እና እውነታዎች በገለልተኝነት መመዘን ማለት ነው።"   },    {     question: "Based on the 'truth-seeking' principle of critical thinking, a critical thinker does all of the following except:",     options: [       "Thoughtfully considering criticisms of one's own views.",       "Willing to examine alternative positions seriously.",       "Looking for insights in the positions of others.",       "Regarding the truth to be what we now hold to be the truth.",       "None of the above."     ],     answer: 3,     englishExplanation:       "Truth-seeking requires a critical thinker to remain open to new evidence and alternative viewpoints. Assuming that whatever we currently believe is automatically the truth goes against the truth-seeking principle.",     amharicExplanation:       "Truth-seeking (እውነትን መፈለግ) ማለት ለአዳዲስ ማስረጃዎች እና ለአማራጭ አመለካከቶች ክፍት መሆን ነው። አሁን የምናምነው ነገር ብቻ ፍጹም እውነት ነው ብሎ መቀበል የእውነትን ፍለጋ መርህን ይቃረናል።"   },    {     question: "One of the following is not among the rationales for critical thinking, which one?",     options: [       "To have a complete understanding of oneself.",       "To make evidence-based decisions as much as possible.",       "To form well-informed opinions.",       "To be independent and totally alienated.",       "None"     ],     answer: 3,     englishExplanation:       "Critical thinking promotes intellectual independence, but it does not aim to make a person totally alienated from society or other people.",     amharicExplanation:       "ሂሳዊ ማስተዋል ራስን የቻለ እና ነፃ አስተሳሰብ እንዲኖር ቢያበረታታም፣ ሰውን ከማህበረሰቡ ወይም ከሌሎች ሰዎች ሙሉ በሙሉ እንዲገለል (alienated) ማድረግ የሂሳዊ ማስተዋል ዓላማ አይደለም።"   },    {     question: "The principle of 'accuracy' in critical thinking refers to the ability to:",     options: [       "Express one's view vividly in a non-obscure, un-vague & non-amphibious way.",       "Substantiate one's view with reliable and valid evidences.",       "Have an evidence-based, clear & predictable stance across various conditions.",       "Bring about evidences that directly support one's view.",       "Have deep, robust and insightful understanding of an issue."     ],     answer: 1,     englishExplanation:       "The principle of accuracy requires a person to support a view with reliable and valid evidence. A claim should be based on evidence that is trustworthy and correct.",     amharicExplanation:       "የAccuracy (ትክክለኛነት) መርህ ሐሳባችንን ወይም እምነታችንን አስተማማኝ እና ትክክለኛ በሆኑ ማስረጃዎች ማረጋገጥን ይጠይቃል። ስለዚህ የምንሰጠው አባባል በታማኝ ማስረጃ ላይ መመስረት አለበት።"   },    {     question: "Which principle asserts that arguments and claims should be evaluated based on the strength of evidence rather than emotional appeal?",     options: [       "The Evidence Principle",       "The Fallibility Principle",       "The Principle of Charity",       "The Truth-Seeking Principle"     ],     answer: 0,     englishExplanation:       "The Evidence Principle emphasizes that arguments and conclusions should be supported by relevant and reliable evidence rather than emotional appeal, personal feelings, or unsupported assumptions.",     amharicExplanation:       "The Evidence Principle (የማስረጃ መርህ) ክርክሮችና መደምደሚያዎች በስሜት ወይም በግል ስሜት ላይ ሳይሆን በተዛማጅ፣ ታማኝ እና ጠንካራ ማስረጃ ላይ መመስረት እንዳለባቸው ያስተምራል።"   },    {     question: "What does the Principle of Fallibility entail for a critical thinker?",     options: [       "Believing that one can never make a mistake.",       "Recognizing that one's beliefs might be wrong and being willing to correct them.",       "Assuming that all arguments are completely false.",       "Avoiding any form of judgment or reasoning."     ],     answer: 1,     englishExplanation:       "The Fallibility Principle recognizes that human beings can make mistakes. A critical thinker therefore accepts that their beliefs may be wrong and remains willing to revise them when better evidence is available.",     amharicExplanation:       "The Fallibility Principle (የተሳሳተ የመሆን ዕድል መርህ) ሰዎች ስህተት ሊሠሩ እንደሚችሉ መቀበልን ያሳያል። ስለዚህ ሂሳዊ አሳቢ የራሱ እምነት ሊሳሳት እንደሚችል ይገነዘባል እና ትክክለኛ ማስረጃ ሲገኝ ሐሳቡን ለማስተካከል ዝግጁ ይሆናል።"   },    {     question: "One of the following is not among the traits of a critical thinker?",     options: [       "Doesn't look for errors but for ultimate truths.",       "Take a superficial approach to understand issues.",       "Have an exploratory attitude.",       "Not stubborn."     ],     answer: 1,     englishExplanation:       "Critical thinkers do not take a superficial approach to issues. They investigate matters deeply, examine evidence, ask questions, and seek a well-supported understanding.",     amharicExplanation:       "ሂሳዊ አሳቢዎች ጉዳዮችን ላዩን ላዩን (superficial approach) አይመለከቷቸውም። ይልቁንም ጉዳዮችን በጥልቀት ይመረምራሉ፣ ጥያቄዎችን ይጠይቃሉ እና በማስረጃ የተደገፈ ግንዛቤ ለመድረስ ይጥራሉ።"   }],
         5: []
 
     },
