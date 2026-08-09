@@ -471,7 +471,525 @@ const quizData = {
     answer: 0,
     englishExplanation: "Axiology is the branch of philosophy that studies value or worth. It includes areas such as ethics, which studies moral values, and aesthetics, which studies beauty and artistic value.",
     amharicExplanation: "ዋጋዎችን ወይም እሴቶችን (values/worth) የሚያጠናው የፊልስፍና ዘርፍ አክሲዮሎጂ (Axiology) ይባላል። እሱም Ethics የሥነ-ምግባር እሴቶችን እና Aesthetics የውበት እና የጥበብ እሴቶችን ያጠናል።"
-},],
+},{
+    question: "21. Which branch of metaphysics investigates the nature of existence and Being?",
+    options: [
+        "A. Ontology",
+        "B. Axiology",
+        "C. Anthropology",
+        "D. Theology",
+        "E. Cosmology"
+    ],
+    answer: 0,
+    englishExplanation: "Ontology is the specific branch of metaphysics that studies the nature of being, existence, and reality in general.",
+    amharicExplanation: "ኦንቶሎጂ (Ontology) የሜታፊዚክስ ዘርፍ ሲሆን ስለ መኖር (Being) እና ስለ እውነታ ተፈጥሮ የሚያጠና ነው።"
+},
+
+{
+    question: "22. Among the most contentious views that circulates in Ethiopian politics is whether the Unitary or Federal State structure is best for its diversified culture and population. This view is studied by:",
+    options: [
+        "A. Metaphysics",
+        "B. Epistemology",
+        "C. Axiology",
+        "D. Logic",
+        "E. None"
+    ],
+    answer: 2,
+    englishExplanation: "Axiology is the philosophical study of values. Questions about political systems can involve values concerning governance, justice, equality, rights, and society.",
+    amharicExplanation: "አክሲዮሎጂ (Axiology) የእሴቶችን ጥያቄ የሚመረምር የፍልስፍና ዘርፍ ነው። የፖለቲካ አወቃቀር፣ ፍትህ፣ እኩልነት፣ መብት እና ማህበራዊ እሴቶች ከዚህ ጋር ይያያዛሉ።"
+},
+
+{
+    question: "23. Which one of the following is the question of cosmology?",
+    options: [
+        "A. What it means for anything to exist?",
+        "B. How the universe is originated?",
+        "C. What is the moral status of human beings?",
+        "D. Is reality exist in the physical world or spiritual world?",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Cosmology is a branch of metaphysics that focuses specifically on the origin, structure, development, and nature of the universe.",
+    amharicExplanation: "ኮስሞሎጂ (Cosmology) የዩኒቨርስን አመጣጥ፣ አወቃቀር፣ እድገት እና ተፈጥሮ የሚያጠና የሜታፊዚክስ ዘርፍ ነው።"
+},
+
+{
+    question: "24. Among the following fields of philosophy which one deals with formulating the right principles of reasoning and developing scientific methods for evaluating the validity and soundness of arguments?",
+    options: [
+        "A. Metaphysics",
+        "B. Argument",
+        "C. Philosophy",
+        "D. Epistemology",
+        "E. Logic",
+        "F. None"
+    ],
+    answer: 4,
+    englishExplanation: "Logic is the study of correct reasoning. It provides principles for evaluating arguments and determining whether reasoning is valid or sound.",
+    amharicExplanation: "ሎጂክ (Logic) ትክክለኛ የማመዛዘን መርሆዎችን እና የክርክሮችን ትክክለኛነት (validity) እና ጥንካሬ (soundness) የሚገመግም የፍልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "25. Visualise a scenario where you gaze up at the night sky, observing the vastness of the world and the countless stars and galaxies. You contemplate the origins, the nature of space and time, and the ultimate fate of the world. You ponder questions about the Big Bang, the existence of other worlds, and the possibility of intelligent life beyond our planet.",
+    options: [
+        "A. Epistemology",
+        "B. Rationalism",
+        "C. Ontology",
+        "D. Cosmology"
+    ],
+    answer: 3,
+    englishExplanation: "This scenario deals with space, time, the origin of the universe, the Big Bang, galaxies, and the ultimate fate of the universe. These are questions of cosmology.",
+    amharicExplanation: "ይህ ሁኔታ የዩኒቨርስን አፈጣጠር፣ የህዋን እና የጊዜን ተፈጥሮ፣ ቢግ ባንግን እና የዩኒቨርስን የወደፊት ሁኔታ ስለሚመለከት ኮስሞሎጂ (Cosmology) ይባላል።"
+},
+
+{
+    question: "26. Imagine a situation where you are presented with a chair. As you observe the chair, you start questioning its nature and existence. You wonder if the chair is merely a physical object composed of matter and energy or if it possesses some deeper essence beyond its material form. You contemplate whether there are underlying universal principles or fundamental truths that govern the nature of the chair and all other objects in the world.",
+    options: [
+        "A. Epistemology",
+        "B. Rationalism",
+        "C. Argument",
+        "D. Metaphysics"
+    ],
+    answer: 3,
+    englishExplanation: "Questioning the fundamental nature of reality, existence, matter, and the deeper essence of things falls under metaphysics.",
+    amharicExplanation: "ስለ ቁሶች መኖር፣ እውነተኛ ተፈጥሮ እና ከሚታየው በላይ ስላለው መሠረታዊ ምንነት መጠየቅ በሜታፊዚክስ (Metaphysics) ስር ይወድቃል።"
+},
+
+{
+    question: "27. Envision a scenario where you wake up in a room with no memory of how you got there. As you begin to explore your surroundings, you encounter various objects and phenomena. You question how you can acquire understanding about the world around you, pondering the reliability of your senses, the role of reason, and the possibility of obtaining objective truths.",
+    options: [
+        "A. Epistemology",
+        "B. Rationalism",
+        "C. Argument",
+        "D. Metaphysics",
+        "E. Deduction",
+        "F. Empiricism"
+    ],
+    answer: 0,
+    englishExplanation: "Epistemology is the branch of philosophy concerned with knowledge, including how knowledge is acquired, the reliability of the senses, the role of reason, and the possibility of objective knowledge.",
+    amharicExplanation: "ኤፒስቲሞሎጂ (Epistemology) እውቀት እንዴት እንደሚገኝ፣ የስሜት ህዋሳት አስተማማኝነት፣ የምክንያት ሚና እና ትክክለኛ እውቀትን ማግኘት ይቻል እንደሆነ የሚያጠና የፍልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "28. Imagine a person tasting a lemon for the first time. The sour and tangy sensation he experiences is an_________. Later, when he thinks about the taste of the lemon in his mind, that thought is an_________.",
+    options: [
+        "A. Impressions and Direct Experience",
+        "B. Idea and Innate Ideas",
+        "C. Impressions and Idea",
+        "D. Empiricism and Experience"
+    ],
+    answer: 2,
+    englishExplanation: "According to empiricists such as David Hume, direct sensory experiences are called impressions, while mental reflections or memories of those experiences are called ideas.",
+    amharicExplanation: "እንደ ዴቪድ ሂዩም (David Hume) ያሉ ኢምፒሪሲስቶች እንደሚያብራሩት፣ ቀጥተኛ የስሜት ተሞክሮ 'Impression' ሲባል፣ በኋላ በአእምሮ የምናስበው ወይም የምናስታውሰው 'Idea' ይባላል።"
+},
+
+{
+    question: "29. Envision a metaphysical realm where abstract ideals, such as love, justice, and beauty, exist as timeless and transcendent entities. It serves as the ultimate reality that shapes and illuminates the imperfect manifestations we perceive in our physical reality. Philosophers seek to grasp the profound depths of this realm. This illustration illustrates:",
+    options: [
+        "A. Plato Allegory of the Cave",
+        "B. Plato assumptions of world of Becoming",
+        "C. Descartes philosophical meditation",
+        "D. Plato assumption of world of Being",
+        "E. A and B"
+    ],
+    answer: 3,
+    englishExplanation: "Plato's World of Being, also associated with the Forms or Ideas, describes an eternal and perfect realm containing concepts such as justice, beauty, and goodness beyond the changing physical world.",
+    amharicExplanation: "የፕላቶ 'World of Being' ወይም የForms/Ideas ዓለም እንደ ፍትህ፣ ውበት እና መልካምነት ያሉ ፍጹም እና የማይለወጡ ሃሳቦች የሚገኙበትን ዓለም ይገልጻል።"
+},
+
+{
+    question: "30. In a state of profound doubt, a philosopher questions the very fabric of reality, including their own existence. However, they come to a profound realization: the act of doubting necessitates a thinking entity, and this very act of thinking signifies their existence. Thus, through the undeniable presence of their thoughts, they affirm their own being. This describes:",
+    options: [
+        "A. Rene Descartes assumption that essence precedes existence",
+        "B. Descartes’ cogito, ergo sum (I think, therefore I am)",
+        "C. Hume's Bundle Theory of Self",
+        "D. I exist, and therefore I am capable of thinking"
+    ],
+    answer: 1,
+    englishExplanation: "Descartes' famous conclusion 'Cogito, ergo sum' means 'I think, therefore I am.' The act of doubting or thinking demonstrates that the thinker exists.",
+    amharicExplanation: "ይህ የሬኔ ዴካርት (René Descartes) 'Cogito, ergo sum' የሚለውን መርህ ይገልጻል። ትርጉሙም 'እያሰብኩ ነው፣ ስለዚህ አለሁ' (I think, therefore I am) ማለት ነው።"
+},
+
+{
+    question: "31. Philosophy once included modern disciplines like physics and biology.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "Historically, many sciences were part of natural philosophy before becoming independent empirical disciplines such as physics and biology.",
+    amharicExplanation: "በታሪክ አመጣጡን ስንመለከት፣ ፊዚክስ እና ባዮሎጂን ጨምሮ ብዙ ሳይንሶች ከፍልስፍና ጋር የተያያዙ ነበሩ፤ በኋላም እንደ ገለልተኛ የሳይንስ መስኮች ተለዩ።"
+},
+
+{
+    question: "32. Philosophical issues are rarely about values.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "This statement is false. Philosophy deals extensively with values through areas such as ethics, aesthetics, and political philosophy.",
+    amharicExplanation: "ይህ ሀሳብ ሀሰት ነው። ፍልስፍና በEthics፣ Aesthetics እና Political Philosophy አማካኝነት ከእሴቶች ጋር በጥልቅ ይያያዛል።"
+},
+
+{
+    question: "33. Like many philosophical issues, the problem of the nature of change is both easily answered and largely unimportant anyway.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "This statement is false. The nature of change is a complex and important philosophical problem that has been debated by philosophers since ancient times.",
+    amharicExplanation: "ይህ ሀሳብ ሀሰት ነው። የለውጥ ተፈጥሮ ቀላል የሚመለስ ጥያቄ አይደለም፤ ከጥንት ጀምሮ በፈላስፎች የተከራከረበት ጠቃሚ እና ውስብስብ የፍልስፍና ጉዳይ ነው።"
+},
+
+{
+    question: "34. Philosophical problems are often generated when commonly held beliefs appear to be in conflict.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "This statement is true. Philosophical inquiry often begins when commonly accepted beliefs conflict with one another, leading people to question and critically examine them.",
+    amharicExplanation: "ይህ እውነት ነው። በህብረተሰቡ ዘንድ የተለመዱ ወይም የተቀበሉ እምነቶች እርስ በእርሳቸው ሲጋጩ የፍልስፍና ጥያቄዎች ሊነሱ ይችላሉ።"
+},
+
+{
+    question: "35. Traditionally, philosophy has been divided into four main branches.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "This statement is true. Traditionally, philosophy is broadly divided into Metaphysics, Epistemology, Ethics, and Logic.",
+    amharicExplanation: "ይህ እውነት ነው። ባህላዊ ፍልስፍና በአራት ዋና ዋና ክፍሎች፦ Metaphysics፣ Epistemology፣ Ethics እና Logic ይከፈላል።"
+},
+
+{
+    question: "36. Art and beauty are primarily topics within social philosophy.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "This statement is false. Art and beauty are primarily studied under aesthetics, which is a branch of axiology.",
+    amharicExplanation: "ይህ ሀሰት ነው። ስነ-ጥበብ እና ውበት በዋነኝነት የሚጠኑት Aesthetics በሚባለው የፍልስፍና ዘርፍ ነው። Aesthetics ደግሞ ከAxiology ጋር ይያያዛል።"
+},
+
+{
+    question: "37. Political philosophy is totally separate from the subject matter of moral philosophy.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 1,
+    englishExplanation: "This statement is false. Political philosophy and moral philosophy are closely related because political questions often involve moral values such as justice, equality, rights, and freedom.",
+    amharicExplanation: "ይህ ሀሰት ነው። የፖለቲካ ፍልስፍና እና የሥነ-ምግባር ፍልስፍና በጣም የተያያዙ ናቸው። ምክንያቱም ፍትህ፣ እኩልነት፣ መብት እና ነፃነት ያሉ የሥነ-ምግባር እሴቶች በፖለቲካ ጉዳዮች ውስጥ ይካተታሉ።"
+},
+
+{
+    question: "38. One of the side benefits of philosophy is better logical and critical thinking skills.",
+    options: [
+        "A. True",
+        "B. False"
+    ],
+    answer: 0,
+    englishExplanation: "This statement is true. Studying philosophy helps develop logical reasoning, analytical ability, critical thinking, and the ability to evaluate arguments.",
+    amharicExplanation: "ይህ እውነት ነው። ፍልስፍናን ማጥናት የሎጂክ ማመዛዘን፣ የትንተና ችሎታ፣ የትችት አስተሳሰብ እና ክርክሮችን የመገምገም ችሎታን ያዳብራል።"
+},
+
+{
+    question: "39. What is philosophy?",
+    options: [
+        "A. Philosophy is the art of creating visual representations of abstract concepts.",
+        "B. Philosophy is the study of ancient texts and their historical contexts.",
+        "C. Philosophy is the activity of thinking in slow motion, breaking down and assessing our natural motivations and beliefs.",
+        "D. Philosophy is the practice of memorizing facts and figures for exams."
+    ],
+    answer: 2,
+    englishExplanation: "Philosophy is a deep and reflective activity of thinking critically about our beliefs, motivations, concepts, and assumptions. It involves breaking down and evaluating ideas rather than simply memorizing information.",
+    amharicExplanation: "ፍልስፍና ማለት ስለ እምነቶቻችን፣ አስተሳሰቦቻችን፣ አነሳሽ ምክንያቶቻችን እና ግምቶቻችን በጥልቀት እና በትችት ማሰብ ነው። ሐሳቦችን መርምሮ መገምገም እንጂ መረጃን በቃል መያዝ ብቻ አይደለም።"
+},
+
+{
+    question: "40. Branch in Philosophy that is concerned with the nature of reality, the study of existence.",
+    options: [
+        "A. Metaphysics",
+        "B. Existentialism",
+        "C. Ethics",
+        "D. Ontology"
+    ],
+    answer: 0,
+    englishExplanation: "Metaphysics is the broad branch of philosophy concerned with the fundamental nature of reality, existence, being, and what ultimately exists.",
+    amharicExplanation: "ሜታፊዚክስ (Metaphysics) የእውነታውን ተፈጥሮ፣ ሕልውናን፣ መኖርን እና በመጨረሻ ምን እንዳለ የሚያጠና ሰፊ የፍልስፍና ዘርፍ ነው።"
+},{
+    question: "41. Branch in philosophy that is concerned with beauty and art",
+    options: [
+        "A. Epistemology",
+        "B. Ethics",
+        "C. Aesthetics",
+        "D. Metaphysics"
+    ],
+    answer: 2,
+    englishExplanation: "Aesthetics is the branch of philosophy dedicated to exploring the nature of beauty, art, taste, and the criteria for judging artistic works.",
+    amharicExplanation: "እስቴቲክስ (Aesthetics) ስለ ውበት፣ ጥበብ እና የጥበብ ሥራዎችን ስለ መመዘኛ መስፈርቶች የሚያጠና የፍልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "42. Major in philosophy that stresses individual existence, freedom, and choice.",
+    options: [
+        "A. Politics",
+        "B. Ontology",
+        "C. Ethics",
+        "D. Existentialism"
+    ],
+    answer: 3,
+    englishExplanation: "Existentialism focuses heavily on individual human existence, personal freedom, responsibility, and choice without pre-established meanings.",
+    amharicExplanation: "ኤክዚስታንሻሊዝም (Existentialism) የግለሰብን መኖር (existence)፣ ነፃነት እና ምርጫን የሚያጎላ የፍልስፍና እንቅስቃሴ ነው።"
+},
+
+{
+    question: "43. Which of these is not a branch in philosophy?",
+    options: [
+        "A. Political",
+        "B. Metaphysics",
+        "C. Logic",
+        "D. All of these are the branches of philosophy."
+    ],
+    answer: 3,
+    englishExplanation: "Political philosophy, metaphysics, and logic are all recognized and established branches of philosophy.",
+    amharicExplanation: "ፖለቲካል ፍልስፍና፣ ሜታፊዚክስ እና ሎጂክ ሁሉም የታወቁ የፍልስፍና ዘርፎች ናቸው። ስለዚህ ሁሉም የፍልስፍና ዘርፎች ናቸው የሚለው ትክክለኛ ነው።"
+},
+
+{
+    question: "44. The study of right and wrong in human behavior",
+    options: [
+        "A. Political",
+        "B. Logic",
+        "C. Aesthetics",
+        "D. None of these"
+    ],
+    answer: 3,
+    englishExplanation: "The study of right and wrong in human behavior is Ethics or Moral Philosophy. Since Ethics is not listed among the options, None of these is correct.",
+    amharicExplanation: "በሰው ልጆች ባህሪ ውስጥ ትክክልና ስህተትን የሚያጠናው ኤቲክስ (Ethics) ወይም የሞራል ፍልስፍና ነው። በተሰጡት አማራጮች ውስጥ Ethics ስለሌለ None of these የሚለው ትክክል ነው።"
+},
+
+{
+    question: "45. The study of the nature of value and valuation",
+    options: [
+        "A. Aesthetics",
+        "B. Ontology",
+        "C. Axiology",
+        "D. Both A & B"
+    ],
+    answer: 2,
+    englishExplanation: "Axiology is the philosophical study of value, encompassing both ethics, which studies moral value, and aesthetics, which studies artistic value.",
+    amharicExplanation: "አክሲዮሎጂ (Axiology) የእሴትን ተፈጥሮ እና እሴት አሰጣጥን የሚያጠና ዘርፍ ሲሆን ሞራልን እና ውበትን ያካትታል።"
+},
+
+{
+    question: "46. Major branch in metaphysics, the study of being/existence",
+    options: [
+        "A. Epistemology",
+        "B. Ontology",
+        "C. Aesthetics",
+        "D. Political"
+    ],
+    answer: 1,
+    englishExplanation: "Ontology is a sub-branch of metaphysics that specifically investigates the nature of being, existence, and reality.",
+    amharicExplanation: "ኦንቶሎጂ (Ontology) የሜታፊዚክስ ዋና አካል ሲሆን ስለ መኖር (being)፣ ሕልውና እና እውነታ ተፈጥሮ ጥናት ያደርጋል።"
+},
+
+{
+    question: "47. The study of the scope of knowledge",
+    options: [
+        "A. Metaphysics",
+        "B. Ontology",
+        "C. Logic",
+        "D. Epistemology"
+    ],
+    answer: 3,
+    englishExplanation: "Epistemology is the branch of philosophy that examines the nature, origin, and scope of human knowledge.",
+    amharicExplanation: "ኤፒስተሞሎጂ (Epistemology) የእውቀትን ምንጭ፣ ወሰን እና ተፈጥሮ የሚያጠና የፍልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "48. Branch of Philosophy that is primarily concerned with the questions pertaining to the good life",
+    options: [
+        "A. Aesthetics",
+        "B. Ethics",
+        "C. Existentialism",
+        "D. Ontology"
+    ],
+    answer: 1,
+    englishExplanation: "Ethics deals with moral principles, what constitutes a good life, and how humans ought to live.",
+    amharicExplanation: "ኤቲክስ (Ethics) መልካም ሕይወት ምን እንደሆነ እና ሰዎች እንዴት መኖር እንዳለባቸው ከሚመለከቱ የሞራል ጥያቄዎች ጋር ይገናኛል።"
+},
+
+{
+    question: "49. Branch in Philosophy that is concerned with demonstrable principles, and the structure of arguments and statements",
+    options: [
+        "A. Logic",
+        "B. Politics",
+        "C. Metaphysics",
+        "D. Existentialism"
+    ],
+    answer: 0,
+    englishExplanation: "Logic is the study of correct reasoning, argument structures, and valid inference rules.",
+    amharicExplanation: "ሎጂክ (Logic) የማስረጃን ትክክለኛነት፣ የክርክር መዋቅርን እና ስልታዊ አስተሳሰብን የሚያጠና ነው።"
+},
+
+{
+    question: "50. The study of reality in the broadest sense, an inquiry into the elemental nature of the universe and the things in it, is known as _____.",
+    options: [
+        "A. Metaphysics",
+        "B. Epistemology",
+        "C. Quantum physics",
+        "D. Axiology"
+    ],
+    answer: 0,
+    englishExplanation: "Metaphysics explores ultimate reality, the fundamental nature of existence, and the universe beyond physical science.",
+    amharicExplanation: "ሜታፊዚክስ (Metaphysics) ስለ አጠቃላይ እውነታ፣ ሕልውና እና የዩኒቨርስ መሠረታዊ ተፈጥሮ የሚያጠና የፍልስፍና ዘርፍ ነው።"
+},
+
+{
+    question: "51. Which branch of philosophy is mainly focused on answering questions related to what is real?",
+    options: [
+        "A. Ethics",
+        "B. Metaphysics",
+        "C. Epistemology",
+        "D. Logic",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Metaphysics deals fundamentally with the nature of reality and existence.",
+    amharicExplanation: "እውነተኛው ነገር ምን እንደሆነ (Reality) እና የነገሮችን ትክክለኛ መኖር የሚያጠናው ሜታፊዚክስ (Metaphysics) ነው።"
+},
+
+{
+    question: "52. Which branch of philosophy deals primarily with rightness and wrongness of actions?",
+    options: [
+        "A. Epistemology",
+        "B. Aesthetics",
+        "C. Metaphysics",
+        "D. Ethics",
+        "E. None"
+    ],
+    answer: 3,
+    englishExplanation: "Ethics evaluates human actions to determine whether they are morally right or wrong.",
+    amharicExplanation: "የሰዎች ድርጊቶች ትክክል ወይም ስህተት መሆናቸውን የሚመዝነው ኤቲክስ (Ethics) ነው።"
+},
+
+{
+    question: "53. Which of the following is the branch of philosophy that considers questions about what we can and cannot know?",
+    options: [
+        "A. Metaphysics",
+        "B. Ethics",
+        "C. Epistemology",
+        "D. Logic",
+        "E. None"
+    ],
+    answer: 2,
+    englishExplanation: "Epistemology addresses the boundaries of human understanding, analyzing what knowledge is and what we can realistically know.",
+    amharicExplanation: "ምን ማወቅ እንችላለን? ምንንስ ማወቅ አንችልም? የሚለውን የእውቀት ገደብ የሚያጠናው ኤፒስተሞሎጂ (Epistemology) ነው።"
+},
+
+{
+    question: "54. Who is a philosopher, in the original sense of the word?",
+    options: [
+        "A. Someone who studies the stars and planets.",
+        "B. A person primarily interested in the truth about moral matters.",
+        "C. A lover and pursuer of wisdom, regardless of the subject matter.",
+        "D. A clever and tricky arguer.",
+        "E. All / None"
+    ],
+    answer: 2,
+    englishExplanation: "Etymologically, philosophy comes from Greek words meaning love of wisdom, making a philosopher a seeker or lover of wisdom.",
+    amharicExplanation: "የቃሉ ትክክለኛ የመጀመሪያ ትርጉም ፈላስፋ ማለት ጥበብን የሚወድ እና የሚከተል (Lover and pursuer of wisdom) ማለት ነው።"
+},
+
+{
+    question: "55. Which is a common characteristic of philosophical questions?",
+    options: [
+        "A. They are strictly empirical questions.",
+        "B. They involve fundamental concepts that are unavoidable by the thoughtful person.",
+        "C. They are purely semantic questions.",
+        "D. They aren't relevant to ordinary, everyday situations.",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Philosophical questions tackle core, foundational concepts about life and reality that any reflective thinker naturally encounters.",
+    amharicExplanation: "የፍልስፍና ጥያቄዎች አስተዋይ ሰው ሊያመልጣቸው የማይችላቸውን መሠረታዊ ሐሳቦችና ጽንሰ-ሐሳቦች ይይዛሉ።"
+},
+
+{
+    question: "56. Which is the branch of philosophy that studies issues concerning art and beauty?",
+    options: [
+        "A. Aesthetics",
+        "B. Epistemology",
+        "C. Logic",
+        "D. Metaphysics",
+        "E. None"
+    ],
+    answer: 0,
+    englishExplanation: "Aesthetics specifically focuses on artistic expression, beauty, and sensory-emotional values.",
+    amharicExplanation: "ከጥበብ እና ውበት ጋር የተያያዙ ጉዳዮችን የሚያጠናው እስቴቲክስ (Aesthetics) ነው።"
+},
+
+{
+    question: "57. Which of the following branches of philosophy does not involve questions related to values?",
+    options: [
+        "A. Moral",
+        "B. Metaphysics",
+        "C. Social",
+        "D. Political",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Moral, social, and political philosophy deal heavily with values, while metaphysics focuses primarily on the nature of reality and existence rather than value judgments.",
+    amharicExplanation: "ሞራል፣ ማህበራዊ እና ፖለቲካዊ ዘርፎች ከእሴቶች (values) ጋር በቀጥታ ሲገናኙ፣ ሜታፊዚክስ ግን በዋነኝነት ስለ እውነታ እና መኖር ይመረምራል።"
+},
+
+{
+    question: "58. Which of the following is a common myth about philosophy?",
+    options: [
+        "A. Philosophical questions are hard to answer, and the answers often give rise to further philosophical questions.",
+        "B. Reading philosophy in a way that makes it understandable can be hard work.",
+        "C. Philosophy deals with important and fundamental questions left unanswered by more specialized disciplines.",
+        "D. Philosophical questions are simply semantic disputes in which no one opinion is any better or worse than another is.",
+        "E. None"
+    ],
+    answer: 3,
+    englishExplanation: "It is a false myth to view philosophy as just empty word games or mere semantic disputes where all opinions hold equal validity. Philosophy uses rigorous logical reasoning and critical analysis.",
+    amharicExplanation: "የፍልስፍና ጥያቄዎች ትርጉም የለሽ የቃላት ጭቅጭቅ ብቻ ናቸው፣ የሁሉም ሐሳብ እኩል ልክ ነው ብሎ ማሰብ የተለመደ የተሳሳተ አመለካከት (Myth) ነው።"
+},
+
+{
+    question: "59. Philosophy is often considered difficult to define because:",
+    options: [
+        "A. It lacks any real-world application, focusing only on abstract ideas.",
+        "B. Its subject matter encompasses universal issues that cannot be easily categorized.",
+        "C. Most philosophers disagree on its meaning and significance.",
+        "D. It only deals with the technical expertise and practical skills of individuals.",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Philosophy has a vast, universal scope covering multiple foundational themes, making a single rigid definition very hard to establish.",
+    amharicExplanation: "ፍልስፍና ሁሉንም ዓለም አቀፋዊ ጉዳዮች እና ሰፊ ሐሳቦችን ስለሚሸፍን በአንድ ጠባብ ፍቺ ብቻ ለመወሰን አስቸጋሪ ያደርገዋል።"
+},
+
+{
+    question: "60. When philosophers engage in 'questioning the apparent,' what is their ultimate goal?",
+    options: [
+        "A. To deny commonly accepted facts and replace them with new truths.",
+        "B. To challenge the obvious in order to stimulate creative and critical thinking.",
+        "C. To find contradictions in daily experiences and prove them false.",
+        "D. To criticize societal norms without offering alternative solutions.",
+        "E. None"
+    ],
+    answer: 1,
+    englishExplanation: "Questioning the obvious helps push beyond surface-level assumptions to foster deep critical thinking and creativity.",
+    amharicExplanation: "በግልጽ የሚታዩ ነገሮችን መመርመር ወይም መጠየቅ ዋናው ዓላማ ፈጠራን እና ሂሳዊ አስተሳሰብን (critical thinking) ለማዳበር ነው።"
+}],
         2: [],
         3: [],
         4: [],
