@@ -3211,7 +3211,601 @@ const quizData = {
       "This is a False Dichotomy because it presents only two choices—buy the expensive jeans or be considered out of style—while ignoring many other realistic alternatives.",
     amharicExplanation:
       "ይህ የ'False Dichotomy' ወይም False Dilemma ስህተት ነው። ሁለት ምርጫዎች ብቻ እንዳሉ አድርጎ ያቀርባል፤ ወይ 200 ዶላር የሚያወጣ ልብስ ግዛ ወይም ከፋሽን ውጭ ነህ ተብለህ ትታያለህ ይላል። ነገር ግን ሌሎች ብዙ አማራጮች አሉ።"
-  }]
+  },{
+      question: "The proposal to ban smoking in the workplace is a terrible idea. Consider the plight of the poor smokers. Just to get a puff, they'll have to go outside, where they'll face the icy blasts of winter, torrential rains in the spring, and the blazing sun in summer. Nobody should ever be subjected to such torture.",
+      options: [
+        "Missing the point.",
+        "Appeal to force.",
+        "False cause.",
+        "No fallacy.",
+        "Appeal to pity."
+      ],
+      answer: 4,
+      englishExplanation:
+        "This argument tries to win support by evoking sympathy and pity for smokers having to walk outside in bad weather, rather than addressing the actual merits or health reasons behind a workplace smoking ban.",
+      amharicExplanation:
+        "ይህ ክርክር የትምባሆ ሱሰኞች ከቤት ውጭ በቅዝቃዜና በዝናብ እየተቸገሩ ማጨስ አለባቸው በሚል ሰበብ አዛኝነትንና ጸጸትን በመቀስቀስ የሰዎችን ድምጽ ለማግኘት ይሞክራል። ስለዚህም ትክክለኛው መልስ Appeal to pity (ለርኅራኄ የሚደረግ ይግባኝ) ነው።"
+    },
+
+    {
+      question: "What fallacy is it when an argument attacks the person rather than the person's beliefs?",
+      options: [
+        "Red Herring",
+        "Begging the Question",
+        "Straw Man",
+        "Argumentum ad Hominem"
+      ],
+      answer: 3,
+      englishExplanation:
+        "\"Argumentum ad Hominem\" (Latin for \"against the person\") occurs when someone rejects or criticizes an opponent's personal traits, character, or background instead of addressing the logic of their argument.",
+      amharicExplanation:
+        "ይህ ስሕተት የሚፈጸመው የክርክሩን ሐሳብ ከመተንተን ይልቅ በሰዉየው ስብዕና፣ ገጽታ ወይም የኑሮ ሁኔታ ላይ ጥቃት ሲሰነዘር ነው። ስለዚህ Argumentum ad Hominem (በግለሰቡ ላይ የሚሰነዘር ትችት) ይባላል።"
+    },
+
+    {
+      question: "What fallacy is it when an argument assumes only two options when in fact there are more?",
+      options: [
+        "Straw Man",
+        "False Dilemma",
+        "Begging the Question",
+        "Appeal to Emotion"
+      ],
+      answer: 1,
+      englishExplanation:
+        "A false dilemma (or false dichotomy) wrongfully restricts the choices available, presenting a situation as having only two extreme alternatives when other reasonable options exist.",
+      amharicExplanation:
+        "ሐሰተኛ አቀንቃኝ ወይም False Dilemma የሚባለው አንድ ጉዳይ ሁለት አማራጮች ብቻ ያሉት አድርጎ በማቅረብ ነገር ግን ተጨማሪ አማራጮች ሲኖሩ ነው።"
+    },
+
+    {
+      question: "I don't agree with Jones when she says we should wait for a trial, and I'll tell you why. I don't approve of letting someone get away with murder! That's why I say let's hang him now! What fallacy does this most clearly illustrate?",
+      options: [
+        "Straw Man",
+        "False Dilemma",
+        "Argumentum ad Hominem",
+        "Red Herring"
+      ],
+      answer: 0,
+      englishExplanation:
+        "Jones suggested waiting for a trial (due process), but the speaker distorts her position into \"letting someone get away with murder\" and attacks that exaggerated, fake version. This misrepresentation is a Straw Man fallacy.",
+      amharicExplanation:
+        "ጆንስ \"የፍርድ ሂደት እንጠብቅ\" ስትል፣ ተናጋሪው ግን ሐሳቧን አዛብቶ \"ወንጀለኛው እንዲያመልጥ ትፈልጋለች\" በማለት የሷን ትክክለኛ ሐሳብ በሌላ የተጋነነ ሐሳብ ይተካዋል። ይህ Straw Man (የገለባ ሰው ስሕተት) ይባላል።"
+    },
+
+    {
+      question: "What must be the case for an argument to succeed with a rational person?",
+      options: [
+        "The premises must be acceptable.",
+        "The conclusion must be acceptable.",
+        "The premises must logically support the conclusion.",
+        "The premises must be acceptable and they must logically support the conclusion."
+      ],
+      answer: 3,
+      englishExplanation:
+        "For an argument to be sound and convincing to a rational person, two conditions must be met: the starting points (premises) must be believable/true, and the conclusion must follow logically from those premises.",
+      amharicExplanation:
+        "አንድ ክርክር ምክንያታዊ በሆነ ሰው ዘንድ ተቀባይነት እንዲኖረው መነሻ ሐሳቦቹ (Premises) ተቀባይነት ያላቸው ሊሆኑ እና እነሱም መደምደሚያውን በምክንያታዊነት የሚደግፉ መሆን አለባቸው።"
+    },
+
+    {
+      question: "The crimes around our city have been increasing at an alarming rate. Murders are occurring every day. It is obvious that our education system is failing.",
+      options: [
+        "Appeal to force",
+        "Missing the point",
+        "Straw man",
+        "Red herring"
+      ],
+      answer: 1,
+      englishExplanation:
+        "The premises establish that crime and murder rates are rising, but the conclusion drawn is about the education system failing. The conclusion doesn't logically match the premises provided, which is the definition of the \"missing the point\" (ignoratio elenchi) fallacy.",
+      amharicExplanation:
+        "የተሰጡት ነጥቦች የወንጀል መጨመርን ቢያሳዩም፣ የተደረሰበት መደምደሚያ ግን የትምህርት ሥርዓቱ መውደቅን ይመለከታል። መነሻውና መደምደሚያው እርስ በርሳቸው ስለማይገናኙ Missing the point (ዋናውን ነጥብ መስት) ይባላል።"
+    },
+
+    {
+      question: "Duty is something that everyone is bound to follow. Because the truth is sacred, we have a duty to tell the truth at all times. Because of this duty, we should clearly explain the activity of sexual reproduction to even the youngest child.",
+      options: [
+        "Accident",
+        "Argument against the person (ad hominem)",
+        "Appeal to pity",
+        "No fallacy"
+      ],
+      answer: 0,
+      englishExplanation:
+        "The fallacy of accident occurs when a general rule is applied to a specific case where an exception should apply. Telling the truth is a general duty, but applying it rigidly to explain complex sexual reproduction details to an infant/youngest child ignores appropriate contextual exceptions.",
+      amharicExplanation:
+        "ይህ ስሕተት (Fallacy of Accident) የሚባለው አጠቃላይ ሕግን ወይም ደንብን ልዩ ሁኔታዎችን ሳያጤኑ በግለሰባዊ ወይም ተገቢ ባልሆኑ ሁኔታዎች ላይ ተግባራዊ ለማድረግ ሲሞከር ነው። እውነት መናገር ግዴታ ቢሆንም ለአራስ ሕፃን ሁሉንም ነገር ማካፈል ግን ተገቢ አይደለም።"
+    },
+
+    {
+      question: "Smith argued that no crime, however heinous, should be punishable by death. But Smith, nor anyone in his family, has ever been a victim of violent or severe crime. He does not know the pain of losing a loved one to a violent crime. Clearly, he is in no position to give his opinion on the issue.",
+      options: [
+        "Red herring",
+        "Appeal to pity",
+        "Ad hominem",
+        "Appeal to the people"
+      ],
+      answer: 2,
+      englishExplanation:
+        "Instead of attacking Smith's logical argument against the death penalty, the speaker attacks Smith's personal background (claiming he has never suffered from crime and therefore cannot speak). This is an ad hominem (circumstantial) fallacy.",
+      amharicExplanation:
+        "ስሚዝ ሞት መቀጣት የለበትም የሚለውን ሐሳብ ውድቅ ለማድረግ የሞከረው በሐሳቡ ላይ በመመስረት ሳይሆን፣ \"ቤተሰቡ ወንጀል ደርሶባቸው አያውቅም\" በሚል የግል ሁኔታውን በመተቸት ነው። ስለዚህ Ad hominem (በግለሰቡ ላይ የሚሰነዘር ጥቃት) ነው።"
+    },
+
+    {
+      question: "If Rasputin was really mad, then he deceived Czar Nicholas II. Rasputin was not really mad. Therefore, he did not deceive Czar Nicholas II.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 0,
+      englishExplanation:
+        "This argument follows the structural pattern: If P then Q, Not P, Therefore Not Q. This is a classic formal fallacy known as \"Denying the Antecedent.\"",
+      amharicExplanation:
+        "ይህ ክርክር የተዋቀረው በይፋዊ አመክንዮ መዋቅር ስሕተት ላይ በመመስረት (Denying the Antecedent) ነው። ሐሳቡ መዋቅራዊ ስሕተት ስላለው Formal fallacy (መዋቅራዊ/ይፋዊ ስሕተት) ይባላል።"
+    },
+
+    {
+      question: "Everything that runs has feet. The Columbia River runs very swiftly. Therefore, the Columbia River has feet.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 1,
+      englishExplanation:
+        "This commits the informal fallacy of equivocation, because the word \"runs\" changes its meaning between the premises (moving with legs vs. flowing with water).",
+      amharicExplanation:
+        "\"Runs\" (ይሮጣል/ይፈስሳል) የሚለው ቃል በሁለት የተለያዩ ትርጉሞች (እግርን አንቀሳቅሶ መሮጥ እና ውሃ መፍሰስ) በመጠቀሙ የተፈጠረ የይዘት ስሕተት ስለሆነ Informal fallacy (መዋቅራዊ ያልሆነ ስሕተት) ይባላል።"
+    },
+
+    {
+      question: "All people who believe we create our own reality are people who lack social responsibility. All people governed by selfish motives are people who lack social responsibility. Therefore, all people who believe we create our own reality are people governed by selfish motives.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 0,
+      englishExplanation:
+        "This is a categorical syllogism that commits the formal fallacy of the \"Undistributed Middle\" because the middle term (\"people who lack social responsibility\") is never distributed in either premise.",
+      amharicExplanation:
+        "ይህ በምድብ ሲሎሎጂዝም (Categorical Syllogism) መዋቅር ውስጥ የሚከሰት እና መካከለኛው ቃል በበቂ ሁኔታ ያልተካለለበት (Undistributed Middle) በመሆኑ Formal fallacy ይባላል።"
+    },
+
+    {
+      question: "The ship of state is like a ship at sea. No sailor is ever allowed to protest orders from the captain. For the same reason, no citizen should ever be allowed to protest presidential policies.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 1,
+      englishExplanation:
+        "This argument compares a state to a ship at sea and draws a conclusion based on that. However, because a country and a ship have fundamental structural differences regarding rights and democracy, it is a weak analogy, which is an informal fallacy.",
+      amharicExplanation:
+        "ሀገርን ከባህር መርከብ ጋር በማነጻጸር የሚደረግ አግባብነት የሌለው ንጽጽር (Weak Analogy) በመሆኑ Informal fallacy (መዋቅራዊ ያልሆነ ስሕተት) ይመደባል።"
+    },
+
+    {
+      question: "Renowned violinist Pinchas Zukerman has said, \"When it comes to vodka, Smirnoff plays second fiddle to none.\" We must therefore conclude that Smirnoff is the best vodka available.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 1,
+      englishExplanation:
+        "Pinchas Zukerman is an expert in music (violin), not in alcoholic beverages or vodka production. Relying on his authority outside his field is the informal fallacy of appeal to unqualified authority (argumentum ad verecundiam).",
+      amharicExplanation:
+        "ፒንቻስ ዙከርማን በሙዚቃ ዘርፍ ታዋቂ ባለሙያ እንጂ በመጠጥ (ቮድካ) ምርት ላይ ባለሙያ አይደለም። ብቃቱ በሌለው አካል ላይ ተመርክዞ መደምደሚያ ላይ መድረስ Informal fallacy ነው።"
+    },
+
+    {
+      question: "If the Chinese government systematically kills its unwanted orphans, then the Chinese government is immoral. The Chinese government is indeed immoral. Therefore, the Chinese government systematically kills its unwanted orphans.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 0,
+      englishExplanation:
+        "This follows the pattern: If P then Q, Q, Therefore P. This is the formal fallacy known as \"Affirming the Consequent.\"",
+      amharicExplanation:
+        "ይህ ክርክር \"የውጤቱን ክፍል ማረጋገጥ\" (Affirming the Consequent) በሚባል መዋቅራዊ ስሕተት የተዋቀረ በመሆኑ Formal fallacy ይባላል።"
+    },
+
+    {
+      question: "Sarah Jessica Parker, Ben Affleck, and Julia Roberts are Democrats. Therefore, it must be the case that all Hollywood stars are Democrats.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 1,
+      englishExplanation:
+        "Generalizing about an entire group (all Hollywood stars) based on a very small, insufficient sample size (just three actors) is the informal fallacy of hasty generalization.",
+      amharicExplanation:
+        "በጥቂት ሰዎች (በሶስት ተዋናዮች) ላይ ብቻ በመመስረት ስለ አጠቃላይ የሆሊውድ ከዋክብት መደምደሚያ ላይ መድረስ ፈጣንና የተሳሳተ አጠቃላይ ማጠቃለያ (Hasty Generalization) ስለሆነ Informal fallacy ነው።"
+    },{
+      question: "A fallacy that can be detected by merely examining the form of an argument is:",
+      options: [
+        "A fallacy of presumption.",
+        "An informal fallacy.",
+        "A fallacy of relevance.",
+        "A fallacy of weak induction.",
+        "A formal fallacy."
+      ],
+      answer: 4,
+      englishExplanation:
+        "A formal fallacy can be identified just by looking at the logical structure or form of an argument, independent of its specific content or meaning.",
+      amharicExplanation:
+        "ፎርማል ፋላሲ (Formal fallacy) የሚባለው የክርክሩን ይዘት ወይም ትርጉም ማየት ሳያስፈልግ በቀላሉ የክርክሩን መዋቅር ወይም ቅርጽ ብቻ በመመልከት የሚታወቅ ስህተት ነው።"
+    },
+
+    {
+      question: "New York is located in the United States. Therefore, native born New Yorkers are native born Americans.",
+      options: [
+        "Begging the question.",
+        "Weak analogy.",
+        "Composition.",
+        "No fallacy.",
+        "Missing the point."
+      ],
+      answer: 3,
+      englishExplanation:
+        "This is a logically sound and valid argument. Since New York is part of the United States, anyone born in New York is necessarily a native-born American. There is no logical error.",
+      amharicExplanation:
+        "ይህ ክርክር ፍጹም ትክክለኛ እና ምክንያታዊ ነው። ኒውዮርክ በዩናይትድ ስቴትስ ውስጥ የሚገኝ በመሆኑ፣ በኒውዮርክ የተወለደ ሰው አሜሪካ ውስጥ እንደተወለደ አሜሪካዊ የሚቆጠርበት ፍጹም አመክንዮአዊ ትስስር አለው፤ ስለዚህ ምንም ስህተት (ፋላሲ) የለውም።"
+    },
+
+    {
+      question: "Nobody has ever proved that the prophecies of Nostradamus are false. Therefore, they must be true.",
+      options: [
+        "Argument against the person, circumstantial.",
+        "Tu quoque (you, too).",
+        "Missing the point.",
+        "Appeal to ignorance.",
+        "No fallacy."
+      ],
+      answer: 3,
+      englishExplanation:
+        "This fallacy occurs when someone argues that a statement must be true simply because it has not been proven false (or vice versa).",
+      amharicExplanation:
+        "ይህ ስህተት የሚፈጠረው አንድ ነገር ውሸት መሆኑ አልተረጋገጠም በሚል ብቻ እውነት ነው ብሎ ሲከራከር ነው። አለማወቅን መጥራት (Appeal to ignorance) ይባላል።"
+    },
+
+    {
+      question: "The president of our college has promised to stop drinking on campus. Apparently the president has a drinking problem.",
+      options: [
+        "Equivocation.",
+        "Appeal to unqualified authority.",
+        "Amphiboly.",
+        "No fallacy.",
+        "Suppressed evidence."
+      ],
+      answer: 2,
+      englishExplanation:
+        "Amphiboly arises from ambiguous grammar or sentence structure. The phrase \"stop drinking on campus\" can mean either stopping the act of drinking while physically on campus, or the president having a general drinking problem and vowing to stop drinking entirely while at the campus.",
+      amharicExplanation:
+        "አምፊቦሊ (Amphiboly) የሚፈጠረው በሰዋስዋዊ አወቃቀር ግልጽ ባለመሆን ምክንያት ነው። \"በግቢው ውስጥ መጠጣት ማቆም\" የሚለው አረፍተ ነገር ፕሬዚዚዳንቱ ግቢ ውስጥ እያሉ መጠጥ መጠጣትን ማቆማቸውን ወይም በአጠቃላይ የመጠጥ ሱሰኛነታቸውን በግቢው ውስጥ ማስቀረታቸውን ሊያመለክት ስለሚችል በሁለት መንገድ ሊተረጎም ይችላል።"
+    },
+
+    {
+      question: "The government has no right to spy on its citizens because citizens have a right to privacy. And this is true because such a right is guaranteed by the constitution—which follows from the fact that our founding fathers recognized the sanctity of individual privacy against the intrusive power of the government. And of course this is true because the government has no right to spy on its citizens.",
+      options: [
+        "No fallacy.",
+        "Red herring.",
+        "Slippery slope.",
+        "Missing the point.",
+        "Begging the question."
+      ],
+      answer: 4,
+      englishExplanation:
+        "Begging the question (circular reasoning) occurs when an arguer assumes the very thing they are trying to prove, often looping back to their original premise as the final justification.",
+      amharicExplanation:
+        "ይህ ክርክር ክብ የሚሰራ (Circular reasoning) ወይም ጥያቄን የሚለምን (Begging the question) ፋላሲ ነው። ምክንያቱም ሊያስረዳው የፈለገውን ዋና ሀሳብ እንደ መደገፊያ ማስረጃ መልሶ ይጠቀመዋል።"
+    },
+
+    {
+      question: "The proposal to ban smoking in the workplace is a terrible idea. Consider the plight of the poor smokers. Just to get a puff, they'll have to go outside, where they'll face the icy blasts of winter, torrential rains in the spring, and the blazing sun in summer. Nobody should ever be subjected to such torture.",
+      options: [
+        "Missing the point.",
+        "Appeal to force.",
+        "False cause.",
+        "No fallacy.",
+        "Appeal to pity."
+      ],
+      answer: 4,
+      englishExplanation:
+        "Appeal to pity occurs when an arguer tries to support a conclusion by evoking sympathy or pity from the audience, rather than using relevant evidence.",
+      amharicExplanation:
+        "ይህ ስህተት የሚፈጠረው በምክንያት እና በማስረጃ ፋንታ የሰዎችን ምህረት ወይም ርኅራኄ (Pity) ለመቀስቀስ ሲሞከር ነው። አጫሾች በክረምት እና በበጋ ውጭ ሆነው መቸገራቸውን በመጥቀስ ርኅራኄ እንዲፈጠር ይደረጋል።"
+    },
+
+    {
+      question: "Those boarding a bus are never required to pass through a security checkpoint. Therefore, those boarding an airliner should not be required to pass through a security checkpoint.",
+      options: [
+        "Begging the question.",
+        "False cause.",
+        "Weak analogy.",
+        "No fallacy.",
+        "Missing the point."
+      ],
+      answer: 2,
+      englishExplanation:
+        "A weak analogy happens when the two things being compared (a bus and an airliner) are not sufficiently similar in relevant respects to warrant the same conclusion (security risks differ vastly).",
+      amharicExplanation:
+        "ደካማ ንጽጽር (Weak analogy) የሚባለው በቂ ተመሳሳይነት በሌላቸው ሁለት ነገሮች (አውቶቡስ እና አውሮፕላን) መካከል ንጽጽር ተደርጎ የተሳሳተ ድምዳሜ ላይ ሲደረስ ነው። የአውቶቡስ እና የአውሮፕላን የደህንነት ስጋት መጠን ፈጽሞ የተለያየ ነው።"
+    },
+
+    {
+      question: "What fallacy is it when an argument attacks the person rather than the person's beliefs?",
+      options: [
+        "Red Herring",
+        "Begging the Question",
+        "Straw Man",
+        "Argumentum ad Hominem"
+      ],
+      answer: 3,
+      englishExplanation:
+        "An argumentum ad hominem (appeal to the person) fallacy occurs when someone attacks the character, background, or traits of the person making an argument instead of addressing the actual argument itself.",
+      amharicExplanation:
+        "አርጉመንተም አድ ሆሚነም (Argumentum ad Hominem) የሚባለው የሰውን ሀሳብ ወይም መከራከሪያ ከመንቀስ ፋንታ በቀጥታ በግለሰቡ ማንነት፣ ባህሪ ወይም ገጽታ ላይ ጥቃት ሲሰነዘር ነው።"
+    },
+
+    {
+      question: "The vast majority of Americans believe in God. Therefore, you should believe, too.",
+      options: [
+        "Tu quoque (you, too).",
+        "No fallacy.",
+        "Argument against the person, circumstantial.",
+        "Appeal to the people.",
+        "False dichotomy."
+      ],
+      answer: 3,
+      englishExplanation:
+        "The appeal to the people (ad populum) fallacy uses the desire to be accepted, popular, or part of the majority to pressure someone into accepting a conclusion.",
+      amharicExplanation:
+        "ህዝብን መጥራት (Appeal to the people ወይም Ad populum) የሚባለው ብዙዎቹ ሰዎች አንድን ነገር ስለሚያምኑ ወይም ስለሚያደርጉ አንተም ማመን አለብህ ተብሎ ሲታመን ነው።"
+    },
+
+    {
+      question: "Professor Gibson said that he teaches only dead white philosophers. Therefore, it must be the case that all of his students are dead.",
+      options: [
+        "Equivocation.",
+        "Appeal to ignorance.",
+        "You, too (tu quoque).",
+        "No fallacy.",
+        "Amphiboly."
+      ],
+      answer: 4,
+      englishExplanation:
+        "This is another example of Amphiboly, where ambiguous sentence structure leads to a humorous double meaning. It sounds as though the students are dead, whereas the intention is that the philosophers being taught are dead.",
+      amharicExplanation:
+        "ይህ ደግሞ ሌላኛው የአምፊቦሊ (Amphiboly) ምሳሌ ነው። አረፍተ ነገሩ በተቀረጸበት መንገድ ምክንያት \"የሞቱ ነጭ ፈላስፎችን ብቻ አስተምራለሁ\" የሚለው ሀሳብ ተማሪዎቹ ራሳቸው ሞተዋል የሚያስብል ግልጽ ያልሆነ የሰዋስው ስህተት ፈጥሯል።"
+    },{
+      question: "Congresswoman Michele Bachmann argues in favor of drilling for oil in the Arctic National Wildlife Refuge. But consider this. Bachmann is a total moron, a complete idiot who would not recognize an oil well if she bumped into one. Clearly her arguments are ridiculous.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 1,
+      englishExplanation:
+        "This argument commits an informal fallacy (specifically, ad hominem), because it attacks the person making the argument rather than addressing the substance of the argument itself.",
+      amharicExplanation:
+        "ይህ ክርክር መደበኛ ያልሆነ ስህተት (በተለይ ad hominem ወይም ሰውን ማጥቃት) ፈጽሟል፤ ምክንያቱም የክርክሩን ሐሳብ ከመተቸት ይልቅ ሐሳቡን ያቀረበውን ሰው ስሚዎችና ስድብ በመስጠት ያጠቃል።"
+    },
+
+    {
+      question: "If plastic guns are sold to the public, then terrorists will carry them aboard airliners undetected. If plastic guns are sold to the public, then airline hijackings will increase. Therefore, if terrorists carry plastic guns aboard airliners undetected, then airline hijackings will increase.",
+      options: [
+        "Formal fallacy",
+        "Informal fallacy",
+        "No fallacy"
+      ],
+      answer: 0,
+      englishExplanation:
+        "This argument commits a formal fallacy (specifically, the fallacy of affirming the consequent or a structural error in conditional logic), where the structural form of the symbols violates valid deductive rules.",
+      amharicExplanation:
+        "ይህ ክርክር መደበኛ ስህተት (Formal fallacy) ፈጽሟል፤ ምክንያቱም የክርክሩ አወቃቀር ወይም ቅርጽ ከቀላል አመክንዮ ህጎች ውጪ የተዋቀረ ስለሆነ ነው።"
+    },
+
+    {
+      question: "The position open in the accounting department should be given to Frank Thompson. Frank has six hungry children to feed, and his wife desperately needs an operation to save her eyesight.",
+      options: [
+        "Appeal to pity",
+        "Appeal to force",
+        "Ad hominem",
+        "Straw man"
+      ],
+      answer: 0,
+      englishExplanation:
+        "The argument attempts to win support by evoking sympathy and compassion for Frank's difficult personal situation rather than proving he is qualified for the job.",
+      amharicExplanation:
+        "ይህ ክርክር ለሥራው ብቁ መሆኑን ከማሳየት ይልቅ፣ የፍራንክን አስቸጋሪ የቤተሰብ ሕይወት እና የልጆቹን ረሃብ በማንሳት በሰዎች ልብ ውስጥ የርኅራኄ ስሜት በመፍጠር ድጋፍ ለማግኘት ይሞክራል።"
+    },
+
+    {
+      question: "Erica Evans, who takes orders at the local Taco Bell, argues persuasively in favor of increasing the minimum wage. But this is exactly what you would expect. Erica is paid the minimum wage, and if the minimum wage is increased, then her own salary will go up. Obviously Erica's arguments are worthless.",
+      options: [
+        "Red herring",
+        "Ad hominem, circumstantial",
+        "Appeal to pity",
+        "Straw man"
+      ],
+      answer: 1,
+      englishExplanation:
+        "This is a circumstantial ad hominem because it dismisses Erica's argument solely based on her personal circumstances and personal gain (she earns minimum wage), ignoring the logical merits of raising the wage.",
+      amharicExplanation:
+        "ይህ 'የሁኔታዎች ad hominem' (Ad hominem, circumstantial) ስህተት ነው፤ ምክንያቱም የኤሪካን ሐሳብ ትክክለኛነት ከመመርመር ይልቅ ራሷ ዝቅተኛ ደመወዝ ስለመሆኗ እና ከእሱ ጥቅም እንደምታገኝ በመጥቀስ ብቻ ክርክሯ ዋጋ ቢስ ነው ይላል።"
+    },
+
+    {
+      question: "The school board argues that our schools are in desperate need of repair. But the real reason our students are falling behind is that they spend too much time with their computers. Becoming educated means a lot more than learning how to point and click. The school board should send a letter to the parents urging them to monitor their kids' computer time.",
+      options: [
+        "Straw man",
+        "Red herring",
+        "Ad populum",
+        "Appeal to force"
+      ],
+      answer: 1,
+      englishExplanation:
+        "The speaker deflects attention away from the original issue (schools needing physical repairs) by introducing a completely different topic (students spending too much time on computers), which misdirects the audience.",
+      amharicExplanation:
+        "ተናጋሪው ትኩረቱን ከመጀመሪያው ሐሳብ (ትምህርት ቤቶች ጥገና ያስፈልጋቸዋል ከሚለው) በማዛባት፣ ከተማሪዎች የኮምፒውተር አጠቃቀም ጋር የተያያዘ ፈጽሞ የተለየ ሌላ ሐሳብ በማምጣት ታዳሚውን አቅጣጫ ያስታል (Red herring)።"
+    },
+
+    {
+      question: "Whoever thrusts a knife into another person should be arrested. But surgeons do precisely this when operating. Therefore, surgeons should be arrested.",
+      options: [
+        "Ad hominem",
+        "Straw man",
+        "Accident",
+        "Appeal to pity"
+      ],
+      answer: 2,
+      englishExplanation:
+        "This argument commits the accident fallacy, which occurs when a general rule or law is inappropriately applied to a specific case that has exceptional circumstances (surgery vs. assault).",
+      amharicExplanation:
+        "ይህ ክርክር የ'አጋጣሚ ስህተት' (Accident fallacy) ፈጽሟል፤ ምክንያቱም አጠቃላይ ህግን (ሌላ ሰውን በቢላ መውጋት ወንጀል ነው የሚለውን) ልዩ ሁኔታን ላለው (ለምሳሌ ለቀዶ ጥገና ሐኪም ተግባር) ያለ አግባብ ስለተጠቀመበት ነው።"
+    },
+
+    {
+      question: "You should read Irving Stone's latest novel right away. It has sold over a million copies, and practically everyone in the Manhattan cocktail circuit is talking about it.",
+      options: [
+        "Ad populum",
+        "Appeal to force",
+        "Ad hominem",
+        "Red herring"
+      ],
+      answer: 0,
+      englishExplanation:
+        "This commits the ad populum fallacy because it argues that something is good or true simply because a lot of people like it or are doing it (bandwagon appeal).",
+      amharicExplanation:
+        "ይህ ክርክር የሕዝብ ተወዳጅነት የመጠቀም ስህተት (ad populum) አለው፤ ምክንያቱም መጽሐፉ ጥሩ መሆኑን ለማስረገጥ ብዙ ሰዎች እየገዙት እና እያወሩበት መሆኑን እንደ ዋና ምክንያት ስለተጠቀመ ነው።"
+    },
+
+    {
+      question: "Friedrich Nietzsche's philosophy is not worth the paper it's printed on. Nietzsche was an immoral reprobate who went completely insane from syphilis before he died.",
+      options: [
+        "Ad hominem, abusive",
+        "Appeal to pity",
+        "Red herring",
+        "Straw man"
+      ],
+      answer: 0,
+      englishExplanation:
+        "This argument directly insults and abuses Nietzsche's personal character and mental health instead of analyzing the logical validity or content of his philosophical ideas.",
+      amharicExplanation:
+        "ይህ ክርክር የኒቼን የፍልስፍና ሃሳቦች ከመመርመር ይልቅ፣ የግል ሕይወቱን፣ ሞራሉን እና የአዕምሮ ጤናውን በቀጥታ በመሳደብ የሚያጠቃ በመሆኑ 'አዳሚነም አቡሲቭ' (Abusive ad hominem) ይባላል።"
+    },
+
+    {
+      question: "Surely you welcome the opportunity to join our protective organization. Think of all the money you will lose from broken windows, overturned trucks, and damaged merchandise in the event of your not joining.",
+      options: [
+        "Appeal to pity",
+        "Red herring",
+        "Appeal to force",
+        "Ad populum"
+      ],
+      answer: 2,
+      englishExplanation:
+        "The argument relies on explicit or implicit threats of harm, property damage, or violence (ad baculum or appeal to force) to coerce someone into joining the organization.",
+      amharicExplanation:
+        "ይህ ክርክር ድርጅቱን ካልተቀላቀልክ ንብረትህ ይወድማል በማለት ስጋት እና ማስፈራሪያ በመጠቀም ሰውን እንዲስማማ ለማድረግ የሚሞክርበት አካሄድ በመሆኑ 'የኀይል ይግባኝ' (Appeal to force) ይባላል።"
+    },
+
+    {
+      question: "Senator Barrow advocates increased Social Security benefits for the poor. It is regrettable that the senator finds it necessary to advocate socialism. Socialism defeats initiative, takes away promised rewards, and leads directly to inefficiency and big government. It was tried for years in Eastern Europe, and it failed miserably. Clearly, socialism is no good.",
+      options: [
+        "Straw man",
+        "Appeal to force",
+        "Red herring",
+        "Ad hominem"
+      ],
+      answer: 0,
+      englishExplanation:
+        "The argument distorts Senator Barrow's moderate proposal (increasing Social Security for the poor) into extreme \"socialism\" and then attacks that extreme distortion, which is a straw man fallacy.",
+      amharicExplanation:
+        "ይህ ክርክር የሴናተሩን መካከለኛ ሐሳብ (ለድሆች የሚደረግ የጡረታ እርዳታ ማሻሻል) አጉልቶ ወደከፋው የ'ሶሻሊዝም' ርዕዮተ ዓለም በመቀየር እና ያንን የተዛባ ሐሳብ በመተቸት የማጥቃት ስልት ስለሚጠቀም 'የገለባ ሰው ስህተት' (Straw man) ተብሏል።"
+    },
+
+    {
+      question: "Something is seriously wrong with high school education these days. After ten years of decline, SAT scores are still extremely low, and high school graduates are practically incapable of reading and writing. The obvious conclusion is that we should close the schools.",
+      options: [
+        "Appeal to pity",
+        "Ignoratio elenchi",
+        "Red herring",
+        "Ad populum"
+      ],
+      answer: 1,
+      englishExplanation:
+        "This commits ignoratio elenchi (missing the point) because the premises show that schools have problems, but the conclusion drawn (closing them completely) does not logically follow from those premises.",
+      amharicExplanation:
+        "ይህ ክርክር ዋናውን ነጥብ ስህተት (Ignoratio elenchi) ያሳያል፤ ምክንያቱም ትምህርት ቤቶች ችግር እንዳለባቸው ቢጠቁምም፣ መፍትሄው ትምህርት ቤቶቹን መዝጋት ነው የሚለው መደምደሚያ ከቀረቡት ምክንያቶች ጋር አብሮ የሚሄድ አይደለም።"
+    },
+
+    {
+      question: "The editors of the Daily Register have accused our company of being one of the city's worst water polluters. But the Daily Register is responsible for much more pollution than we are. After all, they own the Western Paper Company, and that company discharges tons of chemical residue into the city's river every day.",
+      options: [
+        "Straw man",
+        "Red herring",
+        "Tu quoque (you, too)",
+        "Ad hominem"
+      ],
+      answer: 2,
+      englishExplanation:
+        "This is the tu quoque (you too) fallacy because the company deflects the accusation of pollution by turning around and accusing the accuser of doing the exact same thing, without proving their own innocence.",
+      amharicExplanation:
+        "ይህ ክርክር 'አንተም በል' (Tu quoque) በመባል ይታወቃል፤ ምክንያቱም ኩባንያው በብክለት ስሙ ሲነሳ ጥፋቱን ላለመቀበል 'እናንተም እኮ አታስወጡም' በማለት ከሳሹን አካል በመወንጀል ትኩረቱን ለማስቀየር ይሞክራል።"
+    },
+
+    {
+      question: "If 20 percent of adult Americans are functionally illiterate, then it's no wonder that morons get elected to public office. In fact, 20 percent of adult Americans are functionally illiterate. Therefore, it's no wonder that morons get elected to public office.",
+      options: [
+        "Ad populum",
+        "Red herring",
+        "No fallacy (Modus ponens)",
+        "Appeal to pity"
+      ],
+      answer: 2,
+      englishExplanation:
+        "This is a logically valid deductive argument following the standard rule of Modus Ponens (If P then Q; P; therefore Q), meaning it contains no logical fallacy.",
+      amharicExplanation:
+        "ይህ ትክክለኛ እና ህጋዊ የሆነ የመከራከሪያ ቅርጽ (Modus Ponens) ነው፤ ምክንያቱም ቅድመ-ሁኔታዎቹ እውነት ሲሆኑ መደምደሚያው ከነሱ በግልጽ እና ያለ ስህተት የሚከተል ስለሆነ ምንም ዓይነት የማስረጃ ስህተት የለውም።"
+    },
+
+    {
+      question: "Ladies and gentlemen, today the lines of battle have been drawn. When the din of clashing armor has finally died away, the Republican party will emerge victorious! We are the true party of the American people! We embody the values that all real Americans hold sacred! We cherish and protect our founding fathers' vision that gave birth to the Constitution! We stand for decency and righteousness; for self-determination and the liberty to conduct our affairs as each of us freely chooses! In the coming election, victory will be ours, so help us God!",
+      options: [
+        "Ad populum",
+        "Appeal to pity",
+        "Ad hominem"
+      ],
+      answer: 0,
+      englishExplanation:
+        "The speech uses emotional, patriotic language and appeals to popular sentiments, crowd psychology, and national pride rather than presenting logical policy arguments.",
+      amharicExplanation:
+        "ይህ ንግግር በስሜታዊነት የተሞላ፣ አርበኝነትን የሚያቀነቅን እና የሰዎችን የጋራ ስሜት በመጠቀም ድጋፍ ለመሰብሰብ የሚሞክር በመሆኑ 'Ad populum' (የብዙኃን ስሜት ይግባኝ) የተባለውን ስህተት ያንጸባርቃል።"
+    },
+
+    {
+      question: "We've all heard the argument that too much television is the reason our students can't read and write. Yet many of today's TV shows are excellent. Grey's Anatomy unveils the personal lives of interns at an urban hospital, Gossip Girl explores the world of privileged teenagers at an elite private school, and American Idol uncovers hidden musical talent. Today's TV is just great!",
+      options: [
+        "Red herring",
+        "Appeal to force",
+        "Ad populum",
+        "Accident"
+      ],
+      answer: 0,
+      englishExplanation:
+        "The argument shifts focus from the core issue (whether the amount of time spent watching TV harms students' literacy) to a different issue (how entertaining or well-produced individual TV shows are), creating a red herring.",
+      amharicExplanation:
+        "ይህ ክርክር ዋናውን የውይይት ነጥብ (ብዙ ቴሌቪዥን ማየት ተማሪዎች እንዳይማሩ አድርጓል የሚለውን) በመተው ቴሌቪዥን ጥሩ እና አስተማሪ ፊልሞች አሉት ወደሚል ሌላ አርእስት ትኩረትን ስለሚያዞር 'Red herring' (ትኩረት ማስቻያ) ስህተት ይባላል።"
+    }]
 
     },
 
