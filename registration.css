@@ -1,0 +1,453 @@
+/* =========================================
+   UNIQUE ACADEMIC
+   PROFESSIONAL REGISTRATION PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.register-header {
+    background: #1e3a8a;
+    color: white;
+
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    font-size: 38px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.brand p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+
+    padding: 9px 15px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.registration-container {
+    max-width: 720px;
+
+    margin: 40px auto;
+    padding: 0 18px;
+}
+
+
+/* =========================================
+   REGISTRATION CARD
+========================================= */
+
+.registration-card {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.register-intro {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.welcome-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    background: #e8f0ff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.register-intro h2 {
+    margin: 0 0 8px;
+
+    color: #1e3a8a;
+
+    font-size: 28px;
+}
+
+.register-intro p {
+    margin: 0 auto;
+
+    max-width: 500px;
+
+    color: #666;
+}
+
+
+/* =========================================
+   PROGRESS STEPS
+========================================= */
+
+.steps {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 30px 0 40px;
+}
+
+.step {
+    text-align: center;
+
+    color: #999;
+
+    font-size: 12px;
+
+    min-width: 55px;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+
+    margin: 0 auto 6px;
+
+    border-radius: 50%;
+
+    background: #e5e7eb;
+
+    color: #777;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.step.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.step.active .step-number {
+    background: #2563eb;
+    color: white;
+}
+
+.step-line {
+    height: 2px;
+
+    width: 55px;
+
+    background: #e5e7eb;
+
+    margin: 0 5px;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h3 {
+    margin: 0;
+
+    color: #1e3a8a;
+
+    font-size: 21px;
+}
+
+.section-heading p {
+    margin: 5px 0 0;
+
+    color: #777;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+
+/* =========================================
+   CONTINUE BUTTON
+========================================= */
+
+.continue-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 14px;
+
+    margin-top: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 11px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.continue-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+.continue-btn span {
+    margin-left: 8px;
+}
+
+
+/* =========================================
+   LOGIN TEXT
+========================================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   SECURITY NOTICE
+========================================= */
+
+.security-notice {
+    margin-top: 18px;
+
+    padding: 16px;
+
+    background: #eef6ff;
+
+    border: 1px solid #d7e8ff;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    gap: 12px;
+
+    color: #28527a;
+}
+
+.security-notice > span {
+    font-size: 24px;
+}
+
+.security-notice strong {
+    display: block;
+}
+
+.security-notice p {
+    margin: 3px 0 0;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .register-header {
+        padding: 15px;
+    }
+
+    .brand h1 {
+        font-size: 18px;
+    }
+
+    .brand-icon {
+        font-size: 30px;
+    }
+
+    .home-link {
+        font-size: 13px;
+
+        padding: 7px 10px;
+    }
+
+    .registration-container {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .registration-card {
+        padding: 22px 18px;
+
+        border-radius: 16px;
+    }
+
+    .register-intro h2 {
+        font-size: 23px;
+    }
+
+    .steps {
+        margin: 25px 0 30px;
+    }
+
+    .step {
+        min-width: 42px;
+
+        font-size: 10px;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+    }
+
+    .step-line {
+        width: 20px;
+    }
+
+    .security-notice {
+        font-size: 13px;
+    }
+}
