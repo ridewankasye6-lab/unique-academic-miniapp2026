@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Unique Academic</title>
+
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="register-header">
+        <div class="brand">
+            <span class="brand-icon">🎓</span>
+
+            <div>
+                <h1>Unique Academic</h1>
+                <p>BDU Learning Platform</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="home-link">
+            🏠 Home
+        </a>
+    </header>
+
+
+    <!-- Main Registration Area -->
+    <main class="registration-container">
+
+        <!-- Registration Card -->
+        <section class="registration-card">
+
+            <!-- Welcome -->
+            <div class="register-intro">
+
+                <div class="welcome-icon">
+                    📝
+                </div>
+
+                <h2>Create Your Account</h2>
+
+                <p>
+                    Join Unique Academic and access organized
+                    university learning resources.
+                </p>
+
+            </div>
+
+
+            <!-- Progress Steps -->
+            <div class="steps">
+
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <span>Personal</span>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <span>Security</span>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <span>Payment</span>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <span>Verification</span>
+                </div>
+
+            </div>
+
+
+            <!-- Step 1 -->
+            <div class="form-step">
+
+                <div class="section-heading">
+                    <h3>👤 Personal Information</h3>
+
+                    <p>
+                        Tell us a little about yourself.
+                    </p>
+                </div>
+
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="e.g. 09XXXXXXXX"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- University -->
+                <div class="form-group">
+
+                    <label for="university">
+                        University
+                    </label>
+
+                    <select id="university" name="university" required>
+
+                        <option value="">
+                            Select your university
+                        </option>
+
+                        <option value="Bahir Dar University">
+                            Bahir Dar University
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Department -->
+                <div class="form-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        name="department"
+                        placeholder="e.g. Law"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Continue -->
+                <button
+                    type="button"
+                    class="continue-btn"
+                    id="continueBtn"
+                >
+                    Continue
+                    <span>→</span>
+                </button>
+
+
+                <!-- Existing account -->
+                <p class="login-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Security Notice -->
+        <div class="security-notice">
+
+            <span>🔒</span>
+
+            <div>
+                <strong>Your information is protected</strong>
+
+                <p>
+                    Your personal information will be used only
+                    for your Unique Academic account.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Unique Academic
+            | Learn. Understand. Succeed.
+        </p>
+
+    </footer>
+
+
+    <script src="registration.js"></script>
+
+</body>
+</html>
