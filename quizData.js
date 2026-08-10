@@ -5588,7 +5588,480 @@ const quizData = {
     "A learning set, sometimes described as learning how to learn, develops through previous experience and helps individuals solve new problems more effectively, including through insight.",
   amharicExplanation:
     "Learning set ማለት ከቀደምት ልምዶች በመነሳት አዲስ ችግሮችን በተሻለ መንገድ የመፍታት ችሎታን ማዳበር ነው። ይህ አዳዲስ ችግሮችን በInsight ወይም በአስተውሎት ለመፍታት ይረዳል።"
-}],
+},{
+  question:
+    "In Pavlov’s experiments, dogs learned to salivate in response to a tone. The tone is, therefore, a(an):",
+  options: [
+    "Conditioned stimulus",
+    "Neutral stimulus",
+    "Unconditioned response",
+    "None"
+  ],
+  answer: 0,
+  englishExplanation:
+    "A conditioned stimulus (CS) is a previously neutral stimulus that, after being repeatedly paired with an unconditioned stimulus, produces a learned response. In Pavlov's experiment, the tone was paired with food, and eventually the dogs learned to salivate when they heard the tone. Therefore, the tone is a conditioned stimulus.",
+  amharicExplanation:
+    "የተለመደ ማነቃቂያ (Conditioned stimulus) ማለት መጀመሪያ ላይ ገለልተኛ የነበረ ማነቃቂያ ከያልተለመደ ማነቃቂያ ጋር በተደጋጋሚ ከተጣመረ በኋላ የተማረ ምላሽ እንዲከሰት የሚያደርግ ነው። በፓቭሎቭ ሙከራ ውስጥ ድምፁ (tone) ከምግብ ጋር ተደጋግሞ ከተጣመረ በኋላ ውሾቹ ድምፁን ሲሰሙ ምራቅ ማፍሰስ ተማሩ። ስለዚህ ድምፁ Conditioned stimulus ነው።"
+},
+
+{
+  question:
+    "What are the processes of Classical Conditioning?",
+  options: [
+    "Discriminate, generalization, acquisition",
+    "Acquisition, extinction, spontaneous recovery, generalization, discrimination",
+    "None of the above",
+    "Both A & B"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The major processes of classical conditioning include acquisition, extinction, spontaneous recovery, generalization, and discrimination. Acquisition is when the conditioned response is learned; extinction is when the response decreases when the conditioned stimulus is no longer paired with the unconditioned stimulus; spontaneous recovery is the return of an extinguished response after a period of rest; generalization is responding similarly to similar stimuli; and discrimination is learning to respond differently to different stimuli. Therefore, B is correct.",
+  amharicExplanation:
+    "የክላሲካል ኮንዲሽኒንግ ዋና ሂደቶች Acquisition, Extinction, Spontaneous recovery, Generalization እና Discrimination ናቸው። Acquisition ማለት የተማረ ምላሽ መፍጠር ነው። Extinction ማለት የተለመደው ማነቃቂያ ከUS ጋር መጣመሩ ሲቆም የተማረው ምላሽ መቀነስ ነው። Spontaneous recovery ማለት የጠፋ ምላሽ ከጊዜ በኋላ እንደገና መታየት ነው። Generalization ማለት ለተመሳሳይ ማነቃቂያዎች ተመሳሳይ ምላሽ መስጠት ሲሆን Discrimination ደግሞ በተለያዩ ማነቃቂያዎች መካከል ልዩነት ማድረግ ነው። ስለዚህ B ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "What is classical conditioning?",
+  options: [
+    "Two stimuli",
+    "Two stimuli; 2 responses",
+    "Three stimuli",
+    "Two stimuli; one response, one consequence"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Classical conditioning involves two stimuli: an unconditioned stimulus (US) and a conditioned stimulus (CS). These stimuli are associated so that the conditioned stimulus eventually produces a learned conditioned response (CR). Based on the provided answer, D is the correct choice.",
+  amharicExplanation:
+    "ክላሲካል ኮንዲሽኒንግ በዋናነት ሁለት ማነቃቂያዎችን (stimuli) ያካትታል። እነሱም ያልተለመደ ማነቃቂያ (US) እና የተለመደ ማነቃቂያ (CS) ናቸው። ከተደጋጋሚ ማጣመር በኋላ CS የተማረ ምላሽ (CR) እንዲያመጣ ይሆናል። በተሰጠው መልስ መሠረት D ትክክለኛው ምርጫ ነው።"
+},
+
+{
+  question:
+    "Primary reinforcers can be:",
+  options: [
+    "Kisses, hugs, food",
+    "Money, jewelry, gold stars",
+    "None of these",
+    "Both A & B"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Primary reinforcers are naturally rewarding because they satisfy basic biological or physical needs and do not have to be learned. Food is a clear example of a primary reinforcer. Kisses and hugs are included in the provided answer choice. Therefore, according to the provided answer, A is correct.",
+  amharicExplanation:
+    "Primary reinforcer (ዋና ማጠናከሪያ) ማለት ሰው በተፈጥሮ የሚያስፈልገውን መሠረታዊ ፍላጎት የሚያሟላ እና ከዚህ በፊት መማር የማያስፈልገው ማጠናከሪያ ነው። ምግብ (food) ግልጽ የPrimary reinforcer ምሳሌ ነው። በተሰጠው ጥያቄ መሠረት A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "Secondary reinforcers can be:",
+  options: [
+    "Money, gold stars, jewelry",
+    "Kisses, hugs, candy",
+    "Neither of these",
+    "Both of these"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Secondary reinforcers are learned reinforcers. Their reinforcing value comes from their association with other rewarding things. Money, gold stars, and jewelry can function as secondary reinforcers because their value is learned through experience and social association. Therefore, A is correct.",
+  amharicExplanation:
+    "Secondary reinforcer (ሁለተኛ ደረጃ ማጠናከሪያ) ማለት ዋጋውን በተሞክሮ ወይም ከሌሎች ሽልማቶች ጋር በመያያዝ የሚያገኝ ማጠናከሪያ ነው። ገንዘብ፣ gold stars እና jewelry እንደ Secondary reinforcers ሊሰሩ ይችላሉ። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "In classical conditioning, what is the unconditioned response (UCR)?",
+  options: [
+    "The voluntary response to a conditioned stimulus",
+    "The automatic response to an unconditioned stimulus",
+    "The initial reaction to a neutral stimulus",
+    "The learned response to a conditioned stimulus"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The unconditioned response (UCR or UR) is a natural and automatic response that occurs without prior learning when an unconditioned stimulus is presented. For example, salivation in response to food is an unconditioned response.",
+  amharicExplanation:
+    "Unconditioned response (UCR/UR) ማለት ቀድሞ መማር ሳያስፈልግ ለUnconditioned stimulus (US) በተፈጥሮ እና በራስ-ሰር የሚከሰት ምላሽ ነው። ለምሳሌ ምግብን ስናይ ወይም ስንበላ ምራቅ መፍሰስ የUnconditioned response ምሳሌ ነው። ስለዚህ B ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "Current positive reinforcement requires the individual to imagine performing a particular task or behavior followed by a:",
+  options: [
+    "Positive consequence",
+    "Zero consequence",
+    "Negative consequence",
+    "Neutral consequence"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Positive reinforcement involves a behavior being followed by a desirable or positive consequence that increases the likelihood of the behavior occurring again. In this question, the imagined task or behavior is followed by a positive consequence. Therefore, A is correct.",
+  amharicExplanation:
+    "Positive reinforcement (አዎንታዊ ማጠናከሪያ) ማለት አንድ ባህሪ ከተፈለገ ወይም አዎንታዊ ውጤት ጋር ከተከተለ በኋላ ያ ባህሪ ወደፊት እንደገና የመከሰት እድሉ መጨመር ነው። በዚህ ጥያቄ ተግባሩ ከPositive consequence ጋር ይከተላል። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "A very useful principle of learning is that a new response is strengthened by:",
+  options: [
+    "Reinforcement",
+    "Discriminative Stimulus",
+    "Punishment",
+    "Biofeedback"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Reinforcement strengthens a behavior or response and makes it more likely to occur again in the future. Therefore, when a new response is followed by reinforcement, the response is more likely to become stronger and more frequent.",
+  amharicExplanation:
+    "Reinforcement (ማጠናከሪያ) አንድ ባህሪ ወይም ምላሽ ወደፊት እንደገና የመከሰት እድሉን የሚጨምር ነው። ስለዚህ አዲስ ምላሽ በReinforcement ሲከተል ያ ምላሽ ይጠናከራል እና ወደፊት የመደገሙ እድል ይጨምራል። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "Under conditions of variable ratio schedule, the only sensible way to obtain more reinforcements is through emitting:",
+  options: [
+    "Greater number of responses",
+    "50% responses",
+    "Less number of responses",
+    "90% responses"
+  ],
+  answer: 0,
+  englishExplanation:
+    "In a variable ratio schedule, reinforcement is delivered after an unpredictable number of responses. Because the individual cannot predict exactly which response will be reinforced, making more responses provides more opportunities to receive reinforcement. Therefore, A is correct.",
+  amharicExplanation:
+    "Variable ratio schedule ማለት ማጠናከሪያው ከተለዋዋጭ እና ከማይታወቅ የምላሾች ብዛት በኋላ የሚሰጥበት ሂደት ነው። ሰውዬው በትክክል የትኛው ምላሽ ሽልማት እንደሚያመጣ ስለማያውቅ ብዙ ምላሾችን መስጠት ብዙ የማጠናከሪያ እድሎችን ይፈጥራል። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "In which schedule of reinforcement does the delay intervals vary as per a previously decided plan?",
+  options: [
+    "Variable Interval Schedule",
+    "Fixed Interval Schedule",
+    "Fixed Ratio Schedule",
+    "Variable Ratio Schedule"
+  ],
+  answer: 0,
+  englishExplanation:
+    "A variable interval schedule provides reinforcement for the first appropriate response after different and unpredictable periods of time. The time intervals vary according to a predetermined plan. Therefore, the correct answer is A.",
+  amharicExplanation:
+    "Variable Interval Schedule ማለት ከተለያዩ የጊዜ ክፍተቶች በኋላ የመጀመሪያው ተገቢ ምላሽ ሲሰጥ ማጠናከሪያ የሚሰጥበት ሂደት ነው። የጊዜ ክፍተቶቹ ይለያያሉ እና በቀድሞ በተወሰነ እቅድ መሠረት ይለዋወጣሉ። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "Which type of learning tells us what to do with the world and applies to what is commonly called habit formation?",
+  options: [
+    "Classical Conditioning",
+    "Instrumental Learning",
+    "Insightful Learning",
+    "Latent Learning"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Instrumental learning involves learning that a particular behavior produces a particular consequence. It helps an organism learn what actions to perform in order to obtain desired outcomes or avoid unwanted outcomes. It is closely related to operant conditioning and habit formation. Therefore, B is correct.",
+  amharicExplanation:
+    "Instrumental learning (መሳሪያዊ ትምህርት) ማለት አንድ ባህሪ የተወሰነ ውጤት እንደሚያመጣ በመማር ሰውዬው ወይም ፍጡሩ ምን ማድረግ እንዳለበት የሚማርበት ነው። ይህ ከOperant conditioning እና habit formation ጋር በቅርብ የተያያዘ ነው። ስለዚህ B ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "Whenever behavior is not correlated to any specific eliciting stimuli, it is:",
+  options: [
+    "Operant Behavior",
+    "Modified Behavior",
+    "Respondent Behavior",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Operant behavior is behavior that is emitted by an organism rather than directly elicited by a specific stimulus. Its future frequency is influenced by its consequences, such as reinforcement or punishment. Therefore, A is correct.",
+  amharicExplanation:
+    "Operant behavior ማለት በተወሰነ ማነቃቂያ በቀጥታ የሚነሳ ሳይሆን ፍጡሩ የሚያወጣው ወይም የሚፈጽመው ባህሪ ነው። ይህ ባህሪ በሚያመጣው ውጤት፣ ለምሳሌ Reinforcement ወይም Punishment፣ ወደፊት የመከሰት ድግግሞሹ ሊጨምር ወይም ሊቀንስ ይችላል። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "In our daily life, any kind of looking for things which occur without any reference to our behavior may illustrate the application of:",
+  options: [
+    "Fixed Interval Schedule",
+    "Fixed Ratio",
+    "Variable Interval Schedule",
+    "None of the above"
+  ],
+  answer: 2,
+  englishExplanation:
+    "A variable interval schedule provides reinforcement for a response after varying periods of time. In daily life, situations in which we look for or wait for something that occurs at unpredictable times can illustrate the idea of a variable interval schedule. Therefore, C is correct.",
+  amharicExplanation:
+    "Variable Interval Schedule ማለት ማጠናከሪያ ወይም ውጤት ከተለያዩ የጊዜ ክፍተቶች በኋላ የሚመጣበት ሂደት ነው። በዕለታዊ ሕይወት አንድ ነገር በትክክል መቼ እንደሚከሰት ሳናውቅ መፈለግ ወይም መጠበቅ የVariable Interval ሀሳብን ሊያሳይ ይችላል። ስለዚህ C ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "In which schedule of reinforcement does the experimenter reinforce the first correct response after a given length of time?",
+  options: [
+    "Fixed Interval Schedule",
+    "Variable Interval Schedule",
+    "Fixed Ratio Schedule",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "In a fixed interval schedule, reinforcement becomes available after a specific, predetermined amount of time has passed. The first correct response after that time interval is reinforced. Therefore, A is correct.",
+  amharicExplanation:
+    "Fixed Interval Schedule ማለት የተወሰነ የጊዜ ክፍተት ካለፈ በኋላ የመጀመሪያው ትክክለኛ ምላሽ ሲሰጥ ማጠናከሪያ የሚሰጥበት ሂደት ነው። ስለዚህ A ትክክለኛው መልስ ነው።"
+},
+
+{
+  question:
+    "As a rule, variable ratio schedule (VR) arrangements sustain:",
+  options: [
+    "High rates of responding",
+    "Zero responding",
+    "Low rates of responding",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Variable ratio schedules usually produce high and steady rates of responding because reinforcement is based on an unpredictable number of responses. The individual continues responding because each response may potentially be followed by reinforcement. Therefore, A is correct.",
+  amharicExplanation:
+    "Variable Ratio (VR) Schedule ማለት ማጠናከሪያው ከተለዋዋጭ እና ከማይታወቅ የምላሽ ብዛት በኋላ የሚሰጥበት ሂደት ነው። ሰውዬው የትኛው ምላሽ ሽልማት እንደሚያመጣ ስለማያውቅ በተደጋጋሚ እና በከፍተኛ ፍጥነት ምላሽ መስጠቱን ይቀጥላል። ስለዚህ A ትክክለኛው መልስ ነው።"
+},{
+  question:
+    "In Pavlov’s experiments, dogs learned to salivate in response to a tone. The tone is, therefore, a(an):",
+  options: [
+    "Conditioned stimulus",
+    "Neutral stimulus",
+    "Unconditioned response",
+    "None"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The tone became a conditioned stimulus (CS) because it was repeatedly paired with food and eventually caused the dogs to salivate. The tone was originally neutral, but after conditioning it became a conditioned stimulus.",
+  amharicExplanation:
+    "የተለመደ ማነቃቂያ (Conditioned stimulus) ማለት መጀመሪያ ላይ ገለልተኛ የነበረ ማነቃቂያ ከሌላ ማነቃቂያ ጋር ተደጋግሞ ከተጣመረ በኋላ የተማረ ምላሽ እንዲከሰት የሚያደርግ ነው። በፓቭሎቭ ሙከራ ድምፁ ከምግብ ጋር ተደጋግሞ በመጣመሩ ውሻዎቹ ድምፁን ሲሰሙ ምራቅ ማፍሰስ ጀመሩ። ስለዚህ ድምፁ Conditioned stimulus ነው።"
+},
+
+ {
+  question:
+    "What are the processes of Classical Conditioning?",
+  options: [
+    "Discriminate, generalization, acquisition",
+    "Acquisition, extinction, spontaneous recovery, generalization, discrimination",
+    "None of the above",
+    "Both A & B"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The main processes of classical conditioning include acquisition, extinction, spontaneous recovery, stimulus generalization, and stimulus discrimination. These processes describe how a conditioned response is learned, weakened, returns, or is applied to different stimuli.",
+  amharicExplanation:
+    "የክላሲካል ኮንዲሽኒንግ ዋና ሂደቶች Acquisition, Extinction, Spontaneous recovery, Generalization እና Discrimination ናቸው። Acquisition ትምህርቱ የሚገነባበት ሂደት፣ Extinction የተማረው ምላሽ የሚዳከምበት ሂደት፣ Spontaneous recovery ደግሞ የጠፋ ምላሽ እንደገና የሚታይበት ሂደት ነው። Generalization ምላሽን ወደ ተመሳሳይ ማነቃቂያዎች ማስፋፋት ሲሆን Discrimination ደግሞ በማነቃቂያዎች መካከል ልዩነት ማወቅ ነው።"
+},
+
+{
+  question:
+    "What is classical conditioning?",
+  options: [
+    "Two stimuli",
+    "Two stimuli; 2 responses",
+    "Three stimuli",
+    "Two stimuli; one response, one consequence"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Classical conditioning involves two stimuli: an unconditioned stimulus (US) and a conditioned stimulus (CS). These are associated with a response. Therefore, according to the provided choices, D is the correct answer.",
+  amharicExplanation:
+    "ክላሲካል ኮንዲሽኒንግ በዋናነት ሁለት ማነቃቂያዎችን (stimuli) ያካትታል። እነሱም ያልተለመደ ማነቃቂያ (US) እና የተለመደ ማነቃቂያ (CS) ናቸው። ከእነዚህ ማነቃቂያዎች ጋር የተያያዘ ምላሽ ይኖራል። ስለዚህ በተሰጡት ምርጫዎች መሠረት D ትክክለኛው መልስ ነው።"
+},
+
+ {
+  question:
+    "Primary reinforcers can be:",
+  options: [
+    "Kisses, hugs, food",
+    "Money, jewelry, gold stars",
+    "None of these",
+    "Both A & B"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Primary reinforcers satisfy basic biological or physiological needs and do not need to be learned. Food is a primary reinforcer, and in the context of the provided choices, kisses and hugs are also treated as primary reinforcers.",
+  amharicExplanation:
+    "Primary reinforcers ማለት መማር ሳያስፈልግ መሠረታዊ ፍላጎቶችን የሚያረኩ ማጠናከሪያዎች ናቸው። ምግብ የPrimary reinforcer ግልጽ ምሳሌ ነው። በተሰጠው ጥያቄ መሠረት Kisses, hugs, food ትክክለኛው ምርጫ ነው።"
+},
+
+{
+  question:
+    "Secondary reinforcers can be:",
+  options: [
+    "Money, gold stars, jewelry",
+    "Kisses, hugs, candy",
+    "Neither of these",
+    "Both of these"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Secondary reinforcers gain their reinforcing value through learning or association with other reinforcers. Money, gold stars, and jewelry can become rewarding because people learn to value them.",
+  amharicExplanation:
+    "Secondary reinforcers ማለት የማጠናከሪያ እሴታቸውን በትምህርት ወይም ከሌሎች ሽልማቶች ጋር በመያያዝ የሚያገኙ ማጠናከሪያዎች ናቸው። Money, gold stars እና jewelry ሰዎች እሴታቸውን ስለሚማሩ የSecondary reinforcers ምሳሌዎች ናቸው።"
+},
+
+ {
+  question:
+    "In classical conditioning, what is the unconditioned response (UCR)?",
+  options: [
+    "The voluntary response to a conditioned stimulus",
+    "The automatic response to an unconditioned stimulus",
+    "The initial reaction to a neutral stimulus",
+    "The learned response to a conditioned stimulus"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The unconditioned response (UCR or UR) is an automatic and unlearned response to an unconditioned stimulus. For example, salivation in response to food is a natural response that does not require prior learning.",
+  amharicExplanation:
+    "ያልተለመደ ምላሽ (Unconditioned response) ማለት ያለ ቀድሞ ትምህርት በተፈጥሮ ለያልተለመደ ማነቃቂያ የሚሰጥ ራስ-ሰር ምላሽ ነው። ለምሳሌ ምግብ ሲቀርብ ምራቅ መፍሰስ በተፈጥሮ የሚከሰት ምላሽ ስለሆነ Unconditioned response ነው።"
+},
+
+ {
+  question:
+    "Current positive reinforcement requires the individual to imagine performing a particular task or behavior followed by a:",
+  options: [
+    "Positive consequence",
+    "Zero consequence",
+    "Negative consequence",
+    "Neutral consequence"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Positive reinforcement involves a behavior being followed by a desirable or positive consequence. Imagining the behavior followed by a positive consequence can strengthen the motivation to perform that behavior.",
+  amharicExplanation:
+    "Positive reinforcement ማለት አንድ ባህሪ ከተፈለገ ወይም አዎንታዊ ውጤት በኋላ ሲከተል ያ ባህሪ እንደገና የመከሰት እድሉ የሚጨምርበት ሂደት ነው። ስለዚህ ከተግባሩ በኋላ Positive consequence መኖሩ ያስፈልጋል።"
+},
+
+{
+  question:
+    "A very useful principle of learning is that a new response is strengthened by:",
+  options: [
+    "Reinforcement",
+    "Discriminative Stimulus",
+    "Punishment",
+    "Biofeedback"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Reinforcement strengthens a behavior and makes that behavior more likely to occur again in the future. Therefore, a new response is strengthened through reinforcement.",
+  amharicExplanation:
+    "Reinforcement (ማጠናከሪያ) ማለት አንድ ባህሪ እንደገና የመከሰት እድሉን የሚጨምር ነው። ስለዚህ አዲስ ምላሽ በReinforcement ሲጠናከር ወደፊት እንደገና የመከሰት እድሉ ይጨምራል።"
+},
+{
+  question:
+    "Under conditions of variable ratio schedule, the only sensible way to obtain more reinforcements is through emitting:",
+  options: [
+    "Greater number of responses",
+    "50% responses",
+    "Less number of responses",
+    "90% responses"
+  ],
+  answer: 0,
+  englishExplanation:
+    "In a variable ratio schedule, reinforcement is delivered after an unpredictable number of responses. Therefore, producing a greater number of responses increases the opportunity to receive more reinforcements.",
+  amharicExplanation:
+    "Variable ratio schedule ማለት ሽልማቱ ከተለዋዋጭና አስቀድሞ ካልታወቀ የምላሽ ብዛት በኋላ የሚሰጥበት ሂደት ነው። ብዙ ምላሾችን መስጠት ብዙ የማጠናከሪያ እድሎችን ስለሚፈጥር Greater number of responses ትክክለኛው መልስ ነው።"
+},
+{
+  question:
+    "In which schedule of reinforcement does the delay intervals vary as per a previously decided plan?",
+  options: [
+    "Variable Interval Schedule",
+    "Fixed Interval Schedule",
+    "Fixed Ratio Schedule",
+    "Variable Ratio Schedule"
+  ],
+  answer: 0,
+  englishExplanation:
+    "A variable interval schedule provides reinforcement after different amounts of time have passed. The time intervals vary according to the reinforcement arrangement, rather than remaining constant.",
+  amharicExplanation:
+    "Variable Interval Schedule ማለት ማጠናከሪያው ከተለያዩ የጊዜ ክፍተቶች በኋላ የሚሰጥበት ሂደት ነው። የጊዜ ክፍተቶቹ ቋሚ ሳይሆኑ ስለሚለዋወጡ Variable Interval Schedule ይባላል።"
+},
+
+{
+  question:
+    "Which type of learning tells us what to do with the world and applies to what is commonly called habit formation?",
+  options: [
+    "Classical Conditioning",
+    "Instrumental Learning",
+    "Insightful Learning",
+    "Latent Learning"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Instrumental learning involves learning behaviors that help an individual achieve a goal or produce a consequence. It is closely related to operant conditioning and is important in habit formation.",
+  amharicExplanation:
+    "Instrumental learning ማለት አንድ ባህሪ የተወሰነ ውጤት ወይም ግብ እንዲያመጣ በመማር የሚከናወን ትምህርት ነው። ከOperant conditioning ጋር በቅርብ የተያያዘ ሲሆን የልማድ መፍጠርንም ይረዳል።"
+},
+
+{
+  question:
+    "Whenever behavior is not correlated to any specific eliciting stimuli, it is:",
+  options: [
+    "Operant Behavior",
+    "Modified Behavior",
+    "Respondent Behavior",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Operant behavior is behavior that is emitted by an organism rather than being directly elicited by a specific stimulus. Its future occurrence is influenced by its consequences.",
+  amharicExplanation:
+    "Operant behavior ማለት በተወሰነ ማነቃቂያ በቀጥታ የሚነሳ ሳይሆን ፍጡሩ በራሱ የሚያሳየው ባህሪ ነው። የዚህ ባህሪ ወደፊት መደገም በሚያመጣው ውጤት ሊጎዳ ይችላል።"
+},
+
+ {
+  question:
+    "In our daily life, any kind of looking for things which occur without any reference to our behavior may illustrate the application of:",
+  options: [
+    "Fixed Interval Schedule",
+    "Fixed Ratio",
+    "Variable Interval Schedule",
+    "None of the above"
+  ],
+  answer: 2,
+  englishExplanation:
+    "A variable interval schedule involves reinforcement or events occurring after unpredictable periods of time. Looking for events that occur without depending on our behavior can illustrate this type of time-based schedule.",
+  amharicExplanation:
+    "Variable Interval Schedule ማለት አንድ ክስተት ወይም ማጠናከሪያ በተለያዩና አስቀድሞ በትክክል ባልተወሰኑ የጊዜ ክፍተቶች የሚከሰትበት ሂደት ነው። ክስተቱ ከራሳችን ባህሪ ጋር በቀጥታ ሳይያያዝ በጊዜ መሠረት ሲከሰት Variable Interval Schedule ሊያሳይ ይችላል።"
+},
+
+ {
+  question:
+    "In which schedule of reinforcement does the experimenter reinforce the first correct response after a given length of time?",
+  options: [
+    "Fixed Interval Schedule",
+    "Variable Interval Schedule",
+    "Fixed Ratio Schedule",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "A fixed interval schedule provides reinforcement for the first correct response after a specific, predetermined amount of time has passed. The time interval remains fixed.",
+  amharicExplanation:
+    "Fixed Interval Schedule ማለት አንድ ቋሚ የጊዜ ክፍተት ካለፈ በኋላ ለመጀመሪያው ትክክለኛ ምላሽ ማጠናከሪያ የሚሰጥበት ሂደት ነው። ስለዚህ የጊዜው ክፍተት ቀድሞ የተወሰነና ቋሚ ነው።"
+},
+ {
+  question:
+    "As a rule, variable ratio schedule (VR) arrangements sustain:",
+  options: [
+    "High rates of responding",
+    "Zero responding",
+    "Low rates of responding",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Variable ratio schedules usually produce high and steady rates of responding because reinforcement depends on an unpredictable number of responses. The individual continues responding because the next response could produce reinforcement.",
+  amharicExplanation:
+    "Variable Ratio (VR) Schedule ማለት ማጠናከሪያው ከተለዋዋጭና አስቀድሞ ካልታወቀ የምላሽ ብዛት በኋላ የሚሰጥበት ሂደት ነው። ቀጣዩ ምላሽ ሽልማት ሊያስገኝ ስለሚችል ሰውዬው ብዙ ጊዜ ምላሹን መስጠቱን ይቀጥላል። ስለዚህ VR ከፍተኛ የምላሽ መጠንን (High rates of responding) ያስጠናክራል።"
+},],
         4: [],
         5: []
 
