@@ -5072,7 +5072,523 @@ const quizData = {
     englishExplanation: "The goal of explanation goes beyond describing what happened. It seeks to understand why the behavior occurred by identifying its underlying causes.",
     amharicExplanation: "የማብራራት (explanation) ግብ ባህሪው ምን እንደሆነ ከመግለጽ በላይ ለምን እንደተከሰተ ለመረዳት የባህሪውን ዋና ምክንያቶች መለየት ነው።"
 }],
-        3: [],
+        3: [{
+    question: "Learning is directly observable change in behavior.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Learning is an internal process that is not directly observable; rather, it manifests through changes in a person's observable activities and behaviors.",
+    amharicExplanation:
+      "መማር በቀጥታ ሊታይ የሚችል የባህርይ ለውጥ አይደለም፤ ይልቁንም በግለሰቡ የሚታዩ ተግባራት እና ባህሪዎች ላይ በሚመጡ ለውጦች አማካኝነት ይገለጻል።"
+  },
+
+  {
+    question:
+      "Both Punishment and negative reinforcement increase the probability of behavior to occur.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Punishment (both positive and negative) is designed to decrease or weaken the likelihood of a behavioral response recurring, whereas negative reinforcement increases it.",
+    amharicExplanation:
+      "ቅጣት (አወንታዊም ሆነ አሉታዊ) የባህርይ ምላሽ የመድገም እድልን ለመቀነስ ወይም ለማዳከም ሲሰራ፣ አሉታዊ ማጠናከሪያ ግን የባህርይን የመከሰት እድል ይጨምራል።"
+  },
+
+  {
+    question:
+      "According to operant conditioning, learning is determined by consequence.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Operant conditioning states that voluntary behavior is strengthened or weakened based on the consequences (reinforcements or punishments) that follow it.",
+    amharicExplanation:
+      "በኦፕራንት ኮንዲሽነሪንግ (በድርጊት ትምህርት) መሠረት መማር የሚወሰነው በሚከተለው ውጤት (በማጠናከሪያ ወይም በቅጣት) ነው።"
+  },
+
+  {
+    question:
+      "Classical conditioning focuses on the learning of involuntary emotional or physiological responses to stimuli that normally elicit no response.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Classical conditioning is all about pairing unconditioned stimuli with neutral stimuli to create involuntary emotional or physiological reflex responses.",
+    amharicExplanation:
+      "ክላሲካል ኮንዲሽነሪንግ መጀመሪያ ላይ ምንም ምላሽ በማይሰጡ አነቃቂዎች ላይ ግዴታ ያልሆኑ ስሜታዊ ወይም የሰውነት አካል ምላሾችን በመማር ላይ ያተኩራል።"
+  },
+
+  {
+    question:
+      "All reinforcers whether it is positive or negative increases the likelihood of a behavioral response.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "By definition, any reinforcer—whether it adds a desirable stimulus (positive) or removes an aversive one (negative)—serves to strengthen and increase the future likelihood of a behavior.",
+    amharicExplanation:
+      "እንደ ፍቺው, ማንኛውም ማጠናከሪያ - አወንታዊ (የሚፈለግ ነገር በመጨመር) ይሁን አሉታዊ (አስቸጋሪ ነገርን በማስወገድ) - የባህርይን የወደፊት የመከሰት እድል ያጠናክራል እንዲሁም ይጨምራል።"
+  },
+
+  {
+    question:
+      "One of the differences between classical conditioning and operant conditioning theories of learning is that the former focuses on the learning of voluntary behavior.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The statement is false because the former (classical conditioning) focuses on involuntary behavior, while the latter (operant conditioning) focuses on voluntary behavior.",
+    amharicExplanation:
+      "ይህ አባባል የተሳሳተ ነው ምክንያቱም የመጀመሪያው (ክላሲካል ኮንዲሽነሪንግ) በፈቃደኝነት ላይ ያልተመሰረቱ (ግዴታ) ባህሪያት ላይ ሲያተኩር፣ ሁለተኛው (ኦፕራንት ኮንዲሽነሪንግ) በፈቃደኝነት ባህሪያት ላይ ያተኩራል።"
+  },
+
+  {
+    question:
+      "Continuous reinforcement schedule leads to faster learning than intermittent.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Reinforcing a behavior every single time it occurs (continuous schedule) results in the most rapid initial learning compared to intermittent (partial) reinforcement.",
+    amharicExplanation:
+      "አንድ ባህሪ በተከሰተ ቁጥር ማጠናከሪያ መስጠት (ቀጣይነት ያለው ማጠናከሪያ) ከጊዜያዊ ማጠናከሪያ ጋር ሲወዳደር ፈጣን የሆነ ትምህርት እንዲኖር ያስችላል።"
+  },
+
+  {
+    question:
+      "According to Pavlov, avoidant learning is the means to get relief from a aversive situation.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "An avoidance response prevents an aversive stimulus from occurring, which acts as a form of negative reinforcement helping an individual escape or find relief.",
+    amharicExplanation:
+      "በፓቭሎቭ ንድፈ ሃሳብ መሰረት፣ ከጉዳት ወይም አስቸጋሪ ሁኔታ ማምለጥ ወይም እፎይታ ማግኘት የመከላከል/የማስወገድ ትምህርት (avoidant learning) አካል ነው።"
+  },
+
+  {
+    question:
+      "In operant conditioning, the organism reacts voluntarily to environmental stimulus.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Operant conditioning involves behaviors that are voluntary and influenced and shaped by the environmental consequences they produce.",
+    amharicExplanation:
+      "በኦፕራንት ኮንዲሽነሪንግ ውስጥ ፍጡሩ በአካባቢያዊ አነቃቂዎች ላይ በፈቃደኝነት ምላሽ ይሰጣል፣ ባህሪውም በሚያስከትላቸው ውጤቶች ይስተካከላል።"
+  },
+
+  {
+    question:
+      "If an organization offers money to workers to increase work performance, the organization applied a primary reinforcer.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Money is a secondary (conditioned) reinforcer, not a primary one, because its value is learned and derived from primary reinforcers rather than satisfying basic biological needs inherently.",
+    amharicExplanation:
+      "ገንዘብ ቀዳሚ (primary) ማጠናከሪያ ሳይሆን ሁለተኛ ደረጃ (conditioned) ማጠናከሪያ ነው፤ ምክንያቱም ዋጋውን የሚያገኘው ከቀዳሚ ማጠናከሪያዎች ጋር ባለው ቁርኝት እንጂ በራሱ መሠረታዊ ባዮሎጂያዊ ፍላጎቶችን በቀጥታ ስለሚያሟላ አይደለም።"
+  },
+
+  {
+    question:
+      "Fixed ratio-schedule of reinforcement is more resistant to extinction than variable-ratio schedule.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The variable-ratio schedule is actually more resistant to extinction than a fixed-ratio schedule because the number of responses required changes unpredictably, keeping the organism guessing.",
+    amharicExplanation:
+      "ተለዋዋጭ የሬሾ የጊዜ ሰሌዳ (variable-ratio) ከቋሚ የሬሾ ሰሌዳ (fixed-ratio) ይልቅ አለመጥፋት (resistance to extinction) የማሳየት ዕድሉ የላቀ ነው፤ ምክንያቱም የሚጠበቀው ምላሽ ቁጥር የማይታወቅ እና ተለዋዋጭ ስለሆነ።"
+  },
+
+  {
+    question:
+      "A freshman student who studied hard to get good grades is an example of secondary reinforcement.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Good grades and academic success are secondary reinforcers because they acquire value through their association with primary outcomes and future opportunities.",
+    amharicExplanation:
+      "ጥሩ ውጤት ለማግኘት ጠንክሮ ማጥናት የሁለተኛ ደረጃ ማጠናከሪያ (secondary reinforcement) ምሳሌ ነው፤ ምክንያቱም ውጤቱ ከቀጣይ ስኬቶች ጋር ተያይዞ ዋጋ ስለሚያገኝ ነው።"
+  },
+
+  {
+    question:
+      "Which schedule of reinforcement does not specify fixed number, rather states the requirement in terms of an average?",
+    options: [
+      "Variable Ratio Schedule",
+      "Variable Interval Schedule",
+      "Fixed Interval Schedule",
+      "None of the above"
+    ],
+    answer: 0,
+    englishExplanation:
+      "A variable ratio schedule reinforces behavior after an unpredictable, average number of responses (e.g., gambling slot machines).",
+    amharicExplanation:
+      "ተለዋዋጭ የሬሾ ሰሌዳ (Variable Ratio Schedule) የተወሰነ የቁጥር ገደብ ሳያስቀምጥ፣ በአማካይ ቁጥር ላይ ተመስርቶ ሽልማት የሚሰጥበት የጊዜ ሰሌዳ ነው።"
+  },
+
+  {
+    question:
+      "Suppose you receive a reward from your Communicative English teacher after a certain number of compositions submitted, sometimes five compositions are necessary, sometimes two, and sometimes eight. This is an example of ---------- schedule.",
+    options: [
+      "Variable-ratio",
+      "Variable-interval",
+      "Fixed-interval",
+      "Fixed-ratio"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Since the reward is given after a changing, unpredictable number of submitted compositions (averaging out), it represents a variable-ratio schedule.",
+    amharicExplanation:
+      "ሽልማቱ የሚሰጠው በተለዋዋጭ እና በማይታወቅ የጽሁፎች ብዛት (አንዴ 5፣ አንዴ 2፣ አንዴ 8) ላይ ተመስርቶ ስለሆነ ይህ የተለዋዋጭ ሬሾ (variable-ratio) ሰሌዳ ነው።"
+  },
+
+  {
+    question:
+      "A bakery gives customers a free pastry after every 6 pastry purchases. This is an example of what kind of reinforcement schedule?",
+    options: [
+      "Fixed ratio",
+      "Fixed interval",
+      "Variable interval",
+      "Variable ratio"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The reward is given after an exact, unvarying number of purchases (every 6 pastries), which defines a fixed-ratio schedule.",
+    amharicExplanation:
+      "የዳቦ መጋገሪያው ቦታ እያንዳንዱ 6ኛ ግዢ ሲፈጸም ነጻ ዳቦ የሚሰጠው በተወሰነና በማይለዋወጥ የቁጥር መጠን (fixed number) ላይ በመመስረት ስለሆነ ይህ ቋሚ ሬሾ (fixed ratio schedule) ይባላል።"
+  },
+
+  {
+    question:
+      "The schedule of reinforcement associated with playing slot machines and other types of gambling is:",
+    options: [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Slot machines reward players after a variable and unpredictable number of plays, making variable ratio the schedule behind gambling.",
+    amharicExplanation:
+      "ቁማር መጫወቻ ማሽኖች እና ሌሎች የዕድል ጨዋታዎች የሚሰሩት በተለዋዋጭ እና በማይታወቅ የሙከራ ቁጥር ላይ በመሆኑ ከተለዋዋጭ ሬሾ (variable ratio) ማጠናከሪያ ጋር ይያያዛሉ።"
+  },
+
+  {
+    question:
+      "Whenever behaviour is not correlated to any specific eliciting stimuli, it is:",
+    options: [
+      "Operant Behaviour",
+      "Modified Behaviour",
+      "Respondent Behaviour",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Operant behaviors are voluntary actions that are not triggered automatically by a specific eliciting stimulus, but are instead controlled by their consequences.",
+    amharicExplanation:
+      "ባህሪው ከየትኛውም የተለየ አነቃቂ ጋር ቀጥተኛ ግንኙነት ከሌለው እና በፈቃደኝነት የሚከናወን ከሆነ ኦፕራንት ባህሪ (Operant Behaviour) ይባላል።"
+  },
+
+  {
+    question:
+      "In which one of the following assumptions classical and operant conditionings are similar?",
+    options: [
+      "The impact of unconditioned stimulus",
+      "The effect of punishment and reinforcement",
+      "Impact of environment on learners' behavior",
+      "Voluntarily response of the learner"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Both classical and operant conditioning share the fundamental behaviorist assumption that learning is heavily shaped and influenced by environmental factors.",
+    amharicExplanation:
+      "ክላሲካል እና ኦፕራንት ኮንዲሽነሪንግ ተመሳሳይነት ያላቸው በባህሪ ትምህርት ጽንሰ-ሀሳብ ሲሆን፣ ሁለቱም በአካባቢ ሁኔታዎች በለማጅ ባህሪ ላይ የሚኖረውን ተጽዕኖ ማዕከል ያደርጋሉ።"
+  },
+
+  {
+    question:
+      "In operant conditioning, the organism reacts voluntarily to environmental stimulus.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "This core premise of operant conditioning explains that organisms emit voluntary behaviors to act upon and adapt to their surrounding environment.",
+    amharicExplanation:
+      "በኦፕራንት ኮንዲሽነሪንግ ውስጥ ፍጡሩ ከአካባቢያዊ ማነቃቂያዎች ጋር ለመላመድ በፈቃደኝነት ምላሽ ይሰጣል።"
+  },
+
+  {
+    question:
+      "Giving a student extra homework after they misbehave in class is an example of:",
+    options: [
+      "positive punishment",
+      "negative punishment",
+      "positive reinforcement",
+      "negative reinforcement"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Positive punishment involves adding an unpleasant or aversive stimulus (extra homework) following a behavior to decrease the likelihood of that misbehavior happening again.",
+    amharicExplanation:
+      "ተማሪው ክፍል ውስጥ ስህተት ሲሰራ ተጨማሪ የቤት ስራ መስጠት አወንታዊ ቅጣት (positive punishment) ይባላል፤ ምክንያቱም የማይፈለግ ባህሪን ለመቀነስ ሲባል አዲስ መጥፎ/አስቸጋሪ ነገር በመጨመር ይቀጣል።"
+  },{
+  question:
+    "A girl was visiting kitchen while her mother was preparing food for the family. When mother left home away, the girl copied to prepare food. The girl learned this skill through:",
+  options: [
+    "Operant conditioning",
+    "Latent learning",
+    "Insight learning",
+    "Classical conditioning"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Latent learning is learning that occurs without any immediate reward or explicit reinforcement and is only demonstrated when there is motivation to use it. The girl watched her mother cook and stored the knowledge, then demonstrated it later when she needed to prepare food.",
+  amharicExplanation:
+    "ድብቅ ትምህርት (Latent learning) ማለት ወዲያውኑ ሽልማት ወይም ማጠናከሪያ ሳይኖር የሚከናወን ትምህርት ሲሆን፣ ሰውዬው በኋላ ሲያስፈልገው ያንን ትምህርት በተግባር ያሳያል። ልጂቷ እናቷን ስትሰራ በመመልከት እውቀቱን ተምራ በኋላ ምግብ ማዘጋጀት ስታስፈልጋት ተግባራዊ አደረገች።"
+},
+
+ {
+  question:
+    "Meron was bitten by a black dog when she was a child. Prior to being bitten, Meron enjoyed playing with dogs and was not afraid of them. Ever since, Meron becomes fearful when she sees any dog. This is:",
+  options: [
+    "Discrimination",
+    "Stimulus generalization",
+    "Extinction",
+    "Spontaneous recovery"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Stimulus generalization occurs when a learned response to one stimulus is extended to other similar stimuli. Meron was bitten by one black dog, but she now becomes fearful when she sees any dog.",
+  amharicExplanation:
+    "Stimulus generalization (የማነቃቂያ መስፋፋት) ማለት ከአንድ የተወሰነ ማነቃቂያ የተማርነውን ምላሽ ወደ ሌሎች ተመሳሳይ ማነቃቂያዎች ማስፋፋት ነው። ሜሮን በአንድ ጥቁር ውሻ ከተነከሰች በኋላ ሁሉንም ውሾች መፍራት ጀመረች።"
+},
+
+ {
+  question:
+    "On a recent visit to the doctor, Kedir was given a painful injection. Since then, Kedir not only refuses to go to the same doctor, but also will not go to see any doctor or dentist. Kedir's refusal behavior is an example of:",
+  options: [
+    "Stimulus generalization",
+    "Stimulus discrimination",
+    "Extinction",
+    "Punishment"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Kedir generalized his fear of the doctor who gave him a painful injection to other doctors and dentists. This is an example of stimulus generalization.",
+  amharicExplanation:
+    "ኬድር ከህመም የሚያመጣ መርፌ ከተሰጠው አንድ ሐኪም የተማረውን ፍርሃት ወደ ሌሎች ሐኪሞችና የጥርስ ሐኪሞች ሁሉ ስላስፋፋው ይህ Stimulus generalization (የማነቃቂያ መስፋፋት) ይባላል።"
+},
+
+{
+  question:
+    "A dog wiggles its tail when it is given milk. For conditioning purposes, the dog was given milk following a light bulb for many repeated times, and then the dog learned to wiggle its tail to the light bulb. In this case, which one of the following is the unconditioned stimulus?",
+  options: [
+    "Milk",
+    "Light bulb",
+    "The dog wiggles its tail when it gets milk",
+    "The dog wiggles its tail when seeing the light bulb",
+    "None"
+  ],
+  answer: 0,
+  englishExplanation:
+    "An unconditioned stimulus (US) is a stimulus that naturally and automatically produces a response without prior learning. Milk naturally produces the dog's response, so milk is the unconditioned stimulus.",
+  amharicExplanation:
+    "ያልተለመደ ማነቃቂያ (Unconditioned stimulus) ማለት ሳይማሩት በተፈጥሮ ምላሽን የሚያመጣ ማነቃቂያ ነው። ወተት ውሻው በተፈጥሮ ምላሽ እንዲሰጥ ስለሚያደርግ ወተት የዚህ ሙከራ ያልተለመደ ማነቃቂያ ነው።"
+},
+
+{
+  question:
+    "A dog wiggles its tail when it is given milk. For conditioning purposes, the dog was given milk following a light bulb for many repeated times, and then the dog learned to wiggle its tail to the light bulb. In this case, which one of the following is the conditioned stimulus?",
+  options: [
+    "Milk",
+    "Light bulb",
+    "The dog wiggles its tail when it gets milk",
+    "The dog wiggles its tail when seeing the light bulb",
+    "None"
+  ],
+  answer: 1,
+  englishExplanation:
+    "A conditioned stimulus (CS) is a previously neutral stimulus that, after being repeatedly paired with an unconditioned stimulus, produces a learned response. The light bulb becomes the conditioned stimulus.",
+  amharicExplanation:
+    "የተለመደ ማነቃቂያ (Conditioned stimulus) ማለት መጀመሪያ ላይ ገለልተኛ የነበረ ነገር ከያልተለመደ ማነቃቂያ ጋር በተደጋጋሚ ከተጣመረ በኋላ የተማረ ምላሽ እንዲከሰት የሚያደርግ ነው። በዚህ ምሳሌ የመብራት ብርሃን (Light bulb) የተለመደ ማነቃቂያ ሆኗል።"
+},
+
+{
+  question:
+    "A dog wiggles its tail when it is given milk. For conditioning purposes, the dog was given milk following a light bulb for many repeated times, and then the dog learned to wiggle its tail to the light bulb. In this case, which one of the following is the unconditioned response?",
+  options: [
+    "Milk",
+    "Light bulb",
+    "The dog wiggles its tail when it gets milk",
+    "The dog wiggles its tail when seeing the light bulb",
+    "None"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The unconditioned response (UR) is the natural, unlearned response to an unconditioned stimulus. The dog naturally wiggles its tail when it receives milk.",
+  amharicExplanation:
+    "ያልተለመደ ምላሽ (Unconditioned response) ማለት ከያልተለመደ ማነቃቂያ በኋላ ያለ ቀድሞ ትምህርት በተፈጥሮ የሚከሰት ምላሽ ነው። ውሻው ወተት ሲያገኝ ጅራቱን ማወዛወዙ ያልተለመደ ምላሽ ነው።"
+},
+
+{
+  question:
+    "A dog wiggles its tail when it is given milk. For conditioning purposes, the dog was given milk following a light bulb for many repeated times, and then the dog learned to wiggle its tail to the light bulb. In this case, which one of the following is the conditioned response?",
+  options: [
+    "Milk",
+    "Light bulb",
+    "The dog wiggles its tail when it gets milk",
+    "The dog wiggles its tail when seeing the light bulb",
+    "None"
+  ],
+  answer: 3,
+  englishExplanation:
+    "The conditioned response (CR) is the learned response to the conditioned stimulus. After conditioning, the dog wiggles its tail when it sees the light bulb.",
+  amharicExplanation:
+    "የተለመደ ምላሽ (Conditioned response) ማለት ከተለመደ ማነቃቂያ ጋር በተያያዘ የተማረ ምላሽ ነው። ከተደጋጋሚ ማጣመር በኋላ ውሻው መብራቱን ብቻ ሲያይ ጅራቱን ማወዛወዙ የተለመደ ምላሽ ነው።"
+},
+
+ {
+  question:
+    "You behave the way you do entirely because of innate biological factors.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Human behavior is not determined entirely by innate biological factors. Behavior is influenced by the interaction between biological factors and environmental experiences.",
+  amharicExplanation:
+    "የሰው ልጅ ባህሪ ሙሉ በሙሉ በተፈጥሯዊ የባዮሎጂ ምክንያቶች ብቻ አይወሰንም። ባህሪ በባዮሎጂያዊ ምክንያቶችና በአካባቢያዊ ልምዶች መካከል ባለው ተጽዕኖ ይቀረጻል።"
+},
+
+{
+  question:
+    "In Pavlov's classic experiments, the CS was the food.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The statement is false. In Pavlov's classic conditioning experiment, food was the unconditioned stimulus (US), while the bell or tone became the conditioned stimulus (CS).",
+  amharicExplanation:
+    "አባባሉ ሐሰት ነው። በፓቭሎቭ የክላሲካል ኮንዲሽኒንግ ሙከራ ምግብ ያልተለመደ ማነቃቂያ (US) ነበር፤ ደወሉ ወይም ድምፁ ግን የተለመደ ማነቃቂያ (CS) ሆነ።"
+},
+
+{
+  question:
+    "If you are being rewarded after a predetermined time interval, you are on a fixed ratio schedule of reinforcement.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The statement is false. A predetermined time interval describes a fixed-interval schedule. A fixed-ratio schedule is based on a predetermined number of responses.",
+  amharicExplanation:
+    "አባባሉ ሐሰት ነው። ሽልማቱ የሚሰጠው በተወሰነ የጊዜ ክፍተት ከሆነ Fixed Interval ይባላል። Fixed Ratio ግን በተወሰነ የምላሽ ወይም የስራ ብዛት ላይ የተመሰረተ ነው።"
+},
+
+{
+  question:
+    "If your behavior causes the removal of an unpleasant stimulus, you have reinforced the behavior through the process of escape conditioning.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Escape conditioning occurs when a behavior removes or terminates an ongoing unpleasant stimulus. Because the unpleasant stimulus is removed, the behavior is reinforced and becomes more likely to occur again.",
+  amharicExplanation:
+    "Escape conditioning ማለት ቀጥሎ ያለን የማይመች ማነቃቂያ ለማስወገድ የምንፈጽመው ባህሪ ሲጠናከር የሚከሰት ትምህርት ነው። የማይመቸው ነገር ስለሚወገድ ያ ባህሪ እንደገና የመከሰት እድሉ ይጨምራል።"
+},
+
+{
+  question:
+    "A negative consequence that leads to a reduction in the likelihood of a behavior is referred to as a punishment.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Punishment is a consequence that decreases the future likelihood of a behavior. It may involve adding an unpleasant stimulus or removing a pleasant stimulus.",
+  amharicExplanation:
+    "ቅጣት (Punishment) ማለት አንድ ባህሪ ወደፊት እንዳይደገም ወይም የመከሰት እድሉ እንዲቀንስ የሚያደርግ ውጤት ነው። ይህም የማይፈለግ ነገርን በመጨመር ወይም የሚፈለግ ነገርን በማስወገድ ሊከናወን ይችላል።"
+},
+
+ {
+  question:
+    "Classical conditioning generally involves involuntary behaviors controlled by the spinal cord or autonomic nervous system.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Classical conditioning generally involves involuntary or reflexive responses, such as salivation, blinking, and fear responses, which are associated with automatic physiological processes.",
+  amharicExplanation:
+    "ክላሲካል ኮንዲሽኒንግ በአጠቃላይ በፈቃድ ሳይሆን በራስ-ሰር የሚከናወኑ ምላሾችን ያካትታል። ለምሳሌ ምራቅ መፍሰስ፣ ዓይን መጥበብ እና የፍርሃት ምላሽ ያሉ ምላሾች ናቸው።"
+},
+
+ {
+  question:
+    "When an unrelated event causes an extinguished response to reappear, it is called spontaneous recovery.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The statement is false. Spontaneous recovery is the reappearance of a previously extinguished conditioned response after a period of rest or time has passed.",
+  amharicExplanation:
+    "አባባሉ ሐሰት ነው። Spontaneous recovery (ድንገተኛ መመለስ) ማለት ቀደም ሲል የጠፋ የተለመደ ምላሽ ከተወሰነ የጊዜ እረፍት በኋላ እንደገና መታየት ነው። ከሌላ ያልተዛመደ ክስተት የሚመጣ አይደለም።"
+},
+ {
+  question:
+    "A learning set enables individuals to learn insightfully.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "A learning set, sometimes described as learning how to learn, develops through previous experience and helps individuals solve new problems more effectively, including through insight.",
+  amharicExplanation:
+    "Learning set ማለት ከቀደምት ልምዶች በመነሳት አዲስ ችግሮችን በተሻለ መንገድ የመፍታት ችሎታን ማዳበር ነው። ይህ አዳዲስ ችግሮችን በInsight ወይም በአስተውሎት ለመፍታት ይረዳል።"
+}],
         4: [],
         5: []
 
