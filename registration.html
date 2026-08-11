@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Register | Unique Academic</title>
 
     <link rel="stylesheet" href="registration.css">
+
 </head>
 
+
 <body>
+
 
 <header class="register-header">
 
@@ -18,22 +27,32 @@
         <span class="brand-icon">🎓</span>
 
         <div>
+
             <h1>Unique Academic</h1>
+
             <p>BDU Learning Platform</p>
+
         </div>
 
     </div>
 
-    <a href="index.html" class="home-link">
+
+    <a
+        href="index.html"
+        class="home-link"
+    >
         🏠 Home
     </a>
 
 </header>
 
 
+
 <main class="registration-container">
 
+
 <section class="registration-card">
+
 
     <!-- INTRO -->
 
@@ -53,11 +72,16 @@
     </div>
 
 
+
     <!-- PROGRESS -->
 
     <div class="steps">
 
-        <div class="step active" id="stepIndicator1">
+
+        <div
+            class="step active"
+            id="stepIndicator1"
+        >
 
             <div class="step-number">
                 1
@@ -71,7 +95,10 @@
         <div class="step-line"></div>
 
 
-        <div class="step" id="stepIndicator2">
+        <div
+            class="step"
+            id="stepIndicator2"
+        >
 
             <div class="step-number">
                 2
@@ -85,7 +112,10 @@
         <div class="step-line"></div>
 
 
-        <div class="step" id="stepIndicator3">
+        <div
+            class="step"
+            id="stepIndicator3"
+        >
 
             <div class="step-number">
                 3
@@ -99,7 +129,10 @@
         <div class="step-line"></div>
 
 
-        <div class="step" id="stepIndicator4">
+        <div
+            class="step"
+            id="stepIndicator4"
+        >
 
             <div class="step-number">
                 4
@@ -112,11 +145,15 @@
     </div>
 
 
-    <!-- =========================
-         STEP 1
-    ========================== -->
 
-    <div class="form-step" id="personalStep">
+    <!-- =================================
+         STEP 1
+    ================================== -->
+
+    <div
+        class="form-step"
+        id="personalStep"
+    >
 
         <div class="section-heading">
 
@@ -222,8 +259,11 @@
             class="continue-btn"
             id="personalContinueBtn"
         >
+
             Continue
+
             <span>→</span>
+
         </button>
 
 
@@ -240,9 +280,10 @@
     </div>
 
 
-    <!-- =========================
+
+    <!-- =================================
          STEP 2
-    ========================== -->
+    ================================== -->
 
     <div
         class="form-step"
@@ -261,8 +302,6 @@
         </div>
 
 
-        <!-- PASSWORD -->
-
         <div class="form-group">
 
             <label for="password">
@@ -279,8 +318,6 @@
         </div>
 
 
-        <!-- CONFIRM PASSWORD -->
-
         <div class="form-group">
 
             <label for="confirmPassword">
@@ -296,8 +333,6 @@
 
         </div>
 
-
-        <!-- PASSWORD STRENGTH -->
 
         <div class="password-strength">
 
@@ -321,8 +356,6 @@
         </div>
 
 
-        <!-- REQUIREMENTS -->
-
         <div class="password-requirements">
 
             <h4>
@@ -344,8 +377,6 @@
         </div>
 
 
-        <!-- BUTTONS -->
-
         <div class="security-buttons">
 
             <button
@@ -362,22 +393,337 @@
                 class="continue-btn"
                 id="securityContinueBtn"
             >
+
                 Continue
+
                 <span>→</span>
+
             </button>
 
         </div>
 
     </div>
 
+
+
+    <!-- =================================
+         STEP 3 — PAYMENT
+    ================================== -->
+
+    <div
+        class="form-step"
+        id="paymentStep"
+        style="display:none;"
+    >
+
+
+        <div class="section-heading">
+
+            <h3>💳 Registration Payment</h3>
+
+            <p>
+                Complete your registration payment
+                to continue.
+            </p>
+
+        </div>
+
+
+
+        <!-- PRICE -->
+
+        <div class="fee-card">
+
+            <span class="fee-icon">
+                🎓
+            </span>
+
+            <div>
+
+                <p>
+                    Unique Academic Registration Fee
+                </p>
+
+                <h2>
+                    300 ETB
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PAYMENT NOTICE -->
+
+        <div class="payment-notice">
+
+            <strong>
+                ⚠️ Important
+            </strong>
+
+            <p>
+                Please pay exactly
+                <strong>300 ETB</strong>
+                using one of the payment methods below.
+            </p>
+
+        </div>
+
+
+
+        <!-- PAYMENT METHODS -->
+
+        <h3 class="payment-title">
+            Choose Payment Method
+        </h3>
+
+
+        <div class="payment-methods">
+
+
+            <!-- CBE -->
+
+            <button
+                type="button"
+                class="payment-method"
+                id="cbeMethod"
+            >
+
+                <span class="payment-icon">
+                    🏦
+                </span>
+
+                <span>
+
+                    <strong>
+                        CBE / CBE Birr
+                    </strong>
+
+                    <small>
+                        Commercial Bank of Ethiopia
+                    </small>
+
+                </span>
+
+                <span class="method-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+
+            <!-- TELEBIRR -->
+
+            <button
+                type="button"
+                class="payment-method"
+                id="telebirrMethod"
+            >
+
+                <span class="payment-icon">
+                    📱
+                </span>
+
+                <span>
+
+                    <strong>
+                        Telebirr
+                    </strong>
+
+                    <small>
+                        Mobile payment
+                    </small>
+
+                </span>
+
+                <span class="method-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- PAYMENT DETAILS -->
+
+        <div
+            id="paymentDetails"
+            class="payment-details"
+            style="display:none;"
+        >
+
+            <div class="selected-payment">
+
+                <span id="selectedPaymentIcon">
+                    🏦
+                </span>
+
+                <div>
+
+                    <strong id="selectedPaymentName">
+                        Payment
+                    </strong>
+
+                    <p>
+                        Send exactly
+                        <strong>300 ETB</strong>
+                        to:
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="account-number-box">
+
+                <span id="accountNumber">
+                    —
+                </span>
+
+                <button
+                    type="button"
+                    id="copyPaymentNumber"
+                >
+                    📋 Copy
+                </button>
+
+            </div>
+
+
+            <p class="payment-warning">
+
+                ⚠️ Make sure the payment information
+                is correct before sending your payment.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- REFERENCE -->
+
+        <div class="form-group payment-form">
+
+            <label for="paymentReference">
+
+                Payment Reference / Transaction Number
+
+            </label>
+
+            <input
+                type="text"
+                id="paymentReference"
+                placeholder="Enter your payment reference"
+            >
+
+            <small>
+                Enter the transaction/reference number
+                shown after your payment.
+            </small>
+
+        </div>
+
+
+
+        <!-- SCREENSHOT -->
+
+        <div class="form-group payment-form">
+
+            <label for="paymentScreenshot">
+
+                Payment Screenshot
+
+            </label>
+
+
+            <label
+                for="paymentScreenshot"
+                class="upload-box"
+            >
+
+                <span>
+                    📷
+                </span>
+
+                <strong>
+                    Upload Payment Screenshot
+                </strong>
+
+                <small>
+                    JPG, PNG or WEBP
+                </small>
+
+            </label>
+
+
+            <input
+                type="file"
+                id="paymentScreenshot"
+                accept="image/png,image/jpeg,image/webp"
+                hidden
+            >
+
+
+            <p
+                id="fileName"
+                class="file-name"
+            ></p>
+
+        </div>
+
+
+
+        <!-- PAYMENT BUTTONS -->
+
+        <div class="security-buttons">
+
+            <button
+                type="button"
+                class="back-btn"
+                id="backToSecurityBtn"
+            >
+
+                ← Back
+
+            </button>
+
+
+            <button
+                type="button"
+                class="continue-btn"
+                id="submitPaymentBtn"
+            >
+
+                Submit Payment
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+
 </section>
+
 
 
 <!-- SECURITY NOTICE -->
 
 <div class="security-notice">
 
-    <span>🔒</span>
+    <span>
+        🔒
+    </span>
 
     <div>
 
@@ -394,7 +740,9 @@
 
 </div>
 
+
 </main>
+
 
 
 <footer>
@@ -407,7 +755,9 @@
 </footer>
 
 
+
 <script src="registration.js"></script>
 
 </body>
+
 </html>
