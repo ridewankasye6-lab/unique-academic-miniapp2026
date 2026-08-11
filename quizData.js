@@ -6062,7 +6062,511 @@ const quizData = {
   amharicExplanation:
     "Variable Ratio (VR) Schedule ማለት ማጠናከሪያው ከተለዋዋጭና አስቀድሞ ካልታወቀ የምላሽ ብዛት በኋላ የሚሰጥበት ሂደት ነው። ቀጣዩ ምላሽ ሽልማት ሊያስገኝ ስለሚችል ሰውዬው ብዙ ጊዜ ምላሹን መስጠቱን ይቀጥላል። ስለዚህ VR ከፍተኛ የምላሽ መጠንን (High rates of responding) ያስጠናክራል።"
 },],
-        4: [],
+        4: [{
+  question: "Incoming sensory information must go through this sequence in order to be remembered.",
+  options: [
+    "Storage, encoding, retrieval",
+    "Retrieval, encoding, storage",
+    "Encoding, storage, retrieval",
+    "Retrieval, storage, encoding"
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: Memory cannot be stored before information is encoded into a usable format.",
+    "Incorrect: Information cannot normally be retrieved before it has been encoded and stored.",
+    "Correct: The information-processing sequence is encoding, storage, and retrieval. Encoding converts incoming information into a form that can be processed, storage maintains it over time, and retrieval brings it back when needed.",
+    "Incorrect: This reverses the normal sequence of memory processing."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ መረጃ መጀመሪያ ሳይመሰጠር (encoding) ሊከማች (storage) አይችልም።",
+    "ስህተት፦ መረጃ ከመመስጠሩና ከመከማቸቱ በፊት በቀጥታ ማውጣት (retrieval) አይቻልም።",
+    "ትክክል፦ የትውስታ ሂደቱ Encoding → Storage → Retrieval ነው። መጀመሪያ መረጃው ይመሰጠራል፣ ከዚያ ይከማቻል፣ በመጨረሻም ሲያስፈልግ ከትውስታ ይወጣል።",
+    "ስህተት፦ ይህ የትውስታ ሂደቱን ቅደም ተከተል ግልብጥ አድርጎ ያቀርባል።"
+  ]
+},
+
+{
+  question: "An alternative name for short-term memory is:",
+  options: [
+    "Episodic memory",
+    "Semantic memory",
+    "Working memory",
+    "Declarative memory"
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: Episodic memory is a type of long-term declarative memory involving personal experiences.",
+    "Incorrect: Semantic memory is long-term memory for facts, meanings, and general knowledge.",
+    "Correct: Working memory refers to the system that temporarily holds and actively processes information. It is closely associated with short-term memory.",
+    "Incorrect: Declarative memory is conscious long-term memory for facts and events."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Episodic memory የግል ልምዶችንና ክስተቶችን የሚያስታውስ የረጅም ጊዜ ትውስታ ነው።",
+    "ስህተት፦ Semantic memory እውነታዎችን፣ ትርጉሞችንና አጠቃላይ እውቀትን የሚይዝ የረጅም ጊዜ ትውስታ ነው።",
+    "ትክክል፦ Working memory መረጃን ለጊዜው ይዞ በንቃት የሚያስኬድ የትውስታ ስርዓት ነው። ከShort-term memory ጋር በጣም የተቆራኘ ነው።",
+    "ስህተት፦ Declarative memory በንቃተ-ህሊና ልናስታውሰው የምንችለው የረጅም ጊዜ ትውስታ ነው።"
+  ]
+},
+
+{
+  question: "Which of the following memory is considered as a working memory?",
+  options: [
+    "Long term memory",
+    "Short term memory",
+    "Sensory memory",
+    "Procedural memory"
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Long-term memory stores information for long periods of time.",
+    "Correct: Short-term memory is closely associated with working memory because it temporarily holds information that is actively being processed.",
+    "Incorrect: Sensory memory briefly retains raw sensory information.",
+    "Incorrect: Procedural memory is long-term implicit memory for skills and procedures."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Long-term memory መረጃን ለረጅም ጊዜ የሚያከማች ትውስታ ነው።",
+    "ትክክል፦ Short-term memory መረጃን ለጊዜው ይዞ በንቃት ከመረጃው ጋር ለመስራት ከሚያስችለው Working memory ጋር የተቆራኘ ነው።",
+    "ስህተት፦ Sensory memory ከስሜት ህዋሳት የሚመጣ መረጃን ለበጣም አጭር ጊዜ ይይዛል።",
+    "ስህተት፦ Procedural memory እንደ መንዳት ያሉ ክህሎቶችንና ሂደቶችን የሚያስታውስ የረጅም ጊዜ ትውስታ ነው።"
+  ]
+},
+
+{
+  question: "'Repression' is the example of:",
+  options: [
+    "Forgetting",
+    "Motivated forgetting",
+    "Retrieval problems",
+    "All of the above"
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Forgetting is a broad term, whereas repression is a specific proposed mechanism.",
+    "Correct: Repression is associated with motivated forgetting, in which painful or anxiety-provoking memories are pushed outside conscious awareness.",
+    "Incorrect: Retrieval problems occur when stored information cannot be accessed, often because appropriate retrieval cues are unavailable.",
+    "Incorrect: The specific answer is motivated forgetting, not all of the choices."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Forgetting አጠቃላይ የመርሳት ቃል ነው፤ Repression ግን የተለየ የስነ-ልቦና ሂደት ነው።",
+    "ትክክል፦ Repression ከMotivated forgetting ጋር ይያያዛል። አሰቃቂ ወይም ጭንቀት የሚፈጥሩ ትውስታዎች ከንቃተ-ህሊና እንዲወጡ መገፋትን ያመለክታል።",
+    "ስህተት፦ Retrieval problem ማለት መረጃው በትውስታ ውስጥ ቢኖርም ተገቢው የማስታወሻ ምልክት ባለመኖሩ ማውጣት አለመቻል ነው።",
+    "ስህተት፦ ትክክለኛው መልስ Motivated forgetting ብቻ ነው።"
+  ]
+},
+
+{
+  question: "The type of forgetting theory that we most probably use to forget the death of our loved partner is:",
+  options: [
+    "Cue dependent theory of forgetting",
+    "Motivated theory of forgetting",
+    "Decay theory of forgetting",
+    "Interference theory of forgetting"
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Cue-dependent forgetting occurs when information is stored but the appropriate retrieval cues are missing.",
+    "Correct: Motivated forgetting explains forgetting that is influenced by emotional or psychological motives, such as trying to avoid painful memories.",
+    "Incorrect: Decay theory explains forgetting as a weakening of memory over time or through lack of use.",
+    "Incorrect: Interference theory explains forgetting when other memories interfere with the retrieval of information."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Cue-dependent forgetting የሚከሰተው መረጃው ተከማችቶ ነገር ግን የማስታወሻ ምልክት ሲጠፋ ነው።",
+    "ትክክል፦ Motivated forgetting በስሜታዊ ወይም በስነ-ልቦና ምክንያት ከሚፈጠር መርሳት ጋር ይያያዛል። ለምሳሌ ከባድ ህመም የሚፈጥር ትውስታን ማስወገድ።",
+    "ስህተት፦ Decay theory መረጃ በጊዜ ሂደት ወይም ባለመጠቀም እየደበዘዘ መሄዱን ያብራራል።",
+    "ስህተት፦ Interference theory ሌሎች ትውስታዎች አንዱን መረጃ ከሌላው ጋር በመረበሽ የሚፈጠርን መርሳት ያብራራል።"
+  ]
+},
+
+{
+  question: "Which of the following is NOT the best strategy to enhance memory?",
+  options: [
+    "Paying attention",
+    "Over learning",
+    "Mass learning",
+    "Rehearsal",
+    "B and C"
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: Paying attention improves encoding and helps information enter memory effectively.",
+    "Incorrect: Overlearning means continuing to practice after initial mastery, which can strengthen retention.",
+    "Correct: Mass learning or cramming concentrates learning into one period and is generally less effective for long-term retention than distributed practice.",
+    "Incorrect: Rehearsal, especially when used effectively, can help maintain and strengthen memory.",
+    "Incorrect: Overlearning is generally useful, while mass learning is the poor strategy in this question."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ ትኩረት መስጠት መረጃን በትክክል ለመመስጠርና ለማስታወስ ይረዳል።",
+    "ስህተት፦ Overlearning ከተማሩ በኋላም መረጃውን መደጋገም ሲሆን ትውስታን ያጠናክራል።",
+    "ትክክል፦ Mass learning ማለት ትምህርትን በአንድ ጊዜ አጭቆ መማር ነው። ለረጅም ጊዜ ትውስታ ከተከፋፈለ ጥናት ያነሰ ውጤታማ ነው።",
+    "ስህተት፦ Rehearsal መረጃን በመደጋገም በትውስታ ውስጥ ለማቆየት ይረዳል።",
+    "ስህተት፦ Overlearning ጠቃሚ የትውስታ ማጠናከሪያ ዘዴ ነው፤ ችግሩ Mass learning ነው።"
+  ]
+},
+
+{
+  question: "Among the following, choose which one will not be the mechanism for improving memory.",
+  options: [
+    "Abstract way of learning",
+    "Chunking",
+    "Reducing interference",
+    "Over learning",
+    "None",
+    "All"
+  ],
+  answer: 0,
+
+  englishExplanation: [
+    "Correct: Learning information in an overly abstract or vague way can make encoding and remembering more difficult. Meaningful and concrete connections are generally more helpful.",
+    "Incorrect: Chunking groups information into meaningful units and can improve memory capacity.",
+    "Incorrect: Reducing interference can make it easier to retain and retrieve information.",
+    "Incorrect: Overlearning, or continued practice after mastery, can strengthen retention.",
+    "Incorrect: This cannot be the answer because there is a specific choice that does not represent a useful memory-improvement mechanism.",
+    "Incorrect: Not all of the listed choices are ineffective; chunking, reducing interference, and overlearning can improve memory."
+  ],
+
+  amharicExplanation: [
+    "ትክክል፦ መረጃን በጣም ረቂቅና ግልጽ ባልሆነ መንገድ መማር መረጃውን መመስጠርና ማስታወስ አስቸጋሪ ሊያደርግ ይችላል።",
+    "ስህተት፦ Chunking መረጃን ወደ ትርጉም ያላቸው ቡድኖች መከፋፈል ሲሆን ትውስታን ያሻሽላል።",
+    "ስህተት፦ Reducing interference የሚያስተጓጉሉ መረጃዎችን በመቀነስ ማስታወስን ያሻሽላል።",
+    "ስህተት፦ Overlearning ከተማሩ በኋላ መረጃውን መደጋገም ሲሆን ትውስታን ያጠናክራል።",
+    "ስህተት፦ ከምርጫዎቹ ውስጥ ትክክለኛ ያልሆነ ዘዴ ስለሚኖር እዚህ None መሆን አይችልም።",
+    "ስህተት፦ ሁሉም ምርጫዎች የማይጠቅሙ አይደሉም፤ Chunking፣ reducing interference እና overlearning ትውስታን ሊያሻሽሉ ይችላሉ።"
+  ]
+},
+
+{
+  question: "Which theory of forgetting best explains the type of forgetting due to non-use of information?",
+  options: [
+    "Cue dependent",
+    "Motivated",
+    "Decay",
+    "Interference"
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: Cue-dependent forgetting occurs when information is stored but appropriate retrieval cues are unavailable.",
+    "Incorrect: Motivated forgetting involves psychological or emotional motives for failing to remember information.",
+    "Correct: Decay theory proposes that memory traces weaken over time, especially when information is not used or rehearsed.",
+    "Incorrect: Interference occurs when competing information makes it difficult to remember something."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Cue-dependent forgetting መረጃው በትውስታ ውስጥ ቢኖርም ተገቢው የማስታወሻ ምልክት ሲጠፋ የሚከሰት ነው።",
+    "ስህተት፦ Motivated forgetting በስሜታዊ ወይም በስነ-ልቦና ምክንያት የሚፈጠር መርሳት ነው።",
+    "ትክክል፦ Decay theory መረጃን ሳንጠቀምበት ወይም ሳንደጋግመው በጊዜ ሂደት የትውስታ ምልክቱ እየደበዘዘ እንደሚሄድ ያብራራል።",
+    "ስህተት፦ Interference ሌሎች መረጃዎች የቀድሞ መረጃን ማስታወስ ሲያስቸግሩ የሚፈጠር ነው።"
+  ]
+},
+
+{
+  question: "The theory of forgetting that explains information which is not used now and then fades away with nothing left behind is:",
+  options: [
+    "Cue dependent",
+    "Displacement",
+    "Interference",
+    "Decay"
+  ],
+  answer: 3,
+
+  englishExplanation: [
+    "Incorrect: Cue-dependent forgetting means the information may still be stored but cannot be retrieved because appropriate cues are missing.",
+    "Incorrect: Displacement occurs when new information pushes older information out of short-term memory.",
+    "Incorrect: Interference occurs when other information competes with or disrupts the retrieval of a memory.",
+    "Correct: Decay theory explains forgetting as the fading or weakening of memory traces over time when information is not used."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Cue-dependent forgetting መረጃው ተከማችቶ ቢኖርም የማስታወሻ ምልክት በማጣት ማውጣት አለመቻል ነው።",
+    "ስህተት፦ Displacement አዲስ መረጃ የአጭር ጊዜ ትውስታ ውስን አቅምን በመጠቀም የቆየውን መረጃ ሲያስወጣ የሚከሰት ነው።",
+    "ስህተት፦ Interference ሌሎች መረጃዎች ከትውስታው ጋር በመረበሽ ማስታወስን ሲያስቸግሩ የሚፈጠር ነው።",
+    "ትክክል፦ Decay theory መረጃ ጥቅም ላይ ሳይውል ጊዜ እያለፈ ሲሄድ የትውስታ ምልክቱ እየደበዘዘ እንደሚሄድ ያብራራል።"
+  ]
+},
+
+{
+  question: "According to ______ theory of forgetting, painful experiences and forbidden wishes are pushed into the unconscious mind.",
+  options: [
+    "Decay",
+    "Interference",
+    "Motivated",
+    "Cue dependent"
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: Decay explains forgetting through weakening of memory traces over time.",
+    "Incorrect: Interference explains forgetting caused by competing information or memories.",
+    "Correct: Motivated forgetting, particularly the psychoanalytic concept of repression, proposes that painful experiences and forbidden wishes may be pushed out of conscious awareness.",
+    "Incorrect: Cue-dependent forgetting involves difficulty retrieving information because appropriate retrieval cues are unavailable."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Decay መረጃ በጊዜ ሂደት እየደበዘዘ መሄዱን ያብራራል።",
+    "ስህተት፦ Interference የሚከሰተው ተፎካካሪ መረጃዎች እርስ በርስ ሲረባበሹ ነው።",
+    "ትክክል፦ Motivated forgetting በተለይም Repression የሚባለው ሂደት አሰቃቂ ልምዶችንና የተከለከሉ ምኞቶችን ከንቃተ-ህሊና ውጭ ማድረግን ያብራራል።",
+    "ስህተት፦ Cue-dependent forgetting ተገቢው የማስታወሻ ምልክት ሲጠፋ መረጃን ማውጣት አለመቻልን ያመለክታል።"
+  ]
+},
+
+{
+  question: "You have been studying General Psychology up to now, but after this semester, there might only be few opportunities to apply your knowledge of this course. Thus forgetting may occur. This form of forgetting is best described in ______ theory.",
+  options: [
+    "Interference",
+    "Decay",
+    "Displacement",
+    "Cue dependent"
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Interference occurs when other memories or information compete with the information being remembered.",
+    "Correct: Decay theory explains that information may fade over time when it is not used or rehearsed.",
+    "Incorrect: Displacement occurs when new information pushes information out of short-term memory.",
+    "Incorrect: Cue-dependent forgetting occurs when the memory exists but appropriate retrieval cues are unavailable."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Interference አዲስ ወይም ሌላ መረጃ የሚፈለገውን መረጃ ማስታወስ ሲያስቸግር የሚከሰት ነው።",
+    "ትክክል፦ Decay theory መረጃን ለረጅም ጊዜ ሳንጠቀምበት ወይም ሳንደጋግመው በጊዜ ሂደት እየደበዘዘ እንደሚሄድ ያብራራል።",
+    "ስህተት፦ Displacement አዲስ መረጃ የቆየውን መረጃ ከShort-term memory ሲያስወጣ የሚፈጠር ነው።",
+    "ስህተት፦ Cue-dependent forgetting መረጃው በትውስታ ውስጥ ቢኖርም የማስታወሻ ምልክት በማጣት ማውጣት አለመቻል ነው።"
+  ]
+},
+
+{
+  question: "Forgetting occurs when we lack retrieval signals for an entry in the mind's library is explained by ______ theory.",
+  options: [
+    "Motivated forgetting theory",
+    "Displacement theory",
+    "Cue dependent theory",
+    "Interference theory"
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: Motivated forgetting involves psychological motives that affect remembering.",
+    "Incorrect: Displacement describes information being pushed out of short-term memory by new information.",
+    "Correct: Cue-dependent theory explains that information may be stored in memory but cannot be retrieved because the appropriate retrieval cue or signal is missing.",
+    "Incorrect: Interference involves competing memories or information disrupting retrieval."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Motivated forgetting በስሜታዊ ወይም በስነ-ልቦና ምክንያት የሚፈጠር መርሳት ነው።",
+    "ስህተት፦ Displacement አዲስ መረጃ የቆየውን መረጃ ከShort-term memory ሲያስወጣ የሚፈጠር ነው።",
+    "ትክክል፦ Cue-dependent theory መረጃው በአእምሮ ውስጥ ተከማችቶ ቢኖርም የማስታወሻ ምልክት (retrieval cue) በማጣት ማስታወስ እንደማንችል ያብራራል።",
+    "ስህተት፦ Interference ሌሎች መረጃዎች የሚፈለገውን ትውስታ ማውጣት ሲያስቸግሩ የሚከሰት ነው።"
+  ]
+},
+
+{
+  question: "One key difference between sensory memory and short-term memory is that:",
+  options: [
+    "The information in sensory memory fades in one or two seconds, while short-term memories last several hours.",
+    "Short-term memories can be described, while sensory memories cannot.",
+    "The quality and detail of sensory memory are far superior to those of short-term memory.",
+    "Sensory memory stores auditory information, while short-term memory stores visual information."
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Short-term memory generally lasts only seconds without rehearsal, not several hours.",
+    "Correct: Short-term memory contains information that has received attention and can generally be consciously described, whereas sensory memory briefly holds raw sensory information.",
+    "Incorrect: Although sensory memory can preserve rich sensory detail briefly, this is not the intended key distinction in this question.",
+    "Incorrect: Both sensory and short-term memory can involve different types of information, including visual and auditory information."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Short-term memory ብዙ ሰዓታት አይቆይም፤ በአብዛኛው ለጥቂት ሰከንዶች ይቆያል።",
+    "ትክክል፦ Short-term memory በትኩረት የተያዘ መረጃ ስለሆነ በንቃተ-ህሊና ሊገለጽ ይችላል። Sensory memory ግን ጥሬ የስሜት መረጃን ለአጭር ጊዜ ይይዛል።",
+    "ስህተት፦ Sensory memory ብዙ የስሜት ዝርዝር መረጃ በአጭር ጊዜ ሊይዝ ቢችልም ይህ በዚህ ጥያቄ የተፈለገው ዋና ልዩነት አይደለም።",
+    "ስህተት፦ Sensory memory እና Short-term memory ሁለቱም የእይታና የመስማት መረጃን ሊያስተናግዱ ይችላሉ።"
+  ]
+},
+
+{
+  question: "The simplest way to maintain information in short-term memory is to repeat the information in a process called:",
+  options: [
+    "Chunking",
+    "Rehearsal",
+    "Revision",
+    "Recall"
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Chunking means grouping separate pieces of information into meaningful units.",
+    "Correct: Rehearsal involves repeating information to keep it active in short-term memory.",
+    "Incorrect: Revision means reviewing or studying material again; it is broader than the specific memory process of repetition.",
+    "Incorrect: Recall means retrieving information from memory."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ Chunking የተለያዩ መረጃዎችን ወደ ትርጉም ያላቸው ቡድኖች መከፋፈል ነው።",
+    "ትክክል፦ Rehearsal መረጃን በመደጋገም በShort-term memory ውስጥ ንቁ እንዲሆን የማድረግ ሂደት ነው።",
+    "ስህተት፦ Revision የተማሩትን እንደገና መከለስ ነው፤ ከRehearsal የበለጠ ሰፊ ትርጉም አለው።",
+    "ስህተት፦ Recall ማለት በትውስታ ውስጥ የተከማቸን መረጃ ከአእምሮ ማውጣት ነው።"
+  ]
+},
+
+{
+  question: "Short-term memory is sometimes referred to as working memory because:",
+  options: [
+    "In order to hold information in short-term memory, we must use it.",
+    "It takes effort to move information from sensory memory to short-term memory.",
+    "It is the only part of our memory system that we must actively engage to retrieve previously learned information.",
+    "Creating short-term memories is a difficult task requiring a lot of practice."
+  ],
+  answer: 0,
+
+  englishExplanation: [
+    "Correct: Working memory emphasizes the active use, maintenance, and manipulation of information that is currently being held in awareness.",
+    "Incorrect: Attention is important for transferring information from sensory memory, but this does not explain the term working memory.",
+    "Incorrect: Retrieving information from long-term memory can also require active cognitive processing.",
+    "Incorrect: Creating short-term memories is not inherently a difficult task requiring extensive practice."
+  ],
+
+  amharicExplanation: [
+    "ትክክል፦ Working memory የሚባለው መረጃን በአሁኑ ጊዜ ንቁ አድርጎ መያዝ፣ መጠቀምና ማስኬድ ስለሚያስፈልግ ነው።",
+    "ስህተት፦ መረጃ ከSensory memory ወደ Short-term memory ለመሄድ ትኩረት (attention) ያስፈልገዋል፤ ይህ ግን Working memory የተባለበት ዋና ምክንያት አይደለም።",
+    "ስህተት፦ ከLong-term memory መረጃ ማውጣትም ንቁ የአእምሮ ሂደት ሊፈልግ ይችላል።",
+    "ስህተት፦ Short-term memory መፍጠር ብዙ ልምምድ የሚጠይቅ ከባድ ስራ አይደለም።"
+  ]
+},
+
+{
+  question: "An instructor gives her students a list of terms to memorize for their biology exam. After allowing the students three minutes to look over the list, she asks one student to recite the terms back to her, from memory. What information will this student likely be able to recall from the list?",
+  options: [
+    "The student won't recall any of the terms because he has not used rehearsal to encode them.",
+    "Since there was no delay in asking for the terms, the student will remember those at the end of the list, showing a recency effect.",
+    "Since there was a delay in asking for the terms, the student will remember those at the beginning of the list, showing a primacy effect."
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: The student had three minutes to study the list, so some of the information could be encoded and rehearsed.",
+    "Incorrect: There was a three-minute study period before recall, so the situation does not represent immediate recall of the last items.",
+    "Correct: The delay reduces the recency advantage for the last items, while early items receive more rehearsal and are more likely to enter long-term memory. This is called the primacy effect."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ ተማሪው ዝርዝሩን ለ3 ደቂቃ ስለተመለከተ የተወሰነውን መረጃ መመስጠርና መደጋገም ይችላል።",
+    "ስህተት፦ ከዝርዝሩ ጋር የ3 ደቂቃ ጊዜ ስላለ ወዲያውኑ የሚደረግ ማስታወስ አይደለም።",
+    "ትክክል፦ የ3 ደቂቃ መዘግየት የመጨረሻዎቹን ነገሮች የRecency effect ጥቅም ይቀንሳል። በመጀመሪያ ያሉት መረጃዎች ግን ብዙ ጊዜ ስለሚደጋገሙ ወደ Long-term memory የመግባት እድላቸው ይጨምራል። ይህ Primacy effect ይባላል።"
+  ]
+},
+
+{
+  question: "Memory researchers define forgetting as the:",
+  options: [
+    "Inability to retain information in working memory long enough to make use of it.",
+    "Sudden loss of information after head trauma.",
+    "Inability to retrieve information from long-term memory.",
+    "Process by which information is lost in transit from short-term memory to long-term memory."
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: This describes difficulty maintaining information in working memory, rather than the general definition of forgetting.",
+    "Incorrect: Sudden memory loss after head trauma may be a form of amnesia, but it is not the general definition of forgetting.",
+    "Correct: Forgetting is commonly defined as the inability to retrieve previously stored information from long-term memory.",
+    "Incorrect: This describes a possible encoding or consolidation problem rather than the general definition of forgetting."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ ይህ መረጃን በWorking memory ውስጥ ማቆየት አለመቻልን ያመለክታል፤ አጠቃላይ የForgetting ትርጉም አይደለም።",
+    "ስህተት፦ ከጭንቅላት ጉዳት በኋላ የሚመጣ ድንገተኛ የትውስታ ማጣት እንደAmnesia ሊገለጽ ይችላል፤ ግን የForgetting አጠቃላይ ትርጉም አይደለም።",
+    "ትክክል፦ Forgetting ማለት ቀደም ብሎ በLong-term memory ውስጥ የተከማቸን መረጃ ማውጣት ወይም ማስታወስ አለመቻል ነው።",
+    "ስህተት፦ ይህ መረጃ ከShort-term memory ወደ Long-term memory ሲሄድ የሚፈጠር የEncoding/Consolidation ችግርን ያመለክታል።"
+  ]
+},
+
+{
+  question: "Which situation describes the phenomenon of retroactive interference?",
+  options: [
+    "Samantha can't recall what day of the week it is.",
+    "James keeps entering his old PIN with his new ATM card.",
+    "Darnell keeps referring to his old VCR as a Blu-ray player.",
+    "Frieda often calls her new boyfriend by her old boyfriend's name."
+  ],
+  answer: 2,
+
+  englishExplanation: [
+    "Incorrect: This is ordinary difficulty remembering the day and does not demonstrate interference.",
+    "Incorrect: This is proactive interference because old information, the old PIN, interferes with the new situation.",
+    "Correct: Retroactive interference occurs when newly learned information interferes with the recall of older information. Darnell's new Blu-ray knowledge interferes with correctly identifying the older VCR.",
+    "Incorrect: This is proactive interference because the old boyfriend's name interferes with remembering or using the new boyfriend's name."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ ይህ የሳምንቱን ቀን ማስታወስ አለመቻል ብቻ ነው፤ Interference አይደለም።",
+    "ስህተት፦ የድሮው PIN አዲሱን መረጃ ስለሚያስተጓጉል ይህ Proactive interference ነው።",
+    "ትክክል፦ Retroactive interference አዲስ የተማርነው መረጃ የድሮውን መረጃ ማስታወስ ሲያስቸግር የሚከሰት ነው። Darnell አዲሱን Blu-ray player ስለሚያስብ የድሮውን VCR በትክክል መጥራት ይቸገራል።",
+    "ስህተት፦ የድሮው የፍቅረኛ ስም አዲሱን ስም ማስታወስ ስለሚያስቸግር Proactive interference ነው።"
+  ]
+},
+
+{
+  question: "Psychologists use the term ______ to describe memory for information that is able to be articulated, while ______ describes memory for information that aids performance of tasks.",
+  options: [
+    "Declarative; nondeclarative",
+    "Nondeclarative; episodic",
+    "Episodic; semantic",
+    "Nondeclarative; declarative"
+  ],
+  answer: 0,
+
+  englishExplanation: [
+    "Correct: Declarative memory contains information that can be consciously recalled and verbally described. Nondeclarative memory includes skills and habits that can influence performance without conscious verbal recall.",
+    "Incorrect: Nondeclarative memory does not describe information that can normally be consciously articulated, and episodic memory is a type of declarative memory.",
+    "Incorrect: Episodic and semantic are both types of declarative memory, so they do not fit the two broad categories described in the question.",
+    "Incorrect: The order is reversed. Declarative memory is the memory that can be consciously articulated."
+  ],
+
+  amharicExplanation: [
+    "ትክክል፦ Declarative memory በንቃተ-ህሊና ማስታወስና በቃላት መግለጽ የምንችለውን መረጃ ይይዛል። Nondeclarative memory ደግሞ እንደ ክህሎትና ልምድ ያሉ በስራ አፈጻጸም ላይ የሚረዱ ትውስታዎችን ይይዛል።",
+    "ስህተት፦ Nondeclarative memory በቀጥታ በቃላት የምንገልጸው ትውስታ አይደለም፤ Episodic memory ግን Declarative memory ውስጥ የሚገኝ ነው።",
+    "ስህተት፦ Episodic እና Semantic ሁለቱም Declarative memory ውስጥ የሚገኙ ንዑስ ክፍሎች ናቸው።",
+    "ስህተት፦ ቅደም ተከተሉ ተገላብጧል፤ በቃላት ማስታወስ የሚቻለው Declarative memory ነው።"
+  ]
+},
+
+{
+  question: "Which situation describes the use of episodic memory?",
+  options: [
+    "Belinda verified her identity over the phone by giving her date of birth.",
+    "Jim remembered the excitement of the birthday party his friends had planned for him.",
+    "Serena asked her teacher to name the capital of Mozambique.",
+    "Samir recalled that a Pan Am commercial jet had crashed over Scotland."
+  ],
+  answer: 1,
+
+  englishExplanation: [
+    "Incorrect: Remembering one's date of birth as factual information is primarily semantic memory.",
+    "Correct: Episodic memory involves remembering personally experienced events, including their emotional and contextual details. Jim is remembering his own birthday experience.",
+    "Incorrect: Knowing the capital of Mozambique is factual general knowledge, which is semantic memory.",
+    "Incorrect: Remembering a historical fact about a plane crash is generally semantic memory rather than a personally experienced episode."
+  ],
+
+  amharicExplanation: [
+    "ስህተት፦ የራስን የትውልድ ቀን እንደ እውነታ ማወቅ Semantic memory ነው።",
+    "ትክክል፦ Episodic memory በራሳችን ህይወት ያጋጠመንን ክስተት ከስሜታዊና ከሁኔታዊ ዝርዝሮቹ ጋር ማስታወስ ነው። Jim የራሱን የልደት ድግስ ማስታወሱ የEpisodic memory ምሳሌ ነው።",
+    "ስህተት፦ የሞዛምቢክን ዋና ከተማ ማወቅ አጠቃላይ እውቀት ስለሆነ Semantic memory ነው።",
+    "ስህተት፦ ስለ አውሮፕላን አደጋ የታሪክ እውነታን ማስታወስ Semantic memory ነው፤ በግል ያጋጠመ ክስተት አይደለም።"
+  ]
+}],
         5: []
 
     },
