@@ -226,9 +226,27 @@
 
   <!-- LOGIN CHECK -->
 
-  <div id="loginMessage" class="loading">
-    🔐 Checking admin access...
-  </div>
+<div id="loginMessage" class="loading">
+  <h3>🔒 Admin login required</h3>
+  <p>Please log in with your admin account.</p>
+
+  <br>
+
+  <button
+    onclick="window.location.href='login.html'"
+    style="
+      background:#2563eb;
+      color:white;
+      padding:12px 22px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:bold;
+    "
+  >
+    🔐 Go to Admin Login
+  </button>
+</div>
 
 
   <!-- ADMIN PANEL -->
