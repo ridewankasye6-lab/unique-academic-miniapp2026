@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Unique Academic - Verification</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #f4f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .verification-box {
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      padding: 35px 25px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: #fff7ed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 25px;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .status {
+      display: inline-block;
+      background: #fff7ed;
+      color: #c2410c;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .info {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .info div {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 8px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .info div:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      color: #64748b;
+    }
+
+    .value {
+      font-weight: bold;
+      color: #111827;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 22px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="verification-box">
+
+    <div class="icon">
+      🔐
+    </div>
+
+    <h1>Registration Verification</h1>
+
+    <span class="status">
+      ⏳ PENDING VERIFICATION
+    </span>
+
+    <p>
+      Your payment information has been successfully submitted.
+      Our administration team will verify your payment.
+    </p>
+
+    <div class="info">
+
+      <div>
+        <span class="label">Registration Fee</span>
+        <span class="value">300 ETB</span>
+      </div>
+
+      <div>
+        <span class="label">Payment Status</span>
+        <span class="value">Submitted</span>
+      </div>
+
+      <div>
+        <span class="label">Verification Status</span>
+        <span class="value">Pending</span>
+      </div>
+
+    </div>
+
+    <p class="note">
+      Please wait while your payment is being verified.
+      You will receive your registration/access information
+      after approval.
+    </p>
+
+    <a href="index.html" class="back-btn">
+      🏠 Back to Home
+    </a>
+
+  </div>
+
+</body>
+</html>
