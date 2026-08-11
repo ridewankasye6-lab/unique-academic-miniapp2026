@@ -1,257 +1,391 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================================
+   UNIQUE ACADEMIC
+   REGISTRATION SYSTEM
+   STEP 1 + STEP 2
+========================================= */
 
-    <title>Register | Unique Academic</title>
-<!-- <link rel="stylesheet" href="registration.css"> -->
-</head>
 
-<body>
+/* =========================
+   ELEMENTS
+========================= */
 
-    <!-- Header -->
-    <header class="register-header">
-        <div class="brand">
-            <span class="brand-icon">🎓</span>
+const personalStep =
+    document.getElementById("personalStep");
 
-            <div>
-                <h1>Unique Academic</h1>
-                <p>BDU Learning Platform</p>
-            </div>
-        </div>
+const securityStep =
+    document.getElementById("securityStep");
 
-        <a href="index.html" class="home-link">
-            🏠 Home
-        </a>
-    </header>
 
+const personalContinueBtn =
+    document.getElementById("personalContinueBtn");
 
-    <!-- Main Registration Area -->
-    <main class="registration-container">
+const securityContinueBtn =
+    document.getElementById("securityContinueBtn");
 
-        <!-- Registration Card -->
-        <section class="registration-card">
+const backToPersonalBtn =
+    document.getElementById("backToPersonalBtn");
 
-            <!-- Welcome -->
-            <div class="register-intro">
 
-                <div class="welcome-icon">
-                    📝
-                </div>
+const stepIndicator1 =
+    document.getElementById("stepIndicator1");
 
-                <h2>Create Your Account</h2>
+const stepIndicator2 =
+    document.getElementById("stepIndicator2");
 
-                <p>
-                    Join Unique Academic and access organized
-                    university learning resources.
-                </p>
 
-            </div>
+/* =========================
+   STEP 1 → STEP 2
+========================= */
 
+personalContinueBtn.addEventListener("click", function () {
 
-            <!-- Progress Steps -->
-            <div class="steps">
+    const fullName =
+        document.getElementById("fullName").value.trim();
 
-                <div class="step active">
-                    <div class="step-number">1</div>
-                    <span>Personal</span>
-                </div>
+    const phone =
+        document.getElementById("phone").value.trim();
 
-                <div class="step-line"></div>
+    const email =
+        document.getElementById("email").value.trim();
 
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <span>Security</span>
-                </div>
+    const university =
+        document.getElementById("university").value;
 
-                <div class="step-line"></div>
+    const department =
+        document.getElementById("department").value.trim();
 
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <span>Payment</span>
-                </div>
 
-                <div class="step-line"></div>
+    /* CHECK FULL NAME */
 
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <span>Verification</span>
-                </div>
+    if (fullName === "") {
 
-            </div>
+        alert("Please enter your full name.");
 
+        return;
+    }
 
-            <!-- Step 1 -->
-            <div class="form-step">
 
-                <div class="section-heading">
-                    <h3>👤 Personal Information</h3>
+    /* CHECK PHONE */
 
-                    <p>
-                        Tell us a little about yourself.
-                    </p>
-                </div>
+    if (phone === "") {
 
+        alert("Please enter your phone number.");
 
-                <!-- Full Name -->
-                <div class="form-group">
+        return;
+    }
 
-                    <label for="fullName">
-                        Full Name
-                    </label>
 
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        placeholder="Enter your full name"
-                        autocomplete="name"
-                        required
-                    >
+    /* CHECK EMAIL */
 
-                </div>
+    if (email === "") {
 
+        alert("Please enter your email address.");
 
-                <!-- Phone -->
-                <div class="form-group">
+        return;
+    }
 
-                    <label for="phone">
-                        Phone Number
-                    </label>
 
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="e.g. 09XXXXXXXX"
-                        autocomplete="tel"
-                        required
-                    >
+    /* CHECK UNIVERSITY */
 
-                </div>
+    if (university === "") {
 
+        alert("Please select your university.");
 
-                <!-- Email -->
-                <div class="form-group">
+        return;
+    }
 
-                    <label for="email">
-                        Email Address
-                    </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required
-                    >
+    /* CHECK DEPARTMENT */
 
-                </div>
+    if (department === "") {
 
+        alert("Please enter your department.");
 
-                <!-- University -->
-                <div class="form-group">
+        return;
+    }
 
-                    <label for="university">
-                        University
-                    </label>
 
-                    <select id="university" name="university" required>
+    /* SHOW STEP 2 */
 
-                        <option value="">
-                            Select your university
-                        </option>
+    personalStep.style.display = "none";
 
-                        <option value="Bahir Dar University">
-                            Bahir Dar University
-                        </option>
+    securityStep.style.display = "block";
 
-                        <option value="Other">
-                            Other
-                        </option>
 
-                    </select>
+    /* UPDATE PROGRESS */
 
-                </div>
+    stepIndicator1.classList.remove("active");
 
+    stepIndicator1.classList.add("completed");
 
-                <!-- Department -->
-                <div class="form-group">
+    stepIndicator2.classList.add("active");
 
-                    <label for="department">
-                        Department
-                    </label>
 
-                    <input
-                        type="text"
-                        id="department"
-                        name="department"
-                        placeholder="e.g. Law"
-                        required
-                    >
+    /* Scroll to top */
 
-                </div>
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
+});
 
-                <!-- Continue -->
-                <button
-                    type="button"
-                    class="continue-btn"
-                    id="continueBtn"
-                >
-                    Continue
-                    <span>→</span>
-                </button>
 
+/* =========================
+   STEP 2 → STEP 1
+========================= */
 
-                <!-- Existing account -->
-                <p class="login-text">
+backToPersonalBtn.addEventListener("click", function () {
 
-                    Already have an account?
+    securityStep.style.display = "none";
 
-                    <a href="login.html">
-                        Login
-                    </a>
+    personalStep.style.display = "block";
 
-                </p>
 
-            </div>
+    stepIndicator2.classList.remove("active");
 
-        </section>
+    stepIndicator1.classList.remove("completed");
 
+    stepIndicator1.classList.add("active");
 
-        <!-- Security Notice -->
-        <div class="security-notice">
 
-            <span>🔒</span>
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
-            <div>
-                <strong>Your information is protected</strong>
+});
 
-                <p>
-                    Your personal information will be used only
-                    for your Unique Academic account.
-                </p>
-            </div>
 
-        </div>
+/* =========================
+   PASSWORD STRENGTH
+========================= */
 
-    </main>
+const passwordInput =
+    document.getElementById("password");
 
+const strengthBar =
+    document.getElementById("strengthBar");
 
-    <!-- Footer -->
-    <footer>
+const strengthText =
+    document.getElementById("strengthText");
 
-        <p>
-            © 2026 Unique Academic
-            | Learn. Understand. Succeed.
-        </p>
 
-    </footer>
+const lengthRequirement =
+    document.getElementById("lengthRequirement");
 
+const numberRequirement =
+    document.getElementById("numberRequirement");
 
-<!-- <script src="registration.js"></script> -->
-</body>
-</html>
+const uppercaseRequirement =
+    document.getElementById("uppercaseRequirement");
+
+
+passwordInput.addEventListener("input", function () {
+
+    const password = passwordInput.value;
+
+
+    const hasLength =
+        password.length >= 8;
+
+    const hasNumber =
+        /[0-9]/.test(password);
+
+    const hasUppercase =
+        /[A-Z]/.test(password);
+
+
+    /* UPDATE REQUIREMENTS */
+
+    if (hasLength) {
+
+        lengthRequirement.textContent =
+            "✓ At least 8 characters";
+
+        lengthRequirement.classList.add("valid");
+
+    } else {
+
+        lengthRequirement.textContent =
+            "○ At least 8 characters";
+
+        lengthRequirement.classList.remove("valid");
+    }
+
+
+    if (hasNumber) {
+
+        numberRequirement.textContent =
+            "✓ At least one number";
+
+        numberRequirement.classList.add("valid");
+
+    } else {
+
+        numberRequirement.textContent =
+            "○ At least one number";
+
+        numberRequirement.classList.remove("valid");
+    }
+
+
+    if (hasUppercase) {
+
+        uppercaseRequirement.textContent =
+            "✓ At least one uppercase letter";
+
+        uppercaseRequirement.classList.add("valid");
+
+    } else {
+
+        uppercaseRequirement.textContent =
+            "○ At least one uppercase letter";
+
+        uppercaseRequirement.classList.remove("valid");
+    }
+
+
+    /* PASSWORD STRENGTH */
+
+    let strength = 0;
+
+    if (hasLength) strength++;
+
+    if (hasNumber) strength++;
+
+    if (hasUppercase) strength++;
+
+
+    if (password.length === 0) {
+
+        strengthBar.style.width = "0%";
+
+        strengthText.textContent =
+            "Enter a password";
+
+        strengthText.className = "";
+
+    }
+
+    else if (strength === 1) {
+
+        strengthBar.style.width = "33%";
+
+        strengthText.textContent =
+            "Weak password";
+
+        strengthText.className = "weak";
+
+    }
+
+    else if (strength === 2) {
+
+        strengthBar.style.width = "66%";
+
+        strengthText.textContent =
+            "Medium password";
+
+        strengthText.className = "medium";
+
+    }
+
+    else {
+
+        strengthBar.style.width = "100%";
+
+        strengthText.textContent =
+            "Strong password";
+
+        strengthText.className = "strong";
+
+    }
+
+});
+
+
+/* =========================
+   STEP 2 CONTINUE
+========================= */
+
+securityContinueBtn.addEventListener("click", function () {
+
+    const password =
+        passwordInput.value;
+
+    const confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+
+    /* CHECK PASSWORD */
+
+    if (password === "") {
+
+        alert("Please create a password.");
+
+        return;
+    }
+
+
+    /* CHECK REQUIREMENTS */
+
+    if (password.length < 8) {
+
+        alert(
+            "Your password must contain at least 8 characters."
+        );
+
+        return;
+    }
+
+
+    if (!/[0-9]/.test(password)) {
+
+        alert(
+            "Your password must contain at least one number."
+        );
+
+        return;
+    }
+
+
+    if (!/[A-Z]/.test(password)) {
+
+        alert(
+            "Your password must contain at least one uppercase letter."
+        );
+
+        return;
+    }
+
+
+    /* CHECK CONFIRM PASSWORD */
+
+    if (confirmPassword === "") {
+
+        alert(
+            "Please confirm your password."
+        );
+
+        return;
+    }
+
+
+    if (password !== confirmPassword) {
+
+        alert(
+            "Passwords do not match."
+        );
+
+        return;
+    }
+
+
+    /* TEMPORARY */
+
+    alert(
+        "Account security completed successfully! " +
+        "Next step: Registration Payment."
+    );
+
+});
