@@ -1,9 +1,25 @@
 /* =========================================
    UNIQUE ACADEMIC
-   REGISTRATION SYSTEM
+   REAL REGISTRATION SYSTEM
+   Firebase + Cloud Firestore
 
-   STEP 1 + STEP 2 + STEP 3
+   STEP 1 → STEP 2 → STEP 3 → STEP 4
 ========================================= */
+
+import {
+    db,
+    auth
+} from "./firebase-config.js";
+
+import {
+    collection,
+    addDoc,
+    serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+import {
+    createUserWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 
 /* =========================================
@@ -18,8 +34,10 @@ const securityStep =
 
 const paymentStep =
     document.getElementById("paymentStep");
+
 const verificationStep =
     document.getElementById("verificationStep");
+
 
 const stepIndicator1 =
     document.getElementById("stepIndicator1");
@@ -29,6 +47,7 @@ const stepIndicator2 =
 
 const stepIndicator3 =
     document.getElementById("stepIndicator3");
+
 const stepIndicator4 =
     document.getElementById("stepIndicator4");
 
@@ -40,7 +59,6 @@ const stepIndicator4 =
 document
     .getElementById("personalContinueBtn")
     .addEventListener("click", function () {
-
 
         const fullName =
             document.getElementById("fullName")
@@ -64,41 +82,31 @@ document
 
 
         if (fullName === "") {
-
             alert("Please enter your full name.");
-
             return;
         }
 
 
         if (phone === "") {
-
             alert("Please enter your phone number.");
-
             return;
         }
 
 
         if (email === "") {
-
             alert("Please enter your email address.");
-
             return;
         }
 
 
         if (university === "") {
-
             alert("Please select your university.");
-
             return;
         }
 
 
         if (department === "") {
-
             alert("Please enter your department.");
-
             return;
         }
 
@@ -125,7 +133,6 @@ document
     });
 
 
-
 /* =========================================
    STEP 2 → STEP 1
 ========================================= */
@@ -133,7 +140,6 @@ document
 document
     .getElementById("backToPersonalBtn")
     .addEventListener("click", function () {
-
 
         securityStep.style.display = "none";
 
@@ -155,7 +161,6 @@ document
     });
 
 
-
 /* =========================================
    PASSWORD STRENGTH
 ========================================= */
@@ -168,7 +173,6 @@ const strengthBar =
 
 const strengthText =
     document.getElementById("strengthText");
-
 
 const lengthRequirement =
     document.getElementById("lengthRequirement");
@@ -184,10 +188,8 @@ passwordInput.addEventListener(
     "input",
     function () {
 
-
         const password =
             passwordInput.value;
-
 
         const hasLength =
             password.length >= 8;
@@ -252,14 +254,11 @@ passwordInput.addEventListener(
 
         let strength = 0;
 
-
         if (hasLength)
             strength++;
 
-
         if (hasNumber)
             strength++;
-
 
         if (hasUppercase)
             strength++;
@@ -283,8 +282,7 @@ passwordInput.addEventListener(
             strengthText.textContent =
                 "Weak password";
 
-            strengthText.className =
-                "weak";
+            strengthText.className = "weak";
 
         }
 
@@ -295,8 +293,7 @@ passwordInput.addEventListener(
             strengthText.textContent =
                 "Medium password";
 
-            strengthText.className =
-                "medium";
+            strengthText.className = "medium";
 
         }
 
@@ -307,8 +304,7 @@ passwordInput.addEventListener(
             strengthText.textContent =
                 "Strong password";
 
-            strengthText.className =
-                "strong";
+            strengthText.className = "strong";
 
         }
 
@@ -316,15 +312,14 @@ passwordInput.addEventListener(
 );
 
 
-
 /* =========================================
    STEP 2 → STEP 3
+   CREATE REAL FIREBASE USER
 ========================================= */
 
 document
     .getElementById("securityContinueBtn")
-    .addEventListener("click", function () {
-
+    .addEventListener("click", async function () {
 
         const password =
             passwordInput.value;
@@ -333,6 +328,12 @@ document
             document
                 .getElementById("confirmPassword")
                 .value;
+
+        const email =
+            document
+                .getElementById("email")
+                .value
+                .trim();
 
 
         if (password === "") {
@@ -395,6 +396,64 @@ document
         }
 
 
+        /*
+         * CREATE REAL FIREBASE ACCOUNT
+         */
+
+        try {
+
+            await createUserWithEmailAndPassword(
+                auth,
+                email,
+                password
+            );
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+
+            if (error.code ===
+                "auth/email-already-in-use") {
+
+                alert(
+                    "This email is already registered. Please use another email or log in."
+                );
+
+            }
+
+            else if (error.code ===
+                "auth/invalid-email") {
+
+                alert(
+                    "Please enter a valid email address."
+                );
+
+            }
+
+            else if (error.code ===
+                "auth/weak-password") {
+
+                alert(
+                    "Firebase rejected this password. Please create a stronger password."
+                );
+
+            }
+
+            else {
+
+                alert(
+                    "Account creation failed. Please try again."
+                );
+
+            }
+
+            return;
+        }
+
+
         securityStep.style.display = "none";
 
         paymentStep.style.display = "block";
@@ -415,12 +474,12 @@ document
     });
 
 
-
 /* =========================================
    PAYMENT METHOD
 ========================================= */
 
 let selectedPaymentMethod = "";
+
 
 const paymentDetails =
     document.getElementById("paymentDetails");
@@ -435,12 +494,13 @@ const accountNumber =
     document.getElementById("accountNumber");
 
 
-/* CBE */
+/* =========================================
+   CBE
+========================================= */
 
 document
     .getElementById("cbeMethod")
     .addEventListener("click", function () {
-
 
         selectedPaymentMethod = "CBE";
 
@@ -470,13 +530,13 @@ document
     });
 
 
-
-/* TELEBIRR */
+/* =========================================
+   TELEBIRR
+========================================= */
 
 document
     .getElementById("telebirrMethod")
     .addEventListener("click", function () {
-
 
         selectedPaymentMethod =
             "Telebirr";
@@ -507,56 +567,60 @@ document
     });
 
 
-
 /* =========================================
    COPY PAYMENT NUMBER
 ========================================= */
 
 document
     .getElementById("copyPaymentNumber")
-    .addEventListener("click", async function () {
+    .addEventListener(
+        "click",
+        async function () {
+
+            const number =
+                accountNumber.textContent;
 
 
-        const number =
-            accountNumber.textContent;
+            if (
+                number === "—" ||
+                number === ""
+            ) {
+
+                return;
+            }
 
 
-        if (
-            number === "—" ||
-            number === ""
-        ) {
+            try {
 
-            return;
-        }
+                await navigator
+                    .clipboard
+                    .writeText(number);
 
-
-        try {
-
-            await navigator.clipboard.writeText(number);
-
-            this.textContent =
-                "✓ Copied";
-
-            setTimeout(() => {
 
                 this.textContent =
-                    "📋 Copy";
+                    "✓ Copied";
 
-            }, 1500);
+
+                setTimeout(() => {
+
+                    this.textContent =
+                        "📋 Copy";
+
+                }, 1500);
+
+            }
+
+            catch (error) {
+
+                alert(
+                    "Please copy the payment number manually: " +
+                    number
+                );
+
+            }
 
         }
-
-        catch (error) {
-
-            alert(
-                "Please copy the payment number manually: " +
-                number
-            );
-
-        }
-
-    });
-
+    );
 
 
 /* =========================================
@@ -565,105 +629,276 @@ document
 
 document
     .getElementById("paymentScreenshot")
-    .addEventListener("change", function () {
+    .addEventListener(
+        "change",
+        function () {
+
+            const fileName =
+                document.getElementById("fileName");
 
 
-        const fileName =
-            document.getElementById("fileName");
+            if (this.files.length > 0) {
 
+                fileName.textContent =
+                    "📎 " + this.files[0].name;
 
-        if (this.files.length > 0) {
+            }
 
-            fileName.textContent =
-                "📎 " + this.files[0].name;
+            else {
 
-        } else {
+                fileName.textContent =
+                    "";
 
-            fileName.textContent = "";
+            }
 
         }
+    );
 
-    });
 
 /* =========================================
-   STEP 3 → STEP 4 VERIFICATION
+   STEP 3 → STEP 4
+   SAVE REAL REGISTRATION TO FIRESTORE
 ========================================= */
 
 document
     .getElementById("submitPaymentBtn")
-    .addEventListener("click", function () {
+    .addEventListener(
+        "click",
+        async function () {
 
-        const paymentReference =
-            document
-                .getElementById("paymentReference")
-                .value.trim();
+            const button = this;
 
-        const screenshot =
-            document
-                .getElementById("paymentScreenshot")
-                .files;
+            const paymentReference =
+                document
+                    .getElementById(
+                        "paymentReference"
+                    )
+                    .value
+                    .trim();
 
 
-        /* CHECK PAYMENT METHOD */
+            const screenshot =
+                document
+                    .getElementById(
+                        "paymentScreenshot"
+                    )
+                    .files;
 
-        if (selectedPaymentMethod === "") {
 
-            alert(
-                "Please select your payment method."
-            );
+            /* CHECK PAYMENT METHOD */
 
-            return;
+            if (
+                selectedPaymentMethod === ""
+            ) {
+
+                alert(
+                    "Please select your payment method."
+                );
+
+                return;
+            }
+
+
+            /* CHECK REFERENCE */
+
+            if (
+                paymentReference === ""
+            ) {
+
+                alert(
+                    "Please enter your payment reference or transaction number."
+                );
+
+                return;
+            }
+
+
+            /* CHECK SCREENSHOT */
+
+            if (
+                screenshot.length === 0
+            ) {
+
+                alert(
+                    "Please upload your payment screenshot."
+                );
+
+                return;
+            }
+
+
+            /* CHECK FIREBASE USER */
+
+            if (!auth.currentUser) {
+
+                alert(
+                    "Your account session has expired. Please restart registration."
+                );
+
+                return;
+            }
+
+
+            /*
+             * COLLECT STUDENT INFORMATION
+             */
+
+            const registrationData = {
+
+                userId:
+                    auth.currentUser.uid,
+
+                fullName:
+                    document
+                        .getElementById("fullName")
+                        .value
+                        .trim(),
+
+                phone:
+                    document
+                        .getElementById("phone")
+                        .value
+                        .trim(),
+
+                email:
+                    document
+                        .getElementById("email")
+                        .value
+                        .trim(),
+
+                university:
+                    document
+                        .getElementById("university")
+                        .value,
+
+                department:
+                    document
+                        .getElementById("department")
+                        .value
+                        .trim(),
+
+                paymentMethod:
+                    selectedPaymentMethod,
+
+                paymentReference:
+                    paymentReference,
+
+                amount:
+                    300,
+
+                currency:
+                    "ETB",
+
+                status:
+                    "pending",
+
+                submittedAt:
+                    serverTimestamp()
+
+            };
+
+
+            /*
+             * PREVENT DOUBLE SUBMISSION
+             */
+
+            button.disabled = true;
+
+            button.innerHTML =
+                "Submitting...";
+
+
+            try {
+
+                /*
+                 * SAVE TO FIRESTORE
+                 */
+
+                const registrationRef =
+                    await addDoc(
+                        collection(
+                            db,
+                            "registrations"
+                        ),
+                        registrationData
+                    );
+
+
+                /*
+                 * SAVE ID LOCALLY ONLY
+                 * FOR THE CURRENT PAGE
+                 */
+
+                sessionStorage.setItem(
+                    "registrationId",
+                    registrationRef.id
+                );
+
+
+                /*
+                 * HIDE PAYMENT
+                 */
+
+                paymentStep.style.display =
+                    "none";
+
+
+                /*
+                 * SHOW VERIFICATION
+                 */
+
+                if (verificationStep) {
+
+                    verificationStep.style.display =
+                        "block";
+
+                }
+
+
+                /*
+                 * UPDATE INDICATORS
+                 */
+
+                stepIndicator3
+                    .classList
+                    .remove("active");
+
+                stepIndicator3
+                    .classList
+                    .add("completed");
+
+                stepIndicator4
+                    .classList
+                    .add("active");
+
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Firestore error:",
+                    error
+                );
+
+
+                alert(
+                    "We could not submit your registration. Please try again."
+                );
+
+
+                button.disabled = false;
+
+                button.innerHTML =
+                    'Submit Payment <span>→</span>';
+
+            }
+
         }
-
-
-        /* CHECK REFERENCE */
-
-        if (paymentReference === "") {
-
-            alert(
-                "Please enter your payment reference or transaction number."
-            );
-
-            return;
-        }
-
-
-        /* CHECK SCREENSHOT */
-
-        if (screenshot.length === 0) {
-
-            alert(
-                "Please upload your payment screenshot."
-            );
-
-            return;
-        }
-
-
-        /* HIDE PAYMENT */
-
-        paymentStep.style.display = "none";
-
-
-        /* SHOW VERIFICATION */
-
-        verificationStep.style.display = "block";
-
-
-        /* UPDATE STEP INDICATORS */
-
-        stepIndicator3.classList.remove("active");
-
-        stepIndicator3.classList.add("completed");
-
-        stepIndicator4.classList.add("active");
-
-
-        /* SCROLL TO TOP */
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    });
+    );
