@@ -34,10 +34,10 @@ onAuthStateChanged(auth, async (user) => {
         showLocked(
             "🔒",
             "Login Required",
-            "Please login or create an account to access this content.",
-            "🔐 Login",
-            "login.html",
-            "📝 Create Account",
+            "Login or register to access this course.",
+            "🔐 Student Login",
+            "student-login.html",
+            "📝 Register",
             "registration.html"
         );
 
@@ -65,7 +65,7 @@ onAuthStateChanged(auth, async (user) => {
 
     /*
     --------------------------------------
-    FIND REGISTRATION
+    FIND STUDENT REGISTRATION
     --------------------------------------
     */
 
@@ -93,7 +93,7 @@ onAuthStateChanged(auth, async (user) => {
             showLocked(
                 "📝",
                 "Registration Required",
-                "Please complete your registration and payment to access this content.",
+                "Complete your registration and payment to access this course.",
                 "📝 Register Now",
                 "registration.html",
                 "🏠 Home",
@@ -106,20 +106,29 @@ onAuthStateChanged(auth, async (user) => {
 
         /*
         ----------------------------------
-        FIND APPROVED REGISTRATION
+        CHECK REGISTRATIONS
         ----------------------------------
         */
 
-        let registration = null;
+        let approved = false;
+        let pending = false;
+        let rejected = false;
+
 
         snapshot.forEach((doc) => {
 
             const data = doc.data();
 
             if (data.status === "approved") {
+                approved = true;
+            }
 
-                registration = data;
+            if (data.status === "pending") {
+                pending = true;
+            }
 
+            if (data.status === "rejected") {
+                rejected = true;
             }
 
         });
@@ -131,7 +140,7 @@ onAuthStateChanged(auth, async (user) => {
         ----------------------------------
         */
 
-        if (registration) {
+        if (approved) {
 
             grantAccess("✅ Payment Approved");
 
@@ -141,31 +150,16 @@ onAuthStateChanged(auth, async (user) => {
 
         /*
         ----------------------------------
-        CHECK PENDING
+        PENDING
         ----------------------------------
         */
 
-        let pendingRegistration = false;
-
-        snapshot.forEach((doc) => {
-
-            const data = doc.data();
-
-            if (data.status === "pending") {
-
-                pendingRegistration = true;
-
-            }
-
-        });
-
-
-        if (pendingRegistration) {
+        if (pending) {
 
             showLocked(
                 "⏳",
-                "Payment Verification Pending",
-                "Your registration has been submitted and is waiting for administrator approval.",
+                "Verification Pending",
+                "Your payment is waiting for administrator approval.",
                 "🏠 Back Home",
                 "index.html"
             );
@@ -176,18 +170,38 @@ onAuthStateChanged(auth, async (user) => {
 
         /*
         ----------------------------------
-        REJECTED / OTHER
+        REJECTED
+        ----------------------------------
+        */
+
+        if (rejected) {
+
+            showLocked(
+                "❌",
+                "Registration Not Approved",
+                "Your registration has not been approved for course access.",
+                "📝 Register Again",
+                "registration.html",
+                "🏠 Home",
+                "index.html"
+            );
+
+            return;
+        }
+
+
+        /*
+        ----------------------------------
+        UNKNOWN STATUS
         ----------------------------------
         */
 
         showLocked(
-            "❌",
-            "Access Not Approved",
-            "Your registration has not been approved for course access.",
+            "🔒",
+            "Access Locked",
+            "Your account is not currently approved for course access.",
             "🏠 Back Home",
-            "index.html",
-            "📝 Register Again",
-            "registration.html"
+            "index.html"
         );
 
     }
@@ -203,7 +217,7 @@ onAuthStateChanged(auth, async (user) => {
         showLocked(
             "⚠️",
             "Unable to Verify Access",
-            "We could not verify your account right now. Please try again.",
+            "We could not verify your registration right now. Please try again.",
             "🏠 Back Home",
             "index.html"
         );
@@ -215,7 +229,7 @@ onAuthStateChanged(auth, async (user) => {
 
 /*
 =========================================
-SHOW LOCKED MESSAGE
+SHOW LOCKED PAGE
 =========================================
 */
 
@@ -243,12 +257,12 @@ function showLocked(
 
             <div style="
                 width:100%;
-                max-width:500px;
+                max-width:460px;
                 background:white;
                 padding:40px 25px;
-                border-radius:18px;
+                border-radius:20px;
                 text-align:center;
-                box-shadow:0 8px 30px rgba(0,0,0,0.08);
+                box-shadow:0 10px 35px rgba(0,0,0,0.10);
             ">
 
                 <div style="
@@ -313,6 +327,14 @@ function showLocked(
                     ""
                 }
 
+                <p style="
+                    margin-top:25px;
+                    color:#94a3b8;
+                    font-size:13px;
+                ">
+                    🔐 Unique Academic
+                </p>
+
             </div>
 
         </div>
@@ -333,6 +355,7 @@ function grantAccess(statusText) {
     document.body.classList.add(
         "access-granted"
     );
+
 
     document.dispatchEvent(
         new CustomEvent(
