@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Unique Academic — Admin Verification</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #1f2937;
+    }
+
+    .header {
+      background: #111827;
+      color: white;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .title h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .title p {
+      color: #64748b;
+    }
+
+    .status-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+
+    .status-card h3 {
+      margin-bottom: 15px;
+    }
+
+    .student-card {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    .student-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .student-header h3 {
+      font-size: 20px;
+    }
+
+    .pending {
+      background: #fff7ed;
+      color: #c2410c;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      background: #f8fafc;
+      padding: 14px;
+      border-radius: 9px;
+    }
+
+    .info strong {
+      display: block;
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .info span {
+      font-size: 15px;
+    }
+
+    .payment {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 20px;
+      margin-top: 10px;
+    }
+
+    .payment h4 {
+      margin-bottom: 15px;
+    }
+
+    .screenshot {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .approve {
+      background: #16a34a;
+      color: white;
+    }
+
+    .reject {
+      background: #dc2626;
+      color: white;
+    }
+
+    .view {
+      background: #2563eb;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .empty {
+      text-align: center;
+      background: white;
+      padding: 50px 20px;
+      border-radius: 14px;
+      color: #64748b;
+    }
+
+    @media (max-width: 650px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .student-card {
+        padding: 16px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>🎓 Unique Academic</h1>
+    <p>Admin Verification Panel</p>
+  </header>
+
+  <main class="container">
+
+    <div class="title">
+      <h2>🔐 Registration Verification</h2>
+      <p>Review student registration and payment information.</p>
+    </div>
+
+    <div class="status-card">
+      <h3>📊 Verification Summary</h3>
+      <p>Pending registrations: <strong id="pendingCount">1</strong></p>
+    </div>
+
+    <!-- Student Registration -->
+
+    <div class="student-card">
+
+      <div class="student-header">
+        <h3>👤 Example Student</h3>
+        <span class="pending">PENDING</span>
+      </div>
+
+      <div class="info-grid">
+
+        <div class="info">
+          <strong>Full Name</strong>
+          <span>Example Student</span>
+        </div>
+
+        <div class="info">
+          <strong>Phone</strong>
+          <span>09XXXXXXXX</span>
+        </div>
+
+        <div class="info">
+          <strong>University</strong>
+          <span>Example University</span>
+        </div>
+
+        <div class="info">
+          <strong>Department</strong>
+          <span>Law</span>
+        </div>
+
+      </div>
+
+      <div class="payment">
+
+        <h4>💰 Payment Information</h4>
+
+        <div class="info-grid">
+
+          <div class="info">
+            <strong>Amount</strong>
+            <span>300 ETB</span>
+          </div>
+
+          <div class="info">
+            <strong>Payment Method</strong>
+            <span>CBE</span>
+          </div>
+
+          <div class="info">
+            <strong>Transaction Reference</strong>
+            <span>EXAMPLE123456</span>
+          </div>
+
+          <div class="info">
+            <strong>Payment Recipient</strong>
+            <span>Rediwan Kassiye</span>
+          </div>
+
+        </div>
+
+        <h4>📸 Payment Screenshot</h4>
+
+        <img
+          class="screenshot"
+          src="https://via.placeholder.com/180x220?text=Payment+Screenshot"
+          alt="Payment Screenshot"
+        >
+
+        <div class="buttons">
+
+          <button class="view" onclick="viewScreenshot()">
+            👁️ View Screenshot
+          </button>
+
+          <button class="approve" onclick="approveStudent()">
+            ✅ Approve
+          </button>
+
+          <button class="reject" onclick="rejectStudent()">
+            ❌ Reject
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+
+    function viewScreenshot() {
+      alert("Payment screenshot will open here.");
+    }
+
+    function approveStudent() {
+      const confirmApproval =
+        confirm("Are you sure you want to APPROVE this registration?");
+
+      if (confirmApproval) {
+        alert("✅ Registration approved successfully!");
+      }
+    }
+
+    function rejectStudent() {
+      const reason = prompt(
+        "Please enter the reason for rejecting this registration:"
+      );
+
+      if (reason) {
+        alert("❌ Registration rejected.\nReason: " + reason);
+      }
+    }
+
+  </script>
+
+</body>
+</html>
