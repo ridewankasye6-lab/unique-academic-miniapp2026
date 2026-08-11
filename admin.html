@@ -54,24 +54,20 @@
       color: #64748b;
     }
 
-    .status-card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    }
-
-    .status-card h3 {
-      margin-bottom: 15px;
-    }
-
-    .student-card {
+    .status-card,
+    .student-card,
+    .empty,
+    .loading,
+    .error {
       background: white;
       border-radius: 14px;
       padding: 22px;
       margin-bottom: 20px;
       box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    .status-card h3 {
+      margin-bottom: 15px;
     }
 
     .student-header {
@@ -87,31 +83,28 @@
       font-size: 20px;
     }
 
-    .pending {
-      background: #fff7ed;
-      color: #c2410c;
+    .pending,
+    .approved,
+    .rejected {
       padding: 7px 12px;
       border-radius: 20px;
       font-size: 13px;
       font-weight: bold;
+    }
+
+    .pending {
+      background: #fff7ed;
+      color: #c2410c;
     }
 
     .approved {
       background: #dcfce7;
       color: #15803d;
-      padding: 7px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: bold;
     }
 
     .rejected {
       background: #fee2e2;
       color: #b91c1c;
-      padding: 7px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: bold;
     }
 
     .info-grid {
@@ -175,37 +168,29 @@
       color: white;
     }
 
+    .logout {
+      background: #374151;
+      color: white;
+      margin-top: 15px;
+    }
+
     button:hover {
       opacity: 0.9;
     }
 
-    button:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-
+    .loading,
     .empty {
       text-align: center;
-      background: white;
-      padding: 50px 20px;
-      border-radius: 14px;
-      color: #64748b;
-    }
-
-    .loading {
-      text-align: center;
-      background: white;
-      padding: 40px 20px;
-      border-radius: 14px;
       color: #64748b;
     }
 
     .error {
       background: #fee2e2;
       color: #991b1b;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+    }
+
+    #adminPanel {
+      display: none;
     }
 
     @media (max-width: 650px) {
@@ -213,7 +198,8 @@
         grid-template-columns: 1fr;
       }
 
-      .student-card {
+      .student-card,
+      .status-card {
         padding: 16px;
       }
 
@@ -235,25 +221,48 @@
   <p>Admin Verification Panel</p>
 </header>
 
+
 <main class="container">
 
-  <div class="title">
-    <h2>🔐 Registration Verification</h2>
-    <p>Review real student registration and payment information.</p>
+  <!-- LOGIN CHECK -->
+
+  <div id="loginMessage" class="loading">
+    🔐 Checking admin access...
   </div>
 
-  <div class="status-card">
-    <h3>📊 Verification Summary</h3>
-    <p>
-      Pending registrations:
-      <strong id="pendingCount">0</strong>
-    </p>
-  </div>
 
-  <div id="registrationsContainer">
+  <!-- ADMIN PANEL -->
 
-    <div class="loading">
-      ⏳ Loading registrations...
+  <div id="adminPanel">
+
+    <div class="title">
+      <h2>🔐 Registration Verification</h2>
+      <p>Review real student registration and payment information.</p>
+    </div>
+
+
+    <div class="status-card">
+
+      <h3>📊 Verification Summary</h3>
+
+      <p>
+        Pending registrations:
+        <strong id="pendingCount">0</strong>
+      </p>
+
+      <button id="logoutButton" class="logout">
+        🚪 Logout
+      </button>
+
+    </div>
+
+
+    <div id="registrationsContainer">
+
+      <div class="loading">
+        ⏳ Loading registrations...
+      </div>
+
     </div>
 
   </div>
@@ -268,8 +277,10 @@
 ========================================= */
 
 import {
-  db
+  db,
+  auth
 } from "./firebase-config.js";
+
 
 import {
   collection,
@@ -281,9 +292,29 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 
+import {
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+
+/* =========================================
+   YOUR ADMIN EMAIL
+========================================= */
+
+const ADMIN_EMAIL =
+  "ridewankasye6@gmail.com";
+
+
 /* =========================================
    ELEMENTS
 ========================================= */
+
+const loginMessage =
+  document.getElementById("loginMessage");
+
+const adminPanel =
+  document.getElementById("adminPanel");
 
 const container =
   document.getElementById("registrationsContainer");
@@ -291,97 +322,179 @@ const container =
 const pendingCount =
   document.getElementById("pendingCount");
 
+const logoutButton =
+  document.getElementById("logoutButton");
+
 
 /* =========================================
-   LOAD REAL REGISTRATIONS
+   CHECK ADMIN LOGIN
 ========================================= */
 
-const registrationsQuery =
-  query(
-    collection(db, "registrations"),
-    orderBy("submittedAt", "desc")
-  );
+onAuthStateChanged(
+  auth,
+  (user) => {
 
+    if (!user) {
 
-onSnapshot(
-  registrationsQuery,
-
-  (snapshot) => {
-
-    container.innerHTML = "";
-
-    let pending = 0;
-
-
-    if (snapshot.empty) {
-
-      container.innerHTML = `
-        <div class="empty">
-          <h3>📭 No registrations yet</h3>
-          <p>New student registrations will appear here.</p>
-        </div>
+      loginMessage.innerHTML = `
+        <h3>🔒 Admin login required</h3>
+        <p>Please log in with the admin account.</p>
       `;
 
-      pendingCount.textContent = "0";
+      adminPanel.style.display = "none";
 
       return;
     }
 
 
-    snapshot.forEach((registrationDoc) => {
+    if (
+      user.email.toLowerCase() !==
+      ADMIN_EMAIL.toLowerCase()
+    ) {
 
-      const data =
-        registrationDoc.data();
+      loginMessage.innerHTML = `
+        <h3>❌ Access Denied</h3>
+        <p>This account is not authorized to access the admin panel.</p>
+      `;
 
-      const registrationId =
-        registrationDoc.id;
+      adminPanel.style.display = "none";
 
-
-      if (data.status === "pending") {
-        pending++;
-      }
-
-
-      const card =
-        createRegistrationCard(
-          registrationId,
-          data
-        );
+      return;
+    }
 
 
-      container.appendChild(card);
+    /* ADMIN VERIFIED */
 
-    });
+    loginMessage.style.display = "none";
 
+    adminPanel.style.display = "block";
 
-    pendingCount.textContent =
-      pending;
-
-  },
-
-  (error) => {
-
-    console.error(
-      "Firestore error:",
-      error
-    );
-
-    container.innerHTML = `
-      <div class="error">
-        <strong>⚠️ Could not load registrations.</strong>
-        <p>
-          Please check your Firestore security rules
-          and Firebase configuration.
-        </p>
-      </div>
-    `;
+    loadRegistrations();
 
   }
 );
 
 
 /* =========================================
-   CREATE REGISTRATION CARD
+   LOGOUT
+========================================= */
+
+logoutButton.addEventListener(
+  "click",
+  async () => {
+
+    await signOut(auth);
+
+    location.reload();
+
+  }
+);
+
+
+/* =========================================
+   LOAD REGISTRATIONS
+========================================= */
+
+function loadRegistrations() {
+
+  const registrationsQuery =
+    query(
+      collection(db, "registrations"),
+      orderBy("submittedAt", "desc")
+    );
+
+
+  onSnapshot(
+
+    registrationsQuery,
+
+    (snapshot) => {
+
+      container.innerHTML = "";
+
+      let pending = 0;
+
+
+      if (snapshot.empty) {
+
+        container.innerHTML = `
+          <div class="empty">
+            <h3>📭 No registrations yet</h3>
+            <p>New student registrations will appear here.</p>
+          </div>
+        `;
+
+        pendingCount.textContent = "0";
+
+        return;
+      }
+
+
+      snapshot.forEach(
+        (registrationDoc) => {
+
+          const data =
+            registrationDoc.data();
+
+          const id =
+            registrationDoc.id;
+
+
+          if (
+            data.status === "pending"
+          ) {
+
+            pending++;
+
+          }
+
+
+          const card =
+            createRegistrationCard(
+              id,
+              data
+            );
+
+
+          container.appendChild(card);
+
+        }
+      );
+
+
+      pendingCount.textContent =
+        pending;
+
+    },
+
+
+    (error) => {
+
+      console.error(error);
+
+      container.innerHTML = `
+        <div class="error">
+
+          <strong>
+            ⚠️ Could not load registrations.
+          </strong>
+
+          <p>
+            Check your Firestore security rules.
+          </p>
+
+        </div>
+      `;
+
+    }
+
+  );
+
+}
+
+
+/* =========================================
+   CREATE STUDENT CARD
 ========================================= */
 
 function createRegistrationCard(
@@ -404,12 +517,23 @@ function createRegistrationCard(
     "pending";
 
 
-  if (status === "approved") {
-    statusClass = "approved";
+  if (
+    status === "approved"
+  ) {
+
+    statusClass =
+      "approved";
+
   }
 
-  if (status === "rejected") {
-    statusClass = "rejected";
+
+  if (
+    status === "rejected"
+  ) {
+
+    statusClass =
+      "rejected";
+
   }
 
 
@@ -419,7 +543,8 @@ function createRegistrationCard(
 
       <h3>
         👤 ${escapeHTML(
-          data.fullName || "Unknown Student"
+          data.fullName ||
+          "Unknown Student"
         )}
       </h3>
 
@@ -550,16 +675,13 @@ function createRegistrationCard(
 
             <button
               class="approve"
-              data-action="approve"
-              data-id="${id}">
+              data-action="approve">
               ✅ Approve
             </button>
 
-
             <button
               class="reject"
-              data-action="reject"
-              data-id="${id}">
+              data-action="reject">
               ❌ Reject
             </button>
 
@@ -574,9 +696,7 @@ function createRegistrationCard(
   `;
 
 
-  /* =========================================
-     APPROVE
-  ========================================= */
+  /* APPROVE */
 
   const approveButton =
     card.querySelector(
@@ -594,9 +714,7 @@ function createRegistrationCard(
   }
 
 
-  /* =========================================
-     REJECT
-  ========================================= */
+  /* REJECT */
 
   const rejectButton =
     card.querySelector(
@@ -615,11 +733,12 @@ function createRegistrationCard(
 
 
   return card;
+
 }
 
 
 /* =========================================
-   APPROVE REGISTRATION
+   APPROVE
 ========================================= */
 
 async function approveRegistration(id) {
@@ -638,6 +757,7 @@ async function approveRegistration(id) {
   try {
 
     await updateDoc(
+
       doc(
         db,
         "registrations",
@@ -648,6 +768,7 @@ async function approveRegistration(id) {
         status: "approved",
         reviewedAt: new Date()
       }
+
     );
 
 
@@ -662,7 +783,7 @@ async function approveRegistration(id) {
     console.error(error);
 
     alert(
-      "❌ Could not approve this registration."
+      "❌ Could not approve registration."
     );
 
   }
@@ -671,14 +792,14 @@ async function approveRegistration(id) {
 
 
 /* =========================================
-   REJECT REGISTRATION
+   REJECT
 ========================================= */
 
 async function rejectRegistration(id) {
 
   const reason =
     prompt(
-      "Please enter the reason for rejecting this registration:"
+      "Enter the reason for rejecting this registration:"
     );
 
 
@@ -690,6 +811,7 @@ async function rejectRegistration(id) {
   try {
 
     await updateDoc(
+
       doc(
         db,
         "registrations",
@@ -701,6 +823,7 @@ async function rejectRegistration(id) {
         rejectionReason: reason,
         reviewedAt: new Date()
       }
+
     );
 
 
@@ -715,7 +838,7 @@ async function rejectRegistration(id) {
     console.error(error);
 
     alert(
-      "Could not reject this registration."
+      "Could not reject registration."
     );
 
   }
@@ -725,17 +848,36 @@ async function rejectRegistration(id) {
 
 /* =========================================
    SECURITY
-   ESCAPE HTML
 ========================================= */
 
 function escapeHTML(value) {
 
   return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+
+    .replaceAll(
+      "&",
+      "&amp;"
+    )
+
+    .replaceAll(
+      "<",
+      "&lt;"
+    )
+
+    .replaceAll(
+      ">",
+      "&gt;"
+    )
+
+    .replaceAll(
+      '"',
+      "&quot;"
+    )
+
+    .replaceAll(
+      "'",
+      "&#039;"
+    );
 
 }
 
