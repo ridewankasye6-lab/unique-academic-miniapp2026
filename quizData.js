@@ -6566,7 +6566,292 @@ const quizData = {
     "ስህተት፦ የሞዛምቢክን ዋና ከተማ ማወቅ አጠቃላይ እውቀት ስለሆነ Semantic memory ነው።",
     "ስህተት፦ ስለ አውሮፕላን አደጋ የታሪክ እውነታን ማስታወስ Semantic memory ነው፤ በግል ያጋጠመ ክስተት አይደለም።"
   ]
-}],
+},
+  {
+    question:
+      "Memory is retention of information in order to use it another time.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation:
+      "Memory is the mental process of encoding, storing, and retaining information so that it can be retrieved and used later.",
+    amharicExplanation:
+      "ማስታወስ (Memory) ማለት መረጃዎችን በአእምሮ ውስጥ መያዝ፣ ማከማቸት እና በኋላ አስፈላጊ ሲሆን እንደገና መጠቀም የሚያስችል የአእምሮ ሂደት ነው።"
+  },
+
+  {
+    question:
+      "Maintenance rehearsal involves repeating information in one's mind.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation:
+      "Maintenance rehearsal involves repeatedly thinking about or saying information to keep it active in short-term memory.",
+    amharicExplanation:
+      "Maintenance rehearsal ማለት አንድን መረጃ በአጭር ጊዜ ማህደረ ትውስታ ውስጥ ለማቆየት በአእምሮ ደጋግሞ ማሰብ ወይም መድገም ማለት ነው።"
+  },
+
+  {
+    question:
+      "The recency effect argues that information that came first is remembered more clearly than information that came last.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation:
+      "This statement describes the primacy effect. The recency effect means that information presented last is usually remembered better because it is still active in short-term memory.",
+    amharicExplanation:
+      "ይህ አባባል Primacy effect የሚባለውን ይገልጻል። Recency effect ግን በመጨረሻ የቀረበ መረጃ በተሻለ ሁኔታ የሚታወስበት ሁኔታ ነው።"
+  },
+
+  {
+    question: "Sensory memory holds the content of our attention.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation:
+      "Sensory memory briefly holds incoming sensory information before attention selects information for further processing.",
+    amharicExplanation:
+      "Sensory memory ወደ አእምሮ የሚገቡ የስሜት ሕዋሳት መረጃዎችን ለአጭር ጊዜ ይይዛል። ትኩረት የሚሰጠው መረጃ ወደሚቀጥለው የማስታወስ ደረጃ ይሄዳል።"
+  },
+
+  {
+    question:
+      "Retroactive interference occurs when new learning interferes with the recall of earlier learning.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation:
+      "Retroactive interference occurs when newly learned information interferes with remembering information learned previously. New blocks old.",
+    amharicExplanation:
+      "Retroactive interference ማለት አዲስ የተማርነው መረጃ ቀደም ሲል የተማርነውን መረጃ ለማስታወስ ሲያስቸግረን ነው። አዲስ መረጃ አሮጌውን ያደናቅፋል።"
+  },
+
+  {
+    question:
+      "Proactive interference happens when the ability to learn new information is distorted by old information that has been learned.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation:
+      "Proactive interference occurs when previously learned information interferes with learning or remembering new information. Old blocks new.",
+    amharicExplanation:
+      "Proactive interference ማለት ቀደም ሲል የተማርነው አሮጌ መረጃ አዲስ መረጃን ለመማር ወይም ለማስታወስ ሲያስቸግረን ነው። አሮጌ መረጃ አዲሱን ያደናቅፋል።"
+  },
+
+  {
+    question:
+      "Information can get into STM from both sensory memory and long-term memory.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation:
+      "Information can enter short-term or working memory from sensory memory through attention, and information can also be retrieved from long-term memory for active processing.",
+    amharicExplanation:
+      "መረጃ ከ Sensory memory በትኩረት ወደ Short-term memory ሊገባ ይችላል። እንዲሁም ከ Long-term memory የታሰበ መረጃ ወደ ስራ ላይ ያለው ማህደረ ትውስታ ሊመጣ ይችላል።"
+  },
+
+  {
+    question:
+      "Bethlehem has two close friends called Hawa and Hayat. She knew Hawa earlier than Hayat. In order to call her earlier friend Hawa, Bethlehem called 'Hayat, Hayat, Hayat...' Which theory of forgetting influences Bethlehem's retention?",
+    options: [
+      "Proactive",
+      "Cue dependent",
+      "Retroactive",
+      "Decay"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The newer information, Hayat, is interfering with Bethlehem's ability to recall the older information, Hawa. New information interfering with old information is retroactive interference.",
+    amharicExplanation:
+      "እዚህ ላይ አዲሷ ጓደኛዋ Hayat የቀድሞዋን ጓደኛዋ Hawa ስም እንዳትያስታውስ እያደረገች ነው። አዲስ መረጃ አሮጌ መረጃን ሲያደናቅፍ Retroactive interference ይባላል።"
+  },
+
+  {
+    question:
+      "Almaz often calls her new boyfriend by her old boyfriend's name. This is an example of:",
+    options: [
+      "Proactive interference",
+      "Retroactive interference",
+      "Cued recall",
+      "Free recall"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The old boyfriend's name interferes with Almaz's ability to remember and use the new boyfriend's name. Old information blocking new information is proactive interference.",
+    amharicExplanation:
+      "የቀድሞው ፍቅረኛ ስም አዲሱን ፍቅረኛ ስም እንዳትጠቀም እያደረገ ነው። አሮጌ መረጃ አዲስ መረጃን ሲያደናቅፍ Proactive interference ይባላል።"
+  },
+
+  {
+    question:
+      "Translating incoming information into a form that can be stored in memory is:",
+    options: [
+      "Rehearsing",
+      "Chunking",
+      "Encoding",
+      "Storing",
+      "Retrieving"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Encoding is the process of transforming incoming information into a form that can be processed and stored in memory.",
+    amharicExplanation:
+      "ወደ አእምሯችን የሚመጣውን መረጃ አእምሯችን ሊረዳውና ሊያስቀምጠው ወደሚችለው ቅርጽ መለወጥ Encoding ይባላል።"
+  },
+
+  {
+    question: "Which one of the following is not a declarative memory?",
+    options: [
+      "Knowing the meaning of chair",
+      "Remembering how to ride a bicycle",
+      "Remembering one's birthday party",
+      "B and C"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Remembering how to ride a bicycle is procedural memory, which is a type of non-declarative memory. Knowing meanings and remembering personal events are forms of declarative memory.",
+    amharicExplanation:
+      "ብስክሌት መንዳት ማስታወስ Procedural memory ሲሆን የ Non-declarative memory አካል ነው። የቃላትን ትርጉም ማወቅ እና የልደት ድግስን ማስታወስ የ Declarative memory አይነቶች ናቸው።"
+  },
+
+  {
+    question:
+      "Which type of long-term memory is an example of declarative memory?",
+    options: [
+      "Ethiopia is the seat of the African Union",
+      "Knowing how to comb your hair",
+      "Writing a letter to someone",
+      "Knowing how to install an electric circuit"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Knowing that Ethiopia is the seat of the African Union is factual knowledge. Factual knowledge is semantic memory, which is a type of declarative memory.",
+    amharicExplanation:
+      "ኢትዮጵያ የአፍሪካ ሕብረት መቀመጫ መሆኗን ማወቅ እውነተኛ እውቀት (Fact) ነው። ይህ Semantic memory ሲሆን Semantic memory ደግሞ የ Declarative memory አካል ነው።"
+  },
+
+  {
+    question:
+      "The technique of grouping information into simple and manageable units for better memory is:",
+    options: [
+      "Rehearsing",
+      "Retrieving",
+      "Encoding",
+      "Attention",
+      "None"
+    ],
+    answer: 4,
+    englishExplanation:
+      "Grouping pieces of information into larger, meaningful units is called chunking. Since chunking is not listed as an option, None is the correct answer.",
+    amharicExplanation:
+      "መረጃዎችን በቡድን በመክፈል ለአእምሮ ቀላል እና ለማስታወስ ቀላል ማድረግ Chunking ይባላል። Chunking በምርጫዎቹ ውስጥ ስለሌለ None ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question:
+      "All of the following are correct about chunking and rehearsing except:",
+    options: [
+      "Chunking is used to increase storage capacity",
+      "Rehearsing is used to increase duration of time",
+      "Both chunking and rehearsing are used in STM memory",
+      "Chunking is used to increase duration of time"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Chunking increases the amount of information that can be handled in short-term memory, while rehearsal helps keep information active for a longer duration. Therefore, saying chunking increases duration is incorrect.",
+    amharicExplanation:
+      "Chunking የ Short-term memory የመረጃ አቅምን (Capacity) ለመጨመር ይረዳል። Rehearsing ደግሞ መረጃው በአጭር ጊዜ ማህደረ ትውስታ ውስጥ የሚቆይበትን Duration ያራዝማል። ስለዚህ Chunking Duration ይጨምራል የሚለው ስህተት ነው።"
+  },
+
+  {
+    question:
+      "While walking with his classmate Meron, Yonatan saw a garden where he spent an impressive part of his life with his former girlfriend. Following his observation of the garden, he recalled forgotten memories associated with that place and felt like crying. Which type of memory is more likely concerned with this case?",
+    options: [
+      "Procedural",
+      "Implicit",
+      "Episodic",
+      "Semantic"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Episodic memory involves remembering personal experiences and events associated with particular times and places.",
+    amharicExplanation:
+      "Episodic memory ማለት ከግል የህይወት ልምዶች፣ ክስተቶች፣ ጊዜዎች እና ቦታዎች ጋር የተያያዙ ትዝታዎችን ማስታወስ ነው።"
+  },
+
+  {
+    question:
+      "The recalling of personal experiences, such as who made a speech at the welcome ceremony at X University, is stored in which type of memory?",
+    options: [
+      "Procedural",
+      "Non-declarative",
+      "Semantic",
+      "Episodic",
+      "A and B"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Remembering a personal experience that happened at a particular event, time, and place is episodic memory.",
+    amharicExplanation:
+      "በአንድ የዩኒቨርሲቲ የመቀበያ ስነ-ስርዓት ላይ የተከሰተን የግል ልምድ ማስታወስ Episodic memory ይባላል።"
+  },
+
+  {
+    question:
+      "Which one of the following types of memory is preferable for remembering a person's birthday?",
+    options: [
+      "Semantic memory",
+      "Non-declarative memory",
+      "Procedural memory",
+      "Episodic memory"
+    ],
+    answer: 3,
+    englishExplanation:
+      "A person's birthday is a personal event associated with a particular date, so it is generally associated with episodic or autobiographical memory.",
+    amharicExplanation:
+      "የአንድ ሰው የልደት ቀን ከግል ህይወት ክስተት እና ከተወሰነ ቀን ጋር የተያያዘ ስለሆነ Episodic memory ጋር ይያያዛል።"
+  },
+
+  {
+    question: "The memory process in which information is saved is termed as:",
+    options: [
+      "Encoding",
+      "Retrieval",
+      "Forgetting",
+      "Storage"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Storage is the process of maintaining and retaining encoded information in the memory system over time.",
+    amharicExplanation:
+      "መረጃን በአእምሮ ውስጥ አስቀምጦ ለተወሰነ ጊዜ የማቆየት ሂደት Storage ይባላል።"
+  },
+
+  {
+    question:
+      "At which stage of memory is information retained until we can select items for attention?",
+    options: [
+      "Short-term memory",
+      "Retrieval",
+      "Sensory memory",
+      "Long-term memory"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Sensory memory briefly retains incoming sensory information until attention selects information for further processing.",
+    amharicExplanation:
+      "Sensory memory ከአካባቢ የሚመጡ የስሜት መረጃዎችን ለአጭር ጊዜ ይይዛል። ትኩረት የሚሰጠው መረጃ ተመርጦ ወደሚቀጥለው የማስታወስ ደረጃ ይሄዳል።"
+  },
+
+  {
+    question:
+      "Our beloved unique Academic families, as you do this exam, you are retrieving information from which type of memory?",
+    options: [
+      "Active",
+      "Long-term",
+      "Sensory",
+      "Procedural",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation:
+      "In this question, Active memory refers to working memory, which is used while actively thinking about and processing information during an exam.",
+    amharicExplanation:
+      "ፈተና በምንሰራበት ጊዜ መረጃን በንቃት ለማሰብ፣ ለማደራጀት እና ለመጠቀም Working/Active memory ይረዳናል። ስለዚህ በተሰጠው ምርጫ Active ትክክለኛው መልስ ነው።"
+  },],
         5: []
 
     },
