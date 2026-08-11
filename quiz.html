@@ -2,41 +2,71 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Unique Academic Quiz</title>
+
     <link rel="stylesheet" href="quiz.css">
+
 </head>
+
 
 <body>
 
-<div class="container">
+
+<div class="container" id="quizContainer">
 
     <!-- Header -->
+
     <header class="header">
 
-        <button id="backBtn" class="btn backBtn">
+        <button
+            id="backBtn"
+            class="btn backBtn"
+        >
             ← Back
         </button>
 
-        <h1>Unique Academic</h1>
 
-        <button id="homeBtn" class="btn homeBtn">
+        <h1>
+            Unique Academic
+        </h1>
+
+
+        <button
+            id="homeBtn"
+            class="btn homeBtn"
+        >
             🏠 Home
         </button>
 
     </header>
 
+
     <!-- Subject -->
+
     <div class="subjectBox">
 
-        <h2 id="subjectName">Subject</h2>
+        <h2 id="subjectName">
+            Subject
+        </h2>
 
-        <p id="chapterName">Chapter 1</p>
+
+        <p id="chapterName">
+            Chapter 1
+        </p>
 
     </div>
 
+
     <!-- Progress -->
+
     <div class="progress">
 
         <span id="questionNumber">
@@ -45,7 +75,9 @@
 
     </div>
 
+
     <!-- Question -->
+
     <div class="questionBox">
 
         <h2 id="question"></h2>
@@ -54,30 +86,96 @@
 
     </div>
 
+
     <!-- Explanation -->
+
     <div class="explanation">
 
-        <h3>📖 English Explanation</h3>
+        <h3>
+            📖 English Explanation
+        </h3>
 
         <p id="englishExplanation"></p>
 
-        <h3>🇪🇹 የአማርኛ ማብራሪያ</h3>
+
+        <h3>
+            🇪🇹 የአማርኛ ማብራሪያ
+        </h3>
 
         <p id="amharicExplanation"></p>
 
     </div>
 
+
     <!-- Next -->
-    <button id="nextBtn" class="nextBtn">
+
+    <button
+        id="nextBtn"
+        class="nextBtn"
+    >
 
         Next Question →
 
     </button>
 
+
 </div>
 
-<script src="quizData.js"></script>
-<script src="quiz.js"></script>
+
+<!-- =====================================
+     ACCESS GUARD
+===================================== -->
+
+<script type="module">
+
+    document.addEventListener(
+        "uniqueAcademicAccessGranted",
+        () => {
+
+            /*
+             * Only load quiz files
+             * after access is approved.
+             */
+
+            const dataScript =
+                document.createElement("script");
+
+            dataScript.src =
+                "quizData.js";
+
+            document.body.appendChild(
+                dataScript
+            );
+
+
+            dataScript.onload = () => {
+
+                const quizScript =
+                    document.createElement("script");
+
+                quizScript.src =
+                    "quiz.js";
+
+                document.body.appendChild(
+                    quizScript
+                );
+
+            };
+
+        }
+    );
+
+</script>
+
+
+<!-- Firebase access check -->
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 
 </body>
+
 </html>
