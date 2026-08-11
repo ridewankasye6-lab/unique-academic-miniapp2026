@@ -96,6 +96,24 @@
       font-weight: bold;
     }
 
+    .approved {
+      background: #dcfce7;
+      color: #15803d;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .rejected {
+      background: #fee2e2;
+      color: #b91c1c;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
     .info-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -119,6 +137,7 @@
 
     .info span {
       font-size: 15px;
+      word-break: break-word;
     }
 
     .payment {
@@ -128,16 +147,6 @@
     }
 
     .payment h4 {
-      margin-bottom: 15px;
-    }
-
-    .screenshot {
-      width: 180px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      display: block;
       margin-bottom: 15px;
     }
 
@@ -166,13 +175,13 @@
       color: white;
     }
 
-    .view {
-      background: #2563eb;
-      color: white;
-    }
-
     button:hover {
       opacity: 0.9;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
 
     .empty {
@@ -181,6 +190,22 @@
       padding: 50px 20px;
       border-radius: 14px;
       color: #64748b;
+    }
+
+    .loading {
+      text-align: center;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 14px;
+      color: #64748b;
+    }
+
+    .error {
+      background: #fee2e2;
+      color: #991b1b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 650px) {
@@ -205,140 +230,516 @@
 
 <body>
 
-  <header class="header">
-    <h1>🎓 Unique Academic</h1>
-    <p>Admin Verification Panel</p>
-  </header>
+<header class="header">
+  <h1>🎓 Unique Academic</h1>
+  <p>Admin Verification Panel</p>
+</header>
 
-  <main class="container">
+<main class="container">
 
-    <div class="title">
-      <h2>🔐 Registration Verification</h2>
-      <p>Review student registration and payment information.</p>
+  <div class="title">
+    <h2>🔐 Registration Verification</h2>
+    <p>Review real student registration and payment information.</p>
+  </div>
+
+  <div class="status-card">
+    <h3>📊 Verification Summary</h3>
+    <p>
+      Pending registrations:
+      <strong id="pendingCount">0</strong>
+    </p>
+  </div>
+
+  <div id="registrationsContainer">
+
+    <div class="loading">
+      ⏳ Loading registrations...
     </div>
 
-    <div class="status-card">
-      <h3>📊 Verification Summary</h3>
-      <p>Pending registrations: <strong id="pendingCount">1</strong></p>
-    </div>
+  </div>
 
-    <!-- Student Registration -->
+</main>
 
-    <div class="student-card">
 
-      <div class="student-header">
-        <h3>👤 Example Student</h3>
-        <span class="pending">PENDING</span>
+<script type="module">
+
+/* =========================================
+   FIREBASE
+========================================= */
+
+import {
+  db
+} from "./firebase-config.js";
+
+import {
+  collection,
+  query,
+  orderBy,
+  onSnapshot,
+  doc,
+  updateDoc
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+
+/* =========================================
+   ELEMENTS
+========================================= */
+
+const container =
+  document.getElementById("registrationsContainer");
+
+const pendingCount =
+  document.getElementById("pendingCount");
+
+
+/* =========================================
+   LOAD REAL REGISTRATIONS
+========================================= */
+
+const registrationsQuery =
+  query(
+    collection(db, "registrations"),
+    orderBy("submittedAt", "desc")
+  );
+
+
+onSnapshot(
+  registrationsQuery,
+
+  (snapshot) => {
+
+    container.innerHTML = "";
+
+    let pending = 0;
+
+
+    if (snapshot.empty) {
+
+      container.innerHTML = `
+        <div class="empty">
+          <h3>📭 No registrations yet</h3>
+          <p>New student registrations will appear here.</p>
+        </div>
+      `;
+
+      pendingCount.textContent = "0";
+
+      return;
+    }
+
+
+    snapshot.forEach((registrationDoc) => {
+
+      const data =
+        registrationDoc.data();
+
+      const registrationId =
+        registrationDoc.id;
+
+
+      if (data.status === "pending") {
+        pending++;
+      }
+
+
+      const card =
+        createRegistrationCard(
+          registrationId,
+          data
+        );
+
+
+      container.appendChild(card);
+
+    });
+
+
+    pendingCount.textContent =
+      pending;
+
+  },
+
+  (error) => {
+
+    console.error(
+      "Firestore error:",
+      error
+    );
+
+    container.innerHTML = `
+      <div class="error">
+        <strong>⚠️ Could not load registrations.</strong>
+        <p>
+          Please check your Firestore security rules
+          and Firebase configuration.
+        </p>
       </div>
+    `;
+
+  }
+);
+
+
+/* =========================================
+   CREATE REGISTRATION CARD
+========================================= */
+
+function createRegistrationCard(
+  id,
+  data
+) {
+
+  const card =
+    document.createElement("div");
+
+  card.className =
+    "student-card";
+
+
+  const status =
+    data.status || "pending";
+
+
+  let statusClass =
+    "pending";
+
+
+  if (status === "approved") {
+    statusClass = "approved";
+  }
+
+  if (status === "rejected") {
+    statusClass = "rejected";
+  }
+
+
+  card.innerHTML = `
+
+    <div class="student-header">
+
+      <h3>
+        👤 ${escapeHTML(
+          data.fullName || "Unknown Student"
+        )}
+      </h3>
+
+      <span class="${statusClass}">
+        ${status.toUpperCase()}
+      </span>
+
+    </div>
+
+
+    <div class="info-grid">
+
+      <div class="info">
+        <strong>Full Name</strong>
+        <span>
+          ${escapeHTML(
+            data.fullName || "—"
+          )}
+        </span>
+      </div>
+
+
+      <div class="info">
+        <strong>Phone</strong>
+        <span>
+          ${escapeHTML(
+            data.phone || "—"
+          )}
+        </span>
+      </div>
+
+
+      <div class="info">
+        <strong>Email</strong>
+        <span>
+          ${escapeHTML(
+            data.email || "—"
+          )}
+        </span>
+      </div>
+
+
+      <div class="info">
+        <strong>University</strong>
+        <span>
+          ${escapeHTML(
+            data.university || "—"
+          )}
+        </span>
+      </div>
+
+
+      <div class="info">
+        <strong>Department</strong>
+        <span>
+          ${escapeHTML(
+            data.department || "—"
+          )}
+        </span>
+      </div>
+
+
+      <div class="info">
+        <strong>User ID</strong>
+        <span>
+          ${escapeHTML(
+            data.userId || "—"
+          )}
+        </span>
+      </div>
+
+    </div>
+
+
+    <div class="payment">
+
+      <h4>💰 Payment Information</h4>
+
 
       <div class="info-grid">
 
         <div class="info">
-          <strong>Full Name</strong>
-          <span>Example Student</span>
+          <strong>Amount</strong>
+          <span>
+            ${data.amount || 300}
+            ${escapeHTML(
+              data.currency || "ETB"
+            )}
+          </span>
         </div>
 
-        <div class="info">
-          <strong>Phone</strong>
-          <span>09XXXXXXXX</span>
-        </div>
 
         <div class="info">
-          <strong>University</strong>
-          <span>Example University</span>
+          <strong>Payment Method</strong>
+          <span>
+            ${escapeHTML(
+              data.paymentMethod || "—"
+            )}
+          </span>
         </div>
 
+
         <div class="info">
-          <strong>Department</strong>
-          <span>Law</span>
+          <strong>Transaction Reference</strong>
+          <span>
+            ${escapeHTML(
+              data.paymentReference || "—"
+            )}
+          </span>
+        </div>
+
+
+        <div class="info">
+          <strong>Payment Recipient</strong>
+          <span>
+            Rediwan Kassiye
+          </span>
         </div>
 
       </div>
 
-      <div class="payment">
 
-        <h4>💰 Payment Information</h4>
+      ${
+        status === "pending"
+        ? `
 
-        <div class="info-grid">
+          <div class="buttons">
 
-          <div class="info">
-            <strong>Amount</strong>
-            <span>300 ETB</span>
+            <button
+              class="approve"
+              data-action="approve"
+              data-id="${id}">
+              ✅ Approve
+            </button>
+
+
+            <button
+              class="reject"
+              data-action="reject"
+              data-id="${id}">
+              ❌ Reject
+            </button>
+
           </div>
 
-          <div class="info">
-            <strong>Payment Method</strong>
-            <span>CBE</span>
-          </div>
-
-          <div class="info">
-            <strong>Transaction Reference</strong>
-            <span>EXAMPLE123456</span>
-          </div>
-
-          <div class="info">
-            <strong>Payment Recipient</strong>
-            <span>Rediwan Kassiye</span>
-          </div>
-
-        </div>
-
-        <h4>📸 Payment Screenshot</h4>
-
-        <img
-          class="screenshot"
-          src="https://via.placeholder.com/180x220?text=Payment+Screenshot"
-          alt="Payment Screenshot"
-        >
-
-        <div class="buttons">
-
-          <button class="view" onclick="viewScreenshot()">
-            👁️ View Screenshot
-          </button>
-
-          <button class="approve" onclick="approveStudent()">
-            ✅ Approve
-          </button>
-
-          <button class="reject" onclick="rejectStudent()">
-            ❌ Reject
-          </button>
-
-        </div>
-
-      </div>
+        `
+        : ""
+      }
 
     </div>
 
-  </main>
+  `;
 
-  <script>
 
-    function viewScreenshot() {
-      alert("Payment screenshot will open here.");
-    }
+  /* =========================================
+     APPROVE
+  ========================================= */
 
-    function approveStudent() {
-      const confirmApproval =
-        confirm("Are you sure you want to APPROVE this registration?");
+  const approveButton =
+    card.querySelector(
+      '[data-action="approve"]'
+    );
 
-      if (confirmApproval) {
-        alert("✅ Registration approved successfully!");
+
+  if (approveButton) {
+
+    approveButton.addEventListener(
+      "click",
+      () => approveRegistration(id)
+    );
+
+  }
+
+
+  /* =========================================
+     REJECT
+  ========================================= */
+
+  const rejectButton =
+    card.querySelector(
+      '[data-action="reject"]'
+    );
+
+
+  if (rejectButton) {
+
+    rejectButton.addEventListener(
+      "click",
+      () => rejectRegistration(id)
+    );
+
+  }
+
+
+  return card;
+}
+
+
+/* =========================================
+   APPROVE REGISTRATION
+========================================= */
+
+async function approveRegistration(id) {
+
+  const confirmed =
+    confirm(
+      "Are you sure you want to APPROVE this registration?"
+    );
+
+
+  if (!confirmed) {
+    return;
+  }
+
+
+  try {
+
+    await updateDoc(
+      doc(
+        db,
+        "registrations",
+        id
+      ),
+
+      {
+        status: "approved",
+        reviewedAt: new Date()
       }
-    }
+    );
 
-    function rejectStudent() {
-      const reason = prompt(
-        "Please enter the reason for rejecting this registration:"
-      );
 
-      if (reason) {
-        alert("❌ Registration rejected.\nReason: " + reason);
+    alert(
+      "✅ Registration approved successfully."
+    );
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+    alert(
+      "❌ Could not approve this registration."
+    );
+
+  }
+
+}
+
+
+/* =========================================
+   REJECT REGISTRATION
+========================================= */
+
+async function rejectRegistration(id) {
+
+  const reason =
+    prompt(
+      "Please enter the reason for rejecting this registration:"
+    );
+
+
+  if (!reason) {
+    return;
+  }
+
+
+  try {
+
+    await updateDoc(
+      doc(
+        db,
+        "registrations",
+        id
+      ),
+
+      {
+        status: "rejected",
+        rejectionReason: reason,
+        reviewedAt: new Date()
       }
-    }
+    );
 
-  </script>
+
+    alert(
+      "❌ Registration rejected."
+    );
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+    alert(
+      "Could not reject this registration."
+    );
+
+  }
+
+}
+
+
+/* =========================================
+   SECURITY
+   ESCAPE HTML
+========================================= */
+
+function escapeHTML(value) {
+
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+
+}
+
+</script>
 
 </body>
 </html>
