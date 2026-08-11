@@ -18,7 +18,8 @@ const securityStep =
 
 const paymentStep =
     document.getElementById("paymentStep");
-
+const verificationStep =
+    document.getElementById("verificationStep");
 
 const stepIndicator1 =
     document.getElementById("stepIndicator1");
@@ -28,6 +29,8 @@ const stepIndicator2 =
 
 const stepIndicator3 =
     document.getElementById("stepIndicator3");
+const stepIndicator4 =
+    document.getElementById("stepIndicator4");
 
 
 /* =========================================
@@ -582,28 +585,26 @@ document
 
     });
 
-
-
 /* =========================================
-   STEP 3 → TEMPORARY SUBMISSION
+   STEP 3 → STEP 4 VERIFICATION
 ========================================= */
 
 document
     .getElementById("submitPaymentBtn")
     .addEventListener("click", function () {
 
-
         const paymentReference =
             document
                 .getElementById("paymentReference")
                 .value.trim();
-
 
         const screenshot =
             document
                 .getElementById("paymentScreenshot")
                 .files;
 
+
+        /* CHECK PAYMENT METHOD */
 
         if (selectedPaymentMethod === "") {
 
@@ -615,6 +616,8 @@ document
         }
 
 
+        /* CHECK REFERENCE */
+
         if (paymentReference === "") {
 
             alert(
@@ -624,6 +627,8 @@ document
             return;
         }
 
+
+        /* CHECK SCREENSHOT */
 
         if (screenshot.length === 0) {
 
@@ -635,9 +640,30 @@ document
         }
 
 
-        alert(
-            "Payment information completed successfully! " +
-            "The next stage will be payment verification."
-        );
+        /* HIDE PAYMENT */
+
+        paymentStep.style.display = "none";
+
+
+        /* SHOW VERIFICATION */
+
+        verificationStep.style.display = "block";
+
+
+        /* UPDATE STEP INDICATORS */
+
+        stepIndicator3.classList.remove("active");
+
+        stepIndicator3.classList.add("completed");
+
+        stepIndicator4.classList.add("active");
+
+
+        /* SCROLL TO TOP */
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
     });
