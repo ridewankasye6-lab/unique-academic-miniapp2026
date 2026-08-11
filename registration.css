@@ -451,3 +451,155 @@ footer {
         font-size: 13px;
     }
 }
+
+/* =========================================
+   COMPLETED STEP
+========================================= */
+
+.step.completed {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.step.completed .step-number {
+    background: #16a34a;
+    color: white;
+}
+
+
+/* =========================================
+   PASSWORD STRENGTH
+========================================= */
+
+.password-strength {
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.strength-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 7px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.password-strength p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.password-strength p.weak {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.password-strength p.medium {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.password-strength p.strong {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PASSWORD REQUIREMENTS
+========================================= */
+
+.password-requirements {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.password-requirements h4 {
+    margin: 0 0 8px;
+    color: #1e3a8a;
+}
+
+.password-requirements p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.password-requirements p.valid {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   SECURITY BUTTONS
+========================================= */
+
+.security-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.security-buttons .continue-btn {
+    flex: 1;
+    margin-top: 0;
+}
+
+.back-btn {
+    padding: 14px 20px;
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    color: #444;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .security-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .back-btn {
+        width: 100%;
+    }
+
+}
