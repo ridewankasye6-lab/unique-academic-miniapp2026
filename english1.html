@@ -1,85 +1,808 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 
-<head>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-<title>English Skill I</title>
+<title>English Skill I | Unique Academic</title>
 
 <link rel="stylesheet" href="style.css">
 
-</head>
+<style>
 
-<body>
+    .access-check {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 30px 20px;
+        text-align: center;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
 
-<h1>🇬🇧 English Skill I</h1>
+    .access-icon {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
 
-<p><b>BDU Freshman Course</b></p>
+    .access-check h2 {
+        margin-bottom: 10px;
+    }
+
+    .access-check p {
+        color: #64748b;
+        line-height: 1.6;
+    }
+
+    .access-status {
+        display: inline-block;
+        margin: 18px 0;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .status-pending {
+        background: #fff7ed;
+        color: #c2410c;
+    }
+
+    .status-rejected {
+        background: #fee2e2;
+        color: #b91c1c;
+    }
+
+    .status-login {
+        background: #dbeafe;
+        color: #1d4ed8;
+    }
+
+    .hidden-content {
+        display: none;
+    }
+
+    .logout-course {
+        margin-top: 10px;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        background: #374151;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+</style>
+
+</head><body><!-- =========================================
+     PAGE HEADER
+========================================= --><header style="text-align:center; padding:25px 15px;"><h1>🇬🇧 English Skill I</h1>
+
+<p>
+    <b>BDU Freshman Course</b>
+</p>
+
+</header><!-- =========================================
+     ACCESS CHECK
+========================================= --><div id="accessCheck" class="access-check"><div class="access-icon">
+    ⏳
+</div>
+
+<h2>
+    Checking your access...
+</h2>
+
+<p>
+    Please wait while we verify your account.
+</p>
+
+</div><!-- =========================================
+     PROTECTED COURSE CONTENT
+========================================= --><div
+    id="courseContent"
+    class="hidden-content"
+><div style="text-align:center; margin-bottom:25px;">
+
+    <span
+        style="
+            display:inline-block;
+            padding:8px 15px;
+            background:#dcfce7;
+            color:#15803d;
+            border-radius:20px;
+            font-weight:bold;
+        "
+    >
+        🔓 Access Granted
+    </span>
+
+</div>
+
 
 <h2>📚 Chapters</h2>
 
-<p>📗 <a href="english1-chapter1.html">Chapter 1</a></p>
-<p>📗 <a href="english1-chapter2.html">Chapter 2</a></p>
-<p>📗 <a href="english1-chapter3.html">Chapter 3</a></p>
-<p>📗 <a href="english1-chapter4.html">Chapter 4</a></p>
-<p>📗 <a href="english1-chapter5.html">Chapter 5</a></p>
+
+<p>
+    📗
+    <a href="english1-chapter1.html">
+        Chapter 1
+    </a>
+</p>
+
+<p>
+    📗
+    <a href="english1-chapter2.html">
+        Chapter 2
+    </a>
+</p>
+
+<p>
+    📗
+    <a href="english1-chapter3.html">
+        Chapter 3
+    </a>
+</p>
+
+<p>
+    📗
+    <a href="english1-chapter4.html">
+        Chapter 4
+    </a>
+</p>
+
+<p>
+    📗
+    <a href="english1-chapter5.html">
+        Chapter 5
+    </a>
+</p>
+
 
 <h2>📌 Resources</h2>
 
-<p><a href="english1-notes.html">📄 Full Notes</a></p>
+<p>
+    <a href="english1-notes.html">
+        📄 Full Notes
+    </a>
+</p>
 
-<p>🎥 Video Tutorial</p>
+<p>
+    🎥 Video Tutorial
+</p>
+
 
 <h2>📝 Chapter Quizzes</h2>
 
-<div class="quiz-card">
-<div class="quiz-progress">0%</div>
-<div class="quiz-info">
-<span class="quiz-badge">Chapter 1</span>
-<h3>Chapter 1 Quiz</h3>
-</div>
-<a href="quiz.html?subject=english1&chapter=1" class="quiz-arrow">➜</a>
-</div>
 
 <div class="quiz-card">
-<div class="quiz-progress">0%</div>
-<div class="quiz-info">
-<span class="quiz-badge">Chapter 2</span>
-<h3>Chapter 2 Quiz</h3>
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 1
+        </span>
+
+        <h3>
+            Chapter 1 Quiz
+        </h3>
+
+    </div>
+
+    <a
+        href="quiz.html?subject=english1&chapter=1"
+        class="quiz-arrow"
+    >
+        ➜
+    </a>
+
 </div>
-<a href="quiz.html?subject=english1&chapter=2" class="quiz-arrow">➜</a>
-</div>
+
 
 <div class="quiz-card">
-<div class="quiz-progress">0%</div>
-<div class="quiz-info">
-<span class="quiz-badge">Chapter 3</span>
-<h3>Chapter 3 Quiz</h3>
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 2
+        </span>
+
+        <h3>
+            Chapter 2 Quiz
+        </h3>
+
+    </div>
+
+    <a
+        href="quiz.html?subject=english1&chapter=2"
+        class="quiz-arrow"
+    >
+        ➜
+    </a>
+
 </div>
-<a href="quiz.html?subject=english1&chapter=3" class="quiz-arrow">➜</a>
-</div>
+
 
 <div class="quiz-card">
-<div class="quiz-progress">0%</div>
-<div class="quiz-info">
-<span class="quiz-badge">Chapter 4</span>
-<h3>Chapter 4 Quiz</h3>
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 3
+        </span>
+
+        <h3>
+            Chapter 3 Quiz
+        </h3>
+
+    </div>
+
+    <a
+        href="quiz.html?subject=english1&chapter=3"
+        class="quiz-arrow"
+    >
+        ➜
+    </a>
+
 </div>
-<a href="quiz.html?subject=english1&chapter=4" class="quiz-arrow">➜</a>
-</div>
+
 
 <div class="quiz-card">
-<div class="quiz-progress">0%</div>
-<div class="quiz-info">
-<span class="quiz-badge">Chapter 5</span>
-<h3>Chapter 5 Quiz</h3>
-</div>
-<a href="quiz.html?subject=english1&chapter=5" class="quiz-arrow">➜</a>
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 4
+        </span>
+
+        <h3>
+            Chapter 4 Quiz
+        </h3>
+
+    </div>
+
+    <a
+        href="quiz.html?subject=english1&chapter=4"
+        class="quiz-arrow"
+    >
+        ➜
+    </a>
+
 </div>
 
-<p style="text-align:center;">
-<a class="button" href="index.html">🏠 Back Home</a>
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 5
+        </span>
+
+        <h3>
+            Chapter 5 Quiz
+        </h3>
+
+    </div>
+
+    <a
+        href="quiz.html?subject=english1&chapter=5"
+        class="quiz-arrow"
+    >
+        ➜
+    </a>
+
+</div>
+
+
+<p style="text-align:center; margin-top:30px;">
+
+    <a
+        class="button"
+        href="index.html"
+    >
+        🏠 Back Home
+    </a>
+
 </p>
 
-</body>
+</div><!-- =========================================
+     FIREBASE ACCESS CONTROL
+========================================= --><script type="module">
 
-</html>
+    import {
+        db,
+        auth
+    } from "./firebase-config.js";
+
+
+    import {
+        collection,
+        query,
+        where,
+        getDocs
+    } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+
+    import {
+        onAuthStateChanged,
+        signOut
+    } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+
+    const ADMIN_EMAIL =
+        "ridewankasye6@gmail.com";
+
+
+    const accessCheck =
+        document.getElementById("accessCheck");
+
+
+    const courseContent =
+        document.getElementById("courseContent");
+
+
+    onAuthStateChanged(
+        auth,
+        async (user) => {
+
+            /* =================================
+               NOT LOGGED IN
+            ================================= */
+
+            if (!user) {
+
+                accessCheck.innerHTML = `
+
+                    <div class="access-icon">
+                        🔒
+                    </div>
+
+                    <h2>
+                        Login Required
+                    </h2>
+
+                    <p>
+                        You need a Unique Academic account
+                        to access English Skill I.
+                    </p>
+
+                    <div class="access-status status-login">
+                        🔐 Account Required
+                    </div>
+
+                    <br>
+
+                    <a
+                        href="login.html"
+                        class="button"
+                    >
+                        🔐 Login
+                    </a>
+
+                    <br><br>
+
+                    <a
+                        href="registration.html"
+                        class="button"
+                    >
+                        📝 Create Account
+                    </a>
+
+                    <br><br>
+
+                    <a href="index.html">
+                        🏠 Back Home
+                    </a>
+
+                `;
+
+                return;
+            }
+
+
+            /* =================================
+               ADMIN
+            ================================= */
+
+            if (
+                user.email &&
+                user.email.toLowerCase() ===
+                ADMIN_EMAIL.toLowerCase()
+            ) {
+
+                grantAccess(
+                    "👨‍💼 Admin Access"
+                );
+
+                return;
+            }
+
+
+            /* =================================
+               FIND STUDENT REGISTRATION
+            ================================= */
+
+            try {
+
+                const registrationQuery =
+                    query(
+                        collection(
+                            db,
+                            "registrations"
+                        ),
+                        where(
+                            "userId",
+                            "==",
+                            user.uid
+                        )
+                    );
+
+
+                const snapshot =
+                    await getDocs(
+                        registrationQuery
+                    );
+
+
+                /* =================================
+                   NO REGISTRATION
+                ================================= */
+
+                if (snapshot.empty) {
+
+                    accessCheck.innerHTML = `
+
+                        <div class="access-icon">
+                            🔒
+                        </div>
+
+                        <h2>
+                            Registration Required
+                        </h2>
+
+                        <p>
+                            Your account does not have
+                            an approved Unique Academic
+                            registration.
+                        </p>
+
+                        <div class="access-status status-login">
+                            🔐 No Registration Found
+                        </div>
+
+                        <br>
+
+                        <a
+                            href="registration.html"
+                            class="button"
+                        >
+                            📝 Register Now
+                        </a>
+
+                        <br><br>
+
+                        <a href="index.html">
+                            🏠 Back Home
+                        </a>
+
+                    `;
+
+                    return;
+                }
+
+
+                /* =================================
+                   GET REGISTRATION
+                ================================= */
+
+                let registration = null;
+
+                snapshot.forEach(
+                    (doc) => {
+
+                        registration =
+                            doc.data();
+
+                    }
+                );
+
+
+                const status =
+                    registration.status ||
+                    "pending";
+
+
+                /* =================================
+                   APPROVED
+                ================================= */
+
+                if (
+                    status === "approved"
+                ) {
+
+                    grantAccess(
+                        "✅ Payment Approved"
+                    );
+
+                    return;
+                }
+
+
+                /* =================================
+                   PENDING
+                ================================= */
+
+                if (
+                    status === "pending"
+                ) {
+
+                    accessCheck.innerHTML = `
+
+                        <div class="access-icon">
+                            ⏳
+                        </div>
+
+                        <h2>
+                            Payment Verification Pending
+                        </h2>
+
+                        <p>
+                            Your registration has been
+                            submitted successfully.
+                        </p>
+
+                        <div class="access-status status-pending">
+                            🟡 PENDING VERIFICATION
+                        </div>
+
+                        <p>
+                            The Unique Academic administration
+                            is reviewing your payment reference.
+                        </p>
+
+                        <br>
+
+                        <a
+                            href="index.html"
+                            class="button"
+                        >
+                            🏠 Back Home
+                        </a>
+
+                    `;
+
+                    return;
+                }
+
+
+                /* =================================
+                   REJECTED
+                ================================= */
+
+                if (
+                    status === "rejected"
+                ) {
+
+                    const reason =
+                        registration.rejectionReason ||
+                        "Your registration was not approved.";
+
+
+                    accessCheck.innerHTML = `
+
+                        <div class="access-icon">
+                            ❌
+                        </div>
+
+                        <h2>
+                            Registration Not Approved
+                        </h2>
+
+                        <p>
+                            Your payment verification
+                            was not approved.
+                        </p>
+
+                        <div class="access-status status-rejected">
+                            ❌ REJECTED
+                        </div>
+
+                        <p>
+                            Reason:
+                            <strong>
+                                ${escapeHTML(reason)}
+                            </strong>
+                        </p>
+
+                        <br>
+
+                        <a
+                            href="registration.html"
+                            class="button"
+                        >
+                            📝 Contact / Register Again
+                        </a>
+
+                        <br><br>
+
+                        <a href="index.html">
+                            🏠 Back Home
+                        </a>
+
+                    `;
+
+                    return;
+                }
+
+
+                /* =================================
+                   UNKNOWN STATUS
+                ================================= */
+
+                accessCheck.innerHTML = `
+
+                    <div class="access-icon">
+                        🔒
+                    </div>
+
+                    <h2>
+                        Access Locked
+                    </h2>
+
+                    <p>
+                        Your account has not been
+                        approved for course access.
+                    </p>
+
+                    <br>
+
+                    <a href="index.html">
+                        🏠 Back Home
+                    </a>
+
+                `;
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Access check error:",
+                    error
+                );
+
+
+                accessCheck.innerHTML = `
+
+                    <div class="access-icon">
+                        ⚠️
+                    </div>
+
+                    <h2>
+                        Unable to Check Access
+                    </h2>
+
+                    <p>
+                        We could not verify your
+                        registration right now.
+                    </p>
+
+                    <p>
+                        Please try again.
+                    </p>
+
+                    <br>
+
+                    <a href="index.html">
+                        🏠 Back Home
+                    </a>
+
+                `;
+
+            }
+
+        }
+    );
+
+
+    /* =========================================
+       GRANT ACCESS
+    ========================================= */
+
+    function grantAccess(statusText) {
+
+        accessCheck.innerHTML = `
+
+            <div class="access-icon">
+                🔓
+            </div>
+
+            <h2>
+                Welcome to English Skill I!
+            </h2>
+
+            <p>
+                Your account has access to
+                this course.
+            </p>
+
+            <div
+                class="access-status"
+                style="
+                    background:#dcfce7;
+                    color:#15803d;
+                "
+            >
+                ${statusText}
+            </div>
+
+        `;
+
+
+        accessCheck.style.display =
+            "none";
+
+
+        courseContent.style.display =
+            "block";
+
+    }
+
+
+    /* =========================================
+       ESCAPE HTML
+    ========================================= */
+
+    function escapeHTML(value) {
+
+        return String(value)
+
+            .replaceAll(
+                "&",
+                "&amp;"
+            )
+
+            .replaceAll(
+                "<",
+                "&lt;"
+            )
+
+            .replaceAll(
+                ">",
+                "&gt;"
+            )
+
+            .replaceAll(
+                '"',
+                "&quot;"
+            )
+
+            .replaceAll(
+                "'",
+                "&#039;"
+            );
+
+    }
+
+</script></body></html>
