@@ -1,3 +1,6 @@
+const currentPage = window.location.pathname.toLowerCase();
+
+const isQuizPage = currentPage.includes("quiz.html");
 import { db, auth } from "./firebase-config.js";
 
 import {
@@ -350,12 +353,10 @@ GRANT ACCESS
 =========================================
 */
 
+
 function grantAccess(statusText) {
 
-    document.body.classList.add(
-        "access-granted"
-    );
-
+    document.body.classList.add("access-granted");
 
     document.dispatchEvent(
         new CustomEvent(
