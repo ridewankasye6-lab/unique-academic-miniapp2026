@@ -2,9 +2,10 @@ import { db, auth } from "./firebase-config.js";
 
 import {
     collection,
-    getDocs
+    getDocs,
+    doc,
+    updateDoc
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
-
 import {
     onAuthStateChanged,
     signOut
@@ -273,9 +274,46 @@ APPROVE
 
 async function approveRegistration(id) {
 
-    alert(
-        "Approval will be added in the next step."
+    const confirmed = confirm(
+        "Are you sure you want to approve this registration?"
     );
+
+    if (!confirmed) {
+        return;
+    }
+
+    try {
+
+        const registrationRef = doc(
+            db,
+            "registrations",
+            id
+        );
+
+        await updateDoc(
+            registrationRef,
+            {
+                status: "approved"
+            }
+        );
+
+        alert(
+            "✅ Student approved successfully!"
+        );
+
+        loadRegistrations();
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        alert(
+            "❌ Failed to approve student."
+        );
+
+    }
 
 }
 
@@ -288,13 +326,49 @@ REJECT
 
 async function rejectRegistration(id) {
 
-    alert(
-        "Rejection will be added in the next step."
+    const reason = prompt(
+        "Enter the reason for rejection:"
     );
 
+    if (!reason) {
+        return;
+    }
+
+    try {
+
+        const registrationRef = doc(
+            db,
+            "registrations",
+            id
+        );
+
+        await updateDoc(
+            registrationRef,
+            {
+                status: "rejected",
+                rejectionReason: reason
+            }
+        );
+
+        alert(
+            "❌ Registration rejected."
+        );
+
+        loadRegistrations();
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        alert(
+            "❌ Failed to reject registration."
+        );
+
+    }
+
 }
-
-
 /*
 ====================================
 ESCAPE HTML
