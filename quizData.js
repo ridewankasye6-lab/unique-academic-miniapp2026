@@ -6852,7 +6852,737 @@ const quizData = {
     amharicExplanation:
       "ፈተና በምንሰራበት ጊዜ መረጃን በንቃት ለማሰብ፣ ለማደራጀት እና ለመጠቀም Working/Active memory ይረዳናል። ስለዚህ በተሰጠው ምርጫ Active ትክክለኛው መልስ ነው።"
   }, {     question: "The three functions of memory are _______.",     options: [       "automatic processing, effortful processing, and storage",       "encoding, processing, and storage",       "automatic processing, effortful processing, and retrieval",       "encoding, storage, and retrieval"     ],     answer: 3,     englishExplanation:       "Memory relies on three fundamental information-processing steps: encoding, storage, and retrieval. Encoding means getting information into memory, storage means maintaining the information over time, and retrieval means bringing stored information back when needed.",     amharicExplanation:       "ማስታወስ (Memory) በሶስት መሰረታዊ ሂደቶች ይከናወናል፦ Encoding ማለት መረጃን ወደ ማህደረ ትውስታ ማስገባት፣ Storage ማለት መረጃን ማስቀመጥ እና Retrieval ማለት የተቀመጠውን መረጃ እንደገና ማስታወስ ነው።"   },    {     question:       "We forget because learning new things interferes with our memory of what we learned earlier, is an example of _______.",     options: [       "Retrieval",       "Decay",       "Interference",       "Motivation"     ],     answer: 2,     englishExplanation:       "Interference occurs when memories compete with one another and make it difficult to recall information. In this case, newly learned information interferes with previously learned information.",     amharicExplanation:       "Interference (ጣልቃ ገብነት) ማለት አዲስ ወይም የቀድሞ መረጃዎች እርስ በእርሳቸው ሲጋጩ ወይም አንዱ ሌላውን ለማስታወስ ሲያስቸግር የሚከሰት የመርሳት ምክንያት ነው።"   },    {     question: "Visual sensory register holds information for up to about _______.",     options: [       "4 seconds",       "3 seconds",       "2 seconds",       "1 second"     ],     answer: 3,     englishExplanation:       "The visual sensory register, also called iconic memory, holds visual information for a very brief period, typically about 1 second or less.",     amharicExplanation:       "የእይታ ስሜት ማህደረ ትውስታ (Visual sensory register/Iconic memory) ያየነውን የእይታ መረጃ ለአጭር ጊዜ፣ በተለምዶ 1 ሰከንድ ያህል ወይም ከዚያ በታች ይይዛል።"   },    {     question:       "Memories which can last for days, months, years or even a lifetime are stored in _______.",     options: [       "Short-term memory",       "Long-term memory",       "Semantic memory",       "Episodic memory"     ],     answer: 1,     englishExplanation:       "Long-term memory (LTM) stores information for extended periods. Memories can remain for days, months, years, or even throughout a person's lifetime.",     amharicExplanation:       "Long-term memory (የረጅም ጊዜ ማህደረ ትውስታ) መረጃዎችን ለረጅም ጊዜ የሚያስቀምጥ የማህደረ ትውስታ ክፍል ነው። መረጃዎች ለቀናት፣ ለወራት፣ ለዓመታት ወይም እስከ ህይወት ዘመን ሊቆዩ ይችላሉ።"   },    {     question:       "Forgetting caused by the prior learning of other material is called _______.",     options: [       "Interference",       "Retroactive interference",       "Proactive interference",       "All of the above"     ],     answer: 2,     englishExplanation:       "Proactive interference occurs when previously learned information interferes with our ability to remember newly learned information. Memory rule: Old → New = Proactive.",     amharicExplanation:       "Proactive interference ማለት ቀደም ሲል የተማርነው አሮጌ መረጃ አዲስ መረጃን ለማስታወስ ሲያስቸግረን ነው። ለማስታወስ: አሮጌ → አዲስ = Proactive."   },    {     question: "STM can hold:",     options: [       "7 units of information",       "7 units of information plus or minus two",       "7 units of information plus two",       "5 units of information plus or minus two"     ],     answer: 1,     englishExplanation:       "According to George Miller's classic research, short-term memory can hold approximately 7 items, plus or minus 2, meaning about 5 to 9 items.",     amharicExplanation:       "እንደ George Miller ጥናት፣ የአጭር ጊዜ ማህደረ ትውስታ (STM) በአማካይ 7 መረጃዎች ± 2 መያዝ ይችላል። ይህም በግምት 5 እስከ 9 ክፍሎች ማለት ነው።"   },    {     question: "The storage capacity of long-term memory is _______.",     options: [       "one or two bits of information",       "seven bits, plus or minus two",       "limited",       "essentially limitless"     ],     answer: 3,     englishExplanation:       "Unlike short-term memory, long-term memory has a very large storage capacity and is considered essentially limitless. It can store a huge amount of knowledge, experiences, and skills.",     amharicExplanation:       "ከ Short-term memory በተለየ፣ Long-term memory እጅግ ሰፊ የማከማቸት አቅም አለው። ስለዚህ አቅሙ essentially limitless (በተግባር ገደብ የለሽ) ተብሎ ይታሰባል።"   },    {     question:       "In the Atkinson-Shiffrin theory, memory starts with a sensory input from the:",     options: [       "Brain",       "Spinal cord",       "Environment",       "None of the above"     ],     answer: 2,     englishExplanation:       "According to the Atkinson-Shiffrin multi-store model, memory begins when sensory information from the environment enters our sensory systems. It then passes through sensory memory and may move into short-term and long-term memory.",     amharicExplanation:       "በ Atkinson-Shiffrin የማህደረ ትውስታ ሞዴል መሰረት፣ ሂደቱ የሚጀምረው ከአካባቢያችን (Environment) በሚመጡ የስሜት ግብዓቶች ነው። ከዚያም መረጃው Sensory memory → Short-term memory → Long-term memory ሊሄድ ይችላል።"   },    {     question:       "Which of the following memory is more widely known as iconic memory?",     options: [       "Auditory sensory memory",       "Visual sensory memory",       "Short-term memory",       "Long-term memory"     ],     answer: 1,     englishExplanation:       "Iconic memory is another name for visual sensory memory. It briefly stores visual information such as images and scenes that we have just seen.",     amharicExplanation:       "Iconic memory ማለት Visual sensory memory (የእይታ ስሜት ማህደረ ትውስታ) ሌላ መጠሪያ ነው። አይኖቻችን ያዩትን ምስል ለአጭር ጊዜ ይይዛል።"   },    {     question:       "Riding a bicycle, typing, writing are simple examples of:",     options: [       "Semantic Memory",       "Procedural Memory",       "Episodic Memory",       "Symbolic comparison"     ],     answer: 1,     englishExplanation:       "Procedural memory stores knowledge about how to perform skills and actions. Examples include riding a bicycle, typing, writing, swimming, and other learned motor skills.",     amharicExplanation:       "Procedural memory (የሂደት/የክህሎት ማህደረ ትውስታ) እንዴት አንድን ክህሎት መፈጸም እንደሚቻል የሚያስታውስ ነው። ለምሳሌ፦ ብስክሌት መንዳት፣ መጻፍ እና ኪቦርድ መጠቀም።"   },    {     question:       "Which of the following types of long-term memory deals with an individual's personal experiences?",     options: [       "Semantic memory",       "Episodic memory",       "Procedural memory",       "None of the above"     ],     answer: 1,     englishExplanation:       "Episodic memory stores memories of specific personal experiences and events. These memories are often connected to a particular time and place, such as remembering your first day at university.",     amharicExplanation:       "Episodic memory የግለሰብ የግል ልምዶችንና በህይወቱ የተከሰቱ የተወሰኑ ክስተቶችን ያስቀምጣል። ለምሳሌ የመጀመሪያ የዩኒቨርሲቲ ቀንን ማስታወስ።"   },    {     question:       "The process of linking new information in a meaningful way with information already stored in memory or with other new information, to aid in its storage and retrieval from long term memory.",     options: [       "Maintenance rehearsal",       "Elaborative rehearsal",       "Non-specific rehearsal",       "Sustenance rehearsal"     ],     answer: 1,     englishExplanation:       "Elaborative rehearsal means connecting new information with information that you already know. Because the new information is given meaning and connected to existing knowledge, it is easier to store and retrieve from long-term memory.",     amharicExplanation:       "Elaborative rehearsal ማለት አዲስ መረጃን ከዚህ ቀደም ከምናውቀው መረጃ ጋር በማያያዝ ትርጉም ሰጥቶ ማስታወስ ነው። ይህ አዲሱ መረጃ ወደ Long-term memory እንዲገባና በኋላ በቀላሉ እንዲታወስ ይረዳል።"   },],
-        5: []
+        5: [{
+    question: "Motivation refers to what causes individuals to take action.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Motivation is the force or factor that initiates, directs, and sustains human behavior toward a specific goal. For example, feeling hungry can cause a person to look for food.",
+    amharicExplanation: "📚 ተነሳሽነት (Motivation) ሰዎችን ወደ አንድ ግብ ወይም ተግባር እንዲንቀሳቀሱ፣ እንዲጀምሩ እና እንዲቀጥሉ የሚያደርግ ውስጣዊ ወይም ውጫዊ ኃይል ነው።"
+},
+{
+    question: "Intrinsic motivation has a long-lasting effect than extrinsic motivation.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Intrinsic motivation comes from personal satisfaction, internal interest, and enjoyment. It is generally more sustainable over time than motivation based only on external rewards.",
+    amharicExplanation: "📚 ውስጣዊ ተነሳሽነት (Intrinsic motivation) ከግል እርካታ፣ ፍላጎት እና ደስታ የሚመነጭ በመሆኑ ከውጫዊ ሽልማት (Extrinsic motivation) ይልቅ በአጠቃላይ ረጅም ጊዜ ሊቆይ ይችላል።"
+},
+{
+    question: "Maslow's hierarchy of needs explains that the lower needs must be at least partially fulfilled to move upward to the next level.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Maslow's hierarchy suggests that lower-level needs, especially basic physiological and safety needs, generally need to be sufficiently satisfied before people focus strongly on higher-level needs.",
+    amharicExplanation: "📚 በማስሎው የፍላጎት ደረጃዎች (Maslow's hierarchy of needs) መሠረት ዝቅተኛ ደረጃ ያሉ ፍላጎቶች፣ በተለይም መሠረታዊ የሕይወትና የደህንነት ፍላጎቶች፣ በበቂ ሁኔታ ከተሟሉ በኋላ ሰዎች ወደ ከፍተኛ ፍላጎቶች ይበልጥ ያተኩራሉ።"
+},
+{
+    question: "Incentive theory of motivation argues that behavior is motivated intrinsically.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Incentive theory states that behavior can be motivated by external rewards and environmental stimuli such as money, praise, grades, or recognition. Therefore, the statement is false.",
+    amharicExplanation: "📚 የኢንሴንቲቭ ቲዎሪ (Incentive theory) ሰዎች በውጫዊ ሽልማቶችና ማበረታቻዎች፣ ለምሳሌ በገንዘብ፣ በምስጋና፣ በውጤት ወይም በእውቅና ሊነሳሱ እንደሚችሉ ያብራራል። ስለዚህ መልሱ False ነው።"
+},
+{
+    question: "Self-actualized persons are realistic, achievement-oriented, and have high self-confidence.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "According to Maslow, self-actualized individuals have realized much of their potential and commonly show realism, independence, purposefulness, and confidence.",
+    amharicExplanation: "📚 Self-actualized ሰዎች የራሳቸውን አቅም በሙሉ ለመጠቀም የሚጥሩ ሰዎች ናቸው። እውነታን የሚቀበሉ፣ ግብ ያላቸው እና በራሳቸው የሚተማመኑ ባህሪያት ያሳያሉ።"
+},
+{
+    question: "Self-reinforced learners are more likely to be intrinsically motivated.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Learners who evaluate and reward their own progress can gain personal satisfaction and develop greater self-direction, which supports intrinsic motivation.",
+    amharicExplanation: "📚 ራሳቸውን የሚያበረታቱና የሚሸልሙ ተማሪዎች ከራሳቸው እድገት የግል እርካታ ስለሚያገኙ የውስጣዊ ተነሳሽነት (Intrinsic motivation) እድገትን ያጠናክራሉ።"
+},
+{
+    question: "Primary drives are those that are learned through experience or conditioning, such as need for money and social approval.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Primary drives are biological and unlearned needs such as hunger, thirst, and the need for sleep. Drives learned through experience, such as seeking money or social approval, are secondary or acquired drives.",
+    amharicExplanation: "📚 Primary drives በተፈጥሮ የሚኖሩ ባዮሎጂያዊ ፍላጎቶች ናቸው፣ ለምሳሌ ርሃብ፣ ጥም እና እንቅልፍ። ገንዘብ ወይም ማህበራዊ ተቀባይነት የመሳሰሉት በልምድ የሚገኙ Secondary drives ናቸው።"
+},
+{
+    question: "According to cognitive approaches to motivation, different people may be motivated to carry out the same behavior for different reasons.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Cognitive approaches emphasize people's thoughts, beliefs, expectations, and interpretations. Therefore, different people can perform the same behavior for different reasons.",
+    amharicExplanation: "📚 የኮግኒቲቭ (Cognitive) አቀራረብ የሰዎችን አስተሳሰብ፣ እምነት፣ ግምት እና ትርጓሜ ያጎላል። ስለዚህ የተለያዩ ሰዎች አንድን ተመሳሳይ ተግባር በተለያዩ ምክንያቶች ሊያደርጉ ይችላሉ።"
+},
+{
+    question: "Most psychologists now believe that drive-reduction processes and external incentives work separately and independently to motivate behavior.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Modern psychological approaches generally recognize that internal drives and external incentives can interact and work together to influence behavior rather than functioning completely independently.",
+    amharicExplanation: "📚 ዘመናዊ የሳይኮሎጂ አቀራረቦች የውስጥ ፍላጎቶች (Drive-reduction) እና የውጭ ማበረታቻዎች (Incentives) ተለይተው ብቻቸውን ከመስራት ይልቅ ተገናኝተው በአንድነት ባህሪን ሊያነሳሱ እንደሚችሉ ያሳያሉ።"
+},
+{
+    question: "People who donate anonymously to charity are probably motivated by",
+    options: [
+        "Social motivation",
+        "Secondary motives",
+        "Extrinsic motivation",
+        "Intrinsic motivation"
+    ],
+    answer: 3,
+    englishExplanation: "Anonymous donors do not seek public recognition or external rewards. Their behavior is therefore most likely driven by internal satisfaction, personal values, or a desire to help others.",
+    amharicExplanation: "📚 በስም ሳይጠቀሱ ለበጎ አድራጎት የሚሰጡ ሰዎች የህዝብ እውቅና፣ ምስጋና ወይም ውጫዊ ሽልማት አይፈልጉም። ስለዚህ ተግባራቸው በውስጣዊ እርካታ፣ በግል እሴቶች ወይም ሌሎችን የመርዳት ፍላጎት የሚመራ ስለሆነ Intrinsic motivation ነው።"
+},{
+    question: "Alex is a student of X University. He always studies hard because he gets personal satisfaction by studying. His desire to read connects to which of the following?",
+    options: [
+        "Intrinsic",
+        "Extrinsic",
+        "Primary",
+        "Secondary"
+    ],
+    answer: 0,
+    englishExplanation: "Intrinsic motivation comes from internal factors such as personal enjoyment, satisfaction, or curiosity rather than external rewards. Since Alex studies for personal satisfaction, his motivation is intrinsic.",
+    amharicExplanation: "📚 አሌክስ የሚያጠናው ለራሱ ግላዊ እርካታ ሲል በመሆኑ ተነሳሽነቱ ከውስጥ የሚመነጭ ወይም Intrinsic motivation ይባላል።"
+},
+{
+    question: "According to the drive-reduction theory, the drive to eat can come from",
+    options: [
+        "An internal instinct",
+        "An attempt to reduce hunger",
+        "A state of tension caused by innate drives",
+        "An attempt to achieve",
+        "All"
+    ],
+    answer: 1,
+    englishExplanation: "Drive-reduction theory suggests that biological needs create a state of tension or drive, such as hunger, and people are motivated to reduce that drive by satisfying the need, such as eating.",
+    amharicExplanation: "📚 በ Drive-reduction theory መሠረት የረሃብ ስሜት የውስጥ ውጥረት (tension) ይፈጥራል። ሰው ይህንን የረሃብ ስሜት ለመቀነስ ምግብ ይበላል።"
+},
+{
+    question: "Based on Humanistic theory of motivation, the need to be respected by others is ----------- need",
+    options: [
+        "Esteem",
+        "Love and belongingness",
+        "Self-actualization",
+        "Physiological"
+    ],
+    answer: 0,
+    englishExplanation: "In Maslow's hierarchy of needs, esteem needs include the desire for self-worth, achievement, status, recognition, and respect from others.",
+    amharicExplanation: "📚 በሂዩማኒስቲክ ቲዎሪ እና በማስሎው የፍላጎት ደረጃ መሠረት በሌሎች ዘንድ የመከበር፣ የእውቅና እና የራስ ዋጋ ስሜት ፍላጎት Esteem need ይባላል።"
+},
+{
+    question: "Which of the following needs is included in Maslow's hierarchy?",
+    options: [
+        "Esteem",
+        "Identification",
+        "Growth",
+        "Altruism",
+        "All"
+    ],
+    answer: 0,
+    englishExplanation: "Maslow's hierarchy includes five commonly identified levels: Physiological, Safety, Love and Belongingness, Esteem, and Self-actualization. Esteem is one of these levels.",
+    amharicExplanation: "📚 የማስሎው የፍላጎት ተዋረድ Physiological, Safety, Love and Belongingness, Esteem እና Self-actualization የተባሉ ደረጃዎችን ያካትታል። ስለዚህ Esteem ትክክለኛው መልስ ነው።"
+},
+{
+    question: "Which theory of motivation assumes that our thoughts, expectations, and understandings about the world or ourselves influence our motivation?",
+    options: [
+        "Pull theory of motivation",
+        "Push theory of motivation",
+        "Just right theory of motivation",
+        "Cognitive theory of motivation"
+    ],
+    answer: 3,
+    englishExplanation: "Cognitive theories propose that thoughts, beliefs, expectations, goals, and interpretations influence motivation and guide human behavior.",
+    amharicExplanation: "📚 የአስተሳሰብ (Cognitive) ቲዎሪ ተነሳሽነታችን በአስተሳሰባችን፣ በእምነታችን፣ በግምታችን እና ስለ ዓለም ባለን ግንዛቤ እንደሚነካ ያብራራል።"
+},
+{
+    question: "Of the following theories of motivation, which one addresses that 'motivation is aimed at securing the optimal level of satisfaction'?",
+    options: [
+        "Humanistic theory",
+        "Drive theory",
+        "Arousal theory",
+        "Psychodynamic theory"
+    ],
+    answer: 2,
+    englishExplanation: "Arousal theory states that people are motivated to maintain an optimal level of stimulation or arousal. People generally seek a level that is neither too high nor too low.",
+    amharicExplanation: "📚 Arousal theory ሰዎች በጣም ከፍ ያለም ሆነ በጣም ዝቅ ያለ የመነቃቃት ደረጃ ሳይሆን ተስማሚ (optimal) የሆነ ደረጃ ለመድረስ እና ለመጠበቅ እንደሚነሳሱ ያብራራል።"
+},
+{
+    question: "Which theory of motivation assumes that motivation is driven by life and death instincts?",
+    options: [
+        "Pull theory",
+        "Psychodynamic theory",
+        "Just right theory",
+        "Cognitive theory"
+    ],
+    answer: 1,
+    englishExplanation: "Psychodynamic theory, associated with Sigmund Freud, explains motivation in terms of unconscious forces and biological instincts, including life instincts and death instincts.",
+    amharicExplanation: "📚 ከሲግመንድ ፍሮይድ ጋር የተያያዘው Psychodynamic theory ተነሳሽነት በህይወት ደመነፍስ (Eros) እና በሞት ደመነፍስ (Thanatos) እንደሚነካ ያብራራል።"
+},
+{
+    question: "According to the humanistic motivation theory of Abraham Maslow, self-actualized people are",
+    options: [
+        "Self-centered, selfish, and egocentric",
+        "Realistic, spiritual, and unconventional",
+        "Introverted, withdrawn, and isolated",
+        "Hard-working, tense, and achievement-oriented"
+    ],
+    answer: 1,
+    englishExplanation: "Maslow described self-actualized people as realistic, independent, creative, open to experience, and capable of peak or profound experiences. They are not simply focused on social conformity.",
+    amharicExplanation: "📚 በአብርሃም ማስሎው አመለካከት Self-actualized ሰዎች እውነታን የሚቀበሉ (realistic)፣ ጥልቅ ወይም መንፈሳዊ ልምድ ሊኖራቸው የሚችል እና የተለመደውን ነገር ብቻ የማይከተሉ (unconventional) ሰዎች ናቸው።"
+},
+{
+    question: "Which one of the following best describes emotion and human being?",
+    options: [
+        "We are one way thinkers",
+        "We are adaptive creatures that we can mold our emotion",
+        "We are sometimes swept away from normal condition",
+        "A & B",
+        "B & C"
+    ],
+    answer: 4,
+    englishExplanation: "Human beings can adapt and regulate their emotions, but emotions can also sometimes become overwhelming and move people away from their normal condition. Therefore, B and C are correct.",
+    amharicExplanation: "📚 ሰዎች ስሜታቸውን ማስተካከልና መቆጣጠር ይችላሉ፣ ነገር ግን አንዳንድ ጊዜ ስሜት ከመደበኛ ሁኔታቸው ሊያስወጣቸው ይችላል። ስለዚህ B & C ትክክለኛው መልስ ነው።"
+},
+{
+    question: "A woman with unwanted pregnancy may be either morally or legally opposed to abortion so that she may develop motivational conflict known as:",
+    options: [
+        "Approach - Approach",
+        "Approach - Avoidance",
+        "Avoidance - Avoidance",
+        "Multiple Approach - Avoidance"
+    ],
+    answer: 2,
+    englishExplanation: "Avoidance-Avoidance conflict occurs when a person faces two undesirable alternatives. In this situation, the unwanted pregnancy and an action that conflicts with moral or legal beliefs are both undesirable.",
+    amharicExplanation: "📚 Avoidance-Avoidance conflict የሚከሰተው አንድ ሰው ሁለት የማይፈልጋቸውን ወይም አሉታዊ አማራጮችን መጋፈጥ ሲኖርበት ነው።"
+},
+{
+    question: "If your psychology teacher described that human beings' needs are unlimited because people are always in the journey, they fulfill what is basic for their life and then search for a secure environment and the like. Which approach of motivation he/she used to explain motivation?",
+    options: [
+        "Incentive approach",
+        "Drive reduction Approach",
+        "Humanistic approach",
+        "Cognitive Approaches"
+    ],
+    answer: 2,
+    englishExplanation: "The humanistic approach, especially Maslow's hierarchy of needs, explains that people move through different levels of needs, beginning with basic physiological needs and progressing toward safety, belongingness, esteem, and self-actualization.",
+    amharicExplanation: "📚 Humanistic approach የሰው ልጅ ፍላጎቶች በደረጃ እንደሚደረደሩ ያብራራል። ሰዎች በመጀመሪያ መሠረታዊ የሕይወት ፍላጎቶችን ያሟላሉ፣ ከዚያም ወደ ደህንነት፣ ፍቅርና ተቀባይነት፣ ክብር እና Self-actualization ይገፋፋሉ።"
+},
+{
+    question: "Aster is 18 years old and her parents asked her to decide to join university or to marry her beloved boyfriend. Based on this scenario, which type of conflict of motives Aster faces primarily?",
+    options: [
+        "Approach- Approach conflict",
+        "Avoidance - Avoidance conflict",
+        "Approach - Avoidance conflict",
+        "Multiple approaches - Avoidance conflicts"
+    ],
+    answer: 0,
+    englishExplanation: "Approach-Approach conflict occurs when a person must choose between two desirable and attractive alternatives. In this case, joining university and marrying her beloved boyfriend are both desirable options.",
+    amharicExplanation: "📚 Approach-Approach conflict የሚከሰተው አንድ ሰው ሁለት ተፈላጊ እና አወንታዊ አማራጮች መካከል አንዱን ለመምረጥ ሲቸገር ነው። እዚህ ዩኒቨርሲቲ መግባት እና የምትወደውን ሰው ማግባት ሁለቱም ተፈላጊ አማራጮች ናቸው።"
+},
+{
+    question: "You are very much interested to eat cake, but you are also worried about getting more weight, this conflict is known as?",
+    options: [
+        "Approach-Avoidance",
+        "Avoidance-Avoidance",
+        "Approach-Approach",
+        "Multiple Approach-Avoidance"
+    ],
+    answer: 0,
+    englishExplanation: "Approach-Avoidance conflict occurs when the same goal has both attractive and unattractive features. Eating the cake is attractive, while gaining weight is undesirable.",
+    amharicExplanation: "📚 Approach-Avoidance conflict የሚከሰተው አንድ ነገር በአንድ ጊዜ አወንታዊና አሉታዊ ጎን ሲኖረው ነው። ኬክ መብላት የሚፈለግ ሲሆን ክብደት መጨመር ደግሞ የማይፈለግ ነው።"
+},
+{
+    question: "Tomas is going to get a new car and cannot decide if he wants the white one or the red one. Tomas is in ________ conflict.",
+    options: [
+        "Approach-approach",
+        "Avoidance-avoidance",
+        "Approach-avoidance",
+        "Multiple approach-avoidance"
+    ],
+    answer: 0,
+    englishExplanation: "Tomas is choosing between two attractive alternatives, a white car and a red car. This is a classic example of Approach-Approach conflict.",
+    amharicExplanation: "📚 ቶማስ በሁለት የሚፈልጋቸው እና አወንታዊ አማራጮች መካከል እየመረጠ ነው። ነጭ መኪናም ሆነ ቀይ መኪና የሚፈልጋቸው ስለሆኑ Approach-Approach conflict ነው።"
+},
+{
+    question: "An executive manager is frightening middle line managers that they will be demoted if they do not work hard. According to Maslow's hierarchy of needs, the executive manager's demand that middle line managers have to work more creates ________.",
+    options: [
+        "Safety needs",
+        "Esteem needs",
+        "Belongingness needs",
+        "Physiological needs"
+    ],
+    answer: 0,
+    englishExplanation: "Threats of demotion or job loss affect employment and financial security. Therefore, they directly relate to Safety needs in Maslow's hierarchy.",
+    amharicExplanation: "📚 ከስራ የመውረድ ወይም የስራ ዋስትናን የማጣት ስጋት የሰውን የስራና የፋይናንስ ደህንነት ይነካል። ስለዚህ Safety needs ጋር ይያያዛል።"
+},
+{
+    question: "Assume there is a strong disagreement between Kebede and Shimelis that leads them to fight against each other. Their emotional expression is related:",
+    options: [
+        "Subjective experience of emotion",
+        "Physiology of emotion",
+        "Behavior of emotion",
+        "A and B are correct"
+    ],
+    answer: 2,
+    englishExplanation: "Physical fighting is an observable external action. Therefore, it represents the behavioral component or behavioral expression of emotion.",
+    amharicExplanation: "📚 ከስሜት የተነሳ አካላዊ መጋጨት ወይም መዋጋት በውጭ የሚታይ ድርጊት ስለሆነ Behavior of emotion ጋር ይያያዛል።"
+},
+{
+    question: "Which theory of emotion explains that physiological arousal and emotion happen at the same time?",
+    options: [
+        "Schachter-Singer",
+        "James-Lange",
+        "Cannon-Bard",
+        "A and C"
+    ],
+    answer: 2,
+    englishExplanation: "The Cannon-Bard theory states that physiological arousal and the conscious experience of emotion occur simultaneously rather than one causing the other.",
+    amharicExplanation: "📚 Cannon-Bard theory የሰውነት መነቃቃት (physiological arousal) እና የስሜት ልምድ (emotion) በአንድ ጊዜ እንደሚከሰቱ ያስረዳል።"
+},
+{
+    question: "The James-Lange theory of emotion would assert which of the following?",
+    options: [
+        "Fear leads to physiological arousal",
+        "Fear and arousal occur at the same time",
+        "Your heart is racing because you are fearful",
+        "You are fearful because your heart is racing"
+    ],
+    answer: 3,
+    englishExplanation: "James-Lange theory proposes that physiological reactions occur first and the emotional experience follows. For example, you feel fear because you notice your heart racing.",
+    amharicExplanation: "📚 James-Lange theory በመጀመሪያ የአካል ምላሽ እንደሚከሰት እና ከዚያ የስሜት ልምድ እንደሚከተል ያስረዳል። ስለዚህ ልብህ በፍጥነት ስለሚመታ ፍርሃት ይሰማሃል።"
+},
+{
+    question: "Which of the following theories of emotion support the idea that emotions and bodily responses occur simultaneously?",
+    options: [
+        "The James-Lange theory",
+        "The Schachter-Singer theory",
+        "The Cannon-Bard theory",
+        "The cognitive-appraisal theory"
+    ],
+    answer: 2,
+    englishExplanation: "The Cannon-Bard theory proposes that emotional experience and physiological bodily responses occur simultaneously.",
+    amharicExplanation: "📚 Cannon-Bard theory የስሜት ልምድ እና የአካል ምላሽ በተመሳሳይ ጊዜ (simultaneously) እንደሚከሰቱ ይገልጻል።"
+},
+{
+    question: "While sitting in a waiting room, a man next to you begins yelling and acting aggressively. Your heart begins beating fast. You think the situation causes your arousal. Which theory of emotion would support this expression?",
+    options: [
+        "The James-Lange theory",
+        "The Schachter-Singer theory",
+        "The Cannon-Bard theory",
+        "The facial feedback theory"
+    ],
+    answer: 1,
+    englishExplanation: "The Schachter-Singer or Two-Factor theory states that emotion results from physiological arousal combined with a cognitive interpretation or label of the situation.",
+    amharicExplanation: "📚 Schachter-Singer (Two-Factor) theory ስሜት የሚፈጠረው ከአካላዊ መነቃቃት (physiological arousal) እና ሁኔታውን በአእምሮ በመተርጎም (cognitive labeling) በመጣመር እንደሆነ ያብራራል።"
+},{
+    question: "The concept that emotions resulted from perceived bodily changes was the key to:",
+    options: [
+        "The Cannon-Bard theory",
+        "The Schachter-Singer",
+        "The James-Lange theory",
+        "The activation-arousal theory"
+    ],
+    answer: 2,
+    englishExplanation: "According to the James-Lange theory, an external stimulus first causes bodily changes, and the perception of those bodily changes produces the emotional experience.",
+    amharicExplanation: "📚 የ James-Lange ቲዎሪ እንደሚለው በመጀመሪያ የአካል ለውጦች (bodily changes) ይከሰታሉ፤ አእምሯችን እነዚህን የአካል ለውጦች ሲያስተውል የስሜት ልምድ (emotion) ይፈጠራል።"
+},
+{
+    question: "According to the Cannon-Bard theory, which two factors are simultaneously activated by environmental stimuli?",
+    options: [
+        "Cognitive and emotional responses",
+        "Physiological and cognitive responses",
+        "Emotions and physiological responses",
+        "Physiological and environmental responses"
+    ],
+    answer: 2,
+    englishExplanation: "The Cannon-Bard theory proposes that emotional experience and physiological arousal occur simultaneously when a person encounters an emotional stimulus.",
+    amharicExplanation: "📚 በ Cannon-Bard ቲዎሪ መሠረት ስሜት (emotion) እና የአካል ምላሽ (physiological response) አንድ ላይ በተመሳሳይ ጊዜ ይከሰታሉ።"
+},
+{
+    question: "________ proposed the hierarchy of needs.",
+    options: [
+        "William James",
+        "David McClelland",
+        "Abraham Maslow",
+        "Albert Bandura"
+    ],
+    answer: 2,
+    englishExplanation: "Abraham Maslow proposed the Hierarchy of Needs, a model explaining human motivation through different levels of needs.",
+    amharicExplanation: "📚 አብርሃም ማስሎ (Abraham Maslow) የሰዎችን የፍላጎት ተዋረድ (Hierarchy of Needs) ሞዴል ያቀረበ የሳይኮሎጂ ምሁር ነው።"
+},
+{
+    question: "________ is an individual's belief in their capability to complete some task.",
+    options: [
+        "Physiological needs",
+        "Self-esteem",
+        "Self-actualization",
+        "Self-efficacy"
+    ],
+    answer: 3,
+    englishExplanation: "Self-efficacy is a person's belief in their own ability to successfully perform a particular task or achieve a particular goal.",
+    amharicExplanation: "📚 Self-efficacy ማለት አንድ ሰው የተወሰነን ተግባር በብቃት ለመፈጸም ችሎታ እንዳለው የሚኖረው የራስ እምነት ነው።"
+},
+{
+    question: "Riley mows the yard of their elderly neighbor each week for $20. What type of motivation is this?",
+    options: [
+        "Extrinsic",
+        "Intrinsic",
+        "Drive",
+        "Biological"
+    ],
+    answer: 0,
+    englishExplanation: "Extrinsic motivation occurs when a person performs an activity because of an external reward or outcome. Riley receives $20, which is an external reward.",
+    amharicExplanation: "📚 Extrinsic motivation ማለት አንድን ተግባር ለውጫዊ ሽልማት ወይም ጥቅም ሲባል መስራት ነው። Riley ለስራው $20 ስለሚያገኝ Extrinsic motivation ነው።"
+},
+{
+    question: "Intrinsic motivation occurs when ________.",
+    options: [
+        "Obligations or approval are factors.",
+        "There is no obvious external reward for one's behavior.",
+        "There are obvious external factors controlling behavior.",
+        "Extrinsic motivation is also high."
+    ],
+    answer: 1,
+    englishExplanation: "Intrinsic motivation occurs when a person engages in an activity because it is personally interesting, enjoyable, satisfying, or meaningful, rather than because of an obvious external reward.",
+    amharicExplanation: "📚 Intrinsic motivation የሚከሰተው አንድን ተግባር ለውጫዊ ሽልማት ሳይሆን ለግል ደስታ፣ እርካታ ወይም ፍላጎት ብቻ ስንሰራው ነው።"
+},
+{
+    question: "Unlearned biological motives necessary for survival are termed.",
+    options: [
+        "Primary motives",
+        "Secondary motives",
+        "Drives",
+        "Stimulus motives"
+    ],
+    answer: 0,
+    englishExplanation: "Primary motives are innate biological needs that are necessary for survival, such as hunger, thirst, sleep, and the need for oxygen.",
+    amharicExplanation: "📚 Primary motives (መሠረታዊ ተነሳሽነቶች) ለሕይወት አስፈላጊ የሆኑ ተፈጥሯዊና ያልተማርናቸው የባዮሎጂ ፍላጎቶች ናቸው። ለምሳሌ ረሃብ፣ ጥም እና እንቅልፍ።"
+},
+{
+    question: "Which theory of emotion holds the view that bodily changes PRECEDE emotion and that we experience an emotion AFTER our body reacts?",
+    options: [
+        "The common sense theory",
+        "The Cannon-Bard theory",
+        "Attribution theory",
+        "The James-Lange theory"
+    ],
+    answer: 3,
+    englishExplanation: "The James-Lange theory states that bodily responses occur first and the emotional experience follows. In other words, we experience the emotion after noticing the body's reaction.",
+    amharicExplanation: "📚 James-Lange ቲዎሪ የአካል ምላሽ ከስሜት በፊት እንደሚከሰት ያስረዳል። ማለትም መጀመሪያ የሰውነታችን ምላሽ ይከሰታል፣ ከዚያ በኋላ ስሜቱን እንለማመዳለን።"
+},
+{
+    question: "What is the correct order of needs in Maslow's hierarchy?",
+    options: [
+        "Physiological; esteem; safety; self-actualization; love and belonging",
+        "Self-actualization; physiological; safety; love and belonging; esteem",
+        "Physiological; safety; love and belonging; esteem; self-actualization",
+        "Self-actualization; safety; love and belonging; esteem; physiological"
+    ],
+    answer: 2,
+    englishExplanation: "Maslow's hierarchy progresses from lower to higher needs: Physiological → Safety → Love and Belonging → Esteem → Self-Actualization.",
+    amharicExplanation: "📚 የማስሎ የፍላጎት ተዋረድ ከታች ወደ ላይ፦ Physiological (አካላዊ) → Safety (ደህንነት) → Love and Belonging (ፍቅርና አባልነት) → Esteem (ክብር) → Self-Actualization (ራስን ማሳካት) ነው።"
+},
+{
+    question: "Which theory holds that we are afraid because we run or are angry because we strike?",
+    options: [
+        "Attribution",
+        "James-Lange",
+        "Cannon-Bard",
+        "Cognitive"
+    ],
+    answer: 1,
+    englishExplanation: "The James-Lange theory proposes that bodily actions and physiological responses occur first, followed by the conscious experience of emotion.",
+    amharicExplanation: "📚 James-Lange ቲዎሪ በመጀመሪያ አካላዊ ምላሽ ወይም ድርጊት እንደሚከሰት እና ከዚያ በኋላ የስሜት ልምድ እንደሚመጣ ያስረዳል።"
+},
+{
+    question: "Which theory claims that emotions are organized in the brain and that emotional feelings and bodily expressions occur simultaneously?",
+    options: [
+        "The common sense theory",
+        "The Cannon-Bard theory",
+        "Attribution theory",
+        "The James-Lange theory"
+    ],
+    answer: 1,
+    englishExplanation: "The Cannon-Bard theory states that emotional feelings and physiological bodily responses are activated simultaneously by the brain rather than occurring one after another.",
+    amharicExplanation: "📚 Cannon-Bard ቲዎሪ ስሜት (emotional feeling) እና የአካል ምላሽ (bodily response) በአንድ ጊዜ እንደሚከሰቱ ያብራራል።"
+},
+{
+    question: "In Maslow's hierarchy of needs, which needs must be met before all other needs?",
+    options: [
+        "Psychodynamic",
+        "Behavioral",
+        "Biological",
+        "Cognitive"
+    ],
+    answer: 2,
+    englishExplanation: "Biological or physiological needs, such as food, water, oxygen, and sleep, form the foundation of Maslow's hierarchy and receive priority before higher-level needs.",
+    amharicExplanation: "📚 በማስሎ የፍላጎት ተዋረድ መሠረት Biological ወይም Physiological needs እንደ ምግብ፣ ውሃ፣ አየር እና እንቅልፍ ያሉ መሠረታዊ ፍላጎቶች ናቸው።"
+},
+{
+    question: "An internal state or condition that activates and gives direction to our thoughts is called",
+    options: [
+        "Self-esteem",
+        "Motivation",
+        "Self-actualization",
+        "Incentive"
+    ],
+    answer: 1,
+    englishExplanation: "Motivation is an internal state or process that activates, directs, and sustains behavior toward a goal.",
+    amharicExplanation: "📚 Motivation (ተነሳሽነት) ማለት ሃሳቦቻችንንና ድርጊቶቻችንን የሚያንቀሳቅስ፣ አቅጣጫ የሚሰጥ እና ወደ ግብ እንድንደርስ የሚያግዝ ውስጣዊ ሁኔታ ነው።"
+},
+{
+    question: "\"We feel sorry because we cry\" is an explanation of emotion associated with",
+    options: [
+        "The James-Lange theory of emotion",
+        "The Cannon-Bard theory of emotion",
+        "Trend of deinstitutionalization",
+        "The Common-sense view of emotion"
+    ],
+    answer: 0,
+    englishExplanation: "The James-Lange theory proposes that physiological responses occur first and the emotional experience follows. Thus, we feel sorry because we experience the bodily response associated with crying.",
+    amharicExplanation: "📚 James-Lange ቲዎሪ መጀመሪያ የአካል ምላሽ (ማልቀስ) እንደሚከሰት እና ከዚያ በኋላ የሃዘን ስሜት እንደሚሰማን ያስረዳል።"
+},
+{
+    question: "The conflict which arises out of two or more equally attractive goals like choosing between two equally attractive Jobs is known as:",
+    options: [
+        "Approach - Approach conflict",
+        "Avoidance - Avoidance conflict",
+        "Approach - Avoidance conflict",
+        "None of the above"
+    ],
+    answer: 0,
+    englishExplanation: "Approach-Approach conflict occurs when a person has to choose between two or more desirable and attractive goals, such as two equally attractive jobs.",
+    amharicExplanation: "📚 Approach-Approach conflict የሚፈጠረው አንድ ሰው እኩል ሳቢና ተፈላጊ በሆኑ ሁለት ወይም ከዚያ በላይ ግቦች መካከል መምረጥ ሲኖርበት ነው።"
+},
+{
+    question: "When you undertake an activity for enjoyment, to demonstrate competence, or to gain skill, your motivation is usually . . . . . . . .",
+    options: [
+        "Intrinsic",
+        "Extrinsic",
+        "Both A and B",
+        "None of these"
+    ],
+    answer: 0,
+    englishExplanation: "Intrinsic motivation comes from within the individual. Enjoyment, personal satisfaction, developing competence, and gaining skills can motivate a person without relying on external rewards.",
+    amharicExplanation: "📚 Intrinsic motivation (ውስጣዊ ተነሳሽነት) ከውስጥ የሚመነጭ ሲሆን ለግል ደስታ፣ እርካታ፣ ብቃትን ለማሳየት ወይም ክህሎትን ለማሳደግ ተግባርን መፈጸምን ያካትታል።"
+},
+{
+    question: "Needs provide the . . . . . . . . of motivation, whereas incentives provide the . . . . . . . .",
+    options: [
+        "Pull, Pull",
+        "Push, Push",
+        "Pull, Push",
+        "Push, Pull"
+    ],
+    answer: 3,
+    englishExplanation: "Internal needs create drives that push people toward action, while external incentives attract or pull people toward particular behaviors.",
+    amharicExplanation: "📚 ውስጣዊ ፍላጎቶች (Needs) ወደ ተግባር ይገፉናል (Push)፤ የውጭ ማበረታቻዎች (Incentives) ደግሞ ወደ እነሱ ይስቡናል (Pull)። ስለዚህ Push, Pull ነው።"
+},
+{
+    question: "Which of these supports the James-Lange theory of emotion?",
+    options: [
+        "Emotion is a visceral response producing a behavioural response",
+        "Artificial induction of visceral changes does not necessarily produce emotion",
+        "The viscera are 'insensitive structures'",
+        "Visceral changes are the same in many emotions"
+    ],
+    answer: 0,
+    englishExplanation: "The James-Lange theory emphasizes that emotional experience is closely connected to bodily and visceral changes produced in response to a stimulus.",
+    amharicExplanation: "📚 James-Lange ቲዎሪ ስሜታዊ ልምድ ከአካላዊና visceral ለውጦች ጋር በቅርብ እንደሚያያዝ ያስረዳል።"
+},
+{
+    question: "Which of the following is NOT an example of an intrinsically motivated activity?",
+    options: [
+        "Eating a pie because you like pie",
+        "Playing with a toy for the fun of it",
+        "Revising for an exam to get a good grade",
+        "Reading a book because you enjoy the story"
+    ],
+    answer: 2,
+    englishExplanation: "Revising for an exam specifically to get a good grade is driven by an external reward. Therefore, it is an example of extrinsic rather than intrinsic motivation.",
+    amharicExplanation: "📚 ለፈተና ጥሩ ውጤት ለማግኘት ብሎ ማጥናት በውጫዊ ሽልማት ስለሚመራ Extrinsic motivation ነው፤ Intrinsic motivation አይደለም።"
+},
+{
+    question: "Which of the following are NOT TRUE of motivation?",
+    options: [
+        "It is the drive, incentive or interest to initiate, perform or maintain a behaviour",
+        "It is independent of emotion or cognition",
+        "It is a preparatory phase prior to action",
+        "It may be influenced by rewards and punishments"
+    ],
+    answer: 1,
+    englishExplanation: "Motivation is related to emotional and cognitive processes, including thoughts, expectations, goals, and feelings. Therefore, saying that motivation is independent of emotion or cognition is not true.",
+    amharicExplanation: "📚 Motivation (ተነሳሽነት) ከስሜት (emotion) እና ከአስተሳሰብ (cognition) ጋር የተያያዘ ነው። ስለዚህ motivation ከemotion ወይም cognition ነጻ ነው ማለት ስህተት ነው።"
+},{
+    question: "Self-actualization is the process whereby individuals",
+    options: [
+      "establish their concept of self",
+      "become selfless",
+      "reach their full potential",
+      "realize their ideal self"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Self-actualization is the highest level of Maslow's hierarchy. It refers to reaching one's full potential and developing one's abilities to the highest possible level.",
+    amharicExplanation:
+      "Self-actualization (ራስን ማሳካት) በማስሎ የፍላጎት ተዋረድ ላይ ከፍተኛው ደረጃ ሲሆን፣ አንድ ሰው ሊደርስበት የሚችለውን ሙሉ አቅሙን (full potential) ማሳካት ማለት ነው።"
+  },
+
+  {
+    question: "Which of the following best describes the concept of an emotion?",
+    options: [
+      "a response to an external or internal stimulus with the purpose of motivating an action or behaviour",
+      "an enduring or recurrent state with no specific causes",
+      "the mental representation of general feelings within an individual",
+      "a highly illogical concept, captain"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Emotion is a response to an internal or external stimulus that can motivate and direct a person's behavior or action.",
+    amharicExplanation:
+      "ስሜት (Emotion) ማለት ከውጭ ወይም ከውስጥ በሚመጣ ቀስቃሽ (stimulus) ምክንያት የሚፈጠር እና ሰውን ወደ አንድ ድርጊት ወይም ባህሪ የሚያነሳሳ ምላሽ ነው።"
+  },
+
+  {
+    question: "When the young tiger broke out of the cage no one had to instruct the zoo visitors to run. In this dangerous situation how could running be explained?",
+    options: [
+      "This skill had been taught since early childhood.",
+      "It is an emotion.",
+      "It is based on instinct.",
+      "It is an activity that reduces tension."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Running away from immediate danger without prior instruction is an unlearned and innate response based on instinct and self-preservation.",
+    amharicExplanation:
+      "ከአደገኛ ነብር መሸሽ ቀድሞ የተማርነው ነገር ሳይሆን አደጋ ሲገጥመን በተፈጥሮ የሚመጣ የደመ-ነፍስ (instinct) ምላሽ ነው።"
+  },
+
+  {
+    question: "Alex was upset. His morning run had been interrupted by a neighbour, he had to stop and he was getting hot, and he was still three miles from home. He wished he had remembered to bring his usual water bottle. What type of motivation is Alex experiencing?",
+    options: [
+      "A primary drive",
+      "A secondary drive",
+      "Incentive",
+      "Arousal"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Alex's need for water comes from thirst, which is an innate biological need. Therefore, it is a primary drive.",
+    amharicExplanation:
+      "የአሌክስ ውሃ የመፈለግ ስሜት ከተፈጥሯዊ የሰውነት ፍላጎት የሚመጣ ጥም ስለሆነ Primary drive (መሠረታዊ ተነሳሽነት) ይባላል።"
+  },
+
+  {
+    question: "For three days Rick has been studying for his math exam and has slept very little. Which approach to motivation predicts that Rick will fall asleep soon after the exam?",
+    options: [
+      "Cognitive approach",
+      "Arousal approach",
+      "Instinct approach",
+      "Drive-reduction approach"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Drive-reduction theory states that biological needs create drives that motivate behavior. Lack of sleep creates fatigue, and sleeping reduces this drive and restores balance.",
+    amharicExplanation:
+      "Drive-reduction approach የሰውነት ባዮሎጂያዊ ፍላጎቶች ድራይቭ እንደሚፈጥሩ ያስረዳል። እንቅልፍ ማጣት ድካምን ይፈጥራል፣ እንቅልፍ መውሰድ ደግሞ ይህንን ድራይቭ ይቀንሳል።"
+  },
+
+  {
+    question: "Which statement describes Maslow's hierarchy of needs?",
+    options: [
+      "Higher levels must be met before lower levels can be addressed.",
+      "Lower levels must be met before higher levels can be addressed.",
+      "Physical needs must wait on fulfillment through self-actualization.",
+      "Social needs have priority over a need for shelter and security."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Maslow's hierarchy states that lower-level needs, especially physiological and safety needs, generally need to be satisfied before higher-level needs are pursued.",
+    amharicExplanation:
+      "በማስሎ ቲዎሪ መሠረት ከታች ያሉ መሠረታዊ ፍላጎቶች (Lower levels) በአጠቃላይ ከተሟሉ በኋላ ወደ ከፍተኛ የፍላጎት ደረጃዎች መሸጋገር ይቻላል።"
+  },
+
+  {
+    question: "How are drive-reduction and arousal approaches to motivation similar?",
+    options: [
+      "They both focus on instinctual motives that energize behaviour.",
+      "They both emphasize external factors and ignore internal factors.",
+      "They both describe how humans reduce activity levels when they are too high.",
+      "They both suggest that motives for behaviour differ between humans and animals."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Both approaches explain motivation in relation to internal states and maintaining an appropriate level of bodily activation or balance.",
+    amharicExplanation:
+      "ሁለቱም አቀራረቦች ተነሳሽነትን ከውስጣዊ የሰውነት ሁኔታ እና ተገቢ የእንቅስቃሴ ደረጃን ከመጠበቅ ጋር ያያይዛሉ።"
+  },
+
+  {
+    question: "George loves bungee jumping, sky diving, and gambling. These risk-taking behaviors are explained by which theory of motivation?",
+    options: [
+      "Incentive approaches",
+      "Instinct",
+      "Drive-reduction theory",
+      "Arousal approaches"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Arousal theory explains that people seek an optimal level of excitement or stimulation. Risk-taking activities can provide high levels of arousal.",
+    amharicExplanation:
+      "Arousal theory እንደሚለው ሰዎች ተስማሚ የመነቃቃት ወይም የደስታ ደረጃን ለመድረስ ይነሳሳሉ። Bungee jumping እና sky diving ያሉ አደገኛ ተግባራት ከፍተኛ የመነቃቃት ስሜት ይሰጣሉ።"
+  },
+
+  {
+    question: "Messfin is very attracted to Martha, and he always pays for dinner when they go on a date. Messfin hopes that Martha will in turn become more attracted to him and want to date him. Which of the following best explains Messfin's behavior?",
+    options: [
+      "Instinct approaches",
+      "Drive-reduction approaches",
+      "Cognitive approaches",
+      "Incentive approaches"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Incentive approaches explain behavior as being motivated by the desire to obtain an external reward or desired outcome, such as gaining Martha's affection.",
+    amharicExplanation:
+      "Incentive approach ባህሪ የሚመራው ውጫዊ ሽልማት ወይም የሚፈለግ ውጤትን ለማግኘት በሚኖር ፍላጎት ነው ይላል። እዚህ Messfin የMarthaን ፍቅር ለማግኘት የሚከፍል ስለሆነ Incentive approach ነው።"
+  },
+
+  {
+    question: "You stayed late at work because you expect that doing so increases the likelihood of being promoted. Which approach explains your behaviour?",
+    options: [
+      "Instinct approaches",
+      "Cognitive approaches",
+      "Drive-reduction approaches",
+      "Arousal approaches"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Cognitive approaches emphasize thoughts, expectations, beliefs, and predictions. You stayed late because you expected it would increase your chance of promotion.",
+    amharicExplanation:
+      "Cognitive approach ተነሳሽነት በአስተሳሰብ፣ በእምነት፣ በግምት እና በሚጠበቀው ውጤት እንደሚመራ ያስረዳል። እዚህ የስራ እድገት እንደሚያመጣ በመጠበቅ ስራ ላይ ስለቆየህ Cognitive approach ነው።"
+  }]
 
     },
 
