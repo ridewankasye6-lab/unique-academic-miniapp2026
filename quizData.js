@@ -7754,7 +7754,816 @@ const quizData = {
   "englishExplanation": "Ethiopia is astronomically located in the Horn of Africa between 3°N to 15°N latitudes and 33°E to 48°E longitudes.",
   "amharicExplanation": "📚 የኢትዮጵያ ፍጹማዊ መገኛ በ3° ሰሜን እስከ 15° ሰሜን ኬክሮስ እና 33° ምስራቅ እስከ 48° ምስራቅ ኬንትሮስ መካከል ይገኛል።"
 }],
-        2: [],
+        2: [ {
+    question: "The span of time before life appeared was termed the Paleozoic Era.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The span of time before life appeared (or when life was absent) is termed the Precambrian Era, not the Paleozoic Era. The Paleozoic Era is the era of ancient life, known as the age of invertebrates.",
+    amharicExplanation:
+      "ሕይወት ከመፈጠሩ በፊት ያለው የጊዜ ርዝማኔ Precambrian Era ይባላል እንጂ Paleozoic Era አይደለም። Paleozoic Era ጥንታዊ የሕይወት ዘመን (ancient life) ወይም አጥንት የሌላቸው እንስሳት (invertebrates) በብዛት የነበሩበት ዘመን ነው።"
+  },
+
+  {
+    question: "The widest part of the Rift Valley is the Afar Triangle.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The Ethiopian Rift Valley is divided into three sub-regions: the Afar Triangle, the Main Ethiopian Rift, and the Chew Bahir Rift. The Afar Triangle is the widest part of these divisions.",
+    amharicExplanation:
+      "የኢትዮጵያ ስምጥ ሸለቆ በሦስት ክፍሎች የተከፈለ ሲሆን፣ እነሱም የዓፋር ትሪያንግል፣ ዋናው የኢትዮጵያ ስምጥ ሸለቆ እና የጨው ባሕር ስምጥ ሸለቆ ናቸው። ከነዚህ መካከል የዓፋር ትሪያንግል ሰፊው የኢትዮጵያ ስምጥ ሸለቆ ክፍል ነው።"
+  },
+
+  {
+    question:
+      "The tectonic and volcanic activities that took place in Mesozoic Era have an important effect in the making of the present-day landmass of Ethiopia and the Horn of Africa.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "It was during the Cenozoic Era, not the Mesozoic Era, that significant tectonic and volcanic activities occurred to shape the present-day landscape of Ethiopia and the Horn of Africa. The Mesozoic Era was mainly characterized by marine transgression and regression.",
+    amharicExplanation:
+      "የኢትዮጵያንና የቀንዱን አፍሪካ የዛሬ የመሬት ቅርጽ የፈጠሩት ዋና ዋና የመሬት እንቅስቃሴዎች (tectonic) እና የቮልካኖ ድርጊቶች የተከሰቱት በ Cenozoic Era ውስጥ ነው። Mesozoic Era በዋናነት የባህር መግባትና መውጣት (transgression/regression) የታየበት ዘመን ነው።"
+  },
+
+  {
+    question:
+      "Quaternary Volcanic activities and depositions were taking place before the formation of the Rift valley.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Quaternary volcanic eruptions and deposits are recent volcanic activities that took place AFTER the formation of the Rift Valley, shaping the current floor and features inside the valley.",
+    amharicExplanation:
+      "Quaternary Volcanic activities እና የተቀማጡ ድንጋዮች/አፈሮች የተከሰቱት የስምጥ ሸለቆ ከተፈጠረ በኋላ (AFTER) እንጂ በፊት አይደለም።"
+  },
+
+  {
+    question:
+      "The major geologic event of the Precambrian Era was Orogenesis.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Orogenesis refers to mountain-building processes through tectonic collisions. Intense orogenesis was an important geological event during the Precambrian Era in shaping Earth's crust.",
+    amharicExplanation:
+      "Orogenesis (የተራራ መፈጠር ሂደት) በቴክቶኒክ ሰሌዳዎች ግጭት ምክንያት የሚፈጠር ሲሆን፣ በ Precambrian Era ውስጥ የተከሰተ ዋና የጂኦሎጂ ክስተት ነው።"
+  },
+
+  {
+    question:
+      "Adigrat sandstone is older and thicker in the northwest and progressively decreases in age and thickness southeastward.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Adigrat sandstone formed during the transgression of the Mesozoic sea, which came from the southeast toward the northwest. Therefore, Adigrat sandstone is older and thicker in the southeast and becomes younger and thinner toward the northwest.",
+    amharicExplanation:
+      "አዲግራት የአሸዋ ድንጋይ (Adigrat sandstone) የተፈጠረው የሜሶዞይክ ባህር ከደቡብ ምስራቅ ወደ ሰሜን ምዕራብ ሲገባ በመሆኑ፣ በደቡብ ምስራቅ በኩል የቆየ እና ወፍራም ሲሆን፣ ወደ ሰሜን ምዕራብ ሲሄድ አዲስ እና ቀጭን ይሆናል።"
+  },
+
+  {
+    question:
+      "The Ethiopian landforms are solely the result of indogenic geomorphic processes.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethiopian landforms are the combined result of both endogenic processes, such as faulting and volcanism, and exogenic processes, such as weathering and erosion.",
+    amharicExplanation:
+      "የኢትዮጵያ የመሬት አቀማመጥ የተፈጠረው በውስጣዊ (endogenic) ሂደቶች ብቻ ሳይሆን፣ በውስጣዊ እና በውጫዊ (exogenic) ሂደቶች ጥምረት ነው።"
+  },
+
+  {
+    question:
+      "Fluvial deposits are the flow of wind deposit i.e windblown deposits.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Fluvial deposits are materials deposited by running water, such as rivers, streams, and floods. Deposits created by wind action are called Aeolian deposits.",
+    amharicExplanation:
+      "በወንዝ እና በጎርፍ ውሃ የሚመጡ ደለሎች Fluvial deposits ይባላሉ። በነፋስ አማካኝነት የሚከማቹት ደግሞ Aeolian deposits ይባላሉ።"
+  },
+
+  {
+    question:
+      "Aden volcanics are more extensively developed in the Afar region and relatively well preserved and relatively visible morphological features.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Aden volcanics represent recent Cenozoic volcanic rocks that are predominantly located and widely exposed in the Afar Depression, preserving distinct volcanic landforms like craters and cones.",
+    amharicExplanation:
+      "Aden volcanics በዓፋር ክልል በሰፊው የሚገኙና ቅርፃቸውን ጠብቀው በግልጽ የሚታዩ የቅርብ ጊዜ እሳተ-ገሞራ ውጤቶች ናቸው።"
+  },
+
+  {
+    question: "During which era did Pangaea break up?",
+    options: [
+      "Precambrian Time",
+      "Paleozoic Era",
+      "Mesozoic Era",
+      "Unknown"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The supercontinent Pangaea began to rift and break apart into Laurasia and Gondwanaland during the Mesozoic Era.",
+    amharicExplanation:
+      "Pangaea የተባለው አንድ ትልቅ አህጉር ተከፋፍሎ ወደ ተለያዩ ክፍሎች መበታተን የጀመረው በ Mesozoic Era ወቅት ነው።"
+  },
+
+  {
+    question:
+      "The Geologic time scale is subdivided into 4 groups. List them beginning with the largest.",
+    options: [
+      "Eons, periods, epochs, eras",
+      "Eras, eon, periods, epochs",
+      "Epochs, periods, eras, eons",
+      "Eons, eras, periods, epochs"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Geologic time units are arranged from largest to smallest: Eon → Era → Period → Epoch. An Eon is the largest span of time, followed by Eras, Periods, and Epochs.",
+    amharicExplanation:
+      "የጂኦሎጂካል ጊዜ መለኪያዎች ከትልቁ ወደ ትንሹ ሲደረደሩ Eon → Era → Period → Epoch ናቸው። Eon ትልቁ የጊዜ መለኪያ ክፍል ነው።"
+  },
+
+  {
+    question:
+      "In which choice the geological time scale measure units are ordered into small to largest time period?",
+    options: [
+      "Periods → epoch → eon → Eras",
+      "Eon → Eras → periods → epoch",
+      "Epoch → periods → Eras → eon",
+      "Epoch → Eras → periods → eon"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Ordering from smallest to largest gives: Epoch → Period → Era → Eon.",
+    amharicExplanation:
+      "ከትንሹ የጊዜ መለኪያ ወደ ትልቁ ሲደረደር Epoch → Period → Era → Eon ይሆናል።"
+  },
+
+  {
+    question:
+      "Internal processes (endogenic) include the following, Except",
+    options: [
+      "Epeirogenesis",
+      "Geomorphic processes",
+      "Volcanic activity",
+      "Tectonic processes"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Internal (endogenic) processes originate within the Earth and include tectonic activities, faulting, folding, volcanic activity, and epeirogenesis. Geomorphic processes is an overarching term that includes both endogenic and exogenic processes.",
+    amharicExplanation:
+      "የውስጥ (endogenic) ሂደቶች ከመሬት ውስጥ የሚነሱ እንቅስቃሴዎችን ይጨምራሉ። Geomorphic processes ግን የውስጥ እና የውጭ የመሬት ቅርፅ ለውጥ ሂደቶችን የሚያጠቃልል አጠቃላይ ቃል ነው።"
+  },
+
+  {
+    question: "The occurrence of fossil fuels is associated with",
+    options: [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Crystalline"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Fossil fuels such as coal, petroleum, and natural gas form from buried organic matter accumulated and compressed inside sedimentary rock layers over millions of years.",
+    amharicExplanation:
+      "የነዳጅ እና የከሰል (Fossil fuels) ሀብቶች የሚገኙት በደለል ድንጋዮች (Sedimentary rocks) ውስጥ ነው። የእፅዋትና እንስሳት ቅሪቶች ተከማችተው የሚጨመቁት በደለል ድንጋይ ውስጥ ነው።"
+  },
+
+  {
+    question:
+      "Archaeologists found the fossil of reptiles on the rock, based on the relative age dating technique they can say which one about the rock?",
+    options: [
+      "The rock was formed during Precambrian Era",
+      "The rock was formed during Mesozoic Era",
+      "The rock was formed during Paleozoic Era",
+      "The rock was formed during Cenozoic Era"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The Mesozoic Era is known as the Age of Reptiles, including dinosaurs. Therefore, rocks containing prominent reptile fossils are associated with the Mesozoic Era.",
+    amharicExplanation:
+      "Mesozoic Era የተሳቢዎች ዘመን (Age of Reptiles) በመባል ይታወቃል። ስለዚህ የተሳቢ እንስሳት ቅሪተ-አካል የተገኘበት ድንጋይ ከ Mesozoic Era ጋር ይያያዛል።"
+  },
+
+  {
+    question:
+      "In which Era of Geologic Processes both sedimentary and igneous rocks were altered into metamorphic rocks of varying stages of metamorphism?",
+    options: [
+      "Precambrian Era",
+      "Paleozoic Era",
+      "Mesozoic Era",
+      "Cenozoic Era"
+    ],
+    answer: 0,
+    englishExplanation:
+      "During the ancient Precambrian Era, intense heat, pressure, and mountain-building processes subjected pre-existing igneous and sedimentary rocks to metamorphism, forming metamorphic and crystalline basement rocks.",
+    amharicExplanation:
+      "በጥንታዊው Precambrian Era ወቅት በነበረው ከፍተኛ ሙቀት፣ ጫና እና የተራራ መፈጠር ሂደት (orogenesis) ምክንያት ድንጋዮች ተለውጠው ወደ Metamorphic/Crystalline basement rocks ተቀይረዋል።"
+  },
+
+  {
+    question:
+      "Which era rocks is considered to have the greatest potential for oil and gas deposits?",
+    options: [
+      "Precambrian",
+      "Mesozoic",
+      "Cenozoic",
+      "Paleozoic",
+      "All"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Mesozoic rock formations, such as Adigrat sandstone and Antalo limestone, contain thick marine sedimentary layers rich in organic material, giving them high potential for petroleum and natural gas deposits in the Horn region.",
+    amharicExplanation:
+      "የ Mesozoic Era ድንጋዮች እንደ Adigrat sandstone እና Antalo limestone ያሉ በባህር ደለል የተፈጠሩ እና ኦርጋኒክ ቁሳቁሶችን የያዙ በመሆናቸው ለነዳጅ እና ለተፈጥሮ ጋዝ መገኘት ከፍተኛ አቅም አላቸው።"
+  },
+
+  {
+    question:
+      "One of the following is not an event happened over the Horn of Africa in Cenozoic era",
+    options: [
+      "Formation of the rift valley",
+      "Evolvement of modern man / homo-sapiens",
+      "Formation of massive sedimentary rocks",
+      "Occurrence of pluvial rains"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Massive sedimentary rock formations were predominantly formed during the Mesozoic Era due to marine transgression and regression, not the Cenozoic Era. The Cenozoic Era was characterized by faulting, volcanic activity, Rift Valley formation, pluvial rains, and human evolution.",
+    amharicExplanation:
+      "ግዙፍ የደለል ድንጋዮች (Sedimentary rocks) በዋናነት የተፈጠሩት በ Mesozoic Era የባህር መግባትና መውጣት ወቅት ነው። Cenozoic Era ደግሞ የስምጥ ሸለቆ መፈጠር፣ የሰው ልጅ መከሰት እና የፕሉቪያል ዝናብ የታየበት ዘመን ነው።"
+  },
+
+  {
+    question:
+      "Which of the following is INCORRECT about the Trappean lava or Trap Series lava",
+    options: [
+      "It is a huge quantity of lava that flooded on the top of the Ethiopian highlands during tertiary period.",
+      "It formed a thick layer of volcanic rocks and plateau in the Central Ethiopian Highlands",
+      "It is a volcanic material that comes out through vents following the Fractured crust during Mesozoic era.",
+      "None of the above"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The statement is incorrect because the Trap Series lava outpouring occurred during the Tertiary Period of the Cenozoic Era, not during the Mesozoic Era.",
+    amharicExplanation:
+      "ዓረፍተ ነገሩ ስህተት የሆነበት ምክንያት የ Trap Series እሳተ-ገሞራ ፍንዳታ የተከሰተው በ Cenozoic Era (Tertiary period) ውስጥ እንጂ በ Mesozoic Era ባለመሆኑ ነው።"
+  },
+
+  {
+    question:
+      "One of the following is the major geological event took place in Ethiopia during Cenozoic era?",
+    options: [
+      "Outpouring of huge quantity of lava",
+      "Orogenesis",
+      "Deposition of sand and limestone",
+      "Formation of rift valley",
+      "A and D",
+      "All"
+    ],
+    answer: 4,
+    englishExplanation:
+      "The Cenozoic Era in Ethiopia was characterized by major tectonic movements: the outpouring of Trappean lava (A) and the uplifting and faulting that formed the East African Rift Valley (D). Therefore, the correct answer is A and D.",
+    amharicExplanation:
+      "በ Cenozoic Era በኢትዮጵያ ውስጥ የተከሰቱት ዋና ዋና ክስተቶች የላቫ መፍሰስ/መፍለቅ (A) እና የመሬት መሰነጣጠቅና የስምጥ ሸለቆ መፈጠር (D) ናቸው። ስለዚህ መልሱ A and D ነው።"
+  },{
+    "question": "Which one is TRUE about the Mesozoic era geologic processes?",
+    "options": [
+      "The sinking and rising of the whole present-day Horn of Africa and Arabian landmass.",
+      "Formation of huge mountain ranges",
+      "Peneplanation (reduction of huge mountains into a level surface)",
+      "Formation of the oldest rocks",
+      "All"
+    ],
+    "answer": 0,
+    "englishExplanation": "During the Mesozoic era, the Horn of Africa underwent major epeirogenic movements characterized by alternating slow sinking (transgression) and rising (regression) of the land, leading to marine depositions.",
+    "amharicExplanation": "በሜሶዞይክ ዘመን (Mesozoic era) የኢትዮጵያና የአረቢያ ምድር በዝግታ ወደ ታች መስመጥ (የባህር መግባት) እና ወደ ላይ ከፍ ማለት (የባህር መውጣት) ሂደቶች ውስጥ አልፏል።"
+  },
+
+  {
+    "question": "Which one is not part of geomorphic process?",
+    "options": [
+      "Volcanism",
+      "Erosion and deposition",
+      "Weathering and mass wasting",
+      "Denudation"
+    ],
+    "answer": 0,
+    "englishExplanation": "Geomorphic processes refer strictly to external (exogenic) processes that shape landforms on Earth's surface, such as erosion, weathering, and denudation. Volcanism is an internal (endogenic) process.",
+    "amharicExplanation": "የጂኦሞርፊክ ሂደቶች (Geomorphic processes) የምድርን ውጫዊ ገጽታ የሚቀርጹ ውጫዊ (Exogenic) ሂደቶች ሲሆኑ፣ እሳተ ገሞራ (Volcanism) ግን ከምድር ውስጥ የሚነሳ ውስጣዊ (Endogenic) ሂደት ነው።"
+  },
+
+  {
+    "question": "Quaternary deposits are mainly found in the following areas of Ethiopia Except:",
+    "options": [
+      "Rift Valley",
+      "Northwestern lowlands",
+      "Southern Borena",
+      "None"
+    ],
+    "answer": 3,
+    "englishExplanation": "Quaternary deposits are found across all these region types in Ethiopia, including the Rift Valley, Northwestern lowlands, and Southern Borena. Therefore, none of them is an exception.",
+    "amharicExplanation": "የኳተርነሪ ደለሎች (Quaternary deposits) በስምጥ ሸለቆ (Rift Valley)፣ በሰሜን ምዕራብ ዝቅተኛ ቦታዎች እና በደቡብ ቦረና ቦታዎች በሙሉ ይገኛሉ። ስለዚህ None ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    "question": "Which of the following statement is incorrect about absolute dating technique of Rock?",
+    "options": [
+      "The technique uses radioactive elements",
+      "Used to date exact age of rocks in numbers.",
+      "It is a method used to date comparative age of rocks and fossils",
+      "Carbon 14 and potassium 40 are radioactive elements used to date rocks and fossils."
+    ],
+    "answer": 2,
+    "englishExplanation": "Absolute dating calculates the specific numerical age of rocks using radioactive decay. Determining comparative or relative age is the defining feature of relative dating, not absolute dating.",
+    "amharicExplanation": "የአንድን ድንጋይ አንፃራዊ (Comparative) እድሜ ማወቅ የRelative dating ተግባር ነው፤ Absolute dating ግን የድንጋዮችን ትክክለኛ እድሜ በቁጥር (Exact age in numbers) ነው የሚያሳየው።"
+  },
+
+  {
+    "question": "Which one of the following geologic time scales is mismatched with the event happened during it?",
+    "options": [
+      "Precambrian Era — formation of crystalline basement complex rocks",
+      "Cenozoic Era — formation of rift valley and outpouring of huge quantity of lava",
+      "Paleozoic Era — southward transportation of sediments to form marine deposits",
+      "Mesozoic Era — transgression and regression of the sea",
+      "None of the above"
+    ],
+    "answer": 4,
+    "englishExplanation": "All paired geologic events and eras listed in choices A, B, C, and D are historically accurate for Ethiopia's geological history. Thus, no option is mismatched.",
+    "amharicExplanation": "ከተዘረዘሩት ውስጥ በሙሉ የዘመናት እና የተከሰቱት የጂኦሎጂካል ክስተቶች ግጥም ትክክል ናቸው። ስለዚህ የተሳሳተ ወይም የተዛባ ጥንድ የለም (None of the above)።"
+  },
+
+  {
+    "question": "Which of the following is INCORRECT about the Paleozoic era?",
+    "options": [
+      "Gigantic mountain formation due to orogenic process",
+      "Intense and prolonged denudation was the major geological process",
+      "The formation of 'peneplained' surface",
+      "Undulating plain with some interspersed residual features (inselbergs) were formed",
+      "A and C are the answers."
+    ],
+    "answer": 0,
+    "englishExplanation": "In Ethiopia, the Paleozoic era was dominated by prolonged erosion (denudation) and peneplanation, not by major mountain-building (orogeny).",
+    "amharicExplanation": "በፓሌኦዞይክ ዘመን (Paleozoic era) በኢትዮጵያ የነበረው ዋና ክስተት የረጅም ጊዜ የአፈር መሸርሸር (Denudation) እንጂ የተራራ መፈጠር (Mountain formation) አልነበረም።"
+  },
+
+  {
+    "question": "In which era rocks is the occurrence of metallic minerals in Ethiopia highly associated with?",
+    "options": [
+      "Precambrian",
+      "Mesozoic",
+      "Cenozoic",
+      "Paleozoic",
+      "All"
+    ],
+    "answer": 0,
+    "englishExplanation": "Ancient Precambrian crystalline basement rocks contain Ethiopia's principal deposits of metallic minerals, such as gold, platinum, and iron ore.",
+    "amharicExplanation": "በኢትዮጵያ ውስጥ የሚገኙ የብረታ ብረት ማዕድናት (እንደ ወርቅ፣ ፕላቲነም ወዘተ) በብዛት የሚገኙት በጥንታዊው የፕሪካምብሪያን (Precambrian) ድንጋዮች ውስጥ ነው።"
+  },
+
+  {
+    "question": "The main event responsible for the swelling up of the Rift Valley lakes of Ethiopia during Quaternary period was",
+    "options": [
+      "Invasion of the sea",
+      "Retreatment of the sea",
+      "Pluvial rain",
+      "Hot springs"
+    ],
+    "answer": 2,
+    "englishExplanation": "During the Quaternary period, heavy rainfall events known as pluvial rains caused Rift Valley lakes to expand significantly.",
+    "amharicExplanation": "በኳተርነሪ ክፍለ-ዘመን የኢትዮጵያ ስምጥ ሸለቆ ሀይቆች እንዲሞሉና እንዲጎሉ ያደረገው ዋናው ምክንያት በወቅቱ የነበረው ከፍተኛ የፕሉቪያል ዝናብ (Pluvial rain) ነው።"
+  },
+
+  {
+    "question": "The present land of Ethiopia is the result of the Mesozoic era of epeirogenesis process.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "Ethiopia's modern topography was primarily shaped by Cenozoic events, including faulting, uplifting, Rift Valley formation, and volcanic activities, rather than Mesozoic epeirogenesis alone.",
+    "amharicExplanation": "የኢትዮጵያ የአሁኑ መልክዓ-ምድር አብዛኛው የተፈጠረው በሴኖዞይክ (Cenozoic) ዘመን በተከሰቱ የመሬት መሰነጣጠቅ፣ የእሳተ ገሞራ ፍንዳታ እና የመሬት ከፍታዎች እንጂ በሜሶዞይክ ዘመን ብቻ አይደለም።"
+  },
+
+  {
+    "question": "The occurrence of metallic minerals in Ethiopia is associated with the basement complex rock.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "englishExplanation": "Metallic minerals are located within the old basement complex rocks formed during the Precambrian era.",
+    "amharicExplanation": "የብረታ ብረት ማዕድናት የሚገኙት በጥንታዊና መነሻ በሆነው Basement complex (Precambrian) ድንጋይ ውስጥ ስለሆነ ዓረፍተ ነገሩ ትክክል (True) ነው።"
+  },
+
+  {
+    "question": "The Earth experienced a marked climatic change during the Tertiary period when warmer and dry were replaced by alternating with cooler and wet periods.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "The major climatic shift to alternating cooler and wet periods, including glacial and pluvial cycles, occurred during the Quaternary period, not the Tertiary period.",
+    "amharicExplanation": "የአየር ንብረት ለውጥ ወደ ቀዝቃዛና እርጥብ ወቅቶች መቀያየር የተከሰተው በኳተርነሪ (Quaternary) ክፍለ ጊዜ እንጂ በቴርሻሪ (Tertiary) አይደለም።"
+  },
+
+  {
+    "question": "Eon is the smallest unit of time on the scale and encompasses millions of years.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "An Eon is actually the largest unit of geological time, encompassing billions of years. Epochs and periods are smaller units.",
+    "amharicExplanation": "ኢዮን (Eon) ትልቁ የጂኦሎጂካል ጊዜ መለኪያ ክፍል እንጂ ትንሹ አይደለም፤ በውስጡም ቢሊዮን የሚቆጠሩ ዓመታትን ይይዛል።"
+  },
+
+  {
+    "question": "According to Alfred Wegener (1924) hypothesis, continents of the earth were once gathering up together into a single huge continent called the Gondwanaland.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "According to Alfred Wegener's continental drift hypothesis, the single huge supercontinent was called Pangea, whereas Gondwanaland was only the southern fragment of it.",
+    "amharicExplanation": "አልፍሬድ ዋግነር ያቀረበው ግዙፍ የአንድ ምድር ስም ፓንጂያ (Pangea) ይባላል እንጂ ጎንድዋናላንድ (Gondwanaland) አይደለም። Gondwanaland የPangea ደቡባዊ ክፍል ነበር።"
+  },
+
+  {
+    "question": "The topography of Ethiopia is largely determined by the geologic activities of the Precambrian era.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "While the Precambrian era formed the deep crystalline basement rock foundation, Ethiopia's modern topography was largely shaped by more recent Cenozoic tectonic and volcanic activities.",
+    "amharicExplanation": "የኢትዮጵያ መሠረታዊ ድንጋይ በፕሪካምብሪያን የተገነባ ቢሆንም፣ የአሁኑ መልክዓ-ምድር አብዛኛው የተዋቀረው በሴኖዞይክ (Cenozoic) ዘመን በተከሰቱ እንቅስቃሴዎች ነው።"
+  },
+
+  {
+    "question": "For the formation of existing relief of Ethiopia, geological activities of the Mesozoic era were the most responsible.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "The current relief and landscape of Ethiopia are mainly due to Cenozoic era geological processes, such as Rift Valley formation and volcanic uplifting, not the Mesozoic era.",
+    "amharicExplanation": "አሁን ያለው የኢትዮጵያ መልክዓ-ምድር ቅርፅ እንዲይዝ ዋናው ኃላፊነት የሴኖዞይክ (Cenozoic) ዘመን እንጂ የሜሶዞይክ ዘመን አይደለም።"
+  },
+
+  {
+    "question": "The occurrence of metallic minerals in Ethiopia is associated with the Paleozoic Era.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "Metallic minerals in Ethiopia are primarily associated with the Precambrian basement complex rocks, not the Paleozoic Era.",
+    "amharicExplanation": "በኢትዮጵያ የሚገኙ የብረታ ብረት ማዕድናት ከፓሌኦዞይክ ዘመን ጋር ሳይሆን ከፕሪካምብሪያን (Precambrian) ቤዝመንት ኮምፕሌክስ ድንጋዮች ጋር በዋናነት የተያያዙ ናቸው።"
+  },
+
+  {
+    "question": "The formation of the Great East Africa Rift Valley is associated with the Quaternary Period.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "englishExplanation": "The formation of the Great East African Rift Valley began earlier, during the Miocene Epoch of the Tertiary Period in the Cenozoic Era, rather than the Quaternary Period.",
+    "amharicExplanation": "ታላቁ የምስራቅ አፍሪካ ስምጥ ሸለቆ መፈጠር የጀመረው በቴርሻሪ ክፍለ ጊዜ (በሚዮሰን ኢፖክ) ውስጥ እንጂ በኳተርነሪ ክፍለ ጊዜ አይደለም።"
+  },
+
+  {
+    "question": "One is unique among the techniques of estimating the age of rocks.",
+    "options": [
+      "Using radioactive isotopes",
+      "Relating rock type & structure",
+      "Using superposition principle",
+      "Relating fossils of fauna and flora"
+    ],
+    "answer": 0,
+    "englishExplanation": "Using radioactive isotopes (radiometric dating) is the unique technique used to determine the absolute numerical age of rocks, whereas the other options are relative dating methods.",
+    "amharicExplanation": "ራዲዮአክቲቭ አይሶቶፖችን መጠቀም (Radiometric dating) የድንጋዮችን ትክክለኛ (Absolute) እድሜ በቁጥር ለማወቅ የሚያስችል ልዩ ዘዴ ሲሆን፣ ቀሪዎቹ አንፃራዊ (Relative) የእድሜ መለኪያ ዘዴዎች ናቸው።"
+  },
+
+  {
+    "question": "One of the following is a major geological event that took place in Ethiopia during the Cenozoic era.",
+    "options": [
+      "Orogenesis",
+      "Formation of the Rift Valley",
+      "Deposition of sand and limestone",
+      "Epeirogenesis"
+    ],
+    "answer": 1,
+    "englishExplanation": "The Cenozoic era in Ethiopia was famously characterized by tectonic uplift, extensive lava outpourings, and the formation of the East African Rift Valley.",
+    "amharicExplanation": "በሴኖዞይክ ዘመን በኢትዮጵያ ከተከሰቱት ዋና ዋና ጂኦሎጂካል ክስተቶች አንዱ የስምጥ ሸለቆ መፈጠር (Formation of the Rift Valley) ነው።"
+  },
+
+  {
+    "question": "Why did it matter that tropical plant fossils were discovered in Antarctica?",
+    "options": [
+      "It supported the idea that there has been climate change in the past.",
+      "It supported the idea that people had migrated from the tropics to what is now known as Antarctica.",
+      "It supported the idea that the continents were connected and then drifted.",
+      "It supported the idea that the southern hemisphere was once in the north and vice versa."
+    ],
+    "answer": 2,
+    "englishExplanation": "Discovering tropical plant fossils in ice-covered Antarctica provided key evidence that the continent was previously positioned in a warmer climate zone and drifted to its present location.",
+    "amharicExplanation": "በቀዝቃዛው አንታርክቲካ የሐሩር ክልል (Tropical) እፅዋት ቅሪተ-አካል መገኘቱ አህጉራት ቀደም ሲል ተገናኝተው እንደነበርና በኋላም ቦታቸውን እንደቀየሩ (Continental drift) የሚለውን ሃሳብ ደግፏል።"
+  },{
+    "question": "Among the following, which is/are correctly matched with its formation period?",
+    "options": [
+      "Trapean lava series → Jurassic period",
+      "Experienced a marked climatic change → Quaternary period",
+      "Adigrat Sandstone formation → Cretaceous period",
+      "Formation of Hintalo limestone → Triassic period"
+    ],
+    "answer": 1,
+    "englishExplanation": "Major worldwide climatic fluctuations, including ice ages and pluvial periods, occurred during the Quaternary period. The other options are incorrectly matched with their formation periods.",
+    "amharicExplanation": "በዓለም አቀፍ ደረጃ ከፍተኛ የአየር ንብረት መቀያየር፣ የበረዶ ዘመናትና የፕሉቪያል ወቅቶች የተከሰቱት በኳተርነሪ (Quaternary) ክፍለ ጊዜ ነው። ሌሎቹ አማራጮች ከተጠቀሱት የጂኦሎጂ ጊዜያት ጋር በትክክል አይጣጣሙም።"
+  },
+
+  {
+    "question": "Which geologic event is correctly arranged from its youngest to oldest in chronological order?",
+    "options": [
+      "Adigrat sandstone → Hintalo limestone → Upper sandstone",
+      "Hintalo limestone → Adigrat sandstone → Upper sandstone",
+      "Upper sandstone → Hintalo limestone → Adigrat sandstone",
+      "Hintalo limestone → Upper sandstone → Adigrat sandstone"
+    ],
+    "answer": 2,
+    "englishExplanation": "From youngest to oldest, the correct sequence is Upper Sandstone, Hintalo Limestone, and Adigrat Sandstone. Upper Sandstone belongs to the later Cretaceous period, Hintalo Limestone to the Jurassic period, and Adigrat Sandstone is older.",
+    "amharicExplanation": "ከታናሽ ወደ ታላቅ የጂኦሎጂ ዕድሜ ቅደም ተከተል፣ አፐር ሳንድስቶን (Cretaceous) → ሂንታሎ ላይምስቶን (Jurassic) → አዲግራት ሳንድስቶን ነው።"
+  },
+
+  {
+    "question": "One of the following is exceptional from the study of Geology.",
+    "options": [
+      "It studies about the Evolution of the Earth",
+      "It studies about the atmospheric circulation",
+      "It studies about materials made up of Earth",
+      "It focuses on the process of the Earth",
+      "It investigates the features inside the Earth's surface"
+    ],
+    "answer": 1,
+    "englishExplanation": "Geology studies the Earth's solid structure, materials, rocks, processes, and historical evolution. Atmospheric circulation is mainly studied under Meteorology and Climatology, not Geology.",
+    "amharicExplanation": "ጂኦሎጂ የምድርን ጠንካራ አካል፣ ድንጋዮችን፣ ቁሳቁሶችን፣ ሂደቶችንና የምድርን የዕድገት ታሪክ ያጠናል። የአየር ማሰራጨት (atmospheric circulation) ግን በዋናነት የሚጠናው በሜቲዎሮሎጂና ክሊማቶሎጂ ነው።"
+  },
+
+  {
+    "question": "Platinum has been mined in Ethiopia mainly in one of the following areas.",
+    "options": [
+      "Adola",
+      "Erta Ale",
+      "Yubdo",
+      "Dallol"
+    ],
+    "answer": 2,
+    "englishExplanation": "Yubdo in Western Ethiopia is famous for its platinum deposits and platinum mining history.",
+    "amharicExplanation": "በኢትዮጵያ ፕላቲነም (Platinum) በዋናነት የሚገኘውና የሚመረተው በምዕራብ ኢትዮጵያ በሚገኘው ዩብዶ (Yubdo) አካባቢ ነው።"
+  },
+
+  {
+    "question": "Which of the following statements is true about the Adigrat sandstone?",
+    "options": [
+      "It was formed on top of the Hintalo limestone.",
+      "It was formed during the Cretaceous period.",
+      "It is the oldest sedimentary rock in Ethiopia.",
+      "It is the youngest and thinnest in the southeast part of Ethiopia."
+    ],
+    "answer": 2,
+    "englishExplanation": "Adigrat Sandstone is considered the oldest major sedimentary rock formation in Ethiopia. It was deposited during the early Mesozoic sea transgression.",
+    "amharicExplanation": "አዲግራት ሳንድስቶን በኢትዮጵያ ከጥንታዊዎቹ የተከማቹ ድንጋዮች አንዱ ሲሆን በሜሶዞይክ ዘመን የባህር ውሃ ወደ መሬት ሲገባ ቀድሞ የተከማቸ ነው።"
+  },
+
+  {
+    "question": "One of the following characteristics is odd to the Precambrian era.",
+    "options": [
+      "The process of Metamorphism",
+      "The formation of gigantic mountains",
+      "Land was subjected to intense folding",
+      "Transgression of the sea"
+    ],
+    "answer": 3,
+    "englishExplanation": "Sea transgression occurred mainly during the Mesozoic Era in Ethiopia. The Precambrian was characterized by mountain building, intense folding, faulting, and metamorphism.",
+    "amharicExplanation": "የባህር ውሃ ወደ መሬት መግባት (Transgression) በዋናነት በሜሶዞይክ ዘመን የተከሰተ ነው። ፕሪካምብሪያን ግን በተራራ መፈጠር፣ እጥፋት (folding) እና metamorphism ይታወቃል።"
+  },
+
+  {
+    "question": "In geological time scale, one of the following units of time is considered as the smallest.",
+    "options": [
+      "Era",
+      "Epoch",
+      "Period",
+      "Eon"
+    ],
+    "answer": 1,
+    "englishExplanation": "The major geological time units from largest to smallest are Eon → Era → Period → Epoch. Therefore, Epoch is the smallest unit listed.",
+    "amharicExplanation": "የጂኦሎጂካል ጊዜ መለኪያዎች ከትልቁ ወደ ትንሹ፦ Eon → Era → Period → Epoch ናቸው። ስለዚህ Epoch ከተሰጡት ውስጥ ትንሹ ነው።"
+  },
+
+  {
+    "question": "Which alternative shows the correct sequence of major geological events from the very distant past to close to the present in the Horn of Africa?",
+    "options": [
+      "7-5-6-4-1-2-3-9-8",
+      "7-5-6-4-2-1-3-4-8",
+      "5-7-6-4-1-2-8-9-3"
+    ],
+    "answer": 0,
+    "englishExplanation": "The correct chronological order is basement rock formation → peneplanation and denudation → sea transgression → Adigrat Sandstone formation → sea regression → immense lava flow → volcanic cone formation → pluvial rain → recent deposition.",
+    "amharicExplanation": "ትክክለኛው የጂኦሎጂካል ቅደም ተከተል የቤዝመንት ድንጋይ መፈጠር → መሸርሸርና peneplanation → የባህር መግባት → አዲግራት ሳንድስቶን → የባህር ማፈግፈግ → ላቫ መፍሰስ → የእሳተ ገሞራ ተራራዎች → ፕሉቪያል ዝናብ → ደለል መከማቸት ነው።"
+  },
+
+  {
+    "question": "Which one of the following is NOT an endogenic process?",
+    "options": [
+      "Weathering",
+      "Orogenesis",
+      "Epeirogenesis",
+      "Volcanic Activity"
+    ],
+    "answer": 0,
+    "englishExplanation": "Weathering is an exogenic process caused by external forces such as water, wind, temperature, and climate. Orogenesis, epeirogenesis, and volcanic activity are endogenic processes.",
+    "amharicExplanation": "ዌዘሪንግ (Weathering) በውሃ፣ በነፋስ፣ በሙቀትና በአየር ንብረት የሚከሰት Exogenic ሂደት ነው። Orogenesis፣ Epeirogenesis እና Volcanic Activity ግን Endogenic ሂደቶች ናቸው።"
+  },
+
+  {
+    "question": "Which rocks are thicker and older in the southeastern part of Ethiopia?",
+    "options": [
+      "Quaternary lava sheets",
+      "Hintalo limestone",
+      "Upper Sandstone",
+      "Adigrat sandstone"
+    ],
+    "answer": 3,
+    "englishExplanation": "The Mesozoic sea entered Ethiopia from the southeast. Therefore, Adigrat Sandstone was deposited earlier and is thicker and older in the southeastern part of Ethiopia.",
+    "amharicExplanation": "የሜሶዞይክ ባህር ወደ ኢትዮጵያ የገባው ከደቡብ ምስራቅ በኩል ስለሆነ፣ አዲግራት ሳንድስቶን በዚያ አካባቢ ቀድሞ በመከማቸቱ የበለጠ ወፍራምና ጥንታዊ ነው።"
+  },
+
+  {
+    "question": "Which one of the following is not a geomorphic process?",
+    "options": [
+      "Epeirogenesis",
+      "Mass transfer",
+      "Deposition",
+      "Erosion",
+      "None"
+    ],
+    "answer": 0,
+    "englishExplanation": "Geomorphic processes include external processes such as weathering, erosion, deposition, and mass transfer. Epeirogenesis is an endogenic tectonic process involving broad uplift or subsidence of landmasses.",
+    "amharicExplanation": "Geomorphic processes ውስጥ weathering፣ erosion፣ deposition እና mass transfer ያሉ የውጭ ኃይል ሂደቶች ይካተታሉ። Epeirogenesis ግን በምድር ውስጣዊ ኃይል የሚከሰት የመሬት ከፍ ማለትና መስመጥ ሂደት ነው።"
+  },
+
+  {
+    "question": "Which one of the following is formed as a result of regression of the sea during the Mesozoic Era?",
+    "options": [
+      "Adigrat sandstone",
+      "Hintalo limestone",
+      "Upper sandstone",
+      "Basement rock"
+    ],
+    "answer": 2,
+    "englishExplanation": "During the Mesozoic Era, the sea retreated during the Cretaceous period. The regression was associated with deposition of sand that formed the Upper Sandstone.",
+    "amharicExplanation": "በሜሶዞይክ ዘመን በCretaceous ክፍለ ጊዜ የባህር ውሃ ማፈግፈግ (Regression) ሲጀምር አሸዋ በመከማቸት የተፈጠረው Upper Sandstone ነው።"
+  },
+
+  {
+    "question": "Which one of the following mineral extraction areas is the only active platinum mining site in Ethiopia?",
+    "options": [
+      "Adola in Guji",
+      "Metekel in Benishangul-Gumuz",
+      "Dallol in Afar",
+      "Yubdo in Wellega"
+    ],
+    "answer": 3,
+    "englishExplanation": "Yubdo in Western Wellega is historically recognized as Ethiopia's main platinum mining area.",
+    "amharicExplanation": "በኢትዮጵያ ዋናው የፕላቲነም (Platinum) ማዕድን አካባቢ በምዕራብ ወለጋ የሚገኘው ዩብዶ (Yubdo) ነው።"
+  },
+
+  {
+    "question": "Which geological process refers to mountain-building events?",
+    "options": [
+      "Faulting",
+      "Weathering",
+      "Deposition",
+      "Orogenesis",
+      "Epeirogenesis"
+    ],
+    "answer": 3,
+    "englishExplanation": "Orogenesis refers to mountain-building processes. It involves tectonic deformation of the Earth's crust, commonly through folding and faulting.",
+    "amharicExplanation": "ኦሮጀነሲስ (Orogenesis) ማለት የተራራ መፈጠር ሂደት ነው። በምድር ቅርፊት መታጠፍ (folding) እና መሸንቁር (faulting) ምክንያት ተራራዎች ይፈጠራሉ።"
+  },
+
+  {
+    "question": "What term describes the slow rising and sinking of landmasses?",
+    "options": [
+      "Faulting",
+      "Orogenesis",
+      "Deposition",
+      "Weathering",
+      "Epeirogenesis"
+    ],
+    "answer": 4,
+    "englishExplanation": "Epeirogenesis refers to slow, broad vertical movements of large landmasses, including gradual uplift and subsidence.",
+    "amharicExplanation": "ኤፔይሮጀነሲስ (Epeirogenesis) ማለት ትላልቅ የመሬት ክፍሎች በዝግታ ወደ ላይ ከፍ ማለት (uplift) ወይም ወደ ታች መስመጥ (subsidence) የሚያሳይ ሂደት ነው።"
+  },
+
+  {
+    "question": "The process primarily responsible for the formation of rift valleys is known as:",
+    "options": [
+      "Orogenesis",
+      "Weathering",
+      "Deposition",
+      "Faulting",
+      "Epeirogenesis"
+    ],
+    "answer": 3,
+    "englishExplanation": "Rift valleys form mainly through faulting caused by tensional forces that pull the Earth's crust apart, causing blocks of land to move downward.",
+    "amharicExplanation": "የስምጥ ሸለቆ (Rift Valley) መፈጠር በዋናነት በFaulting ይከሰታል። የመሬት ቅርፊት በመለያየት ስንጥቆች ይፈጠራሉ፣ መካከለኛው የመሬት ክፍልም ወደ ታች ሊሰምጥ ይችላል።"
+  },
+
+  {
+    "question": "The breaking down of rock materials due to external factors such as wind or water is called:",
+    "options": [
+      "Weathering",
+      "Orogenesis",
+      "Epeirogenesis",
+      "Deposition",
+      "Faulting"
+    ],
+    "answer": 0,
+    "englishExplanation": "Weathering is the physical breakdown or chemical alteration of rocks at or near the Earth's surface due to factors such as water, wind, temperature, and ice.",
+    "amharicExplanation": "ዌዘሪንግ (Weathering) ማለት በውሃ፣ በነፋስ፣ በሙቀት፣ በበረዶ እና በሌሎች የአየር ንብረት ኃይሎች ድንጋዮች የሚሰባበሩበት ወይም የሚቀየሩበት ሂደት ነው።"
+  },
+
+  {
+    "question": "Which process leads to the accumulation of sediments in low-lying areas?",
+    "options": [
+      "Faulting",
+      "Weathering",
+      "Deposition",
+      "Epeirogenesis",
+      "Orogenesis"
+    ],
+    "answer": 2,
+    "englishExplanation": "Deposition occurs when agents such as water, wind, or ice lose energy and deposit the sediments they were carrying, often in low-lying areas.",
+    "amharicExplanation": "ዲፖዚሽን (Deposition) ማለት በውሃ፣ በነፋስ ወይም በበረዶ የተሸከሙ አፈርና ድንጋይ ቁርጥራጮች ኃይላቸው ሲቀንስ በዝቅተኛ ቦታዎች ላይ የሚከማቹበት ሂደት ነው።"
+  },
+
+  {
+    "question": "Denudation and peneplanation are major processes associated with which geologic era in Ethiopia?",
+    "options": [
+      "Mesozoic",
+      "Paleozoic",
+      "Jurassic",
+      "Tertiary",
+      "Quaternary"
+    ],
+    "answer": 1,
+    "englishExplanation": "The Paleozoic Era in Ethiopia was characterized by prolonged and intense denudation. This erosion gradually reduced the older mountains and produced a relatively flat peneplain surface.",
+    "amharicExplanation": "በኢትዮጵያ በፓሌኦዞይክ (Paleozoic) ዘመን ረጅም ጊዜ የወሰደ ከባድ የመሬት መሸርሸር (Denudation) ተካሂዷል። ይህም ከፍተኛ መሬቶችን በመቀነስ ጠፍጣፋ የPeneplain መሬት እንዲፈጠር አድርጓል።"
+  },
+
+  {
+    "question": "The Great East African Rift Valley is primarily associated with which geologic period?",
+    "options": [
+      "Precambrian",
+      "Cretaceous",
+      "Jurassic",
+      "Tertiary",
+      "Quaternary"
+    ],
+    "answer": 3,
+    "englishExplanation": "The major formation of the Great East African Rift Valley began during the Tertiary Period of the Cenozoic Era through tectonic uplift, faulting, and related volcanic activity.",
+    "amharicExplanation": "ታላቁ የምስራቅ አፍሪካ ስምጥ ሸለቆ ዋና ዋና የመፈጠር ሂደቶች የጀመሩት በሴኖዞይክ ዘመን ውስጥ በሚገኘው ተርሸሪ (Tertiary) ክፍለ ጊዜ በመሬት ከፍታ፣ በFaulting እና በእሳተ ገሞራ እንቅስቃሴ ነው።"
+  }],
         3: [],
         4: [],
         5: []
