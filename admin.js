@@ -6,6 +6,7 @@ import {
     doc,
     updateDoc
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
 import {
     onAuthStateChanged,
     signOut
@@ -14,6 +15,12 @@ import {
 
 const ADMIN_EMAIL = "ridewankasye6@gmail.com";
 
+
+/*
+====================================
+HTML ELEMENTS
+====================================
+*/
 
 const registrationList =
     document.getElementById("registrationList");
@@ -26,6 +33,9 @@ const pendingCount =
 
 const approvedCount =
     document.getElementById("approvedCount");
+
+const rejectedCount =
+    document.getElementById("rejectedCount");
 
 const logoutBtn =
     document.getElementById("logoutBtn");
@@ -82,13 +92,26 @@ async function loadRegistrations() {
             );
 
 
+        /*
+        ================================
+        COUNTERS
+        ================================
+        */
+
         let total = 0;
         let pending = 0;
         let approved = 0;
+        let rejected = 0;
 
 
         registrationList.innerHTML = "";
 
+
+        /*
+        ================================
+        DISPLAY REGISTRATIONS
+        ================================
+        */
 
         snapshot.forEach((doc) => {
 
@@ -101,15 +124,44 @@ async function loadRegistrations() {
                 data.status || "pending";
 
 
+            /*
+            COUNT PENDING
+            */
+
             if (status === "pending") {
+
                 pending++;
+
             }
 
+
+            /*
+            COUNT APPROVED
+            */
 
             if (status === "approved") {
+
                 approved++;
+
             }
 
+
+            /*
+            COUNT REJECTED
+            */
+
+            if (status === "rejected") {
+
+                rejected++;
+
+            }
+
+
+            /*
+            ================================
+            STUDENT CARD
+            ================================
+            */
 
             const card =
                 document.createElement("div");
@@ -122,9 +174,11 @@ async function loadRegistrations() {
 
                 <h3>
                     👤 ${escapeHTML(
-                        data.fullName || "Unknown Student"
+                        data.fullName ||
+                        "Unknown Student"
                     )}
                 </h3>
+
 
                 <div class="student-info">
 
@@ -161,9 +215,11 @@ async function loadRegistrations() {
 
                 </div>
 
+
                 <span class="status ${status}">
                     ${status.toUpperCase()}
                 </span>
+
 
                 <div class="actions">
 
@@ -171,17 +227,22 @@ async function loadRegistrations() {
                         status === "pending"
                         ?
                         `
+
                         <button
                             class="approve-btn"
-                            data-id="${doc.id}">
+                            data-id="${doc.id}"
+                        >
                             ✅ Approve
                         </button>
 
+
                         <button
                             class="reject-btn"
-                            data-id="${doc.id}">
+                            data-id="${doc.id}"
+                        >
                             ❌ Reject
                         </button>
+
                         `
                         :
                         ""
@@ -197,6 +258,12 @@ async function loadRegistrations() {
         });
 
 
+        /*
+        ================================
+        UPDATE DASHBOARD COUNTERS
+        ================================
+        */
+
         totalCount.textContent =
             total;
 
@@ -206,6 +273,15 @@ async function loadRegistrations() {
         approvedCount.textContent =
             approved;
 
+        rejectedCount.textContent =
+            rejected;
+
+
+        /*
+        ================================
+        ADD BUTTON LISTENERS
+        ================================
+        */
 
         addActionListeners();
 
@@ -213,12 +289,20 @@ async function loadRegistrations() {
 
     catch (error) {
 
-        console.error(error);
+        console.error(
+            "Load registrations error:",
+            error
+        );
+
 
         registrationList.innerHTML = `
+
             <div class="loading">
+
                 ❌ Could not load registrations.
+
             </div>
+
         `;
 
     }
@@ -234,6 +318,13 @@ BUTTONS
 
 function addActionListeners() {
 
+
+    /*
+    ================================
+    APPROVE BUTTONS
+    ================================
+    */
+
     document
         .querySelectorAll(".approve-btn")
         .forEach(button => {
@@ -248,6 +339,12 @@ function addActionListeners() {
 
         });
 
+
+    /*
+    ================================
+    REJECT BUTTONS
+    ================================
+    */
 
     document
         .querySelectorAll(".reject-btn")
@@ -268,27 +365,35 @@ function addActionListeners() {
 
 /*
 ====================================
-APPROVE
+APPROVE REGISTRATION
 ====================================
 */
 
 async function approveRegistration(id) {
 
-    const confirmed = confirm(
-        "Are you sure you want to approve this registration?"
-    );
+
+    const confirmed =
+        confirm(
+            "Are you sure you want to approve this registration?"
+        );
+
 
     if (!confirmed) {
+
         return;
+
     }
+
 
     try {
 
-        const registrationRef = doc(
-            db,
-            "registrations",
-            id
-        );
+        const registrationRef =
+            doc(
+                db,
+                "registrations",
+                id
+            );
+
 
         await updateDoc(
             registrationRef,
@@ -297,9 +402,11 @@ async function approveRegistration(id) {
             }
         );
 
+
         alert(
             "✅ Student approved successfully!"
         );
+
 
         loadRegistrations();
 
@@ -307,7 +414,11 @@ async function approveRegistration(id) {
 
     catch (error) {
 
-        console.error(error);
+        console.error(
+            "Approve error:",
+            error
+        );
+
 
         alert(
             "❌ Failed to approve student."
@@ -320,27 +431,35 @@ async function approveRegistration(id) {
 
 /*
 ====================================
-REJECT
+REJECT REGISTRATION
 ====================================
 */
 
 async function rejectRegistration(id) {
 
-    const reason = prompt(
-        "Enter the reason for rejection:"
-    );
+
+    const reason =
+        prompt(
+            "Enter the reason for rejection:"
+        );
+
 
     if (!reason) {
+
         return;
+
     }
+
 
     try {
 
-        const registrationRef = doc(
-            db,
-            "registrations",
-            id
-        );
+        const registrationRef =
+            doc(
+                db,
+                "registrations",
+                id
+            );
+
 
         await updateDoc(
             registrationRef,
@@ -350,9 +469,11 @@ async function rejectRegistration(id) {
             }
         );
 
+
         alert(
             "❌ Registration rejected."
         );
+
 
         loadRegistrations();
 
@@ -360,7 +481,11 @@ async function rejectRegistration(id) {
 
     catch (error) {
 
-        console.error(error);
+        console.error(
+            "Reject error:",
+            error
+        );
+
 
         alert(
             "❌ Failed to reject registration."
@@ -369,6 +494,8 @@ async function rejectRegistration(id) {
     }
 
 }
+
+
 /*
 ====================================
 ESCAPE HTML
@@ -379,15 +506,30 @@ function escapeHTML(value) {
 
     return String(value)
 
-        .replaceAll("&", "&amp;")
+        .replaceAll(
+            "&",
+            "&amp;"
+        )
 
-        .replaceAll("<", "&lt;")
+        .replaceAll(
+            "<",
+            "&lt;"
+        )
 
-        .replaceAll(">", "&gt;")
+        .replaceAll(
+            ">",
+            "&gt;"
+        )
 
-        .replaceAll('"', "&quot;")
+        .replaceAll(
+            '"',
+            "&quot;"
+        )
 
-        .replaceAll("'", "&#039;");
+        .replaceAll(
+            "'",
+            "&#039;"
+        );
 
 }
 
@@ -398,11 +540,25 @@ LOGOUT
 ====================================
 */
 
-logoutBtn.onclick = async () => {
+logoutBtn.onclick =
+    async () => {
 
-    await signOut(auth);
+        try {
 
-    window.location.href =
-        "login.html";
+            await signOut(auth);
 
-};
+            window.location.href =
+                "login.html";
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Logout error:",
+                error
+            );
+
+        }
+
+    };
