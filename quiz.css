@@ -1,120 +1,1075 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+/* =====================================================
+   UNIQUE ACADEMIC
+   MODERN PINK / PURPLE QUIZ DESIGN
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#f5f7fb;
-    padding:20px;
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    min-height: 100vh;
+
+    color: #2d1b3d;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fce4ec 0%,
+            #f8d8ef 35%,
+            #ead9ff 70%,
+            #ddd0ff 100%
+        );
+
+    background-attachment: fixed;
+
 }
 
-.container{
-    max-width:700px;
-    margin:auto;
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    min-height: 100vh;
+
+    padding-bottom: 30px;
+
 }
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
+
+/* =====================================================
+   STICKY HEADER
+===================================================== */
+
+.quizHeader {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding:
+        12px
+        max(16px, calc((100vw - 900px) / 2));
+
+    background:
+        rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom:
+        1px solid rgba(142, 68, 173, 0.12);
+
+    box-shadow:
+        0 4px 20px rgba(90, 45, 110, 0.10);
+
 }
 
-.header h1{
-    font-size:24px;
-    color:#007bff;
+
+/* =====================================================
+   HEADER TITLE
+===================================================== */
+
+.headerTitle {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 0;
+
+    flex: 1;
+
 }
 
-.btn{
-    border:none;
-    background:#007bff;
-    color:white;
-    padding:10px 18px;
-    border-radius:8px;
-    cursor:pointer;
+
+.headerBook {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9b59b6,
+            #e84393
+        );
+
+    color: white;
+
+    font-size: 20px;
+
+    box-shadow:
+        0 5px 14px rgba(142, 68, 173, 0.25);
+
 }
 
-.btn:hover{
-    background:#0056b3;
+
+.headerTitle h1 {
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    color: #4a235a;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
 }
 
-.subjectBox{
-    background:#eef5ff;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:20px;
-    text-align:center;
+
+.headerTitle p {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #8e6a98;
+
 }
 
-.subjectBox h2{
-    color:#007bff;
+
+/* =====================================================
+   TOP NAV BUTTONS
+===================================================== */
+
+.topNavBtn {
+
+    border: none;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    min-height: 42px;
+
+    padding: 9px 13px;
+
+    border-radius: 13px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
 }
 
-.progress{
-    text-align:center;
-    font-weight:bold;
-    margin-bottom:20px;
+
+.topNavBtn:active {
+
+    transform: scale(0.95);
+
 }
 
-.questionBox{
-    margin-bottom:20px;
+
+.backBtn {
+
+    color: #6c3483;
+
+    background: #f6e9fa;
+
 }
 
-#question{
-    margin-bottom:15px;
+
+.backBtn:hover {
+
+    background: #edd8f4;
+
+    box-shadow:
+        0 5px 15px rgba(142, 68, 173, 0.15);
+
 }
 
-#options{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+
+.homeBtn {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e44ad,
+            #d63384
+        );
+
+    box-shadow:
+        0 5px 14px rgba(142, 68, 173, 0.22);
+
 }
 
-.optionBtn{
-    width:100%;
-    padding:14px;
-    border:2px solid #ddd;
-    background:white;
-    border-radius:10px;
-    cursor:pointer;
-    text-align:left;
-    font-size:16px;
+
+.homeBtn:hover {
+
+    box-shadow:
+        0 7px 18px rgba(142, 68, 173, 0.30);
+
 }
 
-.optionBtn:hover{
-    border-color:#007bff;
+
+.navIcon {
+
+    font-size: 20px;
+
+    line-height: 1;
+
 }
 
-.explanation{
-    background:#f8f9fa;
-    padding:15px;
-    border-radius:10px;
-    margin-top:20px;
+
+.homeIcon {
+
+    font-size: 20px;
+
+    line-height: 1;
+
 }
 
-.explanation h3{
-    margin-top:10px;
-    color:#007bff;
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.quizContainer {
+
+    width: min(720px, calc(100% - 28px));
+
+    margin:
+        22px
+        auto
+        0;
+
 }
 
-.nextBtn{
-    width:100%;
-    margin-top:20px;
-    padding:15px;
-    border:none;
-    border-radius:10px;
-    background:#28a745;
-    color:white;
-    font-size:17px;
-    cursor:pointer;
+
+/* =====================================================
+   SUBJECT CARD
+===================================================== */
+
+.subjectCard {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    box-shadow:
+        0 8px 28px rgba(88, 44, 105, 0.10);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.8);
+
 }
 
-.nextBtn:hover{
-    background:#218838;
+
+.subjectIcon {
+
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 17px;
+
+    font-size: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8c8e8,
+            #d9c2fa
+        );
+
+}
+
+
+.smallLabel {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    color: #a06aaa;
+
+    margin-bottom: 4px;
+
+}
+
+
+.subjectInfo h2 {
+
+    font-size: 21px;
+
+    color: #472052;
+
+    line-height: 1.25;
+
+}
+
+
+.subjectInfo > p:last-child {
+
+    margin-top: 4px;
+
+    color: #806188;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   PROGRESS CARD
+===================================================== */
+
+.progressCard {
+
+    padding: 16px 18px;
+
+    margin-bottom: 15px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    box-shadow:
+        0 5px 20px rgba(88, 44, 105, 0.07);
+
+}
+
+
+.progressTop {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+    font-size: 13px;
+
+    color: #85618f;
+
+}
+
+
+.progressTop strong {
+
+    color: #6c3483;
+
+}
+
+
+.progressTrack {
+
+    height: 8px;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 99px;
+
+    background: #f0e4f4;
+
+}
+
+
+.progressBar {
+
+    height: 100%;
+
+    width: 0%;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9b59b6,
+            #e84393
+        );
+
+    transition:
+        width 0.35s ease;
+
+}
+
+
+/* =====================================================
+   QUESTION CARD
+===================================================== */
+
+.questionCard {
+
+    padding: 22px;
+
+    border-radius: 22px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px rgba(88, 44, 105, 0.11);
+
+    margin-bottom: 15px;
+
+}
+
+
+.questionLabel {
+
+    margin-bottom: 13px;
+
+}
+
+
+.questionBadge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 10px;
+
+    border-radius: 99px;
+
+    color: #8e44ad;
+
+    background: #f6eafa;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.questionText {
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    color: #2f1739;
+
+    margin-bottom: 20px;
+
+    word-wrap: break-word;
+
+}
+
+
+/* =====================================================
+   OPTIONS
+===================================================== */
+
+.options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+}
+
+
+.optionBtn {
+
+    width: 100%;
+
+    min-height: 54px;
+
+    padding:
+        13px
+        15px;
+
+    border:
+        2px solid #eaddec;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    color: #3d2945;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    transition:
+        transform 0.15s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.optionBtn:hover:not(:disabled) {
+
+    border-color: #c47bd6;
+
+    background: #fdf7ff;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 15px rgba(142, 68, 173, 0.10);
+
+}
+
+
+.optionBtn:disabled {
+
+    cursor: default;
+
+}
+
+
+.optionBtn.correct {
+
+    background: #27ae60 !important;
+
+    border-color: #27ae60 !important;
+
+    color: white !important;
+
+}
+
+
+.optionBtn.wrong {
+
+    background: #e74c3c !important;
+
+    border-color: #e74c3c !important;
+
+    color: white !important;
+
+}
+
+
+/* =====================================================
+   EXPLANATION CARD
+===================================================== */
+
+.explanationCard {
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.92);
+
+    box-shadow:
+        0 7px 25px rgba(88, 44, 105, 0.08);
+
+    margin-bottom: 18px;
+
+}
+
+
+.explanationSection h3 {
+
+    font-size: 15px;
+
+    color: #7d3c98;
+
+    margin-bottom: 9px;
+
+}
+
+
+.explanationSection p {
+
+    color: #5e4b65;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    min-height: 0;
+
+}
+
+
+.explanationDivider {
+
+    height: 1px;
+
+    background: #eadff0;
+
+    margin:
+        18px
+        0;
+
+}
+
+
+/* =====================================================
+   QUESTION NAVIGATION
+===================================================== */
+
+.questionNavigation {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 8px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.questionNavBtn {
+
+    flex: 1;
+
+    min-height: 54px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        opacity 0.18s ease;
+
+}
+
+
+.questionNavBtn:active:not(:disabled) {
+
+    transform: scale(0.97);
+
+}
+
+
+.previousQuestionBtn {
+
+    color: #6c3483;
+
+    background:
+        rgba(255, 255, 255, 0.90);
+
+    border:
+        2px solid #ead8f0;
+
+}
+
+
+.nextQuestionBtn {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e44ad,
+            #d63384
+        );
+
+    box-shadow:
+        0 7px 18px rgba(142, 68, 173, 0.22);
+
+}
+
+
+.questionNavBtn:disabled {
+
+    cursor: not-allowed;
+
+    opacity: 0.45;
+
+    box-shadow: none;
+
+}
+
+
+.navArrow {
+
+    font-size: 20px;
+
+    line-height: 1;
+
+}
+
+
+/* =====================================================
+   COMPLETION
+===================================================== */
+
+.completionMessage {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 22px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px rgba(88, 44, 105, 0.10);
+
+}
+
+
+.completionIcon {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.completionMessage h2 {
+
+    color: #6c3483;
+
+    margin-bottom: 8px;
+
+}
+
+
+.completionMessage p {
+
+    color: #806188;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.quizFooter {
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #775a80;
+
+    font-size: 13px;
+
+}
+
+
+.quizFooter p {
+
+    font-weight: 800;
+
+    margin-bottom: 4px;
+
+}
+
+
+.quizFooter span {
+
+    opacity: 0.8;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .quizHeader {
+
+        min-height: 66px;
+
+        padding:
+            10px
+            12px;
+
+    }
+
+
+    .headerBook {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 18px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .headerTitle h1 {
+
+        font-size: 14px;
+
+    }
+
+
+    .headerTitle p {
+
+        font-size: 11px;
+
+    }
+
+
+    .topNavBtn {
+
+        min-height: 40px;
+
+        padding:
+            8px
+            10px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .backText,
+    .homeText {
+
+        display: none;
+
+    }
+
+
+    .quizContainer {
+
+        width: calc(100% - 20px);
+
+        margin-top: 14px;
+
+    }
+
+
+    .subjectCard {
+
+        padding: 15px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .subjectIcon {
+
+        width: 48px;
+
+        height: 48px;
+
+        border-radius: 14px;
+
+        font-size: 21px;
+
+    }
+
+
+    .subjectInfo h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .questionCard {
+
+        padding: 18px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .questionText {
+
+        font-size: 18px;
+
+        line-height: 1.55;
+
+    }
+
+
+    .optionBtn {
+
+        font-size: 15px;
+
+        min-height: 51px;
+
+    }
+
+
+    .explanationCard {
+
+        padding: 17px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .questionNavBtn {
+
+        min-height: 52px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .headerTitle {
+
+        gap: 6px;
+
+    }
+
+
+    .headerBook {
+
+        display: none;
+
+    }
+
+
+    .questionNavigation {
+
+        gap: 8px;
+
+    }
+
+
+    .questionNavBtn {
+
+        padding:
+            8px
+            6px;
+
+    }
+
 }
