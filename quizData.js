@@ -9462,7 +9462,847 @@ const quizData = {
     amharicExplanation:
       "ጌጣጌጥ (Jewelry) የሚዳሰስና አካላዊ ነገር ስለሆነ የMaterial Culture ክፍል ነው። እውቀት፣ እምነት፣ እሴቶች፣ ሞራል እና ምልክቶች ግን የNon-material Culture ክፍሎች ናቸው።"
   }],
-        3: [],
+        3: [  {
+    question: "Enculturation is the exchange of cultural features that results when groups have continuous firsthand contact.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. This definition describes acculturation, not enculturation. Enculturation is the process through which individuals learn and internalize the culture of their own society, while acculturation refers to cultural changes that result from continuous contact between different cultural groups.",
+    amharicExplanation:
+      "ሐሰት። ይህ መግለጫ Acculturation ን እንጂ Enculturation ን አይገልጽም። Enculturation ማለት አንድ ሰው ከልጅነቱ ጀምሮ የራሱን ማህበረሰብ ባህል የሚማርበትና የሚያውቀው ሂደት ነው። Acculturation ግን የተለያዩ ባህሎች በቀጣይነት ሲገናኙ የሚፈጠር የባህል ለውጥ ወይም ልውውጥ ነው።"
+  },
+
+  {
+    question: "Mores are stronger than folkways in influencing everyday ways of living.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Mores are strong moral norms that are considered important for the well-being and functioning of society. They are more serious and strictly followed than folkways, which mainly concern everyday customs, manners, and etiquette.",
+    amharicExplanation:
+      "እውነት። Mores ጠንካራ የሞራል እና የማህበራዊ ሕይወት ደንቦች ሲሆኑ ከ Folkways ይልቅ ጥብቅ ናቸው። Folkways በዋነኝነት የዕለት ተዕለት ልማዶችን፣ ጨዋነትን እና ሥነ-ምግባርን ይመለከታሉ።"
+  },
+
+  {
+    question: "Behaviors that come from adaptation can be transmitted to the next generation genetically.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Learned cultural behaviors are not transmitted genetically from one generation to another. They are mainly learned and transmitted through social interaction, communication, teaching, and cultural practices.",
+    amharicExplanation:
+      "ሐሰት። የተማሩ የባህል ጠባዮች በጄኔቲክ ወይም በዘር ከአንድ ትውልድ ወደ ሌላ አይተላለፉም። በማህበራዊ ግንኙነት፣ በትምህርት፣ በመግባባት እና በባህላዊ ልማዶች ይማራሉ እና ይተላለፋሉ።"
+  },
+
+  {
+    question: "Culture is an ascribed property of a society and can be developed through the process of enculturation.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Culture is not an ascribed biological property that people are born with. It is learned and acquired through social interaction and enculturation.",
+    amharicExplanation:
+      "ሐሰት። ባህል ሰዎች ከተወለዱ ጊዜ ጀምሮ በዘር የሚያገኙት ነገር አይደለም። በማህበራዊ መስተጋብር፣ በመማር እና በ Enculturation ሂደት የሚገኝ ነው።"
+  },
+
+  {
+    question: "Culture is a complex whole that consists of everything other than our belief system.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Culture is a complex whole that includes beliefs as well as knowledge, values, morals, laws, customs, art, and other learned ways of life.",
+    amharicExplanation:
+      "ሐሰት። ባህል ውስብስብ ሁሉን አቀፍ ስርዓት ሲሆን እምነቶችን፣ እውቀትን፣ እሴቶችን፣ ሞራልን፣ ሕጎችን፣ ልማዶችን እና ሌሎችንም የተማሩ የአኗኗር መንገዶችን ያካትታል።"
+  },
+
+  {
+    question: "Culture encompasses those elements of people's ways of life acquired through innate learning.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Culture is learned rather than innate. People acquire culture through social interaction, observation, teaching, imitation, and participation in their society.",
+    amharicExplanation:
+      "ሐሰት። ባህል በተፈጥሮ ወይም በ Innate መንገድ የሚገኝ አይደለም። ሰዎች ባህልን በማህበራዊ መስተጋብር፣ በመመልከት፣ በመማር እና በማህበራዊ ተሳትፎ ያገኛሉ።"
+  },
+
+  {
+    question: "The concept of cultural universals is best understood in terms of the need of society to base adaptation on some innate desires and demands for survival and continuity.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Cultural universals are cultural traits or practices that are found in all human societies. They are related to common human needs such as food, shelter, family, communication, and social organization, which are important for survival and continuity.",
+    amharicExplanation:
+      "እውነት። Cultural universals ማለት በሁሉም የሰው ማህበረሰቦች ውስጥ የሚገኙ የባህል ባህሪያት ወይም ልማዶች ናቸው። እነዚህም እንደ ምግብ፣ መጠለያ፣ ቤተሰብ፣ መግባባት እና ማህበራዊ አደረጃጀት ያሉ የጋራ የሰው ልጅ ፍላጎቶችን ይመለከታሉ።"
+  },
+
+  {
+    question: "Non-material aspects of culture could not be regarded as equally significant as the material aspects of culture.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Non-material culture, including beliefs, values, norms, language, and ideas, is equally important to material culture such as tools, clothing, buildings, and technology.",
+    amharicExplanation:
+      "ሐሰት። ቁሳዊ ያልሆኑ የባህል ክፍሎች እንደ እምነት፣ እሴት፣ ደንብ፣ ቋንቋ እና ሀሳብ እንደ መሳሪያ፣ ልብስ፣ ሕንፃ እና ቴክኖሎጂ ያሉ ቁሳዊ የባህል ክፍሎች እኩል ጠቃሚ ናቸው።"
+  },
+
+  {
+    question: "Cultural universality consists of cultural traits that all individuals of the world share.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Cultural universals refer to cultural traits or practices found in all human societies, not necessarily to identical traits shared by every individual in the world.",
+    amharicExplanation:
+      "ሐሰት። Cultural universals ማለት በሁሉም የሰው ማህበረሰቦች ውስጥ የሚገኙ የባህል ባህሪያት ማለት ነው። በዓለም ላይ ያለ እያንዳንዱ ግለሰብ ተመሳሳይ ባህል ይጋራል ማለት አይደለም።"
+  },
+
+  {
+    question: "Culture is something that can only be associated with a particular society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Although cultures are associated with particular societies and communities, cultural traits can be shared, borrowed, and exchanged among different societies.",
+    amharicExplanation:
+      "ሐሰት። ባህል ከተወሰኑ ማህበረሰቦች ጋር ቢያያዝም፣ የባህል ባህሪያት በተለያዩ ማህበረሰቦች መካከል ሊጋሩ፣ ሊበደሩ እና ሊለዋወጡ ይችላሉ።"
+  },
+
+  {
+    question: "There is no culture that possesses a set of absolute standards.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Cultural standards vary from one society to another. What is considered acceptable, appropriate, or moral in one culture may be viewed differently in another culture.",
+    amharicExplanation:
+      "እውነት። የባህል መስፈርቶች ከአንድ ማህበረሰብ ወደ ሌላ ይለያያሉ። በአንድ ባህል ተገቢ ወይም ሞራላዊ የሚባል ነገር በሌላ ባህል በተለየ መንገድ ሊታይ ይችላል።"
+  },
+
+  {
+    question: "Beliefs are cultural conventions that concern true or false assumptions, specific descriptions of the nature of the universe, and humanity's place in it.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Beliefs are ideas or assumptions that people accept as true or meaningful. They can explain the nature of the universe and humanity's place within it.",
+    amharicExplanation:
+      "እውነት። እምነቶች ሰዎች እውነት ወይም ትርጉም እንዳላቸው የሚቀበሏቸው ሀሳቦች ወይም ግምቶች ናቸው። ስለ አጽናፈ ዓለም ተፈጥሮ እና የሰው ልጅ በውስጡ ስላለው ቦታም ማብራሪያ ሊሰጡ ይችላሉ።"
+  },
+
+  {
+    question: "Despite the presence of cultural similarities, recognized ethnic differences can exist between groups.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Groups may share many cultural similarities while still maintaining distinct ethnic identities based on factors such as language, traditions, history, ancestry, or shared identity.",
+    amharicExplanation:
+      "እውነት። የተለያዩ ቡድኖች ብዙ የባህል መመሳሰሎችን ቢጋሩም በቋንቋ፣ በወግ፣ በታሪክ፣ በዘር አመጣጥ ወይም በጋራ ማንነት ላይ የተመሰረቱ የተለያዩ የEthnic ማንነቶች ሊኖሯቸው ይችላል።"
+  },
+
+  {
+    question: "In symbolic representations, there is a natural or necessary connection between the symbol and what it symbolizes.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. The relationship between a symbol and what it represents is generally arbitrary and based on cultural agreement or convention rather than a natural or necessary connection.",
+    amharicExplanation:
+      "ሐሰት። በምልክት (Symbol) እና በሚወክለው ነገር መካከል የግድ የሆነ የተፈጥሮ ግንኙነት የለም። ግንኙነቱ በሰዎች ስምምነት እና በባህላዊ ልማድ ላይ የተመሰረተ ነው።"
+  },
+
+  {
+    question: "The boundaries of existing variations in culture, language, and biology among human populations cannot be objectively and easily determined.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Cultural, linguistic, and biological variation among human populations is continuous and complex. Migration, intermarriage, cultural exchange, and historical interaction make precise boundaries difficult to establish.",
+    amharicExplanation:
+      "እውነት። በሰዎች መካከል ያሉ የባህል፣ የቋንቋ እና የባዮሎጂ ልዩነቶች ቀጣይነት ያላቸውና ውስብስብ ናቸው። ስደት፣ ጋብቻ፣ የባህል ልውውጥ እና የታሪክ ግንኙነት ትክክለኛ ድንበሮችን በቀላሉ መለየት እንዳይቻል ያደርጋሉ።"
+  },
+
+  {
+    question: "Culture incorporates everything about us and anything that goes beyond nature.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Culture includes learned human ways of thinking and behaving, including beliefs, values, customs, language, technology, social institutions, and other practices that go beyond basic biological nature.",
+    amharicExplanation:
+      "እውነት። ባህል ሰዎች የሚማሯቸውን የአስተሳሰብ እና የባህሪ መንገዶች ያጠቃልላል። እነዚህም እምነት፣ እሴት፣ ልማድ፣ ቋንቋ፣ ቴክኖሎጂ እና ማህበራዊ ተቋማትን ያካትታሉ።"
+  },
+
+  {
+    question: "Cultural relativism entails that culture can be compared to differentiate between the good and the bad.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Cultural relativism means understanding a culture within its own cultural context rather than judging it according to the standards of another culture. It does not mean simply comparing cultures to decide which is good or bad.",
+    amharicExplanation:
+      "ሐሰት። Cultural relativism ማለት አንድን ባህል በሌላ ባህል መስፈርት በመፍረድ ሳይሆን በራሱ ባህላዊ አውድ ውስጥ ለመረዳት መሞከር ማለት ነው። ባህሎችን በማነፃፀር አንዱ ጥሩ ሌላው መጥፎ ነው ብሎ መፍረድ አይደለም።"
+  },
+
+  {
+    question: "Folkways are norms that should be followed as a matter of good conduct or politeness.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Folkways are ordinary social norms concerning everyday behavior, manners, customs, and politeness. Violating them usually results in mild social disapproval rather than serious punishment.",
+    amharicExplanation:
+      "እውነት። Folkways የዕለት ተዕለት ባህሪን፣ ጨዋነትን፣ ልማዶችን እና መልካም ጠባይን የሚመለከቱ ማህበራዊ ደንቦች ናቸው። እነሱን መጣስ ብዙውን ጊዜ ከባድ ቅጣት ሳይሆን ቀላል የማህበራዊ ተቃውሞ ያስከትላል።"
+  },
+
+  {
+    question: "Inhabitants of the plough culture area rely significantly on their herds and cattle for a living.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. People in plough culture areas depend mainly on agriculture and crop cultivation using ploughs. Heavy dependence on herds and cattle is more characteristic of pastoral societies.",
+    amharicExplanation:
+      "ሐሰት። በ Plough culture የሚኖሩ ማህበረሰቦች በዋናነት በማረሻ እርሻ እና በሰብል ምርት ላይ ይመሰረታሉ። በከብት መንጋ ላይ ከፍተኛ ጥገኝነት የሚታየው በ Pastoral ማህበረሰቦች ውስጥ ነው።"
+  },
+
+  {
+    question: "Every culture contains its own unique pattern of behavior which may seem alien to people from other cultural backgrounds.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Every culture develops its own patterns of behavior, values, customs, and beliefs. These patterns may seem unfamiliar or strange to people who come from different cultural backgrounds.",
+    amharicExplanation:
+      "እውነት። እያንዳንዱ ባህል የራሱ የሆነ የባህሪ፣ የእሴት፣ የወግ እና የእምነት ስርዓት ያለው ሲሆን፣ ከሌላ ባህላዊ አስተዳደግ ለመጣ ሰው እንግዳ ወይም ያልተለመደ ሊመስል ይችላል።"
+  },{
+    question: "A marriage form which unites multiple wives with a man at a time is less common than one which unites multiple husbands with a woman.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Polygyny, in which one man has multiple wives, is much more common worldwide than polyandry, in which one woman has multiple husbands. Polyandry is practiced in relatively few societies.",
+    amharicExplanation:
+      "ሐሰት። Polygyny ማለት አንድ ወንድ ከአንድ በላይ ሚስቶች ጋር የሚኖርበት የጋብቻ ሥርዓት ሲሆን፣ ከ Polyandry ይልቅ በዓለም ላይ በብዙ ማህበረሰቦች የተለመደ ነው። Polyandry ግን አንዲት ሴት ከአንድ በላይ ባሎች ጋር የምትኖርበት ሲሆን በጣም ጥቂት ማህበረሰቦች ውስጥ ይገኛል።"
+  },
+
+  {
+    question: "Incest taboo that operates at nuclear family structure is a cultural universal.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. The incest taboo prohibits sexual relationships between close family members, such as parents and children or siblings. Some form of incest prohibition is found across virtually all human societies and is therefore considered a cultural universal.",
+    amharicExplanation:
+      "እውነት። Incest taboo ማለት በቅርብ የደም ዝምድና ባላቸው ሰዎች፣ ለምሳሌ በወላጅና ልጅ ወይም በወንድምና እህት መካከል የግብረ ሥጋ ግንኙነትን የሚከለክል ባህላዊ ደንብ ነው። አንዳንድ ዓይነት የ Incest ክልከላ በእጅጉ በሁሉም የሰው ማህበረሰቦች ይገኛል።"
+  },
+
+  {
+    question: "Monogamous marriage rule is the most common type of marriage rule which determines whom an individual should marry or not.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "False. Monogamy means marriage between one person and one partner at a time. Although monogamy is common in many societies, different societies also recognize other forms of marriage, including various forms of polygamy.",
+    amharicExplanation:
+      "ሐሰት። Monogamy ማለት አንድ ሰው በአንድ ጊዜ ከአንድ የትዳር አጋር ጋር የሚኖርበት የጋብቻ ሥርዓት ነው። በብዙ ማህበረሰቦች የተለመደ ቢሆንም፣ ሌሎች የጋብቻ ዓይነቶችም አሉ።"
+  },
+
+  {
+    question: "Talking about family of procreation means talking about partners and their children.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. A family of procreation is the family that a person forms through marriage or partnership, including the person's spouse or partner and children. It differs from the family of orientation, which is the family into which a person is born.",
+    amharicExplanation:
+      "እውነት። Family of procreation ማለት አንድ ሰው በጋብቻ ወይም በሽርክና የሚመሰርተው ቤተሰብ ሲሆን ባለቤት ወይም የትዳር አጋርን እና ልጆችን ያካትታል። Family of orientation ግን ሰውዬው የተወለደበት ቤተሰብ ነው።"
+  },
+
+  {
+    question: "It is possible to get a kinship relation without blood and marriage relations.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. Kinship can be established through social and cultural relationships, not only through biological descent or marriage. Adoption and culturally recognized forms of fostering are examples of non-biological kinship.",
+    amharicExplanation:
+      "እውነት። ዝምድና በደም ግንኙነት ወይም በጋብቻ ብቻ አይመሰረትም። በጉዲፈቻ (Adoption)፣ በአሳዳጊነት እና በማህበረሰቡ በሚታወቁ ሌሎች ማህበራዊ ግንኙነቶችም ዝምድና ሊመሰረት ይችላል።"
+  },
+
+  {
+    question: "An adult individual might belong to two different nuclear families.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "True. An adult may belong to two nuclear families: the family of orientation, which is the family they were born into, and the family of procreation, which they form with a spouse or partner and children.",
+    amharicExplanation:
+      "እውነት። አንድ ጎልማሳ በሁለት የተለያዩ ኑክሌር ቤተሰቦች ጋር ሊያያዝ ይችላል። አንዱ Family of orientation ሲሆን ሰውዬው የተወለደበት ቤተሰብ ነው፤ ሌላው Family of procreation ሲሆን ከባለቤቱ ወይም ከትዳር አጋሩ እና ከልጆቹ ጋር የሚመሰርተው ቤተሰብ ነው።"
+  },
+
+  {
+    question: "According to Edward Burnett Tylor, culture includes 'any capabilities and habits acquired by man as a member of a society.' The meaning of the underlined phrase is that:",
+    options: [
+      "Culture is transmitted through biological heredity",
+      "Culture is a learned behaviour from society",
+      "The habits of a man which can be gifted by nature",
+      "All things which are acquired through biological and cultural aspects"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The correct answer is that culture is learned behavior from society. The phrase 'acquired by man as a member of a society' emphasizes that culture is learned through social interaction and enculturation rather than inherited biologically.",
+    amharicExplanation:
+      "ትክክለኛው መልስ ባህል ከማህበረሰብ የሚማር ባህሪ መሆኑ ነው። 'ማህበረሰብ አባል በመሆን የሚገኙ' የሚለው ሐረግ ባህል በዘር የሚወረስ ሳይሆን ከማህበረሰብ ጋር በመኖር፣ በመማር እና በማህበራዊ መስተጋብር የሚገኝ መሆኑን ያሳያል።"
+  },
+
+  {
+    question: "Since the arrival of Kana TV, nowadays some Ethiopian baby names have been taken from Turkey and India. This cultural change occurs as a result of which mechanism?",
+    options: [
+      "Diffusion - Direct",
+      "Acculturation",
+      "Diffusion - Indirect",
+      "Invention",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Indirect diffusion occurs when cultural traits spread from one society to another through an indirect medium, such as television, movies, books, or the internet, without requiring direct face-to-face contact.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Indirect Diffusion ነው። ይህ የሚከሰተው ከአንድ ባህል የመጡ ነገሮች እንደ ቴሌቪዥን፣ ፊልም፣ መጽሐፍ ወይም ኢንተርኔት ባሉ መካከለኛ መንገዶች ወደ ሌላ ማህበረሰብ ሲሰራጩ ነው። በዚህ ሁኔታ ቀጥተኛ የፊት ለፊት ግንኙነት አያስፈልግም።"
+  },
+
+  {
+    question: "Refers to an outsider view, in which anthropologists use their own categories and concepts to describe the culture under analysis.",
+    options: [
+      "The etic perspective",
+      "The emic perspective",
+      "Insider perspective",
+      "None",
+      "B and C"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The etic perspective is an outsider or researcher-oriented view of a culture. Anthropologists use analytical categories and concepts to describe and compare cultural practices. The emic perspective, in contrast, focuses on the insider's understanding of the culture.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Etic perspective ነው። Etic አመለካከት ማለት ተመራማሪው ከውጭ ሆኖ የራሱን ምድቦች፣ ጽንሰ-ሀሳቦች እና የትንተና መስፈርቶች በመጠቀም ባህልን የሚያጠናበት ነው። Emic perspective ግን የባህሉን የውስጥ አባላት አመለካከት ያተኩራል።"
+  },
+
+  {
+    question: "What does culture being maladaptive mean?",
+    options: [
+      "It enables people to adapt themselves to the environment",
+      "The downsides of cultural creativity",
+      "The upside of cultural creativity",
+      "It is a means for people to answer the question of their life",
+      "None of the above"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Maladaptive culture refers to cultural practices or innovations that have harmful consequences for people, society, or the environment. In other words, it describes the negative or harmful side of cultural adaptation and creativity.",
+    amharicExplanation:
+      "Maladaptive culture ማለት ለሰዎች፣ ለማህበረሰብ ወይም ለአካባቢ ጎጂ ውጤት ሊያስከትሉ የሚችሉ የባህል ልማዶች ወይም ፈጠራዎች ማለት ነው። በአጭሩ የባህላዊ ፈጠራ ወይም ለውጥ አሉታዊ ጎንን ያመለክታል።"
+  },
+
+  {
+    question: "Which one of the following statements is not true?",
+    options: [
+      "Appropriateness or inappropriateness of making sexual partners is determined by cultural contexts.",
+      "There is justification or logic behind economic consideration of marriage.",
+      "Avunculocal residence rules provide the chance of living with the relatives of the wife or the relatives of the husband.",
+      "Family is the basic unit of human organization.",
+      "A & B"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The correct answer is C. Avunculocal residence does not simply mean living with either the wife's or husband's relatives. It specifically refers to a residence pattern in which a married couple lives with or near the husband's mother's brother, known as the maternal uncle.",
+    amharicExplanation:
+      "ትክክለኛው መልስ C ነው። Avunculocal residence ማለት ከሚስት ዘመዶች ወይም ከባል ዘመዶች ጋር በአጠቃላይ መኖር ማለት አይደለም። በተለይ ከባል እናት ወንድም፣ ማለትም ከእናት አጎት ጋር ወይም በአቅራቢያው መኖርን ያመለክታል።"
+  },
+
+  {
+    question: "The way we Ethiopians celebrate our holidays has been dramatically changing. This characteristic feature of culture is:",
+    options: [
+      "Culture Is Learned",
+      "Culture Is Shared",
+      "Culture Is Adaptive",
+      "Culture Is Maladaptive",
+      "Culture Is Dynamic"
+    ],
+    answer: 4,
+    englishExplanation:
+      "Culture is dynamic because it constantly changes and develops over time. Changes in the way Ethiopians celebrate holidays demonstrate that cultural practices are not completely fixed or static.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Culture Is Dynamic ነው። ባህል ቋሚ እና የማይለወጥ አይደለም። በጊዜ ሂደት ይለወጣል፣ ይዳብራል እና ከአዳዲስ ሁኔታዎች ጋር ይስማማል። የኢትዮጵያውያን የበዓል አከባበር መቀየር የዚህ ጥሩ ምሳሌ ነው።"
+  },
+
+  {
+    question: "Among the characteristics of culture, which one is implied by the fact that cultures are not haphazard collections of customs and beliefs?",
+    options: [
+      "As it is shared",
+      "As it is all-encompassing",
+      "As it is integrated",
+      "As it is dynamic"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Culture is integrated. Its different parts, such as religion, economy, politics, family, and values, are interconnected and influence one another. Therefore, culture is not simply a random collection of customs and beliefs.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Culture Is Integrated ነው። የባህል ክፍሎች እንደ ሃይማኖት፣ ኢኮኖሚ፣ ፖለቲካ፣ ቤተሰብ እና እሴቶች እርስ በእርሳቸው የተያያዙ ናቸው። ስለዚህ ባህል ያለ ስርዓት የተሰበሰበ የልማዶችና የእምነቶች ስብስብ አይደለም።"
+  },
+
+  {
+    question: "We know that living organisms comprise a number of systems, all functioning to maintain overall health. Also, we can describe the nature of culture by using the analogy of a living organism described above.",
+    options: [
+      "All-Encompassing",
+      "Shared",
+      "Integrated",
+      "Symbolic"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The correct answer is Integrated. Just as the systems of a living organism are interconnected and work together as a whole, the different parts of culture are interconnected and function together as an integrated system.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Integrated ነው። ልክ እንደ ሕያው አካል የተለያዩ የሰውነት ስርዓቶች እርስ በእርሳቸው ተያይዘው እንደሚሰሩ፣ የባህል ክፍሎችም እርስ በእርሳቸው ተቀናጅተው እንደ አንድ ስርዓት ይሰራሉ።"
+  },
+
+  {
+    question: "Respect for cultural differences involves all of the following, EXCEPT.",
+    options: [
+      "Knowing that a person's own culture is only one among many",
+      "Appreciating cultural diversity",
+      "Judging others' cultures in terms of one's own values and customs",
+      "Trying to understand every culture in terms of its own context"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The correct answer is C. Judging another culture according to one's own cultural values and customs is ethnocentrism. Respecting cultural differences requires understanding cultures within their own contexts rather than judging them by outside standards.",
+    amharicExplanation:
+      "ትክክለኛው መልስ C ነው። የሌሎችን ባህሎች በራሳችን እሴቶች፣ ልማዶች እና መስፈርቶች በመመዘን መፍረድ Ethnocentrism ይባላል። የባህል ልዩነትን ማክበር ግን እያንዳንዱን ባህል በራሱ አውድ ውስጥ ለመረዳት መሞከር ነው።"
+  },
+
+  {
+    question: "Which culture area is found in the lowland areas of Ethiopia?",
+    options: [
+      "Plough culture area",
+      "Enset culture area",
+      "Pastoral culture area",
+      "All",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The correct answer is Pastoral culture area. Many lowland regions of Ethiopia are characterized by pastoral and agro-pastoral communities that depend heavily on livestock herding for their livelihoods.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Pastoral culture area ነው። በኢትዮጵያ ቆላማ ወይም ዝቅተኛ አካባቢዎች ብዙ ማህበረሰቦች በከብት እርባታ እና በእንስሳት መንጋ ላይ በከፍተኛ ደረጃ ይመሰረታሉ። ስለዚህ የ Pastoral culture area በቆላማ አካባቢዎች የበለጠ ይታያል።"
+  },
+
+  {
+    question: "Who defined culture as 'Culture is the complex whole that consists of everything we think and do and have as members of society'?",
+    options: [
+      "Malinowski",
+      "Edward B. Tylor",
+      "Robert Bierstedt",
+      "John B."
+    ],
+    answer: 2,
+    englishExplanation:
+      "The correct answer is Robert Bierstedt. He described culture as a complex whole that includes what people think, do, and possess as members of society.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Robert Bierstedt ነው። እሱ ባህልን እንደ ማህበረሰብ አባላት የምናስበውን፣ የምንሰራውን እና ያለንን ነገር ሁሉ የሚያካትት ውስብስብ አጠቃላይ ሁኔታ አድርጎ ገልጾታል።"
+  },
+
+  {
+    question: "_________ is a characteristic of culture which describes culture as unique and crucial to humans and to cultural learning.",
+    options: [
+      "Culture is Learned",
+      "Culture is All-Encompassing",
+      "Culture is Dynamic",
+      "Culture is Symbolic"
+    ],
+    answer: 3,
+    englishExplanation:
+      "The correct answer is Culture is Symbolic. Humans use symbols such as language, gestures, signs, and objects to communicate meanings and transmit cultural knowledge from one generation to another.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Culture is Symbolic ነው። ሰዎች ቋንቋ፣ ምልክቶች፣ ምልክት ሰጪ ነገሮች እና የእጅ እንቅስቃሴዎችን በመጠቀም ትርጉምን ይገልጻሉ፣ ይገነዘባሉ እና የባህል እውቀትን ከአንድ ትውልድ ወደ ሌላ ያስተላልፋሉ።"
+  },
+
+  {
+    question: "If respecting elders is a cultural trait that spans across all cultures, what cultural trait does it exhibit?",
+    options: [
+      "Universality",
+      "Generality",
+      "Particularity",
+      "Locality"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The correct answer is Universality. A cultural trait that is found across all human societies is described as universal or exhibiting universality.",
+    amharicExplanation:
+      "ትክክለኛው መልስ Universality ነው። በሁሉም የሰው ማህበረሰቦች ውስጥ የሚገኝ የባህል ባህሪ Universal ወይም Universality የሚባል ነው።"
+  },
+
+  {
+    question: "Anthropological account of the culture of any society is a type of snapshot view of one particular time. This refers to:",
+    options: [
+      "There are cultures that remain completely static year after year.",
+      "There are no cultures that remain completely static year after year.",
+      "There are many cultures that emerge in different societies year after year.",
+      "There are no cultures that emerge in different societies year after year."
+    ],
+    answer: 1,
+    englishExplanation:
+      "The correct answer is that there are no cultures that remain completely static year after year. Because culture is dynamic, an anthropological account captures the culture of a society at a particular point in time, like a snapshot.",
+    amharicExplanation:
+      "ትክክለኛው መልስ 'There are no cultures that remain completely static year after year' ነው። ባህል Dynamic ስለሆነ በጊዜ ሂደት ይለወጣል። ስለዚህ የአንትሮፖሎጂ የባህል ጥናት በተወሰነ ጊዜ የማህበረሰቡን ሁኔታ እንደ Snapshot ይይዛል።"
+  },  {
+    question: "Respect for cultural differences involves the following, EXCEPT:",
+    options: [
+      "Trying to understand every culture and its elements in terms of its own context.",
+      "Knowing that a person's own culture is only one among many.",
+      "Ignoring cultures that don't fit with our culture.",
+      "Accepting and respecting other cultures."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Respecting cultural differences means valuing diversity and trying to understand different ways of life. Ignoring or rejecting cultures because they do not match your own is not cultural respect and may reflect ethnocentrism.",
+    amharicExplanation:
+      "የባህል ልዩነቶችን ማክበር ማለት የተለያዩ የአኗኗር ዘይቤዎችን መረዳትና መቀበል ማለት ነው። ከራሳችን ባህል ጋር የማይስማሙ ባህሎችን ችላ ማለት ወይም ማግለል የባህል ልዩነትን ማክበር አይደለም።"
+  },
+
+  {
+    question: "Culture is the set of instinctive behaviours and ideas that humans have acquired through evolution.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Culture is not instinctive or genetically inherited. It is learned, shared, and transmitted socially from one generation to another through social interaction and enculturation.",
+    amharicExplanation:
+      "ባህል በደመ ነፍስ የሚመጣ ወይም በጂን የሚተላለፍ አይደለም። ባህል በማህበራዊ ግንኙነት፣ በመማር እና በኢንካልቸሬሽን የሚገኝ ነው።"
+  },
+
+  {
+    question: "Marriage is a cultural universal.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Marriage is considered a cultural universal because some form of socially recognized marriage or union exists across human societies, although its forms and rules differ from culture to culture.",
+    amharicExplanation:
+      "ጋብቻ በተለያዩ ቅርጾችና ደንቦች ቢኖርም በሰው ልጆች ማህበረሰቦች ውስጥ የሚገኝ ማህበራዊ ተቋም በመሆኑ Cultural Universal ይባላል።"
+  },
+
+  {
+    question: "Culture refers to the people living in a society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Culture does not refer to the people themselves. Society refers to a group of people, while culture refers to their shared beliefs, values, customs, behaviors, knowledge, and way of life.",
+    amharicExplanation:
+      "ባህል ማለት በማህበረሰብ ውስጥ የሚኖሩ ሰዎች ራሳቸው አይደሉም። ማህበረሰብ ሰዎችን ሲያመለክት፣ ባህል ደግሞ የእነዚህን ሰዎች የጋራ እምነት፣ እሴት፣ ልማድና የአኗኗር ዘይቤ ያመለክታል።"
+  },
+
+  {
+    question: "Culture is acquired through learning rather than encoded in genes or DNA.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Culture is learned through social interaction, observation, communication, education, and enculturation rather than being encoded in genes or DNA.",
+    amharicExplanation:
+      "ባህል በDNA ወይም በጂን የሚወረስ ሳይሆን በማህበራዊ ግንኙነት፣ በመማር፣ በመመልከትና በኢንካልቸሬሽን የሚገኝ ነው።"
+  },
+
+  {
+    question: "The process by which people acquire their culture is:",
+    options: [
+      "Enculturation",
+      "Genetic based",
+      "More rapid in industrialized societies and most rapid in less technologically developed ones",
+      "Slowest in industrialized and most rapid in technologically developed ones"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Enculturation is the lifelong process through which individuals learn the values, norms, beliefs, customs, and behaviors of their culture.",
+    amharicExplanation:
+      "ኢንካልቸሬሽን (Enculturation) ማለት አንድ ግለሰብ የራሱን ባህል፣ እሴቶች፣ ደንቦች፣ እምነቶችና ልማዶች ከማህበረሰቡ የሚማርበት ሂደት ነው።"
+  },
+
+  {
+    question: "The three basic components of culture are:",
+    options: [
+      "Things, artifacts, and blood types.",
+      "Things, ideas, and behavior patterns.",
+      "Religions, values, and attitudes.",
+      "Music, painting, and dance."
+    ],
+    answer: 1,
+    englishExplanation:
+      "The three basic components of culture are material things, ideas, and behavior patterns. Material things include objects and artifacts; ideas include beliefs and values; behavior patterns include customs and practices.",
+    amharicExplanation:
+      "የባህል ሦስቱ መሰረታዊ ክፍሎች ቁሳዊ ነገሮች፣ ሃሳቦች እና የባህሪ ንድፎች ናቸው። ቁሳዊ ነገሮች ዕቃዎችን፣ ሃሳቦች እምነትና እሴቶችን፣ የባህሪ ንድፎች ደግሞ ልማዶችና ድርጊቶችን ያካትታሉ።"
+  },
+
+  {
+    question: "The family in which an individual was born and reared is called _____.",
+    options: [
+      "Family of orientation",
+      "Extended family",
+      "Family of procreation",
+      "Patrilocal"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Family of orientation is the family into which a person is born and raised. It is usually the family that provides the individual's earliest socialization and enculturation.",
+    amharicExplanation:
+      "Family of orientation ማለት አንድ ሰው የተወለደበትና ያደገበት ቤተሰብ ነው። በዚህ ቤተሰብ ውስጥ የመጀመሪያ ማህበራዊ ትምህርትና ባህላዊ መማር ይጀምራል።"
+  },
+
+  {
+    question: "It is important to understand how particular cultural traits fit into the whole system. This explanation best suits which characteristic of culture?",
+    options: [
+      "Culture is integrated",
+      "Culture is dynamic",
+      "Culture is all-encompassing",
+      "Culture is symbolic"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Culture is integrated because its different parts are interconnected. Changes in one part of culture can influence other parts of the cultural system.",
+    amharicExplanation:
+      "ባህል Integrated ነው ማለት የባህሉ የተለያዩ ክፍሎች እርስ በእርሳቸው የተሳሰሩ ናቸው ማለት ነው። አንድ ክፍል ሲቀየር በሌሎች ክፍሎችም ተጽዕኖ ሊፈጥር ይችላል።"
+  },
+
+  {
+    question: "When we talk about a particular people's culture, we are referring to all of its manmade objects, ideas, and activities, whether traditional things from the past or those created recently. This implies that culture is:",
+    options: [
+      "Integrated",
+      "Dynamic",
+      "All-encompassing",
+      "Symbolic"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Culture is all-encompassing because it includes the many aspects of human life, including objects, ideas, activities, traditions, and modern creations.",
+    amharicExplanation:
+      "ባህል All-encompassing ማለት ባህል የሰውን ሕይወት ብዙ ዘርፎች ማለትም ቁሳዊ ነገሮችን፣ ሃሳቦችን፣ ተግባራትን፣ የቆዩ ወጎችንና አዳዲስ ፈጠራዎችን ያጠቃልላል።"
+  },
+
+  {
+    question: "In a marriage practice, the family of the groom and the family of the bride are expected to give equal gifts to one another or exchange goods with goods as marriage compensation. This economic consideration of marriage is called:",
+    options: [
+      "Dowry",
+      "Bride price",
+      "Reciprocal exchange",
+      "Bride service"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Reciprocal exchange refers to the mutual exchange of gifts or goods between the families of the bride and groom, usually involving items of roughly equal value.",
+    amharicExplanation:
+      "Reciprocal exchange ማለት በጋብቻ ጊዜ የሙሽራውና የሙሽሪት ቤተሰቦች እርስ በእርሳቸው እኩል ወይም ተመጣጣኝ ዋጋ ያላቸውን ስጦታዎች ወይም እቃዎች የሚለዋወጡበት ስርዓት ነው።"
+  },
+
+  {
+    question: "A relationship that parents of a husband have with the siblings of a wife can be expressed as _____.",
+    options: [
+      "Affinal Kinship",
+      "Kinship through blood ties",
+      "Fictitious Kinship",
+      "A and C"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Affinal kinship refers to relationships created through marriage rather than biological blood ties. In-law relationships are examples of affinal kinship.",
+    amharicExplanation:
+      "Affinal kinship ማለት በደም ዝምድና ሳይሆን በጋብቻ አማካኝነት የሚፈጠር የዘመድ ግንኙነት ነው። የባል ወይም የሚስት ዘመዶች መካከል የሚፈጠር ግንኙነት ለዚህ ምሳሌ ነው።"
+  },
+
+  {
+    question: "The exchange of cultural traits when there is intensive contact between two or more groups is referred to as:",
+    options: [
+      "Invention",
+      "Acculturation",
+      "Enculturation",
+      "Globalization"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Acculturation occurs when two or more cultural groups have continuous and direct contact, resulting in the exchange and modification of cultural traits.",
+    amharicExplanation:
+      "Acculturation ማለት ሁለት ወይም ከዚያ በላይ የባህል ቡድኖች ቀጣይነት ያለውና ቀጥተኛ ግንኙነት ሲያደርጉ የባህል ነገሮች የሚለዋወጡበትና የሚለወጡበት ሂደት ነው።"
+  },
+
+  {
+    question: "_____ is when some cultural elements move from one group to another without any firsthand contact between them.",
+    options: [
+      "Forced Diffusion",
+      "Acculturation",
+      "Direct Diffusion",
+      "Indirect Diffusion"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Indirect diffusion occurs when cultural traits spread from one society to another without direct, firsthand contact between the two groups, often through an intermediary group, media, trade, or other channels.",
+    amharicExplanation:
+      "Indirect Diffusion ማለት የባህል ነገሮች በሁለቱ ቡድኖች መካከል ቀጥተኛ ግንኙነት ሳይኖር በሶስተኛ ወገን፣ በሚዲያ፣ በንግድ ወይም በሌሎች መንገዶች ከአንድ ቡድን ወደ ሌላ ቡድን ሲሰራጩ ነው።"
+  },
+
+  {
+    question: "If individuals in a certain society are free and allowed to show their genealogical link through the male or female side, this is referred to as _____.",
+    options: [
+      "Patrilineal descent",
+      "Matrilineal descent",
+      "Cognatic",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Cognatic or bilateral descent allows individuals to trace their ancestry through both the mother's and father's sides of the family.",
+    amharicExplanation:
+      "Cognatic ወይም Bilateral descent ማለት አንድ ሰው የዘር ሐረጉን በእናቱም ሆነ በአባቱ በኩል በእኩልነት መከታተል የሚችልበት የዝምድና ስርዓት ነው።"
+  },
+
+  {
+    question: "All are true about the difference between extended and nuclear family, except:",
+    options: [
+      "Nuclear families comprise much fewer members than extended families.",
+      "Extended families contend more with complex organizational principles.",
+      "The death of one parent in the household could affect the structure of the nuclear family.",
+      "Affinal kinship is the basis for the extended family."
+    ],
+    answer: 3,
+    englishExplanation:
+      "The extended family is mainly based on broader kinship relationships, especially consanguineal or blood relationships across generations. Therefore, saying that affinal kinship alone is its basis is incorrect.",
+    amharicExplanation:
+      "የተዘረጋ ቤተሰብ (Extended family) በሰፊ የዝምድና ግንኙነት፣ በተለይም በደም ዝምድና እና በብዙ ትውልዶች ግንኙነት ላይ የተመሰረተ ነው። ስለዚህ Affinal kinship ብቻ የተዘረጋ ቤተሰብ መሰረት ነው ማለት ትክክል አይደለም።"
+  },
+
+  {
+    question: "If a widow marries the brother or a close male relative of her deceased husband, the form of marriage is:",
+    options: [
+      "Levirate marriage",
+      "Sororate marriage",
+      "Sororal polygyny",
+      "Cross-cousin marriage"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Levirate marriage is a custom in which a widow marries the brother or another close male relative of her deceased husband, often to maintain family ties and provide social or economic support.",
+    amharicExplanation:
+      "Levirate marriage ማለት ባሏ የሞተባት ሴት ከሟቹ ባሏ ወንድም ወይም ከቅርብ ወንድ ዘመዱ ጋር የምትጋባበት የጋብቻ ልማድ ነው።"
+  },
+
+  {
+    question: "An economic transaction that involves equal exchange of gifts between the families of both the bride and the groom is called _____.",
+    options: [
+      "Bride wealth",
+      "Bride service",
+      "Reciprocal exchange",
+      "Dowry"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Reciprocal exchange is an economic arrangement in which the families of the bride and groom exchange gifts or goods of approximately equal value.",
+    amharicExplanation:
+      "Reciprocal exchange ማለት የሙሽራውና የሙሽሪት ቤተሰቦች ተመጣጣኝ ዋጋ ያላቸውን ስጦታዎች ወይም እቃዎች እርስ በእርሳቸው የሚለዋወጡበት የኢኮኖሚ ስርዓት ነው።"
+  },
+
+  {
+    question: "Which one of the following is NOT a manifestation of cultural relativism?",
+    options: [
+      "Recognizing that what is immoral, ethical, and acceptable in one culture may not be so in another culture.",
+      "Accepting that each body of custom has inherent dignity and meaning as the way of life of one group that has adapted to its environment.",
+      "Trying to understand every culture and its elements from the point of view of another culture's context and logic.",
+      "Trying to understand every culture and its elements according to its own context and logic."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Cultural relativism means understanding a culture according to its own context, values, and internal logic rather than judging it through the standards of another culture. Therefore, viewing a culture from another culture's perspective is not a proper manifestation of cultural relativism.",
+    amharicExplanation:
+      "Cultural relativism ማለት አንድን ባህል በራሱ አውድ፣ እሴትና የውስጥ አመክንዮ መረዳት ማለት ነው። ስለዚህ አንድን ባህል በሌላ ባህል መመዘኛ ወይም እይታ መመልከት የCultural relativism ትክክለኛ መገለጫ አይደለም።"
+  },
+
+  {
+    question: "The exchange of cultural traits when there is intensive contact between two or more groups is referred to as:",
+    options: [
+      "Invention",
+      "Acculturation",
+      "Enculturation",
+      "Globalization"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Acculturation refers to cultural exchange and change that occurs when two or more cultural groups have continuous and direct contact with one another.",
+    amharicExplanation:
+      "Acculturation ማለት ሁለት ወይም ከዚያ በላይ የባህል ቡድኖች ቀጣይነት ያለውና ቀጥተኛ ግንኙነት ሲያደርጉ የባህል ባህሪያት የሚለዋወጡበት ሂደት ነው።"
+  }],
         4: [],
         5: []
 
