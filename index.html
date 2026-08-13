@@ -1,279 +1,684 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="style.css">
-<title>Unique Academic</title>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Unique Academic</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
 <header>
+
     <h1>🎓 Unique Academic</h1>
-    <p>Learning Platform</p>
+
+    <p>
+        Learning Platform
+    </p>
+
 
     <div class="headerButtons">
 
-        <a href="registration.html" class="registerBtn">
+        <a
+            href="registration.html"
+            class="registerBtn"
+        >
             📝 Register
         </a>
 
-<a href="student-login.html" class="loginBtn">
-    🔐 Student Login
-</a>
+
+        <a
+            href="student-login.html"
+            class="loginBtn"
+        >
+            🔐 Student Login
+        </a>
+
+
         <button id="modeBtn">
+
             🌙 Dark Mode
+
         </button>
 
     </div>
+
 </header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
 
 <section class="hero">
 
-    <h2>Welcome to Unique Academic 🎓</h2>
+    <h2>
+        Welcome to Unique Academic 🎓
+    </h2>
+
 
     <p>
-        Learn smarter with organized university notes, summaries,
-        quizzes, and study tools. Everything you need to succeed
+
+        Learn smarter with organized
+        university notes, summaries,
+        quizzes, and study tools.
+        Everything you need to succeed
         at university is in one place.
+
     </p>
 
-    <a href="#subjects" class="button">
+
+    <a
+        href="#subjects"
+        class="button"
+    >
         🚀 Start Learning
-        <section class="dashboard">
-
-<h2>⚡ Quick Access</h2>
-
-<div class="dashboardGrid">
-
-<div class="dashCard">
-<a href="#subjects">📚<br>Subjects</a>
-</div>
-
-<div class="dashCard">
-<a href="#">📄<br>PDF Library</a>
-</div>
-
-<div class="dashCard">
-<a href="#">🎥<br>Videos</a>
-</div>
-
-<div class="dashCard">
-<a href="#">❓<br>Quiz</a>
-</div>
-
-<div class="dashCard">
-<a href="#">⭐<br>Bookmarks</a>
-</div>
-
-<div class="dashCard">
-<a href="#">👤<br>Profile</a>
-</div>
-
-</div>
+    </a>
 
 </section>
-    </a>
+
+
+
+<!-- =====================================
+     QUICK ACCESS
+===================================== -->
+
+<section class="dashboard">
+
+    <h2>
+        ⚡ Quick Access
+    </h2>
+
+
+    <div class="dashboardGrid">
+
+
+        <div class="dashCard">
+
+            <a href="#subjects">
+
+                📚
+                <br>
+
+                Subjects
+
+            </a>
+
+        </div>
+
+
+        <div class="dashCard">
+
+            <a href="#">
+
+                📄
+                <br>
+
+                PDF Library
+
+            </a>
+
+        </div>
+
+
+        <div class="dashCard">
+
+            <a href="#">
+
+                🎥
+                <br>
+
+                Videos
+
+            </a>
+
+        </div>
+
+
+        <div class="dashCard">
+
+            <a href="#">
+
+                ❓
+                <br>
+
+                Quiz
+
+            </a>
+
+        </div>
+
+
+        <div class="dashCard">
+
+            <a href="#">
+
+                ⭐
+                <br>
+
+                Bookmarks
+
+            </a>
+
+        </div>
+
+
+        <div class="dashCard">
+
+            <a href="#">
+
+                👤
+                <br>
+
+                Profile
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CONTINUE LEARNING
+===================================== -->
+
 <section class="card">
 
-<h2>📖 Continue Learning</h2>
+    <h2>
+        📖 Continue Learning
+    </h2>
 
-<p id="continueText">
-You haven't opened any subject yet.
-</p>
 
-<a id="continueBtn"
-class="button"
-href="#subjects">
-Start Learning
-</a>
+    <p id="continueText">
+
+        You haven't opened any subject yet.
+
+    </p>
+
+
+    <a
+        id="continueBtn"
+        class="button"
+        href="#subjects"
+    >
+
+        Start Learning
+
+    </a>
 
 </section>
-</section>
+
+
+
+<!-- =====================================
+     SEARCH
+===================================== -->
 
 <input
     type="text"
     id="search"
     placeholder="🔍 Search a subject..."
-    onkeyup="searchSubjects()">
-<h2 id="subjects">📚 First-Year Courses (2019 E.C.)</h2>
+    onkeyup="searchSubjects()"
+>
+
+
+
+<!-- =====================================
+     SUBJECT TITLE
+===================================== -->
+
+<h2 id="subjects">
+
+    📚 First-Year Courses (2019 E.C.)
+
+</h2>
+
+
+
+<!-- =====================================
+     ENGLISH SKILL I
+===================================== -->
 
 <div class="card">
 
-<h3>📘 English Skill I</h3>
+    <h3>
+        📘 English Skill I
+    </h3>
 
-<p>Freshman Course</p>
+    <p>
+        Freshman Course
+    </p>
 
-<a class="button" href="english1.html">📖 Open</a>
 
-<button class="bookmarkBtn">⭐ Bookmark</button>
+    <a
+        class="button"
+        href="english1.html"
+    >
+        📖 Open
+    </a>
 
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
 
 </div>
-<div class="card">
-<h3>📈 Economics</h3>
-<p>Freshman Course</p>
-<a class="button" href="economics.html">📖 Open</a>
- <button class="bookmarkBtn">⭐ Bookmark</button>
-<div class="card">
-<h3>📜 History</h3>
-<p>Freshman Course</p>
-<a class="button" href="history.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+
+
+<!-- =====================================
+     ECONOMICS
+===================================== -->
+
+<div class="card">
+
+    <h3>
+        📈 Economics
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="economics.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
 
-<div class="card">
-<h3>💼 Entrepreneurship</h3>
-<p>Freshman Course</p>
-<a class="button" href="entrepreneurship.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
-</div>
+
+<!-- =====================================
+     HISTORY
+===================================== -->
 
 <div class="card">
-<h3>🧑‍🤝‍🧑 Anthropology</h3>
-<p>Freshman Course</p>
-<a class="button" href="anthropology.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
- <p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        📜 History
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="history.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     ENTREPRENEURSHIP
+===================================== -->
 
 <div class="card">
-<h3>💻 Emerging Technology</h3>
-<p>Freshman Course</p>
-<a class="button" href="emerging-technology.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        💼 Entrepreneurship
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="entrepreneurship.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     ANTHROPOLOGY
+===================================== -->
 
 <div class="card">
-<h3>🌍 Global Trends</h3>
-<p>Freshman Course</p>
-<a class="button" href="global-trends.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        🧑‍🤝‍🧑 Anthropology
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="anthropology.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     EMERGING TECHNOLOGY
+===================================== -->
 
 <div class="card">
-<h3>🇬🇧 English Skill II</h3>
-<p>Freshman Course</p>
-<a class="button" href="english2.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        💻 Emerging Technology
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="emerging-technology.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     GLOBAL TRENDS
+===================================== -->
 
 <div class="card">
-<h3>🧠 Psychology</h3>
-<p>Freshman Course</p>
-<a class="button" href="psychology.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        🌍 Global Trends
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="global-trends.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     ENGLISH SKILL II
+===================================== -->
 
 <div class="card">
-<h3>⚖️ Logic</h3>
-<p>Freshman Course</p>
-<a class="button" href="logic.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        🇬🇧 English Skill II
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="english2.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     PSYCHOLOGY
+===================================== -->
 
 <div class="card">
-<h3>🌍 Geography</h3>
-<p>Freshman Course</p>
-<a class="button" href="geography.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        🧠 Psychology
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="psychology.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     LOGIC
+===================================== -->
 
 <div class="card">
-<h3>🏛 Civic Education</h3>
-<p>Freshman Course</p>
-<a class="button" href="civic.html">📖 Open</a>
-<button class="bookmarkBtn">⭐ Bookmark</button>
-<p>Progress: <span class="progressText">0%</span></p>
 
-<input 
-class="progressBar"
-type="range"
-min="0"
-max="100"
-value="0">
+    <h3>
+        ⚖️ Logic
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="logic.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
 </div>
+
+
+
+<!-- =====================================
+     GEOGRAPHY
+===================================== -->
+
+<div class="card">
+
+    <h3>
+        🌍 Geography
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="geography.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
+</div>
+
+
+
+<!-- =====================================
+     CIVIC EDUCATION
+===================================== -->
+
+<div class="card">
+
+    <h3>
+        🏛 Civic Education
+    </h3>
+
+    <p>
+        Freshman Course
+    </p>
+
+
+    <a
+        class="button"
+        href="civic.html"
+    >
+        📖 Open
+    </a>
+
+
+    <button class="bookmarkBtn">
+
+        ⭐ Bookmark
+
+    </button>
+
+</div>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
 <footer>
-    <p>© 2026 Unique Academic | Learn. Understand. Succeed.</p>
+
+    <p>
+
+        © 2026 Unique Academic |
+        Learn. Understand. Succeed.
+
+    </p>
+
 </footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
 <script src="script.js"></script>
+
+
 </body>
+
 </html>
