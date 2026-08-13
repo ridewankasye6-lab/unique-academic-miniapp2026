@@ -8564,7 +8564,561 @@ const quizData = {
     "englishExplanation": "The major formation of the Great East African Rift Valley began during the Tertiary Period of the Cenozoic Era through tectonic uplift, faulting, and related volcanic activity.",
     "amharicExplanation": "ታላቁ የምስራቅ አፍሪካ ስምጥ ሸለቆ ዋና ዋና የመፈጠር ሂደቶች የጀመሩት በሴኖዞይክ ዘመን ውስጥ በሚገኘው ተርሸሪ (Tertiary) ክፍለ ጊዜ በመሬት ከፍታ፣ በFaulting እና በእሳተ ገሞራ እንቅስቃሴ ነው።"
   }],
-        3: [],
+        3: [{
+  question: "The Shewa Plateau is the smallest of the Western highlands.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The Shewa Plateau occupies about 11% of the Western Highlands, making it the smallest subdivision.",
+  amharicExplanation:
+    "የሸዋ አምባ ከምዕራብ ደጋማ አካባቢዎች ውስጥ ወደ 11 በመቶ የሚሆነውን ስፋት በመሸፈን ትንሹ ንዑስ ክፍል ነው።"
+},
+
+{
+  question: "The central plateaus are the smallest of all western highlands.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The central plateaus, particularly the Shewa Plateau, cover a smaller area compared with the other major subdivisions of the Western Highlands.",
+  amharicExplanation:
+    "ማዕከላዊ አምባዎች፣ በተለይም የሸዋ አምባ፣ ከሌሎች ዋና የምዕራብ ደጋማ ንዑስ ክፍሎች ጋር ሲነፃፀሩ አነስተኛ ስፋት አላቸው።"
+},
+
+{
+  question: "The Afar plains are the largest and highest parts of the Rift Valley.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The Afar Plains are broad, but they form the lowest and northernmost part of the Ethiopian Rift Valley, not the highest part.",
+  amharicExplanation:
+    "የአፋር ሜዳዎች ሰፊ ቢሆኑም የኢትዮጵያ ስንጥቅ ሸለቆ ዝቅተኛውና ሰሜናዊው ክፍል ናቸው፤ ከፍተኛው ክፍል አይደሉም።"
+},
+
+{
+  question: "The central Rift Valley of Ethiopia is the most elevated, populated, vegetated and the narrowest part of the system.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The central section of the Ethiopian Rift Valley is generally higher, more densely populated, better vegetated, and narrower than the Afar and southern sections.",
+  amharicExplanation:
+    "የኢትዮጵያ ስንጥቅ ሸለቆ ማዕከላዊ ክፍል ከአፋርና ከደቡባዊ ክፍሎች ጋር ሲነፃፀር ከፍታው የበለጠ፣ ህዝብ የበዛበት፣ እፅዋት የበለፀጉበት እና ጠባብ ነው።"
+},
+
+{
+  question: "All the highlands of Ethiopia are the result of tectonic activity.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Tectonic activity played an important role in forming Ethiopia's highlands, but volcanic activity, erosion, weathering, and river incision also shaped the landscape.",
+  amharicExplanation:
+    "ቴክቶኒክ እንቅስቃሴ የኢትዮጵያን ደጋማ አካባቢዎች በመፍጠር ትልቅ ሚና ቢኖረውም፣ የእሳተ ገሞራ እንቅስቃሴ፣ መሸርሸር፣ የአየር ሁኔታ ተፅዕኖ እና የወንዞች መቆራረጥም የመሬት ገጽታውን ቀርፀዋል።"
+},
+
+{
+  question: "The Plateau of Shewa is a dome-shaped plateau with a crescent shape at the center.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The Shewa Plateau is characterized by elevated plateaus, flat-topped uplands, and deep river gorges. It is not formally described as a dome-shaped plateau with a crescent-shaped center.",
+  amharicExplanation:
+    "የሸዋ አምባ ከፍ ያሉ አምባዎች፣ ጠፍጣፋ ከፍታዎች እና ጥልቅ የወንዝ ሸለቆዎች ያሉት ነው፤ እንደ ጉልላት ወይም እንደ ጨረቃ ቅርጽ ያለው ተብሎ አይገለጽም።"
+},
+
+{
+  question: "The Southwestern Highlands are lower in altitude than the other highlands of Ethiopia.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The Southwestern Highlands generally have lower elevations than many of the other major Ethiopian highland subdivisions.",
+  amharicExplanation:
+    "የደቡብ ምዕራብ ደጋማ አካባቢዎች ከሌሎች ዋና የኢትዮጵያ ደጋማ አካባቢዎች ጋር ሲነፃፀሩ በአጠቃላይ ዝቅተኛ ከፍታ አላቸው።"
+},
+
+{
+  question: "The plateaus of Semein, Lasta and Wollo are the most dissected and rugged subdivisions.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The Semein, Lasta, and Wollo plateaus are highly dissected by rivers and characterized by steep cliffs, deep gorges, and rugged mountainous terrain.",
+  amharicExplanation:
+    "የሰሜን፣ ላስታ እና ወሎ አምባዎች በወንዞች በእጅጉ የተቆራረጡ ሲሆኑ ቁልቁል ገደሎች፣ ጥልቅ ሸለቆዎች እና አስቸጋሪ ተራራማ መልክዓ ምድር አላቸው።"
+},
+
+{
+  question: "The Plateau of Shewa is one of the sources for the water that flows to the Abbay.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The Shewa Plateau is an important watershed for tributaries of the Abbay (Blue Nile), including the Guder and Muger rivers.",
+  amharicExplanation:
+    "የሸዋ አምባ የአባይ (የሰማያዊ ናይል) ገባር ወንዞች እንደ ጉደር እና ሙገር ያሉ ወንዞች የውሃ መነሻ አካባቢ በመሆን አስፈላጊ የውሃ መከፋፈያ ነው።"
+},
+
+{
+  question: "Among western lowlands, which one of the following is suitable for mechanized agriculture?",
+  options: [
+    "Tekeze lowland",
+    "Abay-Dinder lowland",
+    "Baro lowland",
+    "Ghibe lowland"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The Baro Lowland contains extensive flat areas that are favorable for large-scale mechanized agriculture.",
+  amharicExplanation:
+    "የባሮ ዝቅተኛ መሬት ሰፊና ጠፍጣፋ መሬቶች ስላሉት ለትልቅ ደረጃ ሜካናይዝድ እርሻ ተስማሚ ነው።"
+},
+
+{
+  question: "One of the following physiographic divisions of Ethiopia contains the largest proportion of elevated ground.",
+  options: [
+    "North Central Massifs",
+    "Southwestern Highlands",
+    "Shewa Plateau",
+    "Tigray Plateau"
+  ],
+  answer: 2,
+  englishExplanation:
+    "According to the specific curriculum material, the Shewa Plateau is identified as the correct choice for containing a large proportion of elevated ground.",
+  amharicExplanation:
+    "በተጠቀሰው የትምህርት ማዕቀፍ መሠረት የሸዋ አምባ ከፍተኛ ከፍታ ያለው መሬት በብዛት የሚገኝበት ተብሎ ተወስዷል።"
+},
+
+{
+  question: "Which one of the following is incorrect about western lowlands?",
+  options: [
+    "Pastoral or semi-pastoral economic activities dominate the area",
+    "Since one or two rivers cross the lowlands, irrigation agriculture is highly feasible",
+    "As one moves northwards, the degree of aridity increases, making rain-fed agriculture difficult",
+    "The region is generally characterized by arid or semi-arid conditions, including Baro lowland and its other lowlands",
+    "None of the above"
+  ],
+  answer: 3,
+  englishExplanation:
+    "This statement is incorrect because the Baro Lowland is relatively humid and receives substantial rainfall. It is not generally arid or semi-arid.",
+  amharicExplanation:
+    "ይህ አረፍተ ነገር የተሳሳተ ነው፤ የባሮ ዝቅተኛ መሬት በአንፃራዊነት እርጥበት ያለውና በቂ ዝናብ የሚያገኝ አካባቢ ነው። በአጠቃላይ በረሃማ ወይም ከፊል በረሃማ አይደለም።"
+},
+
+{
+  question: "Ethiopia is described as the roof of East Africa because:",
+  options: [
+    "It has diverse topographic features",
+    "It has many lakes",
+    "It has many trans-boundary rivers",
+    "It has the largest proportion of elevated lands"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Ethiopia is called the roof of East Africa because it contains a very large proportion of the region's elevated land.",
+  amharicExplanation:
+    "ኢትዮጵያ 'የምስራቅ አፍሪካ ጣሪያ' የምትባለው በክልሉ ውስጥ ከፍተኛ ከፍታ ያለው መሬት በብዛት ስላላት ነው።"
+},
+
+{
+  question: "Which one of the following is incorrect about the characteristics of the Ethiopian Rift Valley?",
+  options: [
+    "Temperature increases from the lake region towards Afar Triangle",
+    "Elevation increases from the lake region towards Afar Triangle",
+    "Width increases from the lake region towards Afar Triangle",
+    "Rainfall decreases from the lake region towards Afar Triangle"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Elevation decreases as one moves from the lake region toward the Afar Triangle. Therefore, the statement that elevation increases is incorrect.",
+  amharicExplanation:
+    "ከሐይቆች አካባቢ ወደ አፋር ትሪያንግል ሲሄዱ ከፍታው ይቀንሳል። ስለዚህ ከፍታው ይጨምራል የሚለው አረፍተ ነገር የተሳሳተ ነው።"
+},
+
+{
+  question: "One of the following may not be a feature of Ethiopian relief.",
+  options: [
+    "High and rugged mountains",
+    "Flat-topped plateaus",
+    "Deeper and wider gorges",
+    "Rolling plains",
+    "None"
+  ],
+  answer: 3,
+  englishExplanation:
+    "High and rugged mountains, flat-topped plateaus, and deep gorges are important features of Ethiopian relief. Rolling plains are not a defining feature of the country's high-relief landscape.",
+  amharicExplanation:
+    "ከፍተኛና አስቸጋሪ ተራሮች፣ ጠፍጣፋ አናት ያላቸው አምባዎች እና ጥልቅ ሸለቆዎች የኢትዮጵያ መልክዓ ምድር ዋና ባህሪያት ናቸው። ሰፊ የሚንከባለሉ ሜዳዎች ግን ዋና መለያ ባህሪ አይደሉም።"
+},
+
+{
+  question: "It is the biggest of all the subdivisions of the Western Highlands.",
+  options: [
+    "Tigrean Plateau",
+    "North Central Massif",
+    "Shoan Plateau",
+    "Southwestern Highlands"
+  ],
+  answer: 1,
+  englishExplanation:
+    "The North Central Massif is the largest physiographic subdivision of the Western Highlands.",
+  amharicExplanation:
+    "የሰሜን ማዕከላዊ ማሲፍ ከምዕራብ ደጋማ አካባቢዎች ንዑስ ክፍሎች ሁሉ ትልቁ ነው።"
+},
+
+{
+  question: "Which arrangement shows the correct order from the largest to the smallest areal coverage in the Western Highlands?",
+  options: [
+    "North Central Massifs → Southwestern Highlands → Tigray Plateau → Shewa Plateau",
+    "Southwestern Highlands → Shewa Plateau → North Central Massifs → Tigray Plateau",
+    "Southwestern Highlands → North Central Massifs → Tigray Plateau → Shewa Plateau",
+    "None"
+  ],
+  answer: 0,
+  englishExplanation:
+    "This arrangement correctly ranks the Western Highland subdivisions from the largest areal coverage to the smallest.",
+  amharicExplanation:
+    "ይህ ቅደም ተከተል የምዕራብ ደጋማ አካባቢዎችን ከትልቁ የመሬት ስፋት እስከ ትንሹ በትክክል ያሳያል።"
+},
+
+{
+  question: "Identify a CORRECT statement about the impact of relief in Ethiopia.",
+  options: [
+    "Choice of farming techniques and farm implements are not influenced by relief",
+    "The rugged terrain as a result of excessive surface dissection resulted in cultural diversity",
+    "Rugged and difficult terrain facilitates the development of settlement and its expansion",
+    "The highly dissected nature of the landscape enhances the development of transportation",
+    "All of the above"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Rugged and highly dissected terrain has historically isolated communities, contributing to cultural and linguistic diversity.",
+  amharicExplanation:
+    "አስቸጋሪና በጣም የተቆራረጠ መልክዓ ምድር ማህበረሰቦችን በመነጠል ለባህላዊና ቋንቋዊ ብዝሃነት አስተዋፅኦ አድርጓል።"
+},
+
+{
+  question: "Which one of the following areas of Ethiopia is the only active platinum mine?",
+  options: [
+    "Benishangul Gumuz",
+    "Wollega",
+    "Tigray",
+    "Dallol"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Wollega is associated with the Yubdo platinum mining area, which is identified as Ethiopia's platinum mining area.",
+  amharicExplanation:
+    "ወለጋ ውስጥ የሚገኘው ዩብዶ የፕላቲኒየም ማዕድን አካባቢ በኢትዮጵያ ከሚታወቁ የፕላቲኒየም ማዕድን ቦታዎች ዋነኛው ነው።"
+},{   question: "If Genale River is to Bale-Sidama highland, ______ River is to Arsi-Bale highlands.",   options: [     "Weyb",     "Dawa",     "Genale",     "Awash",     "Wabishebelle"   ],   answer: 4,   englishExplanation:     "The Wabishebelle River system drains the Arsi-Bale Highlands, just as the Genale River system drains parts of the Bale-Sidama Highlands.",   amharicExplanation:     "የዋቢሸበሌ ወንዝ ስርዓት የአርሲ-ባሌ ከፍታማ ቦታዎችን እንደሚያፈስ፣ የጅናሌ ወንዝ ስርዓትም የባሌ-ሲዳማ ከፍታማ ቦታዎችን ያጠራል።" },  {   question: "The highly dissected and rugged topographic features of Ethiopia have a positive impact on one of the following socio-economic conditions of the country.",   options: [     "Generation of hydroelectric power",     "Development of settlement",     "Construction of transport infrastructure",     "Modernization of crop production"   ],   answer: 0,   englishExplanation:     "The steep and rugged topography provides favorable conditions for dam construction and hydroelectric power generation.",   amharicExplanation:     "የተራራማና የተጓረበ መልክዓ ምድር ለግድብ ግንባታና ለሃይድሮ ኤሌክትሪክ ኃይል ማመንጨት አመቺ ነው።" },  {   question: "Among the following, which is incorrectly matched?",   options: [     "Mt Garamuleta → Hararghe Plateau",     "Mt Tulu Demtu → Bale Highlands",     "Mt Bada → Sidama Highlands",     "Mt Chilalo → Arsi Highlands"   ],   answer: 2,   englishExplanation:     "Mount Bada is found in the Arsi Highlands, not in the Sidama Highlands.",   amharicExplanation:     "ተራራ ባዳ የሚገኘው በአርሲ ከፍታማ ቦታዎች እንጂ በሲዳማ አይደለም።" },  {   question: "One of the following is a characteristic of the Ethiopian Highlands.",   options: [     "Low population",     "Fewer amount of rainfall",     "High prevalence of tropical diseases",     "Rain-fed agriculture is possible"   ],   answer: 3,   englishExplanation:     "The Ethiopian Highlands receive adequate rainfall, making rain-fed agriculture possible.",   amharicExplanation:     "የኢትዮጵያ ከፍታማ ቦታዎች በቂ ዝናብ ስለሚያገኙ በዝናብ ላይ የተመሰረተ እርሻ ይቻላል።" },  {   question: "These are found on high mountains such as Bale and Kaka Mountains.",   options: [     "Glacio-fluvial deposits",     "Lacustrine deposits",     "Aeolian deposits",     "Marine deposits"   ],   answer: 0,   englishExplanation:     "Glacio-fluvial deposits are formed by ancient glaciers and meltwater on high mountains.",   amharicExplanation:     "የበረዶ ግግር እና የውሃ ተጽዕኖ የፈጠራቸው ክምችቶች በከፍተኛ ተራሮች ላይ ይገኛሉ።" },  {   question: "Which of the following lowlands is geographically located in the western physiographic division, but structurally belongs to the Rift Valley?",   options: [     "Ghibe/Omo Lowland",     "Baro Lowland",     "Tekeze Lowland",     "Abay-Dinder Lowland"   ],   answer: 0,   englishExplanation:     "The Ghibe/Omo Lowland is geographically western but structurally related to the Rift Valley system.",   amharicExplanation:     "የጊቤ/ኦሞ ዝቅተኛ መሬት በአቀማመጥ ምዕራባዊ ቢሆንም በመዋቅር ከሪፍት ቫሊ ጋር ይያያዛል።" },  {   question: "Which of the following is wrongly matched?",   options: [     "Yejju Wadla Delanta Ridge → North Central Massifs",     "Debredamo Monastery → Tigray Plateau",     "Petroleum and Natural Gas → Southeastern Lowland",     "Ankober Palace → Southwestern Highlands",     "A and B"   ],   answer: 3,   englishExplanation:     "Ankober Palace is found in Shewa, not in the Southwestern Highlands.",   amharicExplanation:     "የአንኮበር ቤተ-መንግስት የሚገኘው በሸዋ እንጂ በደቡብ ምዕራብ አይደለም።" },  {   question: "Compared to the lowlands, the highlands of Ethiopia are known for:",   options: [     "Higher mean annual temperature",     "Long experience of rain-fed agriculture",     "Wide range of tropical diseases",     "Very sparse population"   ],   answer: 1,   englishExplanation:     "The Ethiopian Highlands have a long history of rain-fed agriculture due to favorable climate conditions.",   amharicExplanation:     "የኢትዮጵያ ከፍታማ ቦታዎች ረጅም የዝናብ እርሻ ታሪክ አላቸው።" },  {   question: "Which one of the following is odd about the Rift Valley's physiographic effect?",   options: [     "It separates Arabian landmass from African landmass",     "Lava formed the highest mountains of Ethiopia",     "Rift Valley lakes were formed in the tertiary period",     "Ethiopian Plateau was divided into two"   ],   answer: 1,   englishExplanation:     "The highest mountains were formed on the plateau, not directly inside the Rift Valley.",   amharicExplanation:     "ከፍተኛ ተራሮች በአምባዎች ላይ ተፈጥረዋል፣ በሪፍት ቫሊ ውስጥ አይደሉም።" },  {   question: "Which highlands are drained outward in all directions by tributaries of Abay, Omo and Awash?",   options: [     "North Central Massifs",     "Central Highlands",     "Bale Highlands",     "Tigray Plateau"   ],   answer: 1,   englishExplanation:     "The Central Highlands act as a major watershed for Abay, Omo and Awash tributaries.",   amharicExplanation:     "የማዕከላዊ ከፍታማ ቦታዎች ለዓባይ፣ ኦሞ እና አዋሽ ወንዞች የውሃ መከፋፈያ ናቸው።" },  {   question: "Rain-fed agriculture is relatively more practical in one part of the Ethiopian Rift Valley.",   options: [     "Afar Triangle",     "Central Rift",     "Chew Bahir Rift",     "All"   ],   answer: 1,   englishExplanation:     "The Central Rift receives relatively better rainfall and moisture conditions.",   amharicExplanation:     "የመካከለኛው ሪፍት ቫሊ በተሻለ ሁኔታ ዝናብ ያገኛል።" },  {   question: "The plateau of Tigray is separated from the plateau of Eritrea by:",   options: [     "Tekezze River",     "Mereb River",     "Tributaries of Setit River",     "Danakil Lowlands"   ],   answer: 1,   englishExplanation:     "The Mereb River forms the natural boundary between Tigray and Eritrea.",   amharicExplanation:     "የመረብ ወንዝ የትግራይን እና የኤርትራን አምባ ይለያል።" },  {   question: "The difference in altitude between the lowest and highest point in Ethiopia is:",   options: [     "4736 meters",     "4504 meters",     "4760 meters",     "4620 meters"   ],   answer: 0,   englishExplanation:     "The difference between Ras Dashen and Kobar Sink is approximately 4736 meters.",   amharicExplanation:     "በራስ ዳሰን እና በኮባር ስምጥ መካከል ያለው የከፍታ ልዩነት 4736 ሜትር ነው።" },  {   question: "As the highest point is in the Semein, the lowest point is in:",   options: [     "Western Margins",     "Elkere Lowlands",     "Afar Lowlands",     "Ogaden Lowlands"   ],   answer: 2,   englishExplanation:     "The Kobar Sink, Ethiopia's lowest point, is found in the Afar Depression.",   amharicExplanation:     "የኢትዮጵያ ዝቅተኛው ነጥብ ኮባር ስምጥ በአፋር ዝቅተኛ መሬት ይገኛል።" },  {   question: "Imagine a straight line from Ras Dashen to Dallol Depression. Which feature would not be encountered?",   options: [     "Rift Valley Escarpments",     "Lasta Massif",     "Tekezze Gorge",     "Lakes Shalla and Abijata"   ],   answer: 3,   englishExplanation:     "Lakes Shalla and Abijata are found in the Central Rift Valley, not along this route.",   amharicExplanation:     "ሻላና አብያታ ሐይቆች በመካከለኛው ሪፍት ቫሊ ውስጥ ይገኛሉ።" },  {   question: "Which mountain is found to the north of Lake Tana Basin?",   options: [     "Mount Guna",     "Mount Abuna Yoseph",     "Mount Abuye Medda",     "Mount Ras Dashen"   ],   answer: 3,   englishExplanation:     "The Simien Mountains, including Ras Dashen, are north of Lake Tana.",   amharicExplanation:     "የራስ ዳሰን ተራራ ከጣና ሐይቅ በስተሰሜን ይገኛል።" },  {   question: "Mt. Kolo is found in:",   options: [     "Semein",     "Lasta",     "Amhara Saint",     "Gojjam"   ],   answer: 1,   englishExplanation:     "Mount Kolo is found in the Lasta Massif.",   amharicExplanation:     "ኮሎ ተራራ በላስታ ውስጥ ይገኛል።" },  {   question: "Which one of the following appears different from the others?",   options: [     "Choke-Amedamit Mountains",     "Gamo-Konso Highlands",     "Maji-Korma Highlands",     "Kullo-Konta Highlands"   ],   answer: 0,   englishExplanation:     "Choke-Amedamit belongs to the Northwestern Highlands, while the others belong to the Southwestern Highlands.",   amharicExplanation:     "ጮቄ-አመዳሚት በሰሜን ምዕራብ ይገኛል፤ ሌሎቹ በደቡብ ምዕራብ ይገኛሉ።" },  {   question: "Which area is not drained by tributaries of the Tekezze River?",   options: [     "Southwest Wello",     "Southern Tigray",     "Semein",     "Northern Shewa"   ],   answer: 3,   englishExplanation:     "Northern Shewa is mainly drained by the Abay and Awash river systems.",   amharicExplanation:     "ሰሜናዊ ሸዋ በዓባይና በአዋሽ ወንዞች ይወስዳል።" },  {   question: "All of the following are drained by the Abay and its tributaries except:",   options: [     "Southwestern Highlands",     "North and Western Highlands",     "Central Highlands",     "Southeastern Highlands"   ],   answer: 3,   englishExplanation:     "The Southeastern Highlands are drained by the Wabishebelle and Genale rivers.",   amharicExplanation:     "የደቡብ ምስራቅ ከፍታማ ቦታዎች በዋቢሸበሌና በጅናሌ ወንዞች ይወስዳሉ።" }, {
+    question:
+      "Which geological process during the Cenozoic Era played a pivotal role in shaping the topography of Ethiopia?",
+    options: [
+      "The separation of tectonic plates leading to the formation of mountain ranges",
+      "The accumulation of volcanic ash on the Ethiopian plateau",
+      "The uplifting of the Arabo-Ethiopian swell and accumulation of lava",
+      "The erosion of river basins, resulting in highland plateaus"
+    ],
+    answer: 2,
+    englishExplanation:
+      "During the Cenozoic Era, massive tectonic forces caused the Arabo-Ethiopian landmass to rise, followed by extensive outpourings of basaltic lava. This combination helped form the broad, elevated Ethiopian plateau.",
+    amharicExplanation:
+      "በሴኖዞይክ ዘመን የተከሰቱ ታላላቅ የቴክቶኒክ ኃይሎች የአራቦ-ኢትዮጵያ መሬት እንዲነሳ አደረጉ። ከዚያም በርካታ የባዝልቲክ ላቫ ፍሰቶች በመከማቸታቸው ሰፊና ከፍተኛ የኢትዮጵያ ፕላቶ እንዲፈጠር አስተዋጽኦ አደረጉ።"
+  },
+
+  {
+    question:
+      "Why is Ethiopia referred to as the 'Roof of East Africa'?",
+    options: [
+      "Because of its large, continuous lowland areas",
+      "Due to its extensive plateau formations and elevated landmass",
+      "For its temperate climate in both highlands and lowlands",
+      "Because of its highest recorded temperatures across Africa"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethiopia has extensive, rugged, and elevated highland plateaus. Its generally high elevation compared with surrounding areas has led to the nickname 'Roof of East Africa.'",
+    amharicExplanation:
+      "ኢትዮጵያ ሰፊ፣ የተራራማ እና ከፍተኛ ከፍታ ያላቸው ፕላቶዎች ስላሏት ከአካባቢዋ ካሉ ቦታዎች በአማካይ ከፍ ያለች አገር ናት። ስለዚህ 'የምስራቅ አፍሪካ ጣሪያ' ተብላ ትጠራለች።"
+  },
+
+  {
+    question:
+      "Which of the following features is a characteristic of Ethiopia's lowlands rather than its highlands?",
+    options: [
+      "Moderate rainfall with cooler temperatures",
+      "Agricultural potential due to rain-fed farming",
+      "Vast plains with higher temperatures and lower population density",
+      "Dissected terrains created by rivers cutting deep gorges"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Ethiopian lowlands generally have warmer temperatures, lower rainfall, broad plains, and lower population densities compared with many highland areas.",
+    amharicExplanation:
+      "የኢትዮጵያ ቆላማ አካባቢዎች በአጠቃላይ ሰፊ ሜዳዎች፣ ከፍተኛ ሙቀት እና ዝቅተኛ የሕዝብ ጥግግት ይታወቃሉ። ይህም ከብዙ ደጋማ አካባቢዎች ይለያቸዋል።"
+  },
+
+  {
+    question:
+      "Which factor contributes to the high agricultural potential in the Ethiopian highlands?",
+    options: [
+      "The prevalence of tropical diseases and flat lowland regions",
+      "The region's proximity to major rivers and warmer temperatures",
+      "High elevations with lower annual temperatures and moderate rainfall",
+      "Extensive arid plains favorable for irrigation farming"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Many Ethiopian highlands have relatively cool temperatures and moderate rainfall, conditions that support rain-fed agriculture and the cultivation of several highland crops.",
+    amharicExplanation:
+      "ብዙ የኢትዮጵያ ደጋማ አካባቢዎች ቀዝቃዛ የሙቀት መጠንና መጠነኛ ዝናብ ስላላቸው ለዝናብ የሚመረኮዝ እርሻ እና ለተለያዩ የደጋ ሰብሎች ምቹ ሁኔታ ይፈጥራሉ።"
+  },
+
+  {
+    question:
+      "What distinguishes the Western Lowlands of Ethiopia from the Western Highlands in terms of elevation and climatic conditions?",
+    options: [
+      "The Western Lowlands have a higher altitude and are cooler due to proximity to the Rift Valley",
+      "The Western Highlands are flatter with less rain, while the Western Lowlands are rugged and receive higher rainfall",
+      "The Western Lowlands experience arid to semi-arid conditions with elevations between 500 and 1,000 meters",
+      "The Western Highlands are dominated by tropical climates with minimal temperature variation across the year"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The Western Lowlands occur at relatively low elevations, commonly around 500 to 1,000 meters in the described classification, and generally experience warmer and drier conditions than the Western Highlands.",
+    amharicExplanation:
+      "የምዕራብ ቆላማ አካባቢዎች በአንጻራዊነት ዝቅተኛ ከፍታ ላይ ይገኛሉ። በተጠቀሰው ክፍል መሠረት ከ500 እስከ 1,000 ሜትር ያህል ከፍታ ያላቸው ሲሆን፣ ከምዕራብ ደጋማ አካባቢዎች የበለጠ ሞቃታማና ደረቅ ሁኔታ ያሳያሉ።"
+  },
+
+  {
+    question:
+      "Which feature is common between the Tigray Plateau and the Southwestern Highlands, despite their differences in geographic location?",
+    options: [
+      "Both are important for mechanized agriculture due to their expansive flatlands",
+      "They both lie entirely below 2,000 meters above sea level",
+      "Both regions are defined by their rugged terrains created by river dissection",
+      "Each region is a key site for pastoral and semi-nomadic economic activity"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Both the Tigray Plateau and the Southwestern Highlands have rugged landscapes that have been strongly shaped by erosion and river incision, including the formation of deep valleys and gorges.",
+    amharicExplanation:
+      "የትግራይ ፕላቶ እና የደቡብ ምዕራብ ደጋማ አካባቢዎች በጂኦግራፊያዊ አቀማመጣቸው ቢለያዩም፣ በወንዞች መሸርሸርና ጥልቅ ሸለቆዎች መፈጠር የተነሳ የተቆራረጠና ሻካራ መልክዓ ምድር ይጋራሉ።"
+  },
+
+  {
+    question:
+      "How do the physiographic divisions of the Western Highlands influence the distribution of Ethiopia's tallest mountains?",
+    options: [
+      "Most of the tallest mountains are located in the Shewa Plateau due to its geographical centrality",
+      "The majority of mountains over 4,000 meters are found within the North Central Massifs",
+      "The Tigray Plateau contains the highest concentration of mountains due to its volcanic origin",
+      "The Southwestern Highlands are home to Ethiopia's highest peaks, due to favorable tectonic uplift"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The North Central Massifs contain many of Ethiopia's highest mountains, including the Simien highlands and Ras Dashen, which rises to more than 4,000 meters.",
+    amharicExplanation:
+      "የሰሜን መካከለኛ ማሲፎች ብዙ ከፍተኛ የኢትዮጵያ ተራሮችን ይይዛሉ። ከእነዚህም መካከል ከ4,000 ሜትር በላይ ከፍታ ያለው ራስ ዳሽን ይገኛል።"
+  },
+
+  {
+    question:
+      "What economic activity in the Western Lowlands is primarily feasible due to the crossing of rivers like the Baro and Ghibe?",
+    options: [
+      "Rain-fed agriculture relying on seasonal flooding",
+      "Mechanized agriculture supported by irrigation from the rivers",
+      "Pastoral farming, particularly suited to the lowland's flat terrains",
+      "Hydroelectric power generation along riverbanks"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Perennial rivers such as the Baro and Ghibe provide water that can support irrigation and large-scale agricultural activities in the relatively dry Western Lowlands.",
+    amharicExplanation:
+      "እንደ ባሮ እና ግቤ ያሉ ዓመቱን ሙሉ የሚፈሱ ወንዞች በምዕራብ ቆላማ አካባቢዎች ለመስኖ እርሻ ውሃ ያቀርባሉ። ይህም በሰፊ መሬት ላይ የሚደረግ የሜካናይዝድ እርሻን ለማስፋፋት ያግዛል።"
+  },
+
+  {
+    question:
+      "Which of the following best describes the unique topographical feature of the southeastern highlands of Ethiopia?",
+    options: [
+      "The region is known for its flat terrain and easy transition to lowlands",
+      "The highlands rise abruptly from the plateau, offering a clear view of the Rift Valley below",
+      "It consists primarily of low-lying, erosion-prone plains and sparse vegetation",
+      "Extensive river systems create deep valleys, connecting highlands to the northern escarpment"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The southeastern highlands include steep escarpments where elevated land rises sharply above the lower Rift Valley, creating dramatic differences in elevation.",
+    amharicExplanation:
+      "የደቡብ ምስራቅ ደጋማ አካባቢዎች ከስምጥ እጥንት ዝቅተኛ ክፍሎች በድንገት የሚነሱ ገደላማ እና ከፍተኛ መልክዓ ምድሮች አሏቸው። ይህም በከፍታ ላይ ትልቅ ልዩነት ይፈጥራል።"
+  },
+
+  {
+    question:
+      "Which of the following factors is least likely to influence the population density in the southeastern lowlands of Ethiopia?",
+    options: [
+      "The prevalence of low hills and broad valleys across the plains",
+      "The harsh climatic conditions that limit the region's inhabitation",
+      "The low levels of rainfall and high temperatures across the area",
+      "The availability of pastoral lands and semi-nomadic lifestyles of the population"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Harsh climate, low rainfall, high temperatures, and pastoral or semi-nomadic lifestyles are important factors affecting settlement density. The presence of low hills and broad valleys is much less directly responsible for sparse population.",
+    amharicExplanation:
+      "በደቡብ ምስራቅ ቆላማ አካባቢዎች ዝቅተኛ የሕዝብ ጥግግት ላይ አስቸጋሪ የአየር ንብረት፣ ዝቅተኛ ዝናብ፣ ከፍተኛ ሙቀት እና የከብት እርባታ የተመሠረተ አኗኗር ተጽዕኖ አላቸው። ዝቅተኛ ኮረብታዎችና ሰፊ ሸለቆዎች ግን ዋና ምክንያት አይደሉም።"
+  },
+
+  {
+    question:
+      "What is the main economic potential of the sparsely populated southeastern lowlands of Ethiopia?",
+    options: [
+      "Rain-fed agriculture supported by consistent rainfall",
+      "Hydroelectric power generation from the region's rivers",
+      "Animal husbandry, irrigation farming, and potential exploitation of natural gas",
+      "Extensive forest cover supporting large-scale timber production"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The southeastern lowlands support livestock production and, where water is available, irrigation farming. The area also has known natural gas resources, including the Calub and Hilala fields.",
+    amharicExplanation:
+      "የደቡብ ምስራቅ ቆላማ አካባቢዎች ለእንስሳት እርባታ እና ውሃ ባለበት ቦታ ለመስኖ እርሻ ተስማሚ ናቸው። በተጨማሪም እንደ ካሉብ እና ሂላላ ያሉ የተፈጥሮ ጋዝ ሀብቶች ይገኛሉ።"
+  },
+
+  {
+    question:
+      "Which feature best explains why the Afar Triangle within the Rift Valley is considered one of the most geologically hostile environments on Earth?",
+    options: [
+      "Its extensive network of freshwater lakes and high volcanic activity",
+      "Its high elevation and proximity to the Ethiopian highlands",
+      "The presence of active volcanoes, extreme temperatures, and below sea level depressions",
+      "Its large salt plains and moderate summer temperatures"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The Afar Triangle is characterized by extreme heat, active volcanism, and depressions that lie below sea level. These physical conditions make it one of the harshest environments in the region.",
+    amharicExplanation:
+      "የአፋር ትሪያንግል ከፍተኛ ሙቀት፣ ንቁ እሳተ ገሞራዎች እና ከባሕር ጠለል በታች የሚገኙ ዝቅተኛ ቦታዎች አሉት። እነዚህ ሁኔታዎች አካባቢውን በጣም አስቸጋሪና በጂኦሎጂ ንቁ እንዲሆን ያደርጉታል።"
+  },
+
+  {
+    question:
+      "How does the variation in altitude across the Rift Valley primarily affect the socio-economic activities within the region?",
+    options: [
+      "The higher altitudes are exclusively inhabited by pastoralists, while agriculture dominates the lower regions",
+      "Cooler, moist climates at higher altitudes favor rain-fed agriculture, while hotter lowlands are sparsely inhabited",
+      "Volcanic activity in the higher regions restricts settlement, while the lower regions are highly populated",
+      "Low-altitude areas benefit from geothermal energy, while higher regions focus on salt extraction"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Altitude affects temperature and moisture. Higher areas tend to have cooler and more favorable conditions for rain-fed agriculture, while hotter and drier lowland areas generally have lower population densities.",
+    amharicExplanation:
+      "ከፍታ በሙቀትና በእርጥበት ላይ ተጽዕኖ ያሳድራል። ከፍተኛ ቦታዎች ቀዝቃዛና ለዝናብ እርሻ የበለጠ ምቹ ሲሆኑ፣ ሞቃታማና ደረቅ ቆላማ አካባቢዎች በአጠቃላይ ዝቅተኛ የሕዝብ ጥግግት ያሳያሉ።"
+  },
+
+  {
+    question:
+      "What makes the Main Ethiopian Rift distinct from the other two sub-regions of the Rift Valley?",
+    options: [
+      "It has the lowest elevation and the widest width across the Rift Valley",
+      "It is the narrowest, highest sub-region, and features several cinder cones and volcanic mountains",
+      "Its gneissic highlands and marshy areas are its defining geographical characteristics",
+      "It is the largest part of the Rift Valley, known for hosting salt plains and volcanic ridges"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The Main Ethiopian Rift is relatively narrow and elevated compared with the Afar region and contains numerous volcanic features, including cinder cones and volcanic mountains.",
+    amharicExplanation:
+      "ዋናው የኢትዮጵያ ስምጥ እጥንት ከአፋር አካባቢ ጋር ሲነጻጸር በአንጻራዊነት ጠባብና ከፍተኛ ነው። በተጨማሪም ብዙ የእሳተ ገሞራ ቅርጾች፣ የሲንደር ኮኖች እና የእሳተ ገሞራ ተራሮች ይገኙበታል።"
+  },
+
+  {
+    question:
+      "Which of the following best describes the economic significance of the Afar Triangle in the context of Ethiopia's Rift Valley?",
+    options: [
+      "The availability of freshwater lakes supports large-scale irrigation agriculture",
+      "Geothermal energy and salt extraction are the primary economic activities",
+      "Its extensive arable lands allow for diverse crop production",
+      "Volcanic activity creates rich soils ideal for cultivation"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The Afar region is well known for salt extraction, while its active geological setting provides significant potential for geothermal energy development.",
+    amharicExplanation:
+      "የአፋር አካባቢ በጨው ማውጣት ይታወቃል። በተጨማሪም በንቁ የጂኦሎጂ እንቅስቃሴው ምክንያት ለጂኦተርማል ኃይል ማመንጨት ከፍተኛ እድል አለው።"
+  },
+
+  {
+    question:
+      "What geographical feature of the Chew Bahir Rift sets it apart from the Afar Triangle and the Main Ethiopian Rift?",
+    options: [
+      "It contains Ethiopia's highest mountains and receives the most rainfall",
+      "It is characterized by broad, shallow marshes formed by streams rather than volcanic activity",
+      "Its low elevation allows for extensive salt mining operations",
+      "Its faulted depressions host several active volcanoes and lakes"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The Chew Bahir basin in southern Ethiopia is characterized by a broad, shallow depression with marshy and seasonally wet areas. It is less dominated by volcanic features than the Afar and Main Ethiopian Rift areas.",
+    amharicExplanation:
+      "በደቡባዊ ኢትዮጵያ የሚገኘው የጨው ባሕር ተፋሰስ ሰፊና ጥልቀቱ ዝቅተኛ የሆኑ ረግረጋማ እና በወቅታዊ ውሃ የሚሞሉ አካባቢዎች ይታወቃል። ከአፋርና ከዋናው የኢትዮጵያ ስምጥ እጥንት ጋር ሲነጻጸር በእሳተ ገሞራ ባህሪያት ብዙም አይገዛም።"
+  },
+
+  {
+    question:
+      "How does the rugged relief of Ethiopia predominantly influence agricultural practices in higher altitudes?",
+    options: [
+      "It increases the efficiency of mechanized farming due to extensive flatlands",
+      "It limits mechanized farming and favors crops like sorghum and maize",
+      "It restricts farm size and favors crops like barley and wheat",
+      "It leads to the development of large, uniform farmlands for crop diversity"
+    ],
+    answer: 2,
+    englishExplanation:
+      "The rugged and mountainous terrain of the Ethiopian highlands makes large-scale mechanized farming difficult and often results in relatively small farm plots. Cooler highland conditions also favor crops such as barley and wheat.",
+    amharicExplanation:
+      "የኢትዮጵያ ደጋማ አካባቢዎች ተራራማና የተቆራረጠ መልክዓ ምድር ስላላቸው ትልቅ የሜካናይዝድ እርሻ ማካሄድ አስቸጋሪ ነው። ስለዚህ የእርሻ መሬቶች በአንጻራዊነት ትንሽ ሊሆኑ ይችላሉ። ቀዝቃዛው የደጋ አየር ንብረትም እንደ ገብስና ስንዴ ያሉ ሰብሎችን ለማምረት ተስማሚ ነው።"
+  },
+
+  {
+    question:
+      "What is the primary reason for the sparse settlement patterns in Ethiopia's lowland areas compared to the highlands?",
+    options: [
+      "The abundance of water sources and fertile soil in the lowlands",
+      "The high prevalence of tropical diseases and nomadic lifestyles in the lowlands",
+      "The dense population due to favorable climatic conditions in the lowlands",
+      "The suitability of lowlands for mechanized agriculture and large-scale settlement"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Many Ethiopian lowland areas are hotter and drier than the highlands and may have greater exposure to tropical diseases. Pastoral and semi-nomadic livelihoods are also common, contributing to more dispersed settlement patterns.",
+    amharicExplanation:
+      "ብዙ የኢትዮጵያ ቆላማ አካባቢዎች ከደጋማ አካባቢዎች የበለጠ ሞቃታማና ደረቅ ናቸው። እንዲሁም እንደ ወባ ያሉ ሞቃታማ አካባቢ በሽታዎች በአንዳንድ ቆላማ አካባቢዎች በብዛት ሊገኙ ይችላሉ። የከብት እርባታና የዘላን ወይም ከፊል-ዘላን አኗኗርም የሰፈራ ስርጭትን ያበረታታል።"
+  }],
         4: [],
         5: []
 
