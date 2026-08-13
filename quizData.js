@@ -7816,7 +7816,776 @@ const quizData = {
 
     "anthropology": {
 
-        1: [],
+        1: [ {
+    question: "As a matter of fact, the anthropologist's concept of relativism is contentious with human right approaches.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Cultural relativism suggests that each culture should be understood based on its own values and context. This can sometimes conflict with universal human rights standards, making the concept contentious.",
+    amharicExplanation: "የባህል አንፃራዊነት (Cultural relativism) እያንዳንዱ ባህል በራሱ እሴት እና አውድ መታየት አለበት ይላል። ይህ ሃሳብ ከዓለም አቀፍ የሰብአዊ መብት መርሆዎች ጋር አንዳንድ ጊዜ ሊቃረን ስለሚችል አከራካሪ ያደርገዋል።"
+  },
+
+  {
+    question: "Bounded both by time and space anthropology attempts to answer major questions of human existence.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Anthropology is not bounded by time and space. It has a broad scope that studies human beings across different time periods and places, including both past and present societies.",
+    amharicExplanation: "አንትሮፖሎጂ በጊዜና በቦታ የተገደበ አይደለም። ያለፈውንና የአሁኑን የሰው ልጅ ሕይወት በተለያዩ ቦታዎችና ጊዜያት ያጠናል።"
+  },
+
+  {
+    question: "Due to the topic of race is significant; and has social values, anthropologists have been promoting the study of race and racial classifications issues.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Anthropologists have critically examined race and racial classifications. Modern anthropology recognizes that race is largely a social construct rather than a set of distinct biological categories.",
+    amharicExplanation: "አንትሮፖሎጂስቶች ስለ ዘር እና የዘር ምደባዎች በትኩረት ያጠናሉ። ዘር በግልጽ የተለዩ ባዮሎጂያዊ ምድቦች ሳይሆን በአብዛኛው ማህበራዊ ግንባታ መሆኑን ዘመናዊ አንትሮፖሎጂ ያሳያል።"
+  },
+
+  {
+    question: "Anthropology's comparative perspective helps to understand and compare differences and similarities across time and place.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Comparison is a major anthropological perspective. It helps researchers identify similarities and differences among human societies across different times and places.",
+    amharicExplanation: "የንፅፅር እይታ (comparative perspective) የአንትሮፖሎጂ ዋና ባህሪ ነው። በተለያዩ ጊዜያትና ቦታዎች ያሉ ማህበረሰቦችን በማወዳደር ተመሳሳይነትና ልዩነትን ለመረዳት ይረዳል።"
+  },
+
+  {
+    question: "Anthropology differs from other social sciences and the humanities by its nomothetic perspective.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Anthropology is known for combining particularizing and generalizing approaches. It does not differ from other disciplines simply because it uses a nomothetic perspective.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። አንትሮፖሎጂ የተለያዩ ማህበረሰቦችን በልዩ አውዳቸው ከመረዳት ጋር አጠቃላይ ንፅፅርንም ይጠቀማል።"
+  },
+
+  {
+    question: "Many anthropologists are comfortable with the strong form of cultural relativism that say all cultures are equally valid.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Many anthropologists do not accept strong cultural relativism as an absolute principle. Understanding a culture in its own context does not necessarily mean that every cultural practice must be considered morally acceptable.",
+    amharicExplanation: "ብዙ አንትሮፖሎጂስቶች ጠንካራ የባህል አንፃራዊነትን እንደ ፍጹም መርህ አይቀበሉም። አንድን ባህል በራሱ አውድ መረዳት ማለት ሁሉም የባህል ድርጊቶች በሥነ-ምግባር ተቀባይነት አላቸው ማለት አይደለም።"
+  },
+
+  {
+    question: "Anthropologists are merely interested in the study of far away and exotic communities living isolated from the influences of modernization.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Anthropologists study many kinds of societies, including rural, urban, modern, industrial, and global communities.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። አንትሮፖሎጂስቶች ሩቅና ከዘመናዊነት የተገለሉ ማህበረሰቦችን ብቻ አያጠኑም፤ የከተማ፣ የዘመናዊ እና የኢንዱስትሪ ማህበረሰቦችንም ያጠናሉ።"
+  },
+
+  {
+    question: "Anthropological discipline employs qualitative research approach in order to quantify human cultural behaviors and practices.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false because qualitative research is mainly used to understand meanings, experiences, behaviors, and cultural practices in depth rather than simply quantifying them.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። የጥራት ምርምር (qualitative research) የሰዎችን ባህሪ፣ ልምድ፣ ትርጉም እና ባህላዊ ድርጊቶችን በጥልቀት ለመረዳት ይጠቅማል፤ በቁጥር ለመለካት ብቻ አይደለም።"
+  },
+
+  {
+    question: "Anthropology is the pseudoscience study of the biological and socio-cultural dimensions of human life.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Anthropology is a legitimate academic discipline that systematically studies biological, cultural, social, linguistic, and archaeological dimensions of human life.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። አንትሮፖሎጂ ሀሰተኛ ሳይንስ (pseudoscience) ሳይሆን የሰውን ባዮሎጂያዊ፣ ባህላዊ፣ ማህበራዊ፣ ቋንቋዊ እና አርኪኦሎጂያዊ ገጽታዎች በስርዓት የሚያጠና የትምህርት ዘርፍ ነው።"
+  },
+
+  {
+    question: "Anthropological perspective cannot be regarded as a tool for development for it emphasises on cultural preservation.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Anthropology can be an important tool for development because it helps development programs understand local cultures, values, needs, and social conditions.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። አንትሮፖሎጂ የአካባቢውን ባህል፣ እሴት፣ ፍላጎትና ማህበራዊ ሁኔታ በመረዳት የልማት ፕሮግራሞች ውጤታማ እንዲሆኑ ሊረዳ ይችላል።"
+  },
+
+  {
+    question: "Cultural relativism states that a culture has to be studied in terms of its own meanings and values.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Cultural relativism emphasizes understanding a culture according to its own meanings, values, beliefs, and social context rather than judging it solely by another culture's standards.",
+    amharicExplanation: "የባህል አንፃራዊነት አንድን ባህል በራሱ ትርጉም፣ እሴት፣ እምነትና ማህበራዊ አውድ መሠረት መረዳት እንዳለበት ያስተምራል።"
+  },
+
+  {
+    question: "Comparative perspective describes anthropology's intention to provide readers with global understanding of diverse human experience.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The comparative perspective examines similarities and differences among societies and cultures, helping us develop a broader understanding of diverse human experiences.",
+    amharicExplanation: "የንፅፅር እይታ በተለያዩ ማህበረሰቦችና ባህሎች መካከል ያሉ መመሳሰሎችንና ልዩነቶችን በማጥናት ስለ ተለያዩ የሰው ልጅ ልምዶች ሰፊ ግንዛቤ ይሰጣል።"
+  },
+
+  {
+    question: "Anthropology is a discipline which is a guardian of only primitive societies and their heritages.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Anthropology studies human beings and their cultures broadly, including both traditional and contemporary societies.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። አንትሮፖሎጂ ጥንታዊ ማህበረሰቦችን ብቻ ሳይሆን ዘመናዊና የተለያዩ ማህበረሰቦችንም ያጠናል።"
+  },
+
+  {
+    question: "Being relativistic in its approach, anthropology accepts and respects cultural practices without difference.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Cultural relativism means understanding cultural practices within their own context. It does not mean that anthropologists must uncritically approve every cultural practice.",
+    amharicExplanation: "የባህል አንፃራዊነት ባህላዊ ድርጊቶችን በራሳቸው አውድ መረዳት ማለት ነው። ሁሉንም ባህላዊ ድርጊቶች ያለ ምንም ትችት መቀበል ማለት አይደለም።"
+  },
+
+  {
+    question: "Anthropology can be defined as the study of the human past.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Anthropology studies humans in both the past and the present, including biological, cultural, linguistic, and archaeological dimensions.",
+    amharicExplanation: "ይህ አባባል ሐሰት ነው። አንትሮፖሎጂ ያለፈውን ሰው ብቻ ሳይሆን የአሁኑንም የሰው ልጅ ሕይወት ያጠናል።"
+  },
+
+  {
+    question: "Anthropologists are not alone focusing their attention on human beings and their creations.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Other disciplines such as sociology, psychology, history, and archaeology also study human beings, societies, and human creations.",
+    amharicExplanation: "ይህ አባባል እውነት ነው። ሶሺዮሎጂ፣ ሳይኮሎጂ፣ ታሪክ እና አርኪኦሎጂ የመሳሰሉ ሌሎች የትምህርት ዘርፎችም ሰዎችን፣ ማህበረሰቦችን እና የሰው ልጅ ፈጠራዎችን ያጠናሉ።"
+  },
+
+  {
+    question: "Comparison is a characteristic of the anthropological perspective that requires anthropologists to study similarities and differences across as many societies as possible before generalizing about humans and their activities.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Comparison helps anthropologists examine similarities and differences across societies before making broader conclusions about human behavior and activities.",
+    amharicExplanation: "ይህ አባባል እውነት ነው። ንፅፅር አንትሮፖሎጂስቶች ስለ ሰው ልጅ አጠቃላይ መደምደሚያ ከመስጠታቸው በፊት በብዙ ማህበረሰቦች ያሉ ተመሳሳይነቶችንና ልዩነቶችን እንዲያጠኑ ይረዳል።"
+  },
+
+  {
+    question: "Which one is/are not true in relation to Anthropology?",
+    options: [
+      "The subject matter of anthropology is only limited to the study of primitive societies and rural issues.",
+      "By studying anthropology, we can get a fuller understanding about other cultures and our own.",
+      "Anthropology gives an insight into knowing the logic and justifications behind any cultural groups and practices.",
+      "None of the above"
+    ],
+    answer: 0,
+    englishExplanation: "Option A is the incorrect statement. Anthropology is not limited to primitive societies and rural issues. It studies human societies and cultures broadly, including modern and urban communities.",
+    amharicExplanation: "ምርጫ A የተሳሳተው አባባል ነው። አንትሮፖሎጂ በጥንታዊ ማህበረሰቦችና በገጠር ጉዳዮች ብቻ አይገደብም፤ ዘመናዊና የከተማ ማህበረሰቦችንም ያጠናል።"
+  },
+
+  {
+    question: "The relationship of Anthropology with other disciplines does not include:",
+    options: [
+      "Anthropologists draw on theories and data from a number of disciplines in the humanities.",
+      "Anthropologists do not draw on theories and data from other disciplines in the humanities.",
+      "Anthropology greatly overlaps with disciplines that study human society.",
+      "None of the above"
+    ],
+    answer: 1,
+    englishExplanation: "Option B is the statement that does not describe the relationship correctly. Anthropology draws on theories and data from other disciplines and overlaps with many fields that study human society.",
+    amharicExplanation: "ምርጫ B የአንትሮፖሎጂን ከሌሎች ዘርፎች ጋር ያለውን ግንኙነት በትክክል አይገልጽም። አንትሮፖሎጂ ከሌሎች የሰብአዊ ሳይንሶችና ማህበራዊ ሳይንሶች ቲዎሪዎችንና መረጃዎችን ይጠቀማል።"
+  },
+
+  {
+    question: "It is obvious that first-year students in university came from diverse cultural backgrounds. Such variations could be noticeable in their dressing style, hair style, language, religious affiliation, and so on. However, all such cultural traits are important. Each cultural trait of students should be comprehended from its own peculiar milieu instead of a sense of benightedness. Anthropologically speaking, this particular way of looking at culture is known to be:",
+    options: [
+      "Holism",
+      "Relativism",
+      "Etic view",
+      "Ethnology"
+    ],
+    answer: 1,
+    englishExplanation: "Relativism, specifically cultural relativism, means understanding cultural traits within their own social and cultural context rather than judging them using the standards of another culture.",
+    amharicExplanation: "Relativism ወይም Cultural relativism ማለት እያንዳንዱን ባህላዊ ባህሪ በራሱ ማህበራዊና ባህላዊ አውድ መረዳት ማለት ነው። ባህሉን በሌላ ባህል መለኪያ ብቻ በመጠቀም መፍረድን ያስወግዳል።"
+  },{
+    question: "Which one of the following is not among the unique features of Anthropology?",
+    options: [
+      "Broad scope",
+      "Judgmental perspective",
+      "Holistic approach",
+      "Insiders' perspective"
+    ],
+    answer: 1,
+    englishExplanation: "Anthropology is generally non-judgmental. It seeks to understand cultures in their own contexts rather than judging them according to biased standards. Therefore, a judgmental perspective is not a unique feature of anthropology.",
+    amharicExplanation: "አንትሮፖሎጂ ባህሎችን ያለ አድልዎና ያለቅድመ ፍርድ ለመረዳት ይሞክራል። ስለዚህ Judgmental perspective (የፍርድ አመለካከት) የአንትሮፖሎጂ ልዩ ባህሪ አይደለም።"
+  },
+
+  {
+    question: "People can't be understood by studying either their biological make up or their cultural background alone. It is necessary to take into consideration both genetically inherited and learned traits in trying to explain how we have become the people we are. This argument likely reflects which approach of anthropology?",
+    options: [
+      "Comparative",
+      "Holistic",
+      "Relativism",
+      "Broad"
+    ],
+    answer: 1,
+    englishExplanation: "The holistic approach examines human beings by considering biological, cultural, social, historical, and other interconnected aspects together rather than studying only one aspect.",
+    amharicExplanation: "ሁለንተናዊ አቀራረብ (Holistic approach) የሰውን ልጅ ባዮሎጂያዊ፣ ባህላዊ፣ ማህበራዊና ታሪካዊ ገጽታዎችን አቀናጅቶ በመመልከት ሙሉ ምስል ለመረዳት ይረዳል።"
+  },
+
+  {
+    question: "Which one of the following is not a misconception about anthropology?",
+    options: [
+      "Anthropology is limited to the study of 'primitive' societies.",
+      "Anthropology assists people's initiatives instead of imposed policies and ideas.",
+      "Anthropology is all about the study of human evolution.",
+      "The purpose of anthropology is to keep and preserve communities far from development."
+    ],
+    answer: 1,
+    englishExplanation: "The question asks for the statement that is not a misconception. Anthropology can support people's own initiatives and local participation instead of imposing outside policies and ideas. Therefore, option B is correct.",
+    amharicExplanation: "ጥያቄው የተሳሳተ አመለካከት ያልሆነውን ይጠይቃል። አንትሮፖሎጂ የህብረተሰቡን የራሱን እቅድና ጅምር ከውጭ የሚጫኑ ፖሊሲዎች ይልቅ ሊደግፍ ይችላል። ስለዚህ B ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "The following statements are true about the misconceptions of anthropology except:",
+    options: [
+      "Anthropologists only study the rural people and rural areas.",
+      "Anthropology preserves societies far from development.",
+      "Anthropologists' focus is limited to the study of 'primitive' societies.",
+      "Early anthropologists' focus was on 'non-industrialized' societies."
+    ],
+    answer: 3,
+    englishExplanation: "The first three statements are misconceptions about anthropology. The fourth statement is historically accurate because early anthropologists often focused on non-industrialized societies.",
+    amharicExplanation: "የመጀመሪያዎቹ ሶስት አማራጮች ስለ አንትሮፖሎጂ የተሳሳቱ አመለካከቶች ናቸው። ነገር ግን የቀድሞ አንትሮፖሎጂስቶች በኢንዱስትሪ ባልተስፋፋባቸው ማህበረሰቦች ላይ ትኩረት ማድረጋቸው ታሪካዊ እውነታ ነው።"
+  },
+
+  {
+    question: "Which one of the following statements is incorrect?",
+    options: [
+      "Anthropology studies human beings altogether across time and place.",
+      "Human cultures are ubiquitous.",
+      "Values are the standards by which members of the society define what is good or bad.",
+      "Neither beliefs nor social values are intangible culture."
+    ],
+    answer: 3,
+    englishExplanation: "Beliefs and social values are parts of intangible or non-material culture. Therefore, the statement saying that they are not intangible culture is incorrect.",
+    amharicExplanation: "እምነቶችና ማህበራዊ እሴቶች የማይዳሰሱ (intangible or non-material) የባህል ክፍሎች ናቸው። ስለዚህ እነሱ የማይዳሰሱ ባህል አይደሉም የሚለው አባባል የተሳሳተ ነው።"
+  },
+
+  {
+    question: "Which one of the following is not correct?",
+    options: [
+      "Anthropology helps us to be more sensitive to and appreciative of cultural diversity and variability.",
+      "Paying attention to local conditions is crucial to solve community problems.",
+      "Anthropology helps us to ignore prejudice and discriminations.",
+      "None"
+    ],
+    answer: 3,
+    englishExplanation: "The first three statements correctly describe important contributions of anthropology. Therefore, none of them is incorrect, making 'None' the correct answer.",
+    amharicExplanation: "የመጀመሪያዎቹ ሶስት አማራጮች አንትሮፖሎጂ የሚያበረክታቸውን ጥቅሞች በትክክል ይገልጻሉ። ስለዚህ የተሳሳተ አማራጭ የለም፤ መልሱ None ነው።"
+  },
+
+  {
+    question: "The positive aspect of ethnocentrism is:",
+    options: [
+      "Misunderstanding and mistrust",
+      "Prejudices",
+      "Conservative force",
+      "It has always negative effect"
+    ],
+    answer: 2,
+    englishExplanation: "Ethnocentrism can function as a conservative force by strengthening group identity, unity, loyalty, and the preservation of shared cultural values within a society.",
+    amharicExplanation: "ኢትኖሰንትሪዝም ብዙ ጊዜ አሉታዊ ተፅዕኖ ቢኖረውም፣ የቡድን ማንነትን፣ አንድነትን፣ ታማኝነትንና የጋራ እሴቶችን በመጠበቅ Conservative force ሊሆን ይችላል።"
+  },
+
+  {
+    question: "One of the following is not true about comparative perspective:",
+    options: [
+      "It helps to understand differences across time and place.",
+      "It helps to understand similarities across time and place.",
+      "It helps to understand similarities in limited time and place.",
+      "None of the above"
+    ],
+    answer: 2,
+    englishExplanation: "The comparative perspective examines human societies across broad periods and locations. It is not limited to a narrow or restricted time and place.",
+    amharicExplanation: "የንፅፅር እይታ በሰፊ ጊዜና ቦታ ያሉ ማህበረሰቦችን ያወዳድራል። በተገደበ ጊዜና ቦታ ብቻ አይወሰንም። ስለዚህ C የተሳሳተው አማራጭ ነው።"
+  },
+
+  {
+    question: "Which one of the following tools of data collection is odd?",
+    options: [
+      "Semi-structured interview",
+      "Focus group discussion",
+      "Structured interview",
+      "Participant observation"
+    ],
+    answer: 2,
+    englishExplanation: "Anthropological qualitative research commonly emphasizes flexible methods such as participant observation, semi-structured interviews, and focus group discussions. A structured interview is more rigid and is commonly associated with standardized data collection.",
+    amharicExplanation: "በአንትሮፖሎጂ የጥራት ጥናት ውስጥ Participant observation፣ Semi-structured interview እና Focus group discussion በብዛት ይጠቀማሉ። Structured interview ግን የበለጠ ጥብቅና የተዋቀረ የመረጃ መሰብሰቢያ ዘዴ ስለሆነ እዚህ የተለየው ነው።"
+  },
+
+  {
+    question: "Among the following, one is not categorized under main research methods or data collection means in anthropology.",
+    options: [
+      "Case Study",
+      "In-depth interviews",
+      "Participant observation",
+      "Focus-group discussion"
+    ],
+    answer: 0,
+    englishExplanation: "In-depth interviews, participant observation, and focus-group discussions are commonly used in anthropological field research. In this question, Case Study is identified as the option that is not categorized among the main methods listed.",
+    amharicExplanation: "In-depth interviews፣ Participant observation እና Focus-group discussion በአንትሮፖሎጂ የመስክ ጥናት ውስጥ በብዛት የሚጠቀሙ ዘዴዎች ናቸው። በዚህ ጥያቄ መሠረት Case Study ከተዘረዘሩት ዋና የመረጃ መሰብሰቢያ ዘዴዎች ውጭ የተቀመጠው ነው።"
+  },
+
+  {
+    question: "Anthropology is defined as the study of __________.",
+    options: [
+      "Human nature, human society, human language, and the human past",
+      "The remains of earlier societies and peoples",
+      "The ways of life of contemporary peoples",
+      "The physical and mental capacities of human beings"
+    ],
+    answer: 0,
+    englishExplanation: "Anthropology has a broad scope and examines human beings from multiple dimensions, including human nature, society, language, culture, biology, and the human past.",
+    amharicExplanation: "አንትሮፖሎጂ የሰውን ልጅ ተፈጥሮ፣ ማህበረሰብ፣ ቋንቋ፣ ባህል፣ ባዮሎጂ እና ያለፈ ታሪክ ከተለያዩ አቅጣጫዎች የሚያጠና ሰፊ የጥናት መስክ ነው።"
+  },
+
+  {
+    question: "Holism __________.",
+    options: [
+      "Trying to study everything possible about a group of people",
+      "Integrating what is known about human beings and their activities",
+      "Studying human biology and culture at the same time",
+      "Fitting together economics, political science, religious studies, and biology"
+    ],
+    answer: 1,
+    englishExplanation: "Holism means integrating knowledge about human beings and their activities from different dimensions in order to develop a comprehensive understanding of humanity.",
+    amharicExplanation: "Holism ማለት ስለ ሰው ልጅና ስለ ተግባራቱ የሚገኙ የተለያዩ እውቀቶችን አቀናጅቶ ሰውን በሙሉ ለመረዳት መሞከር ማለት ነው።"
+  },
+
+  {
+    question: "The behavior of seeing one's own culture as the only right way of living and judging others by those standards represents:",
+    options: [
+      "Cultural relativism",
+      "Ethnocentrism",
+      "Human rights",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Ethnocentrism is the tendency to view one's own culture as superior or as the correct way of living and to judge other cultures according to one's own cultural standards.",
+    amharicExplanation: "ኢትኖሰንትሪዝም (Ethnocentrism) የራስን ባህል ብቻ ትክክለኛና የላቀ አድርጎ በመመልከት የሌሎችን ባህሎች በራስ ባህል መለኪያ መፍረድ ማለት ነው።"
+  },
+
+  {
+    question: "Which one of the following is not true about the perspectives of anthropology?",
+    options: [
+      "Empirical",
+      "Particularizing",
+      "Naturalistic",
+      "Universalising"
+    ],
+    answer: 3,
+    englishExplanation: "Anthropology emphasizes empirical, particularizing, and naturalistic perspectives. Universalising is not identified here as one of the distinctive anthropological perspectives.",
+    amharicExplanation: "አንትሮፖሎጂ በEmpirical፣ Particularizing እና Naturalistic አመለካከቶች ላይ ያተኩራል። Universalising ግን በዚህ ጥያቄ መሠረት የአንትሮፖሎጂ ልዩ አመለካከት አይደለም።"
+  },
+
+  {
+    question: "Anthropology as a discipline or field of study examines all of the following except:",
+    options: [
+      "The diverse ways that people live in different environments",
+      "Looks at phenomena from different vantage points",
+      "Investigates similarities and differences between social systems and human relationships",
+      "Anthropology as a discipline merely analyzes the material product of social groups"
+    ],
+    answer: 3,
+    englishExplanation: "Anthropology does not merely analyze material products. It examines human life broadly, including social relationships, culture, behavior, biology, language, and ways of living.",
+    amharicExplanation: "አንትሮፖሎጂ የማህበረሰቦችን ቁሳቁሳዊ ምርቶች ብቻ አይተነትንም። የሰዎችን አኗኗር፣ ማህበራዊ ግንኙነት፣ ባህል፣ ባህሪ፣ ባዮሎጂ እና ቋንቋ ጨምሮ ሰፊ የሰው ልጅ ሕይወትን ያጠናል።"
+  },
+
+  {
+    question: "Which one of the following is not true about the anthropological perspective of human origin and physical variation?",
+    options: [
+      "It believes humanity is a product of biology and culture.",
+      "It accepts human racial division based on body shape and color.",
+      "It concerns both biological and cultural evolution of human beings.",
+      "It accepts Homo sapiens as a common race of modern human beings."
+    ],
+    answer: 1,
+    englishExplanation: "Modern anthropology does not accept strict biological racial divisions based simply on body shape or skin color. All modern humans belong to the same species, Homo sapiens, while human physical variation is continuous and complex.",
+    amharicExplanation: "ዘመናዊ አንትሮፖሎጂ ሰዎችን በአካል ቅርጽ ወይም በቆዳ ቀለም ብቻ በመመስረት ወደ ጥብቅ የባዮሎጂ ዘር ክፍሎች መከፋፈልን አይቀበልም። ሁሉም ዘመናዊ ሰዎች Homo sapiens የተባለው አንድ ዝርያ አባላት ናቸው።"
+  },
+
+  {
+    question: "All are vital instruments of data gathering in ethnographical research except:",
+    options: [
+      "Extended field work",
+      "Participant observation",
+      "Focused-group discussion",
+      "Archival works"
+    ],
+    answer: 3,
+    englishExplanation: "Ethnographic research relies heavily on extended fieldwork, participant observation, and direct interaction with people. Archival work mainly involves existing historical documents and records rather than direct field interaction.",
+    amharicExplanation: "የኢትኖግራፊ ጥናት በExtended fieldwork፣ Participant observation እና Focused-group discussion ላይ በጣም ይመሰረታል። Archival works ግን በዋናነት የታሪክ ሰነዶችንና መዛግብትን የሚጠቀም ነው።"
+  },
+
+  {
+    question: "Which one of the following unique features of anthropology implies the study of human culture in its own context?",
+    options: [
+      "Holism",
+      "Relativism",
+      "Qualitative research",
+      "Comparative approach"
+    ],
+    answer: 1,
+    englishExplanation: "Relativism, particularly cultural relativism, means understanding a culture within its own context and according to its own meanings and values rather than judging it by outside standards.",
+    amharicExplanation: "Relativism ወይም Cultural relativism አንድን ባህል በራሱ አውድ፣ እሴትና ትርጉም መረዳት ማለት ነው። ባህሉን በሌላ ባህል መለኪያ ብቻ መፍረድን ያስወግዳል።"
+  },
+
+  {
+    question: "Anthropologist Markos has investigated two interacting societies called 'xy' and 'ab' in order to identify the commonalities found in their culture of funeral. Which aspect of socio-cultural anthropology has he applied?",
+    options: [
+      "Ethnography",
+      "Etic",
+      "Archaeology",
+      "Ethnology"
+    ],
+    answer: 3,
+    englishExplanation: "Ethnology involves the comparative study of different societies and cultures to identify similarities, differences, and broader patterns. Since Markos is comparing two societies, ethnology is the correct answer.",
+    amharicExplanation: "Ethnology ማለት ሁለት ወይም ከዚያ በላይ ማህበረሰቦችን በማነፃፀር ተመሳሳይነት፣ ልዩነትና አጠቃላይ ቅርጾችን ማጥናት ነው። እዚህ ሁለት ማህበረሰቦች ስለሚነፃፀሩ Ethnology ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "When we say that anthropology is a field-based discipline, we mean that __________.",
+    options: [
+      "Information about particular social groups comes through direct contact with them.",
+      "Anthropologists working in universities intersperse teaching and other tasks with field research.",
+      "Research connects anthropologists directly with the lived experiences of other people and to the material evidence that people have left.",
+      "All of the above"
+    ],
+    answer: 3,
+    englishExplanation: "Anthropology is field-based because anthropologists gather information through direct contact, conduct field research alongside academic work, and connect their research with people's lived experiences and material evidence. Therefore, all of the above are correct.",
+    amharicExplanation: "አንትሮፖሎጂ Field-based discipline ሲባል ከማህበረሰቦች ጋር ቀጥተኛ ግንኙነት ማድረግን፣ ከማስተማር ጋር ተያይዞ የመስክ ጥናት ማካሄድን እና የሰዎችን ተጨባጭ የሕይወት ልምድና ቁሳቁሳዊ ማስረጃዎችን በቀጥታ ማጥናትን ያካትታል። ስለዚህ All of the above ትክክለኛው መልስ ነው።"
+  },{
+    question: "Today, anthropologists study _______.",
+    options: [
+      "all human societies, including their own",
+      "only societies where they are considered outsiders",
+      "rural communities, while sociologists focus on urban communities",
+      "rural and urban communities in non-industrialized societies"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Anthropologists today study all types of human societies globally, including their own societies. They are not restricted to foreign, rural, or non-industrialized communities.",
+    amharicExplanation:
+      "የዛሬው ዘመን አንትሮፖሎጂስቶች የራሳቸውን ማህበረሰብ ጨምሮ ሁሉንም የሰው ልጆች ማህበረሰቦች ያጠናሉ። ከውጭ ሀገር፣ ከገጠር ወይም ካልዳበሩ ማህበረሰቦች ብቻ የተገደቡ አይደሉም።"
+  },
+
+  {
+    question:
+      "People who share information about their culture with anthropologists are sometimes called _______ by contemporary anthropologists.",
+    options: [
+      "informants",
+      "collaborators",
+      "respondents",
+      "All of the above"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Contemporary anthropologists may use terms such as informants, collaborators, and respondents for people who share cultural information and participate in research.",
+    amharicExplanation:
+      "ዘመናዊ አንትሮፖሎጂስቶች ስለ ባህላቸው መረጃ የሚሰጡ ሰዎችን informants፣ collaborators ወይም respondents ብለው ሊጠሯቸው ይችላሉ። ስለዚህ 'All of the above' ትክክለኛ ነው።"
+  },
+
+  {
+    question:
+      "_______ considered as a central research method to cultural anthropology.",
+    options: [
+      "participant observation",
+      "observation participation",
+      "fieldwork",
+      "semi-structured interviews"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Participant observation is a central research method in cultural anthropology. Anthropologists participate in the daily life of a community while observing and learning about its culture.",
+    amharicExplanation:
+      "ተሳታፊ ምልከታ (participant observation) በባህላዊ አንትሮፖሎጂ ውስጥ ዋና የምርምር ዘዴ ነው። አንትሮፖሎጂስቶች ከሚያጠኑት ማህበረሰብ ጋር በመኖርና በመሳተፍ ባህሉን ይረዳሉ።"
+  },
+
+  {
+    question: "Anthropology is basic study of _______.",
+    options: [
+      "Human being",
+      "Community",
+      "Male and female",
+      "None of these"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Anthropology is the broad scientific study of human beings, including their biological, cultural, social, and historical dimensions.",
+    amharicExplanation:
+      "አንትሮፖሎጂ የሰውን ልጅ ባዮሎጂያዊ፣ ባህላዊ፣ ማህበራዊ እና ታሪካዊ ገጽታዎች የሚያጠና ሰፊ የጥናት መስክ ነው።"
+  },
+
+  {
+    question: "Which of these is NOT part of the anthropological perspective?",
+    options: [
+      "cross-cultural study",
+      "ethnocentrism",
+      "holism",
+      "cultural relativism"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethnocentrism means judging other cultures according to the standards of one's own culture. This conflicts with the anthropological approach, which emphasizes cultural relativism, holism, and cross-cultural understanding.",
+    amharicExplanation:
+      "Ethnocentrism ማለት የሌሎችን ባህሎች በራስ ባህል መለኪያ መመዘን ነው። ይህ ከአንትሮፖሎጂ እይታ ጋር ይቃረናል።"
+  },
+
+  {
+    question:
+      "The attitude that you can understand or judge another culture in terms of your own culture is called _______.",
+    options: [
+      "cultural relativism",
+      "cultural anthropology",
+      "ethnocentrism",
+      "ethnoculturalism"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Ethnocentrism is the tendency to use one's own culture as the standard for judging or evaluating other cultures.",
+    amharicExplanation:
+      "Ethnocentrism ማለት የራስን ባህል እንደ መለኪያ በመጠቀም የሌሎችን ባህሎች መመዘን ወይም መፍረድ ነው።"
+  },
+
+  {
+    question:
+      "An anthropological perspective that focuses on how the people themselves perceive & understand their world, explains their action, or give meaning to their behavior or cultural practices is referred as emic.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The emic perspective focuses on the insider's view. It examines how members of a culture themselves understand, interpret, and give meaning to their beliefs and practices.",
+    amharicExplanation:
+      "Emic አመለካከት የሚያተኩረው በማህበረሰቡ ውስጥ ያሉ ሰዎች ራሳቸው ዓለማቸውን፣ ባህላቸውን እና ድርጊቶቻቸውን እንዴት እንደሚረዱ ላይ ነው።"
+  },
+
+  {
+    question:
+      "Unlike other sciences, anthropology derives its knowledge about the origin and evolutionary development of human beings from abstract reasoning.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Anthropology is an empirical discipline. It relies on evidence such as fieldwork, observation, fossils, archaeological remains, and other scientific data rather than abstract reasoning alone.",
+    amharicExplanation:
+      "አንትሮፖሎጂ በተጨባጭ ማስረጃ ላይ የተመሰረተ የጥናት መስክ ነው። የመስክ ጥናት፣ ምልከታ፣ ቅሪተ አካላት፣ የአርኪኦሎጂ ቅሪቶችና ሌሎች ሳይንሳዊ መረጃዎችን ይጠቀማል።"
+  },
+
+  {
+    question:
+      "Humans have the ability to avoid, manipulate, subvert and change the rules and patterns of their own cultures.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Culture is dynamic. Human beings can adapt, modify, challenge, and change cultural rules and patterns over time.",
+    amharicExplanation:
+      "ባህል ቋሚ አይደለም። የሰው ልጆች የባህላቸውን ደንቦችና ልማዶች ማሻሻል፣ መቀየር ወይም መቃወም ይችላሉ።"
+  },
+
+  {
+    question:
+      "Anthropology is comparative in order to rank different societies.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Anthropology uses comparison to understand similarities and differences among societies, not to rank societies as superior or inferior.",
+    amharicExplanation:
+      "አንትሮፖሎጂ ማህበረሰቦችን ከፍና ዝቅ ለማድረግ አይነጻጸርም። ዋና ዓላማው በተለያዩ ማህበረሰቦች ያሉ መመሳሰሎችንና ልዩነቶችን መረዳት ነው።"
+  },
+
+  {
+    question:
+      "Anthropologists first conduct ethnology to get ethnographic data of a given culture.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The sequence is generally the reverse. Ethnography involves fieldwork and the collection of detailed cultural data, while ethnology compares and analyzes cultures using such information.",
+    amharicExplanation:
+      "ሂደቱ በአጠቃላይ ተቃራኒ ነው። Ethnography በመስክ ላይ መረጃ መሰብሰብን ያካትታል፤ Ethnology ደግሞ የተለያዩ ባህሎችን ማነፃፀርና መተንተን ነው።"
+  },
+
+  {
+    question:
+      "Early anthropologists studied small communities in technologically simple societies.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Early anthropologists often focused on relatively small and technologically less complex communities, although anthropology later expanded to include all types of societies.",
+    amharicExplanation:
+      "የቀድሞ አንትሮፖሎጂስቶች ብዙ ጊዜ ትናንሽና በቴክኖሎጂ ቀላል በሆኑ ማህበረሰቦች ላይ ያተኩሩ ነበር። በኋላ ግን የአንትሮፖሎጂ ጥናት ሁሉንም ዓይነት ማህበረሰቦች አካተተ።"
+  },
+
+  {
+    question:
+      "Anthropology is concerned with culture instead of the biological dimension of humans.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Anthropology is holistic and studies both cultural and biological dimensions of human beings.",
+    amharicExplanation:
+      "አንትሮፖሎጂ ባህልን ብቻ አያጠናም። የሰውን ልጅ ባህላዊ እና ባዮሎጂያዊ ገጽታዎችን ሁለቱንም ያጠናል።"
+  },
+
+  {
+    question:
+      "The purpose of Anthropology is to preserve obsolete cultural practices in museums.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The purpose of anthropology is to understand, document, and analyze human beings and their cultures. It is not simply to preserve obsolete practices in museums.",
+    amharicExplanation:
+      "የአንትሮፖሎጂ ዋና ዓላማ ያረጁ ባህላዊ ልማዶችን በሙዚየም ማስቀመጥ ብቻ አይደለም። የሰውን ልጅና ባህሉን መረዳት፣ መመዝገብና መተንተን ነው።"
+  },
+
+  {
+    question:
+      "Anthropology is a mirror of humanity because it studies humanity in its entirety.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Anthropology is sometimes described as a mirror of humanity because it examines human life broadly across cultures, societies, places, and time.",
+    amharicExplanation:
+      "አንትሮፖሎጂ የሰውን ልጅ በሰፊ መልኩ ባህሉን፣ ማህበረሰቡን፣ ባዮሎጂውን፣ ታሪኩን እና አኗኗሩን ስለሚያጠና 'የሰው ልጅ መስተዋት' ተብሎ ሊገለጽ ይችላል።"
+  },
+
+  {
+    question:
+      "At its most extreme, cultural relativism leaves no room for criticism of other cultures.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "At its extreme, cultural relativism treats cultural practices as valid within their own contexts, leaving little or no basis for criticizing practices in other cultures.",
+    amharicExplanation:
+      "ጽንፈኛ የባህል አንፃራዊነት ሁሉም ባህላዊ ድርጊቶች በየራሳቸው አውድ ትክክል ናቸው ብሎ ስለሚመለከት፣ የሌሎችን ባህሎች ለመተቸት ቦታ እጅግ ያጠባል።"
+  },
+
+  {
+    question:
+      "An anthropological perspective that focuses on how the people themselves perceive & understand their world, explains their action, or give meaning to their behavior or cultural practices is referred as emic.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The emic perspective focuses on the insider's understanding of their own culture, including how people interpret their actions, beliefs, and cultural practices.",
+    amharicExplanation:
+      "Emic አመለካከት የማህበረሰቡ አባላት ራሳቸው ባህላቸውን፣ እምነታቸውንና ድርጊታቸውን እንዴት እንደሚረዱና ትርጉም እንደሚሰጡ ላይ ያተኩራል።"
+  },
+
+  {
+    question:
+      "Holistic approach implies that a single aspect of culture can be understood independently.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Holism emphasizes that different parts of human life and culture are interconnected. Therefore, a cultural element cannot always be fully understood in isolation.",
+    amharicExplanation:
+      "Holism የተለያዩ የባህልና የሰው ሕይወት ክፍሎች እርስ በእርሳቸው የተሳሰሩ መሆናቸውን ያሳያል። ስለዚህ አንድን የባህል ክፍል ከሌሎቹ ሙሉ በሙሉ ነጥሎ መረዳት አይቻልም።"
+  },
+
+  {
+    question:
+      "Anthropology recognizes the advantage of consulting local people in designing culturally appropriate policies.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Anthropology recognizes that local people have important knowledge about their own culture, needs, environment, and community. Consulting them helps create culturally appropriate and effective policies.",
+    amharicExplanation:
+      "አንትሮፖሎጂ የአካባቢው ሰዎች ስለ ራሳቸው ባህል፣ ፍላጎት፣ አካባቢና ማህበረሰብ ጠቃሚ ዕውቀት እንዳላቸው ይገነዘባል። እነሱን ማማከር ከባህሉ ጋር የሚስማሙ እና ውጤታማ ፖሊሲዎችን ለመንደፍ ይረዳል።"
+  },
+
+  {
+    question:
+      "Present-day anthropologists primarily find out new information about cultural groups through reading travellers' accounts.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Present-day anthropologists primarily obtain new information through direct ethnographic fieldwork, participant observation, interviews, and interaction with the people they study.",
+    amharicExplanation:
+      "የዛሬው ዘመን አንትሮፖሎጂስቶች አዲስ መረጃ ለማግኘት በቀጥታ የመስክ ጥናት፣ participant observation፣ ቃለ-መጠይቅ እና ከሚያጠኑት ሰዎች ጋር ቀጥተኛ ግንኙነትን ይጠቀማሉ።"
+  }],
         2: [],
         3: [],
         4: [],
