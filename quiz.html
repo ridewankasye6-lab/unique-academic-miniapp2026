@@ -10,114 +10,283 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        name="theme-color"
+        content="#8e44ad"
+    >
+
     <title>Unique Academic Quiz</title>
 
-    <link rel="stylesheet" href="quiz.css">
+    <link
+        rel="stylesheet"
+        href="quiz.css"
+    >
 
 </head>
 
 
 <body>
 
+<div class="page">
 
-<div class="container" id="quizContainer">
+    <!-- =====================================
+         STICKY TOP HEADER
+    ====================================== -->
 
-    <!-- Header -->
-
-    <header class="header">
+    <header class="quizHeader">
 
         <button
             id="backBtn"
-            class="btn backBtn"
+            class="topNavBtn backBtn"
+            type="button"
+            aria-label="Go back"
         >
-            ← Back
+            <span class="navIcon">←</span>
+            <span class="backText">Back</span>
         </button>
 
 
-        <h1>
-            Unique Academic
-        </h1>
+        <div class="headerTitle">
+
+            <span class="headerBook">📖</span>
+
+            <div>
+
+                <h1 id="headerTitle">
+                    Unique Academic
+                </h1>
+
+                <p id="headerChapter">
+                    Quiz
+                </p>
+
+            </div>
+
+        </div>
 
 
         <button
             id="homeBtn"
-            class="btn homeBtn"
+            class="topNavBtn homeBtn"
+            type="button"
+            aria-label="Go to home"
         >
-            🏠 Home
+            <span class="homeIcon">⌂</span>
+            <span class="homeText">Home</span>
         </button>
 
     </header>
 
 
-    <!-- Subject -->
+    <!-- =====================================
+         MAIN QUIZ CONTENT
+    ====================================== -->
 
-    <div class="subjectBox">
-
-        <h2 id="subjectName">
-            Subject
-        </h2>
-
-
-        <p id="chapterName">
-            Chapter 1
-        </p>
-
-    </div>
-
-
-    <!-- Progress -->
-
-    <div class="progress">
-
-        <span id="questionNumber">
-            Question 1 / 10
-        </span>
-
-    </div>
-
-
-    <!-- Question -->
-
-    <div class="questionBox">
-
-        <h2 id="question"></h2>
-
-        <div id="options"></div>
-
-    </div>
-
-
-    <!-- Explanation -->
-
-    <div class="explanation">
-
-        <h3>
-            📖 English Explanation
-        </h3>
-
-        <p id="englishExplanation"></p>
-
-
-        <h3>
-            🇪🇹 የአማርኛ ማብራሪያ
-        </h3>
-
-        <p id="amharicExplanation"></p>
-
-    </div>
-
-
-    <!-- Next -->
-
-    <button
-        id="nextBtn"
-        class="nextBtn"
+    <main
+        class="quizContainer"
+        id="quizContainer"
     >
 
-        Next Question →
 
-    </button>
+        <!-- Subject / Chapter -->
 
+        <section class="subjectCard">
+
+            <div class="subjectIcon">
+                🎓
+            </div>
+
+            <div class="subjectInfo">
+
+                <p class="smallLabel">
+                    CURRENT QUIZ
+                </p>
+
+                <h2 id="subjectName">
+                    Subject
+                </h2>
+
+                <p id="chapterName">
+                    Chapter 1
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Progress -->
+
+        <section class="progressCard">
+
+            <div class="progressTop">
+
+                <span>
+                    Quiz Progress
+                </span>
+
+                <strong id="questionNumber">
+                    Question 1 / 10
+                </strong>
+
+            </div>
+
+
+            <div class="progressTrack">
+
+                <div
+                    id="progressBar"
+                    class="progressBar"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Question -->
+
+        <section class="questionCard">
+
+            <div class="questionLabel">
+
+                <span class="questionBadge">
+                    QUESTION
+                </span>
+
+            </div>
+
+
+            <h2
+                id="question"
+                class="questionText"
+            ></h2>
+
+
+            <div
+                id="options"
+                class="options"
+            ></div>
+
+        </section>
+
+
+        <!-- Explanation -->
+
+        <section
+            id="explanationBox"
+            class="explanationCard"
+        >
+
+            <div class="explanationSection">
+
+                <h3>
+                    📖 English Explanation
+                </h3>
+
+                <p id="englishExplanation">
+                </p>
+
+            </div>
+
+
+            <div class="explanationDivider">
+            </div>
+
+
+            <div class="explanationSection">
+
+                <h3>
+                    🇪🇹 የአማርኛ ማብራሪያ
+                </h3>
+
+                <p id="amharicExplanation">
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BOTTOM QUESTION NAVIGATION
+        ====================================== -->
+
+        <div class="questionNavigation">
+
+            <button
+                id="previousQuestionBtn"
+                class="questionNavBtn previousQuestionBtn"
+                type="button"
+            >
+
+                <span class="navArrow">
+                    ←
+                </span>
+
+                <span>
+                    Previous
+                </span>
+
+            </button>
+
+
+            <button
+                id="nextBtn"
+                class="questionNavBtn nextQuestionBtn"
+                type="button"
+            >
+
+                <span>
+                    Next
+                </span>
+
+                <span class="navArrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Completion -->
+
+        <div
+            id="completionMessage"
+            class="completionMessage"
+            hidden
+        >
+
+            <div class="completionIcon">
+                🎉
+            </div>
+
+            <h2>
+                Quiz Completed!
+            </h2>
+
+            <p>
+                Great job! You have reached the end of this quiz.
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+    <footer class="quizFooter">
+
+        <p>
+            🎓 Unique Academic
+        </p>
+
+        <span>
+            Learn • Practice • Succeed
+        </span>
+
+    </footer>
 
 </div>
 
@@ -133,19 +302,16 @@
         () => {
 
             /*
-             * Only load quiz files
-             * after access is approved.
+             * Load quiz data only after
+             * access has been approved.
              */
 
             const dataScript =
                 document.createElement("script");
 
-            dataScript.src =
-                "quizData.js";
+            dataScript.src = "quizData.js";
 
-            document.body.appendChild(
-                dataScript
-            );
+            document.body.appendChild(dataScript);
 
 
             dataScript.onload = () => {
@@ -153,12 +319,9 @@
                 const quizScript =
                     document.createElement("script");
 
-                quizScript.src =
-                    "quiz.js";
+                quizScript.src = "quiz.js";
 
-                document.body.appendChild(
-                    quizScript
-                );
+                document.body.appendChild(quizScript);
 
             };
 
@@ -175,7 +338,7 @@
     src="access-guard.js"
 ></script>
 
-<script type="module" src="access-guard.js"></script>
+
 </body>
 
 </html>
