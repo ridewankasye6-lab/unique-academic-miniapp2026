@@ -9119,7 +9119,614 @@ const quizData = {
     amharicExplanation:
       "ብዙ የኢትዮጵያ ቆላማ አካባቢዎች ከደጋማ አካባቢዎች የበለጠ ሞቃታማና ደረቅ ናቸው። እንዲሁም እንደ ወባ ያሉ ሞቃታማ አካባቢ በሽታዎች በአንዳንድ ቆላማ አካባቢዎች በብዛት ሊገኙ ይችላሉ። የከብት እርባታና የዘላን ወይም ከፊል-ዘላን አኗኗርም የሰፈራ ስርጭትን ያበረታታል።"
   }],
-        4: [],
+        4: [ {     question: "Though freshwater is distributed unevenly over the surface of the earth, it is the most abundant of all water resources.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Freshwater is limited, making up only about 2.5% of the Earth's total water. Most freshwater is stored in glaciers, ice caps, and groundwater, while only a small fraction is readily accessible.",     amharicExplanation:       "ንጹህ ውኃ በምድር ላይ ውስን ነው። ከምድር ጠቅላላ ውኃ ውስጥ የሚይዘው ወደ 2.5% ብቻ ነው። አብዛኛው ንጹህ ውኃ በበረዶ፣ በበረዶ ክዳኖች እና ከመሬት በታች ይገኛል።"   },    {     question: "Ghenale has fewer tributaries and because of this, it carries less water than Wabishebelle.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "The statement is false. Although Ghenale has fewer tributaries, it carries more water than Wabishebelle because of differences in its drainage characteristics, catchment area, and water flow.",     amharicExplanation:       "ይህ አባባል ስህተት ነው። ገናሌ ያነሱ ገባር ወንዞች ቢኖሩትም፣ ከዋቢሸበሌ የበለጠ የውኃ ፍሰት ሊኖረው ይችላል።"   },    {     question: "Topography is one hindering factor in utilizing Ethiopian rivers for irrigation.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Ethiopia has rugged terrain, steep slopes, deep valleys, and gorges. These physical features make it difficult and expensive to divert and utilize rivers for irrigation.",     amharicExplanation:       "የኢትዮጵያ የመሬት አቀማመጥ ተራራማ፣ ቁልቁለታማ እና ጥልቅ ሸለቆዎች ያሉት ስለሆነ ወንዞችን ለመስኖ ማዋልን ያስቸግራል።"   },    {     question: "Almost all Ethiopian lakes are results of the tectonic processes of the Cenozoic Era.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Most Ethiopian lakes, especially those in the Rift Valley, are associated with tectonic processes such as faulting, crustal movement, and rifting during the Cenozoic Era.",     amharicExplanation:       "አብዛኛዎቹ የኢትዮጵያ ሀይቆች፣ በተለይም በሪፍት ቫሊ ያሉት፣ በሴኖዞይክ ዘመን በተከሰቱ የቴክቶኒክ እንቅስቃሴዎች እንደ ስንጥቅ መፈጠር እና የመሬት መንቀሳቀስ ጋር ይያያዛሉ።"   },    {     question: "Most Ethiopian rivers are suitable for navigation purposes.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Most Ethiopian rivers are not suitable for navigation because of steep gradients, waterfalls, rapids, deep gorges, and rugged terrain.",     amharicExplanation:       "አብዛኛዎቹ የኢትዮጵያ ወንዞች በፏፏቴ፣ በፈጣን ፍሰት፣ በጥልቅ ሸለቆ እና በቁልቁለት ምክንያት ለመርከብ አይመቹም።"   },    {     question: "The Shewan plateau serves as a watershed between the Abay and Awash river basins.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "The Shewan Plateau acts as a watershed separating the Abay drainage basin from the Awash drainage basin.",     amharicExplanation:       "የሸዋ ፕላቱ የአባይ እና የአዋሽ የውኃ ማጠራቀሚያ ስርዓቶችን የሚለይ የተፈጥሮ ውኃ ከፋፋይ ነው።"   },    {     question: "All of the major rivers of the eastern drainage systems of Ethiopia join the Indian Ocean.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "The statement is false. Wabishebelle, for example, flows southeast but does not normally reach the Indian Ocean; much of its water is lost before reaching the coast.",     amharicExplanation:       "ይህ አባባል ስህተት ነው። ለምሳሌ ዋቢሸበሌ ወደ ደቡብ ምስራቅ ቢፈስም በመደበኛነት የሕንድ ውቅያኖስ አይደርስም፤ ውኃው ከመድረሱ በፊት በአሸዋማ አካባቢ ይጠፋል።"   },    {     question: "As one moves northwards from the southwestern highlands of Ethiopia, the amount of rainfall decreases progressively.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Rainfall generally decreases northward from the wet southwestern highlands of Ethiopia.",     amharicExplanation:       "ከኢትዮጵያ እርጥበት ከፍተኛ ከሆነባቸው ደቡብ ምዕራብ ደጋማ አካባቢዎች ወደ ሰሜን ሲሄዱ የዝናብ መጠን በአጠቃላይ ይቀንሳል።"   },    {     question: "Oceans are the most abundant and easily available freshwaters.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Oceans contain about 97.5% of Earth's water, but this water is saline. Freshwater accounts for only about 2.5% of Earth's water.",     amharicExplanation:       "ውቅያኖሶች የምድርን ውኃ 97.5% ያህል ቢይዙም ውኃቸው ጨዋማ ነው። ንጹህ ውኃ የምድር ጠቅላላ ውኃ 2.5% ያህል ብቻ ነው።"   },    {     question: "In geography, drainage pattern and drainage system have the same meaning.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "A drainage system refers to a river, its tributaries, and the area drained by them. A drainage pattern refers to the spatial arrangement or geometric shape formed by streams and rivers.",     amharicExplanation:       "የውኃ ፍሰት ስርዓት (drainage system) ዋና ወንዝን፣ ገባር ወንዞችን እና የሚያጠጡትን አካባቢ ያመለክታል። የውኃ ፍሰት ቅርጽ (drainage pattern) ደግሞ ወንዞች በመሬት ላይ የሚፈጥሩትን የቦታ አደረጃጀት ያመለክታል።"   },    {     question: "Most Ethiopian drainage patterns are dendritic.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Dendritic drainage resembles the branches of a tree. It is common where streams flow over relatively uniform rock and geological conditions.",     amharicExplanation:       "Dendritic የውኃ ፍሰት ቅርጽ እንደ ዛፍ ቅርንጫፍ ይመስላል። በተመሳሳይ የአለት እና የጂኦሎጂ ሁኔታ ላይ በሚፈሱ ወንዞች ዘንድ በብዛት ይገኛል።"   },    {     question: "One can confidently state that the plateau of Shoa serves as a watershed between the Abbay and Awash river basins.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "The Shoa Plateau forms an important topographic divide between the Abbay and Awash drainage basins.",     amharicExplanation:       "የሸዋ ፕላቱ በአባይ እና በአዋሽ የውኃ ፍሰት ስርዓቶች መካከል አስፈላጊ የተፈጥሮ ውኃ ከፋፋይ ነው።"   },    {     question: "Altitudinal factors cause the energetic flow of Ethiopian rivers.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation:       "Many Ethiopian rivers originate in highlands and descend through areas with large differences in elevation. This produces steep gradients, rapid flow, rapids, and waterfalls.",     amharicExplanation:       "ብዙ የኢትዮጵያ ወንዞች ከከፍተኛ ቦታዎች ተነስተው ወደ ዝቅተኛ ቦታዎች ይፈሳሉ። ይህ የከፍታ ልዩነት የውኃ ፍሰታቸውን ፈጣን እና ኃይለኛ ያደርገዋል።"   },    {     question: "The Abbay is the longest river in Ethiopia.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "The Abbay is one of Ethiopia's major rivers, but the Wabishebelle is generally regarded as the longest major river within Ethiopia.",     amharicExplanation:       "አባይ ከኢትዮጵያ ዋና ዋና ወንዞች አንዱ ቢሆንም በኢትዮጵያ ውስጥ ረጅሙ ዋና ወንዝ በአጠቃላይ ዋቢሸበሌ ነው።"   },    {     question: "Almost all rivers in Ethiopia are navigable.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation:       "Most Ethiopian rivers are not navigable because of steep gradients, waterfalls, rapids, and rugged terrain. Only limited sections of some rivers, such as the lower Baro, are suitable for navigation.",     amharicExplanation:       "አብዛኛዎቹ የኢትዮጵያ ወንዞች በቁልቁለት፣ በፏፏቴ፣ በፈጣን የውኃ ፍሰት እና በአስቸጋሪ የመሬት አቀማመጥ ምክንያት ለመርከብ አይመቹም።"   },    {     question: "The Awash River is the most utilized in Ethiopia for irrigation purposes. This is mainly due to its:",     options: [       "Unfluctuating volume of water",       "Drains rift valley region",       "Surrounding terrain",       "Great number of tributaries"     ],     answer: 2,     englishExplanation:       "The Awash River is widely used for irrigation partly because much of its course passes through relatively suitable terrain, especially in the Rift Valley and lower Awash areas, where irrigation development is easier.",     amharicExplanation:       "አዋሽ ወንዝ ለመስኖ በስፋት የሚጠቀምበት ዋና ምክንያት በሚያልፍበት አካባቢ ያለው የመሬት አቀማመጥ ለመስኖ ልማት ተስማሚ መሆኑ ነው።"   },    {     question: "Which one of the following is odd in terms of its flow direction?",     options: [       "Tekeze",       "Abay",       "Baro-Akobo",       "Ghibe"     ],     answer: 3,     englishExplanation:       "Tekeze, Abay, and Baro-Akobo are part of the western drainage system and generally flow westward toward the Nile system. Ghibe (Omo) flows southward toward the Lake Turkana basin, making it the odd one out.",     amharicExplanation:       "ተከዜ፣ አባይ እና ባሮ-አኮቦ በአጠቃላይ ወደ ምዕራብ የሚፈሱ ሲሆን፣ ግቤ (ኦሞ) ወደ ደቡብ በመፍሰስ ወደ ቱርካና ሀይቅ ተፋሰስ ይደርሳል። ስለዚህ ግቤ የተለየው ነው።"   },    {     question: "Which one of the following is not a crater lake?",     options: [       "Wonchi",       "Hayk",       "Fincha",       "Lake Ashenge",       "None"     ],     answer: 2,     englishExplanation:       "Fincha is not a crater lake. It is an artificial reservoir associated mainly with hydroelectric power generation and irrigation. Wonchi is a well-known crater lake.",     amharicExplanation:       "ፍንጫ የክሬተር ሀይቅ አይደለም። በዋናነት ለሃይድሮ ኤሌክትሪክ እና ለመስኖ አገልግሎት የተፈጠረ ሰው ሰራሽ ማጠራቀሚያ ነው። ወንጪ ግን ታዋቂ የክሬተር ሀይቅ ነው።"   },    {     question: "Identify the correct one related to the Rift Valley drainage system:",     options: [       "The streams in the drainage flow in one direction",       "The Afar drainage sub-basin has practically no stream flow",       "The Afar drainage sub-basin is also described as the lakes region",       "All"     ],     answer: 1,     englishExplanation:       "The Afar drainage sub-basin is extremely arid, with very low rainfall and high evaporation. As a result, it has practically no permanent stream flow.",     amharicExplanation:       "የአፋር የውኃ ፍሰት ንዑስ ተፋሰስ እጅግ ደረቅ ነው። የዝናብ መጠኑ ዝቅተኛ እና የትነት መጠኑ ከፍተኛ በመሆኑ ቋሚ የወንዝ ፍሰት በተግባር እጅግ ውስን ነው።"   },    {     question: "Which of the following rivers is not part of the Mediterranean drainage system?",     options: [       "Baro Akobo",       "Wabi-Shebelle",       "Tekeze",       "Abay",       "None"     ],     answer: 1,     englishExplanation:       "Wabi-Shebelle belongs to the southeastern drainage system rather than the Mediterranean drainage system. Baro-Akobo, Tekeze, and Abay are associated with the Nile drainage system, which ultimately reaches the Mediterranean Sea.",     amharicExplanation:       "ዋቢ-ሸበሌ የደቡብ ምስራቅ የውኃ ፍሰት ስርዓት አካል ነው። ባሮ-አኮቦ፣ ተከዜ እና አባይ ግን ከናይል የውኃ ፍሰት ስርዓት ጋር ይያያዛሉ፤ ናይልም በመጨረሻ ወደ ሜዲትራንያን ባህር ይደርሳል።"   }, {
+    question: "One of the following is not a characteristic of the majority of Ethiopian rivers:",
+    options: [
+      "They are transboundary",
+      "Volume of water fluctuates seasonally",
+      "They have rapids and falls along their courses",
+      "Since they flow over steep slopes, they have smooth profiles"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Ethiopian rivers generally flow over steep slopes and rugged terrain, so they have irregular and rough profiles rather than smooth profiles. Therefore, having smooth profiles is not a characteristic of the majority of Ethiopian rivers.",
+    amharicExplanation:
+      "የኢትዮጵያ ወንዞች በተራራማና ወጣ ገባ በሆነ መሬት ላይ ስለሚፈሱ ለስላሳ የወንዝ መገለጫ የላቸውም። ስለዚህ ለስላሳ መገለጫ አላቸው የሚለው የተሳሳተ ባህሪ ነው።"
+  },
+
+  {
+    question: "Which of the following drainage systems is the largest in terms of annual water discharge?",
+    options: [
+      "The Inland Drainage System",
+      "The South-eastern Drainage System",
+      "The Rift Valley Drainage System",
+      "The Western Drainage System"
+    ],
+    answer: 3,
+    englishExplanation:
+      "The Western Drainage System is the largest in terms of annual water discharge. It includes major rivers such as the Abay, Tekeze, and Baro-Akobo and carries a large proportion of Ethiopia's annual river discharge.",
+    amharicExplanation:
+      "የምዕራብ የውኃ ፍሰት ስርዓት በዓመታዊ የውኃ ፍሰት መጠን ትልቁ ነው። አባይ፣ ተከዜ እና ባሮ-አኮቦ የመሳሰሉ ዋና ወንዞችን ያካትታል።"
+  },
+
+  {
+    question: "It is the physiographic unit which accommodates the Lake Tana basin surrounded by plains of Fogera and Dembia in the north and upland plain in its south:",
+    options: [
+      "North central massifs",
+      "Tigray plateau",
+      "Southwestern highlands",
+      "Shewa plateau"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The North Central Massifs physiographic unit accommodates the Lake Tana basin, with the plains of Fogera and Dembia to the north and upland plains to the south.",
+    amharicExplanation:
+      "የሰሜን ማዕከላዊ ተራራማ ክፍል የጣና ሀይቅ ተፋሰስን የሚያካትት ሲሆን በሰሜን የፎገራና ደምቢያ ሜዳዎች እና በደቡብ ደጋማ ሜዳዎች ይገኛሉ።"
+  },
+
+  {
+    question: "Which one is the reason for Wabishebelle River failing to reach the Indian Ocean?",
+    options: [
+      "It is the longest river in Ethiopia.",
+      "The intermittent nature of its tributaries",
+      "It drains parts of Oromia, Harari, and the Somali regions.",
+      "It is drained by a few numbers of tributaries."
+    ],
+    answer: 1,
+    englishExplanation:
+      "The intermittent nature of the tributaries contributes to the Wabishebelle's failure to reach the Indian Ocean. The river also flows through dry areas where high evaporation and infiltration cause significant water loss.",
+    amharicExplanation:
+      "ዋቢሸበሌ ወደ ሕንድ ውቅያኖስ ሳይደርስ እንዲቀር ከሚያደርጉት ምክንያቶች አንዱ ገባር ወንዞቹ ወቅታዊ መሆናቸው ነው። በተጨማሪም ደረቅ አካባቢዎች ውስጥ በመፍሰሱ በትነትና በመሬት ውስጥ በመስረግ ብዙ ውኃ ይጠፋል።"
+  },
+
+  {
+    question: "As Abay is named as Blue Nile in Sudan, the Genale River is named as ------- in Somalia:",
+    options: [
+      "Juba",
+      "Atbara",
+      "Sobat",
+      "Dedessa",
+      "Nile"
+    ],
+    answer: 0,
+    englishExplanation:
+      "When the Genale River crosses into Somalia, it is known as the Juba River.",
+    amharicExplanation:
+      "ገናሌ ወንዝ ከኢትዮጵያ ወደ ሶማሊያ ሲገባ ጁባ (Juba) በሚል ስም ይጠራል።"
+  },
+
+  {
+    question: "Because of its large surface water potential, Ethiopia is referred to as:",
+    options: [
+      "The origin of land for different vegetation in East Africa",
+      "The breadbasket of East Africa",
+      "The home of different endemic wildlife in Africa",
+      "The roof of East Africa",
+      "None"
+    ],
+    answer: 4,
+    englishExplanation:
+      "Ethiopia is widely known as the 'Water Tower of Eastern Africa' because of its large surface-water potential. Since this title is not included among the listed choices, the correct answer is None.",
+    amharicExplanation:
+      "ኢትዮጵያ ትልቅ የውኃ ሀብት ስላላት 'Water Tower of Eastern Africa' ተብላ ትጠራለች። ይህ አማራጭ በተዘረዘሩት ውስጥ ስለሌለ 'None' ትክክለኛ መልስ ነው።"
+  },
+
+  {
+    question: "Ethiopian rivers share the following characteristics except:",
+    options: [
+      "They originate from highlands",
+      "They have a gentle profile",
+      "They show seasonal flow fluctuation",
+      "The majority of them are transboundary",
+      "Some of the rivers serve as boundaries"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethiopian rivers generally have steep and rugged profiles because many originate in the highlands. Therefore, having a gentle profile is not a characteristic shared by most Ethiopian rivers.",
+    amharicExplanation:
+      "አብዛኛዎቹ የኢትዮጵያ ወንዞች ከደጋማ አካባቢዎች ስለሚነሱ ገደላማና ፈጣን ፍሰት ያላቸው ናቸው። ስለዚህ ለስላሳ የወንዝ መገለጫ አላቸው የሚለው የተለየ ነው።"
+  },
+
+  {
+    question: "Which one is wrongly matched?",
+    options: [
+      "Shala --- Shallowest lake",
+      "Lake Tana --- Largest lake",
+      "Wabishebelle --- The longest river in Ethiopia",
+      "All",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Lake Shala is not the shallowest lake. It is one of the deepest lakes in Ethiopia. Therefore, 'Shala --- Shallowest lake' is the wrongly matched pair.",
+    amharicExplanation:
+      "ሀይቅ ሻላ ጥልቀት የሌለው ሀይቅ አይደለም፤ በኢትዮጵያ ካሉ ጥልቅ ሀይቆች አንዱ ነው። ስለዚህ 'Shala --- Shallowest lake' የተሳሳተ ማዛመድ ነው።"
+  },
+
+  {
+    question: "What distinguishes the Rift Valley Lakes from the highland lakes?",
+    options: [
+      "The fluctuation of their volume of water",
+      "Their significance for transportation",
+      "Their richness in chemicals that produce soda ash",
+      "Their location along transport lines"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Many Rift Valley lakes have high concentrations of alkaline salts and other minerals because of evaporation and internal drainage. Some of these minerals are used in the production of soda ash.",
+    amharicExplanation:
+      "ብዙ የሪፍት ቫሊ ሀይቆች የውስጥ ፍሰትና ከፍተኛ ትነት ስላላቸው በአልካላይን ጨዎችና በሌሎች ማዕድናት የበለጸጉ ናቸው። ከእነዚህ ማዕድናት ውስጥ አንዳንዶቹ ሶዳ አሽ ለማምረት ይጠቅማሉ።"
+  },
+
+  {
+    question: "Despite its length, ----- river fails to reach the sea.",
+    options: [
+      "Abay",
+      "Wabeshebelle",
+      "Baro",
+      "Genale"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The Wabishebelle is a very long river, but it does not normally reach the Indian Ocean. Much of its water is lost through evaporation and infiltration in the dry lowlands.",
+    amharicExplanation:
+      "ዋቢሸበሌ በጣም ረጅም ወንዝ ቢሆንም በደረቅ ዝቅተኛ መሬቶች ውስጥ በሚፈስበት ጊዜ በትነትና በመሬት ውስጥ በመስረግ ውኃውን ስለሚያጣ ወደ ሕንድ ውቅያኖስ አይደርስም።"
+  },
+
+  {
+    question: "Which of the following is not a major threat to Ethiopian lakes?",
+    options: [
+      "Over fishing",
+      "Invasive species",
+      "Sedimentation",
+      "Pollution",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Invasive species, sedimentation, and pollution are widely recognized as major threats to Ethiopian lakes. In the context of this question, overfishing is considered the option that is not among the major widespread threats.",
+    amharicExplanation:
+      "ወራሪ ዝርያዎች፣ ደለል መከማቸት እና ብክለት ለኢትዮጵያ ሀይቆች ዋና ስጋቶች ናቸው። በዚህ ጥያቄ አውድ ውስጥ ግን ከመጠን በላይ ማጥመድ ዋናው ሰፊ ስጋት እንዳልሆነ ተወስዷል።"
+  },
+
+  {
+    question: "Which of the following lakes is not a crater lake?",
+    options: [
+      "Wonchi",
+      "Ziquala",
+      "Ziway",
+      "Bishoftu",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Lake Ziway is a tectonic lake in the Rift Valley rather than a crater lake. Wonchi, Ziquala, and several Bishoftu lakes are associated with volcanic craters or calderas.",
+    amharicExplanation:
+      "ዝዋይ ሀይቅ የቴክቶኒክ ሀይቅ ነው እንጂ የክሬተር ሀይቅ አይደለም። ወንጪ፣ ዝቋላ እና ብዙዎቹ የቢሾፍቱ ሀይቆች ከእሳተ ገሞራ ጉድጓዶች ወይም ካልዴራዎች ጋር ይያያዛሉ።"
+  },
+
+  {
+    question: "Shewan plateau is drained outward in all directions by all of the following tributaries except:",
+    options: [
+      "Abay",
+      "Tekeze",
+      "Omo",
+      "Awash"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The Shewan Plateau is drained by rivers such as the Abay, Omo, and Awash. The Tekeze drains areas farther north and is not a drainage outlet of the Shewan Plateau.",
+    amharicExplanation:
+      "የሸዋ ፕላቱ በአባይ፣ በኦሞ እና በአዋሽ ወንዞች ይወሰዳል። ተከዜ ግን በሰሜን ያሉ አካባቢዎችን የሚያፈስ ስለሆነ የሸዋ ፕላቱን አያፈስም።"
+  },
+
+  {
+    question: "Identify the reasons why Wabishebelle River fails to reach the Indian Ocean.",
+    options: [
+      "The intermittent nature of its tributaries",
+      "More water is used for irrigation in the Somali plain area",
+      "It is largely used for generation of hydroelectric power in Ethiopia",
+      "It is drained by a few numbers of tributaries"
+    ],
+    answer: 0,
+    englishExplanation:
+      "The intermittent nature of the tributaries means that they do not provide a continuous supply of water throughout the year. Combined with the dry climate and high evaporation, this contributes to the Wabishebelle failing to reach the Indian Ocean.",
+    amharicExplanation:
+      "የዋቢሸበሌ ገባር ወንዞች ወቅታዊ ፍሰት ስላላቸው በዓመቱ ሙሉ ቀጣይነት ያለው ውኃ አያቀርቡም። ከደረቅ አየር ንብረትና ከከፍተኛ ትነት ጋር ተዳምሮ ወንዙ ወደ ሕንድ ውቅያኖስ እንዳይደርስ ያደርገዋል።"
+  },
+
+  {
+    question: "The Ethiopian landform is characterized by:",
+    options: [
+      "Contrasting topographic features",
+      "Flat-topped central plateaus",
+      "Deep river gorges",
+      "Largest proportion of lowlands and valleys",
+      "All except D"
+    ],
+    answer: 4,
+    englishExplanation:
+      "Ethiopia is characterized by contrasting topographic features, flat-topped plateaus, and deep river gorges. Although Ethiopia has extensive lowlands, the country is strongly characterized by its extensive highlands. Therefore, 'All except D' is the intended answer.",
+    amharicExplanation:
+      "የኢትዮጵያ መሬት አቀማመጥ የተለያዩ የገጽታ ልዩነቶች፣ ጠፍጣፋ አናት ያላቸው ፕላቶዎች እና ጥልቅ የወንዝ ሸለቆዎች ያሉት ነው። ስለዚህ D ከሌሎቹ የተለየ ሲሆን 'All except D' ትክክለኛው ምርጫ ነው።"
+  },
+
+  {
+    question: "The rugged topography of Ethiopia rendered rivers less navigable due to the waterfalls, deep gorges, and steep clefts. This implies that:",
+    options: [
+      "The impacts of relief on agricultural practices",
+      "The impacts of relief on settlement patterns",
+      "The impacts of relief on transportation",
+      "The impacts of relief on communication"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Waterfalls, deep gorges, and steep river sections make rivers difficult to navigate. This directly demonstrates the impact of physical relief on transportation.",
+    amharicExplanation:
+      "ፏፏቴዎች፣ ጥልቅ ሸለቆዎች እና ገደላማ የወንዝ ክፍሎች ወንዞችን ለመርከብ አስቸጋሪ ያደርጋሉ። ይህም የመሬት አቀማመጥ በትራንስፖርት ላይ ያለውን ተጽዕኖ በቀጥታ ያሳያል።"
+  },
+
+  {
+    question: "Which one of the following drainage systems of Ethiopia is an outcome of in-ward-sloping escarpments?",
+    options: [
+      "The Western drainage systems",
+      "Abay river basin",
+      "The Southeastern drainage systems",
+      "The Rift Valley drainage system"
+    ],
+    answer: 3,
+    englishExplanation:
+      "The Rift Valley drainage system developed where escarpments slope inward toward the valley floor. This causes water to drain internally toward lakes and closed basins instead of directly toward the sea.",
+    amharicExplanation:
+      "የሪፍት ቫሊ የውኃ ፍሰት ስርዓት ገደላማ አካባቢዎች ወደ ውስጥ በማዘንበላቸው የተፈጠረ ነው። ይህም ውኃው ወደ ውጭ ከመፍሰስ ይልቅ ወደ ሪፍት ቫሊ ሀይቆችና የውስጥ ተፋሰሶች እንዲፈስ ያደርጋል።"
+  },
+
+  {
+    question: "Ethiopian rivers share the following characteristics except:",
+    options: [
+      "They originate from highlands",
+      "They have gentle profile",
+      "They show seasonal flow fluctuation",
+      "Majority of them are transboundary",
+      "Some of the rivers serve as boundaries"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Most Ethiopian rivers originate in the highlands, show seasonal fluctuations, and many are transboundary or form boundaries. They generally have steep rather than gentle profiles, so 'gentle profile' is the exception.",
+    amharicExplanation:
+      "አብዛኛዎቹ የኢትዮጵያ ወንዞች ከደጋማ አካባቢዎች ይነሳሉ፣ የውኃ መጠናቸውም በወቅት ይለዋወጣል። ብዙዎቹም ድንበር ተሻጋሪ ወይም የድንበር ወንዞች ናቸው። ነገር ግን ለስላሳ መገለጫ የላቸውም፤ ስለዚህ B ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "The topographic region from which a river receives runoff is referred to as:",
+    options: [
+      "Drainage",
+      "Drainage pattern",
+      "Drainage basin",
+      "Drainage density",
+      "Water divide"
+    ],
+    answer: 2,
+    englishExplanation:
+      "A drainage basin is the area of land from which precipitation and surface runoff flow into a particular river, lake, or drainage system.",
+    amharicExplanation:
+      "የውኃ ማጠራቀሚያ ተፋሰስ (drainage basin) ማለት ዝናብና የመሬት ላይ ፍሰት ውኃ ወደ አንድ ወንዝ፣ ሀይቅ ወይም የውኃ ፍሰት ስርዓት የሚሰበሰብበት የመሬት አካባቢ ነው።"
+  },
+
+  {
+    question: "What is the primary factor contributing to Ethiopia's substantial volume of ground and surface water?",
+    options: [
+      "Advanced water management systems",
+      "Extensive irrigation practices",
+      "Varied topographical setup",
+      "Surplus of water reservoirs"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Ethiopia's varied topography, including extensive highlands and differences in elevation, contributes to rainfall distribution, runoff, groundwater recharge, and the development of numerous river basins.",
+    amharicExplanation:
+      "የኢትዮጵያ የተለያየ የመሬት አቀማመጥ፣ በተለይም ሰፊ ደጋማ አካባቢዎችና የከፍታ ልዩነቶች፣ የዝናብ ስርጭትን፣ የውኃ ፍሰትን፣ የከርሰ ምድር ውኃ መሙላትን እና ብዙ የወንዝ ተፋሰሶችን እንዲፈጠሩ ያግዛል።"
+  },{
+  question: "All are the tributaries of the Nile river except:",
+  options: [
+    "Abay river",
+    "Ghibe river",
+    "Tekeze river",
+    "Baro Akobo river"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Abay (Blue Nile), Tekeze, and Baro-Akobo are major river systems in Ethiopia that belong to the Nile drainage basin. The Ghibe (Omo) River flows southward into Lake Turkana and belongs to a separate drainage system. Therefore, Ghibe river is not a tributary of the Nile.",
+  amharicExplanation:
+    "አባይ (ዐባይ)፣ ተከዜ እና ባሮ-አኮቦ ከኢትዮጵያ ወደ ናይል የውሃ ማፋሰሻ ስርዓት የሚገቡ ዋና ዋና ወንዞች ናቸው። ጊቤ (ኦሞ) ወንዝ ግን ወደ ደቡብ በመፍሰስ ወደ ቱርካና ሀይቅ ይደርሳል። ስለዚህ የናይል ገባር ወንዝ አይደለም።"
+},
+
+{
+  question: "Which one of the following is not true about rainfall distribution of Ethiopia?",
+  options: [
+    "The Atlantic contributes a lot for summer rainfall",
+    "Rainfall in Ethiopia is seasonal, varying in amount over space and time",
+    "Most of Ethiopia comes under the influence of North East Trade winds in the summer season",
+    "Spring is the major rainfall season in the southeastern highlands"
+  ],
+  answer: 2,
+  englishExplanation:
+    "During the summer or Kiremt season, most of Ethiopia is influenced by moist air masses and winds associated with the monsoon circulation and equatorial westerlies, rather than the dry North East Trade winds. Therefore, option C is not true.",
+  amharicExplanation:
+    "በክረምት ወቅት (ክረምት/Kiremt) አብዛኛው የኢትዮጵያ ክፍል በእርጥበት የተሞሉ የአየር ምንጮችና ከደቡብ ምዕራብ የሚመጡ እርጥበት አዘል ነፋሳት ተጽዕኖ ስር ይገኛል። ሰሜን ምስራቅ የንግድ ነፋሳት በዋናነት ደረቅ ናቸው። ስለዚህ C የተሳሳተ ነው።"
+},
+
+{
+  question: "What distinct title is often associated with Ethiopia due to its substantial water resources in the region?",
+  options: [
+    "The Aquatic Marvel of Africa",
+    "The Hydrological Jewel",
+    "The Water Tower of Eastern Africa",
+    "The Pinnacle of Liquid Abundance"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Ethiopia is widely known as the 'Water Tower of Eastern Africa' because its highlands receive substantial rainfall and give rise to many major rivers that flow into neighboring countries.",
+  amharicExplanation:
+    "ኢትዮጵያ ከፍተኛ የውሃ ሀብት ስላላት እና ብዙ ዋና ዋና ወንዞች ከኢትዮጵያ ደጋማ አካባቢዎች ተነስተው ወደ አጎራባች አገሮች ስለሚፈሱ የ'ምስራቅ አፍሪካ የውሃ ግንብ' (Water Tower of Eastern Africa) ተብላ ትጠራለች።"
+},
+
+{
+  question: "Which constituent typically contributes the least to the Earth's fresh water resources?",
+  options: [
+    "Groundwater",
+    "Permafrost",
+    "Glaciers/Ice mass",
+    "Surface waters"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Surface water, including rivers and lakes, represents only a very small fraction of Earth's freshwater. Most freshwater is stored in glaciers, ice caps, groundwater, and permafrost. Therefore, surface waters contribute the least among the listed categories.",
+  amharicExplanation:
+    "እንደ ወንዞችና ሀይቆች ያሉ የላይኛው ውሃዎች ከምድር ንጹህ ውሃ ውስጥ በጣም ትንሽ ድርሻ ብቻ ይይዛሉ። አብዛኛው ንጹህ ውሃ በበረዶዎች፣ በpermafrost እና በከርሰ ምድር ውሃ ውስጥ ይገኛል። ስለዚህ ከተሰጡት ውስጥ የላይኛው ውሃ ትንሹን ድርሻ ይይዛል።"
+},
+
+{
+  question: "What is the primary reason for the uneven distribution of fresh water throughout the world?",
+  options: [
+    "Global warming effects",
+    "Human consumption patterns",
+    "Varied climate conditions",
+    "Geopolitical factors"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Freshwater is unevenly distributed mainly because climate conditions vary from place to place. Differences in rainfall, temperature, evaporation, and snowfall produce major differences in water availability around the world.",
+  amharicExplanation:
+    "በዓለም ዙሪያ ንጹህ ውሃ በእኩል እንዳይሰራጭ ዋናው ምክንያት የአየር ንብረት ሁኔታ መለያየት ነው። የዝናብ፣ የሙቀት፣ የትነት እና የበረዶ መጠን ልዩነት በየአካባቢው የውሃ መገኘትን ያለያያል።"
+},
+
+{
+  question: "In the context of water bodies, what is the term used to describe the nearly 97.5% that is found in oceans and seas?",
+  options: [
+    "Saline water",
+    "Brackish water",
+    "Alkaline water",
+    "Briny water"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Approximately 97.5% of Earth's water is found in oceans and seas. Because it contains a high concentration of dissolved salts, it is called saline water.",
+  amharicExplanation:
+    "ከምድር አጠቃላይ የውሃ መጠን ውስጥ 97.5% ያህሉ በባህሮችና በውቅያኖሶች ውስጥ ይገኛል። ከፍተኛ የጨው መጠን ስላለው ጨዋማ ውሃ (Saline water) ይባላል።"
+},
+
+{
+  question: "What term is used to describe Ethiopia's status as 'the water tower of Eastern Africa' in the context of water resources?",
+  options: [
+    "Hydraulic prominence",
+    "Aquatic sovereignty",
+    "Hydrological supremacy",
+    "Hydrodynamic eminence"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The term 'hydrological supremacy' describes Ethiopia's important hydrological position in Eastern Africa, where its highlands provide water to many major transboundary river systems.",
+  amharicExplanation:
+    "ኢትዮጵያ በምስራቅ አፍሪካ ብዙ ዋና ዋና ድንበር ተሻጋሪ ወንዞችን የምትመግብ በመሆኗ ያላት የውሃ ሀብት የበላይነት 'Hydrological supremacy' ተብሎ ይገለጻል።"
+},
+
+{
+  question: "Which one of the following drainage systems of Ethiopia is situated in the leeward side of equatorial westerlies?",
+  options: [
+    "The Southeastern Drainage System",
+    "The Rift Valley Drainage System",
+    "Abay Drainage System",
+    "The Western Drainage System"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The Southeastern Drainage System lies mainly on the leeward or rain-shadow side of the Ethiopian highlands. Therefore, it receives less rainfall compared with the windward areas.",
+  amharicExplanation:
+    "የደቡብ ምስራቅ የውሃ ማፋሰሻ ስርዓት በኢትዮጵያ ደጋማ አካባቢዎች የነፋስ ጥላ (leeward/rain-shadow) በሆነ አቅጣጫ ይገኛል። ስለዚህ ከነፋስ በሚቀበሉ አካባቢዎች ያነሰ ዝናብ ያገኛል።"
+},
+
+{
+  question: "The major problems related to the use of Ethiopian rivers for the generation of hydroelectric power include:",
+  options: [
+    "The seasonal variability of stream flow",
+    "Severe erosion from the highlands",
+    "Siltation in the reservoirs",
+    "Impact of climate change",
+    "All are answers"
+  ],
+  answer: 4,
+  englishExplanation:
+    "All of the listed factors are important challenges. Seasonal variation affects water availability, erosion transports sediment into reservoirs, siltation reduces reservoir capacity, and climate change can alter rainfall and river flow patterns.",
+  amharicExplanation:
+    "ሁሉም የተዘረዘሩት ችግሮች የኢትዮጵያ ወንዞችን ለሃይድሮ ኤሌክትሪክ ማመንጨት ሲጠቀሙ የሚያጋጥሙ ችግሮች ናቸው። የውሃ ፍሰት በወቅት መለዋወጥ፣ የአፈር መሸርሸር፣ በማጠራቀሚያዎች ውስጥ ደለል መከማቸት እና የአየር ንብረት ለውጥ ሁሉም ተጽዕኖ አላቸው።"
+},
+
+{
+  question: "Within the realm of drainage systems, how is the originating point of a river system distinctively referred to?",
+  options: [
+    "Apex",
+    "Vertex",
+    "Source or Headwater",
+    "Confluence"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The point where a river begins is called its source or headwater. A river may originate from a spring, lake, glacier, or highland area.",
+  amharicExplanation:
+    "አንድ ወንዝ የሚጀምርበት ወይም የሚመነጭበት ቦታ ምንጭ (Source) ወይም Headwater ይባላል። የወንዝ ምንጭ ከምንጭ ውሃ፣ ከሀይቅ፣ ከበረዶ ወይም ከደጋማ አካባቢ ሊጀምር ይችላል።"
+},
+
+{
+  question: "All of the following contribute to the underutilization of Ethiopia's water resource potential:",
+  options: [
+    "Erosion and the resulting sedimentation",
+    "Seasonal flow fluctuation",
+    "Absence of rapids and falls",
+    "Invasive species"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Ethiopia has many rapids and waterfalls, which provide opportunities for hydroelectric power generation. Therefore, the absence of rapids and falls is not a cause of underutilization. Erosion, sedimentation, seasonal flow fluctuation, and other environmental and technical challenges can limit water-resource utilization.",
+  amharicExplanation:
+    "ኢትዮጵያ ብዙ ፏፏቴዎችና ፈጣን የውሃ ፍሰቶች (rapids) ያሏት ስለሆነ የእነዚህ አለመኖር የውሃ ሀብት አጠቃቀምን የሚገድብ ምክንያት አይደለም። የአፈር መሸርሸር፣ ደለል መከማቸት እና የውሃ ፍሰት በወቅት መለዋወጥ የውሃ ሀብት አጠቃቀምን ሊገድቡ ይችላሉ።"
+},
+
+{
+  question: "Which parts of southeastern lowlands are not drained by the Wabeishebele river?",
+  options: [
+    "Borona and Guji lowlands",
+    "Parts of Somali region",
+    "Eastern Harerghe",
+    "None of the above"
+  ],
+  answer: 0,
+  englishExplanation:
+    "The Borana and Guji lowlands are not primarily drained by the Wabishebelle River. They are associated with other drainage systems, including the Genale-Dawa and related rivers. The Wabishebelle drains parts of eastern Ethiopia, including areas of the Somali Region and eastern Hararghe.",
+  amharicExplanation:
+    "የቦረናና ጉጂ ዝቅተኛ መሬቶች በዋቢሸበሌ ወንዝ በዋናነት አይደርቁም። እነዚህ አካባቢዎች ከገናሌ-ዳዋና ከሌሎች የውሃ ማፋሰሻ ስርዓቶች ጋር ይያያዛሉ። ዋቢሸበሌ ግን የሶማሌ ክልል ክፍሎችንና የምስራቅ ሀረርጌን ያፋስሳል።"
+},
+
+{
+  question: "How is a drainage system uniquely characterized, distinguishing it from other hydrological features?",
+  options: [
+    "A network of roads and highways",
+    "A branching network of stream channels intricately connected with the adjacent land slopes",
+    "A subterranean labyrinth of tunnels",
+    "A mosaic of interconnected lakes and ponds"
+  ],
+  answer: 1,
+  englishExplanation:
+    "A drainage system is a network of rivers, streams, and tributaries that collect and carry water across a particular area. Its channels are organized according to the surrounding topography and slopes.",
+  amharicExplanation:
+    "የውሃ ማፋሰሻ ስርዓት (Drainage system) ማለት ውሃን ከተለያዩ አካባቢዎች ሰብስበው የሚያፈሱ ወንዞች፣ ጅረቶችና ገባር ወንዞች የሚፈጥሩት መረብ ነው። አቀማመጡም በአካባቢው የመሬት አቀማመጥና የውሃ ፍሰት አቅጣጫ ይወሰናል።"
+},
+
+{
+  question: "Which combination of topographical structures plays a pivotal role in shaping the overarching patterns of major river basins in Ethiopia?",
+  options: [
+    "Expansive plateaus",
+    "Verdant valleys",
+    "Towering mountains",
+    "An all-encompassing combination of the above"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Ethiopia's major river basins are strongly influenced by its complex topography. Plateaus, mountains, and valleys together determine slopes, drainage directions, and the development of river basins.",
+  amharicExplanation:
+    "የኢትዮጵያ ዋና ዋና የወንዝ ማፋሰሻ ስርዓቶች በተራሮች፣ በሰፊ ደጋማ አምባዎች እና በሸለቆዎች የመሬት አቀማመጥ በጋራ ይቀረጻሉ። እነዚህ የውሃ ፍሰት አቅጣጫንና የወንዝ ማፋሰሻ ቦታዎችን ይወስናሉ።"
+},
+
+{
+  question: "Which one of the following is not true about the all-year rainfall region of Ethiopia?",
+  options: [
+    "Its wetness is due to the prevalence of moist air",
+    "It is the wettest region in Ethiopia",
+    "It is found in the southeastern part of the country",
+    "It receives its heaviest rainfall in summer",
+    "Its moisture is predominantly the result of the Guinea Monsoons"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The all-year rainfall region is mainly associated with southwestern Ethiopia, where moist air and favorable atmospheric conditions produce rainfall during much of the year. It is not located in the southeastern part of the country. Therefore, option C is not true.",
+  amharicExplanation:
+    "ዓመቱን ሙሉ ዝናብ የሚያገኘው ክልል በዋናነት በደቡብ ምዕራብ ኢትዮጵያ ይገኛል። እርጥበት ያለው አየር በብዛት ስለሚገኝ ዓመቱን ሙሉ ዝናብ ያገኛል። በደቡብ ምስራቅ አገሪቱ አይገኝም፤ ስለዚህ C የተሳሳተ ነው።"
+},
+
+{
+  question: "Among the Western Drainage Systems (WDS) in Ethiopia, what distinguishes the Ghibe/Omo River from other river basins in the system?",
+  options: [
+    "It flows northward into the Mediterranean Sea.",
+    "It drains the highest percentage of Ethiopia's landmass.",
+    "It flows southward to join Lake Turkana.",
+    "It has the largest volumetric discharge."
+  ],
+  answer: 2,
+  englishExplanation:
+    "The Ghibe/Omo River is distinctive because it flows southward and empties into Lake Turkana. Other major Western Drainage rivers, such as the Abay, Tekeze, and Baro-Akobo, generally flow westward or northwestward toward the Nile system.",
+  amharicExplanation:
+    "ጊቤ/ኦሞ ወንዝ ከሌሎች የምዕራብ ማፋሰሻ ወንዞች የሚለየው ወደ ደቡብ በመፍሰስ ወደ ቱርካና ሀይቅ ስለሚገባ ነው። አባይ፣ ተከዜ እና ባሮ-አኮቦ ግን በአብዛኛው ወደ ምዕራብ ወይም ሰሜን ምዕራብ ይፈሳሉ።"
+},
+
+{
+  question: "Which of the following rivers of Ethiopia has the lowest annual water volumetric discharge?",
+  options: [
+    "Tekeze",
+    "Wabishebelle",
+    "Baro/Akobo",
+    "Awash"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Among the rivers listed, Wabishebelle has a relatively low annual volumetric discharge because it passes through dry and semi-arid areas where evaporation is high and rainfall is relatively limited and seasonal.",
+  amharicExplanation:
+    "ከተዘረዘሩት ወንዞች መካከል ዋቢሸበሌ በደረቅና ከፊል ደረቅ አካባቢዎች ስለሚፈስ እና የትነት መጠን ከፍተኛ ስለሆነ ዝቅተኛ ዓመታዊ የውሃ ፍሰት መጠን አለው።"
+},
+
+{
+  question: "Which one of the following is correct about Ethiopian lakes?",
+  options: [
+    "All are results of tectonic process.",
+    "Wonchi is part of the Rift Valley lakes cluster.",
+    "Lake Abaya is the largest Rift Valley lake.",
+    "Melka Wakena is one of the crater lakes of the country."
+  ],
+  answer: 2,
+  englishExplanation:
+    "Lake Abaya is one of the major lakes of the Main Ethiopian Rift and is the largest of the Ethiopian Rift Valley lakes by surface area. The other statements are incorrect because Ethiopian lakes have different origins, Wonchi is a volcanic crater lake, and Melka Wakena is a reservoir.",
+  amharicExplanation:
+    "ሀይቅ አባያ በዋናው የኢትዮጵያ ሪፍት ቫሊ ውስጥ የሚገኝ ሲሆን ከሪፍት ቫሊ ሀይቆች መካከል ትልቁ ነው። ሁሉም የኢትዮጵያ ሀይቆች በቴክቶኒክ ሂደት አልተፈጠሩም፤ ዎንጪ የእሳተ ገሞራ ጉድጓድ ሀይቅ ሲሆን መልካ ዋከና ደግሞ ማጠራቀሚያ ሀይቅ ነው።"
+},
+
+{
+  question: "In terms of volumetric discharge and coverage, which river significantly contributes to the Western Drainage Systems?",
+  options: [
+    "Tekeze",
+    "Baro",
+    "Abay",
+    "Ghibe/Omo"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The Abay River is the largest and most significant river system within Ethiopia's Western Drainage Systems in terms of both drainage coverage and annual water discharge. It is also known as the Blue Nile after entering Sudan.",
+  amharicExplanation:
+    "አባይ ወንዝ በምዕራብ የውሃ ማፋሰሻ ስርዓት ውስጥ በመሬት ሽፋንና በዓመታዊ የውሃ ፍሰት መጠን ትልቁ አስተዋጽኦ ያለው ወንዝ ነው። ወደ ሱዳን ከገባ በኋላም ብሉ ናይል (Blue Nile) ተብሎ ይጠራል።"
+},
+
+{
+  question: "One is correct about the Rift Valley drainage system:",
+  options: [
+    "After denakil drainage system is part of Rift Valley drainage system",
+    "Lake Afrera and Asale are the only main surface water of Rift Valley drainage system",
+    "It has uniform drainage pattern",
+    "Awash River is an inland drainage that empties into Lake Abe."
+  ],
+  answer: 3,
+  englishExplanation:
+    "The Awash River is an important inland drainage system in Ethiopia. It flows northeastward and eventually terminates in the Lake Abe area near the Ethiopia-Djibouti border rather than reaching the sea.",
+  amharicExplanation:
+    "አዋሽ ወንዝ ወደ ባህር ወይም ውቅያኖስ የማይደርስ የውስጥ ማፋሰሻ (inland drainage) ነው። ወደ ሰሜን ምስራቅ አቅጣጫ በመፍሰስ በኢትዮጵያና ጅቡቲ ድንበር አካባቢ በሚገኘው የአቤ ሀይቅ አካባቢ ያበቃል።"
+}],
         5: []
 
     },
