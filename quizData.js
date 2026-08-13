@@ -210,7 +210,235 @@ const quizData = {
 
     "economics": {
 
-        1: [],
+        1: [{
+    question:
+      "The fundamental economic problem of 'scarcity' is correctly defined as a situation where society is temporarily unable to get the amount of goods it wants at the prevailing price.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The statement is false because it describes a shortage, not scarcity. Scarcity is the fundamental and permanent economic problem caused by unlimited human wants and limited resources. A shortage is a temporary situation in which people cannot obtain the quantity of a good they want at the prevailing market price.",
+    amharicExplanation:
+      "ይህንን በፍጹም መርሳት የለባችሁም! Scarcity (እጥረት) እና Shortage (ጉድለት) የተለያዩ ጽንሰ-ሀሳቦች ናቸው። Scarcity ማለት የሰው ልጅ ፍላጎት ገደብ የሌለው ሆኖ ሳለ ይህንን ፍላጎት ለማሟላት የሚያስፈልጉት ሀብቶች (resources) ውስን መሆናቸው የሚፈጥረው ዘላለማዊ እና መሠረታዊ የኢኮኖሚክስ ችግር ነው። Shortage በበኩሉ፣ በአንድ ወቅት ላይ በገበያ ዋጋ ሰዎች የሚፈልጉትን ያህል መጠን ያለው ምርት መግዛት ሲያቅታቸው የሚፈጠር ጊዜያዊ ክስተት ነው። ስለዚህ ጥያቄው ላይ የተሰጠው ገለጻ የShortage እንጂ የScarcity አይደለም።"
+  },
+
+  {
+    question:
+      "A statement such as 'The current unemployment rate in Ethiopia should be reduced by increasing government spending' is an example of positive economic analysis.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The statement is false because it is normative, not positive. Positive economics deals with what is and statements that can be tested using facts and evidence. Normative economics deals with what ought to be and includes value judgments or policy recommendations. The phrase 'should be reduced' makes this a normative statement.",
+    amharicExplanation:
+      "Positive Economics 'what is' ወይም 'ምን አለ' የሚለውን ጥያቄ ይመልሳል፤ እውነታን (facts) መሠረት ያደረገ እና በመረጃ ሊረጋገጥ የሚችል ነው። Normative Economics በበኩሉ 'what ought to be' ወይም 'ምን መሆን አለበት' የሚል ሀሳብ ያነሳል፤ ይህም የግል አስተያየትን እና value judgmentsን ያካትታል። ጥያቄው ላይ 'should be reduced' ስለሚል፣ ይህ የፖሊሲ ምክረ-ሀሳብ ስለሆነ Normative Economics ነው።"
+  },
+
+  {
+    question:
+      "Any point lying on the Production Possibilities Frontier (PPF) indicates that an economy is utilizing its available resources inefficiently.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The statement is false. Any point on the PPF represents productive efficiency because the economy is fully and efficiently using its available resources. A point inside the PPF indicates inefficient use of resources, while a point outside the PPF is unattainable with the current resources and technology.",
+    amharicExplanation:
+      "በ PPF ላይ ያለ ማንኛውም ነጥብ፣ ሀገሪቱ ያላትን ሀብት በሙሉ እና በብቃት (efficiently) እየተጠቀመች መሆኗን ያሳያል። ከ PPF ከርቩ ውስጥ ያለ ነጥብ ሀብቶች በብቃት ስራ ላይ እንዳልዋሉ (inefficient) ያሳያል። ከ PPF ውጪ ያለ ነጥብ ደግሞ ባለው ሀብትና ቴክኖሎጂ ሊደረስበት የማይችል (unattainable) ነው። ስለዚህ በ PPF ላይ ያለ ነጥብ ብቃትን (efficiency) እንጂ inefficiencyን አያሳይም።"
+  },
+
+  {
+    question:
+      "The reward for the factor of production known as 'Capital' is profit.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The statement is false. The reward for capital is interest. The four factors of production and their rewards are: Land → Rent, Labour → Wages, Capital → Interest, and Entrepreneurship → Profit.",
+    amharicExplanation:
+      "አራቱ የምርት ግብዓቶች (Factors of Production) እና ክፍያዎቻቸው፦ Land (መሬት) → Rent (ኪራይ)፣ Labour (የሰው ጉልበት) → Wage (ደመወዝ)፣ Capital (ካፒታል) → Interest (ወለድ)፣ Entrepreneurship (ሥራ ፈጣሪነት) → Profit (ትርፍ) ናቸው። ስለዚህ የCapital ክፍያ Interest እንጂ Profit አይደለም።"
+  },
+
+  {
+    question:
+      "Both microeconomics and macroeconomics are mutually exclusive fields of study that do not complement each other.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The statement is false. Microeconomics and macroeconomics are different but complementary fields of economics. Microeconomics studies individual consumers, firms, and markets, while macroeconomics studies the economy as a whole. Understanding individual economic decisions helps explain broader economic outcomes.",
+    amharicExplanation:
+      "ይህ አባባል ስህተት ነው። Microeconomics እና Macroeconomics የትንተና ደረጃቸው ቢለያይም እርስ በእርስ የሚደጋገፉ (complementary) ናቸው። Microeconomics የግለሰቦችን፣ የቤተሰቦችን እና የድርጅቶችን ውሳኔዎች ያጠናል፤ Macroeconomics ደግሞ አጠቃላይ የኢኮኖሚ ባህሪን ያጠናል። ስለዚህ ሁለቱ መስኮች እርስ በእርስ ይደጋገፋሉ።"
+  },
+
+  {
+    question:
+      "The formal and most commonly accepted definition of economics emphasizes the relationship between:",
+    options: [
+      "Unlimited resources and limited human needs.",
+      "The production of goods and the distribution of wealth.",
+      "Efficient allocation of scarce resources to satisfy unlimited human needs.",
+      "The flow of money between households and firms."
+    ],
+    answer: 2,
+    englishExplanation:
+      "Economics studies how scarce resources are allocated to satisfy unlimited human wants and needs. Because resources are limited while human wants are unlimited, individuals and societies must make choices about how resources are used. Therefore, option C is correct.",
+    amharicExplanation:
+      "የኢኮኖሚክስ ዘመናዊ እና በሰፊው ተቀባይነት ያለው ትርጉም 'unlimited human needs' (ገደብ የሌለው የሰው ልጅ ፍላጎት) እና 'scarce resources' (ውስን ሀብቶች) መካከል ያለውን ግንኙነት ያጠናል። ዋናው ነጥብ ውስን ሀብቶችን በብቃት በመመደብ ገደብ የሌለውን ፍላጎት በተቻለ መጠን ማሟላት ነው። ስለዚህ C ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question:
+      "The bowed-out (concave) shape of the Production Possibilities Frontier is a result of:",
+    options: [
+      "The law of diminishing marginal utility.",
+      "The existence of unemployed resources.",
+      "The law of increasing opportunity cost.",
+      "A constant opportunity cost between the two goods."
+    ],
+    answer: 2,
+    englishExplanation:
+      "The bowed-out shape of the PPF results from the law of increasing opportunity cost. As an economy produces more of one good, it must sacrifice increasingly larger amounts of the other good because resources are not equally suited to producing both goods.",
+    amharicExplanation:
+      "የ PPF ከርቭ ወደ ውጪ የሚጎብጥ (bowed-out) ቅርጽ የሚኖረው በ 'law of increasing opportunity cost' ምክንያት ነው። አንድን ምርት በብዛት ለማምረት ስንሞክር ሌላውን ምርት በተጨማሪ መጠን መሠዋት ያስፈልገናል። ይህ የሚሆነው ሀብቶች ለሁሉም ምርቶች በእኩል ተስማሚ ስላልሆኑ ነው።"
+  },
+
+  {
+    question:
+      "Which of the following scenarios best illustrates the concept of opportunity cost?",
+    options: [
+      "Buying a new phone for 10,000 Birr.",
+      "Choosing to study for an exam instead of going to a movie with friends.",
+      "Facing a shortage of sugar in your local shop.",
+      "Receiving a free lunch from a charity organization."
+    ],
+    answer: 1,
+    englishExplanation:
+      "Opportunity cost is the value of the next best alternative that is given up when making a choice. By choosing to study for an exam instead of watching a movie with friends, the enjoyment of watching the movie becomes the opportunity cost of studying.",
+    amharicExplanation:
+      "Opportunity Cost ማለት አንድን ውሳኔ ስንወስን የተውነው ወይም ያጣነው የሁለተኛ ምርጥ አማራጭ (next best alternative) ዋጋ ነው። ለፈተና ለማጥናት መወሰን ማለት ከጓደኞች ጋር ፊልም የማየትን ዕድል መተው ማለት ነው። ስለዚህ ፊልም ማየት ለማጥናት የተከፈለው Opportunity Cost ይሆናል።"
+  },
+
+  {
+    question:
+      "In a capitalist economic system, the question of 'What to produce?' is primarily determined by:",
+    options: [
+      "A central planning committee.",
+      "The government's long-term development goals.",
+      "Traditional and cultural values.",
+      "The interaction of buyers and sellers through the price mechanism."
+    ],
+    answer: 3,
+    englishExplanation:
+      "In a capitalist or free-market economy, the basic economic questions are largely answered through the price mechanism. Consumer demand influences prices and profits, which provide signals to producers about what goods and services to produce.",
+    amharicExplanation:
+      "በካፒታሊስት ወይም በነጻ ገበያ ኢኮኖሚ ውስጥ 'ምን ይመረት?' የሚለው ጥያቄ በዋናነት በዋጋ አሰራር (price mechanism) ይወሰናል። ሸማቾች የሚፈልጉትን ምርት በብዛት ከገዙ ፍላጎቱ እና ዋጋው ሊጨምር ይችላል፤ ይህም አምራቾች ያንን ምርት በብዛት እንዲያመርቱ ምልክት ይሰጣል።"
+  },
+
+  {
+    question:
+      "The distinction between a 'positive statement' and a 'normative statement' is that:",
+    options: [
+      "A positive statement is subjective, while a normative statement is objective.",
+      "A positive statement can be tested against facts, while a normative statement is based on value judgments.",
+      "Positive statements are used in microeconomics, while normative statements are used in macroeconomics.",
+      "Disagreements over positive statements are resolved by voting, while disagreements over normative statements are resolved by data."
+    ],
+    answer: 1,
+    englishExplanation:
+      "A positive statement describes facts or relationships that can be tested using evidence. A normative statement expresses an opinion, value judgment, or belief about what ought to be. Therefore, option B correctly identifies the distinction.",
+    amharicExplanation:
+      "Positive statement እውነታን ይገልጻል እና ትክክለኛነቱ በመረጃ (facts) ሊረጋገጥ ወይም ውድቅ ሊደረግ ይችላል። Normative statement በበኩሉ 'እንዲህ ቢሆን ጥሩ ነው' ወይም 'እንዲህ መሆን አለበት' የሚል አስተያየት እና value judgment ያንጸባርቃል። ስለዚህ B ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question:
+      "An economy experiences economic growth. How would this be represented on a Production Possibilities Frontier (PPF) graph?",
+    options: [
+      "A movement from a point inside the frontier to a point on the frontier.",
+      "A movement along the frontier from one point to another.",
+      "An inward shift of the entire frontier.",
+      "An outward shift of the entire frontier."
+    ],
+    answer: 3,
+    englishExplanation:
+      "Economic growth means an increase in an economy's productive capacity. This can result from increases in resources, improvements in the quality of resources, or technological progress. On a PPF graph, economic growth is represented by an outward shift of the entire frontier.",
+    amharicExplanation:
+      "ኢኮኖሚያዊ እድገት (Economic Growth) ማለት የሀገሪቱ የማምረት አቅም መጨመር ማለት ነው። ይህ የምርት ግብዓቶች መጠን ወይም ጥራት ሲጨምር ወይም ቴክኖሎጂ ሲሻሻል ሊከሰት ይችላል። በ PPF ግራፍ ላይ ይህ የሚወከለው መላው PPF ወደ ውጪ (outward) በመሳብ ነው።"
+  },
+
+  {
+    question:
+      "Which of the following is considered an example of 'Land' in the economic sense?",
+    options: [
+      "A newly constructed factory building.",
+      "A tractor used for farming.",
+      "Fertile agricultural fields and mineral deposits.",
+      "The money used to purchase a piece of property."
+    ],
+    answer: 2,
+    englishExplanation:
+      "In economics, land refers to all natural resources provided by nature, including fertile land, minerals, forests, rivers, and other natural resources. Factory buildings and tractors are capital goods, while money itself is not considered a factor of production.",
+    amharicExplanation:
+      "በኢኮኖሚክስ ትርጉም 'Land' ማለት ሰው ያልፈጠራቸው እና በተፈጥሮ የሚገኙ ሀብቶች በሙሉ ናቸው። የእርሻ መሬት፣ ማዕድናት፣ ወንዞች እና ደኖች ምሳሌዎች ናቸው። የፋብሪካ ህንጻ እና ትራክተር የተመረቱ የCapital ሀብቶች ናቸው። ገንዘብ ደግሞ በራሱ የምርት ግብዓት አይደለም።"
+  },
+
+  {
+    question:
+      "The fundamental rationale for the study of economics is primarily based on which two facts?",
+    options: [
+      "The existence of money and markets.",
+      "The theories of demand and supply.",
+      "Unlimited human wants and scarce economic resources.",
+      "The goals of full employment and price stability."
+    ],
+    answer: 2,
+    englishExplanation:
+      "The study of economics is fundamentally based on two facts: human wants are unlimited, while economic resources are scarce. Because resources cannot satisfy every want, individuals and societies must make choices, which creates opportunity costs.",
+    amharicExplanation:
+      "የኢኮኖሚክስ ትምህርት በሁለት መሠረታዊ እውነታዎች ላይ ይገነባል። የመጀመሪያው የሰው ልጅ ፍላጎት (wants) ገደብ የለውም የሚለው ሲሆን፣ ሁለተኛው የእነዚህን ፍላጎቶች ለማሟላት የሚያስፈልጉ ኢኮኖሚያዊ ሀብቶች (resources) ውስን መሆናቸው ነው።"
+  },
+
+  {
+    question:
+      "In the simple two-sector circular flow model, households play a dual role by:",
+    options: [
+      "Producing goods and selling them in the product market.",
+      "Buying resources in the factor market and selling goods in the product market.",
+      "Selling resources in the factor market and buying goods in the product market.",
+      "Setting prices in both the factor and product markets."
+    ],
+    answer: 2,
+    englishExplanation:
+      "In the simple circular flow model, households supply factors of production such as labour, land, and capital to firms through the factor market. They receive income in return and use that income to purchase goods and services from firms in the product market. Therefore, option C is correct.",
+    amharicExplanation:
+      "በ Circular Flow Model ውስጥ ቤተሰቦች (Households) ሁለት ዋና ሚናዎች አሏቸው። አንደኛ፣ ያላቸውን የምርት ግብዓቶች ማለትም የሰው ጉልበት፣ መሬት እና ካፒታልን በFactor Market ለድርጅቶች ይሰጣሉ። በምላሹ ገቢ ያገኛሉ። ሁለተኛ፣ ያገኙትን ገቢ ተጠቅመው በProduct Market ላይ የተመረቱ እቃዎችንና አገልግሎቶችን ይገዛሉ። ስለዚህ C ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question:
+      "The economic system that attempts to combine the advantages of both capitalism and a command economy is known as a:",
+    options: [
+      "Traditional Economy",
+      "Mixed Economy",
+      "Laissez-Faire Economy",
+      "Socialist Economy"
+    ],
+    answer: 1,
+    englishExplanation:
+      "A mixed economy combines features of both market capitalism and a command economy. The private sector operates through markets, while the government also participates in the economy through regulation, public services, taxation, and other policies.",
+    amharicExplanation:
+      "Mixed Economy (ድብልቅ ኢኮኖሚ) የካፒታሊዝምን እና የCommand Economyን በጎ ጎኖች ለማጣመር የሚሞክር የኢኮኖሚ ስርዓት ነው። በዚህ ስርዓት የግል ዘርፉ (private sector) እና የመንግስት ዘርፉ (public sector) ጎን ለጎን ይሰራሉ። ገበያው ዋና ሚና ቢኖረውም መንግስት ደግሞ በህግ፣ በደንብ፣ በህዝብ አገልግሎት እና በሌሎች ፖሊሲዎች በኢኮኖሚው ውስጥ ይሳተፋል።"
+  }],
         2: [],
         3: [],
         4: [],
