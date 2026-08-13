@@ -10304,294 +10304,6 @@ const quizData = {
       "Acculturation ማለት ሁለት ወይም ከዚያ በላይ የባህል ቡድኖች ቀጣይነት ያለውና ቀጥተኛ ግንኙነት ሲያደርጉ የባህል ባህሪያት የሚለዋወጡበት ሂደት ነው።"
   }],
         4: [{
-    question: "There are marginalized social groups in every society and culture including developed countries like UK.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 0,
-    explanation: {
-      english: "Marginalization is a universal phenomenon that exists in all societies, regardless of their economic development, including developed nations like the UK where minority groups, women, and disadvantaged populations may face exclusion.",
-      amharic: "ማግለል (Marginalization) በኢኮኖሚ ከዳበሩ አገሮች እንደ እንግሊዝ (UK) ጨምሮ በሁሉም ማህበረሰቦች ውስጥ ሊኖር የሚችል ዓለም አቀፋዊ ክስተት ነው።"
-    }
-  },
-
-  {
-    question: "Marginalization happens only to those people who are physically or mentally unable to work.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Marginalization is not limited to people with physical or mental disabilities. It can affect individuals and groups based on gender, ethnicity, economic status, social identity, age, and other factors.",
-      amharic: "ማግለል በአካል ወይም በአእምሮ መስራት በማይችሉ ሰዎች ላይ ብቻ የሚወሰን አይደለም። በጾታ፣ በጎሳ፣ በኢኮኖሚ ደረጃ፣ በማንነት፣ በእድሜ እና በሌሎች ምክንያቶችም ሊከሰት ይችላል።"
-    }
-  },
-
-  {
-    question: "Gender-based marginalization is a global problem, which involves inclusion of girls and women from a wide range of opportunities and social services.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Gender-based marginalization is a global problem, but it involves the exclusion rather than the inclusion of girls and women from opportunities and social services.",
-      amharic: "በጾታ ላይ የተመሰረተ ማግለል ዓለም አቀፍ ችግር ነው። ነገር ግን ማግለል ሴቶችንና ልጃገረዶችን ከእድሎችና ከማህበራዊ አገልግሎቶች መከልከልን ያመለክታል።"
-    }
-  },
-
-  {
-    question: "Marginalization is a treatment of people as a part and decision makers in a society.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Marginalization treats people as insignificant or outsiders and may exclude them from decision-making and full participation in society.",
-      amharic: "ማግለል ሰዎችን እንደ ማህበረሰቡ አካልና ውሳኔ ሰጪ አድርጎ መቁጠር ሳይሆን፣ ከውሳኔ ሰጪነትና ከማህበረሰቡ ማዕከላዊ ሕይወት ማግለል ማለት ነው።"
-    }
-  },
-
-  {
-    question: "Although most forms of marginalization contradicted with human rights there are some forms of marginalization which is not contradicted with human rights.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Marginalization generally contradicts human rights principles because it involves discrimination, inequality, exclusion, or denial of equal dignity and opportunities.",
-      amharic: "ማግለል በአጠቃላይ ከሰብአዊ መብት መርሆዎች ጋር ይጋጫል፤ ምክንያቱም መድልዎ፣ እኩልነት ማጣት፣ ማግለል እና እኩል ክብርና እድል መከልከልን ስለሚያካትት ነው።"
-    }
-  },
-
-  {
-    question: "Old peoples are exposed to double marginalization and discrimination.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Older people can experience age-based marginalization and discrimination, but the statement is not generally correct as written. Double marginalization depends on overlapping factors such as age, gender, disability, or social status.",
-      amharic: "አዛውንቶች በእድሜ ምክንያት ማግለልና መድልዎ ሊደርስባቸው ይችላል፤ ድርብ ማግለል ግን እንደ እድሜ፣ ጾታ፣ አካል ጉዳት ወይም ማህበራዊ ደረጃ ያሉ ተደራራቢ ምክንያቶችን ይመለከታል።"
-    }
-  },
-
-  {
-    question: "Older persons are marginalized because they are considered as social assets.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Older persons may be marginalized when society mistakenly views them as social burdens rather than recognizing their knowledge, experience, and contributions as valuable social assets.",
-      amharic: "አዛውንቶች የሚገለሉት እንደ ማህበራዊ ሀብት ስለሚታዩ ሳይሆን፣ አንዳንድ ጊዜ እንደ ማህበራዊ ጫና ስለሚታዩ ነው።"
-    }
-  },
-
-  {
-    question: "The perception of craft workers as unreliable, lacking morality, respect and shame is a social form of marginalization.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 0,
-    explanation: {
-      english: "Labeling craft workers with negative stereotypes such as being unreliable or lacking morality and respect is a form of social and cultural marginalization.",
-      amharic: "የእጅ ባለሙያዎችን ታማኝነት፣ ሞራል እና አክብሮት የሌላቸው ብሎ መፈረጅ የማህበራዊና ባህላዊ ማግለል መገለጫ ነው።"
-    }
-  },
-
-  {
-    question: "Marginalization refers to the state of being exposed to many disadvantageous.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 0,
-    explanation: {
-      english: "Marginalization pushes individuals or groups toward the edge of society and may expose them to multiple disadvantages, including limited resources, power, opportunities, and social participation.",
-      amharic: "ማግለል ግለሰቦችን ወይም ቡድኖችን ወደ ማህበረሰቡ ጠርዝ በመገፋት ለተለያዩ ጉዳቶች፣ ለሀብት እጥረት፣ ለእድል ማጣትና ለዝቅተኛ ማህበራዊ ተሳትፎ መጋለጥን ያመለክታል።"
-    }
-  },
-
-  {
-    question: "Which regions are the two regions in Ethiopia which have relatively low Female Genital Cutting (FGC) prevalence?",
-    options: [
-      "Somali and Afar",
-      "Amhara and Harari",
-      "Tigray and Gambella",
-      "SNNP and Oromia"
-    ],
-    answer: 2,
-    explanation: {
-      english: "According to the curriculum data, Tigray and Gambella have relatively low prevalence of Female Genital Cutting (FGC) compared with several other regions.",
-      amharic: "በትምህርቱ የተጠቀሰው መረጃ መሰረት ትግራይ እና ጋምቤላ ከሌሎች ክልሎች ጋር ሲነጻጸሩ የሴት ልጅ ግርዛት (FGC) ስርጭት በአንጻራዊነት ዝቅተኛ ነው።"
-    }
-  },
-
-  {
-    question: "Marginalization occurs when",
-    options: [
-      "Some people have lower status than others.",
-      "The labor market cannot or will not employ some people.",
-      "The fruits of some people's labor are transferred to benefit others.",
-      "Some groups suffer from systematic, unpunished violence."
-    ],
-    answer: 0,
-    explanation: {
-      english: "Marginalization occurs when certain individuals or groups are pushed into a lower social position or treated as less important than others.",
-      amharic: "ማግለል የሚከሰተው የተወሰኑ ሰዎች ከሌሎች ዝቅተኛ ማህበራዊ ደረጃ ወይም ቦታ ሲሰጣቸው ነው።"
-    }
-  },
-
-  {
-    question: "The state of being exposed to physical or emotional injuries is referred to as",
-    options: [
-      "Marginalization",
-      "Vulnerability",
-      "Minority groups",
-      "None"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Vulnerability is the condition of being exposed to the risk of physical or emotional harm, abuse, injury, or neglect.",
-      amharic: "ተጋላጭነት (Vulnerability) ማለት ለአካላዊ ወይም ለስሜታዊ ጉዳት፣ ለጥቃት፣ ለመጎዳት ወይም ለቸልተኝነት የመጋለጥ ሁኔታ ነው።"
-    }
-  },
-
-  {
-    question: "Which of the following is correct about marginalization?",
-    options: [
-      "Across the world, age is a criterion for marginalization but not gender.",
-      "The forms and nature of marginalization is not similar across the world.",
-      "Based on their age, both boys and girls have faced double marginalization by adults.",
-      "Ageism is the manifestation of gender based marginalization.",
-      "None"
-    ],
-    answer: 1,
-    explanation: {
-      english: "The forms and nature of marginalization vary across geographical locations, cultures, and societies. Therefore, marginalization is not identical everywhere in the world.",
-      amharic: "የማግለል ዓይነቶችና ባህሪያት በቦታ፣ በባህልና በማህበረሰብ ሁኔታ ይለያያሉ። ስለዚህ በዓለም ሁሉ አንድ ዓይነት አይደሉም።"
-    }
-  },
-
-  {
-    question: "Which one of the following is not among the marginalized social groups?",
-    options: [
-      "Children and women",
-      "Religious minorities",
-      "Older people and people with disabilities",
-      "Craft workers",
-      "None"
-    ],
-    answer: 4,
-    explanation: {
-      english: "All the listed groups can be considered marginalized social groups in relevant social and cultural contexts. Therefore, none of the listed groups is excluded from the category.",
-      amharic: "የተዘረዘሩት ህጻናት፣ ሴቶች፣ የሃይማኖት አነስተኛ ቡድኖች፣ አዛውንቶች፣ አካል ጉዳተኞች እና የእጅ ባለሙያዎች ሁሉ በተወሰኑ ማህበራዊና ባህላዊ ሁኔታዎች የተገለሉ ቡድኖች ሊሆኑ ይችላሉ። ስለዚህ None ትክክለኛው መልስ ነው።"
-    }
-  },
-
-  {
-    question: "Which one is not among factors which encourage female genital cutting practice?",
-    options: [
-      "A belief that uncircumcised girls would be disobedient.",
-      "A belief that uncircumcised girls are promiscuous.",
-      "Considering it as a means of preserving girls' virginity.",
-      "Considering it as a process of purifying girls.",
-      "All",
-      "None"
-    ],
-    answer: 5,
-    explanation: {
-      english: "All the listed beliefs have historically been cited as cultural or social factors that may encourage the practice of Female Genital Cutting. Therefore, none of the listed options is excluded.",
-      amharic: "የተዘረዘሩት እምነቶች ሁሉ በታሪክና በባህላዊ ሁኔታዎች የሴት ልጅ ግርዛትን እንዲቀጥል ከሚያደርጉ ምክንያቶች ጋር ይያያዛሉ። ስለዚህ None ትክክለኛው መልስ ነው።"
-    }
-  },
-
-  {
-    question: "Marginalized occupational groups like craft workers lead a life of paradoxes because",
-    options: [
-      "They have important contributions to their communities by producing things like hand-woven clothes and farm tools.",
-      "They are considered impure and excluded from social interactions and ownership of economic resources.",
-      "Craft workers have different names in different parts of the country.",
-      "They do important things for their community, but they are marginalized by the same community.",
-      "All"
-    ],
-    answer: 4,
-    explanation: {
-      english: "Craft workers may make important contributions to their communities while simultaneously experiencing social exclusion, negative stereotypes, and economic restrictions. They may also have different names in different parts of the country. Therefore, all the statements apply.",
-      amharic: "የእጅ ባለሙያዎች ለማህበረሰባቸው ጠቃሚ ምርቶችን ቢያመርቱም በማህበራዊ መገለል፣ በአሉታዊ አመለካከትና በኢኮኖሚ ገደቦች ሊገጥማቸው ይችላል። በተጨማሪም በተለያዩ አካባቢዎች የተለያዩ ስሞች ሊኖራቸው ይችላል። ስለዚህ All ትክክለኛው መልስ ነው።"
-    }
-  },
-
-  {
-    question: "In which type of marginalization are craft workers considered unreliable, lacking morality, respect, and shame?",
-    options: [
-      "Social marginalization",
-      "Cultural marginalization",
-      "Economic marginalization",
-      "Spatial marginalization",
-      "All"
-    ],
-    answer: 1,
-    explanation: {
-      english: "Judging craft workers through negative cultural stereotypes about morality, respect, and shame is an example of cultural marginalization.",
-      amharic: "የእጅ ባለሙያዎችን ሞራል፣ አክብሮትና ሥነ-ምግባር የሌላቸው ብሎ በባህላዊ እምነትና አመለካከት መፈረጅ የባህላዊ ማግለል (Cultural marginalization) ዓይነት ነው።"
-    }
-  },
-
-  {
-    question: "Mr. Kebede who lives in X town and is a craft worker is allowed only to sell his products at the outskirts of markets. Which type of marginalization is committed against Mr. Kebede?",
-    options: [
-      "Social marginalization",
-      "Cultural marginalization",
-      "Economic marginalization",
-      "Spatial marginalization",
-      "None"
-    ],
-    answer: 3,
-    explanation: {
-      english: "Restricting a person to a particular physical location, such as the outskirts of a marketplace, is an example of spatial marginalization.",
-      amharic: "አቶ ከበደ ምርቶቻቸውን በገበያ ማዕከል ውስጥ እንዳይሸጡ ተደርገው በገበያው ዳርቻ ብቻ እንዲሸጡ መገደባቸው የቦታ ማግለል (Spatial marginalization) ነው።"
-    }
-  },
-
-  {
-    question: "Which is not included as the role of older persons in the context of Ethiopian culture?",
-    options: [
-      "Mentoring younger people.",
-      "Aggravating ethnic conflict.",
-      "Restoring peace.",
-      "Resolving disputes.",
-      "None"
-    ],
-    answer: 1,
-    explanation: {
-      english: "In many Ethiopian cultural contexts, older persons are traditionally respected for mentoring younger people, restoring peace, and resolving disputes. Aggravating ethnic conflict is not considered a positive traditional role.",
-      amharic: "በብዙ የኢትዮጵያ ባህላዊ ሁኔታዎች አዛውንቶች ወጣቶችን በመምከር፣ ሰላምን በማስመለስና ግጭቶችን በመፍታት ይታወቃሉ። የብሔር ግጭትን ማባባስ ግን የተጠበቀ አዎንታዊ ሚና አይደለም።"
-    }
-  },
-
-  {
-    question: "In which form of marginalization are craft workers forced to settle on the outskirts of villages?",
-    options: [
-      "Economic marginalization",
-      "Cultural marginalization",
-      "Spatial marginalization",
-      "Social marginalization",
-      "All are correct"
-    ],
-    answer: 2,
-    explanation: {
-      english: "Forcing craft workers to live away from the center of villages and settle on the outskirts is an example of spatial marginalization because it involves exclusion based on physical location.",
-      amharic: "የእጅ ባለሙያዎች በማህበረሰቡ መሃል እንዳይኖሩ ተደርገው በመንደር ዳርቻ እንዲሰፍሩ መገደዳቸው የቦታ ማግለል (Spatial marginalization) ነው።"
-    },  {
     question: "Which one is a false statement about gender-based marginalization?",
     options: [
       "The manifestations of gender inequality vary from culture to culture.",
@@ -10601,10 +10313,8 @@ const quizData = {
       "None"
     ],
     answer: 1,
-    explanation: {
-      english: "Statement B is false because gender-based marginalization generally involves unfair or unequal distribution of wealth, income, and job opportunities, rather than fair distribution.",
-      amharic: "አማራጭ B ሀሰተኛ ነው። ሴቶች ብዙ ጊዜ ሀብትን፣ ገቢን እና የሥራ እድሎችን በእኩልነት ሳያገኙ ሊገለሉ ይችላሉ። ስለዚህ 'fair distribution' የሚለው ቃል አማራጩን ሀሰተኛ ያደርገዋል።"
-    }
+    englishExplanation: "Statement B is false because gender-based marginalization generally involves unfair or unequal distribution of wealth, income, and job opportunities, rather than fair distribution.",
+    amharicExplanation: "አማራጭ B ሀሰተኛ ነው። ሴቶች ብዙ ጊዜ ሀብትን፣ ገቢን እና የሥራ እድሎችን በእኩልነት ሳያገኙ ሊገለሉ ይችላሉ። ስለዚህ 'fair distribution' የሚለው ቃል አማራጩን ሀሰተኛ ያደርገዋል።"
   },
 
   {
@@ -10617,10 +10327,8 @@ const quizData = {
       "None"
     ],
     answer: 2,
-    explanation: {
-      english: "Statement C is wrong because anthropologists do not support cultural practices simply because they are traditional. Practices that violate human rights and the well-being of individuals or groups should not be endorsed.",
-      amharic: "አማራጭ C ስህተት ነው። አንትሮፖሎጂስቶች ባህላዊ ልማድ ስለሆነ ብቻ የሰዎችን መብትና ደህንነት የሚጥስ ተግባርን አይደግፉም።"
-    }
+    englishExplanation: "Statement C is wrong because anthropologists do not support cultural practices simply because they are traditional. Practices that violate human rights and the well-being of individuals or groups should not be endorsed.",
+    amharicExplanation: "አማራጭ C ስህተት ነው። አንትሮፖሎጂስቶች ባህላዊ ልማድ ስለሆነ ብቻ የሰዎችን መብትና ደህንነት የሚጥስ ተግባርን አይደግፉም።"
   },
 
   {
@@ -10633,10 +10341,8 @@ const quizData = {
       "None"
     ],
     answer: 3,
-    explanation: {
-      english: "Statement D is the exception. Minority groups do not necessarily lack cultural expression. They often have their own rich languages, traditions, beliefs, customs, and cultural identities.",
-      amharic: "አማራጭ D የማይመለከተው ነው። አነስተኛ ቡድኖች የባህል መግለጫ የሌላቸው ሳይሆኑ የራሳቸው ቋንቋ፣ ወግ፣ እምነት፣ ልማድና ማንነት ሊኖራቸው ይችላል።"
-    }
+    englishExplanation: "Statement D is the exception. Minority groups do not necessarily lack cultural expression. They often have their own rich languages, traditions, beliefs, customs, and cultural identities.",
+    amharicExplanation: "አማራጭ D የማይመለከተው ነው። አነስተኛ ቡድኖች የባህል መግለጫ የሌላቸው ሳይሆኑ የራሳቸው ቋንቋ፣ ወግ፣ እምነት፣ ልማድና ማንነት ሊኖራቸው ይችላል።"
   },
 
   {
@@ -10649,10 +10355,8 @@ const quizData = {
       "None"
     ],
     answer: 4,
-    explanation: {
-      english: "None is correct because no social group is completely immune from marginalization. Different groups may experience exclusion or discrimination depending on their social, cultural, economic, and political circumstances.",
-      amharic: "None ትክክለኛው መልስ ነው። በዓለም ላይ ከማግለል ሙሉ በሙሉ ነፃ የሆነ ማህበራዊ ቡድን የለም። እንደ ማህበራዊ፣ ባህላዊ፣ ኢኮኖሚያዊና ፖለቲካዊ ሁኔታዎች የተለያዩ ቡድኖች ሊገለሉ ይችላሉ።"
-    }
+    englishExplanation: "None is correct because no social group is completely immune from marginalization. Different groups may experience exclusion or discrimination depending on their social, cultural, economic, and political circumstances.",
+    amharicExplanation: "None ትክክለኛው መልስ ነው። በዓለም ላይ ከማግለል ሙሉ በሙሉ ነፃ የሆነ ማህበራዊ ቡድን የለም። እንደ ማህበራዊ፣ ባህላዊ፣ ኢኮኖሚያዊና ፖለቲካዊ ሁኔታዎች የተለያዩ ቡድኖች ሊገለሉ ይችላሉ።"
   },
 
   {
@@ -10665,10 +10369,8 @@ const quizData = {
       "None"
     ],
     answer: 1,
-    explanation: {
-      english: "Early marriage is an example of gender-based marginalization because it disproportionately affects girls and can limit their education, health, freedom, and future opportunities.",
-      amharic: "ያለ ዕድሜ ማግባት (Early marriage) የጾታ ላይ የተመሰረተ ማግለል ምሳሌ ነው። በተለይም ሴት ልጆችን በማጎዳት ትምህርታቸውን፣ ጤናቸውን፣ ነፃነታቸውንና የወደፊት እድላቸውን ሊገድብ ይችላል።"
-    }
+    englishExplanation: "Early marriage is an example of gender-based marginalization because it disproportionately affects girls and can limit their education, health, freedom, and future opportunities.",
+    amharicExplanation: "ያለ ዕድሜ ማግባት (Early marriage) የጾታ ላይ የተመሰረተ ማግለል ምሳሌ ነው። በተለይም ሴት ልጆችን በማጎዳት ትምህርታቸውን፣ ጤናቸውን፣ ነፃነታቸውንና የወደፊት እድላቸውን ሊገድብ ይችላል።"
   },
 
   {
@@ -10681,10 +10383,8 @@ const quizData = {
       "None"
     ],
     answer: 2,
-    explanation: {
-      english: "Mrs. X is discriminated against because of her occupation, specifically clay or pottery work. Therefore, this is occupation-based marginalization.",
-      amharic: "እማማ X የተገለሉት በሚሰሩት የሸክላ ሥራ ምክንያት ነው። ስለዚህ ይህ በሥራ መስክ ላይ የተመሰረተ ማግለል (Occupation-based marginalization) ነው።"
-    }
+    englishExplanation: "Mrs. X is discriminated against because of her occupation, specifically clay or pottery work. Therefore, this is occupation-based marginalization.",
+    amharicExplanation: "እማማ X የተገለሉት በሚሰሩት የሸክላ ሥራ ምክንያት ነው። ስለዚህ ይህ በሥራ መስክ ላይ የተመሰረተ ማግለል (Occupation-based marginalization) ነው።"
   },
 
   {
@@ -10697,10 +10397,8 @@ const quizData = {
       "None"
     ],
     answer: 3,
-    explanation: {
-      english: "Girls can experience double vulnerability because they may face disadvantages related to both their young age and their gender. These overlapping factors can expose them to risks such as early marriage and limited educational opportunities.",
-      amharic: "ሴት ልጆች ሁለትዮሽ ተጋላጭነት (Double vulnerability) ሊያጋጥማቸው ይችላል። ይህም በእድሜያቸው ህፃናት በመሆናቸውና በጾታቸው ሴቶች በመሆናቸው ሁለት ዓይነት ተጋላጭነት ሊደርስባቸው ስለሚችል ነው።"
-    }
+    englishExplanation: "Girls can experience double vulnerability because they may face disadvantages related to both their young age and their gender. These overlapping factors can expose them to risks such as early marriage and limited educational opportunities.",
+    amharicExplanation: "ሴት ልጆች ሁለትዮሽ ተጋላጭነት (Double vulnerability) ሊያጋጥማቸው ይችላል። ይህም በእድሜያቸው ህፃናት በመሆናቸውና በጾታቸው ሴቶች በመሆናቸው ሁለት ዓይነት ተጋላጭነት ሊደርስባቸው ስለሚችል ነው።"
   },
 
   {
@@ -10713,10 +10411,8 @@ const quizData = {
       "None"
     ],
     answer: 2,
-    explanation: {
-      english: "Reproductive organs are primary sexual characteristics because they are directly related to biological reproduction. Voice type, breasts, and hair distribution are generally considered secondary sexual characteristics.",
-      amharic: "የመራቢያ አካላት (Reproductive organs) ከመራባት ጋር በቀጥታ የተያያዙ ስለሆኑ የመጀመሪያ ደረጃ የጾታ ልዩነቶች ናቸው። የድምፅ ዓይነት፣ ጡቶችና የፀጉር ስርጭት በአጠቃላይ ሁለተኛ ደረጃ የጾታ ባህሪያት ናቸው።"
-    }
+    englishExplanation: "Reproductive organs are primary sexual characteristics because they are directly related to biological reproduction. Voice type, breasts, and hair distribution are generally considered secondary sexual characteristics.",
+    amharicExplanation: "የመራቢያ አካላት (Reproductive organs) ከመራባት ጋር በቀጥታ የተያያዙ ስለሆኑ የመጀመሪያ ደረጃ የጾታ ልዩነቶች ናቸው። የድምፅ ዓይነት፣ ጡቶችና የፀጉር ስርጭት በአጠቃላይ ሁለተኛ ደረጃ የጾታ ባህሪያት ናቸው።"
   },
 
   {
@@ -10730,10 +10426,8 @@ const quizData = {
       "None"
     ],
     answer: 1,
-    explanation: {
-      english: "Excluding a pottery artisan from community-based associations is a direct example of marginalization because the person is denied full participation because of occupational stigma.",
-      amharic: "የሸክላ ሥራ ሰሪን ከማህበረሰብ ማህበራት እንዲገለል ማድረግ የማግለል ግልጽ ምሳሌ ነው። ምክንያቱም በሚሰራው ሥራ ምክንያት ከማህበረሰቡ ሙሉ ተሳትፎ እየተከለከለ ስለሆነ ነው።"
-    }
+    englishExplanation: "Excluding a pottery artisan from community-based associations is a direct example of marginalization because the person is denied full participation because of occupational stigma.",
+    amharicExplanation: "የሸክላ ሥራ ሰሪን ከማህበረሰብ ማህበራት እንዲገለል ማድረግ የማግለል ግልጽ ምሳሌ ነው። ምክንያቱም በሚሰራው ሥራ ምክንያት ከማህበረሰቡ ሙሉ ተሳትፎ እየተከለከለ ስለሆነ ነው።"
   },
 
   {
@@ -10746,10 +10440,8 @@ const quizData = {
       "None"
     ],
     answer: 0,
-    explanation: {
-      english: "Statement A is NOT true. Being vulnerable does not mean that people are inherently weak or incapable of contributing to society. Vulnerability can result from social, economic, environmental, political, or other circumstances.",
-      amharic: "አማራጭ A እውነት አይደለም። ተጋላጭ መሆን ተፈጥሯዊ ደካማ ወይም ለማህበረሰብ አስተዋፅኦ ማድረግ የማይችል መሆን ማለት አይደለም። ተጋላጭነት ከማህበራዊ፣ ኢኮኖሚያዊ፣ አካባቢያዊ ወይም ፖለቲካዊ ሁኔታዎች ሊመጣ ይችላል።"
-    }
+    englishExplanation: "Statement A is NOT true. Being vulnerable does not mean that people are inherently weak or incapable of contributing to society. Vulnerability can result from social, economic, environmental, political, or other circumstances.",
+    amharicExplanation: "አማራጭ A እውነት አይደለም። ተጋላጭ መሆን ተፈጥሯዊ ደካማ ወይም ለማህበረሰብ አስተዋፅኦ ማድረግ የማይችል መሆን ማለት አይደለም። ተጋላጭነት ከማህበራዊ፣ ኢኮኖሚያዊ፣ አካባቢያዊ ወይም ፖለቲካዊ ሁኔታዎች ሊመጣ ይችላል።"
   },
 
   {
@@ -10762,10 +10454,8 @@ const quizData = {
       "None"
     ],
     answer: 2,
-    explanation: {
-      english: "Gender-based marginalization is closely connected to social and cultural expectations, roles, values, and norms associated with gender. It is not simply a matter of being a numerical minority.",
-      amharic: "በጾታ ላይ የተመሰረተ ማግለል ከማህበራዊና ባህላዊ ደንቦች፣ እሴቶች፣ ሚናዎችና ከጾታ ጋር ከተያያዙ አመለካከቶች ጋር በጥልቀት የተያያዘ ነው።"
-    }
+    englishExplanation: "Gender-based marginalization is closely connected to social and cultural expectations, roles, values, and norms associated with gender. It is not simply a matter of being a numerical minority.",
+    amharicExplanation: "በጾታ ላይ የተመሰረተ ማግለል ከማህበራዊና ባህላዊ ደንቦች፣ እሴቶች፣ ሚናዎችና ከጾታ ጋር ከተያያዙ አመለካከቶች ጋር በጥልቀት የተያያዘ ነው።"
   },
 
   {
@@ -10778,10 +10468,8 @@ const quizData = {
       "All"
     ],
     answer: 2,
-    explanation: {
-      english: "Occupational groups such as tanners and potters may experience marginalization because of long-standing perceptions of impurity and negative stereotypes imposed by dominant groups.",
-      amharic: "እንደ ሸክላ ሰሪዎችና ቆዳ ፋቂዎች ያሉ የሥራ ቡድኖች እንዲገለሉ ከሚያደርጉ ምክንያቶች አንዱ በማህበረሰቡ ውስጥ የተፈጠሩ የርኩሰት አመለካከቶችና አሉታዊ ስቴሪዮታይፖች ናቸው።"
-    }
+    englishExplanation: "Occupational groups such as tanners and potters may experience marginalization because of long-standing perceptions of impurity and negative stereotypes imposed by dominant groups.",
+    amharicExplanation: "እንደ ሸክላ ሰሪዎችና ቆዳ ፋቂዎች ያሉ የሥራ ቡድኖች እንዲገለሉ ከሚያደርጉ ምክንያቶች አንዱ በማህበረሰቡ ውስጥ የተፈጠሩ የርኩሰት አመለካከቶችና አሉታዊ ስቴሪዮታይፖች ናቸው።"
   },
 
   {
@@ -10794,10 +10482,8 @@ const quizData = {
       "All"
     ],
     answer: 1,
-    explanation: {
-      english: "Age-based vulnerability refers to specific risks faced by children because of their developmental stage and by older persons because of aging and possible physical decline.",
-      amharic: "በእድሜ ላይ የተመሰረተ ተጋላጭነት ህፃናት በእድገት ደረጃቸው እና አዛውንቶች በእድሜ መግፋትና በአካል መዳከም ምክንያት ለተለያዩ ልዩ ጉዳቶች መጋለጣቸውን ያመለክታል።"
-    }
+    englishExplanation: "Age-based vulnerability refers to specific risks faced by children because of their developmental stage and by older persons because of aging and possible physical decline.",
+    amharicExplanation: "በእድሜ ላይ የተመሰረተ ተጋላጭነት ህፃናት በእድገት ደረጃቸው እና አዛውንቶች በእድሜ መግፋትና በአካል መዳከም ምክንያት ለተለያዩ ልዩ ጉዳቶች መጋለጣቸውን ያመለክታል።"
   },
 
   {
@@ -10810,10 +10496,8 @@ const quizData = {
       "None"
     ],
     answer: 1,
-    explanation: {
-      english: "Both Jewish people and Muslim Rohingyas have experienced historical persecution, discrimination, and marginalization connected to aspects of their religious or ethnic identities.",
-      amharic: "የአይሁድ ህዝቦች እና ሙስሊም ሮሂንጋዎች በሃይማኖታዊና ብሔረሰባዊ ማንነታቸው ጋር በተያያዙ ምክንያቶች በታሪክ ውስጥ መድልዎና ማግለል የተጋለጡ ቡድኖች ናቸው።"
-    }
+    englishExplanation: "Both Jewish people and Muslim Rohingyas have experienced historical persecution, discrimination, and marginalization connected to aspects of their religious or ethnic identities.",
+    amharicExplanation: "የአይሁድ ህዝቦች እና ሙስሊም ሮሂንጋዎች በሃይማኖታዊና ብሔረሰባዊ ማንነታቸው ጋር በተያያዙ ምክንያቶች በታሪክ ውስጥ መድልዎና ማግለል የተጋለጡ ቡድኖች ናቸው።"
   },
 
   {
@@ -10826,10 +10510,8 @@ const quizData = {
       "None"
     ],
     answer: 1,
-    explanation: {
-      english: "Cultural relativism encourages anthropologists to understand cultural practices within their own cultural contexts. However, understanding a practice does not mean automatically supporting practices that seriously violate human rights or well-being.",
-      amharic: "የባህል አንጻራዊነት (Cultural relativism) የባህል ልማዶችን በራሳቸው የባህል አውድ ውስጥ ለመረዳት ይረዳል። ነገር ግን አንድን ልማድ መረዳት የሰዎችን መብትና ደህንነት የሚጥስ ተግባርን መደገፍ ማለት አይደለም።"
-    }
+    englishExplanation: "Cultural relativism encourages anthropologists to understand cultural practices within their own cultural contexts. However, understanding a practice does not mean automatically supporting practices that seriously violate human rights or well-being.",
+    amharicExplanation: "የባህል አንጻራዊነት (Cultural relativism) የባህል ልማዶችን በራሳቸው የባህል አውድ ውስጥ ለመረዳት ይረዳል። ነገር ግን አንድን ልማድ መረዳት የሰዎችን መብትና ደህንነት የሚጥስ ተግባርን መደገፍ ማለት አይደለም።"
   },
 
   {
@@ -10842,10 +10524,258 @@ const quizData = {
       "None"
     ],
     answer: 1,
-    explanation: {
-      english: "Inclusiveness in anthropology combines cultural understanding with respect for human dignity and rights. It recognizes cultural diversity while supporting the protection of marginalized and vulnerable groups.",
-      amharic: "በአንትሮፖሎጂ ውስጥ አካታችነት (Inclusiveness) የባህል ልዩነቶችን ከመረዳት ጋር የሰዎችን ክብርና መብት ማክበርን ያካትታል። በተለይም የተገለሉና ተጋላጭ ቡድኖች መብታቸው እንዲጠበቅ ያበረታታል።"
-    }],
+    englishExplanation: "Inclusiveness in anthropology combines cultural understanding with respect for human dignity and rights. It recognizes cultural diversity while supporting the protection of marginalized and vulnerable groups.",
+    amharicExplanation: "በአንትሮፖሎጂ ውስጥ አካታችነት (Inclusiveness) የባህል ልዩነቶችን ከመረዳት ጋር የሰዎችን ክብርና መብት ማክበርን ያካትታል። በተለይም የተገለሉና ተጋላጭ ቡድኖች መብታቸው እንዲጠበቅ ያበረታታል።"
+  },  {
+    question: "There are marginalized social groups in every society and culture, including developed countries like the UK.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Marginalization is a widespread social phenomenon that can exist in all societies, regardless of their level of economic development. Even developed countries such as the UK may have minority groups, women, disadvantaged populations, and other groups that experience social exclusion.",
+    amharicExplanation: "ማግለል (Marginalization) በኢኮኖሚ ከዳበሩ አገሮች እንደ እንግሊዝ (UK) ጨምሮ በሁሉም ማህበረሰቦችና ባህሎች ውስጥ ሊኖር የሚችል ሰፊ ማህበራዊ ክስተት ነው። እንደ አናሳ ቡድኖች፣ ሴቶችና ሌሎች ተጎጂ ቡድኖች ማግለል ሊያጋጥማቸው ይችላል።"
+  },
+
+  {
+    question: "Marginalization happens only to those people who are physically or mentally unable to work.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Marginalization is not limited to people who are physically or mentally unable to work. It can affect individuals and groups because of gender, ethnicity, religion, age, economic status, occupation, disability, or other social factors.",
+    amharicExplanation: "ማግለል በአካል ወይም በአእምሮ መስራት በማይችሉ ሰዎች ላይ ብቻ የሚደርስ አይደለም። በጾታ፣ በብሔር፣ በሃይማኖት፣ በእድሜ፣ በኢኮኖሚ ደረጃ፣ በሥራ መስክ፣ በአካል ጉዳትና በሌሎች ማህበራዊ ምክንያቶች ማግለል ሊከሰት ይችላል።"
+  },
+
+  {
+    question: "Gender-based marginalization is a global problem, which involves inclusion of girls and women from a wide range of opportunities and social services.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Gender-based marginalization is a global problem, but it involves the exclusion rather than the inclusion of girls and women from opportunities, resources, decision-making, and social services.",
+    amharicExplanation: "በጾታ ላይ የተመሰረተ ማግለል ዓለም አቀፍ ችግር ነው። ነገር ግን 'inclusion' ሳይሆን 'exclusion' ማለትም ሴቶችንና ልጃገረዶችን ከእድሎች፣ ከሀብት፣ ከውሳኔ ሰጪነትና ከማህበራዊ አገልግሎቶች መገለልን ያመለክታል።"
+  },
+
+  {
+    question: "Marginalization is a treatment of people as a part and decision makers in a society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Marginalization does not mean treating people as full members and decision makers of society. Instead, it involves pushing individuals or groups to the edges of society and limiting their participation, opportunities, and decision-making power.",
+    amharicExplanation: "ማግለል ሰዎችን እንደ ሙሉ የማህበረሰቡ አባላትና ውሳኔ ሰጪዎች መቁጠር አይደለም። በተቃራኒው ግለሰቦችን ወይም ቡድኖችን ወደ ማህበረሰቡ ጠርዝ በመግፋት ተሳትፎአቸውን፣ እድላቸውንና የውሳኔ ሰጪነታቸውን መገደብ ነው።"
+  },
+
+  {
+    question: "Although most forms of marginalization contradict human rights, there are some forms of marginalization which do not contradict human rights.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Marginalization generally conflicts with human rights principles because it involves exclusion, discrimination, inequality, or denial of equal dignity and opportunities.",
+    amharicExplanation: "ማግለል በአጠቃላይ ከሰብአዊ መብት መርሆዎች ጋር ይጋጫል። ምክንያቱም ማግለል መድልዎን፣ እኩልነትን ማሳጣትን፣ ማግለልንና እኩል ክብር እና እድል መከልከልን ያካትታል።"
+  },
+
+  {
+    question: "Old people are exposed to double marginalization and discrimination.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Older people can experience age-based marginalization and discrimination, but they are not automatically exposed to double marginalization. Double marginalization usually results when two or more forms of disadvantage overlap, such as age and gender or age and disability.",
+    amharicExplanation: "አዛውንቶች በእድሜ ምክንያት ማግለልና መድልዎ ሊደርስባቸው ይችላል፤ ነገር ግን ሁሉም አዛውንቶች በራሳቸው ድርብ ማግለል ይደርስባቸዋል ማለት አይቻልም። ድርብ ማግለል ብዙ ጊዜ እንደ እድሜና ጾታ ወይም እድሜና አካል ጉዳት ያሉ ተደራራቢ ምክንያቶች ሲኖሩ ይከሰታል።"
+  },
+
+  {
+    question: "Older persons are marginalized because they are considered as social assets.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Older persons may be marginalized when they are viewed as social burdens rather than as valuable social assets. Their knowledge, experience, wisdom, and contributions can be important to society.",
+    amharicExplanation: "አዛውንቶች እንደ ማህበራዊ ሀብት ስለሚታዩ አይገለሉም። አንዳንድ ጊዜ እንደ ማህበራዊ ጫና ስለሚታዩ ሊገለሉ ይችላሉ። እውቀታቸው፣ ልምዳቸውና ጥበባቸው ለማህበረሰቡ ጠቃሚ ሀብት ናቸው።"
+  },
+
+  {
+    question: "The perception of craft workers as unreliable, lacking morality, respect, and shame is a social form of marginalization.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Labeling craft workers with negative stereotypes, such as being unreliable or lacking morality and respect, is a form of social and cultural marginalization because it creates negative attitudes and social exclusion.",
+    amharicExplanation: "የእጅ ባለሙያዎችን ታማኝነት፣ ሞራል፣ አክብሮትና ሥነ-ምግባር የሌላቸው ብሎ መፈረጅ የማህበራዊና ባህላዊ ማግለል መገለጫ ነው። እንዲህ ያሉ አሉታዊ አመለካከቶች ማህበራዊ መገለልን ያስከትላሉ።"
+  },
+
+  {
+    question: "Marginalization refers to the state of being exposed to many disadvantages.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Marginalization can expose individuals or groups to multiple disadvantages by limiting their access to resources, opportunities, social participation, power, and decision-making.",
+    amharicExplanation: "ማግለል ግለሰቦችን ወይም ቡድኖችን ለተለያዩ ጉዳቶች እንዲጋለጡ ሊያደርግ ይችላል። እነዚህም የሀብት፣ የእድል፣ የማህበራዊ ተሳትፎ፣ የስልጣንና የውሳኔ ሰጪነት እጥረትን ሊያካትቱ ይችላሉ።"
+  },
+
+  {
+    question: "Which regions are the two regions in Ethiopia that have relatively low Female Genital Cutting (FGC) prevalence?",
+    options: [
+      "Somali and Afar",
+      "Amhara and Harari",
+      "Tigray and Gambella",
+      "SNNP and Oromia"
+    ],
+    answer: 2,
+    englishExplanation: "According to the curriculum data, Tigray and Gambella have relatively low prevalence of Female Genital Cutting (FGC) compared with several other regions.",
+    amharicExplanation: "በትምህርቱ የተጠቀሰው መረጃ መሰረት ትግራይ እና ጋምቤላ ከብዙ ሌሎች ክልሎች ጋር ሲነጻጸሩ የሴት ልጅ ግርዛት (FGC) ስርጭት በአንጻራዊነት ዝቅተኛ የሆነባቸው ክልሎች ናቸው።"
+  },
+
+  {
+    question: "Marginalization occurs when",
+    options: [
+      "Some people have lower status than others.",
+      "The labor market cannot or will not employ some people.",
+      "The fruits of some people's labor are transferred to benefit others.",
+      "Some groups suffer from systematic, unpunished violence."
+    ],
+    answer: 0,
+    englishExplanation: "Marginalization occurs when certain individuals or groups are placed in a lower social position and treated as less important or less worthy of participation than others.",
+    amharicExplanation: "ማግለል የሚከሰተው የተወሰኑ ሰዎች ከሌሎች ዝቅተኛ ማህበራዊ ደረጃ ሲሰጣቸውና እንደ ሌሎች እኩል አስፈላጊ አባላት ሳይቆጠሩ ሲቀሩ ነው።"
+  },
+
+  {
+    question: "The state of being exposed to physical or emotional injuries is referred to as",
+    options: [
+      "Marginalization",
+      "Vulnerability",
+      "Minority groups",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Vulnerability is the condition of being exposed to the risk of physical or emotional harm, injury, abuse, exploitation, or neglect.",
+    amharicExplanation: "ተጋላጭነት (Vulnerability) ማለት ለአካላዊ ወይም ለስሜታዊ ጉዳት፣ ለጥቃት፣ ለመጎዳት፣ ለብዝበዛ ወይም ለቸልተኝነት የመጋለጥ ሁኔታ ነው።"
+  },
+
+  {
+    question: "Which of the following is correct about marginalization?",
+    options: [
+      "Across the world, age is a criterion for marginalization but not gender.",
+      "The forms and nature of marginalization are not similar across the world.",
+      "Based on their age, both boys and girls have faced double marginalization by adults.",
+      "Ageism is the manifestation of gender-based marginalization.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "The forms and nature of marginalization vary across geographical locations, cultures, and societies. Therefore, marginalization does not have exactly the same form everywhere in the world.",
+    amharicExplanation: "የማግለል ዓይነቶችና ባህሪያት እንደ ቦታ፣ ባህልና ማህበረሰብ ሁኔታ ይለያያሉ። ስለዚህ በዓለም ሁሉ በተመሳሳይ መልኩ አይከሰቱም።"
+  },
+
+  {
+    question: "Which one of the following is not among the marginalized social groups?",
+    options: [
+      "Children and women",
+      "Religious minorities",
+      "Older people and people with disabilities",
+      "Craft workers",
+      "None"
+    ],
+    answer: 4,
+    englishExplanation: "All of the listed groups can experience marginalization in particular social and cultural contexts. Therefore, none of the listed groups is excluded from the category of potentially marginalized groups.",
+    amharicExplanation: "የተዘረዘሩት ህፃናትና ሴቶች፣ የሃይማኖት አናሳ ቡድኖች፣ አዛውንቶችና አካል ጉዳተኞች እንዲሁም የእጅ ባለሙያዎች በተወሰኑ ማህበራዊና ባህላዊ ሁኔታዎች ማግለል ሊደርስባቸው ይችላል። ስለዚህ None ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "Which one is not among the factors that encourage Female Genital Cutting practice?",
+    options: [
+      "A belief that uncircumcised girls would be disobedient.",
+      "A belief that uncircumcised girls are promiscuous.",
+      "Considering it as a means of preserving girls' virginity.",
+      "Considering it as a process of purifying girls.",
+      "All",
+      "None"
+    ],
+    answer: 5,
+    englishExplanation: "All of the listed beliefs have historically been identified as social or cultural beliefs that may encourage Female Genital Cutting. Therefore, none of the listed statements is excluded from the factors given in the question.",
+    amharicExplanation: "የተዘረዘሩት እምነቶች ሁሉ በተለያዩ ባህላዊና ማህበራዊ አውዶች የሴት ልጅ ግርዛትን እንዲቀጥል ከሚያደርጉ እምነቶች ጋር ተያይዘው ተጠቅሰዋል። ስለዚህ None ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "Marginalized occupational groups like craft workers lead a life of paradoxes because",
+    options: [
+      "They have important contributions to their communities by producing things like hand-woven clothes and farm tools.",
+      "They are considered impure and excluded from social interactions and ownership of economic resources.",
+      "Craft workers have different names in different parts of the country.",
+      "They do important things for their community, but they are marginalized by the same community.",
+      "All"
+    ],
+    answer: 4,
+    englishExplanation: "Craft workers may make important contributions by producing useful goods, while at the same time experiencing negative stereotypes, social exclusion, and restrictions on economic resources. They may also have different names in different parts of the country. Therefore, all the statements apply.",
+    amharicExplanation: "የእጅ ባለሙያዎች እንደ በእጅ የሚሰሩ ልብሶችንና የእርሻ መሳሪያዎችን በማምረት ለማህበረሰቡ ጠቃሚ አስተዋፅኦ ቢያደርጉም፣ እንደ ርኩስ ተቆጥረው ከማህበራዊ ግንኙነትና ከኢኮኖሚ ሀብት ሊገለሉ ይችላሉ። በተለያዩ አካባቢዎችም የተለያዩ ስሞች ሊኖራቸው ስለሚችል All ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "In which type of marginalization are craft workers considered unreliable, lacking morality, respect, and shame?",
+    options: [
+      "Social marginalization",
+      "Cultural marginalization",
+      "Economic marginalization",
+      "Spatial marginalization",
+      "All"
+    ],
+    answer: 1,
+    englishExplanation: "Considering craft workers unreliable or lacking morality, respect, and shame because of cultural beliefs and stereotypes is an example of cultural marginalization.",
+    amharicExplanation: "የእጅ ባለሙያዎችን ታማኝነት፣ ሞራል፣ አክብሮትና ሥነ-ምግባር የሌላቸው ብሎ በባህላዊ እምነትና አሉታዊ አመለካከት መፈረጅ የባህላዊ ማግለል (Cultural marginalization) ምሳሌ ነው።"
+  },
+
+  {
+    question: "Mr. Kebede, who lives in X town and is a craft worker, is allowed only to sell his products at the outskirts of markets. Which type of marginalization is committed against Mr. Kebede?",
+    options: [
+      "Social marginalization",
+      "Cultural marginalization",
+      "Economic marginalization",
+      "Spatial marginalization",
+      "None"
+    ],
+    answer: 3,
+    englishExplanation: "Restricting Mr. Kebede to selling his products only on the outskirts of markets is an example of spatial marginalization because he is being excluded or restricted based on physical location.",
+    amharicExplanation: "አቶ ከበደ ምርቶቻቸውን በገበያ ማዕከል ውስጥ እንዳይሸጡ ተደርገው በገበያው ዳርቻ ብቻ እንዲሸጡ መገደባቸው የቦታ ማግለል (Spatial marginalization) ነው።"
+  },
+
+  {
+    question: "Which is not included as the role of older persons in the context of Ethiopian culture?",
+    options: [
+      "Mentoring younger people.",
+      "Aggravating ethnic conflict.",
+      "Restoring peace.",
+      "Resolving disputes.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "In many Ethiopian cultural contexts, older persons are traditionally respected for mentoring younger people, restoring peace, and resolving disputes. Aggravating ethnic conflict is not considered a positive traditional role.",
+    amharicExplanation: "በብዙ የኢትዮጵያ ባህላዊ ሁኔታዎች አዛውንቶች ወጣቶችን በመምከር፣ ሰላምን በማስመለስና ግጭቶችን በመፍታት የተከበረ ሚና አላቸው። የብሔር ግጭትን ማባባስ ግን የተለመደ አዎንታዊ ሚና አይደለም።"
+  },
+
+  {
+    question: "In which form of marginalization are craft workers forced to settle on the outskirts of villages?",
+    options: [
+      "Economic marginalization",
+      "Cultural marginalization",
+      "Spatial marginalization",
+      "Social marginalization",
+      "All are correct"
+    ],
+    answer: 2,
+    englishExplanation: "Forcing craft workers to settle on the outskirts of villages is an example of spatial marginalization because it restricts where they can live based on their occupational or social identity.",
+    amharicExplanation: "የእጅ ባለሙያዎች በማህበረሰቡ መሃል እንዳይኖሩ ተደርገው በመንደር ዳርቻ እንዲሰፍሩ መገደዳቸው የቦታ ማግለል (Spatial marginalization) ነው።"
+  }],
         5: [{
     question: "For social anthropology, the concept of ethnicity is not time and space dependent.",
     options: [
