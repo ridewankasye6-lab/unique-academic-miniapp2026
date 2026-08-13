@@ -8586,7 +8586,882 @@ const quizData = {
     amharicExplanation:
       "የዛሬው ዘመን አንትሮፖሎጂስቶች አዲስ መረጃ ለማግኘት በቀጥታ የመስክ ጥናት፣ participant observation፣ ቃለ-መጠይቅ እና ከሚያጠኑት ሰዎች ጋር ቀጥተኛ ግንኙነትን ይጠቀማሉ።"
   }],
-        2: [],
+        2: [{
+  question: "Artifacts are material remains made and used by the past people and cannot be removed from the site and taken to the laboratory for further investigation.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Artifacts are portable objects made, modified, or used by humans, such as stone tools, pottery, and coins. They can be removed from an archaeological site and taken to a laboratory for further analysis. Immovable remains are called features.",
+  amharicExplanation:
+    "ሐሰት። አርቲፋክቶች (Artifacts) በሰዎች የተሠሩ፣ የተሻሻሉ ወይም ጥቅም ላይ የዋሉ ተንቀሳቃሽ ቁሳቁሶች ናቸው። ለምሳሌ የድንጋይ መሣሪያዎች፣ የሸክላ ዕቃዎች እና ሳንቲሞች ናቸው። ከጥናት ቦታው ተወስደው ለተጨማሪ ምርመራ ወደ ላቦራቶሪ ሊወሰዱ ይችላሉ። ከቦታው በቀላሉ ሊነሱ የማይችሉ ቅሪቶች ግን Features ይባላሉ።"
+},
+
+{
+  question: "While ethnography focuses on the comparative study of cultures, ethnology aimed to describe specific community's ways of life.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. The statement reverses the meanings of ethnography and ethnology. Ethnography describes the way of life of a specific community through detailed fieldwork, while ethnology compares different cultures and societies.",
+  amharicExplanation:
+    "ሐሰት። በጥያቄው ውስጥ የEthnography እና Ethnology ትርጉም ተቀላቅሎ ተገልብጧል። Ethnography የአንድን የተወሰነ ማህበረሰብ የአኗኗር ዘይቤ በመስክ ጥናት በዝርዝር ይገልጻል። Ethnology ደግሞ የተለያዩ ባህሎችንና ማህበረሰቦችን ያነጻጽራል።"
+},
+
+{
+  question: "Archaeology is the specialty of anthropology that studies the human past by analyzing material remains left behind by earlier societies.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "True. Archaeology is a branch of anthropology that studies past human societies by examining material remains such as artifacts, tools, buildings, pottery, and other archaeological evidence.",
+  amharicExplanation:
+    "እውነት። አርኪዮሎጂ (Archaeology) የሰው ልጆችን ያለፈ ሕይወትና ማህበረሰብ ቀደም ሲል የተዉትን ቁሳዊ ቅሪቶች በመመርመር የሚያጠና የአንትሮፖሎጂ ዘርፍ ነው። እነዚህም አርቲፋክቶች፣ መሣሪያዎች፣ የህንፃ ቅሪቶች እና የሸክላ ዕቃዎች ሊሆኑ ይችላሉ።"
+},
+
+{
+  question: "Linguistic Anthropology gives special attention to the study of written languages and tries to understand language variation in their structures, units, and grammatical formations.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Linguistic anthropology studies language in relation to culture and society. It examines language use, variation, communication, cultural practices, and the relationship between language and social life rather than focusing only on written languages and grammar.",
+  amharicExplanation:
+    "ሐሰት። የቋንቋ አንትሮፖሎጂ (Linguistic Anthropology) ቋንቋን ከባህልና ከማህበራዊ ሕይወት ጋር በማያያዝ ያጠናል። በጽሑፍ ቋንቋ ላይ ብቻ አይተኩርም፤ የቋንቋ አጠቃቀምን፣ ልዩነትን፣ ግንኙነትን፣ ባህላዊ አጠቃቀምን እና ቋንቋ ከማህበራዊ ሕይወት ጋር ያለውን ግንኙነት ያጠናል።"
+},
+
+{
+  question: "The recent past societies with no written document are the concern of prehistoric archaeology.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Prehistoric archaeology mainly studies societies that existed before the development or use of writing. The absence of written documents alone does not automatically make a society prehistoric, especially when dealing with relatively recent societies.",
+  amharicExplanation:
+    "ሐሰት። Prehistoric Archaeology በዋናነት ጽሑፍ ከመፈጠሩ ወይም ከመስፋፋቱ በፊት የነበሩ ማህበረሰቦችን ያጠናል። አንድ የቅርብ ጊዜ ማህበረሰብ የጽሑፍ ሰነድ ስለሌለው ብቻ Prehistoric ተብሎ አይቆጠርም።"
+},
+
+{
+  question: "Anthropological knowledge is very important to fight against cultural variation between different social groups.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Anthropology does not aim to fight against or eliminate cultural variation. Instead, it aims to understand, explain, and respect cultural differences and encourages cultural relativism.",
+  amharicExplanation:
+    "ሐሰት። አንትሮፖሎጂ በተለያዩ ማህበራዊ ቡድኖች መካከል ያለውን የባህል ልዩነት ለመዋጋት ወይም ለማጥፋት አይፈልግም። ይልቁንም የባህል ልዩነቶችን ለመረዳት፣ ለማብራራት እና ለማክበር ይረዳል።"
+},
+
+{
+  question: "The main focus of archaeological anthropology is to analyze material remains rather than nonmaterial cultures.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "True. Archaeological anthropology mainly examines material remains left by past societies, including artifacts, features, ecofacts, buildings, tools, and other physical evidence.",
+  amharicExplanation:
+    "እውነት። የአርኪዮሎጂ አንትሮፖሎጂ ዋና ትኩረቱ ያለፉ ማህበረሰቦች የተዉትን ቁሳዊ ቅሪቶች ማጥናት ነው። እነዚህም Artifacts፣ Features፣ Ecofacts፣ የህንፃ ቅሪቶች እና ሌሎች አካላዊ ማስረጃዎችን ያካትታሉ።"
+},
+
+{
+  question: "In which aspect of sociocultural anthropology does the anthropologist observe, talk to, and live with the people he or she is studying?",
+  options: [
+    "Ethnology",
+    "Ethnography",
+    "Both A and B",
+    "None",
+    "Etymology"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Ethnography. Ethnography involves detailed fieldwork in which an anthropologist observes, communicates with, and often lives with the people being studied in order to understand their culture and way of life.",
+  amharicExplanation:
+    "Ethnography ነው። ኤትኖግራፊ አንትሮፖሎጂስቱ ከሚያጠናው ማህበረሰብ ጋር በመኖር፣ በመነጋገር እና የዕለት ተዕለት ሕይወታቸውን በመመልከት ባህላቸውንና አኗኗራቸውን በጥልቀት የሚያጠናበት የመስክ ጥናት ነው።"
+},
+
+{
+  question: "Among the aspects of non-material culture, one is the rules that determine how people ought to behave under certain circumstances.",
+  options: [
+    "Values",
+    "Beliefs",
+    "Norms",
+    "None"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Norms. Norms are socially accepted rules and expectations that guide how people should behave in particular situations.",
+  amharicExplanation:
+    "Norms ናቸው። ኖርምስ ሰዎች በተወሰኑ ሁኔታዎች እንዴት መሆንና መመላለስ እንዳለባቸው የሚመሩ የማህበረሰብ ደንቦችና የባህርይ መመሪያዎች ናቸው።"
+},
+
+{
+  question: "One of the following is true about Archaeological Anthropology:",
+  options: [
+    "Features are similar to artifacts and they can be readily carried away",
+    "Features are similar to artifacts but they cannot be readily carried away",
+    "The prehistoric period of study is a period after the invention of writing",
+    "All of the above"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Features are similar to artifacts because both are associated with human activity, but features cannot be readily removed from their archaeological context. Examples include hearths, house floors, storage pits, and foundations.",
+  amharicExplanation:
+    "ትክክለኛው መልስ Features are similar to artifacts but they cannot be readily carried away ነው። Features እንደ Artifacts ከሰው ልጅ እንቅስቃሴ ጋር የተያያዙ ቢሆኑም ከቦታቸው በቀላሉ ሊነሱና ሊወሰዱ አይችሉም። ለምሳሌ ምድጃ፣ የቤት መሠረት እና የማከማቻ ጉድጓድ ናቸው።"
+},
+
+{
+  question: "A dialectical difference of the Amharic language spoken in Gojjam and Wollo is studied by:",
+  options: [
+    "Ethno-linguistics",
+    "Historical linguistics",
+    "Structural linguistics",
+    "Socio-linguistics"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Socio-linguistics. Sociolinguistics studies how language varies among different social groups, regions, and social contexts. Regional differences in Amharic, such as those associated with Gojjam and Wollo, can therefore be studied through sociolinguistics.",
+  amharicExplanation:
+    "Socio-linguistics ነው። ሶሺዮ-ሊንጉስቲክስ ቋንቋ በተለያዩ ማህበራዊ ቡድኖች፣ ክልሎች እና ሁኔታዎች መካከል እንዴት እንደሚለያይ ያጠናል። ስለዚህ በጎጃምና በወሎ የሚነገረው የአማርኛ የንግግር ልዩነት በሶሺዮ-ሊንጉስቲክስ ሊጠና ይችላል።"
+},
+
+{
+  question: "Which one is not true about the focus areas of Linguistic Anthropology?",
+  options: [
+    "Studying language as a cultural resource",
+    "Studying language variation",
+    "Studying the evolution of languages",
+    "Studying language as a cultural practice",
+    "None of the above"
+  ],
+  answer: 4,
+  englishExplanation:
+    "None of the above. All the listed areas can be studied within linguistic anthropology. These include language as a cultural resource, linguistic variation, language change and evolution, and language as a cultural practice.",
+  amharicExplanation:
+    "None of the above ነው። በጥያቄው የተዘረዘሩት ሁሉ የLinguistic Anthropology የጥናት መስኮች ሊሆኑ ይችላሉ። እነዚህም ቋንቋን እንደ ባህላዊ ሀብት ማጥናት፣ የቋንቋ ልዩነትን ማጥናት፣ የቋንቋ ለውጥንና ዝግመተ ለውጥን ማጥናት እና ቋንቋን እንደ ባህላዊ ተግባር ማጥናት ናቸው።"
+},
+
+{
+  question: "Soil, animal bones, and plant remains are categorized under:",
+  options: [
+    "Artifacts",
+    "Features",
+    "Ecofacts",
+    "None",
+    "All"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Ecofacts. Ecofacts are natural remains that provide information about past environments and human activities. Examples include animal bones, plant remains, seeds, pollen, and soil.",
+  amharicExplanation:
+    "Ecofacts ናቸው። ኢኮ-ፋክቶች በሰዎች ያልተሠሩ ነገር ግን ስለ ያለፈው አካባቢና የሰው ልጅ እንቅስቃሴ መረጃ የሚሰጡ የተፈጥሮ ቅሪቶች ናቸው። የእንስሳት አጥንት፣ የተክል ቅሪት፣ ዘር፣ የአበባ ብናኝ እና አፈር ምሳሌዎች ናቸው።"
+},
+
+{
+  question: "One of the following is not true about Physical Anthropology:",
+  options: [
+    "It is essentially concerned with human evolution and genetics",
+    "It is essentially concerned with paleoanthropology and primatology",
+    "It is essentially concerned with the biological aspects of human beings",
+    "None of the above"
+  ],
+  answer: 3,
+  englishExplanation:
+    "None of the above. Physical or biological anthropology studies the biological aspects of humans, including human evolution, genetics, paleoanthropology, primatology, and biological variation.",
+  amharicExplanation:
+    "None of the above ነው። Physical Anthropology ወይም Biological Anthropology የሰውን ልጅ ባዮሎጂያዊ ገጽታ ያጠናል። የሰው ልጅ ዝግመተ ለውጥ፣ ጄኔቲክስ፣ Paleoanthropology፣ Primatology እና የሰው ልጅ ባዮሎጂያዊ ልዩነት የጥናቱ ክፍሎች ናቸው።"
+},
+
+{
+  question: "Among the sub-specialties of Biological Anthropology, which one studies how and why the physical traits of contemporary human populations vary throughout the world?",
+  options: [
+    "Forensic Anthropology",
+    "Human Genetics/Population Genetics",
+    "Paleoanthropology",
+    "Primatology",
+    "Human Ecology"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Human Genetics/Population Genetics. Population genetics studies genetic variation within and among human populations and helps explain patterns of biological variation in contemporary populations.",
+  amharicExplanation:
+    "Human Genetics/Population Genetics ነው። የሕዝብ ጄኔቲክስ በዘመናዊ የሰው ሕዝቦች መካከል ያለውን የጄኔቲክ ልዩነት ያጠናል። ይህም በተለያዩ የሰው ሕዝቦች መካከል የሚታዩ ባዮሎጂያዊ ልዩነቶችን ለመረዳት ይረዳል።"
+},
+
+{
+  question: "Among the following sub-specialties of Linguistic Anthropology, which one deals with the investigation of linguistic variation within a given language, such as dialects and accents?",
+  options: [
+    "Descriptive/Structural Linguistics",
+    "Ethno-linguistics/Cultural Linguistics",
+    "Socio-linguistics",
+    "Historical Linguistics"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Socio-linguistics. Sociolinguistics examines how language varies according to region, social group, age, class, gender, and other social factors. Dialects and accents are important examples of linguistic variation.",
+  amharicExplanation:
+    "Socio-linguistics ነው። ሶሺዮ-ሊንጉስቲክስ ቋንቋ እንደ ክልል፣ ማህበራዊ ቡድን፣ ዕድሜ፣ የማህበራዊ ደረጃ እና ሌሎች ማህበራዊ ሁኔታዎች እንዴት እንደሚለያይ ያጠናል። ቀበሌኛዎችና የአነጋገር ልዩነቶች የዚህ ጥናት ጠቃሚ ምሳሌዎች ናቸው።"
+},
+
+{
+  question: "Biological anthropologists do not investigate the _________.",
+  options: [
+    "Connection between disease patterns in contemporary Quebec and historical disease patterns among settlers in New France",
+    "Identification of human remains to assist in law enforcement",
+    "Identification of human remains to assist in human rights cases",
+    "Differences in culturally assigned gender roles"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Differences in culturally assigned gender roles. Biological anthropology focuses mainly on biological, genetic, evolutionary, and physical aspects of humans. Culturally assigned gender roles are primarily studied within sociocultural anthropology.",
+  amharicExplanation:
+    "Differences in culturally assigned gender roles ነው። Biological Anthropology በዋናነት የሰውን ባዮሎጂያዊ፣ ጄኔቲካዊ፣ አካላዊ እና ዝግመተ ለውጣዊ ገጽታዎች ያጠናል። በባህል የተመደቡ የጾታ ሚናዎች ግን በዋናነት በSociocultural Anthropology ይጠናሉ።"
+},
+
+{
+  question: "Ethnography refers to a _________.",
+  options: [
+    "History of anthropology as a discipline",
+    "Comparison of the customary social practices of two or more identifiable groups of people",
+    "Description of the customary social behaviours of an identifiable group of people",
+    "Detailed discussion of the methodology used in field research"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Description of the customary social behaviours of an identifiable group of people. Ethnography provides a detailed description of a specific community's culture, customs, social behavior, and way of life, usually based on fieldwork.",
+  amharicExplanation:
+    "Description of the customary social behaviours of an identifiable group of people ነው። Ethnography የተወሰነ ማህበረሰብን ባህል፣ ልማድ፣ ማህበራዊ ባህሪ እና የአኗኗር ዘይቤ በመስክ ጥናት ላይ ተመስርቶ በዝርዝር የሚገልጽ ጥናት ነው።"
+},
+
+{
+  question: "Ethnology is a _________.",
+  options: [
+    "Comparison of the customary social practices of two or more identifiable groups of people",
+    "Description of the customary social behaviours of an identifiable group of people",
+    "History of anthropology as a discipline",
+    "Detailed discussion of the methodology used in field research"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Comparison of the customary social practices of two or more identifiable groups of people. Ethnology compares different cultures and societies to identify similarities, differences, and broader cultural patterns.",
+  amharicExplanation:
+    "Comparison of the customary social practices of two or more identifiable groups of people ነው። Ethnology ሁለት ወይም ከዚያ በላይ የሆኑ ማህበረሰቦችን ባህል፣ ልማድና ማህበራዊ ተግባራት በማነጻጸር ተመሳሳይነትና ልዩነቶችን የሚያጠና ነው።"
+},
+
+{
+  question: "Which branch of linguistic anthropology concerns itself with dialectical differences among Amharic language speakers?",
+  options: [
+    "Socio-linguistic",
+    "Structural Linguistic",
+    "Historical Linguistic",
+    "Ethno-linguistic"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Socio-linguistic. Sociolinguistics studies language variation among speakers, including regional and social dialect differences. Therefore, dialectical differences among Amharic speakers are studied through sociolinguistics.",
+  amharicExplanation:
+    "Socio-linguistic ነው። ሶሺዮ-ሊንጉስቲክስ ቋንቋ በተለያዩ ተናጋሪዎች፣ ክልሎችና ማህበራዊ ቡድኖች መካከል ያለውን የቋንቋ ልዩነት ያጠናል። ስለዚህ በአማርኛ ተናጋሪዎች መካከል ያሉ የቀበሌኛ ልዩነቶች በSocio-linguistics ይጠናሉ።"
+},{
+  question: "Which specialty of linguistic anthropology deals with sound and grammatical variations among different languages?",
+  options: [
+    "Cultural-linguistics",
+    "Socio-linguistics",
+    "Descriptive linguistics",
+    "Ethno-linguistics"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Descriptive linguistics studies the structure of languages, including sound systems, grammatical systems, and meaning. It describes how a particular language is organized and used.",
+  amharicExplanation:
+    "Descriptive Linguistics (ገላጭ የቋንቋ ጥናት) የቋንቋን መዋቅር ያጠናል። በተለይም የድምፅ ስርዓት፣ የሰዋስው ስርዓት እና የቃላት ትርጉም እንዴት እንደሚዋቀሩ ይመረምራል።"
+},
+
+{
+  question: "Through which specialization of archaeological anthropology can the past human cultures of Aksumite civilization be studied?",
+  options: [
+    "Ethno Archaeology",
+    "Historic Archaeology",
+    "Classical Archaeology",
+    "Prehistoric Archaeology"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Historic archaeology studies past societies that have written records or historical documents. The Aksumite civilization can be studied through historic archaeology because archaeological evidence can be combined with written and historical sources.",
+  amharicExplanation:
+    "Historic Archaeology (ታሪካዊ አርኪዮሎጂ) የጽሑፍ መዛግብት ወይም ታሪካዊ ሰነዶች ያላቸውን ያለፉ ማህበረሰቦች ያጠናል። የአክሱም ሥልጣኔ በአርኪዮሎጂያዊ ማስረጃዎችና በታሪካዊ ሰነዶች በመጣመር ሊጠና ይችላል።"
+},
+
+{
+  question: "Which one of the following clearly explains the cosmological view about the origin of human beings?",
+  options: [
+    "The theory argues that human beings are the cumulative effects of three independent facts",
+    "It associates the origin and development of human beings with the process of gradual change",
+    "The theory accounts for supernatural beings or forces as creators of human beings and the planet we live on",
+    "All"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The cosmological or creationist view explains the origin of human beings and the world in terms of supernatural beings, divine powers, or other supernatural forces rather than biological evolution alone.",
+  amharicExplanation:
+    "የኮስሞሎጂ ወይም የፍጥረት እይታ የሰው ልጅንና የምንኖርበትን ዓለም አመጣጥ ከሳይንሳዊ ዝግመተ ለውጥ ይልቅ ከፈጣሪ፣ ከመለኮታዊ ኃይል ወይም ከሌሎች ከተፈጥሮ በላይ ኃይሎች ጋር ያያይዛል።"
+},
+
+{
+  question: "The branch of anthropology that deals with the origin and development of languages is known as:",
+  options: [
+    "Descriptive Linguistics",
+    "Ethno-linguistics",
+    "Historical Linguistics",
+    "Archaeological Anthropology"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Historical linguistics studies the origin, development, and change of languages over time. It examines how languages evolve, diverge, and maintain historical relationships with one another.",
+  amharicExplanation:
+    "Historical Linguistics (ታሪካዊ የቋንቋ ጥናት) ቋንቋዎች ከጊዜ ወደ ጊዜ እንዴት እንደተለወጡ፣ እንደተለያዩ እና እርስ በእርሳቸው ያላቸውን ታሪካዊ ግንኙነት ያጠናል።"
+},
+
+{
+  question: "All are characteristic features of the human species except:",
+  options: [
+    "Relatively large teeth for primates of our size",
+    "Relatively large brains for primates of our size",
+    "Bipedalism (walking on two legs)",
+    "Use of language for communication"
+  ],
+  answer: 0,
+  englishExplanation:
+    "Relatively large teeth are not a characteristic feature of humans. Compared with primates of similar body size, humans generally have relatively small teeth, while large brains, bipedalism, and complex communication are important human characteristics.",
+  amharicExplanation:
+    "ትክክለኛው መልስ 'Relatively large teeth for primates of our size' ነው። የሰው ልጆች ከተመሳሳይ የሰውነት መጠን ካላቸው ፕሪሜቶች ጋር ሲነጻጸሩ በአንጻራዊነት ትናንሽ ጥርሶች አሏቸው። አንጻራዊ ትልቅ አእምሮ፣ በሁለት እግር መራመድ እና ቋንቋን ለግንኙነት መጠቀም ግን የሰው ልጅ ባህሪያት ናቸው።"
+},
+
+{
+  question: "The branch of anthropology that mainly emphasizes the influence of culture and environment on biological evolution and contemporary human variation is:",
+  options: [
+    "Archaeological Anthropology",
+    "Linguistic Anthropology",
+    "Physical Anthropology",
+    "Cultural Anthropology"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Physical or biological anthropology studies the biological aspects of human beings, including evolution, genetics, adaptation, and biological variation. It also examines how culture and environment interact with human biology.",
+  amharicExplanation:
+    "Physical Anthropology ወይም Biological Anthropology የሰው ልጅን ባዮሎጂያዊ ገጽታ ያጠናል። የሰው ልጅ ዝግመተ ለውጥ፣ ጄኔቲክስ፣ መላመድ እና የሰው ልጆች ባዮሎጂያዊ ልዩነት የጥናቱ ክፍሎች ናቸው። ባህልና አካባቢ ከሰው ባዮሎጂ ጋር ያላቸውንም ግንኙነት ይመረምራል።"
+},
+
+{
+  question: "Which of the following is not a goal of archaeological anthropology?",
+  options: [
+    "Reconstructing ancient ways of life",
+    "Sequencing past material cultures",
+    "Classifying ancient objects and artifacts",
+    "Examining contemporary ways of life"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Examining contemporary ways of life is not a primary goal of archaeological anthropology. Archaeological anthropology mainly reconstructs and interprets past human societies through their material remains.",
+  amharicExplanation:
+    "Examining contemporary ways of life የአርኪዮሎጂ አንትሮፖሎጂ ዋና ግብ አይደለም። አርኪዮሎጂ በዋናነት ያለፉ ማህበረሰቦችን የተዉትን ቁሳዊ ቅሪቶች በመመርመር የጥንት የአኗኗር ዘይቤን እና ባህልን ይገነባል።"
+},
+
+{
+  question: "Which of the following statements is different about cultural anthropology?",
+  options: [
+    "It anticipates differences in the nature of elements that constitute culture of different societies",
+    "It theorizes about similarities in the foundation of the culture of different societies",
+    "It recognizes certain facets of culture originating in some regions outweigh others in significance",
+    "It assumes the importance of symbols in permitting social interaction among members of a society"
+  ],
+  answer: 2,
+  englishExplanation:
+    "The statement that certain cultural facets from some regions outweigh others in significance is different because cultural anthropology generally seeks to understand cultures in their own contexts and avoids judging one culture as inherently more important or superior to another.",
+  amharicExplanation:
+    "አንድ የባህል ገጽታ ከሌላው በትርጉም ወይም በአስፈላጊነት ይበልጣል የሚለው ሐሳብ የተለየ ነው። የባህል አንትሮፖሎጂ ባህሎችን በራሳቸው አውድ ለመረዳት ይሞክራል፤ አንድን ባህል ከሌላው በተፈጥሮ የበለጠ ወይም የበታች አድርጎ አይመዘንም።"
+},
+
+{
+  question: "Which specialized area of physical anthropology studies human evolution through the analysis of human fossil remains?",
+  options: [
+    "Evolution",
+    "Anthropometry",
+    "Paleoanthropology",
+    "Primatology"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Paleoanthropology studies human biological evolution by examining fossil remains and other evidence of ancient human ancestors and relatives.",
+  amharicExplanation:
+    "Paleoanthropology (ፓሊዮአንትሮፖሎጂ) የጥንት የሰው ልጅ አባቶችንና ዘመዶችን ቅሪተ አካላት በመመርመር የሰውን ልጅ ባዮሎጂያዊ ዝግመተ ለውጥ የሚያጠና የPhysical Anthropology ዘርፍ ነው።"
+},
+
+{
+  question: "The following phrase does NOT accurately describe archaeology:",
+  options: [
+    "Archaeology is the cultural anthropology of the past",
+    "Archaeology is the discovery and systematic study of the remnants of the human past",
+    "Archaeology uses anthropological knowledge to solve practical cross-cultural problems",
+    "Archaeology studies the reconstruction of human prehistory and history through the analysis of material culture"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Archaeology uses material evidence to reconstruct and understand past human societies. Using anthropological knowledge to solve practical contemporary cross-cultural problems is more accurately associated with applied anthropology.",
+  amharicExplanation:
+    "አርኪዮሎጂ በቁሳዊ ማስረጃዎች የሰው ልጅን ያለፈ ታሪክ እና ማህበረሰብ እንደገና ለመገንባትና ለመረዳት ይጠቅማል። የአንትሮፖሎጂ እውቀትን በመጠቀም የዘመኑን ተግባራዊ እና የባህል ችግሮች መፍታት ግን በተለይ Applied Anthropology ጋር ይያያዛል።"
+},
+
+{
+  question: "The written description of a culture that an anthropologist produces from his or her research is called:",
+  options: [
+    "Ethnocentrism",
+    "Ethnicity",
+    "Ethnocide",
+    "Ethnography"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Ethnography is a detailed written description of the culture, customs, social practices, and way of life of a particular group, usually based on anthropological fieldwork.",
+  amharicExplanation:
+    "Ethnography (ኤትኖግራፊ) አንትሮፖሎጂስት በመስክ ጥናትና በምርምር ላይ ተመስርቶ ስለ አንድ የተወሰነ ማህበረሰብ ባህል፣ ልማድ፣ ማህበራዊ ተግባርና የአኗኗር ዘይቤ የሚያዘጋጀው ዝርዝር የጽሑፍ መግለጫ ነው።"
+},
+
+{
+  question: "The subfield in which anthropologists use material gathered from other anthropological specialties to propose solutions to practical cross-cultural problems is called:",
+  options: [
+    "Practical anthropology",
+    "Applied anthropology",
+    "Cultural resource management",
+    "Environmental anthropology"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Applied anthropology uses anthropological knowledge, theories, methods, and data to understand and help solve practical problems in contemporary societies.",
+  amharicExplanation:
+    "Applied Anthropology (አፕላይድ አንትሮፖሎጂ) ከተለያዩ የአንትሮፖሎጂ ዘርፎች የተገኘን እውቀትና መረጃ በመጠቀም በዘመናዊ ማህበረሰቦች ያሉ ተግባራዊ ችግሮችን ለመረዳትና ለመፍታት የሚያገለግል የአንትሮፖሎጂ ዘርፍ ነው።"
+},
+
+{
+  question: "The subdiscipline of anthropology that studies the diversity of human behavior in the past is:",
+  options: [
+    "Physical Anthropology",
+    "Archaeology",
+    "Linguistic Anthropology",
+    "Cultural Anthropology"
+  ],
+  answer: 1,
+  englishExplanation:
+    "Archaeology studies past human behavior and cultural diversity by examining material remains such as artifacts, features, structures, and environmental remains.",
+  amharicExplanation:
+    "Archaeology (አርኪዮሎጂ) ያለፉ ማህበረሰቦች የተዉትን አርቲፋክቶች፣ Features፣ የህንፃ ቅሪቶችና ሌሎች ቁሳዊ ማስረጃዎችን በመመርመር ያለፈውን የሰው ልጅ ባህሪና የባህል ልዩነት ያጠናል።"
+},
+
+{
+  question: "Which field of anthropology studies the symbols, laws, and values of a society?",
+  options: [
+    "Physical Anthropology",
+    "Linguistic Anthropology",
+    "Cultural Anthropology",
+    "Archaeology"
+  ],
+  answer: 2,
+  englishExplanation:
+    "Cultural anthropology studies the cultural systems of human societies, including values, beliefs, symbols, laws, customs, social practices, and ways of life.",
+  amharicExplanation:
+    "Cultural Anthropology (የባህል አንትሮፖሎጂ) የማህበረሰቦችን ባህላዊ ስርዓቶች ያጠናል። እሴቶችን፣ እምነቶችን፣ ምልክቶችን፣ ሕጎችን፣ ልማዶችን እና ማህበራዊ ተግባራትን ይመረምራል።"
+},
+
+{
+  question: "Which field of anthropology studies artifacts such as broken dishes and iron pots created by an earlier civilization?",
+  options: [
+    "Linguistic Anthropology",
+    "Cultural Anthropology",
+    "Physical Anthropology",
+    "Archaeology"
+  ],
+  answer: 3,
+  englishExplanation:
+    "Archaeology studies material remains left by earlier societies, including broken dishes, pottery, iron pots, tools, buildings, and other artifacts.",
+  amharicExplanation:
+    "Archaeology (አርኪዮሎጂ) ቀደምት ማህበረሰቦች የተዉትን ቁሳዊ ቅሪቶች ያጠናል። የተሰባበሩ የሸክላ ዕቃዎች፣ የብረት ድስቶች፣ መሣሪያዎች እና ሌሎች አርቲፋክቶች ምሳሌዎች ናቸው።"
+},
+
+{
+  question: "Ethnography is a research strategy that emerged in societies with greater cultural uniformity and less social differentiation.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Ethnography is a research strategy used to understand people's cultures and social lives through detailed fieldwork. It can be applied to societies with cultural diversity and complex social structures as well as smaller communities.",
+  amharicExplanation:
+    "ሐሰት። Ethnography የሰዎችን ባህልና ማህበራዊ ሕይወት በዝርዝር የመስክ ጥናት ለመረዳት የሚጠቀሙበት የምርምር ስልት ነው። በባህላዊ ልዩነትና በውስብስብ ማህበራዊ መዋቅር ባላቸው ማህበረሰቦችም ሆነ በትናንሽ ማህበረሰቦች ሊተገበር ይችላል።"
+},
+
+{
+  question: "Features provide archaeologists with important insight largely about how past humans and the environment interacted.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Features are non-portable remains associated with human activity, such as hearths, foundations, and storage pits. Ecofacts, such as animal bones, plant remains, soil, and pollen, provide important information about past environments and human-environment interactions.",
+  amharicExplanation:
+    "ሐሰት። Features ከሰው ልጅ እንቅስቃሴ ጋር የተያያዙ ከቦታቸው በቀላሉ ሊነሱ የማይችሉ ቅሪቶች ናቸው። ምድጃ፣ የቤት መሠረት እና የማከማቻ ጉድጓድ ምሳሌዎች ናቸው። ከሰው ልጅና ከአካባቢ መስተጋብር ጋር የተያያዙ ብዙ መረጃዎችን የሚሰጡት ግን Ecofacts እንደ የእንስሳት አጥንት፣ የተክል ቅሪት፣ አፈር እና የአበባ ብናኝ ናቸው።"
+},
+
+{
+  question: "Socio-linguistics is one of the sub-fields of anthropology that deals with the emergence of language in general and how specific languages have diverged over time.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. The description refers to historical linguistics. Historical linguistics studies the origin, development, and divergence of languages over time, while sociolinguistics studies the relationship between language and society and patterns of linguistic variation.",
+  amharicExplanation:
+    "ሐሰት። ይህ መግለጫ Historical Linguistics (ታሪካዊ የቋንቋ ጥናት) ን ይመለከታል። Historical Linguistics ቋንቋዎች ከጊዜ ወደ ጊዜ መነሻቸው፣ እድገታቸውና መለያየታቸውን ያጠናል። Sociolinguistics ግን ቋንቋና ማህበረሰብ ያላቸውን ግንኙነት እና የቋንቋ ልዩነቶችን ያጠናል።"
+},
+
+{
+  question: "For structural linguists, all languages across the globe have structural similarities which make it simple for us to learn them.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation:
+    "True. Structural linguistics emphasizes that human languages have systematic structures and patterns. Although languages differ greatly, they can be analyzed through organized systems of sounds, words, grammar, and meaning.",
+  amharicExplanation:
+    "እውነት። Structural Linguistics ሁሉም የሰው ቋንቋዎች ልዩነት ቢኖራቸውም የተደራጁ መዋቅሮችና ስርዓቶች እንዳሏቸው ያተኩራል። የድምፅ፣ የቃላት፣ የሰዋስውና የትርጉም ስርዓቶች በመመርመር ቋንቋዎች ሊተነተኑ ይችላሉ።"
+},
+
+{
+  question: "Cultural anthropology focuses exclusively on contemporary industrialized nations and ignores small-scale indigenous groups.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation:
+    "False. Cultural anthropology studies human cultures in all types of societies, including small-scale indigenous communities, rural communities, urban societies, and large industrialized nations.",
+  amharicExplanation:
+    "ሐሰት። Cultural Anthropology የሰው ልጅን ባህል በሁሉም ዓይነት ማህበረሰቦች ያጠናል። ትናንሽ የአገሬው ተወላጅ ማህበረሰቦችን፣ የገጠር ማህበረሰቦችን፣ የከተማ ማህበረሰቦችን እና ትልልቅ ኢንዱስትሪያል ማህበረሰቦችንም ያካትታል።"
+}, {
+    question: "Ethnography provides a shallow account of a particular community, society, or culture.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethnography provides a deep, comprehensive, and detailed account of a community through fieldwork, not a shallow one.",
+    amharicExplanation:
+      "ኢትኖግራፊ (Ethnography) ስለ አንድ ማህበረሰብ ጥልቀት ያለው፣ አጠቃላይ እና ዝርዝር መረጃ የሚሰጥ የጥናት ዘዴ ነው፤ የገጽታ ወይም የላይ ላይ መረጃ ብቻ አይሰጥም።"
+  },
+
+  {
+    question: "Which of the following is not true about ethnography?",
+    options: [
+      "It is the comparative study of contemporary cultures and societies.",
+      "It is the result of extensive field studies.",
+      "It is a research strategy that emerged in homogenous society.",
+      "It describes the features of a specific community, society, or culture in detail."
+    ],
+    answer: 0,
+    englishExplanation:
+      "Comparative study of contemporary cultures and societies is primarily associated with ethnology, not ethnography. Ethnography focuses on detailed description of a particular community based on fieldwork.",
+    amharicExplanation:
+      "የዘመናዊ ባህሎችንና ማህበረሰቦችን በንጽጽር ማጥናት በዋናነት የኢትኖሎጂ (Ethnology) ስራ ነው። ኢትኖግራፊ ግን በመስክ ምርምር በመመስረት የተወሰነ ማህበረሰብን በጥልቀት ይገልጻል።"
+  },
+
+  {
+    question: "Which of the following is the central aspect of non-material culture?",
+    options: [
+      "Norms",
+      "Beliefs",
+      "Values",
+      "Ritual and practice"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Values are central elements of non-material culture because they represent the basic ideals and standards that a society considers important and desirable.",
+    amharicExplanation:
+      "እሴቶች (Values) የማህበረሰቡ ዋና ዋና ሃሳቦች፣ እምነቶች እና ለአስፈላጊ ነገሮች የሚሰጠውን ዋጋ ስለሚወክሉ የቁሳዊ ያልሆነ ባህል ማዕከላዊ ክፍል ናቸው።"
+  },
+
+  {
+    question: "Among the following concepts, which one emphasizes the study of different ethnic groups?",
+    options: [
+      "Ethnology",
+      "Ethnography",
+      "Primatology",
+      "Ethnoarchaeology"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Ethnology is concerned with the comparative study of different ethnic groups, cultures, and societies.",
+    amharicExplanation:
+      "ኢትኖሎጂ (Ethnology) የተለያዩ ብሔሮችን፣ ባህሎችን እና ማህበረሰቦችን በንጽጽር በማጥናት ላይ የሚያተኩር የአንትሮፖሎጂ ዘርፍ ነው።"
+  },
+
+  {
+    question: "Even in the same language, the utilization of identical words may yield distinct interpretations. This statement deals with ________.",
+    options: [
+      "Historical linguistics",
+      "Socio-linguistics",
+      "Structural linguistics",
+      "Descriptive linguistics"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Sociolinguistics studies how language use and meaning can vary according to social factors, region, identity, and context, even within the same language.",
+    amharicExplanation:
+      "ሶሺዮ-ሊንጉስቲክስ (Socio-linguistics) በአንድ ቋንቋ ውስጥ እንኳን የቃላት አጠቃቀምና ትርጉም እንደ አካባቢ፣ ማህበራዊ ሁኔታ፣ ማንነት እና አውድ እንዴት ሊለያይ እንደሚችል ያጠናል።"
+  },
+
+  {
+    question: "From the following, which one does not develop a sense of superiority over others?",
+    options: [
+      "Racial purity",
+      "Cephalic index",
+      "Master race",
+      "None"
+    ],
+    answer: 3,
+    englishExplanation:
+      "All the listed concepts have historically been associated with attempts to classify or rank human groups and could be used to promote ideas of superiority. Therefore, None is the correct answer.",
+    amharicExplanation:
+      "የዘር ንጽህና (Racial purity)፣ የራስ ቅል መለኪያ (Cephalic index) እና የበላይ ዘር (Master race) በታሪክ የሰዎችን ቡድኖች ለመመደብ ወይም የአንድን ቡድን የበላይነት ለማሳየት ተጠቅመዋል። ስለዚህ መልሱ 'None' ነው።"
+  },
+
+  {
+    question: "Which of the following is not a topic with which present-day biological (physical) anthropologists are engaged?",
+    options: [
+      "Primate physiology, morphology, and behavior",
+      "Human variation",
+      "Interaction between biological and cultural factors in evolution",
+      "Establishing fixed categories of 'race'",
+      "Human origins"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Modern biological anthropology studies human origins, variation, evolution, and primates. It does not seek to establish fixed biological categories of race.",
+    amharicExplanation:
+      "ዘመናዊ ባዮሎጂካል አንትሮፖሎጂ የሰውን አመጣጥ፣ ዝግመተ ለውጥ፣ የሰው ልዩነት እና ፕሪሜቶችን ያጠናል። ቋሚ የ'ዘር' ምድቦችን ማቋቋም ግን የዘመናዊ ባዮሎጂካል አንትሮፖሎጂ ዓላማ አይደለም።"
+  },
+
+  {
+    question: "Among the subfields of anthropology, one doesn't base its study on comparison and evolution.",
+    options: [
+      "Linguistic anthropology",
+      "Physical anthropology",
+      "Archaeological anthropology",
+      "None"
+    ],
+    answer: 3,
+    englishExplanation:
+      "The major subfields of anthropology use comparison and evolutionary perspectives in different ways to understand human beings, cultures, languages, and societies. Therefore, None is the correct answer.",
+    amharicExplanation:
+      "ዋና ዋና የአንትሮፖሎጂ ዘርፎች ሰውን፣ ባህልን፣ ቋንቋን እና ማህበረሰብን ለመረዳት ንጽጽራዊ እና የዝግመተ ለውጥ እይታዎችን በተለያየ መልኩ ይጠቀማሉ። ስለዚህ 'None' ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "In a historical archaeological site, archaeological anthropologists found both soil stains that show fences that were used by humans and some natural remains related to past human activity such as plants and animal remains. Thus, in their analysis the researchers are likely using ______ and ______ respectively.",
+    options: [
+      "Artifacts and ecofacts",
+      "Features and artifacts",
+      "Features and ecofacts",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Soil stains showing former fences are features because they are non-portable human-made remains. Plant and animal remains are ecofacts because they are natural remains associated with past human activity.",
+    amharicExplanation:
+      "የቀድሞ አጥር የነበረበትን ቦታ የሚያሳዩ የአፈር ምልክቶች Features ይባላሉ፤ ምክንያቱም ከቦታው በቀላሉ ሊነሱ የማይችሉ የሰው ሰራሽ ቅሪቶች ናቸው። የእፅዋትና የእንስሳት ቅሪቶች ደግሞ Ecofacts ይባላሉ።"
+  },
+
+  {
+    question: "What are the three independent facts that contribute to the cumulative effects of evolution?",
+    options: [
+      "Reproduction, Mutation, Adaptation",
+      "Replication, Variation, Selection",
+      "Inheritance, Genetic Drift, Migration",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation:
+      "The three processes are replication, variation, and selection. Replication allows traits to be passed on, variation creates differences among individuals, and selection favors traits that improve survival or reproduction.",
+    amharicExplanation:
+      "የዝግመተ ለውጥ ሂደትን የሚያስኬዱት ሶስት ዋና ሂደቶች Replication (መባዛት)፣ Variation (ልዩነት) እና Selection (ምርጫ) ናቸው።"
+  },
+
+  {
+    question: "Among the subfields of anthropology, one bases its study on comparison and evolution.",
+    options: [
+      "Linguistic anthropology",
+      "Biological anthropology",
+      "Archaeological anthropology",
+      "All"
+    ],
+    answer: 3,
+    englishExplanation:
+      "All the listed subfields use comparison and evolutionary perspectives in studying different aspects of humanity.",
+    amharicExplanation:
+      "በአማራጮቹ የተጠቀሱት ሁሉም የአንትሮፖሎጂ ዘርፎች የሰውን ልጅ ለማጥናት ንጽጽርን እና የዝግመተ ለውጥ እይታን ይጠቀማሉ። ስለዚህ 'All' ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "Which one of the following is TRUE about the characteristics of humanity?",
+    options: [
+      "Bipedalism",
+      "Having relatively small teeth",
+      "Racial classification",
+      "Using modern language",
+      "All"
+    ],
+    answer: 4,
+    englishExplanation:
+      "Bipedalism, relatively small teeth, and language are recognized characteristics relevant to the biological and anthropological study of humanity. However, racial classification is not a biological characteristic of humanity. In this question, the intended answer is All based on the provided course material.",
+    amharicExplanation:
+      "በሁለት እግር መራመድ፣ አንጻራዊ ትናንሽ ጥርሶች መኖር እና ቋንቋን መጠቀም የሰው ልጅን በአንትሮፖሎጂ ለማጥናት ጠቃሚ ባህሪያት ናቸው። ማስታወሻ፦ 'Racial classification' በራሱ የባዮሎጂካል ባህሪ አይደለም፤ ነገር ግን በተሰጠው የኮርስ ጥያቄ መሰረት 'All' የታሰበው መልስ ነው።"
+  },
+
+  {
+    question: "Obbo Chala and Ato Hailu are linguistic anthropologists studying Amharic language and Afaan Oromoo. During their research, they analyzed accents and dialects noted in the languages. Thus, the specialization of these researchers is referred to as ________.",
+    options: [
+      "Historical linguistics",
+      "Structural linguistics",
+      "Socio-linguistics",
+      "Descriptive linguistics"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Sociolinguistics studies language variation associated with social groups, regions, communities, accents, and dialects.",
+    amharicExplanation:
+      "የአነጋገር ዘይቤዎችን (accents) እና ቀበሌኛዎችን (dialects) እንዲሁም የቋንቋ ልዩነቶችን ማጥናት የሶሺዮ-ሊንጉስቲክስ (Socio-linguistics) ዋና የጥናት መስክ ነው።"
+  },
+
+  {
+    question: "Which one is primarily related to prehistoric archaeology?",
+    options: [
+      "Artifacts",
+      "Ecofacts",
+      "Written documents",
+      "All except C"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Prehistoric archaeology studies societies from periods before written records. Therefore, artifacts and ecofacts are important sources, while written documents are generally not available for prehistoric periods.",
+    amharicExplanation:
+      "የቅድመ-ታሪክ አርኪዮሎጂ ጽሑፍ መዝገብ ከመኖሩ በፊት የነበሩ ማህበረሰቦችን ያጠናል። ስለዚህ Artifacts እና Ecofacts እንደ ዋና ማስረጃዎች ይጠቀማሉ፤ Written documents ግን በቅድመ-ታሪክ ዘመን አይገኙም።"
+  },
+
+  {
+    question: "In anthropological research, we use ______ to understand the diversity of human cultures, the dynamics of cultural change, and the interconnectedness of societies across time and space.",
+    options: [
+      "Ethnography",
+      "Ethnology",
+      "Quantitative study",
+      "All"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethnology is the comparative study of cultures and societies. It helps anthropologists understand cultural diversity, cultural change, and relationships among societies across time and space.",
+    amharicExplanation:
+      "ኢትኖሎጂ (Ethnology) የተለያዩ ባህሎችንና ማህበረሰቦችን በንጽጽር የሚያጠና ሲሆን የባህል ልዩነትን፣ የባህል ለውጥን እና በጊዜና በቦታ ያሉ ማህበረሰቦችን ግንኙነት ለመረዳት ይረዳል።"
+  },
+
+  {
+    question: "Professor Gebre Yntiso and Mr. Lalle Labuko have observed the practices of Hamer and Bena peoples of the Omo River Valley pertaining to 'Mingi'—the tradition of killing children if they start teething from the upper part, citing that such an infant will bring curse and catastrophe on the community. In the course of the study, Gebre and Lalle should employ/use ______.",
+    options: [
+      "Ethnology",
+      "Ethnography",
+      "Fieldwork",
+      "All",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Ethnography involves an in-depth study and detailed description of a particular community's cultural practices through fieldwork and direct observation.",
+    amharicExplanation:
+      "ኢትኖግራፊ (Ethnography) የአንድን የተወሰነ ማህበረሰብ ባህላዊ ልማዶች በቅርበት በመመልከት፣ በመስክ ምርምር እና በጥልቀት በመመርመር የሚያጠና ዘዴ ነው።"
+  },
+
+  {
+    question: "The non-portable material remains made and used by people of the past are known as _______.",
+    options: [
+      "Features",
+      "Artifacts",
+      "Ecofacts",
+      "All"
+    ],
+    answer: 0,
+    englishExplanation:
+      "Features are non-portable material remains made or modified by people in the past, such as house foundations, fireplaces, walls, and postholes.",
+    amharicExplanation:
+      "Features ማለት በቀድሞ ሰዎች የተሰሩ ወይም የተሻሻሉ ነገር ግን ከቦታቸው በቀላሉ ሊነሱ የማይችሉ ቅሪቶች ናቸው። ለምሳሌ የቤት መሠረት፣ ምድጃ፣ ግድግዳ እና የዓምድ ጉድጓድ ይገኙበታል።"
+  },
+
+  {
+    question: "Which of the following is a wrong combination of specialty and area of study?",
+    options: [
+      "Archaeology — Decoding/reconstructing past history",
+      "Physical anthropology — Human variation",
+      "Ethno-Archaeologists — Material culture of current societies",
+      "Historical linguistics — Relationship between language and culture"
+    ],
+    answer: 3,
+    englishExplanation:
+      "Historical linguistics primarily studies how languages change and develop over time. The relationship between language and culture is more broadly associated with linguistic anthropology and ethnolinguistics.",
+    amharicExplanation:
+      "Historical linguistics በዋናነት ቋንቋዎች በጊዜ ሂደት እንዴት እንደሚለወጡ፣ እንደሚዳብሩ እና እንደሚለያዩ ያጠናል። ቋንቋ እና ባህል መካከል ያለው ግንኙነት ግን በሰፊው የLinguistic Anthropology እና Ethnolinguistics ጥናት ነው።"
+  },
+
+  {
+    question: "______ refers to the process and gradual change in species over time.",
+    options: [
+      "Variation",
+      "Evolution",
+      "Selection",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation:
+      "Evolution refers to the process through which populations and species change over generations and across long periods of time.",
+    amharicExplanation:
+      "ዝግመተ ለውጥ (Evolution) ማለት የህይወት ፍጥረታት በትውልድ ላይ በትውልድ እየተለወጡ በጊዜ ሂደት የሚከናወን የለውጥ ሂደት ነው።"
+  },
+
+  {
+    question: "Which one of the following is not a non-material culture?",
+    options: [
+      "Knowledge",
+      "Beliefs and values",
+      "Jewelry",
+      "Morals and symbols"
+    ],
+    answer: 2,
+    englishExplanation:
+      "Jewelry is a physical and tangible object, so it belongs to material culture. Knowledge, beliefs, values, morals, and symbols are elements of non-material culture.",
+    amharicExplanation:
+      "ጌጣጌጥ (Jewelry) የሚዳሰስና አካላዊ ነገር ስለሆነ የMaterial Culture ክፍል ነው። እውቀት፣ እምነት፣ እሴቶች፣ ሞራል እና ምልክቶች ግን የNon-material Culture ክፍሎች ናቸው።"
+  }],
         3: [],
         4: [],
         5: []
