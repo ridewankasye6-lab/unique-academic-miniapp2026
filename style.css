@@ -419,3 +419,340 @@ margin-top:20px;
 .loginBtn:hover{
     transform:translateY(-2px);
 }
+
+/* =====================================================
+   UNIQUE ACADEMIC
+   SUBJECT PAGE TOP NAVIGATION
+===================================================== */
+
+.pageNav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding:
+        10px
+        max(14px, calc((100vw - 900px) / 2));
+
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom:
+        1px solid rgba(37, 99, 235, 0.15);
+
+    box-shadow:
+        0 4px 18px rgba(30, 58, 138, 0.12);
+
+}
+
+
+/* Center title */
+
+.pageTitle {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    min-width: 0;
+
+    flex: 1;
+
+}
+
+
+.pageTitleIcon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1e3a8a
+        );
+
+    color: white;
+
+    font-size: 20px;
+
+    box-shadow:
+        0 5px 14px rgba(37, 99, 235, 0.25);
+
+}
+
+
+.pageTitle h1 {
+
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #1e3a8a;
+
+    line-height: 1.2;
+
+}
+
+
+.pageTitle p {
+
+    margin: 3px 0 0;
+
+    font-size: 11px;
+
+    color: #6b7fa3;
+
+}
+
+
+/* Back button */
+
+.pageBackBtn {
+
+    border: none;
+
+    cursor: pointer;
+
+    min-height: 42px;
+
+    padding:
+        9px 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    border-radius: 13px;
+
+    background: #e8f0ff;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.pageBackBtn:hover {
+
+    background: #dbe8ff;
+
+}
+
+
+.pageBackBtn span:first-child {
+
+    font-size: 21px;
+
+}
+
+
+/* Home button */
+
+.pageHomeBtn {
+
+    border: none;
+
+    cursor: pointer;
+
+    min-height: 42px;
+
+    padding:
+        9px 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1e3a8a
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 14px rgba(37, 99, 235, 0.22);
+
+}
+
+
+.pageHomeBtn:hover {
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.30);
+
+}
+
+
+/* Main subject area */
+
+.subjectPage {
+
+    max-width: 900px;
+
+    margin:
+        25px auto;
+
+    padding:
+        0 20px 30px;
+
+}
+
+
+/* Subject intro */
+
+.subjectIntro {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.subjectIntro h1 {
+
+    color: #1e3a8a;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .pageNav {
+
+        min-height: 64px;
+
+        padding:
+            9px 10px;
+
+    }
+
+
+    .pageTitleIcon {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 18px;
+
+        border-radius: 11px;
+
+    }
+
+
+    .pageTitle h1 {
+
+        font-size: 14px;
+
+    }
+
+
+    .pageTitle p {
+
+        font-size: 10px;
+
+    }
+
+
+    .pageBackBtn,
+    .pageHomeBtn {
+
+        width: 42px;
+
+        height: 40px;
+
+        padding: 8px;
+
+    }
+
+
+    .pageBackText,
+    .pageHomeText {
+
+        display: none;
+
+    }
+
+
+    .subjectPage {
+
+        padding:
+            0 12px 25px;
+
+        margin-top: 18px;
+
+    }
+
+}
+
+
+/* Very small phones */
+
+@media (max-width: 380px) {
+
+    .pageTitleIcon {
+
+        display: none;
+
+    }
+
+}
