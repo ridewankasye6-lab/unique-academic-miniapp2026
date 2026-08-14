@@ -1,21 +1,53 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Economics - Chapter 1</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button id="pageBackBtn"
+            class="pageBackBtn"
+            type="button">
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">📖</span>
+
+        <div>
+            <h1>Economics</h1>
+            <p>Chapter 1</p>
+        </div>
+
+    </div>
+
+    <button id="pageHomeBtn"
+            class="pageHomeBtn"
+            type="button">
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📈 Economics</h1>
+    <h1>📈 Economics</h1>
 
-<h2>Chapter 1</h2>
-
-<p>
-<h2>📈 Economics</h2>
-
+    <h2>Chapter 1</h2>
 <p>​📙 Course - Introduction to Economics.</p>
 <p>​👨‍🏫 Chapter One - Basics of Economics.</p>
 <p>​👨‍🏫 ሰላም ውድ ? የ2018 የ unique academic ተማሪዎች በመሆን ወደ አልፋችን በመቀላቀላችሁ ደስታ ይሰማናል:: እናንተ በአዲሱ የመመዘኛ ሂደት የተመረጣችሁ የነገዋ ኢትዮጵያ ተስፋዎች ናችሁ ፤ እኔ ፍሬሽማን የኢኮኖሚክስ instructor ጎንቤ ነኝ !....መድረኩ ደግሞ A+ ነው ::</p>
@@ -652,25 +684,37 @@
 <p>📍 The main source of revenue to the government is the tax collected from households and firms.</p>
 <p>📚 ብዙ አይነት Circular Flow Diagram ቢኖሩም ሞጁላችሁ ላይ ያሉት ፤ 2 and 3 Sector ስለሆኑ እነሱን ከታች በፎቶ ተቀምጠዋል ይመልከቷቸው -| ፈተና ላይ ሊወጡ ስለሚችሉ በአቅማችሁ ለመረዳት ሞክሩ በጣም ቀላል እና ግልፅ ነው ::</p>
 <p>​👉 ይመቻችሁ ፤ ተወዳጆች ሆይ !</p>
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="economics.html">⬅ Back to Economics</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="economics.html">
-⬅ Back
-</a>
-
-<a href="economics-chapter2.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "economics.html";
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js">
+</script>
+
 </body>
+
 </html>
