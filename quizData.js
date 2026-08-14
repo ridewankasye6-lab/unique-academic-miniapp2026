@@ -16642,7 +16642,745 @@ const quizData = {
     englishExplanation: "Lapse refers to the loss or termination of citizenship resulting from a long and continuous period outside the state, where such loss is provided for by the applicable law.",
     amharicExplanation: "ከሀገር ውጭ ለረጅም እና ቀጣይነት ላለው ጊዜ በመቆየት ምክንያት የሚመጣ የዜግነት ማጣት ሂደት Lapse (ላፕስ) ይባላል።"
   },{     question: "Of the following, one is incorrect about the difference between state and government.",     options: [       "Government is permanent but the state is changeable.",       "The former is general while the latter is particular.",       "The state is a comprehensive term that can include a government but not vice versa.",       "Government is tangible but the state is an abstract entity."     ],     answer: 0,     englishExplanation: "This statement is incorrect because the state is relatively permanent, while governments are temporary and can change through elections, reforms, revolutions, or other political processes.",     amharicExplanation: "ይህ አባባል የተሳሳተ ነው። ምክንያቱም ስቴት (State) አንፃራዊ በሆነ መልኩ ዘላቂ ሲሆን፣ መንግሥት (Government) ግን በምርጫ፣ በለውጥ ወይም በሌሎች የፖለቲካ ሂደቶች ሊቀያየር ይችላል።"   },    {     question: "Among the following citizenship perspectives, one prioritizes achieving individuals' freedom because individuals are the basis for the existence of society.",     options: [       "Republican Perspective",       "Transnational Perspective",       "Communitarian Perspective",       "Liberal Perspective"     ],     answer: 3,     englishExplanation: "The liberal perspective gives primary importance to individual rights, freedoms, and liberties. It views individuals as the foundation of society and emphasizes protecting their freedom.",     amharicExplanation: "የሊበራል (Liberal) የዜግነት አመለካከት ለግለሰቦች መብት፣ ነፃነት እና ነፃ ፈቃድ ቅድሚያ ይሰጣል። ግለሰቦች የማኅበረሰብ መሠረት ናቸው ብሎ ያምናል።"   },    {     question: "Which of the following perspectives upholds the statement that 'the core function of the state is to provide a framework of peace, social order, and other essential services so that individuals enjoy their natural rights and liberties'?",     options: [       "Social Democracy",       "Liberalism",       "Communism",       "Developmentalism"     ],     answer: 1,     englishExplanation: "Liberalism argues that the state should maintain peace, law, and social order while protecting individuals so that they can freely exercise their natural rights and liberties.",     amharicExplanation: "ሊበራሊዝም (Liberalism) የስቴት ዋና ተግባር ሰላምን፣ ሕግን እና ማኅበራዊ ሥርዓትን በመጠበቅ ግለሰቦች የተፈጥሮ መብቶቻቸውንና ነፃነታቸውን በነፃነት እንዲጠቀሙ ማስቻል ነው ይላል።"   },    {     question: "Theory of state which provides that the state is the voluntary agreement between government and the governed is-",     options: [       "Pluralist",       "Patriarchal",       "Capitalist",       "Leviathan"     ],     answer: 0,     englishExplanation: "According to the theory presented in the question, the pluralist perspective views the state as arising through agreement and interaction between different groups and the governing authority.",     amharicExplanation: "በጥያቄው መሠረት የፕሉራሊስት (Pluralist) ንድፈ ሐሳብ ስቴት በመንግሥትና በሚተዳደሩት ሕዝቦች መካከል በሚደረግ ስምምነትና መስተጋብር የሚመሠረት እንደሆነ ያስረዳል።"   },    {     question: "Both the cow and its milk are commonly owned properties. In which type of state is this aligned with?",     options: [       "Developmental State",       "Minimal State",       "Religious State",       "Collectivized State"     ],     answer: 3,     englishExplanation: "A collectivized state emphasizes common or state ownership of economic resources and property. Therefore, both the cow and its milk being commonly owned is consistent with a collectivized state.",     amharicExplanation: "Collectivized State የጋራ ወይም የመንግሥት ባለቤትነትን የሚያጠናክር የስቴት ዓይነት ነው። ስለዚህ ላምና ወተቷ የጋራ ንብረት መሆናቸው ከCollectivized State ጋር ይስማማል።"   },    {     question: "Your cow, its milk, and even your life are controlled by the government. In which type of state does this occur?",     options: [       "Totalitarian State",       "Developmental State",       "Religious State",       "Collectivized State"     ],     answer: 0,     englishExplanation: "A totalitarian state seeks extensive control over both public and private life. Government authority can extend to property, economic activities, personal behavior, and many other areas of life.",     amharicExplanation: "ቶታሊቴሪያን (Totalitarian) ስቴት በሕዝብና በግል ሕይወት ላይ እጅግ ሰፊ ቁጥጥር የሚያደርግ ሥርዓት ነው። በዚህ ሥርዓት መንግሥት ንብረትን፣ ኢኮኖሚያዊ ተግባራትን፣ የግል ባህሪንና ሌሎችንም የሕይወት ክፍሎች በሰፊው ሊቆጣጠር ይችላል።"   },    {     question: "Both you and the government have cows to participate in the market. This aligns with which type of state?",     options: [       "Religious State",       "Minimal State",       "Developmental State",       "Collectivized State"     ],     answer: 2,     englishExplanation: "A developmental state actively participates in and guides economic activities alongside private actors. Its purpose is to promote economic growth, industrialization, and development.",     amharicExplanation: "Developmental State ማለት መንግሥት ከግል ባለሀብቶች ጋር በኢኮኖሚው ውስጥ በንቃት የሚሳተፍና የኢኮኖሚ ዕድገትን የሚመራ ስቴት ነው።"   },    {     question: "The government takes your cow for worship and ritual purposes. In which type of state would this happen?",     options: [       "Collectivized State",       "Minimal State",       "Religious State",       "Developmental State"     ],     answer: 2,     englishExplanation: "In a religious state, political authority and government policies are strongly influenced by religious beliefs, doctrines, and practices. Therefore, using property for religious rituals is associated with a religious state.",     amharicExplanation: "በሃይማኖታዊ (Religious) ስቴት ውስጥ የመንግሥት ፖሊሲዎችና ድርጊቶች በሃይማኖታዊ እምነቶች፣ አስተምህሮቶችና ሥርዓቶች በከፍተኛ ሁኔታ ይመራሉ።"   },    {     question: "You own the cow, and the government does not intervene in how you sell its milk. Which type of state does this describe?",     options: [       "Minimal State",       "Totalitarian State",       "Developmental State",       "Collectivized State"     ],     answer: 0,     englishExplanation: "A minimal state limits government intervention and gives individuals significant freedom to own property and conduct economic activities. Therefore, the situation describes a minimal state.",     amharicExplanation: "Minimal State ማለት የመንግሥት ጣልቃ ገብነት በጣም የተገደበ ሲሆን ግለሰቦች ንብረታቸውን በነፃነት የሚያስተዳድሩበት ስቴት ነው።"   },    {     question: "A person who was an Ethiopian national and who has acquired foreign nationality can be readmitted to Ethiopian nationality when he/she fulfills all requirements except one.",     options: [       "Returned and domiciled in Ethiopia",       "Renounced his foreign nationality",       "Applied to the Authority for re-admission",       "Made an outstanding contribution to Ethiopia"     ],     answer: 3,     englishExplanation: "Returning and establishing domicile in Ethiopia, renouncing foreign nationality, and applying for readmission are among the requirements described in the question. Making an outstanding contribution to Ethiopia is not a standard requirement for ordinary readmission.",     amharicExplanation: "በጥያቄው መሠረት የቀድሞ የኢትዮጵያ ዜጋ እንደገና ዜግነት ለማግኘት ወደ ኢትዮጵያ መመለስና መኖሪያ ማቋቋም፣ የውጭ ዜግነቱን መተው እና ለሥልጣኑ ማመልከት ከሚጠበቁ መስፈርቶች ውስጥ ናቸው። ለኢትዮጵያ ልዩ አስተዋጽኦ ማድረግ ግን የመደበኛ ዳግም ዜግነት መስፈርት አይደለም።"   },    {     question: "An Ethiopian ambassador living in the United States of America gave birth in the residence of the diplomats of Ethiopia. A child has the possibility to acquire the citizenship status of",     options: [       "USA through the principle of jus soli",       "Ethiopia through the principle of jus sanguinis",       "Ethiopia through the principle of jus soli",       "Ethiopia and USA through both principles simultaneously"     ],     answer: 1,     englishExplanation: "The child may acquire Ethiopian citizenship through jus sanguinis, meaning citizenship by descent from Ethiopian parents. The citizenship of a child born to diplomats is determined according to the applicable nationality and diplomatic laws.",     amharicExplanation: "ሕፃኑ ከኢትዮጵያዊ ወላጆች ስለተወለደ በደም ዝምድና (Jus sanguinis) መርህ መሠረት የኢትዮጵያ ዜግነት ሊያገኝ ይችላል። የዲፕሎማት ልጅ ዜግነትም በሚመለከተው የዜግነትና የዲፕሎማሲ ሕግ መሠረት ይወሰናል።"   },    {     question: "Identify the statement that is not true regarding the basic purpose of the constitution:",     options: [       "It defines the political structure and forms of a state.",       "It gives specific explanations and details on political issues.",       "It establishes the duties and guarantees rights of citizens.",       "It limits the power of government and relationships with the governed."     ],     answer: 1,     englishExplanation: "A constitution establishes the fundamental political and legal framework of a state. It defines institutions, powers, duties, and rights, but it does not normally provide detailed explanations of every individual political issue.",     amharicExplanation: "ህገ-መንግሥት የሀገሪቱን መሠረታዊ የፖለቲካና የሕግ መዋቅር ይወስናል፣ የመንግሥትን ሥልጣን ይገድባል እና የዜጎችን መብት ያረጋግጣል። ስለሁሉም የፖለቲካ ጉዳዮች ግን ዝርዝር ማብራሪያ አይሰጥም።"   },    {     question: "Which type of state brings not only the economy, but also education, culture, religion, and family life under direct state control?",     options: [       "Social Democratic State",       "Totalitarian State",       "Minimal State",       "Pluralist State"     ],     answer: 1,     englishExplanation: "A totalitarian state seeks extensive control over almost every dimension of public and private life, including the economy, education, culture, religion, and family life.",     amharicExplanation: "ቶታሊቴሪያን (Totalitarian) ስቴት ኢኮኖሚን ብቻ ሳይሆን ትምህርትን፣ ባህልን፣ ሃይማኖትን እና የቤተሰብ ሕይወትን ጨምሮ በሕዝብና በግል ሕይወት ላይ ሰፊ ቁጥጥር ያደርጋል።"   },    {     question: "Which type of state intervenes to bring about broader social restructuring, typically based on principles like fairness, equality, and social justice?",     options: [       "Minimal State",       "Social Democratic State",       "Leviathan State",       "Collectivized State"     ],     answer: 1,     englishExplanation: "A social democratic state uses government intervention, public policies, and welfare programs to reduce social inequality and promote fairness, equality, and social justice.",     amharicExplanation: "ማኅበራዊ ዴሞክራሲያዊ (Social Democratic) ስቴት የማኅበራዊ እኩልነትን ለማስፋፋት፣ ፍትህን ለማረጋገጥ እና ልዩነቶችን ለመቀነስ በማኅበራዊና በኢኮኖሚያዊ ጉዳዮች ላይ በንቃት ጣልቃ ይገባል።"   },    {     question: "What type of state acts as a 'night-watchman,' with its primary role as a protective body for its citizens?",     options: [       "Minimal State",       "Religious State",       "Pluralist State",       "Capitalist State"     ],     answer: 0,     englishExplanation: "The minimal state is often described as a 'night-watchman state.' Its primary functions are to protect citizens from violence, theft, and other violations while allowing individuals broad personal and economic freedom.",     amharicExplanation: "Minimal State ብዙ ጊዜ 'የሌሊት ጠባቂ መንግሥት' ተብሎ ይጠራል። ዋና ተግባሩ ዜጎችን ከጥቃት፣ ከስርቆት እና ከሌሎች ጉዳቶች መጠበቅ ሲሆን በግል እና በኢኮኖሚ ጉዳዮች ላይ ያለው ጣልቃ ገብነት ውስን ነው።"   },    {     question: "Which type of state brings the entirety of economic life under state control?",     options: [       "Pluralist State",       "Collectivized State",       "Leviathan State",       "Developmental State"     ],     answer: 1,     englishExplanation: "A collectivized state places the economy under extensive state ownership, central planning, and control, limiting or eliminating private control over major economic resources.",     amharicExplanation: "Collectivized State ሙሉውን የኢኮኖሚ ሕይወት በስቴት ባለቤትነት፣ በማዕከላዊ ዕቅድ እና በመንግሥት ቁጥጥር ሥር የሚያደርግ የስቴት ዓይነት ነው።"   },    {     question: "In which type of state is the government seen as a neutral arbitrator among competing groups and individuals in society?",     options: [       "Pluralist State",       "Totalitarian State",       "Patriarchal State",       "Leviathan State"     ],     answer: 0,     englishExplanation: "In pluralist theory, the state is viewed as a neutral arbitrator or referee that mediates among different competing groups and individuals in society.",     amharicExplanation: "በፕሉራሊስት (Pluralist) ስቴት አመለካከት መሠረት፣ መንግሥት በማኅበረሰቡ ውስጥ ባሉ ተወዳዳሪ ቡድኖችና ግለሰቦች መካከል እንደ ገለልተኛ አወያይ ወይም ዳኛ ሆኖ ይሰራል።"   },    {     question: "Which state cannot be understood separately from the economic structure of society, particularly based on a Marxist approach?",     options: [       "Pluralist State",       "Religious State",       "Capitalist State",       "Leviathan State"     ],     answer: 2,     englishExplanation: "From a Marxist perspective, the capitalist state is closely connected to the economic structure of society. It is understood in relation to the economic system and class relations within society.",     amharicExplanation: "በማርክሲስት (Marxist) አቀራረብ መሠረት የካፒታሊስት (Capitalist) ስቴት ከማኅበረሰቡ ኢኮኖሚያዊ መዋቅር ተነጥሎ ሊታይ አይችልም። ምክንያቱም ስቴቱ ከኢኮኖሚው ሥርዓትና ከመደብ ግንኙነቶች ጋር በቅርብ ይያያዛል።"   },    {     question: "Which state pursues interests that are separate from those of society, often responding to external demand-side pressures?",     options: [       "Leviathan State",       "Patriarchal State",       "Religious State",       "Totalitarian State"     ],     answer: 0,     englishExplanation: "The Leviathan state is viewed as an autonomous state actor that can develop and pursue its own institutional interests, which may differ from the interests of wider society.",     amharicExplanation: "Leviathan State ከማኅበረሰቡ ፍላጎት በተለየ መልኩ የራሱን ተቋማዊ ጥቅም ሊከተል የሚችል ራሱን የቻለ የመንግሥት አካል ተደርጎ ይታያል።"   },    {     question: "In which type of state is the government seen as an instrument to seize control of politics through moral and spiritual views?",     options: [       "Pluralist State",       "Religious State",       "Social Democratic State",       "Minimal State"     ],     answer: 1,     englishExplanation: "In a religious state, political authority and government institutions are strongly influenced by religious, moral, and spiritual doctrines, which can guide political decision-making and governance.",     amharicExplanation: "በሃይማኖታዊ (Religious) ስቴት ውስጥ የፖለቲካ ሥልጣንና የመንግሥት ተግባራት በሃይማኖታዊ፣ በሞራላዊ እና በመንፈሳዊ አመለካከቶች በከፍተኛ ሁኔታ ይመራሉ።"   },{     question: "Ethiopian citizenship, which is acquired through marriage, can be lost due to divorce.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Ethiopian citizenship acquired through marriage remains valid regardless of marital status. Even if a divorce occurs, the individual retains their citizenship because Ethiopian law does not revoke citizenship granted through marriage solely due to divorce.",     amharicExplanation: "በጋብቻ የተገኘ የኢትዮጵያ ዜግነት የጋብቻ ሁኔታ ቢቋረጥም (ፍቺ ቢፈጸምም) አይጠፋም። የኢትዮጵያ ሕግ ጋብቻ በመፍረሱ ብቻ በጋብቻ የተገኘን ዜግነት አይሰርዝም።"   },    {     question: "From ways of acquiring citizenship by birth, Ethiopia exercises the principle of Jus sanguinis.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Ethiopia follows the principle of Jus sanguinis (law of blood) for citizenship by birth. This means citizenship is granted based on the nationality of the parents rather than simply on the place where a person is born.",     amharicExplanation: "ኢትዮጵያ በልደት ለሚገኝ ዜግነት የምትከተለው «Jus sanguinis» (የደም ሕግ) የሚባለውን መርህ ነው። ይህም ማለት ዜግነት የሚሰጠው በተወለደበት ቦታ ብቻ ሳይሆን በወላጆች ዜግነት መሠረት ነው።"   },    {     question: "Compared with that of state, membership to government is something mandatory.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Membership in a state is compulsory or necessary for enjoying legal rights, but membership or participation in a government, such as holding public office or actively participating in government, is not mandatory.",     amharicExplanation: "ከስቴት አባልነት በተቃራኒ ከመንግሥት ጋር መሆን ወይም በመንግሥት ውስጥ መሳተፍ ግዴታ አይደለም። የሀገር አባል መሆን አስፈላጊ ሲሆን፣ በመንግሥት ሥርዓት ውስጥ መሳተፍ ግን የግዴታ አይደለም።"   },    {     question: "Popular sovereignty is the doctrine that the government is subject to popular consent.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Popular sovereignty means that the power and legitimacy of government come from the consent of the people. The people are considered the ultimate source of political power.",     amharicExplanation: "ሕዝባዊ ሉዓላዊነት ማለት የመንግሥት ሥልጣንና ሕጋዊነት ምንጭ ሕዝብ መሆኑን የሚገልጽ መርህ ነው። ሕዝቡ የፖለቲካ ሥልጣን ዋና ምንጭ ነው።"   },    {     question: "Variation with qualifications of citizenship in the world results in dual or multiple citizenships.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Different countries have different citizenship laws and requirements. Because of these differences, a person may qualify for citizenship in more than one country and may therefore have dual or multiple citizenships, where permitted by law.",     amharicExplanation: "የተለያዩ ሀገራት የዜግነት ሕጎችና መስፈርቶች ስለሚለያዩ፣ አንድ ግለሰብ ከአንድ በላይ ሀገር ዜግነት ለማግኘት ሊያሟላ ይችላል። በሕግ በሚፈቀድበት ሁኔታም ድርብ ወይም ብዙ ዜግነት ሊኖረው ይችላል።"   },    {     question: "A totalitarian state is known for the most extreme and extensive form of intervention.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Totalitarianism is characterized by extensive state control over both public and private life, including politics, the economy, education, media, and other areas of society. It represents one of the most extreme forms of state intervention.",     amharicExplanation: "አጠቃባሪ (Totalitarian) ስቴት በሕዝብ የማኅበራዊ፣ የኢኮኖሚ፣ የፖለቲካ እና የግል ሕይወት ላይ እጅግ ሰፊ ቁጥጥር የሚያደርግ የመንግሥት ሥርዓት ነው።"   },    {     question: "The state exists in concrete form, while the government is an abstract entity.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "The statement is false because it is generally the reverse. The state is an abstract political and legal entity, while the government consists of concrete institutions and people that exercise political authority and administer the state.",     amharicExplanation: "ይህ አባባል የተሳሳተ ነው። ስቴት ረቂቅ (Abstract) የፖለቲካና የሕግ አካል ሲሆን፣ መንግሥት ግን ሥልጣንን የሚጠቀሙ ሰዎችንና ተቋማትን የያዘ ተጨባጭ (Concrete) አካል ነው።"   },    {     question: "All unitary states are undemocratic by their nature.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "A unitary state is one in which political authority is primarily concentrated in the central government. Being unitary does not automatically mean being undemocratic; a unitary state can also operate according to democratic principles.",     amharicExplanation: "ዩኒታሪ ስቴት ማለት ዋናው የፖለቲካ ሥልጣን በማዕከላዊ መንግሥት የሚጠናከርበት ሥርዓት ነው። ዩኒታሪ መሆን በራሱ ዴሞክራሲያዊ አለመሆንን አያመለክትም።"   },    {     question: "A child born to non-nationals in a state that follows the jus soli principle may have the right to citizenship.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Under the Jus soli (law of the soil) principle, citizenship is based primarily on the place of birth. Therefore, a child born within the territory of a state that applies this principle may acquire citizenship even if the parents are foreign nationals, subject to that country's laws.",     amharicExplanation: "«Jus soli» (የመሬት ሕግ) ማለት ዜግነት በተወለደበት የሀገር ግዛት ላይ በመመስረት የሚሰጥበት መርህ ነው። ስለዚህ የውጭ ዜጎች ልጅ ይህን መርህ በምትከተል ሀገር ውስጥ ከተወለደ በሀገሪቱ ሕግ መሠረት ዜግነት ሊያገኝ ይችላል።"   },    {     question: "The form of state in which the most extreme and extensive form of interventionism is found is known as",     options: [       "Minimal state",       "Totalitarian state",       "Collectivized States",       "Developmental States"     ],     answer: 1,     englishExplanation: "A totalitarian state exercises extremely extensive control over public and private life. Therefore, it represents the most extreme and extensive form of state interventionism among the options given.",     amharicExplanation: "እጅግ ከፍተኛና ሰፊ የመንግሥት ጣልቃገብነት የሚታይበት የስቴት ዓይነት ቶታሊታሪያን (Totalitarian) ስቴት ይባላል። ይህ ሥርዓት በሕዝብ እና በግል ሕይወት ላይ ሰፊ ቁጥጥር ያደርጋል።"   },    {     question: "The form of state that brings the entirety of economic life under state control is known as;",     options: [       "Religious States",       "Collectivized States",       "Developmental States",       "Social Democratic States"     ],     answer: 1,     englishExplanation: "Collectivized states bring major or entire areas of economic life under state ownership, central planning, and control. This approach is commonly associated with communist systems.",     amharicExplanation: "ሙሉውን የኢኮኖሚ ሕይወት በመንግሥት ቁጥጥር፣ በማዕከላዊ ዕቅድ እና በመንግሥት ባለቤትነት ሥር የሚያደርገው የስቴት ዓይነት **Collectivized State** ይባላል።"   },    {     question: "Mr. Abebe was an Ethiopian citizen but due to his winning of the DV Lottery, he became a citizen of America /USA/. Therefore, Mr. Abebe lost Ethiopian citizenship and gained American citizenship by -------- and -------- respectively.",     options: [       "Grant on application and deprivation",       "Renunciation and Substitution",       "Substitution and Renunciation",       "Option and Renunciation",       "None"     ],     answer: 1,     englishExplanation: "According to the terminology used in the question, Mr. Abebe lost his Ethiopian citizenship through renunciation and acquired the new citizenship through substitution. Therefore, the correct answer is Renunciation and Substitution.",     amharicExplanation: "በጥያቄው ውስጥ በተጠቀሰው ቃላት መሠረት፣ አቶ አበቤ የኢትዮጵያ ዜግነታቸውን በፈቃድ በመተው (Renunciation) እና አዲሱን ዜግነት በመተካት (Substitution) አግኝተዋል። ስለዚህ ትክክለኛው መልስ Renunciation and Substitution ነው።"   },    {     question: "The state that intervenes in economic life with the specific purpose of promoting industrial growth and economic development is known as.",     options: [       "Collectivized States",       "Developmental States",       "Social Democratic States",       "Religious States"     ],     answer: 1,     englishExplanation: "A developmental state actively intervenes in the economy with the specific goal of promoting industrialization, modernization, and economic development.",     amharicExplanation: "የኢንዱስትሪ ዕድገትን፣ ዘመናዊነትን እና የኢኮኖሚ ልማትን ለማፋጠን በኢኮኖሚው ውስጥ በንቃት ጣልቃ የሚገባው ስቴት **Developmental State** ይባላል።"   },    {     question: "According to social contract theory, the state was:",     options: [       "A result of a deliberate and voluntary agreement of the people.",       "Created through a process of conquest and coercion of the weak by the strong.",       "Evolved out of earlier forms of settled human communities.",       "A result of antagonistic class interest based on private properties."     ],     answer: 0,     englishExplanation: "Social contract theory explains the state as the result of an agreement among individuals who voluntarily established a political society for security, order, and mutual protection.",     amharicExplanation: "በማኅበራዊ ውል (Social Contract) ንድፈ-ሐሳብ መሠረት፣ ስቴት የተፈጠረው ሰዎች በፈቃደኝነት ተስማምተው የፖለቲካ ማኅበረሰብ በመመሥረታቸው ነው።"   },    {     question: "Which theory viewed the state as a political institution created by God?",     options: [       "Force theory",       "Divine origin theory",       "Genetic theory",       "Marxist theory"     ],     answer: 1,     englishExplanation: "The Divine Origin Theory holds that the state was created by God and that political rulers received their authority through divine will.",     amharicExplanation: "ስቴት በፈጣሪ እንደተፈጠረና ገዢዎችም ሥልጣናቸውን ከመለኮታዊ ፈቃድ እንዳገኙ የሚያስተምረው ንድፈ-ሐሳብ **Divine Origin Theory** ይባላል።"   },    {     question: "Citizenship takes place as a result of long and continuous stay outside one's own state is known as",     options: [       "Renunciation",       "Substitution",       "Deprivation",       "Lapse"     ],     answer: 3,     englishExplanation: "Lapse refers to the loss of citizenship resulting from a person's prolonged and continuous absence from their own country, where such loss is provided for by the applicable national law.",     amharicExplanation: "አንድ ዜጋ ከሀገሩ ውጭ ለረጅም እና ቀጣይነት ላለው ጊዜ በመቆየቱ ዜግነቱን ሊያጣ የሚችልበት ሂደት **Lapse** ይባላል።"   },    {     question: "Which one of the following is not true about state sovereignty?",     options: [       "It is original, absolute, unlimited power of the state.",       "It is the supreme, irresistible, absolute, uncontrolled authority of the state.",       "It is the right to give unconditional orders to all individuals in the territory of the state.",       "It is the state's ultimate power to address global common problems.",       "All except 'D'",       "None of the above"     ],     answer: 4,     englishExplanation: "Statements A, B, and C describe traditional characteristics of state sovereignty. Statement D is not a traditional characteristic because sovereignty refers primarily to the supreme authority of the state within its territory and its independence externally. Therefore, the composite answer 'All except D' is the intended answer.",     amharicExplanation: "A፣ B እና C የስቴት ሉዓላዊነትን ባህላዊ ባህሪያት ይገልጻሉ። D ግን የሉዓላዊነት ባህሪ አይደለም፤ ሉዓላዊነት በዋናነት የስቴት በግዛቱ ውስጥ ያለውን የበላይ ሥልጣንና ከውጭ ያለውን ነፃነት ያመለክታል። ስለዚህ በጥያቄው የተሰጠው የታሰበው መልስ 'All except D' ነው።"   },    {     question: "Government legitimacy refers to all of the following except one:",     options: [       "Justification and right to exercise that power",       "The popular acceptance of a governing regime",       "The recognized power to coerce and punish others",       "Any higher power to influence the behavior of others",       "All",       "None"     ],     answer: 3,     englishExplanation: "Government legitimacy refers to the justification and recognized right to exercise political power, as well as the acceptance of the governing authority by the people. Merely having any higher power to influence people's behavior does not necessarily constitute legitimacy.",     amharicExplanation: "የመንግሥት ሕጋዊነት (Legitimacy) ማለት ሥልጣንን ለመጠቀም ያለው ሕጋዊ መብትና ምክንያት፣ እንዲሁም የሕዝብ ተቀባይነት ማለት ነው። 'ማንኛውም ከፍተኛ ኃይል የሰዎችን ባህሪ ለመቆጣጠር መቻል' ብቻ ግን ሕጋዊነትን አይወክልም።"   },    {     question: "During the Second World War, when Germany annexed Austria, all the nationals of Austria were forced to drop their Austrian nationality and acquired German nationality. Such a political process of acquiring nationality is termed as:",     options: [       "Option",       "Registration",       "Subjugation",       "Restoration"     ],     answer: 2,     englishExplanation: "Subjugation refers to a process in which people acquire the nationality of a conquering or annexing state as a result of conquest, annexation, or political domination.",     amharicExplanation: "ሰብጁጌሽን (Subjugation) ማለት አንድ ሀገር በወረራ ወይም በመውረስ ሌላ ግዛትን ሲቆጣጠር በዚያ ግዛት የሚኖሩ ሰዎች ዜግነታቸውን በግድ ወደ አሸናፊው ሀገር ዜግነት እንዲቀይሩ የሚደረግበት ሂደት ነው።"   },    {     question: "Unlike the liberal discourse of citizenship, Republican citizenship perspective argued that:",     options: [       "Students would not be concerned with the good of their society and their country.",       "In the long run outcome would be a moral decline and social crisis and political apathy.",       "The private interest of the citizens cannot be strictly different from the public interests.",       "Students may tend to be less-patriotic and less-civic minded to their country and society."     ],     answer: 2,     englishExplanation: "The republican perspective emphasizes civic duty, participation, and the common good. It argues that citizens' private interests cannot be completely separated from the interests of the wider society and the public good.",     amharicExplanation: "ከሊበራል የዜግነት ዕይታ በተቃራኒ፣ ሪፐብሊካን የዜግነት ዕይታ የግለሰቦች የግል ጥቅም ከሕዝብና ከማኅበረሰቡ የጋራ ጥቅም ፈጽሞ ሊነጠል እንደማይችል ያስተምራል።"   } ],
-        5: []
+        5: [{
+    question: "Which one is correct about Second Generation Human Rights?",
+    options: [
+      "Incorporate solidarity rights",
+      "Includes civil and political rights",
+      "Highlights liberty oriented rights",
+      "Gives much emphasis for collective rights (or economic, social, and cultural rights)"
+    ],
+    answer: 3,
+    englishExplanation: "Second-generation human rights are economic, social, and cultural rights, such as the rights to education, work, and healthcare. They require positive action by the state and focus mainly on welfare, equality, and social well-being.",
+    amharicExplanation: "ሁለተኛ ትውልድ የሰብአዊ መብቶች የኢኮኖሚ፣ የማህበራዊ እና የባህል መብቶችን ያካትታሉ። ለምሳሌ የትምህርት፣ የሥራ እና የጤና መብቶች ናቸው። እነዚህ መብቶች የመንግስትን ንቁ ተሳትፎ የሚጠይቁ ሲሆን በእኩልነት፣ በደህንነት እና በማህበራዊ ዕድገት ላይ ያተኩራሉ።"
+  },
+
+  {
+    question: "Which of the following statement is wrong about the concept of constitutionalism?",
+    options: [
+      "It is a system in which all are governed by the constitution.",
+      "It can exist in a state where the constitution is not supreme.",
+      "It implies the implementation of the constitution.",
+      "It is the doctrine that governmental power is subject to checks and balances."
+    ],
+    answer: 1,
+    englishExplanation: "Constitutionalism means that government power is limited and controlled by the constitution, which is regarded as the supreme law. Therefore, constitutionalism cannot properly exist where the constitution is not supreme.",
+    amharicExplanation: "ሕገ-መንግስታዊነት ማለት የመንግስት ሥልጣን በሕገ-መንግስት የተገደበ እና የሚቆጣጠር መሆኑን የሚያመለክት መርህ ነው። ሕገ-መንግስቱም የበላይ ሕግ መሆን አለበት። ስለዚህ ሕገ-መንግስቱ የበላይ ባልሆነበት ሁኔታ ሕገ-መንግስታዊነት ሊኖር አይችልም።"
+  },
+
+  {
+    question: "One of the following is not true about the 1931 Constitution.",
+    options: [
+      "For the first time, it created a legislature with two houses.",
+      "Weakening the nobility from the political game was one of its motives.",
+      "It was designed to show the modern picture of the country to the outside world.",
+      "It allowed the right to vote to the people of Ethiopia."
+    ],
+    answer: 3,
+    englishExplanation: "The 1931 Constitution established a bicameral legislature and helped centralize imperial authority. However, it did not introduce a broad democratic voting right for the Ethiopian people.",
+    amharicExplanation: "የ1931 የኢትዮጵያ ሕገ-መንግስት ባለሁለት ምክር ቤት ሥርዓትን አቋቋመ፣ የንጉሣዊ ሥልጣንንም ለማጠናከር አገልግሏል። ነገር ግን ለአጠቃላይ የኢትዮጵያ ሕዝብ ሰፊ የመምረጥ መብትን አልሰጠም።"
+  },
+
+  {
+    question: "Popular referendum can be taken as an example of",
+    options: [
+      "Representative democracy",
+      "Direct democracy",
+      "Indirect democracy",
+      "Non-democratic rule"
+    ],
+    answer: 1,
+    englishExplanation: "A popular referendum allows citizens to vote directly on a specific law, policy, or constitutional issue. Therefore, it is an example of direct democracy.",
+    amharicExplanation: "ህዝባዊ ሬፈረንደም ማለት ዜጎች በተወሰነ ሕግ፣ ፖሊሲ ወይም የሕገ-መንግስት ጉዳይ ላይ በቀጥታ ድምጽ የሚሰጡበት ሂደት ነው። ስለዚህ የቀጥታ ዴሞክራሲ ምሳሌ ነው።"
+  },
+
+  {
+    question: "Which one of the following is NOT the major factor for the revision of the 1931 Constitution of Ethiopia?",
+    options: [
+      "The federation of Eritrea with Ethiopia",
+      "The establishment of the United Nations Organization",
+      "The socio-economic condition that happened after the Second World War",
+      "All are correct answers"
+    ],
+    answer: 1,
+    englishExplanation: "The federation of Eritrea with Ethiopia and the socio-economic changes following the Second World War were important factors influencing the revision of the 1931 Constitution. The establishment of the United Nations was not considered a major direct factor for the revision.",
+    amharicExplanation: "የኤርትራ ከኢትዮጵያ ጋር ፌዴሬሽን መፍጠር እና ከሁለተኛው የዓለም ጦርነት በኋላ የተፈጠሩ ማህበራዊና ኢኮኖሚያዊ ለውጦች የ1931 ሕገ-መንግስት እንዲሻሻል ካደረጉ ምክንያቶች ውስጥ ነበሩ። የተባበሩት መንግስታት ድርጅት መቋቋም ግን ዋና ቀጥተኛ ምክንያት አልነበረም።"
+  },
+
+  {
+    question: "Which of the following is not categorized under First Generation Rights?",
+    options: [
+      "Freedom from torture, cruel and inhuman treatment",
+      "Freedom from arbitrary arrest",
+      "The right to protection of one's scientific production",
+      "The right to asylum"
+    ],
+    answer: 2,
+    englishExplanation: "First-generation rights mainly include civil and political rights, such as freedom from torture and arbitrary arrest. The right to protection of scientific production is generally associated with economic, social, and cultural rights.",
+    amharicExplanation: "የመጀመሪያ ትውልድ መብቶች በዋናነት የሲቪል እና የፖለቲካ መብቶችን ያካትታሉ። ከስቃይ ነፃ መሆን እና ያለአግባብ ከመታሰር ነፃ መሆን ምሳሌዎች ናቸው። የሳይንሳዊ ውጤትን የመጠበቅ መብት ግን በኢኮኖሚ፣ በማህበራዊ እና በባህላዊ መብቶች ውስጥ ይመደባል።"
+  },
+
+  {
+    question: "Which of the following is not the major characteristic of unitary state structure?",
+    options: [
+      "There is indivisibility of power.",
+      "There is always bicameral legislature.",
+      "There is no self-rule and shared rule.",
+      "The regional or local units are highly subordinated to the central government."
+    ],
+    answer: 1,
+    englishExplanation: "A unitary state is characterized by centralized authority, with local or regional governments generally subordinate to the central government. However, a unitary state does not necessarily have a bicameral legislature.",
+    amharicExplanation: "የአንድነት መንግስት ሥርዓት በማዕከላዊ ሥልጣን የሚገለጽ ሲሆን የአካባቢ ወይም የክልል አስተዳደሮች በአብዛኛው ለማዕከላዊ መንግስት ተጠሪ ናቸው። ነገር ግን ሁልጊዜ ባለሁለት ምክር ቤት መኖር የግድ አይደለም።"
+  },
+
+  {
+    question: "Which one of the following is false about the 1987 PDRE Constitution?",
+    options: [
+      "It recognized equality of nationalities and respect for languages and cultures.",
+      "It introduced secularism.",
+      "It introduced multi-party system.",
+      "It aimed at the principles of Marxist and Leninist ideology."
+    ],
+    answer: 2,
+    englishExplanation: "The 1987 PDRE Constitution was based on Marxist-Leninist ideology and established a single-party political system. Therefore, the statement that it introduced a multi-party system is false.",
+    amharicExplanation: "የ1987 የህዝባዊ ዴሞክራሲያዊ ሪፐብሊክ ኢትዮጵያ (PDRE) ሕገ-መንግስት በማርክሲስታዊ-ሌኒኒስታዊ ርዕዮተ ዓለም ላይ የተመሰረተ እና አንድ ፓርቲ ያለበት ሥርዓት ነበር። ስለዚህ ብዙ ፓርቲ ሥርዓትን አስተዋወቀ የሚለው ሀሰት ነው።"
+  },
+
+  {
+    question: "Identify the wrong association between the pre-1931 traditional constitutional principles and the respective reinforcing documents in Ethiopia.",
+    options: [
+      "Dynastic Claim -- Kibre Negest",
+      "Serving as an administrative protocol -- Serate Mengist",
+      "Having a Solomon descent to rule -- Fetha Negest",
+      "Law for both secular and religious purposes -- Fetha Negest"
+    ],
+    answer: 2,
+    englishExplanation: "The claim that Ethiopian rulers descended from King Solomon is associated with the Kibre Negest, not the Fetha Negest. The Fetha Negest is primarily a legal code dealing with religious and civil matters.",
+    amharicExplanation: "የኢትዮጵያ ነገሥታት ከንጉሥ ሰሎሞን የዘር ሐረግ አላቸው የሚለው የሥልጣን መርህ ከክብረ ነገሥት ጋር ይያያዛል። ፍትሐ ነገሥት ግን በሃይማኖታዊና በሲቪል ጉዳዮች ላይ የሚያገለግል የሕግ መዝገብ ነው።"
+  },
+
+  {
+    question: "The first constitution in Ethiopian political history that declared Ethiopia as a republic is:",
+    options: [
+      "The 1987 PDRE Constitution",
+      "The 1995 FDRE Constitution",
+      "The 1931 Constitution",
+      "The 1955 Constitution"
+    ],
+    answer: 0,
+    englishExplanation: "The 1987 PDRE Constitution was the first Ethiopian constitution to formally establish Ethiopia as a republic. It replaced the imperial system with the People's Democratic Republic of Ethiopia.",
+    amharicExplanation: "የ1987 የPDRE ሕገ-መንግስት ኢትዮጵያን ሪፐብሊክ በማድረግ ያወጀ የመጀመሪያው ሕገ-መንግስት ነው። ይህም የንጉሣዊ ሥርዓቱን በሪፐብሊካዊ ሥርዓት ተክቷል።"
+  },
+
+  {
+    question: "Which one of the following is invalid about the 1987 Constitution?",
+    options: [
+      "It allows one party to exist.",
+      "It created a unicameral parliament.",
+      "It recognized the rights of nations and nationalities.",
+      "It allowed a free market economy."
+    ],
+    answer: 3,
+    englishExplanation: "The 1987 PDRE Constitution followed Marxist-Leninist principles and supported a centrally planned economy rather than a free market economy. Therefore, allowing a free market economy is the invalid statement.",
+    amharicExplanation: "የ1987 ሕገ-መንግስት ማርክሲስታዊ-ሌኒኒስታዊ ርዕዮተ ዓለምን የተከተለ እና ማዕከላዊ የኢኮኖሚ እቅድን የሚደግፍ ነበር። ስለዚህ ነፃ የገበያ ኢኮኖሚን ፈቅዷል የሚለው መግለጫ ልክ አይደለም።"
+  },
+
+  {
+    question: "In Botswana, the national government can devolve its power to provincial administrative units. The president is elected by the parliament, which can also veto him or her out of office. Which of the following combinations best explains the state and government of Botswana, respectively?",
+    options: [
+      "Federal, Authoritarian and Presidential",
+      "Unitary, Authoritarian and Presidential",
+      "Federal, Democratic and Parliamentarian",
+      "Unitary, Democratic and Parliamentary"
+    ],
+    answer: 2,
+    englishExplanation: "According to the given question and the indicated answer, Botswana is classified as federal, democratic, and parliamentarian. Its political system includes democratic elections and parliamentary involvement in the selection and accountability of the president.",
+    amharicExplanation: "በተሰጠው ጥያቄ እና በተመረጠው መልስ መሰረት የቦትስዋና ሥርዓት ፌዴራል፣ ዴሞክራሲያዊ እና ፓርላሜንታሪ ተብሎ ተመድቧል። ሥርዓቱም ዴሞክራሲያዊ ምርጫን እና የፓርላማን ሚና ያካትታል።"
+  },
+
+  {
+    question: "Which of the following is true about first generation rights?",
+    options: [
+      "The realization of first generation rights requires state abstention.",
+      "The realization of first generation rights requires state intervention.",
+      "The state has only positive obligations to realizing these rights.",
+      "The state has regressive measures to protecting these rights."
+    ],
+    answer: 0,
+    englishExplanation: "First-generation rights are mainly civil and political rights. Their protection traditionally requires the state to refrain from unjustified interference with individual freedoms, although some positive state action may also be necessary.",
+    amharicExplanation: "የመጀመሪያ ትውልድ መብቶች በዋናነት የሲቪል እና የፖለቲካ መብቶች ናቸው። እነዚህን መብቶች ለመጠበቅ መንግስት በግለሰቦች ነፃነት ላይ ያለአግባብ ጣልቃ እንዳይገባ መቆጠብ ያስፈልጋል።"
+  },
+
+  {
+    question: "Identify the false statement about the 1987 PDRE Constitution.",
+    options: [
+      "The National Shengo was its legislative body.",
+      "It recognized the equality of nationalities.",
+      "It introduced the principle of democratic centralism.",
+      "It considered nations and nationalities as the owners of the constitution."
+    ],
+    answer: 3,
+    englishExplanation: "The 1987 PDRE Constitution established the National Shengo as the legislative body and recognized equality among nationalities. However, the idea that nations and nationalities are the owners of the constitution is associated with the 1995 FDRE Constitution, not the 1987 Constitution.",
+    amharicExplanation: "የ1987 PDRE ሕገ-መንግስት ብሔራዊ ሸንጎን የሕግ አውጪ አካል አድርጎ ያቋቋመ እና የብሔር ብሔረሰቦችን እኩልነት ያውቅ ነበር። ነገር ግን ብሔር ብሔረሰቦች የሕገ-መንግስቱ ባለቤቶች ናቸው የሚለው መርህ በ1995 የFDRE ሕገ-መንግስት ውስጥ በግልጽ የተገለጸ ነው።"
+  },
+
+  {
+    question: "Which one of the following is not true about derogation and limitation of human rights?",
+    options: [
+      "Derogation is infringement of human rights under normal circumstances.",
+      "Limitation of human rights can occur under normal circumstances.",
+      "Derogation of human rights can occur under a state of emergency.",
+      "Derogation requires special circumstances."
+    ],
+    answer: 0,
+    englishExplanation: "Derogation refers to the temporary suspension or restriction of certain rights during exceptional circumstances, such as a state of emergency. It does not normally occur under ordinary circumstances. Limitations, however, may apply to certain rights during normal circumstances when legally justified.",
+    amharicExplanation: "Derogation ማለት በልዩ ወይም በአስቸኳይ ሁኔታ፣ ለምሳሌ በአስቸኳይ ጊዜ ሕግ የተወሰኑ መብቶችን ለጊዜው መገደብ ወይም ማገድ ነው። በመደበኛ ሁኔታ የሚፈጸም አይደለም። ነገር ግን limitation በመደበኛ ሁኔታ በሕግ መሠረት ሊደረግ ይችላል።"
+  },
+
+  {
+    question: "In which category of human rights does the full realization of rights depend on the available resources and favorable conditions of the state?",
+    options: [
+      "Civil and political rights",
+      "Peace, environment and developmental rights",
+      "Economic, social and cultural rights",
+      "Fraternity rights"
+    ],
+    answer: 2,
+    englishExplanation: "Economic, social, and cultural rights require progressive realization. Their full implementation often depends on the resources available to the state and the economic and social conditions of the country.",
+    amharicExplanation: "የኢኮኖሚ፣ የማህበራዊ እና የባህል መብቶች ሙሉ በሙሉ እንዲተገበሩ የሀገሪቱ ያላት ሀብት፣ የኢኮኖሚ አቅም እና ምቹ ሁኔታዎች ተጽእኖ ያሳድራሉ። ስለዚህ በሂደት መረጋገጥ የሚችሉ መብቶች ናቸው።"
+  },
+
+  {
+    question: "Government must keep its state from internal and external threats. This function denotes",
+    options: [
+      "Management of conflict",
+      "Regulation of the economy",
+      "Self-preservation",
+      "Rights protection"
+    ],
+    answer: 2,
+    englishExplanation: "Self-preservation is the function of government concerned with protecting the state from internal and external threats and maintaining its sovereignty, security, and continued existence.",
+    amharicExplanation: "ራስን ማስጠበቅ (Self-preservation) ማለት መንግስት ሀገሪቱን ከውስጥና ከውጭ ስጋቶች መጠበቅ፣ ደህንነቷንና ሉዓላዊነቷን ማስጠበቅ እና ህልውናዋን ማረጋገጥ ነው።"
+  },
+
+  {
+    question: "Which one of the following is the first international instrument of human rights issued by the UN?",
+    options: [
+      "ICCPR",
+      "UDHR",
+      "CEDAW",
+      "CRC"
+    ],
+    answer: 1,
+    englishExplanation: "The Universal Declaration of Human Rights (UDHR) was adopted by the United Nations General Assembly in 1948. It is recognized as the foundational international human rights instrument issued by the UN.",
+    amharicExplanation: "የዓለም አቀፍ የሰብአዊ መብቶች አዋጅ (UDHR) በ1948 በተባበሩት መንግስታት ጠቅላላ ጉባኤ የጸደቀ ሲሆን በዓለም አቀፍ የሰብአዊ መብቶች ታሪክ መሠረታዊ ሰነድ ነው።"
+  },
+
+  {
+    question: "The most huge/vast and hence powerful organ of government is named as",
+    options: [
+      "Legislature",
+      "Executive",
+      "Judiciary",
+      "Court"
+    ],
+    answer: 1,
+    englishExplanation: "The executive is often considered the largest and most extensive organ of government because it includes the administrative machinery responsible for implementing laws, policies, and government programs throughout the country.",
+    amharicExplanation: "አስፈፃሚ አካል (Executive) በሀገር ውስጥ ሕጎችን፣ ፖሊሲዎችን እና የመንግስትን ፕሮግራሞች የሚያስፈጽም ሰፊ የአስተዳደር መዋቅር ስላለው ብዙ ጊዜ ትልቁ እና ሰፊው የመንግስት አካል ተብሎ ይገለጻል።"
+  },
+
+  {
+    question: "Presence of ------- constitution necessarily makes a state democratic, which one?",
+    options: [
+      "Written",
+      "Unwritten",
+      "Flexible",
+      "Rigid",
+      "All",
+      "None of these"
+    ],
+    answer: 5,
+    englishExplanation: "The mere existence of a written, unwritten, flexible, or rigid constitution does not automatically make a state democratic. Democracy depends on factors such as popular participation, free and fair elections, protection of rights, rule of law, and limitations on government power.",
+    amharicExplanation: "የተጻፈ፣ ያልተጻፈ፣ ተለዋዋጭ ወይም ጠንካራ (Rigid) ሕገ-መንግስት መኖሩ ብቻ አንድን መንግስት ዴሞክራሲያዊ አያደርገውም። ዴሞክራሲ የህዝብ ተሳትፎ፣ ነፃና ፍትሃዊ ምርጫ፣ የሰብአዊ መብቶች ጥበቃ፣ የሕግ የበላይነት እና የመንግስት ሥልጣን መገደብን ይጠይቃል። ስለዚህ ከተሰጡት ውስጥ None of these ትክክለኛው መልስ ነው።"
+  }, {
+    question: "Which one of the following is the primary objective of studying civics and ethical education?",
+    options: [
+      "To train students to become professional politicians",
+      "To produce responsible, active, and competent citizens",
+      "To prepare students for military service",
+      "To promote a single political ideology across the country"
+    ],
+    answer: 1,
+    englishExplanation: "Civics and ethical education focuses on cultivating civic competence, moral integrity, and social responsibility so individuals can actively and positively contribute to society.",
+    amharicExplanation: "የሲቪክስ እና ስነ-ምግባር ትምህርት ዋና ዓላማ ግለሰቦች ለህብረተሰባቸው በንቃት እና በሃላፊነት እንዲበቁ እንዲሁም መልካም ስነ-ምግባር እንዲኖራቸው ማድረግ ነው።"
+  },
+
+  {
+    question: "Which of the following concepts refers to the supreme power of a state to govern itself independently without external interference?",
+    options: [
+      "Democracy",
+      "Sovereignty",
+      "Constitution",
+      "Federalism"
+    ],
+    answer: 1,
+    englishExplanation: "Sovereignty means a state possesses independent authority and supreme power to govern its internal and external affairs without foreign control.",
+    amharicExplanation: "ሉዓላዊነት ማለት አንድ ሀገር ከውጭ ጣልቃገብነት ነፃ ሆና የራሷን ጉዳዮች በራሷ የማስተዳደር የበላይ ስልጣን ባለቤት መሆኗን ያሳያል።"
+  },
+
+  {
+    question: "Which type of government derives its authority directly from the people through regular, free, and fair competitive elections?",
+    options: [
+      "Oligarchy",
+      "Monarchy",
+      "Democratic government",
+      "Dictatorship"
+    ],
+    answer: 2,
+    englishExplanation: "A democratic government is characterized by popular sovereignty where power rests with the citizens, who exercise it through free and fair elections.",
+    amharicExplanation: "ዲሞክራሲያዊ መንግሥት ስልጣኑን ከህዝብ በነጻ እና ፍትሃዊ ምርጫ የሚያገኝ እና ለህዝብ ተጠያቂ የሚሆን ሥርዓት ነው።"
+  },
+
+  {
+    question: "Which of the following is considered a core pillar of a democratic system?",
+    options: [
+      "Suppression of opposition parties",
+      "Protection of fundamental human rights",
+      "Centralization of all media under state control",
+      "Absence of regular elections"
+    ],
+    answer: 1,
+    englishExplanation: "Protecting fundamental human rights, such as freedom of speech and assembly, is an essential pillar necessary to maintain any genuine democracy.",
+    amharicExplanation: "መሰረታዊ ሰብአዊ መብቶችን እንደ ሃሳብን በነጻ የመግለጽ እና የመሰብሰብ መብት ማክበር እና መጠበቅ የዲሞክራሲ ስርዓት ዋና ምሰሶ ነው።"
+  },
+
+  {
+    question: "Which document serves as the supreme law of the land in a constitutional state, binding all citizens and government organs?",
+    options: [
+      "Penal code",
+      "Civil code",
+      "Constitution",
+      "Administrative regulation"
+    ],
+    answer: 2,
+    englishExplanation: "The constitution is the foundational supreme law of a country; any law, custom, or decision that contradicts it is null and void.",
+    amharicExplanation: "ሕገ መንግሥት የሀገሪቱ የበላይ ሕግ ሲሆን ከእሱ በታች ያሉት ሕጎች እና የመንግሥት እርምጃዎች ሁሉ ከእሱ ጋር የሚጣጣሙ መሆን አለባቸው።"
+  },
+
+  {
+    question: "What is the primary function of the legislature in a democratic government?",
+    options: [
+      "Enforcing laws and public policies",
+      "Interpreting laws and resolving legal disputes",
+      "Making and enacting laws",
+      "Managing the national treasury and armed forces"
+    ],
+    answer: 2,
+    englishExplanation: "The legislature, such as a parliament or congress, is principally tasked with debating, formulating, and passing laws for the country.",
+    amharicExplanation: "የህግ አውጪ አካል ዋና ሃላፊነት ለሀገሪቱ የሚያስፈልጉ ህጎችን ማጥናት፣ መወያየት እና ማፅደቅ ነው።"
+  },
+
+  {
+    question: "Which branch of government is responsible for implementing and executing laws passed by the legislature?",
+    options: [
+      "Judiciary",
+      "Legislature",
+      "Executive",
+      "Electoral board"
+    ],
+    answer: 2,
+    englishExplanation: "The executive branch, headed by a president or prime minister along with the cabinet and civil service, puts enacted laws and policies into practical effect.",
+    amharicExplanation: "ሕግ አስፈፃሚው አካል በህግ አውጪው የወጡ ህጎችን እና ፖሊሲዎችን ወደ ስራ በመለወጥ የማስፈፀም ሃላፊነት አለበት።"
+  },
+
+  {
+    question: "Which of the following is a key advantage of a written constitution?",
+    options: [
+      "It changes completely every year without formal procedures",
+      "It provides clarity and protects citizens against arbitrary rule",
+      "It is impossible to amend under any circumstances",
+      "It relies entirely on unwritten traditions and customs"
+    ],
+    answer: 1,
+    englishExplanation: "A written constitution codifies the fundamental rules clearly in a single document, making them accessible and serving as a shield against arbitrary governmental actions.",
+    amharicExplanation: "የተጻፈ ሕገ መንግሥት መኖሩ ህጎቹ በግልጽ እንዲታወቁ በማድረግ ዜጎች ከመንግሥት ዘፈቀደ ውሳኔዎች እንዲጠበቁ አስተማማኝ ዋስትና ይሰጣል።"
+  },
+
+  {
+    question: "Which system of government divides power between a central national government and regional or state governments?",
+    options: [
+      "Unitary system",
+      "Federal system",
+      "Absolute monarchy",
+      "Dictatorship"
+    ],
+    answer: 1,
+    englishExplanation: "Federalism is a constitutional arrangement where governing powers are shared between central and regional or state governments.",
+    amharicExplanation: "የፌዴራል ሥርዓት ማለት ስልጣን በማዕከላዊ መንግሥት እና በክልል መንግሥታት መካከል በሕገ መንግሥት የተከፋፈለበት ሥርዓት ነው።"
+  },
+
+  {
+    question: "Which one of the following rights is classified as a first-generation human right?",
+    options: [
+      "The right to education",
+      "The right to work and safe working conditions",
+      "Freedom of speech and expression",
+      "The right to a clean environment"
+    ],
+    answer: 2,
+    englishExplanation: "First-generation rights are civil and political liberties, such as freedom of speech, religion, and assembly, designed to protect individuals from state overreach.",
+    amharicExplanation: "የመጀመሪያ ትውልድ መብቶች ሲቪል እና ፖለቲካዊ መብቶች እንደ ሃሳብን በነጻ መግለጽ እና እምነት ያሉ መብቶች ሲሆኑ ግለሰቦችን ከመንግሥት ጥሰት የሚከላከሉ ናቸው።"
+  },
+
+  {
+    question: "Which historical document, signed in 1215, is widely regarded as a foundational milestone in the limitation of monarchical power and the development of constitutionalism?",
+    options: [
+      "Universal Declaration of Human Rights",
+      "Magna Carta",
+      "The Communist Manifesto",
+      "Treaty of Westphalia"
+    ],
+    answer: 1,
+    englishExplanation: "The Magna Carta of 1215 limited the absolute power of King John of England and established the principle that nobody, including the monarch, is above the law.",
+    amharicExplanation: "ማግና ካርታ በእንግሊዝ በ1215 የተፈረመ ሲሆን የንጉሱን ፍጹም ስልጣን በመገደብ ማንም ከህግ በላይ ሊሆን እንደማይችል ያረጋገጠ ታሪካዊ ሰነድ ነው።"
+  },
+
+  {
+    question: "What does the term \"rule of law\" primarily signify in a democratic society?",
+    options: [
+      "Government officials are above the law and exempt from prosecution",
+      "Laws apply equally to all citizens and leaders without discrimination",
+      "Laws can be changed arbitrarily by police officers at any time",
+      "Military decrees supersede civil laws during peacetime"
+    ],
+    answer: 1,
+    englishExplanation: "Rule of law ensures that laws are clear, publicly made, fairly enforced, and apply equally to everyone, including government leaders and lawmakers themselves.",
+    amharicExplanation: "የህግ የበላይነት ማለት ሁሉም ዜጎች እና የመንግሥት መሪዎች ለህግ ተገዢ መሆናቸውን እና ህጉ በማንኛውም ሰው ላይ በእኩልነት የሚተገበር መሆኑን ያመለክታል።"
+  },
+
+  {
+    question: "Which of the following is a key characteristic of a totalitarian government?",
+    options: [
+      "Existence of vibrant multi-party competition",
+      "Protection of independent media outlets",
+      "Total state control over public and private life",
+      "Respect for civil liberties and dissent"
+    ],
+    answer: 2,
+    englishExplanation: "Totalitarian regimes seek to control every aspect of public and private life, suppressing political opposition, independent media, and personal freedoms.",
+    amharicExplanation: "አጠቃላይ አገዛዝ ማለት መንግሥት የዜጎችን የግል እና የህብረተሰብ ህይወት በሙሉ በመቆጣጠር ተቃውሞዎችን እና ነፃነቶችን ሙሉ በሙሉ የሚያፈንበት ሥርዓት ነው።"
+  },
+
+  {
+    question: "Which body is traditionally responsible for upholding justice and resolving disputes based on the law?",
+    options: [
+      "Police department",
+      "The Judiciary / Courts",
+      "Tax collection authority",
+      "Ministry of Defense"
+    ],
+    answer: 1,
+    englishExplanation: "Courts and judges form the judicial branch, which evaluates evidence, interprets legislation, and delivers impartial decisions to resolve legal disputes.",
+    amharicExplanation: "ፍርድ ቤቶች ህጉን መሰረት በማድረግ ግጭቶችን የሚፈቱ እና ፍትህ የሚያሰፍኑ አካላት ናቸው።"
+  },
+
+  {
+    question: "Which of the following best describes political participation in a democracy?",
+    options: [
+      "Staying completely passive and ignoring public affairs",
+      "Engaging in activities intended to influence government policy and leadership",
+      "Obeying government orders without questioning their legality",
+      "Voting only when forced by regional authorities"
+    ],
+    answer: 1,
+    englishExplanation: "Political participation encompasses citizen involvement in democratic processes such as voting, campaigning, peaceful protesting, and community organizing.",
+    amharicExplanation: "ፖለቲካዊ ተሳትፎ ማለት ዜጎች በመምረጥ፣ ሀሳባቸውን በመግለጽ እና በመንግሥት ውሳኔዎች ላይ ተፅዕኖ ለማድረግ በሚደረጉ እንቅስቃሴዎች ንቁ ሚና መጫወት ማለት ነው።"
+  },
+
+  {
+    question: "Which term describes a form of government where power is concentrated in the hands of a small, elite group of people?",
+    options: [
+      "Democracy",
+      "Oligarchy",
+      "Federalism",
+      "Republic"
+    ],
+    answer: 1,
+    englishExplanation: "An oligarchy is a power structure where control rests with a small number of individuals, often distinguished by wealth, social status, corporate ties, or military dominance.",
+    amharicExplanation: "ኦሊጋርኪ ማለት ስልጣኑ በጥቂት ባለጸጎች ወይም በልዩ ቡድን እጅ ብቻ ተከማችቶ የሚገኝበት የመንግሥት አስተዳደር ዓይነት ነው።"
+  },
+
+  {
+    question: "What is the primary purpose of holding periodic and competitive elections in a democratic state?",
+    options: [
+      "To allow incumbent leaders to rule indefinitely without accountability",
+      "To ensure peaceful transition of power and give citizens a voice",
+      "To increase state tax revenues quickly",
+      "To select military generals for the armed forces"
+    ],
+    answer: 1,
+    englishExplanation: "Elections provide a mechanism for citizens to choose their representatives, hold leaders accountable, and ensure smooth, peaceful changes in political leadership.",
+    amharicExplanation: "መደበኛ ምርጫዎች መኖራቸው ዜጎች መሪዎቻቸውን በሰላማዊ መንገድ እንዲመርጡ እና ስልጣን በሰላም እንዲቀየር ያስችላል።"
+  },
+
+  {
+    question: "Which of the following is a crucial responsibility of citizens in a democratic society?",
+    options: [
+      "Violating laws that they personally disagree with",
+      "Civic engagement, obeying laws, and respecting the rights of others",
+      "Ignoring community issues and social responsibilities",
+      "Refusing to pay taxes for public services"
+    ],
+    answer: 1,
+    englishExplanation: "Active citizenship requires balancing personal freedoms with duties such as respecting fellow citizens' rights, obeying legitimate laws, and contributing to the community.",
+    amharicExplanation: "በዲሞክራሲያዊ ማህበረሰብ ውስጥ የዜጎች ሃላፊነት ህጎችን ማክበር፣ የሌሎችን መብት መከበር እና በማህበረሰብ ልማት ውስጥ በንቃት መሳተፍ ነው።"
+  },
+
+  {
+    question: "Which international organization, established in 1945 after World War II, plays a major role in promoting global peace and human rights?",
+    options: [
+      "The League of Nations",
+      "The United Nations",
+      "The European Union",
+      "The Warsaw Pact"
+    ],
+    answer: 1,
+    englishExplanation: "The United Nations was founded in 1945 to maintain international peace and security, foster friendly relations, and promote international cooperation on human rights.",
+    amharicExplanation: "የተባበሩት መንግሥታት ድርጅት በሁለተኛው ዓለም ጦርነት ፍጻሜ በ1945 ዓለም አቀፍ ሰላምን፣ ደህንነትን እና ሰብአዊ መብቶችን ለማስጠበቅ የተቋቋመ ዓለም አቀፍ ድርጅት ነው።"
+  },
+
+  {
+    question: "Which of the following refers to the fundamental moral and ethical principles that guide human behavior and define what is fair and right?",
+    options: [
+      "Economic inflation",
+      "Justice",
+      "Bureaucratic red tape",
+      "Political propaganda"
+    ],
+    answer: 1,
+    englishExplanation: "Justice represents the moral standard of fairness, ensuring that individuals receive what they are due and that laws are applied equitably.",
+    amharicExplanation: "ፍትህ ማለት ግለሰቦች ሊያገኙ የሚገባቸውን መብት እና እኩልነት የሚያረጋግጥ እንዲሁም የሞራል እና የስነ-ምግባር መርሆዎችን የሚመራ መሰረታዊ እሴት ነው።"
+  },
+
+  {
+    question: "Whenever there is a constitution in a state there must also be constitutionalism.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "A constitution is a set of fundamental rules and principles governing a state, while constitutionalism means the effective implementation of those rules and the limitation of government power. A state may have a constitution on paper without practicing constitutionalism.",
+    amharicExplanation: "ሕገ-መንግስት ማለት ሀገርን የሚመሩ መሰረታዊ ሕጎችና መርሆዎች ስብስብ ሲሆን፣ ሕገ-መንግስታዊነት ግን እነዚህ ሕጎች በተግባር መከበራቸውን፣ የመንግስት ሥልጣን መገደቡን እና የዜጎች መብት መጠበቁን ያመለክታል። ስለዚህ ሕገ-መንግስት መኖሩ ብቻ ሕገ-መንግስታዊነት አለ ማለት አይደለም።"
+  },
+
+  {
+    question: "All principles and rules in written constitution exist in written form.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "A written constitution contains formal written provisions, but not every constitutional principle or rule necessarily exists only in written form. Customs, traditions, and judicial practices may also complement the written constitution.",
+    amharicExplanation: "በጽሑፍ የተዘጋጀ ሕገ-መንግስት በይፋዊ ሰነድ ውስጥ የተጻፉ ድንጋጌዎችን ይይዛል። ነገር ግን ሁሉም የሕገ-መንግስት መርሆዎችና ደንቦች በጽሑፍ ብቻ ሊኖሩ አይችሉም፤ ልማዶች፣ ባህሎችና የፍርድ ቤት አሠራሮችም ሊያሟሏቸው ይችላሉ።"
+  },
+
+  {
+    question: "Constitutionalism indicates not only the existence of constitution but also implies the implementation of it in a democratic manner.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Constitutionalism means that government operates within the framework of the constitution and respects its principles. It includes the rule of law, limitation of government power, democratic governance, and protection of citizens' rights.",
+    amharicExplanation: "ሕገ-መንግስታዊነት ማለት መንግስት በሕገ-መንግስቱ ማዕቀፍ ውስጥ ሆኖ መሥራቱን እና መርሆዎቹን በተግባር መተግበሩን ያመለክታል። የሕግ የበላይነትን፣ የመንግስት ሥልጣንን መገደብን፣ ዲሞክራሲያዊ አስተዳደርንና የዜጎችን መብት መጠበቅን ያካትታል።"
+  },
+
+  {
+    question: "The 1995 FDRE constitution introduced a bicameral legislature.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The 1995 FDRE Constitution established a federal parliamentary structure with two houses: the House of Peoples' Representatives and the House of Federation.",
+    amharicExplanation: "የ1995 የኢ.ፌ.ዲ.ሪ ሕገ-መንግስት ሁለት ምክር ቤቶች ያሉትን የፌዴራል የፓርላማ መዋቅር አስተዋወቀ። እነሱም የሕዝብ ተወካዮች ምክር ቤት እና የፌዴሬሽን ምክር ቤት ናቸው።"
+  },
+
+  {
+    question: "All unitary states are undemocratic by their nature.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "A unitary system concentrates constitutional authority mainly at the central level, but this does not automatically make a state undemocratic. A unitary state can still have elections, political participation, rule of law, and protection of rights.",
+    amharicExplanation: "ነጠላ (Unitary) የመንግስት መዋቅር ሥልጣንን በዋናነት በማዕከላዊ መንግስት ያስቀምጣል። ይህ ግን ሀገሪቱ ዲሞክራሲያዊ አይደለችም ማለት አይደለም። ነጠላ መዋቅር ያላቸው ሀገራት ምርጫ፣ የሕዝብ ተሳትፎ፣ የሕግ የበላይነትና የመብቶች ጥበቃ ሊኖራቸው ይችላል።"
+  },
+
+  {
+    question: "According to FDRE constitution Article 52(1) residual power is left to the regional governments.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Article 52(1) of the FDRE Constitution provides that all powers not given expressly to the federal government are reserved to the states. These are commonly referred to as residual powers.",
+    amharicExplanation: "የኢ.ፌ.ዲ.ሪ ሕገ-መንግስት አንቀጽ 52(1) በፌዴራል መንግስት በግልጽ ያልተሰጡ ሥልጣኖች ለክልሎች እንደሚቀሩ ይደነግጋል። እነዚህም ቀሪ ሥልጣኖች (Residual Powers) ተብለው ይጠራሉ።"
+  },
+
+  {
+    question: "Structurally position of any minister is categorized under the organ of the government that interprets law.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Ministers belong to the executive branch of government. They are responsible mainly for implementing and administering laws. The judiciary is the branch responsible for interpreting laws.",
+    amharicExplanation: "ሚኒስትሮች የመንግስት አስፈፃሚ አካል አባላት ናቸው። ዋና ተግባራቸው ሕጎችን መተግበርና አስተዳደራዊ ሥራዎችን መምራት ነው። ሕግን የመተርጎም ሥልጣን በዋናነት የፍርድ አካል ነው።"
+  },
+
+  {
+    question: "The presence of a constitution is guarantee for the prevalence of constitutionalism in a given state.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Having a constitution does not automatically guarantee constitutionalism. Constitutionalism requires the actual observance of constitutional rules, limitation of government power, rule of law, and protection of citizens' rights.",
+    amharicExplanation: "የሕገ-መንግስት መኖር ብቻውን ሕገ-መንግስታዊነትን አያረጋግጥም። ሕገ-መንግስታዊነት ለሕገ-መንግስቱ በተግባር መገዛትን፣ የመንግስት ሥልጣንን መገደብን፣ የሕግ የበላይነትንና የዜጎችን መብት መጠበቅን ይፈልጋል።"
+  },
+
+  {
+    question: "According to the 1995 FDRE constitution, the House of People's Representatives has the power to interpret the constitution.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Under the 1995 FDRE Constitution, constitutional interpretation is ultimately the responsibility of the House of Federation. The Council of Constitutional Inquiry investigates constitutional issues and submits recommendations to the House of Federation.",
+    amharicExplanation: "በ1995ቱ የኢ.ፌ.ዲ.ሪ ሕገ-መንግስት መሠረት የሕገ-መንግስት ትርጓሜ የመስጠት የመጨረሻ ሥልጣን የፌዴሬሽን ምክር ቤት ነው። የሕገ-መንግስት ጉዳዮች አጣሪ ጉባኤ ጉዳዮችን በመመርመር ምክረ ሐሳብ ለፌዴሬሽን ምክር ቤት ያቀርባል።"
+  },
+
+  {
+    question: "The head of state in parliamentary form of government is always head of government, such as president.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "In a parliamentary system, the head of state and head of government are usually separate positions. The head of state may be a president or monarch, while the prime minister is generally the head of government.",
+    amharicExplanation: "በፓርላማ ስርዓት ውስጥ የሀገር ራስ (Head of State) እና የመንግስት ራስ (Head of Government) ብዙውን ጊዜ የተለያዩ ሰዎች ናቸው። የሀገር ራስ ፕሬዝዳንት ወይም ንጉሥ ሊሆን ይችላል፣ ጠቅላይ ሚኒስትሩ ግን በአብዛኛው የመንግስት ራስ ነው።"
+  },
+
+  {
+    question: "Democracy is a system that gives the people whatever they demand at a given moment, or in the shortest possible time.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Democracy does not mean giving people everything they demand immediately. It is a system based on participation, equality, representation, deliberation, and lawful decision-making that considers the broader interests of society.",
+    amharicExplanation: "ዲሞክራሲ ማለት ሕዝቡ የጠየቀውን ሁሉ ወዲያውኑ ወይም በአጭር ጊዜ የሚሰጥ ስርዓት አይደለም። ዲሞክራሲ በሕዝብ ተሳትፎ፣ እኩልነት፣ ውክልና፣ ውይይትና በሕጋዊ ውሳኔ አሰጣጥ ላይ የተመሠረተ ስርዓት ነው።"
+  },
+
+  {
+    question: "Exclusive powers are exercised jointly by federal and regional units in federal states.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Exclusive powers are assigned solely to one level of government. They are not jointly exercised by the federal and regional governments. Jointly exercised powers are different from exclusive powers.",
+    amharicExplanation: "ለየት ያሉ (Exclusive) ሥልጣኖች በፌዴራልና በክልል መንግስታት በጋራ የሚሠሩ አይደሉም። እነዚህ ሥልጣኖች ለአንድ የመንግስት ደረጃ ብቻ የተመደቡ ናቸው። በጋራ የሚሠሩ ሥልጣኖች ከExclusive Powers የተለዩ ናቸው።"
+  },
+
+  {
+    question: "Depending on its amendment procedure, the 1995 FDRE constitution is flexible.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The 1995 FDRE Constitution is considered rigid because its amendment procedure is more difficult than the ordinary law-making process and requires special constitutional procedures and majorities.",
+    amharicExplanation: "የ1995ቱ የኢ.ፌ.ዲ.ሪ ሕገ-መንግስት ከተራ ሕጎች ማሻሻያ የበለጠ ውስብስብና አስቸጋሪ የሆነ የማሻሻያ ሂደት ስላለው Rigid Constitution ተብሎ ይቆጠራል።"
+  },
+
+  {
+    question: "In forms of government like Britain, a Minister can never be a member of its law making body.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "In parliamentary systems such as the United Kingdom, ministers can be members of the legislature. Ministers are commonly selected from members of Parliament and may serve in the House of Commons or House of Lords.",
+    amharicExplanation: "እንደ እንግሊዝ ባሉ የፓርላማ ስርዓቶች ሚኒስትሮች የሕግ አውጭ አካል አባላት ሊሆኑ ይችላሉ። በእንግሊዝ ሚኒስትሮች ብዙውን ጊዜ ከፓርላማ አባላት ይመረጣሉ።"
+  },
+
+  {
+    question: "Written constitution enjoys more special status in legal systems than unwritten constitution.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "A written constitution is formally codified and usually has a special legal status as the supreme law of the state. Other laws must generally conform to its provisions.",
+    amharicExplanation: "በጽሑፍ የተዘጋጀ ሕገ-መንግስት በይፋ በሰነድ የተደነገገ ስለሆነ በሕግ ሥርዓት ውስጥ ልዩና ከፍተኛ የሕግ ደረጃ ይኖረዋል። ሌሎች ሕጎችም ከሕገ-መንግስቱ ጋር መጣጣም አለባቸው።"
+  },
+
+  {
+    question: "In unitary state structure, law making power is shared between the central government and administrative units.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "In a unitary state, constitutional authority is primarily concentrated in the central government. Administrative units may receive delegated powers, but their authority ultimately depends on the central government.",
+    amharicExplanation: "በነጠላ (Unitary) የመንግስት መዋቅር ውስጥ ዋናው የሕግ አውጭ ሥልጣን በማዕከላዊ መንግስት እጅ ይገኛል። የአስተዳደር ክፍሎች የተወሰነ ሥልጣን ሊሰጣቸው ቢችልም ይህ ሥልጣን በመጨረሻ በማዕከላዊ መንግስት ላይ የተመሠረተ ነው።"
+  },
+
+  {
+    question: "The federation of Eritrea with Ethiopia was a reason for the revision of the 1987 constitution.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The federation of Eritrea with Ethiopia was associated with the constitutional developments that led from the 1931 Constitution to the 1955 Constitution, not the 1987 PDRE Constitution. The 1987 Constitution was adopted during the Derg period and reflected the political and ideological system of that time.",
+    amharicExplanation: "የኤርትራ ከኢትዮጵያ ጋር ፌዴሬሽን መመስረት ከ1931ቱ ሕገ-መንግስት ወደ 1955ቱ ሕገ-መንግስት ለመሸጋገር ከተያያዙ ምክንያቶች አንዱ ነበር፤ የ1987ቱ የኢህዲሪ/PDRE ሕገ-መንግስት ግን በደርግ ዘመን የነበረውን የፖለቲካና የርዕዮተ ዓለም ሥርዓት ያንጸባረቀ ነበር።"
+  },
+
+  {
+    question: "The 1987 PDRE constitution is the first constitution which has declared Ethiopia as a multinational state with various nationalities.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The 1987 PDRE Constitution formally recognized the multinational character of Ethiopia and addressed the equality and cultural identity of the country's nations and nationalities.",
+    amharicExplanation: "የ1987ቱ የኢህዲሪ (PDRE) ሕገ-መንግስት ኢትዮጵያ በተለያዩ ብሔር ብሔረሰቦች የተዋቀረች ሀገር መሆኗን በይፋ ከገለጹ የመጀመሪያዎቹ የሕገ-መንግስት ሰነዶች አንዱ ነበር። የብሔር ብሔረሰቦችን ማንነትና እኩልነትም አፅንዖት ሰጥቷል።"
+  },
+
+  {
+    question: "Government is the agency of state which exercises sovereignty on behalf of the state.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Government is the organized machinery through which the state exercises its authority and sovereignty. It makes and implements public decisions and performs state functions on behalf of the state.",
+    amharicExplanation: "መንግስት ሀገር ሉዓላዊ ሥልጣኗን የምትጠቀምበት የተደራጀ የአስተዳደር አካል ነው። በሀገር ስም የሕዝብ ጉዳዮችን ያስተዳድራል፣ ሕጎችንና ፖሊሲዎችንም ይተገብራል።"
+  },
+
+  {
+    question: "Transparency is a principle which holds the idea that all actions of the government and officials have to be clearly known to the public.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Transparency means that government decisions, activities, and the use of public authority should be open and accessible to the public, subject to lawful limitations. It promotes accountability and public trust.",
+    amharicExplanation: "ግልጽነት (Transparency) ማለት የመንግስት ውሳኔዎች፣ ተግባራትና የሕዝብ ሥልጣን አጠቃቀም ለሕዝብ ግልጽና ተደራሽ መሆን እንዳለበት የሚያመለክት መርህ ነው። ግልጽነት ተጠያቂነትንና የሕዝብ እምነትን ለማጠናከር ይረዳል።"
+  }]
 
     }
 
