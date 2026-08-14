@@ -1,21 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Anthropology - Chapter 4</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+
+<!-- =====================================
+     TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">
+            📖
+        </span>
+
+        <div>
+
+            <h1>
+                Anthropology
+            </h1>
+
+            <p>
+                Chapter 4
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     YOUR CHAPTER CONTENT
+===================================== -->
+
 <div class="chapter">
 
-<h1>🧑‍🤝‍🧑 Anthropology</h1>
+    <h1>
+        🧑‍🤝‍🧑 Anthropology
+    </h1>
 
-<h2>Chapter 4</h2>
 
-<p>
-
-  <h2>Chapter 4 #Anthro</h2>
+    <h2>
+        Chapter 4
+    </h2>
 <h3>Marginalization Definition of concepts</h3>
 <p>በዚህ ቻፕተር ስር አስፈላጊ የሆኑ Conceptኦችን ብቻ አጠር አጠር አድርገን [አስፈላጊውን ሁሉ ሳናስቀር] እናያለን።</p>
 <p><b>What is marginalization?</b></p>
@@ -58,21 +127,48 @@
 <p>"All forms of marginalization and discrimination against vulnerable and minority groups contradict the principles of human rights. The major human rights conventions denounce discrimination against women, children, people with disability, older people and other minority and vulnerable groups."</p>
 <p>ቻፕተር 4 እንዳያቹት ትንሽ ናት ደግሞም ግልፅ፣ እጥር ምጥን አድርገን ነው ያቀረብነው። በቀጣይ Chapter 5 እናያለን። Anthropology Course እንዳያሳስባችሁ አንብቡ! አትጨናነቁ በርቱ</p>
 
-</p>
-
-<div class="chapterNav">
-
-<a href="anthropology-chapter3.html">
-⬅ Previous
-</a>
-
-<a href="anthropology-chapter5.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+
+<!-- =====================================
+     TOP NAVIGATION JAVASCRIPT
+===================================== -->
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+
+        history.back();
+
+    } else {
+
+        window.location.href =
+            "anthropology.html";
+
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href =
+        "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
