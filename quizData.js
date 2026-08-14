@@ -14928,7 +14928,1208 @@ const quizData = {
   englishExplanation: "In a democratic system, exercising one's rights requires respecting the rights and freedoms of others. Rights are accompanied by responsibilities toward other members of society.",
   amharicExplanation: "በዲሞክራሲያዊ ስርዓት የራስን መብት መጠቀም የሌሎችንም መብትና ነፃነት ማክበርን ይጠይቃል። መብቶች ከሌሎች ሰዎች ጋር ካለን ሃላፊነት ጋር አብረው ይሄዳሉ።"
 },{     question: "Ethics refers to the degree to which an action conforms to standard or norm of human conduct.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "This statement describes morality, not ethics. Morality refers to how an individual action conforms to standards or norms of human conduct, whereas ethics is the systematic study of moral principles and conduct.",     amharicExplanation: "ይህ መግለጫ Ethicsን ሳይሆን Morality (ሞራልን) ነው የሚገልጸው። ሞራል ማለት አንድ ተግባር ከሰዎች መደበኛ ባህሪ ወይም መስፈርት ጋር የሚጣጣምበት ደረጃ ሲሆን፣ Ethics ግን የሞራል መርሆችን እና ባህሪን የሚያጠና ነው።"   },    {     question: "Ethics is primarily the matter of knowledge whereas morality is the matter of action.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Ethics deals with the theoretical understanding and critical study of human conduct, while morality is practical and concerns actual actions and conduct.",     amharicExplanation: "Ethics በዋናነት ስለ እውቀት፣ ንድፈ ሃሳብ እና የሰው ባህሪ ጥናት ላይ ያተኩራል፤ Morality ግን በተግባራዊ አድራጎትና ባህሪ ላይ ያተኩራል።"   },    {     question: "Morality is a standard or human moral conduct and it is more theoretical and general than ethics.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "The statement is false because ethics is more theoretical and reflective, while morality is more practical and concerned with actual human conduct.",     amharicExplanation: "መግለጫው ሐሰት ነው። Ethics የበለጠ ንድፈ ሃሳባዊና አስተሳሰባዊ ሲሆን፣ Morality ግን በተግባራዊ የሰው ባህሪና አድራጎት ላይ ያተኩራል።"   },    {     question: "Because laws refer to the formalization of ethical norms, whatever is legally permitted is morally permitted.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Something being legal does not necessarily mean that it is morally right. Some practices that were legally permitted in history were later recognized as morally wrong.",     amharicExplanation: "አንድ ነገር ሕጋዊ መሆኑ ብቻ ሞራላዊ ትክክል ነው ማለት አይደለም። በታሪክ ውስጥ በሕግ የተፈቀዱ ነገሮች ነበሩ፣ ነገር ግን ከሞራል አንጻር ተሳሳተ ነበሩ።"   },    {     question: "The minimal concept of civic education is comprised of knowledge, values, and skills and aims to prepare students for active and responsible participation.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "This description refers to the maximal concept of civic education. The maximal concept incorporates knowledge, values, and skills and prepares learners for active and responsible participation.",     amharicExplanation: "ይህ መግለጫ የMinimal ሳይሆን የMaximal የሲቪክ ትምህርት ጽንሰ-ሀሳብን ይገልጻል። Maximal እውቀትን፣ እሴቶችን እና ክህሎቶችን በማካተት ንቁና ኃላፊነት ያለው ተሳትፎን ያበረታታል።"   },    {     question: "The objective of the current moral and citizenship education in Ethiopia is to create apathy and politically subject citizens in the country.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Moral and citizenship education aims to develop active, responsible, participatory, and competent citizens, not apathetic or politically submissive citizens.",     amharicExplanation: "የሞራልና የዜግነት ትምህርት ዓላማ ግዴለሾች ወይም ታዛዥ ዜጎችን መፍጠር ሳይሆን፣ ንቁ፣ ኃላፊነት የሚሰማቸው እና ተሳታፊ ዜጎችን ማፍራት ነው።"   },    {     question: "Ethics is concerned with the study of beauty in human behavior.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "The study of beauty and art is called aesthetics, not ethics. Ethics deals with morality, values, and questions of right and wrong.",     amharicExplanation: "የስነ-ውበትና የጥበብ ጥናት Aesthetics ይባላል። Ethics ግን በሞራል፣ በእሴቶች እና በትክክልና ስህተት የሰው ባህሪ ላይ ያተኩራል።"   },    {     question: "Ethical questions are concerned with what one would do.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Ethical questions are mainly concerned with what one ought to do, meaning what a person should do according to moral principles.",     amharicExplanation: "የEthics ጥያቄዎች በዋናነት ሰው ምን ማድረግ እንዳለበት ይመለከታሉ። ስለዚህ 'what one ought to do' እንጂ በቀላሉ 'what one would do' አይደለም።"   },    {     question: "Although one country has population, territory, government, sovereignty, and recognition, we can't consider it as a state if its government is a dictator.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Dictatorship is a type of government. A state can exist whether its government is democratic, authoritarian, or dictatorial, provided it possesses the necessary characteristics of a state.",     amharicExplanation: "አምባገነንነት የመንግሥት ዓይነት ነው። አንድ ሀገር ህዝብ፣ ግዛት፣ መንግሥት እና ሉዓላዊነት ያላት ከሆነ የመንግሥቷ አስተዳደር አምባገነን ቢሆንም እንደ ስቴት ልትቆጠር ትችላለች።"   },    {     question: "Which one of the following is not the main objective of civics and moral education?",     options: [       "The issue of fostering intercultural society",       "The need for participant culture",       "The issue of exclusiveness",       "The issue of peace building",       "The need to instill citizens about their rights and duties",       "None"     ],     answer: 2,     englishExplanation: "Civics and moral education promotes inclusion, tolerance, respect for diversity, peace, and responsible citizenship. Exclusiveness is contrary to these objectives.",     amharicExplanation: "የሲቪክና ሞራል ትምህርት አካታችነትን፣ መቻቻልን፣ ልዩነትን ማክበርን፣ ሰላምን እና ኃላፊነት ያለው ዜግነትን ያበረታታል። Exclusiveness ግን ከእነዚህ ዓላማዎች ጋር ይቃረናል።"   },    {     question: "Which one of the following is not true?",     options: [       "Human being is a social animal",       "Good citizens are made",       "Good citizens are born",       "Human being is a political animal"     ],     answer: 2,     englishExplanation: "Good citizens are made through education, socialization, experience, and participation. They are not simply born as good citizens.",     amharicExplanation: "ጥሩ ዜጎች በትምህርት፣ በማህበራዊ ኑሮ፣ በልምድ እና በተሳትፎ የሚቀረጹ ናቸው። ተወልደው በቀጥታ ጥሩ ዜጋ አይሆኑም።"   },    {     question: "Citizenship and moral education aim to equip students and seek to promote the following except one:",     options: [       "Fairness",       "Tolerance",       "Ethio-centrism",       "All",       "None"     ],     answer: 2,     englishExplanation: "Civic and moral education promotes fairness and tolerance. Ethio-centrism, when understood as a narrow or exclusive group-centered attitude, is not a desired civic value.",     amharicExplanation: "የዜግነትና ሞራል ትምህርት ፍትህንና መቻቻልን ያበረታታል። Ethio-centrism እንደ ጠባብ የቡድን ተኮር አመለካከት ሲወሰድ የሚፈለግ የዜግነት እሴት አይደለም።"   },    {     question: "Mr. Abebe strongly believes that he has no power to change or affect things even at local levels and distances himself from the entire political activities due to the concern of winning daily bread. In addition, he considers politics a dirty game. Which political culture best describes Mr. Abebe?",     options: [       "Parochial",       "Subject",       "Participant",       "None"     ],     answer: 1,     englishExplanation: "Subject political culture describes people who are aware of the political system but feel powerless and remain passive rather than actively participating in politics.",     amharicExplanation: "Subject political culture የፖለቲካ ስርዓቱን በተወሰነ ደረጃ የሚያውቁ ነገር ግን በፖለቲካ ሂደት ላይ ተጽዕኖ ማሳደር እንደማይችሉ የሚያስቡና ተሳትፎአቸው ዝቅተኛ የሆነ ሰዎችን ይገልጻል።"   },    {     question: "In which of the following political cultures are the roles of the citizens insignificant?",     options: [       "Participant",       "Parochial",       "Subject",       "None",       "All"     ],     answer: 1,     englishExplanation: "In a parochial political culture, citizens have little or no awareness of the wider political system, so their political roles are insignificant.",     amharicExplanation: "በParochial political culture ውስጥ ዜጎች ስለ ሰፊው የፖለቲካ ስርዓት ግንዛቤያቸው አነስተኛ ወይም የለም። ስለዚህ የፖለቲካ ሚናቸው አነስተኛ ነው።"   },    {     question: "Of the following, one is not the purpose of moral and civic education:",     options: [       "The need for participant political culture",       "Build civic competence of citizens",       "Develop democratic outlook",       "Discourage sense of patriotism",       "None"     ],     answer: 3,     englishExplanation: "Moral and civic education aims to develop civic competence, democratic attitudes, active participation, and a constructive sense of patriotism. Therefore, discouraging patriotism is not its purpose.",     amharicExplanation: "የሞራልና ሲቪክ ትምህርት የዜግነት ብቃትን፣ ዴሞክራሲያዊ አመለካከትን፣ ንቁ ተሳትፎን እና ጤናማ የሀገር ፍቅርን ማዳበር ያለመ ነው። ስለዚህ የPatriotism ስሜትን ማዳከም ዓላማው አይደለም።"   },    {     question: "Which of the following is correct about the difference between Civics and ethics?",     options: [       "Civics deals with the rights and duties of citizens whereas ethics studies about the morality of the society.",       "Civics mainly focuses on the horizontal interaction of the society whereas ethics targets the vertical relation of the society with the governing body.",       "Civics especially focuses on moral dilemmas whereas ethics emphasizes on the artificial rules made by organized society.",       "All of the above"     ],     answer: 0,     englishExplanation: "Civics focuses on the rights and duties of citizens and their relationship with the state, while ethics deals with moral principles, values, and questions of right and wrong.",     amharicExplanation: "Civics የዜጎችን መብቶችና ግዴታዎች እና ከመንግሥት ጋር ያላቸውን ግንኙነት ይመለከታል። Ethics ግን የሞራል መርሆችን፣ እሴቶችን እና ትክክልና ስህተትን ያጠናል።"   },    {     question: "All of the following are correct about ethics and morality except:",     options: [       "Ethics is a subject matter of morality, whereas morality is the philosophical underpinning of ethics.",       "Morality provides rational justification about ethical issues whereas ethics specifically implies moral terms.",       "Morality is a subject matter whereas ethics is the field of study about morality.",       "Both terms are absolutely synonyms so that we use them interchangeably."     ],     answer: 3,     englishExplanation: "Ethics and morality are closely related, but they are not absolute synonyms. Ethics generally refers to the systematic study of morality, while morality refers to moral principles, standards, and actual conduct.",     amharicExplanation: "Ethics እና Morality በጣም የተያያዙ ቢሆኑም ሙሉ በሙሉ ተመሳሳይ ቃላት አይደሉም። Ethics በአጠቃላይ የMorality ስርዓታዊ ጥናት ሲሆን፣ Morality ደግሞ የሞራል መርሆችን፣ መስፈርቶችን እና ተግባራዊ ባህሪን ያመለክታል።"   },    {     question: "Among the following, one is valid about Anthropocentrism view of environmental ethics:",     options: [       "Give equal credit for all living things",       "Emphasis on intrinsic value of environment",       "Emphasis on the instrumental value of environment",       "All living things are interdependent having intrinsic value"     ],     answer: 2,     englishExplanation: "Anthropocentrism is a human-centered view that emphasizes the instrumental value of the environment, meaning the environment is valued mainly according to its usefulness to humans.",     amharicExplanation: "Anthropocentrism ሰውን ማዕከል ያደረገ እይታ ነው። አካባቢው ዋጋ የሚኖረው በዋናነት ለሰው ልጅ ባለው ጥቅም ነው ብሎ ያምናል። ይህም Instrumental Value ይባላል።"   },    {     question: "In which history of civic education in Ethiopia was political education highly skewed to inculcating the socialist ideology in the minds of the students?",     options: [       "Imperial Era",       "Derg regime",       "Current Era",       "B and E",       "None"     ],     answer: 1,     englishExplanation: "During the Derg regime, political education and school curricula were strongly influenced by socialist and Marxist-Leninist ideology.",     amharicExplanation: "በደርግ መንግሥት ዘመን የፖለቲካ ትምህርትና የትምህርት ሥርዓቱ በሶሻሊስት እና በማርክሲዝም-ሌኒኒዝም አስተሳሰብ በጣም ተጽዕኖ ስር ነበር።"   },    {     question: "We know that the main purpose to be achieved of Civic Education is to create GOOD CITIZENS. What does it mean good citizen?",     options: [       "Citizen who is competent.",       "Citizen who is committed.",       "Citizen who is prejudiced.",       "All",       "All except C",       "None"     ],     answer: 4,     englishExplanation: "A good citizen should be competent and committed. Competence means having the knowledge and skills needed for responsible citizenship, while commitment means being willing to participate responsibly. Being prejudiced contradicts good citizenship. Therefore, All except C is correct.",     amharicExplanation: "ጥሩ ዜጋ ማለት ብቁ (competent) እና ቁርጠኛ (committed) የሆነ ዜጋ ነው። Prejudiced መሆን ግን ከጥሩ ዜግነት ጋር ይቃረናል። ስለዚህ 'All except C' ትክክለኛው መልስ ነው።"   }],
-        2: [],
+        2: [ {
+    question: "If you are egoist you will act for the sake of others' pleasure even if it causes pain on you.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Ethical egoism is the view that a person should act in their own self-interest. An egoist does not sacrifice their own well-being simply for the pleasure of others.",
+    amharicExplanation: "ኢቲካል ኢጎኢዝም (Ethical Egoism) ማለት ሰው በዋናነት የራሱን ጥቅም ማስቀደም አለበት የሚል አመለካከት ነው። ስለሌሎች ደስታ ብሎ የራሱን ደህንነት መስዋዕት ማድረግ ኢጎኢዝም አይደለም።"
+  },
+
+  {
+    question: "Deontological ethics stress on features of the act itself other than the value it brings into existence.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Deontological ethics focuses on the nature of the action itself, moral duties, and rules rather than mainly judging an action by its consequences.",
+    amharicExplanation: "ዲኦንቶሎጂካል ስነ-ምግባር (Deontological Ethics) የሚያተኩረው በድርጊቱ ውጤት ላይ ብቻ ሳይሆን ድርጊቱ ራሱ ትክክል መሆኑን፣ ግዴታን እና የሞራል ህጎችን በመመርመር ነው።"
+  },
+
+  {
+    question: "Deontological theory of ethics is totally in opposition to the maxim 'the end justifies the means' principle.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Deontological ethics rejects the idea that a good result automatically makes an action morally acceptable. It emphasizes duties, rules, and the moral nature of the action itself.",
+    amharicExplanation: "ዲኦንቶሎጂ ውጤቱ ጥሩ ከሆነ ማንኛውም ድርጊት ትክክል ነው የሚለውን 'መጨረሻው ውጤት መንገዱን ያጸድቃል' የሚለውን መርህ አይቀበልም። ይልቁንም ድርጊቱ ከግዴታና ከሞራል ህጎች ጋር መጣጣሙን ያጤናል።"
+  },
+
+  {
+    question: "Like ethical egoism, utilitarianism is a universal teleological system that calls for the maximization of goodness in society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Utilitarianism is a universal teleological theory that seeks the greatest overall good, but ethical egoism focuses on the individual's own self-interest rather than the good of society as a whole.",
+    amharicExplanation: "Utilitarianism ለአብዛኛው ሰው ከፍተኛውን ጥቅም ለማምጣት የሚፈልግ የTeleological ንድፈ ሀሳብ ነው። Ethical Egoism ግን የህብረተሰቡን ጥቅም በአጠቃላይ ከማስቀደም ይልቅ የግለሰቡን የራስ ጥቅም ያስቀድማል።"
+  },
+
+  {
+    question: "Virtue ethics focuses on what kind of person should we be instead of what should we do.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Virtue ethics focuses on moral character and asks what kind of person we should become. It emphasizes virtues such as honesty, courage, justice, and wisdom.",
+    amharicExplanation: "Virtue Ethics በዋናነት 'ምን አይነት ሰው መሆን አለብን?' በሚለው ላይ ያተኩራል። እንደ ታማኝነት፣ ድፍረት፣ ፍትህ እና ጥበብ ያሉ በጎ ባህሪያትን ያበረታታል።"
+  },
+
+  {
+    question: "Prima facie duties are rules that we must follow without exception.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Prima facie duties are duties that normally should be followed, but they can be overridden when they conflict with a stronger moral duty in a particular situation.",
+    amharicExplanation: "Prima facie duties ማለት በመደበኛነት መከተል የሚገባቸው ግዴታዎች ናቸው፤ ነገር ግን ከበለጠ አስፈላጊ የሞራል ግዴታ ጋር ከተጋጩ ሊቀየሩ ይችላሉ።"
+  },
+
+  {
+    question: "If the action with good intention brings bad consequence, then the act is immoral in light of categorical imperatives.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Kant's categorical imperative does not judge an action simply by its consequences. It focuses on moral duty and the principle or intention behind the action.",
+    amharicExplanation: "የካንት Categorical Imperative ድርጊትን በውጤቱ ብቻ አይመዝንም። በሞራል ግዴታ እና በድርጊቱ መርህ ላይ ያተኩራል። ስለዚህ ጥሩ ዓላማ ያለው ድርጊት መጥፎ ውጤት በማምጣቱ ብቻ ኢሞራል አይባልም።"
+  },
+
+  {
+    question: "Which one of the following is non normative ethical theory?",
+    options: [
+      "Ethical egoism",
+      "Utilitarianism",
+      "Deontological ethical theory",
+      "Meta ethical theory"
+    ],
+    answer: 3,
+    englishExplanation: "Meta-ethics is non-normative because it examines the meaning, nature, and foundations of moral concepts rather than prescribing what people should do.",
+    amharicExplanation: "Meta-Ethics የሞራል ቃላትን ትርጉም፣ ባህሪ እና መሰረት የሚያጠና ነው። ሰዎች ምን ማድረግ እንዳለባቸው ቀጥተኛ መመሪያ ስለማይሰጥ Non-normative ነው።"
+  },
+
+  {
+    question: "The cardinal virtues that help human being to make sound judgments and decisions based on knowledge, experience, and understanding.",
+    options: [
+      "Temperance",
+      "Courage",
+      "Wisdom",
+      "Justice"
+    ],
+    answer: 2,
+    englishExplanation: "Wisdom, or prudence, helps a person use knowledge, experience, and understanding to make sound judgments and practical decisions.",
+    amharicExplanation: "Wisdom ወይም Prudence በእውቀት፣ በልምድ እና በግንዛቤ ላይ ተመስርቶ ትክክለኛ ፍርድና ውሳኔ ለመስጠት የሚያግዝ ዋና በጎነት ነው።"
+  },
+
+  {
+    question: "According to Aristotle, virtue is:",
+    options: [
+      "Knowledge",
+      "Strength",
+      "Justice",
+      "Avoiding extremes"
+    ],
+    answer: 3,
+    englishExplanation: "According to Aristotle, moral virtue is the Golden Mean, which means finding the appropriate balance between excess and deficiency and avoiding extremes.",
+    amharicExplanation: "እንደ አሪስቶትል አባባል በጎነት ማለት ከከልክ በላይነትና ከእጥረት መካከል ያለውን ተገቢ መካከለኛ መንገድ መከተል ነው። ይህም Golden Mean ተብሎ ይጠራል።"
+  },
+
+  {
+    question: "-------------- Utilitarianism type views pleasure as the sole good and pain as the only evil.",
+    options: [
+      "Classic Utilitarianism",
+      "Hedonistic utilitarianism",
+      "Eudaimonistic utilitarianism",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Hedonistic utilitarianism considers pleasure or happiness to be the sole intrinsic good and pain or suffering to be the only intrinsic evil.",
+    amharicExplanation: "Hedonistic Utilitarianism ደስታን ወይም ተድላን ብቸኛው ጥሩ ነገር እና ህመምን ወይም ስቃይን ብቸኛው መጥፎ ነገር አድርጎ ይመለከታል።"
+  },
+
+  {
+    question: "Which one of the following is correct ethical principle for ethical egoists?",
+    options: [
+      "You should take advantage of a situation unless you are foolish.",
+      "You ought to give up your own interest for the interest of the others.",
+      "You ought to behave virtuously based on your good moral character.",
+      "You ought to follow moral norms of the society to make right decisions."
+    ],
+    answer: 0,
+    englishExplanation: "Ethical egoism teaches that a person should pursue their own self-interest. Therefore, taking advantage of a beneficial situation for oneself is consistent with ethical egoism.",
+    amharicExplanation: "Ethical Egoism የራስን ጥቅም ማስቀደምን ያስተምራል። ስለዚህ ለራስ ጥቅም የሚያስገኝ አጋጣሚ ሲኖር እሱን መጠቀም ከEthical Egoism መርህ ጋር ይስማማል።"
+  },
+
+  {
+    question: "Which one of the following is categorized under teleological normative ethics?",
+    options: [
+      "Consequentialism",
+      "Deontology",
+      "Utilitarianism",
+      "Altruism",
+      "All",
+      "All except 'B'"
+    ],
+    answer: 5,
+    englishExplanation: "Consequentialism, utilitarianism, and altruism can be classified under teleological approaches because they emphasize outcomes or the good produced. Deontology is based on duties and rules, so it is the exception.",
+    amharicExplanation: "Consequentialism፣ Utilitarianism እና Altruism በውጤት ወይም በሚመጣው ጥቅም ላይ የሚያተኩሩ የTeleological አቀራረቦች ናቸው። Deontology ግን በግዴታና በህግ ላይ ስለሚያተኩር ከዚህ ውጭ ነው።"
+  },
+
+  {
+    question: "In teleological theory which states that an act or rule of action is right if and only if it brings good result for oneself?",
+    options: [
+      "Ethical egoism",
+      "Utilitarianism",
+      "Universalism",
+      "B and C",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation: "Ethical egoism states that an action is morally right when it produces a good result for the person performing the action, especially when it promotes their own self-interest.",
+    amharicExplanation: "Ethical Egoism አንድ ድርጊት ለራስ ጥሩ ውጤት ካስገኘ ትክክለኛ ነው የሚል አመለካከት ነው። ስለዚህ ትክክለኛው መልስ Ethical Egoism ነው።"
+  },
+
+  {
+    question: "Which theories of ethics determines an act as right or wrong based on the rule under which it falls produces?",
+    options: [
+      "Teleological",
+      "Deontological",
+      "Virtue",
+      "A and C",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Deontological ethics determines whether an action is right or wrong according to moral rules, duties, or obligations rather than its consequences.",
+    amharicExplanation: "Deontological Ethics አንድ ድርጊት ትክክል ወይም ስህተት መሆኑን በሞራል ህግ፣ ግዴታ ወይም የሚከተለው መርህ መሰረት ይወስናል።"
+  },
+
+  {
+    question: "Ethical theory that investigates where our ethical principles come from and the meaning of ethical terms themselves is called:",
+    options: [
+      "Professional ethics",
+      "Applied ethics",
+      "Normative ethics",
+      "Meta ethics"
+    ],
+    answer: 3,
+    englishExplanation: "Meta-ethics investigates the meaning, origin, nature, and foundations of moral concepts and ethical terms.",
+    amharicExplanation: "Meta-Ethics የሞራል መርሆዎች ከየት እንደመጡ፣ የሞራል ቃላት ትርጉም ምን እንደሆነ እና የሞራል እሴቶች መሰረት ምን እንደሆነ ይመረምራል።"
+  },
+
+  {
+    question: "All are valid about applied ethics except:",
+    options: [
+      "It is the application of ethical theories to solve our problems.",
+      "It deals with controversial moral issues.",
+      "It studies about the meaning of ethical terms.",
+      "All"
+    ],
+    answer: 2,
+    englishExplanation: "Applied ethics applies moral theories to practical and controversial issues. Studying the meaning of ethical terms is mainly the subject of meta-ethics.",
+    amharicExplanation: "Applied Ethics የስነ-ምግባር ንድፈ ሀሳቦችን በተግባራዊና አከራካሪ የሞራል ጉዳዮች ላይ ይተገብራል። የሞራል ቃላትን ትርጉም ማጥናት ግን የMeta-Ethics ስራ ነው።"
+  },
+
+  {
+    question: "Most patriots give their life in war to keep their peoples from enemies. Which ethics theory displayed?",
+    options: [
+      "Ethical egoism",
+      "Utilitarianism",
+      "Altruism",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Altruism involves concern for the welfare of others and may involve sacrificing one's own interests or well-being for the benefit of others.",
+    amharicExplanation: "Altruism ማለት ለሌሎች ደህንነትና ጥቅም ሲባል የራስን ጥቅም ወይም ህይወት እንኳን መስዋዕት ማድረግ ነው። ስለዚህ ለህዝባቸው ሲሉ ህይወታቸውን የሚሰጡ አርበኞች የAltruism ምሳሌ ናቸው።"
+  },
+
+  {
+    question: "Abebe cheated on the exam from other students and got an 'A' grade in civics course. The action of Abebe is morally right according to:",
+    options: [
+      "Teleological ethics",
+      "Deontological ethics",
+      "Virtue ethics",
+      "Applied ethics"
+    ],
+    answer: 0,
+    englishExplanation: "Teleological ethics evaluates actions mainly according to their consequences. In a purely outcome-focused interpretation, the desirable result of getting an 'A' could be used to justify the action, although cheating is generally considered morally wrong under many ethical frameworks.",
+    amharicExplanation: "Teleological Ethics ድርጊትን በዋናነት በሚያስከትለው ውጤት ይመዝናል። በዚህ የውጤት አቀራረብ አቤቤ 'A' ውጤት ማግኘቱ እንደ ጥሩ ውጤት ሊታይ ይችላል፤ ሆኖም መፈተኛ መኮረጅ በብዙ የስነ-ምግባር አመለካከቶች ስህተት ነው።"
+  },
+
+  {
+    question: "In which normative ethics, even if one follows the highest moral principles but the moral act is harmful or bad, it must be judged as a morally or ethically wrong act?",
+    options: [
+      "Teleological Ethics",
+      "Deontological Ethics",
+      "Meta Ethics",
+      "Developmental ethics"
+    ],
+    answer: 1,
+    englishExplanation: "Deontological ethics evaluates actions according to moral duties, rules, and principles. An action that violates a moral duty or principle can be judged wrong even when the person has a good intention.",
+    amharicExplanation: "Deontological Ethics ድርጊቶችን በሞራል ግዴታዎች፣ ህጎችና መርሆዎች መሰረት ይመዝናል። አንድ ድርጊት የሞራል ግዴታን ወይም መርህን ከጣሰ ጥሩ ዓላማ ቢኖረውም እንደ ስነ-ምግባር ስህተት ሊፈረድበት ይችላል።"
+  },
+  {
+    question: "Which ethical theory adapts the principle of the means justifies the end?",
+    options: [
+      "Altruism",
+      "Utilitarianism",
+      "Egoism",
+      "Categorical imperative"
+    ],
+    answer: 3,
+    englishExplanation: "The categorical imperative, associated with Kant and deontological ethics, focuses on moral duties and the way an action is performed rather than simply judging the action by its consequences.",
+    amharicExplanation: "Categorical Imperative ከኢማኑኤል ካንት እና ከDeontological Ethics ጋር የተያያዘ ሲሆን ትኩረቱ በድርጊቱ መንገድ፣ በግዴታ እና በሞራል ህግ ላይ ነው። ውጤቱ ብቻ የድርጊቱን ትክክለኛነት አይወስንም።"
+  },
+
+  {
+    question: "We have a duty not to harm others physically or psychologically that we should do when other moral factors are not considered. Which Ross's Prima Facie Duties is it?",
+    options: [
+      "Duties of Reparation",
+      "Duties of Justice",
+      "Duties of Non-maleficence",
+      "Duties of Self-improvement"
+    ],
+    answer: 2,
+    englishExplanation: "The duty of non-maleficence means having a moral obligation not to cause physical or psychological harm to other people. It is commonly summarized as 'do no harm.'",
+    amharicExplanation: "የNon-maleficence ግዴታ ማለት በሌሎች ሰዎች ላይ አካላዊ ወይም ስነ-ልቦናዊ ጉዳት እንዳናደርስ የሚጠይቀን የሞራል ግዴታ ነው።"
+  },
+
+  {
+    question: "Assume that Mr. Kebede has an urgent appointment with his girlfriend. And he is running quickly downtown to arrive at the place where his girlfriend is waiting for him. Unfortunately, he saw a man who is seriously injured by a car accident and needing help. For this reason, he decided to help the man and take him to the nearby hospital. Based on the given scenario, which duty is prioritized by Mr. Kebede?",
+    options: [
+      "Duty of fidelity over duty of beneficence",
+      "Duty of non-maleficence over duty of beneficence",
+      "Duty of beneficence over duty of fidelity"
+    ],
+    answer: 2,
+    englishExplanation: "Mr. Kebede had an appointment with his girlfriend, which represents a duty of fidelity. However, he chose to help a seriously injured person, representing a duty of beneficence. Therefore, he prioritized beneficence over fidelity.",
+    amharicExplanation: "አቶ ከበደ ከፍቅረኛቸው ጋር ቀጠሮ ነበራቸው፣ ይህም የFidelity ግዴታን ያሳያል። ነገር ግን በአደጋ የተጎዳን ሰው ለመርዳት ቀጠሮውን በመተው የBeneficence ግዴታን አስቀድሟል።"
+  },
+
+  {
+    question: "Alex gives hot praise to his best friend Girum because Girum teaches him how to ride a bike. Which Ross's Prima Facie Duties is it?",
+    options: [
+      "Duties of Fidelity",
+      "Duties of Beneficence",
+      "Duties of Non-maleficence",
+      "Duties of Justice",
+      "Duties of Gratitude"
+    ],
+    answer: 4,
+    englishExplanation: "The duty of gratitude requires us to appreciate and thank people who have helped us or done something good for us. Girum helped Alex learn how to ride a bike, so Alex's praise demonstrates gratitude.",
+    amharicExplanation: "የGratitude ግዴታ ማለት የረዱንን ወይም መልካም ነገር ያደረጉልንን ሰዎች ማመስገንና ማድነቅ ነው። ግሩም አሌክስን ብስክሌት እንዲነዳ ስላስተማረው አሌክስ ማመስገኑ የGratitude ግዴታን ያሳያል።"
+  },
+
+  {
+    question: "The absolute duties developed by Samuel Pufendorf are more alike to one of the following prima facie duties.",
+    options: [
+      "Duties of fidelity",
+      "Duties of justice",
+      "Duties of self-improvement",
+      "Duties of reparation"
+    ],
+    answer: 1,
+    englishExplanation: "Samuel Pufendorf's absolute duties are closely related to duties concerned with fairness and proper treatment of others. Among the given Ross's prima facie duties, duties of justice are the closest match.",
+    amharicExplanation: "ሳሙኤል ፑፌንዶርፍ ያቀረባቸው Absolute Duties ከሰዎችን በፍትሃዊነት ከመያዝና ከትክክለኛ አያያዝ ጋር ይያያዛሉ። ከRoss's Prima Facie Duties ውስጥ በቅርብ የሚዛመደው Duties of Justice ነው።"
+  },
+
+  {
+    question: "The view that moral rightness or wrongness does not depend on social approval, but on such individual considerations as whether the act or principle promotes human flourishing or ameliorates human suffering is known as:",
+    options: [
+      "Ethical relativism",
+      "Moral intuitionism",
+      "Ethical subjectivism",
+      "Ethical objectivism"
+    ],
+    answer: 3,
+    englishExplanation: "Ethical objectivism holds that moral rightness and wrongness are not determined simply by social approval or personal opinion. Moral judgments can be based on objective standards such as human well-being and reducing suffering.",
+    amharicExplanation: "Ethical Objectivism የሞራል ትክክለኛነትና ስህተት በማህበረሰብ ተቀባይነት ወይም በግል አስተያየት ብቻ እንደማይወሰን ያምናል። እንደ ሰብአዊ ደህንነትና ስቃይን መቀነስ ባሉ ተጨባጭ መስፈርቶች ላይ የሞራል ፍርድ ሊመሰረት ይችላል።"
+  },
+
+  {
+    question: "Due to the wrong actions of human beings, global warming increases at an alarming rate. As a result, the earth is becoming uninhabitable for living things. This violates the principle of:",
+    options: [
+      "The duty to limit consumption",
+      "The duty to future generations",
+      "The right to a livable environment",
+      "Polluters pay principle"
+    ],
+    answer: 2,
+    englishExplanation: "Human activities that make the earth increasingly uninhabitable violate the right to a safe, clean, and livable environment for living things and present and future generations.",
+    amharicExplanation: "የሰው ልጆች የተሳሳቱ ድርጊቶች የአለምን ሙቀት በማሳደግ ምድርን ለመኖር አስቸጋሪ ካደረጉ የሚኖሩ ፍጥረታት ንጹህ፣ ደህንነቱ የተጠበቀና ለመኖር ተስማሚ አካባቢ የማግኘት መብትን ይጥሳል።"
+  },
+
+  {
+    question: "Identify the wrong statement regarding the interplay between rights and duties.",
+    options: [
+      "A right implies one's duties",
+      "One's right implies other's duties",
+      "One's right implies one's interest",
+      "A state is a nucleus to care for society"
+    ],
+    answer: 2,
+    englishExplanation: "Rights and duties are closely related. A person's right often creates corresponding duties for others or for institutions. The statement that one's right implies one's own interest does not correctly express the rights-duties relationship in this context.",
+    amharicExplanation: "መብትና ግዴታ በጣም የተያያዙ ናቸው። የአንድ ሰው መብት ብዙ ጊዜ በሌሎች ሰዎች ወይም በተቋማት ላይ ተዛማጅ ግዴታን ይፈጥራል። 'One's right implies one's interest' የሚለው ግን የመብትና የግዴታን ግንኙነት በትክክል አይገልጽም።"
+  },
+
+  {
+    question: "Which one of the following best describes profession?",
+    options: [
+      "The ability to diagnose and solve complex, unstructured problems",
+      "The acquisition of knowledge through an informal educational process",
+      "Practical experience that ensures the driving role can be competed in a professional manner",
+      "A person whose occupation requires high level training and proficiency"
+    ],
+    answer: 3,
+    englishExplanation: "A profession is an occupation that requires specialized education, advanced training, knowledge, skills, and professional proficiency. Examples include law, medicine, and engineering.",
+    amharicExplanation: "Profession ማለት ልዩ የትምህርት ዝግጅት፣ ከፍተኛ ስልጠና፣ እውቀትና ሙያዊ ክህሎት የሚፈልግ የስራ መስክ ነው። ለምሳሌ ህግ፣ ህክምና እና ኢንጂነሪንግ ሙያዎች ናቸው።"
+  },
+
+  {
+    question: "The decision of 'Kidus' has been best explained by one of the following approaches to ethics:",
+    options: [
+      "Altruism",
+      "Meta ethics",
+      "Egoism",
+      "Non normative ethics",
+      "Utilitarianism"
+    ],
+    answer: 2,
+    englishExplanation: "Egoism is an ethical approach that emphasizes an individual's own self-interest. Kidus's decision is best explained by egoism because the decision was based on personal interest.",
+    amharicExplanation: "Egoism ማለት ግለሰብ የራሱን ጥቅም እና ፍላጎት በማስቀደም ውሳኔ ማድረግ አለበት የሚል የስነ-ምግባር አቀራረብ ነው። የኪዱስ ውሳኔ በራስ ጥቅም ላይ የተመሰረተ ስለሆነ Egoism ይወክላል።"
+  },
+
+  {
+    question: "Based on the above scenario, According to Deontology, is the soldier's action of killing hundreds to save millions morally right?",
+    options: [
+      "Yes, because the intention is to save lives.",
+      "No, because killing is inherently wrong regardless of the outcome.",
+      "It depends on the rules governing the situation.",
+      "Not enough information to evaluate."
+    ],
+    answer: 1,
+    englishExplanation: "Deontological ethics emphasizes moral duties and rules rather than simply calculating consequences. Under the principle presented in this question, killing is inherently wrong, so killing hundreds to save millions is not morally justified.",
+    amharicExplanation: "Deontological Ethics በዋናነት የሞራል ግዴታና ህግን ይመለከታል እንጂ ውጤቱን ብቻ አይመዝንም። በጥያቄው መርህ መሰረት መግደል በራሱ ስህተት ስለሆነ ብዙ ሰዎችን ለማዳን በመቶዎችን መግደል ትክክል አይደለም።"
+  },
+
+  {
+    question: "According to Utilitarianism, is the soldier's action of killing hundreds to save millions morally right?",
+    options: [
+      "Yes, because the overall benefit to society is greater.",
+      "No, because it violates individual rights.",
+      "It depends on the circumstances of the situation.",
+      "Not enough information to evaluate."
+    ],
+    answer: 0,
+    englishExplanation: "Utilitarianism evaluates actions mainly by their consequences and seeks the greatest overall good. If sacrificing hundreds saves millions, the total benefit is greater, so the action is considered morally right under this framework.",
+    amharicExplanation: "Utilitarianism ድርጊትን በሚያስከትለው ውጤት ይመዝናል። መቶዎችን በመስዋዕት ሚሊዮኖችን ማዳን ለአብዛኛው ሰው ከፍተኛ ጥቅም የሚያስገኝ ከሆነ፣ በUtilitarianism አመለካከት ድርጊቱ ትክክል ነው።"
+  },
+
+  {
+    question: "Normative ethics is the same as descriptive ethics.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Normative ethics asks how people should behave according to moral standards, while descriptive ethics describes how people actually behave and what moral beliefs they hold. Therefore, they are different.",
+    amharicExplanation: "Normative Ethics ሰዎች እንዴት መኖርና መስራት እንዳለባቸው ይመረምራል። Descriptive Ethics ግን ሰዎች በእውነቱ እንዴት እንደሚኖሩና ምን እንደሚያምኑ ይገልጻል። ስለዚህ አንድ አይደሉም።"
+  },
+
+  {
+    question: "A deontologist likely would be more concerned about the intention behind an act than a utilitarian would.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Deontological ethics gives importance to duties, principles, and the intention behind an action, whereas utilitarianism primarily evaluates actions according to their consequences and overall outcomes.",
+    amharicExplanation: "Deontological Ethics የድርጊቱን ግዴታ፣ መርህ እና ዓላማ ያስፈልገዋል። Utilitarianism ግን በዋናነት የድርጊቱን ውጤት ይመለከታል። ስለዚህ መግለጫው እውነት ነው።"
+  },
+
+  {
+    question: "Nonmaleficence is the obligation against harming others.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Nonmaleficence means the obligation to avoid causing harm to others. It is commonly expressed by the principle 'do no harm.'",
+    amharicExplanation: "Nonmaleficence ማለት በሌሎች ሰዎች ላይ ጉዳት እንዳናደርስ የሚያስገድደን የሞራል ግዴታ ነው። በአጭሩ 'ጉዳት አታድርስ' ማለት ነው።"
+  },
+
+  {
+    question: "Doctors have specific duties of beneficence to the sick that laypeople do not have.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Doctors have specialized professional responsibilities to promote the well-being of their patients because of their professional training, role, and ethical obligations.",
+    amharicExplanation: "ሐኪሞች በልዩ ሙያ፣ በስልጠና እና በሙያዊ ኃላፊነት ምክንያት የታመሙ ሰዎችን የመርዳትና ደህንነታቸውን የማሻሻል ልዩ የBeneficence ግዴታ አለባቸው።"
+  },
+
+  {
+    question: "The study of how ethical theories are put into practice describes ethical dilemmas.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The application of ethical theories to practical real-world moral problems is called applied ethics. An ethical dilemma is a situation in which competing moral values or duties create a difficult choice.",
+    amharicExplanation: "የስነ-ምግባር ንድፈ ሀሳቦችን በተግባራዊ የሞራል ጉዳዮች ላይ መተግበር Applied Ethics ይባላል። Ethical Dilemma ግን ሁለት ወይም ከዚያ በላይ የሞራል ግዴታዎች ሲጋጩ የሚፈጠር አስቸጋሪ የሞራል ምርጫ ነው።"
+  },
+
+  {
+    question: "An ethical dilemma occurs when there is no obvious 'right' or 'wrong' decision.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "An ethical dilemma occurs when competing moral principles, duties, or values make it difficult to identify one clearly correct choice.",
+    amharicExplanation: "Ethical Dilemma የሚከሰተው ተቃራኒ የሞራል መርሆዎች ወይም ግዴታዎች ሲጋጩና ግልጽ የሆነ ትክክለኛ ወይም ስህተተኛ ውሳኔ ለመለየት አስቸጋሪ ሲሆን ነው።"
+  },
+
+  {
+    question: "According to Socrates and Plato, we should act virtuously for the sake of others, regardless of whether acting morally improves our ability to discern what is good or to control our passions.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Socrates and Plato connected virtue with the improvement of the moral agent. Virtuous behavior helps a person understand what is good and control their passions. Therefore, the statement is false.",
+    amharicExplanation: "ሶቅራጥስና ፕላቶ በጎነት ሌሎችን ብቻ ለመጥቀም ሳይሆን የራሱን ሰው ስነ-ምግባራዊ ሁኔታ ለማሻሻልም እንደሚረዳ ያምኑ ነበር። በጎ መሆን መልካሙን እንድንለይና ምኞቶቻችንን እንድንቆጣጠር ይረዳናል። ስለዚህ መግለጫው ሀሰት ነው።"
+  },
+
+  {
+    question: "Hedonism is a form of teleological ethical theory insofar as it recommends that we act so as to produce happiness (pleasure) as the consequence of our actions.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Hedonism is teleological because it evaluates actions according to their consequences, especially whether they produce pleasure or happiness and reduce pain or suffering.",
+    amharicExplanation: "Hedonism የድርጊትን ትክክለኛነት በሚያስከትለው ውጤት ይመዝናል። በተለይም ደስታን እንዲያመጣና ህመምን እንዲቀንስ የሚያደርጉ ድርጊቶችን ያበረታታል። ስለዚህ የTeleological Ethics አካል ነው።"
+  },{
+    question: "The egoistic hedonist says that, if producing the greatest amount of pleasure for ourselves means that we have to take into account the pleasure of others, then we are under a moral obligation to do so.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation: "Egoistic hedonism focuses on maximizing one's own pleasure. If considering other people's pleasure is necessary to achieve greater personal pleasure, the egoistic hedonist has a reason to do so.",
+    amharicExplanation: "ኢጎኢስቲክ ሄዶኒዝም ዋና ትኩረቱ የራስን ደስታ ማሳደግ ላይ ነው። የሌሎችን ደስታ ግምት ውስጥ ማስገባት የራሳችንን ደስታ ለማሳደግ አስፈላጊ ከሆነ፣ ኢጎኢስቲክ ሄዶኒስት ይህንን ማድረግ ይገባዋል።"
+  },
+
+  {
+    question: "In Aristotle's virtue ethics, moral value is a purely private matter, unconnected to how people interact with others in the community.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation: "Aristotle's virtue ethics emphasizes community, social relationships, and civic life. Moral character develops through interaction and participation in society, so morality is not purely private.",
+    amharicExplanation: "የአሪስቶትል የበጎነት ስነ-ምግባር ማህበረሰብን፣ ማህበራዊ ግንኙነቶችን እና ከሌሎች ጋር ያለንን መስተጋብር አስፈላጊ ያደርገዋል። ስለዚህ የሞራል ዋጋ የግል ጉዳይ ብቻ አይደለም።"
+  },
+
+  {
+    question: "Because hedonism is a consequentialist way of thinking, it is more properly identified as a form of ethical egoism rather than as a form of psychological egoism.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation: "Hedonism focuses on pleasure as a consequence, but it is not necessarily ethical egoism. Utilitarianism can also be hedonistic while seeking happiness for everyone. Ethical egoism is normative, whereas psychological egoism is descriptive.",
+    amharicExplanation: "ሄዶኒዝም በውጤት ላይ የተመሰረተ ቢሆንም ከኤቲካል ኢጎኢዝም ጋር ብቻ አይመሳሰልም። ዩቲሊታሪያኒዝምም ደስታን እንደ ጥሩ ውጤት ይመለከታል ነገር ግን የሁሉንም ሰዎች ደስታ ያስባል።"
+  },
+
+  {
+    question: "Teleological theories of ethics determine the moral value of actions in terms of their consequences.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation: "Teleological or consequentialist theories judge the moral value of actions mainly by their results or consequences.",
+    amharicExplanation: "ቴሌዮሎጂካል ወይም በውጤት ላይ የተመሰረቱ የስነ-ምግባር ንድፈ-ሐሳቦች የድርጊትን ሞራላዊ ዋጋ የሚወስኑት በሚያስከትለው ውጤት ነው።"
+  },
+
+  {
+    question: "If psychological egoism is true, then no ethical position (including ethical egoism) is possible.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation: "Psychological egoism claims that people necessarily act in their own self-interest. If people cannot act otherwise, theories that prescribe how they ought to act become problematic because moral obligation normally assumes that people can choose differently.",
+    amharicExplanation: "ሳይኮሎጂካል ኢጎኢዝም ሰዎች ሁልጊዜ ለራሳቸው ጥቅም እንደሚሠሩ ይናገራል። ሰዎች ከዚህ ውጪ መሥራት ካልቻሉ፣ እንዴት መሥራት እንዳለባቸው የሚያዝዙ የሞራል ንድፈ-ሐሳቦች ችግር ይገጥማቸዋል።"
+  },
+
+  {
+    question: "Because ethical egoism claims that we are incapable of doing anything other than promoting our self-interests, it violates the moral dictum 'ought implies can.'",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation: "Ethical egoism says that we ought to act in our own self-interest. It does not say that we are incapable of acting otherwise. The claim that people are incapable of acting otherwise belongs to psychological egoism.",
+    amharicExplanation: "ኤቲካል ኢጎኢዝም ሰዎች የራሳቸውን ጥቅም ማስጠበቅ እንዳለባቸው ይናገራል፤ ነገር ግን ከዚህ ውጪ ሌላ ነገር ማድረግ አይችሉም አይልም። ይህ የማይችሉት እንደሆነ የሚገልጸው ሳይኮሎጂካል ኢጎኢዝም ነው።"
+  },
+
+  {
+    question: "For the utilitarian, the whole purpose of ethics and virtuous behavior is the production and increase of happiness.",
+    options: ["True", "False"],
+    answer: 0,
+    englishExplanation: "Utilitarianism aims to maximize overall happiness and reduce suffering. An action is morally valuable when it contributes to the greatest overall good.",
+    amharicExplanation: "ለዩቲሊታሪያን የስነ-ምግባር እና የበጎ ባህሪ ዋና ዓላማ አጠቃላይ ደስታን ማሳደግ እና ስቃይን መቀነስ ነው። ስለዚህ ደስታን ማብዛት ዋና ግቡ ነው።"
+  },
+
+  {
+    question: "_________ is a theory where your ethical principles are defined by the traditions of your society, your personal opinions, and the circumstances of the present moment.",
+    options: ["Ethics for the greater good", "Normative ethics", "Ethical relativism", "Utilitarianism"],
+    answer: 2,
+    englishExplanation: "Ethical relativism holds that moral principles can vary according to cultural traditions, personal opinions, and particular circumstances rather than being universally fixed.",
+    amharicExplanation: "ኤቲካል ሬላቲቪዝም የሞራል መርሆዎች ቋሚ እና ሁሉን አቀፍ አይደሉም ይላል። እነሱም በባህል፣ በግል አመለካከት እና በሁኔታ ሊለያዩ ይችላሉ።"
+  },
+
+  {
+    question: "Utilitarianism focuses mainly on _________.",
+    options: ["consequences", "actions", "moral skills", "honor"],
+    answer: 0,
+    englishExplanation: "Utilitarianism is a consequentialist theory that evaluates actions according to the consequences or outcomes they produce.",
+    amharicExplanation: "ዩቲሊታሪያኒዝም የድርጊትን ትክክለኛነት የሚመዝነው በሚያስከትለው ውጤት ስለሆነ ትኩረቱ በconsequences ወይም ውጤቶች ላይ ነው።"
+  },
+
+  {
+    question: "Which of the following is a major criticism of utilitarianism?",
+    options: [
+      "It fails to consider the intentions behind actions.",
+      "It places too much emphasis on individual rights.",
+      "It is too rigid and does not allow for exceptions.",
+      "It does not provide a clear method for calculating the greatest good."
+    ],
+    answer: 0,
+    englishExplanation: "A major criticism of utilitarianism is that it focuses primarily on consequences and may fail to give sufficient importance to the intentions or motives behind actions.",
+    amharicExplanation: "የዩቲሊታሪያኒዝም ዋና ትችት አንዱ የድርጊቱን ውጤት ብቻ በማተኮር ከድርጊቱ ጀርባ ያለውን ሐሳብ ወይም ማነሳሳት በቂ ትኩረት አለመስጠቱ ነው።"
+  },
+
+  {
+    question: "How does rule utilitarianism differ from act utilitarianism?",
+    options: [
+      "Rule utilitarianism focuses on the consequences of individual actions, while act utilitarianism focuses on the consequences of following general rules.",
+      "Rule utilitarianism focuses on the consequences of following general rules, while act utilitarianism focuses on the consequences of individual actions.",
+      "Rule utilitarianism is concerned with the intentions behind actions, while act utilitarianism is concerned with the outcomes.",
+      "Rule utilitarianism is a deontological theory, while act utilitarianism is a teleological theory."
+    ],
+    answer: 1,
+    englishExplanation: "Act utilitarianism evaluates each individual action by its consequences. Rule utilitarianism evaluates general rules according to whether following them would produce the greatest overall good.",
+    amharicExplanation: "አክት ዩቲሊታሪያኒዝም እያንዳንዱን ድርጊት በግል ውጤቱ ይመዝናል። ሩል ዩቲሊታሪያኒዝም ግን አጠቃላይ ህጎችን ሁሉም ሰዎች ቢከተሏቸው የሚመጣውን ጥቅም ይመዝናል።"
+  },
+
+  {
+    question: "According to virtue ethics, how are moral virtues primarily developed?",
+    options: [
+      "By following strict rules and regulations.",
+      "Through habitual practice and personal experience.",
+      "By maximizing overall happiness.",
+      "Through divine command and religious teachings."
+    ],
+    answer: 1,
+    englishExplanation: "Virtue ethics teaches that moral virtues develop through repeated practice, habituation, experience, and consistently performing good actions.",
+    amharicExplanation: "በቨርቹ ኤቲክስ መሰረት መልካም የሞራል ባህሪያት የሚዳብሩት በተደጋጋሚ ልምምድ፣ በልማድ እና በግል ተሞክሮ ነው።"
+  },
+
+  {
+    question: "The study of how ethical theories are put into practice refers to _________.",
+    options: ["applied ethics", "normative ethics", "descriptive ethics", "meta-ethics"],
+    answer: 0,
+    englishExplanation: "Applied ethics applies ethical theories and principles to practical and real-world moral problems and controversial issues.",
+    amharicExplanation: "አፕላይድ ኤቲክስ የሞራል ንድፈ-ሐሳቦችን እና መርሆዎችን በተግባራዊ የህይወት ችግሮች እና አወዛጋቢ ጉዳዮች ላይ የሚተገብር የኤቲክስ ክፍል ነው።"
+  },
+
+  {
+    question: "The legal requirement that participation in medical research be voluntary is an expression of which principle?",
+    options: ["beneficence", "nonmaleficence", "respect for autonomy", "justice"],
+    answer: 2,
+    englishExplanation: "Voluntary participation respects autonomy because it allows individuals to make their own informed decisions freely and without coercion.",
+    amharicExplanation: "በህክምና ምርምር በፈቃደኝነት መሳተፍ የሰውን የራሱን ውሳኔ በነፃነት የመስጠት መብት ያከብራል። ይህም Respect for autonomy ይባላል።"
+  },
+
+  {
+    question: "An ethical _________ is a situation in which there is no obvious 'right' or 'wrong' decision, but rather a 'right' or 'right' answer.",
+    options: ["choice", "dilemma", "impasse", "preference"],
+    answer: 1,
+    englishExplanation: "An ethical dilemma occurs when moral principles or obligations conflict, making it difficult to choose between competing morally acceptable options.",
+    amharicExplanation: "ኤቲካል ዲሌማ ማለት ተቃራኒ የሞራል መርሆዎች ሲጋጩ በሁለት ወይም በሚበልጡ አማራጮች መካከል ትክክለኛ ውሳኔ ለመምረጥ የሚከብድበት ሁኔታ ነው።"
+  },
+
+  {
+    question: "Which moral theory is most likely to view morality as a set of skills acquired through practice?",
+    options: ["deontology", "an ethic of care", "virtue ethics", "utilitarianism"],
+    answer: 2,
+    englishExplanation: "Virtue ethics views moral development as something learned through practice and habituation, similar to acquiring a practical skill.",
+    amharicExplanation: "ቨርቹ ኤቲክስ ሞራላዊ ባህሪን በተደጋጋሚ ልምምድና ልማድ የሚዳብር እንደ ችሎታ ይመለከተዋል።"
+  },
+
+  {
+    question: "Act-centered moral theories: what actions allow one to lead the good life—concern with what is the right thing to do given one's rights and obligations.",
+    options: ["Virtue ethics", "Utilitarianism", "Normative ethics", "Meta-ethics"],
+    answer: 2,
+    englishExplanation: "Normative ethics establishes standards and principles for determining what people ought to do and which actions are morally right or wrong.",
+    amharicExplanation: "ኖርማቲቭ ኤቲክስ ሰዎች ምን ማድረግ እንዳለባቸው እና የትኛው ድርጊት ትክክል ወይም ስህተት እንደሆነ የሚወስኑ መርሆዎችንና መመሪያዎችን ያጠናል።"
+  },
+
+  {
+    question: "_________ deals with logical and semantic questions like 'What do we mean by freedom and determinism?'",
+    options: ["applied ethics", "normative ethics", "practical ethics", "meta-ethics"],
+    answer: 3,
+    englishExplanation: "Meta-ethics examines the meaning, nature, and foundations of moral concepts and ethical language rather than prescribing particular actions.",
+    amharicExplanation: "ሜታ-ኤቲክስ የሞራል ቃላትን ትርጉም፣ ተፈጥሮ እና መሰረት ይመረምራል። ለምሳሌ 'ነፃነት' እና 'ዕጣ ፈንታ' ምን ማለት እንደሆኑ ይጠይቃል።"
+  },
+
+  {
+    question: "We should follow a given rule and judge acts according to that rule if, given everyone follows the rule, it would promote the greatest good for the greatest number.",
+    options: ["categorical imperative", "rule utilitarianism", "egoism", "virtue ethics"],
+    answer: 1,
+    englishExplanation: "Rule utilitarianism evaluates rules by considering whether widespread acceptance and following of those rules would produce the greatest good for the greatest number.",
+    amharicExplanation: "ሩል ዩቲሊታሪያኒዝም ሁሉም ሰዎች አንድን ህግ ቢከተሉ ለብዙዎች ከፍተኛውን ጥቅም ወይም ደስታ ያመጣልን በማለት ህጉን ይመዝናል።"
+  },
+
+  {
+    question: "A field of study of how one ought to live or concern with the Good.",
+    options: ["Morals", "Problem Of Consequences", "Ethics", "Altruism"],
+    answer: 2,
+    englishExplanation: "Ethics is the branch of philosophy that studies how people ought to live, what is good, and what makes actions morally right or wrong.",
+    amharicExplanation: "ኤቲክስ ሰዎች እንዴት መኖር እንዳለባቸው፣ መልካምነት ምን እንደሆነ እና ድርጊት ትክክል ወይም ስህተት የሚሆነው ለምን እንደሆነ የሚያጠና የፍልስፍና ዘርፍ ነው።"
+  },  {
+    question: "Each person ought to act to promote his or her own self-interest.",
+    options: [
+      "Utilitarianism",
+      "Ethical egoism",
+      "Kantianism",
+      "Virtue ethics"
+    ],
+    answer: 1,
+    englishExplanation: "Ethical egoism is the normative ethical theory stating that individuals should always act in their own self-interest.",
+    amharicExplanation: "ኤቲካል ኢጎኢዝም (Ethical egoism) ማለት ግለሰቦች ሁልጊዜ የራሳቸውን ጥቅም ታሳቢ አድርገው መንቀሳቀስ አለባቸው የሚል የሞራል ንድፈ ሐሳብ ነው።"
+  },
+
+  {
+    question: "Moral judgments are based on the effects produced (consequences) of an action.",
+    options: [
+      "Teleological theories",
+      "Utilitarianism",
+      "Normative ethics",
+      "Hypothetical imperative"
+    ],
+    answer: 0,
+    englishExplanation: "Teleological theories judge the morality of an action based on its outcomes or consequences.",
+    amharicExplanation: "ቴሌዎሎጂካል (Teleological) ንድፈ ሐሳቦች የድርጊትን ሞራላዊነት የሚወስኑት ድርጊቱ በሚያስከትለው ውጤት ወይም ፍጻሜ አንጻር ነው።"
+  },
+
+  {
+    question: "Duties that allow exceptions (non-absolute duty that can be overridden by a more compelling duty).",
+    options: [
+      "Prima facie duties",
+      "Virtue ethics",
+      "Actual duty",
+      "Normative ethics"
+    ],
+    answer: 0,
+    englishExplanation: "Prima facie duties are initial moral obligations that can be overridden by more important duties in specific circumstances.",
+    amharicExplanation: "ፕሪማ ፋሲ ዱቲስ (Prima facie duties) ማለት እንደየሁኔታው ከእነሱ የበለጠ ክብደት ባላቸው ሌሎች የሞራል ግዴታዎች ሊሻሩ የሚችሉ የመጀመሪያ ደረጃ ግዴታዎች ናቸው።"
+  },
+
+  {
+    question: "An act is right if it introduces the greatest amount of good for the greatest amount of people.",
+    options: [
+      "Utilitarianism",
+      "Egoism",
+      "Virtue ethics",
+      "Kantianism"
+    ],
+    answer: 0,
+    englishExplanation: "Utilitarianism evaluates actions based on their outcomes and seeks to maximize overall happiness or utility for the greatest number of people.",
+    amharicExplanation: "ዩቲሊቴሪያኒዝም (Utilitarianism) ለአብዛኛው ሰው ከፍተኛውን ደስታ ወይም ጥቅም የሚያስገኙ ድርጊቶች ትክክል ናቸው የሚል አስተሳሰብ ነው።"
+  },
+
+  {
+    question: "An act is right if it promotes the good or well-being of others, not the agent.",
+    options: [
+      "Altruism",
+      "Egoism",
+      "Virtue ethics",
+      "Kantianism"
+    ],
+    answer: 0,
+    englishExplanation: "Altruism is the moral principle of acting selflessly to benefit others, sometimes even at a personal cost.",
+    amharicExplanation: "አልትሩኢዝም (Altruism) ማለት የራስን ጥቅም ሳይሆን የሌሎችን ደህንነትና ጥቅም ለማሳደግ በራስ ወዳድነት ሳይሆን በበጎ ፈቃድ መሥራት ነው።"
+  },
+
+  {
+    question: "Intrinsic feature is whether an act's maxim can become a universal law and stems from reason.",
+    options: [
+      "Kantianism",
+      "Utilitarianism",
+      "Ethical Egoism",
+      "Speciesism"
+    ],
+    answer: 0,
+    englishExplanation: "Kantianism holds that an action is morally right when its guiding principle, or maxim, can be consistently applied as a universal law.",
+    amharicExplanation: "ካንቲያኒዝም (Kantianism) አንድ ድርጊት ሞራላዊ ትክክል የሚሆነው የድርጊቱ መርህ ወይም maxim በሁሉም ሰዎች ዘንድ እንደ ሁለንተናዊ ሕግ ሊተገበር ሲችል ነው።"
+  },
+
+  {
+    question: "Inquiry into the meaning of ethical terms or value terms and philosophical analysis of the meaning and character of ethical language.",
+    options: [
+      "Normative ethics",
+      "Meta-ethics",
+      "Bentham",
+      "Virtue ethics"
+    ],
+    answer: 1,
+    englishExplanation: "Meta-ethics explores the underlying nature, meaning, and linguistic foundations of moral concepts and terms.",
+    amharicExplanation: "ሜታ-ኤቲክስ (Meta-ethics) የሞራል ቃላትን ትርጉም፣ ምንነት እና መሠረት በጥልቀት የሚመረምር የፍልስፍና ዘርፍ ነው።"
+  },
+
+  {
+    question: "Agent-centered ethics focuses on the kind of character you have or the person you are that enables you to do good things.",
+    options: [
+      "Utilitarianism",
+      "Egoism",
+      "Virtue ethics",
+      "Normative ethics"
+    ],
+    answer: 2,
+    englishExplanation: "Virtue ethics emphasizes the development of good moral character and personal virtues rather than simply following rules or calculating consequences.",
+    amharicExplanation: "ቨርቹ ኤቲክስ (Virtue ethics) ትኩረቱን በድርጊቱ ውጤት ወይም በጥብቅ ሕጎች ላይ ብቻ ሳይሆን በባለድርጊቱ መልካም ስብዕናና የሞራል ባህሪ ላይ ያደርጋል።"
+  },
+
+  {
+    question: "Which of the following are the strengths of teleological ethical theories?",
+    options: [
+      "They fit with much of our ordinary moral reasoning",
+      "They focus on the nature of actions and the rules from which they follow",
+      "They ignore the consequences of actions",
+      "All of these",
+      "None of these"
+    ],
+    answer: 0,
+    englishExplanation: "Teleological theories fit with much of ordinary moral reasoning because people commonly consider the consequences of their actions when making moral decisions.",
+    amharicExplanation: "ቴሌዎሎጂካል ንድፈ ሐሳቦች ከዕለት ተዕለት የሰዎች የሞራል አስተሳሰብ ጋር ይጣጣማሉ፤ ምክንያቱም ሰዎች ውሳኔ ሲሰጡ የድርጊታቸውን ውጤት በተለምዶ ያጤናሉ።"
+  },
+
+  {
+    question: "Which of the following are the strengths of deontological ethical theories?",
+    options: [
+      "They fit with very little of our ordinary moral reasoning",
+      "They focus on the nature of actions and the rules from which they follow",
+      "They pay close attention to the consequences of actions",
+      "All of these",
+      "None of these"
+    ],
+    answer: 1,
+    englishExplanation: "Deontological theories emphasize duties, moral rules, and the nature of actions rather than judging actions primarily by their consequences.",
+    amharicExplanation: "ዴንቶሎጂካል ንድፈ ሐሳቦች ትኩረታቸውን በድርጊቶች ባህሪ፣ በሞራል ግዴታዎች እና በሚመሯቸው ሕጎች ላይ ያደርጋሉ።"
+  },
+
+  {
+    question: "Utilitarianism is an example of which of the following ethical theories?",
+    options: [
+      "Virtue",
+      "Intuitionism",
+      "Deontological",
+      "Teleological",
+      "Egoism"
+    ],
+    answer: 3,
+    englishExplanation: "Utilitarianism is a teleological theory because it evaluates the morality of actions according to their consequences or end results.",
+    amharicExplanation: "ዩቲሊቴሪያኒዝም የሞራል ዋጋውን ከሚያስከትለው ውጤት አንጻር ስለሚለካ የቴሌዎሎጂካል ንድፈ ሐሳብ ምሳሌ ነው።"
+  },
+
+  {
+    question: "Which is NOT a category of meta-ethical problems?",
+    options: [
+      "What is the nature of moral judgments?",
+      "How may moral judgments be supported or defended?",
+      "What is one's purpose in life?",
+      "What is the meaning of moral terms or judgments?"
+    ],
+    answer: 2,
+    englishExplanation: "What is one's purpose in life is mainly an existential or normative question, rather than a question about the meaning or nature of moral language and judgments.",
+    amharicExplanation: "የሕይወት ዓላማ ምንድን ነው? የሚለው ጥያቄ በዋናነት የሕይወት ትርጉም ወይም ኤክዚስተንሻል ጥያቄ ነው፤ የሜታ-ኤቲክስ ጥያቄ አይደለም።"
+  },
+
+  {
+    question: "Which branch of ethics is concerned with the practical means of determining a moral course of action?",
+    options: [
+      "Meta-Ethics",
+      "Applied Ethics",
+      "Ethical Dilemmas",
+      "Normative Ethics"
+    ],
+    answer: 3,
+    englishExplanation: "Normative ethics establishes moral standards and principles that help determine what people ought to do in different situations.",
+    amharicExplanation: "ኖርማቲቭ ኤቲክስ (Normative ethics) ሰዎች በተለያዩ ሁኔታዎች ውስጥ ምን ማድረግ እንዳለባቸው የሚመሩ የሞራል መርሆዎችንና መመሪያዎችን ያጠናል።"
+  },
+
+  {
+    question: "A utilitarian approach to ethics is concerned with _______.",
+    options: [
+      "What motivates us to act in particular ways",
+      "The consequences of our decisions",
+      "Maximising the good or benefit and minimising the harm that arises from our decisions",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Utilitarianism aims to maximize overall good or benefit and minimize harm resulting from our decisions and actions.",
+    amharicExplanation: "ዩቲሊቴሪያኒዝም ከውሳኔዎቻችን የሚመነጩ ጥቅሞችን ከፍ ማድረግ እና ጉዳቶችን መቀነስ ላይ ያተኩራል።"
+  },
+
+  {
+    question: "Universalistic ethical hedonism is also known as:",
+    options: [
+      "Hedonism",
+      "Universalism",
+      "Utilitarianism",
+      "None of these"
+    ],
+    answer: 2,
+    englishExplanation: "Universalistic ethical hedonism seeks the greatest happiness for all people, which is the central idea of classical utilitarianism.",
+    amharicExplanation: "ዩኒቨርሳሊስቲክ ኤቲካል ሄዶኒዝም ለሁሉም ሰዎች ከፍተኛውን ደስታ ለማስገኘት የሚፈልግ ሲሆን ይህም የክላሲካል ዩቲሊቴሪያኒዝም ዋና ሐሳብ ነው።"
+  },
+
+  {
+    question: "The classical form of utilitarianism is expressed by which of the following?",
+    options: [
+      "An action is right if, and only if, it is done from the right intentions.",
+      "An action is right if, and only if, it produces the greatest balance of pleasure over pain for everyone.",
+      "An action is right if it brings about great benefit to some individual or another.",
+      "An action is right if, and only if, it is beneficial to society.",
+      "None of these"
+    ],
+    answer: 1,
+    englishExplanation: "Classical utilitarianism states that an action is right when it produces the greatest overall balance of pleasure or happiness over pain for everyone affected.",
+    amharicExplanation: "ክላሲካል ዩቲሊቴሪያኒዝም አንድ ድርጊት ትክክለኛ የሚሆነው ከህመም ይልቅ ለሁሉም የሚሆን ከፍተኛ የደስታ ሚዛን ሲያስገኝ ነው ይላል።"
+  },
+
+  {
+    question: "Act-utilitarianism is characterized by:",
+    options: [
+      "Evaluation of the rightness of an act by the consequences of that act",
+      "Determination of the rightness of an act by appeal to a relevant rule of morality",
+      "Both A and B",
+      "Neither A nor B"
+    ],
+    answer: 0,
+    englishExplanation: "Act-utilitarianism evaluates each individual action directly according to the consequences that the action produces.",
+    amharicExplanation: "አክት-ዩቲሊቴሪያኒዝም እያንዳንዱን የተለየ ድርጊት በቀጥታ ከሚያመጣው ውጤት አንጻር ይገመግማል።"
+  },
+
+  {
+    question: "The utilitarian school has which of the following slogans?",
+    options: [
+      "The Greatest Happiness of the Individual",
+      "The Greatest Happiness of Greatest Number",
+      "The Happiness of All",
+      "The Happiness of Greatest Number"
+    ],
+    answer: 1,
+    englishExplanation: "The central utilitarian slogan is the greatest happiness for the greatest number, emphasizing overall happiness and welfare.",
+    amharicExplanation: "የዩቲሊቴሪያኒዝም ዋና መርህ ወይም መፈክር 'ለአብዛኛው ቁጥር ከፍተኛው ደስታ' የሚለው ነው።"
+  },
+
+  {
+    question: "__________ is the general term for theories that regard happiness as the highest intrinsic good.",
+    options: [
+      "Intuitionism",
+      "Hedonism",
+      "Emotivism",
+      "Eudemonism"
+    ],
+    answer: 1,
+    englishExplanation: "Hedonism is the philosophical view that pleasure or happiness is the highest intrinsic good.",
+    amharicExplanation: "ሄዶኒዝም (Hedonism) ደስታን ወይም ፍሰሐን ከሁሉ በላይ እንደ ዋና ውስጣዊ በጎነት የሚመለከት አጠቃላይ ንድፈ ሐሳብ ነው።"
+  },
+
+  {
+    question: "Ethics and law have sometimes been distinguished in the following way: The law attempts to resolve conflict in society by regulating behavior, whereas ethics is concerned with determining the rules for resolving conflict both in belief and in the behavior or action based on those beliefs. Ethics thus emphasizes:",
+    options: [
+      "The reasons that can be given as to why certain beliefs should be adopted and certain actions done",
+      "The ways in which individuals can be excused from being held responsible for their actions",
+      "How a rational resolution of conflicting beliefs is unattainable due to the different backgrounds of people"
+    ],
+    answer: 0,
+    englishExplanation: "Ethics emphasizes rational justification by providing reasons for why certain moral beliefs should be accepted and why certain actions should be performed.",
+    amharicExplanation: "ስነ-ምግባር (Ethics) የተወሰኑ እምነቶችን ልንከተል እና የተወሰኑ ድርጊቶችን ልንፈጽም የሚገባን ለምን እንደሆነ ምክንያታዊ ማብራሪያ በመስጠት ላይ ያተኩራል።"
+  },
+  {
+    question: "According to the nature of seeking pleasure, Hedonism can be divided broadly into Psychological Hedonism and ----------------------",
+    options: [
+      "Physiological Hedonism",
+      "Natural Hedonism",
+      "Ethical Hedonism",
+      "None of the Above"
+    ],
+    answer: 2,
+    englishExplanation: "Hedonism is broadly divided into psychological hedonism, which claims that humans are naturally driven to seek pleasure and avoid pain, and ethical hedonism, which claims that people ought to seek pleasure and avoid pain as a moral duty.",
+    amharicExplanation: "ሄዶኒዝም (Hedonism) በሰዎች የደስታ ፍለጋ ተፈጥሮ መሠረት በሁለት ዋና ዋና ክፍሎች ይከፈላል፤ እነሱም ስነ-ልቦናዊ ሄዶኒዝም (Psychological Hedonism) እና ስነ-ምግባራዊ ሄዶኒዝም (Ethical Hedonism) ናቸው።"
+  },
+
+  {
+    question: "The Hedonic Calculus is a method of counting the amount of ------------------ that would likely be caused by different actions.",
+    options: [
+      "Pleasure and Pain",
+      "Result",
+      "Virtue",
+      "None of These"
+    ],
+    answer: 0,
+    englishExplanation: "Jeremy Bentham's Hedonic Calculus is a method used to calculate the amount of pleasure and pain that an action is likely to produce.",
+    amharicExplanation: "ሄዶኒክ ካልኩለስ (Hedonic Calculus) የተለያዩ ድርጊቶች ሊያስከትሉ የሚችሉትን የደስታ (Pleasure) እና የህመም/ስቃይ (Pain) መጠን ለማስላት የሚጠቅም ዘዴ ነው።"
+  },
+
+  {
+    question: "------------ Refers to the likelihood of the pleasure or pain leading to some of the opposite sensation.",
+    options: [
+      "Certainty",
+      "Purity",
+      "Propinquity",
+      "Intensity"
+    ],
+    answer: 1,
+    englishExplanation: "In Bentham's Hedonic Calculus, purity refers to how unlikely a pleasure or pain is to be followed by its opposite sensation. For example, pure pleasure is unlikely to lead to pain.",
+    amharicExplanation: "በቤንታም ሄዶኒክ ካልኩለስ ውስጥ Purity (ንጽህና) ማለት አንድ ደስታ ወይም ህመም ተቃራኒ ስሜትን የማስከተል ዕድሉ ምን ያህል እንደሆነ የሚያመለክት መለኪያ ነው።"
+  },
+
+  {
+    question: "Which ethical theory is often in a position to mediate between the ethical views of deontological and teleological ethics?",
+    options: [
+      "Utilitarianism",
+      "Deontology",
+      "Virtue Ethics",
+      "Relativism"
+    ],
+    answer: 2,
+    englishExplanation: "Virtue ethics focuses on the moral character of the person rather than focusing only on rules as deontology does or consequences as teleological ethics does. Therefore, it can serve as a middle position between them.",
+    amharicExplanation: "ቨርቹ ኤቲክስ (Virtue Ethics) በግዴታና ህግ ላይ ብቻ ከሚያተኩረው Deontology እና በውጤት ላይ ከሚያተኩረው Teleological Ethics መካከል በመሆን በሰው መልካም ባህሪና በስብዕና ላይ ያተኩራል።"
+  },
+
+  {
+    question: "Which field of enquiry deals with the ends and means of national, regional, and global development?",
+    options: [
+      "Environmental Ethics",
+      "Development Ethics",
+      "Business Ethics",
+      "Social Ethics"
+    ],
+    answer: 1,
+    englishExplanation: "Development ethics examines the moral dimensions of development, including its goals, methods, policies, and effects at national, regional, and global levels.",
+    amharicExplanation: "የልማት ስነ-ምግባር (Development Ethics) በብሔራዊ፣ በክልላዊ እና በዓለም አቀፍ ደረጃ የልማት ዓላማዎችን፣ መንገዶችን፣ ፖሊሲዎችንና ውጤቶችን ከሞራል አንጻር ይመረምራል።"
+  },
+
+  {
+    question: "Which branch of ethics studies the meaning and definition of ethical terms and concepts?",
+    options: [
+      "Normative Ethics",
+      "Applied Ethics",
+      "Meta-Ethics",
+      "Descriptive Ethics"
+    ],
+    answer: 2,
+    englishExplanation: "Meta-ethics studies the meaning, nature, origin, and status of ethical terms and concepts, such as what the term 'good' actually means.",
+    amharicExplanation: "ሜታ-ኤቲክስ (Meta-Ethics) የስነ-ምግባር ቃላትንና ጽንሰ-ሀሳቦችን ትርጉም፣ ምንነት፣ አመጣጥና ትክክለኛ ይዘት የሚያጠና የኤቲክስ ዘርፍ ነው።"
+  },
+
+  {
+    question: "According to Friedrich Nietzsche, it is virtuous to treat others as more important than us aimed to realize excellence and creativity.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Nietzsche emphasized self-overcoming, individual excellence, strength, and creativity rather than treating others as more important than oneself.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። ፍሬድሪክ ኒቼ ሌሎችን ከራሳችን በላይ ማስቀደምን እንደ ዋና በጎነት አላስቀመጠም። ይልቁንም የግል ልዕልናን፣ ጥንካሬን፣ የራስን ማሻሻልና ፈጠራን አጠናክሯል።"
+  },
+
+  {
+    question: "For Teleological ethics, having the best intention can make actions moral, even if it does not result in a good outcome.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Teleological ethics judges an action primarily by its consequences or outcomes, not simply by the intention behind the action.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። ቴሌሎጂካል ስነ-ምግባር (Teleological Ethics) የድርጊትን ሞራላዊነት በዋናነት የሚወስነው በውጤቱ ነው፤ በጥሩ ዓላማ ብቻ አይደለም።"
+  },
+
+  {
+    question: "In ethical egoism, it is morally good for individuals to consider the well-being of others over their own personal interests.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Ethical egoism holds that individuals ought to act in their own self-interest rather than placing the interests of others above their own.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። ኤቲካል ኢጎኢዝም (Ethical Egoism) ግለሰቦች የራሳቸውን ጥቅም በማስቀደም መስራት እንዳለባቸው ይሰብካል፤ የሌሎችን ጥቅም ከራሳቸው በላይ ማስቀደምን አይጠይቅም።"
+  },
+
+  {
+    question: "Normative ethics seeks to provide a framework for determining what actions are right or wrong in a given situation.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Normative ethics provides moral principles, standards, and rules for determining which actions are right or wrong.",
+    amharicExplanation: "እውነተኛ (True) ነው። ኖርማቲቭ ኤቲክስ (Normative Ethics) የትኛው ድርጊት ትክክል ወይም ስህተት እንደሆነ ለመወሰን የሚረዱ የሞራል መርሆዎችን፣ ደንቦችንና መመሪያዎችን ያቀርባል።"
+  },
+
+  {
+    question: "In determining the morality of actions, Bentham's utilitarianism emphasizes the qualitative aspects of pleasure and pains that an action brings to society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Bentham's utilitarianism emphasizes the quantitative measurement of pleasure and pain. John Stuart Mill later emphasized qualitative differences between higher and lower pleasures.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። የጀረሚ ቤንታም ዩቲሊቴሪያኒዝም በዋናነት በደስታና በህመም መጠን (Quantity) ላይ ያተኩራል። የደስታ ጥራት (Quality) ላይ የበለጠ ትኩረት የሰጠው ጆን ስቱዋርት ሚል ነው።"
+  },
+
+  {
+    question: "Hypothetical Imperative mandates people to act according to the existing rules, irrespective of personal desire and circumstances.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. A hypothetical imperative is conditional and depends on a person's desires or goals. It generally has the form: if you want X, you should do Y.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። ሃይፖቴቲካል ኢምፔራቲቭ (Hypothetical Imperative) በግለሰብ ፍላጎት ወይም ግብ ላይ የተመሰረተ ሁኔታዊ ትዕዛዝ ነው። ለምሳሌ፦ 'X ከፈለግህ Y አድርግ' የሚል ነው።"
+  },
+
+  {
+    question: "Deontological theory defines a morally right action in terms of its intention without giving due regard to consequences.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Deontological ethics focuses on duties, rules, principles, and the moral character or intention of an action rather than judging it primarily by its consequences.",
+    amharicExplanation: "እውነተኛ (True) ነው። ዴንቶሎጂካል ኤቲክስ (Deontological Ethics) የድርጊትን ሞራላዊነት በግዴታ፣ በህግ፣ በመርህና በዓላማ ላይ ያተኩራል፤ በውጤቱ ላይ በዋናነት አይመሰረትም።"
+  },
+
+  {
+    question: "Prima facie duties can be overridden by other duties that fit the situation in case more than one duty comes together.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Prima facie duties, associated with W.D. Ross, are obligations that normally apply but can be overridden when they conflict with a stronger duty in a particular situation.",
+    amharicExplanation: "እውነተኛ (True) ነው። ፕሪማ ፋቺ ግዴታዎች (Prima Facie Duties) በተለምዶ መፈጸም የሚገባቸው ግዴታዎች ሲሆኑ፣ ብዙ ግዴታዎች ሲጋጩ ከፍተኛ ክብደት ያለው ሌላ ግዴታ ሊበልጣቸው ይችላል።"
+  },
+
+  {
+    question: "To Aristotle, a virtuous life tests the extremes of both excessive repression and enjoys excessive indulgence.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Aristotle's doctrine of the Golden Mean teaches that virtue lies between extremes, avoiding both excess and deficiency.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። የአሪስቶትል የGolden Mean መርህ በሁለት ጽንፎች መካከል ያለውን ተመጣጣኝ መንገድ መከተል በጎነት እንደሆነ ያስተምራል። ስለዚህ ከመጠን በላይ መጨነቅንም ሆነ ከመጠን በላይ መደሰትን ያስወግዳል።"
+  },
+
+  {
+    question: "Deontological theory defines a morally right action in terms of its intention without giving due regard to consequences.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Deontological ethics is a duty-based theory. It evaluates moral actions primarily through duties, rules, principles, and intentions rather than their consequences.",
+    amharicExplanation: "ዴንቶሎጂካል ኤቲክስ በግዴታና በሞራል መርሆዎች ላይ የተመሰረተ ነው። የድርጊትን ሞራላዊነት በዓላማ፣ በግዴታና በህግ እንጂ በውጤቱ ላይ በዋናነት አይመዝንም።"
+  },
+
+  {
+    question: "According to Kant, good motive is a prerequisite to judge the morality of human actions regardless of consequences.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Kant argued that a good will and acting from duty are central to moral worth, regardless of whether the intended outcome is achieved.",
+    amharicExplanation: "እውነተኛ (True) ነው። ካንት የሞራል ዋጋ ያለው ድርጊት ከመልካም ፈቃድ (Good Will) እና ከግዴታ ስሜት የሚመነጭ መሆን እንዳለበት ያስተምራል። የውጤቱ ስኬት ዋናው መለኪያ አይደለም።"
+  },
+
+  {
+    question: "To ethical subjectivists, moral values and principles are relative to the culture of the society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Cultural relativism holds that moral values can vary according to the culture of a society, while ethical subjectivism relates moral judgments to an individual's personal attitudes or feelings.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። ሞራል ከህብረተሰብ ባህል ጋር አንጻራዊ ነው የሚለው የCultural Relativism አስተሳሰብ ነው። Ethical Subjectivism ግን የሞራል እሴቶችን ከግለሰብ ስሜትና አመለካከት ጋር ያያይዛል።"
+  },
+
+  {
+    question: "According to Plato's philosophy of virtue, vice happens when the irrational parts of the soul is dominated by reason.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. According to Plato, virtue or justice occurs when reason properly governs the other parts of the soul. Vice occurs when the irrational parts, such as appetite or spirit, improperly dominate reason.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። በፕላቶ አስተሳሰብ በጎነት ወይም ፍትህ የሚኖረው ምክንያታዊው የነፍስ ክፍል ሌሎቹን ክፍሎች በትክክል ሲመራ ነው። ጥፋት (Vice) የሚከሰተው ምክንያታዊ ያልሆኑ ክፍሎች ምክንያትን ሲቆጣጠሩ ነው።"
+  },
+
+  {
+    question: "Hedonistic utilitarianism views pleasure as the sole good and pain as the only evil.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Hedonistic utilitarianism considers pleasure the sole intrinsic good and pain the sole intrinsic evil, aiming to maximize pleasure and minimize pain.",
+    amharicExplanation: "እውነተኛ (True) ነው። ሄዶኒስቲክ ዩቲሊቴሪያኒዝም ደስታን ብቸኛው ውስጣዊ መልካም ነገር እና ህመምን ብቸኛው ውስጣዊ ክፉ ነገር አድርጎ ይመለከታል። ዓላማውም ደስታን ማብዛትና ህመምን መቀነስ ነው።"
+  },
+
+  {
+    question: "Ethical Egoism is an action that is morally wrong if the consequences of that action don't benefit the agent performing the action.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true within ethical egoism. An action is morally right when it promotes the agent's self-interest. If it fails to promote the agent's self-interest, it is considered morally wrong.",
+    amharicExplanation: "እውነተኛ (True) ነው። ኤቲካል ኢጎኢዝም ድርጊት ለፈጻሚው የግል ጥቅም ካልሆነ ሞራላዊ ትክክል አይደለም ይላል። ድርጊቱ የፈጻሚውን ራስ-ጥቅም ሲያሳድግ ትክክለኛ ነው።"
+  },
+
+  {
+    question: "Categorical imperative is moral commands that are conditional on personal desire.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Kant's categorical imperative is unconditional. It applies regardless of personal desires, goals, or circumstances. Conditional commands are hypothetical imperatives.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። የካንት Categorical Imperative በግል ፍላጎት ወይም በግብ ላይ የተመሰረተ አይደለም። ከሁኔታ ነፃ የሆነ ፍጹም የሞራል ትዕዛዝ ነው። በግል ፍላጎት ላይ የተመሰረተው Hypothetical Imperative ነው።"
+  },
+
+  {
+    question: "Morality is based on independently existing reasons for divine command theory.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Divine Command Theory holds that moral obligations are based on God's commands rather than on moral standards that exist independently of God's will.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። በDivine Command Theory መሠረት የሞራል መሠረት ከእግዚአብሔር ትዕዛዝና ፈቃድ ጋር የተያያዘ ነው፤ ከእግዚአብሔር ፈቃድ ውጪ በገለልተኛነት የሚኖር የሞራል መስፈርት ላይ አይመሰረትም።"
+  },
+
+  {
+    question: "An act is right if and only if it is required by a set of rules that leads to greater utility as act-utilitarianism.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. This describes rule utilitarianism, not act utilitarianism. Act utilitarianism evaluates each individual action according to whether it produces the greatest utility in that particular situation.",
+    amharicExplanation: "ሀሰተኛ (False) ነው። ይህ አባባል Rule Utilitarianism ን እንጂ Act Utilitarianism ን አይገልጽም። Act Utilitarianism እያንዳንዱን ድርጊት በዚያ የተለየ ሁኔታ የሚያስገኘውን ከፍተኛ ጥቅም በመመልከት ይገመግማል።"
+  }],
         3: [],
         4: [],
         5: []
