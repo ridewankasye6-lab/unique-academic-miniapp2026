@@ -14423,7 +14423,511 @@ const quizData = {
 
     "civic": {
 
-        1: [],
+        1: [{
+    question: "Morality is the critical examination and evaluation of what is right and wrong in human conduct.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Ethics, not morality, is defined as the critical examination and evaluation of what is right and wrong in human conduct. Morality refers more to the actual principles, values, and conduct that individuals or groups follow.",
+    amharicExplanation: "የሰውን ስነ-ምግባር ትክክለኛነትና ስህተት በጥልቀት መመርመርና መገምገም Ethics ይባላል። Morality ግን ሰዎች በተግባር የሚከተሏቸውን የሞራል መርሆዎች፣ እሴቶችና ባህሪያት ያመለክታል።"
+  },
+
+  {
+    question: "The purpose of law is to create morally right people in the society whereas ethics is to create an orderly society devoid of evil and injustice.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statements are reversed. The primary purpose of law is to maintain social order and protect people and property, while ethics guides individuals toward morally responsible and just behavior.",
+    amharicExplanation: "በዚህ አረፍተ ነገር የሕግና የስነ-ምግባር ዓላማዎች ተገልብጠዋል። የሕግ ዋና ዓላማ ማህበራዊ ስርዓትን ማስከበርና ሰዎችን እና ንብረቶችን መጠበቅ ነው። Ethics ደግሞ ግለሰቦች በሞራል እና በፍትህ መሠረት እንዲመሩ ይመራል።"
+  },
+
+  {
+    question: "Morality deals with the study of the actual patterns and a manner of behavior concerning people, things and ourselves.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Morality is concerned with the actual patterns, principles, and ways of behavior that people follow in relation to others, things, and themselves.",
+    amharicExplanation: "Morality ሰዎች ከሌሎች ሰዎች፣ ከነገሮች እና ከራሳቸው ጋር በተያያዘ የሚከተሏቸውን ትክክለኛ የባህሪ አይነቶችና አሰራሮች ይመለከታል።"
+  },
+
+  {
+    question: "One of the weaknesses of the consequentialist approach to ethics is accepting morally good outcomes from non-morally good actions.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Consequentialism evaluates actions mainly by their outcomes. One criticism is that it may justify an action that is morally wrong if the action produces a desirable or good outcome.",
+    amharicExplanation: "Consequentialism ድርጊቶችን በዋናነት በሚያስከትሉት ውጤቶች ይገመግማል። ዋና ድክመቱም መጥፎ ወይም ሞራላዊ ያልሆነ ድርጊት ጥሩ ውጤት ካስገኘ ተቀባይነት ሊያገኝ መቻሉ ነው።"
+  },
+
+  {
+    question: "Any action that can be called 'morally wrong' can also be called 'legally wrong', but not vice versa.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Moral wrongdoing and legal wrongdoing are not always the same. Some actions may be morally wrong without being illegal, while some violations of law may not necessarily be considered morally wrong.",
+    amharicExplanation: "ሞራላዊ ስህተትና ሕጋዊ ስህተት ሁልጊዜ አንድ አይደሉም። አንዳንድ ድርጊቶች በሞራል ስህተት ሊሆኑ ቢችሉም በሕግ ላይ ወንጀል ላይሆኑ ይችላሉ። እንዲሁም ሕግን መጣስ ሁልጊዜ ሞራላዊ ስህተት ማለት አይደለም።"
+  },
+
+  {
+    question: "Ethics is used to mean the generally accepted code of conduct in a society whereas morality is usually associated with a certain conduct within a profession.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement reverses the usual distinction. Ethics commonly refers to principles and standards concerning right and wrong, while morality refers to the values, beliefs, and conduct followed by individuals or groups. Professional ethics is a specific application of ethics.",
+    amharicExplanation: "አረፍተ ነገሩ የ Ethics እና Morality ትርጉምን ተገልብጦ ያቀርባል። Ethics በአጠቃላይ ትክክልና ስህተትን የሚመለከቱ መርሆዎችንና ደረጃዎችን ያመለክታል። Morality ደግሞ ግለሰቦች ወይም ቡድኖች የሚከተሏቸውን የሞራል እሴቶችና ባህሪያት ያመለክታል።"
+  },
+
+  {
+    question: "The minimum concept of civic education is comprised of knowledge, values and skills, and aims to prepare students for active and responsible participation.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "This description refers to the maximal concept of civic education. The minimal concept is mainly content-based and classroom-centered, while the maximal concept develops knowledge, values, skills, and active responsible participation.",
+    amharicExplanation: "ይህ መግለጫ የዝቅተኛው (Minimal) ሳይሆን የከፍተኛው (Maximal) የዜግነት ትምህርት ጽንሰ-ሀሳብን ይገልጻል። Minimal concept በዋናነት በይዘትና በክፍል ውስጥ ትምህርት ላይ ያተኩራል፤ Maximal concept ግን እውቀትን፣ እሴቶችን፣ ክህሎቶችንና ንቁ የዜግነት ተሳትፎን ያበረታታል።"
+  },
+
+  {
+    question: "The minimal concept of civic education extends learning beyond the curriculum and classroom.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The minimal concept is mainly restricted to classroom instruction, textbooks, and examinations. Extending learning beyond the classroom and curriculum is a feature of the maximal concept.",
+    amharicExplanation: "ዝቅተኛው (Minimal) የዜግነት ትምህርት በክፍል ውስጥ ትምህርት፣ በመጽሐፍትና በፈተና ላይ በዋናነት ያተኩራል። ከክፍልና ከስርዓተ-ትምህርት ውጭ ትምህርትን ማስፋፋት የከፍተኛው (Maximal) ጽንሰ-ሀሳብ ባህሪ ነው።"
+  },
+
+  {
+    question: "When individuals have a clear knowledge and understanding but they refuse to be actors in the politics of their country is known as:",
+    options: [
+      "Parochial political culture",
+      "Participant Political Culture",
+      "Subject political culture",
+      "Maximal political culture"
+    ],
+    answer: 2,
+    englishExplanation: "In a subject political culture, citizens have knowledge and awareness of the political system but remain passive and do not actively participate as political actors.",
+    amharicExplanation: "Subject political culture ማለት ዜጎች ስለ ፖለቲካዊ ስርዓቱ እውቀትና ግንዛቤ ቢኖራቸውም በፖለቲካ ውስጥ ንቁ ተሳትፎ የማያደርጉና ተገብሮ ተሳታፊ የሆኑበት የፖለቲካ ባህል ነው።"
+  },
+
+  {
+    question: "Under which type of political culture do individuals think personal/family advantages, rather than those of the society or country, are the only goal to work for?",
+    options: [
+      "Parochial",
+      "Participant",
+      "Subject",
+      "Civic"
+    ],
+    answer: 0,
+    englishExplanation: "In a parochial political culture, people have limited awareness of national political institutions and tend to focus mainly on personal, family, or local interests.",
+    amharicExplanation: "በParochial political culture ውስጥ ሰዎች ስለ ሀገራዊ ፖለቲካ ያላቸው ግንዛቤ ዝቅተኛ ሲሆን ከሀገራዊ ጥቅም ይልቅ በግል፣ በቤተሰብ ወይም በአካባቢ ጥቅም ላይ ያተኩራሉ።"
+  },
+
+  {
+    question: "The conditional duties developed by Samuel Pufendorf are more alike to one of the following moral guidelines outlined by W.D. Ross:",
+    options: [
+      "Duties of fidelity",
+      "Duties of gratitude",
+      "Duties of reparation",
+      "Duties of justice"
+    ],
+    answer: 0,
+    englishExplanation: "Pufendorf's conditional duties concerning promises and agreements closely resemble W.D. Ross's duties of fidelity, which emphasize keeping promises and fulfilling commitments.",
+    amharicExplanation: "በሳሙኤል ፑፈንዶር የተገለጹት የቃል ኪዳንና የስምምነት መጠበቅ ግዴታዎች ከW.D. Ross የታማኝነት ግዴታዎች (Duties of fidelity) ጋር በጣም ይመሳሰላሉ።"
+  },
+
+  {
+    question: "Moral and Civics Education is based on and seeks to promote in students core moral values except one:",
+    options: [
+      "Embrace diversity",
+      "Respect for reasoning",
+      "Extremism outlooks",
+      "Critical thinking",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Moral and civics education promotes positive values such as respect for diversity, reasoning, and critical thinking. Extremist outlooks are contrary to these educational goals.",
+    amharicExplanation: "የሞራልና የዜግነት ትምህርት ልዩነትን ማክበር፣ ማመዛዘንና ሂሳዊ አስተሳሰብን ያበረታታል። Extremism outlooks ግን ከእነዚህ እሴቶች ጋር የማይስማማ እና የማይበረታታ አመለካከት ነው።"
+  },
+
+  {
+    question: "Among the following statements, one is true regarding ethics and law.",
+    options: [
+      "Both have the same scope and measurement.",
+      "Both have prohibition and allowance.",
+      "They don't have shared principles.",
+      "Law has broader scope than ethics."
+    ],
+    answer: 1,
+    englishExplanation: "Both ethics and law contain elements of prohibition and allowance. They identify certain actions that should not be done and others that are permitted, although their scope and methods differ.",
+    amharicExplanation: "ስነ-ምግባርና ሕግ ሁለቱም የተከለከሉ እና የተፈቀዱ ድርጊቶችን ይይዛሉ። ምንም እንኳን የእነሱ ወሰንና የሚጠቀሙበት መንገድ ቢለያይም፣ ሁለቱም መከልከልንና መፍቀድን ያካትታሉ።"
+  },
+
+  {
+    question: "Which one of the following is true about morality?",
+    options: [
+      "Morality is uniform compared to ethics.",
+      "Morality justifies something through logical reasoning.",
+      "Morality is the code of conduct one follows.",
+      "Morality is a discipline that studies ethics."
+    ],
+    answer: 2,
+    englishExplanation: "Morality refers to the principles, values, and code of conduct that an individual or group follows in determining right and wrong behavior.",
+    amharicExplanation: "Morality ማለት አንድ ግለሰብ ወይም ቡድን ትክክልና ስህተት የሆኑ ባህሪያትን ለመለየት የሚከተለው የሞራል መርሆ፣ እሴት እና የባህሪ ደንብ ነው።"
+  },
+
+  {
+    question: "Identify the wrong statement regarding the relationship between morality and law.",
+    options: [
+      "Laws can be unethical or immoral.",
+      "Some actions that are illegal may not be unethical.",
+      "Some actions that are unethical may not be illegal.",
+      "There is the coercive power of government to enforce morality.",
+      "Laws are formal rules approved by the state."
+    ],
+    answer: 3,
+    englishExplanation: "The government uses its coercive power to enforce laws, not every aspect of personal morality. Therefore, saying that the government has coercive power to enforce morality is the wrong statement.",
+    amharicExplanation: "መንግስት አስገዳጅ ሥልጣኑን በዋናነት ሕጎችን ለማስፈጸም ይጠቀማል፤ የግለሰቦችን የግል ሞራል ሁሉ በኃይል ለማስፈጸም አይጠቀምበትም። ስለዚህ መንግስት ሞራልን በአስገዳጅ ኃይል ያስፈጽማል የሚለው ስህተት ነው።"
+  },
+
+  {
+    question: "In which of the following political cultures are the roles of citizens significant?",
+    options: [
+      "Parochial",
+      "Participant",
+      "Subject",
+      "All",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "In a participant political culture, citizens are actively involved in political processes and consider their participation and political roles important.",
+    amharicExplanation: "በParticipant political culture ውስጥ ዜጎች በፖለቲካዊ ሂደቶች ውስጥ በንቃት ይሳተፋሉ። የዜጎች ሚናና ተሳትፎም ከፍተኛ ጠቀሜታ አለው።"
+  },
+
+  {
+    question: "Which one of the following is not the main objective of moral and civic education?",
+    options: [
+      "The Need for Participant Political Culture",
+      "The issue of fostering intercultural societies",
+      "The issue of exclusiveness and inequality",
+      "The issue of peace-building",
+      "The need to instill citizens about their rights and duties"
+    ],
+    answer: 2,
+    englishExplanation: "Moral and civic education promotes participation, intercultural understanding, peace, equality, and awareness of citizens' rights and duties. Exclusiveness and inequality are contrary to these objectives.",
+    amharicExplanation: "የሞራልና የዜግነት ትምህርት የፖለቲካ ተሳትፎን፣ የባህል መቻቻልን፣ ሰላምን፣ እኩልነትን እና የዜጎችን መብትና ግዴታ ማወቅን ያበረታታል። Exclusiveness and inequality ግን ከእነዚህ ዓላማዎች ጋር የሚቃረኑ ናቸው።"
+  },
+
+  {
+    question: "Which category of prima facie duties is the duty not to harm others physically or psychologically?",
+    options: [
+      "Duty of fidelity",
+      "Duty of beneficence",
+      "Duty of non-maleficence",
+      "Duty of reparation",
+      "All"
+    ],
+    answer: 2,
+    englishExplanation: "The duty of non-maleficence is the moral obligation to avoid causing physical or psychological harm to other people.",
+    amharicExplanation: "Duty of non-maleficence ማለት ሌሎችን በአካልም ሆነ በስነ-ልቦና እንዳንጎዳ የሚያስገድደን የሞራል ግዴታ ነው።"
+  },
+
+  {
+    question: "Identify the wrong statement regarding the interplay between rights and duties.",
+    options: [
+      "One's rights implies other's duties.",
+      "One's rights promotes one's interest.",
+      "The state is a nucleus to care for society.",
+      "Rights implies one's duties."
+    ],
+    answer: 2,
+    englishExplanation: "Rights and duties are closely interconnected. One person's rights can create corresponding duties for others. The statement that the state is a nucleus to care for society does not directly describe the relationship between rights and duties.",
+    amharicExplanation: "መብትና ግዴታ በጣም የተያያዙ ናቸው። የአንድ ሰው መብት በሌሎች ላይ ተዛማጅ ግዴታን ሊያስከትል ይችላል። ነገር ግን 'መንግስት የማህበረሰቡ እንክብካቤ ማዕከል ነው' የሚለው ከመብትና ግዴታ ቀጥተኛ ግንኙነት ጋር አይያያዝም።"
+  },
+
+  {
+    question: "In _________ political culture, citizens are endowed with low cognitive, affective, and evaluative orientation towards the political system. This contrasts with _________ culture where citizens have both the competences and the will to engage in politics.",
+    options: [
+      "Parochial, participant",
+      "Participant, subject",
+      "Subject, parochial",
+      "Subject, participant"
+    ],
+    answer: 0,
+    englishExplanation: "Parochial political culture is characterized by low awareness and involvement in the political system. In contrast, participant political culture involves citizens who have the competence, awareness, and willingness to actively engage in politics.",
+    amharicExplanation: "Parochial political culture ውስጥ ዜጎች ስለ ፖለቲካዊ ስርዓቱ ዝቅተኛ የእውቀት፣ የስሜት እና የግምገማ ግንዛቤ አላቸው። በተቃራኒው Participant political culture ውስጥ ዜጎች በፖለቲካ ለመሳተፍ ብቃትና ፍላጎት አላቸው።"
+  },{
+  question: "Which one is incorrectly matched?",
+  options: [
+    "Citizenship Education ----> USA",
+    "Right Education ----> South Africa",
+    "Citizenship and Character Education ----> Singapore",
+    "Civics and Ethical Education ----> Ethiopia",
+    "None"
+  ],
+  answer: 4,
+  englishExplanation: "All the country-specific names of civic education provided in the choices are correctly matched. Therefore, None is the correct answer because there is no incorrectly matched option.",
+  amharicExplanation: "በምርጫዎቹ ላይ የተሰጡት ሁሉም የዜግነት ትምህርት ስያሜዎች ከየሀገሮቹ ጋር በትክክል ተዛምደዋል። ስለዚህ የተሳሳተ ማዛመድ ስለሌለ 'None' ትክክለኛው መልስ ነው።"
+},
+
+{
+  question: "Which concept of civic education is/are highly dependent on interactive teaching, which requires discussion, debate and learning beyond the curriculum?",
+  options: [
+    "Minimal concept",
+    "Maximal concept",
+    "Both Minimal and Maximal",
+    "None"
+  ],
+  answer: 1,
+  englishExplanation: "The maximal concept of civic education relies heavily on interactive teaching methods such as discussion, debate, critical thinking, and learning beyond the formal curriculum.",
+  amharicExplanation: "Maximal concept የሚባለው የዜግነት ትምህርት ጽንሰ-ሀሳብ በይነተገናኝ የማስተማር ዘዴዎችን፣ ውይይትን፣ ክርክርን፣ ሂሳዊ አስተሳሰብን እና ከመደበኛ ሥርዓተ-ትምህርት ውጭ መማርን ያበረታታል።"
+},
+
+{
+  question: "The relationship between ethics and the law can be described as...",
+  options: [
+    "Incredibly close, in fact, in all instances what is ethical is also what is legal and vice versa.",
+    "Not close, ethics and the law share a small amount of overlap, but fundamentally address differing questions and themes.",
+    "Close, as there is considerable overlap between ethics and law, but the two are not equivalent.",
+    "Not at all close, ethics and the law are virtually incompatible."
+  ],
+  answer: 2,
+  englishExplanation: "Ethics and law have considerable overlap because both address issues such as right and wrong behavior, but they are not equivalent. Some actions may be legal but unethical, while some ethical responsibilities may not be required by law.",
+  amharicExplanation: "ስነ-ምግባር እና ህግ ብዙ የጋራ ነጥቦች ቢኖራቸውም ፍጹም አንድ አይደሉም። አንዳንድ ህጋዊ ድርጊቶች ስነ-ምግባራዊ ላይሆኑ ይችላሉ፣ እንዲሁም አንዳንድ የስነ-ምግባር ግዴታዎች በህግ የተገደዱ ላይሆኑ ይችላሉ።"
+},
+
+{
+  question: "The subject matter of ethics is:",
+  options: [
+    "Human conduct",
+    "Ultimate truth",
+    "Knowledge",
+    "Reality"
+  ],
+  answer: 0,
+  englishExplanation: "The subject matter of ethics is human conduct. Ethics studies human actions, behavior, and choices in order to determine what is morally right or wrong.",
+  amharicExplanation: "የስነ-ምግባር ዋና የጥናት ዘርፍ የሰው ልጅ ባህሪ ወይም conduct ነው። ሰዎች የሚያደርጓቸውን ተግባራት፣ ባህሪያት እና ምርጫዎች በመመርመር ትክክልና ስህተት የሆነውን ይወስናል።"
+},
+
+{
+  question: "All conduct either promotes or hinders the organism's adaptation to the environment. This implies the ______ theory of morality.",
+  options: [
+    "Hedonist",
+    "Evolutionary",
+    "Intuitionist",
+    "None of these"
+  ],
+  answer: 1,
+  englishExplanation: "The evolutionary theory of morality connects human conduct with survival and adaptation to the environment. Conduct that promotes adaptation supports survival, while conduct that hinders adaptation may reduce it.",
+  amharicExplanation: "የዝግመተ ለውጥ (Evolutionary) የሞራል ንድፈ-ሀሳብ የሰውን ባህሪ ከህልውና እና ከአካባቢው ጋር መላመድ ጋር ያያይዛል። መላመድን የሚያግዝ ባህሪ ለህልውና የሚጠቅም ሲሆን፣ መላመድን የሚያደናቅፍ ባህሪ ግን ሊጎዳ ይችላል።"
+},
+
+{
+  question: "Ethics deals with the '______ of human beings living in societies.'",
+  options: [
+    "Conduct",
+    "Duties",
+    "Rights",
+    "Desires"
+  ],
+  answer: 0,
+  englishExplanation: "Ethics deals with the conduct of human beings living in society. It evaluates people's actions and behavior according to moral standards and principles.",
+  amharicExplanation: "ስነ-ምግባር በማህበረሰብ ውስጥ የሚኖሩ ሰዎችን conduct ወይም ባህሪ ይመለከታል። የሰዎችን ድርጊትና ባህሪ በሞራል መርሆዎች መሠረት ይገመግማል።"
+},
+
+{
+  question: "Actions are right/wrong according to their intrinsic nature. This is the position of ______.",
+  options: [
+    "Intuitionists",
+    "Hedonists",
+    "Utilitarians",
+    "None of these"
+  ],
+  answer: 0,
+  englishExplanation: "Intuitionists hold that actions can be recognized as right or wrong according to their intrinsic moral nature, rather than judging them only by their consequences.",
+  amharicExplanation: "Intuitionists የሚሉት ድርጊቶች ትክክል ወይም ስህተት መሆናቸው በድርጊቱ ውስጣዊ ሞራላዊ ባህሪ ሊወሰን እንደሚችል ነው። ስለዚህ ውጤቱን ብቻ በመመልከት አይወሰንም።"
+},
+
+{
+  question: "Ethics is the science of:",
+  options: [
+    "Beauty",
+    "Truth",
+    "Conduct",
+    "Mind"
+  ],
+  answer: 2,
+  englishExplanation: "Ethics is the science or systematic study of human conduct. It evaluates conduct according to moral standards of right and wrong.",
+  amharicExplanation: "ስነ-ምግባር (Ethics) የሰውን conduct ወይም ባህሪ የሚያጠና የጥናት መስክ ነው። የሰውን ተግባር ትክክል ወይም ስህተት መሆኑን በሞራል መርሆዎች ይገመግማል።"
+},
+
+{
+  question: "Normative science deals with:",
+  options: [
+    "Standards",
+    "Facts",
+    "Judgements",
+    "None of these"
+  ],
+  answer: 0,
+  englishExplanation: "Normative science deals with standards, norms, and principles used to evaluate behavior and determine what ought to be considered right or wrong.",
+  amharicExplanation: "Normative science ሰዎችን የሚመሩ መመዘኛዎችን፣ ደንቦችን እና መርሆዎችን ያጠናል። በእነዚህ መመዘኛዎች መሠረት ባህሪን ይገመግማል።"
+},
+
+{
+  question: "Ethics determines rightness or wrongness of:",
+  options: [
+    "Human actions",
+    "Human thought",
+    "Human judgements",
+    "None of these"
+  ],
+  answer: 0,
+  englishExplanation: "Ethics evaluates human actions and voluntary behavior to determine whether they are morally right or wrong according to accepted moral standards.",
+  amharicExplanation: "ስነ-ምግባር የሰዎችን ተግባራት እና ድርጊቶች በሞራል መመዘኛዎች መሠረት ትክክል ወይም ስህተት መሆናቸውን ይገመግማል።"
+},
+
+{
+  question: "When we say that conduct is right, we mean primarily that:",
+  options: [
+    "It is according to truth",
+    "It is according to rule",
+    "It is according to law",
+    "None of these"
+  ],
+  answer: 1,
+  englishExplanation: "In ethics, conduct is considered right when it conforms to an appropriate moral rule, principle, or standard.",
+  amharicExplanation: "በስነ-ምግባር አንድ ድርጊት ትክክል ነው ሲባል ከተቀመጠ የሞራል ደንብ፣ መርህ ወይም መመዘኛ ጋር የሚስማማ መሆኑ ማለት ነው።"
+},
+
+{
+  question: "______ is a collective name for voluntary actions:",
+  options: [
+    "Virtue",
+    "Conduct",
+    "Desire",
+    "Will"
+  ],
+  answer: 1,
+  englishExplanation: "Conduct is a collective term for voluntary actions and behaviors performed through an individual's choice and will.",
+  amharicExplanation: "በሰው ልጅ ፈቃድና ምርጫ የሚከናወኑ የተለያዩ ድርጊቶች በአጠቃላይ Conduct ወይም ባህሪ ተብለው ይጠራሉ።"
+},
+
+{
+  question: "In the 1960s, a new group of scholars began studying the link between culture and democracy. Specifically, Almond & Verba used surveys to get information about how individuals in different countries felt about political institutions, actors, and processes. They claimed that the type of culture that is most compatible with democracy is:",
+  options: [
+    "Parochial culture",
+    "Subject culture",
+    "Participant culture",
+    "American culture"
+  ],
+  answer: 2,
+  englishExplanation: "Almond and Verba identified participant culture as the political culture most compatible with democracy because citizens are informed, involved, and actively participate in political processes.",
+  amharicExplanation: "Almond እና Verba እንደገለጹት ከዴሞክራሲ ጋር በብዛት የሚጣጣመው Participant culture ነው። በዚህ የፖለቲካ ባህል ዜጎች ስለ ፖለቲካ ግንዛቤ ያላቸው ሲሆን በፖለቲካዊ ሂደቶችም ንቁ ተሳትፎ ያደርጋሉ።"
+},
+
+{
+  question: "Ethics is said to ______.",
+  options: [
+    "Give us clear answers as to what is right",
+    "Give us clear answers as to what is wrong",
+    "Encourage us to explore different perspectives",
+    "None"
+  ],
+  answer: 2,
+  englishExplanation: "Ethics encourages critical thinking, reflection, and the exploration of different perspectives when dealing with complex moral questions.",
+  amharicExplanation: "ስነ-ምግባር ውስብስብ የሞራል ጉዳዮችን ስንመረምር ሂሳዊ አስተሳሰብን፣ ጥልቅ ማሰብን እና የተለያዩ አመለካከቶችን እንድንመረምር ያበረታታል።"
+},
+
+{
+  question: "How does Civic Education contribute to the development of a just society?",
+  options: [
+    "By enforcing strict rules and regulations",
+    "By promoting individual success at all costs",
+    "By fostering a sense of civic responsibility and moral consciousness",
+    "By encouraging competition and rivalry among citizens"
+  ],
+  answer: 2,
+  englishExplanation: "Civic education contributes to a just society by developing civic responsibility, fairness, respect for others, and moral consciousness among citizens.",
+  amharicExplanation: "የዜግነት ትምህርት የዜጎችን የዜግነት ሃላፊነት፣ ፍትሃዊነት፣ ሌሎችን ማክበር እና ሞራላዊ ንቃተ-ህሊና በማዳበር ፍትሃዊ ማህበረሰብ እንዲገነባ ያግዛል።"
+},
+
+{
+  question: "Why is the understanding of Civics and Ethics essential for the well-being of a community?",
+  options: [
+    "To establish a hierarchy of power",
+    "To ensure conformity to societal norms",
+    "To promote social harmony and ethical behavior",
+    "To encourage individualism and self-centeredness"
+  ],
+  answer: 2,
+  englishExplanation: "Understanding civics and ethics promotes peaceful coexistence, mutual respect, social harmony, responsible citizenship, and ethical behavior within a community.",
+  amharicExplanation: "ሲቪክስ እና ስነ-ምግባርን መረዳት በማህበረሰቡ ውስጥ ሰላማዊ አብሮነትን፣ መከባበርን፣ ማህበራዊ ስምምነትን እና ጥሩ ሞራላዊ ባህሪን ለማስፈን ይረዳል።"
+},
+
+{
+  question: "How does Ethics differ from Morality?",
+  options: [
+    "Ethics is personal, Morality is societal",
+    "Ethics focuses on actions, Morality on intentions",
+    "Ethics is universal, Morality is subjective",
+    "Ethics is theoretical, Morality is practical"
+  ],
+  answer: 2,
+  englishExplanation: "Broadly, ethics refers to the systematic and often universal study of moral principles, while morality refers to the beliefs, values, and practices that guide conduct and may vary among individuals and societies.",
+  amharicExplanation: "በአጠቃላይ Ethics የሞራል መርሆዎችን በስርዓት የሚያጠና ሲሆን፣ Morality ደግሞ የግለሰቦች ወይም የማህበረሰቦች የሞራል እምነቶችን፣ እሴቶችን እና የባህሪ መመሪያዎችን ያመለክታል።"
+},
+
+{
+  question: "Which term refers to the study of the rights and duties of citizenship?",
+  options: [
+    "Ethics",
+    "Morality",
+    "Civics",
+    "Justice"
+  ],
+  answer: 2,
+  englishExplanation: "Civics is the field of study concerned with the rights, duties, responsibilities, and participation of citizens in society and government.",
+  amharicExplanation: "Civics የዜጎችን መብቶች፣ ግዴታዎች፣ ሃላፊነቶች እና በማህበረሰብና በመንግስት ውስጥ ያላቸውን ተሳትፎ የሚያጠና የትምህርት መስክ ነው።"
+},
+
+{
+  question: "Ethics is concerned precisely with the ______ to decide the right/wrong in human conduct.",
+  options: [
+    "Will",
+    "Norms",
+    "Imagination",
+    "Laws"
+  ],
+  answer: 1,
+  englishExplanation: "Ethics uses norms, standards, and moral principles to evaluate human conduct and determine whether actions are right or wrong.",
+  amharicExplanation: "ስነ-ምግባር የሰውን ባህሪ ትክክል ወይም ስህተት ለመወሰን በNorms ወይም በሞራላዊ ደንቦች፣ መመዘኛዎች እና መርሆዎች ላይ ይመሰረታል።"
+},
+
+{
+  question: "In a democratic system, enjoying one's own right has an implication to recognize the rights of others.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "In a democratic system, exercising one's rights requires respecting the rights and freedoms of others. Rights are accompanied by responsibilities toward other members of society.",
+  amharicExplanation: "በዲሞክራሲያዊ ስርዓት የራስን መብት መጠቀም የሌሎችንም መብትና ነፃነት ማክበርን ይጠይቃል። መብቶች ከሌሎች ሰዎች ጋር ካለን ሃላፊነት ጋር አብረው ይሄዳሉ።"
+},{     question: "Ethics refers to the degree to which an action conforms to standard or norm of human conduct.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "This statement describes morality, not ethics. Morality refers to how an individual action conforms to standards or norms of human conduct, whereas ethics is the systematic study of moral principles and conduct.",     amharicExplanation: "ይህ መግለጫ Ethicsን ሳይሆን Morality (ሞራልን) ነው የሚገልጸው። ሞራል ማለት አንድ ተግባር ከሰዎች መደበኛ ባህሪ ወይም መስፈርት ጋር የሚጣጣምበት ደረጃ ሲሆን፣ Ethics ግን የሞራል መርሆችን እና ባህሪን የሚያጠና ነው።"   },    {     question: "Ethics is primarily the matter of knowledge whereas morality is the matter of action.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Ethics deals with the theoretical understanding and critical study of human conduct, while morality is practical and concerns actual actions and conduct.",     amharicExplanation: "Ethics በዋናነት ስለ እውቀት፣ ንድፈ ሃሳብ እና የሰው ባህሪ ጥናት ላይ ያተኩራል፤ Morality ግን በተግባራዊ አድራጎትና ባህሪ ላይ ያተኩራል።"   },    {     question: "Morality is a standard or human moral conduct and it is more theoretical and general than ethics.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "The statement is false because ethics is more theoretical and reflective, while morality is more practical and concerned with actual human conduct.",     amharicExplanation: "መግለጫው ሐሰት ነው። Ethics የበለጠ ንድፈ ሃሳባዊና አስተሳሰባዊ ሲሆን፣ Morality ግን በተግባራዊ የሰው ባህሪና አድራጎት ላይ ያተኩራል።"   },    {     question: "Because laws refer to the formalization of ethical norms, whatever is legally permitted is morally permitted.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Something being legal does not necessarily mean that it is morally right. Some practices that were legally permitted in history were later recognized as morally wrong.",     amharicExplanation: "አንድ ነገር ሕጋዊ መሆኑ ብቻ ሞራላዊ ትክክል ነው ማለት አይደለም። በታሪክ ውስጥ በሕግ የተፈቀዱ ነገሮች ነበሩ፣ ነገር ግን ከሞራል አንጻር ተሳሳተ ነበሩ።"   },    {     question: "The minimal concept of civic education is comprised of knowledge, values, and skills and aims to prepare students for active and responsible participation.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "This description refers to the maximal concept of civic education. The maximal concept incorporates knowledge, values, and skills and prepares learners for active and responsible participation.",     amharicExplanation: "ይህ መግለጫ የMinimal ሳይሆን የMaximal የሲቪክ ትምህርት ጽንሰ-ሀሳብን ይገልጻል። Maximal እውቀትን፣ እሴቶችን እና ክህሎቶችን በማካተት ንቁና ኃላፊነት ያለው ተሳትፎን ያበረታታል።"   },    {     question: "The objective of the current moral and citizenship education in Ethiopia is to create apathy and politically subject citizens in the country.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Moral and citizenship education aims to develop active, responsible, participatory, and competent citizens, not apathetic or politically submissive citizens.",     amharicExplanation: "የሞራልና የዜግነት ትምህርት ዓላማ ግዴለሾች ወይም ታዛዥ ዜጎችን መፍጠር ሳይሆን፣ ንቁ፣ ኃላፊነት የሚሰማቸው እና ተሳታፊ ዜጎችን ማፍራት ነው።"   },    {     question: "Ethics is concerned with the study of beauty in human behavior.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "The study of beauty and art is called aesthetics, not ethics. Ethics deals with morality, values, and questions of right and wrong.",     amharicExplanation: "የስነ-ውበትና የጥበብ ጥናት Aesthetics ይባላል። Ethics ግን በሞራል፣ በእሴቶች እና በትክክልና ስህተት የሰው ባህሪ ላይ ያተኩራል።"   },    {     question: "Ethical questions are concerned with what one would do.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Ethical questions are mainly concerned with what one ought to do, meaning what a person should do according to moral principles.",     amharicExplanation: "የEthics ጥያቄዎች በዋናነት ሰው ምን ማድረግ እንዳለበት ይመለከታሉ። ስለዚህ 'what one ought to do' እንጂ በቀላሉ 'what one would do' አይደለም።"   },    {     question: "Although one country has population, territory, government, sovereignty, and recognition, we can't consider it as a state if its government is a dictator.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Dictatorship is a type of government. A state can exist whether its government is democratic, authoritarian, or dictatorial, provided it possesses the necessary characteristics of a state.",     amharicExplanation: "አምባገነንነት የመንግሥት ዓይነት ነው። አንድ ሀገር ህዝብ፣ ግዛት፣ መንግሥት እና ሉዓላዊነት ያላት ከሆነ የመንግሥቷ አስተዳደር አምባገነን ቢሆንም እንደ ስቴት ልትቆጠር ትችላለች።"   },    {     question: "Which one of the following is not the main objective of civics and moral education?",     options: [       "The issue of fostering intercultural society",       "The need for participant culture",       "The issue of exclusiveness",       "The issue of peace building",       "The need to instill citizens about their rights and duties",       "None"     ],     answer: 2,     englishExplanation: "Civics and moral education promotes inclusion, tolerance, respect for diversity, peace, and responsible citizenship. Exclusiveness is contrary to these objectives.",     amharicExplanation: "የሲቪክና ሞራል ትምህርት አካታችነትን፣ መቻቻልን፣ ልዩነትን ማክበርን፣ ሰላምን እና ኃላፊነት ያለው ዜግነትን ያበረታታል። Exclusiveness ግን ከእነዚህ ዓላማዎች ጋር ይቃረናል።"   },    {     question: "Which one of the following is not true?",     options: [       "Human being is a social animal",       "Good citizens are made",       "Good citizens are born",       "Human being is a political animal"     ],     answer: 2,     englishExplanation: "Good citizens are made through education, socialization, experience, and participation. They are not simply born as good citizens.",     amharicExplanation: "ጥሩ ዜጎች በትምህርት፣ በማህበራዊ ኑሮ፣ በልምድ እና በተሳትፎ የሚቀረጹ ናቸው። ተወልደው በቀጥታ ጥሩ ዜጋ አይሆኑም።"   },    {     question: "Citizenship and moral education aim to equip students and seek to promote the following except one:",     options: [       "Fairness",       "Tolerance",       "Ethio-centrism",       "All",       "None"     ],     answer: 2,     englishExplanation: "Civic and moral education promotes fairness and tolerance. Ethio-centrism, when understood as a narrow or exclusive group-centered attitude, is not a desired civic value.",     amharicExplanation: "የዜግነትና ሞራል ትምህርት ፍትህንና መቻቻልን ያበረታታል። Ethio-centrism እንደ ጠባብ የቡድን ተኮር አመለካከት ሲወሰድ የሚፈለግ የዜግነት እሴት አይደለም።"   },    {     question: "Mr. Abebe strongly believes that he has no power to change or affect things even at local levels and distances himself from the entire political activities due to the concern of winning daily bread. In addition, he considers politics a dirty game. Which political culture best describes Mr. Abebe?",     options: [       "Parochial",       "Subject",       "Participant",       "None"     ],     answer: 1,     englishExplanation: "Subject political culture describes people who are aware of the political system but feel powerless and remain passive rather than actively participating in politics.",     amharicExplanation: "Subject political culture የፖለቲካ ስርዓቱን በተወሰነ ደረጃ የሚያውቁ ነገር ግን በፖለቲካ ሂደት ላይ ተጽዕኖ ማሳደር እንደማይችሉ የሚያስቡና ተሳትፎአቸው ዝቅተኛ የሆነ ሰዎችን ይገልጻል።"   },    {     question: "In which of the following political cultures are the roles of the citizens insignificant?",     options: [       "Participant",       "Parochial",       "Subject",       "None",       "All"     ],     answer: 1,     englishExplanation: "In a parochial political culture, citizens have little or no awareness of the wider political system, so their political roles are insignificant.",     amharicExplanation: "በParochial political culture ውስጥ ዜጎች ስለ ሰፊው የፖለቲካ ስርዓት ግንዛቤያቸው አነስተኛ ወይም የለም። ስለዚህ የፖለቲካ ሚናቸው አነስተኛ ነው።"   },    {     question: "Of the following, one is not the purpose of moral and civic education:",     options: [       "The need for participant political culture",       "Build civic competence of citizens",       "Develop democratic outlook",       "Discourage sense of patriotism",       "None"     ],     answer: 3,     englishExplanation: "Moral and civic education aims to develop civic competence, democratic attitudes, active participation, and a constructive sense of patriotism. Therefore, discouraging patriotism is not its purpose.",     amharicExplanation: "የሞራልና ሲቪክ ትምህርት የዜግነት ብቃትን፣ ዴሞክራሲያዊ አመለካከትን፣ ንቁ ተሳትፎን እና ጤናማ የሀገር ፍቅርን ማዳበር ያለመ ነው። ስለዚህ የPatriotism ስሜትን ማዳከም ዓላማው አይደለም።"   },    {     question: "Which of the following is correct about the difference between Civics and ethics?",     options: [       "Civics deals with the rights and duties of citizens whereas ethics studies about the morality of the society.",       "Civics mainly focuses on the horizontal interaction of the society whereas ethics targets the vertical relation of the society with the governing body.",       "Civics especially focuses on moral dilemmas whereas ethics emphasizes on the artificial rules made by organized society.",       "All of the above"     ],     answer: 0,     englishExplanation: "Civics focuses on the rights and duties of citizens and their relationship with the state, while ethics deals with moral principles, values, and questions of right and wrong.",     amharicExplanation: "Civics የዜጎችን መብቶችና ግዴታዎች እና ከመንግሥት ጋር ያላቸውን ግንኙነት ይመለከታል። Ethics ግን የሞራል መርሆችን፣ እሴቶችን እና ትክክልና ስህተትን ያጠናል።"   },    {     question: "All of the following are correct about ethics and morality except:",     options: [       "Ethics is a subject matter of morality, whereas morality is the philosophical underpinning of ethics.",       "Morality provides rational justification about ethical issues whereas ethics specifically implies moral terms.",       "Morality is a subject matter whereas ethics is the field of study about morality.",       "Both terms are absolutely synonyms so that we use them interchangeably."     ],     answer: 3,     englishExplanation: "Ethics and morality are closely related, but they are not absolute synonyms. Ethics generally refers to the systematic study of morality, while morality refers to moral principles, standards, and actual conduct.",     amharicExplanation: "Ethics እና Morality በጣም የተያያዙ ቢሆኑም ሙሉ በሙሉ ተመሳሳይ ቃላት አይደሉም። Ethics በአጠቃላይ የMorality ስርዓታዊ ጥናት ሲሆን፣ Morality ደግሞ የሞራል መርሆችን፣ መስፈርቶችን እና ተግባራዊ ባህሪን ያመለክታል።"   },    {     question: "Among the following, one is valid about Anthropocentrism view of environmental ethics:",     options: [       "Give equal credit for all living things",       "Emphasis on intrinsic value of environment",       "Emphasis on the instrumental value of environment",       "All living things are interdependent having intrinsic value"     ],     answer: 2,     englishExplanation: "Anthropocentrism is a human-centered view that emphasizes the instrumental value of the environment, meaning the environment is valued mainly according to its usefulness to humans.",     amharicExplanation: "Anthropocentrism ሰውን ማዕከል ያደረገ እይታ ነው። አካባቢው ዋጋ የሚኖረው በዋናነት ለሰው ልጅ ባለው ጥቅም ነው ብሎ ያምናል። ይህም Instrumental Value ይባላል።"   },    {     question: "In which history of civic education in Ethiopia was political education highly skewed to inculcating the socialist ideology in the minds of the students?",     options: [       "Imperial Era",       "Derg regime",       "Current Era",       "B and E",       "None"     ],     answer: 1,     englishExplanation: "During the Derg regime, political education and school curricula were strongly influenced by socialist and Marxist-Leninist ideology.",     amharicExplanation: "በደርግ መንግሥት ዘመን የፖለቲካ ትምህርትና የትምህርት ሥርዓቱ በሶሻሊስት እና በማርክሲዝም-ሌኒኒዝም አስተሳሰብ በጣም ተጽዕኖ ስር ነበር።"   },    {     question: "We know that the main purpose to be achieved of Civic Education is to create GOOD CITIZENS. What does it mean good citizen?",     options: [       "Citizen who is competent.",       "Citizen who is committed.",       "Citizen who is prejudiced.",       "All",       "All except C",       "None"     ],     answer: 4,     englishExplanation: "A good citizen should be competent and committed. Competence means having the knowledge and skills needed for responsible citizenship, while commitment means being willing to participate responsibly. Being prejudiced contradicts good citizenship. Therefore, All except C is correct.",     amharicExplanation: "ጥሩ ዜጋ ማለት ብቁ (competent) እና ቁርጠኛ (committed) የሆነ ዜጋ ነው። Prejudiced መሆን ግን ከጥሩ ዜግነት ጋር ይቃረናል። ስለዚህ 'All except C' ትክክለኛው መልስ ነው።"   }],
         2: [],
         3: [],
         4: [],
