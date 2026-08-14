@@ -16395,7 +16395,253 @@ const quizData = {
     englishExplanation: "A comprehensive moral judgment considers three important aspects: the motive or reason for the action, the means or method used, and the consequences or results of the action.",
     amharicExplanation: "የሞራል ውሳኔ ለመስጠት ዋናዎቹ ሦስት ነገሮች የድርጊቱ መነሻ ምክንያት (Motive)፣ የተጠቀሙበት መንገድ (Means) እና የድርጊቱ ውጤት (Consequences) ናቸው።"
   }],
-        4: [],
+        4: [ {
+    question: "Which state type reflects a deeper structure of oppression, where men dominate public affairs by excluding women?",
+    options: [
+      "Social democratic state",
+      "Capitalist state",
+      "Patriarchal state",
+      "Leviathan state"
+    ],
+    answer: 2,
+    englishExplanation: "A patriarchal state is a system where power and public affairs are dominated by men, structurally excluding women and reflecting deep-rooted gender oppression.",
+    amharicExplanation: "ፓትርያርካዊ መንግሥት (Patriarchal state) ማለት ወንዶች ሴቶችን ከህዝባዊ ጉዳዮች በማግለል ስልጣንን የሚቆጣጠሩበት እና ጥልቅ የሆነ የፆታ አድልዎ የሚንጸባረቅበት የመንግሥት ዓይነት ነው።"
+  },
+
+  {
+    question: "Which type of state intervenes in economic life specifically to promote industrial growth and economic development?",
+    options: [
+      "Minimal state",
+      "Capitalist state",
+      "Developmental state",
+      "Pluralist state"
+    ],
+    answer: 2,
+    englishExplanation: "A developmental state actively intervenes in the economy with policies, subsidies, and planning specifically designed to foster rapid industrial growth and economic development.",
+    amharicExplanation: "የልማታዊ መንግሥት (Developmental state) የኢንዱስትሪ ዕድገትን እና የኢኮኖሚ ልማትን ለማፋጠን በንቃት በኢኮኖሚው ውስጥ ጣልቃ የሚገባ የመንግሥት ዓይነት ነው።"
+  },
+
+  {
+    question: "Which philosopher is most closely associated with the idealist perspective on the state?",
+    options: [
+      "Karl Marx",
+      "Max Weber",
+      "Georg Wilhelm Friedrich Hegel",
+      "John Locke"
+    ],
+    answer: 2,
+    englishExplanation: "Hegel viewed the state from an idealist perspective as an ethical community embodying universal altruism, reason, and moral order.",
+    amharicExplanation: "ጆርጅ ቪልሄልም ፍሬድሪክ ሄግል (Hegel) መንግሥትን እንደ ሥነ-ምግባራዊ ማህበረሰብ እና የሞራል ከፍታ አድርጎ በሚመለከተው ሃሳባዊ (idealist) አመለካከት ይታወቃል።"
+  },
+
+  {
+    question: "According to the functionalist perspective, what is the central function of the state?",
+    options: [
+      "Economic development",
+      "Maintenance of social order",
+      "Expansion of territory",
+      "Promotion of culture"
+    ],
+    answer: 1,
+    englishExplanation: "The functionalist perspective argues that the main purpose of the state is to uphold social stability, peace, and order so society can function harmoniously.",
+    amharicExplanation: "ፈንክሽናሊስት (Functionalist) አመለካከት እንደሚለው ዋናው የመንግሥት ተግባር ማህበራዊ መረጋጋትንና ሰላምን ማስጠበቅ ነው።"
+  },
+
+  {
+    question: "Which of the following best describes the organizational perspective of the state?",
+    options: [
+      "The state as an ethical community",
+      "The state as a mechanism for class conflict resolution",
+      "The state as the apparatus of government responsible for social organization",
+      "The state as an entity in international relations"
+    ],
+    answer: 2,
+    englishExplanation: "The organizational perspective defines the state as the permanent apparatus of government and public administration responsible for organizing society.",
+    amharicExplanation: "ድርጅታዊ አመለካከት (Organizational perspective) መንግሥትን ማህበረሰቡን የማስተዳደር ኃላፊነት ያለው የመንግሥት መዋቅር አድርጎ ይመለከተዋል።"
+  },
+
+  {
+    question: "According to the Montevideo Convention, which of the following is NOT an essential element of a state?",
+    options: [
+      "Defined territory",
+      "Permanent population",
+      "Government",
+      "Economic system"
+    ],
+    answer: 3,
+    englishExplanation: "Under the Montevideo Convention, the essential criteria for a state include a permanent population, a defined territory, a government, and the capacity to enter into relations with other states. An economic system is not an essential element.",
+    amharicExplanation: "በሞንቪዲዮ ስምምነት (Montevideo Convention) መሠረት የስቴት አስፈላጊ አካላት ቋሚ ህዝብ፣ የተወሰነ ግዛት፣ መንግሥት እና ከሌሎች ስቴቶች ጋር ግንኙነት የመፍጠር አቅም ናቸው። የኢኮኖሚ ስርዓት ግን አስፈላጊ አካል አይደለም።"
+  },
+
+  {
+    question: "Which theory of the state views the state as an impartial umpire in society?",
+    options: [
+      "Capitalist State",
+      "Leviathan State",
+      "Pluralist State",
+      "Patriarchal State"
+    ],
+    answer: 2,
+    englishExplanation: "Pluralist theory portrays the state as a neutral referee or impartial umpire that mediates fairly among competing interest groups in society.",
+    amharicExplanation: "ፕሉራሊስት ንድፈ-ሀሳብ (Pluralist theory) መንግሥትን በማህበረሰቡ ውስጥ ያሉ የተለያዩ ቡድኖችን ፍትሃዊ በሆነ መንገድ የሚያስታርቅ ገለልተኛ ዳኛ አድርጎ ይመለከታል።"
+  },
+
+  {
+    question: "According to Marxist theory, what is the primary role of the state?",
+    options: [
+      "To act as an impartial umpire",
+      "To serve the interests of the ruling class",
+      "To expand its own power and influence",
+      "To protect individual liberties"
+    ],
+    answer: 1,
+    englishExplanation: "Marxism asserts that the state is an instrument used by the economically dominant or ruling class to maintain its power and exploit the working class.",
+    amharicExplanation: "ማርክሲዝም እንደሚለው የመንግሥት ዋና ሚና ገዢውን መደብ ጥቅም ማስጠበቅ ነው። መንግሥት የኢኮኖሚ በላይነት ያለው መደብ ስልጣኑን እንዲጠብቅ የሚያገለግል መሣሪያ ነው።"
+  },
+
+  {
+    question: "The Leviathan theory of the state is most closely associated with which political ideology?",
+    options: [
+      "Marxism",
+      "Classical Liberalism",
+      "Social Democracy",
+      "Pluralism"
+    ],
+    answer: 1,
+    englishExplanation: "The Leviathan theory, associated with Thomas Hobbes, emphasizes the need for a strong sovereign authority to maintain social order and security.",
+    amharicExplanation: "ሌቪያታን ቲዎሪ (Leviathan theory) ከቶማስ ሆብስ ጋር የተያያዘ ሲሆን፣ ማህበራዊ ሰላምንና ደህንነትን ለማስጠበቅ ጠንካራ የሉዓላዊ ስልጣን አስፈላጊ ነው ይላል።"
+  },
+
+  {
+    question: "Which of the following best describes the concept of sovereignty?",
+    options: [
+      "The ability of a state to govern itself without external interference",
+      "The power of the government to enforce laws",
+      "The right of citizens to participate in government",
+      "The division of power between different branches of government"
+    ],
+    answer: 0,
+    englishExplanation: "Sovereignty means supreme political authority and independence, allowing a state to govern itself within its territory without external control.",
+    amharicExplanation: "ሉዓላዊነት (Sovereignty) ማለት አንድ ሀገር ከውጭ ጣልቃ ገብነት ነፃ ሆና በራሷ ግዛት ላይ ራሷን የማስተዳደር ከፍተኛ ስልጣን ማለት ነው።"
+  },
+
+  {
+    question: "Citizenship can be acquired by all the following means EXCEPT:",
+    options: [
+      "Birth within the territory of the state",
+      "Naturalization",
+      "Marriage to a citizen",
+      "Temporary residence in the state"
+    ],
+    answer: 3,
+    englishExplanation: "Citizenship may be acquired through birth, naturalization, or other legally recognized methods such as marriage in some legal systems. Temporary residence alone does not automatically confer citizenship.",
+    amharicExplanation: "ዜግነት በልደት፣ በኔቹራላይዜሽን ወይም በሕግ በተፈቀዱ ሌሎች መንገዶች ሊገኝ ይችላል። በጊዜያዊ መኖሪያ ብቻ ዜግነት በራሱ አይገኝም።"
+  },
+
+  {
+    question: "The international approach to the state views it primarily as an actor on the world stage.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The international approach focuses on the state as an actor in international relations, including diplomacy, external sovereignty, trade, and relations with other states.",
+    amharicExplanation: "አለም አቀፋዊው አካሄድ ስቴትን በዓለም አቀፍ መድረክ ላይ እንደ አንድ ተዋናይ ይመለከታል። በዲፕሎማሲ፣ በውጭ ግንኙነት፣ በንግድ እና በውጭ ሉዓላዊነት ላይ ያተኩራል።"
+  },
+
+  {
+    question: "If a person stays outside of his/her country for long period of time, mode of losing citizenship is through expiration.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "In the terminology used in this question, prolonged absence from one's country for a legally defined period may result in the loss of citizenship through lapse or expiration.",
+    amharicExplanation: "በዚህ ጥያቄ የተጠቀሰው የሕግ ቃል መሠረት፣ አንድ ሰው ከሀገሩ ውጭ ለረጅም እና ቀጣይነት ላለው ጊዜ ከቆየ በሕግ በተወሰነው ሁኔታ ዜግነቱን በLapse ወይም Expiration ሊያጣ ይችላል።"
+  },
+
+  {
+    question: "The Marxist notion of a capitalist state offers a clear alternative to the pluralist image of the state as a neutral arbiter or umpire.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "Pluralists view the state as a neutral referee that balances competing groups, while Marxists argue that the capitalist state is biased toward the interests of the capitalist ruling class.",
+    amharicExplanation: "ፕሉራሊስቶች መንግሥትን ተወዳዳሪ ቡድኖችን የሚያስታርቅ ገለልተኛ ዳኛ አድርገው ያዩታል። ማርክሲስቶች ግን የካፒታሊስት ስቴት የገዢውን የካፒታሊስት መደብ ጥቅም የሚያስጠብቅ አድሎአዊ አካል ነው ብለው ያምናሉ።"
+  },
+
+  {
+    question: "For the state to exist the number of population and its diversity is decisive factor and element.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "A population is an essential element of a state, but its specific size and diversity are not decisive legal requirements. A state can have a small or relatively homogeneous population.",
+    amharicExplanation: "ህዝብ የስቴት አስፈላጊ አካል ቢሆንም፣ የህዝቡ ብዛት እና ልዩነት የስቴት መኖርን የሚወስኑ ዋና የሕግ መስፈርቶች አይደሉም። አነስተኛ ወይም በአንጻራዊነት አንድ ዓይነት ህዝብ ያላት ሀገርም ስቴት ልትሆን ትችላለች።"
+  },
+
+  {
+    question: "Thomas Hobbes emphasizes the establishment of unlimited state in order to secure stability.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "Hobbes advocated an absolute sovereign authority to maintain peace and security, but the statement's wording as an 'unlimited state' does not accurately express his theory in the context of this question.",
+    amharicExplanation: "ቶማስ ሆብስ ሰላምንና መረጋጋትን ለማስጠበቅ ፍፁማዊ (absolute) የሉዓላዊ ስልጣንን ይደግፍ ነበር። ስለዚህ 'unlimited state' የሚለው አባባል በዚህ ጥያቄ አጠቃቀም ትክክለኛ ስላልሆነ መልሱ False ነው።"
+  },
+
+  {
+    question: "According to capitalist theory, the primary role of state is to serve the interest of the whole section of the society.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "According to the theory used in this question, the capitalist state primarily protects private property, market relations, and the interests of the capitalist class rather than equally serving every section of society.",
+    amharicExplanation: "በዚህ ጥያቄ የተጠቀሰው የካፒታሊስት ንድፈ-ሀሳብ መሠረት፣ የመንግሥት ዋና ሚና የሁሉንም የማህበረሰብ ክፍሎች በእኩል መጠበቅ ሳይሆን የግል ንብረትን፣ የገበያ ግንኙነቶችን እና የካፒታሊስት መደብን ጥቅም ማስጠበቅ ነው።"
+  },
+
+  {
+    question: "The legal relationship between the individual and the state is",
+    options: [
+      "Human rights",
+      "Citizenship",
+      "Popular Sovereignty",
+      "Democracy"
+    ],
+    answer: 1,
+    englishExplanation: "Citizenship is the legal bond and status that connects an individual to a particular state and establishes rights and duties between the individual and the state.",
+    amharicExplanation: "በግለሰቡና በስቴት መካከል ያለው የሕግ ግንኙነት ዜግነት (Citizenship) ይባላል። ዜግነት በግለሰቡና በስቴቱ መካከል መብቶችንና ግዴታዎችን የሚያቋቁም የሕግ ግንኙነት ነው።"
+  },
+
+  {
+    question: "Which of the following statement is incorrect about an idealistic approach to the state?",
+    options: [
+      "State is divine, spiritual, and powerful entity",
+      "State is infallible and absolute institution",
+      "State is an ethical institution",
+      "State is a collection of state institutions"
+    ],
+    answer: 3,
+    englishExplanation: "The idealist approach views the state as a supreme ethical, spiritual, or moral institution. It does not simply define the state as a collection of government institutions, which belongs to the organizational or institutional perspective.",
+    amharicExplanation: "ሃሳባዊ (Idealist) አቀራረብ ስቴትን እንደ መለኮታዊ፣ መንፈሳዊ እና የሞራል ተቋም ይመለከታል። ስቴትን በቀላሉ እንደ የመንግሥት ተቋማት ስብስብ መመልከት ግን የድርጅታዊ ወይም የተቋማዊ አመለካከት ነው።"
+  },
+
+  {
+    question: "The way of losing citizenship due to staying outside a state for a long and continuous period is referred to as__________",
+    options: [
+      "Deprivation",
+      "Renunciation",
+      "Lapse",
+      "Restoration"
+    ],
+    answer: 2,
+    englishExplanation: "Lapse refers to the loss or termination of citizenship resulting from a long and continuous period outside the state, where such loss is provided for by the applicable law.",
+    amharicExplanation: "ከሀገር ውጭ ለረጅም እና ቀጣይነት ላለው ጊዜ በመቆየት ምክንያት የሚመጣ የዜግነት ማጣት ሂደት Lapse (ላፕስ) ይባላል።"
+  },{     question: "Of the following, one is incorrect about the difference between state and government.",     options: [       "Government is permanent but the state is changeable.",       "The former is general while the latter is particular.",       "The state is a comprehensive term that can include a government but not vice versa.",       "Government is tangible but the state is an abstract entity."     ],     answer: 0,     englishExplanation: "This statement is incorrect because the state is relatively permanent, while governments are temporary and can change through elections, reforms, revolutions, or other political processes.",     amharicExplanation: "ይህ አባባል የተሳሳተ ነው። ምክንያቱም ስቴት (State) አንፃራዊ በሆነ መልኩ ዘላቂ ሲሆን፣ መንግሥት (Government) ግን በምርጫ፣ በለውጥ ወይም በሌሎች የፖለቲካ ሂደቶች ሊቀያየር ይችላል።"   },    {     question: "Among the following citizenship perspectives, one prioritizes achieving individuals' freedom because individuals are the basis for the existence of society.",     options: [       "Republican Perspective",       "Transnational Perspective",       "Communitarian Perspective",       "Liberal Perspective"     ],     answer: 3,     englishExplanation: "The liberal perspective gives primary importance to individual rights, freedoms, and liberties. It views individuals as the foundation of society and emphasizes protecting their freedom.",     amharicExplanation: "የሊበራል (Liberal) የዜግነት አመለካከት ለግለሰቦች መብት፣ ነፃነት እና ነፃ ፈቃድ ቅድሚያ ይሰጣል። ግለሰቦች የማኅበረሰብ መሠረት ናቸው ብሎ ያምናል።"   },    {     question: "Which of the following perspectives upholds the statement that 'the core function of the state is to provide a framework of peace, social order, and other essential services so that individuals enjoy their natural rights and liberties'?",     options: [       "Social Democracy",       "Liberalism",       "Communism",       "Developmentalism"     ],     answer: 1,     englishExplanation: "Liberalism argues that the state should maintain peace, law, and social order while protecting individuals so that they can freely exercise their natural rights and liberties.",     amharicExplanation: "ሊበራሊዝም (Liberalism) የስቴት ዋና ተግባር ሰላምን፣ ሕግን እና ማኅበራዊ ሥርዓትን በመጠበቅ ግለሰቦች የተፈጥሮ መብቶቻቸውንና ነፃነታቸውን በነፃነት እንዲጠቀሙ ማስቻል ነው ይላል።"   },    {     question: "Theory of state which provides that the state is the voluntary agreement between government and the governed is-",     options: [       "Pluralist",       "Patriarchal",       "Capitalist",       "Leviathan"     ],     answer: 0,     englishExplanation: "According to the theory presented in the question, the pluralist perspective views the state as arising through agreement and interaction between different groups and the governing authority.",     amharicExplanation: "በጥያቄው መሠረት የፕሉራሊስት (Pluralist) ንድፈ ሐሳብ ስቴት በመንግሥትና በሚተዳደሩት ሕዝቦች መካከል በሚደረግ ስምምነትና መስተጋብር የሚመሠረት እንደሆነ ያስረዳል።"   },    {     question: "Both the cow and its milk are commonly owned properties. In which type of state is this aligned with?",     options: [       "Developmental State",       "Minimal State",       "Religious State",       "Collectivized State"     ],     answer: 3,     englishExplanation: "A collectivized state emphasizes common or state ownership of economic resources and property. Therefore, both the cow and its milk being commonly owned is consistent with a collectivized state.",     amharicExplanation: "Collectivized State የጋራ ወይም የመንግሥት ባለቤትነትን የሚያጠናክር የስቴት ዓይነት ነው። ስለዚህ ላምና ወተቷ የጋራ ንብረት መሆናቸው ከCollectivized State ጋር ይስማማል።"   },    {     question: "Your cow, its milk, and even your life are controlled by the government. In which type of state does this occur?",     options: [       "Totalitarian State",       "Developmental State",       "Religious State",       "Collectivized State"     ],     answer: 0,     englishExplanation: "A totalitarian state seeks extensive control over both public and private life. Government authority can extend to property, economic activities, personal behavior, and many other areas of life.",     amharicExplanation: "ቶታሊቴሪያን (Totalitarian) ስቴት በሕዝብና በግል ሕይወት ላይ እጅግ ሰፊ ቁጥጥር የሚያደርግ ሥርዓት ነው። በዚህ ሥርዓት መንግሥት ንብረትን፣ ኢኮኖሚያዊ ተግባራትን፣ የግል ባህሪንና ሌሎችንም የሕይወት ክፍሎች በሰፊው ሊቆጣጠር ይችላል።"   },    {     question: "Both you and the government have cows to participate in the market. This aligns with which type of state?",     options: [       "Religious State",       "Minimal State",       "Developmental State",       "Collectivized State"     ],     answer: 2,     englishExplanation: "A developmental state actively participates in and guides economic activities alongside private actors. Its purpose is to promote economic growth, industrialization, and development.",     amharicExplanation: "Developmental State ማለት መንግሥት ከግል ባለሀብቶች ጋር በኢኮኖሚው ውስጥ በንቃት የሚሳተፍና የኢኮኖሚ ዕድገትን የሚመራ ስቴት ነው።"   },    {     question: "The government takes your cow for worship and ritual purposes. In which type of state would this happen?",     options: [       "Collectivized State",       "Minimal State",       "Religious State",       "Developmental State"     ],     answer: 2,     englishExplanation: "In a religious state, political authority and government policies are strongly influenced by religious beliefs, doctrines, and practices. Therefore, using property for religious rituals is associated with a religious state.",     amharicExplanation: "በሃይማኖታዊ (Religious) ስቴት ውስጥ የመንግሥት ፖሊሲዎችና ድርጊቶች በሃይማኖታዊ እምነቶች፣ አስተምህሮቶችና ሥርዓቶች በከፍተኛ ሁኔታ ይመራሉ።"   },    {     question: "You own the cow, and the government does not intervene in how you sell its milk. Which type of state does this describe?",     options: [       "Minimal State",       "Totalitarian State",       "Developmental State",       "Collectivized State"     ],     answer: 0,     englishExplanation: "A minimal state limits government intervention and gives individuals significant freedom to own property and conduct economic activities. Therefore, the situation describes a minimal state.",     amharicExplanation: "Minimal State ማለት የመንግሥት ጣልቃ ገብነት በጣም የተገደበ ሲሆን ግለሰቦች ንብረታቸውን በነፃነት የሚያስተዳድሩበት ስቴት ነው።"   },    {     question: "A person who was an Ethiopian national and who has acquired foreign nationality can be readmitted to Ethiopian nationality when he/she fulfills all requirements except one.",     options: [       "Returned and domiciled in Ethiopia",       "Renounced his foreign nationality",       "Applied to the Authority for re-admission",       "Made an outstanding contribution to Ethiopia"     ],     answer: 3,     englishExplanation: "Returning and establishing domicile in Ethiopia, renouncing foreign nationality, and applying for readmission are among the requirements described in the question. Making an outstanding contribution to Ethiopia is not a standard requirement for ordinary readmission.",     amharicExplanation: "በጥያቄው መሠረት የቀድሞ የኢትዮጵያ ዜጋ እንደገና ዜግነት ለማግኘት ወደ ኢትዮጵያ መመለስና መኖሪያ ማቋቋም፣ የውጭ ዜግነቱን መተው እና ለሥልጣኑ ማመልከት ከሚጠበቁ መስፈርቶች ውስጥ ናቸው። ለኢትዮጵያ ልዩ አስተዋጽኦ ማድረግ ግን የመደበኛ ዳግም ዜግነት መስፈርት አይደለም።"   },    {     question: "An Ethiopian ambassador living in the United States of America gave birth in the residence of the diplomats of Ethiopia. A child has the possibility to acquire the citizenship status of",     options: [       "USA through the principle of jus soli",       "Ethiopia through the principle of jus sanguinis",       "Ethiopia through the principle of jus soli",       "Ethiopia and USA through both principles simultaneously"     ],     answer: 1,     englishExplanation: "The child may acquire Ethiopian citizenship through jus sanguinis, meaning citizenship by descent from Ethiopian parents. The citizenship of a child born to diplomats is determined according to the applicable nationality and diplomatic laws.",     amharicExplanation: "ሕፃኑ ከኢትዮጵያዊ ወላጆች ስለተወለደ በደም ዝምድና (Jus sanguinis) መርህ መሠረት የኢትዮጵያ ዜግነት ሊያገኝ ይችላል። የዲፕሎማት ልጅ ዜግነትም በሚመለከተው የዜግነትና የዲፕሎማሲ ሕግ መሠረት ይወሰናል።"   },    {     question: "Identify the statement that is not true regarding the basic purpose of the constitution:",     options: [       "It defines the political structure and forms of a state.",       "It gives specific explanations and details on political issues.",       "It establishes the duties and guarantees rights of citizens.",       "It limits the power of government and relationships with the governed."     ],     answer: 1,     englishExplanation: "A constitution establishes the fundamental political and legal framework of a state. It defines institutions, powers, duties, and rights, but it does not normally provide detailed explanations of every individual political issue.",     amharicExplanation: "ህገ-መንግሥት የሀገሪቱን መሠረታዊ የፖለቲካና የሕግ መዋቅር ይወስናል፣ የመንግሥትን ሥልጣን ይገድባል እና የዜጎችን መብት ያረጋግጣል። ስለሁሉም የፖለቲካ ጉዳዮች ግን ዝርዝር ማብራሪያ አይሰጥም።"   },    {     question: "Which type of state brings not only the economy, but also education, culture, religion, and family life under direct state control?",     options: [       "Social Democratic State",       "Totalitarian State",       "Minimal State",       "Pluralist State"     ],     answer: 1,     englishExplanation: "A totalitarian state seeks extensive control over almost every dimension of public and private life, including the economy, education, culture, religion, and family life.",     amharicExplanation: "ቶታሊቴሪያን (Totalitarian) ስቴት ኢኮኖሚን ብቻ ሳይሆን ትምህርትን፣ ባህልን፣ ሃይማኖትን እና የቤተሰብ ሕይወትን ጨምሮ በሕዝብና በግል ሕይወት ላይ ሰፊ ቁጥጥር ያደርጋል።"   },    {     question: "Which type of state intervenes to bring about broader social restructuring, typically based on principles like fairness, equality, and social justice?",     options: [       "Minimal State",       "Social Democratic State",       "Leviathan State",       "Collectivized State"     ],     answer: 1,     englishExplanation: "A social democratic state uses government intervention, public policies, and welfare programs to reduce social inequality and promote fairness, equality, and social justice.",     amharicExplanation: "ማኅበራዊ ዴሞክራሲያዊ (Social Democratic) ስቴት የማኅበራዊ እኩልነትን ለማስፋፋት፣ ፍትህን ለማረጋገጥ እና ልዩነቶችን ለመቀነስ በማኅበራዊና በኢኮኖሚያዊ ጉዳዮች ላይ በንቃት ጣልቃ ይገባል።"   },    {     question: "What type of state acts as a 'night-watchman,' with its primary role as a protective body for its citizens?",     options: [       "Minimal State",       "Religious State",       "Pluralist State",       "Capitalist State"     ],     answer: 0,     englishExplanation: "The minimal state is often described as a 'night-watchman state.' Its primary functions are to protect citizens from violence, theft, and other violations while allowing individuals broad personal and economic freedom.",     amharicExplanation: "Minimal State ብዙ ጊዜ 'የሌሊት ጠባቂ መንግሥት' ተብሎ ይጠራል። ዋና ተግባሩ ዜጎችን ከጥቃት፣ ከስርቆት እና ከሌሎች ጉዳቶች መጠበቅ ሲሆን በግል እና በኢኮኖሚ ጉዳዮች ላይ ያለው ጣልቃ ገብነት ውስን ነው።"   },    {     question: "Which type of state brings the entirety of economic life under state control?",     options: [       "Pluralist State",       "Collectivized State",       "Leviathan State",       "Developmental State"     ],     answer: 1,     englishExplanation: "A collectivized state places the economy under extensive state ownership, central planning, and control, limiting or eliminating private control over major economic resources.",     amharicExplanation: "Collectivized State ሙሉውን የኢኮኖሚ ሕይወት በስቴት ባለቤትነት፣ በማዕከላዊ ዕቅድ እና በመንግሥት ቁጥጥር ሥር የሚያደርግ የስቴት ዓይነት ነው።"   },    {     question: "In which type of state is the government seen as a neutral arbitrator among competing groups and individuals in society?",     options: [       "Pluralist State",       "Totalitarian State",       "Patriarchal State",       "Leviathan State"     ],     answer: 0,     englishExplanation: "In pluralist theory, the state is viewed as a neutral arbitrator or referee that mediates among different competing groups and individuals in society.",     amharicExplanation: "በፕሉራሊስት (Pluralist) ስቴት አመለካከት መሠረት፣ መንግሥት በማኅበረሰቡ ውስጥ ባሉ ተወዳዳሪ ቡድኖችና ግለሰቦች መካከል እንደ ገለልተኛ አወያይ ወይም ዳኛ ሆኖ ይሰራል።"   },    {     question: "Which state cannot be understood separately from the economic structure of society, particularly based on a Marxist approach?",     options: [       "Pluralist State",       "Religious State",       "Capitalist State",       "Leviathan State"     ],     answer: 2,     englishExplanation: "From a Marxist perspective, the capitalist state is closely connected to the economic structure of society. It is understood in relation to the economic system and class relations within society.",     amharicExplanation: "በማርክሲስት (Marxist) አቀራረብ መሠረት የካፒታሊስት (Capitalist) ስቴት ከማኅበረሰቡ ኢኮኖሚያዊ መዋቅር ተነጥሎ ሊታይ አይችልም። ምክንያቱም ስቴቱ ከኢኮኖሚው ሥርዓትና ከመደብ ግንኙነቶች ጋር በቅርብ ይያያዛል።"   },    {     question: "Which state pursues interests that are separate from those of society, often responding to external demand-side pressures?",     options: [       "Leviathan State",       "Patriarchal State",       "Religious State",       "Totalitarian State"     ],     answer: 0,     englishExplanation: "The Leviathan state is viewed as an autonomous state actor that can develop and pursue its own institutional interests, which may differ from the interests of wider society.",     amharicExplanation: "Leviathan State ከማኅበረሰቡ ፍላጎት በተለየ መልኩ የራሱን ተቋማዊ ጥቅም ሊከተል የሚችል ራሱን የቻለ የመንግሥት አካል ተደርጎ ይታያል።"   },    {     question: "In which type of state is the government seen as an instrument to seize control of politics through moral and spiritual views?",     options: [       "Pluralist State",       "Religious State",       "Social Democratic State",       "Minimal State"     ],     answer: 1,     englishExplanation: "In a religious state, political authority and government institutions are strongly influenced by religious, moral, and spiritual doctrines, which can guide political decision-making and governance.",     amharicExplanation: "በሃይማኖታዊ (Religious) ስቴት ውስጥ የፖለቲካ ሥልጣንና የመንግሥት ተግባራት በሃይማኖታዊ፣ በሞራላዊ እና በመንፈሳዊ አመለካከቶች በከፍተኛ ሁኔታ ይመራሉ።"   },{     question: "Ethiopian citizenship, which is acquired through marriage, can be lost due to divorce.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Ethiopian citizenship acquired through marriage remains valid regardless of marital status. Even if a divorce occurs, the individual retains their citizenship because Ethiopian law does not revoke citizenship granted through marriage solely due to divorce.",     amharicExplanation: "በጋብቻ የተገኘ የኢትዮጵያ ዜግነት የጋብቻ ሁኔታ ቢቋረጥም (ፍቺ ቢፈጸምም) አይጠፋም። የኢትዮጵያ ሕግ ጋብቻ በመፍረሱ ብቻ በጋብቻ የተገኘን ዜግነት አይሰርዝም።"   },    {     question: "From ways of acquiring citizenship by birth, Ethiopia exercises the principle of Jus sanguinis.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Ethiopia follows the principle of Jus sanguinis (law of blood) for citizenship by birth. This means citizenship is granted based on the nationality of the parents rather than simply on the place where a person is born.",     amharicExplanation: "ኢትዮጵያ በልደት ለሚገኝ ዜግነት የምትከተለው «Jus sanguinis» (የደም ሕግ) የሚባለውን መርህ ነው። ይህም ማለት ዜግነት የሚሰጠው በተወለደበት ቦታ ብቻ ሳይሆን በወላጆች ዜግነት መሠረት ነው።"   },    {     question: "Compared with that of state, membership to government is something mandatory.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Membership in a state is compulsory or necessary for enjoying legal rights, but membership or participation in a government, such as holding public office or actively participating in government, is not mandatory.",     amharicExplanation: "ከስቴት አባልነት በተቃራኒ ከመንግሥት ጋር መሆን ወይም በመንግሥት ውስጥ መሳተፍ ግዴታ አይደለም። የሀገር አባል መሆን አስፈላጊ ሲሆን፣ በመንግሥት ሥርዓት ውስጥ መሳተፍ ግን የግዴታ አይደለም።"   },    {     question: "Popular sovereignty is the doctrine that the government is subject to popular consent.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Popular sovereignty means that the power and legitimacy of government come from the consent of the people. The people are considered the ultimate source of political power.",     amharicExplanation: "ሕዝባዊ ሉዓላዊነት ማለት የመንግሥት ሥልጣንና ሕጋዊነት ምንጭ ሕዝብ መሆኑን የሚገልጽ መርህ ነው። ሕዝቡ የፖለቲካ ሥልጣን ዋና ምንጭ ነው።"   },    {     question: "Variation with qualifications of citizenship in the world results in dual or multiple citizenships.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Different countries have different citizenship laws and requirements. Because of these differences, a person may qualify for citizenship in more than one country and may therefore have dual or multiple citizenships, where permitted by law.",     amharicExplanation: "የተለያዩ ሀገራት የዜግነት ሕጎችና መስፈርቶች ስለሚለያዩ፣ አንድ ግለሰብ ከአንድ በላይ ሀገር ዜግነት ለማግኘት ሊያሟላ ይችላል። በሕግ በሚፈቀድበት ሁኔታም ድርብ ወይም ብዙ ዜግነት ሊኖረው ይችላል።"   },    {     question: "A totalitarian state is known for the most extreme and extensive form of intervention.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Totalitarianism is characterized by extensive state control over both public and private life, including politics, the economy, education, media, and other areas of society. It represents one of the most extreme forms of state intervention.",     amharicExplanation: "አጠቃባሪ (Totalitarian) ስቴት በሕዝብ የማኅበራዊ፣ የኢኮኖሚ፣ የፖለቲካ እና የግል ሕይወት ላይ እጅግ ሰፊ ቁጥጥር የሚያደርግ የመንግሥት ሥርዓት ነው።"   },    {     question: "The state exists in concrete form, while the government is an abstract entity.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "The statement is false because it is generally the reverse. The state is an abstract political and legal entity, while the government consists of concrete institutions and people that exercise political authority and administer the state.",     amharicExplanation: "ይህ አባባል የተሳሳተ ነው። ስቴት ረቂቅ (Abstract) የፖለቲካና የሕግ አካል ሲሆን፣ መንግሥት ግን ሥልጣንን የሚጠቀሙ ሰዎችንና ተቋማትን የያዘ ተጨባጭ (Concrete) አካል ነው።"   },    {     question: "All unitary states are undemocratic by their nature.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "A unitary state is one in which political authority is primarily concentrated in the central government. Being unitary does not automatically mean being undemocratic; a unitary state can also operate according to democratic principles.",     amharicExplanation: "ዩኒታሪ ስቴት ማለት ዋናው የፖለቲካ ሥልጣን በማዕከላዊ መንግሥት የሚጠናከርበት ሥርዓት ነው። ዩኒታሪ መሆን በራሱ ዴሞክራሲያዊ አለመሆንን አያመለክትም።"   },    {     question: "A child born to non-nationals in a state that follows the jus soli principle may have the right to citizenship.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "Under the Jus soli (law of the soil) principle, citizenship is based primarily on the place of birth. Therefore, a child born within the territory of a state that applies this principle may acquire citizenship even if the parents are foreign nationals, subject to that country's laws.",     amharicExplanation: "«Jus soli» (የመሬት ሕግ) ማለት ዜግነት በተወለደበት የሀገር ግዛት ላይ በመመስረት የሚሰጥበት መርህ ነው። ስለዚህ የውጭ ዜጎች ልጅ ይህን መርህ በምትከተል ሀገር ውስጥ ከተወለደ በሀገሪቱ ሕግ መሠረት ዜግነት ሊያገኝ ይችላል።"   },    {     question: "The form of state in which the most extreme and extensive form of interventionism is found is known as",     options: [       "Minimal state",       "Totalitarian state",       "Collectivized States",       "Developmental States"     ],     answer: 1,     englishExplanation: "A totalitarian state exercises extremely extensive control over public and private life. Therefore, it represents the most extreme and extensive form of state interventionism among the options given.",     amharicExplanation: "እጅግ ከፍተኛና ሰፊ የመንግሥት ጣልቃገብነት የሚታይበት የስቴት ዓይነት ቶታሊታሪያን (Totalitarian) ስቴት ይባላል። ይህ ሥርዓት በሕዝብ እና በግል ሕይወት ላይ ሰፊ ቁጥጥር ያደርጋል።"   },    {     question: "The form of state that brings the entirety of economic life under state control is known as;",     options: [       "Religious States",       "Collectivized States",       "Developmental States",       "Social Democratic States"     ],     answer: 1,     englishExplanation: "Collectivized states bring major or entire areas of economic life under state ownership, central planning, and control. This approach is commonly associated with communist systems.",     amharicExplanation: "ሙሉውን የኢኮኖሚ ሕይወት በመንግሥት ቁጥጥር፣ በማዕከላዊ ዕቅድ እና በመንግሥት ባለቤትነት ሥር የሚያደርገው የስቴት ዓይነት **Collectivized State** ይባላል።"   },    {     question: "Mr. Abebe was an Ethiopian citizen but due to his winning of the DV Lottery, he became a citizen of America /USA/. Therefore, Mr. Abebe lost Ethiopian citizenship and gained American citizenship by -------- and -------- respectively.",     options: [       "Grant on application and deprivation",       "Renunciation and Substitution",       "Substitution and Renunciation",       "Option and Renunciation",       "None"     ],     answer: 1,     englishExplanation: "According to the terminology used in the question, Mr. Abebe lost his Ethiopian citizenship through renunciation and acquired the new citizenship through substitution. Therefore, the correct answer is Renunciation and Substitution.",     amharicExplanation: "በጥያቄው ውስጥ በተጠቀሰው ቃላት መሠረት፣ አቶ አበቤ የኢትዮጵያ ዜግነታቸውን በፈቃድ በመተው (Renunciation) እና አዲሱን ዜግነት በመተካት (Substitution) አግኝተዋል። ስለዚህ ትክክለኛው መልስ Renunciation and Substitution ነው።"   },    {     question: "The state that intervenes in economic life with the specific purpose of promoting industrial growth and economic development is known as.",     options: [       "Collectivized States",       "Developmental States",       "Social Democratic States",       "Religious States"     ],     answer: 1,     englishExplanation: "A developmental state actively intervenes in the economy with the specific goal of promoting industrialization, modernization, and economic development.",     amharicExplanation: "የኢንዱስትሪ ዕድገትን፣ ዘመናዊነትን እና የኢኮኖሚ ልማትን ለማፋጠን በኢኮኖሚው ውስጥ በንቃት ጣልቃ የሚገባው ስቴት **Developmental State** ይባላል።"   },    {     question: "According to social contract theory, the state was:",     options: [       "A result of a deliberate and voluntary agreement of the people.",       "Created through a process of conquest and coercion of the weak by the strong.",       "Evolved out of earlier forms of settled human communities.",       "A result of antagonistic class interest based on private properties."     ],     answer: 0,     englishExplanation: "Social contract theory explains the state as the result of an agreement among individuals who voluntarily established a political society for security, order, and mutual protection.",     amharicExplanation: "በማኅበራዊ ውል (Social Contract) ንድፈ-ሐሳብ መሠረት፣ ስቴት የተፈጠረው ሰዎች በፈቃደኝነት ተስማምተው የፖለቲካ ማኅበረሰብ በመመሥረታቸው ነው።"   },    {     question: "Which theory viewed the state as a political institution created by God?",     options: [       "Force theory",       "Divine origin theory",       "Genetic theory",       "Marxist theory"     ],     answer: 1,     englishExplanation: "The Divine Origin Theory holds that the state was created by God and that political rulers received their authority through divine will.",     amharicExplanation: "ስቴት በፈጣሪ እንደተፈጠረና ገዢዎችም ሥልጣናቸውን ከመለኮታዊ ፈቃድ እንዳገኙ የሚያስተምረው ንድፈ-ሐሳብ **Divine Origin Theory** ይባላል።"   },    {     question: "Citizenship takes place as a result of long and continuous stay outside one's own state is known as",     options: [       "Renunciation",       "Substitution",       "Deprivation",       "Lapse"     ],     answer: 3,     englishExplanation: "Lapse refers to the loss of citizenship resulting from a person's prolonged and continuous absence from their own country, where such loss is provided for by the applicable national law.",     amharicExplanation: "አንድ ዜጋ ከሀገሩ ውጭ ለረጅም እና ቀጣይነት ላለው ጊዜ በመቆየቱ ዜግነቱን ሊያጣ የሚችልበት ሂደት **Lapse** ይባላል።"   },    {     question: "Which one of the following is not true about state sovereignty?",     options: [       "It is original, absolute, unlimited power of the state.",       "It is the supreme, irresistible, absolute, uncontrolled authority of the state.",       "It is the right to give unconditional orders to all individuals in the territory of the state.",       "It is the state's ultimate power to address global common problems.",       "All except 'D'",       "None of the above"     ],     answer: 4,     englishExplanation: "Statements A, B, and C describe traditional characteristics of state sovereignty. Statement D is not a traditional characteristic because sovereignty refers primarily to the supreme authority of the state within its territory and its independence externally. Therefore, the composite answer 'All except D' is the intended answer.",     amharicExplanation: "A፣ B እና C የስቴት ሉዓላዊነትን ባህላዊ ባህሪያት ይገልጻሉ። D ግን የሉዓላዊነት ባህሪ አይደለም፤ ሉዓላዊነት በዋናነት የስቴት በግዛቱ ውስጥ ያለውን የበላይ ሥልጣንና ከውጭ ያለውን ነፃነት ያመለክታል። ስለዚህ በጥያቄው የተሰጠው የታሰበው መልስ 'All except D' ነው።"   },    {     question: "Government legitimacy refers to all of the following except one:",     options: [       "Justification and right to exercise that power",       "The popular acceptance of a governing regime",       "The recognized power to coerce and punish others",       "Any higher power to influence the behavior of others",       "All",       "None"     ],     answer: 3,     englishExplanation: "Government legitimacy refers to the justification and recognized right to exercise political power, as well as the acceptance of the governing authority by the people. Merely having any higher power to influence people's behavior does not necessarily constitute legitimacy.",     amharicExplanation: "የመንግሥት ሕጋዊነት (Legitimacy) ማለት ሥልጣንን ለመጠቀም ያለው ሕጋዊ መብትና ምክንያት፣ እንዲሁም የሕዝብ ተቀባይነት ማለት ነው። 'ማንኛውም ከፍተኛ ኃይል የሰዎችን ባህሪ ለመቆጣጠር መቻል' ብቻ ግን ሕጋዊነትን አይወክልም።"   },    {     question: "During the Second World War, when Germany annexed Austria, all the nationals of Austria were forced to drop their Austrian nationality and acquired German nationality. Such a political process of acquiring nationality is termed as:",     options: [       "Option",       "Registration",       "Subjugation",       "Restoration"     ],     answer: 2,     englishExplanation: "Subjugation refers to a process in which people acquire the nationality of a conquering or annexing state as a result of conquest, annexation, or political domination.",     amharicExplanation: "ሰብጁጌሽን (Subjugation) ማለት አንድ ሀገር በወረራ ወይም በመውረስ ሌላ ግዛትን ሲቆጣጠር በዚያ ግዛት የሚኖሩ ሰዎች ዜግነታቸውን በግድ ወደ አሸናፊው ሀገር ዜግነት እንዲቀይሩ የሚደረግበት ሂደት ነው።"   },    {     question: "Unlike the liberal discourse of citizenship, Republican citizenship perspective argued that:",     options: [       "Students would not be concerned with the good of their society and their country.",       "In the long run outcome would be a moral decline and social crisis and political apathy.",       "The private interest of the citizens cannot be strictly different from the public interests.",       "Students may tend to be less-patriotic and less-civic minded to their country and society."     ],     answer: 2,     englishExplanation: "The republican perspective emphasizes civic duty, participation, and the common good. It argues that citizens' private interests cannot be completely separated from the interests of the wider society and the public good.",     amharicExplanation: "ከሊበራል የዜግነት ዕይታ በተቃራኒ፣ ሪፐብሊካን የዜግነት ዕይታ የግለሰቦች የግል ጥቅም ከሕዝብና ከማኅበረሰቡ የጋራ ጥቅም ፈጽሞ ሊነጠል እንደማይችል ያስተምራል።"   } ],
         5: []
 
     }
