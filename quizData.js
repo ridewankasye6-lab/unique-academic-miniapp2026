@@ -16130,7 +16130,271 @@ const quizData = {
     englishExplanation: "The statement is false. This describes rule utilitarianism, not act utilitarianism. Act utilitarianism evaluates each individual action according to whether it produces the greatest utility in that particular situation.",
     amharicExplanation: "ሀሰተኛ (False) ነው። ይህ አባባል Rule Utilitarianism ን እንጂ Act Utilitarianism ን አይገልጽም። Act Utilitarianism እያንዳንዱን ድርጊት በዚያ የተለየ ሁኔታ የሚያስገኘውን ከፍተኛ ጥቅም በመመልከት ይገመግማል።"
   }],
-        3: [],
+        3: [{
+    question: "Which of the following best describes an instrumental good?",
+    options: [
+      "Something valued for its own inherent qualities, independent of other benefits.",
+      "Something valued solely for the enjoyment it brings in the moment.",
+      "Something valued primarily because it serves as a means to achieve another end.",
+      "Something valued due to cultural importance rather than practical utility.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "An instrumental good is valued not for itself, but because it serves as a means or tool for achieving another desirable goal. For example, money is an instrumental good because it can be used to obtain food, shelter, and other needs.",
+    amharicExplanation: "የመሳሪያዊ (Instrumental) መልካም ነገር ለራሱ ብቻ የሚፈለግ ሳይሆን፣ ሌላ የተፈለገ ዓላማን ለማሳካት እንደ መሣሪያ ወይም መንገድ የሚያገለግል ነው።"
+  },
+
+  {
+    question: "In ethical reasoning, why might autonomy be considered significant in end-of-life care decisions?",
+    options: [
+      "It upholds the patient's individual preferences on life quality and death timing.",
+      "It removes responsibility from medical professionals to make critical decisions.",
+      "It ensures that decisions are made solely based on family opinions and desires.",
+      "It values physical health over psychological considerations.",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation: "Autonomy means self-governance. In medical ethics, respecting autonomy allows patients to make free and informed choices about their own bodies, treatment, and end-of-life care.",
+    amharicExplanation: "ራስን በራስ የማስተዳደር መብት (Autonomy) ማለት ሰው ስለራሱ ሕይወት፣ ሰውነት እና ሕክምና ነፃና በቂ መረጃ የተመሰረተ ውሳኔ የመስጠት መብት ነው።"
+  },
+
+  {
+    question: "In the context of ethical decision-making, what does critical consideration of values entail?",
+    options: [
+      "Blindly adhering to traditional beliefs as they offer established moral certainty.",
+      "Analyzing and questioning the values and obligations we assume towards others.",
+      "Ensuring personal opinions align strictly with societal standards of good and bad.",
+      "Prioritizing the immediate outcome over long-term ethical consistency.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Critical consideration of values means actively examining, questioning, and analyzing our moral beliefs and obligations instead of accepting them blindly.",
+    amharicExplanation: "የሞራል እሴቶችን በቁም ነገር መመርመር ማለት እሴቶቻችንንና ለሌሎች ያለንን ግዴታ በጥልቀት መጠየቅ፣ መተንተንና መገምገም እንጂ በዕውር መቀበል አይደለም።"
+  },
+
+  {
+    question: "Which of the following statements best reflects the approach ethics takes towards resolving complex moral issues, as described in this text?",
+    options: [
+      "Ethics aims to provide absolute, clear answers that apply to all situations.",
+      "Ethics intends to create universal rules that remove moral ambiguity.",
+      "Ethics provides frameworks for thinking critically about complex issues without always offering definitive answers.",
+      "Ethics primarily focuses on identifying good and evil based on historical teachings.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Ethics provides frameworks and methods for critically examining difficult moral problems. It does not always provide one absolute or definitive answer for every situation.",
+    amharicExplanation: "ስነ-ምግባር ለሁሉም ውስብስብ ጉዳዮች አንድ ፍጹም መልስ ከመስጠት ይልቅ ጉዳዮችን በሂስና በምክንያታዊ መንገድ ለመመርመር ማዕቀፎችን ያቀርባል።"
+  },
+
+  {
+    question: "Why might ethical reasoning focus on the sanctity of life when discussing the care of terminally ill patients?",
+    options: [
+      "It emphasizes that the process of dying should be avoided at all costs.",
+      "It considers life itself as fundamentally valuable, independent of its quality.",
+      "It prioritizes the financial implications of prolonging life.",
+      "It mandates that all life-extending treatments must be pursued, regardless of patient consent.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "The sanctity of life view holds that human life has intrinsic and fundamental value regardless of its quality or physical condition.",
+    amharicExplanation: "የሕይወት ቅድስና (Sanctity of Life) አመለካከት ሕይወት ራሱ በተፈጥሮው የማይተካ እና የሚከበር ዋጋ እንዳለው ያምናል።"
+  },
+
+  {
+    question: "Which of the following best describes reasoning by analogy in ethical decision-making?",
+    options: [
+      "Applying an ethical principle to a specific scenario to conclude what is right or wrong.",
+      "Using statistical evidence to justify a moral argument.",
+      "Comparing two situations with significant similarities to clarify a moral point.",
+      "Justifying a decision solely based on personal beliefs and intuitions.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Reasoning by analogy involves comparing two situations that have important similarities in order to understand or evaluate an ethical issue.",
+    amharicExplanation: "በምሳሌ (Analogy) መከራከር ማለት አስፈላጊ ተመሳሳይነት ያላቸውን ሁለት ሁኔታዎች በማነፃፀር የሞራል ጉዳይን በተሻለ ለመረዳት መሞከር ነው።"
+  },
+
+  {
+    question: "According to Traer, how do moral sentiments contribute to ethical reasoning?",
+    options: [
+      "They provide an analytical framework that replaces the need for rational thinking.",
+      "They form our emotional basis for empathy and help shape our moral principles.",
+      "They strictly rely on religious teachings to guide ethical decisions.",
+      "They require a complete absence of personal feelings in moral judgments.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Moral sentiments such as empathy and compassion provide an emotional basis for caring about others and help shape our moral principles.",
+    amharicExplanation: "የሞራል ስሜቶች እንደ ርህራሄና ሌሎችን መረዳት ለሌሎች እንድንጨነቅ የሚያደርጉ ስሜታዊ መሠረቶች ሲሆኑ፣ የሞራል መርሆቻችንንም ለመቅረጽ ይረዳሉ።"
+  },
+
+  {
+    question: "Which type of reasoning would most likely be used to argue that reducing carbon emissions is a moral responsibility?",
+    options: [
+      "Reasoning by analogy",
+      "Deductive reasoning",
+      "Inductive reasoning",
+      "Intuitive reasoning",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Inductive reasoning uses specific observations and evidence, such as climate data and rising temperatures, to reach a broader conclusion about our moral responsibility.",
+    amharicExplanation: "ኢንዳክቲቭ ምክንያታዊ አስተሳሰብ ከተለያዩ ተጨባጭ መረጃዎችና ማስረጃዎች በመነሳት ሰፋ ያለ አጠቃላይ ድምዳሜ ላይ ይደርሳል።"
+  },
+
+  {
+    question: "What challenge might arise from using rules of thumb in moral decision-making, according to this passage?",
+    options: [
+      "Rules of thumb often lack personal relevance, making them ineffective in practice.",
+      "They are too flexible and may lead to inconsistent moral standards.",
+      "Life's complexities may test or contradict these simple rules, requiring deeper ethical analysis.",
+      "Rules of thumb are only applicable within specific religious or cultural contexts.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Rules of thumb can be useful simple guides, but real-life situations are often complex and may contradict or challenge these simple rules, requiring deeper ethical analysis.",
+    amharicExplanation: "ቀላል የውሳኔ መመሪያዎች (Rules of thumb) ጠቃሚ ቢሆኑም፣ የሕይወት ውስብስብ ሁኔታዎች እነዚህን ደንቦች ሊፈትኑ ወይም ሊቃረኑ ስለሚችሉ ጥልቅ የሞራል ትንተና ያስፈልጋል።"
+  },
+
+  {
+    question: "Which of the following best summarizes the perspective of some philosophers on religious faith in ethical arguments?",
+    options: [
+      "Religious commands are necessary, as humans lack rational capability to determine right from wrong.",
+      "Religious commands are seen as redundant if morality can be understood through rational reflection.",
+      "Religious faith is the only source of universally accepted ethical principles.",
+      "Rational reflection is irrelevant in ethical discussions, as morality is strictly divine.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Some philosophers argue that if morality can already be understood through human reason and rational reflection, additional religious commands may be unnecessary for determining right and wrong.",
+    amharicExplanation: "አንዳንድ ፈላስፎች ሰዎች ሞራልን በምክንያታዊ አስተሳሰብ መረዳት ከቻሉ፣ ተጨማሪ የሃይማኖት ትዕዛዞች ሞራልን ለመወሰን አስፈላጊ ላይሆኑ ይችላሉ ብለው ይከራከራሉ።"
+  },
+
+  {
+    question: "According to the principles of critical reasoning, how can one test the validity of an argument that relies on inductive reasoning?",
+    options: [
+      "By assessing the reliability of the evidence provided in support of the conclusion.",
+      "By verifying the logical structure and deductive principles used in the argument.",
+      "By examining whether the argument is grounded in historical consistency.",
+      "By ensuring that the argument aligns with popular beliefs and cultural norms.",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation: "Inductive arguments depend heavily on evidence and observations. Therefore, their strength can be evaluated by checking whether the supporting evidence is accurate, relevant, sufficient, and reliable.",
+    amharicExplanation: "ኢንዳክቲቭ ክርክር በማስረጃና በተመለከቱ ነገሮች ላይ ስለሚመሰረት፣ ማስረጃዎቹ ትክክለኛ፣ ተዛማጅ፣ በቂና ታማኝ መሆናቸውን መመርመር ያስፈልጋል።"
+  },
+
+  {
+    question: "In the Fairness and Justice Approach to ethics, how would Aristotle suggest addressing favoritism within a decision-making process?",
+    options: [
+      "By focusing solely on the needs of the less advantaged parties.",
+      "By ensuring equal treatment of equals and differential treatment only when morally justified.",
+      "By applying a universal rule regardless of individual circumstances.",
+      "By considering the overall benefits and harms of each action to achieve a balanced outcome.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Aristotle's concept of justice requires treating equals equally and allowing different treatment only when there is a morally relevant and fair reason for the difference.",
+    amharicExplanation: "የአርስቶትል የፍትህ አመለካከት ተመሳሳይ ሰዎችን በእኩልነት ማከምን እና ልዩ አያያዝ የሚደረገው በተገቢና በሞራል ምክንያት ብቻ እንዲሆን ይጠይቃል።"
+  },
+
+  {
+    question: "What is a primary challenge in using goodwill as a criterion in evaluating ethical arguments?",
+    options: [
+      "Goodwill can often contradict factual accuracy within moral reasoning.",
+      "The concept of goodwill lacks a clear, measurable standard in theoretical debate.",
+      "Goodwill depends exclusively on emotional responses rather than reason.",
+      "Goodwill prioritizes the speaker's intentions over the argument's logical coherence.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "Although goodwill is generally considered positive, it can be difficult to define and measure objectively, making it challenging to use as a clear standard in ethical debates.",
+    amharicExplanation: "በጎ ፈቃድ (Goodwill) አዎንታዊ ጽንሰ-ሐሳብ ቢሆንም፣ በግልጽና በተመዘነ መልኩ ለመለካት አስቸጋሪ ስለሆነ በሞራል ክርክር ውስጥ እንደ ጠንካራ መለኪያ መጠቀም ያስቸግራል።"
+  },
+
+  {
+    question: "When analyzing moral issues, why is it insufficient to rely solely on factual information without considering values?",
+    options: [
+      "Facts alone cannot guide action without understanding what is ethically desirable.",
+      "Values always override facts in establishing ethical principles.",
+      "Factual information is often inconsistent and unreliable.",
+      "Facts generally support only the economic implications of moral decisions.",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation: "Facts describe what is, but they do not by themselves determine what ought to be done. Moral values are needed to determine what is ethically desirable or right.",
+    amharicExplanation: "እውነታዎች ምን እንዳለ ያሳያሉ፤ ነገር ግን ምን መደረግ እንዳለበት በራሳቸው አይወስኑም። ትክክለኛውንና ተፈላጊውን ተግባር ለመወሰን የሞራል እሴቶች ያስፈልጋሉ።"
+  },
+
+  {
+    question: "Which commandment from the Ten Commandments is directly concerned with avoiding actions that distort the truth about others?",
+    options: [
+      "Do not steal.",
+      "Do not covet your neighbor's belongings.",
+      "Do not bear false witness against your neighbor.",
+      "Honor your father and your mother.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "The commandment 'Do not bear false witness against your neighbor' directly prohibits false testimony, lying, or making false statements that can harm another person's reputation.",
+    amharicExplanation: "“በጎረቤትህ ላይ በሐሰት አትመስክር” የሚለው ትእዛዝ ሐሰተኛ ምስክርነትን፣ ውሸትን እና የሌሎችን እውነት የሚያዛባ መረጃ መስጠትን ይከለክላል።"
+  },
+
+  {
+    question: "Which statement best reflects the 'Morality and Nature' view as discussed in ethics?",
+    options: [
+      "Nature exists solely for humanity's benefit and has no intrinsic moral value.",
+      "Nature has moral significance and deserves ethical consideration independently of human benefit.",
+      "Humans have an absolute moral right to use natural resources as they see fit.",
+      "Ethical principles only apply to human interactions and not to interactions with nature.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "The Morality and Nature view holds that nature and the environment have moral significance in their own right and should be considered ethically, not merely because they benefit humans.",
+    amharicExplanation: "የ“Morality and Nature” አመለካከት ተፈጥሮና አካባቢ ከሰው ልጅ ጥቅም በተጨማሪ የራሳቸው የሞራል ጠቀሜታ እንዳላቸው ያስተምራል።"
+  },
+
+  {
+    question: "Which of the following scenarios best illustrates 'Individual Morality'?",
+    options: [
+      "Following social norms strictly due to fear of punishment.",
+      "Making decisions based solely on religious commandments.",
+      "Acting on personal principles, even when they conflict with societal or religious expectations.",
+      "Abiding by laws because they reflect the majority's will.",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Individual morality is based on a person's own conscience, principles, and moral values. It can guide a person even when those principles conflict with social or religious expectations.",
+    amharicExplanation: "የግል ሞራል (Individual Morality) ማለት ሰው በራሱ ሕሊና፣ እሴቶችና መርሆች ላይ በመመስረት ውሳኔ መስጠት ነው። እነዚህ መርሆች ከህብረተሰብ ወይም ከሃይማኖታዊ ግምቶች ጋር ቢጋጩም ሊከተላቸው ይችላል።"
+  },
+
+  {
+    question: "In the context of ethical responsibility, which beings are traditionally considered to hold moral accountability?",
+    options: [
+      "Only humans, as they possess the capability for conscious ethical reasoning.",
+      "Animals and plants, as they interact within natural ecosystems.",
+      "Supernatural beings, as moral guides.",
+      "Any being that can experience consequences, regardless of its ability to reason.",
+      "None"
+    ],
+    answer: 0,
+    englishExplanation: "Traditional ethical systems generally consider humans morally accountable because humans are regarded as capable of conscious reasoning and understanding right and wrong.",
+    amharicExplanation: "በባህላዊ የስነ-ምግባር አመለካከቶች መሠረት ሰዎች ትክክልና ስህተትን በማስተዋል መለየትና ውሳኔ መስጠት ስለሚችሉ የሞራል ኃላፊነት ተሸካሚዎች ተደርገው ይቆጠራሉ።"
+  },
+
+  {
+    question: "Which of the following best describes the three primary considerations in making a moral judgment, according to the ethical principles provided?",
+    options: [
+      "Laws, societal norms, and the impact on public image.",
+      "Motives, means, and consequences of actions.",
+      "Personal gain, societal acceptance, and moral certainty.",
+      "Emotional reaction, religious belief, and external rewards.",
+      "None"
+    ],
+    answer: 1,
+    englishExplanation: "A comprehensive moral judgment considers three important aspects: the motive or reason for the action, the means or method used, and the consequences or results of the action.",
+    amharicExplanation: "የሞራል ውሳኔ ለመስጠት ዋናዎቹ ሦስት ነገሮች የድርጊቱ መነሻ ምክንያት (Motive)፣ የተጠቀሙበት መንገድ (Means) እና የድርጊቱ ውጤት (Consequences) ናቸው።"
+  }],
         4: [],
         5: []
 
