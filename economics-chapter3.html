@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Economics - Chapter 3</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button id="pageBackBtn"
+            class="pageBackBtn"
+            type="button">
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">📖</span>
+
+        <div>
+            <h1>Economics</h1>
+            <p>Chapter 3</p>
+        </div>
+
+    </div>
+
+    <button id="pageHomeBtn"
+            class="pageHomeBtn"
+            type="button">
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📈 Economics</h1>
+    <h1>📈 Economics</h1>
 
-<h2>Chapter 3</h2>
-
-<p>
-<h2><b>Chapter Three:</b></h2>
+    <h2>Chapter 3</h2>
 <h2><b>Theory of Consumer Behaviour :</b></h2>
 <p><b>ሰላም የ Unique Academic  ቤተሰቦች እንደምን ከረማችሁ ? ሁሉም ጥሩ እንደሆነ እሰባለሁ ! የኢኮኖሚክስ Instructor ነኝ ዛሬ unit 3 የመጀመሪያ ክፍሉን አብረን የምናይ ይሆናል ::</b></p>
 <p><b>👉 <u>Unit 3 የሚያወራችሁ ስለ ሸማቾች (consumers) አጠቃላይ ፅንሰ ሀሳብ ነው ? ሸማቹ የቱን ሸቀጥ ወዶደው ? የቱንስ ይፈልጋል ? የትኛው ዋጋ በሸማች ፅናት ተመጣጣኝ ነው የሚሉ የሸማች ፅናት የተለበሱ ፅንሰ ሀሳቦችን አብረን የምናይ ይሆናል :: ተከታተሉኝ ይመቻችሁ !</u></b></p>
@@ -272,25 +304,37 @@ When MUx < Px the consumer should consume less of X.</u></b></p>
 ​<p><b><u>The assumptions of consistency and transitivity will rule out the intersection of indifference curves.</u></b></p>
 ​<p><b>☑️ <u>Note : The intersection of indifference curves the same bundles of commodities give different utility.</u></b></p>
 ​<p><b>👉 <u>በGraph ላይ የተቆረጠው PDiffrence Curve ምስል የአንድ ተመሳሳይ እርካታን የሚሰጡ ምርቶች አይደሉም ማለት ነው ፤ በፍትፁም መቆራረጥ የለበትም ከተቆረጡ indifference curve አንድ አይነት ምርት ተመሳሳይ እርካታን አይሰጡም ማለት ነው ::</u></b></p>
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="economics.html">⬅ Back to Economics</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="economics-chapter2.html">
-⬅ Previous
-</a>
-
-<a href="economics-chapter4.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "economics.html";
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js">
+</script>
+
 </body>
+
 </html>
