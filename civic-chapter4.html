@@ -1,19 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Civic Education - Chapter 4</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Civic Education - Chapter 4</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+
+<!-- =====================================
+     TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">
+            📖
+        </span>
+
+        <div>
+
+            <h1>
+                Civic Education
+            </h1>
+
+            <p>
+                Chapter 4
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     YOUR CHAPTER CONTENT
+===================================== -->
+
 <div class="chapter">
 
-<h1>🏛 Civic Education</h1>
+    <h1>
+        🏛 Civic Education
+    </h1>
 
-<h2>Chapter 4</h2>
 
-<p>
+    <h2>
+        Chapter 4
+    </h2>
+
+
 <h2>Chapter Four State, Government and Citizenship.</h2>
 <p>ዛሬ በይፋ የ Chapter 4 ትምህርትን እንማራለን። በዚህ ቻፕተር በዋናነት ስለ State, Government ና Citizenship ምንነት ና ከነሱ ጋ በተያያዘ ያሉትን Theories በስፋት እንዳስሳለን። ይህ ቻፕተር Theory ይበዛበታል መሰረታዊ መረዳትን የሚጠይቅ ከባድ ያልሆነ ግን መረዳትን የሚጠይቅ ቀላል ቻፕተር ነው። አሁን ወደ ትምህርቱ። State(ሀገር ፣ግዛት) ከሚለው እንጀምራለን። መቼም State የሚለው ቃል ለእናንተ አዲስ አይደለም። ግን ሳይንሳዊ ምንነቱን እንማራለን።</p>
 <h3>Understanding State</h3>
@@ -663,26 +736,48 @@
 <p>✌ Citizenship ፋይናል ፈተና ላይ ይወጣል። ስለዚህ ways of acquiring citizenship, ways of losing citizenship, theories of citizenship, ways of acquiring and losing Ethiopian citizenship, Statelessness ወዘተ እስካሁን ያየናቸውን በደንብ ተረዷቸው።</p>
 <p>✌ ቻፕተር 4 ጨረስን ፤ በቀጣይ ቻፕተር 5 እንጀምራለን።</p>
 ```
-
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="civic.html">⬅ Back to Civic Education</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="civic-chapter3.html">
-⬅ Previous
-</a>
-
-<a href="civic-chapter5.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+
+<!-- =====================================
+     TOP NAVIGATION JAVASCRIPT
+===================================== -->
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+
+        history.back();
+
+    } else {
+
+        window.location.href =
+            "civic.html";
+
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href =
+        "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
