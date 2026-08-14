@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Economics - Chapter 2</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button id="pageBackBtn"
+            class="pageBackBtn"
+            type="button">
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">📖</span>
+
+        <div>
+            <h1>Economics</h1>
+            <p>Chapter 2</p>
+        </div>
+
+    </div>
+
+    <button id="pageHomeBtn"
+            class="pageHomeBtn"
+            type="button">
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📈 Economics</h1>
+    <h1>📈 Economics</h1>
 
-<h2>Chapter 2</h2>
-
-<p>
-<h2>Chapter Two : ምዕራፍ ሁለት</h2>
+    <h2>Chapter 2</h2>
 <h2>Theory of Demand and Supply</h2>
 <p>👋 ሰላም A+አቂያን እንዴት ናችሁ ? ቸካል ጥሩ ነው አይደል ? በርቱ ዋጋ ያለው ሰው ለመሆን ዋጋ መክፈላችሁን አታቁሙ ! Economics ዛሬ Unit 2 ስለ Demand and Supply , እንዲሁም Market Equilibrium እኛያለን አብራችሁን ሁኑ ::</p>
 <p>👉 መቼም በአንድም በሌላ አጋጣሚ ስለ አቅርቦት [ supply ] እንዲሁም ስለ ገበያው መሸት [ Demand ] ሲነገር ሰምታችኋል ? ገበያው የሸቁ ግብዓት እጥረት አጋጠመው , አንድ አምራች ድርጅት ኪሳራ አገኘህ , ፍላጎት እና አቅርቦቱ አልተመጣጠነም ሲባል በጀሮአችሁ ሰምታችኋል ? ነገር ግን ይህ ምን ያመላክታል አቅርቦት እና የሸማች መሸት [ ፍላጎት ] ምንድነው ትስስራቸው ? የሚለውን በአሊሞች እኛያለን ተከተሉን ::</p>
@@ -695,26 +727,36 @@
 <p>🔺 <b><u>Therefore, when both supply and demand change, the effect on the equilibrium price depends on the proportion of change (relative change) in demand and change in supply.</u></b></p>
 <p>〰️ <b><u>ስለዚህም ሁለቱም በሚጨምሩበት አልያም በሚቀንሱበት ወቅት -| x የሚኖረው Price Change እንደ ለውጡ አይነት የተለየ አይነት ውጤት ያመጣል ማለት ነው ::</u></b></p>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="economics.html">⬅ Back to Economics</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="economics-chapter1.html">
-⬅ Previous
-</a>
-
-<a href="economics-chapter3.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
 
-    <script type="module" src="access-guard.js"></script>
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "economics.html";
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js">
+</script>
+
 </body>
+
 </html>
