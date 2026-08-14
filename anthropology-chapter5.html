@@ -1,19 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Anthropology - Chapter 5</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+
+<!-- =====================================
+     TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">
+            📖
+        </span>
+
+        <div>
+
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     YOUR CHAPTER CONTENT
+===================================== -->
+
 <div class="chapter">
 
-<h1>🧑‍🤝‍🧑 Anthropology</h1>
+    <h1>
+        🧑‍🤝‍🧑 Anthropology
+    </h1>
 
-<h2>Chapter 5</h2>
 
-<p>
+    <h2>
+        Chapter 5
+    </h2>
   <h2>CHAPTER 5 Identity, Inter-Ethnic Relations and Multiculturalism in Ethiopia</h2>
 <h3>Identity, Ethnicity and Race</h3>
 <p><b>Ethnicity:</b> ይህ ቃል "ዘር"/"ጎሳ" ታዋቂ እየሆነ የመጣው ከ2ኛው የአለም ጦርነት በኃላ ነው። ከዚያ በፊት ግን "tribe" የሚለውን ቃል ነበር ሚጠቀሙት ከዚያ "race" የሚል ቃል መጣ። ይህ ቃል ግን ከ"Nazi ideology - የዘር ጭፍጨፋ" ጋር ተቀራራቢነት አለው ተብሎ ስለታሰበ "Ethnic" የሚለው ቃል ተወሰደ።</p>
@@ -151,21 +215,49 @@
 <p>እነዚህን ይመስላሉ እንግዲህ። ግልፅ ይመስሉኛል። ከታች በፎቶ ላይ በቴብል በጣም በአጭሩ ተቀምጧል። በስፋት ማየት ለምትፈልጉ ለአሳይመንት ወይም ለፕረሰንቴሽን ካስፈለጋችሁ ደግሞ አሪፍ Pdf ከታች ለቅቄላችኃለሁ ።</p>
 <p>ይህን ምዕራፍ በዚህ አጠናቀናል</p>
 
-</p>
-
-<div class="chapterNav">
-
-<a href="anthropology-chapter4.html">
-⬅ Previous
-</a>
-
-<a href="anthropology-chapter6.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+
+<!-- =====================================
+     TOP NAVIGATION JAVASCRIPT
+===================================== -->
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+
+        history.back();
+
+    } else {
+
+        window.location.href =
+            "anthropology.html";
+
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href =
+        "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
