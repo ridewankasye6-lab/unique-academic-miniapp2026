@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Economics - Chapter 4</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button id="pageBackBtn"
+            class="pageBackBtn"
+            type="button">
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">📖</span>
+
+        <div>
+            <h1>Economics</h1>
+            <p>Chapter 4</p>
+        </div>
+
+    </div>
+
+    <button id="pageHomeBtn"
+            class="pageHomeBtn"
+            type="button">
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📈 Economics</h1>
+    <h1>📈 Economics</h1>
 
-<h2>Chapter 4</h2>
-
-<p>
-<h3><b>📚 Chapter Four</b></h3>
-<p><b>#Economics</b></p>
+    <h2>Chapter 4</h2>
 ​<h3><b>📄 <u>The Theory of Production and Cost</u></b></h3>
 ​<h3><b>📊 The Definition of Production</b></h3>
 ​<p><b>📌 <i>Production is the process of transforming inputs into outputs. the outputs can be tangible (goods) or intangible (services).</i></b></p>
@@ -153,25 +184,37 @@
 <p><b>derivative ስናደርገው interms of Q (cost) መሆኑን ለማሳየት ነው ከታች "Q" የገባችው። ከታች በምሳሌ ተመልከቱ። 🤸‍♂️</b></p>
 ​<p><b>በሞጁሉ ላይ የሚገኙ ጥያቄዎችን ስሩ!</b></p>
 ​<p><b>ለአስተያየትና ያልገባችሁ ነገር ካለ 👇</b></p>
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="economics.html">⬅ Back to Economics</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="economics-chapter3.html">
-⬅ Previous
-</a>
-
-<a href="economics-chapter5.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "economics.html";
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js">
+</script>
+
 </body>
+
 </html>
