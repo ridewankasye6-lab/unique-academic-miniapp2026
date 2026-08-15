@@ -1717,7 +1717,765 @@ const quizData = {
     englishExplanation: "False. In the short run, a perfectly competitive firm can earn an economic profit, earn a normal profit, or suffer an economic loss. Normal profit is associated with the long-run equilibrium where firms enter or leave the market until price equals average total cost.",
     amharicExplanation: "ሐሰት ነው። በአጭር ጊዜ ፍጹም ተወዳዳሪ ኩባንያ ኢኮኖሚያዊ ትርፍ፣ ተለመደ ትርፍ ወይም ኢኮኖሚያዊ ኪሳራ ሊያገኝ ይችላል። በረጅም ጊዜ አዳዲስ ኩባንያዎች ወደ ገበያ ሲገቡ ወይም ነባር ኩባንያዎች ከገበያ ሲወጡ የገበያ ሁኔታ ወደ P = ATC ስለሚመራ ተለመደ ትርፍ ይኖራል።"
   }],
-        5: []
+        5: [
+
+  {
+    question: "In a perfectly competitive market, in the long run, the marginal cost of a firm becomes equal to its minimum average total cost.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. In the long run, firms can freely enter or leave a perfectly competitive market. This process drives economic profit to zero. In long-run equilibrium, price equals marginal cost and minimum average total cost (P = MC = minimum ATC), which means firms achieve productive efficiency.",
+    amharicExplanation: "እውነት ነው። በፍጹም ተወዳዳሪ ገበያ ውስጥ በረጅም ጊዜ ኩባንያዎች ወደ ገበያ በነጻ መግባት ወይም ከገበያ መውጣት ይችላሉ። ይህም የኢኮኖሚ ትርፍን ወደ ዜሮ ያመጣል። በረጅም ጊዜ ሚዛናዊነት ዋጋ (P)፣ የህዳግ ወጪ (MC) እና ዝቅተኛው አማካይ ጠቅላላ ወጪ (minimum ATC) እኩል ይሆናሉ። ይህም የምርት ቅልጥፍናን ያሳያል።"
+  },
+
+  {
+    question: "Generally, the price a firm charges for its product is equal to its total revenue divided by the number of units sold.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Total Revenue (TR) is calculated as Price (P) multiplied by Quantity Sold (Q): TR = P × Q. Therefore, if we divide total revenue by quantity, we get the price: P = TR ÷ Q.",
+    amharicExplanation: "እውነት ነው። ጠቅላላ ገቢ (TR) የሚሰላው ዋጋ (P) በተሸጠው የምርት መጠን (Q) በማባዛት ነው። ስለዚህ TR = P × Q ስለሆነ፣ ዋጋን ለማግኘት TRን በ Q እንካፈላለን፦ P = TR ÷ Q።"
+  },
+
+  {
+    question: "Firms in a competitive market can never make economic profits while they may make business (accounting) profits.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True in the long run. In a perfectly competitive market, free entry and exit eliminate economic profit in the long run. However, a firm can still have positive accounting profit because accounting profit considers explicit costs but does not include implicit opportunity costs.",
+    amharicExplanation: "እውነት ነው፣ በተለይ በረጅም ጊዜ። በፍጹም ተወዳዳሪ ገበያ ውስጥ ነጻ መግቢያና መውጫ የኢኮኖሚ ትርፍን በረጅም ጊዜ ወደ ዜሮ ያመጣል። ነገር ግን ኩባንያው አዎንታዊ የሂሳብ ትርፍ ሊያገኝ ይችላል፤ ምክንያቱም የሂሳብ ትርፍ ግልጽ ወጪዎችን ብቻ ያካትታል እንጂ የተዘዋዋሪ የእድል ወጪዎችን አያካትትም።"
+  },
+
+  {
+    question: "The demand curve for the product of a monopolist is the same as the demand curve for the industry.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. A monopolist is the only seller in the market. Therefore, the demand for the monopolist's product is the same as the total market or industry demand curve.",
+    amharicExplanation: "እውነት ነው። ሞኖፖሊስት በገበያ ውስጥ ብቸኛ ሻጭ ነው። ስለዚህ የሞኖፖሊስቱ ምርት የፍላጎት ኩርባ ከጠቅላላ የገበያ ወይም የኢንዱስትሪ ፍላጎት ኩርባ ጋር ተመሳሳይ ነው።"
+  },
+
+  {
+    question: "The minimum acceptable long-run price is that price which equals the minimum ATC of production.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. In the long run, a firm must cover its total costs to remain in business. Therefore, the minimum price at which a firm can remain in the market in the long run is equal to its minimum Average Total Cost (ATC).",
+    amharicExplanation: "እውነት ነው። በረጅም ጊዜ አንድ ኩባንያ በንግድ ላይ ለመቆየት ጠቅላላ ወጪዎቹን መሸፈን አለበት። ስለዚህ ኩባንያው በረጅም ጊዜ ገበያ ውስጥ ሊቆይ የሚችለው ዝቅተኛው ዋጋ ከዝቅተኛው አማካይ ጠቅላላ ወጪ (minimum ATC) ጋር እኩል ነው።"
+  },
+
+  {
+    question: "Under perfect competition, an equilibrium price is one where P = MC.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. A perfectly competitive firm is a price taker, so its marginal revenue (MR) equals the market price (P). Profit is maximized where MR = MC. Therefore, the profit-maximizing equilibrium condition is P = MC.",
+    amharicExplanation: "እውነት ነው። በፍጹም ውድድር ውስጥ ኩባንያው ዋጋ ተቀባይ (price taker) ስለሆነ የህዳግ ገቢ (MR) ከገበያ ዋጋ (P) ጋር እኩል ነው። ትርፍ የሚበዛው MR = MC በሚሆንበት ቦታ ነው። ስለዚህ P = MC ይሆናል።"
+  },
+
+  {
+    question: "The demand curve for a firm under perfect competition is downward sloping.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "False. An individual firm under perfect competition is a price taker. It can sell its output at the given market price, so its demand curve is perfectly elastic and horizontal, not downward sloping.",
+    amharicExplanation: "ሐሰት ነው። በፍጹም ውድድር ውስጥ አንድ ነጠላ ኩባንያ ዋጋ ተቀባይ (price taker) ነው። ስለዚህ በገበያ በተወሰነው ዋጋ ምርቱን መሸጥ ይችላል። የኩባንያው የፍላጎት ኩርባ ፍጹም ተለዋዋጭ (perfectly elastic) እና አግድም ነው፣ ወደ ታች የሚያዘነብል አይደለም።"
+  },
+
+  {
+    question: "Total profit is maximised when:",
+    options: [
+      "TC exceeds TR by the greatest amount",
+      "TR = TC",
+      "MC equals AVC",
+      "TR exceeds TC by the greatest amount"
+    ],
+    answer: 3,
+    englishExplanation: "Profit equals Total Revenue (TR) minus Total Cost (TC). Therefore, total profit is maximized when TR exceeds TC by the greatest possible amount. At that point, the positive difference between revenue and cost is largest.",
+    amharicExplanation: "ትርፍ = ጠቅላላ ገቢ (TR) - ጠቅላላ ወጪ (TC) ነው። ስለዚህ ጠቅላላ ትርፍ ከፍተኛ የሚሆነው TR ከ TC የሚበልጠው ልዩነት በከፍተኛ ደረጃ ላይ ሲሆን ነው። በዚያ ጊዜ ከገቢ በኋላ የሚቀረው ትርፍ ከፍተኛ ይሆናል።"
+  },
+
+  {
+    question: "Which of the following is not a type of market structure?",
+    options: [
+      "Competitive monopoly",
+      "Oligopoly",
+      "Perfect competition",
+      "All of the above are types of market structures."
+    ],
+    answer: 0,
+    englishExplanation: "Competitive monopoly is not a standard type of market structure. The four main market structures are perfect competition, monopolistic competition, oligopoly, and monopoly. The term 'competitive monopoly' combines two opposing ideas.",
+    amharicExplanation: "Competitive monopoly የሚባል መደበኛ የገበያ መዋቅር የለም። ዋናዎቹ አራት የገበያ መዋቅሮች ፍጹም ውድድር፣ ሞኖፖሊስቲክ ውድድር፣ ኦሊጎፖሊ እና ሞኖፖሊ ናቸው። 'Competitive monopoly' የሚለው ቃል ውድድርን እና ሞኖፖሊን የሚቃረኑ ሁለት ሀሳቦችን ያጣምራል።"
+  },
+
+  {
+    question: "If the market demand curve for a commodity has a negative slope then the market structure must be",
+    options: [
+      "perfect competition.",
+      "monopoly.",
+      "imperfect competition.",
+      "The market structure cannot be determined from the information given."
+    ],
+    answer: 3,
+    englishExplanation: "The market structure cannot be determined from this information alone. Market demand is generally downward sloping because of the law of demand, and this can occur under different market structures. In perfect competition, the overall market demand curve can also slope downward even though an individual firm's demand curve is horizontal.",
+    amharicExplanation: "ከዚህ መረጃ ብቻ የገበያውን መዋቅር መወሰን አንችልም። በፍላጎት ህግ ምክንያት የገበያ ፍላጎት ኩርባ በአጠቃላይ ወደ ታች ያዘነብላል። ይህም በተለያዩ የገበያ መዋቅሮች ሊኖር ይችላል። በፍጹም ውድድር እንኳን የገበያው ጠቅላላ ፍላጎት ኩርባ ወደ ታች ሊያዘነብል ይችላል፣ ምንም እንኳን የአንድ ኩባንያ ፍላጎት ኩርባ አግድም ቢሆንም።"
+  },
+
+  {
+    question: "If a firm sells its output on a market that is characterized by many sellers and buyers, a homogeneous product, unlimited long-run resource mobility, and perfect knowledge, then the firm is a",
+    options: [
+      "a monopolist.",
+      "an oligopolist.",
+      "a perfect competitor.",
+      "a monopolistic competitor."
+    ],
+    answer: 2,
+    englishExplanation: "The firm is a perfect competitor. Perfect competition is characterized by many buyers and sellers, homogeneous or identical products, free entry and exit in the long run, and perfect knowledge or information.",
+    amharicExplanation: "ኩባንያው ፍጹም ተወዳዳሪ (perfect competitor) ነው። የፍጹም ውድድር ዋና ባህሪያት ብዙ ገዢዎችና ሻጮች፣ ተመሳሳይ ምርት፣ በረጅም ጊዜ ነጻ መግቢያና መውጫ፣ እና ፍጹም መረጃ መኖራቸው ናቸው።"
+  },
+
+  {
+    question: "If a firm sells its output on a market that is characterized by a single seller and many buyers of a homogeneous product for which there are no close substitutes and barriers to long-run resource mobility, then the firm is",
+    options: [
+      "a monopolist.",
+      "an oligopolist.",
+      "a perfect competitor.",
+      "a monopolistic competitor."
+    ],
+    answer: 0,
+    englishExplanation: "The firm is a monopolist. A monopoly has a single seller, many buyers, no close substitutes for its product, and significant barriers that prevent or discourage other firms from entering the market.",
+    amharicExplanation: "ኩባንያው ሞኖፖሊስት (monopolist) ነው። ሞኖፖሊ አንድ ብቸኛ ሻጭ፣ ብዙ ገዢዎች፣ ቅርብ ምትክ የሌለው ምርት እና ሌሎች ኩባንያዎች ወደ ገበያው እንዳይገቡ የሚያደርጉ ከፍተኛ የመግቢያ እንቅፋቶች ያሉት የገበያ መዋቅር ነው።"
+  },
+
+  {
+    question: "If a firm sells its output on a market that is characterized by many sellers and buyers, a differentiated product, and unlimited long-run resource mobility, then the firm is",
+    options: [
+      "a monopolist.",
+      "an oligopolist.",
+      "a perfect competitor.",
+      "a monopolistic competitor."
+    ],
+    answer: 3,
+    englishExplanation: "The firm is a monopolistic competitor. Monopolistic competition has many buyers and sellers, differentiated products, and relatively free entry and exit in the long run. Product differentiation may come from branding, quality, design, or other features.",
+    amharicExplanation: "ኩባንያው ሞኖፖሊስቲክ ተወዳዳሪ (monopolistic competitor) ነው። ይህ የገበያ መዋቅር ብዙ ገዢዎችና ሻጮች፣ የተለያዩ ምርቶች እና በረጅም ጊዜ በአንጻራዊነት ነጻ መግቢያና መውጫ ያለው ነው። የምርት ልዩነት በብራንድ፣ በጥራት፣ በዲዛይን ወይም በሌሎች ባህሪያት ሊፈጠር ይችላል።"
+  },
+
+  {
+    question: "If a firm sells its output on a market that is characterized by few sellers and many buyers and limited long-run resource mobility, then the firm is",
+    options: [
+      "a monopolist.",
+      "an oligopolist.",
+      "a perfect competitor.",
+      "a monopolistic competitor."
+    ],
+    answer: 1,
+    englishExplanation: "The firm is an oligopolist. An oligopoly is a market structure dominated by a small number of sellers. Entry is often difficult because significant barriers prevent new firms from entering easily.",
+    amharicExplanation: "ኩባንያው ኦሊጎፖሊስት (oligopolist) ነው። ኦሊጎፖሊ ገበያ በጥቂት ትላልቅ ሻጮች የሚቆጣጠር ነው። አዳዲስ ኩባንያዎች በቀላሉ ወደ ገበያው እንዳይገቡ የሚያደርጉ የመግቢያ እንቅፋቶች ብዙ ጊዜ ይኖራሉ።"
+  },
+
+  {
+    question: "A perfectly competitive firm should reduce output or shut down in the short run if market price is equal to marginal cost and price is",
+    options: [
+      "greater than average total cost.",
+      "less than average total cost.",
+      "greater than average variable cost.",
+      "less than average variable cost."
+    ],
+    answer: 3,
+    englishExplanation: "The correct answer is less than average variable cost. In the short run, a firm should continue producing only if it can cover its average variable cost. If P < AVC, the firm cannot cover its variable costs, so shutting down minimizes its losses.",
+    amharicExplanation: "ትክክለኛው መልስ ዋጋው ከአማካይ ተለዋዋጭ ወጪ (AVC) ያነሰ መሆኑ ነው። በአጭር ጊዜ ኩባንያው ተለዋዋጭ ወጪዎቹን መሸፈን እስከቻለ ድረስ ማምረት ይቀጥላል። P < AVC ከሆነ ግን ተለዋዋጭ ወጪዎቹን እንኳን መሸፈን ስለማይችል ኪሳራውን ለመቀነስ መዝጋት ይኖርበታል።"
+  },
+
+  {
+    question: "The market demand curve for a perfectly competitive industry is QD = 12 - 2P. The market supply curve is QS = 3 + P. The market will be in equilibrium if",
+    options: [
+      "P = 6 and Q = 9.",
+      "P = 5 and Q = 2.",
+      "P = 4 and Q = 4.",
+      "P = 3 and Q = 6."
+    ],
+    answer: 3,
+    englishExplanation: "Equilibrium occurs where quantity demanded equals quantity supplied. Set QD = QS: 12 - 2P = 3 + P. Therefore, 9 = 3P, so P = 3. Substituting P = 3 into the supply equation gives Q = 3 + 3 = 6. Therefore, equilibrium is P = 3 and Q = 6.",
+    amharicExplanation: "ሚዛናዊነት የሚፈጠረው የተፈለገው መጠን (QD) ከቀረበው መጠን (QS) ጋር እኩል ሲሆን ነው። QD = QS እናድርግ፦ 12 - 2P = 3 + P። ስለዚህ 9 = 3P፣ P = 3 ይሆናል። P = 3ን ወደ QS = 3 + P በመተካት Q = 3 + 3 = 6 እናገኛለን። ስለዚህ የገበያ ሚዛን P = 3 እና Q = 6 ነው።"
+  },
+
+  {
+    question: "In the short run, a monopolist will shut down if it is producing a level of output where marginal revenue is equal to short-run marginal cost and price is",
+    options: [
+      "greater than average total cost.",
+      "less than average total cost.",
+      "greater than average variable cost.",
+      "less than average variable cost."
+    ],
+    answer: 3,
+    englishExplanation: "The correct answer is less than average variable cost. The short-run shutdown rule applies to a monopolist as well as other firms. If price is below AVC, the firm cannot cover its variable costs, so it minimizes its losses by shutting down.",
+    amharicExplanation: "ትክክለኛው መልስ ዋጋው ከአማካይ ተለዋዋጭ ወጪ (AVC) ያነሰ መሆኑ ነው። የአጭር ጊዜ መዝጊያ ደንብ ለሞኖፖሊስትም ይሰራል። ዋጋው P < AVC ከሆነ ኩባንያው ተለዋዋጭ ወጪዎቹን መሸፈን አይችልም። ስለዚህ ኪሳራውን ለመቀነስ መዝጋት ይኖርበታል።"
+  },
+
+  {
+    question: "A natural monopoly refers to a monopoly that is defended from direct competition by",
+    options: [
+      "economies of scale over a broad range of output.",
+      "a government franchise.",
+      "control over a vital input.",
+      "a patent or copyright."
+    ],
+    answer: 0,
+    englishExplanation: "A natural monopoly exists when one firm can supply the entire market at a lower average cost than several competing firms because of large economies of scale. As output increases, the firm's average cost can remain low over a broad range of production.",
+    amharicExplanation: "ተፈጥሯዊ ሞኖፖሊ (natural monopoly) የሚፈጠረው አንድ ኩባንያ በትልቅ የመጠን ኢኮኖሚ (economies of scale) ምክንያት መላውን ገበያ ከብዙ ተወዳዳሪ ኩባንያዎች በዝቅተኛ አማካይ ወጪ ማገልገል ሲችል ነው። ይህ ትልቅ የምርት መጠን ሲኖር ወጪን በጣም ዝቅ ያደርጋል።"
+  },
+
+  {
+    question: "When a perfectly competitive industry is in long-run equilibrium, all firms in the industry",
+    options: [
+      "earn zero economic profits.",
+      "produce a level of output where short-run marginal cost is equal to short-run average total cost.",
+      "produce a level of output where long-run marginal cost is equal to long-run average cost.",
+      "All of the above are correct."
+    ],
+    answer: 3,
+    englishExplanation: "All of the above are correct. In long-run perfect competition, firms earn zero economic profit and operate at productive efficiency. At the minimum point of long-run average cost, long-run marginal cost equals long-run average cost. The corresponding short-run cost curves also meet at the firm's efficient long-run scale.",
+    amharicExplanation: "ሁሉም ትክክል ናቸው። በፍጹም ውድድር የረጅም ጊዜ ሚዛናዊነት ውስጥ ኩባንያዎች ዜሮ የኢኮኖሚ ትርፍ ያገኛሉ። እንዲሁም የምርት ቅልጥፍናን ያሳካሉ። በዝቅተኛው የረጅም ጊዜ አማካይ ወጪ ነጥብ ላይ የረጅም ጊዜ ህዳግ ወጪ (LRMC) ከረጅም ጊዜ አማካይ ወጪ (LRAC) ጋር እኩል ይሆናል። ስለዚህ ሁሉም ምርጫዎች ትክክል ናቸው።"
+  },
+
+  {
+    question: "The short-run supply curve of a perfectly competitive firm",
+    options: [
+      "is equal to that portion of the short-run marginal cost curve that is above the average variable cost curve.",
+      "is equal to that portion of the short-run marginal cost curve that is above the average total cost curve.",
+      "is equal to that portion of the short-run average total cost curve that is above the average variable cost curve.",
+      "None of the above is correct."
+    ],
+    answer: 0,
+    englishExplanation: "The short-run supply curve of a perfectly competitive firm is the portion of its short-run marginal cost (MC) curve above the minimum point of its average variable cost (AVC) curve. The firm produces where P = MC as long as price is high enough to cover variable costs.",
+    amharicExplanation: "የፍጹም ተወዳዳሪ ኩባንያ የአጭር ጊዜ አቅርቦት ኩርባ ከአማካይ ተለዋዋጭ ወጪ (AVC) ዝቅተኛው ነጥብ በላይ ያለው የአጭር ጊዜ ህዳግ ወጪ (MC) ኩርባ ክፍል ነው። ኩባንያው ዋጋው ተለዋዋጭ ወጪዎቹን ለመሸፈን በቂ እስከሆነ ድረስ P = MC በሚሆንበት ቦታ ያመርታል።"
+  },{
+    question: "A monopolist produces 14,000 units of output and charges $14 per unit. Its marginal revenue is $8, its marginal cost is $7 and rising, its average total cost is $10, and its average variable cost is $9. The monopolist should:",
+    options: [
+      "increase output, which will result in an increase in the firm's positive economic profit.",
+      "increase output, which will reduce the firm's economic losses.",
+      "shut down, which will reduce the firm's economic losses.",
+      "decrease output, which will result in an increase in the firm's positive economic profit."
+    ],
+    answer: 0,
+    englishExplanation: "The monopolist maximizes profit where Marginal Revenue (MR) equals Marginal Cost (MC). Here, MR is $8 while MC is $7, so MR is greater than MC. This means the firm earns more revenue than cost from producing one additional unit. Therefore, it should increase output until MR = MC. Because its price ($14) is also greater than ATC ($10), the firm is earning a positive economic profit.",
+    amharicExplanation: "ሞኖፖሊስቱ ትርፉን ከፍ የሚያደርገው የህዳግ ገቢ (MR) ከህዳግ ወጪ (MC) ጋር እኩል በሚሆንበት ቦታ ነው። እዚህ MR = $8 እና MC = $7 ስለሆነ MR > MC ነው። ይህም አንድ ተጨማሪ ክፍል ሲያመርት ከሚያወጣው ወጪ የበለጠ ገቢ እንደሚያገኝ ያሳያል። ስለዚህ MR = MC እስኪሆን ድረስ ምርትን መጨመር አለበት። እንዲሁም ዋጋው ($14) ከ ATC ($10) ስለሚበልጥ አዎንታዊ የኢኮኖሚ ትርፍ እያገኘ ነው።"
+  },
+
+  {
+    question: "Which of the following types of firms is likely to be a monopolistic competitor?",
+    options: [
+      "A local telephone company.",
+      "An automobile manufacturer.",
+      "A restaurant.",
+      "All of the above are likely to be monopolistic competitors."
+    ],
+    answer: 2,
+    englishExplanation: "A restaurant is a good example of monopolistic competition because there are many sellers, entry and exit are relatively easy, and products are differentiated through menus, quality, location, service, and atmosphere. Telephone companies and automobile manufacturers generally have stronger barriers to entry and are not typical examples of monopolistic competition.",
+    amharicExplanation: "ሬስቶራንት የሞኖፖሊስቲክ ውድድር ጥሩ ምሳሌ ነው። ብዙ ሻጮች አሉ፣ ወደ ገበያ መግባትና መውጣት በአንጻራዊነት ቀላል ነው፣ እንዲሁም ምርቶችና አገልግሎቶች በምናሌ፣ በጥራት፣ በቦታ፣ በአገልግሎት እና በአየር ንብረት ይለያያሉ። የስልክ ኩባንያዎችና የመኪና አምራቾች ግን ከፍተኛ የመግቢያ እገዳዎች ስላሏቸው የሞኖፖሊስቲክ ውድድር ዋና ምሳሌዎች አይደሉም።"
+  },
+
+  {
+    question: "Which of the following is a differentiated product?",
+    options: [
+      "A hamburger.",
+      "A shirt.",
+      "An automobile.",
+      "All of the above are differentiated products."
+    ],
+    answer: 3,
+    englishExplanation: "A differentiated product is a product that differs from competing products in characteristics such as brand, quality, design, style, or features. Hamburgers, shirts, and automobiles can all be differentiated in these ways. Therefore, all of the above are differentiated products.",
+    amharicExplanation: "የተለየ ምርት (Differentiated product) ማለት ከተወዳዳሪ ምርቶች በምርት ስም፣ በጥራት፣ በንድፍ፣ በቅርጽ ወይም በባህሪያት የሚለይ ምርት ነው። ሃምበርገር፣ ሸሚዝ እና መኪና በእነዚህ መንገዶች ሊለያዩ ይችላሉ። ስለዚህ ሁሉም የተሰጡት ምርቶች የተለዩ ምርቶች ናቸው።"
+  },
+
+  {
+    question: "The demand curve faced by a monopolistically competitive firm is:",
+    options: [
+      "perfectly elastic.",
+      "elastic.",
+      "unit elastic.",
+      "inelastic."
+    ],
+    answer: 1,
+    englishExplanation: "A monopolistically competitive firm faces a downward-sloping demand curve because its product is differentiated. The demand curve is relatively elastic because many competing firms offer close substitutes. Therefore, the correct answer is elastic.",
+    amharicExplanation: "የሞኖፖሊስቲክ ውድድር ኩባንያ የተለየ ምርት ስለሚያቀርብ ወደ ታች የሚያዘነብል የፍላጎት ኩርባ ይገጥመዋል። በገበያው ውስጥ ብዙ ቅርብ ምትክ ምርቶች ስላሉ የፍላጎት ኩርባው በአንጻራዊነት ተለዋዋጭ (elastic) ነው። ስለዚህ መልሱ elastic ነው።"
+  },
+
+  {
+    question: "Product variation refers to:",
+    options: [
+      "an activity undertaken by a firm to increase demand.",
+      "a problem with quality control that tends to decrease demand.",
+      "an activity undertaken by a firm to make demand more price inelastic.",
+      "None of the above is correct."
+    ],
+    answer: 0,
+    englishExplanation: "Product variation means changing or improving the characteristics of a product to make it more attractive or different from competing products. Firms use product variation as a form of product differentiation to attract customers and increase demand for their product.",
+    amharicExplanation: "የምርት ልዩነት (Product variation) ማለት አንድ ኩባንያ ምርቱን ከተወዳዳሪዎች ምርት የተለየና ማራኪ ለማድረግ ባህሪያቱን የሚቀይር ወይም የሚያሻሽልበት እንቅስቃሴ ነው። ይህ ደንበኞችን ለመሳብና ለምርቱ ያለውን ፍላጎት ለመጨመር ይረዳል።"
+  },
+
+  {
+    question: "Which of the following industries is most likely to be monopolistically competitive?",
+    options: [
+      "The automobile industry",
+      "The steel industry",
+      "The car repair industry",
+      "The electrical generating industry"
+    ],
+    answer: 2,
+    englishExplanation: "The car repair industry is most likely to be monopolistically competitive because it contains many independent businesses offering somewhat differentiated services. Firms can compete through price, quality, location, reputation, and service. Entry barriers are also relatively low compared with industries such as automobiles and steel.",
+    amharicExplanation: "የመኪና ጥገና ኢንዱስትሪ የሞኖፖሊስቲክ ውድድር ምሳሌ ሊሆን ይችላል። ብዙ ገለልተኛ የጥገና ሱቆች አሉ፣ አገልግሎታቸውም በጥራት፣ በዋጋ፣ በቦታ፣ በስም እና በአገልግሎት ይለያያል። የመግቢያ እገዳዎቹም ከመኪናና ከብረት ኢንዱስትሪዎች ጋር ሲነጻጸሩ ዝቅተኛ ናቸው።"
+  },
+
+  {
+    question: "Marginal revenue is equal to price for which one of the following types of market structure?",
+    options: [
+      "Monopoly",
+      "Perfect competition",
+      "Monopolistic competition",
+      "Oligopoly"
+    ],
+    answer: 1,
+    englishExplanation: "In perfect competition, each firm is a price taker. It can sell additional units at the market price without changing that price. Therefore, the additional revenue from selling one more unit, called Marginal Revenue (MR), is equal to the price (P). Thus, MR = P.",
+    amharicExplanation: "በፍጹም ውድድር (Perfect competition) ውስጥ ኩባንያው ዋጋ ተቀባይ (price taker) ነው። ተጨማሪ ምርት ሲሸጥ የገበያውን ዋጋ ሳይቀይር መሸጥ ይችላል። ስለዚህ አንድ ተጨማሪ ክፍል በመሸጥ የሚገኘው ተጨማሪ ገቢ (MR) ከዋጋ (P) ጋር እኩል ነው።"
+  },
+
+  {
+    question: "A monopoly will not only charge a higher price, it will also produce ____ output than a competitive market would produce.",
+    options: [
+      "more",
+      "less",
+      "better",
+      "poorer"
+    ],
+    answer: 1,
+    englishExplanation: "A monopolist restricts output to maximize profit and charges a higher price than a perfectly competitive market. Therefore, compared with a competitive market, a monopoly produces less output and charges a higher price.",
+    amharicExplanation: "ሞኖፖሊስት ትርፉን ከፍ ለማድረግ ምርቱን ይገድባል። ይህም ከፍተኛ ዋጋ እንዲያስከፍል ያስችለዋል። ስለዚህ ከተወዳዳሪ ገበያ ጋር ሲነጻጸር ሞኖፖሊ አነስተኛ ምርት ያመርታል እና ከፍተኛ ዋጋ ያስከፍላል።"
+  },
+
+  {
+    question: "The United States automobile industry is a good example of:",
+    options: [
+      "a monopoly",
+      "a competitive market",
+      "an oligopoly",
+      "an unconcentrated industry"
+    ],
+    answer: 2,
+    englishExplanation: "An oligopoly is a market dominated by a relatively small number of large firms. The U.S. automobile industry has historically been dominated by several large manufacturers, making it a common example of an oligopoly.",
+    amharicExplanation: "ኦሊጎፖሊ (Oligopoly) ማለት ገበያው በጥቂት ትላልቅ ኩባንያዎች የሚቆጣጠርበት የገበያ መዋቅር ነው። የዩኤስ የመኪና ኢንዱስትሪ በብዙ ትላልቅ አምራቾች የሚቆጣጠር በመሆኑ የኦሊጎፖሊ ምሳሌ ነው።"
+  },
+
+  {
+    question: "A monopoly:",
+    options: [
+      "charges higher prices than competitive firms, all other things equal",
+      "produces more output than competitive markets, all other things equal",
+      "is one of several firms in the market",
+      "all of the above"
+    ],
+    answer: 0,
+    englishExplanation: "A monopoly is the sole seller in a market and has substantial market power. Compared with perfect competition, a monopolist generally restricts output and charges a higher price. Therefore, the first statement is correct.",
+    amharicExplanation: "ሞኖፖሊ በገበያ ውስጥ ብቸኛ ሻጭ የሆነ እና ከፍተኛ የገበያ ኃይል ያለው ኩባንያ ነው። ከፍጹም ውድድር ጋር ሲነጻጸር ሞኖፖሊስት በአጠቃላይ ምርትን ይገድባል እና ከፍተኛ ዋጋ ያስከፍላል። ስለዚህ የመጀመሪያው ምርጫ ትክክል ነው።"
+  },
+
+  {
+    question: "Compared to competitive markets, monopolies charge:",
+    options: [
+      "higher prices, produce more output, but make lower profits",
+      "higher prices, produce more output, and make higher profits",
+      "higher prices, produce less output, and make higher profits",
+      "lower prices, produce more output, and make higher profits"
+    ],
+    answer: 2,
+    englishExplanation: "A monopoly has market power because it is the sole seller. It restricts output compared with a competitive market, which allows it to charge a higher price. When conditions allow, this market power can also generate higher economic profits than competitive firms.",
+    amharicExplanation: "ሞኖፖሊ ብቸኛ ሻጭ ስለሆነ የገበያ ኃይል አለው። ከተወዳዳሪ ገበያ ጋር ሲነጻጸር ምርትን ይቀንሳል፣ ይህም ከፍተኛ ዋጋ እንዲያስከፍል ያስችለዋል። የገበያ ኃይሉም ከተወዳዳሪ ኩባንያዎች የበለጠ የኢኮኖሚ ትርፍ ሊያስገኝለት ይችላል።"
+  },
+
+  {
+    question: "What do patents, economies of scale, and exclusive franchises have in common?",
+    options: [
+      "they are all barriers to entry",
+      "they are all granted by the government to monopoly firms",
+      "they guarantee that a market will be competitive",
+      "all of the above"
+    ],
+    answer: 0,
+    englishExplanation: "Patents, economies of scale, and exclusive franchises can all create barriers to entry. They make it difficult or costly for new firms to enter a market. Barriers to entry help existing firms maintain market power.",
+    amharicExplanation: "ፓተንት (Patent)፣ የወጪ ቁጠባ በመጠን (Economies of scale) እና ልዩ ፍራንቻይዝ (Exclusive franchise) ሁሉም የመግቢያ እገዳዎች (Barriers to entry) ሊሆኑ ይችላሉ። አዳዲስ ኩባንያዎች ወደ ገበያ በቀላሉ እንዳይገቡ ያደርጋሉ። ይህም ነባር ኩባንያዎች የገበያ ኃይላቸውን እንዲጠብቁ ይረዳል።"
+  },
+
+  {
+    question: "Which of the following statements is correct?",
+    options: [
+      "Both a competitive firm and a monopolist are price takers.",
+      "Both a competitive firm and a monopolist are price makers.",
+      "A competitive firm is a price taker, whereas a monopolist is a price maker.",
+      "A competitive firm is a price maker, whereas a monopolist is a price taker."
+    ],
+    answer: 2,
+    englishExplanation: "A perfectly competitive firm is a price taker because it is too small to influence the market price. A monopolist is the sole seller and has market power, so it is considered a price maker. However, a monopolist is still constrained by the market demand curve.",
+    amharicExplanation: "በፍጹም ውድድር ያለ ኩባንያ በገበያ ዋጋ ላይ ተጽእኖ ማሳደር ስለማይችል ዋጋ ተቀባይ (Price taker) ነው። ሞኖፖሊስት ግን ብቸኛ ሻጭ ስለሆነ የገበያ ኃይል አለው እና ዋጋ አወጪ (Price maker) ይባላል። ነገር ግን ሞኖፖሊስቱም በገበያ ፍላጎት ኩርባ ይገደባል።"
+  },
+
+  {
+    question: "A monopoly",
+    options: [
+      "can set the price it charges for its output and earn unlimited profits.",
+      "takes the market price as given and earns small but positive profits.",
+      "can set the price it charges for its output but faces a downward-sloping demand curve so it cannot earn unlimited profits.",
+      "can set the price it charges for its output but faces a horizontal demand curve so it can earn unlimited profits."
+    ],
+    answer: 2,
+    englishExplanation: "A monopolist has the power to choose its price-output combination, but it cannot charge any price it wants without consequences. It faces a downward-sloping demand curve, meaning that charging a higher price reduces the quantity consumers are willing to buy. Therefore, monopoly profits are not unlimited.",
+    amharicExplanation: "ሞኖፖሊስት የሚያስከፍለውን ዋጋ እና የሚያመርተውን መጠን ለመወሰን የገበያ ኃይል አለው። ነገር ግን የፍላጎት ኩርባው ወደ ታች ስለሚያዘነብል ዋጋን በጣም ከፍ ካደረገ ሸማቾች የሚገዙት መጠን ይቀንሳል። ስለዚህ የሞኖፖሊ ትርፍ ማለቂያ የለውም ማለት አይቻልም።"
+  },
+
+  {
+    question: "A perfectly competitive market",
+    options: [
+      "may not be in the best interests of society, whereas a monopoly market promotes general economic well-being.",
+      "promotes general economic well-being, whereas a monopoly market may not be in the best interests of society.",
+      "and a monopoly are equally likely to promote general economic well-being.",
+      "is less likely to promote general economic well-being than a monopoly market."
+    ],
+    answer: 1,
+    englishExplanation: "Perfect competition generally promotes economic efficiency because firms produce where price equals marginal cost and resources are allocated efficiently. A monopoly usually produces less and charges a higher price, creating a deadweight loss and potentially reducing overall economic well-being.",
+    amharicExplanation: "ፍጹም ውድድር በአጠቃላይ ኢኮኖሚያዊ ቅልጥፍናን ያበረታታል። ኩባንያዎች P = MC በሚሆንበት ቦታ ስለሚያመርቱ ሀብቶች በተሻለ ሁኔታ ይመደባሉ። ሞኖፖሊ ግን በአጠቃላይ አነስተኛ ምርትና ከፍተኛ ዋጋ ስለሚያስከትል የማህበረሰብ የሚጠፋ ኢኮኖሚያዊ ጥቅም (deadweight loss) ሊፈጥር ይችላል።"
+  },
+
+  {
+    question: "A firm that is the sole seller of a product without close substitutes is",
+    options: [
+      "perfectly competitive",
+      "monopolistically competitive",
+      "an oligopolist",
+      "a monopolist"
+    ],
+    answer: 3,
+    englishExplanation: "A monopolist is a firm that is the sole seller of a product or service in a market and faces no close substitutes. Because there is only one seller, the firm has significant market power.",
+    amharicExplanation: "ሞኖፖሊስት ማለት በገበያ ውስጥ ቅርብ ምትክ የሌለውን ምርት ወይም አገልግሎት ብቸኛ ሆኖ የሚሸጥ ኩባንያ ነው። ብቸኛ ሻጭ ስለሆነ ከፍተኛ የገበያ ኃይል አለው።"
+  },
+
+  {
+    question: "Most markets are not monopolies in the real world because",
+    options: [
+      "firms usually face downward-sloping demand curves",
+      "supply curves slope upward",
+      "firms usually equate price with marginal cost",
+      "there are reasonable substitutes for most goods"
+    ],
+    answer: 3,
+    englishExplanation: "Most markets are not monopolies because consumers usually have alternative products or services they can purchase. The availability of substitutes limits a firm's ability to raise prices significantly and reduces its monopoly power.",
+    amharicExplanation: "አብዛኛዎቹ ገበያዎች ሞኖፖሊ ያልሆኑት ለአብዛኛዎቹ ምርቶች ተመጣጣኝ ምትክ ምርቶች ስላሉ ነው። ሸማቾች ከተለያዩ አማራጮች መግዛት ስለሚችሉ አንድ ኩባንያ ዋጋን በጣም ከፍ ማድረግ አይችልም። ምትክ ምርቶች የሞኖፖሊ የገበያ ኃይልን ይገድባሉ።"
+  },
+
+  {
+    question: "Which of the following is an example of a barrier to entry?",
+    options: [
+      "Matthew offers free samples of his latest flavored coffee drink to entice customers to buy a cup.",
+      "Mark charges a lower price to students than to faculty for his tattoo services.",
+      "Luke charges a higher hourly price to business students than to liberal arts students for his economics tutoring.",
+      "John obtained a copyright for the song he wrote and recorded."
+    ],
+    answer: 3,
+    englishExplanation: "A barrier to entry is something that makes it difficult for new firms to enter a market. Copyright protection is a legal barrier to entry because it gives the copyright holder exclusive rights to use and distribute the protected work for a specified period.",
+    amharicExplanation: "የመግቢያ እገዳ (Barrier to entry) ማለት አዳዲስ ኩባንያዎች ወደ ገበያ እንዳይገቡ አስቸጋሪ የሚያደርግ እንቅፋት ነው። Copyright ወይም የቅጂ መብት ህጋዊ የመግቢያ እገዳ ነው። ምክንያቱም የመብቱ ባለቤት ስራውን በተወሰነ ጊዜ ብቻ ለመጠቀምና ለማሰራጨት ልዩ መብት ያገኛል።"
+  },
+
+  {
+    question: "Which of the following statements is true about the average revenue curve?",
+    options: [
+      "The average revenue curve is shaped as a horizontal straight line in a perfect competition",
+      "The average revenue curve is shaped as a vertical straight line in a perfect competition",
+      "The average revenue curve is shaped downward to the right in a perfect competition",
+      "The average revenue curve is shaped rectangular hyperbola in a perfect competition"
+    ],
+    answer: 0,
+    englishExplanation: "Average Revenue (AR) is Total Revenue divided by Quantity, so AR = TR/Q = P. In perfect competition, the firm is a price taker and the market price is constant. Therefore, its AR curve is a horizontal straight line at the market price.",
+    amharicExplanation: "አማካይ ገቢ (AR) ማለት ጠቅላላ ገቢን በምርት መጠን ማካፈል ነው። ስለዚህ AR = TR/Q = P ነው። በፍጹም ውድድር ውስጥ ኩባንያው ዋጋ ተቀባይ ስለሆነ የገበያ ዋጋው ቋሚ ነው። ስለዚህ የAR ኩርባ በገበያ ዋጋ ደረጃ ላይ ያለ አግድም ቀጥተኛ መስመር ነው።"
+  },
+
+  {
+    question: "The demand for the monopolist's product",
+    options: [
+      "is downward sloping.",
+      "equals the market demand curve.",
+      "is equal to the firm's MR curve.",
+      "All of the above statements are true.",
+      "Answers (a) and (b) are true."
+    ],
+    answer: 4,
+    englishExplanation: "A monopolist is the only seller in the market, so the firm's demand curve is the same as the market demand curve. Because the monopolist faces the market demand curve, the demand curve slopes downward. The MR curve is not the same as the demand curve; for a monopolist, MR lies below the demand curve. Therefore, statements (a) and (b) are true.",
+    amharicExplanation: "ሞኖፖሊስት በገበያ ውስጥ ብቸኛ ሻጭ ስለሆነ የኩባንያው የፍላጎት ኩርባ ከገበያው አጠቃላይ የፍላጎት ኩርባ ጋር እኩል ነው። ሞኖፖሊስቱ ተጨማሪ ምርት ለመሸጥ ዋጋን መቀነስ ስለሚኖርበት የፍላጎት ኩርባው ወደ ታች ያዘነብላል። ነገር ግን MR ኩርባ ከፍላጎት ኩርባ ጋር እኩል አይደለም፤ በሞኖፖሊ ውስጥ MR ከፍላጎት ኩርባ በታች ይገኛል። ስለዚህ (a) እና (b) ትክክል ስለሆኑ መልሱ Answers (a) and (b) are true ነው።"
+  },
+
+  {
+    question: "An industry is characterized by having a few firms, each producing a differentiated product. The market structure for this industry is most likely",
+    options: [
+      "perfect competition",
+      "monopoly",
+      "oligopoly",
+      "monopolistic competition"
+    ],
+    answer: 2,
+    englishExplanation: "An oligopoly is a market structure dominated by a few firms. When these firms produce products that are different from one another, the market is called a differentiated oligopoly.",
+    amharicExplanation: "ኦሊጎፖሊ (Oligopoly) ማለት በጥቂት ኩባንያዎች የሚተዳደር የገበያ መዋቅር ነው። እነዚህ ኩባንያዎች ከእርስ በርሳቸው የተለያዩ ምርቶችን ሲያቀርቡ፣ የተለየ ኦሊጎፖሊ (differentiated oligopoly) ይባላል።"
+  },
+
+  {
+    question: "Which of the following statements is true? I. A monopolistically competitive market structure is composed of many firms producing differentiated products. II. A perfectly competitive firm profit-maximizes by producing the level of output where MR = MC. III. A monopolist profit maximizes by charging the price where MR = MC.",
+    options: [
+      "Statements I and II are true.",
+      "Statements I and III are true.",
+      "Statements II and III are true.",
+      "Statements I, II, and III are true."
+    ],
+    answer: 0,
+    englishExplanation: "Statement I is true because monopolistic competition has many firms selling differentiated products. Statement II is true because a profit-maximizing firm produces where marginal revenue equals marginal cost. Statement III is false because a monopolist chooses the quantity where MR = MC and then charges the price shown on the demand curve for that quantity.",
+    amharicExplanation: "አባባል I እውነት ነው፤ ሞኖፖሊስቲክ ውድድር ብዙ ኩባንያዎችና የተለያዩ ምርቶች ያሉት ገበያ ነው። አባባል II እውነት ነው፤ ኩባንያው ትርፉን ከፍ የሚያደርገው MR = MC በሚሆንበት የምርት መጠን ነው። አባባል III ሐሰት ነው፤ ሞኖፖሊስት መጀመሪያ MR = MC የሚሆንበትን የምርት መጠን ይመርጣል፣ ከዚያም የዚያን መጠን ዋጋ ከፍላጎት ኩርባው ላይ ያገኛል።"
+  },
+
+  {
+    question: "In contrast to perfect competition, a monopolist charges a",
+    options: [
+      "higher price and produces a larger quantity",
+      "higher price and produces a smaller quantity",
+      "lower price and produces a larger quantity",
+      "lower price and produces a smaller quantity"
+    ],
+    answer: 1,
+    englishExplanation: "Compared with perfect competition, a monopolist restricts output and charges a higher price. The monopolist does this because it has market power and faces the downward-sloping market demand curve.",
+    amharicExplanation: "ከፍጹም ውድድር ጋር ሲነጻጸር፣ ሞኖፖሊስት ምርትን ይገድባል እና ከፍተኛ ዋጋ ያስከፍላል። ይህም ሞኖፖሊስት የገበያ ኃይል ስላለው እና ወደ ታች የሚያዘነብል የፍላጎት ኩርባ ስለሚገጥመው ነው።"
+  },
+
+  {
+    question: "A firm that experiences increasing returns to scale",
+    options: [
+      "finds that its average total cost of production decreases throughout the relevant region of production.",
+      "will find it advantageous to produce a relatively large amount of output rather than a relatively small amount of output.",
+      "will benefit from a larger volume of sales.",
+      "All true."
+    ],
+    answer: 3,
+    englishExplanation: "Increasing returns to scale means that long-run average cost decreases as the firm increases its scale of production. Therefore, producing a larger amount of output and having a larger volume of sales can reduce average costs and benefit the firm. Thus, all three statements are true.",
+    amharicExplanation: "Increasing returns to scale ማለት የምርት መጠን ሲጨምር የረጅም ጊዜ አማካይ ወጪ የሚቀንስ ማለት ነው። ስለዚህ ትልቅ የምርት መጠን ማምረት እና ብዙ መሸጥ አማካይ ወጪን ሊቀንስ እና ለኩባንያው ጥቅም ሊያመጣ ይችላል። ስለዚህ ሦስቱም አባባሎች እውነት ናቸው።"
+  },
+
+  {
+    question: "A natural monopoly",
+    options: [
+      "profit maximizes when it produces the quantity where MR = MC.",
+      "experiences decreasing costs throughout the relevant region of output.",
+      "is a monopoly whose ATC curve declines over the output levels at which price is greater than or equal to average total cost.",
+      "All of the above statements are true."
+    ],
+    answer: 3,
+    englishExplanation: "A natural monopoly is still a monopoly, so it maximizes profit where MR = MC. It also has strong economies of scale, meaning its average total cost continues to fall over the relevant range of output. Because of these declining costs, one large firm can supply the market more efficiently than several smaller firms.",
+    amharicExplanation: "ተፈጥሯዊ ሞኖፖሊ (Natural monopoly) እንደ ሌሎች ሞኖፖሊዎች ትርፉን MR = MC በሚሆንበት ቦታ ያሳድጋል። እንዲሁም የመጠን ኢኮኖሚ (economies of scale) ስላለው ምርት ሲጨምር አማካይ ጠቅላላ ወጪው (ATC) ይቀንሳል። ስለዚህ አንድ ትልቅ ኩባንያ ገበያውን ከብዙ ትናንሽ ኩባንያዎች በተሻለ ዝቅተኛ ወጪ ማቅረብ ይችላል።"
+  },
+
+  {
+    question: "An industry is characterized by having average total cost that decreases as output increases. In this industry, the output can be produced at the lowest cost if ___ produce(s) the total market output.",
+    options: [
+      "many identical firms",
+      "a single firm",
+      "a large number of firms",
+      "a few firms"
+    ],
+    answer: 1,
+    englishExplanation: "This is a natural monopoly situation. When average total cost falls as output increases, one firm producing the entire market output can achieve the lowest average cost. Dividing production among several firms would make production more expensive.",
+    amharicExplanation: "ይህ የተፈጥሯዊ ሞኖፖሊ ሁኔታን ይገልጻል። ምርት ሲጨምር አማካይ ጠቅላላ ወጪ ስለሚቀንስ፣ አንድ ኩባንያ መላውን የገበያ ምርት ቢያመርት ዝቅተኛውን ወጪ ማግኘት ይችላል። ምርቱን በብዙ ኩባንያዎች መካፈል ወጪን ያሳድጋል።"
+  },
+
+  {
+    question: "Which of the following statements for a perfectly competitive industry is true? I. In the short run, the number of firms is fixed. II. In the short run, firms can easily enter and exit the market. III. In the short run, the firm produces where MC = MR.",
+    options: [
+      "Statement I is true.",
+      "Statements I and II are true.",
+      "Statements I and III are true.",
+      "Statements I, II, and III are true."
+    ],
+    answer: 2,
+    englishExplanation: "Statement I is true because the number of firms is fixed in the short run. Statement II is false because entry and exit generally occur in the long run. Statement III is true because a firm maximizes profit by producing where marginal cost equals marginal revenue.",
+    amharicExplanation: "አባባል I እውነት ነው፤ በአጭር ጊዜ ውስጥ የኩባንያዎች ቁጥር ቋሚ ነው። አባባል II ሐሰት ነው፤ ወደ ገበያ መግባትና ከገበያ መውጣት በተለምዶ የረጅም ጊዜ ባህሪ ነው። አባባል III እውነት ነው፤ ኩባንያው ትርፉን ከፍ የሚያደርገው MC = MR በሚሆንበት የምርት መጠን ነው።"
+  },
+
+  {
+    question: "A firm operates in a perfectly competitive market. The market price of its product is 4 dollars, and the total cost function is given by TC = Q³ - 15Q² + 60Q + 150. What level of output should the firm produce to maximize its profit, what is the profit at equilibrium, and what minimum price is required to stay in the market?",
+    options: [
+      "Q = 7.52; Profit = -$146.85; Minimum price = $3.75",
+      "Q = 7.52; Profit = -$212.01; Minimum price = $4.00",
+      "Q = 2.48; Profit = -$146.85; Minimum price = $4.00"
+    ],
+    answer: 0,
+    englishExplanation: "In perfect competition, profit is maximized where P = MC. From TC, MC = 3Q² - 30Q + 60. Setting MC equal to the price of $4 gives Q ≈ 7.52. Using profit = TR - TC gives approximately -$146.85. The short-run shutdown price is the minimum AVC. AVC = Q² - 15Q + 60, whose minimum occurs at Q = 7.5, giving a minimum price of $3.75.",
+    amharicExplanation: "በፍጹም ውድድር ትርፍ የሚበዛው P = MC ሲሆን ነው። ከTC የምናገኘው MC = 3Q² - 30Q + 60 ነው። MC = $4 በማድረግ Q ≈ 7.52 እናገኛለን። ትርፍ = TR - TC በመጠቀም በግምት -$146.85 ኪሳራ እናገኛለን። በአጭር ጊዜ ለገበያ መቆየት የሚያስፈልገው ዝቅተኛ ዋጋ minimum AVC ነው። AVC = Q² - 15Q + 60 እና ዝቅተኛው AVC በQ = 7.5 ላይ $3.75 ነው።"
+  },
+
+  {
+    question: "For a perfectly competitive firm, the following information is given: Total Fixed Cost (TFC) = Birr 10,000; Average Variable Cost (AVC) = Birr 40; Average Revenue (AR) = Birr 60. What is the quantity produced by the firm at the break-even point?",
+    options: [
+      "400 units",
+      "500 units",
+      "600 units",
+      "250 units"
+    ],
+    answer: 1,
+    englishExplanation: "At the break-even point, price equals average total cost. Since AR = price = 60 and AVC = 40, AFC must be 20. Because AFC = TFC/Q, we have 20 = 10,000/Q. Therefore, Q = 500 units.",
+    amharicExplanation: "በBreak-even ነጥብ ዋጋ ከአማካይ ጠቅላላ ወጪ (ATC) ጋር እኩል ነው። AR = ዋጋ = 60 እና AVC = 40 ስለሆነ AFC = 20 ይሆናል። AFC = TFC/Q ስለሆነ 20 = 10,000/Q። ስለዚህ Q = 500 ክፍሎች ነው።"
+  },
+
+  {
+    question: "Suppose, for a perfectly competitive firm, the marginal cost (MC) function is given by MC = Q² - 2Q + 20. What is the quantity produced (Q) at the equilibrium level of output if the price per unit of the good produced is Birr 44?",
+    options: [
+      "4 units",
+      "6 units",
+      "8 units",
+      "2 units"
+    ],
+    answer: 1,
+    englishExplanation: "For a perfectly competitive firm, equilibrium occurs where Price = MC. Set 44 = Q² - 2Q + 20. Rearranging gives Q² - 2Q - 24 = 0. Factoring gives (Q - 6)(Q + 4) = 0. The positive and economically meaningful solution is Q = 6 units.",
+    amharicExplanation: "በፍጹም ውድድር የሚዛናዊ ምርት መጠን የሚገኘው ዋጋ = MC ሲሆን ነው። 44 = Q² - 2Q + 20 በማድረግ Q² - 2Q - 24 = 0 እናገኛለን። ይህም (Q - 6)(Q + 4) = 0 ይሆናል። አዎንታዊና በኢኮኖሚ ትርጉም ያለው መልስ Q = 6 ክፍሎች ነው።"
+  },
+
+  {
+    question: "For a monopolist firm, the following information is given: MR = 100 - 7Q and MC = 30. What is the profit-maximizing level of output?",
+    options: [
+      "12 units",
+      "10 units",
+      "15 units",
+      "8 units"
+    ],
+    answer: 1,
+    englishExplanation: "A monopolist maximizes profit where marginal revenue equals marginal cost. Set 100 - 7Q = 30. Subtracting 30 gives 70 = 7Q. Dividing by 7 gives Q = 10 units.",
+    amharicExplanation: "ሞኖፖሊስት ትርፉን ከፍ የሚያደርገው MR = MC ሲሆን ነው። 100 - 7Q = 30 በማድረግ 70 = 7Q እናገኛለን። በ7 ስናካፍል Q = 10 ክፍሎች ይሆናል።"
+  },
+
+  {
+    question: "Given below are the cost and revenue functions of a monopolistic firm: TC = 20 + 10Q, TR = 40Q - 5Q², MC = 10, MR = 40 - 10Q. Calculate the profit-maximizing level of output and total profit.",
+    options: [
+      "i. 2 units; π = 20",
+      "i. 3 units; π = 25",
+      "i. 4 units; π = 30",
+      "i. 3 units; π = 20"
+    ],
+    answer: 1,
+    englishExplanation: "Profit is maximized where MR = MC. Set 40 - 10Q = 10, giving Q = 3. At Q = 3, TR = 40(3) - 5(3²) = 75 and TC = 20 + 10(3) = 50. Therefore, profit = TR - TC = 75 - 50 = 25.",
+    amharicExplanation: "ትርፍ የሚበዛው MR = MC ሲሆን ነው። 40 - 10Q = 10 በማድረግ Q = 3 እናገኛለን። Q = 3 ሲሆን TR = 40(3) - 5(3²) = 75 እና TC = 20 + 10(3) = 50 ነው። ስለዚህ ትርፍ = TR - TC = 75 - 50 = 25 ነው።"
+  },
+
+  {
+    question: "If the total revenue (TR) of 7 units of a commodity is Birr 40 and the average revenue (AR) of 8 units is Birr 5, what is the marginal revenue (MR) of the 8th unit?",
+    options: [
+      "Birr 5",
+      "Birr 2",
+      "Birr 0",
+      "Birr 1"
+    ],
+    answer: 2,
+    englishExplanation: "Average revenue equals total revenue divided by quantity. Therefore, TR for 8 units = AR × Q = 5 × 8 = 40. Since TR for 7 units is also 40, the additional 8th unit adds no revenue. Thus, MR = (40 - 40) / (8 - 7) = 0.",
+    amharicExplanation: "አማካይ ገቢ (AR) = TR/Q ነው። ስለዚህ የ8 ክፍሎች TR = AR × Q = 5 × 8 = 40 ነው። የ7 ክፍሎች TR ደግሞ 40 ነው። ስለዚህ 8ኛው ክፍል ተጨማሪ ገቢ አላመጣም። MR = (40 - 40) / (8 - 7) = 0 ነው።"
+  },
+
+  {
+    question: "A perfectly competitive market is not characterized by",
+    options: [
+      "many small firms.",
+      "a great variety of different products.",
+      "free entry into and exit from the market.",
+      "any of the above."
+    ],
+    answer: 1,
+    englishExplanation: "Perfect competition is characterized by many small firms, free entry and exit, and homogeneous products. A great variety of different products is a feature of monopolistic competition, not perfect competition.",
+    amharicExplanation: "ፍጹም ውድድር በብዙ ትናንሽ ኩባንያዎች፣ በነጻ መግቢያና መውጫ እና በተመሳሳይ (homogeneous) ምርቶች ይገለጻል። ብዙ የተለያዩ ምርቶች መኖር ግን የሞኖፖሊስቲክ ውድድር ባህሪ ነው።"
+  },
+
+  {
+    question: "Which of the following is a characteristic of perfect competition?",
+    options: [
+      "Entry barriers",
+      "Homogeneous products",
+      "Expenditures on advertising",
+      "Quality of service"
+    ],
+    answer: 1,
+    englishExplanation: "Perfect competition has homogeneous products, meaning the products sold by different firms are identical. There are no significant barriers to entry, and firms generally do not need advertising to differentiate their products.",
+    amharicExplanation: "የፍጹም ውድድር ዋና ባህሪ ተመሳሳይ (homogeneous) ምርቶች መኖራቸው ነው። ከፍተኛ የመግቢያ እገዳ የለም፣ እንዲሁም ምርቶቹ ተመሳሳይ ስለሆኑ ለልዩነት ማስታወቂያ ማድረግ በአብዛኛው አስፈላጊ አይደለም።"
+  },
+
+  {
+    question: "Which of the following are the same at all levels of output under perfect competition?",
+    options: [
+      "Marginal cost and marginal revenue",
+      "Price and marginal revenue",
+      "Price and marginal cost",
+      "All of the above"
+    ],
+    answer: 1,
+    englishExplanation: "Under perfect competition, the firm is a price taker. It sells every unit at the market price, so each additional unit adds the same amount of revenue. Therefore, price equals marginal revenue at every level of output.",
+    amharicExplanation: "በፍጹም ውድድር ኩባንያው ዋጋ ተቀባይ (price taker) ነው። እያንዳንዱን ምርት በገበያ ዋጋ ስለሚሸጥ፣ ተጨማሪ አንድ ምርት ሲሸጥ የሚጨምረው ገቢ ሁልጊዜ ተመሳሳይ ነው። ስለዚህ Price = MR በሁሉም የምርት ደረጃዎች ላይ ይሆናል።"
+  },
+
+  {
+    question: "If a perfectly competitive firm sells 100 units of output at a market price of $100 per unit, its marginal revenue per unit is",
+    options: [
+      "$1",
+      "$100",
+      "more than $1, but less than $100.",
+      "less than $100."
+    ],
+    answer: 1,
+    englishExplanation: "In perfect competition, marginal revenue equals the market price. Since the market price is $100 per unit, the marginal revenue from selling one additional unit is also $100.",
+    amharicExplanation: "በፍጹም ውድድር የህዳግ ገቢ (MR) ከገበያ ዋጋ ጋር እኩል ነው። የገበያ ዋጋው $100 ስለሆነ፣ ተጨማሪ አንድ ምርት ሲሸጥ የሚገኘው MR ደግሞ $100 ነው።"
+  },
+
+  {
+    question: "In a perfectly competitive market, firms can freely enter and exit the market.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Free entry and exit is one of the main characteristics of perfect competition. Firms can enter when they see opportunities for profit and leave when they cannot earn sufficient returns, assuming no significant barriers exist.",
+    amharicExplanation: "እውነት ነው። ነጻ መግቢያና መውጫ የፍጹም ውድድር ዋና ባህሪያት አንዱ ነው። ከፍተኛ የመግቢያ እገዳ ከሌለ ኩባንያዎች ትርፍ የማግኘት እድል ሲያዩ ወደ ገበያ መግባት እና በቂ ገቢ ማግኘት ካልቻሉ ከገበያ መውጣት ይችላሉ።"
+  },
+
+  {
+    question: "Under perfectly competitive market, some firm can gain any competitive advantage over the other firm through advertising their products.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "False. Under perfect competition, products are homogeneous or identical. Advertising cannot create meaningful product differentiation because consumers view the products as essentially the same. Advertising therefore does not give one firm a special competitive advantage.",
+    amharicExplanation: "ሐሰት ነው። በፍጹም ውድድር ምርቶች ተመሳሳይ (homogeneous) ናቸው። ምርቶቹ ተመሳሳይ ስለሆኑ ማስታወቂያ በምርቱ ላይ ትልቅ ልዩነት መፍጠር አይችልም። ስለዚህ አንድ ኩባንያ በማስታወቂያ ብቻ ልዩ የውድድር ጥቅም ማግኘት አይችልም።"
+  },
+
+  {
+    question: "The demand curve of a monopolist is downward as it is a price taker.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "False. A monopolist has a downward-sloping demand curve because it is a price maker, not a price taker. To sell more output, the monopolist must lower its price. A price taker is characteristic of perfect competition, where the firm's demand curve is horizontal.",
+    amharicExplanation: "ሐሰት ነው። የሞኖፖሊስት የፍላጎት ኩርባ ወደ ታች የሚያዘነብለው ዋጋ ሰሪ (price maker) ስለሆነ ነው፤ ዋጋ ተቀባይ (price taker) ስለሆነ አይደለም። ተጨማሪ ምርት ለመሸጥ ዋጋውን መቀነስ አለበት። ዋጋ ተቀባይ የሆነው የፍጹም ውድድር ኩባንያ ሲሆን፣ የኩባንያው የፍላጎት ኩርባ አግድም (horizontal) ነው።"
+  }]
 
     },
 
