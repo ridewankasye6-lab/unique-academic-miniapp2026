@@ -1,20 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Emerging Technology - Chapter 2</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Emerging Technology - Chapter 2</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">💻</span>
+
+        <div>
+
+            <h1>Emerging Technology</h1>
+
+            <p>Chapter 2</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>💻 Emerging Technology</h1>
+    <h1>💻 Emerging Technology</h1>
 
-<h2>Chapter 2</h2>
-
-<p>
-
+    <h2>Chapter 2</h2>
 <h2> DATA SCIENCE</h2>
 <p>እንዴት ናችሁ ባለፈው ቻፕተር ውስጥ "Data" በEmerging Technology ውስጥ ምን ያክል አስፈላጊ እንደሆነ አይተናል። ካስታወሳችሁ "Data is regarded as new oil (እንደ ዘይት የሆነ ብንጠቀምበት ብዙ ለውጥ ሊያመጣ የሚችል) and strategic asset (በእቅድ በስትራቴጂ የምንጠቀመው ሃብት (asset)" እንደሆነ አይተን ነበር።</p>
 <p>እናም በዚህ ምዕራፍ ደግሞ ስለዚያ ዳታ ነው በስፋት የምናየው። የሚመለከቱትንም በደንብ እያብራራን እንመለከታለን።</p>
@@ -234,25 +287,50 @@
 <p>የዛሬው ትምህርት እንዲሁም ምዕራፍ ሁለት በዚህ መልኩ ተጠናቋል። አንብቡ! ስንፍና እንዲቆጣጠራችሁ አትፍቀዱ!</p>
 <p>በርቱ! እንወዳችኃለን</p>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="emerging-technology.html">⬅ Back to Emerging Technology</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="emerging-technology-chapter1.html">
-⬅ Previous
-</a>
-
-<a href="emerging-technology-chapter3.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "emerging-technology.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
