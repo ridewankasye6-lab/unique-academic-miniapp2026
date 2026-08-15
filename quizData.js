@@ -1207,7 +1207,271 @@ const quizData = {
     englishExplanation: "There are two main approaches to studying consumer utility: the Cardinal Utility Approach, which assigns numerical values to utility, and the Ordinal Utility Approach, which ranks preferences.",
     amharicExplanation: "የሸማች Utility ለመለካት ወይም ለማወዳደር ሁለት ዋና አቀራረቦች አሉ። Cardinal Utility እርካታን በቁጥር ይለካል፤ Ordinal Utility ደግሞ ምርጫዎችን በደረጃ ያወዳድራል።"
   },{     question: "Consumer's Equilibrium is attained when:",     options: [       "Marginal Utility of a Good is Maximum",       "Marginal Utility of a Good is equal to Price of the good",       "Marginal Utility of a good is less than Price of the good",       "Consumer buys only one good"     ],     answer: 1,     englishExplanation: "For a single good, consumer equilibrium occurs when the marginal utility of the last unit consumed is equal to its price. At this point, the consumer has no reason to buy more or less.",     amharicExplanation: "ለአንድ እቃ የሸማች ሚዛን የሚገኘው ከመጨረሻው እቃ የሚገኘው Marginal Utility (MU) ከእቃው ዋጋ ጋር እኩል ሲሆን ነው። በዚህ ጊዜ ሸማቹ ተጨማሪ ለመግዛትም ሆነ ለመቀነስ ምክንያት አይኖረውም።"   },    {     question: "If MUx > Px, a utility maximizing consumer will purchase ______ of the commodity:",     options: [       "more",       "less",       "same",       "none of the above"     ],     answer: 0,     englishExplanation: "When the marginal utility of a good is greater than its price, the consumer receives more satisfaction than the cost paid. Therefore, the consumer will buy more until MU falls to the level of the price.",     amharicExplanation: "የእቃው Marginal Utility (MU) ከዋጋው (P) በላይ ከሆነ፣ ሸማቹ ከሚከፍለው ዋጋ የበለጠ እርካታ እያገኘ ነው። ስለዚህ MU ከዋጋው ጋር እስኪመጣጠን ድረስ ተጨማሪ እቃ ይገዛል።"   },    {     question: "________ means that the utility that a consumer gets from a commodity can be measured in absolute terms:",     options: [       "Ordinal utility",       "Indifference utility",       "Cardinal Utility",       "Scale of preference"     ],     answer: 2,     englishExplanation: "Cardinal Utility assumes that satisfaction can be measured using specific numerical values called utils. For example, a consumer may receive 10 utils from consuming a good.",     amharicExplanation: "Cardinal Utility ማለት ከአንድ እቃ የሚገኘው እርካታ በተወሰኑ የቁጥር እሴቶች ሊለካ ይችላል የሚል ሀሳብ ነው። ለምሳሌ አንድ እቃ 10 utils እርካታ ሊሰጥ ይችላል።"   },    {     question: "________ refers to a tabular representation of various combinations of two goods that would give equal amounts of satisfaction to the consumer:",     options: [       "Indifference Map",       "Indifference Schedule",       "Consumer Equilibrium Curve",       "Indifference Curve"     ],     answer: 1,     englishExplanation: "An Indifference Schedule is a table showing different combinations of two goods that provide the consumer with the same level of satisfaction.",     amharicExplanation: "Indifference Schedule ማለት ለሸማቹ ተመሳሳይ የእርካታ ደረጃ የሚሰጡ የሁለት እቃዎች የተለያዩ ቅልቅሎችን በሠንጠረዥ የሚያሳይ ነው።"   },    {     question: "Which one of the following is NOT a property of Indifference Curves?",     options: [       "An Indifference Curve slopes down from left to right",       "Indifference Curves intersect each other",       "IC is convex to origin",       "Higher IC yields higher satisfaction"     ],     answer: 1,     englishExplanation: "Indifference curves cannot intersect each other. If two indifference curves crossed, the same consumption bundle would imply two different levels of satisfaction, which would contradict consistent consumer preferences.",     amharicExplanation: "የግዴለሽነት ኩርባዎች እርስ በርስ ሊቆራረጡ አይችሉም። ቢቆራረጡ አንድ የእቃ ቅልቅል ሁለት የተለያዩ የእርካታ ደረጃዎችን ያሳያል፣ ይህም ከተመጣጣኝ የሸማች ምርጫ ጋር ይቃረናል።"   },    {     question: "Jacob enjoys cups of green herbal tea while he works. However, he knows from experience that if he has a fifth cup of tea, he will get a headache and won't be able to concentrate. What does this tell us about Jacob and his utility from cups of green tea?",     options: [       "Jacob cannot afford the fifth cup within his budget constraint",       "The marginal utility of the fifth cup is greater than zero, and total utility is rising",       "The marginal utility of the fifth cup of tea is less than zero, and total utility is falling",       "The total utility of the fourth cup of tea is less than zero"     ],     answer: 2,     englishExplanation: "The fifth cup causes a headache and reduces Jacob's well-being. Therefore, its marginal utility is negative. When marginal utility is negative, consuming another unit causes total utility to decrease.",     amharicExplanation: "አምስተኛው ኩባያ ሻይ ለJacob ራስ ምታት ስለሚያስከትል ተጨማሪ እርካታ አይሰጠውም፤ ይልቁንም ጉዳት ያስከትላል። ስለዚህ MU ከዜሮ በታች ነው፣ እና MU አሉታዊ ሲሆን Total Utility (TU) ይቀንሳል።"   },    {     question: "Lucy uses her $48 of weekly income on two items: lipstick and magazines. The price of lipstick is $12 per unit, and the price of magazines is $4 per unit. Which of the following combinations might be a utility-maximizing combination of lipstick and magazines?",     options: [       "1 lipstick and 9 magazines",       "2 lipsticks and 8 magazines",       "2 lipsticks and 4 magazines",       "4 lipsticks and 1 magazine",       "3 lipsticks and 2 magazines"     ],     answer: 0,     englishExplanation: "Option A costs exactly $48: 1 lipstick × $12 = $12, and 9 magazines × $4 = $36. Total cost is $12 + $36 = $48, so this combination uses all of Lucy's income and is affordable.",     amharicExplanation: "A አማራጭ ገቢዋን ሙሉ በሙሉ ይጠቀማል። 1 lipstick × $12 = $12 እና 9 magazines × $4 = $36። በአጠቃላይ $12 + $36 = $48 ነው። ስለዚህ ይህ ቅልቅል በ$48 በጀቷ ውስጥ ይገኛል።"   },    {     question: "If a consumer is spending all of her income on two goods, X and Y, she maximizes her utility when:",     options: [       "MUX * MUY = PX * PY",       "MUX + PX = MUY + PY",       "MUX / MUY = PY / PX",       "MUX * PX = MUY * PY",       "MUX/PX = MUY/PY"     ],     answer: 4,     englishExplanation: "The consumer maximizes utility when the marginal utility per unit of money spent is equal for both goods. This is the Equi-Marginal Principle: MUX/PX = MUY/PY.",     amharicExplanation: "ሸማቹ እርካታውን ከፍ የሚያደርገው በእያንዳንዱ እቃ ላይ ከአንድ ብር የሚገኘው Marginal Utility እኩል ሲሆን ነው። ይህንን Equi-Marginal Principle እንለዋለን፦ MUX/PX = MUY/PY።"   },    {     question: "Demand curves slope downward because ________ slope downward.",     options: [       "Total utility curves",       "Marginal utility curves",       "Supply curves",       "Marginal cost curves",       "Production possibility curves"     ],     answer: 1,     englishExplanation: "Marginal utility generally decreases as more units of a good are consumed. Because consumers are willing to pay less for additional units when their marginal utility is lower, the demand curve slopes downward.",     amharicExplanation: "አንድ እቃ በብዛት ሲጠቀሙ የሚገኘው Marginal Utility በአጠቃላይ ይቀንሳል። የMarginal Utility ሲቀንስ ሸማቹ ለተጨማሪ እቃ ለመክፈል ያለው ፍቃደኝነትም ይቀንሳል። ስለዚህ የDemand Curve ወደ ታች ይወርዳል።"   },    {     question: "A consumption point inside the budget line:",     options: [       "is unaffordable",       "shows that the consumer spends income on only one of the goods",       "shows that the consumer has chosen to spend all of his or her income on both products",       "is affordable and, because it is inside the budget line, means that all the person's budget has been spent",       "is possible to afford but has some unspent income"     ],     answer: 4,     englishExplanation: "A point inside the budget line is affordable because it costs less than the consumer's available income. Since the entire income is not spent, some income remains unspent.",     amharicExplanation: "በበጀት መስመር ውስጥ ያለ ነጥብ ሊገዛ የሚችል (affordable) ነው። ምክንያቱም የሚያስወጣው ወጪ ከጠቅላላ ገቢው ያነሰ ነው። ስለዚህ ከገቢው የተወሰነ መጠን ያልተጠቀመበት ይቀራል።"   },    {     question: "Which of the following statements is correct?",     options: [       "Along the budget line, consuming more of one good implies consuming more of the other",       "The slope of the budget line shows there is no tradeoff between the two goods because the consumer can buy each of them",       "If the consumer's budget increases, the budget line shifts leftward and its slope does not change",       "The slope of the budget line shows the opportunity cost of the good measured along the x-axis",       "None of the above answers is correct"     ],     answer: 3,     englishExplanation: "The slope of the budget line represents the opportunity cost of the good on the horizontal axis. It shows how much of the vertical-axis good the consumer must give up to obtain one additional unit of the horizontal-axis good.",     amharicExplanation: "የበጀት መስመር ተዳፋት በX-axis ላይ ያለውን እቃ የማግኘት የOpportunity Cost ያሳያል። ማለትም አንድ ተጨማሪ የX እቃ ለማግኘት ምን ያህል የY እቃ መተው እንዳለበት ያሳያል።"   },    {     question: "A budget line:",     options: [       "has a slope equal to a relative price",       "shows the limits to what can be consumed",       "rotates or shifts only when the consumer's budget changes",       "Answers B and C are both correct",       "Answers A and B are both correct"     ],     answer: 4,     englishExplanation: "The slope of a budget line represents the relative price of the two goods, and the budget line shows the maximum combinations the consumer can afford. Statement C is false because the budget line can also change when prices change.",     amharicExplanation: "የበጀት መስመር ተዳፋት የሁለቱ እቃዎች አንጻራዊ ዋጋን ያሳያል፣ እንዲሁም መስመሩ ሸማቹ ሊገዛቸው የሚችላቸውን ከፍተኛ የእቃ ቅልቅሎች ይገድባል። C ሐሰት ነው፤ የእቃዎች ዋጋ ሲቀየርም የበጀት መስመሩ ሊቀየር ይችላል።"   },    {     question: "Suppose a consumer has $100 to spend on two goods, shoes and shirts. If the price of a pair of shoes is $20 per pair and the price of a shirt is $15 each, which of the following combinations is unaffordable to the consumer?",     options: [       "0 pairs of shoes and 0 shirts",       "2 pairs of shoes and 4 shirts",       "5 pairs of shoes and 0 shirts",       "0 pairs of shoes and 7 shirts",       "2 pairs of shoes and 3 shirts"     ],     answer: 3,     englishExplanation: "Option D costs $105: 0 pairs of shoes × $20 = $0, and 7 shirts × $15 = $105. Since $105 is greater than the available $100 budget, this combination is unaffordable.",     amharicExplanation: "D አማራጭ የሚያስወጣው $105 ነው። 0 ጫማ × $20 = $0 እና 7 ሸሚዞች × $15 = $105። የሸማቹ በጀት $100 ብቻ ስለሆነ $105 መክፈል አይችልም። ስለዚህ D መግዛት አይቻልም።"   },    {     question: "Which of the following describes what happens to a consumer's budget line if that consumer's budget increases? The budget line:",     options: [       "becomes steeper",       "shifts farther away from the origin of the graph",       "does not change",       "becomes more horizontal",       "shifts closer to the origin of the graph"     ],     answer: 1,     englishExplanation: "When income increases while prices remain unchanged, the consumer can afford more of both goods. Therefore, the budget line shifts outward, farther away from the origin, while remaining parallel to the original line.",     amharicExplanation: "ገቢ ሲጨምር የእቃዎች ዋጋ ካልተቀየረ ሸማቹ ከሁለቱም እቃዎች የበለጠ መግዛት ይችላል። ስለዚህ የበጀት መስመሩ ከመነሻው ወደ ውጭ ይንቀሳቀሳል እና ከቀድሞው መስመር ጋር ትይዩ ይሆናል።"   },    {     question: "As Abel drinks additional cups of tea at breakfast, Abel's:",     options: [       "marginal utility from tea decreases",       "total utility from tea increases",       "total utility from tea decreases",       "Both answers A and B are correct",       "Both answers B and C are correct"     ],     answer: 3,     englishExplanation: "According to the Law of Diminishing Marginal Utility, the marginal utility from each additional cup generally decreases. However, as long as marginal utility remains positive, total utility continues to increase. Therefore, both A and B are correct.",     amharicExplanation: "በMarginal Utility መቀነስ ህግ መሠረት እያንዳንዱ ተጨማሪ ኩባያ ሻይ የሚሰጠው Marginal Utility በአጠቃላይ ይቀንሳል። ነገር ግን MU አዎንታዊ እስከሆነ ድረስ Total Utility መጨመሩን ይቀጥላል። ስለዚህ A እና B ሁለቱም ትክክል ናቸው።"   },    {     question: "The limit on the consumption bundles that a consumer can afford is known as:",     options: [       "An indifference curve",       "The marginal rate of substitution",       "The budget constraint",       "The consumption limit"     ],     answer: 2,     englishExplanation: "The budget constraint represents the limit on the combinations of goods that a consumer can afford with a given income and given prices.",     amharicExplanation: "Budget Constraint ማለት ሸማቹ በተሰጠው ገቢና በተወሰኑ የእቃዎች ዋጋዎች ሊገዛቸው የሚችላቸውን የእቃ ቅልቅሎች የሚገድበው ወሰን ነው።"   },    {     question: "Suppose a consumer must choose between the consumption of sandwiches and pizza. If we measure the quantity of pizza on the horizontal axis and the quantity of sandwiches on the vertical axis, and if the price of pizza is $10 and the price of a sandwich is $5, then the slope of the budget constraint is:",     options: [       "5",       "10",       "2",       "1/2"     ],     answer: 2,     englishExplanation: "The absolute value of the budget-line slope is Px/Py. Pizza is on the horizontal axis, so Px = $10, and sandwiches are on the vertical axis, so Py = $5. Therefore, 10/5 = 2. The actual slope is negative, so it is -2.",     amharicExplanation: "የበጀት መስመር ተዳፋት ፍጹም ዋጋ Px/Py ነው። Pizza በአግድም ዘንግ ላይ ስለሆነ Px = $10፣ Sandwich በቋሚ ዘንግ ላይ ስለሆነ Py = $5። ስለዚህ 10/5 = 2 ነው። በትክክል የበጀት መስመሩ ተዳፋት አሉታዊ ስለሆነ -2 ነው።"   },    {     question: "The slope at any point on an indifference curve is known as:",     options: [       "The trade-off rate",       "The marginal rate of substitution",       "The marginal rate of trade-off",       "The marginal rate of indifference"     ],     answer: 1,     englishExplanation: "The slope of an indifference curve represents the Marginal Rate of Substitution (MRS). It shows how much of one good a consumer is willing to give up to obtain an additional amount of another good while maintaining the same level of satisfaction.",     amharicExplanation: "የግዴለሽነት ኩርባ ተዳፋት Marginal Rate of Substitution (MRS) ይባላል። MRS ሸማቹ ተመሳሳይ የእርካታ ደረጃን እየጠበቀ አንድን ተጨማሪ እቃ ለማግኘት ምን ያህል ሌላ እቃ ለመተው ፈቃደኛ እንደሆነ ያሳያል።"   },    {     question: "Which of the following statements is not true with regard to the standard properties of indifference curves?",     options: [       "Indifference curves are downward sloping",       "Indifference curves do not cross each other",       "Higher indifference curves are preferred to lower ones",       "Indifference curves are bowed outward"     ],     answer: 3,     englishExplanation: "Standard indifference curves are convex to the origin, meaning they are bowed inward. They are not normally bowed outward. This convex shape reflects the diminishing marginal rate of substitution.",     amharicExplanation: "መደበኛ የግዴለሽነት ኩርባዎች ወደ መነሻው የተጎነበሱ (convex) ናቸው። ወደ ውጭ (bowed outward) መጎንበስ መደበኛ ባህሪያቸው አይደለም። ይህ የተጎነበሰ ቅርጽ የMarginal Rate of Substitution መቀነስን ያሳያል።"   },    {     question: "The consumer's optimal purchase of any two goods is the point where:",     options: [       "The consumer reaches the highest indifference curve subject to remaining on the budget constraint",       "The consumer has reached the highest indifference curve",       "The two highest indifference curves cross",       "The budget constraint crosses the indifference curve"     ],     answer: 0,     englishExplanation: "The consumer's optimal bundle is the highest attainable indifference curve given the budget constraint. In the usual interior solution, this occurs where the indifference curve is tangent to the budget line.",     amharicExplanation: "የሸማቹ Optimal Purchase ማለት በበጀቱ ገደብ ውስጥ ሆኖ ሊደርስበት የሚችለው ከፍተኛው የእርካታ ኩርባ ላይ ያለው የእቃ ቅልቅል ነው። በተለመደው ሁኔታ ይህ የሚከሰተው Indifference Curve እና Budget Line በሚነካኩበት (tangency) ነጥብ ላይ ነው።"   },  {     question: "If we measure the quantity of French fries on the horizontal axis and the quantity of hamburgers on the vertical axis, and if the price of French fries is $0.60 and the price of a hamburger is $2.40, then the slope of the budget constraint is 1/4 (and it is negative).",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "The slope of a budget line is determined by the ratio of the prices, Px/Py. Here, $0.60/$2.40 = 1/4. Because the budget line shows a trade-off between two goods, its slope is negative. Therefore, the statement is true.",     amharicExplanation: "የበጀት መስመር ተዳፋት የሁለቱ እቃዎች ዋጋ ጥምርታ ነው። እዚህ የFrench fries ዋጋ $0.60 እና የhamburger ዋጋ $2.40 ስለሆነ፣ 0.60 ÷ 2.40 = 1/4 ይሆናል። የበጀት መስመሩ የአንድን እቃ ለሌላ እቃ መለወጥን ስለሚያሳይ ተዳፋቱ አሉታዊ ነው። ስለዚህ መግለጫው እውነት ነው።"   },    {     question: "A budget constraint is a set of commodity bundles that provide the consumer with the same level of satisfaction.",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "A budget constraint shows the combinations of goods that a consumer can afford with a given income and prices. A set of combinations that gives the same level of satisfaction is called an indifference curve.",     amharicExplanation: "የበጀት ገደብ ማለት ሸማቹ ባለው ገቢና በእቃዎች ዋጋ መሠረት ሊገዛቸው የሚችላቸውን የእቃዎች ቅልቅሎች ያሳያል። ተመሳሳይ የእርካታ ደረጃ የሚሰጡ የእቃ ቅልቅሎች ግን Indifference Curve ይባላሉ።"   },    {     question: "Indifference curves measure the consumer's willingness to trade one good for another good while maintaining a constant level of satisfaction.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "An indifference curve shows different combinations of two goods that give the consumer the same level of satisfaction. It therefore shows how much of one good the consumer is willing to give up to obtain more of another while keeping utility constant.",     amharicExplanation: "የግዴለሽነት ኩርባ ሸማቹን ተመሳሳይ የእርካታ ደረጃ የሚሰጡ የሁለት እቃዎች የተለያዩ ቅልቅሎችን ያሳያል። ስለዚህ ሸማቹ አንድን እቃ በሌላ እቃ ለመተካት ምን ያህል ፈቃደኛ እንደሆነ እርካታውን ሳይቀይር ያሳያል።"   },    {     question: "When drawn on a graph that measures the quantity of a good on each axis, indifference curves are usually straight lines that slope downward (negatively).",     options: [       "True",       "False"     ],     answer: 1,     englishExplanation: "Indifference curves are usually convex to the origin, meaning they are bowed inward rather than being straight lines. Straight-line indifference curves occur in the special case of perfect substitutes, where the rate of substitution is constant.",     amharicExplanation: "የግዴለሽነት ኩርባዎች በአብዛኛው ቀጥተኛ መስመሮች አይደሉም፤ ወደ መነሻው የተጎነበሱ (convex) ናቸው። ቀጥተኛ የግዴለሽነት ኩርባ የሚኖረው እንደ Perfect Substitutes ባሉ ልዩ ሁኔታዎች ነው።"   },    {     question: "Indifference curves tend to be bowed inward because a consumer is willing to trade a greater amount of a good for another if they have an abundance of the good they are trading away.",     options: [       "True",       "False"     ],     answer: 0,     englishExplanation: "This is explained by the principle of diminishing marginal rate of substitution. When a consumer has a lot of one good, they are willing to give up more of that good to obtain some of the other good. This causes the indifference curve to be convex to the origin.",     amharicExplanation: "ይህ የMarginal Rate of Substitution መቀነስ መርህን ያሳያል። ሸማቹ አንድን እቃ በብዛት ሲይዝ፣ ሌላ እቃ ለማግኘት ከዚያ ብዙ ያለውን እቃ ብዙ መጠን ለመስጠት ፈቃደኛ ይሆናል። ይህም የግዴለሽነት ኩርባው ወደ መነሻው እንዲጎነበስ ያደርገዋል።"   },    {     question: "A consumer will be in equilibrium when he spends his given income on the purchase of different goods in such a way so as to maximize his ___________.",     options: [       "Marginal Utility",       "Demand",       "Cardinal Utility",       "Total Utility"     ],     answer: 3,     englishExplanation: "A rational consumer is in equilibrium when the available income is allocated among goods in a way that maximizes total utility, or overall satisfaction, given the consumer's budget.",     amharicExplanation: "ምክንያታዊ ሸማች በተሰጠው ገቢ ውስጥ የሚገዛቸውን እቃዎች በመመደብ ከፍተኛውን ጠቅላላ እርካታ (Total Utility) ሲያገኝ በሸማች ሚዛን ውስጥ ነው።"   },    {     question: "__________ refers to the want-satisfying power of a commodity.",     options: [       "Supply",       "Demand",       "Utility",       "Indifference Curve"     ],     answer: 2,     englishExplanation: "Utility is the want-satisfying power of a commodity. It refers to the satisfaction or benefit that a consumer receives from consuming a good or service.",     amharicExplanation: "Utility ማለት አንድ ሸቀጥ የሰውን ፍላጎት የማርካት ችሎታ ነው። ሸማቹ አንድን እቃ ወይም አገልግሎት ሲጠቀም የሚያገኘውን እርካታ ይወክላል።"   },    {     question: "Which one of the following is NOT a characteristic of Utility?",     options: [       "Utility is Relative",       "Utility is same as demand",       "Utility is different from usefulness",       "Utility is subjective",       "None"     ],     answer: 1,     englishExplanation: "Utility is not the same as demand. Utility refers to the satisfaction a consumer gets from a good, while demand refers to the willingness and ability to buy a good at a given price.",     amharicExplanation: "Utility ከDemand ጋር አንድ አይደለም። Utility ማለት አንድ እቃ ለሸማቹ የሚሰጠው እርካታ ሲሆን፣ Demand ደግሞ ሸማቹ በተወሰነ ዋጋ እቃ ለመግዛት ያለውን ፍላጎትና ችሎታ ይወክላል።"   },    {     question: "A consumer will be ________ when he spends his given income on the purchase of different goods in such a way to maximize his total utility.",     options: [       "Satisfied",       "In a state of rest",       "In equilibrium",       "All of the above"     ],     answer: 3,     englishExplanation: "When a consumer maximizes total utility with a given income, there is no reason to change the current spending pattern. Therefore, the consumer is satisfied, in a state of rest, and in equilibrium.",     amharicExplanation: "ሸማቹ በተሰጠው ገቢ ከፍተኛውን ጠቅላላ እርካታ ሲያገኝ፣ የወጪ አመዳደቡን ለመቀየር ምክንያት አይኖረውም። ስለዚህ ረክቷል፣ በእረፍት ሁኔታ ነው፣ እና በሚዛን ውስጥ ነው።"   },    {     question: "Utility refers to the _________ of a commodity.",     options: [       "Price",       "Want-satisfying power",       "Weight",       "None of the above"     ],     answer: 1,     englishExplanation: "Utility refers to the ability or power of a commodity to satisfy human wants. It does not refer to its price or physical weight.",     amharicExplanation: "Utility ማለት አንድ እቃ የሰውን ፍላጎት የማርካት ችሎታ ነው። Utility የእቃውን ዋጋ ወይም ክብደት አይወክልም።"   },    {     question: "Smoking a cigarette has harmful effects on a person; even after this, why does it possess utility?",     options: [       "Utility is not measurable",       "Utility is abstract",       "Utility is different from usefulness",       "None of the above"     ],     answer: 2,     englishExplanation: "Utility and usefulness are different concepts. A product can be harmful or not useful in a health sense, but if it gives satisfaction to a consumer, it can still have utility.",     amharicExplanation: "Utility እና usefulness የተለያዩ ጽንሰ-ሀሳቦች ናቸው። አንድ ምርት ለጤና ጎጂ ቢሆንም፣ ለሸማቹ እርካታ ከሰጠ  Utility ሊኖረው ይችላል።"   },    {     question: "What is Point of Satiation?",     options: [       "Point at which TU is maximum",       "Point at which MU is least",       "Point at which MU is maximum",       "Point at which MU = TU"     ],     answer: 0,     englishExplanation: "The point of satiation is the point where Total Utility reaches its maximum level. At this point, Marginal Utility is zero because consuming one additional unit adds no more satisfaction.",     amharicExplanation: "የSatiation ነጥብ ማለት Total Utility (TU) ከፍተኛው ደረጃ ላይ የሚደርስበት ነጥብ ነው። በዚህ ነጥብ Marginal Utility (MU) ዜሮ ይሆናል፣ ምክንያቱም አንድ ተጨማሪ እቃ መጠቀም ተጨማሪ እርካታ አይጨምርም።"   },    {     question: "When M.U keeps on decreasing, T.U increases as long as the M.U is:",     options: [       "Positive",       "Negative",       "Constant",       "None of the above"     ],     answer: 0,     englishExplanation: "Total Utility continues to increase as long as Marginal Utility is positive. Even if MU is decreasing, it still adds something to TU while it remains above zero.",     amharicExplanation: "Marginal Utility (MU) እየቀነሰ ቢሄድም ከዜሮ በላይ እስከሆነ ድረስ Total Utility (TU) መጨመሩን ይቀጥላል። ምክንያቱም እያንዳንዱ ተጨማሪ እቃ አሁንም ተጨማሪ እርካታ እየጨመረ ነው።"   },    {     question: "MU is 0 when:",     options: [       "T.U is increasing",       "T.U is decreasing",       "T.U is max",       "Both b and c"     ],     answer: 2,     englishExplanation: "Marginal Utility is zero when Total Utility reaches its maximum point. At this point, consuming one additional unit neither increases nor decreases total utility.",     amharicExplanation: "Marginal Utility (MU) ዜሮ የሚሆነው Total Utility (TU) ከፍተኛ ደረጃ ላይ ሲደርስ ነው። በዚህ ጊዜ አንድ ተጨማሪ እቃ መጠቀም ጠቅላላ እርካታን አይጨምርም ወይም አይቀንስም።"   },    {     question: "Which one of these is NOT true about TU and MU?",     options: [       "TU increases as long as MU is positive.",       "TU is maximum when MU is negative.",       "TU is maximum when MU is zero.",       "TU decreases when MU becomes negative."     ],     answer: 1,     englishExplanation: "The statement is false because TU is not maximum when MU is negative. TU reaches its maximum when MU is zero. Once MU becomes negative, TU starts to decrease.",     amharicExplanation: "ይህ መግለጫ ሐሰት ነው። TU ከፍተኛ የሚሆነው MU አሉታዊ ሲሆን አይደለም፤ MU ዜሮ ሲሆን ነው። MU አሉታዊ ከሆነ ግን TU መቀነስ ይጀምራል።"   },    {     question: "The Law of Diminishing Marginal Utility states that as amount consumed of a commodity _______, other things being constant, marginal utility ______:",     options: [       "increases, decreases",       "increases, increases",       "decreases, decreases",       "decreases, increases"     ],     answer: 0,     englishExplanation: "The Law of Diminishing Marginal Utility states that as consumption of a commodity increases, the additional satisfaction gained from each extra unit generally decreases, assuming other factors remain constant.",     amharicExplanation: "የMarginal Utility መቀነስ ህግ አንድ እቃ የሚበላው ወይም የሚጠቀመው መጠን ሲጨምር፣ ከእያንዳንዱ ተጨማሪ ክፍል የሚገኘው ተጨማሪ እርካታ (MU) እየቀነሰ እንደሚሄድ ይገልጻል። ሌሎች ሁኔታዎች ቋሚ ናቸው።"   },    {     question: "Which of these are exceptions to the Law of Diminishing Marginal Utility?",     options: [       "Desire for Money",       "Food",       "Water",       "All of the above"     ],     answer: 0,     englishExplanation: "Desire for money is traditionally considered an exception to the Law of Diminishing Marginal Utility. The marginal utility of money may not diminish in the same way as the utility from consuming ordinary goods.",     amharicExplanation: "ለገንዘብ ያለው ፍላጎት በተለምዶ ከMarginal Utility መቀነስ ህግ ልዩ ሁኔታዎች አንዱ ነው። ተጨማሪ ገንዘብ ሲገኝ የገንዘቡ ተጨማሪ እርካታ እንደ መደበኛ እቃዎች በተመሳሳይ መንገድ ላይቀንስ ይችላል።"   },    {     question: "A consumer will maximize his total utility when he allocates his income among various commodities in such a way that the ________ utility of the last rupee spent on each commodity is ________:",     options: [       "total, equal",       "marginal, unequal",       "marginal, equal",       "total, unequal"     ],     answer: 2,     englishExplanation: "According to the Equi-Marginal Principle, a consumer maximizes total utility when the marginal utility obtained from the last unit of money spent on each commodity is equal. In other words, MUx/Px = MUy/Py.",     amharicExplanation: "በEqui-Marginal Principle መሠረት ሸማቹ ጠቅላላ እርካታውን ከፍ የሚያደርገው በእያንዳንዱ እቃ ላይ ከመጨረሻው የተወጣ አንድ ብር የሚያገኘው የMarginal Utility መጠን እኩል ሲሆን ነው። በቀላሉ MUx/Px = MUy/Py ማለት ነው።"   },    {     question: "Since utility is ________, it cannot be measured in objective terms:",     options: [       "Relative",       "Subjective",       "A power",       "None of the above"     ],     answer: 1,     englishExplanation: "Utility is subjective because the satisfaction obtained from a good differs from one person to another. Therefore, it cannot be measured objectively in the same way as physical quantities such as weight or length.",     amharicExplanation: "Utility ግለሰባዊ (Subjective) ነው። ምክንያቱም አንድ እቃ ለአንድ ሰው የሚሰጠው እርካታ ከሌላ ሰው ሊለይ ይችላል። ስለዚህ Utility እንደ ክብደት ወይም ርዝመት ያሉ ነገሮችን በሚለኩበት ተመሳሳይ የዓላማ መለኪያ መለካት አይቻልም።"   },    {     question: "Which one of the following are assumptions about the Law of Diminishing Marginal Utility?",     options: [       "All units of a commodity must be identical",       "The utility is measurable",       "There should be no change in taste of consumer",       "All of the above"     ],     answer: 3,     englishExplanation: "All three statements are assumptions of the traditional Law of Diminishing Marginal Utility. The units of the commodity should be identical, utility is assumed to be measurable under the cardinal approach, and the consumer's tastes and preferences should remain unchanged.",     amharicExplanation: "ሶስቱም መግለጫዎች በባህላዊው የMarginal Utility መቀነስ ህግ የሚጠቀሱ ግምቶች ናቸው። የእቃው ክፍሎች ተመሳሳይ መሆን አለባቸው፣ Utility ሊለካ እንደሚችል ይታሰባል፣ እንዲሁም የሸማቹ ጣዕምና ምርጫ መለወጥ የለበትም። ስለዚህ መልሱ All of the above ነው።"   }],
-        4: [],
+        4: [  {
+    question: "Which of the following costs would be considered a short-run fixed cost for an ice-cream shop?",
+    options: [
+      "Wages paid to hourly part-time (or noncontract) employees",
+      "Electricity used to operate the shop and the appliances",
+      "Monthly rent paid to the owners of the building under a lease",
+      "Chocolate sauce for sundaes",
+      "Plastic spoons, cones, and other supplies"
+    ],
+    answer: 2,
+    englishExplanation: "A fixed cost does not change when the level of production changes in the short run. Monthly rent normally remains the same whether the shop sells many ice creams or very few, so it is a short-run fixed cost.",
+    amharicExplanation: "ቋሚ ወጪ (Fixed Cost) በአጭር ጊዜ የምርት መጠን ቢጨምርም ቢቀንስም የማይለወጥ ወጪ ነው። የወር ኪራይ ስንት አይስ ክሬም እንደተመረተ ሳይወሰን በአብዛኛው ተመሳሳይ ስለሚሆን ቋሚ ወጪ ነው።"
+  },
+
+  {
+    question: "In the short run, when the firm produces zero units of output, which of the following is always equal to zero?",
+    options: [
+      "Total cost",
+      "Total variable cost",
+      "Economic profit",
+      "Total fixed cost",
+      "Economic loss"
+    ],
+    answer: 1,
+    englishExplanation: "Variable costs change with the level of production. When the firm produces zero units, it does not use variable inputs for production, so total variable cost is zero. Fixed costs can still exist.",
+    amharicExplanation: "ተለዋዋጭ ወጪ (Variable Cost) ከምርት መጠን ጋር የሚለዋወጥ ወጪ ነው። ድርጅቱ ምንም ምርት ካላመረተ የተለዋዋጭ ግብዓት ስለማይጠቀም አጠቃላይ ተለዋዋጭ ወጪው ዜሮ ይሆናል። ነገር ግን ቋሚ ወጪ ሊኖር ይችላል።"
+  },
+
+  {
+    question: "In the short run, the marginal product of labor is inversely related to",
+    options: [
+      "Economic profit",
+      "Marginal utility",
+      "Average fixed cost",
+      "Average product of labor",
+      "Marginal cost"
+    ],
+    answer: 4,
+    englishExplanation: "Marginal product of labor and marginal cost have an inverse relationship. When each additional worker produces more additional output, the cost of producing one additional unit tends to fall. When marginal product falls, marginal cost tends to rise.",
+    amharicExplanation: "የጉልበት ህዳጌ ምርት (Marginal Product of Labor) እና የህዳጌ ወጪ (Marginal Cost) ተቃራኒ ዝምድና አላቸው። የጉልበት ህዳጌ ምርት ሲጨምር አንድ ተጨማሪ ምርት ለማምረት የሚያስፈልገው ወጪ ይቀንሳል። ህዳጌ ምርት ሲቀንስ የህዳጌ ወጪ ይጨምራል።"
+  },
+
+  {
+    question: "All else equal, in the short run as more labor is employed, average product of labor ________, and average variable production cost ________.",
+    options: [
+      "Rises then falls; always falls",
+      "Falls then rises; always rises",
+      "Always falls; always rises",
+      "Rises then falls; falls then rises",
+      "Falls then rises; rises then falls"
+    ],
+    answer: 3,
+    englishExplanation: "As more labor is added, average product initially rises because of specialization and better use of fixed inputs. Eventually, diminishing returns cause average product to fall. Because average variable cost is inversely related to average product, it initially falls and later rises.",
+    amharicExplanation: "ተጨማሪ ጉልበት ሲጨመር በመጀመሪያ ልዩ ስራ መከፋፈል እና የቋሚ ግብዓቶች የተሻለ አጠቃቀም ስለሚኖር የጉልበት አማካይ ምርት ይጨምራል። በኋላ ግን የህዳጌ ማሽቆልቆል ህግ ስለሚሰራ አማካይ ምርት ይቀንሳል። የአማካይ ተለዋዋጭ ወጪም በተቃራኒው መጀመሪያ ይቀንሳል ከዚያም ይጨምራል።"
+  },
+
+  {
+    question: "Which of the following is a variable cost?",
+    options: [
+      "Interest payments",
+      "Raw materials costs",
+      "Property taxes",
+      "All of the above are variable costs."
+    ],
+    answer: 1,
+    englishExplanation: "Raw material costs normally change with the amount of output produced. Producing more goods requires more raw materials, so raw materials are a variable cost.",
+    amharicExplanation: "የጥሬ ዕቃ ወጪ ከሚመረተው ምርት መጠን ጋር ይለዋወጣል። ብዙ ምርት ለማምረት ብዙ ጥሬ ዕቃ ያስፈልጋል። ስለዚህ የጥሬ ዕቃ ወጪ ተለዋዋጭ ወጪ ነው።"
+  },
+
+  {
+    question: "Which of the following is an implicit cost?",
+    options: [
+      "The salary earned by a corporate executive",
+      "Depreciation in the value of a company-owned car as it wears out",
+      "Property taxes",
+      "All of the above are implicit costs."
+    ],
+    answer: 1,
+    englishExplanation: "An implicit cost is the opportunity cost of using resources that the firm already owns, without making a direct cash payment. The depreciation of a company-owned asset represents a cost associated with using that owned resource.",
+    amharicExplanation: "ስውር ወጪ (Implicit Cost) ድርጅቱ በራሱ የያዘውን ግብዓት ሲጠቀም የሚከሰት የዕድል ወጪ ነው። የድርጅቱ በራሱ የተያዘ መኪና በአጠቃቀም ምክንያት ዋጋው መቀነሱ ከዚህ ዓይነት ወጪ ጋር ይያያዛል።"
+  },
+
+  {
+    question: "If an input is owned and used by a firm, then its",
+    options: [
+      "explicit cost is zero",
+      "implicit cost is zero",
+      "opportunity cost is zero",
+      "economic cost is zero"
+    ],
+    answer: 0,
+    englishExplanation: "When a firm already owns an input, it does not make a direct cash payment to purchase or rent that input. Therefore, its explicit cost is zero. However, the input can still have an implicit opportunity cost.",
+    amharicExplanation: "አንድ ድርጅት ግብዓቱን በራሱ ባለቤትነት ከያዘው ለመግዛት ወይም ለመከራየት ቀጥተኛ የገንዘብ ክፍያ አያደርግም። ስለዚህ ግልጽ ወጪው (Explicit Cost) ዜሮ ነው። ነገር ግን ስውር የዕድል ወጪ ሊኖረው ይችላል።"
+  },
+
+  {
+    question: "Which of the following short-run cost curves declines continuously?",
+    options: [
+      "Average total cost",
+      "Marginal cost",
+      "Average fixed cost",
+      "Average variable cost"
+    ],
+    answer: 2,
+    englishExplanation: "Average fixed cost equals total fixed cost divided by output. Since fixed cost is spread over more units as output increases, average fixed cost continuously declines.",
+    amharicExplanation: "አማካይ ቋሚ ወጪ (AFC) የሚሰላው አጠቃላይ ቋሚ ወጪን በምርት መጠን በማካፈል ነው። ምርት ሲጨምር ተመሳሳይ ቋሚ ወጪ በብዙ ክፍሎች ስለሚከፋፈል አማካይ ቋሚ ወጪ ሁልጊዜ ይቀንሳል።"
+  },
+
+  {
+    question: "The law of diminishing returns begins at the level of output where",
+    options: [
+      "marginal cost is at a minimum",
+      "average variable cost is at a minimum",
+      "average fixed cost is at a maximum",
+      "None of the above is correct."
+    ],
+    answer: 0,
+    englishExplanation: "The law of diminishing returns begins when the marginal product of the variable input starts to decrease. Because marginal cost moves inversely with marginal product, marginal cost reaches its minimum at this point and then begins to rise.",
+    amharicExplanation: "የህዳጌ ማሽቆልቆል ህግ የሚጀምረው የተለዋዋጭ ግብዓት ህዳጌ ምርት መቀነስ ሲጀምር ነው። የህዳጌ ምርት እና የህዳጌ ወጪ ተቃራኒ ስለሆኑ፣ በዚህ ጊዜ የህዳጌ ወጪ ዝቅተኛው ደረጃ ላይ ይደርሳል ከዚያም መጨመር ይጀምራል።"
+  },
+
+  {
+    question: "Which of the following statements about short-run and long-run costs is false?",
+    options: [
+      "A firm might quote its short-run costs as the costs of producing different output levels over a period of a month.",
+      "A firm might quote its long-run costs as the costs of producing different output levels over a period of an hour.",
+      "A firm might quote both its short-run costs and its long-run costs as the costs of producing different output levels over a period of a week.",
+      "Short-run costs are always lower than long-run costs."
+    ],
+    answer: 1,
+    englishExplanation: "The long run is defined by the ability of the firm to adjust all inputs, including inputs that are fixed in the short run. An hour would generally be too short for a firm to make all necessary adjustments, so describing it as the long-run period is inappropriate in this context.",
+    amharicExplanation: "ረጅም ጊዜ (Long Run) ማለት ድርጅቱ ሁሉንም ግብዓቶች ማስተካከል የሚችልበት በቂ ጊዜ ነው። አንድ ሰዓት ብዙ ጊዜ ሁሉንም ግብዓቶች ለማስተካከል በቂ ስላልሆነ እዚህ ላይ እንደ ረጅም ጊዜ መቆጠሩ ተገቢ አይደለም።"
+  },
+
+  {
+    question: "Which of the following statements about a profit-maximizing firm is false?",
+    options: [
+      "It might set its daily output at a higher level in the short run than in the long run.",
+      "It might set its daily output at a lower level in the short run than in the long run.",
+      "If it had a daily output of zero in the short run, it would be sure to have a total cost of zero.",
+      "If it had a daily output of zero in the long run, it would be sure to have a total cost of zero."
+    ],
+    answer: 2,
+    englishExplanation: "This statement is false because a firm can still have fixed costs in the short run even when its output is zero. Therefore, total cost can be greater than zero. In the long run, all inputs are variable, so a firm that produces zero output can avoid all production costs.",
+    amharicExplanation: "ይህ አረፍተ ነገር ስህተት የሆነው በአጭር ጊዜ ድርጅቱ ምርት ዜሮ ቢያደርግም ቋሚ ወጪዎች ሊኖሩበት ስለሚችሉ ነው። ስለዚህ አጠቃላይ ወጪው ዜሮ መሆን አይገደድም። በረጅም ጊዜ ግን ሁሉም ግብዓቶች ተለዋዋጭ ስለሆኑ ዜሮ ምርት ማምረት ሲቻል ወጪንም ማስወገድ ይቻላል።"
+  },
+
+  {
+    question: "Which of the following statements about a fixed input is true?",
+    options: [
+      "Its price is fixed.",
+      "The quantity of it that a firm can use in the long run is fixed.",
+      "The quantity of it that a firm can use in the short run is fixed.",
+      "The quantity of output that the firm can produce with it is fixed."
+    ],
+    answer: 2,
+    englishExplanation: "A fixed input is an input whose quantity cannot be changed during the short run. The input may be changed in the long run, so its quantity is not necessarily fixed forever.",
+    amharicExplanation: "ቋሚ ግብዓት (Fixed Input) ማለት በአጭር ጊዜ ውስጥ መጠኑን መቀየር የማይቻል ግብዓት ነው። በረጅም ጊዜ ግን የዚህ ግብዓት መጠን ሊቀየር ይችላል።"
+  },
+
+  {
+    question: "In the short run, which of the following always gets smaller as output increases?",
+    options: [
+      "Average fixed cost",
+      "Average variable cost",
+      "Short-run average cost",
+      "Short-run marginal cost"
+    ],
+    answer: 0,
+    englishExplanation: "Average fixed cost is calculated by dividing total fixed cost by the quantity of output. Since total fixed cost stays constant while output increases, average fixed cost always decreases.",
+    amharicExplanation: "አማካይ ቋሚ ወጪ (AFC) የሚሰላው አጠቃላይ ቋሚ ወጪን በምርት መጠን በማካፈል ነው። ቋሚ ወጪው ሳይለወጥ ምርት ሲጨምር በብዙ ምርቶች ላይ ስለሚከፋፈል አማካይ ቋሚ ወጪ ሁልጊዜ ይቀንሳል።"
+  },
+
+  {
+    question: "Which of the following is the correct definition of the law of diminishing returns?",
+    options: [
+      "If extra units of one variable input are added to a fixed amount of all other inputs, then sooner or later the marginal returns will get smaller.",
+      "If extra units of one variable input are added to a fixed amount of all other inputs, then the marginal returns will always get smaller.",
+      "If extra units of all variable inputs are added to a fixed amount of all fixed inputs, then the marginal returns will always get smaller.",
+      "If extra units of all variable inputs are added to a fixed amount of all fixed inputs, then sooner or later the marginal returns will get smaller."
+    ],
+    answer: 0,
+    englishExplanation: "The law of diminishing returns states that when additional units of one variable input are added to fixed amounts of other inputs, the marginal product will eventually decrease. It does not necessarily decrease from the very beginning.",
+    amharicExplanation: "የህዳጌ ማሽቆልቆል ህግ አንድ ተለዋዋጭ ግብዓት ወደ ቋሚ ግብዓቶች በተጨመረ ቁጥር ከተወሰነ ጊዜ በኋላ ተጨማሪው ግብዓት የሚያመጣው ተጨማሪ ምርት መቀነስ እንደሚጀምር ይገልጻል። ከመጀመሪያው ጀምሮ መቀነስ ግዴታ አይደለም።"
+  },
+
+  {
+    question: "Which of the following statements about a firm's average cost curves is false?",
+    options: [
+      "Its SAC (short-run average cost) curve will stay put if the price of an input that is fixed in the short run increases.",
+      "Its SAC curve will shift upwards if the price of an input that is variable in the short run increases.",
+      "Its SAC curve will generally lie above its LAC curve.",
+      "Its LAC curve will shift upwards if new firms enter its industry and there are external diseconomies of scale."
+    ],
+    answer: 0,
+    englishExplanation: "This statement is false. If the price of a fixed input increases, the firm's total fixed cost increases. As a result, its short-run average cost curve shifts upward rather than staying in the same position.",
+    amharicExplanation: "ይህ አረፍተ ነገር ስህተት ነው። በአጭር ጊዜ ቋሚ የሆነ ግብዓት ዋጋ ከጨመረ አጠቃላይ ቋሚ ወጪ ይጨምራል። ስለዚህ የአጭር ጊዜ አማካይ ወጪ (SAC) ከፍ ብሎ ይሸጋገራል፤ በቦታው አይቀመጥም።"
+  },
+
+  {
+    question: "Which of the following statements about profit maximization is true?",
+    options: [
+      "It is something that all firms actually do.",
+      "It is something which economists believe that all firms actually do.",
+      "It is what economists believe is the most common aim of firms.",
+      "It means that no firms ever make losses."
+    ],
+    answer: 2,
+    englishExplanation: "Profit maximization is the most common objective assumed in economic theory. However, this does not mean that every firm always maximizes profit or that firms never make losses.",
+    amharicExplanation: "ትርፍን ከፍ ማድረግ (Profit Maximization) በኢኮኖሚክስ ንድፈ ሀሳብ ውስጥ የድርጅቶች በጣም የተለመደ ዓላማ ተብሎ ይታሰባል። ይህ ግን ሁሉም ድርጅቶች ሁልጊዜ ትርፍን ከፍ ያደርጋሉ ወይም ምንም ጊዜ ኪሳራ አያጋጥማቸውም ማለት አይደለም።"
+  },
+
+  {
+    question: "Calculate the average fixed cost (AFC) for a level of production Q = 20, knowing that the total cost function is: TC = 200 + 3Q + 2Q^2.",
+    options: [
+      "1060",
+      "200",
+      "20",
+      "10"
+    ],
+    answer: 3,
+    englishExplanation: "The total fixed cost is the constant term in the total cost function, which is 200. Average fixed cost is calculated as TFC divided by output. Therefore, AFC = 200 / 20 = 10.",
+    amharicExplanation: "በጠቅላላ ወጪ ቀመር TC = 200 + 3Q + 2Q² ውስጥ ቋሚው ቁጥር 200 ስለሆነ አጠቃላይ ቋሚ ወጪ (TFC) = 200 ነው። አማካይ ቋሚ ወጪ AFC = TFC / Q ስለሆነ፣ AFC = 200 / 20 = 10 ይሆናል።"
+  },
+
+  {
+    question: "When an economist uses the term 'cost' referring to a firm, the economist refers to the",
+    options: [
+      "explicit cost of producing a good or service.",
+      "price of the good to the consumer.",
+      "cost that can be actually verified and measured.",
+      "opportunity cost of producing a good or service, which includes both implicit and explicit cost.",
+      "implicit cost of producing a good or service."
+    ],
+    answer: 3,
+    englishExplanation: "Economists define economic cost as opportunity cost. It includes both explicit costs, which involve direct monetary payments, and implicit costs, which represent the value of resources owned and used by the firm.",
+    amharicExplanation: "ኢኮኖሚስቶች የድርጅት 'ወጪ' ሲሉ የዕድል ወጪን (Opportunity Cost) ያመለክታሉ። የዕድል ወጪ ሁለቱንም ግልጽ ወጪ (Explicit Cost) እና ስውር ወጪ (Implicit Cost) ያካትታል።"
+  },
+
+  {
+    question: "A cost paid in money is",
+    options: [
+      "not an opportunity cost.",
+      "an explicit cost and an opportunity cost.",
+      "an implicit cost and an opportunity cost.",
+      "an explicit cost but not an opportunity cost.",
+      "not an accounting cost."
+    ],
+    answer: 1,
+    englishExplanation: "A cost paid directly in money is an explicit cost. It is also an opportunity cost because the money used for the payment could have been used for another purpose.",
+    amharicExplanation: "በቀጥታ በገንዘብ የሚከፈል ወጪ ግልጽ ወጪ (Explicit Cost) ይባላል። በተጨማሪም ያንን ገንዘብ ለሌላ አማራጭ ነገር መጠቀም ስለማይቻል የዕድል ወጪ (Opportunity Cost) ነው።"
+  },
+
+  {
+    question: "Which of the following is an explicit cost of production?",
+    options: [
+      "Wages paid to workers",
+      "The electric bill",
+      "Purchases of raw materials",
+      "Only answers A and B are explicit costs because the purchases of raw material is only an opportunity cost."
+    ],
+    answer: 2,
+    englishExplanation: "Wages, electricity bills, and purchases of raw materials are all explicit costs because the firm makes direct monetary payments for them. Therefore, the statement that only A and B are explicit costs is incorrect.",
+    amharicExplanation: "ለሰራተኞች የሚከፈል ደመወዝ፣ የኤሌክትሪክ ክፍያ እና የጥሬ ዕቃ ግዢ ሁሉም ግልጽ ወጪዎች (Explicit Costs) ናቸው። ምክንያቱም ድርጅቱ ለእነዚህ ነገሮች በቀጥታ ገንዘብ ይከፍላል። ስለዚህ 'A እና B ብቻ' የሚለው አማራጭ ስህተት ነው።"
+  }],
         5: []
 
     },
