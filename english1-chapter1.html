@@ -10,11 +10,6 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <script
-        type="module"
-        src="access-guard.js"
-    ></script>
-
     <title>English Skill I - Chapter 1</title>
 
     <link
@@ -26,18 +21,86 @@
 
 <body>
 
+
+<!-- =====================================
+     PROFESSIONAL TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+
+        <span class="backIcon">
+            ←
+        </span>
+
+        <span class="pageBackText">
+            Back
+        </span>
+
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">
+            📘
+        </span>
+
+        <div>
+
+            <h1>
+                English Skill I
+            </h1>
+
+            <p>
+                Chapter 1
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+
+        <span>
+            🏠
+        </span>
+
+        <span class="pageHomeText">
+            Home
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     EXISTING CHAPTER CONTENT
+===================================== -->
+
 <div class="chapter">
 
-    <h2>📗 English Skill I</h2>
+    <h1>
+        📘 English Skill I
+    </h1>
 
-    <h3>Chapter 1</h3>
-
-
-    <!-- =========================
-         CHAPTER CONTENT
-    ========================== -->
-
-    <p>
+    <h2>
+        Chapter 1
+    </h2>
 <p>📚 Communicative English Skill I</p>
 <p>📚 Chapter One - Grammar Focus - Modal Verbs For Giving advice.</p>
 <p>🎯 Giving Advice</p>
@@ -245,58 +308,53 @@
 <p>መልሱ played ይሆናል ምክንያቱም yesterday የሚለው specified time ስለተገለፀ::</p>
 <p>🙌 የዛሬውን ክላስ በዚህ ጨረስን ፤ ከታች የተቀመጠውን ቪዮ መመልከት ትችላላችሁ::</p>
     </p>
-
-
-    <!-- =========================
-         CHAPTER NAVIGATION
-    ========================== -->
-
-    <div
-        class="chapterNav"
-        style="
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            gap:15px;
-            margin-top:30px;
-        "
-    >
-
-        <!-- PREVIOUS -->
-
-        <span
-            style="
-                padding:12px 20px;
-                background:#e5e7eb;
-                color:#9ca3af;
-                border-radius:8px;
-                font-weight:bold;
-                cursor:not-allowed;
-            "
-        >
-            ⬅ Previous
-        </span>
-
-
-        <!-- NEXT -->
-
-        <a
-            href="english1-chapter2.html"
-            style="
-                padding:12px 20px;
-                background:#2563eb;
-                color:white;
-                text-decoration:none;
-                border-radius:8px;
-                font-weight:bold;
-            "
-        >
-            Next Chapter ➡
-        </a>
-
-    </div>
-
 </div>
+
+
+
+<!-- =====================================
+     NAVIGATION JAVASCRIPT
+===================================== -->
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "english1.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 
 </body>
 
