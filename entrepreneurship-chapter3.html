@@ -1,22 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Entrepreneurship - Chapter 3</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">💼</span>
+
+        <div>
+
+            <h1>Entrepreneurship</h1>
+
+            <p>Chapter 3</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>💼 Entrepreneurship</h1>
+    <h1>💼 Entrepreneurship</h1>
 
-<h2>Chapter 3</h2>
-
-<p>
-    <h2>💼 Entrepreneurship</h2>
-<h2>Chapter 3</h2>
-<h3>ENTREPRENEURSHIP</h3>
+    <h2>Chapter 3</h2>
 <h3>CHAPTER 3 | BUSINESS FORMATION</h3>
 <p>🙌 በዚህ ምዕራፍ በዋናነት የምንማረው ስለ "BUSINESS FORMATION" ነው። ( በሀገራችን ስለሚገኙት 3 ዋና ዋና የቢዝነስ ፈጠራዎች እንማራለን ፤ ሰዎች ቢዝነስ እንዴት ለስንት ሆነው እንደሚያመሠርቱ እንደሚያደርጉ እና ሌሎች ተያያዥ የሆኑ ሃሳቦችን እንማራለን። 😋</p>
 <h3>📄 The Concept of Small Business Development</h3>
@@ -287,22 +338,49 @@
 <p>🙌 በ ድርጅታችሁ ውስጥ ሰዎችን ስትቀጥሩ እንዴት መቅጠር እንዳለባችሁ እና ሰራተኞች ለመቅጠር ምን ምን ማሟላት እንዳለባቸው ማወቅ ተገቢ ነው።::</p>
 <p>👉 ለምሳሌ ሆቴል ካላችሁ በሆቴሉ ውስጥ አስተናጋጅ ለመቅጠር ቋሚ የሆነ መስፈርትን የሚያሟላ ሰውን መቅጠር መስፈርቱ ለምሳሌ ( ከሁኑ በፊት በአስተናጋጅነት 1 አመት የሰራች፤ ቆንጆ የሆነች 😆፤ እድሜ ከ 25 አመት የማትበልጥ 👨‍🍳፤ ፆታ ሴት፤ ልክ እንደዚህ በ ድርጅታችሁ ውስጥ ለሚገኙ ክፍት ቦታዎች "Selection Criteria" ማውጣት አለባችሁ።::</p>
 <p>🙌 እንደተረዳችሁ ተስፋ አደርጋለሁ።:: በቀጣይ ምዕራፍ አራትን እንጀምራለን።::</p>
-</p>
-
-<div class="chapterNav">
-
-<a href="entrepreneurship-chapter2.html">
-⬅ Previous
-</a>
-
-<a href="entrepreneurship-chapter4.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "entrepreneurship.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
-</html>
 
+</html>
