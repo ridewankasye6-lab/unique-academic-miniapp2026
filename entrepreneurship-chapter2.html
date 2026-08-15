@@ -1,18 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Entrepreneurship - Chapter 2</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">💼</span>
+
+        <div>
+
+            <h1>Entrepreneurship</h1>
+
+            <p>Chapter 2</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>💼 Entrepreneurship</h1>
+    <h1>💼 Entrepreneurship</h1>
 
-<h2>Chapter 2</h2>
-<p>
+    <h2>Chapter 2</h2>
 <p><b>📄 BUSINESS PLANNING</b></p>
 <p>🙌 በዚህ ምዕራፍ ስለ "ቢዝነስ ፕላኒንግ" እንማራለን፤ በዋናነት ሀሳቡ አሁን እናንተ ስራ ፈጣሪ ሆናችሁ አሪፍ የ ስራ ወይም የ ቢዝነስ ሀሳብ ሊኖራችሁ ይችላል ፤ እና ያንን የ ስራ ሀሳብ እንዴት ወደ ቢዝነስ በመቀየር የገቢ ምንጭ ማግኘት እንደምትችሉ ነው የምንማረው ፤ ስለዚህ ሀሳባችሁን ወደ ቢዝነስ ቀይራችሁ 💵 ገንዘብ ለማግኘት "BUSINESS PLANNING" መስራት እና ማዘጋጀት ያስፈልጋችኋል ማለት ነው።::</p>
 
@@ -276,26 +331,49 @@
 <p>📄 <b>Appendix:</b> The appendix can provide information about the Curriculum Vitae of the owners.</p>
 <p>🙌 አፔንዲክስን ብዙ መፅሃፎች ጀርባ ላይ አይታችሁ የምታውቁ ይሆናል ፤ እዚህ ጋር ስለራሳችን የሚገልፁ ചില ነገሮችን ማስቀመጥ ማለት ነው ፤ የትውልድ ቦታ ፤ የስራ ልምድ ፤ በህይወታችን ያሳካናቸውን ነገሮች ምስምንን አጠር አድርገን መዘርዘር ነው ፤ ልክ እንደ CV ማለት ነው።::</p>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="entrepreneurship.html">⬅ Back to Entrepreneurship</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="entrepreneurship-chapter1.html">
-⬅ Previous
-</a>
-
-<a href="entrepreneurship-chapter3.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
 
-    <script type="module" src="access-guard.js"></script>
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "entrepreneurship.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
