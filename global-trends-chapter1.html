@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Global Trends - Chapter 1</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Global Trends - Chapter 1</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+
+<!-- =====================================
+     PROFESSIONAL TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">🌍</span>
+
+        <div>
+
+            <h1>Global Trends</h1>
+
+            <p>Chapter 1</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     EXISTING CHAPTER CONTENT
+===================================== -->
+
 <div class="chapter">
 
-<h1>🌍 Global Trends</h1>
+    <h1>🌍 Global Trends</h1>
 
-<h2>Chapter 1</h2>
-
-<p>
-    
-<h2>#Global Affairs /Trends</h2>
+    <h2>Chapter 1</h2>
 
 <p><b>Chapter One - Understanding International relations</b>. ሰላም ውዶቼ እንዴት ናችሁ ❓ይህ የስኬቶ አጋር <b>unique academic</b> ነው። ሳብጀክቱ ደሞ <b>Global Trends</b> ነው።</p>
 
@@ -195,7 +251,7 @@
 
 <p>ይሄም የሚያስኬድ ይመስላል አ? እናንተ የቱን ነው የምትቀበሉት፥ እስኪ በደንብ አስቡበት። እነዚህ '<b>theory</b>' ድሮ የቀሩ ሳይሆን አሁንም ያሉ፣ የተለያዩ የዘርፉ ባለሞያዎች የሚከራከሩበት ነው። በቃ በቀጣይ "<b>The Nature and Evolution of International Relations</b>" እንማራለን።</p>
 
-<p>መልካም ጊዜ unique academic</p>
+<p>መልካም ጊዜ unique academic Family </p>
 
 <h2>#Global Trends.</h2>
 
@@ -415,7 +471,7 @@
 
 <p>ለአሁን ከዚህ ላይ ይበቃናል። ነገ ይቀጥላል።</p>
 
-<p>© A+ Tutorial Class.</p>
+<p>Unique Academic .</p>
 
 <h2>Structure of the International System</h2>
 
@@ -1151,25 +1207,50 @@
 </div>
 <p>እንደ Constructivism ገለፃ ፤ ሌሎች በርካታ ግለሰቦች (እና በግንኙነቱ ሀገራቱን የሚወክሉት ግለሰቦች) ሀሳቡን ከተቀበሉ ዓለም አቀፍ ሥርዓት አልበኝነት በሌላ ሥርዓት ሊተካ ይችላል። ዓለም አቀፍ ግንኙነት እንግዲህ ያለፈው ዘመን ተቀባይነት ያላቸው ደንቦችና እየወጡ ያሉትን የወደፊቱን መመዘኛዎች መከማቸትን የሚዘግብ ማለቂያ የሌለው የለውጥ ጉዞ ሒደት ነው። Constructivism ምም ይህንን ሂደት ለማጥናት ይፈልጋሉ። ስለ Constructivism ይህን ካልን ይበቃናል። Critical Theories ን እናንተ አንብቡት። በቀጣይ Chapter 2 እንማራለን።</p>
   
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="global-trends.html">⬅ Back to Global Trends</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="global-trends.html">
-⬅ Back
-</a>
-
-<a href="global-trends-chapter2.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "global-trends.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
