@@ -1,22 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Entrepreneurship - Chapter 5</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">💼</span>
+
+        <div>
+
+            <h1>Entrepreneurship</h1>
+
+            <p>Chapter 5</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>💼 Entrepreneurship</h1>
+    <h1>💼 Entrepreneurship</h1>
 
-<h2>Chapter 5</h2>
-
-<p>
-<h2>💼 Entrepreneurship</h2>
-
-<p>
+    <h2>Chapter 5</h2>
 📚 <b>Unique Academic | MARKETING</b>
 </p>
 <p>
@@ -686,25 +737,49 @@
 <p>
 🙌🙌 <b>በዚህ ምዕራፍ ብዙ ነገር አይተናል፤ በመፅሀፉ ለንባብ ምቹ ባልሆነ መልኩ የተቀመጠው ግልፅ በሆነ መንገድ ለማየት ሞክረናል። ቀጣይ እንቀጥላለን🤗 ::</b>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="entrepreneurship.html">⬅ Back to Entrepreneurship</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="entrepreneurship-chapter4.html">
-⬅ Previous
-</a>
-
-<a href="entrepreneurship-chapter6.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "entrepreneurship.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
