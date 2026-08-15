@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Entrepreneurship - Chapter 1</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<!-- =====================================
+     PROFESSIONAL TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">💼</span>
+
+        <div>
+
+            <h1>Entrepreneurship</h1>
+
+            <p>Chapter 1</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     EXISTING CHAPTER CONTENT
+===================================== -->
+
 <div class="chapter">
 
-<h1>💼 Entrepreneurship</h1>
+    <h1>💼 Entrepreneurship</h1>
 
-<h2>Chapter 1</h2>
-
-<p>
-    <h2>ENTREPRENEURSHIP</h2>
+    <h2>Chapter 1</h2>
 <h2>CHAPTER ONE - : THE NATURE OF ENTREPRENEURSHIP</h2>
 <p>📄 Its origin from a French word, entreprendre, where an entrepreneur was an individual commissioned to undertake a particular commercial project.</p>
 <p>🎯 " Entrepreneurship ማለት በአማርኛ "ሥራ ፈጣሪ" የምንለው ነው። ቃሉም የመጣው ከፈረንሳይኛ ቃል "entreprendre" ሲሆን ትርጉሙም "የንግድ ሥራ የሚሠራ ሰው👨‍🍳" ማለት ነው። አንድ የተወሰነ የንግድ ሥራ ለመጀመር እና ለማስተዳደር እንደ የተቀጠረ ሰው አሰቡት። ከዚህ ሃሳብ እንደ "ስራ ፈጣሪ" እና "ስራ ፈጣሪነት" ያሉ ሌሎች ቃላትን እናገኛለን。</p>
@@ -384,25 +446,52 @@
 <p>ህህ <b>ምዕራፍ አንድን በዚህ መልኩ ጨርሰናል። ያልገባችሁን ጥያቄ መጠየቅ ትችላላችሁ። በቀጣይ ምዕራፍ ሁለትን ደግሞ እንያለን።</b></p>
 <p><b>መልካም ጊዜ😊</b></p>
 <p>@ Unique academic</p>
-</p>
 
-<p style="text-align:center;">
-<a class="button" href="entrepreneurship.html">⬅ Back to Entrepreneurship</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="entrepreneurship.html">
-⬅ Back
-</a>
-
-<a href="entrepreneurship-chapter2.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "entrepreneurship.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
