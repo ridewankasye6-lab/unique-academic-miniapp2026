@@ -1,19 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Emerging Technology - Chapter 3</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Emerging Technology - Chapter 3</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
 
 <body>
 
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">💻</span>
+
+        <div>
+
+            <h1>Emerging Technology</h1>
+
+            <p>Chapter 3</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>💻 Emerging Technology</h1>
+    <h1>💻 Emerging Technology</h1>
 
-<h2>Chapter 3</h2>
-
-<p>
+    <h2>Chapter 3</h2>
 <h2>Chapter Three Artificial Intelligence [AI]</h2>
 <p>በዚህ ምዕራፍ ስር የምናየው ዝርዝር ነገሮች፦ What is AI Advantages and Disadvantages of AI History [Eras] of AI Levels and Types of AI Influencers of AI Application of AI</p>
 <p>በዛሬው ዕለት የምናየው የመጀመሪያዎቹ ሶስቱን ነው። ዝግጁ What is Artificial Intelligence (AI)?</p>
@@ -206,26 +260,49 @@
 <p>እንግዲህ አርቲፊሻል ኢንተለጀንስን በተለያዩ ኢንዱስትሪ ውስጥ ተግባራዊ ማድረግ ይቻላል (Entertainment, Social Media, Transportation...) በዋናነት ከላይ ያሉት ካየን ለትምህርታችሁ በቂ ነው።</p>
 <p>በተጨማሪ ሌሎች ቀላል ያሉ የAI Applications በተለይ በSocial Media ላይ ያለውን ተፅዕኖ ከሞጁላችሁ የመጨረሻው ክፍል ላይ ለጠቅላላ እውቀት ማንበብህ ትችላላችሁ。</p>
 
-
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="emerging-technology.html">⬅ Back to Emerging Technology</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="emerging-technology-chapter2.html">
-⬅ Previous
-</a>
-
-<a href="emerging-technology-chapter4.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "emerging-technology.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
