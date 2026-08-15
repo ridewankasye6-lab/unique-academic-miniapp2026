@@ -1471,7 +1471,252 @@ const quizData = {
     answer: 2,
     englishExplanation: "Wages, electricity bills, and purchases of raw materials are all explicit costs because the firm makes direct monetary payments for them. Therefore, the statement that only A and B are explicit costs is incorrect.",
     amharicExplanation: "ለሰራተኞች የሚከፈል ደመወዝ፣ የኤሌክትሪክ ክፍያ እና የጥሬ ዕቃ ግዢ ሁሉም ግልጽ ወጪዎች (Explicit Costs) ናቸው። ምክንያቱም ድርጅቱ ለእነዚህ ነገሮች በቀጥታ ገንዘብ ይከፍላል። ስለዚህ 'A እና B ብቻ' የሚለው አማራጭ ስህተት ነው።"
-  } {     question: "______ cost is defined as a cost of production that does not entail a direct money payment.",     options: [       "A fixed",       "An implicit",       "A marginal",       "An explicit",       "A total"     ],     answer: 1,     englishExplanation: "An implicit cost is a cost of using resources that the business already owns, so there is no direct cash payment to another person or business. For example, if the owner uses their own building for the business, the rent they could have earned is an implicit cost.",     amharicExplanation: "የተዘዋዋሪ ወጪ (Implicit Cost) ማለት ንግዱ የራሱ የሆኑ ሀብቶችን ሲጠቀም የሚፈጠር ወጪ ነው። ለዚህ ወጪ በቀጥታ ለሌላ ሰው ገንዘብ አይከፈልም። ለምሳሌ ንግዱ የራሱን ሕንፃ ከተጠቀመ፣ ሕንፃውን በማከራየት ሊያገኝ የነበረው ገቢ የተዘዋዋሪ ወጪ ነው።"   },    {     question: "Which of the following is an example of an implicit cost?",     options: [       "The economic depreciation of capital equipment the business owns",       "The cost of fuel and materials",       "Wages paid to workers",       "Rent on a building",       "The cost of fertilizer for a farmer"     ],     answer: 0,     englishExplanation: "Economic depreciation of equipment owned by the business is an implicit cost because the business does not make a new cash payment when the equipment loses value. The loss in the equipment's value is an opportunity cost of using that owned resource.",     amharicExplanation: "የንግዱ የራሱ የሆነ መሳሪያ ዋጋው በጊዜ ሂደት ሲቀንስ የሚፈጠረው የኢኮኖሚ ዋጋ መቀነስ (Economic Depreciation) የተዘዋዋሪ ወጪ ነው። ምክንያቱም በዚያ ጊዜ ተጨማሪ ገንዘብ በቀጥታ አይከፈልም። ነዳጅ፣ ደሞዝ፣ ኪራይ እና ማዳበሪያ ግን በቀጥታ ገንዘብ ስለሚከፈልባቸው ግልጽ ወጪዎች (Explicit Costs) ናቸው።"   },    {     question: "The marginal product of labor equals the change in ______ from a one-unit increase in the quantity of labor.",     options: [       "The slope of the average product curve",       "Average product",       "Total product",       "Total cost",       "The wage rate"     ],     answer: 2,     englishExplanation: "The marginal product of labor (MPL) is the additional output produced when one more unit of labor is added. Therefore, MPL measures the change in total product caused by an additional unit of labor.",     amharicExplanation: "የጉልበት ህዳግ ምርት (Marginal Product of Labor) ማለት አንድ ተጨማሪ የጉልበት ክፍል ሲጨመር የሚገኘው ተጨማሪ ምርት ነው። ስለዚህ MPL በአንድ ተጨማሪ የጉልበት ክፍል ምክንያት በጠቅላላ ምርት (Total Product) የሚፈጠረውን ለውጥ ይለካል።"   },    {     question: "When the slope of the total product curve is steep, the marginal product is",     options: [       "Not defined",       "Zero",       "Low",       "Negative",       "High"     ],     answer: 4,     englishExplanation: "The slope of the total product curve represents marginal product. A steep slope means total product is increasing rapidly when more labor is added. Therefore, the marginal product is high.",     amharicExplanation: "የጠቅላላ ምርት (Total Product) ከርቭ ተዳፋት (Slope) የህዳግ ምርትን (Marginal Product) ያሳያል። ተዳፋቱ በጣም ጠንካራ ከሆነ፣ ተጨማሪ ጉልበት ሲጨመር ምርቱ በፍጥነት እየጨመረ ነው። ስለዚህ የህዳግ ምርቱ ከፍተኛ (High) ነው።"   },    {     question: "The total variable cost curve ______ because ______ as output increases.",     options: [       "Slopes upward; variable cost increases",       "Slopes upward; marginal cost increases",       "Is horizontal; fixed cost does not change",       "Slopes downward; variable cost increases",       "Slopes downward; marginal cost increases"     ],     answer: 0,     englishExplanation: "Total variable cost increases as a firm produces more output because it needs more variable inputs, such as labor and raw materials. Therefore, the total variable cost curve slopes upward.",     amharicExplanation: "ጠቅላላ ተለዋዋጭ ወጪ (Total Variable Cost) ምርት ሲጨምር ይጨምራል። ምክንያቱም ተጨማሪ ምርት ለማምረት ተጨማሪ ጉልበት፣ ጥሬ እቃ እና ሌሎች ተለዋዋጭ ግብዓቶች ያስፈልጋሉ። ስለዚህ የTVC ከርቭ ወደ ላይ ያዘነብላል።"   },    {     question: "When marginal cost is positive, total cost is ______ as output increases.",     options: [       "Constant",       "Increasing",       "Undefined",       "Negative",       "Decreasing"     ],     answer: 1,     englishExplanation: "Marginal cost is the additional cost of producing one more unit. If marginal cost is positive, each additional unit adds to total cost. Therefore, total cost increases as output increases.",     amharicExplanation: "ህዳግ ወጪ (Marginal Cost) ማለት አንድ ተጨማሪ ምርት ለማምረት የሚጨመረው ወጪ ነው። ህዳግ ወጪው ከዜሮ በላይ ከሆነ፣ እያንዳንዱ ተጨማሪ ምርት ወደ ጠቅላላ ወጪ ተጨማሪ ወጪ ይጨምራል። ስለዚህ ጠቅላላ ወጪ (Total Cost) ይጨምራል።"   },    {     question: "If total fixed cost increases, which of the following will NOT change?",     options: [       "Total cost",       "All costs increase when total fixed cost increases",       "Marginal cost",       "Average total cost",       "Average fixed cost"     ],     answer: 2,     englishExplanation: "Marginal cost measures the additional cost of producing one more unit and depends on variable costs. A change in fixed cost does not affect the cost of producing the next unit, so marginal cost does not change.",     amharicExplanation: "ህዳግ ወጪ (Marginal Cost) አንድ ተጨማሪ ምርት ለማምረት የሚጨመረውን ወጪ ይለካል። ቋሚ ወጪ (Fixed Cost) ቢጨምርም ቀጣዩን አንድ ምርት ለማምረት የሚወጣውን ወጪ አይለውጥም። ስለዚህ ቋሚ ወጪ ሲጨምር Marginal Cost አይለወጥም።"   },    {     question: "If the average total cost (ATC) is 50, the quantity produced is 10, and the total fixed cost (TFC) is 100, what is the total variable cost (TVC) for an output of 10?",     options: [       "500",       "100",       "400",       "1000"     ],     answer: 2,     englishExplanation: "First, calculate total cost: TC = ATC × Q = 50 × 10 = 500. Since TC = TFC + TVC, TVC = 500 - 100 = 400. Therefore, the total variable cost is 400.",     amharicExplanation: "መጀመሪያ ጠቅላላ ወጪን እንሰላለን፦ TC = ATC × Q = 50 × 10 = 500። ከዚያ TC = TFC + TVC ስለሆነ፣ TVC = 500 - 100 = 400 ይሆናል። ስለዚህ ጠቅላላ ተለዋዋጭ ወጪው 400 ነው።"   },    {     question: "Given an output of 20, if the average total cost (ATC) is 80 and the total fixed cost (TFC) is 600, what is the average variable cost (AVC)?",     options: [       "50",       "80",       "1600",       "1000",       "None of the above is correct"     ],     answer: 0,     englishExplanation: "First calculate average fixed cost: AFC = TFC ÷ Q = 600 ÷ 20 = 30. Since ATC = AFC + AVC, AVC = 80 - 30 = 50. Therefore, the average variable cost is 50.",     amharicExplanation: "መጀመሪያ አማካይ ቋሚ ወጪን እንሰላለን፦ AFC = TFC ÷ Q = 600 ÷ 20 = 30። እንደምናውቀው ATC = AFC + AVC ነው። ስለዚህ AVC = 80 - 30 = 50 ይሆናል። ስለዚህ አማካይ ተለዋዋጭ ወጪው 50 ነው።"   },    {     question: "Which of the following is not true about a set of average and marginal cost curves?",     options: [       "The marginal cost curve intersects the average variable cost curve at its lowest point.",       "The marginal cost curve intersects the average total cost curve at its minimum point.",       "The average variable cost curve reaches a minimum at a lower output than does the average total cost curve.",       "The marginal cost curve never declines in a typical graph of cost curves."     ],     answer: 3,     englishExplanation: "The statement that the marginal cost curve never declines is not true. In a typical cost graph, marginal cost may initially decrease and later increase. It usually rises after diminishing returns begin to occur.",     amharicExplanation: "“Marginal Cost ከርቭ ፈጽሞ አይቀንስም” የሚለው አባባል ልክ አይደለም። በተለመደው የወጪ ከርቭ ላይ Marginal Cost መጀመሪያ ሊቀንስ ይችላል፣ ከዚያም የቀነሰ ተመላሽ (Diminishing Returns) ሲጀምር እንደገና ይጨምራል።"   },    {     question: "In the average cost curve, there is a point where production reaches a minimum. What is that minimum called?",     options: [       "Break-even level of output",       "Profit-maximizing level of output",       "Optimum level of output",       "Economies of scale point"     ],     answer: 2,     englishExplanation: "The minimum point of the average total cost curve is called the optimum level of output or the productively efficient level of output. At this point, the firm produces each unit at the lowest possible average cost.",     amharicExplanation: "የአማካይ ጠቅላላ ወጪ (ATC) ከርቭ ዝቅተኛው ነጥብ “Optimum Level of Output” ይባላል። በዚህ የምርት ደረጃ ኩባንያው እያንዳንዱን ምርት በተቻለ መጠን ዝቅተኛ አማካይ ወጪ ያመርታል።"   },    {     question: "In microeconomic theory, what is the short run?",     options: [       "A period where all factors of production can be changed",       "A period where no factors of production are fixed",       "A period where at least one factor of production is fixed",       "A period where only labor can be adjusted"     ],     answer: 2,     englishExplanation: "The short run is a period in which at least one factor of production is fixed. For example, a firm's factory size or machinery may be fixed, while labor and raw materials can be changed.",     amharicExplanation: "አጭር ጊዜ (Short Run) ማለት ቢያንስ አንድ የምርት ግብዓት ቋሚ ሆኖ የሚቆይበት ጊዜ ነው። ለምሳሌ የፋብሪካ መጠን ወይም ማሽነሪ ቋሚ ሊሆን ይችላል፣ ጉልበት እና ጥሬ እቃ ግን ሊለወጡ ይችላሉ።"   },    {     question: "Joe quits his computer programming job, where he was earning a salary of $50,000 per year, to start his own computer software business in a building that he owns and was previously renting out for $24,000 per year. In his first year of business, he has the following expenses: salary paid to himself, $40,000; rent, $0; other expenses, $25,000. What is the accounting cost associated with Joe's computer software business?",     options: [       "$50,000",       "$65,000",       "$90,000",       "$115,000",       "None of the above is correct"     ],     answer: 1,     englishExplanation: "Accounting cost includes only explicit costs, which are actual money payments. Joe pays himself $40,000 and has $25,000 in other expenses. Therefore, accounting cost = $40,000 + $25,000 = $65,000. The $50,000 lost salary and $24,000 lost rent are implicit opportunity costs.",     amharicExplanation: "የሂሳብ ወጪ (Accounting Cost) በቀጥታ የሚከፈሉ የገንዘብ ወጪዎችን ብቻ ያካትታል። Joe ለራሱ $40,000 ደሞዝ እና $25,000 ሌሎች ወጪዎች ያወጣል። ስለዚህ Accounting Cost = $40,000 + $25,000 = $65,000 ነው። ያጣው $50,000 ደሞዝ እና $24,000 የኪራይ ገቢ ግን የእድል ወጪ (Opportunity Cost) ናቸው።"   },    {     question: "A firm has a fixed production cost of $5000 and a constant marginal cost of production of $500 per unit produced. What is the firm's total cost function and average cost function?",     options: [       "Total Cost (TC) = 5000 + 500q; Average Cost (AC) = 5000 + 500q",       "Total Cost (TC) = 5000 + 500q; Average Cost (AC) = 500q + 5000",       "Total Cost (TC) = 500q + 5000; Average Cost (AC) = 5000/q + 500",       "Total Cost (TC) = 500q + 5000; Average Cost (AC) = 500q/q + 5000",       "None of the above is correct"     ],     answer: 2,     englishExplanation: "Total cost equals fixed cost plus variable cost. Since fixed cost is $5,000 and marginal cost is $500 per unit, TC = 5000 + 500q. Average cost is total cost divided by quantity: AC = (5000 + 500q) ÷ q = 5000/q + 500.",     amharicExplanation: "ጠቅላላ ወጪ (TC) ማለት ቋሚ ወጪ እና ተለዋዋጭ ወጪ ድምር ነው። ቋሚ ወጪ $5,000 እና ህዳግ ወጪ $500 በአንድ ምርት ስለሆነ፣ TC = 5000 + 500q ነው። አማካይ ወጪ AC = TC ÷ q ስለሆነ፣ AC = (5000 + 500q) ÷ q = 5000/q + 500 ይሆናል።"   },    {     question: "Based on the above question, a firm has a fixed production cost of $5000 and a constant marginal cost of production of $500 per unit produced. If the firm wanted to minimize the average total cost, would it choose to be very large or very small?",     options: [       "Very large, producing a large quantity of output",       "Very small, producing a minimal quantity of output",       "Size would not matter in minimizing the average total cost",       "It should aim for a moderate production level to balance costs",       "None of the above is correct"     ],     answer: 0,     englishExplanation: "Average cost is AC = 5000/q + 500. As output q becomes larger, 5000/q becomes smaller and approaches zero. Therefore, average cost gets closer to $500. So, producing a very large quantity minimizes the average total cost.",     amharicExplanation: "አማካይ ወጪ AC = 5000/q + 500 ነው። የምርት መጠን q በጣም ሲጨምር 5000/q የሚለው ክፍል ወደ ዜሮ ይቀርባል። ስለዚህ አማካይ ወጪው ወደ $500 ይቀርባል። ስለዚህ አማካይ ጠቅላላ ወጪን ለመቀነስ ትልቅ መጠን ማምረት ይመረጣል።"   },    {     question: "What is the company's fixed cost?",     options: [       "$200",       "$55,000",       "$200,000",       "$2,000",       "None of the above is correct"     ],     answer: 2,     englishExplanation: "From the cost function TC = 200 + 55q, the constant term 200 represents fixed cost. If the figures are measured in thousands, 200 means $200,000. Therefore, the company's fixed cost is $200,000.",     amharicExplanation: "ከወጪ ቀመሩ TC = 200 + 55q ውስጥ q ጋር ያልተያያዘው ቋሚ ቁጥር 200 የቋሚ ወጪን (Fixed Cost) ያሳያል። ቁጥሮቹ በሺህ ከተሰጡ 200 ማለት $200,000 ማለት ነው። ስለዚህ የኩባንያው ቋሚ ወጪ $200,000 ነው።"   },    {     question: "If the company produced 100,000 units of goods, what would be its average variable cost?",     options: [       "$55",       "$550",       "$5,500",       "$55,000",       "None of the above is correct"     ],     answer: 3,     englishExplanation: "From TC = 200 + 55q, the coefficient of q, which is 55, represents the variable cost per unit. Therefore, the average variable cost is 55 thousand dollars, or $55,000, according to the units used in the question.",     amharicExplanation: "ከ TC = 200 + 55q ቀመር ውስጥ q አጠገብ ያለው 55 በአንድ የምርት ክፍል የሚወጣውን ተለዋዋጭ ወጪ ያሳያል። ቁጥሮቹ በሺህ ከተሰጡ፣ 55 ሺህ = $55,000 ነው። ስለዚህ በጥያቄው መለኪያ መሰረት AVC = $55,000 ነው።"   },    {     question: "What is the company's marginal cost of production?",     options: [       "$55",       "$200",       "$100",       "$5,000",       "None of the above is correct"     ],     answer: 0,     englishExplanation: "In the linear cost function TC = 200 + 55q, the marginal cost is the coefficient of q, which is 55. This means that producing one additional unit increases total cost by 55 units of currency.",     amharicExplanation: "በቀጥተኛ የወጪ ቀመር TC = 200 + 55q ውስጥ ህዳግ ወጪ (Marginal Cost) ከ q ጋር ያለው ቅንጅት (Coefficient) ነው። እዚህ ቁጥሩ 55 ነው። ስለዚህ አንድ ተጨማሪ ምርት ሲመረት ጠቅላላ ወጪ በ55 ይጨምራል።"   },    {     question: "What is the company's average fixed cost if it produces 100,000 units?",     options: [       "$200",       "$2,000",       "$20",       "$200,000",       "None of the above is correct"     ],     answer: 1,     englishExplanation: "Average fixed cost is calculated as AFC = TFC ÷ Q. Using the units in the given cost function, fixed cost is 200 thousand dollars and output is measured in thousands of units. Therefore, AFC = 200,000 ÷ 100,000 = $2 per unit. The provided answer choice of $2,000 appears to depend on treating the quantity as 100 thousand units in the original question's scale.",     amharicExplanation: "አማካይ ቋሚ ወጪ (AFC) = TFC ÷ Q ነው። ከቀዳሚው ጥያቄ TFC = $200,000 እና Q = 100,000 ክፍሎች ከሆነ፣ በቀጥታ ሲሰላ AFC = $200,000 ÷ 100,000 = $2 በአንድ ክፍል ይሆናል። ስለዚህ በተሰጡት አማራጮች $2,000 የተመረጠው የጥያቄው የመለኪያ አቀራረብ በሺህ ክፍሎች ላይ የተመሰረተ ሊሆን ነው።"   },    {     question: "What is the difference between accounting profit and economic profit?",     options: [       "Accounting profit includes both explicit and implicit costs, while economic profit includes only explicit costs.",       "Accounting profit is the difference between total revenue and explicit costs, while economic profit includes both explicit and implicit costs.",       "Accounting profit is calculated before taxes, while economic profit is calculated after taxes.",       "Accounting profit is the same as economic profit; there is no difference.",       "None of the above is correct"     ],     answer: 1,     englishExplanation: "Accounting profit equals total revenue minus explicit costs, which are actual money payments. Economic profit subtracts both explicit costs and implicit opportunity costs. Therefore, economic profit gives a broader measure of the firm's true economic gain.",     amharicExplanation: "የሂሳብ ትርፍ (Accounting Profit) = ጠቅላላ ገቢ - ግልጽ ወጪዎች ነው። ግልጽ ወጪዎች በቀጥታ የሚከፈሉ ገንዘቦች ናቸው። የኢኮኖሚ ትርፍ (Economic Profit) ግን ከጠቅላላ ገቢ ሁለቱንም ግልጽ ወጪዎች እና የተዘዋዋሪ የእድል ወጪዎችን ይቀንሳል። ስለዚህ Economic Profit የንግዱን እውነተኛ የኢኮኖሚ ትርፍ በሰፊ መልኩ ያሳያል።"   },],
+  } {     question: "______ cost is defined as a cost of production that does not entail a direct money payment.",     options: [       "A fixed",       "An implicit",       "A marginal",       "An explicit",       "A total"     ],     answer: 1,     englishExplanation: "An implicit cost is a cost of using resources that the business already owns, so there is no direct cash payment to another person or business. For example, if the owner uses their own building for the business, the rent they could have earned is an implicit cost.",     amharicExplanation: "የተዘዋዋሪ ወጪ (Implicit Cost) ማለት ንግዱ የራሱ የሆኑ ሀብቶችን ሲጠቀም የሚፈጠር ወጪ ነው። ለዚህ ወጪ በቀጥታ ለሌላ ሰው ገንዘብ አይከፈልም። ለምሳሌ ንግዱ የራሱን ሕንፃ ከተጠቀመ፣ ሕንፃውን በማከራየት ሊያገኝ የነበረው ገቢ የተዘዋዋሪ ወጪ ነው።"   },    {     question: "Which of the following is an example of an implicit cost?",     options: [       "The economic depreciation of capital equipment the business owns",       "The cost of fuel and materials",       "Wages paid to workers",       "Rent on a building",       "The cost of fertilizer for a farmer"     ],     answer: 0,     englishExplanation: "Economic depreciation of equipment owned by the business is an implicit cost because the business does not make a new cash payment when the equipment loses value. The loss in the equipment's value is an opportunity cost of using that owned resource.",     amharicExplanation: "የንግዱ የራሱ የሆነ መሳሪያ ዋጋው በጊዜ ሂደት ሲቀንስ የሚፈጠረው የኢኮኖሚ ዋጋ መቀነስ (Economic Depreciation) የተዘዋዋሪ ወጪ ነው። ምክንያቱም በዚያ ጊዜ ተጨማሪ ገንዘብ በቀጥታ አይከፈልም። ነዳጅ፣ ደሞዝ፣ ኪራይ እና ማዳበሪያ ግን በቀጥታ ገንዘብ ስለሚከፈልባቸው ግልጽ ወጪዎች (Explicit Costs) ናቸው።"   },    {     question: "The marginal product of labor equals the change in ______ from a one-unit increase in the quantity of labor.",     options: [       "The slope of the average product curve",       "Average product",       "Total product",       "Total cost",       "The wage rate"     ],     answer: 2,     englishExplanation: "The marginal product of labor (MPL) is the additional output produced when one more unit of labor is added. Therefore, MPL measures the change in total product caused by an additional unit of labor.",     amharicExplanation: "የጉልበት ህዳግ ምርት (Marginal Product of Labor) ማለት አንድ ተጨማሪ የጉልበት ክፍል ሲጨመር የሚገኘው ተጨማሪ ምርት ነው። ስለዚህ MPL በአንድ ተጨማሪ የጉልበት ክፍል ምክንያት በጠቅላላ ምርት (Total Product) የሚፈጠረውን ለውጥ ይለካል።"   },    {     question: "When the slope of the total product curve is steep, the marginal product is",     options: [       "Not defined",       "Zero",       "Low",       "Negative",       "High"     ],     answer: 4,     englishExplanation: "The slope of the total product curve represents marginal product. A steep slope means total product is increasing rapidly when more labor is added. Therefore, the marginal product is high.",     amharicExplanation: "የጠቅላላ ምርት (Total Product) ከርቭ ተዳፋት (Slope) የህዳግ ምርትን (Marginal Product) ያሳያል። ተዳፋቱ በጣም ጠንካራ ከሆነ፣ ተጨማሪ ጉልበት ሲጨመር ምርቱ በፍጥነት እየጨመረ ነው። ስለዚህ የህዳግ ምርቱ ከፍተኛ (High) ነው።"   },    {     question: "The total variable cost curve ______ because ______ as output increases.",     options: [       "Slopes upward; variable cost increases",       "Slopes upward; marginal cost increases",       "Is horizontal; fixed cost does not change",       "Slopes downward; variable cost increases",       "Slopes downward; marginal cost increases"     ],     answer: 0,     englishExplanation: "Total variable cost increases as a firm produces more output because it needs more variable inputs, such as labor and raw materials. Therefore, the total variable cost curve slopes upward.",     amharicExplanation: "ጠቅላላ ተለዋዋጭ ወጪ (Total Variable Cost) ምርት ሲጨምር ይጨምራል። ምክንያቱም ተጨማሪ ምርት ለማምረት ተጨማሪ ጉልበት፣ ጥሬ እቃ እና ሌሎች ተለዋዋጭ ግብዓቶች ያስፈልጋሉ። ስለዚህ የTVC ከርቭ ወደ ላይ ያዘነብላል።"   },    {     question: "When marginal cost is positive, total cost is ______ as output increases.",     options: [       "Constant",       "Increasing",       "Undefined",       "Negative",       "Decreasing"     ],     answer: 1,     englishExplanation: "Marginal cost is the additional cost of producing one more unit. If marginal cost is positive, each additional unit adds to total cost. Therefore, total cost increases as output increases.",     amharicExplanation: "ህዳግ ወጪ (Marginal Cost) ማለት አንድ ተጨማሪ ምርት ለማምረት የሚጨመረው ወጪ ነው። ህዳግ ወጪው ከዜሮ በላይ ከሆነ፣ እያንዳንዱ ተጨማሪ ምርት ወደ ጠቅላላ ወጪ ተጨማሪ ወጪ ይጨምራል። ስለዚህ ጠቅላላ ወጪ (Total Cost) ይጨምራል።"   },    {     question: "If total fixed cost increases, which of the following will NOT change?",     options: [       "Total cost",       "All costs increase when total fixed cost increases",       "Marginal cost",       "Average total cost",       "Average fixed cost"     ],     answer: 2,     englishExplanation: "Marginal cost measures the additional cost of producing one more unit and depends on variable costs. A change in fixed cost does not affect the cost of producing the next unit, so marginal cost does not change.",     amharicExplanation: "ህዳግ ወጪ (Marginal Cost) አንድ ተጨማሪ ምርት ለማምረት የሚጨመረውን ወጪ ይለካል። ቋሚ ወጪ (Fixed Cost) ቢጨምርም ቀጣዩን አንድ ምርት ለማምረት የሚወጣውን ወጪ አይለውጥም። ስለዚህ ቋሚ ወጪ ሲጨምር Marginal Cost አይለወጥም።"   },    {     question: "If the average total cost (ATC) is 50, the quantity produced is 10, and the total fixed cost (TFC) is 100, what is the total variable cost (TVC) for an output of 10?",     options: [       "500",       "100",       "400",       "1000"     ],     answer: 2,     englishExplanation: "First, calculate total cost: TC = ATC × Q = 50 × 10 = 500. Since TC = TFC + TVC, TVC = 500 - 100 = 400. Therefore, the total variable cost is 400.",     amharicExplanation: "መጀመሪያ ጠቅላላ ወጪን እንሰላለን፦ TC = ATC × Q = 50 × 10 = 500። ከዚያ TC = TFC + TVC ስለሆነ፣ TVC = 500 - 100 = 400 ይሆናል። ስለዚህ ጠቅላላ ተለዋዋጭ ወጪው 400 ነው።"   },    {     question: "Given an output of 20, if the average total cost (ATC) is 80 and the total fixed cost (TFC) is 600, what is the average variable cost (AVC)?",     options: [       "50",       "80",       "1600",       "1000",       "None of the above is correct"     ],     answer: 0,     englishExplanation: "First calculate average fixed cost: AFC = TFC ÷ Q = 600 ÷ 20 = 30. Since ATC = AFC + AVC, AVC = 80 - 30 = 50. Therefore, the average variable cost is 50.",     amharicExplanation: "መጀመሪያ አማካይ ቋሚ ወጪን እንሰላለን፦ AFC = TFC ÷ Q = 600 ÷ 20 = 30። እንደምናውቀው ATC = AFC + AVC ነው። ስለዚህ AVC = 80 - 30 = 50 ይሆናል። ስለዚህ አማካይ ተለዋዋጭ ወጪው 50 ነው።"   },    {     question: "Which of the following is not true about a set of average and marginal cost curves?",     options: [       "The marginal cost curve intersects the average variable cost curve at its lowest point.",       "The marginal cost curve intersects the average total cost curve at its minimum point.",       "The average variable cost curve reaches a minimum at a lower output than does the average total cost curve.",       "The marginal cost curve never declines in a typical graph of cost curves."     ],     answer: 3,     englishExplanation: "The statement that the marginal cost curve never declines is not true. In a typical cost graph, marginal cost may initially decrease and later increase. It usually rises after diminishing returns begin to occur.",     amharicExplanation: "“Marginal Cost ከርቭ ፈጽሞ አይቀንስም” የሚለው አባባል ልክ አይደለም። በተለመደው የወጪ ከርቭ ላይ Marginal Cost መጀመሪያ ሊቀንስ ይችላል፣ ከዚያም የቀነሰ ተመላሽ (Diminishing Returns) ሲጀምር እንደገና ይጨምራል።"   },    {     question: "In the average cost curve, there is a point where production reaches a minimum. What is that minimum called?",     options: [       "Break-even level of output",       "Profit-maximizing level of output",       "Optimum level of output",       "Economies of scale point"     ],     answer: 2,     englishExplanation: "The minimum point of the average total cost curve is called the optimum level of output or the productively efficient level of output. At this point, the firm produces each unit at the lowest possible average cost.",     amharicExplanation: "የአማካይ ጠቅላላ ወጪ (ATC) ከርቭ ዝቅተኛው ነጥብ “Optimum Level of Output” ይባላል። በዚህ የምርት ደረጃ ኩባንያው እያንዳንዱን ምርት በተቻለ መጠን ዝቅተኛ አማካይ ወጪ ያመርታል።"   },    {     question: "In microeconomic theory, what is the short run?",     options: [       "A period where all factors of production can be changed",       "A period where no factors of production are fixed",       "A period where at least one factor of production is fixed",       "A period where only labor can be adjusted"     ],     answer: 2,     englishExplanation: "The short run is a period in which at least one factor of production is fixed. For example, a firm's factory size or machinery may be fixed, while labor and raw materials can be changed.",     amharicExplanation: "አጭር ጊዜ (Short Run) ማለት ቢያንስ አንድ የምርት ግብዓት ቋሚ ሆኖ የሚቆይበት ጊዜ ነው። ለምሳሌ የፋብሪካ መጠን ወይም ማሽነሪ ቋሚ ሊሆን ይችላል፣ ጉልበት እና ጥሬ እቃ ግን ሊለወጡ ይችላሉ።"   },    {     question: "Joe quits his computer programming job, where he was earning a salary of $50,000 per year, to start his own computer software business in a building that he owns and was previously renting out for $24,000 per year. In his first year of business, he has the following expenses: salary paid to himself, $40,000; rent, $0; other expenses, $25,000. What is the accounting cost associated with Joe's computer software business?",     options: [       "$50,000",       "$65,000",       "$90,000",       "$115,000",       "None of the above is correct"     ],     answer: 1,     englishExplanation: "Accounting cost includes only explicit costs, which are actual money payments. Joe pays himself $40,000 and has $25,000 in other expenses. Therefore, accounting cost = $40,000 + $25,000 = $65,000. The $50,000 lost salary and $24,000 lost rent are implicit opportunity costs.",     amharicExplanation: "የሂሳብ ወጪ (Accounting Cost) በቀጥታ የሚከፈሉ የገንዘብ ወጪዎችን ብቻ ያካትታል። Joe ለራሱ $40,000 ደሞዝ እና $25,000 ሌሎች ወጪዎች ያወጣል። ስለዚህ Accounting Cost = $40,000 + $25,000 = $65,000 ነው። ያጣው $50,000 ደሞዝ እና $24,000 የኪራይ ገቢ ግን የእድል ወጪ (Opportunity Cost) ናቸው።"   },    {     question: "A firm has a fixed production cost of $5000 and a constant marginal cost of production of $500 per unit produced. What is the firm's total cost function and average cost function?",     options: [       "Total Cost (TC) = 5000 + 500q; Average Cost (AC) = 5000 + 500q",       "Total Cost (TC) = 5000 + 500q; Average Cost (AC) = 500q + 5000",       "Total Cost (TC) = 500q + 5000; Average Cost (AC) = 5000/q + 500",       "Total Cost (TC) = 500q + 5000; Average Cost (AC) = 500q/q + 5000",       "None of the above is correct"     ],     answer: 2,     englishExplanation: "Total cost equals fixed cost plus variable cost. Since fixed cost is $5,000 and marginal cost is $500 per unit, TC = 5000 + 500q. Average cost is total cost divided by quantity: AC = (5000 + 500q) ÷ q = 5000/q + 500.",     amharicExplanation: "ጠቅላላ ወጪ (TC) ማለት ቋሚ ወጪ እና ተለዋዋጭ ወጪ ድምር ነው። ቋሚ ወጪ $5,000 እና ህዳግ ወጪ $500 በአንድ ምርት ስለሆነ፣ TC = 5000 + 500q ነው። አማካይ ወጪ AC = TC ÷ q ስለሆነ፣ AC = (5000 + 500q) ÷ q = 5000/q + 500 ይሆናል።"   },    {     question: "Based on the above question, a firm has a fixed production cost of $5000 and a constant marginal cost of production of $500 per unit produced. If the firm wanted to minimize the average total cost, would it choose to be very large or very small?",     options: [       "Very large, producing a large quantity of output",       "Very small, producing a minimal quantity of output",       "Size would not matter in minimizing the average total cost",       "It should aim for a moderate production level to balance costs",       "None of the above is correct"     ],     answer: 0,     englishExplanation: "Average cost is AC = 5000/q + 500. As output q becomes larger, 5000/q becomes smaller and approaches zero. Therefore, average cost gets closer to $500. So, producing a very large quantity minimizes the average total cost.",     amharicExplanation: "አማካይ ወጪ AC = 5000/q + 500 ነው። የምርት መጠን q በጣም ሲጨምር 5000/q የሚለው ክፍል ወደ ዜሮ ይቀርባል። ስለዚህ አማካይ ወጪው ወደ $500 ይቀርባል። ስለዚህ አማካይ ጠቅላላ ወጪን ለመቀነስ ትልቅ መጠን ማምረት ይመረጣል።"   },    {     question: "What is the company's fixed cost?",     options: [       "$200",       "$55,000",       "$200,000",       "$2,000",       "None of the above is correct"     ],     answer: 2,     englishExplanation: "From the cost function TC = 200 + 55q, the constant term 200 represents fixed cost. If the figures are measured in thousands, 200 means $200,000. Therefore, the company's fixed cost is $200,000.",     amharicExplanation: "ከወጪ ቀመሩ TC = 200 + 55q ውስጥ q ጋር ያልተያያዘው ቋሚ ቁጥር 200 የቋሚ ወጪን (Fixed Cost) ያሳያል። ቁጥሮቹ በሺህ ከተሰጡ 200 ማለት $200,000 ማለት ነው። ስለዚህ የኩባንያው ቋሚ ወጪ $200,000 ነው።"   },    {     question: "If the company produced 100,000 units of goods, what would be its average variable cost?",     options: [       "$55",       "$550",       "$5,500",       "$55,000",       "None of the above is correct"     ],     answer: 3,     englishExplanation: "From TC = 200 + 55q, the coefficient of q, which is 55, represents the variable cost per unit. Therefore, the average variable cost is 55 thousand dollars, or $55,000, according to the units used in the question.",     amharicExplanation: "ከ TC = 200 + 55q ቀመር ውስጥ q አጠገብ ያለው 55 በአንድ የምርት ክፍል የሚወጣውን ተለዋዋጭ ወጪ ያሳያል። ቁጥሮቹ በሺህ ከተሰጡ፣ 55 ሺህ = $55,000 ነው። ስለዚህ በጥያቄው መለኪያ መሰረት AVC = $55,000 ነው።"   },    {     question: "What is the company's marginal cost of production?",     options: [       "$55",       "$200",       "$100",       "$5,000",       "None of the above is correct"     ],     answer: 0,     englishExplanation: "In the linear cost function TC = 200 + 55q, the marginal cost is the coefficient of q, which is 55. This means that producing one additional unit increases total cost by 55 units of currency.",     amharicExplanation: "በቀጥተኛ የወጪ ቀመር TC = 200 + 55q ውስጥ ህዳግ ወጪ (Marginal Cost) ከ q ጋር ያለው ቅንጅት (Coefficient) ነው። እዚህ ቁጥሩ 55 ነው። ስለዚህ አንድ ተጨማሪ ምርት ሲመረት ጠቅላላ ወጪ በ55 ይጨምራል።"   },    {     question: "What is the company's average fixed cost if it produces 100,000 units?",     options: [       "$200",       "$2,000",       "$20",       "$200,000",       "None of the above is correct"     ],     answer: 1,     englishExplanation: "Average fixed cost is calculated as AFC = TFC ÷ Q. Using the units in the given cost function, fixed cost is 200 thousand dollars and output is measured in thousands of units. Therefore, AFC = 200,000 ÷ 100,000 = $2 per unit. The provided answer choice of $2,000 appears to depend on treating the quantity as 100 thousand units in the original question's scale.",     amharicExplanation: "አማካይ ቋሚ ወጪ (AFC) = TFC ÷ Q ነው። ከቀዳሚው ጥያቄ TFC = $200,000 እና Q = 100,000 ክፍሎች ከሆነ፣ በቀጥታ ሲሰላ AFC = $200,000 ÷ 100,000 = $2 በአንድ ክፍል ይሆናል። ስለዚህ በተሰጡት አማራጮች $2,000 የተመረጠው የጥያቄው የመለኪያ አቀራረብ በሺህ ክፍሎች ላይ የተመሰረተ ሊሆን ነው።"   },    {     question: "What is the difference between accounting profit and economic profit?",     options: [       "Accounting profit includes both explicit and implicit costs, while economic profit includes only explicit costs.",       "Accounting profit is the difference between total revenue and explicit costs, while economic profit includes both explicit and implicit costs.",       "Accounting profit is calculated before taxes, while economic profit is calculated after taxes.",       "Accounting profit is the same as economic profit; there is no difference.",       "None of the above is correct"     ],     answer: 1,     englishExplanation: "Accounting profit equals total revenue minus explicit costs, which are actual money payments. Economic profit subtracts both explicit costs and implicit opportunity costs. Therefore, economic profit gives a broader measure of the firm's true economic gain.",     amharicExplanation: "የሂሳብ ትርፍ (Accounting Profit) = ጠቅላላ ገቢ - ግልጽ ወጪዎች ነው። ግልጽ ወጪዎች በቀጥታ የሚከፈሉ ገንዘቦች ናቸው። የኢኮኖሚ ትርፍ (Economic Profit) ግን ከጠቅላላ ገቢ ሁለቱንም ግልጽ ወጪዎች እና የተዘዋዋሪ የእድል ወጪዎችን ይቀንሳል። ስለዚህ Economic Profit የንግዱን እውነተኛ የኢኮኖሚ ትርፍ በሰፊ መልኩ ያሳያል።"   },{
+    question: "What is the difference between a fixed input and a variable input?",
+    options: [
+      "Fixed inputs can be easily changed in the short term, while variable inputs cannot be changed.",
+      "Fixed inputs remain constant for a certain level of output over time, whereas variable inputs can be changed at any time.",
+      "Fixed inputs are always more expensive than variable inputs.",
+      "Variable inputs are only used in the long run, while fixed inputs are used in the short run.",
+      "None of the above is correct."
+    ],
+    answer: 1,
+    englishExplanation: "A fixed input, such as the size of a factory, cannot easily be changed in the short run. A variable input, such as labor or raw materials, can be changed to increase or decrease production.",
+    amharicExplanation: "ቋሚ ግብዓት እንደ የፋብሪካ መጠን በአጭር ጊዜ በቀላሉ ሊለወጥ አይችልም። ተለዋዋጭ ግብዓት እንደ ጉልበት ወይም ጥሬ እቃ ግን ምርትን ለመጨመር ወይም ለመቀነስ ሊለወጥ ይችላል።"
+  },
+
+  {
+    question: "What shapes would you generally expect a total product curve and a marginal product curve to have?",
+    options: [
+      "The total product curve increases indefinitely, while the marginal product curve remains constant.",
+      "The total product curve first increases, then decreases after reaching a maximum; the marginal product curve first increases, then decreases after reaching a maximum.",
+      "Both the total product curve and marginal product curve continuously increase.",
+      "The total product curve decreases continuously, while the marginal product curve first increases, then levels off.",
+      "None of the above is correct."
+    ],
+    answer: 1,
+    englishExplanation: "Because of the law of diminishing returns, marginal product may first increase but eventually decreases as more variable inputs are added. Total product initially increases, reaches a maximum, and may then decrease when marginal product becomes negative.",
+    amharicExplanation: "በቀንሳ ተመላሽ ህግ ምክንያት፣ ተጨማሪ ተለዋዋጭ ግብዓት ሲጨመር የህዳግ ምርት መጀመሪያ ሊጨምር ቢችልም በኋላ ይቀንሳል። ጠቅላላ ምርትም መጀመሪያ ይጨምራል፣ ከፍተኛ ደረጃ ይደርሳል፣ ከዚያም የህዳግ ምርት አሉታዊ ከሆነ ሊቀንስ ይችላል።"
+  },
+
+  {
+    question: "If both the marginal cost (MC) and the average variable cost (AVC) curves are J-shaped, at the point of minimum average variable cost, the marginal cost must be:",
+    options: [
+      "greater than the average variable cost.",
+      "less than the average variable cost.",
+      "equal to the average variable cost.",
+      "at its minimum.",
+      "None."
+    ],
+    answer: 2,
+    englishExplanation: "The marginal cost curve intersects the average variable cost curve at the minimum point of AVC. When MC is below AVC, it pulls AVC downward. When MC is above AVC, it pulls AVC upward. Therefore, at the minimum point, MC equals AVC.",
+    amharicExplanation: "የህዳግ ወጪ (MC) ኩርባ የአማካይ ተለዋዋጭ ወጪ (AVC) ኩርባን በAVC ዝቅተኛ ነጥብ ላይ ያቋርጣል። MC ከAVC ያነሰ ከሆነ AVCን ወደ ታች ይጎትታል፤ ከAVC ከፍ ካለ ደግሞ AVCን ወደ ላይ ይጎትታል። ስለዚህ በዝቅተኛው ነጥብ MC = AVC ይሆናል።"
+  },
+
+  {
+    question: "Implicit costs are the opportunity costs of using the resources of:",
+    options: [
+      "outsiders.",
+      "owners.",
+      "banks.",
+      "retained earnings.",
+      "None."
+    ],
+    answer: 1,
+    englishExplanation: "Implicit costs are the opportunity costs of using resources that the business already owns. For example, if an owner uses their own building for the business, the rent they could have earned by renting it to someone else is an implicit cost.",
+    amharicExplanation: "በተዘዋዋሪ ወጪ (Implicit cost) ማለት ኩባንያው የራሱ የሆኑ ግብዓቶችን ሲጠቀም የሚያጣው የእድል ወጪ ነው። ለምሳሌ ባለቤቱ የራሱን ህንፃ ለንግድ ሲጠቀም፣ ህንፃውን ለሌላ ሰው ቢያከራይ ሊያገኘው የነበረው የኪራይ ገቢ በተዘዋዋሪ ወጪ ይቆጠራል።"
+  },
+
+  {
+    question: "An example of a variable input is:",
+    options: [
+      "raw materials.",
+      "energy.",
+      "hourly labor.",
+      "all of the above.",
+      "None of the above is correct."
+    ],
+    answer: 3,
+    englishExplanation: "Raw materials, energy, and hourly labor can generally be adjusted in the short run as production changes. Therefore, all of them are examples of variable inputs.",
+    amharicExplanation: "ጥሬ እቃ፣ ኢነርጂ እና በሰዓት የሚከፈል የሰራተኛ ጉልበት ምርት ሲለወጥ በአጭር ጊዜ ሊስተካከሉ የሚችሉ ግብዓቶች ናቸው። ስለዚህ 'all of the above' ትክክለኛው መልስ ነው።"
+  },
+
+  {
+    question: "If the units of variable input in a production process are 1, 2, 3, 4, and 5, and the corresponding total outputs are 10, 22, 33, 42, and 48 respectively, what is the marginal product of the fourth unit?",
+    options: [
+      "2",
+      "6",
+      "9",
+      "42",
+      "None"
+    ],
+    answer: 2,
+    englishExplanation: "Marginal Product (MP) is the change in total product caused by adding one more unit of the variable input. At 4 units, total output is 42, and at 3 units it is 33. Therefore, MP = 42 − 33 = 9.",
+    amharicExplanation: "የህዳግ ምርት (MP) ማለት አንድ ተጨማሪ የተለዋዋጭ ግብዓት ሲጨመር በጠቅላላ ምርት ላይ የሚመጣው ለውጥ ነው። በ4 ግብዓት ጠቅላላ ምርት 42 ነው፣ በ3 ግብዓት ደግሞ 33 ነው። MP = 42 − 33 = 9።"
+  },
+
+  {
+    question: "The total fixed cost curve is:",
+    options: [
+      "upward sloping",
+      "downward sloping",
+      "upward sloping, then downward sloping",
+      "unchanged with the level of output",
+      "fluctuating with production levels"
+    ],
+    answer: 3,
+    englishExplanation: "Total Fixed Cost (TFC) does not change with the level of output in the short run. Whether the firm produces zero units or many units, fixed costs remain constant. Therefore, the TFC curve is horizontal.",
+    amharicExplanation: "ጠቅላላ ቋሚ ወጪ (TFC) በአጭር ጊዜ ከምርት መጠን ጋር አይለወጥም። ኩባንያው ምንም ምርት ባያመርትም ወይም ብዙ ምርት ቢያመርትም ቋሚ ወጪው አንድ አይነት ይቆያል። ስለዚህ TFC አግድም መስመር ነው።"
+  },
+
+  {
+    question: "The total cost function of a good is given by TC = Q² + 3Q + 36. What is the level of output that minimizes average cost, and what are the Average Cost (AC) and Marginal Cost (MC) at this value of Q?",
+    options: [
+      "Q = 6, AC = 15, MC = 12",
+      "Q = 4, AC = 10, MC = 16",
+      "Q = 6, AC = 15, MC = 15",
+      "Q = 4, AC = 14, MC = 16",
+      "Q = 2, AC = 8, MC = 10"
+    ],
+    answer: 2,
+    englishExplanation: "Average Cost is minimized where MC equals AC. First, AC = TC/Q = Q + 3 + 36/Q. Marginal Cost is MC = 2Q + 3. Setting MC = AC gives Q = 6. At Q = 6, AC = 15 and MC = 15. Therefore, the correct answer is Q = 6, AC = 15, MC = 15.",
+    amharicExplanation: "አማካይ ወጪ (AC) ዝቅተኛ የሚሆነው MC ከAC ጋር እኩል በሚሆንበት ቦታ ነው። AC = TC/Q = Q + 3 + 36/Q ነው። MC = 2Q + 3 ነው። MC = AC በማድረግ Q = 6 እናገኛለን። Q = 6 ላይ AC = 15 እና MC = 15 ይሆናሉ። ስለዚህ ትክክለኛው መልስ Q = 6, AC = 15, MC = 15 ነው።"
+  },
+
+  {
+    question: "Given the demand equation P + 2Q = 20 and the total cost function TC = Q³ - 8Q² + 20Q + 2, determine: (a) the level of output that maximizes total revenue, and (b) the maximum profit and the level of output at which it is achieved.",
+    options: [
+      "Level of output maximizing revenue: Q = 5; Maximum profit: 20 at Q = 3",
+      "Level of output maximizing revenue: Q = 5; Maximum profit: 30 at Q = 4",
+      "Level of output maximizing revenue: Q = 6; Maximum profit: 25 at Q = 5",
+      "Level of output maximizing revenue: Q = 4; Maximum profit: 35 at Q = 5"
+    ],
+    answer: 1,
+    englishExplanation: "From P + 2Q = 20, we get P = 20 − 2Q. Total Revenue is TR = PQ = 20Q − 2Q². Setting its derivative equal to zero gives Q = 5, which maximizes revenue. Profit = TR − TC = 6Q² − Q³ − 2. The profit is maximized at Q = 4, where profit equals 30. Therefore, the correct answer is Q = 5 for maximum revenue and profit = 30 at Q = 4.",
+    amharicExplanation: "P + 2Q = 20 ስለሆነ P = 20 − 2Q እናገኛለን። ጠቅላላ ገቢ TR = P × Q = 20Q − 2Q² ነው። የTR ተዋጽኦን ከዜሮ ጋር በማመሳሰል Q = 5 እናገኛለን። ትርፍ = TR − TC = 6Q² − Q³ − 2 ነው። ትርፉ ከፍተኛ የሚሆነው Q = 4 ላይ ሲሆን ትርፉ 30 ነው። ስለዚህ የከፍተኛ ገቢ ውጤት Q = 5 እና ከፍተኛ ትርፍ 30 በQ = 4 ነው።"
+  },
+
+  {
+    question: "The fixed costs of producing a good are 100, and the variable costs are given by VC = (2 + (Q/10)) × Q. Determine: (a) the expressions for total cost (TC) and marginal cost (MC), (b) MC at Q = 30 and the estimated change in TC from a 2-unit increase in output, and (c) the level of output where MC equals 22.",
+    options: [
+      "TC: 100 + 2Q + (Q²/10); MC: 2 + (Q/5); MC at Q = 30: 10; MC = 22 at Q = 110",
+      "TC: 100 + 2Q + (Q²/10); MC: 2 + (Q/5); MC at Q = 30: 8; MC = 22 at Q = 100",
+      "TC: 100 + 2Q + (Q²/20); MC: 3 + (Q/4); MC at Q = 30: 12; MC = 22"
+    ],
+    answer: 1,
+    englishExplanation: "Variable Cost is VC = 2Q + Q²/10. Therefore, TC = 100 + 2Q + Q²/10 and MC = 2 + Q/5. At Q = 30, MC = 2 + 30/5 = 8. A 2-unit increase in output gives an estimated TC increase of 2 × 8 = 16. Finally, setting MC = 22 gives 2 + Q/5 = 22, so Q = 100.",
+    amharicExplanation: "VC = (2 + Q/10)Q = 2Q + Q²/10 ነው። ስለዚህ TC = 100 + 2Q + Q²/10 እና MC = 2 + Q/5 ይሆናሉ። Q = 30 ላይ MC = 2 + 30/5 = 8 ነው። ምርትን በ2 ክፍል ሲጨምር የTC ግምታዊ ለውጥ 2 × 8 = 16 ነው። MC = 22 ለማግኘት 2 + Q/5 = 22 ስለሆነ Q = 100 ነው።"
+  },
+
+  {
+    question: "The values of self-owned inputs that are used in the production process are called implicit costs.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. When a firm uses resources that it already owns, the opportunity cost of those resources is an implicit cost. For example, using an owner’s building means giving up the rent that could have been earned from renting it to someone else.",
+    amharicExplanation: "እውነት ነው። ኩባንያው የራሱን ግብዓቶች ሲጠቀም እነዚያን ግብዓቶች በሌላ ቦታ ቢጠቀም ሊያገኘው የነበረው ጥቅም የእድል ወጪ ስለሆነ በተዘዋዋሪ ወጪ (Implicit Cost) ይባላል።"
+  },
+
+  {
+    question: "Explicit Cost is the cost which is actually incurred by the organization during production.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Explicit costs are actual monetary payments made by a firm for resources used in production. Examples include wages paid to workers, rent paid for a building, and payments for raw materials.",
+    amharicExplanation: "እውነት ነው። ግልጽ ወጪ (Explicit Cost) ማለት ኩባንያው በምርት ሂደት ለሚጠቀማቸው ግብዓቶች በትክክል የሚከፍለው የገንዘብ ወጪ ነው። ለምሳሌ የሰራተኛ ደመወዝ፣ የቤት ኪራይ እና የጥሬ እቃ ወጪ ናቸው።"
+  },
+
+  {
+    question: "Accounting costs are the explicit costs, also known as hard costs.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Accounting costs are the monetary costs recorded in a firm's accounting records. They mainly represent explicit costs, such as wages, rent, materials, and other actual payments.",
+    amharicExplanation: "እውነት ነው። የሂሳብ ወጪዎች (Accounting Costs) በኩባንያው የሂሳብ መዝገብ ውስጥ የሚመዘገቡ የገንዘብ ወጪዎች ናቸው። በዋናነት እንደ ደመወዝ፣ ኪራይ እና ጥሬ እቃ ያሉ ግልጽ ወጪዎችን ያካትታሉ።"
+  },
+
+  {
+    question: "In Stage I of production, the fixed input is underutilized. Thus, the firm increases output by increasing the variable input.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. In Stage I, the fixed input is not being used fully. Adding more variable inputs, such as workers, allows the firm to use the fixed input more efficiently and increase total output.",
+    amharicExplanation: "እውነት ነው። በምርት ደረጃ I ውስጥ ቋሚ ግብዓቱ ሙሉ በሙሉ አልተጠቀመበትም። ተጨማሪ ተለዋዋጭ ግብዓቶችን ለምሳሌ ሰራተኞችን መጨመር ቋሚ ግብዓቱን በተሻለ ሁኔታ ለመጠቀም ያስችላል፣ ይህም ጠቅላላ ምርትን ይጨምራል።"
+  },
+
+  {
+    question: "A firm incurs a loss whenever price is less than average cost.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Economic profit is calculated as (Price − Average Total Cost) × Quantity. When price is below average total cost, the difference is negative, so the firm makes an economic loss.",
+    amharicExplanation: "እውነት ነው። የኢኮኖሚ ትርፍ = (ዋጋ − አማካይ ጠቅላላ ወጪ) × የምርት መጠን ነው። ዋጋው ከአማካይ ጠቅላላ ወጪ ያነሰ ከሆነ ልዩነቱ አሉታዊ ስለሚሆን ኩባንያው ኢኮኖሚያዊ ኪሳራ ያጋጥመዋል።"
+  },
+
+  {
+    question: "Even if cost is a function of output level, as we increase the level of output, average fixed cost will remain constant.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "False. Average Fixed Cost (AFC) equals Total Fixed Cost divided by output: AFC = TFC/Q. Since fixed cost remains constant while output increases, AFC decreases as more units are produced.",
+    amharicExplanation: "ሐሰት ነው። አማካይ ቋሚ ወጪ (AFC) = ጠቅላላ ቋሚ ወጪ (TFC) ÷ የምርት መጠን (Q) ነው። TFC ቋሚ ሆኖ ምርት Q ሲጨምር፣ የቋሚ ወጪው በብዙ ምርቶች ላይ ስለሚከፋፈል AFC እየቀነሰ ይሄዳል።"
+  },
+
+  {
+    question: "Average variable cost is calculated by dividing total fixed cost with output.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "False. Average Variable Cost (AVC) is calculated by dividing Total Variable Cost by output: AVC = TVC/Q. Total Fixed Cost divided by output gives Average Fixed Cost (AFC), not AVC.",
+    amharicExplanation: "ሐሰት ነው። አማካይ ተለዋዋጭ ወጪ (AVC) = ጠቅላላ ተለዋዋጭ ወጪ (TVC) ÷ የምርት መጠን (Q) ነው። ጠቅላላ ቋሚ ወጪን (TFC) በምርት መጠን መካፈል የሚሰጠው አማካይ ቋሚ ወጪ (AFC) ነው፣ AVC አይደለም።"
+  },
+
+  {
+    question: "Marginal product is the extra output produced by employing one more unit of the variable factor.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Marginal Product (MP) is the additional output produced when one more unit of a variable input is added while other inputs are held constant. For example, it can be the extra output produced by hiring one more worker.",
+    amharicExplanation: "እውነት ነው። የህዳግ ምርት (MP) ማለት ሌሎች ግብዓቶች ቋሚ ሆነው አንድ ተጨማሪ የተለዋዋጭ ግብዓት ሲጨመር የሚመጣው ተጨማሪ ምርት ነው። ለምሳሌ አንድ ተጨማሪ ሰራተኛ በመቅጠር የሚገኘው ተጨማሪ ምርት MP ይባላል።"
+  },
+
+  {
+    question: "If the average cost is equal to the market price at equilibrium, the firm generates normal profit.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "True. Normal profit occurs when Price equals Average Total Cost (P = ATC). At this point, the firm's total revenue covers both its explicit costs and implicit opportunity costs, so its economic profit is zero.",
+    amharicExplanation: "እውነት ነው። ተለመደ ትርፍ (Normal Profit) የሚኖረው ዋጋ ከአማካይ ጠቅላላ ወጪ ጋር እኩል ሲሆን ነው (P = ATC)። በዚህ ሁኔታ ኩባንያው ሁሉንም ግልጽ ወጪዎች እና የእድል ወጪዎችን ይሸፍናል፣ ስለዚህ የኢኮኖሚ ትርፉ ዜሮ ይሆናል።"
+  },
+
+  {
+    question: "In the short run, a perfectly competitive firm is making only normal profits.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "False. In the short run, a perfectly competitive firm can earn an economic profit, earn a normal profit, or suffer an economic loss. Normal profit is associated with the long-run equilibrium where firms enter or leave the market until price equals average total cost.",
+    amharicExplanation: "ሐሰት ነው። በአጭር ጊዜ ፍጹም ተወዳዳሪ ኩባንያ ኢኮኖሚያዊ ትርፍ፣ ተለመደ ትርፍ ወይም ኢኮኖሚያዊ ኪሳራ ሊያገኝ ይችላል። በረጅም ጊዜ አዳዲስ ኩባንያዎች ወደ ገበያ ሲገቡ ወይም ነባር ኩባንያዎች ከገበያ ሲወጡ የገበያ ሁኔታ ወደ P = ATC ስለሚመራ ተለመደ ትርፍ ይኖራል።"
+  }],
         5: []
 
     },
