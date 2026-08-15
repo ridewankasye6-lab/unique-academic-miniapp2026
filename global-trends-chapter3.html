@@ -1,19 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Global Trends - Chapter 3</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Global Trends - Chapter 3</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">🌍</span>
+
+        <div>
+
+            <h1>Global Trends</h1>
+
+            <p>Chapter 3</p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>🌍 Global Trends</h1>
+    <h1>🌍 Global Trends</h1>
 
-<h2>Chapter 3</h2>
-
-<p>
+    <h2>Chapter 3</h2>
 
 <h2>   International Political Economy(IPE).Meaning and Nature of IPE.</h2>
 
@@ -380,26 +429,49 @@ Unique Academic .<br>
 
 ```
 
-
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="global-trends.html">⬅ Back to Global Trends</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="global-trends-chapter2.html">
-⬅ Previous
-</a>
-
-<a href="global-trends-chapter4.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+
+            window.history.back();
+
+        } else {
+
+            window.location.href =
+                "global-trends.html";
+
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href =
+            "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
 </body>
+
 </html>
