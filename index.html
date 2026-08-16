@@ -20,50 +20,248 @@
 </head>
 
 <body>
-
-
+    
 <!-- =====================================
-     HEADER
+     PROFESSIONAL SIDE MENU
 ===================================== -->
 
-<header>
+<div id="menuOverlay" class="menuOverlay"></div>
 
-    <h1>🎓 Unique Academic</h1>
+<aside id="sideMenu" class="sideMenu">
 
-    <p>
-        Learning Platform
-    </p>
+    <!-- Profile Header -->
+    <div class="menuProfile">
+
+        <div class="menuAvatar">
+            🎓
+        </div>
+
+        <div class="menuProfileInfo">
+
+            <h2>
+                Unique Academic
+            </h2>
+
+            <p>
+                Learning Platform
+            </p>
+
+        </div>
+
+    </div>
 
 
-    <div class="headerButtons">
+    <!-- Main Navigation -->
+    <div class="menuSection">
 
-        <a
-            href="registration.html"
-            class="registerBtn"
-        >
-            📝 Register
+        <a href="index.html" class="menuItem">
+
+            <span class="menuIcon">🏠</span>
+
+            <span>Home</span>
+
+            <span class="menuArrow">›</span>
+
         </a>
 
 
-        <a
-            href="student-login.html"
-            class="loginBtn"
-        >
-            🔐 Student Login
+        <a href="#subjects" class="menuItem">
+
+            <span class="menuIcon">📚</span>
+
+            <span>Subjects</span>
+
+            <span class="menuArrow">›</span>
+
         </a>
 
 
-        <button id="modeBtn">
+        <a href="#subjects" class="menuItem">
 
-            🌙 Dark Mode
+            <span class="menuIcon">📝</span>
+
+            <span>Quizzes</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+
+        <a href="#" class="menuItem">
+
+            <span class="menuIcon">📄</span>
+
+            <span>PDF Library</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+
+        <a href="#" class="menuItem">
+
+            <span class="menuIcon">🎥</span>
+
+            <span>Video Lessons</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+
+        <a href="#" class="menuItem">
+
+            <span class="menuIcon">⭐</span>
+
+            <span>Bookmarks</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- Account -->
+    <div class="menuSection">
+
+        <div class="menuLabel">
+            ACCOUNT
+        </div>
+
+
+        <a href="student-login.html" class="menuItem">
+
+            <span class="menuIcon">👤</span>
+
+            <span>Student Login</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+
+        <a href="registration.html" class="menuItem">
+
+            <span class="menuIcon">📝</span>
+
+            <span>Register</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- More -->
+    <div class="menuSection">
+
+        <div class="menuLabel">
+            MORE
+        </div>
+
+
+        <a href="#" class="menuItem">
+
+            <span class="menuIcon">❓</span>
+
+            <span>Help</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+
+        <a href="#" class="menuItem">
+
+            <span class="menuIcon">ℹ️</span>
+
+            <span>About Us</span>
+
+            <span class="menuArrow">›</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- Dark Mode -->
+    <div class="menuBottom">
+
+        <button
+            id="menuModeBtn"
+            class="menuModeBtn"
+            type="button"
+        >
+
+            🌙
+            <span>Dark Mode</span>
+
+        </button>
+
+
+        <button
+            id="closeMenuBtn"
+            class="menuCloseBtn"
+            type="button"
+        >
+
+            ✕
+            <span>Close Menu</span>
 
         </button>
 
     </div>
 
+</aside>
+
+<!-- =====================================
+     PROFESSIONAL HEADER
+===================================== -->
+
+<header class="mainHeader">
+
+    <button
+        id="menuBtn"
+        class="menuBtn"
+        type="button"
+        aria-label="Open menu"
+    >
+        ☰
+    </button>
+
+
+    <div class="headerBrand">
+
+        <div class="headerLogo">
+            🎓
+        </div>
+
+        <div>
+
+            <h1>
+                Unique Academic
+            </h1>
+
+            <p>
+                Learning Platform
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="student-login.html"
+        class="headerProfile"
+        aria-label="Student Login"
+    >
+        👤
+    </a>
+
 </header>
-
-
 
 <!-- =====================================
      HERO
