@@ -800,3 +800,18 @@ if (logoutBtn) {
     });
 
 }
+// =====================================
+// REFRESH BUTTON
+// =====================================
+
+const refreshBtn = document.getElementById("refreshBtn");
+
+if (refreshBtn) {
+
+    refreshBtn.addEventListener("click", function () {
+
+        window.location.reload();
+
+    });
+
+}
