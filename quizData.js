@@ -15733,7 +15733,259 @@ const quizData = {
         2: [],
         3: [],
         4: [],
-        5: []
+        5: [{
+    "question": "Merchants buy goods from the area of surplus and move them to the area of shortage for customers to buy and, in the process; they make profit for the ________ utility they provide.",
+    "options": [
+      "Information",
+      "Form",
+      "Place",
+      "All of the above",
+      "None of the above"
+    ],
+    "answer": 2,
+    "englishExplanation": "Moving products from where they are abundant to where they are needed creates value by making products available in the right location. This is called Place Utility.",
+    "amharicExplanation": "ምርቶችን ብዛት ካለበት ቦታ ወደ እጥረት ወዳለበት ቦታ በማጓጓዝ ለተጠቃሚዎች በሚፈልጉበት ቦታ እንዲገኙ ማድረግ Place Utility (የቦታ ጠቃሚነት) ይባላል።"
+  },
+  {
+    "question": "Demands are wants for specific products that are backed by:",
+    "options": [
+      "Ability to buy",
+      "Willingness to buy",
+      "Needs",
+      "A & B are answers",
+      "A, B & C are answers"
+    ],
+    "answer": 3,
+    "englishExplanation": "Demand requires both the ability to buy and the willingness to purchase a specific product. Therefore, both A and B are necessary.",
+    "amharicExplanation": "Demand (ፍላጎት) የሚባለው አንድን ምርት የመግዛት ፈቃደኝነት (Willingness) እና የመግዛት አቅም (Ability) ሲኖር ነው። ስለዚህ A እና B ሁለቱም ትክክል ናቸው።"
+  },
+  {
+    "question": "The term \"marketing mix\" describes:",
+    "options": [
+      "A composite analysis of all environmental factors inside and outside the firm",
+      "A series of business decisions that aid in selling a product",
+      "The relationship between a firm's marketing strengths and its business weaknesses",
+      "A blending of four strategic elements to satisfy specific target markets"
+    ],
+    "answer": 3,
+    "englishExplanation": "The marketing mix refers to combining the four strategic elements known as the 4 Ps: Product, Price, Place, and Promotion, to satisfy the needs of a target market.",
+    "amharicExplanation": "Marketing Mix ማለት የዒላማ ደንበኞችን ፍላጎት ለማርካት አራቱን የማርኬቲንግ አካላት Product, Price, Place እና Promotion በጥምረት መጠቀም ነው።"
+  },
+  {
+    "question": "A firm is using _____ when it charges a high, premium price for a new product with the intention of reducing the price in the future.",
+    "options": [
+      "Price skimming",
+      "Mark-up pricing",
+      "Cost-plus pricing",
+      "Market-penetration pricing",
+      "Competition Oriented Pricing"
+    ],
+    "answer": 0,
+    "englishExplanation": "Price skimming sets a high initial price for a new product to gain maximum revenue from customers who are willing to pay more, before reducing the price later.",
+    "amharicExplanation": "አዲስ ምርት ሲወጣ መጀመሪያ ከፍተኛ ዋጋ በመደብ ከፍተኛ ዋጋ ለመክፈል ፈቃደኛ ከሆኑ ደንበኞች ትርፍ ሰብስቦ በኋላ ዋጋውን መቀነስ Price Skimming ይባላል።"
+  },
+  {
+    "question": "_____ pricing is the approach of setting a low initial price in order to attract a large number of buyers quickly and win a large market share.",
+    "options": [
+      "Price skimming",
+      "Mark-up pricing",
+      "Cost-plus pricing",
+      "Market-penetration pricing",
+      "Competition Oriented Pricing"
+    ],
+    "answer": 3,
+    "englishExplanation": "Market-penetration pricing sets a low introductory price to attract many customers quickly and gain a large share of the market.",
+    "amharicExplanation": "ብዙ ደንበኞችን በፍጥነት ለመሳብ እና ትልቅ የገበያ ድርሻ ለመያዝ መጀመሪያ አነስተኛ ዋጋ መደብ Market-Penetration Pricing ይባላል።"
+  },
+  {
+    "question": "A type of utility that exists when a product is readily accessible to potential customers is:",
+    "options": [
+      "Time utility",
+      "Form utility",
+      "Information utility",
+      "Place utility",
+      "None of the above"
+    ],
+    "answer": 3,
+    "englishExplanation": "Place utility ensures that products are distributed and made physically accessible to customers in locations where they want to buy them.",
+    "amharicExplanation": "ምርቶች ገዢዎች በሚፈልጉበት ቦታ በቀላሉ ተገኝተው እንዲገዙ ማድረግ Place Utility (የቦታ ጠቃሚነት) ይባላል።"
+  },
+  {
+    "question": "The ________ concept holds that consumers and businesses, if left alone, will ordinarily not buy enough of the organization's products.",
+    "options": [
+      "Selling",
+      "Product",
+      "Production",
+      "Marketing",
+      "None of the above"
+    ],
+    "answer": 0,
+    "englishExplanation": "The Selling Concept assumes that customers will not buy enough products unless the business uses strong selling and promotional efforts.",
+    "amharicExplanation": "Selling Concept ድርጅቱ በጠንካራ ማስተዋወቅና ሽያጭ ካልገፋፋ በስተቀር ደንበኞች በራሳቸው በቂ ምርት አይገዙም ብሎ ያምናል።"
+  },
+  {
+    "question": "Of the following one is important to determine the strengths and weaknesses of competitors and designing ways to take opportunities or tackle threats posed by competitors:",
+    "options": [
+      "Competitive Analysis",
+      "Marketing Intelligence",
+      "Marketing Research",
+      "Marketing Information System"
+    ],
+    "answer": 0,
+    "englishExplanation": "Competitive Analysis directly evaluates competitors' strengths and weaknesses to help a business use opportunities and reduce threats created by competitors.",
+    "amharicExplanation": "የተፎካካሪዎችን ጥንካሬና ድክመት በመገምገም እድሎችን ለመጠቀምና ተፎካካሪዎች የሚያመጡትን ስጋት ለመቀነስ የሚረዳው Competitive Analysis ነው።"
+  },
+  {
+    "question": "Services are produced and consumed at the same point, and are totally ended right after use. Which distinctive features of services is it?",
+    "options": [
+      "Intangibility",
+      "Inseparability",
+      "Variability",
+      "Perishability"
+    ],
+    "answer": 3,
+    "englishExplanation": "Perishability means services cannot be stored, saved, or kept for future use. Once the service is provided and consumed, it ends.",
+    "amharicExplanation": "አገልግሎቶች ተከማችተው ለሌላ ጊዜ ሊቀመጡ አይችሉም። አገልግሎቱ ከተሰጠና ከተጠቀሙበት በኋላ ያበቃል። ይህ Perishability ይባላል።"
+  },
+  {
+    "question": "A type of customer satisfaction research in which the researcher assesses distributors and retailers' attitude toward a product, brand, or company can be referred to as:",
+    "options": [
+      "Distribution channel audits",
+      "Price elasticity testing",
+      "Positioning research",
+      "Sales forecasting",
+      "None of the above"
+    ],
+    "answer": 0,
+    "englishExplanation": "Distribution channel audits evaluate the attitudes, performance, and satisfaction of channel intermediaries such as distributors and retailers.",
+    "amharicExplanation": "በአከፋፋዮችና በችርቻሮ ነጋዴዎች ስለ ምርት፣ ብራንድ ወይም ድርጅት ያላቸውን አመለካከትና እርካታ ደረጃ የሚገመግም ጥናት Distribution Channel Audits ይባላል።"
+  },
+
+  {
+    "question": "Which utility is created when a customer buys the product?",
+    "options": [
+      "Form Utility",
+      "Possession Utility",
+      "Information Utility",
+      "Place Utility",
+      "None"
+    ],
+    "answer": 1,
+    "englishExplanation": "Possession utility is created when ownership rights of a product are transferred from the seller to the buyer through purchasing the product.",
+    "amharicExplanation": "ደንበኛው ምርቱን ሲገዛ የባለቤትነት መብት ከሻጭ ወደ ገዢ ስለሚተላለፍ Possession Utility ይፈጠራል።"
+  },
+  {
+    "question": "Which of the following is not a type of Marketing Concept:",
+    "options": [
+      "The production concept",
+      "The selling concept",
+      "The societal marketing concept",
+      "The Supplier Concept"
+    ],
+    "answer": 3,
+    "englishExplanation": "Established marketing philosophies include the production, product, selling, marketing, and societal marketing concepts. Supplier Concept is not a recognized marketing philosophy.",
+    "amharicExplanation": "የታወቁ የማርኬቲንግ ፍልስፍናዎች Production, Product, Selling, Marketing እና Societal Marketing ናቸው። Supplier Concept የሚባል የማርኬቲንግ ፍልስፍና የለም።"
+  },
+  {
+    "question": "The ultimate outcome of relationship marketing is the building of a unique company asset known as___________",
+    "options": [
+      "Societal marketing",
+      "Exchange",
+      "Transaction",
+      "Market network",
+      "None of the above"
+    ],
+    "answer": 3,
+    "englishExplanation": "Relationship marketing builds long-term, mutually beneficial relationships with customers, distributors, suppliers, and other stakeholders, creating a valuable market network.",
+    "amharicExplanation": "Relationship Marketing ከደንበኞች፣ ከአከፋፋዮች፣ ከአቅራቢዎችና ከሌሎች ባለድርሻዎች ጋር የረጅም ጊዜ ጠንካራ ግንኙነት በመፍጠር Market Network የሚባል ጠቃሚ ሀብት ይገነባል።"
+  },
+  {
+    "question": "\"Get out production, cut the price\" - Philosophy by Henry Ford is an example of...",
+    "options": [
+      "Marketing Concept",
+      "Selling Concept",
+      "Production Concept",
+      "Product Concept"
+    ],
+    "answer": 2,
+    "englishExplanation": "Henry Ford emphasized mass production and reducing production costs so that products could be sold at lower prices. This reflects the Production Concept.",
+    "amharicExplanation": "የሄንሪ ፎርድ ፍልስፍና በብዛት በማምረት የምርት ወጪንና ዋጋን መቀነስ ላይ ስለሚያተኩር Production Concept ነው።"
+  },
+  {
+    "question": "In which competing concepts, under which organizations can choose to conduct their marketing activities, customer experience rather than customer satisfaction is the most critical component?",
+    "options": [
+      "Selling Concept",
+      "Marketing Concept",
+      "Societal Marketing Concept",
+      "Relationship Marketing",
+      "None"
+    ],
+    "answer": 3,
+    "englishExplanation": "Relationship Marketing focuses on building long-term relationships and improving the overall customer experience rather than focusing only on satisfaction from individual transactions.",
+    "amharicExplanation": "Relationship Marketing በአንድ ጊዜ እርካታ ላይ ብቻ ሳይሆን የደንበኛውን የረጅም ጊዜ ልምድና ግንኙነት Customer Experience ላይ ያተኩራል።"
+  },
+  {
+    "question": "Which concept was widely in effect during the industrial revolution?",
+    "options": [
+      "Product Concept",
+      "Production Concept",
+      "Selling Concept",
+      "None of the above"
+    ],
+    "answer": 1,
+    "englishExplanation": "During the Industrial Revolution, demand was high and businesses focused on efficient mass production and wider distribution. This reflected the Production Concept.",
+    "amharicExplanation": "በኢንዱስትሪ አብዮት ወቅት የምርት ፍላጎት ከፍተኛ ስለነበር በብዛትና በብቃት ማምረት ላይ ትኩረት ተደርጎ ነበር። ይህ Production Concept ነው።"
+  },
+  {
+    "question": "Which one of the following factors should not be considered to select the best channel under the condition of using the best distribution strategy?",
+    "options": [
+      "Company Factors",
+      "Market Characteristics",
+      "Product Attributes",
+      "Environmental Forces",
+      "None"
+    ],
+    "answer": 4,
+    "englishExplanation": "Company factors, market characteristics, product attributes, and environmental forces are all important when selecting a distribution channel. Therefore, none of them should be excluded.",
+    "amharicExplanation": "Company Factors፣ Market Characteristics፣ Product Attributes እና Environmental Forces ሁሉም የስርጭት መስመር ለመምረጥ አስፈላጊ ናቸው። ስለዚህ መልሱ None ነው።"
+  },
+  {
+    "question": "Marketing is a process which aims at ____",
+    "options": [
+      "Production",
+      "Profit-making",
+      "The satisfaction of customer needs",
+      "Selling products"
+    ],
+    "answer": 2,
+    "englishExplanation": "The main aim of marketing is to identify and satisfy customer needs. Profit is an important result of satisfying customers effectively.",
+    "amharicExplanation": "የማርኬቲንግ ዋነኛ ዓላማ የደንበኞችን ፍላጎት ማወቅና ማርካት ነው። ትርፍ ደግሞ ደንበኞችን በትክክል በማርካት የሚመጣ ውጤት ነው።"
+  },
+  {
+    "question": "Awareness created about the product price, its features, availability etc., comes under which marketing mix category?",
+    "options": [
+      "Product",
+      "Price",
+      "Place",
+      "Promotion"
+    ],
+    "answer": 3,
+    "englishExplanation": "Promotion includes advertising and communication activities that inform customers about a product's price, features, availability, and benefits.",
+    "amharicExplanation": "ለደንበኞች ስለ ምርቱ ዋጋ፣ ባህሪያት፣ መገኛ ቦታ እና ጥቅሞች ግንዛቤ መፍጠር Promotion (ማስተዋወቅ) ይባላል።"
+  },
+  {
+    "question": "_________________ refers to the consumers' estimate of the product's overall capacity to satisfy their needs.",
+    "options": [
+      "Cost",
+      "Product",
+      "Value",
+      "Market",
+      "None of the above"
+    ],
+    "answer": 2,
+    "englishExplanation": "Customer Value is the consumer's assessment of how well a product can satisfy their needs and expectations compared with the benefits they receive.",
+    "amharicExplanation": "Value (እሴት) ማለት አንድ ደንበኛ ምርቱ ፍላጎቱንና ከምርቱ የሚጠብቀውን ነገር ምን ያህል ሊያሟላለት እንደሚችል የሚያደርገው ግምገማ ነው።"
+  }, {     "question": "A type of customer satisfaction research in which the researcher assesses distributors' and retailers' attitudes toward a product, brand, or company can be referred to as:",     "options": [       "Distribution channel audits",       "Price elasticity testing",       "Test marketing",       "Mystery Consumer or Mystery shopping",       "None of the above"     ],     "answer": 0,     "englishExplanation": "A distribution channel audit evaluates the performance, opinions, and satisfaction of intermediaries such as distributors and retailers who connect manufacturers with consumers.",     "amharicExplanation": "Distribution Channel Audit ማለት አከፋፋዮችና ቸርቻሪዎች ስለ አንድ ምርት፣ ብራንድ ወይም ድርጅት ያላቸውን አመለካከት፣ አፈጻጸም እና እርካታ የሚገመግም የጥናት ዓይነት ነው።"   },    {     "question": "Which one of the following is not the role of a marketing information system?",     "options": [       "Developing information relating to marketing",       "Providing readymade solution to marketing problems",       "Assessing the information needs of marketing managers",       "Distributing information to the marketing managers in a timely manner",       "None of the above"     ],     "answer": 1,     "englishExplanation": "A Marketing Information System collects, processes, and distributes useful information to support managerial decisions. However, it does not automatically provide ready-made solutions to marketing problems because managers must interpret the information and make decisions.",     "amharicExplanation": "Marketing Information System (MIS) የገበያ መረጃን ይሰበስባል፣ ያደራጃል እና ለማኔጀሮች በወቅቱ ያቀርባል። ነገር ግን ለገበያ ችግሮች ዝግጁ መፍትሔ በራሱ አይሰጥም፤ መረጃውን መተንተንና ውሳኔ መስጠት የማኔጀሮች ሥራ ነው።"   },    {     "question": "From the core concepts of marketing, customer ability and willingness to buy can be represented by ________.",     "options": [       "Need",       "Demand",       "Want",       "Transaction"     ],     "answer": 1,     "englishExplanation": "Demand is a want for a specific product or service that is supported by both the ability and willingness to purchase it. A person must have purchasing power and be willing to buy.",     "amharicExplanation": "Demand ማለት አንድ ሰው ለምርት ወይም ለአገልግሎት ፍላጎት ኖሮት ከመግዛት አቅምና ፈቃደኝነት ጋር ሲገናኝ የሚፈጠር ፍላጎት ነው።"   },    {     "question": "The term marketing refers to:",     "options": [       "Advertising, Sales Promotion, Publicity and Public Relations activities",       "New product ideas, developments, concepts and improvements",       "Sales planning, strategy and implementation",       "A philosophy that stresses customer value and satisfaction"     ],     "answer": 3,     "englishExplanation": "Modern marketing is a business philosophy focused on identifying customer needs, creating value, delivering that value, and achieving customer satisfaction. Advertising and selling are only parts of the broader marketing process.",     "amharicExplanation": "Modern Marketing የሚያተኩረው የደንበኞችን ፍላጎት በመለየት እሴት በመፍጠር፣ ለደንበኞች በማድረስና እርካታቸውን በማረጋገጥ ላይ ነው። Advertising እና Selling የMarketing አንዳንድ ክፍሎች ብቻ ናቸው።"   },    {     "question": "What does the statement 'Trade of value between two parties' show?",     "options": [       "Competition",       "Transaction",       "Exchange",       "Need"     ],     "answer": 1,     "englishExplanation": "A transaction is a trade of values between two or more parties. For example, a customer gives money to a seller and receives a product or service in return.",     "amharicExplanation": "Transaction (ግብይት) ማለት በሁለት ወይም ከዚያ በላይ ወገኖች መካከል የእሴት ልውውጥ ሲደረግ ነው። ለምሳሌ ደንበኛ ገንዘብ ሰጥቶ በምትኩ ምርት ወይም አገልግሎት ሲያገኝ Transaction ይባላል።"   },    {     "question": "When a customer is willing and able to buy what they need, it becomes a ___ for the organization.",     "options": [       "Need",       "Want",       "Demand",       "All"     ],     "answer": 2,     "englishExplanation": "A need or want becomes demand when the customer has both the willingness and the purchasing ability to buy the product or service.",     "amharicExplanation": "ደንበኛው አንድ ነገር የመፈለግ ፍላጎት ብቻ ሳይሆን ለመግዛት ፈቃደኝነትና የገንዘብ አቅም ሲኖረው Demand ይባላል።"   },    {     "question": "Many people want a Suzuki car, but only a few are able to buy one. This is an example of:",     "options": [       "Need",       "Want",       "Demand",       "None"     ],     "answer": 2,     "englishExplanation": "Many people may want a Suzuki car, but demand requires purchasing ability as well as willingness. Therefore, the people who both want the car and can afford to buy it represent demand.",     "amharicExplanation": "ብዙ ሰዎች Suzuki መኪና ሊፈልጉ ይችላሉ፣ ግን የመግዛት አቅም ያላቸው ጥቂቶች ከሆኑ፣ የመግዛት ፍላጎት ከአቅም ጋር ተደምሮ Demand ይሆናል።"   },    {     "question": "Which one of the following concepts is a useful philosophy in a situation when the product's cost is too high and marketers look for ways to bring it down?",     "options": [       "Selling concept",       "Product concept",       "Production concept",       "Marketing concept"     ],     "answer": 2,     "englishExplanation": "The Production Concept emphasizes efficient production, economies of scale, and reducing production costs. When costs are too high, increasing production efficiency can help lower the unit cost.",     "amharicExplanation": "Production Concept በምርት ማምረት ብቃትን በማሳደግ፣ በብዛት በማምረትና የማምረቻ ወጪን በመቀነስ ላይ ያተኩራል። ስለዚህ የምርት ወጪ ከፍተኛ ሲሆን ይህ ኮንሰፕት ተገቢ ነው።"   },    {     "question": "A type of marketing strategy that firms use by charging the highest possible price that buyers who most desire the product will pay is:",     "options": [       "Penetration pricing",       "Markup pricing",       "Price skimming",       "Competition-oriented pricing"     ],     "answer": 2,     "englishExplanation": "Price skimming sets a relatively high initial price for a new product to capture customers who are willing to pay more. The price may later be reduced to attract additional market segments.",     "amharicExplanation": "Price Skimming ማለት አዲስ ምርት ሲገባ ለመጀመሪያ ጊዜ ከፍተኛ ዋጋ በማስቀመጥ ብዙ ለመክፈል ፈቃደኛ የሆኑ ደንበኞችን መሳብ ነው። በኋላ ዋጋው ሊቀነስ ይችላል።"   },    {     "question": "Mr. Abebe has purchased a building which costs Birr 15,000,000, and it will be transferred to him after a month. The utility that he enjoys from owning the building after a month is:",     "options": [       "Information Utility",       "Possession Utility",       "Time Utility",       "Place Utility"     ],     "answer": 1,     "englishExplanation": "Possession utility is created when ownership or legal title to a product or property is transferred to the buyer. In this case, Mr. Abebe will obtain ownership of the building after the transfer.",     "amharicExplanation": "Possession Utility የሚፈጠረው የንብረት ወይም የምርት ባለቤትነት መብት ከሻጩ ወደ ገዢው ሲተላለፍ ነው። ስለዚህ አቶ አበበ ህንፃውን ከተረከቡ በኋላ Possession Utility ያገኛሉ።"   },    {     "question": "Which of the following marketing management philosophies is most applicable when demand is higher than supply?",     "options": [       "Product concept",       "Production concept",       "The selling concept",       "The marketing concept"     ],     "answer": 1,     "englishExplanation": "When demand is higher than supply, customers mainly need products to be available. The Production Concept emphasizes increasing production, improving efficiency, and making products widely available.",     "amharicExplanation": "Demand ከSupply በላይ ሲሆን ዋናው ችግር በቂ ምርት ማቅረብ ነው። Production Concept ደግሞ ምርትን በብዛትና በብቃት ማምረት እና በቀላሉ እንዲገኝ ማድረግ ላይ ያተኩራል።"   },    {     "question": "Which one may not be the role of Marketing Research in decision-making?",     "options": [       "Descriptive Function",       "Diagnostic (analytical) Function",       "Predictive Function",       "None"     ],     "answer": 3,     "englishExplanation": "Marketing research has descriptive, diagnostic, and predictive functions. Descriptive research explains what is happening, diagnostic research explains why it is happening, and predictive research helps forecast what may happen in the future. Therefore, none of the listed functions is excluded.",     "amharicExplanation": "Marketing Research የDescriptive፣ Diagnostic እና Predictive ተግባራት አሉት። Descriptive ምን እየተከሰተ እንዳለ ይገልጻል፣ Diagnostic ለምን እንደተከሰተ ይተነትናል፣ Predictive ደግሞ ወደፊት ሊከሰት የሚችለውን ይገምታል። ስለዚህ None ነው።"   },    {     "question": "Which one of the following is not a marketing variable or one of the 4 Ps of marketing that the marketing manager can manipulate as controllable variables?",     "options": [       "Product",       "Price",       "Plan",       "Place",       "Promotion"     ],     "answer": 2,     "englishExplanation": "The traditional 4 Ps of marketing are Product, Price, Place, and Promotion. Plan is not one of the four controllable marketing mix variables.",     "amharicExplanation": "የMarketing Mix 4Ps ማለት Product (ምርት)፣ Price (ዋጋ)፣ Place (ቦታ/ስርጭት) እና Promotion (ማስተዋወቅ) ናቸው። Plan ከ4Ps ውስጥ አይገባም።"   },    {     "question": "The importance of Marketing Intelligence includes the following, except:",     "options": [       "Market and customer orientation – promote external focus",       "Identification of new opportunities",       "Smart segmentation",       "Late warning of competitor moves"     ],     "answer": 3,     "englishExplanation": "Marketing Intelligence should provide early warning about competitor actions so that a business can respond quickly. A late warning does not provide the timely information needed for effective decision-making.",     "amharicExplanation": "Marketing Intelligence ስለ ተወዳዳሪዎች እርምጃ ቀደም ብሎ መረጃ በመስጠት ድርጅቱ በጊዜው እንዲዘጋጅ ያግዛል። Late Warning ግን መረጃው ከዘገየ በኋላ ስለሚደርስ የMarketing Intelligence ጥቅም አይደለም።"   },    {     "question": "________ refers to the detailed version of a product idea stated in meaningful consumer terms.",     "options": [       "Product idea",       "Product image",       "Product concept",       "All of the above",       "None of the above"     ],     "answer": 2,     "englishExplanation": "A Product Concept is a detailed version of a product idea expressed in meaningful terms that explain the product's benefits and value from the consumer's perspective.",     "amharicExplanation": "Product Concept ማለት የProduct Idea የተዘረዘረ መልክ ሲሆን ምርቱ ለደንበኛው የሚሰጠውን ጥቅምና እሴት በደንበኛው በሚረዳው መንገድ የሚገልጽ ነው።"   },    {     "question": "The main difference between marketing and selling is that:",     "options": [       "The first emphasis is on the product whereas the later is on customer's wants.",       "The later emphasis is on the product whereas the first is on customer's wants.",       "Both of them emphasize customer's wants.",       "Both of them emphasize the product."     ],     "answer": 1,     "englishExplanation": "Marketing begins with understanding customer needs and wants and then creates value to satisfy them. Selling focuses more on the existing product and persuading customers to purchase it.",     "amharicExplanation": "Marketing የሚጀምረው የደንበኛውን ፍላጎት በመረዳትና በማሟላት ላይ ነው። Selling ግን በነባሩ ምርት ላይ በማተኮር ደንበኛውን እንዲገዛ በማሳመን ላይ ያተኩራል።"   },    {     "question": "The marketing function that helps sellers provide information to buyers about the seller's product is:",     "options": [       "Distribution",       "Purchasing",       "Financing",       "Promotion"     ],     "answer": 3,     "englishExplanation": "Promotion communicates information about products to potential customers. It includes activities such as advertising, personal selling, sales promotion, and public relations.",     "amharicExplanation": "Promotion ማለት ስለ ምርቱ መረጃን ለደንበኞች የማቅረብና ምርቱን የማስተዋወቅ ተግባር ነው። Advertising፣ Personal Selling፣ Sales Promotion እና Public Relations የPromotion ክፍሎች ናቸው።"   },    {     "question": "The marketing strategy that adds place and time utility is ________.",     "options": [       "Product development",       "Distribution",       "Pricing",       "Promotion"     ],     "answer": 1,     "englishExplanation": "Distribution creates place utility by making products available where customers need them and time utility by making products available when customers need them.",     "amharicExplanation": "Distribution (ስርጭት) ምርቶች ደንበኞች በሚፈልጉበት ቦታ እንዲገኙ Place Utility እና በሚፈልጉበት ጊዜ እንዲገኙ Time Utility ይፈጥራል።"   },    {     "question": "91% of customers who have major complaints decide they will never come back. But if the complaint is resolved quickly, 82% of them will return. Quick complaint resolution drops the customer defection rate from 91% to __.",     "options": [       "82%, 18%",       "72%, 28%",       "62%, 38%",       "52%, 48%"     ],     "answer": 0,     "englishExplanation": "When major complaints are resolved quickly, 82% of dissatisfied customers may return. Therefore, the customer defection rate falls to 18%, which is the remainder of 100% after the 82% who return.",     "amharicExplanation": "ዋና የደንበኛ ቅሬታ በፍጥነት ሲፈታ 82% የሚሆኑ ደንበኞች ተመልሰው ሊመጡ ይችላሉ። ስለዚህ የማጣት መጠኑ 18% ይሆናል። 100% - 82% = 18%።"   },    {     "question": "____ is a way to undertake marketing intelligence by a limited and unstructured attempt to obtain information for a specific purpose.",     "options": [       "Unfocused scanning",       "Semi-focused scanning",       "Informal search",       "Formal search",       "None of the above"     ],     "answer": 2,     "englishExplanation": "Informal search is a limited and relatively unstructured attempt to obtain information for a specific purpose. It is less systematic than a formal search.",     "amharicExplanation": "Informal Search ማለት ለተወሰነ ዓላማ የሚፈለገውን መረጃ በተወሰነ መጠንና በመደበኛ ያልሆነ መንገድ የመፈለግ ሂደት ነው። Formal Search ከሚባለው ይልቅ ያነሰ ስርዓታዊ ነው።"   },  {     "question": "Wants are the form human needs take as they are shaped by culture and individual personality.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "Needs are basic human requirements, such as food, water, and shelter. Wants are the specific forms that these needs take according to a person's culture, environment, and individual preferences.",     "amharicExplanation": "Needs (መሰረታዊ ፍላጎቶች) እንደ ምግብ፣ ውሃ እና መጠለያ ያሉ መሰረታዊ የሰው ፍላጎቶች ናቸው። Wants (የተለየ ፍላጎት) ግን እነዚህን መሰረታዊ ፍላጎቶች በባህል፣ በአካባቢ እና በግል ምርጫ መሠረት ለማሟላት የሚፈለጉ የተለዩ ነገሮች ናቸው።"   },    {     "question": "The selling concept reflects an inside-out perspective.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "The selling concept starts from inside the company, usually with existing products, and then uses selling and promotion activities to persuade customers to buy them. Therefore, it follows an inside-out approach.",     "amharicExplanation": "የSelling Concept አቀራረብ ከድርጅቱ ውስጥ ይጀምራል። ድርጅቱ ያለውን ምርት ለደንበኞች ለመሸጥ በማስተዋወቅና በሽያጭ ላይ ያተኩራል። ስለዚህ Inside-out አቀራረብ ነው።"   },    {     "question": "The research design is a blueprint for conducting marketing research.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "A research design is a detailed plan that explains how a marketing research study will be conducted, including how data will be collected, measured, and analyzed.",     "amharicExplanation": "የResearch Design (የጥናት ንድፍ) የገበያ ጥናት እንዴት እንደሚካሄድ የሚያሳይ ዝርዝር እቅድ ነው። መረጃ እንዴት እንደሚሰበሰብ፣ እንደሚለካና እንደሚተነተን ይመራል።"   },    {     "question": "All businesses need money to finance a host of different requirements.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "Businesses need financial resources to pay for operations, employees, equipment, marketing, inventory, expansion, and other activities necessary for survival and growth.",     "amharicExplanation": "ሁሉም ንግዶች የዕለት ተዕለት ሥራዎችን፣ የሰራተኞችን ደመወዝ፣ ዕቃዎችን፣ ማስታወቂያን እና የንግድ መስፋፋትን ለመደገፍ ገንዘብ ያስፈልጋቸዋል።"   },    {     "question": "A market is a group of buyers and sellers interested in negotiating the terms of purchase and sale for goods or services.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "A market brings buyers and sellers together to exchange goods or services. They may negotiate or agree on important terms such as price, quantity, quality, and conditions of sale.",     "amharicExplanation": "ገበያ ማለት እቃዎችን ወይም አገልግሎቶችን ለመግዛትና ለመሸጥ የሚገናኙ ገዢዎችና ሻጮች ስብስብ ነው። ዋጋ፣ መጠን፣ ጥራትና ሌሎች የሽያጭ ሁኔታዎችን ሊደራደሩ ይችላሉ።"   },    {     "question": "In conducting marketing research, the researcher needs to gather primary data before looking for secondary data.",     "options": [       "True",       "False"     ],     "answer": 1,     "englishExplanation": "Researchers normally examine existing secondary data first because it is usually faster and less expensive. If the available secondary information is not sufficient, the researcher can then collect primary data.",     "amharicExplanation": "በገበያ ጥናት ውስጥ ተመራማሪው በመጀመሪያ ነባር Secondary Data ይመረምራል። ይህ ፈጣንና ብዙ ጊዜ ዝቅተኛ ወጪ ስላለው ነው። ነባሩ መረጃ በቂ ካልሆነ በኋላ Primary Data ይሰበስባል።"   },    {     "question": "Selling Concept holds that consumers will favor products that are available and highly affordable.",     "options": [       "True",       "False"     ],     "answer": 1,     "englishExplanation": "The Production Concept states that consumers favor products that are widely available and affordable. The Selling Concept instead emphasizes aggressive selling and promotional activities.",     "amharicExplanation": "ምርቶች በቀላሉ እንዲገኙና በተመጣጣኝ ዋጋ እንዲሸጡ የሚያተኩረው Production Concept ነው። Selling Concept ግን በጠንካራ የሽያጭና የማስተዋወቅ ሥራዎች ላይ ያተኩራል።"   },    {     "question": "In marketing research, defining the research purpose or objective is the first step to be considered.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "Before collecting or analyzing information, researchers need to clearly define the problem, purpose, or objective of the research. This gives the entire research process a clear direction.",     "amharicExplanation": "የጥናቱን ችግር፣ ዓላማ ወይም Objective በግልጽ መወሰን የጥናቱ የመጀመሪያ ዋና ደረጃ ነው። ይህም ቀጣይ የመረጃ ስብሰባና ትንተና አቅጣጫ ይሰጣል።"   },    {     "question": "Marketing strategy determines the choice of target market segments, positioning, marketing mix, and allocation of resources.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "A marketing strategy identifies the target market, determines how the product should be positioned, develops the appropriate marketing mix, and guides how marketing resources should be allocated.",     "amharicExplanation": "የMarketing Strategy ኢላማ ገበያን መምረጥ፣ ምርቱ በገበያ ውስጥ እንዴት እንዲታይ Positioning ማድረግ፣ የMarketing Mix መወሰንና ሀብትን በትክክል መመደብን ያካትታል።"   },    {     "question": "When a company maximizes the availability of a product or service, the type of utility created is place utility.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "Place utility is created when a product or service is made available at a convenient location where customers can easily access it when they need it.",     "amharicExplanation": "Place Utility (የቦታ ጥቅም) ማለት ምርት ወይም አገልግሎት ደንበኞች በሚፈልጉበትና በሚመቻቸው ቦታ በቀላሉ እንዲገኝ ማድረግ ነው።"   },    {     "question": "In undertaking market intelligence, semi-focused scanning is one way in which any information that may be useful is gathered without any specific purpose in mind.",     "options": [       "True",       "False"     ],     "answer": 1,     "englishExplanation": "Semi-focused scanning concentrates on specific broad areas or topics of interest, such as economic publications or industry developments. Collecting information without any specific target is associated with unfocused scanning.",     "amharicExplanation": "Semi-focused scanning በተወሰኑ ሰፋፊ የፍላጎት መስኮች ላይ ያተኩራል፣ ለምሳሌ የኢኮኖሚ ህትመቶችን ወይም የኢንዱስትሪ ለውጦችን መከታተል። ያለ ምንም የተወሰነ ዓላማ በአጠቃላይ መረጃ መሰብሰብ ግን Unfocused Scanning ነው።"   },    {     "question": "Marketing involves all the activity designed to generate and facilitate exchange intended to satisfy human needs or wants.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "Marketing includes activities such as identifying customer needs, product development, pricing, promotion, distribution, and exchange. These activities are designed to create and deliver value that satisfies customer needs and wants.",     "amharicExplanation": "Marketing የደንበኞችን ፍላጎት ለመለየት፣ ምርት ለማዘጋጀት፣ ዋጋ ለመወሰን፣ ለማስተዋወቅ፣ ለማሰራጨትና ልውውጥ ለማካሄድ የሚደረጉ እንቅስቃሴዎችን ያጠቃልላል። ዋና ዓላማውም የደንበኞችን Needs እና Wants ማሟላት ነው።"   },    {     "question": "Market intelligence refers to determining the strengths and weaknesses of competitors and designing ways to take opportunities or tackle threats posed by competitors.",     "options": [       "True",       "False"     ],     "answer": 1,     "englishExplanation": "The specific process of identifying competitors' strengths and weaknesses is called competitor analysis. Market intelligence is broader and continuously gathers and analyzes information about customers, competitors, market trends, and the external business environment.",     "amharicExplanation": "የተወዳዳሪዎችን ጥንካሬና ድክመት በተለይ መለየት Competitor Analysis ይባላል። Market Intelligence ግን ከዚህ የበለጠ ሰፊ ሲሆን ደንበኞችን፣ ተወዳዳሪዎችን፣ የገበያ ለውጦችንና የውጭ አካባቢን በቀጣይነት ይከታተላል።"   },    {     "question": "Test marketing is a small-scale product launch used to determine the likely acceptance of the product when it is introduced into a wider market.",     "options": [       "True",       "False"     ],     "answer": 0,     "englishExplanation": "Test marketing introduces a product on a limited scale or in a selected market before a full commercial launch. It helps a business measure customer reactions and identify problems before expanding the launch.",     "amharicExplanation": "Test Marketing ማለት አንድ ምርት በሙሉ ገበያ ከመጀመሩ በፊት በተመረጠ አነስተኛ ገበያ ወይም አካባቢ ላይ ለሙከራ ማስገባት ነው። ይህም የደንበኞችን ምላሽ ለማወቅና ችግሮችን ቀድሞ ለማስተካከል ይረዳል።"   },    {     "question": "Which of the following is an example of an intangible asset?",     "options": [       "Equipment",       "Inventory",       "Office building",       "Trademark"     ],     "answer": 3,     "englishExplanation": "A trademark is an intangible asset because it has economic value but does not have physical substance. Equipment, inventory, and buildings are tangible assets because they have a physical form.",     "amharicExplanation": "Trademark (የንግድ ምልክት) በአካል የማይዳሰስ ነገር ሆኖ የኢኮኖሚ ዋጋ ስላለው Intangible Asset ነው። Equipment፣ Inventory እና Office Building ግን በአካል ስለሚኖሩ Tangible Assets ናቸው።"   },    {     "question": "A business owner who sells milk and milk products considers the products perishable and wants to sell them directly to consumers by establishing its own distributor rather than using wholesalers. What kind of strategy is this?",     "options": [       "Forward integration",       "Product diversification",       "Backward integration",       "Market diversification"     ],     "answer": 0,     "englishExplanation": "Forward integration occurs when a business moves closer to the final customer by taking control of distribution, wholesaling, or retailing activities. Here, the producer establishes its own distribution system instead of depending on wholesalers.",     "amharicExplanation": "Forward Integration ማለት አምራቹ ወደ መጨረሻ ተጠቃሚው በመቅረብ የስርጭት፣ የጅምላ ወይም የችርቻሮ ሥራዎችን በራሱ መቆጣጠር ነው። እዚህ የወተት አምራቹ የራሱን የስርጭት ሥርዓት ስለሚያቋቁም Forward Integration ነው።"   },    {     "question": "Which one of the following marketing strategies is not a core element of the marketing mix?",     "options": [       "Product",       "Price",       "Promotion",       "Trademark"     ],     "answer": 3,     "englishExplanation": "Product, Price, Place, and Promotion are the four traditional elements of the marketing mix. A trademark is a legal and branding tool, but it is not one of the four core elements of the traditional marketing mix.",     "amharicExplanation": "Product፣ Price፣ Place እና Promotion የባህላዊው የMarketing Mix 4Ps መሰረታዊ አካላት ናቸው። Trademark ግን የምርት ወይም የብራንድ ህጋዊ ጥበቃ መሳሪያ እንጂ ከ4Ps አንዱ አይደለም።"   },    {     "question": "In the commercialization stage, market entry timing is critical. Which statements about timing are true?",     "options": [       "First entry strategy gives the first-mover advantage",       "Late entry strategy gives time to reconsider and adjust the faults of the first mover",       "The cost of promotion is always high for a late entry strategy",       "Becoming a first entrant always provides an advantage",       "A and B"     ],     "answer": 4,     "englishExplanation": "Both A and B are correct. A first entrant may gain first-mover advantages such as early customer recognition and brand loyalty. A late entrant can learn from the first mover's mistakes and improve its product or strategy before entering the market.",     "amharicExplanation": "A እና B ሁለቱም ትክክል ናቸው። ቀድሞ ወደ ገበያ መግባት የFirst-mover advantage እንደ የመጀመሪያ የደንበኛ ታዋቂነትና የብራንድ ታማኝነት ሊያስገኝ ይችላል። ዘግይቶ የሚገባ ድርጅት ደግሞ የመጀመሪያውን አካል ስህተቶች ተምሮ ምርቱን ወይም ስትራቴጂውን ማሻሻል ይችላል።"   },    {     "question": "Which one of the following is correctly matched?",     "options": [       "Market penetration - High risk",       "Product development - High risk",       "Market development - Low risk",       "Diversification - Highest risk"     ],     "answer": 3,     "englishExplanation": "According to Ansoff's Matrix, diversification involves entering a new market with a new product. Because both the product and market are unfamiliar, diversification generally carries the highest level of strategic risk.",     "amharicExplanation": "በAnsoff's Matrix መሠረት Diversification ማለት አዲስ ምርትን ወደ አዲስ ገበያ ማስገባት ነው። ምርቱም ሆነ ገበያው አዲስ ስለሆኑ ከሌሎቹ ስትራቴጂዎች የበለጠ ከፍተኛ ስጋት አለው።"   },    {     "question": "The process of dividing the universe of buyers into more homogeneous sub-groups based on their similar characteristics is ________.",     "options": [       "Market segmentation",       "Market differentiation",       "Market positioning",       "Market promotion"     ],     "answer": 0,     "englishExplanation": "Market segmentation divides a broad and diverse market into smaller groups of customers who have similar needs, characteristics, preferences, or purchasing behaviors. This helps businesses target customers more effectively.",     "amharicExplanation": "Market Segmentation ማለት ሰፊ እና የተለያየ ገበያን ተመሳሳይ ፍላጎት፣ ባህሪ፣ ምርጫ ወይም የግዢ ባህሪ ባላቸው ደንበኞች በትናንሽ ቡድኖች የመክፈል ሂደት ነው።"   } ]
 
     },
 
