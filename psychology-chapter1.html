@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Psychology - Chapter 1</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">🧠</span>
+
+        <div>
+            <h1>Psychology</h1>
+            <p>Chapter 1</p>
+        </div>
+
+    </div>
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>🧠 Psychology</h1>
+    <h1>🧠 Psychology</h1>
 
-<h2>Chapter 1</h2>
-
-<p>
-  
+    <h2>Chapter 1</h2>
 <h2>General Psychology</h2>
 <h3>Chapter One - Essence of Psychology</h3>
 <h3>Historical Background and Major Perspectives in Psychology</h3>
@@ -187,25 +223,36 @@
 <p>አሁን እዚህጋ "independent" የሆነው <b>የክላሱ መጠን ነው</b> Dependent የሆነው ደግሞ <b>የተማሪዎቹ Result ወይም ውጤት ነው</b> (የተማሪዎቹ ውጤት በክላሱ መጠን ላይ ነው depend የሆነው፣ እንደ ክላሱ መጠን ውጤቱ ሊለያይ ስለሚችል ነው dependent የሆነው)</p>
 <p>"Chapter one The End" መልካም ሳምንት ! በርቱ! All rights reserved! Unique academic, General Psychology</p>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="psychology.html">⬅ Back to Psychology</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="psychology.html">
-⬅ Back
-</a>
-
-<a href="psychology-chapter2.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "psychology.html";
+    }
+
+};
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
