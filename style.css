@@ -1399,3 +1399,562 @@ body.dark .menuCloseBtn {
     color: #60a5fa;
 
 }
+
+/* =====================================================
+   UNIQUE ACADEMIC
+   PROFESSIONAL SIDE MENU
+===================================================== */
+
+
+/* MENU OPEN BUTTON */
+
+.menuBtn {
+
+    position: fixed;
+
+    top: 18px;
+
+    left: 18px;
+
+    z-index: 3000;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #6d28d9
+        );
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 20px
+        rgba(37, 99, 235, .35);
+
+    transition: .25s;
+}
+
+
+.menuBtn:hover {
+
+    transform: scale(1.06);
+
+}
+
+
+/* DARK OVERLAY */
+
+.menuOverlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, .45);
+
+    z-index: 1999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+
+    backdrop-filter: blur(3px);
+
+}
+
+
+.menuOverlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* SIDE MENU */
+
+.sideMenu {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 330px;
+
+    max-width: 88vw;
+
+    height: 100vh;
+
+    background: white;
+
+    z-index: 2000;
+
+    transform:
+        translateX(-105%);
+
+    transition:
+        transform .35s
+        cubic-bezier(.4,0,.2,1);
+
+    box-shadow:
+        8px 0 35px
+        rgba(0,0,0,.20);
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow-y: auto;
+
+}
+
+
+.sideMenu.active {
+
+    transform:
+        translateX(0);
+
+}
+
+
+/* =====================================================
+   PROFILE HEADER
+===================================================== */
+
+.menuProfile {
+
+    min-height: 150px;
+
+    padding: 25px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #1e3a8a 55%,
+            #6d28d9 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.menuProfile::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.08);
+
+    right: -70px;
+
+    top: -80px;
+
+}
+
+
+.profileAvatar {
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: white;
+
+    font-size: 32px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.20);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.profileInfo {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-width: 0;
+
+}
+
+
+.profileInfo h3 {
+
+    margin: 0;
+
+    font-size: 17px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+.profileInfo p {
+
+    margin: 4px 0 0;
+
+    font-size: 12px;
+
+    opacity: .85;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =====================================================
+   MENU ITEMS
+===================================================== */
+
+.menuItems {
+
+    padding: 12px 10px;
+
+}
+
+
+.menuItem {
+
+    width: 100%;
+
+    min-height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 10px 14px;
+
+    margin: 3px 0;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background: transparent;
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        background .2s,
+        transform .2s,
+        color .2s;
+
+}
+
+
+.menuItem:hover {
+
+    background: #eef4ff;
+
+    color: #2563eb;
+
+    transform:
+        translateX(3px);
+
+}
+
+
+.menuIcon {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #f0f4ff;
+
+    font-size: 19px;
+
+}
+
+
+.menuItem:hover .menuIcon {
+
+    background: #dce8ff;
+
+}
+
+
+.menuArrow {
+
+    margin-left: auto;
+
+    color: #9aa8bd;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+}
+
+
+.menuButton {
+
+    appearance: none;
+
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.menuBottom {
+
+    margin-top: auto;
+
+    padding: 10px;
+
+    border-top:
+        1px solid #edf0f5;
+
+}
+
+
+.logoutItem {
+
+    width: 100%;
+
+    min-height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 10px 14px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background: #fff1f1;
+
+    color: #dc2626;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.logoutItem .menuIcon {
+
+    background: #ffe0e0;
+
+}
+
+
+.logoutItem .menuArrow {
+
+    color: #dc2626;
+
+}
+
+
+/* VERSION */
+
+.menuVersion {
+
+    text-align: center;
+
+    color: #8a96a8;
+
+    font-size: 12px;
+
+    padding: 15px 5px 8px;
+
+}
+
+
+.menuVersion small {
+
+    font-size: 10px;
+
+    color: #a7b0bd;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .sideMenu {
+
+        width: 310px;
+
+    }
+
+
+    .menuBtn {
+
+        width: 44px;
+
+        height: 44px;
+
+        top: 12px;
+
+        left: 12px;
+
+        border-radius: 13px;
+
+    }
+
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark .sideMenu {
+
+    background: #171717;
+
+}
+
+
+body.dark .menuItem {
+
+    color: white;
+
+}
+
+
+body.dark .menuItem:hover {
+
+    background: #242424;
+
+}
+
+
+body.dark .menuIcon {
+
+    background: #252525;
+
+}
+
+
+body.dark .menuItem:hover .menuIcon {
+
+    background: #303030;
+
+}
+
+
+body.dark .menuBottom {
+
+    border-top-color: #303030;
+
+}
+
+
+body.dark .logoutItem {
+
+    background: #321d1d;
+
+}
+
+
+body.dark .menuVersion {
+
+    color: #777;
+
+}
