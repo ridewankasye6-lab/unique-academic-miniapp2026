@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Psychology - Chapter 2</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">🧠</span>
+
+        <div>
+            <h1>Psychology</h1>
+            <p>Chapter 2</p>
+        </div>
+
+    </div>
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>🧠 Psychology</h1>
+    <h1>🧠 Psychology</h1>
 
-<h2>Chapter 2</h2>
-
-<p>
+    <h2>Chapter 2</h2>
 
 <h2>CHAPTER TWO: SENSATION AND PERCEPTION</h2>
 <p>በዚህ ቻፕተር ስር የምናየው</p>
@@ -254,26 +291,35 @@ All rights reserved! unique academic </p>
 <p>In general, perception is the act of knowing through sensation.</p>
 <p>ግን ደግሞ ለየት ያለ ባህሪ ያላቸው ሰዎች አሉ፣ without any sensory contact (ሳያዩ፣ ሳይሰሙ፣ ሳይዳስሱ) አንድን ነገር/ሰው የሚገነዘቡ/የሚያውቁ። ነገሮችን የሚረዱበት ተጨማሪ [Extra] የስሜት ህዋስ አላቸው። እኔን አጋጥመውኝም ሰምቼም አላውቅም ፥ ነገር ግን እንዲህ አይነት ሰዎች እንዳሉ በሳይንስ ተረጋግጧል። ይህም ESP ወይንም "Extra Sensory Perception" ይባላል። ከታች በፎቶ የተለቀቁላችሁን ነገሮች ተመልከቷቸው ለበለጠመረዳት。</p>
 
-
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="psychology.html">⬅ Back to Psychology</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="psychology-chapter1.html">
-⬅ Previous
-</a>
-
-<a href="psychology-chapter3.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "psychology.html";
+    }
+
+};
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
