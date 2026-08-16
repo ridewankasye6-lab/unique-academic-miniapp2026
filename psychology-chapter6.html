@@ -1,20 +1,57 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Psychology - Chapter 6</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Psychology - Chapter 6</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">🧠</span>
+
+        <div>
+            <h1>Psychology</h1>
+            <p>Chapter 6</p>
+        </div>
+
+    </div>
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>🧠 Psychology</h1>
+    <h1>🧠 Psychology</h1>
 
-<h2>Chapter 6</h2>
-
-<p>
-
+    <h2>Chapter 6</h2>
 <h2>Chapter 6 Personality and Theories of Personality</h2>
 <h3>Defense Mechanisms</h3>
 <p><b>Defense mechanism, in psychoanalytic theory, any of a group of mental processes that enables the mind to reach compromise solutions to conflicts that it is unable to resolve.</b></p>
@@ -126,25 +163,35 @@
 <li>To be fully functioning a person needs unconditional positive regard.</li>
 </ul>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="psychology.html">⬅ Back to Psychology</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="psychology-chapter5.html">
-⬅ Previous
-</a>
-
-<a href="#">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "psychology.html";
+    }
+
+};
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
