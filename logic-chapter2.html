@@ -1,21 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Logic - Chapter 2</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">⚖️</span>
+
+        <div>
+            <h1>Logic</h1>
+            <p>Chapter 2</p>
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📗 Logic</h1>
+    <h1>⚖️ Logic</h1>
 
-<h2>Chapter 2</h2>
-
-<p>
-
-
+    <h2>Chapter 2</h2>
 <h2>CHAPTER TWO Basic Concepts of Logic Definition of Logic</h2>
 <p>ሰዎች ብዙውን ጊዜ ይህ ነገር <b>logical</b> ነው ፡ ይህ ነገር <b>logical</b> አይደለም እያሉ በተለምዶ ይናገራሉ። ግን ሰዎች በተለምዶ <b>logical</b> ነውወይም <b>logical</b> አይደለም የሚሉት ነገር በትክክል ሎጂክ ን ይገልፀውይሆን ?</p>
 <h3>What is Logic</h3>
@@ -112,7 +158,7 @@
 <p><b>Conclusion always have only one statement. In otherword, an argument can always have only one conclusion.</b></p>
 <p><b>ፈተና ላይ ስለሚወጣ ያዙት</b></p>
 <p><b>Argument</b> ማለት የ <b>premises</b> እና የ <b>conclusion</b> ድምር ውጤት ነውብለናል። ታዲያ በ <b>argument</b> ውስጥ የሚገኙትን <b>premises</b> እና <b>conclusion</b> እንዴት ነውማወቅ የምንችለው? የትኛው ነው <b>premise</b>? የትኛው ነው <b>conclusion</b>? እነዚህን እና ሌሎችን በቀጣይ እናያለን።</p>
-<p>© Unique Academic .</p>
+<p>Unique Academic .</p>
 
 <h2>CHAPTER TWO #Logic Basic Concepts of Logic</h2>
 
@@ -952,25 +998,42 @@
 <p>unique academic. #Logic and Critical Thinking.</p>
 
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="logic.html">⬅ Back to Logic</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="logic-chapter1.html">
-⬅ Previous
-</a>
-
-<a href="logic-chapter3.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = "logic.html";
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href = "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
