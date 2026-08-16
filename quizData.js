@@ -15729,7 +15729,234 @@ const quizData = {
   "answer": 2,
   "englishExplanation": "Entrepreneurs take calculated risks. Refusing risk is not part of the entrepreneurial process.",
   "amharicExplanation": "📚 ስጋትን ሙሉ በሙሉ መከልከል የEntrepreneurial Process አካል አይደለም፤ ኢንተርፕረነሮች calculated risk ይወስዳሉ።"
-}],
+},{
+    question: "Business persons are entrepreneurs, but not all entrepreneurs are business persons.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "An entrepreneur is a specific type of business person who focuses on innovation and risk-taking. Therefore, an entrepreneur is a business person, but not every ordinary business owner is necessarily an entrepreneur.",
+    amharicExplanation: "ሥራ ፈጣሪ ማለት በፈጠራ እና በአደጋ መውሰድ ላይ የሚያተኩር የተለየ የንግድ ሰው ነው። ስለዚህ ሥራ ፈጣሪ የንግድ ሰው ነው፣ ነገር ግን ሁሉም የንግድ ባለቤቶች የግድ ሥራ ፈጣሪዎች አይደሉም።"
+},
+
+{
+    question: "Your own past experience as a customer in the marketplace will not help you to come up with new business idea.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Personal experience as a customer can be an important source of business ideas. Problems or frustrations experienced by customers can inspire entrepreneurs to create businesses that solve those problems.",
+    amharicExplanation: "እንደ ደንበኛ ያለዎት የግል ልምድ የንግድ ሀሳብ ለማግኘት ጠቃሚ ምንጭ ነው። ደንበኞች የሚያጋጥማቸው ችግር ወይም ቅሬታ ያንን ችግር የሚፈታ አዲስ ንግድ ለመፍጠር ሀሳብ ሊሰጥ ይችላል።"
+},
+
+{
+    question: "The best entrepreneurs are passive in facilitating and harnessing the creativity of other people and starting of any business.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Successful entrepreneurs are active rather than passive. They encourage creativity, find talented people, motivate their teams, and actively lead the process of starting and developing a business.",
+    amharicExplanation: "ስኬታማ ሥራ ፈጣሪዎች ተገብሮ የሚቀመጡ ሳይሆኑ ንቁ ናቸው። የሌሎችን ፈጠራ ያበረታታሉ፣ ተሰጥኦ ያላቸውን ሰዎች ይፈልጋሉ፣ ቡድናቸውን ያነሳሳሉ እና ንግዱን በንቃት ይመራሉ።"
+},
+
+{
+    question: "Entrepreneurs take uncalculated risk when they engage in business activity.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Successful entrepreneurs take calculated risks, not uncalculated risks. They research, plan, evaluate possible outcomes, and then make decisions based on the available information.",
+    amharicExplanation: "ስኬታማ ሥራ ፈጣሪዎች ያልተሰላ አደጋ አይወስዱም። የተሰላ አደጋ ይወስዳሉ፤ ማለትም ከመወሰናቸው በፊት መረጃ ይሰበስባሉ፣ ያቅዳሉ እና ሊከሰቱ የሚችሉ ውጤቶችን ይገመግማሉ።"
+},
+
+{
+    question: "The difference between an entrepreneur and an Intrapreneur is that the former is an employee, and the latter is the founder.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is reversed. An entrepreneur normally starts or owns an independent business, while an intrapreneur is an employee who develops entrepreneurial ideas within an existing organization.",
+    amharicExplanation: "መግለጫው ተቃራኒ ነው። Entrepreneur በአብዛኛው የራሱን ነጻ ንግድ የሚጀምር ወይም የሚያስተዳድር ሰው ነው። Intrapreneur ደግሞ በነባር ድርጅት ውስጥ ሆኖ የሥራ ፈጠራ ሀሳቦችን የሚያዳብር ሠራተኛ ነው።"
+},
+
+{
+    question: "An Intra-preneur is a person who does entrepreneurial work within a large organization.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "An intrapreneur performs entrepreneurial activities within an existing organization. They develop new ideas, products, or services while using the organization's resources.",
+    amharicExplanation: "Intrapreneur ማለት በነባር ትልቅ ድርጅት ውስጥ የሥራ ፈጣሪነት ስራ የሚሰራ ሰው ነው። የድርጅቱን ሀብት በመጠቀም አዲስ ሀሳብ፣ ምርት ወይም አገልግሎት ያዳብራል።"
+},
+
+{
+    question: "In the 18th Century a person who has signed a contractual agreement with the government to provide specific products or to perform service was considered as entrepreneur.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "This definition belongs to the 17th Century, not the 18th Century. During the 18th Century, the meaning of entrepreneur became more associated with risk-taking and profit.",
+    amharicExplanation: "ይህ ትርጉም ከ18ኛው ክፍለ ዘመን ይልቅ ከ17ኛው ክፍለ ዘመን ጋር ይያያዛል። በ18ኛው ክፍለ ዘመን የEntrepreneur ትርጉም ከአደጋ መውሰድ እና ከትርፍ ጋር በበለጠ ተያያዘ።"
+},
+
+{
+    question: "In the early definitions, entrepreneurship was highly associated with the application of innovation and creativity.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Early definitions of entrepreneurship focused more on managing large projects and economic activities. The strong connection between entrepreneurship, innovation, and creativity developed later.",
+    amharicExplanation: "ቀደምት የሥራ ፈጣሪነት ትርጉሞች በዋናነት ትላልቅ ፕሮጀክቶችን እና የኢኮኖሚ ስራዎችን በማስተዳደር ላይ ያተኩሩ ነበር። ሥራ ፈጣሪነትን ከፈጠራ እና ኢኖቬሽን ጋር በጥብቅ ማያያዝ በኋላ የመጣ ሀሳብ ነው።"
+},
+
+{
+    question: "The term entrepreneur was defined and understood in a similar way in the past.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "The meaning of entrepreneur has changed over time. It developed from a person managing projects to someone who takes risks and eventually to a person who creates value through innovation.",
+    amharicExplanation: "የEntrepreneur ትርጉም በጊዜ ሂደት ተለውጧል። ከፕሮጀክት አስተዳዳሪ ወደ አደጋ ተቀባይ እና በመጨረሻ በፈጠራ እሴት የሚፈጥር ሰው የሚለው ትርጉም ደርሷል።"
+},
+
+{
+    question: "Idea is more concrete, practical, and specific than opportunity.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "An idea is usually a general or initial thought. An opportunity is more concrete and practical because it has the potential to be developed into a useful and profitable business.",
+    amharicExplanation: "ሀሳብ (Idea) ብዙ ጊዜ አጠቃላይ ወይም የመጀመሪያ ሀሳብ ነው። Opportunity ግን የበለጠ ተጨባጭ እና ተግባራዊ ሲሆን ወደ ጠቃሚና ትርፋማ ንግድ ሊዳብር ይችላል።"
+},
+
+{
+    question: "An individual entrepreneur is someone who started business with his/her friend by acquired or franchised and manage the operation with members.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "An individual entrepreneur operates an independent business as an individual. If a person starts and manages a business together with friends or partners, it is not an individual entrepreneurial activity in this sense.",
+    amharicExplanation: "Individual entrepreneur ማለት ነጻ ንግድን እንደ ግለሰብ የሚጀምር እና የሚያስተዳድር ሰው ነው። ከጓደኞች ወይም ከአጋሮች ጋር በጋራ ንግድ መጀመር ግን ከዚህ ትርጉም ጋር አይስማማም።"
+},
+
+{
+    question: "A business can only be successful if the people who make it up are properly directed and are committed to make an effort on its behalf.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "A business depends heavily on its people. Proper direction, good leadership, teamwork, and commitment are important for achieving business success.",
+    amharicExplanation: "ንግድ በሰዎች ላይ በእጅጉ ይመሰረታል። ትክክለኛ አመራር፣ ጥሩ አቅጣጫ፣ የቡድን ስራ እና ቁርጠኝነት የንግድ ስኬትን ለማምጣት ጠቃሚ ናቸው።"
+},
+
+{
+    question: "Entrepreneurial task prohibits feminine from undertaking own business.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Entrepreneurship is not limited by gender. Women can start, own, manage, and develop businesses just like men.",
+    amharicExplanation: "ሥራ ፈጣሪነት በፆታ አይገደብም። ሴቶችም እንደ ወንዶች የራሳቸውን ንግድ መጀመር፣ መያዝ፣ ማስተዳደር እና ማሳደግ ይችላሉ።"
+},
+
+{
+    question: "Innovation is the transformation of an idea into useful application.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Innovation means transforming an idea into something useful, such as a product, service, process, or application that creates value.",
+    amharicExplanation: "Innovation ማለት አንድን ሀሳብ ወደ ጠቃሚ ነገር መቀየር ነው። ለምሳሌ ሀሳብን ወደ ጠቃሚ ምርት፣ አገልግሎት፣ ሂደት ወይም መተግበሪያ መቀየር ነው።"
+},
+
+{
+    question: "Economic risk refers to the potential instability and violence in a country.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Political risk refers to instability, conflict, and violence caused by political conditions. Economic risk is related to financial and economic conditions such as inflation, market changes, and financial losses.",
+    amharicExplanation: "የፖለቲካ ስጋት (Political risk) በአገር ውስጥ ከሚከሰት አለመረጋጋት፣ ግጭት እና ሁከት ጋር ይያያዛል። የኢኮኖሚ ስጋት ደግሞ ከዋጋ ግሽበት፣ ከገበያ ለውጥ እና ከገንዘብ ኪሳራ ጋር ይያያዛል።"
+},
+
+{
+    question: "Quality refers to improvement of goods/services to meet the customer's need in a way that exceeds the customer's expectations.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Quality means providing goods or services that meet customer needs and, ideally, exceed customer expectations. Higher quality improves customer satisfaction.",
+    amharicExplanation: "ጥራት ማለት የደንበኛውን ፍላጎት የሚያሟላ እና ከሚጠብቀውም በላይ ሊሆን የሚችል ምርት ወይም አገልግሎት ማቅረብ ነው። ጥራት ሲሻሻል የደንበኛ እርካታም ይጨምራል።"
+},
+
+{
+    question: "During which one of the following periods was the word entrepreneur used to refer to a person managing large commercial projects through the resources provided to him?",
+    options: [
+        "the ancient period",
+        "the 17th Century",
+        "the 18th Century",
+        "the late 19th and early 20th"
+    ],
+    answer: 0,
+    englishExplanation: "During the ancient period, the term was associated with people who managed large projects using resources provided to them. They acted mainly as project managers rather than modern entrepreneurs.",
+    amharicExplanation: "በጥንት ዘመን ይህ ቃል በዋናነት የተሰጣቸውን ሀብት በመጠቀም ትላልቅ ፕሮጀክቶችን ለሚያስተዳድሩ ሰዎች ይጠቀም ነበር። እነሱ ከዘመናዊ ሥራ ፈጣሪዎች ይልቅ እንደ የፕሮጀክት አስተዳዳሪዎች ይሰሩ ነበር።"
+},
+
+{
+    question: "Mr. Yonas & Atenafu were employees of Research & Development department in B.G.I Ethiopia. This can be an example of which type of entrepreneurs?",
+    options: [
+        "Intrapreneur",
+        "Individual entrepreneur",
+        "Self-employed Entrepreneur"
+    ],
+    answer: 0,
+    englishExplanation: "Yonas and Atenafu are employees working inside an established company. If they develop new products or ideas using the company's resources, they are examples of intrapreneurs.",
+    amharicExplanation: "ዮናስ እና አጤናፉ በነባር ትልቅ ኩባንያ ውስጥ የሚሰሩ ሠራተኞች ናቸው። የኩባንያውን ሀብት በመጠቀም አዲስ ምርት ወይም ሀሳብ ካዳበሩ፣ Intrapreneur ይባላሉ።"
+},
+
+{
+    question: "............. is someone who started, acquired or franchised his/her own independent organization.",
+    options: [
+        "Intrapreneur",
+        "Intrapreneurship",
+        "Entrepreneurial Organization",
+        "Individual entrepreneur",
+        "All except 'C'",
+        "None"
+    ],
+    answer: 3,
+    englishExplanation: "An individual entrepreneur is a person who starts, acquires, or franchises an independent organization and manages the business independently.",
+    amharicExplanation: "Individual entrepreneur ማለት የራሱን ነጻ ድርጅት የሚጀምር፣ የሚገዛ ወይም ፍራንቻይዝ የሚያደርግ እና ንግዱን በራሱ የሚያስተዳድር ሰው ነው።"
+},
+
+{
+    question: "Which is a process?",
+    options: [
+        "Entrepreneur",
+        "Entrepreneurship",
+        "Entrepreneurial",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "An entrepreneur is a person, while entrepreneurial describes the characteristics or activities related to entrepreneurship. Entrepreneurship is the process of identifying opportunities, starting, and developing a business.",
+    amharicExplanation: "Entrepreneur ማለት ሰው ነው። Entrepreneurial ደግሞ ከሥራ ፈጣሪነት ጋር የተያያዙ ባህሪያትን የሚገልጽ ቃል ነው። Entrepreneurship ግን ዕድልን መለየት፣ ንግድን መጀመር እና ማሳደግን የሚያካትት ሂደት ነው።"
+},{         question: "Which one of the following is not true about entrepreneurship?",         options: [             "It involves creative and innovative action",             "Entrepreneurs take risks in converting ideas into action",             "Entrepreneurship is limited to some class, community, gender, and religion",             "It is the process of creating and building something of value from practically nothing",             "It is a creative and innovative response to the environment"         ],         answer: 2,         englishExplanation: "The correct answer is C. Entrepreneurship is not limited by social class, community, gender, or religion. Anyone can become an entrepreneur if they identify an opportunity and are willing to create value.",         amharicExplanation: "ትክክለኛው መልስ C ነው። ሥራ ፈጣሪነት በማህበራዊ ደረጃ፣ በማህበረሰብ፣ በፆታ ወይም በሃይማኖት አይገደብም። ማንኛውም ሰው ዕድልን በመለየት እና ዋጋ በመፍጠር ሥራ ፈጣሪ መሆን ይችላል።"     },     {         question: "Which one of the following is not an entrepreneurial task?",         options: [             "Owning organizations",             "Founding new organizations",             "Bringing usual products to market",             "Application of expertise",             "All"         ],         answer: 2,         englishExplanation: "The correct answer is C. Entrepreneurship is strongly associated with creating, improving, or introducing innovative products and services. Simply bringing an ordinary product to the market without innovation is not considered a key entrepreneurial task.",         amharicExplanation: "ትክክለኛው መልስ C ነው። ሥራ ፈጣሪነት ከፈጠራ፣ ከማሻሻያ እና አዳዲስ ምርቶችን ከማምጣት ጋር በጣም ይያያዛል። የተለመደ ምርትን ያለምንም ፈጠራ ወደ ገበያ ማምጣት ዋና የሥራ ፈጣሪ ተግባር አይደለም።"     },     {         question: "___ Skill is the ability to see past the firm offerings and their features, to be able to see how they satisfy the customers' needs and why customers find them attractive.",         options: [             "Planning",             "Marketing",             "Financial",             "Time Management"         ],         answer: 1,         englishExplanation: "The correct answer is B, Marketing. Marketing skill helps an entrepreneur understand customer needs and determine why customers are attracted to a particular product or service.",         amharicExplanation: "ትክክለኛው መልስ B፣ Marketing ነው። የግብይት ክህሎት ኢንተርፕሪነሩ የደንበኞችን ፍላጎት እንዲረዳ እና ደንበኞች ለምን ለአንድ ምርት ወይም አገልግሎት እንደሚሳቡ እንዲያውቅ ይረዳል።"     },     {         question: "In which step of creativity does a person keep the assembled information in mind for a while?",         options: [             "Problem Recognition",             "Immersion",             "Incubation",             "Insight"         ],         answer: 2,         englishExplanation: "The correct answer is C, Incubation. During incubation, a person takes a break from consciously working on the problem while the mind continues to process the collected information.",         amharicExplanation: "ትክክለኛው መልስ C፣ Incubation ነው። Incubation ማለት ሰውዬው በችግሩ ላይ በቀጥታ መስራት ለጊዜው አቁሞ፣ አእምሮው የተሰበሰበውን መረጃ በውስጥ ሲያስተናግድ የሚከናወን የፈጠራ ደረጃ ነው።"     },     {         question: "The first step in the entrepreneurial creativity process is:",         options: [             "Information gathering",             "Idea generation",             "Ignoring all existing information",             "Problem Recognition"         ],         answer: 3,         englishExplanation: "The correct answer is D, Problem Recognition. The creative process begins by recognizing a problem, need, or gap that requires a solution. After recognizing it, information can be gathered and ideas can be developed.",         amharicExplanation: "ትክክለኛው መልስ D፣ Problem Recognition ነው። የፈጠራ ሂደት በችግር፣ በፍላጎት ወይም በገበያ ክፍተት መለየት ይጀምራል። ከዚያ መረጃ ይሰበሰባል እና አዳዲስ ሀሳቦች ይመነጫሉ።"     },     {         question: "Which of the following is not a benefit of quality?",         options: [             "Improved the waste",             "Cost effectiveness",             "Increased market share",             "Better profitability"         ],         answer: 0,         englishExplanation: "The correct answer is A. Quality should reduce waste, not improve waste. High quality can reduce errors and waste, lower costs, increase customer satisfaction, and improve profitability.",         amharicExplanation: "ትክክለኛው መልስ A ነው። ጥራት ቆሻሻን ማሻሻል ሳይሆን ቆሻሻን እና ብክነትን መቀነስ ይረዳል። ከፍተኛ ጥራት ወጪን ሊቀንስ፣ የገበያ ድርሻን ሊያሳድግ እና ትርፍን ሊያሻሽል ይችላል።"     },     {         question: "Which one of the following is odd?",         options: [             "Time Management Skills",             "Marketing Skills",             "Delegation Skill",             "Financial Skill",             "None"         ],         answer: 2,         englishExplanation: "The correct answer is C, Delegation Skill. Delegation mainly involves assigning responsibilities to other people, while time management, marketing, and financial skills are more specific functional or personal skills.",         amharicExplanation: "ትክክለኛው መልስ C፣ Delegation Skill ነው። Delegation ማለት ሥራን እና ኃላፊነትን ለሌሎች ሰዎች መመደብ ነው። የጊዜ፣ የግብይት እና የፋይናንስ ክህሎቶች ግን የተወሰኑ የሥራ ወይም የግል ክህሎቶች ናቸው።"     },     {         question: "The use of informal networks by entrepreneurs to gather information is known as",         options: [             "Secondary research",             "Entrepreneurial networking",             "Informal parameters",             "Marketing"         ],         answer: 1,         englishExplanation: "The correct answer is B, Entrepreneurial networking. It means using personal contacts, relationships, and informal networks to obtain useful information, advice, and business opportunities.",         amharicExplanation: "ትክክለኛው መልስ B፣ Entrepreneurial networking ነው። ይህ ማለት ኢንተርፕሪነሮች የግል ግንኙነቶቻቸውን እና መደበኛ ያልሆኑ ኔትወርኮችን በመጠቀም ጠቃሚ የንግድ መረጃ፣ ምክር እና የንግድ እድሎችን ማግኘት ነው።"     },     {         question: "Innovation can best be defined as",         options: [             "The generation of new ideas",             "The evolution of new ideas",             "The opposite of creativity",             "The successful exploitation of new ideas"         ],         answer: 3,         englishExplanation: "The correct answer is D. Innovation is more than generating an idea. It involves successfully applying, implementing, or exploiting a new idea to create useful value.",         amharicExplanation: "ትክክለኛው መልስ D ነው። Innovation ማለት አዲስ ሀሳብ ማፍራት ብቻ አይደለም። አዲሱን ሀሳብ በተሳካ ሁኔታ ተግባራዊ በማድረግ ጠቃሚ ዋጋ መፍጠር ነው።"     },     {         question: "Which is NOT a disadvantage of entrepreneurship?",         options: [             "Risky",             "Uncertain income",             "You are the boss",             "Work long hours"         ],         answer: 2,         englishExplanation: "The correct answer is C, You are the boss. Being your own boss is an advantage because it gives an entrepreneur independence and control over business decisions. Risk, uncertain income, and long working hours can be disadvantages.",         amharicExplanation: "ትክክለኛው መልስ C፣ You are the boss ነው። የራስዎ አለቃ መሆን ጥቅም ነው፤ ምክንያቱም ነጻነትን እና በንግድ ውሳኔዎች ላይ ቁጥጥርን ይሰጣል። አደጋ፣ ያልተረጋጋ ገቢ እና ረጅም የሥራ ሰዓት ግን ጉዳቶች ሊሆኑ ይችላሉ።"     },     {         question: "Which entrepreneurial skill is the ability to understand what is wanted from a situation, what is motivating others in that situation, and recognize the possibilities of maximizing the outcomes for all parties?",         options: [             "Motivation Skills",             "Delegation Skills",             "Leadership Skills",             "Negotiation Skills",             "None"         ],         answer: 3,         englishExplanation: "The correct answer is D, Negotiation Skills. Negotiation involves understanding what each party wants, understanding their motivations, and finding an outcome that benefits all sides as much as possible.",         amharicExplanation: "ትክክለኛው መልስ D፣ Negotiation Skills ነው። የድርድር ክህሎት ማለት እያንዳንዱ ወገን ምን እንደሚፈልግ እና ምን እንደሚያነሳሳው መረዳት እና ለሁሉም ወገኖች የሚቻለውን ጥቅም የሚያመጣ ውጤት ማግኘት ነው።"     },     {         question: "Mr. Ermiyas is able to make decisions on his own, incorporating the suggestions and ideas of others as part of that process. This refers to which quality of a successful entrepreneur?",         options: [             "Persuasion",             "Demanding for efficiency",             "Building self-confidence",             "All of the above"         ],         answer: 2,         englishExplanation: "The correct answer is C, Building self-confidence. A self-confident entrepreneur can make independent decisions while still listening to and considering useful suggestions from others.",         amharicExplanation: "ትክክለኛው መልስ C፣ Building self-confidence ነው። ራስን የሚያምን ኢንተርፕሪነር የራሱን ውሳኔ ማድረግ ይችላል፣ በተመሳሳይ ጊዜም ጠቃሚ የሌሎችን ምክርና ሀሳብ ለመቀበል ክፍት ይሆናል።"     },     {         question: "Which of the following is not an environmental factor that hinders entrepreneurial growth?",         options: [             "Reduction of the cost of inputs",             "Sudden political upsurge",             "Ideological and social conflicts",             "Unreliable supply of inputs",             "None"         ],         answer: 0,         englishExplanation: "The correct answer is A, Reduction of the cost of inputs. Lower input costs can help entrepreneurs by reducing production expenses and improving profitability. The other factors can create difficulties for business growth.",         amharicExplanation: "ትክክለኛው መልስ A፣ Reduction of the cost of inputs ነው። የግብዓት ዋጋ መቀነስ የምርት ወጪን ስለሚቀንስ ለንግድ እድገት ይረዳል። ሌሎቹ አማራጮች ግን የንግድ እድገትን ሊያደናቅፉ ይችላሉ።"     },     {         question: "Which of the following is/are motives for starting one's own business except",         options: [             "Need for autonomy",             "Financial incentives",             "Threat of unemployment",             "None of the above"         ],         answer: 3,         englishExplanation: "The correct answer is D, None of the above. The need for independence, financial benefits, and the threat of unemployment can all motivate a person to start their own business. Therefore, none of A, B, or C is an exception.",         amharicExplanation: "ትክክለኛው መልስ D፣ None of the above ነው። ነጻነትን መፈለግ፣ የገንዘብ ጥቅም ማግኘት እና የሥራ አጥነት ስጋት ሁሉም ሰው የራሱን ንግድ እንዲጀምር ሊያነሳሱት ይችላሉ። ስለዚህ ከA፣ B እና C ውስጥ ምንም አንዱ ልዩ መልስ አይደለም።"     },     {         question: "Which of the following is/are not barriers of creativity?",         options: [             "Believing that I am creative",             "Focusing on being logical",             "Blindly following the rules",             "Constantly being practical"         ],         answer: 0,         englishExplanation: "The correct answer is A, Believing that I am creative. Believing in your creative ability can encourage creativity. In contrast, rigidly focusing on logic, blindly following rules, and being overly practical can restrict creative thinking.",         amharicExplanation: "ትክክለኛው መልስ A፣ Believing that I am creative ነው። ራስን ፈጣሪ እንደሆነ ማመን ፈጠራን የሚያበረታታ ነው። በሎጂክ ብቻ ላይ ማተኮር፣ ደንቦችን በጭፍን መከተል እና ሁልጊዜ ተግባራዊ ብቻ መሆን ግን ፈጠራን ሊገድቡ ይችላሉ።"     },     {         question: "_______ is the process of combining resources to pursue a market opportunity identified.",         options: [             "Getting the idea",             "Opportunity Identification",             "Opportunity development",             "Opportunity Evaluation"         ],         answer: 2,         englishExplanation: "The correct answer is C, Opportunity development. After identifying an opportunity, the entrepreneur develops it by bringing together resources such as money, people, materials, and knowledge to pursue the opportunity.",         amharicExplanation: "ትክክለኛው መልስ C፣ Opportunity development ነው። የገበያ ዕድልን ከለዩ በኋላ ገንዘብ፣ ሰዎች፣ ቁሳቁሶች እና እውቀት ያሉ ሀብቶችን በማዋሃድ ዕድሉን ለመከታተል የሚደረገው ሂደት Opportunity development ይባላል።"     },     {         question: "All are true statements Except:",         options: [             "Local artisanship serves as a source of business idea",             "The external environment possesses both opportunities and threats",             "An entrepreneur's childhood experience can be a base for his business endeavour",             "Business opportunity with a deselected demand is the one that an entrepreneur should look for",             "None"         ],         answer: 3,         englishExplanation: "The correct answer is D. Entrepreneurs should look for opportunities where there is strong, existing, or growing customer demand. A business opportunity with decreasing or rejected demand is generally not attractive.",         amharicExplanation: "ትክክለኛው መልስ D ነው። ኢንተርፕሪነሮች ጠንካራ፣ ነባር ወይም እያደገ ያለ የደንበኛ ፍላጎት ያለበትን የንግድ ዕድል መፈለግ አለባቸው። የቀነሰ ወይም የተተወ ፍላጎት ያለው ዕድል በአጠቃላይ ለንግድ ማራኪ አይደለም።"     },     {         question: "Which one of the following is true about business idea screening?",         options: [             "Factor scoring is used to reduce the number of business ideas into a few ideas",             "Macro screening is used to reduce the number of business ideas into two",             "Micro Screening is used to reduce the number of business ideas into three",             "All are true statements"         ],         answer: 2,         englishExplanation: "The correct answer is C, Micro Screening is used to reduce the number of business ideas into three. Micro screening provides a more detailed evaluation and helps narrow the ideas down to a small number of promising alternatives.",         amharicExplanation: "ትክክለኛው መልስ C ነው። Micro Screening የንግድ ሀሳቦችን በዝርዝር በመገምገም ቁጥራቸውን ወደ ሦስት ተስፋ ሰጪ ሀሳቦች ለማጥበብ የሚረዳ የማጣሪያ ሂደት ነው።"     },     {         question: "Which of the following is NOT a common motivation of an entrepreneur?",         options: [             "Desire for independence",             "Search for personal and professional growth",             "Desire to maintain the status quo",             "Search for more rewarding work"         ],         answer: 2,         englishExplanation: "The correct answer is C, Desire to maintain the status quo. Entrepreneurs are generally motivated by change, growth, independence, innovation, and creating new value. Maintaining the status quo means keeping things unchanged, which is not a common entrepreneurial motivation.",         amharicExplanation: "ትክክለኛው መልስ C፣ Desire to maintain the status quo ነው። ኢንተርፕሪነሮች በአጠቃላይ ለለውጥ፣ ለእድገት፣ ለነጻነት፣ ለፈጠራ እና አዲስ ዋጋ ለመፍጠር ይነሳሳሉ። ነባራዊ ሁኔታን ብቻ ማስቀጠል ግን የተለመደ የኢንተርፕሪነር ተነሳሽነት አይደለም።"     },     {         question: "Positive external trends or changes that provide unique and distinct possibilities for innovating and creating value are called ______.",         options: [             "Weaknesses",             "Strengths",             "Threats",             "Opportunities"         ],         answer: 3,         englishExplanation: "The correct answer is D, Opportunities. In SWOT analysis, opportunities are positive external factors or changes that can help a business innovate, grow, and create value.",         amharicExplanation: "ትክክለኛው መልስ D፣ Opportunities ነው። በSWOT ትንተና፣ Opportunities ማለት ከውጭ አካባቢ የሚመጡ አዎንታዊ ሁኔታዎች ወይም ለውጦች ሲሆኑ፣ ንግድ እንዲያድግ፣ እንዲፈጥር እና አዲስ ዋጋ እንዲፈጥር እድል ይሰጣሉ።"     },{         question: "Business persons are entrepreneurs, but not all entrepreneurs are business persons.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. The statement is incorrect because entrepreneurs are generally business persons, but not every business person is an entrepreneur. An entrepreneur creates, develops, or innovates a business, while some business persons only manage an existing business.",         amharicExplanation: "ሐሰት ነው። ኢንተርፕሪነር በአጠቃላይ የንግድ ሰው ነው፣ ነገር ግን ሁሉም የንግድ ሰዎች ኢንተርፕሪነር አይደሉም። ኢንተርፕሪነር ንግድን የሚጀምር፣ የሚያሻሽል ወይም አዲስ ነገር የሚፈጥር ሲሆን፣ አንዳንድ የንግድ ሰዎች ግን ነባር ንግድን ብቻ ሊያስተዳድሩ ይችላሉ።"     },     {         question: "Your own past experience as a customer in the marketplace will not help you to come up with new business idea.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. Customer experiences can help entrepreneurs identify problems, unmet needs, and gaps in the market. These observations can lead to new and useful business ideas.",         amharicExplanation: "ሐሰት ነው። የራሳችን የደንበኛነት ተሞክሮ በገበያ ውስጥ ያሉ ችግሮችን፣ ያልተሟሉ ፍላጎቶችን እና የገበያ ክፍተቶችን ለመለየት ይረዳል። ይህም አዲስ የንግድ ሀሳብ ለማመንጨት ይጠቅማል።"     },     {         question: "The best entrepreneurs are passive in facilitating and harnessing the creativity of other people and starting of any business.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. Successful entrepreneurs are active in leading, organizing, and motivating people. They encourage and use the creativity of others to develop ideas and build successful businesses.",         amharicExplanation: "ሐሰት ነው። ምርጥ ኢንተርፕሪነሮች ንቁ ተሳታፊዎች ናቸው። ሰዎችን ይመራሉ፣ ያደራጃሉ እና የሌሎችን ፈጠራ በመጠቀም አዳዲስ ሀሳቦችን እና ስኬታማ ንግዶችን ያዳብራሉ።"     },     {         question: "Entrepreneurs take uncalculated risk when they engage in business activity.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. Entrepreneurs normally take calculated risks. They study the market, consider possible losses and benefits, and make decisions after evaluating the risks.",         amharicExplanation: "ሐሰት ነው። ኢንተርፕሪነሮች በአጠቃላይ የተሰላ አደጋ ይወስዳሉ። ወደ ንግድ ከመግባታቸው በፊት ገበያውን ይመረምራሉ፣ የሚከሰቱ ጉዳቶችን ይገመግማሉ እና ከዚያ ውሳኔ ይወስናሉ።"     },     {         question: "The difference between an entrepreneur and an intrapreneur is that the former is an employee, and the latter is the founder.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. The statement reverses their meanings. An entrepreneur usually starts or owns an independent business, while an intrapreneur is an employee who develops entrepreneurial ideas within an existing organization.",         amharicExplanation: "ሐሰት ነው። መግለጫው ትርጉማቸውን በተቃራኒ ያስቀምጣል። Entrepreneur ማለት የራሱን ንግድ የሚጀምር ወይም የሚመራ ሰው ሲሆን፣ Intrapreneur ማለት በነባር ድርጅት ውስጥ እንደ ኢንተርፕሪነር የሚሰራ ሠራተኛ ነው።"     },     {         question: "An intrapreneur is a person who does entrepreneurial work within a large organization.",         options: ["True", "False"],         answer: 0,         englishExplanation: "True. An intrapreneur is an employee who acts entrepreneurially inside an existing organization by creating new ideas, products, services, or improvements.",         amharicExplanation: "እውነት ነው። Intrapreneur ማለት በነባር ትልቅ ድርጅት ውስጥ እንደ ኢንተርፕሪነር የሚሰራ ሠራተኛ ነው። አዳዲስ ሀሳቦችን፣ ምርቶችን ወይም አገልግሎቶችን ማዳበር ይችላል።"     },     {         question: "In the 18th Century, a person who had signed a contractual agreement with the government to provide specific products or to perform services was considered an entrepreneur.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. In the historical development of entrepreneurship, this description belongs to the 17th Century rather than the 18th Century.",         amharicExplanation: "ሐሰት ነው። በኢንተርፕሪነርነት ታሪካዊ እድገት ውስጥ፣ ከመንግስት ጋር ውል በመፈራረም የተወሰነ ምርት ወይም አገልግሎት የሚያቀርብ ሰው የሚለው ትርጉም ከ17ኛው ክፍለ ዘመን ጋር ይያያዛል።"     },     {         question: "In the early definitions, entrepreneurship was highly associated with the application of innovation and creativity.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. Early definitions of entrepreneurship focused more on managing commercial projects and resources. Innovation and creativity became more strongly associated with entrepreneurship later.",         amharicExplanation: "ሐሰት ነው። ቀደምት የኢንተርፕሪነርነት ትርጉሞች በዋናነት የንግድ ፕሮጀክቶችን እና የተሰጡ ሀብቶችን ማስተዳደር ላይ ያተኩሩ ነበር። ፈጠራ እና ኢኖቬሽን ከኢንተርፕሪነርነት ጋር በኋላ በጥብቅ ተያያዙ።"     },     {         question: "The term entrepreneur was defined and understood in a similar way in the past.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. The meaning of entrepreneur has changed over time. Earlier definitions emphasized managing projects and taking risks, while modern definitions also emphasize innovation, creativity, problem-solving, and value creation.",         amharicExplanation: "ሐሰት ነው። Entrepreneur የሚለው ቃል ትርጉም በጊዜ ሂደት ተለውጧል። ቀደም ሲል በፕሮጀክት አስተዳደርና አደጋ መውሰድ ላይ ያተኩር ነበር፤ ዛሬ ግን ፈጠራን፣ ችግር መፍታትን እና ዋጋ መፍጠርንም ያካትታል።"     },     {         question: "Idea is more concrete, practical, and specific than opportunity.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. An opportunity is more concrete, practical, and specific than an idea. An idea is a general thought, while an opportunity has greater potential to be developed into a viable business.",         amharicExplanation: "ሐሰት ነው። Opportunity ከIdea የበለጠ ተጨባጭ፣ ተግባራዊ እና የተወሰነ ነው። Idea አጠቃላይ ሀሳብ ሲሆን፣ Opportunity ደግሞ ወደ ተግባራዊ ንግድ ሊለወጥ የሚችል የተሻለ እድል ነው።"     },     {         question: "An individual entrepreneur is someone who started a business with his/her friend by acquiring or franchising it and manages the operation with members.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. An individual entrepreneur is a person who independently starts, acquires, or franchises and manages their own business. The statement incorrectly describes a business started and managed with other people.",         amharicExplanation: "ሐሰት ነው። Individual entrepreneur ማለት የራሱን ነጻ ንግድ በግል የሚጀምር፣ የሚገዛ ወይም ፍራንቻይዝ የሚያደርግ ሰው ነው። ከጓደኛ ጋር በጋራ ንግድ ማስጀመር የIndividual entrepreneur ትርጉም አይደለም።"     },     {         question: "A business can only be successful if the people who make it up are properly directed and are committed to make an effort on its behalf.",         options: ["True", "False"],         answer: 0,         englishExplanation: "True. A business needs people who are properly guided, organized, and committed to achieving its goals. Good leadership and employee commitment contribute greatly to business success.",         amharicExplanation: "እውነት ነው። ንግድ ሥራ ስኬታማ ለመሆን ሠራተኞች በትክክል መመራት፣ መደራጀት እና ለሥራቸው ቁርጠኛ መሆን አለባቸው። ጥሩ አመራርና የሠራተኞች ቁርጠኝነት ለንግድ ስኬት በጣም ይረዳሉ።"     },     {         question: "Entrepreneurial task prohibits females from undertaking their own business.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. Entrepreneurship is not limited by gender. Women and men can both start, own, and manage businesses and participate in entrepreneurial activities.",         amharicExplanation: "ሐሰት ነው። ኢንተርፕሪነርነት በፆታ የተገደበ አይደለም። ሴቶችም ሆኑ ወንዶች የራሳቸውን ንግድ መጀመር፣ መያዝ እና ማስተዳደር ይችላሉ።"     },     {         question: "Innovation is the transformation of an idea into useful application.",         options: ["True", "False"],         answer: 0,         englishExplanation: "True. Innovation means turning an idea into a useful practical application, product, service, or improvement that creates value.",         amharicExplanation: "እውነት ነው። Innovation ማለት አንድን ሀሳብ ወደ ጠቃሚ እና ተግባራዊ አተገባበር፣ ምርት፣ አገልግሎት ወይም ማሻሻያ መለወጥ ማለት ነው።"     },     {         question: "Economic risk refers to the potential instability and violence in a country.",         options: ["True", "False"],         answer: 1,         englishExplanation: "False. Instability and violence in a country are mainly associated with political risk. Economic risk refers to possible financial losses caused by economic conditions such as inflation, recession, or market changes.",         amharicExplanation: "ሐሰት ነው። በአንድ አገር ያለ አለመረጋጋትና ጥቃት በዋናነት ከPolitical Risk ጋር ይያያዛል። Economic Risk ደግሞ በዋጋ ንረት፣ በኢኮኖሚ ውድቀት ወይም በገበያ ለውጥ ምክንያት ሊከሰት የሚችል የፋይናንስ ኪሳራ አደጋ ነው።"     },     {         question: "Quality refers to improvement of goods/services to meet the customer's need in a way that exceeds the customer's expectations.",         options: ["True", "False"],         answer: 0,         englishExplanation: "True. Quality means providing goods or services that meet customer needs and, at a high level, exceed customer expectations.",         amharicExplanation: "እውነት ነው። Quality ማለት ዕቃ ወይም አገልግሎት የደንበኛውን ፍላጎት እንዲያሟላ ማድረግ እና ከደንበኛው የሚጠበቀውን ጥራት እንኳን ማለፍ ነው።"     },     {         question: "During which one of the following periods was the word entrepreneur used to refer to a person managing large commercial projects through the resources provided to him?",         options: ["The ancient period", "The 17th Century", "The 18th Century", "The late 19th and early 20th Century"],         answer: 0,         englishExplanation: "The correct answer is the ancient period. In the early historical understanding, an entrepreneur was viewed as a person who managed large commercial projects using resources provided by others.",         amharicExplanation: "ትክክለኛው መልስ የጥንት ዘመን ነው። በቀደምት ታሪካዊ ትርጉም፣ ኢንተርፕሪነር ማለት በሌሎች የተሰጡትን ሀብቶች በመጠቀም ትልልቅ የንግድ ፕሮጀክቶችን የሚያስተዳድር ሰው ነበር።"     },     {         question: "Mr. Yonas and Atenafu were employees of the Research and Development department in B.G.I Ethiopia and introduced a new product line known as 'SINQE' alcohol-free beer. This can be an example of which type of entrepreneurs?",         options: ["Intrapreneur", "Individual entrepreneur", "Self-employed entrepreneur"],         answer: 0,         englishExplanation: "The correct answer is Intrapreneur. Yonas and Atenafu were employees of an existing organization, but they developed and introduced an innovative new product within that organization. This is the main idea of intrapreneurship.",         amharicExplanation: "ትክክለኛው መልስ Intrapreneur ነው። Yonas እና Atenafu በነባር ድርጅት ውስጥ ሠራተኞች ሆነው አዲስ እና ፈጠራዊ ምርት አምጥተዋል። በነባር ድርጅት ውስጥ እንደ ኢንተርፕሪነር መስራት Intrapreneurship ይባላል።"     },     {         question: "................. is someone who started, acquired or franchised his/her own independent organization.",         options: ["Intrapreneur", "Individual entrepreneur", "Entrepreneurial organization", "All except 'C'", "None"],         answer: 1,         englishExplanation: "The correct answer is Individual entrepreneur. An individual entrepreneur is a person who starts, acquires, or franchises an independent business organization and manages it as their own business.",         amharicExplanation: "ትክክለኛው መልስ Individual entrepreneur ነው። Individual entrepreneur ማለት የራሱን ነጻ የንግድ ድርጅት የሚጀምር፣ የሚገዛ ወይም ፍራንቻይዝ የሚያደርግ እና ንግዱን የሚያስተዳድር ግለሰብ ነው።"     },     {         question: "Which is a process?",         options: ["Entrepreneur", "Entrepreneurship", "Entrepreneurial", "None"],         answer: 1,         englishExplanation: "The correct answer is Entrepreneurship. Entrepreneurship is a process that involves identifying opportunities, creating a business, organizing resources, taking calculated risks, and creating value. An entrepreneur is the person, while entrepreneurial is an adjective.",         amharicExplanation: "ትክክለኛው መልስ Entrepreneurship ነው። Entrepreneurship ማለት የንግድ እድልን መለየት፣ ንግድ መጀመር፣ ሀብትን ማደራጀት፣ የተሰላ አደጋ መውሰድ እና ዋጋ መፍጠርን የሚያካትት ሂደት ነው። Entrepreneur ሰውን ይገልጻል፣ Entrepreneurial ደግሞ ገላጭ ቃል ነው።"     }],
         2: [],
         3: [],
         4: [{
