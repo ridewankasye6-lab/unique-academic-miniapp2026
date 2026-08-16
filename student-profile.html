@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Profile - Unique Academic</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<!-- =====================================
+     TOP NAVIGATION
+===================================== -->
+
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">
+            👤
+        </span>
+
+        <div>
+
+            <h1>
+                Student Profile
+            </h1>
+
+            <p>
+                Unique Academic
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     PROFILE PAGE
+===================================== -->
+
+<main class="profilePage">
+
+
+    <!-- PROFILE HEADER -->
+
+    <section class="profileCard">
+
+        <div class="profileAvatarLarge">
+            👤
+        </div>
+
+
+        <h2 id="profileName">
+            Student
+        </h2>
+
+
+        <p id="profileEmail">
+            Student Account
+        </p>
+
+
+        <span class="profileStatus">
+            🟢 Active Student
+        </span>
+
+    </section>
+
+
+
+    <!-- =====================================
+         ACCOUNT INFORMATION
+    ===================================== -->
+
+    <section class="profileSection">
+
+        <h2>
+            📋 Account Information
+        </h2>
+
+
+        <div class="profileInfoCard">
+
+            <div class="profileRow">
+
+                <span>
+                    👤 Name
+                </span>
+
+                <strong id="studentName">
+                    Student
+                </strong>
+
+            </div>
+
+
+            <div class="profileRow">
+
+                <span>
+                    📧 Email
+                </span>
+
+                <strong id="studentEmail">
+                    Not available
+                </strong>
+
+            </div>
+
+
+            <div class="profileRow">
+
+                <span>
+                    🎓 Status
+                </span>
+
+                <strong>
+                    Active Student
+                </strong>
+
+            </div>
+
+
+            <div class="profileRow">
+
+                <span>
+                    📚 Program
+                </span>
+
+                <strong>
+                    Freshman
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         STUDY INFORMATION
+    ===================================== -->
+
+    <section class="profileSection">
+
+        <h2>
+            📚 My Learning
+        </h2>
+
+
+        <div class="profileStats">
+
+
+            <div class="profileStat">
+
+                <div class="profileStatIcon">
+                    📖
+                </div>
+
+                <strong>
+                    12
+                </strong>
+
+                <span>
+                    Subjects
+                </span>
+
+            </div>
+
+
+            <div class="profileStat">
+
+                <div class="profileStatIcon">
+                    📝
+                </div>
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    Quizzes
+                </span>
+
+            </div>
+
+
+            <div class="profileStat">
+
+                <div class="profileStatIcon">
+                    ⭐
+                </div>
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    Bookmarks
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         QUICK ACTIONS
+    ===================================== -->
+
+    <section class="profileSection">
+
+        <h2>
+            ⚡ Quick Actions
+        </h2>
+
+
+        <div class="profileActions">
+
+
+            <a
+                href="index.html#subjects"
+                class="profileAction"
+            >
+
+                📚
+
+                <span>
+                    Browse Subjects
+                </span>
+
+                <b>
+                    ›
+                </b>
+
+            </a>
+
+
+            <a
+                href="index.html#subjects"
+                class="profileAction"
+            >
+
+                📝
+
+                <span>
+                    Take a Quiz
+                </span>
+
+                <b>
+                    ›
+                </b>
+
+            </a>
+
+
+            <button
+                id="profileRefreshBtn"
+                class="profileAction"
+                type="button"
+            >
+
+                🔄
+
+                <span>
+                    Refresh Profile
+                </span>
+
+                <b>
+                    ›
+                </b>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         LOGOUT
+    ===================================== -->
+
+    <section class="profileLogout">
+
+        <button
+            id="profileLogoutBtn"
+            type="button"
+        >
+
+            🚪 Logout
+
+        </button>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+
+        history.back();
+
+    } else {
+
+        window.location.href = "index.html";
+
+    }
+
+};
+
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+
+document.getElementById("profileRefreshBtn").onclick = function () {
+
+    location.reload();
+
+};
+
+
+document.getElementById("profileLogoutBtn").onclick = function () {
+
+    const confirmLogout =
+        confirm("Are you sure you want to logout?");
+
+    if (confirmLogout) {
+
+        window.location.href = "student-login.html";
+
+    }
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
+</body>
+
+</html>
