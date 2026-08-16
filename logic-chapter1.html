@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Logic - Chapter 1</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">⚖️</span>
+
+        <div>
+            <h1>Logic</h1>
+            <p>Chapter 1</p>
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📗 Logic</h1>
+    <h1>⚖️ Logic</h1>
 
-<h2>Chapter 1</h2>
-
-<p>
+    <h2>Chapter 1</h2>
 
 <h2>#Logic and Critical Thinking. Chapter One - Introducing Philosophy.</h2>
 <p><b>እሺ ዛሬ የምንማረው የ Logic and Critical Thinking ኮርስን ነው። ስለ ኮርሱ አንዳንድ ነገር ልበላችሁ።</b></p>
@@ -328,25 +376,43 @@ teleological aspect የሚያጠናው ሀይማኖታዊ አስተምህሮቶ�
 <p><b>ምን አይነት የመንግስት አይነት ነው የተሻለው? ለህብረተሰቡ የትኛው የኢኮኖሚ ስርአት የተሻለ ነው? ፍትህ/ኢፍትሀዊነት ምን ማለት ነው? ድርጊት/ፍርድ ፍትሀዊ ወይምኢ ፍትሀዊ የሚያደርገውምንድን ነው? ማህበረሰብ ምንድን ነው? ህብረተሰብ አለ ወይ? ከሆነስ እንዴት ወደ መኖር ይመጣል? ሲቪል ማህበረሰብ እና መንግስት እንዴት ሊፈጠር ቻሉ? ሁሉንም የመንግስት ህጎች የማክበር ግዴታ አለብን? የመንግስት አላማምንድን ነው? የወዘተ የ Social/political philosophy ጥያቄዎች ና ጥናቶች ናቸው።የዛሬው ክላስ በዚህ አበቃ።</b></p>
 <p><b>ተወዳጅች ሆይ ስለዚህ Chapter one ላይ ሰለ Philosophy ምንነት ተምረናል። ስለ Basic features of philosophy ተምረናል። ስለ Philosophy አይነቶችማለትም ስለ Meta physics, ስለ Epistemology , ስለ Axiology ተምረናል። ስለ ሎጂክ ደግሞ ቻፕተር 2 ላይ ስለምንማር ፤ እዚህ ላይ ማብራራቱ አያስፈልግም። ቻፕተር 1 ላይ የሚቀረን ስለ philosophy ማጥናት ያለውጠቀሜታ ምንድን ነው የሚለውይቀረናል። እሱ ደግሞ ደረቅ ንባብ ነው ፤ ፈተና ላይም አያስቸግርም አንብቡት ሞጁላችሁ ላይ አለ።</b></p>
 
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="logic.html">⬅ Back to Logic</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="logic.html">
-⬅ Back
-</a>
-
-<a href="logic-chapter2.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = "logic.html";
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href = "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
