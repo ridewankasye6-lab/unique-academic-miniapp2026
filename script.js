@@ -637,3 +637,166 @@ if (menuModeBtn) {
     };
 
 }
+// =====================================================
+// UNIQUE ACADEMIC SIDE MENU
+// =====================================================
+
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+
+// OPEN MENU
+
+menuBtn.addEventListener("click", function () {
+
+    sideMenu.classList.add("active");
+    menuOverlay.classList.add("active");
+
+});
+
+
+// CLOSE MENU
+
+menuOverlay.addEventListener("click", function () {
+
+    sideMenu.classList.remove("active");
+    menuOverlay.classList.remove("active");
+
+});
+
+
+// CLOSE WITH ESCAPE
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+
+        sideMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+
+    }
+
+});
+
+
+// =====================================================
+// REFRESH
+// =====================================================
+
+const refreshBtn =
+    document.getElementById("refreshBtn");
+
+if (refreshBtn) {
+
+    refreshBtn.addEventListener("click", function () {
+
+        window.location.reload();
+
+    });
+
+}
+
+
+// =====================================================
+// SHARE APP
+// =====================================================
+
+const shareAppBtn =
+    document.getElementById("shareAppBtn");
+
+if (shareAppBtn) {
+
+    shareAppBtn.addEventListener("click", async function () {
+
+        const shareData = {
+
+            title: "Unique Academic",
+
+            text:
+                "Learn smarter with Unique Academic 🎓",
+
+            url:
+                window.location.origin +
+                window.location.pathname
+
+        };
+
+
+        try {
+
+            if (navigator.share) {
+
+                await navigator.share(shareData);
+
+            } else {
+
+                await navigator.clipboard.writeText(
+                    window.location.href
+                );
+
+                alert(
+                    "Unique Academic link copied!"
+                );
+
+            }
+
+        } catch (error) {
+
+            console.log(
+                "Share cancelled."
+            );
+
+        }
+
+    });
+
+}
+
+
+// =====================================================
+// LOGOUT
+// =====================================================
+
+const logoutBtn =
+    document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+
+    logoutBtn.addEventListener("click", function () {
+
+        const confirmed =
+            confirm(
+                "Are you sure you want to logout?"
+            );
+
+
+        if (!confirmed) return;
+
+
+        /*
+         * Clear local student session.
+         */
+
+        localStorage.removeItem(
+            "uniqueAcademicUser"
+        );
+
+        localStorage.removeItem(
+            "studentLoggedIn"
+        );
+
+
+        sessionStorage.clear();
+
+
+        /*
+         * Go to student login.
+         */
+
+        window.location.href =
+            "student-login.html";
+
+    });
+
+}
