@@ -16171,7 +16171,502 @@ const quizData = {
   englishExplanation: "Reactive machine. Reactive machines do not store past experiences or use historical memory for future actions. They respond only to the current input or situation.",
   amharicExplanation: "Reactive machine። Reactive Machines ያለፉትን ልምዶች ወይም መረጃዎችን ለወደፊት ውሳኔ ለመጠቀም አያከማቹም። በአሁኑ ጊዜ በሚያገኙት ግብዓት ላይ ብቻ ተመስርተው ምላሽ ይሰጣሉ።"
 },{   question: "Super AI is a type of intelligence that could perform any intellectual task with efficiency like a human.",   options: ["True", "False"],   answer: 1,   englishExplanation: "False. Super AI refers to Artificial Superintelligence, which would exceed human intelligence and abilities rather than simply perform tasks at the same level as humans.",   amharicExplanation: "ሐሰት። Super AI (Artificial Superintelligence) ማለት የሰውን የአስተሳሰብና የእውቀት ችሎታ ብቻ የሚያመጣጥን ሳይሆን ከሰው በላይ የሚሆን ከፍተኛ የኢንተለጀንስ ደረጃ ነው።" },  {   question: "Even if AI machines do not have feelings, they can make any kind of emotional attachment with humans.",   options: ["True", "False"],   answer: 1,   englishExplanation: "False. AI systems do not have genuine human emotions, so they cannot form real emotional attachments in the same way humans do.",   amharicExplanation: "ሐሰት። AI ማሽኖች እውነተኛ የሰው ስሜት ስለሌላቸው ሰዎች እንደሚፈጥሩት ዓይነት እውነተኛ ስሜታዊ ትስስር መፍጠር አይችሉም።" },  {   question: "No Original Creativity refers to the dependency of humans on AI and because of it not being creative of humans.",   options: ["True", "False"],   answer: 1,   englishExplanation: "False. No Original Creativity means that AI does not have true independent and original creativity like humans. It does not mean that humans depend on AI.",   amharicExplanation: "ሐሰት። No Original Creativity ማለት AI እንደ ሰው ራሱን ችሎ እውነተኛ እና ኦሪጅናል የፈጠራ ሀሳብ የማመንጨት ችሎታ አለመኖሩን ያመለክታል። የሰዎች በAI ላይ ጥገኛ መሆን ማለት አይደለም።" },  {   question: "A major thrust of AI is in the development of computer functions associated with human intelligence.",   options: ["True", "False"],   answer: 0,   englishExplanation: "True. A major goal of AI is to develop computer systems that can perform functions associated with human intelligence, such as learning, reasoning, and problem-solving.",   amharicExplanation: "እውነት። የAI ዋና ትኩረት እንደ መማር፣ ማመዛዘን እና ችግር መፍታት ያሉ ከሰው እውቀት ጋር የተያያዙ ተግባራትን ሊፈጽሙ የሚችሉ የኮምፒውተር ሲስተሞችን ማዳበር ነው።" },  {   question: "Self-driving cars are examples of limited memory AI types.",   options: ["True", "False"],   answer: 0,   englishExplanation: "True. Self-driving cars use limited memory AI because they use recent observations and past data to understand their environment and make driving decisions.",   amharicExplanation: "እውነት። ራሳቸውን የሚነዱ መኪኖች አካባቢያቸውን ለመረዳትና የመንዳት ውሳኔ ለመስጠት የቅርብ ጊዜ ምልከታዎችንና ያለፈ መረጃን ስለሚጠቀሙ Limited Memory AI ውስጥ ይመደባሉ።" },  {   question: "The idea of Artificial General Intelligence is the ability of an AI agent to learn, perceive, understand, and function beyond human being.",   options: ["True", "False"],   answer: 1,   englishExplanation: "False. Artificial General Intelligence (AGI) refers to an AI system that could learn, understand, reason, and perform many different tasks at a human-like level. Intelligence beyond humans is associated with Artificial Superintelligence.",   amharicExplanation: "ሐሰት። Artificial General Intelligence (AGI) ማለት AI እንደ ሰው በተለያዩ ሥራዎች መማር፣ መረዳት፣ ማመዛዘንና መስራት የሚችልበት ደረጃ ነው። ከሰው በላይ የሆነ ኢንተለጀንስ ግን Artificial Superintelligence (ASI) ይባላል።" },  {   question: "Which AI does not store memories or past experiences for future actions?",   options: ["Limited Memory", "Theory of Mind", "Reactive Machines", "Self Awareness"],   answer: 2,   englishExplanation: "Reactive Machines. Reactive Machines are the simplest type of AI. They respond only to the current situation and do not store past experiences for future decisions.",   amharicExplanation: "Reactive Machines። Reactive Machines ቀላሉ የAI ዓይነት ሲሆኑ ያለፉትን ልምዶች አያከማቹም። በአሁኑ ሁኔታ ላይ ብቻ ተመስርተው ምላሽ ይሰጣሉ።" },  {   question: "Playing chess, purchasing suggestions on e-commerce sites, self-driving cars, speech recognition, and image recognition are examples of ___.",   options: ["Narrow AI", "General AI", "Super AI", "None of the above"],   answer: 0,   englishExplanation: "Narrow AI. These systems are designed to perform specific tasks, such as playing chess, recognizing speech, recognizing images, or recommending products.",   amharicExplanation: "Narrow AI። እነዚህ ሲስተሞች እንደ ቼዝ መጫወት፣ ድምፅን መለየት፣ ምስልን መለየት እና ምርት መጠቆም ያሉ የተወሰኑ ሥራዎችን ለመስራት የተነደፉ ናቸው።" },  {   question: "___ AI is a hypothetical concept of AI.",   options: ["Narrow AI", "General AI", "Super AI", "None of the above"],   answer: 2,   englishExplanation: "Super AI. Artificial Superintelligence is a hypothetical form of AI that would be more intelligent and capable than humans in many or all intellectual tasks.",   amharicExplanation: "Super AI። Artificial Superintelligence ከሰው በብዙ የእውቀትና የአስተሳሰብ ሥራዎች የበለጠ ችሎታ ያለው AI እንደሚሆን የሚገልጽ አሁን በንድፈ ሀሳብ ደረጃ ያለ ጽንሰ-ሀሳብ ነው።" },  {   question: "Which one is not an application of AI?",   options: ["Spam filter", "Voice-to-text", "Facebook", "Smart personal assistants (Siri)", "All", "None"],   answer: 5,   englishExplanation: "None. Spam filters, voice-to-text systems, Facebook features, and smart personal assistants such as Siri all use AI technologies. Therefore, none of the listed applications is excluded from AI.",   amharicExplanation: "None። የስፓም ማጣሪያዎች፣ ድምፅን ወደ ጽሑፍ የሚቀይሩ ሲስተሞች፣ Facebook እና እንደ Siri ያሉ የግል ረዳቶች AI ቴክኖሎጂን ይጠቀማሉ። ስለዚህ ከተዘረዘሩት ውስጥ AI መተግበሪያ ያልሆነ የለም።" },  {   question: "All of the following are influencers of AI except:",   options: ["No Original Creativity", "Cloud computing and APIs", "The emergence of data science", "None"],   answer: 0,   englishExplanation: "No Original Creativity. Cloud computing, APIs, and the development of data science have helped AI grow and become more powerful. No Original Creativity is not an influencer of AI.",   amharicExplanation: "No Original Creativity። Cloud computing፣ APIs እና የData Science እድገት AI እንዲያድግ እና እንዲሻሻል የረዱ ነገሮች ናቸው። No Original Creativity ግን AI ን ከሚያሳድጉ ተጽዕኖ ፈጣሪዎች ውስጥ አይደለም።" },  {   question: "Which of the following is not a goal of AI?",   options: ["Plan some surgical operation", "Real life problem solving", "Decrease dependency on machines", "To rule over humans", "A and D", "C and D"],   answer: 5,   englishExplanation: "C and D. AI is designed to help solve real-world problems and perform useful tasks. Decreasing dependency on machines is not a goal of AI, and ruling over humans is also not a goal of AI.",   amharicExplanation: "C እና D። AI ዓላማው የእውነተኛ ዓለም ችግሮችን መፍታትና ጠቃሚ ሥራዎችን ማከናወን ነው። በማሽኖች ላይ ያለንን ጥገኝነት መቀነስ የAI ዓላማ አይደለም፤ ሰዎችን መግዛትም የAI ዓላማ አይደለም።" },  {   question: "Which stage of AI involves systems that have human-like intelligence?",   options: ["Stage 4 – Reasoning Machines", "Stage 5 – Self Aware Systems / Artificial General Intelligence (AGI)", "Stage 6 – Artificial Superintelligence (ASI)", "Stage 7 – Singularity and Transcendence"],   answer: 1,   englishExplanation: "Stage 5 – Self-Aware Systems / Artificial General Intelligence (AGI). In the classification used in this question, Stage 5 represents systems with human-like general intelligence and understanding.",   amharicExplanation: "Stage 5 – Self-Aware Systems / AGI። በዚህ የAI ደረጃ አመዳደብ መሠረት Stage 5 እንደ ሰው የሚመስል አጠቃላይ የማሰብና የመረዳት ችሎታ ያለውን AI ይወክላል።" },  {   question: "What is the category of the current artificial intelligence system?",   options: ["Artificial Super Intelligence", "Artificial General Intelligence", "Artificial Narrow Intelligence", "Artificial Self-Aware Artificial Intelligence"],   answer: 2,   englishExplanation: "Artificial Narrow Intelligence (ANI). Most AI systems available today are designed to perform specific tasks rather than having general human-level intelligence across all areas.",   amharicExplanation: "Artificial Narrow Intelligence (ANI)። በአሁኑ ጊዜ ያሉት አብዛኛዎቹ AI ሲስተሞች በሁሉም ዘርፍ እንደ ሰው ለማሰብ ሳይሆን የተወሰኑ ሥራዎችን ለመፈጸም የተሰሩ ናቸው።" },  {   question: "----------- is the ability to acquire and apply knowledge.",   options: ["Knowledge", "Intelligence", "Experience", "Learning"],   answer: 1,   englishExplanation: "Intelligence. Intelligence is the ability to acquire knowledge, understand it, and apply it effectively to solve problems and make decisions.",   amharicExplanation: "Intelligence። ኢንተለጀንስ ማለት እውቀትን የማግኘት፣ የመረዳት እና ያገኘነውን እውቀት በተገቢው ለመጠቀም ያለን ችሎታ ነው።" },  {   question: "Artificial Intelligence is about ________.",   options: ["Playing a game on Computer", "Making a machine Intelligent", "Programming on Machine with your Own Intelligence", "All"],   answer: 1,   englishExplanation: "Making a machine Intelligent. The main idea of AI is to create machines or computer systems that can perform tasks requiring intelligence, such as learning, reasoning, and decision-making.",   amharicExplanation: "Making a machine Intelligent። የAI ዋና ሀሳብ እንደ መማር፣ ማመዛዘን እና ውሳኔ መስጠት ያሉ የእውቀት ችሎታዎችን ሊፈጽሙ የሚችሉ ማሽኖችን ወይም የኮምፒውተር ሲስተሞችን መፍጠር ነው።" },  {   question: "Artificial Intelligence is a way of _______.",   options: ["Making a computer", "A computer-controlled robot", "Software think intelligently", "All of the above"],   answer: 3,   englishExplanation: "All of the above. AI can involve intelligent software, computer-controlled robots, and computer systems designed to perform tasks that normally require human intelligence.",   amharicExplanation: "All of the above። AI ብልህ ሶፍትዌሮችን፣ በኮምፒውተር የሚቆጣጠሩ ሮቦቶችን እና የሰው እውቀት የሚፈልጉ ሥራዎችን ሊፈጽሙ የሚችሉ የኮምፒውተር ሲስተሞችን ማዘጋጀትን ያጠቃልላል።" },  {   question: "Which of the following areas cannot contribute to building an intelligent system?",   options: ["Neuron science", "Maths", "Computer Science", "Geology", "None"],   answer: 3,   englishExplanation: "Geology. Neuroscience, mathematics, and computer science can contribute to the development of intelligent systems. Geology, which mainly studies the Earth, does not directly contribute to building intelligent systems.",   amharicExplanation: "Geology። Neuroscience፣ Mathematics እና Computer Science ብልህ ሲስተሞችን ለመገንባት ጠቃሚ ናቸው። Geology ግን በዋናነት የምድርን አወቃቀርና ታሪክ የሚያጠና ስለሆነ ብልህ ሲስተም በመገንባት ላይ ቀጥተኛ አስተዋጽኦ የለውም።" }],
-        4: [],
+        4: [{
+  question: "Which management structure of M4DN IoT is used for devices in different networks?",
+  options: [
+    "Local management",
+    "Remote management",
+    "Online management",
+    "All"
+  ],
+  answer: 1,
+  englishExplanation: "Remote management allows IoT devices located on different networks to be monitored and controlled from a different location.",
+  amharicExplanation: "Remote Management በተለያዩ ኔትወርኮች ላይ የሚገኙ የ IoT መሣሪያዎችን ከርቀት ሆኖ ለመቆጣጠርና ለማስተዳደር ያስችላል።"
+},
+
+{
+  question: "Which one of the following is the positive impact of IoT?",
+  options: [
+    "It exposes privacy",
+    "It enhances productivity",
+    "It eliminates the chance of being employed",
+    "A and B"
+  ],
+  answer: 1,
+  englishExplanation: "IoT can increase productivity by automating tasks, improving resource use, and allowing real-time monitoring of systems.",
+  amharicExplanation: "IoT ሥራዎችን በራስ-ሰር በማከናወን፣ ሀብቶችን በብቃት በመጠቀም እና ክትትልን በማሻሻል ምርታማነትን ሊጨምር ይችላል።"
+},
+
+{
+  question: "Which of the following is used to capture data from the physical world in IoT devices?",
+  options: [
+    "Sensors",
+    "Actuators",
+    "Microprocessors",
+    "Microcontroller"
+  ],
+  answer: 0,
+  englishExplanation: "Sensors detect physical conditions such as temperature, light, pressure, and motion and convert them into data that an IoT system can process.",
+  amharicExplanation: "ሴንሰሮች እንደ ሙቀት፣ ብርሃን፣ ግፊት እና እንቅስቃሴ ያሉ የአካባቢ ሁኔታዎችን በመለየት ወደ መረጃ ይቀይሯቸዋል።"
+},
+
+{
+  question: "Which of the following IoT layers is a user-centric layer that executes various tasks for the users?",
+  options: [
+    "Data Processing Layer",
+    "Network Layer",
+    "Application Layer",
+    "Sensing Layer"
+  ],
+  answer: 2,
+  englishExplanation: "The application layer is user-centric because it provides services and applications that directly meet the needs of end users.",
+  amharicExplanation: "Application Layer በቀጥታ ለተጠቃሚዎች አገልግሎት የሚያቀርብና የተጠቃሚዎችን ፍላጎት የሚያሟላ የ IoT ንብርብር ነው።"
+},
+
+{
+  question: "Which one is the correct architecture of IoT?",
+  options: [
+    "Application layer → Network layer → Sensing layer → Data processing layer",
+    "Sensing layer → Network layer → Data processing layer → Application layer",
+    "Application layer → Data processing layer → Network layer → Sensing layer",
+    "Network layer → Sensing layer → Data processing layer → Application layer"
+  ],
+  answer: 1,
+  englishExplanation: "The IoT architecture begins with the sensing layer, which collects data. The network layer transfers the data, the data processing layer analyzes it, and the application layer provides services to users.",
+  amharicExplanation: "የ IoT አወቃቀር በ Sensing Layer ይጀምራል፤ ይህም መረጃ ይሰበስባል። Network Layer መረጃውን ያስተላልፋል፣ Data Processing Layer ይተነትነዋል፣ Application Layer ደግሞ ለተጠቃሚው አገልግሎት ይሰጣል።"
+},
+
+{
+  question: "One of the following doesn't belong in the architecture of IoT?",
+  options: [
+    "Network layer",
+    "Transport layer",
+    "Data processing layer",
+    "Application layer"
+  ],
+  answer: 1,
+  englishExplanation: "The transport layer belongs to traditional networking models such as TCP/IP and is not one of the core layers in this four-layer IoT architecture.",
+  amharicExplanation: "Transport Layer እንደ TCP/IP ባሉ የኔትወርክ ሞዴሎች ውስጥ የሚገኝ ንብርብር ነው። በዚህ የ IoT አራት-ንብርብር አወቃቀር ውስጥ ግን ዋና አካል አይደለም።"
+},
+
+{
+  question: "Which of the following is not considered as a challenge of IoT?",
+  options: [
+    "Optimization of Technology",
+    "Complexity",
+    "Flexibility",
+    "Compliance"
+  ],
+  answer: 0,
+  englishExplanation: "Technology optimization is generally a goal or benefit of IoT. Complexity and compliance, among other issues, can create challenges when implementing IoT systems.",
+  amharicExplanation: "የቴክኖሎጂ ማመቻቸት (Optimization) በአጠቃላይ የ IoT ግብና ጥቅም ነው። Complexity እና Compliance ግን የ IoT ሲስተሞችን ሲተገብሩ ፈተናዎች ሊሆኑ ይችላሉ።"
+},
+
+{
+  question: "Which of the following sensors is used for navigation purposes in IoT devices?",
+  options: [
+    "Light sensor",
+    "Pressure sensor",
+    "Magnetic sensor",
+    "GPS sensor"
+  ],
+  answer: 3,
+  englishExplanation: "A GPS sensor provides location information and is commonly used for navigation and tracking the position of IoT devices.",
+  amharicExplanation: "GPS Sensor የመሣሪያውን የቦታ መረጃ ይሰጣል። ስለዚህ በ IoT መሣሪያዎች ለአሰሳ (Navigation) እና ለቦታ ክትትል ይጠቀማል።"
+},
+
+{
+  question: "Which of the following is best for describing IoT?",
+  options: [
+    "It is the networking of smart objects communicating in the presence of the Internet",
+    "It is the networking of smart objects with some constraints",
+    "It is the interaction of computing devices through the Internet",
+    "All"
+  ],
+  answer: 3,
+  englishExplanation: "IoT involves connecting smart objects and computing devices so they can communicate and exchange data through networks, while also dealing with device and resource constraints.",
+  amharicExplanation: "IoT ስማርት ዕቃዎችንና የኮምፒውተር መሣሪያዎችን በኔትወርክ ማገናኘት፣ መረጃ እንዲለዋወጡ ማድረግ እና የመሣሪያዎችን ገደቦች ማስተናገድን ያካትታል።"
+},
+
+{
+  question: "According to IEEE definition, IoT = Data + Service + Sensor + Network.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false. The IEEE definition of IoT is not expressed as this specific formula. It focuses more broadly on connected physical and virtual things and their interaction through networks.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። IEEE የ IoT ትርጉምን በዚህ የData + Service + Sensor + Network ቀመር አይገልጸውም። በኔትወርክ የተገናኙ አካላዊና ምናባዊ ነገሮች እና መስተጋብራቸው ላይ ያተኩራል።"
+},
+
+{
+  question: "Motion Sensors collect information about the physical position and orientation of the IoT device.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "Motion sensors can detect changes in movement and orientation, but absolute physical position is generally determined using positioning technologies such as GPS.",
+  amharicExplanation: "Motion Sensors የመሣሪያውን እንቅስቃሴና አቅጣጫ ለውጥ ሊለዩ ይችላሉ። ነገር ግን ትክክለኛ የመሣሪያውን የቦታ አቀማመጥ ለማወቅ እንደ GPS ያሉ የPositioning ቴክኖሎጂዎች ያስፈልጋሉ።"
+},
+
+{
+  question: "The data processing layer shares the result of data processing with other connected devices via the sensor layer.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false. The network layer is responsible for transmitting processed information between connected devices, not the sensing layer.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። የተሰራውን መረጃ በተገናኙ መሣሪያዎች መካከል የሚያስተላልፈው Network Layer ነው፤ Sensing Layer አይደለም።"
+},
+
+{
+  question: "The application layer is a user-centric layer that executes various tasks for the users.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "The statement is true. The application layer is designed to provide services and perform useful functions directly for end users.",
+  amharicExplanation: "አረፍተ ነገሩ እውነት ነው። Application Layer በቀጥታ ለተጠቃሚዎች አገልግሎቶችን የሚሰጥና ጠቃሚ ሥራዎችን የሚያከናውን User-Centric Layer ነው።"
+},
+
+{
+  question: "In IoT, it is easy for devices of different manufacturers to communicate with each other.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false. Different manufacturers may use different standards, protocols, and technologies, making interoperability a major IoT challenge.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። የተለያዩ አምራቾች የተለያዩ Standards፣ Protocols እና ቴክኖሎጂዎችን ስለሚጠቀሙ መሣሪዎቻቸው እርስ በርስ እንዲግባቡ ማድረግ የ IoT ዋና ፈተና ነው።"
+},
+
+{
+  question: "Application Programming Interfaces don't enable software components to communicate with each other easily.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false. APIs allow different software components and applications to communicate and exchange data through defined interfaces.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። APIs የተለያዩ የሶፍትዌር አካላት በተወሰኑ መገናኛዎች በኩል እንዲግባቡና መረጃ እንዲለዋወጡ ያስችላሉ።"
+},
+
+{
+  question: "Most IoT devices are designed to be constantly connected to the internet.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "The statement is true in the general IoT context. Many IoT devices are designed to maintain network connectivity so they can exchange data and provide connected services.",
+  amharicExplanation: "በአጠቃላይ የ IoT አውድ ውስጥ አረፍተ ነገሩ እውነት ነው። ብዙ IoT መሣሪያዎች መረጃ ለመለዋወጥና የተገናኙ አገልግሎቶችን ለመስጠት የኔትወርክ ግንኙነት እንዲኖራቸው ይነደፋሉ።"
+},
+
+{
+  question: "The Internet of Things (IoT) is primarily focused on connecting consumer devices.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false. IoT includes consumer devices as well as industrial machines, healthcare systems, agriculture, transportation, smart cities, and other applications.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። IoT የሸማች መሣሪያዎችን ብቻ አይገናኝም፤ ኢንዱስትሪ፣ ጤና፣ ግብርና፣ ትራንስፖርት እና Smart City ሲስተሞችንም ያካትታል።"
+},
+
+{
+  question: "Which is a way IoT devices share collected data?",
+  options: [
+    "Bluetooth",
+    "LoRa",
+    "Zigbee",
+    "Internet",
+    "All"
+  ],
+  answer: 4,
+  englishExplanation: "IoT devices can use different communication technologies, including Bluetooth, LoRa, Zigbee, and the Internet, to transmit collected data.",
+  amharicExplanation: "የ IoT መሣሪያዎች የሰበሰቡትን መረጃ ለማስተላለፍ Bluetooth፣ LoRa፣ Zigbee እና Internet ያሉ የተለያዩ የግንኙነት ቴክኖሎጂዎችን ሊጠቀሙ ይችላሉ።"
+},
+
+{
+  question: "Which sensor measures device orientation?",
+  options: [
+    "Magnetic sensor",
+    "Position sensor",
+    "Environmental sensor",
+    "Motion sensor"
+  ],
+  answer: 3,
+  englishExplanation: "Motion sensors, including accelerometers and gyroscopes, can detect changes in movement and orientation of a device.",
+  amharicExplanation: "Motion Sensors እንደ Accelerometer እና Gyroscope ያሉ ሴንሰሮችን በመጠቀም የመሣሪያውን እንቅስቃሴና አቅጣጫ ለውጥ ለመለካት ያገለግላሉ።"
+},
+
+{
+  question: "Which is not an advantage of IoT?",
+  options: [
+    "Reduced waste",
+    "Technology optimization",
+    "Improved customer engagement",
+    "Enhanced data collection",
+    "None"
+  ],
+  answer: 4,
+  englishExplanation: "All the listed options are recognized benefits of IoT. Therefore, None is correct because none of the listed options is a disadvantage.",
+  amharicExplanation: "ሁሉም የተዘረዘሩት አማራጮች የ IoT ጥቅሞች ናቸው። ስለዚህ ከተዘረዘሩት ውስጥ ጥቅም ያልሆነ ስለሌለ None ትክክለኛው መልስ ነው።"
+},{   question: "________ is a common connection point for multiple sensors that accumulate and forward sensor data to the processing unit of a device.",   options: [     "A sensor hub",     "Actuators",     "Environmental sensor",     "Motion sensor",     "None"   ],   answer: 0,   englishExplanation: "A sensor hub is a common connection point for multiple sensors. It collects their data and forwards it to the main processing unit.",   amharicExplanation: "Sensor Hub በርካታ ሴንሰሮችን የሚያገናኝ የጋራ ነጥብ ነው። ከሴንሰሮቹ የሚመጣውን መረጃ ሰብስቦ ወደ ዋናው የማቀነባበሪያ ክፍል ይልካል።" },  {   question: "Which sensor is used for smart locks, smart lights and home automation systems?",   options: [     "Motion sensor",     "Environmental sensor",     "Position sensor",     "Alcohol sensor"   ],   answer: 1,   englishExplanation: "Environmental sensors can detect conditions such as temperature, light, and humidity and are commonly used in smart home automation systems.",   amharicExplanation: "Environmental Sensors እንደ ሙቀት፣ ብርሃን እና እርጥበት ያሉ የአካባቢ ሁኔታዎችን ይለያሉ። በSmart Home እና በHome Automation ሲስተሞች ውስጥ ይጠቀማሉ።" },  {   question: "What one is a challenge that is associated with the rapid growth of IoT?",   options: [     "Assure interoperability among different device vendors",     "Adding more switching ports for new things",     "Improving Internet connections for organizations",     "Developing new programming languages specifically for IoT"   ],   answer: 0,   englishExplanation: "A major challenge of IoT is interoperability. Devices made by different vendors must be able to communicate and work together properly.",   amharicExplanation: "የ IoT ዋና ፈተና ከተለያዩ አምራቾች የሚመጡ መሣሪያዎች እርስ በርስ በትክክል መገናኘትና አብረው መስራት መቻላቸውን ማረጋገጥ ነው።" },  {   question: "Which of the following is false about IoT devices?",   options: [     "IoT devices use the internet for collecting and sharing data",     "IoT devices need microcontrollers",     "IoT devices use wire based technology",     "IoT devices are completely safe"   ],   answer: 2,   englishExplanation: "IoT devices commonly use wireless technologies such as Wi-Fi, Bluetooth, Zigbee, and cellular networks. However, some IoT devices can also use wired connections. They are also not completely safe from security risks.",   amharicExplanation: "ብዙ IoT መሣሪያዎች Wi-Fi፣ Bluetooth፣ Zigbee እና Cellular Network ያሉ የገመድ አልባ ቴክኖሎጂዎችን ይጠቀማሉ። ነገር ግን አንዳንድ IoT መሣሪያዎች የገመድ ግንኙነትም ሊጠቀሙ ይችላሉ። በተጨማሪም ከደህንነት ስጋት ሙሉ በሙሉ ነፃ አይደሉም።" },  {   question: "IoT provides real-world information leading to the more effective management of resources. It is the advantage of IoT on:",   options: [     "Improved Customer Engagement",     "Technology Optimization",     "Reduced Waste",     "Enhanced Data Collection",     "None"   ],   answer: 2,   englishExplanation: "IoT provides real-world data that helps organizations use resources more efficiently. Better resource management can reduce unnecessary waste.",   amharicExplanation: "IoT ከእውነተኛው ዓለም መረጃ በመሰብሰብ ሀብቶችን በተሻለ ሁኔታ ለመጠቀም ያግዛል። ይህም አላስፈላጊ ብክነትን ለመቀነስ ይረዳል።" },  {   question: "Sensors such as Light sensors and Pressure sensors are categorized under which type of sensors?",   options: [     "Motion sensors",     "Environmental sensors",     "Position sensors",     "Angular motion sensors",     "None"   ],   answer: 1,   englishExplanation: "Light and pressure sensors detect physical conditions in the surrounding environment, so they are categorized as environmental sensors.",   amharicExplanation: "የብርሃን እና የግፊት ሴንሰሮች በአካባቢ ያሉ አካላዊ ሁኔታዎችን ስለሚለዩ Environmental Sensors ተብለው ይመደባሉ።" },  {   question: "............................ is used for navigation purposes in IoT devices.",   options: [     "Magnetic sensor",     "Actuator",     "Motion sensor",     "Sensor hub",     "None"   ],   answer: 4,   englishExplanation: "GPS is commonly used for navigation and location tracking in IoT devices. Since GPS is not one of the listed options, the correct answer is None.",   amharicExplanation: "GPS በ IoT መሣሪያዎች ውስጥ ለአቅጣጫ ፍለጋ እና ለአካባቢ መለየት በብዛት ይጠቀማል። GPS በተሰጡት አማራጮች ውስጥ ስለሌለ None ትክክለኛው መልስ ነው።" },  {   question: "Which layer of IoT takes data collected in the sensing layer and analyses the data to make decisions based on the result?",   options: [     "Networking layer",     "Application layer",     "Data processing layer",     "Sensing layer",     "A and D"   ],   answer: 2,   englishExplanation: "The data processing layer receives data from the sensing layer, analyzes it, and helps the system make appropriate decisions.",   amharicExplanation: "Data Processing Layer ከSensing Layer የተሰበሰበውን መረጃ ይቀበላል፣ ይተነትነዋል እና በውጤቱ መሠረት ተገቢ ውሳኔ እንዲሰጥ ሲስተሙን ያግዛል።" },  {   question: "Among IoT layers, which one is the user-centric layer?",   options: [     "Networking layer",     "Application layer",     "Data processing layer",     "Sensing layer"   ],   answer: 1,   englishExplanation: "The application layer is user-centric because it provides services and interfaces that directly meet the needs of end users.",   amharicExplanation: "Application Layer በቀጥታ ለተጠቃሚዎች አገልግሎትና መገናኛ የሚያቀርብ ስለሆነ User-Centric Layer ይባላል።" },  {   question: "Which of the following is not an IoT platform?",   options: [     "Amazon Web Services",     "Microsoft Azure",     "Salesforce",     "Flipkart"   ],   answer: 3,   englishExplanation: "Flipkart is mainly an e-commerce platform for buying and selling products. AWS, Microsoft Azure, and Salesforce provide technologies and services that can support IoT applications.",   amharicExplanation: "Flipkart በዋናነት ለመግዛትና ለመሸጥ የሚያገለግል የኢ-ኮሜርስ መድረክ ነው። AWS፣ Microsoft Azure እና Salesforce ግን IoT መተግበሪያዎችን ሊደግፉ የሚችሉ ቴክኖሎጂዎችና አገልግሎቶች አሏቸው።" },  {   question: "As the number of connected devices increases and more information is shared between devices, confidential information in IoT systems becomes highly secure.",   options: [     "True",     "False"   ],   answer: 1,   englishExplanation: "The statement is false. More connected devices and more shared information can increase the risk of security breaches and privacy problems.",   amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። ብዙ መሣሪያዎች ሲገናኙና ብዙ መረጃ ሲለዋወጥ የመረጃ መጥለፍና የግላዊነት ስጋት ሊጨምር ይችላል።" },  {   question: "With IoT, our privacy will never be compromised.",   options: [     "True",     "False"   ],   answer: 1,   englishExplanation: "The statement is false. IoT devices can collect large amounts of personal information, so privacy can be affected if the data is not properly protected.",   amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። IoT መሣሪያዎች ብዙ የግል መረጃ ሊሰበስቡ ስለሚችሉ መረጃው በትክክል ካልተጠበቀ የግላዊነት ችግር ሊፈጠር ይችላል።" },  {   question: "IoT devices do most of the work without human intervention, although people can interact with the devices.",   options: [     "True",     "False"   ],   answer: 0,   englishExplanation: "IoT devices are designed to perform many tasks automatically with little human intervention. However, users can still interact with and control them when necessary.",   amharicExplanation: "የ IoT መሣሪያዎች ብዙ ሥራዎችን በራስ-ሰር እና በትንሽ የሰው ጣልቃ ገብነት እንዲያከናውኑ ተዘጋጅተዋል። ነገር ግን ተጠቃሚዎች ሲያስፈልግ ሊቆጣጠሯቸው ይችላሉ።" },  {   question: "Lack of security on privacy is one of the drawbacks of IoT.",   options: [     "True",     "False"   ],   answer: 0,   englishExplanation: "Security and privacy problems are important drawbacks of IoT. Poor protection can allow unauthorized people to access devices or personal data.",   amharicExplanation: "የደህንነትና የግላዊነት ችግሮች የ IoT ዋና ድክመቶች ናቸው። በቂ ጥበቃ ከሌለ ያልተፈቀደላቸው ሰዎች መሣሪያዎችን ወይም የግል መረጃን ሊያገኙ ይችላሉ።" },  {   question: "In IoT world, a smart TV is one that has a feature of Wi-Fi connection.",   options: [     "True",     "False"   ],   answer: 0,   englishExplanation: "A smart TV can connect to the internet through technologies such as Wi-Fi and provide online services, streaming, applications, and updates.",   amharicExplanation: "Smart TV እንደ Wi-Fi ባሉ ቴክኖሎጂዎች ከኢንተርኔት ጋር መገናኘት እና የOnline አገልግሎቶችን፣ Streaming እና Applications መጠቀም ይችላል።" },  {   question: "The communication between IoT devices is guaranteed absolute security from any emerging threats.",   options: [     "True",     "False"   ],   answer: 1,   englishExplanation: "The statement is false because no IoT communication system can guarantee absolute security. New cyber threats can continue to appear.",   amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። ምንም የ IoT የግንኙነት ሲስተም 100% የደህንነት ዋስትና ሊሰጥ አይችልም። አዳዲስ የሳይበር ስጋቶች ሊፈጠሩ ይችላሉ።" },  {   question: "How does the Internet of Things help a user?",   options: [     "It reduces user time",     "It reduces user efforts",     "It reduces user expense",     "All the above",     "None"   ],   answer: 3,   englishExplanation: "IoT automates many tasks, which can save users time and effort and may also reduce costs through efficient use of resources.",   amharicExplanation: "IoT ብዙ ሥራዎችን በራስ-ሰር በማከናወን የተጠቃሚዎችን ጊዜና ጉልበት ይቆጥባል። በተጨማሪም ሀብቶችን በብቃት በመጠቀም ወጪን ሊቀንስ ይችላል።" },  {   question: "All are advantages of IoT except:",   options: [     "Every information is confidential",     "Improves device use",     "Increases effective management of resources",     "Improved Customer Engagement"   ],   answer: 0,   englishExplanation: "IoT does not guarantee that every piece of information will remain confidential. Privacy and security must be actively protected, so this is not an inherent advantage of IoT.",   amharicExplanation: "IoT ሁሉንም መረጃ ሚስጥራዊ እንደሚያደርግ ዋስትና አይሰጥም። ግላዊነትና ደህንነት በተገቢው መጠበቅ ስለሚያስፈልግ “Every information is confidential” የ IoT ተፈጥሯዊ ጥቅም አይደለም።" },  {   question: "Which of the following is not an advantage of IoT?",   options: [     "Improved Customer Engagement",     "Increase the confidentiality of the information",     "Reduced Waste",     "Enhanced Data Collection"   ],   answer: 1,   englishExplanation: "Increasing information confidentiality is not a guaranteed advantage of IoT. IoT can actually create additional privacy and security risks if data is not properly protected.",   amharicExplanation: "የመረጃ ሚስጥራዊነትን መጨመር የ IoT ዋስትና ያለው ጥቅም አይደለም። መረጃው በትክክል ካልተጠበቀ ይልቁንም የግላዊነትና የደህንነት ስጋቶችን ሊያመጣ ይችላል።" },  {   question: "Which layer of IoT is responsible for executing various tasks for the end user?",   options: [     "Data processing-layer",     "Sensing layer",     "Application layer",     "Network layer"   ],   answer: 2,   englishExplanation: "The application layer provides services and performs functions that are designed to meet the needs of end users.",   amharicExplanation: "Application Layer ለመጨረሻ ተጠቃሚዎች የተዘጋጁ አገልግሎቶችን ያቀርባል። ስለዚህ ለተጠቃሚው የሚያስፈልጉ የተለያዩ ሥራዎችን ከመተግበር ጋር ይያያዛል።" }, {
+  question: "DeviceHive is an example of both IoT tool and platform?",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "DeviceHive can be used as an IoT platform and framework. It provides infrastructure for connecting, managing, and controlling different IoT devices.",
+  amharicExplanation: "DeviceHive እንደ IoT መድረክ እና ፍሬምወርክ ያገለግላል። የተለያዩ IoT መሣሪያዎችን ለማገናኘት፣ ለማስተዳደር እና ለመቆጣጠር ያግዛል።"
+},
+
+{
+  question: "IoT involves internet connectivity only for standard devices.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "IoT is not limited to standard computing devices. It connects everyday physical objects such as home appliances, sensors, vehicles, and industrial machines to networks.",
+  amharicExplanation: "IoT በመደበኛ የኮምፒውተር መሣሪያዎች ብቻ አይወሰንም። የቤት ዕቃዎችን፣ ዳሳሾችን፣ ተሽከርካሪዎችን እና የኢንዱስትሪ ማሽኖችንም ያገናኛል።"
+},
+
+{
+  question: "IoT is the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "IoT allows connected devices to collect and exchange data automatically without requiring direct human-to-human or human-to-computer interaction.",
+  amharicExplanation: "IoT የተገናኙ መሣሪያዎች ቀጥተኛ የሰው ጣልቃ ገብነት ሳያስፈልጋቸው መረጃን በራሳቸው እንዲለዋወጡ ያስችላል።"
+},
+
+{
+  question: "The data collected by an IoT device can be used to take decisions regarding tasks.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "IoT devices collect data from their environment, and this data can be analyzed and used to make decisions or control tasks automatically.",
+  amharicExplanation: "የ IoT መሣሪያዎች ከአካባቢያቸው መረጃ ይሰበስባሉ። ይህ መረጃ ተተንትኖ ውሳኔ ለመስጠት ወይም ሥራዎችን በራስ-ሰር ለመቆጣጠር ይጠቅማል።"
+},
+
+{
+  question: "An IoT device can perform tasks autonomously, reducing the need for human intervention.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 0,
+  englishExplanation: "IoT devices can perform programmed tasks automatically based on collected data, which reduces the need for continuous human intervention.",
+  amharicExplanation: "የ IoT መሣሪያዎች በሚሰበስቡት መረጃ መሠረት የተዘጋጁ ሥራዎችን በራስ-ሰር ማከናወን ይችላሉ። ይህም የሰውን ቀጣይ ጣልቃ ገብነት ይቀንሳል።"
+},
+
+{
+  question: "As more and more connected devices join the IoT, the amount of data being generated is lowering.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false because more connected devices generate more data. As IoT grows, the total amount of data increases significantly.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። ተጨማሪ መሣሪያዎች ወደ IoT ሲገናኙ የሚፈጠረው አጠቃላይ የመረጃ መጠን ይቀንሳል ሳይሆን ይጨምራል።"
+},
+
+{
+  question: "What function is performed by an actuator?",
+  options: [
+    "Measuring a physical property by detecting information from the physical world",
+    "Receiving a signal from a device and performing a set action",
+    "Collecting data and then sending instructions for further actions",
+    "Improving a physical environment by measuring changes"
+  ],
+  answer: 1,
+  englishExplanation: "An actuator receives a control signal and performs a physical action, such as moving a motor, opening a valve, or switching a device on or off.",
+  amharicExplanation: "አክቱዌተር (Actuator) የመቆጣጠሪያ ምልክት ተቀብሎ አካላዊ ተግባር ያከናውናል። ለምሳሌ ሞተርን ማንቀሳቀስ፣ ቫልቭን መክፈት ወይም መሣሪያን ማብራት ይችላል።"
+},
+
+{
+  question: "Which of the following is the way in which an IoT device is associated with data?",
+  options: [
+    "Internet",
+    "Cloud",
+    "Automata",
+    "Network"
+  ],
+  answer: 1,
+  englishExplanation: "IoT devices can send their collected data to cloud platforms, where the data can be stored, processed, and analyzed.",
+  amharicExplanation: "የ IoT መሣሪያዎች የሚሰበስቡትን መረጃ ወደ Cloud መድረኮች መላክ ይችላሉ። በዚያም መረጃው ሊከማች፣ ሊሰራ እና ሊተነተን ይችላል።"
+},
+
+{
+  question: "An IoT network is a collection of -------- devices.",
+  options: [
+    "Signal",
+    "Machine to Machine",
+    "Interconnected",
+    "Network to Network"
+  ],
+  answer: 2,
+  englishExplanation: "An IoT network consists of interconnected physical devices that can communicate and exchange data with each other.",
+  amharicExplanation: "የ IoT ኔትወርክ እርስ በእርሳቸው የተገናኙ (Interconnected) አካላዊ መሣሪያዎች ስብስብ ነው። እነዚህ መሣሪያዎች መረጃን ሊለዋወጡ ይችላሉ።"
+},
+
+{
+  question: "Internet of Things devices can collect data from ___.",
+  options: [
+    "Environment",
+    "Internet",
+    "Books",
+    "Documents"
+  ],
+  answer: 0,
+  englishExplanation: "IoT devices use sensors to collect physical information from the environment, such as temperature, humidity, light, motion, and pressure.",
+  amharicExplanation: "የ IoT መሣሪያዎች ዳሳሾችን በመጠቀም ከአካባቢያቸው እንደ ሙቀት፣ እርጥበት፣ ብርሃን፣ እንቅስቃሴ እና ግፊት ያሉ መረጃዎችን ይሰበስባሉ።"
+},
+
+{
+  question: "Which of the following is not a fundamental component of an IoT system?",
+  options: [
+    "Sensors",
+    "Connectivity and data processing",
+    "User interface",
+    "Transformer"
+  ],
+  answer: 3,
+  englishExplanation: "A transformer is an electrical device and is not a fundamental component of an IoT system. Common IoT components include sensors, connectivity, data processing, and user interfaces.",
+  amharicExplanation: "ትራንስፎርመር (Transformer) የኤሌክትሪክ መሣሪያ እንጂ የ IoT መሠረታዊ አካል አይደለም። የ IoT ዋና አካላት ዳሳሾች፣ ግንኙነት፣ የመረጃ ማቀነባበሪያ እና User Interface ናቸው።"
+},
+
+{
+  question: "Which one of the following is not the applications of IoT?",
+  options: [
+    "House",
+    "Virtual environment",
+    "Regional office",
+    "All of the above",
+    "None"
+  ],
+  answer: 4,
+  englishExplanation: "Houses, virtual environments, and offices can all have IoT applications. Therefore, none of the listed items is excluded as an IoT application.",
+  amharicExplanation: "ቤቶች፣ ምናባዊ አካባቢዎች እና ቢሮዎች ሁሉም የ IoT መተግበሪያዎች ሊኖራቸው ይችላል። ስለዚህ ከተዘረዘሩት ውስጥ የ IoT መተግበሪያ ያልሆነ የለም፤ መልሱ None ነው።"
+},
+
+{
+  question: "Which one of the following is the concern of Internet of Things?",
+  options: [
+    "Data storage",
+    "Privacy",
+    "Security",
+    "All",
+    "None"
+  ],
+  answer: 3,
+  englishExplanation: "Data storage, privacy, and security are all important concerns in IoT because connected devices generate large amounts of data and may expose sensitive information.",
+  amharicExplanation: "የመረጃ ማከማቻ፣ ግላዊነት (Privacy) እና ደህንነት (Security) ሁሉም የ IoT ዋና ስጋቶች ናቸው። IoT ብዙ መረጃ ስለሚፈጥር እና ሚስጥራዊ መረጃን ሊያጋልጥ ስለሚችል እነዚህ ጉዳዮች አስፈላጊ ናቸው።"
+},
+
+{
+  question: "Which is at the lowest layer in the IoT architecture?",
+  options: [
+    "Smart device",
+    "Gateway",
+    "Cloud",
+    "Device management"
+  ],
+  answer: 0,
+  englishExplanation: "The smart device or perception layer is at the lowest level of IoT architecture. It directly interacts with the physical environment using sensors and devices.",
+  amharicExplanation: "Smart Device ወይም Perception Layer በ IoT አርክቴክቸር የታችኛው ንብርብር ነው። ዳሳሾችን በመጠቀም ከአካላዊ አካባቢው ጋር በቀጥታ ይገናኛል።"
+},
+
+{
+  question: "In IoT devices, the network layer is implemented by using diverse?",
+  options: [
+    "Wi-Fi, Bluetooth",
+    "Zigbee",
+    "ZWave",
+    "Cellular network",
+    "All"
+  ],
+  answer: 4,
+  englishExplanation: "IoT network communication can use many technologies, including Wi-Fi, Bluetooth, Zigbee, Z-Wave, and cellular networks, depending on the required range, speed, and power consumption.",
+  amharicExplanation: "የ IoT ኔትወርክ እንደ Wi-Fi፣ Bluetooth፣ Zigbee፣ Z-Wave እና Cellular Network ያሉ የተለያዩ የግንኙነት ቴክኖሎጂዎችን ይጠቀማል። ስለዚህ መልሱ All ነው።"
+},
+
+{
+  question: "....................... Digital video monitoring, fire control management, public announcement systems",
+  options: [
+    "Smart Parking",
+    "Field Monitoring",
+    "Safety",
+    "Lighting"
+  ],
+  answer: 2,
+  englishExplanation: "Digital video monitoring, fire control management, and public announcement systems are related to safety because they help monitor risks, respond to emergencies, and protect people.",
+  amharicExplanation: "የዲጂታል ቪዲዮ ክትትል፣ የእሳት ቁጥጥር እና የህዝብ ማስታወቂያ ሥርዓቶች ከSafety ጋር ይያያዛሉ። ሰዎችን ከአደጋ ለመጠበቅ እና ድንገተኛ ሁኔታዎችን ለመቆጣጠር ያግዛሉ።"
+},
+
+{
+  question: "Which one utilizes existing and emerging technology for sensing, networking, and robotics?",
+  options: [
+    "IoT",
+    "Emerging Technology",
+    "AI",
+    "All",
+    "None"
+  ],
+  answer: 0,
+  englishExplanation: "IoT combines sensing, networking, and automated technologies to connect physical devices and allow them to collect, exchange, and act on data.",
+  amharicExplanation: "IoT ዳሳሽ (Sensing)፣ ኔትወርክ (Networking) እና ሮቦቲክስ (Robotics) ያሉ ቴክኖሎጂዎችን በማቀናጀት አካላዊ መሣሪያዎችን ያገናኛል። መሣሪያዎቹም መረጃን መሰብሰብ፣ መለዋወጥ እና በዚያ መረጃ መሠረት መሥራት ይችላሉ።"
+},
+
+{
+  question: "Sophistication of IoT which provides substantial personal data in extreme detail without the user's active participation.",
+  options: [
+    "Security",
+    "Privacy",
+    "Complexity",
+    "Flexibility",
+    "Compliance",
+    "None"
+  ],
+  answer: 1,
+  englishExplanation: "Collecting detailed personal information without active user participation creates a privacy concern because IoT devices may continuously gather sensitive information about users.",
+  amharicExplanation: "ተጠቃሚው በንቃት ሳይሳተፍ ዝርዝር የግል መረጃ መሰብሰብ የግላዊነት (Privacy) ስጋት ይፈጥራል። IoT መሣሪያዎች ስለ ተጠቃሚዎች ሚስጥራዊ መረጃ በቀጣይነት ሊሰበስቡ ይችላሉ።"
+},
+
+{
+  question: "As more and more connected devices join the IoT, the amount of data being generated is lowering.",
+  options: [
+    "True",
+    "False"
+  ],
+  answer: 1,
+  englishExplanation: "The statement is false. More connected IoT devices produce more sensor readings, messages, and other information, so the overall amount of generated data increases.",
+  amharicExplanation: "ይህ አረፍተ ነገር ሐሰት ነው። ብዙ የ IoT መሣሪያዎች ሲገናኙ ብዙ የዳሳሽ መረጃዎችን፣ መልዕክቶችን እና ሌሎች መረጃዎችን ስለሚፈጥሩ አጠቃላይ የመረጃ መጠኑ ይጨምራል።"
+},
+
+{
+  question: "Which of the following is not the benefit of IoT in a Smart City?",
+  options: [
+    "Intrusion Detection Systems",
+    "Lighting",
+    "Structural Health",
+    "Waste Management",
+    "None"
+  ],
+  answer: 0,
+  englishExplanation: "In this context, smart lighting, structural health monitoring, and waste management are listed as smart city IoT benefits. Intrusion Detection Systems are mainly associated with security and are not included in this specific list.",
+  amharicExplanation: "በዚህ አውድ Smart Lighting፣ Structural Health እና Waste Management የSmart City IoT ጥቅሞች ናቸው። Intrusion Detection Systems በዋናነት ከደህንነት ጋር የተያያዙ ስለሆኑ በዚህ ዝርዝር ውስጥ እንደ Smart City IoT ጥቅም አልተካተቱም።"
+}],
         5: []
 
     },
