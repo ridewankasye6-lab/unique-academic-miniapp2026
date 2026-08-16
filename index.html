@@ -19,9 +19,12 @@
 
 </head>
 
+
 <body>
-    <!-- =====================================
-     MOBILE SIDE MENU
+
+
+<!-- =====================================
+     MOBILE MENU BUTTON
 ===================================== -->
 
 <button
@@ -29,10 +32,16 @@
     class="menuBtn"
     type="button"
     aria-label="Open Menu"
+    aria-expanded="false"
 >
     ☰
 </button>
 
+
+
+<!-- =====================================
+     MENU OVERLAY
+===================================== -->
 
 <div
     id="menuOverlay"
@@ -40,10 +49,17 @@
 ></div>
 
 
+
+<!-- =====================================
+     PROFESSIONAL SIDE MENU
+===================================== -->
+
 <aside
     id="sideMenu"
     class="sideMenu"
+    aria-hidden="true"
 >
+
 
     <!-- PROFILE HEADER -->
 
@@ -52,6 +68,7 @@
         <div class="profileAvatar">
             🎓
         </div>
+
 
         <div class="profileInfo">
 
@@ -68,24 +85,38 @@
     </div>
 
 
-    <!-- MENU ITEMS -->
+
+    <!-- =====================================
+         MENU ITEMS
+    ===================================== -->
 
     <nav class="menuItems">
 
+
+        <!-- HOME -->
 
         <a
             href="index.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">🏠</span>
+            <span class="menuIcon">
+                🏠
+            </span>
 
-            <span>Home</span>
+            <span>
+                Home
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </a>
 
+
+
+        <!-- REFRESH -->
 
         <button
             id="refreshBtn"
@@ -93,42 +124,46 @@
             type="button"
         >
 
-            <span class="menuIcon">🔄</span>
+            <span class="menuIcon">
+                🔄
+            </span>
 
-            <span>Refresh</span>
+            <span>
+                Refresh
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </button>
 
+
+
+        <!-- PROFILE -->
 
         <a
             href="student-profile.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">👤</span>
+            <span class="menuIcon">
+                👤
+            </span>
 
-            <span>Profile</span>
+            <span>
+                Profile
+            </span>
 
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a
-            href="champions.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">🏆</span>
-
-            <span>Champions</span>
-
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </a>
 
+
+
+        <!-- SHARE APP -->
 
         <button
             id="shareAppBtn"
@@ -136,63 +171,99 @@
             type="button"
         >
 
-            <span class="menuIcon">📤</span>
+            <span class="menuIcon">
+                📤
+            </span>
 
-            <span>Share App</span>
+            <span>
+                Share App
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </button>
 
+
+
+        <!-- OTHER APPS -->
 
         <a
             href="other-apps.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">▦</span>
+            <span class="menuIcon">
+                ▦
+            </span>
 
-            <span>Other Apps</span>
+            <span>
+                Other Apps
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </a>
 
+
+
+        <!-- HELP -->
 
         <a
             href="help.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">❓</span>
+            <span class="menuIcon">
+                ❓
+            </span>
 
-            <span>Help</span>
+            <span>
+                Help
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </a>
 
+
+
+        <!-- ABOUT US -->
 
         <a
             href="about.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">ⓘ</span>
+            <span class="menuIcon">
+                ⓘ
+            </span>
 
-            <span>About Us</span>
+            <span>
+                About Us
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </a>
-
 
     </nav>
 
 
-    <!-- LOGOUT -->
+
+    <!-- =====================================
+         LOGOUT
+    ===================================== -->
 
     <div class="menuBottom">
+
 
         <button
             id="logoutBtn"
@@ -200,13 +271,20 @@
             type="button"
         >
 
-            <span class="menuIcon">🚪</span>
+            <span class="menuIcon">
+                🚪
+            </span>
 
-            <span>Logout</span>
+            <span>
+                Logout
+            </span>
 
-            <span class="menuArrow">›</span>
+            <span class="menuArrow">
+                ›
+            </span>
 
         </button>
+
 
 
         <div class="menuVersion">
@@ -223,202 +301,10 @@
 
     </div>
 
-</aside>
-    
-<!-- =====================================
-     PROFESSIONAL SIDE MENU
-===================================== -->
-
-<div id="menuOverlay" class="menuOverlay"></div>
-
-<aside id="sideMenu" class="sideMenu">
-
-    <!-- Profile Header -->
-    <div class="menuProfile">
-
-        <div class="menuAvatar">
-            🎓
-        </div>
-
-        <div class="menuProfileInfo">
-
-            <h2>
-                Unique Academic
-            </h2>
-
-            <p>
-                Learning Platform
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- Main Navigation -->
-    <div class="menuSection">
-
-        <a href="index.html" class="menuItem">
-
-            <span class="menuIcon">🏠</span>
-
-            <span>Home</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="#subjects" class="menuItem">
-
-            <span class="menuIcon">📚</span>
-
-            <span>Subjects</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="#subjects" class="menuItem">
-
-            <span class="menuIcon">📝</span>
-
-            <span>Quizzes</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="#" class="menuItem">
-
-            <span class="menuIcon">📄</span>
-
-            <span>PDF Library</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="#" class="menuItem">
-
-            <span class="menuIcon">🎥</span>
-
-            <span>Video Lessons</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="#" class="menuItem">
-
-            <span class="menuIcon">⭐</span>
-
-            <span>Bookmarks</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-    </div>
-
-
-    <!-- Account -->
-    <div class="menuSection">
-
-        <div class="menuLabel">
-            ACCOUNT
-        </div>
-
-
-        <a href="student-login.html" class="menuItem">
-
-            <span class="menuIcon">👤</span>
-
-            <span>Student Login</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="registration.html" class="menuItem">
-
-            <span class="menuIcon">📝</span>
-
-            <span>Register</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-    </div>
-
-
-    <!-- More -->
-    <div class="menuSection">
-
-        <div class="menuLabel">
-            MORE
-        </div>
-
-
-        <a href="#" class="menuItem">
-
-            <span class="menuIcon">❓</span>
-
-            <span>Help</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-
-        <a href="#" class="menuItem">
-
-            <span class="menuIcon">ℹ️</span>
-
-            <span>About Us</span>
-
-            <span class="menuArrow">›</span>
-
-        </a>
-
-    </div>
-
-
-    <!-- Dark Mode -->
-    <div class="menuBottom">
-
-        <button
-            id="menuModeBtn"
-            class="menuModeBtn"
-            type="button"
-        >
-
-            🌙
-            <span>Dark Mode</span>
-
-        </button>
-
-
-        <button
-            id="closeMenuBtn"
-            class="menuCloseBtn"
-            type="button"
-        >
-
-            ✕
-            <span>Close Menu</span>
-
-        </button>
-
-    </div>
 
 </aside>
+
+
 
 <!-- =====================================
      PROFESSIONAL HEADER
@@ -426,8 +312,11 @@
 
 <header class="mainHeader">
 
+
+    <!-- MENU BUTTON -->
+
     <button
-        id="menuBtn"
+        id="headerMenuBtn"
         class="menuBtn"
         type="button"
         aria-label="Open menu"
@@ -436,11 +325,15 @@
     </button>
 
 
+
+    <!-- BRAND -->
+
     <div class="headerBrand">
 
         <div class="headerLogo">
             🎓
         </div>
+
 
         <div>
 
@@ -457,6 +350,9 @@
     </div>
 
 
+
+    <!-- PROFILE -->
+
     <a
         href="student-login.html"
         class="headerProfile"
@@ -466,6 +362,8 @@
     </a>
 
 </header>
+
+
 
 <!-- =====================================
      HERO
@@ -528,6 +426,7 @@
         </div>
 
 
+
         <div class="dashCard">
 
             <a href="#">
@@ -540,6 +439,7 @@
             </a>
 
         </div>
+
 
 
         <div class="dashCard">
@@ -556,6 +456,7 @@
         </div>
 
 
+
         <div class="dashCard">
 
             <a href="#">
@@ -568,6 +469,7 @@
             </a>
 
         </div>
+
 
 
         <div class="dashCard">
@@ -584,9 +486,10 @@
         </div>
 
 
+
         <div class="dashCard">
 
-            <a href="#">
+            <a href="student-profile.html">
 
                 👤
                 <br>
@@ -685,9 +588,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -718,9 +619,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -751,9 +650,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -784,9 +681,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -817,9 +712,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -850,9 +743,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -883,9 +774,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -916,9 +805,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -949,9 +836,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -982,9 +867,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -1015,9 +898,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -1048,9 +929,7 @@
 
 
     <button class="bookmarkBtn">
-
         ⭐ Bookmark
-
     </button>
 
 </div>
@@ -1064,10 +943,8 @@
 <footer>
 
     <p>
-
         © 2026 Unique Academic |
         Learn. Understand. Succeed.
-
     </p>
 
 </footer>
@@ -1075,7 +952,230 @@
 
 
 <!-- =====================================
-     JAVASCRIPT
+     MENU JAVASCRIPT
+===================================== -->
+
+<script>
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const headerMenuBtn =
+    document.getElementById("headerMenuBtn");
+
+const sideMenu =
+    document.getElementById("sideMenu");
+
+const menuOverlay =
+    document.getElementById("menuOverlay");
+
+
+
+/* =====================================
+   OPEN MENU
+===================================== */
+
+function openMenu() {
+
+    sideMenu.classList.add("active");
+
+    menuOverlay.classList.add("active");
+
+    menuBtn.setAttribute(
+        "aria-expanded",
+        "true"
+    );
+
+    sideMenu.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+}
+
+
+
+/* =====================================
+   CLOSE MENU
+===================================== */
+
+function closeMenu() {
+
+    sideMenu.classList.remove("active");
+
+    menuOverlay.classList.remove("active");
+
+    menuBtn.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+
+    sideMenu.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+}
+
+
+
+/* =====================================
+   MENU BUTTONS
+===================================== */
+
+menuBtn.addEventListener(
+    "click",
+    openMenu
+);
+
+
+headerMenuBtn.addEventListener(
+    "click",
+    openMenu
+);
+
+
+menuOverlay.addEventListener(
+    "click",
+    closeMenu
+);
+
+
+
+/* =====================================
+   ESC KEY
+===================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeMenu();
+
+        }
+
+    }
+);
+
+
+
+/* =====================================
+   REFRESH
+===================================== */
+
+const refreshBtn =
+    document.getElementById("refreshBtn");
+
+
+if (refreshBtn) {
+
+    refreshBtn.addEventListener(
+        "click",
+        function() {
+
+            window.location.reload();
+
+        }
+    );
+
+}
+
+
+
+/* =====================================
+   SHARE APP
+===================================== */
+
+const shareAppBtn =
+    document.getElementById("shareAppBtn");
+
+
+if (shareAppBtn) {
+
+    shareAppBtn.addEventListener(
+        "click",
+        async function() {
+
+            const shareData = {
+
+                title:
+                    "Unique Academic",
+
+                text:
+                    "Learn smarter with Unique Academic.",
+
+                url:
+                    window.location.href
+
+            };
+
+
+            try {
+
+                if (
+                    navigator.share
+                ) {
+
+                    await navigator.share(
+                        shareData
+                    );
+
+                } else {
+
+                    await navigator.clipboard.writeText(
+                        window.location.href
+                    );
+
+                    alert(
+                        "App link copied!"
+                    );
+
+                }
+
+            } catch (error) {
+
+                console.log(
+                    "Share cancelled."
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+
+/* =====================================
+   CLOSE MENU WHEN LINK IS CLICKED
+===================================== */
+
+const menuLinks =
+    document.querySelectorAll(
+        ".sideMenu a"
+    );
+
+
+menuLinks.forEach(
+    function(link) {
+
+        link.addEventListener(
+            "click",
+            closeMenu
+        );
+
+    }
+);
+
+</script>
+
+
+
+<!-- =====================================
+     YOUR EXISTING SCRIPT
 ===================================== -->
 
 <script src="script.js"></script>
