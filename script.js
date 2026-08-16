@@ -815,3 +815,50 @@ if (refreshBtn) {
     });
 
 }
+
+// =====================================
+// SIDE MENU
+// =====================================
+
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+
+// Open menu
+if (menuBtn) {
+
+    menuBtn.addEventListener("click", function () {
+
+        sideMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+
+    });
+
+}
+
+
+// Close menu
+if (menuOverlay) {
+
+    menuOverlay.addEventListener("click", function () {
+
+        sideMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+
+    });
+
+}
+
+
+// Close with phone/browser back-style Escape
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+
+        sideMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+
+    }
+
+});
