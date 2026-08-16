@@ -15732,7 +15732,523 @@ const quizData = {
 }],
         2: [],
         3: [],
-        4: [],
+        4: [{
+    question: "Why is product/service development considered a critical activity in entrepreneurial businesses?",
+    options: [
+        "It ensures the business consistently adheres to intellectual property regulations.",
+        "It helps businesses navigate intense global competition and rapidly changing consumer demands.",
+        "It solely focuses on creating products that are cheaper to produce than existing alternatives.",
+        "It allows entrepreneurs to eliminate any existing customer satisfaction issues with minimal market research."
+    ],
+    answer: 1,
+    englishExplanation: "Product development is essential because it allows businesses to adapt to fast-paced changes in what consumers want and stay ahead of competitors in a dynamic global market.",
+    amharicExplanation: "የምርት/አገልግሎት ማበልጸግ (Product/service development) ወሳኝ የሆነበት ምክንያት ድርጅቶች በፍጥነት ከሚለዋወጠው የደንበኞች ፍላጎት ጋር እንዲላመዱ እና ከጠንካራ የአለም አቀፍ ውድድር (Global Competition) አሸናፊ ሆነው እንዲወጡ ስለሚረዳ ነው።"
+},
+
+{
+    question: "In the context of the product/service development process, why is the 'Incubation' stage critical after 'Idea Generation'?",
+    options: [
+        "It allows the idea to be directly implemented without modification.",
+        "It helps evaluate consumer reactions in real-life scenarios.",
+        "It facilitates a deeper analysis to refine viable ideas before progressing further.",
+        "It enables immediate commercialization of the idea to gain first-mover advantage."
+    ],
+    answer: 2,
+    englishExplanation: "Incubation is the stage where raw ideas are nurtured, analyzed, and refined into workable concepts, ensuring only the most practical and viable ones move forward to actual development.",
+    amharicExplanation: "ኢንኩቤሽን (Incubation) ደረጃ ወሳኝ የሆነው ከሀሳብ ማመንጨት (Idea Generation) በኋላ የተገኙትን ጥሬ ሀሳቦች ወደ ስራ ከመግባታቸው በፊት በጥልቀት በመተንተን እና በማጥራት ጠቃሚ የሆኑትን ብቻ ለይቶ ለማሳደግ ስለሚያስችል ነው።"
+},
+
+{
+    question: "Which factor is NOT considered during the 'Concept Development and Testing' stage of the product development process?",
+    options: [
+        "Identifying potential target users of the product.",
+        "Defining the primary benefits the product should offer.",
+        "Determining the final price and distribution channels.",
+        "Gathering feedback from target consumers on initial product concepts."
+    ],
+    answer: 2,
+    englishExplanation: "Concept development and testing focus on defining the product idea and gathering initial customer feedback. Setting the final price and establishing distribution channels happen later during marketing strategy and commercialization.",
+    amharicExplanation: "የConcept Development and Testing ደረጃ የሚያተኩረው ምርቱ ለደንበኞች በሚሰጠው ጥቅም እና በሚያገኘው ምላሽ ላይ ነው። የመጨረሻ ዋጋን እና የስርጭት መስመሮችን (Final Price and Distribution Channels) መወሰን ግን በኋላ በMarketing Strategy እና Commercialization ደረጃ የሚሰራ ተግባር ነው።"
+},
+
+{
+    question: "What is the primary objective of the 'Business Analysis' stage within the product development process?",
+    options: [
+        "To finalize the product design and begin prototype development.",
+        "To determine the product's profit potential through sales, cost, and profit projections.",
+        "To estimate the market size based on consumer demographics alone.",
+        "To conduct laboratory testing to confirm product functionality."
+    ],
+    answer: 1,
+    englishExplanation: "Business analysis evaluates the financial attractiveness of a new product by projecting sales, costs, and expected profits to determine whether it aligns with the company's financial goals.",
+    amharicExplanation: "የቢዝነስ ትንተና (Business Analysis) ዋና አላማ የምርቱን የወደፊት ሽያጭ፣ ወጪ እና ትርፍ በመተንበይ (Projections) ምርቱ በገበያ ላይ ያለውን የትርፍ አቅም (Profit Potential) ማረጋገጥ እና ለድርጅቱ አዋጭ መሆኑን መገምገም ነው።"
+},
+
+{
+    question: "During the 'Product Development' stage, why is it crucial to test both the functional and psychological aspects of the product?",
+    options: [
+        "Because psychological aspects are more valuable than functionality.",
+        "To ensure the product can be mass-produced without alterations.",
+        "To gauge consumer preferences on non-functional features like design and brand appeal.",
+        "Functional testing is optional and can be substituted by psychological testing."
+    ],
+    answer: 2,
+    englishExplanation: "A product must not only work correctly (functional) but also appeal to consumers' emotions, aesthetics, and brand expectations (psychological) to be successful and accepted in the market.",
+    amharicExplanation: "በምርት ማበልጸግ (Product Development) ወቅት ተግባራዊ (Functional) እና ስነ-ልቦናዊ (Psychological) ጉዳዮችን መፈተሽ አስፈላጊ የሆነው፣ ምርቱ በአግባቡ መስራቱን ብቻ ሳይሆን ደንበኞች ለምርቱ ዲዛይን፣ ውበት እና ብራንድ ያላቸውን ዝንባሌ (Brand Appeal) ለመረዳት ጭምር ነው።"
+},
+
+{
+    question: "What strategic advantage is a company likely to gain by choosing a 'First Entry' strategy during commercialization?",
+    options: [
+        "The ability to avoid initial market education costs.",
+        "The opportunity to assess competitors' weaknesses in the market.",
+        "A reputation advantage by establishing brand presence early.",
+        "Learning the market size without the expense of product development."
+    ],
+    answer: 2,
+    englishExplanation: "Being the first to market allows a company to build a strong brand reputation, capture early adopters, and establish industry leadership before competitors arrive.",
+    amharicExplanation: "ምርትን ለመጀመሪያ ጊዜ ወደ ገበያ የማስገባት (First Entry) ስትራቴጂ ዋነኛ ጥቅም ተወዳዳሪዎች ከመምጣታቸው በፊት የብራንድ እውቅናን (Brand Presence) በማግኘት ጠንካራ ስም መገንባት መቻሉ ነው።"
+},
+
+{
+    question: "In the 'Market Testing' stage, what key information does test marketing primarily provide?",
+    options: [
+        "Competitor pricing strategies.",
+        "Insights on actual consumer responses, market size, and product appeal.",
+        "Final brand name options for the product.",
+        "Precise financial projections for the next fiscal year."
+    ],
+    answer: 1,
+    englishExplanation: "Market testing involves launching the product in a limited, real-world setting to observe actual consumer buying behavior, gauge demand, and evaluate the effectiveness of the marketing plan.",
+    amharicExplanation: "የገበያ ሙከራ (Market Testing) ምርቱን በተወሰነ የገበያ ክልል በማቅረብ ትክክለኛ የደንበኞች ምላሽ (Consumer Responses)፣ የገበያውን ስፋት እና የምርቱን ተፈላጊነት በተግባር ለመፈተሽ የሚያስችል ወሳኝ መረጃ ይሰጣል።"
+},
+
+{
+    question: "Which of the following characteristics is NOT ideal for selecting a target market during the 'Commercialization' phase?",
+    options: [
+        "Consumers who are highly adaptable to new products.",
+        "Heavy users with strong brand loyalty to competitors.",
+        "Opinion leaders who influence others' purchasing decisions.",
+        "Prospects who can be reached with minimal marketing costs."
+    ],
+    answer: 1,
+    englishExplanation: "When initially launching a product, targeting consumers who are strongly loyal to competing brands is difficult and expensive. It is more effective to target early adopters, opinion leaders, or dissatisfied users.",
+    amharicExplanation: "በምርት ማስተዋወቅ (Commercialization) የመጀመሪያ ደረጃ ላይ ለሌሎች ተወዳዳሪ ብራንዶች ከፍተኛ ታማኝነት (Brand Loyalty) ያላቸውን ደንበኞች ኢላማ ማድረግ ከባድ ነው። እነዚህን ደንበኞች ከለመዱት ምርት ማላቀቅ ከፍተኛ ወጪ እና ጊዜ ስለሚጠይቅ ነው።"
+},
+
+{
+    question: "Why is it essential for companies to utilize multiple sources such as consumers, distribution channels, and government for 'New Idea Generation'?",
+    options: [
+        "It allows companies to avoid direct competition by using alternative ideas.",
+        "It ensures a higher volume of ideas, reducing the need for later testing stages.",
+        "Diverse sources can provide unique insights that help identify unmet market needs.",
+        "It focuses on generating ideas that are guaranteed to succeed in the market."
+    ],
+    answer: 2,
+    englishExplanation: "Different groups view the market from different angles. Using diverse sources provides a broader range of innovative ideas and helps uncover problems or needs that a single perspective might miss.",
+    amharicExplanation: "አዳዲስ ሀሳቦችን ለማመንጨት ከተለያዩ ምንጮች (ደንበኞች፣ አከፋፋዮች፣ መንግስት ወዘተ) መጠቀም አስፈላጊ የሆነው፣ የተለያዩ አካላት የተለያየ እይታ ስላላቸው በገበያው ውስጥ ያልተሟሉ ፍላጎቶችን (Unmet Market Needs) ለይቶ ለማወቅ የሚረዱ ልዩ ሀሳቦችን ስለሚሰጡ ነው።"
+},
+
+{
+    question: "In the 'Marketing Strategy Development' stage, which of the following would most likely be considered when establishing long-term sales and profit goals?",
+    options: [
+        "Preliminary product design features and initial consumer reactions.",
+        "The influence of similar existing products on market growth rates.",
+        "Projected distribution costs and the planned pricing strategy.",
+        "The immediate budget allocation for product testing and design."
+    ],
+    answer: 1,
+    englishExplanation: "Long-term sales and profit forecasting requires analyzing the broader market environment, including how existing similar products impact overall market growth and future demand trends.",
+    amharicExplanation: "በMarketing Strategy Development ደረጃ የረጅም ጊዜ የሽያጭ እና ትርፍ ግቦችን ለማውጣት፣ በገበያ ላይ ያሉ ተመሳሳይ ምርቶች በገበያው አጠቃላይ እድገት (Market Growth Rates) ላይ ያላቸውን ተፅዕኖ እና የወደፊት አዝማሚያ ማጥናት ወሳኝ ነው።"
+},
+
+{
+    question: "During the 'Commercialization' phase, what is a key advantage of choosing a 'Parallel Entry' strategy over 'First Entry' or 'Late Entry'?",
+    options: [
+        "It enables a company to quickly exit the market if the product fails.",
+        "It combines the benefits of early market capture with observed competitor insights.",
+        "It allows the company to avoid costs associated with consumer education.",
+        "It guarantees reduced production costs through mass production."
+    ],
+    answer: 1,
+    englishExplanation: "Parallel entry involves launching a product simultaneously with competitors. This allows a firm to capture market share early while also learning from competitor positioning and promotional strategies.",
+    amharicExplanation: "Parallel Entry ማለት ምርትን ከተወዳዳሪዎች ጋር እኩል በሆነ ጊዜ ወደ ገበያ ማስተዋወቅ ሲሆን፣ ይህም የገበያ ድርሻን ቀድሞ ለመያዝ እና የተወዳዳሪዎችን አካሄድ በመመልከት ጠቃሚ ትምህርት ለማግኘት ይረዳል።"
+},
+
+{
+    question: "Which of the following is NOT a stage in the product/service development process?",
+    options: [
+        "Idea Generation",
+        "Incubation",
+        "Implementation",
+        "Market Saturation",
+        "None"
+    ],
+    answer: 3,
+    englishExplanation: "Market saturation is a condition or stage in the product life cycle where a market no longer generates new demand for an item. It is not an active development step within product creation.",
+    amharicExplanation: "Market Saturation (የገበያ መሞላት) የምርት ህይወት ዑደት (Product Life Cycle) ደረጃ እንጂ አዲስ ምርትን የመፍጠር እና የማበልጸግ የልማት ሂደት ደረጃ አይደለም።"
+},
+
+{
+    question: "What is the primary goal of the product/service development process?",
+    options: [
+        "To increase production costs",
+        "To develop a commercial version of the opportunity",
+        "To reduce the number of competitors",
+        "To create a monopoly",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The primary objective of product development is to take an identified business opportunity or idea and transform it into a functional, marketable product that can be sold commercially.",
+    amharicExplanation: "የምርት/አገልግሎት እድገት ሂደት ዋና አላማ የተገኘውን የንግድ እድል (Opportunity) ወደሚሸጥ እና አትራፊ ወደሆነ የንግድ ምርት (Commercial Version) መቀየር ነው።"
+},
+
+{
+    question: "Which of the following best describes the concept of 'Intellectual Property Protection'?",
+    options: [
+        "Protecting physical assets from theft",
+        "Ensuring the safety of employees",
+        "Safeguarding the rights to use and distribute a product/service",
+        "Increasing the market share",
+        "All"
+    ],
+    answer: 2,
+    englishExplanation: "Intellectual property protection legally secures the owner's rights over creations, inventions, or products, preventing unauthorized copying, use, or distribution by others.",
+    amharicExplanation: "የዕውቀት ንብረት ጥበቃ (Intellectual Property Protection) ማለት አንድን የፈጠራ ስራ ወይም ምርት ያለፈቃድ ከኮፒ መደረግ እና ከብዝበዛ በመጠበቅ የባለቤቱን የመጠቀም እና የማከፋፈል ህጋዊ መብት ማረጋገጥ ነው።"
+},
+
+{
+    question: "In the context of product/service development, what does 'Incubation' refer to?",
+    options: [
+        "The process of generating new ideas",
+        "The phase where the product/service is tested and refined",
+        "The final launch of the product/service",
+        "The marketing strategy development"
+    ],
+    answer: 1,
+    englishExplanation: "Incubation is the nurture phase where initial ideas or early product versions are tested, shaped, and continuously refined into effective commercial proposals.",
+    amharicExplanation: "ኢንኩቤሽን (Incubation) የሚባለው አዲስ የታሰበው ምርት ወይም አገልግሎት ለገበያ ከመብቃቱ በፊት የሚሞከርበት፣ የሚገመገምበት እና የሚሻሻልበት የዝግጅት ደረጃ ነው።"
+},
+
+{
+    question: "Which legal framework is essential for protecting new products/services in Ethiopia?",
+    options: [
+        "International Trade Law",
+        "Intellectual Property Law",
+        "Environmental Law",
+        "Labor Law"
+    ],
+    answer: 1,
+    englishExplanation: "Intellectual Property Law grants legal rights such as patents and trademarks to owners for protecting technological innovations, designs, and brand concepts.",
+    amharicExplanation: "በኢትዮጵያ ውስጥ አዳዲስ ምርቶችን እና አገልግሎቶችን ከስርቆት እና ኮፒ ከመደረግ ህጋዊ በሆነ መንገድ ለመጠበቅ የዕውቀት ንብረት ሕግ (Intellectual Property Law) ወሳኝ እና አስፈላጊ ነው።"
+},
+
+{
+    question: "Which of the following is a key factor in determining the feasibility of a new product/service?",
+    options: [
+        "Market size",
+        "Personal preferences",
+        "Competitor's opinion",
+        "Employee satisfaction"
+    ],
+    answer: 0,
+    englishExplanation: "Market size reflects the total potential customer volume and purchasing power, which directly indicates whether demand is sufficient to ensure business profitability.",
+    amharicExplanation: "የአንድ አዲስ ምርት አዋጭነት (Feasibility) ለመወሰን የገበያው ስፋት (Market Size) ወሳኝ ነው፤ ምክንያቱም በቂ ደንበኛ እና ፍላጎት መኖሩን የሚያሳየው እሱ በመሆኑ ነው።"
+},
+
+{
+    question: "What is the purpose of a prototype in product/service development?",
+    options: [
+        "To finalize the product design",
+        "To test and refine the product concept",
+        "To market the product",
+        "To protect intellectual property"
+    ],
+    answer: 1,
+    englishExplanation: "A prototype is a preliminary physical or digital model created to test function, identify flaws, and refine product design using practical user feedback.",
+    amharicExplanation: "ፕሮቶታይፕ (Prototype) ማለት የመጨረሻው ምርት ከመሰራቱ በፊት የሚዘጋጅ የመጀመሪያ የሙከራ ሞዴል ሲሆን፣ አላማውም የምርቱን ፅንሰ-ሀሳብ ለመፈተሽ እና ለማሻሻል ነው።"
+},
+
+{
+    question: "Which of the following best describes 'Market Testing'?",
+    options: [
+        "Launching the product nationwide",
+        "Conducting a small-scale trial to gauge customer response",
+        "Developing marketing strategies",
+        "Protecting the product from competitors"
+    ],
+    answer: 1,
+    englishExplanation: "Market testing involves releasing the product to a specific, limited segment of target buyers to evaluate actual performance and sales potential before a full-scale launch.",
+    amharicExplanation: "የገበያ ሙከራ (Market Testing) ማለት ምርቱን ሙሉ በሙሉ ወደ ገበያ ከማስገባት በፊት በተወሰነ ቦታ እና በትንሽ ደረጃ በማቅረብ የደንበኞችን ምላሽ መገምገም ነው።"
+},
+
+{
+    question: "What is the primary purpose of conducting a SWOT analysis in product/service development?",
+    options: [
+        "To identify potential investors",
+        "To evaluate the strengths, weaknesses, opportunities, and threats",
+        "To determine the product's price",
+        "To finalize the product design"
+    ],
+    answer: 1,
+    englishExplanation: "SWOT analysis assesses internal Strengths and Weaknesses alongside external Opportunities and Threats to help businesses make informed strategic development decisions.",
+    amharicExplanation: "የ SWOT ትንተና ዋና አላማ የድርጅቱን ውስጣዊ ጥንካሬዎች (Strengths) እና ድክመቶች (Weaknesses) እንዲሁም ውጫዊ መልካም አጋጣሚዎች (Opportunities) እና ስጋቶች (Threats) በጥልቀት ለመገምገም ነው።"
+},{
+    question: "Intellectual Property Rights (IPRs) protect the use of information and ideas that are of:",
+    options: [
+        "Social value",
+        "Moral value",
+        "Commercial value",
+        "Ethical value"
+    ],
+    answer: 2,
+    englishExplanation: "Intellectual Property Rights safeguard intangible creations that have economic or business value, allowing creators to gain financial benefit from their innovations.",
+    amharicExplanation: "የአእምሯዊ ሀብት መብት (IPRs) የንግድ ወይም የኢኮኖሚ እሴት (Commercial value) ላላቸው ሀሳቦችና ፈጠራዎች ጥበቃ ይሰጣል። ይህም ፈጣሪዎች ከፈጠራቸው የገንዘብ ጥቅም እንዲያገኙ ያስችላል።"
+},
+
+{
+    question: "Which of the following would not gain copyright protection?",
+    options: [
+        "A DVD",
+        "An unrecorded speech",
+        "Written lyrics of a song",
+        "A hand knitted jumper",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "Copyright protection generally requires an original work to be fixed in a tangible or recorded form. An unrecorded speech is not fixed in such a form, so it would not normally receive copyright protection.",
+    amharicExplanation: "የቅጂ መብት (Copyright) ጥበቃ ለማግኘት አንድ የፈጠራ ስራ በሚጨበጥ ወይም በተቀዳ መልኩ (Tangible form) መቀመጥ ያስፈልገዋል። ያልተቀዳ ንግግር በቃል ብቻ ስለሆነ በዚህ መልኩ አልተመዘገበም።"
+},
+
+{
+    question: "Which of the following is not one of the essential elements for a patent to be granted for an invention?",
+    options: [
+        "Be a product.",
+        "Be new to the public.",
+        "Involve an inventive step.",
+        "Be capable of industrial application."
+    ],
+    answer: 0,
+    englishExplanation: "A patent can be granted for both products and processes or methods. Therefore, an invention does not have to be strictly a physical product to qualify for patent protection.",
+    amharicExplanation: "የፓተንት (Patent) መብት ለአዳዲስ ምርቶችም ሆነ ለአሰራር ሂደቶች (Processes or methods) ሊሰጥ ይችላል። ስለዚህ ፈጠራው የግድ ቁሳዊ ምርት ብቻ መሆን የለበትም።"
+},
+
+{
+    question: "Which one of the following statements is true?",
+    options: [
+        "A patent must be registered in order to gain protection.",
+        "Copyright must be registered in order to gain protection.",
+        "The owner of a patent cannot sell it but can prevent others using his invention.",
+        "All",
+        "None"
+    ],
+    answer: 0,
+    englishExplanation: "Patent protection generally requires a formal application, examination, and grant by the relevant patent authority. Copyright, on the other hand, generally arises automatically when an original work is created.",
+    amharicExplanation: "የፓተንት (Patent) ህጋዊ ጥበቃ ለማግኘት በተወሰነ የህግ ሂደት መመዝገብና በባለስልጣን መፈቀድ ያስፈልጋል። በተቃራኒው የቅጂ መብት (Copyright) ብዙውን ጊዜ የፈጠራ ስራው ሲፈጠር በራሱ ጥበቃ ያገኛል።"
+},
+
+{
+    question: "In the Idea Screening, the purpose is to lessen the number of ideas to few vital/valuable ideas. The ideas should be written down and reviewed each week by an idea committee who should sort the ideas into three groups. Find the odd one which is not part of this group.",
+    options: [
+        "Promising ideas",
+        "Marginal ideas",
+        "Rejects",
+        "Exempts",
+        "None"
+    ],
+    answer: 3,
+    englishExplanation: "During idea screening, ideas are commonly classified into promising ideas, marginal ideas, and rejects. 'Exempts' is not a standard category in this classification.",
+    amharicExplanation: "በሀሳብ ማጣራት (Idea Screening) ወቅት ሀሳቦች በተስፋ ሰጪ (Promising)፣ መካከለኛ (Marginal) እና ውድቅ (Rejects) በሚሉ ምድቦች ይከፈላሉ። 'Exempts' የሚለው ግን ከእነዚህ ምድቦች ውስጥ አይገኝም።"
+},
+
+{
+    question: "A patent right that protects new, unobvious and original appearance of an object is referred to as:",
+    options: [
+        "Design patent",
+        "Utility patents",
+        "Plant patent",
+        "Provisional"
+    ],
+    answer: 0,
+    englishExplanation: "A design patent protects the new and original visual or ornamental appearance of an object rather than its functional or mechanical features.",
+    amharicExplanation: "ዲዛይን ፓተንት (Design patent) የአንድ ነገር አዲስና ልዩ የውጭ ገጽታ፣ ቅርጽ ወይም ውበትን የሚጠብቅ የፓተንት አይነት ነው።"
+},
+
+{
+    question: "Setting preliminary design, prototype development and setting actual design of a new product are the main activities of:",
+    options: [
+        "Idea Generation",
+        "Incubation",
+        "Implementation",
+        "Diffusion"
+    ],
+    answer: 1,
+    englishExplanation: "The incubation phase focuses on developing the idea through preliminary designs, prototype development, testing, and establishing the actual design of the new product.",
+    amharicExplanation: "የኢንኩቤሽን (Incubation) ደረጃ የምርቱን የመጀመሪያ ንድፍ ማዘጋጀት፣ ፕሮቶታይፕ (Prototype) መስራት እና የመጨረሻውን ዲዛይን ማዘጋጀት የሚከናወንበት ደረጃ ነው።"
+},
+
+{
+    question: "Which of the following is/are true about the legal issues of entrepreneurship?",
+    options: [
+        "Patent protection for an entrepreneurial invention is given for an indefinite period of time",
+        "The owner of a trademark can give it to other individuals and/or businesses",
+        "Patent prevents others from printing, copying, or publishing any original work of authorship",
+        "Copyright gives protection to both the idea and the form in which the works/invention of the owner from being used by others.",
+        "All of the above",
+        "\"B\" and \"D\""
+    ],
+    answer: 1,
+    englishExplanation: "A trademark owner can license, transfer, or assign trademark rights to other individuals or businesses. The other statements incorrectly describe patent or copyright protection.",
+    amharicExplanation: "የንግድ ምልክት (Trademark) ባለቤት መብቱን ለሌላ ሰው ወይም ድርጅት በፍቃድ (Licensing) መስጠት፣ ማስተላለፍ ወይም መሸጥ ይችላል። ስለዚህ ይህ አማራጭ ትክክል ነው።"
+},
+
+{
+    question: "All of the following are true about intellectual property rights except:",
+    options: [
+        "Copyrights provide exclusive rights to creative individuals for the protection of literary or artistic productions",
+        "Patents are property rights that can be sold and transferred",
+        "Unlike the patent, a trademark can last indefinitely",
+        "Trademarks like patents are periodically renewed unless invalidated by cancellations",
+        "None of the above"
+    ],
+    answer: 3,
+    englishExplanation: "Trademarks can generally be renewed continuously as long as the required conditions are met, while patents have a limited statutory term and cannot simply be renewed indefinitely like trademarks.",
+    amharicExplanation: "የፓተንት (Patent) መብት የተወሰነ የጊዜ ገደብ አለው እና እንደ ትሬድማርክ (Trademark) ለዘላለም በማደስ ሊቀጥል አይችልም። ትሬድማርክ ግን ተገቢውን የእድሳት ሂደት በመከተል ሊቀጥል ይችላል።"
+},
+
+{
+    question: "Why is competitive analysis important in the product development process?",
+    options: [
+        "It helps identify potential investors.",
+        "It provides insight into the strengths and weaknesses of competitors.",
+        "It guarantees a monopoly in the market.",
+        "It reduces production costs."
+    ],
+    answer: 1,
+    englishExplanation: "Competitive analysis evaluates competitors to identify their strengths, weaknesses, products, strategies, and market position. This information helps a business develop better products and compete effectively.",
+    amharicExplanation: "የተወዳዳሪዎች ትንተና (Competitive analysis) የተወዳዳሪዎችን ጥንካሬ፣ ድክመት፣ ምርቶችና የገበያ ስልቶች ለመረዳት ይረዳል። ይህም ንግዱ የተሻለ ምርት እንዲያዘጋጅና በገበያ ውስጥ በተሻለ ሁኔታ እንዲወዳደር ያግዛል።"
+},
+
+{
+    question: "Products are often in different stages in the product life cycle in different countries.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "A product may be in the growth stage in one country while it is in maturity or decline in another because market demand, technology, income levels, and economic conditions differ between countries.",
+    amharicExplanation: "በተለያዩ ሀገራት የገበያ ፍላጎት፣ የቴክኖሎጂ እድገት፣ የገቢ ደረጃ እና የኢኮኖሚ ሁኔታ ስለሚለያይ አንድ ምርት በአንድ ሀገር በእድገት ደረጃ ላይ ሳለ በሌላ ሀገር በብስለት ወይም በውድቀት ደረጃ ላይ ሊሆን ይችላል።"
+},
+
+{
+    question: "The search for new-product ideas works best if it is haphazard because of the unique ways in which crazy ideas often produce the best new products.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "The search for new-product ideas should be systematic and structured rather than haphazard. A systematic process helps identify, evaluate, and select ideas that have good business potential.",
+    amharicExplanation: "የአዲስ ምርት ሀሳብ ፍለጋ በዘፈቀደ (Haphazard) ሳይሆን በስርዓትና በታቀደ መንገድ (Systematic) መከናወን አለበት። ይህም ትርፋማና ተግባራዊ የሆኑ ሀሳቦችን ለመለየትና ለመገምገም ይረዳል።"
+},
+
+{
+    question: "Like the patent, a trademark can last indefinitely, as long as the mark continues to perform its indicated function.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "A patent has a limited legal term, while a trademark can potentially continue indefinitely if it remains in use and is properly renewed and maintained.",
+    amharicExplanation: "ፓተንት (Patent) የተወሰነ የህግ የጊዜ ገደብ አለው። ትሬድማርክ (Trademark) ግን በትክክል እየተጠቀሙበት እና በየጊዜው እያደሱት እስከቀጠሉ ድረስ ለረጅም ጊዜ ሊቀጥል ይችላል።"
+},
+
+{
+    question: "Product development refers to the complete process of taking a product which is purely new, not known before, to the market.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Product development includes not only completely new products but also improvements, modifications, and new versions of existing products.",
+    amharicExplanation: "የምርት እድገት (Product development) ሙሉ በሙሉ አዲስ የሆኑ ምርቶችን ብቻ አያካትትም። ነባር ምርቶችን ማሻሻል፣ መቀየር እና አዲስ ስሪት ማዘጋጀትንም ያካትታል።"
+},
+
+{
+    question: "All inventions should be patentable no matter the feature of the invention becomes contrary to the public.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Not every invention is patentable. Inventions that fall under legal exclusions or are contrary to public order, morality, or applicable law may be excluded from patent protection.",
+    amharicExplanation: "ሁሉም ፈጠራዎች የፓተንት መብት ሊያገኙ አይችሉም። ከህግ፣ ከህዝብ ስነ-ምግባር ወይም ከህዝብ ጥቅም ጋር የሚጋጩ ፈጠራዎች ከፓተንት ጥበቃ ሊገለሉ ይችላሉ።"
+},
+
+{
+    question: "Which step in the new-product development process involves seeking feedback from consumers in order to know what response they would give to a proposed product?",
+    options: [
+        "Idea generation",
+        "Product screening",
+        "Concept testing",
+        "Feasibility analysis"
+    ],
+    answer: 2,
+    englishExplanation: "Concept testing presents a proposed product idea or concept to target consumers and collects their reactions, opinions, and level of interest before full product development.",
+    amharicExplanation: "የምርት ፅንሰ-ሀሳብ ፍተሻ (Concept testing) የታቀደውን የምርት ሀሳብ ለተጠቃሚዎች በማቅረብ ምላሻቸውን፣ አስተያየታቸውን እና የፍላጎት ደረጃቸውን የሚለካበት ደረጃ ነው።"
+},
+
+{
+    question: "Introducing the new product into the market takes place in which stage of the new product development process?",
+    options: [
+        "Commercialization",
+        "Test marketing",
+        "Marketing strategy",
+        "Product development"
+    ],
+    answer: 0,
+    englishExplanation: "Commercialization is the stage where the new product is officially launched into the market on a full scale, including production, distribution, promotion, and sales.",
+    amharicExplanation: "ኮመርሻላይዜሽን (Commercialization) አዲሱ ምርት በይፋ በሙሉ ወደ ገበያ የሚገባበት ደረጃ ነው። በዚህ ደረጃ ምርት፣ ስርጭት፣ ማስታወቂያ እና ሽያጭ ይጀምራሉ።"
+},
+
+{
+    question: "Introducing a new product and marketing program to more realistic market settings following functional and consumer approval is carried out at which new-product development stage?",
+    options: [
+        "Idea generation",
+        "Screening",
+        "Marketing strategy",
+        "Test marketing",
+        "None"
+    ],
+    answer: 3,
+    englishExplanation: "Test marketing introduces the new product and its marketing program to a limited but realistic market to observe consumer reactions and evaluate performance before the full launch.",
+    amharicExplanation: "ቴስት ማርኬቲንግ (Test marketing) አዲሱ ምርት በሙሉ ወደ ገበያ ከመግባቱ በፊት በተወሰነ እና እውነተኛ የገበያ አካባቢ ላይ በማስተዋወቅ የተጠቃሚዎችን ምላሽ የሚፈትሽበት ደረጃ ነው።"
+},
+
+{
+    question: "Looking at the sales history of similar products and surveying market opinion are tools used at which stage in the new-product development process?",
+    options: [
+        "Concept development and testing",
+        "Commercialization",
+        "Business analysis",
+        "Marketing strategy development"
+    ],
+    answer: 2,
+    englishExplanation: "Business analysis uses market information, sales history, customer opinions, cost estimates, and sales forecasts to determine whether the proposed product is commercially worthwhile.",
+    amharicExplanation: "የቢዝነስ ትንተና (Business analysis) የተመሳሳይ ምርቶችን የሽያጭ ታሪክ፣ የገበያ አስተያየት፣ የወጪ ግምት እና የሽያጭ ትንበያ በመጠቀም ምርቱ ትርፋማ ሊሆን እንደሚችል የሚገመግምበት ደረጃ ነው።"
+},
+
+{
+    question: "If a person uses someone's song as background music in his/her music video then could be an act a person is an example of:",
+    options: [
+        "Copyright Infringement",
+        "Patent Infringement",
+        "Trademark Infringement",
+        "All"
+    ],
+    answer: 0,
+    englishExplanation: "A song is a creative work protected by copyright. Using someone else's song in a video without the required permission or license may constitute copyright infringement.",
+    amharicExplanation: "ዘፈን የፈጠራ ስራ ስለሆነ በቅጂ መብት (Copyright) ይጠበቃል። የሌላ ሰውን ዘፈን ያለተገቢ ፈቃድ ወይም ፈቃድ ሰነድ (License) በሙዚቃ ቪዲዮ ውስጥ መጠቀም የቅጂ መብት መጣስ (Copyright infringement) ሊሆን ይችላል።"
+}],
         5: [{
     "question": "Merchants buy goods from the area of surplus and move them to the area of shortage for customers to buy and, in the process; they make profit for the ________ utility they provide.",
     "options": [
