@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Logic - Chapter 3</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Logic - Chapter 3</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+        aria-label="Go back"
+    >
+        <span class="backIcon">←</span>
+        <span class="pageBackText">Back</span>
+    </button>
+
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">⚖️</span>
+
+        <div>
+            <h1>Logic</h1>
+            <p>Chapter 3</p>
+        </div>
+
+    </div>
+
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+        aria-label="Go to home"
+    >
+        <span>🏠</span>
+        <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>📗 Logic</h1>
+    <h1>⚖️ Logic</h1>
 
-<h2>Chapter 3</h2>
-
-<p>
+    <h2>Chapter 3</h2>
 
 
 <div class="chapter-content">
@@ -877,25 +925,43 @@
 
 <p>ያዟቸውፈተና ላይ ስለሚመጡ። "criteria for lexical definition" የሚለውን part ሞጁሉ ላይ አለ አንብቡት በደንብ ፈተና ላይ ስለሚወጣ።</p>
 </div>
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="logic.html">⬅ Back to Logic</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="logic-chapter2.html">
-⬅ Previous
-</a>
-
-<a href="logic-chapter4.html">
-Next ➡️
-</a>
 
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").addEventListener(
+    "click",
+    function () {
+
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = "logic.html";
+        }
+
+    }
+);
+
+
+document.getElementById("pageHomeBtn").addEventListener(
+    "click",
+    function () {
+
+        window.location.href = "index.html";
+
+    }
+);
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
