@@ -531,3 +531,109 @@ document.addEventListener(
 
     }
 );
+/* =====================================================
+   UNIQUE ACADEMIC SIDE MENU
+===================================================== */
+
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+
+function openSideMenu() {
+
+    sideMenu.classList.add("open");
+
+    menuOverlay.classList.add("open");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeSideMenu() {
+
+    sideMenu.classList.remove("open");
+
+    menuOverlay.classList.remove("open");
+
+    document.body.style.overflow = "";
+
+}
+
+
+if (menuBtn) {
+
+    menuBtn.onclick = function () {
+
+        openSideMenu();
+
+    };
+
+}
+
+
+if (closeMenuBtn) {
+
+    closeMenuBtn.onclick = function () {
+
+        closeSideMenu();
+
+    };
+
+}
+
+
+if (menuOverlay) {
+
+    menuOverlay.onclick = function () {
+
+        closeSideMenu();
+
+    };
+
+}
+
+
+/* Close menu after clicking a menu link */
+
+document.querySelectorAll(".menuItem").forEach(function (item) {
+
+    item.addEventListener("click", function () {
+
+        closeSideMenu();
+
+    });
+
+});
+
+
+/* =====================================================
+   MENU DARK MODE
+===================================================== */
+
+const menuModeBtn =
+    document.getElementById("menuModeBtn");
+
+if (menuModeBtn) {
+
+    menuModeBtn.onclick = function () {
+
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+
+            menuModeBtn.innerHTML =
+                "☀️ <span>Light Mode</span>";
+
+        } else {
+
+            menuModeBtn.innerHTML =
+                "🌙 <span>Dark Mode</span>";
+
+        }
+
+    };
+
+}
