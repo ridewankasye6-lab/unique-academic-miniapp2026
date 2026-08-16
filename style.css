@@ -1958,3 +1958,455 @@ body.dark .menuVersion {
     color: #777;
 
 }
+/* =====================================================
+   UNIQUE ACADEMIC
+   PROFESSIONAL STUDENT PROFILE
+===================================================== */
+
+.profilePage {
+
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    padding:
+        0 15px 40px;
+
+}
+
+
+/* PROFILE HEADER */
+
+.profileCard {
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 30px 20px;
+
+    box-shadow:
+        0 8px 25px rgba(30, 58, 138, 0.12);
+
+    margin-bottom: 25px;
+
+}
+
+
+.profileAvatarLarge {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 42px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1e3a8a
+        );
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+
+}
+
+
+.profileCard h2 {
+
+    margin: 5px 0;
+
+    color: #1e3a8a;
+
+}
+
+
+.profileCard p {
+
+    margin: 5px 0 12px;
+
+    color: #6b7280;
+
+}
+
+
+.profileStatus {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background: #e8f7ee;
+
+    color: #16803a;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+/* SECTIONS */
+
+.profileSection {
+
+    margin-top: 25px;
+
+}
+
+
+.profileSection > h2 {
+
+    color: #1e3a8a;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* INFORMATION CARD */
+
+.profileInfoCard {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 5px 18px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.08);
+
+}
+
+
+.profileRow {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 16px 5px;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+}
+
+
+.profileRow:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.profileRow span {
+
+    color: #6b7280;
+
+}
+
+
+.profileRow strong {
+
+    color: #1e3a8a;
+
+    text-align: right;
+
+}
+
+
+/* LEARNING STATS */
+
+.profileStats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.profileStat {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.08);
+
+}
+
+
+.profileStatIcon {
+
+    font-size: 25px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.profileStat strong {
+
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 25px;
+
+}
+
+
+.profileStat span {
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+}
+
+
+/* QUICK ACTIONS */
+
+.profileActions {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.profileAction {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    text-decoration: none;
+
+    background: white;
+
+    color: #333;
+
+    padding: 16px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.07);
+
+}
+
+
+.profileAction span {
+
+    flex: 1;
+
+    text-align: left;
+
+    font-weight: bold;
+
+}
+
+
+.profileAction b {
+
+    color: #2563eb;
+
+    font-size: 24px;
+
+}
+
+
+.profileAction:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(37,99,235,0.15);
+
+}
+
+
+/* LOGOUT */
+
+.profileLogout {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+.profileLogout button {
+
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 25px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.profileLogout button:hover {
+
+    background: #b91c1c;
+
+}
+
+
+/* DARK MODE */
+
+body.dark .profileCard,
+body.dark .profileInfoCard,
+body.dark .profileStat,
+body.dark .profileAction {
+
+    background: #1e1e1e;
+
+    color: white;
+
+}
+
+
+body.dark .profileCard h2,
+body.dark .profileSection > h2,
+body.dark .profileRow strong {
+
+    color: #60a5fa;
+
+}
+
+
+body.dark .profileRow {
+
+    border-color: #333;
+
+}
+
+
+body.dark .profileRow span,
+body.dark .profileCard p,
+body.dark .profileStat span {
+
+    color: #aaa;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .profilePage {
+
+        margin-top: 18px;
+
+        padding:
+            0 12px 30px;
+
+    }
+
+
+    .profileStats {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 8px;
+
+    }
+
+
+    .profileStat {
+
+        padding: 15px 5px;
+
+    }
+
+
+    .profileStat strong {
+
+        font-size: 21px;
+
+    }
+
+
+    .profileRow {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 4px;
+
+    }
+
+
+    .profileRow strong {
+
+        text-align: left;
+
+    }
+
+}
