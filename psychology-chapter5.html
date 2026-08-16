@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Psychology - Chapter 5</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Psychology - Chapter 5</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header class="pageNav">
+
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
+
+    <div class="pageTitle">
+
+        <span class="pageTitleIcon">🧠</span>
+
+        <div>
+            <h1>Psychology</h1>
+            <p>Chapter 5</p>
+        </div>
+
+    </div>
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
+    >
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
 <div class="chapter">
 
-<h1>🧠 Psychology</h1>
+    <h1>🧠 Psychology</h1>
 
-<h2>Chapter 5</h2>
-
-<p>
-
+    <h2>Chapter 5</h2>
 <h2>Chapter Five Motivation and Emotion</h2>
 <h3>Definition and Types of Motivation</h3>
 <p><b>"Motivation is a factor by which activities are started, directed and continued so that physical or psychological needs or wants are met."</b></p>
@@ -77,7 +113,7 @@
 <p>2. <b>Avoidance-avoidance conflict:</b> When we must select one of the two undesirable alternatives. [ከሁለት ጥሩ ያልሆኑ ነገሮች አንዱን መምረጥሲኖርብን፦ በክፍያ ማጣት ምክንናት ትምህርትን ማቋረጥ ወይ ደግሞ ያላችሁን ንብረት ሽጣችሁ ትምህርታችሁን መቀጠል]</p>
 <p>3. <b>Approach-avoidance conflicts:</b> When a particular activity has both attractive and unattractive features. [ለምሳሌ በህክምና ብዙ ጊዜ እናት ልትወልድ ስትል ልጇ ይወለዳል ግን እሷስ ትታመማለች/መሞት አለባት] ወይ ደሞሌላ ምሳሌ ሰዎቹ እንደተጋቡ አብረውሊተኙ ፈለጉ እንበል ነገር ግን እሱ Hiv አለበት</p>
 <p>4. <b>Multiple approach-avoidance conflicts:</b> when two or more alternatives each have both positive and negative features. [ተመርቃችሁ በሁለት ስራመካከል ምረጡብትባሉና አንዱ ስራ በጣም አሪፍ ደሞዝ አለው፣ ታዋቂ ድርጅት ነው ፣ ነገር ግን ብዙ ሰዓት መስራት አለባችሁ፣ አየሩም አይመችም ልላው ስራ ደግሞ አየሩምይመቻል፣ ብዙም ስራ የለውም፣ ነገር ግን ትንሽ ደሞዝ ነውሚከፍለውምናምን፥ እናም በዚህመካከል መምረጥ ከባድ ነው]</p>
-<p>All rights reserved! ©A+ Tutorial Class</p>
+<p>All rights reserved! Unique  Academic </p>
 <h2>EMOTIONS</h2>
 <p><b>It is the 'feeling' aspect of consciousness, characterized by certain physical arousal, certain behavior that reveals the feeling to the outside world, and an inner awareness of feelings.</b></p>
 <p>በዚህ Definition ስር ልንረዳቸው የሚገባን ሶስት ነገሮች አሉ :</p>
@@ -103,26 +139,35 @@
 <p>ስለ Motivation እና Emotion ያየነውይህን ይመስላል በቀጣይ የቀረው ቻፕተር እና የተለያዩ ግቢዎች Final Examኦች ይለቀቁላቿል።</p>
 <p>መልካምጊዜ በርቱ</p>
 
-
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="psychology.html">⬅ Back to Psychology</a>
-</p>
-
-<div class="chapterNav">
-
-<a href="psychology-chapter4.html">
-⬅ Previous
-</a>
-
-<a href="psychology-chapter6.html">
-Next ➡️
-</a>
-
 </div>
 
-</div>
-<script type="module" src="access-guard.js"></script>
+
+<script>
+
+document.getElementById("pageBackBtn").onclick = function () {
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "psychology.html";
+    }
+
+};
+
+document.getElementById("pageHomeBtn").onclick = function () {
+
+    window.location.href = "index.html";
+
+};
+
+</script>
+
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
 </body>
+
 </html>
