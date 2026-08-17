@@ -1,13 +1,12 @@
 // =====================================================
 // UNIQUE ACADEMIC — MAIN JAVASCRIPT
-// =====================================================
-
-
-// =====================================================
-// DOM READY
+// Version 2.2.0
 // =====================================================
 
 document.addEventListener("DOMContentLoaded", function () {
+
+    "use strict";
+
 
     // =================================================
     // ELEMENTS
@@ -18,27 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const modeBtn =
         document.getElementById("modeBtn");
-
-    const menuBtn =
-        document.getElementById("menuBtn");
-
-    const headerMenuBtn =
-        document.getElementById("headerMenuBtn");
-
-    const sideMenu =
-        document.getElementById("sideMenu");
-
-    const menuOverlay =
-        document.getElementById("menuOverlay");
-
-    const refreshBtn =
-        document.getElementById("refreshBtn");
-
-    const shareAppBtn =
-        document.getElementById("shareAppBtn");
-
-    const logoutBtn =
-        document.getElementById("logoutBtn");
 
 
     // =================================================
@@ -54,8 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     "uniqueAcademicSettings"
                 );
 
-            return saved
-                ? JSON.parse(saved)
+            if (!saved) {
+                return {};
+            }
+
+            const settings =
+                JSON.parse(saved);
+
+            return (
+                settings &&
+                typeof settings === "object"
+            )
+                ? settings
                 : {};
 
         } catch (error) {
@@ -74,10 +62,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function saveSettings(settings) {
 
-        localStorage.setItem(
-            "uniqueAcademicSettings",
-            JSON.stringify(settings)
-        );
+        try {
+
+            localStorage.setItem(
+                "uniqueAcademicSettings",
+                JSON.stringify(settings)
+            );
+
+        } catch (error) {
+
+            console.error(
+                "Unable to save settings:",
+                error
+            );
+
+        }
 
     }
 
@@ -90,14 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const darkMode =
             settings.darkMode === true;
 
+
         document.body.classList.toggle(
             "dark-mode",
             darkMode
         );
 
+
         if (modeBtn) {
 
-            modeBtn.innerHTML =
+            modeBtn.textContent =
                 darkMode
                     ? "☀️ Light Mode"
                     : "🌙 Dark Mode";
@@ -112,8 +113,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const settings =
             getSettings();
 
+
         settings.darkMode =
             settings.darkMode !== true;
+
 
         saveSettings(settings);
 
@@ -122,7 +125,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // Apply saved theme immediately
     applyTheme();
 
 
@@ -137,306 +139,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =================================================
-    // SIDE MENU
+    // IMPORTANT
     // =================================================
-
-    function openMenu() {
-
-        if (!sideMenu || !menuOverlay) {
-            return;
-        }
-
-        sideMenu.classList.add("active");
-
-        menuOverlay.classList.add("active");
-
-        sideMenu.setAttribute(
-            "aria-hidden",
-            "false"
-        );
-
-        if (menuBtn) {
-
-            menuBtn.setAttribute(
-                "aria-expanded",
-                "true"
-            );
-
-        }
-
-        if (headerMenuBtn) {
-
-            headerMenuBtn.setAttribute(
-                "aria-expanded",
-                "true"
-            );
-
-        }
-
-        document.body.classList.add(
-            "menu-open"
-        );
-
-    }
-
-
-    function closeMenu() {
-
-        if (!sideMenu || !menuOverlay) {
-            return;
-        }
-
-        sideMenu.classList.remove("active");
-
-        menuOverlay.classList.remove("active");
-
-        sideMenu.setAttribute(
-            "aria-hidden",
-            "true"
-        );
-
-        if (menuBtn) {
-
-            menuBtn.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-        }
-
-        if (headerMenuBtn) {
-
-            headerMenuBtn.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-        }
-
-        document.body.classList.remove(
-            "menu-open"
-        );
-
-    }
-
-
-    if (menuBtn) {
-
-        menuBtn.addEventListener(
-            "click",
-            function () {
-
-                if (
-                    sideMenu &&
-                    sideMenu.classList.contains("active")
-                ) {
-
-                    closeMenu();
-
-                } else {
-
-                    openMenu();
-
-                }
-
-            }
-        );
-
-    }
-
-
-    if (headerMenuBtn) {
-
-        headerMenuBtn.addEventListener(
-            "click",
-            function () {
-
-                if (
-                    sideMenu &&
-                    sideMenu.classList.contains("active")
-                ) {
-
-                    closeMenu();
-
-                } else {
-
-                    openMenu();
-
-                }
-
-            }
-        );
-
-    }
-
-
-    if (menuOverlay) {
-
-        menuOverlay.addEventListener(
-            "click",
-            closeMenu
-        );
-
-    }
-
-
-    document.addEventListener(
-        "keydown",
-        function (event) {
-
-            if (event.key === "Escape") {
-
-                closeMenu();
-
-            }
-
-        }
-    );
-
-
-    // Close menu when normal link is clicked
-
-    document
-        .querySelectorAll(".sideMenu a")
-        .forEach(function (link) {
-
-            link.addEventListener(
-                "click",
-                closeMenu
-            );
-
-        });
-
-
+    //
+    // MENU CODE IS INTENTIONALLY NOT HERE.
+    //
+    // index.html already contains the complete menu
+    // controller for:
+    //
+    // #menuBtn
+    // #sideMenu
+    // #menuOverlay
+    // refreshBtn
+    // shareAppBtn
+    // logoutBtn
+    //
+    // Keeping a second menu controller here would
+    // cause the menu button to open and close twice.
+    //
     // =================================================
-    // REFRESH
-    // =================================================
-
-    if (refreshBtn) {
-
-        refreshBtn.addEventListener(
-            "click",
-            function () {
-
-                closeMenu();
-
-                window.location.reload();
-
-            }
-        );
-
-    }
-
-
-    // =================================================
-    // SHARE APP
-    // =================================================
-
-    if (shareAppBtn) {
-
-        shareAppBtn.addEventListener(
-            "click",
-            async function () {
-
-                const shareData = {
-
-                    title:
-                        "Unique Academic",
-
-                    text:
-                        "Learn smarter with Unique Academic 🎓",
-
-                    url:
-                        window.location.href
-
-                };
-
-
-                try {
-
-                    if (
-                        navigator.share
-                    ) {
-
-                        await navigator.share(
-                            shareData
-                        );
-
-                    } else if (
-                        navigator.clipboard
-                    ) {
-
-                        await navigator
-                            .clipboard
-                            .writeText(
-                                window.location.href
-                            );
-
-                        alert(
-                            "Unique Academic link copied!"
-                        );
-
-                    } else {
-
-                        alert(
-                            "Sharing is not supported on this device."
-                        );
-
-                    }
-
-                } catch (error) {
-
-                    console.log(
-                        "Share cancelled."
-                    );
-
-                }
-
-            }
-        );
-
-    }
-
-
-    // =================================================
-    // LOGOUT
-    // =================================================
-
-    if (logoutBtn) {
-
-        logoutBtn.addEventListener(
-            "click",
-            function () {
-
-                const confirmed =
-                    confirm(
-                        "Are you sure you want to logout?"
-                    );
-
-                if (!confirmed) {
-                    return;
-                }
-
-
-                localStorage.removeItem(
-                    "uniqueAcademicUser"
-                );
-
-                localStorage.removeItem(
-                    "studentLoggedIn"
-                );
-
-                sessionStorage.clear();
-
-                closeMenu();
-
-                window.location.href =
-                    "student-login.html";
-
-            }
-        );
-
-    }
 
 
     // =================================================
@@ -448,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!searchInput) {
             return;
         }
+
 
         const query =
             searchInput.value
@@ -464,24 +186,19 @@ document.addEventListener("DOMContentLoaded", function () {
         subjectCards.forEach(
             function (card) {
 
-                const text =
-                    card.innerText
-                        .toLowerCase();
+                const subject =
+                    (
+                        card.dataset.subject ||
+                        card.textContent ||
+                        ""
+                    )
+                    .toLowerCase();
 
 
-                if (
-                    text.includes(query)
-                ) {
-
-                    card.style.display =
-                        "";
-
-                } else {
-
-                    card.style.display =
-                        "none";
-
-                }
+                card.style.display =
+                    subject.includes(query)
+                        ? ""
+                        : "none";
 
             }
         );
@@ -500,7 +217,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =================================================
-    // BOOKMARKS
+    // BOOKMARK SYSTEM
+    // =================================================
+    //
+    // This system uses the same storage used by the
+    // current index.html bookmark system.
+    //
     // =================================================
 
     const bookmarkButtons =
@@ -509,143 +231,145 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-    bookmarkButtons.forEach(
-        function (button) {
-
-            const card =
-                button.closest(
-                    ".subjectCard"
-                );
+    let bookmarks = [];
 
 
-            if (!card) {
-                return;
-            }
+    try {
+
+        bookmarks =
+            JSON.parse(
+                localStorage.getItem(
+                    "uniqueAcademicBookmarks"
+                )
+            ) || [];
 
 
-            const titleElement =
-                card.querySelector("h3");
+        if (!Array.isArray(bookmarks)) {
+
+            bookmarks = [];
+
+        }
+
+    } catch (error) {
+
+        bookmarks = [];
+
+    }
 
 
-            const openLink =
-                card.querySelector(
-                    'a.button[href]'
-                );
+    function updateBookmarkButtons() {
+
+        bookmarkButtons.forEach(
+            function (button) {
+
+                const subject =
+                    button.dataset.subject;
 
 
-            if (!titleElement || !openLink) {
-                return;
-            }
+                if (!subject) {
+                    return;
+                }
 
 
-            const title =
-                titleElement.innerText
-                    .trim();
-
-
-            const link =
-                openLink.getAttribute(
-                    "href"
-                );
-
-
-            /*
-             * Create a stable bookmark ID
-             * from the subject title.
-             */
-
-            const bookmarkId =
-                "bookmark_" +
-                title
-                    .toLowerCase()
-                    .replace(
-                        /[^a-z0-9]+/g,
-                        "_"
-                    )
-                    .replace(
-                        /^_+|_+$/g,
-                        ""
+                const isBookmarked =
+                    bookmarks.includes(
+                        subject
                     );
 
 
-            // Restore bookmark
+                if (isBookmarked) {
 
-            const saved =
-                localStorage.getItem(
-                    bookmarkId
-                );
+                    button.textContent =
+                        "★ Bookmarked";
 
+                    button.classList.add(
+                        "bookmarked"
+                    );
 
-            if (saved) {
+                } else {
 
-                button.innerHTML =
-                    "⭐ Saved";
+                    button.textContent =
+                        "⭐ Bookmark";
 
-                button.classList.add(
-                    "bookmarked"
-                );
+                    button.classList.remove(
+                        "bookmarked"
+                    );
+
+                }
 
             }
+        );
+
+    }
 
 
-            // Click bookmark
+    bookmarkButtons.forEach(
+        function (button) {
 
             button.addEventListener(
                 "click",
                 function () {
 
-                    const existing =
-                        localStorage.getItem(
-                            bookmarkId
+                    const subject =
+                        button.dataset.subject;
+
+
+                    if (!subject) {
+                        return;
+                    }
+
+
+                    const index =
+                        bookmarks.indexOf(
+                            subject
                         );
 
 
-                    if (existing) {
+                    if (index === -1) {
 
-                        localStorage.removeItem(
-                            bookmarkId
-                        );
-
-                        button.innerHTML =
-                            "⭐ Bookmark";
-
-                        button.classList.remove(
-                            "bookmarked"
+                        bookmarks.push(
+                            subject
                         );
 
                     } else {
 
-                        const bookmarkData = {
-
-                            title: title,
-
-                            link: link
-
-                        };
-
-
-                        localStorage.setItem(
-                            bookmarkId,
-                            JSON.stringify(
-                                bookmarkData
-                            )
-                        );
-
-
-                        button.innerHTML =
-                            "⭐ Saved";
-
-                        button.classList.add(
-                            "bookmarked"
+                        bookmarks.splice(
+                            index,
+                            1
                         );
 
                     }
+
+
+                    try {
+
+                        localStorage.setItem(
+                            "uniqueAcademicBookmarks",
+                            JSON.stringify(
+                                bookmarks
+                            )
+                        );
+
+                    } catch (error) {
+
+                        console.error(
+                            "Unable to save bookmark:",
+                            error
+                        );
+
+                    }
+
+
+                    updateBookmarkButtons();
 
                 }
             );
 
         }
     );
+
+
+    updateBookmarkButtons();
 
 
     // =================================================
@@ -676,24 +400,51 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
 
 
-                    const title =
-                        card.querySelector("h3");
+                    const subject =
+                        card.dataset.subject;
 
 
-                    if (title) {
-
-                        localStorage.setItem(
-                            "lastSubject",
-                            title.innerText.trim()
-                        );
-
+                    if (!subject) {
+                        return;
                     }
 
 
-                    localStorage.setItem(
-                        "lastLink",
-                        button.href
-                    );
+                    try {
+
+                        localStorage.setItem(
+                            "lastOpenedSubject",
+                            subject
+                        );
+
+
+                        localStorage.setItem(
+                            "lastOpenedSubjectUrl",
+                            button.href
+                        );
+
+
+                        // Keep compatibility with
+                        // the older storage keys.
+
+                        localStorage.setItem(
+                            "lastSubject",
+                            subject
+                        );
+
+
+                        localStorage.setItem(
+                            "lastLink",
+                            button.href
+                        );
+
+                    } catch (error) {
+
+                        console.error(
+                            "Unable to save learning progress:",
+                            error
+                        );
+
+                    }
 
                 }
             );
@@ -713,33 +464,48 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-    const lastSubject =
+    const savedSubject =
+        localStorage.getItem(
+            "lastOpenedSubject"
+        ) ||
         localStorage.getItem(
             "lastSubject"
         );
 
-    const lastLink =
+
+    const savedSubjectUrl =
+        localStorage.getItem(
+            "lastOpenedSubjectUrl"
+        ) ||
         localStorage.getItem(
             "lastLink"
         );
 
 
     if (
-        lastSubject &&
-        lastLink &&
-        continueText &&
-        continueBtn
+        savedSubject &&
+        savedSubjectUrl
     ) {
 
-        continueText.innerHTML =
-            "Last opened: " +
-            lastSubject;
+        if (continueText) {
 
-        continueBtn.href =
-            lastLink;
+            continueText.textContent =
+                "Continue studying " +
+                savedSubject +
+                ".";
 
-        continueBtn.innerHTML =
-            "Continue Reading";
+        }
+
+
+        if (continueBtn) {
+
+            continueBtn.textContent =
+                "Continue Learning";
+
+            continueBtn.href =
+                savedSubjectUrl;
+
+        }
 
     }
 
@@ -768,9 +534,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             const saved =
-                localStorage.getItem(
-                    key
-                );
+                localStorage.getItem(key);
 
 
             if (saved !== null) {
