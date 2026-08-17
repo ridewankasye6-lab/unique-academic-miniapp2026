@@ -4,6 +4,11 @@
    Firebase + Cloud Firestore + Storage
 
    STEP 1 → STEP 2 → STEP 3 → STEP 4
+
+   SCREENSHOT:
+   - Validates JPG / PNG / WEBP
+   - Compresses large screenshots
+   - Uploads compressed image to Firebase Storage
 ========================================= */
 
 import {
@@ -11,15 +16,18 @@ import {
     auth
 } from "./firebase-config.js";
 
+
 import {
     collection,
     addDoc,
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
+
 import {
     createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
 
 import {
     getStorage,
@@ -80,11 +88,13 @@ document
                 .value
                 .trim();
 
+
         const phone =
             document
                 .getElementById("phone")
                 .value
                 .trim();
+
 
         const email =
             document
@@ -92,10 +102,12 @@ document
                 .value
                 .trim();
 
+
         const university =
             document
                 .getElementById("university")
                 .value;
+
 
         const department =
             document
@@ -157,8 +169,10 @@ document
         personalStep.style.display =
             "none";
 
+
         securityStep.style.display =
             "block";
+
 
         paymentStep.style.display =
             "none";
@@ -168,9 +182,11 @@ document
             "active"
         );
 
+
         stepIndicator1.classList.add(
             "completed"
         );
+
 
         stepIndicator2.classList.add(
             "active"
@@ -196,6 +212,7 @@ document
         securityStep.style.display =
             "none";
 
+
         personalStep.style.display =
             "block";
 
@@ -204,9 +221,11 @@ document
             "active"
         );
 
+
         stepIndicator1.classList.remove(
             "completed"
         );
+
 
         stepIndicator1.classList.add(
             "active"
@@ -228,21 +247,26 @@ document
 const passwordInput =
     document.getElementById("password");
 
+
 const strengthBar =
     document.getElementById("strengthBar");
 
+
 const strengthText =
     document.getElementById("strengthText");
+
 
 const lengthRequirement =
     document.getElementById(
         "lengthRequirement"
     );
 
+
 const numberRequirement =
     document.getElementById(
         "numberRequirement"
     );
+
 
 const uppercaseRequirement =
     document.getElementById(
@@ -257,11 +281,14 @@ passwordInput.addEventListener(
         const password =
             passwordInput.value;
 
+
         const hasLength =
             password.length >= 8;
 
+
         const hasNumber =
             /[0-9]/.test(password);
+
 
         const hasUppercase =
             /[A-Z]/.test(password);
@@ -272,6 +299,7 @@ passwordInput.addEventListener(
             lengthRequirement.textContent =
                 "✓ At least 8 characters";
 
+
             lengthRequirement.classList.add(
                 "valid"
             );
@@ -280,6 +308,7 @@ passwordInput.addEventListener(
 
             lengthRequirement.textContent =
                 "○ At least 8 characters";
+
 
             lengthRequirement.classList.remove(
                 "valid"
@@ -293,6 +322,7 @@ passwordInput.addEventListener(
             numberRequirement.textContent =
                 "✓ At least one number";
 
+
             numberRequirement.classList.add(
                 "valid"
             );
@@ -301,6 +331,7 @@ passwordInput.addEventListener(
 
             numberRequirement.textContent =
                 "○ At least one number";
+
 
             numberRequirement.classList.remove(
                 "valid"
@@ -314,6 +345,7 @@ passwordInput.addEventListener(
             uppercaseRequirement.textContent =
                 "✓ At least one uppercase letter";
 
+
             uppercaseRequirement.classList.add(
                 "valid"
             );
@@ -322,6 +354,7 @@ passwordInput.addEventListener(
 
             uppercaseRequirement.textContent =
                 "○ At least one uppercase letter";
+
 
             uppercaseRequirement.classList.remove(
                 "valid"
@@ -353,8 +386,10 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "0%";
 
+
             strengthText.textContent =
                 "Enter a password";
+
 
             strengthText.className =
                 "";
@@ -366,8 +401,10 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "33%";
 
+
             strengthText.textContent =
                 "Weak password";
+
 
             strengthText.className =
                 "weak";
@@ -379,8 +416,10 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "66%";
 
+
             strengthText.textContent =
                 "Medium password";
+
 
             strengthText.className =
                 "medium";
@@ -392,8 +431,10 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "100%";
 
+
             strengthText.textContent =
                 "Strong password";
+
 
             strengthText.className =
                 "strong";
@@ -418,12 +459,14 @@ document
             const password =
                 passwordInput.value;
 
+
             const confirmPassword =
                 document
                     .getElementById(
                         "confirmPassword"
                     )
                     .value;
+
 
             const email =
                 document
@@ -492,10 +535,6 @@ document
             }
 
 
-            /*
-             * CREATE REAL FIREBASE ACCOUNT
-             */
-
             try {
 
                 await createUserWithEmailAndPassword(
@@ -559,6 +598,7 @@ document
             securityStep.style.display =
                 "none";
 
+
             paymentStep.style.display =
                 "block";
 
@@ -567,9 +607,11 @@ document
                 "active"
             );
 
+
             stepIndicator2.classList.add(
                 "completed"
             );
+
 
             stepIndicator3.classList.add(
                 "active"
@@ -597,15 +639,18 @@ const paymentDetails =
         "paymentDetails"
     );
 
+
 const selectedPaymentName =
     document.getElementById(
         "selectedPaymentName"
     );
 
+
 const selectedPaymentIcon =
     document.getElementById(
         "selectedPaymentIcon"
     );
+
 
 const accountNumber =
     document.getElementById(
@@ -630,8 +675,10 @@ document
             selectedPaymentName.textContent =
                 "CBE / CBE Birr";
 
+
             selectedPaymentIcon.textContent =
                 "🏦";
+
 
             accountNumber.textContent =
                 "1000721240208";
@@ -644,6 +691,7 @@ document
             document
                 .getElementById("cbeMethod")
                 .classList.add("selected");
+
 
             document
                 .getElementById("telebirrMethod")
@@ -670,8 +718,10 @@ document
             selectedPaymentName.textContent =
                 "Telebirr";
 
+
             selectedPaymentIcon.textContent =
                 "📱";
+
 
             accountNumber.textContent =
                 "0976596520";
@@ -684,6 +734,7 @@ document
             document
                 .getElementById("telebirrMethod")
                 .classList.add("selected");
+
 
             document
                 .getElementById("cbeMethod")
@@ -750,7 +801,7 @@ document
 
 
 /* =========================================
-   PAYMENT SCREENSHOT
+   SCREENSHOT ELEMENTS
 ========================================= */
 
 const paymentScreenshot =
@@ -758,10 +809,26 @@ const paymentScreenshot =
         "paymentScreenshot"
     );
 
+
 const fileName =
     document.getElementById(
         "fileName"
     );
+
+
+/* =========================================
+   SCREENSHOT VALIDATION
+========================================= */
+
+const allowedTypes = [
+    "image/jpeg",
+    "image/png",
+    "image/webp"
+];
+
+
+const maxSize =
+    5 * 1024 * 1024;
 
 
 paymentScreenshot.addEventListener(
@@ -769,82 +836,293 @@ paymentScreenshot.addEventListener(
     function () {
 
         if (
-            this.files &&
-            this.files.length > 0
+            !this.files ||
+            this.files.length === 0
         ) {
-
-            const file =
-                this.files[0];
-
-
-            /*
-             * ALLOWED FILE TYPES
-             */
-
-            const allowedTypes = [
-                "image/jpeg",
-                "image/png",
-                "image/webp"
-            ];
-
-
-            if (
-                !allowedTypes.includes(
-                    file.type
-                )
-            ) {
-
-                alert(
-                    "Please upload a JPG, PNG or WEBP image."
-                );
-
-                this.value = "";
-
-                fileName.textContent =
-                    "";
-
-                return;
-            }
-
-
-            /*
-             * MAXIMUM FILE SIZE
-             * 5 MB
-             */
-
-            const maxSize =
-                5 * 1024 * 1024;
-
-
-            if (file.size > maxSize) {
-
-                alert(
-                    "The screenshot must be smaller than 5 MB."
-                );
-
-                this.value = "";
-
-                fileName.textContent =
-                    "";
-
-                return;
-            }
-
-
-            fileName.textContent =
-                "📎 " + file.name;
-
-        }
-
-        else {
 
             fileName.textContent =
                 "";
 
+            return;
         }
+
+
+        const file =
+            this.files[0];
+
+
+        if (
+            !allowedTypes.includes(
+                file.type
+            )
+        ) {
+
+            alert(
+                "Please upload a JPG, PNG or WEBP image."
+            );
+
+
+            this.value =
+                "";
+
+
+            fileName.textContent =
+                "";
+
+
+            return;
+        }
+
+
+        if (
+            file.size > maxSize
+        ) {
+
+            alert(
+                "The screenshot must be smaller than 5 MB."
+            );
+
+
+            this.value =
+                "";
+
+
+            fileName.textContent =
+                "";
+
+
+            return;
+        }
+
+
+        const sizeMB =
+            (
+                file.size /
+                (1024 * 1024)
+            ).toFixed(2);
+
+
+        fileName.textContent =
+            "📎 " +
+            file.name +
+            " (" +
+            sizeMB +
+            " MB)";
 
     }
 );
+
+
+/* =========================================
+   COMPRESS SCREENSHOT
+========================================= */
+
+async function compressScreenshot(
+    file
+) {
+
+    /*
+     * PNG / WEBP / JPEG files from phones
+     * can be very large.
+     *
+     * We resize them to a maximum of
+     * 1600px and convert them to JPEG.
+     */
+
+    return new Promise(
+        (resolve, reject) => {
+
+            const reader =
+                new FileReader();
+
+
+            reader.onload =
+                function (event) {
+
+                    const image =
+                        new Image();
+
+
+                    image.onload =
+                        function () {
+
+                            const MAX_WIDTH =
+                                1600;
+
+
+                            const MAX_HEIGHT =
+                                1600;
+
+
+                            let width =
+                                image.width;
+
+
+                            let height =
+                                image.height;
+
+
+                            /*
+                             * RESIZE
+                             */
+
+                            if (
+                                width >
+                                MAX_WIDTH ||
+                                height >
+                                MAX_HEIGHT
+                            ) {
+
+                                const widthRatio =
+                                    MAX_WIDTH /
+                                    width;
+
+
+                                const heightRatio =
+                                    MAX_HEIGHT /
+                                    height;
+
+
+                                const ratio =
+                                    Math.min(
+                                        widthRatio,
+                                        heightRatio
+                                    );
+
+
+                                width =
+                                    Math.round(
+                                        width *
+                                        ratio
+                                    );
+
+
+                                height =
+                                    Math.round(
+                                        height *
+                                        ratio
+                                    );
+
+                            }
+
+
+                            /*
+                             * CANVAS
+                             */
+
+                            const canvas =
+                                document.createElement(
+                                    "canvas"
+                                );
+
+
+                            canvas.width =
+                                width;
+
+
+                            canvas.height =
+                                height;
+
+
+                            const context =
+                                canvas.getContext(
+                                    "2d"
+                                );
+
+
+                            context.drawImage(
+                                image,
+                                0,
+                                0,
+                                width,
+                                height
+                            );
+
+
+                            /*
+                             * CONVERT TO JPEG
+                             *
+                             * 80% quality gives a
+                             * good balance between
+                             * readability and speed.
+                             */
+
+                            canvas.toBlob(
+                                function (blob) {
+
+                                    if (!blob) {
+
+                                        reject(
+                                            new Error(
+                                                "Could not compress screenshot."
+                                            )
+                                        );
+
+                                        return;
+                                    }
+
+
+                                    const compressedFile =
+                                        new File(
+                                            [
+                                                blob
+                                            ],
+                                            "payment-screenshot.jpg",
+                                            {
+                                                type:
+                                                    "image/jpeg"
+                                            }
+                                        );
+
+
+                                    resolve(
+                                        compressedFile
+                                    );
+
+                                },
+                                "image/jpeg",
+                                0.80
+                            );
+
+                        };
+
+
+                    image.onerror =
+                        function () {
+
+                            reject(
+                                new Error(
+                                    "Could not read screenshot."
+                                )
+                            );
+
+                        };
+
+
+                    image.src =
+                        event.target.result;
+
+                };
+
+
+            reader.onerror =
+                function () {
+
+                    reject(
+                        new Error(
+                            "Could not read screenshot file."
+                        )
+                    );
+
+                };
+
+
+            reader.readAsDataURL(file);
+
+        }
+    );
+
+}
 
 
 /* =========================================
@@ -858,7 +1136,8 @@ document
         "click",
         async function () {
 
-            const button = this;
+            const button =
+                this;
 
 
             const paymentReference =
@@ -879,7 +1158,7 @@ document
 
 
             /* =================================
-               CHECK PAYMENT METHOD
+               PAYMENT METHOD
             ================================= */
 
             if (
@@ -895,7 +1174,7 @@ document
 
 
             /* =================================
-               CHECK REFERENCE
+               PAYMENT REFERENCE
             ================================= */
 
             if (
@@ -911,7 +1190,7 @@ document
 
 
             /* =================================
-               CHECK SCREENSHOT
+               SCREENSHOT
             ================================= */
 
             if (
@@ -926,24 +1205,17 @@ document
             }
 
 
-            const screenshot =
+            const originalScreenshot =
                 screenshotFiles[0];
 
 
             /* =================================
-               CHECK FILE TYPE
+               FILE TYPE
             ================================= */
-
-            const allowedTypes = [
-                "image/jpeg",
-                "image/png",
-                "image/webp"
-            ];
-
 
             if (
                 !allowedTypes.includes(
-                    screenshot.type
+                    originalScreenshot.type
                 )
             ) {
 
@@ -956,15 +1228,12 @@ document
 
 
             /* =================================
-               CHECK FILE SIZE
+               ORIGINAL FILE SIZE
             ================================= */
 
-            const maxSize =
-                5 * 1024 * 1024;
-
-
             if (
-                screenshot.size > maxSize
+                originalScreenshot.size >
+                maxSize
             ) {
 
                 alert(
@@ -976,7 +1245,7 @@ document
 
 
             /* =================================
-               CHECK FIREBASE USER
+               FIREBASE USER
             ================================= */
 
             if (!auth.currentUser) {
@@ -989,42 +1258,89 @@ document
             }
 
 
-            /*
-             * PREVENT DOUBLE SUBMISSION
-             */
+            /* =================================
+               PREVENT DOUBLE SUBMISSION
+            ================================= */
 
-            button.disabled = true;
+            button.disabled =
+                true;
+
 
             button.innerHTML =
-                "Uploading screenshot...";
+                "Preparing screenshot...";
 
 
             try {
 
                 /* =================================
-                   CURRENT FIREBASE USER
+                   CURRENT USER
                 ================================= */
 
                 const user =
                     auth.currentUser;
+
 
                 const userId =
                     user.uid;
 
 
                 /* =================================
-                   CREATE UNIQUE STORAGE PATH
+                   COMPRESS SCREENSHOT
                 ================================= */
 
-                const fileExtension =
-                    screenshot.name
-                        .split(".")
-                        .pop()
-                        .toLowerCase();
+                const screenshot =
+                    await compressScreenshot(
+                        originalScreenshot
+                    );
 
+
+                /*
+                 * Safety check after compression.
+                 */
+
+                if (
+                    screenshot.size >
+                    maxSize
+                ) {
+
+                    alert(
+                        "The screenshot is still too large after compression. Please choose a smaller screenshot."
+                    );
+
+
+                    button.disabled =
+                        false;
+
+
+                    button.innerHTML =
+                        'Submit Payment <span>→</span>';
+
+
+                    return;
+                }
+
+
+                /* =================================
+                   SHOW UPLOAD SIZE
+                ================================= */
+
+                const compressedMB =
+                    (
+                        screenshot.size /
+                        (1024 * 1024)
+                    ).toFixed(2);
+
+
+                button.innerHTML =
+                    "Uploading screenshot...";
+
+
+                /*
+                 * CREATE UNIQUE STORAGE PATH
+                 */
 
                 const storagePath =
-                    `payment-screenshots/${userId}/${Date.now()}.${fileExtension}`;
+                    `payment-screenshots/${userId}/${Date.now()}.jpg`;
 
 
                 const screenshotRef =
@@ -1035,7 +1351,7 @@ document
 
 
                 /* =================================
-                   UPLOAD SCREENSHOT
+                   UPLOAD COMPRESSED SCREENSHOT
                 ================================= */
 
                 await uploadBytes(
@@ -1043,7 +1359,7 @@ document
                     screenshot,
                     {
                         contentType:
-                            screenshot.type
+                            "image/jpeg"
                     }
                 );
 
@@ -1062,14 +1378,15 @@ document
                     );
 
 
-                /*
-                 * COLLECT STUDENT INFORMATION
-                 */
+                /* =================================
+                   COLLECT STUDENT INFORMATION
+                ================================= */
 
                 const registrationData = {
 
                     userId:
                         userId,
+
 
                     fullName:
                         document
@@ -1079,6 +1396,7 @@ document
                             .value
                             .trim(),
 
+
                     phone:
                         document
                             .getElementById(
@@ -1086,6 +1404,7 @@ document
                             )
                             .value
                             .trim(),
+
 
                     email:
                         document
@@ -1095,12 +1414,14 @@ document
                             .value
                             .trim(),
 
+
                     university:
                         document
                             .getElementById(
                                 "university"
                             )
                             .value,
+
 
                     department:
                         document
@@ -1110,39 +1431,65 @@ document
                             .value
                             .trim(),
 
+
                     paymentMethod:
                         selectedPaymentMethod,
+
 
                     paymentReference:
                         paymentReference,
 
+
                     amount:
                         300,
+
 
                     currency:
                         "ETB",
 
+
                     status:
                         "pending",
 
-                    /*
-                     * PAYMENT SCREENSHOT
-                     */
+
+                    /* =================================
+                       SCREENSHOT INFORMATION
+                    ================================= */
 
                     paymentScreenshotURL:
                         screenshotURL,
 
+
+                    /*
+                     * Keep screenshotURL too.
+                     *
+                     * This makes the data compatible
+                     * with your existing admin.js.
+                     */
+
+                    screenshotURL:
+                        screenshotURL,
+
+
                     paymentScreenshotPath:
                         storagePath,
 
+
                     paymentScreenshotName:
-                        screenshot.name,
+                        originalScreenshot.name,
+
 
                     paymentScreenshotType:
-                        screenshot.type,
+                        "image/jpeg",
+
 
                     paymentScreenshotSize:
                         screenshot.size,
+
+
+                    originalScreenshotSize:
+                        originalScreenshot.size,
+
 
                     submittedAt:
                         serverTimestamp()
@@ -1165,7 +1512,7 @@ document
 
 
                 /* =================================
-                   SAVE REGISTRATION ID LOCALLY
+                   SAVE REGISTRATION ID
                 ================================= */
 
                 sessionStorage.setItem(
@@ -1186,7 +1533,9 @@ document
                    SHOW VERIFICATION
                 ================================= */
 
-                if (verificationStep) {
+                if (
+                    verificationStep
+                ) {
 
                     verificationStep.style.display =
                         "block";
@@ -1200,21 +1549,30 @@ document
 
                 stepIndicator3
                     .classList
-                    .remove("active");
+                    .remove(
+                        "active"
+                    );
+
 
                 stepIndicator3
                     .classList
-                    .add("completed");
+                    .add(
+                        "completed"
+                    );
+
 
                 stepIndicator4
                     .classList
-                    .add("active");
+                    .add(
+                        "active"
+                    );
 
 
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
                 });
+
 
             }
 
@@ -1226,9 +1584,9 @@ document
                 );
 
 
-                /*
-                 * FRIENDLY FIREBASE STORAGE ERRORS
-                 */
+                /* =================================
+                   FIREBASE STORAGE ERRORS
+                ================================= */
 
                 if (
                     error.code ===
@@ -1274,6 +1632,7 @@ document
 
                 button.disabled =
                     false;
+
 
                 button.innerHTML =
                     'Submit Payment <span>→</span>';
