@@ -26,24 +26,51 @@
 
 
 <body>
+
+
+<!-- =====================================================
+     LOAD SAVED THEME
+===================================================== -->
+
 <script>
-    (function () {
-        const savedSettings =
-            localStorage.getItem("uniqueAcademicSettings");
+(function () {
 
-        if (!savedSettings) return;
+    const savedSettings =
+        localStorage.getItem("uniqueAcademicSettings");
 
-        try {
-            const settings = JSON.parse(savedSettings);
+    if (!savedSettings) {
+        return;
+    }
 
-            if (settings.darkMode === true) {
-                document.body.classList.add("dark-mode");
-            }
-        } catch (error) {
-            console.error("Unable to load theme:", error);
+    try {
+
+        const settings =
+            JSON.parse(savedSettings);
+
+        if (
+            settings &&
+            settings.darkMode === true
+        ) {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
         }
-    })();
+
+    } catch (error) {
+
+        console.error(
+            "Unable to load theme:",
+            error
+        );
+
+    }
+
+})();
 </script>
+
+
 
 <!-- =====================================================
      MOBILE MENU BUTTON
@@ -55,6 +82,7 @@
     type="button"
     aria-label="Open Menu"
     aria-expanded="false"
+    aria-controls="sideMenu"
 >
     ☰
 </button>
@@ -369,6 +397,7 @@
         type="button"
         aria-label="Open Menu"
         aria-expanded="false"
+        aria-controls="sideMenu"
     >
         ☰
     </button>
@@ -405,7 +434,7 @@
     <!-- PROFILE BUTTON -->
 
     <a
-        href="student-login.html"
+        href="student-profile.html"
         id="headerProfile"
         class="headerProfile"
         aria-label="Student Profile"
@@ -497,7 +526,7 @@
 
         <div class="dashCard">
 
-            <a href="#">
+            <a href="#pdf-library">
 
                 📄
 
@@ -515,7 +544,7 @@
 
         <div class="dashCard">
 
-            <a href="#">
+            <a href="#video-library">
 
                 🎥
 
@@ -533,7 +562,7 @@
 
         <div class="dashCard">
 
-            <a href="#">
+            <a href="#subjects">
 
                 ❓
 
@@ -551,7 +580,7 @@
 
         <div class="dashCard">
 
-            <a href="#">
+            <a href="#bookmarks">
 
                 ⭐
 
@@ -627,13 +656,17 @@
      SEARCH
 ===================================================== -->
 
-<input
-    type="text"
-    id="search"
-    placeholder="🔍 Search a subject..."
-    onkeyup="searchSubjects()"
-    aria-label="Search subjects"
->
+<div class="searchContainer">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search a subject..."
+        aria-label="Search subjects"
+        autocomplete="off"
+    >
+
+</div>
 
 
 
@@ -653,7 +686,10 @@
      ENGLISH SKILL I
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="English Skill I"
+>
 
     <h3>
         📘 English Skill I
@@ -677,6 +713,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="English Skill I"
     >
 
         ⭐ Bookmark
@@ -691,7 +728,10 @@
      ECONOMICS
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Economics"
+>
 
     <h3>
         📈 Economics
@@ -715,6 +755,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Economics"
     >
 
         ⭐ Bookmark
@@ -729,7 +770,10 @@
      HISTORY
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="History"
+>
 
     <h3>
         📜 History
@@ -753,6 +797,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="History"
     >
 
         ⭐ Bookmark
@@ -767,7 +812,10 @@
      ENTREPRENEURSHIP
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Entrepreneurship"
+>
 
     <h3>
         💼 Entrepreneurship
@@ -791,6 +839,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Entrepreneurship"
     >
 
         ⭐ Bookmark
@@ -805,7 +854,10 @@
      ANTHROPOLOGY
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Anthropology"
+>
 
     <h3>
         🧑‍🤝‍🧑 Anthropology
@@ -829,6 +881,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Anthropology"
     >
 
         ⭐ Bookmark
@@ -843,7 +896,10 @@
      EMERGING TECHNOLOGY
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Emerging Technology"
+>
 
     <h3>
         💻 Emerging Technology
@@ -867,6 +923,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Emerging Technology"
     >
 
         ⭐ Bookmark
@@ -881,7 +938,10 @@
      GLOBAL TRENDS
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Global Trends"
+>
 
     <h3>
         🌍 Global Trends
@@ -905,6 +965,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Global Trends"
     >
 
         ⭐ Bookmark
@@ -919,7 +980,10 @@
      ENGLISH SKILL II
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="English Skill II"
+>
 
     <h3>
         🇬🇧 English Skill II
@@ -943,6 +1007,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="English Skill II"
     >
 
         ⭐ Bookmark
@@ -957,7 +1022,10 @@
      PSYCHOLOGY
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Psychology"
+>
 
     <h3>
         🧠 Psychology
@@ -981,6 +1049,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Psychology"
     >
 
         ⭐ Bookmark
@@ -995,7 +1064,10 @@
      LOGIC
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Logic"
+>
 
     <h3>
         ⚖️ Logic
@@ -1019,6 +1091,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Logic"
     >
 
         ⭐ Bookmark
@@ -1033,7 +1106,10 @@
      GEOGRAPHY
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Geography"
+>
 
     <h3>
         🌍 Geography
@@ -1057,6 +1133,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Geography"
     >
 
         ⭐ Bookmark
@@ -1071,7 +1148,10 @@
      CIVIC EDUCATION
 ===================================================== -->
 
-<div class="card subjectCard">
+<div
+    class="card subjectCard"
+    data-subject="Civic Education"
+>
 
     <h3>
         🏛 Civic Education
@@ -1095,6 +1175,7 @@
     <button
         class="bookmarkBtn"
         type="button"
+        data-subject="Civic Education"
     >
 
         ⭐ Bookmark
@@ -1102,6 +1183,29 @@
     </button>
 
 </div>
+
+
+
+<!-- =====================================================
+     FUTURE SECTIONS
+===================================================== -->
+
+<div
+    id="pdf-library"
+    style="display:none;"
+></div>
+
+
+<div
+    id="video-library"
+    style="display:none;"
+></div>
+
+
+<div
+    id="bookmarks"
+    style="display:none;"
+></div>
 
 
 
@@ -1131,6 +1235,8 @@
 
 <script>
 
+(function () {
+
 
 /* =====================================================
    ELEMENTS
@@ -1159,14 +1265,24 @@ const menuOverlay =
 
 function openMenu() {
 
-    if (!sideMenu || !menuOverlay) {
+    if (
+        !sideMenu ||
+        !menuOverlay
+    ) {
+
         return;
+
     }
 
 
-    sideMenu.classList.add("active");
+    sideMenu.classList.add(
+        "active"
+    );
 
-    menuOverlay.classList.add("active");
+
+    menuOverlay.classList.add(
+        "active"
+    );
 
 
     if (menuBtn) {
@@ -1195,7 +1311,6 @@ function openMenu() {
     );
 
 
-
     document.body.classList.add(
         "menu-open"
     );
@@ -1210,14 +1325,24 @@ function openMenu() {
 
 function closeMenu() {
 
-    if (!sideMenu || !menuOverlay) {
+    if (
+        !sideMenu ||
+        !menuOverlay
+    ) {
+
         return;
+
     }
 
 
-    sideMenu.classList.remove("active");
+    sideMenu.classList.remove(
+        "active"
+    );
 
-    menuOverlay.classList.remove("active");
+
+    menuOverlay.classList.remove(
+        "active"
+    );
 
 
     if (menuBtn) {
@@ -1255,6 +1380,39 @@ function closeMenu() {
 
 
 /* =====================================================
+   TOGGLE MENU
+===================================================== */
+
+function toggleMenu() {
+
+    if (
+        !sideMenu
+    ) {
+
+        return;
+
+    }
+
+
+    if (
+        sideMenu.classList.contains(
+            "active"
+        )
+    ) {
+
+        closeMenu();
+
+    } else {
+
+        openMenu();
+
+    }
+
+}
+
+
+
+/* =====================================================
    MENU BUTTON
 ===================================================== */
 
@@ -1262,23 +1420,7 @@ if (menuBtn) {
 
     menuBtn.addEventListener(
         "click",
-        function() {
-
-            if (
-                sideMenu.classList.contains(
-                    "active"
-                )
-            ) {
-
-                closeMenu();
-
-            } else {
-
-                openMenu();
-
-            }
-
-        }
+        toggleMenu
     );
 
 }
@@ -1293,23 +1435,7 @@ if (headerMenuBtn) {
 
     headerMenuBtn.addEventListener(
         "click",
-        function() {
-
-            if (
-                sideMenu.classList.contains(
-                    "active"
-                )
-            ) {
-
-                closeMenu();
-
-            } else {
-
-                openMenu();
-
-            }
-
-        }
+        toggleMenu
     );
 
 }
@@ -1337,7 +1463,7 @@ if (menuOverlay) {
 
 document.addEventListener(
     "keydown",
-    function(event) {
+    function (event) {
 
         if (
             event.key === "Escape"
@@ -1353,7 +1479,7 @@ document.addEventListener(
 
 
 /* =====================================================
-   CLOSE MENU AFTER NORMAL LINK CLICK
+   CLOSE MENU AFTER LINK CLICK
 ===================================================== */
 
 const menuLinks =
@@ -1363,7 +1489,7 @@ const menuLinks =
 
 
 menuLinks.forEach(
-    function(link) {
+    function (link) {
 
         link.addEventListener(
             "click",
@@ -1389,7 +1515,7 @@ if (refreshBtn) {
 
     refreshBtn.addEventListener(
         "click",
-        function() {
+        function () {
 
             closeMenu();
 
@@ -1416,8 +1542,7 @@ if (shareAppBtn) {
 
     shareAppBtn.addEventListener(
         "click",
-        async function() {
-
+        async function () {
 
             const shareData = {
 
@@ -1435,7 +1560,6 @@ if (shareAppBtn) {
 
             try {
 
-
                 if (
                     navigator.share
                 ) {
@@ -1444,33 +1568,27 @@ if (shareAppBtn) {
                         shareData
                     );
 
+                } else if (
+                    navigator.clipboard
+                ) {
+
+                    await navigator
+                        .clipboard
+                        .writeText(
+                            window.location.href
+                        );
+
+                    alert(
+                        "App link copied!"
+                    );
+
                 } else {
 
-
-                    if (
-                        navigator.clipboard
-                    ) {
-
-                        await navigator
-                            .clipboard
-                            .writeText(
-                                window.location.href
-                            );
-
-                        alert(
-                            "App link copied!"
-                        );
-
-                    } else {
-
-                        alert(
-                            "Sharing is not supported on this device."
-                        );
-
-                    }
+                    alert(
+                        "Sharing is not supported on this device."
+                    );
 
                 }
-
 
             } catch (error) {
 
@@ -1479,6 +1597,8 @@ if (shareAppBtn) {
                 );
 
             }
+
+            closeMenu();
 
         }
     );
@@ -1489,10 +1609,6 @@ if (shareAppBtn) {
 
 /* =====================================================
    LOGOUT
-   -----------------------------------------------------
-   Temporary version.
-   We will connect this to Firebase Authentication
-   when we build the real login system.
 ===================================================== */
 
 const logoutBtn =
@@ -1505,8 +1621,7 @@ if (logoutBtn) {
 
     logoutBtn.addEventListener(
         "click",
-        function() {
-
+        function () {
 
             const confirmLogout =
                 confirm(
@@ -1515,16 +1630,15 @@ if (logoutBtn) {
 
 
             if (!confirmLogout) {
+
                 return;
+
             }
 
 
             /*
-             * Firebase logout will be added here.
-             *
-             * Example later:
-             *
-             * signOut(auth)
+             * Firebase Authentication
+             * will be connected here.
              */
 
 
@@ -1542,32 +1656,329 @@ if (logoutBtn) {
 
 
 /* =====================================================
-   HEADER PROFILE
+   CONTINUE LEARNING
 ===================================================== */
 
-const headerProfile =
+const continueText =
     document.getElementById(
-        "headerProfile"
+        "continueText"
     );
 
 
-if (headerProfile) {
+const continueBtn =
+    document.getElementById(
+        "continueBtn"
+    );
 
-    headerProfile.addEventListener(
-        "click",
-        function() {
 
-            /*
-             * Later this will automatically
-             * open the logged-in student's
-             * profile.
-             */
+const savedSubject =
+    localStorage.getItem(
+        "lastOpenedSubject"
+    );
+
+
+const savedSubjectUrl =
+    localStorage.getItem(
+        "lastOpenedSubjectUrl"
+    );
+
+
+if (
+    savedSubject &&
+    savedSubjectUrl
+) {
+
+    if (continueText) {
+
+        continueText.textContent =
+            "Continue studying " +
+            savedSubject +
+            ".";
+
+    }
+
+
+    if (continueBtn) {
+
+        continueBtn.textContent =
+            "Continue Learning";
+
+        continueBtn.href =
+            savedSubjectUrl;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SAVE LAST OPENED SUBJECT
+===================================================== */
+
+const subjectLinks =
+    document.querySelectorAll(
+        ".subjectCard .button"
+    );
+
+
+subjectLinks.forEach(
+    function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                const card =
+                    link.closest(
+                        ".subjectCard"
+                    );
+
+
+                if (!card) {
+
+                    return;
+
+                }
+
+
+                const subject =
+                    card.dataset.subject;
+
+
+                if (!subject) {
+
+                    return;
+
+                }
+
+
+                localStorage.setItem(
+                    "lastOpenedSubject",
+                    subject
+                );
+
+
+                localStorage.setItem(
+                    "lastOpenedSubjectUrl",
+                    link.href
+                );
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =====================================================
+   BOOKMARK SYSTEM
+===================================================== */
+
+const bookmarkButtons =
+    document.querySelectorAll(
+        ".bookmarkBtn"
+    );
+
+
+let bookmarks = [];
+
+
+try {
+
+    bookmarks =
+        JSON.parse(
+            localStorage.getItem(
+                "uniqueAcademicBookmarks"
+            )
+        ) || [];
+
+} catch (error) {
+
+    bookmarks = [];
+
+}
+
+
+
+/* =====================================================
+   UPDATE BOOKMARK BUTTONS
+===================================================== */
+
+function updateBookmarkButtons() {
+
+    bookmarkButtons.forEach(
+        function (button) {
+
+            const subject =
+                button.dataset.subject;
+
+
+            if (
+                bookmarks.includes(
+                    subject
+                )
+            ) {
+
+                button.textContent =
+                    "★ Bookmarked";
+
+                button.classList.add(
+                    "bookmarked"
+                );
+
+            } else {
+
+                button.textContent =
+                    "⭐ Bookmark";
+
+                button.classList.remove(
+                    "bookmarked"
+                );
+
+            }
 
         }
     );
 
 }
 
+
+
+/* =====================================================
+   BOOKMARK CLICK
+===================================================== */
+
+bookmarkButtons.forEach(
+    function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const subject =
+                    button.dataset.subject;
+
+
+                if (!subject) {
+
+                    return;
+
+                }
+
+
+                const index =
+                    bookmarks.indexOf(
+                        subject
+                    );
+
+
+                if (
+                    index === -1
+                ) {
+
+                    bookmarks.push(
+                        subject
+                    );
+
+                } else {
+
+                    bookmarks.splice(
+                        index,
+                        1
+                    );
+
+                }
+
+
+                localStorage.setItem(
+                    "uniqueAcademicBookmarks",
+                    JSON.stringify(
+                        bookmarks
+                    )
+                );
+
+
+                updateBookmarkButtons();
+
+            }
+        );
+
+    }
+);
+
+
+updateBookmarkButtons();
+
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+const searchInput =
+    document.getElementById(
+        "search"
+    );
+
+
+if (searchInput) {
+
+    searchInput.addEventListener(
+        "input",
+        function () {
+
+            const searchValue =
+                searchInput.value
+                    .trim()
+                    .toLowerCase();
+
+
+            const subjectCards =
+                document.querySelectorAll(
+                    ".subjectCard"
+                );
+
+
+            subjectCards.forEach(
+                function (card) {
+
+                    const subject =
+                        (
+                            card.dataset.subject ||
+                            card.textContent
+                        )
+                        .toLowerCase();
+
+
+                    if (
+                        subject.includes(
+                            searchValue
+                        )
+                    ) {
+
+                        card.style.display =
+                            "";
+
+                    } else {
+
+                        card.style.display =
+                            "none";
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+}
+
+
+
+})();
 
 </script>
 
