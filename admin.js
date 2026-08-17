@@ -1,10 +1,3 @@
-/* =========================================
-   UNIQUE ACADEMIC
-   ADMIN PANEL
-   Firebase Authentication + Firestore
-   Payment Screenshot Viewer
-========================================= */
-
 import {
     db,
     auth
@@ -23,10 +16,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 
-/* =========================================
-   ADMIN EMAIL
-========================================= */
-
 const ADMIN_EMAIL =
     "ridewankasye6@gmail.com";
 
@@ -36,93 +25,57 @@ const ADMIN_EMAIL =
 ========================================= */
 
 const registrationList =
-    document.getElementById(
-        "registrationList"
-    );
+    document.getElementById("registrationList");
 
 const totalCount =
-    document.getElementById(
-        "totalCount"
-    );
+    document.getElementById("totalCount");
 
 const pendingCount =
-    document.getElementById(
-        "pendingCount"
-    );
+    document.getElementById("pendingCount");
 
 const approvedCount =
-    document.getElementById(
-        "approvedCount"
-    );
+    document.getElementById("approvedCount");
 
 const rejectedCount =
-    document.getElementById(
-        "rejectedCount"
-    );
+    document.getElementById("rejectedCount");
 
 const logoutBtn =
-    document.getElementById(
-        "logoutBtn"
-    );
+    document.getElementById("logoutBtn");
 
 
 /* =========================================
-   CHECK REQUIRED HTML
+   CHECK ADMIN
 ========================================= */
 
-if (!registrationList) {
-    console.error(
-        "Admin error: registrationList was not found."
-    );
-}
+onAuthStateChanged(auth, async (user) => {
 
+    if (!user) {
 
-/* =========================================
-   CHECK ADMIN USER
-========================================= */
+        window.location.href =
+            "login.html";
 
-onAuthStateChanged(
-    auth,
-    async (user) => {
-
-        if (!user) {
-
-            window.location.href =
-                "login.html";
-
-            return;
-        }
-
-
-        /*
-         * ADMIN EMAIL CHECK
-         */
-
-        if (
-            !user.email ||
-            user.email.toLowerCase() !==
-            ADMIN_EMAIL.toLowerCase()
-        ) {
-
-            alert(
-                "❌ Admin access required."
-            );
-
-            window.location.href =
-                "index.html";
-
-            return;
-        }
-
-
-        /*
-         * ADMIN VERIFIED
-         */
-
-        await loadRegistrations();
-
+        return;
     }
-);
+
+
+    if (
+        !user.email ||
+        user.email.toLowerCase() !==
+        ADMIN_EMAIL.toLowerCase()
+    ) {
+
+        alert("❌ Admin access required.");
+
+        window.location.href =
+            "index.html";
+
+        return;
+    }
+
+
+    loadRegistrations();
+
+});
 
 
 /* =========================================
@@ -133,25 +86,6 @@ async function loadRegistrations() {
 
     try {
 
-        /*
-         * SHOW LOADING
-         */
-
-        registrationList.innerHTML = `
-
-            <div class="loading">
-
-                ⏳ Loading registrations...
-
-            </div>
-
-        `;
-
-
-        /*
-         * GET FIRESTORE DATA
-         */
-
         const snapshot =
             await getDocs(
                 collection(
@@ -161,29 +95,14 @@ async function loadRegistrations() {
             );
 
 
-        /*
-         * COUNTERS
-         */
-
         let total = 0;
-
         let pending = 0;
-
         let approved = 0;
-
         let rejected = 0;
 
 
-        /*
-         * CLEAR LIST
-         */
-
         registrationList.innerHTML = "";
 
-
-        /*
-         * NO REGISTRATIONS
-         */
 
         if (snapshot.empty) {
 
@@ -207,21 +126,8 @@ async function loadRegistrations() {
 
             `;
 
-
-            updateCounters(
-                0,
-                0,
-                0,
-                0
-            );
-
-            return;
         }
 
-
-        /*
-         * LOOP THROUGH REGISTRATIONS
-         */
 
         snapshot.forEach(
             (registrationDoc) => {
@@ -233,49 +139,28 @@ async function loadRegistrations() {
                 total++;
 
 
-                /*
-                 * STATUS
-                 */
-
                 const status =
-                    data.status ||
-                    "pending";
+                    data.status || "pending";
 
 
-                if (
-                    status === "pending"
-                ) {
-
+                if (status === "pending") {
                     pending++;
-
                 }
 
-                else if (
-                    status === "approved"
-                ) {
 
+                if (status === "approved") {
                     approved++;
-
                 }
 
-                else if (
-                    status === "rejected"
-                ) {
 
+                if (status === "rejected") {
                     rejected++;
-
                 }
 
 
-                /*
-                 * SCREENSHOT
-                 *
-                 * IMPORTANT:
-                 * registration.js saves:
-                 *
-                 * paymentScreenshotURL
-                 *
-                 */
+                /* =================================
+                   SCREENSHOT
+                ================================= */
 
                 let screenshotHTML = `
 
@@ -286,9 +171,7 @@ async function loadRegistrations() {
                         </h4>
 
                         <div class="no-screenshot">
-
-                            No payment screenshot uploaded.
-
+                            ❌ No screenshot uploaded
                         </div>
 
                     </div>
@@ -297,18 +180,23 @@ async function loadRegistrations() {
 
 
                 /*
-                 * SCREENSHOT EXISTS
+                 * IMPORTANT:
+                 *
+                 * registration.js saves:
+                 *
+                 * paymentScreenshotURL
+                 *
                  */
 
+                const screenshotURL =
+                    data.paymentScreenshotURL;
+
+
                 if (
-                    data.paymentScreenshotURL
+                    screenshotURL &&
+                    typeof screenshotURL === "string" &&
+                    screenshotURL.trim() !== ""
                 ) {
-
-                    const screenshotURL =
-                        String(
-                            data.paymentScreenshotURL
-                        );
-
 
                     screenshotHTML = `
 
@@ -321,15 +209,14 @@ async function loadRegistrations() {
                             <button
                                 type="button"
                                 class="view-screenshot-btn"
-                                onclick="openScreenshot(
-                                    ${JSON.stringify(
-                                        screenshotURL
-                                    )}
-                                )"
+                                data-screenshot-url="${escapeHTML(
+                                    screenshotURL
+                                )}"
                             >
-                                🔍 View Screenshot
+                                👁️ View Screenshot
                             </button>
 
+                            <br>
 
                             <img
                                 class="screenshot-preview"
@@ -338,11 +225,6 @@ async function loadRegistrations() {
                                 )}"
                                 alt="Student payment screenshot"
                                 loading="lazy"
-                                onclick="openScreenshot(
-                                    ${JSON.stringify(
-                                        screenshotURL
-                                    )}
-                                )"
                             >
 
                         </div>
@@ -352,9 +234,9 @@ async function loadRegistrations() {
                 }
 
 
-                /*
-                 * REJECTION REASON
-                 */
+                /* =================================
+                   REJECTION REASON
+                ================================= */
 
                 let rejectionHTML = "";
 
@@ -383,79 +265,12 @@ async function loadRegistrations() {
                 }
 
 
-                /*
-                 * ACTION BUTTONS
-                 */
-
-                let actionHTML = "";
-
-
-                if (
-                    status === "pending"
-                ) {
-
-                    actionHTML = `
-
-                        <div class="actions">
-
-                            <button
-                                type="button"
-                                class="approve-btn"
-                                data-id="${escapeHTML(
-                                    registrationDoc.id
-                                )}"
-                            >
-                                ✅ Approve
-                            </button>
-
-
-                            <button
-                                type="button"
-                                class="reject-btn"
-                                data-id="${escapeHTML(
-                                    registrationDoc.id
-                                )}"
-                            >
-                                ❌ Reject
-                            </button>
-
-                        </div>
-
-                    `;
-
-                }
-
-
-                /*
-                 * PAYMENT INFORMATION
-                 */
-
-                const paymentMethod =
-                    data.paymentMethod ||
-                    "—";
-
-                const paymentReference =
-                    data.paymentReference ||
-                    "—";
-
-                const amount =
-                    data.amount !== undefined
-                        ? data.amount
-                        : 300;
-
-                const currency =
-                    data.currency ||
-                    "ETB";
-
-
-                /*
-                 * STUDENT CARD
-                 */
+                /* =================================
+                   STUDENT CARD
+                ================================= */
 
                 const card =
-                    document.createElement(
-                        "div"
-                    );
+                    document.createElement("div");
 
 
                 card.className =
@@ -478,8 +293,7 @@ async function loadRegistrations() {
 
                         📧 Email:
                         ${escapeHTML(
-                            data.email ||
-                            "—"
+                            data.email || "—"
                         )}
 
                         <br>
@@ -487,8 +301,7 @@ async function loadRegistrations() {
 
                         📱 Phone:
                         ${escapeHTML(
-                            data.phone ||
-                            "—"
+                            data.phone || "—"
                         )}
 
                         <br>
@@ -496,8 +309,7 @@ async function loadRegistrations() {
 
                         🎓 University:
                         ${escapeHTML(
-                            data.university ||
-                            "—"
+                            data.university || "—"
                         )}
 
                         <br>
@@ -505,32 +317,26 @@ async function loadRegistrations() {
 
                         📚 Department:
                         ${escapeHTML(
-                            data.department ||
-                            "—"
+                            data.department || "—"
                         )}
 
                     </div>
 
 
-                    <!-- =====================
-                         PAYMENT INFORMATION
-                    ====================== -->
-
                     <div class="payment-info">
 
                         <div class="payment-info-title">
-
                             💳 Payment Information
-
                         </div>
 
 
                         <p>
 
-                            Payment Method:
+                            Method:
                             <strong>
                                 ${escapeHTML(
-                                    paymentMethod
+                                    data.paymentMethod ||
+                                    "—"
                                 )}
                             </strong>
 
@@ -542,10 +348,13 @@ async function loadRegistrations() {
                             Amount:
                             <strong>
                                 ${escapeHTML(
-                                    String(amount)
+                                    String(
+                                        data.amount || 300
+                                    )
                                 )}
                                 ${escapeHTML(
-                                    currency
+                                    data.currency ||
+                                    "ETB"
                                 )}
                             </strong>
 
@@ -554,10 +363,11 @@ async function loadRegistrations() {
 
                         <p>
 
-                            Payment Reference:
+                            Reference:
                             <strong>
                                 ${escapeHTML(
-                                    paymentReference
+                                    data.paymentReference ||
+                                    "—"
                                 )}
                             </strong>
 
@@ -566,16 +376,8 @@ async function loadRegistrations() {
                     </div>
 
 
-                    <!-- =====================
-                         SCREENSHOT
-                    ====================== -->
-
                     ${screenshotHTML}
 
-
-                    <!-- =====================
-                         STATUS
-                    ====================== -->
 
                     <br>
 
@@ -593,47 +395,80 @@ async function loadRegistrations() {
                     </span>
 
 
-                    <!-- =====================
-                         REJECTION REASON
-                    ====================== -->
-
                     ${rejectionHTML}
 
 
-                    <!-- =====================
-                         ACTIONS
-                    ====================== -->
+                    <div class="actions">
 
-                    ${actionHTML}
+                        ${
+                            status === "pending"
+                            ?
+
+                            `
+
+                            <button
+                                type="button"
+                                class="approve-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+
+                                ✅ Approve
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="reject-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+
+                                ❌ Reject
+
+                            </button>
+
+                            `
+
+                            :
+
+                            ""
+                        }
+
+                    </div>
 
                 `;
 
 
-                registrationList.appendChild(
-                    card
-                );
+                registrationList.appendChild(card);
 
             }
         );
 
 
-        /*
-         * UPDATE COUNTERS
-         */
+        /* =================================
+           COUNTERS
+        ================================= */
 
-        updateCounters(
-            total,
-            pending,
-            approved,
-            rejected
-        );
+        totalCount.textContent =
+            total;
 
+        pendingCount.textContent =
+            pending;
 
-        /*
-         * ADD BUTTON EVENTS
-         */
+        approvedCount.textContent =
+            approved;
+
+        rejectedCount.textContent =
+            rejected;
+
 
         addActionListeners();
+
+        addScreenshotListeners();
 
     }
 
@@ -668,118 +503,196 @@ async function loadRegistrations() {
 
 
 /* =========================================
-   UPDATE COUNTERS
+   SCREENSHOT BUTTONS
 ========================================= */
 
-function updateCounters(
-    total,
-    pending,
-    approved,
-    rejected
-) {
+function addScreenshotListeners() {
 
-    if (totalCount) {
+    document
+        .querySelectorAll(
+            ".view-screenshot-btn"
+        )
+        .forEach(button => {
 
-        totalCount.textContent =
-            total;
+            button.addEventListener(
+                "click",
+                function () {
 
-    }
-
-
-    if (pendingCount) {
-
-        pendingCount.textContent =
-            pending;
-
-    }
+                    const url =
+                        this.dataset.screenshotUrl;
 
 
-    if (approvedCount) {
+                    if (!url) {
 
-        approvedCount.textContent =
-            approved;
+                        alert(
+                            "❌ Screenshot URL is missing."
+                        );
 
-    }
+                        return;
+
+                    }
 
 
-    if (rejectedCount) {
+                    openScreenshot(url);
 
-        rejectedCount.textContent =
-            rejected;
+                }
+            );
 
-    }
+        });
+
+
+    /*
+     * ALSO ALLOW CLICKING THE PREVIEW IMAGE
+     */
+
+    document
+        .querySelectorAll(
+            ".screenshot-preview"
+        )
+        .forEach(image => {
+
+            image.addEventListener(
+                "click",
+                function () {
+
+                    if (this.src) {
+
+                        openScreenshot(
+                            this.src
+                        );
+
+                    }
+
+                }
+            );
+
+        });
 
 }
 
 
 /* =========================================
-   ACTION BUTTON LISTENERS
+   OPEN SCREENSHOT
 ========================================= */
 
-function addActionListeners() {
+function openScreenshot(url) {
+
+    const imageModal =
+        document.getElementById(
+            "imageModal"
+        );
+
+    const modalImage =
+        document.getElementById(
+            "modalImage"
+        );
+
+
+    if (!imageModal || !modalImage) {
+
+        /*
+         * FALLBACK:
+         * If modal is unavailable,
+         * open image directly.
+         */
+
+        window.open(
+            url,
+            "_blank",
+            "noopener,noreferrer"
+        );
+
+        return;
+
+    }
 
 
     /*
-     * APPROVE BUTTONS
+     * IMPORTANT:
+     * Set image first.
      */
+
+    modalImage.onload = function () {
+
+        imageModal.classList.add(
+            "active"
+        );
+
+        imageModal.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+    };
+
+
+    modalImage.onerror = function () {
+
+        imageModal.classList.remove(
+            "active"
+        );
+
+        alert(
+            "❌ The screenshot could not be loaded. Please check Firebase Storage rules."
+        );
+
+        modalImage.src = "";
+
+    };
+
+
+    modalImage.src = url;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+function addActionListeners() {
 
     document
         .querySelectorAll(
             ".approve-btn"
         )
-        .forEach(
-            (button) => {
+        .forEach(button => {
 
-                button.addEventListener(
-                    "click",
-                    () => {
+            button.onclick = () => {
 
-                        approveRegistration(
-                            button.dataset.id
-                        );
-
-                    }
+                approveRegistration(
+                    button.dataset.id
                 );
 
-            }
-        );
+            };
 
+        });
 
-    /*
-     * REJECT BUTTONS
-     */
 
     document
         .querySelectorAll(
             ".reject-btn"
         )
-        .forEach(
-            (button) => {
+        .forEach(button => {
 
-                button.addEventListener(
-                    "click",
-                    () => {
+            button.onclick = () => {
 
-                        rejectRegistration(
-                            button.dataset.id
-                        );
-
-                    }
+                rejectRegistration(
+                    button.dataset.id
                 );
 
-            }
-        );
+            };
+
+        });
 
 }
 
 
 /* =========================================
-   APPROVE REGISTRATION
+   APPROVE
 ========================================= */
 
-async function approveRegistration(
-    id
-) {
+async function approveRegistration(id) {
 
     const confirmed =
         confirm(
@@ -788,9 +701,7 @@ async function approveRegistration(
 
 
     if (!confirmed) {
-
         return;
-
     }
 
 
@@ -807,8 +718,7 @@ async function approveRegistration(
         await updateDoc(
             registrationRef,
             {
-                status:
-                    "approved"
+                status: "approved"
             }
         );
 
@@ -818,7 +728,7 @@ async function approveRegistration(
         );
 
 
-        await loadRegistrations();
+        loadRegistrations();
 
     }
 
@@ -840,12 +750,10 @@ async function approveRegistration(
 
 
 /* =========================================
-   REJECT REGISTRATION
+   REJECT
 ========================================= */
 
-async function rejectRegistration(
-    id
-) {
+async function rejectRegistration(id) {
 
     const reason =
         prompt(
@@ -853,13 +761,8 @@ async function rejectRegistration(
         );
 
 
-    if (
-        reason === null ||
-        reason.trim() === ""
-    ) {
-
+    if (!reason) {
         return;
-
     }
 
 
@@ -876,13 +779,8 @@ async function rejectRegistration(
         await updateDoc(
             registrationRef,
             {
-
-                status:
-                    "rejected",
-
-                rejectionReason:
-                    reason.trim()
-
+                status: "rejected",
+                rejectionReason: reason
             }
         );
 
@@ -892,7 +790,7 @@ async function rejectRegistration(
         );
 
 
-        await loadRegistrations();
+        loadRegistrations();
 
     }
 
@@ -905,7 +803,7 @@ async function rejectRegistration(
 
 
         alert(
-            "❌ Failed to reject student."
+            "❌ Failed to reject registration."
         );
 
     }
@@ -917,9 +815,7 @@ async function rejectRegistration(
    ESCAPE HTML
 ========================================= */
 
-function escapeHTML(
-    value
-) {
+function escapeHTML(value) {
 
     return String(value)
 
@@ -955,37 +851,26 @@ function escapeHTML(
    LOGOUT
 ========================================= */
 
-if (logoutBtn) {
+logoutBtn.onclick =
+    async () => {
 
-    logoutBtn.addEventListener(
-        "click",
-        async () => {
+        try {
 
-            try {
-
-                await signOut(auth);
+            await signOut(auth);
 
 
-                window.location.href =
-                    "login.html";
-
-            }
-
-            catch (error) {
-
-                console.error(
-                    "Logout error:",
-                    error
-                );
-
-
-                alert(
-                    "❌ Logout failed. Please try again."
-                );
-
-            }
+            window.location.href =
+                "login.html";
 
         }
-    );
 
-}
+        catch (error) {
+
+            console.error(
+                "Logout error:",
+                error
+            );
+
+        }
+
+    };
