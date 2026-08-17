@@ -1,21 +1,15 @@
 /* =========================================
    UNIQUE ACADEMIC
    REAL REGISTRATION SYSTEM
+   Firebase + Cloud Firestore + Storage
 
    STEP 1 → STEP 2 → STEP 3 → STEP 4
-
-   Firebase Authentication
-   Firestore
-   Firebase Storage
 ========================================= */
-
 
 import {
     db,
-    auth,
-    storage
+    auth
 } from "./firebase-config.js";
-
 
 import {
     collection,
@@ -23,18 +17,23 @@ import {
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
-
 import {
     createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-
 import {
+    getStorage,
     ref,
     uploadBytes,
     getDownloadURL
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-storage.js";
 
+
+/* =========================================
+   FIREBASE STORAGE
+========================================= */
+
+const storage = getStorage();
 
 
 /* =========================================
@@ -67,7 +66,6 @@ const stepIndicator4 =
     document.getElementById("stepIndicator4");
 
 
-
 /* =========================================
    STEP 1 → STEP 2
 ========================================= */
@@ -82,13 +80,11 @@ document
                 .value
                 .trim();
 
-
         const phone =
             document
                 .getElementById("phone")
                 .value
                 .trim();
-
 
         const email =
             document
@@ -96,19 +92,16 @@ document
                 .value
                 .trim();
 
-
         const university =
             document
                 .getElementById("university")
                 .value;
-
 
         const department =
             document
                 .getElementById("department")
                 .value
                 .trim();
-
 
 
         if (fullName === "") {
@@ -161,34 +154,27 @@ document
         }
 
 
-
         personalStep.style.display =
             "none";
 
-
         securityStep.style.display =
             "block";
-
 
         paymentStep.style.display =
             "none";
 
 
+        stepIndicator1.classList.remove(
+            "active"
+        );
 
-        stepIndicator1
-            .classList
-            .remove("active");
+        stepIndicator1.classList.add(
+            "completed"
+        );
 
-
-        stepIndicator1
-            .classList
-            .add("completed");
-
-
-        stepIndicator2
-            .classList
-            .add("active");
-
+        stepIndicator2.classList.add(
+            "active"
+        );
 
 
         window.scrollTo({
@@ -197,7 +183,6 @@ document
         });
 
     });
-
 
 
 /* =========================================
@@ -211,24 +196,21 @@ document
         securityStep.style.display =
             "none";
 
-
         personalStep.style.display =
             "block";
 
 
-        stepIndicator2
-            .classList
-            .remove("active");
+        stepIndicator2.classList.remove(
+            "active"
+        );
 
+        stepIndicator1.classList.remove(
+            "completed"
+        );
 
-        stepIndicator1
-            .classList
-            .remove("completed");
-
-
-        stepIndicator1
-            .classList
-            .add("active");
+        stepIndicator1.classList.add(
+            "active"
+        );
 
 
         window.scrollTo({
@@ -239,7 +221,6 @@ document
     });
 
 
-
 /* =========================================
    PASSWORD STRENGTH
 ========================================= */
@@ -247,32 +228,26 @@ document
 const passwordInput =
     document.getElementById("password");
 
-
 const strengthBar =
     document.getElementById("strengthBar");
 
-
 const strengthText =
     document.getElementById("strengthText");
-
 
 const lengthRequirement =
     document.getElementById(
         "lengthRequirement"
     );
 
-
 const numberRequirement =
     document.getElementById(
         "numberRequirement"
     );
 
-
 const uppercaseRequirement =
     document.getElementById(
         "uppercaseRequirement"
     );
-
 
 
 passwordInput.addEventListener(
@@ -282,18 +257,14 @@ passwordInput.addEventListener(
         const password =
             passwordInput.value;
 
-
         const hasLength =
             password.length >= 8;
-
 
         const hasNumber =
             /[0-9]/.test(password);
 
-
         const hasUppercase =
             /[A-Z]/.test(password);
-
 
 
         if (hasLength) {
@@ -301,21 +272,20 @@ passwordInput.addEventListener(
             lengthRequirement.textContent =
                 "✓ At least 8 characters";
 
-            lengthRequirement
-                .classList
-                .add("valid");
+            lengthRequirement.classList.add(
+                "valid"
+            );
 
         } else {
 
             lengthRequirement.textContent =
                 "○ At least 8 characters";
 
-            lengthRequirement
-                .classList
-                .remove("valid");
+            lengthRequirement.classList.remove(
+                "valid"
+            );
 
         }
-
 
 
         if (hasNumber) {
@@ -323,21 +293,20 @@ passwordInput.addEventListener(
             numberRequirement.textContent =
                 "✓ At least one number";
 
-            numberRequirement
-                .classList
-                .add("valid");
+            numberRequirement.classList.add(
+                "valid"
+            );
 
         } else {
 
             numberRequirement.textContent =
                 "○ At least one number";
 
-            numberRequirement
-                .classList
-                .remove("valid");
+            numberRequirement.classList.remove(
+                "valid"
+            );
 
         }
-
 
 
         if (hasUppercase) {
@@ -345,37 +314,38 @@ passwordInput.addEventListener(
             uppercaseRequirement.textContent =
                 "✓ At least one uppercase letter";
 
-            uppercaseRequirement
-                .classList
-                .add("valid");
+            uppercaseRequirement.classList.add(
+                "valid"
+            );
 
         } else {
 
             uppercaseRequirement.textContent =
                 "○ At least one uppercase letter";
 
-            uppercaseRequirement
-                .classList
-                .remove("valid");
+            uppercaseRequirement.classList.remove(
+                "valid"
+            );
 
         }
-
 
 
         let strength = 0;
 
 
-        if (hasLength)
+        if (hasLength) {
             strength++;
+        }
 
 
-        if (hasNumber)
+        if (hasNumber) {
             strength++;
+        }
 
 
-        if (hasUppercase)
+        if (hasUppercase) {
             strength++;
-
+        }
 
 
         if (password.length === 0) {
@@ -383,10 +353,8 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "0%";
 
-
             strengthText.textContent =
                 "Enter a password";
-
 
             strengthText.className =
                 "";
@@ -398,10 +366,8 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "33%";
 
-
             strengthText.textContent =
                 "Weak password";
-
 
             strengthText.className =
                 "weak";
@@ -413,10 +379,8 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "66%";
 
-
             strengthText.textContent =
                 "Medium password";
-
 
             strengthText.className =
                 "medium";
@@ -428,10 +392,8 @@ passwordInput.addEventListener(
             strengthBar.style.width =
                 "100%";
 
-
             strengthText.textContent =
                 "Strong password";
-
 
             strengthText.className =
                 "strong";
@@ -442,10 +404,9 @@ passwordInput.addEventListener(
 );
 
 
-
 /* =========================================
    STEP 2 → STEP 3
-   CREATE FIREBASE USER
+   CREATE REAL FIREBASE USER
 ========================================= */
 
 document
@@ -457,7 +418,6 @@ document
             const password =
                 passwordInput.value;
 
-
             const confirmPassword =
                 document
                     .getElementById(
@@ -465,13 +425,11 @@ document
                     )
                     .value;
 
-
             const email =
                 document
                     .getElementById("email")
                     .value
                     .trim();
-
 
 
             if (password === "") {
@@ -534,6 +492,9 @@ document
             }
 
 
+            /*
+             * CREATE REAL FIREBASE ACCOUNT
+             */
 
             try {
 
@@ -595,28 +556,24 @@ document
             }
 
 
-
             securityStep.style.display =
                 "none";
-
 
             paymentStep.style.display =
                 "block";
 
 
-            stepIndicator2
-                .classList
-                .remove("active");
+            stepIndicator2.classList.remove(
+                "active"
+            );
 
+            stepIndicator2.classList.add(
+                "completed"
+            );
 
-            stepIndicator2
-                .classList
-                .add("completed");
-
-
-            stepIndicator3
-                .classList
-                .add("active");
+            stepIndicator3.classList.add(
+                "active"
+            );
 
 
             window.scrollTo({
@@ -626,7 +583,6 @@ document
 
         }
     );
-
 
 
 /* =========================================
@@ -641,24 +597,20 @@ const paymentDetails =
         "paymentDetails"
     );
 
-
 const selectedPaymentName =
     document.getElementById(
         "selectedPaymentName"
     );
-
 
 const selectedPaymentIcon =
     document.getElementById(
         "selectedPaymentIcon"
     );
 
-
 const accountNumber =
     document.getElementById(
         "accountNumber"
     );
-
 
 
 /* =========================================
@@ -667,41 +619,38 @@ const accountNumber =
 
 document
     .getElementById("cbeMethod")
-    .addEventListener("click", function () {
+    .addEventListener(
+        "click",
+        function () {
 
-        selectedPaymentMethod =
-            "CBE";
-
-
-        selectedPaymentName.textContent =
-            "CBE / CBE Birr";
+            selectedPaymentMethod =
+                "CBE";
 
 
-        selectedPaymentIcon.textContent =
-            "🏦";
+            selectedPaymentName.textContent =
+                "CBE / CBE Birr";
+
+            selectedPaymentIcon.textContent =
+                "🏦";
+
+            accountNumber.textContent =
+                "1000721240208";
 
 
-        accountNumber.textContent =
-            "1000721240208";
+            paymentDetails.style.display =
+                "block";
 
 
-        paymentDetails.style.display =
-            "block";
+            document
+                .getElementById("cbeMethod")
+                .classList.add("selected");
 
+            document
+                .getElementById("telebirrMethod")
+                .classList.remove("selected");
 
-        document
-            .getElementById("cbeMethod")
-            .classList
-            .add("selected");
-
-
-        document
-            .getElementById("telebirrMethod")
-            .classList
-            .remove("selected");
-
-    });
-
+        }
+    );
 
 
 /* =========================================
@@ -710,41 +659,38 @@ document
 
 document
     .getElementById("telebirrMethod")
-    .addEventListener("click", function () {
+    .addEventListener(
+        "click",
+        function () {
 
-        selectedPaymentMethod =
-            "Telebirr";
-
-
-        selectedPaymentName.textContent =
-            "Telebirr";
+            selectedPaymentMethod =
+                "Telebirr";
 
 
-        selectedPaymentIcon.textContent =
-            "📱";
+            selectedPaymentName.textContent =
+                "Telebirr";
+
+            selectedPaymentIcon.textContent =
+                "📱";
+
+            accountNumber.textContent =
+                "0976596520";
 
 
-        accountNumber.textContent =
-            "0976596520";
+            paymentDetails.style.display =
+                "block";
 
 
-        paymentDetails.style.display =
-            "block";
+            document
+                .getElementById("telebirrMethod")
+                .classList.add("selected");
 
+            document
+                .getElementById("cbeMethod")
+                .classList.remove("selected");
 
-        document
-            .getElementById("telebirrMethod")
-            .classList
-            .add("selected");
-
-
-        document
-            .getElementById("cbeMethod")
-            .classList
-            .remove("selected");
-
-    });
-
+        }
+    );
 
 
 /* =========================================
@@ -803,166 +749,37 @@ document
     );
 
 
-
 /* =========================================
    PAYMENT SCREENSHOT
 ========================================= */
 
-document
-    .getElementById("paymentScreenshot")
-    .addEventListener(
-        "change",
-        function () {
+const paymentScreenshot =
+    document.getElementById(
+        "paymentScreenshot"
+    );
 
-            const fileName =
-                document.getElementById(
-                    "fileName"
-                );
-
-
-            if (this.files.length > 0) {
-
-                const file =
-                    this.files[0];
-
-
-                /* MAX 5 MB */
-
-                if (
-                    file.size >
-                    5 * 1024 * 1024
-                ) {
-
-                    alert(
-                        "Screenshot must be smaller than 5 MB."
-                    );
-
-
-                    this.value =
-                        "";
-
-
-                    fileName.textContent =
-                        "";
-
-
-                    return;
-                }
-
-
-                fileName.textContent =
-                    "📎 " + file.name;
-
-            }
-
-            else {
-
-                fileName.textContent =
-                    "";
-
-            }
-
-        }
+const fileName =
+    document.getElementById(
+        "fileName"
     );
 
 
+paymentScreenshot.addEventListener(
+    "change",
+    function () {
 
-/* =========================================
-   STEP 3 → STEP 4
-   UPLOAD SCREENSHOT
-   SAVE REGISTRATION
-========================================= */
-
-document
-    .getElementById("submitPaymentBtn")
-    .addEventListener(
-        "click",
-        async function () {
-
-            const button =
-                this;
-
-
-            const paymentReference =
-                document
-                    .getElementById(
-                        "paymentReference"
-                    )
-                    .value
-                    .trim();
-
-
-            const screenshotInput =
-                document
-                    .getElementById(
-                        "paymentScreenshot"
-                    );
-
-
-            const screenshot =
-                screenshotInput.files;
-
-
-
-            /* =================================
-               PAYMENT METHOD
-            ================================= */
-
-            if (
-                selectedPaymentMethod === ""
-            ) {
-
-                alert(
-                    "Please select your payment method."
-                );
-
-                return;
-            }
-
-
-
-            /* =================================
-               REFERENCE
-            ================================= */
-
-            if (
-                paymentReference === ""
-            ) {
-
-                alert(
-                    "Please enter your payment reference or transaction number."
-                );
-
-                return;
-            }
-
-
-
-            /* =================================
-               SCREENSHOT
-            ================================= */
-
-            if (
-                screenshot.length === 0
-            ) {
-
-                alert(
-                    "Please upload your payment screenshot."
-                );
-
-                return;
-            }
-
-
+        if (
+            this.files &&
+            this.files.length > 0
+        ) {
 
             const file =
-                screenshot[0];
+                this.files[0];
 
 
-
-            /* =================================
-               FILE TYPE
-            ================================= */
+            /*
+             * ALLOWED FILE TYPES
+             */
 
             const allowedTypes = [
                 "image/jpeg",
@@ -978,34 +795,188 @@ document
             ) {
 
                 alert(
-                    "Please upload a JPG, PNG, or WEBP image."
+                    "Please upload a JPG, PNG or WEBP image."
                 );
+
+                this.value = "";
+
+                fileName.textContent =
+                    "";
 
                 return;
             }
 
 
+            /*
+             * MAXIMUM FILE SIZE
+             * 5 MB
+             */
+
+            const maxSize =
+                5 * 1024 * 1024;
+
+
+            if (file.size > maxSize) {
+
+                alert(
+                    "The screenshot must be smaller than 5 MB."
+                );
+
+                this.value = "";
+
+                fileName.textContent =
+                    "";
+
+                return;
+            }
+
+
+            fileName.textContent =
+                "📎 " + file.name;
+
+        }
+
+        else {
+
+            fileName.textContent =
+                "";
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   STEP 3 → STEP 4
+   SAVE REGISTRATION + UPLOAD SCREENSHOT
+========================================= */
+
+document
+    .getElementById("submitPaymentBtn")
+    .addEventListener(
+        "click",
+        async function () {
+
+            const button = this;
+
+
+            const paymentReference =
+                document
+                    .getElementById(
+                        "paymentReference"
+                    )
+                    .value
+                    .trim();
+
+
+            const screenshotFiles =
+                document
+                    .getElementById(
+                        "paymentScreenshot"
+                    )
+                    .files;
+
 
             /* =================================
-               FILE SIZE
+               CHECK PAYMENT METHOD
             ================================= */
 
             if (
-                file.size >
-                5 * 1024 * 1024
+                selectedPaymentMethod === ""
             ) {
 
                 alert(
-                    "Screenshot must be smaller than 5 MB."
+                    "Please select your payment method."
                 );
 
                 return;
             }
 
 
+            /* =================================
+               CHECK REFERENCE
+            ================================= */
+
+            if (
+                paymentReference === ""
+            ) {
+
+                alert(
+                    "Please enter your payment reference or transaction number."
+                );
+
+                return;
+            }
+
 
             /* =================================
-               CHECK AUTH
+               CHECK SCREENSHOT
+            ================================= */
+
+            if (
+                screenshotFiles.length === 0
+            ) {
+
+                alert(
+                    "Please upload your payment screenshot."
+                );
+
+                return;
+            }
+
+
+            const screenshot =
+                screenshotFiles[0];
+
+
+            /* =================================
+               CHECK FILE TYPE
+            ================================= */
+
+            const allowedTypes = [
+                "image/jpeg",
+                "image/png",
+                "image/webp"
+            ];
+
+
+            if (
+                !allowedTypes.includes(
+                    screenshot.type
+                )
+            ) {
+
+                alert(
+                    "Please upload a JPG, PNG or WEBP image."
+                );
+
+                return;
+            }
+
+
+            /* =================================
+               CHECK FILE SIZE
+            ================================= */
+
+            const maxSize =
+                5 * 1024 * 1024;
+
+
+            if (
+                screenshot.size > maxSize
+            ) {
+
+                alert(
+                    "The screenshot must be smaller than 5 MB."
+                );
+
+                return;
+            }
+
+
+            /* =================================
+               CHECK FIREBASE USER
             ================================= */
 
             if (!auth.currentUser) {
@@ -1018,53 +989,49 @@ document
             }
 
 
+            /*
+             * PREVENT DOUBLE SUBMISSION
+             */
 
-            /* =================================
-               PREVENT DOUBLE SUBMISSION
-            ================================= */
-
-            button.disabled =
-                true;
-
+            button.disabled = true;
 
             button.innerHTML =
                 "Uploading screenshot...";
 
 
-
             try {
+
+                /* =================================
+                   CURRENT FIREBASE USER
+                ================================= */
 
                 const user =
                     auth.currentUser;
 
+                const userId =
+                    user.uid;
 
 
                 /* =================================
-                   CREATE SAFE FILE NAME
+                   CREATE UNIQUE STORAGE PATH
                 ================================= */
 
-                const extension =
-                    file.name
+                const fileExtension =
+                    screenshot.name
                         .split(".")
                         .pop()
                         .toLowerCase();
 
 
-                const filePath =
-                    `payment-screenshots/${user.uid}/${Date.now()}.${extension}`;
+                const storagePath =
+                    `payment-screenshots/${userId}/${Date.now()}.${fileExtension}`;
 
 
-
-                /* =================================
-                   FIREBASE STORAGE REFERENCE
-                ================================= */
-
-                const storageReference =
+                const screenshotRef =
                     ref(
                         storage,
-                        filePath
+                        storagePath
                     );
-
 
 
                 /* =================================
@@ -1072,40 +1039,37 @@ document
                 ================================= */
 
                 await uploadBytes(
-                    storageReference,
-                    file,
+                    screenshotRef,
+                    screenshot,
                     {
                         contentType:
-                            file.type
+                            screenshot.type
                     }
                 );
-
-
-
-                button.innerHTML =
-                    "Saving registration...";
-
 
 
                 /* =================================
                    GET DOWNLOAD URL
                 ================================= */
 
+                button.innerHTML =
+                    "Saving registration...";
+
+
                 const screenshotURL =
                     await getDownloadURL(
-                        storageReference
+                        screenshotRef
                     );
 
 
-
-                /* =================================
-                   REGISTRATION DATA
-                ================================= */
+                /*
+                 * COLLECT STUDENT INFORMATION
+                 */
 
                 const registrationData = {
 
                     userId:
-                        user.uid,
+                        userId,
 
                     fullName:
                         document
@@ -1161,28 +1125,29 @@ document
                     status:
                         "pending",
 
-                    /* SCREENSHOT */
+                    /*
+                     * PAYMENT SCREENSHOT
+                     */
 
-                    screenshotURL:
+                    paymentScreenshotURL:
                         screenshotURL,
 
-                    screenshotPath:
-                        filePath,
+                    paymentScreenshotPath:
+                        storagePath,
 
-                    screenshotName:
-                        file.name,
+                    paymentScreenshotName:
+                        screenshot.name,
 
-                    screenshotType:
-                        file.type,
+                    paymentScreenshotType:
+                        screenshot.type,
 
-                    screenshotSize:
-                        file.size,
+                    paymentScreenshotSize:
+                        screenshot.size,
 
                     submittedAt:
                         serverTimestamp()
 
                 };
-
 
 
                 /* =================================
@@ -1199,9 +1164,8 @@ document
                     );
 
 
-
                 /* =================================
-                   SAVE REGISTRATION ID
+                   SAVE REGISTRATION ID LOCALLY
                 ================================= */
 
                 sessionStorage.setItem(
@@ -1210,24 +1174,24 @@ document
                 );
 
 
-
                 /* =================================
-                   SHOW VERIFICATION
+                   HIDE PAYMENT
                 ================================= */
 
                 paymentStep.style.display =
                     "none";
 
 
-                if (
-                    verificationStep
-                ) {
+                /* =================================
+                   SHOW VERIFICATION
+                ================================= */
+
+                if (verificationStep) {
 
                     verificationStep.style.display =
                         "block";
 
                 }
-
 
 
                 /* =================================
@@ -1238,16 +1202,13 @@ document
                     .classList
                     .remove("active");
 
-
                 stepIndicator3
                     .classList
                     .add("completed");
 
-
                 stepIndicator4
                     .classList
                     .add("active");
-
 
 
                 window.scrollTo({
@@ -1265,14 +1226,54 @@ document
                 );
 
 
-                alert(
-                    "We could not upload your payment screenshot or submit your registration. Please try again."
-                );
+                /*
+                 * FRIENDLY FIREBASE STORAGE ERRORS
+                 */
+
+                if (
+                    error.code ===
+                    "storage/unauthorized"
+                ) {
+
+                    alert(
+                        "Screenshot upload was denied by Firebase Storage rules. Please check your Firebase Storage rules."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    "storage/canceled"
+                ) {
+
+                    alert(
+                        "Screenshot upload was canceled. Please try again."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    "storage/quota-exceeded"
+                ) {
+
+                    alert(
+                        "Firebase Storage quota has been exceeded."
+                    );
+
+                }
+
+                else {
+
+                    alert(
+                        "We could not submit your registration. Please try again."
+                    );
+
+                }
 
 
                 button.disabled =
                     false;
-
 
                 button.innerHTML =
                     'Submit Payment <span>→</span>';
