@@ -1,10 +1,8 @@
 /* =========================================
    UNIQUE ACADEMIC
    ADMIN PANEL
-   Firebase + Cloud Firestore
-
-   Registration Management
-   + Payment Screenshot Viewer
+   Firebase Authentication + Firestore
+   Payment Screenshot Viewer
 ========================================= */
 
 import {
@@ -12,14 +10,12 @@ import {
     auth
 } from "./firebase-config.js";
 
-
 import {
     collection,
     getDocs,
     doc,
     updateDoc
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
-
 
 import {
     onAuthStateChanged,
@@ -44,30 +40,25 @@ const registrationList =
         "registrationList"
     );
 
-
 const totalCount =
     document.getElementById(
         "totalCount"
     );
-
 
 const pendingCount =
     document.getElementById(
         "pendingCount"
     );
 
-
 const approvedCount =
     document.getElementById(
         "approvedCount"
     );
 
-
 const rejectedCount =
     document.getElementById(
         "rejectedCount"
     );
-
 
 const logoutBtn =
     document.getElementById(
@@ -76,18 +67,23 @@ const logoutBtn =
 
 
 /* =========================================
-   CHECK ADMIN
+   CHECK REQUIRED HTML
+========================================= */
+
+if (!registrationList) {
+    console.error(
+        "Admin error: registrationList was not found."
+    );
+}
+
+
+/* =========================================
+   CHECK ADMIN USER
 ========================================= */
 
 onAuthStateChanged(
     auth,
     async (user) => {
-
-        /*
-        =====================================
-        NOT LOGGED IN
-        =====================================
-        */
 
         if (!user) {
 
@@ -99,10 +95,8 @@ onAuthStateChanged(
 
 
         /*
-        =====================================
-        CHECK ADMIN EMAIL
-        =====================================
-        */
+         * ADMIN EMAIL CHECK
+         */
 
         if (
             !user.email ||
@@ -114,22 +108,18 @@ onAuthStateChanged(
                 "❌ Admin access required."
             );
 
-
             window.location.href =
                 "index.html";
-
 
             return;
         }
 
 
         /*
-        =====================================
-        ADMIN VERIFIED
-        =====================================
-        */
+         * ADMIN VERIFIED
+         */
 
-        loadRegistrations();
+        await loadRegistrations();
 
     }
 );
@@ -143,6 +133,25 @@ async function loadRegistrations() {
 
     try {
 
+        /*
+         * SHOW LOADING
+         */
+
+        registrationList.innerHTML = `
+
+            <div class="loading">
+
+                ⏳ Loading registrations...
+
+            </div>
+
+        `;
+
+
+        /*
+         * GET FIRESTORE DATA
+         */
+
         const snapshot =
             await getDocs(
                 collection(
@@ -152,9 +161,9 @@ async function loadRegistrations() {
             );
 
 
-        /* =================================
-           COUNTERS
-        ================================= */
+        /*
+         * COUNTERS
+         */
 
         let total = 0;
 
@@ -165,32 +174,54 @@ async function loadRegistrations() {
         let rejected = 0;
 
 
-        registrationList.innerHTML =
-            "";
+        /*
+         * CLEAR LIST
+         */
+
+        registrationList.innerHTML = "";
 
 
-        /* =================================
-           NO REGISTRATIONS
-        ================================= */
+        /*
+         * NO REGISTRATIONS
+         */
 
         if (snapshot.empty) {
 
             registrationList.innerHTML = `
 
-                <div class="loading">
+                <div class="empty-state">
 
-                    📭 No registrations yet.
+                    <div class="empty-state-icon">
+                        📭
+                    </div>
+
+                    <h3>
+                        No registrations yet
+                    </h3>
+
+                    <p>
+                        Student registrations will appear here.
+                    </p>
 
                 </div>
 
             `;
 
+
+            updateCounters(
+                0,
+                0,
+                0,
+                0
+            );
+
+            return;
         }
 
 
-        /* =================================
-           DISPLAY REGISTRATIONS
-        ================================= */
+        /*
+         * LOOP THROUGH REGISTRATIONS
+         */
 
         snapshot.forEach(
             (registrationDoc) => {
@@ -203,21 +234,13 @@ async function loadRegistrations() {
 
 
                 /*
-                =================================
-                STATUS
-                =================================
-                */
+                 * STATUS
+                 */
 
                 const status =
                     data.status ||
                     "pending";
 
-
-                /*
-                =================================
-                COUNT STATUS
-                =================================
-                */
 
                 if (
                     status === "pending"
@@ -227,8 +250,7 @@ async function loadRegistrations() {
 
                 }
 
-
-                if (
+                else if (
                     status === "approved"
                 ) {
 
@@ -236,8 +258,7 @@ async function loadRegistrations() {
 
                 }
 
-
-                if (
+                else if (
                     status === "rejected"
                 ) {
 
@@ -246,45 +267,28 @@ async function loadRegistrations() {
                 }
 
 
-                /* =================================
-                   PAYMENT SCREENSHOT
-                =================================
-
-                   IMPORTANT:
-
-                   registration.js saves:
-
-                   paymentScreenshotURL
-
-                   So admin.js must read:
-
-                   data.paymentScreenshotURL
-                ================================= */
+                /*
+                 * SCREENSHOT
+                 *
+                 * IMPORTANT:
+                 * registration.js saves:
+                 *
+                 * paymentScreenshotURL
+                 *
+                 */
 
                 let screenshotHTML = `
 
-                    <div
-                        class="payment-screenshot"
-                        style="
-                            margin-top:15px;
-                            padding:14px;
-                            border-radius:10px;
-                            background:#f8fafc;
-                            border:1px solid #e5e7eb;
-                        "
-                    >
+                    <div class="screenshot-section">
 
-                        <strong>
+                        <h4>
                             📷 Payment Screenshot
-                        </strong>
+                        </h4>
 
-                        <div
-                            style="
-                                margin-top:8px;
-                                color:#64748b;
-                            "
-                        >
-                            Screenshot not uploaded.
+                        <div class="no-screenshot">
+
+                            No payment screenshot uploaded.
+
                         </div>
 
                     </div>
@@ -293,10 +297,8 @@ async function loadRegistrations() {
 
 
                 /*
-                =================================
-                SCREENSHOT EXISTS
-                =================================
-                */
+                 * SCREENSHOT EXISTS
+                 */
 
                 if (
                     data.paymentScreenshotURL
@@ -310,65 +312,38 @@ async function loadRegistrations() {
 
                     screenshotHTML = `
 
-                        <div
-                            class="payment-screenshot"
-                            style="
-                                margin-top:15px;
-                                padding:14px;
-                                border-radius:10px;
-                                background:#f8fafc;
-                                border:1px solid #e5e7eb;
-                            "
-                        >
+                        <div class="screenshot-section">
 
-                            <strong>
+                            <h4>
                                 📷 Payment Screenshot
-                            </strong>
+                            </h4>
 
-
-                            <div
-                                style="
-                                    margin-top:10px;
-                                "
-                            >
-
-                                <a
-                                    href="${escapeHTML(
+                            <button
+                                type="button"
+                                class="view-screenshot-btn"
+                                onclick="openScreenshot(
+                                    ${JSON.stringify(
                                         screenshotURL
-                                    )}"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="screenshot-btn"
-                                    style="
-                                        display:inline-block;
-                                        text-decoration:none;
-                                        background:#2563eb;
-                                        color:white;
-                                        padding:10px 15px;
-                                        border-radius:8px;
-                                        font-weight:bold;
-                                    "
-                                >
-
-                                    🔍 View Screenshot
-
-                                </a>
-
-                            </div>
-
-
-                            <div
-                                style="
-                                    margin-top:8px;
-                                    color:#64748b;
-                                    font-size:13px;
-                                "
+                                    )}
+                                )"
                             >
+                                🔍 View Screenshot
+                            </button>
 
-                                Tap the button to view
-                                the student's payment screenshot.
 
-                            </div>
+                            <img
+                                class="screenshot-preview"
+                                src="${escapeHTML(
+                                    screenshotURL
+                                )}"
+                                alt="Student payment screenshot"
+                                loading="lazy"
+                                onclick="openScreenshot(
+                                    ${JSON.stringify(
+                                        screenshotURL
+                                    )}
+                                )"
+                            >
 
                         </div>
 
@@ -377,9 +352,105 @@ async function loadRegistrations() {
                 }
 
 
-                /* =================================
-                   STUDENT CARD
-                ================================= */
+                /*
+                 * REJECTION REASON
+                 */
+
+                let rejectionHTML = "";
+
+
+                if (
+                    status === "rejected" &&
+                    data.rejectionReason
+                ) {
+
+                    rejectionHTML = `
+
+                        <div class="rejection-box">
+
+                            <strong>
+                                Rejection Reason
+                            </strong>
+
+                            ${escapeHTML(
+                                data.rejectionReason
+                            )}
+
+                        </div>
+
+                    `;
+
+                }
+
+
+                /*
+                 * ACTION BUTTONS
+                 */
+
+                let actionHTML = "";
+
+
+                if (
+                    status === "pending"
+                ) {
+
+                    actionHTML = `
+
+                        <div class="actions">
+
+                            <button
+                                type="button"
+                                class="approve-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+                                ✅ Approve
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="reject-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+                                ❌ Reject
+                            </button>
+
+                        </div>
+
+                    `;
+
+                }
+
+
+                /*
+                 * PAYMENT INFORMATION
+                 */
+
+                const paymentMethod =
+                    data.paymentMethod ||
+                    "—";
+
+                const paymentReference =
+                    data.paymentReference ||
+                    "—";
+
+                const amount =
+                    data.amount !== undefined
+                        ? data.amount
+                        : 300;
+
+                const currency =
+                    data.currency ||
+                    "ETB";
+
+
+                /*
+                 * STUDENT CARD
+                 */
 
                 const card =
                     document.createElement(
@@ -406,7 +477,6 @@ async function loadRegistrations() {
                     <div class="student-info">
 
                         📧 Email:
-
                         ${escapeHTML(
                             data.email ||
                             "—"
@@ -416,7 +486,6 @@ async function loadRegistrations() {
 
 
                         📱 Phone:
-
                         ${escapeHTML(
                             data.phone ||
                             "—"
@@ -426,7 +495,6 @@ async function loadRegistrations() {
 
 
                         🎓 University:
-
                         ${escapeHTML(
                             data.university ||
                             "—"
@@ -436,66 +504,78 @@ async function loadRegistrations() {
 
 
                         📚 Department:
-
                         ${escapeHTML(
                             data.department ||
                             "—"
                         )}
 
-                        <br>
+                    </div>
 
 
-                        💳 Payment Method:
+                    <!-- =====================
+                         PAYMENT INFORMATION
+                    ====================== -->
 
-                        <strong>
+                    <div class="payment-info">
 
-                            ${escapeHTML(
-                                data.paymentMethod ||
-                                "—"
-                            )}
+                        <div class="payment-info-title">
 
-                        </strong>
+                            💳 Payment Information
 
-                        <br>
-
-
-                        💰 Amount:
-
-                        <strong>
-
-                            ${escapeHTML(
-                                String(
-                                    data.amount ||
-                                    300
-                                )
-                            )}
-
-                            ${escapeHTML(
-                                data.currency ||
-                                "ETB"
-                            )}
-
-                        </strong>
-
-                        <br>
+                        </div>
 
 
-                        🔢 Payment Reference:
+                        <p>
 
-                        <strong>
+                            Payment Method:
+                            <strong>
+                                ${escapeHTML(
+                                    paymentMethod
+                                )}
+                            </strong>
 
-                            ${escapeHTML(
-                                data.paymentReference ||
-                                "—"
-                            )}
+                        </p>
 
-                        </strong>
+
+                        <p>
+
+                            Amount:
+                            <strong>
+                                ${escapeHTML(
+                                    String(amount)
+                                )}
+                                ${escapeHTML(
+                                    currency
+                                )}
+                            </strong>
+
+                        </p>
+
+
+                        <p>
+
+                            Payment Reference:
+                            <strong>
+                                ${escapeHTML(
+                                    paymentReference
+                                )}
+                            </strong>
+
+                        </p>
 
                     </div>
 
 
+                    <!-- =====================
+                         SCREENSHOT
+                    ====================== -->
+
                     ${screenshotHTML}
 
+
+                    <!-- =====================
+                         STATUS
+                    ====================== -->
 
                     <br>
 
@@ -513,83 +593,18 @@ async function loadRegistrations() {
                     </span>
 
 
-                    ${
-                        status === "rejected" &&
-                        data.rejectionReason
-                        ?
+                    <!-- =====================
+                         REJECTION REASON
+                    ====================== -->
 
-                        `
-
-                        <div
-                            style="
-                                margin-top:10px;
-                                padding:12px;
-                                background:#fee2e2;
-                                color:#991b1b;
-                                border-radius:8px;
-                            "
-                        >
-
-                            <strong>
-                                ❌ Rejection Reason:
-                            </strong>
-
-                            <br>
-
-                            ${escapeHTML(
-                                data.rejectionReason
-                            )}
-
-                        </div>
-
-                        `
-
-                        :
-
-                        ""
-                    }
+                    ${rejectionHTML}
 
 
-                    <div class="actions">
+                    <!-- =====================
+                         ACTIONS
+                    ====================== -->
 
-                        ${
-                            status === "pending"
-
-                            ?
-
-                            `
-
-                            <button
-                                class="approve-btn"
-                                data-id="${escapeHTML(
-                                    registrationDoc.id
-                                )}"
-                            >
-
-                                ✅ Approve
-
-                            </button>
-
-
-                            <button
-                                class="reject-btn"
-                                data-id="${escapeHTML(
-                                    registrationDoc.id
-                                )}"
-                            >
-
-                                ❌ Reject
-
-                            </button>
-
-                            `
-
-                            :
-
-                            ""
-                        }
-
-                    </div>
+                    ${actionHTML}
 
                 `;
 
@@ -602,29 +617,21 @@ async function loadRegistrations() {
         );
 
 
-        /* =================================
-           UPDATE COUNTERS
-        ================================= */
+        /*
+         * UPDATE COUNTERS
+         */
 
-        totalCount.textContent =
-            total;
-
-
-        pendingCount.textContent =
-            pending;
-
-
-        approvedCount.textContent =
-            approved;
+        updateCounters(
+            total,
+            pending,
+            approved,
+            rejected
+        );
 
 
-        rejectedCount.textContent =
-            rejected;
-
-
-        /* =================================
-           ACTION BUTTONS
-        ================================= */
+        /*
+         * ADD BUTTON EVENTS
+         */
 
         addActionListeners();
 
@@ -661,15 +668,60 @@ async function loadRegistrations() {
 
 
 /* =========================================
-   ACTION BUTTONS
+   UPDATE COUNTERS
+========================================= */
+
+function updateCounters(
+    total,
+    pending,
+    approved,
+    rejected
+) {
+
+    if (totalCount) {
+
+        totalCount.textContent =
+            total;
+
+    }
+
+
+    if (pendingCount) {
+
+        pendingCount.textContent =
+            pending;
+
+    }
+
+
+    if (approvedCount) {
+
+        approvedCount.textContent =
+            approved;
+
+    }
+
+
+    if (rejectedCount) {
+
+        rejectedCount.textContent =
+            rejected;
+
+    }
+
+}
+
+
+/* =========================================
+   ACTION BUTTON LISTENERS
 ========================================= */
 
 function addActionListeners() {
 
 
-    /* =================================
-       APPROVE BUTTONS
-    ================================= */
+    /*
+     * APPROVE BUTTONS
+     */
 
     document
         .querySelectorAll(
@@ -678,22 +730,24 @@ function addActionListeners() {
         .forEach(
             (button) => {
 
-                button.onclick =
+                button.addEventListener(
+                    "click",
                     () => {
 
                         approveRegistration(
                             button.dataset.id
                         );
 
-                    };
+                    }
+                );
 
             }
         );
 
 
-    /* =================================
-       REJECT BUTTONS
-    ================================= */
+    /*
+     * REJECT BUTTONS
+     */
 
     document
         .querySelectorAll(
@@ -702,14 +756,16 @@ function addActionListeners() {
         .forEach(
             (button) => {
 
-                button.onclick =
+                button.addEventListener(
+                    "click",
                     () => {
 
                         rejectRegistration(
                             button.dataset.id
                         );
 
-                    };
+                    }
+                );
 
             }
         );
@@ -762,7 +818,7 @@ async function approveRegistration(
         );
 
 
-        loadRegistrations();
+        await loadRegistrations();
 
     }
 
@@ -798,7 +854,7 @@ async function rejectRegistration(
 
 
     if (
-        !reason ||
+        reason === null ||
         reason.trim() === ""
     ) {
 
@@ -836,7 +892,7 @@ async function rejectRegistration(
         );
 
 
-        loadRegistrations();
+        await loadRegistrations();
 
     }
 
@@ -849,7 +905,7 @@ async function rejectRegistration(
 
 
         alert(
-            "❌ Failed to reject registration."
+            "❌ Failed to reject student."
         );
 
     }
@@ -861,7 +917,9 @@ async function rejectRegistration(
    ESCAPE HTML
 ========================================= */
 
-function escapeHTML(value) {
+function escapeHTML(
+    value
+) {
 
     return String(value)
 
@@ -897,28 +955,37 @@ function escapeHTML(value) {
    LOGOUT
 ========================================= */
 
-logoutBtn.onclick =
-    async () => {
+if (logoutBtn) {
 
-        try {
+    logoutBtn.addEventListener(
+        "click",
+        async () => {
 
-            await signOut(
-                auth
-            );
+            try {
+
+                await signOut(auth);
 
 
-            window.location.href =
-                "login.html";
+                window.location.href =
+                    "login.html";
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Logout error:",
+                    error
+                );
+
+
+                alert(
+                    "❌ Logout failed. Please try again."
+                );
+
+            }
 
         }
+    );
 
-        catch (error) {
-
-            console.error(
-                "Logout error:",
-                error
-            );
-
-        }
-
-    };
+}
