@@ -17,8 +17,7 @@ import {
 
 const firebaseConfig = {
 
-    apiKey:
-        "AIzaSyBP9_sR3Ss1Wu7dfz-2bKpiKAI7iQJv-Ik",
+    apiKey: "AIzaSyBP9_sR3Ss1Wu7dfz-2bKpiKAI7iQJv-Ik",
 
     authDomain:
         "unique-academic.firebaseapp.com",
