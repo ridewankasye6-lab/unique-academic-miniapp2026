@@ -2635,54 +2635,362 @@ body.dark .settingsHeader button {
     background: #292929;
 
 }
-/* =========================================
-   GLOBAL DARK MODE
-========================================= */
+/* =====================================================
+   UNIQUE ACADEMIC — GLOBAL DARK MODE
+   Works with settings.html localStorage
+===================================================== */
 
 body.dark-mode {
     background: #0f172a;
     color: #f8fafc;
 }
 
-/* Header */
-body.dark-mode header,
-body.dark-mode .header,
-body.dark-mode .navbar {
-    background: #111827;
-    color: #f8fafc;
-}
 
-/* Main text */
+/* =====================================================
+   NORMAL TEXT
+===================================================== */
+
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode p,
-body.dark-mode span {
+body.dark-mode h4 {
     color: #f8fafc;
 }
 
-/* Cards */
+body.dark-mode p {
+    color: #cbd5e1;
+}
+
+
+/* =====================================================
+   MAIN CARDS
+===================================================== */
+
 body.dark-mode .card,
-body.dark-mode .subject-card,
-body.dark-mode .chapter-card,
-body.dark-mode .content-card {
+body.dark-mode .dashCard,
+body.dark-mode .statBox,
+body.dark-mode .quiz-card,
+body.dark-mode .question-box {
     background: #1e293b;
     color: #f8fafc;
     border-color: #334155;
 }
 
-/* Links */
-body.dark-mode a {
-    color: #93c5fd;
+body.dark-mode .card p,
+body.dark-mode .dashCard p,
+body.dark-mode .statBox p {
+    color: #cbd5e1;
 }
 
-/* Buttons */
-body.dark-mode button {
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+body.dark-mode .dashCard a {
     color: #f8fafc;
 }
 
-/* Inputs */
+body.dark-mode .dashCard a:hover {
+    color: #60a5fa;
+}
+
+
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+
+body.dark-mode #search {
+    background: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #475569;
+}
+
+body.dark-mode #search::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode #search:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow:
+        0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+
+/* =====================================================
+   SUBJECT CARDS
+===================================================== */
+
+body.dark-mode .subjectCard {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+body.dark-mode .subjectCard h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .subjectCard p {
+    color: #cbd5e1;
+}
+
+
+/* =====================================================
+   BOOKMARK BUTTON
+===================================================== */
+
+body.dark-mode .bookmarkBtn {
+    background: #f59e0b;
+    color: #111827;
+}
+
+body.dark-mode .bookmarkBtn:hover {
+    background: #fbbf24;
+}
+
+
+/* =====================================================
+   MAIN BLUE BUTTONS
+===================================================== */
+
+body.dark-mode .button,
+body.dark-mode .startBtn {
+    background: #2563eb;
+    color: white;
+}
+
+body.dark-mode .button:hover,
+body.dark-mode .startBtn:hover {
+    background: #3b82f6;
+}
+
+
+/* =====================================================
+   HEADER
+   Keep header blue in BOTH modes
+===================================================== */
+
+body.dark-mode .mainHeader {
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #1d4ed8
+        );
+
+    color: white;
+}
+
+
+/* Brand text must stay white */
+
+body.dark-mode .headerBrand h1,
+body.dark-mode .headerBrand p {
+    color: white;
+}
+
+
+/* Header profile/login icon */
+
+body.dark-mode .headerProfile {
+    background: rgba(255,255,255,.15);
+    color: white;
+    border-color: rgba(255,255,255,.3);
+}
+
+
+/* Header logo */
+
+body.dark-mode .headerLogo {
+    background: white;
+    color: #111827;
+}
+
+
+/* =====================================================
+   SIDE MENU
+===================================================== */
+
+body.dark-mode .sideMenu {
+    background: #111827;
+    color: #f8fafc;
+}
+
+
+/* Menu profile remains blue */
+
+body.dark-mode .menuProfile {
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #172554,
+            #6d28d9
+        );
+
+    color: white;
+}
+
+
+/* Profile text */
+
+body.dark-mode .profileInfo h3,
+body.dark-mode .profileInfo p {
+    color: white;
+}
+
+
+/* Menu items */
+
+body.dark-mode .menuItem {
+    background: transparent;
+    color: #f8fafc;
+}
+
+
+/* Menu hover */
+
+body.dark-mode .menuItem:hover {
+    background: #1e293b;
+    color: #60a5fa;
+}
+
+
+/* Menu icons */
+
+body.dark-mode .menuIcon {
+    background: #1e293b;
+}
+
+
+/* Menu arrows */
+
+body.dark-mode .menuArrow {
+    color: #94a3b8;
+}
+
+
+/* Logout */
+
+body.dark-mode .menuBottom {
+    border-top-color: #334155;
+}
+
+body.dark-mode .logoutItem {
+    background: #321b1b;
+    color: #f87171;
+}
+
+body.dark-mode .logoutItem .menuIcon {
+    background: #452222;
+}
+
+body.dark-mode .logoutItem .menuArrow {
+    color: #f87171;
+}
+
+
+/* Menu version */
+
+body.dark-mode .menuVersion {
+    color: #94a3b8;
+}
+
+body.dark-mode .menuVersion small {
+    color: #64748b;
+}
+
+
+/* =====================================================
+   SUBJECT PAGE NAVIGATION
+===================================================== */
+
+body.dark-mode .pageNav {
+    background: rgba(15, 23, 42, 0.96);
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .pageTitle h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .pageTitle p {
+    color: #94a3b8;
+}
+
+body.dark-mode .pageBackBtn {
+    background: #1e3a8a;
+    color: #bfdbfe;
+}
+
+
+/* Home button remains blue */
+
+body.dark-mode .pageHomeBtn {
+    color: white;
+}
+
+
+/* =====================================================
+   QUIZ CARDS
+===================================================== */
+
+body.dark-mode .quiz-info h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .quiz-badge {
+    background: #1e3a8a;
+    color: #bfdbfe;
+}
+
+body.dark-mode .quiz-progress {
+    background: #1e293b;
+    color: #60a5fa;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+body.dark-mode footer {
+    background: #020617;
+    color: #cbd5e1;
+}
+
+
+/* =====================================================
+   NOTES
+===================================================== */
+
+body.dark-mode .note {
+    background: #422006;
+    color: #fef3c7;
+}
+
+
+/* =====================================================
+   LOGIN / REGISTER BUTTONS
+===================================================== */
+
+body.dark-mode .registerBtn {
+    background: white;
+    color: #1e3a8a;
+}
+
+body.dark-mode .loginBtn {
+    background: #2563eb;
+    color: white;
+    border-color: white;
+}
+
+
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
@@ -2691,10 +2999,49 @@ body.dark-mode select {
     border-color: #475569;
 }
 
-/* Mobile menu */
-body.dark-mode .mobile-menu,
-body.dark-mode .menu,
-body.dark-mode .sidebar {
-    background: #111827;
-    color: #f8fafc;
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =====================================================
+   GLOBAL LINKS
+   Don't override buttons or menu items
+===================================================== */
+
+body.dark-mode a:not(.button):not(.menuItem):not(.headerProfile):not(.pageHomeBtn) {
+    color: #60a5fa;
+}
+
+
+/* =====================================================
+   LOGIN / PROFILE VISIBILITY FIX
+===================================================== */
+
+body.dark-mode .headerProfile span {
+    color: white;
+}
+
+
+/* =====================================================
+   LIGHT MODE PROTECTION
+===================================================== */
+
+body:not(.dark-mode) .loginBtn {
+    color: white;
+}
+
+body:not(.dark-mode) .registerBtn {
+    color: #1e3a8a;
+}
+
+body:not(.dark-mode) .menuItem {
+    color: #333;
+}
+
+body:not(.dark-mode) .menuProfile,
+body:not(.dark-mode) .menuProfile h3,
+body:not(.dark-mode) .menuProfile p {
+    color: white;
 }
