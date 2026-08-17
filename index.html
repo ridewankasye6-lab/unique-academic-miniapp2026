@@ -26,7 +26,24 @@
 
 
 <body>
+<script>
+    (function () {
+        const savedSettings =
+            localStorage.getItem("uniqueAcademicSettings");
 
+        if (!savedSettings) return;
+
+        try {
+            const settings = JSON.parse(savedSettings);
+
+            if (settings.darkMode === true) {
+                document.body.classList.add("dark-mode");
+            }
+        } catch (error) {
+            console.error("Unable to load theme:", error);
+        }
+    })();
+</script>
 
 <!-- =====================================================
      MOBILE MENU BUTTON
