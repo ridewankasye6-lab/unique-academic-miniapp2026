@@ -1,1996 +1,2047 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Unique Academic - Learn smarter with university notes, quizzes, PDFs and study tools."
-    >
-
-    <title>Unique Academic</title>
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
-</head>
-
-
-<body>
-
-
-<!-- =====================================================
-     LOAD SAVED THEME
-===================================================== -->
-
-<script>
-(function () {
-
-    const savedSettings =
-        localStorage.getItem("uniqueAcademicSettings");
-
-    if (!savedSettings) {
-        return;
-    }
-
-    try {
-
-        const settings =
-            JSON.parse(savedSettings);
-
-        if (
-            settings &&
-            settings.darkMode === true
-        ) {
-
-            document.body.classList.add(
-                "dark-mode"
-            );
-
-        }
-
-    } catch (error) {
-
-        console.error(
-            "Unable to load theme:",
-            error
-        );
-
-    }
-
-})();
-</script>
-
-
-
-<!-- =====================================================
-     MOBILE MENU BUTTON
-===================================================== -->
-
-<button
-    id="menuBtn"
-    class="menuBtn"
-    type="button"
-    aria-label="Open Menu"
-    aria-expanded="false"
-    aria-controls="sideMenu"
->
-    ☰
-</button>
-
-
-
-<!-- =====================================================
-     MENU OVERLAY
-===================================================== -->
-
-<div
-    id="menuOverlay"
-    class="menuOverlay"
-></div>
-
-
-
-<!-- =====================================================
-     SIDE MENU
-===================================================== -->
-
-<aside
-    id="sideMenu"
-    class="sideMenu"
-    aria-hidden="true"
->
-
-
-    <!-- ================= PROFILE ================= -->
-
-    <div class="menuProfile">
-
-        <div
-            id="menuProfilePhoto"
-            class="profileAvatar"
-        >
-            🎓
-        </div>
-
-
-        <div class="profileInfo">
-
-            <h3 id="menuUserName">
-                Unique Academic
-            </h3>
-
-
-            <p id="menuUserEmail">
-                Learning Platform
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- ================= MENU ITEMS ================= -->
-
-    <nav class="menuItems">
-
-
-        <!-- HOME -->
-
-        <a
-            href="index.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">
-                🏠
-            </span>
-
-            <span>
-                Home
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </a>
-
-
-
-        <!-- REFRESH -->
-
-        <button
-            id="refreshBtn"
-            class="menuItem menuButton"
-            type="button"
-        >
-
-            <span class="menuIcon">
-                🔄
-            </span>
-
-            <span>
-                Refresh
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </button>
-
-
-
-        <!-- PROFILE -->
-
-        <a
-            href="student-profile.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">
-                👤
-            </span>
-
-            <span>
-                Profile
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </a>
-
-
-
-        <!-- SHARE -->
-
-        <button
-            id="shareAppBtn"
-            class="menuItem menuButton"
-            type="button"
-        >
-
-            <span class="menuIcon">
-                📤
-            </span>
-
-            <span>
-                Share App
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </button>
-
-
-
-        <!-- OTHER APPS -->
-
-        <a
-            href="other-apps.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">
-                ▦
-            </span>
-
-            <span>
-                Other Apps
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </a>
-
-
-
-        <!-- HELP -->
-
-        <a
-            href="help.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">
-                ❓
-            </span>
-
-            <span>
-                Help
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </a>
-
-
-
-        <!-- ABOUT -->
-
-        <a
-            href="about.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">
-                ℹ️
-            </span>
-
-            <span>
-                About Us
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </a>
-
-
-
-        <!-- SETTINGS -->
-
-        <a
-            href="settings.html"
-            class="menuItem"
-        >
-
-            <span class="menuIcon">
-                ⚙️
-            </span>
-
-            <span>
-                Settings
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </a>
-
-
-    </nav>
-
-
-
-    <!-- =================================================
-         LOGOUT
-    ================================================= -->
-
-    <div class="menuBottom">
-
-
-        <button
-            id="logoutBtn"
-            class="logoutItem"
-            type="button"
-        >
-
-            <span class="menuIcon">
-                🚪
-            </span>
-
-            <span>
-                Logout
-            </span>
-
-            <span class="menuArrow">
-                ›
-            </span>
-
-        </button>
-
-
-
-        <div class="menuVersion">
-
-            Version 2.2.0
-
-            <br>
-
-            <small>
-                Developed by Unique Academic
-            </small>
-
-        </div>
-
-    </div>
-
-
-</aside>
-
-
-
-<!-- =====================================================
-     PROFESSIONAL HEADER
-===================================================== -->
-
-<header class="mainHeader">
-
-
-    <!-- HEADER MENU BUTTON -->
-
-    <button
-        id="headerMenuBtn"
-        class="menuBtn"
-        type="button"
-        aria-label="Open Menu"
-        aria-expanded="false"
-        aria-controls="sideMenu"
-    >
-        ☰
-    </button>
-
-
-
-    <!-- BRAND -->
-
-    <div class="headerBrand">
-
-
-        <div class="headerLogo">
-            🎓
-        </div>
-
-
-        <div>
-
-            <h1>
-                Unique Academic
-            </h1>
-
-
-            <p>
-                Learning Platform
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- PROFILE BUTTON -->
-
-    <a
-        href="student-profile.html"
-        id="headerProfile"
-        class="headerProfile"
-        aria-label="Student Profile"
-    >
-
-        <span id="headerProfilePhoto">
-            👤
-        </span>
-
-    </a>
-
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section class="hero">
-
-
-    <h2>
-        Welcome to Unique Academic 🎓
-    </h2>
-
-
-    <p>
-
-        Learn smarter with organized
-        university notes, summaries,
-        quizzes, and study tools.
-
-        Everything you need to succeed
-        at university is in one place.
-
-    </p>
-
-
-    <a
-        href="#subjects"
-        class="button"
-    >
-
-        🚀 Start Learning
-
-    </a>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     QUICK ACCESS
-===================================================== -->
-
-<section class="dashboard">
-
-
-    <h2>
-        ⚡ Quick Access
-    </h2>
-
-
-    <div class="dashboardGrid">
-
-
-        <!-- SUBJECTS -->
-
-        <div class="dashCard">
-
-            <a href="#subjects">
-
-                📚
-
-                <br>
-
-                Subjects
-
-            </a>
-
-        </div>
-
-
-
-        <!-- PDF -->
-
-        <div class="dashCard">
-
-            <a href="#pdf-library">
-
-                📄
-
-                <br>
-
-                PDF Library
-
-            </a>
-
-        </div>
-
-
-
-        <!-- VIDEOS -->
-
-        <div class="dashCard">
-
-            <a href="#video-library">
-
-                🎥
-
-                <br>
-
-                Videos
-
-            </a>
-
-        </div>
-
-
-
-        <!-- QUIZ -->
-
-        <div class="dashCard">
-
-            <a href="#subjects">
-
-                ❓
-
-                <br>
-
-                Quiz
-
-            </a>
-
-        </div>
-
-
-
-        <!-- BOOKMARK -->
-
-        <div class="dashCard">
-
-            <a href="#bookmarks">
-
-                ⭐
-
-                <br>
-
-                Bookmarks
-
-            </a>
-
-        </div>
-
-
-
-        <!-- PROFILE -->
-
-        <div class="dashCard">
-
-            <a href="student-profile.html">
-
-                👤
-
-                <br>
-
-                Profile
-
-            </a>
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTINUE LEARNING
-===================================================== -->
-
-<section class="card">
-
-
-    <h2>
-        📖 Continue Learning
-    </h2>
-
-
-    <p id="continueText">
-
-        You haven't opened any subject yet.
-
-    </p>
-
-
-    <a
-        id="continueBtn"
-        class="button"
-        href="#subjects"
-    >
-
-        Start Learning
-
-    </a>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     SEARCH
-===================================================== -->
-
-<div class="searchContainer">
-
-    <input
-        type="text"
-        id="search"
-        placeholder="🔍 Search a subject..."
-        aria-label="Search subjects"
-        autocomplete="off"
-    >
-
-</div>
-
-
-
-<!-- =====================================================
-     SUBJECT TITLE
-===================================================== -->
-
-<h2 id="subjects">
-
-    📚 First-Year Courses (2019 E.C.)
-
-</h2>
-
-
-
-<!-- =====================================================
-     ENGLISH SKILL I
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="English Skill I"
->
-
-    <h3>
-        📘 English Skill I
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="english1.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="English Skill I"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     ECONOMICS
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Economics"
->
-
-    <h3>
-        📈 Economics
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="economics.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Economics"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     HISTORY
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="History"
->
-
-    <h3>
-        📜 History
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="history.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="History"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     ENTREPRENEURSHIP
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Entrepreneurship"
->
-
-    <h3>
-        💼 Entrepreneurship
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="entrepreneurship.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Entrepreneurship"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     ANTHROPOLOGY
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Anthropology"
->
-
-    <h3>
-        🧑‍🤝‍🧑 Anthropology
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="anthropology.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Anthropology"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     EMERGING TECHNOLOGY
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Emerging Technology"
->
-
-    <h3>
-        💻 Emerging Technology
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="emerging-technology.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Emerging Technology"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     GLOBAL TRENDS
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Global Trends"
->
-
-    <h3>
-        🌍 Global Trends
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="global-trends.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Global Trends"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     ENGLISH SKILL II
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="English Skill II"
->
-
-    <h3>
-        🇬🇧 English Skill II
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="english2.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="English Skill II"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     PSYCHOLOGY
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Psychology"
->
-
-    <h3>
-        🧠 Psychology
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="psychology.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Psychology"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     LOGIC
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Logic"
->
-
-    <h3>
-        ⚖️ Logic
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="logic.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Logic"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     GEOGRAPHY
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Geography"
->
-
-    <h3>
-        🌍 Geography
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="geography.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Geography"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     CIVIC EDUCATION
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="Civic Education"
->
-
-    <h3>
-        🏛 Civic Education
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-
-    <a
-        class="button"
-        href="civic.html"
-    >
-
-        📖 Open
-
-    </a>
-
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Civic Education"
-    >
-
-        ⭐ Bookmark
-
-    </button>
-
-</div>
-
-
-
-<!-- =====================================================
-     FUTURE SECTIONS
-===================================================== -->
-
-<div
-    id="pdf-library"
-    style="display:none;"
-></div>
-
-
-<div
-    id="video-library"
-    style="display:none;"
-></div>
-
-
-<div
-    id="bookmarks"
-    style="display:none;"
-></div>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <p>
-
-        © 2026 Unique Academic
-
-        |
-
-        Learn. Understand. Succeed.
-
-    </p>
-
-</footer>
-
-
-
-<!-- =====================================================
-     MENU JAVASCRIPT
-===================================================== -->
-
-<script>
-
-(function () {
-
-
 /* =====================================================
-   ELEMENTS
+   UNIQUE ACADEMIC
+   GLOBAL STYLES
 ===================================================== */
 
-const menuBtn =
-    document.getElementById("menuBtn");
-
-
-const headerMenuBtn =
-    document.getElementById("headerMenuBtn");
-
-
-const sideMenu =
-    document.getElementById("sideMenu");
-
-
-const menuOverlay =
-    document.getElementById("menuOverlay");
-
-
-
 /* =====================================================
-   OPEN MENU
+   RESET
 ===================================================== */
 
-function openMenu() {
+* {
+    box-sizing: border-box;
+}
 
-    if (
-        !sideMenu ||
-        !menuOverlay
-    ) {
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-        return;
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.8;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
 
-    }
-
-
-    sideMenu.classList.add(
-        "active"
-    );
-
-
-    menuOverlay.classList.add(
-        "active"
-    );
-
-
-    if (menuBtn) {
-
-        menuBtn.setAttribute(
-            "aria-expanded",
-            "true"
-        );
-
-    }
-
-
-    if (headerMenuBtn) {
-
-        headerMenuBtn.setAttribute(
-            "aria-expanded",
-            "true"
-        );
-
-    }
-
-
-    sideMenu.setAttribute(
-        "aria-hidden",
-        "false"
-    );
-
-
-    document.body.classList.add(
-        "menu-open"
-    );
-
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
 }
 
 
-
 /* =====================================================
-   CLOSE MENU
+   HEADER
 ===================================================== */
 
-function closeMenu() {
-
-    if (
-        !sideMenu ||
-        !menuOverlay
-    ) {
-
-        return;
-
-    }
-
-
-    sideMenu.classList.remove(
-        "active"
-    );
-
-
-    menuOverlay.classList.remove(
-        "active"
-    );
-
-
-    if (menuBtn) {
-
-        menuBtn.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-    }
-
-
-    if (headerMenuBtn) {
-
-        headerMenuBtn.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-    }
-
-
-    sideMenu.setAttribute(
-        "aria-hidden",
-        "true"
-    );
-
-
-    document.body.classList.remove(
-        "menu-open"
-    );
-
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 
 
-
 /* =====================================================
-   TOGGLE MENU
+   GENERAL CARDS
 ===================================================== */
 
-function toggleMenu() {
-
-    if (
-        !sideMenu
-    ) {
-
-        return;
-
-    }
-
-
-    if (
-        sideMenu.classList.contains(
-            "active"
-        )
-    ) {
-
-        closeMenu();
-
-    } else {
-
-        openMenu();
-
-    }
-
+.card {
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
-
 /* =====================================================
-   MENU BUTTON
+   BUTTONS
 ===================================================== */
 
-if (menuBtn) {
+.button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.25s ease;
+}
 
-    menuBtn.addEventListener(
-        "click",
-        toggleMenu
-    );
-
+.button:hover {
+    background: #1d4ed8;
 }
 
 
-
 /* =====================================================
-   HEADER MENU BUTTON
+   FOOTER
 ===================================================== */
 
-if (headerMenuBtn) {
-
-    headerMenuBtn.addEventListener(
-        "click",
-        toggleMenu
-    );
-
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 30px;
 }
 
 
-
 /* =====================================================
-   OVERLAY
+   HERO
 ===================================================== */
 
-if (menuOverlay) {
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-    menuOverlay.addEventListener(
-        "click",
-        closeMenu
-    );
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
 
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
 }
 
 
-
 /* =====================================================
-   ESC KEY
+   START BUTTON
 ===================================================== */
 
-document.addEventListener(
-    "keydown",
-    function (event) {
-
-        if (
-            event.key === "Escape"
-        ) {
-
-            closeMenu();
-
-        }
-
-    }
-);
-
-
-
-/* =====================================================
-   CLOSE MENU AFTER LINK CLICK
-===================================================== */
-
-const menuLinks =
-    document.querySelectorAll(
-        ".sideMenu a"
-    );
-
-
-menuLinks.forEach(
-    function (link) {
-
-        link.addEventListener(
-            "click",
-            closeMenu
-        );
-
-    }
-);
-
-
-
-/* =====================================================
-   REFRESH
-===================================================== */
-
-const refreshBtn =
-    document.getElementById(
-        "refreshBtn"
-    );
-
-
-if (refreshBtn) {
-
-    refreshBtn.addEventListener(
-        "click",
-        function () {
-
-            closeMenu();
-
-            window.location.reload();
-
-        }
-    );
-
+.startBtn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
 }
 
-
-
-/* =====================================================
-   SHARE APP
-===================================================== */
-
-const shareAppBtn =
-    document.getElementById(
-        "shareAppBtn"
-    );
-
-
-if (shareAppBtn) {
-
-    shareAppBtn.addEventListener(
-        "click",
-        async function () {
-
-            const shareData = {
-
-                title:
-                    "Unique Academic",
-
-                text:
-                    "Learn smarter with Unique Academic.",
-
-                url:
-                    window.location.href
-
-            };
-
-
-            try {
-
-                if (
-                    navigator.share
-                ) {
-
-                    await navigator.share(
-                        shareData
-                    );
-
-                } else if (
-                    navigator.clipboard
-                ) {
-
-                    await navigator
-                        .clipboard
-                        .writeText(
-                            window.location.href
-                        );
-
-                    alert(
-                        "App link copied!"
-                    );
-
-                } else {
-
-                    alert(
-                        "Sharing is not supported on this device."
-                    );
-
-                }
-
-            } catch (error) {
-
-                console.log(
-                    "Share cancelled."
-                );
-
-            }
-
-            closeMenu();
-
-        }
-    );
-
+.startBtn:hover {
+    background: #0056b3;
 }
-
-
-
-/* =====================================================
-   LOGOUT
-===================================================== */
-
-const logoutBtn =
-    document.getElementById(
-        "logoutBtn"
-    );
-
-
-if (logoutBtn) {
-
-    logoutBtn.addEventListener(
-        "click",
-        function () {
-
-            const confirmLogout =
-                confirm(
-                    "Are you sure you want to logout?"
-                );
-
-
-            if (!confirmLogout) {
-
-                return;
-
-            }
-
-
-            /*
-             * Firebase Authentication
-             * will be connected here.
-             */
-
-
-            closeMenu();
-
-
-            window.location.href =
-                "student-login.html";
-
-        }
-    );
-
-}
-
-
-
-/* =====================================================
-   CONTINUE LEARNING
-===================================================== */
-
-const continueText =
-    document.getElementById(
-        "continueText"
-    );
-
-
-const continueBtn =
-    document.getElementById(
-        "continueBtn"
-    );
-
-
-const savedSubject =
-    localStorage.getItem(
-        "lastOpenedSubject"
-    );
-
-
-const savedSubjectUrl =
-    localStorage.getItem(
-        "lastOpenedSubjectUrl"
-    );
-
-
-if (
-    savedSubject &&
-    savedSubjectUrl
-) {
-
-    if (continueText) {
-
-        continueText.textContent =
-            "Continue studying " +
-            savedSubject +
-            ".";
-
-    }
-
-
-    if (continueBtn) {
-
-        continueBtn.textContent =
-            "Continue Learning";
-
-        continueBtn.href =
-            savedSubjectUrl;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   SAVE LAST OPENED SUBJECT
-===================================================== */
-
-const subjectLinks =
-    document.querySelectorAll(
-        ".subjectCard .button"
-    );
-
-
-subjectLinks.forEach(
-    function (link) {
-
-        link.addEventListener(
-            "click",
-            function () {
-
-                const card =
-                    link.closest(
-                        ".subjectCard"
-                    );
-
-
-                if (!card) {
-
-                    return;
-
-                }
-
-
-                const subject =
-                    card.dataset.subject;
-
-
-                if (!subject) {
-
-                    return;
-
-                }
-
-
-                localStorage.setItem(
-                    "lastOpenedSubject",
-                    subject
-                );
-
-
-                localStorage.setItem(
-                    "lastOpenedSubjectUrl",
-                    link.href
-                );
-
-            }
-        );
-
-    }
-);
-
-
-
-/* =====================================================
-   BOOKMARK SYSTEM
-===================================================== */
-
-const bookmarkButtons =
-    document.querySelectorAll(
-        ".bookmarkBtn"
-    );
-
-
-let bookmarks = [];
-
-
-try {
-
-    bookmarks =
-        JSON.parse(
-            localStorage.getItem(
-                "uniqueAcademicBookmarks"
-            )
-        ) || [];
-
-} catch (error) {
-
-    bookmarks = [];
-
-}
-
-
-
-/* =====================================================
-   UPDATE BOOKMARK BUTTONS
-===================================================== */
-
-function updateBookmarkButtons() {
-
-    bookmarkButtons.forEach(
-        function (button) {
-
-            const subject =
-                button.dataset.subject;
-
-
-            if (
-                bookmarks.includes(
-                    subject
-                )
-            ) {
-
-                button.textContent =
-                    "★ Bookmarked";
-
-                button.classList.add(
-                    "bookmarked"
-                );
-
-            } else {
-
-                button.textContent =
-                    "⭐ Bookmark";
-
-                button.classList.remove(
-                    "bookmarked"
-                );
-
-            }
-
-        }
-    );
-
-}
-
-
-
-/* =====================================================
-   BOOKMARK CLICK
-===================================================== */
-
-bookmarkButtons.forEach(
-    function (button) {
-
-        button.addEventListener(
-            "click",
-            function () {
-
-                const subject =
-                    button.dataset.subject;
-
-
-                if (!subject) {
-
-                    return;
-
-                }
-
-
-                const index =
-                    bookmarks.indexOf(
-                        subject
-                    );
-
-
-                if (
-                    index === -1
-                ) {
-
-                    bookmarks.push(
-                        subject
-                    );
-
-                } else {
-
-                    bookmarks.splice(
-                        index,
-                        1
-                    );
-
-                }
-
-
-                localStorage.setItem(
-                    "uniqueAcademicBookmarks",
-                    JSON.stringify(
-                        bookmarks
-                    )
-                );
-
-
-                updateBookmarkButtons();
-
-            }
-        );
-
-    }
-);
-
-
-updateBookmarkButtons();
-
 
 
 /* =====================================================
    SEARCH
 ===================================================== */
 
-const searchInput =
-    document.getElementById(
-        "search"
-    );
+.searchContainer {
+    width: 100%;
+    padding: 0 15px;
+}
+
+#search {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    color: #333;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
 
 
-if (searchInput) {
+/* =====================================================
+   HEADINGS
+===================================================== */
 
-    searchInput.addEventListener(
-        "input",
-        function () {
+h2 {
+    color: #2563eb;
+    margin-top: 25px;
+}
 
-            const searchValue =
-                searchInput.value
-                    .trim()
-                    .toLowerCase();
-
-
-            const subjectCards =
-                document.querySelectorAll(
-                    ".subjectCard"
-                );
+b {
+    color: #d32f2f;
+}
 
 
-            subjectCards.forEach(
-                function (card) {
+/* =====================================================
+   BOOKMARK
+===================================================== */
 
-                    const subject =
-                        (
-                            card.dataset.subject ||
-                            card.textContent
-                        )
-                        .toLowerCase();
+.bookmarkBtn {
+    background: #ffc107;
+    color: #111;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.bookmarkBtn:hover {
+    transform: translateY(-1px);
+}
+
+.bookmarkBtn.bookmarked {
+    background: #16a34a;
+    color: white;
+}
+
+.bookmarkBtn.bookmarked:hover {
+    background: #15803d;
+}
 
 
-                    if (
-                        subject.includes(
-                            searchValue
-                        )
-                    ) {
+/* =====================================================
+   PROGRESS
+===================================================== */
 
-                        card.style.display =
-                            "";
+.progressBar {
+    width: 100%;
+    cursor: pointer;
+}
 
-                    } else {
 
-                        card.style.display =
-                            "none";
+/* =====================================================
+   CHAPTER NAVIGATION
+===================================================== */
 
-                    }
+.chapterNav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
 
-                }
-            );
+.chapterNav a {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
 
-        }
-    );
+
+/* =====================================================
+   CHAPTER PAGES
+===================================================== */
+
+.chapter {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 35px;
+    background: #111;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    line-height: 2;
+    font-size: 18px;
+}
+
+.chapter h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.chapter h2 {
+    color: #ffd54f;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.chapter p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.chapter b {
+    color: white;
+    font-weight: bold;
+}
+
+.chapter a {
+    color: #4da3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   NOTE
+===================================================== */
+
+.note {
+    background: #fff8c4;
+    padding: 15px;
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.dashboard {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dashCard {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.25s ease;
+}
+
+.dashCard:hover {
+    transform: translateY(-3px);
+}
+
+.dashCard a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+.statBox {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.statBox h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.statBox p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   QUIZ CONTAINER
+===================================================== */
+
+.quiz-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.progress {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.question-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    transition: 0.3s;
+}
+
+.answer-btn:hover {
+    background: #1d4ed8;
+}
+
+#nextBtn {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   CHAPTER QUIZ CARDS
+===================================================== */
+
+.quiz-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 18px 0;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.quiz-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.18);
+}
+
+.quiz-progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    color: #2563eb;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.quiz-info {
+    flex: 1;
+    margin-left: 18px;
+}
+
+.quiz-badge {
+    display: inline-block;
+    background: #e8f0ff;
+    color: #2563eb;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.quiz-info h3 {
+    margin: 0;
+    color: #222;
+    font-size: 18px;
+}
+
+.quiz-arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.quiz-arrow:hover {
+    background: #1d4ed8;
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   ACCOUNT BUTTONS
+===================================================== */
+
+.headerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.registerBtn,
+.loginBtn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.registerBtn {
+    background: white;
+    color: #1e3a8a;
+}
+
+.loginBtn {
+    background: #2563eb;
+    color: white;
+    border: 1px solid white;
+}
+
+.registerBtn:hover,
+.loginBtn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   SUBJECT PAGE TOP NAVIGATION
+===================================================== */
+
+.pageNav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px max(14px, calc((100vw - 900px) / 2));
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(37, 99, 235, 0.15);
+    box-shadow: 0 4px 18px rgba(30, 58, 138, 0.12);
+}
+
+.pageTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-width: 0;
+    flex: 1;
+}
+
+.pageTitleIcon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 5px 14px rgba(37, 99, 235, 0.25);
+}
+
+.pageTitle h1 {
+    margin: 0;
+    font-size: 16px;
+    color: #1e3a8a;
+    line-height: 1.2;
+}
+
+.pageTitle p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #6b7fa3;
+}
+
+.pageBackBtn,
+.pageHomeBtn {
+    border: none;
+    cursor: pointer;
+    min-height: 42px;
+    padding: 9px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pageBackBtn {
+    background: #e8f0ff;
+    color: #2563eb;
+}
+
+.pageBackBtn:hover {
+    background: #dbe8ff;
+}
+
+.pageBackBtn span:first-child {
+    font-size: 21px;
+}
+
+.pageHomeBtn {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    box-shadow: 0 5px 14px rgba(37, 99, 235, 0.22);
+}
+
+.pageHomeBtn:hover {
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.3);
+}
+
+.subjectPage {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 20px 30px;
+}
+
+.subjectIntro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subjectIntro h1 {
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   MAIN APP HEADER
+===================================================== */
+
+.mainHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1500;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   HEADER MENU BUTTON
+===================================================== */
+
+/*
+   IMPORTANT:
+   There are two .menuBtn elements in index.html.
+   The header button is the visible menu button.
+   The original fixed-position conflict has been removed.
+*/
+
+.mainHeader .menuBtn {
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 1600;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.mainHeader .menuBtn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+
+/*
+   The first menuBtn is kept available for your HTML.
+   It is hidden because the header already contains
+   the professional menu button.
+*/
+
+body > #menuBtn {
+    display: none;
+}
+
+
+/* =====================================================
+   HEADER BRAND
+===================================================== */
+
+.headerBrand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    margin-left: 12px;
+    min-width: 0;
+}
+
+.headerLogo {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.headerBrand h1 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.headerBrand p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+
+/* =====================================================
+   HEADER PROFILE
+===================================================== */
+
+.headerProfile {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   SIDE MENU
+===================================================== */
+
+.sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 330px;
+    max-width: 88vw;
+    height: 100vh;
+    height: 100dvh;
+    background: white;
+    z-index: 3000;
+
+    /*
+       IMPORTANT:
+       JavaScript uses .active.
+    */
+    transform: translateX(-105%);
+
+    transition:
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-shadow: 8px 0 35px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sideMenu.active {
+    transform: translateX(0);
+}
+
+
+/* =====================================================
+   MENU OVERLAY
+===================================================== */
+
+.menuOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2500;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.menuOverlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =====================================================
+   MENU PROFILE
+===================================================== */
+
+.menuProfile {
+    min-height: 150px;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #1e3a8a 55%,
+            #6d28d9 100%
+        );
+
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.menuProfile::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    right: -70px;
+    top: -80px;
+}
+
+
+/* =====================================================
+   PROFILE AVATAR
+===================================================== */
+
+.profileAvatar {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-size: 32px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.profileInfo {
+    position: relative;
+    z-index: 2;
+    min-width: 0;
+}
+
+.profileInfo h3 {
+    margin: 0;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profileInfo p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    opacity: 0.85;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =====================================================
+   MENU ITEMS CONTAINER
+===================================================== */
+
+.menuItems {
+    padding: 12px 10px;
+}
+
+
+/* =====================================================
+   MENU ITEM
+===================================================== */
+
+.menuItem {
+    width: 100%;
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 10px 14px;
+    margin: 3px 0;
+
+    border: none;
+    border-radius: 13px;
+
+    background: transparent;
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+    text-align: left;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.menuItem:hover {
+    background: #eef4ff;
+    color: #2563eb;
+    transform: translateX(3px);
+}
+
+.menuItem:active {
+    transform: translateX(2px) scale(0.99);
+}
+
+.menuButton {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+/* =====================================================
+   MENU ICON
+===================================================== */
+
+.menuIcon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+    background: #f0f4ff;
+
+    font-size: 19px;
+}
+
+.menuItem:hover .menuIcon {
+    background: #dce8ff;
+}
+
+
+/* =====================================================
+   MENU ARROW
+===================================================== */
+
+.menuArrow {
+    margin-left: auto;
+    color: #9aa8bd;
+    font-size: 25px;
+    line-height: 1;
+}
+
+
+/* =====================================================
+   MENU BOTTOM
+===================================================== */
+
+.menuBottom {
+    margin-top: auto;
+    padding: 10px;
+    border-top: 1px solid #edf0f5;
+}
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.logoutItem {
+    width: 100%;
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 10px 14px;
+
+    border: none;
+    border-radius: 13px;
+
+    background: #fff1f1;
+    color: #dc2626;
+
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-align: left;
+}
+
+.logoutItem .menuIcon {
+    background: #ffe0e0;
+}
+
+.logoutItem .menuArrow {
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   MENU VERSION
+===================================================== */
+
+.menuVersion {
+    text-align: center;
+    color: #8a96a8;
+    font-size: 12px;
+    padding: 15px 5px 8px;
+}
+
+.menuVersion small {
+    font-size: 10px;
+    color: #a7b0bd;
+}
+
+
+/* =====================================================
+   STUDENT PROFILE
+===================================================== */
+
+.profilePage {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px 40px;
+}
+
+.profileCard {
+    text-align: center;
+    background: white;
+    border-radius: 22px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.12);
+    margin-bottom: 25px;
+}
+
+.profileAvatarLarge {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.profileCard h2 {
+    margin: 5px 0;
+    color: #1e3a8a;
+}
+
+.profileCard p {
+    margin: 5px 0 12px;
+    color: #6b7280;
+}
+
+.profileStatus {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #e8f7ee;
+    color: #16803a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profileSection {
+    margin-top: 25px;
+}
+
+.profileSection > h2 {
+    color: #1e3a8a;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.profileInfoCard {
+    background: white;
+    border-radius: 18px;
+    padding: 5px 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.profileRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 5px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profileRow:last-child {
+    border-bottom: none;
+}
+
+.profileRow span {
+    color: #6b7280;
+}
+
+.profileRow strong {
+    color: #1e3a8a;
+    text-align: right;
+}
+
+.profileStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.profileStat {
+    background: white;
+    border-radius: 18px;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.profileStatIcon {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.profileStat strong {
+    display: block;
+    color: #2563eb;
+    font-size: 25px;
+}
+
+.profileStat span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.profileActions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profileAction {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    background: white;
+    color: #333;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.profileAction span {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.profileAction b {
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.profileAction:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(37, 99, 235, 0.15);
+}
+
+.profileLogout {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profileLogout button {
+    border: none;
+    padding: 13px 28px;
+    border-radius: 25px;
+    background: #dc2626;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profileLogout button:hover {
+    background: #b91c1c;
+}
+
+
+/* =====================================================
+   SETTINGS PANEL
+===================================================== */
+
+.settingsPanel {
+    position: fixed;
+    inset: 0;
+    z-index: 4000;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.settingsPanel.active {
+    display: flex;
+}
+
+.settingsBox {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    color: #222;
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.settingsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.settingsHeader h2 {
+    margin: 0;
+    color: #1e3a8a;
+}
+
+.settingsHeader button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #eef3ff;
+    color: #2563eb;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.settingItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 17px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.settingItem strong {
+    display: block;
+    font-size: 16px;
+}
+
+.settingItem p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.themeToggleBtn,
+.settingAction {
+    border: none;
+    background: #e8f0ff;
+    color: #2563eb;
+    padding: 9px 13px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.settingsDoneBtn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+
+/* General text */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #f8fafc;
+}
+
+body.dark-mode p {
+    color: #cbd5e1;
+}
+
+
+/* Cards */
+
+body.dark-mode .card,
+body.dark-mode .dashCard,
+body.dark-mode .statBox,
+body.dark-mode .quiz-card,
+body.dark-mode .question-box {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #334155;
+}
+
+body.dark-mode .card p,
+body.dark-mode .dashCard p,
+body.dark-mode .statBox p {
+    color: #cbd5e1;
+}
+
+
+/* Dashboard */
+
+body.dark-mode .dashCard a {
+    color: #f8fafc;
+}
+
+body.dark-mode .dashCard a:hover {
+    color: #60a5fa;
+}
+
+
+/* Search */
+
+body.dark-mode #search {
+    background: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #475569;
+}
+
+body.dark-mode #search::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode #search:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+
+/* Subject cards */
+
+body.dark-mode .subjectCard {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+body.dark-mode .subjectCard h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .subjectCard p {
+    color: #cbd5e1;
+}
+
+
+/* Bookmark */
+
+body.dark-mode .bookmarkBtn {
+    background: #f59e0b;
+    color: #111827;
+}
+
+body.dark-mode .bookmarkBtn:hover {
+    background: #fbbf24;
+}
+
+body.dark-mode .bookmarkBtn.bookmarked {
+    background: #16a34a;
+    color: white;
+}
+
+
+/* Buttons */
+
+body.dark-mode .button,
+body.dark-mode .startBtn {
+    background: #2563eb;
+    color: white;
+}
+
+body.dark-mode .button:hover,
+body.dark-mode .startBtn:hover {
+    background: #3b82f6;
+}
+
+
+/* Header */
+
+body.dark-mode .mainHeader {
+    background: linear-gradient(135deg, #172554, #1d4ed8);
+    color: white;
+}
+
+body.dark-mode .headerBrand h1,
+body.dark-mode .headerBrand p {
+    color: white;
+}
+
+body.dark-mode .headerProfile {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .headerLogo {
+    background: white;
+    color: #111827;
+}
+
+
+/* Side menu */
+
+body.dark-mode .sideMenu {
+    background: #111827;
+    color: #f8fafc;
+}
+
+body.dark-mode .menuProfile {
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #172554,
+            #6d28d9
+        );
+    color: white;
+}
+
+body.dark-mode .profileInfo h3,
+body.dark-mode .profileInfo p {
+    color: white;
+}
+
+body.dark-mode .menuItem {
+    background: transparent;
+    color: #f8fafc;
+}
+
+body.dark-mode .menuItem:hover {
+    background: #1e293b;
+    color: #60a5fa;
+}
+
+body.dark-mode .menuIcon {
+    background: #1e293b;
+}
+
+body.dark-mode .menuItem:hover .menuIcon {
+    background: #303b50;
+}
+
+body.dark-mode .menuArrow {
+    color: #94a3b8;
+}
+
+body.dark-mode .menuBottom {
+    border-top-color: #334155;
+}
+
+body.dark-mode .logoutItem {
+    background: #321b1b;
+    color: #f87171;
+}
+
+body.dark-mode .logoutItem .menuIcon {
+    background: #452222;
+}
+
+body.dark-mode .logoutItem .menuArrow {
+    color: #f87171;
+}
+
+body.dark-mode .menuVersion {
+    color: #94a3b8;
+}
+
+body.dark-mode .menuVersion small {
+    color: #64748b;
+}
+
+
+/* Subject navigation */
+
+body.dark-mode .pageNav {
+    background: rgba(15, 23, 42, 0.96);
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .pageTitle h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .pageTitle p {
+    color: #94a3b8;
+}
+
+body.dark-mode .pageBackBtn {
+    background: #1e3a8a;
+    color: #bfdbfe;
+}
+
+
+/* Quiz */
+
+body.dark-mode .quiz-info h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .quiz-badge {
+    background: #1e3a8a;
+    color: #bfdbfe;
+}
+
+body.dark-mode .quiz-progress {
+    background: #1e293b;
+    color: #60a5fa;
+}
+
+
+/* Footer */
+
+body.dark-mode footer {
+    background: #020617;
+    color: #cbd5e1;
+}
+
+
+/* Notes */
+
+body.dark-mode .note {
+    background: #422006;
+    color: #fef3c7;
+}
+
+
+/* Account buttons */
+
+body.dark-mode .registerBtn {
+    background: white;
+    color: #1e3a8a;
+}
+
+body.dark-mode .loginBtn {
+    background: #2563eb;
+    color: white;
+    border-color: white;
+}
+
+
+/* Forms */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #475569;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+/* Profile */
+
+body.dark-mode .profileCard,
+body.dark-mode .profileInfoCard,
+body.dark-mode .profileStat,
+body.dark-mode .profileAction {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode .profileCard h2,
+body.dark-mode .profileSection > h2,
+body.dark-mode .profileRow strong {
+    color: #60a5fa;
+}
+
+body.dark-mode .profileRow {
+    border-color: #333;
+}
+
+body.dark-mode .profileRow span,
+body.dark-mode .profileCard p,
+body.dark-mode .profileStat span {
+    color: #aaa;
+}
+
+
+/* Settings */
+
+body.dark-mode .settingsBox {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode .settingsHeader h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .settingItem {
+    border-color: #333;
+}
+
+body.dark-mode .settingItem p {
+    color: #aaa;
+}
+
+body.dark-mode .settingsHeader button {
+    background: #292929;
+}
+
+
+/* =====================================================
+   LEGACY DARK CLASS SUPPORT
+   Keeps older pages working.
+===================================================== */
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark header {
+    background: #000;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark .dashCard {
+    background: #1e1e1e;
+}
+
+body.dark .dashCard a {
+    color: white;
+}
+
+body.dark .sideMenu {
+    background: #171717;
+}
+
+body.dark .menuItem {
+    color: white;
+}
+
+body.dark .menuItem:hover {
+    background: #242424;
+}
+
+body.dark .menuIcon {
+    background: #252525;
+}
+
+body.dark .menuBottom {
+    border-top-color: #303030;
+}
+
+body.dark .logoutItem {
+    background: #321d1d;
+}
+
+body.dark .menuVersion {
+    color: #777;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .mainHeader {
+        height: 64px;
+        padding: 8px 10px;
+    }
+
+    .mainHeader .menuBtn {
+        width: 42px;
+        height: 42px;
+        font-size: 23px;
+    }
+
+    .headerLogo {
+        width: 38px;
+        height: 38px;
+        font-size: 19px;
+    }
+
+    .headerBrand {
+        margin-left: 8px;
+    }
+
+    .headerBrand h1 {
+        font-size: 15px;
+    }
+
+    .headerBrand p {
+        font-size: 10px;
+    }
+
+    .headerProfile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sideMenu {
+        width: 310px;
+        max-width: 88vw;
+    }
+
+    .dashboard {
+        padding: 15px 10px;
+    }
+
+    .dashboardGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .dashCard {
+        padding: 16px 10px;
+    }
+
+    .dashCard a {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .chapter {
+        margin: 15px 10px;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .chapter h1 {
+        font-size: 27px;
+    }
+
+    .chapter h2 {
+        font-size: 23px;
+    }
+
+    .chapter p {
+        font-size: 16px;
+    }
+
+    .quiz-card {
+        padding: 15px;
+    }
+
+    .quiz-progress {
+        width: 50px;
+        height: 50px;
+    }
+
+    .quiz-info {
+        margin-left: 12px;
+    }
+
+    .quiz-info h3 {
+        font-size: 15px;
+    }
+
+    .quiz-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .pageNav {
+        min-height: 64px;
+        padding: 9px 10px;
+    }
+
+    .pageTitleIcon {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        border-radius: 11px;
+    }
+
+    .pageTitle h1 {
+        font-size: 14px;
+    }
+
+    .pageTitle p {
+        font-size: 10px;
+    }
+
+    .pageBackBtn,
+    .pageHomeBtn {
+        width: 42px;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .pageBackText,
+    .pageHomeText {
+        display: none;
+    }
+
+    .subjectPage {
+        padding: 0 12px 25px;
+        margin-top: 18px;
+    }
+
+    .profilePage {
+        margin-top: 18px;
+        padding: 0 12px 30px;
+    }
+
+    .profileStats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .profileStat {
+        padding: 15px 5px;
+    }
+
+    .profileStat strong {
+        font-size: 21px;
+    }
+
+    .profileRow {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .profileRow strong {
+        text-align: left;
+    }
+
+    .settingItem {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
 }
 
 
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
 
-})();
+@media (max-width: 380px) {
 
-</script>
+    .pageTitleIcon {
+        display: none;
+    }
+
+    .headerBrand h1 {
+        font-size: 14px;
+    }
+
+    .headerBrand p {
+        display: none;
+    }
+
+    .dashboardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quiz-card {
+        gap: 8px;
+    }
+
+    .quiz-progress {
+        width: 44px;
+        height: 44px;
+        border-width: 3px;
+        font-size: 12px;
+    }
+
+    .quiz-info {
+        margin-left: 5px;
+    }
+
+    .quiz-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+}
 
 
+/* =====================================================
+   MENU OPEN BODY LOCK
+===================================================== */
 
-<!-- =====================================================
-     EXISTING PROJECT JAVASCRIPT
-===================================================== -->
+body.menu-open {
+    overflow: hidden;
+    touch-action: none;
+}
 
-<script src="script.js"></script>
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+.menuBtn:focus-visible,
+.menuItem:focus-visible,
+.logoutItem:focus-visible,
+.headerProfile:focus-visible,
+.button:focus-visible,
+.bookmarkBtn:focus-visible {
+    outline: 3px solid rgba(96, 165, 250, 0.65);
+    outline-offset: 2px;
+}
 
 
-</body>
+/* =====================================================
+   PREVENT TEXT SELECTION ON MENU CONTROLS
+===================================================== */
 
-</html>
+.menuBtn,
+.menuItem,
+.logoutItem {
+    -webkit-tap-highlight-color: transparent;
+}
