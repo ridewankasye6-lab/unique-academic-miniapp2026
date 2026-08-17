@@ -10,6 +10,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        name="description"
+        content="Unique Academic - Learn smarter with university notes, quizzes, PDFs and study tools."
+    >
+
     <title>Unique Academic</title>
 
     <link
@@ -23,9 +28,9 @@
 <body>
 
 
-<!-- =====================================
+<!-- =====================================================
      MOBILE MENU BUTTON
-===================================== -->
+===================================================== -->
 
 <button
     id="menuBtn"
@@ -39,9 +44,9 @@
 
 
 
-<!-- =====================================
+<!-- =====================================================
      MENU OVERLAY
-===================================== -->
+===================================================== -->
 
 <div
     id="menuOverlay"
@@ -50,9 +55,9 @@
 
 
 
-<!-- =====================================
-     PROFESSIONAL SIDE MENU
-===================================== -->
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
 
 <aside
     id="sideMenu"
@@ -61,11 +66,14 @@
 >
 
 
-    <!-- PROFILE HEADER -->
+    <!-- ================= PROFILE ================= -->
 
     <div class="menuProfile">
 
-        <div class="profileAvatar">
+        <div
+            id="menuProfilePhoto"
+            class="profileAvatar"
+        >
             🎓
         </div>
 
@@ -75,6 +83,7 @@
             <h3 id="menuUserName">
                 Unique Academic
             </h3>
+
 
             <p id="menuUserEmail">
                 Learning Platform
@@ -86,9 +95,7 @@
 
 
 
-    <!-- =====================================
-         MENU ITEMS
-    ===================================== -->
+    <!-- ================= MENU ITEMS ================= -->
 
     <nav class="menuItems">
 
@@ -163,7 +170,7 @@
 
 
 
-        <!-- SHARE APP -->
+        <!-- SHARE -->
 
         <button
             id="shareAppBtn"
@@ -233,7 +240,7 @@
 
 
 
-        <!-- ABOUT US -->
+        <!-- ABOUT -->
 
         <a
             href="about.html"
@@ -241,7 +248,7 @@
         >
 
             <span class="menuIcon">
-                ⓘ
+                ℹ️
             </span>
 
             <span>
@@ -254,13 +261,37 @@
 
         </a>
 
+
+
+        <!-- SETTINGS -->
+
+        <a
+            href="settings.html"
+            class="menuItem"
+        >
+
+            <span class="menuIcon">
+                ⚙️
+            </span>
+
+            <span>
+                Settings
+            </span>
+
+            <span class="menuArrow">
+                ›
+            </span>
+
+        </a>
+
+
     </nav>
 
 
 
-    <!-- =====================================
+    <!-- =================================================
          LOGOUT
-    ===================================== -->
+    ================================================= -->
 
     <div class="menuBottom">
 
@@ -306,20 +337,21 @@
 
 
 
-<!-- =====================================
+<!-- =====================================================
      PROFESSIONAL HEADER
-===================================== -->
+===================================================== -->
 
 <header class="mainHeader">
 
 
-    <!-- MENU BUTTON -->
+    <!-- HEADER MENU BUTTON -->
 
     <button
         id="headerMenuBtn"
         class="menuBtn"
         type="button"
-        aria-label="Open menu"
+        aria-label="Open Menu"
+        aria-expanded="false"
     >
         ☰
     </button>
@@ -329,6 +361,7 @@
     <!-- BRAND -->
 
     <div class="headerBrand">
+
 
         <div class="headerLogo">
             🎓
@@ -341,6 +374,7 @@
                 Unique Academic
             </h1>
 
+
             <p>
                 Learning Platform
             </p>
@@ -351,25 +385,32 @@
 
 
 
-    <!-- PROFILE -->
+    <!-- PROFILE BUTTON -->
 
     <a
         href="student-login.html"
+        id="headerProfile"
         class="headerProfile"
-        aria-label="Student Login"
+        aria-label="Student Profile"
     >
-        👤
+
+        <span id="headerProfilePhoto">
+            👤
+        </span>
+
     </a>
+
 
 </header>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      HERO
-===================================== -->
+===================================================== -->
 
 <section class="hero">
+
 
     <h2>
         Welcome to Unique Academic 🎓
@@ -381,6 +422,7 @@
         Learn smarter with organized
         university notes, summaries,
         quizzes, and study tools.
+
         Everything you need to succeed
         at university is in one place.
 
@@ -391,18 +433,22 @@
         href="#subjects"
         class="button"
     >
+
         🚀 Start Learning
+
     </a>
+
 
 </section>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      QUICK ACCESS
-===================================== -->
+===================================================== -->
 
 <section class="dashboard">
+
 
     <h2>
         ⚡ Quick Access
@@ -412,11 +458,14 @@
     <div class="dashboardGrid">
 
 
+        <!-- SUBJECTS -->
+
         <div class="dashCard">
 
             <a href="#subjects">
 
                 📚
+
                 <br>
 
                 Subjects
@@ -427,11 +476,14 @@
 
 
 
+        <!-- PDF -->
+
         <div class="dashCard">
 
             <a href="#">
 
                 📄
+
                 <br>
 
                 PDF Library
@@ -442,11 +494,14 @@
 
 
 
+        <!-- VIDEOS -->
+
         <div class="dashCard">
 
             <a href="#">
 
                 🎥
+
                 <br>
 
                 Videos
@@ -457,11 +512,14 @@
 
 
 
+        <!-- QUIZ -->
+
         <div class="dashCard">
 
             <a href="#">
 
                 ❓
+
                 <br>
 
                 Quiz
@@ -472,11 +530,14 @@
 
 
 
+        <!-- BOOKMARK -->
+
         <div class="dashCard">
 
             <a href="#">
 
                 ⭐
+
                 <br>
 
                 Bookmarks
@@ -487,11 +548,14 @@
 
 
 
+        <!-- PROFILE -->
+
         <div class="dashCard">
 
             <a href="student-profile.html">
 
                 👤
+
                 <br>
 
                 Profile
@@ -503,15 +567,17 @@
 
     </div>
 
+
 </section>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      CONTINUE LEARNING
-===================================== -->
+===================================================== -->
 
 <section class="card">
+
 
     <h2>
         📖 Continue Learning
@@ -535,26 +601,28 @@
 
     </a>
 
+
 </section>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      SEARCH
-===================================== -->
+===================================================== -->
 
 <input
     type="text"
     id="search"
     placeholder="🔍 Search a subject..."
     onkeyup="searchSubjects()"
+    aria-label="Search subjects"
 >
 
 
 
-<!-- =====================================
+<!-- =====================================================
      SUBJECT TITLE
-===================================== -->
+===================================================== -->
 
 <h2 id="subjects">
 
@@ -564,11 +632,11 @@
 
 
 
-<!-- =====================================
+<!-- =====================================================
      ENGLISH SKILL I
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         📘 English Skill I
@@ -583,23 +651,30 @@
         class="button"
         href="english1.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      ECONOMICS
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         📈 Economics
@@ -614,23 +689,30 @@
         class="button"
         href="economics.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      HISTORY
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         📜 History
@@ -645,23 +727,30 @@
         class="button"
         href="history.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      ENTREPRENEURSHIP
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         💼 Entrepreneurship
@@ -676,23 +765,30 @@
         class="button"
         href="entrepreneurship.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      ANTHROPOLOGY
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         🧑‍🤝‍🧑 Anthropology
@@ -707,23 +803,30 @@
         class="button"
         href="anthropology.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      EMERGING TECHNOLOGY
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         💻 Emerging Technology
@@ -738,23 +841,30 @@
         class="button"
         href="emerging-technology.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      GLOBAL TRENDS
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         🌍 Global Trends
@@ -769,23 +879,30 @@
         class="button"
         href="global-trends.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      ENGLISH SKILL II
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         🇬🇧 English Skill II
@@ -800,23 +917,30 @@
         class="button"
         href="english2.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      PSYCHOLOGY
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         🧠 Psychology
@@ -831,23 +955,30 @@
         class="button"
         href="psychology.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      LOGIC
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         ⚖️ Logic
@@ -862,23 +993,30 @@
         class="button"
         href="logic.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      GEOGRAPHY
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         🌍 Geography
@@ -893,23 +1031,30 @@
         class="button"
         href="geography.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      CIVIC EDUCATION
-===================================== -->
+===================================================== -->
 
-<div class="card">
+<div class="card subjectCard">
 
     <h3>
         🏛 Civic Education
@@ -924,221 +1069,195 @@
         class="button"
         href="civic.html"
     >
+
         📖 Open
+
     </a>
 
 
-    <button class="bookmarkBtn">
+    <button
+        class="bookmarkBtn"
+        type="button"
+    >
+
         ⭐ Bookmark
+
     </button>
 
 </div>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      FOOTER
-===================================== -->
+===================================================== -->
 
 <footer>
 
     <p>
-        © 2026 Unique Academic |
+
+        © 2026 Unique Academic
+
+        |
+
         Learn. Understand. Succeed.
+
     </p>
 
 </footer>
 
 
 
-<!-- =====================================
+<!-- =====================================================
      MENU JAVASCRIPT
-===================================== -->
+===================================================== -->
 
 <script>
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
 
 const menuBtn =
     document.getElementById("menuBtn");
 
+
 const headerMenuBtn =
     document.getElementById("headerMenuBtn");
 
+
 const sideMenu =
     document.getElementById("sideMenu");
+
 
 const menuOverlay =
     document.getElementById("menuOverlay");
 
 
 
-/* =====================================
+/* =====================================================
    OPEN MENU
-===================================== */
+===================================================== */
 
 function openMenu() {
+
+    if (!sideMenu || !menuOverlay) {
+        return;
+    }
+
 
     sideMenu.classList.add("active");
 
     menuOverlay.classList.add("active");
 
-    menuBtn.setAttribute(
-        "aria-expanded",
-        "true"
-    );
+
+    if (menuBtn) {
+
+        menuBtn.setAttribute(
+            "aria-expanded",
+            "true"
+        );
+
+    }
+
+
+    if (headerMenuBtn) {
+
+        headerMenuBtn.setAttribute(
+            "aria-expanded",
+            "true"
+        );
+
+    }
+
 
     sideMenu.setAttribute(
         "aria-hidden",
         "false"
     );
 
+
+
+    document.body.classList.add(
+        "menu-open"
+    );
+
 }
 
 
 
-/* =====================================
+/* =====================================================
    CLOSE MENU
-===================================== */
+===================================================== */
 
 function closeMenu() {
+
+    if (!sideMenu || !menuOverlay) {
+        return;
+    }
+
 
     sideMenu.classList.remove("active");
 
     menuOverlay.classList.remove("active");
 
-    menuBtn.setAttribute(
-        "aria-expanded",
-        "false"
-    );
+
+    if (menuBtn) {
+
+        menuBtn.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
+
+    if (headerMenuBtn) {
+
+        headerMenuBtn.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
 
     sideMenu.setAttribute(
         "aria-hidden",
         "true"
     );
 
-}
 
-
-
-/* =====================================
-   MENU BUTTONS
-===================================== */
-
-menuBtn.addEventListener(
-    "click",
-    openMenu
-);
-
-
-headerMenuBtn.addEventListener(
-    "click",
-    openMenu
-);
-
-
-menuOverlay.addEventListener(
-    "click",
-    closeMenu
-);
-
-
-
-/* =====================================
-   ESC KEY
-===================================== */
-
-document.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (event.key === "Escape") {
-
-            closeMenu();
-
-        }
-
-    }
-);
-
-
-
-/* =====================================
-   REFRESH
-===================================== */
-
-const refreshBtn =
-    document.getElementById("refreshBtn");
-
-
-if (refreshBtn) {
-
-    refreshBtn.addEventListener(
-        "click",
-        function() {
-
-            window.location.reload();
-
-        }
+    document.body.classList.remove(
+        "menu-open"
     );
 
 }
 
 
 
-/* =====================================
-   SHARE APP
-===================================== */
+/* =====================================================
+   MENU BUTTON
+===================================================== */
 
-const shareAppBtn =
-    document.getElementById("shareAppBtn");
+if (menuBtn) {
 
-
-if (shareAppBtn) {
-
-    shareAppBtn.addEventListener(
+    menuBtn.addEventListener(
         "click",
-        async function() {
+        function() {
 
-            const shareData = {
+            if (
+                sideMenu.classList.contains(
+                    "active"
+                )
+            ) {
 
-                title:
-                    "Unique Academic",
+                closeMenu();
 
-                text:
-                    "Learn smarter with Unique Academic.",
+            } else {
 
-                url:
-                    window.location.href
-
-            };
-
-
-            try {
-
-                if (
-                    navigator.share
-                ) {
-
-                    await navigator.share(
-                        shareData
-                    );
-
-                } else {
-
-                    await navigator.clipboard.writeText(
-                        window.location.href
-                    );
-
-                    alert(
-                        "App link copied!"
-                    );
-
-                }
-
-            } catch (error) {
-
-                console.log(
-                    "Share cancelled."
-                );
+                openMenu();
 
             }
 
@@ -1149,9 +1268,76 @@ if (shareAppBtn) {
 
 
 
-/* =====================================
-   CLOSE MENU WHEN LINK IS CLICKED
-===================================== */
+/* =====================================================
+   HEADER MENU BUTTON
+===================================================== */
+
+if (headerMenuBtn) {
+
+    headerMenuBtn.addEventListener(
+        "click",
+        function() {
+
+            if (
+                sideMenu.classList.contains(
+                    "active"
+                )
+            ) {
+
+                closeMenu();
+
+            } else {
+
+                openMenu();
+
+            }
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+if (menuOverlay) {
+
+    menuOverlay.addEventListener(
+        "click",
+        closeMenu
+    );
+
+}
+
+
+
+/* =====================================================
+   ESC KEY
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeMenu();
+
+        }
+
+    }
+);
+
+
+
+/* =====================================================
+   CLOSE MENU AFTER NORMAL LINK CLICK
+===================================================== */
 
 const menuLinks =
     document.querySelectorAll(
@@ -1170,13 +1356,209 @@ menuLinks.forEach(
     }
 );
 
+
+
+/* =====================================================
+   REFRESH
+===================================================== */
+
+const refreshBtn =
+    document.getElementById(
+        "refreshBtn"
+    );
+
+
+if (refreshBtn) {
+
+    refreshBtn.addEventListener(
+        "click",
+        function() {
+
+            closeMenu();
+
+            window.location.reload();
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   SHARE APP
+===================================================== */
+
+const shareAppBtn =
+    document.getElementById(
+        "shareAppBtn"
+    );
+
+
+if (shareAppBtn) {
+
+    shareAppBtn.addEventListener(
+        "click",
+        async function() {
+
+
+            const shareData = {
+
+                title:
+                    "Unique Academic",
+
+                text:
+                    "Learn smarter with Unique Academic.",
+
+                url:
+                    window.location.href
+
+            };
+
+
+            try {
+
+
+                if (
+                    navigator.share
+                ) {
+
+                    await navigator.share(
+                        shareData
+                    );
+
+                } else {
+
+
+                    if (
+                        navigator.clipboard
+                    ) {
+
+                        await navigator
+                            .clipboard
+                            .writeText(
+                                window.location.href
+                            );
+
+                        alert(
+                            "App link copied!"
+                        );
+
+                    } else {
+
+                        alert(
+                            "Sharing is not supported on this device."
+                        );
+
+                    }
+
+                }
+
+
+            } catch (error) {
+
+                console.log(
+                    "Share cancelled."
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   LOGOUT
+   -----------------------------------------------------
+   Temporary version.
+   We will connect this to Firebase Authentication
+   when we build the real login system.
+===================================================== */
+
+const logoutBtn =
+    document.getElementById(
+        "logoutBtn"
+    );
+
+
+if (logoutBtn) {
+
+    logoutBtn.addEventListener(
+        "click",
+        function() {
+
+
+            const confirmLogout =
+                confirm(
+                    "Are you sure you want to logout?"
+                );
+
+
+            if (!confirmLogout) {
+                return;
+            }
+
+
+            /*
+             * Firebase logout will be added here.
+             *
+             * Example later:
+             *
+             * signOut(auth)
+             */
+
+
+            closeMenu();
+
+
+            window.location.href =
+                "student-login.html";
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   HEADER PROFILE
+===================================================== */
+
+const headerProfile =
+    document.getElementById(
+        "headerProfile"
+    );
+
+
+if (headerProfile) {
+
+    headerProfile.addEventListener(
+        "click",
+        function() {
+
+            /*
+             * Later this will automatically
+             * open the logged-in student's
+             * profile.
+             */
+
+        }
+    );
+
+}
+
+
 </script>
 
 
 
-<!-- =====================================
-     YOUR EXISTING SCRIPT
-===================================== -->
+<!-- =====================================================
+     EXISTING PROJECT JAVASCRIPT
+===================================================== -->
 
 <script src="script.js"></script>
 
