@@ -1,4 +1,8 @@
-import { db, auth } from "./firebase-config.js";
+import {
+    db,
+    auth
+} from "./firebase-config.js";
+
 
 import {
     collection,
@@ -7,13 +11,17 @@ import {
     updateDoc
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
+
 import {
     onAuthStateChanged,
     signOut
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 
-const ADMIN_EMAIL = "ridewankasye6@gmail.com";
+
+const ADMIN_EMAIL =
+    "ridewankasye6@gmail.com";
+
 
 
 /*
@@ -23,22 +31,40 @@ HTML ELEMENTS
 */
 
 const registrationList =
-    document.getElementById("registrationList");
+    document.getElementById(
+        "registrationList"
+    );
+
 
 const totalCount =
-    document.getElementById("totalCount");
+    document.getElementById(
+        "totalCount"
+    );
+
 
 const pendingCount =
-    document.getElementById("pendingCount");
+    document.getElementById(
+        "pendingCount"
+    );
+
 
 const approvedCount =
-    document.getElementById("approvedCount");
+    document.getElementById(
+        "approvedCount"
+    );
+
 
 const rejectedCount =
-    document.getElementById("rejectedCount");
+    document.getElementById(
+        "rejectedCount"
+    );
+
 
 const logoutBtn =
-    document.getElementById("logoutBtn");
+    document.getElementById(
+        "logoutBtn"
+    );
+
 
 
 /*
@@ -47,33 +73,43 @@ CHECK ADMIN
 ====================================
 */
 
-onAuthStateChanged(auth, async (user) => {
+onAuthStateChanged(
+    auth,
+    async (user) => {
 
-    if (!user) {
+        if (!user) {
 
-        window.location.href = "login.html";
+            window.location.href =
+                "login.html";
 
-        return;
+            return;
+        }
+
+
+        if (
+            !user.email ||
+            user.email.toLowerCase() !==
+            ADMIN_EMAIL.toLowerCase()
+        ) {
+
+            alert(
+                "❌ Admin access required."
+            );
+
+
+            window.location.href =
+                "index.html";
+
+
+            return;
+        }
+
+
+        loadRegistrations();
+
     }
+);
 
-
-    if (
-        !user.email ||
-        user.email.toLowerCase() !==
-        ADMIN_EMAIL.toLowerCase()
-    ) {
-
-        alert("❌ Admin access required.");
-
-        window.location.href = "index.html";
-
-        return;
-    }
-
-
-    loadRegistrations();
-
-});
 
 
 /*
@@ -88,15 +124,13 @@ async function loadRegistrations() {
 
         const snapshot =
             await getDocs(
-                collection(db, "registrations")
+                collection(
+                    db,
+                    "registrations"
+                )
             );
 
 
-        /*
-        ================================
-        COUNTERS
-        ================================
-        */
 
         let total = 0;
         let pending = 0;
@@ -104,184 +138,322 @@ async function loadRegistrations() {
         let rejected = 0;
 
 
-        registrationList.innerHTML = "";
+
+        registrationList.innerHTML =
+            "";
 
 
-        /*
-        ================================
-        DISPLAY REGISTRATIONS
-        ================================
-        */
 
-        snapshot.forEach((doc) => {
+        if (snapshot.empty) {
 
-            const data = doc.data();
+            registrationList.innerHTML = `
 
-            total++;
+                <div class="loading">
 
-
-            const status =
-                data.status || "pending";
-
-
-            /*
-            COUNT PENDING
-            */
-
-            if (status === "pending") {
-
-                pending++;
-
-            }
-
-
-            /*
-            COUNT APPROVED
-            */
-
-            if (status === "approved") {
-
-                approved++;
-
-            }
-
-
-            /*
-            COUNT REJECTED
-            */
-
-            if (status === "rejected") {
-
-                rejected++;
-
-            }
-
-
-            /*
-            ================================
-            STUDENT CARD
-            ================================
-            */
-
-            const card =
-                document.createElement("div");
-
-            card.className =
-                "student-card";
-
-
-            card.innerHTML = `
-
-                <h3>
-                    👤 ${escapeHTML(
-                        data.fullName ||
-                        "Unknown Student"
-                    )}
-                </h3>
-
-
-                <div class="student-info">
-
-                    📧 Email:
-                    ${escapeHTML(
-                        data.email || "—"
-                    )}
-                    <br>
-
-                    📱 Phone:
-                    ${escapeHTML(
-                        data.phone || "—"
-                    )}
-                    <br>
-
-                    🎓 University:
-                    ${escapeHTML(
-                        data.university || "—"
-                    )}
-                    <br>
-
-                    📚 Department:
-                    ${escapeHTML(
-                        data.department || "—"
-                    )}
-                    <br>
-
-                    💰 Payment Reference:
-                    <strong>
-                        ${escapeHTML(
-                            data.paymentReference || "—"
-                        )}
-                    </strong>
-
-                </div>
-
-
-                <span class="status ${status}">
-                    ${status.toUpperCase()}
-                </span>
-
-
-                <div class="actions">
-
-                    ${
-                        status === "pending"
-                        ?
-                        `
-
-                        <button
-                            class="approve-btn"
-                            data-id="${doc.id}"
-                        >
-                            ✅ Approve
-                        </button>
-
-
-                        <button
-                            class="reject-btn"
-                            data-id="${doc.id}"
-                        >
-                            ❌ Reject
-                        </button>
-
-                        `
-                        :
-                        ""
-                    }
+                    📭 No registrations yet.
 
                 </div>
 
             `;
 
+        }
 
-            registrationList.appendChild(card);
 
-        });
+
+        snapshot.forEach(
+            (registrationDoc) => {
+
+                const data =
+                    registrationDoc.data();
+
+
+                total++;
+
+
+
+                const status =
+                    data.status ||
+                    "pending";
+
+
+
+                if (
+                    status === "pending"
+                ) {
+
+                    pending++;
+
+                }
+
+
+                if (
+                    status === "approved"
+                ) {
+
+                    approved++;
+
+                }
+
+
+                if (
+                    status === "rejected"
+                ) {
+
+                    rejected++;
+
+                }
+
+
+
+                /*
+                ====================================
+                SCREENSHOT BUTTON
+                ====================================
+                */
+
+                let screenshotHTML =
+                    `
+
+                    <div class="payment-screenshot">
+
+                        <strong>
+                            📷 Payment Screenshot:
+                        </strong>
+
+                        <span>
+                            Not uploaded
+                        </span>
+
+                    </div>
+
+                    `;
+
+
+
+                if (
+                    data.screenshotURL
+                ) {
+
+                    screenshotHTML = `
+
+                    <div class="payment-screenshot">
+
+                        <strong>
+                            📷 Payment Screenshot
+                        </strong>
+
+                        <a
+                            href="${escapeHTML(
+                                data.screenshotURL
+                            )}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="screenshot-btn"
+                        >
+                            🔍 View Screenshot
+                        </a>
+
+                    </div>
+
+                    `;
+
+                }
+
+
+
+                /*
+                ====================================
+                STUDENT CARD
+                ====================================
+                */
+
+                const card =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                card.className =
+                    "student-card";
+
+
+
+                card.innerHTML = `
+
+                    <h3>
+
+                        👤 ${escapeHTML(
+                            data.fullName ||
+                            "Unknown Student"
+                        )}
+
+                    </h3>
+
+
+                    <div class="student-info">
+
+                        📧 Email:
+                        ${escapeHTML(
+                            data.email ||
+                            "—"
+                        )}
+
+                        <br>
+
+
+                        📱 Phone:
+                        ${escapeHTML(
+                            data.phone ||
+                            "—"
+                        )}
+
+                        <br>
+
+
+                        🎓 University:
+                        ${escapeHTML(
+                            data.university ||
+                            "—"
+                        )}
+
+                        <br>
+
+
+                        📚 Department:
+                        ${escapeHTML(
+                            data.department ||
+                            "—"
+                        )}
+
+                        <br>
+
+
+                        💳 Payment Method:
+                        <strong>
+                            ${escapeHTML(
+                                data.paymentMethod ||
+                                "—"
+                            )}
+                        </strong>
+
+                        <br>
+
+
+                        💰 Amount:
+                        <strong>
+                            ${escapeHTML(
+                                String(
+                                    data.amount ||
+                                    300
+                                )
+                            )}
+                            ${escapeHTML(
+                                data.currency ||
+                                "ETB"
+                            )}
+                        </strong>
+
+                        <br>
+
+
+                        🔢 Payment Reference:
+                        <strong>
+                            ${escapeHTML(
+                                data.paymentReference ||
+                                "—"
+                            )}
+                        </strong>
+
+                    </div>
+
+
+                    ${screenshotHTML}
+
+
+                    <br>
+
+
+                    <span
+                        class="status ${escapeHTML(
+                            status
+                        )}"
+                    >
+
+                        ${escapeHTML(
+                            status.toUpperCase()
+                        )}
+
+                    </span>
+
+
+                    <div class="actions">
+
+                        ${
+                            status === "pending"
+                            ?
+                            `
+
+                            <button
+                                class="approve-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+                                ✅ Approve
+                            </button>
+
+
+                            <button
+                                class="reject-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+                                ❌ Reject
+                            </button>
+
+                            `
+                            :
+                            ""
+                        }
+
+                    </div>
+
+                `;
+
+
+
+                registrationList.appendChild(
+                    card
+                );
+
+            }
+        );
+
 
 
         /*
-        ================================
-        UPDATE DASHBOARD COUNTERS
-        ================================
+        ====================================
+        COUNTERS
+        ====================================
         */
 
         totalCount.textContent =
             total;
 
+
         pendingCount.textContent =
             pending;
 
+
         approvedCount.textContent =
             approved;
+
 
         rejectedCount.textContent =
             rejected;
 
 
-        /*
-        ================================
-        ADD BUTTON LISTENERS
-        ================================
-        */
 
         addActionListeners();
 
@@ -301,6 +473,13 @@ async function loadRegistrations() {
 
                 ❌ Could not load registrations.
 
+                <br><br>
+
+                ${escapeHTML(
+                    error.message ||
+                    "Unknown error"
+                )}
+
             </div>
 
         `;
@@ -308,6 +487,7 @@ async function loadRegistrations() {
     }
 
 }
+
 
 
 /*
@@ -319,58 +499,59 @@ BUTTONS
 function addActionListeners() {
 
 
-    /*
-    ================================
-    APPROVE BUTTONS
-    ================================
-    */
+    document
+        .querySelectorAll(
+            ".approve-btn"
+        )
+        .forEach(
+            button => {
+
+                button.onclick =
+                    () => {
+
+                        approveRegistration(
+                            button.dataset.id
+                        );
+
+                    };
+
+            }
+        );
+
+
 
     document
-        .querySelectorAll(".approve-btn")
-        .forEach(button => {
+        .querySelectorAll(
+            ".reject-btn"
+        )
+        .forEach(
+            button => {
 
-            button.onclick = () => {
+                button.onclick =
+                    () => {
 
-                approveRegistration(
-                    button.dataset.id
-                );
+                        rejectRegistration(
+                            button.dataset.id
+                        );
 
-            };
+                    };
 
-        });
-
-
-    /*
-    ================================
-    REJECT BUTTONS
-    ================================
-    */
-
-    document
-        .querySelectorAll(".reject-btn")
-        .forEach(button => {
-
-            button.onclick = () => {
-
-                rejectRegistration(
-                    button.dataset.id
-                );
-
-            };
-
-        });
+            }
+        );
 
 }
 
 
+
 /*
 ====================================
-APPROVE REGISTRATION
+APPROVE
 ====================================
 */
 
-async function approveRegistration(id) {
-
+async function approveRegistration(
+    id
+) {
 
     const confirmed =
         confirm(
@@ -383,6 +564,7 @@ async function approveRegistration(id) {
         return;
 
     }
+
 
 
     try {
@@ -398,7 +580,8 @@ async function approveRegistration(id) {
         await updateDoc(
             registrationRef,
             {
-                status: "approved"
+                status:
+                    "approved"
             }
         );
 
@@ -429,14 +612,16 @@ async function approveRegistration(id) {
 }
 
 
+
 /*
 ====================================
-REJECT REGISTRATION
+REJECT
 ====================================
 */
 
-async function rejectRegistration(id) {
-
+async function rejectRegistration(
+    id
+) {
 
     const reason =
         prompt(
@@ -449,6 +634,7 @@ async function rejectRegistration(id) {
         return;
 
     }
+
 
 
     try {
@@ -464,8 +650,13 @@ async function rejectRegistration(id) {
         await updateDoc(
             registrationRef,
             {
-                status: "rejected",
-                rejectionReason: reason
+
+                status:
+                    "rejected",
+
+                rejectionReason:
+                    reason
+
             }
         );
 
@@ -494,6 +685,7 @@ async function rejectRegistration(id) {
     }
 
 }
+
 
 
 /*
@@ -534,6 +726,7 @@ function escapeHTML(value) {
 }
 
 
+
 /*
 ====================================
 LOGOUT
@@ -546,6 +739,7 @@ logoutBtn.onclick =
         try {
 
             await signOut(auth);
+
 
             window.location.href =
                 "login.html";
