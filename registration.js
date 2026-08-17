@@ -1,15 +1,20 @@
 /* =========================================
    UNIQUE ACADEMIC
    REAL REGISTRATION SYSTEM
-   Firebase + Cloud Firestore
+   Firebase Authentication
+   Cloud Firestore
+   Firebase Storage
 
    STEP 1 → STEP 2 → STEP 3 → STEP 4
 ========================================= */
 
+
 import {
     db,
-    auth
+    auth,
+    storage
 } from "./firebase-config.js";
+
 
 import {
     collection,
@@ -17,9 +22,18 @@ import {
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
+
 import {
     createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+
+import {
+    ref,
+    uploadBytes,
+    getDownloadURL
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-storage.js";
+
 
 
 /* =========================================
@@ -52,426 +66,772 @@ const stepIndicator4 =
     document.getElementById("stepIndicator4");
 
 
+
+/* =========================================
+   FORM ELEMENTS
+========================================= */
+
+const fullNameInput =
+    document.getElementById("fullName");
+
+const phoneInput =
+    document.getElementById("phone");
+
+const emailInput =
+    document.getElementById("email");
+
+const universityInput =
+    document.getElementById("university");
+
+const departmentInput =
+    document.getElementById("department");
+
+const passwordInput =
+    document.getElementById("password");
+
+const confirmPasswordInput =
+    document.getElementById("confirmPassword");
+
+const paymentReferenceInput =
+    document.getElementById("paymentReference");
+
+const paymentScreenshotInput =
+    document.getElementById("paymentScreenshot");
+
+
+
+/* =========================================
+   HELPER
+   SCROLL TO TOP
+========================================= */
+
+function scrollToTop() {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+
+/* =========================================
+   HELPER
+   SHOW ONLY ONE STEP
+========================================= */
+
+function showStep(step) {
+
+    if (personalStep) {
+        personalStep.style.display = "none";
+    }
+
+    if (securityStep) {
+        securityStep.style.display = "none";
+    }
+
+    if (paymentStep) {
+        paymentStep.style.display = "none";
+    }
+
+    if (verificationStep) {
+        verificationStep.style.display = "none";
+    }
+
+
+    if (step) {
+        step.style.display = "block";
+    }
+
+
+    scrollToTop();
+
+}
+
+
+
+/* =========================================
+   STEP INDICATOR
+========================================= */
+
+function setActiveStep(stepNumber) {
+
+    const indicators = [
+        stepIndicator1,
+        stepIndicator2,
+        stepIndicator3,
+        stepIndicator4
+    ];
+
+
+    indicators.forEach(
+        function (indicator, index) {
+
+            if (!indicator) {
+                return;
+            }
+
+
+            indicator.classList.remove(
+                "active"
+            );
+
+            indicator.classList.remove(
+                "completed"
+            );
+
+
+            if (index + 1 < stepNumber) {
+
+                indicator.classList.add(
+                    "completed"
+                );
+
+            }
+
+
+            if (index + 1 === stepNumber) {
+
+                indicator.classList.add(
+                    "active"
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+
 /* =========================================
    STEP 1 → STEP 2
 ========================================= */
 
-document
-    .getElementById("personalContinueBtn")
-    .addEventListener("click", function () {
-
-        const fullName =
-            document.getElementById("fullName")
-                .value.trim();
-
-        const phone =
-            document.getElementById("phone")
-                .value.trim();
-
-        const email =
-            document.getElementById("email")
-                .value.trim();
-
-        const university =
-            document.getElementById("university")
-                .value;
-
-        const department =
-            document.getElementById("department")
-                .value.trim();
+const personalContinueBtn =
+    document.getElementById(
+        "personalContinueBtn"
+    );
 
 
-        if (fullName === "") {
-            alert("Please enter your full name.");
-            return;
+if (personalContinueBtn) {
+
+    personalContinueBtn.addEventListener(
+        "click",
+        function () {
+
+            const fullName =
+                fullNameInput
+                    ? fullNameInput.value.trim()
+                    : "";
+
+            const phone =
+                phoneInput
+                    ? phoneInput.value.trim()
+                    : "";
+
+            const email =
+                emailInput
+                    ? emailInput.value.trim()
+                    : "";
+
+            const university =
+                universityInput
+                    ? universityInput.value
+                    : "";
+
+            const department =
+                departmentInput
+                    ? departmentInput.value.trim()
+                    : "";
+
+
+            /* FULL NAME */
+
+            if (fullName === "") {
+
+                alert(
+                    "Please enter your full name."
+                );
+
+                return;
+            }
+
+
+            /* PHONE */
+
+            if (phone === "") {
+
+                alert(
+                    "Please enter your phone number."
+                );
+
+                return;
+            }
+
+
+            /* EMAIL */
+
+            if (email === "") {
+
+                alert(
+                    "Please enter your email address."
+                );
+
+                return;
+            }
+
+
+            /* EMAIL FORMAT */
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                alert(
+                    "Please enter a valid email address."
+                );
+
+                return;
+            }
+
+
+            /* UNIVERSITY */
+
+            if (university === "") {
+
+                alert(
+                    "Please select your university."
+                );
+
+                return;
+            }
+
+
+            /* DEPARTMENT */
+
+            if (department === "") {
+
+                alert(
+                    "Please enter your department."
+                );
+
+                return;
+            }
+
+
+            showStep(securityStep);
+
+            setActiveStep(2);
+
         }
+    );
 
+}
 
-        if (phone === "") {
-            alert("Please enter your phone number.");
-            return;
-        }
-
-
-        if (email === "") {
-            alert("Please enter your email address.");
-            return;
-        }
-
-
-        if (university === "") {
-            alert("Please select your university.");
-            return;
-        }
-
-
-        if (department === "") {
-            alert("Please enter your department.");
-            return;
-        }
-
-
-        personalStep.style.display = "none";
-
-        securityStep.style.display = "block";
-
-        paymentStep.style.display = "none";
-
-
-        stepIndicator1.classList.remove("active");
-
-        stepIndicator1.classList.add("completed");
-
-        stepIndicator2.classList.add("active");
-
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    });
 
 
 /* =========================================
    STEP 2 → STEP 1
 ========================================= */
 
-document
-    .getElementById("backToPersonalBtn")
-    .addEventListener("click", function () {
-
-        securityStep.style.display = "none";
-
-        personalStep.style.display = "block";
+const backToPersonalBtn =
+    document.getElementById(
+        "backToPersonalBtn"
+    );
 
 
-        stepIndicator2.classList.remove("active");
+if (backToPersonalBtn) {
 
-        stepIndicator1.classList.remove("completed");
+    backToPersonalBtn.addEventListener(
+        "click",
+        function () {
 
-        stepIndicator1.classList.add("active");
+            showStep(personalStep);
 
+            setActiveStep(1);
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        }
+    );
 
-    });
+}
+
 
 
 /* =========================================
    PASSWORD STRENGTH
 ========================================= */
 
-const passwordInput =
-    document.getElementById("password");
-
 const strengthBar =
-    document.getElementById("strengthBar");
+    document.getElementById(
+        "strengthBar"
+    );
 
 const strengthText =
-    document.getElementById("strengthText");
+    document.getElementById(
+        "strengthText"
+    );
 
 const lengthRequirement =
-    document.getElementById("lengthRequirement");
+    document.getElementById(
+        "lengthRequirement"
+    );
 
 const numberRequirement =
-    document.getElementById("numberRequirement");
+    document.getElementById(
+        "numberRequirement"
+    );
 
 const uppercaseRequirement =
-    document.getElementById("uppercaseRequirement");
+    document.getElementById(
+        "uppercaseRequirement"
+    );
 
 
-passwordInput.addEventListener(
-    "input",
-    function () {
+if (passwordInput) {
 
-        const password =
-            passwordInput.value;
+    passwordInput.addEventListener(
+        "input",
+        function () {
 
-        const hasLength =
-            password.length >= 8;
+            const password =
+                passwordInput.value;
 
-        const hasNumber =
-            /[0-9]/.test(password);
 
-        const hasUppercase =
-            /[A-Z]/.test(password);
+            const hasLength =
+                password.length >= 8;
 
+            const hasNumber =
+                /[0-9]/.test(password);
 
-        if (hasLength) {
+            const hasUppercase =
+                /[A-Z]/.test(password);
 
-            lengthRequirement.textContent =
-                "✓ At least 8 characters";
 
-            lengthRequirement.classList.add("valid");
+            /* LENGTH */
 
-        } else {
+            if (lengthRequirement) {
 
-            lengthRequirement.textContent =
-                "○ At least 8 characters";
+                if (hasLength) {
 
-            lengthRequirement.classList.remove("valid");
+                    lengthRequirement.textContent =
+                        "✓ At least 8 characters";
 
-        }
+                    lengthRequirement.classList.add(
+                        "valid"
+                    );
 
+                } else {
 
-        if (hasNumber) {
+                    lengthRequirement.textContent =
+                        "○ At least 8 characters";
 
-            numberRequirement.textContent =
-                "✓ At least one number";
+                    lengthRequirement.classList.remove(
+                        "valid"
+                    );
 
-            numberRequirement.classList.add("valid");
-
-        } else {
-
-            numberRequirement.textContent =
-                "○ At least one number";
-
-            numberRequirement.classList.remove("valid");
-
-        }
-
-
-        if (hasUppercase) {
-
-            uppercaseRequirement.textContent =
-                "✓ At least one uppercase letter";
-
-            uppercaseRequirement.classList.add("valid");
-
-        } else {
-
-            uppercaseRequirement.textContent =
-                "○ At least one uppercase letter";
-
-            uppercaseRequirement.classList.remove("valid");
-
-        }
-
-
-        let strength = 0;
-
-        if (hasLength)
-            strength++;
-
-        if (hasNumber)
-            strength++;
-
-        if (hasUppercase)
-            strength++;
-
-
-        if (password.length === 0) {
-
-            strengthBar.style.width = "0%";
-
-            strengthText.textContent =
-                "Enter a password";
-
-            strengthText.className = "";
-
-        }
-
-        else if (strength === 1) {
-
-            strengthBar.style.width = "33%";
-
-            strengthText.textContent =
-                "Weak password";
-
-            strengthText.className = "weak";
-
-        }
-
-        else if (strength === 2) {
-
-            strengthBar.style.width = "66%";
-
-            strengthText.textContent =
-                "Medium password";
-
-            strengthText.className = "medium";
-
-        }
-
-        else {
-
-            strengthBar.style.width = "100%";
-
-            strengthText.textContent =
-                "Strong password";
-
-            strengthText.className = "strong";
-
-        }
-
-    }
-);
-
-
-/* =========================================
-   STEP 2 → STEP 3
-   CREATE REAL FIREBASE USER
-========================================= */
-
-document
-    .getElementById("securityContinueBtn")
-    .addEventListener("click", async function () {
-
-        const password =
-            passwordInput.value;
-
-        const confirmPassword =
-            document
-                .getElementById("confirmPassword")
-                .value;
-
-        const email =
-            document
-                .getElementById("email")
-                .value
-                .trim();
-
-
-        if (password === "") {
-
-            alert(
-                "Please create a password."
-            );
-
-            return;
-        }
-
-
-        if (password.length < 8) {
-
-            alert(
-                "Your password must contain at least 8 characters."
-            );
-
-            return;
-        }
-
-
-        if (!/[0-9]/.test(password)) {
-
-            alert(
-                "Your password must contain at least one number."
-            );
-
-            return;
-        }
-
-
-        if (!/[A-Z]/.test(password)) {
-
-            alert(
-                "Your password must contain at least one uppercase letter."
-            );
-
-            return;
-        }
-
-
-        if (confirmPassword === "") {
-
-            alert(
-                "Please confirm your password."
-            );
-
-            return;
-        }
-
-
-        if (password !== confirmPassword) {
-
-            alert(
-                "Passwords do not match."
-            );
-
-            return;
-        }
-
-
-        /*
-         * CREATE REAL FIREBASE ACCOUNT
-         */
-
-        try {
-
-            await createUserWithEmailAndPassword(
-                auth,
-                email,
-                password
-            );
-
-        }
-
-        catch (error) {
-
-            console.error(error);
-
-
-            if (error.code ===
-                "auth/email-already-in-use") {
-
-                alert(
-                    "This email is already registered. Please use another email or log in."
-                );
+                }
 
             }
 
-            else if (error.code ===
-                "auth/invalid-email") {
 
-                alert(
-                    "Please enter a valid email address."
-                );
+            /* NUMBER */
+
+            if (numberRequirement) {
+
+                if (hasNumber) {
+
+                    numberRequirement.textContent =
+                        "✓ At least one number";
+
+                    numberRequirement.classList.add(
+                        "valid"
+                    );
+
+                } else {
+
+                    numberRequirement.textContent =
+                        "○ At least one number";
+
+                    numberRequirement.classList.remove(
+                        "valid"
+                    );
+
+                }
 
             }
 
-            else if (error.code ===
-                "auth/weak-password") {
 
-                alert(
-                    "Firebase rejected this password. Please create a stronger password."
-                );
+            /* UPPERCASE */
+
+            if (uppercaseRequirement) {
+
+                if (hasUppercase) {
+
+                    uppercaseRequirement.textContent =
+                        "✓ At least one uppercase letter";
+
+                    uppercaseRequirement.classList.add(
+                        "valid"
+                    );
+
+                } else {
+
+                    uppercaseRequirement.textContent =
+                        "○ At least one uppercase letter";
+
+                    uppercaseRequirement.classList.remove(
+                        "valid"
+                    );
+
+                }
+
+            }
+
+
+            /* STRENGTH */
+
+            let strength = 0;
+
+
+            if (hasLength) {
+                strength++;
+            }
+
+            if (hasNumber) {
+                strength++;
+            }
+
+            if (hasUppercase) {
+                strength++;
+            }
+
+
+            if (password.length === 0) {
+
+                if (strengthBar) {
+
+                    strengthBar.style.width =
+                        "0%";
+
+                }
+
+
+                if (strengthText) {
+
+                    strengthText.textContent =
+                        "Enter a password";
+
+                    strengthText.className =
+                        "";
+
+                }
+
+            }
+
+            else if (strength === 1) {
+
+                if (strengthBar) {
+
+                    strengthBar.style.width =
+                        "33%";
+
+                }
+
+
+                if (strengthText) {
+
+                    strengthText.textContent =
+                        "Weak password";
+
+                    strengthText.className =
+                        "weak";
+
+                }
+
+            }
+
+            else if (strength === 2) {
+
+                if (strengthBar) {
+
+                    strengthBar.style.width =
+                        "66%";
+
+                }
+
+
+                if (strengthText) {
+
+                    strengthText.textContent =
+                        "Medium password";
+
+                    strengthText.className =
+                        "medium";
+
+                }
 
             }
 
             else {
 
-                alert(
-                    "Account creation failed. Please try again."
-                );
+                if (strengthBar) {
+
+                    strengthBar.style.width =
+                        "100%";
+
+                }
+
+
+                if (strengthText) {
+
+                    strengthText.textContent =
+                        "Strong password";
+
+                    strengthText.className =
+                        "strong";
+
+                }
 
             }
 
-            return;
         }
+    );
+
+}
 
 
-        securityStep.style.display = "none";
 
-        paymentStep.style.display = "block";
+/* =========================================
+   STEP 2 → STEP 3
+   CREATE FIREBASE ACCOUNT
+========================================= */
+
+const securityContinueBtn =
+    document.getElementById(
+        "securityContinueBtn"
+    );
 
 
-        stepIndicator2.classList.remove("active");
+if (securityContinueBtn) {
 
-        stepIndicator2.classList.add("completed");
+    securityContinueBtn.addEventListener(
+        "click",
+        async function () {
 
-        stepIndicator3.classList.add("active");
+            const password =
+                passwordInput
+                    ? passwordInput.value
+                    : "";
+
+            const confirmPassword =
+                confirmPasswordInput
+                    ? confirmPasswordInput.value
+                    : "";
+
+            const email =
+                emailInput
+                    ? emailInput.value.trim()
+                    : "";
 
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+            /* PASSWORD EMPTY */
 
-    });
+            if (password === "") {
+
+                alert(
+                    "Please create a password."
+                );
+
+                return;
+            }
+
+
+            /* LENGTH */
+
+            if (password.length < 8) {
+
+                alert(
+                    "Your password must contain at least 8 characters."
+                );
+
+                return;
+            }
+
+
+            /* NUMBER */
+
+            if (!/[0-9]/.test(password)) {
+
+                alert(
+                    "Your password must contain at least one number."
+                );
+
+                return;
+            }
+
+
+            /* UPPERCASE */
+
+            if (!/[A-Z]/.test(password)) {
+
+                alert(
+                    "Your password must contain at least one uppercase letter."
+                );
+
+                return;
+            }
+
+
+            /* CONFIRM PASSWORD */
+
+            if (confirmPassword === "") {
+
+                alert(
+                    "Please confirm your password."
+                );
+
+                return;
+            }
+
+
+            /* MATCH */
+
+            if (password !== confirmPassword) {
+
+                alert(
+                    "Passwords do not match."
+                );
+
+                return;
+            }
+
+
+            /* EMAIL */
+
+            if (email === "") {
+
+                alert(
+                    "Please enter your email address."
+                );
+
+                return;
+            }
+
+
+            /* PREVENT DOUBLE CLICK */
+
+            securityContinueBtn.disabled =
+                true;
+
+            securityContinueBtn.innerHTML =
+                "Creating Account...";
+
+
+            try {
+
+                /*
+                 * CREATE REAL FIREBASE ACCOUNT
+                 */
+
+                await createUserWithEmailAndPassword(
+                    auth,
+                    email,
+                    password
+                );
+
+
+                /*
+                 * MOVE TO PAYMENT
+                 */
+
+                showStep(paymentStep);
+
+                setActiveStep(3);
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Firebase Authentication Error:",
+                    error
+                );
+
+
+                if (
+                    error.code ===
+                    "auth/email-already-in-use"
+                ) {
+
+                    alert(
+                        "This email is already registered. Please use another email or log in."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    "auth/invalid-email"
+                ) {
+
+                    alert(
+                        "Please enter a valid email address."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    "auth/weak-password"
+                ) {
+
+                    alert(
+                        "Firebase rejected this password. Please create a stronger password."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    "auth/too-many-requests"
+                ) {
+
+                    alert(
+                        "Too many attempts. Please wait a moment and try again."
+                    );
+
+                }
+
+                else {
+
+                    alert(
+                        "Account creation failed. Please try again."
+                    );
+
+                }
+
+            }
+
+            finally {
+
+                securityContinueBtn.disabled =
+                    false;
+
+                securityContinueBtn.innerHTML =
+                    'Continue <span>→</span>';
+
+            }
+
+        }
+    );
+
+}
+
 
 
 /* =========================================
@@ -482,103 +842,190 @@ let selectedPaymentMethod = "";
 
 
 const paymentDetails =
-    document.getElementById("paymentDetails");
+    document.getElementById(
+        "paymentDetails"
+    );
 
 const selectedPaymentName =
-    document.getElementById("selectedPaymentName");
+    document.getElementById(
+        "selectedPaymentName"
+    );
 
 const selectedPaymentIcon =
-    document.getElementById("selectedPaymentIcon");
+    document.getElementById(
+        "selectedPaymentIcon"
+    );
 
 const accountNumber =
-    document.getElementById("accountNumber");
+    document.getElementById(
+        "accountNumber"
+    );
+
+
+const cbeMethod =
+    document.getElementById(
+        "cbeMethod"
+    );
+
+const telebirrMethod =
+    document.getElementById(
+        "telebirrMethod"
+    );
+
 
 
 /* =========================================
    CBE
 ========================================= */
 
-document
-    .getElementById("cbeMethod")
-    .addEventListener("click", function () {
+if (cbeMethod) {
 
-        selectedPaymentMethod = "CBE";
+    cbeMethod.addEventListener(
+        "click",
+        function () {
 
-
-        selectedPaymentName.textContent =
-            "CBE / CBE Birr";
-
-        selectedPaymentIcon.textContent =
-            "🏦";
-
-        accountNumber.textContent =
-            "1000721240208";
+            selectedPaymentMethod =
+                "CBE";
 
 
-        paymentDetails.style.display =
-            "block";
+            if (selectedPaymentName) {
+
+                selectedPaymentName.textContent =
+                    "CBE / CBE Birr";
+
+            }
 
 
-        document
-            .getElementById("cbeMethod")
-            .classList.add("selected");
+            if (selectedPaymentIcon) {
 
-        document
-            .getElementById("telebirrMethod")
-            .classList.remove("selected");
+                selectedPaymentIcon.textContent =
+                    "🏦";
 
-    });
+            }
+
+
+            if (accountNumber) {
+
+                accountNumber.textContent =
+                    "1000721240208";
+
+            }
+
+
+            if (paymentDetails) {
+
+                paymentDetails.style.display =
+                    "block";
+
+            }
+
+
+            cbeMethod.classList.add(
+                "selected"
+            );
+
+
+            if (telebirrMethod) {
+
+                telebirrMethod.classList.remove(
+                    "selected"
+                );
+
+            }
+
+        }
+    );
+
+}
+
 
 
 /* =========================================
    TELEBIRR
 ========================================= */
 
-document
-    .getElementById("telebirrMethod")
-    .addEventListener("click", function () {
+if (telebirrMethod) {
 
-        selectedPaymentMethod =
-            "Telebirr";
+    telebirrMethod.addEventListener(
+        "click",
+        function () {
 
-
-        selectedPaymentName.textContent =
-            "Telebirr";
-
-        selectedPaymentIcon.textContent =
-            "📱";
-
-        accountNumber.textContent =
-            "0976596520";
+            selectedPaymentMethod =
+                "Telebirr";
 
 
-        paymentDetails.style.display =
-            "block";
+            if (selectedPaymentName) {
+
+                selectedPaymentName.textContent =
+                    "Telebirr";
+
+            }
 
 
-        document
-            .getElementById("telebirrMethod")
-            .classList.add("selected");
+            if (selectedPaymentIcon) {
 
-        document
-            .getElementById("cbeMethod")
-            .classList.remove("selected");
+                selectedPaymentIcon.textContent =
+                    "📱";
 
-    });
+            }
+
+
+            if (accountNumber) {
+
+                accountNumber.textContent =
+                    "0976596520";
+
+            }
+
+
+            if (paymentDetails) {
+
+                paymentDetails.style.display =
+                    "block";
+
+            }
+
+
+            telebirrMethod.classList.add(
+                "selected"
+            );
+
+
+            if (cbeMethod) {
+
+                cbeMethod.classList.remove(
+                    "selected"
+                );
+
+            }
+
+        }
+    );
+
+}
+
 
 
 /* =========================================
    COPY PAYMENT NUMBER
 ========================================= */
 
-document
-    .getElementById("copyPaymentNumber")
-    .addEventListener(
+const copyPaymentNumber =
+    document.getElementById(
+        "copyPaymentNumber"
+    );
+
+
+if (copyPaymentNumber) {
+
+    copyPaymentNumber.addEventListener(
         "click",
         async function () {
 
             const number =
-                accountNumber.textContent;
+                accountNumber
+                    ? accountNumber.textContent.trim()
+                    : "";
 
 
             if (
@@ -586,31 +1033,60 @@ document
                 number === ""
             ) {
 
+                alert(
+                    "Please select a payment method first."
+                );
+
                 return;
             }
 
 
             try {
 
-                await navigator
-                    .clipboard
-                    .writeText(number);
+                if (
+                    navigator.clipboard &&
+                    navigator.clipboard.writeText
+                ) {
 
+                    await navigator
+                        .clipboard
+                        .writeText(number);
 
-                this.textContent =
-                    "✓ Copied";
-
-
-                setTimeout(() => {
 
                     this.textContent =
-                        "📋 Copy";
+                        "✓ Copied";
 
-                }, 1500);
+
+                    setTimeout(
+                        () => {
+
+                            this.textContent =
+                                "📋 Copy";
+
+                        },
+                        1500
+                    );
+
+                }
+
+                else {
+
+                    alert(
+                        "Please copy the payment number manually: " +
+                        number
+                    );
+
+                }
 
             }
 
             catch (error) {
+
+                console.error(
+                    "Copy error:",
+                    error
+                );
+
 
                 alert(
                     "Please copy the payment number manually: " +
@@ -622,70 +1098,172 @@ document
         }
     );
 
+}
+
+
 
 /* =========================================
    PAYMENT SCREENSHOT
 ========================================= */
 
-document
-    .getElementById("paymentScreenshot")
-    .addEventListener(
+if (paymentScreenshotInput) {
+
+    paymentScreenshotInput.addEventListener(
         "change",
         function () {
 
             const fileName =
-                document.getElementById("fileName");
+                document.getElementById(
+                    "fileName"
+                );
 
 
-            if (this.files.length > 0) {
+            if (
+                !this.files ||
+                this.files.length === 0
+            ) {
 
-                fileName.textContent =
-                    "📎 " + this.files[0].name;
+                if (fileName) {
 
+                    fileName.textContent =
+                        "";
+
+                }
+
+                return;
             }
 
-            else {
+
+            const file =
+                this.files[0];
+
+
+            /* ALLOWED TYPES */
+
+            const allowedTypes = [
+                "image/jpeg",
+                "image/png",
+                "image/webp"
+            ];
+
+
+            if (
+                !allowedTypes.includes(
+                    file.type
+                )
+            ) {
+
+                alert(
+                    "Please upload a JPG, PNG, or WEBP image."
+                );
+
+
+                this.value = "";
+
+
+                if (fileName) {
+
+                    fileName.textContent =
+                        "";
+
+                }
+
+                return;
+            }
+
+
+            /* MAX SIZE — 5 MB */
+
+            const maxSize =
+                5 * 1024 * 1024;
+
+
+            if (file.size > maxSize) {
+
+                alert(
+                    "The screenshot must be smaller than 5 MB."
+                );
+
+
+                this.value = "";
+
+
+                if (fileName) {
+
+                    fileName.textContent =
+                        "";
+
+                }
+
+                return;
+            }
+
+
+            if (fileName) {
 
                 fileName.textContent =
-                    "";
+                    "📎 " + file.name;
 
             }
 
         }
     );
 
+}
+
+
+
+/* =========================================
+   BACK TO SECURITY
+========================================= */
+
+const backToSecurityBtn =
+    document.getElementById(
+        "backToSecurityBtn"
+    );
+
+
+if (backToSecurityBtn) {
+
+    backToSecurityBtn.addEventListener(
+        "click",
+        function () {
+
+            showStep(securityStep);
+
+            setActiveStep(2);
+
+        }
+    );
+
+}
+
+
 
 /* =========================================
    STEP 3 → STEP 4
-   SAVE REAL REGISTRATION TO FIRESTORE
+   UPLOAD SCREENSHOT
+   SAVE REGISTRATION
 ========================================= */
 
-document
-    .getElementById("submitPaymentBtn")
-    .addEventListener(
+const submitPaymentBtn =
+    document.getElementById(
+        "submitPaymentBtn"
+    );
+
+
+if (submitPaymentBtn) {
+
+    submitPaymentBtn.addEventListener(
         "click",
         async function () {
 
             const button = this;
 
-            const paymentReference =
-                document
-                    .getElementById(
-                        "paymentReference"
-                    )
-                    .value
-                    .trim();
 
-
-            const screenshot =
-                document
-                    .getElementById(
-                        "paymentScreenshot"
-                    )
-                    .files;
-
-
-            /* CHECK PAYMENT METHOD */
+            /* =================================
+               PAYMENT METHOD
+            ================================= */
 
             if (
                 selectedPaymentMethod === ""
@@ -699,7 +1277,16 @@ document
             }
 
 
-            /* CHECK REFERENCE */
+
+            /* =================================
+               PAYMENT REFERENCE
+            ================================= */
+
+            const paymentReference =
+                paymentReferenceInput
+                    ? paymentReferenceInput.value.trim()
+                    : "";
+
 
             if (
                 paymentReference === ""
@@ -713,11 +1300,19 @@ document
             }
 
 
-            /* CHECK SCREENSHOT */
 
-            if (
-                screenshot.length === 0
-            ) {
+            /* =================================
+               SCREENSHOT
+            ================================= */
+
+            const screenshot =
+                paymentScreenshotInput &&
+                paymentScreenshotInput.files
+                    ? paymentScreenshotInput.files[0]
+                    : null;
+
+
+            if (!screenshot) {
 
                 alert(
                     "Please upload your payment screenshot."
@@ -727,7 +1322,10 @@ document
             }
 
 
-            /* CHECK FIREBASE USER */
+
+            /* =================================
+               FIREBASE USER
+            ================================= */
 
             if (!auth.currentUser) {
 
@@ -739,80 +1337,167 @@ document
             }
 
 
-            /*
-             * COLLECT STUDENT INFORMATION
-             */
 
-            const registrationData = {
+            /* =================================
+               PREVENT DOUBLE SUBMISSION
+            ================================= */
 
-                userId:
-                    auth.currentUser.uid,
-
-                fullName:
-                    document
-                        .getElementById("fullName")
-                        .value
-                        .trim(),
-
-                phone:
-                    document
-                        .getElementById("phone")
-                        .value
-                        .trim(),
-
-                email:
-                    document
-                        .getElementById("email")
-                        .value
-                        .trim(),
-
-                university:
-                    document
-                        .getElementById("university")
-                        .value,
-
-                department:
-                    document
-                        .getElementById("department")
-                        .value
-                        .trim(),
-
-                paymentMethod:
-                    selectedPaymentMethod,
-
-                paymentReference:
-                    paymentReference,
-
-                amount:
-                    300,
-
-                currency:
-                    "ETB",
-
-                status:
-                    "pending",
-
-                submittedAt:
-                    serverTimestamp()
-
-            };
-
-
-            /*
-             * PREVENT DOUBLE SUBMISSION
-             */
-
-            button.disabled = true;
+            button.disabled =
+                true;
 
             button.innerHTML =
                 "Submitting...";
 
 
+
             try {
 
-                /*
-                 * SAVE TO FIRESTORE
-                 */
+                const user =
+                    auth.currentUser;
+
+
+
+                /* =================================
+                   CREATE SAFE FILE NAME
+                ================================= */
+
+                const safeFileName =
+                    screenshot.name
+                        .replace(
+                            /[^a-zA-Z0-9._-]/g,
+                            "_"
+                        );
+
+
+                const timeStamp =
+                    Date.now();
+
+
+                const storagePath =
+                    "payment-screenshots/" +
+                    user.uid +
+                    "/" +
+                    timeStamp +
+                    "_" +
+                    safeFileName;
+
+
+
+                /* =================================
+                   FIREBASE STORAGE REFERENCE
+                ================================= */
+
+                const screenshotRef =
+                    ref(
+                        storage,
+                        storagePath
+                    );
+
+
+
+                /* =================================
+                   UPLOAD SCREENSHOT
+                ================================= */
+
+                button.innerHTML =
+                    "Uploading Screenshot...";
+
+
+                const uploadResult =
+                    await uploadBytes(
+                        screenshotRef,
+                        screenshot,
+                        {
+                            contentType:
+                                screenshot.type
+                        }
+                    );
+
+
+
+                /* =================================
+                   GET DOWNLOAD URL
+                ================================= */
+
+                const screenshotURL =
+                    await getDownloadURL(
+                        uploadResult.ref
+                    );
+
+
+
+                /* =================================
+                   REGISTRATION DATA
+                ================================= */
+
+                const registrationData = {
+
+                    userId:
+                        user.uid,
+
+                    fullName:
+                        fullNameInput
+                            ? fullNameInput.value.trim()
+                            : "",
+
+                    phone:
+                        phoneInput
+                            ? phoneInput.value.trim()
+                            : "",
+
+                    email:
+                        emailInput
+                            ? emailInput.value.trim()
+                            : "",
+
+                    university:
+                        universityInput
+                            ? universityInput.value
+                            : "",
+
+                    department:
+                        departmentInput
+                            ? departmentInput.value.trim()
+                            : "",
+
+                    paymentMethod:
+                        selectedPaymentMethod,
+
+                    paymentReference:
+                        paymentReference,
+
+                    paymentScreenshotURL:
+                        screenshotURL,
+
+                    paymentScreenshotPath:
+                        storagePath,
+
+                    amount:
+                        300,
+
+                    currency:
+                        "ETB",
+
+                    status:
+                        "pending",
+
+                    verificationStatus:
+                        "pending",
+
+                    submittedAt:
+                        serverTimestamp()
+
+                };
+
+
+
+                /* =================================
+                   SAVE TO FIRESTORE
+                ================================= */
+
+                button.innerHTML =
+                    "Saving Registration...";
+
 
                 const registrationRef =
                     await addDoc(
@@ -824,10 +1509,10 @@ document
                     );
 
 
-                /*
-                 * SAVE ID LOCALLY ONLY
-                 * FOR THE CURRENT PAGE
-                 */
+
+                /* =================================
+                   SAVE REGISTRATION ID
+                ================================= */
 
                 sessionStorage.setItem(
                     "registrationId",
@@ -835,47 +1520,23 @@ document
                 );
 
 
-                /*
-                 * HIDE PAYMENT
-                 */
-
-                paymentStep.style.display =
-                    "none";
+                localStorage.setItem(
+                    "uniqueAcademicRegistrationStatus",
+                    "pending"
+                );
 
 
-                /*
-                 * SHOW VERIFICATION
-                 */
 
-                if (verificationStep) {
+                /* =================================
+                   SHOW VERIFICATION
+                ================================= */
 
-                    verificationStep.style.display =
-                        "block";
-
-                }
+                showStep(
+                    verificationStep
+                );
 
 
-                /*
-                 * UPDATE INDICATORS
-                 */
-
-                stepIndicator3
-                    .classList
-                    .remove("active");
-
-                stepIndicator3
-                    .classList
-                    .add("completed");
-
-                stepIndicator4
-                    .classList
-                    .add("active");
-
-
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+                setActiveStep(4);
 
 
             }
@@ -883,17 +1544,51 @@ document
             catch (error) {
 
                 console.error(
-                    "Firestore error:",
+                    "Registration submission error:",
                     error
                 );
 
 
-                alert(
-                    "We could not submit your registration. Please try again."
-                );
+                let message =
+                    "We could not submit your registration. Please try again.";
 
 
-                button.disabled = false;
+                if (
+                    error.code ===
+                    "storage/unauthorized"
+                ) {
+
+                    message =
+                        "The payment screenshot could not be uploaded because Firebase Storage permissions are not configured correctly.";
+
+                }
+
+                else if (
+                    error.code ===
+                    "storage/quota-exceeded"
+                ) {
+
+                    message =
+                        "Firebase Storage is currently unavailable because the storage quota has been exceeded.";
+
+                }
+
+                else if (
+                    error.code ===
+                    "permission-denied"
+                ) {
+
+                    message =
+                        "Firebase denied access. Please check your Firestore and Storage security rules.";
+
+                }
+
+
+                alert(message);
+
+
+                button.disabled =
+                    false;
 
                 button.innerHTML =
                     'Submit Payment <span>→</span>';
@@ -902,3 +1597,17 @@ document
 
         }
     );
+
+}
+
+
+
+/* =========================================
+   INITIAL STATE
+========================================= */
+
+showStep(
+    personalStep
+);
+
+setActiveStep(1);
