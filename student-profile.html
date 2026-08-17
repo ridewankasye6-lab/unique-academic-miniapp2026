@@ -10,20 +10,224 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Student Profile - Unique Academic</title>
+    <meta
+        name="description"
+        content="Student profile - Unique Academic."
+    >
+
+    <title>Student Profile | Unique Academic</title>
 
     <link
         rel="stylesheet"
         href="style.css"
     >
 
+    <style>
+
+        .profilePage {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px 15px 50px;
+        }
+
+        .profileCard {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .profileAvatarLarge {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eff6ff;
+            font-size: 45px;
+        }
+
+        .profileCard h2 {
+            margin: 5px 0;
+        }
+
+        .profileCard p {
+            color: #64748b;
+            margin: 5px 0 15px;
+        }
+
+        .profileStatus {
+            display: inline-block;
+            padding: 7px 13px;
+            border-radius: 20px;
+            background: #dcfce7;
+            color: #166534;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .profileSection {
+            margin-bottom: 25px;
+        }
+
+        .profileSection > h2 {
+            margin-bottom: 15px;
+        }
+
+        .profileInfoCard {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .profileRow {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .profileRow:last-child {
+            border-bottom: none;
+        }
+
+        .profileRow span {
+            color: #64748b;
+        }
+
+        .profileRow strong {
+            text-align: right;
+            word-break: break-word;
+        }
+
+        .profileStats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .profileStat {
+            background: white;
+            border-radius: 16px;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .profileStatIcon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .profileStat strong {
+            display: block;
+            font-size: 24px;
+        }
+
+        .profileStat span {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .profileActions {
+            display: grid;
+            gap: 10px;
+        }
+
+        .profileAction {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px;
+            border: none;
+            border-radius: 13px;
+            background: white;
+            color: inherit;
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .profileAction span {
+            flex: 1;
+        }
+
+        .profileAction b {
+            font-size: 22px;
+        }
+
+        .profileLogout {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .profileLogout button {
+            padding: 13px 30px;
+            border: none;
+            border-radius: 10px;
+            background: #dc2626;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .profileLogout button:hover {
+            background: #b91c1c;
+        }
+
+        .profileMessage {
+            display: none;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .profileMessage.error {
+            display: block;
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        @media (max-width: 600px) {
+
+            .profileStats {
+                grid-template-columns: 1fr;
+            }
+
+            .profileRow {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .profileRow strong {
+                text-align: left;
+            }
+
+            .pageHomeText,
+            .pageBackText {
+                display: none;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-<!-- =====================================
-     TOP NAVIGATION
-===================================== -->
 
 <header class="pageNav">
 
@@ -69,11 +273,13 @@
 
 
 
-<!-- =====================================
-     PROFILE PAGE
-===================================== -->
-
 <main class="profilePage">
+
+
+    <div
+        id="profileMessage"
+        class="profileMessage"
+    ></div>
 
 
     <!-- PROFILE HEADER -->
@@ -86,12 +292,12 @@
 
 
         <h2 id="profileName">
-            Student
+            Loading...
         </h2>
 
 
         <p id="profileEmail">
-            Student Account
+            Loading...
         </p>
 
 
@@ -103,9 +309,7 @@
 
 
 
-    <!-- =====================================
-         ACCOUNT INFORMATION
-    ===================================== -->
+    <!-- ACCOUNT INFORMATION -->
 
     <section class="profileSection">
 
@@ -123,7 +327,7 @@
                 </span>
 
                 <strong id="studentName">
-                    Student
+                    Loading...
                 </strong>
 
             </div>
@@ -136,7 +340,7 @@
                 </span>
 
                 <strong id="studentEmail">
-                    Not available
+                    Loading...
                 </strong>
 
             </div>
@@ -161,7 +365,7 @@
                     📚 Program
                 </span>
 
-                <strong>
+                <strong id="studentProgram">
                     Freshman
                 </strong>
 
@@ -173,9 +377,7 @@
 
 
 
-    <!-- =====================================
-         STUDY INFORMATION
-    ===================================== -->
+    <!-- LEARNING -->
 
     <section class="profileSection">
 
@@ -186,14 +388,13 @@
 
         <div class="profileStats">
 
-
             <div class="profileStat">
 
                 <div class="profileStatIcon">
                     📖
                 </div>
 
-                <strong>
+                <strong id="subjectCount">
                     12
                 </strong>
 
@@ -210,7 +411,7 @@
                     📝
                 </div>
 
-                <strong>
+                <strong id="quizCount">
                     0
                 </strong>
 
@@ -227,7 +428,7 @@
                     ⭐
                 </div>
 
-                <strong>
+                <strong id="bookmarkCount">
                     0
                 </strong>
 
@@ -237,16 +438,13 @@
 
             </div>
 
-
         </div>
 
     </section>
 
 
 
-    <!-- =====================================
-         QUICK ACTIONS
-    ===================================== -->
+    <!-- QUICK ACTIONS -->
 
     <section class="profileSection">
 
@@ -256,7 +454,6 @@
 
 
         <div class="profileActions">
-
 
             <a
                 href="index.html#subjects"
@@ -312,16 +509,13 @@
 
             </button>
 
-
         </div>
 
     </section>
 
 
 
-    <!-- =====================================
-         LOGOUT
-    ===================================== -->
+    <!-- LOGOUT -->
 
     <section class="profileLogout">
 
@@ -329,9 +523,7 @@
             id="profileLogoutBtn"
             type="button"
         >
-
             🚪 Logout
-
         </button>
 
     </section>
@@ -341,61 +533,299 @@
 
 
 
-<!-- =====================================
-     JAVASCRIPT
-===================================== -->
+<script type="module">
 
-<script>
+import { auth } from "./firebase-config.js";
 
-document.getElementById("pageBackBtn").onclick = function () {
+import {
+    onAuthStateChanged,
+    signOut
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-    if (history.length > 1) {
 
-        history.back();
 
-    } else {
+const profileName =
+    document.getElementById("profileName");
 
-        window.location.href = "index.html";
+const profileEmail =
+    document.getElementById("profileEmail");
+
+const studentName =
+    document.getElementById("studentName");
+
+const studentEmail =
+    document.getElementById("studentEmail");
+
+const studentProgram =
+    document.getElementById("studentProgram");
+
+const bookmarkCount =
+    document.getElementById("bookmarkCount");
+
+const profileMessage =
+    document.getElementById("profileMessage");
+
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+document
+    .getElementById("pageBackBtn")
+    .addEventListener(
+        "click",
+        function () {
+
+            if (history.length > 1) {
+
+                history.back();
+
+            } else {
+
+                window.location.href =
+                    "index.html";
+
+            }
+
+        }
+    );
+
+
+document
+    .getElementById("pageHomeBtn")
+    .addEventListener(
+        "click",
+        function () {
+
+            window.location.href =
+                "index.html";
+
+        }
+    );
+
+
+document
+    .getElementById("profileRefreshBtn")
+    .addEventListener(
+        "click",
+        function () {
+
+            location.reload();
+
+        }
+    );
+
+
+
+/* =========================================
+   FIREBASE USER
+========================================= */
+
+onAuthStateChanged(
+    auth,
+    function (user) {
+
+        if (!user) {
+
+            window.location.replace(
+                "student-login.html"
+            );
+
+            return;
+
+        }
+
+
+        const name =
+            user.displayName ||
+            getSavedStudentName() ||
+            "Student";
+
+
+        const email =
+            user.email ||
+            "Not available";
+
+
+        profileName.textContent =
+            name;
+
+        profileEmail.textContent =
+            email;
+
+        studentName.textContent =
+            name;
+
+        studentEmail.textContent =
+            email;
+
+
+        loadBookmarks();
+
+
+        /*
+         * Keep compatibility with
+         * existing project.
+         */
+
+        localStorage.setItem(
+            "studentLoggedIn",
+            "true"
+        );
+
+
+        localStorage.setItem(
+            "uniqueAcademicUser",
+            JSON.stringify({
+                uid: user.uid,
+                email: user.email,
+                displayName: name
+            })
+        );
+
+    }
+);
+
+
+
+/* =========================================
+   GET SAVED NAME
+========================================= */
+
+function getSavedStudentName() {
+
+    try {
+
+        const saved =
+            localStorage.getItem(
+                "uniqueAcademicUser"
+            );
+
+
+        if (!saved) {
+            return "";
+        }
+
+
+        const data =
+            JSON.parse(saved);
+
+
+        return data.displayName || "";
 
     }
 
-};
+    catch (error) {
 
-
-document.getElementById("pageHomeBtn").onclick = function () {
-
-    window.location.href = "index.html";
-
-};
-
-
-document.getElementById("profileRefreshBtn").onclick = function () {
-
-    location.reload();
-
-};
-
-
-document.getElementById("profileLogoutBtn").onclick = function () {
-
-    const confirmLogout =
-        confirm("Are you sure you want to logout?");
-
-    if (confirmLogout) {
-
-        window.location.href = "student-login.html";
+        return "";
 
     }
 
-};
+}
+
+
+
+/* =========================================
+   BOOKMARK COUNT
+========================================= */
+
+function loadBookmarks() {
+
+    let count = 0;
+
+
+    for (
+        let i = 0;
+        i < localStorage.length;
+        i++
+    ) {
+
+        const key =
+            localStorage.key(i);
+
+
+        if (
+            key &&
+            key.startsWith("bookmark_")
+        ) {
+
+            count++;
+
+        }
+
+    }
+
+
+    bookmarkCount.textContent =
+        count;
+
+}
+
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+document
+    .getElementById("profileLogoutBtn")
+    .addEventListener(
+        "click",
+        async function () {
+
+            const confirmed =
+                confirm(
+                    "Are you sure you want to logout?"
+                );
+
+
+            if (!confirmed) {
+                return;
+            }
+
+
+            try {
+
+                await signOut(auth);
+
+
+                localStorage.removeItem(
+                    "uniqueAcademicUser"
+                );
+
+                localStorage.removeItem(
+                    "studentLoggedIn"
+                );
+
+                sessionStorage.clear();
+
+
+                window.location.href =
+                    "student-login.html";
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Logout error:",
+                    error
+                );
+
+
+                profileMessage.textContent =
+                    "❌ Unable to logout. Please try again.";
+
+                profileMessage.className =
+                    "profileMessage error";
+
+            }
+
+        }
+    );
 
 </script>
-
-
-<script
-    type="module"
-    src="access-guard.js"
-></script>
 
 
 </body>
