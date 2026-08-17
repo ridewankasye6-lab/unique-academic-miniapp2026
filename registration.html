@@ -10,9 +10,17 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        name="description"
+        content="Create your Unique Academic student account."
+    >
+
     <title>Register | Unique Academic</title>
 
-    <link rel="stylesheet" href="registration.css">
+    <link
+        rel="stylesheet"
+        href="registration.css"
+    >
 
 </head>
 
@@ -20,17 +28,27 @@
 <body>
 
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="register-header">
 
     <div class="brand">
 
-        <span class="brand-icon">🎓</span>
+        <span class="brand-icon">
+            🎓
+        </span>
 
         <div>
 
-            <h1>Unique Academic</h1>
+            <h1>
+                Unique Academic
+            </h1>
 
-            <p> Learning Platform</p>
+            <p>
+                Learning Platform
+            </p>
 
         </div>
 
@@ -48,13 +66,19 @@
 
 
 
+<!-- =====================================================
+     MAIN REGISTRATION
+===================================================== -->
+
 <main class="registration-container">
 
 
 <section class="registration-card">
 
 
-    <!-- INTRO -->
+    <!-- =================================================
+         INTRO
+    ================================================== -->
 
     <div class="register-intro">
 
@@ -62,7 +86,9 @@
             📝
         </div>
 
-        <h2>Create Your Account</h2>
+        <h2>
+            Create Your Account
+        </h2>
 
         <p>
             Join Unique Academic and access organized
@@ -73,10 +99,14 @@
 
 
 
-    <!-- PROGRESS -->
+    <!-- =================================================
+         PROGRESS
+    ================================================== -->
 
     <div class="steps">
 
+
+        <!-- STEP 1 -->
 
         <div
             class="step active"
@@ -87,13 +117,17 @@
                 1
             </div>
 
-            <span>Personal</span>
+            <span>
+                Personal
+            </span>
 
         </div>
 
 
         <div class="step-line"></div>
 
+
+        <!-- STEP 2 -->
 
         <div
             class="step"
@@ -104,13 +138,17 @@
                 2
             </div>
 
-            <span>Security</span>
+            <span>
+                Security
+            </span>
 
         </div>
 
 
         <div class="step-line"></div>
 
+
+        <!-- STEP 3 -->
 
         <div
             class="step"
@@ -121,13 +159,17 @@
                 3
             </div>
 
-            <span>Payment</span>
+            <span>
+                Payment
+            </span>
 
         </div>
 
 
         <div class="step-line"></div>
 
+
+        <!-- STEP 4 -->
 
         <div
             class="step"
@@ -138,7 +180,9 @@
                 4
             </div>
 
-            <span>Verification</span>
+            <span>
+                Verification
+            </span>
 
         </div>
 
@@ -146,9 +190,9 @@
 
 
 
-    <!-- =================================
-         STEP 1
-    ================================== -->
+    <!-- =================================================
+         STEP 1 — PERSONAL INFORMATION
+    ================================================== -->
 
     <div
         class="form-step"
@@ -157,7 +201,9 @@
 
         <div class="section-heading">
 
-            <h3>👤 Personal Information</h3>
+            <h3>
+                👤 Personal Information
+            </h3>
 
             <p>
                 Tell us a little about yourself.
@@ -165,6 +211,8 @@
 
         </div>
 
+
+        <!-- FULL NAME -->
 
         <div class="form-group">
 
@@ -182,6 +230,8 @@
         </div>
 
 
+        <!-- PHONE -->
+
         <div class="form-group">
 
             <label for="phone">
@@ -197,6 +247,8 @@
 
         </div>
 
+
+        <!-- EMAIL -->
 
         <div class="form-group">
 
@@ -214,30 +266,85 @@
         </div>
 
 
+        <!-- UNIVERSITY -->
+
         <div class="form-group">
 
             <label for="university">
                 University
             </label>
+<select id="university">
 
-            <select id="university">
+    <option value="">
+        Select your university
+    </option>
 
-                <option value="">
-                    Select your university
-                </option>
+    <option value="Addis Ababa University">
+        Addis Ababa University
+    </option>
 
-                <option value="Bahir Dar University">
-                    Bahir Dar University
-                </option>
+    <option value="Bahir Dar University">
+        Bahir Dar University
+    </option>
 
-                <option value="Other">
-                    Other
-                </option>
+    <option value="University of Gondar">
+        University of Gondar
+    </option>
 
-            </select>
+    <option value="Hawassa University">
+        Hawassa University
+    </option>
+
+    <option value="Jimma University">
+        Jimma University
+    </option>
+
+    <option value="Mekelle University">
+        Mekelle University
+    </option>
+
+    <option value="Haramaya University">
+        Haramaya University
+    </option>
+
+    <option value="Arba Minch University">
+        Arba Minch University
+    </option>
+
+    <option value="Adama Science and Technology University">
+        Adama Science and Technology University
+    </option>
+
+    <option value="Debre Berhan University">
+        Debre Berhan University
+    </option>
+
+    <option value="Wolaita Sodo University">
+        Wolaita Sodo University
+    </option>
+
+    <option value="Dire Dawa University">
+        Dire Dawa University
+    </option>
+
+    <option value="Dilla University">
+        Dilla University
+    </option>
+
+    <option value="Ambo University">
+        Ambo University
+    </option>
+
+    <option value="Other">
+        Other
+    </option>
+
+</select>
 
         </div>
 
+
+        <!-- DEPARTMENT -->
 
         <div class="form-group">
 
@@ -254,6 +361,8 @@
         </div>
 
 
+        <!-- CONTINUE -->
+
         <button
             type="button"
             class="continue-btn"
@@ -262,25 +371,32 @@
 
             Continue
 
-            <span>→</span>
+            <span>
+                →
+            </span>
 
         </button>
 
+
+        <!-- LOGIN -->
 
         <p class="login-text">
 
             Already have an account?
 
-<a href="student-login.html">
+            <a href="student-login.html">
+                Login
+            </a>
+
         </p>
 
     </div>
 
 
 
-    <!-- =================================
-         STEP 2
-    ================================== -->
+    <!-- =================================================
+         STEP 2 — SECURITY
+    ================================================== -->
 
     <div
         class="form-step"
@@ -290,7 +406,9 @@
 
         <div class="section-heading">
 
-            <h3>🔐 Account Security</h3>
+            <h3>
+                🔐 Account Security
+            </h3>
 
             <p>
                 Create a secure password for your account.
@@ -298,6 +416,8 @@
 
         </div>
 
+
+        <!-- PASSWORD -->
 
         <div class="form-group">
 
@@ -315,6 +435,8 @@
         </div>
 
 
+        <!-- CONFIRM PASSWORD -->
+
         <div class="form-group">
 
             <label for="confirmPassword">
@@ -330,6 +452,8 @@
 
         </div>
 
+
+        <!-- PASSWORD STRENGTH -->
 
         <div class="password-strength">
 
@@ -353,6 +477,8 @@
         </div>
 
 
+        <!-- PASSWORD REQUIREMENTS -->
+
         <div class="password-requirements">
 
             <h4>
@@ -374,6 +500,8 @@
         </div>
 
 
+        <!-- BUTTONS -->
+
         <div class="security-buttons">
 
             <button
@@ -393,7 +521,9 @@
 
                 Continue
 
-                <span>→</span>
+                <span>
+                    →
+                </span>
 
             </button>
 
@@ -403,9 +533,9 @@
 
 
 
-    <!-- =================================
+    <!-- =================================================
          STEP 3 — PAYMENT
-    ================================== -->
+    ================================================== -->
 
     <div
         class="form-step"
@@ -413,10 +543,11 @@
         style="display:none;"
     >
 
-
         <div class="section-heading">
 
-            <h3>💳 Registration Payment</h3>
+            <h3>
+                💳 Registration Payment
+            </h3>
 
             <p>
                 Complete your registration payment
@@ -427,7 +558,7 @@
 
 
 
-        <!-- PRICE -->
+        <!-- PAYMENT FEE -->
 
         <div class="fee-card">
 
@@ -494,7 +625,7 @@
                 <span>
 
                     <strong>
-                        CBE / CBE Birr
+                        CBE Bank
                     </strong>
 
                     <small>
@@ -541,12 +672,13 @@
 
             </button>
 
-
         </div>
 
 
 
-        <!-- PAYMENT DETAILS -->
+        <!-- =================================================
+             PAYMENT DETAILS
+        ================================================== -->
 
         <div
             id="paymentDetails"
@@ -577,31 +709,40 @@
             </div>
 
 
+
+            <!-- ACCOUNT HOLDER -->
+
             <div class="account-holder-box">
 
-    <span>👤 Account Holder</span>
+                <span>
+                    👤 Account Holder
+                </span>
 
-    <strong id="accountHolder">
-        Rediwan Kassiye
-    </strong>
+                <strong id="accountHolder">
+                    Rediwan Kassiye
+                </strong>
 
-</div>
+            </div>
 
 
-<div class="account-number-box">
 
-    <span id="accountNumber">
-        —
-    </span>
+            <!-- ACCOUNT NUMBER -->
 
-    <button
-        type="button"
-        id="copyPaymentNumber"
-    >
-        📋 Copy
-    </button>
+            <div class="account-number-box">
 
-</div>
+                <span id="accountNumber">
+                    —
+                </span>
+
+                <button
+                    type="button"
+                    id="copyPaymentNumber"
+                >
+                    📋 Copy
+                </button>
+
+            </div>
+
 
 
             <p class="payment-warning">
@@ -615,7 +756,9 @@
 
 
 
-        <!-- REFERENCE -->
+        <!-- =================================================
+             PAYMENT REFERENCE
+        ================================================== -->
 
         <div class="form-group payment-form">
 
@@ -629,6 +772,7 @@
                 type="text"
                 id="paymentReference"
                 placeholder="Enter your payment reference"
+                autocomplete="off"
             >
 
             <small>
@@ -640,7 +784,9 @@
 
 
 
-        <!-- SCREENSHOT -->
+        <!-- =================================================
+             PAYMENT SCREENSHOT
+        ================================================== -->
 
         <div class="form-group payment-form">
 
@@ -688,7 +834,9 @@
 
 
 
-        <!-- PAYMENT BUTTONS -->
+        <!-- =================================================
+             PAYMENT BUTTONS
+        ================================================== -->
 
         <div class="security-buttons">
 
@@ -711,150 +859,139 @@
 
                 Submit Payment
 
-                <span>→</span>
+                <span>
+                    →
+                </span>
 
             </button>
 
         </div>
 
-
-    </div>
-<!-- =================================
-     STEP 4 — VERIFICATION
-================================== -->
-
-<div
-    class="form-step"
-    id="verificationStep"
-    style="display:none;"
->
-
-    <div class="section-heading">
-
-        <h3>🔐 Payment Verification</h3>
-
-        <p>
-            Your payment information has been submitted successfully.
-        </p>
-
     </div>
 
-    <div class="verification-card">
 
-        <div class="verification-icon">
-            ⏳
-        </div>
 
-        <h2>
-            Pending Verification
-        </h2>
+    <!-- =================================================
+         STEP 4 — VERIFICATION
+         
+         IMPORTANT:
+         There is ONLY ONE verificationStep.
+    ================================================== -->
 
-        <p>
-            Payment information completed successfully!
-            Your payment is now waiting for verification
-            by the Unique Academic administration.
-        </p>
+    <div
+        class="form-step"
+        id="verificationStep"
+        style="display:none;"
+    >
 
-        <div class="verification-status">
+        <div class="section-heading">
 
-            <div>
-                <span>💰 Payment</span>
-                <strong>Submitted</strong>
-            </div>
-
-            <div>
-                <span>🔐 Verification</span>
-                <strong>Pending</strong>
-            </div>
-
-            <div>
-                <span>📋 Registration</span>
-                <strong>Under Review</strong>
-            </div>
-
-        </div>
-
-        <div class="verification-message">
-
-            <strong>
-                What happens next?
-            </strong>
+            <h3>
+                🔐 Payment Verification
+            </h3>
 
             <p>
-                Our administration will check your payment
-                information and screenshot. Once your payment
-                is verified, your registration will be approved.
+                Your registration has been submitted successfully.
             </p>
 
         </div>
 
-    </div>
-
-</div>
-<!-- =================================
-     STEP 4 — VERIFICATION
-================================== -->
-
-<div
-    class="form-step"
-    id="verificationStep"
-    style="display:none;"
->
-
-    <div class="section-heading">
-
-        <h3>🔎 Payment Verification</h3>
-
-        <p>
-            Your registration has been submitted successfully.
-        </p>
-
-    </div>
 
 
-    <div class="verification-card">
+        <div class="verification-card">
 
-        <div class="verification-icon">
-            ⏳
+            <div class="verification-icon">
+                ⏳
+            </div>
+
+
+            <h2>
+                Verification Pending
+            </h2>
+
+
+            <p>
+                Your payment information has been submitted
+                successfully and is now waiting for verification
+                by the Unique Academic administration.
+            </p>
+
+
+
+            <!-- STATUS -->
+
+            <div class="verification-status">
+
+                <div>
+
+                    <span>
+                        💰 Payment
+                    </span>
+
+                    <strong>
+                        Submitted
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        🔐 Verification
+                    </span>
+
+                    <strong>
+                        Pending
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        📋 Registration
+                    </span>
+
+                    <strong>
+                        Under Review
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NEXT STEP -->
+
+            <div class="verification-message">
+
+                <strong>
+                    What happens next?
+                </strong>
+
+                <p>
+                    Our administration will check your payment
+                    information and screenshot. Once your payment
+                    is verified, your registration will be approved.
+                </p>
+
+            </div>
+
         </div>
 
-        <h2>
-            Verification Pending
-        </h2>
-
-        <p>
-            Your payment information has been submitted
-            successfully and is now waiting for verification.
-        </p>
-
-        <div class="verification-status">
-
-            <span>
-                🟡
-            </span>
-
-            <strong>
-                Payment verification in progress
-            </strong>
-
-        </div>
-
-        <p class="verification-note">
-
-            Our administrator will review your payment
-            information. Please wait for the verification
-            result.
-
-        </p>
-
     </div>
 
-</div>
+
 </section>
 
 
 
-<!-- SECURITY NOTICE -->
+<!-- =====================================================
+     SECURITY NOTICE
+===================================================== -->
 
 <div class="security-notice">
 
@@ -882,6 +1019,10 @@
 
 
 
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer>
 
     <p>
@@ -892,7 +1033,16 @@
 </footer>
 
 
-<script type="module" src="registration.js"></script>
+
+<!-- =====================================================
+     REGISTRATION JAVASCRIPT
+===================================================== -->
+
+<script
+    type="module"
+    src="registration.js"
+></script>
+
 
 </body>
 
