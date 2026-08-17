@@ -1,308 +1,882 @@
-// ==========================================
-// UNIQUE ACADEMIC - MAIN JAVASCRIPT
-// ==========================================
+// =====================================================
+// UNIQUE ACADEMIC — MAIN JAVASCRIPT
+// =====================================================
 
 
-// ==========================================
-// SEARCH SUBJECTS
-// ==========================================
+// =====================================================
+// DOM READY
+// =====================================================
 
-function searchSubjects() {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const searchInput = document.getElementById("search");
+    // =================================================
+    // ELEMENTS
+    // =================================================
 
-    if (!searchInput) {
-        return;
-    }
+    const searchInput =
+        document.getElementById("search");
 
-    const input =
-        searchInput.value.toLowerCase();
+    const modeBtn =
+        document.getElementById("modeBtn");
 
-    const cards =
-        document.getElementsByClassName("card");
+    const menuBtn =
+        document.getElementById("menuBtn");
 
-    for (let i = 0; i < cards.length; i++) {
+    const headerMenuBtn =
+        document.getElementById("headerMenuBtn");
 
-        const text =
-            cards[i].innerText.toLowerCase();
+    const sideMenu =
+        document.getElementById("sideMenu");
 
-        if (text.includes(input)) {
+    const menuOverlay =
+        document.getElementById("menuOverlay");
 
-            cards[i].style.display = "";
+    const refreshBtn =
+        document.getElementById("refreshBtn");
 
-        } else {
+    const shareAppBtn =
+        document.getElementById("shareAppBtn");
 
-            cards[i].style.display = "none";
-
-        }
-
-    }
-
-}
-
-
-// ==========================================
-// DARK MODE
-// ==========================================
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        const modeBtn =
-            document.getElementById("modeBtn");
+    const logoutBtn =
+        document.getElementById("logoutBtn");
 
 
-        // Restore saved mode
-        const savedMode =
-            localStorage.getItem("theme");
+    // =================================================
+    // THEME
+    // =================================================
 
+    function getSettings() {
 
-        if (savedMode === "dark") {
+        try {
 
-            document.body.classList.add("dark");
+            const saved =
+                localStorage.getItem(
+                    "uniqueAcademicSettings"
+                );
 
-            if (modeBtn) {
-                modeBtn.innerHTML =
-                    "☀️ Light Mode";
-            }
+            return saved
+                ? JSON.parse(saved)
+                : {};
 
-        } else {
+        } catch (error) {
 
-            document.body.classList.remove("dark");
+            console.error(
+                "Unable to read settings:",
+                error
+            );
 
-            if (modeBtn) {
-                modeBtn.innerHTML =
-                    "🌙 Dark Mode";
-            }
+            return {};
 
         }
 
+    }
 
-        // Change mode
+
+    function saveSettings(settings) {
+
+        localStorage.setItem(
+            "uniqueAcademicSettings",
+            JSON.stringify(settings)
+        );
+
+    }
+
+
+    function applyTheme() {
+
+        const settings =
+            getSettings();
+
+        const darkMode =
+            settings.darkMode === true;
+
+        document.body.classList.toggle(
+            "dark-mode",
+            darkMode
+        );
+
         if (modeBtn) {
 
-            modeBtn.onclick = function () {
+            modeBtn.innerHTML =
+                darkMode
+                    ? "☀️ Light Mode"
+                    : "🌙 Dark Mode";
 
-                document.body.classList.toggle("dark");
+        }
 
+    }
+
+
+    function toggleTheme() {
+
+        const settings =
+            getSettings();
+
+        settings.darkMode =
+            settings.darkMode !== true;
+
+        saveSettings(settings);
+
+        applyTheme();
+
+    }
+
+
+    // Apply saved theme immediately
+    applyTheme();
+
+
+    if (modeBtn) {
+
+        modeBtn.addEventListener(
+            "click",
+            toggleTheme
+        );
+
+    }
+
+
+    // =================================================
+    // SIDE MENU
+    // =================================================
+
+    function openMenu() {
+
+        if (!sideMenu || !menuOverlay) {
+            return;
+        }
+
+        sideMenu.classList.add("active");
+
+        menuOverlay.classList.add("active");
+
+        sideMenu.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        if (menuBtn) {
+
+            menuBtn.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+        }
+
+        if (headerMenuBtn) {
+
+            headerMenuBtn.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+        }
+
+        document.body.classList.add(
+            "menu-open"
+        );
+
+    }
+
+
+    function closeMenu() {
+
+        if (!sideMenu || !menuOverlay) {
+            return;
+        }
+
+        sideMenu.classList.remove("active");
+
+        menuOverlay.classList.remove("active");
+
+        sideMenu.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        if (menuBtn) {
+
+            menuBtn.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+        if (headerMenuBtn) {
+
+            headerMenuBtn.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+        document.body.classList.remove(
+            "menu-open"
+        );
+
+    }
+
+
+    if (menuBtn) {
+
+        menuBtn.addEventListener(
+            "click",
+            function () {
 
                 if (
-                    document.body.classList.contains("dark")
+                    sideMenu &&
+                    sideMenu.classList.contains("active")
                 ) {
 
-                    localStorage.setItem(
-                        "theme",
-                        "dark"
-                    );
-
-                    modeBtn.innerHTML =
-                        "☀️ Light Mode";
+                    closeMenu();
 
                 } else {
 
-                    localStorage.setItem(
-                        "theme",
-                        "light"
-                    );
-
-                    modeBtn.innerHTML =
-                        "🌙 Dark Mode";
+                    openMenu();
 
                 }
 
-            };
-
-        }
+            }
+        );
 
     }
-);
 
 
-// ==========================================
-// BOOKMARKS
-// ==========================================
+    if (headerMenuBtn) {
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
+        headerMenuBtn.addEventListener(
+            "click",
+            function () {
 
-        const bookmarks =
-            document.querySelectorAll(
-                ".bookmarkBtn"
-            );
+                if (
+                    sideMenu &&
+                    sideMenu.classList.contains("active")
+                ) {
 
+                    closeMenu();
 
-        bookmarks.forEach(
-            (button, index) => {
+                } else {
 
-                const saved =
-                    localStorage.getItem(
-                        "bookmark" + index
-                    );
-
-
-                // Restore bookmark
-                if (saved === "saved") {
-
-                    button.innerHTML =
-                        "⭐ Saved";
-
-                    button.style.background =
-                        "green";
+                    openMenu();
 
                 }
 
+            }
+        );
 
-                // Bookmark button
-                button.onclick = function () {
+    }
+
+
+    if (menuOverlay) {
+
+        menuOverlay.addEventListener(
+            "click",
+            closeMenu
+        );
+
+    }
+
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (event.key === "Escape") {
+
+                closeMenu();
+
+            }
+
+        }
+    );
+
+
+    // Close menu when normal link is clicked
+
+    document
+        .querySelectorAll(".sideMenu a")
+        .forEach(function (link) {
+
+            link.addEventListener(
+                "click",
+                closeMenu
+            );
+
+        });
+
+
+    // =================================================
+    // REFRESH
+    // =================================================
+
+    if (refreshBtn) {
+
+        refreshBtn.addEventListener(
+            "click",
+            function () {
+
+                closeMenu();
+
+                window.location.reload();
+
+            }
+        );
+
+    }
+
+
+    // =================================================
+    // SHARE APP
+    // =================================================
+
+    if (shareAppBtn) {
+
+        shareAppBtn.addEventListener(
+            "click",
+            async function () {
+
+                const shareData = {
+
+                    title:
+                        "Unique Academic",
+
+                    text:
+                        "Learn smarter with Unique Academic 🎓",
+
+                    url:
+                        window.location.href
+
+                };
+
+
+                try {
 
                     if (
-                        button.innerHTML.includes(
-                            "Bookmark"
-                        )
+                        navigator.share
                     ) {
 
-                        button.innerHTML =
-                            "⭐ Saved";
+                        await navigator.share(
+                            shareData
+                        );
 
-                        button.style.background =
-                            "green";
+                    } else if (
+                        navigator.clipboard
+                    ) {
 
-                        localStorage.setItem(
-                            "bookmark" + index,
-                            "saved"
+                        await navigator
+                            .clipboard
+                            .writeText(
+                                window.location.href
+                            );
+
+                        alert(
+                            "Unique Academic link copied!"
                         );
 
                     } else {
 
-                        button.innerHTML =
-                            "⭐ Bookmark";
-
-                        button.style.background =
-                            "#ffc107";
-
-                        localStorage.removeItem(
-                            "bookmark" + index
+                        alert(
+                            "Sharing is not supported on this device."
                         );
 
                     }
 
-                };
+                } catch (error) {
+
+                    console.log(
+                        "Share cancelled."
+                    );
+
+                }
 
             }
         );
 
     }
-);
 
 
-// ==========================================
-// HOME PAGE PROGRESS BARS
-// ==========================================
+    // =================================================
+    // LOGOUT
+    // =================================================
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
+    if (logoutBtn) {
 
-        const progressBars =
+        logoutBtn.addEventListener(
+            "click",
+            function () {
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+                if (!confirmed) {
+                    return;
+                }
+
+
+                localStorage.removeItem(
+                    "uniqueAcademicUser"
+                );
+
+                localStorage.removeItem(
+                    "studentLoggedIn"
+                );
+
+                sessionStorage.clear();
+
+                closeMenu();
+
+                window.location.href =
+                    "student-login.html";
+
+            }
+        );
+
+    }
+
+
+    // =================================================
+    // SEARCH SUBJECTS
+    // =================================================
+
+    function searchSubjects() {
+
+        if (!searchInput) {
+            return;
+        }
+
+        const query =
+            searchInput.value
+                .trim()
+                .toLowerCase();
+
+
+        const subjectCards =
             document.querySelectorAll(
-                ".progressBar"
+                ".subjectCard"
             );
 
-        const progressTexts =
-            document.querySelectorAll(
-                ".progressText"
-            );
+
+        subjectCards.forEach(
+            function (card) {
+
+                const text =
+                    card.innerText
+                        .toLowerCase();
 
 
-        progressBars.forEach(
-            (bar, index) => {
+                if (
+                    text.includes(query)
+                ) {
 
-                const saved =
-                    localStorage.getItem(
-                        "progress" + index
+                    card.style.display =
+                        "";
+
+                } else {
+
+                    card.style.display =
+                        "none";
+
+                }
+
+            }
+        );
+
+    }
+
+
+    if (searchInput) {
+
+        searchInput.addEventListener(
+            "input",
+            searchSubjects
+        );
+
+    }
+
+
+    // =================================================
+    // BOOKMARKS
+    // =================================================
+
+    const bookmarkButtons =
+        document.querySelectorAll(
+            ".bookmarkBtn"
+        );
+
+
+    bookmarkButtons.forEach(
+        function (button) {
+
+            const card =
+                button.closest(
+                    ".subjectCard"
+                );
+
+
+            if (!card) {
+                return;
+            }
+
+
+            const titleElement =
+                card.querySelector("h3");
+
+
+            const openLink =
+                card.querySelector(
+                    'a.button[href]'
+                );
+
+
+            if (!titleElement || !openLink) {
+                return;
+            }
+
+
+            const title =
+                titleElement.innerText
+                    .trim();
+
+
+            const link =
+                openLink.getAttribute(
+                    "href"
+                );
+
+
+            /*
+             * Create a stable bookmark ID
+             * from the subject title.
+             */
+
+            const bookmarkId =
+                "bookmark_" +
+                title
+                    .toLowerCase()
+                    .replace(
+                        /[^a-z0-9]+/g,
+                        "_"
+                    )
+                    .replace(
+                        /^_+|_+$/g,
+                        ""
                     );
 
 
-                // Restore saved progress
-                if (saved !== null) {
+            // Restore bookmark
 
-                    bar.value = saved;
+            const saved =
+                localStorage.getItem(
+                    bookmarkId
+                );
 
 
-                    if (progressTexts[index]) {
+            if (saved) {
 
-                        progressTexts[index].innerHTML =
-                            saved + "%";
+                button.innerHTML =
+                    "⭐ Saved";
+
+                button.classList.add(
+                    "bookmarked"
+                );
+
+            }
+
+
+            // Click bookmark
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const existing =
+                        localStorage.getItem(
+                            bookmarkId
+                        );
+
+
+                    if (existing) {
+
+                        localStorage.removeItem(
+                            bookmarkId
+                        );
+
+                        button.innerHTML =
+                            "⭐ Bookmark";
+
+                        button.classList.remove(
+                            "bookmarked"
+                        );
+
+                    } else {
+
+                        const bookmarkData = {
+
+                            title: title,
+
+                            link: link
+
+                        };
+
+
+                        localStorage.setItem(
+                            bookmarkId,
+                            JSON.stringify(
+                                bookmarkData
+                            )
+                        );
+
+
+                        button.innerHTML =
+                            "⭐ Saved";
+
+                        button.classList.add(
+                            "bookmarked"
+                        );
 
                     }
 
                 }
+            );
+
+        }
+    );
 
 
-                // Manual progress still works
-                bar.oninput = function () {
+    // =================================================
+    // CONTINUE LEARNING
+    // =================================================
+
+    const openButtons =
+        document.querySelectorAll(
+            ".subjectCard .button"
+        );
+
+
+    openButtons.forEach(
+        function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const card =
+                        button.closest(
+                            ".subjectCard"
+                        );
+
+
+                    if (!card) {
+                        return;
+                    }
+
+
+                    const title =
+                        card.querySelector("h3");
+
+
+                    if (title) {
+
+                        localStorage.setItem(
+                            "lastSubject",
+                            title.innerText.trim()
+                        );
+
+                    }
+
+
+                    localStorage.setItem(
+                        "lastLink",
+                        button.href
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+    const continueText =
+        document.getElementById(
+            "continueText"
+        );
+
+    const continueBtn =
+        document.getElementById(
+            "continueBtn"
+        );
+
+
+    const lastSubject =
+        localStorage.getItem(
+            "lastSubject"
+        );
+
+    const lastLink =
+        localStorage.getItem(
+            "lastLink"
+        );
+
+
+    if (
+        lastSubject &&
+        lastLink &&
+        continueText &&
+        continueBtn
+    ) {
+
+        continueText.innerHTML =
+            "Last opened: " +
+            lastSubject;
+
+        continueBtn.href =
+            lastLink;
+
+        continueBtn.innerHTML =
+            "Continue Reading";
+
+    }
+
+
+    // =================================================
+    // MANUAL PROGRESS BARS
+    // =================================================
+
+    const progressBars =
+        document.querySelectorAll(
+            ".progressBar"
+        );
+
+
+    const progressTexts =
+        document.querySelectorAll(
+            ".progressText"
+        );
+
+
+    progressBars.forEach(
+        function (bar, index) {
+
+            const key =
+                "progress_" + index;
+
+
+            const saved =
+                localStorage.getItem(
+                    key
+                );
+
+
+            if (saved !== null) {
+
+                bar.value =
+                    saved;
+
+
+                if (progressTexts[index]) {
+
+                    progressTexts[index].textContent =
+                        saved + "%";
+
+                }
+
+            }
+
+
+            bar.addEventListener(
+                "input",
+                function () {
 
                     const value =
                         bar.value;
 
+
                     if (progressTexts[index]) {
 
-                        progressTexts[index].innerHTML =
+                        progressTexts[index].textContent =
                             value + "%";
 
                     }
 
+
                     localStorage.setItem(
-                        "progress" + index,
+                        key,
                         value
                     );
 
-                };
+                }
+            );
 
-            }
+        }
+    );
+
+
+    // =================================================
+    // CHAPTER READING PROGRESS
+    // =================================================
+
+    const chapter =
+        document.querySelector(
+            ".chapter"
         );
 
-    }
-);
 
+    if (chapter) {
 
-// ==========================================
-// AUTOMATIC CHAPTER READING PROGRESS
-// ==========================================
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        const chapter =
-            document.querySelector(".chapter");
-
-
-        // Only run on chapter pages
-        if (!chapter) {
-            return;
-        }
-
-
-        // Get current page filename
         const page =
             window.location.pathname
                 .split("/")
                 .pop();
 
 
-        // Create unique progress key
         const progressKey =
             "readingProgress_" + page;
 
 
-        // Restore previous progress
         const saved =
             localStorage.getItem(
                 progressKey
             );
+
+
+        function updateReadingProgress(
+            progress
+        ) {
+
+            document
+                .querySelectorAll(
+                    ".readingProgress, .progressText"
+                )
+                .forEach(
+                    function (element) {
+
+                        element.textContent =
+                            progress + "%";
+
+                    }
+                );
+
+
+            document
+                .querySelectorAll(
+                    ".progressBar"
+                )
+                .forEach(
+                    function (bar) {
+
+                        bar.value =
+                            progress;
+
+                    }
+                );
+
+        }
 
 
         if (saved !== null) {
@@ -314,7 +888,6 @@ document.addEventListener(
         }
 
 
-        // Track scrolling
         window.addEventListener(
             "scroll",
             function () {
@@ -340,19 +913,21 @@ document.addEventListener(
                 let progress = 0;
 
 
-                if (totalScrollable > 0) {
+                if (
+                    totalScrollable > 0
+                ) {
 
                     progress =
                         Math.round(
-                            (scrollTop /
-                                totalScrollable) *
-                            100
+                            (
+                                scrollTop /
+                                totalScrollable
+                            ) * 100
                         );
 
                 }
 
 
-                // Never go above 100
                 progress =
                     Math.min(
                         100,
@@ -375,489 +950,6 @@ document.addEventListener(
 
             }
         );
-
-
-        // ======================================
-        // UPDATE READING PROGRESS
-        // ======================================
-
-        function updateReadingProgress(
-            progress
-        ) {
-
-            // Find progress elements on page
-            const progressElements =
-                document.querySelectorAll(
-                    ".readingProgress, .progressText"
-                );
-
-
-            progressElements.forEach(
-                element => {
-
-                    element.textContent =
-                        progress + "%";
-
-                }
-            );
-
-
-            // Update progress bars if present
-            const bars =
-                document.querySelectorAll(
-                    ".progressBar"
-                );
-
-
-            bars.forEach(
-                bar => {
-
-                    bar.value =
-                        progress;
-
-                }
-            );
-
-        }
-
-    }
-);
-
-
-// ==========================================
-// CONTINUE LEARNING
-// ==========================================
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        const openButtons =
-            document.querySelectorAll(
-                ".button"
-            );
-
-
-        openButtons.forEach(
-            button => {
-
-                if (
-                    button.innerHTML.includes(
-                        "📖 Open"
-                    )
-                ) {
-
-                    button.addEventListener(
-                        "click",
-                        function () {
-
-                            const parent =
-                                button.parentElement;
-
-
-                            const title =
-                                parent.querySelector(
-                                    "h3"
-                                );
-
-
-                            if (title) {
-
-                                localStorage.setItem(
-                                    "lastSubject",
-                                    title.innerText
-                                );
-
-                            }
-
-
-                            localStorage.setItem(
-                                "lastLink",
-                                button.href
-                            );
-
-                        }
-                    );
-
-                }
-
-            }
-        );
-
-
-        // Restore Continue Learning
-        const lastSubject =
-            localStorage.getItem(
-                "lastSubject"
-            );
-
-        const lastLink =
-            localStorage.getItem(
-                "lastLink"
-            );
-
-
-        const continueText =
-            document.getElementById(
-                "continueText"
-            );
-
-        const continueBtn =
-            document.getElementById(
-                "continueBtn"
-            );
-
-
-        if (
-            lastSubject &&
-            lastLink &&
-            continueText &&
-            continueBtn
-        ) {
-
-            continueText.innerHTML =
-                "Last opened: " +
-                lastSubject;
-
-
-            continueBtn.href =
-                lastLink;
-
-
-            continueBtn.innerHTML =
-                "Continue Reading";
-
-        }
-
-    }
-);
-/* =====================================================
-   UNIQUE ACADEMIC SIDE MENU
-===================================================== */
-
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
-const menuOverlay = document.getElementById("menuOverlay");
-const closeMenuBtn = document.getElementById("closeMenuBtn");
-
-
-function openSideMenu() {
-
-    sideMenu.classList.add("open");
-
-    menuOverlay.classList.add("open");
-
-    document.body.style.overflow = "hidden";
-
-}
-
-
-function closeSideMenu() {
-
-    sideMenu.classList.remove("open");
-
-    menuOverlay.classList.remove("open");
-
-    document.body.style.overflow = "";
-
-}
-
-
-if (menuBtn) {
-
-    menuBtn.onclick = function () {
-
-        openSideMenu();
-
-    };
-
-}
-
-
-if (closeMenuBtn) {
-
-    closeMenuBtn.onclick = function () {
-
-        closeSideMenu();
-
-    };
-
-}
-
-
-if (menuOverlay) {
-
-    menuOverlay.onclick = function () {
-
-        closeSideMenu();
-
-    };
-
-}
-
-
-/* Close menu after clicking a menu link */
-
-document.querySelectorAll(".menuItem").forEach(function (item) {
-
-    item.addEventListener("click", function () {
-
-        closeSideMenu();
-
-    });
-
-});
-
-
-/* =====================================================
-   MENU DARK MODE
-===================================================== */
-
-const menuModeBtn =
-    document.getElementById("menuModeBtn");
-
-if (menuModeBtn) {
-
-    menuModeBtn.onclick = function () {
-
-        document.body.classList.toggle("dark");
-
-        if (document.body.classList.contains("dark")) {
-
-            menuModeBtn.innerHTML =
-                "☀️ <span>Light Mode</span>";
-
-        } else {
-
-            menuModeBtn.innerHTML =
-                "🌙 <span>Dark Mode</span>";
-
-        }
-
-    };
-
-}
-// =====================================================
-// UNIQUE ACADEMIC SIDE MENU
-// =====================================================
-
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
-const menuOverlay = document.getElementById("menuOverlay");
-
-
-// OPEN MENU
-
-menuBtn.addEventListener("click", function () {
-
-    sideMenu.classList.add("active");
-    menuOverlay.classList.add("active");
-
-});
-
-
-// CLOSE MENU
-
-menuOverlay.addEventListener("click", function () {
-
-    sideMenu.classList.remove("active");
-    menuOverlay.classList.remove("active");
-
-});
-
-
-// CLOSE WITH ESCAPE
-
-document.addEventListener("keydown", function (event) {
-
-    if (event.key === "Escape") {
-
-        sideMenu.classList.remove("active");
-        menuOverlay.classList.remove("active");
-
-    }
-
-});
-
-
-// =====================================================
-// REFRESH
-// =====================================================
-
-const refreshBtn =
-    document.getElementById("refreshBtn");
-
-if (refreshBtn) {
-
-    refreshBtn.addEventListener("click", function () {
-
-        window.location.reload();
-
-    });
-
-}
-
-
-// =====================================================
-// SHARE APP
-// =====================================================
-
-const shareAppBtn =
-    document.getElementById("shareAppBtn");
-
-if (shareAppBtn) {
-
-    shareAppBtn.addEventListener("click", async function () {
-
-        const shareData = {
-
-            title: "Unique Academic",
-
-            text:
-                "Learn smarter with Unique Academic 🎓",
-
-            url:
-                window.location.origin +
-                window.location.pathname
-
-        };
-
-
-        try {
-
-            if (navigator.share) {
-
-                await navigator.share(shareData);
-
-            } else {
-
-                await navigator.clipboard.writeText(
-                    window.location.href
-                );
-
-                alert(
-                    "Unique Academic link copied!"
-                );
-
-            }
-
-        } catch (error) {
-
-            console.log(
-                "Share cancelled."
-            );
-
-        }
-
-    });
-
-}
-
-
-// =====================================================
-// LOGOUT
-// =====================================================
-
-const logoutBtn =
-    document.getElementById("logoutBtn");
-
-if (logoutBtn) {
-
-    logoutBtn.addEventListener("click", function () {
-
-        const confirmed =
-            confirm(
-                "Are you sure you want to logout?"
-            );
-
-
-        if (!confirmed) return;
-
-
-        /*
-         * Clear local student session.
-         */
-
-        localStorage.removeItem(
-            "uniqueAcademicUser"
-        );
-
-        localStorage.removeItem(
-            "studentLoggedIn"
-        );
-
-
-        sessionStorage.clear();
-
-
-        /*
-         * Go to student login.
-         */
-
-        window.location.href =
-            "student-login.html";
-
-    });
-
-}
-// =====================================
-// REFRESH BUTTON
-// =====================================
-
-const refreshBtn = document.getElementById("refreshBtn");
-
-if (refreshBtn) {
-
-    refreshBtn.addEventListener("click", function () {
-
-        window.location.reload();
-
-    });
-
-}
-
-// =====================================
-// SIDE MENU
-// =====================================
-
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
-const menuOverlay = document.getElementById("menuOverlay");
-
-
-// Open menu
-if (menuBtn) {
-
-    menuBtn.addEventListener("click", function () {
-
-        sideMenu.classList.add("active");
-        menuOverlay.classList.add("active");
-
-    });
-
-}
-
-
-// Close menu
-if (menuOverlay) {
-
-    menuOverlay.addEventListener("click", function () {
-
-        sideMenu.classList.remove("active");
-        menuOverlay.classList.remove("active");
-
-    });
-
-}
-
-
-// Close with phone/browser back-style Escape
-document.addEventListener("keydown", function (event) {
-
-    if (event.key === "Escape") {
-
-        sideMenu.classList.remove("active");
-        menuOverlay.classList.remove("active");
 
     }
 
