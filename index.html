@@ -12,7 +12,7 @@
 
     <meta
         name="description"
-        content="Unique Academic - Learn smarter with university notes, quizzes, PDFs and study tools."
+        content="Unique Academic - Learn smarter with university notes, summaries, quizzes, PDFs and study tools."
     >
 
     <title>Unique Academic</title>
@@ -22,6 +22,89 @@
         href="style.css"
     >
 
+    <style>
+
+        /* =================================================
+           AUTH HEADER
+        ================================================= */
+
+        .headerAuth {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .authHeaderBtn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 9px 13px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+            background: transparent;
+            transition: 0.2s ease;
+        }
+
+        .authHeaderBtn:hover {
+            transform: translateY(-1px);
+            background: #2563eb;
+            color: white;
+        }
+
+        .authHeaderPrimary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .authHeaderPrimary:hover {
+            background: #1d4ed8;
+        }
+
+        .headerProfile {
+            display: none;
+        }
+
+        .headerProfile.authVisible {
+            display: flex;
+        }
+
+        /* =================================================
+           AUTH MENU ITEMS
+        ================================================= */
+
+        .authMenuItem {
+            display: flex;
+        }
+
+        .authMenuHidden {
+            display: none !important;
+        }
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 600px) {
+
+            .headerAuth {
+                gap: 5px;
+            }
+
+            .authHeaderBtn {
+                padding: 8px 9px;
+                font-size: 13px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
@@ -29,20 +112,23 @@
 
 
 <!-- =====================================================
-     LOAD SAVED THEME
+     LOAD SAVED THEME BEFORE PAGE RENDER
 ===================================================== -->
 
 <script>
+
 (function () {
 
-    const savedSettings =
-        localStorage.getItem("uniqueAcademicSettings");
-
-    if (!savedSettings) {
-        return;
-    }
-
     try {
+
+        const savedSettings =
+            localStorage.getItem(
+                "uniqueAcademicSettings"
+            );
+
+        if (!savedSettings) {
+            return;
+        }
 
         const settings =
             JSON.parse(savedSettings);
@@ -52,7 +138,9 @@
             settings.darkMode === true
         ) {
 
-            document.body.classList.add("dark-mode");
+            document.body.classList.add(
+                "dark-mode"
+            );
 
         }
 
@@ -66,6 +154,7 @@
     }
 
 })();
+
 </script>
 
 
@@ -108,16 +197,17 @@
         <div class="profileInfo">
 
             <h3 id="menuUserName">
-                Unique Academic
+                Welcome Student
             </h3>
 
             <p id="menuUserEmail">
-                Learning Platform
+                Unique Academic
             </p>
 
         </div>
 
     </div>
+
 
 
     <!-- =================================================
@@ -149,6 +239,55 @@
         </a>
 
 
+
+        <!-- LOGIN -->
+
+        <a
+            href="login.html"
+            id="menuLogin"
+            class="menuItem authMenuItem"
+        >
+
+            <span class="menuIcon">
+                🔐
+            </span>
+
+            <span>
+                Login
+            </span>
+
+            <span class="menuArrow">
+                ›
+            </span>
+
+        </a>
+
+
+
+        <!-- REGISTER -->
+
+        <a
+            href="registration.html"
+            id="menuRegister"
+            class="menuItem authMenuItem"
+        >
+
+            <span class="menuIcon">
+                📝
+            </span>
+
+            <span>
+                Register
+            </span>
+
+            <span class="menuArrow">
+                ›
+            </span>
+
+        </a>
+
+
+
         <!-- REFRESH -->
 
         <button
@@ -172,11 +311,13 @@
         </button>
 
 
+
         <!-- PROFILE -->
 
         <a
             href="student-profile.html"
-            class="menuItem"
+            id="menuProfileLink"
+            class="menuItem authMenuItem authMenuHidden"
         >
 
             <span class="menuIcon">
@@ -192,6 +333,7 @@
             </span>
 
         </a>
+
 
 
         <!-- SHARE -->
@@ -217,6 +359,7 @@
         </button>
 
 
+
         <!-- OTHER APPS -->
 
         <a
@@ -237,6 +380,7 @@
             </span>
 
         </a>
+
 
 
         <!-- HELP -->
@@ -261,6 +405,7 @@
         </a>
 
 
+
         <!-- ABOUT -->
 
         <a
@@ -281,6 +426,7 @@
             </span>
 
         </a>
+
 
 
         <!-- SETTINGS -->
@@ -307,6 +453,7 @@
     </nav>
 
 
+
     <!-- =================================================
          MENU BOTTOM
     ================================================= -->
@@ -318,7 +465,7 @@
 
         <button
             id="logoutBtn"
-            class="logoutItem"
+            class="logoutItem authMenuHidden"
             type="button"
         >
 
@@ -335,6 +482,7 @@
             </span>
 
         </button>
+
 
 
         <!-- VERSION -->
@@ -356,6 +504,7 @@
 </aside>
 
 
+
 <!-- =====================================================
      MAIN HEADER
 ===================================================== -->
@@ -363,7 +512,7 @@
 <header class="mainHeader">
 
 
-    <!-- ONLY ONE MENU BUTTON -->
+    <!-- MENU -->
 
     <button
         id="menuBtn"
@@ -375,6 +524,7 @@
     >
         ☰
     </button>
+
 
 
     <!-- BRAND -->
@@ -401,7 +551,37 @@
     </div>
 
 
-    <!-- PROFILE -->
+
+    <!-- =================================================
+         LOGGED OUT HEADER
+    ================================================= -->
+
+    <div
+        id="headerGuestAuth"
+        class="headerAuth"
+    >
+
+        <a
+            href="login.html"
+            class="authHeaderBtn"
+        >
+            🔐 Login
+        </a>
+
+        <a
+            href="registration.html"
+            class="authHeaderBtn authHeaderPrimary"
+        >
+            📝 Register
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         LOGGED IN PROFILE
+    ================================================= -->
 
     <a
         href="student-profile.html"
@@ -417,6 +597,7 @@
     </a>
 
 </header>
+
 
 
 <!-- =====================================================
@@ -452,6 +633,7 @@
 </section>
 
 
+
 <!-- =====================================================
      QUICK ACCESS
 ===================================================== -->
@@ -483,6 +665,7 @@
         </div>
 
 
+
         <!-- PDF -->
 
         <div class="dashCard">
@@ -498,6 +681,7 @@
             </a>
 
         </div>
+
 
 
         <!-- VIDEOS -->
@@ -517,6 +701,7 @@
         </div>
 
 
+
         <!-- QUIZ -->
 
         <div class="dashCard">
@@ -532,6 +717,7 @@
             </a>
 
         </div>
+
 
 
         <!-- BOOKMARKS -->
@@ -551,11 +737,15 @@
         </div>
 
 
+
         <!-- PROFILE -->
 
         <div class="dashCard">
 
-            <a href="student-profile.html">
+            <a
+                id="dashboardProfileLink"
+                href="student-profile.html"
+            >
 
                 👤
 
@@ -570,6 +760,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -601,6 +792,7 @@
 </section>
 
 
+
 <!-- =====================================================
      SEARCH
 ===================================================== -->
@@ -618,6 +810,7 @@
 </div>
 
 
+
 <!-- =====================================================
      SUBJECT TITLE
 ===================================================== -->
@@ -627,6 +820,7 @@
     📚 First-Year Courses (2019 E.C.)
 
 </h2>
+
 
 
 <!-- =====================================================
@@ -664,9 +858,8 @@
 </div>
 
 
-<!-- =====================================================
-     ECONOMICS
-===================================================== -->
+
+<!-- ECONOMICS -->
 
 <div
     class="card subjectCard"
@@ -699,9 +892,8 @@
 </div>
 
 
-<!-- =====================================================
-     HISTORY
-===================================================== -->
+
+<!-- HISTORY -->
 
 <div
     class="card subjectCard"
@@ -734,9 +926,8 @@
 </div>
 
 
-<!-- =====================================================
-     ENTREPRENEURSHIP
-===================================================== -->
+
+<!-- ENTREPRENEURSHIP -->
 
 <div
     class="card subjectCard"
@@ -769,9 +960,8 @@
 </div>
 
 
-<!-- =====================================================
-     ANTHROPOLOGY
-===================================================== -->
+
+<!-- ANTHROPOLOGY -->
 
 <div
     class="card subjectCard"
@@ -804,9 +994,8 @@
 </div>
 
 
-<!-- =====================================================
-     EMERGING TECHNOLOGY
-===================================================== -->
+
+<!-- EMERGING TECHNOLOGY -->
 
 <div
     class="card subjectCard"
@@ -839,9 +1028,8 @@
 </div>
 
 
-<!-- =====================================================
-     GLOBAL TRENDS
-===================================================== -->
+
+<!-- GLOBAL TRENDS -->
 
 <div
     class="card subjectCard"
@@ -874,9 +1062,8 @@
 </div>
 
 
-<!-- =====================================================
-     ENGLISH SKILL II
-===================================================== -->
+
+<!-- ENGLISH SKILL II -->
 
 <div
     class="card subjectCard"
@@ -909,9 +1096,8 @@
 </div>
 
 
-<!-- =====================================================
-     PSYCHOLOGY
-===================================================== -->
+
+<!-- PSYCHOLOGY -->
 
 <div
     class="card subjectCard"
@@ -944,9 +1130,8 @@
 </div>
 
 
-<!-- =====================================================
-     LOGIC
-===================================================== -->
+
+<!-- LOGIC -->
 
 <div
     class="card subjectCard"
@@ -979,9 +1164,8 @@
 </div>
 
 
-<!-- =====================================================
-     GEOGRAPHY
-===================================================== -->
+
+<!-- GEOGRAPHY -->
 
 <div
     class="card subjectCard"
@@ -1014,9 +1198,8 @@
 </div>
 
 
-<!-- =====================================================
-     CIVIC EDUCATION
-===================================================== -->
+
+<!-- CIVIC EDUCATION -->
 
 <div
     class="card subjectCard"
@@ -1049,6 +1232,7 @@
 </div>
 
 
+
 <!-- =====================================================
      FUTURE SECTIONS
 ===================================================== -->
@@ -1071,6 +1255,7 @@
 ></div>
 
 
+
 <!-- =====================================================
      FOOTER
 ===================================================== -->
@@ -1090,6 +1275,495 @@
 </footer>
 
 
+
+<!-- =====================================================
+     FIREBASE AUTHENTICATION
+===================================================== -->
+
+<script type="module">
+
+import { auth } from "./firebase-config.js";
+
+import {
+    onAuthStateChanged,
+    signOut
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const headerGuestAuth =
+    document.getElementById(
+        "headerGuestAuth"
+    );
+
+const headerProfile =
+    document.getElementById(
+        "headerProfile"
+    );
+
+const menuLogin =
+    document.getElementById(
+        "menuLogin"
+    );
+
+const menuRegister =
+    document.getElementById(
+        "menuRegister"
+    );
+
+const menuProfileLink =
+    document.getElementById(
+        "menuProfileLink"
+    );
+
+const logoutBtn =
+    document.getElementById(
+        "logoutBtn"
+    );
+
+const menuUserName =
+    document.getElementById(
+        "menuUserName"
+    );
+
+const menuUserEmail =
+    document.getElementById(
+        "menuUserEmail"
+    );
+
+const headerProfilePhoto =
+    document.getElementById(
+        "headerProfilePhoto"
+    );
+
+const menuProfilePhoto =
+    document.getElementById(
+        "menuProfilePhoto"
+    );
+
+const dashboardProfileLink =
+    document.getElementById(
+        "dashboardProfileLink"
+    );
+
+
+/* =====================================================
+   SHOW / HIDE AUTH UI
+===================================================== */
+
+function updateAuthenticationUI(user) {
+
+
+    /* ================================================
+       USER IS LOGGED IN
+    ================================================ */
+
+    if (user) {
+
+        /* Header */
+
+        if (headerGuestAuth) {
+
+            headerGuestAuth.style.display =
+                "none";
+
+        }
+
+
+        if (headerProfile) {
+
+            headerProfile.classList.add(
+                "authVisible"
+            );
+
+        }
+
+
+        /* Menu */
+
+        if (menuLogin) {
+
+            menuLogin.classList.add(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        if (menuRegister) {
+
+            menuRegister.classList.add(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        if (menuProfileLink) {
+
+            menuProfileLink.classList.remove(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        if (logoutBtn) {
+
+            logoutBtn.classList.remove(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        /* User name */
+
+        const displayName =
+            user.displayName &&
+            user.displayName.trim()
+                ? user.displayName.trim()
+                : "Student";
+
+
+        if (menuUserName) {
+
+            menuUserName.textContent =
+                displayName;
+
+        }
+
+
+        /* User email */
+
+        if (menuUserEmail) {
+
+            menuUserEmail.textContent =
+                user.email ||
+                "Student Account";
+
+        }
+
+
+        /* Avatar */
+
+        if (
+            user.photoURL &&
+            headerProfilePhoto
+        ) {
+
+            headerProfilePhoto.innerHTML =
+                `
+                <img
+                    src="${escapeHTMLAttribute(user.photoURL)}"
+                    alt="Student profile"
+                    style="
+                        width:36px;
+                        height:36px;
+                        border-radius:50%;
+                        object-fit:cover;
+                    "
+                >
+                `;
+
+        } else {
+
+            if (headerProfilePhoto) {
+
+                headerProfilePhoto.textContent =
+                    "👤";
+
+            }
+
+        }
+
+
+        if (
+            user.photoURL &&
+            menuProfilePhoto
+        ) {
+
+            menuProfilePhoto.innerHTML =
+                `
+                <img
+                    src="${escapeHTMLAttribute(user.photoURL)}"
+                    alt="Student profile"
+                    style="
+                        width:52px;
+                        height:52px;
+                        border-radius:50%;
+                        object-fit:cover;
+                    "
+                >
+                `;
+
+        } else {
+
+            if (menuProfilePhoto) {
+
+                menuProfilePhoto.textContent =
+                    "👤";
+
+            }
+
+        }
+
+
+        /*
+         * Profile is available.
+         */
+
+        if (dashboardProfileLink) {
+
+            dashboardProfileLink.href =
+                "student-profile.html";
+
+        }
+
+    }
+
+
+    /* ================================================
+       USER IS LOGGED OUT
+    ================================================ */
+
+    else {
+
+        /* Header */
+
+        if (headerGuestAuth) {
+
+            headerGuestAuth.style.display =
+                "flex";
+
+        }
+
+
+        if (headerProfile) {
+
+            headerProfile.classList.remove(
+                "authVisible"
+            );
+
+        }
+
+
+        /* Menu */
+
+        if (menuLogin) {
+
+            menuLogin.classList.remove(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        if (menuRegister) {
+
+            menuRegister.classList.remove(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        if (menuProfileLink) {
+
+            menuProfileLink.classList.add(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        if (logoutBtn) {
+
+            logoutBtn.classList.add(
+                "authMenuHidden"
+            );
+
+        }
+
+
+        /* Guest information */
+
+        if (menuUserName) {
+
+            menuUserName.textContent =
+                "Welcome Student";
+
+        }
+
+
+        if (menuUserEmail) {
+
+            menuUserEmail.textContent =
+                "Login or register to create your account";
+
+        }
+
+
+        if (menuProfilePhoto) {
+
+            menuProfilePhoto.textContent =
+                "🎓";
+
+        }
+
+
+        if (headerProfilePhoto) {
+
+            headerProfilePhoto.textContent =
+                "👤";
+
+        }
+
+
+        /*
+         * If someone clicks Profile while
+         * logged out, send them to Login.
+         */
+
+        if (dashboardProfileLink) {
+
+            dashboardProfileLink.href =
+                "login.html";
+
+        }
+
+    }
+
+}
+
+
+/* =====================================================
+   SAFE ATTRIBUTE ESCAPING
+===================================================== */
+
+function escapeHTMLAttribute(value) {
+
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+
+}
+
+
+/* =====================================================
+   FIREBASE AUTH STATE
+===================================================== */
+
+onAuthStateChanged(
+    auth,
+    function (user) {
+
+        updateAuthenticationUI(user);
+
+    }
+);
+
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+if (logoutBtn) {
+
+    logoutBtn.addEventListener(
+        "click",
+        async function (event) {
+
+            /*
+             * Stop the older logout handler in
+             * script.js from running as well.
+             */
+
+            event.preventDefault();
+
+            event.stopImmediatePropagation();
+
+
+            const confirmed =
+                confirm(
+                    "Are you sure you want to logout?"
+                );
+
+
+            if (!confirmed) {
+                return;
+            }
+
+
+            logoutBtn.disabled = true;
+
+
+            try {
+
+                await signOut(auth);
+
+
+                /*
+                 * Clean old local login data too.
+                 */
+
+                localStorage.removeItem(
+                    "uniqueAcademicUser"
+                );
+
+                localStorage.removeItem(
+                    "studentLoggedIn"
+                );
+
+
+                sessionStorage.clear();
+
+
+                window.location.href =
+                    "index.html";
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Logout error:",
+                    error
+                );
+
+
+                alert(
+                    "Unable to logout. Please try again."
+                );
+
+
+                logoutBtn.disabled =
+                    false;
+
+            }
+
+        }
+    );
+
+}
+
+</script>
+
+
+
+<!-- =====================================================
+     MAIN PROJECT JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+
 <!-- =====================================================
      INDEX PAGE JAVASCRIPT
 ===================================================== -->
@@ -1106,13 +1780,19 @@
     ================================================= */
 
     const menuBtn =
-        document.getElementById("menuBtn");
+        document.getElementById(
+            "menuBtn"
+        );
 
     const sideMenu =
-        document.getElementById("sideMenu");
+        document.getElementById(
+            "sideMenu"
+        );
 
     const menuOverlay =
-        document.getElementById("menuOverlay");
+        document.getElementById(
+            "menuOverlay"
+        );
 
 
     /* =================================================
@@ -1126,9 +1806,13 @@
         }
 
 
-        sideMenu.classList.add("active");
+        sideMenu.classList.add(
+            "active"
+        );
 
-        menuOverlay.classList.add("active");
+        menuOverlay.classList.add(
+            "active"
+        );
 
 
         sideMenu.setAttribute(
@@ -1175,9 +1859,13 @@
         }
 
 
-        sideMenu.classList.remove("active");
+        sideMenu.classList.remove(
+            "active"
+        );
 
-        menuOverlay.classList.remove("active");
+        menuOverlay.classList.remove(
+            "active"
+        );
 
 
         sideMenu.setAttribute(
@@ -1217,37 +1905,28 @@
        TOGGLE MENU
     ================================================= */
 
-    function toggleMenu() {
-
-        if (!sideMenu) {
-            return;
-        }
-
-
-        if (
-            sideMenu.classList.contains("active")
-        ) {
-
-            closeMenu();
-
-        } else {
-
-            openMenu();
-
-        }
-
-    }
-
-
-    /* =================================================
-       MENU BUTTON
-    ================================================= */
-
     if (menuBtn) {
 
         menuBtn.addEventListener(
             "click",
-            toggleMenu
+            function () {
+
+                if (
+                    sideMenu &&
+                    sideMenu.classList.contains(
+                        "active"
+                    )
+                ) {
+
+                    closeMenu();
+
+                } else {
+
+                    openMenu();
+
+                }
+
+            }
         );
 
     }
@@ -1268,14 +1947,16 @@
 
 
     /* =================================================
-       ESCAPE KEY
+       ESCAPE
     ================================================= */
 
     document.addEventListener(
         "keydown",
         function (event) {
 
-            if (event.key === "Escape") {
+            if (
+                event.key === "Escape"
+            ) {
 
                 closeMenu();
 
@@ -1286,25 +1967,23 @@
 
 
     /* =================================================
-       CLOSE AFTER MENU LINK
+       MENU LINKS
     ================================================= */
 
-    const menuLinks =
-        document.querySelectorAll(
+    document
+        .querySelectorAll(
             ".sideMenu a"
+        )
+        .forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    closeMenu
+                );
+
+            }
         );
-
-
-    menuLinks.forEach(
-        function (link) {
-
-            link.addEventListener(
-                "click",
-                closeMenu
-            );
-
-        }
-    );
 
 
     /* =================================================
@@ -1334,7 +2013,7 @@
 
 
     /* =================================================
-       SHARE APP
+       SHARE
     ================================================= */
 
     const shareAppBtn =
@@ -1355,7 +2034,7 @@
                         "Unique Academic",
 
                     text:
-                        "Learn smarter with Unique Academic.",
+                        "Learn smarter with Unique Academic 🎓",
 
                     url:
                         window.location.href
@@ -1373,7 +2052,9 @@
                             shareData
                         );
 
-                    } else if (
+                    }
+
+                    else if (
                         navigator.clipboard
                     ) {
 
@@ -1384,10 +2065,12 @@
                             );
 
                         alert(
-                            "App link copied!"
+                            "Unique Academic link copied!"
                         );
 
-                    } else {
+                    }
+
+                    else {
 
                         alert(
                             "Sharing is not supported on this device."
@@ -1395,7 +2078,9 @@
 
                     }
 
-                } catch (error) {
+                }
+
+                catch (error) {
 
                     console.log(
                         "Share cancelled."
@@ -1405,51 +2090,6 @@
 
 
                 closeMenu();
-
-            }
-        );
-
-    }
-
-
-    /* =================================================
-       LOGOUT
-    ================================================= */
-
-    const logoutBtn =
-        document.getElementById(
-            "logoutBtn"
-        );
-
-
-    if (logoutBtn) {
-
-        logoutBtn.addEventListener(
-            "click",
-            function () {
-
-                const confirmed =
-                    confirm(
-                        "Are you sure you want to logout?"
-                    );
-
-
-                if (!confirmed) {
-                    return;
-                }
-
-
-                /*
-                    Firebase Authentication
-                    can be connected here later.
-                */
-
-
-                closeMenu();
-
-
-                window.location.href =
-                    "student-login.html";
 
             }
         );
@@ -1513,62 +2153,60 @@
 
 
     /* =================================================
-       SAVE LAST OPENED SUBJECT
+       SAVE LAST SUBJECT
     ================================================= */
 
-    const subjectLinks =
-        document.querySelectorAll(
+    document
+        .querySelectorAll(
             ".subjectCard .button"
-        );
+        )
+        .forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        const card =
+                            link.closest(
+                                ".subjectCard"
+                            );
 
 
-    subjectLinks.forEach(
-        function (link) {
+                        if (!card) {
+                            return;
+                        }
 
-            link.addEventListener(
-                "click",
-                function () {
 
-                    const card =
-                        link.closest(
-                            ".subjectCard"
+                        const subject =
+                            card.dataset.subject;
+
+
+                        if (!subject) {
+                            return;
+                        }
+
+
+                        localStorage.setItem(
+                            "lastOpenedSubject",
+                            subject
                         );
 
 
-                    if (!card) {
-                        return;
+                        localStorage.setItem(
+                            "lastOpenedSubjectUrl",
+                            link.href
+                        );
+
                     }
+                );
 
-
-                    const subject =
-                        card.dataset.subject;
-
-
-                    if (!subject) {
-                        return;
-                    }
-
-
-                    localStorage.setItem(
-                        "lastOpenedSubject",
-                        subject
-                    );
-
-
-                    localStorage.setItem(
-                        "lastOpenedSubjectUrl",
-                        link.href
-                    );
-
-                }
-            );
-
-        }
-    );
+            }
+        );
 
 
     /* =================================================
-       BOOKMARK SYSTEM
+       BOOKMARKS
     ================================================= */
 
     const bookmarkButtons =
@@ -1590,22 +2228,24 @@
             ) || [];
 
 
-        if (!Array.isArray(bookmarks)) {
+        if (
+            !Array.isArray(
+                bookmarks
+            )
+        ) {
 
             bookmarks = [];
 
         }
 
-    } catch (error) {
+    }
+
+    catch (error) {
 
         bookmarks = [];
 
     }
 
-
-    /* =================================================
-       UPDATE BOOKMARK BUTTONS
-    ================================================= */
 
     function updateBookmarkButtons() {
 
@@ -1629,7 +2269,9 @@
                         "bookmarked"
                     );
 
-                } else {
+                }
+
+                else {
 
                     button.textContent =
                         "⭐ Bookmark";
@@ -1645,10 +2287,6 @@
 
     }
 
-
-    /* =================================================
-       BOOKMARK CLICK
-    ================================================= */
 
     bookmarkButtons.forEach(
         function (button) {
@@ -1678,7 +2316,9 @@
                             subject
                         );
 
-                    } else {
+                    }
+
+                    else {
 
                         bookmarks.splice(
                             index,
@@ -1730,41 +2370,30 @@
                         .toLowerCase();
 
 
-                const subjectCards =
-                    document.querySelectorAll(
+                document
+                    .querySelectorAll(
                         ".subjectCard"
-                    );
+                    )
+                    .forEach(
+                        function (card) {
 
+                            const subject =
+                                (
+                                    card.dataset.subject ||
+                                    card.textContent
+                                )
+                                .toLowerCase();
 
-                subjectCards.forEach(
-                    function (card) {
-
-                        const subject =
-                            (
-                                card.dataset.subject ||
-                                card.textContent
-                            )
-                            .toLowerCase();
-
-
-                        if (
-                            subject.includes(
-                                searchValue
-                            )
-                        ) {
 
                             card.style.display =
-                                "";
-
-                        } else {
-
-                            card.style.display =
-                                "none";
+                                subject.includes(
+                                    searchValue
+                                )
+                                    ? ""
+                                    : "none";
 
                         }
-
-                    }
-                );
+                    );
 
             }
         );
@@ -1775,13 +2404,6 @@
 })();
 
 </script>
-
-
-<!-- =====================================================
-     EXISTING PROJECT JAVASCRIPT
-===================================================== -->
-
-<script src="script.js"></script>
 
 
 </body>
