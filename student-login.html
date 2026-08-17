@@ -3,208 +3,285 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<title>Student Login | Unique Academic</title>
+    <meta
+        name="description"
+        content="Student login for Unique Academic."
+    >
 
-<link rel="stylesheet" href="style.css">
+    <title>Student Login | Unique Academic</title>
 
-<style>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
-.login-container {
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 15px;
-}
+    <style>
 
-.login-card {
-    width: 100%;
-    max-width: 430px;
-    background: white;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-}
+        .login-container {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
 
-.login-icon {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 10px;
-}
+        .login-card {
+            width: 100%;
+            max-width: 430px;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
 
-.login-card h1 {
-    text-align: center;
-    margin-bottom: 8px;
-}
+        .login-icon {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
 
-.login-subtitle {
-    text-align: center;
-    color: #64748b;
-    margin-bottom: 25px;
-}
+        .login-card h1 {
+            text-align: center;
+            margin-bottom: 8px;
+        }
 
-.login-card label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 7px;
-}
+        .login-subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 25px;
+        }
 
-.login-card input {
-    width: 100%;
-    padding: 13px;
-    margin-bottom: 18px;
-    border: 1px solid #d1d5db;
-    border-radius: 9px;
-    font-size: 15px;
-}
+        .login-card label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
 
-.login-card input:focus {
-    outline: none;
-    border-color: #2563eb;
-}
+        .login-card input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px;
+            margin-bottom: 18px;
+            border: 1px solid #d1d5db;
+            border-radius: 9px;
+            font-size: 15px;
+        }
 
-.login-button {
-    width: 100%;
-    padding: 13px;
-    border: none;
-    border-radius: 9px;
-    background: #2563eb;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-}
+        .login-card input:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
 
-.login-button:disabled {
-    opacity: 0.6;
-}
+        .login-button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 9px;
+            background: #2563eb;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
 
-.login-message {
-    display: none;
-    margin-top: 15px;
-    padding: 12px;
-    border-radius: 9px;
-    text-align: center;
-}
+        .login-button:hover {
+            background: #1d4ed8;
+        }
 
-.error {
-    display: block;
-    background: #fee2e2;
-    color: #991b1b;
-}
+        .login-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
 
-.login-links {
-    text-align: center;
-    margin-top: 20px;
-}
+        .login-message {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 9px;
+            text-align: center;
+            line-height: 1.5;
+        }
 
-.login-links a {
-    color: #2563eb;
-    text-decoration: none;
-}
+        .login-message.error {
+            display: block;
+            background: #fee2e2;
+            color: #991b1b;
+        }
 
-</style>
+        .login-message.success {
+            display: block;
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .login-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-links p {
+            margin: 10px 0;
+        }
+
+        .login-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .password-wrapper input {
+            padding-right: 55px;
+        }
+
+        .show-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+    </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<h1>🎓 Unique Academic</h1>
+    <h1>🎓 Unique Academic</h1>
 
-<p>BDU Learning Platform</p>
+    <p>BDU Learning Platform</p>
 
 </header>
 
 
-<div class="login-container">
 
-<div class="login-card">
+<main class="login-container">
 
-<div class="login-icon">
-👨‍🎓
-</div>
+    <section class="login-card">
 
-<h1>Student Login</h1>
-
-<p class="login-subtitle">
-Login to access your Unique Academic account.
-</p>
+        <div class="login-icon">
+            👨‍🎓
+        </div>
 
 
-<form id="studentLoginForm">
-
-<label for="email">
-Email Address
-</label>
-
-<input
-    type="email"
-    id="email"
-    placeholder="Enter your email"
-    required
->
+        <h1>
+            Student Login
+        </h1>
 
 
-<label for="password">
-Password
-</label>
-
-<input
-    type="password"
-    id="password"
-    placeholder="Enter your password"
-    required
->
+        <p class="login-subtitle">
+            Login to access your Unique Academic account.
+        </p>
 
 
-<button
-    type="submit"
-    id="loginButton"
-    class="login-button"
->
-🔐 Login
-</button>
 
-</form>
+        <form id="studentLoginForm">
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+            >
 
 
-<div
-    id="loginMessage"
-    class="login-message"
-></div>
+
+            <label for="password">
+                Password
+            </label>
+
+            <div class="password-wrapper">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button
+                    type="button"
+                    id="showPasswordBtn"
+                    class="show-password"
+                    aria-label="Show password"
+                >
+                    👁️
+                </button>
+
+            </div>
 
 
-<div class="login-links">
 
-<p>
-Don't have an account?
-<a href="registration.html">
-Register
-</a>
-</p>
+            <button
+                type="submit"
+                id="loginButton"
+                class="login-button"
+            >
+                🔐 Login
+            </button>
 
-<br>
+        </form>
 
-<p>
-<a href="index.html">
-🏠 Back Home
-</a>
-</p>
 
-</div>
 
-</div>
+        <div
+            id="loginMessage"
+            class="login-message"
+            role="alert"
+        ></div>
 
-</div>
+
+
+        <div class="login-links">
+
+            <p>
+                Don't have an account?
+                <a href="registration.html">
+                    Register
+                </a>
+            </p>
+
+
+            <p>
+                <a href="index.html">
+                    🏠 Back Home
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
 
 
 <script type="module">
@@ -231,12 +308,47 @@ const loginButton =
 const loginMessage =
     document.getElementById("loginMessage");
 
+const showPasswordBtn =
+    document.getElementById("showPasswordBtn");
+
+
+
+/* =========================================
+   SHOW / HIDE PASSWORD
+========================================= */
+
+showPasswordBtn.addEventListener(
+    "click",
+    function () {
+
+        const isPassword =
+            passwordInput.type === "password";
+
+        passwordInput.type =
+            isPassword
+                ? "text"
+                : "password";
+
+        showPasswordBtn.textContent =
+            isPassword
+                ? "🙈"
+                : "👁️";
+
+    }
+);
+
+
+
+/* =========================================
+   LOGIN
+========================================= */
 
 form.addEventListener(
     "submit",
-    async function(event) {
+    async function (event) {
 
         event.preventDefault();
+
 
         const email =
             emailInput.value.trim();
@@ -245,35 +357,139 @@ form.addEventListener(
             passwordInput.value;
 
 
+        if (!email || !password) {
+
+            showMessage(
+                "Please enter your email and password.",
+                "error"
+            );
+
+            return;
+
+        }
+
+
         loginButton.disabled = true;
 
         loginButton.textContent =
             "⏳ Logging in...";
 
 
+        hideMessage();
+
+
         try {
 
-            await signInWithEmailAndPassword(
-                auth,
-                email,
-                password
+            const userCredential =
+                await signInWithEmailAndPassword(
+                    auth,
+                    email,
+                    password
+                );
+
+
+            const user =
+                userCredential.user;
+
+
+            /*
+             * Keep compatibility with the
+             * existing Unique Academic system.
+             */
+
+            localStorage.setItem(
+                "studentLoggedIn",
+                "true"
             );
 
 
-            window.location.href =
-                "index.html";
+            localStorage.setItem(
+                "uniqueAcademicUser",
+                JSON.stringify({
+                    uid: user.uid,
+                    email: user.email,
+                    displayName:
+                        user.displayName || "Student"
+                })
+            );
+
+
+            showMessage(
+                "✅ Login successful. Welcome back!",
+                "success"
+            );
+
+
+            setTimeout(
+                function () {
+
+                    window.location.href =
+                        "index.html";
+
+                },
+                500
+            );
 
         }
 
-        catch(error) {
+        catch (error) {
 
-            console.error(error);
+            console.error(
+                "Login error:",
+                error
+            );
 
-            loginMessage.textContent =
+
+            let message =
                 "❌ Incorrect email or password.";
 
-            loginMessage.className =
-                "login-message error";
+
+            if (
+                error.code ===
+                "auth/user-not-found"
+            ) {
+
+                message =
+                    "❌ No account was found with this email.";
+
+            }
+
+            else if (
+                error.code ===
+                "auth/wrong-password"
+            ) {
+
+                message =
+                    "❌ Incorrect password.";
+
+            }
+
+            else if (
+                error.code ===
+                "auth/invalid-credential"
+            ) {
+
+                message =
+                    "❌ Incorrect email or password.";
+
+            }
+
+            else if (
+                error.code ===
+                "auth/too-many-requests"
+            ) {
+
+                message =
+                    "⚠️ Too many login attempts. Please try again later.";
+
+            }
+
+
+            showMessage(
+                message,
+                "error"
+            );
+
 
             loginButton.disabled =
                 false;
@@ -286,7 +502,34 @@ form.addEventListener(
     }
 );
 
+
+
+function showMessage(
+    message,
+    type
+) {
+
+    loginMessage.textContent =
+        message;
+
+    loginMessage.className =
+        "login-message " + type;
+
+}
+
+
+function hideMessage() {
+
+    loginMessage.textContent =
+        "";
+
+    loginMessage.className =
+        "login-message";
+
+}
+
 </script>
+
 
 </body>
 
