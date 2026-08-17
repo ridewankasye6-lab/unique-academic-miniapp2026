@@ -1,410 +1,758 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Admin Panel | Unique Academic</title>
+import {
+    db,
+    auth
+} from "./firebase-config.js";
 
 
-    <style>
+import {
+    collection,
+    getDocs,
+    doc,
+    updateDoc
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+
+import {
+    onAuthStateChanged,
+    signOut
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+
+
+const ADMIN_EMAIL =
+    "ridewankasye6@gmail.com";
+
+
+
+/*
+====================================
+HTML ELEMENTS
+====================================
+*/
+
+const registrationList =
+    document.getElementById(
+        "registrationList"
+    );
+
+
+const totalCount =
+    document.getElementById(
+        "totalCount"
+    );
+
+
+const pendingCount =
+    document.getElementById(
+        "pendingCount"
+    );
+
+
+const approvedCount =
+    document.getElementById(
+        "approvedCount"
+    );
+
+
+const rejectedCount =
+    document.getElementById(
+        "rejectedCount"
+    );
+
+
+const logoutBtn =
+    document.getElementById(
+        "logoutBtn"
+    );
+
+
+
+/*
+====================================
+CHECK ADMIN
+====================================
+*/
+
+onAuthStateChanged(
+    auth,
+    async (user) => {
+
+        if (!user) {
+
+            window.location.href =
+                "login.html";
+
+            return;
         }
 
 
-        body {
-            background: #f4f7fb;
-            color: #111827;
+        if (
+            !user.email ||
+            user.email.toLowerCase() !==
+            ADMIN_EMAIL.toLowerCase()
+        ) {
+
+            alert(
+                "❌ Admin access required."
+            );
+
+
+            window.location.href =
+                "index.html";
+
+
+            return;
         }
 
 
-        /* =========================
-           HEADER
-        ========================== */
+        loadRegistrations();
 
-        header {
-            background: #2563eb;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 15px;
+    }
+);
+
+
+
+/*
+====================================
+LOAD REGISTRATIONS
+====================================
+*/
+
+async function loadRegistrations() {
+
+    try {
+
+        const snapshot =
+            await getDocs(
+                collection(
+                    db,
+                    "registrations"
+                )
+            );
+
+
+
+        let total = 0;
+        let pending = 0;
+        let approved = 0;
+        let rejected = 0;
+
+
+
+        registrationList.innerHTML =
+            "";
+
+
+
+        if (snapshot.empty) {
+
+            registrationList.innerHTML = `
+
+                <div class="loading">
+
+                    📭 No registrations yet.
+
+                </div>
+
+            `;
+
         }
 
 
-        header h1 {
-            font-size: 22px;
-        }
+
+        snapshot.forEach(
+            (registrationDoc) => {
+
+                const data =
+                    registrationDoc.data();
 
 
-        .logout-btn {
-            border: none;
-            background: white;
-            color: #2563eb;
-            padding: 10px 15px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+                total++;
 
 
-        .logout-btn:hover {
-            opacity: 0.9;
-        }
+
+                const status =
+                    data.status ||
+                    "pending";
 
 
-        /* =========================
-           CONTAINER
-        ========================== */
 
-        .container {
-            max-width: 1200px;
-            margin: 25px auto;
-            padding: 0 15px;
-        }
+                if (
+                    status === "pending"
+                ) {
 
+                    pending++;
 
-        /* =========================
-           STATISTICS
-        ========================== */
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            margin-bottom: 25px;
-        }
+                }
 
 
-        .stat-card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-        }
+                if (
+                    status === "approved"
+                ) {
+
+                    approved++;
+
+                }
 
 
-        .stat-card h3 {
-            color: #64748b;
-            margin-bottom: 10px;
-        }
+                if (
+                    status === "rejected"
+                ) {
+
+                    rejected++;
+
+                }
 
 
-        .stat-card strong {
-            font-size: 28px;
-        }
+
+                /*
+                ====================================
+                SCREENSHOT BUTTON
+                ====================================
+                */
+
+                let screenshotHTML =
+                    `
+
+                    <div class="payment-screenshot">
+
+                        <strong>
+                            📷 Payment Screenshot:
+                        </strong>
+
+                        <span>
+                            Not uploaded
+                        </span>
+
+                    </div>
+
+                    `;
 
 
-        /* =========================
-           REGISTRATIONS
-        ========================== */
 
-        .registrations {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-        }
+                if (
+                    data.screenshotURL
+                ) {
 
+                    screenshotHTML = `
 
-        .registrations h2 {
-            margin-bottom: 20px;
-        }
+                    <div class="payment-screenshot">
 
+                        <strong>
+                            📷 Payment Screenshot
+                        </strong>
 
-        /* =========================
-           STUDENT CARD
-        ========================== */
+                        <a
+                            href="${escapeHTML(
+                                data.screenshotURL
+                            )}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="screenshot-btn"
+                        >
+                            🔍 View Screenshot
+                        </a>
 
-        .student-card {
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            padding: 18px;
-            margin-bottom: 15px;
-        }
+                    </div>
 
+                    `;
 
-        .student-card h3 {
-            margin-bottom: 8px;
-        }
+                }
 
 
-        .student-info {
-            color: #475569;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
+
+                /*
+                ====================================
+                STUDENT CARD
+                ====================================
+                */
+
+                const card =
+                    document.createElement(
+                        "div"
+                    );
 
 
-        /* =========================
-           STATUS
-        ========================== */
-
-        .status {
-            display: inline-block;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
+                card.className =
+                    "student-card";
 
 
-        .pending {
-            background: #fef3c7;
-            color: #92400e;
-        }
+
+                card.innerHTML = `
+
+                    <h3>
+
+                        👤 ${escapeHTML(
+                            data.fullName ||
+                            "Unknown Student"
+                        )}
+
+                    </h3>
 
 
-        .approved {
-            background: #dcfce7;
-            color: #166534;
-        }
+                    <div class="student-info">
+
+                        📧 Email:
+                        ${escapeHTML(
+                            data.email ||
+                            "—"
+                        )}
+
+                        <br>
 
 
-        .rejected {
-            background: #fee2e2;
-            color: #991b1b;
-        }
+                        📱 Phone:
+                        ${escapeHTML(
+                            data.phone ||
+                            "—"
+                        )}
+
+                        <br>
 
 
-        /* =========================
-           ACTION BUTTONS
-        ========================== */
+                        🎓 University:
+                        ${escapeHTML(
+                            data.university ||
+                            "—"
+                        )}
 
-        .actions {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+                        <br>
 
 
-        .actions button {
-            border: none;
-            padding: 10px 15px;
-            border-radius: 7px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
+                        📚 Department:
+                        ${escapeHTML(
+                            data.department ||
+                            "—"
+                        )}
+
+                        <br>
 
 
-        .approve-btn {
-            background: #16a34a;
-        }
+                        💳 Payment Method:
+                        <strong>
+                            ${escapeHTML(
+                                data.paymentMethod ||
+                                "—"
+                            )}
+                        </strong>
+
+                        <br>
 
 
-        .reject-btn {
-            background: #dc2626;
-        }
+                        💰 Amount:
+                        <strong>
+                            ${escapeHTML(
+                                String(
+                                    data.amount ||
+                                    300
+                                )
+                            )}
+                            ${escapeHTML(
+                                data.currency ||
+                                "ETB"
+                            )}
+                        </strong>
+
+                        <br>
 
 
-        .actions button:hover {
-            opacity: 0.9;
-        }
+                        🔢 Payment Reference:
+                        <strong>
+                            ${escapeHTML(
+                                data.paymentReference ||
+                                "—"
+                            )}
+                        </strong>
+
+                    </div>
 
 
-        /* =========================
-           LOADING
-        ========================== */
-
-        .loading {
-            text-align: center;
-            padding: 30px;
-            color: #64748b;
-        }
+                    ${screenshotHTML}
 
 
-        /* =========================
-           MOBILE
-        ========================== */
+                    <br>
 
-        @media (max-width: 800px) {
 
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
+                    <span
+                        class="status ${escapeHTML(
+                            status
+                        )}"
+                    >
+
+                        ${escapeHTML(
+                            status.toUpperCase()
+                        )}
+
+                    </span>
+
+
+                    <div class="actions">
+
+                        ${
+                            status === "pending"
+                            ?
+                            `
+
+                            <button
+                                class="approve-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+                                ✅ Approve
+                            </button>
+
+
+                            <button
+                                class="reject-btn"
+                                data-id="${escapeHTML(
+                                    registrationDoc.id
+                                )}"
+                            >
+                                ❌ Reject
+                            </button>
+
+                            `
+                            :
+                            ""
+                        }
+
+                    </div>
+
+                `;
+
+
+
+                registrationList.appendChild(
+                    card
+                );
+
             }
-
-        }
-
-
-        @media (max-width: 500px) {
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-<!-- =========================
-     HEADER
-========================== -->
-
-<header>
-
-    <h1>
-        👨‍💼 Unique Academic Admin
-    </h1>
-
-
-    <button
-        id="logoutBtn"
-        class="logout-btn"
-    >
-        🚪 Logout
-    </button>
-
-</header>
+        );
 
 
 
-<!-- =========================
-     MAIN CONTAINER
-========================== -->
+        /*
+        ====================================
+        COUNTERS
+        ====================================
+        */
 
-<div class="container">
-
-
-    <!-- =========================
-         STATISTICS
-    ========================== -->
-
-    <div class="stats">
+        totalCount.textContent =
+            total;
 
 
-        <!-- TOTAL -->
+        pendingCount.textContent =
+            pending;
 
-        <div class="stat-card">
 
-            <h3>
-                👥 Total Students
-            </h3>
+        approvedCount.textContent =
+            approved;
 
-            <strong id="totalCount">
-                0
-            </strong>
 
-        </div>
+        rejectedCount.textContent =
+            rejected;
 
 
 
-        <!-- PENDING -->
+        addActionListeners();
 
-        <div class="stat-card">
+    }
 
-            <h3>
-                ⏳ Pending
-            </h3>
+    catch (error) {
 
-            <strong id="pendingCount">
-                0
-            </strong>
-
-        </div>
+        console.error(
+            "Load registrations error:",
+            error
+        );
 
 
-
-        <!-- APPROVED -->
-
-        <div class="stat-card">
-
-            <h3>
-                ✅ Approved
-            </h3>
-
-            <strong id="approvedCount">
-                0
-            </strong>
-
-        </div>
-
-
-
-        <!-- REJECTED -->
-
-        <div class="stat-card">
-
-            <h3>
-                ❌ Rejected
-            </h3>
-
-            <strong id="rejectedCount">
-                0
-            </strong>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- =========================
-         REGISTRATION LIST
-    ========================== -->
-
-    <div class="registrations">
-
-
-        <h2>
-            📝 Student Registrations
-        </h2>
-
-
-        <div id="registrationList">
+        registrationList.innerHTML = `
 
             <div class="loading">
 
-                ⏳ Loading registrations...
+                ❌ Could not load registrations.
+
+                <br><br>
+
+                ${escapeHTML(
+                    error.message ||
+                    "Unknown error"
+                )}
 
             </div>
 
-        </div>
+        `;
 
+    }
 
-    </div>
-
-
-</div>
+}
 
 
 
-<!-- =========================
-     ADMIN JAVASCRIPT
-========================== -->
+/*
+====================================
+BUTTONS
+====================================
+*/
 
-<script
-    type="module"
-    src="admin.js"
-></script>
+function addActionListeners() {
 
 
-</body>
+    document
+        .querySelectorAll(
+            ".approve-btn"
+        )
+        .forEach(
+            button => {
 
-</html>
+                button.onclick =
+                    () => {
+
+                        approveRegistration(
+                            button.dataset.id
+                        );
+
+                    };
+
+            }
+        );
+
+
+
+    document
+        .querySelectorAll(
+            ".reject-btn"
+        )
+        .forEach(
+            button => {
+
+                button.onclick =
+                    () => {
+
+                        rejectRegistration(
+                            button.dataset.id
+                        );
+
+                    };
+
+            }
+        );
+
+}
+
+
+
+/*
+====================================
+APPROVE
+====================================
+*/
+
+async function approveRegistration(
+    id
+) {
+
+    const confirmed =
+        confirm(
+            "Are you sure you want to approve this registration?"
+        );
+
+
+    if (!confirmed) {
+
+        return;
+
+    }
+
+
+
+    try {
+
+        const registrationRef =
+            doc(
+                db,
+                "registrations",
+                id
+            );
+
+
+        await updateDoc(
+            registrationRef,
+            {
+                status:
+                    "approved"
+            }
+        );
+
+
+        alert(
+            "✅ Student approved successfully!"
+        );
+
+
+        loadRegistrations();
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Approve error:",
+            error
+        );
+
+
+        alert(
+            "❌ Failed to approve student."
+        );
+
+    }
+
+}
+
+
+
+/*
+====================================
+REJECT
+====================================
+*/
+
+async function rejectRegistration(
+    id
+) {
+
+    const reason =
+        prompt(
+            "Enter the reason for rejection:"
+        );
+
+
+    if (!reason) {
+
+        return;
+
+    }
+
+
+
+    try {
+
+        const registrationRef =
+            doc(
+                db,
+                "registrations",
+                id
+            );
+
+
+        await updateDoc(
+            registrationRef,
+            {
+
+                status:
+                    "rejected",
+
+                rejectionReason:
+                    reason
+
+            }
+        );
+
+
+        alert(
+            "❌ Registration rejected."
+        );
+
+
+        loadRegistrations();
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Reject error:",
+            error
+        );
+
+
+        alert(
+            "❌ Failed to reject registration."
+        );
+
+    }
+
+}
+
+
+
+/*
+====================================
+ESCAPE HTML
+====================================
+*/
+
+function escapeHTML(value) {
+
+    return String(value)
+
+        .replaceAll(
+            "&",
+            "&amp;"
+        )
+
+        .replaceAll(
+            "<",
+            "&lt;"
+        )
+
+        .replaceAll(
+            ">",
+            "&gt;"
+        )
+
+        .replaceAll(
+            '"',
+            "&quot;"
+        )
+
+        .replaceAll(
+            "'",
+            "&#039;"
+        );
+
+}
+
+
+
+/*
+====================================
+LOGOUT
+====================================
+*/
+
+logoutBtn.onclick =
+    async () => {
+
+        try {
+
+            await signOut(auth);
+
+
+            window.location.href =
+                "login.html";
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Logout error:",
+                error
+            );
+
+        }
+
+    };
