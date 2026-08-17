@@ -1,3 +1,12 @@
+/* =========================================
+   UNIQUE ACADEMIC
+   ADMIN PANEL
+   Firebase + Cloud Firestore
+
+   Registration Management
+   + Payment Screenshot Viewer
+========================================= */
+
 import {
     db,
     auth
@@ -18,17 +27,17 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 
+/* =========================================
+   ADMIN EMAIL
+========================================= */
 
 const ADMIN_EMAIL =
     "ridewankasye6@gmail.com";
 
 
-
-/*
-====================================
-HTML ELEMENTS
-====================================
-*/
+/* =========================================
+   HTML ELEMENTS
+========================================= */
 
 const registrationList =
     document.getElementById(
@@ -66,16 +75,19 @@ const logoutBtn =
     );
 
 
-
-/*
-====================================
-CHECK ADMIN
-====================================
-*/
+/* =========================================
+   CHECK ADMIN
+========================================= */
 
 onAuthStateChanged(
     auth,
     async (user) => {
+
+        /*
+        =====================================
+        NOT LOGGED IN
+        =====================================
+        */
 
         if (!user) {
 
@@ -85,6 +97,12 @@ onAuthStateChanged(
             return;
         }
 
+
+        /*
+        =====================================
+        CHECK ADMIN EMAIL
+        =====================================
+        */
 
         if (
             !user.email ||
@@ -105,18 +123,21 @@ onAuthStateChanged(
         }
 
 
+        /*
+        =====================================
+        ADMIN VERIFIED
+        =====================================
+        */
+
         loadRegistrations();
 
     }
 );
 
 
-
-/*
-====================================
-LOAD REGISTRATIONS
-====================================
-*/
+/* =========================================
+   LOAD REGISTRATIONS
+========================================= */
 
 async function loadRegistrations() {
 
@@ -131,18 +152,26 @@ async function loadRegistrations() {
             );
 
 
+        /* =================================
+           COUNTERS
+        ================================= */
 
         let total = 0;
-        let pending = 0;
-        let approved = 0;
-        let rejected = 0;
 
+        let pending = 0;
+
+        let approved = 0;
+
+        let rejected = 0;
 
 
         registrationList.innerHTML =
             "";
 
 
+        /* =================================
+           NO REGISTRATIONS
+        ================================= */
 
         if (snapshot.empty) {
 
@@ -159,6 +188,9 @@ async function loadRegistrations() {
         }
 
 
+        /* =================================
+           DISPLAY REGISTRATIONS
+        ================================= */
 
         snapshot.forEach(
             (registrationDoc) => {
@@ -170,12 +202,22 @@ async function loadRegistrations() {
                 total++;
 
 
+                /*
+                =================================
+                STATUS
+                =================================
+                */
 
                 const status =
                     data.status ||
                     "pending";
 
 
+                /*
+                =================================
+                COUNT STATUS
+                =================================
+                */
 
                 if (
                     status === "pending"
@@ -204,68 +246,140 @@ async function loadRegistrations() {
                 }
 
 
+                /* =================================
+                   PAYMENT SCREENSHOT
+                =================================
 
-                /*
-                ====================================
-                SCREENSHOT BUTTON
-                ====================================
-                */
+                   IMPORTANT:
 
-                let screenshotHTML =
-                    `
+                   registration.js saves:
 
-                    <div class="payment-screenshot">
+                   paymentScreenshotURL
 
-                        <strong>
-                            📷 Payment Screenshot:
-                        </strong>
+                   So admin.js must read:
 
-                        <span>
-                            Not uploaded
-                        </span>
+                   data.paymentScreenshotURL
+                ================================= */
 
-                    </div>
+                let screenshotHTML = `
 
-                    `;
-
-
-
-                if (
-                    data.screenshotURL
-                ) {
-
-                    screenshotHTML = `
-
-                    <div class="payment-screenshot">
+                    <div
+                        class="payment-screenshot"
+                        style="
+                            margin-top:15px;
+                            padding:14px;
+                            border-radius:10px;
+                            background:#f8fafc;
+                            border:1px solid #e5e7eb;
+                        "
+                    >
 
                         <strong>
                             📷 Payment Screenshot
                         </strong>
 
-                        <a
-                            href="${escapeHTML(
-                                data.screenshotURL
-                            )}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="screenshot-btn"
+                        <div
+                            style="
+                                margin-top:8px;
+                                color:#64748b;
+                            "
                         >
-                            🔍 View Screenshot
-                        </a>
+                            Screenshot not uploaded.
+                        </div>
 
                     </div>
+
+                `;
+
+
+                /*
+                =================================
+                SCREENSHOT EXISTS
+                =================================
+                */
+
+                if (
+                    data.paymentScreenshotURL
+                ) {
+
+                    const screenshotURL =
+                        String(
+                            data.paymentScreenshotURL
+                        );
+
+
+                    screenshotHTML = `
+
+                        <div
+                            class="payment-screenshot"
+                            style="
+                                margin-top:15px;
+                                padding:14px;
+                                border-radius:10px;
+                                background:#f8fafc;
+                                border:1px solid #e5e7eb;
+                            "
+                        >
+
+                            <strong>
+                                📷 Payment Screenshot
+                            </strong>
+
+
+                            <div
+                                style="
+                                    margin-top:10px;
+                                "
+                            >
+
+                                <a
+                                    href="${escapeHTML(
+                                        screenshotURL
+                                    )}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="screenshot-btn"
+                                    style="
+                                        display:inline-block;
+                                        text-decoration:none;
+                                        background:#2563eb;
+                                        color:white;
+                                        padding:10px 15px;
+                                        border-radius:8px;
+                                        font-weight:bold;
+                                    "
+                                >
+
+                                    🔍 View Screenshot
+
+                                </a>
+
+                            </div>
+
+
+                            <div
+                                style="
+                                    margin-top:8px;
+                                    color:#64748b;
+                                    font-size:13px;
+                                "
+                            >
+
+                                Tap the button to view
+                                the student's payment screenshot.
+
+                            </div>
+
+                        </div>
 
                     `;
 
                 }
 
 
-
-                /*
-                ====================================
-                STUDENT CARD
-                ====================================
-                */
+                /* =================================
+                   STUDENT CARD
+                ================================= */
 
                 const card =
                     document.createElement(
@@ -275,7 +389,6 @@ async function loadRegistrations() {
 
                 card.className =
                     "student-card";
-
 
 
                 card.innerHTML = `
@@ -293,6 +406,7 @@ async function loadRegistrations() {
                     <div class="student-info">
 
                         📧 Email:
+
                         ${escapeHTML(
                             data.email ||
                             "—"
@@ -302,6 +416,7 @@ async function loadRegistrations() {
 
 
                         📱 Phone:
+
                         ${escapeHTML(
                             data.phone ||
                             "—"
@@ -311,6 +426,7 @@ async function loadRegistrations() {
 
 
                         🎓 University:
+
                         ${escapeHTML(
                             data.university ||
                             "—"
@@ -320,6 +436,7 @@ async function loadRegistrations() {
 
 
                         📚 Department:
+
                         ${escapeHTML(
                             data.department ||
                             "—"
@@ -329,39 +446,49 @@ async function loadRegistrations() {
 
 
                         💳 Payment Method:
+
                         <strong>
+
                             ${escapeHTML(
                                 data.paymentMethod ||
                                 "—"
                             )}
+
                         </strong>
 
                         <br>
 
 
                         💰 Amount:
+
                         <strong>
+
                             ${escapeHTML(
                                 String(
                                     data.amount ||
                                     300
                                 )
                             )}
+
                             ${escapeHTML(
                                 data.currency ||
                                 "ETB"
                             )}
+
                         </strong>
 
                         <br>
 
 
                         🔢 Payment Reference:
+
                         <strong>
+
                             ${escapeHTML(
                                 data.paymentReference ||
                                 "—"
                             )}
+
                         </strong>
 
                     </div>
@@ -386,11 +513,50 @@ async function loadRegistrations() {
                     </span>
 
 
+                    ${
+                        status === "rejected" &&
+                        data.rejectionReason
+                        ?
+
+                        `
+
+                        <div
+                            style="
+                                margin-top:10px;
+                                padding:12px;
+                                background:#fee2e2;
+                                color:#991b1b;
+                                border-radius:8px;
+                            "
+                        >
+
+                            <strong>
+                                ❌ Rejection Reason:
+                            </strong>
+
+                            <br>
+
+                            ${escapeHTML(
+                                data.rejectionReason
+                            )}
+
+                        </div>
+
+                        `
+
+                        :
+
+                        ""
+                    }
+
+
                     <div class="actions">
 
                         ${
                             status === "pending"
+
                             ?
+
                             `
 
                             <button
@@ -399,7 +565,9 @@ async function loadRegistrations() {
                                     registrationDoc.id
                                 )}"
                             >
+
                                 ✅ Approve
+
                             </button>
 
 
@@ -409,18 +577,21 @@ async function loadRegistrations() {
                                     registrationDoc.id
                                 )}"
                             >
+
                                 ❌ Reject
+
                             </button>
 
                             `
+
                             :
+
                             ""
                         }
 
                     </div>
 
                 `;
-
 
 
                 registrationList.appendChild(
@@ -431,12 +602,9 @@ async function loadRegistrations() {
         );
 
 
-
-        /*
-        ====================================
-        COUNTERS
-        ====================================
-        */
+        /* =================================
+           UPDATE COUNTERS
+        ================================= */
 
         totalCount.textContent =
             total;
@@ -454,6 +622,9 @@ async function loadRegistrations() {
             rejected;
 
 
+        /* =================================
+           ACTION BUTTONS
+        ================================= */
 
         addActionListeners();
 
@@ -489,22 +660,23 @@ async function loadRegistrations() {
 }
 
 
-
-/*
-====================================
-BUTTONS
-====================================
-*/
+/* =========================================
+   ACTION BUTTONS
+========================================= */
 
 function addActionListeners() {
 
+
+    /* =================================
+       APPROVE BUTTONS
+    ================================= */
 
     document
         .querySelectorAll(
             ".approve-btn"
         )
         .forEach(
-            button => {
+            (button) => {
 
                 button.onclick =
                     () => {
@@ -519,13 +691,16 @@ function addActionListeners() {
         );
 
 
+    /* =================================
+       REJECT BUTTONS
+    ================================= */
 
     document
         .querySelectorAll(
             ".reject-btn"
         )
         .forEach(
-            button => {
+            (button) => {
 
                 button.onclick =
                     () => {
@@ -542,12 +717,9 @@ function addActionListeners() {
 }
 
 
-
-/*
-====================================
-APPROVE
-====================================
-*/
+/* =========================================
+   APPROVE REGISTRATION
+========================================= */
 
 async function approveRegistration(
     id
@@ -564,7 +736,6 @@ async function approveRegistration(
         return;
 
     }
-
 
 
     try {
@@ -612,12 +783,9 @@ async function approveRegistration(
 }
 
 
-
-/*
-====================================
-REJECT
-====================================
-*/
+/* =========================================
+   REJECT REGISTRATION
+========================================= */
 
 async function rejectRegistration(
     id
@@ -629,12 +797,14 @@ async function rejectRegistration(
         );
 
 
-    if (!reason) {
+    if (
+        !reason ||
+        reason.trim() === ""
+    ) {
 
         return;
 
     }
-
 
 
     try {
@@ -655,7 +825,7 @@ async function rejectRegistration(
                     "rejected",
 
                 rejectionReason:
-                    reason
+                    reason.trim()
 
             }
         );
@@ -687,12 +857,9 @@ async function rejectRegistration(
 }
 
 
-
-/*
-====================================
-ESCAPE HTML
-====================================
-*/
+/* =========================================
+   ESCAPE HTML
+========================================= */
 
 function escapeHTML(value) {
 
@@ -726,19 +893,18 @@ function escapeHTML(value) {
 }
 
 
-
-/*
-====================================
-LOGOUT
-====================================
-*/
+/* =========================================
+   LOGOUT
+========================================= */
 
 logoutBtn.onclick =
     async () => {
 
         try {
 
-            await signOut(auth);
+            await signOut(
+                auth
+            );
 
 
             window.location.href =
