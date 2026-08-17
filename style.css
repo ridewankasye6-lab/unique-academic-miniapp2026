@@ -2635,3 +2635,66 @@ body.dark .settingsHeader button {
     background: #292929;
 
 }
+/* =========================================
+   GLOBAL DARK MODE
+========================================= */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+/* Header */
+body.dark-mode header,
+body.dark-mode .header,
+body.dark-mode .navbar {
+    background: #111827;
+    color: #f8fafc;
+}
+
+/* Main text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode span {
+    color: #f8fafc;
+}
+
+/* Cards */
+body.dark-mode .card,
+body.dark-mode .subject-card,
+body.dark-mode .chapter-card,
+body.dark-mode .content-card {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #334155;
+}
+
+/* Links */
+body.dark-mode a {
+    color: #93c5fd;
+}
+
+/* Buttons */
+body.dark-mode button {
+    color: #f8fafc;
+}
+
+/* Inputs */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #475569;
+}
+
+/* Mobile menu */
+body.dark-mode .mobile-menu,
+body.dark-mode .menu,
+body.dark-mode .sidebar {
+    background: #111827;
+    color: #f8fafc;
+}
