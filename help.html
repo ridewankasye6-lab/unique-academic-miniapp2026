@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Unique Academic Help & Support Center - Get help with registration, payments, courses, quizzes, profiles and more."
+    >
+
+    <title>Help & Support - Unique Academic</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
+
+        /* =================================================
+           HELP PAGE
+        ================================================= */
+
+        .helpPage {
+            width: 100%;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        /* =================================================
+           BACK BUTTON
+        ================================================= */
+
+        .helpBackButton {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            padding: 10px 16px;
+
+            margin-bottom: 18px;
+
+            border-radius: 10px;
+
+            background: #2563eb;
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            transition: 0.2s ease;
+        }
+
+
+        .helpBackButton:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+
+        /* =================================================
+           HERO
+        ================================================= */
+
+        .helpHero {
+            text-align: center;
+
+            padding: 38px 20px;
+
+            margin-bottom: 20px;
+
+            border-radius: 22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #7c3aed
+                );
+
+            color: white;
+
+            box-shadow:
+                0 10px 30px
+                rgba(37, 99, 235, 0.18);
+        }
+
+
+        .helpHeroIcon {
+            font-size: 58px;
+            margin-bottom: 8px;
+        }
+
+
+        .helpHero h1 {
+            margin: 0 0 10px;
+            font-size: 30px;
+        }
+
+
+        .helpHero p {
+            margin: 0;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+
+        /* =================================================
+           QUICK HELP
+        ================================================= */
+
+        .helpSection {
+            background: white;
+
+            padding: 24px;
+
+            margin-bottom: 18px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 6px 25px
+                rgba(0,0,0,0.07);
+        }
+
+
+        .helpSection h2 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+
+        .helpSectionIntro {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+
+        /* =================================================
+           HELP GRID
+        ================================================= */
+
+        .helpGrid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(210px, 1fr)
+                );
+
+            gap: 13px;
+        }
+
+
+        .helpCard {
+            display: block;
+
+            padding: 18px;
+
+            border-radius: 14px;
+
+            background: #f8fafc;
+
+            text-decoration: none;
+
+            color: #111827;
+
+            border: 1px solid #e2e8f0;
+
+            transition: 0.2s ease;
+        }
+
+
+        .helpCard:hover {
+            transform: translateY(-2px);
+
+            border-color: #2563eb;
+
+            box-shadow:
+                0 6px 18px
+                rgba(37,99,235,0.10);
+        }
+
+
+        .helpCardIcon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+
+        .helpCard strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+        .helpCard span {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+
+        /* =================================================
+           STEP LIST
+        ================================================= */
+
+        .helpSteps {
+            display: grid;
+            gap: 12px;
+        }
+
+
+        .helpStep {
+            display: flex;
+            gap: 13px;
+
+            padding: 15px;
+
+            border-radius: 13px;
+
+            background: #f8fafc;
+        }
+
+
+        .stepNumber {
+            flex: 0 0 34px;
+
+            width: 34px;
+            height: 34px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+            color: white;
+
+            font-weight: bold;
+        }
+
+
+        .stepContent strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+
+        .stepContent span {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+
+        /* =================================================
+           FAQ
+        ================================================= */
+
+        .faqItem {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+
+        .faqItem:last-child {
+            border-bottom: none;
+        }
+
+
+        .faqQuestion {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 15px;
+
+            padding: 17px 0;
+
+            border: none;
+
+            background: transparent;
+
+            color: #111827;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            text-align: left;
+
+            cursor: pointer;
+        }
+
+
+        .faqArrow {
+            font-size: 18px;
+
+            transition:
+                transform 0.2s ease;
+        }
+
+
+        .faqAnswer {
+            display: none;
+
+            padding:
+                0 35px
+                16px
+                0;
+
+            color: #64748b;
+
+            line-height: 1.65;
+
+            font-size: 14px;
+        }
+
+
+        .faqItem.open
+        .faqAnswer {
+            display: block;
+        }
+
+
+        .faqItem.open
+        .faqArrow {
+            transform:
+                rotate(90deg);
+        }
+
+
+        /* =================================================
+           STATUS BOX
+        ================================================= */
+
+        .statusBox {
+            padding: 17px;
+
+            border-radius: 13px;
+
+            background: #eff6ff;
+
+            border-left:
+                4px solid #2563eb;
+
+            color: #334155;
+
+            line-height: 1.6;
+        }
+
+
+        /* =================================================
+           SUPPORT
+        ================================================= */
+
+        .supportBox {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eff6ff,
+                    #f5f3ff
+                );
+
+            padding: 28px 20px;
+
+            border-radius: 18px;
+        }
+
+
+        .supportBox h2 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+
+
+        .supportButtons {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+
+        .supportButton {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 7px;
+
+            padding:
+                12px
+                18px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            transition: 0.2s ease;
+        }
+
+
+        .supportButton:hover {
+            transform:
+                translateY(-2px);
+        }
+
+
+        .telegramButton {
+            background: #229ed9;
+            color: white;
+        }
+
+
+        .phoneButton {
+            background: #16a34a;
+            color: white;
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        .helpFooter {
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =================================================
+           DARK MODE
+        ================================================= */
+
+        body.dark-mode
+        .helpSection {
+            background: #1e293b;
+        }
+
+
+        body.dark-mode
+        .helpSection h2 {
+            color: white;
+        }
+
+
+        body.dark-mode
+        .helpSectionIntro {
+            color: #cbd5e1;
+        }
+
+
+        body.dark-mode
+        .helpCard {
+            background: #0f172a;
+            border-color: #334155;
+            color: white;
+        }
+
+
+        body.dark-mode
+        .helpCard span {
+            color: #94a3b8;
+        }
+
+
+        body.dark-mode
+        .helpStep {
+            background: #0f172a;
+        }
+
+
+        body.dark-mode
+        .stepContent span {
+            color: #94a3b8;
+        }
+
+
+        body.dark-mode
+        .faqQuestion {
+            color: white;
+        }
+
+
+        body.dark-mode
+        .faqAnswer {
+            color: #94a3b8;
+        }
+
+
+        body.dark-mode
+        .faqItem {
+            border-color: #334155;
+        }
+
+
+        body.dark-mode
+        .statusBox {
+            background: #172554;
+            color: #dbeafe;
+        }
+
+
+        body.dark-mode
+        .supportBox {
+            background: #1e293b;
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 600px) {
+
+            .helpPage {
+                padding: 14px;
+            }
+
+
+            .helpHero {
+                padding: 30px 16px;
+            }
+
+
+            .helpHero h1 {
+                font-size: 26px;
+            }
+
+
+            .helpSection {
+                padding: 20px 17px;
+            }
+
+
+            .helpGrid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .supportButton {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<main class="helpPage">
+
+
+    <!-- =================================================
+         BACK
+    ================================================= -->
+
+    <a
+        href="index.html"
+        class="helpBackButton"
+    >
+        ← Back Home
+    </a>
+
+
+
+    <!-- =================================================
+         HERO
+    ================================================= -->
+
+    <section class="helpHero">
+
+        <div class="helpHeroIcon">
+            🆘
+        </div>
+
+        <h1>
+            Help & Support
+        </h1>
+
+        <p>
+            Find answers, learn how to use
+            Unique Academic, and get support
+            when you need it.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         QUICK HELP
+    ================================================= -->
+
+    <section class="helpSection">
+
+        <h2>
+            ⚡ Quick Help
+        </h2>
+
+        <p class="helpSectionIntro">
+            Choose a topic to quickly find
+            the information you need.
+        </p>
+
+
+        <div class="helpGrid">
+
+
+            <a
+                href="#registration"
+                class="helpCard"
+            >
+
+                <div class="helpCardIcon">
+                    📝
+                </div>
+
+                <strong>
+                    Registration
+                </strong>
+
+                <span>
+                    Learn how to create your
+                    Unique Academic account.
+                </span>
+
+            </a>
+
+
+            <a
+                href="#payment"
+                class="helpCard"
+            >
+
+                <div class="helpCardIcon">
+                    💳
+                </div>
+
+                <strong>
+                    Payment & Approval
+                </strong>
+
+                <span>
+                    Understand payment,
+                    verification and approval.
+                </span>
+
+            </a>
+
+
+            <a
+                href="#courses"
+                class="helpCard"
+            >
+
+                <div class="helpCardIcon">
+                    📚
+                </div>
+
+                <strong>
+                    Courses
+                </strong>
+
+                <span>
+                    Learn how to access subjects,
+                    chapters and notes.
+                </span>
+
+            </a>
+
+
+            <a
+                href="#quiz"
+                class="helpCard"
+            >
+
+                <div class="helpCardIcon">
+                    ❓
+                </div>
+
+                <strong>
+                    Quizzes
+                </strong>
+
+                <span>
+                    Learn how to use the quiz
+                    system and check your results.
+                </span>
+
+            </a>
+
+
+            <a
+                href="#profile"
+                class="helpCard"
+            >
+
+                <div class="helpCardIcon">
+                    👤
+                </div>
+
+                <strong>
+                    Profile
+                </strong>
+
+                <span>
+                    Manage your student account
+                    and profile.
+                </span>
+
+            </a>
+
+
+            <a
+                href="#troubleshooting"
+                class="helpCard"
+            >
+
+                <div class="helpCardIcon">
+                    🛠️
+                </div>
+
+                <strong>
+                    Troubleshooting
+                </strong>
+
+                <span>
+                    Solutions for common problems
+                    and errors.
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         GETTING STARTED
+    ================================================= -->
+
+    <section class="helpSection">
+
+        <h2>
+            🚀 Getting Started
+        </h2>
+
+        <p class="helpSectionIntro">
+            New to Unique Academic? Follow
+            these simple steps.
+        </p>
+
+
+        <div class="helpSteps">
+
+
+            <div class="helpStep">
+
+                <div class="stepNumber">
+                    1
+                </div>
+
+                <div class="stepContent">
+
+                    <strong>
+                        Create your account
+                    </strong>
+
+                    <span>
+                        Open Registration and enter
+                        your personal information.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="helpStep">
+
+                <div class="stepNumber">
+                    2
+                </div>
+
+                <div class="stepContent">
+
+                    <strong>
+                        Complete registration
+                    </strong>
+
+                    <span>
+                        Create your password and
+                        complete the required
+                        registration information.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="helpStep">
+
+                <div class="stepNumber">
+                    3
+                </div>
+
+                <div class="stepContent">
+
+                    <strong>
+                        Complete payment
+                    </strong>
+
+                    <span>
+                        Follow the payment instructions
+                        shown during registration.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="helpStep">
+
+                <div class="stepNumber">
+                    4
+                </div>
+
+                <div class="stepContent">
+
+                    <strong>
+                        Wait for approval
+                    </strong>
+
+                    <span>
+                        Your payment and registration
+                        will be reviewed by the
+                        administrator.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="helpStep">
+
+                <div class="stepNumber">
+                    5
+                </div>
+
+                <div class="stepContent">
+
+                    <strong>
+                        Start learning
+                    </strong>
+
+                    <span>
+                        Once approved, log in and
+                        access your available courses.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         REGISTRATION
+    ================================================= -->
+
+    <section
+        class="helpSection"
+        id="registration"
+    >
+
+        <h2>
+            📝 Registration & Login
+        </h2>
+
+        <p>
+            To use protected course content,
+            you need a Unique Academic account
+            and an approved registration.
+        </p>
+
+        <p>
+            If you already have an account,
+            use the Login option from the menu.
+            If you are a new student, choose
+            Register.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PAYMENT
+    ================================================= -->
+
+    <section
+        class="helpSection"
+        id="payment"
+    >
+
+        <h2>
+            💳 Payment & Approval
+        </h2>
+
+        <p>
+            After completing the registration
+            information, follow the payment
+            instructions displayed on the
+            registration page.
+        </p>
+
+
+        <div class="statusBox">
+
+            <strong>
+                ⏳ Pending:
+            </strong>
+
+            Your payment is waiting for
+            administrator verification.
+
+            <br><br>
+
+            <strong>
+                ✅ Approved:
+            </strong>
+
+            Your registration has been
+            approved and course access
+            is available.
+
+            <br><br>
+
+            <strong>
+                ❌ Rejected:
+            </strong>
+
+            Your registration was not approved.
+            Contact support if you believe
+            there is a problem.
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COURSES
+    ================================================= -->
+
+    <section
+        class="helpSection"
+        id="courses"
+    >
+
+        <h2>
+            📚 Courses, Chapters & Notes
+        </h2>
+
+        <p>
+            From the home page, choose a subject
+            and open the course.
+        </p>
+
+        <p>
+            Inside a course, select the chapter
+            you want to study. You can then use
+            the available notes, summaries and
+            other learning resources.
+        </p>
+
+        <p>
+            Use the navigation buttons provided
+            on each page to move through the
+            learning material.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         QUIZ
+    ================================================= -->
+
+    <section
+        class="helpSection"
+        id="quiz"
+    >
+
+        <h2>
+            ❓ Quizzes
+        </h2>
+
+        <p>
+            Open a chapter quiz to practice what
+            you have learned.
+        </p>
+
+        <p>
+            Read each question carefully,
+            select your answer, and use the
+            navigation controls to continue.
+        </p>
+
+        <p>
+            After completing the quiz, review
+            your result and explanations to
+            identify areas that need more study.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROFILE
+    ================================================= -->
+
+    <section
+        class="helpSection"
+        id="profile"
+    >
+
+        <h2>
+            👤 Student Profile
+        </h2>
+
+        <p>
+            When you are logged in, open
+            <strong>Profile</strong> from the
+            menu to access your student account.
+        </p>
+
+        <p>
+            Your profile helps you manage and
+            view your account information.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TROUBLESHOOTING
+    ================================================= -->
+
+    <section
+        class="helpSection"
+        id="troubleshooting"
+    >
+
+        <h2>
+            🛠️ Troubleshooting
+        </h2>
+
+
+        <div class="faqItem">
+
+            <button
+                class="faqQuestion"
+                type="button"
+            >
+
+                <span>
+                    I cannot log in. What should I do?
+                </span>
+
+                <span class="faqArrow">
+                    ›
+                </span>
+
+            </button>
+
+            <div class="faqAnswer">
+
+                Check that your email and password
+                are correct. Make sure you have an
+                internet connection. If the problem
+                continues, contact support.
+
+            </div>
+
+        </div>
+
+
+        <div class="faqItem">
+
+            <button
+                class="faqQuestion"
+                type="button"
+            >
+
+                <span>
+                    My payment was approved but I cannot access the course.
+                </span>
+
+                <span class="faqArrow">
+                    ›
+                </span>
+
+            </button>
+
+            <div class="faqAnswer">
+
+                First, make sure you are logged into
+                the same account used during registration.
+                Refresh the page and try again. If access
+                is still locked, contact support.
+
+            </div>
+
+        </div>
+
+
+        <div class="faqItem">
+
+            <button
+                class="faqQuestion"
+                type="button"
+            >
+
+                <span>
+                    A page is not loading.
+                </span>
+
+                <span class="faqArrow">
+                    ›
+                </span>
+
+            </button>
+
+            <div class="faqAnswer">
+
+                Check your internet connection and
+                refresh the page. You can also close
+                and reopen your browser. If the issue
+                continues, contact support.
+
+            </div>
+
+        </div>
+
+
+        <div class="faqItem">
+
+            <button
+                class="faqQuestion"
+                type="button"
+            >
+
+                <span>
+                    I forgot my password.
+                </span>
+
+                <span class="faqArrow">
+                    ›
+                </span>
+
+            </button>
+
+            <div class="faqAnswer">
+
+                Use the password recovery option
+                available on the login page. If you
+                cannot recover your account, contact
+                Unique Academic support.
+
+            </div>
+
+        </div>
+
+
+        <div class="faqItem">
+
+            <button
+                class="faqQuestion"
+                type="button"
+            >
+
+                <span>
+                    I found incorrect information in a course.
+                </span>
+
+                <span class="faqArrow">
+                    ›
+                </span>
+
+            </button>
+
+            <div class="faqAnswer">
+
+                Please contact support and tell us
+                the subject, chapter and information
+                that needs to be reviewed.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTACT SUPPORT
+    ================================================= -->
+
+    <section class="helpSection">
+
+        <div class="supportBox">
+
+            <h2>
+                💬 Still Need Help?
+            </h2>
+
+            <p>
+                Our support team is ready to help
+                you with account, registration,
+                payment, course and technical
+                problems.
+            </p>
+
+
+            <div class="supportButtons">
+
+
+                <a
+                    href="https://t.me/UniqueAcademic1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="supportButton telegramButton"
+                >
+                    ✈️ Telegram Support
+                </a>
+
+
+                <a
+                    href="tel:0976596520"
+                    class="supportButton phoneButton"
+                >
+                    📞 0976596520
+                </a>
+
+
+                <a
+                    href="tel:+251703547820"
+                    class="supportButton phoneButton"
+                >
+                    📞 +251 703 547 820
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================= -->
+
+    <div class="helpFooter">
+
+        🎓 <strong>Unique Academic</strong>
+
+        <br>
+
+        Learn. Understand. Succeed.
+
+        <br><br>
+
+        © 2026 Unique Academic
+
+        <br>
+
+        All rights reserved.
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FAQ JAVASCRIPT
+===================================================== -->
+
+<script>
+
+(function () {
+
+    "use strict";
+
+
+    const faqQuestions =
+        document.querySelectorAll(
+            ".faqQuestion"
+        );
+
+
+    faqQuestions.forEach(
+        function (question) {
+
+            question.addEventListener(
+                "click",
+                function () {
+
+                    const item =
+                        question.closest(
+                            ".faqItem"
+                        );
+
+
+                    if (!item) {
+                        return;
+                    }
+
+
+                    const wasOpen =
+                        item.classList.contains(
+                            "open"
+                        );
+
+
+                    /*
+                     * Close other FAQ items.
+                     */
+
+                    document
+                        .querySelectorAll(
+                            ".faqItem.open"
+                        )
+                        .forEach(
+                            function (otherItem) {
+
+                                if (
+                                    otherItem !== item
+                                ) {
+
+                                    otherItem.classList.remove(
+                                        "open"
+                                    );
+
+                                }
+
+                            }
+                        );
+
+
+                    /*
+                     * Toggle selected item.
+                     */
+
+                    if (wasOpen) {
+
+                        item.classList.remove(
+                            "open"
+                        );
+
+                    }
+
+                    else {
+
+                        item.classList.add(
+                            "open"
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+    /* =================================================
+       LOAD SAVED THEME
+    ================================================= */
+
+    try {
+
+        const savedSettings =
+            localStorage.getItem(
+                "uniqueAcademicSettings"
+            );
+
+
+        if (!savedSettings) {
+            return;
+        }
+
+
+        const settings =
+            JSON.parse(
+                savedSettings
+            );
+
+
+        if (
+            settings &&
+            settings.darkMode === true
+        ) {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
+        }
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Unable to load saved theme:",
+            error
+        );
+
+    }
+
+})();
+
+</script>
+
+
+</body>
+
+</html>
