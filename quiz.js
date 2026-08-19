@@ -1,5 +1,6 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
+// 5 QUESTIONS PER PAGE
 // =====================================================
 
 
@@ -36,18 +37,6 @@ const headerChapter =
 const questionNumber =
     document.getElementById("questionNumber");
 
-const question =
-    document.getElementById("question");
-
-const options =
-    document.getElementById("options");
-
-const englishExplanation =
-    document.getElementById("englishExplanation");
-
-const amharicExplanation =
-    document.getElementById("amharicExplanation");
-
 const nextBtn =
     document.getElementById("nextBtn");
 
@@ -66,8 +55,22 @@ const progressBar =
 const completionMessage =
     document.getElementById("completionMessage");
 
-const explanationBox =
-    document.getElementById("explanationBox");
+const questionsPage =
+    document.getElementById("questionsPage");
+
+
+// =====================================================
+// QUESTIONS PER PAGE
+// =====================================================
+
+const QUESTIONS_PER_PAGE = 5;
+
+
+// =====================================================
+// CURRENT PAGE
+// =====================================================
+
+let currentPage = 0;
 
 
 // =====================================================
@@ -77,12 +80,16 @@ const explanationBox =
 function formatSubjectName(value) {
 
     if (!value) {
+
         return "Unknown Subject";
+
     }
 
     return value
         .replace(/-/g, " ")
-        .replace(/\b\w/g, letter => letter.toUpperCase());
+        .replace(/\b\w/g, letter =>
+            letter.toUpperCase()
+        );
 
 }
 
@@ -106,7 +113,6 @@ subjectName.textContent =
 chapterName.textContent =
     formattedChapter;
 
-
 headerTitle.textContent =
     formattedSubject;
 
@@ -125,29 +131,23 @@ const questions =
 
 
 // =====================================================
-// CURRENT QUESTION
-// =====================================================
-
-let currentQuestion = 0;
-
-
-// =====================================================
 // NO QUESTIONS FOUND
 // =====================================================
 
 if (questions.length === 0) {
 
-    question.textContent =
-        "No questions found for this chapter.";
+    questionsPage.innerHTML = `
+        <section class="questionCard">
+
+            <h2 class="questionText">
+                No questions found for this chapter.
+            </h2>
+
+        </section>
+    `;
 
     questionNumber.textContent =
         "Question 0 / 0";
-
-    options.innerHTML = "";
-
-    englishExplanation.textContent = "";
-
-    amharicExplanation.textContent = "";
 
     previousQuestionBtn.style.display =
         "none";
@@ -155,72 +155,221 @@ if (questions.length === 0) {
     nextBtn.style.display =
         "none";
 
-    explanationBox.style.display =
-        "none";
-
     progressBar.style.width =
         "0%";
 
 } else {
 
-    loadQuestion();
+    loadPage();
 
 }
 
 
 // =====================================================
-// LOAD QUESTION
+// GET ENGLISH EXPLANATION
 // =====================================================
 
-function loadQuestion() {
+function getEnglishExplanation(q) {
 
-    const q =
-        questions[currentQuestion];
+    if (q.englishExplanation) {
+
+        return q.englishExplanation;
+
+    }
+
+
+    if (
+        q.explanation &&
+        q.explanation.english
+    ) {
+
+        return q.explanation.english;
+
+    }
+
+
+    return "";
+
+}
+
+
+// =====================================================
+// GET AMHARIC EXPLANATION
+// =====================================================
+
+function getAmharicExplanation(q) {
+
+    if (q.amharicExplanation) {
+
+        return q.amharicExplanation;
+
+    }
+
+
+    if (
+        q.explanation &&
+        q.explanation.amharic
+    ) {
+
+        return q.explanation.amharic;
+
+    }
+
+
+    return "";
+
+}
+
+
+// =====================================================
+// LOAD 5 QUESTIONS
+// =====================================================
+
+function loadPage() {
+
+    questionsPage.innerHTML = "";
+
+
+    const startIndex =
+        currentPage * QUESTIONS_PER_PAGE;
+
+
+    const endIndex =
+        Math.min(
+            startIndex + QUESTIONS_PER_PAGE,
+            questions.length
+        );
 
 
     // ---------------------------------------------
-    // Question number
+    // Create each question
+    // ---------------------------------------------
+
+    for (
+        let index = startIndex;
+        index < endIndex;
+        index++
+    ) {
+
+        createQuestionCard(
+            questions[index],
+            index
+        );
+
+    }
+
+
+    // ---------------------------------------------
+    // Update question counter
     // ---------------------------------------------
 
     questionNumber.textContent =
-        `Question ${currentQuestion + 1} / ${questions.length}`;
+        `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
+
+
+    // ---------------------------------------------
+    // Update navigation
+    // ---------------------------------------------
+
+    updateNavigation();
+
+
+    // ---------------------------------------------
+    // Update progress
+    // ---------------------------------------------
+
+    updateProgress();
+
+
+    // ---------------------------------------------
+    // Scroll to top
+    // ---------------------------------------------
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+// =====================================================
+// CREATE QUESTION CARD
+// =====================================================
+
+function createQuestionCard(q, index) {
+
+    // ---------------------------------------------
+    // Main question card
+    // ---------------------------------------------
+
+    const questionCard =
+        document.createElement("section");
+
+
+    questionCard.className =
+        "questionCard";
+
+
+    // ---------------------------------------------
+    // Question label
+    // ---------------------------------------------
+
+    const questionLabel =
+        document.createElement("div");
+
+
+    questionLabel.className =
+        "questionLabel";
+
+
+    const questionBadge =
+        document.createElement("span");
+
+
+    questionBadge.className =
+        "questionBadge";
+
+
+    questionBadge.textContent =
+        `QUESTION ${index + 1}`;
+
+
+    questionLabel.appendChild(
+        questionBadge
+    );
 
 
     // ---------------------------------------------
     // Question text
     // ---------------------------------------------
 
-    question.textContent =
+    const questionText =
+        document.createElement("h2");
+
+
+    questionText.className =
+        "questionText";
+
+
+    questionText.textContent =
         q.question || "";
 
 
     // ---------------------------------------------
-    // Clear old options
+    // Options
     // ---------------------------------------------
 
-    options.innerHTML = "";
+    const options =
+        document.createElement("div");
 
 
-    // ---------------------------------------------
-    // Clear explanations
-    // ---------------------------------------------
+    options.className =
+        "options";
 
-    englishExplanation.textContent = "";
-
-    amharicExplanation.textContent = "";
-
-
-    // ---------------------------------------------
-    // Hide explanation until answer
-    // ---------------------------------------------
-
-    explanationBox.style.display =
-        "none";
-
-
-    // ---------------------------------------------
-    // Create options
-    // ---------------------------------------------
 
     const questionOptions =
         q.options ||
@@ -229,7 +378,7 @@ function loadQuestion() {
 
 
     questionOptions.forEach(
-        (option, index) => {
+        (option, optionIndex) => {
 
             const button =
                 document.createElement("button");
@@ -251,159 +400,165 @@ function loadQuestion() {
                 "click",
                 () => {
 
-                    checkAnswer(index);
+                    checkAnswer(
+                        q,
+                        optionIndex,
+                        options,
+                        explanationBox,
+                        englishExplanation,
+                        amharicExplanation
+                    );
 
                 }
             );
 
 
-            options.appendChild(button);
+            options.appendChild(
+                button
+            );
 
         }
     );
 
 
     // ---------------------------------------------
-    // Update navigation
+    // Explanation
     // ---------------------------------------------
 
-    updateNavigation();
+    const explanationBox =
+        document.createElement("section");
+
+
+    explanationBox.className =
+        "explanationCard";
+
+
+    explanationBox.style.display =
+        "none";
+
+
+    const englishSection =
+        document.createElement("div");
+
+
+    englishSection.className =
+        "explanationSection";
+
+
+    const englishTitle =
+        document.createElement("h3");
+
+
+    englishTitle.textContent =
+        "📖 English Explanation";
+
+
+    const englishExplanation =
+        document.createElement("p");
+
+
+    englishExplanation.textContent =
+        "";
+
+
+    englishSection.appendChild(
+        englishTitle
+    );
+
+
+    englishSection.appendChild(
+        englishExplanation
+    );
+
+
+    const divider =
+        document.createElement("div");
+
+
+    divider.className =
+        "explanationDivider";
+
+
+    const amharicSection =
+        document.createElement("div");
+
+
+    amharicSection.className =
+        "explanationSection";
+
+
+    const amharicTitle =
+        document.createElement("h3");
+
+
+    amharicTitle.textContent =
+        "🇪🇹 የአማርኛ ማብራሪያ";
+
+
+    const amharicExplanation =
+        document.createElement("p");
+
+
+    amharicExplanation.textContent =
+        "";
+
+
+    amharicSection.appendChild(
+        amharicTitle
+    );
+
+
+    amharicSection.appendChild(
+        amharicExplanation
+    );
+
+
+    explanationBox.appendChild(
+        englishSection
+    );
+
+
+    explanationBox.appendChild(
+        divider
+    );
+
+
+    explanationBox.appendChild(
+        amharicSection
+    );
 
 
     // ---------------------------------------------
-    // Update progress
+    // Add everything to card
     // ---------------------------------------------
 
-    updateProgress();
+    questionCard.appendChild(
+        questionLabel
+    );
+
+
+    questionCard.appendChild(
+        questionText
+    );
+
+
+    questionCard.appendChild(
+        options
+    );
+
+
+    questionCard.appendChild(
+        explanationBox
+    );
 
 
     // ---------------------------------------------
-    // Scroll question into view
+    // Add card to page
     // ---------------------------------------------
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-}
-
-
-// =====================================================
-// UPDATE PROGRESS
-// =====================================================
-
-function updateProgress() {
-
-    if (questions.length === 0) {
-
-        progressBar.style.width =
-            "0%";
-
-        return;
-
-    }
-
-
-    const progress =
-        ((currentQuestion + 1) /
-            questions.length) * 100;
-
-
-    progressBar.style.width =
-        `${progress}%`;
-
-}
-
-
-// =====================================================
-// UPDATE NAVIGATION
-// =====================================================
-
-function updateNavigation() {
-
-    // Previous Question
-    previousQuestionBtn.disabled =
-        currentQuestion === 0;
-
-
-    // Next button
-    if (
-        currentQuestion ===
-        questions.length - 1
-    ) {
-
-        nextBtn.innerHTML =
-            `
-            <span>Finish Quiz</span>
-            <span class="navArrow">✓</span>
-            `;
-
-    } else {
-
-        nextBtn.innerHTML =
-            `
-            <span>Next</span>
-            <span class="navArrow">→</span>
-            `;
-
-    }
-
-}
-
-
-// =====================================================
-// GET EXPLANATION
-// =====================================================
-
-function getEnglishExplanation(q) {
-
-    // New / simple structure
-    if (q.englishExplanation) {
-
-        return q.englishExplanation;
-
-    }
-
-
-    // Explanation object structure
-    if (
-        q.explanation &&
-        q.explanation.english
-    ) {
-
-        return q.explanation.english;
-
-    }
-
-
-    return "";
-
-}
-
-
-function getAmharicExplanation(q) {
-
-    // New / simple structure
-    if (q.amharicExplanation) {
-
-        return q.amharicExplanation;
-
-    }
-
-
-    // Explanation object structure
-    if (
-        q.explanation &&
-        q.explanation.amharic
-    ) {
-
-        return q.explanation.amharic;
-
-    }
-
-
-    return "";
+    questionsPage.appendChild(
+        questionCard
+    );
 
 }
 
@@ -412,14 +567,17 @@ function getAmharicExplanation(q) {
 // CHECK ANSWER
 // =====================================================
 
-function checkAnswer(selectedIndex) {
-
-    const q =
-        questions[currentQuestion];
-
+function checkAnswer(
+    q,
+    selectedIndex,
+    options,
+    explanationBox,
+    englishExplanation,
+    amharicExplanation
+) {
 
     const buttons =
-        document.querySelectorAll(
+        options.querySelectorAll(
             ".optionBtn"
         );
 
@@ -429,13 +587,14 @@ function checkAnswer(selectedIndex) {
 
 
     // ---------------------------------------------
-    // Disable all buttons
+    // Disable all options
     // ---------------------------------------------
 
     buttons.forEach(
         (button, index) => {
 
-            button.disabled = true;
+            button.disabled =
+                true;
 
 
             // Correct answer
@@ -467,56 +626,141 @@ function checkAnswer(selectedIndex) {
 
 
     // ---------------------------------------------
-    // Show explanations
+    // Show English explanation
     // ---------------------------------------------
 
     englishExplanation.textContent =
         getEnglishExplanation(q);
 
 
+    // ---------------------------------------------
+    // Show Amharic explanation
+    // ---------------------------------------------
+
     amharicExplanation.textContent =
         getAmharicExplanation(q);
 
 
+    // ---------------------------------------------
+    // Show explanation box
+    // ---------------------------------------------
+
     explanationBox.style.display =
         "block";
-
-
-    // ---------------------------------------------
-    // Scroll explanation into view
-    // ---------------------------------------------
-
-    setTimeout(
-        () => {
-
-            explanationBox.scrollIntoView({
-                behavior: "smooth",
-                block: "nearest"
-            });
-
-        },
-        150
-    );
 
 }
 
 
 // =====================================================
-// NEXT QUESTION
+// UPDATE PROGRESS
+// =====================================================
+
+function updateProgress() {
+
+    if (questions.length === 0) {
+
+        progressBar.style.width =
+            "0%";
+
+        return;
+
+    }
+
+
+    const endIndex =
+        Math.min(
+            (
+                currentPage + 1
+            ) * QUESTIONS_PER_PAGE,
+            questions.length
+        );
+
+
+    const progress =
+        (
+            endIndex /
+            questions.length
+        ) * 100;
+
+
+    progressBar.style.width =
+        `${progress}%`;
+
+}
+
+
+// =====================================================
+// UPDATE NAVIGATION
+// =====================================================
+
+function updateNavigation() {
+
+    // ---------------------------------------------
+    // Previous
+    // ---------------------------------------------
+
+    previousQuestionBtn.disabled =
+        currentPage === 0;
+
+
+    // ---------------------------------------------
+    // Check if this is the final page
+    // ---------------------------------------------
+
+    const totalPages =
+        Math.ceil(
+            questions.length /
+            QUESTIONS_PER_PAGE
+        );
+
+
+    if (
+        currentPage ===
+        totalPages - 1
+    ) {
+
+        nextBtn.innerHTML =
+            `
+            <span>Finish Quiz</span>
+            <span class="navArrow">✓</span>
+            `;
+
+    } else {
+
+        nextBtn.innerHTML =
+            `
+            <span>Next</span>
+            <span class="navArrow">→</span>
+            `;
+
+    }
+
+}
+
+
+// =====================================================
+// NEXT PAGE
 // =====================================================
 
 nextBtn.addEventListener(
     "click",
     () => {
 
+        const totalPages =
+            Math.ceil(
+                questions.length /
+                QUESTIONS_PER_PAGE
+            );
+
+
         if (
-            currentQuestion <
-            questions.length - 1
+            currentPage <
+            totalPages - 1
         ) {
 
-            currentQuestion++;
+            currentPage++;
 
-            loadQuestion();
+            loadPage();
 
         } else {
 
@@ -529,18 +773,20 @@ nextBtn.addEventListener(
 
 
 // =====================================================
-// PREVIOUS QUESTION
+// PREVIOUS PAGE
 // =====================================================
 
 previousQuestionBtn.addEventListener(
     "click",
     () => {
 
-        if (currentQuestion > 0) {
+        if (
+            currentPage > 0
+        ) {
 
-            currentQuestion--;
+            currentPage--;
 
-            loadQuestion();
+            loadPage();
 
         }
 
@@ -555,22 +801,14 @@ previousQuestionBtn.addEventListener(
 function finishQuiz() {
 
     questionNumber.textContent =
-        `Question ${questions.length} / ${questions.length}`;
+        `Questions ${questions.length} / ${questions.length}`;
 
 
     progressBar.style.width =
         "100%";
 
 
-    question.textContent =
-        "🎉 Quiz Completed!";
-
-
-    options.innerHTML = "";
-
-
-    explanationBox.style.display =
-        "none";
+    questionsPage.innerHTML = "";
 
 
     previousQuestionBtn.style.display =
@@ -608,22 +846,13 @@ backBtn.addEventListener(
     "click",
     () => {
 
-        /*
-         * This is now a REAL page back button.
-         *
-         * It does NOT move between questions.
-         */
-
-        if (window.history.length > 1) {
+        if (
+            window.history.length > 1
+        ) {
 
             window.history.back();
 
         } else {
-
-            /*
-             * Fallback if there is no
-             * previous browser history.
-             */
 
             if (subject) {
 
