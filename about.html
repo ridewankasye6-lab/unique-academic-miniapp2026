@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="About Unique Academic - Learn smarter with organized university notes, summaries, quizzes and study tools."
+    >
+
+    <title>About Us - Unique Academic</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
+
+        /* =================================================
+           ABOUT PAGE
+        ================================================= */
+
+        .aboutPage {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px 18px 50px;
+        }
+
+
+        /* =================================================
+           BACK BUTTON
+        ================================================= */
+
+        .backButton {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 16px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+
+        /* =================================================
+           HERO
+        ================================================= */
+
+        .aboutHero {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            background: linear-gradient(
+                135deg,
+                #2563eb,
+                #7c3aed
+            );
+            color: white;
+        }
+
+
+        .aboutLogo {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+
+        .aboutHero h2 {
+            margin: 5px 0 10px;
+            font-size: 30px;
+        }
+
+
+        .aboutHero p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+
+        /* =================================================
+           CARDS
+        ================================================= */
+
+        .aboutCard {
+            background: white;
+            padding: 25px;
+            margin: 18px 0;
+            border-radius: 18px;
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.08);
+        }
+
+
+        .aboutCard h3 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+
+
+        .aboutCard p {
+            line-height: 1.7;
+            color: #475569;
+        }
+
+
+        /* =================================================
+           FEATURES
+        ================================================= */
+
+        .aboutFeatures {
+            display: grid;
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(180px, 1fr)
+                );
+            gap: 12px;
+        }
+
+
+        .feature {
+            padding: 18px;
+            text-align: center;
+            background: #f8fafc;
+            border-radius: 14px;
+        }
+
+
+        .featureIcon {
+            font-size: 30px;
+        }
+
+
+        .feature strong {
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+
+
+        .feature span {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+
+        /* =================================================
+           SUPPORT SECTION
+        ================================================= */
+
+        .supportCard {
+            background: linear-gradient(
+                135deg,
+                #eff6ff,
+                #f5f3ff
+            );
+
+            padding: 28px 22px;
+
+            margin: 18px 0;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.06);
+        }
+
+
+        .supportCard h3 {
+            margin-top: 0;
+            color: #2563eb;
+            font-size: 24px;
+        }
+
+
+        .supportCard p {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+
+        .supportButtons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+
+        .supportButton {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            padding: 12px 18px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.2s ease;
+        }
+
+
+        .telegramButton {
+            background: #229ed9;
+            color: white;
+        }
+
+
+        .phoneButton {
+            background: #16a34a;
+            color: white;
+        }
+
+
+        .supportButton:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+
+        /* =================================================
+           CONTACT INFORMATION
+        ================================================= */
+
+        .contactInfo {
+            margin-top: 20px;
+            display: grid;
+            gap: 10px;
+        }
+
+
+        .contactItem {
+            background: white;
+            padding: 13px;
+            border-radius: 10px;
+            color: #475569;
+        }
+
+
+        .contactItem strong {
+            color: #111827;
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        .aboutFooter {
+            text-align: center;
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+
+        /* =================================================
+           DARK MODE
+        ================================================= */
+
+        body.dark-mode .aboutCard {
+            background: #1e293b;
+        }
+
+
+        body.dark-mode .aboutCard p {
+            color: #cbd5e1;
+        }
+
+
+        body.dark-mode .feature {
+            background: #0f172a;
+        }
+
+
+        body.dark-mode .feature span {
+            color: #94a3b8;
+        }
+
+
+        body.dark-mode .supportCard {
+            background: #1e293b;
+        }
+
+
+        body.dark-mode .supportCard p {
+            color: #cbd5e1;
+        }
+
+
+        body.dark-mode .contactItem {
+            background: #0f172a;
+            color: #cbd5e1;
+        }
+
+
+        body.dark-mode .contactItem strong {
+            color: white;
+        }
+
+
+        body.dark-mode .aboutFooter {
+            color: #94a3b8;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<main class="aboutPage">
+
+
+    <!-- =================================================
+         BACK
+    ================================================= -->
+
+    <a
+        href="index.html"
+        class="backButton"
+    >
+        ← Back
+    </a>
+
+
+    <!-- =================================================
+         HERO
+    ================================================= -->
+
+    <section class="aboutHero">
+
+        <div class="aboutLogo">
+            🎓
+        </div>
+
+        <h2>
+            Unique Academic
+        </h2>
+
+        <p>
+            Learn. Understand. Succeed.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         ABOUT US
+    ================================================= -->
+
+    <section class="aboutCard">
+
+        <h3>
+            ℹ️ About Unique Academic
+        </h3>
+
+        <p>
+            Unique Academic is an educational platform
+            created to help university students learn
+            in a simple, organized, and effective way.
+        </p>
+
+        <p>
+            Our goal is to bring important learning
+            resources together in one place so students
+            can study whenever and wherever they need.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         OUR MISSION
+    ================================================= -->
+
+    <section class="aboutCard">
+
+        <h3>
+            🎯 Our Mission
+        </h3>
+
+        <p>
+            Our mission is to make academic learning
+            easier, more organized, and accessible
+            for students.
+        </p>
+
+        <p>
+            We believe students should spend less time
+            searching for materials and more time
+            understanding what they study.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         WHAT WE PROVIDE
+    ================================================= -->
+
+    <section class="aboutCard">
+
+        <h3>
+            🚀 What We Provide
+        </h3>
+
+
+        <div class="aboutFeatures">
+
+
+            <div class="feature">
+
+                <div class="featureIcon">
+                    📚
+                </div>
+
+                <strong>
+                    Course Notes
+                </strong>
+
+                <span>
+                    Organized learning materials
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="featureIcon">
+                    ❓
+                </div>
+
+                <strong>
+                    Quizzes
+                </strong>
+
+                <span>
+                    Practice and test your knowledge
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="featureIcon">
+                    📄
+                </div>
+
+                <strong>
+                    PDF Library
+                </strong>
+
+                <span>
+                    Useful academic resources
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="featureIcon">
+                    🎥
+                </div>
+
+                <strong>
+                    Video Lessons
+                </strong>
+
+                <span>
+                    Learn through visual resources
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="featureIcon">
+                    ⭐
+                </div>
+
+                <strong>
+                    Bookmarks
+                </strong>
+
+                <span>
+                    Save important subjects
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="featureIcon">
+                    🧠
+                </div>
+
+                <strong>
+                    Study Tools
+                </strong>
+
+                <span>
+                    Tools designed for better learning
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         OUR VISION
+    ================================================= -->
+
+    <section class="aboutCard">
+
+        <h3>
+            🌟 Our Vision
+        </h3>
+
+        <p>
+            To become a trusted academic learning
+            platform that helps students build knowledge,
+            confidence, and better study habits.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         OUR VALUES
+    ================================================= -->
+
+    <section class="aboutCard">
+
+        <h3>
+            💙 Our Values
+        </h3>
+
+        <p>
+            We value simplicity, accessibility,
+            continuous learning, academic growth,
+            and student success.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         CONTACT & SUPPORT
+    ================================================= -->
+
+    <section class="supportCard">
+
+        <h3>
+            💬 Contact & Support
+        </h3>
+
+        <p>
+            Need help with your account, registration,
+            payment, courses, quizzes, or anything
+            related to Unique Academic?
+        </p>
+
+        <p>
+            We are here to help you.
+            Feel free to contact us through Telegram
+            or phone.
+        </p>
+
+
+        <div class="supportButtons">
+
+
+            <!-- TELEGRAM -->
+
+            <a
+                href="https://t.me/UniqueAcademic1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="supportButton telegramButton"
+            >
+                ✈️ Message Us on Telegram
+            </a>
+
+
+            <!-- PHONE -->
+
+            <a
+                href="tel:+251703547820"
+                class="supportButton phoneButton"
+            >
+                📞 Call Support
+            </a>
+
+
+        </div>
+
+
+        <div class="contactInfo">
+
+
+            <div class="contactItem">
+
+                <strong>
+                    ✈️ Telegram:
+                </strong>
+
+                @UniqueAcademic1
+
+            </div>
+
+
+            <div class="contactItem">
+
+                <strong>
+                    📞 Phone:
+                </strong>
+
+                +251 70 354 7820
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================= -->
+
+    <div class="aboutFooter">
+
+        🎓 <strong>Unique Academic</strong>
+
+        <br>
+
+        Learn. Understand. Succeed.
+
+        <br><br>
+
+        © 2026 Unique Academic
+
+        <br>
+
+        All rights reserved.
+
+    </div>
+
+
+</main>
+
+
+<!-- =====================================================
+     LOAD SAVED THEME
+===================================================== -->
+
+<script>
+
+(function () {
+
+    try {
+
+        const savedSettings =
+            localStorage.getItem(
+                "uniqueAcademicSettings"
+            );
+
+
+        if (!savedSettings) {
+
+            return;
+
+        }
+
+
+        const settings =
+            JSON.parse(
+                savedSettings
+            );
+
+
+        if (
+            settings &&
+            settings.darkMode === true
+        ) {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
+        }
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Unable to load saved theme:",
+            error
+        );
+
+    }
+
+})();
+
+</script>
+
+
+</body>
+
+</html>
