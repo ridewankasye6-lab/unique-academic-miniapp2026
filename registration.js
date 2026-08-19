@@ -1,14 +1,32 @@
 /* =========================================
    UNIQUE ACADEMIC
    REAL REGISTRATION SYSTEM
-   Firebase + Cloud Firestore + Storage
+
+   Firebase Authentication
+   Cloud Firestore
+   Firebase Storage
 
    STEP 1 → STEP 2 → STEP 3 → STEP 4
 
-   SCREENSHOT:
-   - Validates JPG / PNG / WEBP
-   - Compresses large screenshots
-   - Uploads compressed image to Firebase Storage
+   IMPORTANT:
+
+   PAYMENT SCREENSHOT IS OPTIONAL.
+
+   If screenshot upload succeeds:
+   → URL is saved.
+
+   If screenshot upload fails:
+   → Registration STILL continues.
+
+   If student doesn't select screenshot:
+   → Registration STILL continues.
+
+   PAYMENT REFERENCE IS REQUIRED.
+========================================= */
+
+
+/* =========================================
+   FIREBASE CONFIG
 ========================================= */
 
 import {
@@ -51,11 +69,14 @@ const storage = getStorage();
 const personalStep =
     document.getElementById("personalStep");
 
+
 const securityStep =
     document.getElementById("securityStep");
 
+
 const paymentStep =
     document.getElementById("paymentStep");
+
 
 const verificationStep =
     document.getElementById("verificationStep");
@@ -64,11 +85,14 @@ const verificationStep =
 const stepIndicator1 =
     document.getElementById("stepIndicator1");
 
+
 const stepIndicator2 =
     document.getElementById("stepIndicator2");
 
+
 const stepIndicator3 =
     document.getElementById("stepIndicator3");
+
 
 const stepIndicator4 =
     document.getElementById("stepIndicator4");
@@ -80,125 +104,140 @@ const stepIndicator4 =
 
 document
     .getElementById("personalContinueBtn")
-    .addEventListener("click", function () {
+    .addEventListener(
+        "click",
+        function () {
 
-        const fullName =
-            document
-                .getElementById("fullName")
-                .value
-                .trim();
-
-
-        const phone =
-            document
-                .getElementById("phone")
-                .value
-                .trim();
+            const fullName =
+                document
+                    .getElementById("fullName")
+                    .value
+                    .trim();
 
 
-        const email =
-            document
-                .getElementById("email")
-                .value
-                .trim();
+            const phone =
+                document
+                    .getElementById("phone")
+                    .value
+                    .trim();
 
 
-        const university =
-            document
-                .getElementById("university")
-                .value;
+            const email =
+                document
+                    .getElementById("email")
+                    .value
+                    .trim();
 
 
-        const department =
-            document
-                .getElementById("department")
-                .value
-                .trim();
+            const university =
+                document
+                    .getElementById("university")
+                    .value;
 
 
-        if (fullName === "") {
+            const department =
+                document
+                    .getElementById("department")
+                    .value
+                    .trim();
 
-            alert(
-                "Please enter your full name."
+
+            /* ================================
+               VALIDATION
+            ================================= */
+
+            if (fullName === "") {
+
+                alert(
+                    "Please enter your full name."
+                );
+
+                return;
+            }
+
+
+            if (phone === "") {
+
+                alert(
+                    "Please enter your phone number."
+                );
+
+                return;
+            }
+
+
+            if (email === "") {
+
+                alert(
+                    "Please enter your email address."
+                );
+
+                return;
+            }
+
+
+            if (university === "") {
+
+                alert(
+                    "Please select your university."
+                );
+
+                return;
+            }
+
+
+            if (department === "") {
+
+                alert(
+                    "Please enter your department."
+                );
+
+                return;
+            }
+
+
+            /* ================================
+               SHOW SECURITY
+            ================================= */
+
+            personalStep.style.display =
+                "none";
+
+
+            securityStep.style.display =
+                "block";
+
+
+            paymentStep.style.display =
+                "none";
+
+
+            /* ================================
+               UPDATE STEPS
+            ================================= */
+
+            stepIndicator1.classList.remove(
+                "active"
             );
 
-            return;
-        }
 
-
-        if (phone === "") {
-
-            alert(
-                "Please enter your phone number."
+            stepIndicator1.classList.add(
+                "completed"
             );
 
-            return;
-        }
 
-
-        if (email === "") {
-
-            alert(
-                "Please enter your email address."
+            stepIndicator2.classList.add(
+                "active"
             );
 
-            return;
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
         }
-
-
-        if (university === "") {
-
-            alert(
-                "Please select your university."
-            );
-
-            return;
-        }
-
-
-        if (department === "") {
-
-            alert(
-                "Please enter your department."
-            );
-
-            return;
-        }
-
-
-        personalStep.style.display =
-            "none";
-
-
-        securityStep.style.display =
-            "block";
-
-
-        paymentStep.style.display =
-            "none";
-
-
-        stepIndicator1.classList.remove(
-            "active"
-        );
-
-
-        stepIndicator1.classList.add(
-            "completed"
-        );
-
-
-        stepIndicator2.classList.add(
-            "active"
-        );
-
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    });
+    );
 
 
 /* =========================================
@@ -207,37 +246,40 @@ document
 
 document
     .getElementById("backToPersonalBtn")
-    .addEventListener("click", function () {
+    .addEventListener(
+        "click",
+        function () {
 
-        securityStep.style.display =
-            "none";
-
-
-        personalStep.style.display =
-            "block";
+            securityStep.style.display =
+                "none";
 
 
-        stepIndicator2.classList.remove(
-            "active"
-        );
+            personalStep.style.display =
+                "block";
 
 
-        stepIndicator1.classList.remove(
-            "completed"
-        );
+            stepIndicator2.classList.remove(
+                "active"
+            );
 
 
-        stepIndicator1.classList.add(
-            "active"
-        );
+            stepIndicator1.classList.remove(
+                "completed"
+            );
 
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+            stepIndicator1.classList.add(
+                "active"
+            );
 
-    });
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+    );
 
 
 /* =========================================
@@ -294,6 +336,10 @@ passwordInput.addEventListener(
             /[A-Z]/.test(password);
 
 
+        /* ================================
+           LENGTH
+        ================================= */
+
         if (hasLength) {
 
             lengthRequirement.textContent =
@@ -304,7 +350,9 @@ passwordInput.addEventListener(
                 "valid"
             );
 
-        } else {
+        }
+
+        else {
 
             lengthRequirement.textContent =
                 "○ At least 8 characters";
@@ -317,6 +365,10 @@ passwordInput.addEventListener(
         }
 
 
+        /* ================================
+           NUMBER
+        ================================= */
+
         if (hasNumber) {
 
             numberRequirement.textContent =
@@ -327,7 +379,9 @@ passwordInput.addEventListener(
                 "valid"
             );
 
-        } else {
+        }
+
+        else {
 
             numberRequirement.textContent =
                 "○ At least one number";
@@ -340,6 +394,10 @@ passwordInput.addEventListener(
         }
 
 
+        /* ================================
+           UPPERCASE
+        ================================= */
+
         if (hasUppercase) {
 
             uppercaseRequirement.textContent =
@@ -350,7 +408,9 @@ passwordInput.addEventListener(
                 "valid"
             );
 
-        } else {
+        }
+
+        else {
 
             uppercaseRequirement.textContent =
                 "○ At least one uppercase letter";
@@ -362,6 +422,10 @@ passwordInput.addEventListener(
 
         }
 
+
+        /* ================================
+           CALCULATE STRENGTH
+        ================================= */
 
         let strength = 0;
 
@@ -381,6 +445,10 @@ passwordInput.addEventListener(
         }
 
 
+        /* ================================
+           EMPTY
+        ================================= */
+
         if (password.length === 0) {
 
             strengthBar.style.width =
@@ -395,6 +463,11 @@ passwordInput.addEventListener(
                 "";
 
         }
+
+
+        /* ================================
+           WEAK
+        ================================= */
 
         else if (strength === 1) {
 
@@ -411,6 +484,11 @@ passwordInput.addEventListener(
 
         }
 
+
+        /* ================================
+           MEDIUM
+        ================================= */
+
         else if (strength === 2) {
 
             strengthBar.style.width =
@@ -425,6 +503,11 @@ passwordInput.addEventListener(
                 "medium";
 
         }
+
+
+        /* ================================
+           STRONG
+        ================================= */
 
         else {
 
@@ -447,7 +530,8 @@ passwordInput.addEventListener(
 
 /* =========================================
    STEP 2 → STEP 3
-   CREATE REAL FIREBASE USER
+
+   CREATE FIREBASE USER
 ========================================= */
 
 document
@@ -474,6 +558,10 @@ document
                     .value
                     .trim();
 
+
+            /* ================================
+               PASSWORD VALIDATION
+            ================================= */
 
             if (password === "") {
 
@@ -525,7 +613,10 @@ document
             }
 
 
-            if (password !== confirmPassword) {
+            if (
+                password !==
+                confirmPassword
+            ) {
 
                 alert(
                     "Passwords do not match."
@@ -534,6 +625,10 @@ document
                 return;
             }
 
+
+            /* ================================
+               CREATE FIREBASE ACCOUNT
+            ================================= */
 
             try {
 
@@ -594,6 +689,10 @@ document
                 return;
             }
 
+
+            /* ================================
+               SHOW PAYMENT
+            ================================= */
 
             securityStep.style.display =
                 "none";
@@ -778,12 +877,15 @@ document
                     "✓ Copied";
 
 
-                setTimeout(() => {
+                setTimeout(
+                    () => {
 
-                    this.textContent =
-                        "📋 Copy";
+                        this.textContent =
+                            "📋 Copy";
 
-                }, 1500);
+                    },
+                    1500
+                );
 
             }
 
@@ -817,19 +919,34 @@ const fileName =
 
 
 /* =========================================
-   SCREENSHOT VALIDATION
+   ALLOWED IMAGE TYPES
 ========================================= */
 
 const allowedTypes = [
+
     "image/jpeg",
+
     "image/png",
+
     "image/webp"
+
 ];
 
+
+/* =========================================
+   MAX FILE SIZE
+========================================= */
 
 const maxSize =
     5 * 1024 * 1024;
 
+
+/* =========================================
+   SCREENSHOT SELECTED
+
+   IMPORTANT:
+   Screenshot is OPTIONAL.
+========================================= */
 
 paymentScreenshot.addEventListener(
     "change",
@@ -850,6 +967,10 @@ paymentScreenshot.addEventListener(
         const file =
             this.files[0];
 
+
+        /* ================================
+           FILE TYPE
+        ================================= */
 
         if (
             !allowedTypes.includes(
@@ -874,8 +995,13 @@ paymentScreenshot.addEventListener(
         }
 
 
+        /* ================================
+           FILE SIZE
+        ================================= */
+
         if (
-            file.size > maxSize
+            file.size >
+            maxSize
         ) {
 
             alert(
@@ -921,14 +1047,6 @@ async function compressScreenshot(
     file
 ) {
 
-    /*
-     * PNG / WEBP / JPEG files from phones
-     * can be very large.
-     *
-     * We resize them to a maximum of
-     * 1600px and convert them to JPEG.
-     */
-
     return new Promise(
         (resolve, reject) => {
 
@@ -962,9 +1080,9 @@ async function compressScreenshot(
                                 image.height;
 
 
-                            /*
-                             * RESIZE
-                             */
+                            /* =========================
+                               RESIZE
+                            ========================== */
 
                             if (
                                 width >
@@ -1006,9 +1124,9 @@ async function compressScreenshot(
                             }
 
 
-                            /*
-                             * CANVAS
-                             */
+                            /* =========================
+                               CANVAS
+                            ========================== */
 
                             const canvas =
                                 document.createElement(
@@ -1039,13 +1157,9 @@ async function compressScreenshot(
                             );
 
 
-                            /*
-                             * CONVERT TO JPEG
-                             *
-                             * 80% quality gives a
-                             * good balance between
-                             * readability and speed.
-                             */
+                            /* =========================
+                               CONVERT TO JPEG
+                            ========================== */
 
                             canvas.toBlob(
                                 function (blob) {
@@ -1127,7 +1241,13 @@ async function compressScreenshot(
 
 /* =========================================
    STEP 3 → STEP 4
-   SAVE REGISTRATION + UPLOAD SCREENSHOT
+
+   MAIN SUBMISSION
+
+   ⭐ SCREENSHOT IS OPTIONAL ⭐
+
+   Registration will NOT fail because
+   Firebase Storage fails.
 ========================================= */
 
 document
@@ -1140,6 +1260,10 @@ document
                 this;
 
 
+            /* =================================
+               PAYMENT REFERENCE
+            ================================= */
+
             const paymentReference =
                 document
                     .getElementById(
@@ -1149,16 +1273,31 @@ document
                     .trim();
 
 
+            /* =================================
+               SCREENSHOT FILE
+            ================================= */
+
+            const screenshotInput =
+                document.getElementById(
+                    "paymentScreenshot"
+                );
+
+
             const screenshotFiles =
-                document
-                    .getElementById(
-                        "paymentScreenshot"
-                    )
-                    .files;
+                screenshotInput.files;
+
+
+            const hasScreenshot =
+                screenshotFiles &&
+                screenshotFiles.length > 0;
+
+
+            let originalScreenshot =
+                null;
 
 
             /* =================================
-               PAYMENT METHOD
+               PAYMENT METHOD REQUIRED
             ================================= */
 
             if (
@@ -1174,7 +1313,7 @@ document
 
 
             /* =================================
-               PAYMENT REFERENCE
+               PAYMENT REFERENCE REQUIRED
             ================================= */
 
             if (
@@ -1190,57 +1329,41 @@ document
 
 
             /* =================================
-               SCREENSHOT
+               OPTIONAL SCREENSHOT VALIDATION
             ================================= */
 
-            if (
-                screenshotFiles.length === 0
-            ) {
+            if (hasScreenshot) {
 
-                alert(
-                    "Please upload your payment screenshot."
-                );
-
-                return;
-            }
+                originalScreenshot =
+                    screenshotFiles[0];
 
 
-            const originalScreenshot =
-                screenshotFiles[0];
+                if (
+                    !allowedTypes.includes(
+                        originalScreenshot.type
+                    )
+                ) {
+
+                    alert(
+                        "Please upload a JPG, PNG or WEBP image."
+                    );
+
+                    return;
+                }
 
 
-            /* =================================
-               FILE TYPE
-            ================================= */
+                if (
+                    originalScreenshot.size >
+                    maxSize
+                ) {
 
-            if (
-                !allowedTypes.includes(
-                    originalScreenshot.type
-                )
-            ) {
+                    alert(
+                        "The screenshot must be smaller than 5 MB."
+                    );
 
-                alert(
-                    "Please upload a JPG, PNG or WEBP image."
-                );
+                    return;
+                }
 
-                return;
-            }
-
-
-            /* =================================
-               ORIGINAL FILE SIZE
-            ================================= */
-
-            if (
-                originalScreenshot.size >
-                maxSize
-            ) {
-
-                alert(
-                    "The screenshot must be smaller than 5 MB."
-                );
-
-                return;
             }
 
 
@@ -1267,7 +1390,7 @@ document
 
 
             button.innerHTML =
-                "Preparing screenshot...";
+                "Submitting registration...";
 
 
             try {
@@ -1285,104 +1408,181 @@ document
 
 
                 /* =================================
-                   COMPRESS SCREENSHOT
+                   SCREENSHOT VARIABLES
+
+                   Defaults mean:
+                   no screenshot is available.
                 ================================= */
 
-                const screenshot =
-                    await compressScreenshot(
-                        originalScreenshot
-                    );
+                let screenshotURL =
+                    "";
 
 
-                /*
-                 * Safety check after compression.
-                 */
-
-                if (
-                    screenshot.size >
-                    maxSize
-                ) {
-
-                    alert(
-                        "The screenshot is still too large after compression. Please choose a smaller screenshot."
-                    );
+                let storagePath =
+                    "";
 
 
-                    button.disabled =
-                        false;
+                let screenshotUploadStatus =
+                    "not_provided";
 
 
-                    button.innerHTML =
-                        'Submit Payment <span>→</span>';
+                let screenshotUploadError =
+                    "";
 
 
-                    return;
+                /* =================================
+                   TRY SCREENSHOT UPLOAD
+
+                   IMPORTANT:
+
+                   This is a SEPARATE try/catch.
+
+                   Storage failure will NOT stop
+                   Firestore registration.
+                ================================= */
+
+                if (hasScreenshot) {
+
+                    try {
+
+                        button.innerHTML =
+                            "Preparing screenshot...";
+
+
+                        /* =========================
+                           COMPRESS
+                        ========================== */
+
+                        const screenshot =
+                            await compressScreenshot(
+                                originalScreenshot
+                            );
+
+
+                        /* =========================
+                           SIZE CHECK
+                        ========================== */
+
+                        if (
+                            screenshot.size >
+                            maxSize
+                        ) {
+
+                            throw new Error(
+                                "Compressed screenshot is still too large."
+                            );
+
+                        }
+
+
+                        button.innerHTML =
+                            "Uploading screenshot...";
+
+
+                        /* =========================
+                           STORAGE PATH
+                        ========================== */
+
+                        storagePath =
+                            `payment-screenshots/${userId}/${Date.now()}.jpg`;
+
+
+                        const screenshotRef =
+                            ref(
+                                storage,
+                                storagePath
+                            );
+
+
+                        /* =========================
+                           UPLOAD
+                        ========================== */
+
+                        await uploadBytes(
+                            screenshotRef,
+                            screenshot,
+                            {
+                                contentType:
+                                    "image/jpeg"
+                            }
+                        );
+
+
+                        /* =========================
+                           GET URL
+                        ========================== */
+
+                        screenshotURL =
+                            await getDownloadURL(
+                                screenshotRef
+                            );
+
+
+                        screenshotUploadStatus =
+                            "uploaded";
+
+
+                        console.log(
+                            "Screenshot uploaded successfully."
+                        );
+
+                    }
+
+                    catch (
+                        screenshotError
+                    ) {
+
+                        /* =========================
+                           IMPORTANT
+
+                           Screenshot failure does
+                           NOT stop registration.
+                        ========================== */
+
+                        console.warn(
+                            "Screenshot upload failed. Continuing registration:",
+                            screenshotError
+                        );
+
+
+                        screenshotUploadStatus =
+                            "upload_failed";
+
+
+                        screenshotUploadError =
+                            screenshotError.code ||
+                            screenshotError.message ||
+                            "Screenshot upload failed";
+
+
+                        screenshotURL =
+                            "";
+
+
+                        storagePath =
+                            "";
+
+                    }
+
                 }
 
 
                 /* =================================
-                   SHOW UPLOAD SIZE
-                ================================= */
+                   SAVE REGISTRATION TO FIRESTORE
 
-                const compressedMB =
-                    (
-                        screenshot.size /
-                        (1024 * 1024)
-                    ).toFixed(2);
-
-
-                button.innerHTML =
-                    "Uploading screenshot...";
-
-
-                /*
-                 * CREATE UNIQUE STORAGE PATH
-                 */
-
-                const storagePath =
-                    `payment-screenshots/${userId}/${Date.now()}.jpg`;
-
-
-                const screenshotRef =
-                    ref(
-                        storage,
-                        storagePath
-                    );
-
-
-                /* =================================
-                   UPLOAD COMPRESSED SCREENSHOT
-                ================================= */
-
-                await uploadBytes(
-                    screenshotRef,
-                    screenshot,
-                    {
-                        contentType:
-                            "image/jpeg"
-                    }
-                );
-
-
-                /* =================================
-                   GET DOWNLOAD URL
+                   This happens even if screenshot
+                   upload failed.
                 ================================= */
 
                 button.innerHTML =
                     "Saving registration...";
 
 
-                const screenshotURL =
-                    await getDownloadURL(
-                        screenshotRef
-                    );
-
-
-                /* =================================
-                   COLLECT STUDENT INFORMATION
-                ================================= */
-
                 const registrationData = {
+
+                    /* =============================
+                       STUDENT
+                    ============================= */
 
                     userId:
                         userId,
@@ -1432,6 +1632,10 @@ document
                             .trim(),
 
 
+                    /* =============================
+                       PAYMENT
+                    ============================= */
+
                     paymentMethod:
                         selectedPaymentMethod,
 
@@ -1452,20 +1656,15 @@ document
                         "pending",
 
 
-                    /* =================================
-                       SCREENSHOT INFORMATION
-                    ================================= */
+                    /* =============================
+                       SCREENSHOT
+
+                       Empty if unavailable.
+                    ============================= */
 
                     paymentScreenshotURL:
                         screenshotURL,
 
-
-                    /*
-                     * Keep screenshotURL too.
-                     *
-                     * This makes the data compatible
-                     * with your existing admin.js.
-                     */
 
                     screenshotURL:
                         screenshotURL,
@@ -1476,20 +1675,44 @@ document
 
 
                     paymentScreenshotName:
-                        originalScreenshot.name,
+                        originalScreenshot
+                            ? originalScreenshot.name
+                            : "",
 
 
                     paymentScreenshotType:
-                        "image/jpeg",
+                        originalScreenshot
+                            ? "image/jpeg"
+                            : "",
 
 
                     paymentScreenshotSize:
-                        screenshot.size,
+                        screenshotURL
+                            ? 1
+                            : 0,
 
 
                     originalScreenshotSize:
-                        originalScreenshot.size,
+                        originalScreenshot
+                            ? originalScreenshot.size
+                            : 0,
 
+
+                    /* =============================
+                       SCREENSHOT STATUS
+                    ============================= */
+
+                    screenshotUploadStatus:
+                        screenshotUploadStatus,
+
+
+                    screenshotUploadError:
+                        screenshotUploadError,
+
+
+                    /* =============================
+                       TIMESTAMP
+                    ============================= */
 
                     submittedAt:
                         serverTimestamp()
@@ -1498,7 +1721,12 @@ document
 
 
                 /* =================================
-                   SAVE TO FIRESTORE
+                   FIRESTORE
+
+                   ⭐ MOST IMPORTANT ⭐
+
+                   Registration is saved even when
+                   Storage upload failed.
                 ================================= */
 
                 const registrationRef =
@@ -1544,7 +1772,7 @@ document
 
 
                 /* =================================
-                   UPDATE INDICATORS
+                   UPDATE STEP INDICATORS
                 ================================= */
 
                 stepIndicator3
@@ -1574,9 +1802,41 @@ document
                 });
 
 
+                /* =================================
+                   SUCCESS MESSAGE
+
+                   Only tell student screenshot
+                   couldn't be uploaded if that
+                   actually happened.
+                ================================= */
+
+                if (
+                    screenshotUploadStatus ===
+                    "upload_failed"
+                ) {
+
+                    console.warn(
+                        "Registration saved successfully, but screenshot upload failed."
+                    );
+
+                }
+
+
+                console.log(
+                    "Registration submitted successfully.",
+                    registrationRef.id
+                );
+
             }
 
             catch (error) {
+
+                /* =================================
+                   FIRESTORE / REGISTRATION ERROR
+
+                   This catch is ONLY reached if
+                   registration itself failed.
+                ================================= */
 
                 console.error(
                     "Registration submission error:",
@@ -1584,50 +1844,9 @@ document
                 );
 
 
-                /* =================================
-                   FIREBASE STORAGE ERRORS
-                ================================= */
-
-                if (
-                    error.code ===
-                    "storage/unauthorized"
-                ) {
-
-                    alert(
-                        "Screenshot upload was denied by Firebase Storage rules. Please check your Firebase Storage rules."
-                    );
-
-                }
-
-                else if (
-                    error.code ===
-                    "storage/canceled"
-                ) {
-
-                    alert(
-                        "Screenshot upload was canceled. Please try again."
-                    );
-
-                }
-
-                else if (
-                    error.code ===
-                    "storage/quota-exceeded"
-                ) {
-
-                    alert(
-                        "Firebase Storage quota has been exceeded."
-                    );
-
-                }
-
-                else {
-
-                    alert(
-                        "We could not submit your registration. Please try again."
-                    );
-
-                }
+                alert(
+                    "We could not save your registration. Please try again."
+                );
 
 
                 button.disabled =
