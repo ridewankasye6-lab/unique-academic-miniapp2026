@@ -87,7 +87,6 @@
         id="quizContainer"
     >
 
-
         <!-- Subject / Chapter -->
 
         <section class="subjectCard">
@@ -292,7 +291,7 @@
 
 
 <!-- =====================================
-     ACCESS GUARD
+     ACCESS GUARD + QUIZ DATA LOADING
 ===================================== -->
 
 <script type="module">
@@ -302,28 +301,107 @@
         () => {
 
             /*
-             * Load quiz data only after
-             * access has been approved.
+             * STEP 1
+             * Load the original quiz data.
+             *
+             * IMPORTANT:
+             * quizData.js is NOT modified.
              */
 
             const dataScript =
                 document.createElement("script");
 
-            dataScript.src = "quizData.js";
-
-            document.body.appendChild(dataScript);
-
+            dataScript.src =
+                "quizData.js";
 
             dataScript.onload = () => {
 
-                const quizScript =
+                /*
+                 * STEP 2
+                 * Load additional quiz data.
+                 *
+                 * This file adds new chapters
+                 * without modifying quizData.js.
+                 */
+
+                const additionalDataScript =
                     document.createElement("script");
 
-                quizScript.src = "quiz.js";
+                additionalDataScript.src =
+                    "additionalQuizData.js";
 
-                document.body.appendChild(quizScript);
+                additionalDataScript.onload = () => {
+
+                    /*
+                     * STEP 3
+                     * Only after BOTH data files are
+                     * successfully loaded, start quiz.js.
+                     */
+
+                    const quizScript =
+                        document.createElement("script");
+
+                    quizScript.src =
+                        "quiz.js";
+
+                    quizScript.onerror = () => {
+
+                        console.error(
+                            "Could not load quiz.js"
+                        );
+
+                    };
+
+                    document.body.appendChild(
+                        quizScript
+                    );
+
+                };
+
+
+                additionalDataScript.onerror = () => {
+
+                    /*
+                     * If the additional file is missing,
+                     * keep the original quiz system working.
+                     */
+
+                    console.error(
+                        "Could not load additionalQuizData.js"
+                    );
+
+                    const quizScript =
+                        document.createElement("script");
+
+                    quizScript.src =
+                        "quiz.js";
+
+                    document.body.appendChild(
+                        quizScript
+                    );
+
+                };
+
+
+                document.body.appendChild(
+                    additionalDataScript
+                );
 
             };
+
+
+            dataScript.onerror = () => {
+
+                console.error(
+                    "Could not load quizData.js"
+                );
+
+            };
+
+
+            document.body.appendChild(
+                dataScript
+            );
 
         }
     );
@@ -331,7 +409,9 @@
 </script>
 
 
-<!-- Firebase access check -->
+<!-- =====================================
+     FIREBASE ACCESS CHECK
+===================================== -->
 
 <script
     type="module"
