@@ -18,6 +18,9 @@
    If screenshot upload fails:
    → Registration STILL continues.
 
+   If screenshot upload takes too long:
+   → Registration STILL continues.
+
    If student doesn't select screenshot:
    → Registration STILL continues.
 
@@ -26,7 +29,7 @@
 
 
 /* =========================================
-   FIREBASE CONFIG
+   FIREBASE
 ========================================= */
 
 import {
@@ -142,7 +145,7 @@ document
                     .trim();
 
 
-            /* ================================
+            /* =================================
                VALIDATION
             ================================= */
 
@@ -196,7 +199,7 @@ document
             }
 
 
-            /* ================================
+            /* =================================
                SHOW SECURITY
             ================================= */
 
@@ -212,8 +215,8 @@ document
                 "none";
 
 
-            /* ================================
-               UPDATE STEPS
+            /* =================================
+               UPDATE STEP INDICATORS
             ================================= */
 
             stepIndicator1.classList.remove(
@@ -336,7 +339,7 @@ passwordInput.addEventListener(
             /[A-Z]/.test(password);
 
 
-        /* ================================
+        /* =================================
            LENGTH
         ================================= */
 
@@ -365,7 +368,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            NUMBER
         ================================= */
 
@@ -394,7 +397,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            UPPERCASE
         ================================= */
 
@@ -423,7 +426,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            CALCULATE STRENGTH
         ================================= */
 
@@ -445,7 +448,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            EMPTY
         ================================= */
 
@@ -465,7 +468,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            WEAK
         ================================= */
 
@@ -485,7 +488,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            MEDIUM
         ================================= */
 
@@ -505,7 +508,7 @@ passwordInput.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            STRONG
         ================================= */
 
@@ -530,7 +533,6 @@ passwordInput.addEventListener(
 
 /* =========================================
    STEP 2 → STEP 3
-
    CREATE FIREBASE USER
 ========================================= */
 
@@ -559,7 +561,7 @@ document
                     .trim();
 
 
-            /* ================================
+            /* =================================
                PASSWORD VALIDATION
             ================================= */
 
@@ -626,7 +628,7 @@ document
             }
 
 
-            /* ================================
+            /* =================================
                CREATE FIREBASE ACCOUNT
             ================================= */
 
@@ -642,7 +644,10 @@ document
 
             catch (error) {
 
-                console.error(error);
+                console.error(
+                    "Account creation error:",
+                    error
+                );
 
 
                 if (
@@ -690,7 +695,7 @@ document
             }
 
 
-            /* ================================
+            /* =================================
                SHOW PAYMENT
             ================================= */
 
@@ -942,10 +947,25 @@ const maxSize =
 
 
 /* =========================================
-   SCREENSHOT SELECTED
+   SCREENSHOT UPLOAD TIMEOUT
 
    IMPORTANT:
-   Screenshot is OPTIONAL.
+
+   If Firebase Storage gets stuck,
+   registration will NOT wait forever.
+
+   10 seconds is enough for a normal
+   screenshot upload on most connections.
+========================================= */
+
+const SCREENSHOT_TIMEOUT =
+    10000;
+
+
+/* =========================================
+   SCREENSHOT SELECTED
+
+   SCREENSHOT IS OPTIONAL
 ========================================= */
 
 paymentScreenshot.addEventListener(
@@ -968,7 +988,7 @@ paymentScreenshot.addEventListener(
             this.files[0];
 
 
-        /* ================================
+        /* =================================
            FILE TYPE
         ================================= */
 
@@ -995,7 +1015,7 @@ paymentScreenshot.addEventListener(
         }
 
 
-        /* ================================
+        /* =================================
            FILE SIZE
         ================================= */
 
@@ -1148,6 +1168,18 @@ async function compressScreenshot(
                                 );
 
 
+                            if (!context) {
+
+                                reject(
+                                    new Error(
+                                        "Could not create image canvas."
+                                    )
+                                );
+
+                                return;
+                            }
+
+
                             context.drawImage(
                                 image,
                                 0,
@@ -1240,14 +1272,57 @@ async function compressScreenshot(
 
 
 /* =========================================
+   TIMEOUT HELPER
+
+   This prevents Firebase Storage from
+   blocking registration forever.
+========================================= */
+
+function withTimeout(
+    promise,
+    milliseconds
+) {
+
+    return Promise.race([
+
+        promise,
+
+        new Promise(
+            (_, reject) => {
+
+                setTimeout(
+                    () => {
+
+                        const error =
+                            new Error(
+                                "Screenshot upload timed out."
+                            );
+
+
+                        error.code =
+                            "screenshot/timeout";
+
+
+                        reject(error);
+
+                    },
+                    milliseconds
+                );
+
+            }
+        )
+
+    ]);
+
+}
+
+
+/* =========================================
    STEP 3 → STEP 4
 
    MAIN SUBMISSION
 
    ⭐ SCREENSHOT IS OPTIONAL ⭐
-
-   Registration will NOT fail because
-   Firebase Storage fails.
 ========================================= */
 
 document
@@ -1274,7 +1349,7 @@ document
 
 
             /* =================================
-               SCREENSHOT FILE
+               SCREENSHOT INPUT
             ================================= */
 
             const screenshotInput =
@@ -1297,7 +1372,7 @@ document
 
 
             /* =================================
-               PAYMENT METHOD REQUIRED
+               PAYMENT METHOD
             ================================= */
 
             if (
@@ -1313,7 +1388,7 @@ document
 
 
             /* =================================
-               PAYMENT REFERENCE REQUIRED
+               PAYMENT REFERENCE
             ================================= */
 
             if (
@@ -1409,9 +1484,6 @@ document
 
                 /* =================================
                    SCREENSHOT VARIABLES
-
-                   Defaults mean:
-                   no screenshot is available.
                 ================================= */
 
                 let screenshotURL =
@@ -1431,19 +1503,23 @@ document
 
 
                 /* =================================
-                   TRY SCREENSHOT UPLOAD
+                   OPTIONAL SCREENSHOT
 
                    IMPORTANT:
 
-                   This is a SEPARATE try/catch.
+                   This entire section is isolated.
 
-                   Storage failure will NOT stop
-                   Firestore registration.
+                   Storage cannot block Firestore
+                   registration.
                 ================================= */
 
                 if (hasScreenshot) {
 
                     try {
+
+                        /* =========================
+                           PREPARING
+                        ========================== */
 
                         button.innerHTML =
                             "Preparing screenshot...";
@@ -1451,11 +1527,16 @@ document
 
                         /* =========================
                            COMPRESS
+
+                           Also protected by timeout.
                         ========================== */
 
                         const screenshot =
-                            await compressScreenshot(
-                                originalScreenshot
+                            await withTimeout(
+                                compressScreenshot(
+                                    originalScreenshot
+                                ),
+                                SCREENSHOT_TIMEOUT
                             );
 
 
@@ -1475,13 +1556,13 @@ document
                         }
 
 
+                        /* =========================
+                           UPLOADING
+                        ========================== */
+
                         button.innerHTML =
                             "Uploading screenshot...";
 
-
-                        /* =========================
-                           STORAGE PATH
-                        ========================== */
 
                         storagePath =
                             `payment-screenshots/${userId}/${Date.now()}.jpg`;
@@ -1495,26 +1576,42 @@ document
 
 
                         /* =========================
-                           UPLOAD
+                           FIREBASE UPLOAD
+
+                           ⭐ 10 SECOND TIMEOUT ⭐
                         ========================== */
 
-                        await uploadBytes(
-                            screenshotRef,
-                            screenshot,
-                            {
-                                contentType:
-                                    "image/jpeg"
-                            }
+                        await withTimeout(
+
+                            uploadBytes(
+                                screenshotRef,
+                                screenshot,
+                                {
+                                    contentType:
+                                        "image/jpeg"
+                                }
+                            ),
+
+                            SCREENSHOT_TIMEOUT
+
                         );
 
 
                         /* =========================
-                           GET URL
+                           GET DOWNLOAD URL
+
+                           Also timeout protected.
                         ========================== */
 
                         screenshotURL =
-                            await getDownloadURL(
-                                screenshotRef
+                            await withTimeout(
+
+                                getDownloadURL(
+                                    screenshotRef
+                                ),
+
+                                SCREENSHOT_TIMEOUT
+
                             );
 
 
@@ -1523,7 +1620,7 @@ document
 
 
                         console.log(
-                            "Screenshot uploaded successfully."
+                            "✅ Screenshot uploaded successfully."
                         );
 
                     }
@@ -1533,14 +1630,15 @@ document
                     ) {
 
                         /* =========================
-                           IMPORTANT
+                           SCREENSHOT FAILED
 
-                           Screenshot failure does
-                           NOT stop registration.
+                           ⭐ DO NOT RETURN ⭐
+
+                           Registration continues.
                         ========================== */
 
                         console.warn(
-                            "Screenshot upload failed. Continuing registration:",
+                            "⚠️ Screenshot upload failed. Registration will continue:",
                             screenshotError
                         );
 
@@ -1562,16 +1660,33 @@ document
                         storagePath =
                             "";
 
+
+                        /*
+                         * IMPORTANT:
+                         *
+                         * We DO NOT throw the error.
+                         *
+                         * We DO NOT return.
+                         *
+                         * We continue to Firestore.
+                         */
+
                     }
 
                 }
 
 
                 /* =================================
-                   SAVE REGISTRATION TO FIRESTORE
+                   FIRESTORE REGISTRATION
 
-                   This happens even if screenshot
-                   upload failed.
+                   ⭐ ALWAYS REACHED ⭐
+
+                   Even when:
+                   - screenshot missing
+                   - compression failed
+                   - upload failed
+                   - upload timed out
+                   - download URL failed
                 ================================= */
 
                 button.innerHTML =
@@ -1581,7 +1696,7 @@ document
                 const registrationData = {
 
                     /* =============================
-                       STUDENT
+                       STUDENT INFORMATION
                     ============================= */
 
                     userId:
@@ -1657,9 +1772,7 @@ document
 
 
                     /* =============================
-                       SCREENSHOT
-
-                       Empty if unavailable.
+                       SCREENSHOT URL
                     ============================= */
 
                     paymentScreenshotURL:
@@ -1670,9 +1783,17 @@ document
                         screenshotURL,
 
 
+                    /* =============================
+                       STORAGE PATH
+                    ============================= */
+
                     paymentScreenshotPath:
                         storagePath,
 
+
+                    /* =============================
+                       ORIGINAL FILE INFO
+                    ============================= */
 
                     paymentScreenshotName:
                         originalScreenshot
@@ -1682,7 +1803,7 @@ document
 
                     paymentScreenshotType:
                         originalScreenshot
-                            ? "image/jpeg"
+                            ? originalScreenshot.type
                             : "",
 
 
@@ -1721,12 +1842,7 @@ document
 
 
                 /* =================================
-                   FIRESTORE
-
-                   ⭐ MOST IMPORTANT ⭐
-
-                   Registration is saved even when
-                   Storage upload failed.
+                   SAVE TO FIRESTORE
                 ================================= */
 
                 const registrationRef =
@@ -1772,7 +1888,7 @@ document
 
 
                 /* =================================
-                   UPDATE STEP INDICATORS
+                   STEP 3 COMPLETED
                 ================================= */
 
                 stepIndicator3
@@ -1789,12 +1905,20 @@ document
                     );
 
 
+                /* =================================
+                   STEP 4 ACTIVE
+                ================================= */
+
                 stepIndicator4
                     .classList
                     .add(
                         "active"
                     );
 
+
+                /* =================================
+                   SCROLL TOP
+                ================================= */
 
                 window.scrollTo({
                     top: 0,
@@ -1803,43 +1927,39 @@ document
 
 
                 /* =================================
-                   SUCCESS MESSAGE
-
-                   Only tell student screenshot
-                   couldn't be uploaded if that
-                   actually happened.
+                   LOG RESULT
                 ================================= */
 
-                if (
-                    screenshotUploadStatus ===
-                    "upload_failed"
-                ) {
-
-                    console.warn(
-                        "Registration saved successfully, but screenshot upload failed."
-                    );
-
-                }
+                console.log(
+                    "✅ Registration submitted:",
+                    registrationRef.id
+                );
 
 
                 console.log(
-                    "Registration submitted successfully.",
-                    registrationRef.id
+                    "Screenshot status:",
+                    screenshotUploadStatus
                 );
+
+
+                /*
+                 * DO NOT SHOW AN ERROR TO STUDENT
+                 * JUST BECAUSE SCREENSHOT FAILED.
+                 *
+                 * Registration was successful.
+                 */
 
             }
 
             catch (error) {
 
                 /* =================================
-                   FIRESTORE / REGISTRATION ERROR
-
-                   This catch is ONLY reached if
-                   registration itself failed.
+                   ONLY FIRESTORE / REGISTRATION
+                   ERRORS REACH HERE
                 ================================= */
 
                 console.error(
-                    "Registration submission error:",
+                    "❌ Registration submission error:",
                     error
                 );
 
@@ -1848,6 +1968,10 @@ document
                     "We could not save your registration. Please try again."
                 );
 
+
+                /* =================================
+                   ENABLE BUTTON AGAIN
+                ================================= */
 
                 button.disabled =
                     false;
