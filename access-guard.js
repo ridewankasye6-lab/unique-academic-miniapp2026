@@ -882,7 +882,93 @@ function enableStudentProtection() {
     document.head.appendChild(
         protectionStyle
     );
+/* =================================================
+   HIDE PROTECTED CONTENT WHEN PAGE IS NOT VISIBLE
+   ================================================= */
 
+let pageWasHidden = false;
+
+document.addEventListener("visibilitychange", function () {
+
+    if (document.hidden) {
+
+        pageWasHidden = true;
+
+        document.body.classList.add(
+            "unique-academic-hidden"
+        );
+
+    } else if (pageWasHidden) {
+
+        document.body.classList.remove(
+            "unique-academic-hidden"
+        );
+
+    }
+
+});
+
+
+/* =================================================
+   TEMPORARY SCREEN PROTECTION STYLE
+   ================================================= */
+
+const visibilityProtectionStyle =
+    document.createElement("style");
+
+visibilityProtectionStyle.id =
+    "unique-academic-visibility-protection";
+
+visibilityProtectionStyle.textContent = `
+
+    body.student-access.unique-academic-hidden
+    > * {
+
+        visibility: hidden !important;
+
+    }
+
+    body.student-access.unique-academic-hidden::after {
+
+        content:
+            "🔒 Unique Academic — Content Protected";
+
+        position: fixed;
+
+        top: 50%;
+        left: 50%;
+
+        transform:
+            translate(-50%, -50%);
+
+        z-index: 999999;
+
+        visibility: visible !important;
+
+        background: #111827;
+
+        color: white;
+
+        padding: 18px 25px;
+
+        border-radius: 14px;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        text-align: center;
+
+        box-shadow:
+            0 10px 35px rgba(0,0,0,0.35);
+
+    }
+
+`;
+
+document.head.appendChild(
+    visibilityProtectionStyle
+);
 }
 
 
