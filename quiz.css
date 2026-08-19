@@ -771,3 +771,70 @@ body {
     }
 
 }
+/* =========================================
+   STUDENT CONTENT PROTECTION
+========================================= */
+
+body.student-access {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+body.student-access img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+body.student-access input,
+body.student-access textarea,
+body.student-access select {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+}
+
+
+/* =========================================
+   ADMIN IS NOT RESTRICTED
+========================================= */
+
+body.admin-access {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+}
+
+body.admin-access img {
+    -webkit-user-drag: auto;
+    user-drag: auto;
+}
+
+
+/* =========================================
+   PRINT PROTECTION
+========================================= */
+
+@media print {
+
+    body.student-access * {
+        display: none !important;
+    }
+
+    body.student-access::after {
+
+        content:
+            "Unique Academic — Printing course content is not permitted.";
+
+        display: block !important;
+
+        text-align: center;
+
+        font-size: 22px;
+
+        margin-top: 100px;
+
+    }
+
+}
