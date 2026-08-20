@@ -23,7 +23,8 @@ function appendQuizData(subject, chapter, questions) {
     quizData[subject][chapter].push(...questions);
 }
 appendQuizData("global-trends", "1", [
-"question": "1. IR is more concentrated on domestic relations.",
+    {
+	"question": "1. IR is more concentrated on domestic relations.",
   "options": [
     "True",
     "False"
