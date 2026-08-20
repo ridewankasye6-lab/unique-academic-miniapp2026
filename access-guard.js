@@ -2,6 +2,7 @@
 =========================================================
  UNIQUE ACADEMIC
  STUDENT ACCESS GUARD + CONTENT PROTECTION
+ + TRIAL CONTENT ACCESS SYSTEM
 =========================================================
 
  ADMIN:
@@ -9,21 +10,27 @@
     No content restrictions
 
  APPROVED STUDENTS:
-    Course access allowed
-    Copy disabled
-    Text selection disabled
-    Right click disabled
-    Image dragging disabled
-    Print disabled
-    Common save/copy shortcuts disabled
-    Common developer shortcuts blocked
+    Authentication + registration approval required
+
+ ANTHROPOLOGY TRIAL:
+    Chapter 1 Notes      -> UNLOCKED
+    Chapter 1 Quiz       -> UNLOCKED
+    Full Notes           -> UNLOCKED
+
+    Chapters 2-5 Notes   -> LOCKED
+    Chapters 2-5 Quizzes -> LOCKED
+    Video                -> LOCKED
 
  IMPORTANT:
  Browser-level protection is deterrence only.
- Firebase rules remain the real security layer.
+ Firebase Security Rules remain the real security layer.
 =========================================================
 */
 
+
+/* =====================================================
+   FIREBASE
+===================================================== */
 
 import {
     db,
@@ -53,11 +60,43 @@ const ADMIN_EMAIL =
 
 
 /* =====================================================
+   TRIAL SETTINGS
+===================================================== */
+
+const TRIAL_SUBJECT =
+    "anthropology";
+
+
+const TRIAL_CHAPTER =
+    1;
+
+
+/*
+ * Content types which are unlocked
+ * during the Anthropology trial.
+ */
+
+const UNLOCKED_TRIAL_CONTENT = {
+
+    chapter1Notes: true,
+
+    chapter1Quiz: true,
+
+    fullNotes: true
+
+};
+
+
+/* =====================================================
    PAGE INFORMATION
 ===================================================== */
 
 const currentPage =
     window.location.pathname.toLowerCase();
+
+
+const currentUrl =
+    window.location.href.toLowerCase();
 
 
 const isQuizPage =
@@ -99,8 +138,7 @@ onAuthStateChanged(
         ADMIN
         =================================================
 
-        ADMIN BYPASS:
-        Admin receives completely unrestricted access.
+        ADMIN HAS FULL ACCESS.
         =================================================
         */
 
@@ -236,21 +274,27 @@ onAuthStateChanged(
 
             if (approved) {
 
-                /*
-                 * Student gets course access.
-                 *
-                 * Protection is enabled here.
-                 */
-
                 document.body.classList.add(
                     "student-access"
                 );
 
 
+                /*
+                 * First grant the existing
+                 * student protection.
+                 */
+
                 grantAccess(
                     "✅ Payment Approved",
                     false
                 );
+
+
+                /*
+                 * Then apply the trial system.
+                 */
+
+                applyTrialAccess();
 
 
                 return;
@@ -371,7 +415,7 @@ function grantAccess(
 
     /*
     =============================================
-    APPLY PROTECTION ONLY TO STUDENTS
+    APPLY STUDENT PROTECTION
     =============================================
     */
 
@@ -393,15 +437,1299 @@ function grantAccess(
             "uniqueAcademicAccessGranted",
             {
                 detail: {
+
                     status:
                         statusText,
 
                     admin:
                         isAdmin
+
                 }
+
             }
         )
     );
+
+}
+
+
+/* =====================================================
+   TRIAL ACCESS SYSTEM
+===================================================== */
+
+function applyTrialAccess() {
+
+    /*
+     * Only Anthropology gets the trial rules
+     * from this section.
+     */
+
+    if (
+        !isAnthropologyPage()
+    ) {
+
+        return;
+
+    }
+
+
+    /*
+     * Add a class so CSS can identify
+     * the trial state.
+     */
+
+    document.body.classList.add(
+        "anthropology-trial"
+    );
+
+
+    /*
+     * Process existing links.
+     */
+
+    processTrialLinks();
+
+
+    /*
+     * Process links/buttons that may be
+     * created dynamically later.
+     */
+
+    const trialObserver =
+        new MutationObserver(
+            function () {
+
+                processTrialLinks();
+
+            }
+        );
+
+
+    trialObserver.observe(
+        document.body,
+        {
+            childList: true,
+            subtree: true
+        }
+    );
+
+
+    /*
+     * Add professional trial banner.
+     */
+
+    addTrialBanner();
+
+}
+
+
+/* =====================================================
+   CHECK ANTHROPOLOGY PAGE
+===================================================== */
+
+function isAnthropologyPage() {
+
+    const page =
+        currentPage +
+        " " +
+        currentUrl;
+
+
+    return (
+        page.includes("anthropology") ||
+        page.includes("anthro")
+    );
+
+}
+
+
+/* =====================================================
+   PROCESS TRIAL LINKS
+===================================================== */
+
+function processTrialLinks() {
+
+    const elements =
+        document.querySelectorAll(
+            "a, button"
+        );
+
+
+    elements.forEach(
+        (element) => {
+
+            /*
+            * Don't process the same element repeatedly.
+            */
+
+            if (
+                element.dataset.trialChecked ===
+                "true"
+            ) {
+
+                return;
+
+            }
+
+
+            /*
+            * Ignore navigation elements
+            * which are unrelated to course content.
+            */
+
+            const info =
+                getElementAccessInfo(
+                    element
+                );
+
+
+            if (!info.isCourseContent) {
+
+                return;
+
+            }
+
+
+            element.dataset.trialChecked =
+                "true";
+
+
+            /*
+            =========================================
+            UNLOCKED
+            =========================================
+            */
+
+            if (
+                info.unlocked
+            ) {
+
+                element.classList.add(
+                    "trial-unlocked"
+                );
+
+                return;
+
+            }
+
+
+            /*
+            =========================================
+            LOCKED
+            =========================================
+            */
+
+            lockTrialElement(
+                element,
+                info
+            );
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   DETERMINE ELEMENT ACCESS
+===================================================== */
+
+function getElementAccessInfo(
+    element
+) {
+
+    const href =
+        (
+            element.getAttribute("href") ||
+            ""
+        ).toLowerCase();
+
+
+    const text =
+        (
+            element.textContent ||
+            ""
+        ).trim().toLowerCase();
+
+
+    const combined =
+        (
+            href +
+            " " +
+            text +
+            " " +
+            (element.className || "")
+        ).toLowerCase();
+
+
+    /*
+    =============================================
+    VIDEO
+    =============================================
+    */
+
+    if (
+        combined.includes("video") ||
+        combined.includes("lecture-video")
+    ) {
+
+        return {
+
+            isCourseContent: true,
+
+            unlocked: false,
+
+            type: "video",
+
+            title: "Course Video"
+
+        };
+
+    }
+
+
+    /*
+    =============================================
+    FULL NOTES
+    =============================================
+    */
+
+    if (
+        combined.includes("full-notes") ||
+        combined.includes("full notes") ||
+        combined.includes("all-notes") ||
+        combined.includes("all notes")
+    ) {
+
+        return {
+
+            isCourseContent: true,
+
+            unlocked:
+                UNLOCKED_TRIAL_CONTENT.fullNotes,
+
+            type: "full-notes",
+
+            title: "Full Notes"
+
+        };
+
+    }
+
+
+    /*
+    =============================================
+    QUIZ
+    =============================================
+    */
+
+    const quizDetected =
+        combined.includes("quiz") ||
+        href.includes("quiz.html");
+
+
+    if (quizDetected) {
+
+        const chapter =
+            getChapterNumber(
+                combined
+            );
+
+
+        /*
+         * If no chapter is visible in the
+         * link, allow it to remain untouched.
+         */
+
+        if (!chapter) {
+
+            return {
+
+                isCourseContent: false
+
+            };
+
+        }
+
+
+        return {
+
+            isCourseContent: true,
+
+            unlocked:
+                chapter === TRIAL_CHAPTER,
+
+            type: "quiz",
+
+            chapter:
+                chapter,
+
+            title:
+                "Chapter " +
+                chapter +
+                " Quiz"
+
+        };
+
+    }
+
+
+    /*
+    =============================================
+    CHAPTER NOTES
+    =============================================
+    */
+
+    const chapter =
+        getChapterNumber(
+            combined
+        );
+
+
+    if (chapter) {
+
+        return {
+
+            isCourseContent: true,
+
+            unlocked:
+                chapter === TRIAL_CHAPTER,
+
+            type: "notes",
+
+            chapter:
+                chapter,
+
+            title:
+                "Chapter " +
+                chapter +
+                " Notes"
+
+        };
+
+    }
+
+
+    /*
+    =============================================
+    NOTHING DETECTED
+    =============================================
+    */
+
+    return {
+
+        isCourseContent: false
+
+    };
+
+}
+
+
+/* =====================================================
+   GET CHAPTER NUMBER
+===================================================== */
+
+function getChapterNumber(
+    text
+) {
+
+    /*
+     * chapter=1
+     */
+
+    let match =
+        text.match(
+            /chapter\s*=\s*(\d+)/i
+        );
+
+
+    if (match) {
+
+        return parseInt(
+            match[1],
+            10
+        );
+
+    }
+
+
+    /*
+     * chapter-1
+     * chapter_1
+     * chapter 1
+     */
+
+    match =
+        text.match(
+            /chapter[\s_-]*(\d+)/i
+        );
+
+
+    if (match) {
+
+        return parseInt(
+            match[1],
+            10
+        );
+
+    }
+
+
+    /*
+     * "Chapter 1"
+     */
+
+    match =
+        text.match(
+            /chapter\s+(\d+)/i
+        );
+
+
+    if (match) {
+
+        return parseInt(
+            match[1],
+            10
+        );
+
+    }
+
+
+    return null;
+
+}
+
+
+/* =====================================================
+   LOCK TRIAL ELEMENT
+===================================================== */
+
+function lockTrialElement(
+    element,
+    info
+) {
+
+    /*
+     * Save the original href.
+     */
+
+    const originalHref =
+        element.getAttribute(
+            "href"
+        );
+
+
+    if (originalHref) {
+
+        element.dataset.originalHref =
+            originalHref;
+
+    }
+
+
+    /*
+     * Prevent navigation.
+     */
+
+    element.removeAttribute(
+        "href"
+    );
+
+
+    element.dataset.trialLocked =
+        "true";
+
+
+    element.classList.add(
+        "trial-locked"
+    );
+
+
+    element.setAttribute(
+        "aria-disabled",
+        "true"
+    );
+
+
+    /*
+     * Add lock indicator.
+     */
+
+    if (
+        !element.querySelector(
+            ".trial-lock-icon"
+        )
+    ) {
+
+        const lockIcon =
+            document.createElement(
+                "span"
+            );
+
+
+        lockIcon.className =
+            "trial-lock-icon";
+
+
+        lockIcon.textContent =
+            " 🔒";
+
+
+        lockIcon.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+
+        element.appendChild(
+            lockIcon
+        );
+
+    }
+
+
+    /*
+     * Click handler.
+     */
+
+    element.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            event.stopPropagation();
+
+
+            showTrialLockMessage(
+                info.title
+            );
+
+        },
+        true
+    );
+
+}
+
+
+/* =====================================================
+   TRIAL LOCK MESSAGE
+===================================================== */
+
+function showTrialLockMessage(
+    title
+) {
+
+    let overlay =
+        document.getElementById(
+            "uniqueAcademicTrialOverlay"
+        );
+
+
+    if (overlay) {
+
+        overlay.remove();
+
+    }
+
+
+    overlay =
+        document.createElement(
+            "div"
+        );
+
+
+    overlay.id =
+        "uniqueAcademicTrialOverlay";
+
+
+    overlay.innerHTML = `
+
+        <div class="trial-modal">
+
+            <div class="trial-modal-icon">
+                🔒
+            </div>
+
+            <div class="trial-modal-badge">
+                PREMIUM CONTENT
+            </div>
+
+            <h2>
+                ${escapeHTML(title)}
+                is Locked
+            </h2>
+
+            <p>
+                This content is available with
+                full course access.
+            </p>
+
+            <div class="trial-modal-note">
+                🎓 Chapter 1 is available as your
+                free trial.
+            </div>
+
+            <div class="trial-modal-actions">
+
+                <a
+                    href="registration.html"
+                    class="trial-primary-button"
+                >
+                    🚀 Get Full Access
+                </a>
+
+                <button
+                    type="button"
+                    class="trial-secondary-button"
+                    id="closeTrialModal"
+                >
+                    Maybe Later
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    document.body.appendChild(
+        overlay
+    );
+
+
+    const closeButton =
+        document.getElementById(
+            "closeTrialModal"
+        );
+
+
+    if (closeButton) {
+
+        closeButton.addEventListener(
+            "click",
+            function () {
+
+                overlay.remove();
+
+            }
+        );
+
+    }
+
+
+    overlay.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target ===
+                overlay
+            ) {
+
+                overlay.remove();
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   TRIAL BANNER
+===================================================== */
+
+function addTrialBanner() {
+
+    /*
+     * Don't duplicate banner.
+     */
+
+    if (
+        document.getElementById(
+            "uniqueAcademicTrialBanner"
+        )
+    ) {
+
+        return;
+
+    }
+
+
+    /*
+     * Only add on main Anthropology pages.
+     */
+
+    if (isQuizPage) {
+
+        return;
+
+    }
+
+
+    const banner =
+        document.createElement(
+            "div"
+        );
+
+
+    banner.id =
+        "uniqueAcademicTrialBanner";
+
+
+    banner.innerHTML = `
+
+        <div class="trial-banner-content">
+
+            <div class="trial-banner-icon">
+                🎓
+            </div>
+
+            <div class="trial-banner-text">
+
+                <strong>
+                    Free Trial Access
+                </strong>
+
+                <span>
+                    Chapter 1, Chapter 1 Quiz
+                    and Full Notes are available.
+                </span>
+
+            </div>
+
+            <a
+                href="registration.html"
+                class="trial-banner-button"
+            >
+                Get Full Access
+            </a>
+
+        </div>
+
+    `;
+
+
+    document.body.prepend(
+        banner
+    );
+
+
+    addTrialStyles();
+
+}
+
+
+/* =====================================================
+   TRIAL STYLES
+===================================================== */
+
+function addTrialStyles() {
+
+    if (
+        document.getElementById(
+            "uniqueAcademicTrialStyles"
+        )
+    ) {
+
+        return;
+
+    }
+
+
+    const style =
+        document.createElement(
+            "style"
+        );
+
+
+    style.id =
+        "uniqueAcademicTrialStyles";
+
+
+    style.textContent = `
+
+        /*
+        =============================================
+        LOCKED CONTENT
+        =============================================
+        */
+
+        .trial-locked {
+
+            position: relative !important;
+
+            opacity: 0.72 !important;
+
+            cursor: pointer !important;
+
+            filter: saturate(0.75);
+
+            transition:
+                transform 0.2s ease,
+                opacity 0.2s ease,
+                box-shadow 0.2s ease;
+
+        }
+
+
+        .trial-locked:hover {
+
+            opacity: 1 !important;
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .trial-lock-icon {
+
+            display: inline-block;
+
+            margin-left: 5px;
+
+            font-size: 0.9em;
+
+        }
+
+
+        /*
+        =============================================
+        UNLOCKED CONTENT
+        =============================================
+        */
+
+        .trial-unlocked {
+
+            position: relative;
+
+        }
+
+
+        /*
+        =============================================
+        TRIAL BANNER
+        =============================================
+        */
+
+        #uniqueAcademicTrialBanner {
+
+            width: 100%;
+
+            box-sizing: border-box;
+
+            padding: 10px 16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #4f46e5
+                );
+
+            color: white;
+
+            box-shadow:
+                0 4px 18px
+                rgba(37,99,235,0.20);
+
+            position: relative;
+
+            z-index: 1000;
+
+        }
+
+
+        .trial-banner-content {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+        }
+
+
+        .trial-banner-icon {
+
+            font-size: 25px;
+
+            flex-shrink: 0;
+
+        }
+
+
+        .trial-banner-text {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 2px;
+
+            flex: 1;
+
+        }
+
+
+        .trial-banner-text strong {
+
+            font-size: 14px;
+
+        }
+
+
+        .trial-banner-text span {
+
+            font-size: 12px;
+
+            opacity: 0.9;
+
+        }
+
+
+        .trial-banner-button {
+
+            display: inline-block;
+
+            padding: 9px 14px;
+
+            background: white;
+
+            color: #2563eb;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+
+        }
+
+
+        /*
+        =============================================
+        TRIAL MODAL
+        =============================================
+        */
+
+        #uniqueAcademicTrialOverlay {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 999998;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            box-sizing: border-box;
+
+            background:
+                rgba(15,23,42,0.68);
+
+            backdrop-filter:
+                blur(5px);
+
+        }
+
+
+        .trial-modal {
+
+            width: 100%;
+
+            max-width: 420px;
+
+            box-sizing: border-box;
+
+            background: white;
+
+            border-radius: 22px;
+
+            padding: 30px 24px;
+
+            text-align: center;
+
+            box-shadow:
+                0 25px 70px
+                rgba(0,0,0,0.25);
+
+            animation:
+                trialModalIn
+                0.2s ease;
+
+        }
+
+
+        @keyframes trialModalIn {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(12px)
+                    scale(0.97);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+
+            }
+
+        }
+
+
+        .trial-modal-icon {
+
+            width: 70px;
+
+            height: 70px;
+
+            margin:
+                0 auto 15px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #eff6ff;
+
+            font-size: 32px;
+
+        }
+
+
+        .trial-modal-badge {
+
+            display: inline-block;
+
+            padding: 5px 10px;
+
+            border-radius: 999px;
+
+            background: #eef2ff;
+
+            color: #4338ca;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.6px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .trial-modal h2 {
+
+            margin:
+                0 0 10px;
+
+            color: #111827;
+
+            font-size: 22px;
+
+        }
+
+
+        .trial-modal p {
+
+            margin:
+                0 0 16px;
+
+            color: #64748b;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+
+        }
+
+
+        .trial-modal-note {
+
+            padding: 12px;
+
+            border-radius: 12px;
+
+            background: #f8fafc;
+
+            color: #475569;
+
+            font-size: 12px;
+
+            line-height: 1.5;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .trial-modal-actions {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 9px;
+
+        }
+
+
+        .trial-primary-button {
+
+            display: block;
+
+            padding: 13px;
+
+            border-radius: 11px;
+
+            background: #2563eb;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            font-size: 14px;
+
+        }
+
+
+        .trial-secondary-button {
+
+            border: none;
+
+            background: #f1f5f9;
+
+            color: #475569;
+
+            padding: 12px;
+
+            border-radius: 11px;
+
+            cursor: pointer;
+
+            font-weight: 600;
+
+            font-size: 13px;
+
+        }
+
+
+        /*
+        =============================================
+        MOBILE
+        =============================================
+        */
+
+        @media (max-width: 600px) {
+
+            .trial-banner-content {
+
+                align-items: flex-start;
+
+            }
+
+
+            .trial-banner-button {
+
+                padding:
+                    8px 10px;
+
+                font-size: 11px;
+
+            }
+
+
+            .trial-banner-text span {
+
+                font-size: 11px;
+
+            }
+
+
+            .trial-modal {
+
+                padding:
+                    26px 20px;
+
+            }
+
+        }
+
+    `;
+
+
+    document.head.appendChild(
+        style
+    );
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHTML(
+    value
+) {
+
+    return String(value)
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /'/g,
+            "&#039;"
+        );
 
 }
 
@@ -413,7 +1741,9 @@ function grantAccess(
 function enableStudentProtection() {
 
     /*
-    Avoid applying protection twice.
+    =============================================
+    AVOID DUPLICATE PROTECTION
+    =============================================
     */
 
     if (
@@ -430,9 +1760,11 @@ function enableStudentProtection() {
         "true";
 
 
-    /* =================================================
-       DISABLE RIGHT CLICK
-    ================================================= */
+    /*
+    =============================================
+    DISABLE RIGHT CLICK
+    =============================================
+    */
 
     document.addEventListener(
         "contextmenu",
@@ -445,17 +1777,15 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE TEXT SELECTION
-    ================================================= */
+    /*
+    =============================================
+    DISABLE TEXT SELECTION
+    =============================================
+    */
 
     document.addEventListener(
         "selectstart",
         function (event) {
-
-            /*
-             * Keep input fields usable.
-             */
 
             const target =
                 event.target;
@@ -482,15 +1812,18 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE COPY
-    ================================================= */
+    /*
+    =============================================
+    DISABLE COPY
+    =============================================
+    */
 
     document.addEventListener(
         "copy",
         function (event) {
 
             event.preventDefault();
+
 
             showProtectionMessage(
                 "📚 Copying course content is disabled."
@@ -501,9 +1834,11 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE CUT
-    ================================================= */
+    /*
+    =============================================
+    DISABLE CUT
+    =============================================
+    */
 
     document.addEventListener(
         "cut",
@@ -516,9 +1851,11 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE DRAGGING
-    ================================================= */
+    /*
+    =============================================
+    DISABLE DRAGGING
+    =============================================
+    */
 
     document.addEventListener(
         "dragstart",
@@ -531,9 +1868,11 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE IMAGE DRAGGING
-    ================================================= */
+    /*
+    =============================================
+    DISABLE IMAGE DRAGGING
+    =============================================
+    */
 
     document
         .querySelectorAll("img")
@@ -550,8 +1889,10 @@ function enableStudentProtection() {
 
 
     /*
-     * Catch images added later.
-     */
+    =============================================
+    CATCH NEW IMAGES
+    =============================================
+    */
 
     const observer =
         new MutationObserver(
@@ -583,9 +1924,11 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       KEYBOARD PROTECTION
-    ================================================= */
+    /*
+    =============================================
+    KEYBOARD PROTECTION
+    =============================================
+    */
 
     document.addEventListener(
         "keydown",
@@ -599,10 +1942,6 @@ function enableStudentProtection() {
                 event.ctrlKey ||
                 event.metaKey;
 
-
-            /*
-             * Allow normal typing in form fields.
-             */
 
             const target =
                 event.target;
@@ -618,11 +1957,10 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * COPY
-             * Ctrl+C / Cmd+C
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            COPY
+            -----------------------------------------
+            */
 
             if (
                 ctrl &&
@@ -632,9 +1970,11 @@ function enableStudentProtection() {
 
                 event.preventDefault();
 
+
                 showProtectionMessage(
                     "📚 Copying course content is disabled."
                 );
+
 
                 return;
 
@@ -642,10 +1982,10 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * CUT
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            CUT
+            -----------------------------------------
+            */
 
             if (
                 ctrl &&
@@ -661,11 +2001,10 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * SAVE PAGE
-             * Ctrl+S
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            SAVE
+            -----------------------------------------
+            */
 
             if (
                 ctrl &&
@@ -674,9 +2013,11 @@ function enableStudentProtection() {
 
                 event.preventDefault();
 
+
                 showProtectionMessage(
                     "🔒 Saving course pages is disabled."
                 );
+
 
                 return;
 
@@ -684,11 +2025,10 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * PRINT
-             * Ctrl+P
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            PRINT
+            -----------------------------------------
+            */
 
             if (
                 ctrl &&
@@ -697,9 +2037,11 @@ function enableStudentProtection() {
 
                 event.preventDefault();
 
+
                 showProtectionMessage(
                     "🖨️ Printing course content is disabled."
                 );
+
 
                 return;
 
@@ -707,11 +2049,10 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * VIEW SOURCE
-             * Ctrl+U
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            VIEW SOURCE
+            -----------------------------------------
+            */
 
             if (
                 ctrl &&
@@ -726,15 +2067,10 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * DEVTOOLS
-             *
-             * F12
-             * Ctrl+Shift+I
-             * Ctrl+Shift+J
-             * Ctrl+Shift+C
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            DEVTOOLS
+            -----------------------------------------
+            */
 
             if (
                 key === "f12"
@@ -765,20 +2101,17 @@ function enableStudentProtection() {
 
 
             /*
-             * -----------------------------------------
-             * PRINT SCREEN KEY
-             *
-             * Browser cannot reliably stop OS
-             * screenshots, but we can respond to
-             * the keyboard event when available.
-             * -----------------------------------------
-             */
+            -----------------------------------------
+            PRINT SCREEN
+            -----------------------------------------
+            */
 
             if (
                 key === "printscreen"
             ) {
 
                 event.preventDefault();
+
 
                 showProtectionMessage(
                     "🔒 Screenshot capture is restricted."
@@ -791,12 +2124,16 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE PRINTING
-    ================================================= */
+    /*
+    =============================================
+    DISABLE PRINTING
+    =============================================
+    */
 
     const printStyle =
-        document.createElement("style");
+        document.createElement(
+            "style"
+        );
 
 
     printStyle.id =
@@ -836,12 +2173,16 @@ function enableStudentProtection() {
     );
 
 
-    /* =================================================
-       DISABLE USER SELECTION WITH CSS
-    ================================================= */
+    /*
+    =============================================
+    DISABLE USER SELECTION
+    =============================================
+    */
 
     const protectionStyle =
-        document.createElement("style");
+        document.createElement(
+            "style"
+        );
 
 
     protectionStyle.id =
@@ -882,93 +2223,120 @@ function enableStudentProtection() {
     document.head.appendChild(
         protectionStyle
     );
-/* =================================================
-   HIDE PROTECTED CONTENT WHEN PAGE IS NOT VISIBLE
-   ================================================= */
 
-let pageWasHidden = false;
 
-document.addEventListener("visibilitychange", function () {
+    /*
+    =============================================
+    HIDE CONTENT WHEN PAGE IS NOT VISIBLE
+    =============================================
+    */
 
-    if (document.hidden) {
+    let pageWasHidden =
+        false;
 
-        pageWasHidden = true;
 
-        document.body.classList.add(
-            "unique-academic-hidden"
+    document.addEventListener(
+        "visibilitychange",
+        function () {
+
+            if (
+                document.hidden
+            ) {
+
+                pageWasHidden =
+                    true;
+
+
+                document.body.classList.add(
+                    "unique-academic-hidden"
+                );
+
+            }
+
+            else if (
+                pageWasHidden
+            ) {
+
+                document.body.classList.remove(
+                    "unique-academic-hidden"
+                );
+
+            }
+
+        }
+    );
+
+
+    /*
+    =============================================
+    VISIBILITY PROTECTION STYLE
+    =============================================
+    */
+
+    const visibilityProtectionStyle =
+        document.createElement(
+            "style"
         );
 
-    } else if (pageWasHidden) {
 
-        document.body.classList.remove(
-            "unique-academic-hidden"
-        );
-
-    }
-
-});
+    visibilityProtectionStyle.id =
+        "unique-academic-visibility-protection";
 
 
-/* =================================================
-   TEMPORARY SCREEN PROTECTION STYLE
-   ================================================= */
+    visibilityProtectionStyle.textContent = `
 
-const visibilityProtectionStyle =
-    document.createElement("style");
+        body.student-access.unique-academic-hidden
+        > * {
 
-visibilityProtectionStyle.id =
-    "unique-academic-visibility-protection";
+            visibility: hidden !important;
 
-visibilityProtectionStyle.textContent = `
+        }
 
-    body.student-access.unique-academic-hidden
-    > * {
 
-        visibility: hidden !important;
+        body.student-access.unique-academic-hidden::after {
 
-    }
+            content:
+                "🔒 Unique Academic — Content Protected";
 
-    body.student-access.unique-academic-hidden::after {
+            position: fixed;
 
-        content:
-            "🔒 Unique Academic — Content Protected";
+            top: 50%;
+            left: 50%;
 
-        position: fixed;
+            transform:
+                translate(-50%, -50%);
 
-        top: 50%;
-        left: 50%;
+            z-index: 999999;
 
-        transform:
-            translate(-50%, -50%);
+            visibility: visible !important;
 
-        z-index: 999999;
+            background: #111827;
 
-        visibility: visible !important;
+            color: white;
 
-        background: #111827;
+            padding: 18px 25px;
 
-        color: white;
+            border-radius: 14px;
 
-        padding: 18px 25px;
+            font-size: 16px;
 
-        border-radius: 14px;
+            font-weight: bold;
 
-        font-size: 16px;
+            text-align: center;
 
-        font-weight: bold;
+            box-shadow:
+                0 10px 35px
+                rgba(0,0,0,0.35);
 
-        text-align: center;
+        }
 
-        box-shadow:
-            0 10px 35px rgba(0,0,0,0.35);
+    `;
 
-    }
 
-`;
+    document.head.appendChild(
+        visibilityProtectionStyle
+    );
 
-document.head.appendChild(
-    visibilityProtectionStyle
-);
 }
 
 
@@ -976,7 +2344,8 @@ document.head.appendChild(
    PROTECTION MESSAGE
 ===================================================== */
 
-let protectionMessageTimer = null;
+let protectionMessageTimer =
+    null;
 
 
 function showProtectionMessage(
