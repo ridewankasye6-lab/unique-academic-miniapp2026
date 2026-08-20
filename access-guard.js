@@ -2,27 +2,38 @@
 =========================================================
  UNIQUE ACADEMIC
  STUDENT ACCESS GUARD + CONTENT PROTECTION
- + TRIAL CONTENT ACCESS SYSTEM
+ + FREE TRIAL SYSTEM
 =========================================================
 
- ADMIN:
-    Full access
-    No content restrictions
+ FREE TRIAL SUBJECTS:
+    Anthropology
+    Psychology
 
- APPROVED STUDENTS:
-    Authentication + registration approval required
-
- ANTHROPOLOGY TRIAL:
+ FREE TRIAL ACCESS:
     Chapter 1 Notes      -> UNLOCKED
     Chapter 1 Quiz       -> UNLOCKED
     Full Notes           -> UNLOCKED
 
-    Chapters 2-5 Notes   -> LOCKED
-    Chapters 2-5 Quizzes -> LOCKED
-    Video                -> LOCKED
+ LOCKED:
+    Chapters 2-5 Notes
+    Chapters 2-5 Quizzes
+    Videos
+
+ LOGGED-OUT USERS:
+    Anthropology trial -> ALLOWED
+    Psychology trial    -> ALLOWED
+    Other subjects      -> LOCKED
+
+ REGISTERED APPROVED STUDENTS:
+    Anthropology trial -> ALLOWED
+    Psychology trial   -> ALLOWED
+    Other subjects     -> ALLOWED
+
+ ADMIN:
+    Full access
 
  IMPORTANT:
- Browser-level protection is deterrence only.
+ Browser protection is deterrence only.
  Firebase Security Rules remain the real security layer.
 =========================================================
 */
@@ -52,7 +63,7 @@ import {
 
 
 /* =====================================================
-   ADMIN EMAIL
+   ADMIN
 ===================================================== */
 
 const ADMIN_EMAIL =
@@ -60,35 +71,27 @@ const ADMIN_EMAIL =
 
 
 /* =====================================================
-   TRIAL SETTINGS
+   FREE TRIAL SUBJECTS
 ===================================================== */
 
-const TRIAL_SUBJECT =
-    "anthropology";
+const TRIAL_SUBJECTS = [
 
+    "anthropology",
 
-const TRIAL_CHAPTER =
-    1;
+    "psychology"
 
-
-/*
- * Content types which are unlocked
- * during the Anthropology trial.
- */
-
-const UNLOCKED_TRIAL_CONTENT = {
-
-    chapter1Notes: true,
-
-    chapter1Quiz: true,
-
-    fullNotes: true
-
-};
+];
 
 
 /* =====================================================
-   PAGE INFORMATION
+   FREE TRIAL CHAPTER
+===================================================== */
+
+const TRIAL_CHAPTER = 1;
+
+
+/* =====================================================
+   CURRENT PAGE
 ===================================================== */
 
 const currentPage =
@@ -99,8 +102,520 @@ const currentUrl =
     window.location.href.toLowerCase();
 
 
+const currentFile =
+    currentPage.split("/").pop();
+
+
+/* =====================================================
+   PUBLIC PAGES
+===================================================== */
+
+const PUBLIC_PAGES = [
+
+    "",
+
+    "index.html",
+
+    "home.html",
+
+    "student-login.html",
+
+    "registration.html",
+
+    "about.html",
+
+    "help.html"
+
+];
+
+
+/* =====================================================
+   CHECK PUBLIC PAGE
+===================================================== */
+
+function isPublicPage() {
+
+    return PUBLIC_PAGES.includes(
+        currentFile
+    );
+
+}
+
+
+/* =====================================================
+   GET SUBJECT FROM URL / PAGE
+===================================================== */
+
+function getCurrentSubject() {
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+
+    /*
+    =============================================
+    ?subject=anthropology
+    =============================================
+    */
+
+    const urlSubject =
+        params.get(
+            "subject"
+        );
+
+
+    if (urlSubject) {
+
+        return normalizeSubject(
+            urlSubject
+        );
+
+    }
+
+
+    /*
+    =============================================
+    PAGE NAME
+    =============================================
+    */
+
+    const page =
+        currentPage;
+
+
+    if (
+        page.includes("anthropology") ||
+        page.includes("anthro")
+    ) {
+
+        return "anthropology";
+
+    }
+
+
+    if (
+        page.includes("psychology") ||
+        page.includes("psych")
+    ) {
+
+        return "psychology";
+
+    }
+
+
+    if (
+        page.includes("global-trends") ||
+        page.includes("global_trends")
+    ) {
+
+        return "global-trends";
+
+    }
+
+
+    if (
+        page.includes("economics")
+    ) {
+
+        return "economics";
+
+    }
+
+
+    if (
+        page.includes("history")
+    ) {
+
+        return "history";
+
+    }
+
+
+    if (
+        page.includes("geography")
+    ) {
+
+        return "geography";
+
+    }
+
+
+    if (
+        page.includes("logic")
+    ) {
+
+        return "logic";
+
+    }
+
+
+    if (
+        page.includes("entrepreneurship")
+    ) {
+
+        return "entrepreneurship";
+
+    }
+
+
+    if (
+        page.includes("anthropology")
+    ) {
+
+        return "anthropology";
+
+    }
+
+
+    return "";
+
+}
+
+
+/* =====================================================
+   NORMALIZE SUBJECT
+===================================================== */
+
+function normalizeSubject(
+    subject
+) {
+
+    return String(subject)
+        .toLowerCase()
+        .trim()
+        .replace(
+            /_/g,
+            "-"
+        )
+        .replace(
+            /\s+/g,
+            "-"
+        );
+
+}
+
+
+/* =====================================================
+   IS TRIAL SUBJECT?
+===================================================== */
+
+function isTrialSubject(
+    subject
+) {
+
+    return TRIAL_SUBJECTS.includes(
+        normalizeSubject(
+            subject
+        )
+    );
+
+}
+
+
+/* =====================================================
+   QUIZ PAGE
+===================================================== */
+
 const isQuizPage =
-    currentPage.includes("quiz.html");
+    currentPage.includes(
+        "quiz.html"
+    );
+
+
+/* =====================================================
+   GET CHAPTER NUMBER
+===================================================== */
+
+function getChapterNumber() {
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+
+    /*
+    =============================================
+    ?chapter=1
+    =============================================
+    */
+
+    const urlChapter =
+        params.get(
+            "chapter"
+        );
+
+
+    if (urlChapter) {
+
+        const number =
+            parseInt(
+                urlChapter,
+                10
+            );
+
+
+        if (
+            !isNaN(number)
+        ) {
+
+            return number;
+
+        }
+
+    }
+
+
+    /*
+    =============================================
+    chapter-1
+    chapter_1
+    chapter1
+    =============================================
+    */
+
+    const match =
+        currentUrl.match(
+            /chapter[\s_-]*(\d+)/i
+        );
+
+
+    if (match) {
+
+        return parseInt(
+            match[1],
+            10
+        );
+
+    }
+
+
+    return null;
+
+}
+
+
+/* =====================================================
+   GET CONTENT TYPE
+===================================================== */
+
+function getContentType() {
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+
+    const type =
+        (
+            params.get("type") ||
+            ""
+        )
+        .toLowerCase();
+
+
+    const url =
+        currentUrl;
+
+
+    const page =
+        currentPage;
+
+
+    /*
+    =============================================
+    QUIZ
+    =============================================
+    */
+
+    if (
+        isQuizPage ||
+        url.includes("quiz")
+    ) {
+
+        return "quiz";
+
+    }
+
+
+    /*
+    =============================================
+    FULL NOTES
+    =============================================
+    */
+
+    if (
+        type === "full-notes" ||
+        url.includes("full-notes") ||
+        url.includes("full_notes") ||
+        url.includes("fullnotes")
+    ) {
+
+        return "full-notes";
+
+    }
+
+
+    /*
+    =============================================
+    VIDEO
+    =============================================
+    */
+
+    if (
+        type === "video" ||
+        url.includes("video")
+    ) {
+
+        return "video";
+
+    }
+
+
+    /*
+    =============================================
+    NOTES
+    =============================================
+    */
+
+    if (
+        type === "notes" ||
+        url.includes("notes") ||
+        page.includes("chapter")
+    ) {
+
+        return "notes";
+
+    }
+
+
+    /*
+    =============================================
+    SUBJECT LANDING PAGE
+    =============================================
+    */
+
+    return "subject";
+
+}
+
+
+/* =====================================================
+   TRIAL ACCESS CHECK
+===================================================== */
+
+function canUseTrialAccess() {
+
+    const subject =
+        getCurrentSubject();
+
+
+    /*
+    Not a trial subject.
+    */
+
+    if (
+        !isTrialSubject(
+            subject
+        )
+    ) {
+
+        return false;
+
+    }
+
+
+    const contentType =
+        getContentType();
+
+
+    const chapter =
+        getChapterNumber();
+
+
+    /*
+    =============================================
+    SUBJECT LANDING PAGE
+    =============================================
+
+    Anthropology / Psychology main page
+    is public.
+    */
+
+    if (
+        contentType === "subject"
+    ) {
+
+        return true;
+
+    }
+
+
+    /*
+    =============================================
+    FULL NOTES
+    =============================================
+    */
+
+    if (
+        contentType === "full-notes"
+    ) {
+
+        return true;
+
+    }
+
+
+    /*
+    =============================================
+    CHAPTER 1
+    =============================================
+    */
+
+    if (
+        chapter === TRIAL_CHAPTER
+    ) {
+
+        /*
+        Chapter 1 Notes
+        */
+
+        if (
+            contentType === "notes"
+        ) {
+
+            return true;
+
+        }
+
+
+        /*
+        Chapter 1 Quiz
+        */
+
+        if (
+            contentType === "quiz"
+        ) {
+
+            return true;
+
+        }
+
+    }
+
+
+    /*
+    =============================================
+    EVERYTHING ELSE
+    =============================================
+    */
+
+    return false;
+
+}
 
 
 /* =====================================================
@@ -113,8 +628,86 @@ onAuthStateChanged(
 
         /*
         =================================================
-        NOT LOGGED IN
+        PUBLIC PAGES
         =================================================
+
+        Home, About, Help, Login and Registration
+        never get blocked by this guard.
+        */
+
+        if (
+            isPublicPage()
+        ) {
+
+            return;
+
+        }
+
+
+        const subject =
+            getCurrentSubject();
+
+
+        /*
+        =================================================
+        FREE TRIAL
+        =================================================
+
+        This happens BEFORE authentication.
+
+        Therefore logged-out users can test
+        Anthropology and Psychology Chapter 1.
+        =================================================
+        */
+
+        if (
+            isTrialSubject(
+                subject
+            )
+        ) {
+
+            /*
+            ---------------------------------------------
+            TRIAL CONTENT
+            ---------------------------------------------
+            */
+
+            if (
+                canUseTrialAccess()
+            ) {
+
+                enableTrialPage();
+
+                return;
+
+            }
+
+
+            /*
+            ---------------------------------------------
+            LOCKED TRIAL CONTENT
+            ---------------------------------------------
+            */
+
+            showTrialLockedPage(
+                subject
+            );
+
+            return;
+
+        }
+
+
+        /*
+        =================================================
+        NORMAL PROTECTED SUBJECT
+        =================================================
+        */
+
+        /*
+        =============================================
+        NOT LOGGED IN
+        =============================================
         */
 
         if (!user) {
@@ -130,16 +723,14 @@ onAuthStateChanged(
             );
 
             return;
+
         }
 
 
         /*
-        =================================================
+        =============================================
         ADMIN
-        =================================================
-
-        ADMIN HAS FULL ACCESS.
-        =================================================
+        =============================================
         */
 
         if (
@@ -160,13 +751,14 @@ onAuthStateChanged(
 
 
             return;
+
         }
 
 
         /*
-        =================================================
-        STUDENT REGISTRATION CHECK
-        =================================================
+        =============================================
+        STUDENT REGISTRATION
+        =============================================
         */
 
         try {
@@ -197,7 +789,9 @@ onAuthStateChanged(
             =============================================
             */
 
-            if (snapshot.empty) {
+            if (
+                snapshot.empty
+            ) {
 
                 showLocked(
                     "📝",
@@ -210,20 +804,26 @@ onAuthStateChanged(
                 );
 
                 return;
+
             }
 
 
             /*
             =============================================
-            CHECK REGISTRATION STATUS
+            STATUS
             =============================================
             */
 
-            let approved = false;
+            let approved =
+                false;
 
-            let pending = false;
 
-            let rejected = false;
+            let pending =
+                false;
+
+
+            let rejected =
+                false;
 
 
             snapshot.forEach(
@@ -238,7 +838,8 @@ onAuthStateChanged(
                         "approved"
                     ) {
 
-                        approved = true;
+                        approved =
+                            true;
 
                     }
 
@@ -248,7 +849,8 @@ onAuthStateChanged(
                         "pending"
                     ) {
 
-                        pending = true;
+                        pending =
+                            true;
 
                     }
 
@@ -258,7 +860,8 @@ onAuthStateChanged(
                         "rejected"
                     ) {
 
-                        rejected = true;
+                        rejected =
+                            true;
 
                     }
 
@@ -268,21 +871,18 @@ onAuthStateChanged(
 
             /*
             =============================================
-            APPROVED STUDENT
+            APPROVED
             =============================================
             */
 
-            if (approved) {
+            if (
+                approved
+            ) {
 
                 document.body.classList.add(
                     "student-access"
                 );
 
-
-                /*
-                 * First grant the existing
-                 * student protection.
-                 */
 
                 grantAccess(
                     "✅ Payment Approved",
@@ -290,14 +890,8 @@ onAuthStateChanged(
                 );
 
 
-                /*
-                 * Then apply the trial system.
-                 */
-
-                applyTrialAccess();
-
-
                 return;
+
             }
 
 
@@ -307,7 +901,9 @@ onAuthStateChanged(
             =============================================
             */
 
-            if (pending) {
+            if (
+                pending
+            ) {
 
                 showLocked(
                     "⏳",
@@ -318,6 +914,7 @@ onAuthStateChanged(
                 );
 
                 return;
+
             }
 
 
@@ -327,7 +924,9 @@ onAuthStateChanged(
             =============================================
             */
 
-            if (rejected) {
+            if (
+                rejected
+            ) {
 
                 showLocked(
                     "❌",
@@ -340,12 +939,13 @@ onAuthStateChanged(
                 );
 
                 return;
+
             }
 
 
             /*
             =============================================
-            UNKNOWN STATUS
+            UNKNOWN
             =============================================
             */
 
@@ -382,172 +982,57 @@ onAuthStateChanged(
 
 
 /* =====================================================
-   GRANT ACCESS
+   ENABLE TRIAL PAGE
 ===================================================== */
 
-function grantAccess(
-    statusText,
-    isAdmin = false
-) {
-
-    /*
-    =============================================
-    ADMIN
-    =============================================
-    */
-
-    if (isAdmin) {
-
-        document.body.classList.add(
-            "admin-access"
-        );
-
-    }
-
-    else {
-
-        document.body.classList.add(
-            "student-access"
-        );
-
-    }
-
-
-    /*
-    =============================================
-    APPLY STUDENT PROTECTION
-    =============================================
-    */
-
-    if (!isAdmin) {
-
-        enableStudentProtection();
-
-    }
-
-
-    /*
-    =============================================
-    START APPLICATION
-    =============================================
-    */
-
-    document.dispatchEvent(
-        new CustomEvent(
-            "uniqueAcademicAccessGranted",
-            {
-                detail: {
-
-                    status:
-                        statusText,
-
-                    admin:
-                        isAdmin
-
-                }
-
-            }
-        )
-    );
-
-}
-
-
-/* =====================================================
-   TRIAL ACCESS SYSTEM
-===================================================== */
-
-function applyTrialAccess() {
-
-    /*
-     * Only Anthropology gets the trial rules
-     * from this section.
-     */
-
-    if (
-        !isAnthropologyPage()
-    ) {
-
-        return;
-
-    }
-
-
-    /*
-     * Add a class so CSS can identify
-     * the trial state.
-     */
+function enableTrialPage() {
 
     document.body.classList.add(
-        "anthropology-trial"
+        "trial-access"
+    );
+
+
+    document.body.classList.add(
+        "student-access"
     );
 
 
     /*
-     * Process existing links.
-     */
+    Apply your existing protection.
+    */
 
-    processTrialLinks();
-
-
-    /*
-     * Process links/buttons that may be
-     * created dynamically later.
-     */
-
-    const trialObserver =
-        new MutationObserver(
-            function () {
-
-                processTrialLinks();
-
-            }
-        );
-
-
-    trialObserver.observe(
-        document.body,
-        {
-            childList: true,
-            subtree: true
-        }
-    );
+    enableStudentProtection();
 
 
     /*
-     * Add professional trial banner.
-     */
+    Mark page as trial.
+    */
+
+    document.body.dataset.trial =
+        "true";
+
+
+    /*
+    Add trial banner.
+    */
 
     addTrialBanner();
 
-}
 
+    /*
+    Lock unavailable links.
+    */
 
-/* =====================================================
-   CHECK ANTHROPOLOGY PAGE
-===================================================== */
-
-function isAnthropologyPage() {
-
-    const page =
-        currentPage +
-        " " +
-        currentUrl;
-
-
-    return (
-        page.includes("anthropology") ||
-        page.includes("anthro")
-    );
+    applyTrialElementLocks();
 
 }
 
 
 /* =====================================================
-   PROCESS TRIAL LINKS
+   APPLY TRIAL ELEMENT LOCKS
 ===================================================== */
 
-function processTrialLinks() {
+function applyTrialElementLocks() {
 
     const elements =
         document.querySelectorAll(
@@ -558,13 +1043,14 @@ function processTrialLinks() {
     elements.forEach(
         (element) => {
 
-            /*
-            * Don't process the same element repeatedly.
-            */
+            const info =
+                getElementInfo(
+                    element
+                );
+
 
             if (
-                element.dataset.trialChecked ===
-                "true"
+                !info.isContent
             ) {
 
                 return;
@@ -573,30 +1059,8 @@ function processTrialLinks() {
 
 
             /*
-            * Ignore navigation elements
-            * which are unrelated to course content.
-            */
-
-            const info =
-                getElementAccessInfo(
-                    element
-                );
-
-
-            if (!info.isCourseContent) {
-
-                return;
-
-            }
-
-
-            element.dataset.trialChecked =
-                "true";
-
-
-            /*
             =========================================
-            UNLOCKED
+            AVAILABLE
             =========================================
             */
 
@@ -619,7 +1083,7 @@ function processTrialLinks() {
             =========================================
             */
 
-            lockTrialElement(
+            lockElement(
                 element,
                 info
             );
@@ -631,16 +1095,18 @@ function processTrialLinks() {
 
 
 /* =====================================================
-   DETERMINE ELEMENT ACCESS
+   GET ELEMENT INFORMATION
 ===================================================== */
 
-function getElementAccessInfo(
+function getElementInfo(
     element
 ) {
 
     const href =
         (
-            element.getAttribute("href") ||
+            element.getAttribute(
+                "href"
+            ) ||
             ""
         ).toLowerCase();
 
@@ -649,17 +1115,22 @@ function getElementAccessInfo(
         (
             element.textContent ||
             ""
-        ).trim().toLowerCase();
+        ).toLowerCase();
+
+
+    const classes =
+        String(
+            element.className ||
+            ""
+        ).toLowerCase();
 
 
     const combined =
-        (
-            href +
-            " " +
-            text +
-            " " +
-            (element.className || "")
-        ).toLowerCase();
+        href +
+        " " +
+        text +
+        " " +
+        classes;
 
 
     /*
@@ -669,17 +1140,14 @@ function getElementAccessInfo(
     */
 
     if (
-        combined.includes("video") ||
-        combined.includes("lecture-video")
+        combined.includes("video")
     ) {
 
         return {
 
-            isCourseContent: true,
+            isContent: true,
 
             unlocked: false,
-
-            type: "video",
 
             title: "Course Video"
 
@@ -695,20 +1163,17 @@ function getElementAccessInfo(
     */
 
     if (
-        combined.includes("full-notes") ||
         combined.includes("full notes") ||
-        combined.includes("all-notes") ||
-        combined.includes("all notes")
+        combined.includes("full-notes") ||
+        combined.includes("full_notes") ||
+        combined.includes("fullnotes")
     ) {
 
         return {
 
-            isCourseContent: true,
+            isContent: true,
 
-            unlocked:
-                UNLOCKED_TRIAL_CONTENT.fullNotes,
-
-            type: "full-notes",
+            unlocked: true,
 
             title: "Full Notes"
 
@@ -723,29 +1188,24 @@ function getElementAccessInfo(
     =============================================
     */
 
-    const quizDetected =
+    if (
         combined.includes("quiz") ||
-        href.includes("quiz.html");
-
-
-    if (quizDetected) {
+        href.includes("quiz.html")
+    ) {
 
         const chapter =
-            getChapterNumber(
+            extractChapter(
                 combined
             );
 
 
-        /*
-         * If no chapter is visible in the
-         * link, allow it to remain untouched.
-         */
-
-        if (!chapter) {
+        if (
+            chapter === null
+        ) {
 
             return {
 
-                isCourseContent: false
+                isContent: false
 
             };
 
@@ -754,15 +1214,10 @@ function getElementAccessInfo(
 
         return {
 
-            isCourseContent: true,
+            isContent: true,
 
             unlocked:
-                chapter === TRIAL_CHAPTER,
-
-            type: "quiz",
-
-            chapter:
-                chapter,
+                chapter === 1,
 
             title:
                 "Chapter " +
@@ -776,29 +1231,26 @@ function getElementAccessInfo(
 
     /*
     =============================================
-    CHAPTER NOTES
+    CHAPTER
     =============================================
     */
 
     const chapter =
-        getChapterNumber(
+        extractChapter(
             combined
         );
 
 
-    if (chapter) {
+    if (
+        chapter !== null
+    ) {
 
         return {
 
-            isCourseContent: true,
+            isContent: true,
 
             unlocked:
-                chapter === TRIAL_CHAPTER,
-
-            type: "notes",
-
-            chapter:
-                chapter,
+                chapter === 1,
 
             title:
                 "Chapter " +
@@ -810,15 +1262,9 @@ function getElementAccessInfo(
     }
 
 
-    /*
-    =============================================
-    NOTHING DETECTED
-    =============================================
-    */
-
     return {
 
-        isCourseContent: false
+        isContent: false
 
     };
 
@@ -826,16 +1272,12 @@ function getElementAccessInfo(
 
 
 /* =====================================================
-   GET CHAPTER NUMBER
+   EXTRACT CHAPTER
 ===================================================== */
 
-function getChapterNumber(
+function extractChapter(
     text
 ) {
-
-    /*
-     * chapter=1
-     */
 
     let match =
         text.match(
@@ -843,7 +1285,9 @@ function getChapterNumber(
         );
 
 
-    if (match) {
+    if (
+        match
+    ) {
 
         return parseInt(
             match[1],
@@ -852,12 +1296,6 @@ function getChapterNumber(
 
     }
 
-
-    /*
-     * chapter-1
-     * chapter_1
-     * chapter 1
-     */
 
     match =
         text.match(
@@ -865,27 +1303,9 @@ function getChapterNumber(
         );
 
 
-    if (match) {
-
-        return parseInt(
-            match[1],
-            10
-        );
-
-    }
-
-
-    /*
-     * "Chapter 1"
-     */
-
-    match =
-        text.match(
-            /chapter\s+(\d+)/i
-        );
-
-
-    if (match) {
+    if (
+        match
+    ) {
 
         return parseInt(
             match[1],
@@ -901,17 +1321,27 @@ function getChapterNumber(
 
 
 /* =====================================================
-   LOCK TRIAL ELEMENT
+   LOCK ELEMENT
 ===================================================== */
 
-function lockTrialElement(
+function lockElement(
     element,
     info
 ) {
 
-    /*
-     * Save the original href.
-     */
+    if (
+        element.dataset.trialLocked ===
+        "true"
+    ) {
+
+        return;
+
+    }
+
+
+    element.dataset.trialLocked =
+        "true";
+
 
     const originalHref =
         element.getAttribute(
@@ -919,7 +1349,9 @@ function lockTrialElement(
         );
 
 
-    if (originalHref) {
+    if (
+        originalHref
+    ) {
 
         element.dataset.originalHref =
             originalHref;
@@ -927,21 +1359,8 @@ function lockTrialElement(
     }
 
 
-    /*
-     * Prevent navigation.
-     */
-
     element.removeAttribute(
         "href"
-    );
-
-
-    element.dataset.trialLocked =
-        "true";
-
-
-    element.classList.add(
-        "trial-locked"
     );
 
 
@@ -951,9 +1370,16 @@ function lockTrialElement(
     );
 
 
+    element.classList.add(
+        "trial-locked"
+    );
+
+
     /*
-     * Add lock indicator.
-     */
+    =============================================
+    LOCK ICON
+    =============================================
+    */
 
     if (
         !element.querySelector(
@@ -961,36 +1387,32 @@ function lockTrialElement(
         )
     ) {
 
-        const lockIcon =
+        const icon =
             document.createElement(
                 "span"
             );
 
 
-        lockIcon.className =
+        icon.className =
             "trial-lock-icon";
 
 
-        lockIcon.textContent =
+        icon.textContent =
             " 🔒";
 
 
-        lockIcon.setAttribute(
-            "aria-hidden",
-            "true"
-        );
-
-
         element.appendChild(
-            lockIcon
+            icon
         );
 
     }
 
 
     /*
-     * Click handler.
-     */
+    =============================================
+    CLICK
+    =============================================
+    */
 
     element.addEventListener(
         "click",
@@ -1013,6 +1435,86 @@ function lockTrialElement(
 
 
 /* =====================================================
+   TRIAL BANNER
+===================================================== */
+
+function addTrialBanner() {
+
+    if (
+        document.getElementById(
+            "uniqueAcademicTrialBanner"
+        )
+    ) {
+
+        return;
+
+    }
+
+
+    const subject =
+        getCurrentSubject();
+
+
+    const subjectName =
+        subject === "anthropology"
+            ? "Anthropology"
+            : "Psychology";
+
+
+    const banner =
+        document.createElement(
+            "div"
+        );
+
+
+    banner.id =
+        "uniqueAcademicTrialBanner";
+
+
+    banner.innerHTML = `
+
+        <div class="trial-banner-content">
+
+            <div class="trial-banner-icon">
+                🎓
+            </div>
+
+            <div class="trial-banner-text">
+
+                <strong>
+                    ${subjectName} Free Trial
+                </strong>
+
+                <span>
+                    Chapter 1 + Chapter 1 Quiz +
+                    Full Notes are available free.
+                </span>
+
+            </div>
+
+            <a
+                href="registration.html"
+                class="trial-banner-button"
+            >
+                Get Full Access
+            </a>
+
+        </div>
+
+    `;
+
+
+    document.body.prepend(
+        banner
+    );
+
+
+    addTrialStyles();
+
+}
+
+
+/* =====================================================
    TRIAL LOCK MESSAGE
 ===================================================== */
 
@@ -1026,7 +1528,9 @@ function showTrialLockMessage(
         );
 
 
-    if (overlay) {
+    if (
+        overlay
+    ) {
 
         overlay.remove();
 
@@ -1066,8 +1570,9 @@ function showTrialLockMessage(
             </p>
 
             <div class="trial-modal-note">
-                🎓 Chapter 1 is available as your
-                free trial.
+                🎓 Your free trial includes
+                Chapter 1, Chapter 1 Quiz and
+                Full Notes.
             </div>
 
             <div class="trial-modal-actions">
@@ -1105,7 +1610,9 @@ function showTrialLockMessage(
         );
 
 
-    if (closeButton) {
+    if (
+        closeButton
+    ) {
 
         closeButton.addEventListener(
             "click",
@@ -1139,83 +1646,67 @@ function showTrialLockMessage(
 
 
 /* =====================================================
-   TRIAL BANNER
+   TRIAL LOCKED PAGE
 ===================================================== */
 
-function addTrialBanner() {
+function showTrialLockedPage(
+    subject
+) {
 
-    /*
-     * Don't duplicate banner.
-     */
-
-    if (
-        document.getElementById(
-            "uniqueAcademicTrialBanner"
-        )
-    ) {
-
-        return;
-
-    }
+    const subjectName =
+        subject === "anthropology"
+            ? "Anthropology"
+            : "Psychology";
 
 
-    /*
-     * Only add on main Anthropology pages.
-     */
+    document.body.innerHTML = `
 
-    if (isQuizPage) {
+        <div class="trial-page-lock">
 
-        return;
+            <div class="trial-page-card">
 
-    }
+                <div class="trial-page-icon">
+                    🔒
+                </div>
 
+                <div class="trial-page-badge">
+                    FULL COURSE CONTENT
+                </div>
 
-    const banner =
-        document.createElement(
-            "div"
-        );
+                <h2>
+                    This ${subjectName} Content
+                    is Locked
+                </h2>
 
-
-    banner.id =
-        "uniqueAcademicTrialBanner";
-
-
-    banner.innerHTML = `
-
-        <div class="trial-banner-content">
-
-            <div class="trial-banner-icon">
-                🎓
-            </div>
-
-            <div class="trial-banner-text">
-
-                <strong>
-                    Free Trial Access
-                </strong>
-
-                <span>
+                <p>
+                    Your free trial includes
                     Chapter 1, Chapter 1 Quiz
-                    and Full Notes are available.
-                </span>
+                    and Full Notes.
+                </p>
+
+                <a
+                    href="registration.html"
+                    class="trial-page-button"
+                >
+                    🚀 Get Full Access
+                </a>
+
+                <a
+                    href="index.html"
+                    class="trial-page-home"
+                >
+                    🏠 Back Home
+                </a>
+
+                <div class="trial-page-footer">
+                    🔐 Unique Academic
+                </div>
 
             </div>
-
-            <a
-                href="registration.html"
-                class="trial-banner-button"
-            >
-                Get Full Access
-            </a>
 
         </div>
 
     `;
-
-
-    document.body.prepend(
-        banner
-    );
 
 
     addTrialStyles();
@@ -1251,64 +1742,6 @@ function addTrialStyles() {
 
 
     style.textContent = `
-
-        /*
-        =============================================
-        LOCKED CONTENT
-        =============================================
-        */
-
-        .trial-locked {
-
-            position: relative !important;
-
-            opacity: 0.72 !important;
-
-            cursor: pointer !important;
-
-            filter: saturate(0.75);
-
-            transition:
-                transform 0.2s ease,
-                opacity 0.2s ease,
-                box-shadow 0.2s ease;
-
-        }
-
-
-        .trial-locked:hover {
-
-            opacity: 1 !important;
-
-            transform:
-                translateY(-2px);
-
-        }
-
-
-        .trial-lock-icon {
-
-            display: inline-block;
-
-            margin-left: 5px;
-
-            font-size: 0.9em;
-
-        }
-
-
-        /*
-        =============================================
-        UNLOCKED CONTENT
-        =============================================
-        */
-
-        .trial-unlocked {
-
-            position: relative;
-
-        }
-
 
         /*
         =============================================
@@ -1422,7 +1855,51 @@ function addTrialStyles() {
 
         /*
         =============================================
-        TRIAL MODAL
+        LOCKED ELEMENT
+        =============================================
+        */
+
+        .trial-locked {
+
+            position: relative !important;
+
+            opacity: 0.68 !important;
+
+            cursor: pointer !important;
+
+            filter: saturate(0.7);
+
+            transition:
+                opacity 0.2s ease,
+                transform 0.2s ease;
+
+        }
+
+
+        .trial-locked:hover {
+
+            opacity: 1 !important;
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .trial-lock-icon {
+
+            display: inline-block;
+
+            margin-left: 5px;
+
+            font-size: 0.9em;
+
+        }
+
+
+        /*
+        =============================================
+        MODAL
         =============================================
         */
 
@@ -1459,8 +1936,6 @@ function addTrialStyles() {
 
             max-width: 420px;
 
-            box-sizing: border-box;
-
             background: white;
 
             border-radius: 22px;
@@ -1472,35 +1947,6 @@ function addTrialStyles() {
             box-shadow:
                 0 25px 70px
                 rgba(0,0,0,0.25);
-
-            animation:
-                trialModalIn
-                0.2s ease;
-
-        }
-
-
-        @keyframes trialModalIn {
-
-            from {
-
-                opacity: 0;
-
-                transform:
-                    translateY(12px)
-                    scale(0.97);
-
-            }
-
-            to {
-
-                opacity: 1;
-
-                transform:
-                    translateY(0)
-                    scale(1);
-
-            }
 
         }
 
@@ -1652,6 +2098,160 @@ function addTrialStyles() {
 
         /*
         =============================================
+        FULL LOCKED PAGE
+        =============================================
+        */
+
+        .trial-page-lock {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            box-sizing: border-box;
+
+            background: #f4f7fb;
+
+            font-family:
+                Arial,
+                sans-serif;
+
+        }
+
+
+        .trial-page-card {
+
+            width: 100%;
+
+            max-width: 460px;
+
+            background: white;
+
+            padding: 40px 25px;
+
+            border-radius: 22px;
+
+            text-align: center;
+
+            box-shadow:
+                0 10px 35px
+                rgba(0,0,0,0.10);
+
+        }
+
+
+        .trial-page-icon {
+
+            font-size: 55px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .trial-page-badge {
+
+            display: inline-block;
+
+            padding: 6px 11px;
+
+            border-radius: 999px;
+
+            background: #eef2ff;
+
+            color: #4338ca;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .trial-page-card h2 {
+
+            margin:
+                0 0 12px;
+
+            color: #111827;
+
+        }
+
+
+        .trial-page-card p {
+
+            color: #64748b;
+
+            line-height: 1.6;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .trial-page-button {
+
+            display: inline-block;
+
+            padding: 13px 22px;
+
+            background: #2563eb;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            margin: 5px;
+
+        }
+
+
+        .trial-page-home {
+
+            display: inline-block;
+
+            padding: 13px 22px;
+
+            background: #e5e7eb;
+
+            color: #111827;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            margin: 5px;
+
+        }
+
+
+        .trial-page-footer {
+
+            margin-top: 25px;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+
+        }
+
+
+        /*
+        =============================================
         MOBILE
         =============================================
         */
@@ -1665,16 +2265,6 @@ function addTrialStyles() {
             }
 
 
-            .trial-banner-button {
-
-                padding:
-                    8px 10px;
-
-                font-size: 11px;
-
-            }
-
-
             .trial-banner-text span {
 
                 font-size: 11px;
@@ -1682,10 +2272,12 @@ function addTrialStyles() {
             }
 
 
-            .trial-modal {
+            .trial-banner-button {
 
                 padding:
-                    26px 20px;
+                    8px 10px;
+
+                font-size: 11px;
 
             }
 
@@ -1702,49 +2294,68 @@ function addTrialStyles() {
 
 
 /* =====================================================
-   ESCAPE HTML
+   ADMIN / STUDENT ACCESS
 ===================================================== */
 
-function escapeHTML(
-    value
+function grantAccess(
+    statusText,
+    isAdmin = false
 ) {
 
-    return String(value)
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-        .replace(
-            /</g,
-            "&lt;"
-        )
-        .replace(
-            />/g,
-            "&gt;"
-        )
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-        .replace(
-            /'/g,
-            "&#039;"
+    if (
+        isAdmin
+    ) {
+
+        document.body.classList.add(
+            "admin-access"
         );
+
+    }
+
+    else {
+
+        document.body.classList.add(
+            "student-access"
+        );
+
+    }
+
+
+    if (
+        !isAdmin
+    ) {
+
+        enableStudentProtection();
+
+    }
+
+
+    document.dispatchEvent(
+        new CustomEvent(
+            "uniqueAcademicAccessGranted",
+            {
+                detail: {
+
+                    status:
+                        statusText,
+
+                    admin:
+                        isAdmin
+
+                }
+
+            }
+        )
+    );
 
 }
 
 
 /* =====================================================
-   STUDENT CONTENT PROTECTION
+   STUDENT PROTECTION
 ===================================================== */
 
 function enableStudentProtection() {
-
-    /*
-    =============================================
-    AVOID DUPLICATE PROTECTION
-    =============================================
-    */
 
     if (
         document.body.dataset.protectionEnabled ===
@@ -1762,7 +2373,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE RIGHT CLICK
+    RIGHT CLICK
     =============================================
     */
 
@@ -1779,7 +2390,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE TEXT SELECTION
+    TEXT SELECTION
     =============================================
     */
 
@@ -1814,7 +2425,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE COPY
+    COPY
     =============================================
     */
 
@@ -1836,7 +2447,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE CUT
+    CUT
     =============================================
     */
 
@@ -1853,7 +2464,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE DRAGGING
+    DRAG
     =============================================
     */
 
@@ -1870,7 +2481,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE IMAGE DRAGGING
+    IMAGES
     =============================================
     */
 
@@ -1890,43 +2501,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    CATCH NEW IMAGES
-    =============================================
-    */
-
-    const observer =
-        new MutationObserver(
-            function () {
-
-                document
-                    .querySelectorAll("img")
-                    .forEach(
-                        (image) => {
-
-                            image.setAttribute(
-                                "draggable",
-                                "false"
-                            );
-
-                        }
-                    );
-
-            }
-        );
-
-
-    observer.observe(
-        document.body,
-        {
-            childList: true,
-            subtree: true
-        }
-    );
-
-
-    /*
-    =============================================
-    KEYBOARD PROTECTION
+    KEYBOARD
     =============================================
     */
 
@@ -1957,9 +2532,7 @@ function enableStudentProtection() {
 
 
             /*
-            -----------------------------------------
             COPY
-            -----------------------------------------
             */
 
             if (
@@ -1982,9 +2555,7 @@ function enableStudentProtection() {
 
 
             /*
-            -----------------------------------------
             CUT
-            -----------------------------------------
             */
 
             if (
@@ -2001,9 +2572,7 @@ function enableStudentProtection() {
 
 
             /*
-            -----------------------------------------
             SAVE
-            -----------------------------------------
             */
 
             if (
@@ -2025,9 +2594,7 @@ function enableStudentProtection() {
 
 
             /*
-            -----------------------------------------
             PRINT
-            -----------------------------------------
             */
 
             if (
@@ -2049,9 +2616,7 @@ function enableStudentProtection() {
 
 
             /*
-            -----------------------------------------
             VIEW SOURCE
-            -----------------------------------------
             */
 
             if (
@@ -2067,9 +2632,7 @@ function enableStudentProtection() {
 
 
             /*
-            -----------------------------------------
             DEVTOOLS
-            -----------------------------------------
             */
 
             if (
@@ -2099,26 +2662,6 @@ function enableStudentProtection() {
 
             }
 
-
-            /*
-            -----------------------------------------
-            PRINT SCREEN
-            -----------------------------------------
-            */
-
-            if (
-                key === "printscreen"
-            ) {
-
-                event.preventDefault();
-
-
-                showProtectionMessage(
-                    "🔒 Screenshot capture is restricted."
-                );
-
-            }
-
         },
         true
     );
@@ -2126,7 +2669,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE PRINTING
+    PRINT PROTECTION
     =============================================
     */
 
@@ -2145,7 +2688,10 @@ function enableStudentProtection() {
         @media print {
 
             body * {
-                display: none !important;
+
+                display:
+                    none !important;
+
             }
 
             body::before {
@@ -2153,13 +2699,17 @@ function enableStudentProtection() {
                 content:
                     "Unique Academic — Course printing is not permitted.";
 
-                display: block !important;
+                display:
+                    block !important;
 
-                font-size: 24px;
+                font-size:
+                    24px;
 
-                text-align: center;
+                text-align:
+                    center;
 
-                margin-top: 100px;
+                margin-top:
+                    100px;
 
             }
 
@@ -2175,7 +2725,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    DISABLE USER SELECTION
+    USER SELECTION
     =============================================
     */
 
@@ -2191,29 +2741,38 @@ function enableStudentProtection() {
 
     protectionStyle.textContent = `
 
-        body.student-access {
+        body.student-access,
+        body.trial-access {
 
-            -webkit-user-select: none !important;
+            -webkit-user-select:
+                none !important;
 
-            -moz-user-select: none !important;
+            -moz-user-select:
+                none !important;
 
-            user-select: none !important;
-
-        }
-
-
-        body.student-access img {
-
-            -webkit-user-drag: none !important;
-
-            user-drag: none !important;
+            user-select:
+                none !important;
 
         }
 
 
-        body.student-access {
+        body.student-access img,
+        body.trial-access img {
 
-            -webkit-touch-callout: none !important;
+            -webkit-user-drag:
+                none !important;
+
+            user-drag:
+                none !important;
+
+        }
+
+
+        body.student-access,
+        body.trial-access {
+
+            -webkit-touch-callout:
+                none !important;
 
         }
 
@@ -2227,7 +2786,7 @@ function enableStudentProtection() {
 
     /*
     =============================================
-    HIDE CONTENT WHEN PAGE IS NOT VISIBLE
+    VISIBILITY PROTECTION
     =============================================
     */
 
@@ -2267,66 +2826,73 @@ function enableStudentProtection() {
     );
 
 
-    /*
-    =============================================
-    VISIBILITY PROTECTION STYLE
-    =============================================
-    */
-
-    const visibilityProtectionStyle =
+    const visibilityStyle =
         document.createElement(
             "style"
         );
 
 
-    visibilityProtectionStyle.id =
+    visibilityStyle.id =
         "unique-academic-visibility-protection";
 
 
-    visibilityProtectionStyle.textContent = `
+    visibilityStyle.textContent = `
 
         body.student-access.unique-academic-hidden
+        > *,
+        body.trial-access.unique-academic-hidden
         > * {
 
-            visibility: hidden !important;
+            visibility:
+                hidden !important;
 
         }
 
 
-        body.student-access.unique-academic-hidden::after {
+        body.student-access.unique-academic-hidden::after,
+        body.trial-access.unique-academic-hidden::after {
 
             content:
                 "🔒 Unique Academic — Content Protected";
 
-            position: fixed;
+            position:
+                fixed;
 
-            top: 50%;
-            left: 50%;
+            top:
+                50%;
+
+            left:
+                50%;
 
             transform:
                 translate(-50%, -50%);
 
-            z-index: 999999;
+            z-index:
+                999999;
 
-            visibility: visible !important;
+            visibility:
+                visible !important;
 
-            background: #111827;
+            background:
+                #111827;
 
-            color: white;
+            color:
+                white;
 
-            padding: 18px 25px;
+            padding:
+                18px 25px;
 
-            border-radius: 14px;
+            border-radius:
+                14px;
 
-            font-size: 16px;
+            font-size:
+                16px;
 
-            font-weight: bold;
+            font-weight:
+                bold;
 
-            text-align: center;
-
-            box-shadow:
-                0 10px 35px
-                rgba(0,0,0,0.35);
+            text-align:
+                center;
 
         }
 
@@ -2334,7 +2900,7 @@ function enableStudentProtection() {
 
 
     document.head.appendChild(
-        visibilityProtectionStyle
+        visibilityStyle
     );
 
 }
@@ -2358,7 +2924,9 @@ function showProtectionMessage(
         );
 
 
-    if (!box) {
+    if (
+        !box
+    ) {
 
         box =
             document.createElement(
@@ -2373,41 +2941,54 @@ function showProtectionMessage(
         box.style.position =
             "fixed";
 
+
         box.style.left =
             "50%";
+
 
         box.style.bottom =
             "25px";
 
+
         box.style.transform =
             "translateX(-50%)";
+
 
         box.style.zIndex =
             "999999";
 
+
         box.style.background =
             "#111827";
+
 
         box.style.color =
             "white";
 
+
         box.style.padding =
             "13px 20px";
+
 
         box.style.borderRadius =
             "12px";
 
+
         box.style.fontSize =
             "14px";
+
 
         box.style.fontWeight =
             "bold";
 
+
         box.style.boxShadow =
             "0 8px 30px rgba(0,0,0,0.25)";
 
+
         box.style.maxWidth =
             "90%";
+
 
         box.style.textAlign =
             "center";
@@ -2448,7 +3029,7 @@ function showProtectionMessage(
 
 
 /* =====================================================
-   LOCKED PAGE
+   NORMAL LOCKED PAGE
 ===================================================== */
 
 function showLocked(
@@ -2563,5 +3144,40 @@ function showLocked(
         </div>
 
     `;
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHTML(
+    value
+) {
+
+    return String(
+        value
+    )
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /'/g,
+            "&#039;"
+        );
 
 }
