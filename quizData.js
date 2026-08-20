@@ -1,23 +1,20 @@
 const quizData = {
- },
-
     "economics": {
-
         1: [{
-    question:
-      "The fundamental economic problem of 'scarcity' is correctly defined as a situation where society is temporarily unable to get the amount of goods it wants at the prevailing price.",
-    options: [
-      "True",
-      "False"
-    ],
-    answer: 1,
-    englishExplanation:
-      "The statement is false because it describes a shortage, not scarcity. Scarcity is the fundamental and permanent economic problem caused by unlimited human wants and limited resources. A shortage is a temporary situation in which people cannot obtain the quantity of a good they want at the prevailing market price.",
-    amharicExplanation:
-      "ይህንን በፍጹም መርሳት የለባችሁም! Scarcity (እጥረት) እና Shortage (ጉድለት) የተለያዩ ጽንሰ-ሀሳቦች ናቸው። Scarcity ማለት የሰው ልጅ ፍላጎት ገደብ የሌለው ሆኖ ሳለ ይህንን ፍላጎት ለማሟላት የሚያስፈልጉት ሀብቶች (resources) ውስን መሆናቸው የሚፈጥረው ዘላለማዊ እና መሠረታዊ የኢኮኖሚክስ ችግር ነው። Shortage በበኩሉ፣ በአንድ ወቅት ላይ በገበያ ዋጋ ሰዎች የሚፈልጉትን ያህል መጠን ያለው ምርት መግዛት ሲያቅታቸው የሚፈጠር ጊዜያዊ ክስተት ነው። ስለዚህ ጥያቄው ላይ የተሰጠው ገለጻ የShortage እንጂ የScarcity አይደለም።"
-  },
+            question:
+              "The fundamental economic problem of 'scarcity' is correctly defined as a situation where society is temporarily unable to get the amount of goods it wants at the prevailing price.",
+            options: [
+              "True",
+              "False"
+            ],
+            answer: 1,
+            englishExplanation:
+              "The statement is false because it describes a shortage, not scarcity. Scarcity is the fundamental and permanent economic problem caused by unlimited human wants and limited resources. A shortage is a temporary situation in which people cannot obtain the quantity of a good they want at the prevailing market price.",
+            amharicExplanation:
+              "ይህንን በፍጹም መርሳት የለባችሁም! Scarcity (እጥረት) እና Shortage (ጉድለት) የተለያዩ ጽንሰ-ሀሳቦች ናቸው። Scarcity ማለት የሰው ልጅ ፍላጎት ገደብ የሌለው ሆኖ ሳለ ይህንን ፍላጎት ለማሟላት የሚያስፈልጉት ሀብቶች (resources) ውስን መሆናቸው የሚፈጥረው ዘላለማዊ እና መሠረታዊ የኢኮኖሚክስ ችግር ነው። Shortage በበኩሉ፣ በአንድ ወቅት ላይ በገበያ ዋጋ ሰዎች የሚፈልጉትን ያህል መጠን ያለው ምርት መግዛት ሲያቅታቸው የሚፈጠር ጊዜያዊ ክስተት ነው። ስለዚህ ጥያቄው ላይ የተሰጠው ገለጻ የShortage እንጂ የScarcity አይደለም።"   
 
-  {
+    },
+ {
     question:
       "A statement such as 'The current unemployment rate in Ethiopia should be reduced by increasing government spending' is an example of positive economic analysis.",
     options: [
