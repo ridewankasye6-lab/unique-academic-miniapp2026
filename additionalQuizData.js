@@ -1,5 +1,4 @@
-quizData["global-trends"]["1"] = [
-	{
+appendQuizData("global-trends", "1", [
 "question": "1. IR is more concentrated on domestic relations.",
   "options": [
     "True",
