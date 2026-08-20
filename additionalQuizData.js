@@ -32,7 +32,7 @@ appendQuizData("global-trends", "1", [
   "englishExplanation": "",
   "amharicExplanation": "📚 IR ሙሉ ትኩረቱ ሀገር ውስጥ ስላለ ግንኙነት (domestic relationship) ሳይሆን ድንበር ተሻጋሪ (Across border) በሆነ ግንኙነት ነው።"
 
-]);
+];
 {
   "question": "2. Comparatively, multipolar world orders are most susceptible to instability and war.",
   "options": [
@@ -996,7 +996,7 @@ appendQuizData("global-trends", "5", [{
 // HISTORY — CHAPTERS 1–6
 // =====================================================
 
-quizData["history"]["1"] = [{
+appendQuizData("history", "1", [{
   question: "Who is often referred to as the 'father of history'?",
   options: [
     "Herodotus",
@@ -1654,78 +1654,3 @@ quizData["history"]["1"] = [{
     englishExplanation: "False. Manuscripts and diaries can be primary sources when they contain original or firsthand records created by people connected to the event or period being studied.",
     amharicExplanation: "ሐሰት። የእጅ ጽሑፎች (Manuscripts) እና የግል ማስታወሻዎች (Diaries) በክስተቱ ወይም በዘመኑ የተጻፉ ቀጥተኛ መረጃዎችን ከያዙ የመጀመሪያ ደረጃ ምንጮች ናቸው።"
   }];
-
-quizData["history"]["2"] = [
-
-    // History Chapter 2 questions
-
-
-];
-
-quizData["history"]["3"] = [
-
-    // History Chapter 3 questions
-
-
-];
-
-quizData["history"]["4"] = [
-
-    // History Chapter 4 questions
-
-
-];
-
-quizData["history"]["5"] = [
-
-    // History Chapter 5 questions
-
-
-];
-
-quizData["history"]["6"] = [
-
-    // History Chapter 6 questions
-
-
-];
-
-
-// =====================================================
-// ENGLISH SKILL 1 — CHAPTERS 1–5
-// =====================================================
-
-quizData["english-skill-1"]["1"] = [
-
-    // English Skill 1 Chapter 1 questions
-
-
-];
-
-quizData["english-skill-1"]["2"] = [
-
-    // English Skill 1 Chapter 2 questions
-
-
-];
-
-quizData["english-skill-1"]["3"] = [
-
-    // English Skill 1 Chapter 3 questions
-
-
-];
-
-quizData["english-skill-1"]["4"] = [
-
-    // English Skill 1 Chapter 4 questions
-
-
-];
-
-quizData["english-skill-1"]["5"] = [
-
-    // English Skill 1 Chapter 5 questions
-
-
-];
