@@ -1025,6 +1025,37 @@ function enableTrialPage() {
 
     applyTrialElementLocks();
 
+
+    /*
+    =============================================
+    TRIAL ACCESS GRANTED
+    =============================================
+
+    quiz.html waits for this event before
+    loading quizData.js, additionalQuizData.js
+    and quiz.js.
+    */
+
+    document.dispatchEvent(
+        new CustomEvent(
+            "uniqueAcademicAccessGranted",
+            {
+                detail: {
+
+                    status:
+                        "🎓 Free Trial Access",
+
+                    admin:
+                        false,
+
+                    trial:
+                        true
+
+                }
+            }
+        )
+    );
+
 }
 
 
