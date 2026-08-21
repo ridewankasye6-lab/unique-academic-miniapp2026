@@ -14,7 +14,7 @@ quizData["global-trends"]["1"] = [
     "False"
   ],
   "answer": 1,
-  "englishExplanation": "",
+  "englishExplanation": "",englishExplanation: "The statement is false because Marxism views international relations mainly through the lens of class conflict and the unequal distribution of economic power, rather than simply focusing on relations among states.",
   "amharicExplanation": "📚 IR ሙሉ ትኩረቱ ሀገር ውስጥ ስላለ ግንኙነት (domestic relationship) ሳይሆን ድንበር ተሻጋሪ (Across border) በሆነ ግንኙነት ነው።"
 },
 
