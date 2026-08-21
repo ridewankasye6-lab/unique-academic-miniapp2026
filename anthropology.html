@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -21,150 +22,6 @@
         rel="stylesheet"
         href="style.css"
     >
-
-    <style>
-
-        /* =========================================
-           COMPACT QUIZ PROGRESS POPUP
-        ========================================= */
-
-        .progressOverlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.45);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-            z-index: 9999;
-        }
-
-        .progressOverlay.show {
-            display: flex;
-        }
-
-        .progressPopup {
-            width: min(360px, 92vw);
-            max-height: 80vh;
-            overflow-y: auto;
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 18px;
-            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
-            text-align: center;
-        }
-
-        .progressPopupIcon {
-            font-size: 32px;
-            margin-bottom: 4px;
-        }
-
-        .progressPopup h2 {
-            margin: 4px 0;
-            font-size: 20px;
-        }
-
-        .progressPopupChapter {
-            margin: 0 0 14px;
-            color: #666;
-            font-size: 14px;
-        }
-
-        .progressPercent {
-            font-size: 28px;
-            font-weight: 800;
-            margin-bottom: 7px;
-        }
-
-        .progressPopupTrack {
-            width: 100%;
-            height: 9px;
-            background: #e8e8e8;
-            border-radius: 20px;
-            overflow: hidden;
-            margin-bottom: 15px;
-        }
-
-        .progressPopupBar {
-            height: 100%;
-            width: 0%;
-            background: #1e3a8a;
-            border-radius: 20px;
-            transition: width 0.25s ease;
-        }
-
-        .progressStats {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-
-        .progressStat {
-            background: #f5f6fa;
-            border-radius: 10px;
-            padding: 9px 5px;
-        }
-
-        .progressStat strong {
-            display: block;
-            font-size: 17px;
-        }
-
-        .progressStat span {
-            display: block;
-            font-size: 11px;
-            color: #666;
-            margin-top: 2px;
-        }
-
-        .progressPopupButtons {
-            display: flex;
-            gap: 8px;
-        }
-
-        .progressContinue,
-        .progressClose {
-            flex: 1;
-            border: 0;
-            border-radius: 10px;
-            padding: 11px 8px;
-            font-weight: 700;
-            cursor: pointer;
-        }
-
-        .progressContinue {
-            background: #1e3a8a;
-            color: white;
-        }
-
-        .progressClose {
-            background: #eeeeee;
-            color: #333;
-        }
-
-        @media (max-width: 420px) {
-
-            .progressPopup {
-                width: 94vw;
-                padding: 15px;
-            }
-
-            .progressPopupIcon {
-                font-size: 28px;
-            }
-
-            .progressPopup h2 {
-                font-size: 18px;
-            }
-
-            .progressPercent {
-                font-size: 25px;
-            }
-
-        }
-
-    </style>
 
 </head>
 
@@ -347,14 +204,9 @@
         </h2>
 
 
-        <!-- =================================
-             CHAPTER 1
-        ================================== -->
+        <!-- Chapter 1 -->
 
-        <div
-            class="quiz-card"
-            data-chapter="1"
-        >
+        <div class="quiz-card">
 
             <div class="quiz-progress">
                 0%
@@ -375,7 +227,6 @@
             <a
                 href="quiz.html?subject=anthropology&chapter=1"
                 class="quiz-arrow"
-                data-chapter="1"
             >
                 ➜
             </a>
@@ -383,15 +234,9 @@
         </div>
 
 
+        <!-- Chapter 2 -->
 
-        <!-- =================================
-             CHAPTER 2
-        ================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="2"
-        >
+        <div class="quiz-card">
 
             <div class="quiz-progress">
                 0%
@@ -412,7 +257,6 @@
             <a
                 href="quiz.html?subject=anthropology&chapter=2"
                 class="quiz-arrow"
-                data-chapter="2"
             >
                 ➜
             </a>
@@ -420,15 +264,9 @@
         </div>
 
 
+        <!-- Chapter 3 -->
 
-        <!-- =================================
-             CHAPTER 3
-        ================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="3"
-        >
+        <div class="quiz-card">
 
             <div class="quiz-progress">
                 0%
@@ -449,7 +287,6 @@
             <a
                 href="quiz.html?subject=anthropology&chapter=3"
                 class="quiz-arrow"
-                data-chapter="3"
             >
                 ➜
             </a>
@@ -457,15 +294,9 @@
         </div>
 
 
+        <!-- Chapter 4 -->
 
-        <!-- =================================
-             CHAPTER 4
-        ================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="4"
-        >
+        <div class="quiz-card">
 
             <div class="quiz-progress">
                 0%
@@ -486,7 +317,6 @@
             <a
                 href="quiz.html?subject=anthropology&chapter=4"
                 class="quiz-arrow"
-                data-chapter="4"
             >
                 ➜
             </a>
@@ -494,15 +324,9 @@
         </div>
 
 
+        <!-- Chapter 5 -->
 
-        <!-- =================================
-             CHAPTER 5
-        ================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="5"
-        >
+        <div class="quiz-card">
 
             <div class="quiz-progress">
                 0%
@@ -523,7 +347,6 @@
             <a
                 href="quiz.html?subject=anthropology&chapter=5"
                 class="quiz-arrow"
-                data-chapter="5"
             >
                 ➜
             </a>
@@ -534,139 +357,6 @@
 
 
 </main>
-
-
-
-<!-- =====================================
-     COMPACT PROGRESS POPUP
-===================================== -->
-
-<div
-    id="progressOverlay"
-    class="progressOverlay"
-    aria-hidden="true"
->
-
-    <div
-        class="progressPopup"
-        role="dialog"
-        aria-modal="true"
-    >
-
-        <div class="progressPopupIcon">
-            🎓
-        </div>
-
-        <h2>
-            Anthropology
-        </h2>
-
-        <p
-            id="progressPopupChapter"
-            class="progressPopupChapter"
-        >
-            Chapter 1
-        </p>
-
-
-        <div
-            id="progressPercent"
-            class="progressPercent"
-        >
-            0%
-        </div>
-
-
-        <div class="progressPopupTrack">
-
-            <div
-                id="progressPopupBar"
-                class="progressPopupBar"
-            ></div>
-
-        </div>
-
-
-        <div class="progressStats">
-
-            <div class="progressStat">
-
-                <strong id="totalQuestions">
-                    0
-                </strong>
-
-                <span>
-                    Total Questions
-                </span>
-
-            </div>
-
-
-            <div class="progressStat">
-
-                <strong id="attemptedQuestions">
-                    0
-                </strong>
-
-                <span>
-                    Attempted
-                </span>
-
-            </div>
-
-
-            <div class="progressStat">
-
-                <strong id="correctQuestions">
-                    0
-                </strong>
-
-                <span>
-                    Correct
-                </span>
-
-            </div>
-
-
-            <div class="progressStat">
-
-                <strong id="wrongQuestions">
-                    0
-                </strong>
-
-                <span>
-                    Wrong
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="progressPopupButtons">
-
-            <button
-                id="progressClose"
-                class="progressClose"
-                type="button"
-            >
-                Close
-            </button>
-
-
-            <button
-                id="progressContinue"
-                class="progressContinue"
-                type="button"
-            >
-                Continue ➜
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
 
 
 
@@ -683,9 +373,9 @@ const pageHomeBtn =
     document.getElementById("pageHomeBtn");
 
 
-/* =========================================
-   BACK
-========================================= */
+// -----------------------------------------
+// BACK
+// -----------------------------------------
 
 pageBackBtn.addEventListener(
     "click",
@@ -706,9 +396,9 @@ pageBackBtn.addEventListener(
 );
 
 
-/* =========================================
-   HOME
-========================================= */
+// -----------------------------------------
+// HOME
+// -----------------------------------------
 
 pageHomeBtn.addEventListener(
     "click",
@@ -722,400 +412,6 @@ pageHomeBtn.addEventListener(
 
 </script>
 
-
-
-<!-- =====================================
-     PROGRESS POPUP JAVASCRIPT
-===================================== -->
-
-<script>
-
-const progressOverlay =
-    document.getElementById("progressOverlay");
-
-const progressPopupChapter =
-    document.getElementById(
-        "progressPopupChapter"
-    );
-
-const progressPercent =
-    document.getElementById(
-        "progressPercent"
-    );
-
-const progressPopupBar =
-    document.getElementById(
-        "progressPopupBar"
-    );
-
-const totalQuestions =
-    document.getElementById(
-        "totalQuestions"
-    );
-
-const attemptedQuestions =
-    document.getElementById(
-        "attemptedQuestions"
-    );
-
-const correctQuestions =
-    document.getElementById(
-        "correctQuestions"
-    );
-
-const wrongQuestions =
-    document.getElementById(
-        "wrongQuestions"
-    );
-
-const progressClose =
-    document.getElementById(
-        "progressClose"
-    );
-
-const progressContinue =
-    document.getElementById(
-        "progressContinue"
-    );
-
-
-let selectedChapter = null;
-
-let selectedQuizUrl = null;
-
-
-/* =========================================
-   STORAGE KEY
-========================================= */
-
-function getStorageKey(chapter) {
-
-    return (
-        "uniqueAcademicProgress_" +
-        "anthropology_" +
-        chapter
-    );
-
-}
-
-
-/* =========================================
-   GET SAVED PROGRESS
-========================================= */
-
-function getProgress(chapter) {
-
-    const key =
-        getStorageKey(chapter);
-
-    try {
-
-        const saved =
-            localStorage.getItem(key);
-
-        if (!saved) {
-
-            return {
-                total: 0,
-                attempted: 0,
-                correct: 0,
-                wrong: 0
-            };
-
-        }
-
-
-        const data =
-            JSON.parse(saved);
-
-
-        return {
-
-            total:
-                Number(data.total) || 0,
-
-            attempted:
-                Number(data.attempted) || 0,
-
-            correct:
-                Number(data.correct) || 0,
-
-            wrong:
-                Number(data.wrong) || 0
-
-        };
-
-    } catch (error) {
-
-        console.error(
-            "Could not read quiz progress:",
-            error
-        );
-
-
-        return {
-            total: 0,
-            attempted: 0,
-            correct: 0,
-            wrong: 0
-        };
-
-    }
-
-}
-
-
-/* =========================================
-   OPEN POPUP
-========================================= */
-
-function openProgressPopup(
-    chapter,
-    quizUrl
-) {
-
-    selectedChapter =
-        chapter;
-
-    selectedQuizUrl =
-        quizUrl;
-
-
-    const data =
-        getProgress(chapter);
-
-
-    const total =
-        data.total;
-
-    const attempted =
-        data.attempted;
-
-    const correct =
-        data.correct;
-
-    const wrong =
-        data.wrong;
-
-
-    let percent = 0;
-
-
-    if (total > 0) {
-
-        percent =
-            Math.round(
-                (attempted / total) * 100
-            );
-
-    }
-
-
-    progressPopupChapter.textContent =
-        `Chapter ${chapter}`;
-
-
-    progressPercent.textContent =
-        `${percent}%`;
-
-
-    progressPopupBar.style.width =
-        `${percent}%`;
-
-
-    totalQuestions.textContent =
-        total;
-
-
-    attemptedQuestions.textContent =
-        attempted;
-
-
-    correctQuestions.textContent =
-        correct;
-
-
-    wrongQuestions.textContent =
-        wrong;
-
-
-    progressOverlay.classList.add(
-        "show"
-    );
-
-
-    progressOverlay.setAttribute(
-        "aria-hidden",
-        "false"
-    );
-
-}
-
-
-/* =========================================
-   CLOSE POPUP
-========================================= */
-
-function closeProgressPopup() {
-
-    progressOverlay.classList.remove(
-        "show"
-    );
-
-
-    progressOverlay.setAttribute(
-        "aria-hidden",
-        "true"
-    );
-
-
-    selectedChapter =
-        null;
-
-    selectedQuizUrl =
-        null;
-
-}
-
-
-/* =========================================
-   QUIZ ARROW CLICK
-========================================= */
-
-document
-    .querySelectorAll(".quiz-arrow")
-    .forEach(
-        arrow => {
-
-            arrow.addEventListener(
-                "click",
-                event => {
-
-                    /*
-                     * IMPORTANT:
-                     * Prevent the browser from
-                     * immediately opening the quiz.
-                     *
-                     * The Continue button below
-                     * will use the ORIGINAL URL.
-                     */
-
-                    event.preventDefault();
-
-
-                    const chapter =
-                        arrow.dataset.chapter;
-
-
-                    const quizUrl =
-                        arrow.getAttribute(
-                            "href"
-                        );
-
-
-                    openProgressPopup(
-                        chapter,
-                        quizUrl
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-/* =========================================
-   CONTINUE TO REAL QUIZ
-========================================= */
-
-progressContinue.addEventListener(
-    "click",
-    () => {
-
-        if (!selectedQuizUrl) {
-
-            return;
-
-        }
-
-
-        /*
-         * This is the ORIGINAL quiz URL.
-         * Nothing is changed.
-         */
-
-        window.location.href =
-            selectedQuizUrl;
-
-    }
-);
-
-
-/* =========================================
-   CLOSE BUTTON
-========================================= */
-
-progressClose.addEventListener(
-    "click",
-    () => {
-
-        closeProgressPopup();
-
-    }
-);
-
-
-/* =========================================
-   CLICK OUTSIDE POPUP
-========================================= */
-
-progressOverlay.addEventListener(
-    "click",
-    event => {
-
-        if (
-            event.target ===
-            progressOverlay
-        ) {
-
-            closeProgressPopup();
-
-        }
-
-    }
-);
-
-
-/* =========================================
-   ESC KEY
-========================================= */
-
-document.addEventListener(
-    "keydown",
-    event => {
-
-        if (
-            event.key === "Escape" &&
-            progressOverlay.classList.contains(
-                "show"
-            )
-        ) {
-
-            closeProgressPopup();
-
-        }
-
-    }
-);
-
-</script>
-
-
-
-<!-- =====================================
-     ACCESS GUARD
-===================================== -->
 
 <script
     type="module"
