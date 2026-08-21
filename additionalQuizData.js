@@ -16,8 +16,8 @@ quizData["global-trends"]["1"] = [
   "answer": 1,
   "englishExplanation": "",
   "amharicExplanation": "📚 IR ሙሉ ትኩረቱ ሀገር ውስጥ ስላለ ግንኙነት (domestic relationship) ሳይሆን ድንበር ተሻጋሪ (Across border) በሆነ ግንኙነት ነው።"
+},
 
-];
 {
   "question": "2. Comparatively, multipolar world orders are most susceptible to instability and war.",
   "options": [
