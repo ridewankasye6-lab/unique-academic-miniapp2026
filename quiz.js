@@ -3,55 +3,58 @@
 // 5 QUESTIONS PER PAGE
 // =====================================================
 
-
 // =====================================================
 // READ URL PARAMETERS
 // =====================================================
 
 const params =
-    new URLSearchParams(window.location.search);
+new URLSearchParams(window.location.search);
 
 const subject =
-    params.get("subject");
+params.get("subject");
 
 const chapter =
-    params.get("chapter");
-
+params.get("chapter");
 
 // =====================================================
 // HTML ELEMENTS
 // =====================================================
 
 const subjectName =
-    document.getElementById("subjectName");
+document.getElementById("subjectName");
 
 const chapterName =
-    document.getElementById("chapterName");
+document.getElementById("chapterName");
 
 const headerTitle =
-    document.getElementById("headerTitle");
+document.getElementById("headerTitle");
 
 const headerChapter =
-    document.getElementById("headerChapter");
+document.getElementById("headerChapter");
 
 const questionNumber =
-    document.getElementById("questionNumber");
+document.getElementById("questionNumber");
 
 const nextBtn =
-    document.getElementById("nextBtn");
+document.getElementById("nextBtn");
 
 const previousQuestionBtn =
-    document.getElementById("previousQuestionBtn");
+document.getElementById("previousQuestionBtn");
 
 const backBtn =
-    document.getElementById("backBtn");
+document.getElementById("backBtn");
 
 const homeBtn =
-    document.getElementById("homeBtn");
+document.getElementById("homeBtn");
+
+const progressBar =
+document.getElementById("progressBar");
+
+const completionMessage =
+document.getElementById("completionMessage");
 
 const questionsPage =
-    document.getElementById("questionsPage");
-
+document.getElementById("questionsPage");
 
 // =====================================================
 // QUESTIONS PER PAGE
@@ -59,13 +62,11 @@ const questionsPage =
 
 const QUESTIONS_PER_PAGE = 5;
 
-
 // =====================================================
 // CURRENT PAGE
 // =====================================================
 
 let currentPage = 0;
-
 
 // =====================================================
 // FORMAT SUBJECT NAME
@@ -73,56 +74,52 @@ let currentPage = 0;
 
 function formatSubjectName(value) {
 
-    if (!value) {
+if (!value) {  
 
-        return "Unknown Subject";
+    return "Unknown Subject";  
 
-    }
+}  
 
-    return value
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, letter =>
-            letter.toUpperCase()
-        );
+return value  
+    .replace(/-/g, " ")  
+    .replace(/\b\w/g, letter =>  
+        letter.toUpperCase()  
+    );
 
 }
-
 
 // =====================================================
 // SHOW SUBJECT + CHAPTER
 // =====================================================
 
 const formattedSubject =
-    formatSubjectName(subject);
+formatSubjectName(subject);
 
 const formattedChapter =
-    chapter
-        ? `Chapter ${chapter}`
-        : "Unknown Chapter";
-
+chapter
+? Chapter ${chapter}
+: "Unknown Chapter";
 
 subjectName.textContent =
-    formattedSubject;
+formattedSubject;
 
 chapterName.textContent =
-    formattedChapter;
+formattedChapter;
 
 headerTitle.textContent =
-    formattedSubject;
+formattedSubject;
 
 headerChapter.textContent =
-    `${formattedChapter} • Quiz`;
-
+${formattedChapter} • Quiz;
 
 // =====================================================
 // LOAD QUESTIONS
 // =====================================================
 
 const questions =
-    typeof quizData !== "undefined"
-        ? quizData?.[subject]?.[chapter] || []
-        : [];
-
+typeof quizData !== "undefined"
+? quizData?.[subject]?.[chapter] || []
+: [];
 
 // =====================================================
 // NO QUESTIONS FOUND
@@ -130,31 +127,33 @@ const questions =
 
 if (questions.length === 0) {
 
-    questionsPage.innerHTML = `
-        <section class="questionCard">
+questionsPage.innerHTML = `  
+    <section class="questionCard">  
 
-            <h2 class="questionText">
-                No questions found for this chapter.
-            </h2>
+        <h2 class="questionText">  
+            No questions found for this chapter.  
+        </h2>  
 
-        </section>
-    `;
+    </section>  
+`;  
 
-    questionNumber.textContent =
-        "Question 0 / 0";
+questionNumber.textContent =  
+    "Question 0 / 0";  
 
-    previousQuestionBtn.style.display =
-        "none";
+previousQuestionBtn.style.display =  
+    "none";  
 
-    nextBtn.style.display =
-        "none";
+nextBtn.style.display =  
+    "none";  
+
+progressBar.style.width =  
+    "0%";
 
 } else {
 
-    loadPage();
+loadPage();
 
 }
-
 
 // =====================================================
 // GET ENGLISH EXPLANATION
@@ -162,25 +161,26 @@ if (questions.length === 0) {
 
 function getEnglishExplanation(q) {
 
-    if (q.englishExplanation) {
+if (q.englishExplanation) {  
 
-        return q.englishExplanation;
+    return q.englishExplanation;  
 
-    }
+}  
 
-    if (
-        q.explanation &&
-        q.explanation.english
-    ) {
 
-        return q.explanation.english;
+if (  
+    q.explanation &&  
+    q.explanation.english  
+) {  
 
-    }
+    return q.explanation.english;  
 
-    return "";
+}  
+
+
+return "";
 
 }
-
 
 // =====================================================
 // GET AMHARIC EXPLANATION
@@ -188,93 +188,100 @@ function getEnglishExplanation(q) {
 
 function getAmharicExplanation(q) {
 
-    if (q.amharicExplanation) {
+if (q.amharicExplanation) {  
 
-        return q.amharicExplanation;
+    return q.amharicExplanation;  
 
-    }
+}  
 
-    if (
-        q.explanation &&
-        q.explanation.amharic
-    ) {
 
-        return q.explanation.amharic;
+if (  
+    q.explanation &&  
+    q.explanation.amharic  
+) {  
 
-    }
+    return q.explanation.amharic;  
 
-    return "";
+}  
+
+
+return "";
 
 }
 
-
 // =====================================================
-// LOAD QUESTIONS
+// LOAD 5 QUESTIONS
 // =====================================================
 
 function loadPage() {
 
-    questionsPage.innerHTML = "";
+questionsPage.innerHTML = "";  
 
 
-    const startIndex =
-        currentPage * QUESTIONS_PER_PAGE;
+const startIndex =  
+    currentPage * QUESTIONS_PER_PAGE;  
 
 
-    const endIndex =
-        Math.min(
-            startIndex + QUESTIONS_PER_PAGE,
-            questions.length
-        );
+const endIndex =  
+    Math.min(  
+        startIndex + QUESTIONS_PER_PAGE,  
+        questions.length  
+    );  
 
 
-    // ---------------------------------------------
-    // CREATE QUESTIONS
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Create each question  
+// ---------------------------------------------  
 
-    for (
-        let index = startIndex;
-        index < endIndex;
-        index++
-    ) {
+for (  
+    let index = startIndex;  
+    index < endIndex;  
+    index++  
+) {  
 
-        createQuestionCard(
-            questions[index],
-            index
-        );
+    createQuestionCard(  
+        questions[index],  
+        index  
+    );  
 
-    }
-
-
-    // ---------------------------------------------
-    // QUESTION COUNTER
-    // ---------------------------------------------
-
-    questionNumber.textContent =
-        `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
+}  
 
 
-    // ---------------------------------------------
-    // NAVIGATION
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Update question counter  
+// ---------------------------------------------  
 
-    updateNavigation();
+questionNumber.textContent =  
+    `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;  
 
 
-    // ---------------------------------------------
-    // SCROLL TO TOP
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Update navigation  
+// ---------------------------------------------  
 
-    window.scrollTo({
+updateNavigation();  
 
-        top: 0,
 
-        behavior: "smooth"
+// ---------------------------------------------  
+// Update progress  
+// ---------------------------------------------  
 
-    });
+updateProgress();  
+
+
+// ---------------------------------------------  
+// Scroll to top  
+// ---------------------------------------------  
+
+window.scrollTo({  
+
+    top: 0,  
+
+    behavior: "smooth"  
+
+});
 
 }
-
 
 // =====================================================
 // CREATE QUESTION CARD
@@ -282,349 +289,389 @@ function loadPage() {
 
 function createQuestionCard(q, index) {
 
-    // ---------------------------------------------
-    // QUESTION CARD
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Main question card  
+// ---------------------------------------------  
 
-    const questionCard =
-        document.createElement("section");
+const questionCard =  
+    document.createElement("section");  
 
-    questionCard.className =
-        "questionCard";
 
+questionCard.className =  
+    "questionCard";  
 
-    // ---------------------------------------------
-    // QUESTION LABEL
-    // ---------------------------------------------
 
-    const questionLabel =
-        document.createElement("div");
+// ---------------------------------------------  
+// Question label  
+// ---------------------------------------------  
 
-    questionLabel.className =
-        "questionLabel";
+const questionLabel =  
+    document.createElement("div");  
 
 
-    const questionBadge =
-        document.createElement("span");
+questionLabel.className =  
+    "questionLabel";  
 
-    questionBadge.className =
-        "questionBadge";
 
-    questionBadge.textContent =
-        `QUESTION ${index + 1}`;
+const questionBadge =  
+    document.createElement("span");  
 
 
-    questionLabel.appendChild(
-        questionBadge
-    );
+questionBadge.className =  
+    "questionBadge";  
 
 
-    // ---------------------------------------------
-    // QUESTION TEXT
-    // ---------------------------------------------
+questionBadge.textContent =  
+    `QUESTION ${index + 1}`;  
 
-    const questionText =
-        document.createElement("h2");
 
-    questionText.className =
-        "questionText";
+questionLabel.appendChild(  
+    questionBadge  
+);  
 
-    questionText.textContent =
-        q.question || "";
 
+// ---------------------------------------------  
+// Question text  
+// ---------------------------------------------  
 
-    // ---------------------------------------------
-    // OPTIONS
-    // ---------------------------------------------
+const questionText =  
+    document.createElement("h2");  
 
-    const options =
-        document.createElement("div");
 
-    options.className =
-        "options";
+questionText.className =  
+    "questionText";  
 
 
-    const questionOptions =
-        q.options ||
-        q.choices ||
-        [];
+questionText.textContent =  
+    q.question || "";  
 
 
-    // ---------------------------------------------
-    // EXPLANATION
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Options  
+// ---------------------------------------------  
 
-    const explanationBox =
-        document.createElement("section");
+const options =  
+    document.createElement("div");  
 
-    explanationBox.className =
-        "explanationCard";
 
-    explanationBox.style.display =
-        "none";
+options.className =  
+    "options";  
 
 
-    // ---------------------------------------------
-    // ENGLISH EXPLANATION
-    // ---------------------------------------------
+const questionOptions =  
+    q.options ||  
+    q.choices ||  
+    [];  
 
-    const englishSection =
-        document.createElement("div");
 
-    englishSection.className =
-        "explanationSection";
+questionOptions.forEach(  
+    (option, optionIndex) => {  
 
+        const button =  
+            document.createElement("button");  
 
-    const englishTitle =
-        document.createElement("h3");
 
-    englishTitle.textContent =
-        "📖 English Explanation";
+        button.type =  
+            "button";  
 
 
-    const englishExplanation =
-        document.createElement("p");
+        button.className =  
+            "optionBtn";  
 
-    englishExplanation.textContent =
-        "";
 
+        button.textContent =  
+            option;  
 
-    englishSection.appendChild(
-        englishTitle
-    );
 
-    englishSection.appendChild(
-        englishExplanation
-    );
+        button.addEventListener(  
+            "click",  
+            () => {  
 
+                checkAnswer(  
+                    q,  
+                    optionIndex,  
+                    options,  
+                    explanationBox,  
+                    englishExplanation,  
+                    amharicExplanation  
+                );  
 
-    // ---------------------------------------------
-    // DIVIDER
-    // ---------------------------------------------
+            }  
+        );  
 
-    const divider =
-        document.createElement("div");
 
-    divider.className =
-        "explanationDivider";
+        options.appendChild(  
+            button  
+        );  
 
+    }  
+);  
 
-    // ---------------------------------------------
-    // AMHARIC EXPLANATION
-    // ---------------------------------------------
 
-    const amharicSection =
-        document.createElement("div");
+// ---------------------------------------------  
+// Explanation  
+// ---------------------------------------------  
 
-    amharicSection.className =
-        "explanationSection";
+const explanationBox =  
+    document.createElement("section");  
 
 
-    const amharicTitle =
-        document.createElement("h3");
+explanationBox.className =  
+    "explanationCard";  
 
-    amharicTitle.textContent =
-        "🇪🇹 የአማርኛ ማብራሪያ";
 
+explanationBox.style.display =  
+    "none";  
 
-    const amharicExplanation =
-        document.createElement("p");
 
-    amharicExplanation.textContent =
-        "";
+const englishSection =  
+    document.createElement("div");  
 
 
-    amharicSection.appendChild(
-        amharicTitle
-    );
+englishSection.className =  
+    "explanationSection";  
 
-    amharicSection.appendChild(
-        amharicExplanation
-    );
 
+const englishTitle =  
+    document.createElement("h3");  
 
-    // ---------------------------------------------
-    // ADD EXPLANATIONS
-    // ---------------------------------------------
 
-    explanationBox.appendChild(
-        englishSection
-    );
+englishTitle.textContent =  
+    "📖 English Explanation";  
 
-    explanationBox.appendChild(
-        divider
-    );
 
-    explanationBox.appendChild(
-        amharicSection
-    );
+const englishExplanation =  
+    document.createElement("p");  
 
 
-    // ---------------------------------------------
-    // CREATE OPTIONS
-    // ---------------------------------------------
+englishExplanation.textContent =  
+    "";  
 
-    questionOptions.forEach(
-        (option, optionIndex) => {
 
-            const button =
-                document.createElement("button");
+englishSection.appendChild(  
+    englishTitle  
+);  
 
 
-            button.type =
-                "button";
+englishSection.appendChild(  
+    englishExplanation  
+);  
 
-            button.className =
-                "optionBtn";
 
-            button.textContent =
-                option;
+const divider =  
+    document.createElement("div");  
 
 
-            button.addEventListener(
-                "click",
-                () => {
+divider.className =  
+    "explanationDivider";  
 
-                    checkAnswer(
-                        q,
-                        optionIndex,
-                        options,
-                        explanationBox,
-                        englishExplanation,
-                        amharicExplanation
-                    );
 
-                }
-            );
+const amharicSection =  
+    document.createElement("div");  
 
 
-            options.appendChild(
-                button
-            );
+amharicSection.className =  
+    "explanationSection";  
 
-        }
-    );
 
+const amharicTitle =  
+    document.createElement("h3");  
 
-    // ---------------------------------------------
-    // ADD EVERYTHING
-    // ---------------------------------------------
 
-    questionCard.appendChild(
-        questionLabel
-    );
+amharicTitle.textContent =  
+    "🇪🇹 የአማርኛ ማብራሪያ";  
 
-    questionCard.appendChild(
-        questionText
-    );
 
-    questionCard.appendChild(
-        options
-    );
+const amharicExplanation =  
+    document.createElement("p");  
 
-    questionCard.appendChild(
-        explanationBox
-    );
 
+amharicExplanation.textContent =  
+    "";  
 
-    // ---------------------------------------------
-    // ADD CARD TO PAGE
-    // ---------------------------------------------
 
-    questionsPage.appendChild(
-        questionCard
-    );
+amharicSection.appendChild(  
+    amharicTitle  
+);  
+
+
+amharicSection.appendChild(  
+    amharicExplanation  
+);  
+
+
+explanationBox.appendChild(  
+    englishSection  
+);  
+
+
+explanationBox.appendChild(  
+    divider  
+);  
+
+
+explanationBox.appendChild(  
+    amharicSection  
+);  
+
+
+// ---------------------------------------------  
+// Add everything to card  
+// ---------------------------------------------  
+
+questionCard.appendChild(  
+    questionLabel  
+);  
+
+
+questionCard.appendChild(  
+    questionText  
+);  
+
+
+questionCard.appendChild(  
+    options  
+);  
+
+
+questionCard.appendChild(  
+    explanationBox  
+);  
+
+
+// ---------------------------------------------  
+// Add card to page  
+// ---------------------------------------------  
+
+questionsPage.appendChild(  
+    questionCard  
+);
 
 }
-
 
 // =====================================================
 // CHECK ANSWER
 // =====================================================
 
 function checkAnswer(
-    q,
-    selectedIndex,
-    options,
-    explanationBox,
-    englishExplanation,
-    amharicExplanation
+q,
+selectedIndex,
+options,
+explanationBox,
+englishExplanation,
+amharicExplanation
 ) {
 
-    const buttons =
-        options.querySelectorAll(
-            ".optionBtn"
-        );
+const buttons =  
+    options.querySelectorAll(  
+        ".optionBtn"  
+    );  
 
 
-    const correctAnswer =
-        q.answer;
+const correctAnswer =  
+    q.answer;  
 
 
-    // ---------------------------------------------
-    // DISABLE OPTIONS
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Disable all options  
+// ---------------------------------------------  
 
-    buttons.forEach(
-        (button, index) => {
+buttons.forEach(  
+    (button, index) => {  
 
-            button.disabled =
-                true;
-
-
-            // Correct answer
-            if (
-                index === correctAnswer
-            ) {
-
-                button.classList.add(
-                    "correct"
-                );
-
-            }
+        button.disabled =  
+            true;  
 
 
-            // Wrong selected answer
-            if (
-                index === selectedIndex &&
-                index !== correctAnswer
-            ) {
+        // Correct answer  
+        if (  
+            index === correctAnswer  
+        ) {  
 
-                button.classList.add(
-                    "wrong"
-                );
+            button.classList.add(  
+                "correct"  
+            );  
 
-            }
-
-        }
-    );
+        }  
 
 
-    // ---------------------------------------------
-    // SHOW ENGLISH EXPLANATION
-    // ---------------------------------------------
+        // Wrong selected answer  
+        if (  
+            index === selectedIndex &&  
+            index !== correctAnswer  
+        ) {  
 
-    englishExplanation.textContent =
-        getEnglishExplanation(q);
+            button.classList.add(  
+                "wrong"  
+            );  
+
+        }  
+
+    }  
+);  
 
 
-    // ---------------------------------------------
-    // SHOW AMHARIC EXPLANATION
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Show English explanation  
+// ---------------------------------------------  
 
-    amharicExplanation.textContent =
-        getAmharicExplanation(q);
+englishExplanation.textContent =  
+    getEnglishExplanation(q);  
 
 
-    // ---------------------------------------------
-    // SHOW EXPLANATION
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Show Amharic explanation  
+// ---------------------------------------------  
 
-    explanationBox.style.display =
-        "block";
+amharicExplanation.textContent =  
+    getAmharicExplanation(q);  
+
+
+// ---------------------------------------------  
+// Show explanation box  
+// ---------------------------------------------  
+
+explanationBox.style.display =  
+    "block";
 
 }
 
+// =====================================================
+// UPDATE PROGRESS
+// =====================================================
+
+function updateProgress() {
+
+if (questions.length === 0) {  
+
+    progressBar.style.width =  
+        "0%";  
+
+    return;  
+
+}  
+
+
+const endIndex =  
+    Math.min(  
+        (  
+            currentPage + 1  
+        ) * QUESTIONS_PER_PAGE,  
+        questions.length  
+    );  
+
+
+const progress =  
+    (  
+        endIndex /  
+        questions.length  
+    ) * 100;  
+
+
+progressBar.style.width =  
+    `${progress}%`;
+
+}
 
 // =====================================================
 // UPDATE NAVIGATION
@@ -632,149 +679,192 @@ function checkAnswer(
 
 function updateNavigation() {
 
-    // ---------------------------------------------
-    // PREVIOUS BUTTON
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Previous  
+// ---------------------------------------------  
 
-    previousQuestionBtn.disabled =
-        currentPage === 0;
-
-
-    // ---------------------------------------------
-    // TOTAL PAGES
-    // ---------------------------------------------
-
-    const totalPages =
-        Math.ceil(
-            questions.length /
-            QUESTIONS_PER_PAGE
-        );
+previousQuestionBtn.disabled =  
+    currentPage === 0;  
 
 
-    // ---------------------------------------------
-    // NEXT BUTTON
-    // ---------------------------------------------
+// ---------------------------------------------  
+// Check if this is the final page  
+// ---------------------------------------------  
 
-    if (
-        currentPage ===
-        totalPages - 1
-    ) {
+const totalPages =  
+    Math.ceil(  
+        questions.length /  
+        QUESTIONS_PER_PAGE  
+    );  
 
-        nextBtn.innerHTML =
-            `
-            <span>Finish Quiz</span>
-            <span class="navArrow">✓</span>
-            `;
 
-    } else {
+if (  
+    currentPage ===  
+    totalPages - 1  
+) {  
 
-        nextBtn.innerHTML =
-            `
-            <span>Next</span>
-            <span class="navArrow">→</span>
-            `;
+    nextBtn.innerHTML =  
+        `  
+        <span>Finish Quiz</span>  
+        <span class="navArrow">✓</span>  
+        `;  
 
-    }
+} else {  
+
+    nextBtn.innerHTML =  
+        `  
+        <span>Next</span>  
+        <span class="navArrow">→</span>  
+        `;  
 
 }
 
+}
 
 // =====================================================
 // NEXT PAGE
 // =====================================================
 
 nextBtn.addEventListener(
-    "click",
-    () => {
+"click",
+() => {
 
-        const totalPages =
-            Math.ceil(
-                questions.length /
-                QUESTIONS_PER_PAGE
-            );
+const totalPages =  
+        Math.ceil(  
+            questions.length /  
+            QUESTIONS_PER_PAGE  
+        );  
 
 
-        if (
-            currentPage <
-            totalPages - 1
-        ) {
+    if (  
+        currentPage <  
+        totalPages - 1  
+    ) {  
 
-            currentPage++;
+        currentPage++;  
 
-            loadPage();
+        loadPage();  
 
-        }
+    } else {  
 
-    }
+        finishQuiz();  
+
+    }  
+
+}
+
 );
-
 
 // =====================================================
 // PREVIOUS PAGE
 // =====================================================
 
 previousQuestionBtn.addEventListener(
-    "click",
-    () => {
+"click",
+() => {
 
-        if (
-            currentPage > 0
-        ) {
+if (  
+        currentPage > 0  
+    ) {  
 
-            currentPage--;
+        currentPage--;  
 
-            loadPage();
+        loadPage();  
 
-        }
+    }  
 
-    }
+}
+
 );
 
+// =====================================================
+// FINISH QUIZ
+// =====================================================
+
+function finishQuiz() {
+
+questionNumber.textContent =  
+    `Questions ${questions.length} / ${questions.length}`;  
+
+
+progressBar.style.width =  
+    "100%";  
+
+
+questionsPage.innerHTML = "";  
+
+
+previousQuestionBtn.style.display =  
+    "none";  
+
+
+nextBtn.disabled =  
+    true;  
+
+
+nextBtn.innerHTML =  
+    `  
+    <span>Completed</span>  
+    <span class="navArrow">✓</span>  
+    `;  
+
+
+completionMessage.hidden =  
+    false;  
+
+
+completionMessage.scrollIntoView({  
+    behavior: "smooth",  
+    block: "center"  
+});
+
+}
 
 // =====================================================
 // TOP BACK BUTTON
 // =====================================================
 
 backBtn.addEventListener(
-    "click",
-    () => {
+"click",
+() => {
 
-        if (
-            window.history.length > 1
-        ) {
+if (  
+        window.history.length > 1  
+    ) {  
 
-            window.history.back();
+        window.history.back();  
 
-        } else {
+    } else {  
 
-            if (subject) {
+        if (subject) {  
 
-                window.location.href =
-                    `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
+            window.location.href =  
+                `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;  
 
-            } else {
+        } else {  
 
-                window.location.href =
-                    "index.html";
+            window.location.href =  
+                "index.html";  
 
-            }
+        }  
 
-        }
+    }  
 
-    }
+}
+
 );
-
 
 // =====================================================
 // HOME BUTTON
 // =====================================================
 
 homeBtn.addEventListener(
-    "click",
-    () => {
+"click",
+() => {
 
-        window.location.href =
-            "index.html";
+window.location.href =  
+        "index.html";  
 
-    }
+}
+
 );
