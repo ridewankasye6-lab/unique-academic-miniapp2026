@@ -1,6 +1,5 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
-// STABLE VERSION
 // 5 QUESTIONS PER PAGE
 // =====================================================
 
@@ -9,32 +8,49 @@
 // READ URL PARAMETERS
 // =====================================================
 
-const params = new URLSearchParams(window.location.search);
+const params =
+    new URLSearchParams(window.location.search);
 
-const subject = params.get("subject");
-const chapter = params.get("chapter");
+const subject =
+    params.get("subject");
+
+const chapter =
+    params.get("chapter");
 
 
 // =====================================================
 // HTML ELEMENTS
 // =====================================================
 
-const subjectName = document.getElementById("subjectName");
-const chapterName = document.getElementById("chapterName");
+const subjectName =
+    document.getElementById("subjectName");
 
-const headerTitle = document.getElementById("headerTitle");
-const headerChapter = document.getElementById("headerChapter");
+const chapterName =
+    document.getElementById("chapterName");
 
-const questionNumber = document.getElementById("questionNumber");
+const headerTitle =
+    document.getElementById("headerTitle");
 
-const nextBtn = document.getElementById("nextBtn");
+const headerChapter =
+    document.getElementById("headerChapter");
+
+const questionNumber =
+    document.getElementById("questionNumber");
+
+const nextBtn =
+    document.getElementById("nextBtn");
+
 const previousQuestionBtn =
     document.getElementById("previousQuestionBtn");
 
-const backBtn = document.getElementById("backBtn");
-const homeBtn = document.getElementById("homeBtn");
+const backBtn =
+    document.getElementById("backBtn");
 
-const progressBar = document.getElementById("progressBar");
+const homeBtn =
+    document.getElementById("homeBtn");
+
+const progressBar =
+    document.getElementById("progressBar");
 
 const completionMessage =
     document.getElementById("completionMessage");
@@ -58,22 +74,15 @@ let currentPage = 0;
 
 
 // =====================================================
-// SAFETY CHECK
-// =====================================================
-
-if (!questionsPage) {
-    console.error("questionsPage was not found.");
-}
-
-
-// =====================================================
 // FORMAT SUBJECT NAME
 // =====================================================
 
 function formatSubjectName(value) {
 
     if (!value) {
+
         return "Unknown Subject";
+
     }
 
     return value
@@ -81,6 +90,7 @@ function formatSubjectName(value) {
         .replace(/\b\w/g, letter =>
             letter.toUpperCase()
         );
+
 }
 
 
@@ -97,57 +107,27 @@ const formattedChapter =
         : "Unknown Chapter";
 
 
-if (subjectName) {
-    subjectName.textContent =
-        formattedSubject;
-}
+subjectName.textContent =
+    formattedSubject;
 
+chapterName.textContent =
+    formattedChapter;
 
-if (chapterName) {
-    chapterName.textContent =
-        formattedChapter;
-}
+headerTitle.textContent =
+    formattedSubject;
 
-
-if (headerTitle) {
-    headerTitle.textContent =
-        formattedSubject;
-}
-
-
-if (headerChapter) {
-    headerChapter.textContent =
-        `${formattedChapter} • Quiz`;
-}
+headerChapter.textContent =
+    `${formattedChapter} • Quiz`;
 
 
 // =====================================================
 // LOAD QUESTIONS
 // =====================================================
 
-let questions = [];
-
-
-// quizData must already be loaded by quiz.html
-if (
-    typeof quizData !== "undefined" &&
-    subject &&
-    chapter
-) {
-
-    questions =
-        quizData?.[subject]?.[chapter] || [];
-
-}
-
-
-console.log(
-    "Quiz loaded:",
-    subject,
-    chapter,
-    questions.length,
-    "questions"
-);
+const questions =
+    typeof quizData !== "undefined"
+        ? quizData?.[subject]?.[chapter] || []
+        : [];
 
 
 // =====================================================
@@ -156,49 +136,27 @@ console.log(
 
 if (questions.length === 0) {
 
-    if (questionsPage) {
+    questionsPage.innerHTML = `
+        <section class="questionCard">
 
-        questionsPage.innerHTML = `
-            <section class="questionCard">
+            <h2 class="questionText">
+                No questions found for this chapter.
+            </h2>
 
-                <h2 class="questionText">
-                    No questions found for this chapter.
-                </h2>
+        </section>
+    `;
 
-                <p>
-                    Subject: ${formattedSubject}
-                    <br>
-                    Chapter: ${formattedChapter}
-                </p>
+    questionNumber.textContent =
+        "Question 0 / 0";
 
-            </section>
-        `;
+    previousQuestionBtn.style.display =
+        "none";
 
-    }
+    nextBtn.style.display =
+        "none";
 
-
-    if (questionNumber) {
-        questionNumber.textContent =
-            "Question 0 / 0";
-    }
-
-
-    if (previousQuestionBtn) {
-        previousQuestionBtn.style.display =
-            "none";
-    }
-
-
-    if (nextBtn) {
-        nextBtn.style.display =
-            "none";
-    }
-
-
-    if (progressBar) {
-        progressBar.style.width =
-            "0%";
-    }
+    progressBar.style.width =
+        "0%";
 
 } else {
 
@@ -213,10 +171,7 @@ if (questions.length === 0) {
 
 function getEnglishExplanation(q) {
 
-    if (
-        q &&
-        typeof q.englishExplanation === "string"
-    ) {
+    if (q.englishExplanation) {
 
         return q.englishExplanation;
 
@@ -224,9 +179,8 @@ function getEnglishExplanation(q) {
 
 
     if (
-        q &&
         q.explanation &&
-        typeof q.explanation.english === "string"
+        q.explanation.english
     ) {
 
         return q.explanation.english;
@@ -235,6 +189,7 @@ function getEnglishExplanation(q) {
 
 
     return "";
+
 }
 
 
@@ -244,10 +199,7 @@ function getEnglishExplanation(q) {
 
 function getAmharicExplanation(q) {
 
-    if (
-        q &&
-        typeof q.amharicExplanation === "string"
-    ) {
+    if (q.amharicExplanation) {
 
         return q.amharicExplanation;
 
@@ -255,9 +207,8 @@ function getAmharicExplanation(q) {
 
 
     if (
-        q &&
         q.explanation &&
-        typeof q.explanation.amharic === "string"
+        q.explanation.amharic
     ) {
 
         return q.explanation.amharic;
@@ -266,19 +217,15 @@ function getAmharicExplanation(q) {
 
 
     return "";
+
 }
 
 
 // =====================================================
-// LOAD PAGE
+// LOAD 5 QUESTIONS
 // =====================================================
 
 function loadPage() {
-
-    if (!questionsPage) {
-        return;
-    }
-
 
     questionsPage.innerHTML = "";
 
@@ -295,7 +242,7 @@ function loadPage() {
 
 
     // ---------------------------------------------
-    // CREATE QUESTIONS
+    // Create each question
     // ---------------------------------------------
 
     for (
@@ -313,38 +260,37 @@ function loadPage() {
 
 
     // ---------------------------------------------
-    // QUESTION COUNTER
+    // Update question counter
     // ---------------------------------------------
 
-    if (questionNumber) {
-
-        questionNumber.textContent =
-            `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
-
-    }
+    questionNumber.textContent =
+        `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
 
 
     // ---------------------------------------------
-    // NAVIGATION
+    // Update navigation
     // ---------------------------------------------
 
     updateNavigation();
 
 
     // ---------------------------------------------
-    // PROGRESS
+    // Update progress
     // ---------------------------------------------
 
     updateProgress();
 
 
     // ---------------------------------------------
-    // SCROLL
+    // Scroll to top
     // ---------------------------------------------
 
     window.scrollTo({
+
         top: 0,
+
         behavior: "smooth"
+
     });
 
 }
@@ -356,19 +302,25 @@ function loadPage() {
 
 function createQuestionCard(q, index) {
 
+    // ---------------------------------------------
+    // Main question card
+    // ---------------------------------------------
+
     const questionCard =
         document.createElement("section");
+
 
     questionCard.className =
         "questionCard";
 
 
     // ---------------------------------------------
-    // QUESTION LABEL
+    // Question label
     // ---------------------------------------------
 
     const questionLabel =
         document.createElement("div");
+
 
     questionLabel.className =
         "questionLabel";
@@ -376,6 +328,7 @@ function createQuestionCard(q, index) {
 
     const questionBadge =
         document.createElement("span");
+
 
     questionBadge.className =
         "questionBadge";
@@ -391,11 +344,12 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // QUESTION TEXT
+    // Question text
     // ---------------------------------------------
 
     const questionText =
         document.createElement("h2");
+
 
     questionText.className =
         "questionText";
@@ -406,11 +360,12 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // OPTIONS
+    // Options
     // ---------------------------------------------
 
     const options =
         document.createElement("div");
+
 
     options.className =
         "options";
@@ -428,11 +383,14 @@ function createQuestionCard(q, index) {
             const button =
                 document.createElement("button");
 
+
             button.type =
                 "button";
 
+
             button.className =
                 "optionBtn";
+
 
             button.textContent =
                 option;
@@ -464,11 +422,12 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // EXPLANATION BOX
+    // Explanation
     // ---------------------------------------------
 
     const explanationBox =
         document.createElement("section");
+
 
     explanationBox.className =
         "explanationCard";
@@ -478,12 +437,9 @@ function createQuestionCard(q, index) {
         "none";
 
 
-    // ---------------------------------------------
-    // ENGLISH
-    // ---------------------------------------------
-
     const englishSection =
         document.createElement("div");
+
 
     englishSection.className =
         "explanationSection";
@@ -492,12 +448,14 @@ function createQuestionCard(q, index) {
     const englishTitle =
         document.createElement("h3");
 
+
     englishTitle.textContent =
         "📖 English Explanation";
 
 
     const englishExplanation =
         document.createElement("p");
+
 
     englishExplanation.textContent =
         "";
@@ -507,28 +465,23 @@ function createQuestionCard(q, index) {
         englishTitle
     );
 
+
     englishSection.appendChild(
         englishExplanation
     );
 
 
-    // ---------------------------------------------
-    // DIVIDER
-    // ---------------------------------------------
-
     const divider =
         document.createElement("div");
+
 
     divider.className =
         "explanationDivider";
 
 
-    // ---------------------------------------------
-    // AMHARIC
-    // ---------------------------------------------
-
     const amharicSection =
         document.createElement("div");
+
 
     amharicSection.className =
         "explanationSection";
@@ -537,12 +490,14 @@ function createQuestionCard(q, index) {
     const amharicTitle =
         document.createElement("h3");
 
+
     amharicTitle.textContent =
         "🇪🇹 የአማርኛ ማብራሪያ";
 
 
     const amharicExplanation =
         document.createElement("p");
+
 
     amharicExplanation.textContent =
         "";
@@ -552,22 +507,21 @@ function createQuestionCard(q, index) {
         amharicTitle
     );
 
+
     amharicSection.appendChild(
         amharicExplanation
     );
 
 
-    // ---------------------------------------------
-    // ADD EXPLANATION PARTS
-    // ---------------------------------------------
-
     explanationBox.appendChild(
         englishSection
     );
 
+
     explanationBox.appendChild(
         divider
     );
+
 
     explanationBox.appendChild(
         amharicSection
@@ -575,20 +529,23 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // ADD EVERYTHING TO CARD
+    // Add everything to card
     // ---------------------------------------------
 
     questionCard.appendChild(
         questionLabel
     );
 
+
     questionCard.appendChild(
         questionText
     );
 
+
     questionCard.appendChild(
         options
     );
+
 
     questionCard.appendChild(
         explanationBox
@@ -596,7 +553,7 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // ADD CARD TO PAGE
+    // Add card to page
     // ---------------------------------------------
 
     questionsPage.appendChild(
@@ -626,11 +583,11 @@ function checkAnswer(
 
 
     const correctAnswer =
-        Number(q.answer);
+        q.answer;
 
 
     // ---------------------------------------------
-    // DISABLE OPTIONS
+    // Disable all options
     // ---------------------------------------------
 
     buttons.forEach(
@@ -669,19 +626,23 @@ function checkAnswer(
 
 
     // ---------------------------------------------
-    // EXPLANATIONS
+    // Show English explanation
     // ---------------------------------------------
 
     englishExplanation.textContent =
         getEnglishExplanation(q);
 
 
+    // ---------------------------------------------
+    // Show Amharic explanation
+    // ---------------------------------------------
+
     amharicExplanation.textContent =
         getAmharicExplanation(q);
 
 
     // ---------------------------------------------
-    // SHOW EXPLANATION
+    // Show explanation box
     // ---------------------------------------------
 
     explanationBox.style.display =
@@ -696,11 +657,13 @@ function checkAnswer(
 
 function updateProgress() {
 
-    if (
-        !progressBar ||
-        questions.length === 0
-    ) {
+    if (questions.length === 0) {
+
+        progressBar.style.width =
+            "0%";
+
         return;
+
     }
 
 
@@ -732,13 +695,8 @@ function updateProgress() {
 
 function updateNavigation() {
 
-    if (!nextBtn || !previousQuestionBtn) {
-        return;
-    }
-
-
     // ---------------------------------------------
-    // PREVIOUS
+    // Previous
     // ---------------------------------------------
 
     previousQuestionBtn.disabled =
@@ -746,7 +704,7 @@ function updateNavigation() {
 
 
     // ---------------------------------------------
-    // TOTAL PAGES
+    // Check if this is the final page
     // ---------------------------------------------
 
     const totalPages =
@@ -756,26 +714,24 @@ function updateNavigation() {
         );
 
 
-    // ---------------------------------------------
-    // LAST PAGE
-    // ---------------------------------------------
-
     if (
         currentPage ===
         totalPages - 1
     ) {
 
-        nextBtn.innerHTML = `
+        nextBtn.innerHTML =
+            `
             <span>Finish Quiz</span>
             <span class="navArrow">✓</span>
-        `;
+            `;
 
     } else {
 
-        nextBtn.innerHTML = `
+        nextBtn.innerHTML =
+            `
             <span>Next</span>
             <span class="navArrow">→</span>
-        `;
+            `;
 
     }
 
@@ -786,64 +742,56 @@ function updateNavigation() {
 // NEXT PAGE
 // =====================================================
 
-if (nextBtn) {
+nextBtn.addEventListener(
+    "click",
+    () => {
 
-    nextBtn.addEventListener(
-        "click",
-        () => {
-
-            const totalPages =
-                Math.ceil(
-                    questions.length /
-                    QUESTIONS_PER_PAGE
-                );
+        const totalPages =
+            Math.ceil(
+                questions.length /
+                QUESTIONS_PER_PAGE
+            );
 
 
-            if (
-                currentPage <
-                totalPages - 1
-            ) {
+        if (
+            currentPage <
+            totalPages - 1
+        ) {
 
-                currentPage++;
+            currentPage++;
 
-                loadPage();
+            loadPage();
 
-            } else {
+        } else {
 
-                finishQuiz();
-
-            }
+            finishQuiz();
 
         }
-    );
 
-}
+    }
+);
 
 
 // =====================================================
 // PREVIOUS PAGE
 // =====================================================
 
-if (previousQuestionBtn) {
+previousQuestionBtn.addEventListener(
+    "click",
+    () => {
 
-    previousQuestionBtn.addEventListener(
-        "click",
-        () => {
+        if (
+            currentPage > 0
+        ) {
 
-            if (
-                currentPage > 0
-            ) {
+            currentPage--;
 
-                currentPage--;
-
-                loadPage();
-
-            }
+            loadPage();
 
         }
-    );
 
-}
+    }
+);
 
 
 // =====================================================
@@ -852,64 +800,41 @@ if (previousQuestionBtn) {
 
 function finishQuiz() {
 
-    if (questionNumber) {
-
-        questionNumber.textContent =
-            `Questions ${questions.length} / ${questions.length}`;
-
-    }
+    questionNumber.textContent =
+        `Questions ${questions.length} / ${questions.length}`;
 
 
-    if (progressBar) {
-
-        progressBar.style.width =
-            "100%";
-
-    }
+    progressBar.style.width =
+        "100%";
 
 
-    if (questionsPage) {
-
-        questionsPage.innerHTML =
-            "";
-
-    }
+    questionsPage.innerHTML =
+        "";
 
 
-    if (previousQuestionBtn) {
-
-        previousQuestionBtn.style.display =
-            "none";
-
-    }
+    previousQuestionBtn.style.display =
+        "none";
 
 
-    if (nextBtn) {
-
-        nextBtn.disabled =
-            true;
+    nextBtn.disabled =
+        true;
 
 
-        nextBtn.innerHTML = `
-            <span>Completed</span>
-            <span class="navArrow">✓</span>
+    nextBtn.innerHTML =
+        `
+        <span>Completed</span>
+        <span class="navArrow">✓</span>
         `;
 
-    }
+
+    completionMessage.hidden =
+        false;
 
 
-    if (completionMessage) {
-
-        completionMessage.hidden =
-            false;
-
-
-        completionMessage.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-        });
-
-    }
+    completionMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
 
 }
 
@@ -918,54 +843,46 @@ function finishQuiz() {
 // TOP BACK BUTTON
 // =====================================================
 
-if (backBtn) {
+backBtn.addEventListener(
+    "click",
+    () => {
 
-    backBtn.addEventListener(
-        "click",
-        () => {
+        if (
+            window.history.length > 1
+        ) {
 
-            if (
-                window.history.length > 1
-            ) {
+            window.history.back();
 
-                window.history.back();
+        } else {
+
+            if (subject) {
+
+                window.location.href =
+                    `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
 
             } else {
 
-                if (subject) {
-
-                    window.location.href =
-                        `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
-
-                } else {
-
-                    window.location.href =
-                        "index.html";
-
-                }
+                window.location.href =
+                    "index.html";
 
             }
 
         }
-    );
 
-}
+    }
+);
 
 
 // =====================================================
 // HOME BUTTON
 // =====================================================
 
-if (homeBtn) {
+homeBtn.addEventListener(
+    "click",
+    () => {
 
-    homeBtn.addEventListener(
-        "click",
-        () => {
+        window.location.href =
+            "index.html";
 
-            window.location.href =
-                "index.html";
-
-        }
-    );
-
-}
+    }
+);
