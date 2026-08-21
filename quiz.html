@@ -217,122 +217,368 @@
 </footer>
 
 </div>  <!-- =====================================  
-     ACCESS GUARD + QUIZ DATA LOADING  
-===================================== -->  <script type="module">  
-  
-    document.addEventListener(  
-        "uniqueAcademicAccessGranted",  
-        () => {  
-  
-            /*  
-             * STEP 1  
-             * Load the original quiz data.  
-             *  
-             * IMPORTANT:  
-             * quizData.js is NOT modified.  
-             */  
-  
-            const dataScript =  
-                document.createElement("script");  
-  
-            dataScript.src =  
-                "quizData.js";  
-  
-            dataScript.onload = () => {  
-  
-                /*  
-                 * STEP 2  
-                 * Load additional quiz data.  
-                 *  
-                 * This file adds new chapters  
-                 * without modifying quizData.js.  
-                 */  
-  
-                const additionalDataScript =  
-                    document.createElement("script");  
-  
-                additionalDataScript.src =  
-                    "additionalQuizData.js";  
-  
-                additionalDataScript.onload = () => {  
-  
-                    /*  
-                     * STEP 3  
-                     * Only after BOTH data files are  
-                     * successfully loaded, start quiz.js.  
-                     */  
-  
-                    const quizScript =  
-                        document.createElement("script");  
-  
-                    quizScript.src =  
-                        "quiz.js";  
-  
-                    quizScript.onerror = () => {  
-  
-                        console.error(  
-                            "Could not load quiz.js"  
-                        );  
-  
-                    };  
-  
-                    document.body.appendChild(  
-                        quizScript  
-                    );  
-  
-                };  
-  
-  
-                additionalDataScript.onerror = () => {  
-  
-                    /*  
-                     * If the additional file is missing,  
-                     * keep the original quiz system working.  
-                     */  
-  
-                    console.error(  
-                        "Could not load additionalQuizData.js"  
-                    );  
-  
-                    const quizScript =  
-                        document.createElement("script");  
-  
-                    quizScript.src =  
-                        "quiz.js";  
-  
-                    document.body.appendChild(  
-                        quizScript  
-                    );  
-  
-                };  
-  
-  
-                document.body.appendChild(  
-                    additionalDataScript  
-                );  
-  
-            };  
-  
-  
-            dataScript.onerror = () => {  
-  
-                console.error(  
-                    "Could not load quizData.js"  
-                );  
-  
-            };  
-  
-  
-            document.body.appendChild(  
-                dataScript  
-            );  
-  
-        }  
-    );  
-  
-</script>  <!-- =====================================  
-     FIREBASE ACCESS CHECK  
-===================================== -->  <script  
-    type="module"  
-    src="access-guard.js"  
-></script>  </body>  </html>
+     
+<script type="module">
+
+document.addEventListener(
+    "uniqueAcademicAccessGranted",
+    function () {
+
+        console.log(
+            "Unique Academic access granted."
+        );
+
+        // =====================================================
+        // PREVENT QUIZ ENGINE FROM STARTING MORE THAN ONCE
+        // =====================================================
+
+        if (
+            window.uniqueAcademicQuizStarted
+        ) {
+
+            console.log(
+                "Quiz system already started."
+            );
+
+            return;
+
+        }
+
+        window.uniqueAcademicQuizStarted =
+            true;
+
+
+        // =====================================================
+        // LOAD A SCRIPT AND WAIT FOR IT TO FINISH
+        // =====================================================
+
+        function loadScript(
+            src,
+            required = true
+        ) {
+
+            return new Promise(
+                function (resolve, reject) {
+
+                    const script =
+                        document.createElement(
+                            "script"
+                        );
+
+                    script.src =
+                        src;
+
+                    script.async =
+                        false;
+
+                    script.onload =
+                        function () {
+
+                            console.log(
+                                src +
+                                " loaded successfully."
+                            );
+
+                            resolve();
+
+                        };
+
+                    script.onerror =
+                        function () {
+
+                            console.error(
+                                "ERROR loading " +
+                                src
+                            );
+
+                            if (
+                                required
+                            ) {
+
+                                reject(
+                                    new Error(
+                                        "Could not load " +
+                                        src
+                                    )
+                                );
+
+                            } else {
+
+                                resolve();
+
+                            }
+
+                        };
+
+                    document.body.appendChild(
+                        script
+                    );
+
+                }
+            );
+
+        }
+
+
+        // =====================================================
+        // START QUIZ
+        // =====================================================
+
+        async function startQuiz() {
+
+            try {
+
+                // ---------------------------------------------
+                // STEP 1
+                // LOAD ORIGINAL QUIZ DATA
+                // ---------------------------------------------
+
+                await loadScript(
+                    "quizData.js",
+                    true
+                );
+
+
+                // ---------------------------------------------
+                // VERIFY quizData EXISTS
+                // ---------------------------------------------
+
+                if (
+                    typeof window.quizData ===
+                    "undefined" &&
+                    typeof quizData ===
+                    "undefined"
+                ) {
+
+                    throw new Error(
+                        "quizData is not defined after loading quizData.js."
+                    );
+
+                }
+
+
+                console.log(
+                    "Original quizData is available."
+                );
+
+
+                // ---------------------------------------------
+                // STEP 2
+                // LOAD ADDITIONAL QUIZ DATA
+                // ---------------------------------------------
+
+                await loadScript(
+                    "additionalQuizData.js",
+                    false
+                );
+
+
+                // ---------------------------------------------
+                // VERIFY DATA AFTER BOTH FILES
+                // ---------------------------------------------
+
+                const finalQuizData =
+                    typeof window.quizData !==
+                    "undefined"
+                        ? window.quizData
+                        : (
+                            typeof quizData !==
+                            "undefined"
+                                ? quizData
+                                : null
+                        );
+
+
+                if (
+                    !finalQuizData
+                ) {
+
+                    throw new Error(
+                        "quizData is unavailable."
+                    );
+
+                }
+
+
+                console.log(
+                    "Final quizData:",
+                    finalQuizData
+                );
+
+
+                // ---------------------------------------------
+                // STEP 3
+                // CHECK CURRENT URL
+                // ---------------------------------------------
+
+                const params =
+                    new URLSearchParams(
+                        window.location.search
+                    );
+
+
+                const subject =
+                    params.get(
+                        "subject"
+                    );
+
+
+                const chapter =
+                    params.get(
+                        "chapter"
+                    );
+
+
+                console.log(
+                    "Quiz subject:",
+                    subject
+                );
+
+
+                console.log(
+                    "Quiz chapter:",
+                    chapter
+                );
+
+
+                // ---------------------------------------------
+                // STEP 4
+                // CHECK THAT THE REQUESTED QUIZ EXISTS
+                // ---------------------------------------------
+
+                if (
+                    !subject ||
+                    !chapter
+                ) {
+
+                    console.error(
+                        "Missing subject or chapter in quiz URL."
+                    );
+
+                    return;
+
+                }
+
+
+                const subjectData =
+                    finalQuizData[
+                        subject
+                    ];
+
+
+                if (
+                    !subjectData
+                ) {
+
+                    console.error(
+                        "Subject not found in quizData:",
+                        subject
+                    );
+
+                    console.log(
+                        "Available subjects:",
+                        Object.keys(
+                            finalQuizData
+                        )
+                    );
+
+                    return;
+
+                }
+
+
+                const chapterData =
+                    subjectData[
+                        chapter
+                    ];
+
+
+                if (
+                    !Array.isArray(
+                        chapterData
+                    ) ||
+                    chapterData.length === 0
+                ) {
+
+                    console.error(
+                        "No questions found for:",
+                        subject,
+                        "chapter:",
+                        chapter
+                    );
+
+                    console.log(
+                        "Available chapters for " +
+                        subject +
+                        ":",
+                        Object.keys(
+                            subjectData
+                        )
+                    );
+
+                    return;
+
+                }
+
+
+                console.log(
+                    "Questions found:",
+                    chapterData.length
+                );
+
+
+                // ---------------------------------------------
+                // STEP 5
+                // LOAD QUIZ ENGINE LAST
+                // ---------------------------------------------
+
+                await loadScript(
+                    "quiz.js",
+                    true
+                );
+
+
+                console.log(
+                    "quiz.js loaded successfully."
+                );
+
+
+                // ---------------------------------------------
+                // FINAL CHECK
+                // ---------------------------------------------
+
+                console.log(
+                    "Quiz started successfully:",
+                    subject,
+                    "Chapter",
+                    chapter,
+                    chapterData.length,
+                    "questions"
+                );
+
+            }
+
+            catch (
+                error
+            ) {
+
+                console.error(
+                    "QUIZ START ERROR:",
+                    error
+                );
+
+            }
+
+        }
+
+
+        // =====================================================
+        // START
+        // =====================================================
+
+        startQuiz();
+
+    }
+);
+
+</script>
