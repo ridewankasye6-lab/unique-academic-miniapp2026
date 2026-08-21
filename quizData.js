@@ -1,4 +1,13 @@
 const quizData = {
+    "global-trends": {
+
+    1: [],
+    2: [],
+    3: [],
+    4: [],
+    5: []
+
+},
     "economics": {
         1: [{
             question:
