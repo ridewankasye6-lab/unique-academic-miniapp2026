@@ -30,12 +30,122 @@ quizData["global-trends"]["4"] = [
 
 ];
 
-quizData["global-trends"]["5"] = [
+quizData["global-trends"]["5"] = [{
+    question: "In the 21st century, the shift from \"International Relations\" to \"Global Relations\" is primarily characterized by:",
+    options: [
+        "The increasing isolation of nation-states from digital platforms",
+        "Issues and actors that transcend national borders",
+        "A return to state-centric politics dominated by only two superpowers",
+        "The slowing of transportation and global communication networks"
+    ],
+    answer: 1,
+    englishExplanation: "Global relations focus on issues and actors that cross national borders, such as climate change, terrorism, pandemics, migration, and digital communication. This goes beyond the traditional focus on relationships between governments.",
+    amharicExplanation: "የግሎባል ግንኙነት ትኩረቱን በመንግስታት መካከል ብቻ ካለው ግንኙነት አልፎ ድንበር ተሻጋሪ በሆኑ ጉዳዮችና ተዋናዮች ላይ ያደርጋል። ለምሳሌ የአየር ንብረት ለውጥ፣ ሽብርተኝነት፣ ወረርሽኝ፣ ስደት እና ዲጂታል ቴክኖሎጂ ድንበርን የሚያልፉ ጉዳዮች ናቸው።"
+},
 
-    // Global Trends Chapter 5 questions
+{
+    question: "According to the criteria for identifying a global issue, the term \"Salience\" refers to:",
+    options: [
+        "The geographic location of the issue relative to major powers",
+        "The immediate and serious nature of the issue for low-lying states",
+        "The visibility of an issue in media, public debate, and international institutions",
+        "The extent to which local civil war spills over into neighboring countries"
+    ],
+    answer: 2,
+    englishExplanation: "Salience refers to how visible and important an issue is in public discussion, the media, and international institutions. A highly salient issue receives significant attention from people and decision-makers.",
+    amharicExplanation: "ሳልየንስ (Salience) ማለት አንድ ጉዳይ በሚዲያ፣ በህዝብ ውይይት እና በዓለም አቀፍ ተቋማት ውስጥ ምን ያህል ትኩረትና ታዋቂነት እንዳገኘ ማለት ነው። ጉዳዩ ብዙ ትኩረት ካገኘ ከፍተኛ ሳልየንስ አለው ማለት ነው።"
+},
 
+{
+    question: "In the post-Cold War era, the \"agenda of world politics\" has transformed from an East-West ideological rivalry toward a focus on:",
+    options: [
+        "Military alliances like the Warsaw Pact",
+        "The spread of Marxism-Leninism as the primary global concern",
+        "Nuclear war between the United States and the Soviet Union",
+        "Global inequality, terrorism, and environmental problems"
+    ],
+    answer: 3,
+    englishExplanation: "After the Cold War ended, world politics became less focused on the ideological rivalry between the United States and Soviet Union. Greater attention was given to global inequality, terrorism, environmental problems, human rights, and other transnational issues.",
+    amharicExplanation: "የቀዝቃዛው ጦርነት ካበቃ በኋላ የዓለም ፖለቲካ ትኩረት ከአሜሪካና ከሶቪየት ህብረት የርዕዮተ-ዓለም ፉክክር ወደ ዓለም አቀፍ አለመመጣጠን፣ ሽብርተኝነት፣ የአካባቢ ችግሮች፣ የሰብዓዊ መብቶች እና ሌሎች ድንበር ተሻጋሪ ጉዳዮች ተሸጋግሯል።"
+},
 
-];
+{
+    question: "Which type of terrorist organization justifies its use of violence as being \"divinely approved\" and aimed at targets seen as enemies of their faith?",
+    options: [
+        "Nationalist terrorists",
+        "Religious terrorists",
+        "Left-wing terrorists",
+        "Ethno-nationalist terrorists"
+    ],
+    answer: 1,
+    englishExplanation: "Religious terrorists justify violence by claiming that their actions are supported or commanded by a divine authority. They may identify people or groups they consider enemies of their religious beliefs as targets.",
+    amharicExplanation: "ሃይማኖታዊ ሽብርተኞች የሚፈጽሙትን የጥቃት ድርጊት በመለኮታዊ ትእዛዝ ወይም ድጋፍ የተፈቀደ ነው ብለው ሊያምኑ ይችላሉ። በእምነታቸው ጠላቶች እንደሆኑ የሚያስቧቸውን ሰዎች ወይም ቡድኖች ሊያነጣጥሩ ይችላሉ።"
+},
+
+{
+    question: "Following the Cold War, some states sought to develop nuclear weapons because they lost the protection of a superpower's \"nuclear umbrella.\" This specific reason for proliferation is known as:",
+    options: [
+        "Regional instability",
+        "Economic profit",
+        "Loss of extended deterrence",
+        "Horizontal proliferation"
+    ],
+    answer: 2,
+    englishExplanation: "Loss of extended deterrence occurs when a state can no longer rely on a powerful ally to protect it, including through the ally's nuclear capabilities. This loss of protection can increase the state's desire to develop its own nuclear weapons.",
+    amharicExplanation: "የተራዘመ መከላከያ (Extended deterrence) ማለት አንድ ኃያል አገር ለአጋር አገር የምትሰጠው የደህንነት ጥበቃ ዋስትና ነው። ይህ ዋስትና ሲጠፋ አገሪቱ የራሷን የኑክሌር መሳሪያ ለማዳበር ፍላጎት ልታሳድር ትችላለች።"
+},
+
+{
+    question: "Why are environmental issues like global warming described as \"trans-boundary\" in nature?",
+    options: [
+        "Because they only affect the country where the pollution originated",
+        "Because national policies alone are sufficient to solve them",
+        "Because pollution does not respect borders and impacts countries regardless of the source",
+        "Because they are limited to specific regions like low-lying island states"
+    ],
+    answer: 2,
+    englishExplanation: "Environmental problems are trans-boundary because pollution and their effects can cross national borders. Emissions produced in one country can contribute to environmental problems that affect people and countries elsewhere.",
+    amharicExplanation: "የአካባቢ ችግሮች ድንበር ተሻጋሪ የሚባሉት ብክለትና ተፅዕኖዎቻቸው የአገር ድንበርን ስለሚያልፉ ነው። በአንድ አገር የሚመነጨው ብክለት በሌሎች አገሮች ላይም ተፅዕኖ ሊያሳድር ይችላል።"
+},
+
+{
+    question: "Under the Kyoto Protocol, some developed countries appeared to meet their emission targets by moving pollution-intensive factories to developing nations. This practice is called:",
+    options: [
+        "Indigenization",
+        "Off-shoring",
+        "Cultural Imperialism",
+        "Protectionism"
+    ],
+    answer: 1,
+    englishExplanation: "Off-shoring means moving production or factories to another country, often to reduce costs or avoid certain domestic regulations. In this context, pollution-intensive production was moved to developing countries, making domestic emissions appear lower.",
+    amharicExplanation: "ኦፍ-ሾሪንግ (Off-shoring) ማለት ምርትን ወይም ፋብሪካን ወደ ሌላ አገር ማዛወር ማለት ነው። በዚህ ሁኔታ ብዙ ብክለት የሚያስከትሉ ፋብሪካዎች ወደ ታዳጊ አገሮች በመዛወራቸው የዳበሩ አገሮች የውስጥ ልቀታቸው ዝቅተኛ እንደሆነ ሊታይ ይችላል።"
+},
+
+{
+    question: "Persistent and extreme global inequality is considered dangerous to the international system because it:",
+    options: [
+        "Encourages the poor to participate more in political institutions",
+        "Increases the efficiency of the global economy",
+        "Weakens the belief in equal opportunity and undermines the legitimacy of political institutions",
+        "Leads to the immediate redistribution of wealth from billionaires to the 99%"
+    ],
+    answer: 2,
+    englishExplanation: "Extreme global inequality can weaken people's belief that society provides fair opportunities. It can reduce trust in political institutions and create social and political instability.",
+    amharicExplanation: "ከፍተኛና ቀጣይነት ያለው ዓለም አቀፍ አለመመጣጠን ሰዎች እኩል የዕድል እድል እንዳላቸው ያላቸውን እምነት ሊያዳክም ይችላል። በዚህም በፖለቲካ ተቋማት ላይ ያለው እምነትና ተቀባይነት ሊቀንስ እና ማህበራዊና ፖለቲካዊ አለመረጋጋት ሊፈጠር ይችላል።"
+},
+
+{
+    question: "According to Samuel P. Huntington's \"Clash of Civilizations\" thesis, future global conflicts will be driven primarily by:",
+    options: [
+        "Economic competition over scarce natural resources",
+        "Ideological battles between capitalism and socialism",
+        "Cultural differences and attachments to specific civilizations",
+        "The failure of the United Nations to regulate state borders"
+    ],
+    answer: 2,
+    englishExplanation: "Huntington argued that future international conflicts would increasingly occur along cultural and civilizational divisions. In his view, differences in culture, religion, and civilizational identity could become major sources of conflict.",
+    amharicExplanation: "ሃንቲንግተን እንደሚለው የወደፊት ዓለም አቀፍ ግጭቶች በባህልና በሥልጣኔ ልዩነቶች መካከል በሚኖሩ ክፍተቶች ላይ ሊመሰረቱ ይችላሉ። በተለይም የባህል፣ የሃይማኖት እና የሥልጣኔ ማንነት ልዩነቶች ዋና የግጭት ምንጮች ሊሆኑ ይችላሉ።"
+},];
 
 
 // =====================================================
