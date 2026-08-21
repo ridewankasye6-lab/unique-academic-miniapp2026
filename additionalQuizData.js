@@ -6,8 +6,557 @@
 // GLOBAL TRENDS — CHAPTERS 1–5
 // =====================================================
 
-quizData["global-trends"]["1"] = [
-  ];
+quizData["global-trends"]["1"] = [  {
+    "question": "1. IR is more concentrated on domestic relations.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "International Relations (IR) focuses on cross-border interactions and relationships between states and global actors, rather than purely domestic relations.",
+    "amharicExplanation": "📚 IR ሙሉ ትኩረቱ ሀገር ውስጥ ስላለ ግንኙነት (domestic relationship) ሳይሆን ድንበር ተሻጋሪ (Across border) በሆነ ግንኙነት ነው።"
+  },
+  {
+    "question": "2. Comparatively, multipolar world orders are most susceptible to instability and war.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Multipolar world orders are generally more susceptible to instability and war because multiple powerful states compete for influence and miscalculations are common.",
+    "amharicExplanation": "📚 Multipolar world በ IR የተለያዩ እኩል ስልጣን ያላቸው ኃይሎች መፈጠር ነው። ብዙ ኃይሎች መኖራቸው የሀሳብ አለመስማማትን ያመጣል፣ ይህም ወደ ግጭት ሊያመራ ይችላል።"
+  },
+  {
+    "question": "3. As IR is connected with many global issues and its scope is wide, one can conclude that it is holistic.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Although IR covers many global issues, it is not completely holistic because it does not encompass every domestic aspect of human society.",
+    "amharicExplanation": "📚 IR ምንም እንኳን ሰፊ ቢሆንም Holistic አይደለም። Holistic የሚባለው global እና local ሁለቱንም ያካትታል።"
+  },
+  {
+    "question": "4. Terrorists can be actors of IR.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Terrorist groups can influence international politics, security, and diplomacy, making them significant non-state actors in IR.",
+    "amharicExplanation": "📚 አሸባሪዎች በዓለም አቀፍ ግንኙነቶች ውስጥ ተፅዕኖ ስለሚፈጥሩ Actors ሊሆኑ ይችላሉ።"
+  },
+  {
+    "question": "5. For Marxists, the international system is characterized by anarchy and class contradiction.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Marxists primarily view the international system through the lens of economic inequality, capitalism, and class contradiction rather than general state-centric anarchy.",
+    "amharicExplanation": "📚 Marxists ዓለምን በClass መከፋፈል ያያሉ። ዋናው ትኩረታቸው በClass contradiction ላይ ነው።"
+  },
+  {
+    "question": "6. For realist thinkers of international relations, states' behavior is driven by moral values.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Realists argue that states' behavior is driven by national interest, survival, and power, rather than moral values.",
+    "amharicExplanation": "📚 Realists ሀገራት በሞራል ሳይሆን በራሳቸው ጥቅም (National Interest) እንደሚመሩ ያምናሉ።"
+  },
+  {
+    "question": "7. Realists hold the position that the state, in its relation with another state, is definitely subject to the calculations of morality.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Realists reject the idea that international relations are governed by morality, emphasizing power politics and national interest instead.",
+    "amharicExplanation": "📚 Realists ሀገራት በNational Interest እንጂ በMorality አይመሩም።"
+  },
+  {
+    "question": "8. Conventional IR was not concerned with any potential distinctions between different levels of analysis or theoretical perspectives.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Traditional and conventional IR focused mainly on state-centric approaches without deeply analyzing distinct levels of analysis initially.",
+    "amharicExplanation": "💡 Conventional ማለት Traditional ማለት ነው።"
+  },
+  {
+    "question": "9. The structure of the international system is subject to change with diverse determinants of world politics.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "The international system changes dynamically as world politics, the balance of power, and global determinants shift over time.",
+    "amharicExplanation": "📚 በዓለም ፖለቲካ ለውጦች ምክንያት የዓለም አቀፍ ስርዓት መዋቅር ሊለወጥ ይችላል።"
+  },
+  {
+    "question": "10. Bi-polar system is also known by the presence of two cooperative powerful states in the system.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "A bipolar system is characterized by two competing (contending) superpowers, not necessarily cooperative ones.",
+    "amharicExplanation": "📚 Bipolar System በህብረት የሚሰሩ (cooperative) ሳይሆን ተፎካካሪ (contending) የሆኑ ሁለት ልዕለ ኃያላን የሚመሩት ስርዓት ነው።"
+  },
+  {
+    "question": "11. Realists maintain optimistic view of international relations.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Realists have a pessimistic view because they believe constant competition for power and security makes conflict hard to eliminate.",
+    "amharicExplanation": "📚 Realists ለዓለም አቀፍ ግንኙነቶች optimistic view ሳይሆን pessimistic view አላቸው።"
+  },
+  {
+    "question": "12. Westphalian treaty is one of the turning points for the progress of international relations.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "The Treaty of Westphalia (1648) established the foundation for modern sovereign state systems, marking a major turning point in IR.",
+    "amharicExplanation": "📚 የWestphalia ስምምነት (1648) በIR ታሪክ ውስጥ አንዱ ዋና የመለወጫ ነጥብ ነው።"
+  },
+  {
+    "question": "13. Nowadays, the words nation, state and country are used interchangeably.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Although people often use them interchangeably in casual speech, they carry distinct academic definitions in International Relations.",
+    "amharicExplanation": "📚 nation, state እና country በIR ውስጥ የተለያዩ ትርጉሞች አሏቸው።"
+  },
+  {
+    "question": "14. Participation in international relations or politics is escapable.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Participation is inescapable because no state can isolate itself entirely from global events, trade, and security dynamics.",
+    "amharicExplanation": "📚 ከዓለም አቀፍ ግንኙነት መታቀብ አይቻልም። It is inescapable, not escapable."
+  },
+  {
+    "question": "15. In the Contemporary period, global interactions related to global finance, production, and labor migration are conducted solely via state actors.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Modern global interactions involve various non-state actors alongside states, including multinational corporations and international organizations.",
+    "amharicExplanation": "📚 Contemporary period ውስጥ መንግስታዊ ያልሆኑ ተቋማትና ግለሰቦችም ይሳተፋሉ።"
+  },
+  {
+    "question": "16. The conventional definition of the field IR is state-centric.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Traditional International Relations theory heavily centers around states as the primary subjects of study.",
+    "amharicExplanation": "📚 Traditional IR በዋናነት በሀገራት መካከል ባለው ግንኙነት ላይ ያተኩራል።"
+  },
+  {
+    "question": "17. Anarchic is a vertical authority structure.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "An anarchy lacks a higher central authority, making it a horizontal structure rather than a vertical hierarchy.",
+    "amharicExplanation": "📚 Anarchic system ማለት central authority የሌለበት horizontal structure ነው።"
+  },
+  {
+    "question": "18. All are the variables we consider in applying system level of explanation except:",
+    "options": [
+      "Personal behaviours, preferences and visions",
+      "The location of resources and distribution",
+      "The nature of system poles",
+      "Nature of international system"
+    ],
+    "answer": 0,
+    "englishExplanation": "Personal behaviors, preferences, and visions pertain to individual level analysis, not the macro system level.",
+    "amharicExplanation": "📚 System level of explanation አጠቃላይ የዓለም አቀፍ ስርዓቱን ይመለከታል። Personal behaviours የindividual level ናቸው።"
+  },
+  {
+    "question": "IR can be defined as the study of 'who' gets 'what', 'when' and 'how' in matters external to states. The 'what' of international relations denotes.",
+    "options": ["Actors (states and non-states).", "The time actors pursue goals.", "The instruments actors use to achieve goals.", "All", "None"],
+    "answer": 4,
+    "englishExplanation": "In this political definition, 'what' refers to valued items like security, power, and resources. Since none of the choices match this, the answer is None.",
+    "amharicExplanation": "በዚህ የIR ትርጉም ውስጥ 'what' ማለት ተዋናዮች የሚፈልጉትን እንደ ሀብት፣ ደህንነት፣ እሴት ወይም ስልጣን ያመለክታል። ከተሰጡት አማራጮች ይህን ትርጉም በትክክል የሚወክል ስለሌለ 'None' ትክክለኛው መልስ ነው።"
+  },
+  {
+    "question": "Which level of analysis involves a top-down approach to the study of world politics?",
+    "options": ["Individual (Micro or First Image) Level Analysis", "State (Meso or Second Image) Level Analysis", "System (Macro or Third Image) Level Analysis", "None"],
+    "answer": 2,
+    "englishExplanation": "System-level analysis utilizes a top-down perspective, examining how the overall global structure affects state behavior.",
+    "amharicExplanation": "የስርዓት ደረጃ ትንተና ከላይ ወደ ታች የሚሄድ አካሄድ ይጠቀማል። ከአጠቃላይ የዓለም አቀፍ ስርዓት መዋቅር እና የሃይል ክፍፍል በመነሳት በሀገራት ባህሪ ላይ ያለውን ተፅዕኖ ይመረምራል።"
+  },
+  {
+    "question": "Which one is wrong about international relations as a discipline?",
+    "options": ["Its beginning is as old as human civilization.", "It borrows concepts from other disciplines.", "It is the study of global phenomena.", "It was initiated to reduce the occurrence of war."],
+    "answer": 0,
+    "englishExplanation": "While human interaction dates back to ancient times, IR as a formal academic discipline primarily emerged after World War I.",
+    "amharicExplanation": "ዓለም አቀፍ ግንኙነት እንደ አካዳሚክ የትምህርት መስክ አዲስ ነው። በሰዎች እና በማህበረሰቦች መካከል ግንኙነት ከጥንት ጀምሮ ቢኖርም፣ IR እንደ መደበኛ የአካዳሚክ መስክ በተለይም ከመጀመሪያው የዓለም ጦርነት በኋላ ተመስርቷል።"
+  },
+  {
+    "question": "Vulnerability of zero-sum game politics is a problem of ____.",
+    "options": ["Unipolar", "Bipolar", "Multipolar", "None"],
+    "answer": 1,
+    "englishExplanation": "Bipolar systems are prone to zero-sum dynamics because a gain for one superpower is often perceived as an immediate loss for the other.",
+    "amharicExplanation": "ባይፖላር ስርዓት ሁለት ዋና ሃይሎች ያሉበት ስርዓት ነው። አንዱ ሃይል ጥቅም ሲያገኝ ሌላው እንደ ኪሳራ ሊመለከተው ስለሚችል ከፍተኛ የዜሮ-ሰም ውድድር እና አለመረጋጋት ሊፈጠር ይችላል።"
+  },
+  {
+    "question": "In early IR theories, which one of the following is recognized as the only actor by them?",
+    "options": ["State", "Non-state organizations", "Individuals", "All"],
+    "answer": 0,
+    "englishExplanation": "Early and traditional IR theories were strictly state-centric, treating sovereign states as the sole significant actors.",
+    "amharicExplanation": "ቀደምት እና ባህላዊ የIR ንድፈ ሀሳቦች በሀገራት ላይ ያተኮሩ ነበሩ። ስለዚህ ሉዓላዊ ሀገራትን በዓለም አቀፍ ፖለቲካ ዋና እና ብዙ ጊዜ ብቸኛ አስፈላጊ ተዋናዮች አድርገው ይመለከቱ ነበር።"
+  },
+  {
+    "question": "Which one is wrong about liberalism as a theory of International Relations?",
+    "options": ["It recognizes the presence of various actors in international relations.", "It maintains that human nature can be altruistic, good and reasonable.", "It recognizes that inter-state relations can bring mutual benefits.", "It advocates that the world is marked by an unending struggle for power."],
+    "answer": 3,
+    "englishExplanation": "An unending struggle for power is a core assumption of Realism, not Liberalism, which emphasizes cooperation and mutual gains.",
+    "amharicExplanation": "ሊበራሊዝም ትብብር፣ ዓለም አቀፍ ተቋማት፣ ንግድ እና የጋራ ጥቅም ግጭትን ሊቀንሱ እንደሚችሉ ያምናል። ማለቂያ የሌለው የሃይል ትግል ግን በተለይ ከሪያሊዝም ጋር የተያያዘ ነው።"
+  },
+  {
+    "question": "In liberalist thinking, which one is preferable to bring international peace?",
+    "options": ["Balance of power", "Economic power", "Military might", "Collective security"],
+    "answer": 3,
+    "englishExplanation": "Liberalists favor collective security and international cooperation over pure military balances to secure lasting peace.",
+    "amharicExplanation": "ሊበራሊዝም በሀገራት መካከል ትብብርን ያበረታታል። Collective Security ሀገራት በጋራ ከጥቃት እንዲከላከሉ ስለሚያደርግ ዓለም አቀፍ ሰላምን ለማስጠበቅ የሚመረጥ አካሄድ ነው።"
+  },
+  {
+    "question": "World War I contributed to the emergence of which one of the following international events?",
+    "options": ["The emergence of international relations as a field of study", "The establishment of international financial institutions", "The establishment of the Organization of African Unity", "The making of the Versailles Agreement for the benefit of Germany"],
+    "answer": 0,
+    "englishExplanation": "The devastating scale of World War I prompted scholars to formally study international politics to prevent future wars.",
+    "amharicExplanation": "የመጀመሪያው የዓለም ጦርነት ያስከተለው ከባድ ጉዳት ዓለም አቀፍ ግጭቶችን ለመረዳትና ወደፊት ጦርነትን ለመከላከል አዲስ የትምህርት መስክ እንዲያስፈልግ አደረገ።"
+  },
+  {
+    "question": "All are true about a multi-polar international system except:",
+    "options": ["It may be regulated by the logic of balance of power.", "There is no chance for cooperation among powerful states.", "It is known by the presence of three or more powerful states.", "There might be competition and conflict among powerful states."],
+    "answer": 1,
+    "englishExplanation": "Multipolar systems do allow for alliances and cooperation among powerful states, making the claim that cooperation is impossible false.",
+    "amharicExplanation": "ባለብዙ ዋልታ ስርዓት ውስጥ ውድድር እና ግጭት ሊኖር ቢችልም ሀገራት መተባበርና ጥምረት መፍጠርም ይችላሉ። ስለዚህ 'ትብብር ፈጽሞ ሊኖር አይችልም' የሚለው የተሳሳተ ነው።"
+  },
+  {
+    "question": "Which one of the following is true about the character of the bipolar international system?",
+    "options": ["Comparatively, it is the most insecure international system.", "It is manifested by the existence of two cooperative super states.", "It has nothing to understand why something has happened in international relations.", "It is known by the existence of two contending powerful states."],
+    "answer": 3,
+    "englishExplanation": "A bipolar system is defined by the presence of two dominant, competing superpowers (such as during the Cold War).",
+    "amharicExplanation": "ባይፖላር ዓለም አቀፍ ስርዓት በሁለት ዋና እና ተፎካካሪ ሃያላን ሀገራት መኖር ይገለጻል። የቀዝቃዛው ጦርነት ዘመን የዚህ ጥሩ ምሳሌ ነው።"
+  },
+  {
+    "question": "Which one of the following is wrongly matched?",
+    "options": ["Immanuel Kant --- Idealism/Liberalism", "Marx --- Structuralism", "Hans Morgenthau --- Realism", "None"],
+    "answer": 3,
+    "englishExplanation": "All listed theorists are correctly matched with their respective theoretical traditions, making 'None' the correct choice.",
+    "amharicExplanation": "በጥያቄው የተሰጡት አሳቢዎች ከተጠቀሱት የንድፈ ሀሳብ አቅጣጫዎች ጋር በትክክል ተያይዘዋል። ስለዚህ የተሳሳተ ግጥሚያ የለም።"
+  },
+  {
+    "question": "Which one is valid about the basic assumptions of liberalism theory of international relations?",
+    "options": ["It acknowledges the possibility of reducing conflict, war and aggression.", "It disregards the role of economic interdependence among states to ensure world peace.", "It recognizes the role of power in shaping and reshaping the configuration of world politics.", "It focuses on economic structure as a unit of analysis to understand the international system."],
+    "answer": 0,
+    "englishExplanation": "Liberalism highlights that cooperation, international law, and institutions can significantly mitigate conflict and war.",
+    "amharicExplanation": "ሊበራሊዝም በሀገራት መካከል በሚኖር ትብብር፣ በዓለም አቀፍ ተቋማት፣ በኢኮኖሚ ትስስር እና በጋራ ጥቅም አማካኝነት ግጭትና ጦርነት ሊቀንስ እንደሚችል ያምናል።"
+  },
+  {
+    "question": "Which one of the following is true about the assumption of Marxism theory?",
+    "options": ["International cooperation among capitalists is critical to promote mutual benefit.", "There is mutual benefit in the existing international capitalist system.", "International solidarity of the proletarians is vital to promote common interest.", "Military power is a very crucial instrument to dominate or exploit others."],
+    "answer": 2,
+    "englishExplanation": "Marxism champions cross-border working-class solidarity (proletarian internationalism) to fight capitalist exploitation.",
+    "amharicExplanation": "ማርክሲዝም በካፒታሊስቶች እና በሰራተኞች መካከል ያለውን የክፍል ትግል ያተኩራል። ሰራተኞች በተለያዩ ሀገራት ቢኖሩም የጋራ ጥቅም ስላላቸው ዓለም አቀፍ የሰራተኞች አንድነት አስፈላጊ ነው ይላል።"
+  },
+  {
+    "question": "The end goal of nationalism is to have one's own independent state and nation-building.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Nationalism strongly advocates for self-governance, resulting in the pursuit of an independent state and cohesive nation-building.",
+    "amharicExplanation": "ናሽናሊዝም አንድ ህዝብ የራሱን ጉዳይ በራሱ እንዲመራ የሚደግፍ እሳቤ ነው። ስለዚህ ዋና ግቦቹ አንዱ ነጻ ሀገር መመስረትና ሀገር መገንባት ሊሆን ይችላል።"
+  },
+  {
+    "question": "Nationalists believe in 'self-determination' as the duty of the people to determine their own fate.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Self-determination is considered a fundamental political right of a people, not a compulsory obligation or duty.",
+    "amharicExplanation": "Self-determination ማለት ህዝቦች የፖለቲካ ሁኔታቸውንና የወደፊት እጣቸውን በራሳቸው የመወሰን መብት ማለት ነው፤ የግዴታ ግዴታ አይደለም።"
+  },
+  {
+    "question": "The Congress of Vienna in 1815 respected the identity of Italians and Germans.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "The Congress of Vienna prioritized monarchical restoration and balance of power over the nationalist aspirations of fragmented groups like Italians and Germans.",
+    "amharicExplanation": "የ1815 የቪየና ጉባኤ በዋናነት ንጉሳዊ ስርዓቶችን መመለስ፣ መረጋጋትን ማስጠበቅ እና የሃይል ሚዛንን መፍጠር ላይ አተኩሮ ነበር። የጣሊያን እና የጀርመን ብሔራዊ ማንነት አልተከበረም።"
+  },
+  {
+    "question": "The nation is taken as a soul added to the body of the modern state.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "This metaphor illustrates the modern state as the institutional body and the shared national identity as its soul.",
+    "amharicExplanation": "ይህ መግለጫ ምሳሌያዊ ትርጉም አለው። ዘመናዊ ስቴት እንደ አካል ሲታይ፣ Nation ደግሞ የጋራ ማንነትን እና የአንድነት ስሜትን እንደ ነፍስ ይወክላል።"
+  },
+  {
+    "question": "Since the Westphalia Treaty, international politics has become a matter of relations between states.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "The 1648 Peace of Westphalia institutionalized sovereign territorial states as the foundational building blocks of international politics.",
+    "amharicExplanation": "የ1648ቱ የዌስትፋሊያ ሰላም ስምምነት የዘመናዊ ሉዓላዊ ሀገር-ስቴት ስርዓት እድገት ጋር በተለምዶ ይያያዛል።"
+  },
+  {
+    "question": "Developmental State theory focuses on the role of individuals in the process of structural transformation.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Developmental State theory emphasizes proactive state intervention and institutional direction over individual-centric dynamics.",
+    "amharicExplanation": "የልማታዊ ሀገር (Developmental State) ንድፈ ሀሳብ በግለሰቦች ላይ ሳይሆን በመንግስትና በሀገር ተቋማት ንቁ ሚና ላይ ያተኩራል።"
+  },
+  {
+    "question": "American market-oriented capitalism has less concern for the social welfare system.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Compared to European welfare states, the US market-driven model relies more heavily on private enterprise and has a lighter social welfare framework.",
+    "amharicExplanation": "የአሜሪካ ገበያ-ተኮር የካፒታሊዝም ስርዓት በነጻ ገበያ ላይ ከፍተኛ ትኩረት ይሰጣል። ከብዙ ሌሎች ያደጉ ሀገራት ጋር ሲነጻጸር የመንግስት የማህበራዊ ድጋፍ ስርዓቱ ያነሰ ነው።"
+  },
+  {
+    "question": "Which of the following is not the assumption of idealism theory of international relations?",
+    "options": ["Belief in the regulatory power of international law", "Perceived the possibilities of perpetual peace", "Perceived war as inevitable", "Believe in collective security over balance of power"],
+    "answer": 2,
+    "englishExplanation": "Idealism rejects the fatalistic notion that war is inevitable, maintaining instead that peace can be engineered through law and cooperation.",
+    "amharicExplanation": "ትክክለኛው መልስ 'Perceived war as inevitable' ነው። ኢዲያሊዝም ሰላም በዓለም አቀፍ ሕግ፣ ትብብር እና በጋራ ደህንነት ሊረጋገጥ እንደሚችል ያምናል።"
+  },
+  {
+    "question": "Which of the following is associated most directly with realism?",
+    "options": ["Different ends or goals of states are culturally constructed in a myriad ways", "Anarchic structure of the international system", "Human rights as the centerpiece of foreign policy", "The international system is fundamentally about global capital exploiting nature and labor"],
+    "answer": 1,
+    "englishExplanation": "Realism places the anarchic structure of the international system at the core of its theoretical explanation.",
+    "amharicExplanation": "ትክክለኛው መልስ 'Anarchic structure of the international system' ነው። ሪያሊዝም የዓለም አቀፍ ስርዓት አናርኪ እንደሆነ ያመናል።"
+  },
+  {
+    "question": "Which of the following ideas fits best with liberalism?",
+    "options": ["Conflict is reduced if poor countries remember their place and accept dependent development.", "International institutions can reduce the likelihood of conflict.", "Authoritarian regimes share common features that reduce the chance of conflict between them.", "Every country culturally constructs its goals and interests, and one cannot predict how these will be defined in any given case without cultural analysis."],
+    "answer": 1,
+    "englishExplanation": "Liberal institutionalism posits that international organizations create rules and platforms that successfully minimize conflict.",
+    "amharicExplanation": "ትክክለኛው መልስ 'International institutions can reduce the likelihood of conflict' ነው። ሊበራሊዝም ዓለም አቀፍ ተቋማት ግጭቶችን በሰላማዊ መንገድ እንዲፈቱ ይረዳሉ ብሎ ያምናል።"
+  },
+  {
+    "question": "What does it mean to say that a state is \"sovereign\"?",
+    "options": ["Sovereignty is a ruse of global capitalism.", "The state is recognized as the sole political authority in some territory.", "Sovereignty means that you are governed indirectly by an empire but you get to keep your own, semi-autonomous institutions.", "Sovereignty is no longer an important idea because of globalization."],
+    "answer": 1,
+    "englishExplanation": "Sovereignty means holding supreme, unchallengeable political authority within a designated geographical territory.",
+    "amharicExplanation": "ትክክለኛው መልስ 'The state is recognized as the sole political authority in some territory' ነው። ሉዓላዊነት ማለት አንድ ሀገር በራሱ ግዛት ውስጥ ከፍተኛ የፖለቲካ ስልጣን ያለው መሆኑ ነው።"
+  },
+  {
+    "question": "\"Leaders need to be alert and cope effectively with internal as well as external threats to their rule and act like a lion and a fox in protecting their national security.\" This assumption best fits with:",
+    "options": ["Realism", "Idealism", "Marxism", "Liberal Institutionalism"],
+    "answer": 0,
+    "englishExplanation": "Machiavellian statecraft—using strength (lion) and cunning (fox) for survival—is foundational to classical realist thinking.",
+    "amharicExplanation": "ትክክለኛው መልስ Realism ነው። ሪያሊዝም ለሀገር ህልውና፣ ደህንነት እና ኃይል ትልቅ ቦታ ይሰጣል። አንበሳ ጥንካሬን ሲወክል፣ ቀበሮ ብልሃትን ይወክላል።"
+  },
+  {
+    "question": "The immediate event causing the birth of 'Nation State' was;",
+    "options": ["Reformation", "First World War", "Industrial Revolution", "European Thirty Years War"],
+    "answer": 3,
+    "englishExplanation": "The Thirty Years' War concluded with the Westphalian treaties, serving as the immediate catalyst for the modern sovereign state system.",
+    "amharicExplanation": "ትክክለኛው መልስ European Thirty Years War ነው። የሰላሳ ዓመታት የአውሮፓ ጦርነት በዌስትፋሊያ ሰላም ስምምነት ተጠናቀቀ።"
+  },
+  {
+    "question": "According to realists, the defining feature of international relations is:",
+    "options": ["Interdependence", "Anarchy", "Class inequality", "Security"],
+    "answer": 1,
+    "englishExplanation": "Realists argue that the absence of a global government—anarchy—defines the structural reality of international politics.",
+    "amharicExplanation": "ትክክለኛው መልስ Anarchy ነው። ሪያሊስቶች የዓለም አቀፍ ስርዓት አናርኪ ነው ይላሉ፤ ምክንያቱም ማዕከላዊ የዓለም መንግስት የለም።"
+  },
+  {
+    "question": "What/who are the most important actors in global politics according to realism?",
+    "options": ["International organizations", "States", "Multinational corporations", "Individuals"],
+    "answer": 1,
+    "englishExplanation": "Realism maintains that states are the primary, unitary, and most crucial actors in global politics.",
+    "amharicExplanation": "ትክክለኛው መልስ States ነው። ሪያሊዝም ሉዓላዊ ሀገራትን በዓለም አቀፍ ፖለቲካ ዋና ተዋናዮች እንደሆኑ ይቆጥራል።"
+  },
+  {
+    "question": "'Cold War Period' structure of the international system can be explained in term of",
+    "options": ["Unipolar system", "Bipolar system", "New World Order", "Multipolar system"],
+    "answer": 1,
+    "englishExplanation": "The Cold War era was a classic bipolar system dominated by two superpowers: the USA and the USSR.",
+    "amharicExplanation": "ትክክለኛው መልስ Bipolar system ነው። በቀዝቃዛው ጦርነት ዘመን የዓለም አቀፍ ስርዓት በአሜሪካ እና በሶቪየት ሕብረት የተቆጣጠረ ነበር።"
+  },
+  {
+    "question": "The 'natural law' perspective on international law is mainly associated with ___ IR theory.",
+    "options": ["Realism", "Critical Theory", "Liberalism", "Marxism"],
+    "answer": 2,
+    "englishExplanation": "Liberalism aligns naturally with natural law because it stresses universal ethics, individual rights, and legal cooperation.",
+    "amharicExplanation": "ትክክለኛው መልስ Liberalism ነው። ሊበራሊዝም ከNatural Law ጋር ይያያዛል፤ ምክንያቱም ሁለንተናዊ የሞራል መርሆዎችን እና ዓለም አቀፍ ሕግን ያጎላል።"
+  },
+  {
+    "question": "This international relations theory holds that state interests are neither inherent nor unproblematic and that international norms have an independent power to shape state interests and affect state behavior.",
+    "options": ["Constructivism", "Marxism", "Liberalism", "Realism"],
+    "answer": 0,
+    "englishExplanation": "Constructivism posits that identities and interests are socially constructed through ideas, norms, and culture.",
+    "amharicExplanation": "ትክክለኛው መልስ Constructivism ነው። ኮንስትራክቲቪዝም የሀገራት ፍላጎትና ማንነት በሀሳቦች፣ ባህል እና ደንቦች (Norms) እንደሚገነቡ ያስተምራል።"
+  },
+  {
+    "question": "Some Horn of African Political analysts argued that the main cause for Ethio-Eritrean rapprochement is leadership change and the coming of Abiy Ahmed to the position of premiership. This assertion is:",
+    "options": ["Individual level analysis", "Group level analysis", "State level analysis", "System level analysis"],
+    "answer": 0,
+    "englishExplanation": "Focusing on the role, traits, and decisions of a specific leader targets the individual level of analysis.",
+    "amharicExplanation": "ትክክለኛው መልስ Individual level analysis ነው። ምክንያቱም ትንተናው በአንድ መሪ ውሳኔ እና በመሪነት ሚና ላይ ያተኮራል።"
+  },
+  {
+    "question": "Anarchy can be defined as:",
+    "options": ["Absence of authority that exercises over States", "Absence of central government", "Supreme authority of the state over international matters", "Absence of entities that possesses the monopoly on the coercive use of force", "A and B", "All except C"],
+    "answer": 5,
+    "englishExplanation": "Anarchy denotes the absence of a central government or overarching authority above states, while option C describes sovereignty.",
+    "amharicExplanation": "ትክክለኛው መልስ All except C ነው። አናርኪ ማለት በሉዓላዊ ሀገራት ላይ የሚገዛ ማዕከላዊ መንግስት አለመኖር ነው። C ግን ሉዓላዊነትን ያመለክታል።"
+  },
+  {
+    "question": "___ is situation where absence of authority.",
+    "options": ["Sovereignty", "External sovereignty", "Authority", "Anarchy"],
+    "answer": 3,
+    "englishExplanation": "Anarchy directly translates in IR terms to a structural condition marked by the absence of a higher governing authority.",
+    "amharicExplanation": "ትክክለኛው መልስ Anarchy ነው። በዓለም አቀፍ ግንኙነት አናርኪ ማለት ሉዓላዊ ሀገራትን የሚቆጣጠር ማዕከላዊ ስልጣን የሌለበት ሁኔታ ነው።"
+  },
+  {
+    "question": "Lack of central government or international sovereign that regulate states interest at international area is termed as;",
+    "options": ["Anarchy", "Multipolar system", "International organization", "Power politics"],
+    "answer": 0,
+    "englishExplanation": "The structural absence of a world government regulating state conduct is called international anarchy.",
+    "amharicExplanation": "ትክክለኛው መልስ Anarchy ነው። በዓለም አቀፍ ደረጃ የሀገራትን ተግባር ከላይ የሚቆጣጠር ማዕከላዊ መንግስት አለመኖሩ Anarchy ይባላል።"
+  },
+  {
+    "question": "Recently, the competition in the international system is becoming tough for domination and upper hand security. Most visibly, China and USA are competing in armaments and military demonstrations to display their power to the globe and one another. Which IR theory may comply best to this scenario?",
+    "options": ["Marxism", "Realism", "Liberalism", "Socialism"],
+    "answer": 1,
+    "englishExplanation": "Realism best explains great power military competition, security dilemmas, and arms races for global domination.",
+    "amharicExplanation": "ትክክለኛው መልስ Realism ነው። ሪያሊዝም በሀገራት መካከል ለኃይል፣ ለደህንነት እና ለወታደራዊ ችሎታ የሚደረገውን ውድድር ያጎላል።"
+  },
+  {
+    "question": "Which theory is advocating the issues of southern region comprising Africans, Asians, and Latin Americans?",
+    "options": ["Realism", "Critical", "Liberalism", "Marxism"],
+    "answer": 1,
+    "englishExplanation": "Critical theory actively questions global hierarchies and champions marginalized voices from the Global South.",
+    "amharicExplanation": "ትክክለኛው መልስ Critical ነው። ክሪቲካል ንድፈ ሀሳቦች በዓለም ደቡብ የሚገኙ እና በታሪክ የተገለሉ ሕዝቦች ያላቸውን ልምድና ጉዳይ ትኩረት ይሰጣሉ።"
+  },
+  {
+    "question": "Owing to possess technologically advanced artillery that supersede over the power of competitors, superpowers produced mass destructive weapons. This is the result of the frustration coming from the anarchic nature of the international system. Under this international system, it is widely believed that laws are enforced through power, a justification behind the competition between superpowers to build technologically advanced defense force. This power competition, according to realism, is termed as",
+    "options": ["Balance of power", "Power contradiction", "Collective security"],
+    "answer": 0,
+    "englishExplanation": "States accumulating power and building alliances to counter rivals in an anarchic system is known as the balance of power.",
+    "amharicExplanation": "ትክክለኛው መልስ Balance of power ነው። ሪያሊዝም የዓለም አቀፍ ስርዓት አናርኪ ስለሆነ ሀገራት ሚዛን ለመፍጠር እንደሚሞክሩ ያስተምራል።"
+  },
+  {
+    "question": "Which one of the following is correct about system level analysis?",
+    "options": ["It focuses on the influence of government types", "It focuses on dictatorial type of government in the states", "It emphasis on the type of the situation within the States", "It emphasis on the nature of global power hierarchy."],
+    "answer": 3,
+    "englishExplanation": "System-level analysis zooms out to look at macro-level dynamics, such as the global distribution of power and structural hierarchies.",
+    "amharicExplanation": "ትክክለኛው መልስ 'It emphasis on the nature of global power hierarchy' ነው። የስርዓት ደረጃ ትንተና በGlobal power hierarchy ላይ ያተኩራል።"
+  },
+  {
+    "question": "Which one is true about realism thinking of world politics?",
+    "options": ["Power is the currency to achieve states interest globally", "International system is organized by non-state actors", "International system is cooperative and hierarchical", "An economy is the currency of global political phenomena"],
+    "answer": 0,
+    "englishExplanation": "Realism views power as the primary instrument and currency for states to achieve survival and national interests.",
+    "amharicExplanation": "ትክክለኛው መልስ 'Power is the currency to achieve states interest globally' ነው። ሪያሊዝም ሀገራት ጥቅማቸውን ለማስጠበቅ ኃይልን እንደ ዋና መሣሪያ ይመለከታል።"
+  },
+  {
+    "question": "IR is more concentrated on domestic relations.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "IR focuses outward on trans-boundary relations rather than inward on internal domestic affairs.",
+    "amharicExplanation": "ሐሰት ነው። ዓለም አቀፍ ግንኙነት (IR) በዋናነት በሀገራት መካከል እና ድንበር ተሻጋሪ በሆኑ ግንኙነቶች ላይ ያተኩራል።"
+  },
+  {
+    "question": "Comparatively, multipolar world orders are most susceptible to instability and war.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Multipolar systems feature numerous shifting alignments and competitive actors, making them historically volatile.",
+    "amharicExplanation": "እውነት ነው። ባለብዙ ዋልታ (Multipolar) ስርዓት በርካታ ኃያላን ሀገራት ያሉበት በመሆኑ ውድድርን እና አለመረጋጋትን ይጨምራል።"
+  },
+  {
+    "question": "As IR is contacted with many Global issues and its scope is wide, one can conclude that it is Holistic.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Despite its broad scope, IR is a specialized academic discipline rather than a completely all-encompassing holistic study of everything.",
+    "amharicExplanation": "ሐሰት ነው። ዓለም አቀፍ ግንኙነት ብዙ ዓለም አቀፍ ጉዳዮችን ቢያጠናም ፍጹም ሁሉን አቀፍ (Holistic) ማለት አይደለም።"
+  },
+  {
+    "question": "Terrorists can be actor of IR.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Non-state actors like terrorist networks significantly affect global security and foreign policy decisions.",
+    "amharicExplanation": "እውነት ነው። የአሸባሪ ቡድኖች መንግስታዊ ያልሆኑ አካላት ሲሆኑ በዓለም አቀፍ ጸጥታ እና በሀገራት ግንኙነት ላይ ተጽዕኖ ሊያሳድሩ ይችላሉ።"
+  },
+  {
+    "question": "For Marxists, the international system is characterized by anarchy and class contradiction.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Marxists place core emphasis on global capitalism and economic class contradictions rather than standard realist anarchy.",
+    "amharicExplanation": "ሐሰት ነው። ማርክሲስቶች ዓለም አቀፍ ስርዓትን በዋናነት በካፒታሊዝም፣ በኢኮኖሚ እኩልነት እና በክፍል ትግል ያብራራሉ።"
+  },
+  {
+    "question": "For realist thinkers of international relations, states' behavior is driven by moral and value.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Realists argue that survival and national interest dictate state action, overriding abstract moral or ethical values.",
+    "amharicExplanation": "ሐሰት ነው። ሪያሊስቶች ሀገራት በዋናነት የሚንቀሳቀሱት በብሔራዊ ጥቅም እና በኃይል እንጂ በሞራልና እሴቶች አይደለም።"
+  },
+  {
+    "question": "Realists hold the position that the state, in its relation with another state, is definitely subject to the calculations of morality.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Power politics and national security imperatives rule out strict adherence to morality in realist paradigms.",
+    "amharicExplanation": "ሐሰት ነው። ሪያሊዝም ሀገራት በዓለም አቀፍ ፖለቲካ ውስጥ በሞራል ስሌት ብቻ እንደሚመሩ አያስተምርም።"
+  },
+  {
+    "question": "Conventional IR was not concerned with any potential distinctions between different levels of analysis or theoretical perspectives.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Traditional IR maintained a narrow state-centric focus without formal integration of multi-level systemic analysis.",
+    "amharicExplanation": "እውነት ነው። ባህላዊው IR በዋናነት በሀገራት መካከል ባሉ ግንኙነቶች ላይ ብቻ ያተኩር ነበር።"
+  },
+  {
+    "question": "The structure of the international system is subject to change with diverse determinants of world politics.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Global shifts in power distribution, economics, and technology continually transform the structure of the international system.",
+    "amharicExplanation": "እውነት ነው። የዓለም አቀፍ ስርዓት ቋሚ አይደለም፤ በኃይል ሚዛን ለውጥ እና በሌሎች ዓለም አቀፍ ክስተቶች ምክንያት መዋቅሩ ሊለወጥ ይችላል።"
+  },
+  {
+    "question": "Bi-polar system is also known by the presence of two cooperative powerful states in the system.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Bipolar systems are defined by two dominant, competing, and rival superpowers, not necessarily cooperative ones.",
+    "amharicExplanation": "ሐሰት ነው። ባይፖላር ስርዓት በሁለት ትልልቅ ኃያላን ሀገራት የሚታወቅ ሲሆን ብዙ ጊዜ ተፎካካሪዎች (ተቀናቃኞች) ናቸው።"
+  },
+  {
+    "question": "Realists maintain optimistic view of international relations.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Realism holds a fundamentally pessimistic view regarding the permanence of peace and the elimination of conflict.",
+    "amharicExplanation": "ሐሰት ነው። ሪያሊስቶች በአጠቃላይ ስለ ዓለም አቀፍ ፖለቲካ ጨለምተኛ (Pessimistic) እይታ አላቸው።"
+  },
+  {
+    "question": "Westphalian treaty is one of the turning points for the progress of international relations.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "The 1648 Treaty of Westphalia is universally recognized as a foundational milestone marking the birth of the modern state system.",
+    "amharicExplanation": "እውነት ነው። የዌስትፋሊያ ሰላም ስምምነት (1648) ዘመናዊ የዓለም አቀፍ ስርዓት እድገት ውስጥ አስፈላጊ መለወጫ ነጥብ ነው።"
+  },
+  {
+    "question": "Nowadays, the words nation, state and country are used interchangeably.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "While colloquial language treats them as synonyms, political science maintains sharp conceptual boundaries between them.",
+    "amharicExplanation": "ሐሰት ነው። በፖለቲካል ሳይንስ Nation፣ State እና Country የተለያየ ትርጉም አላቸው።"
+  },
+  {
+    "question": "Participation in international relations or politics is escapable.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Complete isolation from global economic, environmental, and security networks is impossible for any modern state.",
+    "amharicExplanation": "ሐሰት ነው። ከዓለም አቀፍ ግንኙነት ሙሉ በሙሉ መራቅ አይቻልም።"
+  },
+  {
+    "question": "In the contemporary period, global interactions related to global finance, production, and labor migration are conducted solely via state actors.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Globalized financial markets and labor migration heavily involve non-state actors like multinational firms and international bodies.",
+    "amharicExplanation": "ሐሰት ነው። በዘመናዊው ዓለም አቀፍ ግንኙነት ግሎባል ፋይናንስ እና ምርት በሀገራት ብቻ ሳይሆን በድርጅቶችና በግለሰቦችም ይመራል።"
+  },
+  {
+    "question": "The conventional definition of the field IR is state-centric.",
+    "options": ["True", "False"],
+    "answer": 0,
+    "englishExplanation": "Traditional definitions of IR focus almost exclusively on interactions between sovereign nation-states.",
+    "amharicExplanation": "እውነት ነው። የባህላዊው የIR ትርጉም State-centric ነው።"
+  },
+  {
+    "question": "Anarchic is a vertical authority structure.",
+    "options": ["True", "False"],
+    "answer": 1,
+    "englishExplanation": "Anarchy is a horizontal system because it lacks a vertical command structure or centralized government above states.",
+    "amharicExplanation": "ሐሰት ነው። በIR ውስጥ አናርኪ ማለት ከሉዓላዊ ሀገራት በላይ የሚገኝ ማዕከላዊ ስልጣን አለመኖርን ስለሚያሳይ ከVertical ይልቅ Horizontal ነው።"
+  },
+  {
+    "question": "All are the variables we consider in applying system level of explanation except:",
+    "options": ["Personal behaviours, preferences and visions", "The location of resources and distribution", "The nature of system poles", "Nature of international system"],
+    "answer": 0,
+    "englishExplanation": "Individual personal behaviors belong exclusively to the micro individual level, not the system level.",
+    "amharicExplanation": "ትክክለኛው መልስ Personal behaviours, preferences and visions ነው። የግለሰብ ባህሪ የስርዓት ደረጃ ሳይሆን የግለሰብ ደረጃ ትንተና ነው።"
+  },
+  {
+    "question": "Which international relations theories can be taken as utopian?",
+    "options": ["Liberalism", "Marxism", "Idealism", "A and C", "Constructivism"],
+    "answer": 3,
+    "englishExplanation": "Both Liberalism and Idealism are often labeled utopian due to their optimistic focus on perpetual peace and institutional cooperation.",
+    "amharicExplanation": "ትክክለኛው መልስ A and C ነው፤ ማለትም Liberalism እና Idealism። እነዚህ እይታዎች ትብብርን እና ሰላምን በማጉላት Utopian ተብለው ይጠራሉ።"
+  },
+  {
+    "question": "Internal sovereignty can be defined as a state's ultimate authority within its territorial entity?",
+    "options": ["Internal sovereignty", "External sovereignty", "Authority", "Anarchy"],
+    "answer": 0,
+    "englishExplanation": "Internal sovereignty refers to supreme legal and political authority over domestic populations and institutions within a territory.",
+    "amharicExplanation": "ትክክለኛው መልስ Internal sovereignty ነው። ውስጣዊ ሉዓላዊነት ማለት አንድ ሀገር በራሱ ግዛት ውስጥ ባሉ ሰዎች እና ተቋማት ላይ ከፍተኛ ስልጣን ማለት ነው።"
+  }];
  
 quizData["global-trends"]["2"] = [  {
         question: "Partisan Criteria Of Foreign Policy states that the orientation followed is a matter of fact, not based on emotions and professions.",
