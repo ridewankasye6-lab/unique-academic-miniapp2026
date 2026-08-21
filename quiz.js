@@ -5,539 +5,502 @@
 
 
 // =====================================================
-// READ URL PARAMETERS
+// WAIT UNTIL PAGE IS READY
 // =====================================================
 
-const params =
-    new URLSearchParams(
-        window.location.search
-    );
+(function () {
+
+    "use strict";
 
 
-// =====================================================
-// GET AND NORMALIZE SUBJECT
-// =====================================================
+    // =================================================
+    // READ URL PARAMETERS
+    // =================================================
 
-function normalizeSubject(value) {
-
-    return String(
-        value || ""
-    )
-        .trim()
-        .toLowerCase()
-        .replace(
-            /_/g,
-            "-"
-        )
-        .replace(
-            /\s+/g,
-            "-"
-        );
-
-}
-
-
-const rawSubject =
-    params.get("subject");
-
-
-const subject =
-    normalizeSubject(
-        rawSubject
-    );
-
-
-const chapter =
-    String(
-        params.get("chapter") || ""
-    ).trim();
-
-
-// =====================================================
-// HTML ELEMENTS
-// =====================================================
-
-const subjectName =
-    document.getElementById(
-        "subjectName"
-    );
-
-
-const chapterName =
-    document.getElementById(
-        "chapterName"
-    );
-
-
-const headerTitle =
-    document.getElementById(
-        "headerTitle"
-    );
-
-
-const headerChapter =
-    document.getElementById(
-        "headerChapter"
-    );
-
-
-const questionNumber =
-    document.getElementById(
-        "questionNumber"
-    );
-
-
-const nextBtn =
-    document.getElementById(
-        "nextBtn"
-    );
-
-
-const previousQuestionBtn =
-    document.getElementById(
-        "previousQuestionBtn"
-    );
-
-
-const backBtn =
-    document.getElementById(
-        "backBtn"
-    );
-
-
-const homeBtn =
-    document.getElementById(
-        "homeBtn"
-    );
-
-
-const progressBar =
-    document.getElementById(
-        "progressBar"
-    );
-
-
-const completionMessage =
-    document.getElementById(
-        "completionMessage"
-    );
-
-
-const questionsPage =
-    document.getElementById(
-        "questionsPage"
-    );
-
-
-// =====================================================
-// QUESTIONS PER PAGE
-// =====================================================
-
-const QUESTIONS_PER_PAGE = 5;
-
-
-// =====================================================
-// CURRENT PAGE
-// =====================================================
-
-let currentPage = 0;
-
-
-// =====================================================
-// FORMAT SUBJECT NAME
-// =====================================================
-
-function formatSubjectName(
-    value
-) {
-
-    if (!value) {
-
-        return "Unknown Subject";
-
-    }
-
-
-    return value
-        .replace(
-            /-/g,
-            " "
-        )
-        .replace(
-            /\b\w/g,
-            letter =>
-                letter.toUpperCase()
-        );
-
-}
-
-
-// =====================================================
-// FIND REAL SUBJECT KEY
-// =====================================================
-
-function findSubjectKey(
-    requestedSubject
-) {
-
-    if (
-        typeof quizData ===
-        "undefined"
-    ) {
-
-        return null;
-
-    }
-
-
-    if (
-        !quizData ||
-        typeof quizData !==
-        "object"
-    ) {
-
-        return null;
-
-    }
-
-
-    const requested =
-        normalizeSubject(
-            requestedSubject
+    const params =
+        new URLSearchParams(
+            window.location.search
         );
 
 
-    /*
-    =============================================
-    EXACT NORMALIZED MATCH
-    =============================================
-    */
-
-    const keys =
-        Object.keys(
-            quizData
-        );
-
-
-    for (
-        const key of keys
-    ) {
-
-        if (
-            normalizeSubject(
-                key
-            ) === requested
-        ) {
-
-            return key;
-
-        }
-
-    }
-
-
-    return null;
-
-}
-
-
-// =====================================================
-// FIND REAL CHAPTER KEY
-// =====================================================
-
-function findChapterKey(
-    subjectKey,
-    requestedChapter
-) {
-
-    if (
-        !subjectKey ||
-        !quizData ||
-        !quizData[subjectKey]
-    ) {
-
-        return null;
-
-    }
-
-
-    const chapters =
-        quizData[
-            subjectKey
-        ];
-
-
-    if (
-        typeof chapters !==
-        "object"
-    ) {
-
-        return null;
-
-    }
-
-
-    const requested =
-        String(
-            requestedChapter || ""
+    const subject =
+        (
+            params.get("subject") ||
+            ""
         ).trim();
 
 
-    const chapterKeys =
-        Object.keys(
-            chapters
+    const chapter =
+        (
+            params.get("chapter") ||
+            ""
+        ).trim();
+
+
+    console.log(
+        "Quiz subject:",
+        subject
+    );
+
+
+    console.log(
+        "Quiz chapter:",
+        chapter
+    );
+
+
+    // =================================================
+    // HTML ELEMENTS
+    // =================================================
+
+    const subjectName =
+        document.getElementById(
+            "subjectName"
         );
 
 
-    /*
-    =============================================
-    EXACT MATCH
-    =============================================
-    */
+    const chapterName =
+        document.getElementById(
+            "chapterName"
+        );
+
+
+    const headerTitle =
+        document.getElementById(
+            "headerTitle"
+        );
+
+
+    const headerChapter =
+        document.getElementById(
+            "headerChapter"
+        );
+
+
+    const questionNumber =
+        document.getElementById(
+            "questionNumber"
+        );
+
+
+    const nextBtn =
+        document.getElementById(
+            "nextBtn"
+        );
+
+
+    const previousQuestionBtn =
+        document.getElementById(
+            "previousQuestionBtn"
+        );
+
+
+    const backBtn =
+        document.getElementById(
+            "backBtn"
+        );
+
+
+    const homeBtn =
+        document.getElementById(
+            "homeBtn"
+        );
+
+
+    const progressBar =
+        document.getElementById(
+            "progressBar"
+        );
+
+
+    const completionMessage =
+        document.getElementById(
+            "completionMessage"
+        );
+
+
+    const questionsPage =
+        document.getElementById(
+            "questionsPage"
+        );
+
+
+    // =================================================
+    // CHECK HTML
+    // =================================================
 
     if (
-        Object.prototype.hasOwnProperty.call(
-            chapters,
-            requested
-        )
+        !subjectName ||
+        !chapterName ||
+        !headerTitle ||
+        !headerChapter ||
+        !questionNumber ||
+        !nextBtn ||
+        !previousQuestionBtn ||
+        !backBtn ||
+        !homeBtn ||
+        !progressBar ||
+        !completionMessage ||
+        !questionsPage
     ) {
 
-        return requested;
+        console.error(
+            "Quiz HTML elements are missing."
+        );
+
+        return;
 
     }
 
 
-    /*
-    =============================================
-    NUMERIC MATCH
-    =============================================
-    */
+    // =================================================
+    // QUESTIONS PER PAGE
+    // =================================================
 
-    const requestedNumber =
-        Number.parseInt(
-            requested,
-            10
+    const QUESTIONS_PER_PAGE = 5;
+
+
+    // =================================================
+    // CURRENT PAGE
+    // =================================================
+
+    let currentPage = 0;
+
+
+    // =================================================
+    // FORMAT SUBJECT NAME
+    // =================================================
+
+    function formatSubjectName(
+        value
+    ) {
+
+        if (
+            !value
+        ) {
+
+            return "Unknown Subject";
+
+        }
+
+
+        return value
+            .replace(
+                /[-_]+/g,
+                " "
+            )
+            .replace(
+                /\b\w/g,
+                letter =>
+                    letter.toUpperCase()
+            );
+
+    }
+
+
+    // =================================================
+    // FORMAT CHAPTER
+    // =================================================
+
+    function formatChapter(
+        value
+    ) {
+
+        if (
+            !value
+        ) {
+
+            return "Unknown Chapter";
+
+        }
+
+
+        return `Chapter ${value}`;
+
+    }
+
+
+    // =================================================
+    // DISPLAY SUBJECT + CHAPTER
+    // =================================================
+
+    const formattedSubject =
+        formatSubjectName(
+            subject
         );
 
 
-    if (
-        Number.isInteger(
-            requestedNumber
-        )
+    const formattedChapter =
+        formatChapter(
+            chapter
+        );
+
+
+    subjectName.textContent =
+        formattedSubject;
+
+
+    chapterName.textContent =
+        formattedChapter;
+
+
+    headerTitle.textContent =
+        formattedSubject;
+
+
+    headerChapter.textContent =
+        `${formattedChapter} • Quiz`;
+
+
+    // =================================================
+    // NORMALIZE SUBJECT KEY
+    // =================================================
+
+    function normalizeSubjectKey(
+        value
     ) {
 
-        for (
-            const key of chapterKeys
+        return String(
+            value || ""
+        )
+            .toLowerCase()
+            .trim()
+            .replace(
+                /_/g,
+                "-"
+            )
+            .replace(
+                /\s+/g,
+                "-"
+            );
+
+    }
+
+
+    // =================================================
+    // FIND SUBJECT DATA
+    // =================================================
+
+    function findSubjectData() {
+
+        /*
+        First try the exact URL subject.
+        */
+
+        const exactKey =
+            normalizeSubjectKey(
+                subject
+            );
+
+
+        if (
+            typeof quizData !== "undefined" &&
+            quizData
         ) {
 
+            /*
+            Exact key.
+            */
+
             if (
-                Number.parseInt(
-                    key,
-                    10
-                ) ===
-                requestedNumber
+                quizData[subject]
             ) {
 
-                return key;
+                return quizData[subject];
+
+            }
+
+
+            /*
+            Normalized key.
+            */
+
+            if (
+                quizData[exactKey]
+            ) {
+
+                return quizData[exactKey];
+
+            }
+
+
+            /*
+            Search all keys safely.
+            */
+
+            const keys =
+                Object.keys(
+                    quizData
+                );
+
+
+            for (
+                const key of keys
+            ) {
+
+                if (
+                    normalizeSubjectKey(
+                        key
+                    ) === exactKey
+                ) {
+
+                    return quizData[key];
+
+                }
 
             }
 
         }
 
-    }
 
-
-    return null;
-
-}
-
-
-// =====================================================
-// FIND QUESTIONS
-// =====================================================
-
-function getQuizQuestions() {
-
-    if (
-        typeof quizData ===
-        "undefined"
-    ) {
-
-        console.error(
-            "quizData.js has not loaded."
-        );
-
-        return [];
+        return null;
 
     }
 
 
-    const subjectKey =
-        findSubjectKey(
-            subject
-        );
+    // =================================================
+    // FIND QUESTIONS
+    // =================================================
+
+    function findQuestions() {
+
+        if (
+            typeof quizData === "undefined"
+        ) {
+
+            console.error(
+                "quizData is not defined."
+            );
+
+            return [];
+
+        }
 
 
-    if (
-        !subjectKey
-    ) {
+        if (
+            !quizData
+        ) {
 
-        console.error(
-            "Quiz subject not found:",
-            subject
-        );
+            console.error(
+                "quizData is empty."
+            );
 
-        console.log(
-            "Available subjects:",
-            Object.keys(
-                quizData || {}
+            return [];
+
+        }
+
+
+        const subjectData =
+            findSubjectData();
+
+
+        if (
+            !subjectData
+        ) {
+
+            console.error(
+                "Subject not found in quizData:",
+                subject
+            );
+
+            console.log(
+                "Available subjects:",
+                Object.keys(
+                    quizData
+                )
+            );
+
+            return [];
+
+        }
+
+
+        /*
+        Try exact chapter key.
+        */
+
+        if (
+            subjectData[chapter]
+        ) {
+
+            return Array.isArray(
+                subjectData[chapter]
             )
-        );
+                ? subjectData[chapter]
+                : [];
 
-        return [];
-
-    }
-
-
-    const chapterKey =
-        findChapterKey(
-            subjectKey,
-            chapter
-        );
+        }
 
 
-    if (
-        !chapterKey
-    ) {
+        /*
+        Try numeric chapter.
+        */
+
+        const numericChapter =
+            Number.parseInt(
+                chapter,
+                10
+            );
+
+
+        if (
+            Number.isInteger(
+                numericChapter
+            ) &&
+            subjectData[numericChapter]
+        ) {
+
+            return Array.isArray(
+                subjectData[numericChapter]
+            )
+                ? subjectData[numericChapter]
+                : [];
+
+        }
+
 
         console.error(
-            "Quiz chapter not found:",
-            subjectKey,
+            "Chapter not found:",
             chapter
         );
+
 
         console.log(
             "Available chapters:",
             Object.keys(
-                quizData[
-                    subjectKey
-                ] || {}
+                subjectData
             )
         );
 
-        return [];
-
-    }
-
-
-    const data =
-        quizData[
-            subjectKey
-        ][
-            chapterKey
-        ];
-
-
-    if (
-        !Array.isArray(
-            data
-        )
-    ) {
-
-        console.error(
-            "Quiz data is not an array:",
-            subjectKey,
-            chapterKey
-        );
 
         return [];
 
     }
 
 
-    return data;
+    // =================================================
+    // LOAD QUESTIONS
+    // =================================================
 
-}
+    const questions =
+        findQuestions();
 
 
-// =====================================================
-// SHOW SUBJECT + CHAPTER
-// =====================================================
-
-const formattedSubject =
-    formatSubjectName(
-        subject
+    console.log(
+        "Questions found:",
+        questions.length
     );
 
 
-const formattedChapter =
-    chapter
-        ? `Chapter ${chapter}`
-        : "Unknown Chapter";
-
-
-if (
-    subjectName
-) {
-
-    subjectName.textContent =
-        formattedSubject;
-
-}
-
-
-if (
-    chapterName
-) {
-
-    chapterName.textContent =
-        formattedChapter;
-
-}
-
-
-if (
-    headerTitle
-) {
-
-    headerTitle.textContent =
-        formattedSubject;
-
-}
-
-
-if (
-    headerChapter
-) {
-
-    headerChapter.textContent =
-        `${formattedChapter} • Quiz`;
-
-}
-
-
-// =====================================================
-// LOAD QUESTIONS
-// =====================================================
-
-const questions =
-    getQuizQuestions();
-
-
-// =====================================================
-// NO QUESTIONS FOUND
-// =====================================================
-
-if (
-    questions.length === 0
-) {
+    // =================================================
+    // NO QUESTIONS FOUND
+    // =================================================
 
     if (
-        questionsPage
+        questions.length === 0
     ) {
 
         questionsPage.innerHTML = `
-
             <section class="questionCard">
 
                 <h2 class="questionText">
@@ -545,744 +508,640 @@ if (
                 </h2>
 
             </section>
-
         `;
 
-    }
-
-
-    if (
-        questionNumber
-    ) {
 
         questionNumber.textContent =
             "Question 0 / 0";
 
-    }
-
-
-    if (
-        previousQuestionBtn
-    ) {
 
         previousQuestionBtn.style.display =
             "none";
 
-    }
-
-
-    if (
-        nextBtn
-    ) {
 
         nextBtn.style.display =
             "none";
 
-    }
-
-
-    if (
-        progressBar
-    ) {
 
         progressBar.style.width =
             "0%";
 
-    }
-
-} else {
-
-    loadPage();
-
-}
-
-
-// =====================================================
-// GET ENGLISH EXPLANATION
-// =====================================================
-
-function getEnglishExplanation(
-    q
-) {
-
-    if (
-        q &&
-        q.englishExplanation
-    ) {
-
-        return q.englishExplanation;
-
-    }
-
-
-    if (
-        q &&
-        q.explanation &&
-        q.explanation.english
-    ) {
-
-        return q.explanation.english;
-
-    }
-
-
-    return "";
-
-}
-
-
-// =====================================================
-// GET AMHARIC EXPLANATION
-// =====================================================
-
-function getAmharicExplanation(
-    q
-) {
-
-    if (
-        q &&
-        q.amharicExplanation
-    ) {
-
-        return q.amharicExplanation;
-
-    }
-
-
-    if (
-        q &&
-        q.explanation &&
-        q.explanation.amharic
-    ) {
-
-        return q.explanation.amharic;
-
-    }
-
-
-    return "";
-
-}
-
-
-// =====================================================
-// LOAD 5 QUESTIONS
-// =====================================================
-
-function loadPage() {
-
-    if (
-        !questionsPage
-    ) {
 
         return;
 
     }
 
 
-    questionsPage.innerHTML =
-        "";
+    // =================================================
+    // GET ENGLISH EXPLANATION
+    // =================================================
 
-
-    const startIndex =
-        currentPage *
-        QUESTIONS_PER_PAGE;
-
-
-    const endIndex =
-        Math.min(
-            startIndex +
-                QUESTIONS_PER_PAGE,
-            questions.length
-        );
-
-
-    // ---------------------------------------------
-    // CREATE EACH QUESTION
-    // ---------------------------------------------
-
-    for (
-        let index = startIndex;
-        index < endIndex;
-        index++
+    function getEnglishExplanation(
+        q
     ) {
 
-        createQuestionCard(
-            questions[index],
-            index
-        );
+        if (
+            q &&
+            q.englishExplanation
+        ) {
+
+            return q.englishExplanation;
+
+        }
+
+
+        if (
+            q &&
+            q.explanation &&
+            q.explanation.english
+        ) {
+
+            return q.explanation.english;
+
+        }
+
+
+        return "";
 
     }
 
 
-    // ---------------------------------------------
-    // UPDATE QUESTION COUNTER
-    // ---------------------------------------------
+    // =================================================
+    // GET AMHARIC EXPLANATION
+    // =================================================
 
-    if (
-        questionNumber
+    function getAmharicExplanation(
+        q
     ) {
+
+        if (
+            q &&
+            q.amharicExplanation
+        ) {
+
+            return q.amharicExplanation;
+
+        }
+
+
+        if (
+            q &&
+            q.explanation &&
+            q.explanation.amharic
+        ) {
+
+            return q.explanation.amharic;
+
+        }
+
+
+        return "";
+
+    }
+
+
+    // =================================================
+    // LOAD PAGE
+    // =================================================
+
+    function loadPage() {
+
+        questionsPage.innerHTML =
+            "";
+
+
+        const startIndex =
+            currentPage *
+            QUESTIONS_PER_PAGE;
+
+
+        const endIndex =
+            Math.min(
+                startIndex +
+                QUESTIONS_PER_PAGE,
+                questions.length
+            );
+
+
+        for (
+            let index = startIndex;
+            index < endIndex;
+            index++
+        ) {
+
+            createQuestionCard(
+                questions[index],
+                index
+            );
+
+        }
+
 
         questionNumber.textContent =
             `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
 
+
+        updateNavigation();
+
+
+        updateProgress();
+
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     }
 
 
-    // ---------------------------------------------
-    // UPDATE NAVIGATION
-    // ---------------------------------------------
+    // =================================================
+    // CREATE QUESTION CARD
+    // =================================================
 
-    updateNavigation();
+    function createQuestionCard(
+        q,
+        index
+    ) {
 
-
-    // ---------------------------------------------
-    // UPDATE PROGRESS
-    // ---------------------------------------------
-
-    updateProgress();
-
-
-    // ---------------------------------------------
-    // SCROLL TO TOP
-    // ---------------------------------------------
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-}
+        const questionCard =
+            document.createElement(
+                "section"
+            );
 
 
-// =====================================================
-// CREATE QUESTION CARD
-// =====================================================
+        questionCard.className =
+            "questionCard";
 
-function createQuestionCard(
-    q,
-    index
-) {
 
-    // ---------------------------------------------
-    // MAIN QUESTION CARD
-    // ---------------------------------------------
+        // =============================================
+        // QUESTION LABEL
+        // =============================================
 
-    const questionCard =
-        document.createElement(
-            "section"
+        const questionLabel =
+            document.createElement(
+                "div"
+            );
+
+
+        questionLabel.className =
+            "questionLabel";
+
+
+        const questionBadge =
+            document.createElement(
+                "span"
+            );
+
+
+        questionBadge.className =
+            "questionBadge";
+
+
+        questionBadge.textContent =
+            `QUESTION ${index + 1}`;
+
+
+        questionLabel.appendChild(
+            questionBadge
         );
 
 
-    questionCard.className =
-        "questionCard";
+        // =============================================
+        // QUESTION TEXT
+        // =============================================
+
+        const questionText =
+            document.createElement(
+                "h2"
+            );
 
 
-    // ---------------------------------------------
-    // QUESTION LABEL
-    // ---------------------------------------------
-
-    const questionLabel =
-        document.createElement(
-            "div"
-        );
+        questionText.className =
+            "questionText";
 
 
-    questionLabel.className =
-        "questionLabel";
+        questionText.textContent =
+            q &&
+            q.question
+                ? q.question
+                : "";
 
 
-    const questionBadge =
-        document.createElement(
-            "span"
-        );
+        // =============================================
+        // OPTIONS
+        // =============================================
+
+        const options =
+            document.createElement(
+                "div"
+            );
 
 
-    questionBadge.className =
-        "questionBadge";
+        options.className =
+            "options";
 
 
-    questionBadge.textContent =
-        `QUESTION ${index + 1}`;
-
-
-    questionLabel.appendChild(
-        questionBadge
-    );
-
-
-    // ---------------------------------------------
-    // QUESTION TEXT
-    // ---------------------------------------------
-
-    const questionText =
-        document.createElement(
-            "h2"
-        );
-
-
-    questionText.className =
-        "questionText";
-
-
-    questionText.textContent =
-        q.question || "";
-
-
-    // ---------------------------------------------
-    // OPTIONS
-    // ---------------------------------------------
-
-    const options =
-        document.createElement(
-            "div"
-        );
-
-
-    options.className =
-        "options";
-
-
-    const questionOptions =
-        q.options ||
-        q.choices ||
-        [];
-
-
-    questionOptions.forEach(
-        (
-            option,
-            optionIndex
-        ) => {
-
-            const button =
-                document.createElement(
-                    "button"
+        const questionOptions =
+            q &&
+            Array.isArray(q.options)
+                ? q.options
+                : (
+                    q &&
+                    Array.isArray(q.choices)
+                        ? q.choices
+                        : []
                 );
 
 
-            button.type =
-                "button";
+        // =============================================
+        // EXPLANATION BOX
+        // =============================================
+
+        const explanationBox =
+            document.createElement(
+                "section"
+            );
 
 
-            button.className =
-                "optionBtn";
+        explanationBox.className =
+            "explanationCard";
 
 
-            button.textContent =
-                option;
+        explanationBox.style.display =
+            "none";
 
 
-            button.addEventListener(
-                "click",
-                () => {
+        // =============================================
+        // ENGLISH
+        // =============================================
 
-                    checkAnswer(
-                        q,
-                        optionIndex,
-                        options,
-                        explanationBox,
-                        englishExplanation,
-                        amharicExplanation
+        const englishSection =
+            document.createElement(
+                "div"
+            );
+
+
+        englishSection.className =
+            "explanationSection";
+
+
+        const englishTitle =
+            document.createElement(
+                "h3"
+            );
+
+
+        englishTitle.textContent =
+            "📖 English Explanation";
+
+
+        const englishExplanation =
+            document.createElement(
+                "p"
+            );
+
+
+        englishExplanation.textContent =
+            "";
+
+
+        englishSection.appendChild(
+            englishTitle
+        );
+
+
+        englishSection.appendChild(
+            englishExplanation
+        );
+
+
+        // =============================================
+        // DIVIDER
+        // =============================================
+
+        const divider =
+            document.createElement(
+                "div"
+            );
+
+
+        divider.className =
+            "explanationDivider";
+
+
+        // =============================================
+        // AMHARIC
+        // =============================================
+
+        const amharicSection =
+            document.createElement(
+                "div"
+            );
+
+
+        amharicSection.className =
+            "explanationSection";
+
+
+        const amharicTitle =
+            document.createElement(
+                "h3"
+            );
+
+
+        amharicTitle.textContent =
+            "🇪🇹 የአማርኛ ማብራሪያ";
+
+
+        const amharicExplanation =
+            document.createElement(
+                "p"
+            );
+
+
+        amharicExplanation.textContent =
+            "";
+
+
+        amharicSection.appendChild(
+            amharicTitle
+        );
+
+
+        amharicSection.appendChild(
+            amharicExplanation
+        );
+
+
+        explanationBox.appendChild(
+            englishSection
+        );
+
+
+        explanationBox.appendChild(
+            divider
+        );
+
+
+        explanationBox.appendChild(
+            amharicSection
+        );
+
+
+        // =============================================
+        // CREATE OPTIONS
+        // =============================================
+
+        questionOptions.forEach(
+            (
+                option,
+                optionIndex
+            ) => {
+
+                const button =
+                    document.createElement(
+                        "button"
+                    );
+
+
+                button.type =
+                    "button";
+
+
+                button.className =
+                    "optionBtn";
+
+
+                button.textContent =
+                    option;
+
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        checkAnswer(
+                            q,
+                            optionIndex,
+                            options,
+                            explanationBox,
+                            englishExplanation,
+                            amharicExplanation
+                        );
+
+                    }
+                );
+
+
+                options.appendChild(
+                    button
+                );
+
+            }
+        );
+
+
+        // =============================================
+        // ADD TO CARD
+        // =============================================
+
+        questionCard.appendChild(
+            questionLabel
+        );
+
+
+        questionCard.appendChild(
+            questionText
+        );
+
+
+        questionCard.appendChild(
+            options
+        );
+
+
+        questionCard.appendChild(
+            explanationBox
+        );
+
+
+        questionsPage.appendChild(
+            questionCard
+        );
+
+    }
+
+
+    // =================================================
+    // CHECK ANSWER
+    // =================================================
+
+    function checkAnswer(
+        q,
+        selectedIndex,
+        options,
+        explanationBox,
+        englishExplanation,
+        amharicExplanation
+    ) {
+
+        const buttons =
+            options.querySelectorAll(
+                ".optionBtn"
+            );
+
+
+        const correctAnswer =
+            Number.parseInt(
+                q.answer,
+                10
+            );
+
+
+        buttons.forEach(
+            (
+                button,
+                index
+            ) => {
+
+                button.disabled =
+                    true;
+
+
+                if (
+                    index ===
+                    correctAnswer
+                ) {
+
+                    button.classList.add(
+                        "correct"
                     );
 
                 }
+
+
+                if (
+                    index ===
+                    selectedIndex &&
+                    index !==
+                    correctAnswer
+                ) {
+
+                    button.classList.add(
+                        "wrong"
+                    );
+
+                }
+
+            }
+        );
+
+
+        englishExplanation.textContent =
+            getEnglishExplanation(
+                q
             );
 
 
-            options.appendChild(
-                button
+        amharicExplanation.textContent =
+            getAmharicExplanation(
+                q
             );
 
-        }
-    );
 
-
-    // ---------------------------------------------
-    // EXPLANATION
-    // ---------------------------------------------
-
-    const explanationBox =
-        document.createElement(
-            "section"
-        );
-
-
-    explanationBox.className =
-        "explanationCard";
-
-
-    explanationBox.style.display =
-        "none";
-
-
-    const englishSection =
-        document.createElement(
-            "div"
-        );
-
-
-    englishSection.className =
-        "explanationSection";
-
-
-    const englishTitle =
-        document.createElement(
-            "h3"
-        );
-
-
-    englishTitle.textContent =
-        "📖 English Explanation";
-
-
-    const englishExplanation =
-        document.createElement(
-            "p"
-        );
-
-
-    englishExplanation.textContent =
-        "";
-
-
-    englishSection.appendChild(
-        englishTitle
-    );
-
-
-    englishSection.appendChild(
-        englishExplanation
-    );
-
-
-    const divider =
-        document.createElement(
-            "div"
-        );
-
-
-    divider.className =
-        "explanationDivider";
-
-
-    const amharicSection =
-        document.createElement(
-            "div"
-        );
-
-
-    amharicSection.className =
-        "explanationSection";
-
-
-    const amharicTitle =
-        document.createElement(
-            "h3"
-        );
-
-
-    amharicTitle.textContent =
-        "🇪🇹 የአማርኛ ማብራሪያ";
-
-
-    const amharicExplanation =
-        document.createElement(
-            "p"
-        );
-
-
-    amharicExplanation.textContent =
-        "";
-
-
-    amharicSection.appendChild(
-        amharicTitle
-    );
-
-
-    amharicSection.appendChild(
-        amharicExplanation
-    );
-
-
-    explanationBox.appendChild(
-        englishSection
-    );
-
-
-    explanationBox.appendChild(
-        divider
-    );
-
-
-    explanationBox.appendChild(
-        amharicSection
-    );
-
-
-    // ---------------------------------------------
-    // ADD EVERYTHING TO CARD
-    // ---------------------------------------------
-
-    questionCard.appendChild(
-        questionLabel
-    );
-
-
-    questionCard.appendChild(
-        questionText
-    );
-
-
-    questionCard.appendChild(
-        options
-    );
-
-
-    questionCard.appendChild(
-        explanationBox
-    );
-
-
-    // ---------------------------------------------
-    // ADD CARD TO PAGE
-    // ---------------------------------------------
-
-    questionsPage.appendChild(
-        questionCard
-    );
-
-}
-
-
-// =====================================================
-// CHECK ANSWER
-// =====================================================
-
-function checkAnswer(
-    q,
-    selectedIndex,
-    options,
-    explanationBox,
-    englishExplanation,
-    amharicExplanation
-) {
-
-    const buttons =
-        options.querySelectorAll(
-            ".optionBtn"
-        );
-
-
-    const correctAnswer =
-        Number.parseInt(
-            q.answer,
-            10
-        );
-
-
-    // ---------------------------------------------
-    // DISABLE ALL OPTIONS
-    // ---------------------------------------------
-
-    buttons.forEach(
-        (
-            button,
-            index
-        ) => {
-
-            button.disabled =
-                true;
-
-
-            // Correct answer
-
-            if (
-                index ===
-                correctAnswer
-            ) {
-
-                button.classList.add(
-                    "correct"
-                );
-
-            }
-
-
-            // Wrong selected answer
-
-            if (
-                index === selectedIndex &&
-                index !== correctAnswer
-            ) {
-
-                button.classList.add(
-                    "wrong"
-                );
-
-            }
-
-        }
-    );
-
-
-    // ---------------------------------------------
-    // SHOW ENGLISH EXPLANATION
-    // ---------------------------------------------
-
-    englishExplanation.textContent =
-        getEnglishExplanation(
-            q
-        );
-
-
-    // ---------------------------------------------
-    // SHOW AMHARIC EXPLANATION
-    // ---------------------------------------------
-
-    amharicExplanation.textContent =
-        getAmharicExplanation(
-            q
-        );
-
-
-    // ---------------------------------------------
-    // SHOW EXPLANATION BOX
-    // ---------------------------------------------
-
-    explanationBox.style.display =
-        "block";
-
-}
-
-
-// =====================================================
-// UPDATE PROGRESS
-// =====================================================
-
-function updateProgress() {
-
-    if (
-        !progressBar
-    ) {
-
-        return;
+        explanationBox.style.display =
+            "block";
 
     }
 
 
-    if (
-        questions.length === 0
-    ) {
+    // =================================================
+    // UPDATE PROGRESS
+    // =================================================
+
+    function updateProgress() {
+
+        if (
+            questions.length === 0
+        ) {
+
+            progressBar.style.width =
+                "0%";
+
+            return;
+
+        }
+
+
+        const endIndex =
+            Math.min(
+                (
+                    currentPage + 1
+                ) *
+                QUESTIONS_PER_PAGE,
+                questions.length
+            );
+
+
+        const progress =
+            (
+                endIndex /
+                questions.length
+            ) *
+            100;
+
 
         progressBar.style.width =
-            "0%";
-
-        return;
+            `${progress}%`;
 
     }
 
 
-    const endIndex =
-        Math.min(
-            (currentPage + 1) *
-                QUESTIONS_PER_PAGE,
-            questions.length
-        );
+    // =================================================
+    // UPDATE NAVIGATION
+    // =================================================
+
+    function updateNavigation() {
+
+        previousQuestionBtn.disabled =
+            currentPage === 0;
 
 
-    const progress =
-        (
-            endIndex /
-            questions.length
-        ) * 100;
-
-
-    progressBar.style.width =
-        `${progress}%`;
-
-}
-
-
-// =====================================================
-// UPDATE NAVIGATION
-// =====================================================
-
-function updateNavigation() {
-
-    if (
-        !previousQuestionBtn ||
-        !nextBtn
-    ) {
-
-        return;
-
-    }
-
-
-    // ---------------------------------------------
-    // PREVIOUS
-    // ---------------------------------------------
-
-    previousQuestionBtn.disabled =
-        currentPage === 0;
-
-
-    // ---------------------------------------------
-    // FINAL PAGE
-    // ---------------------------------------------
-
-    const totalPages =
-        Math.ceil(
-            questions.length /
+        const totalPages =
+            Math.ceil(
+                questions.length /
                 QUESTIONS_PER_PAGE
-        );
+            );
 
 
-    if (
-        currentPage ===
-        totalPages - 1
-    ) {
+        if (
+            currentPage ===
+            totalPages - 1
+        ) {
 
-        nextBtn.innerHTML = `
+            nextBtn.innerHTML = `
+                <span>Finish Quiz</span>
+                <span class="navArrow">✓</span>
+            `;
 
-            <span>
-                Finish Quiz
-            </span>
+        }
 
-            <span class="navArrow">
-                ✓
-            </span>
+        else {
 
-        `;
+            nextBtn.innerHTML = `
+                <span>Next</span>
+                <span class="navArrow">→</span>
+            `;
 
-    } else {
-
-        nextBtn.innerHTML = `
-
-            <span>
-                Next
-            </span>
-
-            <span class="navArrow">
-                →
-            </span>
-
-        `;
+        }
 
     }
 
-}
 
-
-// =====================================================
-// NEXT PAGE
-// =====================================================
-
-if (
-    nextBtn
-) {
+    // =================================================
+    // NEXT
+    // =================================================
 
     nextBtn.addEventListener(
         "click",
@@ -1291,7 +1150,7 @@ if (
             const totalPages =
                 Math.ceil(
                     questions.length /
-                        QUESTIONS_PER_PAGE
+                    QUESTIONS_PER_PAGE
                 );
 
 
@@ -1304,7 +1163,9 @@ if (
 
                 loadPage();
 
-            } else {
+            }
+
+            else {
 
                 finishQuiz();
 
@@ -1313,16 +1174,10 @@ if (
         }
     );
 
-}
 
-
-// =====================================================
-// PREVIOUS PAGE
-// =====================================================
-
-if (
-    previousQuestionBtn
-) {
+    // =================================================
+    // PREVIOUS
+    // =================================================
 
     previousQuestionBtn.addEventListener(
         "click",
@@ -1341,81 +1196,38 @@ if (
         }
     );
 
-}
 
+    // =================================================
+    // FINISH QUIZ
+    // =================================================
 
-// =====================================================
-// FINISH QUIZ
-// =====================================================
-
-function finishQuiz() {
-
-    if (
-        questionNumber
-    ) {
+    function finishQuiz() {
 
         questionNumber.textContent =
             `Questions ${questions.length} / ${questions.length}`;
 
-    }
-
-
-    if (
-        progressBar
-    ) {
 
         progressBar.style.width =
             "100%";
 
-    }
-
-
-    if (
-        questionsPage
-    ) {
 
         questionsPage.innerHTML =
             "";
 
-    }
-
-
-    if (
-        previousQuestionBtn
-    ) {
 
         previousQuestionBtn.style.display =
             "none";
 
-    }
-
-
-    if (
-        nextBtn
-    ) {
 
         nextBtn.disabled =
             true;
 
 
         nextBtn.innerHTML = `
-
-            <span>
-                Completed
-            </span>
-
-            <span class="navArrow">
-                ✓
-            </span>
-
+            <span>Completed</span>
+            <span class="navArrow">✓</span>
         `;
 
-    }
-
-
-    if (
-        completionMessage
-    ) {
 
         completionMessage.hidden =
             false;
@@ -1428,16 +1240,10 @@ function finishQuiz() {
 
     }
 
-}
 
-
-// =====================================================
-// TOP BACK BUTTON
-// =====================================================
-
-if (
-    backBtn
-) {
+    // =================================================
+    // BACK
+    // =================================================
 
     backBtn.addEventListener(
         "click",
@@ -1449,37 +1255,31 @@ if (
 
                 window.history.back();
 
-            } else {
+            }
 
-                if (
-                    subject
-                ) {
+            else if (
+                subject
+            ) {
 
-                    window.location.href =
-                        `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
+                window.location.href =
+                    `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter)}`;
 
-                } else {
+            }
 
-                    window.location.href =
-                        "index.html";
+            else {
 
-                }
+                window.location.href =
+                    "index.html";
 
             }
 
         }
     );
 
-}
 
-
-// =====================================================
-// HOME BUTTON
-// =====================================================
-
-if (
-    homeBtn
-) {
+    // =================================================
+    // HOME
+    // =================================================
 
     homeBtn.addEventListener(
         "click",
@@ -1491,37 +1291,12 @@ if (
         }
     );
 
-}
+
+    // =================================================
+    // START QUIZ
+    // =================================================
+
+    loadPage();
 
 
-// =====================================================
-// DEBUG INFORMATION
-// =====================================================
-
-console.log(
-    "Unique Academic Quiz Loaded"
-);
-
-
-console.log(
-    "Requested subject:",
-    rawSubject
-);
-
-
-console.log(
-    "Normalized subject:",
-    subject
-);
-
-
-console.log(
-    "Chapter:",
-    chapter
-);
-
-
-console.log(
-    "Questions loaded:",
-    questions.length
-);
+})();
