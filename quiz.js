@@ -7,54 +7,39 @@
 // READ URL PARAMETERS
 // =====================================================
 
-const params =
-new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
-const subject =
-params.get("subject");
+const subject = params.get("subject");
 
-const chapter =
-params.get("chapter");
+const chapter = params.get("chapter");
 
 // =====================================================
 // HTML ELEMENTS
 // =====================================================
 
-const subjectName =
-document.getElementById("subjectName");
+const subjectName = document.getElementById("subjectName");
 
-const chapterName =
-document.getElementById("chapterName");
+const chapterName = document.getElementById("chapterName");
 
-const headerTitle =
-document.getElementById("headerTitle");
+const headerTitle = document.getElementById("headerTitle");
 
-const headerChapter =
-document.getElementById("headerChapter");
+const headerChapter = document.getElementById("headerChapter");
 
-const questionNumber =
-document.getElementById("questionNumber");
+const questionNumber = document.getElementById("questionNumber");
 
-const nextBtn =
-document.getElementById("nextBtn");
+const nextBtn = document.getElementById("nextBtn");
 
-const previousQuestionBtn =
-document.getElementById("previousQuestionBtn");
+const previousQuestionBtn = document.getElementById("previousQuestionBtn");
 
-const backBtn =
-document.getElementById("backBtn");
+const backBtn = document.getElementById("backBtn");
 
-const homeBtn =
-document.getElementById("homeBtn");
+const homeBtn = document.getElementById("homeBtn");
 
-const progressBar =
-document.getElementById("progressBar");
+const progressBar = document.getElementById("progressBar");
 
-const completionMessage =
-document.getElementById("completionMessage");
+const completionMessage = document.getElementById("completionMessage");
 
-const questionsPage =
-document.getElementById("questionsPage");
+const questionsPage = document.getElementById("questionsPage");
 
 // =====================================================
 // QUESTIONS PER PAGE
@@ -73,53 +58,43 @@ let currentPage = 0;
 // =====================================================
 
 function formatSubjectName(value) {
+    if (!value) {
+        return "Unknown Subject";
+    }
 
-if (!value) {  
-
-    return "Unknown Subject";  
-
-}  
-
-return value  
-    .replace(/-/g, " ")  
-    .replace(/\b\w/g, letter =>  
-        letter.toUpperCase()  
-    );
-
+    return value
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, letter =>
+            letter.toUpperCase()
+        );
 }
 
 // =====================================================
 // SHOW SUBJECT + CHAPTER
 // =====================================================
 
-const formattedSubject =
-formatSubjectName(subject);
+const formattedSubject = formatSubjectName(subject);
 
-const formattedChapter =
-chapter
-? Chapter ${chapter}
-: "Unknown Chapter";
+const formattedChapter = chapter
+    ? `Chapter ${chapter}`
+    : "Unknown Chapter";
 
-subjectName.textContent =
-formattedSubject;
+subjectName.textContent = formattedSubject;
 
-chapterName.textContent =
-formattedChapter;
+chapterName.textContent = formattedChapter;
 
-headerTitle.textContent =
-formattedSubject;
+headerTitle.textContent = formattedSubject;
 
-headerChapter.textContent =
-${formattedChapter} • Quiz;
+headerChapter.textContent = `${formattedChapter} • Quiz`;
 
 // =====================================================
 // LOAD QUESTIONS
 // =====================================================
 
 const questions =
-typeof quizData !== "undefined"
-? quizData?.[subject]?.[chapter] || []
-: [];
+    typeof quizData !== "undefined"
+        ? quizData?.[subject]?.[chapter] || []
+        : [];
 
 // =====================================================
 // NO QUESTIONS FOUND
@@ -127,31 +102,29 @@ typeof quizData !== "undefined"
 
 if (questions.length === 0) {
 
-questionsPage.innerHTML = `  
-    <section class="questionCard">  
+    questionsPage.innerHTML = `
+        <section class="questionCard">
+            <h2 class="questionText">
+                No questions found for this chapter.
+            </h2>
+        </section>
+    `;
 
-        <h2 class="questionText">  
-            No questions found for this chapter.  
-        </h2>  
+    questionNumber.textContent =
+        "Question 0 / 0";
 
-    </section>  
-`;  
+    previousQuestionBtn.style.display =
+        "none";
 
-questionNumber.textContent =  
-    "Question 0 / 0";  
+    nextBtn.style.display =
+        "none";
 
-previousQuestionBtn.style.display =  
-    "none";  
-
-nextBtn.style.display =  
-    "none";  
-
-progressBar.style.width =  
-    "0%";
+    progressBar.style.width =
+        "0%";
 
 } else {
 
-loadPage();
+    loadPage();
 
 }
 
@@ -161,25 +134,18 @@ loadPage();
 
 function getEnglishExplanation(q) {
 
-if (q.englishExplanation) {  
+    if (q.englishExplanation) {
+        return q.englishExplanation;
+    }
 
-    return q.englishExplanation;  
+    if (
+        q.explanation &&
+        q.explanation.english
+    ) {
+        return q.explanation.english;
+    }
 
-}  
-
-
-if (  
-    q.explanation &&  
-    q.explanation.english  
-) {  
-
-    return q.explanation.english;  
-
-}  
-
-
-return "";
-
+    return "";
 }
 
 // =====================================================
@@ -188,25 +154,18 @@ return "";
 
 function getAmharicExplanation(q) {
 
-if (q.amharicExplanation) {  
+    if (q.amharicExplanation) {
+        return q.amharicExplanation;
+    }
 
-    return q.amharicExplanation;  
+    if (
+        q.explanation &&
+        q.explanation.amharic
+    ) {
+        return q.explanation.amharic;
+    }
 
-}  
-
-
-if (  
-    q.explanation &&  
-    q.explanation.amharic  
-) {  
-
-    return q.explanation.amharic;  
-
-}  
-
-
-return "";
-
+    return "";
 }
 
 // =====================================================
@@ -215,72 +174,61 @@ return "";
 
 function loadPage() {
 
-questionsPage.innerHTML = "";  
+    questionsPage.innerHTML = "";
 
+    const startIndex =
+        currentPage * QUESTIONS_PER_PAGE;
 
-const startIndex =  
-    currentPage * QUESTIONS_PER_PAGE;  
+    const endIndex =
+        Math.min(
+            startIndex + QUESTIONS_PER_PAGE,
+            questions.length
+        );
 
+    // ---------------------------------------------
+    // Create each question
+    // ---------------------------------------------
 
-const endIndex =  
-    Math.min(  
-        startIndex + QUESTIONS_PER_PAGE,  
-        questions.length  
-    );  
+    for (
+        let index = startIndex;
+        index < endIndex;
+        index++
+    ) {
 
+        createQuestionCard(
+            questions[index],
+            index
+        );
 
-// ---------------------------------------------  
-// Create each question  
-// ---------------------------------------------  
+    }
 
-for (  
-    let index = startIndex;  
-    index < endIndex;  
-    index++  
-) {  
+    // ---------------------------------------------
+    // Update question counter
+    // ---------------------------------------------
 
-    createQuestionCard(  
-        questions[index],  
-        index  
-    );  
+    questionNumber.textContent =
+        `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
 
-}  
+    // ---------------------------------------------
+    // Update navigation
+    // ---------------------------------------------
 
+    updateNavigation();
 
-// ---------------------------------------------  
-// Update question counter  
-// ---------------------------------------------  
+    // ---------------------------------------------
+    // Update progress
+    // ---------------------------------------------
 
-questionNumber.textContent =  
-    `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;  
+    updateProgress();
 
+    // ---------------------------------------------
+    // Scroll to top
+    // ---------------------------------------------
 
-// ---------------------------------------------  
-// Update navigation  
-// ---------------------------------------------  
-
-updateNavigation();  
-
-
-// ---------------------------------------------  
-// Update progress  
-// ---------------------------------------------  
-
-updateProgress();  
-
-
-// ---------------------------------------------  
-// Scroll to top  
-// ---------------------------------------------  
-
-window.scrollTo({  
-
-    top: 0,  
-
-    behavior: "smooth"  
-
-});
-
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 // =====================================================
@@ -289,264 +237,215 @@ window.scrollTo({
 
 function createQuestionCard(q, index) {
 
-// ---------------------------------------------  
-// Main question card  
-// ---------------------------------------------  
+    // ---------------------------------------------
+    // Main question card
+    // ---------------------------------------------
 
-const questionCard =  
-    document.createElement("section");  
+    const questionCard =
+        document.createElement("section");
 
+    questionCard.className =
+        "questionCard";
 
-questionCard.className =  
-    "questionCard";  
+    // ---------------------------------------------
+    // Question label
+    // ---------------------------------------------
 
+    const questionLabel =
+        document.createElement("div");
 
-// ---------------------------------------------  
-// Question label  
-// ---------------------------------------------  
+    questionLabel.className =
+        "questionLabel";
 
-const questionLabel =  
-    document.createElement("div");  
+    const questionBadge =
+        document.createElement("span");
 
+    questionBadge.className =
+        "questionBadge";
 
-questionLabel.className =  
-    "questionLabel";  
+    questionBadge.textContent =
+        `QUESTION ${index + 1}`;
 
+    questionLabel.appendChild(
+        questionBadge
+    );
 
-const questionBadge =  
-    document.createElement("span");  
+    // ---------------------------------------------
+    // Question text
+    // ---------------------------------------------
 
+    const questionText =
+        document.createElement("h2");
 
-questionBadge.className =  
-    "questionBadge";  
+    questionText.className =
+        "questionText";
 
+    questionText.textContent =
+        q.question || "";
 
-questionBadge.textContent =  
-    `QUESTION ${index + 1}`;  
+    // ---------------------------------------------
+    // Options
+    // ---------------------------------------------
 
+    const options =
+        document.createElement("div");
 
-questionLabel.appendChild(  
-    questionBadge  
-);  
+    options.className =
+        "options";
 
+    const questionOptions =
+        q.options ||
+        q.choices ||
+        [];
 
-// ---------------------------------------------  
-// Question text  
-// ---------------------------------------------  
+    questionOptions.forEach(
+        (option, optionIndex) => {
 
-const questionText =  
-    document.createElement("h2");  
+            const button =
+                document.createElement("button");
 
+            button.type =
+                "button";
 
-questionText.className =  
-    "questionText";  
+            button.className =
+                "optionBtn";
 
+            button.textContent =
+                option;
 
-questionText.textContent =  
-    q.question || "";  
+            button.addEventListener(
+                "click",
+                () => {
 
+                    checkAnswer(
+                        q,
+                        optionIndex,
+                        options,
+                        explanationBox,
+                        englishExplanation,
+                        amharicExplanation
+                    );
 
-// ---------------------------------------------  
-// Options  
-// ---------------------------------------------  
+                }
+            );
 
-const options =  
-    document.createElement("div");  
+            options.appendChild(
+                button
+            );
 
+        }
+    );
 
-options.className =  
-    "options";  
+    // ---------------------------------------------
+    // Explanation
+    // ---------------------------------------------
 
+    const explanationBox =
+        document.createElement("section");
 
-const questionOptions =  
-    q.options ||  
-    q.choices ||  
-    [];  
+    explanationBox.className =
+        "explanationCard";
 
+    explanationBox.style.display =
+        "none";
 
-questionOptions.forEach(  
-    (option, optionIndex) => {  
+    const englishSection =
+        document.createElement("div");
 
-        const button =  
-            document.createElement("button");  
+    englishSection.className =
+        "explanationSection";
 
+    const englishTitle =
+        document.createElement("h3");
 
-        button.type =  
-            "button";  
+    englishTitle.textContent =
+        "📖 English Explanation";
 
+    const englishExplanation =
+        document.createElement("p");
 
-        button.className =  
-            "optionBtn";  
+    englishExplanation.textContent =
+        "";
 
+    englishSection.appendChild(
+        englishTitle
+    );
 
-        button.textContent =  
-            option;  
+    englishSection.appendChild(
+        englishExplanation
+    );
 
+    const divider =
+        document.createElement("div");
 
-        button.addEventListener(  
-            "click",  
-            () => {  
+    divider.className =
+        "explanationDivider";
 
-                checkAnswer(  
-                    q,  
-                    optionIndex,  
-                    options,  
-                    explanationBox,  
-                    englishExplanation,  
-                    amharicExplanation  
-                );  
+    const amharicSection =
+        document.createElement("div");
 
-            }  
-        );  
+    amharicSection.className =
+        "explanationSection";
 
+    const amharicTitle =
+        document.createElement("h3");
 
-        options.appendChild(  
-            button  
-        );  
+    amharicTitle.textContent =
+        "🇪🇹 የአማርኛ ማብራሪያ";
 
-    }  
-);  
+    const amharicExplanation =
+        document.createElement("p");
 
+    amharicExplanation.textContent =
+        "";
 
-// ---------------------------------------------  
-// Explanation  
-// ---------------------------------------------  
+    amharicSection.appendChild(
+        amharicTitle
+    );
 
-const explanationBox =  
-    document.createElement("section");  
+    amharicSection.appendChild(
+        amharicExplanation
+    );
 
+    explanationBox.appendChild(
+        englishSection
+    );
 
-explanationBox.className =  
-    "explanationCard";  
+    explanationBox.appendChild(
+        divider
+    );
 
+    explanationBox.appendChild(
+        amharicSection
+    );
 
-explanationBox.style.display =  
-    "none";  
+    // ---------------------------------------------
+    // Add everything to card
+    // ---------------------------------------------
 
+    questionCard.appendChild(
+        questionLabel
+    );
 
-const englishSection =  
-    document.createElement("div");  
+    questionCard.appendChild(
+        questionText
+    );
 
+    questionCard.appendChild(
+        options
+    );
 
-englishSection.className =  
-    "explanationSection";  
+    questionCard.appendChild(
+        explanationBox
+    );
 
+    // ---------------------------------------------
+    // Add card to page
+    // ---------------------------------------------
 
-const englishTitle =  
-    document.createElement("h3");  
-
-
-englishTitle.textContent =  
-    "📖 English Explanation";  
-
-
-const englishExplanation =  
-    document.createElement("p");  
-
-
-englishExplanation.textContent =  
-    "";  
-
-
-englishSection.appendChild(  
-    englishTitle  
-);  
-
-
-englishSection.appendChild(  
-    englishExplanation  
-);  
-
-
-const divider =  
-    document.createElement("div");  
-
-
-divider.className =  
-    "explanationDivider";  
-
-
-const amharicSection =  
-    document.createElement("div");  
-
-
-amharicSection.className =  
-    "explanationSection";  
-
-
-const amharicTitle =  
-    document.createElement("h3");  
-
-
-amharicTitle.textContent =  
-    "🇪🇹 የአማርኛ ማብራሪያ";  
-
-
-const amharicExplanation =  
-    document.createElement("p");  
-
-
-amharicExplanation.textContent =  
-    "";  
-
-
-amharicSection.appendChild(  
-    amharicTitle  
-);  
-
-
-amharicSection.appendChild(  
-    amharicExplanation  
-);  
-
-
-explanationBox.appendChild(  
-    englishSection  
-);  
-
-
-explanationBox.appendChild(  
-    divider  
-);  
-
-
-explanationBox.appendChild(  
-    amharicSection  
-);  
-
-
-// ---------------------------------------------  
-// Add everything to card  
-// ---------------------------------------------  
-
-questionCard.appendChild(  
-    questionLabel  
-);  
-
-
-questionCard.appendChild(  
-    questionText  
-);  
-
-
-questionCard.appendChild(  
-    options  
-);  
-
-
-questionCard.appendChild(  
-    explanationBox  
-);  
-
-
-// ---------------------------------------------  
-// Add card to page  
-// ---------------------------------------------  
-
-questionsPage.appendChild(  
-    questionCard  
-);
-
+    questionsPage.appendChild(
+        questionCard
+    );
 }
 
 // =====================================================
@@ -554,86 +453,80 @@ questionsPage.appendChild(
 // =====================================================
 
 function checkAnswer(
-q,
-selectedIndex,
-options,
-explanationBox,
-englishExplanation,
-amharicExplanation
+    q,
+    selectedIndex,
+    options,
+    explanationBox,
+    englishExplanation,
+    amharicExplanation
 ) {
 
-const buttons =  
-    options.querySelectorAll(  
-        ".optionBtn"  
-    );  
+    const buttons =
+        options.querySelectorAll(
+            ".optionBtn"
+        );
 
+    const correctAnswer =
+        q.answer;
 
-const correctAnswer =  
-    q.answer;  
+    // ---------------------------------------------
+    // Disable all options
+    // ---------------------------------------------
 
+    buttons.forEach(
+        (button, index) => {
 
-// ---------------------------------------------  
-// Disable all options  
-// ---------------------------------------------  
+            button.disabled =
+                true;
 
-buttons.forEach(  
-    (button, index) => {  
+            // Correct answer
 
-        button.disabled =  
-            true;  
+            if (
+                index === correctAnswer
+            ) {
 
+                button.classList.add(
+                    "correct"
+                );
 
-        // Correct answer  
-        if (  
-            index === correctAnswer  
-        ) {  
+            }
 
-            button.classList.add(  
-                "correct"  
-            );  
+            // Wrong selected answer
 
-        }  
+            if (
+                index === selectedIndex &&
+                index !== correctAnswer
+            ) {
 
+                button.classList.add(
+                    "wrong"
+                );
 
-        // Wrong selected answer  
-        if (  
-            index === selectedIndex &&  
-            index !== correctAnswer  
-        ) {  
+            }
 
-            button.classList.add(  
-                "wrong"  
-            );  
+        }
+    );
 
-        }  
+    // ---------------------------------------------
+    // Show English explanation
+    // ---------------------------------------------
 
-    }  
-);  
+    englishExplanation.textContent =
+        getEnglishExplanation(q);
 
+    // ---------------------------------------------
+    // Show Amharic explanation
+    // ---------------------------------------------
 
-// ---------------------------------------------  
-// Show English explanation  
-// ---------------------------------------------  
+    amharicExplanation.textContent =
+        getAmharicExplanation(q);
 
-englishExplanation.textContent =  
-    getEnglishExplanation(q);  
+    // ---------------------------------------------
+    // Show explanation box
+    // ---------------------------------------------
 
-
-// ---------------------------------------------  
-// Show Amharic explanation  
-// ---------------------------------------------  
-
-amharicExplanation.textContent =  
-    getAmharicExplanation(q);  
-
-
-// ---------------------------------------------  
-// Show explanation box  
-// ---------------------------------------------  
-
-explanationBox.style.display =  
-    "block";
-
+    explanationBox.style.display =
+        "block";
 }
 
 // =====================================================
@@ -642,35 +535,26 @@ explanationBox.style.display =
 
 function updateProgress() {
 
-if (questions.length === 0) {  
+    if (questions.length === 0) {
 
-    progressBar.style.width =  
-        "0%";  
+        progressBar.style.width =
+            "0%";
 
-    return;  
+        return;
+    }
 
-}  
+    const endIndex =
+        Math.min(
+            (currentPage + 1) *
+                QUESTIONS_PER_PAGE,
+            questions.length
+        );
 
+    const progress =
+        (endIndex / questions.length) * 100;
 
-const endIndex =  
-    Math.min(  
-        (  
-            currentPage + 1  
-        ) * QUESTIONS_PER_PAGE,  
-        questions.length  
-    );  
-
-
-const progress =  
-    (  
-        endIndex /  
-        questions.length  
-    ) * 100;  
-
-
-progressBar.style.width =  
-    `${progress}%`;
-
+    progressBar.style.width =
+        `${progress}%`;
 }
 
 // =====================================================
@@ -679,46 +563,41 @@ progressBar.style.width =
 
 function updateNavigation() {
 
-// ---------------------------------------------  
-// Previous  
-// ---------------------------------------------  
+    // ---------------------------------------------
+    // Previous
+    // ---------------------------------------------
 
-previousQuestionBtn.disabled =  
-    currentPage === 0;  
+    previousQuestionBtn.disabled =
+        currentPage === 0;
 
+    // ---------------------------------------------
+    // Check if this is the final page
+    // ---------------------------------------------
 
-// ---------------------------------------------  
-// Check if this is the final page  
-// ---------------------------------------------  
+    const totalPages =
+        Math.ceil(
+            questions.length /
+                QUESTIONS_PER_PAGE
+        );
 
-const totalPages =  
-    Math.ceil(  
-        questions.length /  
-        QUESTIONS_PER_PAGE  
-    );  
+    if (
+        currentPage ===
+        totalPages - 1
+    ) {
 
+        nextBtn.innerHTML = `
+            <span>Finish Quiz</span>
+            <span class="navArrow">✓</span>
+        `;
 
-if (  
-    currentPage ===  
-    totalPages - 1  
-) {  
+    } else {
 
-    nextBtn.innerHTML =  
-        `  
-        <span>Finish Quiz</span>  
-        <span class="navArrow">✓</span>  
-        `;  
+        nextBtn.innerHTML = `
+            <span>Next</span>
+            <span class="navArrow">→</span>
+        `;
 
-} else {  
-
-    nextBtn.innerHTML =  
-        `  
-        <span>Next</span>  
-        <span class="navArrow">→</span>  
-        `;  
-
-}
-
+    }
 }
 
 // =====================================================
@@ -726,33 +605,31 @@ if (
 // =====================================================
 
 nextBtn.addEventListener(
-"click",
-() => {
+    "click",
+    () => {
 
-const totalPages =  
-        Math.ceil(  
-            questions.length /  
-            QUESTIONS_PER_PAGE  
-        );  
+        const totalPages =
+            Math.ceil(
+                questions.length /
+                    QUESTIONS_PER_PAGE
+            );
 
+        if (
+            currentPage <
+            totalPages - 1
+        ) {
 
-    if (  
-        currentPage <  
-        totalPages - 1  
-    ) {  
+            currentPage++;
 
-        currentPage++;  
+            loadPage();
 
-        loadPage();  
+        } else {
 
-    } else {  
+            finishQuiz();
 
-        finishQuiz();  
+        }
 
-    }  
-
-}
-
+    }
 );
 
 // =====================================================
@@ -760,21 +637,20 @@ const totalPages =
 // =====================================================
 
 previousQuestionBtn.addEventListener(
-"click",
-() => {
+    "click",
+    () => {
 
-if (  
-        currentPage > 0  
-    ) {  
+        if (
+            currentPage > 0
+        ) {
 
-        currentPage--;  
+            currentPage--;
 
-        loadPage();  
+            loadPage();
 
-    }  
+        }
 
-}
-
+    }
 );
 
 // =====================================================
@@ -783,41 +659,33 @@ if (
 
 function finishQuiz() {
 
-questionNumber.textContent =  
-    `Questions ${questions.length} / ${questions.length}`;  
+    questionNumber.textContent =
+        `Questions ${questions.length} / ${questions.length}`;
 
+    progressBar.style.width =
+        "100%";
 
-progressBar.style.width =  
-    "100%";  
+    questionsPage.innerHTML =
+        "";
 
+    previousQuestionBtn.style.display =
+        "none";
 
-questionsPage.innerHTML = "";  
+    nextBtn.disabled =
+        true;
 
+    nextBtn.innerHTML = `
+        <span>Completed</span>
+        <span class="navArrow">✓</span>
+    `;
 
-previousQuestionBtn.style.display =  
-    "none";  
+    completionMessage.hidden =
+        false;
 
-
-nextBtn.disabled =  
-    true;  
-
-
-nextBtn.innerHTML =  
-    `  
-    <span>Completed</span>  
-    <span class="navArrow">✓</span>  
-    `;  
-
-
-completionMessage.hidden =  
-    false;  
-
-
-completionMessage.scrollIntoView({  
-    behavior: "smooth",  
-    block: "center"  
-});
-
+    completionMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
 }
 
 // =====================================================
@@ -825,33 +693,32 @@ completionMessage.scrollIntoView({
 // =====================================================
 
 backBtn.addEventListener(
-"click",
-() => {
+    "click",
+    () => {
 
-if (  
-        window.history.length > 1  
-    ) {  
+        if (
+            window.history.length > 1
+        ) {
 
-        window.history.back();  
+            window.history.back();
 
-    } else {  
+        } else {
 
-        if (subject) {  
+            if (subject) {
 
-            window.location.href =  
-                `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;  
+                window.location.href =
+                    `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
 
-        } else {  
+            } else {
 
-            window.location.href =  
-                "index.html";  
+                window.location.href =
+                    "index.html";
 
-        }  
+            }
 
-    }  
+        }
 
-}
-
+    }
 );
 
 // =====================================================
@@ -859,12 +726,11 @@ if (
 // =====================================================
 
 homeBtn.addEventListener(
-"click",
-() => {
+    "click",
+    () => {
 
-window.location.href =  
-        "index.html";  
+        window.location.href =
+            "index.html";
 
-}
-
+    }
 );
