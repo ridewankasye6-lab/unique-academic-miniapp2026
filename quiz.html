@@ -1,223 +1,287 @@
-<!DOCTYPE html>  <html lang="en">  <head>  <meta charset="UTF-8">  
+<!DOCTYPE html>
+<html lang="en">
 
-<meta  
-    name="viewport"  
-    content="width=device-width, initial-scale=1.0"  
->  
+<head>
 
-<meta  
-    name="theme-color"  
-    content="#8e44ad"  
->  
+    <meta charset="UTF-8">
 
-<title>Unique Academic Quiz</title>  
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link  
-    rel="stylesheet"  
-    href="quiz.css"  
->
+    <meta
+        name="theme-color"
+        content="#8e44ad"
+    >
 
-</head>  <body>  <div class="page">  <!-- =====================================  
-     STICKY TOP HEADER  
-====================================== -->  
+    <title>Unique Academic Quiz</title>
 
-<header class="quizHeader">  
+    <link
+        rel="stylesheet"
+        href="quiz.css"
+    >
 
-    <button  
-        id="backBtn"  
-        class="topNavBtn backBtn"  
-        type="button"  
-        aria-label="Go back"  
-    >  
-        <span class="navIcon">←</span>  
-        <span class="backText">Back</span>  
-    </button>  
+</head>
 
 
-    <div class="headerTitle">  
+<body>
 
-        <span class="headerBook">📖</span>  
+<div class="page">
 
-        <div>  
 
-            <h1 id="headerTitle">  
-                Unique Academic  
-            </h1>  
+    <!-- =====================================
+         STICKY TOP HEADER
+    ====================================== -->
 
-            <p id="headerChapter">  
-                Quiz  
-            </p>  
+    <header class="quizHeader">
 
-        </div>  
+        <button
+            id="backBtn"
+            class="topNavBtn backBtn"
+            type="button"
+            aria-label="Go back"
+        >
 
-    </div>  
+            <span class="navIcon">
+                ←
+            </span>
 
+            <span class="backText">
+                Back
+            </span>
 
-    <button  
-        id="homeBtn"  
-        class="topNavBtn homeBtn"  
-        type="button"  
-        aria-label="Go to home"  
-    >  
-        <span class="homeIcon">⌂</span>  
-        <span class="homeText">Home</span>  
-    </button>  
+        </button>
 
-</header>  
 
+        <div class="headerTitle">
 
-<!-- =====================================  
-     MAIN QUIZ CONTENT  
-====================================== -->  
+            <span class="headerBook">
+                📖
+            </span>
 
-<main  
-    class="quizContainer"  
-    id="quizContainer"  
->  
+            <div>
 
-    <!-- Subject / Chapter -->  
+                <h1 id="headerTitle">
+                    Unique Academic
+                </h1>
 
-    <section class="subjectCard">  
+                <p id="headerChapter">
+                    Quiz
+                </p>
 
-        <div class="subjectIcon">  
-            🎓  
-        </div>  
+            </div>
 
-        <div class="subjectInfo">  
+        </div>
 
-            <p class="smallLabel">  
-                CURRENT QUIZ  
-            </p>  
 
-            <h2 id="subjectName">  
-                Subject  
-            </h2>  
+        <button
+            id="homeBtn"
+            class="topNavBtn homeBtn"
+            type="button"
+            aria-label="Go to home"
+        >
 
-            <p id="chapterName">  
-                Chapter 1  
-            </p>  
+            <span class="homeIcon">
+                ⌂
+            </span>
 
-        </div>  
+            <span class="homeText">
+                Home
+            </span>
 
-    </section>  
+        </button>
 
+    </header>
 
-    <!-- Progress -->  
 
-    <section class="progressCard">  
 
-        <div class="progressTop">  
+    <!-- =====================================
+         MAIN QUIZ CONTENT
+    ====================================== -->
 
-            <span>  
-                Quiz Progress  
-            </span>  
+    <main
+        class="quizContainer"
+        id="quizContainer"
+    >
 
-            <strong id="questionNumber">  
-                Question 1 / 10  
-            </strong>  
 
-        </div>  
+        <!-- =====================================
+             SUBJECT / CHAPTER
+        ====================================== -->
 
+        <section class="subjectCard">
 
-        <div class="progressTrack">  
+            <div class="subjectIcon">
+                🎓
+            </div>
 
-            <div  
-                id="progressBar"  
-                class="progressBar"  
-            ></div>  
+            <div class="subjectInfo">
 
-        </div>  
+                <p class="smallLabel">
+                    CURRENT QUIZ
+                </p>
 
-    </section>  
+                <h2 id="subjectName">
+                    Subject
+                </h2>
 
+                <p id="chapterName">
+                    Chapter 1
+                </p>
 
-    <!-- =====================================  
- QUESTIONS PAGE
+            </div>
 
-====================================== -->
+        </section>
 
-<div id="questionsPage"></div>  <!-- =====================================  
-         BOTTOM QUESTION NAVIGATION  
-    ====================================== -->  
 
-    <div class="questionNavigation">  
 
-        <button  
-            id="previousQuestionBtn"  
-            class="questionNavBtn previousQuestionBtn"  
-            type="button"  
-        >  
+        <!-- =====================================
+             PROGRESS
+        ====================================== -->
 
-            <span class="navArrow">  
-                ←  
-            </span>  
+        <section class="progressCard">
 
-            <span>  
-                Previous  
-            </span>  
+            <div class="progressTop">
 
-        </button>  
+                <span>
+                    Quiz Progress
+                </span>
 
+                <strong id="questionNumber">
+                    Question 1 / 10
+                </strong>
 
-        <button  
-            id="nextBtn"  
-            class="questionNavBtn nextQuestionBtn"  
-            type="button"  
-        >  
+            </div>
 
-            <span>  
-                Next  
-            </span>  
 
-            <span class="navArrow">  
-                →  
-            </span>  
+            <div class="progressTrack">
 
-        </button>  
+                <div
+                    id="progressBar"
+                    class="progressBar"
+                ></div>
 
-    </div>  
+            </div>
 
+        </section>
 
-    <!-- Completion -->  
 
-    <div  
-        id="completionMessage"  
-        class="completionMessage"  
-        hidden  
-    >  
 
-        <div class="completionIcon">  
-            🎉  
-        </div>  
+        <!-- =====================================
+             QUESTIONS
+        ====================================== -->
 
-        <h2>  
-            Quiz Completed!  
-        </h2>  
+        <div id="questionsPage"></div>
 
-        <p>  
-            Great job! You have reached the end of this quiz.  
-        </p>  
 
-    </div>  
 
+        <!-- =====================================
+             BOTTOM QUESTION NAVIGATION
+        ====================================== -->
 
-</main>  
+        <div class="questionNavigation">
 
+            <button
+                id="previousQuestionBtn"
+                class="questionNavBtn previousQuestionBtn"
+                type="button"
+            >
 
-<footer class="quizFooter">  
+                <span class="navArrow">
+                    ←
+                </span>
 
-    <p>  
-        🎓 Unique Academic  
-    </p>  
+                <span>
+                    Previous
+                </span>
 
-    <span>  
-        Learn • Practice • Succeed  
-    </span>  
+            </button>
 
-</footer>
 
-</div>  <!-- =====================================  
+            <button
+                id="nextBtn"
+                class="questionNavBtn nextQuestionBtn"
+                type="button"
+            >
+
+                <span>
+                    Next
+                </span>
+
+                <span class="navArrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =====================================
+             COMPLETION
+        ====================================== -->
+
+        <div
+            id="completionMessage"
+            class="completionMessage"
+            hidden
+        >
+
+            <div class="completionIcon">
+                🎉
+            </div>
+
+            <h2>
+                Quiz Completed!
+            </h2>
+
+            <p>
+                Great job! You have reached the end of this quiz.
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="quizFooter">
+
+        <p>
+            🎓 Unique Academic
+        </p>
+
+        <span>
+            Learn • Practice • Succeed
+        </span>
+
+    </footer>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     QUIZ DATA LOADER
      
+     IMPORTANT ORDER:
+
+     1. access-guard.js
+     2. quizData.js
+     3. additionalQuizData.js
+     4. quiz.js
+
+     quiz.js is NOT loaded until the data files finish.
+===================================================== -->
+
 <script type="module">
 
 document.addEventListener(
@@ -228,12 +292,13 @@ document.addEventListener(
             "Unique Academic access granted."
         );
 
-        // =====================================================
-        // PREVENT QUIZ ENGINE FROM STARTING MORE THAN ONCE
-        // =====================================================
+
+        // =================================================
+        // PREVENT DOUBLE LOADING
+        // =================================================
 
         if (
-            window.uniqueAcademicQuizStarted
+            window.uniqueAcademicQuizStarted === true
         ) {
 
             console.log(
@@ -244,13 +309,15 @@ document.addEventListener(
 
         }
 
+
         window.uniqueAcademicQuizStarted =
             true;
 
 
-        // =====================================================
-        // LOAD A SCRIPT AND WAIT FOR IT TO FINISH
-        // =====================================================
+
+        // =================================================
+        // LOAD SCRIPT FUNCTION
+        // =================================================
 
         function loadScript(
             src,
@@ -258,38 +325,46 @@ document.addEventListener(
         ) {
 
             return new Promise(
-                function (resolve, reject) {
+                function (
+                    resolve,
+                    reject
+                ) {
 
                     const script =
                         document.createElement(
                             "script"
                         );
 
+
                     script.src =
                         src;
 
+
                     script.async =
                         false;
+
 
                     script.onload =
                         function () {
 
                             console.log(
-                                src +
-                                " loaded successfully."
+                                "Loaded:",
+                                src
                             );
 
                             resolve();
 
                         };
 
+
                     script.onerror =
                         function () {
 
                             console.error(
-                                "ERROR loading " +
+                                "FAILED TO LOAD:",
                                 src
                             );
+
 
                             if (
                                 required
@@ -302,13 +377,16 @@ document.addEventListener(
                                     )
                                 );
 
-                            } else {
+                            }
+
+                            else {
 
                                 resolve();
 
                             }
 
                         };
+
 
                     document.body.appendChild(
                         script
@@ -320,18 +398,20 @@ document.addEventListener(
         }
 
 
-        // =====================================================
+
+        // =================================================
         // START QUIZ
-        // =====================================================
+        // =================================================
 
         async function startQuiz() {
 
             try {
 
-                // ---------------------------------------------
+
+                // =============================================
                 // STEP 1
                 // LOAD ORIGINAL QUIZ DATA
-                // ---------------------------------------------
+                // =============================================
 
                 await loadScript(
                     "quizData.js",
@@ -339,33 +419,38 @@ document.addEventListener(
                 );
 
 
-                // ---------------------------------------------
-                // VERIFY quizData EXISTS
-                // ---------------------------------------------
+                console.log(
+                    "quizData.js finished loading."
+                );
+
+
+
+                // =============================================
+                // CHECK quizData
+                // =============================================
 
                 if (
-                    typeof window.quizData ===
-                    "undefined" &&
                     typeof quizData ===
                     "undefined"
                 ) {
 
                     throw new Error(
-                        "quizData is not defined after loading quizData.js."
+                        "quizData is not defined after quizData.js loaded."
                     );
 
                 }
 
 
                 console.log(
-                    "Original quizData is available."
+                    "quizData is available."
                 );
 
 
-                // ---------------------------------------------
+
+                // =============================================
                 // STEP 2
                 // LOAD ADDITIONAL QUIZ DATA
-                // ---------------------------------------------
+                // =============================================
 
                 await loadScript(
                     "additionalQuizData.js",
@@ -373,43 +458,15 @@ document.addEventListener(
                 );
 
 
-                // ---------------------------------------------
-                // VERIFY DATA AFTER BOTH FILES
-                // ---------------------------------------------
-
-                const finalQuizData =
-                    typeof window.quizData !==
-                    "undefined"
-                        ? window.quizData
-                        : (
-                            typeof quizData !==
-                            "undefined"
-                                ? quizData
-                                : null
-                        );
-
-
-                if (
-                    !finalQuizData
-                ) {
-
-                    throw new Error(
-                        "quizData is unavailable."
-                    );
-
-                }
-
-
                 console.log(
-                    "Final quizData:",
-                    finalQuizData
+                    "additionalQuizData.js finished loading."
                 );
 
 
-                // ---------------------------------------------
-                // STEP 3
-                // CHECK CURRENT URL
-                // ---------------------------------------------
+
+                // =============================================
+                // GET URL PARAMETERS
+                // =============================================
 
                 const params =
                     new URLSearchParams(
@@ -417,42 +474,42 @@ document.addEventListener(
                     );
 
 
-                const subject =
+                const requestedSubject =
                     params.get(
                         "subject"
                     );
 
 
-                const chapter =
+                const requestedChapter =
                     params.get(
                         "chapter"
                     );
 
 
                 console.log(
-                    "Quiz subject:",
-                    subject
+                    "Requested subject:",
+                    requestedSubject
                 );
 
 
                 console.log(
-                    "Quiz chapter:",
-                    chapter
+                    "Requested chapter:",
+                    requestedChapter
                 );
 
 
-                // ---------------------------------------------
-                // STEP 4
-                // CHECK THAT THE REQUESTED QUIZ EXISTS
-                // ---------------------------------------------
+
+                // =============================================
+                // CHECK URL
+                // =============================================
 
                 if (
-                    !subject ||
-                    !chapter
+                    !requestedSubject ||
+                    !requestedChapter
                 ) {
 
                     console.error(
-                        "Missing subject or chapter in quiz URL."
+                        "Quiz URL is missing subject or chapter."
                     );
 
                     return;
@@ -460,9 +517,14 @@ document.addEventListener(
                 }
 
 
+
+                // =============================================
+                // FIND SUBJECT
+                // =============================================
+
                 const subjectData =
-                    finalQuizData[
-                        subject
+                    quizData[
+                        requestedSubject
                     ];
 
 
@@ -471,25 +533,32 @@ document.addEventListener(
                 ) {
 
                     console.error(
-                        "Subject not found in quizData:",
-                        subject
+                        "Subject does not exist:",
+                        requestedSubject
                     );
+
 
                     console.log(
                         "Available subjects:",
                         Object.keys(
-                            finalQuizData
+                            quizData
                         )
                     );
+
 
                     return;
 
                 }
 
 
+
+                // =============================================
+                // FIND CHAPTER
+                // =============================================
+
                 const chapterData =
                     subjectData[
-                        chapter
+                        requestedChapter
                     ];
 
 
@@ -501,36 +570,78 @@ document.addEventListener(
                 ) {
 
                     console.error(
-                        "No questions found for:",
-                        subject,
-                        "chapter:",
-                        chapter
+                        "No quiz questions found."
                     );
 
+
+                    console.error(
+                        "Subject:",
+                        requestedSubject
+                    );
+
+
+                    console.error(
+                        "Chapter:",
+                        requestedChapter
+                    );
+
+
                     console.log(
-                        "Available chapters for " +
-                        subject +
-                        ":",
+                        "Available chapters:",
                         Object.keys(
                             subjectData
                         )
                     );
+
 
                     return;
 
                 }
 
 
+
+                // =============================================
+                // SUCCESSFUL DATA CHECK
+                // =============================================
+
                 console.log(
-                    "Questions found:",
+                    "================================="
+                );
+
+
+                console.log(
+                    "QUIZ DATA FOUND"
+                );
+
+
+                console.log(
+                    "Subject:",
+                    requestedSubject
+                );
+
+
+                console.log(
+                    "Chapter:",
+                    requestedChapter
+                );
+
+
+                console.log(
+                    "Number of questions:",
                     chapterData.length
                 );
 
 
-                // ---------------------------------------------
-                // STEP 5
+                console.log(
+                    "================================="
+                );
+
+
+
+                // =============================================
+                // STEP 3
                 // LOAD QUIZ ENGINE LAST
-                // ---------------------------------------------
+                // =============================================
 
                 await loadScript(
                     "quiz.js",
@@ -543,18 +654,10 @@ document.addEventListener(
                 );
 
 
-                // ---------------------------------------------
-                // FINAL CHECK
-                // ---------------------------------------------
-
                 console.log(
-                    "Quiz started successfully:",
-                    subject,
-                    "Chapter",
-                    chapter,
-                    chapterData.length,
-                    "questions"
+                    "Quiz engine started."
                 );
+
 
             }
 
@@ -563,8 +666,22 @@ document.addEventListener(
             ) {
 
                 console.error(
-                    "QUIZ START ERROR:",
+                    "================================="
+                );
+
+
+                console.error(
+                    "QUIZ START ERROR"
+                );
+
+
+                console.error(
                     error
+                );
+
+
+                console.error(
+                    "================================="
                 );
 
             }
@@ -572,13 +689,34 @@ document.addEventListener(
         }
 
 
-        // =====================================================
+
+        // =================================================
         // START
-        // =====================================================
+        // =================================================
 
         startQuiz();
 
     }
 );
 
+
+
 </script>
+
+
+
+<!-- =====================================================
+     FIREBASE ACCESS CHECK
+
+     This MUST remain AFTER the loader above.
+===================================================== -->
+
+<script
+    type="module"
+    src="access-guard.js"
+></script>
+
+
+</body>
+
+</html>
