@@ -24,226 +24,145 @@
 
     <style>
 
-/* =====================================================
-   ANTHROPOLOGY QUIZ PROGRESS
-   ===================================================== */
+        /* =========================================
+           COMPACT QUIZ PROGRESS POPUP
+        ========================================= */
 
-.anthroQuizCard {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px;
-    margin: 10px 0;
-    border-radius: 16px;
-}
+        .progressOverlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            z-index: 9999;
+        }
 
-/* Small progress circle */
+        .progressOverlay.show {
+            display: flex;
+        }
 
-.anthroProgressCircle {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    border-radius: 50%;
-    border: 3px solid #1e3a8a;
-    background: #fff;
-    color: #1e3a8a;
+        .progressPopup {
+            width: min(360px, 92vw);
+            max-height: 80vh;
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        .progressPopupIcon {
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
 
-    font-size: 12px;
-    font-weight: 700;
+        .progressPopup h2 {
+            margin: 4px 0;
+            font-size: 20px;
+        }
 
-    cursor: pointer;
-    user-select: none;
-}
+        .progressPopupChapter {
+            margin: 0 0 14px;
+            color: #666;
+            font-size: 14px;
+        }
 
-.anthroProgressCircle:active {
-    transform: scale(.95);
-}
+        .progressPercent {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 7px;
+        }
 
-.anthroQuizInfo {
-    flex: 1;
-}
+        .progressPopupTrack {
+            width: 100%;
+            height: 9px;
+            background: #e8e8e8;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
 
-.anthroQuizInfo .quiz-badge {
-    display: inline-block;
-}
+        .progressPopupBar {
+            height: 100%;
+            width: 0%;
+            background: #1e3a8a;
+            border-radius: 20px;
+            transition: width 0.25s ease;
+        }
 
-.anthroQuizInfo h3 {
-    margin: 5px 0 0;
-}
+        .progressStats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-bottom: 15px;
+        }
 
-/* Real quiz arrow */
+        .progressStat {
+            background: #f5f6fa;
+            border-radius: 10px;
+            padding: 9px 5px;
+        }
 
-.anthroQuizArrow {
-    text-decoration: none;
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
+        .progressStat strong {
+            display: block;
+            font-size: 17px;
+        }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        .progressStat span {
+            display: block;
+            font-size: 11px;
+            color: #666;
+            margin-top: 2px;
+        }
 
-    border-radius: 50%;
-    font-size: 22px;
-}
+        .progressPopupButtons {
+            display: flex;
+            gap: 8px;
+        }
 
-/* =====================================================
-   SMALL PROGRESS MODAL
-   ===================================================== */
+        .progressContinue,
+        .progressClose {
+            flex: 1;
+            border: 0;
+            border-radius: 10px;
+            padding: 11px 8px;
+            font-weight: 700;
+            cursor: pointer;
+        }
 
-.anthroModalOverlay {
-    position: fixed;
-    inset: 0;
+        .progressContinue {
+            background: #1e3a8a;
+            color: white;
+        }
 
-    background: rgba(0, 0, 0, .45);
+        .progressClose {
+            background: #eeeeee;
+            color: #333;
+        }
 
-    display: none;
-    align-items: center;
-    justify-content: center;
+        @media (max-width: 420px) {
 
-    padding: 15px;
-    z-index: 9999;
-}
+            .progressPopup {
+                width: 94vw;
+                padding: 15px;
+            }
 
-.anthroModalOverlay.show {
-    display: flex;
-}
+            .progressPopupIcon {
+                font-size: 28px;
+            }
 
-.anthroProgressModal {
-    width: min(320px, 92vw);
-    max-height: 85vh;
-    overflow-y: auto;
+            .progressPopup h2 {
+                font-size: 18px;
+            }
 
-    background: #fff;
-    border-radius: 18px;
+            .progressPercent {
+                font-size: 25px;
+            }
 
-    padding: 18px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, .25);
-
-    position: relative;
-}
-
-.anthroModalClose {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-
-    width: 30px;
-    height: 30px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #f1f1f1;
-
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.anthroModalIcon {
-    font-size: 30px;
-    text-align: center;
-}
-
-.anthroModalTitle {
-    text-align: center;
-    margin: 5px 0 2px;
-    font-size: 20px;
-}
-
-.anthroModalChapter {
-    text-align: center;
-    margin: 0 0 14px;
-    opacity: .7;
-    font-size: 13px;
-}
-
-/* Progress */
-
-.anthroProgressTrack {
-    width: 100%;
-    height: 9px;
-
-    background: #e8e8e8;
-    border-radius: 20px;
-
-    overflow: hidden;
-    margin: 8px 0 14px;
-}
-
-.anthroProgressFill {
-    height: 100%;
-    width: 0%;
-
-    background: #1e3a8a;
-    border-radius: 20px;
-
-    transition: width .3s ease;
-}
-
-/* Statistics */
-
-.anthroStats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-}
-
-.anthroStat {
-    padding: 10px;
-    border-radius: 11px;
-    background: #f6f7fb;
-    text-align: center;
-}
-
-.anthroStat strong {
-    display: block;
-    font-size: 18px;
-}
-
-.anthroStat span {
-    display: block;
-    font-size: 11px;
-    opacity: .7;
-    margin-top: 2px;
-}
-
-/* Buttons */
-
-.anthroModalButtons {
-    display: flex;
-    gap: 8px;
-    margin-top: 14px;
-}
-
-.anthroContinue,
-.anthroReset {
-    flex: 1;
-    min-height: 40px;
-
-    border: none;
-    border-radius: 10px;
-
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.anthroContinue {
-    background: #1e3a8a;
-    color: #fff;
-}
-
-.anthroReset {
-    background: #eeeeee;
-    color: #333;
-}
+        }
 
     </style>
 
@@ -253,9 +172,9 @@
 <body>
 
 
-<!-- =====================================================
-     TOP NAVIGATION
-     ===================================================== -->
+<!-- =====================================
+     STICKY PAGE NAVIGATION
+===================================== -->
 
 <header class="pageNav">
 
@@ -301,7 +220,9 @@
         type="button"
     >
 
-        <span>🏠</span>
+        <span>
+            🏠
+        </span>
 
         <span class="pageHomeText">
             Home
@@ -313,9 +234,9 @@
 
 
 
-<!-- =====================================================
+<!-- =====================================
      MAIN CONTENT
-     ===================================================== -->
+===================================== -->
 
 <main class="subjectPage">
 
@@ -333,10 +254,9 @@
     </section>
 
 
-
-    <!-- =================================================
+    <!-- =====================================
          CHAPTERS
-         ================================================= -->
+    ====================================== -->
 
     <section>
 
@@ -388,9 +308,9 @@
 
 
 
-    <!-- =================================================
+    <!-- =====================================
          RESOURCES
-         ================================================= -->
+    ====================================== -->
 
     <section>
 
@@ -416,9 +336,9 @@
 
 
 
-    <!-- =================================================
+    <!-- =====================================
          CHAPTER QUIZZES
-         ================================================= -->
+    ====================================== -->
 
     <section>
 
@@ -427,24 +347,20 @@
         </h2>
 
 
-
-        <!-- =============================================
+        <!-- =================================
              CHAPTER 1
-             ============================================= -->
+        ================================== -->
 
-        <div class="quiz-card anthroQuizCard">
+        <div
+            class="quiz-card"
+            data-chapter="1"
+        >
 
-            <button
-                type="button"
-                class="anthroProgressCircle"
-                data-chapter="1"
-                aria-label="View Chapter 1 progress"
-            >
+            <div class="quiz-progress">
                 0%
-            </button>
+            </div>
 
-
-            <div class="anthroQuizInfo quiz-info">
+            <div class="quiz-info">
 
                 <span class="quiz-badge">
                     Chapter 1
@@ -456,16 +372,10 @@
 
             </div>
 
-
-            <!-- IMPORTANT:
-                 This link goes DIRECTLY to quiz.html.
-                 Do not change it.
-            -->
-
             <a
                 href="quiz.html?subject=anthropology&chapter=1"
-                class="quiz-arrow anthroQuizArrow"
-                aria-label="Open Chapter 1 quiz"
+                class="quiz-arrow"
+                data-chapter="1"
             >
                 ➜
             </a>
@@ -474,23 +384,20 @@
 
 
 
-        <!-- =============================================
+        <!-- =================================
              CHAPTER 2
-             ============================================= -->
+        ================================== -->
 
-        <div class="quiz-card anthroQuizCard">
+        <div
+            class="quiz-card"
+            data-chapter="2"
+        >
 
-            <button
-                type="button"
-                class="anthroProgressCircle"
-                data-chapter="2"
-                aria-label="View Chapter 2 progress"
-            >
+            <div class="quiz-progress">
                 0%
-            </button>
+            </div>
 
-
-            <div class="anthroQuizInfo quiz-info">
+            <div class="quiz-info">
 
                 <span class="quiz-badge">
                     Chapter 2
@@ -502,11 +409,10 @@
 
             </div>
 
-
             <a
                 href="quiz.html?subject=anthropology&chapter=2"
-                class="quiz-arrow anthroQuizArrow"
-                aria-label="Open Chapter 2 quiz"
+                class="quiz-arrow"
+                data-chapter="2"
             >
                 ➜
             </a>
@@ -515,23 +421,20 @@
 
 
 
-        <!-- =============================================
+        <!-- =================================
              CHAPTER 3
-             ============================================= -->
+        ================================== -->
 
-        <div class="quiz-card anthroQuizCard">
+        <div
+            class="quiz-card"
+            data-chapter="3"
+        >
 
-            <button
-                type="button"
-                class="anthroProgressCircle"
-                data-chapter="3"
-                aria-label="View Chapter 3 progress"
-            >
+            <div class="quiz-progress">
                 0%
-            </button>
+            </div>
 
-
-            <div class="anthroQuizInfo quiz-info">
+            <div class="quiz-info">
 
                 <span class="quiz-badge">
                     Chapter 3
@@ -543,11 +446,10 @@
 
             </div>
 
-
             <a
                 href="quiz.html?subject=anthropology&chapter=3"
-                class="quiz-arrow anthroQuizArrow"
-                aria-label="Open Chapter 3 quiz"
+                class="quiz-arrow"
+                data-chapter="3"
             >
                 ➜
             </a>
@@ -556,23 +458,20 @@
 
 
 
-        <!-- =============================================
+        <!-- =================================
              CHAPTER 4
-             ============================================= -->
+        ================================== -->
 
-        <div class="quiz-card anthroQuizCard">
+        <div
+            class="quiz-card"
+            data-chapter="4"
+        >
 
-            <button
-                type="button"
-                class="anthroProgressCircle"
-                data-chapter="4"
-                aria-label="View Chapter 4 progress"
-            >
+            <div class="quiz-progress">
                 0%
-            </button>
+            </div>
 
-
-            <div class="anthroQuizInfo quiz-info">
+            <div class="quiz-info">
 
                 <span class="quiz-badge">
                     Chapter 4
@@ -584,11 +483,10 @@
 
             </div>
 
-
             <a
                 href="quiz.html?subject=anthropology&chapter=4"
-                class="quiz-arrow anthroQuizArrow"
-                aria-label="Open Chapter 4 quiz"
+                class="quiz-arrow"
+                data-chapter="4"
             >
                 ➜
             </a>
@@ -597,23 +495,20 @@
 
 
 
-        <!-- =============================================
+        <!-- =================================
              CHAPTER 5
-             ============================================= -->
+        ================================== -->
 
-        <div class="quiz-card anthroQuizCard">
+        <div
+            class="quiz-card"
+            data-chapter="5"
+        >
 
-            <button
-                type="button"
-                class="anthroProgressCircle"
-                data-chapter="5"
-                aria-label="View Chapter 5 progress"
-            >
+            <div class="quiz-progress">
                 0%
-            </button>
+            </div>
 
-
-            <div class="anthroQuizInfo quiz-info">
+            <div class="quiz-info">
 
                 <span class="quiz-badge">
                     Chapter 5
@@ -625,11 +520,10 @@
 
             </div>
 
-
             <a
                 href="quiz.html?subject=anthropology&chapter=5"
-                class="quiz-arrow anthroQuizArrow"
-                aria-label="Open Chapter 5 quiz"
+                class="quiz-arrow"
+                data-chapter="5"
             >
                 ➜
             </a>
@@ -643,82 +537,74 @@
 
 
 
-<!-- =====================================================
-     SMALL PROGRESS MODAL
-     ===================================================== -->
+<!-- =====================================
+     COMPACT PROGRESS POPUP
+===================================== -->
 
 <div
-    id="anthroModalOverlay"
-    class="anthroModalOverlay"
+    id="progressOverlay"
+    class="progressOverlay"
     aria-hidden="true"
 >
 
     <div
-        class="anthroProgressModal"
+        class="progressPopup"
         role="dialog"
         aria-modal="true"
-        aria-labelledby="anthroModalTitle"
     >
 
-        <button
-            id="anthroModalClose"
-            class="anthroModalClose"
-            type="button"
-            aria-label="Close"
-        >
-            ×
-        </button>
-
-
-        <div class="anthroModalIcon">
-            📚
+        <div class="progressPopupIcon">
+            🎓
         </div>
 
-
-        <h2
-            id="anthroModalTitle"
-            class="anthroModalTitle"
-        >
-            Chapter Progress
+        <h2>
+            Anthropology
         </h2>
 
-
         <p
-            id="anthroModalChapter"
-            class="anthroModalChapter"
+            id="progressPopupChapter"
+            class="progressPopupChapter"
         >
             Chapter 1
         </p>
 
 
-        <div class="anthroProgressTrack">
+        <div
+            id="progressPercent"
+            class="progressPercent"
+        >
+            0%
+        </div>
+
+
+        <div class="progressPopupTrack">
 
             <div
-                id="anthroProgressFill"
-                class="anthroProgressFill"
+                id="progressPopupBar"
+                class="progressPopupBar"
             ></div>
 
         </div>
 
 
-        <div class="anthroStats">
+        <div class="progressStats">
 
-            <div class="anthroStat">
+            <div class="progressStat">
 
-                <strong id="anthroTotal">
+                <strong id="totalQuestions">
                     0
                 </strong>
 
                 <span>
-                    Total
+                    Total Questions
                 </span>
 
             </div>
 
 
-            <div class="anthroStat">
+            <div class="progressStat">
 
-                <strong id="anthroAttempted">
+                <strong id="attemptedQuestions">
                     0
                 </strong>
 
@@ -729,9 +615,9 @@
             </div>
 
 
-            <div class="anthroStat">
+            <div class="progressStat">
 
-                <strong id="anthroCorrect">
+                <strong id="correctQuestions">
                     0
                 </strong>
 
@@ -742,9 +628,9 @@
             </div>
 
 
-            <div class="anthroStat">
+            <div class="progressStat">
 
-                <strong id="anthroWrong">
+                <strong id="wrongQuestions">
                     0
                 </strong>
 
@@ -757,23 +643,23 @@
         </div>
 
 
-        <div class="anthroModalButtons">
+        <div class="progressPopupButtons">
 
             <button
-                id="anthroContinue"
-                class="anthroContinue"
+                id="progressClose"
+                class="progressClose"
                 type="button"
             >
-                Continue →
+                Close
             </button>
 
 
             <button
-                id="anthroReset"
-                class="anthroReset"
+                id="progressContinue"
+                class="progressContinue"
                 type="button"
             >
-                Reset
+                Continue ➜
             </button>
 
         </div>
@@ -784,9 +670,9 @@
 
 
 
-<!-- =====================================================
-     PAGE NAVIGATION
-     ===================================================== -->
+<!-- =====================================
+     PAGE NAVIGATION JAVASCRIPT
+===================================== -->
 
 <script>
 
@@ -796,6 +682,10 @@ const pageBackBtn =
 const pageHomeBtn =
     document.getElementById("pageHomeBtn");
 
+
+/* =========================================
+   BACK
+========================================= */
 
 pageBackBtn.addEventListener(
     "click",
@@ -816,6 +706,10 @@ pageBackBtn.addEventListener(
 );
 
 
+/* =========================================
+   HOME
+========================================= */
+
 pageHomeBtn.addEventListener(
     "click",
     () => {
@@ -830,293 +724,298 @@ pageHomeBtn.addEventListener(
 
 
 
-<!-- =====================================================
-     ANTHROPOLOGY PROGRESS
-     ===================================================== -->
+<!-- =====================================
+     PROGRESS POPUP JAVASCRIPT
+===================================== -->
 
 <script>
 
-(function () {
+const progressOverlay =
+    document.getElementById("progressOverlay");
 
-    const circles =
-        document.querySelectorAll(
-            ".anthroProgressCircle"
-        );
+const progressPopupChapter =
+    document.getElementById(
+        "progressPopupChapter"
+    );
 
-    const modal =
-        document.getElementById(
-            "anthroModalOverlay"
-        );
+const progressPercent =
+    document.getElementById(
+        "progressPercent"
+    );
 
-    const closeBtn =
-        document.getElementById(
-            "anthroModalClose"
-        );
+const progressPopupBar =
+    document.getElementById(
+        "progressPopupBar"
+    );
 
-    const continueBtn =
-        document.getElementById(
-            "anthroContinue"
-        );
+const totalQuestions =
+    document.getElementById(
+        "totalQuestions"
+    );
 
-    const resetBtn =
-        document.getElementById(
-            "anthroReset"
-        );
+const attemptedQuestions =
+    document.getElementById(
+        "attemptedQuestions"
+    );
 
-    const modalChapter =
-        document.getElementById(
-            "anthroModalChapter"
-        );
+const correctQuestions =
+    document.getElementById(
+        "correctQuestions"
+    );
 
-    const progressFill =
-        document.getElementById(
-            "anthroProgressFill"
-        );
+const wrongQuestions =
+    document.getElementById(
+        "wrongQuestions"
+    );
 
-    const totalEl =
-        document.getElementById(
-            "anthroTotal"
-        );
+const progressClose =
+    document.getElementById(
+        "progressClose"
+    );
 
-    const attemptedEl =
-        document.getElementById(
-            "anthroAttempted"
-        );
-
-    const correctEl =
-        document.getElementById(
-            "anthroCorrect"
-        );
-
-    const wrongEl =
-        document.getElementById(
-            "anthroWrong"
-        );
+const progressContinue =
+    document.getElementById(
+        "progressContinue"
+    );
 
 
-    let selectedChapter = "1";
+let selectedChapter = null;
+
+let selectedQuizUrl = null;
 
 
-    /*
-     * ---------------------------------------------
-     * Get questions safely.
-     *
-     * This does NOT modify quizData.
-     * ---------------------------------------------
-     */
+/* =========================================
+   STORAGE KEY
+========================================= */
 
-    function getQuestions(chapter) {
+function getStorageKey(chapter) {
 
-        try {
+    return (
+        "uniqueAcademicProgress_" +
+        "anthropology_" +
+        chapter
+    );
 
-            if (
-                typeof quizData !== "undefined" &&
-                quizData &&
-                quizData.anthropology &&
-                quizData.anthropology[chapter]
-            ) {
-
-                return quizData.anthropology[chapter];
-
-            }
-
-        } catch (error) {
-
-            console.log(
-                "Quiz data is not available on this page yet."
-            );
-
-        }
-
-        return [];
-
-    }
+}
 
 
-    /*
-     * ---------------------------------------------
-     * Read saved progress if it exists.
-     *
-     * If nothing has been saved yet,
-     * everything correctly starts at zero.
-     * ---------------------------------------------
-     */
+/* =========================================
+   GET SAVED PROGRESS
+========================================= */
 
-    function getProgress(chapter) {
+function getProgress(chapter) {
 
-        const key =
-            "uniqueAcademicProgress_anthropology_" +
-            chapter;
+    const key =
+        getStorageKey(chapter);
 
-        try {
+    try {
 
-            const saved =
-                localStorage.getItem(key);
+        const saved =
+            localStorage.getItem(key);
 
-            if (saved) {
+        if (!saved) {
 
-                const data =
-                    JSON.parse(saved);
-
-                return {
-
-                    attempted:
-                        Number(data.attempted) || 0,
-
-                    correct:
-                        Number(data.correct) || 0,
-
-                    wrong:
-                        Number(data.wrong) || 0
-
-                };
-
-            }
-
-        } catch (error) {
-
-            console.log(
-                "Could not read saved progress."
-            );
+            return {
+                total: 0,
+                attempted: 0,
+                correct: 0,
+                wrong: 0
+            };
 
         }
+
+
+        const data =
+            JSON.parse(saved);
+
 
         return {
 
+            total:
+                Number(data.total) || 0,
+
+            attempted:
+                Number(data.attempted) || 0,
+
+            correct:
+                Number(data.correct) || 0,
+
+            wrong:
+                Number(data.wrong) || 0
+
+        };
+
+    } catch (error) {
+
+        console.error(
+            "Could not read quiz progress:",
+            error
+        );
+
+
+        return {
+            total: 0,
             attempted: 0,
-
             correct: 0,
-
             wrong: 0
-
         };
 
     }
 
-
-    /*
-     * ---------------------------------------------
-     * Show modal
-     * ---------------------------------------------
-     */
-
-    function showProgress(chapter) {
-
-        selectedChapter =
-            String(chapter);
+}
 
 
-        const questions =
-            getQuestions(selectedChapter);
+/* =========================================
+   OPEN POPUP
+========================================= */
+
+function openProgressPopup(
+    chapter,
+    quizUrl
+) {
+
+    selectedChapter =
+        chapter;
+
+    selectedQuizUrl =
+        quizUrl;
 
 
-        const total =
-            questions.length;
+    const data =
+        getProgress(chapter);
 
 
-        const progress =
-            total > 0
-                ? Math.min(
-                    100,
-                    Math.round(
-                        (
-                            getProgress(
-                                selectedChapter
-                            ).attempted /
-                            total
-                        ) * 100
-                    )
-                )
-                : 0;
+    const total =
+        data.total;
+
+    const attempted =
+        data.attempted;
+
+    const correct =
+        data.correct;
+
+    const wrong =
+        data.wrong;
 
 
-        const saved =
-            getProgress(
-                selectedChapter
+    let percent = 0;
+
+
+    if (total > 0) {
+
+        percent =
+            Math.round(
+                (attempted / total) * 100
             );
-
-
-        modalChapter.textContent =
-            "Chapter " +
-            selectedChapter;
-
-
-        totalEl.textContent =
-            total;
-
-
-        attemptedEl.textContent =
-            Math.min(
-                saved.attempted,
-                total
-            );
-
-
-        correctEl.textContent =
-            saved.correct;
-
-
-        wrongEl.textContent =
-            saved.wrong;
-
-
-        progressFill.style.width =
-            progress + "%";
-
-
-        modal.classList.add("show");
-
-        modal.setAttribute(
-            "aria-hidden",
-            "false"
-        );
 
     }
 
 
-    /*
-     * ---------------------------------------------
-     * Close modal
-     * ---------------------------------------------
-     */
-
-    function closeModal() {
-
-        modal.classList.remove(
-            "show"
-        );
-
-        modal.setAttribute(
-            "aria-hidden",
-            "true"
-        );
-
-    }
+    progressPopupChapter.textContent =
+        `Chapter ${chapter}`;
 
 
-    /*
-     * ---------------------------------------------
-     * Progress circles
-     * ---------------------------------------------
-     */
-
-    circles.forEach(
-        circle => {
-
-            const chapter =
-                circle.dataset.chapter;
+    progressPercent.textContent =
+        `${percent}%`;
 
 
-            circle.addEventListener(
+    progressPopupBar.style.width =
+        `${percent}%`;
+
+
+    totalQuestions.textContent =
+        total;
+
+
+    attemptedQuestions.textContent =
+        attempted;
+
+
+    correctQuestions.textContent =
+        correct;
+
+
+    wrongQuestions.textContent =
+        wrong;
+
+
+    progressOverlay.classList.add(
+        "show"
+    );
+
+
+    progressOverlay.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+}
+
+
+/* =========================================
+   CLOSE POPUP
+========================================= */
+
+function closeProgressPopup() {
+
+    progressOverlay.classList.remove(
+        "show"
+    );
+
+
+    progressOverlay.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+
+    selectedChapter =
+        null;
+
+    selectedQuizUrl =
+        null;
+
+}
+
+
+/* =========================================
+   QUIZ ARROW CLICK
+========================================= */
+
+document
+    .querySelectorAll(".quiz-arrow")
+    .forEach(
+        arrow => {
+
+            arrow.addEventListener(
                 "click",
                 event => {
 
+                    /*
+                     * IMPORTANT:
+                     * Prevent the browser from
+                     * immediately opening the quiz.
+                     *
+                     * The Continue button below
+                     * will use the ORIGINAL URL.
+                     */
+
                     event.preventDefault();
 
-                    event.stopPropagation();
 
-                    showProgress(
-                        chapter
+                    const chapter =
+                        arrow.dataset.chapter;
+
+
+                    const quizUrl =
+                        arrow.getAttribute(
+                            "href"
+                        );
+
+
+                    openProgressPopup(
+                        chapter,
+                        quizUrl
                     );
 
                 }
@@ -1126,174 +1025,97 @@ pageHomeBtn.addEventListener(
     );
 
 
-    /*
-     * ---------------------------------------------
-     * Continue = ACTUAL QUIZ
-     * ---------------------------------------------
-     */
+/* =========================================
+   CONTINUE TO REAL QUIZ
+========================================= */
 
-    continueBtn.addEventListener(
-        "click",
-        () => {
+progressContinue.addEventListener(
+    "click",
+    () => {
 
-            window.location.href =
-                "quiz.html?subject=anthropology&chapter=" +
-                encodeURIComponent(
-                    selectedChapter
-                );
+        if (!selectedQuizUrl) {
+
+            return;
 
         }
-    );
 
 
-    /*
-     * ---------------------------------------------
-     * Close
-     * ---------------------------------------------
-     */
+        /*
+         * This is the ORIGINAL quiz URL.
+         * Nothing is changed.
+         */
 
-    closeBtn.addEventListener(
-        "click",
-        closeModal
-    );
-
-
-    /*
-     * Close by tapping outside
-     * ---------------------------------------------
-     */
-
-    modal.addEventListener(
-        "click",
-        event => {
-
-            if (
-                event.target === modal
-            ) {
-
-                closeModal();
-
-            }
-
-        }
-    );
-
-
-    /*
-     * Close with Escape
-     * ---------------------------------------------
-     */
-
-    document.addEventListener(
-        "keydown",
-        event => {
-
-            if (
-                event.key === "Escape"
-            ) {
-
-                closeModal();
-
-            }
-
-        }
-    );
-
-
-    /*
-     * ---------------------------------------------
-     * Reset only selected chapter
-     * ---------------------------------------------
-     */
-
-    resetBtn.addEventListener(
-        "click",
-        () => {
-
-            const key =
-                "uniqueAcademicProgress_anthropology_" +
-                selectedChapter;
-
-
-            localStorage.removeItem(
-                key
-            );
-
-
-            showProgress(
-                selectedChapter
-            );
-
-        }
-    );
-
-
-    /*
-     * ---------------------------------------------
-     * Update circles.
-     * ---------------------------------------------
-     */
-
-    function updateCircles() {
-
-        circles.forEach(
-            circle => {
-
-                const chapter =
-                    circle.dataset.chapter;
-
-
-                const questions =
-                    getQuestions(
-                        chapter
-                    );
-
-
-                const total =
-                    questions.length;
-
-
-                const saved =
-                    getProgress(
-                        chapter
-                    );
-
-
-                const percent =
-                    total > 0
-                        ? Math.min(
-                            100,
-                            Math.round(
-                                (
-                                    saved.attempted /
-                                    total
-                                ) * 100
-                            )
-                        )
-                        : 0;
-
-
-                circle.textContent =
-                    percent + "%";
-
-            }
-        );
+        window.location.href =
+            selectedQuizUrl;
 
     }
+);
 
 
-    updateCircles();
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+progressClose.addEventListener(
+    "click",
+    () => {
+
+        closeProgressPopup();
+
+    }
+);
 
 
-})();
+/* =========================================
+   CLICK OUTSIDE POPUP
+========================================= */
+
+progressOverlay.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target ===
+            progressOverlay
+        ) {
+
+            closeProgressPopup();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   ESC KEY
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape" &&
+            progressOverlay.classList.contains(
+                "show"
+            )
+        ) {
+
+            closeProgressPopup();
+
+        }
+
+    }
+);
 
 </script>
 
 
 
-<!-- =====================================================
+<!-- =====================================
      ACCESS GUARD
-     ===================================================== -->
+===================================== -->
 
 <script
     type="module"
