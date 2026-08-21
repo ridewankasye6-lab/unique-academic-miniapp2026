@@ -463,6 +463,60 @@ body {
 
 
 /* =====================================================
+   ANSWER TAP ANIMATION
+   CSS ONLY — DOES NOT CHANGE QUIZ LOGIC
+===================================================== */
+
+.optionBtn.correct {
+    animation: correctAnswer 0.35s ease-out;
+}
+
+.optionBtn.wrong {
+    animation: wrongAnswer 0.35s ease-out;
+}
+
+@keyframes correctAnswer {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes wrongAnswer {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =====================================================
    EXPLANATION
 ===================================================== */
 
@@ -771,6 +825,8 @@ body {
     }
 
 }
+
+
 /* =========================================
    STUDENT CONTENT PROTECTION
 ========================================= */
