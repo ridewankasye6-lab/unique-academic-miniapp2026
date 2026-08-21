@@ -3,24 +3,241 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta
-        name="theme-color"
-        content="#1e3a8a"
-    >
+<meta
+    name="theme-color"
+    content="#1e3a8a"
+>
 
-    <title>Anthropology | Unique Academic</title>
+<title>Anthropology | Unique Academic</title>
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+
+<!-- =====================================
+     SMALL QUIZ POPUP STYLE
+===================================== -->
+
+<style>
+
+#chapterProgressOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#chapterProgressOverlay[hidden] {
+    display: none;
+}
+
+
+#chapterProgressModal {
+    width: 285px;
+    max-width: 88vw;
+    background: #fff;
+    border-radius: 16px;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+
+.closeProgressModal {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    background: transparent;
+    font-size: 22px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+
+.modalChapterIcon {
+    font-size: 27px;
+    margin: 0 0 3px;
+}
+
+
+.modalChapterBadge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: #f0e8f5;
+    color: #8e44ad;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+#modalChapterTitle {
+    margin: 5px 0 1px;
+    font-size: 17px;
+}
+
+
+.modalSubtitle {
+    margin: 0 0 8px;
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* =====================================
+   SMALL CIRCLE
+===================================== */
+
+.bigProgressCircle {
+    width: 65px;
+    height: 65px;
+    margin: 7px auto;
+    border-radius: 50%;
+    background: #f2eaf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bigProgressCircle strong {
+    display: block;
+    font-size: 17px;
+}
+
+
+.bigProgressCircle span {
+    display: block;
+    font-size: 8px;
+}
+
+
+/* =====================================
+   PROGRESS BAR
+===================================== */
+
+.modalProgressTrack {
+    width: 100%;
+    height: 5px;
+    margin: 8px 0 10px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.modalProgressBar {
+    width: 0;
+    height: 100%;
+    background: #8e44ad;
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   SMALL STATS
+===================================== */
+
+.progressStats {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 5px;
+}
+
+
+.progressStat {
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 5px 2px;
+}
+
+
+.statIcon {
+    display: block;
+    font-size: 12px;
+}
+
+
+.progressStat strong {
+    display: block;
+    font-size: 13px;
+}
+
+
+.progressStat small {
+    display: block;
+    font-size: 8px;
+    color: #777;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.modalActions {
+    margin-top: 10px;
+}
+
+
+.continueQuizBtn {
+    width: 100%;
+    border: 0;
+    border-radius: 9px;
+    padding: 8px;
+    background: #8e44ad;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.resetQuizBtn {
+    margin-top: 5px;
+    border: 0;
+    background: transparent;
+    color: #888;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   QUIZ CARDS
+===================================== */
+
+.quiz-card {
+    cursor: pointer;
+}
+
+
+.quiz-arrow {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+}
+
+</style>
 
 </head>
 
@@ -29,7 +246,7 @@
 
 
 <!-- =====================================
-     STICKY PAGE NAVIGATION
+     TOP NAVIGATION
 ===================================== -->
 
 <header class="pageNav">
@@ -39,13 +256,10 @@
         class="pageBackBtn"
         type="button"
     >
-
-        <span>←</span>
-
+        ←
         <span class="pageBackText">
             Back
         </span>
-
     </button>
 
 
@@ -76,7 +290,7 @@
         type="button"
     >
 
-        <span>🏠</span>
+        🏠
 
         <span class="pageHomeText">
             Home
@@ -94,10 +308,6 @@
 
 <main class="subjectPage">
 
-
-    <!-- =====================================
-         SUBJECT INTRO
-    ====================================== -->
 
     <section class="subjectIntro">
 
@@ -169,7 +379,7 @@
 
     <!-- =====================================
          RESOURCES
-    ====================================== -->
+===================================== -->
 
     <section>
 
@@ -196,8 +406,8 @@
 
 
     <!-- =====================================
-         CHAPTER QUIZZES
-    ====================================== -->
+         QUIZZES
+===================================== -->
 
     <section>
 
@@ -207,9 +417,7 @@
 
 
 
-        <!-- =================================
-             CHAPTER 1
-        ================================== -->
+        <!-- CHAPTER 1 -->
 
         <div
             class="quiz-card"
@@ -241,7 +449,6 @@
                 type="button"
                 class="quiz-arrow"
                 data-chapter="1"
-                aria-label="Open Chapter 1 quiz progress"
             >
                 ➜
             </button>
@@ -250,9 +457,7 @@
 
 
 
-        <!-- =================================
-             CHAPTER 2
-        ================================== -->
+        <!-- CHAPTER 2 -->
 
         <div
             class="quiz-card"
@@ -284,7 +489,6 @@
                 type="button"
                 class="quiz-arrow"
                 data-chapter="2"
-                aria-label="Open Chapter 2 quiz progress"
             >
                 ➜
             </button>
@@ -293,9 +497,7 @@
 
 
 
-        <!-- =================================
-             CHAPTER 3
-        ================================== -->
+        <!-- CHAPTER 3 -->
 
         <div
             class="quiz-card"
@@ -327,7 +529,6 @@
                 type="button"
                 class="quiz-arrow"
                 data-chapter="3"
-                aria-label="Open Chapter 3 quiz progress"
             >
                 ➜
             </button>
@@ -336,9 +537,7 @@
 
 
 
-        <!-- =================================
-             CHAPTER 4
-        ================================== -->
+        <!-- CHAPTER 4 -->
 
         <div
             class="quiz-card"
@@ -370,7 +569,6 @@
                 type="button"
                 class="quiz-arrow"
                 data-chapter="4"
-                aria-label="Open Chapter 4 quiz progress"
             >
                 ➜
             </button>
@@ -379,9 +577,7 @@
 
 
 
-        <!-- =================================
-             CHAPTER 5
-        ================================== -->
+        <!-- CHAPTER 5 -->
 
         <div
             class="quiz-card"
@@ -413,12 +609,12 @@
                 type="button"
                 class="quiz-arrow"
                 data-chapter="5"
-                aria-label="Open Chapter 5 quiz progress"
             >
                 ➜
             </button>
 
         </div>
+
 
     </section>
 
@@ -428,47 +624,33 @@
 
 
 <!-- =====================================
-     CHAPTER PROGRESS MODAL
+     SMALL PROGRESS POPUP
 ===================================== -->
 
 <div
     id="chapterProgressOverlay"
-    class="chapterProgressOverlay"
     hidden
 >
 
 
     <div
         id="chapterProgressModal"
-        class="chapterProgressModal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modalChapterTitle"
     >
 
-
-        <!-- CLOSE -->
 
         <button
             id="closeProgressModal"
             class="closeProgressModal"
             type="button"
-            aria-label="Close"
         >
             ×
         </button>
 
 
-
-        <!-- ICON -->
-
         <div class="modalChapterIcon">
             📚
         </div>
 
-
-
-        <!-- TITLE -->
 
         <span
             id="modalChapterBadge"
@@ -488,16 +670,13 @@
         </p>
 
 
-
-        <!-- =================================
-             BIG PROGRESS
-        ================================== -->
-
         <div class="bigProgressCircle">
 
             <div>
 
-                <strong id="modalProgressPercent">
+                <strong
+                    id="modalProgressPercent"
+                >
                     0%
                 </strong>
 
@@ -510,11 +689,6 @@
         </div>
 
 
-
-        <!-- =================================
-             PROGRESS BAR
-        ================================== -->
-
         <div class="modalProgressTrack">
 
             <div
@@ -524,11 +698,6 @@
 
         </div>
 
-
-
-        <!-- =================================
-             STATISTICS
-        ================================== -->
 
         <div class="progressStats">
 
@@ -561,7 +730,7 @@
                 </strong>
 
                 <small>
-                    Attempted
+                    Done
                 </small>
 
             </div>
@@ -604,28 +773,14 @@
         </div>
 
 
-
-        <!-- =================================
-             BUTTONS
-        ================================== -->
-
         <div class="modalActions">
-
 
             <button
                 id="continueQuizBtn"
                 class="continueQuizBtn"
                 type="button"
             >
-
-                <span>
-                    Continue Quiz
-                </span>
-
-                <span>
-                    ➜
-                </span>
-
+                Continue Quiz ➜
             </button>
 
 
@@ -634,11 +789,8 @@
                 class="resetQuizBtn"
                 type="button"
             >
-
-                🔄 Reset Progress
-
+                🔄 Reset
             </button>
-
 
         </div>
 
@@ -650,7 +802,7 @@
 
 
 <!-- =====================================
-     PAGE NAVIGATION + PROGRESS JAVASCRIPT
+     JAVASCRIPT
 ===================================== -->
 
 <script>
@@ -661,56 +813,48 @@ document.addEventListener(
 
 
         // =====================================
-        // PAGE NAVIGATION
+        // NAVIGATION
         // =====================================
 
-        const pageBackBtn =
-            document.getElementById(
-                "pageBackBtn"
+        document
+            .getElementById("pageBackBtn")
+            .addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        window.history.length > 1
+                    ) {
+
+                        window.history.back();
+
+                    } else {
+
+                        window.location.href =
+                            "index.html";
+
+                    }
+
+                }
             );
 
 
-        const pageHomeBtn =
-            document.getElementById(
-                "pageHomeBtn"
-            );
-
-
-        pageBackBtn.addEventListener(
-            "click",
-            function () {
-
-                if (
-                    window.history.length > 1
-                ) {
-
-                    window.history.back();
-
-                } else {
+        document
+            .getElementById("pageHomeBtn")
+            .addEventListener(
+                "click",
+                function () {
 
                     window.location.href =
                         "index.html";
 
                 }
-
-            }
-        );
-
-
-        pageHomeBtn.addEventListener(
-            "click",
-            function () {
-
-                window.location.href =
-                    "index.html";
-
-            }
-        );
+            );
 
 
 
         // =====================================
-        // MODAL ELEMENTS
+        // MODAL
         // =====================================
 
         const overlay =
@@ -737,108 +881,63 @@ document.addEventListener(
             );
 
 
-
-        // =====================================
-        // CURRENT CHAPTER
-        // =====================================
-
         let selectedChapter = null;
 
 
 
         // =====================================
-        // QUIZ DATA
-        //
-        // We do NOT depend on quizData.js here.
-        // The modal reads saved progress.
+        // STORAGE KEY
         // =====================================
 
-        const progressKey =
-            function (chapter) {
+        function getKey(chapter) {
 
-                return (
-                    "uniqueAcademicProgress_" +
-                    "anthropology_" +
-                    chapter
-                );
+            return (
+                "uniqueAcademicProgress_" +
+                "anthropology_" +
+                chapter
+            );
 
-            };
+        }
 
 
 
         // =====================================
-        // GET SAVED PROGRESS
+        // GET PROGRESS
         // =====================================
 
         function getProgress(chapter) {
 
-            const key =
-                progressKey(chapter);
-
-
             try {
 
                 const saved =
-                    localStorage.getItem(key);
+                    localStorage.getItem(
+                        getKey(chapter)
+                    );
 
 
                 if (!saved) {
 
                     return {
-
+                        total: 0,
                         attempted: 0,
                         correct: 0,
                         wrong: 0,
                         progress: 0
-
                     };
 
                 }
 
 
-                const data =
-                    JSON.parse(saved);
-
-
-                return {
-
-                    attempted:
-                        Number(
-                            data.attempted
-                        ) || 0,
-
-                    correct:
-                        Number(
-                            data.correct
-                        ) || 0,
-
-                    wrong:
-                        Number(
-                            data.wrong
-                        ) || 0,
-
-                    progress:
-                        Number(
-                            data.progress
-                        ) || 0
-
-                };
+                return JSON.parse(saved);
 
             } catch (error) {
 
-                console.error(
-                    "Could not read quiz progress:",
-                    error
-                );
-
-
                 return {
-
+                    total: 0,
                     attempted: 0,
                     correct: 0,
                     wrong: 0,
                     progress: 0
-
                 };
 
             }
@@ -848,187 +947,26 @@ document.addEventListener(
 
 
         // =====================================
-        // GET TOTAL QUESTIONS
-        //
-        // This tries to read quizData if it is
-        // already available. Otherwise it uses
-        // the number saved in progress.
+        // OPEN POPUP
         // =====================================
 
-        function getTotalQuestions(chapter) {
-
-            try {
-
-                if (
-                    typeof quizData !==
-                    "undefined" &&
-                    quizData &&
-                    quizData.anthropology &&
-                    quizData.anthropology[chapter]
-                ) {
-
-                    return quizData
-                        .anthropology
-                        [chapter]
-                        .length;
-
-                }
-
-            } catch (error) {
-
-                console.log(
-                    "quizData not available on subject page."
-                );
-
-            }
-
-
-            const saved =
-                getProgress(chapter);
-
-
-            if (saved.total > 0) {
-
-                return saved.total;
-
-            }
-
-
-            return 0;
-
-        }
-
-
-
-        // =====================================
-        // UPDATE CARD PERCENTAGE
-        // =====================================
-
-        function updateCardProgress(chapter) {
-
-            const progressElement =
-                document.getElementById(
-                    "progress-" + chapter
-                );
-
-
-            if (!progressElement) {
-
-                return;
-
-            }
-
-
-            const progress =
-                getProgress(chapter);
-
-
-            progressElement.textContent =
-                Math.round(
-                    progress.progress
-                ) + "%";
-
-        }
-
-
-
-        // =====================================
-        // UPDATE ALL CHAPTER CARDS
-        // =====================================
-
-        function updateAllCards() {
-
-            for (
-                let chapter = 1;
-                chapter <= 5;
-                chapter++
-            ) {
-
-                updateCardProgress(
-                    chapter
-                );
-
-            }
-
-        }
-
-
-
-        // =====================================
-        // OPEN MODAL
-        // =====================================
-
-        function openProgressModal(chapter) {
+        function openModal(chapter) {
 
             selectedChapter =
                 String(chapter);
 
 
-            const progress =
+            const data =
                 getProgress(
                     selectedChapter
                 );
 
 
-            const total =
-                getTotalQuestions(
-                    selectedChapter
-                );
+            const progress =
+                Number(
+                    data.progress
+                ) || 0;
 
-
-            const attempted =
-                Math.min(
-                    progress.attempted,
-                    total > 0
-                        ? total
-                        : progress.attempted
-                );
-
-
-            const correct =
-                progress.correct;
-
-
-            const wrong =
-                progress.wrong;
-
-
-            let percentage =
-                progress.progress;
-
-
-            // If progress wasn't explicitly saved,
-            // calculate it from attempted questions.
-
-            if (
-                percentage <= 0 &&
-                total > 0 &&
-                attempted > 0
-            ) {
-
-                percentage =
-                    (
-                        attempted /
-                        total
-                    ) * 100;
-
-            }
-
-
-            percentage =
-                Math.max(
-                    0,
-                    Math.min(
-                        100,
-                        percentage
-                    )
-                );
-
-
-
-            // =================================
-            // FILL MODAL
-            // =================================
 
             document.getElementById(
                 "modalChapterBadge"
@@ -1048,49 +986,44 @@ document.addEventListener(
             document.getElementById(
                 "modalProgressPercent"
             ).textContent =
-                Math.round(
-                    percentage
-                ) + "%";
+                Math.round(progress) +
+                "%";
 
 
             document.getElementById(
                 "modalProgressBar"
             ).style.width =
-                percentage + "%";
+                Math.min(
+                    progress,
+                    100
+                ) + "%";
 
 
             document.getElementById(
                 "modalTotal"
             ).textContent =
-                total;
+                data.total || 0;
 
 
             document.getElementById(
                 "modalAttempted"
             ).textContent =
-                attempted;
+                data.attempted || 0;
 
 
             document.getElementById(
                 "modalCorrect"
             ).textContent =
-                correct;
+                data.correct || 0;
 
 
             document.getElementById(
                 "modalWrong"
             ).textContent =
-                wrong;
+                data.wrong || 0;
 
 
-
-            // =================================
-            // SHOW MODAL
-            // =================================
-
-            overlay.hidden =
-                false;
-
+            overlay.hidden = false;
 
             document.body.style.overflow =
                 "hidden";
@@ -1100,36 +1033,26 @@ document.addEventListener(
 
 
         // =====================================
-        // CLOSE MODAL
+        // CLOSE
         // =====================================
 
-        function closeProgressModal() {
+        function closeModal() {
 
-            overlay.hidden =
-                true;
-
+            overlay.hidden = true;
 
             document.body.style.overflow =
                 "";
-
-            selectedChapter =
-                null;
 
         }
 
 
 
         // =====================================
-        // CHAPTER CARD CLICK
-        //
-        // IMPORTANT:
-        // Clicking the card opens the modal.
+        // CLICK CHAPTER CARD
         // =====================================
 
         document
-            .querySelectorAll(
-                ".quiz-card"
-            )
+            .querySelectorAll(".quiz-card")
             .forEach(
                 function (card) {
 
@@ -1137,8 +1060,6 @@ document.addEventListener(
                         "click",
                         function (event) {
 
-                            // If the actual arrow was
-                            // clicked, don't open twice.
                             if (
                                 event.target.closest(
                                     ".quiz-arrow"
@@ -1150,12 +1071,8 @@ document.addEventListener(
                             }
 
 
-                            const chapter =
-                                card.dataset.chapter;
-
-
-                            openProgressModal(
-                                chapter
+                            openModal(
+                                card.dataset.chapter
                             );
 
                         }
@@ -1167,33 +1084,25 @@ document.addEventListener(
 
 
         // =====================================
-        // ARROW CLICK
-        //
-        // Arrow opens the same progress box.
-        // Then Continue Quiz opens quiz.html.
+        // CLICK ARROW
         // =====================================
 
         document
-            .querySelectorAll(
-                ".quiz-arrow"
-            )
+            .querySelectorAll(".quiz-arrow")
             .forEach(
-                function (arrow) {
+                function (button) {
 
-                    arrow.addEventListener(
+                    button.addEventListener(
                         "click",
                         function (event) {
 
                             event.preventDefault();
+
                             event.stopPropagation();
 
 
-                            const chapter =
-                                arrow.dataset.chapter;
-
-
-                            openProgressModal(
-                                chapter
+                            openModal(
+                                button.dataset.chapter
                             );
 
                         }
@@ -1205,7 +1114,7 @@ document.addEventListener(
 
 
         // =====================================
-        // CONTINUE QUIZ
+        // CONTINUE
         // =====================================
 
         continueBtn.addEventListener(
@@ -1213,17 +1122,13 @@ document.addEventListener(
             function () {
 
                 if (!selectedChapter) {
-
                     return;
-
                 }
 
 
                 window.location.href =
                     "quiz.html?subject=anthropology&chapter=" +
-                    encodeURIComponent(
-                        selectedChapter
-                    );
+                    selectedChapter;
 
             }
         );
@@ -1231,7 +1136,7 @@ document.addEventListener(
 
 
         // =====================================
-        // RESET PROGRESS
+        // RESET
         // =====================================
 
         resetBtn.addEventListener(
@@ -1239,40 +1144,35 @@ document.addEventListener(
             function () {
 
                 if (!selectedChapter) {
-
                     return;
-
-                }
-
-
-                const confirmed =
-                    window.confirm(
-                        "Reset all progress for Chapter " +
-                        selectedChapter +
-                        "?"
-                    );
-
-
-                if (!confirmed) {
-
-                    return;
-
                 }
 
 
                 localStorage.removeItem(
-                    progressKey(
+                    getKey(
                         selectedChapter
                     )
                 );
 
 
-                openProgressModal(
+                openModal(
                     selectedChapter
                 );
 
 
-                updateAllCards();
+                const progressElement =
+                    document.getElementById(
+                        "progress-" +
+                        selectedChapter
+                    );
+
+
+                if (progressElement) {
+
+                    progressElement.textContent =
+                        "0%";
+
+                }
 
             }
         );
@@ -1285,17 +1185,13 @@ document.addEventListener(
 
         closeBtn.addEventListener(
             "click",
-            function () {
-
-                closeProgressModal();
-
-            }
+            closeModal
         );
 
 
 
         // =====================================
-        // CLICK OUTSIDE MODAL
+        // OUTSIDE CLICK
         // =====================================
 
         overlay.addEventListener(
@@ -1303,11 +1199,10 @@ document.addEventListener(
             function (event) {
 
                 if (
-                    event.target ===
-                    overlay
+                    event.target === overlay
                 ) {
 
-                    closeProgressModal();
+                    closeModal();
 
                 }
 
@@ -1317,7 +1212,7 @@ document.addEventListener(
 
 
         // =====================================
-        // ESCAPE KEY
+        // ESCAPE
         // =====================================
 
         document.addEventListener(
@@ -1329,20 +1224,13 @@ document.addEventListener(
                     !overlay.hidden
                 ) {
 
-                    closeProgressModal();
+                    closeModal();
 
                 }
 
             }
         );
 
-
-
-        // =====================================
-        // INITIAL CARD UPDATE
-        // =====================================
-
-        updateAllCards();
 
     }
 
