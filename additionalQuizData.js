@@ -145,7 +145,7 @@ quizData["global-trends"]["5"] = [{
     answer: 2,
     englishExplanation: "Huntington argued that future international conflicts would increasingly occur along cultural and civilizational divisions. In his view, differences in culture, religion, and civilizational identity could become major sources of conflict.",
     amharicExplanation: "ሃንቲንግተን እንደሚለው የወደፊት ዓለም አቀፍ ግጭቶች በባህልና በሥልጣኔ ልዩነቶች መካከል በሚኖሩ ክፍተቶች ላይ ሊመሰረቱ ይችላሉ። በተለይም የባህል፣ የሃይማኖት እና የሥልጣኔ ማንነት ልዩነቶች ዋና የግጭት ምንጮች ሊሆኑ ይችላሉ።"
-}];
+}]
 
 
 // =====================================================
