@@ -1,6 +1,7 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
 // 5 QUESTIONS PER PAGE
+// WITH PERSISTENT CHAPTER PROGRESS
 // =====================================================
 
 
@@ -74,6 +75,116 @@ let currentPage = 0;
 
 
 // =====================================================
+// PROGRESS STORAGE
+// =====================================================
+
+const progressStorageKey =
+    `uniqueAcademicProgress_${subject}_${chapter}`;
+
+
+// =====================================================
+// GET SAVED PROGRESS
+// =====================================================
+
+function getSavedProgress() {
+
+    const defaultProgress = {
+
+        attempted: 0,
+
+        correct: 0,
+
+        wrong: 0,
+
+        completed: false,
+
+        answered: {}
+
+    };
+
+
+    try {
+
+        const saved =
+            localStorage.getItem(
+                progressStorageKey
+            );
+
+
+        if (!saved) {
+
+            return defaultProgress;
+
+        }
+
+
+        const parsed =
+            JSON.parse(saved);
+
+
+        return {
+
+            ...defaultProgress,
+
+            ...parsed,
+
+            answered:
+                parsed.answered || {}
+
+        };
+
+    } catch (error) {
+
+        console.error(
+            "Could not read quiz progress:",
+            error
+        );
+
+
+        return defaultProgress;
+
+    }
+
+}
+
+
+// =====================================================
+// CURRENT PROGRESS
+// =====================================================
+
+let progress =
+    getSavedProgress();
+
+
+// =====================================================
+// SAVE PROGRESS
+// =====================================================
+
+function saveProgress() {
+
+    try {
+
+        localStorage.setItem(
+
+            progressStorageKey,
+
+            JSON.stringify(progress)
+
+        );
+
+    } catch (error) {
+
+        console.error(
+            "Could not save quiz progress:",
+            error
+        );
+
+    }
+
+}
+
+
+// =====================================================
 // FORMAT SUBJECT NAME
 // =====================================================
 
@@ -84,6 +195,7 @@ function formatSubjectName(value) {
         return "Unknown Subject";
 
     }
+
 
     return value
         .replace(/-/g, " ")
@@ -231,18 +343,20 @@ function loadPage() {
 
 
     const startIndex =
-        currentPage * QUESTIONS_PER_PAGE;
+        currentPage *
+        QUESTIONS_PER_PAGE;
 
 
     const endIndex =
         Math.min(
-            startIndex + QUESTIONS_PER_PAGE,
+            startIndex +
+            QUESTIONS_PER_PAGE,
             questions.length
         );
 
 
     // ---------------------------------------------
-    // Create each question
+    // CREATE QUESTIONS
     // ---------------------------------------------
 
     for (
@@ -260,7 +374,7 @@ function loadPage() {
 
 
     // ---------------------------------------------
-    // Update question counter
+    // QUESTION COUNTER
     // ---------------------------------------------
 
     questionNumber.textContent =
@@ -268,21 +382,21 @@ function loadPage() {
 
 
     // ---------------------------------------------
-    // Update navigation
+    // NAVIGATION
     // ---------------------------------------------
 
     updateNavigation();
 
 
     // ---------------------------------------------
-    // Update progress
+    // PROGRESS BAR
     // ---------------------------------------------
 
     updateProgress();
 
 
     // ---------------------------------------------
-    // Scroll to top
+    // SCROLL TOP
     // ---------------------------------------------
 
     window.scrollTo({
@@ -302,10 +416,6 @@ function loadPage() {
 
 function createQuestionCard(q, index) {
 
-    // ---------------------------------------------
-    // Main question card
-    // ---------------------------------------------
-
     const questionCard =
         document.createElement("section");
 
@@ -315,7 +425,7 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // Question label
+    // QUESTION LABEL
     // ---------------------------------------------
 
     const questionLabel =
@@ -344,7 +454,7 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // Question text
+    // QUESTION TEXT
     // ---------------------------------------------
 
     const questionText =
@@ -360,7 +470,7 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // Options
+    // OPTIONS
     // ---------------------------------------------
 
     const options =
@@ -401,12 +511,21 @@ function createQuestionCard(q, index) {
                 () => {
 
                     checkAnswer(
+
                         q,
+
+                        index,
+
                         optionIndex,
+
                         options,
+
                         explanationBox,
+
                         englishExplanation,
+
                         amharicExplanation
+
                     );
 
                 }
@@ -422,7 +541,7 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // Explanation
+    // EXPLANATION BOX
     // ---------------------------------------------
 
     const explanationBox =
@@ -529,7 +648,7 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // Add everything to card
+    // ADD EVERYTHING
     // ---------------------------------------------
 
     questionCard.appendChild(
@@ -552,12 +671,29 @@ function createQuestionCard(q, index) {
     );
 
 
-    // ---------------------------------------------
-    // Add card to page
-    // ---------------------------------------------
-
     questionsPage.appendChild(
         questionCard
+    );
+
+
+    // ---------------------------------------------
+    // RESTORE PREVIOUS ANSWER
+    // ---------------------------------------------
+
+    restoreAnswer(
+
+        q,
+
+        index,
+
+        options,
+
+        explanationBox,
+
+        englishExplanation,
+
+        amharicExplanation
+
     );
 
 }
@@ -568,12 +704,21 @@ function createQuestionCard(q, index) {
 // =====================================================
 
 function checkAnswer(
+
     q,
+
+    questionIndex,
+
     selectedIndex,
+
     options,
+
     explanationBox,
+
     englishExplanation,
+
     amharicExplanation
+
 ) {
 
     const buttons =
@@ -583,11 +728,56 @@ function checkAnswer(
 
 
     const correctAnswer =
-        q.answer;
+        Number(q.answer);
 
 
     // ---------------------------------------------
-    // Disable all options
+    // PREVENT RE-ANSWERING
+    // ---------------------------------------------
+
+    if (
+        progress.answered[
+            questionIndex
+        ] !== undefined
+    ) {
+
+        return;
+
+    }
+
+
+    // ---------------------------------------------
+    // SAVE ANSWER
+    // ---------------------------------------------
+
+    const isCorrect =
+        selectedIndex === correctAnswer;
+
+
+    progress.answered[
+        questionIndex
+    ] = selectedIndex;
+
+
+    progress.attempted++;
+
+
+    if (isCorrect) {
+
+        progress.correct++;
+
+    } else {
+
+        progress.wrong++;
+
+    }
+
+
+    saveProgress();
+
+
+    // ---------------------------------------------
+    // STYLE OPTIONS
     // ---------------------------------------------
 
     buttons.forEach(
@@ -597,7 +787,6 @@ function checkAnswer(
                 true;
 
 
-            // Correct answer
             if (
                 index === correctAnswer
             ) {
@@ -609,7 +798,6 @@ function checkAnswer(
             }
 
 
-            // Wrong selected answer
             if (
                 index === selectedIndex &&
                 index !== correctAnswer
@@ -626,24 +814,115 @@ function checkAnswer(
 
 
     // ---------------------------------------------
-    // Show English explanation
+    // EXPLANATIONS
     // ---------------------------------------------
 
     englishExplanation.textContent =
         getEnglishExplanation(q);
 
 
-    // ---------------------------------------------
-    // Show Amharic explanation
-    // ---------------------------------------------
-
     amharicExplanation.textContent =
         getAmharicExplanation(q);
 
 
+    explanationBox.style.display =
+        "block";
+
+
     // ---------------------------------------------
-    // Show explanation box
+    // UPDATE PROGRESS
     // ---------------------------------------------
+
+    updateProgress();
+
+}
+
+
+// =====================================================
+// RESTORE ANSWER
+// =====================================================
+
+function restoreAnswer(
+
+    q,
+
+    questionIndex,
+
+    options,
+
+    explanationBox,
+
+    englishExplanation,
+
+    amharicExplanation
+
+) {
+
+    const savedAnswer =
+        progress.answered[
+            questionIndex
+        ];
+
+
+    if (
+        savedAnswer === undefined
+    ) {
+
+        return;
+
+    }
+
+
+    const buttons =
+        options.querySelectorAll(
+            ".optionBtn"
+        );
+
+
+    const correctAnswer =
+        Number(q.answer);
+
+
+    buttons.forEach(
+        (button, index) => {
+
+            button.disabled =
+                true;
+
+
+            if (
+                index === correctAnswer
+            ) {
+
+                button.classList.add(
+                    "correct"
+                );
+
+            }
+
+
+            if (
+                index === savedAnswer &&
+                index !== correctAnswer
+            ) {
+
+                button.classList.add(
+                    "wrong"
+                );
+
+            }
+
+        }
+    );
+
+
+    englishExplanation.textContent =
+        getEnglishExplanation(q);
+
+
+    amharicExplanation.textContent =
+        getAmharicExplanation(q);
+
 
     explanationBox.style.display =
         "block";
@@ -652,7 +931,7 @@ function checkAnswer(
 
 
 // =====================================================
-// UPDATE PROGRESS
+// UPDATE QUIZ PROGRESS BAR
 // =====================================================
 
 function updateProgress() {
@@ -667,24 +946,90 @@ function updateProgress() {
     }
 
 
-    const endIndex =
-        Math.min(
+    const pageProgress =
+        (
             (
                 currentPage + 1
-            ) * QUESTIONS_PER_PAGE,
+            ) *
+            QUESTIONS_PER_PAGE
+        );
+
+
+    const visibleProgress =
+        Math.min(
+            pageProgress,
             questions.length
         );
 
 
-    const progress =
+    const progressPercent =
         (
-            endIndex /
+            visibleProgress /
             questions.length
         ) * 100;
 
 
     progressBar.style.width =
-        `${progress}%`;
+        `${progressPercent}%`;
+
+}
+
+
+// =====================================================
+// GET CHAPTER PROGRESS
+// =====================================================
+
+function getChapterProgress() {
+
+    const total =
+        questions.length;
+
+
+    const attempted =
+        Math.min(
+            progress.attempted,
+            total
+        );
+
+
+    const correct =
+        Math.min(
+            progress.correct,
+            attempted
+        );
+
+
+    const wrong =
+        Math.min(
+            progress.wrong,
+            attempted
+        );
+
+
+    const percentage =
+        total > 0
+            ? Math.round(
+                (
+                    attempted /
+                    total
+                ) * 100
+            )
+            : 0;
+
+
+    return {
+
+        total,
+
+        attempted,
+
+        correct,
+
+        wrong,
+
+        percentage
+
+    };
 
 }
 
@@ -695,17 +1040,9 @@ function updateProgress() {
 
 function updateNavigation() {
 
-    // ---------------------------------------------
-    // Previous
-    // ---------------------------------------------
-
     previousQuestionBtn.disabled =
         currentPage === 0;
 
-
-    // ---------------------------------------------
-    // Check if this is the final page
-    // ---------------------------------------------
 
     const totalPages =
         Math.ceil(
@@ -800,6 +1137,13 @@ previousQuestionBtn.addEventListener(
 
 function finishQuiz() {
 
+    progress.completed =
+        true;
+
+
+    saveProgress();
+
+
     questionNumber.textContent =
         `Questions ${questions.length} / ${questions.length}`;
 
@@ -808,7 +1152,8 @@ function finishQuiz() {
         "100%";
 
 
-    questionsPage.innerHTML = "";
+    questionsPage.innerHTML =
+        "";
 
 
     previousQuestionBtn.style.display =
@@ -831,8 +1176,11 @@ function finishQuiz() {
 
 
     completionMessage.scrollIntoView({
+
         behavior: "smooth",
+
         block: "center"
+
     });
 
 }
@@ -885,3 +1233,38 @@ homeBtn.addEventListener(
 
     }
 );
+
+
+// =====================================================
+// MAKE PROGRESS AVAILABLE TO OTHER PAGES
+// =====================================================
+
+window.uniqueAcademicQuizProgress = {
+
+    get: getChapterProgress,
+
+    reset: function () {
+
+        progress = {
+
+            attempted: 0,
+
+            correct: 0,
+
+            wrong: 0,
+
+            completed: false,
+
+            answered: {}
+
+        };
+
+
+        saveProgress();
+
+
+        loadPage();
+
+    }
+
+};
