@@ -9,12 +9,623 @@
 quizData["global-trends"]["1"] = [
   ];
  
-quizData["global-trends"]["2"] = [
+quizData["global-trends"]["2"] = [  {
+        question: "Partisan Criteria Of Foreign Policy states that the orientation followed is a matter of fact, not based on emotions and professions.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "False. Partisan criteria are based on political party, ethnic, or religious interests rather than objective facts. Therefore, they are not simply based on facts.",
+        amharicExplanation: "ሐሰት። ፓርቲያዊ መስፈርት (Partisan criteria) የሚያተኩረው በፖለቲካ ፓርቲ፣ በዘር ወይም በሀይማኖት ጥቅም ላይ እንጂ በእውነታ ብቻ ላይ አይደለም።"
+    },
 
-    // Global Trends Chapter 2 questions
+    {
+        question: "In pursuing long-range goals, states normally make universal demands.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "True. Long-range foreign policy goals concern broad and future-oriented objectives that may seek changes in international society or the world order.",
+        amharicExplanation: "እውነት። የረጅም ጊዜ የውጭ ፖሊሲ ግቦች ሰፊ እና የወደፊት ዓላማዎችን የሚመለከቱ ሲሆን፣ በዓለም አቀፍ ማህበረሰብ ወይም በዓለም ሥርዓት ላይ ለውጥ ለማምጣት ሊያተኩሩ ይችላሉ።"
+    },
 
+    {
+        question: "Foreign policy refers to the sets of objectives and instruments that a state adopts to guide its relation with the outside world.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "True. Foreign policy consists of the goals and instruments a state uses to manage and guide its relations with other countries and the outside world.",
+        amharicExplanation: "እውነት። የውጭ ፖሊሲ አንድ ሀገር ከሌሎች ሀገራትና ከውጭ ዓለም ጋር ያለውን ግንኙነት ለመምራት የሚጠቀምባቸውን ዓላማዎችና መሣሪያዎች ያካትታል።"
+    },
 
-];
+    {
+        question: "Foreign policy is a policy towards the domestic relations of a country.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "False. Foreign policy deals with a country's relations with other countries and international actors. Domestic relations are mainly the concern of domestic policy.",
+        amharicExplanation: "ሐሰት። የውጭ ፖሊሲ የሀገር ውስጥ ግንኙነቶችን ሳይሆን ከሌሎች ሀገራትና ከዓለም አቀፍ አካላት ጋር ያለንን ግንኙነት ይመለከታል።"
+    },
+
+    {
+        question: "Propaganda as an instrument of foreign policy requires direct war declaration on other states.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "False. Propaganda is a psychological instrument used to influence people's opinions, emotions, attitudes, or behavior. It does not require a declaration of war.",
+        amharicExplanation: "ሐሰት። ፕሮፖጋንዳ የሰዎችን አመለካከት፣ ስሜትና ባህሪ ለመቀየር የሚጠቀም የስነ-ልቦና መሣሪያ ነው። የጦርነት አዋጅ ማወጅን አይጠይቅም።"
+    },
+
+    {
+        question: "Identifying national interest is the key concept to formulate one's state foreign policy.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "True. National interest identifies what a state considers important for its security, survival, prosperity, and development. It therefore provides a foundation for foreign policy.",
+        amharicExplanation: "እውነት። ብሔራዊ ጥቅም (National interest) አንድ ሀገር ለደህንነት፣ ለህልውና፣ ለብልጽግናና ለልማት አስፈላጊ የሚላቸውን ጉዳዮች ይወስናል። ስለዚህ የውጭ ፖሊሲ ለመቅረጽ መሠረታዊ ነጥብ ነው።"
+    },
+
+    {
+        question: "_______ may avoid some of the problems associated with generating potential enemies.",
+        options: ["Alliances", "Neutrals", "Nonalignment", "A and B"],
+        answer: 1,
+        englishExplanation: "Neutrals. Neutrality allows a state to stay out of conflicts between other states and can reduce the possibility of creating enemies through alliance commitments.",
+        amharicExplanation: "ገለልተኛ ሀገራት (Neutrals)። ገለልተኝነት አንድ ሀገር በሌሎች ሀገራት ግጭት ውስጥ እንዳይገባ ይረዳል፤ በሕብረት ምክንያት ሊፈጠሩ የሚችሉ ጠላቶችንም ሊቀንስ ይችላል።"
+    },
+
+    {
+        question: "Which rule of effective diplomacy states that it is important to have goals that match your ability to achieve them?",
+        options: ["Seeking Common Ground", "Being Patient", "Being Realistic", "Understanding The Other Side"],
+        answer: 2,
+        englishExplanation: "Being Realistic. Diplomats should set goals that match their country's actual resources, power, and ability to achieve them.",
+        amharicExplanation: "እውነታዊ መሆን (Being Realistic)። ዲፕሎማቶች የሀገራቸውን እውነተኛ አቅም፣ ሀብትና ሀይል በመመልከት ሊሳኩባቸው የሚችሉ ግቦችን መያዝ አለባቸው።"
+    },
+
+    {
+        question: "Which objective of foreign policy is most frequently related to the self-preservation of political and economic systems, the people, and the territorial integrity of a state?",
+        options: ["Short range", "Middle range", "Long range", "None"],
+        answer: 0,
+        englishExplanation: "Short-range objectives. These objectives focus mainly on immediate national survival, protecting the people, political and economic systems, and territorial integrity.",
+        amharicExplanation: "የአጭር ጊዜ ግቦች (Short-range objectives)። እነዚህ ግቦች የሀገርን ፈጣን ህልውና፣ ህዝብን፣ የፖለቲካና የኢኮኖሚ ሥርዓትን እና የግዛት አንድነትን በመጠበቅ ላይ ያተኩራሉ።"
+    },
+
+    {
+        question: "Propaganda belongs to one of the following instruments of foreign policy.",
+        options: ["Diplomacy", "Military", "Economic", "Psychological"],
+        answer: 3,
+        englishExplanation: "Psychological. Propaganda attempts to influence people's thoughts, emotions, attitudes, and perceptions, so it is considered a psychological instrument of foreign policy.",
+        amharicExplanation: "የስነ-ልቦና መሣሪያ (Psychological)። ፕሮፖጋንዳ የሰዎችን አስተሳሰብ፣ ስሜት፣ አመለካከትና ግንዛቤ ለመነካካት ስለሚጠቀም የስነ-ልቦና የውጭ ፖሊሲ መሣሪያ ነው።"
+    },
+
+    {
+        question: "In which foreign policy behavior pattern does Ethiopia belong?",
+        options: ["Self-preservation", "Self-extension", "Self-abnegation", "All"],
+        answer: 2,
+        englishExplanation: "Self-abnegation. In the classification used in this lesson, Ethiopia is associated with self-abnegation, a pattern commonly linked with the foreign policy behavior of less-developed countries.",
+        amharicExplanation: "ራስን መተው (Self-abnegation)። በዚህ ትምህርት የቀረበው ምደባ መሠረት ኢትዮጵያ ከSelf-abnegation ጋር ትያያዛለች፤ ይህም በተለይ በታዳጊ ሀገራት የውጭ ፖሊሲ ባህሪ ውስጥ የሚታይ ነው።"
+    },
+
+    {
+        question: "Among foreign policy objectives, which one includes future plans, thoughts, and visions concerning the ultimate political and ideological organization of the international system?",
+        options: ["Short Range", "Middle Range", "Long Range", "All", "None"],
+        answer: 2,
+        englishExplanation: "Long-range objectives. They deal with long-term plans, visions, and ideas about the future political and ideological organization of the international system.",
+        amharicExplanation: "የረጅም ጊዜ ግቦች (Long-range objectives)። እነዚህ ግቦች የወደፊት እቅዶችን፣ ራዕዮችን እና የዓለም አቀፍ ሥርዓት የፖለቲካና የርዕዮተ-ዓለም አደረጃጀትን ይመለከታሉ።"
+    },
+
+    {
+        question: "Of the following, one is considered as a long-range foreign policy objective.",
+        options: ["Economic development", "Ideology", "Advancement of technology", "Social development", "None"],
+        answer: 1,
+        englishExplanation: "Ideology. Ideology represents long-term beliefs and visions about how society and the international system should be organized.",
+        amharicExplanation: "ርዕዮተ ዓለም (Ideology)። ርዕዮተ ዓለም ስለ ማህበረሰብና ስለ ዓለም አቀፍ ሥርዓት የረጅም ጊዜ እምነቶችንና ራዕዮችን ስለሚወክል የረጅም ጊዜ የውጭ ፖሊሲ ግብ ነው።"
+    },
+
+    {
+        question: "Let's assume that Ethiopia hands off its involvement from the ongoing economic conflict between the USA and China by considering problems associated with alliances. Hence, Ethiopia applies the foreign policy orientation of:",
+        options: ["Alliance", "Non-alignment", "Neutrality", "Ignorance"],
+        answer: 2,
+        englishExplanation: "Neutrality. In this example, Ethiopia stays out of the conflict between the USA and China in order to avoid taking sides and the problems that may come from alliance commitments.",
+        amharicExplanation: "ገለልተኝነት (Neutrality)። በዚህ ምሳሌ ኢትዮጵያ በአሜሪካና ቻይና መካከል ካለው ግጭት ራሷን በማግለል ወገን ከመያዝና ከሕብረት ሊመጡ የሚችሉ ችግሮችን ትርቃለች።"
+    },
+
+    {
+        question: "On 2 March 2022, 35 states voted to abstain from the United Nations General Assembly resolution demanding the withdrawal of Russian forces from Ukraine. This foreign policy orientation of those states is:",
+        options: ["Alliance", "Non-alignment", "Neutrality", "Ignorance", "Isolationism"],
+        answer: 2,
+        englishExplanation: "Neutrality. Abstaining from taking a side in a particular international conflict can demonstrate a neutral foreign policy orientation.",
+        amharicExplanation: "ገለልተኝነት (Neutrality)። በአንድ ዓለም አቀፍ ግጭት ወገን ላለመሆንና ከተወሰነ ወገን ጋር ላለመቆም ድምጽ ከመስጠት መታቀብ የገለልተኝነት አቀራረብን ሊያሳይ ይችላል።"
+    },
+
+    {
+        question: "Why do states prefer the carrot approach rather than the stick approach in diplomacy at the international level?",
+        options: ["To punish some states", "To maintain mutual benefit", "To undermine economic objectives", "To ignore other states", "All"],
+        answer: 1,
+        englishExplanation: "To maintain mutual benefit. The carrot approach uses incentives, rewards, and cooperation to encourage other states to work toward mutually beneficial outcomes.",
+        amharicExplanation: "የጋራ ጥቅምን ለማስጠበቅ (To maintain mutual benefit)። የCarrot approach ሌሎችን ሀገራት በማበረታቻ፣ በሽልማትና በትብብር ወደ የጋራ ጥቅም እንዲመጡ ያበረታታል።"
+    },
+
+    {
+        question: "The foreign dimension that defines the extent of a country's engagement is:",
+        options: ["Scope", "Modus operandi", "Alignment", "Alliance"],
+        answer: 0,
+        englishExplanation: "Scope. Scope refers to the extent or range of a country's involvement and engagement in international affairs.",
+        amharicExplanation: "ስፋት (Scope)። Scope ማለት አንድ ሀገር በዓለም አቀፍ ጉዳዮች ውስጥ የሚኖራትን የተሳትፎ መጠንና ስፋት የሚያመለክት ነው።"
+    },
+
+    {
+        question: "Contemporary diplomacy is:",
+        options: [
+            "Conducted by a range of state and non-state actors",
+            "Only conducted by heads of government",
+            "Only conducted by specially trained diplomats",
+            "Only understood by Westerners"
+        ],
+        answer: 0,
+        englishExplanation: "Conducted by a range of state and non-state actors. Modern diplomacy involves governments, diplomats, international organizations, businesses, NGOs, and other relevant actors.",
+        amharicExplanation: "በተለያዩ መንግስታዊና መንግስታዊ ያልሆኑ አካላት ይከናወናል። ዘመናዊ ዲፕሎማሲ በመንግስታትና በዲፕሎማቶች ብቻ ሳይሆን በዓለም አቀፍ ድርጅቶች፣ NGOs፣ የንግድ ድርጅቶችና ሌሎች አካላትም ይከናወናል።"
+    },
+
+    {
+        question: "Which one of the following refers to partial or complete prohibition on strategic goods?",
+        options: ["Quota", "Embargo", "Boycott", "Tariff"],
+        answer: 1,
+        englishExplanation: "Embargo. An embargo is an official restriction or prohibition on trade, especially on particular goods or strategic products with another country.",
+        amharicExplanation: "እምባርጎ (Embargo)። እምባርጎ ከሌላ ሀገር ጋር በተወሰኑ እቃዎች ወይም ስትራቴጂካዊ ምርቶች ላይ ከፊል ወይም ሙሉ የንግድ ክልከላ ማድረግ ነው።"
+    },
+
+    {
+        question: "Due to the economic and technology rivalry and competition between the USA and China, the former president of the USA, Trump, prohibited any Chinese commodity and production imported into USA territory. This is said to be:",
+        options: ["Quota", "Embargo", "Boycott", "Tariff"],
+        answer: 2,
+        englishExplanation: "Boycott. In the terminology used in this question, refusing to accept or purchase products from a particular country is described as a boycott. A boycott is intended to put economic pressure on the targeted country.",
+        amharicExplanation: "ቦይኮት (Boycott)። በዚህ ጥያቄ የተጠቀሰው ትርጓሜ መሠረት ከአንድ የተወሰነ ሀገር የሚመጡ ምርቶችን አለመቀበል ወይም አለመግዛት Boycott ይባላል። ዓላማውም በተመረጠው ሀገር ላይ የኢኮኖሚ ጫና መፍጠር ነው።"
+    },{
+        question: "The USA has been using different international institutions like UN, IMF, World Bank, and other humanitarian organizations to keep its hegemony in the international system. In addition, the state is doing all its best to endure the existing international system as it is. Such a foreign policy behavior is said to be:",
+        options: ["Self-abnegation", "Self-preservation", "Self-extension", "Self-negligence"],
+        answer: 1,
+        englishExplanation: "Self-preservation. This behavior aims to maintain the existing international system and protect the country's existing position, power, and influence without making major changes.",
+        amharicExplanation: "ራስን መጠበቅ (Self-preservation)። ይህ የውጭ ፖሊሲ ባህሪ ነባሩን ዓለም አቀፍ ሥርዓት ለማስቀጠል እና የሀገሪቱን ያለውን ኃይል፣ ተጽዕኖና የበላይነት ለመጠበቅ የሚደረግ ጥረት ነው።"
+    },
+
+    {
+        question: "Which one is true about the foreign policy objective of states?",
+        options: [
+            "Security and territorial issues are middle-range objectives",
+            "Social welfare issues are short-range objectives",
+            "Territorial integrity of the state is a short-range objective",
+            "Future plans and visions of the state are core national issues"
+        ],
+        answer: 2,
+        englishExplanation: "Territorial integrity of the state is a short-range objective. Protecting the territory, security, and survival of a state requires immediate attention, so these are considered short-range objectives.",
+        amharicExplanation: "የሀገር ግዛታዊ አንድነት ጥበቃ የአጭር ጊዜ ግብ ነው። የሀገርን ግዛት፣ ደህንነትና ህልውና መጠበቅ አስቸኳይ ትኩረት ስለሚፈልግ የአጭር ጊዜ የውጭ ፖሊሲ ግብ ይባላል።"
+    },
+
+    {
+        question: "Which one is not a rule of effective diplomacy?",
+        options: [
+            "Talk as you like",
+            "Seek common ground",
+            "Leave avenues of retreat open",
+            "Understand the other side",
+            "None"
+        ],
+        answer: 0,
+        englishExplanation: "Talk as you like. Effective diplomacy requires careful, thoughtful, and strategic communication. Speaking carelessly or saying whatever one wants is not a rule of effective diplomacy.",
+        amharicExplanation: "የወደዱትን ማውራት (Talk as you like)። የተሳካ ዲፕሎማሲ ጥንቃቄ የተሞላበት፣ የታሰበበትና ስትራቴጂካዊ ንግግርን ይፈልጋል። የፈለጉትን ያለጥንቃቄ ማውራት የዲፕሎማሲ ሕግ አይደለም።"
+    },
+
+    {
+        question: "A group of countries dealing with similar problems comes together to figure out possible solutions to the problem. The solutions would involve all the countries.",
+        options: ["Sanctions", "Isolationism", "Negotiations", "Mediation"],
+        answer: 2,
+        englishExplanation: "Negotiations. Negotiation is a process in which the countries directly discuss their common problems and try to reach a solution that is acceptable and beneficial to the parties involved.",
+        amharicExplanation: "ድርድር (Negotiations)። ድርድር ማለት ተመሳሳይ ችግር ያለባቸው ሀገራት በቀጥታ ተወያይተው ለሁሉም ተሳታፊዎች ተቀባይነት ያለው መፍትሔ ለማግኘት የሚያደርጉት ሂደት ነው።"
+    },
+
+    {
+        question: "A country focuses on its own problems and does not get involved in other countries' issues.",
+        options: ["Isolationism", "Imperialism", "Containment", "Independently"],
+        answer: 0,
+        englishExplanation: "Isolationism. Isolationism is a foreign policy approach in which a country tries to avoid involvement in the political and other affairs of other countries.",
+        amharicExplanation: "መገለል (Isolationism)። መገለል ማለት አንድ ሀገር በራሷ ጉዳዮች ላይ በማተኮር በሌሎች ሀገራት የፖለቲካና ሌሎች ጉዳዮች ውስጥ ላለመሳተፍ የምትከተለው አቀራረብ ነው።"
+    },
+
+    {
+        question: "A country sends its military to another country and uses warlike tactics to make that country change.",
+        options: ["Negotiations", "National Interest", "Military Force", "Diplomacy"],
+        answer: 2,
+        englishExplanation: "Military Force. When a country sends troops or uses military action to pressure another country to change its behavior, it is using military force.",
+        amharicExplanation: "የወታደራዊ ኃይል (Military Force)። አንድ ሀገር ሌላ ሀገር ባህሪዋን እንድትቀይር ለማስገደድ ጦር ሰራዊትን ወይም ወታደራዊ እርምጃን ስትጠቀም የወታደራዊ ኃይል አጠቃቀም ይባላል።"
+    },
+
+    {
+        question: "Other countries punish a country by cutting that country off from trade goods and by refusing to negotiate. The country remains isolated until it agrees to make changes.",
+        options: ["Policy", "Isolationism", "Negotiations", "Sanctions"],
+        answer: 3,
+        englishExplanation: "Sanctions. Sanctions are economic, commercial, or financial restrictions imposed on a country to pressure it to change its behavior or policies.",
+        amharicExplanation: "ማዕቀብ (Sanctions)። ማዕቀብ አንድ ሀገር ፖሊሲዋን ወይም ባህሪዋን እንድትቀይር ለማስገደድ በንግድ፣ በገንዘብ ወይም በኢኮኖሚ ላይ ገደብ የሚጣልባት ቅጣት ነው።"
+    },
+
+    {
+        question: "Two countries having a problem ask a third country or some other organization to help them solve the dispute. Often this involves applying international law to the situation.",
+        options: ["Litigation", "Independently", "Arbitration", "Mediation"],
+        answer: 3,
+        englishExplanation: "Mediation. Mediation involves a third party helping two sides in a dispute communicate, negotiate, and reach a mutually acceptable solution.",
+        amharicExplanation: "ሽምግልና (Mediation)። ሽምግልና በሁለት ተጣራቂ ወገኖች መካከል ሶስተኛ ወገን ገብቶ እንዲወያዩ፣ እንዲደራደሩና የጋራ መፍትሔ እንዲያገኙ የሚረዳበት ሂደት ነው።"
+    },
+
+    {
+        question: "A country chooses to get involved in other countries' problems when there is a great need.",
+        options: ["Mediation", "Interventionism", "Internationalism", "Foreign Policy"],
+        answer: 2,
+        englishExplanation: "Internationalism. Internationalism encourages countries to participate in international affairs and cooperate with other countries, particularly when major international problems require collective action.",
+        amharicExplanation: "ዓለም አቀፋዊነት (Internationalism)። ዓለም አቀፋዊነት ሀገራት በዓለም አቀፍ ጉዳዮች እንዲሳተፉና ከሌሎች ሀገራት ጋር እንዲተባበሩ የሚያበረታታ አቀራረብ ነው።"
+    },
+
+    {
+        question: "A country's strategy for dealing with other countries.",
+        options: ["Foreign Policy", "National Interest", "Economic Policy", "Domestic Policy"],
+        answer: 0,
+        englishExplanation: "Foreign Policy. Foreign policy is the overall strategy and set of actions a country uses to manage its relations with other countries and international actors.",
+        amharicExplanation: "የውጭ ፖሊሲ (Foreign Policy)። የውጭ ፖሊሲ አንድ ሀገር ከሌሎች ሀገራትና ከዓለም አቀፍ አካላት ጋር ያላትን ግንኙነት ለመምራት የምትከተለው አጠቃላይ ስትራቴጂ ነው።"
+    },
+
+    {
+        question: "A plan that includes an overall goal and the kinds of actions that are okay to take in order to achieve the goal.",
+        options: ["Politics", "Policy", "Treaty", "Negotiations"],
+        answer: 1,
+        englishExplanation: "Policy. A policy provides a general direction or goal and identifies the types of actions that can appropriately be taken to achieve that goal.",
+        amharicExplanation: "ፖሊሲ (Policy)። ፖሊሲ አጠቃላይ ዓላማን የሚያስቀምጥና ያንን ዓላማ ለማሳካት ሊወሰዱ የሚገባቸውን እርምጃዎች የሚያመለክት አጠቃላይ እቅድ ነው።"
+    },
+
+    {
+        question: "A country sends money, food, or medicine to another country that is having a crisis.",
+        options: ["External Loans", "Imports", "Aid", "Sanctions"],
+        answer: 2,
+        englishExplanation: "Aid. Aid is assistance provided to another country, especially during a crisis. It can include money, food, medicine, supplies, or other forms of support.",
+        amharicExplanation: "ዕርዳታ (Aid)። ዕርዳታ በችግር ወይም በቀውስ ላይ ላለች ሀገር የሚሰጥ ድጋፍ ነው። ገንዘብ፣ ምግብ፣ መድኃኒትና ሌሎች አስፈላጊ እርዳታዎችን ሊያካትት ይችላል።"
+    },
+
+    {
+        question: "A country's leaders make a decision to deal with the problem alone instead of working with other countries.",
+        options: ["Independently", "Negotiations", "Directly", "Isolationism"],
+        answer: 0,
+        englishExplanation: "Independently. Acting independently means that a country chooses to handle an issue by itself rather than cooperating with other countries.",
+        amharicExplanation: "በራስ ብቻ (Independently)። በራስ ብቻ መስራት ማለት አንድ ሀገር ከሌሎች ሀገራት ጋር ሳትተባበር ችግሩን በራሷ ለመፍታት መወሰን ነው።"
+    },
+
+    {
+        question: "A country is always trying to act in its own best interest by trying to get other countries to act in ways that are beneficial and not harmful.",
+        options: ["National Interest", "Foreign Policy", "Sanctions", "Comparative Advantage"],
+        answer: 0,
+        englishExplanation: "National Interest. National interest refers to the goals and interests that a country considers important for its survival, security, prosperity, and overall well-being.",
+        amharicExplanation: "ብሔራዊ ጥቅም (National Interest)። ብሔራዊ ጥቅም አንድ ሀገር ለህልውናዋ፣ ለደህንነቷ፣ ለብልጽግናዋና ለአጠቃላይ ጥቅሟ አስፈላጊ ብላ የምትቆጥራቸውን ግቦችና ጥቅሞች ያመለክታል።"
+    },
+
+    {
+        question: "Two or more countries make a formal agreement to do something or to not do something.",
+        options: ["Executive Agreement", "Treaty", "Sanctions", "Policy"],
+        answer: 1,
+        englishExplanation: "Treaty. A treaty is a formal and legally binding agreement made between two or more states concerning specific rights, duties, or actions.",
+        amharicExplanation: "ስምምነት (Treaty)። Treaty ማለት በሁለት ወይም ከዚያ በላይ ሀገራት መካከል ስለተወሰኑ መብቶች፣ ግዴታዎች ወይም እርምጃዎች የሚደረግ ይፋዊ እና ሕጋዊ አስገዳጅ ስምምነት ነው።"
+    },
+
+    {
+        question: "Diplomacy is...",
+        options: [
+            "A European invention",
+            "A by-product of the rise of the modern state",
+            "A practice which dates back at least to pre-Imperial China",
+            "A product of recent realist thinking on international relations"
+        ],
+        answer: 2,
+        englishExplanation: "A practice which dates back at least to pre-Imperial China. Diplomacy is an ancient practice that existed long before modern European states and can be traced back to ancient civilizations.",
+        amharicExplanation: "ከጥንታዊ ኢምፔሪያል ቻይና በፊት እንኳን የነበረ ልምምድ ነው። ዲፕሎማሲ ዘመናዊ የአውሮፓ ሀገራት ከመፈጠራቸው በፊት በጥንታዊ ሥልጣኔዎች ውስጥ የነበረ ጥንታዊ የግንኙነት ልምምድ ነው።"
+    },
+
+    {
+        question: "Contemporary diplomacy is...",
+        options: [
+            "Conducted by a range of state and non-state actors",
+            "Only conducted by heads of government",
+            "Only conducted by specially-trained diplomats",
+            "Only understood by Westerners"
+        ],
+        answer: 0,
+        englishExplanation: "Conducted by a range of state and non-state actors. Contemporary diplomacy involves governments and diplomats as well as international organizations, NGOs, businesses, and other non-state actors.",
+        amharicExplanation: "በተለያዩ መንግስታዊና መንግስታዊ ያልሆኑ አካላት የሚከናወን ነው። ዘመናዊ ዲፕሎማሲ በመንግስታትና በዲፕሎማቶች ብቻ ሳይሆን በዓለም አቀፍ ድርጅቶች፣ NGOs፣ የንግድ ድርጅቶችና ሌሎች መንግስታዊ ያልሆኑ አካላትም ይከናወናል።"
+    },
+
+    {
+        question: "Tewodros II's foreign policy can be seen as an early attempt at modernization in a globalizing world. How does his approach reflect broader 19th-century global trends?",
+        options: [
+            "Emphasis on military conquest over diplomacy",
+            "Focus on religious alliances to counterbalance European expansion",
+            "Adoption of Western technology as a tool for state-building",
+            "Rejection of European influence in favor of African solidarity"
+        ],
+        answer: 2,
+        englishExplanation: "Adoption of Western technology as a tool for state-building. Tewodros II sought Western technical knowledge, skills, and technology to strengthen the Ethiopian state and support modernization.",
+        amharicExplanation: "የምዕራባውያን ቴክኖሎጂን ለሀገር ግንባታ መጠቀም። አፄ ቴዎድሮስ ዳግማዊ የምዕራባውያንን የቴክኒክ እውቀት፣ ክህሎትና ቴክኖሎጂ በመጠቀም የኢትዮጵያን መንግስት ለማጠናከርና ዘመናዊነትን ለማምጣት ሞክረዋል።"
+    },
+
+    {
+        question: "In the context of Tewodros II's reign, how does his foreign policy reflect the power dynamics between European imperial powers and African kingdoms?",
+        options: [
+            "African kingdoms had equal standing with European powers",
+            "African rulers sought recognition and technology but were often met with condescension",
+            "European powers viewed African rulers as strategic allies in global politics",
+            "African kingdoms successfully resisted all forms of European intervention"
+        ],
+        answer: 1,
+        englishExplanation: "African rulers sought recognition and technology but were often met with condescension. Tewodros II wanted diplomatic recognition, technology, and stronger relations, but European imperial powers often treated African rulers as inferior.",
+        amharicExplanation: "አፍሪካዊ መሪዎች እውቅናና ቴክኖሎጂ ለማግኘት ይፈልጉ ነበር፣ ነገር ግን ብዙ ጊዜ በአውሮፓ ኢምፔሪያሊስት ኃይሎች ንቀትና ትዕቢት ይገጥማቸው ነበር። ይህም በ19ኛው ክፍለ ዘመን በአውሮፓና በአፍሪካ መካከል የኃይል ልዩነትን ያሳያል።"
+    },
+
+    {
+        question: "What does Tewodros II's use of Christianity as a tool in his foreign policy signify about global ideological trends in the 19th century?",
+        options: [
+            "The spread of secularism in global politics",
+            "The instrumental use of religion to gain political and military allies",
+            "The decline of religious influence in global affairs",
+            "The dominance of Islam in global power structures"
+        ],
+        answer: 1,
+        englishExplanation: "The instrumental use of religion to gain political and military allies. Tewodros II used the shared Christian identity as a way to seek closer political and military relationships with European Christian powers.",
+        amharicExplanation: "ሃይማኖትን በፖለቲካ እና በወታደራዊ ጉዳይ ላይ አጋሮችን ለማግኘት እንደ መሣሪያ መጠቀም። አፄ ቴዎድሮስ ዳግማዊ የጋራ የክርስትና ማንነትን በመጠቀም ከአውሮፓ ክርስቲያን ኃይሎች ጋር የተሻለ የፖለቲካና የወታደራዊ ግንኙነት ለመፍጠር ሞክረዋል።"
+    },
+  {
+    question: "Tewodros II's engagement with Britain ended in failure. How does this reflect the broader trend of European colonial intervention in Africa during this period?",
+    options: [
+      "European powers generally supported African rulers in their modernization efforts",
+      "European responses to African rulers were often dismissive, leading to conflict and intervention",
+      "European powers ignored Africa entirely during this period",
+      "African rulers were able to fully modernize without European interference"
+    ],
+    answer: 1,
+    englishExplanation: "European powers often dismissed the sovereignty and diplomatic requests of African rulers. This unequal relationship could lead to conflict and military intervention.",
+    amharicExplanation: "የአውሮፓ ኃይሎች የአፍሪካ መሪዎችን ሉዓላዊነትና የዲፕሎማሲ ጥያቄዎች ብዙ ጊዜ ችላ ይሉ ነበር። ይህ እኩል ያልሆነ ግንኙነት ወደ ግጭትና ወታደራዊ ጣልቃ ገብነት ሊያመራ ይችል ነበር።"
+  },
+
+  {
+    question: "Yohannes IV's focus on the Islamic threat to Ethiopia's territorial integrity was part of a larger global trend in the 19th century. Which of the following best describes this trend?",
+    options: [
+      "The clash of civilizations between Islam and Christianity in the Middle East and Africa",
+      "The dominance of Islamic empires over European powers",
+      "The peaceful coexistence of religious empires in the region",
+      "The retreat of European powers from African affairs"
+    ],
+    answer: 0,
+    englishExplanation: "Yohannes IV's concerns reflected the religious and geopolitical tensions between Christian and Muslim powers in Africa and the surrounding regions during the 19th century.",
+    amharicExplanation: "የዮሐንስ አራተኛ ስጋት በ19ኛው ክፍለ ዘመን በአፍሪካና በአካባቢው በክርስቲያንና በሙስሊም ኃይሎች መካከል የነበረውን ሃይማኖታዊና ጂኦፖለቲካዊ ውጥረት ያንጸባርቃል።"
+  },
+
+  {
+    question: "How does Yohannes IV's engagement with Egypt, a Muslim-majority state, reflect the intersection of religion and imperialism in global politics during his reign?",
+    options: [
+      "Religion played no role in conflicts between Ethiopia and Egypt",
+      "Religion was a secondary factor, with territorial ambitions being the primary cause of conflict",
+      "Religious identity was central, with Yohannes viewing Islamic states as an existential threat to Christian Ethiopia",
+      "Yohannes IV sought alliances with Islamic powers to counter European colonialism"
+    ],
+    answer: 2,
+    englishExplanation: "Yohannes IV considered the expansion of Islamic powers a serious threat to the security and survival of Christian Ethiopia, making religion an important part of his foreign policy.",
+    amharicExplanation: "ዮሐንስ አራተኛ የእስልምና ኃይሎች መስፋፋት ለክርስቲያን ኢትዮጵያ ደህንነትና ሕልውና ከፍተኛ ስጋት እንደሆነ ይመለከቱ ነበር። ስለዚህ ሃይማኖት በውጭ ፖሊሲያቸው ውስጥ ጠቃሚ ሚና ነበረው።"
+  },
+
+  {
+    question: "The defeat of Egyptian forces by Yohannes IV in the Battle of Gundet (1875) highlights which of the following global military trends in the late 19th century?",
+    options: [
+      "The increasing dominance of African powers over European and Muslim empires",
+      "The role of modern European-supplied weaponry in tipping the balance of power in African conflicts",
+      "The decline of military technology in African conflicts",
+      "The complete withdrawal of European powers from African military engagements"
+    ],
+    answer: 1,
+    englishExplanation: "Modern weapons supplied through European connections could significantly affect the balance of military power in African conflicts.",
+    amharicExplanation: "በአውሮፓ ንግድና ግንኙነት የተገኙ ዘመናዊ የጦር መሣሪያዎች በአፍሪካ ግጭቶች ውስጥ የወታደራዊ ኃይል ሚዛንን በከፍተኛ ሁኔታ ሊቀይሩ ይችሉ ነበር።"
+  },
+
+  {
+    question: "Yohannes IV's military focus on Egypt and the Mahadists reflects which broader global concern of African leaders in the 19th century?",
+    options: [
+      "Expanding their borders into Europe",
+      "Maintaining alliances with European powers against other African states",
+      "Resisting both Islamic and European imperialism simultaneously",
+      "Avoiding any involvement in global political conflicts"
+    ],
+    answer: 2,
+    englishExplanation: "African rulers such as Yohannes IV faced threats from both regional powers and European imperial expansion, requiring them to defend their territories on several fronts.",
+    amharicExplanation: "እንደ ዮሐንስ አራተኛ ያሉ የአፍሪካ መሪዎች ከክልላዊ ኃይሎችና ከአውሮፓ ኢምፔሪያሊዝም ስጋት ይገጥማቸው ነበር። ስለዚህ ግዛታቸውን ከተለያዩ አቅጣጫዎች መጠበቅ ይጠበቅባቸው ነበር።"
+  },
+
+  {
+    question: "Why was Italy's occupation of the port of Massawa in 1885 significant within the context of global imperialism?",
+    options: [
+      "It marked the end of African resistance to European colonialism",
+      "It demonstrated the strategic importance of Ethiopia in global trade routes",
+      "It led to the immediate collapse of the Ethiopian empire",
+      "It signaled the decline of European interest in Africa"
+    ],
+    answer: 1,
+    englishExplanation: "Massawa was strategically important because control of a major Red Sea port could provide access to trade routes and facilitate further territorial expansion.",
+    amharicExplanation: "መስዋ በቀይ ባሕር ላይ ያለች ስትራቴጂካዊ የባሕር ወደብ ስለነበረች ቁጥጥሯ ለንግድ መንገዶች መዳረሻና ለተጨማሪ የግዛት መስፋፋት ጠቃሚ ነበር።"
+  },
+
+  {
+    question: "The relationship between Yohannes IV and European powers reveals which global trend during the late 19th century?",
+    options: [
+      "African rulers had no choice but to fully submit to European colonial interests",
+      "European powers frequently formed genuine alliances with African rulers based on mutual respect",
+      "European powers often manipulated local conflicts to further their colonial ambitions",
+      "African rulers were able to completely avoid European interference"
+    ],
+    answer: 2,
+    englishExplanation: "European colonial powers sometimes used existing regional rivalries and conflicts to advance their own political and territorial interests in Africa.",
+    amharicExplanation: "የአውሮፓ ቅኝ ገዥ ኃይሎች በአፍሪካ የነበሩ የአካባቢ ግጭቶችንና ተቀናቃኝነቶችን የራሳቸውን የፖለቲካና የግዛት ጥቅም ለማሳካት ይጠቀሙባቸው ነበር።"
+  },
+
+  {
+    question: "Yohannes IV's death fighting the Mahadists underscores which of the following global trends in the late 19th century?",
+    options: [
+      "The rise of African nationalism and unity against European powers",
+      "The vulnerability of African leaders to internal and external conflicts",
+      "The dominance of African empires over European and Islamic powers",
+      "The end of religiously motivated conflicts in Africa"
+    ],
+    answer: 1,
+    englishExplanation: "African rulers faced serious pressures from internal conflicts, neighboring powers, religious conflicts, and European imperial expansion.",
+    amharicExplanation: "የአፍሪካ መሪዎች ከውስጣዊ ግጭቶች፣ ከጎረቤት ኃይሎች፣ ከሃይማኖታዊ ግጭቶች እና ከአውሮፓ ኢምፔሪያሊዝም ከባድ ጫናዎች ይገጥማቸው ነበር።"
+  },
+
+  {
+    question: "Tewodros II's foreign policy failure with Britain can best be understood in light of which broader 19th-century diplomatic trend?",
+    options: [
+      "The growing respect for African sovereignty among European powers",
+      "The strategic disinterest of Europe in Africa's internal affairs",
+      "The inability of non-Western powers to engage on equal diplomatic terms with European empires",
+      "The rise of multilateral agreements between Europe and Africa"
+    ],
+    answer: 2,
+    englishExplanation: "European imperial powers often did not treat African rulers as equal diplomatic partners, creating unequal relationships and serious diplomatic difficulties.",
+    amharicExplanation: "የአውሮፓ ኢምፔሪያሊስት ኃይሎች የአፍሪካ መሪዎችን እንደ እኩል የዲፕሎማሲ አጋሮች ብዙ ጊዜ አይቆጥሩም ነበር። ይህም እኩል ያልሆነ ግንኙነትን ፈጥሮ የዲፕሎማሲ ችግሮችን አባብሷል።"
+  },
+
+  {
+    question: "Which of the following best describes the role of religion in Tewodros II's foreign policy?",
+    options: [
+      "A means of ideological expansion across Africa",
+      "A tool to forge strategic alliances against both Islamic and European threats",
+      "A secondary concern compared to territorial expansion",
+      "An entirely domestic issue with no relevance to foreign affairs"
+    ],
+    answer: 1,
+    englishExplanation: "Tewodros II used Ethiopia's Christian identity as a diplomatic tool to seek support, alliances, and military assistance from European Christian powers.",
+    amharicExplanation: "አፄ ቴዎድሮስ ሁለተኛ የኢትዮጵያን የክርስትና ማንነት ከአውሮፓ ክርስቲያን ኃይሎች ድጋፍ፣ ግንኙነትና ወታደራዊ እርዳታ ለማግኘት እንደ ዲፕሎማሲያዊ መሣሪያ ለመጠቀም ሞክረዋል።"
+  },
+
+  {
+    question: "What does the British response to Tewodros II's requests for assistance illustrate about global power hierarchies during this period?",
+    options: [
+      "Europe's openness to engaging with non-European rulers",
+      "The dismissive attitude of European powers toward African diplomatic overtures",
+      "Britain's fear of Ethiopia's growing power",
+      "The equality of African and European nations in diplomatic negotiations"
+    ],
+    answer: 1,
+    englishExplanation: "Britain's response showed the unequal power relationship of the period, as African diplomatic requests were often not treated with the same importance given to European states.",
+    amharicExplanation: "የብሪታንያ ምላሽ በዚያን ጊዜ የነበረውን እኩል ያልሆነ የኃይል ግንኙነት ያሳያል። የአፍሪካ የዲፕሎማሲ ጥያቄዎች ከአውሮፓ ሀገራት ጥያቄዎች ጋር ተመሳሳይ ክብደት አይሰጣቸውም ነበር።"
+  },
+
+  {
+    question: "Yohannes IV's struggle against European and Islamic forces reflects what broader theme in global politics during the scramble for Africa?",
+    options: [
+      "The cooperation between African nations and European powers",
+      "The balance of power between African kingdoms and European empires",
+      "The intersection of religion, territorial expansion, and colonialism",
+      "The decline of religious conflicts in global affairs"
+    ],
+    answer: 2,
+    englishExplanation: "Yohannes IV's foreign policy was shaped by the combination of religious tensions, the defense of territory, and the growing pressure of European colonialism.",
+    amharicExplanation: "የዮሐንስ አራተኛ የውጭ ፖሊሲ በሃይማኖታዊ ውጥረቶች፣ የግዛት ደህንነትን በመጠበቅ እና እየጨመረ በመጣው የአውሮፓ ቅኝ ግዛት ጫና ተጽዕኖ ሥር ነበር።"
+  },
+
+  {
+    question: "What was one of the primary motivations behind Menelik II's expansionist policy towards the South and East of Ethiopia?",
+    options: [
+      "To access more fertile land for agricultural expansion",
+      "To ensure diplomatic relations with neighboring regions",
+      "To secure access to a sea port, particularly Zeila",
+      "To spread Ethiopian religious and cultural influence"
+    ],
+    answer: 2,
+    englishExplanation: "One important motivation was to secure access to important trade routes and a sea outlet, particularly the port of Zeila.",
+    amharicExplanation: "ከዋና ዋና የመስፋፋት ዓላማዎች አንዱ ወደ ጠቃሚ የንግድ መንገዶችና በተለይም ወደ ዜይላ ወደብ መዳረሻ ማግኘት ነበር።"
+  },
+
+  {
+    question: "Why did Menelik II choose to adopt a 'double-track diplomacy' in his relations with Italy?",
+    options: [
+      "To maintain both peaceful negotiations and military preparedness",
+      "To establish Italy as an ally against other colonial powers",
+      "To deceive other European powers regarding his true intentions",
+      "To focus solely on economic development in Ethiopia"
+    ],
+    answer: 0,
+    englishExplanation: "Menelik II used diplomacy and negotiation while also preparing his forces for possible conflict. This allowed him to seek peace without giving up military readiness.",
+    amharicExplanation: "ምኒልክ ሁለተኛ በዲፕሎማሲና በድርድር ሰላምን ለመፈለግ ሲሞክሩ በተመሳሳይ ጊዜ ለጦርነት ዝግጁ ሆነው ይቆዩ ነበር። ይህም ሰላምን ለመፈለግ እና የወታደራዊ ዝግጁነትን ላለመተው ያስችላቸው ነበር።"
+  },
+
+  {
+    question: "What was the key disagreement between Ethiopia and Italy that led to the abrogation of the Wuchale Treaty?",
+    options: [
+      "Disputes over control of Ethiopian trade routes",
+      "A conflict over Menelik's expansionist policies",
+      "A misinterpretation of Article 17, regarding Ethiopia's sovereignty",
+      "Ethiopia's refusal to adopt European-style governance systems"
+    ],
+    answer: 2,
+    englishExplanation: "The disagreement centered on Article 17. The Italian version was interpreted as making Ethiopia an Italian protectorate, while the Amharic version did not impose the same obligation on Ethiopia.",
+    amharicExplanation: "አለመግባባቱ በውጫሌ ስምምነት አንቀጽ 17 ላይ ያተኮረ ነበር። የጣሊያንኛው ትርጉም ኢትዮጵያ የጣሊያን ጥገኛ ሀገር እንደሆነች የሚያሳይ ሲሆን፣ የአማርኛው ትርጉም ግን እንዲህ ያለ ግዴታ አልጣለባትም።"
+  },
+
+  {
+    question: "What was the significance of the Battle of Adwa in 1896 for Ethiopia's foreign policy?",
+    options: [
+      "It solidified Ethiopia's economic dominance in the region",
+      "It weakened Ethiopia's relations with other African kingdoms",
+      "It established Ethiopia as an independent African state recognized by European powers",
+      "It led to the annexation of Italian Eritrea by Ethiopia"
+    ],
+    answer: 2,
+    englishExplanation: "The victory at Adwa protected Ethiopia's independence and strengthened its international position as a sovereign African state.",
+    amharicExplanation: "የዓድዋ ድል የኢትዮጵያን ነፃነት ከጣሊያን ቅኝ ግዛት ጥረት ጠብቆ የሉዓላዊ አፍሪካዊ ሀገር ዓለም አቀፍ አቋሟን አጠናከረ።"
+  },
+
+  {
+    question: "How did Menelik II's victory at the Battle of Adwa influence boundary disputes with neighboring territories?",
+    options: [
+      "It allowed Ethiopia to peacefully annex neighboring regions without dispute",
+      "It led to the immediate demarcation of Ethiopia's borders with all neighboring regions",
+      "It resulted in boundary agreements with European powers, but disputes with neighbors like Sudan and Somalia persisted",
+      "It forced Ethiopia into a series of wars to maintain its territorial integrity"
+    ],
+    answer: 2,
+    englishExplanation: "After Adwa, Ethiopia reached boundary agreements with several European colonial powers. However, some border disputes and tensions with neighboring territories continued.",
+    amharicExplanation: "ከዓድዋ ድል በኋላ ኢትዮጵያ ከተለያዩ የአውሮፓ ቅኝ ገዢ ኃይሎች ጋር የድንበር ስምምነቶችን አደረገች። ሆኖም ከሱዳንና ሶማሊያ አካባቢዎች ጋር የድንበር ውዝግቦችና ውጥረቶች ቀጥለዋል።"
+  },
+
+  {
+    question: "Which of the following best describes the role of Italy's colonial ambitions in Ethiopia's foreign policy during Menelik II's reign?",
+    options: [
+      "Italy's ambitions strengthened Menelik II's alliances with other European powers",
+      "Italy's expansion into the Ethiopian hinterland directly led to the Battle of Adwa",
+      "Italy's ambitions were largely irrelevant to Ethiopia's internal politics",
+      "Menelik II was able to negotiate peacefully with Italy, avoiding conflict altogether"
+    ],
+    answer: 1,
+    englishExplanation: "Italy's attempt to expand its control into Ethiopian territory increased tensions and eventually contributed directly to the conflict that culminated in the Battle of Adwa.",
+    amharicExplanation: "ጣሊያን በኢትዮጵያ ግዛት ውስጥ ቁጥጥሯን ለማስፋፋት ያደረገችው ሙከራ ውጥረትን አባባሰ። በመጨረሻም ይህ ግጭት ወደ ዓድዋ ጦርነት እንዲደርስ አስተዋጽኦ አደረገ።"
+  },
+
+  {
+    question: "What was Emperor Haile Selassie I's primary motivation for Ethiopia's early membership in the League of Nations in 1923?",
+    options: [
+      "To strengthen Ethiopia's position as a regional military power",
+      "To gain international protection against Italian colonial ambitions",
+      "To enhance trade relationships with Western nations",
+      "To promote Ethiopia's cultural and religious influence in Europe"
+    ],
+    answer: 1,
+    englishExplanation: "Ethiopia joined the League of Nations partly to strengthen its international security and seek collective protection against possible Italian aggression.",
+    amharicExplanation: "ኢትዮጵያ ወደ ሊግ ኦፍ ኔሽንስ የገባችው ዓለም አቀፍ ደህንነቷን ለማጠናከርና ከሚመጣ የጣሊያን ጥቃት የጋራ ዓለም አቀፍ ጥበቃ ለማግኘት ነበር።"
+  },
+
+  {
+    question: "How did Haile Selassie's diplomatic efforts during the Italian invasion (1936-1941) illustrate his belief in the power of diplomacy?",
+    options: [
+      "He mobilized a large international military alliance against Italy",
+      "He established a government-in-exile and sought League of Nations support, despite its failure to act",
+      "He abandoned Ethiopia and focused on rebuilding diplomatic relations with Britain",
+      "He negotiated directly with Mussolini to end hostilities"
+    ],
+    answer: 1,
+    englishExplanation: "Haile Selassie established a government-in-exile and appealed to the League of Nations and the international community for action against Italy's invasion.",
+    amharicExplanation: "ኃይለ ሥላሴ በውጭ አገር የስደተኛ መንግሥት በማቋቋም እና ወደ ሊግ ኦፍ ኔሽንስ በመጥራት የጣሊያንን ወረራ ለማስቆም ዓለም አቀፍ ዲፕሎማሲያዊ ድጋፍ ፈለጉ።"
+  }];
 
 quizData["global-trends"]["3"] = [
 
