@@ -145,6 +145,166 @@ quizData["global-trends"]["5"] = [{
     answer: 2,
     englishExplanation: "Huntington argued that future international conflicts would increasingly occur along cultural and civilizational divisions. In his view, differences in culture, religion, and civilizational identity could become major sources of conflict.",
     amharicExplanation: "ሃንቲንግተን እንደሚለው የወደፊት ዓለም አቀፍ ግጭቶች በባህልና በሥልጣኔ ልዩነቶች መካከል በሚኖሩ ክፍተቶች ላይ ሊመሰረቱ ይችላሉ። በተለይም የባህል፣ የሃይማኖት እና የሥልጣኔ ማንነት ልዩነቶች ዋና የግጭት ምንጮች ሊሆኑ ይችላሉ።"
+},{
+    question: "The greenhouse gas reduction goals set out in the Kyoto Protocol remain largely unachieved.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Although the Kyoto Protocol established greenhouse gas reduction targets, many countries struggled to achieve them fully because of difficulties in implementing and enforcing effective emission-reduction policies.",
+    amharicExplanation: "መግለጫው እውነት ነው። የኪዮቶ ፕሮቶኮል የግሪንሀውስ ጋዝ ልቀትን ለመቀነስ ግቦችን ቢያስቀምጥም፣ ብዙ አገሮች የተቀመጡትን ግቦች ሙሉ በሙሉ ማሳካት አልቻሉም።"
+},
+
+{
+    question: "Domestic terrorism is calculated as an efficient and extremely destructive form of terrorism.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. The description of terrorism as cold, calculated, efficient, and extremely destructive is associated more closely with state-sponsored terrorism because governments can use large military, financial, and intelligence resources.",
+    amharicExplanation: "መግለጫው ሐሰት ነው። ሽብርተኝነትን ቀዝቃዛ፣ የተሰላ፣ ቀልጣፋ እና እጅግ አጥፊ ብሎ መግለጽ በተለይ ከመንግስት ድጋፍ ከሚደረግለት ሽብርተኝነት ጋር ይያያዛል። ምክንያቱም መንግስታት ትልቅ ወታደራዊ፣ የገንዘብ እና የስለላ አቅም ስላላቸው ነው።"
+},
+
+{
+    question: "Developing countries contribute least to global warming, but they suffer the most.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Developing countries generally have contributed less to historical greenhouse gas emissions, but many are highly vulnerable to climate change and experience serious effects such as droughts, floods, and food insecurity.",
+    amharicExplanation: "መግለጫው እውነት ነው። ታዳጊ አገሮች በታሪክ ውስጥ ለግሪንሀውስ ጋዝ ልቀት ከያደጉ አገሮች ያነሰ አስተዋጽኦ ቢኖራቸውም፣ በአየር ንብረት ለውጥ በጣም ተጋላጭ ናቸው። ድርቅ፣ ጎርፍ እና የምግብ እጥረት ያሉ ከባድ ችግሮችን ይጋፈጣሉ።"
+},
+
+{
+    question: "The end of the Cold War has led to a decrease in concern about the dangers of nuclear war between the superpowers.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. The end of the Cold War reduced the immediate risk of a direct nuclear confrontation between the United States and the Soviet Union because their intense ideological and strategic rivalry declined.",
+    amharicExplanation: "መግለጫው እውነት ነው። የቀዝቃዛው ጦርነት ማብቃት በአሜሪካ እና በሶቪየት ህብረት መካከል የነበረውን ከፍተኛ የርዕዮተ-ዓለምና የወታደራዊ ፉክክር በመቀነሱ፣ ቀጥተኛ የኑክሌር ጦርነት ስጋትን ቀንሷል።"
+},
+
+{
+    question: "Huntington's clash-of-civilizations theory states that civilizations will be the dividing lines of the future 21st-century global order and that conflict will exist and continue instead of cooperation among civilizations.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Huntington argued that after the Cold War, cultural and religious differences between civilizations would become major sources of international conflict, replacing the earlier emphasis on ideological conflict.",
+    amharicExplanation: "መግለጫው እውነት ነው። ሃንቲንግተን ከቀዝቃዛው ጦርነት በኋላ የባህልና የሃይማኖት ልዩነቶች የዓለም አቀፍ ግጭቶች ዋና ምንጭ ሊሆኑ እንደሚችሉ ተከራክሯል።"
+},
+
+{
+    question: "Which one is incorrect as a reason why competition to acquire nuclear weapons has increased in the post-Cold War period among states?",
+    options: [
+        "Nuclear-weapon states consider that nuclear weapons play some positive role in providing security",
+        "Non-nuclear states have got the guarantee of extended deterrence",
+        "The combination of the loss of extended deterrence with regional dynamics",
+        "The experiences of Iraq and North Korea show that nuclear proliferation can establish deterrence"
+    ],
+    answer: 1,
+    englishExplanation: "The second statement is incorrect. Non-nuclear states do not universally receive reliable guarantees of extended deterrence. The lack of such guarantees can increase insecurity and encourage some states to consider developing their own nuclear capabilities.",
+    amharicExplanation: "ሁለተኛው መግለጫ ስህተት ነው። ኑክሌር የሌላቸው አገሮች ሁሉ አስተማማኝ የተራዘመ መከላከያ (extended deterrence) ዋስትና አያገኙም። ይህ ዋስትና አለመኖሩ የደህንነት ስጋትን ሊጨምር እና አንዳንድ አገሮች የራሳቸውን ኑክሌር አቅም እንዲፈልጉ ሊያደርግ ይችላል።"
+},
+
+{
+    question: "Which one of the following is an extremely destructive form of terrorism?",
+    options: [
+        "Global terrorism",
+        "Ethno-nationalist-driven terrorism",
+        "Religiously driven terrorism",
+        "Government-sponsored terrorism",
+        "Domestic terrorism"
+    ],
+    answer: 3,
+    englishExplanation: "Government-sponsored terrorism is considered extremely destructive because governments can provide large financial, military, intelligence, and organizational resources to support terrorist activities.",
+    amharicExplanation: "የመንግስት ድጋፍ የሚደረግለት ሽብርተኝነት እጅግ አጥፊ ሊሆን ይችላል። መንግስታት ትልቅ የገንዘብ፣ ወታደራዊ፣ የስለላ እና የድርጅት አቅም ስላላቸው ለእንዲህ ያሉ ተግባራት ከፍተኛ ድጋፍ ሊሰጡ ይችላሉ።"
+},
+
+{
+    question: "Among the following, which one refers to the exercise of domination of cultural relationships in which the values, practices, and meanings of a powerful foreign culture are imposed upon others?",
+    options: [
+        "Cultural imperialism",
+        "Cultural civilization",
+        "Cultural interdependence",
+        "Cultural relativism"
+    ],
+    answer: 0,
+    englishExplanation: "Cultural imperialism is the process in which a powerful culture influences or imposes its values, practices, lifestyles, and meanings on less powerful cultures.",
+    amharicExplanation: "የባህል ኢምፔሪያሊዝም (Cultural imperialism) ማለት ኃይለኛ የውጭ ባህል የራሱን እሴቶች፣ ልማዶች፣ የአኗኗር ዘይቤዎች እና ትርጉሞች በደካማ ወይም በሌሎች ባህሎች ላይ የሚያሳድር ወይም የሚጭንበት ሂደት ነው።"
+},
+
+{
+    question: "Which one is NOT a factor that accounts for the increasing of migration?",
+    options: [
+        "The existence of peace and stability motivating people to search abroad for a better life",
+        "The emergence of new states in the international system since the end of World War I",
+        "The rapid growth of the world's population",
+        "The revolution in communications and transportation"
+    ],
+    answer: 0,
+    englishExplanation: "The first statement is not considered a major factor increasing migration. Peace and stability generally encourage people to remain in their communities, while conflict, economic hardship, population growth, and improved transportation and communication can encourage migration.",
+    amharicExplanation: "የመጀመሪያው መግለጫ ስደት እንዲጨምር ከሚያደርጉ ዋና ምክንያቶች አንዱ አይደለም። ሰላምና መረጋጋት ብዙውን ጊዜ ሰዎች በአገራቸው እንዲቆዩ ያደርጋል። በተቃራኒው ግጭት፣ ኢኮኖሚያዊ ችግር፣ የህዝብ ቁጥር መጨመር እና የትራንስፖርትና የመገናኛ እድገት ስደትን ሊጨምሩ ይችላሉ።"
+},
+
+{
+    question: "The process through which alien goods and practices are absorbed by being adapted to local needs and circumstances is called:",
+    options: [
+        "Westernization",
+        "Ethnocentrism",
+        "Indigenization",
+        "Modernization"
+    ],
+    answer: 2,
+    englishExplanation: "Indigenization is the process of adapting foreign ideas, goods, or practices to local culture, needs, and circumstances rather than accepting them exactly as they originally appear.",
+    amharicExplanation: "ኢንዲጂኔዜሽን (Indigenization) ማለት የውጭ ሀሳቦች፣ እቃዎች ወይም ልማዶች እንዳሉ ብቻ ሳይወሰዱ ከአካባቢው ባህል፣ ፍላጎት እና ሁኔታ ጋር እንዲጣጣሙ የሚስተካከሉበት ሂደት ነው።"
+},
+
+{
+    question: "What makes a certain issue a global issue?",
+    options: [
+        "The extent or scope of an issue",
+        "The urgency or intensity of the issue",
+        "The salience or visibility of a given issue",
+        "The centrality or location of an issue",
+        "All of the above"
+    ],
+    answer: 4,
+    englishExplanation: "All of the above. An issue can become a global issue because of its wide scope, urgency, visibility, and importance or impact across different countries and regions.",
+    amharicExplanation: "መልሱ ሁሉም ከላይ የተጠቀሱት ነው። አንድ ጉዳይ ዓለም አቀፍ ጉዳይ የሚሆነው ሰፊ የተጽዕኖ ክልል ሲኖረው፣ አስቸኳይ ሲሆን፣ በሰፊው ትኩረት ሲያገኝ እና በብዙ አገሮች ወይም ክልሎች ላይ ጉልህ ተጽዕኖ ሲኖረው ነው።"
+},
+
+{
+    question: "Of the following, one is NOT among the strategic, economic, and political motivations for the proliferation of armaments during the late 1980s:",
+    options: [
+        "Military burden sharing",
+        "Superpower rivalry during the Cold War",
+        "Economic reasons such as economies of scale",
+        "Regional balance of power",
+        "None of the above"
+    ],
+    answer: 4,
+    englishExplanation: "None of the above is correct because all four listed factors could contribute to the proliferation of armaments. Military burden sharing, Cold War superpower rivalry, economic considerations, and regional balance of power were all relevant motivations.",
+    amharicExplanation: "መልሱ 'None of the above' ነው። ምክንያቱም ከA እስከ D የተጠቀሱት ሁሉ በ1980ዎቹ መጨረሻ የጦር መሳሪያ መስፋፋትን ሊያበረታቱ የሚችሉ ስትራቴጂያዊ፣ ኢኮኖሚያዊ እና ፖለቲካዊ ምክንያቶች ነበሩ።"
+},
+
+{
+    question: "For the notion of ______, cultural differences are supposed to be a factor of conflicts rather than cooperation in the 21st century.",
+    options: [
+        "Clash of civilizations",
+        "Indigenization",
+        "Cultural imperialism",
+        "All"
+    ],
+    answer: 0,
+    englishExplanation: "Clash of civilizations is the correct answer. Huntington's theory argues that cultural and civilizational differences can become major sources of conflict in the post-Cold War and 21st-century international system.",
+    amharicExplanation: "ትክክለኛው መልስ 'Clash of civilizations' ነው። የሃንቲንግተን ጽንሰ-ሀሳብ የባህልና የሥልጣኔ ልዩነቶች በ21ኛው ክፍለ ዘመን ከትብብር ይልቅ ዋና የግጭት ምንጮች ሊሆኑ እንደሚችሉ ይገልጻል።"
 }];
 
 
@@ -809,167 +969,7 @@ quizData["history"]["1"] = [{
     answer: 1,
     englishExplanation: "False. Manuscripts and diaries can be primary sources when they contain original or firsthand records created by people connected to the event or period being studied.",
     amharicExplanation: "ሐሰት። የእጅ ጽሑፎች (Manuscripts) እና የግል ማስታወሻዎች (Diaries) በክስተቱ ወይም በዘመኑ የተጻፉ ቀጥተኛ መረጃዎችን ከያዙ የመጀመሪያ ደረጃ ምንጮች ናቸው።"
-  },{
-    question: "The greenhouse gas reduction goals set out in the Kyoto Protocol remain largely unachieved.",
-    options: [
-        "True",
-        "False"
-    ],
-    answer: 0,
-    englishExplanation: "The statement is true. Although the Kyoto Protocol established greenhouse gas reduction targets, many countries struggled to achieve them fully because of difficulties in implementing and enforcing effective emission-reduction policies.",
-    amharicExplanation: "መግለጫው እውነት ነው። የኪዮቶ ፕሮቶኮል የግሪንሀውስ ጋዝ ልቀትን ለመቀነስ ግቦችን ቢያስቀምጥም፣ ብዙ አገሮች የተቀመጡትን ግቦች ሙሉ በሙሉ ማሳካት አልቻሉም።"
-},
-
-{
-    question: "Domestic terrorism is calculated as an efficient and extremely destructive form of terrorism.",
-    options: [
-        "True",
-        "False"
-    ],
-    answer: 1,
-    englishExplanation: "The statement is false. The description of terrorism as cold, calculated, efficient, and extremely destructive is associated more closely with state-sponsored terrorism because governments can use large military, financial, and intelligence resources.",
-    amharicExplanation: "መግለጫው ሐሰት ነው። ሽብርተኝነትን ቀዝቃዛ፣ የተሰላ፣ ቀልጣፋ እና እጅግ አጥፊ ብሎ መግለጽ በተለይ ከመንግስት ድጋፍ ከሚደረግለት ሽብርተኝነት ጋር ይያያዛል። ምክንያቱም መንግስታት ትልቅ ወታደራዊ፣ የገንዘብ እና የስለላ አቅም ስላላቸው ነው።"
-},
-
-{
-    question: "Developing countries contribute least to global warming, but they suffer the most.",
-    options: [
-        "True",
-        "False"
-    ],
-    answer: 0,
-    englishExplanation: "The statement is true. Developing countries generally have contributed less to historical greenhouse gas emissions, but many are highly vulnerable to climate change and experience serious effects such as droughts, floods, and food insecurity.",
-    amharicExplanation: "መግለጫው እውነት ነው። ታዳጊ አገሮች በታሪክ ውስጥ ለግሪንሀውስ ጋዝ ልቀት ከያደጉ አገሮች ያነሰ አስተዋጽኦ ቢኖራቸውም፣ በአየር ንብረት ለውጥ በጣም ተጋላጭ ናቸው። ድርቅ፣ ጎርፍ እና የምግብ እጥረት ያሉ ከባድ ችግሮችን ይጋፈጣሉ።"
-},
-
-{
-    question: "The end of the Cold War has led to a decrease in concern about the dangers of nuclear war between the superpowers.",
-    options: [
-        "True",
-        "False"
-    ],
-    answer: 0,
-    englishExplanation: "The statement is true. The end of the Cold War reduced the immediate risk of a direct nuclear confrontation between the United States and the Soviet Union because their intense ideological and strategic rivalry declined.",
-    amharicExplanation: "መግለጫው እውነት ነው። የቀዝቃዛው ጦርነት ማብቃት በአሜሪካ እና በሶቪየት ህብረት መካከል የነበረውን ከፍተኛ የርዕዮተ-ዓለምና የወታደራዊ ፉክክር በመቀነሱ፣ ቀጥተኛ የኑክሌር ጦርነት ስጋትን ቀንሷል።"
-},
-
-{
-    question: "Huntington's clash-of-civilizations theory states that civilizations will be the dividing lines of the future 21st-century global order and that conflict will exist and continue instead of cooperation among civilizations.",
-    options: [
-        "True",
-        "False"
-    ],
-    answer: 0,
-    englishExplanation: "The statement is true. Huntington argued that after the Cold War, cultural and religious differences between civilizations would become major sources of international conflict, replacing the earlier emphasis on ideological conflict.",
-    amharicExplanation: "መግለጫው እውነት ነው። ሃንቲንግተን ከቀዝቃዛው ጦርነት በኋላ የባህልና የሃይማኖት ልዩነቶች የዓለም አቀፍ ግጭቶች ዋና ምንጭ ሊሆኑ እንደሚችሉ ተከራክሯል።"
-},
-
-{
-    question: "Which one is incorrect as a reason why competition to acquire nuclear weapons has increased in the post-Cold War period among states?",
-    options: [
-        "Nuclear-weapon states consider that nuclear weapons play some positive role in providing security",
-        "Non-nuclear states have got the guarantee of extended deterrence",
-        "The combination of the loss of extended deterrence with regional dynamics",
-        "The experiences of Iraq and North Korea show that nuclear proliferation can establish deterrence"
-    ],
-    answer: 1,
-    englishExplanation: "The second statement is incorrect. Non-nuclear states do not universally receive reliable guarantees of extended deterrence. The lack of such guarantees can increase insecurity and encourage some states to consider developing their own nuclear capabilities.",
-    amharicExplanation: "ሁለተኛው መግለጫ ስህተት ነው። ኑክሌር የሌላቸው አገሮች ሁሉ አስተማማኝ የተራዘመ መከላከያ (extended deterrence) ዋስትና አያገኙም። ይህ ዋስትና አለመኖሩ የደህንነት ስጋትን ሊጨምር እና አንዳንድ አገሮች የራሳቸውን ኑክሌር አቅም እንዲፈልጉ ሊያደርግ ይችላል።"
-},
-
-{
-    question: "Which one of the following is an extremely destructive form of terrorism?",
-    options: [
-        "Global terrorism",
-        "Ethno-nationalist-driven terrorism",
-        "Religiously driven terrorism",
-        "Government-sponsored terrorism",
-        "Domestic terrorism"
-    ],
-    answer: 3,
-    englishExplanation: "Government-sponsored terrorism is considered extremely destructive because governments can provide large financial, military, intelligence, and organizational resources to support terrorist activities.",
-    amharicExplanation: "የመንግስት ድጋፍ የሚደረግለት ሽብርተኝነት እጅግ አጥፊ ሊሆን ይችላል። መንግስታት ትልቅ የገንዘብ፣ ወታደራዊ፣ የስለላ እና የድርጅት አቅም ስላላቸው ለእንዲህ ያሉ ተግባራት ከፍተኛ ድጋፍ ሊሰጡ ይችላሉ።"
-},
-
-{
-    question: "Among the following, which one refers to the exercise of domination of cultural relationships in which the values, practices, and meanings of a powerful foreign culture are imposed upon others?",
-    options: [
-        "Cultural imperialism",
-        "Cultural civilization",
-        "Cultural interdependence",
-        "Cultural relativism"
-    ],
-    answer: 0,
-    englishExplanation: "Cultural imperialism is the process in which a powerful culture influences or imposes its values, practices, lifestyles, and meanings on less powerful cultures.",
-    amharicExplanation: "የባህል ኢምፔሪያሊዝም (Cultural imperialism) ማለት ኃይለኛ የውጭ ባህል የራሱን እሴቶች፣ ልማዶች፣ የአኗኗር ዘይቤዎች እና ትርጉሞች በደካማ ወይም በሌሎች ባህሎች ላይ የሚያሳድር ወይም የሚጭንበት ሂደት ነው።"
-},
-
-{
-    question: "Which one is NOT a factor that accounts for the increasing of migration?",
-    options: [
-        "The existence of peace and stability motivating people to search abroad for a better life",
-        "The emergence of new states in the international system since the end of World War I",
-        "The rapid growth of the world's population",
-        "The revolution in communications and transportation"
-    ],
-    answer: 0,
-    englishExplanation: "The first statement is not considered a major factor increasing migration. Peace and stability generally encourage people to remain in their communities, while conflict, economic hardship, population growth, and improved transportation and communication can encourage migration.",
-    amharicExplanation: "የመጀመሪያው መግለጫ ስደት እንዲጨምር ከሚያደርጉ ዋና ምክንያቶች አንዱ አይደለም። ሰላምና መረጋጋት ብዙውን ጊዜ ሰዎች በአገራቸው እንዲቆዩ ያደርጋል። በተቃራኒው ግጭት፣ ኢኮኖሚያዊ ችግር፣ የህዝብ ቁጥር መጨመር እና የትራንስፖርትና የመገናኛ እድገት ስደትን ሊጨምሩ ይችላሉ።"
-},
-
-{
-    question: "The process through which alien goods and practices are absorbed by being adapted to local needs and circumstances is called:",
-    options: [
-        "Westernization",
-        "Ethnocentrism",
-        "Indigenization",
-        "Modernization"
-    ],
-    answer: 2,
-    englishExplanation: "Indigenization is the process of adapting foreign ideas, goods, or practices to local culture, needs, and circumstances rather than accepting them exactly as they originally appear.",
-    amharicExplanation: "ኢንዲጂኔዜሽን (Indigenization) ማለት የውጭ ሀሳቦች፣ እቃዎች ወይም ልማዶች እንዳሉ ብቻ ሳይወሰዱ ከአካባቢው ባህል፣ ፍላጎት እና ሁኔታ ጋር እንዲጣጣሙ የሚስተካከሉበት ሂደት ነው።"
-},
-
-{
-    question: "What makes a certain issue a global issue?",
-    options: [
-        "The extent or scope of an issue",
-        "The urgency or intensity of the issue",
-        "The salience or visibility of a given issue",
-        "The centrality or location of an issue",
-        "All of the above"
-    ],
-    answer: 4,
-    englishExplanation: "All of the above. An issue can become a global issue because of its wide scope, urgency, visibility, and importance or impact across different countries and regions.",
-    amharicExplanation: "መልሱ ሁሉም ከላይ የተጠቀሱት ነው። አንድ ጉዳይ ዓለም አቀፍ ጉዳይ የሚሆነው ሰፊ የተጽዕኖ ክልል ሲኖረው፣ አስቸኳይ ሲሆን፣ በሰፊው ትኩረት ሲያገኝ እና በብዙ አገሮች ወይም ክልሎች ላይ ጉልህ ተጽዕኖ ሲኖረው ነው።"
-},
-
-{
-    question: "Of the following, one is NOT among the strategic, economic, and political motivations for the proliferation of armaments during the late 1980s:",
-    options: [
-        "Military burden sharing",
-        "Superpower rivalry during the Cold War",
-        "Economic reasons such as economies of scale",
-        "Regional balance of power",
-        "None of the above"
-    ],
-    answer: 4,
-    englishExplanation: "None of the above is correct because all four listed factors could contribute to the proliferation of armaments. Military burden sharing, Cold War superpower rivalry, economic considerations, and regional balance of power were all relevant motivations.",
-    amharicExplanation: "መልሱ 'None of the above' ነው። ምክንያቱም ከA እስከ D የተጠቀሱት ሁሉ በ1980ዎቹ መጨረሻ የጦር መሳሪያ መስፋፋትን ሊያበረታቱ የሚችሉ ስትራቴጂያዊ፣ ኢኮኖሚያዊ እና ፖለቲካዊ ምክንያቶች ነበሩ።"
-},
-
-{
-    question: "For the notion of ______, cultural differences are supposed to be a factor of conflicts rather than cooperation in the 21st century.",
-    options: [
-        "Clash of civilizations",
-        "Indigenization",
-        "Cultural imperialism",
-        "All"
-    ],
-    answer: 0,
-    englishExplanation: "Clash of civilizations is the correct answer. Huntington's theory argues that cultural and civilizational differences can become major sources of conflict in the post-Cold War and 21st-century international system.",
-    amharicExplanation: "ትክክለኛው መልስ 'Clash of civilizations' ነው። የሃንቲንግተን ጽንሰ-ሀሳብ የባህልና የሥልጣኔ ልዩነቶች በ21ኛው ክፍለ ዘመን ከትብብር ይልቅ ዋና የግጭት ምንጮች ሊሆኑ እንደሚችሉ ይገልጻል።"
-}];
+  }];
 
 quizData["history"]["2"] = [
 
