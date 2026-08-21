@@ -1,1644 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="theme-color"
-        content="#1e3a8a"
-    >
-
-    <title>Anthropology | Unique Academic</title>
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
-    <style>
-
-/* =====================================================
-   QUIZ PROGRESS MODAL
-===================================================== */
-
-.quizProgressModal {
-
-    position: fixed;
-
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.55);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 20px;
-
-    z-index: 9999;
-
-}
-
-
-.quizProgressModal.hidden {
-
-    display: none;
-
-}
-
-
-.quizProgressBox {
-
-    width: 100%;
-
-    max-width: 430px;
-
-    background: #ffffff;
-
-    border-radius: 22px;
-
-    padding: 25px;
-
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.25);
-
-    animation:
-        progressModalIn 0.25s ease;
-
-}
-
-
-@keyframes progressModalIn {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(20px) scale(0.96);
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0) scale(1);
-
-    }
-
-}
-
-
-/* -----------------------------------------------------
-   MODAL HEADER
------------------------------------------------------ */
-
-.progressModalHeader {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    margin-bottom: 20px;
-
-}
-
-
-.progressModalIcon {
-
-    width: 55px;
-
-    height: 55px;
-
-    border-radius: 16px;
-
-    background: #eef2ff;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 28px;
-
-}
-
-
-.progressModalTitle {
-
-    flex: 1;
-
-}
-
-
-.progressModalTitle h2 {
-
-    margin: 0;
-
-    font-size: 21px;
-
-}
-
-
-.progressModalTitle p {
-
-    margin: 4px 0 0;
-
-    color: #666;
-
-    font-size: 14px;
-
-}
-
-
-.progressCloseBtn {
-
-    border: none;
-
-    background: #f3f4f6;
-
-    width: 38px;
-
-    height: 38px;
-
-    border-radius: 50%;
-
-    font-size: 20px;
-
-    cursor: pointer;
-
-}
-
-
-/* -----------------------------------------------------
-   PROGRESS PERCENTAGE
------------------------------------------------------ */
-
-.progressPercentage {
-
-    text-align: center;
-
-    margin: 10px 0 18px;
-
-}
-
-
-.progressPercentage strong {
-
-    display: block;
-
-    font-size: 38px;
-
-    line-height: 1;
-
-    color: #1e3a8a;
-
-}
-
-
-.progressPercentage span {
-
-    color: #666;
-
-    font-size: 14px;
-
-}
-
-
-/* -----------------------------------------------------
-   PROGRESS BAR
------------------------------------------------------ */
-
-.modalProgressTrack {
-
-    width: 100%;
-
-    height: 12px;
-
-    background: #e5e7eb;
-
-    border-radius: 20px;
-
-    overflow: hidden;
-
-    margin-bottom: 22px;
-
-}
-
-
-.modalProgressBar {
-
-    height: 100%;
-
-    width: 0%;
-
-    background: #1e3a8a;
-
-    border-radius: 20px;
-
-    transition: width 0.3s ease;
-
-}
-
-
-/* -----------------------------------------------------
-   STATISTICS
------------------------------------------------------ */
-
-.progressStats {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 10px;
-
-    margin-bottom: 22px;
-
-}
-
-
-.progressStat {
-
-    background: #f8fafc;
-
-    border-radius: 14px;
-
-    padding: 13px;
-
-    text-align: center;
-
-}
-
-
-.progressStat strong {
-
-    display: block;
-
-    font-size: 20px;
-
-}
-
-
-.progressStat span {
-
-    display: block;
-
-    margin-top: 3px;
-
-    font-size: 12px;
-
-    color: #6b7280;
-
-}
-
-
-.correctStat strong {
-
-    color: #16a34a;
-
-}
-
-
-.wrongStat strong {
-
-    color: #dc2626;
-
-}
-
-
-/* -----------------------------------------------------
-   MODAL BUTTONS
------------------------------------------------------ */
-
-.progressModalActions {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-
-}
-
-
-.continueQuizBtn {
-
-    border: none;
-
-    background: #1e3a8a;
-
-    color: white;
-
-    border-radius: 13px;
-
-    padding: 14px;
-
-    font-size: 16px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-}
-
-
-.continueQuizBtn:hover {
-
-    opacity: 0.92;
-
-}
-
-
-.resetQuizBtn {
-
-    border: none;
-
-    background: #f3f4f6;
-
-    color: #374151;
-
-    border-radius: 13px;
-
-    padding: 12px;
-
-    font-size: 14px;
-
-    cursor: pointer;
-
-}
-
-
-.resetQuizBtn:hover {
-
-    background: #e5e7eb;
-
-}
-
-
-/* =====================================================
-   QUIZ CARD
-===================================================== */
-
-.quiz-card {
-
-    position: relative;
-
-}
-
-
-.quiz-progress {
-
-    cursor: pointer;
-
-    user-select: none;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-}
-
-
-.quiz-progress:hover {
-
-    transform: scale(1.05);
-
-}
-
-
-.quiz-progress:active {
-
-    transform: scale(0.96);
-
-}
-
-
-/* Keep arrow above the card interactions */
-
-.quiz-arrow {
-
-    position: relative;
-
-    z-index: 5;
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 480px) {
-
-    .quizProgressBox {
-
-        padding: 20px;
-
-        border-radius: 19px;
-
-    }
-
-
-    .progressModalTitle h2 {
-
-        font-size: 19px;
-
-    }
-
-
-    .progressPercentage strong {
-
-        font-size: 34px;
-
-    }
-
-}
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-<!-- =====================================================
-     STICKY PAGE NAVIGATION
-===================================================== -->
-
-<header class="pageNav">
-
-    <button
-        id="pageBackBtn"
-        class="pageBackBtn"
-        type="button"
-    >
-
-        <span>←</span>
-
-        <span class="pageBackText">
-            Back
-        </span>
-
-    </button>
-
-
-    <div class="pageTitle">
-
-        <span class="pageTitleIcon">
-            🧑‍🤝‍🧑
-        </span>
-
-        <div>
-
-            <h1>
-                Anthropology
-            </h1>
-
-            <p>
-                BDU Freshman Course
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <button
-        id="pageHomeBtn"
-        class="pageHomeBtn"
-        type="button"
-    >
-
-        <span>
-            🏠
-        </span>
-
-        <span class="pageHomeText">
-            Home
-        </span>
-
-    </button>
-
-</header>
-
-
-
-<!-- =====================================================
-     MAIN CONTENT
-===================================================== -->
-
-<main class="subjectPage">
-
-
-    <!-- =================================================
-         SUBJECT INTRO
-    ================================================== -->
-
-    <section class="subjectIntro">
-
-        <h1>
-            🧑‍🤝‍🧑 Anthropology
-        </h1>
-
-        <p>
-            <b>BDU Freshman Course</b>
-        </p>
-
-    </section>
-
-
-
-    <!-- =================================================
-         CHAPTERS
-    ================================================== -->
-
-    <section>
-
-        <h2>
-            📚 Chapters
-        </h2>
-
-
-        <p>
-            📗
-            <a href="anthropology-chapter1.html">
-                Chapter 1
-            </a>
-        </p>
-
-
-        <p>
-            📗
-            <a href="anthropology-chapter2.html">
-                Chapter 2
-            </a>
-        </p>
-
-
-        <p>
-            📗
-            <a href="anthropology-chapter3.html">
-                Chapter 3
-            </a>
-        </p>
-
-
-        <p>
-            📗
-            <a href="anthropology-chapter4.html">
-                Chapter 4
-            </a>
-        </p>
-
-
-        <p>
-            📗
-            <a href="anthropology-chapter5.html">
-                Chapter 5
-            </a>
-        </p>
-
-    </section>
-
-
-
-    <!-- =================================================
-         RESOURCES
-    ================================================== -->
-
-    <section>
-
-        <h2>
-            📌 Resources
-        </h2>
-
-
-        <p>
-
-            <a href="anthropology-notes.html">
-                📄 Full Notes
-            </a>
-
-        </p>
-
-
-        <p>
-            🎥 Video Tutorial
-        </p>
-
-    </section>
-
-
-
-    <!-- =================================================
-         CHAPTER QUIZZES
-    ================================================== -->
-
-    <section>
-
-        <h2>
-            📝 Chapter Quizzes
-        </h2>
-
-
-
-        <!-- =================================================
-             CHAPTER 1
-        ================================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="1"
-        >
-
-            <button
-                type="button"
-                class="quiz-progress"
-                data-progress-chapter="1"
-                aria-label="View Chapter 1 progress"
-            >
-                0%
-            </button>
-
-
-            <div class="quiz-info">
-
-                <span class="quiz-badge">
-                    Chapter 1
-                </span>
-
-                <h3>
-                    Chapter 1 Quiz
-                </h3>
-
-            </div>
-
-
-            <a
-                href="quiz.html?subject=anthropology&chapter=1"
-                class="quiz-arrow"
-                aria-label="Open Chapter 1 quiz"
-            >
-                ➜
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             CHAPTER 2
-        ================================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="2"
-        >
-
-            <button
-                type="button"
-                class="quiz-progress"
-                data-progress-chapter="2"
-                aria-label="View Chapter 2 progress"
-            >
-                0%
-            </button>
-
-
-            <div class="quiz-info">
-
-                <span class="quiz-badge">
-                    Chapter 2
-                </span>
-
-                <h3>
-                    Chapter 2 Quiz
-                </h3>
-
-            </div>
-
-
-            <a
-                href="quiz.html?subject=anthropology&chapter=2"
-                class="quiz-arrow"
-                aria-label="Open Chapter 2 quiz"
-            >
-                ➜
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             CHAPTER 3
-        ================================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="3"
-        >
-
-            <button
-                type="button"
-                class="quiz-progress"
-                data-progress-chapter="3"
-                aria-label="View Chapter 3 progress"
-            >
-                0%
-            </button>
-
-
-            <div class="quiz-info">
-
-                <span class="quiz-badge">
-                    Chapter 3
-                </span>
-
-                <h3>
-                    Chapter 3 Quiz
-                </h3>
-
-            </div>
-
-
-            <a
-                href="quiz.html?subject=anthropology&chapter=3"
-                class="quiz-arrow"
-                aria-label="Open Chapter 3 quiz"
-            >
-                ➜
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             CHAPTER 4
-        ================================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="4"
-        >
-
-            <button
-                type="button"
-                class="quiz-progress"
-                data-progress-chapter="4"
-                aria-label="View Chapter 4 progress"
-            >
-                0%
-            </button>
-
-
-            <div class="quiz-info">
-
-                <span class="quiz-badge">
-                    Chapter 4
-                </span>
-
-                <h3>
-                    Chapter 4 Quiz
-                </h3>
-
-            </div>
-
-
-            <a
-                href="quiz.html?subject=anthropology&chapter=4"
-                class="quiz-arrow"
-                aria-label="Open Chapter 4 quiz"
-            >
-                ➜
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             CHAPTER 5
-        ================================================== -->
-
-        <div
-            class="quiz-card"
-            data-chapter="5"
-        >
-
-            <button
-                type="button"
-                class="quiz-progress"
-                data-progress-chapter="5"
-                aria-label="View Chapter 5 progress"
-            >
-                0%
-            </button>
-
-
-            <div class="quiz-info">
-
-                <span class="quiz-badge">
-                    Chapter 5
-                </span>
-
-                <h3>
-                    Chapter 5 Quiz
-                </h3>
-
-            </div>
-
-
-            <a
-                href="quiz.html?subject=anthropology&chapter=5"
-                class="quiz-arrow"
-                aria-label="Open Chapter 5 quiz"
-            >
-                ➜
-            </a>
-
-        </div>
-
-    </section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     PROGRESS MODAL
-===================================================== -->
-
-<div
-    id="quizProgressModal"
-    class="quizProgressModal hidden"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="progressModalChapter"
+<!DOCTYPE html>  <html lang="en">  <head>  <meta charset="UTF-8">  
+
+<meta  
+    name="viewport"  
+    content="width=device-width, initial-scale=1.0"  
+>  
+
+<meta  
+    name="theme-color"  
+    content="#8e44ad"  
+>  
+
+<title>Unique Academic Quiz</title>  
+
+<link  
+    rel="stylesheet"  
+    href="quiz.css"  
 >
 
+</head>  <body>  <div class="page">  <!-- =====================================  
+     STICKY TOP HEADER  
+====================================== -->  
 
-    <div class="quizProgressBox">
+<header class="quizHeader">  
 
+    <button  
+        id="backBtn"  
+        class="topNavBtn backBtn"  
+        type="button"  
+        aria-label="Go back"  
+    >  
+        <span class="navIcon">←</span>  
+        <span class="backText">Back</span>  
+    </button>  
 
-        <!-- =================================================
-             MODAL HEADER
-        ================================================== -->
 
-        <div class="progressModalHeader">
+    <div class="headerTitle">  
 
+        <span class="headerBook">📖</span>  
 
-            <div class="progressModalIcon">
-                📚
-            </div>
+        <div>  
 
+            <h1 id="headerTitle">  
+                Unique Academic  
+            </h1>  
 
-            <div class="progressModalTitle">
+            <p id="headerChapter">  
+                Quiz  
+            </p>  
 
-                <h2 id="progressModalChapter">
-                    Chapter 1
-                </h2>
+        </div>  
 
-                <p>
-                    Quiz Progress
-                </p>
+    </div>  
 
-            </div>
 
+    <button  
+        id="homeBtn"  
+        class="topNavBtn homeBtn"  
+        type="button"  
+        aria-label="Go to home"  
+    >  
+        <span class="homeIcon">⌂</span>  
+        <span class="homeText">Home</span>  
+    </button>  
 
-            <button
-                id="progressCloseBtn"
-                class="progressCloseBtn"
-                type="button"
-                aria-label="Close"
-            >
-                ×
-            </button>
+</header>  
 
-        </div>
 
+<!-- =====================================  
+     MAIN QUIZ CONTENT  
+====================================== -->  
 
+<main  
+    class="quizContainer"  
+    id="quizContainer"  
+>  
 
-        <!-- =================================================
-             PERCENTAGE
-        ================================================== -->
+    <!-- Subject / Chapter -->  
 
-        <div class="progressPercentage">
+    <section class="subjectCard">  
 
-            <strong id="modalProgressPercent">
-                0%
-            </strong>
+        <div class="subjectIcon">  
+            🎓  
+        </div>  
 
-            <span>
-                Overall Progress
-            </span>
+        <div class="subjectInfo">  
 
-        </div>
+            <p class="smallLabel">  
+                CURRENT QUIZ  
+            </p>  
 
+            <h2 id="subjectName">  
+                Subject  
+            </h2>  
 
+            <p id="chapterName">  
+                Chapter 1  
+            </p>  
 
-        <!-- =================================================
-             PROGRESS BAR
-        ================================================== -->
+        </div>  
 
-        <div class="modalProgressTrack">
+    </section>  
 
-            <div
-                id="modalProgressBar"
-                class="modalProgressBar"
-            ></div>
 
-        </div>
+    <!-- Progress -->  
 
+    <section class="progressCard">  
 
+        <div class="progressTop">  
 
-        <!-- =================================================
-             STATISTICS
-        ================================================== -->
+            <span>  
+                Quiz Progress  
+            </span>  
 
-        <div class="progressStats">
+            <strong id="questionNumber">  
+                Question 1 / 10  
+            </strong>  
 
+        </div>  
 
-            <div class="progressStat">
 
-                <strong id="modalTotal">
-                    0
-                </strong>
+        <div class="progressTrack">  
 
-                <span>
-                    Total Questions
-                </span>
+            <div  
+                id="progressBar"  
+                class="progressBar"  
+            ></div>  
 
-            </div>
+        </div>  
 
+    </section>  
 
-            <div class="progressStat">
 
-                <strong id="modalAttempted">
-                    0
-                </strong>
+    <!-- =====================================  
+ QUESTIONS PAGE
 
-                <span>
-                    Attempted
-                </span>
+====================================== -->
 
-            </div>
+<div id="questionsPage"></div>  <!-- =====================================  
+         BOTTOM QUESTION NAVIGATION  
+    ====================================== -->  
 
+    <div class="questionNavigation">  
 
-            <div class="progressStat correctStat">
+        <button  
+            id="previousQuestionBtn"  
+            class="questionNavBtn previousQuestionBtn"  
+            type="button"  
+        >  
 
-                <strong id="modalCorrect">
-                    0
-                </strong>
+            <span class="navArrow">  
+                ←  
+            </span>  
 
-                <span>
-                    Correct
-                </span>
+            <span>  
+                Previous  
+            </span>  
 
-            </div>
+        </button>  
 
-
-            <div class="progressStat wrongStat">
-
-                <strong id="modalWrong">
-                    0
-                </strong>
-
-                <span>
-                    Wrong
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             ACTIONS
-        ================================================== -->
-
-        <div class="progressModalActions">
-
-
-            <button
-                id="continueQuizBtn"
-                class="continueQuizBtn"
-                type="button"
-            >
-                Continue Quiz →
-            </button>
-
-
-            <button
-                id="resetQuizBtn"
-                class="resetQuizBtn"
-                type="button"
-            >
-                🔄 Reset Progress
-            </button>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     PAGE NAVIGATION JAVASCRIPT
-===================================================== -->
-
-<script>
-
-const pageBackBtn =
-    document.getElementById("pageBackBtn");
-
-const pageHomeBtn =
-    document.getElementById("pageHomeBtn");
-
-
-// =====================================================
-// BACK
-// =====================================================
-
-pageBackBtn.addEventListener(
-    "click",
-    () => {
-
-        if (window.history.length > 1) {
-
-            window.history.back();
-
-        } else {
-
-            window.location.href =
-                "index.html";
-
-        }
-
-    }
-);
-
-
-// =====================================================
-// HOME
-// =====================================================
-
-pageHomeBtn.addEventListener(
-    "click",
-    () => {
-
-        window.location.href =
-            "index.html";
-
-    }
-);
-
-
-// =====================================================
-// QUIZ PROGRESS SYSTEM
-// =====================================================
-
-const progressModal =
-    document.getElementById(
-        "quizProgressModal"
-    );
-
-const progressCloseBtn =
-    document.getElementById(
-        "progressCloseBtn"
-    );
-
-const continueQuizBtn =
-    document.getElementById(
-        "continueQuizBtn"
-    );
-
-const resetQuizBtn =
-    document.getElementById(
-        "resetQuizBtn"
-    );
-
-
-const modalChapter =
-    document.getElementById(
-        "progressModalChapter"
-    );
-
-const modalPercent =
-    document.getElementById(
-        "modalProgressPercent"
-    );
-
-const modalBar =
-    document.getElementById(
-        "modalProgressBar"
-    );
-
-const modalTotal =
-    document.getElementById(
-        "modalTotal"
-    );
-
-const modalAttempted =
-    document.getElementById(
-        "modalAttempted"
-    );
-
-const modalCorrect =
-    document.getElementById(
-        "modalCorrect"
-    );
-
-const modalWrong =
-    document.getElementById(
-        "modalWrong"
-    );
-
-
-let selectedChapter = null;
-
-
-// =====================================================
-// STORAGE KEY
-// =====================================================
-
-function getStorageKey(chapter) {
-
-    return `uniqueAcademicQuizProgress_anthropology_${chapter}`;
-
-}
-
-
-// =====================================================
-// DEFAULT PROGRESS
-// =====================================================
-
-function getDefaultProgress() {
-
-    return {
-
-        attempted: 0,
-
-        correct: 0,
-
-        wrong: 0
-
-    };
-
-}
-
-
-// =====================================================
-// GET SAVED PROGRESS
-// =====================================================
-
-function getProgress(chapter) {
-
-    const key =
-        getStorageKey(chapter);
-
-    try {
-
-        const saved =
-            localStorage.getItem(key);
-
-        if (!saved) {
-
-            return getDefaultProgress();
-
-        }
-
-        const data =
-            JSON.parse(saved);
-
-        return {
-
-            attempted:
-                Number(data.attempted) || 0,
-
-            correct:
-                Number(data.correct) || 0,
-
-            wrong:
-                Number(data.wrong) || 0
-
-        };
-
-    } catch (error) {
-
-        console.error(
-            "Could not read quiz progress:",
-            error
-        );
-
-        return getDefaultProgress();
-
-    }
-
-}
-
-
-// =====================================================
-// SAVE PROGRESS
-// =====================================================
-
-function saveProgress(
-    chapter,
-    progress
-) {
-
-    try {
-
-        localStorage.setItem(
-            getStorageKey(chapter),
-            JSON.stringify(progress)
-        );
-
-    } catch (error) {
-
-        console.error(
-            "Could not save quiz progress:",
-            error
-        );
-
-    }
-
-}
-
-
-// =====================================================
-// TOTAL QUESTIONS
-//
-// We read quizData when it is available.
-// This keeps the modal automatically connected
-// to the real number of questions.
-// =====================================================
-
-function getTotalQuestions(chapter) {
-
-    try {
-
-        if (
-            typeof quizData !== "undefined" &&
-            quizData &&
-            quizData.anthropology &&
-            quizData.anthropology[chapter]
-        ) {
-
-            return quizData
-                .anthropology[chapter]
-                .length;
-
-        }
-
-    } catch (error) {
-
-        console.error(
-            "Could not read quizData:",
-            error
-        );
-
-    }
-
-
-    return 0;
-
-}
-
-
-// =====================================================
-// CALCULATE PERCENTAGE
-// =====================================================
-
-function calculateProgress(
-    attempted,
-    total
-) {
-
-    if (!total) {
-
-        return 0;
-
-    }
-
-
-    return Math.min(
-        100,
-        Math.round(
-            (attempted / total) * 100
-        )
-    );
-
-}
-
-
-// =====================================================
-// UPDATE CHAPTER CIRCLES
-// =====================================================
-
-function updateChapterProgressCircles() {
-
-    const progressButtons =
-        document.querySelectorAll(
-            "[data-progress-chapter]"
-        );
-
-
-    progressButtons.forEach(
-        button => {
-
-            const chapter =
-                button.dataset.progressChapter;
-
-            const progress =
-                getProgress(chapter);
-
-            const total =
-                getTotalQuestions(chapter);
-
-            const percentage =
-                calculateProgress(
-                    progress.attempted,
-                    total
-                );
-
-
-            button.textContent =
-                `${percentage}%`;
-
-        }
-    );
-
-}
-
-
-// =====================================================
-// OPEN MODAL
-// =====================================================
-
-function openProgressModal(chapter) {
-
-    selectedChapter =
-        chapter;
-
-
-    const progress =
-        getProgress(chapter);
-
-
-    const total =
-        getTotalQuestions(chapter);
-
-
-    const percentage =
-        calculateProgress(
-            progress.attempted,
-            total
-        );
-
-
-    modalChapter.textContent =
-        `Chapter ${chapter}`;
-
-
-    modalPercent.textContent =
-        `${percentage}%`;
-
-
-    modalBar.style.width =
-        `${percentage}%`;
-
-
-    modalTotal.textContent =
-        total;
-
-
-    modalAttempted.textContent =
-        progress.attempted;
-
-
-    modalCorrect.textContent =
-        progress.correct;
-
-
-    modalWrong.textContent =
-        progress.wrong;
-
-
-    progressModal.classList.remove(
-        "hidden"
-    );
-
-
-    document.body.style.overflow =
-        "hidden";
-
-}
-
-
-// =====================================================
-// CLOSE MODAL
-// =====================================================
-
-function closeProgressModal() {
-
-    progressModal.classList.add(
-        "hidden"
-    );
-
-
-    document.body.style.overflow =
-        "";
-
-}
-
-
-// =====================================================
-// PROGRESS CIRCLE CLICK
-// =====================================================
-
-document
-    .querySelectorAll(
-        "[data-progress-chapter]"
-    )
-    .forEach(
-        button => {
-
-            button.addEventListener(
-                "click",
-                () => {
-
-                    openProgressModal(
-                        button.dataset.progressChapter
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-// =====================================================
-// CLOSE BUTTON
-// =====================================================
-
-progressCloseBtn.addEventListener(
-    "click",
-    closeProgressModal
-);
-
-
-// =====================================================
-// CLICK OUTSIDE MODAL
-// =====================================================
-
-progressModal.addEventListener(
-    "click",
-    event => {
-
-        if (
-            event.target ===
-            progressModal
-        ) {
-
-            closeProgressModal();
-
-        }
-
-    }
-);
-
-
-// =====================================================
-// ESCAPE KEY
-// =====================================================
-
-document.addEventListener(
-    "keydown",
-    event => {
-
-        if (
-            event.key === "Escape" &&
-            !progressModal.classList.contains(
-                "hidden"
-            )
-        ) {
-
-            closeProgressModal();
-
-        }
-
-    }
-);
-
-
-// =====================================================
-// CONTINUE QUIZ
-// =====================================================
-
-continueQuizBtn.addEventListener(
-    "click",
-    () => {
-
-        if (!selectedChapter) {
-
-            return;
-
-        }
-
-
-        window.location.href =
-            `quiz.html?subject=anthropology&chapter=${encodeURIComponent(selectedChapter)}`;
-
-    }
-);
-
-
-// =====================================================
-// RESET PROGRESS
-// =====================================================
-
-resetQuizBtn.addEventListener(
-    "click",
-    () => {
-
-        if (!selectedChapter) {
-
-            return;
-
-        }
-
-
-        const confirmed =
-            window.confirm(
-                `Reset all progress for Anthropology Chapter ${selectedChapter}?`
-            );
-
-
-        if (!confirmed) {
-
-            return;
-
-        }
-
-
-        localStorage.removeItem(
-            getStorageKey(selectedChapter)
-        );
-
-
-        openProgressModal(
-            selectedChapter
-        );
-
-
-        updateChapterProgressCircles();
-
-    }
-);
-
-
-// =====================================================
-// INITIALIZE
-// =====================================================
-
-updateChapterProgressCircles();
-
-</script>
-
-
-
-<!-- =====================================================
-     ACCESS GUARD
-===================================================== -->
-
-<script
-    type="module"
-    src="access-guard.js"
-></script>
-
-
-</body>
-
-</html>
+
+        <button  
+            id="nextBtn"  
+            class="questionNavBtn nextQuestionBtn"  
+            type="button"  
+        >  
+
+            <span>  
+                Next  
+            </span>  
+
+            <span class="navArrow">  
+                →  
+            </span>  
+
+        </button>  
+
+    </div>  
+
+
+    <!-- Completion -->  
+
+    <div  
+        id="completionMessage"  
+        class="completionMessage"  
+        hidden  
+    >  
+
+        <div class="completionIcon">  
+            🎉  
+        </div>  
+
+        <h2>  
+            Quiz Completed!  
+        </h2>  
+
+        <p>  
+            Great job! You have reached the end of this quiz.  
+        </p>  
+
+    </div>  
+
+
+</main>  
+
+
+<footer class="quizFooter">  
+
+    <p>  
+        🎓 Unique Academic  
+    </p>  
+
+    <span>  
+        Learn • Practice • Succeed  
+    </span>  
+
+</footer>
+
+</div>  <!-- =====================================  
+     ACCESS GUARD + QUIZ DATA LOADING  
+===================================== -->  <script type="module">  
+  
+    document.addEventListener(  
+        "uniqueAcademicAccessGranted",  
+        () => {  
+  
+            /*  
+             * STEP 1  
+             * Load the original quiz data.  
+             *  
+             * IMPORTANT:  
+             * quizData.js is NOT modified.  
+             */  
+  
+            const dataScript =  
+                document.createElement("script");  
+  
+            dataScript.src =  
+                "quizData.js";  
+  
+            dataScript.onload = () => {  
+  
+                /*  
+                 * STEP 2  
+                 * Load additional quiz data.  
+                 *  
+                 * This file adds new chapters  
+                 * without modifying quizData.js.  
+                 */  
+  
+                const additionalDataScript =  
+                    document.createElement("script");  
+  
+                additionalDataScript.src =  
+                    "additionalQuizData.js";  
+  
+                additionalDataScript.onload = () => {  
+  
+                    /*  
+                     * STEP 3  
+                     * Only after BOTH data files are  
+                     * successfully loaded, start quiz.js.  
+                     */  
+  
+                    const quizScript =  
+                        document.createElement("script");  
+  
+                    quizScript.src =  
+                        "quiz.js";  
+  
+                    quizScript.onerror = () => {  
+  
+                        console.error(  
+                            "Could not load quiz.js"  
+                        );  
+  
+                    };  
+  
+                    document.body.appendChild(  
+                        quizScript  
+                    );  
+  
+                };  
+  
+  
+                additionalDataScript.onerror = () => {  
+  
+                    /*  
+                     * If the additional file is missing,  
+                     * keep the original quiz system working.  
+                     */  
+  
+                    console.error(  
+                        "Could not load additionalQuizData.js"  
+                    );  
+  
+                    const quizScript =  
+                        document.createElement("script");  
+  
+                    quizScript.src =  
+                        "quiz.js";  
+  
+                    document.body.appendChild(  
+                        quizScript  
+                    );  
+  
+                };  
+  
+  
+                document.body.appendChild(  
+                    additionalDataScript  
+                );  
+  
+            };  
+  
+  
+            dataScript.onerror = () => {  
+  
+                console.error(  
+                    "Could not load quizData.js"  
+                );  
+  
+            };  
+  
+  
+            document.body.appendChild(  
+                dataScript  
+            );  
+  
+        }  
+    );  
+  
+</script>  <!-- =====================================  
+     FIREBASE ACCESS CHECK  
+===================================== -->  <script  
+    type="module"  
+    src="access-guard.js"  
+></script>  </body>  </html>
