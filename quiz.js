@@ -1,7 +1,7 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
+// STABLE VERSION
 // 5 QUESTIONS PER PAGE
-// WITH PERSISTENT CHAPTER PROGRESS
 // =====================================================
 
 
@@ -9,49 +9,32 @@
 // READ URL PARAMETERS
 // =====================================================
 
-const params =
-    new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
-const subject =
-    params.get("subject");
-
-const chapter =
-    params.get("chapter");
+const subject = params.get("subject");
+const chapter = params.get("chapter");
 
 
 // =====================================================
 // HTML ELEMENTS
 // =====================================================
 
-const subjectName =
-    document.getElementById("subjectName");
+const subjectName = document.getElementById("subjectName");
+const chapterName = document.getElementById("chapterName");
 
-const chapterName =
-    document.getElementById("chapterName");
+const headerTitle = document.getElementById("headerTitle");
+const headerChapter = document.getElementById("headerChapter");
 
-const headerTitle =
-    document.getElementById("headerTitle");
+const questionNumber = document.getElementById("questionNumber");
 
-const headerChapter =
-    document.getElementById("headerChapter");
-
-const questionNumber =
-    document.getElementById("questionNumber");
-
-const nextBtn =
-    document.getElementById("nextBtn");
-
+const nextBtn = document.getElementById("nextBtn");
 const previousQuestionBtn =
     document.getElementById("previousQuestionBtn");
 
-const backBtn =
-    document.getElementById("backBtn");
+const backBtn = document.getElementById("backBtn");
+const homeBtn = document.getElementById("homeBtn");
 
-const homeBtn =
-    document.getElementById("homeBtn");
-
-const progressBar =
-    document.getElementById("progressBar");
+const progressBar = document.getElementById("progressBar");
 
 const completionMessage =
     document.getElementById("completionMessage");
@@ -75,112 +58,11 @@ let currentPage = 0;
 
 
 // =====================================================
-// PROGRESS STORAGE
+// SAFETY CHECK
 // =====================================================
 
-const progressStorageKey =
-    `uniqueAcademicProgress_${subject}_${chapter}`;
-
-
-// =====================================================
-// GET SAVED PROGRESS
-// =====================================================
-
-function getSavedProgress() {
-
-    const defaultProgress = {
-
-        attempted: 0,
-
-        correct: 0,
-
-        wrong: 0,
-
-        completed: false,
-
-        answered: {}
-
-    };
-
-
-    try {
-
-        const saved =
-            localStorage.getItem(
-                progressStorageKey
-            );
-
-
-        if (!saved) {
-
-            return defaultProgress;
-
-        }
-
-
-        const parsed =
-            JSON.parse(saved);
-
-
-        return {
-
-            ...defaultProgress,
-
-            ...parsed,
-
-            answered:
-                parsed.answered || {}
-
-        };
-
-    } catch (error) {
-
-        console.error(
-            "Could not read quiz progress:",
-            error
-        );
-
-
-        return defaultProgress;
-
-    }
-
-}
-
-
-// =====================================================
-// CURRENT PROGRESS
-// =====================================================
-
-let progress =
-    getSavedProgress();
-
-
-// =====================================================
-// SAVE PROGRESS
-// =====================================================
-
-function saveProgress() {
-
-    try {
-
-        localStorage.setItem(
-
-            progressStorageKey,
-
-            JSON.stringify(progress)
-
-        );
-
-    } catch (error) {
-
-        console.error(
-            "Could not save quiz progress:",
-            error
-        );
-
-    }
-
+if (!questionsPage) {
+    console.error("questionsPage was not found.");
 }
 
 
@@ -191,18 +73,14 @@ function saveProgress() {
 function formatSubjectName(value) {
 
     if (!value) {
-
         return "Unknown Subject";
-
     }
-
 
     return value
         .replace(/-/g, " ")
         .replace(/\b\w/g, letter =>
             letter.toUpperCase()
         );
-
 }
 
 
@@ -219,27 +97,57 @@ const formattedChapter =
         : "Unknown Chapter";
 
 
-subjectName.textContent =
-    formattedSubject;
+if (subjectName) {
+    subjectName.textContent =
+        formattedSubject;
+}
 
-chapterName.textContent =
-    formattedChapter;
 
-headerTitle.textContent =
-    formattedSubject;
+if (chapterName) {
+    chapterName.textContent =
+        formattedChapter;
+}
 
-headerChapter.textContent =
-    `${formattedChapter} • Quiz`;
+
+if (headerTitle) {
+    headerTitle.textContent =
+        formattedSubject;
+}
+
+
+if (headerChapter) {
+    headerChapter.textContent =
+        `${formattedChapter} • Quiz`;
+}
 
 
 // =====================================================
 // LOAD QUESTIONS
 // =====================================================
 
-const questions =
-    typeof quizData !== "undefined"
-        ? quizData?.[subject]?.[chapter] || []
-        : [];
+let questions = [];
+
+
+// quizData must already be loaded by quiz.html
+if (
+    typeof quizData !== "undefined" &&
+    subject &&
+    chapter
+) {
+
+    questions =
+        quizData?.[subject]?.[chapter] || [];
+
+}
+
+
+console.log(
+    "Quiz loaded:",
+    subject,
+    chapter,
+    questions.length,
+    "questions"
+);
 
 
 // =====================================================
@@ -248,27 +156,49 @@ const questions =
 
 if (questions.length === 0) {
 
-    questionsPage.innerHTML = `
-        <section class="questionCard">
+    if (questionsPage) {
 
-            <h2 class="questionText">
-                No questions found for this chapter.
-            </h2>
+        questionsPage.innerHTML = `
+            <section class="questionCard">
 
-        </section>
-    `;
+                <h2 class="questionText">
+                    No questions found for this chapter.
+                </h2>
 
-    questionNumber.textContent =
-        "Question 0 / 0";
+                <p>
+                    Subject: ${formattedSubject}
+                    <br>
+                    Chapter: ${formattedChapter}
+                </p>
 
-    previousQuestionBtn.style.display =
-        "none";
+            </section>
+        `;
 
-    nextBtn.style.display =
-        "none";
+    }
 
-    progressBar.style.width =
-        "0%";
+
+    if (questionNumber) {
+        questionNumber.textContent =
+            "Question 0 / 0";
+    }
+
+
+    if (previousQuestionBtn) {
+        previousQuestionBtn.style.display =
+            "none";
+    }
+
+
+    if (nextBtn) {
+        nextBtn.style.display =
+            "none";
+    }
+
+
+    if (progressBar) {
+        progressBar.style.width =
+            "0%";
+    }
 
 } else {
 
@@ -283,7 +213,10 @@ if (questions.length === 0) {
 
 function getEnglishExplanation(q) {
 
-    if (q.englishExplanation) {
+    if (
+        q &&
+        typeof q.englishExplanation === "string"
+    ) {
 
         return q.englishExplanation;
 
@@ -291,8 +224,9 @@ function getEnglishExplanation(q) {
 
 
     if (
+        q &&
         q.explanation &&
-        q.explanation.english
+        typeof q.explanation.english === "string"
     ) {
 
         return q.explanation.english;
@@ -301,7 +235,6 @@ function getEnglishExplanation(q) {
 
 
     return "";
-
 }
 
 
@@ -311,7 +244,10 @@ function getEnglishExplanation(q) {
 
 function getAmharicExplanation(q) {
 
-    if (q.amharicExplanation) {
+    if (
+        q &&
+        typeof q.amharicExplanation === "string"
+    ) {
 
         return q.amharicExplanation;
 
@@ -319,8 +255,9 @@ function getAmharicExplanation(q) {
 
 
     if (
+        q &&
         q.explanation &&
-        q.explanation.amharic
+        typeof q.explanation.amharic === "string"
     ) {
 
         return q.explanation.amharic;
@@ -329,28 +266,30 @@ function getAmharicExplanation(q) {
 
 
     return "";
-
 }
 
 
 // =====================================================
-// LOAD 5 QUESTIONS
+// LOAD PAGE
 // =====================================================
 
 function loadPage() {
+
+    if (!questionsPage) {
+        return;
+    }
+
 
     questionsPage.innerHTML = "";
 
 
     const startIndex =
-        currentPage *
-        QUESTIONS_PER_PAGE;
+        currentPage * QUESTIONS_PER_PAGE;
 
 
     const endIndex =
         Math.min(
-            startIndex +
-            QUESTIONS_PER_PAGE,
+            startIndex + QUESTIONS_PER_PAGE,
             questions.length
         );
 
@@ -377,8 +316,12 @@ function loadPage() {
     // QUESTION COUNTER
     // ---------------------------------------------
 
-    questionNumber.textContent =
-        `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
+    if (questionNumber) {
+
+        questionNumber.textContent =
+            `Questions ${startIndex + 1}-${endIndex} / ${questions.length}`;
+
+    }
 
 
     // ---------------------------------------------
@@ -389,22 +332,19 @@ function loadPage() {
 
 
     // ---------------------------------------------
-    // PROGRESS BAR
+    // PROGRESS
     // ---------------------------------------------
 
     updateProgress();
 
 
     // ---------------------------------------------
-    // SCROLL TOP
+    // SCROLL
     // ---------------------------------------------
 
     window.scrollTo({
-
         top: 0,
-
         behavior: "smooth"
-
     });
 
 }
@@ -419,7 +359,6 @@ function createQuestionCard(q, index) {
     const questionCard =
         document.createElement("section");
 
-
     questionCard.className =
         "questionCard";
 
@@ -431,14 +370,12 @@ function createQuestionCard(q, index) {
     const questionLabel =
         document.createElement("div");
 
-
     questionLabel.className =
         "questionLabel";
 
 
     const questionBadge =
         document.createElement("span");
-
 
     questionBadge.className =
         "questionBadge";
@@ -460,7 +397,6 @@ function createQuestionCard(q, index) {
     const questionText =
         document.createElement("h2");
 
-
     questionText.className =
         "questionText";
 
@@ -475,7 +411,6 @@ function createQuestionCard(q, index) {
 
     const options =
         document.createElement("div");
-
 
     options.className =
         "options";
@@ -493,14 +428,11 @@ function createQuestionCard(q, index) {
             const button =
                 document.createElement("button");
 
-
             button.type =
                 "button";
 
-
             button.className =
                 "optionBtn";
-
 
             button.textContent =
                 option;
@@ -511,21 +443,12 @@ function createQuestionCard(q, index) {
                 () => {
 
                     checkAnswer(
-
                         q,
-
-                        index,
-
                         optionIndex,
-
                         options,
-
                         explanationBox,
-
                         englishExplanation,
-
                         amharicExplanation
-
                     );
 
                 }
@@ -547,7 +470,6 @@ function createQuestionCard(q, index) {
     const explanationBox =
         document.createElement("section");
 
-
     explanationBox.className =
         "explanationCard";
 
@@ -556,9 +478,12 @@ function createQuestionCard(q, index) {
         "none";
 
 
+    // ---------------------------------------------
+    // ENGLISH
+    // ---------------------------------------------
+
     const englishSection =
         document.createElement("div");
-
 
     englishSection.className =
         "explanationSection";
@@ -567,14 +492,12 @@ function createQuestionCard(q, index) {
     const englishTitle =
         document.createElement("h3");
 
-
     englishTitle.textContent =
         "📖 English Explanation";
 
 
     const englishExplanation =
         document.createElement("p");
-
 
     englishExplanation.textContent =
         "";
@@ -584,23 +507,28 @@ function createQuestionCard(q, index) {
         englishTitle
     );
 
-
     englishSection.appendChild(
         englishExplanation
     );
 
 
+    // ---------------------------------------------
+    // DIVIDER
+    // ---------------------------------------------
+
     const divider =
         document.createElement("div");
-
 
     divider.className =
         "explanationDivider";
 
 
+    // ---------------------------------------------
+    // AMHARIC
+    // ---------------------------------------------
+
     const amharicSection =
         document.createElement("div");
-
 
     amharicSection.className =
         "explanationSection";
@@ -609,14 +537,12 @@ function createQuestionCard(q, index) {
     const amharicTitle =
         document.createElement("h3");
 
-
     amharicTitle.textContent =
         "🇪🇹 የአማርኛ ማብራሪያ";
 
 
     const amharicExplanation =
         document.createElement("p");
-
 
     amharicExplanation.textContent =
         "";
@@ -626,21 +552,22 @@ function createQuestionCard(q, index) {
         amharicTitle
     );
 
-
     amharicSection.appendChild(
         amharicExplanation
     );
 
 
+    // ---------------------------------------------
+    // ADD EXPLANATION PARTS
+    // ---------------------------------------------
+
     explanationBox.appendChild(
         englishSection
     );
 
-
     explanationBox.appendChild(
         divider
     );
-
 
     explanationBox.appendChild(
         amharicSection
@@ -648,52 +575,32 @@ function createQuestionCard(q, index) {
 
 
     // ---------------------------------------------
-    // ADD EVERYTHING
+    // ADD EVERYTHING TO CARD
     // ---------------------------------------------
 
     questionCard.appendChild(
         questionLabel
     );
 
-
     questionCard.appendChild(
         questionText
     );
 
-
     questionCard.appendChild(
         options
     );
-
 
     questionCard.appendChild(
         explanationBox
     );
 
 
+    // ---------------------------------------------
+    // ADD CARD TO PAGE
+    // ---------------------------------------------
+
     questionsPage.appendChild(
         questionCard
-    );
-
-
-    // ---------------------------------------------
-    // RESTORE PREVIOUS ANSWER
-    // ---------------------------------------------
-
-    restoreAnswer(
-
-        q,
-
-        index,
-
-        options,
-
-        explanationBox,
-
-        englishExplanation,
-
-        amharicExplanation
-
     );
 
 }
@@ -704,21 +611,12 @@ function createQuestionCard(q, index) {
 // =====================================================
 
 function checkAnswer(
-
     q,
-
-    questionIndex,
-
     selectedIndex,
-
     options,
-
     explanationBox,
-
     englishExplanation,
-
     amharicExplanation
-
 ) {
 
     const buttons =
@@ -732,52 +630,7 @@ function checkAnswer(
 
 
     // ---------------------------------------------
-    // PREVENT RE-ANSWERING
-    // ---------------------------------------------
-
-    if (
-        progress.answered[
-            questionIndex
-        ] !== undefined
-    ) {
-
-        return;
-
-    }
-
-
-    // ---------------------------------------------
-    // SAVE ANSWER
-    // ---------------------------------------------
-
-    const isCorrect =
-        selectedIndex === correctAnswer;
-
-
-    progress.answered[
-        questionIndex
-    ] = selectedIndex;
-
-
-    progress.attempted++;
-
-
-    if (isCorrect) {
-
-        progress.correct++;
-
-    } else {
-
-        progress.wrong++;
-
-    }
-
-
-    saveProgress();
-
-
-    // ---------------------------------------------
-    // STYLE OPTIONS
+    // DISABLE OPTIONS
     // ---------------------------------------------
 
     buttons.forEach(
@@ -787,6 +640,7 @@ function checkAnswer(
                 true;
 
 
+            // Correct answer
             if (
                 index === correctAnswer
             ) {
@@ -798,6 +652,7 @@ function checkAnswer(
             }
 
 
+            // Wrong selected answer
             if (
                 index === selectedIndex &&
                 index !== correctAnswer
@@ -825,104 +680,9 @@ function checkAnswer(
         getAmharicExplanation(q);
 
 
-    explanationBox.style.display =
-        "block";
-
-
     // ---------------------------------------------
-    // UPDATE PROGRESS
+    // SHOW EXPLANATION
     // ---------------------------------------------
-
-    updateProgress();
-
-}
-
-
-// =====================================================
-// RESTORE ANSWER
-// =====================================================
-
-function restoreAnswer(
-
-    q,
-
-    questionIndex,
-
-    options,
-
-    explanationBox,
-
-    englishExplanation,
-
-    amharicExplanation
-
-) {
-
-    const savedAnswer =
-        progress.answered[
-            questionIndex
-        ];
-
-
-    if (
-        savedAnswer === undefined
-    ) {
-
-        return;
-
-    }
-
-
-    const buttons =
-        options.querySelectorAll(
-            ".optionBtn"
-        );
-
-
-    const correctAnswer =
-        Number(q.answer);
-
-
-    buttons.forEach(
-        (button, index) => {
-
-            button.disabled =
-                true;
-
-
-            if (
-                index === correctAnswer
-            ) {
-
-                button.classList.add(
-                    "correct"
-                );
-
-            }
-
-
-            if (
-                index === savedAnswer &&
-                index !== correctAnswer
-            ) {
-
-                button.classList.add(
-                    "wrong"
-                );
-
-            }
-
-        }
-    );
-
-
-    englishExplanation.textContent =
-        getEnglishExplanation(q);
-
-
-    amharicExplanation.textContent =
-        getAmharicExplanation(q);
-
 
     explanationBox.style.display =
         "block";
@@ -931,105 +691,37 @@ function restoreAnswer(
 
 
 // =====================================================
-// UPDATE QUIZ PROGRESS BAR
+// UPDATE PROGRESS
 // =====================================================
 
 function updateProgress() {
 
-    if (questions.length === 0) {
-
-        progressBar.style.width =
-            "0%";
-
+    if (
+        !progressBar ||
+        questions.length === 0
+    ) {
         return;
-
     }
 
 
-    const pageProgress =
-        (
+    const endIndex =
+        Math.min(
             (
                 currentPage + 1
-            ) *
-            QUESTIONS_PER_PAGE
-        );
-
-
-    const visibleProgress =
-        Math.min(
-            pageProgress,
+            ) * QUESTIONS_PER_PAGE,
             questions.length
         );
 
 
-    const progressPercent =
+    const progress =
         (
-            visibleProgress /
+            endIndex /
             questions.length
         ) * 100;
 
 
     progressBar.style.width =
-        `${progressPercent}%`;
-
-}
-
-
-// =====================================================
-// GET CHAPTER PROGRESS
-// =====================================================
-
-function getChapterProgress() {
-
-    const total =
-        questions.length;
-
-
-    const attempted =
-        Math.min(
-            progress.attempted,
-            total
-        );
-
-
-    const correct =
-        Math.min(
-            progress.correct,
-            attempted
-        );
-
-
-    const wrong =
-        Math.min(
-            progress.wrong,
-            attempted
-        );
-
-
-    const percentage =
-        total > 0
-            ? Math.round(
-                (
-                    attempted /
-                    total
-                ) * 100
-            )
-            : 0;
-
-
-    return {
-
-        total,
-
-        attempted,
-
-        correct,
-
-        wrong,
-
-        percentage
-
-    };
+        `${progress}%`;
 
 }
 
@@ -1040,9 +732,22 @@ function getChapterProgress() {
 
 function updateNavigation() {
 
+    if (!nextBtn || !previousQuestionBtn) {
+        return;
+    }
+
+
+    // ---------------------------------------------
+    // PREVIOUS
+    // ---------------------------------------------
+
     previousQuestionBtn.disabled =
         currentPage === 0;
 
+
+    // ---------------------------------------------
+    // TOTAL PAGES
+    // ---------------------------------------------
 
     const totalPages =
         Math.ceil(
@@ -1051,24 +756,26 @@ function updateNavigation() {
         );
 
 
+    // ---------------------------------------------
+    // LAST PAGE
+    // ---------------------------------------------
+
     if (
         currentPage ===
         totalPages - 1
     ) {
 
-        nextBtn.innerHTML =
-            `
+        nextBtn.innerHTML = `
             <span>Finish Quiz</span>
             <span class="navArrow">✓</span>
-            `;
+        `;
 
     } else {
 
-        nextBtn.innerHTML =
-            `
+        nextBtn.innerHTML = `
             <span>Next</span>
             <span class="navArrow">→</span>
-            `;
+        `;
 
     }
 
@@ -1079,56 +786,64 @@ function updateNavigation() {
 // NEXT PAGE
 // =====================================================
 
-nextBtn.addEventListener(
-    "click",
-    () => {
+if (nextBtn) {
 
-        const totalPages =
-            Math.ceil(
-                questions.length /
-                QUESTIONS_PER_PAGE
-            );
+    nextBtn.addEventListener(
+        "click",
+        () => {
+
+            const totalPages =
+                Math.ceil(
+                    questions.length /
+                    QUESTIONS_PER_PAGE
+                );
 
 
-        if (
-            currentPage <
-            totalPages - 1
-        ) {
+            if (
+                currentPage <
+                totalPages - 1
+            ) {
 
-            currentPage++;
+                currentPage++;
 
-            loadPage();
+                loadPage();
 
-        } else {
+            } else {
 
-            finishQuiz();
+                finishQuiz();
+
+            }
 
         }
+    );
 
-    }
-);
+}
 
 
 // =====================================================
 // PREVIOUS PAGE
 // =====================================================
 
-previousQuestionBtn.addEventListener(
-    "click",
-    () => {
+if (previousQuestionBtn) {
 
-        if (
-            currentPage > 0
-        ) {
+    previousQuestionBtn.addEventListener(
+        "click",
+        () => {
 
-            currentPage--;
+            if (
+                currentPage > 0
+            ) {
 
-            loadPage();
+                currentPage--;
+
+                loadPage();
+
+            }
 
         }
+    );
 
-    }
-);
+}
 
 
 // =====================================================
@@ -1137,51 +852,64 @@ previousQuestionBtn.addEventListener(
 
 function finishQuiz() {
 
-    progress.completed =
-        true;
+    if (questionNumber) {
+
+        questionNumber.textContent =
+            `Questions ${questions.length} / ${questions.length}`;
+
+    }
 
 
-    saveProgress();
+    if (progressBar) {
+
+        progressBar.style.width =
+            "100%";
+
+    }
 
 
-    questionNumber.textContent =
-        `Questions ${questions.length} / ${questions.length}`;
+    if (questionsPage) {
+
+        questionsPage.innerHTML =
+            "";
+
+    }
 
 
-    progressBar.style.width =
-        "100%";
+    if (previousQuestionBtn) {
+
+        previousQuestionBtn.style.display =
+            "none";
+
+    }
 
 
-    questionsPage.innerHTML =
-        "";
+    if (nextBtn) {
+
+        nextBtn.disabled =
+            true;
 
 
-    previousQuestionBtn.style.display =
-        "none";
-
-
-    nextBtn.disabled =
-        true;
-
-
-    nextBtn.innerHTML =
-        `
-        <span>Completed</span>
-        <span class="navArrow">✓</span>
+        nextBtn.innerHTML = `
+            <span>Completed</span>
+            <span class="navArrow">✓</span>
         `;
 
-
-    completionMessage.hidden =
-        false;
+    }
 
 
-    completionMessage.scrollIntoView({
+    if (completionMessage) {
 
-        behavior: "smooth",
+        completionMessage.hidden =
+            false;
 
-        block: "center"
 
-    });
+        completionMessage.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
 
 }
 
@@ -1190,81 +918,54 @@ function finishQuiz() {
 // TOP BACK BUTTON
 // =====================================================
 
-backBtn.addEventListener(
-    "click",
-    () => {
+if (backBtn) {
 
-        if (
-            window.history.length > 1
-        ) {
+    backBtn.addEventListener(
+        "click",
+        () => {
 
-            window.history.back();
+            if (
+                window.history.length > 1
+            ) {
 
-        } else {
-
-            if (subject) {
-
-                window.location.href =
-                    `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
+                window.history.back();
 
             } else {
 
-                window.location.href =
-                    "index.html";
+                if (subject) {
+
+                    window.location.href =
+                        `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter || "")}`;
+
+                } else {
+
+                    window.location.href =
+                        "index.html";
+
+                }
 
             }
 
         }
+    );
 
-    }
-);
+}
 
 
 // =====================================================
 // HOME BUTTON
 // =====================================================
 
-homeBtn.addEventListener(
-    "click",
-    () => {
+if (homeBtn) {
 
-        window.location.href =
-            "index.html";
+    homeBtn.addEventListener(
+        "click",
+        () => {
 
-    }
-);
+            window.location.href =
+                "index.html";
 
+        }
+    );
 
-// =====================================================
-// MAKE PROGRESS AVAILABLE TO OTHER PAGES
-// =====================================================
-
-window.uniqueAcademicQuizProgress = {
-
-    get: getChapterProgress,
-
-    reset: function () {
-
-        progress = {
-
-            attempted: 0,
-
-            correct: 0,
-
-            wrong: 0,
-
-            completed: false,
-
-            answered: {}
-
-        };
-
-
-        saveProgress();
-
-
-        loadPage();
-
-    }
-
-};
+}
