@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Latest news and updates from Unique Academic."
+    >
+
+    <meta
+        name="theme-color"
+        content="#8e44ad"
+    >
+
+    <title>News & Updates | Unique Academic</title>
+
+    <link
+        rel="stylesheet"
+        href="news.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="news-header">
+
+    <div class="header-left">
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="history.back()"
+            aria-label="Go back"
+        >
+            ←
+        </button>
+
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <h1>
+                    Unique Academic
+                </h1>
+
+                <p>
+                    Learning Platform
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="home-button"
+    >
+        🏠 Home
+    </a>
+
+</header>
+
+
+
+<main class="news-container">
+
+
+    <!-- =================================
+         PAGE INTRO
+    ================================== -->
+
+    <section class="news-intro">
+
+        <div class="news-icon">
+            📰
+        </div>
+
+        <h2>
+            What's New?
+        </h2>
+
+        <p>
+            Stay updated with the latest quizzes,
+            notes, lessons and announcements.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================
+         NEWS FILTERS
+    ================================== -->
+
+    <div class="news-filters">
+
+        <button
+            type="button"
+            class="filter-button active"
+            data-filter="all"
+        >
+            All
+        </button>
+
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="quiz"
+        >
+            📚 Quizzes
+        </button>
+
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="notes"
+        >
+            📝 Notes
+        </button>
+
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="announcement"
+        >
+            📢 Announcements
+        </button>
+
+    </div>
+
+
+
+    <!-- =================================
+         NEWS LIST
+    ================================== -->
+
+    <section
+        id="newsList"
+        class="news-list"
+    >
+
+        <!-- News items will be loaded by news.js -->
+
+    </section>
+
+
+
+    <!-- =================================
+         EMPTY MESSAGE
+    ================================== -->
+
+    <div
+        id="emptyNews"
+        class="empty-news"
+        style="display:none;"
+    >
+
+        <div>
+            📭
+        </div>
+
+        <h3>
+            No updates yet
+        </h3>
+
+        <p>
+            New content and announcements
+            will appear here.
+        </p>
+
+    </div>
+
+
+</main>
+
+
+
+<footer class="news-footer">
+
+    <p>
+        © 2026 Unique Academic
+        | Learn. Understand. Succeed.
+    </p>
+
+</footer>
+
+
+
+<script
+    src="news.js"
+    defer
+></script>
+
+
+</body>
+
+</html>
