@@ -12,20 +12,800 @@
 
     <meta
         name="description"
-        content="Latest news and updates from Unique Academic."
-    >
-
-    <meta
-        name="theme-color"
-        content="#8e44ad"
+        content="Unique Academic News and Study Updates"
     >
 
     <title>News & Updates | Unique Academic</title>
 
-    <link
-        rel="stylesheet"
-        href="news.css"
-    >
+
+    <style>
+
+        /* =====================================================
+           UNIQUE ACADEMIC — NEWS PAGE
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f5f3ff,
+                    #eef6ff,
+                    #fff7ed
+                );
+
+            color: #1f2937;
+
+            min-height: 100vh;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .news-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6d28d9,
+                    #2563eb
+                );
+
+            color: white;
+
+            padding: 18px 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+
+            box-shadow:
+                0 4px 18px
+                rgba(37, 99, 235, 0.25);
+
+        }
+
+
+        .header-brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+        }
+
+
+        .header-icon {
+
+            width: 45px;
+
+            height: 45px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                rgba(255,255,255,0.18);
+
+            border-radius: 13px;
+
+            font-size: 25px;
+
+        }
+
+
+        .header-brand h1 {
+
+            font-size: 20px;
+
+            line-height: 1.2;
+
+        }
+
+
+        .header-brand p {
+
+            font-size: 12px;
+
+            opacity: 0.85;
+
+        }
+
+
+        .home-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            padding: 9px 13px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(255,255,255,0.15);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.25);
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .home-button:hover {
+
+            background:
+                rgba(255,255,255,0.25);
+
+            transform:
+                translateY(-1px);
+
+        }
+
+
+        /* =====================================================
+           MAIN
+        ===================================================== */
+
+        .news-container {
+
+            width: min(900px, 92%);
+
+            margin: 30px auto 45px;
+
+        }
+
+
+        /* =====================================================
+           PAGE INTRO
+        ===================================================== */
+
+        .page-intro {
+
+            text-align: center;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .page-icon {
+
+            width: 75px;
+
+            height: 75px;
+
+            margin: 0 auto 13px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 22px;
+
+            font-size: 40px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f59e0b,
+                    #ef4444
+                );
+
+            box-shadow:
+                0 10px 25px
+                rgba(239, 68, 68, 0.22);
+
+        }
+
+
+        .page-intro h2 {
+
+            font-size: 29px;
+
+            color: #111827;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .page-intro p {
+
+            color: #6b7280;
+
+            font-size: 15px;
+
+        }
+
+
+        /* =====================================================
+           NEWS CARD
+        ===================================================== */
+
+        .news-card {
+
+            background: white;
+
+            border-radius: 22px;
+
+            padding: 25px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(31, 41, 55, 0.09);
+
+            border:
+                1px solid
+                rgba(99, 102, 241, 0.12);
+
+            overflow: hidden;
+
+            position: relative;
+
+        }
+
+
+        .news-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            right: 0;
+
+            height: 5px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7c3aed,
+                    #2563eb,
+                    #06b6d4,
+                    #10b981
+                );
+
+        }
+
+
+        /* =====================================================
+           NEWS TITLE
+        ===================================================== */
+
+        .news-title {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 23px;
+
+        }
+
+
+        .news-title-icon {
+
+            width: 48px;
+
+            height: 48px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fef3c7,
+                    #fed7aa
+                );
+
+            font-size: 25px;
+
+        }
+
+
+        .news-title h3 {
+
+            font-size: 21px;
+
+            color: #111827;
+
+        }
+
+
+        .news-title small {
+
+            display: block;
+
+            color: #7c3aed;
+
+            font-weight: 700;
+
+            margin-top: 2px;
+
+        }
+
+
+        /* =====================================================
+           SUBJECT BLOCKS
+        ===================================================== */
+
+        .subject-block {
+
+            border-radius: 18px;
+
+            padding: 20px;
+
+            margin-bottom: 18px;
+
+            position: relative;
+
+        }
+
+
+        .anthropology {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff7ed,
+                    #ffedd5
+                );
+
+            border:
+                1px solid
+                #fed7aa;
+
+        }
+
+
+        .psychology {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f5f3ff,
+                    #ede9fe
+                );
+
+            border:
+                1px solid
+                #ddd6fe;
+
+        }
+
+
+        .subject-heading {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            margin-bottom: 13px;
+
+        }
+
+
+        .subject-heading h4 {
+
+            font-size: 19px;
+
+            color: #111827;
+
+        }
+
+
+        .subject-list {
+
+            display: grid;
+
+            gap: 9px;
+
+        }
+
+
+        .resource {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            background:
+                rgba(255,255,255,0.75);
+
+            padding: 10px 12px;
+
+            border-radius: 11px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+        }
+
+
+        .trial-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-top: 14px;
+
+            padding: 7px 12px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #10b981,
+                    #059669
+                );
+
+            color: white;
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            box-shadow:
+                0 4px 10px
+                rgba(16,185,129,0.2);
+
+        }
+
+
+        /* =====================================================
+           WANT MORE
+        ===================================================== */
+
+        .want-more {
+
+            margin-top: 25px;
+
+            padding: 22px;
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eff6ff,
+                    #eef2ff
+                );
+
+            border:
+                1px solid
+                #c7d2fe;
+
+        }
+
+
+        .want-more h3 {
+
+            color: #1d4ed8;
+
+            font-size: 21px;
+
+            margin-bottom: 2px;
+
+        }
+
+
+        .amharic-heading {
+
+            color: #7c3aed;
+
+            font-weight: 800;
+
+            margin-bottom: 14px;
+
+        }
+
+
+        .want-more p {
+
+            font-size: 14px;
+
+            margin-bottom: 13px;
+
+            color: #374151;
+
+        }
+
+
+        .amharic-text {
+
+            background:
+                rgba(255,255,255,0.75);
+
+            border-left:
+                4px solid
+                #7c3aed;
+
+            padding: 12px 14px;
+
+            border-radius: 0 10px 10px 0;
+
+            color: #4b5563;
+
+            font-size: 14px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* =====================================================
+           REGISTERED MESSAGE
+        ===================================================== */
+
+        .registered-box {
+
+            padding: 17px;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ecfdf5,
+                    #d1fae5
+                );
+
+            border:
+                1px solid
+                #a7f3d0;
+
+            margin-top: 10px;
+
+        }
+
+
+        .registered-box strong {
+
+            color: #047857;
+
+        }
+
+
+        .registered-box p {
+
+            margin-top: 6px;
+
+            margin-bottom: 0;
+
+        }
+
+
+        /* =====================================================
+           BRAND FOOTER
+        ===================================================== */
+
+        .news-brand {
+
+            text-align: center;
+
+            margin-top: 25px;
+
+            padding: 18px;
+
+            border-radius: 17px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6d28d9,
+                    #2563eb
+                );
+
+            color: white;
+
+            box-shadow:
+                0 8px 22px
+                rgba(37,99,235,0.18);
+
+        }
+
+
+        .news-brand strong {
+
+            display: block;
+
+            font-size: 19px;
+
+            margin-bottom: 3px;
+
+        }
+
+
+        .news-brand span {
+
+            font-size: 13px;
+
+            opacity: 0.92;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            text-align: center;
+
+            padding: 22px 15px;
+
+            color: #6b7280;
+
+            font-size: 13px;
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .news-header {
+
+                padding: 14px;
+
+            }
+
+
+            .header-brand h1 {
+
+                font-size: 17px;
+
+            }
+
+
+            .header-brand p {
+
+                font-size: 11px;
+
+            }
+
+
+            .header-icon {
+
+                width: 40px;
+
+                height: 40px;
+
+                font-size: 22px;
+
+            }
+
+
+            .home-button {
+
+                padding: 8px 10px;
+
+                font-size: 13px;
+
+            }
+
+
+            .news-container {
+
+                width: 94%;
+
+                margin-top: 22px;
+
+            }
+
+
+            .page-intro h2 {
+
+                font-size: 24px;
+
+            }
+
+
+            .news-card {
+
+                padding: 18px;
+
+                border-radius: 18px;
+
+            }
+
+
+            .subject-block {
+
+                padding: 16px;
+
+            }
+
+
+            .subject-heading h4 {
+
+                font-size: 17px;
+
+            }
+
+
+            .resource {
+
+                font-size: 13px;
+
+            }
+
+        }
+
+
+    </style>
 
 </head>
 
@@ -33,37 +813,27 @@
 <body>
 
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="news-header">
 
-    <div class="header-left">
+    <div class="header-brand">
 
-        <button
-            type="button"
-            class="back-button"
-            onclick="history.back()"
-            aria-label="Go back"
-        >
-            ←
-        </button>
+        <div class="header-icon">
+            🎓
+        </div>
 
+        <div>
 
-        <div class="brand">
+            <h1>
+                Unique Academic
+            </h1>
 
-            <div class="brand-icon">
-                🎓
-            </div>
-
-            <div>
-
-                <h1>
-                    Unique Academic
-                </h1>
-
-                <p>
-                    Learning Platform
-                </p>
-
-            </div>
+            <p>
+                Learning Platform
+            </p>
 
         </div>
 
@@ -81,163 +851,244 @@
 
 
 
+<!-- =====================================================
+     MAIN NEWS
+===================================================== -->
+
 <main class="news-container">
 
 
-    🔔 New Study Materials Available
-አዳዲስ የትምህርት መማሪያዎች ተጨምረዋል
-📚 Anthropology — Chapter 1
-📖 Chapter 1 Notes
-📚 Full Notes
-❓ Chapter 1 Quiz
-🎯 Available for Trial
-አንትሮፖሎጂ — ምዕራፍ 1
-📖 የምዕራፍ 1 ማስታወሻ
-📚 ሙሉ ማስታወሻ
-❓ የምዕራፍ 1 ፈተና
-🎯 ለሙከራ ተዘጋጅቷል
-🧠 Psychology — Chapter 1
-📖 Chapter 1 Notes
-📚 Full Notes
-❓ Chapter 1 Quiz
-🎯 Available for Trial
-ሳይኮሎጂ — ምዕራፍ 1
-📖 የምዕራፍ 1 ማስታወሻ
-📚 ሙሉ ማስታወሻ
-❓ የምዕራፍ 1 ፈተና
-🎯 ለሙከራ ተዘጋጅቷል
-🎓 Want More?
-ተጨማሪ ይፈልጋሉ?
-These materials are available as a free trial so students can experience Unique Academic before registering.
-እነዚህ የትምህርት ይዘቶች ተማሪዎች Unique Academicን ከመመዝገባቸው በፊት ለመሞከር በነፃ የተዘጋጁ ናቸው።
-🔐 Registered students get access to much more learning content, including additional chapters, notes, quizzes, and other study resources as they are added.
-🔐 የተመዘገቡ ተማሪዎች ተጨማሪ ምዕራፎች፣ ማስታወሻዎች፣ ፈተናዎች እና ሌሎች የመማሪያ ይዘቶች ሲጨመሩ የማግኘት እድል ያገኛሉ።
-🎓 Unique Academic
+    <!-- PAGE INTRO -->
 
-    <section class="news-intro">
+    <section class="page-intro">
 
-        <div class="news-icon">
-            📰
+        <div class="page-icon">
+            🔔
         </div>
 
         <h2>
-            What's New?
+            News & Updates
         </h2>
 
         <p>
-            Stay updated with the latest quizzes,
-            notes, lessons and announcements.
+            Stay updated with the latest study materials.
         </p>
 
     </section>
 
 
 
-    <!-- =================================
-         NEWS FILTERS
-    ================================== -->
+    <!-- =================================================
+         NEWS CARD
+    ================================================== -->
 
-    <div class="news-filters">
-
-        <button
-            type="button"
-            class="filter-button active"
-            data-filter="all"
-        >
-            All
-        </button>
+    <article class="news-card">
 
 
-        <button
-            type="button"
-            class="filter-button"
-            data-filter="quiz"
-        >
-            📚 Quizzes
-        </button>
+        <!-- NEWS TITLE -->
 
+        <div class="news-title">
 
-        <button
-            type="button"
-            class="filter-button"
-            data-filter="notes"
-        >
-            📝 Notes
-        </button>
+            <div class="news-title-icon">
+                🔔
+            </div>
 
+            <div>
 
-        <button
-            type="button"
-            class="filter-button"
-            data-filter="announcement"
-        >
-            📢 Announcements
-        </button>
+                <h3>
+                    New Study Materials Available for trial
+                </h3>
 
-    </div>
+                <small>
+                    Latest Update
+                </small>
 
+            </div>
 
-
-    <!-- =================================
-         NEWS LIST
-    ================================== -->
-
-    <section
-        id="newsList"
-        class="news-list"
-    >
-
-        <!-- News items will be loaded by news.js -->
-
-    </section>
-
-
-
-    <!-- =================================
-         EMPTY MESSAGE
-    ================================== -->
-
-    <div
-        id="emptyNews"
-        class="empty-news"
-        style="display:none;"
-    >
-
-        <div>
-            📭
         </div>
 
-        <h3>
-            No updates yet
-        </h3>
 
-        <p>
-            New content and announcements
-            will appear here.
-        </p>
 
-    </div>
+        <!-- =================================================
+             ANTHROPOLOGY
+        ================================================== -->
 
+        <section class="subject-block anthropology">
+
+            <div class="subject-heading">
+
+                <span>
+                    📚
+                </span>
+
+                <h4>
+                    Anthropology — Chapter 1
+                </h4>
+
+            </div>
+
+
+            <div class="subject-list">
+
+                <div class="resource">
+                    📖 Chapter 1 Notes
+                </div>
+
+                <div class="resource">
+                    📚 Full Notes
+                </div>
+
+                <div class="resource">
+                    ❓ Chapter 1 Quiz
+                </div>
+
+            </div>
+
+
+            <div class="trial-badge">
+                🎯 Available for Trial
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PSYCHOLOGY
+        ================================================== -->
+
+        <section class="subject-block psychology">
+
+            <div class="subject-heading">
+
+                <span>
+                    🧠
+                </span>
+
+                <h4>
+                    Psychology — Chapter 1
+                </h4>
+
+            </div>
+
+
+            <div class="subject-list">
+
+                <div class="resource">
+                    📖 Chapter 1 Notes
+                </div>
+
+                <div class="resource">
+                    📚 Full Notes
+                </div>
+
+                <div class="resource">
+                    ❓ Chapter 1 Quiz
+                </div>
+
+            </div>
+
+
+            <div class="trial-badge">
+                🎯 Available for Trial
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WANT MORE
+        ================================================== -->
+
+        <section class="want-more">
+
+            <h3>
+                🎓 Want More?
+            </h3>
+
+
+            <div class="amharic-heading">
+                ተጨማሪ ይፈልጋሉ?
+            </div>
+
+
+            <p>
+                These materials are available as a free trial
+                so students can experience Unique Academic
+                before registering.
+            </p>
+
+
+            <div class="amharic-text">
+
+                እንዚህ ለሙከራ የተዘጋጁ ናቸው
+                ሁሉንም ለማግኝት ይመዝገቡ
+
+            </div>
+
+
+            <div class="registered-box">
+
+                <strong>
+                    🔐 Registered students get access to much more
+                    learning content
+                </strong>
+
+
+                <p>
+                    including additional chapters, notes, quizzes,
+                    and other study resources as they are added.
+                </p>
+
+
+                <div class="amharic-text">
+
+                    የተመዘገቡ ተማሪዎች ግን
+                    የበለጠ የመማሪያ ይዘቶችን ያገኛሉ።
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BRAND
+        ================================================== -->
+
+        <div class="news-brand">
+
+            <strong>
+                🎓 Unique Academic
+            </strong>
+
+            <span>
+                Learn. Understand. Succeed.
+            </span>
+
+        </div>
+
+
+    </article>
 
 </main>
 
 
 
-<footer class="news-footer">
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-    <p>
-        © 2026 Unique Academic
-        | Learn. Understand. Succeed.
-    </p>
+<footer>
+
+    © 2026 Unique Academic
+    |
+    Learn. Understand. Succeed.
 
 </footer>
-
-
-
-<script
-    src="news.js"
-    defer
-></script>
 
 
 </body>
