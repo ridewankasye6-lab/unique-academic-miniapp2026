@@ -1,219 +1,597 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================================
+   UNIQUE ACADEMIC
+   NEWS & UPDATES PAGE
+========================================= */
 
-<head>
+* {
+    box-sizing: border-box;
+}
 
-    <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f5fb;
+    color: #1f2937;
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+}
 
-    <meta
-        name="description"
-        content="Latest news and updates from Unique Academic."
-    >
 
-    <meta
-        name="theme-color"
-        content="#8e44ad"
-    >
+/* =========================================
+   HEADER
+========================================= */
 
-    <title>News & Updates | Unique Academic</title>
+.news-header {
+    background: linear-gradient(
+        135deg,
+        #8e44ad,
+        #6c3483
+    );
 
-    <link
-        rel="stylesheet"
-        href="news.css"
-    >
+    color: white;
 
-</head>
+    padding: 15px 20px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-<body>
+    gap: 15px;
 
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
 
-<header class="news-header">
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-    <div class="header-left">
 
-        <button
-            type="button"
-            class="back-button"
-            onclick="history.back()"
-            aria-label="Go back"
-        >
-            ←
-        </button>
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 
-        <div class="brand">
+.back-button {
+    width: 42px;
+    height: 42px;
 
-            <div class="brand-icon">
-                🎓
-            </div>
+    border: none;
+    border-radius: 50%;
 
-            <div>
+    background: rgba(255, 255, 255, 0.15);
 
-                <h1>
-                    Unique Academic
-                </h1>
+    color: white;
 
-                <p>
-                    Learning Platform
-                </p>
+    font-size: 24px;
 
-            </div>
+    cursor: pointer;
 
-        </div>
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    </div>
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
 
 
-    <a
-        href="index.html"
-        class="home-button"
-    >
-        🏠 Home
-    </a>
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.25);
 
-</header>
+    transform: translateX(-2px);
+}
 
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-<main class="news-container">
 
+.brand-icon {
+    font-size: 32px;
+}
 
-    <!-- =================================
-         PAGE INTRO
-    ================================== -->
 
-    <section class="news-intro">
+.brand h1 {
+    margin: 0;
 
-        <div class="news-icon">
-            📰
-        </div>
+    font-size: 19px;
 
-        <h2>
-            What's New?
-        </h2>
+    line-height: 1.2;
+}
 
-        <p>
-            Stay updated with the latest quizzes,
-            notes, lessons and announcements.
-        </p>
 
-    </section>
+.brand p {
+    margin: 3px 0 0;
 
+    font-size: 12px;
 
+    opacity: 0.85;
+}
 
-    <!-- =================================
-         NEWS FILTERS
-    ================================== -->
 
-    <div class="news-filters">
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-        <button
-            type="button"
-            class="filter-button active"
-            data-filter="all"
-        >
-            All
-        </button>
+    padding: 9px 14px;
 
+    border-radius: 9px;
 
-        <button
-            type="button"
-            class="filter-button"
-            data-filter="quiz"
-        >
-            📚 Quizzes
-        </button>
+    color: white;
 
+    background: rgba(255, 255, 255, 0.15);
 
-        <button
-            type="button"
-            class="filter-button"
-            data-filter="notes"
-        >
-            📝 Notes
-        </button>
+    text-decoration: none;
 
+    font-size: 14px;
+    font-weight: 600;
 
-        <button
-            type="button"
-            class="filter-button"
-            data-filter="announcement"
-        >
-            📢 Announcements
-        </button>
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
 
-    </div>
 
+.home-button:hover {
+    background: rgba(255, 255, 255, 0.25);
 
+    transform: translateY(-1px);
+}
 
-    <!-- =================================
-         NEWS LIST
-    ================================== -->
 
-    <section
-        id="newsList"
-        class="news-list"
-    >
+/* =========================================
+   MAIN CONTAINER
+========================================= */
 
-        <!-- News items will be loaded by news.js -->
+.news-container {
+    width: 100%;
 
-    </section>
+    max-width: 900px;
 
+    margin: 0 auto;
 
+    padding:
+        35px 18px
+        50px;
+}
 
-    <!-- =================================
-         EMPTY MESSAGE
-    ================================== -->
 
-    <div
-        id="emptyNews"
-        class="empty-news"
-        style="display:none;"
-    >
+/* =========================================
+   INTRO
+========================================= */
 
-        <div>
-            📭
-        </div>
+.news-intro {
+    text-align: center;
 
-        <h3>
-            No updates yet
-        </h3>
+    margin-bottom: 28px;
+}
 
-        <p>
-            New content and announcements
-            will appear here.
-        </p>
 
-    </div>
+.news-icon {
+    width: 72px;
+    height: 72px;
 
+    margin: 0 auto 14px;
 
-</main>
+    border-radius: 20px;
 
+    background: white;
 
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
 
-<footer class="news-footer">
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    <p>
-        © 2026 Unique Academic
-        | Learn. Understand. Succeed.
-    </p>
+    font-size: 36px;
+}
 
-</footer>
 
+.news-intro h2 {
+    margin: 0 0 8px;
 
+    color: #6c3483;
 
-<script
-    src="news.js"
-    defer
-></script>
+    font-size: 30px;
+}
 
 
-</body>
+.news-intro p {
+    margin: 0 auto;
 
-</html>
+    max-width: 600px;
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.news-filters {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-bottom: 25px;
+}
+
+
+.filter-button {
+    border: 1px solid #ddd6e8;
+
+    background: white;
+
+    color: #5b5563;
+
+    padding: 9px 15px;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.filter-button:hover {
+    transform: translateY(-1px);
+
+    border-color: #8e44ad;
+}
+
+
+.filter-button.active {
+    background: #8e44ad;
+
+    border-color: #8e44ad;
+
+    color: white;
+}
+
+
+/* =========================================
+   NEWS LIST
+========================================= */
+
+.news-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* =========================================
+   NEWS CARD
+========================================= */
+
+.news-card {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #eee9f3;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.news-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 26px rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================================
+   NEWS CARD TOP
+========================================= */
+
+.news-card-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+.news-type {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    background: #f3e8ff;
+
+    color: #6c3483;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.news-date {
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NEWS CARD CONTENT
+========================================= */
+
+.news-card h3 {
+    margin: 0 0 7px;
+
+    color: #1f2937;
+
+    font-size: 19px;
+
+    line-height: 1.4;
+}
+
+
+.news-subject {
+    margin: 0 0 10px;
+
+    color: #8e44ad;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.news-description {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NEWS CARD FOOTER
+========================================= */
+
+.news-card-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 16px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #f0edf3;
+}
+
+
+.news-chapter {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+.news-link {
+    color: #8e44ad;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   EMPTY NEWS
+========================================= */
+
+.empty-news {
+    text-align: center;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 45px 20px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.empty-news > div {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.empty-news h3 {
+    margin: 0 0 7px;
+
+    color: #374151;
+}
+
+
+.empty-news p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.news-footer {
+    text-align: center;
+
+    padding: 25px 15px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .news-header {
+        padding: 12px 14px;
+    }
+
+
+    .brand-icon {
+        font-size: 27px;
+    }
+
+
+    .brand h1 {
+        font-size: 16px;
+    }
+
+
+    .brand p {
+        font-size: 11px;
+    }
+
+
+    .back-button {
+        width: 38px;
+        height: 38px;
+
+        font-size: 21px;
+    }
+
+
+    .home-button {
+        padding: 8px 10px;
+
+        font-size: 13px;
+    }
+
+
+    .news-container {
+        padding:
+            28px 14px
+            40px;
+    }
+
+
+    .news-intro h2 {
+        font-size: 26px;
+    }
+
+
+    .news-intro p {
+        font-size: 14px;
+    }
+
+
+    .news-card {
+        padding: 16px;
+    }
+
+
+    .news-card-top {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .news-date {
+        white-space: normal;
+    }
+
+
+    .news-card h3 {
+        font-size: 17px;
+    }
+
+
+    .news-card-footer {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
