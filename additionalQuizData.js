@@ -1176,96 +1176,78 @@ quizData["global-trends"]["2"] = [  {
     amharicExplanation: "ኃይለ ሥላሴ በውጭ አገር የስደተኛ መንግሥት በማቋቋም እና ወደ ሊግ ኦፍ ኔሽንስ በመጥራት የጣሊያንን ወረራ ለማስቆም ዓለም አቀፍ ዲፕሎማሲያዊ ድጋፍ ፈለጉ።"
   }];
 
-quizData["global-trends"]["3"] = [
-{ question: "Like Mercantilism theory, liberalism theory encourages comparative advantage principles.",
+quizData["global-trends"]["3"] = [  {
+        question: "Like Mercantilism theory, liberalism theory encourages comparative advantage principles.",
         options: ["True", "False"],
         answer: 1,
-        englishExplanation: "The statement is false because Mercantilism and Liberalism are opposite economic theories. Liberalism strongly supports comparative advantage, which means countries should specialize in producing goods they can produce relatively efficiently and trade freely with other countries. Mercantilism, on the other hand, emphasizes protectionism, accumulating national wealth, increasing exports, and restricting imports.",
-        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። መርካንቲሊዝም (Mercantilism) እና ሊበራሊዝም (Liberalism) ተቃራኒ የኢኮኖሚ እይታዎች ናቸው። ሊበራሊዝም የComparative Advantage መርህን ይደግፋል፤ ይህም አገራት በተሻለ ወይም በአንጻራዊ ዝቅተኛ ወጪ ማምረት በሚችሉት ምርት ላይ አተኩረው በነፃነት እንዲነግዱ ያበረታታል። መርካንቲሊዝም ግን የአገር ውስጥ ምርትን ለመጠበቅ፣ ወደ ውጭ ምርት ለመላክ እና ከውጭ የሚገባን ምርት ለመገደብ ያተኩራል።"
-    }
-];
+        englishExplanation: "The statement is false. Mercantilism and Liberalism are opposite economic theories. Liberalism strongly supports comparative advantage, which encourages countries to specialize in producing goods they can produce relatively efficiently and trade freely with other countries. Mercantilism, however, emphasizes protectionism, accumulating national wealth, increasing exports, and restricting imports.",
+        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። መርካንቲሊዝም (Mercantilism) እና ሊበራሊዝም (Liberalism) ተቃራኒ የኢኮኖሚ እይታዎች ናቸው። ሊበራሊዝም Comparative Advantage የሚባለውን መርህ በጥብቅ ይደግፋል። ይህም አገራት በአንጻራዊ ብቃት ማምረት በሚችሉት ምርት ላይ አተኩረው በነፃነት እንዲነግዱ ያበረታታል። መርካንቲሊዝም ግን ጥበቃዊ የንግድ ፖሊሲን፣ የአገር ሀብትን መሰብሰብን፣ ወደ ውጭ የሚላኩ ምርቶችን መጨመርን እና ከውጭ የሚገቡ ምርቶችን መገደብን ያበረታታል።"
+    },
 
-quizData["global-trends"]["2"] = [
     {
         question: "Mercantilists emphasize the role of market-based transactions among autonomous individuals.",
         options: ["True", "False"],
         answer: 1,
-        englishExplanation: "The statement is false. Mercantilism places the state or government at the center of economic activity because it believes that economic strength increases national power. It therefore supports government intervention, regulation, protectionism, and control of trade. Market-based transactions among independent individuals are more closely associated with Liberalism and the free-market system.",
-        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። መርካንቲሊዝም በኢኮኖሚ ውስጥ የመንግስትን ዋና ሚና ያጎላል። የመንግስት ጣልቃ ገብነት፣ የንግድ ቁጥጥር እና ጥበቃዊ የንግድ ፖሊሲዎችን ይደግፋል። በነፃ ገበያ ውስጥ ገለልተኛ ግለሰቦች በራሳቸው ውሳኔ በነፃነት የሚገበያዩበት ሀሳብ ግን በተለይ ከሊበራሊዝም ጋር ይያያዛል።"
-    }
-];
+        englishExplanation: "The statement is false. Mercantilism places the state or government at the center of economic activity because it considers economic strength important for national power. It therefore supports government intervention, regulation, protectionism, and control of trade. Market-based transactions among autonomous individuals are more closely associated with Liberalism and the free-market system.",
+        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። መርካንቲሊዝም የመንግስትን ዋና ሚና በኢኮኖሚ ውስጥ ያጎላል። መንግስት በኢኮኖሚ ውስጥ ጣልቃ እንዲገባ፣ ንግድን እንዲቆጣጠር እና የአገር ውስጥ ምርትን እንዲጠብቅ ይደግፋል። ግለሰቦች በራሳቸው ውሳኔ በገበያ ላይ በነፃነት የሚገበያዩበት ሀሳብ ግን በተለይ ከሊበራሊዝም እና ከነፃ ገበያ ስርዓት ጋር ይያያዛል።"
+    },
 
-quizData["global-trends"]["3"] = [
     {
         question: "Liberalism opposes trade barriers and advocates the free flow of goods and services across borders.",
         options: ["True", "False"],
         answer: 0,
-        englishExplanation: "The statement is true. Economic Liberalism supports free trade and therefore opposes unnecessary trade barriers such as tariffs, quotas, and other restrictions. It argues that the free movement of goods and services allows countries to specialize according to their comparative advantages and increases economic efficiency.",
-        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። ኢኮኖሚያዊ ሊበራሊዝም ነፃ ንግድን ይደግፋል። ስለዚህ ታሪፍ (የገቢ ቀረጥ)፣ ኮታ እና ሌሎች የንግድ ገደቦች ያሉ እንቅፋቶችን ይቃወማል። የእቃዎችና የአገልግሎቶች ነፃ ዝውውር አገራት በComparative Advantage መሰረት በልዩ ምርቶች ላይ እንዲያተኩሩ እና የኢኮኖሚ ብቃትን እንዲያሳድጉ ያግዛል።"
-    }
-];
+        englishExplanation: "The statement is true. Economic Liberalism supports free trade and therefore opposes trade barriers such as tariffs, quotas, and other restrictions. It believes that the free movement of goods and services allows countries to specialize according to their comparative advantages and improves economic efficiency and cooperation.",
+        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። ኢኮኖሚያዊ ሊበራሊዝም ነፃ ንግድን ይደግፋል። ስለዚህ እንደ ታሪፍ (የገቢ ቀረጥ)፣ ኮታ እና ሌሎች የንግድ ገደቦች ያሉ እንቅፋቶችን ይቃወማል። የእቃዎችና የአገልግሎቶች ነፃ ዝውውር አገራት በComparative Advantage መሰረት በምርቶቻቸው ላይ እንዲያተኩሩ እና የኢኮኖሚ ብቃትና ትብብርን እንዲያሳድጉ ያግዛል።"
+    },
 
-quizData["global-trends"]["4"] = [
     {
         question: "The political dimension of IPE involves making rules pertaining to how states and societies achieve their goals.",
         options: ["True", "False"],
         answer: 0,
-        englishExplanation: "The statement is true. International Political Economy (IPE) studies the relationship between politics and economics at the international level. Its political dimension focuses on power, authority, decision-making, and the creation of rules and policies that guide economic relations between states and societies.",
-        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። ዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ (IPE) ፖለቲካ እና ኢኮኖሚ በዓለም አቀፍ ደረጃ ያላቸውን ግንኙነት ያጠናል። የፖለቲካዊ ገጽታው ስልጣንን፣ ቁጥጥርን፣ ውሳኔ አሰጣጥን እና መንግስታትና ማህበረሰቦች የኢኮኖሚ ግቦቻቸውን እንዲያሳኩ የሚያግዙ ህጎችና ፖሊሲዎችን መዘርጋትን ይመለከታል።"
-    }
-];
+        englishExplanation: "The statement is true. International Political Economy (IPE) combines politics and economics at the international level. Its political dimension focuses on power, authority, decision-making, and creating rules, laws, and policies that guide economic interactions between states and societies.",
+        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። ዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ (IPE) ፖለቲካን እና ኢኮኖሚን በዓለም አቀፍ ደረጃ ያጣምራል። የፖለቲካዊ ገጽታው ስልጣንን፣ ቁጥጥርን፣ ውሳኔ አሰጣጥን እና በመንግስታትና በማህበረሰቦች መካከል የኢኮኖሚ ግንኙነትን የሚመሩ ህጎችን፣ ደንቦችን እና ፖሊሲዎችን መፍጠርን ይመለከታል።"
+    },
 
-quizData["global-trends"]["5"] = [
     {
         question: "Mercantilism theoretical perspective defends the persistent role of the state in the economy.",
         options: ["True", "False"],
         answer: 0,
-        englishExplanation: "The statement is true. Mercantilism believes that economic strength is an important source of national political power. Therefore, it supports an active and continuing role for the state in the economy. Governments may use tariffs, subsidies, regulations, and other protectionist policies to protect domestic industries and strengthen national economic power.",
+        englishExplanation: "The statement is true. Mercantilism believes that economic strength is an important source of national political power. Therefore, it supports an active and continuing role for the state in the economy. Governments may use tariffs, subsidies, regulations, and protectionist policies to protect domestic industries and strengthen national economic power.",
         amharicExplanation: "አረፍተ ነገሩ እውነት ነው። መርካንቲሊዝም የኢኮኖሚ ጥንካሬ ለአገር የፖለቲካ ስልጣንና ኃይል አስፈላጊ መሠረት ነው ብሎ ያምናል። ስለዚህ መንግስት በኢኮኖሚ ውስጥ ንቁ እና ቀጣይ ሚና እንዲኖረው ይደግፋል። መንግስት የአገር ውስጥ ኢንዱስትሪን ለመጠበቅ ቀረጥ፣ ድጎማ፣ ደንብ እና ሌሎች ጥበቃዊ ፖሊሲዎችን ሊጠቀም ይችላል።"
-    }
-];
+    },
 
-quizData["global-trends"]["6"] = [
     {
         question: "Structuralism is the theoretical perspective which supports import substitution policy and protectionist policies.",
         options: ["True", "False"],
         answer: 0,
-        englishExplanation: "The statement is true. Structuralism argues that the international economic system is structured in a way that often disadvantages developing countries. Therefore, it supports policies such as Import Substitution Industrialization (ISI), which encourages countries to develop domestic industries and produce locally the goods that they previously imported. It also supports protectionist measures to protect emerging industries.",
-        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። ስትራክቸራሊዝም (Structuralism) የዓለም አቀፉ የኢኮኖሚ ስርዓት ታዳጊ አገራትን ሊጎዳ በሚችል መልኩ የተዋቀረ ነው ብሎ ያምናል። ስለዚህ Import Substitution Industrialization (ISI) የሚባለውን ፖሊሲ ይደግፋል። ይህም አገራት ከውጭ የሚያስገቧቸውን ምርቶች በሀገር ውስጥ እንዲያመርቱ እና የሀገር ውስጥ ኢንዱስትሪዎችን እንዲጠብቁ ያበረታታል።"
-    }
-];
+        englishExplanation: "The statement is true. Structuralism argues that the international economic system often favors wealthy developed countries over developing countries. Therefore, it supports Import Substitution Industrialization (ISI), which encourages developing countries to produce goods domestically instead of depending heavily on imports. It also supports protectionist policies to protect developing industries.",
+        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። ስትራክቸራሊዝም (Structuralism) የዓለም አቀፉ የኢኮኖሚ ስርዓት በአብዛኛው ሀብታም የዳበሩ አገራትን የሚጠቅም እና ታዳጊ አገራትን የሚጎዳ ነው ብሎ ያምናል። ስለዚህ Import Substitution Industrialization (ISI) የሚባለውን ፖሊሲ ይደግፋል። ይህም ታዳጊ አገራት ከውጭ ከሚያስገቧቸው ምርቶች ይልቅ በሀገር ውስጥ ምርቶችን እንዲያመርቱ እና የአገር ውስጥ ኢንዱስትሪዎችን በጥበቃዊ ፖሊሲዎች እንዲጠብቁ ያበረታታል።"
+    },
 
-quizData["global-trends"]["7"] = [
     {
-        question: "International Political Economy is the field of study which merely deals with state-market relationship.",
+        question: "International Political economy is the field of study which merely deals with state-market relationship.",
         options: ["True", "False"],
         answer: 1,
-        englishExplanation: "The statement is false because of the word 'merely,' which means 'only.' State-market relations are an important part of IPE, but IPE is much broader. It also studies international trade, multinational corporations, international finance, development, globalization, international institutions, and global inequality.",
-        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። በአረፍተ ነገሩ ውስጥ 'merely' የሚለው ቃል 'ብቻ' ማለት ስለሆነ መግለጫውን ስህተት ያደርገዋል። IPE በመንግስትና በገበያ መካከል ያለውን ግንኙነት ብቻ አያጠናም። የዓለም አቀፍ ንግድን፣ የብዙ አገራት ኩባንያዎችን፣ ዓለም አቀፍ ፋይናንስን፣ ልማትን፣ ግሎባላይዜሽንን፣ ዓለም አቀፍ ተቋማትን እና የዓለም አቀፍ ኢኮኖሚያዊ እኩልነትንም ያጠናል።"
-    }
-];
+        englishExplanation: "The statement is false because of the word 'merely,' which means 'only.' State-market relations are an important part of International Political Economy, but IPE is much broader. It also studies international trade, multinational corporations, international finance, development, globalization, international institutions, and global inequality.",
+        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። 'Merely' የሚለው ቃል 'ብቻ' ማለት ስለሆነ አረፍተ ነገሩን ስህተት ያደርገዋል። IPE በመንግስትና በገበያ መካከል ያለውን ግንኙነት ብቻ አያጠናም። የዓለም አቀፍ ንግድን፣ የብዙ አገራት ኩባንያዎችን፣ ዓለም አቀፍ ፋይናንስን፣ ልማትን፣ ግሎባላይዜሽንን፣ ዓለም አቀፍ ተቋማትን እና የዓለም አቀፍ ኢኮኖሚያዊ እኩልነትንም ያጠናል።"
+    },
 
-quizData["global-trends"]["8"] = [
     {
         question: "Competitive advantage is the principle which stimulates countries to focus on what they do and freely trade their goods with each other.",
         options: ["True", "False"],
         answer: 1,
-        englishExplanation: "The statement is false because the principle described is Comparative Advantage, not Competitive Advantage. Comparative Advantage, associated especially with David Ricardo, explains that countries benefit when they specialize in goods they can produce at a lower opportunity cost and then trade freely with one another.",
-        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። እዚህ የተገለጸው መርህ Competitive Advantage ሳይሆን Comparative Advantage ነው። Comparative Advantage በተለይ ከDavid Ricardo ሀሳብ ጋር የሚያያዝ ሲሆን፣ አገራት በአንጻራዊ ዝቅተኛ የእድል ዋጋ ማምረት በሚችሉት ምርት ላይ እንዲያተኩሩ እና ከሌሎች አገራት ጋር በነፃነት እንዲነግዱ ያበረታታል።"
-    }
-];
+        englishExplanation: "The statement is false. The principle described in the question is Comparative Advantage, not Competitive Advantage. Comparative Advantage, especially associated with David Ricardo, explains that countries can benefit from specializing in goods they can produce at a lower opportunity cost and then trading freely with other countries.",
+        amharicExplanation: "አረፍተ ነገሩ ስህተት ነው። በጥያቄው የተገለጸው መርህ Competitive Advantage ሳይሆን Comparative Advantage ነው። Comparative Advantage በተለይ ከDavid Ricardo ሀሳብ ጋር የሚያያዝ ሲሆን፣ አገራት በአንጻራዊ ዝቅተኛ የእድል ዋጋ ማምረት በሚችሉት ምርት ላይ እንዲያተኩሩ እና ከሌሎች አገራት ጋር በነፃነት እንዲነግዱ ያበረታታል።"
+    },
 
-quizData["global-trends"]["9"] = [
     {
-        question: "According to Marxist perspective, political conflict arises from struggle among classes over distribution of wealth.",
+        question: "According to Marxist perspective, political conflict arises from struggle among class over distribution of wealth.",
         options: ["True", "False"],
         answer: 0,
-        englishExplanation: "The statement is true. Marxist theory explains political and economic conflict mainly through class struggle. It focuses especially on the conflict between the Bourgeoisie, who own or control the means of production, and the Proletariat, who work for wages. According to Marxism, unequal control and distribution of wealth and resources create conflict between these classes.",
-        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። የማርክሲዝም (Marxism) እይታ የፖለቲካዊና የኢኮኖሚ ግጭቶችን በዋናነት ከመደብ ትግል ጋር ያያይዛል። በተለይም የምርት መሳሪያዎችን የሚቆጣጠሩት ቡርዣዎች (Bourgeoisie) እና ለደመወዝ የሚሰሩት ፕሮሌታሪያቶች (Proletariat) መካከል ያለውን ግጭት ያብራራል። የሀብትና የሀብት ምንጮች አለመመጣጠን በመደቦቹ መካከል ግጭትን ያስከትላል ብሎ ያምናል።"
-    }
-];
+        englishExplanation: "The statement is true. Marxism explains political and economic conflict mainly through class struggle. It focuses especially on the conflict between the Bourgeoisie, who own or control the means of production, and the Proletariat, who work for wages. According to Marxism, unequal control and distribution of wealth and resources create conflict between social classes.",
+        amharicExplanation: "አረፍተ ነገሩ እውነት ነው። የማርክሲዝም (Marxism) እይታ የፖለቲካዊና የኢኮኖሚ ግጭቶችን በዋናነት ከመደብ ትግል ጋር ያያይዛል። በተለይም የምርት መሳሪያዎችን የሚያዙት ቡርዣዎች (Bourgeoisie) እና ለደመወዝ የሚሰሩት ፕሮሌታሪያቶች (Proletariat) መካከል ያለውን ግጭት ያብራራል። የሀብትና የሀብት ምንጮች አለመመጣጠን በማህበራዊ መደቦች መካከል ግጭት እንደሚፈጥር ያስረዳል።"
+    },
 
-quizData["global-trends"]["10"] = [
     {
         question: "Which one is not true about the Liberal theoretical perspective?",
         options: [
@@ -1276,9 +1258,9 @@ quizData["global-trends"]["10"] = [
             "None of the above"
         ],
         answer: 3,
-        englishExplanation: "The correct answer is 'It encourages the concept of competitive advantage.' Classical economic Liberalism is mainly associated with free markets, free trade, and Comparative Advantage. Comparative Advantage explains why countries can benefit by specializing in goods they produce relatively efficiently and trading freely. Competitive Advantage is a different concept that is more closely associated with business strategy and competition between firms.",
-        amharicExplanation: "ትክክለኛው መልስ 'It encourages the concept of competitive advantage' ነው። የኢኮኖሚ ሊበራሊዝም የነፃ ገበያን፣ ነፃ ንግድን እና Comparative Advantage የሚባለውን መርህ ይደግፋል። Comparative Advantage አገራት በአንጻራዊ ብቃታቸው ወይም ዝቅተኛ የእድል ዋጋ ባላቸው ምርቶች ላይ በማተኮር በነፃነት ሲነግዱ እንደሚጠቀሙ ያብራራል። Competitive Advantage ግን በተለይ ከንግድ ስራ ስትራቴጂ እና ከኩባንያዎች ውድድር ጋር የሚያያዝ ጽንሰ ሀሳብ ነው።"
-    },];
+        englishExplanation: "The correct answer is 'It encourages the concept of competitive advantage.' Classical Economic Liberalism supports free markets, free trade, and Comparative Advantage. Comparative Advantage explains why countries benefit by specializing in goods they can produce relatively efficiently and trading freely. Competitive Advantage is a different concept that is mainly associated with business strategy and competition between firms, rather than being a core principle of classical economic Liberalism.",
+        amharicExplanation: "ትክክለኛው መልስ 'It encourages the concept of competitive advantage' ነው። የኢኮኖሚ ሊበራሊዝም ነፃ ገበያን፣ ነፃ ንግድን እና Comparative Advantage የሚባለውን መርህ ይደግፋል። Comparative Advantage አገራት በአንጻራዊ ብቃታቸው ወይም ዝቅተኛ የእድል ዋጋ ባላቸው ምርቶች ላይ በማተኮር በነፃነት ሲነግዱ እንደሚጠቀሙ ያብራራል። Competitive Advantage ግን በተለይ ከንግድ ስራ ስትራቴጂ እና ከኩባንያዎች ውድድር ጋር የሚያያዝ ጽንሰ ሀሳብ ነው።"
+    }];
 
 quizData["global-trends"]["4"] = [
   {
