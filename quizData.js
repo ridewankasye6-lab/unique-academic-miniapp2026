@@ -5871,7 +5871,419 @@ const quizData = {
 
     "psychology": {
 
-        1: [{     question: "1. According to the law of closure, elements that are closer are grouped together.",
+        1: [
+            
+            
+           { question: "Gestalt psychology introduced the idea that the whole is different from the sum of its parts. Which of the following research findings best exemplifies this principle?",
+    options: [
+        "The ability to learn through reinforcement and punishment",
+        "The perception of a complete shape even when parts of it are missing",
+        "The influence of unconscious desires on behavior",
+        "The role of mental processes in adapting to the environment"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Gestalt psychology emphasizes that people perceive organized and unified wholes rather than simply seeing separate individual parts. The Gestalt principle of Closure explains that the brain automatically fills in missing parts of an image so that we perceive a complete shape. This clearly demonstrates that the perceived whole can be different from the individual parts. Option A is associated with Behaviorism and Operant Conditioning, Option C is associated with Psychoanalysis and Freud's theory of the unconscious, and Option D is associated with Functionalism.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። ጌስታልት ሳይኮሎጂ ሰዎች ነገሮችን እንደተነጣጠሉ ክፍሎች ብቻ ሳይሆን እንደ አንድ የተደራጀና የተሟላ አጠቃላይ ነገር እንደሚመለከቱ ያስተምራል። Closure የሚባለው የጌስታልት መርህ አእምሯችን በምስል ውስጥ የጎደሉ ክፍሎችን በራሱ እንዲሞላ በማድረግ ሙሉ ቅርጽ እንድናይ ያደርገናል። ይህም ሙሉው ነገር ከተናጠሉ ክፍሎቹ የተለየ ሊሆን እንደሚችል ያሳያል። A የቢሄቪየሪዝም እና Operant Conditioning ጽንሰ ሐሳብ ነው፣ C የPsychoanalysis እና የFreud ድብቅ አእምሮ ንድፈ ሐሳብ ነው፣ D ደግሞ የFunctionalism እይታ ነው።"
+},
+
+{
+    question: "Behaviorism, as proposed by John B. Watson, rejected the study of mental processes in favor of observable behavior. Which of the following experiments is most closely associated with the behaviorist approach?",
+    options: [
+        "Pavlov's classical conditioning experiments with dogs",
+        "Freud's analysis of dreams and free associations",
+        "Wundt's introspection experiments",
+        "James' studies on the stream of consciousness"
+    ],
+    answer: 0,
+    englishExplanation: "The correct answer is A. Behaviorism focuses on observable and measurable behavior rather than unobservable mental processes. Ivan Pavlov's classical conditioning experiments with dogs demonstrated that a behavior such as salivation could be learned through associations between stimuli. This became an important foundation for the behaviorist approach. Option B belongs to Psychoanalysis, Option C is associated with Structuralism and introspection, and Option D is associated with William James and Functionalism.",
+    amharicExplanation: "ትክክለኛው መልስ A ነው። ቢሄቪየሪዝም በቀጥታ ሊታይና ሊለካ በሚችል ባህሪ ላይ ያተኩራል፤ የማይታዩ የአእምሮ ሂደቶችን ግን እንደ ዋና የጥናት መስክ አይቀበልም። ኢቫን ፓቭሎቭ በውሾች ላይ ያደረገው የClassical Conditioning ሙከራ ባህሪ በተለያዩ ማነቃቂያዎች መካከል በሚፈጠር ግንኙነት ሊማር እንደሚችል አሳይቷል። ይህም ለቢሄቪየሪዝም አቀራረብ አስፈላጊ መሠረት ሆኗል። B የPsychoanalysis ነው፣ C ከStructuralism እና introspection ጋር የተያያዘ ነው፣ D ደግሞ ከWilliam James እና Functionalism ጋር የተያያዘ ነው።"
+},
+
+{
+    question: "Psychoanalysis, founded by Sigmund Freud, introduced the concept of the unconscious mind. Which of the following techniques is not typically associated with psychoanalytic therapy?",
+    options: [
+        "Free association",
+        "Dream analysis",
+        "Hypnosis",
+        "Systematic desensitization"
+    ],
+    answer: 3,
+    englishExplanation: "The correct answer is D. Systematic desensitization is a behavioral therapy technique used especially for treating phobias. It involves gradually exposing a person to a feared object or situation while using relaxation techniques. It was developed by Joseph Wolpe and is based on principles of classical conditioning, not Freud's psychoanalysis. Free association, dream analysis, and hypnosis are techniques historically associated with psychoanalytic approaches for exploring unconscious thoughts, memories, and conflicts.",
+    amharicExplanation: "ትክክለኛው መልስ D ነው። Systematic desensitization በተለይም phobia ወይም ከፍተኛ ፍርሃትን ለማከም የሚጠቅም የBehavioral therapy ዘዴ ነው። ሰውዬው የሚፈራውን ነገር ወይም ሁኔታ በቀስታ እንዲጋፈጥ እና በተመሳሳይ ጊዜ የመዝናናት ዘዴዎችን እንዲጠቀም ያደርጋል። ይህ ዘዴ በJoseph Wolpe የተሠራ ሲሆን በClassical Conditioning መርሆች ላይ የተመሠረተ ነው፣ የFreud Psychoanalysis አካል አይደለም። Free association፣ Dream analysis እና Hypnosis ግን ከPsychoanalysis ጋር በታሪክ የተያያዙ ዘዴዎች ሲሆኑ ድብቅ ሀሳቦችን፣ ትዝታዎችን እና ግጭቶችን ለመመርመር ይጠቅማሉ።"
+},
+
+{
+    question: "According to Maslow's hierarchy of needs, which of the following needs must be satisfied before an individual can achieve self-actualization?",
+    options: [
+        "Esteem Needs",
+        "Safety Needs",
+        "Love and Belongingness Needs",
+        "All of the above",
+        "None"
+    ],
+    answer: 3,
+    englishExplanation: "The correct answer is D. In Maslow's hierarchy of needs, self-actualization is placed at the highest level of the traditional hierarchy. Before reaching self-actualization, a person generally needs to have their lower-level needs sufficiently satisfied, including physiological needs, safety needs, love and belongingness needs, and esteem needs. Therefore, all of the needs listed in options A, B, and C are included as important lower-level needs. Option E is incorrect because these needs are part of Maslow's hierarchy.",
+    amharicExplanation: "ትክክለኛው መልስ D ነው። በMaslow's hierarchy of needs መሠረት Self-actualization በባህላዊው የፍላጎቶች ተዋረድ ከፍተኛው ደረጃ ላይ ይገኛል። ወደዚህ ደረጃ ከመድረስ በፊት ሰው የታችኛውን ደረጃ ፍላጎቶች በበቂ ሁኔታ ማሟላት ይኖርበታል። እነዚህም physiological needs፣ safety needs፣ love and belongingness needs እና esteem needs ናቸው። ስለዚህ A፣ B እና C ሁሉም ከSelf-actualization በታች የሚገኙ አስፈላጊ ፍላጎቶች ስለሆኑ ሁሉንም የሚወክለው D ትክክለኛ መልስ ነው።"
+},
+
+{
+    question: "You are presented with a series of incomplete images, yet you perceive them as complete figures. This phenomenon is best explained by which school of thought?",
+    options: [
+        "Behaviorism",
+        "Psychoanalysis",
+        "Gestalt",
+        "Humanistic",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. Gestalt psychology focuses strongly on how people organize and interpret sensory information as meaningful wholes. The Law of Closure explains why people tend to fill in missing parts of an incomplete image and perceive it as a complete figure. Behaviorism focuses on observable behavior, Psychoanalysis focuses on unconscious processes, and Humanistic psychology focuses on human potential, personal growth, and self-actualization.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። ጌስታልት ሳይኮሎጂ ሰዎች ከስሜት ህዋሳቶቻቸው የሚያገኙትን መረጃ እንዴት እንደሚያደራጁና እንደ ትርጉም ያለው ሙሉ ነገር እንደሚመለከቱ ያጠናል። Law of Closure የሚባለው መርህ ያልተሟላ ምስል ሲታየን አእምሯችን የጎደሉትን ክፍሎች በማሟላት ምስሉን እንደ ሙሉ እንድናየው ያደርጋል። Behaviorism በሚታይ ባህሪ ላይ ያተኩራል፣ Psychoanalysis በድብቅ የአእምሮ ሂደቶች ላይ ያተኩራል፣ Humanistic psychology ደግሞ በሰው ልጅ አቅም፣ በግል እድገት እና Self-actualization ላይ ያተኩራል።"
+},
+
+{
+    question: "An individual strives to achieve their full potential and self-fulfillment, focusing on personal growth and self-improvement. Which school of thought best describes this approach?",
+    options: [
+        "Behaviorism",
+        "Psychoanalysis",
+        "Humanistic",
+        "Structuralism",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. Humanistic psychology emphasizes the positive aspects of human nature, including free will, personal growth, self-improvement, human potential, and self-actualization. Abraham Maslow and Carl Rogers were major figures in the humanistic approach. Behaviorism mainly focuses on learned observable behavior, Psychoanalysis emphasizes unconscious conflicts and desires, and Structuralism attempts to study the basic elements of conscious experience.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። Humanistic psychology በሰው ልጅ አዎንታዊ ባህሪያት፣ ነፃ ፈቃድ፣ የግል እድገት፣ እራስን ማሻሻል፣ የሰው ልጅ አቅም እና Self-actualization ላይ ትኩረት ያደርጋል። Abraham Maslow እና Carl Rogers የHumanistic approach ዋና ተወካዮች ናቸው። Behaviorism በዋናነት በሚማርና በሚታይ ባህሪ ላይ ያተኩራል፣ Psychoanalysis በድብቅ ግጭቶችና ፍላጎቶች ላይ ያተኩራል፣ Structuralism ደግሞ የንቃተ ህሊና ልምድን መሠረታዊ ክፍሎች ለመመርመር ይሞክራል።"
+},
+
+{
+    question: "A student receives praise from their teacher for completing their homework on time, which increases the likelihood that they will complete their homework on time in the future. Which school of thought best explains this behavior?",
+    options: [
+        "Gestalt",
+        "Humanistic",
+        "Behaviorism",
+        "Cognitive",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. The teacher's praise acts as positive reinforcement. Positive reinforcement means that a desirable consequence is given after a behavior, increasing the likelihood that the behavior will happen again. Completing homework on time is therefore strengthened by the praise. This principle is central to Operant Conditioning, which is strongly associated with Behaviorism. Gestalt focuses on perception, Humanistic psychology focuses on personal growth and self-fulfillment, and Cognitive psychology focuses on mental processes such as thinking and memory.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። መምህሩ ለተማሪው ምስጋና መስጠቱ Positive reinforcement ወይም በጎ ማበረታቻ ነው። Positive reinforcement ማለት አንድ ተፈላጊ ባህሪ ከተፈጸመ በኋላ አዎንታዊ ውጤት በመስጠት ያ ባህሪ ወደፊት እንዲደገም የማድረግ ሂደት ነው። ተማሪው የቤት ሥራውን በሰዓቱ ስለሰራ ምስጋና ስለተቀበለ ይህንን ባህሪ ወደፊት የመድገሙ እድል ይጨምራል። ይህ የOperant Conditioning መርህ ሲሆን ከBehaviorism ጋር በጣም የተያያዘ ነው። Gestalt በዕይታና ግንዛቤ ላይ፣ Humanistic በግል እድገትና እራስን ማሟላት ላይ፣ Cognitive psychology ደግሞ እንደ አስተሳሰብና ማስታወስ ባሉ የአእምሮ ሂደቶች ላይ ያተኩራሉ።"
+},
+
+{
+    question: "A person experiences recurring dreams that reveal hidden fears and desires from their childhood. Which school of thought best explains this phenomenon?",
+    options: [
+        "Cognitive",
+        "Behaviorism",
+        "Psychoanalysis",
+        "Functionalism",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. Psychoanalysis, particularly Freud's theory, emphasizes the role of the unconscious mind in human behavior and experience. Freud believed that dreams could provide clues about unconscious wishes, fears, and conflicts, including experiences and desires connected to childhood. Cognitive psychology may explain dreams through processes such as memory and information processing, Behaviorism focuses mainly on observable behavior, and Functionalism focuses on how mental processes help people adapt to their environment.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። Psychoanalysis በተለይም የFreud ንድፈ ሐሳብ ድብቅ አእምሮ በሰው ባህሪና ተሞክሮ ላይ ትልቅ ተፅዕኖ እንዳለው ያስተምራል። Freud ህልሞች ሰውዬው በድብቅ አእምሮ ውስጥ ያሉ ፍላጎቶችን፣ ፍርሃቶችን እና ግጭቶችን፣ ከልጅነት ጊዜ ጋር የተያያዙትንም ጨምሮ፣ ሊያመለክቱ እንደሚችሉ ያምን ነበር። Cognitive psychology ህልሞችን ከማስታወስና ከመረጃ ሂደት ጋር ሊያያዝ ይችላል፣ Behaviorism በዋናነት በሚታይ ባህሪ ላይ ያተኩራል፣ Functionalism ደግሞ የአእምሮ ሂደቶች ሰዎች ከአካባቢያቸው ጋር እንዲላመዱ እንዴት እንደሚረዱ ያጠናል።"
+},
+
+{
+    question: "A researcher is interested in how mental processes help individuals adapt to their environment and function effectively in their daily lives. Which school of thought best describes this research focus?",
+    options: [
+        "Structuralism",
+        "Functionalism",
+        "Gestalt",
+        "Psychoanalysis",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Functionalism focuses on the purpose and function of mental processes and consciousness. William James was one of the major figures associated with Functionalism, which was influenced by Darwin's ideas about adaptation. Functionalists were interested in understanding how thinking, emotions, memory, and other mental processes help people adapt to their environment and function effectively. Structuralism focuses on the basic structure of conscious experience, Gestalt focuses on organized wholes and perception, and Psychoanalysis focuses on unconscious conflicts and desires.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Functionalism የአእምሮ ሂደቶችና ንቃተ ህሊና ምን አላማ እንዳላቸው እና ምን ተግባር እንደሚያከናውኑ ያጠናል። William James ከFunctionalism ጋር በጣም የተያያዘ ዋና ምሁር ሲሆን እይታውም በDarwin የመላመድ ሀሳብ ተፅዕኖ አለበት። Functionalists እንደ አስተሳሰብ፣ ስሜትና ማስታወስ ያሉ የአእምሮ ሂደቶች ሰዎች ከአካባቢያቸው ጋር እንዲላመዱና በዕለት ተዕለት ሕይወታቸው በተሳካ ሁኔታ እንዲሰሩ እንዴት እንደሚረዱ ለማወቅ ፈልገዋል። Structuralism የንቃተ ህሊናን መሠረታዊ መዋቅር ያጠናል፣ Gestalt የተደራጁ ሙሉ ነገሮችንና ግንዛቤን ያጠናል፣ Psychoanalysis ደግሞ ድብቅ ግጭቶችንና ፍላጎቶችን ያጠናል።"
+},
+
+{
+    question: "A person frequently experiences anxiety and has recurring dreams about being chased. According to the psychodynamic perspective, which of the following is the most likely explanation for these symptoms?",
+    options: [
+        "They are a result of learned behaviors from the environment",
+        "They are due to unresolved unconscious conflicts from childhood",
+        "They are caused by imbalances in brain chemicals",
+        "They are influenced by cultural expectations and norms",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. The psychodynamic perspective emphasizes the influence of unconscious processes and unresolved psychological conflicts on current behavior and emotional experiences. From this perspective, recurring anxiety and disturbing dreams may be connected to unresolved or repressed conflicts originating in childhood. Option A represents the Behavioral approach, which explains behavior through learning and environmental experiences. Option C represents the Biological approach, while Option D represents the Sociocultural approach.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Psychodynamic perspective የሰው አሁን ያለው ባህሪና ስሜታዊ ልምድ በድብቅ የአእምሮ ሂደቶችና ባልተፈቱ የስነ-ልቦና ግጭቶች ተፅዕኖ ሊደርስበት እንደሚችል ያብራራል። በዚህ እይታ መሠረት ተደጋጋሚ ጭንቀትና አስፈሪ ህልሞች ከልጅነት ጊዜ የመጡ እና ያልተፈቱ ወይም በድብቅ አእምሮ ውስጥ የተጨፈኑ ግጭቶች ጋር ሊያያዙ ይችላሉ። A የBehavioral approach ነው፣ ይህም ባህሪን በመማርና በአካባቢ ተፅዕኖ ያብራራል። C የBiological approach ነው፣ D ደግሞ የSociocultural approach ነው።"
+},{question: "A student improves their grades after being rewarded with praise and extra privileges by their teacher. Which school of thought best explains this change in behavior?",
+    options: [
+        "Cognitive",
+        "Humanistic",
+        "Behavioral",
+        "Biological",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. The Behavioral perspective explains behavior in terms of environmental influences and observable consequences. When the student receives praise and extra privileges after performing well, these rewards act as positive reinforcement. Positive reinforcement increases the likelihood that the student will repeat the desired behavior, such as studying and achieving good grades. Cognitive psychology focuses on mental processes, Humanistic psychology focuses on personal growth and self-actualization, and the Biological perspective focuses on the brain, nervous system, genetics, and other physical processes.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። Behavioral approach የሰው ባህሪ በአካባቢ ተፅዕኖና ከባህሪው በኋላ በሚመጡ ውጤቶች እንዴት እንደሚቀረጽ ያብራራል። ተማሪው ጥሩ ውጤት ካስመዘገበ በኋላ ምስጋናና ተጨማሪ መብቶች ማግኘቱ Positive reinforcement ወይም በጎ ማበረታቻ ይባላል። ይህ ማበረታቻ ተማሪው ወደፊትም ማጥናቱንና ጥሩ ውጤት ማምጣቱን እንዲደግም ያደርገዋል። Cognitive psychology በአእምሮ ሂደቶች ላይ፣ Humanistic psychology በግል እድገትና Self-actualization ላይ፣ Biological approach ደግሞ በአእምሮ፣ በነርቭ ሥርዓት፣ በዘረመልና በሌሎች የሰውነት ሂደቶች ላይ ያተኩራል።"
+},
+
+{
+    question: "An individual feels unfulfilled in their job and decides to pursue a career that aligns with their passions and values. Which school of thought best describes this decision?",
+    options: [
+        "Psychodynamic",
+        "Cognitive",
+        "Humanistic",
+        "Socio-cultural",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. Humanistic psychology emphasizes free will, personal choice, personal growth, and the desire to reach one's full potential. Choosing to leave an unfulfilling job and pursue a career that matches one's passions and values is an example of seeking personal meaning and self-fulfillment. Psychodynamic psychology focuses on unconscious drives and childhood conflicts, Cognitive psychology focuses on mental information processing, and the Socio-cultural approach focuses on the influence of society and culture.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። Humanistic psychology የሰው ልጅ ነፃ ፈቃድ፣ የግል ምርጫ፣ የግል እድገትና ሙሉ አቅሙን ለማውጣት ያለውን ፍላጎት ያጠናል። አንድ ሰው በሥራው እርካታ ሳያገኝ ከራሱ ፍላጎትና እሴት ጋር የሚስማማ ሙያ መምረጡ የግል እርካታና Self-actualization ለማግኘት የሚያደርገውን ጥረት ያሳያል። Psychodynamic psychology በድብቅ ፍላጎቶችና በልጅነት ግጭቶች ላይ፣ Cognitive psychology በአእምሮ የመረጃ ማቀነባበር ላይ፣ Socio-cultural approach ደግሞ በማህበረሰብና ባህል ተፅዕኖ ላይ ያተኩራል።"
+},
+
+{
+    question: "A researcher is studying how people solve complex problems and make decisions. They are particularly interested in the mental processes involved in reasoning and memory. Which school of thought best describes this research focus?",
+    options: [
+        "Behavioral",
+        "Cognitive",
+        "Biological",
+        "Socio-cultural",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Cognitive psychology studies internal mental processes such as thinking, reasoning, memory, problem-solving, decision-making, perception, and attention. Because the researcher is specifically interested in how people reason, remember information, solve problems, and make decisions, the Cognitive approach is the best match. Behavioral psychology mainly focuses on observable behavior, Biological psychology examines the brain and nervous system, and the Socio-cultural approach examines how society and culture influence behavior and mental processes.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Cognitive psychology እንደ ማሰብ፣ ምክንያታዊ ማሰብ፣ ማስታወስ፣ ችግር መፍታት፣ ውሳኔ መስጠት፣ ግንዛቤና ትኩረት ያሉ የውስጥ አእምሮ ሂደቶችን ያጠናል። ተመራማሪው ሰዎች እንዴት ምክንያታዊ እንደሚያስቡ፣ እንደሚያስታውሱ፣ ችግር እንደሚፈቱና ውሳኔ እንደሚሰጡ ስለሚያጠና B ትክክለኛ መልስ ነው። Behavioral psychology በሚታይ ባህሪ ላይ፣ Biological psychology በአእምሮና በነርቭ ሥርዓት ላይ፣ Socio-cultural approach ደግሞ በማህበረሰብና ባህል ተፅዕኖ ላይ ያተኩራሉ።"
+},
+
+{
+    question: "A patient is diagnosed with depression and is prescribed medication to balance neurotransmitter levels in the brain. Which school of thought best explains this treatment approach?",
+    options: [
+        "Psychodynamic",
+        "Behavioral",
+        "Biological",
+        "Humanistic",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. The Biological perspective explains psychological conditions in terms of physical and physiological processes, including brain structures, nervous system activity, genetics, hormones, and neurotransmitters. Using medication to affect brain chemistry is therefore most closely related to the Biological approach. The Psychodynamic approach focuses on unconscious conflicts, the Behavioral approach focuses on learned behaviors and conditioning, and the Humanistic approach focuses on personal growth, free will, and self-actualization.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። Biological perspective የስነ-ልቦና ችግሮችን ከሰውነታዊና ፊዚዮሎጂያዊ ሂደቶች ጋር ያያይዛል። እነዚህም የአእምሮ መዋቅር፣ የነርቭ ሥርዓት፣ ዘረመል፣ ሆርሞኖችና neurotransmitters ያካትታሉ። የአእምሮ ኬሚካላዊ ሂደቶችን ለመነካት መድኃኒት መጠቀም ስለዚህ ከBiological approach ጋር በጣም የተያያዘ ነው። Psychodynamic approach በድብቅ ግጭቶች ላይ፣ Behavioral approach በተማሩ ባህሪያትና conditioning ላይ፣ Humanistic approach ደግሞ በግል እድገት፣ ነፃ ፈቃድና Self-actualization ላይ ያተኩራል።"
+},
+
+{
+    question: "A psychologist is studying how moral reasoning evolves from childhood to adulthood. They are particularly interested in how individuals justify their decisions in moral dilemmas. Which branch of psychology does this research belong to?",
+    options: [
+        "Personality Psychology",
+        "Developmental Psychology",
+        "Social Psychology",
+        "Forensic Psychology",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Developmental psychology studies how people change and develop throughout the lifespan. These changes can include physical, cognitive, emotional, social, and moral development. Since the researcher is studying how moral reasoning changes from childhood to adulthood, the research belongs to Developmental Psychology. Personality Psychology focuses on stable individual differences, Social Psychology examines how people influence one another, and Forensic Psychology applies psychology to legal and criminal justice settings.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Developmental Psychology ሰዎች በሕይወታቸው ዘመን ሁሉ የሚያሳዩትን ለውጥና እድገት ያጠናል። ይህም የአካል፣ የአእምሮ፣ የስሜት፣ የማህበራዊ እና የሞራል እድገትን ያካትታል። ተመራማሪው የሞራል ማመዛዘን ከልጅነት እስከ አዋቂነት እንዴት እንደሚለወጥ ስለሚያጠና Developmental Psychology ትክክለኛው መልስ ነው። Personality Psychology በግለሰቦች የባህሪ ልዩነት ላይ፣ Social Psychology በሰዎች መካከል በሚኖር ተፅዕኖ ላይ፣ Forensic Psychology ደግሞ ስነ-ልቦናን በህግና በፍርድ ሥርዓት ውስጥ በመተግበር ላይ ያተኩራል።"
+},
+
+{
+    question: "A researcher is investigating how genetic factors and early childhood experiences contribute to the development of personality disorders. Which branch of psychology does this research fall under?",
+    options: [
+        "Clinical Psychology",
+        "Social Psychology",
+        "Personality Psychology",
+        "Biological Psychology",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "The correct answer is C. Personality Psychology studies individual differences in patterns of thinking, feeling, and behaving. It also examines how biological factors, genetics, childhood experiences, and environmental influences contribute to the development of personality and personality-related difficulties. Because the main focus of this research is the development of personality disorders and the factors that shape personality, Personality Psychology is the best answer. Clinical Psychology focuses more broadly on the assessment and treatment of mental health problems, Social Psychology focuses on social influence and group behavior, and Biological Psychology focuses primarily on biological mechanisms.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። Personality Psychology በሰዎች የማሰብ፣ የመሰማትና የመሆን ልዩነቶች ላይ ያጠናል። በተጨማሪም ዘረመል፣ የልጅነት ልምዶችና የአካባቢ ተፅዕኖዎች የሰውን ስብዕና እንዴት እንደሚቀርጹ ይመረምራል። የጥናቱ ዋና ትኩረት personality disorders እና ስብዕናን የሚቀርጹ ምክንያቶች ላይ ስለሆነ Personality Psychology ትክክለኛው መልስ ነው። Clinical Psychology በአጠቃላይ የአእምሮ ችግሮችን መመርመርና ማከም ላይ፣ Social Psychology በማህበራዊ ተፅዕኖና በቡድን ባህሪ ላይ፣ Biological Psychology ደግሞ በሰውነታዊ ሂደቶች ላይ ያተኩራሉ።"
+},
+
+{
+    question: "A psychologist is exploring how groupthink can lead to poor decision-making in high-stakes environments, such as corporate boardrooms or military operations. Which branch of psychology does this research pertain to?",
+    options: [
+        "Cross-cultural Psychology",
+        "Social Psychology",
+        "Industrial Psychology",
+        "Cognitive Psychology",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Social Psychology studies how people's thoughts, feelings, and behaviors are influenced by other people and by group situations. Groupthink occurs when members of a group place too much importance on agreement and harmony, which can reduce critical thinking and lead to poor decisions. Because the research focuses on group influence and decision-making within groups, it belongs primarily to Social Psychology. Cross-cultural Psychology compares behavior across cultures, Industrial Psychology focuses on work and organizational settings, and Cognitive Psychology focuses mainly on individual mental processes.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Social Psychology የሰዎች ሀሳብ፣ ስሜትና ባህሪ በሌሎች ሰዎችና በቡድን ሁኔታዎች እንዴት እንደሚነካ ያጠናል። Groupthink ማለት የቡድን አባላት ሁሉም እንዲስማሙና ሰላም እንዲኖር ከመጠን በላይ ትኩረት ሲሰጡ በጥልቀት ማሰብን በመቀነስ የተሳሳተ ውሳኔ ሊወስኑ የሚችሉበት ሁኔታ ነው። ስለዚህ ጥናቱ በቡድን ተፅዕኖና ውሳኔ ላይ ስለሚያተኩር Social Psychology ውስጥ ይመደባል። Cross-cultural Psychology በባህሎች መካከል ያሉ ልዩነቶችን ያጠናል፣ Industrial Psychology በሥራና በድርጅት አካባቢ ላይ፣ Cognitive Psychology ደግሞ በነጠላ ሰው የአእምሮ ሂደቶች ላይ ያተኩራል።"
+},
+
+{
+    question: "A company implements a new training program designed to enhance employees' problem-solving skills and creativity. The effectiveness of this program is evaluated by measuring changes in productivity and innovation. Which branch of psychology is being applied here?",
+    options: [
+        "Educational Psychology",
+        "Industrial Psychology",
+        "Cognitive Psychology",
+        "Health Psychology",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Industrial Psychology, also known as Industrial-Organizational Psychology, applies psychological knowledge to workplaces and organizations. It includes employee training, performance improvement, productivity, motivation, leadership, and organizational behavior. Since the company is using a training program to improve employees' problem-solving skills, creativity, productivity, and innovation, this is an application of Industrial Psychology. Educational Psychology focuses mainly on learning in educational settings, Cognitive Psychology studies mental processes, and Health Psychology focuses on psychological factors related to health and illness.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Industrial Psychology ወይም Industrial-Organizational Psychology የስነ-ልቦና እውቀትን በሥራ ቦታና በድርጅቶች ውስጥ የሚተገብር ዘርፍ ነው። የሰራተኞች ስልጠና፣ የሥራ አፈጻጸም ማሻሻል፣ ምርታማነት፣ ተነሳሽነት፣ አመራርና የድርጅት ባህሪ ያጠናል። ኩባንያው የሰራተኞችን ችግር መፍታት፣ ፈጠራ፣ ምርታማነትና innovation ለማሻሻል ስልጠና ስለሚጠቀም ይህ Industrial Psychology ነው። Educational Psychology በትምህርትና በመማር አካባቢ፣ Cognitive Psychology በአእምሮ ሂደቶች፣ Health Psychology ደግሞ ከጤናና በሽታ ጋር በተያያዙ የስነ-ልቦና ጉዳዮች ላይ ያተኩራሉ።"
+},
+
+{
+    question: "A psychologist is asked to assess the competency of a defendant to stand trial. They must determine if the defendant understands the charges and can participate in their defense. Which branch of psychology does this work belong to?",
+    options: [
+        "Health Psychology",
+        "Forensic Psychology",
+        "Clinical Psychology",
+        "Developmental Psychology",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. Forensic Psychology applies psychological knowledge to legal and court-related matters. Assessing whether a defendant understands the charges against them and is mentally competent to participate in their defense is a legal question that requires psychological assessment. Therefore, this work belongs to Forensic Psychology. Health Psychology focuses on health-related behaviors, Clinical Psychology focuses on assessment and treatment of mental health conditions in clinical settings, and Developmental Psychology studies psychological changes across the lifespan.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Forensic Psychology የስነ-ልቦና እውቀትን ከህግና ከፍርድ ቤት ጉዳዮች ጋር የሚያገናኝ የስነ-ልቦና ዘርፍ ነው። አንድ ተከሳሽ የተከሰሰበትን ክስ መረዳት እና በራሱ መከላከያ ሂደት ውስጥ መሳተፍ የሚችል የአእምሮ ብቃት እንዳለው መገምገም የህግ ጉዳይ ነው። ስለዚህ ይህ ሥራ Forensic Psychology ውስጥ ይመደባል። Health Psychology ከጤና ጋር በተያያዙ ባህሪያት ላይ፣ Clinical Psychology በክሊኒካዊ አካባቢ የአእምሮ ችግሮችን በመመርመርና በማከም ላይ፣ Developmental Psychology ደግሞ በሕይወት ዘመን የሚከሰቱ የስነ-ልቦና ለውጦች ላይ ያተኩራሉ።"
+},
+
+{
+    question: "A researcher proposes that increased exposure to natural light improves mood in individuals. This proposition is an example of which of the following?",
+    options: [
+        "Theory",
+        "Hypothesis",
+        "Conclusion",
+        "Variable",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "The correct answer is B. A hypothesis is a specific, tentative, and testable prediction about a possible relationship between variables. In this example, the researcher predicts that increased exposure to natural light will improve people's mood. The researcher can test this prediction by measuring exposure to natural light and changes in mood. A theory is a broader framework supported by evidence, a conclusion is a judgment reached after analyzing research results, and a variable is a factor that can be measured or changed in a study.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። Hypothesis ማለት በምርምር ሊፈተንና ሊረጋገጥ የሚችል ጊዜያዊ ግምት ወይም መላምት ነው። በዚህ ጥያቄ ተመራማሪው የተፈጥሮ ብርሃን መጋለጥ ሲጨምር የሰዎች ስሜት እንደሚሻሻል ይገምታል። ይህንን ግምት የተፈጥሮ ብርሃን መጠንንና የሰዎችን የስሜት ለውጥ በመለካት መፈተን ይቻላል። Theory ሰፊና በምርምር ማስረጃ የተደገፈ ንድፈ ሐሳብ ነው፣ Conclusion ደግሞ ምርምርና የመረጃ ትንተና ከተጠናቀቀ በኋላ የሚደረስበት ውሳኔ ነው። Variable ደግሞ በጥናት ውስጥ ሊለካ ወይም ሊለወጥ የሚችል ነገር ነው።"
+},{
+    question: "Which of the following best describes the scientific method in psychology?",
+    options: [
+        "A process of testing ideas through systematic observations, experimentations, and statistical analysis.",
+        "A method of collecting data through surveys and interviews.",
+        "A technique for analyzing historical data to understand past behaviors.",
+        "A way to develop theories based on anecdotal evidence.",
+        "None"
+    ],
+    answer: 0,
+    englishExplanation: "The scientific method is a systematic way of gaining psychological knowledge. It involves forming hypotheses, collecting evidence through observation or experiments, analyzing the data, and drawing conclusions based on evidence. Option B describes only specific data-collection methods, not the complete scientific method. Option C refers mainly to historical or archival research. Option D is incorrect because scientific research relies on objective evidence rather than personal anecdotes.",
+    amharicExplanation: "የሳይንሳዊ ዘዴ (Scientific Method) በስነ-ልቦና ዕውቀትን በስርዓት ለማግኘት የሚጠቀሙበት የጥናት ሂደት ነው። መላምት ማቅረብ፣ በምልከታ ወይም በሙከራ መረጃ መሰብሰብ፣ መረጃውን መተንተን እና በማስረጃ ላይ ተመስርቶ ድምዳሜ ላይ መድረስን ያካትታል። B የመረጃ መሰብሰቢያ ዘዴዎችን ብቻ ይገልጻል። C በዋናነት የታሪክ ወይም የቀድሞ መረጃ ጥናትን ያመለክታል። D ደግሞ በግል አጋጣሚዎች ላይ መመስረት ሳይንሳዊ የሆነ ተጨባጭ ማስረጃን ስለማይጠቀም ትክክል አይደለም።"
+},
+
+{
+    question: "After collecting data to test a hypothesis, a researcher finds that the results do not support the initial hypothesis. What is the next logical step in the scientific research process?",
+    options: [
+        "Formulating a new hypothesis",
+        "Drawing conclusions based on the data",
+        "Reporting the results as they are",
+        "Ignoring the data and starting over",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "After collecting and analyzing the data, the researcher should draw conclusions based on what the evidence shows. If the results do not support the original hypothesis, the researcher concludes that the hypothesis was not supported. A new or revised hypothesis may be developed later based on these conclusions. Reporting the results is an important later step, while ignoring the data would violate scientific principles.",
+    amharicExplanation: "መረጃ ከተሰበሰበና ከተተነተነ በኋላ ተመራማሪው በተገኘው ማስረጃ ላይ ተመስርቶ ድምዳሜ ማድረግ አለበት። ውጤቱ የመጀመሪያውን መላምት ካልደገፈ፣ መላምቱ በዚያ ጥናት እንዳልተደገፈ ድምዳሜ ይደረሳል። ከዚያ በኋላ በተገኘው ውጤት መሰረት አዲስ ወይም የተሻሻለ መላምት ሊቀርብ ይችላል። ውጤቱን መዘገብ በኋላ የሚመጣ ደረጃ ነው፤ መረጃውን ችላ ማለት ግን የሳይንሳዊ ሂደትን ይጥሳል።"
+},
+
+{
+    question: "Which of the following statements best describes a theory in psychology?",
+    options: [
+        "A specific prediction about the relationship between variables.",
+        "A detailed description of a single experiment.",
+        "An integrated set of principles that explains and predicts observed phenomena.",
+        "A collection of anecdotal evidence about human behavior.",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "A theory is a broad and well-supported set of principles that organizes evidence and explains psychological phenomena. It can also be used to make predictions about future observations. Option A describes a hypothesis, which is a specific and testable prediction. Option B describes a single research study rather than a broad explanatory framework. Option D relies on personal stories rather than systematic scientific evidence.",
+    amharicExplanation: "ንድፈ-ሀሳብ (Theory) በብዙ ምልከታዎችና በሳይንሳዊ ማስረጃዎች የተደገፈ፣ የስነ-ልቦና ክስተቶችን የሚያብራራና ወደፊት ሊታዩ የሚችሉ ነገሮችን ለመተንበይ የሚያግዝ የተደራጀ የመርሆች ስብስብ ነው። A የሚገልጸው መላምት (Hypothesis) ነው። B የአንድን ሙከራ ዝርዝር መግለጫ እንጂ ሰፊ ንድፈ-ሀሳብ አይደለም። D ደግሞ በግል አጋጣሚዎች ላይ የተመሰረተ ስለሆነ በቂ ሳይንሳዊ ማስረጃ አይደለም።"
+},
+
+{
+    question: "Why is it important for researchers to report their results, even if the findings do not support their hypothesis?",
+    options: [
+        "To ensure they receive funding for future research.",
+        "To allow others to learn from their research and build upon it.",
+        "To prove that their initial hypothesis was incorrect.",
+        "To avoid repeating the same experiment.",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "Researchers should report their findings honestly, even when the results do not support their hypothesis. Science develops by sharing evidence, including unexpected or negative results. Other researchers can learn from these findings, improve theories, develop new hypotheses, and design better studies. Receiving funding is not the main scientific reason, proving the hypothesis wrong is not the purpose of science, and avoiding repetition is only one possible benefit.",
+    amharicExplanation: "ተመራማሪዎች የጥናታቸው ውጤት መላምታቸውን ባይደግፍም በታማኝነት ማሳወቅ አለባቸው። ሳይንስ የሚያድገው አዎንታዊም ሆነ ያልተጠበቀ ውጤት በመጋራት ነው። ሌሎች ተመራማሪዎች ከውጤቱ መማር፣ ነባር ንድፈ-ሀሳቦችን ማሻሻል፣ አዲስ መላምቶችን ማቅረብ እና የተሻሉ ጥናቶችን ማድረግ ይችላሉ። የገንዘብ ድጋፍ ማግኘት ዋናው ሳይንሳዊ ምክንያት አይደለም፣ መላምቱ ስህተት መሆኑን ማረጋገጥም የሳይንስ ዋና ዓላማ አይደለም።"
+},
+
+{
+    question: "A researcher observes children playing in a park to study their social interactions without interfering. Which of the following is a potential limitation of this research method?",
+    options: [
+        "The inability to collect data on a large number of subjects",
+        "The difficulty in controlling variables",
+        "The risk of observer effect and observer bias",
+        "The lack of detailed information about individual cases",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "This is an example of naturalistic observation, in which behavior is studied in a natural setting without directly interfering. A major limitation is observer bias, where the researcher may interpret behavior according to their expectations. There is also an observer effect, where people may change their behavior if they realize they are being observed. Naturalistic observation can involve many people, and it can provide useful behavioral information, although controlling variables is also difficult.",
+    amharicExplanation: "ይህ ጥናት ተፈጥሯዊ ምልከታ (Naturalistic Observation) ይባላል። በዚህ ዘዴ ሰዎች በተፈጥሯዊ አካባቢያቸው ሲሆኑ ባህሪያቸው ያለ ቀጥተኛ ጣልቃ ገብነት ይመለከታል። ዋና ችግሩ ተመራማሪው ባህሪውን በራሱ ግምት መሰረት ሊተረጉም የሚችልበት Observer Bias እና ሰዎች እየተመለከቱ መሆኑን ካወቁ ባህሪያቸውን ሊቀይሩ የሚችሉበት Observer Effect ነው። ተፈጥሯዊ ምልከታ ብዙ ሰዎችን በአንድ ጊዜ ለመመልከት ስለሚችል A ትክክል አይደለም።"
+},
+
+{
+    question: "A psychologist conducts an in-depth study of a single patient with a rare psychological disorder. Which of the following is a significant drawback of this research method?",
+    options: [
+        "It cannot provide detailed information about the individual",
+        "It is not useful for generating hypotheses",
+        "The findings cannot be generalized to the broader population",
+        "It requires a large sample size to be effective",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "An in-depth study of one individual is called a case study. Case studies provide very detailed information about an individual and can be especially useful when studying rare conditions. However, because the research focuses on one person or a very small number of people, the findings cannot easily be generalized to the broader population. Case studies can also help researchers generate new hypotheses.",
+    amharicExplanation: "በአንድ ግለሰብ ላይ በጥልቀት የሚደረግ ጥናት Case Study ይባላል። ይህ ዘዴ ስለ ግለሰቡ በጣም ዝርዝር መረጃ ይሰጣል፣ በተለይም ያልተለመዱ ሁኔታዎችን ለማጥናት ጠቃሚ ነው። ነገር ግን ጥናቱ በአንድ ሰው ወይም በጥቂት ሰዎች ላይ ብቻ ስለሚመሰረት፣ የተገኘውን ውጤት ለመላው ህዝብ ማጠቃለል (Generalize) አስቸጋሪ ነው። እንዲሁም Case Study አዳዲስ መላምቶችን ለማመንጨት ጠቃሚ ሊሆን ይችላል።"
+},
+
+{
+    question: "A researcher uses a survey to collect data from a large group of people about their eating habits. What is a critical factor to ensure the validity of the survey results?",
+    options: [
+        "The survey must include open-ended questions",
+        "The sample must be representative of the population",
+        "The survey must be conducted in a controlled environment",
+        "The survey must be administered by the researcher in person",
+        "None"
+    ],
+    answer: 1,
+    englishExplanation: "For survey results to accurately represent a larger population, the sample must be representative of that population. This means the selected participants should reflect important characteristics of the population being studied. Open-ended questions are not always necessary, surveys do not need to be conducted in a controlled laboratory environment, and the researcher does not have to administer the survey personally.",
+    amharicExplanation: "የSurvey ውጤት ለአጠቃላይ ህዝብ ትክክለኛ ውክልና እንዲኖረው የተመረጠው Sample የሚያጠናውን ህዝብ በትክክል የሚወክል Representative መሆን አለበት። ይህም ተመራማሪው የሚያጠናው ህዝብ ያለውን አስፈላጊ ባህሪ ናሙናውም እንዲያንጸባርቅ ማለት ነው። Open-ended questions የግድ አያስፈልጉም፣ Survey በቁጥጥር ስር ባለ ቦታ መካሄድ አያስፈልገውም፣ እንዲሁም ተመራማሪው በአካል መገኘት የግድ አይደለም።"
+},
+
+{
+    question: "A study finds a strong positive correlation between time spent studying and academic performance. Which of the following conclusions can be drawn from this finding?",
+    options: [
+        "Studying more causes better academic performance",
+        "Better academic performance causes students to study more",
+        "There is a relationship between studying time and academic performance, but causation cannot be determined",
+        "There is no relationship between studying time and academic performance",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "A strong positive correlation means that the two variables tend to increase together: students who spend more time studying tend to have better academic performance. However, correlation does not prove causation. Therefore, the study cannot determine whether studying causes better performance, whether better performance causes more studying, or whether another factor influences both.",
+    amharicExplanation: "ጠንካራ አዎንታዊ Correlation ማለት ሁለቱ ተለዋዋጮች በአንድ አቅጣጫ እንደሚለወጡ ማለት ነው። ለምሳሌ፣ ብዙ ጊዜ የሚያጠኑ ተማሪዎች የተሻለ የትምህርት ውጤት ሊኖራቸው ይችላል። ነገር ግን 'Correlation does not equal causation' ማለት ዝምድና መንስኤነትን አያረጋግጥም ማለት ነው። ስለዚህ ጥናቱ ብዙ ማጥናት የተሻለ ውጤትን እንደሚያመጣ ወይም የተሻለ ውጤት ብዙ እንዲያጠኑ እንደሚያደርግ በቀጥታ ማረጋገጥ አይችልም።"
+},
+
+{
+    question: "In an experiment studying the effect of sleep on memory retention, participants are randomly assigned to either a sleep-deprived group or a well-rested group. What is the independent variable in this experiment?",
+    options: [
+        "The amount of sleep participants get",
+        "The memory retention scores of participants",
+        "The random assignment of participants to groups",
+        "The number of participants in the study",
+        "None"
+    ],
+    answer: 0,
+    englishExplanation: "The independent variable is the factor that the researcher manipulates or controls to examine its effect on another variable. In this experiment, the researcher changes the amount of sleep participants receive by assigning them to a sleep-deprived or well-rested condition. The memory retention score is the dependent variable because it is the outcome being measured. Random assignment is a research procedure, not a variable, and the number of participants is a sample characteristic.",
+    amharicExplanation: "ነፃ ተለዋዋጭ (Independent Variable) ማለት ተመራማሪው በሙከራው ውስጥ የሚቀይረው ወይም የሚቆጣጠረው ነገር ሲሆን በሌላ ተለዋዋጭ ላይ ያለውን ተፅዕኖ ለማየት ይጠቀምበታል። በዚህ ሙከራ ተመራማሪው የተሳታፊዎችን የእንቅልፍ መጠን በመቀየር እንቅልፍ ያጡ እና በቂ እንቅልፍ ያገኙ ቡድኖችን ይፈጥራል። የMemory Retention Score ደግሞ የሚለካው ውጤት ስለሆነ Dependent Variable ነው። Random Assignment የጥናት ሂደት ነው እንጂ Variable አይደለም፣ የተሳታፊዎች ቁጥርም የናሙና ባህሪ ነው።"
+},
+
+{
+    question: "Analytic introspection, a procedure aimed at analyzing complex mental experiences, was used by psychologists adhering to which school of psychology?",
+    options: [
+        "Gestalt psychology",
+        "Psychoanalysis",
+        "Structuralism",
+        "Functionalism",
+        "None"
+    ],
+    answer: 2,
+    englishExplanation: "Structuralism used analytic introspection to study conscious mental experiences by breaking them down into basic elements such as sensations and feelings. Wilhelm Wundt and Edward Titchener are strongly associated with the development of structuralist psychology. Gestalt psychology emphasized the whole rather than breaking experience into separate parts. Psychoanalysis focused mainly on unconscious processes, while functionalism focused on the purpose and function of mental and behavioral processes.",
+    amharicExplanation: "ስትራክቸራሊዝም (Structuralism) የሰውን ንቁ የአእምሮ ልምድ ወደ መሰረታዊ ክፍሎች በመከፋፈል ለመረዳት Analytic Introspection የተባለውን የራስ-ምልከታ ዘዴ ይጠቀም ነበር። Wilhelm Wundt እና Edward Titchener ከStructuralism እድገት ጋር በጣም የተያያዙ ምሁራን ናቸው። Gestalt Psychology አእምሮአዊ ልምድን በክፍል ከመከፋፈል ይልቅ እንደ ሙሉ ነገር ማየትን ያጎላል። Psychoanalysis በዋናነት ባልነቃው አእምሮ (Unconscious Mind) ላይ ያተኩራል፣ Functionalism ደግሞ የአእምሮና የባህሪ ሂደቶችን ዓላማና ተግባር ያጠናል።"
+}, {     question: "1. According to the law of closure, elements that are closer are grouped together.",
     options: [
         "True",
         "False"
