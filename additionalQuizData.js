@@ -1260,7 +1260,318 @@ quizData["global-trends"]["3"] = [  {
         answer: 3,
         englishExplanation: "The correct answer is 'It encourages the concept of competitive advantage.' Classical Economic Liberalism supports free markets, free trade, and Comparative Advantage. Comparative Advantage explains why countries benefit by specializing in goods they can produce relatively efficiently and trading freely. Competitive Advantage is a different concept that is mainly associated with business strategy and competition between firms, rather than being a core principle of classical economic Liberalism.",
         amharicExplanation: "ትክክለኛው መልስ 'It encourages the concept of competitive advantage' ነው። የኢኮኖሚ ሊበራሊዝም ነፃ ገበያን፣ ነፃ ንግድን እና Comparative Advantage የሚባለውን መርህ ይደግፋል። Comparative Advantage አገራት በአንጻራዊ ብቃታቸው ወይም ዝቅተኛ የእድል ዋጋ ባላቸው ምርቶች ላይ በማተኮር በነፃነት ሲነግዱ እንደሚጠቀሙ ያብራራል። Competitive Advantage ግን በተለይ ከንግድ ስራ ስትራቴጂ እና ከኩባንያዎች ውድድር ጋር የሚያያዝ ጽንሰ ሀሳብ ነው።"
-    }];
+    },{
+    question: "Which one is the youngest theoretical perspective of the IPE?",
+    options: [
+        "Classical Liberalism",
+        "Mercantilism",
+        "Liberalism",
+        "Marxism"
+    ],
+    answer: 3,
+    englishExplanation: "Marxism is the youngest among the three classical theoretical perspectives of International Political Economy. Mercantilism developed first during the early modern period, Liberalism developed mainly during the 18th century, and Marxism emerged in the 19th century through the ideas of Karl Marx and Friedrich Engels. Marxism developed as a critical response to capitalism and focused strongly on class conflict and economic inequality.",
+    amharicExplanation: "ማርክሲዝም በዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ (IPE) ውስጥ ከሚታወቁት ዋና ዋና የንድፈ-ሀሳብ አቀራረቦች መካከል በዕድሜ ትንሹ ነው። ሜርካንቲሊዝም በቀደመው ዘመናዊ ዘመን ተነስቷል፣ ሊበራሊዝም በዋናነት በ18ኛው ክፍለ ዘመን ተዳብሯል፣ ማርክሲዝም ግን በ19ኛው ክፍለ ዘመን በካርል ማርክስ እና ፍሬድሪክ ኤንግልስ ሀሳቦች ተቀርጾ ብቅ አለ። ማርክሲዝም በተለይ የካፒታሊዝምን ችግሮች፣ የመደብ ትግልን እና የኢኮኖሚ እኩልነትን ያጠናል።"
+},
+{
+    question: "Among the following, which one refers to the price of one national currency in terms of another?",
+    options: [
+        "Credit system",
+        "Fixed-rate system",
+        "An exchange rate",
+        "Floating-rate system"
+    ],
+    answer: 2,
+    englishExplanation: "An exchange rate is the price or value of one country's currency expressed in terms of another country's currency. For example, if 1 US dollar can be exchanged for a certain amount of Ethiopian Birr, that amount represents the exchange rate. A credit system concerns borrowing and lending, while fixed-rate and floating-rate systems are different methods of managing exchange rates.",
+    amharicExplanation: "የምንዛሬ ተመን (Exchange rate) ማለት የአንድ ሀገር ገንዘብ በሌላ ሀገር ገንዘብ ሲለካ ያለው ዋጋ ነው። ለምሳሌ፣ 1 የአሜሪካ ዶላር በምን ያህል የኢትዮጵያ ብር እንደሚለወጥ የሚያሳየው የምንዛሬ ተመን ነው። Credit system ከብድር እና ከአበዳሪነት ጋር የተያያዘ ነው፤ Fixed-rate እና Floating-rate ደግሞ የምንዛሬ ተመንን ለማስተዳደር የሚጠቅሙ የስርዓት አይነቶች ናቸው።"
+},
+{
+    question: "Which one is incorrect about the American National economic system?",
+    options: [
+        "The primary purpose of economic activity is to benefit consumers while maximizing wealth creation & distribution of that wealth is secondary.",
+        "American economists support the strong role of government in the economy to protect the consumer.",
+        "It relates to the neoclassical model of a competitive market economy in which individuals are assumed to maximize their own private interests.",
+        "Almost any economic activity is permitted unless explicitly forbidden."
+    ],
+    answer: 1,
+    englishExplanation: "The question asks for the incorrect statement. The American market-oriented economic system generally emphasizes free markets, individual initiative, competition, and relatively limited government intervention. Therefore, the statement that American economists support a strong government role in the economy as a general principle is incorrect. The other statements are consistent with the characteristics of the American market-oriented economic model.",
+    amharicExplanation: "ጥያቄው ስለ አሜሪካ ብሔራዊ የኢኮኖሚ ስርዓት ስህተት የሆነውን መግለጫ ይጠይቃል። የአሜሪካ ገበያ-ተኮር የኢኮኖሚ ስርዓት በነፃ ገበያ፣ በግለሰብ ተነሳሽነት፣ በውድድር እና በአነስተኛ የመንግስት ጣልቃ ገብነት ላይ ያተኩራል። ስለዚህ የአሜሪካ ኢኮኖሚስቶች በአጠቃላይ መንግስት በኢኮኖሚው ውስጥ ጠንካራ ሚና እንዲኖረው ይደግፋሉ የሚለው መግለጫ ስህተት ነው። ሌሎቹ መግለጫዎች የአሜሪካን ገበያ-ተኮር የኢኮኖሚ ሞዴል ባህሪያት ያሳያሉ።"
+},
+{
+    question: "Which statement is not the idea of Hegemonic Stability Theory?",
+    options: [
+        "It influenced the establishment of the Bretton Woods institutions (IMF and WB).",
+        "It is a hybrid theory containing elements of mercantilism, liberalism, and even Marxism.",
+        "It advocates for the strong role of the state in the process of structural transformation.",
+        "The root cause of the world in the Great Depression of the 1920s and 1930s was the absence of a benevolent hegemon."
+    ],
+    answer: 2,
+    englishExplanation: "The statement that does not describe Hegemonic Stability Theory is C. Hegemonic Stability Theory argues that a dominant or hegemonic country can help create and maintain stability in the international economic system by providing important international public goods and supporting rules and institutions. In contrast, the idea that the state should play a strong role in structural economic transformation is mainly associated with the Developmental State Approach.",
+    amharicExplanation: "የሄጅሞኒክ ስታቢሊቲ ቲዎሪ (Hegemonic Stability Theory) ያልሆነው መግለጫ C ነው። ይህ ቲዎሪ አንድ ኃያል ወይም መሪ ሀገር በዓለም አቀፍ ኢኮኖሚ ውስጥ መረጋጋትን ለመፍጠርና ለመጠበቅ የሚኖረውን ሚና ያብራራል። እንዲሁም ዓለም አቀፍ ህጎችን፣ ተቋማትን እና የጋራ ጥቅሞችን ለመደገፍ የመሪ ሀገር አስፈላጊነትን ያሳያል። በአንፃሩ መንግስት በመዋቅራዊ የኢኮኖሚ ለውጥ ውስጥ ጠንካራ ሚና ሊኖረው ይገባል የሚለው በዋናነት የDevelopmental State Approach ሀሳብ ነው።"
+},
+{
+    question: "Which one of the following is correct about cross-border/international trade?",
+    options: [
+        "It is mediated by at least two different national governments.",
+        "Each of them has their own set of interests and concerns.",
+        "They have authority and control over its national borders.",
+        "All"
+    ],
+    answer: 3,
+    englishExplanation: "All of the statements are correct. International or cross-border trade involves transactions between parties located in different countries and therefore involves different national jurisdictions. Each country has its own interests and concerns, and each government has legal authority to regulate activities crossing its national borders through rules, tariffs, customs procedures, and other regulations. Therefore, All is the best answer.",
+    amharicExplanation: "ሁሉም መግለጫዎች ትክክል ስለሆኑ D (All) ትክክለኛው መልስ ነው። ዓለም አቀፍ ወይም ድንበር-ተሻጋሪ ንግድ በተለያዩ ሀገራት መካከል ስለሚከናወን የተለያዩ የሀገራት ህጋዊ ስርዓቶችን ያካትታል። እያንዳንዱ ሀገር የራሱ ጥቅምና ስጋት አለው፣ እንዲሁም መንግስት በሀገሩ ድንበር ላይ የሚገቡና የሚወጡ እቃዎችን በጉምሩክ፣ በታሪፍ እና በሌሎች የንግድ ህጎች ለመቆጣጠር ስልጣን አለው። ስለዚህ D (All) ትክክለኛ ነው።"
+},
+{
+    question: "From the given alternatives, which one is false about the concepts of International Political Economy?",
+    options: [
+        "There is no universal agreement on how IPE should be defined.",
+        "The definitions tell us what to include in our analysis.",
+        "International political economy is considered the existence of GOS within the global economy.",
+        "All"
+    ],
+    answer: 2,
+    englishExplanation: "Statement C is false. International Political Economy is the study of the interaction between politics and economics at the international or global level, especially the relationship between states, markets, institutions, and other actors. The phrase 'existence of GOS within the global economy' does not correctly define IPE. Statement A is correct because there is no universal agreement on one definition of IPE, and statement B is correct because definitions help determine what should be included in an analysis.",
+    amharicExplanation: "C የሆነው መግለጫ ሀሰት ነው። ዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ (IPE) በዓለም አቀፍ ደረጃ በፖለቲካ እና በኢኮኖሚ መካከል ያለውን መስተጋብር የሚያጠና ዘርፍ ነው። በተለይም በመንግስታት፣ በገበያዎች፣ በዓለም አቀፍ ተቋማት እና በሌሎች ተዋናዮች መካከል ያለውን ግንኙነት ያጠናል። 'GOS በዓለም አቀፍ ኢኮኖሚ ውስጥ መኖር' የሚለው የ IPE ትክክለኛ ትርጉም አይደለም። A ትክክል ነው ምክንያቱም IPE እንዴት መተርጎም እንዳለበት ላይ ሁሉም ምሁራን አንድ ዓይነት ስምምነት የላቸውም፤ B ደግሞ ትክክል ነው ምክንያቱም ብያኔዎች በትንተና ውስጥ ምን እንደሚካተት ለመወሰን ይረዳሉ።"
+},
+{
+    question: "Which did not represent the Liberalism Paradigm?",
+    options: [
+        "Trade barriers are needed to the movement of goods and services among countries.",
+        "It is a mainstream perspective in IPE.",
+        "It defends the idea of free market system.",
+        "It advocates free trade which reduces prices, raises the standard of living."
+    ],
+    answer: 0,
+    englishExplanation: "A does not represent the Liberalism paradigm. Liberalism supports the free movement of goods and services and generally favors reducing or removing trade barriers such as tariffs and quotas. Liberalism is a major perspective in IPE and supports the free market and free trade because these are expected to increase economic efficiency, reduce prices, and improve living standards. Therefore, the statement that trade barriers are needed contradicts Liberalism.",
+    amharicExplanation: "A የሊበራሊዝምን አቀራረብ አይወክልም። ሊበራሊዝም የእቃዎችና የአገልግሎቶች ነፃ እንቅስቃሴን ይደግፋል፤ ስለዚህ እንደ ታሪፍና ኮታ ያሉ የንግድ መሰናክሎች እንዲቀነሱ ወይም እንዲወገዱ ይደግፋል። ሊበራሊዝም በ IPE ውስጥ ዋና አቀራረብ ሲሆን ነፃ ገበያንና ነፃ ንግድን ይደግፋል። ነፃ ንግድ የምርት ዋጋን ሊቀንስ፣ የኢኮኖሚ ብቃትን ሊያሳድግ እና የኑሮ ደረጃን ሊያሻሽል እንደሚችል ይታመናል። ስለዚህ 'የንግድ መሰናክሎች ያስፈልጋሉ' የሚለው ከሊበራሊዝም ጋር ይቃረናል።"
+},
+{
+    question: "Which statement is incorrect?",
+    options: [
+        "Individuals engage in self-interested activities, and the state undertakes collective action.",
+        "There is a clear-cut distinction between economic (market-based activities) and political/state-centered ones.",
+        "States and markets have often friendly relationships.",
+        "States and markets relate to one another in fundamentally adversarial ways."
+    ],
+    answer: 2,
+    englishExplanation: "Statement C is the incorrect statement. In International Political Economy, the relationship between states and markets is not simply described as consistently friendly. States are concerned with political authority, national interests, and regulation, while markets are concerned with economic exchange, efficiency, and the movement of goods and capital. Their interests can cooperate in some situations but can also conflict, so describing their relationship as often friendly is not the intended characterization in this question.",
+    amharicExplanation: "C የሆነው መግለጫ ስህተት ነው። በዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ ውስጥ በመንግስታት እና በገበያዎች መካከል ያለው ግንኙነት ሁልጊዜ ወዳጃዊ ነው ተብሎ አይገለጽም። መንግስታት በፖለቲካዊ ስልጣን፣ በብሔራዊ ጥቅም እና በቁጥጥር ላይ ያተኩራሉ፤ ገበያዎች ደግሞ በኢኮኖሚ ልውውጥ፣ በብቃት እና በእቃና በካፒታል እንቅስቃሴ ላይ ያተኩራሉ። በአንዳንድ ጊዜ ሊተባበሩ ቢችሉም በሌሎች ጊዜያት ጥቅማቸው ሊጋጭ ይችላል። ስለዚህ 'መንግስታት እና ገበያዎች ብዙውን ጊዜ ወዳጃዊ ግንኙነት አላቸው' የሚለው C ስህተት ነው።"
+},
+{
+    question: "Among the following, which one deals with how scarce resources are distributed among individuals, groups, and nation-states?",
+    options: [
+        "International dimensions",
+        "Political dimensions",
+        "Economic dimensions",
+        "Military dimensions"
+    ],
+    answer: 2,
+    englishExplanation: "The economic dimension deals with how scarce resources are allocated and distributed among individuals, groups, organizations, and nation-states. Economics studies how limited resources are used to satisfy different needs and wants. In IPE, the economic dimension therefore focuses on issues such as production, trade, distribution, wealth, and the allocation of scarce resources.",
+    amharicExplanation: "የኢኮኖሚ ዘርፍ (Economic dimensions) እጥረት ያለባቸው ሀብቶች በግለሰቦች፣ በቡድኖች፣ በድርጅቶች እና በሀገራት መካከል እንዴት እንደሚመደቡና እንደሚከፋፈሉ የሚያጠና ነው። ኢኮኖሚክስ ውስን የሆኑ ሀብቶችን ብዙ የሰው ፍላጎቶችን ለማርካት እንዴት መጠቀም እንደሚገባ ያጠናል። በ IPE ውስጥም የኢኮኖሚ ዘርፍ ምርትን፣ ንግድን፣ ሀብትን እና ውስን ሀብቶችን ማከፋፈልን ይመለከታል።"
+},{
+    question: "Defining International Political Economy is simple or straightforward as one might expect and universally agreed on how it should be defined.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation: "The correct answer is False. Defining International Political Economy (IPE) is not simple, straightforward, or universally agreed upon. IPE is an interdisciplinary field that examines the relationship between politics and economics at both national and international levels. Different schools of thought, such as Liberalism, Mercantilism, Marxism, and Structuralism, have different views about its meaning, scope, actors, and major issues. Therefore, there is no single definition of IPE that all scholars universally agree on.",
+    amharicExplanation: "ትክክለኛው መልስ False (ሀሰት) ነው። የዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ (IPE) ትርጉም ቀላል፣ ቀጥተኛ ወይም በሁሉም ምሁራን የተስማማበት አይደለም። IPE ፖለቲካን እና ኢኮኖሚን በሀገር ውስጥና በዓለም አቀፍ ደረጃ የሚያጠና ሁለገብ የጥናት ዘርፍ ነው። ሊበራሊዝም፣ ሜርካንቲሊዝም፣ ማርክሲዝም እና ስትራክቸራሊዝም ያሉ የተለያዩ ንድፈ-ሀሳቦች IPEን በተለያየ መንገድ ይገልጻሉ። ስለዚህ IPE ምን እንደሆነ ሁሉም ምሁራን የሚስማሙበት አንድ ብቻ ትርጉም የለም።"
+},
+
+{
+    question: "Mercantilism theory suggests that having one strong country taking up responsibility for stabilizing world economies and preventing future economic crises.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation: "The correct answer is False. The idea that one powerful country is responsible for stabilizing the world economy is known as Hegemonic Stability Theory, not Mercantilism. Mercantilism focuses on the power, wealth, security, and economic independence of individual states. It supports government intervention, protectionism, and policies designed to strengthen a country's position compared with other countries.",
+    amharicExplanation: "ትክክለኛው መልስ False (ሀሰት) ነው። አንድ ኃያል ሀገር የዓለምን ኢኮኖሚ የማረጋጋት እና የወደፊት የኢኮኖሚ ቀውሶችን የመከላከል ኃላፊነት አለባት የሚለው ሀሳብ Hegemonic Stability Theory ይባላል፤ ሜርካንቲሊዝም አይደለም። ሜርካንቲሊዝም በእያንዳንዱ ሀገር ሀብት፣ ኃይል፣ ደህንነት እና ኢኮኖሚያዊ ነፃነት ላይ ያተኩራል። በተጨማሪም የመንግስት ጣልቃ ገብነትን፣ የንግድ ከለላን እና የሀገርን ኃይል ለማጠናከር የሚደረጉ ፖሊሲዎችን ይደግፋል።"
+},
+
+{
+    question: "German political economy system is thus closer to the Japanese than to the American system of collective capitalism.",
+    options: ["True", "False"],
+    answer: 1,
+    englishExplanation: "The correct answer is False. Germany's Social Market Economy combines market competition with strong social protections and government regulation. Although Germany has some similarities with Japan, its economic system is not simply closer to Japan's collective capitalism. Germany maintains an important role for market mechanisms while also providing social welfare and regulatory institutions. Therefore, the statement that the German system is closer to the Japanese than to the American system is considered false in this context.",
+    amharicExplanation: "ትክክለኛው መልስ False (ሀሰት) ነው። የጀርመን Social Market Economy የገበያ ውድድርን ከጠንካራ ማህበራዊ ጥበቃ እና የመንግስት ደንብ ጋር ያጣምራል። ጀርመን ከጃፓን ጋር አንዳንድ ተመሳሳይነቶች ቢኖሯትም፣ ስርዓቷ በቀጥታ ከጃፓን የcollective capitalism ስርዓት ጋር አይመሳሰልም። ጀርመን ለገበያ አሰራር ትልቅ ቦታ ትሰጣለች፣ እንዲሁም ጠንካራ የማህበራዊ ደህንነትና የህግ ተቋማት አሏት። ስለዚህ የጀርመን ስርዓት ከጃፓን የበለጠ ቅርብ ነው የሚለው መግለጫ ሀሰት ነው።"
+},
+
+{
+    question: "Which one of the following statements is incorrect about liberal political economists?",
+    options: ["Removing barriers to the free movement of goods and services among countries.", "Laissez-faire", "Non-interference of the government in commercial affairs.", "Rejecting the ideas of free trade."],
+    answer: 3,
+    englishExplanation: "The correct answer is D, Rejecting the ideas of free trade. Liberal political economists support free trade, open markets, and the free movement of goods and services between countries. They also support laissez-faire and limited government interference in commercial activities. Therefore, rejecting free trade is contrary to the main ideas of economic liberalism and is the incorrect statement.",
+    amharicExplanation: "ትክክለኛው መልስ D ነው። ሊበራል የፖለቲካ ኢኮኖሚ አራማጆች ነፃ ንግድን፣ ክፍት ገበያን እና ዕቃዎችና አገልግሎቶች በሀገራት መካከል በነፃ እንዲንቀሳቀሱ ይደግፋሉ። በተጨማሪም Laissez-faire እና የመንግስት በንግድ ጉዳዮች ላይ ውስን ጣልቃ ገብነትን ይደግፋሉ። ስለዚህ ነፃ ንግድን መቃወም ከሊበራሊዝም ዋና መርሆች ጋር የሚቃረን ስለሆነ D ስህተቱ የሆነው መግለጫ ነው።"
+},
+
+{
+    question: "Which one of the following statements is true about Marxism theoretical perspectives?",
+    options: ["The class struggle between oppressor and the oppressed.", "Political goals should govern economic policy.", "They advocate using state power to build its economic strength.", "They believe that the international economy is a zero-sum game."],
+    answer: 0,
+    englishExplanation: "The correct answer is A, The class struggle between oppressor and the oppressed. Marxist theory emphasizes class struggle as a central feature of society. It focuses on the conflict between the bourgeoisie, who control capital and production, and the proletariat, who work for them. The other options are more closely associated with Mercantilist or Realist approaches, especially the emphasis on state power and viewing international economic relations as a zero-sum competition.",
+    amharicExplanation: "ትክክለኛው መልስ A ነው። የማርክሲዝም ንድፈ-ሀሳብ ዋና ትኩረቱ የመደብ ትግል (class struggle) ነው። በተለይም ካፒታልና የምርት መሳሪያዎችን በሚቆጣጠሩት ቡርዥዋ (bourgeoisie) እና ለእነሱ በሚሰሩት ፕሮሌታሪያት (proletariat) መካከል ያለውን ግጭት ያብራራል። B፣ C እና D ደግሞ ከሜርካንቲሊዝም ወይም ከሪያሊዝም እይታ ጋር የበለጠ ይዛመዳሉ፤ በተለይም የመንግስት ኃይልን እና ዓለም አቀፍ ኢኮኖሚን እንደ zero-sum ውድድር መመልከትን።"
+},
+
+{
+    question: "Which theoretical perspective of IPE develops the ideas of the free market?",
+    options: ["Man theory", "Liberalist theory", "Mercantilist theory", "Realist theory"],
+    answer: 1,
+    englishExplanation: "The correct answer is B, Liberalist theory. Liberalist theory supports the free market, free trade, competition, and limited government intervention in economic activities. Classical economists such as Adam Smith and David Ricardo contributed important ideas to this perspective, including the benefits of specialization and comparative advantage. Mercantilist and Realist approaches place greater emphasis on state power and national interests.",
+    amharicExplanation: "ትክክለኛው መልስ B ነው። የሊበራሊስት ንድፈ-ሀሳብ (Liberalist theory) የነፃ ገበያን፣ ነፃ ንግድን፣ ውድድርን እና የመንግስት ውስን ጣልቃ ገብነትን ይደግፋል። እንደ Adam Smith እና David Ricardo ያሉ የክላሲካል ኢኮኖሚስቶች ለዚህ እይታ አስፈላጊ ሀሳቦችን አበርክተዋል። ሜርካንቲሊዝም እና ሪያሊዝም ግን የመንግስት ኃይልን እና የሀገር ጥቅምን የበለጠ ያጎላሉ።"
+},
+
+{
+    question: "Which statement is correct about the Developmental State Approach?",
+    options: ["They argued that the EDCs follow policies designed to keep LDCs dependent.", "They considered the state as the instrument of the dominant class.", "The state intervenes and guides the direction and pace of economic development.", "They maximize state power to secure state interests."],
+    answer: 2,
+    englishExplanation: "The correct answer is C, The state intervenes and guides the direction and pace of economic development. The Developmental State Approach argues that the government should play an active role in promoting economic development. It can guide industries, support investment, develop infrastructure, and use policies to accelerate economic growth. Option A is associated with Dependency Theory, B with Marxism, and D more closely with Mercantilism or Realism.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። የልማታዊ መንግስት (Developmental State) አቀራረብ መንግስት በኢኮኖሚ ልማት ውስጥ ንቁ ሚና መጫወት አለበት ይላል። መንግስት ኢንዱስትሪዎችን ሊመራ፣ ኢንቨስትመንትን ሊደግፍ፣ መሰረተ ልማትን ሊያሻሽል እና የኢኮኖሚ ዕድገትን ለማፋጠን የተለያዩ ፖሊሲዎችን ሊጠቀም ይችላል። A ከDependency Theory፣ B ከMarxism፣ እና D በተለይ ከMercantilism ወይም Realism ጋር የበለጠ ይዛመዳሉ።"
+},
+
+{
+    question: "Of the following, one does not explain Structuralism:",
+    options: ["The perspective is also known as the Prebisch-Singer thesis.", "It advocates for a new pattern of development based on industrialization via import substitution based on protectionist policies.", "The relationship between the Global North and the Global South resulted in an unequal trade and investment exchange.", "Refers to a state that intervenes and guides the direction and speed of economic development."],
+    answer: 3,
+    englishExplanation: "The correct answer is D. The statement about a state intervening and guiding the direction and pace of economic development describes the Developmental State Approach, not Structuralism. Structuralism is associated with the Prebisch-Singer thesis, import substitution industrialization, protectionist policies, and criticism of unequal economic relations between the Global North and Global South. Therefore, D does not explain Structuralism.",
+    amharicExplanation: "ትክክለኛው መልስ D ነው። D የሚገልጸው መንግስት ጣልቃ በመግባት የኢኮኖሚ ልማትን አቅጣጫና ፍጥነት ይመራል የሚለውን ሲሆን፣ ይህ የDevelopmental State Approach መግለጫ ነው እንጂ የStructuralism አይደለም። Structuralism ከPrebisch-Singer thesis፣ ከimport substitution industrialization፣ ከprotectionist policies እና በGlobal North እና Global South መካከል ስላለው ያልእኩል የንግድና የኢንቨስትመንት ግንኙነት ትችት ጋር ይያያዛል። ስለዚህ D Structuralismን አይገልጽም።"
+},
+
+{
+    question: "An international organization which sets the rules for global trade is known as:",
+    options: ["International Monetary Fund", "World Bank", "World Trade Organization", "Global or Regional Free Trade Agreements"],
+    answer: 2,
+    englishExplanation: "The correct answer is C, World Trade Organization. The World Trade Organization (WTO) is the international organization responsible for establishing and administering rules for international trade between countries. It provides a framework for trade negotiations and helps resolve trade disputes. The IMF focuses mainly on international monetary stability, while the World Bank focuses mainly on development and poverty reduction. Free Trade Agreements are agreements between countries, not a single global organization.",
+    amharicExplanation: "ትክክለኛው መልስ C ነው። World Trade Organization (WTO) በሀገራት መካከል ለሚካሄደው ዓለም አቀፍ ንግድ ህጎችንና ደንቦችን የሚያዘጋጅ እና የሚያስተዳድር ዓለም አቀፍ ድርጅት ነው። WTO ለንግድ ድርድር ማዕቀፍ ያቀርባል እና የንግድ ክርክሮችን ለመፍታት ይረዳል። IMF በዋናነት በዓለም አቀፍ የገንዘብ መረጋጋት ላይ ያተኩራል፣ World Bank ደግሞ በልማትና በድህነት ቅነሳ ላይ ያተኩራል። Free Trade Agreements ደግሞ በሀገራት መካከል የሚደረጉ ስምምነቶች ናቸው እንጂ አንድ ዓለም አቀፍ ድርጅት አይደሉም።"
+},
+
+{
+    question: "From the members of the International Monetary Fund, who owns the majority voting right?",
+    options: ["Russia", "UK", "Germany", "USA"],
+    answer: 3,
+    englishExplanation: "The correct answer is D, USA. IMF voting power is largely determined by each country's quota. The United States has the largest individual quota and therefore the largest voting share among IMF members. Its voting share is large enough to give it an important influence over major decisions that require a special majority. Russia, the UK, and Germany have smaller individual voting shares than the United States.",
+    amharicExplanation: "ትክክለኛው መልስ D ነው። በIMF ውስጥ የአንድ ሀገር የድምፅ ኃይል በአብዛኛው ከሀገሪቱ quota ጋር ይያያዛል። አሜሪካ (USA) ከIMF አባል ሀገራት መካከል ትልቁን የquota ድርሻ ስላላት ትልቁን የድምፅ ድርሻም ትይዛለች። ይህም በልዩ ከፍተኛ የድምፅ ብዛት የሚወሰኑ አስፈላጊ የIMF ውሳኔዎች ላይ ትልቅ ተፅዕኖ ይሰጣታል። ሩሲያ፣ UK እና ጀርመን ከአሜሪካ ያነሰ የድምፅ ድርሻ አላቸው።"
+},{
+    question: "Which approach to IPE considers free trade to be the best means of enhancing economic security?",
+    options: [
+        "Economic liberalism",
+        "Mercantilism",
+        "Marxism",
+        "Dependency Theory"
+    ],
+    answer: 0,
+    englishExplanation: "Economic liberalism considers free trade and open markets to be the best means of enhancing economic security. It argues that free trade increases economic interdependence, promotes mutual benefits, and allows countries to gain from international exchange. Mercantilism emphasizes protectionism and self-sufficiency; Marxism criticizes free trade under capitalism as a source of exploitation; and Dependency Theory argues that unrestricted trade can increase the dependence of developing countries on richer countries.",
+    amharicExplanation: "ትክክለኛው መልስ Economic liberalism ነው። ኢኮኖሚክ ሊበራሊዝም ነፃ ንግድና ክፍት ገበያ በሀገራት መካከል የኢኮኖሚ ትስስርን በማጠናከር የጋራ ጥቅምንና የኢኮኖሚ ደህንነትን ያሳድጋል ብሎ ያምናል። Mercantilism በተቃራኒው የንግድ ከለላንና የሀገር ውስጥ ራስን መቻልን ያበረታታል፤ Marxism ደግሞ በካፒታሊዝም ስር ያለውን ነፃ ንግድ እንደ ብዝበዛ ሊመለከት ይችላል፤ Dependency Theory ደግሞ ነፃ ንግድ ታዳጊ ሀገራትን በበለፀጉ ሀገራት ላይ ጥገኛ ሊያደርግ ይችላል ይላል።"
+},
+
+{
+    question: "Which of these global economic organisations was created at the 1944 Bretton Woods Conference?",
+    options: [
+        "The International Monetary Fund (IMF)",
+        "The World Trade Organization (WTO)",
+        "The International Trade Organization (ITO)",
+        "The Organization for Economic Cooperation and Development (OECD)"
+    ],
+    answer: 0,
+    englishExplanation: "The International Monetary Fund (IMF) was created as part of the Bretton Woods system established at the 1944 Bretton Woods Conference. The IMF was designed to promote international monetary cooperation and financial stability. The WTO was established in 1995, the ITO was proposed after the war but never came into operation, and the OECD was established in 1961.",
+    amharicExplanation: "ትክክለኛው መልስ The International Monetary Fund (IMF) ነው። IMF በ1944 በተካሄደው የBretton Woods ጉባኤ የተመሰረተው የዓለም አቀፍ የገንዘብ ስርዓትንና የፋይናንስ መረጋጋትን ለማጠናከር ነው። WTO በ1995 ተመስርቷል፤ ITO የታቀደ ቢሆንም በተግባር አልተመሰረተም፤ OECD ደግሞ በ1961 ተቋቋመ።"
+},
+
+{
+    question: "For scholars intent on consolidating the field of IPE the main task is to:",
+    options: [
+        "Integrate cultural studies approaches",
+        "Build upon agreed theoretical approaches and problems",
+        "Challenge existing theoretical and epistemological approaches",
+        "Discover new topics to explore"
+    ],
+    answer: 1,
+    englishExplanation: "Building upon agreed theoretical approaches and problems is the best way to consolidate the field of International Political Economy (IPE). Consolidation means strengthening the existing theoretical foundation, developing established ideas, and building further research around important shared problems. Integrating cultural studies or discovering new topics can expand the field, while constantly challenging its existing foundations may make the field less unified.",
+    amharicExplanation: "ትክክለኛው መልስ Build upon agreed theoretical approaches and problems ነው። የIPE የጥናት ዘርፍን ለማጠናከር ቀድሞ የተቀመጡ የንድፈ ሀሳብ አቀራረቦችንና ዋና ዋና ችግሮችን መነሻ በማድረግ ማሳደግ ያስፈልጋል። ይህ የመስኩን የንድፈ ሀሳብ መሰረት ያጠናክራል። የባህል ጥናቶችን ማካተት ወይም አዳዲስ ርዕሶችን መፈለግ መስኩን ሊያስፋፋ ይችላል፣ ነገር ግን የIPE መሰረታዊ ንድፈ ሀሳብን በቀጥታ አያጠናክርም።"
+},
+
+{
+    question: "The field of international political economy:",
+    options: [
+        "Examines the relationship between national and international politics",
+        "Examines the relationship between economics and politics",
+        "Draws upon disciplines such as history, political science, economics, and sociology",
+        "All of the above"
+    ],
+    answer: 3,
+    englishExplanation: "All of the above is correct because International Political Economy (IPE) is an interdisciplinary field. It examines the relationship between domestic and international politics, studies how politics and economics influence each other, and uses ideas and methods from disciplines such as history, political science, economics, and sociology.",
+    amharicExplanation: "ትክክለኛው መልስ All of the above ነው። የዓለም አቀፍ ፖለቲካዊ ኢኮኖሚ (IPE) ሁለገብ (interdisciplinary) የጥናት ዘርፍ ነው። በሀገር ውስጥና በዓለም አቀፍ ፖለቲካ መካከል ያለውን ግንኙነት፣ በፖለቲካና በኢኮኖሚ መካከል ያለውን ተፅዕኖ ያጠናል። በተጨማሪም ከታሪክ፣ ከፖለቲካ ሳይንስ፣ ከኢኮኖሚክስ እና ከሶሺዮሎጂ የሚመጡ እውቀቶችን ይጠቀማል።"
+},
+
+{
+    question: "What is the main role of the IMF?",
+    options: [
+        "To ensure a stable exchange rate regime and provide emergency assistance to countries facing crises in balance of payments.",
+        "To be a forum for trade and liberalization.",
+        "To assist countries in development.",
+        "To facilitate private investment around the world."
+    ],
+    answer: 0,
+    englishExplanation: "The main role of the International Monetary Fund (IMF) is to promote international monetary and financial stability and to provide financial assistance to countries experiencing balance-of-payments difficulties. The WTO focuses on international trade rules, the World Bank focuses mainly on long-term development, and private investment is mainly handled by private financial institutions and specialized organizations.",
+    amharicExplanation: "ትክክለኛው መልስ To ensure a stable exchange rate regime and provide emergency assistance to countries facing crises in balance of payments ነው። IMF ዋና ተግባሩ የዓለም አቀፍ የገንዘብና የፋይናንስ መረጋጋትን ማጠናከር እና የክፍያ ሚዛን (balance of payments) ችግር ለገጠማቸው ሀገራት የገንዘብ ድጋፍ መስጠት ነው። WTO በዓለም አቀፍ ንግድ ላይ ያተኩራል፣ World Bank በረጅም ጊዜ ልማት ላይ ያተኩራል፣ የግል ኢንቨስትመንትን ማመቻቸት ደግሞ በተለያዩ የግል ፋይናንስ ተቋማት ይከናወናል።"
+},
+
+{
+    question: "What is the main role of the World Bank?",
+    options: [
+        "To be a forum for trade and liberalization.",
+        "To assist countries in development.",
+        "To facilitate private investment around the world.",
+        "All of the options given are correct."
+    ],
+    answer: 1,
+    englishExplanation: "The main role of the World Bank is to support long-term economic and social development. It provides loans, grants, technical assistance, and other support for development projects, poverty reduction, infrastructure, education, health, and institutional development. Trade liberalization is mainly associated with the WTO, while facilitating private investment is particularly associated with the World Bank Group's IFC.",
+    amharicExplanation: "ትክክለኛው መልስ To assist countries in development ነው። የWorld Bank ዋና ተግባር ሀገራት የረጅም ጊዜ ኢኮኖሚያዊና ማህበራዊ ልማት እንዲያሳኩ መርዳት ነው። ብድር፣ ድጋፍ፣ ቴክኒካዊ እርዳታ እና ለመሰረተ ልማት፣ ለድህነት ቅነሳ፣ ለትምህርትና ለጤና የሚያገለግሉ የልማት ድጋፎችን ይሰጣል። የንግድ ነፃነትን ማመቻቸት በዋናነት የWTO ሚና ሲሆን፣ የግል ኢንቨስትመንትን ማመቻቸት በተለይም የWorld Bank Group አካል የሆነው IFC የሚያከናውነው ተግባር ነው።"
+},
+
+{
+    question: "What is the mercantilist view of IPE?",
+    options: [
+        "The world economy is where states seek to maximize their wealth and independence relative to other states.",
+        "The world economy is an arena of capitalist competition in which social groups are always in conflict.",
+        "Free trade and free movement of capital shape the policies of governments and economic actors.",
+        "None of the options given are correct."
+    ],
+    answer: 0,
+    englishExplanation: "Mercantilism views the world economy mainly as an arena in which states compete to increase their wealth, power, security, and independence relative to other states. It gives the state a dominant role in economic affairs and supports policies that strengthen national economic interests. Option B is closer to Marxist theory because it focuses on class conflict, while option C reflects the liberal emphasis on free trade and free movement of capital.",
+    amharicExplanation: "ትክክለኛው መልስ The world economy is where states seek to maximize their wealth and independence relative to other states ነው። ሜርካንቲሊዝም የዓለም ኢኮኖሚን ሀገራት ከሌሎች ሀገራት ጋር በመወዳደር ሀብታቸውን፣ ኃይላቸውን፣ ደህንነታቸውንና ነፃነታቸውን ለማሳደግ የሚጥሩበት መድረክ አድርጎ ያያል። ስለዚህ መንግስት በኢኮኖሚው ላይ ጠንካራ ሚና ይኖረዋል። B የማርክሲዝም እይታን የሚያመለክት ሲሆን፣ C ደግሞ የሊበራሊዝምን ነፃ ንግድና ነፃ የካፒታል እንቅስቃሴ ያመለክታል።"
+},
+
+{
+    question: "Under what conditions will states create international institutions?",
+    options: [
+        "For mutual gains.",
+        "Only where position relative to other states is not affected.",
+        "They arise as reflections of identities and interest of states and groups which are themselves forged through interactions.",
+        "Depends on the school of thought."
+    ],
+    answer: 3,
+    englishExplanation: "The answer depends on the school of thought because different IPE theories explain the creation of international institutions in different ways. Liberalism emphasizes mutual or absolute gains. Realism and mercantilism focus on relative gains and whether a state's position compared with other states is affected. Constructivism emphasizes identities, interests, and social interactions. Therefore, the correct general answer is that it depends on the school of thought.",
+    amharicExplanation: "ትክክለኛው መልስ Depends on the school of thought ነው። የተለያዩ የIPE ንድፈ ሀሳቦች ሀገራት ዓለም አቀፍ ተቋማትን ለምን እንደሚፈጥሩ በተለያየ መንገድ ያብራራሉ። Liberalism ተቋማት ለጋራ ጥቅም እንደሚፈጠሩ ያምናል። Realism እና Mercantilism ደግሞ የሀገራት አንፃራዊ ጥቅምና ኃይል ላይ ያተኩራሉ። Constructivism ደግሞ ማንነት፣ ፍላጎት እና በሀገራት መካከል በሚፈጠር መስተጋብር ላይ ያተኩራል። ስለዚህ መልሱ በሚጠቀሙት የንድፈ ሀሳብ ትምህርት ክፍል ይወሰናል።"
+},
+
+{
+    question: "Comparative advantage is central to:",
+    options: [
+        "Liberalism",
+        "Economic nationalism",
+        "Critical thought",
+        "Feminism"
+    ],
+    answer: 0,
+    englishExplanation: "Comparative advantage is central to economic liberalism. David Ricardo's theory of comparative advantage argues that countries can benefit from international trade by specializing in goods and services they can produce at relatively lower opportunity costs and then trading with one another. Economic nationalism generally favors protection of domestic industries, while critical thought and feminism focus on questions of power, inequality, and social structures.",
+    amharicExplanation: "ትክክለኛው መልስ Liberalism ነው። Comparative advantage (አንፃራዊ ብልጫ) የኢኮኖሚክ ሊበራሊዝም ዋና መርህ ነው። የDavid Ricardo ንድፈ ሀሳብ ሀገራት በአንፃራዊ ዝቅተኛ የዕድል ወጪ ሊያመርቱት በሚችሉት ምርት ላይ በመሰማራት እና በነፃ ንግድ በመለዋወጥ ሁሉም ሊጠቀሙ እንደሚችሉ ያስረዳል። Economic nationalism የሀገር ውስጥ ኢንዱስትሪን በንግድ ከለላ መጠበቅን ይመርጣል፣ Critical thought እና Feminism ደግሞ በኃይል፣ በእኩልነት እና በማህበራዊ መዋቅሮች ላይ ያተኩራሉ።"
+},
+
+{
+    question: "According to the views of developmental state approach, state is the sole actor of global economy.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. The Developmental State approach does not consider the state to be the sole actor in the global economy. Instead, it emphasizes a strong and capable state that actively guides economic development while working with private businesses, markets, workers, and other economic institutions. The state plays an important steering role, but it is not the only actor.",
+    amharicExplanation: "ትክክለኛው መልስ False ነው። የDevelopmental State አቀራረብ መንግስት በዓለም ኢኮኖሚ ውስጥ ብቸኛው (sole) ተዋናይ ነው ብሎ አያምንም። ይልቁንም ጠንካራና ብቃት ያለው መንግስት የኢኮኖሚ ልማትን በንቃት ይመራል፣ ከግል ዘርፍ፣ ከገበያ፣ ከሰራተኞች እና ከሌሎች የኢኮኖሚ ተቋማት ጋርም ይሰራል። ስለዚህ መንግስት ጠንካራ የመሪነት ሚና ቢኖረውም ብቸኛው ተዋናይ አይደለም።"
+},{     question: "____ is a theoretical and ideological perspective of IPE which promotes an extreme policy of autarky to promote national economic self-sufficiency.",     options: [         "Liberalism",         "Marxism",         "Mercantilism",         "Structuralism"     ],     answer: 2,     englishExplanation: "Mercantilism, also called economic nationalism, focuses on increasing a nation's wealth, economic strength, and power. It supports strong government involvement in the economy and may promote autarky, meaning economic self-sufficiency and reduced dependence on foreign countries. Liberalism supports free trade and international economic interdependence, Marxism focuses mainly on capitalism, class conflict, and exploitation, while Structuralism focuses on unequal economic relationships between developed and developing countries.",     amharicExplanation: "ሜርካንቲሊዝም (Mercantilism) ወይም የኢኮኖሚ ብሔራዊነት የሀገርን ሀብት፣ የኢኮኖሚ ጥንካሬ እና ኃይል ለማሳደግ ያተኩራል። በኢኮኖሚ ውስጥ የመንግስትን ጠንካራ ጣልቃ ገብነት ይደግፋል፣ እንዲሁም Autarky ማለትም በራስ መቻልንና ከውጭ ሀገራት ጥገኝነትን መቀነስን ሊያበረታታ ይችላል። ሊበራሊዝም ነፃ ንግድንና ዓለም አቀፍ የኢኮኖሚ ትስስርን ይደግፋል፤ ማርክሲዝም በካፒታሊዝም፣ በመደብ ግጭትና በብዝበዛ ላይ ያተኩራል፤ ስትራክቸራሊዝም ደግሞ በበለፀጉና በታዳጊ ሀገራት መካከል ባለው እኩል ያልሆነ የኢኮኖሚ ግንኙነት ላይ ያተኩራል።" },  {     question: "Which one of the following is the policy recommendation of dependential / structural theory?",     options: [         "Import substitution",         "Comparative advantage",         "Imperialism",         "Open economy",         "None"     ],     answer: 0,     englishExplanation: "Import substitution is a major policy recommendation of Dependency and Structural theories. These theories argue that developing countries can reduce their dependence on developed countries by producing goods domestically instead of importing them. Comparative advantage and an open economy are more closely associated with Liberalism, while imperialism describes a form of domination or exploitation rather than a recommended development policy.",     amharicExplanation: "Import substitution የDependency እና Structural ቲዎሪዎች ዋና የፖሊሲ ምክረ ሀሳብ ነው። እነዚህ ቲዎሪዎች ታዳጊ ሀገራት ከበለፀጉ ሀገራት ጥገኝነታቸውን ለመቀነስ ከውጭ የሚገቡ እቃዎችን በሀገር ውስጥ በማምረት መተካት እንዳለባቸው ይገልጻሉ። Comparative advantage እና Open economy በተለይ ከሊበራሊዝም ጋር የሚያያዙ ሀሳቦች ናቸው፤ Imperialism ደግሞ የበላይነትንና ብዝበዛን የሚገልጽ እንጂ የሚመከር የልማት ፖሊሲ አይደለም።" },  {     question: "Which one best describes the gist of Structuralism theoretical perspective in IPE?",     options: [         "Removing impediments (barriers) to the free flow of goods and services among countries.",         "Development based on industrialization via import substitution based on protectionist policies.",         "Benevolent hegemon (powerful state or institution) is decisive to avoid problems in international economy.",         "The role of government should be restricted to correcting market failure and provision of public goods."     ],     answer: 1,     englishExplanation: "Structuralism argues that the international economic system is structured in a way that disadvantages developing countries, especially the Global South. Therefore, developing countries should use protectionist policies and import substitution to build domestic industries and reduce dependence on foreign economies. Option A and D are associated with Liberalism because they support free trade and limited government intervention. Option C is associated with Hegemonic Stability Theory.",     amharicExplanation: "ስትራክቸራሊዝም የዓለም አቀፉ የኢኮኖሚ ስርዓት ታዳጊ ሀገራትን በተለይም Global South ን የሚጎዳ አወቃቀር እንዳለው ይመለከታል። ስለዚህ ታዳጊ ሀገራት የሀገር ውስጥ ኢንዱስትሪዎቻቸውን ለማሳደግ የጥበቃ ፖሊሲዎችን (protectionist policies) እና የውጭ ምርትን በሀገር ውስጥ ምርት መተካትን (import substitution) መጠቀም አለባቸው ይላል። A እና D የሊበራሊዝም ሀሳቦች ሲሆኑ C ደግሞ ከHegemonic Stability Theory ጋር ይያያዛል።" },  {     question: "Which one of the following is wrong about the IPE theory of Mercantilism/Economic Nationalism?",     options: [         "National strength is increased by preponderance of export over import.",         "State should have a heavy hand on the economy.",         "Politics (the state) derives the economics (the market).",         "Gain through Specialization (Comparative advantage)."     ],     answer: 3,     englishExplanation: "Gain through specialization and comparative advantage is a principle associated with Liberalism, not Mercantilism. Liberal economists argue that countries can benefit from specializing in goods and services they produce relatively efficiently and then trading with others. Mercantilism instead emphasizes national strength, trade surpluses, strong state intervention, and the use of economic policies to serve national political interests.",     amharicExplanation: "በልዩ ሙያ (Specialization) እና Comparative advantage አማካኝነት ጥቅም ማግኘት የሊበራሊዝም መርህ እንጂ የሜርካንቲሊዝም መርህ አይደለም። የሊበራል ኢኮኖሚስቶች ሀገራት በተሻለ ወይም በአንፃራዊነት በብቃት ሊያመርቷቸው በሚችሉ እቃዎች ላይ በመሰማራት እና ከሌሎች ሀገራት ጋር በመነገድ ሁለቱም ሊጠቀሙ እንደሚችሉ ያምናሉ። ሜርካንቲሊዝም ግን የሀገር ጥንካሬን፣ የንግድ ትርፍን፣ ጠንካራ የመንግስት ጣልቃ ገብነትን እና ኢኮኖሚው የሀገርን ፖለቲካዊ ጥቅም እንዲያገለግል ማድረግን ያበረታታል።" },  {     question: "Theoretical perspective of the IPE named 'Liberalism' can be expressed by all of the following, except:-",     options: [         "Economics should determine politics.",         "Free market system (trade liberalization & free financial and FDI flow).",         "Use of protectionist policies, and greater control of state over the market.",         "Government should have an 'invisible hand' in the economy."     ],     answer: 2,     englishExplanation: "The use of protectionist policies and greater government control over the market does not represent Liberalism. It is more closely associated with Mercantilism or Economic Nationalism. Liberalism supports free markets, trade liberalization, freer movement of capital and foreign direct investment, and limited government interference. The 'invisible hand' is associated with Adam Smith's explanation of how markets can coordinate economic activity.",     amharicExplanation: "የጥበቃ ፖሊሲዎችን (protectionist policies) መጠቀም እና መንግስት በገበያ ላይ ከፍተኛ ቁጥጥር እንዲኖረው ማድረግ የሊበራሊዝም መገለጫ አይደለም። ይህ ከሜርካንቲሊዝም ወይም Economic Nationalism ጋር ይበልጥ ይያያዛል። ሊበራሊዝም ነፃ ገበያን፣ የንግድ ነፃነትን፣ የካፒታል እና የውጭ ቀጥተኛ ኢንቨስትመንት (FDI) ነፃ ፍሰትን እና የመንግስት ጣልቃ ገብነት ውስን እንዲሆን ይደግፋል። 'Invisible hand' የሚለው ፅንሰ ሀሳብም ከAdam Smith የገበያ አሠራር ማብራሪያ ጋር ይያያዛል።" },  {     question: "Among the following statements one is not true about mercantilism theoretical perspective",     options: [         "It promotes an extreme policy of autarky",         "It promotes national economic self-sufficiency",         "It discourages subsidization of economy",         "It encourages dominant role of the state in the economy.",         "None"     ],     answer: 2,     englishExplanation: "The statement that Mercantilism discourages subsidization is false. Mercantilism supports government assistance to domestic industries through subsidies, tax advantages, financial support, tariffs, and other measures. These policies are intended to strengthen domestic producers, increase exports, and reduce dependence on foreign competitors. Autarky, economic self-sufficiency, and a dominant role for the state are also commonly associated with Mercantilist thinking.",     amharicExplanation: "ሜርካንቲሊዝም ድጎማ (subsidization) ያዳክማል የሚለው አባባል ስህተት ነው። ሜርካንቲሊዝም መንግስት ለሀገር ውስጥ ኢንዱስትሪዎች በድጎማ፣ በግብር ቅናሽ፣ በገንዘብ ድጋፍ፣ በቀረጥ እና በሌሎች ዘዴዎች ድጋፍ እንዲያደርግ ይደግፋል። ዓላማውም የሀገር ውስጥ አምራቾችን ማጠናከር፣ ወደ ውጭ የሚላኩ ምርቶችን ማብዛት እና ከውጭ ተወዳዳሪዎች ጥገኝነትን መቀነስ ነው። Autarky፣ የኢኮኖሚ በራስ መቻል እና የመንግስት የበላይ ሚናም ከሜርካንቲሊዝም ጋር ይያያዛሉ።" },  {     question: "Which one is not true about Liberal theoretical perspective?",     options: [         "It articulates eliminating impediments of free flow of goods and services",         "It defends the idea of free market",         "It pronounces free foreign direct investment flows",         "It encourages the concept of competitive advantage",         "A and D",         "None of the above"     ],     answer: 3,     englishExplanation: "The expected answer is Competitive advantage. Classical Liberalism in IPE is mainly associated with free trade, free markets, and the principle of comparative advantage, especially through the work of David Ricardo. Competitive advantage is a later concept associated with business strategy and is not a foundational principle of classical Liberal IPE theory. Therefore, option D is the intended answer.",     amharicExplanation: "የተጠበቀው መልስ Competitive advantage ነው። ክላሲካል ሊበራሊዝም በIPE ውስጥ በነፃ ንግድ፣ በነፃ ገበያ እና በተለይም በDavid Ricardo የተገለጸው Comparative advantage መርህ ላይ ያተኩራል። Competitive advantage ግን በኋላ የመጣ ከንግድ ስትራቴጂ ጋር የሚያያዝ ፅንሰ ሀሳብ ነው፣ የክላሲካል ሊበራል IPE መሠረታዊ መርህ አይደለም። ስለዚህ D የታሰበው ትክክለኛ መልስ ነው።" },  {     question: "Which one is incorrect statement about Marxist theory of international political economy?",     options: [         "Marxists condemned capitalism as a system that alienates the masses",         "The means of production is in the hands of capitalist class",         "Capitalist societies do not produce for the needs of the population but for the sake of realizing a high exchange value",         "Exploitation of labor shows the sign of lessening",         "All"     ],     answer: 3,     englishExplanation: "The statement that the exploitation of labor shows signs of lessening is incorrect from a Marxist perspective. Marxism argues that capitalism is based on the exploitation of workers, because capitalists seek profit by extracting surplus value from labor. Therefore, labor exploitation is a fundamental feature of capitalism rather than something that capitalism naturally eliminates. The other statements describe important Marxist criticisms of capitalism, including alienation, capitalist ownership of the means of production, and production for exchange value and profit.",     amharicExplanation: "የሰራተኞች ብዝበዛ እየቀነሰ ይሄዳል የሚለው አባባል ከማርክሲስት እይታ አንፃር ስህተት ነው። ማርክሲዝም ካፒታሊዝም በሰራተኞች ብዝበዛ ላይ የተመሠረተ ነው ይላል፤ ምክንያቱም ባለካፒታሎች ከሰራተኞች ጉልበት ትርፍ (surplus value) ለማግኘት ይጥራሉ። ስለዚህ የሰራተኛ ብዝበዛ በካፒታሊዝም ውስጥ መሠረታዊ ባህሪ እንጂ በተፈጥሮ የሚቀንስ ነገር አይደለም። ሌሎቹ አማራጮች ካፒታሊዝም ሰራተኞችን እንደሚያራርቅ፣ የምርት መሳሪያዎች በባለካፒታሎች እጅ እንደሚገኙ እና ምርት ለትርፍና exchange value እንደሚደረግ የሚገልጹ የማርክሲዝም ሀሳቦች ናቸው።" },  {     question: "Liberals believe that:",     options: [         "Relative and absolute gains are equally important",         "Relative gains are more important than absolute gains",         "Absolute gains are more important than relative gains",         "Discussion or relative and absolute gains is unnecessary"     ],     answer: 2,     englishExplanation: "Liberals emphasize absolute gains. They believe that countries can cooperate and trade in ways that make all participating countries better off. A country does not necessarily need to gain more than another country; what matters is that it receives benefits from cooperation. In contrast, Realists and Mercantilists place greater emphasis on relative gains, meaning how much one country gains compared with others.",     amharicExplanation: "ሊበራሎች Absolute gains ማለትም አጠቃላይ ወይም ፍፁማዊ ጥቅም ከRelative gains የበለጠ አስፈላጊ ነው ብለው ያምናሉ። ሀገራት በትብብርና በነፃ ንግድ በመሳተፍ ሁሉም ከትብብሩ ጥቅም ማግኘት ይችላሉ ብለው ያስባሉ። አንድ ሀገር ከሌላው በላይ ማትረፍ የግድ አይደለም፤ ዋናው ነገር ከትብብሩ ጥቅም ማግኘቱ ነው። በተቃራኒው ሪያሊስቶችና ሜርካንቲሊስቶች Relative gains ማለትም አንድ ሀገር ከሌላው ጋር ሲነፃፀር ምን ያህል የበለጠ እንደሚያገኝ ላይ ያተኩራሉ።" },  {     question: "Liberals argue that international cooperation:",     options: [         "Can be facilitated by international organisations",         "Requires a hegemonic state",         "Primarily benefits the strongest states",         "Is impossible because of anarchy"     ],     answer: 0,     englishExplanation: "Liberals, especially Neoliberal Institutionalists, argue that international organizations can facilitate cooperation among countries. Organizations such as the United Nations, World Trade Organization, and International Monetary Fund can create rules, provide information, reduce uncertainty, encourage trust, and make cooperation easier. The idea that cooperation requires a hegemonic state is associated with Hegemonic Stability Theory, while the claims that cooperation mainly benefits powerful states or is impossible because of anarchy are more closely associated with Realist thinking.",     amharicExplanation: "ሊበራሎች፣ በተለይም Neoliberal Institutionalists፣ ዓለም አቀፍ ድርጅቶች በሀገራት መካከል ትብብርን ሊያመቻቹ እንደሚችሉ ያምናሉ። እንደ United Nations (UN)፣ World Trade Organization (WTO) እና International Monetary Fund (IMF) ያሉ ድርጅቶች ደንቦችን ማውጣት፣ መረጃ መስጠት፣ ያለመረጋጋትን መቀነስ፣ መተማመንን ማበረታታት እና ትብብርን ቀላል ማድረግ ይችላሉ። ትብብር የግድ የHegemonic ሀገር ያስፈልገዋል የሚለው ከHegemonic Stability Theory ጋር ይያያዛል፤ ትብብር ለኃያላን ሀገራት ብቻ ይጠቅማል ወይም በAnarchy ምክንያት ትብብር የማይቻል ነው የሚሉት ደግሞ ከሪያሊስት እይታ ጋር ይበልጥ ይያያዛሉ።" }];
 
 quizData["global-trends"]["4"] = [
   {
