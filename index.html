@@ -35,44 +35,62 @@
             margin-left: auto;
         }
 
+
         .authHeaderBtn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 5px;
+
             padding: 9px 13px;
+
             border-radius: 10px;
+
             text-decoration: none;
+
             font-weight: 700;
             font-size: 14px;
+
             border: 1px solid #2563eb;
+
             color: #2563eb;
+
             background: transparent;
+
             transition: 0.2s ease;
         }
 
+
         .authHeaderBtn:hover {
             transform: translateY(-1px);
+
             background: #2563eb;
+
             color: white;
         }
 
+
         .authHeaderPrimary {
             background: #2563eb;
+
             color: white;
         }
+
 
         .authHeaderPrimary:hover {
             background: #1d4ed8;
         }
 
+
         .headerProfile {
             display: none;
         }
 
+
         .headerProfile.authVisible {
             display: flex;
         }
+
 
         /* =================================================
            AUTH MENU ITEMS
@@ -82,12 +100,14 @@
             display: flex;
         }
 
+
         .authMenuHidden {
             display: none !important;
         }
 
+
         /* =================================================
-           MOBILE
+           MOBILE AUTH
         ================================================= */
 
         @media (max-width: 600px) {
@@ -96,566 +116,40 @@
                 gap: 5px;
             }
 
+
             .authHeaderBtn {
                 padding: 8px 9px;
+
                 font-size: 13px;
             }
 
         }
-/* =====================================================
-   UNIQUE ACADEMIC — MODERN SUBJECT CARDS
-   SAFE REDESIGN
-   Does NOT change existing JavaScript functionality
-===================================================== */
 
-#subjects {
-    margin: 30px 16px 20px;
-    font-size: 25px;
-    font-weight: 800;
-}
 
+        /* =================================================
+           SUBJECT SECTION SAFETY
+        ================================================= */
 
-/* =====================================================
-   SUBJECT GRID
-===================================================== */
+        .subjectGrid {
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-.subjectGrid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    padding: 0 16px 30px;
-}
 
+        .subjectCard {
+            box-sizing: border-box;
+        }
 
-/* =====================================================
-   SUBJECT CARD
-===================================================== */
 
-.subjectCard {
-    position: relative;
-    overflow: hidden;
-    padding: 0 !important;
-    margin: 0 !important;
+        .subjectCover {
+            box-sizing: border-box;
+        }
 
-    background: #ffffff;
-    border-radius: 24px;
 
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.08);
+        .subjectContent {
+            box-sizing: border-box;
+        }
 
-    border: 1px solid rgba(0, 0, 0, 0.04);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-
-    min-width: 0;
-}
-
-
-.subjectCard:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 14px 35px rgba(0, 0, 0, 0.13);
-
-}
-
-
-/* =====================================================
-   SUBJECT COVER
-===================================================== */
-
-.subjectCover {
-
-    height: 180px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            135deg,
-            #eaf4ff,
-            #ffffff
-        );
-}
-
-
-/* Decorative circles */
-
-.subjectCover::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 150px;
-    height: 150px;
-
-    border-radius: 50%;
-
-    background:
-        rgba(37, 99, 235, 0.08);
-
-    top: -55px;
-    right: -45px;
-
-}
-
-
-.subjectCover::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 100px;
-    height: 100px;
-
-    border-radius: 50%;
-
-    background:
-        rgba(37, 99, 235, 0.06);
-
-    bottom: -45px;
-    left: -35px;
-
-}
-
-
-/* =====================================================
-   SUBJECT ICON
-===================================================== */
-
-.subjectIcon {
-
-    position: relative;
-    z-index: 2;
-
-    width: 110px;
-    height: 110px;
-
-    border-radius: 30px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 58px;
-
-    background: rgba(255, 255, 255, 0.92);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.10);
-
-}
-
-
-/* =====================================================
-   SUBJECT CONTENT
-===================================================== */
-
-.subjectContent {
-
-    padding: 18px 17px 17px;
-
-}
-
-
-.subjectContent h3 {
-
-    margin: 0 0 7px;
-
-    font-size: 18px;
-
-    line-height: 1.25;
-
-    font-weight: 800;
-
-    color: #172033;
-
-}
-
-
-.subjectSubtitle {
-
-    margin: 0 0 14px;
-
-    font-size: 13px;
-
-    color: #718096;
-
-    font-weight: 600;
-
-}
-
-
-/* =====================================================
-   COURSE INFO
-===================================================== */
-
-.subjectInfo {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 8px;
-
-    margin-bottom: 15px;
-
-}
-
-
-.subjectInfo span {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 4px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    color: #64748b;
-
-}
-
-
-/* =====================================================
-   OPEN BUTTON
-===================================================== */
-
-.subjectOpenBtn {
-
-    display: flex !important;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 100%;
-
-    min-height: 45px;
-
-    padding: 11px 14px;
-
-    border-radius: 13px;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 800;
-
-    color: #ffffff !important;
-
-    background:
-        linear-gradient(
-            135deg,
-            #2563eb,
-            #1689df
-        );
-
-    box-shadow:
-        0 6px 15px rgba(37, 99, 235, 0.22);
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-}
-
-
-.subjectOpenBtn:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 9px 20px rgba(37, 99, 235, 0.30);
-
-}
-
-
-/* =====================================================
-   BOOKMARK BUTTON
-===================================================== */
-
-.subjectCard .bookmarkBtn {
-
-    width: 100%;
-
-    margin-top: 9px;
-
-    min-height: 40px;
-
-    border-radius: 12px;
-
-    border: 1px solid #e2e8f0;
-
-    background: #f8fafc;
-
-    color: #475569;
-
-    font-size: 13px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-
-}
-
-
-.subjectCard .bookmarkBtn:hover {
-
-    transform: translateY(-1px);
-
-    background: #eef4ff;
-
-}
-
-
-.subjectCard .bookmarkBtn.bookmarked {
-
-    background: #fff7ed;
-
-    border-color: #fed7aa;
-
-    color: #c2410c;
-
-}
-
-
-/* =====================================================
-   DARK MODE
-===================================================== */
-
-body.dark-mode .subjectCard {
-
-    background: #18202c;
-
-    border-color: rgba(255,255,255,0.06);
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.30);
-
-}
-
-
-body.dark-mode .subjectCover {
-
-    background:
-        linear-gradient(
-            135deg,
-            #202c3d,
-            #16202d
-        );
-
-}
-
-
-body.dark-mode .subjectIcon {
-
-    background: #263447;
-
-}
-
-
-body.dark-mode .subjectContent h3 {
-
-    color: #f8fafc;
-
-}
-
-
-body.dark-mode .subjectSubtitle {
-
-    color: #94a3b8;
-
-}
-
-
-body.dark-mode .subjectInfo span {
-
-    color: #94a3b8;
-
-}
-
-
-body.dark-mode .subjectCard .bookmarkBtn {
-
-    background: #202b3b;
-
-    border-color: #334155;
-
-    color: #cbd5e1;
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 600px) {
-
-    .subjectGrid {
-
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-
-        gap: 12px;
-
-        padding-left: 10px;
-        padding-right: 10px;
-
-    }
-
-
-    #subjects {
-
-        margin-left: 12px;
-        margin-right: 12px;
-
-        font-size: 22px;
-
-    }
-
-
-    .subjectCover {
-
-        height: 135px;
-
-    }
-
-
-    .subjectIcon {
-
-        width: 78px;
-        height: 78px;
-
-        border-radius: 23px;
-
-        font-size: 42px;
-
-    }
-
-
-    .subjectContent {
-
-        padding: 13px 11px 12px;
-
-    }
-
-
-    .subjectContent h3 {
-
-        font-size: 15px;
-
-    }
-
-
-    .subjectSubtitle {
-
-        font-size: 11px;
-
-        margin-bottom: 10px;
-
-    }
-
-
-    .subjectInfo {
-
-        margin-bottom: 10px;
-
-    }
-
-
-    .subjectInfo span {
-
-        font-size: 10px;
-
-    }
-
-
-    .subjectOpenBtn {
-
-        min-height: 39px;
-
-        padding: 8px 7px;
-
-        font-size: 12px;
-
-    }
-
-
-    .subjectCard .bookmarkBtn {
-
-        min-height: 36px;
-
-        font-size: 11px;
-
-        padding: 7px 5px;
-
-    }
-
-}
-
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 380px) {
-
-    .subjectGrid {
-
-        gap: 9px;
-
-        padding-left: 7px;
-        padding-right: 7px;
-
-    }
-
-
-    .subjectCover {
-
-        height: 120px;
-
-    }
-
-
-    .subjectIcon {
-
-        width: 68px;
-        height: 68px;
-
-        font-size: 36px;
-
-    }
-
-
-    .subjectContent h3 {
-
-        font-size: 14px;
-
-    }
-
-}
-        
     </style>
 
 </head>
@@ -679,12 +173,17 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 "uniqueAcademicSettings"
             );
 
+
         if (!savedSettings) {
             return;
         }
 
+
         const settings =
-            JSON.parse(savedSettings);
+            JSON.parse(
+                savedSettings
+            );
+
 
         if (
             settings &&
@@ -697,7 +196,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
         }
 
-    } catch (error) {
+    }
+
+    catch (error) {
 
         console.error(
             "Unable to load saved theme:",
@@ -711,6 +212,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
 </script>
 
 
+
 <!-- =====================================================
      MENU OVERLAY
 ===================================================== -->
@@ -720,6 +222,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
     class="menuOverlay"
     aria-hidden="true"
 ></div>
+
 
 
 <!-- =====================================================
@@ -753,6 +256,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Welcome Student
             </h3>
 
+
             <p id="menuUserEmail">
                 Unique Academic
             </p>
@@ -781,9 +285,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 🏠
             </span>
 
+
             <span>
                 Home
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -804,9 +310,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 📰
             </span>
 
+
             <span>
                 News & Updates
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -828,9 +336,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 🔐
             </span>
 
+
             <span>
                 Login
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -852,9 +362,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 📝
             </span>
 
+
             <span>
                 Register
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -876,9 +388,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 🔄
             </span>
 
+
             <span>
                 Refresh
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -900,9 +414,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 👤
             </span>
 
+
             <span>
                 Profile
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -924,9 +440,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 📤
             </span>
 
+
             <span>
                 Share App
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -947,9 +465,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 ▦
             </span>
 
+
             <span>
                 Other Apps
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -970,9 +490,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 ❓
             </span>
 
+
             <span>
                 Help
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -993,9 +515,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 ℹ️
             </span>
 
+
             <span>
                 About Us
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -1016,9 +540,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 ⚙️
             </span>
 
+
             <span>
                 Settings
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -1049,9 +575,11 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 🚪
             </span>
 
+
             <span>
                 Logout
             </span>
+
 
             <span class="menuArrow">
                 ›
@@ -1098,7 +626,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
         aria-expanded="false"
         aria-controls="sideMenu"
     >
+
         ☰
+
     </button>
 
 
@@ -1117,6 +647,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <h1>
                 Unique Academic
             </h1>
+
 
             <p>
                 Learning Platform
@@ -1143,6 +674,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
         >
             🔐 Login
         </a>
+
 
         <a
             href="registration.html"
@@ -1203,7 +735,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
         href="#subjects"
         class="button"
     >
+
         🚀 Start Learning
+
     </a>
 
 </section>
@@ -1362,7 +896,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
         class="button"
         href="#subjects"
     >
+
         Start Learning
+
     </a>
 
 </section>
@@ -1390,13 +926,13 @@ body.dark-mode .subjectCard .bookmarkBtn {
 <!-- =====================================================
      SUBJECT TITLE
 ===================================================== -->
-<!-- =====================================================
-     SUBJECT TITLE
-===================================================== -->
 
 <h2 id="subjects">
+
     📚 First-Year Courses (2019 E.C.)
+
 </h2>
+
 
 
 <!-- =====================================================
@@ -1406,12 +942,13 @@ body.dark-mode .subjectCard .bookmarkBtn {
 <div class="subjectGrid">
 
 
+
     <!-- =================================================
          ENGLISH SKILL I
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="English Skill I"
     >
 
@@ -1430,6 +967,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 English Skill I
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1438,21 +976,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="english1.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1461,7 +1002,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="English Skill I"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1472,10 +1015,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          ECONOMICS
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Economics"
     >
 
@@ -1494,6 +1037,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Economics
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1502,21 +1046,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="economics.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1525,7 +1072,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Economics"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1536,10 +1085,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          HISTORY
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="History"
     >
 
@@ -1558,6 +1107,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 History
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1566,21 +1116,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="🏛️ history.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1589,7 +1142,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="History"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1600,10 +1155,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          ENTREPRENEURSHIP
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Entrepreneurship"
     >
 
@@ -1622,6 +1177,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Entrepreneurship
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1630,21 +1186,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="entrepreneurship.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1653,7 +1212,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Entrepreneurship"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1664,10 +1225,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          ANTHROPOLOGY
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Anthropology"
     >
 
@@ -1686,6 +1247,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Anthropology
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1694,21 +1256,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="anthropology.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1717,7 +1282,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Anthropology"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1728,10 +1295,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          EMERGING TECHNOLOGY
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Emerging Technology"
     >
 
@@ -1750,6 +1317,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Emerging Technology
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1758,21 +1326,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="emerging-technology.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1781,7 +1352,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Emerging Technology"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1792,10 +1365,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          GLOBAL TRENDS
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Global Trends"
     >
 
@@ -1814,6 +1387,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Global Trends
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1822,21 +1396,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="global-trends.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1845,7 +1422,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Global Trends"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1856,10 +1435,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          ENGLISH SKILL II
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="English Skill II"
     >
 
@@ -1878,6 +1457,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 English Skill II
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1886,21 +1466,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="english2.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1909,7 +1492,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="English Skill II"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1920,10 +1505,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          PSYCHOLOGY
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Psychology"
     >
 
@@ -1942,6 +1527,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Psychology
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -1950,21 +1536,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="psychology.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -1973,7 +1562,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Psychology"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -1984,10 +1575,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          LOGIC
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Logic"
     >
 
@@ -2006,6 +1597,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Logic
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -2014,21 +1606,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="logic.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -2037,7 +1632,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Logic"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -2048,17 +1645,17 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          GEOGRAPHY
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Geography"
     >
 
         <div class="subjectCover">
 
             <div class="subjectIcon">
-                🗺️
+                🌍
             </div>
 
         </div>
@@ -2070,6 +1667,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Geography
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -2078,21 +1676,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="geography.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -2101,7 +1702,9 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Geography"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
@@ -2112,10 +1715,10 @@ body.dark-mode .subjectCard .bookmarkBtn {
 
     <!-- =================================================
          CIVIC EDUCATION
-    ================================================== -->
+    ================================================= -->
 
     <div
-        class="card subjectCard"
+        class="subjectCard"
         data-subject="Civic Education"
     >
 
@@ -2134,6 +1737,7 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 Civic Education
             </h3>
 
+
             <p class="subjectSubtitle">
                 Freshman Course
             </p>
@@ -2142,21 +1746,24 @@ body.dark-mode .subjectCard .bookmarkBtn {
             <div class="subjectInfo">
 
                 <span>
-                    📖 Notes
+                    📚 Course
                 </span>
 
+
                 <span>
-                    ❓ Quiz
+                    📝 Quiz
                 </span>
 
             </div>
 
 
             <a
-                class="button subjectOpenBtn"
+                class="subjectOpenBtn"
                 href="civic.html"
             >
+
                 📖 Open Course
+
             </a>
 
 
@@ -2165,421 +1772,15 @@ body.dark-mode .subjectCard .bookmarkBtn {
                 type="button"
                 data-subject="Civic Education"
             >
+
                 ⭐ Bookmark
+
             </button>
 
         </div>
 
     </div>
 
-
-</div>
-
-
-<!-- =====================================================
-     ENGLISH SKILL I
-===================================================== -->
-
-<div
-    class="card subjectCard"
-    data-subject="English Skill I"
->
-
-    <h3>
-        📘 English Skill I
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="english1.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="English Skill I"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- ECONOMICS -->
-
-<div
-    class="card subjectCard"
-    data-subject="Economics"
->
-
-    <h3>
-        📈 Economics
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="economics.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Economics"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-<!-- HISTORY -->
-
-<div
-    class="card subjectCard"
-    data-subject="History"
->
-
-    <h3>
-        📜 History
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="🏛️ history.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="History"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- ENTREPRENEURSHIP -->
-
-<div
-    class="card subjectCard"
-    data-subject="Entrepreneurship"
->
-
-    <h3>
-        💼 Entrepreneurship
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="entrepreneurship.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Entrepreneurship"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- ANTHROPOLOGY -->
-
-<div
-    class="card subjectCard"
-    data-subject="Anthropology"
->
-
-    <h3>
-        🧑‍🤝‍🧑 Anthropology
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="anthropology.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Anthropology"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- EMERGING TECHNOLOGY -->
-
-<div
-    class="card subjectCard"
-    data-subject="Emerging Technology"
->
-
-    <h3>
-        💻 Emerging Technology
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="emerging-technology.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Emerging Technology"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- GLOBAL TRENDS -->
-
-<div
-    class="card subjectCard"
-    data-subject="Global Trends"
->
-
-    <h3>
-        🌍 Global Trends
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="global-trends.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Global Trends"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- ENGLISH SKILL II -->
-
-<div
-    class="card subjectCard"
-    data-subject="English Skill II"
->
-
-    <h3>
-        🇬🇧 English Skill II
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="english2.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="English Skill II"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- PSYCHOLOGY -->
-
-<div
-    class="card subjectCard"
-    data-subject="Psychology"
->
-
-    <h3>
-        🧠 Psychology
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="psychology.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Psychology"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- LOGIC -->
-
-<div
-    class="card subjectCard"
-    data-subject="Logic"
->
-
-    <h3>
-        ⚖️ Logic
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="logic.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Logic"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- GEOGRAPHY -->
-
-<div
-    class="card subjectCard"
-    data-subject="Geography"
->
-
-    <h3>
-        🌍 Geography
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="geography.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Geography"
-    >
-        ⭐ Bookmark
-    </button>
-
-</div>
-
-
-
-<!-- CIVIC EDUCATION -->
-
-<div
-    class="card subjectCard"
-    data-subject="Civic Education"
->
-
-    <h3>
-        🏛 Civic Education
-    </h3>
-
-    <p>
-        Freshman Course
-    </p>
-
-    <a
-        class="button"
-        href="civic.html"
-    >
-        📖 Open
-    </a>
-
-    <button
-        class="bookmarkBtn"
-        type="button"
-        data-subject="Civic Education"
-    >
-        ⭐ Bookmark
-    </button>
 
 </div>
 
@@ -2651,50 +1852,60 @@ const headerGuestAuth =
         "headerGuestAuth"
     );
 
+
 const headerProfile =
     document.getElementById(
         "headerProfile"
     );
+
 
 const menuLogin =
     document.getElementById(
         "menuLogin"
     );
 
+
 const menuRegister =
     document.getElementById(
         "menuRegister"
     );
+
 
 const menuProfileLink =
     document.getElementById(
         "menuProfileLink"
     );
 
+
 const logoutBtn =
     document.getElementById(
         "logoutBtn"
     );
+
 
 const menuUserName =
     document.getElementById(
         "menuUserName"
     );
 
+
 const menuUserEmail =
     document.getElementById(
         "menuUserEmail"
     );
+
 
 const headerProfilePhoto =
     document.getElementById(
         "headerProfilePhoto"
     );
 
+
 const menuProfilePhoto =
     document.getElementById(
         "menuProfilePhoto"
     );
+
 
 const dashboardProfileLink =
     document.getElementById(
@@ -2702,11 +1913,14 @@ const dashboardProfileLink =
     );
 
 
+
 /* =====================================================
    SHOW / HIDE AUTH UI
 ===================================================== */
 
-function updateAuthenticationUI(user) {
+function updateAuthenticationUI(
+    user
+) {
 
 
     /* ================================================
@@ -2714,6 +1928,7 @@ function updateAuthenticationUI(user) {
     ================================================ */
 
     if (user) {
+
 
         /* Header */
 
@@ -2732,6 +1947,7 @@ function updateAuthenticationUI(user) {
             );
 
         }
+
 
 
         /* Menu */
@@ -2772,6 +1988,7 @@ function updateAuthenticationUI(user) {
         }
 
 
+
         /* User name */
 
         const displayName =
@@ -2789,6 +2006,7 @@ function updateAuthenticationUI(user) {
         }
 
 
+
         /* User email */
 
         if (menuUserEmail) {
@@ -2798,6 +2016,7 @@ function updateAuthenticationUI(user) {
                 "Student Account";
 
         }
+
 
 
         /* Avatar */
@@ -2821,7 +2040,9 @@ function updateAuthenticationUI(user) {
                 >
                 `;
 
-        } else {
+        }
+
+        else {
 
             if (headerProfilePhoto) {
 
@@ -2831,6 +2052,7 @@ function updateAuthenticationUI(user) {
             }
 
         }
+
 
 
         if (
@@ -2852,7 +2074,9 @@ function updateAuthenticationUI(user) {
                 >
                 `;
 
-        } else {
+        }
+
+        else {
 
             if (menuProfilePhoto) {
 
@@ -2864,9 +2088,8 @@ function updateAuthenticationUI(user) {
         }
 
 
-        /*
-         * Profile is available.
-         */
+
+        /* Profile available */
 
         if (dashboardProfileLink) {
 
@@ -2878,11 +2101,13 @@ function updateAuthenticationUI(user) {
     }
 
 
+
     /* ================================================
        USER IS LOGGED OUT
     ================================================ */
 
     else {
+
 
         /* Header */
 
@@ -2901,6 +2126,7 @@ function updateAuthenticationUI(user) {
             );
 
         }
+
 
 
         /* Menu */
@@ -2941,6 +2167,7 @@ function updateAuthenticationUI(user) {
         }
 
 
+
         /* Guest information */
 
         if (menuUserName) {
@@ -2975,10 +2202,8 @@ function updateAuthenticationUI(user) {
         }
 
 
-        /*
-         * If someone clicks Profile while
-         * logged out, send them to Login.
-         */
+
+        /* Profile → Login */
 
         if (dashboardProfileLink) {
 
@@ -2992,19 +2217,35 @@ function updateAuthenticationUI(user) {
 }
 
 
+
 /* =====================================================
    SAFE ATTRIBUTE ESCAPING
 ===================================================== */
 
-function escapeHTMLAttribute(value) {
+function escapeHTMLAttribute(
+    value
+) {
 
     return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/"/g, "&quot;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        );
 
 }
+
 
 
 /* =====================================================
@@ -3015,10 +2256,13 @@ onAuthStateChanged(
     auth,
     function (user) {
 
-        updateAuthenticationUI(user);
+        updateAuthenticationUI(
+            user
+        );
 
     }
 );
+
 
 
 /* =====================================================
@@ -3031,14 +2275,15 @@ if (logoutBtn) {
         "click",
         async function (event) {
 
+
             /*
-             * Stop the older logout handler in
-             * script.js from running as well.
+             * Stop older logout handler.
              */
 
             event.preventDefault();
 
             event.stopImmediatePropagation();
+
 
 
             const confirmed =
@@ -3048,25 +2293,29 @@ if (logoutBtn) {
 
 
             if (!confirmed) {
+
                 return;
+
             }
 
 
-            logoutBtn.disabled = true;
+            logoutBtn.disabled =
+                true;
 
 
             try {
 
-                await signOut(auth);
+                await signOut(
+                    auth
+                );
 
 
-                /*
-                 * Clean old local login data too.
-                 */
+                /* Clean old local data */
 
                 localStorage.removeItem(
                     "uniqueAcademicUser"
                 );
+
 
                 localStorage.removeItem(
                     "studentLoggedIn"
@@ -3080,6 +2329,7 @@ if (logoutBtn) {
                     "index.html";
 
             }
+
 
             catch (error) {
 
@@ -3136,15 +2386,18 @@ if (logoutBtn) {
             "menuBtn"
         );
 
+
     const sideMenu =
         document.getElementById(
             "sideMenu"
         );
 
+
     const menuOverlay =
         document.getElementById(
             "menuOverlay"
         );
+
 
 
     /* =================================================
@@ -3153,14 +2406,20 @@ if (logoutBtn) {
 
     function openMenu() {
 
-        if (!sideMenu || !menuOverlay) {
+        if (
+            !sideMenu ||
+            !menuOverlay
+        ) {
+
             return;
+
         }
 
 
         sideMenu.classList.add(
             "active"
         );
+
 
         menuOverlay.classList.add(
             "active"
@@ -3171,6 +2430,7 @@ if (logoutBtn) {
             "aria-hidden",
             "false"
         );
+
 
         menuOverlay.setAttribute(
             "aria-hidden",
@@ -3184,6 +2444,7 @@ if (logoutBtn) {
                 "aria-expanded",
                 "true"
             );
+
 
             menuBtn.setAttribute(
                 "aria-label",
@@ -3200,20 +2461,27 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        CLOSE MENU
     ================================================= */
 
     function closeMenu() {
 
-        if (!sideMenu || !menuOverlay) {
+        if (
+            !sideMenu ||
+            !menuOverlay
+        ) {
+
             return;
+
         }
 
 
         sideMenu.classList.remove(
             "active"
         );
+
 
         menuOverlay.classList.remove(
             "active"
@@ -3224,6 +2492,7 @@ if (logoutBtn) {
             "aria-hidden",
             "true"
         );
+
 
         menuOverlay.setAttribute(
             "aria-hidden",
@@ -3237,6 +2506,7 @@ if (logoutBtn) {
                 "aria-expanded",
                 "false"
             );
+
 
             menuBtn.setAttribute(
                 "aria-label",
@@ -3253,6 +2523,7 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        TOGGLE MENU
     ================================================= */
@@ -3263,6 +2534,7 @@ if (logoutBtn) {
             "click",
             function () {
 
+
                 if (
                     sideMenu &&
                     sideMenu.classList.contains(
@@ -3272,7 +2544,9 @@ if (logoutBtn) {
 
                     closeMenu();
 
-                } else {
+                }
+
+                else {
 
                     openMenu();
 
@@ -3282,6 +2556,7 @@ if (logoutBtn) {
         );
 
     }
+
 
 
     /* =================================================
@@ -3296,6 +2571,7 @@ if (logoutBtn) {
         );
 
     }
+
 
 
     /* =================================================
@@ -3318,6 +2594,7 @@ if (logoutBtn) {
     );
 
 
+
     /* =================================================
        MENU LINKS
     ================================================= */
@@ -3336,6 +2613,7 @@ if (logoutBtn) {
 
             }
         );
+
 
 
     /* =================================================
@@ -3364,6 +2642,7 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        SHARE
     ================================================= */
@@ -3379,6 +2658,7 @@ if (logoutBtn) {
         shareAppBtn.addEventListener(
             "click",
             async function () {
+
 
                 const shareData = {
 
@@ -3396,6 +2676,7 @@ if (logoutBtn) {
 
                 try {
 
+
                     if (
                         navigator.share
                     ) {
@@ -3405,6 +2686,7 @@ if (logoutBtn) {
                         );
 
                     }
+
 
                     else if (
                         navigator.clipboard
@@ -3416,11 +2698,13 @@ if (logoutBtn) {
                                 window.location.href
                             );
 
+
                         alert(
                             "Unique Academic link copied!"
                         );
 
                     }
+
 
                     else {
 
@@ -3431,6 +2715,7 @@ if (logoutBtn) {
                     }
 
                 }
+
 
                 catch (error) {
 
@@ -3449,6 +2734,7 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        CONTINUE LEARNING
     ================================================= */
@@ -3457,6 +2743,7 @@ if (logoutBtn) {
         document.getElementById(
             "continueText"
         );
+
 
     const continueBtn =
         document.getElementById(
@@ -3481,6 +2768,7 @@ if (logoutBtn) {
         savedSubjectUrl
     ) {
 
+
         if (continueText) {
 
             continueText.textContent =
@@ -3496,6 +2784,7 @@ if (logoutBtn) {
             continueBtn.textContent =
                 "Continue Learning";
 
+
             continueBtn.href =
                 savedSubjectUrl;
 
@@ -3504,20 +2793,23 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        SAVE LAST SUBJECT
     ================================================= */
 
     document
         .querySelectorAll(
-            ".subjectCard .button"
+            ".subjectCard .subjectOpenBtn"
         )
         .forEach(
             function (link) {
 
+
                 link.addEventListener(
                     "click",
                     function () {
+
 
                         const card =
                             link.closest(
@@ -3526,7 +2818,9 @@ if (logoutBtn) {
 
 
                         if (!card) {
+
                             return;
+
                         }
 
 
@@ -3535,7 +2829,9 @@ if (logoutBtn) {
 
 
                         if (!subject) {
+
                             return;
+
                         }
 
 
@@ -3555,6 +2851,7 @@ if (logoutBtn) {
 
             }
         );
+
 
 
     /* =================================================
@@ -3592,6 +2889,7 @@ if (logoutBtn) {
 
     }
 
+
     catch (error) {
 
         bookmarks = [];
@@ -3599,10 +2897,12 @@ if (logoutBtn) {
     }
 
 
+
     function updateBookmarkButtons() {
 
         bookmarkButtons.forEach(
             function (button) {
+
 
                 const subject =
                     button.dataset.subject;
@@ -3614,8 +2914,10 @@ if (logoutBtn) {
                     )
                 ) {
 
+
                     button.textContent =
                         "★ Bookmarked";
+
 
                     button.classList.add(
                         "bookmarked"
@@ -3623,10 +2925,13 @@ if (logoutBtn) {
 
                 }
 
+
                 else {
+
 
                     button.textContent =
                         "⭐ Bookmark";
+
 
                     button.classList.remove(
                         "bookmarked"
@@ -3640,19 +2945,24 @@ if (logoutBtn) {
     }
 
 
+
     bookmarkButtons.forEach(
         function (button) {
+
 
             button.addEventListener(
                 "click",
                 function () {
+
 
                     const subject =
                         button.dataset.subject;
 
 
                     if (!subject) {
+
                         return;
+
                     }
 
 
@@ -3662,13 +2972,16 @@ if (logoutBtn) {
                         );
 
 
-                    if (index === -1) {
+                    if (
+                        index === -1
+                    ) {
 
                         bookmarks.push(
                             subject
                         );
 
                     }
+
 
                     else {
 
@@ -3700,6 +3013,7 @@ if (logoutBtn) {
     updateBookmarkButtons();
 
 
+
     /* =================================================
        SEARCH
     ================================================= */
@@ -3716,6 +3030,7 @@ if (logoutBtn) {
             "input",
             function () {
 
+
                 const searchValue =
                     searchInput.value
                         .trim()
@@ -3728,6 +3043,7 @@ if (logoutBtn) {
                     )
                     .forEach(
                         function (card) {
+
 
                             const subject =
                                 (
@@ -3756,6 +3072,7 @@ if (logoutBtn) {
 })();
 
 </script>
+
 
 
 </body>
