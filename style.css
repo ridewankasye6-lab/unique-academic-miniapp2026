@@ -1,4476 +1,1523 @@
 /* =====================================================
-   UNIQUE ACADEMIC
-   MAIN WEBSITE STYLE
+UNIQUE ACADEMIC
+COMPLETE GLOBAL STYLE
+Version 2.2.0
 ===================================================== */
-
-
 /* =====================================================
-   RESET
+GLOBAL
 ===================================================== */
-
-* {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
+{
+box-sizing: border-box;
 }
-
-
-html {
-
-    scroll-behavior: smooth;
-
-}
-
-
-body {
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    background:
-        #f7f9fc;
-
-    color:
-        #14213d;
-
-    min-height: 100vh;
-
-    line-height: 1.5;
-
-}
-
-
-body.menu-open {
-
-    overflow: hidden;
-
-}
-
-
-a {
-
-    color: inherit;
-
-}
-
-
-button,
-input {
-
-    font: inherit;
-
-}
-
-
-/* =====================================================
-   COLORS
-===================================================== */
-
-:root {
-
-    --blue:
-        #0865d8;
-
-    --blue-dark:
-        #0751b5;
-
-    --blue-light:
-        #eaf3ff;
-
-    --blue-soft:
-        #f3f8ff;
-
-    --text:
-        #14213d;
-
-    --muted:
-        #687386;
-
-    --white:
-        #ffffff;
-
-    --border:
-        #e0e6ef;
-
-    --green:
-        #39a852;
-
-    --yellow:
-        #f5c400;
-
-    --red:
-        #e53935;
-
-    --shadow:
-        0 3px 14px rgba(24, 53, 92, 0.10);
-
-    --shadow-hover:
-        0 8px 24px rgba(24, 53, 92, 0.16);
-
-}
-
-
-/* =====================================================
-   TOP HEADER
-===================================================== */
-
-.mainHeader {
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 1000;
-
-    width: 100%;
-
-    height: 74px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
-
-    padding:
-        0 22px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #0755bd,
-            #0867d8
-        );
-
-    color:
-        white;
-
-    box-shadow:
-        0 2px 10px
-        rgba(0, 0, 0, 0.16);
-
-}
-
-
-/* =====================================================
-   MENU BUTTON
-===================================================== */
-
-.menuBtn {
-
-    width: 52px;
-
-    height: 46px;
-
-    border: none;
-
-    border-radius: 9px;
-
-    background:
-        rgba(255, 255, 255, 0.16);
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 5px;
-
-    cursor: pointer;
-
-    flex-shrink: 0;
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.menuBtn span {
-
-    display: block;
-
-    width: 22px;
-
-    height: 2px;
-
-    border-radius: 4px;
-
-    background:
-        white;
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.menuBtn:hover {
-
-    background:
-        rgba(255, 255, 255, 0.25);
-
-}
-
-
-.menuBtn:active {
-
-    transform:
-        scale(0.96);
-
-}
-
-
-/* =====================================================
-   MENU OPEN ANIMATION
-===================================================== */
-
-.menuBtn.menuOpened span:nth-child(1) {
-
-    transform:
-        translateY(7px)
-        rotate(45deg);
-
-}
-
-
-.menuBtn.menuOpened span:nth-child(2) {
-
-    opacity: 0;
-
-}
-
-
-.menuBtn.menuOpened span:nth-child(3) {
-
-    transform:
-        translateY(-7px)
-        rotate(-45deg);
-
-}
-
-
-/* =====================================================
-   HEADER BRAND
-===================================================== */
-
-.headerBrand {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    text-decoration: none;
-
-    min-width: 0;
-
-}
-
-
-.headerLogo {
-
-    width: 52px;
-
-    height: 52px;
-
-    border-radius: 7px;
-
-    background:
-        white;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 31px;
-
-    box-shadow:
-        0 2px 7px
-        rgba(0, 0, 0, 0.12);
-
-    flex-shrink: 0;
-
-}
-
-
-.headerBrandText h1 {
-
-    font-size: 21px;
-
-    font-weight: 800;
-
-    line-height: 1.1;
-
-    color:
-        white;
-
-}
-
-
-.headerBrandText p {
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    color:
-        rgba(255, 255, 255, 0.88);
-
-    margin-top: 3px;
-
-}
-
-
-/* =====================================================
-   HEADER AUTH
-===================================================== */
-
-.headerAuth {
-
-    margin-left: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-}
-
-
-.authHeaderBtn {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 5px;
-
-    min-height: 40px;
-
-    padding:
-        8px 16px;
-
-    border-radius: 9px;
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.85);
-
-    color:
-        white;
-
-    background:
-        transparent;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.authHeaderBtn:hover {
-
-    background:
-        rgba(255, 255, 255, 0.16);
-
-    transform:
-        translateY(-1px);
-
-}
-
-
-.authHeaderPrimary {
-
-    background:
-        white;
-
-    color:
-        #17345e;
-
-    border-color:
-        white;
-
-}
-
-
-.authHeaderPrimary:hover {
-
-    background:
-        #f2f6ff;
-
-    color:
-        #17345e;
-
-}
-
-
-/* =====================================================
-   HEADER PROFILE
-===================================================== */
-
-.headerProfile {
-
-    width: 44px;
-
-    height: 44px;
-
-    margin-left: 8px;
-
-    border-radius: 50%;
-
-    display: none;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background:
-        #f3f5f8;
-
-    border:
-        3px solid
-        rgba(255, 255, 255, 0.72);
-
-    text-decoration: none;
-
-    font-size: 25px;
-
-    overflow: hidden;
-
-}
-
-
-.headerProfile.authVisible {
-
-    display: flex;
-
-}
-
-
-.profileImage {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-}
-
-
-/* =====================================================
-   MENU OVERLAY
-===================================================== */
-
-.menuOverlay {
-
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 1090;
-
-    background:
-        rgba(11, 27, 52, 0.42);
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    pointer-events: none;
-
-    transition:
-        0.25s ease;
-
-}
-
-
-.menuOverlay.active {
-
-    opacity: 1;
-
-    visibility: visible;
-
-    pointer-events: auto;
-
-}
-
-
-/* =====================================================
-   SIDE MENU
-===================================================== */
-
-.sideMenu {
-
-    position: fixed;
-
-    top: 74px;
-
-    left: 0;
-
-    bottom: 0;
-
-    width: 290px;
-
-    z-index: 1100;
-
-    background:
-        white;
-
-    border-right:
-        1px solid
-        #e2e7ef;
-
-    box-shadow:
-        6px 0 20px
-        rgba(20, 45, 80, 0.12);
-
-    transform:
-        translateX(-105%);
-
-    transition:
-        transform 0.28s ease;
-
-    display: flex;
-
-    flex-direction: column;
-
-    overflow-y: auto;
-
-}
-
-
-.sideMenu.active {
-
-    transform:
-        translateX(0);
-
-}
-
-
-/* =====================================================
-   MENU PROFILE
-===================================================== */
-
-.menuProfile {
-
-    padding:
-        22px 18px 17px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
-
-    border-bottom:
-        1px solid
-        #edf0f5;
-
-}
-
-
-.profileAvatar {
-
-    width: 76px;
-
-    height: 76px;
-
-    border-radius: 50%;
-
-    background:
-        #edf1f5;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 43px;
-
-    margin-bottom: 10px;
-
-    overflow: hidden;
-
-}
-
-
-.menuProfileImage {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-}
-
-
-.profileInfo h3 {
-
-    font-size: 14px;
-
-    color:
-        #152849;
-
-    margin-bottom: 3px;
-
-}
-
-
-.profileInfo p {
-
-    color:
-        #69758a;
-
-    font-size: 12px;
-
-}
-
-
-/* =====================================================
-   MENU ITEMS
-===================================================== */
-
-.menuItems {
-
-    padding:
-        8px;
-
-}
-
-
-.menuItem {
-
-    width: 100%;
-
-    min-height: 46px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 13px;
-
-    padding:
-        10px 13px;
-
-    margin-bottom: 2px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background:
-        transparent;
-
-    color:
-        #263752;
-
-    text-decoration: none;
-
-    cursor: pointer;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    text-align: left;
-
-    transition:
-        0.18s ease;
-
-}
-
-
-.menuItem:hover {
-
-    background:
-        #eef5ff;
-
-    color:
-        #075dca;
-
-}
-
-
-.activeMenuItem {
-
-    background:
-        #e7f1ff;
-
-    color:
-        #075dca;
-
-}
-
-
-.menuIcon {
-
-    width: 21px;
-
-    min-width: 21px;
-
-    text-align: center;
-
-    font-size: 17px;
-
-}
-
-
-.menuArrow {
-
-    margin-left: auto;
-
-    font-size: 22px;
-
-    color:
-        #9aa5b5;
-
-    line-height: 1;
-
-}
-
-
-.menuButton {
-
-    font-family: inherit;
-
-}
-
-
-.authMenuHidden {
-
-    display: none !important;
-
-}
-
-
-/* =====================================================
-   MENU BOTTOM
-===================================================== */
-
-.menuBottom {
-
-    margin-top: auto;
-
-    border-top:
-        1px solid
-        #e7ebf1;
-
-}
-
-
-.logoutItem {
-
-    width: 100%;
-
-    min-height: 50px;
-
-    border: none;
-
-    background:
-        transparent;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 13px;
-
-    padding:
-        11px 21px;
-
-    color:
-        #e53935;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    text-align: left;
-
-}
-
-
-.logoutItem:hover {
-
-    background:
-        #fff1f1;
-
-}
-
-
-.menuVersion {
-
-    padding:
-        15px 22px 18px;
-
-    color:
-        #7b8798;
-
-    font-size: 10px;
-
-    line-height: 1.7;
-
-}
-
-
-.menuVersion small {
-
-    font-size: 9px;
-
-}
-
-
-/* =====================================================
-   MAIN PAGE
-===================================================== */
-
-.pageLayout {
-
-    width: 100%;
-
-}
-
-
-.mainContent {
-
-    max-width:
-        1380px;
-
-    margin:
-        0 auto;
-
-    padding:
-        16px 20px 0;
-
-}
-
-
-/* =====================================================
-   HERO
-===================================================== */
-
-.hero {
-
-    width: 100%;
-
-    min-height: 290px;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            110deg,
-            #eaf4ff,
-            #dceaff
-        );
-
-    box-shadow:
-        var(--shadow);
-
-    margin-bottom:
-        20px;
-
-}
-
-
-.heroContent {
-
-    min-height: 290px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    padding:
-        30px 40px 25px;
-
-}
-
-
-.heroText {
-
-    width: 52%;
-
-    max-width: 570px;
-
-}
-
-
-.heroSmallTitle {
-
-    font-size: 18px;
-
-    font-weight: 800;
-
-    color:
-        #0757b8;
-
-    margin-bottom: 2px;
-
-}
-
-
-.heroText h2 {
-
-    color:
-        #071c4a;
-
-    font-size: 32px;
-
-    line-height: 1.15;
-
-    margin-bottom: 16px;
-
-    font-weight: 800;
-
-}
-
-
-.heroText p {
-
-    color:
-        #263b5c;
-
-    font-size: 15px;
-
-    font-weight: 600;
-
-    max-width: 500px;
-
-    margin-bottom: 10px;
-
-}
-
-
-.heroButton {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-top: 12px;
-
-    padding:
-        11px 18px;
-
-    border-radius: 8px;
-
-    background:
-        #0865d8;
-
-    color:
-        white;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 800;
-
-    box-shadow:
-        0 4px 12px
-        rgba(8, 101, 216, 0.25);
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.heroButton:hover {
-
-    background:
-        #0754b6;
-
-    transform:
-        translateY(-2px);
-
-}
-
-
-/* =====================================================
-   HERO VISUAL
-===================================================== */
-
-.heroVisual {
-
-    width: 45%;
-
-    height: 260px;
-
-    position: relative;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-}
-
-
-.heroBooks {
-
-    width: 430px;
-
-    height: 230px;
-
-    position: relative;
-
-}
-
-
-/* Graduation cap */
-
-.graduationCap {
-
-    position: absolute;
-
-    top: 8px;
-
-    right: 85px;
-
-    font-size: 75px;
-
-    transform:
-        rotate(-2deg);
-
-    z-index: 6;
-
-    filter:
-        drop-shadow(
-            0 5px 4px
-            rgba(0, 0, 0, 0.2)
-        );
-
-}
-
-
-/* Books */
-
-.book {
-
-    position: absolute;
-
-    left: 80px;
-
-    width: 270px;
-
-    height: 27px;
-
-    border-radius: 5px;
-
-    box-shadow:
-        0 3px 5px
-        rgba(0, 0, 0, 0.15);
-
-}
-
-
-.book1 {
-
-    bottom: 38px;
-
-    background:
-        #0c5fba;
-
-    transform:
-        rotate(1deg);
-
-}
-
-
-.book2 {
-
-    bottom: 64px;
-
-    background:
-        #ffffff;
-
-    border:
-        3px solid
-        #e0e5ec;
-
-    transform:
-        rotate(-1deg);
-
-}
-
-
-.book3 {
-
-    bottom: 90px;
-
-    background:
-        #176dca;
-
-    transform:
-        rotate(1deg);
-
-}
-
-
-.book4 {
-
-    bottom: 116px;
-
-    background:
-        #f5f6f8;
-
-    border:
-        3px solid
-        #dce1e8;
-
-    transform:
-        rotate(-1deg);
-
-}
-
-
-.book5 {
-
-    bottom: 142px;
-
-    background:
-        #f3b900;
-
-    transform:
-        rotate(1deg);
-
-}
-
-
-/* Pencil cup */
-
-.pencilCup {
-
-    position: absolute;
-
-    bottom: 17px;
-
-    left: 22px;
-
-    width: 68px;
-
-    height: 73px;
-
-    border-radius:
-        10px 10px 17px 17px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #0872db,
-            #0957ad
-        );
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 35px;
-
-    box-shadow:
-        0 6px 10px
-        rgba(0, 0, 0, 0.15);
-
-}
-
-
-/* Plant */
-
-.heroPlant {
-
-    position: absolute;
-
-    bottom: 13px;
-
-    right: 15px;
-
-    font-size: 67px;
-
-}
-
-
-/* =====================================================
-   SECTION TITLE
-===================================================== */
-
-.sectionTitle {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    color:
-        #162c51;
-
-    font-size: 18px;
-
-    font-weight: 800;
-
-    margin-bottom: 13px;
-
-}
-
-
-.sectionTitle span {
-
-    font-size: 22px;
-
-}
-
-
-/* =====================================================
-   QUICK ACCESS
-===================================================== */
-
-.quickAccess {
-
-    margin-bottom:
-        20px;
-
-}
-
-
-.quickGrid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(6, 1fr);
-
-    gap: 13px;
-
-}
-
-
-.quickCard {
-
-    min-height: 102px;
-
-    border:
-        1px solid
-        #e7ebf1;
-
-    border-radius: 11px;
-
-    background:
-        white;
-
-    box-shadow:
-        var(--shadow);
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    text-decoration: none;
-
-    color:
-        #253653;
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.quickCard:hover {
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        var(--shadow-hover);
-
-    border-color:
-        #cbdcf5;
-
-}
-
-
-.quickIcon {
-
-    width: 45px;
-
-    height: 45px;
-
-    border-radius: 10px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 25px;
-
-}
-
-
-.subjectsIcon {
-
-    background:
-        #edf7ed;
-
-}
-
-
-.pdfIcon {
-
-    background:
-        #eaf3ff;
-
-}
-
-
-.videoIcon {
-
-    background:
-        #f2eafd;
-
-}
-
-
-.quizIcon {
-
-    background:
-        #ffecec;
-
-}
-
-
-.bookmarkIcon {
-
-    background:
-        #fff5d7;
-
-}
-
-
-.profileIcon {
-
-    background:
-        #eeebff;
-
-}
-
-
-.quickCard strong {
-
-    font-size: 13px;
-
-}
-
-
-/* =====================================================
-   CONTINUE LEARNING
-===================================================== */
-
-.continueCard {
-
-    width: 100%;
-
-    margin-bottom:
-        19px;
-
-    padding:
-        17px 20px;
-
-    border:
-        1px solid
-        #dcebe0;
-
-    border-radius: 11px;
-
-    background:
-        linear-gradient(
-            100deg,
-            #f0faf3,
-            #f8fcf9
-        );
-
-    box-shadow:
-        0 2px 9px
-        rgba(36, 80, 49, 0.06);
-
-}
-
-
-.continueContent {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-}
-
-
-.continueContent h2 {
-
-    color:
-        #193e2b;
-
-    font-size: 17px;
-
-    margin-bottom: 4px;
-
-}
-
-
-.continueContent p {
-
-    color:
-        #647567;
-
-    font-size: 13px;
-
-}
-
-
-.continueButton {
-
-    flex-shrink: 0;
-
-    padding:
-        10px 21px;
-
-    border-radius: 8px;
-
-    background:
-        #3c9b4b;
-
-    color:
-        white;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.continueButton:hover {
-
-    background:
-        #31813d;
-
-    transform:
-        translateY(-1px);
-
-}
-
-
-/* =====================================================
-   SEARCH
-===================================================== */
-
-.searchContainer {
-
-    position: relative;
-
-    width: 100%;
-
-    height: 49px;
-
-    margin-bottom:
-        18px;
-
-}
-
-
-.searchContainer input {
-
-    width: 100%;
-
-    height: 100%;
-
-    padding:
-        0 48px;
-
-    border:
-        1px solid
-        #dfe5ed;
-
-    border-radius: 10px;
-
-    background:
-        white;
-
-    color:
-        #172944;
-
-    outline: none;
-
-    font-size: 13px;
-
-    box-shadow:
-        0 2px 8px
-        rgba(20, 40, 70, 0.07);
-
-    transition:
-        0.2s ease;
-
-}
-
-
-.searchContainer input:focus {
-
-    border-color:
-        #4c91e9;
-
-    box-shadow:
-        0 0 0 3px
-        rgba(8, 101, 216, 0.10);
-
-}
-
-
-.searchIcon {
-
-    position: absolute;
-
-    left: 17px;
-
-    top: 50%;
-
-    transform:
-        translateY(-50%);
-
-    font-size: 16px;
-
-    z-index: 2;
-
-    pointer-events: none;
-
-}
-
-
-.clearSearch {
-
-    position: absolute;
-
-    right: 13px;
-
-    top: 50%;
-
-    transform:
-        translateY(-50%);
-
-    display: none;
-
-    border: none;
-
-    background:
-        #edf1f6;
-
-    color:
-        #5f6d81;
-
-    width: 26px;
-
-    height: 26px;
-
-    border-radius: 50%;
-
-    cursor: pointer;
-
-    font-size: 20px;
-
-    line-height: 20px;
-
-}
-
-
-/* =====================================================
-   SUBJECT SECTION
-===================================================== */
-
-.subjectsSection {
-
-    scroll-margin-top:
-        90px;
-
-}
-
-
-.subjectHeading {
-
-    margin-bottom:
-        14px;
-
-}
-
-
-/* =====================================================
-   SUBJECT GRID
-===================================================== */
-
-.subjectGrid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    gap: 15px;
-
-}
-
-
-/* =====================================================
-   SUBJECT CARD
-===================================================== */
-
-.subjectCard {
-
-    min-width: 0;
-
-    overflow: hidden;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        #dfe5ed;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 3px 9px
-        rgba(25, 48, 79, 0.10);
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-}
-
-
-.subjectCard:hover {
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        var(--shadow-hover);
-
-}
-
-
-/* =====================================================
-   SUBJECT IMAGE
-===================================================== */
-
-.subjectImage {
-
-    width: 100%;
-
-    height: 135px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #dcecff,
-            #edf5ff
-        );
-
-    overflow: hidden;
-
-    position: relative;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-}
-
-
-.subjectImage img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-}
-
-
-.fallbackEmoji {
-
-    position: absolute;
-
-    display: none;
-
-    font-size: 60px;
-
-}
-
-
-.imageFallback {
-
-    background:
-        linear-gradient(
-            135deg,
-            #dcecff,
-            #eef5ff
-        );
-
-}
-
-
-.imageFallback .fallbackEmoji {
-
-    display: block;
-
-}
-
-
-/* =====================================================
-   SUBJECT BLUE TITLE
-===================================================== */
-
-.subjectTitleBar {
-
-    min-height: 31px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding:
-        5px 7px;
-
-    background:
-        #0867d8;
-
-    color:
-        white;
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    text-align: center;
-
-}
-
-
-/* =====================================================
-   SUBJECT INFO
-===================================================== */
-
-.subjectInfo {
-
-    padding:
-        7px 6px 8px;
-
-}
-
-
-.subjectInfo p {
-
-    text-align: center;
-
-    color:
-        #718096;
-
-    font-size: 11px;
-
-    margin-bottom: 7px;
-
-}
-
-
-/* =====================================================
-   SUBJECT BUTTONS
-===================================================== */
-
-.subjectActions {
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1.12fr;
-
-    gap: 5px;
-
-}
-
-
-.openButton,
-.bookmarkBtn {
-
-    min-height: 29px;
-
-    border-radius: 7px;
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    cursor: pointer;
-
-    text-decoration: none;
-
-    transition:
-        0.18s ease;
-
-}
-
-
-.openButton {
-
-    color:
-        #075ac4;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        #8db7ed;
-
-}
-
-
-.openButton:hover {
-
-    background:
-        #edf5ff;
-
-    border-color:
-        #0867d8;
-
-}
-
-
-.bookmarkBtn {
-
-    color:
-        #30415d;
-
-    background:
-        #fff;
-
-    border:
-        1px solid
-        #d4dce7;
-
-}
-
-
-.bookmarkBtn:hover {
-
-    background:
-        #fff9e5;
-
-    border-color:
-        #e7c94e;
-
-}
-
-
-.bookmarkBtn.bookmarked {
-
-    color:
-        #9a7200;
-
-    background:
-        #fff7d7;
-
-    border-color:
-        #e7c64d;
-
-}
-
-
-/* =====================================================
-   NO SEARCH RESULTS
-===================================================== */
-
-.noResults {
-
-    display: none;
-
-    text-align: center;
-
-    padding:
-        35px 15px;
-
-    color:
-        #718096;
-
-    font-size: 14px;
-
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-.siteFooter {
-
-    margin-top:
-        25px;
-
-    margin-left:
-        -20px;
-
-    margin-right:
-        -20px;
-
-    min-height: 55px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #0756be,
-            #0868d9
-        );
-
-    color:
-        white;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    padding:
-        12px 20px;
-
-}
-
-
-.siteFooter p {
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-}
-
-
-.siteFooter span {
-
-    margin:
-        0 8px;
-
-    opacity:
-        0.75;
-
-}
-
-
-/* =====================================================
-   DARK MODE
-===================================================== */
-
-html.dark-mode body {
-
-    background:
-        #101722;
-
-    color:
-        #e9eef7;
-
-}
-
-
-html.dark-mode .sideMenu,
-html.dark-mode .quickCard,
-html.dark-mode .subjectCard,
-html.dark-mode .searchContainer input {
-
-    background:
-        #182231;
-
-    border-color:
-        #29384d;
-
-}
-
-
-html.dark-mode .profileInfo h3,
-html.dark-mode .menuItem,
-html.dark-mode .quickCard,
-html.dark-mode .sectionTitle,
-html.dark-mode .subjectInfo p {
-
-    color:
-        #e8eef8;
-
-}
-
-
-html.dark-mode .profileInfo p,
-html.dark-mode .continueContent p {
-
-    color:
-        #aebbd0;
-
-}
-
-
-html.dark-mode .menuItem:hover,
-html.dark-mode .activeMenuItem {
-
-    background:
-        #203653;
-
-    color:
-        #7db4ff;
-
-}
-
-
-html.dark-mode .searchContainer input {
-
-    color:
-        #f3f6fb;
-
-}
-
-
-html.dark-mode .subjectInfo {
-
-    background:
-        #182231;
-
-}
-
-
-html.dark-mode .openButton,
-html.dark-mode .bookmarkBtn {
-
-    background:
-        #182231;
-
-    color:
-        #d8e5f7;
-
-    border-color:
-        #40516a;
-
-}
-
-
-html.dark-mode .continueCard {
-
-    background:
-        linear-gradient(
-            100deg,
-            #172a20,
-            #19271f
-        );
-
-    border-color:
-        #294937;
-
-}
-
-
-html.dark-mode .continueContent h2 {
-
-    color:
-        #ccebd4;
-
-}
-
-
-html.dark-mode .menuBottom {
-
-    border-color:
-        #29384d;
-
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1100px) {
-
-
-    .mainContent {
-
-        padding-left:
-            16px;
-
-        padding-right:
-            16px;
-
-    }
-
-
-    .subjectGrid {
-
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
-    }
-
-
-    .quickGrid {
-
-        grid-template-columns:
-            repeat(3, 1fr);
-
-    }
-
-
-    .heroText {
-
-        width: 55%;
-
-    }
-
-
-    .heroVisual {
-
-        width: 43%;
-
-    }
-
-
-    .heroBooks {
-
-        transform:
-            scale(0.82);
-
-    }
-
-}
-
-
-/* =====================================================
-   SMALL TABLET
-===================================================== */
-
-@media (max-width: 800px) {
-
-
-    .mainHeader {
-
-        height: 68px;
-
-        padding:
-            0 14px;
-
-        gap: 11px;
-
-    }
-
-
-    .sideMenu {
-
-        top: 68px;
-
-        width:
-            min(290px, 86vw);
-
-    }
-
-
-    .menuBtn {
-
-        width: 46px;
-
-        height: 43px;
-
-    }
-
-
-    .headerLogo {
-
-        width: 45px;
-
-        height: 45px;
-
-        font-size: 27px;
-
-    }
-
-
-    .headerBrandText h1 {
-
-        font-size: 18px;
-
-    }
-
-
-    .headerBrandText p {
-
-        font-size: 10px;
-
-    }
-
-
-    .authHeaderBtn {
-
-        padding:
-            7px 10px;
-
-        font-size: 12px;
-
-    }
-
-
-    .headerProfile {
-
-        width: 40px;
-
-        height: 40px;
-
-        margin-left: 0;
-
-    }
-
-
-    .heroContent {
-
-        padding:
-            25px;
-
-    }
-
-
-    .heroText h2 {
-
-        font-size: 27px;
-
-    }
-
-
-    .heroVisual {
-
-        width: 40%;
-
-    }
-
-
-    .heroBooks {
-
-        transform:
-            scale(0.68);
-
-    }
-
-
-    .subjectGrid {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 600px) {
-
-
-    body {
-
-        font-size: 14px;
-
-    }
-
-
-    .mainHeader {
-
-        height: 62px;
-
-        padding:
-            0 9px;
-
-    }
-
-
-    .sideMenu {
-
-        top: 62px;
-
-    }
-
-
-    .menuBtn {
-
-        width: 42px;
-
-        height: 40px;
-
-        border-radius: 8px;
-
-    }
-
-
-    .menuBtn span {
-
-        width: 20px;
-
-    }
-
-
-    .headerBrand {
-
-        gap: 7px;
-
-    }
-
-
-    .headerLogo {
-
-        width: 39px;
-
-        height: 39px;
-
-        font-size: 23px;
-
-    }
-
-
-    .headerBrandText h1 {
-
-        font-size: 15px;
-
-    }
-
-
-    .headerBrandText p {
-
-        font-size: 8px;
-
-    }
-
-
-    .headerAuth {
-
-        gap: 4px;
-
-    }
-
-
-    .authHeaderBtn {
-
-        min-height: 34px;
-
-        padding:
-            6px 8px;
-
-        font-size: 10px;
-
-        border-radius: 7px;
-
-    }
-
-
-    .headerProfile {
-
-        width: 36px;
-
-        height: 36px;
-
-        border-width: 2px;
-
-    }
-
-
-    .mainContent {
-
-        padding:
-            10px 10px 0;
-
-    }
-
-
-    /* HERO */
-
-    .hero {
-
-        min-height:
-            280px;
-
-        margin-bottom:
-            15px;
-
-    }
-
-
-    .heroContent {
-
-        min-height:
-            280px;
-
-        padding:
-            22px 18px;
-
-    }
-
-
-    .heroText {
-
-        width:
-            100%;
-
-        max-width:
-            100%;
-
-        position:
-            relative;
-
-        z-index:
-            2;
-
-    }
-
-
-    .heroSmallTitle {
-
-        font-size:
-            15px;
-
-    }
-
-
-    .heroText h2 {
-
-        font-size:
-            25px;
-
-        margin-bottom:
-            11px;
-
-    }
-
-
-    .heroText p {
-
-        font-size:
-            13px;
-
-        max-width:
-            270px;
-
-        margin-bottom:
-            7px;
-
-    }
-
-
-    .heroButton {
-
-        font-size:
-            12px;
-
-        padding:
-            10px 14px;
-
-    }
-
-
-    .heroVisual {
-
-        position:
-            absolute;
-
-        right:
-            -55px;
-
-        width:
-            260px;
-
-        height:
-            220px;
-
-        opacity:
-            0.55;
-
-    }
-
-
-    .heroBooks {
-
-        transform:
-            scale(0.65);
-
-    }
-
-
-    /* QUICK */
-
-    .quickGrid {
-
-        grid-template-columns:
-            repeat(3, 1fr);
-
-        gap:
-            8px;
-
-    }
-
-
-    .quickCard {
-
-        min-height:
-            88px;
-
-        border-radius:
-            9px;
-
-    }
-
-
-    .quickIcon {
-
-        width:
-            37px;
-
-        height:
-            37px;
-
-        font-size:
-            21px;
-
-    }
-
-
-    .quickCard strong {
-
-        font-size:
-            10px;
-
-    }
-
-
-    .sectionTitle {
-
-        font-size:
-            16px;
-
-        margin-bottom:
-            10px;
-
-    }
-
-
-    /* CONTINUE */
-
-    .continueCard {
-
-        padding:
-            13px;
-
-    }
-
-
-    .continueContent {
-
-        align-items:
-            center;
-
-    }
-
-
-    .continueContent h2 {
-
-        font-size:
-            14px;
-
-    }
-
-
-    .continueContent p {
-
-        font-size:
-            11px;
-
-    }
-
-
-    .continueButton {
-
-        padding:
-            9px 12px;
-
-        font-size:
-            10px;
-
-    }
-
-
-    /* SEARCH */
-
-    .searchContainer {
-
-        height:
-            45px;
-
-        margin-bottom:
-            14px;
-
-    }
-
-
-    .searchContainer input {
-
-        font-size:
-            12px;
-
-    }
-
-
-    /* SUBJECTS */
-
-    .subjectGrid {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap:
-            9px;
-
-    }
-
-
-    .subjectImage {
-
-        height:
-            115px;
-
-    }
-
-
-    .subjectTitleBar {
-
-        min-height:
-            29px;
-
-        font-size:
-            10px;
-
-    }
-
-
-    .subjectInfo {
-
-        padding:
-            6px 5px 7px;
-
-    }
-
-
-    .subjectInfo p {
-
-        font-size:
-            9px;
-
-        margin-bottom:
-            6px;
-
-    }
-
-
-    .subjectActions {
-
-        gap:
-            4px;
-
-    }
-
-
-    .openButton,
-    .bookmarkBtn {
-
-        min-height:
-            27px;
-
-        font-size:
-            8px;
-
-        padding:
-            2px;
-
-    }
-
-
-    .siteFooter {
-
-        margin-left:
-            -10px;
-
-        margin-right:
-            -10px;
-
-    }
-
-
-    .siteFooter p {
-
-        font-size:
-            10px;
-
-    }
-
-}
-
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 380px) {
-
-
-    .headerBrandText h1 {
-
-        font-size:
-            13px;
-
-    }
-
-
-    .headerBrandText p {
-
-        display:
-            none;
-
-    }
-
-
-    .authHeaderBtn {
-
-        padding:
-            5px 6px;
-
-        font-size:
-            9px;
-
-    }
-
-
-    .headerProfile {
-
-        width:
-            33px;
-
-        height:
-            33px;
-
-    }
-
-
-    .heroText h2 {
-
-        font-size:
-            22px;
-
-    }
-
-
-    .heroText p {
-
-        font-size:
-            12px;
-
-    }
-
-
-    .quickGrid {
-
-        gap:
-            5px;
-
-    }
-
-
-    .quickCard {
-
-        min-height:
-            80px;
-
-    }
-
-
-    .quickCard strong {
-
-        font-size:
-            9px;
-
-    }
-
-
-    .subjectImage {
-
-        height:
-            100px;
-
-    }
-
-
-    .subjectTitleBar {
-
-        font-size:
-            9px;
-
-    }
-
-
-    .openButton,
-    .bookmarkBtn {
-
-        font-size:
-            7px;
-
-    }
-
-}
-
-
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
-
-button:focus-visible,
-a:focus-visible,
-input:focus-visible {
-
-    outline:
-        3px solid
-        rgba(8, 101, 216, 0.35);
-
-    outline-offset:
-        2px;
-
-}
-
-
-/* =====================================================
-   REDUCED MOTION
-===================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-
-        scroll-behavior:
-            auto !important;
-
-        transition:
-            none !important;
-
-        animation:
-            none !important;
-
-    }
-
-}
-/* =====================================================
-   UNIQUE ACADEMIC
-   PROFESSIONAL SUBJECT CARDS
-===================================================== */
-
-.subjectsGrid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    gap: 16px;
-
-    width: 100%;
-
-    max-width: 100%;
-
-    margin: 0 auto;
-
-}
-
-
-
-/* =====================================================
-   SUBJECT CARD
-===================================================== */
-
-.subjectCard {
-
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 0 !important;
-
-    margin: 0 !important;
-
-    border-radius: 14px;
-
-    background: #ffffff;
-
-    border: 1px solid #e5e7eb;
-
-    box-shadow:
-        0 3px 12px rgba(15, 23, 42, 0.08);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-
-}
-
-
-
-/* =====================================================
-   CARD HOVER
-===================================================== */
-
-.subjectCard:hover {
-
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 25px rgba(15, 23, 42, 0.14);
-
-}
-
-
-
-/* =====================================================
-   IMAGE CONTAINER
-===================================================== */
-
-.subjectImageWrap {
-
-    position: relative;
-
-    width: 100%;
-
-    height: 155px;
-
-    overflow: hidden;
-
-    background: #eef2f7;
-
-}
-
-
-
-/* =====================================================
-   SUBJECT IMAGE
-===================================================== */
-
-.subjectImage {
-
-    display: block;
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    animation:
-        subjectImageFloat
-        5s
-        ease-in-out
-        infinite;
-
-    transform-origin: center center;
-
-    will-change: transform;
-
-}
-
-
-
-/* =====================================================
-   PROFESSIONAL IMAGE MOVEMENT
-===================================================== */
-
-@keyframes subjectImageFloat {
-
-    0% {
-
-        transform:
-            scale(1)
-            translateY(0);
-
-    }
-
-    50% {
-
-        transform:
-            scale(1.035)
-            translateY(-2px);
-
-    }
-
-    100% {
-
-        transform:
-            scale(1)
-            translateY(0);
-
-    }
-
-}
-
-
-
-/* =====================================================
-   HOVER IMAGE EFFECT
-===================================================== */
-
-.subjectCard:hover .subjectImage {
-
-    animation-play-state: paused;
-
-    transform:
-        scale(1.07);
-
-    transition:
-        transform 0.5s ease;
-
-}
-
-
-
-/* =====================================================
-   CARD CONTENT
-===================================================== */
-
-.subjectCardContent {
-
-    padding: 10px 10px 11px;
-
-    text-align: center;
-
-}
-
-
-
-/* =====================================================
-   SUBJECT TITLE
-===================================================== */
-
-.subjectCardContent h3 {
-
-    margin: 0;
-
-    min-height: 38px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    font-size: 15px;
-
-    line-height: 1.25;
-
-    font-weight: 800;
-
-    color: #0f2a55;
-
-}
-
-
-
-/* =====================================================
-   COURSE LABEL
-===================================================== */
-
-.subjectCardContent p {
-
-    margin:
-        5px 0 9px;
-
-    font-size: 12px;
-
-    line-height: 1.2;
-
-    color: #64748b;
-
-}
-
-
-
-/* =====================================================
-   SUBJECT ACTIONS
-===================================================== */
-
-.subjectActions {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 6px;
-
-    width: 100%;
-
-}
-
-
-
-/* =====================================================
-   OPEN BUTTON
-===================================================== */
-
-.subjectActions .button {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    min-height: 30px;
-
-    padding:
-        5px 9px;
-
-    border-radius: 7px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-}
-
-
-
-/* =====================================================
-   BOOKMARK BUTTON
-===================================================== */
-
-.subjectActions .bookmarkBtn {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    min-height: 30px;
-
-    padding:
-        5px 9px;
-
-    border-radius: 7px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    white-space: nowrap;
-
-}
-
-
-
-/* =====================================================
-   BOOKMARKED STATE
-===================================================== */
-
-.subjectActions .bookmarkBtn.bookmarked {
-
-    font-weight: 800;
-
-}
-
-
-
-/* =====================================================
-   DARK MODE
-===================================================== */
-
-body.dark-mode .subjectCard {
-
-    background: #172235;
-
-    border-color: #2d3d55;
-
-    box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.25);
-
-}
-
-
-
-body.dark-mode .subjectCardContent h3 {
-
-    color: #f1f5f9;
-
-}
-
-
-
-body.dark-mode .subjectCardContent p {
-
-    color: #aebdce;
-
-}
-
-
-
-body.dark-mode .subjectImageWrap {
-
-    background: #1e293b;
-
-}
-
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1000px) {
-
-    .subjectsGrid {
-
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
-        gap: 14px;
-
-    }
-
-
-    .subjectImageWrap {
-
-        height: 150px;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   SMALL TABLET
-===================================================== */
-
-@media (max-width: 760px) {
-
-    .subjectsGrid {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 13px;
-
-    }
-
-
-    .subjectImageWrap {
-
-        height: 145px;
-
-    }
-
-
-    .subjectCardContent h3 {
-
-        font-size: 14px;
-
-    }
-
-
-    .subjectActions {
-
-        gap: 5px;
-
-    }
-
-
-    .subjectActions .button,
-    .subjectActions .bookmarkBtn {
-
-        font-size: 11px;
-
-        padding:
-            5px 7px;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 480px) {
-
-    .subjectsGrid {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 10px;
-
-    }
-
-
-    .subjectImageWrap {
-
-        height: 125px;
-
-    }
-
-
-    .subjectCard {
-
-        border-radius: 11px;
-
-    }
-
-
-    .subjectCardContent {
-
-        padding:
-            8px 5px 9px;
-
-    }
-
-
-    .subjectCardContent h3 {
-
-        min-height: 35px;
-
-        font-size: 12px;
-
-        line-height: 1.2;
-
-    }
-
-
-    .subjectCardContent p {
-
-        margin:
-            4px 0 7px;
-
-        font-size: 10px;
-
-    }
-
-
-    .subjectActions {
-
-        gap: 4px;
-
-    }
-
-
-    .subjectActions .button,
-    .subjectActions .bookmarkBtn {
-
-        min-height: 27px;
-
-        padding:
-            4px 5px;
-
-        font-size: 10px;
-
-        border-radius: 6px;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 360px) {
-
-    .subjectsGrid {
-
-        gap: 8px;
-
-    }
-
-
-    .subjectImageWrap {
-
-        height: 110px;
-
-    }
-
-
-    .subjectCardContent h3 {
-
-        font-size: 11px;
-
-    }
-
-
-    .subjectActions .button,
-    .subjectActions .bookmarkBtn {
-
-        font-size: 9px;
-
-        padding:
-            4px;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .subjectImage {
-
-        animation: none;
-
-    }
-
-
-    .subjectCard:hover .subjectImage {
-
-        transform: none;
-
-    }
-
-}
-/* =========================================================
-   UNIQUE ACADEMIC — SUBJECT PAGE RESTORATION
-   Keeps inside subject pages separate from homepage cards
-========================================================= */
-
-.subjectPage {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 25px 20px 50px;
-}
-
-.subjectPage .pageNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 25px;
-    padding: 12px 0;
-}
-
-.subjectPage .pageNav a,
-.subjectPage .pageNav button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    padding: 10px 18px;
-    border: 1px solid #d6dce5;
-    border-radius: 10px;
-    background: #ffffff;
-    color: #14213d;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 2px 7px rgba(0,0,0,.06);
-}
-
-.subjectPage .pageNav a:hover,
-.subjectPage .pageNav button:hover {
-    background: #f1f6ff;
-    border-color: #1769e0;
-    color: #1769e0;
-}
-
-.subjectPage .subjectIntro {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.subjectPage .subjectIntro .subjectIcon {
-    font-size: 45px;
-    margin-bottom: 5px;
-}
-
-.subjectPage .subjectIntro h1 {
-    margin: 0;
-    color: #14213d;
-    font-size: 42px;
-    font-weight: 800;
-}
-
-.subjectPage .subjectIntro p {
-    margin: 8px 0 0;
-    color: #5c6678;
-    font-size: 18px;
-}
-
-/* Section headings */
-
-.subjectPage section {
-    margin: 30px 0;
-}
-
-.subjectPage section h2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 0 18px;
-    color: #14213d;
-    font-size: 27px;
-    font-weight: 800;
-}
-
-/* Chapters */
-
-.subjectPage .chapter-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-}
-
-.subjectPage .chapter-list a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-height: 58px;
-    padding: 15px 18px;
-    border: 1px solid #dce3ed;
-    border-radius: 12px;
-    background: #ffffff;
-    color: #1c2940;
-    font-size: 17px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 3px 10px rgba(20,33,61,.06);
-    transition: .2s ease;
-}
-
-.subjectPage .chapter-list a:hover {
-    transform: translateY(-2px);
-    border-color: #1769e0;
-    color: #1769e0;
-    box-shadow: 0 6px 16px rgba(23,105,224,.12);
-}
-
-.subjectPage .chapter-list .locked {
-    color: #7c8491;
-    cursor: not-allowed;
-}
-
-.subjectPage .chapter-list .locked:hover {
-    transform: none;
-    border-color: #dce3ed;
-    color: #7c8491;
-}
-
-/* Resources */
-
-.subjectPage .resource-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-}
-
-.subjectPage .resource-list a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 18px;
-    border-radius: 12px;
-    background: #ffffff;
-    border: 1px solid #dce3ed;
-    color: #14213d;
-    font-size: 17px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 3px 10px rgba(20,33,61,.06);
-}
-
-.subjectPage .resource-list a:hover {
-    border-color: #1769e0;
-    color: #1769e0;
-}
-
-/* Quiz cards */
-
-.subjectPage .quiz-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.subjectPage .quiz-card {
-    padding: 20px;
-    border: 1px solid #dce3ed;
-    border-radius: 14px;
-    background: #ffffff;
-    box-shadow: 0 4px 14px rgba(20,33,61,.07);
-}
-
-.subjectPage .quiz-card h3 {
-    margin: 5px 0 10px;
-    color: #14213d;
-    font-size: 20px;
-}
-
-.subjectPage .quiz-card p {
-    margin: 5px 0;
-    color: #697386;
-}
-
-.subjectPage .quiz-card a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12px;
-    padding: 9px 16px;
-    border-radius: 9px;
-    background: #1769e0;
-    color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-/* Progress */
-
-.subjectPage .progress {
-    height: 9px;
-    margin: 10px 0;
-    overflow: hidden;
-    border-radius: 20px;
-    background: #e8edf4;
-}
-
-.subjectPage .progress-bar {
-    height: 100%;
-    border-radius: inherit;
-    background: #1769e0;
-}
-
-/* Mobile */
-
-@media (max-width: 700px) {
-
-    .subjectPage {
-        padding: 18px 14px 40px;
-    }
-
-    .subjectPage .pageNav {
-        margin-bottom: 20px;
-    }
-
-    .subjectPage .pageNav a,
-    .subjectPage .pageNav button {
-        padding: 9px 13px;
-        font-size: 14px;
-    }
-
-    .subjectPage .subjectIntro h1 {
-        font-size: 34px;
-    }
-
-    .subjectPage .subjectIntro p {
-        font-size: 16px;
-    }
-
-    .subjectPage section h2 {
-        font-size: 23px;
-    }
-
-    .subjectPage .chapter-list,
-    .subjectPage .resource-list,
-    .subjectPage .quiz-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .subjectPage .chapter-list a,
-    .subjectPage .resource-list a {
-        font-size: 16px;
-    }
-}
-/* =========================================================
-   UNIQUE ACADEMIC — HOME PAGE OPEN BUTTON
-   ========================================================= */
-
-.subject-card .open-btn,
-.subject-card a.open-btn,
-.subject-card button.open-btn {
-    background: #0d6efd !important;
-    color: #ffffff !important;
-    border: 1px solid #0d6efd !important;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 8px 14px;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.subject-card .open-btn:hover,
-.subject-card a.open-btn:hover,
-.subject-card button.open-btn:hover {
-    background: #0056d6 !important;
-    border-color: #0056d6 !important;
-    color: #ffffff !important;
-    transform: translateY(-1px);
-}
-/* =========================================================
-   MOBILE — PREVENT HORIZONTAL PAGE MOVEMENT
-   ========================================================= */
-
 html,
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+body {
+font-family: Arial, sans-serif;
+background: #f4f6f9;
+color: #333;
+line-height: 1.8;
+transition:
+background .3s ease,
+color .3s ease;
 }
-
-img,
-video,
-iframe {
-    max-width: 100%;
-}
-
-@media (max-width: 768px) {
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .container,
-    .main-content,
-    .content,
-    .page-content {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-}
-/* =========================================================
-   UNIQUE ACADEMIC
-   SUBJECT PAGE — ORIGINAL CLEAN ACADEMIC DESIGN
-   Applies ONLY to subject pages
-   ========================================================= */
-
-body.subject-page {
-    margin: 0;
-    padding: 0;
-    background: #f7f9fc;
-    color: #17233c;
-    overflow-x: hidden;
-}
-
-/* ---------------------------------------------------------
-   SUBJECT MAIN CONTENT
-   --------------------------------------------------------- */
-
-.subject-page main,
-.subject-page .subject-container,
-.subject-page .subject-content,
-.subject-page .main-content {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 24px;
-    box-sizing: border-box;
-}
-
-/* ---------------------------------------------------------
-   BACK BUTTON
-   --------------------------------------------------------- */
-
-.subject-page .back-btn,
-.subject-page .back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-
-    padding: 9px 16px;
-
-    background: #ffffff;
-    color: #17233c;
-
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    text-decoration: none;
-    cursor: pointer;
-
-    margin-bottom: 22px;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-
-    transition: 0.2s ease;
-}
-
-.subject-page .back-btn:hover,
-.subject-page .back-button:hover {
-    background: #f1f5f9;
-}
-
-/* ---------------------------------------------------------
-   SUBJECT HEADER
-   --------------------------------------------------------- */
-
-.subject-page .subject-header {
-    background: #ffffff;
-    border-radius: 14px;
-
-    padding: 24px;
-
-    margin-bottom: 25px;
-
-    border: 1px solid #e5eaf0;
-
-    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
-}
-
-.subject-page .subject-header h1 {
-    margin: 0 0 7px;
-
-    color: #17233c;
-
-    font-size: 36px;
-    line-height: 1.2;
-
-    font-weight: 800;
-}
-
-.subject-page .subject-header p {
-    margin: 0;
-
-    color: #64748b;
-
-    font-size: 17px;
-}
-
-/* ---------------------------------------------------------
-   SUBJECT TITLE
-   --------------------------------------------------------- */
-
-.subject-page .subject-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    margin: 20px 0 6px;
-
-    color: #17233c;
-
-    font-size: 34px;
-    font-weight: 800;
-}
-
-.subject-page .course-name {
-    margin: 0 0 25px;
-
-    color: #64748b;
-
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* ---------------------------------------------------------
-   SECTION TITLES
-   --------------------------------------------------------- */
-
-.subject-page .section-title,
-.subject-page h2 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    margin: 28px 0 14px;
-
-    color: #17233c;
-
-    font-size: 27px;
-    line-height: 1.3;
-
-    font-weight: 800;
-}
-
-/* ---------------------------------------------------------
-   CHAPTERS
-   --------------------------------------------------------- */
-
-.subject-page .chapters,
-.subject-page .chapter-list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.subject-page .chapter-list li,
-.subject-page .chapters li {
-    margin: 0;
-    padding: 0;
-}
-
-.subject-page .chapter-list a,
-.subject-page .chapters a {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-
-    width: fit-content;
-    max-width: 100%;
-
-    padding: 5px 2px;
-
-    color: #334155;
-
-    font-size: 18px;
-    line-height: 1.5;
-
-    text-decoration: underline;
-
-    transition: 0.2s ease;
-}
-
-.subject-page .chapter-list a:hover,
-.subject-page .chapters a:hover {
-    color: #0d6efd;
-}
-
-/* Chapter icon */
-
-.subject-page .chapter-list a::before,
-.subject-page .chapters a::before {
-    content: "📗";
-
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
-/* Locked chapters */
-
-.subject-page .chapter-list .locked,
-.subject-page .chapters .locked {
-    color: #64748b;
-    cursor: not-allowed;
-}
-
-.subject-page .chapter-list .locked::after,
-.subject-page .chapters .locked::after {
-    content: " 🔒";
-}
-
-/* ---------------------------------------------------------
-   RESOURCES
-   --------------------------------------------------------- */
-
-.subject-page .resources,
-.subject-page .resource-list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.subject-page .resources li,
-.subject-page .resource-list li {
-    margin: 0;
-    padding: 0;
-}
-
-.subject-page .resources a,
-.subject-page .resource-list a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 5px 2px;
-
-    color: #334155;
-
-    font-size: 18px;
-
-    text-decoration: underline;
-
-    transition: 0.2s ease;
-}
-
-.subject-page .resources a:hover,
-.subject-page .resource-list a:hover {
-    color: #0d6efd;
-}
-
-/* ---------------------------------------------------------
-   CHAPTER QUIZZES
-   --------------------------------------------------------- */
-
-.subject-page .quiz-list,
-.subject-page .chapter-quizzes {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    width: 100%;
-}
-
-.subject-page .quiz-card {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-
-    padding: 15px 18px;
-
-    background: #ffffff;
-
-    border: 1px solid #e2e8f0;
-    border-left: 4px solid #0d6efd;
-
-    border-radius: 12px;
-
-    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
-
-    box-sizing: border-box;
-}
-
-.subject-page .quiz-card .quiz-info {
-    min-width: 0;
-}
-
-.subject-page .quiz-card .quiz-chapter {
-    display: inline-block;
-
-    margin-bottom: 5px;
-
-    color: #0d6efd;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    background: #eff6ff;
-
-    padding: 4px 9px;
-
-    border-radius: 20px;
-}
-
-.subject-page .quiz-card .quiz-title {
-    margin: 0;
-
-    color: #17233c;
-
-    font-size: 17px;
-    font-weight: 700;
-}
-
-/* Quiz percentage */
-
-.subject-page .quiz-progress {
-    flex-shrink: 0;
-
-    width: 52px;
-    height: 52px;
-
-    border: 2px solid #0d6efd;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #17233c;
-
-    font-size: 12px;
-    font-weight: 700;
-
-    background: #ffffff;
-}
-
-/* Quiz arrow */
-
-.subject-page .quiz-arrow,
-.subject-page .quiz-card .arrow {
-    flex-shrink: 0;
-
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #0d6efd;
-    color: #ffffff;
-
-    font-size: 19px;
-    font-weight: 800;
-
-    text-decoration: none;
-
-    transition: 0.2s ease;
-}
-
-.subject-page .quiz-arrow:hover,
-.subject-page .quiz-card .arrow:hover {
-    background: #0056d6;
-    transform: translateX(2px);
-}
-
-/* ---------------------------------------------------------
-   SUBJECT PAGE LINKS
-   --------------------------------------------------------- */
-
-.subject-page a {
-    max-width: 100%;
-}
-
-.subject-page a img {
-    max-width: 100%;
-}
-
-/* ---------------------------------------------------------
-   MOBILE SUBJECT PAGE
-   --------------------------------------------------------- */
-
-@media (max-width: 768px) {
-
-    .subject-page main,
-    .subject-page .subject-container,
-    .subject-page .subject-content,
-    .subject-page .main-content {
-        width: 100%;
-        padding: 18px 15px;
-    }
-
-    .subject-page .subject-header {
-        padding: 18px;
-    }
-
-    .subject-page .subject-header h1 {
-        font-size: 30px;
-    }
-
-    .subject-page .subject-title {
-        font-size: 30px;
-    }
-
-    .subject-page .course-name {
-        font-size: 16px;
-    }
-
-    .subject-page .section-title,
-    .subject-page h2 {
-        font-size: 24px;
-    }
-
-    .subject-page .chapter-list a,
-    .subject-page .chapters a,
-    .subject-page .resources a,
-    .subject-page .resource-list a {
-        font-size: 17px;
-    }
-
-    .subject-page .quiz-card {
-        padding: 12px;
-        gap: 9px;
-    }
-
-    .subject-page .quiz-progress {
-        width: 45px;
-        height: 45px;
-        font-size: 11px;
-    }
-
-    .subject-page .quiz-arrow,
-    .subject-page .quiz-card .arrow {
-        width: 34px;
-        height: 34px;
-        font-size: 16px;
-    }
-}
-
-/* ---------------------------------------------------------
-   VERY SMALL PHONES
-   --------------------------------------------------------- */
-
-@media (max-width: 420px) {
-
-    .subject-page main,
-    .subject-page .subject-container,
-    .subject-page .subject-content,
-    .subject-page .main-content {
-        padding: 15px 12px;
-    }
-
-    .subject-page .subject-header h1 {
-        font-size: 27px;
-    }
-
-    .subject-page .subject-title {
-        font-size: 27px;
-    }
-
-    .subject-page .section-title,
-    .subject-page h2 {
-        font-size: 22px;
-    }
-
-    .subject-page .quiz-card {
-        padding: 10px;
-    }
-
-    .subject-page .quiz-card .quiz-title {
-        font-size: 15px;
-    }
-}
-
 /* =====================================================
-   UNIQUE ACADEMIC - SUBJECT CARD OPEN BUTTON
-   FINAL FIX
+MAIN HEADER
 ===================================================== */
-
-.subjectActions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    width: 100%;
-    flex-wrap: nowrap;
+.mainHeader {
+position: sticky;  
+top: 0;  
+z-index: 1500;  
+min-height: 70px;  
+display: flex;  
+align-items: center;  
+padding: 10px 15px;  
+background:  
+    linear-gradient(  
+        135deg,  
+        #1e3a8a,  
+        #2563eb  
+    );  
+color: white;  
+box-shadow:  
+    0 4px 18px rgba(0,0,0,.18);
+}
+/* =====================================================
+HEADER MENU BUTTON
+===================================================== */
+.mainHeader .menuBtn {
+position: relative;  
+top: auto;  
+left: auto;  
+z-index: 1600;  
+flex-shrink: 0;  
+width: 45px;  
+height: 45px;  
+border: none;  
+border-radius: 13px;  
+background:  
+    rgba(255,255,255,.15);  
+color: white;  
+font-size: 25px;  
+cursor: pointer;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+transition:  
+    background .2s ease,  
+    transform .2s ease;
+}
+.mainHeader .menuBtn:hover {
+background:  
+    rgba(255,255,255,.25);  
+transform: scale(1.05);
+}
+/* =====================================================
+HEADER BRAND
+===================================================== */
+.headerBrand {
+display: flex;  
+align-items: center;  
+gap: 10px;  
+flex: 1;  
+margin-left: 12px;  
+min-width: 0;
+}
+.headerLogo {
+width: 42px;  
+height: 42px;  
+flex-shrink: 0;  
+border-radius: 13px;  
+background: white;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+font-size: 22px;
+}
+.headerBrand h1 {
+margin: 0;  
+font-size: 17px;  
+line-height: 1.2;  
+color: white;
+}
+.headerBrand p {
+margin: 2px 0 0;  
+font-size: 11px;  
+color: white;  
+opacity: .85;
+}
+/* =====================================================
+HEADER PROFILE
+===================================================== */
+.headerProfile {
+width: 44px;  
+height: 44px;  
+flex-shrink: 0;  
+border-radius: 50%;  
+background:  
+    rgba(255,255,255,.15);  
+color: white;  
+text-decoration: none;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+font-size: 21px;  
+border:  
+    1px solid rgba(255,255,255,.3);
+}
+/* =====================================================
+SIDE MENU
+===================================================== */
+.sideMenu {
+position: fixed;  
+top: 0;  
+left: 0;  
+width: 330px;  
+max-width: 88vw;  
+height: 100vh;  
+height: 100dvh;  
+z-index: 4000;  
+background: white;  
+transform:  
+    translateX(-105%);  
+transition:  
+    transform .35s  
+    cubic-bezier(.4,0,.2,1);  
+box-shadow:  
+    8px 0 35px rgba(0,0,0,.20);  
+display: flex;  
+flex-direction: column;  
+overflow-y: auto;  
+-webkit-overflow-scrolling: touch;
+}
+/* MENU OPEN */
+.sideMenu.active {
+transform:  
+    translateX(0);
+}
+/* =====================================================
+MENU OVERLAY
+===================================================== */
+.menuOverlay {
+position: fixed;  
+inset: 0;  
+z-index: 3500;  
+background:  
+    rgba(0,0,0,.45);  
+opacity: 0;  
+visibility: hidden;  
+pointer-events: none;  
+transition:  
+    opacity .3s ease,  
+    visibility .3s ease;  
+backdrop-filter: blur(3px);  
+-webkit-backdrop-filter: blur(3px);
+}
+/* OVERLAY OPEN */
+.menuOverlay.active {
+opacity: 1;  
+visibility: visible;  
+pointer-events: auto;
+}
+/* =====================================================
+MENU PROFILE
+===================================================== */
+.menuProfile {
+min-height: 150px;  
+padding: 25px 20px;  
+display: flex;  
+align-items: center;  
+gap: 15px;  
+color: white;  
+background:  
+    linear-gradient(  
+        135deg,  
+        #2563eb 0%,  
+        #1e3a8a 55%,  
+        #6d28d9 100%  
+    );  
+position: relative;  
+overflow: hidden;  
+flex-shrink: 0;
+}
+.menuProfile::after {
+content: "";  
+position: absolute;  
+width: 180px;  
+height: 180px;  
+border-radius: 50%;  
+background:  
+    rgba(255,255,255,.08);  
+right: -70px;  
+top: -80px;
+}
+.profileAvatar {
+width: 65px;  
+height: 65px;  
+flex-shrink: 0;  
+border-radius: 50%;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+background: white;  
+color: #333;  
+font-size: 32px;  
+box-shadow:  
+    0 5px 15px rgba(0,0,0,.20);  
+position: relative;  
+z-index: 2;
+}
+.profileInfo {
+position: relative;  
+z-index: 2;  
+min-width: 0;
+}
+.profileInfo h3 {
+margin: 0;  
+font-size: 17px;  
+color: white;  
+white-space: nowrap;  
+overflow: hidden;  
+text-overflow: ellipsis;
+}
+.profileInfo p {
+margin: 4px 0 0;  
+font-size: 12px;  
+color: white;  
+opacity: .85;  
+white-space: nowrap;  
+overflow: hidden;  
+text-overflow: ellipsis;
+}
+/* =====================================================
+MENU ITEMS CONTAINER
+===================================================== */
+.menuItems {
+padding: 12px 10px;
+}
+/* =====================================================
+MENU ITEM
+===================================================== */
+.menuItem {
+width: 100%;  
+min-height: 56px;  
+display: flex;  
+align-items: center;  
+gap: 14px;  
+padding: 10px 14px;  
+margin: 3px 0;  
+border: none;  
+border-radius: 13px;  
+background: transparent;  
+color: #333;  
+text-decoration: none;  
+font-size: 16px;  
+font-family: Arial, sans-serif;  
+font-weight: 600;  
+cursor: pointer;  
+text-align: left;  
+transition:  
+    background .2s ease,  
+    transform .2s ease,  
+    color .2s ease;
+}
+.menuItem:hover {
+background: #eef4ff;  
+color: #2563eb;  
+transform:  
+    translateX(3px);
+}
+/* =====================================================
+MENU ICON
+===================================================== */
+.menuIcon {
+width: 38px;  
+height: 38px;  
+flex-shrink: 0;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+border-radius: 11px;  
+background: #f0f4ff;  
+font-size: 19px;
+}
+.menuItem:hover .menuIcon {
+background: #dce8ff;
+}
+/* =====================================================
+MENU ARROW
+===================================================== */
+.menuArrow {
+margin-left: auto;  
+color: #9aa8bd;  
+font-size: 25px;  
+line-height: 1;
+}
+/* =====================================================
+BUTTON MENU ITEM
+===================================================== */
+.menuButton {
+appearance: none;  
+-webkit-appearance: none;
+}
+/* =====================================================
+MENU BOTTOM
+===================================================== */
+.menuBottom {
+margin-top: auto;  
+padding: 10px;  
+border-top:  
+    1px solid #edf0f5;
+}
+/* =====================================================
+LOGOUT
+===================================================== */
+.logoutItem {
+width: 100%;  
+min-height: 56px;  
+display: flex;  
+align-items: center;  
+gap: 14px;  
+padding: 10px 14px;  
+border: none;  
+border-radius: 13px;  
+background: #fff1f1;  
+color: #dc2626;  
+font-size: 16px;  
+font-family: Arial, sans-serif;  
+font-weight: bold;  
+cursor: pointer;  
+text-align: left;
+}
+.logoutItem .menuIcon {
+background: #ffe0e0;
+}
+.logoutItem .menuArrow {
+color: #dc2626;
+}
+/* =====================================================
+VERSION
+===================================================== */
+.menuVersion {
+text-align: center;  
+color: #8a96a8;  
+font-size: 12px;  
+padding:  
+    15px 5px 8px;
+}
+.menuVersion small {
+font-size: 10px;  
+color: #a7b0bd;
+}
+/* =====================================================
+HERO
+===================================================== */
+.hero {
+text-align: center;  
+padding:  
+    40px 20px;  
+max-width: 900px;  
+margin: 0 auto;
+}
+.hero h2 {
+font-size: 32px;  
+margin-bottom: 15px;
+}
+.hero p {
+max-width: 700px;  
+margin: auto;  
+line-height: 1.8;  
+font-size: 18px;
+}
+/* =====================================================
+BUTTON
+===================================================== */
+.button {
+display: inline-block;  
+background: #2563eb;  
+color: white;  
+padding:  
+    10px 18px;  
+text-decoration: none;  
+border-radius: 8px;  
+transition:  
+    background .2s ease,  
+    transform .2s ease;
+}
+.button:hover {
+background: #1d4ed8;
+}
+/* =====================================================
+START BUTTON
+===================================================== */
+.startBtn {
+display: inline-block;  
+margin: 20px auto;  
+padding:  
+    12px 25px;  
+background: #007bff;  
+color: white;  
+text-decoration: none;  
+border-radius: 25px;  
+font-weight: bold;
+}
+.startBtn:hover {
+background: #0056b3;
+}
+/* =====================================================
+CARDS
+===================================================== */
+.card {
+margin: 15px;  
+padding: 20px;  
+text-align: center;  
+background: white;  
+border-radius: 12px;  
+box-shadow:  
+    0 4px 10px rgba(0,0,0,.1);
+}
+.subjectCard {
+transition:  
+    transform .2s ease,  
+    box-shadow .2s ease;
+}
+.subjectCard:hover {
+transform:  
+    translateY(-2px);  
+box-shadow:  
+    0 7px 18px rgba(37,99,235,.12);
+}
+/* =====================================================
+SEARCH
+===================================================== */
+#search {
+display: block;  
+width: 90%;  
+max-width: 500px;  
+margin:  
+    20px auto;  
+padding: 12px;  
+text-align: center;  
+font-size: 16px;  
+border-radius: 10px;  
+border:  
+    1px solid #ccc;
+}
+#search:focus {
+outline: none;  
+border-color: #2563eb;
+}
+/* =====================================================
+DASHBOARD
+===================================================== */
+.dashboard {
+max-width: 900px;  
+margin:  
+    30px auto;  
+padding: 20px;  
+text-align: center;
+}
+.dashboardGrid {
+display: grid;  
+grid-template-columns:  
+    repeat(3,1fr);  
+gap: 15px;  
+margin-top: 20px;
+}
+.dashCard {
+background: white;  
+border-radius: 15px;  
+padding: 20px;  
+box-shadow:  
+    0 4px 10px rgba(0,0,0,.1);
+}
+.dashCard a {
+text-decoration: none;  
+color: #333;  
+font-weight: bold;  
+font-size: 18px;
+}
+/* =====================================================
+CONTINUE LEARNING
+===================================================== */
+#continueText {
+margin-bottom: 15px;
+}
+/* =====================================================
+FOOTER
+===================================================== */
+footer {
+text-align: center;  
+padding: 20px;  
+background: #1e3a8a;  
+color: white;  
+margin-top: 30px;
+}
+footer p {
+color: white;
+}
+/* =====================================================
+BOOKMARK
+===================================================== */
+.bookmarkBtn {
+background: #ffc107;  
+color: #111827;  
+border: none;  
+padding:  
+    8px 15px;  
+border-radius: 15px;  
+cursor: pointer;  
+transition:  
+    background .2s ease,  
+    transform .2s ease;
+}
+.bookmarkBtn:hover {
+transform:  
+    translateY(-1px);
+}
+.bookmarkBtn.bookmarked {
+background: #16a34a;  
+color: white;
+}
+.bookmarkBtn.bookmarked:hover {
+background: #15803d;
+}
+/* =====================================================
+PROGRESS
+===================================================== */
+.progressBar {
+width: 100%;  
+cursor: pointer;
+}
+/* =====================================================
+CHAPTER
+===================================================== */
+.chapter {
+max-width: 900px;  
+margin:  
+    30px auto;  
+padding: 35px;  
+background: #111;  
+color: white;  
+border-radius: 15px;  
+box-shadow:  
+    0 5px 15px rgba(0,0,0,.4);  
+line-height: 2;  
+font-size: 18px;
+}
+.chapter h1 {
+color: white;  
+font-size: 34px;  
+font-weight: bold;  
+margin-bottom: 25px;
+}
+.chapter h2 {
+color: #ffd54f;  
+font-size: 28px;  
+font-weight: bold;  
+margin-top: 30px;
+}
+.chapter p {
+font-size: 18px;  
+line-height: 2;  
+margin-bottom: 18px;  
+text-align: justify;
+}
+.chapter b {
+color: white;  
+font-weight: bold;
+}
+.chapter a {
+color: #4da3ff;  
+text-decoration: none;  
+font-weight: bold;
+}
+/* =====================================================
+CHAPTER NAVIGATION
+===================================================== */
+.chapterNav {
+display: flex;  
+justify-content: space-between;  
+gap: 15px;  
+margin-top: 30px;
+}
+.chapterNav a {
+background: #007bff;  
+color: white;  
+padding:  
+    10px 20px;  
+border-radius: 20px;  
+text-decoration: none;
+}
+/* =====================================================
+NOTE
+===================================================== */
+.note {
+background: #fff8c4;  
+padding: 15px;  
+border-left:  
+    5px solid orange;  
+border-radius: 10px;  
+margin: 20px 0;
+}
+h2 {
+color: #2563eb;  
+margin-top: 25px;
+}
+b {
+color: #d32f2f;
+}
+/* =====================================================
+QUIZ CONTAINER
+===================================================== */
+.quiz-container {
+max-width: 700px;  
+margin: auto;  
+padding: 20px;
+}
+.progress {
+text-align: center;  
+font-weight: bold;  
+margin-bottom: 20px;
+}
+.question-box {
+background: white;  
+padding: 20px;  
+border-radius: 12px;  
+box-shadow:  
+    0 2px 10px rgba(0,0,0,.1);  
+margin-bottom: 20px;
+}
+.answer-btn {
+display: block;  
+width: 100%;  
+padding: 15px;  
+margin: 10px 0;  
+font-size: 16px;  
+border: none;  
+border-radius: 10px;  
+cursor: pointer;  
+background: #2563eb;  
+color: white;  
+transition: .3s;
+}
+.answer-btn:hover {
+background: #1d4ed8;
+}
+#nextBtn {
+display: none;  
+width: 100%;  
+margin-top: 20px;
+}
+/* =====================================================
+QUIZ CARDS
+===================================================== */
+.quiz-card {
+display: flex;  
+align-items: center;  
+justify-content: space-between;  
+background: #fff;  
+border-radius: 20px;  
+padding: 20px;  
+margin: 18px 0;  
+border-left:  
+    6px solid #2563eb;  
+box-shadow:  
+    0 8px 20px rgba(0,0,0,.08);  
+transition: .3s;
+}
+.quiz-card:hover {
+transform:  
+    translateY(-4px);  
+box-shadow:  
+    0 12px 28px rgba(37,99,235,.18);
+}
+.quiz-progress {
+width: 60px;  
+height: 60px;  
+flex-shrink: 0;  
+border-radius: 50%;  
+border:  
+    4px solid #2563eb;  
+color: #2563eb;  
+background: white;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+font-size: 14px;  
+font-weight: bold;
+}
+.quiz-info {
+flex: 1;  
+margin-left: 18px;
+}
+.quiz-badge {
+display: inline-block;  
+background: #e8f0ff;  
+color: #2563eb;  
+padding:  
+    5px 10px;  
+border-radius: 12px;  
+font-size: 13px;  
+font-weight: bold;  
+margin-bottom: 8px;
+}
+.quiz-info h3 {
+margin: 0;  
+color: #222;  
+font-size: 18px;
+}
+.quiz-arrow {
+width: 48px;  
+height: 48px;  
+flex-shrink: 0;  
+border-radius: 50%;  
+background: #2563eb;  
+color: white;  
+text-decoration: none;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+font-size: 22px;
+}
+.quiz-arrow:hover {
+background: #1d4ed8;  
+transform:  
+    scale(1.08);
+}
+/* =====================================================
+HEADER ACCOUNT BUTTONS
+===================================================== */
+.headerButtons {
+display: flex;  
+justify-content: center;  
+align-items: center;  
+gap: 10px;  
+flex-wrap: wrap;  
+margin-top: 15px;
+}
+.registerBtn,
+.loginBtn {
+display: inline-block;  
+padding:  
+    10px 18px;  
+border-radius: 20px;  
+text-decoration: none;  
+font-weight: bold;  
+transition: .3s;
+}
+.registerBtn {
+background: white;  
+color: #1e3a8a;
+}
+.loginBtn {
+background: #2563eb;  
+color: white;  
+border:  
+    1px solid white;
+}
+/* =====================================================
+SUBJECT PAGE NAV
+===================================================== */
+.pageNav {
+position: sticky;  
+top: 0;  
+z-index: 1000;  
+min-height: 72px;  
+display: flex;  
+align-items: center;  
+justify-content: space-between;  
+gap: 12px;  
+padding:  
+    10px  
+    max(14px, calc((100vw - 900px) / 2));  
+background:  
+    rgba(255,255,255,.96);  
+backdrop-filter: blur(14px);  
+-webkit-backdrop-filter: blur(14px);  
+border-bottom:  
+    1px solid rgba(37,99,235,.15);  
+box-shadow:  
+    0 4px 18px rgba(30,58,138,.12);
+}
+.pageTitle {
+display: flex;  
+align-items: center;  
+justify-content: center;  
+gap: 9px;  
+min-width: 0;  
+flex: 1;
+}
+.pageTitleIcon {
+width: 42px;  
+height: 42px;  
+flex-shrink: 0;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+border-radius: 13px;  
+background:  
+    linear-gradient(  
+        135deg,  
+        #2563eb,  
+        #1e3a8a  
+    );  
+color: white;  
+font-size: 20px;
+}
+.pageTitle h1 {
+margin: 0;  
+font-size: 16px;  
+color: #1e3a8a;  
+line-height: 1.2;
+}
+.pageTitle p {
+margin: 3px 0 0;  
+font-size: 11px;  
+color: #6b7fa3;
+}
+.pageBackBtn,
+.pageHomeBtn {
+border: none;  
+cursor: pointer;  
+min-height: 42px;  
+padding:  
+    9px 13px;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+gap: 5px;  
+border-radius: 13px;  
+font-size: 14px;  
+font-weight: bold;
+}
+.pageBackBtn {
+background: #e8f0ff;  
+color: #2563eb;
+}
+.pageHomeBtn {
+background:  
+    linear-gradient(  
+        135deg,  
+        #2563eb,  
+        #1e3a8a  
+    );  
+color: white;
+}
+.pageBackBtn span:first-child {
+font-size: 21px;
+}
+/* =====================================================
+SUBJECT PAGE
+===================================================== */
+.subjectPage {
+max-width: 900px;  
+margin:  
+    25px auto;  
+padding:  
+    0 20px 30px;
+}
+.subjectIntro {
+text-align: center;  
+margin-bottom: 25px;
+}
+.subjectIntro h1 {
+color: #1e3a8a;  
+margin-bottom: 5px;
+}
+/* =====================================================
+STATS
+===================================================== */
+.stats {
+display: flex;  
+justify-content: center;  
+gap: 20px;  
+flex-wrap: wrap;  
+margin:  
+    40px auto;
+}
+.statBox {
+background: white;  
+width: 200px;  
+padding: 20px;  
+border-radius: 12px;  
+text-align: center;  
+box-shadow:  
+    0 4px 10px rgba(0,0,0,.1);
+}
+.statBox h3 {
+color: #1e3a8a;  
+margin-bottom: 10px;
+}
+.statBox p {
+margin: 0;
+}
+/* =====================================================
+STUDENT PROFILE
+===================================================== */
+.profilePage {
+max-width: 900px;  
+margin:  
+    25px auto;  
+padding:  
+    0 15px 40px;
+}
+.profileCard {
+text-align: center;  
+background: white;  
+border-radius: 22px;  
+padding:  
+    30px 20px;  
+box-shadow:  
+    0 8px 25px rgba(30,58,138,.12);  
+margin-bottom: 25px;
+}
+.profileAvatarLarge {
+width: 90px;  
+height: 90px;  
+margin:  
+    0 auto 15px;  
+border-radius: 50%;  
+display: flex;  
+align-items: center;  
+justify-content: center;  
+font-size: 42px;  
+background:  
+    linear-gradient(  
+        135deg,  
+        #2563eb,  
+        #1e3a8a  
+    );
+}
+.profileCard h2 {
+margin: 5px 0;  
+color: #1e3a8a;
+}
+.profileCard p {
+margin:  
+    5px 0 12px;  
+color: #6b7280;
+}
+.profileStatus {
+display: inline-block;  
+padding:  
+    6px 14px;  
+border-radius: 20px;  
+background: #e8f7ee;  
+color: #16803a;  
+font-size: 13px;  
+font-weight: bold;
+}
+.profileSection {
+margin-top: 25px;
+}
+.profileSection > h2 {
+color: #1e3a8a;  
+font-size: 21px;  
+margin-bottom: 12px;
+}
+.profileInfoCard {
+background: white;  
+border-radius: 18px;  
+padding:  
+    5px 18px;  
+box-shadow:  
+    0 5px 18px rgba(0,0,0,.08);
+}
+.profileRow {
+display: flex;  
+justify-content: space-between;  
+align-items: center;  
+gap: 15px;  
+padding:  
+    16px 5px;  
+border-bottom:  
+    1px solid #e5e7eb;
+}
+.profileRow:last-child {
+border-bottom: none;
+}
+.profileRow span {
+color: #6b7280;
+}
+.profileRow strong {
+color: #1e3a8a;  
+text-align: right;
+}
+.profileStats {
+display: grid;  
+grid-template-columns:  
+    repeat(3,1fr);  
+gap: 15px;
+}
+.profileStat {
+background: white;  
+border-radius: 18px;  
+padding:  
+    20px 10px;  
+text-align: center;  
+box-shadow:  
+    0 5px 18px rgba(0,0,0,.08);
+}
+.profileStatIcon {
+font-size: 25px;  
+margin-bottom: 7px;
+}
+.profileStat strong {
+display: block;  
+color: #2563eb;  
+font-size: 25px;
+}
+.profileStat span {
+color: #6b7280;  
+font-size: 13px;
+}
+/* =====================================================
+SETTINGS
+===================================================== */
+.settingsPanel {
+position: fixed;  
+inset: 0;  
+z-index: 5000;  
+display: none;  
+align-items: center;  
+justify-content: center;  
+padding: 20px;  
+background:  
+    rgba(0,0,0,.55);  
+backdrop-filter: blur(8px);
+}
+.settingsPanel.active {
+display: flex;
+}
+.settingsBox {
+width: 100%;  
+max-width: 430px;  
+background: white;  
+color: #222;  
+border-radius: 22px;  
+padding: 22px;  
+box-shadow:  
+    0 20px 60px rgba(0,0,0,.25);
+}
+.settingsHeader {
+display: flex;  
+align-items: center;  
+justify-content: space-between;  
+margin-bottom: 20px;
+}
+.settingsHeader h2 {
+margin: 0;  
+color: #1e3a8a;
+}
+.settingsHeader button {
+width: 38px;  
+height: 38px;  
+border: none;  
+border-radius: 50%;  
+background: #eef3ff;  
+color: #2563eb;  
+font-size: 18px;  
+cursor: pointer;
+}
+.settingItem {
+display: flex;  
+align-items: center;  
+justify-content: space-between;  
+gap: 15px;  
+padding:  
+    17px 0;  
+border-bottom:  
+    1px solid #eee;
+}
+.settingItem strong {
+display: block;  
+font-size: 16px;
+}
+.settingItem p {
+margin:  
+    4px 0 0;  
+font-size: 13px;  
+color: #777;
+}
+.themeToggleBtn,
+.settingAction {
+border: none;  
+background: #e8f0ff;  
+color: #2563eb;  
+padding:  
+    9px 13px;  
+border-radius: 12px;  
+font-weight: bold;  
+text-decoration: none;  
+cursor: pointer;  
+white-space: nowrap;
+}
+.settingsDoneBtn {
+width: 100%;  
+margin-top: 20px;  
+padding: 13px;  
+border: none;  
+border-radius: 13px;  
+background:  
+    linear-gradient(  
+        135deg,  
+        #2563eb,  
+        #1e3a8a  
+    );  
+color: white;  
+font-size: 15px;  
+font-weight: bold;  
+cursor: pointer;
+}
+/* =====================================================
+FORM ELEMENTS
+===================================================== */
+input,
+textarea,
+select {
+font-family: Arial, sans-serif;
+}
+/* =====================================================
+DARK MODE
+Uses .dark-mode because your index.html uses it
+===================================================== */
+body.dark-mode {
+background: #0f172a;  
+color: #f8fafc;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+color: #f8fafc;
+}
+body.dark-mode p {
+color: #cbd5e1;
+}
+/* Cards */
+body.dark-mode .card,
+body.dark-mode .dashCard,
+body.dark-mode .statBox,
+body.dark-mode .quiz-card,
+body.dark-mode .question-box,
+body.dark-mode .profileCard,
+body.dark-mode .profileInfoCard,
+body.dark-mode .profileStat,
+body.dark-mode .profileAction {
+background: #1e293b;  
+color: #f8fafc;
+}
+/* Dashboard */
+body.dark-mode .dashCard a {
+color: #f8fafc;
+}
+/* Search */
+body.dark-mode #search {
+background: #1e293b;  
+color: #f8fafc;  
+border-color: #475569;
+}
+body.dark-mode #search::placeholder {
+color: #94a3b8;
+}
+/* Header */
+body.dark-mode .mainHeader {
+background:  
+    linear-gradient(  
+        135deg,  
+        #172554,  
+        #1d4ed8  
+    );
+}
+body.dark-mode .headerBrand h1,
+body.dark-mode .headerBrand p {
+color: white;
+}
+/* Side menu */
+body.dark-mode .sideMenu {
+background: #111827;
+}
+body.dark-mode .menuItem {
+color: #f8fafc;
+}
+body.dark-mode .menuItem:hover {
+background: #1e293b;  
+color: #60a5fa;
+}
+body.dark-mode .menuIcon {
+background: #1e293b;
+}
+body.dark-mode .menuArrow {
+color: #94a3b8;
+}
+body.dark-mode .menuBottom {
+border-top-color: #334155;
+}
+body.dark-mode .logoutItem {
+background: #321b1b;  
+color: #f87171;
+}
+body.dark-mode .menuVersion {
+color: #94a3b8;
+}
+/* Subject navigation */
+body.dark-mode .pageNav {
+background:  
+    rgba(15,23,42,.96);  
+border-bottom-color: #334155;
+}
+body.dark-mode .pageTitle h1 {
+color: #f8fafc;
+}
+body.dark-mode .pageTitle p {
+color: #94a3b8;
+}
+body.dark-mode .pageBackBtn {
+background: #1e3a8a;  
+color: #bfdbfe;
+}
+/* Quiz */
+body.dark-mode .quiz-info h3 {
+color: #f8fafc;
+}
+body.dark-mode .quiz-badge {
+background: #1e3a8a;  
+color: #bfdbfe;
+}
+body.dark-mode .quiz-progress {
+background: #1e293b;  
+color: #60a5fa;
+}
+/* Bookmark */
+body.dark-mode .bookmarkBtn {
+background: #f59e0b;  
+color: #111827;
+}
+body.dark-mode .bookmarkBtn.bookmarked {
+background: #16a34a;  
+color: white;
+}
+/* Footer */
+body.dark-mode footer {
+background: #020617;  
+color: #cbd5e1;
+}
+/* Forms */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+background: #1e293b;  
+color: #f8fafc;  
+border-color: #475569;
+}
+/* Profile */
+body.dark-mode .profileCard h2,
+body.dark-mode .profileSection > h2,
+body.dark-mode .profileRow strong {
+color: #60a5fa;
+}
+body.dark-mode .profileRow {
+border-color: #334155;
+}
+body.dark-mode .profileRow span,
+body.dark-mode .profileCard p,
+body.dark-mode .profileStat span {
+color: #aaa;
+}
+/* Settings */
+body.dark-mode .settingsBox {
+background: #1e1e1e;  
+color: white;
+}
+body.dark-mode .settingsHeader h2 {
+color: #60a5fa;
+}
+body.dark-mode .settingItem {
+border-color: #333;
+}
+body.dark-mode .settingItem p {
+color: #aaa;
+}
+body.dark-mode .settingsHeader button {
+background: #292929;
+}
+/* =====================================================
+OLD DARK CLASS SUPPORT
+Keeps older pages working
+===================================================== */
+body.dark {
+background: #121212;  
+color: white;
+}
+body.dark .card,
+body.dark .dashCard {
+background: #1e1e1e;  
+color: white;
+}
+body.dark .sideMenu {
+background: #171717;
+}
+body.dark .menuItem {
+color: white;
+}
+/* =====================================================
+MOBILE
+===================================================== */
+@media (max-width: 600px) {
+.mainHeader {  
+    min-height: 64px;  
+    padding:  
+        8px 10px;  
+}  
+.mainHeader .menuBtn {  
+    width: 42px;  
+    height: 42px;  
+    font-size: 23px;  
+}  
+.headerLogo {  
+    width: 38px;  
+    height: 38px;  
+    font-size: 19px;  
+}  
+.headerBrand {  
+    margin-left: 8px;  
+}  
+.headerBrand h1 {  
+    font-size: 15px;  
+}  
+.headerBrand p {  
+    font-size: 10px;  
+}  
+.headerProfile {  
+    width: 40px;  
+    height: 40px;  
+}  
+.sideMenu {  
+    width: 310px;  
+    max-width: 88vw;  
+}  
+.hero {  
+    padding:  
+        30px 15px;  
+}  
+.hero h2 {  
+    font-size: 25px;  
+}  
+.hero p {  
+    font-size: 16px;  
+}  
+.dashboard {  
+    padding:  
+        15px;  
+}  
+.dashboardGrid {  
+    grid-template-columns:  
+        repeat(2,1fr);  
+    gap: 10px;  
+}  
+.dashCard {  
+    padding: 15px 8px;  
+}  
+.dashCard a {  
+    font-size: 15px;  
+}  
+.card {  
+    margin:  
+        12px;  
+    padding:  
+        18px 14px;  
+}  
+.quiz-card {  
+    padding: 15px;  
+}  
+.quiz-progress {  
+    width: 50px;  
+    height: 50px;  
+}  
+.quiz-info {  
+    margin-left: 12px;  
+}  
+.quiz-info h3 {  
+    font-size: 15px;  
+}  
+.quiz-arrow {  
+    width: 42px;  
+    height: 42px;  
+}  
+.chapter {  
+    margin:  
+        15px 10px;  
+    padding:  
+        20px 15px;  
+    font-size: 16px;  
+}  
+.chapter h1 {  
+    font-size: 27px;  
+}  
+.chapter h2 {  
+    font-size: 23px;  
+}  
+.chapter p {  
+    font-size: 16px;  
+}  
+.chapterNav {  
+    gap: 8px;  
+}  
+.chapterNav a {  
+    padding:  
+        9px 13px;  
+    font-size: 14px;  
+}  
+.pageNav {  
+    min-height: 64px;  
+    padding:  
+        9px 10px;  
+}  
+.pageTitleIcon {  
+    width: 38px;  
+    height: 38px;  
+    font-size: 18px;  
+    border-radius: 11px;  
+}  
+.pageTitle h1 {  
+    font-size: 14px;  
+}  
+.pageTitle p {  
+    font-size: 10px;  
+}  
+.pageBackBtn,  
+.pageHomeBtn {  
+    width: 42px;  
+    height: 40px;  
+    padding: 8px;  
+}  
+.pageBackText,  
+.pageHomeText {  
+    display: none;  
+}  
+.subjectPage {  
+    padding:  
+        0 12px 25px;  
+    margin-top: 18px;  
+}  
+.profilePage {  
+    margin-top: 18px;  
+    padding:  
+        0 12px 30px;  
+}  
+.profileStats {  
+    grid-template-columns:  
+        repeat(3,1fr);  
+    gap: 8px;  
+}  
+.profileStat {  
+    padding:  
+        15px 5px;  
+}  
+.profileStat strong {  
+    font-size: 21px;  
+}  
+.profileRow {  
+    align-items: flex-start;  
+    flex-direction: column;  
+    gap: 4px;  
+}  
+.profileRow strong {  
+    text-align: left;  
+}  
+.settingItem {  
+    align-items: flex-start;  
+    flex-direction: column;  
+}
+}
+/* =====================================================
+VERY SMALL PHONES
+===================================================== */
+@media (max-width: 380px) {
+.headerBrand h1 {  
+    font-size: 14px;  
+}  
+.headerLogo {  
+    display: none;  
+}  
+.pageTitleIcon {  
+    display: none;  
+}  
+.dashboardGrid {  
+    grid-template-columns:  
+        repeat(2,1fr);  
+}
+}
+/* =====================================================
+MENU SCROLL LOCK
+===================================================== */
+body.menu-open {
+overflow: hidden;
 }
 
 
-/* BLUE OPEN BUTTON */
 
-.subjectActions .openButton,
-.subjectActions .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #0757c9;
-    color: #ffffff;
-
-    border: 1px solid #0757c9;
-    border-radius: 10px;
-
-    padding: 10px 15px;
-
-    min-height: 42px;
-
-    font-size: 15px;
-    font-weight: 700;
-
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    cursor: pointer;
-
-    box-sizing: border-box;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-/* OPEN BUTTON HOVER */
-
-.subjectActions .openButton:hover,
-.subjectActions .button:hover {
-    background: #0647a5;
-    color: #ffffff;
-
-    border-color: #0647a5;
-
-    transform: translateY(-1px);
-
-    box-shadow:
-        0 4px 10px rgba(7, 87, 201, 0.25);
-}
-
-
-/* OPEN BUTTON ACTIVE */
-
-.subjectActions .openButton:active,
-.subjectActions .button:active {
-    transform: translateY(0);
-}
-
-
-/* BOOKMARK BUTTON */
-
-.subjectActions .bookmarkBtn {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    flex: 0 0 auto;
-
-    min-height: 42px;
-
-    padding: 10px 14px;
-
-    border-radius: 10px;
-
-    white-space: nowrap;
-
-    box-sizing: border-box;
-}
-
-
-/* PREVENT OPEN BUTTON FROM MOVING */
-
-.subjectCard .subjectActions {
-    position: relative;
-    left: 0;
-    right: auto;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 480px) {
-
-    .subjectActions {
-        gap: 8px;
-    }
-
-    .subjectActions .openButton,
-    .subjectActions .button {
-        padding: 9px 12px;
-        font-size: 14px;
-    }
-
-    .subjectActions .bookmarkBtn {
-        padding: 9px 11px;
-        font-size: 14px;
-    }
-
-}
