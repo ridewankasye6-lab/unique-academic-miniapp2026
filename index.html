@@ -102,7 +102,560 @@
             }
 
         }
+/* =====================================================
+   UNIQUE ACADEMIC — MODERN SUBJECT CARDS
+   SAFE REDESIGN
+   Does NOT change existing JavaScript functionality
+===================================================== */
 
+#subjects {
+    margin: 30px 16px 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   SUBJECT GRID
+===================================================== */
+
+.subjectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0 16px 30px;
+}
+
+
+/* =====================================================
+   SUBJECT CARD
+===================================================== */
+
+.subjectCard {
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: #ffffff;
+    border-radius: 24px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+    min-width: 0;
+}
+
+
+.subjectCard:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.13);
+
+}
+
+
+/* =====================================================
+   SUBJECT COVER
+===================================================== */
+
+.subjectCover {
+
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf4ff,
+            #ffffff
+        );
+}
+
+
+/* Decorative circles */
+
+.subjectCover::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.08);
+
+    top: -55px;
+    right: -45px;
+
+}
+
+
+.subjectCover::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.06);
+
+    bottom: -45px;
+    left: -35px;
+
+}
+
+
+/* =====================================================
+   SUBJECT ICON
+===================================================== */
+
+.subjectIcon {
+
+    position: relative;
+    z-index: 2;
+
+    width: 110px;
+    height: 110px;
+
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 58px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =====================================================
+   SUBJECT CONTENT
+===================================================== */
+
+.subjectContent {
+
+    padding: 18px 17px 17px;
+
+}
+
+
+.subjectContent h3 {
+
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+
+    color: #172033;
+
+}
+
+
+.subjectSubtitle {
+
+    margin: 0 0 14px;
+
+    font-size: 13px;
+
+    color: #718096;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   COURSE INFO
+===================================================== */
+
+.subjectInfo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.subjectInfo span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #64748b;
+
+}
+
+
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
+
+.subjectOpenBtn {
+
+    display: flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 45px;
+
+    padding: 11px 14px;
+
+    border-radius: 13px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #ffffff !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1689df
+        );
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.22);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.subjectOpenBtn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(37, 99, 235, 0.30);
+
+}
+
+
+/* =====================================================
+   BOOKMARK BUTTON
+===================================================== */
+
+.subjectCard .bookmarkBtn {
+
+    width: 100%;
+
+    margin-top: 9px;
+
+    min-height: 40px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.subjectCard .bookmarkBtn:hover {
+
+    transform: translateY(-1px);
+
+    background: #eef4ff;
+
+}
+
+
+.subjectCard .bookmarkBtn.bookmarked {
+
+    background: #fff7ed;
+
+    border-color: #fed7aa;
+
+    color: #c2410c;
+
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .subjectCard {
+
+    background: #18202c;
+
+    border-color: rgba(255,255,255,0.06);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.30);
+
+}
+
+
+body.dark-mode .subjectCover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #202c3d,
+            #16202d
+        );
+
+}
+
+
+body.dark-mode .subjectIcon {
+
+    background: #263447;
+
+}
+
+
+body.dark-mode .subjectContent h3 {
+
+    color: #f8fafc;
+
+}
+
+
+body.dark-mode .subjectSubtitle {
+
+    color: #94a3b8;
+
+}
+
+
+body.dark-mode .subjectInfo span {
+
+    color: #94a3b8;
+
+}
+
+
+body.dark-mode .subjectCard .bookmarkBtn {
+
+    background: #202b3b;
+
+    border-color: #334155;
+
+    color: #cbd5e1;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .subjectGrid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+
+    #subjects {
+
+        margin-left: 12px;
+        margin-right: 12px;
+
+        font-size: 22px;
+
+    }
+
+
+    .subjectCover {
+
+        height: 135px;
+
+    }
+
+
+    .subjectIcon {
+
+        width: 78px;
+        height: 78px;
+
+        border-radius: 23px;
+
+        font-size: 42px;
+
+    }
+
+
+    .subjectContent {
+
+        padding: 13px 11px 12px;
+
+    }
+
+
+    .subjectContent h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    .subjectSubtitle {
+
+        font-size: 11px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .subjectInfo {
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .subjectInfo span {
+
+        font-size: 10px;
+
+    }
+
+
+    .subjectOpenBtn {
+
+        min-height: 39px;
+
+        padding: 8px 7px;
+
+        font-size: 12px;
+
+    }
+
+
+    .subjectCard .bookmarkBtn {
+
+        min-height: 36px;
+
+        font-size: 11px;
+
+        padding: 7px 5px;
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .subjectGrid {
+
+        gap: 9px;
+
+        padding-left: 7px;
+        padding-right: 7px;
+
+    }
+
+
+    .subjectCover {
+
+        height: 120px;
+
+    }
+
+
+    .subjectIcon {
+
+        width: 68px;
+        height: 68px;
+
+        font-size: 36px;
+
+    }
+
+
+    .subjectContent h3 {
+
+        font-size: 14px;
+
+    }
+
+}
+        
     </style>
 
 </head>
