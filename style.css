@@ -4347,3 +4347,130 @@ body.subject-page {
         font-size: 15px;
     }
 }
+
+/* =====================================================
+   UNIQUE ACADEMIC - SUBJECT CARD OPEN BUTTON
+   FINAL FIX
+===================================================== */
+
+.subjectActions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+
+/* BLUE OPEN BUTTON */
+
+.subjectActions .openButton,
+.subjectActions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0757c9;
+    color: #ffffff;
+
+    border: 1px solid #0757c9;
+    border-radius: 10px;
+
+    padding: 10px 15px;
+
+    min-height: 42px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* OPEN BUTTON HOVER */
+
+.subjectActions .openButton:hover,
+.subjectActions .button:hover {
+    background: #0647a5;
+    color: #ffffff;
+
+    border-color: #0647a5;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(7, 87, 201, 0.25);
+}
+
+
+/* OPEN BUTTON ACTIVE */
+
+.subjectActions .openButton:active,
+.subjectActions .button:active {
+    transform: translateY(0);
+}
+
+
+/* BOOKMARK BUTTON */
+
+.subjectActions .bookmarkBtn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    min-height: 42px;
+
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+/* PREVENT OPEN BUTTON FROM MOVING */
+
+.subjectCard .subjectActions {
+    position: relative;
+    left: 0;
+    right: auto;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+    .subjectActions {
+        gap: 8px;
+    }
+
+    .subjectActions .openButton,
+    .subjectActions .button {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+    .subjectActions .bookmarkBtn {
+        padding: 9px 11px;
+        font-size: 14px;
+    }
+
+}
