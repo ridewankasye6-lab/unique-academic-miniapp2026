@@ -17,7 +17,7 @@
 
     <meta
         name="theme-color"
-        content="#2563eb"
+        content="#0866d6"
     >
 
     <title>Unique Academic</title>
@@ -27,98 +27,6 @@
         href="style.css"
     >
 
-    <style>
-
-        /* =================================================
-           INDEX-SPECIFIC AUTH
-        ================================================= */
-
-        .headerAuth {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-left: auto;
-        }
-
-        .authHeaderBtn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-
-            padding: 9px 13px;
-
-            min-height: 40px;
-
-            border-radius: 10px;
-
-            text-decoration: none;
-
-            font-weight: 700;
-            font-size: 14px;
-
-            border: 1px solid rgba(255,255,255,0.65);
-
-            color: white;
-
-            background: rgba(255,255,255,0.08);
-
-            transition: 0.2s ease;
-        }
-
-        .authHeaderBtn:hover {
-            transform: translateY(-1px);
-
-            background: white;
-
-            color: #2563eb;
-        }
-
-        .authHeaderPrimary {
-            background: white;
-
-            color: #1e3a8a;
-
-            border-color: white;
-        }
-
-        .authHeaderPrimary:hover {
-            background: #eff6ff;
-
-            color: #1d4ed8;
-        }
-
-        .headerProfile {
-            display: none;
-        }
-
-        .headerProfile.authVisible {
-            display: flex;
-        }
-
-        .authMenuItem {
-            display: flex;
-        }
-
-        .authMenuHidden {
-            display: none !important;
-        }
-
-        @media (max-width: 600px) {
-
-            .headerAuth {
-                gap: 5px;
-            }
-
-            .authHeaderBtn {
-                padding: 8px 8px;
-                font-size: 12px;
-            }
-
-        }
-
-    </style>
-
 </head>
 
 
@@ -126,7 +34,7 @@
 
 
 <!-- =====================================================
-     LOAD SAVED THEME BEFORE PAGE RENDER
+     THEME LOADER
 ===================================================== -->
 
 <script>
@@ -135,19 +43,15 @@
 
     try {
 
-        const savedSettings =
+        const saved =
             localStorage.getItem(
                 "uniqueAcademicSettings"
             );
 
-        if (!savedSettings) {
-            return;
-        }
+        if (!saved) return;
 
         const settings =
-            JSON.parse(
-                savedSettings
-            );
+            JSON.parse(saved);
 
         if (
             settings &&
@@ -160,12 +64,10 @@
 
         }
 
-    }
+    } catch (error) {
 
-    catch (error) {
-
-        console.error(
-            "Unable to load saved theme:",
+        console.log(
+            "Theme loading error:",
             error
         );
 
@@ -200,9 +102,7 @@
 >
 
 
-    <!-- =================================================
-         MENU PROFILE
-    ================================================= -->
+    <!-- PROFILE HEADER -->
 
     <div class="menuProfile">
 
@@ -229,108 +129,68 @@
 
 
 
-    <!-- =================================================
-         MENU ITEMS
-    ================================================= -->
+    <!-- MENU ITEMS -->
 
     <nav class="menuItems">
 
 
-        <!-- HOME -->
-
         <a
             href="index.html"
-            class="menuItem"
+            class="menuItem active"
         >
 
-            <span class="menuIcon">
-                🏠
-            </span>
+            <span class="menuIcon">🏠</span>
 
-            <span>
-                Home
-            </span>
+            <span>Home</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- NEWS -->
 
         <a
             href="news.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">
-                📰
-            </span>
+            <span class="menuIcon">📰</span>
 
-            <span>
-                News &amp; Updates
-            </span>
+            <span>News & Updates</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- LOGIN -->
 
         <a
             href="login.html"
             id="menuLogin"
-            class="menuItem authMenuItem"
+            class="menuItem"
         >
 
-            <span class="menuIcon">
-                🔐
-            </span>
+            <span class="menuIcon">🔐</span>
 
-            <span>
-                Login
-            </span>
+            <span>Login</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- REGISTER -->
 
         <a
             href="registration.html"
             id="menuRegister"
-            class="menuItem authMenuItem"
+            class="menuItem"
         >
 
-            <span class="menuIcon">
-                📝
-            </span>
+            <span class="menuIcon">📝</span>
 
-            <span>
-                Register
-            </span>
+            <span>Register</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- REFRESH -->
 
         <button
             id="refreshBtn"
@@ -338,47 +198,29 @@
             type="button"
         >
 
-            <span class="menuIcon">
-                🔄
-            </span>
+            <span class="menuIcon">🔄</span>
 
-            <span>
-                Refresh
-            </span>
+            <span>Refresh</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </button>
 
 
-
-        <!-- PROFILE -->
-
         <a
             href="student-profile.html"
             id="menuProfileLink"
-            class="menuItem authMenuItem authMenuHidden"
+            class="menuItem authMenuHidden"
         >
 
-            <span class="menuIcon">
-                👤
-            </span>
+            <span class="menuIcon">👤</span>
 
-            <span>
-                Profile
-            </span>
+            <span>Profile</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- SHARE -->
 
         <button
             id="shareAppBtn"
@@ -386,109 +228,67 @@
             type="button"
         >
 
-            <span class="menuIcon">
-                📤
-            </span>
+            <span class="menuIcon">📤</span>
 
-            <span>
-                Share App
-            </span>
+            <span>Share App</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </button>
 
-
-
-        <!-- OTHER APPS -->
 
         <a
             href="other-apps.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">
-                ▦
-            </span>
+            <span class="menuIcon">▦</span>
 
-            <span>
-                Other Apps
-            </span>
+            <span>Other Apps</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- HELP -->
 
         <a
             href="help.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">
-                ❓
-            </span>
+            <span class="menuIcon">❓</span>
 
-            <span>
-                Help
-            </span>
+            <span>Help</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- ABOUT -->
 
         <a
             href="about.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">
-                ℹ️
-            </span>
+            <span class="menuIcon">ℹ️</span>
 
-            <span>
-                About Us
-            </span>
+            <span>About Us</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
-
-
-        <!-- SETTINGS -->
 
         <a
             href="settings.html"
             class="menuItem"
         >
 
-            <span class="menuIcon">
-                ⚙️
-            </span>
+            <span class="menuIcon">⚙️</span>
 
-            <span>
-                Settings
-            </span>
+            <span>Settings</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </a>
 
@@ -496,14 +296,9 @@
 
 
 
-    <!-- =================================================
-         MENU BOTTOM
-    ================================================= -->
+    <!-- MENU BOTTOM -->
 
     <div class="menuBottom">
-
-
-        <!-- LOGOUT -->
 
         <button
             id="logoutBtn"
@@ -511,27 +306,18 @@
             type="button"
         >
 
-            <span class="menuIcon">
-                🚪
-            </span>
+            <span class="menuIcon">🚪</span>
 
-            <span>
-                Logout
-            </span>
+            <span>Logout</span>
 
-            <span class="menuArrow">
-                ›
-            </span>
+            <span class="menuArrow">›</span>
 
         </button>
 
 
-
-        <!-- VERSION -->
-
         <div class="menuVersion">
 
-            Version 3.0.0
+            Version 2.2.0
 
             <br>
 
@@ -554,7 +340,7 @@
 <header class="mainHeader">
 
 
-    <!-- MENU -->
+    <!-- MENU BUTTON -->
 
     <button
         id="menuBtn"
@@ -564,9 +350,7 @@
         aria-expanded="false"
         aria-controls="sideMenu"
     >
-
         ☰
-
     </button>
 
 
@@ -576,7 +360,9 @@
     <div class="headerBrand">
 
         <div class="headerLogo">
+
             🎓
+
         </div>
 
         <div>
@@ -595,9 +381,7 @@
 
 
 
-    <!-- =================================================
-         LOGGED OUT HEADER
-    ================================================= -->
+    <!-- GUEST AUTH -->
 
     <div
         id="headerGuestAuth"
@@ -613,6 +397,7 @@
 
         </a>
 
+
         <a
             href="registration.html"
             class="authHeaderBtn authHeaderPrimary"
@@ -626,9 +411,7 @@
 
 
 
-    <!-- =================================================
-         LOGGED IN PROFILE
-    ================================================= -->
+    <!-- PROFILE -->
 
     <a
         href="student-profile.html"
@@ -648,1162 +431,1060 @@
 
 
 <!-- =====================================================
-     HERO
+     MAIN CONTENT
 ===================================================== -->
 
-<section class="hero">
+<main class="mainContent">
 
-    <div class="heroContent">
 
-        <h2>
-            Welcome to Unique Academic 🎓
+
+    <!-- =================================================
+         HERO
+    ================================================= -->
+
+    <section class="hero">
+
+
+        <div class="heroText">
+
+            <div class="heroWelcome">
+                Welcome to
+            </div>
+
+            <h2>
+                Unique Academic
+                <span>🎓</span>
+            </h2>
+
+            <p>
+                Learn smarter with organized
+                university notes, summaries,
+                quizzes, and study tools.
+            </p>
+
+            <p>
+                Everything you need to succeed
+                at university is in one place.
+            </p>
+
+            <a
+                href="#subjects"
+                class="heroStartBtn"
+            >
+
+                🚀 Start Learning
+
+            </a>
+
+        </div>
+
+
+        <div class="heroVisual">
+
+            <div class="heroBooks">
+
+                <div class="book book1">
+                    📘
+                </div>
+
+                <div class="book book2">
+                    📗
+                </div>
+
+                <div class="book book3">
+                    📕
+                </div>
+
+                <div class="graduationCap">
+                    🎓
+                </div>
+
+            </div>
+
+            <div class="heroPlant">
+                🪴
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         QUICK ACCESS
+    ================================================= -->
+
+    <section class="quickSection">
+
+        <h2 class="sectionTitle">
+
+            <span>⚡</span>
+
+            Quick Access
+
         </h2>
 
-        <p>
 
-            Learn smarter with organized
-            university notes, summaries,
-            quizzes, and study tools.
+        <div class="quickGrid">
 
-            Everything you need to succeed
-            at university is in one place.
 
-        </p>
+            <a
+                href="#subjects"
+                class="quickCard"
+            >
+
+                <div class="quickIcon subjectsIcon">
+                    📚
+                </div>
+
+                <strong>
+                    Subjects
+                </strong>
+
+            </a>
+
+
+            <a
+                href="#pdf-library"
+                class="quickCard"
+            >
+
+                <div class="quickIcon pdfIcon">
+                    📄
+                </div>
+
+                <strong>
+                    PDF Library
+                </strong>
+
+            </a>
+
+
+            <a
+                href="#video-library"
+                class="quickCard"
+            >
+
+                <div class="quickIcon videoIcon">
+                    🎥
+                </div>
+
+                <strong>
+                    Videos
+                </strong>
+
+            </a>
+
+
+            <a
+                href="#subjects"
+                class="quickCard"
+            >
+
+                <div class="quickIcon quizIcon">
+                    ❓
+                </div>
+
+                <strong>
+                    Quiz
+                </strong>
+
+            </a>
+
+
+            <a
+                href="#bookmarks"
+                class="quickCard"
+            >
+
+                <div class="quickIcon bookmarkIcon">
+                    ⭐
+                </div>
+
+                <strong>
+                    Bookmarks
+                </strong>
+
+            </a>
+
+
+            <a
+                id="quickProfile"
+                href="login.html"
+                class="quickCard"
+            >
+
+                <div class="quickIcon profileIcon">
+                    👤
+                </div>
+
+                <strong>
+                    Profile
+                </strong>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTINUE LEARNING
+    ================================================= -->
+
+    <section class="continueCard">
+
+        <div>
+
+            <h2>
+                📖 Continue Learning
+            </h2>
+
+            <p id="continueText">
+                You haven't opened any subject yet.
+            </p>
+
+        </div>
+
 
         <a
+            id="continueBtn"
             href="#subjects"
-            class="button"
+            class="continueBtn"
         >
 
-            🚀 Start Learning
+            Start Learning
 
         </a>
 
+    </section>
+
+
+
+    <!-- =================================================
+         SEARCH
+    ================================================= -->
+
+    <div class="searchContainer">
+
+        <span class="searchIcon">
+            🔍
+        </span>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search a subject..."
+            aria-label="Search subjects"
+            autocomplete="off"
+        >
+
     </div>
 
 
 
     <!-- =================================================
-         HERO VISUAL
+         SUBJECT SECTION
     ================================================= -->
 
-    <div
-        class="heroVisual"
-        aria-hidden="true"
+    <section
+        id="subjects"
+        class="subjectsSection"
     >
 
-        <div class="heroBooks">
 
-            <div class="heroCap">
-                🎓
-            </div>
+        <h2 class="sectionTitle">
 
-            <div class="heroBook one"></div>
+            <span>📚</span>
 
-            <div class="heroBook two"></div>
+            First-Year Courses (2019 E.C.)
 
-            <div class="heroBook three"></div>
-
-            <div class="heroBook four"></div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     QUICK ACCESS
-===================================================== -->
-
-<section class="dashboard">
-
-    <h2>
-        ⚡ Quick Access
-    </h2>
-
-
-    <div class="dashboardGrid">
-
-
-        <!-- SUBJECTS -->
-
-        <div class="dashCard">
-
-            <a href="#subjects">
-
-                📚
-
-                <span>
-                    Subjects
-                </span>
-
-            </a>
-
-        </div>
-
-
-
-        <!-- PDF -->
-
-        <div class="dashCard">
-
-            <a href="#pdf-library">
-
-                📄
-
-                <span>
-                    PDF Library
-                </span>
-
-            </a>
-
-        </div>
-
-
-
-        <!-- VIDEOS -->
-
-        <div class="dashCard">
-
-            <a href="#video-library">
-
-                🎥
-
-                <span>
-                    Videos
-                </span>
-
-            </a>
-
-        </div>
-
-
-
-        <!-- QUIZ -->
-
-        <div class="dashCard">
-
-            <a href="#subjects">
-
-                ❓
-
-                <span>
-                    Quiz
-                </span>
-
-            </a>
-
-        </div>
-
-
-
-        <!-- BOOKMARKS -->
-
-        <div class="dashCard">
-
-            <a href="#bookmarks">
-
-                ⭐
-
-                <span>
-                    Bookmarks
-                </span>
-
-            </a>
-
-        </div>
-
-
-
-        <!-- PROFILE -->
-
-        <div class="dashCard">
-
-            <a
-                id="dashboardProfileLink"
-                href="student-profile.html"
-            >
-
-                👤
-
-                <span>
-                    Profile
-                </span>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTINUE LEARNING
-===================================================== -->
-
-<section class="continueCard">
-
-    <div class="continueContent">
-
-        <h2>
-            📖 Continue Learning
         </h2>
 
-        <p id="continueText">
-
-            You haven't opened any subject yet.
-
-        </p>
-
-    </div>
 
 
-    <a
-        id="continueBtn"
-        class="button"
-        href="#subjects"
-    >
-
-        Start Learning
-
-    </a>
-
-</section>
+        <div class="subjectGrid">
 
 
 
-<!-- =====================================================
-     SEARCH
-===================================================== -->
+            <!-- ==========================================
+                 ENGLISH I
+            =========================================== -->
 
-<div class="searchContainer">
+            <article
+                class="subjectCard"
+                data-subject="English Skill I"
+            >
 
-    <input
-        type="text"
-        id="search"
-        placeholder="🔍 Search a subject..."
-        aria-label="Search subjects"
-        autocomplete="off"
-    >
+                <div class="subjectImage">
 
-</div>
+                    <img
+                        src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=700&q=85"
+                        alt="English books and study materials"
+                        loading="lazy"
+                    >
 
+                    <div class="subjectImageTitle">
+                        English Skill I
+                    </div>
 
-
-<!-- =====================================================
-     SUBJECT TITLE
-===================================================== -->
-
-<h2 id="subjects">
-
-    📚 First-Year Courses (2019 E.C.)
-
-</h2>
+                </div>
 
 
+                <div class="subjectBody">
 
-<!-- =====================================================
-     SUBJECT GRID
-===================================================== -->
+                    <p>
+                        Freshman Course
+                    </p>
 
-<div class="subjectGrid">
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="english1.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="English Skill I"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 ECONOMICS
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Economics"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=700&q=85"
+                        alt="Economics financial charts"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Economics
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="economics.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Economics"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 HISTORY
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="History"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=700&q=85"
+                        alt="Ancient historical architecture"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        History
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="history.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="History"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 ENTREPRENEURSHIP
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Entrepreneurship"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=85"
+                        alt="Business entrepreneurship planning"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Entrepreneurship
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="entrepreneurship.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Entrepreneurship"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 ANTHROPOLOGY
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Anthropology"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=700&q=85"
+                        alt="People and culture"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Anthropology
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="anthropology.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Anthropology"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 EMERGING TECHNOLOGY
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Emerging Technology"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=85"
+                        alt="Emerging technology and artificial intelligence"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Emerging Technology
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="emerging-technology.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Emerging Technology"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 GLOBAL TRENDS
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Global Trends"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=700&q=85"
+                        alt="Global world map and connections"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Global Trends
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="global-trends.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Global Trends"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 ENGLISH II
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="English Skill II"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&w=700&q=85"
+                        alt="English language books"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        English Skill II
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="english2.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="English Skill II"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 PSYCHOLOGY
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Psychology"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=700&q=85"
+                        alt="Human brain psychology"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Psychology
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="psychology.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Psychology"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 LOGIC
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Logic"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=700&q=85"
+                        alt="Chess representing logic and reasoning"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Logic
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="logic.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Logic"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 GEOGRAPHY
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Geography"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=700&q=85"
+                        alt="Globe and world geography"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Geography
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="geography.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Geography"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================================
+                 CIVIC EDUCATION
+            =========================================== -->
+
+            <article
+                class="subjectCard"
+                data-subject="Civic Education"
+            >
+
+                <div class="subjectImage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=700&q=85"
+                        alt="Law and civic education"
+                        loading="lazy"
+                    >
+
+                    <div class="subjectImageTitle">
+                        Civic Education
+                    </div>
+
+                </div>
+
+
+                <div class="subjectBody">
+
+                    <p>
+                        Freshman Course
+                    </p>
+
+
+                    <div class="subjectActions">
+
+                        <a
+                            class="openBtn"
+                            href="civic.html"
+                        >
+                            📖 Open
+                        </a>
+
+
+                        <button
+                            class="bookmarkBtn"
+                            type="button"
+                            data-subject="Civic Education"
+                        >
+                            ⭐ Bookmark
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
 
 
 
     <!-- =================================================
-         ENGLISH SKILL I
+         LOWER FEATURE STRIP
     ================================================= -->
 
-    <article
-        class="subjectCard"
-        data-subject="English Skill I"
-    >
+    <section class="featureStrip">
 
-        <div
-            class="subjectVisual visual-english1"
-            aria-hidden="true"
+
+        <a
+            id="pdf-library"
+            href="#"
+            class="featureBox"
         >
 
-            <span class="subjectVisualIcon">
-                📘
-            </span>
+            <div class="featureIcon">
+                📄
+            </div>
 
-            <span class="subjectVisualLabel">
-                LANGUAGE &amp; COMMUNICATION
-            </span>
+            <div>
 
-        </div>
+                <strong>
+                    PDF Library
+                </strong>
 
-
-        <div class="subjectCardBody">
-
-            <h3>
-                English Skill I
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="english1.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="English Skill I"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
+                <span>
+                    Access study PDFs anytime.
+                </span>
 
             </div>
 
-        </div>
-
-    </article>
+        </a>
 
 
-
-    <!-- =================================================
-         ECONOMICS
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Economics"
-    >
-
-        <div
-            class="subjectVisual visual-economics"
-            aria-hidden="true"
+        <a
+            id="video-library"
+            href="#"
+            class="featureBox"
         >
 
-            <span class="subjectVisualIcon">
-                📈
-            </span>
+            <div class="featureIcon">
+                🎥
+            </div>
 
-            <span class="subjectVisualLabel">
-                MARKETS &amp; ECONOMY
-            </span>
+            <div>
 
-        </div>
+                <strong>
+                    Video Library
+                </strong>
 
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Economics
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="economics.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Economics"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
+                <span>
+                    Watch and learn visually.
+                </span>
 
             </div>
 
-        </div>
-
-    </article>
+        </a>
 
 
-
-    <!-- =================================================
-         HISTORY
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="History"
-    >
-
-        <div
-            class="subjectVisual visual-history"
-            aria-hidden="true"
+        <a
+            id="bookmarks"
+            href="#"
+            class="featureBox"
         >
 
-            <span class="subjectVisualIcon">
-                🏛️
-            </span>
+            <div class="featureIcon">
+                ⭐
+            </div>
 
-            <span class="subjectVisualLabel">
-                PAST &amp; CIVILIZATIONS
-            </span>
+            <div>
 
-        </div>
+                <strong>
+                    Bookmarks
+                </strong>
 
-
-        <div class="subjectCardBody">
-
-            <h3>
-                History
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="history.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="History"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
+                <span>
+                    Save your favorite subjects.
+                </span>
 
             </div>
 
-        </div>
+        </a>
 
-    </article>
+    </section>
 
 
 
-    <!-- =================================================
-         ENTREPRENEURSHIP
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Entrepreneurship"
-    >
-
-        <div
-            class="subjectVisual visual-entrepreneurship"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                💡
-            </span>
-
-            <span class="subjectVisualLabel">
-                BUSINESS &amp; INNOVATION
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Entrepreneurship
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="entrepreneurship.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Entrepreneurship"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         ANTHROPOLOGY
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Anthropology"
-    >
-
-        <div
-            class="subjectVisual visual-anthropology"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                🧑‍🤝‍🧑
-            </span>
-
-            <span class="subjectVisualLabel">
-                CULTURE &amp; HUMANITY
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Anthropology
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="anthropology.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Anthropology"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         EMERGING TECHNOLOGY
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Emerging Technology"
-    >
-
-        <div
-            class="subjectVisual visual-technology"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                🤖
-            </span>
-
-            <span class="subjectVisualLabel">
-                DIGITAL TECHNOLOGY
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Emerging Technology
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="emerging-technology.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Emerging Technology"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         GLOBAL TRENDS
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Global Trends"
-    >
-
-        <div
-            class="subjectVisual visual-global"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                🌍
-            </span>
-
-            <span class="subjectVisualLabel">
-                GLOBAL CHANGE
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Global Trends
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="global-trends.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Global Trends"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         ENGLISH SKILL II
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="English Skill II"
-    >
-
-        <div
-            class="subjectVisual visual-english2"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                🇬🇧
-            </span>
-
-            <span class="subjectVisualLabel">
-                ADVANCED ENGLISH
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                English Skill II
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="english2.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="English Skill II"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         PSYCHOLOGY
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Psychology"
-    >
-
-        <div
-            class="subjectVisual visual-psychology"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                🧠
-            </span>
-
-            <span class="subjectVisualLabel">
-                MIND &amp; BEHAVIOR
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Psychology
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="psychology.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Psychology"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         LOGIC
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Logic"
-    >
-
-        <div
-            class="subjectVisual visual-logic"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                ♟️
-            </span>
-
-            <span class="subjectVisualLabel">
-                REASONING &amp; THINKING
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Logic
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="logic.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Logic"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         GEOGRAPHY
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Geography"
-    >
-
-        <div
-            class="subjectVisual visual-geography"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                🗺️
-            </span>
-
-            <span class="subjectVisualLabel">
-                EARTH &amp; ENVIRONMENT
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Geography
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="geography.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Geography"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <!-- =================================================
-         CIVIC EDUCATION
-    ================================================= -->
-
-    <article
-        class="subjectCard"
-        data-subject="Civic Education"
-    >
-
-        <div
-            class="subjectVisual visual-civic"
-            aria-hidden="true"
-        >
-
-            <span class="subjectVisualIcon">
-                ⚖️
-            </span>
-
-            <span class="subjectVisualLabel">
-                CITIZENSHIP &amp; GOVERNANCE
-            </span>
-
-        </div>
-
-
-        <div class="subjectCardBody">
-
-            <h3>
-                Civic Education
-            </h3>
-
-            <p class="subjectCourse">
-                Freshman Course
-            </p>
-
-
-            <div class="subjectActions">
-
-                <a
-                    class="subjectOpenBtn"
-                    href="civic.html"
-                >
-
-                    📖 Open
-
-                </a>
-
-
-                <button
-                    class="bookmarkBtn"
-                    type="button"
-                    data-subject="Civic Education"
-                >
-
-                    ⭐ Bookmark
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-</div>
-
-
-
-<!-- =====================================================
-     LOWER FEATURE STRIP
-===================================================== -->
-
-<section class="featureStrip">
-
-
-    <div class="featureBox">
-
-        <div class="featureIcon">
-            📄
-        </div>
-
-        <div>
-
-            <strong>
-                PDF Library
-            </strong>
-
-            <span>
-                Access study PDFs anytime.
-            </span>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="featureBox">
-
-        <div class="featureIcon">
-            🎥
-        </div>
-
-        <div>
-
-            <strong>
-                Video Library
-            </strong>
-
-            <span>
-                Watch and learn visually.
-            </span>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="featureBox">
-
-        <div class="featureIcon">
-            ⭐
-        </div>
-
-        <div>
-
-            <strong>
-                Bookmarks
-            </strong>
-
-            <span>
-                Save your favorite subjects.
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FUTURE SECTIONS
-===================================================== -->
-
-<div
-    id="pdf-library"
-    style="display:none;"
-></div>
-
-<div
-    id="video-library"
-    style="display:none;"
-></div>
-
-<div
-    id="bookmarks"
-    style="display:none;"
-></div>
+</main>
 
 
 
@@ -1813,15 +1494,11 @@
 
 <footer>
 
-    <p>
+    © 2026 Unique Academic
 
-        © 2026 Unique Academic
+    <span>|</span>
 
-        &nbsp; | &nbsp;
-
-        Learn. Understand. Succeed.
-
-    </p>
+    Learn. Understand. Succeed.
 
 </footer>
 
@@ -1841,9 +1518,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 
-/* =====================================================
-   ELEMENTS
-===================================================== */
 
 const headerGuestAuth =
     document.getElementById(
@@ -1895,55 +1569,46 @@ const menuProfilePhoto =
         "menuProfilePhoto"
     );
 
-const dashboardProfileLink =
+const quickProfile =
     document.getElementById(
-        "dashboardProfileLink"
+        "quickProfile"
     );
 
 
-/* =====================================================
-   SAFE ATTRIBUTE ESCAPING
-===================================================== */
 
-function escapeHTMLAttribute(value) {
+function safeImageURL(url) {
 
-    return String(value)
+    try {
 
-        .replace(
-            /&/g,
-            "&amp;"
-        )
+        const parsed =
+            new URL(url);
 
-        .replace(
-            /"/g,
-            "&quot;"
-        )
+        if (
+            parsed.protocol ===
+            "https:"
+        ) {
 
-        .replace(
-            /</g,
-            "&lt;"
-        )
+            return parsed.href;
 
-        .replace(
-            />/g,
-            "&gt;"
-        );
+        }
+
+    } catch (error) {
+
+        return "";
+
+    }
+
+    return "";
 
 }
 
 
-/* =====================================================
-   AUTH UI
-===================================================== */
 
 function updateAuthenticationUI(user) {
 
 
-    /* =================================================
-       LOGGED IN
-    ================================================= */
-
     if (user) {
+
 
         if (headerGuestAuth) {
 
@@ -1998,7 +1663,7 @@ function updateAuthenticationUI(user) {
         }
 
 
-        const displayName =
+        const name =
             user.displayName &&
             user.displayName.trim()
                 ? user.displayName.trim()
@@ -2008,7 +1673,7 @@ function updateAuthenticationUI(user) {
         if (menuUserName) {
 
             menuUserName.textContent =
-                displayName;
+                name;
 
         }
 
@@ -2022,83 +1687,81 @@ function updateAuthenticationUI(user) {
         }
 
 
-        /* =================================================
-           HEADER PHOTO
-        ================================================= */
+        const photo =
+            user.photoURL
+                ? safeImageURL(
+                    user.photoURL
+                )
+                : "";
+
 
         if (
-            user.photoURL &&
+            photo &&
             headerProfilePhoto
         ) {
 
-            headerProfilePhoto.innerHTML =
-                `
-                <img
-                    src="${escapeHTMLAttribute(user.photoURL)}"
-                    alt="Student profile"
-                    style="
-                        width:38px;
-                        height:38px;
-                        border-radius:50%;
-                        object-fit:cover;
-                    "
-                >
-                `;
+            headerProfilePhoto.innerHTML = "";
 
-        }
+            const img =
+                document.createElement(
+                    "img"
+                );
 
-        else {
+            img.src = photo;
 
-            if (headerProfilePhoto) {
+            img.alt =
+                "Student profile";
 
-                headerProfilePhoto.textContent =
-                    "👤";
-
-            }
+            headerProfilePhoto.appendChild(
+                img
+            );
 
         }
 
 
-        /* =================================================
-           MENU PHOTO
-        ================================================= */
+        else if (headerProfilePhoto) {
+
+            headerProfilePhoto.textContent =
+                "👤";
+
+        }
+
 
         if (
-            user.photoURL &&
+            photo &&
             menuProfilePhoto
         ) {
 
-            menuProfilePhoto.innerHTML =
-                `
-                <img
-                    src="${escapeHTMLAttribute(user.photoURL)}"
-                    alt="Student profile"
-                    style="
-                        width:54px;
-                        height:54px;
-                        border-radius:50%;
-                        object-fit:cover;
-                    "
-                >
-                `;
+            menuProfilePhoto.innerHTML = "";
 
-        }
+            const img =
+                document.createElement(
+                    "img"
+                );
 
-        else {
+            img.src = photo;
 
-            if (menuProfilePhoto) {
+            img.alt =
+                "Student profile";
 
-                menuProfilePhoto.textContent =
-                    "👤";
-
-            }
+            menuProfilePhoto.appendChild(
+                img
+            );
 
         }
 
 
-        if (dashboardProfileLink) {
+        else if (menuProfilePhoto) {
 
-            dashboardProfileLink.href =
+            menuProfilePhoto.textContent =
+                "👤";
+
+        }
+
+
+        if (quickProfile) {
+
+            quickProfile.href =
                 "student-profile.html";
 
         }
@@ -2106,11 +1769,8 @@ function updateAuthenticationUI(user) {
     }
 
 
-    /* =================================================
-       LOGGED OUT
-    ================================================= */
-
     else {
+
 
         if (headerGuestAuth) {
 
@@ -2176,7 +1836,7 @@ function updateAuthenticationUI(user) {
         if (menuUserEmail) {
 
             menuUserEmail.textContent =
-                "Login or register to create your account";
+                "Unique Academic";
 
         }
 
@@ -2197,9 +1857,9 @@ function updateAuthenticationUI(user) {
         }
 
 
-        if (dashboardProfileLink) {
+        if (quickProfile) {
 
-            dashboardProfileLink.href =
+            quickProfile.href =
                 "login.html";
 
         }
@@ -2209,9 +1869,6 @@ function updateAuthenticationUI(user) {
 }
 
 
-/* =====================================================
-   FIREBASE AUTH STATE
-===================================================== */
 
 onAuthStateChanged(
     auth,
@@ -2223,19 +1880,12 @@ onAuthStateChanged(
 );
 
 
-/* =====================================================
-   LOGOUT
-===================================================== */
 
 if (logoutBtn) {
 
     logoutBtn.addEventListener(
         "click",
-        async function (event) {
-
-            event.preventDefault();
-
-            event.stopImmediatePropagation();
+        async function () {
 
 
             const confirmed =
@@ -2264,32 +1914,27 @@ if (logoutBtn) {
                     "uniqueAcademicUser"
                 );
 
-
                 localStorage.removeItem(
                     "studentLoggedIn"
                 );
 
-
                 sessionStorage.clear();
-
 
                 window.location.href =
                     "index.html";
 
             }
 
+
             catch (error) {
 
                 console.error(
-                    "Logout error:",
                     error
                 );
-
 
                 alert(
                     "Unable to logout. Please try again."
                 );
-
 
                 logoutBtn.disabled =
                     false;
@@ -2306,7 +1951,7 @@ if (logoutBtn) {
 
 
 <!-- =====================================================
-     MAIN PROJECT JAVASCRIPT
+     MAIN JAVASCRIPT
 ===================================================== -->
 
 <script src="script.js"></script>
@@ -2324,8 +1969,9 @@ if (logoutBtn) {
     "use strict";
 
 
+
     /* =================================================
-       ELEMENTS
+       MENU
     ================================================= */
 
     const menuBtn =
@@ -2344,38 +1990,31 @@ if (logoutBtn) {
         );
 
 
-    /* =================================================
-       OPEN MENU
-    ================================================= */
 
     function openMenu() {
 
-        if (!sideMenu || !menuOverlay) {
-            return;
-        }
-
+        if (!sideMenu) return;
 
         sideMenu.classList.add(
             "active"
         );
 
+        if (menuOverlay) {
 
-        menuOverlay.classList.add(
-            "active"
-        );
+            menuOverlay.classList.add(
+                "active"
+            );
 
+        }
 
         sideMenu.setAttribute(
             "aria-hidden",
             "false"
         );
 
-
-        menuOverlay.setAttribute(
-            "aria-hidden",
-            "false"
+        document.body.classList.add(
+            "menu-open"
         );
-
 
         if (menuBtn) {
 
@@ -2384,7 +2023,6 @@ if (logoutBtn) {
                 "true"
             );
 
-
             menuBtn.setAttribute(
                 "aria-label",
                 "Close Menu"
@@ -2392,46 +2030,34 @@ if (logoutBtn) {
 
         }
 
-
-        document.body.classList.add(
-            "menu-open"
-        );
-
     }
 
 
-    /* =================================================
-       CLOSE MENU
-    ================================================= */
 
     function closeMenu() {
 
-        if (!sideMenu || !menuOverlay) {
-            return;
-        }
-
+        if (!sideMenu) return;
 
         sideMenu.classList.remove(
             "active"
         );
 
+        if (menuOverlay) {
 
-        menuOverlay.classList.remove(
-            "active"
-        );
+            menuOverlay.classList.remove(
+                "active"
+            );
 
+        }
 
         sideMenu.setAttribute(
             "aria-hidden",
             "true"
         );
 
-
-        menuOverlay.setAttribute(
-            "aria-hidden",
-            "true"
+        document.body.classList.remove(
+            "menu-open"
         );
-
 
         if (menuBtn) {
 
@@ -2440,7 +2066,6 @@ if (logoutBtn) {
                 "false"
             );
 
-
             menuBtn.setAttribute(
                 "aria-label",
                 "Open Menu"
@@ -2448,17 +2073,9 @@ if (logoutBtn) {
 
         }
 
-
-        document.body.classList.remove(
-            "menu-open"
-        );
-
     }
 
 
-    /* =================================================
-       TOGGLE MENU
-    ================================================= */
 
     if (menuBtn) {
 
@@ -2489,9 +2106,6 @@ if (logoutBtn) {
     }
 
 
-    /* =================================================
-       OVERLAY
-    ================================================= */
 
     if (menuOverlay) {
 
@@ -2503,16 +2117,14 @@ if (logoutBtn) {
     }
 
 
-    /* =================================================
-       ESCAPE KEY
-    ================================================= */
 
     document.addEventListener(
         "keydown",
         function (event) {
 
             if (
-                event.key === "Escape"
+                event.key ===
+                "Escape"
             ) {
 
                 closeMenu();
@@ -2523,9 +2135,6 @@ if (logoutBtn) {
     );
 
 
-    /* =================================================
-       MENU LINKS
-    ================================================= */
 
     document
         .querySelectorAll(
@@ -2541,6 +2150,7 @@ if (logoutBtn) {
 
             }
         );
+
 
 
     /* =================================================
@@ -2569,6 +2179,7 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        SHARE
     ================================================= */
@@ -2584,6 +2195,7 @@ if (logoutBtn) {
         shareAppBtn.addEventListener(
             "click",
             async function () {
+
 
                 const shareData = {
 
@@ -2621,7 +2233,6 @@ if (logoutBtn) {
                                 window.location.href
                             );
 
-
                         alert(
                             "Unique Academic link copied!"
                         );
@@ -2655,6 +2266,7 @@ if (logoutBtn) {
     }
 
 
+
     /* =================================================
        CONTINUE LEARNING
     ================================================= */
@@ -2675,8 +2287,7 @@ if (logoutBtn) {
             "lastOpenedSubject"
         );
 
-
-    const savedSubjectUrl =
+    const savedURL =
         localStorage.getItem(
             "lastOpenedSubjectUrl"
         );
@@ -2684,7 +2295,7 @@ if (logoutBtn) {
 
     if (
         savedSubject &&
-        savedSubjectUrl
+        savedURL
     ) {
 
         if (continueText) {
@@ -2696,19 +2307,18 @@ if (logoutBtn) {
 
         }
 
-
         if (continueBtn) {
 
             continueBtn.textContent =
                 "Continue Learning";
 
-
             continueBtn.href =
-                savedSubjectUrl;
+                savedURL;
 
         }
 
     }
+
 
 
     /* =================================================
@@ -2717,7 +2327,7 @@ if (logoutBtn) {
 
     document
         .querySelectorAll(
-            ".subjectCard .subjectOpenBtn"
+            ".subjectCard .openBtn"
         )
         .forEach(
             function (link) {
@@ -2726,24 +2336,21 @@ if (logoutBtn) {
                     "click",
                     function () {
 
+
                         const card =
                             link.closest(
                                 ".subjectCard"
                             );
 
 
-                        if (!card) {
-                            return;
-                        }
+                        if (!card) return;
 
 
                         const subject =
                             card.dataset.subject;
 
 
-                        if (!subject) {
-                            return;
-                        }
+                        if (!subject) return;
 
 
                         localStorage.setItem(
@@ -2764,8 +2371,9 @@ if (logoutBtn) {
         );
 
 
+
     /* =================================================
-       BOOKMARKS
+       BOOKMARK SYSTEM
     ================================================= */
 
     const bookmarkButtons =
@@ -2806,14 +2414,12 @@ if (logoutBtn) {
     }
 
 
-    /* =================================================
-       UPDATE BOOKMARK BUTTONS
-    ================================================= */
 
-    function updateBookmarkButtons() {
+    function updateBookmarks() {
 
         bookmarkButtons.forEach(
             function (button) {
+
 
                 const subject =
                     button.dataset.subject;
@@ -2826,8 +2432,7 @@ if (logoutBtn) {
                 ) {
 
                     button.textContent =
-                        "★ Saved";
-
+                        "★ Bookmarked";
 
                     button.classList.add(
                         "bookmarked"
@@ -2839,7 +2444,6 @@ if (logoutBtn) {
 
                     button.textContent =
                         "⭐ Bookmark";
-
 
                     button.classList.remove(
                         "bookmarked"
@@ -2853,9 +2457,6 @@ if (logoutBtn) {
     }
 
 
-    /* =================================================
-       BOOKMARK CLICK
-    ================================================= */
 
     bookmarkButtons.forEach(
         function (button) {
@@ -2864,13 +2465,12 @@ if (logoutBtn) {
                 "click",
                 function () {
 
+
                     const subject =
                         button.dataset.subject;
 
 
-                    if (!subject) {
-                        return;
-                    }
+                    if (!subject) return;
 
 
                     const index =
@@ -2879,7 +2479,9 @@ if (logoutBtn) {
                         );
 
 
-                    if (index === -1) {
+                    if (
+                        index === -1
+                    ) {
 
                         bookmarks.push(
                             subject
@@ -2905,7 +2507,7 @@ if (logoutBtn) {
                     );
 
 
-                    updateBookmarkButtons();
+                    updateBookmarks();
 
                 }
             );
@@ -2914,27 +2516,29 @@ if (logoutBtn) {
     );
 
 
-    updateBookmarkButtons();
+    updateBookmarks();
+
 
 
     /* =================================================
        SEARCH
     ================================================= */
 
-    const searchInput =
+    const search =
         document.getElementById(
             "search"
         );
 
 
-    if (searchInput) {
+    if (search) {
 
-        searchInput.addEventListener(
+        search.addEventListener(
             "input",
             function () {
 
-                const searchValue =
-                    searchInput.value
+
+                const value =
+                    search.value
                         .trim()
                         .toLowerCase();
 
@@ -2946,20 +2550,21 @@ if (logoutBtn) {
                     .forEach(
                         function (card) {
 
+
                             const subject =
                                 (
                                     card.dataset.subject ||
-                                    card.textContent
+                                    ""
                                 )
                                 .toLowerCase();
 
 
                             card.style.display =
                                 subject.includes(
-                                    searchValue
+                                    value
                                 )
                                     ? ""
-                                    : "block";
+                                    : "none";
 
                         }
                     );
@@ -2968,6 +2573,7 @@ if (logoutBtn) {
         );
 
     }
+
 
 
 })();
