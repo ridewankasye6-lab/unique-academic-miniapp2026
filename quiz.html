@@ -22,6 +22,118 @@
         href="quiz.css"
     >
 
+    <style>
+
+        /* =================================================
+           REVIEW QUIZ BUTTON
+        ================================================= */
+
+        .reviewQuizBtn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            margin-top: 20px;
+
+            padding: 13px 22px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background: #8e44ad;
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                box-shadow 0.2s ease;
+
+            box-shadow:
+                0 5px 15px rgba(
+                    142,
+                    68,
+                    173,
+                    0.25
+                );
+
+        }
+
+
+        .reviewQuizBtn:hover {
+
+            transform:
+                translateY(-2px);
+
+            background: #732d91;
+
+            box-shadow:
+                0 7px 18px rgba(
+                    142,
+                    68,
+                    173,
+                    0.32
+                );
+
+        }
+
+
+        .reviewQuizBtn:active {
+
+            transform:
+                translateY(0);
+
+        }
+
+
+        .reviewQuizBtn:focus-visible {
+
+            outline:
+                3px solid rgba(
+                    142,
+                    68,
+                    173,
+                    0.35
+                );
+
+            outline-offset: 3px;
+
+        }
+
+
+        /* =================================================
+           DARK MODE SUPPORT
+        ================================================= */
+
+        body.dark-mode .reviewQuizBtn {
+
+            background: #9b59b6;
+
+            color: white;
+
+        }
+
+
+        body.dark-mode .reviewQuizBtn:hover {
+
+            background: #8e44ad;
+
+        }
+
+    </style>
+
 </head>
 
 
@@ -35,6 +147,11 @@
     ====================================== -->
 
     <header class="quizHeader">
+
+
+        <!-- =================================
+             BACK BUTTON
+        ================================== -->
 
         <button
             id="backBtn"
@@ -54,11 +171,17 @@
         </button>
 
 
+
+        <!-- =================================
+             HEADER TITLE
+        ================================== -->
+
         <div class="headerTitle">
 
             <span class="headerBook">
                 📖
             </span>
+
 
             <div>
 
@@ -74,6 +197,11 @@
 
         </div>
 
+
+
+        <!-- =================================
+             HOME BUTTON
+        ================================== -->
 
         <button
             id="homeBtn"
@@ -112,9 +240,11 @@
 
         <section class="subjectCard">
 
+
             <div class="subjectIcon">
                 🎓
             </div>
+
 
             <div class="subjectInfo">
 
@@ -122,9 +252,11 @@
                     CURRENT QUIZ
                 </p>
 
+
                 <h2 id="subjectName">
                     Subject
                 </h2>
+
 
                 <p id="chapterName">
                     Chapter 1
@@ -133,12 +265,18 @@
             </div>
 
         </section>
-        
+
+
+
         <!-- =====================================
              QUESTIONS
+             
+             Quiz progress bar removed.
         ====================================== -->
 
-        <div id="questionsPage"></div>
+        <div
+            id="questionsPage"
+        ></div>
 
 
 
@@ -147,6 +285,11 @@
         ====================================== -->
 
         <div class="questionNavigation">
+
+
+            <!-- =================================
+                 PREVIOUS
+            ================================== -->
 
             <button
                 id="previousQuestionBtn"
@@ -158,12 +301,18 @@
                     ←
                 </span>
 
+
                 <span>
                     Previous
                 </span>
 
             </button>
 
+
+
+            <!-- =================================
+                 NEXT
+            ================================== -->
 
             <button
                 id="nextBtn"
@@ -175,6 +324,7 @@
                     Next
                 </span>
 
+
                 <span class="navArrow">
                     →
                 </span>
@@ -183,37 +333,57 @@
 
         </div>
 
-<!-- =====================================
-     COMPLETION
-===================================== -->
 
-<div
-    id="completionMessage"
-    class="completionMessage"
-    hidden
->
 
-    <div class="completionIcon">
-        🎉
-    </div>
+        <!-- =====================================
+             COMPLETION
+        ====================================== -->
 
-    <h2>
-        Quiz Completed!
-    </h2>
+        <div
+            id="completionMessage"
+            class="completionMessage"
+            hidden
+        >
 
-    <p>
-        Great job! You have reached the end of this quiz.
-    </p>
 
-    <button
-        id="reviewQuizBtn"
-        class="reviewQuizBtn"
-        type="button"
-    >
-        🔄 Review Quiz
-    </button>
+            <div class="completionIcon">
+                🎉
+            </div>
 
-</div>
+
+            <h2>
+                Quiz Completed!
+            </h2>
+
+
+            <p>
+                Great job! You have reached the end of this quiz.
+            </p>
+
+
+            <!-- =================================
+                 REVIEW QUIZ
+            ================================== -->
+
+            <button
+                id="reviewQuizBtn"
+                class="reviewQuizBtn"
+                type="button"
+                aria-label="Review quiz from the beginning"
+            >
+
+                <span>
+                    🔄
+                </span>
+
+                <span>
+                    Review Quiz
+                </span>
+
+            </button>
+
+
+        </div>
 
 
     </main>
@@ -226,13 +396,16 @@
 
     <footer class="quizFooter">
 
+
         <p>
             🎓 Unique Academic
         </p>
 
+
         <span>
             Learn • Practice • Succeed
         </span>
+
 
     </footer>
 
@@ -243,7 +416,7 @@
 
 <!-- =====================================================
      QUIZ DATA LOADER
-     
+
      IMPORTANT ORDER:
 
      1. access-guard.js
@@ -260,9 +433,11 @@ document.addEventListener(
     "uniqueAcademicAccessGranted",
     function () {
 
+
         console.log(
             "Unique Academic access granted."
         );
+
 
 
         // =================================================
@@ -273,9 +448,11 @@ document.addEventListener(
             window.uniqueAcademicQuizStarted === true
         ) {
 
+
             console.log(
                 "Quiz system already started."
             );
+
 
             return;
 
@@ -296,11 +473,13 @@ document.addEventListener(
             required = true
         ) {
 
+
             return new Promise(
                 function (
                     resolve,
                     reject
                 ) {
+
 
                     const script =
                         document.createElement(
@@ -316,21 +495,26 @@ document.addEventListener(
                         false;
 
 
+
                     script.onload =
                         function () {
+
 
                             console.log(
                                 "Loaded:",
                                 src
                             );
 
+
                             resolve();
 
                         };
 
 
+
                     script.onerror =
                         function () {
+
 
                             console.error(
                                 "FAILED TO LOAD:",
@@ -341,6 +525,7 @@ document.addEventListener(
                             if (
                                 required
                             ) {
+
 
                                 reject(
                                     new Error(
@@ -353,11 +538,13 @@ document.addEventListener(
 
                             else {
 
+
                                 resolve();
 
                             }
 
                         };
+
 
 
                     document.body.appendChild(
@@ -376,6 +563,7 @@ document.addEventListener(
         // =================================================
 
         async function startQuiz() {
+
 
             try {
 
@@ -405,6 +593,7 @@ document.addEventListener(
                     typeof quizData ===
                     "undefined"
                 ) {
+
 
                     throw new Error(
                         "quizData is not defined after quizData.js loaded."
@@ -480,9 +669,11 @@ document.addEventListener(
                     !requestedChapter
                 ) {
 
+
                     console.error(
                         "Quiz URL is missing subject or chapter."
                     );
+
 
                     return;
 
@@ -503,6 +694,7 @@ document.addEventListener(
                 if (
                     !subjectData
                 ) {
+
 
                     console.error(
                         "Subject does not exist:",
@@ -540,6 +732,7 @@ document.addEventListener(
                     ) ||
                     chapterData.length === 0
                 ) {
+
 
                     console.error(
                         "No quiz questions found."
@@ -633,9 +826,11 @@ document.addEventListener(
 
             }
 
+
             catch (
                 error
             ) {
+
 
                 console.error(
                     "================================="
@@ -671,8 +866,6 @@ document.addEventListener(
     }
 );
 
-
-
 </script>
 
 
@@ -680,7 +873,7 @@ document.addEventListener(
 <!-- =====================================================
      FIREBASE ACCESS CHECK
 
-     This MUST remain AFTER the loader above.
+     This MUST remain AFTER THE LOADER ABOVE.
 ===================================================== -->
 
 <script
