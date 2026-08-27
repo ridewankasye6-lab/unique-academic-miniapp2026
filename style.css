@@ -3821,3 +3821,40 @@ body.dark-mode .subjectImageWrap {
     color: #ffffff !important;
     transform: translateY(-1px);
 }
+/* =========================================================
+   MOBILE — PREVENT HORIZONTAL PAGE MOVEMENT
+   ========================================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container,
+    .main-content,
+    .content,
+    .page-content {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
