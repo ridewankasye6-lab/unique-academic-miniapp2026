@@ -3791,3 +3791,33 @@ body.dark-mode .subjectImageWrap {
         font-size: 16px;
     }
 }
+/* =========================================================
+   UNIQUE ACADEMIC — HOME PAGE OPEN BUTTON
+   ========================================================= */
+
+.subject-card .open-btn,
+.subject-card a.open-btn,
+.subject-card button.open-btn {
+    background: #0d6efd !important;
+    color: #ffffff !important;
+    border: 1px solid #0d6efd !important;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.subject-card .open-btn:hover,
+.subject-card a.open-btn:hover,
+.subject-card button.open-btn:hover {
+    background: #0056d6 !important;
+    border-color: #0056d6 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
