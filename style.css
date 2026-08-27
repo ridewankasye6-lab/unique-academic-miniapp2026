@@ -2949,3 +2949,845 @@ input:focus-visible {
     }
 
 }
+/* =====================================================
+   UNIQUE ACADEMIC
+   PROFESSIONAL SUBJECT CARDS
+===================================================== */
+
+.subjectsGrid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* =====================================================
+   SUBJECT CARD
+===================================================== */
+
+.subjectCard {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.subjectCard:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.14);
+
+}
+
+
+
+/* =====================================================
+   IMAGE CONTAINER
+===================================================== */
+
+.subjectImageWrap {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 155px;
+
+    overflow: hidden;
+
+    background: #eef2f7;
+
+}
+
+
+
+/* =====================================================
+   SUBJECT IMAGE
+===================================================== */
+
+.subjectImage {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    animation:
+        subjectImageFloat
+        5s
+        ease-in-out
+        infinite;
+
+    transform-origin: center center;
+
+    will-change: transform;
+
+}
+
+
+
+/* =====================================================
+   PROFESSIONAL IMAGE MOVEMENT
+===================================================== */
+
+@keyframes subjectImageFloat {
+
+    0% {
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            scale(1.035)
+            translateY(-2px);
+
+    }
+
+    100% {
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   HOVER IMAGE EFFECT
+===================================================== */
+
+.subjectCard:hover .subjectImage {
+
+    animation-play-state: paused;
+
+    transform:
+        scale(1.07);
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.subjectCardContent {
+
+    padding: 10px 10px 11px;
+
+    text-align: center;
+
+}
+
+
+
+/* =====================================================
+   SUBJECT TITLE
+===================================================== */
+
+.subjectCardContent h3 {
+
+    margin: 0;
+
+    min-height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+
+    color: #0f2a55;
+
+}
+
+
+
+/* =====================================================
+   COURSE LABEL
+===================================================== */
+
+.subjectCardContent p {
+
+    margin:
+        5px 0 9px;
+
+    font-size: 12px;
+
+    line-height: 1.2;
+
+    color: #64748b;
+
+}
+
+
+
+/* =====================================================
+   SUBJECT ACTIONS
+===================================================== */
+
+.subjectActions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    width: 100%;
+
+}
+
+
+
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
+
+.subjectActions .button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 30px;
+
+    padding:
+        5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* =====================================================
+   BOOKMARK BUTTON
+===================================================== */
+
+.subjectActions .bookmarkBtn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 30px;
+
+    padding:
+        5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* =====================================================
+   BOOKMARKED STATE
+===================================================== */
+
+.subjectActions .bookmarkBtn.bookmarked {
+
+    font-weight: 800;
+
+}
+
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .subjectCard {
+
+    background: #172235;
+
+    border-color: #2d3d55;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+body.dark-mode .subjectCardContent h3 {
+
+    color: #f1f5f9;
+
+}
+
+
+
+body.dark-mode .subjectCardContent p {
+
+    color: #aebdce;
+
+}
+
+
+
+body.dark-mode .subjectImageWrap {
+
+    background: #1e293b;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .subjectsGrid {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 14px;
+
+    }
+
+
+    .subjectImageWrap {
+
+        height: 150px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 760px) {
+
+    .subjectsGrid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 13px;
+
+    }
+
+
+    .subjectImageWrap {
+
+        height: 145px;
+
+    }
+
+
+    .subjectCardContent h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .subjectActions {
+
+        gap: 5px;
+
+    }
+
+
+    .subjectActions .button,
+    .subjectActions .bookmarkBtn {
+
+        font-size: 11px;
+
+        padding:
+            5px 7px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .subjectsGrid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+
+    }
+
+
+    .subjectImageWrap {
+
+        height: 125px;
+
+    }
+
+
+    .subjectCard {
+
+        border-radius: 11px;
+
+    }
+
+
+    .subjectCardContent {
+
+        padding:
+            8px 5px 9px;
+
+    }
+
+
+    .subjectCardContent h3 {
+
+        min-height: 35px;
+
+        font-size: 12px;
+
+        line-height: 1.2;
+
+    }
+
+
+    .subjectCardContent p {
+
+        margin:
+            4px 0 7px;
+
+        font-size: 10px;
+
+    }
+
+
+    .subjectActions {
+
+        gap: 4px;
+
+    }
+
+
+    .subjectActions .button,
+    .subjectActions .bookmarkBtn {
+
+        min-height: 27px;
+
+        padding:
+            4px 5px;
+
+        font-size: 10px;
+
+        border-radius: 6px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .subjectsGrid {
+
+        gap: 8px;
+
+    }
+
+
+    .subjectImageWrap {
+
+        height: 110px;
+
+    }
+
+
+    .subjectCardContent h3 {
+
+        font-size: 11px;
+
+    }
+
+
+    .subjectActions .button,
+    .subjectActions .bookmarkBtn {
+
+        font-size: 9px;
+
+        padding:
+            4px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .subjectImage {
+
+        animation: none;
+
+    }
+
+
+    .subjectCard:hover .subjectImage {
+
+        transform: none;
+
+    }
+
+}
+/* =========================================================
+   UNIQUE ACADEMIC — SUBJECT PAGE RESTORATION
+   Keeps inside subject pages separate from homepage cards
+========================================================= */
+
+.subjectPage {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 20px 50px;
+}
+
+.subjectPage .pageNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 25px;
+    padding: 12px 0;
+}
+
+.subjectPage .pageNav a,
+.subjectPage .pageNav button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 18px;
+    border: 1px solid #d6dce5;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #14213d;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 7px rgba(0,0,0,.06);
+}
+
+.subjectPage .pageNav a:hover,
+.subjectPage .pageNav button:hover {
+    background: #f1f6ff;
+    border-color: #1769e0;
+    color: #1769e0;
+}
+
+.subjectPage .subjectIntro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subjectPage .subjectIntro .subjectIcon {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.subjectPage .subjectIntro h1 {
+    margin: 0;
+    color: #14213d;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.subjectPage .subjectIntro p {
+    margin: 8px 0 0;
+    color: #5c6678;
+    font-size: 18px;
+}
+
+/* Section headings */
+
+.subjectPage section {
+    margin: 30px 0;
+}
+
+.subjectPage section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px;
+    color: #14213d;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+/* Chapters */
+
+.subjectPage .chapter-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.subjectPage .chapter-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 58px;
+    padding: 15px 18px;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #1c2940;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(20,33,61,.06);
+    transition: .2s ease;
+}
+
+.subjectPage .chapter-list a:hover {
+    transform: translateY(-2px);
+    border-color: #1769e0;
+    color: #1769e0;
+    box-shadow: 0 6px 16px rgba(23,105,224,.12);
+}
+
+.subjectPage .chapter-list .locked {
+    color: #7c8491;
+    cursor: not-allowed;
+}
+
+.subjectPage .chapter-list .locked:hover {
+    transform: none;
+    border-color: #dce3ed;
+    color: #7c8491;
+}
+
+/* Resources */
+
+.subjectPage .resource-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.subjectPage .resource-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #dce3ed;
+    color: #14213d;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(20,33,61,.06);
+}
+
+.subjectPage .resource-list a:hover {
+    border-color: #1769e0;
+    color: #1769e0;
+}
+
+/* Quiz cards */
+
+.subjectPage .quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.subjectPage .quiz-card {
+    padding: 20px;
+    border: 1px solid #dce3ed;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 14px rgba(20,33,61,.07);
+}
+
+.subjectPage .quiz-card h3 {
+    margin: 5px 0 10px;
+    color: #14213d;
+    font-size: 20px;
+}
+
+.subjectPage .quiz-card p {
+    margin: 5px 0;
+    color: #697386;
+}
+
+.subjectPage .quiz-card a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 9px 16px;
+    border-radius: 9px;
+    background: #1769e0;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Progress */
+
+.subjectPage .progress {
+    height: 9px;
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #e8edf4;
+}
+
+.subjectPage .progress-bar {
+    height: 100%;
+    border-radius: inherit;
+    background: #1769e0;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .subjectPage {
+        padding: 18px 14px 40px;
+    }
+
+    .subjectPage .pageNav {
+        margin-bottom: 20px;
+    }
+
+    .subjectPage .pageNav a,
+    .subjectPage .pageNav button {
+        padding: 9px 13px;
+        font-size: 14px;
+    }
+
+    .subjectPage .subjectIntro h1 {
+        font-size: 34px;
+    }
+
+    .subjectPage .subjectIntro p {
+        font-size: 16px;
+    }
+
+    .subjectPage section h2 {
+        font-size: 23px;
+    }
+
+    .subjectPage .chapter-list,
+    .subjectPage .resource-list,
+    .subjectPage .quiz-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subjectPage .chapter-list a,
+    .subjectPage .resource-list a {
+        font-size: 16px;
+    }
+}
