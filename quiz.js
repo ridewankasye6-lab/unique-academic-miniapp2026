@@ -176,6 +176,87 @@
     // =================================================
 
     let score = 0;
+        // =================================================
+    // SAVE CHAPTER PROGRESS
+    // =================================================
+
+    function getProgressStorageKey() {
+
+        const normalizedSubject =
+            normalizeSubjectKey(subject);
+
+        const normalizedChapter =
+            String(chapter || "")
+                .trim();
+
+        return `uniqueAcademicQuizProgress_${normalizedSubject}_${normalizedChapter}`;
+
+    }
+
+
+    function saveChapterProgress() {
+
+        const percentage =
+            questions.length > 0
+                ? Math.round(
+                    (
+                        score /
+                        questions.length
+                    ) * 100
+                )
+                : 0;
+
+
+        const progressData = {
+
+            subject:
+                subject,
+
+            chapter:
+                chapter,
+
+            score:
+                score,
+
+            total:
+                questions.length,
+
+            percentage:
+                percentage,
+
+            completed:
+                score === questions.length,
+
+            updatedAt:
+                Date.now()
+
+        };
+
+
+        try {
+
+            localStorage.setItem(
+
+                getProgressStorageKey(),
+
+                JSON.stringify(
+                    progressData
+                )
+
+            );
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Unable to save quiz progress:",
+                error
+            );
+
+        }
+
+    }
 
 
     // =================================================
@@ -1226,7 +1307,9 @@
             score++;
 
         }
-
+        
+        // Save updated chapter progress
+        saveChapterProgress();
 
         buttons.forEach(
             (
@@ -1498,7 +1581,8 @@
                 )
                 : 0;
 
-
+        // Save final chapter progress
+        saveChapterProgress();
         /*
          * Check if score display already exists.
          */
