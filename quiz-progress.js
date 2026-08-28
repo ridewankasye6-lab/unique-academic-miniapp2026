@@ -1,17 +1,32 @@
-// =====================================================
-// UNIQUE ACADEMIC
-// QUIZ PROGRESS SYSTEM
-// =====================================================
-// COLOR RULES:
-//
-// 0 answered              → WHITE
-// correct > wrong        → GREEN
-// wrong > correct        → RED
-// correct === wrong      → YELLOW
-//
-// The percentage shown is:
-// correct answers / total questions
-// =====================================================
+/*
+=========================================================
+ UNIQUE ACADEMIC
+ QUIZ PROGRESS CIRCLE
+=========================================================
+
+ RULES:
+
+ 0 answered
+     → WHITE / GRAY
+
+ Correct > Wrong
+     → GREEN
+
+ Wrong > Correct
+     → RED
+
+ Correct === Wrong
+     → YELLOW
+
+ The ring percentage is based on:
+
+     correct / total × 100
+
+ The percentage number stays inside
+ the circle.
+
+=========================================================
+*/
 
 (function () {
 
@@ -19,16 +34,136 @@
 
 
     // =================================================
+    // FIND ALL QUIZ CARDS
+    // =================================================
+
+    const quizCards =
+        document.querySelectorAll(
+            ".quiz-card"
+        );
+
+
+    if (
+        !quizCards.length
+    ) {
+
+        return;
+
+    }
+
+
+    // =================================================
     // NORMALIZE SUBJECT
     // =================================================
 
-    function normalizeSubject(value) {
+    function normalizeSubject(
+        value
+    ) {
 
-        return String(value || "")
+        return String(
+            value || ""
+        )
             .toLowerCase()
             .trim()
-            .replace(/_/g, "-")
-            .replace(/\s+/g, "-");
+            .replace(
+                /_/g,
+                "-"
+            )
+            .replace(
+                /\s+/g,
+                "-"
+            )
+            .replace(
+                /\/+/g,
+                "-"
+            );
+
+    }
+
+
+    // =================================================
+    // GET PROGRESS STORAGE KEY
+    // =================================================
+
+    function getStorageKey(
+        subject,
+        chapter
+    ) {
+
+        return (
+            "uniqueAcademicQuizProgress_" +
+            normalizeSubject(subject) +
+            "_" +
+            String(chapter || "").trim()
+        );
+
+    }
+
+
+    // =================================================
+    // READ SAVED PROGRESS
+    // =================================================
+
+    function getSavedProgress(
+        subject,
+        chapter
+    ) {
+
+        const storageKey =
+            getStorageKey(
+                subject,
+                chapter
+            );
+
+
+        try {
+
+            const saved =
+                localStorage.getItem(
+                    storageKey
+                );
+
+
+            if (
+                !saved
+            ) {
+
+                return null;
+
+            }
+
+
+            const data =
+                JSON.parse(
+                    saved
+                );
+
+
+            if (
+                !data ||
+                typeof data !== "object"
+            ) {
+
+                return null;
+
+            }
+
+
+            return data;
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Unable to read quiz progress:",
+                error
+            );
+
+
+            return null;
+
+        }
 
     }
 
@@ -37,137 +172,163 @@
     // UPDATE ONE PROGRESS CIRCLE
     // =================================================
 
-    function updateProgressUI(element, data) {
+    function updateProgressCircle(
+        progressElement,
+        data
+    ) {
 
-        if (!element) {
+        if (
+            !progressElement
+        ) {
+
             return;
+
         }
 
 
-        // Remove old color classes first
+        // =============================================
+        // REMOVE OLD STATE CLASSES
+        // =============================================
 
-        element.classList.remove(
+        progressElement.classList.remove(
+            "progress-empty",
             "progress-good",
             "progress-bad",
-            "progress-equal",
-            "progress-empty"
+            "progress-equal"
         );
 
 
-        // ---------------------------------------------
-        // SAFETY CHECK
-        // ---------------------------------------------
+        // =============================================
+        // NO ANSWERS YET
+        // =============================================
 
         if (
             !data ||
             typeof data.correct !== "number" ||
             typeof data.wrong !== "number" ||
             typeof data.total !== "number" ||
-            data.total <= 0
+            data.correct < 0 ||
+            data.wrong < 0 ||
+            data.total <= 0 ||
+            data.correct + data.wrong === 0
         ) {
 
-            element.textContent = "0%";
+            progressElement.textContent =
+                "0%";
 
-            element.classList.add(
+
+            progressElement.style.setProperty(
+                "--progress-percent",
+                "0%"
+            );
+
+
+            progressElement.classList.add(
                 "progress-empty"
             );
+
 
             return;
 
         }
 
 
+        // =============================================
+        // SAFE VALUES
+        // =============================================
+
         const correct =
             Math.max(
                 0,
-                data.correct
+                Number(data.correct)
             );
 
 
         const wrong =
             Math.max(
                 0,
-                data.wrong
+                Number(data.wrong)
             );
 
 
         const total =
             Math.max(
                 1,
-                data.total
+                Number(data.total)
             );
 
 
-        const answered =
-            correct + wrong;
-
-
-        // ---------------------------------------------
-        // PERCENTAGE
-        // ---------------------------------------------
+        // =============================================
+        // CALCULATE PERCENTAGE
+        // =============================================
 
         const percentage =
-            Math.round(
-                (correct / total) * 100
+            Math.max(
+                0,
+                Math.min(
+                    100,
+                    Math.round(
+                        (
+                            correct /
+                            total
+                        ) * 100
+                    )
+                )
             );
 
 
-        element.textContent =
+        // =============================================
+        // DISPLAY PERCENTAGE
+        // =============================================
+
+        progressElement.textContent =
             `${percentage}%`;
 
 
-        // ---------------------------------------------
-        // NOTHING ANSWERED
-        // ---------------------------------------------
+        // =============================================
+        // SET RING LENGTH
+        // =============================================
 
-        if (answered === 0) {
-
-            element.classList.add(
-                "progress-empty"
-            );
-
-            return;
-
-        }
+        progressElement.style.setProperty(
+            "--progress-percent",
+            `${percentage}%`
+        );
 
 
-        // ---------------------------------------------
-        // MORE CORRECT → GREEN
-        // ---------------------------------------------
+        // =============================================
+        // COLOR RULE
+        // =============================================
 
-        if (correct > wrong) {
+        if (
+            correct > wrong
+        ) {
 
-            element.classList.add(
+            // GREEN
+            progressElement.classList.add(
                 "progress-good"
             );
 
-            return;
-
         }
 
+        else if (
+            wrong > correct
+        ) {
 
-        // ---------------------------------------------
-        // MORE WRONG → RED
-        // ---------------------------------------------
-
-        if (wrong > correct) {
-
-            element.classList.add(
+            // RED
+            progressElement.classList.add(
                 "progress-bad"
             );
 
-            return;
-
         }
 
+        else {
 
-        // ---------------------------------------------
-        // EQUAL → YELLOW
-        // ---------------------------------------------
+            // YELLOW
+            progressElement.classList.add(
+                "progress-equal"
+            );
 
-        element.classList.add(
-            "progress-equal"
-        );
+        }
 
     }
 
@@ -178,21 +339,8 @@
 
     function updateAllQuizProgress() {
 
-        const quizCards =
-            document.querySelectorAll(
-                ".quiz-card"
-            );
-
-
-        if (!quizCards.length) {
-
-            return;
-
-        }
-
-
         quizCards.forEach(
-            (card) => {
+            card => {
 
                 const quizLink =
                     card.querySelector(
@@ -216,6 +364,10 @@
                 }
 
 
+                // =====================================
+                // READ URL
+                // =====================================
+
                 let url;
 
                 try {
@@ -236,19 +388,15 @@
 
 
                 const subject =
-                    normalizeSubject(
-                        url.searchParams.get(
-                            "subject"
-                        )
+                    url.searchParams.get(
+                        "subject"
                     );
 
 
                 const chapter =
-                    String(
-                        url.searchParams.get(
-                            "chapter"
-                        ) || ""
-                    ).trim();
+                    url.searchParams.get(
+                        "chapter"
+                    );
 
 
                 if (
@@ -261,44 +409,22 @@
                 }
 
 
-                const storageKey =
-                    `uniqueAcademicQuizProgress_${subject}_${chapter}`;
+                // =====================================
+                // GET SAVED DATA
+                // =====================================
 
-
-                let savedProgress =
-                    null;
-
-
-                try {
-
-                    const saved =
-                        localStorage.getItem(
-                            storageKey
-                        );
-
-
-                    if (saved) {
-
-                        savedProgress =
-                            JSON.parse(
-                                saved
-                            );
-
-                    }
-
-                }
-
-                catch (error) {
-
-                    console.error(
-                        "Unable to read quiz progress:",
-                        error
+                const savedProgress =
+                    getSavedProgress(
+                        subject,
+                        chapter
                     );
 
-                }
 
+                // =====================================
+                // UPDATE CIRCLE
+                // =====================================
 
-                updateProgressUI(
+                updateProgressCircle(
                     progress,
                     savedProgress
                 );
@@ -310,50 +436,42 @@
 
 
     // =================================================
-    // UPDATE WHEN PAGE IS READY
+    // INITIAL UPDATE
     // =================================================
 
-    if (
-        document.readyState ===
-        "loading"
-    ) {
-
-        document.addEventListener(
-            "DOMContentLoaded",
-            updateAllQuizProgress
-        );
-
-    }
-
-    else {
-
-        updateAllQuizProgress();
-
-    }
+    updateAllQuizProgress();
 
 
     // =================================================
-    // UPDATE WHEN STORAGE CHANGES
+    // LISTEN FOR LOCAL STORAGE CHANGES
     // =================================================
 
     window.addEventListener(
         "storage",
-        updateAllQuizProgress
+        () => {
+
+            updateAllQuizProgress();
+
+        }
     );
 
 
     // =================================================
-    // UPDATE WHEN QUIZ SAVES PROGRESS
+    // LISTEN FOR QUIZ PROGRESS UPDATES
     // =================================================
 
     window.addEventListener(
-        "quizProgressUpdated",
-        updateAllQuizProgress
+        "uniqueAcademicQuizProgressUpdated",
+        () => {
+
+            updateAllQuizProgress();
+
+        }
     );
 
 
     // =================================================
-    // UPDATE WHEN PAGE BECOMES VISIBLE
+    // ALSO CHECK WHEN PAGE BECOMES VISIBLE
     // =================================================
 
     document.addEventListener(
@@ -361,7 +479,8 @@
         () => {
 
             if (
-                !document.hidden
+                document.visibilityState ===
+                "visible"
             ) {
 
                 updateAllQuizProgress();
@@ -370,6 +489,14 @@
 
         }
     );
+
+
+    // =================================================
+    // EXPOSE UPDATE FUNCTION
+    // =================================================
+
+    window.updateAllQuizProgress =
+        updateAllQuizProgress;
 
 
 })();
