@@ -2418,7 +2418,22 @@ code {
     max-width: 100%;
     overflow-x: auto;
 }
+/* =====================================================
+   HOME SUBJECT IMAGES
+===================================================== */
 
+.subjectImage {
+    display: block;
+
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
 
 /* =====================================================
    END OF UNIQUE ACADEMIC GLOBAL STYLE
