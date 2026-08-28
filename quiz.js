@@ -176,6 +176,7 @@
     // =================================================
 
     let score = 0;
+let wrongAnswers = 0;
         // =================================================
     // SAVE CHAPTER PROGRESS
     // =================================================
@@ -192,71 +193,78 @@
         return `uniqueAcademicQuizProgress_${normalizedSubject}_${normalizedChapter}`;
 
     }
+    
+function saveChapterProgress() {
+
+    const percentage =
+        questions.length > 0
+            ? Math.round(
+                (
+                    score /
+                    questions.length
+                ) * 100
+            )
+            : 0;
 
 
-    function saveChapterProgress() {
+    const progressData = {
 
-        const percentage =
-            questions.length > 0
-                ? Math.round(
-                    (
-                        score /
-                        questions.length
-                    ) * 100
-                )
-                : 0;
+        subject:
+            subject,
 
+        chapter:
+            chapter,
 
-        const progressData = {
+        correct:
+            score,
 
-            subject:
-                subject,
+        wrong:
+            wrongAnswers,
 
-            chapter:
-                chapter,
+        total:
+            questions.length,
 
-            score:
-                score,
+        percentage:
+            percentage,
 
-            total:
-                questions.length,
+        completed:
+            userAnswers.every(
+                answer =>
+                    answer !== null
+            ),
 
-            percentage:
-                percentage,
+        updatedAt:
+            Date.now()
 
-            completed:
-                score === questions.length,
-
-            updatedAt:
-                Date.now()
-
-        };
+    };
 
 
-        try {
+    try {
 
-            localStorage.setItem(
+        localStorage.setItem(
 
-                getProgressStorageKey(),
+            getProgressStorageKey(),
 
-                JSON.stringify(
-                    progressData
-                )
+            JSON.stringify(
+                progressData
+            )
 
-            );
-
-        }
-
-        catch (error) {
-
-            console.error(
-                "Unable to save quiz progress:",
-                error
-            );
-
-        }
+        );
 
     }
+
+    catch (error) {
+
+        console.error(
+            "Unable to save quiz progress:",
+            error
+        );
+
+    }
+
+}
+
+    
 
 
     // =================================================
