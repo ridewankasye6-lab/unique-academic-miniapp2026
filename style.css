@@ -2439,43 +2439,114 @@ code {
    END OF UNIQUE ACADEMIC GLOBAL STYLE
    Version 2.2.0
 ===================================================== */
+/* =====================================================
+   UNIQUE ACADEMIC — PROFESSIONAL SUBJECT CARDS
+   MATCHES THE REFERENCE DESIGN
+   =====================================================
+
+   DESIGN:
+   • 2 cards per row on desktop
+   • Image on the left
+   • Subject information on the right
+   • Open + Bookmark buttons
+   • All 12 subjects have the SAME design
+   • English Skill I gets NO special treatment
+   • Responsive mobile layout
+   ===================================================== */
+
 
 /* =====================================================
-   UNIQUE ACADEMIC
-   PROFESSIONAL SUBJECT CARDS
+   SUBJECT SECTION
+===================================================== */
+
+#subjects,
+.subjects,
+.subjectPage {
+    width: 100%;
+    max-width: 950px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =====================================================
+   SUBJECT SECTION HEADING
+===================================================== */
+
+#subjects > h1,
+#subjects > h2,
+.subjects > h1,
+.subjects > h2,
+.subjectPage > h1,
+.subjectPage > h2 {
+    width: 100%;
+
+    margin:
+        25px 0 20px;
+
+    text-align: left;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   ALL SUBJECT CARDS
+   2 COLUMNS — SAME SIZE
 ===================================================== */
 
 .subjectCard {
     width: 100%;
-    margin: 20px 0;
-    padding: 18px;
+
+    min-width: 0;
+
+    margin: 0;
+
+    padding: 10px;
 
     display: grid;
-    grid-template-columns: 300px 1fr;
+
+    grid-template-columns:
+        160px
+        minmax(0, 1fr);
+
     align-items: center;
-    gap: 24px;
+
+    gap: 16px;
 
     background: #ffffff;
 
-    border-radius: 26px;
+    border:
+        1px solid rgba(15, 23, 42, 0.08);
+
+    border-radius: 16px;
 
     box-shadow:
-        0 8px 25px rgba(30, 58, 138, 0.10);
-
-    border: 1px solid rgba(37, 99, 235, 0.06);
+        0 3px 12px rgba(15, 23, 42, 0.08);
 
     overflow: hidden;
 
     transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
 }
 
+
+/* =====================================================
+   SUBJECT CARD HOVER
+===================================================== */
+
 .subjectCard:hover {
-    transform: translateY(-3px);
+    transform:
+        translateY(-2px);
 
     box-shadow:
-        0 14px 32px rgba(37, 99, 235, 0.16);
+        0 7px 18px rgba(37, 99, 235, 0.14);
+
+    border-color:
+        rgba(37, 99, 235, 0.16);
 }
 
 
@@ -2483,15 +2554,21 @@ code {
    SUBJECT IMAGE
 ===================================================== */
 
-.subjectImage {
-    width: 100%;
-    height: 220px;
-
+.subjectCard .subjectImage {
     display: block;
+
+    width: 160px;
+    height: 112px;
+
+    max-width: 100%;
 
     object-fit: cover;
 
-    border-radius: 20px;
+    object-position: center;
+
+    border-radius: 11px;
+
+    margin: 0;
 
     background: #eef4ff;
 }
@@ -2501,33 +2578,113 @@ code {
    SUBJECT CONTENT
 ===================================================== */
 
-.subjectContent {
+.subjectCard .subjectContent {
+    width: 100%;
+
     min-width: 0;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
+
+    align-items: stretch;
+
+    padding: 2px 4px 2px 0;
 }
 
 
-.subjectContent h2 {
-    margin: 0 0 8px;
+/* =====================================================
+   SUBJECT TITLE
+===================================================== */
+
+.subjectCard .subjectContent h2 {
+    width: 100%;
+
+    margin:
+        0 0 4px;
 
     color: #172554;
 
-    font-size: 25px;
+    font-size: 17px;
 
-    line-height: 1.3;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    text-align: left;
+
+    word-break: normal;
+
+    overflow-wrap: break-word;
 }
 
 
-.subjectContent p {
-    margin: 0 0 20px;
+/* =====================================================
+   SUBJECT DESCRIPTION
+===================================================== */
+
+.subjectCard .subjectContent p {
+    width: 100%;
+
+    margin:
+        0 0 10px;
 
     color: #64748b;
 
+    font-size: 12px;
+
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   EXISTING HTML SUPPORT
+   For cards using:
+   <h3>Subject</h3>
+   <p>Freshman Course</p>
+===================================================== */
+
+.subjectCard > h3 {
+    width: 100%;
+
+    margin:
+        0 0 4px;
+
+    color: #172554;
+
     font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    text-align: left;
+
+    word-break: normal;
+
+    overflow-wrap: break-word;
+}
+
+
+.subjectCard > p {
+    width: 100%;
+
+    margin:
+        0 0 10px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    text-align: left;
 }
 
 
@@ -2535,23 +2692,34 @@ code {
    SUBJECT ACTIONS
 ===================================================== */
 
-.subjectActions {
+.subjectCard .subjectActions {
+    width: 100%;
+
     display: flex;
 
     align-items: center;
 
-    gap: 12px;
+    gap: 7px;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    margin: 0;
 }
 
 
-/* OPEN BUTTON */
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
 
-.subjectActions .openBtn {
-    min-height: 52px;
+.subjectCard .openBtn {
+    flex: 1;
 
-    padding: 12px 25px;
+    min-width: 0;
+
+    min-height: 36px;
+
+    padding:
+        7px 10px;
 
     display: inline-flex;
 
@@ -2559,7 +2727,7 @@ code {
 
     justify-content: center;
 
-    gap: 8px;
+    gap: 5px;
 
     background:
         linear-gradient(
@@ -2568,182 +2736,485 @@ code {
             #1d4ed8
         );
 
-    color: white;
+    color: #ffffff;
 
     text-decoration: none;
 
-    border-radius: 15px;
+    border: none;
 
-    font-size: 17px;
+    border-radius: 8px;
 
-    font-weight: bold;
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
 
     transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
 }
 
-.subjectActions .openBtn:hover {
-    transform: translateY(-2px);
+
+.subjectCard .openBtn:hover {
+    transform:
+        translateY(-1px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #1e3a8a
+        );
 
     box-shadow:
-        0 7px 18px rgba(37, 99, 235, 0.25);
+        0 4px 10px rgba(37, 99, 235, 0.22);
 }
 
 
-/* BOOKMARK BUTTON */
+.subjectCard .openBtn:active {
+    transform:
+        scale(0.97);
+}
 
-.subjectActions .bookmarkBtn {
-    min-height: 52px;
 
-    padding: 12px 25px;
+/* =====================================================
+   CURRENT HTML SUPPORT
+   If your existing card uses .button instead
+===================================================== */
+
+.subjectCard > .button {
+    min-height: 36px;
+
+    padding:
+        7px 12px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: #ffffff;
+
+    text-decoration: none;
 
     border: none;
 
-    border-radius: 15px;
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.subjectCard > .button:hover {
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.22);
+}
+
+
+/* =====================================================
+   BOOKMARK BUTTON
+===================================================== */
+
+.subjectCard .bookmarkBtn {
+    flex: 1;
+
+    min-width: 0;
+
+    min-height: 36px;
+
+    padding:
+        7px 10px;
+
+    border: none;
+
+    border-radius: 8px;
 
     background: #fbbf0b;
 
     color: #111827;
 
-    font-size: 17px;
+    font-size: 12px;
 
-    font-weight: bold;
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
 
     cursor: pointer;
 
     transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
 }
 
-.subjectActions .bookmarkBtn:hover {
-    transform: translateY(-2px);
+
+.subjectCard .bookmarkBtn:hover {
+    transform:
+        translateY(-1px);
+
+    background: #f59e0b;
 
     box-shadow:
-        0 7px 18px rgba(245, 158, 11, 0.22);
+        0 4px 10px rgba(245, 158, 11, 0.20);
+}
+
+
+.subjectCard .bookmarkBtn:active {
+    transform:
+        scale(0.97);
 }
 
 
 /* =====================================================
-   FEATURED FIRST SUBJECT
-   ENGLISH SKILL I
+   EXISTING BOOKMARK BUTTON SUPPORT
 ===================================================== */
 
-.subjectCard:first-child {
-    display: block;
-
-    padding: 25px;
+.subjectCard > .bookmarkBtn {
+    margin-left: 7px;
 }
 
 
-.subjectCard:first-child .subjectImage {
+/* =====================================================
+   BOOKMARKED STATE
+===================================================== */
+
+.subjectCard .bookmarkBtn.bookmarked {
+    background: #16a34a;
+
+    color: #ffffff;
+}
+
+
+.subjectCard .bookmarkBtn.bookmarked:hover {
+    background: #15803d;
+}
+
+
+/* =====================================================
+   IMPORTANT:
+   REMOVE ALL FIRST-CHILD SPECIAL DESIGN
+   ALL 12 SUBJECTS MUST LOOK THE SAME
+===================================================== */
+
+/*
+   DO NOT ADD:
+
+   .subjectCard:first-child { ... }
+
+   .subjectCard:first-child .subjectImage { ... }
+
+   .subjectCard:first-child .subjectContent { ... }
+
+   .subjectCard:first-child .subjectContent h2 { ... }
+
+   .subjectCard:first-child > h3 { ... }
+
+   .subjectCard:first-child > p { ... }
+
+   These rules would make English Skill I different.
+*/
+
+
+/* =====================================================
+   SUBJECT GRID
+   MAKES 2 CARDS PER ROW
+===================================================== */
+
+/*
+   If your HTML already has a subject grid/container,
+   these rules make it two-column.
+*/
+
+#subjects,
+.subjects {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px 12px;
+
+    align-items: stretch;
+}
+
+
+/*
+   Heading inside the grid must span both columns.
+*/
+
+#subjects > h1,
+#subjects > h2,
+.subjects > h1,
+.subjects > h2 {
+    grid-column:
+        1 / -1;
+}
+
+
+/* =====================================================
+   IF .subjectPage IS THE OUTER CONTAINER
+===================================================== */
+
+.subjectPage .subjectCard {
     width: 100%;
-
-    height: 390px;
-
-    object-fit: cover;
-
-    border-radius: 22px;
-
-    margin-bottom: 22px;
-}
-
-
-.subjectCard:first-child .subjectContent {
-    text-align: center;
-
-    align-items: center;
-}
-
-
-.subjectCard:first-child .subjectContent h2 {
-    font-size: 29px;
-}
-
-
-.subjectCard:first-child .subjectContent p {
-    font-size: 19px;
-
-    margin-bottom: 20px;
-}
-
-
-.subjectCard:first-child .subjectActions {
-    justify-content: center;
 }
 
 
 /* =====================================================
    MOBILE
+   ONE CARD PER ROW
 ===================================================== */
 
 @media (max-width: 700px) {
 
-    .subjectCard {
-        grid-template-columns: 1fr;
-
-        gap: 16px;
-
-        padding: 14px;
-
-        border-radius: 22px;
-    }
-
-    .subjectImage {
-        height: 190px;
-
-        border-radius: 17px;
-    }
-
-    .subjectContent h2 {
-        font-size: 21px;
-    }
-
-    .subjectContent p {
-        font-size: 15px;
-
-        margin-bottom: 14px;
-    }
-
-    .subjectActions {
+    #subjects,
+    .subjects {
         width: 100%;
 
-        gap: 9px;
+        grid-template-columns:
+            1fr;
+
+        gap: 12px;
+
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
-    .subjectActions .openBtn,
-    .subjectActions .bookmarkBtn {
-        flex: 1;
 
-        min-height: 48px;
+    #subjects > h1,
+    #subjects > h2,
+    .subjects > h1,
+    .subjects > h2 {
+        grid-column:
+            auto;
+    }
 
-        padding: 10px 12px;
 
+    .subjectPage {
+        width: 100%;
+
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    /* =================================================
+       MOBILE SUBJECT CARD
+    ================================================= */
+
+    .subjectCard {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 10px;
+
+        grid-template-columns:
+            125px
+            minmax(0, 1fr);
+
+        gap: 12px;
+
+        border-radius: 15px;
+    }
+
+
+    /* =================================================
+       MOBILE IMAGE
+    ================================================= */
+
+    .subjectCard .subjectImage {
+        width: 125px;
+
+        height: 100px;
+
+        border-radius: 10px;
+    }
+
+
+    /* =================================================
+       MOBILE CONTENT
+    ================================================= */
+
+    .subjectCard .subjectContent {
+        padding:
+            2px 2px 2px 0;
+    }
+
+
+    .subjectCard .subjectContent h2 {
+        font-size: 16px;
+
+        line-height: 1.25;
+
+        margin-bottom: 3px;
+    }
+
+
+    .subjectCard .subjectContent p {
+        font-size: 11px;
+
+        line-height: 1.35;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* EXISTING h3 */
+
+    .subjectCard > h3 {
+        font-size: 16px;
+
+        margin-bottom: 3px;
+    }
+
+
+    .subjectCard > p {
+        font-size: 11px;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* =================================================
+       MOBILE BUTTONS
+    ================================================= */
+
+    .subjectCard .subjectActions {
+        gap: 5px;
+
+        flex-wrap: nowrap;
+    }
+
+
+    .subjectCard .openBtn,
+    .subjectCard .bookmarkBtn {
+        min-height: 34px;
+
+        padding:
+            6px 7px;
+
+        font-size: 11px;
+
+        border-radius: 7px;
+    }
+
+
+    .subjectCard > .button {
+        min-height: 34px;
+
+        padding:
+            6px 8px;
+
+        font-size: 11px;
+
+        border-radius: 7px;
+    }
+
+
+    .subjectCard > .bookmarkBtn {
+        margin-left: 5px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    #subjects,
+    .subjects {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        gap: 10px;
+    }
+
+
+    .subjectCard {
+        grid-template-columns:
+            105px
+            minmax(0, 1fr);
+
+        gap: 10px;
+
+        padding: 9px;
+
+        border-radius: 14px;
+    }
+
+
+    .subjectCard .subjectImage {
+        width: 105px;
+
+        height: 90px;
+
+        border-radius: 9px;
+    }
+
+
+    .subjectCard .subjectContent h2,
+    .subjectCard > h3 {
         font-size: 15px;
     }
 
 
-    /* FIRST CARD */
+    .subjectCard .subjectContent p,
+    .subjectCard > p {
+        font-size: 10px;
 
-    .subjectCard:first-child {
-        padding: 14px;
+        margin-bottom: 7px;
     }
 
-    .subjectCard:first-child .subjectImage {
-        height: 230px;
 
-        margin-bottom: 17px;
-
-        border-radius: 18px;
+    .subjectCard .subjectActions {
+        gap: 4px;
     }
 
-    .subjectCard:first-child .subjectContent h2 {
-        font-size: 23px;
-    }
 
-    .subjectCard:first-child .subjectContent p {
-        font-size: 16px;
+    .subjectCard .openBtn,
+    .subjectCard .bookmarkBtn {
+        min-height: 31px;
+
+        padding:
+            5px 5px;
+
+        font-size: 10px;
+
+        border-radius: 6px;
     }
 }
 
@@ -2754,28 +3225,57 @@ code {
 
 @media (max-width: 380px) {
 
+    #subjects,
+    .subjects {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        gap: 9px;
+    }
+
+
     .subjectCard {
-        padding: 11px;
+        grid-template-columns:
+            95px
+            minmax(0, 1fr);
+
+        gap: 9px;
+
+        padding: 8px;
     }
 
-    .subjectImage {
-        height: 165px;
+
+    .subjectCard .subjectImage {
+        width: 95px;
+
+        height: 82px;
+
+        border-radius: 8px;
     }
 
-    .subjectCard:first-child .subjectImage {
-        height: 200px;
-    }
 
-    .subjectContent h2 {
-        font-size: 19px;
-    }
-
-    .subjectActions .openBtn,
-    .subjectActions .bookmarkBtn {
+    .subjectCard .subjectContent h2,
+    .subjectCard > h3 {
         font-size: 14px;
+    }
+
+
+    .subjectCard .subjectContent p,
+    .subjectCard > p {
+        font-size: 9px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .subjectCard .openBtn,
+    .subjectCard .bookmarkBtn {
+        min-height: 29px;
 
         padding:
-            9px 8px;
+            5px 4px;
+
+        font-size: 9px;
     }
 }
 
@@ -2790,1089 +3290,50 @@ body.dark-mode .subjectCard {
     border-color: #334155;
 
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.25);
-}
-
-body.dark-mode .subjectContent h2 {
-    color: #f8fafc;
-}
-
-body.dark-mode .subjectContent p {
-    color: #94a3b8;
-}
-
-/* =====================================================
-   UNIQUE ACADEMIC — FINAL SUBJECT CARD DESIGN
-   MATCHES THE REFERENCE LAYOUT
-===================================================== */
-
-/* COURSE SECTION */
-
-.subjectPage,
-#subjects,
-.subjects {
-    width: 100%;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+        0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 
-/* COURSE HEADING */
-
-.subjectPage > h1,
-.subjectPage > h2,
-#subjects > h1,
-#subjects > h2 {
-    width: 100%;
-    margin: 25px 0 28px;
-    text-align: left;
-    line-height: 1.25;
-}
-
-
-/* ALL SUBJECT CARDS */
-
-.subjectCard {
-    width: 100%;
-    margin: 20px 0;
-    padding: 14px;
-
-    display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
-    align-items: center;
-    gap: 28px;
-
-    background: #ffffff;
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 7px 22px rgba(30, 58, 138, 0.10);
-
-    overflow: hidden;
-}
-
-
-/* SUBJECT IMAGE */
-
-.subjectCard .subjectImage {
-    width: 100%;
-    height: 235px;
-
-    display: block;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    border-radius: 20px;
-}
-
-
-/* CONTENT */
-
-.subjectCard .subjectContent {
-    min-width: 0;
-
-    padding: 8px 8px 8px 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-/* TITLE */
-
-.subjectCard .subjectContent h2 {
-    margin: 0 0 8px;
-
-    color: #172554;
-
-    font-size: 28px;
-
-    line-height: 1.25;
-
-    text-align: left;
-}
-
-
-/* COURSE */
-
-.subjectCard .subjectContent p {
-    margin: 0 0 22px;
-
-    color: #64748b;
-
-    font-size: 18px;
-
-    line-height: 1.4;
-
-    text-align: left;
-}
-
-
-/* BUTTON AREA */
-
-.subjectCard .subjectActions {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
-}
-
-
-/* OPEN */
-
-.subjectCard .openBtn {
-    flex: 1;
-
-    min-height: 52px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10px 18px;
-
-    background: #2563eb;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 14px;
-
-    font-size: 17px;
-
-    font-weight: bold;
-}
-
-
-/* BOOKMARK */
-
-.subjectCard .bookmarkBtn {
-    flex: 1;
-
-    min-height: 52px;
-
-    padding: 10px 18px;
-
-    background: #fbbf0b;
-
-    color: #111827;
-
-    border: none;
-
-    border-radius: 14px;
-
-    font-size: 17px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-
-/* =====================================================
-   FIRST CARD — LARGE FEATURED ENGLISH CARD
-===================================================== */
-
-.subjectCard:first-child {
-    display: block;
-
-    padding: 25px;
-
-    text-align: center;
-}
-
-
-/* LARGE ENGLISH IMAGE */
-
-.subjectCard:first-child .subjectImage {
-    width: 100%;
-
-    height: 390px;
-
-    display: block;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    border-radius: 22px;
-
-    margin: 0 0 24px;
-}
-
-
-/* ENGLISH CONTENT */
-
-.subjectCard:first-child .subjectContent {
-    padding: 0;
-
-    align-items: center;
-
-    text-align: center;
-}
-
-
-/* ENGLISH TITLE */
-
-.subjectCard:first-child .subjectContent h2 {
-    margin: 0 0 8px;
-
-    font-size: 30px;
-
-    text-align: center;
-}
-
-
-/* ENGLISH COURSE */
-
-.subjectCard:first-child .subjectContent p {
-    margin: 0 0 22px;
-
-    font-size: 19px;
-
-    text-align: center;
-}
-
-
-/* ENGLISH BUTTONS */
-
-.subjectCard:first-child .subjectActions {
-    width: 100%;
-
-    max-width: 680px;
-
-    margin: 0 auto;
-
-    display: flex;
-
-    flex-direction: row;
-
-    gap: 14px;
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 700px) {
-
-    .subjectPage,
-    #subjects,
-    .subjects {
-        width: 100%;
-
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-
-    /* NORMAL CARDS */
-
-    .subjectCard {
-        grid-template-columns: 1fr;
-
-        gap: 14px;
-
-        padding: 12px;
-
-        margin: 18px 0;
-
-        border-radius: 22px;
-    }
-
-
-    .subjectCard .subjectImage {
-        width: 100%;
-
-        height: 190px;
-
-        border-radius: 17px;
-    }
-
-
-    .subjectCard .subjectContent {
-        padding: 4px 5px 8px;
-    }
-
-
-    .subjectCard .subjectContent h2 {
-        font-size: 22px;
-
-        margin-bottom: 5px;
-    }
-
-
-    .subjectCard .subjectContent p {
-        font-size: 16px;
-
-        margin-bottom: 15px;
-    }
-
-
-    /* BUTTONS STAY SIDE-BY-SIDE */
-
-    .subjectCard .subjectActions {
-        display: flex;
-
-        flex-direction: row;
-
-        gap: 8px;
-    }
-
-
-    .subjectCard .openBtn,
-    .subjectCard .bookmarkBtn {
-        flex: 1;
-
-        min-height: 48px;
-
-        padding: 9px 7px;
-
-        font-size: 15px;
-    }
-
-
-    /* =================================================
-       FIRST CARD
-    ================================================= */
-
-    .subjectCard:first-child {
-        padding: 14px;
-    }
-
-
-    .subjectCard:first-child .subjectImage {
-        height: 245px;
-
-        margin-bottom: 18px;
-
-        border-radius: 18px;
-    }
-
-
-    .subjectCard:first-child .subjectContent h2 {
-        font-size: 24px;
-
-        margin-bottom: 5px;
-    }
-
-
-    .subjectCard:first-child .subjectContent p {
-        font-size: 17px;
-
-        margin-bottom: 17px;
-    }
-
-
-    .subjectCard:first-child .subjectActions {
-        max-width: none;
-
-        gap: 8px;
-    }
-}
-
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 380px) {
-
-    .subjectCard:first-child .subjectImage {
-        height: 215px;
-    }
-
-    .subjectCard:first-child .subjectContent h2 {
-        font-size: 22px;
-    }
-
-    .subjectCard .openBtn,
-    .subjectCard .bookmarkBtn {
-        font-size: 14px;
-
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}
-/* =====================================================
-   UNIQUE ACADEMIC — FINAL SUBJECT CARD OVERRIDE
-   ONE-COLUMN PROFESSIONAL DESIGN
-   IMPORTANT:
-   - Does NOT modify chapters
-   - Does NOT modify notes
-   - Does NOT modify quizzes
-   - Does NOT modify quiz engine
-   - Keeps existing subject links/bookmarks working
-===================================================== */
-
-/* =====================================================
-   SUBJECT SECTION
-===================================================== */
-
-#subjects,
-.subjects,
-.subjectPage {
-    width: 100%;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* =====================================================
-   SUBJECT HEADING
-===================================================== */
-
-#subjects > h1,
-#subjects > h2,
-.subjects > h1,
-.subjects > h2,
-.subjectPage > h1,
-.subjectPage > h2 {
-    width: 100%;
-    margin: 25px 0 28px;
-    text-align: left;
-    line-height: 1.25;
-}
-
-/* =====================================================
-   ALL SUBJECT CARDS
-   ONE COLUMN ONLY
-===================================================== */
-
-.subjectCard {
-    width: 100%;
-    margin: 20px 0;
-    padding: 20px;
-
-    display: block;
-
-    background: #ffffff;
-    border-radius: 25px;
-
-    border: 1px solid rgba(37, 99, 235, 0.07);
-
-    box-shadow:
-        0 7px 22px rgba(30, 58, 138, 0.10);
-
-    overflow: hidden;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-/* CARD HOVER */
-
-.subjectCard:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 14px 32px rgba(37, 99, 235, 0.16);
-}
-
-/* =====================================================
-   SUBJECT IMAGE
-   IMAGE STAYS ABOVE CONTENT
-===================================================== */
-
-.subjectCard .subjectImage {
-    display: block;
-
-    width: 100%;
-    height: 235px;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 20px;
-
-    margin: 0 0 20px;
-
-    background: #eef4ff;
-}
-
-/* =====================================================
-   SUBJECT CONTENT
-===================================================== */
-
-.subjectCard .subjectContent {
-    width: 100%;
-    min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 0;
-}
-
-/* =====================================================
-   SUBJECT TITLE
-===================================================== */
-
-.subjectCard .subjectContent h2 {
-    margin: 0 0 8px;
-
-    color: #172554;
-
-    font-size: 28px;
-    line-height: 1.25;
-
-    text-align: left;
-}
-
-/* =====================================================
-   SUBJECT DESCRIPTION
-===================================================== */
-
-.subjectCard .subjectContent p {
-    margin: 0 0 20px;
-
-    color: #64748b;
-
-    font-size: 18px;
-    line-height: 1.5;
-
-    text-align: left;
-}
-
-/* =====================================================
-   EXISTING HTML SUPPORT
-   Your current cards use h3 + p directly.
-   These rules preserve that structure.
-===================================================== */
-
-.subjectCard > h3 {
-    margin: 0 0 8px;
-
-    color: #172554;
-
-    font-size: 25px;
-    line-height: 1.3;
-
-    text-align: left;
-}
-
-.subjectCard > p {
-    margin: 0 0 20px;
-
-    color: #64748b;
-
-    font-size: 17px;
-    line-height: 1.5;
-
-    text-align: left;
-}
-
-/* =====================================================
-   SUBJECT ACTIONS
-   Works with your newer structure
-===================================================== */
-
-.subjectCard .subjectActions {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
-
-    flex-wrap: wrap;
-}
-
-/* =====================================================
-   OPEN BUTTON
-===================================================== */
-
-.subjectCard .openBtn {
-    flex: 1;
-
-    min-height: 52px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10px 18px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #2563eb,
-            #1d4ed8
-        );
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 14px;
-
-    font-size: 17px;
-    font-weight: bold;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-.subjectCard .openBtn:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 7px 18px rgba(37, 99, 235, 0.25);
-
-    background:
-        linear-gradient(
-            135deg,
-            #1d4ed8,
-            #1e3a8a
-        );
-}
-
-/* =====================================================
-   EXISTING BUTTON SUPPORT
-   Your current HTML uses .button
-===================================================== */
-
-.subjectCard > .button {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    min-height: 48px;
-
-    padding: 10px 20px;
-
-    background: #2563eb;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 14px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-.subjectCard > .button:hover {
-    transform: translateY(-2px);
-
-    background: #1d4ed8;
-
-    box-shadow:
-        0 7px 18px rgba(37, 99, 235, 0.20);
-}
-
-/* =====================================================
-   BOOKMARK BUTTON
-===================================================== */
-
-.subjectCard .bookmarkBtn {
-    flex: 1;
-
-    min-height: 52px;
-
-    padding: 10px 18px;
-
-    border: none;
-
-    border-radius: 14px;
-
-    background: #fbbf0b;
-
-    color: #111827;
-
-    font-size: 17px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-.subjectCard .bookmarkBtn:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 7px 18px rgba(245, 158, 11, 0.22);
-}
-
-/* =====================================================
-   EXISTING HTML BOOKMARK SUPPORT
-   Keeps your current bookmark button working
-===================================================== */
-
-.subjectCard > .bookmarkBtn {
-    margin-left: 8px;
-}
-
-/* BOOKMARKED STATE */
-
-.subjectCard .bookmarkBtn.bookmarked {
-    background: #16a34a;
-    color: white;
-}
-
-.subjectCard .bookmarkBtn.bookmarked:hover {
-    background: #15803d;
-}
-
-/* =====================================================
-   FIRST SUBJECT — FEATURED ENGLISH SKILL I
-   STILL ONE COLUMN
-===================================================== */
-
-.subjectCard:first-child {
-    display: block;
-
-    padding: 25px;
-
-    text-align: center;
-}
-
-/* FEATURED IMAGE */
-
-.subjectCard:first-child .subjectImage {
-    width: 100%;
-    height: 390px;
-
-    display: block;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 22px;
-
-    margin: 0 0 24px;
-}
-
-/* FEATURED CONTENT */
-
-.subjectCard:first-child .subjectContent {
-    padding: 0;
-
-    align-items: center;
-
-    text-align: center;
-}
-
-/* FEATURED TITLE */
-
-.subjectCard:first-child .subjectContent h2 {
-    margin: 0 0 8px;
-
-    font-size: 30px;
-
-    text-align: center;
-}
-
-/* FEATURED DESCRIPTION */
-
-.subjectCard:first-child .subjectContent p {
-    margin: 0 0 22px;
-
-    font-size: 19px;
-
-    text-align: center;
-}
-
-/* =====================================================
-   FIRST CARD — EXISTING h3 STRUCTURE
-===================================================== */
-
-.subjectCard:first-child > h3 {
-    font-size: 29px;
-
-    text-align: center;
-}
-
-.subjectCard:first-child > p {
-    font-size: 19px;
-
-    text-align: center;
-}
-
-/* =====================================================
-   FEATURED BUTTONS
-===================================================== */
-
-.subjectCard:first-child .subjectActions {
-    width: 100%;
-
-    max-width: 680px;
-
-    margin: 0 auto;
-
-    display: flex;
-
-    flex-direction: row;
-
-    gap: 14px;
-}
-
-/* =====================================================
-   MOBILE — ONE COLUMN
-===================================================== */
-
-@media (max-width: 700px) {
-
-    #subjects,
-    .subjects,
-    .subjectPage {
-        width: 100%;
-
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    /* NORMAL SUBJECT CARD */
-
-    .subjectCard {
-        width: 100%;
-
-        display: block;
-
-        padding: 14px;
-
-        margin: 18px 0;
-
-        border-radius: 22px;
-    }
-
-    /* IMAGE */
-
-    .subjectCard .subjectImage {
-        width: 100%;
-
-        height: 190px;
-
-        margin-bottom: 17px;
-
-        border-radius: 17px;
-    }
-
-    /* CONTENT */
-
-    .subjectCard .subjectContent {
-        padding: 4px 5px 8px;
-    }
-
-    /* TITLE */
-
-    .subjectCard .subjectContent h2 {
-        font-size: 22px;
-
-        margin-bottom: 5px;
-    }
-
-    /* DESCRIPTION */
-
-    .subjectCard .subjectContent p {
-        font-size: 16px;
-
-        margin-bottom: 15px;
-    }
-
-    /* EXISTING h3 */
-
-    .subjectCard > h3 {
-        font-size: 22px;
-
-        margin-bottom: 5px;
-    }
-
-    /* EXISTING p */
-
-    .subjectCard > p {
-        font-size: 16px;
-
-        margin-bottom: 15px;
-    }
-
-    /* BUTTONS */
-
-    .subjectCard .subjectActions {
-        width: 100%;
-
-        display: flex;
-
-        flex-direction: row;
-
-        gap: 8px;
-    }
-
-    .subjectCard .openBtn,
-    .subjectCard .bookmarkBtn {
-        flex: 1;
-
-        min-height: 48px;
-
-        padding: 9px 7px;
-
-        font-size: 15px;
-    }
-
-    /* CURRENT HTML BUTTONS */
-
-    .subjectCard > .button {
-        min-height: 48px;
-
-        padding: 9px 12px;
-
-        font-size: 15px;
-    }
-
-    .subjectCard > .bookmarkBtn {
-        margin-left: 5px;
-    }
-
-    /* =================================================
-       FIRST CARD
-    ================================================= */
-
-    .subjectCard:first-child {
-        display: block;
-
-        padding: 14px;
-    }
-
-    .subjectCard:first-child .subjectImage {
-        width: 100%;
-
-        height: 245px;
-
-        margin-bottom: 18px;
-
-        border-radius: 18px;
-    }
-
-    .subjectCard:first-child .subjectContent h2 {
-        font-size: 24px;
-
-        margin-bottom: 5px;
-    }
-
-    .subjectCard:first-child .subjectContent p {
-        font-size: 17px;
-
-        margin-bottom: 17px;
-    }
-
-    .subjectCard:first-child > h3 {
-        font-size: 24px;
-
-        text-align: center;
-    }
-
-    .subjectCard:first-child > p {
-        font-size: 17px;
-
-        text-align: center;
-    }
-
-    .subjectCard:first-child .subjectActions {
-        max-width: none;
-
-        gap: 8px;
-    }
-}
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 380px) {
-
-    .subjectCard {
-        padding: 11px;
-    }
-
-    .subjectCard .subjectImage {
-        height: 165px;
-    }
-
-    .subjectCard:first-child .subjectImage {
-        height: 215px;
-    }
-
-    .subjectCard .subjectContent h2 {
-        font-size: 20px;
-    }
-
-    .subjectCard > h3 {
-        font-size: 20px;
-    }
-
-    .subjectCard > p {
-        font-size: 15px;
-    }
-
-    .subjectCard .openBtn,
-    .subjectCard .bookmarkBtn {
-        font-size: 14px;
-
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .subjectCard > .button {
-        font-size: 14px;
-
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-}
-
-/* =====================================================
-   DARK MODE — SUBJECT CARDS ONLY
-===================================================== */
-
-body.dark-mode .subjectCard {
-    background: #1e293b;
-
-    border-color: #334155;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.25);
-}
-
-body.dark-mode .subjectCard .subjectContent h2 {
-    color: #f8fafc;
-}
-
-body.dark-mode .subjectCard .subjectContent p {
-    color: #94a3b8;
-}
-
+body.dark-mode .subjectCard .subjectContent h2,
 body.dark-mode .subjectCard > h3 {
     color: #f8fafc;
 }
 
+
+body.dark-mode .subjectCard .subjectContent p,
 body.dark-mode .subjectCard > p {
     color: #94a3b8;
 }
 
+
+body.dark-mode .subjectCard .subjectImage {
+    background: #0f172a;
+}
+
+
 /* =====================================================
-   END — SUBJECT CARD ONLY
+   TOUCH DEVICES
+===================================================== */
+
+@media (hover: none) {
+
+    .subjectCard:hover {
+        transform: none;
+
+        box-shadow:
+            0 3px 12px rgba(15, 23, 42, 0.08);
+    }
+
+    .subjectCard .openBtn:hover,
+    .subjectCard .bookmarkBtn:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+
+}
+
+
+/* =====================================================
+   END — PROFESSIONAL SUBJECT CARD DESIGN
 ===================================================== */
