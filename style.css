@@ -3337,3 +3337,583 @@ body.dark-mode .subjectCard .subjectImage {
 /* =====================================================
    END — PROFESSIONAL SUBJECT CARD DESIGN
 ===================================================== */
+/* =====================================================
+   UNIQUE ACADEMIC
+   PROFESSIONAL RESPONSIVE SUBJECT CARDS
+   MOBILE VERSION — FINAL
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* -------------------------------------------------
+       COURSE SECTION
+    ------------------------------------------------- */
+
+    .subjects-section,
+    .courses-section {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .subjects-section h2,
+    .courses-section h2,
+    .section-title {
+        font-size: 25px !important;
+        line-height: 1.25;
+        margin: 18px 5px 14px;
+        font-weight: 800;
+    }
+
+
+    /* -------------------------------------------------
+       SUBJECT GRID
+    ------------------------------------------------- */
+
+    .subjects-grid,
+    .courses-grid,
+    .subject-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* -------------------------------------------------
+       EVERY SUBJECT CARD
+       SAME DESIGN — NO SPECIAL FIRST CARD
+    ------------------------------------------------- */
+
+    .subject-card,
+    .course-card {
+        width: 100% !important;
+        min-height: 148px !important;
+        height: auto !important;
+
+        display: grid !important;
+
+        /*
+         * LEFT:
+         * image
+         *
+         * RIGHT:
+         * title
+         * subtitle
+         * buttons
+         */
+        grid-template-columns: 185px minmax(0, 1fr) !important;
+
+        grid-template-rows: auto 1fr auto !important;
+
+        align-items: center;
+
+        gap: 0 16px;
+
+        padding: 10px !important;
+
+        background: #ffffff;
+
+        border: 1px solid #e5e7eb;
+        border-radius: 18px;
+
+        box-shadow:
+            0 2px 8px rgba(15, 23, 42, 0.08);
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+
+    /* -------------------------------------------------
+       SUBJECT IMAGE
+    ------------------------------------------------- */
+
+    .subject-card img,
+    .course-card img,
+    .subject-image,
+    .course-image {
+        grid-column: 1 !important;
+        grid-row: 1 / 4 !important;
+
+        width: 185px !important;
+        height: 125px !important;
+
+        min-width: 185px !important;
+        min-height: 125px !important;
+
+        object-fit: cover !important;
+
+        display: block;
+
+        border-radius: 13px;
+
+        margin: 0 !important;
+
+        align-self: center;
+
+        box-shadow:
+            0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+
+    /* -------------------------------------------------
+       CARD CONTENT
+    ------------------------------------------------- */
+
+    .subject-card-content,
+    .course-card-content,
+    .subject-info,
+    .course-info {
+        grid-column: 2 !important;
+        grid-row: 1 / 4 !important;
+
+        min-width: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        justify-content: space-between !important;
+
+        align-items: stretch !important;
+
+        padding: 3px 0 !important;
+
+        box-sizing: border-box;
+    }
+
+
+    /* -------------------------------------------------
+       SUBJECT TITLE
+    ------------------------------------------------- */
+
+    .subject-card h3,
+    .subject-card h4,
+    .course-card h3,
+    .course-card h4,
+    .subject-name,
+    .course-name {
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        font-size: 20px !important;
+
+        line-height: 1.2 !important;
+
+        font-weight: 800 !important;
+
+        color: #10254b;
+
+        text-align: left;
+
+        word-break: normal;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* -------------------------------------------------
+       COURSE SUBTITLE
+    ------------------------------------------------- */
+
+    .subject-card p,
+    .course-card p,
+    .subject-subtitle,
+    .course-subtitle {
+
+        margin: 7px 0 0 !important;
+
+        padding: 0 !important;
+
+        font-size: 14px !important;
+
+        line-height: 1.35 !important;
+
+        font-weight: 500 !important;
+
+        color: #687386;
+
+        text-align: left;
+    }
+
+
+    /* -------------------------------------------------
+       BUTTON AREA
+    ------------------------------------------------- */
+
+    .subject-card .card-actions,
+    .subject-card .subject-actions,
+    .course-card .card-actions,
+    .course-card .course-actions,
+    .subject-actions,
+    .course-actions {
+
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        align-items: center !important;
+
+        gap: 8px !important;
+
+        width: 100%;
+
+        margin-top: auto !important;
+
+        padding-top: 8px !important;
+    }
+
+
+    /* -------------------------------------------------
+       OPEN + BOOKMARK BUTTONS
+    ------------------------------------------------- */
+
+    .subject-card button,
+    .subject-card a,
+    .course-card button,
+    .course-card a {
+
+        min-height: 40px !important;
+
+        height: 40px !important;
+
+        border-radius: 9px !important;
+
+        font-size: 14px !important;
+
+        font-weight: 700 !important;
+
+        white-space: nowrap;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        padding: 0 12px !important;
+
+        box-sizing: border-box;
+
+        text-decoration: none;
+
+        cursor: pointer;
+    }
+
+
+    /* -------------------------------------------------
+       OPEN BUTTON
+    ------------------------------------------------- */
+
+    .subject-card .open-btn,
+    .subject-card .open-button,
+    .subject-card .btn-open,
+    .course-card .open-btn,
+    .course-card .open-button,
+    .course-card .btn-open {
+
+        flex: 1 1 0;
+
+        background: #1261d8 !important;
+
+        color: #ffffff !important;
+
+        border: none !important;
+
+        box-shadow:
+            0 2px 5px rgba(18, 97, 216, 0.20);
+    }
+
+
+    /* -------------------------------------------------
+       BOOKMARK BUTTON
+    ------------------------------------------------- */
+
+    .subject-card .bookmark-btn,
+    .subject-card .bookmark-button,
+    .subject-card .btn-bookmark,
+    .course-card .bookmark-btn,
+    .course-card .bookmark-button,
+    .course-card .btn-bookmark {
+
+        flex: 1 1 0;
+
+        background: #ffbd08 !important;
+
+        color: #172033 !important;
+
+        border: none !important;
+
+        box-shadow:
+            0 2px 5px rgba(255, 189, 8, 0.20);
+    }
+
+
+    /* -------------------------------------------------
+       BUTTON HOVER / TOUCH
+    ------------------------------------------------- */
+
+    .subject-card .open-btn:active,
+    .subject-card .open-button:active,
+    .course-card .open-btn:active {
+
+        transform: scale(0.97);
+    }
+
+    .subject-card .bookmark-btn:active,
+    .subject-card .bookmark-button:active,
+    .course-card .bookmark-btn:active {
+
+        transform: scale(0.97);
+    }
+
+
+    /* -------------------------------------------------
+       REMOVE OLD MOBILE SPECIAL TREATMENT
+       ESPECIALLY ENGLISH SKILL I
+    ------------------------------------------------- */
+
+    .subject-card:first-child,
+    .subject-card:first-of-type,
+    .course-card:first-child,
+    .course-card:first-of-type {
+
+        grid-column: auto !important;
+
+        width: 100% !important;
+
+        min-height: 148px !important;
+
+        height: auto !important;
+
+        display: grid !important;
+
+        grid-template-columns: 185px minmax(0, 1fr) !important;
+
+        padding: 10px !important;
+
+        margin: 0 !important;
+
+        transform: none;
+    }
+
+
+    .subject-card:first-child img,
+    .course-card:first-child img {
+
+        width: 185px !important;
+        height: 125px !important;
+
+        grid-column: 1 !important;
+        grid-row: 1 / 4 !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* -------------------------------------------------
+       CARD TOUCH EFFECT
+    ------------------------------------------------- */
+
+    .subject-card:active,
+    .course-card:active {
+
+        transform: translateY(1px);
+
+        box-shadow:
+            0 2px 6px rgba(15, 23, 42, 0.10);
+    }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   360px — 390px
+===================================================== */
+
+@media (max-width: 390px) {
+
+    .subjects-section,
+    .courses-section {
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .subject-card,
+    .course-card {
+
+        min-height: 135px !important;
+
+        grid-template-columns: 150px minmax(0, 1fr) !important;
+
+        gap: 0 12px;
+
+        padding: 8px !important;
+
+        border-radius: 16px;
+    }
+
+
+    .subject-card img,
+    .course-card img,
+    .subject-image,
+    .course-image {
+
+        width: 150px !important;
+
+        height: 110px !important;
+
+        min-width: 150px !important;
+
+        min-height: 110px !important;
+
+        border-radius: 11px;
+    }
+
+
+    .subject-card h3,
+    .subject-card h4,
+    .course-card h3,
+    .course-card h4,
+    .subject-name,
+    .course-name {
+
+        font-size: 18px !important;
+
+        line-height: 1.18 !important;
+    }
+
+
+    .subject-card p,
+    .course-card p,
+    .subject-subtitle,
+    .course-subtitle {
+
+        font-size: 13px !important;
+
+        margin-top: 5px !important;
+    }
+
+
+    .subject-card button,
+    .subject-card a,
+    .course-card button,
+    .course-card a {
+
+        height: 38px !important;
+
+        min-height: 38px !important;
+
+        font-size: 13px !important;
+
+        padding: 0 8px !important;
+
+        border-radius: 8px !important;
+    }
+
+
+    .subject-card .card-actions,
+    .subject-card .subject-actions,
+    .course-card .card-actions,
+    .course-card .course-actions {
+
+        gap: 6px !important;
+
+        padding-top: 6px !important;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   320px — 359px
+===================================================== */
+
+@media (max-width: 359px) {
+
+    .subject-card,
+    .course-card {
+
+        grid-template-columns: 125px minmax(0, 1fr) !important;
+
+        gap: 0 9px;
+
+        min-height: 120px !important;
+
+        padding: 7px !important;
+    }
+
+
+    .subject-card img,
+    .course-card img,
+    .subject-image,
+    .course-image {
+
+        width: 125px !important;
+
+        height: 100px !important;
+
+        min-width: 125px !important;
+
+        min-height: 100px !important;
+    }
+
+
+    .subject-card h3,
+    .subject-card h4,
+    .course-card h3,
+    .course-card h4,
+    .subject-name,
+    .course-name {
+
+        font-size: 16px !important;
+    }
+
+
+    .subject-card p,
+    .course-card p,
+    .subject-subtitle,
+    .course-subtitle {
+
+        font-size: 12px !important;
+    }
+
+
+    .subject-card button,
+    .subject-card a,
+    .course-card button,
+    .course-card a {
+
+        height: 35px !important;
+
+        min-height: 35px !important;
+
+        font-size: 12px !important;
+
+        padding: 0 6px !important;
+    }
+
+
+    .subject-card .card-actions,
+    .subject-card .subject-actions,
+    .course-card .card-actions,
+    .course-card .course-actions {
+
+        gap: 5px !important;
+    }
+}
