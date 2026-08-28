@@ -1308,13 +1308,19 @@ function saveChapterProgress() {
          */
 
         if (
-            selectedIndex ===
-            correctAnswer
-        ) {
+    selectedIndex ===
+    correctAnswer
+) {
 
-            score++;
+    score++;
 
-        }
+}
+
+else {
+
+    wrongAnswers++;
+
+}
         
         // Save updated chapter progress
         saveChapterProgress();
