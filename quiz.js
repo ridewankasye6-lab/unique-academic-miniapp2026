@@ -3,11 +3,6 @@
 // 5 QUESTIONS PER PAGE
 // =====================================================
 
-
-// =====================================================
-// WAIT UNTIL PAGE IS READY
-// =====================================================
-
 (function () {
 
     "use strict";
@@ -163,9 +158,8 @@
     // =================================================
     // ANSWER STATE
     //
-    // Stores the selected answer for each question.
-    // This allows answers to remain selected when
-    // moving between pages.
+    // null = not answered
+    // number = selected option index
     // =================================================
 
     let userAnswers = [];
@@ -176,95 +170,13 @@
     // =================================================
 
     let score = 0;
-let wrongAnswers = 0;
-        // =================================================
-    // SAVE CHAPTER PROGRESS
+
+
+    // =================================================
+    // WRONG ANSWERS
     // =================================================
 
-    function getProgressStorageKey() {
-
-        const normalizedSubject =
-            normalizeSubjectKey(subject);
-
-        const normalizedChapter =
-            String(chapter || "")
-                .trim();
-
-        return `uniqueAcademicQuizProgress_${normalizedSubject}_${normalizedChapter}`;
-
-    }
-    
-function saveChapterProgress() {
-
-    const percentage =
-        questions.length > 0
-            ? Math.round(
-                (
-                    score /
-                    questions.length
-                ) * 100
-            )
-            : 0;
-
-
-    const progressData = {
-
-        subject:
-            subject,
-
-        chapter:
-            chapter,
-
-        correct:
-            score,
-
-        wrong:
-            wrongAnswers,
-
-        total:
-            questions.length,
-
-        percentage:
-            percentage,
-
-        completed:
-            userAnswers.every(
-                answer =>
-                    answer !== null
-            ),
-
-        updatedAt:
-            Date.now()
-
-    };
-
-
-    try {
-
-        localStorage.setItem(
-
-            getProgressStorageKey(),
-
-            JSON.stringify(
-                progressData
-            )
-
-        );
-
-    }
-
-    catch (error) {
-
-        console.error(
-            "Unable to save quiz progress:",
-            error
-        );
-
-    }
-
-}
-
-    
+    let wrongAnswers = 0;
 
 
     // =================================================
@@ -278,13 +190,9 @@ function saveChapterProgress() {
     // FORMAT SUBJECT NAME
     // =================================================
 
-    function formatSubjectName(
-        value
-    ) {
+    function formatSubjectName(value) {
 
-        if (
-            !value
-        ) {
+        if (!value) {
 
             return "Unknown Subject";
 
@@ -309,13 +217,9 @@ function saveChapterProgress() {
     // FORMAT CHAPTER
     // =================================================
 
-    function formatChapter(
-        value
-    ) {
+    function formatChapter(value) {
 
-        if (
-            !value
-        ) {
+        if (!value) {
 
             return "Unknown Chapter";
 
@@ -363,9 +267,7 @@ function saveChapterProgress() {
     // NORMALIZE SUBJECT KEY
     // =================================================
 
-    function normalizeSubjectKey(
-        value
-    ) {
+    function normalizeSubjectKey(value) {
 
         return String(
             value || ""
@@ -380,6 +282,147 @@ function saveChapterProgress() {
                 /\s+/g,
                 "-"
             );
+
+    }
+
+
+    // =================================================
+    // GET PROGRESS STORAGE KEY
+    // =================================================
+
+    function getProgressStorageKey() {
+
+        const normalizedSubject =
+            normalizeSubjectKey(
+                subject
+            );
+
+
+        const normalizedChapter =
+            String(
+                chapter || ""
+            ).trim();
+
+
+        return `uniqueAcademicQuizProgress_${normalizedSubject}_${normalizedChapter}`;
+
+    }
+
+
+    // =================================================
+    // SAVE CHAPTER PROGRESS
+    // =================================================
+
+    function saveChapterProgress() {
+
+        const totalQuestions =
+            questions.length;
+
+
+        const answeredQuestions =
+            userAnswers.filter(
+                answer =>
+                    answer !== null
+            ).length;
+
+
+        /*
+         * Progress percentage is based on
+         * CORRECT ANSWERS / TOTAL QUESTIONS.
+         *
+         * Example:
+         *
+         * 1 correct out of 50 = 2%
+         * 7 correct out of 10 = 70%
+         */
+
+        const percentage =
+            totalQuestions > 0
+                ? Math.round(
+                    (
+                        score /
+                        totalQuestions
+                    ) * 100
+                )
+                : 0;
+
+
+        const completed =
+            totalQuestions > 0 &&
+            answeredQuestions ===
+            totalQuestions;
+
+
+        const progressData = {
+
+            subject:
+                subject,
+
+            chapter:
+                chapter,
+
+            correct:
+                score,
+
+            wrong:
+                wrongAnswers,
+
+            total:
+                totalQuestions,
+
+            answered:
+                answeredQuestions,
+
+            percentage:
+                percentage,
+
+            completed:
+                completed,
+
+            updatedAt:
+                Date.now()
+
+        };
+
+
+        try {
+
+            localStorage.setItem(
+
+                getProgressStorageKey(),
+
+                JSON.stringify(
+                    progressData
+                )
+
+            );
+
+
+            /*
+             * Tell the chapter-page progress
+             * system that the progress changed.
+             */
+
+            window.dispatchEvent(
+                new CustomEvent(
+                    "uniqueAcademicQuizProgressUpdated",
+                    {
+                        detail:
+                            progressData
+                    }
+                )
+            );
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Unable to save quiz progress:",
+                error
+            );
+
+        }
 
     }
 
@@ -655,9 +698,7 @@ function saveChapterProgress() {
     // GET ENGLISH EXPLANATION
     // =================================================
 
-    function getEnglishExplanation(
-        q
-    ) {
+    function getEnglishExplanation(q) {
 
         if (
             q &&
@@ -689,9 +730,7 @@ function saveChapterProgress() {
     // GET AMHARIC EXPLANATION
     // =================================================
 
-    function getAmharicExplanation(
-        q
-    ) {
+    function getAmharicExplanation(q) {
 
         if (
             q &&
@@ -723,9 +762,7 @@ function saveChapterProgress() {
     // GET QUESTION OPTIONS
     // =================================================
 
-    function getQuestionOptions(
-        q
-    ) {
+    function getQuestionOptions(q) {
 
         if (
             q &&
@@ -760,17 +797,15 @@ function saveChapterProgress() {
     // GET CORRECT ANSWER
     // =================================================
 
-    function getCorrectAnswer(
-        q
-    ) {
+    function getCorrectAnswer(q) {
 
         /*
-         * Your existing quiz data uses:
+         * Existing quiz data uses:
          *
          * answer: 0
          * answer: 1
          * answer: 2
-         * etc.
+         * answer: 3
          */
 
         const answer =
@@ -804,8 +839,8 @@ function saveChapterProgress() {
     function loadPage() {
 
         /*
-         * Never load another page after the quiz
-         * has been completed.
+         * Never load another page after
+         * the quiz has been completed.
          */
 
         if (
@@ -852,8 +887,11 @@ function saveChapterProgress() {
 
 
         window.scrollTo({
+
             top: 0,
+
             behavior: "smooth"
+
         });
 
     }
@@ -1117,7 +1155,7 @@ function saveChapterProgress() {
 
                 /*
                  * Restore previously selected answer
-                 * when moving between pages.
+                 * while moving between pages.
                  */
 
                 if (
@@ -1135,6 +1173,10 @@ function saveChapterProgress() {
                         );
 
 
+                    /*
+                     * Show correct answer.
+                     */
+
                     if (
                         optionIndex ===
                         correctAnswer
@@ -1146,6 +1188,10 @@ function saveChapterProgress() {
 
                     }
 
+
+                    /*
+                     * Show selected wrong answer.
+                     */
 
                     if (
                         optionIndex ===
@@ -1291,39 +1337,48 @@ function saveChapterProgress() {
             selectedIndex;
 
 
-        const buttons =
-            options.querySelectorAll(
-                ".optionBtn"
-            );
-
-
         const correctAnswer =
             getCorrectAnswer(
                 q
             );
 
 
-        /*
-         * Count the answer once.
-         */
+        const buttons =
+            options.querySelectorAll(
+                ".optionBtn"
+            );
+
+
+        // =============================================
+        // COUNT ANSWER
+        // =============================================
 
         if (
-    selectedIndex ===
-    correctAnswer
-) {
+            selectedIndex ===
+            correctAnswer
+        ) {
 
-    score++;
+            score++;
 
-}
+        }
 
-else {
+        else {
 
-    wrongAnswers++;
+            wrongAnswers++;
 
-}
-        
-        // Save updated chapter progress
+        }
+
+
+        // =============================================
+        // SAVE PROGRESS IMMEDIATELY
+        // =============================================
+
         saveChapterProgress();
+
+
+        // =============================================
+        // SHOW ANSWER COLORS
+        // =============================================
 
         buttons.forEach(
             (
@@ -1336,7 +1391,7 @@ else {
 
 
                 /*
-                 * Always show correct answer.
+                 * Always show the correct answer.
                  */
 
                 if (
@@ -1352,7 +1407,7 @@ else {
 
 
                 /*
-                 * Show selected wrong answer.
+                 * Show the selected wrong answer.
                  */
 
                 if (
@@ -1372,9 +1427,9 @@ else {
         );
 
 
-        /*
-         * Show explanations.
-         */
+        // =============================================
+        // SHOW EXPLANATIONS
+        // =============================================
 
         englishExplanation.textContent =
             getEnglishExplanation(
@@ -1575,13 +1630,7 @@ else {
 
 
         /*
-         * Create professional score display.
-         *
-         * Example:
-         *
-         * 45 / 60
-         *
-         * 75%
+         * Calculate percentage.
          */
 
         const percentage =
@@ -1590,13 +1639,18 @@ else {
                     (
                         score /
                         questions.length
-                    ) *
-                    100
+                    ) * 100
                 )
                 : 0;
 
-        // Save final chapter progress
+
+        /*
+         * Save final progress.
+         */
+
         saveChapterProgress();
+
+
         /*
          * Check if score display already exists.
          */
@@ -1642,7 +1696,8 @@ else {
 
 
         /*
-         * Make sure Review button is available.
+         * Make sure Review/Restart button
+         * is available.
          */
 
         reviewQuizBtn.style.display =
@@ -1659,8 +1714,11 @@ else {
          */
 
         completionMessage.scrollIntoView({
+
             behavior: "smooth",
+
             block: "center"
+
         });
 
 
@@ -1678,6 +1736,12 @@ else {
 
 
         console.log(
+            "Wrong:",
+            wrongAnswers
+        );
+
+
+        console.log(
             "Percentage:",
             percentage + "%"
         );
@@ -1686,51 +1750,70 @@ else {
 
 
     // =================================================
-    // REVIEW QUIZ
+    // REVIEW / RESTART QUIZ
     // =================================================
-    try {
-
-    localStorage.removeItem(
-        getProgressStorageKey()
-    );
-
-}
-catch (error) {
-
-    console.error(
-        "Unable to reset chapter progress:",
-        error
-    );
-
-}
 
     reviewQuizBtn.addEventListener(
         "click",
         () => {
 
             /*
-             * Reset page.
+             * IMPORTANT:
+             *
+             * The old code removed localStorage
+             * when the page loaded.
+             *
+             * That was wrong.
+             *
+             * Now the progress is reset ONLY
+             * when this button is clicked.
              */
+
+            try {
+
+                localStorage.removeItem(
+                    getProgressStorageKey()
+                );
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Unable to reset chapter progress:",
+                    error
+                );
+
+            }
+
+
+            // =========================================
+            // RESET PAGE
+            // =========================================
 
             currentPage =
                 0;
 
 
-            /*
-             * Reset score.
-             */
+            // =========================================
+            // RESET SCORE
+            // =========================================
 
             score =
-    0;
-            // Reset wrong answers
+                0;
+
+
+            // =========================================
+            // RESET WRONG ANSWERS
+            // =========================================
+
             wrongAnswers =
-    0;
-            
+                0;
 
 
-            /*
-             * Reset all answers.
-             */
+            // =========================================
+            // RESET ALL ANSWERS
+            // =========================================
 
             userAnswers =
                 new Array(
@@ -1738,33 +1821,43 @@ catch (error) {
                 ).fill(
                     null
                 );
-            // Save the reset state.
-//
-// This makes the chapter card return to:
-// 0% + BLUE
-
-saveChapterProgress();
 
 
             /*
-             * Mark quiz as active again.
+             * Save the completely reset state.
+             *
+             * This makes the chapter card return to:
+             *
+             * 0%
+             *
+             * 0 correct
+             * 0 wrong
+             *
+             * Not answered yet.
              */
+
+            saveChapterProgress();
+
+
+            // =========================================
+            // MARK QUIZ ACTIVE
+            // =========================================
 
             quizFinished =
                 false;
 
 
-            /*
-             * Hide completion message.
-             */
+            // =========================================
+            // HIDE COMPLETION MESSAGE
+            // =========================================
 
             completionMessage.hidden =
                 true;
 
 
-            /*
-             * Show navigation again.
-             */
+            // =========================================
+            // SHOW NAVIGATION
+            // =========================================
 
             previousQuestionBtn.style.display =
                 "inline-flex";
@@ -1774,9 +1867,9 @@ saveChapterProgress();
                 "inline-flex";
 
 
-            /*
-             * Enable buttons.
-             */
+            // =========================================
+            // ENABLE BUTTONS
+            // =========================================
 
             previousQuestionBtn.disabled =
                 true;
@@ -1786,9 +1879,9 @@ saveChapterProgress();
                 false;
 
 
-            /*
-             * Restore Next button.
-             */
+            // =========================================
+            // RESTORE NEXT BUTTON
+            // =========================================
 
             nextBtn.innerHTML = `
                 <span>Next</span>
@@ -1796,25 +1889,28 @@ saveChapterProgress();
             `;
 
 
-            /*
-             * Load Question 1–5.
-             */
+            // =========================================
+            // LOAD QUESTION 1–5
+            // =========================================
 
             loadPage();
 
 
-            /*
-             * Scroll to top.
-             */
+            // =========================================
+            // SCROLL TO TOP
+            // =========================================
 
             window.scrollTo({
+
                 top: 0,
+
                 behavior: "smooth"
+
             });
 
 
             console.log(
-                "Quiz review started from Question 1."
+                "Quiz restarted from Question 1."
             );
 
         }
