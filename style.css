@@ -5364,6 +5364,22 @@ body.dark-mode .subjectCard > img {
     }
 
 }
+/* =================================================
+   QUIZ PROGRESS STATUS
+   Keeps the original blue design.
+================================================= */
+
+/* Correct / good progress */
+.quiz-progress.progress-good {
+    background: #22c55e;
+    color: white;
+}
+
+/* Wrong / low progress */
+.quiz-progress.progress-bad {
+    background: #ef4444;
+    color: white;
+}
 
 /* =========================================================
    END — HOME SUBJECT CARD REFERENCE DESIGN
