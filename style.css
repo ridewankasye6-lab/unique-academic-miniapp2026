@@ -5380,6 +5380,65 @@ body.dark-mode .subjectCard > img {
     background: #ef4444;
     color: white;
 }
+/* =====================================================
+   UNIQUE ACADEMIC
+   QUIZ PROGRESS COLORS
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   DEFAULT / BLUE
+   ----------------------------------------------------- */
+
+.quiz-progress.progress-empty {
+
+    background: #3b82f6;
+
+    color: #ffffff;
+
+}
+
+
+/* -----------------------------------------------------
+   GREEN
+   More correct than wrong
+   ----------------------------------------------------- */
+
+.quiz-progress.progress-good {
+
+    background: #28a745;
+
+    color: #ffffff;
+
+}
+
+
+/* -----------------------------------------------------
+   RED
+   More wrong than correct
+   ----------------------------------------------------- */
+
+.quiz-progress.progress-bad {
+
+    background: #dc3545;
+
+    color: #ffffff;
+
+}
+
+
+/* -----------------------------------------------------
+   YELLOW
+   Correct and wrong are equal
+   ----------------------------------------------------- */
+
+.quiz-progress.progress-equal {
+
+    background: #ffbf00;
+
+    color: #000000;
+
+}
 
 /* =========================================================
    END — HOME SUBJECT CARD REFERENCE DESIGN
