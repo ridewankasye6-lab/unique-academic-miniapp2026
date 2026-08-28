@@ -2439,3 +2439,364 @@ code {
    END OF UNIQUE ACADEMIC GLOBAL STYLE
    Version 2.2.0
 ===================================================== */
+
+/* =====================================================
+   UNIQUE ACADEMIC
+   PROFESSIONAL SUBJECT CARDS
+===================================================== */
+
+.subjectCard {
+    width: 100%;
+    margin: 20px 0;
+    padding: 18px;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    gap: 24px;
+
+    background: #ffffff;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 8px 25px rgba(30, 58, 138, 0.10);
+
+    border: 1px solid rgba(37, 99, 235, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.subjectCard:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 32px rgba(37, 99, 235, 0.16);
+}
+
+
+/* =====================================================
+   SUBJECT IMAGE
+===================================================== */
+
+.subjectImage {
+    width: 100%;
+    height: 220px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    background: #eef4ff;
+}
+
+
+/* =====================================================
+   SUBJECT CONTENT
+===================================================== */
+
+.subjectContent {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.subjectContent h2 {
+    margin: 0 0 8px;
+
+    color: #172554;
+
+    font-size: 25px;
+
+    line-height: 1.3;
+}
+
+
+.subjectContent p {
+    margin: 0 0 20px;
+
+    color: #64748b;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   SUBJECT ACTIONS
+===================================================== */
+
+.subjectActions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+/* OPEN BUTTON */
+
+.subjectActions .openBtn {
+    min-height: 52px;
+
+    padding: 12px 25px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.subjectActions .openBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+
+/* BOOKMARK BUTTON */
+
+.subjectActions .bookmarkBtn {
+    min-height: 52px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #fbbf0b;
+
+    color: #111827;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.subjectActions .bookmarkBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(245, 158, 11, 0.22);
+}
+
+
+/* =====================================================
+   FEATURED FIRST SUBJECT
+   ENGLISH SKILL I
+===================================================== */
+
+.subjectCard:first-child {
+    display: block;
+
+    padding: 25px;
+}
+
+
+.subjectCard:first-child .subjectImage {
+    width: 100%;
+
+    height: 390px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    margin-bottom: 22px;
+}
+
+
+.subjectCard:first-child .subjectContent {
+    text-align: center;
+
+    align-items: center;
+}
+
+
+.subjectCard:first-child .subjectContent h2 {
+    font-size: 29px;
+}
+
+
+.subjectCard:first-child .subjectContent p {
+    font-size: 19px;
+
+    margin-bottom: 20px;
+}
+
+
+.subjectCard:first-child .subjectActions {
+    justify-content: center;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .subjectCard {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+        padding: 14px;
+
+        border-radius: 22px;
+    }
+
+    .subjectImage {
+        height: 190px;
+
+        border-radius: 17px;
+    }
+
+    .subjectContent h2 {
+        font-size: 21px;
+    }
+
+    .subjectContent p {
+        font-size: 15px;
+
+        margin-bottom: 14px;
+    }
+
+    .subjectActions {
+        width: 100%;
+
+        gap: 9px;
+    }
+
+    .subjectActions .openBtn,
+    .subjectActions .bookmarkBtn {
+        flex: 1;
+
+        min-height: 48px;
+
+        padding: 10px 12px;
+
+        font-size: 15px;
+    }
+
+
+    /* FIRST CARD */
+
+    .subjectCard:first-child {
+        padding: 14px;
+    }
+
+    .subjectCard:first-child .subjectImage {
+        height: 230px;
+
+        margin-bottom: 17px;
+
+        border-radius: 18px;
+    }
+
+    .subjectCard:first-child .subjectContent h2 {
+        font-size: 23px;
+    }
+
+    .subjectCard:first-child .subjectContent p {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .subjectCard {
+        padding: 11px;
+    }
+
+    .subjectImage {
+        height: 165px;
+    }
+
+    .subjectCard:first-child .subjectImage {
+        height: 200px;
+    }
+
+    .subjectContent h2 {
+        font-size: 19px;
+    }
+
+    .subjectActions .openBtn,
+    .subjectActions .bookmarkBtn {
+        font-size: 14px;
+
+        padding:
+            9px 8px;
+    }
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .subjectCard {
+    background: #1e293b;
+
+    border-color: #334155;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .subjectContent h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .subjectContent p {
+    color: #94a3b8;
+}
