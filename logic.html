@@ -20,14 +20,16 @@
     <style>
 
         /* =================================================
-           LOGIC CHAPTER LIST
-           Uses the existing site colors.
+           LOGIC CHAPTER CARDS
+           Uses your existing BLUE site design.
         ================================================= */
 
         .logic-chapters {
+
             width: 100%;
             max-width: 700px;
             margin: 20px auto;
+
         }
 
 
@@ -38,11 +40,13 @@
         .logic-chapter-card {
 
             display: flex;
+
             align-items: center;
 
-            gap: 16px;
+            gap: 15px;
 
             width: 100%;
+
             box-sizing: border-box;
 
             padding: 18px 16px;
@@ -95,6 +99,7 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             background:
@@ -136,7 +141,7 @@
 
 
         /* =================================================
-           SCORE COLORS
+           RED — LOW SCORE
         ================================================= */
 
         .logic-progress.low {
@@ -150,6 +155,10 @@
         }
 
 
+        /* =================================================
+           ORANGE — MEDIUM SCORE
+        ================================================= */
+
         .logic-progress.medium {
 
             background:
@@ -160,6 +169,10 @@
 
         }
 
+
+        /* =================================================
+           GREEN — GOOD SCORE
+        ================================================= */
 
         .logic-progress.good {
 
@@ -195,9 +208,13 @@
 
             border-radius: 9px;
 
-            background: rgba(142, 68, 173, 0.10);
+            /*
+             * BLUE — keeps your existing theme.
+             */
 
-            color: #8e44ad;
+            background: rgba(37, 99, 235, 0.10);
+
+            color: #2563eb;
 
             font-size: 12px;
 
@@ -222,12 +239,13 @@
 
 
         /* =================================================
-           ARROW
+           BLUE ARROW
         ================================================= */
 
         .logic-arrow {
 
             width: 52px;
+
             height: 52px;
 
             min-width: 52px;
@@ -237,15 +255,31 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
-            background: rgba(142, 68, 173, 0.08);
+            background: rgba(37, 99, 235, 0.08);
 
-            color: #8e44ad;
+            color: #2563eb;
 
             font-size: 27px;
 
             font-weight: 700;
+
+        }
+
+
+        /* =================================================
+           QUIZ SECTION
+        ================================================= */
+
+        .logic-quizzes {
+
+            width: 100%;
+
+            max-width: 700px;
+
+            margin: 20px auto;
 
         }
 
@@ -270,6 +304,7 @@
             .logic-progress {
 
                 width: 58px;
+
                 height: 58px;
 
                 min-width: 58px;
@@ -280,6 +315,7 @@
             .logic-progress::before {
 
                 width: 44px;
+
                 height: 44px;
 
             }
@@ -295,6 +331,7 @@
             .logic-arrow {
 
                 width: 48px;
+
                 height: 48px;
 
                 min-width: 48px;
@@ -329,7 +366,8 @@
 
 
 <!-- =================================================
-     CHAPTERS
+     CHAPTER NOTES
+     KEEPING YOUR ORIGINAL CHAPTER LINKS
 ================================================= -->
 
 <h2>
@@ -340,13 +378,11 @@
 <div class="logic-chapters">
 
 
-    <!-- =================================================
-         CHAPTER 1
-    ================================================= -->
+    <!-- CHAPTER 1 -->
 
     <a
         class="logic-chapter-card"
-        href="quiz.html?subject=logic&chapter=1"
+        href="logic-chapter1.html"
     >
 
         <div
@@ -382,13 +418,11 @@
 
 
 
-    <!-- =================================================
-         CHAPTER 2
-    ================================================= -->
+    <!-- CHAPTER 2 -->
 
     <a
         class="logic-chapter-card"
-        href="quiz.html?subject=logic&chapter=2"
+        href="logic-chapter2.html"
     >
 
         <div
@@ -425,13 +459,11 @@
 
 
 
-    <!-- =================================================
-         CHAPTER 3
-    ================================================= -->
+    <!-- CHAPTER 3 -->
 
     <a
         class="logic-chapter-card"
-        href="quiz.html?subject=logic&chapter=3"
+        href="logic-chapter3.html"
     >
 
         <div
@@ -467,30 +499,12 @@
 
 
 
-    <!-- =================================================
-         CHAPTER 4
-    ================================================= -->
+    <!-- CHAPTER 4 -->
 
     <a
         class="logic-chapter-card"
-        href="quiz.html?subject=logic&chapter=4"
+        href="logic-chapter4.html"
     >
-
-        <div
-            class="logic-progress"
-            data-chapter="4"
-        >
-
-            <span class="logic-chapter-number">
-                Chapter 4
-            </span>
-
-            <h3 class="logic-chapter-title">
-                Basic Concepts of Critical Thinking
-            </h3>
-
-        </div>
-
 
         <div
             class="logic-progress"
@@ -504,6 +518,19 @@
         </div>
 
 
+        <div class="logic-chapter-info">
+
+            <span class="logic-chapter-number">
+                Chapter 4
+            </span>
+
+            <h3 class="logic-chapter-title">
+                Basic Concepts of Critical Thinking
+            </h3>
+
+        </div>
+
+
         <div class="logic-arrow">
             →
         </div>
@@ -512,13 +539,11 @@
 
 
 
-    <!-- =================================================
-         CHAPTER 5
-    ================================================= -->
+    <!-- CHAPTER 5 -->
 
     <a
         class="logic-chapter-card"
-        href="quiz.html?subject=logic&chapter=5"
+        href="logic-chapter5.html"
     >
 
         <div
@@ -552,6 +577,7 @@
 
     </a>
 
+
 </div>
 
 
@@ -565,6 +591,8 @@
 </h2>
 
 
+<!-- FULL NOTES -->
+
 <p>
 
     <a href="logic-notes.html">
@@ -574,9 +602,217 @@
 </p>
 
 
+<!-- VIDEO -->
+
 <p>
     🎥 Video Tutorial
 </p>
+
+
+
+<!-- =================================================
+     CHAPTER QUIZZES
+     UNDER RESOURCES
+================================================= -->
+
+<h2>
+    📝 Chapter Quizzes
+</h2>
+
+
+<div class="logic-quizzes">
+
+
+    <!-- =================================================
+         CHAPTER 1 QUIZ
+    ================================================= -->
+
+    <div class="quiz-card">
+
+        <div
+            class="quiz-progress"
+            data-chapter="1"
+        >
+            0%
+        </div>
+
+
+        <div class="quiz-info">
+
+            <span class="quiz-badge">
+                Chapter 1
+            </span>
+
+            <h3>
+                Chapter 1 Quiz
+            </h3>
+
+        </div>
+
+
+        <a
+            href="quiz.html?subject=logic&chapter=1"
+            class="quiz-arrow"
+        >
+            ➜
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         CHAPTER 2 QUIZ
+    ================================================= -->
+
+    <div class="quiz-card">
+
+        <div
+            class="quiz-progress"
+            data-chapter="2"
+        >
+            0%
+        </div>
+
+
+        <div class="quiz-info">
+
+            <span class="quiz-badge">
+                Chapter 2
+            </span>
+
+            <h3>
+                Chapter 2 Quiz
+            </h3>
+
+        </div>
+
+
+        <a
+            href="quiz.html?subject=logic&chapter=2"
+            class="quiz-arrow"
+        >
+            ➜
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         CHAPTER 3 QUIZ
+    ================================================= -->
+
+    <div class="quiz-card">
+
+        <div
+            class="quiz-progress"
+            data-chapter="3"
+        >
+            0%
+        </div>
+
+
+        <div class="quiz-info">
+
+            <span class="quiz-badge">
+                Chapter 3
+            </span>
+
+            <h3>
+                Chapter 3 Quiz
+            </h3>
+
+        </div>
+
+
+        <a
+            href="quiz.html?subject=logic&chapter=3"
+            class="quiz-arrow"
+        >
+            ➜
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         CHAPTER 4 QUIZ
+    ================================================= -->
+
+    <div class="quiz-card">
+
+        <div
+            class="quiz-progress"
+            data-chapter="4"
+        >
+            0%
+        </div>
+
+
+        <div class="quiz-info">
+
+            <span class="quiz-badge">
+                Chapter 4
+            </span>
+
+            <h3>
+                Chapter 4 Quiz
+            </h3>
+
+        </div>
+
+
+        <a
+            href="quiz.html?subject=logic&chapter=4"
+            class="quiz-arrow"
+        >
+            ➜
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         CHAPTER 5 QUIZ
+    ================================================= -->
+
+    <div class="quiz-card">
+
+        <div
+            class="quiz-progress"
+            data-chapter="5"
+        >
+            0%
+        </div>
+
+
+        <div class="quiz-info">
+
+            <span class="quiz-badge">
+                Chapter 5
+            </span>
+
+            <h3>
+                Chapter 5 Quiz
+            </h3>
+
+        </div>
+
+
+        <a
+            href="quiz.html?subject=logic&chapter=5"
+            class="quiz-arrow"
+        >
+            ➜
+        </a>
+
+    </div>
+
+
+</div>
 
 
 
@@ -620,11 +856,11 @@
 
 
     /*
-     * Current version:
-     * Start every chapter at 0%.
+     * Initial display.
      *
-     * Once quiz.js saves the student's result,
-     * this page can automatically display it.
+     * The circles start at 0%.
+     * The actual automatic score connection
+     * should be handled by quiz.js.
      */
 
     const progressCircles =
@@ -636,13 +872,9 @@
     progressCircles.forEach(
         circle => {
 
-            const percentage =
-                0;
-
-
             circle.style.setProperty(
                 "--progress",
-                percentage + "%"
+                "0%"
             );
 
 
@@ -655,7 +887,7 @@
             if (text) {
 
                 text.textContent =
-                    percentage + "%";
+                    "0%";
 
             }
 
