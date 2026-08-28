@@ -4894,6 +4894,476 @@ body.dark-mode .subjectCard > img {
     background: #0f172a;
 }
 
+/* =========================================================
+   UNIQUE ACADEMIC — FINAL COURSE CARD POLISH
+   SAFE OVERRIDE
+   ---------------------------------------------------------
+   Only controls the HOME PAGE course cards.
+   Does NOT change chapter pages or quiz styling.
+========================================================= */
+
+.subjectsSection {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subjectsTitle {
+    margin: 18px 0 14px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.subjectsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.subjectsGrid .subjectCard {
+    width: 100%;
+    min-height: 205px;
+
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 22px;
+
+    padding: 14px 18px;
+    margin: 0;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   COURSE IMAGE
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectImage {
+    display: block;
+
+    width: 250px;
+    height: 160px;
+
+    min-width: 250px;
+    min-height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COURSE INFORMATION
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectInfo {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: stretch;
+
+    height: 100%;
+}
+
+
+/* =========================================================
+   COURSE TITLE
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectInfo h3 {
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 26px;
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    color: #10254b;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   FRESHMAN COURSE
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectInfo p {
+    margin: 10px 0 0;
+
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 500;
+
+    color: #687386;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   BUTTON AREA
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectActions {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin-top: auto;
+    padding-top: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   OPEN + BOOKMARK
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectActions .button,
+.subjectsGrid .subjectCard .subjectActions .bookmarkBtn {
+    flex: 1 1 0;
+
+    width: auto;
+
+    min-width: 0;
+
+    height: 48px;
+    min-height: 48px;
+
+    padding: 0 12px;
+
+    margin: 0;
+
+    border: none;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   OPEN BUTTON
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectActions .button {
+    background: #1261d8;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 3px 8px rgba(18, 97, 216, 0.20);
+}
+
+
+/* =========================================================
+   BOOKMARK BUTTON
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectActions .bookmarkBtn {
+    background: #ffbd08;
+
+    color: #172033;
+
+    box-shadow:
+        0 3px 8px rgba(255, 189, 8, 0.20);
+}
+
+
+/* =========================================================
+   BOOKMARKED
+========================================================= */
+
+.subjectsGrid
+.subjectCard
+.subjectActions
+.bookmarkBtn.bookmarked {
+    background: #16a34a;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BUTTON TOUCH EFFECT
+========================================================= */
+
+.subjectsGrid .subjectCard .subjectActions .button:active,
+.subjectsGrid .subjectCard .subjectActions .bookmarkBtn:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .subjectsSection {
+        width: 100%;
+        padding: 0 8px;
+
+        box-sizing: border-box;
+    }
+
+
+    .subjectsTitle {
+        margin: 18px 4px 12px;
+
+        font-size: 24px;
+    }
+
+
+    .subjectsGrid {
+        gap: 8px;
+    }
+
+
+    .subjectsGrid .subjectCard {
+        min-height: 190px;
+
+        grid-template-columns:
+            250px
+            minmax(0, 1fr);
+
+        gap: 18px;
+
+        padding: 12px 14px;
+
+        border-radius: 18px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectImage {
+        width: 250px;
+        height: 155px;
+
+        min-width: 250px;
+        min-height: 155px;
+
+        border-radius: 13px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectInfo h3 {
+        font-size: 25px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectInfo p {
+        font-size: 17px;
+
+        margin-top: 8px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectActions {
+        gap: 8px;
+
+        padding-top: 12px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectActions .button,
+    .subjectsGrid .subjectCard .subjectActions .bookmarkBtn {
+        height: 46px;
+        min-height: 46px;
+
+        font-size: 15px;
+
+        padding: 0 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .subjectsSection {
+        padding: 0 6px;
+    }
+
+
+    .subjectsTitle {
+        font-size: 21px;
+
+        margin: 16px 4px 10px;
+    }
+
+
+    .subjectsGrid {
+        gap: 7px;
+    }
+
+
+    .subjectsGrid .subjectCard {
+        min-height: 158px;
+
+        grid-template-columns:
+            135px
+            minmax(0, 1fr);
+
+        gap: 12px;
+
+        padding: 9px;
+
+        border-radius: 16px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectImage {
+        width: 135px;
+        height: 105px;
+
+        min-width: 135px;
+        min-height: 105px;
+
+        border-radius: 11px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectInfo h3 {
+        font-size: 18px;
+
+        line-height: 1.2;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectInfo p {
+        font-size: 13px;
+
+        margin-top: 5px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectActions {
+        gap: 6px;
+
+        padding-top: 8px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectActions .button,
+    .subjectsGrid .subjectCard .subjectActions .bookmarkBtn {
+        height: 38px;
+        min-height: 38px;
+
+        padding: 0 6px;
+
+        font-size: 12px;
+
+        border-radius: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .subjectsGrid .subjectCard {
+        grid-template-columns:
+            120px
+            minmax(0, 1fr);
+
+        gap: 10px;
+
+        padding: 8px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectImage {
+        width: 120px;
+        height: 95px;
+
+        min-width: 120px;
+        min-height: 95px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectInfo h3 {
+        font-size: 17px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectInfo p {
+        font-size: 12px;
+    }
+
+
+    .subjectsGrid .subjectCard .subjectActions .button,
+    .subjectsGrid .subjectCard .subjectActions .bookmarkBtn {
+        height: 36px;
+        min-height: 36px;
+
+        font-size: 11px;
+
+        padding: 0 4px;
+    }
+
+}
 
 /* =========================================================
    END — HOME SUBJECT CARD REFERENCE DESIGN
