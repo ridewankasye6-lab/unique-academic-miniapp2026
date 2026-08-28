@@ -893,7 +893,9 @@ onAuthStateChanged(
                 "🔐 Student Login",
                 "student-login.html",
                 "📝 Register",
-                "registration.html"
+                "registration.html",
+                "🏠 Home",
+                "index.html"
             );
 
             return;
@@ -1000,6 +1002,8 @@ onAuthStateChanged(
                     "Complete your registration and payment to access this course.",
                     "📝 Register Now",
                     "registration.html",
+                    "",
+                    "",
                     "🏠 Home",
                     "index.html"
                 );
@@ -3366,7 +3370,9 @@ function showLocked(
     button1Text,
     button1Link,
     button2Text = "",
-    button2Link = ""
+    button2Link = "",
+    button3Text = "",
+    button3Link = ""
 ) {
 
     if (
@@ -3417,6 +3423,18 @@ function showLocked(
     const safeButton2Link =
         escapeAttribute(
             button2Link
+        );
+
+
+    const safeButton3Text =
+        escapeHTML(
+            button3Text
+        );
+
+
+    const safeButton3Link =
+        escapeAttribute(
+            button3Link
         );
 
 
@@ -3502,6 +3520,31 @@ function showLocked(
                         "
                     >
                         ${safeButton2Text}
+                    </a>
+                    `
+                    :
+                    ""
+                }
+
+
+                ${
+                    button3Text
+                    ?
+                    `
+                    <a
+                        href="${safeButton3Link}"
+                        style="
+                            display:inline-block;
+                            padding:12px 22px;
+                            background:#e5e7eb;
+                            color:#111827;
+                            text-decoration:none;
+                            border-radius:9px;
+                            font-weight:bold;
+                            margin:5px;
+                        "
+                    >
+                        ${safeButton3Text}
                     </a>
                     `
                     :
