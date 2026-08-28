@@ -5440,6 +5440,140 @@ body.dark-mode .subjectCard > img {
 
 }
 
+/* =====================================================
+   UNIQUE ACADEMIC
+   QUIZ PROGRESS CIRCLE COLORS
+===================================================== */
+
+
+/* -----------------------------------------------------
+   DEFAULT / NOT ANSWERED
+   WHITE CIRCLE
+----------------------------------------------------- */
+
+.quiz-progress {
+    width: 64px;
+    height: 64px;
+
+    min-width: 64px;
+    min-height: 64px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    text-align: center;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* -----------------------------------------------------
+   WHITE
+   0 CORRECT / 0 WRONG
+----------------------------------------------------- */
+
+.quiz-progress.progress-empty {
+
+    background: #ffffff;
+
+    color: #555555;
+
+    border: 6px solid #e5e7eb;
+
+}
+
+
+/* -----------------------------------------------------
+   GREEN
+   MORE CORRECT THAN WRONG
+----------------------------------------------------- */
+
+.quiz-progress.progress-good {
+
+    background: #2cbf55;
+
+    color: #ffffff;
+
+    border: 6px solid #2cbf55;
+
+}
+
+
+/* -----------------------------------------------------
+   RED
+   MORE WRONG THAN CORRECT
+----------------------------------------------------- */
+
+.quiz-progress.progress-bad {
+
+    background: #ef4444;
+
+    color: #ffffff;
+
+    border: 6px solid #ef4444;
+
+}
+
+
+/* -----------------------------------------------------
+   YELLOW
+   CORRECT === WRONG
+----------------------------------------------------- */
+
+.quiz-progress.progress-equal {
+
+    background: #f5ac15;
+
+    color: #ffffff;
+
+    border: 6px solid #f5ac15;
+
+}
+
+
+/* -----------------------------------------------------
+   KEEP CIRCLE FROM BEING SQUASHED
+----------------------------------------------------- */
+
+.quiz-card .quiz-progress {
+
+    flex-shrink: 0;
+
+}
+
+
+/* -----------------------------------------------------
+   MOBILE
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .quiz-progress {
+
+        width: 64px;
+        height: 64px;
+
+        min-width: 64px;
+        min-height: 64px;
+
+        font-size: 16px;
+
+    }
+
+}
+
 /* =========================================================
    END — HOME SUBJECT CARD REFERENCE DESIGN
 ========================================================= */
