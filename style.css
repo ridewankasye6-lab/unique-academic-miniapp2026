@@ -5440,140 +5440,237 @@ body.dark-mode .subjectCard > img {
 
 }
 
+
+/* =========================================================
+   END — HOME SUBJECT CARD REFERENCE DESIGN
+========================================================= */
+
 /* =====================================================
    UNIQUE ACADEMIC
-   QUIZ PROGRESS CIRCLE COLORS
-===================================================== */
+   QUIZ PROGRESS CIRCLE
+   ===================================================== */
 
 
-/* -----------------------------------------------------
-   DEFAULT / NOT ANSWERED
-   WHITE CIRCLE
------------------------------------------------------ */
+/* =====================================================
+   MAIN CIRCLE
+   ===================================================== */
 
 .quiz-progress {
-    width: 64px;
-    height: 64px;
 
-    min-width: 64px;
-    min-height: 64px;
+    --progress-percent: 0%;
+
+    width: 78px;
+    height: 78px;
+
+    min-width: 78px;
+    min-height: 78px;
 
     border-radius: 50%;
 
+    position: relative;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     box-sizing: border-box;
 
-    font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
 
-    text-align: center;
-
-    transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        border 0.25s ease,
-        transform 0.25s ease;
-}
-
-
-/* -----------------------------------------------------
-   WHITE
-   0 CORRECT / 0 WRONG
------------------------------------------------------ */
-
-.quiz-progress.progress-empty {
+    font-weight: 800;
 
     background: #ffffff;
 
-    color: #555555;
+    color: #626873;
 
-    border: 6px solid #e5e7eb;
+    z-index: 1;
 
 }
 
 
-/* -----------------------------------------------------
+/* =====================================================
+   CIRCLE INNER WHITE CENTER
+   ===================================================== */
+
+.quiz-progress::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 62px;
+    height: 62px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    z-index: -1;
+
+}
+
+
+/* =====================================================
+   EMPTY / NOT ANSWERED
+   WHITE + GRAY
+   ===================================================== */
+
+.quiz-progress.progress-empty {
+
+    color: #626873;
+
+    background:
+
+        conic-gradient(
+
+            #d9dde2 0deg,
+            #d9dde2 360deg
+
+        );
+
+}
+
+
+/* =====================================================
    GREEN
-   MORE CORRECT THAN WRONG
------------------------------------------------------ */
+   CORRECT > WRONG
+   ===================================================== */
 
 .quiz-progress.progress-good {
 
-    background: #2cbf55;
+    color: #28a745;
 
-    color: #ffffff;
+    background:
 
-    border: 6px solid #2cbf55;
+        conic-gradient(
+
+            #28a745
+            0deg,
+
+            #28a745
+            calc(
+                var(--progress-percent) * 3.6
+            ),
+
+            #e7ece9
+            calc(
+                var(--progress-percent) * 3.6
+            ),
+
+            #e7ece9
+            360deg
+
+        );
 
 }
 
 
-/* -----------------------------------------------------
+/* =====================================================
    RED
-   MORE WRONG THAN CORRECT
------------------------------------------------------ */
+   WRONG > CORRECT
+   ===================================================== */
 
 .quiz-progress.progress-bad {
 
-    background: #ef4444;
+    color: #dc3545;
 
-    color: #ffffff;
+    background:
 
-    border: 6px solid #ef4444;
+        conic-gradient(
+
+            #dc3545
+            0deg,
+
+            #dc3545
+            calc(
+                var(--progress-percent) * 3.6
+            ),
+
+            #f0e4e6
+            calc(
+                var(--progress-percent) * 3.6
+            ),
+
+            #f0e4e6
+            360deg
+
+        );
 
 }
 
 
-/* -----------------------------------------------------
+/* =====================================================
    YELLOW
    CORRECT === WRONG
------------------------------------------------------ */
+   ===================================================== */
 
 .quiz-progress.progress-equal {
 
-    background: #f5ac15;
+    color: #f1a208;
 
-    color: #ffffff;
+    background:
 
-    border: 6px solid #f5ac15;
+        conic-gradient(
+
+            #f1a208
+            0deg,
+
+            #f1a208
+            calc(
+                var(--progress-percent) * 3.6
+            ),
+
+            #eee9df
+            calc(
+                var(--progress-percent) * 3.6
+            ),
+
+            #eee9df
+            360deg
+
+        );
 
 }
 
 
-/* -----------------------------------------------------
-   KEEP CIRCLE FROM BEING SQUASHED
------------------------------------------------------ */
+/* =====================================================
+   KEEP WHITE CENTER ABOVE THE RING
+   ===================================================== */
 
-.quiz-card .quiz-progress {
+.quiz-progress {
 
-    flex-shrink: 0;
+    isolation: isolate;
 
 }
 
 
-/* -----------------------------------------------------
+/* =====================================================
    MOBILE
------------------------------------------------------ */
+   ===================================================== */
 
-@media (max-width: 600px) {
+@media (
+    max-width: 600px
+) {
 
     .quiz-progress {
 
-        width: 64px;
-        height: 64px;
+        width: 72px;
+        height: 72px;
 
-        min-width: 64px;
-        min-height: 64px;
+        min-width: 72px;
+        min-height: 72px;
 
-        font-size: 16px;
+        font-size: 19px;
+
+    }
+
+
+    .quiz-progress::before {
+
+        width: 56px;
+        height: 56px;
 
     }
 
 }
-
-/* =========================================================
-   END — HOME SUBJECT CARD REFERENCE DESIGN
-========================================================= */
