@@ -1721,7 +1721,11 @@ catch (error) {
              */
 
             score =
-                0;
+    0;
+            // Reset wrong answers
+            wrongAnswers =
+    0;
+            
 
 
             /*
@@ -1734,6 +1738,12 @@ catch (error) {
                 ).fill(
                     null
                 );
+            // Save the reset state.
+//
+// This makes the chapter card return to:
+// 0% + BLUE
+
+saveChapterProgress();
 
 
             /*
