@@ -1674,6 +1674,21 @@
     // =================================================
     // REVIEW QUIZ
     // =================================================
+    try {
+
+    localStorage.removeItem(
+        getProgressStorageKey()
+    );
+
+}
+catch (error) {
+
+    console.error(
+        "Unable to reset chapter progress:",
+        error
+    );
+
+}
 
     reviewQuizBtn.addEventListener(
         "click",
