@@ -1,11 +1,16 @@
 // =====================================================
 // UNIQUE ACADEMIC
-// QUIZ PROGRESS COLOR SYSTEM
+// QUIZ PROGRESS SYSTEM
+// =====================================================
+// COLOR RULES:
 //
-// BLUE   = Not answered yet
-// GREEN  = More correct than wrong
-// RED    = More wrong than correct
-// YELLOW = Correct and wrong are equal
+// 0 answered              → WHITE
+// correct > wrong        → GREEN
+// wrong > correct        → RED
+// correct === wrong      → YELLOW
+//
+// The percentage shown is:
+// correct answers / total questions
 // =====================================================
 
 (function () {
@@ -29,7 +34,7 @@
 
 
     // =================================================
-    // UPDATE ONE QUIZ CARD
+    // UPDATE ONE PROGRESS CIRCLE
     // =================================================
 
     function updateProgressUI(element, data) {
@@ -39,9 +44,7 @@
         }
 
 
-        // -------------------------------------------------
-        // Remove all previous progress colors
-        // -------------------------------------------------
+        // Remove old color classes first
 
         element.classList.remove(
             "progress-good",
@@ -51,9 +54,9 @@
         );
 
 
-        // -------------------------------------------------
-        // Safety check
-        // -------------------------------------------------
+        // ---------------------------------------------
+        // SAFETY CHECK
+        // ---------------------------------------------
 
         if (
             !data ||
@@ -90,16 +93,18 @@
 
         const total =
             Math.max(
-                0,
+                1,
                 data.total
             );
 
 
-        // -------------------------------------------------
-        // Calculate percentage
-        //
-        // Percentage is ALWAYS based on correct answers.
-        // -------------------------------------------------
+        const answered =
+            correct + wrong;
+
+
+        // ---------------------------------------------
+        // PERCENTAGE
+        // ---------------------------------------------
 
         const percentage =
             Math.round(
@@ -107,24 +112,15 @@
             );
 
 
-        // -------------------------------------------------
-        // Show percentage
-        // -------------------------------------------------
-
         element.textContent =
             `${percentage}%`;
 
 
-        // -------------------------------------------------
-        // BLUE
-        //
-        // Nothing answered yet.
-        // -------------------------------------------------
+        // ---------------------------------------------
+        // NOTHING ANSWERED
+        // ---------------------------------------------
 
-        if (
-            correct === 0 &&
-            wrong === 0
-        ) {
+        if (answered === 0) {
 
             element.classList.add(
                 "progress-empty"
@@ -135,15 +131,11 @@
         }
 
 
-        // -------------------------------------------------
-        // GREEN
-        //
-        // Correct answers are more than wrong answers.
-        // -------------------------------------------------
+        // ---------------------------------------------
+        // MORE CORRECT → GREEN
+        // ---------------------------------------------
 
-        if (
-            correct > wrong
-        ) {
+        if (correct > wrong) {
 
             element.classList.add(
                 "progress-good"
@@ -154,15 +146,11 @@
         }
 
 
-        // -------------------------------------------------
-        // RED
-        //
-        // Wrong answers are more than correct answers.
-        // -------------------------------------------------
+        // ---------------------------------------------
+        // MORE WRONG → RED
+        // ---------------------------------------------
 
-        if (
-            wrong > correct
-        ) {
+        if (wrong > correct) {
 
             element.classList.add(
                 "progress-bad"
@@ -173,21 +161,13 @@
         }
 
 
-        // -------------------------------------------------
-        // YELLOW
-        //
-        // Correct and wrong are equal.
-        // -------------------------------------------------
+        // ---------------------------------------------
+        // EQUAL → YELLOW
+        // ---------------------------------------------
 
-        if (
-            correct === wrong
-        ) {
-
-            element.classList.add(
-                "progress-equal"
-            );
-
-        }
+        element.classList.add(
+            "progress-equal"
+        );
 
     }
 
@@ -204,9 +184,7 @@
             );
 
 
-        if (
-            !quizCards.length
-        ) {
+        if (!quizCards.length) {
 
             return;
 
@@ -214,7 +192,7 @@
 
 
         quizCards.forEach(
-            card => {
+            (card) => {
 
                 const quizLink =
                     card.querySelector(
@@ -222,7 +200,7 @@
                     );
 
 
-                const progressElement =
+                const progress =
                     card.querySelector(
                         ".quiz-progress"
                     );
@@ -230,17 +208,13 @@
 
                 if (
                     !quizLink ||
-                    !progressElement
+                    !progress
                 ) {
 
                     return;
 
                 }
 
-
-                // -----------------------------------------
-                // Read quiz URL
-                // -----------------------------------------
 
                 let url;
 
@@ -287,10 +261,6 @@
                 }
 
 
-                // -----------------------------------------
-                // SAME KEY USED BY quiz.js
-                // -----------------------------------------
-
                 const storageKey =
                     `uniqueAcademicQuizProgress_${subject}_${chapter}`;
 
@@ -307,9 +277,7 @@
                         );
 
 
-                    if (
-                        saved
-                    ) {
+                    if (saved) {
 
                         savedProgress =
                             JSON.parse(
@@ -330,12 +298,8 @@
                 }
 
 
-                // -----------------------------------------
-                // Update card
-                // -----------------------------------------
-
                 updateProgressUI(
-                    progressElement,
+                    progress,
                     savedProgress
                 );
 
@@ -346,15 +310,8 @@
 
 
     // =================================================
-    // RUN AFTER PAGE LOAD
+    // UPDATE WHEN PAGE IS READY
     // =================================================
-
-    function start() {
-
-        updateAllQuizProgress();
-
-    }
-
 
     if (
         document.readyState ===
@@ -363,28 +320,16 @@
 
         document.addEventListener(
             "DOMContentLoaded",
-            start
+            updateAllQuizProgress
         );
 
     }
 
     else {
 
-        start();
+        updateAllQuizProgress();
 
     }
-
-
-    // =================================================
-    // UPDATE WHEN PAGE BECOMES VISIBLE AGAIN
-    //
-    // Useful when returning from quiz.html.
-    // =================================================
-
-    window.addEventListener(
-        "pageshow",
-        updateAllQuizProgress
-    );
 
 
     // =================================================
@@ -398,11 +343,33 @@
 
 
     // =================================================
-    // OPTIONAL PUBLIC FUNCTION
+    // UPDATE WHEN QUIZ SAVES PROGRESS
     // =================================================
 
-    window.updateQuizProgress =
-        updateAllQuizProgress;
+    window.addEventListener(
+        "quizProgressUpdated",
+        updateAllQuizProgress
+    );
+
+
+    // =================================================
+    // UPDATE WHEN PAGE BECOMES VISIBLE
+    // =================================================
+
+    document.addEventListener(
+        "visibilitychange",
+        () => {
+
+            if (
+                !document.hidden
+            ) {
+
+                updateAllQuizProgress();
+
+            }
+
+        }
+    );
 
 
 })();
