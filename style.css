@@ -2800,3 +2800,406 @@ body.dark-mode .subjectContent h2 {
 body.dark-mode .subjectContent p {
     color: #94a3b8;
 }
+
+/* =====================================================
+   UNIQUE ACADEMIC — FINAL SUBJECT CARD DESIGN
+   MATCHES THE REFERENCE LAYOUT
+===================================================== */
+
+/* COURSE SECTION */
+
+.subjectPage,
+#subjects,
+.subjects {
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* COURSE HEADING */
+
+.subjectPage > h1,
+.subjectPage > h2,
+#subjects > h1,
+#subjects > h2 {
+    width: 100%;
+    margin: 25px 0 28px;
+    text-align: left;
+    line-height: 1.25;
+}
+
+
+/* ALL SUBJECT CARDS */
+
+.subjectCard {
+    width: 100%;
+    margin: 20px 0;
+    padding: 14px;
+
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    align-items: center;
+    gap: 28px;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 7px 22px rgba(30, 58, 138, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* SUBJECT IMAGE */
+
+.subjectCard .subjectImage {
+    width: 100%;
+    height: 235px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 20px;
+}
+
+
+/* CONTENT */
+
+.subjectCard .subjectContent {
+    min-width: 0;
+
+    padding: 8px 8px 8px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* TITLE */
+
+.subjectCard .subjectContent h2 {
+    margin: 0 0 8px;
+
+    color: #172554;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+
+    text-align: left;
+}
+
+
+/* COURSE */
+
+.subjectCard .subjectContent p {
+    margin: 0 0 22px;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+
+/* BUTTON AREA */
+
+.subjectCard .subjectActions {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* OPEN */
+
+.subjectCard .openBtn {
+    flex: 1;
+
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+/* BOOKMARK */
+
+.subjectCard .bookmarkBtn {
+    flex: 1;
+
+    min-height: 52px;
+
+    padding: 10px 18px;
+
+    background: #fbbf0b;
+
+    color: #111827;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   FIRST CARD — LARGE FEATURED ENGLISH CARD
+===================================================== */
+
+.subjectCard:first-child {
+    display: block;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+
+/* LARGE ENGLISH IMAGE */
+
+.subjectCard:first-child .subjectImage {
+    width: 100%;
+
+    height: 390px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 22px;
+
+    margin: 0 0 24px;
+}
+
+
+/* ENGLISH CONTENT */
+
+.subjectCard:first-child .subjectContent {
+    padding: 0;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* ENGLISH TITLE */
+
+.subjectCard:first-child .subjectContent h2 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+
+    text-align: center;
+}
+
+
+/* ENGLISH COURSE */
+
+.subjectCard:first-child .subjectContent p {
+    margin: 0 0 22px;
+
+    font-size: 19px;
+
+    text-align: center;
+}
+
+
+/* ENGLISH BUTTONS */
+
+.subjectCard:first-child .subjectActions {
+    width: 100%;
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 14px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .subjectPage,
+    #subjects,
+    .subjects {
+        width: 100%;
+
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    /* NORMAL CARDS */
+
+    .subjectCard {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+        padding: 12px;
+
+        margin: 18px 0;
+
+        border-radius: 22px;
+    }
+
+
+    .subjectCard .subjectImage {
+        width: 100%;
+
+        height: 190px;
+
+        border-radius: 17px;
+    }
+
+
+    .subjectCard .subjectContent {
+        padding: 4px 5px 8px;
+    }
+
+
+    .subjectCard .subjectContent h2 {
+        font-size: 22px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .subjectCard .subjectContent p {
+        font-size: 16px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* BUTTONS STAY SIDE-BY-SIDE */
+
+    .subjectCard .subjectActions {
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 8px;
+    }
+
+
+    .subjectCard .openBtn,
+    .subjectCard .bookmarkBtn {
+        flex: 1;
+
+        min-height: 48px;
+
+        padding: 9px 7px;
+
+        font-size: 15px;
+    }
+
+
+    /* =================================================
+       FIRST CARD
+    ================================================= */
+
+    .subjectCard:first-child {
+        padding: 14px;
+    }
+
+
+    .subjectCard:first-child .subjectImage {
+        height: 245px;
+
+        margin-bottom: 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .subjectCard:first-child .subjectContent h2 {
+        font-size: 24px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .subjectCard:first-child .subjectContent p {
+        font-size: 17px;
+
+        margin-bottom: 17px;
+    }
+
+
+    .subjectCard:first-child .subjectActions {
+        max-width: none;
+
+        gap: 8px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .subjectCard:first-child .subjectImage {
+        height: 215px;
+    }
+
+    .subjectCard:first-child .subjectContent h2 {
+        font-size: 22px;
+    }
+
+    .subjectCard .openBtn,
+    .subjectCard .bookmarkBtn {
+        font-size: 14px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
