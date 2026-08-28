@@ -310,7 +310,75 @@
     src="access-guard.js"
 ></script>
 
+<script>
+/* =================================================
+   LOGIC QUIZ PROGRESS
+   Reads saved progress from quiz.js
+================================================= */
+
+(function () {
+
+    "use strict";
+
+    const progressCards =
+        document.querySelectorAll(".quiz-card");
+
+    progressCards.forEach(function (card, index) {
+
+        const chapter =
+            index + 1;
+
+        const progressElement =
+            card.querySelector(".quiz-progress");
+
+        if (!progressElement) {
+            return;
+        }
+
+        const storageKey =
+            `uniqueAcademicQuizProgress_logic_${chapter}`;
+
+        try {
+
+            const saved =
+                localStorage.getItem(storageKey);
+
+            if (!saved) {
+                progressElement.textContent = "0%";
+                return;
+            }
+
+            const data =
+                JSON.parse(saved);
+
+            const percentage =
+                Number.isFinite(
+                    Number(data.percentage)
+                )
+                    ? Number(data.percentage)
+                    : 0;
+
+            progressElement.textContent =
+                `${percentage}%`;
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Unable to load Logic quiz progress:",
+                error
+            );
+
+            progressElement.textContent =
+                "0%";
+
+        }
+
+    });
+
+})();
+</script>
 
 </body>
-
 </html>
