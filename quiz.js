@@ -292,8 +292,14 @@
         style.textContent = `
 
             .optionBtn {
-                position: relative;
-            }
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
 
 
             .unique-answer-icon {
