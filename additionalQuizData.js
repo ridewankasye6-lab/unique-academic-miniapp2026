@@ -4819,12 +4819,737 @@ quizData["history"]["3"] = [   {
         amharicExplanation: "📚 ክብረ ነገስት ማለት 'የነገስታት ክብር' ማለት ሲሆን፣ ከሰለሞናዊ ስርወ መንግስት ህጋዊነት ጋር የተያያዘ አስፈላጊ ጽሑፍ ነው። የኢትዮጵያ ገዢዎች ከንጉስ ሰለሞንና ከንግስት ሳባ ጋር የዘር ግንኙነት እንዳላቸው የሚያቀርበው ትርክት ለሰለሞናዊ የዙፋን ጥያቄ ድጋፍ ሰጥቷል።"
     }];
 
-quizData["history"]["4"] = [
+quizData["history"]["4"] = [ {question: "The rapid territorial expansion of Emperor Amde-Tsion was primarily motivated by which of the following factors?",
+    options: [
+      "A desire to convert non-Christian territories to Christianity.",
+      "The strategic need to control trade routes and establish political dominance.",
+      "An effort to establish a permanent capital for the Christian Kingdom.",
+      "A military alliance with neighboring sultanates against external threats."
+    ],
+    answer: 1,
+    englishExplanation: "Amde-Tsion's expansion was mainly driven by political, military, and economic interests. He wanted to control important trade routes, secure valuable resources, and strengthen the authority of the Christian Kingdom. Although Christianity also spread during the expansion, religious conversion was not the main reason for his military campaigns. 🏰⚔️",
+    amharicExplanation: "የአምደ ጽዮን የግዛት መስፋፋት ዋና ምክንያት ፖለቲካዊ፣ ወታደራዊ እና ኢኮኖሚያዊ ጥቅሞች ነበሩ። አስፈላጊ የንግድ መስመሮችንና ሀብቶችን ለመቆጣጠር እና የክርስቲያን መንግሥቱን ሥልጣን ለማጠናከር ፈልጎ ነበር። በመስፋፋቱ ክርስትናም ቢስፋፋም፣ ዋናው የወታደራዊ ዘመቻው ምክንያት ግን ሃይማኖትን ማስፋፋት አልነበረም። 🏰⚔️"
+  },
 
-    // History Chapter 4 questions
+  {
+    question: "Why did Amde-Tsion appoint governors like Bahr-Sagad and Wa'akale-Bahir during his reign?",
+    options: [
+      "To decentralize the administration of the Christian Kingdom and reduce royal influence.",
+      "To maintain a unified state by consolidating control over strategically important territories.",
+      "To establish independent ruling entities within the empire to counteract rebellions.",
+      "To ensure the local elites had autonomy to govern without interference from the central monarchy."
+    ],
+    answer: 1,
+    englishExplanation: "Amde-Tsion appointed loyal governors to strengthen central control over important and newly conquered territories. These governors helped collect taxes, protect borders, maintain order, and ensure that distant regions remained loyal to the king. 👑🛡️",
+    amharicExplanation: "አምደ ጽዮን ታማኝ ገዢዎችን የሾመው በአስፈላጊ እና በአዲስ በተያዙ ግዛቶች ላይ ማዕከላዊ ቁጥጥርን ለማጠናከር ነበር። እነዚህ ገዢዎች ግብር እንዲሰበሰብ፣ ድንበር እንዲጠበቅ፣ ሥርዓት እንዲኖር እና ሩቅ አካባቢዎች ለንጉሡ ታማኝ እንዲሆኑ ያግዙ ነበር። 👑🛡️"
+  },
 
+  {
+    question: "The territorial expansion carried out by Amde-Tsion during the medieval period primarily contributed to the spread of Christianity by:",
+    options: [
+      "Establishing permanent church structures across Ethiopia.",
+      "Providing security for missionary activities in newly incorporated regions.",
+      "Introducing Christianity as a state religion in regions previously untouched by religion.",
+      "Forcing non-Christian populations to convert through military campaigns."
+    ],
+    answer: 1,
+    englishExplanation: "The expansion brought many new territories under the political control of the Christian Kingdom. This created greater security and allowed missionaries and clergy to travel, preach, and establish churches more easily in newly incorporated areas. ✝️🕊️",
+    amharicExplanation: "የአምደ ጽዮን መስፋፋት ብዙ አዳዲስ አካባቢዎችን በክርስቲያን መንግሥቱ ቁጥጥር ሥር አስገባ። ይህም የተሻለ ደህንነት ስለፈጠረ ሚስዮናውያንና ካህናት ወደ አዲስ አካባቢዎች በመሄድ እንዲሰብኩና ቤተክርስቲያናትን እንዲያቋቁሙ አመቻቸ። ✝️🕊️"
+  },
 
-];
+  {
+    question: "The Ewostatewos Movement faced significant resistance from the Ethiopian Orthodox Church primarily because:",
+    options: [
+      "Its followers attempted to overthrow the ruling monarch.",
+      "It introduced teachings that contradicted the core doctrines of the Church.",
+      "It emphasized strict Sabbath observance, causing division within the clergy.",
+      "It rejected all forms of monasticism and clerical hierarchy."
+    ],
+    answer: 2,
+    englishExplanation: "The Ewostatewos movement strongly supported observing Saturday as a Sabbath in addition to Sunday. This position created a serious disagreement with Church authorities and contributed to a long period of religious conflict. 📖⛪",
+    amharicExplanation: "የእውስታቴዎስ እንቅስቃሴ ከእሁድ በተጨማሪ ቅዳሜን እንደ ሰንበት በጥብቅ መከበር እንዳለበት ያምን ነበር። ይህ ከቤተክርስቲያን ባለሥልጣናት አመለካከት ጋር በመለያየቱ ከፍተኛ አለመግባባትንና ረጅም የሃይማኖት ግጭትን ፈጠረ። 📖⛪"
+  },
+
+  {
+    question: "The Estifanosites differed from other monastic movements in Ethiopia by:",
+    options: [
+      "Advocating for greater integration with secular authorities.",
+      "Rejecting royal intervention in spiritual matters and emphasizing self-subsistence.",
+      "Promoting alliances with the Muslim Sultanates to resist royal authority.",
+      "Encouraging widespread missionary activities in the southern regions of Ethiopia."
+    ],
+    answer: 1,
+    englishExplanation: "The Estifanosites emphasized spiritual independence from royal authority. They valued poverty, equality, and self-sufficiency and rejected accepting royal land or wealth. They believed religious life should remain free from political control. 🏞️🙏",
+    amharicExplanation: "ኢስጢፋኖሶች ከንጉሣዊ ሥልጣን ነፃ የሆነ መንፈሳዊ ሕይወትን ያጠናክሩ ነበር። ድህነትን፣ እኩልነትንና ራስን መቻልን ዋጋ ይሰጡ ነበር፤ ከንጉሥ የሚሰጥ መሬት ወይም ሀብትንም ይቃወሙ ነበር። መንፈሳዊ ሕይወት ከፖለቲካዊ ቁጥጥር ነፃ መሆን እንዳለበት ያምኑ ነበር። 🏞️🙏"
+  },
+
+  {
+    question: "One of Emperor Zara-Yaqob's key religious reforms to consolidate the Orthodox Church included:",
+    options: [
+      "Strengthening ties with the Catholic Church in Europe.",
+      "Enforcing universal adherence to Sunday worship across Ethiopia.",
+      "Establishing a comprehensive library system in churches to promote religious literature.",
+      "Abolishing the fasting tradition on Wednesdays and Fridays."
+    ],
+    answer: 2,
+    englishExplanation: "Zara-Yaqob strongly supported religious education and literature. He encouraged the copying and production of religious books and helped develop church libraries. These efforts supported the standardization and strengthening of Orthodox teachings. 📚⛪",
+    amharicExplanation: "ዘርአ ያዕቆብ ለሃይማኖታዊ ትምህርትና ሥነ-ጽሑፍ ትልቅ ትኩረት ሰጥቷል። የሃይማኖት መጻሕፍት እንዲገለበጡና እንዲዘጋጁ አበረታታ፣ በቤተክርስቲያናትም የመጻሕፍት ማዕከላት እንዲጠናከሩ አደረገ። ይህም የኦርቶዶክስ አስተምህሮን ለማጠናከር ረድቷል። 📚⛪"
+  },
+
+  {
+    question: "The significance of Abune Tekle-Haymanot in the spread of Christianity lies in:",
+    options: [
+      "His military campaigns against Muslim Sultanates.",
+      "His establishment of new theological schools in Northern Ethiopia.",
+      "His role in reviving Christianity in Shewa and converting southern regions like Damot.",
+      "His translation of Christian texts from Arabic to Geez."
+    ],
+    answer: 2,
+    englishExplanation: "Abune Tekle-Haymanot is remembered especially for his missionary activities in southern Ethiopia. He played an important role in reviving Christianity in Shewa and spreading it into areas such as Damot. ✝️🌿",
+    amharicExplanation: "አቡነ ተክለ ሃይማኖት በተለይ በደቡብ ኢትዮጵያ ባደረጉት የሚስዮን ሥራ ይታወቃሉ። በሸዋ ክርስትናን በማደስና እንደ ደሞት ያሉ አካባቢዎች እንዲዳረስ በማድረግ አስፈላጊ ሚና ተጫውተዋል። ✝️🌿"
+  },
+
+  {
+    question: "What was the primary role of trade in the rise and consolidation of Muslim sultanates such as Ifat and Adal during the medieval period?",
+    options: [
+      "It served as a means to establish religious alliances with neighboring Christian kingdoms.",
+      "It was the main channel for economic sustenance and the spread of Islam into central and southwestern Ethiopia.",
+      "It functioned solely as a local economic activity without geopolitical implications.",
+      "It enabled the sultanates to gain military supremacy over the Christian kingdom through the acquisition of foreign weaponry."
+    ],
+    answer: 1,
+    englishExplanation: "Trade was a major source of wealth for Muslim sultanates such as Ifat and Adal. Merchants also carried Islamic beliefs and cultural practices along trade routes, helping Islam spread into inland and southern areas. 🐪💰",
+    amharicExplanation: "ንግድ እንደ ኢፋትና አደል ላሉ የሙስሊም ሱልጣኔቶች ዋና የሀብት ምንጭ ነበር። ነጋዴዎችም በንግድ መስመሮች ላይ እስላማዊ እምነቶችንና ባህላዊ ልምዶችን በማስተላለፍ እስልምና ወደ ውስጣዊና ደቡባዊ አካባቢዎች እንዲስፋፋ አግዘዋል። 🐪💰"
+  },
+
+  {
+    question: "Why did the Walasma family establish the Sultanate of Adal in the southeastern highlands around Harar in 1367?",
+    options: [
+      "To avoid direct military confrontation with expanding Christian kingdoms and relocate to a more defensible region.",
+      "To consolidate control over coastal trade routes through Massawa and Zeila.",
+      "To ally with the Oromo forces to counter Christian expansion.",
+      "To establish a center for theological study and peaceful coexistence with Christian kingdoms."
+    ],
+    answer: 0,
+    englishExplanation: "After the decline and defeat of Ifat under pressure from the Christian Kingdom, members of the Walasma ruling family moved southeastward. The Harar highlands offered a more defensible location where they could reorganize and continue their political activities. 🏔️🛡️",
+    amharicExplanation: "ኢፋት በክርስቲያን መንግሥት ግፊትና ጥቃት ከተዳከመ በኋላ፣ የወልስማ ስርወ መንግሥት አባላት ወደ ደቡብ-ምስራቅ ተንቀሳቀሱ። በሐረር ዙሪያ ያለው ደጋማ አካባቢ ይበልጥ ለመከላከያ ምቹ ስለነበር እዚያ በመሰባሰብ የፖለቲካ እንቅስቃሴያቸውን ቀጠሉ። 🏔️🛡️"
+  },
+
+  {
+    question: "Which of the following trade centers emerged as a crucial point of interaction between Muslim and Christian merchants during the medieval period?",
+    options: [
+      "Dabarwa and Asmara in the hinterland of Massawa.",
+      "Suq-Amaja and Gandabalo along the Ifat-Awsa route.",
+      "The city-states of Mogadishu, Brava, and Merca.",
+      "Lake Tana and its surrounding monasteries."
+    ],
+    answer: 1,
+    englishExplanation: "Suq-Amaja and Gandabalo were important markets along the trade routes connecting Christian and Muslim areas. Merchants from different communities met there to exchange goods, making these markets important centers of economic and social interaction. 🛍️🤝",
+    amharicExplanation: "ሱቅ-አማጃና ጋንዳባሎ የክርስቲያንና የሙስሊም አካባቢዎችን በሚያገናኙ የንግድ መስመሮች ላይ የሚገኙ ጠቃሚ ገበያዎች ነበሩ። ከተለያዩ ማህበረሰቦች የመጡ ነጋዴዎች እዚያ በመገናኘት ሸቀጦችን ይለዋወጡ ነበር። ስለዚህ እነዚህ ገበያዎች የኢኮኖሚና የማህበራዊ ግንኙነት ማዕከላት ነበሩ። 🛍️🤝"
+  },
+
+  {
+    question: "Why was Zeila a focal point in the rivalry between the Christian Kingdom and Muslim Sultanates during the medieval period?",
+    options: [
+      "It was the only port city controlled entirely by the Christian Kingdom.",
+      "It served as a major trade outlet that both Christian and Muslim rulers sought to dominate.",
+      "It was a religious pilgrimage site important to both Christianity and Islam.",
+      "It was the administrative center of the Sultanate of Ifat and later Adal."
+    ],
+    answer: 1,
+    englishExplanation: "Zeila was an important coastal trading port connecting the Horn of Africa with wider regional and overseas markets. Controlling it provided access to trade and customs revenue, making it strategically valuable to both Christian rulers and Muslim sultanates. ⚓🌍",
+    amharicExplanation: "ዘይላ የቀንድ አፍሪካን ከሰፊ የክልልና የውጭ ገበያዎች ጋር የሚያገናኝ አስፈላጊ የባህር ዳርቻ የንግድ ወደብ ነበረች። ወደቡን መቆጣጠር የንግድና የጉምሩክ ገቢን ለማግኘት ስለሚያስችል ለክርስቲያን ገዢዎችና ለሙስሊም ሱልጣኔቶች በጣም ስትራቴጂካዊ ነበር። ⚓🌍"
+  },
+
+  {
+    question: "What was the primary reason for the Christian Kingdom's military campaigns against the Sultanate of Adal under Ba'ede-Mariam in 1474?",
+    options: [
+      "To expand Christian evangelization efforts in Muslim territories.",
+      "To avenge the death of Emperor Zara Yaqob's military governor.",
+      "To maintain dominance over trade routes and suppress Adal's resurgence.",
+      "To counter Ottoman support for the Muslim Sultanates."
+    ],
+    answer: 2,
+    englishExplanation: "During Ba'ede-Mariam's reign, Adal was becoming a stronger regional power. The Christian Kingdom therefore launched campaigns to suppress Adal's growing influence, protect its political dominance, and maintain control over important trade routes and territories. ⚔️🗺️",
+    amharicExplanation: "በባእደ ማርያም ዘመን አደል እየጠነከረ የመጣ የክልሉ ኃይል ነበር። ስለዚህ የክርስቲያን መንግሥቱ የአደልን እየጨመረ የመጣ ተጽዕኖ ለማፈን፣ የፖለቲካ የበላይነቱን ለመጠበቅ እና አስፈላጊ የንግድ መስመሮችንና ግዛቶችን ለመቆጣጠር ወታደራዊ ዘመቻዎችን አካሄደ። ⚔️🗺️"
+  },
+
+  {
+    question: "How did religious ties shape relations between the Christian Kingdom of Ethiopia and Egypt during the medieval period?",
+    options: [
+      "By enabling Ethiopia to convert significant portions of Egyptian society to Christianity.",
+      "Through Ethiopia's dependence on the Coptic Church for the appointment of an Abun.",
+      "By leading to constant military campaigns over religious doctrinal differences.",
+      "Through mutual agreements to block Muslim influences in the Nile region."
+    ],
+    answer: 1,
+    englishExplanation: "The Ethiopian Orthodox Church historically depended on the Coptic Church of Egypt for the appointment of its Abun, or chief bishop. This religious connection created an important diplomatic relationship between Ethiopia and Egypt and sometimes influenced political relations between their rulers. ⛪🤝",
+    amharicExplanation: "የኢትዮጵያ ኦርቶዶክስ ቤተክርስቲያን አቡንን ለማግኘት በግብፅ ኮፕቲክ ቤተክርስቲያን ላይ ትመሰረት ነበር። ይህ የሃይማኖት ግንኙነት በኢትዮጵያና በግብፅ መካከል ጠቃሚ የዲፕሎማሲ ግንኙነት ፈጠረ፣ አንዳንድ ጊዜም በሁለቱ አገራት ገዢዎች የፖለቲካ ግንኙነት ላይ ተጽዕኖ አሳደረ። ⛪🤝"
+  },
+
+  {
+    question: "How did the Christian Kingdom use its control over the Nile to influence its relationship with Egypt?",
+    options: [
+      "By threatening to divert its waters if Coptic Christians were persecuted in Egypt.",
+      "By constructing large dams that disrupted Egyptian irrigation systems.",
+      "By granting Egypt unrestricted access to the Nile's tributaries in exchange for economic support.",
+      "By signing a treaty to protect the Nile's natural flow to maintain diplomatic harmony."
+    ],
+    answer: 0,
+    englishExplanation: "Because the Ethiopian highlands are the source of the Blue Nile, Ethiopian rulers had an important geographical advantage in relations with Egypt. Historical accounts describe Ethiopian rulers using the possibility of controlling or affecting the river's flow as diplomatic pressure, especially concerning the treatment of Coptic Christians. 🌊🤝",
+    amharicExplanation: "የኢትዮጵያ ደጋማ አካባቢዎች የጥቁር አባይ ዋና ምንጭ በመሆናቸው የኢትዮጵያ ገዢዎች ከግብፅ ጋር ባላቸው ግንኙነት ጠቃሚ የጂኦግራፊ ጥቅም ነበራቸው። በታሪካዊ ምንጮች የወንዙን ፍሰት ሊቆጣጠሩ ወይም ሊያሳርፉ እንደሚችሉ ማስፈራራት እንደ ዲፕሎማሲያዊ ግፊት ተጠቅመዋል፣ በተለይም በግብፅ የሚኖሩ ኮፕቲክ ክርስቲያኖችን አያያዝ በተመለከተ። 🌊🤝"
+  },
+
+  {
+    question: "What was Queen Ellen's primary contribution to Ethiopian-European relations in the early 16th century?",
+    options: [
+      "She led a diplomatic mission to the Ottoman Empire to secure alliances against Portugal.",
+      "She established Ethiopia as a cultural center for European learning.",
+      "She foresaw Ottoman threats and strengthened ties with Portugal to counterbalance Turkish influence.",
+      "She created a military alliance with Spain to resist Muslim Sultanates in the region."
+    ],
+    answer: 2,
+    englishExplanation: "Queen Eleni recognized the growing Ottoman and Muslim threats around the Red Sea. She therefore helped establish diplomatic contacts with Portugal and sought European military assistance. Her efforts contributed to the later Ethiopian-Portuguese alliance. 👑🌍",
+    amharicExplanation: "ንግሥት እሌኒ በቀይ ባህር አካባቢ የኦቶማንና የሙስሊም ኃይሎች ስጋት እየጨመረ መምጣቱን ተገነዘበች። ስለዚህ ከፖርቱጋል ጋር የዲፕሎማሲ ግንኙነት እንዲጠናከርና የአውሮፓ ወታደራዊ ድጋፍ እንዲገኝ ጥረት አደረገች። ይህም በኋላ ለኢትዮጵያና ፖርቱጋል ጥምረት መሠረት ሆነ። 👑🌍"
+  },
+
+  {
+    question: "Why did the legend of Prester John significantly impact Ethiopia's relations with Europe during the medieval period?",
+    options: [
+      "It led Europeans to believe Ethiopia was a mythical utopia free of conflict.",
+      "It motivated European leaders to view Ethiopia as a potential ally in their plans to reclaim Jerusalem.",
+      "It encouraged Ethiopian monarchs to demand military aid from the Papacy.",
+      "It provided justification for Ethiopian expansion into European territories."
+    ],
+    answer: 1,
+    englishExplanation: "Prester John was a European medieval legend about a powerful Christian king in the East. Europeans later associated this legendary ruler with Ethiopia, leading them to view Ethiopia as a possible Christian ally against Muslim powers and as a potential partner in campaigns connected with Jerusalem. 🏰✝️",
+    amharicExplanation: "ፕሬስተር ጆን በምስራቅ የሚኖር ኃያል ክርስቲያን ንጉሥ እንዳለ የሚናገር የመካከለኛው ዘመን የአውሮፓ አፈ ታሪክ ነበር። አውሮፓውያን በኋላ ይህን አፈ ታሪካዊ ንጉሥ ከኢትዮጵያ ጋር በማያያዝ ኢትዮጵያን በሙስሊም ኃይሎች ላይ ሊተባበሩ የሚችሉት ክርስቲያን አጋር አድርገው ያዩአት ነበር። 🏰✝️"
+  },
+
+  {
+    question: "Zara-Yaqob had made peace with the House of Debre Libanos but not with Ewostatewos.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false. Zara-Yaqob is associated with reconciliation with the Ewostatewos movement. One important part of this settlement was the recognition and restoration of Saturday Sabbath observance alongside Sunday, helping reduce the long-standing religious division. 🕊️📜",
+    amharicExplanation: "መግለጫው ሐሰት ነው። ዘርአ ያዕቆብ ከእውስታቴዎስ እንቅስቃሴ ጋር እርቅ በመፍጠሩ ይታወቃል። በዚህ የእርቅ ሂደት ውስጥ ከእሁድ ጋር ቅዳሜንም እንደ ሰንበት መከበሩ እውቅና እንዲያገኝ መደረጉ የረጅም ጊዜውን የሃይማኖት ክፍፍል ለመቀነስ ረድቷል። 🕊️📜"
+  },
+
+  {
+    question: "The territorial expansion during the medieval period led to the spread of Christianity.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. As the Christian Kingdom expanded into new territories, political control often created opportunities for Christian missionaries and clergy to enter those areas. This helped Christianity spread beyond the kingdom's earlier core regions. 🌍✝️",
+    amharicExplanation: "መግለጫው እውነት ነው። የክርስቲያን መንግሥት ወደ አዳዲስ ግዛቶች ሲስፋፋ፣ የፖለቲካ ቁጥጥሩ ሚስዮናውያንና ካህናት ወደ እነዚያ አካባቢዎች እንዲገቡ እድል ፈጠረ። ይህም ክርስትና ከቀድሞው የመንግሥቱ ዋና አካባቢዎች በላይ እንዲስፋፋ አግዟል። 🌍✝️"
+  },
+
+  {
+    question: "Trade was not only a source of conflict but also a means of social cohesion and integration.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 0,
+    englishExplanation: "The statement is true. Trade could create competition over valuable routes and ports, but it also connected different communities. Merchants exchanged goods, ideas, languages, and cultural practices, creating economic relationships between people from different religious and political backgrounds. 🤝🛒",
+    amharicExplanation: "መግለጫው እውነት ነው። ንግድ በአስፈላጊ መስመሮችና ወደቦች ላይ ውድድርን ሊፈጥር ቢችልም፣ የተለያዩ ማህበረሰቦችንም ያገናኝ ነበር። ነጋዴዎች ሸቀጦችን፣ ሀሳቦችን፣ ቋንቋዎችንና ባህላዊ ልምዶችን በመለዋወጥ ከተለያዩ ሃይማኖታዊና ፖለቲካዊ ዳራዎች የመጡ ሰዎችን በኢኮኖሚ ያገናኙ ነበር። 🤝🛒"
+  },
+
+  {
+    question: "In the 14th century Christian Kingdom a king who started rapid and large scale territorial expansion is noted for undertaking major religious reforms.",
+    options: [
+      "True",
+      "False"
+    ],
+    answer: 1,
+    englishExplanation: "The statement is false because it combines the achievements of two different rulers. Amde-Tsion was famous for major territorial expansion in the 14th century, while Zara-Yaqob, who ruled in the 15th century, was known for major religious reforms. Therefore, the same king did not carry out both achievements. 👑📚",
+    amharicExplanation: "መግለጫው ሐሰት ነው፤ የሁለት የተለያዩ ነገሥታትን ስኬቶች አንድ ላይ አጣምሯል። አምደ ጽዮን በ14ኛው ክፍለ ዘመን በሰፊ የግዛት መስፋፋት ይታወቃል፤ ዘርአ ያዕቆብ ደግሞ በ15ኛው ክፍለ ዘመን በታላላቅ የሃይማኖት ማሻሻያዎች ይታወቃል። ስለዚህ ሁለቱንም ሥራዎች ያከናወነ አንድ ንጉሥ አልነበረም። 👑📚"
+  },  {
+        question: "Which one was not a measure taken by Emperor Zara-Yaqob (r. 1434-1468) to stabilize and consolidate the Orthodox Church?",
+        options: [
+            "He undermined religious teaching in remote areas",
+            "He made peace with the House of Ewostatewos by reviving Sabbath in the Ethiopian Church",
+            "He urged the clergy to preach Christianity in remote areas",
+            "He ordered the people to observe fasting on Wednesdays and Fridays"
+        ],
+        answer: 0,
+        englishExplanation: "📚 Emperor Zara-Yaqob worked to strengthen the Ethiopian Orthodox Church, not weaken it. He encouraged clergy to preach Christianity in remote areas, promoted religious education, supported churches, and worked to settle disagreements with the Ewostatewos movement. Therefore, undermining religious teaching was not one of his measures.",
+        amharicExplanation: "⛪ ንጉሠ ነገሥት ዘርአ ያዕቆብ የኢትዮጵያ ኦርቶዶክስን ለማጠናከር እንጂ ለማዳከም አልሰራም። በሩቅ አካባቢዎች ካህናት እንዲሰብኩ አበረታታ፣ የሃይማኖት ትምህርትን አጠናከረ እና ከእውስታቴዎስ እንቅስቃሴ ጋር ለመስማማት ሞከረ። ስለዚህ የሃይማኖት ትምህርትን ማዳከም ከወሰዳቸው እርምጃዎች አንዱ አልነበረም።"
+    },
+
+    {
+        question: "Among others, due to one of the following reasons that the Muslim states established significant control over trade routes that passed through Zeila. Which one?",
+        options: [
+            "Limited participation of Christian rulers in trade",
+            "Europeans favoured the comparative trade returns with Muslim Sultanates",
+            "Availability of natural resources such as ivory, coffee and musk",
+            "The geographical proximity of the Sultanates"
+        ],
+        answer: 3,
+        englishExplanation: "🌍 The Muslim Sultanates, especially Ifat and Adal, were geographically close to Zeila and the Red Sea coast. This location gave them an important advantage in controlling trade routes between the interior of Ethiopia and the coast. Therefore, geographical proximity was a major reason for their strong control of the trade routes.",
+        amharicExplanation: "🛤️ የሙስሊም ሱልጣኔቶች በተለይም ኢፋት እና አደል ለዘይላና ለቀይ ባህር ዳርቻ በጣም ቅርብ ነበሩ። ይህ የጂኦግራፊያዊ ቅርበት ከውስጥ አገር ወደ ባህር ዳርቻ የሚሄዱ የንግድ መስመሮችን ለመቆጣጠር ትልቅ ጥቅም ሰጣቸው። ስለዚህ ዋናው ምክንያት የሱልጣኔቶቹ የጂኦግራፊያዊ ቅርበት ነበር።"
+    },
+
+    {
+        question: "Which one of the following is not a factor for the political and socio-cultural interactions among different peoples who lived in different agro-ecological zones of Ethiopia?",
+        options: [
+            "Isolationist policy of kingdoms of Ethiopia",
+            "The population movements",
+            "The emergence and development of trade",
+            "Conflicts among the states of the region"
+        ],
+        answer: 0,
+        englishExplanation: "🤝 Population movements, trade, and conflicts all encouraged interaction among different peoples of Ethiopia. An isolationist policy, however, would reduce contact and interaction rather than encourage it. Therefore, it was not a factor promoting political and socio-cultural interaction.",
+        amharicExplanation: "🌱 የሕዝብ እንቅስቃሴ፣ የንግድ መስፋፋት እና በክልሎች መካከል የሚካሄዱ ግጭቶች በተለያዩ ሕዝቦች መካከል ፖለቲካዊና ማህበራዊ-ባህላዊ ግንኙነትን አበረታቱ። የመገለል ፖሊሲ ግን ሰዎችን ከሌሎች የሚለይ ስለሆነ መስተጋብርን አያበረታታም። ስለዚህ ትክክለኛው መልስ የመገለል ፖሊሲ ነው።"
+    },
+
+    {
+        question: "The succession problem of the Christian kingdom was partly resolved in the beginning of the 14th century. The reason was:",
+        options: [
+            "Due to the coming to power of Yegba Tseyon",
+            "The establishment of a 'royal prison'",
+            "Due to establishment of permanent capital",
+            "The rise of Imam Ahmad Ibrahim Al-Ghazi unified the rulers"
+        ],
+        answer: 1,
+        englishExplanation: "🏰 The establishment of a royal prison at Amba-Gishen helped reduce succession conflicts. Potential male heirs to the throne were confined there, preventing them from building armies or political factions against the reigning king. This helped reduce immediate struggles for power.",
+        amharicExplanation: "🏔️ በአምባ ግሸን የንጉሳዊ እስር ቤት መመስረቱ የዙፋን ውርስ ችግርን በከፊል ለመፍታት ረድቷል። ለዙፋኑ ተቀናቃኝ ሊሆኑ የሚችሉ ወንድ ልዑላን እዚያ ይታሰሩ ስለነበር ሠራዊት መሰብሰብ ወይም የፖለቲካ አንጃ መፍጠር አይችሉም ነበር። ይህም የስልጣን ትግልን ቀንሷል።"
+    },
+
+    {
+        question: "Who was the most expansionist king of medieval Ethiopia?",
+        options: [
+            "Amde-Tsion",
+            "Yegba-Tsion",
+            "Yekuno-Amlak",
+            "Zara-Yaqob"
+        ],
+        answer: 0,
+        englishExplanation: "⚔️ Amde-Tsion, who ruled from 1314 to 1344, is considered the most expansionist king of medieval Ethiopia. Through repeated military campaigns, he greatly expanded the Christian kingdom's territory, particularly toward the south and east.",
+        amharicExplanation: "🛡️ ከ1314 እስከ 1344 የገዛው አምደ-ጽዮን የመካከለኛው ዘመን ኢትዮጵያ እጅግ በጣም የግዛት መስፋፋት ያደረገ ንጉሥ ነበር። በተደጋጋሚ ወታደራዊ ዘመቻዎች በመካሄድ የክርስቲያኑን መንግሥት ግዛት በተለይም ወደ ደቡብና ምሥራቅ በስፋት አስፋፋ።"
+    },
+
+    {
+        question: "Which one of the following Sultanates was the center of Muslim resistance against the Christian kingdom in the first half of the 14th century?",
+        options: [
+            "Adal",
+            "Dawaro",
+            "Fatagar",
+            "Ifat"
+        ],
+        answer: 3,
+        englishExplanation: "🕌 Ifat was the major center of Muslim resistance against the Christian kingdom during the first half of the 14th century. Its strategic location near the Christian highlands and important trade routes brought it into repeated conflict with Emperor Amde-Tsion.",
+        amharicExplanation: "⚔️ በ14ኛው ክፍለ ዘመን የመጀመሪያ አጋማሽ ኢፋት ከክርስቲያኑ መንግሥት ጋር የሙስሊም ተቃውሞ ዋና ማዕከል ነበር። ለክርስቲያኑ ደጋማ አካባቢ ቅርብ መሆኑና ጠቃሚ የንግድ መስመሮችን መቆጣጠሩ ከአምደ-ጽዮን ጋር ተደጋጋሚ ግጭት እንዲኖር አድርጎታል።"
+    },
+
+    {
+        question: "Which of the following is TRUE about the prison of Amba Gishen?",
+        options: [
+            "It was destroyed during the wars between the Christian kingdom and the Sultanate of Adal in the 16th century",
+            "Its establishment aggravated succession struggle during the Zagwe period",
+            "It was a special prison for royal princes who committed ordinary crimes",
+            "It was the biggest jail in Ethiopia where thousands of criminals were detained"
+        ],
+        answer: 0,
+        englishExplanation: "🔥 Amba-Gishen was a royal prison used to confine potential royal heirs. During the 16th-century wars associated with Imam Ahmad Ibrahim al-Ghazi, the fortress was captured and destroyed. It was not a prison for ordinary criminals and was not established during the Zagwe period.",
+        amharicExplanation: "🏯 አምባ ግሸን ለንጉሳዊ ዙፋን ተቀናቃኝ ሊሆኑ የሚችሉ ልዑላንን ለማሰር የሚያገለግል ንጉሳዊ እስር ቤት ነበር። በ16ኛው ክፍለ ዘመን ከኢማም አህመድ ኢብራሂም አል-ጋዚ ወረራ ጋር በተያያዙ ጦርነቶች ምሽጉ ተይዞ ወድሟል። ተራ ወንጀለኞችን የሚያስር እስር ቤት አልነበረም።"
+    },
+
+    {
+        question: "Who was the first king of the 'Solomonic' dynasty?",
+        options: [
+            "Amde-Tsiyon",
+            "Zara-Yaqob",
+            "Yikuno-Amlak",
+            "Haile-Silassie I"
+        ],
+        answer: 2,
+        englishExplanation: "👑 Yikuno-Amlak became the founder and first king of the Solomonic dynasty in 1270. He ended the Zagwe dynasty and established a new royal line that claimed descent from King Solomon and the Queen of Sheba.",
+        amharicExplanation: "👑 ይኩኖ-አምላክ በ1270 የዛጉዌን ስርወ መንግሥት ካበቃ በኋላ የሰለሞናዊ ስርወ መንግሥትን መሠረተ። አዲሱ የንጉሳዊ ዘር ከእስራኤሉ ንጉሥ ሰለሞንና ከንግሥተ ሳባ የመጣ መሆኑን ይገልጽ ነበር።"
+    },
+
+    {
+        question: "What is the significance of the 'Kibre Negest'?",
+        options: [
+            "It is a historical document proving the lineage of Ethiopian kings",
+            "It is a religious text with no political significance",
+            "It claims Ethiopian rulers descend from King Solomon and Queen of Sheba",
+            "It describes the geography of Ethiopia"
+        ],
+        answer: 2,
+        englishExplanation: "📜 The Kibre Negest, meaning 'Glory of Kings,' is important because it presents the tradition that Ethiopian rulers descended from King Solomon and the Queen of Sheba. This story provided ideological and political legitimacy to the Solomonic dynasty.",
+        amharicExplanation: "📖 ክብረ ነገሥት ማለት 'የነገሥታት ክብር' ማለት ነው። መጽሐፉ የኢትዮጵያ ነገሥታት ከንጉሥ ሰለሞንና ከንግሥተ ሳባ የተወለዱ መሆናቸውን የሚያቀርበው ትረካ በሰለሞናዊ ስርወ መንግሥት ሕጋዊነት ላይ ትልቅ ፖለቲካዊ ሚና ነበረው።"
+    },
+
+    {
+        question: "Which location was used as a royal prison during Widim-Ra'ad's reign?",
+        options: [
+            "Axum",
+            "Amba-Gishen",
+            "Harar",
+            "Lalibela"
+        ],
+        answer: 1,
+        englishExplanation: "🏔️ Amba-Gishen was used as a royal prison during the reign of Widim-Ra'ad. Potential male heirs were confined there to keep them away from political struggles and prevent them from challenging the reigning monarch.",
+        amharicExplanation: "🔐 በዊድም-ራዓድ የግዛት ዘመን አምባ-ግሸን እንደ ንጉሳዊ እስር ቤት ያገለግል ነበር። ለዙፋኑ ተቀናቃኝ ሊሆኑ የሚችሉ ወንድ ልዑላን ከፖለቲካዊ ትግል ለማራቅ እዚያ ይታሰሩ ነበር።"
+    },
+
+    {
+        question: "What was a unique feature of the Solomonic state from 1270 to 1636?",
+        options: [
+            "Permanent capital city",
+            "Territorial expansion",
+            "Democratic governance",
+            "Isolationism"
+        ],
+        answer: 1,
+        englishExplanation: "🗺️ A major feature of the Solomonic state was territorial expansion. Its rulers expanded their authority into many different regions, especially during the reign of Amde-Tsion. The royal court was mobile rather than being permanently located in one capital.",
+        amharicExplanation: "🌍 ከ1270 እስከ 1636 የነበረው የሰለሞናዊ መንግሥት ዋና ባህሪ የግዛት መስፋፋት ነበር። ነገሥታቱ በተለያዩ አካባቢዎች ላይ ቁጥጥራቸውን አስፋፉ። ከቋሚ ዋና ከተማ ይልቅ የንጉሳዊ ፍርድ ቤቱ ተንቀሳቃሽ ነበር።"
+    },
+
+    {
+        question: "Who was responsible for the rapid territorial expansion of the Christian Kingdom?",
+        options: [
+            "Yikuno-Amlak",
+            "Amde-Tsiyon",
+            "Zara-Yaqob",
+            "Haile-Silassie I"
+        ],
+        answer: 1,
+        englishExplanation: "⚔️ Amde-Tsiyon was responsible for much of the rapid territorial expansion of the Christian Kingdom during the early Solomonic period. His military campaigns expanded the kingdom's borders and strengthened its political influence.",
+        amharicExplanation: "🏹 በቀደምት ሰለሞናዊ ዘመን የክርስቲያኑን መንግሥት በፍጥነት ያስፋፋው አምደ-ጽዮን ነበር። በሰፊ ወታደራዊ ዘመቻዎቹ የመንግሥቱን ድንበር አስፋፍቶ የፖለቲካ ተፅዕኖውን አጠናከረ።"
+    },
+
+    {
+        question: "Which region was given to Amde-Tsiyon's wife, Bilen-Saba?",
+        options: [
+            "Shewa",
+            "Enderta",
+            "Harar",
+            "Gojjam"
+        ],
+        answer: 1,
+        englishExplanation: "🏞️ Enderta was associated with Bilen-Saba, the wife of Amde-Tsiyon. Giving control of an important region to a trusted royal family member was a way of strengthening political authority and administration.",
+        amharicExplanation: "🏛️ ኢንደርታ ከአምደ-ጽዮን ሚስት ከቢለን-ሳባ ጋር የተያያዘች አስፈላጊ ክልል ነበረች። እንደዚህ ያለ ወሳኝ አካባቢ ለታማኝ የንጉሳዊ ቤተሰብ አባል መስጠት የመንግሥትን ቁጥጥርና ፖለቲካዊ ስልጣን ለማጠናከር ይረዳ ነበር።"
+    },
+
+    {
+        question: "What was the title given to the governor appointed by Amde-Tsiyon in Eritrea?",
+        options: [
+            "Bahire-Negash",
+            "Dejazmach",
+            "Ras",
+            "Lij"
+        ],
+        answer: 0,
+        englishExplanation: "🌊 The governor appointed to oversee the Eritrean region was given the title Bahire-Negash, meaning 'Ruler of the Sea.' The title reflected the importance of the Red Sea region and its coastal territories.",
+        amharicExplanation: "⚓ አምደ-ጽዮን በኤርትራ አካባቢ የሾመው ገዥ 'ባሕረ-ነጋሽ' የሚል ማዕረግ ነበረው። ባሕረ-ነጋሽ ማለት 'የባህር ገዥ' ማለት ሲሆን ይህ የቀይ ባህር ዳርቻ ለመንግሥቱ የነበረውን ጠቀሜታ ያሳያል።"
+    },
+
+    {
+        question: "Which movement was named after Abba Ewostatewos?",
+        options: [
+            "Ewostatewos Movement",
+            "Debre-Libanos Movement",
+            "Yared Movement",
+            "Tewahedo Movement"
+        ],
+        answer: 0,
+        englishExplanation: "🕊️ The Ewostatewos Movement was named after its founder, Abba Ewostatewos. The movement strongly emphasized the observance of the Sabbath, especially Saturday, alongside Sunday. It became an important religious movement in medieval Ethiopia.",
+        amharicExplanation: "🕯️ የእውስታቴዎስ እንቅስቃሴ ስሙን ያገኘው ከመስራቹ ከአባ እውስታቴዎስ ነው። እንቅስቃሴው ሰንበትን በተለይም ቅዳሜን ከእሁድ ጋር በመሆን በጥብቅ መከበርን አጽንዖት ሰጥቷል። በመካከለኛው ዘመን ወሳኝ የሃይማኖት እንቅስቃሴ ሆኖ ተገኝቷል።"
+    },
+
+    {
+        question: "Who was Zara-Yaqob's wife and governor of Enderta?",
+        options: [
+            "Bilen-Saba",
+            "Motalami",
+            "Eleni",
+            "Yodit"
+        ],
+        answer: 0,
+        englishExplanation: "👸 Bilen-Saba was the wife of Emperor Zara-Yaqob and was associated with the governorship of Enderta. Her position demonstrates how members of the royal family could be entrusted with important regional administration.",
+        amharicExplanation: "👑 ቢለን-ሳባ የንጉሠ ነገሥት ዘርአ-ያዕቆብ ሚስት ነበረች እና ከኢንደርታ ገዥነት ጋር ትያያዝ ነበር። ይህ የንጉሳዊ ቤተሰብ አባላት አስፈላጊ የክልል አስተዳደር ሀላፊነት ሊሰጣቸው እንደሚችል ያሳያል።"
+    },
+
+    {
+        question: "What was the aim of Zara-Yaqob's religious reforms?",
+        options: [
+            "To promote Islam",
+            "To stabilize and consolidate the Orthodox Church",
+            "To reduce the power of the monarchy",
+            "To abolish Christianity"
+        ],
+        answer: 1,
+        englishExplanation: "⛪ Zara-Yaqob's major aim was to stabilize and consolidate the Ethiopian Orthodox Church. He worked to unify religious practices, settle religious disagreements, strengthen church discipline, and promote Christian teaching throughout his kingdom.",
+        amharicExplanation: "🙏 የዘርአ-ያዕቆብ የሃይማኖት ማሻሻያዎች ዋና ዓላማ የኢትዮጵያ ኦርቶዶክስን ማረጋጋትና ማጠናከር ነበር። የሃይማኖት ልማዶችን ለማዋሃድ፣ የሃይማኖት አለመግባባቶችን ለመፍታት፣ የቤተክርስቲያንን ሥርዓት ለማጠናከርና የክርስትና ትምህርትን ለማስፋፋት ሰርቷል።"
+    },
+
+    {
+        question: "Which group emphasized poverty, self-subsistence, and equality?",
+        options: [
+            "Ewostatewos Movement",
+            "Estifanosites",
+            "Tewahedo Movement",
+            "Monophysite"
+        ],
+        answer: 1,
+        englishExplanation: "🌾 The Estifanosites, also known as the followers of Abba Estifanos, emphasized poverty, self-subsistence, and equality. They rejected excessive material wealth and emphasized a simple religious life based on their spiritual principles.",
+        amharicExplanation: "🤲 ኢስጢፋኖሳውያን ወይም ደቂቀ እስጢፋኖስ ድህነትን፣ ራስን መቻልንና እኩልነትን አጽንዖት የሰጡ የሃይማኖት ተከታዮች ነበሩ። ከመጠን ያለፈ ቁሳዊ ሀብትን በመቃወም ቀላልና በመንፈሳዊ መርሆች ላይ የተመሰረተ ሕይወትን ያበረታቱ ነበር።"
+    },
+
+    {
+        question: "What year did Yikuno-Amlak take the throne?",
+        options: [
+            "1200",
+            "1270",
+            "1340",
+            "1500"
+        ],
+        answer: 1,
+        englishExplanation: "📅 Yikuno-Amlak took the throne in 1270. His accession marked the end of the Zagwe dynasty and the beginning of the Solomonic dynasty, whose rulers claimed descent from Solomon and the Queen of Sheba.",
+        amharicExplanation: "🗓️ ይኩኖ-አምላክ በ1270 ወደ ዙፋን ወጣ። ይህ የዛጉዌ ስርወ መንግሥት መጨረሻንና የሰለሞናዊ ስርወ መንግሥት መጀመሪያን ያመለክታል።"
+    },
+
+    {
+        question: "What was the main objective of Zara-Yaqob's religious policy?",
+        options: [
+            "To introduce new religions",
+            "To suppress traditional beliefs",
+            "To create religious unity and control",
+            "To separate church and state"
+        ],
+        answer: 2,
+        englishExplanation: "🎯 Zara-Yaqob's religious policy aimed to create religious unity and strengthen control through the Ethiopian Orthodox Church. He attempted to standardize religious practices, strengthen church discipline, and reduce religious disagreements.",
+        amharicExplanation: "⚖️ የዘርአ-ያዕቆብ የሃይማኖት ፖሊሲ ዋና ዓላማ የሃይማኖት አንድነትን መፍጠርና ቁጥጥርን ማጠናከር ነበር። የሃይማኖት ልማዶችን ለማዋሃድ፣ የቤተክርስቲያንን ሥርዓት ለማጠናከርና የሃይማኖት አለመግባባትን ለመቀነስ ሞክሯል።"
+    },
+
+    {
+        question: "The 'restoration' of the Solomonic Dynasty and its legitimacy relied heavily on which of the following?",
+        options: [
+            "A documented lineage authenticated by historical and archaeological evidence",
+            "The military conquest of the Zagwe dynasty and subsequent cultural assimilation",
+            "The legendary narrative of descent from King Solomon and the Queen of Sheba, as elaborated in the Kibre Negest",
+            "The ecclesiastical support from the Ethiopian Orthodox Church, which declared the Zagwe rulers illegitimate"
+        ],
+        answer: 2,
+        englishExplanation: "📜 The legitimacy of the restored Solomonic Dynasty relied heavily on the traditional story that its rulers descended from King Solomon and the Queen of Sheba. The Kibre Negest played an important role in presenting and strengthening this narrative as an ideological basis for royal legitimacy.",
+        amharicExplanation: "👑 የተመለሰው የሰለሞናዊ ስርወ መንግሥት ሕጋዊነት በንጉሥ ሰለሞንና በንግሥተ ሳባ የዘር ሐረግ ላይ በተመሠረተው ባህላዊ ትረካ ላይ በእጅጉ ይደገፍ ነበር። ክብረ ነገሥትም ይህንን ትረካ ለማቅረብና የንጉሳዊ ሕጋዊነትን ለማጠናከር ጠቃሚ ሚና ነበረው።"
+    },
+
+    {
+        question: "Which of the following best explains the role of the royal prison at Amba-Gishen in resolving succession conflicts in the Christian Kingdom?",
+        options: [
+            "It served as a sanctuary for deposed monarchs and rival claimants to the throne",
+            "It facilitated the reigning monarch's ability to eliminate potential challengers through execution",
+            "It centralized the succession process by confining male members of the royal family until the throne was vacated",
+            "It ensured that disputes over succession were arbitrated by the clergy rather than military intervention"
+        ],
+        answer: 2,
+        englishExplanation: "🏰 Amba-Gishen helped control succession by confining male members of the royal family who could potentially challenge the reigning king. By keeping these princes isolated, the king reduced their ability to gather supporters or armies. When the throne became vacant, a successor could be selected from among the royal princes.",
+        amharicExplanation: "🔒 አምባ-ግሸን የንጉሳዊ ቤተሰብ ወንድ አባላትን በማሰር የዙፋን ውርስን ለመቆጣጠር ያገለግል ነበር። ልዑላኑን ከፖለቲካ ማዕከል ማግለል ደጋፊዎችን ወይም ሠራዊትን እንዳይሰበስቡ ይከላከል ነበር። ዙፋኑ ባዶ ሲሆን ከንጉሳዊ ልዑላን መካከል ተተኪ መምረጥ ይቻል ነበር።"
+    }, {  question: "During the medieval periods Emperor Amde Tsion made large-scale territorial expansion as compared to his successors and predecessor.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "Emperor Amde Tsion (r. 1314–1344) is widely recognized as one of the most expansionist rulers of medieval Ethiopia. He greatly expanded the Christian kingdom toward the south and east, bringing many new territories under his control. His territorial expansion was greater than that of many of his predecessors and successors. 🗺️",
+        amharicExplanation: "ንጉሠ ነገሥት አምደ ጽዮን (ከ1314–1344) በመካከለኛው ዘመን በሰፊ የግዛት ማስፋፋት የሚታወቅ ንጉሥ ነበር። የክርስቲያን መንግሥቱን ወደ ደቡብና ምሥራቅ በማስፋፋት ብዙ አዳዲስ ግዛቶችን በቁጥጥሩ ሥር አደረገ። ከብዙ ቀደምትና ተከታይ ነገሥታት ጋር ሲነጻጸር የእርሱ የግዛት ማስፋፋት በጣም ሰፊ ነበር። 🏰"
+    },
+
+    {
+        question: "Until the late 14th century the descendants of Yekuno Amlak were primarily engaged in the establishment and consolidation of the new dynasty and the expansion of the kingdom.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "After Yekuno Amlak overthrew the Zagwe dynasty in 1270, his descendants focused mainly on strengthening the new Solomonic dynasty, establishing its legitimacy, and expanding the kingdom. These efforts helped secure their political authority and enlarge the territory they controlled. 👑",
+        amharicExplanation: "ይኩኖ አምላክ በ1270 የዛጉዌን ሥርወ መንግሥት ካስወገደ በኋላ፣ ዘሮቹ አዲሱን የሰለሞናዊ ሥርወ መንግሥት ለማጠናከር፣ የመግዛት ሕጋዊነታቸውን ለማረጋገጥ እና ግዛቱን ለማስፋፋት ትልቅ ትኩረት ሰጡ። ይህም የፖለቲካ ሥልጣናቸውን እንዲያጠናክሩ ረዳቸው። 🛡️"
+    },
+
+    {
+        question: "The Dekike Estifanos were ardent supporters of the veneration of Saint Mary.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "The Dekike Estifanos were followers of Abba Estifanos and strongly opposed the veneration of Saint Mary as it was practiced by the established church. Their religious ideas differed from those of the dominant church, which contributed to their persecution by political and religious authorities. ⛪",
+        amharicExplanation: "ደቂቀ እስጢፋኖስ የአባ እስጢፋኖስ ተከታዮች ሲሆኑ፣ በወቅቱ የተለመደውን የቅድስት ማርያም አክብሮት በጥብቅ ይቃወሙ ነበር። የእነሱ የሃይማኖት አመለካከት ከተቋቋመው ቤተክርስቲያን ስለሚለይ ከፖለቲካዊና ከሃይማኖታዊ ባለሥልጣናት ስደት ደረሰባቸው። 🕊️"
+    },
+
+    {
+        question: "The establishment of the 'royal prison' at Amba-Gishen completely eliminated power struggles and ensured smooth successions within the 'Solomonic' Dynasty.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Amba-Gishen was used to confine royal princes who could potentially challenge the reigning king. However, it did not completely eliminate political struggles. Court factions could still compete over succession and attempt to use princes for their own political interests. ⚔️",
+        amharicExplanation: "አምባ ግሸን ለንጉሣዊ ወንድ ልጆች እንደ እስር ቦታ ያገለግል ነበር። ዓላማውም ልዑላኑ በንጉሡ ላይ አመጽ እንዳያነሱ መከላከል ነበር። ሆኖም ይህ የሥልጣን ትግልን ሙሉ በሙሉ አላስወገደም፤ በቤተ መንግሥት ውስጥ ያሉ አንጃዎች አሁንም ለተተኪነት ይወዳደሩ ነበር። 🏔️"
+    },
+
+    {
+        question: "Emperor Amde-Tsion’s territorial expansion primarily focused on spreading Christianity and assimilating conquered populations into the Orthodox faith.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Although Christianity spread into many conquered areas, the main purposes of Amde Tsion's military expansion were political and economic. He sought to strengthen royal authority, control territory and important trade routes, and secure resources. Religious expansion was important, but it was not the only or primary motivation. 💰",
+        amharicExplanation: "የአምደ ጽዮን የግዛት ማስፋፋት የክርስትናን ሃይማኖት ማስፋፋትንም ያካተተ ነበር፤ ሆኖም ዋና ዓላማዎቹ ፖለቲካዊና ኢኮኖሚያዊ ነበሩ። የንጉሣዊ ሥልጣንን ማጠናከር፣ ግዛቶችንና ወሳኝ የንግድ መስመሮችን መቆጣጠር እና ሀብትን ማስጠበቅ ዋና ጉዳዮቹ ነበሩ። 📈"
+    },
+
+    {
+        question: "The relationship between the Christian Kingdom and Muslim Sultanates was characterized solely by conflict and hostility, with trade playing a negligible role in their interactions.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Relations between the Christian kingdom and Muslim sultanates included both conflict and cooperation. Although military rivalry occurred, trade was also very important. Merchants crossed political and religious boundaries, creating economic connections between the different states. 🤝",
+        amharicExplanation: "በክርስቲያን መንግሥቱና በሙስሊም ሱልጣኔቶች መካከል ግንኙነት ግጭት ብቻ አልነበረም። የወታደራዊ ፉክክር ቢኖርም ንግድ ትልቅ ሚና ነበረው። ነጋዴዎች የፖለቲካና የሃይማኖት ድንበሮችን በማቋረጥ በተለያዩ መንግሥታት መካከል ኢኮኖሚያዊ ትስስር ፈጥረዋል። 🛒"
+    },
+
+    {
+        question: "One of the following Queens did not play a prominent role in the medieval period of Ethiopia.",
+        options: ["Eleni", "Taytu", "Seblewongel", "Bati Dil Wambara"],
+        answer: 1,
+        englishExplanation: "Queen Taytu Betul lived mainly in the late 19th and early 20th centuries and was the wife of Emperor Menelik II. Eleni, Seblewongel, and Bati Dil Wambara were associated with the medieval period. Therefore, Taytu is the correct answer. 👸",
+        amharicExplanation: "ንግሥት ጠይቱ ብጡል በ19ኛው ክፍለ ዘመን መጨረሻና በ20ኛው ክፍለ ዘመን መጀመሪያ የኖረች ሲሆን የንጉሠ ነገሥት ምኒልክ ሁለተኛ ባለቤት ነበረች። እሌኒ፣ ሰብለወንጌል እና ባቲ ድል ወምበራ ግን ከመካከለኛው ዘመን ጋር የተያያዙ ታዋቂ ሴቶች ናቸው። ስለዚህ ትክክለኛው መልስ ጠይቱ ነው። 👑"
+    },
+
+    {
+        question: "Which one is wrongly matched market towns?",
+        options: [
+            "Weez-Gebeya - western Shewa / famous market on the Fatagar-Dawaro-Harar route",
+            "Suq-Wayzaro - Metema",
+            "Suq-Wayzaro - old Damot",
+            "Suq-Amaja - Gandabalo on the Ifat-Awsa route"
+        ],
+        answer: 1,
+        englishExplanation: "Suq-Wayzaro was associated with old Damot, not Metema. Metema is located in western Ethiopia near the Sudanese border and became important as a market much later. Therefore, the pairing of Suq-Wayzaro with Metema is incorrect. 🏪",
+        amharicExplanation: "ሱቅ-ዌይዛሮ በታሪክ ከአሮጌው ደሞት ክልል ጋር ይያያዛል፤ ከሜተማ ጋር አይደለም። ሜተማ በምዕራብ ኢትዮጵያ ከሱዳን ድንበር አቅራቢያ የምትገኝ ሲሆን በኋለኛው ዘመን እንደ ገበያ ማዕከል በጣም ታወቀች። ስለዚህ ሱቅ-ዌይዛሮን ከሜተማ ጋር ማያያዝ የተሳሳተ ነው። 🧺"
+    },
+
+    {
+        question: "Which one of the following Muslim sultanates repeatedly challenged the Christian highland kingdom in the 15th and 16th centuries?",
+        options: ["Shewa", "Ifat", "Adal", "Fatagar"],
+        answer: 2,
+        englishExplanation: "The Sultanate of Adal became the major Muslim power challenging the Christian highland kingdom during the 15th and 16th centuries. Its most famous challenge came under Ahmad ibn Ibrahim al-Ghazi, commonly known as Ahmad Gragn, during the 16th century. ⚔️",
+        amharicExplanation: "በ15ኛውና 16ኛው ክፍለ ዘመን የአደል ሱልጣኔት ለክርስቲያን ደጋማ መንግሥት ትልቅ ፈተና የሆነ የሙስሊም ኃይል ነበር። በ16ኛው ክፍለ ዘመን በአህመድ ኢብን ኢብራሂም አል-ጋዚ፣ በተለምዶ አህመድ ግራኝ በሚባለው መሪ፣ የተመራው ዘመቻ በጣም ታዋቂ ነበር። 🕌"
+    },
+
+    {
+        question: "Identify the wrong statement about the relation between Ethiopia and Egypt.",
+        options: [
+            "The rapid expansion of the Muslim Arabs through the Near East and Middle East, North Africa and the Nile Valley since the 7th century led to the growth of Aksumite land routes and shipping lines.",
+            "Egyptian Muslim rulers used the consecration and sending of a bishop as an instrument to their own foreign policy objectives in relation to the normal flow of the Nile River.",
+            "Egyptian Mamluk rulers (1250-1517) became barriers to the contacts between Christian Ethiopia and European states.",
+            "The persecution of Coptic religious minorities by Egyptian Muslim rulers was one of the issues that Ethiopian kings were concerned with."
+        ],
+        answer: 0,
+        englishExplanation: "The first statement is wrong because the expansion of Muslim Arab powers from the 7th century disrupted Aksum's traditional trade and maritime connections rather than causing them to grow. The other statements describe important political and religious issues in Ethiopia's relations with Egypt. 🌊",
+        amharicExplanation: "የመጀመሪያው መግለጫ ስህተት ነው። ከ7ኛው ክፍለ ዘመን ጀምሮ የሙስሊም አረቦች መስፋፋት የአክሱምን የንግድና የባህር መስመሮች እንዲዳከሙ አደረገ እንጂ እንዲያድጉ አላደረገም። ሌሎቹ መግለጫዎች በኢትዮጵያና በግብፅ መካከል የነበሩ አስፈላጊ የፖለቲካና የሃይማኖት ጉዳዮችን ይገልጻሉ። ⛵"
+    },
+
+    {
+        question: "Why did the restored Solomonic dynasty prefer to administer the kingdom from mobile courts? Because:",
+        options: [
+            "Frequent destruction of their capital by rival sultanates.",
+            "Kings were religious humanists, so they preferred to court in monasteries.",
+            "Permanent centers were not conducive to exploit others' autonomous states.",
+            "It was good to easily control rebellious movements inside the vast kingdom."
+        ],
+        answer: 3,
+        englishExplanation: "The mobile court allowed Solomonic kings to maintain direct control over a large and diverse kingdom. By moving from place to place, the king could respond quickly to rebellions, collect tribute, supervise local officials, and prevent regional rulers from becoming too independent. 🐎",
+        amharicExplanation: "ተንቀሳቃሽ ፍርድ ቤት የሰለሞናዊ ነገሥታት ሰፊና የተለያየ መንግሥትን በቀጥታ እንዲቆጣጠሩ ይረዳቸው ነበር። ንጉሡ ከቦታ ወደ ቦታ በመንቀሳቀስ ለአመጽ ፈጣን ምላሽ መስጠት፣ ግብር መሰብሰብ፣ የአካባቢ ገዥዎችን መቆጣጠርና እነሱ ከመጠን በላይ ነፃ እንዳይሆኑ መከላከል ይችል ነበር። 🐴"
+    },
+
+    {
+        question: "Which one of the following Muslim sultanates was ruled by an extended family of the Ifat Sultanate?",
+        options: ["Sultanate of Adal", "Harar Emirates", "Sultanate of Hadiya", "Sultanate of Shewa"],
+        answer: 0,
+        englishExplanation: "The Sultanate of Ifat was ruled by the Walasma dynasty. A branch of the Walasma family moved eastward after the decline of Ifat and established the Sultanate of Adal. Therefore, Adal was ruled by an extended branch of the ruling family of Ifat. 🌍",
+        amharicExplanation: "የኢፋት ሱልጣኔት በወልስማ ሥርወ መንግሥት ይመራ ነበር። ኢፋት ከተዳከመ በኋላ የወልስማ ቤተሰብ አንድ ቅርንጫፍ ወደ ምሥራቅ በመንቀሳቀስ የአደል ሱልጣኔትን መሠረተ። ስለዚህ አደል ከኢፋት ገዥ ቤተሰብ ጋር በቀጥታ የተያያዘ ነበር። 🧬"
+    },
+
+    {
+        question: "Which of the following is TRUE about the Kibre Negest (Glory of Kings)?",
+        options: [
+            "It was used to legitimize the power of the 'Solomonic kings'.",
+            "It was the first written law of kings in medieval Ethiopia.",
+            "Its original version was written in the Geez language.",
+            "It was produced during the reign of King Yekuno Amlak."
+        ],
+        answer: 0,
+        englishExplanation: "The Kibre Negest was used to support the legitimacy of the Solomonic dynasty by presenting the Ethiopian kings as descendants of King Solomon and the Queen of Sheba. It was therefore an important ideological foundation for Solomonic rule. 📜",
+        amharicExplanation: "ክብረ ነገሥት የሰለሞናዊ ነገሥታትን የመግዛት ሕጋዊነት ለማጠናከር የተጠቀሙበት አስፈላጊ ጽሑፍ ነበር። የኢትዮጵያ ነገሥታት ከንጉሥ ሰለሞንና ከንግሥተ ሳባ የተወለዱ ዘሮች እንደሆኑ በማቅረብ የሥርወ መንግሥቱን ሥልጣን ለማስረገጥ አገልግሏል። 📝"
+    },
+
+    {
+        question: "Who was the Queen that sought support from Europe for the Christian kingdom in the early 16th century?",
+        options: ["Tewabech", "Seble Wongel", "Mentewab", "Eleni"],
+        answer: 3,
+        englishExplanation: "Queen Eleni was an influential Ethiopian royal figure in the late 15th and early 16th centuries. She helped seek European support for the Christian kingdom in response to the growing threat from Muslim powers, especially the Adal Sultanate. She was connected with the diplomatic efforts toward Portugal. 🇵🇹",
+        amharicExplanation: "ንግሥት እሌኒ በ15ኛው ክፍለ ዘመን መጨረሻና በ16ኛው መጀመሪያ ዘመን ተጽዕኖ ፈጣሪ የኢትዮጵያ ንግሥት ነበረች። የአደል ሱልጣኔት ስጋት እየጨመረ ሲመጣ የክርስቲያን መንግሥቱ ከአውሮፓ ድጋፍ እንዲያገኝ የዲፕሎማሲ ጥረቶችን ደግፋለች። 🇪🇹"
+    },
+
+    {
+        question: "Which of the following is not the major experience from the late thirteenth to the beginning of the sixteenth centuries?",
+        options: [
+            "Territorial expansion",
+            "The decline of the 'Solomonic' Dynasty",
+            "Evangelization",
+            "Flourishing and development of trade"
+        ],
+        answer: 1,
+        englishExplanation: "The decline of the Solomonic dynasty was not a major experience of this period. Instead, the period was characterized by territorial expansion, evangelization, and the growth of trade. The dynasty generally strengthened its political authority during much of this era. 📈",
+        amharicExplanation: "ከ13ኛው ክፍለ ዘመን መጨረሻ እስከ 16ኛው መጀመሪያ ዘመን ድረስ የሰለሞናዊ ሥርወ መንግሥት ውድቀት ዋና ተሞክሮ አልነበረም። በዚህ ጊዜ የግዛት ማስፋፋት፣ የክርስትና ስርጭት እና የንግድ እድገት ዋና ባህሪያት ነበሩ። 🌱"
+    },
+
+    {
+        question: "Which of the following statements is true about the position of religion in the rivalry between the Christian Kingdom and Sultanate of Adal?",
+        options: [
+            "It was the fundamental cause for the wars.",
+            "It provided an ideological justification to the wars.",
+            "It did not have values and impacts in both camps.",
+            "There was no more religious interaction and integration."
+        ],
+        answer: 1,
+        englishExplanation: "Religion played an important role in the rivalry because it provided ideological justification for the wars. However, political and economic interests, including control of territory and trade routes, were also important factors. Religion helped leaders mobilize people and present the conflict in religious terms. ⚖️",
+        amharicExplanation: "ሃይማኖት በክርስቲያን መንግሥትና በአደል ሱልጣኔት መካከል ለነበረው ፉክክር የርዕዮተ ዓለም ማስረጃ ሆኖ አገልግሏል። ሆኖም የግዛት ቁጥጥርና የንግድ መስመሮች የመቆጣጠር ፍላጎት የፖለቲካና የኢኮኖሚ ጉዳዮችም ነበሩ። ስለዚህ ሃይማኖት ጦርነቶቹን ለማስረዳትና ሰዎችን ለማሰባሰብ ተጠቅሟል። 🕯️"
+    },
+
+    {
+        question: "One of the following was not the Muslim sultanate of medieval Ethiopia?",
+        options: ["Ifat", "Fatagar", "Damot", "Bali"],
+        answer: 2,
+        englishExplanation: "Damot was a powerful political kingdom in southwestern Ethiopia, but it was not a Muslim sultanate. Ifat, Fatagar, and Bali are identified in the historical context as Muslim political states of the medieval period. 🏞️",
+        amharicExplanation: "ደሞት በደቡብ ምዕራብ ኢትዮጵያ የነበረ ኃያል የፖለቲካ መንግሥት ነበር፣ ነገር ግን የሙስሊም ሱልጣኔት አልነበረም። ኢፋት፣ ፈጠጋር እና ባሊ ግን በመካከለኛው ዘመን ከነበሩ የሙስሊም ፖለቲካዊ አካላት መካከል ይጠቀሳሉ። 🏘️"
+    },
+
+    {
+        question: "What important historical event in the history of Ethiopia and the Horn took place in 1270?",
+        options: [
+            "The overthrow of the last king of Aksum, Dilnaod.",
+            "The assumption of power by King YegbaTsion.",
+            "The outbreak of conflict between Ifat & the Christian kingdom.",
+            "The establishment of a new dynasty by Yekuno Amlak."
+        ],
+        answer: 3,
+        englishExplanation: "In 1270, Yekuno Amlak defeated the Zagwe rulers and established the Solomonic dynasty. This marked an important political transition in Ethiopian history and began a new period of Solomonic rule. 👑",
+        amharicExplanation: "በ1270 ይኩኖ አምላክ የዛጉዌን ሥርወ መንግሥት በማስወገድ የሰለሞናዊ ሥርወ መንግሥትን አቋቋመ። ይህ በኢትዮጵያ ታሪክ አስፈላጊ የፖለቲካ ለውጥ ሲሆን አዲስ የሰለሞናዊ አገዛዝ ዘመንን ጀመረ። 🏛️"
+    },
+
+    {
+        question: "One of the following rulers of the Christian Highland Kingdom was considered as the most expansionist ruler of the medieval period.",
+        options: ["Yikuno Amlak", "Zara Yacob", "Amde Tseyon", "Bahr Negash Yishak"],
+        answer: 2,
+        englishExplanation: "Amde Tseyon, who ruled from 1314 to 1344, is considered one of the most expansionist rulers of medieval Ethiopia. His campaigns greatly increased the territory under the Christian kingdom's control and extended royal influence into southern and eastern areas. 🗺️",
+        amharicExplanation: "ከ1314–1344 የገዛው አምደ ጽዮን በመካከለኛው ዘመን በጣም ተስፋፊ ከነበሩ የክርስቲያን ደጋማ መንግሥት ነገሥታት አንዱ ነበር። የወታደራዊ ዘመቻዎቹ የመንግሥቱን ግዛት በማስፋፋት የንጉሣዊ ተጽዕኖን ወደ ደቡብና ምሥራቅ አስፋፉ። 🛡️"
+    },
+
+    {
+        question: "Which of the following is among the core areas of medieval Ethiopian Christian Kingdoms' relation issues with Egypt?",
+        options: [
+            "The control of long-distance trade routes in Western Ethiopia.",
+            "The rights of religious minorities in the respective regions.",
+            "Rivalries over the leadership of the Christian world in both regions.",
+            "ALL"
+        ],
+        answer: 1,
+        englishExplanation: "One important issue in Ethiopia-Egypt relations was the treatment and protection of religious minorities, particularly Coptic Christians in Egypt. Ethiopian rulers were also concerned about the appointment of bishops for the Ethiopian Church by the Coptic Patriarch in Egypt. 🕊️",
+        amharicExplanation: "በመካከለኛው ዘመን በኢትዮጵያና በግብፅ መካከል ከነበሩ ዋና ጉዳዮች አንዱ የሃይማኖት አናሳዎች መብትና ጥበቃ ነበር። በተለይም በግብፅ የሚኖሩ ኮፕቲክ ክርስቲያኖች አያያዝ እና ለኢትዮጵያ ቤተክርስቲያን ጳጳሳት መሾም አስፈላጊ ጉዳዮች ነበሩ። 🤲"
+    } ];
 
 quizData["history"]["5"] = [
 
