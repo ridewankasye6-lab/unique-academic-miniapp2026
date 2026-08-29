@@ -4105,12 +4105,719 @@ quizData["history"]["2"] = [ { question: "Tools which are characterized by flexi
         amharicExplanation: "📿 እንደ ቃድርያ፣ ቲጃኒያ እና ሰማንያ ያሉ የሱፊ መንፈሳዊ ትዕዛዞች በተለያዩ የኢትዮጵያ ክፍሎች እስልምና እንዲስፋፋ አስተዋጽኦ አድርገዋል። የሃይማኖት መምህራኖቻቸውና መንፈሳዊ መረቦቻቸው የትምህርት ማዕከላትን በመመስረት በጊቤና በደቡብ ምስራቅ ኢትዮጵያ እስልምና እንዲስፋፋ ረድተዋል።"
     }];
 
-quizData["history"]["3"] = [
+quizData["history"]["3"] = [   {
+        question: "The major achievements of the Aksumite state were?",
+        options: [
+            "Indigenous script",
+            "Calendar",
+            "EOC hymns and chants",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "The Aksumite state achieved important cultural and intellectual developments. These included the use of the Ge'ez script, a calendar system, and the development of Ethiopian Orthodox Church hymns and chants. Therefore, all of the listed achievements are correct. 📜",
+        amharicExplanation: "የአክሱም መንግሥት በባህልና በእውቀት ዘርፍ ከፍተኛ ስኬቶችን አስመዝግቧል። ከእነዚህም የግዕዝ ፊደልን መጠቀም፣ የቀን መቁጠሪያ ሥርዓት እና የኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን መዝሙሮችና ዝማሬዎች መዳበር ይገኙበታል። ስለዚህ ሁሉም የተጠቀሱት ትክክለኛ ስኬቶች ናቸው። 🎶"
+    },
 
-    // History Chapter 3 questions
+    {
+        question: "Among the Aksumite kings, who spoke the Greek language?",
+        options: [
+            "Ezana",
+            "Zoscales",
+            "Sasu",
+            "Endyibs"
+        ],
+        answer: 1,
+        englishExplanation: "Zoscales was an Aksumite king who was reported to speak Greek. Greek was widely used for communication and trade around the Red Sea and the Greco-Roman world, so knowledge of the language helped Aksum maintain international contacts. 🗣️",
+        amharicExplanation: "ዞስካለስ በግሪክ ቋንቋ ይናገር እንደነበር የተገለጸለት የአክሱም ንጉሥ ነበር። ግሪክ በቀይ ባህርና በግሪኮ-ሮማን ዓለም በመገናኛና በንግድ በስፋት የሚጠቀሙበት ቋንቋ ስለነበር፣ ይህንን ቋንቋ ማወቁ አክሱም ከውጭ አገሮች ጋር ግንኙነቷን ለማጠናከር አግዟታል። 🌐"
+    },
 
+    {
+        question: "Which one is Da’mat’s cultural center in northern Ethiopia?",
+        options: [
+            "Yeha",
+            "Hawlti Melazo",
+            "Addi-Seglemeni",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "Yeha, Hawlti Melazo, and Addi-Seglemeni are important archaeological and cultural sites associated with the Da'mat period in northern Ethiopia. Archaeological remains from these places provide evidence about the culture and history of the period. 🏺",
+        amharicExplanation: "ይሓ፣ ሓውልቲ መላዞ እና አዲ-ሰግለመኒ በሰሜን ኢትዮጵያ ከዳዕማት ዘመን ጋር የተያያዙ ጠቃሚ የአርኪኦሎጂና የባህል ስፍራዎች ናቸው። ከእነዚህ ቦታዎች የተገኙ ቅርሶች ስለዚያን ዘመን ባህልና ታሪክ ጠቃሚ ማስረጃ ይሰጣሉ። 🔎"
+    },
 
-];
+    {
+        question: "___________ was whose expedition is documented at her/his tomb in Dier el-Bahri?",
+        options: [
+            "Pharaoh Sahure",
+            "Punt",
+            "Queen Hatshepsut",
+            "None"
+        ],
+        answer: 2,
+        englishExplanation: "Queen Hatshepsut's famous expedition to Punt is depicted on the walls of her mortuary temple at Deir el-Bahri in Egypt. The reliefs show the journey and the valuable goods brought back from Punt, including incense and other exotic products. 🚢",
+        amharicExplanation: "ንግሥት ሃትሼፕሱት ወደ ፑንት ያደረገችው ታዋቂ ጉዞ በግብፅ ዲር ኤል-ባህሪ በሚገኘው የመታሰቢያ ቤተ መቅደሷ ግድግዳ ላይ ተመስሏል። ሥዕሎቹ ጉዞውንና ከፑንት የተመለሱ እንደ ዕጣን ያሉ ጠቃሚ ሸቀጦችን ያሳያሉ። 🛕"
+    },
+
+    {
+        question: "Which of the following is wrong about Axum?",
+        options: [
+            "Its civilization was originated from South Arabia.",
+            "It declined due to the loss of control of the Red Sea trade.",
+            "It had a well-demarcated social structure.",
+            "In its heydays, its territory stretched beyond the Red Sea."
+        ],
+        answer: 0,
+        englishExplanation: "The incorrect statement is that Aksumite civilization originated from South Arabia. Aksum developed in the northern Horn of Africa and had strong cultural and commercial contacts with South Arabia, but these contacts do not mean that Aksumite civilization simply originated there. 🌍",
+        amharicExplanation: "የተሳሳተው መግለጫ የአክሱም ሥልጣኔ መነሻው ደቡብ አረቢያ ነው የሚለው ነው። አክሱም በሰሜናዊ የአፍሪካ ቀንድ ክልል ውስጥ የተዳበረች ሲሆን ከደቡብ አረቢያ ጋር ጠንካራ የባህልና የንግድ ግንኙነት ነበራት። ይህ ግንኙነት ሥልጣኔዋ ከዚያ ቦታ በቀጥታ መጣ ማለት አይደለም። 🧭"
+    },
+
+    {
+        question: "Which of the following is false about the state of Punt?",
+        options: [
+            "It was ruled by a series of kings known as pharaohs.",
+            "Information about it was contained in Egyptian hieroglyphics.",
+            "Its exact location and territorial extent is not clearly known.",
+            "It was the earliest recorded state in Ethiopia and the Horn."
+        ],
+        answer: 0,
+        englishExplanation: "The false statement is that Punt was ruled by pharaohs. Pharaoh was a title used by the rulers of ancient Egypt. Punt was a separate land with its own rulers, and information about it was recorded by the Egyptians. 🏜️",
+        amharicExplanation: "የተሳሳተው መግለጫ ፑንት በፈርዖኖች ትገዛ ነበር የሚለው ነው። ፈርዖን የጥንታዊ ግብፅ ገዢዎች የሚጠቀሙበት ማዕረግ ነበር። ፑንት የራሷ ገዢዎች የነበሯት የተለየች አገር ነበረች፣ ስለእሷም መረጃ በጥንታዊ የግብፅ ጽሑፎች ተመዝግቧል። 📖"
+    },
+
+    {
+        question: "Which of the following is correct about the Zagwe Kingdom?",
+        options: [
+            "It declined soon as the Arabs had destroyed the port of Adulis.",
+            "It expanded its territory beyond the Red Sea coasts.",
+            "It declined due to lack of succession and power struggle.",
+            "It developed a unique cultural tradition that deviated from the Axumite period."
+        ],
+        answer: 2,
+        englishExplanation: "The Zagwe Kingdom declined mainly because of internal political problems, including succession disputes and struggles for power. Yekuno-Amlak eventually defeated the last Zagwe ruler and established the Solomonic dynasty. ⚔️",
+        amharicExplanation: "የዛጉዌ መንግሥት ውድቀት በዋናነት ከውስጣዊ የፖለቲካ ችግሮች ጋር የተያያዘ ነበር። የዙፋን መተካካት ክርክርና የሥልጣን ትግል ሥርወ መንግሥቱን አዳክሞታል። በመጨረሻም የኩኖ አምላክ የመጨረሻውን የዛጉዌ ገዢ አሸንፎ የሰለሞናዊ ሥርወ መንግሥትን መሰረተ። 🛡️"
+    },
+
+    {
+        question: "The legend about Prester John of Indies had strengthened the relation between Ethiopia and ____.",
+        options: [
+            "Egypt",
+            "Israel",
+            "Europe",
+            "South Arabia"
+        ],
+        answer: 2,
+        englishExplanation: "The legend of Prester John described a powerful Christian ruler in the East or Africa. Europeans eventually associated the legend with Ethiopia, increasing European interest in establishing diplomatic and religious connections with the Ethiopian Christian kingdom. 🤝",
+        amharicExplanation: "የፕሬስተር ጆን አፈ ታሪክ በምስራቅ ወይም በአፍሪካ ውስጥ ያለ ኃያል ክርስቲያን ገዢ እንዳለ ይገልጽ ነበር። አውሮፓውያን ይህን አፈ ታሪክ ከኢትዮጵያ ጋር ማያያዝ ሲጀምሩ፣ ከኢትዮጵያ ክርስቲያን መንግሥት ጋር የዲፕሎማሲና የሃይማኖት ግንኙነት ለመመስረት ያላቸው ፍላጎት ጨመረ። 🌍"
+    },
+
+    {
+        question: "The most dominant Muslim State that attained economic and political hegemony in the Horn of Africa during the sixteenth century was the sultanate of",
+        options: [
+            "Ifat",
+            "Mora",
+            "Adal",
+            "Hadiya"
+        ],
+        answer: 2,
+        englishExplanation: "The Adal Sultanate became the dominant Muslim power in the Horn of Africa during the sixteenth century. Under leaders such as Imam Ahmad ibn Ibrahim al-Ghazi, Adal launched major military campaigns against the Christian kingdom. 🏇",
+        amharicExplanation: "በ16ኛው ክፍለ ዘመን የአዳል ሱልጣኔት በአፍሪካ ቀንድ ውስጥ ዋና የሙስሊም ኃይል ሆነ። በኢማም አህመድ ኢብን ኢብራሂም አል-ጋዚ የሚመራው አዳል በክርስቲያኑ መንግሥት ላይ ትልልቅ ወታደራዊ ዘመቻዎችን አካሂዷል። 🐎"
+    },
+
+    {
+        question: "The root cause of the inter-state conflict in Ethiopia during the sixteenth century was the",
+        options: [
+            "Expansion of Islam and emergence of Muslim states.",
+            "Desire to control trade routes that run from coastal area to the interior.",
+            "Contact with the Mediterranean and the Arab world.",
+            "Political instability in the Red Sea and the Horn of Africa."
+        ],
+        answer: 1,
+        englishExplanation: "The major underlying cause was competition for economic resources and trade routes. The Christian kingdom and Muslim states sought to control routes connecting the coastal ports with the interior, because these routes were important for profitable long-distance trade. 💱",
+        amharicExplanation: "የግጭቱ ዋና መሠረታዊ ምክንያት ለኢኮኖሚ ሀብትና ለንግድ መስመሮች የነበረው ውድድር ነበር። የክርስቲያኑ መንግሥትና የሙስሊም መንግሥታት የባህር ዳርቻ ወደቦችን ከውስጥ አገር ጋር የሚያገናኙ የንግድ መስመሮችን ለመቆጣጠር ይወዳደሩ ነበር። 💰"
+    },
+
+    {
+        question: "The main factor for the rise of the Sheikdoms of Asosa, Benishangul, and Komosha along the Ethio-Sudanese border during the nineteenth century was the",
+        options: [
+            "Influence of Islam and border trade.",
+            "Mass immigration of Muslim population from Egypt to the region.",
+            "Shift of political center by the Mahdists to that area.",
+            "Decline of the Christian kingdom which had dominated the region."
+        ],
+        answer: 0,
+        englishExplanation: "The growth of the Sheikdoms along the Ethio-Sudanese border was strongly connected with the spread of Islam and the importance of border trade. Trade created wealth and helped local leaders strengthen their political authority. 🛍️",
+        amharicExplanation: "በኢትዮጵያና በሱዳን ድንበር አካባቢ የሼክዶሞች መነሳት በእስልምና ተጽዕኖና በድንበር ንግድ እድገት በከፍተኛ ሁኔታ የተያያዘ ነበር። ንግዱ ሀብት በመፍጠር የአካባቢ መሪዎች የፖለቲካ ሥልጣናቸውን እንዲያጠናክሩ አግዟል። 🧺"
+    },
+
+    {
+        question: "The core area of the Shawan kingdom was",
+        options: [
+            "Entoto",
+            "Menz",
+            "Ankober",
+            "Menagesha"
+        ],
+        answer: 2,
+        englishExplanation: "Ankober was the main political center and core area of the historical Shawan kingdom. It became an important base from which the rulers of Shewa administered their territory and expanded their influence. 🏔️",
+        amharicExplanation: "አንኮበር የታሪካዊው የሸዋ መንግሥት ዋና የፖለቲካ ማዕከልና ዋና አካባቢ ነበር። የሸዋ ገዢዎች ግዛታቸውን ለማስተዳደርና ተጽዕኖቸውን ለማስፋፋት አንኮበርን እንደ ዋና መሠረት ይጠቀሙበት ነበር። 🏞️"
+    },
+
+    {
+        question: "Who was the prominent figure among the Oromo of the Gibe area in the process of political transformation that replaced the Gada system by a monarchical political tradition during the 19th century?",
+        options: [
+            "Abba Sera",
+            "Abba Dula",
+            "Abba Muda",
+            "Abba Qoro"
+        ],
+        answer: 1,
+        englishExplanation: "Abba Dula is identified in the given curriculum material as an important figure in the political transformation of the Gibe area. This transformation involved movement from the traditional Gada political system toward centralized monarchical forms of government. 👑",
+        amharicExplanation: "በተሰጠው የትምህርት ይዘት መሠረት አባ ዱላ በጊቤ አካባቢ በተከሰተው የፖለቲካ ለውጥ ውስጥ ጉልህ ሰው ነበር። ይህ ለውጥ ከባህላዊው የገዳ የፖለቲካ ሥርዓት ወደ በማዕከል የተደራጀ ንጉሳዊ የመንግሥት ሥርዓት የሚደረግ ሽግግርን ያካትታል። 🏛️"
+    },
+
+    {
+        question: "Identify the wrong statement about the Zagwe Dynasty?",
+        options: [
+            "The Zagwe maintained the ancient Aksumite traditions intact.",
+            "Merra Tekle Haimanot was the last king of Zagwe Dynasty whose throne was overthrown by Yekuno-Amlak of the Solomonic line.",
+            "The Zagwe period was a golden age in Ethiopia's paintings and the translation of some religious works from Arabic into Ge'ez.",
+            "Export items of the Zagwe period included slaves, ivory and rare spices while imported items included cotton, linen, silver and copper vessels, various types of drugs and newly minted coins."
+        ],
+        answer: 1,
+        englishExplanation: "The wrong statement is that Merra Tekle Haimanot was the last Zagwe king. He is traditionally identified as the founder of the Zagwe dynasty. The last Zagwe ruler was Yetbarak, who was defeated by Yekuno-Amlak in 1270. 📚",
+        amharicExplanation: "የተሳሳተው መግለጫ መርራ ተክለ ሃይማኖት የዛጉዌ የመጨረሻ ንጉሥ ነበር የሚለው ነው። በትውፊት መሠረት እሱ የዛጉዌ ሥርወ መንግሥት መስራች ነው። የመጨረሻው የዛጉዌ ገዢ ይትባረክ ሲሆን፣ በ1270 ዓ.ም. በየኩኖ አምላክ ተሸነፈ። 🗿"
+    },
+
+    {
+        question: "The decline of the Aksumite State in the 7th Century A.D is attributed to the following events except:",
+        options: [
+            "The perpetuation of lucrative trade with the external world.",
+            "Environmental degradation and decline in agricultural productivity.",
+            "Isolation of the Aksum state from its old commercial and diplomatic partners by Muslim Arabs.",
+            "The destruction of the port of Adulis and economic decline."
+        ],
+        answer: 0,
+        englishExplanation: "The continuation of profitable external trade would not cause Aksum's decline. In fact, Aksum's decline was associated with the weakening or loss of important external trade connections. Environmental problems, reduced agricultural productivity, and the disruption of Red Sea trade contributed to the decline. 📉",
+        amharicExplanation: "ትርፋማ የውጭ ንግድን ማስቀጠል የአክሱም መውደቅ ምክንያት አይደለም። በተቃራኒው የአክሱም ውድቀት ከዋና የውጭ ንግድ ግንኙነቶች መዳከምና መቋረጥ ጋር ይያያዛል። የአካባቢ መራቆት፣ የግብርና ምርታማነት መቀነስና የቀይ ባህር ንግድ መስተጓጎል ለውድቀቱ አስተዋጽኦ አድርገዋል። 🏜️"
+    },
+
+    {
+        question: "Which of the following was the factor for the downfall of the Zagwe dynasty in 1270 AD?",
+        options: [
+            "Power succession among the ruling family and opposition against the dynasty.",
+            "Foreign invasion from the Arab world to control the lucrative ports.",
+            "The prevalence of natural problems mainly drought and environmental pollution.",
+            "The outbreak of religious problems among the followers of orthodox Christian and Catholics."
+        ],
+        answer: 0,
+        englishExplanation: "The major factor behind the fall of the Zagwe dynasty was internal political opposition and struggles over succession. Yekuno-Amlak successfully challenged the Zagwe ruler and established the Solomonic dynasty in 1270. ⚔️",
+        amharicExplanation: "የዛጉዌ ሥርወ መንግሥት በ1270 ዓ.ም. እንዲወድቅ ያደረገው ዋና ምክንያት የውስጥ የፖለቲካ ተቃውሞና የዙፋን መተካካት ትግል ነበር። የኩኖ አምላክ የዛጉዌን ገዢ በመቃወም አሸንፎ በ1270 ዓ.ም. የሰለሞናዊ ሥርወ መንግሥትን መሰረተ። 🏹"
+    },
+
+    {
+        question: "Why did King Lalibela construct the Rock-hewn churches in Ethiopia?",
+        options: [
+            "To show the glory and majesty of the king.",
+            "To establish a second Jerusalem to solve the difficulties on pilgrims to the Holy Land.",
+            "To take the position of Egyptian Coptic church to consecrate the Abuns.",
+            "The need to restore Judaism over Christianity and maintain the Old Testament orders."
+        ],
+        answer: 1,
+        englishExplanation: "King Lalibela built the famous rock-hewn churches to create a sacred pilgrimage center often described as a 'New Jerusalem.' Difficulties in travelling to the Holy Land made a local pilgrimage center especially important for Ethiopian Christians. ✝️",
+        amharicExplanation: "ንጉሥ ላሊበላ ታዋቂዎቹን ውቅር አብያተ ክርስቲያናት የገነባው እንደ 'አዲስ ኢየሩሳሌም' የሚቆጠር የቅዱስ ምዕመናን መጎብኛ ማዕከል ለመፍጠር ነው። ወደ ቅድስት ሀገር መጓዝ አስቸጋሪ ስለነበር ለኢትዮጵያውያን ክርስቲያኖች በአገር ውስጥ የምዕመናን መጎብኛ ማዕከል መኖሩ አስፈላጊ ነበር። 🕯️"
+    },
+
+    {
+        question: "Identify the wrong statement about the Aksumite state?",
+        options: [
+            "Its coins had international acceptance.",
+            "Since the late 7C A.D, Aksum was quite reducing in size.",
+            "The presence of timber made Aksum the major naval power in the Red Sea region.",
+            "The relation between Aksum and South Arabia was always harmonious."
+        ],
+        answer: 3,
+        englishExplanation: "The wrong statement is that relations between Aksum and South Arabia were always harmonious. Their relationship included periods of trade and cultural contact, but also military conflicts and struggles over political influence and Red Sea trade. ⚓",
+        amharicExplanation: "የተሳሳተው መግለጫ በአክሱምና በደቡብ አረቢያ መካከል ያለው ግንኙነት ሁልጊዜ ሰላማዊ ነበር የሚለው ነው። በሁለቱ መካከል የንግድና የባህል ግንኙነት ቢኖርም፣ የፖለቲካ ተጽዕኖና የቀይ ባህር ንግድን ለመቆጣጠር የተደረጉ ወታደራዊ ግጭቶችም ነበሩ። 🚢"
+    },
+
+    {
+        question: "The earliest known state in the history of Ethiopia and the Horn is",
+        options: [
+            "Da’mat",
+            "Punt",
+            "Yeha",
+            "Coloe",
+            "None"
+        ],
+        answer: 1,
+        englishExplanation: "Punt is traditionally identified in this curriculum as the earliest recorded state associated with the history of Ethiopia and the Horn. Ancient Egyptian records describe Punt as an important trading region, although its exact location remains uncertain. 🗺️",
+        amharicExplanation: "በዚህ የትምህርት ይዘት መሠረት ፑንት በኢትዮጵያና በአፍሪካ ቀንድ ታሪክ ውስጥ ቀደምት የተመዘገበ መንግሥት ተብላ ትጠቀሳለች። የጥንት ግብፅ መዛግብት ፑንትን እንደ ጠቃሚ የንግድ ክልል ይጠቅሷታል፣ ሆኖም ትክክለኛ ቦታዋ እስካሁን በሙሉ አልታወቀም። 🧭"
+    },
+
+    {
+        question: "The reason for the decline of the Ancient kingdom of Aksum was possibly by",
+        options: [
+            "Plague infestation",
+            "As ‘transgressors’ of the law for power",
+            "The revival of the Port of Adulis",
+            "The invasion of Ancient Egypt"
+        ],
+        answer: 0,
+        englishExplanation: "Plague infestation is presented as one possible factor in the decline of Aksum. The decline was complex and may also have involved environmental degradation, reduced agricultural productivity, political changes, and disruption of important trade networks. 🦠",
+        amharicExplanation: "የቸነፈር ወረርሽኝ የአክሱም መንግሥት ውድቀት አንዱ ሊሆን የሚችል ምክንያት ነበር። ውድቀቱ ውስብስብ ስለነበር የአካባቢ መራቆት፣ የግብርና ምርታማነት መቀነስ፣ የፖለቲካ ለውጦችና የአስፈላጊ የንግድ መረቦች መስተጓጎልም አስተዋጽኦ ሊኖራቸው ይችላል። 🧫"
+    },
+    {
+        question: "The exact location of Punt according to scholars' agreement is North Ethiopia?",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Scholars have not reached an agreement about the exact location of Punt. Some scholars place it in northern or northeastern Somalia, while others suggest Ethiopia or the Arabian Peninsula. Therefore, it is incorrect to say that scholars agree Punt was located in North Ethiopia. 🌍",
+        amharicExplanation: "ምሁራን የፑንትን ትክክለኛ ቦታ በተመለከተ ሙሉ ስምምነት ላይ አልደረሱም። አንዳንድ ምሁራን ፑንት በሰሜን ወይም በሰሜን ምስራቅ ሶማሊያ እንደነበረች ሲያምኑ፣ ሌሎች ደግሞ በኢትዮጵያ ወይም በአረቢያ ባሕረ ገብ መሬት እንደነበረች ይጠቁማሉ። ስለዚህ ፑንት በሰሜን ኢትዮጵያ እንደነበረች ምሁራን ተስማምተዋል ማለት ትክክል አይደለም። 🗺️"
+    },
+
+    {
+        question: "Mukarib was the political name of the Da’amat state, which was tentatively dated in the 5th century BC?",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "Da’amat was an early state located south of the later Aksumite area. An inscription associated with its ruler, tentatively dated to the 5th century BC, shows the use of the politico-religious title 'Mukarib.' 🏛️",
+        amharicExplanation: "ዳዓማት ከኋላ ከተቋቋመው የአክሱም አካባቢ በስተደቡብ የሚገኝ ጥንታዊ መንግሥት ነበር። በአምስተኛው ክፍለ ዘመን ዓ.ዓ. አካባቢ ተብሎ በግምት በተመደበ ጽሑፍ የዳዓማት ገዢ 'ሙካሪብ' የተባለ የፖለቲካና የሃይማኖት ማዕረግ እንደተጠቀመ ይታያል። 🏺"
+    },
+
+    {
+        question: "The founder of the Zagwe Dynasty has no connection with the Aksumite state.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "According to Ethiopian historical tradition, Mara Teklehaimanot was connected with the Aksumite royal lineage through his marriage to Masobe Worq, who was traditionally identified as the daughter of the last Aksumite ruler, Dil Na’od. 👑",
+        amharicExplanation: "በኢትዮጵያ ታሪካዊ ትውፊት መሠረት የዛጉዌ ሥርወ መንግሥት መስራች ማራ ተክለሃይማኖት ከአክሱማዊ የንጉሥ ዘር ጋር ግንኙነት ነበረው። በትውፊቱ መሠረት የመጨረሻው የአክሱም ገዢ ድል ነዓድ ልጅ እንደነበረች ከሚታመነው ማሶቤ ወርቅ ጋር ተጋብቶ ነበር። 👰"
+    },
+
+    {
+        question: "One important factor for the emergence of a country is a sedentary agricultural way of life.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "Sedentary agriculture encouraged people to settle permanently in one place. Stable settlements supported population growth, food surpluses, specialization, trade, administration, and eventually the development of organized states. 🌾",
+        amharicExplanation: "ቋሚ የግብርና አኗኗር ሰዎች በአንድ ቦታ ቋሚ ሆነው እንዲኖሩ አስችሏል። ይህም የሕዝብ ቁጥር እንዲጨምር፣ ትርፍ ምርት እንዲኖር፣ የሥራ ልዩነት፣ ንግድ፣ አስተዳደርና በመጨረሻም የተደራጁ መንግሥታት እንዲፈጠሩ አግዟል። 🌱"
+    },
+
+    {
+        question: "Which relation is not correctly matched?",
+        options: [
+            "Astar - Venus god",
+            "Shamsi - Sun god",
+            "Sun - Moon god",
+            "Almouqah - Light god"
+        ],
+        answer: 2,
+        englishExplanation: "The incorrect match is 'Sun - Moon god.' In ancient South Arabian religious traditions, Shamsi was associated with the sun, while Sin was associated with the moon. Therefore, the Sun itself was not the Moon god. ☀️",
+        amharicExplanation: "የተሳሳተው ግንኙነት 'ፀሐይ - የጨረቃ አምላክ' የሚለው ነው። በጥንታዊ የደቡብ አረቢያ ሃይማኖታዊ ባህል ሻምሲ ከፀሐይ ጋር ሲያያዝ፣ ሲን ደግሞ ከጨረቃ ጋር ይያያዛል። ስለዚህ ፀሐይ የጨረቃ አምላክ አይደለችም። 🌙"
+    },
+
+    {
+        question: "What was the internal long-distance trade between Aksum and a distant region known as?",
+        options: ["SASU", "USAS", "TRADE", "BENI SHANGUL"],
+        answer: 0,
+        englishExplanation: "The long-distance internal trade between Aksum and a distant region was known as Sasu. It connected Aksum with areas associated with the western gold-producing regions. Goods such as cattle, salt, and iron were exchanged for gold. 🪙",
+        amharicExplanation: "በአክሱምና በሩቅ የአገር ውስጥ ክልል መካከል የነበረው የረጅም ርቀት ንግድ 'ሳሱ' ተብሎ ይጠራ ነበር። ይህ ንግድ አክሱምን ከምዕራባዊ የወርቅ አምራች ክልሎች ጋር ያገናኝ ነበር። ከብት፣ ጨውና ብረት ያሉ ዕቃዎች ለወርቅ ይለወጡ ነበር። 💰"
+    },
+
+    {
+        question: "Aksum was one of the four leading world powers next to which countries?",
+        options: [
+            "Rome, Persia, China",
+            "USA, France, Germany",
+            "Persia, America, China",
+            "Canada, Greece, Rome"
+        ],
+        answer: 0,
+        englishExplanation: "Aksum is traditionally described in historical sources as one of the major powers of the ancient world, alongside Rome, Persia, and China. Its importance came from its strategic location, international trade, military strength, and political influence. 🌐",
+        amharicExplanation: "አክሱም በታሪካዊ ምንጮች ከሮማ፣ ፋርስና ቻይና ጋር አንድ ከጥንታዊው ዓለም ዋና ኃያላን መንግሥታት እንደነበረች ትገለጻለች። የአክሱም ጠንካራ አቋም በስትራቴጂያዊ አቀማመጧ፣ በዓለም አቀፍ ንግዷ፣ በወታደራዊ ኃይሏና በፖለቲካዊ ተጽዕኖዋ የተመሠረተ ነበር። 🌍"
+    },
+
+    {
+        question: "Which king of Aksum built a church at Zur Amba in Gaynt and was the successor of King Kaleb?",
+        options: ["St. Yared", "Gabra Masqal", "Da’amat", "All"],
+        answer: 1,
+        englishExplanation: "Gabra Masqal was the successor of King Kaleb. Ethiopian historical tradition associates him with religious and architectural activities, including the church at Zur Amba in Gaynt. ⛪",
+        amharicExplanation: "ገብረ መስቀል የንጉሥ ካሌብ ተከታይ ነበር። በኢትዮጵያ ታሪካዊ ትውፊት ከሃይማኖታዊና ከሥነ ሕንፃ ሥራዎች ጋር ይያያዛል፤ ከእነዚህም መካከል በጋይንት ዙር አምባ የተገነባው ቤተ ክርስቲያን ይጠቀሳል። 🕍"
+    },
+
+    {
+        question: "Which of the following was a major factor in the decline of Aksum?",
+        options: [
+            "Decline of political and military power",
+            "Environmental degradation",
+            "Local rebellion",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "The decline of Aksum resulted from several interconnected factors rather than one single cause. These included environmental degradation, weakening political and military power, economic difficulties, and local rebellions. 📉",
+        amharicExplanation: "የአክሱም ውድቀት በአንድ ምክንያት ብቻ አልተከሰተም። የአካባቢ መራቆት፣ የፖለቲካና የወታደራዊ ኃይል መዳከም፣ የኢኮኖሚ ችግሮችና የአካባቢ አመጾች በአክሱም ውድቀት ላይ ተያያዥ ሚና ነበራቸው። 🏚️"
+    },
+
+    {
+        question: "Which one is the correct order of Zagwe Dynasty rulers?",
+        options: [
+            "Merra Teklehaymanot, Yimirahana Kirstos, Harbe, Lalibela, Nakutola’ab, Yitbarek",
+            "Lalibela, Merra Teklehaymanot, Yimirahana Kirstos, Yitbarek, Nakutola’ab",
+            "Merra Teklehaymanot, Yimirahana Kirstos, Yitbarek, Nakutola’ab",
+            "Merra Teklehaymanot, Yimirahana Kirstos, Yitbarek, Nakutola’ab, Lalibela"
+        ],
+        answer: 0,
+        englishExplanation: "The correct sequence given in the curriculum is Merra Teklehaymanot, Yimirahana Kirstos, Harbe, Lalibela, Nakutola’ab, and Yitbarek. This follows the chronological order of the Zagwe rulers listed in the question. 👑",
+        amharicExplanation: "በጥያቄው በተሰጠው የትምህርት ክፍል መሠረት ትክክለኛው የዛጉዌ ገዢዎች ቅደም ተከተል መርራ ተክለሃይማኖት፣ ይምርሃነ ክርስቶስ፣ ሀርቤ፣ ላሊበላ፣ ናኩቶላዕብ እና ይትባረክ ነው። ይህም በጥያቄው የተሰጠውን የጊዜ ቅደም ተከተል ያሳያል። 📜"
+    },
+
+    {
+        question: "The distinct area of the Zagwe Dynasty were called?",
+        options: ["Adafa", "Lalibela", "Bugna", "A and B"],
+        answer: 3,
+        englishExplanation: "Adafa and Lalibela are closely associated with the Zagwe center in the Lasta region. Adafa was associated with the earlier center near Roha, while Roha later became known as Lalibela. Therefore, the intended answer is A and B. 🏔️",
+        amharicExplanation: "አዳፋና ላሊበላ በላስታ ክልል ከዛጉዌ ማዕከል ጋር በቅርበት የተያያዙ ቦታዎች ናቸው። አዳፋ ከሮሃ አቅራቢያ ከነበረው የቀድሞ ማዕከል ጋር ይያያዛል፤ ሮሃም በኋላ ላሊበላ ተብሎ ታወቀ። ስለዚህ በጥያቄው የተፈለገው መልስ ሀ እና ለ ነው። 🏞️"
+    },
+
+    {
+        question: "Which one is not included under Muslim Sultanate?",
+        options: ["Fatagar", "Shewa", "Dawaro", "Gafat"],
+        answer: 3,
+        englishExplanation: "Fatagar, Shewa, and Dawaro are among the Muslim-ruled regions or sultanates discussed in the medieval history of Ethiopia. Gafat was a separate territory and is not classified as one of these Muslim sultanates. 🕌",
+        amharicExplanation: "ፈጠጋር፣ ሸዋና ደዋሮ በመካከለኛው ዘመን ታሪክ ከሙስሊም ገዢዎች ጋር የተያያዙ ክልሎች ወይም ሱልጣኔቶች ናቸው። ጋፋት ግን የተለየ ግዛት ስለነበረ በእነዚህ የሙስሊም ሱልጣኔቶች ውስጥ አይመደብም። 🕌"
+    },
+
+    {
+        question: "Which period was the most golden age for Ethiopian painting?",
+        options: ["Aksum", "Zagwe", "Punt", "Menelik"],
+        answer: 1,
+        englishExplanation: "The Zagwe period is commonly described in the curriculum as an important golden age of Ethiopian painting and religious art. The period is especially famous for its churches, paintings, manuscripts, and stone architecture. 🎨",
+        amharicExplanation: "የዛጉዌ ዘመን በትምህርቱ ውስጥ ለኢትዮጵያ ሥዕልና ሃይማኖታዊ ጥበብ ከፍተኛ የሆነ የወርቅ ዘመን ተብሎ ይገለጻል። ይህ ዘመን በአብያተ ክርስቲያናት፣ በሥዕሎች፣ በመጻሕፍትና በድንጋይ ሕንፃዎች በተለይ ይታወቃል። 🖌️"
+    },
+
+    {
+        question: "The ruler bearing the title of Awlama is from which state?",
+        options: ["Damot", "Enarya", "Gafat", "Bizamo"],
+        answer: 2,
+        englishExplanation: "Awlama was a title associated with rulers of Gafat. Gafat was located on the southwestern periphery of the Christian kingdom and was important in relations involving tribute and regional authority. 🏰",
+        amharicExplanation: "አውላማ የሚለው ማዕረግ ከጋፋት ገዢዎች ጋር የተያያዘ ነበር። ጋፋት በክርስቲያኑ መንግሥት ደቡብ ምዕራብ ዳርቻ የሚገኝ ክልል ሲሆን ከግብርና ከክልላዊ ሥልጣን ጋር ግንኙነት ነበረው። 🏛️"
+    },
+
+    {
+        question: "In which Muslim sultanate was chat introduced?",
+        options: ["Bali", "Ifat", "Dawaro", "Fatagar"],
+        answer: 1,
+        englishExplanation: "According to the curriculum material represented by this question, chat was introduced or documented in the Sultanate of Ifat. Chat is a stimulant plant whose leaves are traditionally chewed. 🌿",
+        amharicExplanation: "በዚህ ጥያቄ የተመሠረተው የትምህርት ይዘት መሠረት ጫት በኢፋት ሱልጣኔት እንደተዋወቀ ወይም እንደተመዘገበ ይገልጻል። ጫት ቅጠሉ በመኘክ የሚወሰድ የማነቃቂያ ተክል ነው። 🍃"
+    },
+
+    {
+        question: "Which factor is considered as European belief that the Ethiopian Christian kingdom is very powerful and wealthy?",
+        options: [
+            "Pilgrims in holy places transmitted information",
+            "Political person who has power",
+            "The holy spirit was obvious for them",
+            "They didn't believe since"
+        ],
+        answer: 0,
+        englishExplanation: "Ethiopian pilgrims who travelled to holy places could meet European Christians and share information about Ethiopia. Such reports helped spread European ideas about the wealth, power, and Christian identity of the Ethiopian kingdom. ⛪",
+        amharicExplanation: "ወደ ቅዱሳን ቦታዎች የሚጓዙ የኢትዮጵያ ምዕመናን ከአውሮፓውያን ክርስቲያኖች ጋር ይገናኙ እና ስለ ኢትዮጵያ መረጃ ያካፍሉ ነበር። እነዚህ መረጃዎች አውሮፓውያን ስለ ኢትዮጵያ ክርስቲያን መንግሥት ሀብት፣ ኃይልና ክርስቲያናዊ ማንነት ያላቸውን እምነት ለማስፋፋት አግዘዋል። 🧭"
+    },
+
+    {
+        question: "Umar Walasma was the founder of which state?",
+        options: ["Bali", "Ifat", "Shewa", "Dawaro"],
+        answer: 1,
+        englishExplanation: "Umar Walasma is traditionally regarded as the founder of the Ifat Sultanate. The Walasma dynasty later became an important Muslim ruling house in the Horn of Africa. 👑",
+        amharicExplanation: "ኡመር ወላስማ የኢፋት ሱልጣኔት መስራች እንደሆነ በታሪካዊ መረጃዎች ይገለጻል። የወላስማ ሥርወ መንግሥትም በቀንድ አፍሪካ ውስጥ ከነበሩ አስፈላጊ የሙስሊም ገዢ ቤተሰቦች አንዱ ሆነ። 🏹"
+    },
+
+    {
+        question: "Among the Lalibela churches with interior decoration and partial decoration outside is?",
+        options: ["Monolithic", "Semi-hewn", "Cave", "Both A and B"],
+        answer: 1,
+        englishExplanation: "Semi-hewn churches are partly separated from the surrounding rock. They can have detailed interior decoration while parts of their exterior remain connected to the natural rock. 🪨",
+        amharicExplanation: "በከፊል የተፈለፈሉ አብያተ ክርስቲያናት ከዙሪያቸው ካለው ዓለት ሙሉ በሙሉ ያልተለዩ ናቸው። ውስጣቸው ዝርዝር ማስዋብ ሊኖረው ይችላል፣ ከውጭ ግን አንዳንድ ክፍሎቻቸው ከተፈጥሮ ዓለቱ ጋር ተያይዘው ይቀራሉ። 🪨"
+    },
+
+    {
+        question: "Among the Lalibela churches, the largest and finest respectively?",
+        options: [
+            "Bete Medhane Alem, Bete Giyorgis",
+            "Bete Giyorgis, Bete Amanual",
+            "Bete Denagl, Bete Amanual",
+            "Bete Meskel, Bete Giyorgis"
+        ],
+        answer: 0,
+        englishExplanation: "Bete Medhane Alem is the largest of the Lalibela rock-hewn churches. Bete Giyorgis is especially famous for its remarkable craftsmanship and distinctive cross-shaped plan, making it one of the finest-known churches at Lalibela. ✝️",
+        amharicExplanation: "ቤተ መድኃኒዓለም በላሊበላ ካሉት ውቅር አብያተ ክርስቲያናት ትልቁ ነው። ቤተ ጊዮርጊስ ደግሞ በልዩ የመስቀል ቅርጽና በእጅግ ጥሩ የድንጋይ ሥራ በመታወቁ ከላሊበላ ታዋቂ አብያተ ክርስቲያናት አንዱ ነው። ✝️"
+    },
+
+    {
+        question: "Why was the Zagwe Dynasty period considered the golden age for Ethiopia?",
+        options: [
+            "Since it was a short time of ruling",
+            "There was the widest area they ruled",
+            "Construction reached an advanced level, exemplified by the Lalibela churches",
+            "They had a well-organized army compared to other rulers"
+        ],
+        answer: 2,
+        englishExplanation: "The Zagwe period is regarded as a golden age mainly because of its remarkable achievements in architecture and religious art. The rock-hewn churches of Lalibela are the most famous example of this advanced construction. 🏗️",
+        amharicExplanation: "የዛጉዌ ዘመን የወርቅ ዘመን ተብሎ የሚቆጠረው በተለይ በሥነ ሕንፃና በሃይማኖታዊ ጥበብ ያስመዘገበው ከፍተኛ ስኬት ምክንያት ነው። የላሊበላ ውቅር አብያተ ክርስቲያናት የዚህ የላቀ የግንባታ ችሎታ በጣም ታዋቂ ምሳሌ ናቸው። 🏗️"
+    },   { question: "Who was the prominent figure among the Oromo of the Gibe area in the process of political transformation that replaced the Gada system by a monarchical political tradition during the 19th century?",
+        options: [
+            "Abba Sera",
+            "Abba Dula",
+            "Abba Muda",
+            "Abba Qoro"
+        ],
+        answer: 1,
+        englishExplanation: "👑 Abba Dula was a prominent political figure among the Oromo of the Gibe region during the 19th century. He was associated with the political transformation from the traditional Gada system toward a centralized monarchical form of government.",
+        amharicExplanation: "🇪🇹 አባ ዱላ በ19ኛው ክፍለ ዘመን በጊቤ አካባቢ ከነበሩ ታዋቂ የኦሮሞ የፖለቲካ መሪዎች አንዱ ነበር። ከባህላዊው የጋዳ ስርዓት ወደ የተማከለ ንጉሳዊ የአስተዳደር ስርዓት የተደረገው የፖለቲካ ለውጥ ጋር ይያያዛል።"
+    },
+
+    {
+        question: "The following alternatives are good examples of the architectural achievements of the Zagwe Kingdom by way of monolithic constructions:",
+        options: [
+            "Bete Giyorgis",
+            "Bete Denagil",
+            "Bete Abba Libanos",
+            "Bete Merkoriwos",
+            "Bete Meskel"
+        ],
+        answer: 0,
+        englishExplanation: "⛪ Bete Giyorgis is one of the most famous achievements of the Zagwe period at Lalibela. It is a monolithic church, meaning that it was carved directly from a single block of living rock.",
+        amharicExplanation: "🪨 ቤተ ጊዮርጊስ በላሊበላ ከሚገኙት የዛጉዌ ዘመን ታላላቅ የስነ-ህንፃ ስራዎች አንዷ ናት። ሞኖሊቲክ ማለት ከአንድ የድንጋይ ቋት ውስጥ በቀጥታ ተፈልፍላ የተሰራች ማለት ነው።"
+    },
+
+    {
+        question: "The profound civilization of the ancient kingdom of Aksum was:",
+        options: [
+            "Stele",
+            "Urbanization",
+            "Indigenous alphabet",
+            "Calendar",
+            "All"
+        ],
+        answer: 4,
+        englishExplanation: "🏛️ Aksum had a highly developed civilization. Its achievements included enormous stone stelae, organized urban centers, an indigenous Ge'ez writing system, and a sophisticated calendar. Therefore, all the choices are correct.",
+        amharicExplanation: "📜 የአክሱም ስልጣኔ በጣም የዳበረ ነበር። ግዙፍ ሐውልቶችን መገንባት፣ የከተማ ልማት፣ የራሱ የግእዝ ጽሕፈት ስርዓት እና የዘመን አቆጣጠር ነበረው። ስለዚህ ሁሉም መልሶች ትክክል ናቸው።"
+    },
+
+    {
+        question: "What was one of the primary factors leading to the emergence of early states in Ethiopia and the Horn?",
+        options: [
+            "Religious unification",
+            "Development of sedentary agriculture",
+            "Trade with European powers",
+            "Use of iron tools exclusively for military purposes"
+        ],
+        answer: 1,
+        englishExplanation: "🌾 The development of sedentary agriculture allowed people to settle permanently and produce food surpluses. These surpluses supported population growth, specialized occupations, wealth accumulation, and eventually the development of centralized states.",
+        amharicExplanation: "🌱 የቋሚ ግብርና ልማት ሰዎች በቋሚነት እንዲሰፍሩና ከፍተኛ የምግብ ትርፍ እንዲያመርቱ አስችሏል። ይህም የህዝብ ቁጥር እንዲጨምር፣ የስራ ክፍፍል እንዲዳብር እና ሀብት እንዲከማች በማድረግ የተማከለ መንግስታት እንዲፈጠሩ አግዟል።"
+    },
+
+    {
+        question: "Which leader's expedition to Punt is the best-documented example of ancient Egyptian contact with this early state?",
+        options: [
+            "Pharaoh Sahure",
+            "Pharaoh Asosi",
+            "Queen Hatshepsut",
+            "Pharaoh Khufu"
+        ],
+        answer: 2,
+        englishExplanation: "🚢 Queen Hatshepsut's expedition to Punt is the best-documented Egyptian expedition to the region. Detailed reliefs at her temple at Deir el-Bahri show the journey and valuable goods such as incense, myrrh, gold, and ivory.",
+        amharicExplanation: "👸 ንግስት ሃትሼፕሱት ወደ ፑንት ያደረገችው ጉዞ በጣም በደንብ ከተመዘገቡት የጥንት ግብፅ ጉዞዎች አንዱ ነው። በዴር ኤል-ባህሪ ቤተመቅደስ ግድግዳዎች ላይ የጉዞውን ሂደትና እጣን፣ ከርቤ፣ ወርቅ እና የዝሆን ጥርስ ያሉ ሸቀጦችን የሚያሳዩ ምስሎች አሉ።"
+    },
+
+    {
+        question: "In early Ethiopian societies, what led to the replacement of priests by chiefs in managing the state?",
+        options: [
+            "Decline of religious influence",
+            "Shift from agriculture to trade",
+            "Increase in market-oriented production",
+            "Introduction of foreign military support"
+        ],
+        answer: 2,
+        englishExplanation: "💰 The increase in market-oriented production strengthened the economic and political importance of chiefs. As production and trade expanded, leaders who could organize resources, markets, and protection gained greater political authority.",
+        amharicExplanation: "🛒 ለገበያ የሚቀርብ ምርት መጨመሩ የአለቆችን ኢኮኖሚያዊና የፖለቲካ ስልጣን አጠናከረ። ምርትና ንግድ ሲስፋፋ ሀብትን፣ ገበያን እና ጥበቃን ማደራጀት የሚችሉ አለቆች የበለጠ የፖለቲካ ስልጣን ማግኘት ጀመሩ።"
+    },
+
+    {
+        question: "Which of the following geographic factors contributed to the strength and expansion of early states in Ethiopia and the Horn?",
+        options: [
+            "Proximity to the Sahara Desert",
+            "Control of international water bodies",
+            "Isolation from neighboring regions",
+            "Dense forestation providing natural defense"
+        ],
+        answer: 1,
+        englishExplanation: "🌊 Access to and control of important waterways such as the Red Sea helped early states participate in international trade. Aksum, for example, benefited greatly from its connection to Red Sea and Indian Ocean trade networks.",
+        amharicExplanation: "🚢 እንደ ቀይ ባህር ያሉ ዋና የውሃ መስመሮችን መቆጣጠር ቀደምት መንግስታት በዓለም አቀፍ ንግድ እንዲሳተፉ አስችሏቸዋል። ለምሳሌ አክሱም ከቀይ ባህርና ከህንድ ውቅያኖስ የንግድ መረቦች ጋር በመገናኘቱ ተጠቃሚ ነበር።"
+    },
+
+    {
+        question: "The kingdom of Punt was also known by which of the following designations, owing to the ritual significance of its exports?",
+        options: [
+            "Land of Gold",
+            "Kingdom of the Nile",
+            "Khebís of the Ta Netjeru (Land of the Gods)",
+            "The Land of Many Waters"
+        ],
+        answer: 2,
+        englishExplanation: "🌿 Punt was associated with the Egyptian expression 'Ta Netjeru,' meaning 'Land of the Gods.' This association was connected with the valuable ritual goods obtained from Punt, especially incense, myrrh, and aromatic products.",
+        amharicExplanation: "🕯️ ፑንት ከግብፃውያን 'ታ ኔትጀሩ' የሚለው እና 'የአማልክት ምድር' ማለት ከሚሆነው ስያሜ ጋር ይያያዝ ነበር። ይህም ከፑንት የሚገኙት እጣን፣ ከርቤ እና ሌሎች ሽታ ያላቸው ውድ ምርቶች በሃይማኖታዊ ሥርዓቶች የሚጠቀሙ በመሆናቸው ነው።"
+    },
+
+    {
+        question: "Which tool's introduction significantly improved agricultural efficiency and contributed to the rise of states in early Ethiopian societies?",
+        options: [
+            "Bronze sickles",
+            "Stick plows",
+            "Iron-tipped hoes",
+            "Ox-drawn plow"
+        ],
+        answer: 3,
+        englishExplanation: "🐂 The ox-drawn plow, known as the maresha, greatly improved farming efficiency. It enabled farmers to cultivate larger areas of land more effectively, increasing agricultural production and supporting the growth of larger political communities.",
+        amharicExplanation: "🌾 በበሬ የሚጎተተው ማረሻ የግብርና ስራን በእጅጉ አሻሽሏል። ገበሬዎች ሰፊ መሬትን በቀላሉ እንዲያርሱ በማስቻሉ የግብርና ምርት እንዲጨምርና ትላልቅ የፖለቲካ ማህበረሰቦችን ለመደገፍ አስችሏል።"
+    },
+
+    {
+        question: "What title did the kings of the Da'amat state use to signify their political and religious authority?",
+        options: [
+            "Pharaoh",
+            "Mukarib",
+            "Shaman",
+            "Negus"
+        ],
+        answer: 1,
+        englishExplanation: "👑 The rulers of Da'amat used the title 'Mukarib.' The title expressed a combination of political and religious authority and is also associated with ancient South Arabian political traditions.",
+        amharicExplanation: "⚖️ የዳዕማት ገዢዎች 'ሙካሪብ' የሚለውን ማዕረግ ይጠቀሙ ነበር። ይህ ማዕረግ የፖለቲካ ስልጣንን ከሃይማኖታዊ ስልጣን ጋር የሚያጣምር የገዢነት ሚናን ያመለክት ነበር።"
+    },
+
+    {
+        question: "Which ancient center in northern Ethiopia is noted for its early South Arabian trade connections and reached its zenith between 750 and 500 B.C.?",
+        options: [
+            "Aksum",
+            "Yeha",
+            "Hawulti Melazo",
+            "Addi-Seglemeni"
+        ],
+        answer: 1,
+        englishExplanation: "🏺 Yeha was an important ancient center in northern Ethiopia associated with the D'mt period. It had strong connections with South Arabia and became known for sophisticated stone construction, including the famous Great Temple.",
+        amharicExplanation: "🏛️ ይሓ በሰሜን ኢትዮጵያ ከዳማት ዘመን ጋር የተያያዘች ጥንታዊ ማዕከል ናት። ከደቡብ አረቢያ ጋር ጠንካራ የንግድ ግንኙነት ነበራት፣ እንዲሁም በተራቀቀ የድንጋይ ግንባታ እና በታላቁ ቤተመቅደሷ ትታወቃለች።"
+    },
+
+    {
+        question: "Which Red Sea port was central to Aksum's trade network, linking it to major trade routes across the Red Sea and Indian Ocean?",
+        options: [
+            "Adulis",
+            "Avalites",
+            "Malao",
+            "Serapion"
+        ],
+        answer: 0,
+        englishExplanation: "⚓ Adulis was the principal Red Sea port connected with Aksum. It served as an important gateway between the Aksumite interior and international trading networks across the Red Sea and Indian Ocean.",
+        amharicExplanation: "🌍 አዱሊስ ከአክሱም ጋር የተያያዘ ዋና የቀይ ባህር ወደብ ነበር። የአክሱምን ውስጣዊ አካባቢ ከቀይ ባህርና ከህንድ ውቅያኖስ ዓለም አቀፍ የንግድ መረቦች ጋር የሚያገናኝ ወሳኝ የንግድ መግቢያ ነበር።"
+    },
+
+    {
+        question: "What type of unique trading method was used by Aksumite merchants with the region of Sasu, according to the Periplus of the Erythraean Sea?",
+        options: [
+            "Barter trade",
+            "Silent trade",
+            "Market exchange",
+            "Caravan-based trade"
+        ],
+        answer: 1,
+        englishExplanation: "🤫 The Periplus of the Erythraean Sea describes a form of 'silent trade' between Aksumite merchants and the people of Sasu. Goods were exchanged without direct face-to-face negotiation.",
+        amharicExplanation: "🤝 የኤሪትራን ባህር ፔሪፕሉስ መሰረት የአክሱም ነጋዴዎች ከሳሱ አካባቢ ሰዎች ጋር 'ዝምታዊ ንግድ' ይጠቀሙ ነበር። በዚህ የንግድ ዘዴ ሁለቱ ወገኖች በቀጥታ ሳይደራደሩ እቃዎችን በመተው ይለዋወጡ ነበር።"
+    },
+
+    {
+        question: "During the reign of which Aksumite king did Byzantine Emperor Justinian assist in military action in the Arabian Peninsula?",
+        options: [
+            "Zoscales",
+            "Aphilas",
+            "Kaleb",
+            "Ezana"
+        ],
+        answer: 2,
+        englishExplanation: "🛡️ Byzantine Emperor Justinian supported King Kaleb of Aksum during the 6th century. Kaleb led an expedition across the Red Sea into Yemen against the Himyarite ruler Dhu-Nuwas, who had persecuted Christians.",
+        amharicExplanation: "⚔️ በ6ኛው ክፍለ ዘመን የባይዛንታይን ንጉስ ጀስቲኒያን ለአክሱም ንጉስ ካሌብ ድጋፍ አድርጓል። ካሌብ ክርስቲያኖችን ያሳደደውን የሂምያራይት ገዢ ዱ-ኑዋስን ለመዋጋት ቀይ ባህርን ተሻግሮ ወደ የመን ዘመቻ አድርጓል።"
+    },
+
+    {
+        question: "What led to the significant decline of the Aksumite state in the late seventh century?",
+        options: [
+            "Conquest by the Romans",
+            "Agricultural innovations",
+            "Arab-Muslim expansion and control of trade routes",
+            "Migration to the Ethiopian plateau"
+        ],
+        answer: 2,
+        englishExplanation: "📉 The expansion of Arab-Muslim powers changed control of important Red Sea trade routes. This weakened Aksum's international commercial connections and contributed significantly to its long-term decline.",
+        amharicExplanation: "📉 የአረብ-ሙስሊም ኃይሎች መስፋፋት በቀይ ባህር ላይ ያሉ ዋና የንግድ መስመሮችን ቁጥጥር ለወጠ። ይህም የአክሱምን ዓለም አቀፍ የንግድ ግንኙነት በማዳከም ለመንግስቱ ውድቀት ከፍተኛ አስተዋጽኦ አድርጓል።"
+    },
+
+    {
+        question: "What major event led to the rise of the Zagwe Dynasty in Ethiopia?",
+        options: [
+            "The fall of the Aksumite state",
+            "The establishment of the Ifat Sultanate",
+            "The conversion of Ethiopia to Christianity",
+            "The intervention of the Mamluk Empire"
+        ],
+        answer: 0,
+        englishExplanation: "🏰 The decline of the Aksumite state created conditions for a shift in political power. This eventually contributed to the emergence of the Zagwe Dynasty in the northern and central highlands.",
+        amharicExplanation: "🔄 የአክሱም መንግስት መዳከምና መውደቅ የፖለቲካ ስልጣን እንዲለዋወጥ ሁኔታ ፈጠረ። ይህም በመጨረሻ በሰሜንና በመካከለኛው ደጋማ አካባቢ የዛጉዌ ስርወ መንግስት እንዲነሳ አስተዋጽኦ አደረገ።"
+    },
+
+    {
+        question: "Who was the Agaw prince responsible for founding the Zagwe Dynasty through marriage and political takeover?",
+        options: [
+            "Lalibela",
+            "Yekuno-Amlak",
+            "Merra Teklehaimanot",
+            "Dil Na'od"
+        ],
+        answer: 2,
+        englishExplanation: "👤 Merra Teklehaimanot is traditionally identified as the Agaw prince associated with the establishment of the Zagwe Dynasty. His marriage to Masobe Worg, traditionally linked to the earlier ruling dynasty, helped provide a basis for his political claim.",
+        amharicExplanation: "👑 መርራ ተክለሃይማኖት ከዛጉዌ ስርወ መንግስት መመስረት ጋር የሚያያዝ የአገው መስፍን ነበር። ከመሶበ ወርቅ ጋር ያደረገው ጋብቻ ከቀድሞው የገዢዎች ስርወ መንግስት ጋር የፖለቲካ ግንኙነት እንዲኖረው አስችሎታል።"
+    },
+
+    {
+        question: "Why did the Zagwe Dynasty rulers construct churches based on the model of the Holy Lands?",
+        options: [
+            "To emulate Byzantine architecture",
+            "To create a local pilgrimage alternative",
+            "To attract European allies",
+            "To compete with the Islamic Sultanates"
+        ],
+        answer: 1,
+        englishExplanation: "🕍 The Zagwe rulers, especially King Lalibela, sought to create a sacred center in Ethiopia resembling the Holy Land. The churches of Lalibela provided Ethiopian Christians with an important local pilgrimage destination.",
+        amharicExplanation: "🙏 የዛጉዌ ገዢዎች፣ በተለይም ንጉስ ላሊበላ፣ በኢትዮጵያ ከቅዱሳን ምድሮች ጋር የሚመሳሰል ቅዱስ ማዕከል ለመፍጠር ፈለጉ። የላሊበላ አብያተ ክርስቲያናትም ለኢትዮጵያውያን ክርስቲያኖች የአካባቢ የጉዞ ቅዱስ ቦታ ሆኑ።"
+    },
+
+    {
+        question: "Which architectural style is Bete Giyorgis, one of the churches in Lalibela, known for?",
+        options: [
+            "Cave with interior decorations",
+            "Semi-hewn structure",
+            "Monolithic with cross-shaped design",
+            "Engraved with Sabean inscriptions"
+        ],
+        answer: 2,
+        englishExplanation: "✝️ Bete Giyorgis is famous for its monolithic architecture and distinctive cross-shaped design. The church was carved from a single block of living rock rather than being constructed by assembling separate stones.",
+        amharicExplanation: "🪨 ቤተ ጊዮርጊስ በሞኖሊቲክ የስነ-ህንፃ ዘይቤዋ እና በልዩ የመስቀል ቅርፅ አቀማመጧ ትታወቃለች። ቤተክርስቲያኗ የተለያዩ ድንጋዮችን በማገጣጠም ሳይሆን ከአንድ የድንጋይ ቋት ተፈልፍላ የተሰራች ናት።"
+    },
+
+    {
+        question: "Which religious text influenced the end of the Zagwe Dynasty by reinforcing the legitimacy claims of the 'Solomonic' Dynasty?",
+        options: [
+            "The Quran",
+            "Kebra-Negest (Glory of Kings)",
+            "The Torah",
+            "The Epic of Gilgamesh"
+        ],
+        answer: 1,
+        englishExplanation: "📖 The Kebra-Negest, meaning 'Glory of Kings,' became an important text in the tradition supporting Solomonic legitimacy. It presents a tradition connecting Ethiopian rulers with King Solomon and the Queen of Sheba, which was later used to strengthen claims to the throne.",
+        amharicExplanation: "📚 ክብረ ነገስት ማለት 'የነገስታት ክብር' ማለት ሲሆን፣ ከሰለሞናዊ ስርወ መንግስት ህጋዊነት ጋር የተያያዘ አስፈላጊ ጽሑፍ ነው። የኢትዮጵያ ገዢዎች ከንጉስ ሰለሞንና ከንግስት ሳባ ጋር የዘር ግንኙነት እንዳላቸው የሚያቀርበው ትርክት ለሰለሞናዊ የዙፋን ጥያቄ ድጋፍ ሰጥቷል።"
+    }];
 
 quizData["history"]["4"] = [
 
