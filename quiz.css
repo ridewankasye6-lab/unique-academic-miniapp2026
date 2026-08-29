@@ -1102,3 +1102,39 @@ body.admin-access img {
     }
 
 }
+.optionBtn {
+    position: relative;
+    padding-right: 65px;
+}
+
+.answer-status-icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+    line-height: 1;
+
+    pointer-events: none;
+}
+
+.optionBtn.wrong {
+    color: #b83a3a;
+    border-color: #e05252;
+    background: #fff1f1;
+}
+
+.optionBtn.correct {
+    color: #258a45;
+    border-color: #35b66a;
+    background: #eaf9ef;
+}
+
