@@ -1678,280 +1678,349 @@
 
     }
 
+// =====================================================
+// CHECK ANSWER
+// =====================================================
 
-    // =================================================
-    // CHECK ANSWER
-    // =================================================
+function checkAnswer(
+    q,
+    selectedIndex,
+    questionIndex,
+    options,
+    explanationBox,
+    englishExplanation,
+    amharicExplanation,
+    questionCard
+) {
 
-    function checkAnswer(
-        q,
-        selectedIndex,
-        questionIndex,
-        options,
-        explanationBox,
-        englishExplanation,
-        amharicExplanation,
-        questionCard
+    // ---------------------------------------------
+    // If this question has already been answered
+    // correctly, do nothing.
+    // ---------------------------------------------
+
+    if (
+        userAnswers[questionIndex] !== null
     ) {
-
-        // =============================================
-        // SAFETY CHECK
-        // =============================================
-
-        if (
-            userAnswers[questionIndex] !==
-            null
-        ) {
-
-            return;
-
-        }
+        return;
+    }
 
 
-        const correctAnswer =
-            getCorrectAnswer(
-                q
-            );
+    const correctAnswer =
+        getCorrectAnswer(q);
 
 
-        const buttons =
-            options.querySelectorAll(
-                ".optionBtn"
-            );
-
-
-        const isCorrect =
-            selectedIndex ===
-            correctAnswer;
-
-
-        // =============================================
-        // IMPORTANT FIX
-        //
-        // REMOVE OLD WRONG STATE FIRST
-        //
-        // This makes:
-        //
-        // A ❌
-        //
-        // then B is tapped:
-        //
-        // A normal
-        // B ❌
-        //
-        // then C:
-        //
-        // A normal
-        // B normal
-        // C ❌
-        // =============================================
-
-        buttons.forEach(
-            button => {
-
-                button.classList.remove(
-                    "wrong"
-                );
-
-                button.classList.remove(
-                    "correct"
-                );
-
-                /*
-                 * Make sure every option becomes
-                 * clickable again after a wrong
-                 * attempt.
-                 */
-
-                button.disabled =
-                    false;
-
-            }
+    const buttons =
+        Array.from(
+            options.querySelectorAll(".optionBtn")
         );
 
 
-        // =============================================
-        // REMOVE OLD MOTIVATIONAL MESSAGE
-        // =============================================
+    const selectedButton =
+        buttons[selectedIndex];
 
-        const oldFeedback =
-            questionCard.querySelector(
-                ".unique-answer-feedback"
+
+    // ---------------------------------------------
+    // REMOVE ALL PREVIOUS WRONG STATES
+    // ---------------------------------------------
+
+    buttons.forEach(button => {
+
+        button.classList.remove(
+            "wrong",
+            "correct"
+        );
+
+        button.disabled = false;
+
+        const oldIcon =
+            button.querySelector(
+                ".answer-status-icon"
             );
 
-
-        if (
-            oldFeedback
-        ) {
-
-            oldFeedback.remove();
-
+        if (oldIcon) {
+            oldIcon.remove();
         }
 
-
-        // =============================================
-        // WRONG ANSWER
-        // =============================================
-
-        if (
-            !isCorrect
-        ) {
-
-            /*
-             * Count this as a wrong attempt.
-             */
-
-            wrongAnswers++;
+    });
 
 
-            /*
-             * IMPORTANT:
-             *
-             * Do NOT put the wrong answer
-             * into userAnswers.
-             *
-             * The student must be allowed
-             * to try another answer.
-             */
+    // ---------------------------------------------
+    // REMOVE OLD FEEDBACK
+    // ---------------------------------------------
 
-            userAnswers[questionIndex] =
-                null;
+    const oldFeedback =
+        questionCard.querySelector(
+            ".unique-answer-feedback"
+        );
 
-
-            /*
-             * Remember ONLY the latest wrong
-             * option.
-             */
-
-            currentWrongAnswers[questionIndex] =
-                selectedIndex;
+    if (oldFeedback) {
+        oldFeedback.remove();
+    }
 
 
-            /*
-             * Show ❌ / red ONLY on the
-             * currently selected wrong option.
-             */
+    // ---------------------------------------------
+    // REMOVE OLD EXPLANATION
+    // ---------------------------------------------
 
-            buttons.forEach(
-                (
-                    button,
-                    index
-                ) => {
+    explanationBox.style.display =
+        "none";
 
-                    if (
-                        index ===
-                        selectedIndex
-                    ) {
 
-                        button.classList.add(
-                            "wrong"
-                        );
+    // ---------------------------------------------
+    // CHECK RESULT
+    // ---------------------------------------------
 
-                    }
+    const isCorrect =
+        selectedIndex === correctAnswer;
 
-                }
+
+    // =================================================
+    // WRONG ANSWER
+    // =================================================
+
+    if (!isCorrect) {
+
+        // ---------------------------------------------
+        // Show selected answer as WRONG
+        // ---------------------------------------------
+
+        selectedButton.classList.add(
+            "wrong"
+        );
+
+
+        // ---------------------------------------------
+        // ADD ❌ ICON
+        // ---------------------------------------------
+
+        const wrongIcon =
+            document.createElement("span");
+
+
+        wrongIcon.className =
+            "answer-status-icon";
+
+
+        wrongIcon.textContent =
+            "❌";
+
+
+        selectedButton.appendChild(
+            wrongIcon
+        );
+
+
+        // ---------------------------------------------
+        // DO NOT SAVE WRONG ANSWER
+        //
+        // This is VERY IMPORTANT.
+        // The student must be able to try again.
+        // ---------------------------------------------
+
+        userAnswers[questionIndex] =
+            null;
+
+
+        // ---------------------------------------------
+        // WRONG MESSAGE
+        // ---------------------------------------------
+
+        const feedbackMessage =
+            getRandomMessage(
+                incorrectMessages
             );
 
 
-            /*
-             * Create ONE wrong feedback.
-             */
-
-            const feedbackBox =
-                createAnswerFeedback(
-                    false,
-                    getRandomMessage(
-                        incorrectMessages
-                    )
-                );
-
-
-            /*
-             * Put it after the options.
-             */
-
-            questionCard.insertBefore(
-                feedbackBox,
-                explanationBox
+        const feedbackBox =
+            createAnswerFeedback(
+                false,
+                feedbackMessage
             );
 
 
-            /*
-             * Keep explanation available,
-             * but do not permanently lock it.
-             */
-
-            englishExplanation.textContent =
-                getEnglishExplanation(
-                    q
-                );
+        questionCard.insertBefore(
+            feedbackBox,
+            explanationBox
+        );
 
 
-            amharicExplanation.textContent =
-                getAmharicExplanation(
-                    q
-                );
+        // ---------------------------------------------
+        // Show explanation temporarily
+        // ---------------------------------------------
+
+        englishExplanation.textContent =
+            getEnglishExplanation(q);
 
 
-            /*
-             * You can keep the explanation
-             * visible after a wrong attempt.
-             */
-
-            explanationBox.style.display =
-                "block";
+        amharicExplanation.textContent =
+            getAmharicExplanation(q);
 
 
-            /*
-             * Save progress.
-             *
-             * The question is NOT counted
-             * as answered because it is still
-             * being attempted.
-             */
-
-            saveChapterProgress();
+        explanationBox.style.display =
+            "block";
 
 
-            /*
-             * Scroll to the feedback.
-             */
+        // ---------------------------------------------
+        // DO NOT DISABLE OPTIONS
+        // ---------------------------------------------
 
-            setTimeout(
-                () => {
+        buttons.forEach(button => {
 
-                    try {
+            button.disabled = false;
 
-                        feedbackBox.scrollIntoView({
-
-                            behavior:
-                                "smooth",
-
-                            block:
-                                "nearest"
-
-                        });
-
-                    }
-
-                    catch (error) {
-
-                        console.warn(
-                            "Feedback scroll unavailable:",
-                            error
-                        );
-
-                    }
-
-                },
-                100
-            );
+        });
 
 
-            return;
+        // ---------------------------------------------
+        // Make sure previous wrong state
+        // disappears when another answer is tapped.
+        // ---------------------------------------------
 
-        }
+        setTimeout(() => {
 
+            if (
+                feedbackBox &&
+                feedbackBox.parentNode
+            ) {
+
+                feedbackBox.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest"
+                });
+
+            }
+
+        }, 100);
+
+
+        return;
+    }
+
+
+    // =================================================
+    // CORRECT ANSWER
+    // =================================================
+
+    // ---------------------------------------------
+    // SAVE ONLY THE CORRECT ANSWER
+    // ---------------------------------------------
+
+    userAnswers[questionIndex] =
+        selectedIndex;
+
+
+    // ---------------------------------------------
+    // INCREASE SCORE
+    // ---------------------------------------------
+
+    score++;
+
+
+    // ---------------------------------------------
+    // SHOW GREEN CORRECT BUTTON
+    // ---------------------------------------------
+
+    selectedButton.classList.add(
+        "correct"
+    );
+
+
+    // ---------------------------------------------
+    // ADD ✅ ICON
+    // ---------------------------------------------
+
+    const correctIcon =
+        document.createElement("span");
+
+
+    correctIcon.className =
+        "answer-status-icon";
+
+
+    correctIcon.textContent =
+        "✅";
+
+
+    selectedButton.appendChild(
+        correctIcon
+    );
+
+
+    // ---------------------------------------------
+    // DISABLE ALL OPTIONS
+    // ---------------------------------------------
+
+    buttons.forEach(button => {
+
+        button.disabled = true;
+
+    });
+
+
+    // ---------------------------------------------
+    // SAVE PROGRESS
+    // ---------------------------------------------
+
+    saveChapterProgress();
+
+
+    // ---------------------------------------------
+    // CORRECT MESSAGE
+    // ---------------------------------------------
+
+    const feedbackMessage =
+        getRandomMessage(
+            correctMessages
+        );
+
+
+    const feedbackBox =
+        createAnswerFeedback(
+            true,
+            feedbackMessage
+        );
+
+
+    questionCard.insertBefore(
+        feedbackBox,
+        explanationBox
+    );
+
+
+    // ---------------------------------------------
+    // SHOW EXPLANATION
+    // ---------------------------------------------
+
+    englishExplanation.textContent =
+        getEnglishExplanation(q);
+
+
+    amharicExplanation.textContent =
+        getAmharicExplanation(q);
+
+
+    explanationBox.style.display =
+        "block";
+
+
+    // ---------------------------------------------
+    // SCROLL TO FEEDBACK
+    // ---------------------------------------------
+
+    setTimeout(() => {
+
+        feedbackBox.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+
+    }, 100);
+
+}
+    
+
+
+            
 
         // =============================================
         // CORRECT ANSWER
