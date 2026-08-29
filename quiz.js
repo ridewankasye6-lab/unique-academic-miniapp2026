@@ -1,6 +1,7 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
 // 5 QUESTIONS PER PAGE
+// + MOTIVATIONAL ANSWER FEEDBACK
 // =====================================================
 
 (function () {
@@ -158,7 +159,7 @@
     // =================================================
     // ANSWER STATE
     //
-    // null = not answered
+    // null  = not answered
     // number = selected option index
     // =================================================
 
@@ -187,12 +188,459 @@
 
 
     // =================================================
+    // MOTIVATIONAL MESSAGES
+    // =================================================
+
+    const correctMessages = [
+
+        "🎉 Amazing work! You are setting the bar 🔝",
+
+        "🚀 You are unstoppable! Great job! 👏",
+
+        "🌟 You are doing great! Well done! ✨",
+
+        "🏆 Excellent job! You got it right! 👍",
+
+        "🙌 Well done! That’s the correct answer! 🎯",
+
+        "🔥 Great going, you answered correctly! 💯",
+
+        "⚡ Awesome work! You nailed it! 🔨",
+
+        "⭐ You are becoming Unique! 💎",
+
+        "🌈 You are doing fantastic! 💪",
+
+        "🎊 Great! You did it right! ✅"
+
+    ];
+
+
+    const incorrectMessages = [
+
+        "🌱 You are on the right path! Just a little more effort! 💪",
+
+        "🔍 This response is not right. Please review and try again! 🔄",
+
+        "🧩 Mistakes are part of learning! Keep at it and you will succeed! 🌟",
+
+        "🎈 Keep your chin up! Every mistake is a step toward mastery! 🧗‍♂️",
+
+        "📖 While this answer is incorrect, review your notes! ✍️",
+
+        "💡 Each attempt strengthens your understanding! 🧠",
+
+        "🤝 Not the right answer, keep learning and trying! 🎯",
+
+        "🧐 You are close! Take another look and keep learning! 🔍"
+
+    ];
+
+
+    // =================================================
+    // ADD FEEDBACK ANIMATION CSS
+    //
+    // Added safely through JavaScript so you do not
+    // have to replace your existing quiz.css.
+    // =================================================
+
+    function addFeedbackStyles() {
+
+        if (
+            document.getElementById(
+                "uniqueAcademicFeedbackStyles"
+            )
+        ) {
+
+            return;
+
+        }
+
+
+        const style =
+            document.createElement(
+                "style"
+            );
+
+
+        style.id =
+            "uniqueAcademicFeedbackStyles";
+
+
+        style.textContent = `
+
+            /* =========================================
+               ANSWER FEEDBACK
+            ========================================= */
+
+            .unique-answer-feedback {
+
+                width: 100%;
+
+                box-sizing: border-box;
+
+                margin: 18px 0 16px;
+
+                padding: 15px 18px;
+
+                border-radius: 16px;
+
+                font-size: 17px;
+
+                font-weight: 700;
+
+                line-height: 1.5;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+                text-align: center;
+
+                transform-origin: center;
+
+                animation:
+                    uniqueFeedbackPop
+                    0.55s
+                    cubic-bezier(
+                        0.175,
+                        0.885,
+                        0.32,
+                        1.275
+                    )
+                    both;
+
+            }
+
+
+            /* =========================================
+               CORRECT FEEDBACK
+            ========================================= */
+
+            .unique-answer-feedback.correct-feedback {
+
+                background:
+                    linear-gradient(
+                        135deg,
+                        #edf9ef,
+                        #f7fff8
+                    );
+
+                color:
+                    #258a45;
+
+                border:
+                    1px solid
+                    rgba(
+                        40,
+                        180,
+                        80,
+                        0.25
+                    );
+
+                box-shadow:
+                    0 6px 18px
+                    rgba(
+                        40,
+                        180,
+                        80,
+                        0.12
+                    );
+
+            }
+
+
+            /* =========================================
+               INCORRECT FEEDBACK
+            ========================================= */
+
+            .unique-answer-feedback.incorrect-feedback {
+
+                background:
+                    linear-gradient(
+                        135deg,
+                        #fff4f4,
+                        #fffafa
+                    );
+
+                color:
+                    #d93c3c;
+
+                border:
+                    1px solid
+                    rgba(
+                        220,
+                        60,
+                        60,
+                        0.22
+                    );
+
+                box-shadow:
+                    0 6px 18px
+                    rgba(
+                        220,
+                        60,
+                        60,
+                        0.10
+                    );
+
+            }
+
+
+            /* =========================================
+               FEEDBACK ICON / TEXT
+            ========================================= */
+
+            .unique-feedback-text {
+
+                display: block;
+
+                width: 100%;
+
+            }
+
+
+            /* =========================================
+               MAIN POP ANIMATION
+            ========================================= */
+
+            @keyframes uniqueFeedbackPop {
+
+                0% {
+
+                    opacity: 0;
+
+                    transform:
+                        translateY(12px)
+                        scale(0.92);
+
+                }
+
+                55% {
+
+                    opacity: 1;
+
+                    transform:
+                        translateY(-3px)
+                        scale(1.02);
+
+                }
+
+                100% {
+
+                    opacity: 1;
+
+                    transform:
+                        translateY(0)
+                        scale(1);
+
+                }
+
+            }
+
+
+            /* =========================================
+               SMALL MOBILE DEVICES
+            ========================================= */
+
+            @media (max-width: 480px) {
+
+                .unique-answer-feedback {
+
+                    font-size: 15px;
+
+                    padding:
+                        13px
+                        14px;
+
+                    border-radius:
+                        14px;
+
+                }
+
+            }
+
+        `;
+
+
+        document.head.appendChild(
+            style
+        );
+
+    }
+
+
+    addFeedbackStyles();
+
+
+    // =================================================
+    // GET RANDOM MESSAGE
+    // =================================================
+
+    function getRandomMessage(
+        messages
+    ) {
+
+        if (
+            !Array.isArray(messages) ||
+            messages.length === 0
+        ) {
+
+            return "";
+
+        }
+
+
+        const randomIndex =
+            Math.floor(
+                Math.random() *
+                messages.length
+            );
+
+
+        return messages[randomIndex];
+
+    }
+
+
+    // =================================================
+    // CREATE ANSWER FEEDBACK
+    // =================================================
+
+    function createAnswerFeedback(
+        isCorrect,
+        message
+    ) {
+
+        const feedback =
+            document.createElement(
+                "div"
+            );
+
+
+        feedback.className =
+            "unique-answer-feedback";
+
+
+        if (
+            isCorrect
+        ) {
+
+            feedback.classList.add(
+                "correct-feedback"
+            );
+
+        }
+
+        else {
+
+            feedback.classList.add(
+                "incorrect-feedback"
+            );
+
+        }
+
+
+        const feedbackText =
+            document.createElement(
+                "span"
+            );
+
+
+        feedbackText.className =
+            "unique-feedback-text";
+
+
+        feedbackText.textContent =
+            message;
+
+
+        feedback.appendChild(
+            feedbackText
+        );
+
+
+        return feedback;
+
+    }
+
+
+    // =================================================
+    // GET STORED FEEDBACK MESSAGE
+    // =================================================
+
+    function getFeedbackMessage(
+        questionIndex
+    ) {
+
+        const answer =
+            userAnswers[questionIndex];
+
+
+        if (
+            answer === null ||
+            typeof answer === "undefined"
+        ) {
+
+            return null;
+
+        }
+
+
+        const q =
+            questions[questionIndex];
+
+
+        const correctAnswer =
+            getCorrectAnswer(
+                q
+            );
+
+
+        const isCorrect =
+            answer ===
+            correctAnswer;
+
+
+        /*
+         * We do not save the exact random message
+         * inside userAnswers.
+         *
+         * A fresh motivational message is therefore
+         * selected when an answered question is shown
+         * again.
+         */
+
+        return {
+
+            correct:
+                isCorrect,
+
+            message:
+                getRandomMessage(
+                    isCorrect
+                        ? correctMessages
+                        : incorrectMessages
+                )
+
+        };
+
+    }
+
+
+    // =================================================
     // FORMAT SUBJECT NAME
     // =================================================
 
-    function formatSubjectName(value) {
+    function formatSubjectName(
+        value
+    ) {
 
-        if (!value) {
+        if (
+            !value
+        ) {
 
             return "Unknown Subject";
 
@@ -217,9 +665,13 @@
     // FORMAT CHAPTER
     // =================================================
 
-    function formatChapter(value) {
+    function formatChapter(
+        value
+    ) {
 
-        if (!value) {
+        if (
+            !value
+        ) {
 
             return "Unknown Chapter";
 
@@ -267,7 +719,9 @@
     // NORMALIZE SUBJECT KEY
     // =================================================
 
-    function normalizeSubjectKey(value) {
+    function normalizeSubjectKey(
+        value
+    ) {
 
         return String(
             value || ""
@@ -327,8 +781,9 @@
 
 
         /*
-         * Progress percentage is based on
-         * CORRECT ANSWERS / TOTAL QUESTIONS.
+         * Progress percentage is based on:
+         *
+         * CORRECT ANSWERS / TOTAL QUESTIONS
          *
          * Example:
          *
@@ -399,8 +854,8 @@
 
 
             /*
-             * Tell the chapter-page progress
-             * system that the progress changed.
+             * Tell chapter-page progress
+             * system that progress changed.
              */
 
             window.dispatchEvent(
@@ -432,10 +887,6 @@
     // =================================================
 
     function findSubjectData() {
-
-        /*
-         * First try the exact URL subject.
-         */
 
         const exactKey =
             normalizeSubjectKey(
@@ -698,7 +1149,9 @@
     // GET ENGLISH EXPLANATION
     // =================================================
 
-    function getEnglishExplanation(q) {
+    function getEnglishExplanation(
+        q
+    ) {
 
         if (
             q &&
@@ -730,7 +1183,9 @@
     // GET AMHARIC EXPLANATION
     // =================================================
 
-    function getAmharicExplanation(q) {
+    function getAmharicExplanation(
+        q
+    ) {
 
         if (
             q &&
@@ -762,7 +1217,9 @@
     // GET QUESTION OPTIONS
     // =================================================
 
-    function getQuestionOptions(q) {
+    function getQuestionOptions(
+        q
+    ) {
 
         if (
             q &&
@@ -797,7 +1254,9 @@
     // GET CORRECT ANSWER
     // =================================================
 
-    function getCorrectAnswer(q) {
+    function getCorrectAnswer(
+        q
+    ) {
 
         /*
          * Existing quiz data uses:
@@ -988,6 +1447,38 @@
             getQuestionOptions(
                 q
             );
+
+
+        // =============================================
+        // MOTIVATIONAL FEEDBACK
+        // =============================================
+
+        let feedbackBox =
+            null;
+
+
+        /*
+         * If this question was already answered,
+         * recreate its motivational message.
+         */
+
+        const storedFeedback =
+            getFeedbackMessage(
+                index
+            );
+
+
+        if (
+            storedFeedback
+        ) {
+
+            feedbackBox =
+                createAnswerFeedback(
+                    storedFeedback.correct,
+                    storedFeedback.message
+                );
+
+        }
 
 
         // =============================================
@@ -1207,6 +1698,10 @@
                     }
 
 
+                    /*
+                     * Show explanation.
+                     */
+
                     explanationBox.style.display =
                         "block";
 
@@ -1255,7 +1750,8 @@
                             options,
                             explanationBox,
                             englishExplanation,
-                            amharicExplanation
+                            amharicExplanation,
+                            questionCard
                         );
 
                     }
@@ -1289,6 +1785,22 @@
         );
 
 
+        /*
+         * Feedback goes directly after the options
+         * and before the explanation.
+         */
+
+        if (
+            feedbackBox
+        ) {
+
+            questionCard.appendChild(
+                feedbackBox
+            );
+
+        }
+
+
         questionCard.appendChild(
             explanationBox
         );
@@ -1312,7 +1824,8 @@
         options,
         explanationBox,
         englishExplanation,
-        amharicExplanation
+        amharicExplanation,
+        questionCard
     ) {
 
         /*
@@ -1350,12 +1863,20 @@
 
 
         // =============================================
+        // DETERMINE RESULT
+        // =============================================
+
+        const isCorrect =
+            selectedIndex ===
+            correctAnswer;
+
+
+        // =============================================
         // COUNT ANSWER
         // =============================================
 
         if (
-            selectedIndex ===
-            correctAnswer
+            isCorrect
         ) {
 
             score++;
@@ -1407,7 +1928,7 @@
 
 
                 /*
-                 * Show the selected wrong answer.
+                 * Show selected wrong answer.
                  */
 
                 if (
@@ -1424,6 +1945,51 @@
                 }
 
             }
+        );
+
+
+        // =============================================
+        // CREATE MOTIVATIONAL MESSAGE
+        // =============================================
+
+        const feedbackMessage =
+            getRandomMessage(
+                isCorrect
+                    ? correctMessages
+                    : incorrectMessages
+            );
+
+
+        const feedbackBox =
+            createAnswerFeedback(
+                isCorrect,
+                feedbackMessage
+            );
+
+
+        /*
+         * Put motivational feedback between
+         * options and explanation.
+         */
+
+        const existingFeedback =
+            questionCard.querySelector(
+                ".unique-answer-feedback"
+            );
+
+
+        if (
+            existingFeedback
+        ) {
+
+            existingFeedback.remove();
+
+        }
+
+
+        questionCard.insertBefore(
+            feedbackBox,
+            explanationBox
         );
 
 
@@ -1445,6 +2011,41 @@
 
         explanationBox.style.display =
             "block";
+
+
+        // =============================================
+        // SMALL ANIMATION SCROLL
+        // =============================================
+
+        setTimeout(
+            () => {
+
+                try {
+
+                    feedbackBox.scrollIntoView({
+
+                        behavior:
+                            "smooth",
+
+                        block:
+                            "nearest"
+
+                    });
+
+                }
+
+                catch (error) {
+
+                    console.warn(
+                        "Feedback scroll unavailable:",
+                        error
+                    );
+
+                }
+
+            },
+            120
+        );
 
     }
 
@@ -1715,9 +2316,11 @@
 
         completionMessage.scrollIntoView({
 
-            behavior: "smooth",
+            behavior:
+                "smooth",
 
-            block: "center"
+            block:
+                "center"
 
         });
 
@@ -1758,15 +2361,7 @@
         () => {
 
             /*
-             * IMPORTANT:
-             *
-             * The old code removed localStorage
-             * when the page loaded.
-             *
-             * That was wrong.
-             *
-             * Now the progress is reset ONLY
-             * when this button is clicked.
+             * Reset saved chapter progress.
              */
 
             try {
@@ -1824,16 +2419,14 @@
 
 
             /*
-             * Save the completely reset state.
+             * Save completely reset state.
              *
-             * This makes the chapter card return to:
+             * Chapter card becomes:
              *
              * 0%
-             *
+             * BLUE
              * 0 correct
              * 0 wrong
-             *
-             * Not answered yet.
              */
 
             saveChapterProgress();
@@ -1902,9 +2495,11 @@
 
             window.scrollTo({
 
-                top: 0,
+                top:
+                    0,
 
-                behavior: "smooth"
+                behavior:
+                    "smooth"
 
             });
 
