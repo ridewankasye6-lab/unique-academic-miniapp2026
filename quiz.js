@@ -1,6 +1,9 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
 // 5 QUESTIONS PER PAGE
+// + RETRY UNTIL CORRECT
+// + X FOR WRONG ANSWERS
+// + ✓ FOR CORRECT ANSWERS
 // + MOTIVATIONAL ANSWER FEEDBACK
 // =====================================================
 
@@ -159,11 +162,37 @@
     // =================================================
     // ANSWER STATE
     //
-    // null  = not answered
-    // number = selected option index
+    // null  = question not completed
+    // number = correct answer index
+    //
+    // IMPORTANT:
+    // A WRONG answer is NOT stored here.
+    // This allows the student to keep trying.
     // =================================================
 
     let userAnswers = [];
+
+
+    // =================================================
+    // WRONG ATTEMPTS
+    //
+    // Each question has a Set containing the
+    // option indexes that the student answered wrongly.
+    // =================================================
+
+    let wrongAttempts = [];
+
+
+    // =================================================
+    // LAST ANSWER FEEDBACK
+    //
+    // Used to remember the latest feedback when
+    // moving between quiz pages.
+    // =================================================
+
+    let lastAttemptCorrect = [];
+
+    let feedbackMessages = [];
 
 
     // =================================================
@@ -174,7 +203,7 @@
 
 
     // =================================================
-    // WRONG ANSWERS
+    // WRONG ANSWERS / ATTEMPTS
     // =================================================
 
     let wrongAnswers = 0;
@@ -218,30 +247,27 @@
 
     const incorrectMessages = [
 
-        "🌱 You are on the right path! Just a little more effort! 💪",
+        "🌱 Keep trying! You are learning step by step! 💪",
 
-        "🔍 This response is not right. Please review and try again! 🔄",
+        "❌ Not quite! Try another answer! 🔄",
 
-        "🧩 Mistakes are part of learning! Keep at it and you will succeed! 🌟",
+        "🧩 Mistakes are part of learning! Keep going! 🌟",
 
-        "🎈 Keep your chin up! Every mistake is a step toward mastery! 🧗‍♂️",
+        "🎈 Don't give up! Try again and find the correct answer! 🧗‍♂️",
 
-        "📖 While this answer is incorrect, review your notes! ✍️",
+        "📖 Review the choices carefully and try again! ✍️",
 
-        "💡 Each attempt strengthens your understanding! 🧠",
+        "💡 Every attempt strengthens your understanding! 🧠",
 
-        "🤝 Not the right answer, keep learning and trying! 🎯",
+        "🤝 Not the right answer yet. Keep trying! 🎯",
 
-        "🧐 You are close! Take another look and keep learning! 🔍"
+        "🧐 Take another look and choose again! 🔍"
 
     ];
 
 
     // =================================================
-    // ADD FEEDBACK ANIMATION CSS
-    //
-    // Added safely through JavaScript so you do not
-    // have to replace your existing quiz.css.
+    // ADD FEEDBACK + ANSWER ICON CSS
     // =================================================
 
     function addFeedbackStyles() {
@@ -270,7 +296,184 @@
         style.textContent = `
 
             /* =========================================
-               ANSWER FEEDBACK
+               ANSWER BUTTON BASE
+            ========================================= */
+
+            .optionBtn {
+
+                position: relative;
+
+            }
+
+
+            /* =========================================
+               WRONG ANSWER
+            ========================================= */
+
+            .optionBtn.wrong {
+
+                position: relative;
+
+                background:
+                    #fff1f1 !important;
+
+                color:
+                    #b83a3a !important;
+
+                border-color:
+                    #e34b4b !important;
+
+                box-shadow:
+                    0 4px 12px
+                    rgba(
+                        220,
+                        60,
+                        60,
+                        0.12
+                    ) !important;
+
+            }
+
+
+            /* =========================================
+               WRONG X ICON
+            ========================================= */
+
+            .optionBtn.wrong::after {
+
+                content:
+                    "✕";
+
+                position: absolute;
+
+                right: 18px;
+
+                top: 50%;
+
+                transform:
+                    translateY(-50%);
+
+                width: 30px;
+
+                height: 30px;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+                border-radius: 50%;
+
+                background:
+                    #e34b4b;
+
+                color:
+                    white;
+
+                font-size: 18px;
+
+                font-weight: 900;
+
+                line-height: 1;
+
+                box-shadow:
+                    0 3px 8px
+                    rgba(
+                        220,
+                        60,
+                        60,
+                        0.25
+                    );
+
+            }
+
+
+            /* =========================================
+               CORRECT ANSWER
+            ========================================= */
+
+            .optionBtn.correct {
+
+                position: relative;
+
+                background:
+                    #eaf9ef !important;
+
+                color:
+                    #218a47 !important;
+
+                border-color:
+                    #2eb463 !important;
+
+                box-shadow:
+                    0 5px 15px
+                    rgba(
+                        40,
+                        180,
+                        80,
+                        0.15
+                    ) !important;
+
+            }
+
+
+            /* =========================================
+               CORRECT CHECK ICON
+            ========================================= */
+
+            .optionBtn.correct::after {
+
+                content:
+                    "✓";
+
+                position: absolute;
+
+                right: 18px;
+
+                top: 50%;
+
+                transform:
+                    translateY(-50%);
+
+                width: 30px;
+
+                height: 30px;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+                border-radius: 50%;
+
+                background:
+                    #2eb463;
+
+                color:
+                    white;
+
+                font-size: 18px;
+
+                font-weight: 900;
+
+                line-height: 1;
+
+                box-shadow:
+                    0 3px 8px
+                    rgba(
+                        40,
+                        180,
+                        80,
+                        0.25
+                    );
+
+            }
+
+
+            /* =========================================
+               WRONG ANSWER FEEDBACK
             ========================================= */
 
             .unique-answer-feedback {
@@ -279,31 +482,42 @@
 
                 box-sizing: border-box;
 
-                margin: 18px 0 16px;
+                margin:
+                    18px 0 16px;
 
-                padding: 15px 18px;
+                padding:
+                    15px 18px;
 
-                border-radius: 16px;
+                border-radius:
+                    16px;
 
-                font-size: 17px;
+                font-size:
+                    17px;
 
-                font-weight: 700;
+                font-weight:
+                    700;
 
-                line-height: 1.5;
+                line-height:
+                    1.5;
 
-                display: flex;
+                display:
+                    flex;
 
-                align-items: center;
+                align-items:
+                    center;
 
-                justify-content: center;
+                justify-content:
+                    center;
 
-                text-align: center;
+                text-align:
+                    center;
 
-                transform-origin: center;
+                transform-origin:
+                    center;
 
                 animation:
                     uniqueFeedbackPop
-                    0.55s
+                    0.45s
                     cubic-bezier(
                         0.175,
                         0.885,
@@ -390,47 +604,52 @@
 
 
             /* =========================================
-               FEEDBACK ICON / TEXT
+               FEEDBACK TEXT
             ========================================= */
 
             .unique-feedback-text {
 
-                display: block;
+                display:
+                    block;
 
-                width: 100%;
+                width:
+                    100%;
 
             }
 
 
             /* =========================================
-               MAIN POP ANIMATION
+               FEEDBACK ANIMATION
             ========================================= */
 
             @keyframes uniqueFeedbackPop {
 
                 0% {
 
-                    opacity: 0;
+                    opacity:
+                        0;
 
                     transform:
-                        translateY(12px)
-                        scale(0.92);
+                        translateY(10px)
+                        scale(0.94);
 
                 }
 
                 55% {
 
-                    opacity: 1;
+                    opacity:
+                        1;
 
                     transform:
-                        translateY(-3px)
+                        translateY(-2px)
                         scale(1.02);
 
                 }
 
                 100% {
 
-                    opacity: 1;
+                    opacity:
+                        1;
 
                     transform:
                         translateY(0)
@@ -442,18 +661,36 @@
 
 
             /* =========================================
-               SMALL MOBILE DEVICES
+               MOBILE
             ========================================= */
 
             @media (max-width: 480px) {
 
+                .optionBtn.wrong::after,
+                .optionBtn.correct::after {
+
+                    right:
+                        12px;
+
+                    width:
+                        27px;
+
+                    height:
+                        27px;
+
+                    font-size:
+                        16px;
+
+                }
+
+
                 .unique-answer-feedback {
 
-                    font-size: 15px;
+                    font-size:
+                        15px;
 
                     padding:
-                        13px
-                        14px;
+                        13px 14px;
 
                     border-radius:
                         14px;
@@ -563,69 +800,6 @@
 
 
         return feedback;
-
-    }
-
-
-    // =================================================
-    // GET STORED FEEDBACK MESSAGE
-    // =================================================
-
-    function getFeedbackMessage(
-        questionIndex
-    ) {
-
-        const answer =
-            userAnswers[questionIndex];
-
-
-        if (
-            answer === null ||
-            typeof answer === "undefined"
-        ) {
-
-            return null;
-
-        }
-
-
-        const q =
-            questions[questionIndex];
-
-
-        const correctAnswer =
-            getCorrectAnswer(
-                q
-            );
-
-
-        const isCorrect =
-            answer ===
-            correctAnswer;
-
-
-        /*
-         * We do not save the exact random message
-         * inside userAnswers.
-         *
-         * A fresh motivational message is therefore
-         * selected when an answered question is shown
-         * again.
-         */
-
-        return {
-
-            correct:
-                isCorrect,
-
-            message:
-                getRandomMessage(
-                    isCorrect
-                        ? correctMessages
-                        : incorrectMessages
-                )
-
-        };
 
     }
 
@@ -773,6 +947,11 @@
             questions.length;
 
 
+        /*
+         * A question is counted as answered only
+         * when the student has reached the correct answer.
+         */
+
         const answeredQuestions =
             userAnswers.filter(
                 answer =>
@@ -781,14 +960,8 @@
 
 
         /*
-         * Progress percentage is based on:
-         *
-         * CORRECT ANSWERS / TOTAL QUESTIONS
-         *
-         * Example:
-         *
-         * 1 correct out of 50 = 2%
-         * 7 correct out of 10 = 70%
+         * Progress percentage is based on
+         * CORRECT ANSWERS / TOTAL QUESTIONS.
          */
 
         const percentage =
@@ -852,11 +1025,6 @@
 
             );
 
-
-            /*
-             * Tell chapter-page progress
-             * system that progress changed.
-             */
 
             window.dispatchEvent(
                 new CustomEvent(
@@ -1134,7 +1302,7 @@
 
 
     // =================================================
-    // PREPARE ANSWER ARRAY
+    // PREPARE ANSWER STATE
     // =================================================
 
     userAnswers =
@@ -1142,6 +1310,41 @@
             questions.length
         ).fill(
             null
+        );
+
+
+    // =================================================
+    // PREPARE WRONG ATTEMPTS
+    // =================================================
+
+    wrongAttempts =
+        Array.from(
+            {
+                length:
+                    questions.length
+            },
+            () =>
+                new Set()
+        );
+
+
+    // =================================================
+    // PREPARE FEEDBACK STATE
+    // =================================================
+
+    lastAttemptCorrect =
+        new Array(
+            questions.length
+        ).fill(
+            null
+        );
+
+
+    feedbackMessages =
+        new Array(
+            questions.length
+        ).fill(
+            ""
         );
 
 
@@ -1292,6 +1495,42 @@
 
 
     // =================================================
+    // GET SAVED FEEDBACK
+    // =================================================
+
+    function getStoredFeedback(
+        questionIndex
+    ) {
+
+        if (
+            lastAttemptCorrect[
+                questionIndex
+            ] === null
+        ) {
+
+            return null;
+
+        }
+
+
+        return {
+
+            correct:
+                lastAttemptCorrect[
+                    questionIndex
+                ],
+
+            message:
+                feedbackMessages[
+                    questionIndex
+                ] || ""
+
+        };
+
+    }
+
+
+    // =================================================
     // LOAD PAGE
     // =================================================
 
@@ -1347,9 +1586,11 @@
 
         window.scrollTo({
 
-            top: 0,
+            top:
+                0,
 
-            behavior: "smooth"
+            behavior:
+                "smooth"
 
         });
 
@@ -1450,20 +1691,15 @@
 
 
         // =============================================
-        // MOTIVATIONAL FEEDBACK
+        // FEEDBACK
         // =============================================
 
         let feedbackBox =
             null;
 
 
-        /*
-         * If this question was already answered,
-         * recreate its motivational message.
-         */
-
         const storedFeedback =
-            getFeedbackMessage(
+            getStoredFeedback(
                 index
             );
 
@@ -1494,6 +1730,13 @@
         explanationBox.className =
             "explanationCard";
 
+
+        /*
+         * IMPORTANT:
+         *
+         * Explanation is hidden until the student
+         * gets the correct answer.
+         */
 
         explanationBox.style.display =
             "none";
@@ -1644,29 +1887,46 @@
                     option;
 
 
-                /*
-                 * Restore previously selected answer
-                 * while moving between pages.
-                 */
+                // =========================================
+                // RESTORE WRONG ATTEMPTS
+                // =========================================
+
+                if (
+                    wrongAttempts[index] &&
+                    wrongAttempts[index].has(
+                        optionIndex
+                    )
+                ) {
+
+                    button.classList.add(
+                        "wrong"
+                    );
+
+                }
+
+
+                // =========================================
+                // RESTORE CORRECT ANSWER
+                // =========================================
+
+                const correctAnswer =
+                    getCorrectAnswer(
+                        q
+                    );
+
 
                 if (
                     userAnswers[index] !==
                     null
                 ) {
 
+                    /*
+                     * Question has already been solved.
+                     */
+
                     button.disabled =
                         true;
 
-
-                    const correctAnswer =
-                        getCorrectAnswer(
-                            q
-                        );
-
-
-                    /*
-                     * Show correct answer.
-                     */
 
                     if (
                         optionIndex ===
@@ -1679,28 +1939,17 @@
 
                     }
 
-
-                    /*
-                     * Show selected wrong answer.
-                     */
-
-                    if (
-                        optionIndex ===
-                        userAnswers[index] &&
-                        optionIndex !==
-                        correctAnswer
-                    ) {
-
-                        button.classList.add(
-                            "wrong"
-                        );
-
-                    }
+                }
 
 
-                    /*
-                     * Show explanation.
-                     */
+                // =========================================
+                // CORRECT QUESTION
+                // =========================================
+
+                if (
+                    userAnswers[index] !==
+                    null
+                ) {
 
                     explanationBox.style.display =
                         "block";
@@ -1729,8 +1978,8 @@
                     () => {
 
                         /*
-                         * Prevent answering the same
-                         * question more than once.
+                         * If the question has already
+                         * been solved, do nothing.
                          */
 
                         if (
@@ -1786,8 +2035,7 @@
 
 
         /*
-         * Feedback goes directly after the options
-         * and before the explanation.
+         * Feedback goes directly after options.
          */
 
         if (
@@ -1829,7 +2077,10 @@
     ) {
 
         /*
-         * Safety check.
+         * Safety check:
+         *
+         * If the question is already correct,
+         * do not allow another attempt.
          */
 
         if (
@@ -1840,14 +2091,6 @@
             return;
 
         }
-
-
-        /*
-         * Save selected answer.
-         */
-
-        userAnswers[questionIndex] =
-            selectedIndex;
 
 
         const correctAnswer =
@@ -1872,33 +2115,271 @@
 
 
         // =============================================
-        // COUNT ANSWER
+        // WRONG ANSWER
         // =============================================
 
         if (
-            isCorrect
+            !isCorrect
         ) {
 
-            score++;
+            /*
+             * Make sure wrongAttempts Set exists.
+             */
 
-        }
+            if (
+                !wrongAttempts[
+                    questionIndex
+                ]
+            ) {
 
-        else {
+                wrongAttempts[
+                    questionIndex
+                ] =
+                    new Set();
+
+            }
+
+
+            /*
+             * Remember this wrong option.
+             */
+
+            wrongAttempts[
+                questionIndex
+            ].add(
+                selectedIndex
+            );
+
+
+            /*
+             * Count this as a wrong attempt.
+             */
 
             wrongAnswers++;
 
+
+            /*
+             * Store latest feedback.
+             */
+
+            lastAttemptCorrect[
+                questionIndex
+            ] =
+                false;
+
+
+            feedbackMessages[
+                questionIndex
+            ] =
+                getRandomMessage(
+                    incorrectMessages
+                );
+
+
+            /*
+             * Mark ONLY the selected wrong
+             * option as wrong.
+             */
+
+            buttons.forEach(
+                (
+                    button,
+                    index
+                ) => {
+
+                    if (
+                        index ===
+                        selectedIndex
+                    ) {
+
+                        button.classList.add(
+                            "wrong"
+                        );
+
+                    }
+
+                }
+            );
+
+
+            /*
+             * IMPORTANT:
+             *
+             * Do NOT disable the other options.
+             *
+             * The student must be able to try again.
+             */
+
+            buttons.forEach(
+                (
+                    button,
+                    index
+                ) => {
+
+                    if (
+                        !wrongAttempts[
+                            questionIndex
+                        ].has(
+                            index
+                        )
+                    ) {
+
+                        button.disabled =
+                            false;
+
+                    }
+
+                    else {
+
+                        button.disabled =
+                            true;
+
+                    }
+
+                }
+            );
+
+
+            /*
+             * Replace old feedback.
+             */
+
+            const oldFeedback =
+                questionCard.querySelector(
+                    ".unique-answer-feedback"
+                );
+
+
+            if (
+                oldFeedback
+            ) {
+
+                oldFeedback.remove();
+
+            }
+
+
+            const feedbackBox =
+                createAnswerFeedback(
+                    false,
+                    feedbackMessages[
+                        questionIndex
+                    ]
+                );
+
+
+            questionCard.insertBefore(
+                feedbackBox,
+                explanationBox
+            );
+
+
+            /*
+             * Keep explanation hidden while
+             * the student is still trying.
+             */
+
+            explanationBox.style.display =
+                "none";
+
+
+            /*
+             * Save progress.
+             */
+
+            saveChapterProgress();
+
+
+            /*
+             * Small scroll to feedback.
+             */
+
+            setTimeout(
+                () => {
+
+                    try {
+
+                        feedbackBox.scrollIntoView({
+
+                            behavior:
+                                "smooth",
+
+                            block:
+                                "nearest"
+
+                        });
+
+                    }
+
+                    catch (error) {
+
+                        console.warn(
+                            "Feedback scroll unavailable:",
+                            error
+                        );
+
+                    }
+
+                },
+                100
+            );
+
+
+            /*
+             * STOP HERE.
+             *
+             * This is the most important part.
+             *
+             * The wrong answer does NOT complete
+             * the question.
+             */
+
+            return;
+
         }
 
 
         // =============================================
-        // SAVE PROGRESS IMMEDIATELY
+        // CORRECT ANSWER
         // =============================================
 
-        saveChapterProgress();
+        /*
+         * Save the correct answer ONLY now.
+         */
+
+        userAnswers[
+            questionIndex
+        ] =
+            correctAnswer;
+
+
+        /*
+         * Increase score ONLY once.
+         */
+
+        score++;
+
+
+        /*
+         * Store correct feedback.
+         */
+
+        lastAttemptCorrect[
+            questionIndex
+        ] =
+            true;
+
+
+        feedbackMessages[
+            questionIndex
+        ] =
+            getRandomMessage(
+                correctMessages
+            );
 
 
         // =============================================
-        // SHOW ANSWER COLORS
+        // SHOW CORRECT / WRONG STATES
         // =============================================
 
         buttons.forEach(
@@ -1907,18 +2388,29 @@
                 index
             ) => {
 
+                /*
+                 * Disable all options because
+                 * the question is now completed.
+                 */
+
                 button.disabled =
                     true;
 
 
                 /*
-                 * Always show the correct answer.
+                 * Correct answer gets green
+                 * check icon.
                  */
 
                 if (
                     index ===
                     correctAnswer
                 ) {
+
+                    button.classList.remove(
+                        "wrong"
+                    );
+
 
                     button.classList.add(
                         "correct"
@@ -1928,14 +2420,19 @@
 
 
                 /*
-                 * Show selected wrong answer.
+                 * Previously selected wrong
+                 * answers remain red/X.
                  */
 
-                if (
-                    index ===
-                    selectedIndex &&
-                    index !==
-                    correctAnswer
+                else if (
+                    wrongAttempts[
+                        questionIndex
+                    ] &&
+                    wrongAttempts[
+                        questionIndex
+                    ].has(
+                        index
+                    )
                 ) {
 
                     button.classList.add(
@@ -1949,42 +2446,35 @@
 
 
         // =============================================
-        // CREATE MOTIVATIONAL MESSAGE
+        // REMOVE OLD FEEDBACK
         // =============================================
 
-        const feedbackMessage =
-            getRandomMessage(
-                isCorrect
-                    ? correctMessages
-                    : incorrectMessages
-            );
-
-
-        const feedbackBox =
-            createAnswerFeedback(
-                isCorrect,
-                feedbackMessage
-            );
-
-
-        /*
-         * Put motivational feedback between
-         * options and explanation.
-         */
-
-        const existingFeedback =
+        const oldFeedback =
             questionCard.querySelector(
                 ".unique-answer-feedback"
             );
 
 
         if (
-            existingFeedback
+            oldFeedback
         ) {
 
-            existingFeedback.remove();
+            oldFeedback.remove();
 
         }
+
+
+        // =============================================
+        // CREATE CORRECT FEEDBACK
+        // =============================================
+
+        const feedbackBox =
+            createAnswerFeedback(
+                true,
+                feedbackMessages[
+                    questionIndex
+                ]
+            );
 
 
         questionCard.insertBefore(
@@ -1994,7 +2484,7 @@
 
 
         // =============================================
-        // SHOW EXPLANATIONS
+        // SHOW EXPLANATION
         // =============================================
 
         englishExplanation.textContent =
@@ -2014,7 +2504,14 @@
 
 
         // =============================================
-        // SMALL ANIMATION SCROLL
+        // SAVE PROGRESS
+        // =============================================
+
+        saveChapterProgress();
+
+
+        // =============================================
+        // SCROLL TO CORRECT FEEDBACK
         // =============================================
 
         setTimeout(
@@ -2045,6 +2542,20 @@
 
             },
             120
+        );
+
+
+        console.log(
+            "Question answered correctly:",
+            questionIndex + 1
+        );
+
+
+        console.log(
+            "Score:",
+            score,
+            "/",
+            questions.length
         );
 
     }
@@ -2140,6 +2651,111 @@
 
             else {
 
+                /*
+                 * Do not allow finishing if some
+                 * questions on the final page have
+                 * not yet been answered correctly.
+                 */
+
+                const unanswered =
+                    userAnswers.filter(
+                        answer =>
+                            answer === null
+                    ).length;
+
+
+                if (
+                    unanswered > 0
+                ) {
+
+                    /*
+                     * Show a small message instead of
+                     * finishing with unanswered questions.
+                     */
+
+                    const oldNotice =
+                        document.querySelector(
+                            ".unique-unanswered-notice"
+                        );
+
+
+                    if (
+                        oldNotice
+                    ) {
+
+                        oldNotice.remove();
+
+                    }
+
+
+                    const notice =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    notice.className =
+                        "unique-unanswered-notice";
+
+
+                    notice.textContent =
+                        `⚠️ Please answer all questions correctly before finishing. ${unanswered} question${unanswered === 1 ? "" : "s"} remaining.`;
+
+
+                    notice.style.cssText = `
+
+                        width: 100%;
+
+                        box-sizing: border-box;
+
+                        margin: 15px 0;
+
+                        padding: 14px 16px;
+
+                        border-radius: 14px;
+
+                        background: #fff4e5;
+
+                        color: #a85b00;
+
+                        border: 1px solid rgba(168,91,0,0.2);
+
+                        font-weight: 700;
+
+                        text-align: center;
+
+                        line-height: 1.5;
+
+                    `;
+
+
+                    questionsPage.prepend(
+                        notice
+                    );
+
+
+                    setTimeout(
+                        () => {
+
+                            if (
+                                notice &&
+                                notice.parentNode
+                            ) {
+
+                                notice.remove();
+
+                            }
+
+                        },
+                        3500
+                    );
+
+
+                    return;
+
+                }
+
+
                 finishQuiz();
 
             }
@@ -2192,6 +2808,35 @@
         if (
             quizFinished
         ) {
+
+            return;
+
+        }
+
+
+        /*
+         * Safety:
+         * Do not finish until every question
+         * has been answered correctly.
+         */
+
+        const unanswered =
+            userAnswers.filter(
+                answer =>
+                    answer === null
+            ).length;
+
+
+        if (
+            unanswered > 0
+        ) {
+
+            console.warn(
+                "Quiz cannot finish yet.",
+                unanswered,
+                "questions remain."
+            );
+
 
             return;
 
@@ -2297,7 +2942,7 @@
 
 
         /*
-         * Make sure Review/Restart button
+         * Make sure Review button
          * is available.
          */
 
@@ -2339,7 +2984,7 @@
 
 
         console.log(
-            "Wrong:",
+            "Wrong attempts:",
             wrongAnswers
         );
 
@@ -2399,7 +3044,7 @@
 
 
             // =========================================
-            // RESET WRONG ANSWERS
+            // RESET WRONG ATTEMPTS
             // =========================================
 
             wrongAnswers =
@@ -2407,7 +3052,7 @@
 
 
             // =========================================
-            // RESET ALL ANSWERS
+            // RESET ANSWERS
             // =========================================
 
             userAnswers =
@@ -2418,15 +3063,43 @@
                 );
 
 
+            // =========================================
+            // RESET WRONG OPTION STORAGE
+            // =========================================
+
+            wrongAttempts =
+                Array.from(
+                    {
+                        length:
+                            questions.length
+                    },
+                    () =>
+                        new Set()
+                );
+
+
+            // =========================================
+            // RESET FEEDBACK
+            // =========================================
+
+            lastAttemptCorrect =
+                new Array(
+                    questions.length
+                ).fill(
+                    null
+                );
+
+
+            feedbackMessages =
+                new Array(
+                    questions.length
+                ).fill(
+                    ""
+                );
+
+
             /*
              * Save completely reset state.
-             *
-             * Chapter card becomes:
-             *
-             * 0%
-             * BLUE
-             * 0 correct
-             * 0 wrong
              */
 
             saveChapterProgress();
@@ -2441,7 +3114,7 @@
 
 
             // =========================================
-            // HIDE COMPLETION MESSAGE
+            // HIDE COMPLETION
             // =========================================
 
             completionMessage.hidden =
@@ -2483,14 +3156,14 @@
 
 
             // =========================================
-            // LOAD QUESTION 1–5
+            // LOAD QUESTIONS 1–5
             // =========================================
 
             loadPage();
 
 
             // =========================================
-            // SCROLL TO TOP
+            // SCROLL TOP
             // =========================================
 
             window.scrollTo({
