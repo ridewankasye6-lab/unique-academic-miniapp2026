@@ -3347,12 +3347,763 @@ quizData["history"]["1"] = [{
     amharicExplanation: "ሐሰት። የእጅ ጽሑፎች (Manuscripts) እና የግል ማስታወሻዎች (Diaries) በክስተቱ ወይም በዘመኑ የተጻፉ ቀጥተኛ መረጃዎችን ከያዙ የመጀመሪያ ደረጃ ምንጮች ናቸው።"
   }];
 
-quizData["history"]["2"] = [
+quizData["history"]["2"] = [ { question: "Tools which are characterized by flexible and fine form of production by use of obsidian are called?",
+        options: [
+            "Mode II",
+            "Mode I",
+            "Mode III",
+            "Both Mode I and II",
+            "None",
+            "All"
+        ],
+        answer: 2,
+        englishExplanation: "Mode III technology represents a more advanced stage of stone-tool production. It used prepared-core techniques to produce thin, sharp, flexible, and versatile tools. High-quality materials such as obsidian could be shaped into refined flakes, points, and scrapers. 🪨",
+        amharicExplanation: "ሞድ III በድንጋይ መሣሪያ አሠራር የበለጠ የተራቀቀ ደረጃን ይወክላል። የተዘጋጀ የድንጋይ እምብርት ቴክኒክን በመጠቀም ቀጭን፣ ስለታም፣ ተለዋዋጭ እና ለተለያዩ ሥራዎች የሚያገለግሉ መሣሪያዎችን ያመርት ነበር። እንደ obsidian ያሉ ጥራት ያላቸው ድንጋዮችም ለተራቀቁ መሣሪያዎች ይጠቀሙ ነበር።"
+    },
 
-    // History Chapter 2 questions
+    {
+        question: "Compared to the Eastern (Zeila route), the northern (Dahlak Island) played a minor role in the spread of Islam to the interior highlands of Ethiopia and the Horn. This is mainly due to:",
+        options: [
+            "The geographic barrier that the Muslim clerics and merchants faced in the north.",
+            "The weakness of preachers to penetrate deep into the interior parts of Ethiopia.",
+            "The fact that Christianity was already well established as the state religion in the north.",
+            "All",
+            "None"
+        ],
+        answer: 2,
+        englishExplanation: "The northern route through the Dahlak Islands had less influence because Christianity was already firmly established as the state religion in the northern highlands. This made the spread of Islam into those areas more difficult. In contrast, the eastern route through Zeila provided greater access to the interior. 🕌",
+        amharicExplanation: "በደህለክ ደሴቶች በኩል ያለው የሰሜን መስመር እስልምናን ወደ ውስጥ ክፍሎች ለማስፋፋት አነስተኛ ሚና የነበረው በሰሜን የኢትዮጵያ አካባቢ ክርስትና ከ4ኛው ክፍለ ዘመን ጀምሮ የመንግሥት ሃይማኖት ሆኖ በጥብቅ ስለተመሠረተ ነው። በአንፃሩ የዘይላ የምሥራቅ መስመር ወደ ውስጥ አካባቢዎች ለመድረስ የበለጠ አመቺ ነበር።"
+    },
 
+    {
+        question: "Sub period of the Stone Age characterized by using language, developed stone tools, fur, and prepared food was?",
+        options: [
+            "Mesolithic",
+            "Neolithic",
+            "Paleolithic",
+            "Both A and C",
+            "None"
+        ],
+        answer: 2,
+        englishExplanation: "The Paleolithic, or Old Stone Age, was the earliest major period of the Stone Age. During its later stages, humans developed increasingly sophisticated stone tools, used animal skins for clothing, communicated through early forms of language, and prepared food using controlled fire. 🔥",
+        amharicExplanation: "ፓሊዮሊቲክ ወይም የጥንታዊው ድንጋይ ዘመን የድንጋይ ዘመን የመጀመሪያ ዋና ደረጃ ነው። በተለይ በኋለኛው ደረጃ ሰዎች የተሻሻሉ የድንጋይ መሣሪያዎችን ተጠቅመዋል፣ የእንስሳትን ቆዳ ለልብስ ተጠቅመዋል፣ ቀደምት የቋንቋ መግባባት አዳብረዋል እና እሳትን በመቆጣጠር ምግብ ያዘጋጁ ነበር።"
+    },
 
-];
+    {
+        question: "One of the following was not a historical development that took place during the Neolithic Revolution?",
+        options: [
+            "Domestication of plants and animals.",
+            "Development of language and shelter in caves.",
+            "Transformation from mobile to sedentary life.",
+            "Production of crops.",
+            "None",
+            "All"
+        ],
+        answer: 1,
+        englishExplanation: "The development of early language and the use of caves began much earlier, especially during the Paleolithic period. The Neolithic Revolution is mainly associated with farming, domestication of plants and animals, crop production, and the transition from mobile life to permanent settlements. 🏠",
+        amharicExplanation: "የቀደመ የቋንቋ እድገትና የዋሻ መኖሪያነት በተለይ በፓሊዮሊቲክ ዘመን የተጀመሩ ናቸው። የኒዮሊቲክ አብዮት ግን በግብርና፣ በእፅዋትና በእንስሳት ማምረት/ማረባት፣ በሰብል ምርት እና ከተንቀሳቃሽ አኗኗር ወደ ቋሚ መኖሪያ መሸጋገር ይታወቃል።"
+    },
+
+    {
+        question: "Which one is not correct match?",
+        options: [
+            "Oldowan - Homo habilis",
+            "Acheulean - Homo erectus",
+            "Sangoon - Homo sapiens",
+            "Acheulean - Homo habilis",
+            "None"
+        ],
+        answer: 3,
+        englishExplanation: "Homo habilis is commonly associated with the Oldowan stone-tool industry, while Acheulean tools are strongly associated with Homo erectus. Therefore, the match 'Acheulean - Homo habilis' is the incorrect one. 🧬",
+        amharicExplanation: "ሆሞ ሀቢሊስ በኦልዶዋን የድንጋይ መሣሪያ አሠራር ጋር በጣም ይያያዛል፤ አሹሊያን መሣሪያዎች ደግሞ በተለይ ከሆሞ ኢሬክተስ ጋር ይያያዛሉ። ስለዚህ 'Acheulean - Homo habilis' የሚለው ጥንድ ትክክል ያልሆነው ነው።"
+    },
+
+    {
+        question: "The transition between two periods is?",
+        options: [
+            "Paleolithic",
+            "Neolithic",
+            "Mesolithic",
+            "Mezolithic",
+            "None"
+        ],
+        answer: 2,
+        englishExplanation: "The Mesolithic, or Middle Stone Age, is considered a transitional period between the Paleolithic and Neolithic. It represents a gradual change from traditional hunter-gatherer life toward more settled communities and food production. 🌱",
+        amharicExplanation: "ሜሶሊቲክ ወይም የመካከለኛው ድንጋይ ዘመን በፓሊዮሊቲክ እና በኒዮሊቲክ መካከል ያለ የሽግግር ዘመን ነው። በዚህ ወቅት ሰዎች ከባህላዊ አዳኝና ለቀማ አኗኗር በቀስታ ወደ የበለጠ ቋሚ ኑሮና የምግብ ማምረት አቅጣጫ ተሸጋገሩ።"
+    },
+
+    {
+        question: "In Ethiopia and the Horn, rich archaeological evidence has been found in ______?",
+        options: [
+            "Lower Omo Basin",
+            "Middle Awash Valley",
+            "Konso Gardala",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "All three areas have produced important archaeological and paleoanthropological evidence. The Lower Omo Basin, Middle Awash Valley, and Konso Gardula contain fossils, stone tools, and other evidence that help researchers understand early human evolution in Ethiopia and the Horn of Africa. 🦴",
+        amharicExplanation: "ሦስቱም ቦታዎች አስፈላጊ የአርኪኦሎጂና የቅሪተ-አካል ማስረጃዎች የተገኙባቸው ናቸው። የታችኛው ኦሞ ተፋሰስ፣ የመካከለኛው አዋሽ ሸለቆ እና ኮንሶ ጋርዱላ የጥንታዊ የሰው ልጅ ቅሪቶችን፣ የድንጋይ መሣሪያዎችንና ሌሎች ማስረጃዎችን ስላስገኙ መልሱ 'All' ነው።"
+    },
+
+    {
+        question: "The earliest species to genus Homo is ________.",
+        options: [
+            "Homo Habilis",
+            "Homo Erectus",
+            "Homo Sapiens",
+            "Homo Sapiens Sapiens"
+        ],
+        answer: 0,
+        englishExplanation: "Homo habilis is traditionally regarded as one of the earliest recognized species of the genus Homo. It lived roughly 2.4 to 1.4 million years ago and is strongly associated with early stone-tool production. 🧠",
+        amharicExplanation: "ሆሞ ሀቢሊስ በተለምዶ ከሆሞ ዝርያ ቤተሰብ ውስጥ ከቀደምት የታወቁ ዝርያዎች አንዱ ነው። ከ2.4 እስከ 1.4 ሚሊዮን ዓመታት ገደማ በፊት ይኖር እንደነበር ይገመታል፣ እንዲሁም ከቀደምት የድንጋይ መሣሪያ አሠራር ጋር በጥብቅ ይያያዛል።"
+    },
+
+    {
+        question: "Which one of the following periods laid the basis for the emergence of civilization?",
+        options: [
+            "Paleolithic",
+            "Mesolithic",
+            "Neolithic",
+            "Middle Stone Age"
+        ],
+        answer: 2,
+        englishExplanation: "The Neolithic period laid important foundations for civilization because people began farming, domesticating animals, producing food surpluses, and living in permanent settlements. These changes encouraged population growth, specialization of labor, and eventually more complex societies. 🏘️",
+        amharicExplanation: "ኒዮሊቲክ ዘመን ለሰው ልጅ ሥልጣኔ መፈጠር አስፈላጊ መሠረት ጥሏል። ሰዎች ግብርናን መስራት፣ እንስሳትን ማረባት፣ ትርፍ ምግብ ማምረት እና በቋሚ መኖሪያዎች መኖር ጀመሩ። ይህም የሕዝብ ቁጥር እንዲጨምር፣ የሥራ ክፍፍል እንዲፈጠርና ውስብስብ ማኅበረሰቦች እንዲዳብሩ አግዟል።"
+    },
+
+    {
+        question: "From the given statement, one is true about the Periplus of Eritrean Sea?",
+        options: [
+            "It describes that the port of Aliumite state was Adulies",
+            "It gave detailed information about internal trade of Aksum",
+            "It was written by Coshas",
+            "It was written around the 5th C AD"
+        ],
+        answer: 0,
+        englishExplanation: "The Periplus of the Erythraean Sea is an anonymous Greek maritime guide written in the 1st century AD. It describes Red Sea and Indian Ocean trade and identifies Adulis as an important port connected with the Aksumite kingdom. ⚓",
+        amharicExplanation: "የኤርትራውያን ባሕር ፔሪፕለስ (Periplus of the Erythraean Sea) በ1ኛው ክፍለ ዘመን ዓ.ም በግሪክ ቋንቋ የተጻፈ የባሕር ንግድ መመሪያ ነው። የቀይ ባሕርንና የሕንድ ውቅያኖስን ንግድ ይገልጻል፣ እንዲሁም ዓዱሊስን ከአክሱም መንግሥት ጋር የተያያዘ አስፈላጊ ወደብ እንደነበረች ያሳያል።"
+    },
+
+    {
+        question: "Christian became state religion in Ethiopia when?",
+        options: [
+            "334 A.D",
+            "during king Ezana",
+            "4th century A.D",
+            "all"
+        ],
+        answer: 3,
+        englishExplanation: "Christianity became the state religion of the Aksumite Kingdom during the reign of King Ezana in the 4th century AD. The change is commonly placed around the 4th century, with 334 AD often cited in traditional Ethiopian historical accounts. Therefore, all three statements refer to the same historical development. ✝️",
+        amharicExplanation: "በአክሱም መንግሥት ክርስትና የመንግሥት ሃይማኖት የሆነው በንጉሥ ዔዛና ዘመነ መንግሥት በ4ኛው ክፍለ ዘመን ነው። በአንዳንድ ባህላዊ የኢትዮጵያ ታሪክ ምንጮች 334 ዓ.ም አካባቢ ተብሎ ይጠቀሳል። ስለዚህ ሦስቱም ምርጫዎች አንድን ታሪካዊ ክስተት ስለሚገልጹ 'all' መልሱ ነው።"
+    },
+
+    {
+        question: "In the context of primate evolution and human ancestry, which evolutionary process or branching event is best supported by current archeological and biological evidence regarding the timeline of primate development?",
+        options: [
+            "Primates evolved directly from reptiles around 200 million years ago, then branched into Hominidae.",
+            "The primate lineage split from the placental mammal stream between 200-170 million years ago, eventually leading to the Hominidae family.",
+            "The evolution of Pongidae preceded the development of Hominidae, which branched off around 3 million years ago."
+        ],
+        answer: 1,
+        englishExplanation: "The primate lineage developed from earlier placental mammals and eventually diversified into several groups, including the lineage leading to modern apes and humans. The other choices incorrectly describe humans as developing directly from reptiles or place the Hominidae split far too recently. 🐒",
+        amharicExplanation: "የፕራይሜት ዝርያ ከቀደምት የእንግዴ ልጅ አጥቢ እንስሳት (placental mammals) የተለየ ሲሆን በረዥም የዝግመተ-ለውጥ ሂደት ወደ ተለያዩ ቡድኖች ተከፋፍሏል። ከእነዚህም መካከል ወደ ዘመናዊ ዝንጀሮዎችና የሰው ልጅ የሚያመራው የዝግመተ-ለውጥ መስመር ይገኛል። ሌሎቹ ምርጫዎች የሰው ልጅ በቀጥታ ከተሳቢ እንስሳት እንደመጣ ወይም የሆሚኒዴ መከፋፈል በጣም ቅርብ ጊዜ እንደነበር በስህተት ያቀርባሉ።"
+    },
+
+    {
+        question: "Considering the fossil evidence of early hominins, where and when was the famous Australopithecus afarensis fossil, commonly known as Lucy, unearthed, and what was its significance?",
+        options: [
+            "Lucy, an Australopithecus afarensis fossil, was found in Dikika, Afar in the year 2000 and became a landmark discovery for early hominin tools.",
+            "The discovery of Lucy occurred at Aramis, Afar in 1994, providing one of the earliest complete Australopithecine fossils.",
+            "The fossil known as Lucy was unearthed in Hadar, Afar in 1974, offering significant insight into early bipedalism in human evolution."
+        ],
+        answer: 2,
+        englishExplanation: "Lucy is a famous Australopithecus afarensis fossil discovered at Hadar in the Afar region of Ethiopia in 1974 by Donald Johanson and his team. Her skeleton provided important evidence that early hominins walked on two legs, showing that bipedalism developed before modern human-sized brains. 🦴",
+        amharicExplanation: "ሉሲ ወይም ድንቅነሽ (Australopithecus afarensis) በ1974 በኢትዮጵያ አፋር ክልል ሐዳር አካባቢ በዶናልድ ጆሃንሰንና ቡድኑ የተገኘች ታዋቂ ቅሪተ-አካል ናት። የአጥንት አወቃቀሯ ቀደምት የሰው ልጅ ቅድመ-አያቶች በሁለት እግሮች ይራመዱ እንደነበር ጠቃሚ ማስረጃ ሰጥቷል። ይህም በሰው ልጅ ዝግመተ-ለውጥ ውስጥ ቀጥ ብሎ መራመድ የአእምሮ መጠን ከመጨመሩ በፊት መኖሩን ያሳያል።"
+    },
+
+    {
+        question: "Given the extensive fossil record in Ethiopia and the Horn of Africa, which discovery marked the earliest evidence of Ardipithecus kadabba, and what does this suggest about human evolutionary history?",
+        options: [
+            "The Ardipithecus kadabba fossil, dating back 1.9 million years, was discovered in Middle Awash and marked an early transition to bipedalism.",
+            "Fossils of Ardipithecus kadabba found in the Lower Omo valley, dated to 2.5 million years B.P., illustrate the development of tool use.",
+            "Ardipithecus kadabba, dating back to approximately 5.8 million years, was discovered in Middle Awash and represents an early hominin species."
+        ],
+        answer: 2,
+        englishExplanation: "Ardipithecus kadabba fossils were discovered in the Middle Awash area of Ethiopia and date to approximately 5.8–5.2 million years ago. They represent one of the earliest known hominin species and provide evidence about the very early stages of human evolutionary history. 🌍",
+        amharicExplanation: "የአርዲፒቲከስ ካዳባ (Ardipithecus kadabba) ቅሪተ-አካላት በኢትዮጵያ መካከለኛው አዋሽ አካባቢ የተገኙ ሲሆን ከ5.8 እስከ 5.2 ሚሊዮን ዓመታት ገደማ ዕድሜ እንዳላቸው ይገመታል። እነዚህ ቅሪቶች ከቀደምት የታወቁ የሰው ልጅ ቅድመ-አያት ዝርያዎች መካከል አንዱን ያሳያሉ፣ ይህም የሰው ልጅ ዝግመተ-ለውጥ በአፍሪካ በጣም ጥንታዊ ሥር እንዳለው ለመረዳት ይረዳል።"
+    },
+
+    {
+        question: "Based on the study of ancient stone tools, what significant technological advancements and features distinguish the Mode II stone tools from earlier and later tool-making techniques?",
+        options: [
+            "Mode II tools were more refined than their predecessors, characterized by bifacial and pointed designs made using indirect percussion.",
+            "Mode II tools represent the earliest crude stone tools, distinguished by their mono-facial and simple designs made by direct percussion.",
+            "Mode II tools were primarily made of obsidian and used by early Homo sapiens, showing the development of the most flexible tool-making techniques."
+        ],
+        answer: 0,
+        englishExplanation: "Mode II refers to the Acheulean stone-tool industry. Compared with Mode I, these tools were more carefully shaped, especially bifacial handaxes and pointed forms. Their improved symmetry and cutting edges demonstrate a significant advance in tool-making skill. 🪓",
+        amharicExplanation: "ሞድ II የአሹሊያን (Acheulean) የድንጋይ መሣሪያ አሠራርን ይወክላል። ከሞድ I ጋር ሲነጻጸር በበለጠ ጥንቃቄ የተሰሩ፣ በሁለቱም ጎኖች የተጠረቡ (bifacial) እና ስለታም ቅርጽ ያላቸው የእጅ መጥረቢያዎች ይታወቃሉ። የተሻለ ሚዛናዊነታቸውና የመቁረጫ ጠርዛቸው የመሣሪያ አሠራር እውቀት መሻሻልን ያሳያል።"
+    },
+
+    {
+        question: "Reflecting on the fossil evidence for Homo erectus, where and when was this species first uncovered, and what are the implications of its physical and behavioral characteristics in understanding human evolution?",
+        options: [
+            "Fossils of Homo erectus were discovered in Gona, dating back approximately 1.9 million years, marking the development of the first stone tools and brain growth.",
+            "Homo erectus fossils, dating to about 1.6 million years B.P., were found in Melka Kunture, and the species is notable for its upright posture and significant brain size expansion.",
+            "Homo erectus remains were discovered in Middle Awash, dating to 400,000 years ago, and are significant for showing the transition from arboreal to terrestrial life."
+        ],
+        answer: 1,
+        englishExplanation: "Homo erectus is known for its fully upright body structure, larger body size, and substantially larger brain than earlier hominins. Fossil evidence from places such as Melka Kunture in Ethiopia, dating to around 1.6 million years ago, helps illustrate important developments in human evolution. 🚶",
+        amharicExplanation: "ሆሞ ኢሬክተስ ሙሉ በሙሉ ቀጥ ብሎ በመራመድ፣ በተሻለ የሰውነት አወቃቀር እና ከቀደምት ሆሚኒኖች የበለጠ ትልቅ የአእምሮ መጠን ይታወቃል። በኢትዮጵያ መልካ ቁንጥሬ አካባቢ የተገኙ እና ወደ 1.6 ሚሊዮን ዓመታት ገደማ የሚመደቡ ማስረጃዎች በሰው ልጅ ዝግመተ-ለውጥ ውስጥ የተከሰቱ ጠቃሚ ለውጦችን ለመረዳት ያግዛሉ።"
+    },
+
+    {
+        question: "Considering the stages of tool development throughout human history, how does the Mode III tool industry distinguish itself from the earlier Mode I and Mode II industries in terms of complexity and material usage?",
+        options: [
+            "Mode III tools are defined by their use of obsidian and their flexible, finely made forms, which signify a major advancement in stone tool technology compared to earlier tools.",
+            "Mode III tools are characterized by crude, mono-facial designs made by direct percussion, making them some of the earliest known human tools.",
+            "Mode III tools were primarily produced using bifacial and convex features, associated with the Acheulean industry and Homo erectus."
+        ],
+        answer: 0,
+        englishExplanation: "Mode III represents a more complex stage of stone-tool technology. It is associated with prepared-core methods such as the Levallois technique, allowing people to produce controlled, thin, sharp, and versatile flakes. High-quality materials such as obsidian could be used effectively. 🎯",
+        amharicExplanation: "ሞድ III ከሞድ I እና ሞድ II የበለጠ የተራቀቀ የድንጋይ መሣሪያ ቴክኖሎጂ ነው። እንደ Levallois ያሉ የተዘጋጀ የድንጋይ እምብርት ቴክኒኮችን በመጠቀም ቀጭን፣ ስለታም፣ በትክክል የተቆጣጠሩ እና ለተለያዩ ሥራዎች የሚሆኑ የድንጋይ ቅርፊቶችን ማምረት ተቻለ። እንደ obsidian ያሉ ጥራት ያላቸው ድንጋዮችም በብቃት ይጠቀሙ ነበር።"
+    },
+
+    {
+        question: "When considering the different stages of technological development in early human history, how do the Oldowan tools, which are classified as Mode I tools, differ from later technological advancements?",
+        options: [
+            "Oldowan tools, dated around 2.5 million years ago, are characterized by bifacial, pointed designs created by indirect percussion.",
+            "Mode I tools, known as Oldowan tools, were made using direct percussion, characterized by crude, mono-facial designs, and date back around 2.5 million years.",
+            "The Oldowan tools were made of obsidian and represent the finest craftsmanship in early human tool-making practices, dating to approximately 2 million years ago."
+        ],
+        answer: 1,
+        englishExplanation: "Mode I, or Oldowan technology, represents one of the earliest known stone-tool industries. The tools were generally simple and crude, often made by direct percussion to create flakes and basic choppers. They date to roughly 2.5 million years ago. 🔨",
+        amharicExplanation: "ሞድ I ወይም ኦልዶዋን (Oldowan) ከቀደምት የታወቁ የድንጋይ መሣሪያ አሠራሮች አንዱ ነው። መሣሪያዎቹ በአብዛኛው ቀላልና ያልተራቀቁ ሲሆኑ ድንጋይን በቀጥታ በመምታት (direct percussion) ቅርፊቶችና ቀላል መቁረጫዎች ይሠሩ ነበር። ዕድሜያቸውም ወደ 2.5 ሚሊዮን ዓመታት ገደማ ይመለሳል።"
+    },
+
+    {
+        question: "Given the fossil evidence of early human brain development, which hominin species was discovered with the largest brain size among early species, and what does this suggest about its place in the evolutionary timeline?",
+        options: [
+            "Homo habilis, with a brain size of 900-1100 cc, discovered in Middle Awash, is noted for being one of the first toolmakers.",
+            "Homo erectus, with a brain size of 1300-1400 cc, was discovered in Lower Omo and is associated with the first evidence of controlled fire use.",
+            "The fossil of an archaic Homo sapiens, with a brain size of 1300-1400 cc, was discovered in Middle Awash and marks a transition to modern brain capacity."
+        ],
+        answer: 2,
+        englishExplanation: "Archaic Homo sapiens fossils, including the Bodo skull from the Middle Awash region, show a large cranial capacity of roughly 1300–1400 cc. This is close to the range of modern humans and demonstrates an important stage in the development toward modern Homo sapiens. 🧠",
+        amharicExplanation: "በመካከለኛው አዋሽ አካባቢ የተገኙ የጥንታዊ ሆሞ ሳፒያንስ ቅሪቶች፣ ለምሳሌ የBodo የራስ ቅል፣ ወደ 1300–1400 cc የሚደርስ ትልቅ የአእምሮ መጠን ያሳያሉ። ይህ መጠን ከዘመናዊ ሰዎች የአእምሮ መጠን ጋር በቅርብ ስለሚገናኝ ወደ ዘመናዊ Homo sapiens የተደረገውን የዝግመተ-ለውጥ እድገት ያሳያል።"
+    },
+
+    {
+        question: "Considering the Neolithic Revolution's impact on human lifestyle, what was one of the primary reasons for the shift from hunting and gathering to the domestication of plants and animals?",
+        options: [
+            "The declining availability of wild plants and large animals, driven by climatic changes and increased population, led humans to domesticate plants and smaller animals.",
+            "The invention of new hunting tools caused a reduction in the need for hunting large animals, pushing humans toward farming and plant cultivation.",
+            "A sudden abundance of edible plants and larger animals naturally pushed early humans to domesticate both for easier access to food."
+        ],
+        answer: 0,
+        englishExplanation: "The shift toward farming and domestication had several causes, including environmental changes after the last Ice Age, population growth, and changes in the availability of wild resources. These pressures encouraged some communities to cultivate plants and manage animals as more reliable food sources. 🌾",
+        amharicExplanation: "ወደ ግብርናና የእፅዋትና የእንስሳት ማረባት መሸጋገር ብዙ ምክንያቶች ነበሩት። ከእነዚህም የበረዶ ዘመን ካበቃ በኋላ የአካባቢ ለውጦች፣ የሕዝብ ቁጥር መጨመር እና የዱር ምግብ ሀብቶች መለዋወጥ ይገኙበታል። እነዚህ ሁኔታዎች ሰዎች እፅዋትን ማልማትና እንስሳትን ማረባት እንደ የተረጋጋ የምግብ ምንጭ እንዲጠቀሙ አበረታቷቸዋል።"
+    },  { question: "The region, Ethiopia and the Horn is the cradle of human beings.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "Ethiopia and the Horn of Africa are widely recognized as important regions in human evolution because some very early hominin fossils, including Ardipithecus ramidus (Ardi) and Australopithecus afarensis (Lucy/Dinknesh), were discovered there. These discoveries provide important evidence about early human evolution. 🌍",
+        amharicExplanation: "ኢትዮጵያና የአፍሪካ ቀንድ በሰው ልጅ የዕድገት ታሪክ ውስጥ በጣም ጠቃሚ ክልሎች ናቸው። እንደ አርዲፒቲከስ ራሚደስ (Ardi) እና አውስትራሎፒቲከስ አፋሬንሲስ (ድንቅነሽ/Lucy) ያሉ ጥንታዊ የሰው ልጅ ቅሪተ-አካላት በዚህ ክልል ተገኝተዋል። እነዚህ ግኝቶች ስለ ቀደምት የሰው ልጅ ዕድገት ጠቃሚ ማስረጃ ይሰጣሉ። 🦴"
+    },
+
+    {
+        question: "The tool which was called Acheulean was made by a genus Homo called Homo erectus.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "Acheulean tools are mainly known for their bifacial hand-axes, which were carefully shaped on both sides. Homo erectus is strongly associated with Acheulean technology, although other early Homo species also used these tools. 🪓",
+        amharicExplanation: "አሹሊያን (Acheulean) መሣሪያዎች በሁለቱም በኩል ተጠርበው የተሠሩ የድንጋይ መሣሪያዎች፣ በተለይም የእጅ መጥረቢያዎች (hand-axes) ናቸው። ሆሞ ኢሬክተስ (Homo erectus) ከአሹሊያን ቴክኖሎጂ ጋር በጥብቅ የተያያዘ የሰው ልጅ ዝርያ ነው። 🗿"
+    },
+
+    {
+        question: "Pongidea are primates of human ancestry?",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Pongidae was traditionally used for a group of great apes, particularly orangutans. Humans and their direct evolutionary ancestors belong to the hominin lineage within the family Hominidae. Therefore, Pongidae are not classified as human ancestors. 🦍",
+        amharicExplanation: "ፖንጂዳ (Pongidae) በባህላዊ የስነ-ምድብ አጠራር በተለይ ኦራንጉታንን የሚያካትቱ የታላላቅ ዝንጀሮዎች ቡድን ነው። የሰው ልጅና ቀጥተኛ የዕድገት ቅድመ-አያቶቹ ግን በHominidae ቤተሰብ ውስጥ ይመደባሉ። ስለዚህ ፖንጂዳ የሰው ልጅ ቀጥተኛ ቅድመ-አያት አይደሉም። 🧬"
+    },
+
+    {
+        question: "Ardipithecus ramidus dated 4.2 million b.p in Middle Awash in 1994?",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Ardipithecus ramidus was discovered in the Middle Awash region of Ethiopia in the early 1990s, with important remains found at Aramis. The species is generally dated to about 4.4 million years ago, not 4.2 million years. ⏳",
+        amharicExplanation: "አርዲፒቲከስ ራሚደስ (Ardipithecus ramidus) በኢትዮጵያ መካከለኛው አዋሽ አካባቢ በአራሚስ ተገኝቷል። የዚህ ዝርያ ዕድሜ በአጠቃላይ ወደ 4.4 ሚሊዮን ዓመት ይገመታል፤ 4.2 ሚሊዮን ዓመት አይደለም። 🦴"
+    },
+
+    {
+        question: "Neolithic Revolution contributed to the shift of human beings from a mobile to a sedentary way of life and the beginning of agriculture.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "The Neolithic Revolution was a major change in human life. People increasingly moved from mobile hunter-gatherer communities to permanent settlements, while agriculture and the domestication of plants and animals developed. 🌾",
+        amharicExplanation: "የኒዮሊቲክ አብዮት በሰው ልጅ የኑሮ ዘይቤ ላይ ትልቅ ለውጥ ያመጣ የታሪክ ምዕራፍ ነው። ሰዎች ከቦታ ቦታ ከመዘዋወር የአደንና ስብሰባ ሕይወት ወደ ቋሚ መኖሪያ መሸጋገር ጀመሩ፤ እርሻና የእፅዋትና የእንስሳት ማላመድም ተስፋፋ። 🏡"
+    },
+
+    {
+        question: "During the Paleolithic period, human beings transformed from a mobile to a sedentary way of life?",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "During most of the Paleolithic period, humans were mainly mobile hunter-gatherers who moved from place to place in search of food and resources. The widespread transition to sedentary communities occurred later, especially during the Neolithic period. 🏕️",
+        amharicExplanation: "በፓሌኦሊቲክ (Paleolithic) ዘመን ሰዎች በአብዛኛው ከቦታ ቦታ የሚንቀሳቀሱ አዳኝና ሰብሳቢዎች (hunter-gatherers) ነበሩ። ወደ ቋሚ መኖሪያ የመሸጋገሩ ሂደት በኋላ፣ በተለይም በኒዮሊቲክ ዘመን በሰፊው ተከሰተ። 🏞️"
+    },
+
+    {
+        question: "The processes of domestication were practiced independently in various parts of the world.",
+        options: ["True", "False"],
+        answer: 0,
+        englishExplanation: "Domestication developed independently in several parts of the world. Different communities domesticated local plants and animals according to their environments, including regions such as Southwest Asia, China, Mesoamerica, and parts of Africa. 🌎",
+        amharicExplanation: "የእፅዋትና የእንስሳት ማላመድ (domestication) በአንድ ቦታ ብቻ የተጀመረ አልነበረም። በተለያዩ የዓለም ክልሎች ሰዎች ከአካባቢያቸው ጋር በተያያዘ የተለያዩ እፅዋትና እንስሳትን በተናጠል ማላመድ ጀመሩ። 🌱"
+    },
+
+    {
+        question: "Oldowan tools made and used by Homo habilis were discovered at Anwar Gona in Shingura, Afar.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Oldowan tools have been discovered at Gona in the Afar region of Ethiopia and are among the earliest known stone tools. However, the wording of the statement gives an incorrect location name, so the statement is false. 🔎",
+        amharicExplanation: "ኦልዶዋን (Oldowan) የድንጋይ መሣሪያዎች በኢትዮጵያ አፋር ክልል በጎና (Gona) አካባቢ ተገኝተዋል። እነዚህም ከጥንታዊ የድንጋይ መሣሪያዎች መካከል ይመደባሉ። ነገር ግን ጥያቄው የቦታውን ስም በትክክል ስላልገለጸ መልሱ ሐሰት ነው። 🪨"
+    },
+
+    {
+        question: "Christianity became the state religion of Ethiopia during the reign of King Keleb in the 6th century.",
+        options: ["True", "False"],
+        answer: 1,
+        englishExplanation: "Christianity became the state religion of the Aksumite Kingdom during the reign of King Ezana in the 4th century AD. King Keleb ruled much later, in the 6th century, so the statement is incorrect. ✝️",
+        amharicExplanation: "ክርስትና የአክሱም መንግሥት የመንግሥት ሃይማኖት የሆነው በ4ኛው ክፍለ ዘመን በንጉሥ ኤዛና ዘመነ መንግሥት ነው። ንጉሥ ካሌብ ግን በ6ኛው ክፍለ ዘመን ነግሦ ነበር። ስለዚህ በካሌብ ዘመን የመንግሥት ሃይማኖት ሆነ የሚለው ሐሰት ነው። 👑"
+    },
+
+    {
+        question: "Which characteristic best matches Mode II stone-tool technology?",
+        options: [
+            "Crude unifacial tools and pointed forms are characteristic of Mode I.",
+            "Bifacial tools, especially hand-axes, were carefully shaped using controlled flaking and are characteristic of Mode II.",
+            "Bifacial, pointed and convex features are characteristic of Mode III.",
+            "Bifacial, pointed and convex features are characteristic of Mode IV."
+        ],
+        answer: 1,
+        englishExplanation: "Mode II is associated with Acheulean technology. It is characterized especially by bifacial tools such as hand-axes, which were shaped by carefully controlled flaking to produce sharp and useful edges. 🛠️",
+        amharicExplanation: "ሞድ II (Mode II) ከአሹሊያን (Acheulean) የድንጋይ መሣሪያ ቴክኖሎጂ ጋር ይያያዛል። በተለይም በሁለቱም በኩል ተጠርበው የተሠሩ የእጅ መጥረቢያዎች (hand-axes) ዋና መለያዎቹ ናቸው። የተቆጣጠረ የድንጋይ መጥረብ በመጠቀም ሹልና ጠቃሚ ጠርዞች ይፈጠሩ ነበር። 🔨"
+    },
+
+    {
+        question: "Which of the following statements is not wrong?",
+        options: [
+            "Archaeological studies suggested that West Africa is the cradle of humanity.",
+            "Selam was discovered at Dikika in the Middle Awash, Afar region, in 2000.",
+            "Australopithecus afarensis was discovered at Hadar in Dire Dawa.",
+            "All except A",
+            "None",
+            "All"
+        ],
+        answer: 1,
+        englishExplanation: "Selam, a juvenile Australopithecus afarensis fossil, was discovered at Dikika in the Afar region of Ethiopia. The discovery was announced in 2006, although the fossil was found in 2000. Hadar is in the Afar region, not Dire Dawa, and East Africa—not West Africa—is especially important in human-evolution research. 🧭",
+        amharicExplanation: "ሰላም (Selam) የተባለችው ወጣት Australopithecus afarensis ቅሪተ-አካል በ2000 በኢትዮጵያ አፋር ክልል ድኪካ (Dikika) ተገኘች። ግኝቷ ግን በ2006 በይፋ ታወቀ። ሀዳር (Hadar) ደግሞ በአፋር ክልል እንጂ በድሬዳዋ አይገኝም። በተጨማሪም ምሥራቅ አፍሪካ በሰው ልጅ ዕድገት ጥናት በጣም ጠቃሚ ክልል ነው። 🦴"
+    },
+
+    {
+        question: "Which one has about 40% of the complete body skeleton preserved?",
+        options: [
+            "Australopithecus anamensis",
+            "Australopithecus afarensis",
+            "Australopithecus afarensis",
+            "Australopithecus ramidus",
+            "None",
+            "All"
+        ],
+        answer: 1,
+        englishExplanation: "The famous fossil known as Lucy, or Dinknesh, belongs to Australopithecus afarensis. Discovered at Hadar in 1974, her skeleton is about 40% complete, making her one of the most important early hominin fossils ever found. 🦴",
+        amharicExplanation: "ሉሲ ወይም ድንቅነሽ የተባለችው ቅሪተ-አካል Australopithecus afarensis ናት። በ1974 በሀዳር የተገኘች ሲሆን የአጥንት አካሏ ወደ 40% ያህል የተጠበቀ ነው። ይህም በጥንታዊ የሰው ልጅ ቅሪተ-አካል ጥናት ውስጥ በጣም ጠቃሚ ግኝት እንድትሆን አድርጓታል። 🔬"
+    },
+
+    {
+        question: "Why did Prophet Muhammad instruct Muslims to treat the people of Aksum with respect and protection?",
+        options: [
+            "The Aksumites had a strong army that could defeat the Arabian force.",
+            "Christianity was well established in Aksum before the rise of Islam in Arabia.",
+            "The King of Aksum welcomed early Muslim refugees and gave them asylum around 615 AD.",
+            "The geographical location of the region was not conducive to Jihad.",
+            "None",
+            "All"
+        ],
+        answer: 2,
+        englishExplanation: "During the First Hijra, early Muslims escaping persecution in Mecca migrated to the Aksumite Kingdom around 615 AD. The Aksumite ruler, known in Islamic tradition as the Negus (Najashi), gave them protection and allowed them to live safely. 🕊️",
+        amharicExplanation: "በመጀመሪያው ሂጅራ ወቅት በመካ ስደት የደረሰባቸው የመጀመሪያዎቹ ሙስሊሞች በ615 ዓ.ም አካባቢ ወደ አክሱም መንግሥት ተሰደዱ። በእስላማዊ ትውፊት ነጃሺ (Najashi) ተብሎ የሚጠራው የአክሱም ንጉሥ ጥበቃና መጠለያ ሰጣቸው። ስለዚህ ይህ ክስተት በአክሱምና በመጀመሪያዎቹ ሙስሊሞች መካከል የታሪክ ግንኙነትን ያሳያል። 🤝"
+    },
+
+    {
+        question: "Which one of the following is correct in chronological order from ancient to recent in human evolution?",
+        options: [
+            "Homo sapiens → Homo habilis → Homo erectus",
+            "Homo erectus → Homo sapiens → Homo habilis",
+            "Homo habilis → Homo erectus → Homo sapiens",
+            "Homo habilis → Homo sapiens → Homo erectus",
+            "None",
+            "All"
+        ],
+        answer: 2,
+        englishExplanation: "In the simplified evolutionary sequence commonly taught in introductory anthropology, Homo habilis appeared earlier, followed by Homo erectus, and later Homo sapiens. Therefore, the correct order is Homo habilis → Homo erectus → Homo sapiens. 🧠",
+        amharicExplanation: "በመግቢያ ደረጃ የሰው ልጅ ዕድገት ታሪክ በሚማሩበት ቅደም-ተከተል፣ Homo habilis ቀድሞ የታየ ሲሆን በኋላ Homo erectus እና ከዚያ Homo sapiens ተከተሉ። ስለዚህ ትክክለኛው ቅደም-ተከተል Homo habilis → Homo erectus → Homo sapiens ነው። ⏳"
+    },
+
+    {
+        question: "Which one of the following languages does not belong to the Semitic family?",
+        options: [
+            "Amharic",
+            "Tigrigna",
+            "Ge'ez",
+            "Bilen",
+            "None",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "Amharic, Tigrigna, and Ge'ez are Ethio-Semitic languages within the Afroasiatic language family. Bilen, however, belongs to the Cushitic branch of Afroasiatic, specifically the Central Cushitic group. 🗣️",
+        amharicExplanation: "አማርኛ፣ ትግርኛ እና ግዕዝ የአፍሮ-እስያዊ (Afroasiatic) ቋንቋ ቤተሰብ ውስጥ የሴማዊ (Semitic) ቡድን አባላት ናቸው። ቢሌን (Bilen) ግን የኩሻዊ (Cushitic) ቋንቋ ቡድን አባል ነው። 📖"
+    },
+
+    {
+        question: "A partial body fossil associated with an early skilled toolmaker is named as:",
+        options: [
+            "Homogeneous",
+            "Homosexuality",
+            "Homo habilis",
+            "Genus Homo",
+            "None",
+            "All"
+        ],
+        answer: 2,
+        englishExplanation: "Homo habilis means 'handy man' and is traditionally associated with some of the earliest Oldowan stone tools. The name reflects the idea that this early Homo species had important tool-making abilities. 🧰",
+        amharicExplanation: "Homo habilis ማለት 'የእጅ ሥራ ችሎታ ያለው ሰው' ማለት ነው። ይህ ዝርያ ከጥንታዊ ኦልዶዋን (Oldowan) የድንጋይ መሣሪያዎች ጋር በተለምዶ ይያያዛል። ስሙም በተለይ የመሣሪያ ማዘጋጀት ችሎታውን ያመለክታል። 🪨"
+    },
+
+    {
+        question: "Which fossil species is commonly associated with originating in Africa and spreading to other parts of the world?",
+        options: [
+            "Homo habilis",
+            "Homo erectus",
+            "Homo",
+            "Kibish fossil",
+            "None",
+            "All"
+        ],
+        answer: 1,
+        englishExplanation: "Homo erectus is widely associated with one of the earliest major migrations of humans out of Africa. Fossils attributed to Homo erectus or closely related populations have been found across Africa and parts of Asia and Europe, showing a broad geographic expansion. 🌏",
+        amharicExplanation: "Homo erectus ከአፍሪካ ወጥቶ ወደ ሌሎች የዓለም ክፍሎች በመሰራጨት ከታወቁ የጥንት የሰው ልጅ ዝርያዎች አንዱ ነው። ከHomo erectus ወይም ከቅርብ ዘመዶቹ ጋር የሚያያዙ ቅሪተ-አካላት በአፍሪካ፣ እስያ እና አውሮፓ ተገኝተዋል። 🚶"
+    },
+
+    {
+        question: "Identify the incorrect statement about religion and religious processes in Ethiopia and the Horn.",
+        options: [
+            "Unlike Catholicism, Orthodox Christianity is traditionally described as Miaphysite in explaining the nature of Christ.",
+            "Christianity and Islam are both monotheistic religions that became established in the region in the 4th and 7th centuries AD respectively.",
+            "The introduction of Judaism to the Horn is apparent compared to Christianity and Islam.",
+            "The practices and beliefs of indigenous religions in Ethiopia and the Horn are in many cases fused with Christianity and Islam.",
+            "None"
+        ],
+        answer: 2,
+        englishExplanation: "The historical origin and exact process through which Judaism became established in Ethiopia and the Horn are less clearly documented than the Christian and Islamic histories. Therefore, saying that its introduction is 'apparent' or clearly documented compared with Christianity and Islam is the incorrect statement. 📜",
+        amharicExplanation: "ይሁዲነት ወደ ኢትዮጵያና የአፍሪካ ቀንድ የገባበት ትክክለኛ ጊዜና ሂደት ከክርስትናና እስልምና ታሪክ ጋር ሲነጻጸር በግልጽ የተመዘገበ አይደለም። ስለዚህ 'የይሁዲነት መግባት ግልጽ ነው' የሚለው መግለጫ የተሳሳተ ነው። 🕯️"
+    },
+
+    {
+        question: "Who introduced monastic life into the Christianity of ancient Ethiopia?",
+        options: [
+            "Nine Saints",
+            "Frumentius",
+            "Atnatewos",
+            "Ezana",
+            "None",
+            "All"
+        ],
+        answer: 0,
+        englishExplanation: "The Nine Saints, who came to Ethiopia mainly from the eastern Mediterranean region during the late 5th and early 6th centuries, played a major role in strengthening Christianity and establishing monastic traditions in the country. ⛪",
+        amharicExplanation: "ተስዓቱ ቅዱሳን (Nine Saints) በ5ኛው ክፍለ ዘመን መጨረሻና በ6ኛው መጀመሪያ ከምሥራቃዊ የሜዲትራኒያን አካባቢዎች ወደ ኢትዮጵያ መጥተው ክርስትናን በማጠናከርና የምንኩስና ሕይወትን በማስፋፋት ትልቅ ሚና ተጫውተዋል። 🕊️"
+    },
+
+    {
+        question: "The Horn of Africa involves the following countries except:",
+        options: [
+            "Ethiopia",
+            "Kenya",
+            "Eritrea",
+            "Djibouti",
+            "None",
+            "All"
+        ],
+        answer: 1,
+        englishExplanation: "In the commonly used definition of the Horn of Africa, the core countries are Ethiopia, Eritrea, Djibouti, and Somalia. Kenya is generally classified as an East African country rather than one of the four core Horn countries. 🗺️",
+        amharicExplanation: "በተለምዶ የአፍሪካ ቀንድ (Horn of Africa) ዋና አገራት ኢትዮጵያ፣ ኤርትራ፣ ጅቡቲ እና ሶማሊያ ናቸው። ኬንያ ግን በአጠቃላይ የምስራቅ አፍሪካ አገር ተብላ ትመደባለች፣ ከአራቱ ዋና የአፍሪካ ቀንድ አገራት ውስጥ አትገባም። 📍"
+    }, {
+        question: "When considering the domestication of plants in Ethiopia during the Neolithic period, which of the following crops was NOT commonly cultivated?",
+        options: ["Teff", "Nug", "Wheat", "Enset"],
+        answer: 2,
+        englishExplanation: "🌾 Indigenous crops associated with early domestication in Ethiopia included teff, nug, enset, and finger millet. Wheat originated in the Fertile Crescent of the Near East and was introduced to Ethiopia later through historical contact and exchange.",
+        amharicExplanation: "🌾 በኢትዮጵያ በኒዮሊቲክ ዘመን በሀገር በቀል ደረጃ ከተለመዱት እፅዋት መካከል ጤፍ፣ ኑግ፣ እንሰት እና ዳጉሳ ይገኙበታል። ስንዴ ግን መነሻው በመካከለኛው ምስራቅ (Fertile Crescent) ሲሆን በኋላ በንግድና በሰዎች ግንኙነት ወደ ኢትዮጵያ የገባ ነው።"
+    },
+
+    {
+        question: "In the context of material culture during the Neolithic era in Ethiopia, what type of evidence has been found at sites like Emba-Fakeda, Aqordat, and Barentu?",
+        options: [
+            "Polished axes, ceramics, grinding stones, beads, and stone figures along with domesticated cattle remains.",
+            "Primitive weapons and hunting tools, indicating a continued reliance on hunting and gathering activities.",
+            "Rock shelters with evidence of fire pits used for cooking large game, along with basic farming tools.",
+            "Early written records on stone tablets describing agricultural techniques and crop yields."
+        ],
+        answer: 0,
+        englishExplanation: "🏺 Archaeological evidence from sites such as Emba-Fakeda, Aqordat, and Barentu includes polished stone axes, ceramics, grinding stones, beads, stone figures, and remains of domesticated cattle. These discoveries show the development of farming, animal domestication, and more settled communities.",
+        amharicExplanation: "🏺 እንደ እምባ-ፋከዳ፣ አቁርደት እና ባረንቱ ባሉ የኒዮሊቲክ ዘመን አርኪዮሎጂያዊ ስፍራዎች የተወለወሉ የድንጋይ መጥረቢያዎች፣ የሸክላ ዕቃዎች፣ የፈጨት ድንጋዮች፣ ዶቃዎች፣ የድንጋይ ምስሎች እና የቤት ከብቶች አጥንቶች ተገኝተዋል። እነዚህ ማስረጃዎች ግብርና፣ የእንስሳት ማርባት እና የተረጋጋ አኗኗር መስፋፋቱን ያሳያሉ።"
+    },
+
+    {
+        question: "Based on archaeological evidence, which site in Ethiopia has yielded agricultural stone tools, providing insight into early farming practices during the Neolithic period?",
+        options: [
+            "Laga Oda rock shelter",
+            "Gobodara rock shelter near Aksum",
+            "Lake Basaqa near Matahara",
+            "Lalibela Cave near Lake Tana"
+        ],
+        answer: 1,
+        englishExplanation: "⛏️ Gobodara rock shelter near Aksum is an important archaeological site where stone tools associated with agricultural processing and plant harvesting were discovered. These tools provide evidence about early farming activities during the Neolithic period.",
+        amharicExplanation: "⛏️ በአክሱም አቅራቢያ የሚገኘው ጎቦደራ ዋሻ በኒዮሊቲክ ዘመን ከግብርና እና ከእፅዋት ማሰባሰብ ጋር የተያያዙ የድንጋይ መሣሪያዎች የተገኙበት ጠቃሚ አርኪዮሎጂያዊ ስፍራ ነው። እነዚህ መሣሪያዎች ቀደምት የግብርና ልምዶችን ለመረዳት ይረዳሉ።"
+    },
+
+    {
+        question: "What is the significance of the domesticated cattle and plants found at sites like Lalibela Cave and Lake Basaqa in terms of understanding the broader patterns of the Neolithic Revolution in Ethiopia?",
+        options: [
+            "They provide evidence that domesticated cattle and plants were used for religious rituals rather than sustenance, showing a cultural shift.",
+            "These findings suggest that domesticated cattle and plants were a key part of Ethiopia's Neolithic agricultural economy, marking a major transformation in human lifestyle.",
+            "The domesticated cattle and plants found at these sites demonstrate that early humans continued to rely mainly on hunting, with domestication playing a minor role."
+        ],
+        answer: 1,
+        englishExplanation: "🌱 The remains of domesticated plants and cattle show that people were increasingly producing their own food instead of depending mainly on hunting and gathering. This represents a major change toward agriculture, animal husbandry, and more settled communities.",
+        amharicExplanation: "🌱 በላሊበላ ዋሻ እና በባሰቃ ሀይቅ አካባቢ የተገኙ የተለመዱ እፅዋትና የቤት እንስሳት ቅሪቶች ሰዎች ምግባቸውን በአደንና በለቀማ ብቻ ከማግኘት ይልቅ ራሳቸው ማምረትና እንስሳትን ማርባት መጀመራቸውን ያሳያሉ። ይህም ወደ ግብርናና የተረጋጋ አኗኗር የተደረገ ትልቅ ለውጥ ነው።"
+    },
+
+    {
+        question: "Considering the linguistic diversity in Ethiopia and the Horn, which of the following is NOT part of the Cushitic language family according to its classification?",
+        options: ["Oromo", "Hadiya", "Beja", "Gamo"],
+        answer: 3,
+        englishExplanation: "🗣️ Gamo is classified within the Omotic language family, not the Cushitic family. Oromo, Hadiya, and Beja are traditionally classified among the Cushitic languages of the Horn of Africa.",
+        amharicExplanation: "🗣️ ጋሞ በኦሞቲክ (Omotic) የቋንቋ ቤተሰብ የሚመደብ ሲሆን የኩሺቲክ አካል አይደለም። ኦሮሞ፣ ሀዲያ እና በጃ ግን በተለምዶ በኩሺቲክ የቋንቋ ቤተሰብ ውስጥ ይመደባሉ።"
+    },
+
+    {
+        question: "Based on the settlement patterns in the Horn of Africa, what was one of the major factors that significantly influenced the distribution of people in the region?",
+        options: [
+            "The migration of Cushitic groups from West Africa, followed by large-scale urbanization efforts.",
+            "Environmental, socio-economic, and political processes that continually reshaped where and how people settled.",
+            "The migration of Semitic groups from southern Arabia into the fertile lowlands of western Ethiopia.",
+            "The settlement of Nilotic people in the highland regions of Ethiopia, displacing Cushitic and Semitic groups."
+        ],
+        answer: 1,
+        englishExplanation: "🌍 The distribution of people in Ethiopia and the Horn was influenced by several connected factors, including environmental changes, economic activities, migration, social relationships, and political developments. These factors continually changed where communities lived and how they organized their settlements.",
+        amharicExplanation: "🌍 በኢትዮጵያና በቀንድ አፍሪካ የሰዎች ስርጭትና አሰፋፈር በአካባቢያዊ ለውጦች፣ በኢኮኖሚ እንቅስቃሴዎች፣ በፍልሰት፣ በማህበራዊ ግንኙነቶችና በፖለቲካዊ ሂደቶች ተፅዕኖ ስር ነበር። እነዚህ ሂደቶች ሰዎች የት እንደሚኖሩና እንዴት እንደሚሰፍሩ በተደጋጋሚ ቀይረዋል።"
+    },
+
+    {
+        question: "In the context of economic formations in Ethiopia and the Horn, what major form of livelihood is primarily practiced by the Karayu and Borana Oromo groups?",
+        options: [
+            "Agriculture focused on sorghum and millet cultivation in the lowlands.",
+            "Mixed farming involving metallurgy and weaving along the Omo River basin.",
+            "Pastoralism involving the production of camel, goat, and cattle, often relying on nearby rivers.",
+            "Shifting agriculture with high economic value placed on cotton and apiculture."
+        ],
+        answer: 2,
+        englishExplanation: "🐪 The Karayu and Borana Oromo are well-known pastoral communities. Their livelihoods depend heavily on livestock such as cattle, goats, sheep, and camels, with seasonal movement often determined by the availability of water and grazing land.",
+        amharicExplanation: "🐪 የከረዩና የቦረና ኦሮሞ ማህበረሰቦች ዋነኛ የኑሮ መሠረታቸው እንስሳትን ማርባት (Pastoralism) ነው። በተለይም ከብት፣ ፍየል፣ በግ እና ግመል ያረባሉ፤ በየወቅቱም ውኃና የግጦሽ መሬት በሚገኝበት አቅጣጫ ይንቀሳቀሳሉ።"
+    },
+
+    {
+        question: "Which of the following is NOT part of the Afro-Asiatic language super family in Ethiopia and the Horn?",
+        options: ["Beja", "Sidama", "Berta", "Ge'ez"],
+        answer: 2,
+        englishExplanation: "🔤 Berta is generally classified within the Nilo-Saharan language grouping rather than Afro-Asiatic. Beja and Sidama are Cushitic languages, while Ge'ez belongs to the Semitic branch; Cushitic and Semitic are branches of Afro-Asiatic.",
+        amharicExplanation: "🔤 በርታ (Berta) በአፍሮ-እስያቲክ ሳይሆን በናይሎ-ሳሃራን (Nilo-Saharan) የቋንቋ ምድብ ውስጥ ይመደባል። በጃና ሲዳማ የኩሺቲክ ቋንቋዎች ሲሆኑ፣ ግዕዝ ደግሞ የሴማቲክ ቅርንጫፍ ነው፤ ኩሺቲክና ሴማቲክ ሁለቱም የአፍሮ-እስያቲክ ቤተሰብ ክፍሎች ናቸው።"
+    },
+
+    {
+        question: "Regarding the economic activities of the Omotic groups in Ethiopia, which of the following statements accurately describes their livelihood?",
+        options: [
+            "All Omotic groups primarily practiced fishing and shifting cultivation along the western lowlands of Ethiopia.",
+            "The Omotic groups in northern Omo specialized in mixed farming and trade, while those in southern Omo focused more on pastoralism and fishing.",
+            "The Omotic groups exclusively relied on metallurgy and craft production in the highlands, avoiding agriculture altogether.",
+            "The Omotic groups primarily relied on apiculture and hunting for sustenance, with limited involvement in trade."
+        ],
+        answer: 1,
+        englishExplanation: "🌾 Omotic-speaking communities have developed different livelihoods according to their environments. Many groups in the northern Omo area practice intensive mixed farming and trade, while several groups in the southern Omo area depend more heavily on pastoralism, fishing, and flood-retreat agriculture.",
+        amharicExplanation: "🌾 የኦሞቲክ ቋንቋ ተናጋሪ ማህበረሰቦች እንደ አካባቢያቸው የተለያዩ የኑሮ ዘዴዎችን ይከተላሉ። በሰሜናዊ ኦሞ ያሉ ብዙ ቡድኖች በተቀላቀለ እርሻና ንግድ ላይ ሲሰማሩ፣ በደቡባዊ ኦሞ ያሉ አንዳንድ ቡድኖች ደግሞ በእንስሳት እርባታ፣ በአሳ ማጥመድና በጎርፍ ወቅት የሚመረኮዝ እርሻ ይበልጥ ይተማመናሉ።"
+    },
+
+    {
+        question: "With regard to the historical movement and settlement patterns, which linguistic group is noted for having evolved to be the largest in Ethiopia and the Horn, spreading from Sudan to Tanzania?",
+        options: ["Semitic", "Cushitic", "Omotic", "Nilo-Saharan"],
+        answer: 1,
+        englishExplanation: "🧭 Cushitic is one of the major language groupings of the Horn of Africa and has a wide geographical distribution. Cushitic-speaking communities are found across areas including Ethiopia, Eritrea, Djibouti, Somalia, Kenya, and parts of Tanzania.",
+        amharicExplanation: "🧭 ኩሺቲክ (Cushitic) በቀንድ አፍሪካ ውስጥ ከፍተኛ ስርጭት ያለው ዋነኛ የቋንቋ ቡድን ነው። የኩሺቲክ ቋንቋዎች በኢትዮጵያ፣ ኤርትራ፣ ጅቡቲ፣ ሶማሊያ፣ ኬንያ እና በከፊል ታንዛኒያ ይገኛሉ።"
+    },
+
+    {
+        question: "Considering the major linguistic classifications in Ethiopia and the Horn, which of the following linguistic families has historically experienced a significant reduction in its number of speakers due to social phenomena like warfare and migration?",
+        options: ["Cushitic", "Omotic", "Nilo-Saharan", "Semitic"],
+        answer: 1,
+        englishExplanation: "🕊️ Omotic-speaking communities historically occupied wider areas than many of their present-day territories. Warfare, migration, political expansion, and cultural integration with neighboring communities contributed to changes in their distribution and, in some cases, reductions in the number of speakers.",
+        amharicExplanation: "🕊️ የኦሞቲክ ቋንቋ ተናጋሪዎች በታሪክ ውስጥ ከዛሬው የበለጠ ሰፊ ቦታዎችን ይይዙ ነበር። ጦርነት፣ የሕዝብ ፍልሰት፣ የፖለቲካ መስፋፋትና ከጎረቤት ማህበረሰቦች ጋር መዋሃድ በስርጭታቸውና በተናጋሪዎቻቸው ቁጥር ላይ ለውጥ አምጥቷል።"
+    },
+
+    {
+        question: "When examining the economic activities in the western lowland region of Ethiopia, which of the following is NOT a predominant economic activity in that area?",
+        options: [
+            "Apiculture",
+            "Shifting agriculture focused on sorghum",
+            "Fishing along the Blue Nile",
+            "Sedentary agriculture involving enset and Teff cultivation"
+        ],
+        answer: 3,
+        englishExplanation: "🍯 The western lowlands support activities such as beekeeping, shifting cultivation of crops like sorghum, and fishing around major rivers. Sedentary farming centered on enset and teff is more strongly associated with suitable highland environments.",
+        amharicExplanation: "🍯 በምዕራብ ኢትዮጵያ ቆላማ አካባቢዎች ንብ ማርባት፣ እንደ ማሽላ ያሉ ሰብሎችን በመዝራት የሚካሄድ እርሻ እና በዋና ወንዞች ዳርቻ አሳ ማጥመድ ይገኛሉ። በእንሰትና በጤፍ ላይ የተመሠረተ ቋሚ እርሻ ግን በተለይ ለደጋማ አካባቢዎች የበለጠ ተስማሚ ነው።"
+    },
+
+    {
+        question: "In terms of the pastoral economy in the eastern lowland regions of Ethiopia, which of the following groups is primarily associated with a pastoral lifestyle centered on camel, goat, and cattle herding?",
+        options: ["Tigrigna", "Somali", "Wolayta", "Gurage"],
+        answer: 1,
+        englishExplanation: "🐐 The Somali people of the eastern lowlands have traditionally depended heavily on pastoralism. Camels, goats, sheep, and cattle are important livestock, and movement is often connected to the availability of water and pasture in the dry environment.",
+        amharicExplanation: "🐐 በምስራቅ ኢትዮጵያ ቆላማ አካባቢዎች የሚኖሩ የሶማሌ ማህበረሰቦች በተለምዶ በእንስሳት እርባታ ላይ በከፍተኛ ደረጃ ይመረኮዛሉ። ግመል፣ ፍየል፣ በግ እና ከብት ዋና የእንስሳት ሀብቶቻቸው ሲሆኑ፣ እንቅስቃሴያቸውም በውኃና በግጦሽ መገኘት ይመራል።"
+    },
+
+    {
+        question: "The distribution of Omotic peoples in Ethiopia has been largely influenced by historical factors. In which region do the majority of Omotic-speaking peoples currently reside, despite having extended further north in earlier times?",
+        options: [
+            "Along the Blue Nile",
+            "The lowland plains of eastern Ethiopia",
+            "The southwestern region along the Omo River basin",
+            "The highlands of northern Tigray"
+        ],
+        answer: 2,
+        englishExplanation: "🏞️ Most Omotic-speaking communities today are concentrated in southwestern Ethiopia, particularly around the Omo River basin. Historical movements and interactions with neighboring populations contributed to changes in the geographical distribution of Omotic-speaking peoples.",
+        amharicExplanation: "🏞️ በአሁኑ ጊዜ አብዛኛዎቹ የኦሞቲክ ቋንቋ ተናጋሪ ማህበረሰቦች በደቡብ ምዕራብ ኢትዮጵያ፣ በተለይም በኦሞ ወንዝ ተፋሰስ አካባቢ ይገኛሉ። በታሪክ የተከሰቱ የሕዝብ እንቅስቃሴዎችና ከሌሎች ሕዝቦች ጋር የነበሩ ግንኙነቶች የስርጭታቸውን አቀማመጥ ቀይረዋል።"
+    },
+
+    {
+        question: "Which of the following is a distinguishing feature of the indigenous religions in Ethiopia and the Horn?",
+        options: [
+            "Polytheism with multiple gods of equal importance",
+            "Monotheism with belief in one Supreme Being, alongside the veneration of spirits associated with natural phenomena",
+            "Worship of ancestors as the primary form of religious expression",
+            "Exclusive reliance on written scripture for religious practices"
+        ],
+        answer: 1,
+        englishExplanation: "☀️ Many indigenous religious traditions in Ethiopia and the Horn recognize one Supreme Being or Creator while also acknowledging spiritual powers connected with nature, ancestors, or particular places. These spirits are not necessarily understood as separate gods equal to the Supreme Being.",
+        amharicExplanation: "☀️ ብዙ የኢትዮጵያና የቀንድ አፍሪካ ሀገር በቀል እምነቶች አንድ የበላይ ፈጣሪ አምላክን ያምናሉ። ከዚህ ጋር ተያይዞም ከተፈጥሮ፣ ከአያቶች ወይም ከተወሰኑ ቦታዎች ጋር የተያያዙ መንፈሳዊ ኃይሎችን ያከብራሉ። እነዚህ መንፈሶች ከበላይ ፈጣሪው ጋር እኩል የሆኑ አማልክት እንደሆኑ ግን አይቆጠሩም።"
+    },
+
+    {
+        question: "The Waqeffanna religion of the Oromo attributes fertility to which spirit?",
+        options: ["Chato", "Qasa", "Atete", "Ekera"],
+        answer: 2,
+        englishExplanation: "🌸 Atete is associated with fertility and motherhood in Oromo Waaqeffanna tradition. It is connected with human reproduction, children, and the multiplication of livestock, and traditional ceremonies associated with Atete have particularly involved women.",
+        amharicExplanation: "🌸 በኦሮሞ ዋቄፈና ባህላዊ እምነት አቴቴ (Atete) ከምርታማነትና ከእናትነት ጋር የተያያዘች ናት። ከሰው ልጅ መራባት፣ ከልጆች መብዛት እና ከእንስሳት መራባት ጋር ትያያዛለች፤ ከአቴቴ ጋር የተያያዙ ባህላዊ ሥነ-ሥርዓቶችም በተለይ በሴቶች ይከበራሉ።"
+    },
+
+    {
+        question: "What is the name of the annual Oromo thanksgiving festival that takes place near an ever-flowing river?",
+        options: ["Gada", "Dalaga", "Irrecha", "Birbo"],
+        answer: 2,
+        englishExplanation: "🌊 Irrecha, also spelled Irreechaa, is an Oromo thanksgiving festival. It is traditionally celebrated near water, including rivers and lakes, where people express gratitude to Waaqa for life, nature, rain, and the blessings of the season.",
+        amharicExplanation: "🌊 እሬቻ (Irrecha/Irreechaa) የኦሮሞ ሕዝብ የምስጋና በዓል ነው። በውኃ አካባቢ፣ በወንዞችና በሀይቆች ዳርቻ ተሰብስበው ለዋቃ ለሕይወት፣ ለተፈጥሮ፣ ለዝናብና ለተትረፈረፈ ምርት ምስጋና ይገልጻሉ።"
+    },
+
+    {
+        question: "Among the Hadiya, the Supreme Being is known as:",
+        options: ["Waaq", "Waa", "Mageno", "Tosa"],
+        answer: 1,
+        englishExplanation: "🕯️ In the traditional religious belief of the Hadiya, the Supreme Being and Creator is known as Waa. Waa is understood as the highest divine power responsible for creation and the order of life.",
+        amharicExplanation: "🕯️ በሀዲያ ማህበረሰብ ባህላዊ እምነት የበላይ አምላክና የዓለም ፈጣሪ «ዋ» (Waa) ተብሎ ይጠራል። ዋ ከፍተኛ መለኮታዊ ኃይል ሆኖ የፍጥረትና የሕይወት ሥርዓት ምንጭ እንደሆነ ይታመናል።"
+    },
+
+    {
+        question: "In Kambata and Gedeo societies, what is the name of the Supreme Being?",
+        options: ["Negita", "Diban", "Magano", "Ha'o"],
+        answer: 2,
+        englishExplanation: "🙏 In the indigenous religious traditions of the Kambata and Gedeo, the Supreme Being is known as Magano. Magano is regarded as the Creator and highest divine power who sustains the universe.",
+        amharicExplanation: "🙏 በከምባታና በጌዴኦ ማህበረሰቦች ባህላዊ እምነት የበላይ አምላክ «ማጋኖ» (Magano) ተብሎ ይጠራል። ማጋኖ የዓለም ፈጣሪና የፍጥረት ከፍተኛ መለኮታዊ ኃይል እንደሆነ ይታመናል።"
+    },
+
+    {
+        question: "The Bete-Israel people in Ethiopia trace their religious roots to which biblical figure or event?",
+        options: [
+            "The Tribe of Judah's return from the Babylonian exile",
+            "The Exodus of the Israelites led by Moses",
+            "Menilek I, the son of King Solomon and the Queen of Sheba",
+            "The rebuilding of the Second Temple in Jerusalem",
+            "None",
+            "All"
+        ],
+        answer: 2,
+        englishExplanation: "📜 According to Ethiopian tradition, especially the account associated with the Kebra Nagast, the Bete-Israel tradition is connected in Ethiopian historical narratives with Menilek I, who is described as the son of King Solomon and Queen Sheba (Makeda). This is a traditional account rather than an uncontested historical explanation.",
+        amharicExplanation: "📜 በኢትዮጵያ ባህላዊ ትርክት፣ በተለይም ከክብረ ነገሥት (Kebra Nagast) ጋር በተያያዘ ትርክት፣ የቤተ-እስራኤል ሃይማኖታዊ ሥር ከንጉሥ ሰሎሞንና ከሳባ ንግሥት ማክዳ ልጅ ከቀዳማዊ ምኒልክ ጋር ይያያዛል። ይህ ግን የኢትዮጵያ ባህላዊ ትርክት እንጂ በሁሉም የታሪክ ምሁራን የተረጋገጠ አንድ ወጥ ታሪካዊ ማብራሪያ አይደለም።"
+    },
+
+    {
+        question: "Christianity became the state religion of Ethiopia during the reign of which Aksumite king?",
+        options: [
+            "King Menilek I",
+            "King Ezana",
+            "King Lalibela",
+            "King Ashama b. Abjar",
+            "None",
+            "All"
+        ],
+        answer: 1,
+        englishExplanation: "✝️ Christianity became the official religion of the Aksumite kingdom during the reign of King Ezana in the fourth century AD. The conversion of Ezana is traditionally associated with the influence of Frumentius, later known as Abba Salama, who helped establish Christianity in Aksum.",
+        amharicExplanation: "✝️ ክርስትና በአክሱም መንግሥት ይፋዊ ሃይማኖት ሆኖ የተቀበለው በ4ኛው ክፍለ ዘመን በንጉሥ ዔዛና ዘመነ መንግሥት ነው። የዔዛና መቀየር በፍሬምናጦስ (በኋላ አባ ሰላማ) ተጽዕኖ ጋር ይያያዛል፣ እሱም በአክሱም ክርስትና እንዲመሰረት ከፍተኛ ሚና ነበረው።"
+    },
+
+    {
+        question: "What role did the Nine Saints play in the expansion of Christianity in Ethiopia during the fifth century?",
+        options: [
+            "They built many churches and monasteries across Ethiopia",
+            "They translated religious texts into Geez",
+            "They spread Christianity to the masses",
+            "All of the above",
+            "None",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "⛪ The Nine Saints played an important role in strengthening Christianity in Ethiopia during the fifth and early sixth centuries. They established religious centers and monasteries, contributed to the translation and teaching of Christian texts in Ge'ez, and helped spread Christianity beyond the royal court.",
+        amharicExplanation: "⛪ ዘጠኙ ቅዱሳን በ5ኛውና በ6ኛው ክፍለ ዘመን መጀመሪያ በኢትዮጵያ ክርስትናን ለማጠናከር ከፍተኛ ሚና ተጫውተዋል። የሃይማኖት ማዕከላትና ገዳማትን መስርተዋል፣ የክርስትና ጽሑፎችን በግዕዝ ለማስተማርና ለማስፋፋት አስተዋጽኦ አድርገዋል፣ እንዲሁም ክርስትና ከንጉሣዊ ቤተ-መንግሥት ባሻገር ወደ ሕዝቡ እንዲደርስ ረድተዋል።"
+    },
+
+    {
+        question: "Islam spread into the Horn of Africa through peaceful means primarily associated with which of the following?",
+        options: [
+            "Armed conquest by Muslim caliphs",
+            "Conversion efforts by the Prophet Mohammed",
+            "Trade routes and preaching by Muslim merchants and clerics",
+            "Mass migration of Muslims from the Arabian Peninsula",
+            "None",
+            "All"
+        ],
+        answer: 2,
+        englishExplanation: "🕌 Islam spread into many parts of the Horn of Africa through trade networks and the activities of Muslim merchants, scholars, and religious teachers. Commercial connections across the Red Sea and inland trade routes created opportunities for Islamic beliefs and practices to spread peacefully.",
+        amharicExplanation: "🕌 እስልምና በቀንድ አፍሪካ ወደ ብዙ አካባቢዎች የተስፋፋው በንግድ መስመሮችና በሙስሊም ነጋዴዎች፣ ምሁራንና የሃይማኖት መምህራን እንቅስቃሴ ነው። በቀይ ባሕርና በየብስ የንግድ ግንኙነቶች በኩል የእስልምና እምነትና ልምዶች በሰላማዊ መንገድ ለመስፋፋት እድል አግኝተዋል።"
+    },
+
+    {
+        question: "Which of the following orders was instrumental in expanding Islam into regions like Gibe and southeastern Ethiopia?",
+        options: [
+            "Qadiriyya",
+            "Tijaniyya",
+            "Summaniyya",
+            "All of the above",
+            "None",
+            "All"
+        ],
+        answer: 3,
+        englishExplanation: "📿 Sufi orders such as the Qadiriyya, Tijaniyya, and Sammaniyya contributed to the spread of Islam in different parts of Ethiopia. Their religious teachers and networks established centers of learning and helped connect Muslim communities in regions including Gibe and southeastern Ethiopia.",
+        amharicExplanation: "📿 እንደ ቃድርያ፣ ቲጃኒያ እና ሰማንያ ያሉ የሱፊ መንፈሳዊ ትዕዛዞች በተለያዩ የኢትዮጵያ ክፍሎች እስልምና እንዲስፋፋ አስተዋጽኦ አድርገዋል። የሃይማኖት መምህራኖቻቸውና መንፈሳዊ መረቦቻቸው የትምህርት ማዕከላትን በመመስረት በጊቤና በደቡብ ምስራቅ ኢትዮጵያ እስልምና እንዲስፋፋ ረድተዋል።"
+    }];
 
 quizData["history"]["3"] = [
 
