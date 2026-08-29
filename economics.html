@@ -10,329 +10,12 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>📊 Economics Chapters</title>
+    <title>📊 Economics</title>
 
     <link
         rel="stylesheet"
         href="style.css"
     >
-
-    <style>
-
-        /* =========================================
-           ECONOMICS CHAPTER PAGE
-        ========================================= */
-
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(
-                180deg,
-                #315fca,
-                #5eb7cf
-            );
-        }
-
-
-        /* =========================================
-           HEADER
-        ========================================= */
-
-        .economics-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            padding: 15px 20px;
-
-            color: white;
-        }
-
-
-        .economics-back {
-            width: 45px;
-            height: 45px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background: rgba(120, 70, 180, 0.8);
-
-            color: white;
-
-            text-decoration: none;
-
-            font-size: 28px;
-        }
-
-
-        .economics-title {
-            font-size: 25px;
-            font-weight: 700;
-
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            margin: 0 15px;
-        }
-
-
-        .economics-help {
-            width: 45px;
-            height: 45px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 14px;
-
-            background: rgba(120, 70, 180, 0.8);
-
-            color: white;
-
-            font-size: 24px;
-        }
-
-
-        /* =========================================
-           CHAPTER CONTAINER
-        ========================================= */
-
-        .economics-chapters {
-            padding: 25px 18px 50px;
-        }
-
-
-        /* =========================================
-           CHAPTER CARD
-        ========================================= */
-
-        .economics-card {
-
-            display: flex;
-            align-items: center;
-
-            width: 100%;
-
-            min-height: 115px;
-
-            margin-bottom: 25px;
-
-            padding: 18px 18px;
-
-            box-sizing: border-box;
-
-            background: rgba(255, 255, 255, 0.94);
-
-            border-radius: 25px;
-
-            box-shadow:
-                0 8px 18px rgba(0, 0, 0, 0.16);
-
-            text-decoration: none;
-
-            color: #111;
-
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
-        }
-
-
-        .economics-card:hover {
-
-            transform: translateY(-3px);
-
-            box-shadow:
-                0 12px 25px rgba(0, 0, 0, 0.20);
-        }
-
-
-        /* =========================================
-           PROGRESS CIRCLE
-        ========================================= */
-
-        .economics-progress {
-
-            width: 76px;
-            height: 76px;
-
-            flex-shrink: 0;
-
-            border-radius: 50%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: 18px;
-            font-weight: 700;
-
-            color: #d95643;
-
-            background:
-
-                radial-gradient(
-                    circle,
-                    white 58%,
-                    transparent 59%
-                ),
-
-                conic-gradient(
-                    #df543f var(--progress),
-                    #eeeeee 0
-                );
-        }
-
-
-        /* =========================================
-           CHAPTER INFORMATION
-        ========================================= */
-
-        .economics-info {
-
-            flex: 1;
-
-            min-width: 0;
-
-            margin-left: 22px;
-        }
-
-
-        .economics-badge {
-
-            display: inline-block;
-
-            padding: 5px 13px;
-
-            margin-bottom: 7px;
-
-            border-radius: 8px;
-
-            background: #e5dff0;
-
-            border: 1px solid #c9bddc;
-
-            color: #4e4658;
-
-            font-size: 15px;
-
-            font-weight: 700;
-        }
-
-
-        .economics-info h2 {
-
-            margin: 0;
-
-            font-size: 22px;
-
-            line-height: 1.35;
-
-            font-weight: 700;
-
-            color: #111;
-        }
-
-
-        /* =========================================
-           ARROW
-        ========================================= */
-
-        .economics-arrow {
-
-            flex-shrink: 0;
-
-            margin-left: 10px;
-
-            font-size: 38px;
-
-            font-weight: 300;
-
-            color: #777;
-
-            line-height: 1;
-        }
-
-
-        /* =========================================
-           MOBILE
-        ========================================= */
-
-        @media (max-width: 500px) {
-
-            .economics-title {
-                font-size: 21px;
-            }
-
-            .economics-card {
-                min-height: 115px;
-                padding: 16px;
-            }
-
-            .economics-progress {
-                width: 70px;
-                height: 70px;
-                font-size: 16px;
-            }
-
-            .economics-info {
-                margin-left: 16px;
-            }
-
-            .economics-info h2 {
-                font-size: 20px;
-            }
-
-            .economics-arrow {
-                font-size: 34px;
-            }
-        }
-
-
-        /* =========================================
-           DARK MODE
-        ========================================= */
-
-        .dark-mode .economics-card {
-            background: #20242b;
-            color: white;
-        }
-
-        .dark-mode .economics-info h2 {
-            color: white;
-        }
-
-        .dark-mode .economics-badge {
-            background: #393246;
-            color: #eee;
-            border-color: #51475f;
-        }
-
-        .dark-mode .economics-progress {
-            background:
-                radial-gradient(
-                    circle,
-                    #20242b 58%,
-                    transparent 59%
-                ),
-                conic-gradient(
-                    #df543f var(--progress),
-                    #444 0
-                );
-        }
-
-        .dark-mode .economics-arrow {
-            color: #bbb;
-        }
-
-    </style>
 
 </head>
 
@@ -340,275 +23,334 @@
 <body>
 
 
-<!-- =========================================
+<!-- =================================================
      ECONOMICS HEADER
-========================================= -->
+================================================= -->
 
-<header class="economics-header">
+<h1>
+    📊 Economics
+</h1>
 
-    <a
-        href="index.html"
-        class="economics-back"
-        aria-label="Back Home"
-    >
-        ←
+<p>
+    <b>BDU Freshman Course</b>
+</p>
+
+
+<!-- =================================================
+     CHAPTERS / NOTES
+     KEEP THIS SECTION ABOVE RESOURCES
+================================================= -->
+
+<h2>
+    📚 Chapters
+</h2>
+
+
+<p>
+    📗
+    <a href="economics-chapter1.html">
+        Chapter 1
+    </a>
+</p>
+
+
+<p>
+    📗
+    <a href="economics-chapter2.html">
+        Chapter 2
+    </a>
+</p>
+
+
+<p>
+    📗
+    <a href="economics-chapter3.html">
+        Chapter 3
+    </a>
+</p>
+
+
+<p>
+    📗
+    <a href="economics-chapter4.html">
+        Chapter 4
+    </a>
+</p>
+
+
+<p>
+    📗
+    <a href="economics-chapter5.html">
+        Chapter 5
+    </a>
+</p>
+
+
+<p>
+    📗
+    <a href="economics-chapter6.html">
+        Chapter 6
+    </a>
+</p>
+
+
+<!-- =================================================
+     RESOURCES
+================================================= -->
+
+<h2>
+    📌 Resources
+</h2>
+
+
+<p>
+
+    <a href="economics-notes.html">
+        📄 Full Notes
     </a>
 
-
-    <h1 class="economics-title">
-        Economics Chapters
-    </h1>
+</p>
 
 
-    <div class="economics-help">
-        ?
+<p>
+    🎥 Video Tutorial
+</p>
+
+
+<!-- =================================================
+     CHAPTER QUIZZES
+     BELOW RESOURCES
+================================================= -->
+
+<h2>
+    📝 Chapter Quizzes
+</h2>
+
+
+<!-- =================================================
+     CHAPTER 1 QUIZ
+================================================= -->
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
     </div>
 
-</header>
+    <div class="quiz-info">
 
+        <span class="quiz-badge">
+            Chapter 1
+        </span>
 
+        <h3>
+            Basics of Economics
+        </h3>
 
-<!-- =========================================
-     ECONOMICS CHAPTERS
-========================================= -->
-
-<main class="economics-chapters">
-
-
-    <!-- =====================================
-         CHAPTER 1
-    ====================================== -->
+    </div>
 
     <a
-        href="economics-chapter1.html"
-        class="economics-card"
+        href="quiz.html?subject=economics&chapter=1"
+        class="quiz-arrow"
+        aria-label="Open Economics Chapter 1 Quiz"
     >
-
-        <div
-            class="economics-progress"
-            style="--progress: 84%;"
-        >
-            84%
-        </div>
-
-
-        <div class="economics-info">
-
-            <span class="economics-badge">
-                Chapter 1
-            </span>
-
-            <h2>
-                Basics of Economics
-            </h2>
-
-        </div>
-
-
-        <div class="economics-arrow">
-            ›
-        </div>
-
+        ➜
     </a>
 
+</div>
 
 
-    <!-- =====================================
-         CHAPTER 2
-    ====================================== -->
+<!-- =================================================
+     CHAPTER 2 QUIZ
+================================================= -->
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 2
+        </span>
+
+        <h3>
+            Theory of Demand and Supply
+        </h3>
+
+    </div>
 
     <a
-        href="economics-chapter2.html"
-        class="economics-card"
+        href="quiz.html?subject=economics&chapter=2"
+        class="quiz-arrow"
+        aria-label="Open Economics Chapter 2 Quiz"
     >
-
-        <div
-            class="economics-progress"
-            style="--progress: 52%;"
-        >
-            52%
-        </div>
-
-
-        <div class="economics-info">
-
-            <span class="economics-badge">
-                Chapter 2
-            </span>
-
-            <h2>
-                Theory of Demand and Supply
-            </h2>
-
-        </div>
-
-
-        <div class="economics-arrow">
-            ›
-        </div>
-
+        ➜
     </a>
 
+</div>
 
 
-    <!-- =====================================
-         CHAPTER 3
-    ====================================== -->
+<!-- =================================================
+     CHAPTER 3 QUIZ
+================================================= -->
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 3
+        </span>
+
+        <h3>
+            Theory of Consumer Behaviour
+        </h3>
+
+    </div>
 
     <a
-        href="economics-chapter3.html"
-        class="economics-card"
+        href="quiz.html?subject=economics&chapter=3"
+        class="quiz-arrow"
+        aria-label="Open Economics Chapter 3 Quiz"
     >
-
-        <div
-            class="economics-progress"
-            style="--progress: 69%;"
-        >
-            69%
-        </div>
-
-
-        <div class="economics-info">
-
-            <span class="economics-badge">
-                Chapter 3
-            </span>
-
-            <h2>
-                Theory of Consumer Behaviour
-            </h2>
-
-        </div>
-
-
-        <div class="economics-arrow">
-            ›
-        </div>
-
+        ➜
     </a>
 
+</div>
 
 
-    <!-- =====================================
-         CHAPTER 4
-    ====================================== -->
+<!-- =================================================
+     CHAPTER 4 QUIZ
+================================================= -->
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 4
+        </span>
+
+        <h3>
+            The Theory of Production and Cost
+        </h3>
+
+    </div>
 
     <a
-        href="economics-chapter4.html"
-        class="economics-card"
+        href="quiz.html?subject=economics&chapter=4"
+        class="quiz-arrow"
+        aria-label="Open Economics Chapter 4 Quiz"
     >
-
-        <div
-            class="economics-progress"
-            style="--progress: 42%;"
-        >
-            42%
-        </div>
-
-
-        <div class="economics-info">
-
-            <span class="economics-badge">
-                Chapter 4
-            </span>
-
-            <h2>
-                The Theory of Production and Cost
-            </h2>
-
-        </div>
-
-
-        <div class="economics-arrow">
-            ›
-        </div>
-
+        ➜
     </a>
 
+</div>
 
 
-    <!-- =====================================
-         CHAPTER 5
-    ====================================== -->
+<!-- =================================================
+     CHAPTER 5 QUIZ
+================================================= -->
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 5
+        </span>
+
+        <h3>
+            Market Structure
+        </h3>
+
+    </div>
 
     <a
-        href="economics-chapter5.html"
-        class="economics-card"
+        href="quiz.html?subject=economics&chapter=5"
+        class="quiz-arrow"
+        aria-label="Open Economics Chapter 5 Quiz"
     >
-
-        <div
-            class="economics-progress"
-            style="--progress: 48%;"
-        >
-            48%
-        </div>
-
-
-        <div class="economics-info">
-
-            <span class="economics-badge">
-                Chapter 5
-            </span>
-
-            <h2>
-                Market Structure
-            </h2>
-
-        </div>
-
-
-        <div class="economics-arrow">
-            ›
-        </div>
-
+        ➜
     </a>
 
+</div>
 
 
-    <!-- =====================================
-         CHAPTER 6
-    ====================================== -->
+<!-- =================================================
+     CHAPTER 6 QUIZ
+================================================= -->
+
+<div class="quiz-card">
+
+    <div class="quiz-progress">
+        0%
+    </div>
+
+    <div class="quiz-info">
+
+        <span class="quiz-badge">
+            Chapter 6
+        </span>
+
+        <h3>
+            Fundamental Concepts of Macroeconomics
+        </h3>
+
+    </div>
 
     <a
-        href="economics-chapter6.html"
-        class="economics-card"
+        href="quiz.html?subject=economics&chapter=6"
+        class="quiz-arrow"
+        aria-label="Open Economics Chapter 6 Quiz"
     >
-
-        <div
-            class="economics-progress"
-            style="--progress: 0%;"
-        >
-            0%
-        </div>
-
-
-        <div class="economics-info">
-
-            <span class="economics-badge">
-                Chapter 6
-            </span>
-
-            <h2>
-                Fundamental Concepts of Macroeconomics
-            </h2>
-
-        </div>
-
-
-        <div class="economics-arrow">
-            ›
-        </div>
-
+        ➜
     </a>
 
-
-</main>
-
+</div>
 
 
-<!-- =========================================
+<!-- =================================================
+     BACK HOME
+================================================= -->
+
+<p style="text-align:center;">
+
+    <a
+        class="button"
+        href="index.html"
+    >
+        🏠 Back Home
+    </a>
+
+</p>
+
+
+<!-- =================================================
+     QUIZ PROGRESS
+================================================= -->
+
+<script src="quiz-progress.js"></script>
+
+
+<!-- =================================================
      ACCESS GUARD
-========================================= -->
+================================================= -->
 
 <script
     type="module"
@@ -617,5 +359,4 @@
 
 
 </body>
-
 </html>
