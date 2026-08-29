@@ -235,9 +235,27 @@
         "⭐ You are becoming Unique! 💎",
 
         "🌈 You are doing fantastic! 💪",
+        "👏 በጣም ጥሩ! በርታ! 💪",
+
+"🎉 እንኳን ደስ አለህ! በትክክል ነው! ✅",
+
+"🔥 አሪፍ! እንደዚህ ቀጥል! 🚀"
 
         "🎊 Great! You did it right! ✅"
+        
+"🎯 Brilliant! Your answer is absolutely correct! 🏆",
 
+"💎 Excellent thinking! You really understand this! 🌟",
+
+"🥇 Another victory! Keep up the amazing work! 🔥",
+
+"🧠 Sharp mind! You chose the right answer! 🎯",
+
+"👏 Fantastic choice! Your knowledge is shining! ✨",
+
+"🚀 Yes! You are moving closer to mastery! 💪",
+
+"🌟 Outstanding answer! Keep believing in yourself! 💎"
     ];
 
 
@@ -258,6 +276,23 @@
         "🤝 Keep learning and try another answer! 🎯",
 
         "🧐 Take another look and try again! 🔍"
+ "💪 ምንም አይደለም! እንደገና ሞክር! 🔄",
+
+"🌱 ተስፋ አትቁረጥ! በርታ! 💪",
+
+"🧠 ደግመህ አስብና ሞክር! ትችላለህ! 🎯"     
+        "🌱 No worries! Learn from this attempt and try again! 💪",
+"🔄 Almost there! Think carefully and choose again! 🧠",
+
+"💡 Great learners make mistakes! Keep going! 🌟",
+
+"🎯 Don't worry about the mistake! Focus and try again! 💪",
+
+"🔥 Stay strong! Every wrong answer teaches you something new! 🧠",
+
+"🧐 Think again! You still have another chance! 🔄",
+
+"🌈 Keep your confidence! The next attempt could be the one! 🚀"
 
     ];
 
