@@ -163,12 +163,8 @@
     // =================================================
     // USER ANSWERS
     //
-    // null  = not correctly answered yet
+    // null   = not correctly answered yet
     // number = correct answer index
-    //
-    // IMPORTANT:
-    // A WRONG answer does NOT get stored here.
-    // This allows the student to keep trying.
     // =================================================
 
     let userAnswers = [];
@@ -177,17 +173,17 @@
     // =================================================
     // WRONG ATTEMPTS
     //
-    // Each question stores the option indexes
-    // that the student has already tried incorrectly.
+    // IMPORTANT:
+    //
+    // Only the MOST RECENT wrong choice is stored.
     //
     // Example:
     //
-    // wrongAttempts[0] = [0, 1]
+    // Student taps A → A ❌
+    // Student taps B → A becomes NORMAL, B ❌
+    // Student taps C → B becomes NORMAL, C ❌
     //
-    // Means Question 1:
-    // A = wrong ❌
-    // B = wrong ❌
-    // C/D = still available
+    // This prevents old ❌ marks from remaining.
     // =================================================
 
     let wrongAttempts = [];
@@ -203,7 +199,7 @@
     // =================================================
     // WRONG ANSWERS
     //
-    // Counts wrong attempts.
+    // Counts every wrong attempt.
     // =================================================
 
     let wrongAnswers = 0;
@@ -295,20 +291,10 @@
 
         style.textContent = `
 
-            /* =========================================
-               OPTION BUTTON
-            ========================================= */
-
             .optionBtn {
-
                 position: relative;
-
             }
 
-
-            /* =========================================
-               ANSWER ICON
-            ========================================= */
 
             .unique-answer-icon {
 
@@ -345,10 +331,6 @@
             }
 
 
-            /* =========================================
-               WRONG ICON
-            ========================================= */
-
             .unique-answer-icon.wrong-icon {
 
                 background: #e34b50;
@@ -366,10 +348,6 @@
 
             }
 
-
-            /* =========================================
-               CORRECT ICON
-            ========================================= */
 
             .unique-answer-icon.correct-icon {
 
@@ -389,10 +367,6 @@
             }
 
 
-            /* =========================================
-               WRONG OPTION
-            ========================================= */
-
             .optionBtn.wrong {
 
                 color: #b43e43 !important;
@@ -405,10 +379,6 @@
             }
 
 
-            /* =========================================
-               CORRECT OPTION
-            ========================================= */
-
             .optionBtn.correct {
 
                 color: #278b4d !important;
@@ -420,10 +390,6 @@
 
             }
 
-
-            /* =========================================
-               FEEDBACK BOX
-            ========================================= */
 
             .unique-answer-feedback {
 
@@ -467,10 +433,6 @@
             }
 
 
-            /* =========================================
-               CORRECT FEEDBACK
-            ========================================= */
-
             .unique-answer-feedback.correct-feedback {
 
                 background:
@@ -503,10 +465,6 @@
 
             }
 
-
-            /* =========================================
-               INCORRECT FEEDBACK
-            ========================================= */
 
             .unique-answer-feedback.incorrect-feedback {
 
@@ -541,10 +499,6 @@
             }
 
 
-            /* =========================================
-               FEEDBACK TEXT
-            ========================================= */
-
             .unique-feedback-text {
 
                 display: block;
@@ -553,10 +507,6 @@
 
             }
 
-
-            /* =========================================
-               POP ANIMATION
-            ========================================= */
 
             @keyframes uniqueFeedbackPop {
 
@@ -593,10 +543,6 @@
             }
 
 
-            /* =========================================
-               ICON ANIMATION
-            ========================================= */
-
             @keyframes uniqueIconPop {
 
                 0% {
@@ -628,10 +574,6 @@
 
             }
 
-
-            /* =========================================
-               MOBILE
-            ========================================= */
 
             @media (max-width: 480px) {
 
@@ -910,11 +852,6 @@
         const totalQuestions =
             questions.length;
 
-
-        /*
-         * Only correctly answered questions
-         * count as answered.
-         */
 
         const answeredQuestions =
             userAnswers.filter(
@@ -1254,6 +1191,9 @@
 
     // =================================================
     // PREPARE WRONG ATTEMPTS
+    //
+    // Each question starts with NO current
+    // wrong selection.
     // =================================================
 
     wrongAttempts =
@@ -1461,10 +1401,6 @@
         isCorrect
     ) {
 
-        /*
-         * Remove an old icon first.
-         */
-
         const oldIcon =
             button.querySelector(
                 ".unique-answer-icon"
@@ -1520,6 +1456,128 @@
         button.appendChild(
             icon
         );
+
+    }
+
+
+    // =================================================
+    // RESET CURRENT QUESTION FEEDBACK
+    //
+    // THIS IS THE IMPORTANT FIX.
+    //
+    // Whenever another answer is selected:
+    //
+    // • Remove old ❌
+    // • Remove old green/red styling
+    // • Remove old motivational message
+    // • Make previous options normal again
+    // • Allow them to be selected again
+    //
+    // This means ONLY the latest selected answer
+    // receives feedback.
+    // =================================================
+
+    function resetQuestionFeedback(
+        questionIndex,
+        options,
+        questionCard,
+        explanationBox
+    ) {
+
+        const buttons =
+            options.querySelectorAll(
+                ".optionBtn"
+            );
+
+
+        buttons.forEach(
+            button => {
+
+                // Remove previous styling
+                button.classList.remove(
+                    "wrong"
+                );
+
+
+                button.classList.remove(
+                    "correct"
+                );
+
+
+                // Remove previous ❌ / ✅
+                const oldIcon =
+                    button.querySelector(
+                        ".unique-answer-icon"
+                    );
+
+
+                if (
+                    oldIcon
+                ) {
+
+                    oldIcon.remove();
+
+                }
+
+
+                /*
+                 * IMPORTANT:
+                 *
+                 * Re-enable every option.
+                 *
+                 * This allows the student to
+                 * change from A → B → C → D.
+                 */
+
+                button.disabled =
+                    false;
+
+            }
+        );
+
+
+        /*
+         * Remove previous motivational
+         * message.
+         */
+
+        const existingFeedback =
+            questionCard.querySelector(
+                ".unique-answer-feedback"
+            );
+
+
+        if (
+            existingFeedback
+        ) {
+
+            existingFeedback.remove();
+
+        }
+
+
+        /*
+         * Clear the stored current wrong
+         * selection.
+         */
+
+        wrongAttempts[questionIndex] = [];
+
+
+        /*
+         * Explanation must remain hidden
+         * until the correct answer is found.
+         */
+
+        if (
+            userAnswers[questionIndex] ===
+            null
+        ) {
+
+            explanationBox.style.display =
+                "none";
+
+        }
 
     }
 
@@ -1675,14 +1733,6 @@
             getQuestionOptions(
                 q
             );
-
-
-        // =============================================
-        // FEEDBACK
-        // =============================================
-
-        let feedbackBox =
-            null;
 
 
         // =============================================
@@ -1844,11 +1894,6 @@
                     "optionBtn";
 
 
-                /*
-                 * Keep the option text inside a span.
-                 * This allows the icon to stay on the right.
-                 */
-
                 const optionText =
                     document.createElement(
                         "span"
@@ -1865,7 +1910,10 @@
 
 
                 // =====================================
-                // RESTORE WRONG ATTEMPTS
+                // RESTORE CURRENT WRONG ANSWER
+                //
+                // Only ONE wrong answer can be
+                // restored.
                 // =====================================
 
                 if (
@@ -2005,7 +2053,7 @@
                 );
 
 
-            feedbackBox =
+            const feedbackBox =
                 createAnswerFeedback(
                     true,
                     getRandomMessage(
@@ -2040,8 +2088,8 @@
     ) {
 
         /*
-         * If the question has already been
-         * correctly answered, do nothing.
+         * If already correctly answered,
+         * do nothing.
          */
 
         if (
@@ -2070,20 +2118,32 @@
             buttons[selectedIndex];
 
 
-        // =============================================
-        // CHECK IF THIS OPTION WAS ALREADY TRIED
-        // =============================================
+        /*
+         * =================================================
+         * IMPORTANT FIX
+         * =================================================
+         *
+         * Before processing the NEW choice:
+         *
+         * 1. Remove old ❌
+         * 2. Remove old motivational message
+         * 3. Return old option to normal
+         * 4. Re-enable all other choices
+         *
+         * Therefore:
+         *
+         * A ❌ → choose B
+         *
+         * A becomes normal automatically.
+         * =================================================
+         */
 
-        if (
-            wrongAttempts[questionIndex]
-                .includes(
-                    selectedIndex
-                )
-        ) {
-
-            return;
-
-        }
+        resetQuestionFeedback(
+            questionIndex,
+            options,
+            questionCard,
+            explanationBox
+        );
 
 
         // =============================================
@@ -2114,11 +2174,6 @@
              * Mark selected answer green.
              */
 
-            selectedButton.classList.remove(
-                "wrong"
-            );
-
-
             selectedButton.classList.add(
                 "correct"
             );
@@ -2129,11 +2184,8 @@
 
 
             /*
-             * Show ONLY the selected correct
-             * answer with ✅.
-             *
-             * We do NOT reveal the answer
-             * before the student reaches it.
+             * Add ✅ only to the selected
+             * correct answer.
              */
 
             addAnswerIcon(
@@ -2143,8 +2195,8 @@
 
 
             /*
-             * Disable all options because
-             * this question is now finished.
+             * Disable all other options
+             * because this question is complete.
              */
 
             buttons.forEach(
@@ -2165,6 +2217,14 @@
 
                 }
             );
+
+
+            // =========================================
+            // CLEAR WRONG ATTEMPT
+            // =========================================
+
+            wrongAttempts[questionIndex] =
+                [];
 
 
             // =========================================
@@ -2268,8 +2328,7 @@
 
 
             /*
-             * Update navigation after
-             * the question becomes correct.
+             * Update navigation.
              */
 
             updateNavigation();
@@ -2284,21 +2343,35 @@
         // WRONG ANSWER
         // =============================================
 
-        wrongAttempts[questionIndex].push(
+        /*
+         * IMPORTANT:
+         *
+         * DO NOT use:
+         *
+         * wrongAttempts[questionIndex].push(...)
+         *
+         * because that would remember old wrong
+         * choices and keep their ❌ marks.
+         *
+         * Instead, replace the previous wrong
+         * choice with ONLY the current one.
+         */
+
+        wrongAttempts[questionIndex] = [
             selectedIndex
-        );
+        ];
 
 
         /*
-         * Count the wrong attempt.
+         * Count this wrong attempt.
          */
 
         wrongAnswers++;
 
 
         /*
-         * Mark ONLY the selected wrong
-         * option red.
+         * Mark ONLY the current selected
+         * answer red.
          */
 
         selectedButton.classList.add(
@@ -2311,8 +2384,8 @@
 
 
         /*
-         * Add ❌ ONLY to the wrong
-         * option that was selected.
+         * Add ❌ ONLY to the current
+         * selected answer.
          */
 
         addAnswerIcon(
@@ -2322,16 +2395,8 @@
 
 
         /*
-         * IMPORTANT:
-         *
-         * DO NOT:
-         *
-         * - reveal the correct answer
-         * - color the correct answer green
-         * - show the explanation
-         * - lock the other options
-         *
-         * The student must continue trying.
+         * All other choices remain normal
+         * and selectable.
          */
 
 
@@ -2351,6 +2416,11 @@
                 feedbackMessage
             );
 
+
+        /*
+         * Make absolutely sure that there
+         * is only ONE feedback box.
+         */
 
         const existingFeedback =
             questionCard.querySelector(
@@ -2374,9 +2444,8 @@
 
 
         /*
-         * Explanation stays hidden
-         * until the correct answer
-         * is finally selected.
+         * Explanation stays hidden until
+         * the correct answer is selected.
          */
 
         explanationBox.style.display =
@@ -2391,7 +2460,7 @@
 
 
         /*
-         * Scroll to feedback.
+         * Scroll to the current feedback.
          */
 
         setTimeout(
@@ -2479,9 +2548,9 @@
 
 
         /*
-         * Next button is available only when
-         * every question on the current page
-         * has been correctly answered.
+         * Next button available only when
+         * every question on current page
+         * is correctly answered.
          */
 
         nextBtn.disabled =
@@ -2506,12 +2575,6 @@
 
             }
 
-
-            /*
-             * Do not allow moving forward
-             * until every question on the
-             * current page is correct.
-             */
 
             if (
                 !isCurrentPageComplete()
@@ -2587,10 +2650,6 @@
 
     function finishQuiz() {
 
-        /*
-         * Prevent double finishing.
-         */
-
         if (
             quizFinished
         ) {
@@ -2599,12 +2658,6 @@
 
         }
 
-
-        /*
-         * Safety:
-         * Do not finish unless every question
-         * has been correctly answered.
-         */
 
         const allQuestionsComplete =
             userAnswers.every(
@@ -2626,17 +2679,9 @@
             true;
 
 
-        /*
-         * Hide questions.
-         */
-
         questionsPage.innerHTML =
             "";
 
-
-        /*
-         * Hide navigation.
-         */
 
         previousQuestionBtn.style.display =
             "none";
@@ -2646,17 +2691,9 @@
             "none";
 
 
-        /*
-         * Show completion.
-         */
-
         completionMessage.hidden =
             false;
 
-
-        /*
-         * Calculate percentage.
-         */
 
         const percentage =
             questions.length > 0
@@ -2669,16 +2706,8 @@
                 : 0;
 
 
-        /*
-         * Save final progress.
-         */
-
         saveChapterProgress();
 
-
-        /*
-         * Score display.
-         */
 
         let scoreDisplay =
             completionMessage.querySelector(
@@ -2720,10 +2749,6 @@
         `;
 
 
-        /*
-         * Review button.
-         */
-
         reviewQuizBtn.style.display =
             "inline-flex";
 
@@ -2731,10 +2756,6 @@
         reviewQuizBtn.disabled =
             false;
 
-
-        /*
-         * Scroll completion message.
-         */
 
         completionMessage.scrollIntoView({
 
@@ -2955,10 +2976,6 @@
     backBtn.addEventListener(
         "click",
         () => {
-
-            /*
-             * Prefer browser history.
-             */
 
             if (
                 window.history.length > 1
