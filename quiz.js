@@ -1,16 +1,18 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
 // =====================================================
-// 5 QUESTIONS PER PAGE
-//
-// ANSWER BEHAVIOR:
-// • Wrong answer → selected option = RED + ❌
-// • Try another option → previous RED + ❌ disappears
-// • New wrong option → RED + ❌
-// • Correct answer → selected option = GREEN + ✅
-// • Correct question becomes locked
-// • Explanation appears after correct answer
-// • Wrong answers do NOT reveal the correct answer
+// FEATURES
+// -----------------------------------------------------
+// • 5 QUESTIONS PER PAGE
+// • RETRY WRONG ANSWERS
+// • ONLY CURRENT WRONG ANSWER = RED + ❌
+// • PREVIOUS WRONG ANSWER IS AUTOMATICALLY CLEARED
+// • CORRECT ANSWER = GREEN + ✅
+// • MOTIVATIONAL FEEDBACK
+// • ENGLISH + AMHARIC EXPLANATIONS
+// • NEXT / PREVIOUS NAVIGATION
+// • PROGRESS SAVING
+// • REVIEW / RESTART QUIZ
 // =====================================================
 
 (function () {
@@ -166,21 +168,30 @@
 
 
     // =================================================
-    // ANSWER STATES
-    // =================================================
+    // ANSWER STATE
     //
-    // null
-    //     = not answered correctly yet
+    // null  = not correctly answered
+    // number = correctly selected answer index
     //
-    // number
-    //     = current selected wrong answer
-    //
-    // -1
-    //     = correctly answered
-    //
+    // IMPORTANT:
+    // Wrong answers are NOT permanently stored here.
+    // This allows the student to keep trying.
     // =================================================
 
     let userAnswers = [];
+
+
+    // =================================================
+    // TEMPORARY WRONG ANSWER
+    //
+    // Stores the currently selected wrong option
+    // for each question.
+    //
+    // This is only visual feedback.
+    // It is cleared when another option is selected.
+    // =================================================
+
+    let temporaryWrongAnswers = [];
 
 
     // =================================================
@@ -191,7 +202,10 @@
 
 
     // =================================================
-    // WRONG ANSWER ATTEMPTS
+    // WRONG ATTEMPTS
+    //
+    // Counts wrong attempts, not permanently wrong
+    // questions.
     // =================================================
 
     let wrongAnswers = 0;
@@ -235,21 +249,21 @@
 
     const incorrectMessages = [
 
-        "🌱 Keep trying! You are learning! 💪",
+        "🌱 You are on the right path! Just a little more effort! 💪",
 
-        "🔍 Not quite right. Try another answer! 🔄",
+        "🔍 This response is not right. Please try another answer! 🔄",
 
-        "🧩 Mistakes are part of learning! Keep going! 🌟",
+        "🧩 Mistakes are part of learning! Keep trying! 🌟",
 
-        "🎈 Don't give up! Try again! 🧗‍♂️",
+        "🎈 Keep your chin up! Every mistake is a step toward mastery! 🧗‍♂️",
 
-        "📖 Review the question carefully and try again! ✍️",
+        "📖 This answer is incorrect. Take another look! ✍️",
 
-        "💡 Every attempt makes you stronger! 🧠",
+        "💡 Each attempt strengthens your understanding! 🧠",
 
-        "🤝 Not this one. Choose another answer! 🎯",
+        "🤝 Not the right answer. Keep trying! 🎯",
 
-        "🧐 Take another look and keep learning! 🔍"
+        "🧐 You are close! Take another look! 🔍"
 
     ];
 
@@ -262,7 +276,7 @@
 
         if (
             document.getElementById(
-                "uniqueAcademicFeedbackStyles"
+                "uniqueAcademicQuizAnswerStyles"
             )
         ) {
 
@@ -278,13 +292,168 @@
 
 
         style.id =
-            "uniqueAcademicFeedbackStyles";
+            "uniqueAcademicQuizAnswerStyles";
 
 
         style.textContent = `
 
             /* =========================================
-               ANSWER FEEDBACK
+               OPTION BUTTON
+            ========================================= */
+
+            .optionBtn {
+
+                position: relative;
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: space-between;
+
+                gap: 15px;
+
+            }
+
+
+            /* =========================================
+               ANSWER TEXT
+            ========================================= */
+
+            .optionText {
+
+                flex: 1;
+
+                text-align: left;
+
+            }
+
+
+            /* =========================================
+               ANSWER ICON
+            ========================================= */
+
+            .answerIcon {
+
+                width: 42px;
+
+                min-width: 42px;
+
+                height: 42px;
+
+                border-radius: 50%;
+
+                display: inline-flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+                font-size: 25px;
+
+                font-weight: 900;
+
+                line-height: 1;
+
+                color: #ffffff;
+
+                box-shadow:
+                    0 5px 15px
+                    rgba(
+                        0,
+                        0,
+                        0,
+                        0.15
+                    );
+
+                animation:
+                    uniqueAnswerIconPop
+                    0.35s
+                    ease-out;
+
+            }
+
+
+            /* =========================================
+               WRONG ICON
+            ========================================= */
+
+            .answerIcon.wrongIcon {
+
+                background:
+                    #e74c3c;
+
+            }
+
+
+            /* =========================================
+               CORRECT ICON
+            ========================================= */
+
+            .answerIcon.correctIcon {
+
+                background:
+                    #2fb86a;
+
+            }
+
+
+            /* =========================================
+               WRONG ANSWER
+            ========================================= */
+
+            .optionBtn.wrong {
+
+                background:
+                    #fff1f1 !important;
+
+                border-color:
+                    #e05252 !important;
+
+                color:
+                    #ad4141 !important;
+
+                box-shadow:
+                    0 5px 18px
+                    rgba(
+                        224,
+                        82,
+                        82,
+                        0.12
+                    );
+
+            }
+
+
+            /* =========================================
+               CORRECT ANSWER
+            ========================================= */
+
+            .optionBtn.correct {
+
+                background:
+                    #eefaf2 !important;
+
+                border-color:
+                    #3ab56c !important;
+
+                color:
+                    #2c8650 !important;
+
+                box-shadow:
+                    0 6px 20px
+                    rgba(
+                        58,
+                        181,
+                        108,
+                        0.18
+                    );
+
+            }
+
+
+            /* =========================================
+               FEEDBACK BOX
             ========================================= */
 
             .unique-answer-feedback {
@@ -293,38 +462,40 @@
 
                 box-sizing: border-box;
 
-                margin: 18px 0 16px;
+                margin:
+                    18px 0 16px;
 
-                padding: 15px 18px;
+                padding:
+                    15px 18px;
 
-                border-radius: 16px;
+                border-radius:
+                    16px;
 
-                font-size: 17px;
+                font-size:
+                    17px;
 
-                font-weight: 700;
+                font-weight:
+                    700;
 
-                line-height: 1.5;
+                line-height:
+                    1.5;
 
-                display: flex;
+                display:
+                    flex;
 
-                align-items: center;
+                align-items:
+                    center;
 
-                justify-content: center;
+                justify-content:
+                    center;
 
-                text-align: center;
-
-                transform-origin: center;
+                text-align:
+                    center;
 
                 animation:
                     uniqueFeedbackPop
                     0.45s
-                    cubic-bezier(
-                        0.175,
-                        0.885,
-                        0.32,
-                        1.275
-                    )
-                    both;
+                    ease-out;
 
             }
 
@@ -343,7 +514,7 @@
                     );
 
                 color:
-                    #258a45;
+                    #2b8750;
 
                 border:
                     1px solid
@@ -360,7 +531,7 @@
                         40,
                         180,
                         80,
-                        0.12
+                        0.10
                     );
 
             }
@@ -380,7 +551,7 @@
                     );
 
                 color:
-                    #d93c3c;
+                    #d04444;
 
                 border:
                     1px solid
@@ -397,21 +568,47 @@
                         220,
                         60,
                         60,
-                        0.10
+                        0.08
                     );
 
             }
 
 
             /* =========================================
-               FEEDBACK TEXT
+               ICON ANIMATION
             ========================================= */
 
-            .unique-feedback-text {
+            @keyframes uniqueAnswerIconPop {
 
-                display: block;
+                0% {
 
-                width: 100%;
+                    opacity:
+                        0;
+
+                    transform:
+                        scale(0.55);
+
+                }
+
+                70% {
+
+                    opacity:
+                        1;
+
+                    transform:
+                        scale(1.12);
+
+                }
+
+                100% {
+
+                    opacity:
+                        1;
+
+                    transform:
+                        scale(1);
+
+                }
 
             }
 
@@ -424,27 +621,19 @@
 
                 0% {
 
-                    opacity: 0;
+                    opacity:
+                        0;
 
                     transform:
                         translateY(10px)
-                        scale(0.94);
-
-                }
-
-                60% {
-
-                    opacity: 1;
-
-                    transform:
-                        translateY(-2px)
-                        scale(1.02);
+                        scale(0.96);
 
                 }
 
                 100% {
 
-                    opacity: 1;
+                    opacity:
+                        1;
 
                     transform:
                         translateY(0)
@@ -456,181 +645,38 @@
 
 
             /* =========================================
-               OPTION ICON
-            ========================================= */
-
-            .unique-option-icon {
-
-                width: 38px;
-
-                height: 38px;
-
-                min-width: 38px;
-
-                border-radius: 50%;
-
-                display: inline-flex;
-
-                align-items: center;
-
-                justify-content: center;
-
-                margin-left: 12px;
-
-                font-size: 23px;
-
-                font-weight: 900;
-
-                line-height: 1;
-
-                box-sizing: border-box;
-
-                animation:
-                    uniqueIconPop
-                    0.3s
-                    ease
-                    both;
-
-            }
-
-
-            .unique-option-icon.wrong-icon {
-
-                background:
-                    #e74c3c;
-
-                color:
-                    #ffffff;
-
-                box-shadow:
-                    0 5px 12px
-                    rgba(
-                        231,
-                        76,
-                        60,
-                        0.28
-                    );
-
-            }
-
-
-            .unique-option-icon.correct-icon {
-
-                background:
-                    #2bb673;
-
-                color:
-                    #ffffff;
-
-                box-shadow:
-                    0 5px 12px
-                    rgba(
-                        43,
-                        182,
-                        115,
-                        0.28
-                    );
-
-            }
-
-
-            @keyframes uniqueIconPop {
-
-                0% {
-
-                    opacity: 0;
-
-                    transform:
-                        scale(0.65);
-
-                }
-
-                70% {
-
-                    transform:
-                        scale(1.12);
-
-                }
-
-                100% {
-
-                    opacity: 1;
-
-                    transform:
-                        scale(1);
-
-                }
-
-            }
-
-
-            /* =========================================
-               WRONG OPTION
-            ========================================= */
-
-            .optionBtn.unique-current-wrong {
-
-                color:
-                    #b23b3b !important;
-
-                border-color:
-                    #dc5555 !important;
-
-                background:
-                    #fff1f1 !important;
-
-            }
-
-
-            /* =========================================
-               CORRECT OPTION
-            ========================================= */
-
-            .optionBtn.unique-current-correct {
-
-                color:
-                    #258a45 !important;
-
-                border-color:
-                    #36b56b !important;
-
-                background:
-                    #edf9f1 !important;
-
-            }
-
-
-            /* =========================================
                MOBILE
             ========================================= */
 
             @media (max-width: 480px) {
 
-                .unique-answer-feedback {
+                .answerIcon {
 
-                    font-size: 15px;
+                    width:
+                        38px;
 
-                    padding:
-                        13px
-                        14px;
+                    min-width:
+                        38px;
 
-                    border-radius:
-                        14px;
+                    height:
+                        38px;
+
+                    font-size:
+                        22px;
 
                 }
 
 
-                .unique-option-icon {
+                .unique-answer-feedback {
 
-                    width: 34px;
+                    font-size:
+                        15px;
 
-                    height: 34px;
+                    padding:
+                        13px 14px;
 
-                    min-width: 34px;
-
-                    font-size: 20px;
-
-                    margin-left: 8px;
+                    border-radius:
+                        14px;
 
                 }
 
@@ -674,13 +720,65 @@
             );
 
 
-        return messages[randomIndex];
+        return messages[
+            randomIndex
+        ];
 
     }
 
 
     // =================================================
-    // CREATE FEEDBACK BOX
+    // CREATE ANSWER ICON
+    // =================================================
+
+    function createAnswerIcon(
+        type
+    ) {
+
+        const icon =
+            document.createElement(
+                "span"
+            );
+
+
+        icon.className =
+            "answerIcon";
+
+
+        if (
+            type === "correct"
+        ) {
+
+            icon.classList.add(
+                "correctIcon"
+            );
+
+
+            icon.textContent =
+                "✓";
+
+        }
+
+        else {
+
+            icon.classList.add(
+                "wrongIcon"
+            );
+
+
+            icon.textContent =
+                "✕";
+
+        }
+
+
+        return icon;
+
+    }
+
+
+    // =================================================
+    // CREATE FEEDBACK
     // =================================================
 
     function createAnswerFeedback(
@@ -698,11 +796,23 @@
             "unique-answer-feedback";
 
 
-        feedback.classList.add(
+        if (
             isCorrect
-                ? "correct-feedback"
-                : "incorrect-feedback"
-        );
+        ) {
+
+            feedback.classList.add(
+                "correct-feedback"
+            );
+
+        }
+
+        else {
+
+            feedback.classList.add(
+                "incorrect-feedback"
+            );
+
+        }
 
 
         const feedbackText =
@@ -730,7 +840,7 @@
 
 
     // =================================================
-    // FORMAT SUBJECT NAME
+    // FORMAT SUBJECT
     // =================================================
 
     function formatSubjectName(
@@ -783,7 +893,7 @@
 
 
     // =================================================
-    // DISPLAY SUBJECT + CHAPTER
+    // DISPLAY SUBJECT / CHAPTER
     // =================================================
 
     const formattedSubject =
@@ -857,13 +967,17 @@
             ).trim();
 
 
-        return `uniqueAcademicQuizProgress_${normalizedSubject}_${normalizedChapter}`;
+        return (
+            `uniqueAcademicQuizProgress_` +
+            `${normalizedSubject}_` +
+            `${normalizedChapter}`
+        );
 
     }
 
 
     // =================================================
-    // SAVE CHAPTER PROGRESS
+    // SAVE PROGRESS
     // =================================================
 
     function saveChapterProgress() {
@@ -872,15 +986,10 @@
             questions.length;
 
 
-        /*
-         * A question counts as answered only
-         * after the student gets it correct.
-         */
-
         const answeredQuestions =
             userAnswers.filter(
                 answer =>
-                    answer === -1
+                    answer !== null
             ).length;
 
 
@@ -988,10 +1097,6 @@
             quizData
         ) {
 
-            /*
-             * Exact key.
-             */
-
             if (
                 quizData[subject]
             ) {
@@ -1001,10 +1106,6 @@
             }
 
 
-            /*
-             * Normalized key.
-             */
-
             if (
                 quizData[exactKey]
             ) {
@@ -1013,10 +1114,6 @@
 
             }
 
-
-            /*
-             * Search all keys.
-             */
 
             const keys =
                 Object.keys(
@@ -1090,7 +1187,7 @@
         ) {
 
             console.error(
-                "Subject not found in quizData:",
+                "Subject not found:",
                 subject
             );
 
@@ -1108,9 +1205,9 @@
         }
 
 
-        /*
-         * Exact chapter.
-         */
+        // =============================================
+        // EXACT CHAPTER
+        // =============================================
 
         if (
             subjectData[chapter]
@@ -1125,9 +1222,9 @@
         }
 
 
-        /*
-         * Numeric chapter.
-         */
+        // =============================================
+        // NUMERIC CHAPTER
+        // =============================================
 
         const numericChapter =
             Number.parseInt(
@@ -1222,7 +1319,7 @@
 
 
     // =================================================
-    // INITIALIZE ANSWER STATES
+    // INITIALIZE ANSWER ARRAYS
     // =================================================
 
     userAnswers =
@@ -1233,8 +1330,16 @@
         );
 
 
+    temporaryWrongAnswers =
+        new Array(
+            questions.length
+        ).fill(
+            null
+        );
+
+
     // =================================================
-    // GET ENGLISH EXPLANATION
+    // ENGLISH EXPLANATION
     // =================================================
 
     function getEnglishExplanation(
@@ -1268,7 +1373,7 @@
 
 
     // =================================================
-    // GET AMHARIC EXPLANATION
+    // AMHARIC EXPLANATION
     // =================================================
 
     function getAmharicExplanation(
@@ -1302,7 +1407,7 @@
 
 
     // =================================================
-    // GET QUESTION OPTIONS
+    // QUESTION OPTIONS
     // =================================================
 
     function getQuestionOptions(
@@ -1339,7 +1444,7 @@
 
 
     // =================================================
-    // GET CORRECT ANSWER
+    // CORRECT ANSWER
     // =================================================
 
     function getCorrectAnswer(
@@ -1366,270 +1471,6 @@
 
 
         return -1;
-
-    }
-
-
-    // =================================================
-    // REMOVE ALL OPTION FEEDBACK
-    // =================================================
-    //
-    // IMPORTANT:
-    //
-    // This function removes the previous
-    // RED + ❌ before another option is selected.
-    //
-    // =================================================
-
-    function clearOptionFeedback(
-        options
-    ) {
-
-        const buttons =
-            options.querySelectorAll(
-                ".optionBtn"
-            );
-
-
-        buttons.forEach(
-            button => {
-
-                button.classList.remove(
-                    "wrong"
-                );
-
-
-                button.classList.remove(
-                    "correct"
-                );
-
-
-                button.classList.remove(
-                    "unique-current-wrong"
-                );
-
-
-                button.classList.remove(
-                    "unique-current-correct"
-                );
-
-
-                /*
-                 * Remove ONLY our icon.
-                 */
-
-                const icon =
-                    button.querySelector(
-                        ".unique-option-icon"
-                    );
-
-
-                if (
-                    icon
-                ) {
-
-                    icon.remove();
-
-                }
-
-            }
-        );
-
-    }
-
-
-    // =================================================
-    // ADD OPTION ICON
-    // =================================================
-
-    function addOptionIcon(
-        button,
-        iconType
-    ) {
-
-        /*
-         * Make sure there is never
-         * more than one icon.
-         */
-
-        const oldIcon =
-            button.querySelector(
-                ".unique-option-icon"
-            );
-
-
-        if (
-            oldIcon
-        ) {
-
-            oldIcon.remove();
-
-        }
-
-
-        const icon =
-            document.createElement(
-                "span"
-            );
-
-
-        icon.className =
-            "unique-option-icon";
-
-
-        if (
-            iconType === "correct"
-        ) {
-
-            icon.classList.add(
-                "correct-icon"
-            );
-
-
-            icon.textContent =
-                "✓";
-
-        }
-
-        else {
-
-            icon.classList.add(
-                "wrong-icon"
-            );
-
-
-            icon.textContent =
-                "×";
-
-        }
-
-
-        button.appendChild(
-            icon
-        );
-
-    }
-
-
-    // =================================================
-    // CREATE / UPDATE FEEDBACK
-    // =================================================
-
-    function showFeedback(
-        questionCard,
-        isCorrect
-    ) {
-
-        let feedbackBox =
-            questionCard.querySelector(
-                ".unique-answer-feedback"
-            );
-
-
-        /*
-         * Remove previous feedback first.
-         *
-         * This guarantees:
-         *
-         * ❌ old message disappears
-         * ❌ old red feedback disappears
-         *
-         * before the new answer feedback appears.
-         */
-
-        if (
-            feedbackBox
-        ) {
-
-            feedbackBox.remove();
-
-        }
-
-
-        feedbackBox =
-            createAnswerFeedback(
-
-                isCorrect,
-
-                getRandomMessage(
-                    isCorrect
-                        ? correctMessages
-                        : incorrectMessages
-                )
-
-            );
-
-
-        const explanationBox =
-            questionCard.querySelector(
-                ".explanationCard"
-            );
-
-
-        if (
-            explanationBox
-        ) {
-
-            questionCard.insertBefore(
-                feedbackBox,
-                explanationBox
-            );
-
-        }
-
-        else {
-
-            questionCard.appendChild(
-                feedbackBox
-            );
-
-        }
-
-
-        return feedbackBox;
-
-    }
-
-
-    // =================================================
-    // SHOW EXPLANATION
-    // =================================================
-
-    function showExplanation(
-        q,
-        explanationBox,
-        englishExplanation,
-        amharicExplanation
-    ) {
-
-        englishExplanation.textContent =
-            getEnglishExplanation(
-                q
-            );
-
-
-        amharicExplanation.textContent =
-            getAmharicExplanation(
-                q
-            );
-
-
-        explanationBox.style.display =
-            "block";
-
-    }
-
-
-    // =================================================
-    // HIDE EXPLANATION
-    // =================================================
-
-    function hideExplanation(
-        explanationBox
-    ) {
-
-        explanationBox.style.display =
-            "none";
 
     }
 
@@ -1770,7 +1611,7 @@
 
 
         // =============================================
-        // OPTIONS
+        // OPTIONS CONTAINER
         // =============================================
 
         const options =
@@ -1790,7 +1631,15 @@
 
 
         // =============================================
-        // EXPLANATION BOX
+        // FEEDBACK HOLDER
+        // =============================================
+
+        let feedbackBox =
+            null;
+
+
+        // =============================================
+        // EXPLANATION
         // =============================================
 
         const explanationBox =
@@ -1808,7 +1657,7 @@
 
 
         // =============================================
-        // ENGLISH EXPLANATION
+        // ENGLISH
         // =============================================
 
         const englishSection =
@@ -1837,10 +1686,6 @@
             );
 
 
-        englishExplanation.textContent =
-            "";
-
-
         englishSection.appendChild(
             englishTitle
         );
@@ -1866,7 +1711,7 @@
 
 
         // =============================================
-        // AMHARIC EXPLANATION
+        // AMHARIC
         // =============================================
 
         const amharicSection =
@@ -1895,10 +1740,6 @@
             );
 
 
-        amharicExplanation.textContent =
-            "";
-
-
         amharicSection.appendChild(
             amharicTitle
         );
@@ -1925,14 +1766,6 @@
 
 
         // =============================================
-        // RESTORE CURRENT ANSWER STATE
-        // =============================================
-
-        const savedState =
-            userAnswers[index];
-
-
-        // =============================================
         // CREATE OPTIONS
         // =============================================
 
@@ -1956,10 +1789,9 @@
                     "optionBtn";
 
 
-                /*
-                 * Put the option text inside
-                 * a separate span.
-                 */
+                // =========================================
+                // OPTION TEXT
+                // =========================================
 
                 const optionText =
                     document.createElement(
@@ -1968,7 +1800,7 @@
 
 
                 optionText.className =
-                    "unique-option-text";
+                    "optionText";
 
 
                 optionText.textContent =
@@ -1985,7 +1817,8 @@
                 // =========================================
 
                 if (
-                    savedState === -1
+                    userAnswers[index] !==
+                    null
                 ) {
 
                     const correctAnswer =
@@ -2004,26 +1837,24 @@
                         );
 
 
-                        button.classList.add(
-                            "unique-current-correct"
+                        button.appendChild(
+                            createAnswerIcon(
+                                "correct"
+                            )
                         );
 
 
-                        addOptionIcon(
-                            button,
-                            "correct"
-                        );
+                        button.disabled =
+                            true;
 
                     }
 
+                    else {
 
-                    /*
-                     * Correctly answered questions
-                     * are locked.
-                     */
+                        button.disabled =
+                            true;
 
-                    button.disabled =
-                        true;
+                    }
 
 
                     explanationBox.style.display =
@@ -2049,72 +1880,48 @@
                 // =========================================
 
                 else if (
-                    typeof savedState ===
-                    "number"
+                    temporaryWrongAnswers[index] ===
+                    optionIndex
                 ) {
 
-                    /*
-                     * Only the latest wrong answer
-                     * is shown red.
-                     */
+                    button.classList.add(
+                        "wrong"
+                    );
 
-                    if (
-                        optionIndex ===
-                        savedState
-                    ) {
 
-                        button.classList.add(
+                    button.appendChild(
+                        createAnswerIcon(
                             "wrong"
-                        );
-
-
-                        button.classList.add(
-                            "unique-current-wrong"
-                        );
-
-
-                        addOptionIcon(
-                            button,
-                            "wrong"
-                        );
-
-                    }
-
-                    /*
-                     * IMPORTANT:
-                     *
-                     * All options remain clickable
-                     * while the answer is still wrong.
-                     */
-
-                    button.disabled =
-                        false;
-
-
-                    hideExplanation(
-                        explanationBox
+                        )
                     );
 
                 }
 
 
                 // =========================================
-                // OPTION CLICK
+                // CLICK ANSWER
                 // =========================================
 
                 button.addEventListener(
                     "click",
                     () => {
 
-                        /*
-                         * If question is already
-                         * correctly answered,
-                         * do nothing.
-                         */
+                        if (
+                            quizFinished
+                        ) {
+
+                            return;
+
+                        }
+
+
+                        // ---------------------------------
+                        // Already correctly answered
+                        // ---------------------------------
 
                         if (
-                            userAnswers[index] ===
-                            -1
+                            userAnswers[index] !==
+                            null
                         ) {
 
                             return;
@@ -2173,42 +1980,6 @@
         );
 
 
-        /*
-         * If there is an active wrong answer,
-         * show the motivational feedback.
-         */
-
-        if (
-            typeof savedState ===
-            "number" &&
-            savedState !== -1
-        ) {
-
-            showFeedback(
-                questionCard,
-                false
-            );
-
-        }
-
-
-        /*
-         * If correctly answered,
-         * show correct motivational feedback.
-         */
-
-        if (
-            savedState === -1
-        ) {
-
-            showFeedback(
-                questionCard,
-                true
-            );
-
-        }
-
-
         questionCard.appendChild(
             explanationBox
         );
@@ -2216,6 +1987,53 @@
 
         questionsPage.appendChild(
             questionCard
+        );
+
+    }
+
+
+    // =================================================
+    // CLEAR ALL WRONG VISUALS
+    //
+    // This is the IMPORTANT part.
+    //
+    // Whenever the student selects another answer,
+    // the previous red answer and ❌ disappear.
+    // =================================================
+
+    function clearWrongVisuals(
+        options
+    ) {
+
+        const buttons =
+            options.querySelectorAll(
+                ".optionBtn"
+            );
+
+
+        buttons.forEach(
+            button => {
+
+                button.classList.remove(
+                    "wrong"
+                );
+
+
+                const wrongIcon =
+                    button.querySelector(
+                        ".wrongIcon"
+                    );
+
+
+                if (
+                    wrongIcon
+                ) {
+
+                    wrongIcon.remove();
+
+                }
+
+            }
         );
 
     }
@@ -2236,14 +2054,13 @@
         questionCard
     ) {
 
-        /*
-         * If already correct,
-         * don't allow another click.
-         */
+        // =============================================
+        // SAFETY
+        // =============================================
 
         if (
-            userAnswers[questionIndex] ===
-            -1
+            userAnswers[questionIndex] !==
+            null
         ) {
 
             return;
@@ -2263,107 +2080,64 @@
             );
 
 
-        // =============================================
-        // IMPORTANT:
-        //
-        // REMOVE PREVIOUS WRONG ANSWER
-        // =============================================
-
-        clearOptionFeedback(
-            options
-        );
-
-
-        /*
-         * Hide old explanation while
-         * the student is still trying.
-         */
-
-        hideExplanation(
-            explanationBox
-        );
-
-
-        // =============================================
-        // CHECK RESULT
-        // =============================================
-
         const isCorrect =
             selectedIndex ===
             correctAnswer;
 
 
-        // =============================================
+        // =================================================
+        // VERY IMPORTANT:
+        //
+        // Remove the previous wrong answer FIRST.
+        //
+        // This prevents:
+        //
+        // A ❌
+        // B ❌
+        //
+        // Instead we get:
+        //
+        // B ❌
+        //
+        // only.
+        // =================================================
+
+        clearWrongVisuals(
+            options
+        );
+
+
+        // =================================================
         // CORRECT ANSWER
-        // =============================================
+        // =================================================
 
         if (
             isCorrect
         ) {
 
-            /*
-             * Mark question as correctly answered.
-             */
+            // ---------------------------------------------
+            // Save correct answer
+            // ---------------------------------------------
 
             userAnswers[questionIndex] =
-                -1;
+                selectedIndex;
 
 
-            /*
-             * Increase score ONLY ONCE.
-             */
+            temporaryWrongAnswers[
+                questionIndex
+            ] = null;
+
+
+            // ---------------------------------------------
+            // Increase score ONLY ONCE
+            // ---------------------------------------------
 
             score++;
 
 
-            /*
-             * Selected answer becomes green.
-             */
-
-            const selectedButton =
-                buttons[selectedIndex];
-
-
-            if (
-                selectedButton
-            ) {
-
-                selectedButton.classList.add(
-                    "correct"
-                );
-
-
-                selectedButton.classList.add(
-                    "unique-current-correct"
-                );
-
-
-                addOptionIcon(
-                    selectedButton,
-                    "correct"
-                );
-
-            }
-
-
-            /*
-             * Disable ALL options because
-             * the question is now complete.
-             */
-
-            buttons.forEach(
-                button => {
-
-                    button.disabled =
-                        true;
-
-                }
-            );
-
-
-            /*
-             * Remove any old feedback.
-             */
+            // ---------------------------------------------
+            // Remove any previous feedback
+            // ---------------------------------------------
 
             const oldFeedback =
                 questionCard.querySelector(
@@ -2380,200 +2154,111 @@
             }
 
 
-            /*
-             * Show correct feedback.
-             */
+            // ---------------------------------------------
+            // Mark ONLY correct answer
+            // ---------------------------------------------
 
-            const feedbackBox =
-                showFeedback(
-                    questionCard,
-                    true
-                );
+            buttons.forEach(
+                (
+                    button,
+                    buttonIndex
+                ) => {
 
-
-            /*
-             * Show explanation.
-             */
-
-            showExplanation(
-
-                q,
-
-                explanationBox,
-
-                englishExplanation,
-
-                amharicExplanation
-
-            );
+                    button.disabled =
+                        true;
 
 
-            /*
-             * Save progress.
-             */
+                    if (
+                        buttonIndex ===
+                        correctAnswer
+                    ) {
 
-            saveChapterProgress();
+                        button.classList.add(
+                            "correct"
+                        );
 
 
-            /*
-             * Scroll to feedback.
-             */
+                        // Remove old icon first
 
-            setTimeout(
-                () => {
+                        const oldIcon =
+                            button.querySelector(
+                                ".answerIcon"
+                            );
 
-                    try {
 
-                        feedbackBox.scrollIntoView({
+                        if (
+                            oldIcon
+                        ) {
 
-                            behavior:
-                                "smooth",
+                            oldIcon.remove();
 
-                            block:
-                                "nearest"
+                        }
 
-                        });
 
-                    }
-
-                    catch (error) {
-
-                        console.warn(
-                            "Feedback scroll unavailable:",
-                            error
+                        button.appendChild(
+                            createAnswerIcon(
+                                "correct"
+                            )
                         );
 
                     }
-
-                },
-                120
-            );
-
-        }
-
-
-        // =============================================
-        // WRONG ANSWER
-        // =============================================
-
-        else {
-
-            /*
-             * IMPORTANT:
-             *
-             * Save ONLY the latest wrong choice.
-             *
-             * This means:
-             *
-             * A ❌
-             *
-             * then B clicked:
-             *
-             * A normal
-             * B ❌
-             *
-             * then C clicked:
-             *
-             * A normal
-             * B normal
-             * C ❌
-             */
-
-            userAnswers[questionIndex] =
-                selectedIndex;
-
-
-            /*
-             * Count wrong attempts.
-             */
-
-            wrongAnswers++;
-
-
-            /*
-             * Make sure every option
-             * is available for another try.
-             */
-
-            buttons.forEach(
-                button => {
-
-                    button.disabled =
-                        false;
 
                 }
             );
 
 
-            /*
-             * Selected wrong answer.
-             */
+            // ---------------------------------------------
+            // Correct motivational message
+            // ---------------------------------------------
 
-            const selectedButton =
-                buttons[selectedIndex];
+            feedbackBox =
+                createAnswerFeedback(
 
+                    true,
 
-            if (
-                selectedButton
-            ) {
+                    getRandomMessage(
+                        correctMessages
+                    )
 
-                selectedButton.classList.add(
-                    "wrong"
                 );
 
 
-                selectedButton.classList.add(
-                    "unique-current-wrong"
-                );
-
-
-                /*
-                 * Add ❌ only to the
-                 * currently selected wrong answer.
-                 */
-
-                addOptionIcon(
-                    selectedButton,
-                    "wrong"
-                );
-
-            }
-
-
-            /*
-             * Show WRONG motivational message.
-             *
-             * Previous message is automatically
-             * removed by showFeedback().
-             */
-
-            const feedbackBox =
-                showFeedback(
-                    questionCard,
-                    false
-                );
-
-
-            /*
-             * Explanation stays hidden
-             * until the correct answer.
-             */
-
-            hideExplanation(
+            questionCard.insertBefore(
+                feedbackBox,
                 explanationBox
             );
 
 
-            /*
-             * Save progress.
-             */
+            // ---------------------------------------------
+            // Show explanations
+            // ---------------------------------------------
+
+            englishExplanation.textContent =
+                getEnglishExplanation(
+                    q
+                );
+
+
+            amharicExplanation.textContent =
+                getAmharicExplanation(
+                    q
+                );
+
+
+            explanationBox.style.display =
+                "block";
+
+
+            // ---------------------------------------------
+            // SAVE PROGRESS
+            // ---------------------------------------------
 
             saveChapterProgress();
 
 
-            /*
-             * Scroll to feedback.
-             */
+            // ---------------------------------------------
+            // Scroll feedback into view
+            // ---------------------------------------------
 
             setTimeout(
                 () => {
@@ -2602,57 +2287,197 @@
                     }
 
                 },
-                120
+                100
             );
+
+
+            return;
 
         }
 
-    }
+
+        // =================================================
+        // WRONG ANSWER
+        // =================================================
+
+        wrongAnswers++;
 
 
-    // =================================================
-    // CHECK IF CURRENT PAGE IS COMPLETED
-    // =================================================
+        // ---------------------------------------------
+        // Store ONLY temporary wrong answer
+        // ---------------------------------------------
 
-    function isCurrentPageCompleted() {
-
-        const startIndex =
-            currentPage *
-            QUESTIONS_PER_PAGE;
+        temporaryWrongAnswers[
+            questionIndex
+        ] = selectedIndex;
 
 
-        const endIndex =
-            Math.min(
-                startIndex +
-                QUESTIONS_PER_PAGE,
-                questions.length
-            );
+        // ---------------------------------------------
+        // Mark ONLY selected option wrong
+        // ---------------------------------------------
+
+        buttons.forEach(
+            (
+                button,
+                buttonIndex
+            ) => {
+
+                // Make sure no answer is locked
+
+                button.disabled =
+                    false;
 
 
-        for (
-            let index = startIndex;
-            index < endIndex;
-            index++
-        ) {
+                // Remove old styles/icons
 
-            /*
-             * Every question on this page
-             * must be correctly answered.
-             */
+                button.classList.remove(
+                    "wrong",
+                    "correct"
+                );
 
-            if (
-                userAnswers[index] !==
-                -1
-            ) {
 
-                return false;
+                const oldIcon =
+                    button.querySelector(
+                        ".answerIcon"
+                    );
+
+
+                if (
+                    oldIcon
+                ) {
+
+                    oldIcon.remove();
+
+                }
+
+
+                // -----------------------------------------
+                // ONLY CURRENT SELECTED ANSWER
+                // -----------------------------------------
+
+                if (
+                    buttonIndex ===
+                    selectedIndex
+                ) {
+
+                    button.classList.add(
+                        "wrong"
+                    );
+
+
+                    button.appendChild(
+                        createAnswerIcon(
+                            "wrong"
+                        )
+                    );
+
+                }
 
             }
+        );
+
+
+        // ---------------------------------------------
+        // Remove old feedback
+        // ---------------------------------------------
+
+        const oldFeedback =
+            questionCard.querySelector(
+                ".unique-answer-feedback"
+            );
+
+
+        if (
+            oldFeedback
+        ) {
+
+            oldFeedback.remove();
 
         }
 
 
-        return true;
+        // ---------------------------------------------
+        // Create new wrong feedback
+        // ---------------------------------------------
+
+        feedbackBox =
+            createAnswerFeedback(
+
+                false,
+
+                getRandomMessage(
+                    incorrectMessages
+                )
+
+            );
+
+
+        questionCard.insertBefore(
+            feedbackBox,
+            explanationBox
+        );
+
+
+        // ---------------------------------------------
+        // Keep explanation available
+        // ---------------------------------------------
+
+        englishExplanation.textContent =
+            getEnglishExplanation(
+                q
+            );
+
+
+        amharicExplanation.textContent =
+            getAmharicExplanation(
+                q
+            );
+
+
+        explanationBox.style.display =
+            "block";
+
+
+        // ---------------------------------------------
+        // SAVE WRONG ATTEMPT
+        // ---------------------------------------------
+
+        saveChapterProgress();
+
+
+        // ---------------------------------------------
+        // Scroll feedback
+        // ---------------------------------------------
+
+        setTimeout(
+            () => {
+
+                try {
+
+                    feedbackBox.scrollIntoView({
+
+                        behavior:
+                            "smooth",
+
+                        block:
+                            "nearest"
+
+                    });
+
+                }
+
+                catch (error) {
+
+                    console.warn(
+                        "Feedback scroll unavailable:",
+                        error
+                    );
+
+                }
+
+            },
+            100
+        );
 
     }
 
@@ -2663,17 +2488,17 @@
 
     function updateNavigation() {
 
-        /*
-         * Previous button.
-         */
+        // =============================================
+        // PREVIOUS
+        // =============================================
 
         previousQuestionBtn.disabled =
             currentPage === 0;
 
 
-        /*
-         * Total pages.
-         */
+        // =============================================
+        // TOTAL PAGES
+        // =============================================
 
         const totalPages =
             Math.ceil(
@@ -2682,9 +2507,9 @@
             );
 
 
-        /*
-         * Last page.
-         */
+        // =============================================
+        // LAST PAGE
+        // =============================================
 
         if (
             currentPage ===
@@ -2708,16 +2533,12 @@
         }
 
 
-        /*
-         * IMPORTANT:
-         *
-         * Student can move forward only
-         * after all questions on the current
-         * page have been answered correctly.
-         */
+        // =============================================
+        // MAKE SURE NEXT IS ENABLED
+        // =============================================
 
         nextBtn.disabled =
-            !isCurrentPageCompleted();
+            false;
 
     }
 
@@ -2739,26 +2560,16 @@
             }
 
 
-            /*
-             * Don't allow next until
-             * current page is completed.
-             */
-
-            if (
-                !isCurrentPageCompleted()
-            ) {
-
-                return;
-
-            }
-
-
             const totalPages =
                 Math.ceil(
                     questions.length /
                     QUESTIONS_PER_PAGE
                 );
 
+
+            // =========================================
+            // MOVE TO NEXT PAGE
+            // =========================================
 
             if (
                 currentPage <
@@ -2769,13 +2580,16 @@
 
                 loadPage();
 
-            }
-
-            else {
-
-                finishQuiz();
+                return;
 
             }
+
+
+            // =========================================
+            // LAST PAGE
+            // =========================================
+
+            finishQuiz();
 
         }
     );
@@ -2818,10 +2632,6 @@
 
     function finishQuiz() {
 
-        /*
-         * Prevent double finishing.
-         */
-
         if (
             quizFinished
         ) {
@@ -2831,29 +2641,41 @@
         }
 
 
-        /*
-         * Safety:
-         * all questions must be correct.
-         */
+        // =============================================
+        // CHECK IF ALL QUESTIONS ARE CORRECTLY ANSWERED
+        // =============================================
+
+        const unansweredQuestions =
+            userAnswers.filter(
+                answer =>
+                    answer === null
+            ).length;
+
 
         if (
-            userAnswers.some(
-                answer =>
-                    answer !== -1
-            )
+            unansweredQuestions > 0
         ) {
+
+            alert(
+                `Please answer all questions correctly before finishing the quiz.\n\nRemaining questions: ${unansweredQuestions}`
+            );
+
 
             return;
 
         }
 
 
+        // =============================================
+        // FINISH
+        // =============================================
+
         quizFinished =
             true;
 
 
         // =============================================
-        // HIDE QUESTIONS
+        // CLEAR QUESTIONS
         // =============================================
 
         questionsPage.innerHTML =
@@ -2881,7 +2703,7 @@
 
 
         // =============================================
-        // PERCENTAGE
+        // CALCULATE SCORE
         // =============================================
 
         const percentage =
@@ -2926,11 +2748,10 @@
                 "quizScoreDisplay";
 
 
-            completionMessage
-                .insertBefore(
-                    scoreDisplay,
-                    reviewQuizBtn
-                );
+            completionMessage.insertBefore(
+                scoreDisplay,
+                reviewQuizBtn
+            );
 
         }
 
@@ -3055,7 +2876,7 @@
 
 
             // =========================================
-            // RESET ANSWERS
+            // RESET CORRECT ANSWERS
             // =========================================
 
             userAnswers =
@@ -3067,7 +2888,19 @@
 
 
             // =========================================
-            // QUIZ ACTIVE
+            // RESET TEMPORARY WRONG ANSWERS
+            // =========================================
+
+            temporaryWrongAnswers =
+                new Array(
+                    questions.length
+                ).fill(
+                    null
+                );
+
+
+            // =========================================
+            // RESET QUIZ STATE
             // =========================================
 
             quizFinished =
@@ -3075,7 +2908,7 @@
 
 
             // =========================================
-            // RESET PROGRESS
+            // SAVE RESET PROGRESS
             // =========================================
 
             saveChapterProgress();
@@ -3102,27 +2935,16 @@
 
 
             // =========================================
-            // PREVIOUS DISABLED
+            // RESET NAVIGATION
             // =========================================
 
             previousQuestionBtn.disabled =
                 true;
 
 
-            // =========================================
-            // NEXT DISABLED
-            //
-            // It becomes enabled after all
-            // 5 questions are correct.
-            // =========================================
-
             nextBtn.disabled =
-                true;
+                false;
 
-
-            // =========================================
-            // RESTORE NEXT TEXT
-            // =========================================
 
             nextBtn.innerHTML = `
                 <span>Next</span>
@@ -3167,10 +2989,6 @@
     backBtn.addEventListener(
         "click",
         () => {
-
-            /*
-             * Prefer browser history.
-             */
 
             if (
                 window.history.length > 1
