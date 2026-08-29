@@ -944,3 +944,161 @@ body.admin-access img {
     }
 
 }
+/* =====================================================
+   UNIQUE ACADEMIC
+   ANSWER FEEDBACK ANIMATION
+   ===================================================== */
+
+.answerFeedback {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 18px 0 16px;
+
+    padding: 14px 18px;
+
+    border-radius: 16px;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    text-align: left;
+
+    animation:
+        answerFeedbackEnter
+        0.55s
+        ease-out
+        both;
+
+}
+
+
+/* =====================================================
+   CORRECT ANSWER
+   ===================================================== */
+
+.answerFeedbackCorrect {
+
+    color: #267a3d;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0fff4,
+            #e4f8e9
+        );
+
+    border: 1px solid #b8e6c3;
+
+    box-shadow:
+        0 6px 18px
+        rgba(
+            46,
+            180,
+            76,
+            0.12
+        );
+
+}
+
+
+/* =====================================================
+   INCORRECT ANSWER
+   ===================================================== */
+
+.answerFeedbackIncorrect {
+
+    color: #a65b18;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf0,
+            #fff3dc
+        );
+
+    border: 1px solid #f2d39d;
+
+    box-shadow:
+        0 6px 18px
+        rgba(
+            230,
+            160,
+            50,
+            0.12
+        );
+
+}
+
+
+/* =====================================================
+   ENTER ANIMATION
+   ===================================================== */
+
+@keyframes answerFeedbackEnter {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(14px)
+            scale(0.96);
+
+    }
+
+
+    60% {
+
+        opacity: 1;
+
+        transform:
+            translateY(-3px)
+            scale(1.01);
+
+    }
+
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (
+    max-width: 600px
+) {
+
+    .answerFeedback {
+
+        margin:
+            15px 0;
+
+        padding:
+            13px 15px;
+
+        font-size:
+            15px;
+
+        border-radius:
+            14px;
+
+    }
+
+}
