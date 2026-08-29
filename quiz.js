@@ -211,90 +211,95 @@
 
     let quizFinished = false;
 
+// =================================================
+// MOTIVATIONAL MESSAGES
+// =================================================
 
-    // =================================================
-    // MOTIVATIONAL MESSAGES
-    // =================================================
+const correctMessages = [
 
-    const correctMessages = [
+    "🎉 Amazing work! You are setting the bar 🔝",
 
-        "🎉 Amazing work! You are setting the bar 🔝",
+    "🚀 You are unstoppable! Great job! 👏",
 
-        "🚀 You are unstoppable! Great job! 👏",
+    "🌟 You are doing great! Well done! ✨",
 
-        "🌟 You are doing great! Well done! ✨",
+    "🏆 Excellent job! You got it right! 👍",
 
-        "🏆 Excellent job! You got it right! 👍",
+    "🙌 Well done! That’s the correct answer! 🎯",
 
-        "🙌 Well done! That’s the correct answer! 🎯",
+    "🔥 Great going, you answered correctly! 💯",
 
-        "🔥 Great going, you answered correctly! 💯",
+    "⚡ Awesome work! You nailed it! 🔨",
 
-        "⚡ Awesome work! You nailed it! 🔨",
+    "⭐ You are becoming Unique! 💎",
 
-        "⭐ You are becoming Unique! 💎",
+    "🌈 You are doing fantastic! 💪",
 
-        "🌈 You are doing fantastic! 💪",
-        "👏 በጣም ጥሩ! በርታ! 💪",
+    "🎊 Great! You did it right! ✅",
 
-"🎉 እንኳን ደስ አለህ! በትክክል ነው! ✅",
+    "🎯 Brilliant! Your answer is absolutely correct! 🏆",
 
-"🔥 አሪፍ! እንደዚህ ቀጥል! 🚀"
+    "💎 Excellent thinking! You really understand this! 🌟",
 
-        "🎊 Great! You did it right! ✅"
-        
-"🎯 Brilliant! Your answer is absolutely correct! 🏆",
+    "🥇 Another victory! Keep up the amazing work! 🔥",
 
-"💎 Excellent thinking! You really understand this! 🌟",
+    "🧠 Sharp mind! You chose the right answer! 🎯",
 
-"🥇 Another victory! Keep up the amazing work! 🔥",
+    "👏 Fantastic choice! Your knowledge is shining! ✨",
 
-"🧠 Sharp mind! You chose the right answer! 🎯",
+    "🚀 Yes! You are moving closer to mastery! 💪",
 
-"👏 Fantastic choice! Your knowledge is shining! ✨",
+    "🌟 Outstanding answer! Keep believing in yourself! 💎",
 
-"🚀 Yes! You are moving closer to mastery! 💪",
+    "👏 በጣም ጥሩ! በርታ! 💪",
 
-"🌟 Outstanding answer! Keep believing in yourself! 💎"
-    ];
+    "🎉 እንኳን ደስ አለህ! በትክክል ነው! ✅",
+
+    "🔥 አሪፍ! እንደዚህ ቀጥል! 🚀"
+
+];
 
 
-    const incorrectMessages = [
+const incorrectMessages = [
 
-        "🌱 Keep trying! You are learning! 💪",
+    "🌱 Keep trying! You are learning! 💪",
 
-        "🔍 Not quite! Try another answer! 🔄",
+    "🔍 Not quite! Try another answer! 🔄",
 
-        "🧩 Mistakes are part of learning! Keep going! 🌟",
+    "🧩 Mistakes are part of learning! Keep going! 🌟",
 
-        "🎈 Don't give up! Try again! 🧗‍♂️",
+    "🎈 Don't give up! Try again! 🧗‍♂️",
 
-        "📖 Review what you know and try another choice! ✍️",
+    "📖 Review what you know and try another choice! ✍️",
 
-        "💡 Every attempt makes you stronger! 🧠",
+    "💡 Every attempt makes you stronger! 🧠",
 
-        "🤝 Keep learning and try another answer! 🎯",
+    "🤝 Keep learning and try another answer! 🎯",
 
-        "🧐 Take another look and try again! 🔍"
- "💪 ምንም አይደለም! እንደገና ሞክር! 🔄",
+    "🧐 Take another look and try again! 🔍",
 
-"🌱 ተስፋ አትቁረጥ! በርታ! 💪",
+    "🌱 No worries! Learn from this attempt and try again! 💪",
 
-"🧠 ደግመህ አስብና ሞክር! ትችላለህ! 🎯"     
-        "🌱 No worries! Learn from this attempt and try again! 💪",
-"🔄 Almost there! Think carefully and choose again! 🧠",
+    "🔄 Almost there! Think carefully and choose again! 🧠",
 
-"💡 Great learners make mistakes! Keep going! 🌟",
+    "💡 Great learners make mistakes! Keep going! 🌟",
 
-"🎯 Don't worry about the mistake! Focus and try again! 💪",
+    "🎯 Don't worry about the mistake! Focus and try again! 💪",
 
-"🔥 Stay strong! Every wrong answer teaches you something new! 🧠",
+    "🔥 Stay strong! Every wrong answer teaches you something new! 🧠",
 
-"🧐 Think again! You still have another chance! 🔄",
+    "🧐 Think again! You still have another chance! 🔄",
 
-"🌈 Keep your confidence! The next attempt could be the one! 🚀"
+    "🌈 Keep your confidence! The next attempt could be the one! 🚀",
 
-    ];
+    "💪 ምንም አይደለም! እንደገና ሞክር! 🔄",
+
+    "🌱 ተስፋ አትቁረጥ! በርታ! 💪",
+
+    "🧠 ደግመህ አስብና ሞክር! ትችላለህ! 🎯"
+
+];
+    
 
 
     // =================================================
