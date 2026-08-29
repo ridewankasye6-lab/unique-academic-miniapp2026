@@ -132,6 +132,21 @@
 
         }
 
+
+        /* =================================================
+           HIDE DUPLICATE CURRENT QUIZ CARD
+           
+           IMPORTANT:
+           The elements remain in the DOM because
+           quiz.js may use subjectName and chapterName.
+        ================================================= */
+
+        .subjectCard {
+
+            display: none !important;
+
+        }
+
     </style>
 
 </head>
@@ -189,6 +204,7 @@
                     Unique Academic
                 </h1>
 
+
                 <p id="headerChapter">
                     Quiz
                 </p>
@@ -232,6 +248,43 @@
         class="quizContainer"
         id="quizContainer"
     >
+
+
+        <!-- =====================================
+             SUBJECT / CHAPTER
+             
+             KEPT IN HTML FOR QUIZ.JS
+             HIDDEN VISUALLY BY CSS ABOVE.
+        ====================================== -->
+
+        <section class="subjectCard">
+
+
+            <div class="subjectIcon">
+                🎓
+            </div>
+
+
+            <div class="subjectInfo">
+
+                <p class="smallLabel">
+                    CURRENT QUIZ
+                </p>
+
+
+                <h2 id="subjectName">
+                    Subject
+                </h2>
+
+
+                <p id="chapterName">
+                    Chapter 1
+                </p>
+
+            </div>
+
+        </section>
+
 
 
         <!-- =====================================
