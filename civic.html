@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>⚖️ Civics</title>
+    <title>Civic Education - Chapter 1</title>
 
     <link
         rel="stylesheet"
@@ -23,293 +23,106 @@
 <body>
 
 
-<!-- =================================================
-     CIVICS HEADER
-================================================= -->
+<!-- =====================================
+     TOP NAVIGATION
+===================================== -->
 
-<h1>
-    ⚖️ Civics
-</h1>
+<header class="pageNav">
 
-<p>
-    <b>BDU Freshman Course</b>
-</p>
-
-
-<!-- =================================================
-     CHAPTERS / NOTES
-     KEEP THIS SECTION ABOVE RESOURCES
-================================================= -->
-
-<h2>
-    📚 Chapters
-</h2>
+    <button
+        id="pageBackBtn"
+        class="pageBackBtn"
+        type="button"
+    >
+        ← <span class="pageBackText">Back</span>
+    </button>
 
 
-<p>
-    📗
-    <a href="civics-chapter1.html">
-        Chapter 1
-    </a>
-</p>
+    <div class="pageTitle">
 
-
-<p>
-    📗
-    <a href="civics-chapter2.html">
-        Chapter 2
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="civics-chapter3.html">
-        Chapter 3
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="civics-chapter4.html">
-        Chapter 4
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="civics-chapter5.html">
-        Chapter 5
-    </a>
-</p>
-
-
-<!-- =================================================
-     RESOURCES
-================================================= -->
-
-<h2>
-    📌 Resources
-</h2>
-
-
-<p>
-
-    <a href="civics-notes.html">
-        📄 Full Notes
-    </a>
-
-</p>
-
-
-<p>
-    🎥 Video Tutorial
-</p>
-
-
-<!-- =================================================
-     CHAPTER QUIZZES
-     BELOW RESOURCES
-================================================= -->
-
-<h2>
-    📝 Chapter Quizzes
-</h2>
-
-
-<!-- =================================================
-     CHAPTER 1 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 1
+        <span class="pageTitleIcon">
+            📖
         </span>
 
-        <h3>
-            Understanding Civics and Ethics
-        </h3>
+        <div>
+
+            <h1>
+                Civic Education
+            </h1>
+
+            <p>
+                Chapter 1
+            </p>
+
+        </div>
 
     </div>
 
-    <a
-        href="quiz.html?subject=civic&chapter=1"
-        class="quiz-arrow"
-        aria-label="Open Civics Chapter 1 Quiz"
+
+    <button
+        id="pageHomeBtn"
+        class="pageHomeBtn"
+        type="button"
     >
-        ➜
-    </a>
+        🏠 <span class="pageHomeText">Home</span>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     CHAPTER CONTENT
+===================================== -->
+
+<div class="chapter">
+
+
+    <h2>
+        Chapter 1: Understanding Civics and Ethics
+    </h2>
+
+
+    <!-- Add your Chapter 1 notes here -->
+
 
 </div>
 
 
-<!-- =================================================
-     CHAPTER 2 QUIZ
-================================================= -->
 
-<div class="quiz-card">
+<!-- =====================================
+     TOP NAVIGATION JAVASCRIPT
+===================================== -->
 
-    <div class="quiz-progress">
-        0%
-    </div>
+<script>
 
-    <div class="quiz-info">
+document.getElementById("pageBackBtn").onclick = function () {
 
-        <span class="quiz-badge">
-            Chapter 2
-        </span>
+    if (history.length > 1) {
 
-        <h3>
-            Approaches to Ethics
-        </h3>
+        history.back();
 
-    </div>
+    } else {
 
-    <a
-        href="quiz.html?subject=civic&chapter=2"
-        class="quiz-arrow"
-        aria-label="Open Civics Chapter 2 Quiz"
-    >
-        ➜
-    </a>
+        window.location.href = "civic.html";
 
-</div>
+    }
+
+};
 
 
-<!-- =================================================
-     CHAPTER 3 QUIZ
-================================================= -->
+document.getElementById("pageHomeBtn").onclick = function () {
 
-<div class="quiz-card">
+    window.location.href = "index.html";
 
-    <div class="quiz-progress">
-        0%
-    </div>
+};
 
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 3
-        </span>
-
-        <h3>
-            Ethical Decision Making and Moral Judgments
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=civic&chapter=3"
-        class="quiz-arrow"
-        aria-label="Open Civics Chapter 3 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
+</script>
 
 
-<!-- =================================================
-     CHAPTER 4 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 4
-        </span>
-
-        <h3>
-            State, Government and Citizenship
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=civic&chapter=4"
-        class="quiz-arrow"
-        aria-label="Open Civics Chapter 4 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     CHAPTER 5 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 5
-        </span>
-
-        <h3>
-            Constitution, Democracy and Human Rights
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=civic&chapter=5"
-        class="quiz-arrow"
-        aria-label="Open Civics Chapter 5 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     BACK HOME
-================================================= -->
-
-<p style="text-align:center;">
-
-    <a
-        class="button"
-        href="index.html"
-    >
-        🏠 Back Home
-    </a>
-
-</p>
-
-
-<!-- =================================================
-     QUIZ PROGRESS
-================================================= -->
-
-<script src="quiz-progress.js"></script>
-
-
-<!-- =================================================
+<!-- =====================================
      ACCESS GUARD
-================================================= -->
+===================================== -->
 
 <script
     type="module"
@@ -318,4 +131,5 @@
 
 
 </body>
+
 </html>
