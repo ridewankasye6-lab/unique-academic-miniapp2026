@@ -1,10 +1,9 @@
 // =====================================================
 // UNIQUE ACADEMIC QUIZ ENGINE
 // 5 QUESTIONS PER PAGE
-// SELECTED ANSWER ONLY
-// ✓ CORRECT / ❌ WRONG
-// MOTIVATIONAL FEEDBACK
-// ENGLISH + AMHARIC EXPLANATION
+// + MOTIVATIONAL ANSWER FEEDBACK
+// + CORRECT / WRONG ICONS
+// + ENGLISH & AMHARIC EXPLANATIONS
 // =====================================================
 
 (function () {
@@ -162,11 +161,12 @@
     // =================================================
     // ANSWER STATE
     //
-    // null = unanswered
+    // null  = not answered
     // number = selected option index
     // =================================================
 
-    let userAnswers = [];
+    let userAnswers =
+        [];
 
 
     // =================================================
@@ -221,21 +221,21 @@
 
     const incorrectMessages = [
 
-        "🌱 Keep learning! Every mistake makes you stronger! 💪",
+        "🌱 You are on the right path! Just a little more effort! 💪",
 
-        "🔍 Don't give up! Review it and keep trying! 🔄",
+        "🔍 This response is not right. Please review and try again! 🔄",
 
-        "🧩 Mistakes are part of learning! Keep going! 🌟",
+        "🧩 Mistakes are part of learning! Keep at it and you will succeed! 🌟",
 
-        "🎈 Keep your chin up! You are getting closer! 🧗‍♂️",
+        "🎈 Keep your chin up! Every mistake is a step toward mastery! 🧗‍♂️",
 
-        "📖 Review the explanation and learn from it! ✍️",
+        "📖 While this answer is incorrect, review your notes! ✍️",
 
-        "💡 Every attempt strengthens your understanding! 🧠",
+        "💡 Each attempt strengthens your understanding! 🧠",
 
-        "🤝 Not this time, but keep learning! 🎯",
+        "🤝 Not the right answer, keep learning and trying! 🎯",
 
-        "🧐 Take another look and keep improving! 🔍"
+        "🧐 You are close! Take another look and keep learning! 🔍"
 
     ];
 
@@ -270,36 +270,64 @@
         style.textContent = `
 
             /* =========================================
-               ANSWER RESULT ICON
+               OPTION BUTTON
             ========================================= */
 
-            .unique-answer-result-icon {
+            .optionBtn {
 
-                width: 42px;
+                position: relative;
 
-                height: 42px;
+                display: flex;
 
-                min-width: 42px;
+                align-items: center;
+
+                justify-content: space-between;
+
+                gap: 14px;
+
+            }
+
+
+            /* =========================================
+               OPTION TEXT
+            ========================================= */
+
+            .unique-option-text {
+
+                flex: 1;
+
+                text-align: left;
+
+            }
+
+
+            /* =========================================
+               ANSWER ICON
+            ========================================= */
+
+            .unique-answer-icon {
+
+                width: 50px;
+
+                height: 50px;
+
+                min-width: 50px;
 
                 border-radius: 50%;
 
-                display: inline-flex;
+                display: flex;
 
                 align-items: center;
 
                 justify-content: center;
 
-                margin-left: 12px;
-
-                font-size: 25px;
+                font-size: 30px;
 
                 font-weight: 900;
 
                 line-height: 1;
 
                 flex-shrink: 0;
-
-                box-sizing: border-box;
 
             }
 
@@ -308,21 +336,19 @@
                CORRECT ICON
             ========================================= */
 
-            .unique-answer-result-icon.correct-icon {
+            .unique-correct-icon {
 
-                background:
-                    #2fb86d;
+                background: #2dbb70;
 
-                color:
-                    #ffffff;
+                color: #ffffff;
 
                 box-shadow:
                     0 5px 14px
                     rgba(
-                        47,
-                        184,
-                        109,
-                        0.25
+                        45,
+                        187,
+                        112,
+                        0.28
                     );
 
             }
@@ -332,94 +358,55 @@
                WRONG ICON
             ========================================= */
 
-            .unique-answer-result-icon.wrong-icon {
+            .unique-wrong-icon {
 
-                background:
-                    #e34b50;
+                background: #e34d55;
 
-                color:
-                    #ffffff;
+                color: #ffffff;
 
                 box-shadow:
                     0 5px 14px
                     rgba(
                         227,
-                        75,
-                        80,
-                        0.22
+                        77,
+                        85,
+                        0.25
                     );
 
             }
 
 
             /* =========================================
-               ANSWER BUTTON LAYOUT
-            ========================================= */
-
-            .optionBtn {
-
-                position:
-                    relative;
-
-                display:
-                    flex;
-
-                align-items:
-                    center;
-
-                justify-content:
-                    space-between;
-
-                gap:
-                    12px;
-
-            }
-
-
-            /* =========================================
-               FEEDBACK BOX
+               MOTIVATIONAL FEEDBACK
             ========================================= */
 
             .unique-answer-feedback {
 
-                width:
-                    100%;
+                width: 100%;
 
-                box-sizing:
-                    border-box;
+                box-sizing: border-box;
 
-                margin:
-                    18px 0 16px;
+                margin: 18px 0 16px;
 
-                padding:
-                    15px 18px;
+                padding: 15px 18px;
 
-                border-radius:
-                    16px;
+                border-radius: 16px;
 
-                font-size:
-                    17px;
+                font-size: 17px;
 
-                font-weight:
-                    700;
+                font-weight: 700;
 
-                line-height:
-                    1.5;
+                line-height: 1.5;
 
-                display:
-                    flex;
+                display: flex;
 
-                align-items:
-                    center;
+                align-items: center;
 
-                justify-content:
-                    center;
+                justify-content: center;
 
-                text-align:
-                    center;
+                text-align: center;
 
-                transform-origin:
-                    center;
+                transform-origin: center;
 
                 animation:
                     uniqueFeedbackPop
@@ -515,11 +502,9 @@
 
             .unique-feedback-text {
 
-                display:
-                    block;
+                display: block;
 
-                width:
-                    100%;
+                width: 100%;
 
             }
 
@@ -532,8 +517,7 @@
 
                 0% {
 
-                    opacity:
-                        0;
+                    opacity: 0;
 
                     transform:
                         translateY(12px)
@@ -543,8 +527,7 @@
 
                 55% {
 
-                    opacity:
-                        1;
+                    opacity: 1;
 
                     transform:
                         translateY(-3px)
@@ -554,8 +537,7 @@
 
                 100% {
 
-                    opacity:
-                        1;
+                    opacity: 1;
 
                     transform:
                         translateY(0)
@@ -574,11 +556,11 @@
 
                 .unique-answer-feedback {
 
-                    font-size:
-                        15px;
+                    font-size: 15px;
 
                     padding:
-                        13px 14px;
+                        13px
+                        14px;
 
                     border-radius:
                         14px;
@@ -586,22 +568,15 @@
                 }
 
 
-                .unique-answer-result-icon {
+                .unique-answer-icon {
 
-                    width:
-                        38px;
+                    width: 46px;
 
-                    height:
-                        38px;
+                    height: 46px;
 
-                    min-width:
-                        38px;
+                    min-width: 46px;
 
-                    font-size:
-                        22px;
-
-                    margin-left:
-                        8px;
+                    font-size: 27px;
 
                 }
 
@@ -621,7 +596,7 @@
 
 
     // =================================================
-    // GET RANDOM MESSAGE
+    // RANDOM MESSAGE
     // =================================================
 
     function getRandomMessage(
@@ -645,7 +620,9 @@
             );
 
 
-        return messages[randomIndex];
+        return messages[
+            randomIndex
+        ];
 
     }
 
@@ -669,11 +646,23 @@
             "unique-answer-feedback";
 
 
-        feedback.classList.add(
+        if (
             isCorrect
-                ? "correct-feedback"
-                : "incorrect-feedback"
-        );
+        ) {
+
+            feedback.classList.add(
+                "correct-feedback"
+            );
+
+        }
+
+        else {
+
+            feedback.classList.add(
+                "incorrect-feedback"
+            );
+
+        }
 
 
         const feedbackText =
@@ -685,6 +674,11 @@
         feedbackText.className =
             "unique-feedback-text";
 
+
+        /*
+         * textContent safely keeps
+         * all emojis.
+         */
 
         feedbackText.textContent =
             message;
@@ -701,7 +695,7 @@
 
 
     // =================================================
-    // FORMAT SUBJECT NAME
+    // FORMAT SUBJECT
     // =================================================
 
     function formatSubjectName(
@@ -811,7 +805,7 @@
 
 
     // =================================================
-    // GET PROGRESS STORAGE KEY
+    // PROGRESS STORAGE KEY
     // =================================================
 
     function getProgressStorageKey() {
@@ -829,109 +823,6 @@
 
 
         return `uniqueAcademicQuizProgress_${normalizedSubject}_${normalizedChapter}`;
-
-    }
-
-
-    // =================================================
-    // SAVE CHAPTER PROGRESS
-    // =================================================
-
-    function saveChapterProgress() {
-
-        const totalQuestions =
-            questions.length;
-
-
-        const answeredQuestions =
-            userAnswers.filter(
-                answer =>
-                    answer !== null
-            ).length;
-
-
-        const percentage =
-            totalQuestions > 0
-                ? Math.round(
-                    (
-                        score /
-                        totalQuestions
-                    ) * 100
-                )
-                : 0;
-
-
-        const completed =
-            totalQuestions > 0 &&
-            answeredQuestions ===
-            totalQuestions;
-
-
-        const progressData = {
-
-            subject:
-                subject,
-
-            chapter:
-                chapter,
-
-            correct:
-                score,
-
-            wrong:
-                wrongAnswers,
-
-            total:
-                totalQuestions,
-
-            answered:
-                answeredQuestions,
-
-            percentage:
-                percentage,
-
-            completed:
-                completed,
-
-            updatedAt:
-                Date.now()
-
-        };
-
-
-        try {
-
-            localStorage.setItem(
-
-                getProgressStorageKey(),
-
-                JSON.stringify(
-                    progressData
-                )
-
-            );
-
-
-            window.dispatchEvent(
-                new CustomEvent(
-                    "uniqueAcademicQuizProgressUpdated",
-                    {
-                        detail:
-                            progressData
-                    }
-                )
-            );
-
-        }
-
-        catch (error) {
-
-            console.error(
-                "Unable to save quiz progress:",
-                error
-            );
-
-        }
 
     }
 
@@ -1044,10 +935,9 @@
         ) {
 
             console.error(
-                "Subject not found in quizData:",
+                "Subject not found:",
                 subject
             );
-
 
             console.log(
                 "Available subjects:",
@@ -1056,15 +946,10 @@
                 )
             );
 
-
             return [];
 
         }
 
-
-        // ---------------------------------------------
-        // Exact chapter
-        // ---------------------------------------------
 
         if (
             subjectData[chapter]
@@ -1078,10 +963,6 @@
 
         }
 
-
-        // ---------------------------------------------
-        // Numeric chapter
-        // ---------------------------------------------
 
         const numericChapter =
             Number.parseInt(
@@ -1148,7 +1029,6 @@
     ) {
 
         questionsPage.innerHTML = `
-
             <section class="questionCard">
 
                 <h2 class="questionText">
@@ -1156,7 +1036,6 @@
                 </h2>
 
             </section>
-
         `;
 
 
@@ -1178,7 +1057,7 @@
 
 
     // =================================================
-    // PREPARE ANSWER ARRAY
+    // PREPARE ANSWERS
     // =================================================
 
     userAnswers =
@@ -1190,7 +1069,7 @@
 
 
     // =================================================
-    // GET ENGLISH EXPLANATION
+    // ENGLISH EXPLANATION
     // =================================================
 
     function getEnglishExplanation(
@@ -1198,8 +1077,17 @@
     ) {
 
         if (
-            q &&
-            q.englishExplanation
+            !q
+        ) {
+
+            return "";
+
+        }
+
+
+        if (
+            typeof q.englishExplanation ===
+            "string"
         ) {
 
             return q.englishExplanation;
@@ -1208,12 +1096,33 @@
 
 
         if (
-            q &&
+            typeof q.explanationEnglish ===
+            "string"
+        ) {
+
+            return q.explanationEnglish;
+
+        }
+
+
+        if (
             q.explanation &&
-            q.explanation.english
+            typeof q.explanation.english ===
+            "string"
         ) {
 
             return q.explanation.english;
+
+        }
+
+
+        if (
+            q.explanation &&
+            typeof q.explanation.en ===
+            "string"
+        ) {
+
+            return q.explanation.en;
 
         }
 
@@ -1224,7 +1133,7 @@
 
 
     // =================================================
-    // GET AMHARIC EXPLANATION
+    // AMHARIC EXPLANATION
     // =================================================
 
     function getAmharicExplanation(
@@ -1232,8 +1141,17 @@
     ) {
 
         if (
-            q &&
-            q.amharicExplanation
+            !q
+        ) {
+
+            return "";
+
+        }
+
+
+        if (
+            typeof q.amharicExplanation ===
+            "string"
         ) {
 
             return q.amharicExplanation;
@@ -1242,12 +1160,33 @@
 
 
         if (
-            q &&
+            typeof q.explanationAmharic ===
+            "string"
+        ) {
+
+            return q.explanationAmharic;
+
+        }
+
+
+        if (
             q.explanation &&
-            q.explanation.amharic
+            typeof q.explanation.amharic ===
+            "string"
         ) {
 
             return q.explanation.amharic;
+
+        }
+
+
+        if (
+            q.explanation &&
+            typeof q.explanation.am ===
+            "string"
+        ) {
+
+            return q.explanation.am;
 
         }
 
@@ -1258,7 +1197,7 @@
 
 
     // =================================================
-    // GET OPTIONS
+    // QUESTION OPTIONS
     // =================================================
 
     function getQuestionOptions(
@@ -1295,16 +1234,24 @@
 
 
     // =================================================
-    // GET CORRECT ANSWER
+    // CORRECT ANSWER
     // =================================================
 
     function getCorrectAnswer(
         q
     ) {
 
+        if (
+            !q
+        ) {
+
+            return -1;
+
+        }
+
+
         const answer =
             Number.parseInt(
-                q &&
                 q.answer,
                 10
             );
@@ -1321,197 +1268,134 @@
         }
 
 
+        /*
+         * Extra compatibility:
+         * correctAnswer can also be used
+         * if your question data contains it.
+         */
+
+        const correctAnswer =
+            Number.parseInt(
+                q.correctAnswer,
+                10
+            );
+
+
+        if (
+            Number.isInteger(
+                correctAnswer
+            )
+        ) {
+
+            return correctAnswer;
+
+        }
+
+
         return -1;
 
     }
 
 
     // =================================================
-    // ADD RESULT ICON
-    //
-    // ONLY THE SELECTED ANSWER GETS AN ICON
+    // SAVE PROGRESS
     // =================================================
 
-    function addResultIcon(
-        button,
-        isCorrect
-    ) {
+    function saveChapterProgress() {
 
-        // ---------------------------------------------
-        // Remove any old icon first
-        // ---------------------------------------------
+        const totalQuestions =
+            questions.length;
 
-        const oldIcon =
-            button.querySelector(
-                ".unique-answer-result-icon"
+
+        const answeredQuestions =
+            userAnswers.filter(
+                answer =>
+                    answer !== null
+            ).length;
+
+
+        const percentage =
+            totalQuestions > 0
+                ? Math.round(
+                    (
+                        score /
+                        totalQuestions
+                    ) * 100
+                )
+                : 0;
+
+
+        const completed =
+            totalQuestions > 0 &&
+            answeredQuestions ===
+            totalQuestions;
+
+
+        const progressData = {
+
+            subject:
+                subject,
+
+            chapter:
+                chapter,
+
+            correct:
+                score,
+
+            wrong:
+                wrongAnswers,
+
+            total:
+                totalQuestions,
+
+            answered:
+                answeredQuestions,
+
+            percentage:
+                percentage,
+
+            completed:
+                completed,
+
+            updatedAt:
+                Date.now()
+
+        };
+
+
+        try {
+
+            localStorage.setItem(
+
+                getProgressStorageKey(),
+
+                JSON.stringify(
+                    progressData
+                )
+
             );
 
 
-        if (
-            oldIcon
-        ) {
-
-            oldIcon.remove();
-
-        }
-
-
-        // ---------------------------------------------
-        // Create icon
-        // ---------------------------------------------
-
-        const icon =
-            document.createElement(
-                "span"
-            );
-
-
-        icon.className =
-            "unique-answer-result-icon";
-
-
-        if (
-            isCorrect
-        ) {
-
-            icon.classList.add(
-                "correct-icon"
-            );
-
-
-            icon.textContent =
-                "✓";
-
-        }
-
-        else {
-
-            icon.classList.add(
-                "wrong-icon"
-            );
-
-
-            icon.textContent =
-                "❌";
-
-        }
-
-
-        button.appendChild(
-            icon
-        );
-
-    }
-
-
-    // =================================================
-    // APPLY ANSWER RESULT
-    //
-    // IMPORTANT:
-    // Only selected answer changes.
-    // Other answers stay normal.
-    // =================================================
-
-    function applyAnswerResult(
-        q,
-        selectedIndex,
-        buttons
-    ) {
-
-        const correctAnswer =
-            getCorrectAnswer(
-                q
-            );
-
-
-        const isCorrect =
-            selectedIndex ===
-            correctAnswer;
-
-
-        buttons.forEach(
-            (
-                button,
-                optionIndex
-            ) => {
-
-                // -------------------------------------
-                // Always disabled after answering
-                // -------------------------------------
-
-                button.disabled =
-                    true;
-
-
-                // -------------------------------------
-                // Remove old state/classes/icons
-                // -------------------------------------
-
-                button.classList.remove(
-                    "correct"
-                );
-
-
-                button.classList.remove(
-                    "wrong"
-                );
-
-
-                const oldIcon =
-                    button.querySelector(
-                        ".unique-answer-result-icon"
-                    );
-
-
-                if (
-                    oldIcon
-                ) {
-
-                    oldIcon.remove();
-
-                }
-
-
-                // -------------------------------------
-                // ONLY SELECTED ANSWER GETS RESULT
-                // -------------------------------------
-
-                if (
-                    optionIndex ===
-                    selectedIndex
-                ) {
-
-                    if (
-                        isCorrect
-                    ) {
-
-                        button.classList.add(
-                            "correct"
-                        );
-
+            window.dispatchEvent(
+                new CustomEvent(
+                    "uniqueAcademicQuizProgressUpdated",
+                    {
+                        detail:
+                            progressData
                     }
+                )
+            );
 
-                    else {
+        }
 
-                        button.classList.add(
-                            "wrong"
-                        );
+        catch (error) {
 
-                    }
+            console.error(
+                "Unable to save quiz progress:",
+                error
+            );
 
-
-                    addResultIcon(
-                        button,
-                        isCorrect
-                    );
-
-                }
-
-            }
-        );
-
-
-        return isCorrect;
+        }
 
     }
 
@@ -1690,7 +1574,7 @@
 
 
         // =============================================
-        // ENGLISH EXPLANATION
+        // ENGLISH
         // =============================================
 
         const englishSection =
@@ -1748,7 +1632,7 @@
 
 
         // =============================================
-        // AMHARIC EXPLANATION
+        // AMHARIC
         // =============================================
 
         const amharicSection =
@@ -1807,15 +1691,124 @@
 
 
         // =============================================
-        // RESTORE PREVIOUS ANSWER
+        // PREVIOUS ANSWER
         // =============================================
 
         const previousAnswer =
             userAnswers[index];
 
 
+        if (
+            previousAnswer !== null
+        ) {
+
+            const correctAnswer =
+                getCorrectAnswer(
+                    q
+                );
+
+
+            const isCorrect =
+                previousAnswer ===
+                correctAnswer;
+
+
+            explanationBox.style.display =
+                "block";
+
+
+            englishExplanation.textContent =
+                getEnglishExplanation(
+                    q
+                );
+
+
+            amharicExplanation.textContent =
+                getAmharicExplanation(
+                    q
+                );
+
+
+            const feedbackMessage =
+                getRandomMessage(
+                    isCorrect
+                        ? correctMessages
+                        : incorrectMessages
+                );
+
+
+            const feedbackBox =
+                createAnswerFeedback(
+                    isCorrect,
+                    feedbackMessage
+                );
+
+
+            // =========================================
+            // CREATE OPTIONS
+            // =========================================
+
+            questionOptions.forEach(
+                (
+                    option,
+                    optionIndex
+                ) => {
+
+                    const button =
+                        createOptionButton(
+                            option,
+                            optionIndex,
+                            previousAnswer,
+                            correctAnswer,
+                            true
+                        );
+
+
+                    options.appendChild(
+                        button
+                    );
+
+                }
+            );
+
+
+            questionCard.appendChild(
+                questionLabel
+            );
+
+
+            questionCard.appendChild(
+                questionText
+            );
+
+
+            questionCard.appendChild(
+                options
+            );
+
+
+            questionCard.appendChild(
+                feedbackBox
+            );
+
+
+            questionCard.appendChild(
+                explanationBox
+            );
+
+
+            questionsPage.appendChild(
+                questionCard
+            );
+
+
+            return;
+
+        }
+
+
         // =============================================
-        // CREATE OPTIONS
+        // CREATE UNANSWERED OPTIONS
         // =============================================
 
         questionOptions.forEach(
@@ -1825,145 +1818,18 @@
             ) => {
 
                 const button =
-                    document.createElement(
-                        "button"
+                    createOptionButton(
+                        option,
+                        optionIndex,
+                        null,
+                        getCorrectAnswer(q),
+                        false
                     );
 
-
-                button.type =
-                    "button";
-
-
-                button.className =
-                    "optionBtn";
-
-
-                // -------------------------------------
-                // Remove old icons/states
-                // -------------------------------------
-
-                button.classList.remove(
-                    "correct"
-                );
-
-
-                button.classList.remove(
-                    "wrong"
-                );
-
-
-                // -------------------------------------
-                // Put option text
-                // -------------------------------------
-
-                const optionText =
-                    document.createElement(
-                        "span"
-                    );
-
-
-                optionText.className =
-                    "optionText";
-
-
-                optionText.textContent =
-                    option;
-
-
-                button.appendChild(
-                    optionText
-                );
-
-
-                // -------------------------------------
-                // RESTORE ANSWER
-                // -------------------------------------
-
-                if (
-                    previousAnswer !== null &&
-                    typeof previousAnswer !==
-                    "undefined"
-                ) {
-
-                    button.disabled =
-                        true;
-
-
-                    if (
-                        optionIndex ===
-                        previousAnswer
-                    ) {
-
-                        const correctAnswer =
-                            getCorrectAnswer(
-                                q
-                            );
-
-
-                        const isCorrect =
-                            previousAnswer ===
-                            correctAnswer;
-
-
-                        if (
-                            isCorrect
-                        ) {
-
-                            button.classList.add(
-                                "correct"
-                            );
-
-                        }
-
-                        else {
-
-                            button.classList.add(
-                                "wrong"
-                            );
-
-                        }
-
-
-                        // -----------------------------
-                        // Restore ONLY selected icon
-                        // -----------------------------
-
-                        addResultIcon(
-                            button,
-                            isCorrect
-                        );
-
-                    }
-
-                }
-
-
-                // =====================================
-                // OPTION CLICK
-                // =====================================
 
                 button.addEventListener(
                     "click",
                     () => {
-
-                        if (
-                            quizFinished
-                        ) {
-
-                            return;
-
-                        }
-
-
-                        if (
-                            userAnswers[index] !==
-                            null
-                        ) {
-
-                            return;
-
-                        }
-
 
                         checkAnswer(
                             q,
@@ -1989,80 +1855,7 @@
 
 
         // =============================================
-        // RESTORE EXPLANATION + FEEDBACK
-        // =============================================
-
-        if (
-            previousAnswer !== null &&
-            typeof previousAnswer !==
-            "undefined"
-        ) {
-
-            const correctAnswer =
-                getCorrectAnswer(
-                    q
-                );
-
-
-            const isCorrect =
-                previousAnswer ===
-                correctAnswer;
-
-
-            // -----------------------------------------
-            // Restore explanation
-            // -----------------------------------------
-
-            englishExplanation.textContent =
-                getEnglishExplanation(
-                    q
-                );
-
-
-            amharicExplanation.textContent =
-                getAmharicExplanation(
-                    q
-                );
-
-
-            explanationBox.style.display =
-                "block";
-
-
-            // -----------------------------------------
-            // Restore motivational feedback
-            // -----------------------------------------
-
-            const feedback =
-                createAnswerFeedback(
-
-                    isCorrect,
-
-                    getRandomMessage(
-                        isCorrect
-                            ? correctMessages
-                            : incorrectMessages
-                    )
-
-                );
-
-
-            questionCard.appendChild(
-                document.createElement(
-                    "div"
-                )
-            );
-
-
-            questionCard.appendChild(
-                feedback
-            );
-
-        }
-
-
-        // =============================================
-        // ADD EVERYTHING TO CARD
+        // ADD TO CARD
         // =============================================
 
         questionCard.appendChild(
@@ -2080,37 +1873,6 @@
         );
 
 
-        // ---------------------------------------------
-        // For answered questions, feedback must be
-        // between options and explanation.
-        // ---------------------------------------------
-
-        if (
-            previousAnswer !== null &&
-            typeof previousAnswer !==
-            "undefined"
-        ) {
-
-            const feedback =
-                questionCard.querySelector(
-                    ".unique-answer-feedback"
-                );
-
-
-            if (
-                feedback
-            ) {
-
-                questionCard.insertBefore(
-                    feedback,
-                    explanationBox
-                );
-
-            }
-
-        }
-
-
         questionCard.appendChild(
             explanationBox
         );
@@ -2118,6 +1880,182 @@
 
         questionsPage.appendChild(
             questionCard
+        );
+
+    }
+
+
+    // =================================================
+    // CREATE OPTION BUTTON
+    // =================================================
+
+    function createOptionButton(
+        option,
+        optionIndex,
+        selectedAnswer,
+        correctAnswer,
+        answered
+    ) {
+
+        const button =
+            document.createElement(
+                "button"
+            );
+
+
+        button.type =
+            "button";
+
+
+        button.className =
+            "optionBtn";
+
+
+        // =============================================
+        // OPTION TEXT
+        // =============================================
+
+        const optionText =
+            document.createElement(
+                "span"
+            );
+
+
+        optionText.className =
+            "unique-option-text";
+
+
+        optionText.textContent =
+            option;
+
+
+        button.appendChild(
+            optionText
+        );
+
+
+        // =============================================
+        // SHOW RESULT ONLY AFTER ANSWERING
+        // =============================================
+
+        if (
+            answered
+        ) {
+
+            button.disabled =
+                true;
+
+
+            /*
+             * IMPORTANT:
+             *
+             * Only the selected answer receives
+             * the red X when it is wrong.
+             *
+             * The correct answer receives
+             * the green check.
+             *
+             * Other options remain normal.
+             */
+
+            if (
+                optionIndex ===
+                correctAnswer
+            ) {
+
+                button.classList.add(
+                    "correct"
+                );
+
+
+                addAnswerIcon(
+                    button,
+                    "✓",
+                    "unique-correct-icon"
+                );
+
+            }
+
+
+            if (
+                optionIndex ===
+                selectedAnswer &&
+                optionIndex !==
+                correctAnswer
+            ) {
+
+                button.classList.add(
+                    "wrong"
+                );
+
+
+                addAnswerIcon(
+                    button,
+                    "×",
+                    "unique-wrong-icon"
+                );
+
+            }
+
+        }
+
+
+        return button;
+
+    }
+
+
+    // =================================================
+    // ADD ANSWER ICON
+    // =================================================
+
+    function addAnswerIcon(
+        button,
+        icon,
+        iconClass
+    ) {
+
+        /*
+         * Remove an existing icon first.
+         * This prevents duplicate icons.
+         */
+
+        const oldIcon =
+            button.querySelector(
+                ".unique-answer-icon"
+            );
+
+
+        if (
+            oldIcon
+        ) {
+
+            oldIcon.remove();
+
+        }
+
+
+        const iconElement =
+            document.createElement(
+                "span"
+            );
+
+
+        iconElement.className =
+            "unique-answer-icon";
+
+
+        iconElement.classList.add(
+            iconClass
+        );
+
+
+        iconElement.textContent =
+            icon;
+
+
+        button.appendChild(
+            iconElement
         );
 
     }
@@ -2139,7 +2077,7 @@
     ) {
 
         // =============================================
-        // SAFETY
+        // SAFETY CHECK
         // =============================================
 
         if (
@@ -2153,26 +2091,18 @@
 
 
         // =============================================
-        // SAVE SELECTED ANSWER
+        // SAVE ANSWER
         // =============================================
 
         userAnswers[questionIndex] =
             selectedIndex;
 
 
-        // =============================================
-        // GET CORRECT ANSWER
-        // =============================================
-
         const correctAnswer =
             getCorrectAnswer(
                 q
             );
 
-
-        // =============================================
-        // DETERMINE RESULT
-        // =============================================
 
         const isCorrect =
             selectedIndex ===
@@ -2199,9 +2129,7 @@
 
 
         // =============================================
-        // SHOW RESULT
-        //
-        // ONLY SELECTED OPTION
+        // DISABLE ALL OPTIONS
         // =============================================
 
         const buttons =
@@ -2210,10 +2138,93 @@
             );
 
 
-        applyAnswerResult(
-            q,
-            selectedIndex,
-            buttons
+        buttons.forEach(
+            (
+                button,
+                optionIndex
+            ) => {
+
+                button.disabled =
+                    true;
+
+
+                /*
+                 * Remove any old icons.
+                 */
+
+                const oldIcon =
+                    button.querySelector(
+                        ".unique-answer-icon"
+                    );
+
+
+                if (
+                    oldIcon
+                ) {
+
+                    oldIcon.remove();
+
+                }
+
+
+                /*
+                 * Remove old result classes.
+                 */
+
+                button.classList.remove(
+                    "correct",
+                    "wrong"
+                );
+
+
+                // =====================================
+                // CORRECT ANSWER
+                // =====================================
+
+                if (
+                    optionIndex ===
+                    correctAnswer
+                ) {
+
+                    button.classList.add(
+                        "correct"
+                    );
+
+
+                    addAnswerIcon(
+                        button,
+                        "✓",
+                        "unique-correct-icon"
+                    );
+
+                }
+
+
+                // =====================================
+                // SELECTED WRONG ANSWER
+                // =====================================
+
+                if (
+                    optionIndex ===
+                    selectedIndex &&
+                    optionIndex !==
+                    correctAnswer
+                ) {
+
+                    button.classList.add(
+                        "wrong"
+                    );
+
+
+                    addAnswerIcon(
+                        button,
+                        "×",
+                        "unique-wrong-icon"
+                    );
+
+                }
+
+            }
         );
 
 
@@ -2230,11 +2241,9 @@
 
         const feedbackMessage =
             getRandomMessage(
-
                 isCorrect
                     ? correctMessages
                     : incorrectMessages
-
             );
 
 
@@ -2245,9 +2254,9 @@
             );
 
 
-        // =============================================
-        // REMOVE OLD FEEDBACK IF ANY
-        // =============================================
+        /*
+         * Remove any old feedback first.
+         */
 
         const oldFeedback =
             questionCard.querySelector(
@@ -2264,9 +2273,10 @@
         }
 
 
-        // =============================================
-        // SHOW FEEDBACK
-        // =============================================
+        /*
+         * Feedback goes AFTER options
+         * and BEFORE explanation.
+         */
 
         questionCard.insertBefore(
             feedbackBox,
@@ -2278,28 +2288,51 @@
         // SHOW ENGLISH EXPLANATION
         // =============================================
 
-        englishExplanation.textContent =
+        const englishText =
             getEnglishExplanation(
                 q
             );
+
+
+        englishExplanation.textContent =
+            englishText;
 
 
         // =============================================
         // SHOW AMHARIC EXPLANATION
         // =============================================
 
-        amharicExplanation.textContent =
+        const amharicText =
             getAmharicExplanation(
                 q
             );
 
 
-        // =============================================
-        // SHOW EXPLANATION CARD
-        // =============================================
+        amharicExplanation.textContent =
+            amharicText;
+
+
+        /*
+         * FORCE explanation to be visible.
+         */
 
         explanationBox.style.display =
             "block";
+
+
+        explanationBox.hidden =
+            false;
+
+
+        /*
+         * Make sure both explanation sections
+         * are visible.
+         */
+
+        englishSectionVisible(
+            explanationBox,
+            englishText
+        );
 
 
         // =============================================
@@ -2333,8 +2366,67 @@
                 }
 
             },
-            120
+            150
         );
+
+    }
+
+
+    // =================================================
+    // ENSURE EXPLANATION IS VISIBLE
+    // =================================================
+
+    function englishSectionVisible(
+        explanationBox,
+        englishText
+    ) {
+
+        /*
+         * Do not hide explanation even if one
+         * language is empty.
+         */
+
+        explanationBox.style.visibility =
+            "visible";
+
+
+        explanationBox.style.opacity =
+            "1";
+
+
+        const sections =
+            explanationBox.querySelectorAll(
+                ".explanationSection"
+            );
+
+
+        sections.forEach(
+            section => {
+
+                section.style.visibility =
+                    "visible";
+
+                section.style.opacity =
+                    "1";
+
+            }
+        );
+
+
+        /*
+         * If English explanation is missing,
+         * still keep the explanation card visible.
+         */
+
+        if (
+            !englishText
+        ) {
+
+            console.warn(
+                "English explanation is empty for this question."
+            );
+
+        }
 
     }
 
@@ -2345,17 +2437,17 @@
 
     function updateNavigation() {
 
-        // ---------------------------------------------
+        // =============================================
         // PREVIOUS
-        // ---------------------------------------------
+        // =============================================
 
         previousQuestionBtn.disabled =
             currentPage === 0;
 
 
-        // ---------------------------------------------
+        // =============================================
         // TOTAL PAGES
-        // ---------------------------------------------
+        // =============================================
 
         const totalPages =
             Math.ceil(
@@ -2364,9 +2456,9 @@
             );
 
 
-        // ---------------------------------------------
+        // =============================================
         // LAST PAGE
-        // ---------------------------------------------
+        // =============================================
 
         if (
             currentPage ===
@@ -2374,15 +2466,8 @@
         ) {
 
             nextBtn.innerHTML = `
-
-                <span>
-                    Finish Quiz
-                </span>
-
-                <span class="navArrow">
-                    ✓
-                </span>
-
+                <span>Finish Quiz</span>
+                <span class="navArrow">✓</span>
             `;
 
         }
@@ -2390,23 +2475,16 @@
         else {
 
             nextBtn.innerHTML = `
-
-                <span>
-                    Next
-                </span>
-
-                <span class="navArrow">
-                    →
-                </span>
-
+                <span>Next</span>
+                <span class="navArrow">→</span>
             `;
 
         }
 
 
-        // ---------------------------------------------
-        // MAKE SURE NEXT IS ENABLED
-        // ---------------------------------------------
+        /*
+         * Make sure Next is usable.
+         */
 
         nextBtn.disabled =
             false;
@@ -2438,10 +2516,6 @@
                 );
 
 
-            // -----------------------------------------
-            // GO TO NEXT PAGE
-            // -----------------------------------------
-
             if (
                 currentPage <
                 totalPages - 1
@@ -2451,16 +2525,13 @@
 
                 loadPage();
 
-                return;
-
             }
 
+            else {
 
-            // -----------------------------------------
-            // LAST PAGE → FINISH
-            // -----------------------------------------
+                finishQuiz();
 
-            finishQuiz();
+            }
 
         }
     );
@@ -2516,17 +2587,17 @@
             true;
 
 
-        // ---------------------------------------------
-        // REMOVE QUESTIONS
-        // ---------------------------------------------
+        // =============================================
+        // HIDE QUESTIONS
+        // =============================================
 
         questionsPage.innerHTML =
             "";
 
 
-        // ---------------------------------------------
+        // =============================================
         // HIDE NAVIGATION
-        // ---------------------------------------------
+        // =============================================
 
         previousQuestionBtn.style.display =
             "none";
@@ -2536,17 +2607,17 @@
             "none";
 
 
-        // ---------------------------------------------
+        // =============================================
         // SHOW COMPLETION
-        // ---------------------------------------------
+        // =============================================
 
         completionMessage.hidden =
             false;
 
 
-        // ---------------------------------------------
-        // CALCULATE PERCENTAGE
-        // ---------------------------------------------
+        // =============================================
+        // SCORE PERCENTAGE
+        // =============================================
 
         const percentage =
             questions.length > 0
@@ -2559,16 +2630,16 @@
                 : 0;
 
 
-        // ---------------------------------------------
+        // =============================================
         // SAVE FINAL PROGRESS
-        // ---------------------------------------------
+        // =============================================
 
         saveChapterProgress();
 
 
-        // ---------------------------------------------
+        // =============================================
         // SCORE DISPLAY
-        // ---------------------------------------------
+        // =============================================
 
         let scoreDisplay =
             completionMessage.querySelector(
@@ -2599,7 +2670,6 @@
 
 
         scoreDisplay.innerHTML = `
-
             <div class="quizScoreNumber">
                 ${score} / ${questions.length}
             </div>
@@ -2607,13 +2677,12 @@
             <div class="quizScorePercentage">
                 ${percentage}% Score
             </div>
-
         `;
 
 
-        // ---------------------------------------------
+        // =============================================
         // REVIEW BUTTON
-        // ---------------------------------------------
+        // =============================================
 
         reviewQuizBtn.style.display =
             "inline-flex";
@@ -2623,9 +2692,9 @@
             false;
 
 
-        // ---------------------------------------------
-        // SCROLL TO RESULT
-        // ---------------------------------------------
+        // =============================================
+        // SCROLL
+        // =============================================
 
         completionMessage.scrollIntoView({
 
@@ -2666,16 +2735,16 @@
 
 
     // =================================================
-    // REVIEW / RESTART QUIZ
+    // REVIEW / RESTART
     // =================================================
 
     reviewQuizBtn.addEventListener(
         "click",
         () => {
 
-            // -----------------------------------------
-            // RESET SAVED PROGRESS
-            // -----------------------------------------
+            // =========================================
+            // REMOVE SAVED PROGRESS
+            // =========================================
 
             try {
 
@@ -2688,40 +2757,40 @@
             catch (error) {
 
                 console.error(
-                    "Unable to reset chapter progress:",
+                    "Unable to reset progress:",
                     error
                 );
 
             }
 
 
-            // -----------------------------------------
+            // =========================================
             // RESET PAGE
-            // -----------------------------------------
+            // =========================================
 
             currentPage =
                 0;
 
 
-            // -----------------------------------------
+            // =========================================
             // RESET SCORE
-            // -----------------------------------------
+            // =========================================
 
             score =
                 0;
 
 
-            // -----------------------------------------
-            // RESET WRONG ANSWERS
-            // -----------------------------------------
+            // =========================================
+            // RESET WRONG
+            // =========================================
 
             wrongAnswers =
                 0;
 
 
-            // -----------------------------------------
+            // =========================================
             // RESET ANSWERS
-            // -----------------------------------------
+            // =========================================
 
             userAnswers =
                 new Array(
@@ -2731,32 +2800,32 @@
                 );
 
 
-            // -----------------------------------------
+            // =========================================
             // SAVE RESET STATE
-            // -----------------------------------------
+            // =========================================
 
             saveChapterProgress();
 
 
-            // -----------------------------------------
-            // MARK QUIZ ACTIVE
-            // -----------------------------------------
+            // =========================================
+            // QUIZ ACTIVE
+            // =========================================
 
             quizFinished =
                 false;
 
 
-            // -----------------------------------------
+            // =========================================
             // HIDE COMPLETION
-            // -----------------------------------------
+            // =========================================
 
             completionMessage.hidden =
                 true;
 
 
-            // -----------------------------------------
+            // =========================================
             // SHOW NAVIGATION
-            // -----------------------------------------
+            // =========================================
 
             previousQuestionBtn.style.display =
                 "inline-flex";
@@ -2766,9 +2835,9 @@
                 "inline-flex";
 
 
-            // -----------------------------------------
-            // ENABLE NEXT
-            // -----------------------------------------
+            // =========================================
+            // ENABLE BUTTONS
+            // =========================================
 
             previousQuestionBtn.disabled =
                 true;
@@ -2778,33 +2847,26 @@
                 false;
 
 
-            // -----------------------------------------
-            // RESTORE NEXT BUTTON
-            // -----------------------------------------
+            // =========================================
+            // RESTORE NEXT
+            // =========================================
 
             nextBtn.innerHTML = `
-
-                <span>
-                    Next
-                </span>
-
-                <span class="navArrow">
-                    →
-                </span>
-
+                <span>Next</span>
+                <span class="navArrow">→</span>
             `;
 
 
-            // -----------------------------------------
-            // LOAD QUESTION 1–5
-            // -----------------------------------------
+            // =========================================
+            // LOAD FIRST PAGE
+            // =========================================
 
             loadPage();
 
 
-            // -----------------------------------------
+            // =========================================
             // SCROLL TOP
-            // -----------------------------------------
+            // =========================================
 
             window.scrollTo({
 
