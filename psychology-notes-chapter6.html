@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Psychology Chapter 6 | Personality</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .quote-box {
+            background-color: #faf5ff;
+            border-left: 4px solid var(--primary-purple);
+            padding: 12px 14px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="psychology-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+<header>
+
+    <h1>
+        🧩 CHAPTER SIX: PERSONALITY
+    </h1>
+
+    <p>
+        Meaning of Personality, Psychoanalytic Theory, Trait Theories, and Humanistic Perspective
+    </p>
+
+</header>
+
+
+<!-- QUOTE INTRO -->
+<section class="card">
+
+    <div class="quote-box">
+        💬 <strong>Opening Reflection:</strong><br>
+        <em>“One of the greatest regrets in life is being what others would want you to be, rather than being yourself.”</em><br>
+        <span style="font-size: 0.85rem; color: var(--text-muted); font-style: normal;">— Shannon L. Alder</span>
+    </div>
+
+    <p>
+        This quotation reflects the fundamental struggle between living up to the expectations of others vs. being true to one's authentic self—a key theme in personality theories, particularly humanistic psychology.
+    </p>
+
+</section>
+
+
+<!-- 6.1 MEANING OF PERSONALITY -->
+<section class="card">
+
+    <h2>🎭 6.1 Meaning of Personality</h2>
+
+    <h3>📖 Origin of the Word</h3>
+    <ul>
+        <li>The word <strong>personality</strong> is derived from the word <span class="highlight-orange">“persona”</span>, which has Greek and Latin roots and refers to the theatrical masks worn by Greek actors 🎭.</li>
+        <li>These masks helped actors portray different characters, hide their true identity, or express emotions more clearly. Over time, the term came to describe the "social face" or public image people present to the world.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🧠 Definition of Personality</h3>
+    <p>Personality has been defined in many different ways, but psychologists generally view personality as:</p>
+    
+    <div class="case-box">
+        💡 <strong>Core Definition:</strong><br>
+        The <span class="highlight-purple">unique pattern of enduring thoughts, feelings, and actions</span> that characterize a person.
+        <ul>
+            <li>✨ <strong>Unique pattern:</strong> No two people have the exact same personality.</li>
+            <li>⏳ <strong>Enduring:</strong> It stays relatively stable over time and across different situations.</li>
+        </ul>
+    </div>
+
+    <p>
+        ⚠️ <strong>Important Note:</strong> Personality should not be confused with <em>character</em> (moral and ethical behavior) and <em>temperament</em> (enduring characteristics each person is born with). However, both character and temperament are vital components of personality.
+    </p>
+
+</section>
+
+
+<!-- 6.2 THEORIES OF PERSONALITY -->
+<section class="card">
+
+    <h2>📚 6.2 Theories of Personality</h2>
+
+    <p>
+        Though there are different theories of personality, we will examine three major theoretical frameworks:
+    </p>
+    <ol>
+        <li><strong>Freud’s Psychoanalytic Theory</strong> 🧠</li>
+        <li><strong>The Trait Theory of Personality</strong> 📊</li>
+        <li><strong>Humanistic Theory of Personality</strong> 🌟</li>
+    </ol>
+
+</section>
+
+
+<!-- 6.2.1 PSYCHOANALYTIC THEORY -->
+<section class="card">
+
+    <h2>🧠 6.2.1 Freud’s Psychoanalytic Theory of Personality</h2>
+
+    <div class="case-box">
+        📍 <strong>The Big Idea:</strong><br>
+        <strong>Sigmund Freud</strong>, an Austrian neurologist, believed that personality is formed within ourselves, arising from <span class="highlight-purple">basic inborn needs, drives, and instincts</span>. He argued that human beings are in constant conflict between their <strong>biological urges (drives)</strong> and the need to <strong>tame/domesticate</strong> them to live peacefully in society.
+    </div>
+
+    <h3>🏗️ The Three Structures of Personality</h3>
+    <p>In Freud's view, personality consists of three parts that serve different functions and develop at different times:</p>
+
+    <h4>1. The Id — <em>"If It Feels Good, Do It"</em> 😈</h4>
+    <ul>
+        <li><strong>Origin:</strong> Present at birth; all psychic energy resides in the id. A newborn has no morals, logic, or self-control.</li>
+        <li><strong>Seat of Biological Drives:</strong> Contains drives like hunger, thirst, sex, and aggression.</li>
+        <li><strong>Mind Level:</strong> Operates completely in the <span class="highlight-purple">unconscious mind</span>; amoral, impulsive, and irrational part of personality.</li>
+        <li><strong>Operating Principle:</strong> Operates on the <span class="highlight-green">Pleasure Principle</span> — seeks immediate gratification of needs and reduction of tension/libido.</li>
+        <li><em>Motto:</em> "Eat when hungry, drink when thirsty, and satisfy sex when needed."</li>
+    </ul>
+
+    <div class="example-box">
+        💡 <strong>Examples of the Id:</strong>
+        <ul>
+            <li>🍼 A baby cries for milk in the middle of the night without considering that parents are sleeping.</li>
+            <li>🍰 An adult who eats cake immediately after seeing it, even though they are on a strict diet.</li>
+        </ul>
+    </div>
+
+    <h4>2. The Ego — <em>"The Executive Director"</em> 👨‍💼</h4>
+    <ul>
+        <li><strong>Origin:</strong> Begins to emerge during infancy when the child starts learning they cannot always get what they want right away.</li>
+        <li><strong>Function:</strong> Devises logical and realistic strategies for meeting needs.</li>
+        <li><strong>Operating Principle:</strong> Operates on the <span class="highlight-blue">Reality Principle</span> — considers the rules of the real world.</li>
+        <li><strong>Role:</strong> Balances the conflicting demands of the impulsive <strong>Id</strong> and the moralistic <strong>Superego</strong>.</li>
+    </ul>
+
+    <h4>3. The Superego — <em>"The Moral Watchdog"</em> 👮‍♂️</h4>
+    <ul>
+        <li><strong>Origin:</strong> Develops from the ego between 3 to 6 years of age as children internalize the moral standards and values of parents and society.</li>
+        <li><strong>Function:</strong> Acts as the individual's conscience and moral compass.</li>
+        <li><strong>Role:</strong> Strives for perfection and social morality, punishing the ego with guilt when rules are broken.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🛡️ Psychological Defense Mechanisms</h3>
+    <p>
+        For Freud, personality is the outcome of a continual battle for dominance among the id, ego, and superego. Psychological problems arise when these three components are unbalanced. To defend itself against <strong>anxiety</strong> caused by this conflict, the ego adopts unconscious coping strategies called <strong>defense mechanisms</strong>:
+    </p>
+
+    <ul>
+        <li>
+            🧠 <strong>1. Repression:</strong> Pushing/banishing threatening, painful thoughts, memories, or feelings into the unconscious mind.
+            <div class="example-box">
+                🚗 <em>Example:</em> A person completely forgets the details of a serious car accident they had as a child, yet feels intense anxiety whenever riding in cars.
+            </div>
+        </li>
+
+        <li>
+            🚫 <strong>2. Denial:</strong> Refusal to recognize or acknowledge a threatening or painful reality.
+            <div class="example-box">
+                🩺 <em>Example:</em> A patient insists they are perfectly healthy even after receiving a severe medical diagnosis from a doctor.
+            </div>
+        </li>
+
+        <li>
+            🗣️ <strong>3. Rationalization:</strong> Giving socially acceptable, logical reasons for one's inappropriate or unacceptable behavior.
+            <div class="example-box">
+                📝 <em>Example:</em> A student who fails an exam blames the teacher for asking unfair questions rather than admitting they didn't study.
+            </div>
+        </li>
+
+        <li>
+            🎯 <strong>4. Displacement:</strong> Expressing feelings or impulses toward a substitute target that is less threatening than the actual target.
+            <div class="example-box">
+                💼 <em>Example:</em> A worker angered by their boss goes home and yells at their spouse or family members instead.
+            </div>
+        </li>
+
+        <li>
+            🪞 <strong>5. Projection:</strong> Attributing one's own unacceptable feelings, impulses, or flaws to other people.
+            <div class="example-box">
+                😡 <em>Example:</em> A person who harbors hidden hostile feelings toward others constantly claims that "everyone else is aggressive and unkind."
+            </div>
+        </li>
+
+        <li>
+            🔄 <strong>6. Reaction Formation:</strong> Behaving in a way that is the exact opposite of one's true, unacceptable unconscious feelings.
+            <div class="example-box">
+                😃 <em>Example:</em> Someone who feels deep resentment toward a coworker acts overly nice and excessively friendly toward them.
+            </div>
+        </li>
+
+        <li>
+            🎨 <strong>7. Sublimation:</strong> Channeling unacceptable sexual or aggressive impulses into socially acceptable, productive outlets.
+            <div class="example-box">
+                🥊 <em>Example:</em> A person with aggressive tendencies becomes an aggressive professional boxer or artist.
+            </div>
+        </li>
+
+        <li>
+            👶 <strong>8. Regression:</strong> Falling back on child-like or earlier stage behavioral patterns when facing severe stress.
+            <div class="example-box">
+                🧸 <em>Example:</em> An adult throws a temper tantrum or sucks their thumb when overwhelmed with bad news.
+            </div>
+        </li>
+    </ul>
+
+</section>
+
+
+<!-- 6.2.2 TRAIT THEORY OF PERSONALITY -->
+<section class="card">
+
+    <h2>📊 6.2.2 The Trait Theory of Personality</h2>
+
+    <p>
+        Psychologists who take the trait approach see personality as a combination of <span class="highlight-purple">stable internal characteristics</span> that people display consistently over time and across different situations. Trait theorists seek to measure the relative amount of traits present in everyone.
+    </p>
+
+    <h3>📌 Three Main Assumptions of Trait Theory:</h3>
+    <ol>
+        <li><strong>Stability over time:</strong> Personality traits are relatively stable and predictable over time.</li>
+        <li><strong>Stability across situations:</strong> Personality traits remain consistent across various situations, explaining why people act in predictable ways.</li>
+        <li><strong>Individual differences:</strong> People differ in how much of a particular trait they possess; no two people are exactly alike on all traits, resulting in an endless variety of unique personalities.</li>
+    </ol>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🌊 The Five-Factor Model (The Big Five / OCEAN)</h3>
+    <p>
+        The primary model in modern trait theory is the <strong>Five-Factor Model (OCEAN)</strong>, which categorizes human personality into five broad traits:
+    </p>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Trait</th>
+                    <th>High Scorer Characteristics</th>
+                    <th>Low Scorer Characteristics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>🎨 Openness (O)</strong></td>
+                    <td>Intelligent, creative, inquisitive, flexible, broad-minded, imaginative.</td>
+                    <td>Conventional, practical, routine-oriented, narrow interests.</td>
+                </tr>
+                <tr>
+                    <td><strong>📋 Conscientiousness (C)</strong></td>
+                    <td>Organized, self-disciplined, consistent, competitive, deliberative.</td>
+                    <td>Disorganized, careless, impulsive, unreliable.</td>
+                </tr>
+                <tr>
+                    <td><strong>🗣️ Extraversion (E)</strong></td>
+                    <td>Active, conversational, assertive, outgoing, seeking inspiration.</td>
+                    <td>Introverted, quiet, reserved, reflective, solitary.</td>
+                </tr>
+                <tr>
+                    <td><strong>🤝 Agreeableness (A)</strong></td>
+                    <td>Considerate, good-natured, helpful, tolerant, sympathetic.</td>
+                    <td>Antagonistic, critical, suspicious, uncooperative.</td>
+                </tr>
+                <tr>
+                    <td><strong>😟 Neuroticism (N)</strong></td>
+                    <td>Easily experiences negative emotions: fear, anxiety, distrust, insecurity.</td>
+                    <td>Emotionally stable, calm, secure, even-tempered.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+<!-- 6.2.3 HUMANISTIC THEORY OF PERSONALITY -->
+<section class="card">
+
+    <h2>🌟 6.2.3 Humanistic Theory of Personality</h2>
+
+    <p>
+        Humanistic approaches emphasize people's <span class="highlight-green">inherent goodness</span> and their tendency to move toward higher levels of functioning. Instead of viewing humans as controlled by unconscious drives (Psychodynamic) or fixed traits (Trait Theory), humanistic theorists argue that conscious, self-motivated choices and creative impulses form the core of personality.
+    </p>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>👨‍⚕️ Carl Rogers and Self-Concept</h3>
+    <ul>
+        <li><strong>Self-Actualizing Tendency:</strong> Rogers believed human beings constantly strive to fulfill their innate capabilities and become what their potential allows.</li>
+        <li><strong>Self-Concept:</strong> The image of oneself formed through interactions with significant others (parents, friends, teachers, peers).</li>
+    </ul>
+
+    <h3>🪞 Real Self vs. Ideal Self</h3>
+    <ul>
+        <li><span class="highlight-blue">Real Self:</span> One's actual characteristics, traits, abilities, and achievements.</li>
+        <li><span class="highlight-orange">Ideal Self:</span> The perception of what one should be or would like to be (often shaped by parent and societal expectations).</li>
+    </ul>
+
+    <div class="case-box">
+        ⚖️ <strong>Congruence vs. Incongruence:</strong>
+        <ul>
+            <li>✅ <strong>Congruence (High match):</strong> When Real Self and Ideal Self are close or similar, a person feels competent, fulfilled, and mentally healthy.</li>
+            <li>❌ <strong>Incongruence (Mismatch):</strong> When there is a big gap between Real Self and Ideal Self, it causes anxiety, neurotic behavior, and unhappiness.</li>
+        </ul>
+    </div>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>❤️ Positive Regard: Unconditional vs. Conditional</h3>
+    <p><strong>Positive Regard:</strong> Warmth, affection, love, and respect from significant others.</p>
+
+    <ul>
+        <li>💚 <strong>Unconditional Positive Regard:</strong> Love, affection, and respect given with <span class="highlight-green">no strings attached</span>. Necessary for a person to freely explore their potential and reach self-actualization.</li>
+        <li>⚠️ <strong>Conditional Positive Regard:</strong> Love, affection, and respect that depend on doing what others want or meeting specific standards set by parents/society.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🏆 Self-Actualized vs. Fully Functioning Person</h3>
+    
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Concept</th>
+                    <th>Theorist</th>
+                    <th>Definition & Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Self-Actualization</strong></td>
+                    <td>Abraham Maslow</td>
+                    <td>A ultimate goal that people strive to reach over time. Examples of self-actualized individuals include <em>Albert Einstein, Mahatma Gandhi, Eleanor Roosevelt, and Nelson Mandela</em>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Fully Functioning Person</strong></td>
+                    <td>Carl Rogers</td>
+                    <td>A person actively in the process of trusting their true inner feelings, values, and needs rather than following the crowd. It is a necessary ongoing process to achieve self-actualization.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    🧠 Psychology Chapter 6
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
