@@ -1,1 +1,731 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Anthropology Chapter 2 | Ties That Connect: Marriage, Family and Kinship</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="anthropology-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+
+<header>
+
+    <h1>
+        👥 Anthropology Section 2.7
+    </h1>
+
+    <p>
+        Ties That Connect: Marriage, Family and Kinship
+    </p>
+
+</header>
+
+
+
+<!-- 2.7 TIES THAT CONNECT: MARRIAGE, FAMILY AND KINSHIP -->
+<section class="card">
+
+    <h2>💍 2.7 Ties That Connect: Marriage, Family and Kinship</h2>
+
+    <p>
+        Dear student, in one way or another we touched about the importance of culture and aspects of culture in our previous discussions.
+    </p>
+    <p>
+        In this section you will be introduced to the idea of how we as social beings organize ourselves and how the cultural rules governing our ties on marriage, family organization, residence patterns after marriage, forms of descent (ancestor, lineage) and descent groups, and other aspects of kinship.
+    </p>
+
+</section>
+
+
+<!-- 2.7.1 MARRIAGE -->
+<section class="card">
+
+    <h2>👩‍❤️‍👨 2.7.1 MARRIAGE</h2>
+
+    <p>
+        Almost all known societies recognize marriage. The ritual of marriage marks a change in status for a man and a woman and the acceptance by society of the new family that is formed.
+    </p>
+    <p>
+        The term marriage is not an easy term to define. For years, anthropologists have attempted to define these terms in such a way to cover all known societies. Frequently, anthropologists have debated whether or not families and the institutions of marriage are universals.
+    </p>
+    
+    <div class="case-box">
+        📖 <strong>Marriage: More Than Just a Union</strong>
+        <p>
+            Marriage is basically defined as:
+        </p>
+        <ul>
+            <li>
+                💬 A <strong>sexual union</strong> between a man and a woman, such that the children born to the woman are considered the <span class="highlight-green">legitimate offspring</span> of both parents.
+            </li>
+        </ul>
+        <p>
+            But marriage isn't only about sex or love—it plays a critical <span class="highlight-orange">social role</span>.
+        </p>
+        <p>
+            <strong>🎯 Main Purposes of Marriage:</strong>
+        </p>
+        <ul>
+            <li>
+                👨‍👩‍👧‍👦 Creates new <strong>social relationships</strong> between:
+                <ul>
+                    <li>The spouses (husband & wife)</li>
+                    <li>Their families (in-laws, extended kin)</li>
+                </ul>
+            </li>
+            <li>
+                📜 Establishes <strong>rights & obligations</strong> for:
+                <ul>
+                    <li>The couple (e.g. cohabitation, mutual support)</li>
+                    <li>Their kin (e.g. inheritance, family duties)</li>
+                </ul>
+            </li>
+            <li>
+                👶 <strong>Legitimizes children:</strong> Grants them status, rights, and recognition in society.
+            </li>
+        </ul>
+    </div>
+
+    <h3>🚫 Rules of Marriage</h3>
+    <ul>
+        <li><span class="highlight-purple">✓</span> Societies also have rules that state whom one can and cannot marry.</li>
+        <li><span class="highlight-purple">✓</span> Every society known to anthropology has established for itself some type of rules regulating mating (sexual intercourse).</li>
+        <li><span class="highlight-purple">✓</span> The most common form of prohibition is mating with certain types of kin (families, relatives) that are defined by the society as being inappropriate sexual partners.</li>
+        <li><span class="highlight-purple">✓</span> These prohibitions on mating with certain categories of relatives are known as <strong>incest taboos</strong>.</li>
+        <li><span class="highlight-purple">✓</span> The most universal form of incest taboo involves mating between members of the immediate (nuclear) family: mother-sons, father-daughters, and brother-sisters.</li>
+    </ul>
+
+    <div class="example-box">
+        💡 <strong>Exceptions to the Incest Taboo:</strong><br>
+        There are a few striking examples of marriage between members of the immediate family that violate the universality of the incest taboo. For political, religious, or economic reasons, members of the royal families among the <strong>ancient Egyptians, Incas, and Hawaiians</strong> were permitted to mate with and marry their siblings, although this practice did not extend to the ordinary members of those societies.
+    </div>
+
+    <p>
+        <strong>Marriage is, therefore, a permanent legal union between a man and a woman. It is an important institution without which the society could never be sustained.</strong>
+    </p>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🎯 Mate Selection: Whom Should You Marry?</h3>
+    <p>
+        💍 <strong>Marriage Rules: It's Not Always Your Choice</strong><br>
+        In a society one cannot marry anyone whom he or she likes. There are certain strict social, cultural, and legal rules that guide who you can or cannot marry.
+    </p>
+
+    <div class="case-box">
+        🛡️ <strong>These rules help to:</strong>
+        <ul>
+            <li><span class="highlight-green">✓</span> Preserve <strong>cultural identity</strong></li>
+            <li><span class="highlight-green">✓</span> Maintain <strong>social structure</strong></li>
+            <li><span class="highlight-green">✓</span> Avoid <strong>family conflicts</strong></li>
+        </ul>
+    </div>
+
+    <h4>A. 🔄 Exogamy – "Marry Outside Your Group"</h4>
+    <ul>
+        <li><span class="highlight-blue">Exogamy</span> = Rule that forbids marriage within your own group (like your family or close relatives).</li>
+        <li>It bans marriage between <strong>close kin or blood relatives</strong>.</li>
+        <li>Aims to prevent incest, encourage <span class="highlight-green">social alliances</span>, and avoid genetic issues.</li>
+        <li>Such prohibited union is designated as <strong>incest</strong>, which is often considered a sin.</li>
+    </ul>
+    <div class="example-box">
+        🧬 <strong>Example:</strong> You can't marry your brother, sister, or first cousin in many cultures.
+    </div>
+
+    <h4>B. 🧱 Endogamy – "Marry Inside Your Group"</h4>
+    <ul>
+        <li>A rule of <span class="highlight-blue">endogamy</span> requires individuals to marry within their own group and forbids them to marry outside it.</li>
+        <li>Group parameters can include: Tribe or ethnic group, Religion, Race, Social class, or Nationality.</li>
+        <li><strong>Purpose:</strong> To preserve cultural, religious, or social identity.</li>
+        <li>Religious groups such as the <strong>Amish, Mormons, Catholics, and Jews</strong> have rules of endogamy, though these are often violated when marriage takes place outside the group. Castes in India and Nepal are also endogamous.</li>
+    </ul>
+    <div class="example-box">
+        🧠 <strong>Example:</strong> In some cultures, people are expected to marry only within their religion (e.g., Hindus marry Hindus, Muslims marry Muslims).<br>
+        <em>“Indeed, most cultures are endogamous units, although they usually do not need a formal rule requiring people to marry someone from their own society”</em> (Kottak, 2017: 150).
+    </div>
+
+    <h4>C. 💑 Preferential Cousin Marriage</h4>
+    <p>
+        In certain societies, marrying cousins is not only allowed—it's <span class="highlight-orange">preferred</span>! Kinship systems based on lineages distinguish between two different types of first cousins:
+    </p>
+
+    <ol>
+        <li>
+            🔀 <strong>Cross Cousins:</strong>
+            <ul>
+                <li>Children of siblings of the <strong>opposite sex</strong>—that is, one’s mother’s brother’s children or one’s father’s sister’s children.</li>
+                <li>The most common form of preferential cousin marriage because it functions to strengthen and maintain ties between kin groups established in preceding generations.</li>
+            </ul>
+        </li>
+        <li>
+            ⏸️ <strong>Parallel Cousins:</strong>
+            <ul>
+                <li>Children of siblings of the <strong>same sex</strong>—namely, the children of one’s mother’s sister or father’s brother.</li>
+                <li>A much less common form of cousin marriage found among some Arabic societies in North Africa (man marrying his father's brother's daughter).</li>
+                <li>Serves to prevent the fragmentation of family property.</li>
+            </ul>
+        </li>
+    </ol>
+    <div class="example-box">
+        📌 In some African, Middle Eastern, and South Asian societies, cross-cousin marriage is encouraged to <strong>strengthen family ties</strong>.
+    </div>
+
+    <h4>D. 💍 Levirate & Sororate Marriage</h4>
+    <p>
+        Forms of mate selection requiring a person to marry the spouse of a deceased kin:
+    </p>
+    <ul>
+        <li>
+            🤵‍♂️ <strong>The Levirate:</strong> The custom whereby a widow is expected to marry the brother (or close male relative) of her dead husband.
+            <ul>
+                <li>Children fathered by the new husband legally belong to the dead brother.</li>
+                <li>Acts as social security for the widow and preserves family rights to her sexuality/children.</li>
+            </ul>
+        </li>
+        <li>
+            👰‍♀️ <strong>The Sororate:</strong> Practiced when a wife dies; the widower marries the sister (or close female relative) of his deceased wife.
+            <ul>
+                <li>If no sibling exists, the family supplies an equivalent relative (e.g., deceased wife's brother's daughter).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🔢 NUMBER OF SPOUSES</h3>
+
+    <h4>1️⃣ Monogamy – One Person at a Time</h4>
+    <ul>
+        <li>Marriage between <strong>one man and one woman</strong> at a time.</li>
+        <li><span class="highlight-green">✓</span> This is the most common form worldwide, especially in modern legal systems.</li>
+    </ul>
+
+    <h4>♾️ Polygamy – More Than One Spouse</h4>
+    <p>
+        A marriage involving <strong>multiple spouses</strong> at the same time. It includes two primary types:
+    </p>
+
+    <ol type="A">
+        <li>
+            👨‍👩‍👩 <strong>Polygyny:</strong>
+            <ul>
+                <li>One man marries <strong>two or more women</strong> at a time.</li>
+                <li>Common in many traditional societies; often linked to wealth, status, or religion.</li>
+                <li><strong>Sororal Polygyny:</strong> Marriage of a man with two or more sisters at a time.</li>
+                <li><strong>Non-sororal Polygyny:</strong> When the co-wives are not sisters.</li>
+            </ul>
+            <div class="example-box">
+                📌 <strong>Example:</strong> Practiced in parts of Africa, the Middle East, and some Islamic communities.
+            </div>
+        </li>
+        <li>
+            👩‍👦‍👦 <strong>Polyandry:</strong>
+            <ul>
+                <li>One woman marries <strong>two or more men</strong> at a time.</li>
+                <li>Very rare, but found in specific areas like Tibet and Nepal.</li>
+                <li>Helps families limit inheritance disputes and manage scarce land.</li>
+            </ul>
+        </li>
+        <li>
+            👬 <strong>Fraternal Polyandry:</strong> A woman marries two or more brothers.
+        </li>
+    </ol>
+
+    <div class="case-box">
+        ⚖️ <strong>Advantages & Disadvantages of Polygynous Marriage:</strong>
+        <p><strong>🌟 Advantages / Benefits:</strong></p>
+        <ul>
+            <li><span class="highlight-green">✓</span> Prestige, wealth, power, and status for husband, wives, and children.</li>
+            <li><span class="highlight-green">✓</span> Produces more children (valuable future economic & political assets).</li>
+            <li><span class="highlight-green">✓</span> Economic motive: Encourages hard work to acquire assets (cows, goats) for more wives.</li>
+        </ul>
+        <p><strong>⚠️ Drawbacks:</strong></p>
+        <ul>
+            <li><span class="highlight-orange">✓</span> Jealousy among co-wives competing for husband's attention.</li>
+        </ul>
+    </div>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>💰 Economic Consideration of Marriage</h3>
+    <p>
+        Marriage is a binding contract transferring rights (sexual access, legal rights to children, economic services) accompanied by economic transactions.
+    </p>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Direction of Transfer</th>
+                    <th>Key Characteristics & Functions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1. Bride Price</strong> (Bridewealth)</td>
+                    <td>Groom's family ➔ Bride's family</td>
+                    <td>
+                        • Practiced in 82% of African societies (Murdock).<br>
+                        • Security/insurance for good treatment of wife.<br>
+                        • Stabilizes marriage (reduces divorce).<br>
+                        • Compensation for loss of bride's labor/childbearing.<br>
+                        • Symbol of union between kin groups.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>2. Bride Service</strong></td>
+                    <td>Groom ➔ Bride's family (Labor)</td>
+                    <td>
+                        • Groom works/hunts for bride's parents.<br>
+                        • <em>Example:</em> Jacob labored 14 years in the Old Testament.<br>
+                        • <em>Example:</em> Practiced by the Yanomamo of Venezuela.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>3. Dowry</strong></td>
+                    <td>Bride's family ➔ Groom's family</td>
+                    <td>
+                        • Transfer of goods or money to groom's side.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🏠 Post-Marital Residence</h3>
+    <p>Cultural rules governing where a newly married couple lives:</p>
+    <ul>
+        <li>👴 <strong>Patrilocal Residence:</strong> Lives with or near relatives of husband’s father.</li>
+        <li>👵 <strong>Matrilocal Residence:</strong> Lives with or near relatives of the wife.</li>
+        <li>🧔 <strong>Avunculocal Residence:</strong> Lives with or near husband’s mother’s brother.</li>
+        <li>🔀 <strong>Ambilocal/Bilocal Residence:</strong> Choice of living with either husband's or wife's relatives.</li>
+        <li>🏡 <strong>Neolocal Residence:</strong> Establishes an independent home away from both sets of relatives.</li>
+    </ul>
+
+</section>
+
+
+<!-- 2.7.2 FAMILY -->
+<section class="card">
+
+    <h2>👨‍👩‍👧‍👦 2.7.2 FAMILY</h2>
+
+    <p>
+        Family is the basis of human society and the most important primary group. It is universal, permanent, and pervasive. Anthropologists identify two primary structures:
+    </p>
+
+    <h3>1. The Extended Family 🌳</h3>
+    <ul>
+        <li>Blood ties are more important than marriage ties.</li>
+        <li>Consists of <strong>two or more families linked by blood</strong> in a single household under a family head.</li>
+        <li>In a <em>patrilineal extended family</em>, young couple lives in husband's father's homestead, husband works for father, and property is controlled by father.</li>
+        <li>Marriage is seen as bringing a daughter into the family rather than just acquiring a wife.</li>
+        <li>Wife comes under control of mother-in-law for domestic chores.</li>
+        <li>Roughly correlated with an <strong>agricultural way of life</strong>.</li>
+    </ul>
+
+    <h3>2. The Nuclear Family ⚛️</h3>
+    <ul>
+        <li>Two-generation family formed around conjugal/marital union (husband, wife, children).</li>
+        <li>Autonomous & independent unit fulfilling economic, childcare, and social needs internally.</li>
+        <li>Associated with <strong>neolocal residence</strong> and high geographic mobility.</li>
+        <li>Parents are not actively involved in mate selection, validation, or maintenance of marriage.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>⚙️ Functions of Marriage and Family</h3>
+
+    <div class="case-box">
+        🧬 <strong>1. Biological Function:</strong>
+        <ul>
+            <li>Regulates and validates sexual relations.</li>
+            <li>Perpetuates (continues) society's population through reproduction.</li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        🛠️ <strong>2. Economic Function:</strong>
+        <ul>
+            <li>Provides economic cooperation between sexes.</li>
+            <li>In small-scale societies, family is a self-contained unit of production, consumption, and distribution.</li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        🤝 <strong>3. Social Function:</strong>
+        <ul>
+            <li>Perpetuates family line and links one kin group to another kin group.</li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        🎓 <strong>4. Educational and Socialization Function:</strong>
+        <ul>
+            <li>Primary agent for enculturation, education, and transmission of social heritage.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- 2.7.3 KINSHIP -->
+<section class="card">
+
+    <h2>🔗 2.7.3 KINSHIP</h2>
+
+    <p>
+        Kinship is the method of reckoning relationships. In any society, an adult belongs to two nuclear families:
+    </p>
+
+    <ul>
+        <li>🐣 <strong>Family of Orientation:</strong> The family in which one is born and reared.</li>
+        <li>💍 <strong>Family of Procreation:</strong> The family established through marriage.</li>
+    </ul>
+
+    <p>
+        <strong>Types of Kinship Bonds:</strong>
+    </p>
+    <ul>
+        <li>
+            🩸 <strong>Consanguineous Kinship:</strong> Relationships based on blood ties (consanguineous kin).
+        </li>
+        <li>
+            📜 <strong>Affinal Kinship:</strong> Relationships arising out of socially/legally defined marital relationships (affinal kin, e.g., husband and wife).
+        </li>
+    </ul>
+
+</section>
+
+
+<!-- 2.7.4 DESCENT -->
+<section class="card">
+
+    <h2>🌳 2.7.4 DESCENT</h2>
+
+    <p>
+        Descent refers to the social recognition of biological relationships. Rules of descent dictate how an individual traces kinship, succession, and inheritance.
+    </p>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rule of Descent</th>
+                    <th>Tracing Lineage</th>
+                    <th>Inheritance & Succession</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>👨 Direct Patrilineal</strong></td>
+                    <td>Solely through male line.</td>
+                    <td>Passed through male line (sons continue affiliation).</td>
+                </tr>
+                <tr>
+                    <td><strong>👩 Direct Matrilineal</strong></td>
+                    <td>Solely through female line.</td>
+                    <td>Acquired & carried by daughters generation after generation.</td>
+                </tr>
+                <tr>
+                    <td><strong>🔀 Cognatic Descent</strong></td>
+                    <td>Free to trace via men or women.</td>
+                    <td>No fixed rule; any combination of lineal links possible.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    👥 Anthropology Section 2.7
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
