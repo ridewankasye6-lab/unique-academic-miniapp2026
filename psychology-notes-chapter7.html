@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Psychology Chapter 7 | Psychological Disorders and Treatment Techniques</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="psychology-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+<header>
+
+    <h1>
+        🧠 CHAPTER SEVEN: PSYCHOLOGICAL DISORDERS AND TREATMENT TECHNIQUES
+    </h1>
+
+    <p>
+        Nature, Causes, Types of Psychological Disorders, and Psychotherapy Approaches
+    </p>
+
+</header>
+
+
+<!-- 7.1 NATURE OF PSYCHOLOGICAL DISORDERS -->
+<section class="card">
+
+    <h2>🤔 7.1 Nature of Psychological Disorders</h2>
+
+    <p>
+        <strong>Psychological disorders</strong>, also known as <span class="highlight-orange">mental health disorders</span> or mental illness, refer to a wide range of mental health disorders that affect your <strong>mood, thinking, and behavior</strong>.
+    </p>
+
+    <div class="case-box">
+        📘 <strong>DSM-IV Definition:</strong><br>
+        According to the <strong>DSM-IV</strong>, a mental disorder is a <em>clinically significant behavioral or psychological syndrome or pattern</em> that occurs in an individual and that is associated with present distress or disability or with a significantly increased risk of suffering death, pain, disability, or loss of freedom.
+    </div>
+
+    <p>
+        📚 <strong>Diagnostic and Statistical Manual (DSM):</strong> The primary set of rules used for diagnosing (labeling) psychological disorders. Published by the <strong>American Psychiatric Association (APA)</strong>, it is used by clinicians and researchers to diagnose and classify mental disorders.
+    </p>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>📌 Three Main Criteria for Determining Psychological Disorders</h3>
+    <p>There are three main criteria for determining whether a person has a psychological disorder: <strong>abnormality, maladaptiveness, and personal distress</strong>. Let's break down each criterion:</p>
+
+    <h4>1. Abnormality (What Is Normal?) 🧙‍♂️</h4>
+    <ul>
+        <li><strong>Abnormal behavior</strong> refers to actions, thoughts, or emotions that deviate from what is considered typical or normal in a given society.</li>
+        <li>A society's norm can be <span class="highlight-green">qualitative</span> (based on cultural standards or morals) or <span class="highlight-green">quantitative</span> (based on statistical measurements like intelligence levels, anxiety, etc.).</li>
+        <li>When someone's behavior violates the norms, standards, rules, and regulations of society, it is more likely to be a sign of a psychological disorder.</li>
+        <li><strong>Context matters:</strong> The context in which "abnormal" behavior occurs must also be considered before deciding that it is symptomatic of psychological disorders. What may seem abnormal in one context could be perfectly acceptable in another.</li>
+    </ul>
+
+    <div class="example-box">
+        💡 <strong>Example of Context:</strong><br>
+        A person who avoids social interactions to the point of not leaving their home may be seen as abnormal in most cultures. Similarly, a person who laughs loudly in a quiet library violates social norms, but this behavior may not indicate a disorder if they have a cultural background where such behavior is normal.
+    </div>
+
+    <ul>
+        <li>📊 <strong>Statistical Abnormality:</strong> Involves having <span class="highlight-purple">extreme scores</span> on some psychological dimension, such as intelligence (either unusually high or low), anxiety, or depression.</li>
+    </ul>
+
+    <h4>2. Maladaptiveness ⚠️</h4>
+    <ul>
+        <li>Maladaptive behavior creates social, personal, and occupational problems.</li>
+        <li>These behaviors seriously disrupt the day-to-day activities of individuals.</li>
+    </ul>
+
+    <h4>3. Personal Distress 😟</h4>
+    <ul>
+        <li>Our subjective feelings of anxiety, stress, tension, and other unpleasant emotions determine whether we have a psychological disorder.</li>
+        <li>However, the criterion of personal distress is <strong>not sufficient</strong> by itself for the presence of a psychological disorder, because some people's feelings look distressed on their own.</li>
+    </ul>
+
+    <p>
+        ✅ <strong>Conclusion:</strong> Behavior that is simultaneously <span class="highlight-purple">abnormal, maladaptive, and personally distressing</span> indicates that a person likely has a psychological disorder.
+    </p>
+
+</section>
+
+
+<!-- 7.2 CAUSES OF PSYCHOLOGICAL DISORDERS -->
+<section class="card">
+
+    <h2>🕰️ 7.2 Causes of Psychological Disorders</h2>
+
+    <p>
+        The understanding of psychological disorders has evolved dramatically over time, moving from historical superstitious views to modern scientific perspectives.
+    </p>
+
+    <h3>👹 Historical & Prehistoric Perspectives</h3>
+    <ul>
+        <li><strong>Demonic Possession:</strong> Early societies viewed the human body and mind as a battleground between external forces of good and evil. Abnormal behavior was interpreted as a victory by evil spirits taking over the victim's body.</li>
+        <li>
+            🗡️ <strong>Trephination:</strong> A traditional surgical procedure where a hole was dug/drilled into the victim's skull to release evil spirits trapped inside.
+            <div class="diagram-container">
+                <img src="trephination.png" alt="Trephination skull diagram">
+            </div>
+        </li>
+        <li>🙏 <strong>Exorcism:</strong> A kind of praying performed by individuals standing in front of the victim to force the demons out.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🏛️ Emergence of the Scientific Model (Ancient Greece & Rome)</h3>
+    <ul>
+        <li>Early Greek philosophers established the foundation for a systematic approach to psychological disorders.</li>
+        <li>
+            <strong>Hippocrates (460–377 B.C.):</strong> Believed that four important bodily fluids (humors) influenced physical and mental health:
+            <ol>
+                <li>Black bile 🖤</li>
+                <li>Yellow bile 💛</li>
+                <li>Phlegm 🤍</li>
+                <li>Blood ❤️</li>
+            </ol>
+        </li>
+        <li>An excess or imbalance of any of these fluids was thought to account for changes in personality and behavior.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🔬 Modern Perspectives on Causes</h3>
+
+    <h4>7.2.1 The Biological Perspective 🧬</h4>
+    <ul>
+        <li>Abnormalities in neurotransmitter chemical functions in the brain contribute to many psychological disorders.</li>
+        <li>
+            <span class="highlight-purple">Dopamine Hypothesis:</span> Overactivity of dopamine has been linked to the bizarre symptoms of schizophrenia.
+            <div class="example-box">
+                💊 <em>Mechanism:</em> Antipsychotic drugs bind to dopamine receptor sites, blocking its action to reduce dopamine activity and quiet agitation/psychotic symptoms.
+            </div>
+        </li>
+        <li>Other biological causes include: genetic inheritance, medical conditions, brain damage, exposure to environmental stimuli, and hormonal imbalances.</li>
+    </ul>
+
+    <h4>7.2.2 Psychological Perspectives 🧠</h4>
+
+    <ul>
+        <li>
+            🛋️ <strong>A. Psychodynamic Theory of Abnormality (Freud):</strong>
+            <ul>
+                <li>All behavior, thoughts, and emotions (normal or abnormal) are influenced by <span class="highlight-purple">unconscious processes</span>.</li>
+                <li>Repressed memories or unresolved conflicts from <strong>early childhood and family experiences</strong> cause psychological distress in adulthood.</li>
+                <li>Abnormal behavior occurs when intra-psychic conflicts (between the id, ego, and superego) become too overwhelming for ego defense mechanisms.</li>
+                <li>Behavior is also viewed as the result of early developmental fixations.</li>
+            </ul>
+        </li>
+
+        <li>
+            🔔 <strong>B. Behavioral Theory of Abnormality:</strong>
+            <ul>
+                <li>Views abnormal behavior as a product of <strong>learning and association</strong>.</li>
+                <li><em>Example:</em> Depression may occur in part due to the process of extinction (lack of positive reinforcement).</li>
+            </ul>
+        </li>
+
+        <li>
+            🌱 <strong>C. Humanistic Theory of Abnormality:</strong>
+            <ul>
+                <li>Arises from failures or challenges while striving to fulfill one's potential (self-actualization).</li>
+                <li>Caused by <span class="highlight-orange">incongruence</span> between the real/actual self and the ideal self.</li>
+                <li>Unrealistic self-image conflicts with the true self, causing anxiety disorders.</li>
+            </ul>
+        </li>
+
+        <li>
+            💡 <strong>D. Cognitive Theory of Abnormality:</strong>
+            <ul>
+                <li>Focuses on traumatic life experiences, stressful life events, distorted perceptions, faulty/irrational thinking patterns, and faulty information processing.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>7.2.3 Socio-Cultural Perspective 🌐</h4>
+    <ul>
+        <li><strong>Relationships:</strong> Disturbance in intimate relationships or marital problems, as well as problems in extended relationships.</li>
+        <li><strong>Social Conditions:</strong> Poverty, homelessness, overcrowding, and stressful living conditions.</li>
+        <li><strong>Family Factors:</strong> Immature, mentally ill, abusive, or criminal parents, and poor child discipline.</li>
+        <li><strong>Societal Factors:</strong> Political or social unrest, discrimination towards one's social group, and social labeling.</li>
+    </ul>
+
+</section>
+
+
+<!-- 7.3 TYPES OF PSYCHOLOGICAL DISORDERS -->
+<section class="card">
+
+    <h2>📋 7.3 Types of Psychological Disorders</h2>
+
+    <p>
+        <strong>Psychopathology</strong> is the scientific study of psychological disorders, including their symptoms, etiology (causes), and treatment. The term also refers to the manifestation of a disorder.
+    </p>
+
+    <h3>📚 DSM-IV Classification of Major Types</h3>
+    <ol>
+        <li><strong>Anxiety disorders:</strong> Feelings of fear, apprehension, anxiety, and distorted behavior.</li>
+        <li><strong>Somatoform disorders:</strong> Physical complaints affecting different body areas with no physical cause.</li>
+        <li><strong>Mood (affective) disorders:</strong> Dominated by emotional extremes.</li>
+        <li><strong>Dissociative disorders:</strong> Disturbances or changes in memory, consciousness, or identity.</li>
+        <li><strong>Personality disorders:</strong> Rigid patterns where normal traits become extreme.</li>
+        <li><strong>Schizophrenia:</strong> The most severe mental illness; characterized by hallucinations, delusions, and grossly impaired social, emotional, cognitive, and perceptual functioning.</li>
+        <li><strong>Sexual Dysfunctions and Deviations (Paraphilias):</strong> Trouble engaging in and enjoying sexual relationships.</li>
+        <li><strong>Eating disorders:</strong> Disturbances in eating patterns or behavior.</li>
+        <li><strong>Substance use disorders:</strong> Abuse and dependence on chemical substances.</li>
+    </ol>
+
+    <p><em>Note: We will explore Mood Disorders, Anxiety Disorders, and Personality Disorders in detail below.</em></p>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>😃 1) Mood Disorders</h3>
+    <p>
+        Mood disorders are characterized by a <strong>serious change in mood</strong> ranging from depression to elevated feelings, causing disruption in daily life. General emotional state becomes inconsistent with life circumstances.
+    </p>
+
+    <ul>
+        <li>
+            🌧️ <strong>Major Depression (Clinical Depression):</strong> Characterized by persistent depressed mood, diminished interest in previously enjoyed activities, weight and sleep disturbances, fatigue/loss of energy, difficulty concentrating, feelings of hopelessness, and frequent suicidal thoughts.
+        </li>
+        <li>
+            ☁️ <strong>Dysthymia (Dysthymic Disorder):</strong> A lesser, but more persistent and chronic form of depression. Symptoms are steady rather than episodic.
+        </li>
+        <li>
+            🎢 <strong>Bipolar Disorder (Manic-Depression):</strong> Characterized by alternating periods of extreme highs (<span class="highlight-purple">mania</span>) and extreme lows (<span class="highlight-blue">depression</span>).
+        </li>
+        <li>
+            🌊 <strong>Cyclothymia:</strong> Considered a lesser, milder form of Bipolar Disorder.
+        </li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>😰 2) Anxiety Disorders</h3>
+    <p>
+        Anxiety is a normal reaction to stress involving apprehension, dread, or uneasiness. However, <strong>Anxiety Disorders</strong> involve excessive, inappropriate fear or anxiety that is out of proportion to the situation, age-inappropriate, and hinders normal functioning. They affect nearly 30% of adults at some point.
+    </p>
+
+    <ul>
+        <li>💥 <strong>Panic Disorder:</strong> Sudden, intense, unexpected panic attacks occurring in the absence of actual danger. Feels like a heart attack, dying, or going insane.</li>
+        <li>🏙️ <strong>Agoraphobia:</strong> Intense fear and avoidance of public places or open spaces where escape/help might not be available (e.g., shopping centers, grocery stores).</li>
+        <li>🐍 <strong>Specific Phobia & Social Phobia:</strong> Intense fear and avoidance of a specific object, situation, person, or place.</li>
+        <li>🔄 <strong>Obsessive-Compulsive Disorder (OCD):</strong> Driven by <span class="highlight-orange">obsessions</span> (uncontrollable recurring thoughts) and <span class="highlight-blue">compulsions</span> (repetitive behaviors performed to reduce obsession, like hand-washing or checking).</li>
+        <li>🎖️ <strong>Posttraumatic Stress Disorder (PTSD):</strong> Develops after exposure to traumatic events (war, natural disasters, accidents, abuse). Symptoms include flashbacks, nightmares, avoidance, and intense anxiety.</li>
+        <li>🌐 <strong>Generalized Anxiety Disorder (GAD):</strong> Extreme, persistent anxiety across nearly every area of life, not tied to a specific object or event.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🎭 3) Personality Disorders</h3>
+    <p>
+        An enduring, rigid, and inflexible pattern of thinking, feeling, and behaving that significantly differs from cultural expectations and causes negative consequences or distress.
+    </p>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Core Characteristic Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1. Paranoid</strong></td>
+                    <td>Pattern of pervasive distrust and suspiciousness of others.</td>
+                </tr>
+                <tr>
+                    <td><strong>2. Schizoid</strong></td>
+                    <td>Detachment from social relationships and restricted emotional expression.</td>
+                </tr>
+                <tr>
+                    <td><strong>3. Schizotypal</strong></td>
+                    <td>Discomfort in close relationships, eccentric thinking, appearance, and behavior.</td>
+                </tr>
+                <tr>
+                    <td><strong>4. Antisocial</strong></td>
+                    <td>Disregard for others' rights, lack of conscience/superego, lack of empathy, selfish; often involves criminal or delinquent behavior.</td>
+                </tr>
+                <tr>
+                    <td><strong>5. Borderline</strong></td>
+                    <td>Instability in personal relationships, rapid mood swings between clinginess/affection and intense anger/resentment.</td>
+                </tr>
+                <tr>
+                    <td><strong>6. Histrionic</strong></td>
+                    <td>Excessive emotionality and constant attention-seeking behavior.</td>
+                </tr>
+                <tr>
+                    <td><strong>7. Narcissistic</strong></td>
+                    <td>Pattern of grandiosity, exaggerated self-worth, and constant need for admiration.</td>
+                </tr>
+                <tr>
+                    <td><strong>8. Avoidant</strong></td>
+                    <td>Feelings of social inadequacy, low self-esteem, extreme hypersensitivity to criticism.</td>
+                </tr>
+                <tr>
+                    <td><strong>9. Obsessive-Compulsive</strong></td>
+                    <td>Preoccupation with orderliness, perfectionism, control, and cleanliness.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+<!-- 7.4 TREATMENT TECHNIQUES -->
+<section class="card">
+
+    <h2>🏥 7.4 Treatment Techniques</h2>
+
+    <p>
+        Treatment for mental illnesses can take various forms including medication, talk therapy, or a combination of both.
+    </p>
+
+    <div class="case-box">
+        🤝 <strong>Core Components of Psychotherapy:</strong>
+        <ol>
+            <li>A positive, healthy relationship between client/patient and trained psychotherapist.</li>
+            <li>Recognizable mental health issues (diagnosable or non-diagnosable).</li>
+            <li>Agreement on basic treatment goals.</li>
+            <li>Working together as a team to achieve these goals.</li>
+        </ol>
+    </div>
+
+    <p>
+        🔑 <strong>Essential Requirements for Therapists:</strong>
+        <ul>
+            <li>❤️ <strong>Empathy:</strong> Ability to truly understand the client's feelings, thoughts, and behaviors.</li>
+            <li>⚖️ <strong>Nonjudgmental Attitude:</strong> Vital for building trust so the client feels safe sharing sensitive issues.</li>
+        </ul>
+    </p>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>💊 Category A: Biomedical Therapies (Somatotherapy)</h3>
+    <ul>
+        <li>
+            <strong>Pharmacotherapy (Psychiatric Medications):</strong>
+            <ul>
+                <li>💊 Antianxiety drugs</li>
+                <li>💊 Antidepressant drugs</li>
+                <li>💊 Antipsychotic drugs (e.g., dopamine blockers for schizophrenia)</li>
+                <li>💊 Mood stabilizers</li>
+            </ul>
+        </li>
+        <li>⚡ <strong>Electroconvulsive Therapy (ECT):</strong> Shock therapy used for severe cases.</li>
+        <li>🧠 <strong>Psychosurgery:</strong> Such as Deep Brain Stimulation (DBS).</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🗣️ Category B: Psychological Approaches (Psychotherapy)</h3>
+    <ul>
+        <li>💡 <strong>Cognitive Therapy:</strong> Views dysfunctions as arising from irrational or faulty thinking patterns and distorted perceptions. <em>Works best for depression.</em></li>
+        <li>🔔 <strong>Behavioral Therapy:</strong> Views problems as learned maladaptive behaviors. <em>Works best for phobias.</em></li>
+        <li>🛋️ <strong>Psychodynamic Therapy:</strong> Stems from Freud; focuses on resolving unconscious childhood conflicts.</li>
+        <li>🌱 <strong>Humanistic Therapy:</strong> Rejects psychoanalytic and behavioral views; focuses on personal growth, human potential, taking self-responsibility, and unconditional positive regard.</li>
+        <li>🔄 <strong>Eclectic / Biopsychosocial Approach:</strong> Modern therapists (integrationists) combine techniques from multiple models tailored to the client.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>👥 Treatment Modalities</h3>
+    <ul>
+        <li>👤 <strong>Individual Therapy:</strong> One-on-one session between client and therapist (most common).</li>
+        <li>👥 <strong>Group Therapy:</strong> Individuals with similar issues meet together with one or two therapists. Provides a powerful sense of belonging, mutual support, and reduced isolation.</li>
+        <li>🏡 <strong>Couples & Family Therapy:</strong> Focuses on relationship dynamics, communication training, and team problem-solving.</li>
+        <li>🔀 <strong>Combined Modalities:</strong> A client may start with individual therapy to reduce acute symptoms, then transition to group therapy to practice social skills.</li>
+    </ul>
+
+</section>
+
+
+<footer class="footer">
+
+    🧠 Psychology Chapter 7
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
