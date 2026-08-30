@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Geography Chapter 1 | Introduction</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.98rem;
+            color: var(--primary-purple);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 14px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="geography-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+
+<header>
+
+    <h1>
+        🌍 Geography Chapter 1
+    </h1>
+
+    <p>
+        Introduction: Geography, Location, Shape, Size of Ethiopia & Horn, and Map Reading Skills
+    </p>
+
+</header>
+
+
+
+<!-- =============================================
+     REAL CHAPTER 1 NOTES START HERE
+============================================= -->
+
+<section>
+
+    <!-- 1.1. GEOGRAPHY: DEFINITION, SCOPE, THEMES AND APPROACHES -->
+    <div class="card">
+
+        <h2>
+            📖 1.1. Geography: Definition, Scope, Themes and Approaches
+        </h2>
+
+        <h3>
+            🔍 1.1.1. Meaning of Geography
+        </h3>
+
+        <ul>
+            <li>Geography is a discipline like other field of studies, such as History, Physics, Chemistry, Biology etc.</li>
+            <li>However, it is difficult to forward a definition acceptable to all geographers at all times and places because of:
+                <ul>
+                    <li>Its <span class="highlight-purple">dynamic nature</span>, and</li>
+                    <li>The <span class="highlight-purple">change over time</span> in its scope and method of study</li>
+                </ul>
+            </li>
+            <li>Despite this there may be a working definition.</li>
+        </ul>
+
+        <div class="case-box">
+            🌐 <strong>Working Definition:</strong> Geography is the scientific study of the Earth that describes and analyses spatial and temporal distribution and variation of physical, biological and human phenomena, and their interrelationships and dynamism over the surface of the Earth.
+        </div>
+
+        <ul>
+            <li><strong>Spatial Variation:</strong> Refers to variation of things or phenomena from place to place.</li>
+            <li><strong>Temporal Variation:</strong> Refers to variation of phenomena or things from time to time.</li>
+            <li><strong>Physical phenomena:</strong> Such as rocks, minerals, soil, water.</li>
+            <li><strong>Biological phenomena:</strong> Such as flora (plant) &amp; fauna (animal).</li>
+            <li><strong>Human phenomena:</strong> Human population &amp; socioeconomic conditions.</li>
+        </ul>
+
+        <h3>
+            🎯 1.1.2. The Scope, Approaches and Themes of Geography
+        </h3>
+
+        <h4>
+            🌐 Scope of Geography
+        </h4>
+
+        <ul>
+            <li>Geography is a science that explains the distribution or arrangements of various natural and man-made/cultural features on the Earth surface.</li>
+            <li>It is a <span class="highlight-blue">holistic and interdisciplinary</span> field of study that helps to understand the changing spatial structures from the past to the future.</li>
+            <li>Thus, the scope of Geography is the <span class="highlight-green">surface of the Earth</span>, which is the thin zone that is the interface (common boundary) of the atmosphere, lithosphere, hydrosphere and biosphere.</li>
+        </ul>
+
+        <ul>
+            <li><strong>Atmosphere:</strong> Gas or air that surrounds the earth.</li>
+            <li><strong>Lithosphere:</strong> The solid portion or the land surface of the earth.</li>
+            <li><strong>Hydrosphere:</strong> The portion of the earth that is covered by water bodies (rivers, lakes, sea, ocean).</li>
+            <li><strong>Biosphere:</strong> Area of the earth surface inhabited by living things (plants, animals and human).</li>
+        </ul>
+
+        <h4>
+            🪜 Approaches of Geography
+        </h4>
+
+        <p>
+            Geography can be approached by considering two continuums/scales:
+        </p>
+
+        <ol>
+            <li>A <span class="highlight-purple">human-physical continuum</span></li>
+            <li>A <span class="highlight-purple">topical-regional continuum</span></li>
+        </ol>
+
+        <ul>
+            <li><strong>Topical (Systematic) field of Geography:</strong> Concerned with the distribution of particular phenomena (e.g. human or physical) over the Earth.</li>
+            <li><strong>Regional Geography:</strong> Deals with the associations of all or some of (the physical or human) phenomena within regions.</li>
+        </ul>
+
+        <h4>
+            ⭐ Themes of Geography
+        </h4>
+
+        <p>
+            Geography has five basic themes:
+        </p>
+
+        <ol>
+            <li><strong>Location:</strong> Defined as a particular place or position. Most studies of geography begin with the mention of this theme.
+                <ul>
+                    <li><span class="highlight-blue">Absolute location:</span> Also known as astronomical or mathematical location. Location of a place defined by latitude and longitude or its exact address.</li>
+                    <li><span class="highlight-green">Relative location:</span> Is the location of a place/country defined with respect (reference) to the location of other countries (vicinal) or nearby place(s), landmasses or water bodies.</li>
+                </ul>
+            </li>
+            <li><strong>Place:</strong> Refers to the physical &amp; human aspects of a location.
+                <ul>
+                    <li><span class="highlight-orange">Toponym:</span> The name of a place.</li>
+                    <li><span class="highlight-orange">Site:</span> The description of the features of the place.</li>
+                    <li><span class="highlight-orange">Situation:</span> The environmental conditions of the place.</li>
+                </ul>
+                <p>
+                    Each place in the world has its unique characteristics expressed in terms of landforms, hydrology, biogeography, pedology characteristics and size of its human population, and the distinct human cultures. ‘Place’ helps geographers to compare and contrast two places on Earth.
+                </p>
+            </li>
+            <li><strong>Human-Environment Interaction:</strong> Humans have always been in continual interaction with their natural environment. No other species has a profound effect on the environment as humans. Involves three distinct aspects:
+                <ul>
+                    <li><span class="highlight-purple">Dependency:</span> Refers to the ways in which humans are dependent on nature for a living.</li>
+                    <li><span class="highlight-purple">Adaptation:</span> Relates to how humans modify themselves, their lifestyles and their behavior to live in a new environment with new challenges.</li>
+                    <li><span class="highlight-purple">Modification:</span> Refers how humans “conquer” (control) the world for their comfortable living.</li>
+                </ul>
+            </li>
+            <li><strong>Movement:</strong> Involves the translocation of human beings, their goods, and their ideas from one end of the Earth to another. Three aspects:
+                <ul>
+                    <li>The physical movement of people which allows the human race to inhabit all the continents and islands of the world.</li>
+                    <li>The transport of goods from one place to another on the Earth.</li>
+                    <li>The flow of ideas that allows unification of the human civilization and promotes its growth and prosperity.</li>
+                </ul>
+            </li>
+            <li><strong>Region:</strong> A geographic area having distinctive (unique) characteristics that distinguishes itself from adjacent or surrounding unit(s) of space.
+                <ul>
+                    <li><span class="highlight-green">Formal region:</span> Characterized by homogeneity in terms of a certain phenomenon (soil, temperature, rainfall, or other cultural elements like language, religion, and economy).</li>
+                    <li><span class="highlight-green">Functional or nodal region:</span> Characterized by functional interrelationships in a spatial system defined by the linkages binding particular phenomena.</li>
+                </ul>
+            </li>
+        </ol>
+
+    </div>
+
+    <!-- 1.2. LOCATION, SHAPE AND SIZE OF ETHIOPIA AND THE HORN -->
+    <div class="card">
+
+        <h2>
+            📍 1.2. Location, Shape and Size of Ethiopia and the Horn
+        </h2>
+
+        <h3>
+            🦏 The Horn of Africa
+        </h3>
+
+        <ul>
+            <li>The easternmost extension of African land.</li>
+            <li>A narrow tip that extends/protrudes into the northern Indian Ocean, separating it from the Gulf of Aden.</li>
+            <li>Encompasses Eritrea, Ethiopia, Djibouti and Somalia.</li>
+            <li>Contains diverse areas such as the highlands of the Ethiopian Plateau, the Ogaden desert, and the lowlands of Eritrean and Somali coasts.</li>
+            <li>Its coasts are washed by the Red Sea (Eritrea), the Gulf of Aden (Djibouti and Somalia), and the Indian Ocean (Somalia).</li>
+            <li>It has long been in contact with the Arabian Peninsula and SE Asia.</li>
+            <li>Ethiopia is the largest while Djibouti is the smallest of all the Horn of African countries.</li>
+        </ul>
+
+        <h3>
+            🗺️ 1.2.1. Location of Ethiopia and its Effects
+        </h3>
+
+        <p>
+            Ethiopia is a landlocked country and astronomically located:
+        </p>
+
+        <ul>
+            <li><strong>Latitudes:</strong> <span class="highlight-purple">3°N (Moyale)</span> to <span class="highlight-purple">15°N (Bademe - northernmost tip of Tigray)</span>.</li>
+            <li><strong>Longitudes:</strong> <span class="highlight-purple">33°E (Akobo)</span> to <span class="highlight-purple">48°E (tip of Ogaden in the east)</span>.</li>
+            <li>The east-west distance (15°) is longer than the north-south distance (12°).</li>
+        </ul>
+
+        <div class="example-box">
+            💡 <strong>Importance of Ethiopia’s Location:</strong><br>
+            • Due to its latitudinal location/extension, Ethiopia experiences <strong>tropical climate</strong>.<br>
+            • Due to its longitudinal extension, there is a difference of <strong>one hour</strong> between the most easterly and most westerly points of the country.<br>
+            • It is only for convenience that the <strong>3 hours-time zone</strong> is used in all parts of the country.
+        </div>
+
+        <h3>
+            🧩 Relative Location of Ethiopia
+        </h3>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vicinal Location</th>
+                        <th>In Relation to Water Bodies &amp; Land Masses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            • Sudan to the west and northwest<br>
+                            • South Sudan to southwest<br>
+                            • Djibouti to the east<br>
+                            • Somalia to the east and southeast<br>
+                            • Eritrea to the north and northeast<br>
+                            • Kenya to the south
+                        </td>
+                        <td>
+                            • In the Horn of Africa<br>
+                            • Southwest of the Arabian Peninsula<br>
+                            • South of Europe<br>
+                            • Northwest of the Indian Ocean<br>
+                            • In the Nile Basin
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="diagram-container">
+            <img
+                src="1000007934.jpg"
+                alt="Astronomical and relative location of Ethiopia"
+            >
+        </div>
+
+        <h4>
+            ⚖️ Implications of the Location of Ethiopia
+        </h4>
+
+        <ul>
+            <li><strong>Climate:</strong> Since Ethiopia is located between 3°N and 15°N, the country has a tropical climate although modified by its altitude. Ethiopia’s relative location to Indian &amp; Atlantic Ocean, African &amp; Asian landmass also has an impact on its climate.</li>
+            <li><strong>Socio-cultural:</strong> Ethiopia is one of the earliest recipients of the major world religions namely Christianity and Islam due to its proximity to the Middle East (the origin of these religions). Ethiopia has linguistic and other cultural relationships with its neighbors.</li>
+            <li><strong>Political:</strong> Ethiopia's political history has been greatly influenced by being adjacent to the Red Sea (a major global trade route), geopolitical considerations of superpowers, and the Middle East geopolitical paradigms. Hence, Ethiopia has been exposed to external/foreign invasion.</li>
+        </ul>
+
+        <h3>
+            📏 1.2.2. The Size of Ethiopia and its Implication
+        </h3>
+
+        <ul>
+            <li>Ethiopia has a total area of approximately <span class="highlight-purple">1,106,000 square kilometers</span>.</li>
+            <li>Ethiopia is the <strong>8th largest country in Africa</strong> and <strong>25th in the World</strong>.</li>
+            <li>It extends about <strong>1,639 Km East-West</strong>, and <strong>1,577 Km North-South</strong>.</li>
+            <li>Nearly <strong>0.7%</strong> of the country is covered by water bodies.</li>
+            <li>The size of Ethiopia affects both the natural and human environment of the country.</li>
+        </ul>
+
+        <h4>
+            📊 Advantages and Disadvantages of the Size of Ethiopia
+        </h4>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Advantages</th>
+                        <th>Disadvantages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            • Possess diverse agro-ecological zones<br>
+                            • Possess variety of natural resources<br>
+                            • Own extensive arable land<br>
+                            • Have larger population size<br>
+                            • Home for diverse cultures<br>
+                            • Greater depth to defense external invasion
+                        </td>
+                        <td>
+                            • Demands greater capital to construct infrastructural facilities<br>
+                            • Requires large army to protect its territory<br>
+                            • Difficult for effective administration<br>
+                            • Difficult for socioeconomic integration
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>
+            🔷 1.2.3. The Shape of Ethiopia
+        </h3>
+
+        <ul>
+            <li>Ethiopia has more or less a <span class="highlight-purple">compact shape</span>.</li>
+            <li>Countries of the world have different kinds of shape.</li>
+            <li>The shape of a country has implications on: <strong>Administration, defense, and economic integration</strong> within a country.</li>
+        </ul>
+
+        <h4>
+            🗂️ Five Categories of Country Shapes
+        </h4>
+
+        <ol>
+            <li><strong>Compact shape countries:</strong> More circular shape. The distance from the geographic center of the country to any of the borders does not vary greatly. There is no country with absolutely circular shape. Hence countries approximating to a circular shape are said to be more compact. Compact shape is easier for defense, socioeconomic, and cultural integration.</li>
+            <li><strong>Fragmented shape countries:</strong> Countries divided/separated from their other parts by either water, land or other countries. Example: <em>São Tomé and Príncipe</em> in West Africa.</li>
+            <li><strong>Elongated shape countries:</strong> Geographically long and relatively narrow. Example: <em>Chile</em>.</li>
+            <li><strong>Perforated shape countries:</strong> Countries that completely surround another country. Example: <em>Republic of South Africa</em> (surrounds Lesotho).</li>
+            <li><strong>Protrude shape countries:</strong> Countries that have one portion that is much more elongated than the rest of the country. Example: <em>Eritrea</em> and <em>Myanmar (Burma)</em>.</li>
+        </ol>
+
+        <h4>
+            📐 Ways of Measuring the Shape of Countries (Indices of Compactness)
+        </h4>
+
+        <p>
+            The indices measure the deviation of the shape of a country from a circular shape, which is the most compact shape.
+        </p>
+
+        <ol>
+            <li><strong>Area-Boundary (A/B) ratio:</strong> The ratio of area of country to its boundary length. The higher the A/B ratio, the greater the degree of compactness.</li>
+            <li><strong>Boundary-Circumference (B/C) ratio:</strong> The ratio of boundary length of a country to the circumference of a circle having the same area as the country itself. Measures how much the boundary of a country approximates the circumference of a circle of its own size. The nearer the B/C ratio to 1, the more compact the country is.</li>
+            <li><strong>Area-Circumference (A/C) ratio:</strong> The ratio of the area of the country to the circumference of the smallest inscribing circle. Compares the area of the country with the circumference of a circle that passes touching the extreme points on the boundary of the country. The higher the A/C ratio, the greater the degree of compactness.</li>
+            <li><strong>Area-Area (A/A) ratio:</strong> The ratio of the actual area of a country to the area of the smallest possible inscribing circle. The nearer the A/A ratio to 1, the more compact the country is.</li>
+        </ol>
+
+        <h4>
+             Horn Countries Compactness Indices Comparison
+        </h4>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Area (km²)</th>
+                        <th>Boundary Length (km)</th>
+                        <th>A/B Ratio</th>
+                        <th>B/C Ratio</th>
+                        <th>A/C Ratio</th>
+                        <th>A/A Ratio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ethiopia</strong></td>
+                        <td>1,106,000</td>
+                        <td>5,260</td>
+                        <td>210.27</td>
+                        <td>1.41</td>
+                        <td>296.61</td>
+                        <td>0.81</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Eritrea</strong></td>
+                        <td>118,000</td>
+                        <td>2,420</td>
+                        <td>48.76</td>
+                        <td>1.99</td>
+                        <td>96.81</td>
+                        <td>0.47</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Djibouti</strong></td>
+                        <td>22,000</td>
+                        <td>820</td>
+                        <td>26.83</td>
+                        <td>1.56</td>
+                        <td>41.83</td>
+                        <td>0.68</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Somalia</strong></td>
+                        <td>637,000</td>
+                        <td>5,100</td>
+                        <td>124.90</td>
+                        <td>1.80</td>
+                        <td>175.52</td>
+                        <td>0.56</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- 1.3. BASIC SKILLS OF MAP READING -->
+    <div class="card">
+
+        <h2>
+            🗺️ 1.3. Basic Skills of Map Reading
+        </h2>
+
+        <h3>
+            🖼️ 1.3.1. What is a Map?
+        </h3>
+
+        <ul>
+            <li>A map is a <span class="highlight-purple">two-dimensional scaled representation</span> of part or whole of the Earth surface on a flat body or surface (such as piece of paper, black board, wood or cloth).</li>
+            <li>Maps are scaled, meaning they are reduced from real-world dimensions to manageable proportions.</li>
+            <li>Maps are primary tools for displaying and analyzing spatial distributions, patterns and relations of natural features and man-made features.
+                <ul>
+                    <li><span class="highlight-green">Natural features:</span> Mountains, plateaus, hills, valleys, river, ocean, rocks, plain etc.</li>
+                    <li><span class="highlight-orange">Man-made features:</span> Roads, railways, buildings, dams etc.</li>
+                </ul>
+            </li>
+            <li>Map reading encompasses a systematic identification of natural features and man-made features.</li>
+            <li>Since these features cannot easily be observed and interpreted in real landscapes, maps are essential (to Geographers).</li>
+        </ul>
+
+        <h3>
+            🛠️ 1.3.2. Importance of Maps
+        </h3>
+
+        <ol>
+            <li>Provide the basis for representing geographical details/facts of regions (geographical facts include relief, drainage, settlement, vegetation, soil etc.).</li>
+            <li>Powerful tools for making spatial analysis of geographical facts of areas (e.g. distribution of rainfall, temperature, population, natural resources).</li>
+            <li>Useful for giving location of geographical features using varied methods of grid reference, place naming etc.</li>
+            <li>Used in various disciplines: land use planning, military science, aviation, tourism, marine science, population studies, epidemiology, geology, economics, history, archaeology, agriculture etc.</li>
+            <li>Make storage of the geographical data of areas represented.</li>
+            <li>Potentially used to assess “reliable” measurements of the geographical features (measurements of area, distance etc.).</li>
+        </ol>
+
+        <h3>
+            📂 1.3.3. Types of Maps
+        </h3>
+
+        <p>
+            Based on their purpose &amp; functions, there are many types of maps. Two main types considered:
+        </p>
+
+        <h4>
+            a) Topographical or General Purpose Maps
+        </h4>
+
+        <ul>
+            <li>Depict one or more natural and man-made features of an area (e.g. Ethiopia Relief, Road and Drainage; Ethiopia National Park and Relief).</li>
+            <li>Sometimes referred to as reference maps; emphasis is on location.</li>
+            <li>Contents depend on purpose of map, nature of land represented, or scale of map.</li>
+            <li>Categorized by scale:
+                <ul>
+                    <li><span class="highlight-purple">Large scale:</span> &gt; 1:50,000. Represents a small portion of the Earth’s surface but shows a great amount of detail (e.g. Topographic maps and city street maps).</li>
+                    <li><span class="highlight-purple">Medium scale:</span> 1:50,000 – 1:250,000.</li>
+                    <li><span class="highlight-purple">Small scale:</span> &lt; 1:250,000. Represents large portions of the Earth’s surface but shows much less detail.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>
+            b) Special Purpose / Statistical Maps (Thematic Maps)
+        </h4>
+
+        <ul>
+            <li>Show distribution of different aspects (such as temperature, rainfall, settlement, vegetation etc.; e.g. World Vegetation).</li>
+            <li>Emphasis is placed on a particular element (single topic maps).</li>
+            <li><span class="highlight-green">Qualitative thematic maps:</span> Show the location or distribution of a phenomenon.</li>
+            <li><span class="highlight-orange">Quantitative thematic maps:</span> Show numerical aspects associated with the phenomenon shown.</li>
+        </ul>
+
+        <h3>
+            🧩 1.3.4. Marginal Information on Maps (Elements of Maps)
+        </h3>
+
+        <p>
+            Marginal information is information shown on a map that enables us to read and interpret geographical information of an area represented.
+        </p>
+
+        <ol>
+            <li><strong>Title (Sheet name):</strong> Heading of the map telling what it is all about.</li>
+            <li><strong>Key (legend):</strong> List of all conventional symbols and signs with their interpretation.</li>
+            <li><strong>North arrow:</strong> Indicates the north direction to know other directions (south, east, west).</li>
+            <li><strong>Scale:</strong> Ratio of map distance to actual ground distance. Expressed as representative fraction, statement/verbal scale, or linear (graphic/bar) scale.</li>
+            <li><strong>Margin:</strong> The frame of the map showing the end of the mapped area.</li>
+            <li><strong>Date of compilation:</strong> Publication date to indicate if map is updated or outdated.</li>
+        </ol>
+
+        <h3>
+            🧭 1.3.5. Basic Principles of Map Reading
+        </h3>
+
+        <ol>
+            <li><strong>Visualization of Symbols:</strong> Map readers must have ideas about symbols and real-world landscapes. Every map symbol must be visualized, starting with features the reader already has images of. Symbols should be introduced as needed.</li>
+            <li><strong>Knowledge of Directions:</strong> Map readers must know basic directions. Before locating features, North (the north arrow) should be determined. Readers should learn to read direction and relative location of features shown on the map.</li>
+        </ol>
+
+    </div>
+
+</section>
+
+<!-- =================================================
+     REAL CHAPTER 1 NOTES END HERE
+================================================= -->
+
+
+
+<footer class="footer">
+
+    🌍 Geography Chapter 1
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
