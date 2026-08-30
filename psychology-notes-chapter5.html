@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Psychology Chapter 5 | Motivation and Emotions</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="psychology-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+<header>
+
+    <h1>
+        📘 CHAPTER FIVE: MOTIVATION AND EMOTIONS
+    </h1>
+
+    <p>
+        Motivation Definitions, Theories, Conflict of Motives, Frustration & Theories of Emotions
+    </p>
+
+</header>
+
+
+<!-- 5.1 MOTIVATION -->
+<section class="card">
+
+    <h2>🔥 5.1 Motivation</h2>
+
+    <h3>🧠 5.1.1 Definition and Types of Motivation</h3>
+
+    <div class="case-box">
+        ✅ <strong>What is Motivation?</strong><br>
+        Motivation is the <span class="highlight-purple">internal force or factor</span> that initiates, directs, and persists peoples' behavior towards a purpose.
+        <ul>
+            <li>🚀 <strong>Initiates behavior:</strong> Starts it.</li>
+            <li>🎯 <strong>Directs behavior:</strong> Guides it toward a goal.</li>
+            <li>⏳ <strong>Sustains behavior:</strong> Keeps it going until the goal is reached.</li>
+        </ul>
+        <p>In simple terms, motivation is what drives us to take action and keeps us going until we achieve something.</p>
+    </div>
+
+    <div class="example-box">
+        📌 <strong>Example: Hunger 🍽️</strong><br>
+        For example, hunger causes a person to get up, go into the kitchen, and search for something to eat.
+        <ul>
+            <li>You feel hungry &rarr; this <strong>starts your behavior</strong> (getting up).</li>
+            <li>You go to the kitchen &rarr; this <strong>directs your action</strong> toward the goal (finding food).</li>
+            <li>You keep searching or cooking until you eat &rarr; this <strong>sustains the behavior</strong>.</li>
+        </ul>
+        So, hunger is the motivational force that initiates the action, directs it, and sustains it.
+    </div>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>⚙️ Types of Motivation</h3>
+
+    <p>It is possible to categorize motivation into two main types:</p>
+    <ul>
+        <li><strong>Intrinsic Motivation:</strong> A type of motivation in which a person acts because the act itself is rewarding or satisfying in some internal manner (for enjoyment or internal satisfaction).</li>
+        <li><strong>Extrinsic Motivation:</strong> A type of motivation in which individuals act because the action leads to an outcome that is external to a person (such as money, grades, or concrete rewards).</li>
+    </ul>
+
+    <p>Motives are also frequently divided into:</p>
+    <ul>
+        <li><strong>(a) Physiological, primary, or organic motives:</strong> Needs essential for survival such as hunger, thirst, and need for sleep.</li>
+        <li><strong>(b) Personal, social, or secondary motives:</strong> Learned motives such as affiliation, competition, and individual interests &amp; goals.</li>
+    </ul>
+
+</section>
+
+
+<!-- 5.1.2 APPROACHES TO MOTIVATION -->
+<section class="card">
+
+    <h2>🧩 5.1.2 Approaches to Motivation (Theories of Motivation)</h2>
+
+    <p>Theoretical approaches explain the sources of our motivation. Key theories include instinct, drive-reduction, arousal, incentive, cognitive, and humanistic approaches.</p>
+
+    <h3>a) Instinct Approaches to Motivation</h3>
+    <ul>
+        <li>Focused on biologically determined and innate patterns of both human and animal behavior.</li>
+        <li>It realizes that some human behavior is controlled by hereditary factors.</li>
+        <li><strong>Example:</strong> Just as animals are governed by instincts to reproduce, migrate, build nests, mate, and protect territory, early researchers proposed humans are governed similarly.</li>
+        <li>Early theorists listed thousands of human instincts including curiosity, flight (running away), pugnacity (aggressiveness), and acquisition (gathering possessions).</li>
+    </ul>
+
+    <h3>b) Drive-Reduction Approaches to Motivation</h3>
+    <ul>
+        <li><strong>Need:</strong> A requirement of some material (such as food or water) essential for the survival of the organism.</li>
+        <li><strong>Drive:</strong> A psychological tension and physical arousal arising from a need that motivates an organism to fulfill the need and reduce tension.</li>
+        <li>Proposes a connection between internal psychological states and outward behavior.</li>
+        <li><strong>Two kinds of drives:</strong>
+            <ul>
+                <li><span class="highlight-orange">Primary drives:</span> Involve survival needs of the body, such as hunger and thirst.</li>
+                <li><span class="highlight-blue">Secondary (acquired) drives:</span> Learned through experience or conditioning, such as the need for money or social approval.</li>
+            </ul>
+        </li>
+        <li>Includes the concept of <strong>Homeostasis</strong>: The tendency of the body to maintain a steady state or equilibrium.</li>
+    </ul>
+
+    <h3>c) Arousal Approaches: Beyond Drive Reduction</h3>
+    <ul>
+        <li>Seek to explain behavior where the goal is to maintain or increase excitement and stimulation.</li>
+        <li>Suggests each person tries to maintain a certain optimal level of stimulation and activity.</li>
+        <li>If stimulation levels become too high, we try to reduce them; if levels become too low, we seek stimulation to increase them.</li>
+    </ul>
+
+    <h3>d) Incentive Approaches: Motivation’s Pull</h3>
+    <ul>
+        <li>Suggests motivation stems from the desire to attain external rewards, known as <strong>incentives</strong>.</li>
+        <li>External stimuli (such as grades, money, affection, food, or sex) account for motivation.</li>
+        <li><strong>Push vs. Pull:</strong> Internal drives <em>push</em> behavior while external incentives <em>pull</em> behavior. Drives and incentives work together in motivating behavior rather than contradicting each other.</li>
+    </ul>
+
+    <h3>e) Cognitive Approaches: The Thoughts Behind Motivation</h3>
+    <ul>
+        <li>Suggests motivation is a result of people’s thoughts, beliefs, expectations, and goals.</li>
+        <li><strong>Example:</strong> Motivation to study for a test is based on the expectation of how well studying will pay off in terms of a good grade.</li>
+        <li>Differentiates between:
+            <ul>
+                <li><strong>Intrinsic motivation:</strong> Participating in an activity for personal enjoyment.</li>
+                <li><strong>Extrinsic motivation:</strong> Doing something for concrete external rewards like money or grades.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>f) Humanistic Approaches to Motivation (Maslow’s Hierarchy of Needs)</h3>
+    <p>Abraham Maslow rejected psychoanalysis and behaviorism in favor of a humanistic view, proposing that behavior is influenced by a hierarchy of five classes of needs. Lower-level needs must be satisfied before higher-level needs motivate behavior.</p>
+
+    <div class="case-box">
+        📜 <strong>Maslow's Hierarchy of Needs (Bottom to Top):</strong>
+        <ol>
+            <li><strong>1. Physiological Needs 🍔:</strong> Basic biological requirements for human survival (e.g., air, food, drink, water, shelter, warmth, sex, sleep). If unmet, motivation is focused entirely on satisfying them.</li>
+            <li><strong>2. Safety Needs 🛡️:</strong> Protection from elements, security, order, law, financial safety, stability, health stability, freedom from fear. Example: Seeking a stable job, health insurance, or living in a safe neighborhood.</li>
+            <li><strong>3. Love and Belongingness Needs ❤️:</strong> Social needs involving feelings of belongingness, friendship, intimacy, family, community, trust, acceptance, and affection.</li>
+            <li><strong>4. Esteem Needs 🏆:</strong> Need to be respected as a useful, honorable individual. Divided into:
+                <ul>
+                    <li>(i) Esteem for oneself (dignity, achievement, mastery, independence).</li>
+                    <li>(ii) Desire for reputation or respect from others (status, prestige).</li>
+                </ul>
+            </li>
+            <li><strong>5. Self-Actualization Needs 🌟:</strong> Realizing personal potential, self-fulfillment, seeking personal growth, and peak experiences. The desire "to become everything one is capable of becoming".</li>
+        </ol>
+    </div>
+
+</section>
+
+
+<!-- CONFLICT OF MOTIVES AND FRUSTRATION -->
+<section class="card">
+
+    <h2>⚔️ 5.1.3 Conflict of Motives and Frustration</h2>
+
+    <p>When choosing among motives, especially important decisions, internal conflict and indecision arise from motivational pushes and pulls.</p>
+
+    <h3>📌 Four Basic Types of Motivational Conflicts:</h3>
+
+    <ul>
+        <li><strong>1. Approach-Approach Conflict 😇 vs 😇:</strong>
+            <ul>
+                <li>📌 <strong>Definition:</strong> Choosing between two desirable options. You can only pick one, even though both are good.</li>
+                <li>🎬 <strong>Example:</strong> Wanting to go to a movie 🎥 or a concert 🎵 at the same time. Both are attractive, but you must choose one.</li>
+                <li>💡 Often easiest to resolve, but still causes some hesitation.</li>
+            </ul>
+        </li>
+
+        <li style="margin-top: 10px;"><strong>2. Avoidance-Avoidance Conflict 😰 vs 😰:</strong>
+            <ul>
+                <li>📌 <strong>Definition:</strong> Choosing between two undesirable options. No matter what you choose, it's unpleasant.</li>
+                <li>🏚️ <strong>Example:</strong> Choosing between selling the family home 🏠 or declaring bankruptcy 💸. Both are negative, but one must be chosen.</li>
+                <li>💡 Very stressful and often leads to delays or procrastination.</li>
+            </ul>
+        </li>
+
+        <li style="margin-top: 10px;"><strong>3. Approach-Avoidance Conflict 😍 vs 😖:</strong>
+            <ul>
+                <li>📌 <strong>Definition:</strong> A single goal or event has both attractive (positive) and unattractive (negative) features. You are attracted to it but also hesitant.</li>
+                <li>🎓 <strong>Example:</strong> A freshman student wants to start dating, but at the same time worries it will consume her study time.</li>
+            </ul>
+        </li>
+
+        <li style="margin-top: 10px;"><strong>4. Multiple Approach-Avoidance Conflict:</strong>
+            <ul>
+                <li>📌 <strong>Definition:</strong> Choosing between two or more alternatives where each alternative has both positive and negative features.</li>
+                <li>💼 <strong>Example:</strong> Choosing between two jobs. Job A pays a high salary at a well-known company but requires long hours and relocation to a miserable climate. Job B offers advancement and benefits in a better climate, but pays less and has an unpredictable schedule.</li>
+            </ul>
+        </li>
+    </ul>
+
+</section>
+
+
+<!-- 5.2 EMOTIONS -->
+<section class="card">
+
+    <h2>🎭 5.2 Emotions</h2>
+
+    <h3>5.2.1 Definition of Emotion</h3>
+    <ul>
+        <li><strong>Emotion:</strong> A negative or positive feeling generally in reaction to stimuli that are accompanied by physiological arousal and related behavior.</li>
+        <li>It is a complex reaction pattern involving experiential, behavioral, and physiological elements to deal with a personally significant matter or event.</li>
+        <li>It represents the feeling aspect of our consciousness.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>🧩 Components of Emotion</h3>
+    <ul>
+        <li><strong>1. Physical Component (Physiological Arousal):</strong> Internal body state accompanying emotion created by the sympathetic nervous system. Heart rate increases, breathing accelerates, pupils dilate, and mouth becomes dry.</li>
+        <li><strong>2. Behavioral Component:</strong> Outward expressions such as facial expressions, gestures, body posture, tone of voice, fighting, running, kissing, or yelling. While facial expressions vary across cultures, some aspects are universal.</li>
+        <li><strong>3. Cognitive Component (Subjective Experience / Labeling):</strong> Interpreting the subjective feeling by giving it a label (e.g., anger, fear, happiness) based on memories of previous experiences and context. Labels are learned responses influenced by language and culture.</li>
+    </ul>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>✅ The 6 Basic Emotions</h3>
+    <p>Biologically rooted, universal, and easily recognized in facial expressions across all cultures and age groups:</p>
+    <ol>
+        <li>😃 <strong>Happiness</strong></li>
+        <li>😲 <strong>Surprise</strong></li>
+        <li>😢 <strong>Sadness</strong></li>
+        <li>😨 <strong>Fear</strong></li>
+        <li>🤢 <strong>Disgust</strong></li>
+        <li>😡 <strong>Anger</strong></li>
+    </ol>
+
+    <hr style="margin: 15px 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+    <h3>📖 Theories of Emotion</h3>
+
+    <div class="case-box">
+        <em>"What comes first: the body's reaction or the feeling itself?"</em>
+    </div>
+
+    <ul>
+        <li><strong>I. James-Lange Theory of Emotion:</strong>
+            <ul>
+                <li>Proposes that a stimulus produces a physiological reaction (arousal), which then leads to the labeling of the emotion.</li>
+                <li><em>Sequence:</em> Stimulus &rarr; Physical Arousal &rarr; Emotion.</li>
+                <li>💬 <em>"I am afraid because I am aroused / running."</em></li>
+            </ul>
+        </li>
+
+        <li style="margin-top: 8px;"><strong>II. Cannon-Bard Theory of Emotion:</strong>
+            <ul>
+                <li>Proposes that emotional feeling and physiological arousal occur at the <strong>same time</strong>, not one after the other.</li>
+                <li><em>Sequence:</em> Stimulus &rarr; Physical Arousal + Emotion (Simultaneous).</li>
+                <li>💬 <em>"I am afraid and running and aroused at the same time!"</em></li>
+            </ul>
+        </li>
+
+        <li style="margin-top: 8px;"><strong>III. Schachter-Singer Cognitive Arousal Theory:</strong>
+            <ul>
+                <li>Proposes two things must happen simultaneously before emotion is felt: physical arousal and cognitive labeling/interpretation of that arousal.</li>
+                <li><em>Sequence:</em> Stimulus &rarr; Physical Arousal + Cognitive Interpretation &rarr; Emotion.</li>
+                <li>💬 <em>"I am aroused in the presence of a scary dog; therefore, I must be afraid."</em></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Theory</th>
+                    <th>Process Sequence</th>
+                    <th>Core Concept</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>James-Lange</strong></td>
+                    <td>Stimulus &rarr; Arousal &rarr; Emotion</td>
+                    <td>Body reaction causes emotional feeling.</td>
+                </tr>
+                <tr>
+                    <td><strong>Cannon-Bard</strong></td>
+                    <td>Stimulus &rarr; Arousal + Emotion</td>
+                    <td>Body reaction and emotion occur simultaneously.</td>
+                </tr>
+                <tr>
+                    <td><strong>Schachter-Singer</strong></td>
+                    <td>Stimulus &rarr; Arousal + Cognition &rarr; Emotion</td>
+                    <td>Arousal + cognitive appraisal determine emotion.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    🧠 Psychology Chapter 5
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
