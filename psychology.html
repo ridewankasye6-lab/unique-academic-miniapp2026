@@ -10,12 +10,305 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>🧠 Psychology | Unique Academic</title>
+    <title>📚 Psychology Full Notes | Unique Academic</title>
 
     <link
         rel="stylesheet"
         href="style.css"
     >
+
+    <style>
+
+        /* =================================================
+           PSYCHOLOGY FULL NOTES PAGE
+        ================================================= */
+
+        .notes-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .notes-header h1 {
+            margin-bottom: 6px;
+        }
+
+        .notes-header p {
+            margin-bottom: 0;
+        }
+
+
+        /* =================================================
+           BACK / HOME NAVIGATION
+        ================================================= */
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background: #6b21a8;
+            color: white;
+        }
+
+        .home-btn {
+            background: white;
+            color: #6b21a8;
+            border: 1px solid #e5e7eb;
+        }
+
+
+        /* =================================================
+           NOTES INTRO
+        ================================================= */
+
+        .notes-intro {
+            background: linear-gradient(
+                135deg,
+                #6b21a8,
+                #4c1d95
+            );
+
+            color: white;
+
+            border-radius: 16px;
+
+            padding: 20px 16px;
+
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            box-shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.08),
+                0 2px 4px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .notes-intro h2 {
+            color: white;
+            border-bottom: none;
+            justify-content: center;
+            margin-bottom: 6px;
+        }
+
+        .notes-intro p {
+            color: white;
+            opacity: 0.92;
+            margin-bottom: 0;
+        }
+
+
+        /* =================================================
+           CHAPTER LIST
+        ================================================= */
+
+        .notes-chapters {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+
+        /* =================================================
+           CHAPTER CARD
+        ================================================= */
+
+        .notes-chapter-card {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            background: white;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 16px;
+
+            padding: 15px 14px;
+
+            text-decoration: none;
+
+            color: #1f2937;
+
+            box-shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .notes-chapter-card:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 12px -2px rgba(0, 0, 0, 0.08),
+                0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .notes-chapter-card:active {
+            transform: scale(0.98);
+        }
+
+
+        /* =================================================
+           CHAPTER ICON
+        ================================================= */
+
+        .chapter-icon {
+            width: 48px;
+            height: 48px;
+
+            min-width: 48px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background: #f3e8ff;
+
+            font-size: 24px;
+        }
+
+
+        /* =================================================
+           CHAPTER INFORMATION
+        ================================================= */
+
+        .chapter-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .chapter-number {
+            display: block;
+
+            color: #6b21a8;
+
+            font-size: 0.78rem;
+
+            font-weight: 800;
+
+            margin-bottom: 2px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.3px;
+        }
+
+        .chapter-title {
+            display: block;
+
+            color: #1f2937;
+
+            font-size: 1rem;
+
+            font-weight: 700;
+
+            line-height: 1.35;
+        }
+
+        .chapter-language {
+            display: block;
+
+            color: #6b7280;
+
+            font-size: 0.78rem;
+
+            margin-top: 3px;
+        }
+
+
+        /* =================================================
+           ARROW
+        ================================================= */
+
+        .chapter-arrow {
+            color: #6b21a8;
+
+            font-size: 24px;
+
+            font-weight: 700;
+
+            padding-left: 4px;
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        .notes-footer {
+            text-align: center;
+
+            margin-top: 24px;
+
+            padding: 12px;
+
+            color: #6b7280;
+
+            font-size: 0.82rem;
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 480px) {
+
+            .page-navigation a {
+                padding: 9px 13px;
+                font-size: 14px;
+            }
+
+            .notes-chapter-card {
+                padding: 13px 12px;
+                gap: 11px;
+            }
+
+            .chapter-icon {
+                width: 44px;
+                height: 44px;
+                min-width: 44px;
+                font-size: 21px;
+            }
+
+            .chapter-title {
+                font-size: 0.94rem;
+            }
+
+            .chapter-arrow {
+                font-size: 21px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -24,379 +317,342 @@
 
 
 <!-- =================================================
-     PSYCHOLOGY HEADER
+     NAVIGATION
 ================================================= -->
 
-<h1>
-    🧠 Psychology
-</h1>
-
-<p>
-    <b>BDU Freshman Course</b>
-</p>
-
-
-<!-- =================================================
-     CHAPTERS / NOTES
-     SAME STRUCTURE
-================================================= -->
-
-<h2>
-    📚 Chapters
-</h2>
-
-
-<p>
-    📗
-    <a href="psychology-chapter1.html">
-        Chapter 1
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="psychology-chapter2.html">
-        Chapter 2
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="psychology-chapter3.html">
-        Chapter 3
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="psychology-chapter4.html">
-        Chapter 4
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="psychology-chapter5.html">
-        Chapter 5
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="psychology-chapter6.html">
-        Chapter 6
-    </a>
-</p>
-
-
-<p>
-    📗
-    <a href="psychology-chapter7.html">
-        Chapter 7
-    </a>
-</p>
-
-
-<!-- =================================================
-     RESOURCES
-================================================= -->
-
-<h2>
-    📌 Resources
-</h2>
-
-
-<p>
-
-    <a href="psychology-notes.html">
-        📄 Full Notes
-    </a>
-
-</p>
-
-
-<p>
-    🎥 Video Tutorial
-</p>
-
-
-<!-- =================================================
-     CHAPTER QUIZZES
-================================================= -->
-
-<h2>
-    📝 Chapter Quizzes
-</h2>
-
-
-<!-- =================================================
-     CHAPTER 1 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 1
-        </span>
-
-        <h3>
-            Essence of Psychology
-        </h3>
-
-    </div>
+<div class="page-navigation">
 
     <a
-        href="quiz.html?subject=psychology&chapter=1"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 1 Quiz"
+        href="psychology.html"
+        class="back-btn"
     >
-        ➜
+        ← Back
     </a>
 
-</div>
-
-
-<!-- =================================================
-     CHAPTER 2 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 2
-        </span>
-
-        <h3>
-            Sensation and Perception
-        </h3>
-
-    </div>
 
     <a
-        href="quiz.html?subject=psychology&chapter=2"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 2 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     CHAPTER 3 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 3
-        </span>
-
-        <h3>
-            Learning and Theories of Learning
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=psychology&chapter=3"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 3 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     CHAPTER 4 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 4
-        </span>
-
-        <h3>
-            Memory and Forgetting
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=psychology&chapter=4"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 4 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     CHAPTER 5 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 5
-        </span>
-
-        <h3>
-            Motivation and Emotions
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=psychology&chapter=5"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 5 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     CHAPTER 6 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 6
-        </span>
-
-        <h3>
-            Personality
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=psychology&chapter=6"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 6 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     CHAPTER 7 QUIZ
-================================================= -->
-
-<div class="quiz-card">
-
-    <div class="quiz-progress">
-        0%
-    </div>
-
-    <div class="quiz-info">
-
-        <span class="quiz-badge">
-            Chapter 7
-        </span>
-
-        <h3>
-            Psychological Disorders and Treatment Techniques
-        </h3>
-
-    </div>
-
-    <a
-        href="quiz.html?subject=psychology&chapter=7"
-        class="quiz-arrow"
-        aria-label="Open Psychology Chapter 7 Quiz"
-    >
-        ➜
-    </a>
-
-</div>
-
-
-<!-- =================================================
-     BACK HOME
-================================================= -->
-
-<p style="text-align:center;">
-
-    <a
-        class="button"
         href="index.html"
+        class="home-btn"
     >
-        🏠 Back Home
+        🏠 Home
     </a>
 
-</p>
+</div>
 
 
 <!-- =================================================
-     QUIZ PROGRESS SYSTEM
+     PAGE HEADER
 ================================================= -->
 
-<script src="quiz-progress.js"></script>
+<div class="notes-header">
+
+    <h1>
+        🧠 Psychology
+    </h1>
+
+    <p>
+        <b>BDU Freshman Course</b>
+    </p>
+
+</div>
 
 
 <!-- =================================================
-     ACCESS GUARD
+     NOTES INTRODUCTION
 ================================================= -->
 
-<script
-    type="module"
-    src="access-guard.js"
-></script>
+<div class="notes-intro">
+
+    <h2>
+        📚 Complete Full Notes
+    </h2>
+
+    <p>
+        Select a chapter to open its complete English
+        and Amharic study notes.
+    </p>
+
+</div>
+
+
+<!-- =================================================
+     CHAPTERS
+================================================= -->
+
+<h2>
+    📖 Chapters
+</h2>
+
+
+<div class="notes-chapters">
+
+
+    <!-- =================================================
+         CHAPTER 1
+    ================================================= -->
+
+    <a
+        href="psychology-chapter1.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            📖
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 1
+            </span>
+
+            <span class="chapter-title">
+                Essence of Psychology
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         CHAPTER 2
+    ================================================= -->
+
+    <a
+        href="psychology-chapter2.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            👁️
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 2
+            </span>
+
+            <span class="chapter-title">
+                Sensation and Perception
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         CHAPTER 3
+    ================================================= -->
+
+    <a
+        href="psychology-chapter3.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            🧠
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 3
+            </span>
+
+            <span class="chapter-title">
+                Learning and Theories of Learning
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         CHAPTER 4
+    ================================================= -->
+
+    <a
+        href="psychology-chapter4.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            🗂️
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 4
+            </span>
+
+            <span class="chapter-title">
+                Memory and Forgetting
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         CHAPTER 5
+    ================================================= -->
+
+    <a
+        href="psychology-chapter5.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            ❤️
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 5
+            </span>
+
+            <span class="chapter-title">
+                Motivation and Emotions
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         CHAPTER 6
+    ================================================= -->
+
+    <a
+        href="psychology-chapter6.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            🧩
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 6
+            </span>
+
+            <span class="chapter-title">
+                Personality
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         CHAPTER 7
+    ================================================= -->
+
+    <a
+        href="psychology-chapter7.html"
+        class="notes-chapter-card"
+    >
+
+        <div class="chapter-icon">
+            🧠
+        </div>
+
+        <div class="chapter-content">
+
+            <span class="chapter-number">
+                Chapter 7
+            </span>
+
+            <span class="chapter-title">
+                Psychological Disorders and Treatment Techniques
+            </span>
+
+            <span class="chapter-language">
+                🇬🇧 English + 🇪🇹 Amharic Notes
+            </span>
+
+        </div>
+
+        <div class="chapter-arrow">
+            ➜
+        </div>
+
+    </a>
+
+
+</div>
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<div class="notes-footer">
+
+    📚 Choose a chapter to begin studying.
+
+</div>
 
 
 </body>
+
 </html>
