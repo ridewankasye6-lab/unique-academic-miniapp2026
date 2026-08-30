@@ -1,1 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Anthropology Chapter 4 | Marginalized, Minorities, and Vulnerable Groups</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="anthropology-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+
+<header>
+
+    <h1>
+        👥 Anthropology Chapter 4
+    </h1>
+
+    <p>
+        Marginalized, Minorities, and Vulnerable Groups
+    </p>
+
+</header>
+
+
+
+<!-- =============================================
+     REAL CHAPTER 4 CONTENT
+============================================= -->
+
+<section class="card">
+    <h2>✨ Unit Four: Marginalized, Minorities, and Vulnerable Groups</h2>
+    
+    <div class="case-box">
+        🌏 Understanding how certain groups in society are treated differently is key to building an <span class="highlight-green">inclusive</span> and <span class="highlight-blue">just world</span>. We will break down three key concepts: <strong>Marginalization</strong>, <strong>Vulnerability</strong>, and <strong>Minority Groups</strong>.
+    </div>
+
+    <h3>🧩 4.1 Definition of Concepts</h3>
+    
+    <div class="case-box">
+        📌 <strong>A. Marginalization</strong>
+        <p><strong>Definition:</strong> <strong>Marginalization</strong> is defined as a treatment of a person or social group as <span class="highlight-purple">minor, insignificant, or peripheral</span> (on the sidelines).</p>
+        <p>📚 <strong>In other words:</strong> It means <span class="highlight-orange">pushing people out</span> of the center of social, economic, or political life — as if they don't matter.</p>
+        
+        <p>🧠 <strong>What does marginalization look like?</strong></p>
+        <p>Marginalization involves exclusion of certain groups from:</p>
+        <ul>
+            <li>👥 <strong>Social interactions</strong> — like not inviting them to community events or social gatherings.</li>
+            <li>💍 <strong>Marriage relations</strong> — denying them the right to marry who they choose.</li>
+            <li>🍲 <strong>Sharing food and drinks</strong> — refusing to eat or drink together.</li>
+            <li>🏠 <strong>Working and living together</strong> — spatial and occupational segregation.</li>
+        </ul>
+
+        <p>❓ <strong>Who are mostly marginalized?</strong></p>
+        <ul>
+            <li>There are marginalized social groups in every society and culture.</li>
+            <li><strong>Women, children, older people, and people with disabilities</strong> are among marginalized groups across the world.</li>
+            <li>The nature and level of marginalization varies from society to society as a result of cultural diversity.</li>
+            <li><strong>Religious, ethnic, and racial minorities</strong> are also among social groups marginalized in different societies and cultures.</li>
+            <li><strong>Crafts workers</strong> such as <strong>tanners</strong> (one that tans hides), <strong>potters</strong>, and <strong>ironsmiths</strong> are marginalized in many parts of Ethiopia.</li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        🛡️ <strong>B. Vulnerability</strong>
+        <p><strong>Definition:</strong> <strong>Vulnerability</strong> refers to the state of being exposed to physical or emotional injuries.</p>
+        <ul>
+            <li><strong>Vulnerable groups</strong> are people exposed to possibilities of attack, harms or mistreatment.</li>
+            <li>As a result, vulnerable persons/groups need <strong>special attention, protection and support</strong>.</li>
+        </ul>
+        <div class="example-box">
+            💡 <strong>Example:</strong> Children and people with disabilities need special support and protection as they are exposed to risks and neglect because of their age and disabilities. Universities have introduced special needs education for students with disabilities to give them special support.
+        </div>
+    </div>
+
+    <div class="case-box">
+        👥 <strong>C. Minority Groups</strong>
+        <p><strong>Definition:</strong> The phrase ‘minority group’ refers to a small group of people within a community, region, or country.</p>
+        <ul>
+            <li>In most cases, minority groups are different from the majority population in terms of <strong>race, religion, ethnicity, and language</strong>.</li>
+            <li>Minority groups can be ethnic minorities, religious minorities, or racial minorities in a given community, region or country.</li>
+        </ul>
+        <div class="example-box">
+            💡 <strong>Examples:</strong>
+            <ul>
+                <li>Black Americans are minorities in the United States of America.</li>
+                <li>Christians could be minorities in a Muslim majority country.</li>
+                <li>Muslims can be minorities in a predominantly Hindu society.</li>
+            </ul>
+        </div>
+    </div>
+
+    <p>There are different forms of marginalization. Below, we discuss issues related to <strong>occupational, age and gender-based marginalization</strong>.</p>
+</section>
+
+<section class="card">
+    <h2>👩‍👧‍👦 4.2 Gender-Based Marginalization</h2>
+    
+    <ul>
+        <li><strong>Gender inequality</strong> involves discrimination on a group of people based on their gender.</li>
+        <li>Gender inequality mainly arises from <strong>socio-cultural norms</strong>. The manifestations of gender inequality vary from culture to culture.</li>
+        <li>Girls and women face negative discrimination in societies across the world.</li>
+        <li>Women are exposed to social and economic inequalities involving unfair distribution of wealth, income and job opportunities.</li>
+    </ul>
+
+    <div class="case-box">
+        🚫 <strong>Exclusion of Girls & Women from Opportunities</strong>
+        <p>Gender-based marginalization is a global problem involving exclusion of girls and women from opportunities and social services:</p>
+        <ul>
+            <li>📚 <strong>Education:</strong> Girls in developing countries, especially those who live in remote and rural areas, are excluded from formal education.
+                <ul>
+                    <li>👩‍🎓 The enrollment of girls in higher education is much lower than that of boys.</li>
+                </ul>
+            </li>
+            <li>💼 <strong>Employment:</strong> Women do not enjoy equal employment opportunities in the workforce.</li>
+            <li>🏠 <strong>Property Rights:</strong> Women have fewer rights in terms of property ownership and inheritance.</li>
+            <li>👩‍🦰 <strong>Gender-Based Violence:</strong> Women and girls are vulnerable to:
+                <ul>
+                    <li>❌ Rape</li>
+                    <li>👰 Early/child marriage</li>
+                    <li>🔗 Abduction/forced marriage</li>
+                    <li>🏠 Domestic violence</li>
+                    <li>✂️ Female genital cutting/mutilation (FGC/M)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        🔴 <strong>Harmful Traditional Practices (HTPs)</strong>
+        <p>These are customary practices that affect the health and wellbeing of girls and women. Two key examples are <strong>Female Genital Cutting (FGC)</strong> and <strong>Early/Child Marriage</strong>.</p>
+
+        <h3>A. Female Genital Cutting (FGC) ✂️</h3>
+        <ul>
+            <li>Female genital cutting is practiced in 28 countries in western, northern and eastern Africa.</li>
+            <li><strong>Prevalence in Neighboring Countries:</strong> Somalia (98%), Djibouti (93%), Egypt (87%), Sudan (87%), and Eritrea (83%).</li>
+            <li><strong>Ethiopia context:</strong> Ethiopia is one of the high prevalence countries in Africa. According to UNFPA & UNICEF (2017) reports, <span class="highlight-orange">65% of girls and women</span> in the 15 to 49 years age category are circumcised.</li>
+        </ul>
+
+        <h4>🏥 Health Impacts of Female Genital Cutting</h4>
+        <p>Four major types of FGC exist: <strong>Type I (clitoridectomy)</strong>, <strong>Type II (excision)</strong>, <strong>Type III (infibulation)</strong>, and <strong>Type IV (all the rest)</strong>.</p>
+        <ul>
+            <li>The first three types (Type I, II, and III) are practiced in Ethiopia.</li>
+            <li>Harms of FGC vary depending on the types practiced in different regions.</li>
+            <li><strong>Type III (infibulation or Pharaonic)</strong> is the most severe form, widely practiced in the <strong>Somali, Afar, and Harari regions</strong>.</li>
+            <li><strong>Health implications:</strong> Severe bleeding, infections, pain during sexual intercourse, delivery complications, fistula, and psychological trauma.</li>
+        </ul>
+
+        <h4>🤔 Factors That Encourage Female Genital Cutting (Why is FGC Still Practiced?)</h4>
+        <p>Although prevalence is declining in Ethiopia, the practice is sustained because:</p>
+        <ol>
+            <li>People consider it an integral part of their culture.</li>
+            <li>People believe that the practice has some benefits.</li>
+        </ol>
+
+        <p><strong>🚫 Beliefs that sustain FGC:</strong></p>
+        <ul>
+            <li>🧼 <strong>Purification:</strong> Uncircumcised girls are considered impure/unclean. Local beliefs suggest marrying an uncircumcised girl brings misfortunes (illness, infertility, conflict).</li>
+            <li>😡 <strong>Behavioral Control:</strong> Uncircumcised girls are believed to be disobedient (noncompliant), powerful, ill-mannered, or destructive to household utensils.</li>
+            <li>🔥 <strong>Sexual Control:</strong> Widely held belief that uncircumcised girls are promiscuous due to high sexual drive, leading to unstable marriages.</li>
+            <li>💍 <strong>Preserving Virginity:</strong> FGC is considered a means of preserving virginity, a precondition for marriage in some cultures.</li>
+        </ul>
+
+        <p><strong>🔄 Social Pressures That Enforce FGC:</strong></p>
+        <p>Girls and parents who decide to abandon FGC face severe social sanctions:</p>
+        <ul>
+            <li>🚫 <strong>Social exclusion and marginalization:</strong> Exclusion of uncut girls/women from social relations.</li>
+            <li>🗯️ <strong>Gossip and insults:</strong> Community members, peers, boys, men, and women put pressure on uncut girls and their parents.</li>
+            <li>💔 <strong>Marriage denial:</strong> In some areas, men refuse to marry uncircumcised girls.</li>
+            <li>🍲 <strong>Social rejection:</strong> In some parts, people refuse to eat food cooked by uncircumcised girls or bar them from prayer gatherings due to being labeled "impure".</li>
+        </ul>
+
+        <h3>B. Early/Child Marriage 💍</h3>
+        <p><strong>Definition:</strong> Early marriage refers to marriages involving girls below the age of 18.</p>
+        <ul>
+            <li>Prevalence is declining, but it remains widely practiced across various regions in Ethiopia.</li>
+            <li>According to international human rights conventions, early marriage is a violation of child rights.</li>
+        </ul>
+
+        <h4>🎈 Major Harmful Consequences of Early Marriage:</h4>
+        <ul>
+            <li>❌ <strong>Lack of consent:</strong> Young girls enter marital relations when they are too young to give informed consent.</li>
+            <li>🚫 <strong>Inhibited personal growth:</strong> Hinders girls' chance for education and future professional development.</li>
+            <li>💔 <strong>Sexual abuse:</strong> Exposes young girls to sexual abuse by older husbands.</li>
+            <li>🤰 <strong>Health risks:</strong> Leads to early pregnancies, increasing risks of delivery complications, fistula, and mother/child death.</li>
+        </ul>
+
+        <p>🔒 <strong>Legal Status & Drivers:</strong> Child marriage is an illegal practice according to the <strong>Criminal Code of Ethiopia</strong>. Despite legal restrictions, social and economic drivers sustain it:</p>
+        <ul>
+            <li>💍 <strong>Chastity & Virginity (Social Norms):</strong> Protecting girls from pre-marital sex to preserve family reputation and social standing. Parents marry daughters early to prevent pre-marital affairs.</li>
+            <li>💬 <strong>Social Pressure:</strong> Ridiculing unmarried teenage girls. <em>Komoker</em> is a widely used Amharic insult to ridicule girls considered late to marry.</li>
+            <li>💰 <strong>Economic Factors:</strong> Provides economic security for young girls, access to land, or other resources for parents.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="card">
+    <h2>🔨 4.3 Marginalized Occupational Groups</h2>
+    
+    <ul>
+        <li>According to anthropological findings, occupational marginalized groups exist across many parts of Ethiopia.</li>
+        <li><strong>Key Craft-Worker Groups:</strong> Tanners, Potters, Weavers, and Ironsmiths.</li>
+        <li>Craft-workers are often considered <strong>impure</strong> and are excluded from social interactions, land ownership, and participation in associations and celebrations.</li>
+    </ul>
+
+    <div class="case-box">
+        ⚙️ <strong>The Paradox of Craft-Workers</strong>
+        <p>Crafts workers lead a life of paradoxes (contradiction): They make critical economic/social contributions to their communities, yet they are despised and marginalized by the dominant majority.</p>
+        <ul>
+            <li>👗 <strong>Weavers:</strong> Produce cultural clothes used during holidays, weddings, culture days, and mourning. Despite high demand for their products, weavers face social marginalization.</li>
+            <li>⛏️ <strong>Ironsmiths:</strong> Produce farming tools (plough shares, sickles, hoes) and household utensils (knives, axes) without machines. Essential for rural agriculture, yet treated as inferior.</li>
+            <li>👞 <strong>Tanners & Potters:</strong> Produce leather goods and essential pottery for cooking, water fetching, and food storage, yet suffer social exclusion.</li>
+        </ul>
+    </div>
+
+    <h3>📊 Manifestations of Marginalization (Freeman & Pankhurst, 2001)</h3>
+    <p>Well-known anthropologists Dena Freeman and Alula Pankhurst identified four major types of marginalization targeting occupational minorities in Ethiopia:</p>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Type of Marginalization</th>
+                    <th>Manifestations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Spatial Marginalization</strong></td>
+                    <td>
+                        • Settling/living on outskirts (peripheries) of villages, near forests, on poor land, or steep slopes.<br>
+                        • Segregated at market places (selling goods at borders of markets).<br>
+                        • Expected to give way on roads and walk on the lower side of the path when meeting others.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Economic Marginalization</strong></td>
+                    <td>
+                        • Exclusion from certain economic activities including crop production and exchanges.<br>
+                        • Very limited access to land and land ownership.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Social Marginalization</strong></td>
+                    <td>
+                        • Exclusion from intermarriage and sharing burial places.<br>
+                        • Exclusion from local associations (e.g., <em>iddirs</em>).<br>
+                        • During social events, forced to sit on the floor separately, outside the house, or near the door.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Cultural Marginalization</strong></td>
+                    <td>
+                        • Negative stereotyping (labeled as impure, polluting, or eating unslaughtered dead animals).<br>
+                        • Considered unreliable, lacking morality, respect, and shame.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="card">
+    <h2>👴 4.4 Age-Based Vulnerability</h2>
+    
+    <p><strong>Definition:</strong> Age-based vulnerability refers to the susceptibility of people — especially <strong>children</strong> and <strong>older people</strong> — to physical injuries, attack, and emotional harms due to their age.</p>
+
+    <div class="case-box">
+        👶 <strong>4.4.1 Children</strong>
+        <ul>
+            <li>Both boys and girls are exposed to harm/abuse from older people due to their developmental state.</li>
+            <li>Girls face <strong>double marginalization</strong> due to both age and gender (exposure to HTPs like FGC and early marriage).</li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        👵 <strong>4.4.2 Marginalization of Older Persons</strong>
+        <ul>
+            <li>Refers to adults aged <strong>60 and above</strong>.</li>
+            <li><strong>Traditional Status:</strong> Historically respected in Ethiopian cultures as custodians (guardians) of tradition, culture, and history, playing key roles in mentoring, dispute resolution, and peacemaking.</li>
+            <li><strong>Changing Status:</strong> Modernization, urbanization, rural-urban migration, and economic pressures have reduced care and support systems for older people.</li>
+            <li><strong>Ageism:</strong> Stereotyping, prejudice, and discrimination against individuals based on age. Older persons are increasingly viewed as "social burdens" rather than "social assets," leading to social and economic exclusion.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="card">
+    <h2>🕌 4.5 Religious and Ethnic Minorities</h2>
+    
+    <p>Religious and ethnic minority groups face severe forms of discrimination, exclusion, and persecution globally.</p>
+
+    <div class="example-box">
+        💡 <strong>Global Cases:</strong>
+        <ul>
+            <li><strong>The Jewish People:</strong> Historically suffered persecution, discrimination, and targeted extermination in Germany and Western Europe due to their identity.</li>
+            <li><strong>Muslim Rohingyas in Myanmar:</strong> Described by Milton et al. (2017) as one of the most persecuted refugee groups in the world. Over half a million fled to neighboring countries like Bangladesh, facing severe vulnerability, malnutrition, and abuse in refugee camps.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="card">
+    <h2>⚖️ 4.6 Human Rights Approaches and Inclusiveness: Anthropological Perspectives</h2>
+    
+    <ul>
+        <li>All forms of marginalization and discrimination contradict fundamental <strong>human rights principles</strong>.</li>
+        <li>Major global conventions denounce discrimination against women, children, people with disabilities, older persons, and minorities.</li>
+    </ul>
+
+    <div class="case-box">
+        📜 <strong>Key Human Rights Treaties:</strong>
+        <ul>
+            <li><strong>CRC (Convention on the Rights of the Child - 1989):</strong> 41 articles focusing on children's survival, development, protection, and participation rights.</li>
+            <li><strong>CEDAW (Convention on the Elimination of All Forms of Discrimination against Women - 1979):</strong> Endorsed by the UN General Assembly to eliminate gender-based exclusion and violence.</li>
+        </ul>
+    </div>
+
+    <div class="case-box">
+        🚫 <strong>Examples of Harmful Practices Anthropologists Do Not Support</strong>
+        <p>While anthropology respects cultural diversity through <strong>cultural relativism</strong> (understanding practices within their own cultural context without passing primitive/backward value judgments), <strong>anthropologists DO NOT support cultural practices that violate human rights and physical wellbeing</strong>.</p>
+
+        <p><strong>1. Female Genital Cutting (FGC) ✂️</strong></p>
+        <ul>
+            <li><strong>Why not support it:</strong> FGC violates the <strong>physical integrity</strong> of girls. It causes long-term health consequences and violates their right to safety and bodily autonomy.</li>
+            <li>🧠 <strong>Anthropological View:</strong> While we understand that FGC may be part of some cultures, anthropologists do not support it because it harms the health and well-being of girls and women.</li>
+        </ul>
+
+        <p><strong>2. Early/Child Marriage 💍</strong></p>
+        <ul>
+            <li><strong>Why not support it:</strong> Early marriage violates the rights of girls to make decisions about their future. It denies them education, career opportunities, and personal development.</li>
+            <li>🧠 <strong>Anthropological View:</strong> Early marriage has serious physical and psychological consequences. Anthropologists oppose it because it violates the rights of girls and leads to harm.</li>
+        </ul>
+    </div>
+</section>
+
+
+<footer class="footer">
+
+    👥 Anthropology Chapter 4
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
 
