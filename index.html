@@ -105,7 +105,6 @@
 
 </head>
 
-            
 
 <body>
 
@@ -265,7 +264,7 @@
         <!-- LOGIN -->
 
         <a
-            href="login.html"
+            href="student-login.html"
             id="menuLogin"
             class="menuItem authMenuItem"
         >
@@ -568,19 +567,20 @@
         id="headerGuestAuth"
         class="headerAuth"
     >
-<a
-    href="login.html"
-    class="authHeaderBtn"
->
-    🔐 Login
-</a>
 
-<a
-    href="registration.html"
-    class="authHeaderBtn authHeaderPrimary"
->
-    📝 Register
-</a>
+        <a
+            href="student-login.html"
+            class="authHeaderBtn"
+        >
+            🔐 Login
+        </a>
+
+        <a
+            href="registration.html"
+            class="authHeaderBtn authHeaderPrimary"
+        >
+            📝 Register
+        </a>
 
     </div>
 
@@ -795,6 +795,8 @@
     >
 
 </div>
+
+
 <!-- =====================================================
      SUBJECTS / FIRST-YEAR COURSES
 ===================================================== -->
@@ -1781,7 +1783,7 @@ function updateAuthenticationUI(user) {
         if (dashboardProfileLink) {
 
             dashboardProfileLink.href =
-                "login.html";
+                "student-login.html";
 
         }
 
