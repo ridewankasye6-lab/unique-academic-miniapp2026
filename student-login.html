@@ -24,139 +24,321 @@
 
     <style>
 
+        /* =========================================
+           LOGIN CONTAINER
+        ========================================= */
+
         .login-container {
+
             min-height: 80vh;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             padding: 30px 15px;
+
         }
+
+
+        /* =========================================
+           LOGIN CARD
+        ========================================= */
 
         .login-card {
+
             width: 100%;
+
             max-width: 430px;
+
             background: white;
+
             padding: 30px;
+
             border-radius: 18px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08);
+
+            box-sizing: border-box;
+
         }
+
+
+        /* =========================================
+           ICON
+        ========================================= */
 
         .login-icon {
+
             text-align: center;
+
             font-size: 50px;
+
             margin-bottom: 10px;
+
         }
+
+
+        /* =========================================
+           TITLE
+        ========================================= */
 
         .login-card h1 {
+
             text-align: center;
+
             margin-bottom: 8px;
+
         }
+
 
         .login-subtitle {
+
             text-align: center;
+
             color: #64748b;
+
             margin-bottom: 25px;
+
+            line-height: 1.5;
+
         }
+
+
+        /* =========================================
+           LABELS
+        ========================================= */
 
         .login-card label {
+
             display: block;
+
             font-weight: bold;
+
             margin-bottom: 7px;
+
         }
+
+
+        /* =========================================
+           INPUTS
+        ========================================= */
 
         .login-card input {
+
             width: 100%;
+
             box-sizing: border-box;
+
             padding: 13px;
+
             margin-bottom: 18px;
-            border: 1px solid #d1d5db;
+
+            border:
+                1px solid #d1d5db;
+
             border-radius: 9px;
+
             font-size: 15px;
+
         }
+
 
         .login-card input:focus {
+
             outline: none;
+
             border-color: #2563eb;
+
+            box-shadow:
+                0 0 0 3px rgba(
+                    37,
+                    99,
+                    235,
+                    0.10
+                );
+
         }
 
-        .login-button {
-            width: 100%;
-            padding: 13px;
-            border: none;
-            border-radius: 9px;
-            background: #2563eb;
-            color: white;
-            font-weight: bold;
-            font-size: 15px;
-            cursor: pointer;
-        }
 
-        .login-button:hover {
-            background: #1d4ed8;
-        }
-
-        .login-button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        .login-message {
-            display: none;
-            margin-top: 15px;
-            padding: 12px;
-            border-radius: 9px;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        .login-message.error {
-            display: block;
-            background: #fee2e2;
-            color: #991b1b;
-        }
-
-        .login-message.success {
-            display: block;
-            background: #dcfce7;
-            color: #166534;
-        }
-
-        .login-links {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .login-links p {
-            margin: 10px 0;
-        }
-
-        .login-links a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .login-links a:hover {
-            text-decoration: underline;
-        }
+        /* =========================================
+           PASSWORD
+        ========================================= */
 
         .password-wrapper {
+
             position: relative;
+
+            width: 100%;
+
         }
+
 
         .password-wrapper input {
+
             padding-right: 55px;
+
         }
 
+
         .show-password {
+
             position: absolute;
+
             right: 10px;
+
             top: 50%;
-            transform: translateY(-50%);
+
+            transform:
+                translateY(-50%);
+
             border: none;
+
             background: transparent;
+
             cursor: pointer;
+
             font-size: 18px;
+
+            padding: 5px;
+
+        }
+
+
+        .show-password:focus {
+
+            outline: none;
+
+        }
+
+
+        /* =========================================
+           LOGIN BUTTON
+        ========================================= */
+
+        .login-button {
+
+            width: 100%;
+
+            padding: 13px;
+
+            border: none;
+
+            border-radius: 9px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-weight: bold;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .login-button:hover {
+
+            background: #1d4ed8;
+
+        }
+
+
+        .login-button:disabled {
+
+            opacity: 0.6;
+
+            cursor: not-allowed;
+
+        }
+
+
+        /* =========================================
+           MESSAGE
+        ========================================= */
+
+        .login-message {
+
+            display: none;
+
+            margin-top: 15px;
+
+            padding: 12px;
+
+            border-radius: 9px;
+
+            text-align: center;
+
+            line-height: 1.5;
+
+        }
+
+
+        .login-message.error {
+
+            display: block;
+
+            background: #fee2e2;
+
+            color: #991b1b;
+
+        }
+
+
+        .login-message.success {
+
+            display: block;
+
+            background: #dcfce7;
+
+            color: #166534;
+
+        }
+
+
+        /* =========================================
+           LINKS
+        ========================================= */
+
+        .login-links {
+
+            text-align: center;
+
+            margin-top: 20px;
+
+        }
+
+
+        .login-links p {
+
+            margin: 10px 0;
+
+        }
+
+
+        .login-links a {
+
+            color: #2563eb;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+        }
+
+
+        .login-links a:hover {
+
+            text-decoration: underline;
+
         }
 
     </style>
@@ -167,19 +349,32 @@
 <body>
 
 
+<!-- =========================================
+     HEADER
+========================================= -->
+
 <header>
 
-    <h1>🎓 Unique Academic</h1>
+    <h1>
+        🎓 Unique Academic
+    </h1>
 
-    <p>BDU Learning Platform</p>
+    <p>
+        BDU Learning Platform
+    </p>
 
 </header>
 
 
 
+<!-- =========================================
+     LOGIN
+========================================= -->
+
 <main class="login-container">
 
     <section class="login-card">
+
 
         <div class="login-icon">
             👨‍🎓
@@ -192,16 +387,32 @@
 
 
         <p class="login-subtitle">
-            Login to access your Unique Academic account.
+
+            Login to access your
+            Unique Academic account.
+
         </p>
 
 
 
-        <form id="studentLoginForm">
+        <!-- =====================================
+             LOGIN FORM
+        ====================================== -->
+
+        <form
+            id="studentLoginForm"
+            novalidate
+        >
+
+
+            <!-- EMAIL -->
 
             <label for="email">
+
                 Email Address
+
             </label>
+
 
             <input
                 type="email"
@@ -213,11 +424,17 @@
 
 
 
+            <!-- PASSWORD -->
+
             <label for="password">
+
                 Password
+
             </label>
 
+
             <div class="password-wrapper">
+
 
                 <input
                     type="password"
@@ -227,56 +444,86 @@
                     required
                 >
 
+
                 <button
                     type="button"
                     id="showPasswordBtn"
                     class="show-password"
                     aria-label="Show password"
                 >
+
                     👁️
+
                 </button>
+
 
             </div>
 
 
+
+            <!-- LOGIN -->
 
             <button
                 type="submit"
                 id="loginButton"
                 class="login-button"
             >
+
                 🔐 Login
+
             </button>
+
 
         </form>
 
 
 
+        <!-- =====================================
+             MESSAGE
+        ====================================== -->
+
         <div
             id="loginMessage"
             class="login-message"
             role="alert"
+            aria-live="polite"
         ></div>
 
 
 
+        <!-- =====================================
+             LINKS
+        ====================================== -->
+
         <div class="login-links">
 
+
             <p>
+
                 Don't have an account?
+
                 <a href="registration.html">
+
                     Register
+
                 </a>
+
             </p>
 
 
             <p>
+
                 <a href="index.html">
+
                     🏠 Back Home
+
                 </a>
+
             </p>
+
 
         </div>
+
 
     </section>
 
@@ -284,32 +531,70 @@
 
 
 
+<!-- =========================================
+     FIREBASE LOGIN SCRIPT
+========================================= -->
+
 <script type="module">
 
-import { auth } from "./firebase-config.js";
+
+/* =========================================
+   FIREBASE CONFIG
+
+   IMPORTANT:
+   We use the SAME auth instance
+   from firebase-config.js
+========================================= */
+
+import {
+    auth
+} from "./firebase-config.js";
+
 
 import {
     signInWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 
+
+/* =========================================
+   ELEMENTS
+========================================= */
+
 const form =
-    document.getElementById("studentLoginForm");
+    document.getElementById(
+        "studentLoginForm"
+    );
+
 
 const emailInput =
-    document.getElementById("email");
+    document.getElementById(
+        "email"
+    );
+
 
 const passwordInput =
-    document.getElementById("password");
+    document.getElementById(
+        "password"
+    );
+
 
 const loginButton =
-    document.getElementById("loginButton");
+    document.getElementById(
+        "loginButton"
+    );
+
 
 const loginMessage =
-    document.getElementById("loginMessage");
+    document.getElementById(
+        "loginMessage"
+    );
+
 
 const showPasswordBtn =
-    document.getElementById("showPasswordBtn");
+    document.getElementById(
+        "showPasswordBtn"
+    );
 
 
 
@@ -321,18 +606,49 @@ showPasswordBtn.addEventListener(
     "click",
     function () {
 
+
         const isPassword =
-            passwordInput.type === "password";
+            passwordInput.type ===
+            "password";
 
-        passwordInput.type =
-            isPassword
-                ? "text"
-                : "password";
 
-        showPasswordBtn.textContent =
-            isPassword
-                ? "🙈"
-                : "👁️";
+        if (isPassword) {
+
+
+            passwordInput.type =
+                "text";
+
+
+            showPasswordBtn.textContent =
+                "🙈";
+
+
+            showPasswordBtn.setAttribute(
+                "aria-label",
+                "Hide password"
+            );
+
+
+        }
+
+        else {
+
+
+            passwordInput.type =
+                "password";
+
+
+            showPasswordBtn.textContent =
+                "👁️";
+
+
+            showPasswordBtn.setAttribute(
+                "aria-label",
+                "Show password"
+            );
+
+
+        }
 
     }
 );
@@ -347,29 +663,64 @@ form.addEventListener(
     "submit",
     async function (event) {
 
+
         event.preventDefault();
 
 
+        /* =================================
+           GET VALUES
+        ================================= */
+
         const email =
-            emailInput.value.trim();
+            emailInput.value
+                .trim();
+
 
         const password =
             passwordInput.value;
 
 
-        if (!email || !password) {
+
+        /* =================================
+           BASIC VALIDATION
+        ================================= */
+
+        if (!email) {
 
             showMessage(
-                "Please enter your email and password.",
+                "📧 Please enter your email address.",
                 "error"
             );
+
+            emailInput.focus();
 
             return;
 
         }
 
 
-        loginButton.disabled = true;
+        if (!password) {
+
+            showMessage(
+                "🔐 Please enter your password.",
+                "error"
+            );
+
+            passwordInput.focus();
+
+            return;
+
+        }
+
+
+
+        /* =================================
+           START LOGIN
+        ================================= */
+
+        loginButton.disabled =
+            true;
+
 
         loginButton.textContent =
             "⏳ Logging in...";
@@ -378,7 +729,13 @@ form.addEventListener(
         hideMessage();
 
 
+
         try {
+
+
+            /* =================================
+               FIREBASE AUTHENTICATION
+            ================================= */
 
             const userCredential =
                 await signInWithEmailAndPassword(
@@ -392,10 +749,13 @@ form.addEventListener(
                 userCredential.user;
 
 
-            /*
-             * Keep compatibility with the
-             * existing Unique Academic system.
-             */
+
+            /* =================================
+               SAVE LOGIN STATE
+               
+               Compatibility with your
+               existing Unique Academic system.
+            ================================= */
 
             localStorage.setItem(
                 "studentLoggedIn",
@@ -406,19 +766,39 @@ form.addEventListener(
             localStorage.setItem(
                 "uniqueAcademicUser",
                 JSON.stringify({
-                    uid: user.uid,
-                    email: user.email,
+
+                    uid:
+                        user.uid,
+
+                    email:
+                        user.email,
+
                     displayName:
-                        user.displayName || "Student"
+                        user.displayName ||
+                        "Student"
+
                 })
             );
 
 
+
+            /* =================================
+               SUCCESS
+            ================================= */
+
             showMessage(
-                "✅ Login successful. Welcome back!",
+                "🎉 Login successful! Welcome back!",
                 "success"
             );
 
+
+            loginButton.textContent =
+                "✅ Logged In";
+
+
+            /* =================================
+               GO HOME
+            ================================= */
 
             setTimeout(
                 function () {
@@ -427,63 +807,124 @@ form.addEventListener(
                         "index.html";
 
                 },
-                500
+                700
             );
+
 
         }
 
+
         catch (error) {
 
+
             console.error(
-                "Login error:",
+                "Firebase Login Error:",
                 error
             );
 
+
+            /* =================================
+               DEFAULT ERROR
+            ================================= */
 
             let message =
                 "❌ Incorrect email or password.";
 
 
-            if (
-                error.code ===
-                "auth/user-not-found"
-            ) {
 
-                message =
-                    "❌ No account was found with this email.";
+            /* =================================
+               FIREBASE ERROR HANDLING
+            ================================= */
+
+            switch (error.code) {
+
+
+                case "auth/invalid-email":
+
+                    message =
+                        "📧 Please enter a valid email address.";
+
+                    break;
+
+
+
+                case "auth/user-not-found":
+
+                    message =
+                        "❌ No account was found with this email.";
+
+                    break;
+
+
+
+                case "auth/wrong-password":
+
+                    message =
+                        "❌ Incorrect password.";
+
+                    break;
+
+
+
+                case "auth/invalid-credential":
+
+                    message =
+                        "❌ Incorrect email or password.";
+
+                    break;
+
+
+
+                case "auth/too-many-requests":
+
+                    message =
+                        "⚠️ Too many login attempts. Please try again later.";
+
+                    break;
+
+
+
+                case "auth/user-disabled":
+
+                    message =
+                        "🚫 This account has been disabled.";
+
+                    break;
+
+
+
+                case "auth/network-request-failed":
+
+                    message =
+                        "🌐 Network error. Please check your internet connection.";
+
+                    break;
+
+
+
+                case "auth/operation-not-allowed":
+
+                    message =
+                        "⚠️ Email/password login is not enabled in Firebase Authentication.";
+
+                    break;
+
+
+
+                default:
+
+                    message =
+                        "❌ Login failed. Please try again.";
+
+                    break;
 
             }
 
-            else if (
-                error.code ===
-                "auth/wrong-password"
-            ) {
 
-                message =
-                    "❌ Incorrect password.";
 
-            }
-
-            else if (
-                error.code ===
-                "auth/invalid-credential"
-            ) {
-
-                message =
-                    "❌ Incorrect email or password.";
-
-            }
-
-            else if (
-                error.code ===
-                "auth/too-many-requests"
-            ) {
-
-                message =
-                    "⚠️ Too many login attempts. Please try again later.";
-
-            }
-
+            /* =================================
+               SHOW ERROR
+            ================================= */
 
             showMessage(
                 message,
@@ -491,8 +932,13 @@ form.addEventListener(
             );
 
 
+            /* =================================
+               RESET BUTTON
+            ================================= */
+
             loginButton.disabled =
                 false;
+
 
             loginButton.textContent =
                 "🔐 Login";
@@ -504,29 +950,44 @@ form.addEventListener(
 
 
 
+/* =========================================
+   SHOW MESSAGE
+========================================= */
+
 function showMessage(
     message,
     type
 ) {
 
+
     loginMessage.textContent =
         message;
 
+
     loginMessage.className =
-        "login-message " + type;
+        "login-message " +
+        type;
 
 }
 
 
+
+/* =========================================
+   HIDE MESSAGE
+========================================= */
+
 function hideMessage() {
+
 
     loginMessage.textContent =
         "";
+
 
     loginMessage.className =
         "login-message";
 
 }
+
 
 </script>
 
