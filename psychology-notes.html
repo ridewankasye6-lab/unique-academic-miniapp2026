@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -12,7 +13,14 @@
 
     <title>🧠 Psychology | Full Notes</title>
 
+
     <style>
+
+        /* =================================================
+           UNIQUE ACADEMIC
+           PSYCHOLOGY FULL NOTES HOME
+        ================================================= */
+
 
         /* =================================================
            ROOT
@@ -21,23 +29,28 @@
         :root {
 
             --bg-color: #f3f4f6;
+
             --card-bg: #ffffff;
+
             --text-main: #1f2937;
+
             --text-muted: #4b5563;
 
-            --primary-purple: #6b21a8;
-            --primary-dark: #4c1d95;
 
-            --accent-green: #047857;
-            --accent-orange: #c2410c;
-            --accent-blue: #1d4ed8;
+            --primary-purple: #64229b;
 
-            --border-color: #e5e7eb;
+            --primary-dark: #4c1d7a;
+
+
+            --border-color: #ded7e6;
+
 
             --shadow:
-                0 4px 6px -1px rgba(0, 0, 0, 0.05),
-                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+                0 4px 12px rgba(0, 0, 0, 0.08),
+                0 2px 5px rgba(0, 0, 0, 0.04);
+
         }
+
 
 
         /* =================================================
@@ -45,20 +58,29 @@
         ================================================= */
 
         * {
+
             box-sizing: border-box;
+
             margin: 0;
+
             padding: 0;
+
         }
+
 
 
         html {
+
             scroll-behavior: smooth;
+
         }
+
 
 
         body {
 
             font-family:
+
                 -apple-system,
                 BlinkMacSystemFont,
                 "Segoe UI",
@@ -67,18 +89,29 @@
                 Arial,
                 sans-serif;
 
-            background-color: var(--bg-color);
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f5f6 0%,
+                    #eef0f4 100%
+                );
+
 
             color: var(--text-main);
 
-            line-height: 1.6;
+            line-height: 1.5;
 
-            padding: 12px;
+            padding: 18px;
 
-            max-width: 680px;
+            max-width: 700px;
 
             margin: 0 auto;
+
+            min-height: 100vh;
+
         }
+
 
 
         /* =================================================
@@ -93,10 +126,12 @@
 
             align-items: center;
 
-            margin-bottom: 16px;
+            gap: 16px;
 
-            gap: 10px;
+            margin-bottom: 34px;
+
         }
+
 
 
         .nav-button {
@@ -109,30 +144,57 @@
 
             text-decoration: none;
 
-            padding: 10px 15px;
+            min-height: 58px;
 
-            border-radius: 12px;
+            padding: 0 26px;
 
-            font-size: 14px;
+            border-radius: 20px;
 
-            font-weight: 700;
+            font-size: 1.1rem;
 
-            transition: 0.2s ease;
+            font-weight: 800;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+
         }
+
 
 
         .nav-button:active {
+
             transform: scale(0.96);
+
         }
 
+
+
+        /* =================================================
+           BACK BUTTON
+        ================================================= */
 
         .back-button {
 
-            background: var(--primary-purple);
+            background:
+                linear-gradient(
+                    135deg,
+                    #6f2aa8,
+                    #54208a
+                );
 
             color: white;
+
+            box-shadow:
+                0 5px 12px rgba(91, 32, 145, 0.22);
+
         }
 
+
+
+        /* =================================================
+           HOME BUTTON
+        ================================================= */
 
         .home-button {
 
@@ -140,8 +202,12 @@
 
             color: var(--primary-purple);
 
-            border: 1px solid var(--border-color);
+            border: 1px solid #dedede;
+
+            box-shadow: var(--shadow);
+
         }
+
 
 
         /* =================================================
@@ -153,88 +219,111 @@
             background:
                 linear-gradient(
                     135deg,
-                    var(--primary-purple),
-                    var(--primary-dark)
+                    #6a2aa0 0%,
+                    #4b1d78 100%
                 );
 
             color: white;
 
-            padding: 24px 16px;
+            padding: 52px 20px;
 
-            border-radius: 16px;
+            border-radius: 30px;
 
-            margin-bottom: 18px;
+            margin-bottom: 36px;
 
             text-align: center;
 
-            box-shadow: var(--shadow);
+            box-shadow:
+                0 8px 18px rgba(78, 27, 126, 0.18);
+
         }
+
 
 
         .page-header h1 {
 
-            font-size: 1.6rem;
+            font-size: 2.1rem;
 
-            margin-bottom: 5px;
+            font-weight: 800;
+
+            margin-bottom: 14px;
+
+            letter-spacing: -0.5px;
+
         }
+
 
 
         .page-header p {
 
-            color: white;
+            color: rgba(255, 255, 255, 0.88);
 
-            opacity: 0.9;
+            font-size: 1.15rem;
 
-            margin: 0;
+            font-weight: 500;
 
-            font-size: 0.9rem;
         }
 
 
+
         /* =================================================
-           NOTES HOME / CHAPTER SELECTOR
+           NOTES HOME
         ================================================= */
 
         .notes-home {
 
             background: var(--card-bg);
 
-            border-radius: 16px;
+            border-radius: 28px;
 
-            padding: 18px 16px;
+            padding: 32px;
 
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             border: 1px solid var(--border-color);
 
             box-shadow: var(--shadow);
+
         }
 
+
+
+        /* =================================================
+           NOTES TITLE
+        ================================================= */
 
         .notes-home-title {
 
             color: var(--primary-purple);
 
-            font-size: 1.15rem;
+            font-size: 1.7rem;
 
             font-weight: 800;
 
-            margin-bottom: 5px;
+            margin-bottom: 12px;
+
+            line-height: 1.3;
+
         }
+
 
 
         .notes-home-subtitle {
 
             color: var(--text-muted);
 
-            font-size: 0.9rem;
+            font-size: 1.05rem;
 
-            margin-bottom: 15px;
+            margin-bottom: 32px;
+
+            line-height: 1.6;
+
         }
 
 
+
         /* =================================================
-           CHAPTER CARDS
+           CHAPTER LIST
         ================================================= */
 
         .chapter-list {
@@ -243,9 +332,15 @@
 
             flex-direction: column;
 
-            gap: 12px;
+            gap: 20px;
+
         }
 
+
+
+        /* =================================================
+           CHAPTER CARD
+        ================================================= */
 
         .chapter-card {
 
@@ -253,45 +348,71 @@
 
             align-items: center;
 
-            gap: 12px;
+            gap: 22px;
 
             text-decoration: none;
 
-            background: #faf5ff;
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7f4fa,
+                    #f1eef5
+                );
 
-            border: 1px solid #e9d5ff;
+            border: 1px solid #dccfea;
 
-            border-radius: 14px;
+            border-radius: 25px;
 
-            padding: 14px;
+            padding: 24px;
 
             color: var(--text-main);
 
-            transition: 0.2s ease;
+            min-height: 148px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.04);
+
         }
+
 
 
         .chapter-card:hover {
 
-            transform: translateY(-1px);
+            transform: translateY(-3px);
 
-            box-shadow: var(--shadow);
+            box-shadow:
+                0 8px 18px rgba(0, 0, 0, 0.09);
+
+            border-color: #b88bd7;
+
         }
+
 
 
         .chapter-card:active {
 
             transform: scale(0.98);
+
         }
 
 
+
+        /* =================================================
+           CHAPTER ICON BOX
+        ================================================= */
+
         .chapter-icon {
 
-            width: 46px;
+            width: 78px;
 
-            height: 46px;
+            height: 78px;
 
-            min-width: 46px;
+            min-width: 78px;
 
             display: flex;
 
@@ -301,18 +422,31 @@
 
             background: white;
 
-            border-radius: 12px;
+            border-radius: 22px;
 
-            font-size: 23px;
+            font-size: 38px;
 
-            border: 1px solid #e9d5ff;
+            border: 1px solid #ded4e6;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.05);
+
         }
 
+
+
+        /* =================================================
+           CHAPTER INFORMATION
+        ================================================= */
 
         .chapter-info {
 
             flex: 1;
+
+            min-width: 0;
+
         }
+
 
 
         .chapter-number {
@@ -321,367 +455,68 @@
 
             color: var(--primary-purple);
 
-            font-size: 0.78rem;
+            font-size: 1rem;
 
             font-weight: 800;
 
             text-transform: uppercase;
 
-            margin-bottom: 2px;
+            letter-spacing: 0.4px;
+
+            margin-bottom: 10px;
+
         }
+
 
 
         .chapter-title {
 
             display: block;
 
-            color: var(--text-main);
+            color: #303947;
 
-            font-size: 0.98rem;
+            font-size: 1.25rem;
 
-            font-weight: 700;
+            font-weight: 800;
+
+            line-height: 1.45;
 
         }
+
 
 
         .chapter-description {
 
             display: block;
 
-            color: var(--text-muted);
+            color: #59616d;
 
-            font-size: 0.78rem;
+            font-size: 1rem;
 
-            margin-top: 2px;
+            margin-top: 10px;
+
         }
 
+
+
+        /* =================================================
+           ARROW
+        ================================================= */
 
         .chapter-arrow {
 
             color: var(--primary-purple);
 
-            font-size: 22px;
+            font-size: 2.6rem;
 
-            font-weight: 800;
-        }
+            font-weight: 900;
 
+            line-height: 1;
 
-        /* =================================================
-           CHAPTER NOTE SECTION
-        ================================================= */
-
-        .chapter-section {
-
-            scroll-margin-top: 15px;
-
-            margin-bottom: 30px;
-        }
-
-
-        .chapter-heading {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--primary-purple),
-                    var(--primary-dark)
-                );
-
-            color: white;
-
-            border-radius: 16px;
-
-            padding: 20px 16px;
-
-            margin-bottom: 14px;
-
-            text-align: center;
-
-            box-shadow: var(--shadow);
-        }
-
-
-        .chapter-heading h2 {
-
-            color: white;
-
-            font-size: 1.35rem;
-
-            margin: 0 0 4px;
+            padding-left: 4px;
 
         }
 
-
-        .chapter-heading p {
-
-            color: white;
-
-            opacity: 0.9;
-
-            margin: 0;
-
-            font-size: 0.86rem;
-        }
-
-
-        /* =================================================
-           NOTE CARDS
-           
-           YOUR NOTES GO INSIDE THESE.
-        ================================================= */
-
-        .note-card {
-
-            background: var(--card-bg);
-
-            border-radius: 16px;
-
-            padding: 18px 16px;
-
-            margin-bottom: 14px;
-
-            border: 1px solid var(--border-color);
-
-            box-shadow: var(--shadow);
-        }
-
-
-        .note-card h3 {
-
-            font-size: 1.08rem;
-
-            color: var(--primary-purple);
-
-            margin-bottom: 10px;
-
-            padding-bottom: 6px;
-
-            border-bottom: 2px solid #f3e8ff;
-        }
-
-
-        .note-card h4 {
-
-            font-size: 1rem;
-
-            margin: 12px 0 7px;
-
-            color: var(--text-main);
-        }
-
-
-        .note-card p {
-
-            color: var(--text-muted);
-
-            font-size: 0.95rem;
-
-            margin-bottom: 10px;
-        }
-
-
-        .note-card ul,
-        .note-card ol {
-
-            padding-left: 20px;
-
-            color: var(--text-muted);
-
-            font-size: 0.95rem;
-
-            margin-bottom: 12px;
-        }
-
-
-        .note-card li {
-
-            margin-bottom: 6px;
-        }
-
-
-        /* =================================================
-           ENGLISH / AMHARIC
-        ================================================= */
-
-        .amharic {
-
-            margin-top: 12px;
-
-            padding: 12px;
-
-            background: #faf5ff;
-
-            border-left: 4px solid var(--primary-purple);
-
-            border-radius: 0 10px 10px 0;
-
-            color: var(--text-main);
-
-            font-size: 0.95rem;
-        }
-
-
-        .amharic-title {
-
-            display: block;
-
-            color: var(--primary-purple);
-
-            font-weight: 800;
-
-            margin-bottom: 5px;
-        }
-
-
-        /* =================================================
-           HIGHLIGHTS
-        ================================================= */
-
-        .highlight-purple {
-
-            color: var(--primary-purple);
-
-            font-weight: 700;
-        }
-
-
-        .highlight-green {
-
-            color: var(--accent-green);
-
-            font-weight: 700;
-        }
-
-
-        .highlight-orange {
-
-            color: var(--accent-orange);
-
-            font-weight: 700;
-        }
-
-
-        .highlight-blue {
-
-            color: var(--accent-blue);
-
-            font-weight: 700;
-        }
-
-
-        /* =================================================
-           EXAMPLE / IMPORTANT BOX
-        ================================================= */
-
-        .example-box {
-
-            background: #f9fafb;
-
-            border-left: 4px solid #f59e0b;
-
-            padding: 11px 12px;
-
-            border-radius: 0 9px 9px 0;
-
-            margin: 12px 0;
-
-            font-size: 0.9rem;
-
-            color: var(--text-main);
-        }
-
-
-        .important-box {
-
-            background: #eff6ff;
-
-            border-left: 4px solid var(--accent-blue);
-
-            padding: 11px 12px;
-
-            border-radius: 0 9px 9px 0;
-
-            margin: 12px 0;
-
-            font-size: 0.9rem;
-        }
-
-
-        /* =================================================
-           TABLE
-        ================================================= */
-
-        .table-responsive {
-
-            overflow-x: auto;
-
-            margin: 12px 0;
-        }
-
-
-        table {
-
-            width: 100%;
-
-            min-width: 550px;
-
-            border-collapse: collapse;
-
-            font-size: 0.85rem;
-        }
-
-
-        th,
-        td {
-
-            padding: 8px 10px;
-
-            border: 1px solid var(--border-color);
-
-            text-align: left;
-        }
-
-
-        th {
-
-            background: #f3e8ff;
-
-            color: var(--primary-purple);
-        }
-
-
-        tr:nth-child(even) {
-
-            background: #f9fafb;
-        }
-
-
-        /* =================================================
-           BACK TO CHAPTERS
-        ================================================= */
-
-        .back-to-chapters {
-
-            display: block;
-
-            width: fit-content;
-
-            margin: 16px auto 0;
-
-            padding: 9px 15px;
-
-            border-radius: 10px;
-
-            background: #f3e8ff;
-
-            color: var(--primary-purple);
-
-            text-decoration: none;
-
-            font-size: 14px;
-
-            font-weight: 700;
-        }
 
 
         /* =================================================
@@ -692,44 +527,257 @@
 
             text-align: center;
 
-            padding: 25px 10px;
+            padding: 24px 10px 35px;
 
             color: var(--text-muted);
 
-            font-size: 0.82rem;
+            font-size: 0.9rem;
+
+            line-height: 1.7;
+
         }
 
 
+
         /* =================================================
-           MOBILE
+           MOBILE RESPONSIVE
         ================================================= */
 
         @media (max-width: 480px) {
 
+
             body {
-                padding: 10px;
+
+                padding: 18px;
+
+            }
+
+
+            /* NAVIGATION */
+
+            .top-navigation {
+
+                margin-bottom: 34px;
+
+            }
+
+
+            .nav-button {
+
+                min-height: 56px;
+
+                padding: 0 20px;
+
+                border-radius: 18px;
+
+                font-size: 1rem;
+
+            }
+
+
+
+            /* HEADER */
+
+            .page-header {
+
+                padding: 48px 18px;
+
+                border-radius: 28px;
+
+                margin-bottom: 36px;
+
+            }
+
+
+            .page-header h1 {
+
+                font-size: 2rem;
+
+            }
+
+
+            .page-header p {
+
+                font-size: 1.05rem;
+
+            }
+
+
+
+            /* NOTES HOME */
+
+            .notes-home {
+
+                padding: 28px 16px;
+
+                border-radius: 26px;
+
+            }
+
+
+            .notes-home-title {
+
+                font-size: 1.5rem;
+
+            }
+
+
+            .notes-home-subtitle {
+
+                font-size: 1rem;
+
+                margin-bottom: 28px;
+
+            }
+
+
+
+            /* CHAPTER CARD */
+
+            .chapter-list {
+
+                gap: 20px;
+
             }
 
 
             .chapter-card {
+
+                gap: 16px;
+
+                padding: 22px 18px;
+
+                min-height: 142px;
+
+                border-radius: 24px;
+
+            }
+
+
+
+            /* ICON */
+
+            .chapter-icon {
+
+                width: 74px;
+
+                height: 74px;
+
+                min-width: 74px;
+
+                border-radius: 21px;
+
+                font-size: 34px;
+
+            }
+
+
+
+            /* TEXT */
+
+            .chapter-number {
+
+                font-size: 0.95rem;
+
+                margin-bottom: 8px;
+
+            }
+
+
+            .chapter-title {
+
+                font-size: 1.12rem;
+
+                line-height: 1.45;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.96rem;
+
+                margin-top: 8px;
+
+            }
+
+
+
+            /* ARROW */
+
+            .chapter-arrow {
+
+                font-size: 2.4rem;
+
+            }
+
+        }
+
+
+
+        /* =================================================
+           SMALL MOBILE
+        ================================================= */
+
+        @media (max-width: 380px) {
+
+
+            body {
+
                 padding: 12px;
+
+            }
+
+
+            .nav-button {
+
+                padding: 0 16px;
+
+                font-size: 0.95rem;
+
+            }
+
+
+            .chapter-card {
+
+                gap: 12px;
+
+                padding: 18px 14px;
+
             }
 
 
             .chapter-icon {
 
-                width: 42px;
+                width: 62px;
 
-                height: 42px;
+                height: 62px;
 
-                min-width: 42px;
+                min-width: 62px;
 
-                font-size: 21px;
+                font-size: 29px;
+
             }
 
 
             .chapter-title {
-                font-size: 0.92rem;
+
+                font-size: 1rem;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.88rem;
+
+            }
+
+
+            .chapter-arrow {
+
+                font-size: 2rem;
+
             }
 
         }
@@ -742,11 +790,15 @@
 <body>
 
 
+
 <!-- =================================================
      TOP NAVIGATION
 ================================================= -->
 
 <div class="top-navigation">
+
+
+    <!-- BACK TO PSYCHOLOGY PAGE -->
 
     <a
         href="psychology.html"
@@ -756,6 +808,9 @@
     </a>
 
 
+
+    <!-- BACK TO HOME -->
+
     <a
         href="index.html"
         class="nav-button home-button"
@@ -763,12 +818,13 @@
         🏠 Home
     </a>
 
+
 </div>
 
 
 
 <!-- =================================================
-     PAGE HEADER
+     PSYCHOLOGY HEADER
 ================================================= -->
 
 <header class="page-header">
@@ -787,643 +843,398 @@
 
 <!-- =================================================
      FULL NOTES HOME
-     
-     THIS IS WHAT THE STUDENT SEES FIRST.
+
+     STUDENT SELECTS A CHAPTER HERE
 ================================================= -->
 
-<div
-    class="notes-home"
-    id="chapters"
->
+<main class="notes-home">
+
+
+    <!-- TITLE -->
 
     <div class="notes-home-title">
+
         📖 Psychology Full Notes
+
     </div>
 
+
+
+    <!-- SUBTITLE -->
 
     <div class="notes-home-subtitle">
+
         Select a chapter to study its complete notes.
+
     </div>
 
+
+
+    <!-- =================================================
+         CHAPTER LIST
+    ================================================= -->
 
     <div class="chapter-list">
 
 
-        <!-- CHAPTER 1 -->
+
+        <!-- =================================================
+             CHAPTER 1
+        ================================================= -->
 
         <a
-            href="#chapter1"
+            href="psychology-notes-chapter1.html"
             class="chapter-card"
         >
 
+
             <div class="chapter-icon">
+
                 📗
+
             </div>
+
 
 
             <div class="chapter-info">
 
+
                 <span class="chapter-number">
+
                     Chapter 1
+
                 </span>
 
+
+
                 <span class="chapter-title">
+
                     Essence of Psychology
+
                 </span>
+
+
 
                 <span class="chapter-description">
+
                     Complete study notes
+
                 </span>
 
+
             </div>
+
 
 
             <div class="chapter-arrow">
+
                 ➜
+
             </div>
+
 
         </a>
 
 
 
-        <!-- CHAPTER 2 -->
+        <!-- =================================================
+             CHAPTER 2
+        ================================================= -->
 
         <a
-            href="#chapter2"
+            href="psychology-notes-chapter2.html"
             class="chapter-card"
         >
 
+
             <div class="chapter-icon">
+
                 📘
+
             </div>
+
 
 
             <div class="chapter-info">
 
+
                 <span class="chapter-number">
+
                     Chapter 2
+
                 </span>
 
+
+
                 <span class="chapter-title">
+
                     Sensation and Perception
+
                 </span>
+
+
 
                 <span class="chapter-description">
+
                     Complete study notes
+
                 </span>
 
+
             </div>
+
 
 
             <div class="chapter-arrow">
+
                 ➜
+
             </div>
+
 
         </a>
 
 
 
-        <!-- CHAPTER 3 -->
+        <!-- =================================================
+             CHAPTER 3
+        ================================================= -->
 
         <a
-            href="#chapter3"
+            href="psychology-notes-chapter3.html"
             class="chapter-card"
         >
 
+
             <div class="chapter-icon">
+
                 📙
+
             </div>
+
 
 
             <div class="chapter-info">
 
+
                 <span class="chapter-number">
+
                     Chapter 3
+
                 </span>
 
+
+
                 <span class="chapter-title">
+
                     Learning and Theories of Learning
+
                 </span>
+
+
 
                 <span class="chapter-description">
+
                     Complete study notes
+
                 </span>
 
+
             </div>
+
 
 
             <div class="chapter-arrow">
+
                 ➜
+
             </div>
+
 
         </a>
 
 
 
-        <!-- CHAPTER 4 -->
+        <!-- =================================================
+             CHAPTER 4
+        ================================================= -->
 
         <a
-            href="#chapter4"
+            href="psychology-notes-chapter4.html"
             class="chapter-card"
         >
 
+
             <div class="chapter-icon">
+
                 📕
+
             </div>
+
 
 
             <div class="chapter-info">
 
+
                 <span class="chapter-number">
+
                     Chapter 4
+
                 </span>
 
+
+
                 <span class="chapter-title">
+
                     Memory and Forgetting
+
                 </span>
+
+
 
                 <span class="chapter-description">
+
                     Complete study notes
+
                 </span>
 
+
             </div>
+
 
 
             <div class="chapter-arrow">
+
                 ➜
+
             </div>
+
 
         </a>
 
 
 
-        <!-- CHAPTER 5 -->
+        <!-- =================================================
+             CHAPTER 5
+        ================================================= -->
 
         <a
-            href="#chapter5"
+            href="psychology-notes-chapter5.html"
             class="chapter-card"
         >
 
+
             <div class="chapter-icon">
+
                 📔
+
             </div>
+
 
 
             <div class="chapter-info">
 
+
                 <span class="chapter-number">
+
                     Chapter 5
+
                 </span>
+
+
 
                 <span class="chapter-title">
+
                     Motivation and Emotions
+
                 </span>
+
+
 
                 <span class="chapter-description">
+
                     Complete study notes
+
                 </span>
 
+
             </div>
+
 
 
             <div class="chapter-arrow">
+
                 ➜
+
             </div>
+
 
         </a>
 
 
 
-        <!-- CHAPTER 6 -->
+        <!-- =================================================
+             CHAPTER 6
+        ================================================= -->
 
         <a
-            href="#chapter6"
+            href="psychology-notes-chapter6.html"
             class="chapter-card"
         >
 
+
             <div class="chapter-icon">
+
                 📓
+
             </div>
+
 
 
             <div class="chapter-info">
 
+
                 <span class="chapter-number">
+
                     Chapter 6
+
                 </span>
+
+
 
                 <span class="chapter-title">
+
                     Personality
+
                 </span>
+
+
 
                 <span class="chapter-description">
+
                     Complete study notes
+
                 </span>
 
+
             </div>
+
 
 
             <div class="chapter-arrow">
+
                 ➜
+
             </div>
+
 
         </a>
 
 
     </div>
 
-</div>
 
-
-
-<!-- =================================================
-     CHAPTER 1 NOTES
-     
-     PUT YOUR COMPLETE CHAPTER 1 NOTES HERE.
-================================================= -->
-
-<section
-    id="chapter1"
-    class="chapter-section"
->
-
-
-    <div class="chapter-heading">
-
-        <h2>
-            📗 Chapter 1
-        </h2>
-
-        <p>
-            Essence of Psychology
-        </p>
-
-    </div>
-
-
-    <!-- =================================================
-         PASTE CHAPTER 1 NOTES BELOW
-    ================================================= -->
-
-    <div class="note-card">
-
-        <h3>
-            🧠 1.1 Definition of Psychology & Related Concepts
-        </h3>
-
-
-        <p>
-            <!-- Your Chapter 1 English notes here -->
-        </p>
-
-
-        <div class="amharic">
-
-            <span class="amharic-title">
-                🇪🇹 አማርኛ
-            </span>
-
-            <!-- Your Amharic explanation here -->
-
-        </div>
-
-    </div>
-
-
-    <!-- ADD MORE .note-card SECTIONS FOR CHAPTER 1 -->
-
-
-
-    <a
-        href="#chapters"
-        class="back-to-chapters"
-    >
-        ↑ Back to Chapters
-    </a>
-
-</section>
-
-
-
-<!-- =================================================
-     CHAPTER 2 NOTES
-================================================= -->
-
-<section
-    id="chapter2"
-    class="chapter-section"
->
-
-
-    <div class="chapter-heading">
-
-        <h2>
-            📘 Chapter 2
-        </h2>
-
-        <p>
-            Sensation and Perception
-        </p>
-
-    </div>
-
-
-    <!-- =================================================
-         PASTE COMPLETE CHAPTER 2 NOTES HERE
-    ================================================= -->
-
-    <div class="note-card">
-
-        <h3>
-            👁️ 2.1 Sensation and Perception
-        </h3>
-
-
-        <p>
-            <!-- Your Chapter 2 English notes here -->
-        </p>
-
-
-        <div class="amharic">
-
-            <span class="amharic-title">
-                🇪🇹 አማርኛ
-            </span>
-
-            <!-- Your Chapter 2 Amharic notes here -->
-
-        </div>
-
-    </div>
-
-
-    <!-- ADD MORE NOTE CARDS HERE -->
-
-
-    <a
-        href="#chapters"
-        class="back-to-chapters"
-    >
-        ↑ Back to Chapters
-    </a>
-
-</section>
-
-
-
-<!-- =================================================
-     CHAPTER 3 NOTES
-================================================= -->
-
-<section
-    id="chapter3"
-    class="chapter-section"
->
-
-
-    <div class="chapter-heading">
-
-        <h2>
-            📙 Chapter 3
-        </h2>
-
-        <p>
-            Learning and Theories of Learning
-        </p>
-
-    </div>
-
-
-    <!-- PASTE COMPLETE CHAPTER 3 NOTES HERE -->
-
-    <div class="note-card">
-
-        <h3>
-            🧠 3.1 Learning
-        </h3>
-
-
-        <p>
-            <!-- Your Chapter 3 English notes here -->
-        </p>
-
-
-        <div class="amharic">
-
-            <span class="amharic-title">
-                🇪🇹 አማርኛ
-            </span>
-
-            <!-- Your Chapter 3 Amharic notes here -->
-
-        </div>
-
-    </div>
-
-
-    <!-- ADD MORE NOTE CARDS HERE -->
-
-
-    <a
-        href="#chapters"
-        class="back-to-chapters"
-    >
-        ↑ Back to Chapters
-    </a>
-
-</section>
-
-
-
-<!-- =================================================
-     CHAPTER 4 NOTES
-================================================= -->
-
-<section
-    id="chapter4"
-    class="chapter-section"
->
-
-
-    <div class="chapter-heading">
-
-        <h2>
-            📕 Chapter 4
-        </h2>
-
-        <p>
-            Memory and Forgetting
-        </p>
-
-    </div>
-
-
-    <!-- PASTE COMPLETE CHAPTER 4 NOTES HERE -->
-
-    <div class="note-card">
-
-        <h3>
-            🗂️ 4.1 Memory and Forgetting
-        </h3>
-
-
-        <p>
-            <!-- Your Chapter 4 English notes here -->
-        </p>
-
-
-        <div class="amharic">
-
-            <span class="amharic-title">
-                🇪🇹 አማርኛ
-            </span>
-
-            <!-- Your Chapter 4 Amharic notes here -->
-
-        </div>
-
-    </div>
-
-
-    <!-- ADD MORE NOTE CARDS HERE -->
-
-
-    <a
-        href="#chapters"
-        class="back-to-chapters"
-    >
-        ↑ Back to Chapters
-    </a>
-
-</section>
-
-
-
-<!-- =================================================
-     CHAPTER 5 NOTES
-================================================= -->
-
-<section
-    id="chapter5"
-    class="chapter-section"
->
-
-
-    <div class="chapter-heading">
-
-        <h2>
-            📔 Chapter 5
-        </h2>
-
-        <p>
-            Motivation and Emotions
-        </p>
-
-    </div>
-
-
-    <!-- PASTE COMPLETE CHAPTER 5 NOTES HERE -->
-
-    <div class="note-card">
-
-        <h3>
-            ❤️ 5.1 Motivation and Emotions
-        </h3>
-
-
-        <p>
-            <!-- Your Chapter 5 English notes here -->
-        </p>
-
-
-        <div class="amharic">
-
-            <span class="amharic-title">
-                🇪🇹 አማርኛ
-            </span>
-
-            <!-- Your Chapter 5 Amharic notes here -->
-
-        </div>
-
-    </div>
-
-
-    <!-- ADD MORE NOTE CARDS HERE -->
-
-
-    <a
-        href="#chapters"
-        class="back-to-chapters"
-    >
-        ↑ Back to Chapters
-    </a>
-
-</section>
-
-
-
-<!-- =================================================
-     CHAPTER 6 NOTES
-================================================= -->
-
-<section
-    id="chapter6"
-    class="chapter-section"
->
-
-
-    <div class="chapter-heading">
-
-        <h2>
-            📓 Chapter 6
-        </h2>
-
-        <p>
-            Personality
-        </p>
-
-    </div>
-
-
-    <!-- PASTE COMPLETE CHAPTER 6 NOTES HERE -->
-
-    <div class="note-card">
-
-        <h3>
-            🧩 6.1 Personality
-        </h3>
-
-
-        <p>
-            <!-- Your Chapter 6 English notes here -->
-        </p>
-
-
-        <div class="amharic">
-
-            <span class="amharic-title">
-                🇪🇹 አማርኛ
-            </span>
-
-            <!-- Your Chapter 6 Amharic notes here -->
-
-        </div>
-
-    </div>
-
-
-    <!-- ADD MORE NOTE CARDS HERE -->
-
-
-    <a
-        href="#chapters"
-        class="back-to-chapters"
-    >
-        ↑ Back to Chapters
-    </a>
-
-</section>
+</main>
 
 
 
@@ -1433,11 +1244,16 @@
 
 <footer class="footer">
 
+
     🧠 Psychology
+
     <br>
+
     📚 Unique Academic — Complete Full Notes
 
+
 </footer>
+
 
 
 </body>
