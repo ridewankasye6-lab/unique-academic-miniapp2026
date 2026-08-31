@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logic Chapter 2 | Basic Concepts of Logic</title>
-
     <style>
         :root {
-            --bg-color: #f4f6f9;
+            --bg-color: #f8fafc;
             --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #475569;
-            --primary-purple: #6b21a8;
-            --accent-purple-light: #f3e8ff;
-            --accent-green: #047857;
-            --accent-green-bg: #ecfdf5;
-            --accent-orange: #c2410c;
-            --accent-orange-bg: #fff7ed;
+            --text-main: #0f172a;
+            --text-muted: #334155;
+            --primary-purple: #581c87;
+            --purple-light: #f3e8ff;
+            --purple-border: #d8b4fe;
             --accent-blue: #1d4ed8;
-            --accent-blue-bg: #eff6ff;
+            --blue-light: #eff6ff;
+            --accent-green: #047857;
+            --green-light: #ecfdf5;
+            --accent-orange: #c2410c;
+            --orange-light: #fff7ed;
             --border-color: #e2e8f0;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-            --radius-md: 12px;
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.06), 0 2px 4px -1px rgba(0,0,0,0.03);
             --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
         }
 
         * {
@@ -36,14 +37,13 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.65;
             padding: 12px;
             max-width: 680px;
             margin: 0 auto;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Top Navigation */
         .page-navigation {
             display: flex;
             justify-content: space-between;
@@ -55,11 +55,14 @@
         .page-navigation a {
             text-decoration: none;
             border-radius: var(--radius-md);
-            padding: 10px 18px;
-            font-size: 14px;
+            padding: 10px 16px;
+            font-size: 15px;
             font-weight: 700;
             box-shadow: var(--shadow-sm);
             transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .page-navigation a:active {
@@ -77,47 +80,46 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Header */
         header {
             background: linear-gradient(135deg, #6b21a8, #4c1d95);
             color: white;
             padding: 24px 18px;
             border-radius: var(--radius-lg);
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             text-align: center;
             box-shadow: var(--shadow-md);
         }
 
         header h1 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 800;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             letter-spacing: -0.02em;
         }
 
         header p {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            color: #e9d5ff;
+            font-size: 0.95rem;
+            opacity: 0.95;
+            color: #f3e8ff;
+            font-weight: 500;
         }
 
-        /* Card Container */
         .card {
             background-color: var(--card-bg);
             border-radius: var(--radius-lg);
-            padding: 20px 16px;
-            margin-bottom: 18px;
+            padding: 20px 18px;
+            margin-bottom: 20px;
             border: 1px solid var(--border-color);
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--shadow-md);
         }
 
-        /* Headings */
         h2 {
             font-size: 1.25rem;
             color: var(--primary-purple);
             margin-bottom: 14px;
-            border-bottom: 2px solid var(--accent-purple-light);
+            border-bottom: 2px solid var(--purple-light);
             padding-bottom: 8px;
+            font-weight: 700;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -127,10 +129,10 @@
             font-size: 1.05rem;
             color: var(--text-main);
             margin: 16px 0 10px 0;
+            font-weight: 700;
             display: flex;
             align-items: center;
             gap: 6px;
-            font-weight: 700;
         }
 
         p {
@@ -139,10 +141,9 @@
             font-size: 0.95rem;
         }
 
-        /* Lists */
         ul, ol {
             margin-bottom: 14px;
-            padding-left: 20px;
+            padding-left: 22px;
             color: var(--text-muted);
             font-size: 0.95rem;
         }
@@ -151,11 +152,11 @@
             margin-bottom: 8px;
         }
 
-        li strong {
-            color: var(--text-main);
+        li::marker {
+            color: var(--primary-purple);
+            font-weight: bold;
         }
 
-        /* Highlights & Inline Emphasizers */
         .highlight-green {
             color: var(--accent-green);
             font-weight: 600;
@@ -176,44 +177,51 @@
             font-weight: 600;
         }
 
-        /* Callout Boxes */
         .callout-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-purple);
             padding: 12px 14px;
-            border-radius: var(--radius-md);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
             margin: 14px 0;
-            font-size: 0.92rem;
-            border-left: 4px solid;
+            font-size: 0.93rem;
+            color: var(--text-main);
         }
 
         .example-box {
-            background-color: var(--accent-orange-bg);
-            border-left-color: var(--accent-orange);
-            color: #7c2d12;
+            background-color: var(--orange-light);
+            border-left: 4px solid var(--accent-orange);
+            padding: 12px 14px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 14px 0;
+            font-size: 0.93rem;
+            color: var(--text-main);
         }
 
         .case-box {
-            background-color: var(--accent-blue-bg);
-            border-left-color: var(--accent-blue);
-            color: #1e40af;
+            background-color: var(--blue-light);
+            border-left: 4px solid var(--accent-blue);
+            padding: 12px 14px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 14px 0;
+            font-size: 0.93rem;
+            color: var(--text-main);
         }
 
-        .recap-box {
-            background-color: var(--accent-green-bg);
-            border-left-color: var(--accent-green);
-            color: #065f46;
+        .quote-box {
+            background-color: var(--purple-light);
+            border-left: 4px solid var(--primary-purple);
+            padding: 14px 16px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 14px 0;
+            font-style: italic;
+            font-weight: 600;
+            color: var(--primary-purple);
         }
 
-        .info-box {
-            background-color: var(--accent-purple-light);
-            border-left-color: var(--primary-purple);
-            color: #581c87;
-        }
-
-        /* Table Responsive Styling */
         .table-responsive {
             overflow-x: auto;
             margin: 14px 0;
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-sm);
             border: 1px solid var(--border-color);
         }
 
@@ -222,7 +230,6 @@
             border-collapse: collapse;
             font-size: 0.88rem;
             text-align: left;
-            background-color: white;
         }
 
         th, td {
@@ -231,7 +238,7 @@
         }
 
         th {
-            background-color: var(--accent-purple-light);
+            background-color: var(--purple-light);
             color: var(--primary-purple);
             font-weight: 700;
         }
@@ -245,24 +252,8 @@
             padding: 25px 10px;
             color: var(--text-muted);
             font-size: 0.85rem;
-        }
-
-        /* Floating back-to-top button style matching reference app */
-        .scroll-top-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #475569;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            font-weight: bold;
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -274,253 +265,136 @@
 </div>
 
 <header>
-    <h1>⚖️ Logic Chapter 2</h1>
-    <p>Basic Concepts of Logic</p>
+    <h1>📘 CHAPTER TWO: BASIC CONCEPTS OF LOGIC</h1>
+    <p>Unique Academic — Complete Study Notes</p>
 </header>
 
-<main>
-
-    <!-- SECTION 1: WHAT IS LOGIC -->
-    <section class="card">
-        <h2>🧠 What is Logic?</h2>
+<section>
+    <div class="card">
+        <h2>🧠 Basic Concepts of Logic</h2>
         
-        <div class="callout-box info-box">
-            <h3>🔍 Etymology & Definition</h3>
-            <p>The word <strong>logic</strong> comes from the Greek word <em>logos</em>, which means <span class="highlight-purple">sentence, discourse, reason, truth, and rule</span>.</p>
-        </div>
-
-        <p>Logic can be defined in several complementary ways:</p>
         <ul>
-            <li><strong>Broad definition:</strong> The science that evaluates arguments and the study of correct reasoning.</li>
-            <li><strong>Methodological definition:</strong> The study of methods and principles used to evaluate whether premises adequately support or provide good evidence for conclusions.</li>
-            <li><strong>Practical definition:</strong> A science that helps develop principles to evaluate the arguments of others and construct sound arguments of your own.</li>
-        </ul>
-
-        <div class="callout-box recap-box">
-            <p><strong>💡 Primary Aim:</strong> Logic attempts to codify and organize the rules of rational thought, creating a system of methods that serve as <strong>criteria for evaluation</strong> and <strong>guides for construction</strong>.</p>
-        </div>
-
-        <h3>📚 What Do We Study in Logic?</h3>
-        <ul>
-            <li>🗣️ <strong>Forms of Argument:</strong> Structural patterns that preserve truth.</li>
-            <li>📜 <strong>General Principles:</strong> Core rules governing rational thought.</li>
-            <li>❌ <strong>Particular Errors (Fallacies):</strong> Common mistakes made in reasoning.</li>
-            <li>🛠️ <strong>Methods of Arguing:</strong> Systematized approaches to developing arguments.</li>
-        </ul>
-    </section>
-
-    <!-- SECTION 2: BENEFITS OF STUDYING LOGIC -->
-    <section class="card">
-        <h2>💡 Benefits of Studying Logic</h2>
-        
-        <blockquote style="font-style: italic; color: var(--text-muted); padding-left: 12px; border-left: 3px solid var(--primary-purple); margin-bottom: 12px;">
-            "Logic sharpens and refines our natural gifts to think, reason and argue." — C. S. Layman
-        </blockquote>
-
-        <p>Key advantages gained from studying logic include:</p>
-        <ul>
-            <li><strong>Argumentation Skills:</strong> Develops ability to build sound, fallacy-free arguments and evaluate claims.</li>
-            <li><strong>Intellectual Defense:</strong> Serves as a fundamental defense against prejudiced and uncivilized attitudes.</li>
-            <li><strong>Quality Assessment:</strong> Helps distinguish good arguments from bad ones clearly.</li>
-            <li><strong>Error Identification:</strong> Enables quick detection of common logical fallacies and linguistic confusions.</li>
-            <li><strong>Civic & Political Awareness:</strong> Uncovers ill-conceived political policies, exposes disguises, and separates the rational from the irrational.</li>
-        </ul>
-
-        <div class="callout-box recap-box">
-            <p><strong>🎯 Ultimate Goal:</strong> To produce individuals who are critical, rational, and reasonable in both public and private life.</p>
-        </div>
-    </section>
-
-    <!-- SECTION 3: WHAT IS AN ARGUMENT -->
-    <section class="card">
-        <h2>⚖️ What is an Argument?</h2>
-        
-        <p>In logic, an <strong>argument</strong> is a systematic combination of two or more statements, classified into <span class="highlight-purple">premise(s)</span> and a <span class="highlight-purple">conclusion</span>.</p>
-
-        <div class="callout-box case-box">
-            <p><strong>⚠️ Logical Meaning vs. Everyday Fighting:</strong> An argument in logic is <em>not</em> a verbal fight or disagreement with someone. It requires a specific structural relationship between declarative statements.</p>
-        </div>
-
-        <h3>📖 Essential Components of an Argument</h3>
-        <ol>
-            <li>
-                <strong>Group of Statements:</strong> Must contain two or more statements. 
-                <br><em>Note:</em> A <strong>statement</strong> is a declarative sentence that has a truth-value (either <span class="highlight-green">True</span> or <span class="highlight-orange">False</span>).
+            <li>The word logic comes from Greek word <span class="highlight-purple">logos</span>, which means sentence, discourse, reason, truth and rule.</li>
+            <li>Logic in its broader meaning is the science, which evaluates arguments and the study of correct reasoning.</li>
+            <li>It could be also defined as the study of methods and principles of correct reasoning or the art of correct reasoning.</li>
+            <li>Logic can be defined in different ways:
+                <ul>
+                    <li>It is a science that evaluates arguments.</li>
+                    <li>It is the study of methods for evaluating whether the premises adequately support or provide a good evidence for the conclusions.</li>
+                    <li>It is a science that helps to develop the method and principles to evaluate the arguments of others and construct arguments of own.</li>
+                </ul>
             </li>
-            <li>
-                <strong>Division of Roles:</strong> Must contain at least one premise and <strong>one and only one conclusion</strong>.
+            <li>Logic is the attempt to codify/organize the rules of rational thought.</li>
+            <li>Logicians explore the structure of arguments that preserve truth or allow the optimal extraction of knowledge from evidence.</li>
+            <li>In logic, as an academic discipline, we study:
+                <ul>
+                    <li>Reasoning itself:</li>
+                    <li>Forms of argument,</li>
+                    <li>General principles and</li>
+                    <li>Particular errors,</li>
+                    <li>Methods of arguing.</li>
+                </ul>
             </li>
-        </ol>
+            <li>Logic can help us understand what is wrong or why someone is arguing in a particular way. Logic is the organized body of knowledge, or science that evaluates arguments.</li>
+            <li>The aim of logic is to develop a system of methods and principles that we may use as:
+                <ul>
+                    <li>criteria for evaluating the arguments of others and</li>
+                    <li>guides in constructing arguments of our own.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-        <div class="callout-box example-box">
-            <p><strong>📌 Statement Examples:</strong></p>
-            <ul>
-                <li>a. Haile G/Selase is an Ethiopian athlete. <span class="highlight-green">(True)</span></li>
-                <li>b. Ethiopia was colonized by Germany. <span class="highlight-orange">(False)</span></li>
-                <li>c. Ethiopia is a landlocked country. <span class="highlight-green">(True)</span></li>
-            </ul>
+    <div class="card">
+        <h2>💡 Benefit of Studying Logic</h2>
+        
+        <div class="quote-box">
+            “Logic sharpens and refines our natural gifts to think, reason and argue” (C. S. Layman)
         </div>
 
-        <div class="callout-box case-box">
-            <p><strong>❌ Non-Statements (Cannot form arguments):</strong></p>
-            <ul>
-                <li>❓ <em>Question:</em> "Would you close the window?"</li>
-                <li>💥 <em>Exclamation:</em> "Right on!"</li>
-                <li>📢 <em>Command:</em> "Give me your ID card now!"</li>
-                <li>💡 <em>Suggestion:</em> "I suggest that you read philosophy texts."</li>
-                <li>🤝 <em>Proposal:</em> "Let us study together."</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- SECTION 4: PREMISES & CONCLUSION -->
-    <section class="card">
-        <h2>🧩 Premises vs. Conclusion</h2>
-
-        <div class="callout-box info-box">
-            <p>🧱 <strong>Premise:</strong> Statement offering evidence, grounds, or reasons for accepting the claim.</p>
-            <p>🎯 <strong>Conclusion:</strong> Statement that is claimed to follow from the given evidence/premises.</p>
-        </div>
-
-        <h3>📌 Example Walkthrough</h3>
-        <div class="callout-box example-box">
-            <p><strong>Example 1:</strong></p>
-            <ul>
-                <li><strong>Premise 1:</strong> All Ethiopians are Africans.</li>
-                <li><strong>Premise 2:</strong> Tsionawit is Ethiopian.</li>
-                <li>👉 <strong>Conclusion:</strong> Therefore, Tsionawit is African. <span class="highlight-green">(Good Argument)</span></li>
-            </ul>
-        </div>
-
-        <div class="callout-box example-box">
-            <p><strong>Example 2:</strong></p>
-            <ul>
-                <li><strong>Premise 1:</strong> Some Africans are black.</li>
-                <li><strong>Premise 2:</strong> Zelalem is an African.</li>
-                <li>👉 <strong>Conclusion:</strong> Therefore, Zelalem is black. <span class="highlight-orange">(Bad Argument - Premises fail to guarantee conclusion)</span></li>
-            </ul>
-        </div>
-
-        <h3>🔍 Indicator Words Technique</h3>
-        <p>Indicators are clues that reveal premises and conclusions:</p>
-
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>🎯 Conclusion Indicators</th>
-                        <th>🧱 Premise Indicators</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Therefore, Thus, Hence, So, Consequently, It follows that, As a result, Entails that, We may infer</td>
-                        <td>Since, Because, For, Given that, As, Seeing that, Owing to, For the reason that, Inasmuch as</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="callout-box case-box">
-            <p><strong>⚠️ Special Case — "For this reason":</strong> Placed between premise and conclusion. The statement <em>before</em> it is the premise; the statement <em>after</em> it is the conclusion.</p>
-        </div>
-    </section>
-
-    <!-- SECTION 5: RECOGNIZING ARGUMENTS -->
-    <section class="card">
-        <h2>🔬 Recognizing Argumentative Passages</h2>
-
-        <p>For a passage to purports to prove something, two essential conditions must be fulfilled:</p>
-        <ol>
-            <li><strong>Factual Claim:</strong> At least one statement must claim to present evidence or reasons.</li>
-            <li><strong>Inferential Claim:</strong> There must be a claim that the evidence supports or implies something.</li>
-        </ol>
-
-        <h3>Types of Inferential Claims</h3>
         <ul>
-            <li><strong>Explicit Inferential Claim:</strong> Uses explicit indicator words (e.g., <em>"Gemechu is my biological father, <span class="highlight-purple">because</span> my mother told me so."</em>)</li>
-            <li><strong>Implicit Inferential Claim:</strong> Contains an inferential link without indicator words.</li>
+            <li>The study of logic is one of the best ways to refine one‘s natural ability to think, reason and argue.</li>
+            <li>The following are some of the major benefits that we can gain from the study of logic:
+                <ul>
+                    <li>It helps us to develop the skill needed to construct sound (good) and fallacy-free arguments of one‘s own and to evaluate the arguments of others</li>
+                    <li>It provides a fundamental defense against the prejudiced and uncivilized attitudes</li>
+                    <li>It helps us to distinguish good arguments from bad arguments</li>
+                    <li>It helps us to understand and identify the common logical errors in reasoning;</li>
+                    <li>It helps us to understand and identify the common confusions that often happen due to misuse of language</li>
+                    <li>It enables us to disclose ill-conceived policies in the political sphere, to be careful of disguises, and to distinguish the rational from irrational</li>
+                </ul>
+            </li>
+            <li>Thus, by studying logic, we able to increase our confidence when we criticize the arguments of others and when we advance arguments of our own.</li>
+            <li>Generally, the goal of logic is to produce individuals who are critical, rational and reasonable both in the sphere of public and private life.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>📖 What is an Argument?</h2>
+        
+        <ul>
+            <li>Argument is a systematic combination of two or more statements, which are classified as a premise/premises and conclusion.</li>
+            <li>From logical point of view, arguments is a group of statements(premise), which are claimed to provide support for, one of the other, the (conclusion).</li>
+            <li>But an argument has a very specific meaning in logic. It does not mean, a mere verbal fight, as one might have with one‘s parent. Because :-</li>
+            <li>First, an argument is a group of statements. That is, the first requirement for a passage to be qualified as an argument is to combine two or more statements.</li>
+            <li>A statement is a declarative sentence that has a truth-value of either true or false</li>
         </ul>
 
-        <h3>🚫 Non-Argumentative Passages</h3>
-        <ul>
-            <li><strong>Simple Non-inferential Passages:</strong> Warnings, advice, opinions, loosely associated statements, and reports.</li>
-            <li><strong>Expository Passages:</strong> Topic sentences developed by subsequent sentences (unless the goal is explicitly to prove the topic sentence).</li>
-            <li><strong>Illustrations:</strong> Examples showing how something is done or what it means.</li>
-            <li><strong>Explanations:</strong> Composed of an <em>Explanandum</em> (phenomenon to explain) and an <em>Explanans</em> (statement showing <strong>why</strong> it occurred). Moves backward from fact to cause.</li>
-            <li><strong>Conditional Statements:</strong> "If... then..." statements. Expresses necessary and sufficient conditions, but alone does not make an argument.</li>
-        </ul>
-    </section>
-
-    <!-- SECTION 6: DEDUCTIVE VS INDUCTIVE ARGUMENTS -->
-    <section class="card">
-        <h2>⚖️ Deductive vs. Inductive Arguments</h2>
-
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>📐 Deductive Argument</th>
-                        <th>📊 Inductive Argument</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Claimed Strength</strong></td>
-                        <td>Premises guarantee truth of conclusion with strict necessity.</td>
-                        <td>Premises offer probable support for conclusion.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Indicators</strong></td>
-                        <td><em>Certainly, necessarily, definitely, absolutely</em></td>
-                        <td><em>Probably, plausibly, likely, reasonable to infer</em></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Evaluation Criteria</strong></td>
-                        <td>Validity & Soundness</td>
-                        <td>Strength & Cogency</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="example-box">
+            <strong>Example:-</strong><br>
+            a. Haile G/Selase is an Ethiopian athlete.<br>
+            b. Ethiopia was colonized by Germany.<br>
+            c. Ethiopia is a landlocked country
         </div>
 
-        <h3>📐 Common Deductive Forms</h3>
         <ul>
-            <li><strong>Mathematics:</strong> Arguments based on arithmetic/geometry (excluding statistics).</li>
-            <li><strong>Definition:</strong> Conclusion follows solely from the definition of a term.</li>
-            <li><strong>Categorical Syllogism:</strong> Uses quantifiers like <em>All, No, Some</em>.</li>
-            <li><strong>Hypothetical Syllogism:</strong> Contains conditional ("If... then") statements.</li>
-            <li><strong>Disjunctive Syllogism:</strong> Contains an "Either... or" statement.</li>
+            <li>Statement (a) and (c) are true, because they describe things as they are and “Truth” is their truth-value. Whereas statement (b) is false because it asserts what is not, and “Falsity” its truth-value.</li>
+            <li>However, there are sentences that are not statements, and hence should be used to construct an argument. E.g.
+                <ul>
+                    <li>A. Would you close the window? (Question)</li>
+                    <li>B. Right on! (Exclamation)</li>
+                    <li>C. Give me your ID Card, Now! (Command)</li>
+                    <li>D. I suggest that you read philosophy texts. (Suggestion)</li>
+                    <li>E. Let us study together. (Proposal)</li>
+                </ul>
+            </li>
+            <li>Unlike statements, none of the above sentences can be either true or false. Hence, none of them can be classified as statement. As a result, none of them can make up an argument.</li>
+            <li>Second, the statements that make up an argument are divided into premise(s) and conclusion. That means, the mere fact that a passage contains two or more statements cannot guarantee the existence of an argument.</li>
+            <li>Hence, an argument is a group statement, which contains at least one premise and one and only one conclusion.</li>
+            <li>In other word an argument may contain more than one premise but only one conclusion.</li>
+            <li>Argument always attempts to justify a claim. Therefore:-
+                <ul>
+                    <li>The claim that the statement attempts to justify is known as a conclusion of an argument; and</li>
+                    <li>the statement or statements that supposedly justify the claim is/are known as the premises of the argument.</li>
+                </ul>
+            </li>
+            <li>An argument can be good or bad depending on the logical and real ability of the premise(s) to support the conclusion.</li>
+            <li>Arguments can be divided into deductive and inductive arguments.</li>
+            <li>A deductive argument is thought that the premises provide a guarantee of the truth of the conclusion.</li>
+            <li>In a deductive argument, the premises are intended to provide support for the conclusion that is so strong that, if the premises are true, it would be impossible for the conclusion to be false.</li>
+            <li>A deductive argument is an argument in which the premises are claimed to support the conclusion in such a way that it is impossible for the premises to be true and the conclusion false.</li>
+            <li>An inductive argument is a thought that the premises provide reasons supporting the probable truth of the conclusion.</li>
+            <li>In an inductive argument, the premises are intended only to be so strong that, if they are true, then it is unlikely that the conclusion is false.</li>
+            <li>An inductive argument is an argument in which the premises are claimed to support the conclusion in such a way that it is improbable that the premises be true and the conclusion false.</li>
+            <li>The difference between the two comes from the sort of relation the author or expositor of the argument takes there to be between the premises and the conclusion.</li>
+            <li>If the author of the argument believes that the truth of the premises definitely establishes the truth of the conclusion due to definition, logical entailment or mathematical necessity, then the argument is deductive.</li>
+            <li>If the author of the argument does not think that the truth of the premises definitely establishes the truth of the conclusion, but nonetheless believes that their truth provides good reason to believe the conclusion true, then the argument is inductive.</li>
+            <li>The deductiveness or inductiveness of an argument can be determined by:
+                <ul>
+                    <li>The particular indicator word it might use,</li>
+                    <li>The actual strength of the inferential relationship between its component statements</li>
+                    <li>Its argumentative form or structure.</li>
+                </ul>
+            </li>
+            <li>A deductive argument can be evaluated by its validity and soundness.</li>
+            <li>An inductive argument can be evaluated by its strength and cogency</li>
+            <li>Deductive argument can be valid if it is impossible for the premises to be true and the conclusion false.</li>
+            <li>Deductive argument can be invalid if it is possible for the premises to be true and the conclusion false</li>
+            <li>Inductive argument can be strong , if it is improbable for the premises to be true and the conclusion false.</li>
+            <li>Inductive argument can be weak, if it is probable for the premises to be true and the conclusion false.</li>
+            <li>A deductive argument can be sound if it is valid and true.</li>
+            <li>A deductive argument can be unsound if it fails to be valid and true.</li>
+            <li>An inductive argument can be cogent/convincing if it is strong and probably true,</li>
+            <li>An inductive argument can be uncogent if it fails to be strong and probably true.</li>
         </ul>
-
-        <h3>📊 Common Inductive Forms</h3>
-        <ul>
-            <li><strong>Prediction:</strong> Premises about past/present events leading to a future claim.</li>
-            <li><strong>Analogy:</strong> Argument based on similarity between two entities.</li>
-            <li><strong>Inductive Generalization:</strong> Claims about a population based on sample data.</li>
-            <li><strong>Argument from Authority:</strong> Conclusion based on expert testimony or witness statement.</li>
-            <li><strong>Argument from Signs:</strong> Conclusion inferred from signs, symbols, or cautionary marks.</li>
-            <li><strong>Causal Inference:</strong> Reasoning from cause to effect or effect to cause.</li>
-        </ul>
-
-        <div class="callout-box recap-box">
-            <p><strong>📌 Key Takeaway on Evaluation:</strong></p>
-            <ul>
-                <li><strong>Deductive:</strong> <span class="highlight-green">Sound</span> = Valid + All True Premises.</li>
-                <li><strong>Inductive:</strong> <span class="highlight-green">Cogent</span> = Strong + All True Premises.</li>
-            </ul>
-        </div>
-    </section>
-
-</main>
-
-<a href="#" class="scroll-top-btn" title="Scroll to top">↑</a>
-
-<footer class="footer">
-    ⚖️ Logic Chapter 2<br>
-    📚 Unique Academic — Complete Study Notes
-</footer>
-
-</body>
-</html>
+    </div>
