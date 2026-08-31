@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Chapter 5 | Complete Study Notes</title>
+
+    <style>
+        /* =================================================
+           UNIQUE ACADEMIC
+           LOGIC CHAPTER 5 COMPLETE STUDY NOTES
+        ================================================= */
+
+        /* =================================================
+           ROOT
+        ================================================= */
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        /* =================================================
+           RESET
+        ================================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* =================================================
+           BODY
+        ================================================= */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* =================================================
+           PAGE NAVIGATION
+        ================================================= */
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        /* =================================================
+           BACK BUTTON
+        ================================================= */
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        /* =================================================
+           HOME BUTTON
+        ================================================= */
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        /* =================================================
+           HEADER
+        ================================================= */
+        header {
+            background: linear-gradient(135deg, #6b21a8, #4c1d95);
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        /* =================================================
+           NOTES CARD
+        ================================================= */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        /* =================================================
+           HEADINGS
+        ================================================= */
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        /* =================================================
+           TEXT
+        ================================================= */
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* =================================================
+           HIGHLIGHT COLORS
+        ================================================= */
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        /* =================================================
+           EXAMPLE BOX
+        ================================================= */
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        /* =================================================
+           CASE BOX
+        ================================================= */
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        /* =================================================
+           DIAGRAM & LOGIC BLOCK
+        ================================================= */
+        .logic-block {
+            background-color: #f3f4f6;
+            border-left: 3px solid var(--primary-purple);
+            padding: 8px 12px;
+            font-family: monospace;
+            font-size: 0.88rem;
+            margin: 8px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* =================================================
+           TABLE
+        ================================================= */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+        /* =================================================
+           MOBILE RESPONSIVE
+        ================================================= */
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .page-navigation a {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+
+            header {
+                padding: 20px 14px;
+            }
+
+            header h1 {
+                font-size: 1.35rem;
+            }
+
+            .card {
+                padding: 16px 14px;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =================================================
+     PAGE NAVIGATION
+================================================= -->
+<div class="page-navigation">
+    <a href="logic-notes.html" class="back-btn">← Back</a>
+    <a href="index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<!-- =================================================
+     LOGIC CHAPTER HEADER
+================================================= -->
+<header>
+    <h1>⚖️ Logic Chapter 5</h1>
+    <p>Informal Fallacies & Logical Reasoning Notes</p>
+</header>
+
+<!-- =================================================
+     CHAPTER 5 NOTES CONTENT
+================================================= -->
+<section>
+
+    <!-- 1. Introduction to Fallacies -->
+    <div class="card">
+        <h2>✳️ 1. Introduction to Fallacies</h2>
+        <p>In ordinary language, a <span class="highlight-orange">fallacy</span> refers to a false or mistaken belief. However, in formal logic, a fallacy is a <span class="highlight-purple">defect or flaw in an argument</span> that makes it weak or invalid.</p>
+        
+        <div class="case-box">
+            <strong>❗️ Essential Concept:</strong> A fallacy is a reasoning error that often allows a bad argument to appear sound or persuasive on the surface.
+        </div>
+
+        <h3>🔍 Causes of Fallacies</h3>
+        <ul>
+            <li><strong>Deductive Failures:</strong> Unsoundness due to false premises or invalid structure.</li>
+            <li><strong>Inductive Failures:</strong> Uncogency due to weak premise-to-conclusion support.</li>
+            <li>Lack of relevant evidence or misapplication of concepts.</li>
+            <li>Ambiguous, vague, or misleading language.</li>
+        </ul>
+    </div>
+
+    <!-- 2. Formal vs Informal Fallacies -->
+    <div class="card">
+        <h2>🧩 2. Formal vs. Informal Fallacies</h2>
+        <p>Fallacies are broadly categorized based on where the error occurs—in the structural form or the conceptual content.</p>
+
+        <h3>1️⃣ Formal Fallacies</h3>
+        <p>Structural flaws found exclusively in <span class="highlight-blue">deductive arguments</span>. They can be identified purely by inspecting the logical form.</p>
+        <div class="logic-block">
+            All A are B.<br>
+            All C are B.<br>
+            Therefore, all A are C. (Invalid Form)
+        </div>
+
+        <h3>2️⃣ Informal Fallacies</h3>
+        <p>Logical errors that can only be detected by analyzing the actual <span class="highlight-orange">content and context</span> of the argument, rather than its structural pattern.</p>
+        <div class="example-box">
+            <strong>Example:</strong><br>
+            All factories are plants.<br>
+            All plants contain chlorophyll.<br>
+            Therefore, all factories contain chlorophyll.<br>
+            <em>(Error: Shift in word meaning/content of "plant").</em>
+        </div>
+    </div>
+
+    <!-- 3. Inductive Logic Strength -->
+    <div class="card">
+        <h2>⚖️ 3. Strength vs. Truth in Inductive Arguments</h2>
+        <p>Truth and strength operate independently. An argument with true premises can still be inductive-weak if the premises fail to provide sufficient probability for the conclusion.</p>
+        
+        <div class="case-box">
+            <strong>Key Rule:</strong> If all premises are true but the conclusion is probably false, the inductive argument is <strong>always weak</strong>.
+        </div>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Premise</th>
+                        <th>Conclusion</th>
+                        <th>Strong</th>
+                        <th>Weak</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>Probably True</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>Probably False</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 4. Classifications of Informal Fallacies -->
+    <div class="card">
+        <h2>📚 4. The 5 Classifications of Informal Fallacies</h2>
+        <p>Informal fallacies are traditionally categorized into five main groups:</p>
+        <ol>
+            <li><span class="highlight-purple">Fallacies of Relevance</span></li>
+            <li><span class="highlight-blue">Fallacies of Weak Induction</span></li>
+            <li><span class="highlight-green">Fallacies of Presumption</span></li>
+            <li><span class="highlight-orange">Fallacies of Ambiguity</span></li>
+            <li><span class="highlight-purple">Fallacies of Grammatical Analogy</span></li>
+        </ol>
+    </div>
+
+    <!-- 5. Fallacies of Relevance -->
+    <div class="card">
+        <h2>🎯 5. Fallacies of Relevance</h2>
+        <p>Occur when premises are logically irrelevant to the conclusion, relying instead on psychological or emotional appeal.</p>
+
+        <h3>1. Appeal to Force (Argumentum ad Baculum)</h3>
+        <p>Using explicit or implicit threats of harm to force acceptance of a conclusion.</p>
+        <div class="example-box">"Agree with the manager's proposal, or your employment will be terminated."</div>
+
+        <h3>2. Appeal to Pity (Argumentum ad Misericordiam)</h3>
+        <p>Evoking sympathy to substitute for logical evidence.</p>
+        <div class="example-box">"Grade my exam higher; I stayed up all night and missing this mark puts me on probation."</div>
+
+        <h3>3. Appeal to the People (Argumentum ad Populum)</h3>
+        <p>Exploiting the desire to be accepted, admired, or part of a group (Direct Mob, Bandwagon, Vanity, Snobbery).</p>
+
+        <h3>4. Argument Against the Person (Ad Hominem)</h3>
+        <ul>
+            <li><strong>Abusive:</strong> Direct verbal attack on character.</li>
+            <li><strong>Circumstantial:</strong> Discrediting based on personal circumstances/interests.</li>
+            <li><strong>Tu Quoque ("You Too"):</strong> Asserting the arguer is a hypocrite.</li>
+        </ul>
+
+        <h3>5. Fallacy of Accident</h3>
+        <p>Wrongly applying a general rule to a specific case with exceptional circumstances.</p>
+
+        <h3>6. Straw Man</h3>
+        <p>Distorting an opponent's argument to make it easy to attack, then claiming the original argument was refuted.</p>
+
+        <h3>7. Missing the Point (Ignoratio Elenchi)</h3>
+        <p>Premises support one specific conclusion, but a radically different/unrelated conclusion is drawn instead.</p>
+
+        <h3>8. Red Herring</h3>
+        <p>Changing the subject to a completely different issue to divert attention away from the original argument.</p>
+    </div>
+
+    <!-- 6. Fallacies of Weak Induction -->
+    <div class="card">
+        <h2>🔍 6. Fallacies of Weak Induction</h2>
+        <p>Occur when the connection between premises and conclusion is too weak to support the claim.</p>
+
+        <ul>
+            <li><strong>Appeal to Unqualified Authority:</strong> Citing an authority who lacks expertise, is biased, or is unreliable.</li>
+            <li><strong>Appeal to Ignorance:</strong> Claiming something is true because it hasn't been proven false (or vice versa).</li>
+            <li><strong>Hasty Generalization:</strong> Drawing a general conclusion from an unrepresentative or small sample.</li>
+            <li><strong>False Cause:</strong> Assuming a causal connection that does not exist (e.g., <em>Post Hoc Ergo Propter Hoc</em>).</li>
+            <li><strong>Slippery Slope:</strong> Claiming an initial step will inevitably lead to a chain reaction of catastrophic events without justification.</li>
+            <li><strong>Weak Analogy:</strong> Comparing two things that are not similar enough in relevant aspects.</li>
+        </ul>
+    </div>
+
+    <!-- 7. Fallacies of Presumption, Ambiguity & Analogy -->
+    <div class="card">
+        <h2>🎭 7. Presumption, Ambiguity & Grammatical Analogy</h2>
+
+        <h3>Presumption</h3>
+        <ul>
+            <li><strong>Begging the Question:</strong> Circular reasoning assuming the truth of the premise in the conclusion.</li>
+            <li><strong>Complex Question:</strong> Framing a question in a way that presumes a hidden assumption.</li>
+            <li><strong>False Dilemma:</strong> Presenting two options as the only choices when others exist.</li>
+            <li><strong>Suppressed Evidence:</strong> Deliberately leaving out key evidence that alters the conclusion.</li>
+        </ul>
+
+        <h3>Ambiguity & Grammatical Analogy</h3>
+        <ul>
+            <li><strong>Equivocation:</strong> Using a word with multiple meanings inconsistently across premises.</li>
+            <li><strong>Amphiboly:</strong> Misinterpretation caused by grammatical errors or ambiguous sentence structures.</li>
+            <li><strong>Composition:</strong> Wrongly transferring attributes from parts to the whole structure.</li>
+            <li><strong>Division:</strong> Wrongly transferring attributes from the whole structure to individual parts.</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+<footer class="footer">
+    ⚖️ Logic Chapter 5
+    <br>
+    📚 Unique Academic — Complete Study Notes
+</footer>
+
+</body>
+</html>
