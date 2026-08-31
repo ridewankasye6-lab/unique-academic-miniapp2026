@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Chapter 2 | The Geology of Ethiopia and the Horn</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.98rem;
+            color: var(--text-main);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-navigation">
+    <a href="geography-notes.html" class="back-btn">← Back</a>
+    <a href="index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<header>
+    <h1>🌍 Geography Chapter 2</h1>
+    <p>The Geology of Ethiopia and the Horn</p>
+</header>
+
+<section>
+    <!-- Section 2.1 -->
+    <div class="card">
+        <h2>🔍 2.1 Introduction to Geology</h2>
+        <p><strong>Geology</strong> is the scientific study of the <span class="highlight-purple">Earth</span>, focusing on its origin, materials composition, evolution, and the internal/external processes acting upon it.</p>
+        
+        <ul>
+            <li>It is concerned with events that took place in the remote past when no human witness existed and with features far beneath the Earth's surface where no one can see directly.</li>
+            <li>A great deal of geological understanding is obtained by <span class="highlight-blue">inference</span> from what can be observed and measured.</li>
+        </ul>
+
+        <div class="case-box">
+            📌 <strong>Methods of Geological Study:</strong>
+            <ul>
+                <li><strong>Direct observation:</strong> Studying rocks and landforms at the Earth's surface.</li>
+                <li><strong>Indirect methods:</strong>
+                    <ul>
+                        <li><span class="highlight-green">Geophysics:</span> Studying earthquake waves that penetrate deep beneath the surface.</li>
+                        <li><span class="highlight-green">Geochemistry:</span> Detailed analysis of chemical composition to determine rock origins.</li>
+                        <li><span class="highlight-green">Geochronology:</span> Determining the numerical ages of rocks using radioactive elements.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h3>🌏 Continental Drift Theory</h3>
+        <p>The Earth's landmasses were once assembled together in a single huge supercontinent called <strong>Pangaea</strong>. German Climatologist <strong>Alfred Wegener</strong> proposed the <span class="highlight-orange">Continental Drift Theory</span>.</p>
+        
+        <ul>
+            <li>Pangaea first split into two supercontinents:
+                <ul>
+                    <li><strong>Gondwanaland:</strong> The southern landmass (which included Africa).</li>
+                    <li><strong>Laurasia:</strong> The northern landmass.</li>
+                </ul>
+            </li>
+            <li>Later, these split into smaller fragments over millions of years and drifted to form the present arrangement of continents.</li>
+        </ul>
+
+        <div class="example-box">
+            💡 <strong>Wegener’s Principal Observations (Evidence):</strong>
+            <ol>
+                <li><strong>Fit of the Continents:</strong> Opposing coastlines fit together like puzzle pieces (best observed along continental shelf margins).</li>
+                <li><strong>Match of Mountain Belts & Rock Types:</strong> Reassembled mountain ranges in West Africa align with North America, Greenland, and Western Europe.</li>
+                <li><strong>Distribution of Fossils:</strong> Identical plant and animal fossil patterns link separated continents (e.g., <em>Mesosaurus</em> in Brazil and South Africa).</li>
+                <li><strong>Paleoclimates:</strong> 200-million-year-old glacial deposits match across India, Australia, South America, and Southern Africa.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Section 2.2 -->
+    <div class="card">
+        <h2>⚡ 2.2 Geologic Processes: Endogenic and Exogenic Forces</h2>
+        <p>Geology studies how Earth's materials, structures, processes, and organisms change over time. These processes are categorized into two major forces:</p>
+
+        <h3>🌋 1. Internal (Endogenic) Processes</h3>
+        <ul>
+            <li>Driven by internal energy inside the Earth.</li>
+            <li>Includes volcanic activity and tectonic processes:
+                <ul>
+                    <li><strong>Folding</strong> & <strong>Faulting</strong></li>
+                    <li><strong>Orogenesis:</strong> Mountain-building processes.</li>
+                    <li><strong>Epeirogenesis:</strong> Slow regional rising and sinking of landmasses.</li>
+                </ul>
+            </li>
+            <li><strong>Results:</strong> Build structural and volcanic landforms such as plateaus, rift valleys, block mountains, and volcanic peaks.</li>
+        </ul>
+
+        <h3>🌊 2. External (Exogenic) Processes</h3>
+        <ul>
+            <li>Geomorphic processes acting upon the Earth's surface.</li>
+            <li>Includes: <span class="highlight-blue">weathering</span>, <span class="highlight-blue">mass movement</span>, <span class="highlight-blue">erosion</span>, and <span class="highlight-blue">deposition</span>.</li>
+            <li><strong>Results:</strong> Modify, roughen, and lower down pre-existing volcanic and structural features.</li>
+        </ul>
+
+        <p><em>The present landmass of Ethiopia and the Horn is the combined effect of both endogenic and exogenic processes.</em></p>
+    </div>
+
+    <!-- Section 2.3 -->
+    <div class="card">
+        <h2>⏱️ 2.3 Geological Time Scale & Age Dating Techniques</h2>
+        <p>Earth formed approximately <strong>4.5 billion years ago</strong>, and the earliest life appeared around <strong>3.5 billion years ago</strong>.</p>
+        
+        <h3>⏳ Time Divisions</h3>
+        <p>Geologists divide geological time based on major geological events (e.g., mass extinctions) and evolutionary changes. Time units vary in duration:</p>
+        <ol>
+            <li><strong>Eon:</strong> The largest unit of geological time.</li>
+            <li><strong>Era:</strong> Subdivisions of eons (e.g., Paleozoic, Mesozoic, Cenozoic).</li>
+            <li><strong>Period:</strong> Subdivisions of eras.</li>
+            <li><strong>Epoch:</strong> The smallest unit of time, encompassing millions of years.</li>
+        </ol>
+
+        <div class="table-responsive">
+            📊 <strong>Table 2.1: The Geological Time Scale</strong>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Era</th>
+                        <th>Period</th>
+                        <th>Began (Mya)</th>
+                        <th>End (Mya)</th>
+                        <th>Major Events</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><strong>4. Cenozoic</strong><br><em>(Recent Life - Age of Mammals)</em></td>
+                        <td>Quaternary</td>
+                        <td>1.6</td>
+                        <td>Present</td>
+                        <td>Major glaciers in North America & Europe (1.5 Mya)</td>
+                    </tr>
+                    <tr>
+                        <td>Tertiary</td>
+                        <td>70</td>
+                        <td>1.6</td>
+                        <td>Rocky Mountains (65 Mya); individual continents take shape</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"><strong>3. Mesozoic</strong><br><em>(Middle Life - Age of Reptiles)</em></td>
+                        <td>Cretaceous</td>
+                        <td>146</td>
+                        <td>70</td>
+                        <td>Dinosaurs extinct (65 Mya); Western interior seaway (144–65 Mya)</td>
+                    </tr>
+                    <tr>
+                        <td>Jurassic</td>
+                        <td>208</td>
+                        <td>146</td>
+                        <td>Pangaea begins to rift apart</td>
+                    </tr>
+                    <tr>
+                        <td>Triassic</td>
+                        <td>225</td>
+                        <td>208</td>
+                        <td>First dinosaurs and mammals appear</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7"><strong>2. Paleozoic</strong><br><em>(Ancient Life - Age of Invertebrates)</em></td>
+                        <td>Permian</td>
+                        <td>290</td>
+                        <td>225</td>
+                        <td>Greatest mass extinction on Earth (245 Mya)</td>
+                    </tr>
+                    <tr>
+                        <td>Pennsylvanian</td>
+                        <td>322</td>
+                        <td>290</td>
+                        <td>Coal-forming forests flourish</td>
+                    </tr>
+                    <tr>
+                        <td>Mississippian</td>
+                        <td>362</td>
+                        <td>322</td>
+                        <td>Abundant amphibians and crinoids</td>
+                    </tr>
+                    <tr>
+                        <td>Devonian</td>
+                        <td>408</td>
+                        <td>362</td>
+                        <td>First land animals & first forests (408 Mya)</td>
+                    </tr>
+                    <tr>
+                        <td>Silurian</td>
+                        <td>439</td>
+                        <td>408</td>
+                        <td>Life invades land</td>
+                    </tr>
+                    <tr>
+                        <td>Ordovician</td>
+                        <td>510</td>
+                        <td>439</td>
+                        <td>First fish appeared</td>
+                    </tr>
+                    <tr>
+                        <td>Cambrian</td>
+                        <td>600</td>
+                        <td>510</td>
+                        <td>Great diversity of marine invertebrates</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>1. Precambrian</strong><br><em>(Pre-Life Era)</em></td>
+                        <td>Proterozoic</td>
+                        <td>2,500</td>
+                        <td>600</td>
+                        <td>Marine fossil invertebrates (600 Mya)</td>
+                    </tr>
+                    <tr>
+                        <td>Archean</td>
+                        <td>4,500</td>
+                        <td>2,500</td>
+                        <td>Earliest fossils recorded (3,500 Mya); earliest rock formation (4,000 Mya)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>🔬 Age Dating Techniques</h3>
+        <h4>A. Relative Dating</h4>
+        <ul>
+            <li>Provides comparative ages (which rock layer or fossil is older or younger) without exact numbers.</li>
+            <li><strong>Method 1 (Fossil Evidence):</strong> If a rock contains fossils unique to a specific time period, the rock formed during that period.</li>
+            <li><strong>Method 2 (Law of Superposition):</strong> In undisturbed sedimentary rock layers, younger layers lie on top of older ones.</li>
+        </ul>
+
+        <h4>B. Absolute Dating (Radiometric Techniques)</h4>
+        <ul>
+            <li>Uses radioactive decay of unstable elements (discovered in 1896) as natural clocks to give numerical ages.</li>
+            <li><strong>Half-life:</strong> The time required for half of the original radioactive isotope to decay.</li>
+            <li><strong>Carbon-14 Method:</strong> Measures $C^{14}$ decay in organic remains. Half-life is <span class="highlight-green">5,730 years</span>. Stops accumulating upon organism death.</li>
+            <li><strong>Potassium-Argon ($K-Ar$) Method:</strong> Used for dating potassium-bearing minerals (mica, feldspar, hornblende) in whole rock samples.
+                <br><em>Note:</em> Temperatures $>125^\circ\text{C}$ cause Argon leakage, resetting the clock to the latest heating event.</li>
+        </ul>
+    </div>
+
+    <!-- Section 2.4.1 -->
+    <div class="card">
+        <h2>🗿 2.4 Geologic Processes & Landforms of Ethiopia and the Horn</h2>
+        
+        <h3>2.4.1 The Precambrian Era (4.5 Billion – 600 Million Years Ago)</h3>
+        <ul>
+            <li>Covers <strong>5/6ths</strong> of Earth's total history.</li>
+            <li>Limited detailed knowledge due to extreme age and lack of well-preserved fossils.</li>
+            <li><strong>Major Event — Orogenesis:</strong> Intense mountain building accompanied by heavy folding and intrusive igneous activity. Created massive mountain ranges.</li>
+            <li><strong>Denudation:</strong> Long subsequent periods of erosion completely leveled these mountains into near-flat surfaces called <span class="highlight-purple">peneplains</span>.</li>
+            <li><strong>Metamorphism & Mineralization:</strong> Overlying weight, tectonic pressure, heat, and igneous intrusions transformed original sedimentary/igneous rocks into crystalline <strong>metamorphic rocks</strong>.</li>
+        </ul>
+
+        <div class="case-box">
+            📍 <strong>Distribution of Precambrian Basement Rocks in Ethiopia (25% surface cover):</strong>
+            <ul>
+                <li><strong>Western Part:</strong> Gambella, Benishangul-Gumuz (Metekel & Asossa), western Gojjam, western Wellega, Illuababora, Abay Gorge.</li>
+                <li><strong>Southern Part:</strong> Guji, Southern Omo, parts of southern Bale and Borena.</li>
+                <li><strong>Northern Part:</strong> Western lowlands, parts of northern and central Tigray.</li>
+                <li><strong>Eastern Part:</strong> Eastern Hararghe.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 2.4.2 -->
+    <div class="card">
+        <h2>🍂 2.4.2 The Paleozoic Era (600 – 225 Million Years Ago)</h2>
+        <ul>
+            <li>Lasted about <strong>375 million years</strong>.</li>
+            <li><strong>Dominant Process — Prolonged Denudation:</strong> Intense erosion worn down the Precambrian mountain ranges into peneplained surfaces with isolated residual hills (<span class="highlight-orange">inselbergs</span>).</li>
+            <li>Eroded materials were carried southward (forming continental deposits in Africa) and eastward (forming marine deposits).</li>
+            <li><strong>Rock Presence:</strong> Due to continuous erosion rather than deposition within Ethiopia, rocks of Paleozoic origin are extremely rare in the country.</li>
+        </ul>
+    </div>
+
+    <!-- Section 2.4.3 -->
+    <div class="card">
+        <h2>🌊 2.4.3 The Mesozoic Era (225 – 70 Million Years Ago)</h2>
+        <p>Lasted about <strong>155 million years</strong>. It was characterized by alternating slow sinking and rising of the landmass (<span class="highlight-purple">epeirogenesis</span>) and tilting of the Horn of Africa landmass.</p>
+
+        <h3>1. Marine Transgression (Sea Invasion)</h3>
+        <ul>
+            <li>Began in late Triassic and continued through the Jurassic period.</li>
+            <li>Land tilted eastward: lowered in the southeast and raised in the northwest.</li>
+            <li>The shallow sea invaded from the Indian Ocean through Somalia and Ogaden, spreading northwestward toward Tigray.</li>
+            <li><strong>Deposition Sequence:</strong>
+                <ol>
+                    <li><span class="highlight-blue">Adigrat Sandstone:</span> Sands laid over the basement Precambrian rocks during initial shallow sea spreading.</li>
+                    <li><span class="highlight-blue">Hintalo Limestone:</span> As sea depth increased, mud, shale, gypsum, and abundant marine organic remains (calcium carbonate) accumulated.</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3>2. Marine Regression (Sea Retreat)</h3>
+        <ul>
+            <li>Began in Upper Jurassic and continued through the Cretaceous period due to slow uplifting of the land.</li>
+            <li>The sea receded back toward the southeast.</li>
+            <li><strong>Deposition Sequence:</strong> Gypsum, shale, clay, and finally sands were laid over the Hintalo limestone.
+                <ul>
+                    <li><span class="highlight-blue">Upper Sandstone:</span> The top sedimentary layer deposited during the sea's retreat.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="case-box">
+            📌 <strong>Key Characteristics of Mesozoic Sedimentary Rocks:</strong>
+            <ul>
+                <li>Covers <strong>25%</strong> of Ethiopia’s land surface.</li>
+                <li><strong>Spatial Variation:</strong>
+                    <ul>
+                        <li><em>Adigrat Sandstone:</em> Older and thicker in the SE; younger and thinner toward the NW.</li>
+                        <li><em>Upper Sandstone:</em> Thicker and younger in the SE; older and thinner toward the NW.</li>
+                    </ul>
+                </li>
+                <li><strong>Exposures:</strong> Surface exposures occur in SE lowlands (Ogaden), central Tigray, and deep river gorges (Abay, Wabishebelle).</li>
+                <li><strong>Economic Value:</strong> Greatest potential for oil, natural gas, and cement raw materials.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 2.4.4 -->
+    <div class="card">
+        <h2>🌋 2.4.4 The Cenozoic Era (70 Million Years Ago – Present)</h2>
+        <p>The most recent era, responsible for shaping the modern topography of Ethiopia through major tectonic and volcanic activity.</p>
+
+        <h3>🔥 A. Uplifting & Lava Flood Outpouring</h3>
+        <ul>
+            <li>Massive epeirogenic uplift occurred in the Paleocene–Oligocene epochs, reaching peak heights of up to <strong>2,000 meters</strong> above sea level during the Eocene epoch (greatest uplift in central Ethiopia).</li>
+            <li>Crustal fracturing released vast quantities of basaltic lava flood (<span class="highlight-orange">Trap Series / Trappean Lava</span>).</li>
+            <li>Lava covered the Mesozoic sedimentary layers, forming the high Ethiopian plateau floor ($>1,000\text{m amsl}$) and huge volcanic mountains.</li>
+        </ul>
+
+        <h3>⚡ B. Formation of the Ethiopian Rift Valley</h3>
+        <ul>
+            <li>Driven by plate tectonics (tensional forces causing parallel faulting along an up-arched swell).</li>
+            <li>Major faulting started in late Oligocene-Miocene; main African Rift system created during the <strong>Miocene Epoch</strong>.</li>
+            <li>Depression of the Afar block allowed Red Sea waters to enter (Pliocene). Later Pleistocene volcanic barriers isolated it, evaporating water to form thick saline deposits (Kobar Sink).</li>
+        </ul>
+
+        <div class="example-box">
+            📏 <strong>Spatial Extent & Features of the Rift Valley:</strong>
+            <ul>
+                <li>Total length of Great East African Rift: ~<strong>7,200 km</strong> (5,600 km in Africa; 1,700 km in Eritrea & Ethiopia).</li>
+                <li>Widest section: <strong>Afar Triangle</strong> (200–300 km wide); lowest point: <strong>Kobar Sink</strong> (125 m below sea level).</li>
+                <li><strong>Physiographic Effects:</strong>
+                    <ol>
+                        <li>Divides Ethiopian Plateau into Northwestern and Southeastern Highlands.</li>
+                        <li>Separates Arabian Peninsula from Africa.</li>
+                        <li>Forms Red Sea, Gulf of Aden, and Dead Sea troughs.</li>
+                        <li>Creates internal lacustrine basins (Rift Valley lakes).</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <div class="diagram-container">
+            🖼️
+            <img src="Figure_2_2_Rift_Valley.png" alt="Figure 2.2: The Ethiopian and East African Rift Valley Systems">
+            <p><em>Figure 2.2: The Ethiopian and East African Rift Valley Systems</em></p>
+        </div>
+
+        <h3>💥 C. Quaternary Volcanism & Aden Series</h3>
+        <ul>
+            <li>Recent post-rift volcanic activity during Pliocene–Pleistocene epochs, concentrated on the Rift Valley floor and south of Lake Tana ($>3,000\text{ km}^2$).</li>
+            <li>Known as <span class="highlight-orange">Aden Volcanics</span>: Freshly preserved landforms including:
+                <ul>
+                    <li>Active volcanoes: <strong>Erta Ale</strong> (most active in Ethiopia), Dubi, Afrera.</li>
+                    <li>Semi-dormant volcanic cones: Fantale, Boseti-Gouda (Adama), Aletu (Ziway), Chebbi (Hawassa).</li>
+                    <li>Thermal springs, fumaroles, lava fields, and ridges.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>🌧️ D. Quaternary Depositions</h3>
+        <p>Alternating glacial/interglacial periods caused "Pluvial Rains" in Africa, generating high surface runoff and massive lakes.</p>
+
+        <div class="case-box">
+            📦 <strong>Types of Quaternary Deposits:</strong>
+            <ul>
+                <li><strong>Lacustrine deposits:</strong> Former enlarged lake beds (e.g., merged Ziway-Langano-Shalla, Hawassa-Shallo, Chamo-Abaya).</li>
+                <li><strong>Fluvial deposits:</strong> Alluvial sediments along river banks and floodplains.</li>
+                <li><strong>Glacio-fluvial deposits:</strong> Glacial features on high peaks (Bale and Mount Kaka).</li>
+                <li><strong>Aeolian deposits:</strong> Windblown sand/dust deposits in dry lowlands.</li>
+                <li><strong>Coastal/Marine deposits:</strong> Evaporites and sediments along sea-invaded areas.</li>
+            </ul>
+            <p><em>Cenozoic rocks cover 50% of Ethiopia's total surface area.</em></p>
+        </div>
+    </div>
+
+    <!-- Section 2.5 -->
+    <div class="card">
+        <h2>💎 2.5 Rock and Mineral Resources of Ethiopia</h2>
+
+        <h3>⛏️ 2.5.1 Primary Minerals & Deposits</h3>
+        <ul>
+            <li><strong>Gold ($\text{Au}$):</strong> Mined for over 2,000 years.
+                <ul>
+                    <li><em>Primary sources:</em> Adola (Lega-dembi, Sakaro, Dermi-dama), Benishangul-Gumuz (Metekel).</li>
+                    <li><em>Placer/Secondary deposits:</em> Murmur, Shakiso, Awata, Dawa, Genale, Akobo, Sherkole, Didessa, Birbir.</li>
+                </ul>
+            </li>
+            <li><strong>Platinum ($\text{Pt}$):</strong> Active mining centered at <strong>Yubdo</strong> (Wellega). Occurrences in Delatti and Tullu Mountain.</li>
+            <li><strong>Tantalum & Niobium:</strong> World-class ore reserve ($>17,000\text{ metric tons}$) at <strong>Kenticha</strong> in Adola.</li>
+            <li><strong>Coal & Lignite:</strong> Found in sedimentary layers within Trap lava. Locations: Nedjo, Chilga (Gonder), Beressa Valley, Muger, Sululta, Dessie.</li>
+            <li><strong>Gemstones:</strong> Amethyst, emerald, garnet, opal, sapphire, tourmaline. High quality Opal discovered in Wadla & Dalanta (North Wello).</li>
+            <li><strong>Potash & Gypsum:</strong> Enormous reserves of potash in Dallol Depression (Afar). Massive gypsum deposits in Red Sea coast, Danakil, Ogaden, and Abay gorge.</li>
+            <li><strong>Clay & Marble:</strong> Ceramic clay in Ambo, Adola, and Hawassa (Tabor ceramics). Marble quarried in Tigray (Mekelle/Adwa), West Hararghe (Galetti), and Benishangul-Gumuz (Dabus River).</li>
+            <li><strong>Construction Stones:</strong> Basalt, granite, scoria, sandstone, and limestone for road surfacing and cement factories (Muger, Dire Dawa, Dejen, Messebo).</li>
+        </ul>
+
+        <div class="diagram-container">
+            🗺️
+            <img src="Figure_2_1_Geological_Map.png" alt="Figure 2.1: Geological Map of Ethiopia">
+            <p><em>Figure 2.1: Geological Map of Ethiopia (Source: CSA Shapefile, 2012)</em></p>
+        </div>
+
+        <h3>🧱 2.5.2 Major Greenstone Belts of Ethiopia</h3>
+        <ol>
+            <li><strong>Western & South-Western Greenstone Belt:</strong> Contains gold (Tulu-Kape, Oda-Godere, Akobo), Yubdo Platinum, base metals (Azali Akendeyu), Molybdenite, Bikilal iron deposits, and Benishangul marble.</li>
+            <li><strong>Southern Greenstone Belt (Adola Belt):</strong> Primary gold (Lega-dembi, Sakaro), Kenticha Columbite-Tantalite, and Adola nickel deposits.</li>
+            <li><strong>Northern Greenstone Belt (Tigray):</strong> Primary gold (Terakemti, Adi-Zeresenay) and base metals (Terer, Tsehafiemba).</li>
+        </ol>
+    </div>
+</section>
+
+<footer class="footer">
+    🌍 Geography Chapter 2 <br>
+    📚 Unique Academic — Complete Study Notes
+</footer>
+
+</body>
+</html>
