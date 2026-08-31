@@ -11,35 +11,76 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Logic Chapter 2 | Basic Concepts of Logic</title>
+    <title>⚖️ Logic | Full Notes</title>
 
 
     <style>
 
+        /* =================================================
+           UNIQUE ACADEMIC
+           LOGIC FULL NOTES HOME
+        ================================================= */
+
+
+        /* =================================================
+           ROOT
+        ================================================= */
+
         :root {
+
             --bg-color: #f3f4f6;
+
             --card-bg: #ffffff;
+
             --text-main: #1f2937;
+
             --text-muted: #4b5563;
-            --primary-purple: #6b21a8;
-            --accent-green: #047857;
-            --accent-orange: #c2410c;
-            --accent-blue: #1d4ed8;
-            --border-color: #e5e7eb;
+
+
+            --primary-purple: #64229b;
+
+            --primary-dark: #4c1d7a;
+
+
+            --border-color: #ded7e6;
+
 
             --shadow:
-                0 4px 6px -1px rgba(0, 0, 0, 0.05),
-                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+                0 4px 12px rgba(0, 0, 0, 0.08),
+                0 2px 5px rgba(0, 0, 0, 0.04);
+
         }
+
+
+
+        /* =================================================
+           RESET
+        ================================================= */
 
         * {
+
             box-sizing: border-box;
+
             margin: 0;
+
             padding: 0;
+
         }
 
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+
         body {
+
             font-family:
+
                 -apple-system,
                 BlinkMacSystemFont,
                 "Segoe UI",
@@ -48,202 +89,677 @@
                 Arial,
                 sans-serif;
 
-            background-color: var(--bg-color);
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f5f6 0%,
+                    #eef0f4 100%
+                );
+
+
             color: var(--text-main);
-            line-height: 1.6;
 
-            padding: 12px;
-            max-width: 680px;
+            line-height: 1.5;
+
+            padding: 18px;
+
+            max-width: 700px;
+
             margin: 0 auto;
+
+            min-height: 100vh;
+
         }
 
-        .page-navigation {
+
+
+        /* =================================================
+           TOP NAVIGATION
+        ================================================= */
+
+        .top-navigation {
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
-            margin-bottom: 16px;
-            gap: 10px;
+
+            gap: 16px;
+
+            margin-bottom: 34px;
+
         }
 
-        .page-navigation a {
+
+
+        .nav-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
             text-decoration: none;
-            border-radius: 12px;
-            padding: 10px 16px;
-            font-size: 15px;
-            font-weight: 700;
-            box-shadow: var(--shadow);
-            transition: 0.2s ease;
+
+            min-height: 58px;
+
+            padding: 0 26px;
+
+            border-radius: 20px;
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+
         }
 
-        .page-navigation a:active {
+
+
+        .nav-button:active {
+
             transform: scale(0.96);
+
         }
 
-        .back-btn {
-            background-color: var(--primary-purple);
-            color: white;
-        }
 
-        .home-btn {
-            background-color: white;
-            color: var(--primary-purple);
-            border: 1px solid var(--border-color);
-        }
 
-        header {
+        /* =================================================
+           BACK BUTTON
+        ================================================= */
+
+        .back-button {
+
             background:
                 linear-gradient(
                     135deg,
-                    #6b21a8,
-                    #4c1d95
+                    #6f2aa8,
+                    #54208a
                 );
 
             color: white;
-            padding: 20px 16px;
-            border-radius: 16px;
-            margin-bottom: 16px;
-            text-align: center;
+
+            box-shadow:
+                0 5px 12px rgba(91, 32, 145, 0.22);
+
+        }
+
+
+
+        /* =================================================
+           HOME BUTTON
+        ================================================= */
+
+        .home-button {
+
+            background: white;
+
+            color: var(--primary-purple);
+
+            border: 1px solid #dedede;
+
             box-shadow: var(--shadow);
+
         }
 
-        header h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
 
-        header p {
-            font-size: 0.9rem;
-            opacity: 0.9;
+
+        /* =================================================
+           PAGE HEADER
+        ================================================= */
+
+        .page-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6a2aa0 0%,
+                    #4b1d78 100%
+                );
+
             color: white;
-        }
 
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 18px 16px;
-            margin-bottom: 16px;
-            border: 1px solid var(--border-color);
-            box-shadow: var(--shadow);
-        }
+            padding: 52px 20px;
 
-        h2 {
-            font-size: 1.2rem;
-            color: var(--primary-purple);
-            margin-bottom: 12px;
-            border-bottom: 2px solid #f3e8ff;
-            padding-bottom: 6px;
-        }
+            border-radius: 30px;
 
-        h3 {
-            font-size: 1.05rem;
-            color: var(--text-main);
-            margin: 12px 0 8px 0;
-        }
+            margin-bottom: 36px;
 
-        p {
-            margin-bottom: 10px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        ul,
-        ol {
-            margin-bottom: 12px;
-            padding-left: 20px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        .highlight-green {
-            color: var(--accent-green);
-            font-weight: 600;
-        }
-
-        .highlight-orange {
-            color: var(--accent-orange);
-            font-weight: 600;
-        }
-
-        .highlight-blue {
-            color: var(--accent-blue);
-            font-weight: 600;
-        }
-
-        .highlight-purple {
-            color: var(--primary-purple);
-            font-weight: 600;
-        }
-
-        .example-box {
-            background-color: #f9fafb;
-            border-left: 4px solid #f59e0b;
-            padding: 10px 12px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
-            font-size: 0.9rem;
-            color: var(--text-main);
-        }
-
-        .case-box {
-            background-color: #eff6ff;
-            border-left: 4px solid var(--accent-blue);
-            padding: 10px 12px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
-            font-size: 0.9rem;
-        }
-
-        .diagram-container {
-            width: 100%;
             text-align: center;
-            margin: 14px 0;
+
+            box-shadow:
+                0 8px 18px rgba(78, 27, 126, 0.18);
+
         }
 
-        .diagram-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
+
+
+        .page-header h1 {
+
+            font-size: 2.1rem;
+
+            font-weight: 800;
+
+            margin-bottom: 14px;
+
+            letter-spacing: -0.5px;
+
+        }
+
+
+
+        .page-header p {
+
+            color: rgba(255, 255, 255, 0.88);
+
+            font-size: 1.15rem;
+
+            font-weight: 500;
+
+        }
+
+
+
+        /* =================================================
+           NOTES HOME
+        ================================================= */
+
+        .notes-home {
+
+            background: var(--card-bg);
+
+            border-radius: 28px;
+
+            padding: 32px;
+
+            margin-bottom: 30px;
+
             border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+
         }
 
-        .table-responsive {
-            overflow-x: auto;
-            margin: 12px 0;
-        }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.85rem;
-            text-align: left;
-        }
 
-        th,
-        td {
-            padding: 8px 10px;
-            border: 1px solid var(--border-color);
-        }
+        /* =================================================
+           NOTES TITLE
+        ================================================= */
 
-        th {
-            background-color: #f3e8ff;
+        .notes-home-title {
+
             color: var(--primary-purple);
-            font-weight: 600;
+
+            font-size: 1.7rem;
+
+            font-weight: 800;
+
+            margin-bottom: 12px;
+
+            line-height: 1.3;
+
         }
 
-        tr:nth-child(even) {
-            background-color: #f9fafb;
+
+
+        .notes-home-subtitle {
+
+            color: var(--text-muted);
+
+            font-size: 1.05rem;
+
+            margin-bottom: 32px;
+
+            line-height: 1.6;
+
         }
+
+
+
+        /* =================================================
+           CHAPTER LIST
+        ================================================= */
+
+        .chapter-list {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+        }
+
+
+
+        /* =================================================
+           CHAPTER CARD
+        ================================================= */
+
+        .chapter-card {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 22px;
+
+            text-decoration: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7f4fa,
+                    #f1eef5
+                );
+
+            border: 1px solid #dccfea;
+
+            border-radius: 25px;
+
+            padding: 24px;
+
+            color: var(--text-main);
+
+            min-height: 148px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.04);
+
+        }
+
+
+
+        .chapter-card:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 8px 18px rgba(0, 0, 0, 0.09);
+
+            border-color: #b88bd7;
+
+        }
+
+
+
+        .chapter-card:active {
+
+            transform: scale(0.98);
+
+        }
+
+
+
+        /* =================================================
+           CHAPTER ICON BOX
+        ================================================= */
+
+        .chapter-icon {
+
+            width: 78px;
+
+            height: 78px;
+
+            min-width: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: white;
+
+            border-radius: 22px;
+
+            font-size: 38px;
+
+            border: 1px solid #ded4e6;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.05);
+
+        }
+
+
+
+        /* =================================================
+           CHAPTER INFORMATION
+        ================================================= */
+
+        .chapter-info {
+
+            flex: 1;
+
+            min-width: 0;
+
+        }
+
+
+
+        .chapter-number {
+
+            display: block;
+
+            color: var(--primary-purple);
+
+            font-size: 1rem;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.4px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        .chapter-title {
+
+            display: block;
+
+            color: #303947;
+
+            font-size: 1.25rem;
+
+            font-weight: 800;
+
+            line-height: 1.45;
+
+        }
+
+
+
+        .chapter-description {
+
+            display: block;
+
+            color: #59616d;
+
+            font-size: 1rem;
+
+            margin-top: 10px;
+
+        }
+
+
+
+        /* =================================================
+           ARROW
+        ================================================= */
+
+        .chapter-arrow {
+
+            color: var(--primary-purple);
+
+            font-size: 2.6rem;
+
+            font-weight: 900;
+
+            line-height: 1;
+
+            padding-left: 4px;
+
+        }
+
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
 
         .footer {
+
             text-align: center;
-            padding: 25px 10px;
+
+            padding: 24px 10px 35px;
+
             color: var(--text-muted);
-            font-size: 0.82rem;
+
+            font-size: 0.9rem;
+
+            line-height: 1.7;
+
+        }
+
+
+
+        /* =================================================
+           MOBILE RESPONSIVE
+        ================================================= */
+
+        @media (max-width: 480px) {
+
+
+            body {
+
+                padding: 18px;
+
+            }
+
+
+            .top-navigation {
+
+                margin-bottom: 34px;
+
+            }
+
+
+            .nav-button {
+
+                min-height: 56px;
+
+                padding: 0 20px;
+
+                border-radius: 18px;
+
+                font-size: 1rem;
+
+            }
+
+
+            .page-header {
+
+                padding: 48px 18px;
+
+                border-radius: 28px;
+
+                margin-bottom: 36px;
+
+            }
+
+
+            .page-header h1 {
+
+                font-size: 2rem;
+
+            }
+
+
+            .page-header p {
+
+                font-size: 1.05rem;
+
+            }
+
+
+            .notes-home {
+
+                padding: 28px 16px;
+
+                border-radius: 26px;
+
+            }
+
+
+            .notes-home-title {
+
+                font-size: 1.5rem;
+
+            }
+
+
+            .notes-home-subtitle {
+
+                font-size: 1rem;
+
+                margin-bottom: 28px;
+
+            }
+
+
+            .chapter-list {
+
+                gap: 20px;
+
+            }
+
+
+            .chapter-card {
+
+                gap: 16px;
+
+                padding: 22px 18px;
+
+                min-height: 142px;
+
+                border-radius: 24px;
+
+            }
+
+
+            .chapter-icon {
+
+                width: 74px;
+
+                height: 74px;
+
+                min-width: 74px;
+
+                border-radius: 21px;
+
+                font-size: 34px;
+
+            }
+
+
+            .chapter-number {
+
+                font-size: 0.95rem;
+
+                margin-bottom: 8px;
+
+            }
+
+
+            .chapter-title {
+
+                font-size: 1.12rem;
+
+                line-height: 1.45;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.96rem;
+
+                margin-top: 8px;
+
+            }
+
+
+            .chapter-arrow {
+
+                font-size: 2.4rem;
+
+            }
+
+        }
+
+
+
+        /* =================================================
+           SMALL MOBILE
+        ================================================= */
+
+        @media (max-width: 380px) {
+
+
+            body {
+
+                padding: 12px;
+
+            }
+
+
+            .nav-button {
+
+                padding: 0 16px;
+
+                font-size: 0.95rem;
+
+            }
+
+
+            .chapter-card {
+
+                gap: 12px;
+
+                padding: 18px 14px;
+
+            }
+
+
+            .chapter-icon {
+
+                width: 62px;
+
+                height: 62px;
+
+                min-width: 62px;
+
+                font-size: 29px;
+
+            }
+
+
+            .chapter-title {
+
+                font-size: 1rem;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.88rem;
+
+            }
+
+
+            .chapter-arrow {
+
+                font-size: 2rem;
+
+            }
+
         }
 
     </style>
@@ -254,74 +770,248 @@
 <body>
 
 
-<div class="page-navigation">
+
+<!-- =================================================
+     TOP NAVIGATION
+================================================= -->
+
+<div class="top-navigation">
+
+
+    <!-- BACK TO LOGIC PAGE -->
 
     <a
-        href="logic-notes.html"
-        class="back-btn"
+        href="logic.html"
+        class="nav-button back-button"
     >
         ← Back
     </a>
 
 
+
+    <!-- BACK TO HOME -->
+
     <a
         href="index.html"
-        class="home-btn"
+        class="nav-button home-button"
     >
         🏠 Home
     </a>
+
 
 </div>
 
 
 
-<header>
+<!-- =================================================
+     LOGIC HEADER
+================================================= -->
+
+<header class="page-header">
 
     <h1>
-        ⚖️ Logic Chapter 2
+        ⚖️ Logic
     </h1>
 
     <p>
-        Basic Concepts of Logic
+        📚 Complete Full Notes
     </p>
 
 </header>
 
 
 
-<!-- =============================================
-     PUT YOUR REAL CHAPTER 2 NOTES BELOW
-============================================= -->
+<!-- =================================================
+     FULL NOTES HOME
+================================================= -->
 
-<section>
+<main class="notes-home">
 
-    <div class="card">
 
-        <h2>
-            ⚖️ Chapter 2 Notes
-        </h2>
+    <div class="notes-home-title">
 
-        <p>
-            Put your real Chapter 2 notes here.
-        </p>
+        📖 Logic Full Notes
 
     </div>
 
-</section>
 
 
-<!-- COPY MORE .card SECTIONS BELOW -->
+    <div class="notes-home-subtitle">
 
+        Select a chapter to study its complete notes.
+
+    </div>
+
+
+
+    <!-- =================================================
+         CHAPTER LIST
+    ================================================= -->
+
+    <div class="chapter-list">
+
+
+
+        <!-- CHAPTER 1 -->
+
+        <a
+            href="logic-notes-chapter1.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📗
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 1
+                </span>
+
+                <span class="chapter-title">
+                    Chapter 1 Logic Notes
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- CHAPTER 2 -->
+
+        <a
+            href="logic-notes-chapter2.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📘
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 2
+                </span>
+
+                <span class="chapter-title">
+                    Chapter 2 Logic Notes
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- CHAPTER 3 -->
+
+        <a
+            href="logic-notes-chapter3.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📙
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 3
+                </span>
+
+                <span class="chapter-title">
+                    Chapter 3 Logic Notes
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- CHAPTER 4 -->
+
+        <a
+            href="logic-notes-chapter4.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📕
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 4
+                </span>
+
+                <span class="chapter-title">
+                    Chapter 4 Logic Notes
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
 
 <footer class="footer">
 
-    ⚖️ Logic Chapter 2
+    ⚖️ Logic
 
     <br>
 
-    📚 Unique Academic — Complete Study Notes
+    📚 Unique Academic — Complete Full Notes
 
 </footer>
+
 
 
 </body>
