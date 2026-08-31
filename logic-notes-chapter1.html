@@ -1,1 +1,660 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Chapter 1 | Introducing Philosophy</title>
+
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --primary-purple: #6d28d9;
+            --primary-light: #f3e8ff;
+            --accent-green: #059669;
+            --accent-orange: #ea580c;
+            --accent-blue: #0284c7;
+            --border-color: #e2e8f0;
+            --border-highlight: #cbd5e1;
+            
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Page Navigation */
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 8px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.97);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        /* Top Header Area */
+        header {
+            background: linear-gradient(135deg, #6d28d9, #4c1d95);
+            color: white;
+            padding: 18px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        header h1 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin-bottom: 2px;
+            letter-spacing: -0.01em;
+        }
+
+        header p {
+            font-size: 0.88rem;
+            opacity: 0.9;
+            color: #f1f5f9;
+        }
+
+        /* Card System */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Header Banners inside Cards */
+        .section-header-badge {
+            background-color: #f1f5f9;
+            color: #334155;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .section-header-badge.blue {
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .section-header-badge.purple {
+            background-color: var(--primary-light);
+            color: var(--primary-purple);
+        }
+
+        /* Headings */
+        h2 {
+            font-size: 1.15rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: var(--text-main);
+            margin: 14px 0 8px 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Content Styling */
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.93rem;
+            line-height: 1.55;
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 18px;
+            color: var(--text-muted);
+            font-size: 0.93rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        /* Color Highlight Classes */
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 700;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 700;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 700;
+        }
+
+        /* Callout Containers */
+        .quote-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #cbd5e1;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-style: italic;
+            color: #334155;
+            font-size: 0.9rem;
+        }
+
+        .example-box {
+            background-color: #fffbebf5;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Number Badge List (Matches App Screenshot 1000008009) */
+        .numbered-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 14px 0;
+        }
+
+        .numbered-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .number-badge {
+            background-color: #1e3a8a;
+            color: white;
+            font-weight: 700;
+            font-size: 0.85rem;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .number-content {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .number-title {
+            font-weight: 700;
+            color: #1e3a8a;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Responsive Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-light);
+            color: var(--primary-purple);
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-navigation">
+    <a href="logic-notes.html" class="back-btn">← Back</a>
+    <a href="index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<header>
+    <h1>⚖️ CHAPTER ONE</h1>
+    <p>INTRODUCING PHILOSOPHY</p>
+</header>
+
+<main>
+    <!-- SECTION 1: WHAT IS PHILOSOPHY -->
+    <section class="card">
+        <h2>📚 CHAPTER ONE: INTRODUCING PHILOSOPHY</h2>
+        
+        <div class="section-header-badge blue">
+            🔍 What Is Philosophy?
+        </div>
+
+        <p>Philosophy is the study of general and fundamental problems concerning matters such as:</p>
+        
+        <ul>
+            <li>🌌 <span class="highlight-green">Existence</span> (What does it mean to "be"? Do we really exist?)</li>
+            <li>🔍 <span class="highlight-orange">Knowledge</span> (How do we know what we know?)</li>
+            <li>🔮 <span class="highlight-green">Truth</span> (What is true? How do we prove something is true?)</li>
+            <li>🎨 <span class="highlight-orange">Beauty</span> (What makes something beautiful?)</li>
+            <li>⚔️ <span class="highlight-green">Law and Justice</span> (What is fair or just?)</li>
+            <li>🗣️ <span class="highlight-green">Mind and Language</span> (How do we think and communicate?)</li>
+        </ul>
+
+        <p>Logic is a branch of philosophy which is treated simultaneously as a field of study and as an instrument:</p>
+        <ul>
+            <li>It studies arguments and the principles and methods of right reasoning.</li>
+            <li>As an instrument, it helps us to formulate our own rational arguments and critically evaluate the soundness of others' arguments.</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 2: MEANING AND NATURE OF PHILOSOPHY -->
+    <section class="card">
+        <h2>✨ Meaning and Nature of Philosophy</h2>
+        
+        <div class="section-header-badge">
+            🤔 Why is it hard to define?
+        </div>
+        
+        <p>It is difficult to define philosophy because philosophy has no specific subject matter, but it primarily deals with fundamental issues.</p>
+        
+        <ul>
+            <li><strong>Etymology:</strong> The word philosophy comes from two Greek words: <em>philo</em> (love) and <em>sophia</em> (wisdom). Thus, the literal definition is <span class="highlight-orange">"love of wisdom"</span>. However, this literal definition is not sufficient to fully understand philosophy.</li>
+            <li><strong>Origin:</strong> <strong>Pythagoras</strong> was the first to use the word philosopher to refer to a person who clearly shows a marked curiosity in the things he experiences and analyzes.</li>
+            <li>Philosophy refers to the development of critical habits, the continuous search for truth, and the questioning of the apparent.</li>
+        </ul>
+
+        <div class="case-box">
+            <strong>💡 How to Learn Philosophy:</strong><br>
+            The best way to learn and understand philosophy is to philosophize:
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>To be confronted with philosophical questions and use philosophical language.</li>
+                <li>To become acquainted with differing philosophical positions and maneuvers.</li>
+                <li>To read the philosophers themselves.</li>
+                <li>To grapple with the issues for oneself.</li>
+            </ul>
+        </div>
+
+        <p>The wisdom that philosophers seek is not the wisdom of technical expertise or professional skills. Philosophy involves reason, rational criticism, and rigorous examination.</p>
+
+        <p>For <strong>Socrates</strong>, philosophy is a pursuit of wisdom through:</p>
+        <ul>
+            <li>The development of critical habits.</li>
+            <li>The continuous search for truth.</li>
+            <li>The questioning of the apparent.</li>
+        </ul>
+
+        <p><strong>Definition:</strong> Philosophy is a rational and critical enterprise that tries to formulate and answer fundamental questions through an intensive application of reason that draws on analysis, comparison, and evaluation.</p>
+
+        <div class="section-header-badge purple">
+            ⚖️ Two Sides of Philosophy
+        </div>
+
+        <ul>
+            <li><strong>🛠️ Constructive Side:</strong> Attempts to formulate rational answers to fundamental questions concerning:
+                <ul>
+                    <li>The nature of reality</li>
+                    <li>The nature of value</li>
+                    <li>The nature of knowledge and truth</li>
+                </ul>
+            </li>
+            <li><strong>🔍 Critical Side:</strong> Deals with providing rational critique, analysis, clarification, and evaluation of answers given to basic metaphysical, epistemological, and axiological questions.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>📍 Important Note:</strong> Philosophy is an activity. It is not something that can be easily mastered or learned passively in schools.
+        </div>
+    </section>
+
+    <!-- SECTION 3: BASIC FEATURES OF PHILOSOPHY -->
+    <section class="card">
+        <h2>📌 Basic Features of Philosophy</h2>
+
+        <div class="numbered-list">
+            <div class="numbered-item">
+                <div class="number-badge">1</div>
+                <div class="number-content">
+                    <span class="number-title">Set of Views or Beliefs 🌐</span><br>
+                    Philosophy is a set of views or beliefs about life and the universe (informal sense of philosophy or "having" a philosophy).
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">2</div>
+                <div class="number-content">
+                    <span class="number-title">Process of Reflecting 🔍</span><br>
+                    Philosophy is a process of reflecting on and criticizing our most deeply held conceptions and beliefs (formal sense of "doing" philosophy). <em>Note: Having and doing philosophy cannot be treated entirely independently of each other.</em>
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">3</div>
+                <div class="number-content">
+                    <span class="number-title">Rational Worldview 🌍</span><br>
+                    Philosophy is a rational attempt to look at the world as a whole. It seeks to combine the conclusions of various sciences and human experience into a consistent worldview.
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">4</div>
+                <div class="number-content">
+                    <span class="number-title">Logical Analysis 🗣️</span><br>
+                    Philosophy is the logical analysis of language and the clarification of the meaning of words and concepts.
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">5</div>
+                <div class="number-content">
+                    <span class="number-title">Perennial Problems ❓</span><br>
+                    Philosophy is a group of perennial/constant problems that interest people and for which philosophers have always sought answers. It presses inquiry into deep existential questions (e.g., <em>What is life and why am I here? Where does knowledge come from?</em>).
+                </div>
+            </div>
+        </div>
+
+        <p>Philosophy is better seen as <strong>asking the right questions</strong> rather than providing final correct answers.</p>
+        <p>Generally, philosophy encompasses the various theories or systems of thought developed by great thinkers such as Socrates, Plato, and Aristotle.</p>
+    </section>
+
+    <!-- SECTION 4: CORE FIELDS OF PHILOSOPHY -->
+    <section class="card">
+        <h2>🧠 Core Fields of Philosophy</h2>
+        
+        <div class="section-header-badge blue">
+            🔍 Digging Deep Into the Foundations of Philosophical Thinking
+        </div>
+
+        <p>Philosophy has both primary and secondary branches. This course focuses on the primary core fields:</p>
+
+        <ol>
+            <li><strong>🌌 Metaphysics</strong> — The study of existence and reality.</li>
+            <li><strong>🔮 Epistemology</strong> — The study of knowledge.</li>
+            <li><strong>💎 Axiology</strong> — The study of value (ethics and aesthetics).</li>
+            <li><strong>⚡ Logic</strong> — The study of reasoning and arguments.</li>
+        </ol>
+    </section>
+
+    <!-- SECTION 5: METAPHYSICS -->
+    <section class="card">
+        <h2>🌌 Metaphysics</h2>
+        <p>Derived from Greek <em>"meta"</em> (beyond/after) and <em>"physika"</em> (physics). Metaphysics studies the ultimate nature of reality or existence, addressing cause-and-effect relationships and reality vs. appearance.</p>
+
+        <h3>Questions Metaphysics Asks:</h3>
+        <ul>
+            <li>What is reality? What is life or time?</li>
+            <li>What is mind, and what is its relation to the body?</li>
+            <li>Is there a cause-and-effect relationship between reality and appearance?</li>
+            <li>Are human actions free, or predetermined by supernatural forces?</li>
+        </ul>
+
+        <div class="section-header-badge purple">
+            📚 Four Subfields / Aspects of Metaphysics
+        </div>
+
+        <h3>🌌 i) Cosmological Aspect</h3>
+        <p>Deals with the origin, nature, and development of the universe as an orderly system.</p>
+        <div class="quote-box">
+            Questions: "How did the universe originate and develop? Does its existence have a purpose?"
+        </div>
+
+        <h3>🙏 ii) Theological Aspect</h3>
+        <p>The part of religious theory dealing with conceptions of God and God's relationship to humans.</p>
+
+        <h3>👤 iii) Anthropological Aspect</h3>
+        <p>Deals with the study of human beings:</p>
+        <ul>
+            <li>What is the relation between mind and body?</li>
+            <li>Is mind more fundamental than body, or vice versa?</li>
+            <li>Are people born good, evil, or morally neutral?</li>
+            <li>Do humans have free will, or are actions determined by environment, inheritance, or God?</li>
+        </ul>
+
+        <h3>🔬 iv) Ontological Aspect</h3>
+        <p>Ontology is the study of the nature of existence itself (what it means for anything to exist):</p>
+        <ul>
+            <li>Is reality orderly in itself, or merely ordered by the human mind?</li>
+            <li>Is reality fixed and stable, or is change its central feature?</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 6: EPISTEMOLOGY -->
+    <section class="card">
+        <h2>🔮 Epistemology</h2>
+        <p>Derived from Greek <em>"episteme"</em> (knowledge/understanding) and <em>"logos"</em> (study of). Referred to as the <strong>"theory of knowledge"</strong>, it studies the nature, scope, sources, validity, and possibility of knowledge.</p>
+
+        <h3>Core Epistemological Issues:</h3>
+        <ul>
+            <li><strong>Can reality be known?</strong> <span class="highlight-purple">Skepticism (Agnosticism)</span> claims humans cannot acquire reliable knowledge and that any search for ultimate truth is in vain.</li>
+            <li><strong>Is truth relative or absolute?</strong> Relative truth changes and varies, whereas absolute truth remains invariant.</li>
+        </ul>
+
+        <div class="section-header-badge">
+            🗝️ 5 Major Sources of Knowledge
+        </div>
+
+        <ol>
+            <li><strong>👀 Empiricism (Empirical Knowledge):</strong> Knowledge obtained through the senses. <em>Weakness:</em> Senses can be incomplete or distorted by fatigue or limitations. <em>Advantage:</em> Experiences and experiments are open to replication and public examination.</li>
+            <li><strong>🧠 Rationalism (Reason):</strong> Claims sensory experience alone cannot provide universal judgments, and humans can arrive at certainty through reason independently of senses.</li>
+            <li><strong>⚡ Intuition:</strong> Direct apprehension of knowledge without conscious reasoning or immediate sense perception. Bypass limitations of human experience, though unsafe when used completely alone.</li>
+            <li><strong>📜 Revelation:</strong> Knowledge communicated from a transcendent supernatural reality. Essential in religion; accepted by faith.</li>
+            <li><strong>📚 Authority:</strong> Knowledge originating from experts, textbooks, or sanctified traditions. If built on wrong initial assumptions, authority-based knowledge becomes distorted.</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 7: AXIOLOGY -->
+    <section class="card">
+        <h2>💎 Axiology</h2>
+        <p>Stems from Greek <em>"axios"</em> (value/worth) and <em>"logos"</em> (study of). Axiology is the philosophical study of value and worth, exploring three primary branches:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branch</th>
+                        <th>Focus & Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>⚖️ Ethics</strong></td>
+                        <td>Moral philosophy; studies principles, values, and rules used to evaluate conduct as good/bad or right/wrong.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🎨 Aesthetics</strong></td>
+                        <td>Theory of beauty; examines art, enjoyment, sensory values, taste, and emotional perception.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🏛️ Social/Political</strong></td>
+                        <td>Studies value judgments operating in civil society, government models, economic systems, and justice.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Categories of Ethics:</h3>
+        <ul>
+            <li><strong>Normative Ethics:</strong> Establishes standards/principles to evaluate conduct (e.g., Teleological/Consequentialism, Deontology, Virtue Ethics).</li>
+            <li><strong>Meta-Ethics:</strong> Investigates the meaning of ethical terms like "good", "bad", "right", or "wrong" (e.g., Intuitionism, Emotivism, Relativism).</li>
+            <li><strong>Applied Ethics:</strong> Applies moral rules to specific practical issues (e.g., capital punishment, euthanasia, abortion).</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 8: LOGIC -->
+    <section class="card">
+        <h2>⚡ Logic</h2>
+        <p>Logic is the study or theory of principles of right reasoning. It formulates methods to evaluate the validity and soundness of arguments.</p>
+
+        <h3>Key Questions Raised in Logic:</h3>
+        <ul>
+            <li>What is an argument, and what does it mean to argue?</li>
+            <li>What makes an argument valid or invalid?</li>
+            <li>What is a sound argument?</li>
+            <li>What is the relationship between premises and conclusions?</li>
+            <li>What is a fallacy, and what renders reasoning fallacious?</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 9: IMPORTANCE OF PHILOSOPHY -->
+    <section class="card">
+        <h2>🌟 Importance of Learning Philosophy</h2>
+        
+        <div class="quote-box">
+            🌹 "The unexamined life is not worth living." — Socrates
+        </div>
+
+        <p>Philosophy gives us the tools to think deeply about life, society, and ourselves. It promotes <strong>self-actualization</strong> — self-fulfillment, creativity, and achieving one's potential.</p>
+
+        <div class="numbered-list">
+            <div class="numbered-item">
+                <div class="number-badge">1</div>
+                <div class="number-content">
+                    <span class="number-title">Intellectual & Behavioral Independence 🧘‍♂️</span><br>
+                    Learn to think and act for yourself, integrating experiences, thoughts, and actions.
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">2</div>
+                <div class="number-content">
+                    <span class="number-title">Reflective Self-Awareness 💎</span><br>
+                    Helps critically examine the essential intellectual grounds of our lives.
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">3</div>
+                <div class="number-content">
+                    <span class="number-title">Flexibility, Tolerance & Open-Mindedness 🌍</span><br>
+                    Teaches tolerance and empathy towards views that clash with our own.
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">4</div>
+                <div class="number-content">
+                    <span class="number-title">Creative & Critical Thinking 🧠</span><br>
+                    Refines powers of analysis, critical evaluation, reasoning, and argumentation.
+                </div>
+            </div>
+
+            <div class="numbered-item">
+                <div class="number-badge">5</div>
+                <div class="number-content">
+                    <span class="number-title">Thought-Out Value Systems ⚖️</span><br>
+                    Provides an opportunity to formulate meaningful evaluation systems in morality, art, and politics.
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    ⚖️ Logic Chapter 1 <br>
+    📚 Unique Academic — Complete Study Notes
+</footer>
+
+</body>
+</html>
