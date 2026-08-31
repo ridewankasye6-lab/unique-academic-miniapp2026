@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Logic Chapter 3 | Logic and Language</title>
+
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6b21a8,
+                    #4c1d95
+                );
+
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 14px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.98rem;
+            color: var(--primary-purple);
+            margin: 10px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="logic-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+
+<header>
+
+    <h1>
+        🧠 CHAPTER THREE: LOGIC AND LANGUAGE
+    </h1>
+
+    <p>
+        Complete Study Notes — Unique Academic
+    </p>
+
+</header>
+
+
+<section class="card">
+    <h2>🔍 Philosophy of Language</h2>
+    <div class="case-box">
+        <p>Let's begin with a big question: <strong>What is language, really?</strong></p>
+        <ul>
+            <li>According to <strong>Semiotics</strong> (the study of sign processes in communication), language is the manipulation and use of symbols in order to draw attention to signified content.</li>
+            <li>Language isn't just about speaking — it's about conveying ideas using signs, symbols, or sounds to represent real things or concepts.</li>
+        </ul>
+    </div>
+    <p><strong>Philosophy of language</strong> is the reasoned inquiry into the nature, origins, and usage of language.</p>
+    <p>Philosophy of language has been concerned with four central problems: the nature of meaning, language use, language cognition, and the relationship between language, logic and reality.</p>
+    <p>💭 Philosophers of language ask questions like:</p>
+    <ul>
+        <li>🤔 <strong>What is meaning?</strong></li>
+        <li>🌍 <strong>How does language refer to the real world?</strong></li>
+        <li>🧪 <strong>Is language learned or is it innate?</strong></li>
+        <li>🧩 <strong>How does the meaning of a sentence emerge out of its parts?</strong></li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>🗣️ Functions of Language in Everyday Life</h2>
+    <p>Ordinary language serves various functions in our day-to-day life. These functions are almost unlimited. Thus, among other things, individuals use language:</p>
+    <ul>
+        <li>✅ To tell stories,</li>
+        <li>✅ To ask questions,</li>
+        <li>✅ To guess at answers / form hypotheses,</li>
+        <li>✅ To launch verbal assaults,</li>
+        <li>✅ To tell jokes, give directions, sing songs, issue commands, greet someone, and so on.</li>
+    </ul>
+    
+    <h3>3 Main Linguistic Functions</h3>
+    <p>In general, language has three main linguistic functions:</p>
+    
+    <h4>🟡 A. Expressive (Emotive) Function</h4>
+    <p>It is a function of language which is important for individuals to express their feelings or emotions (both positive and negative feelings).</p>
+    <p>💭 It's not focused on facts, but on personal expression.</p>
+    <div class="example-box">
+        💬 <strong>Examples:</strong>
+        <ul>
+            <li>She is smart. 😊</li>
+            <li>I like my English teacher. ❤️</li>
+            <li>I hate him. 😠</li>
+            <li>I dislike Abebe. 🤬</li>
+        </ul>
+        <p><em>These are not claims about objective reality, but personal emotional reactions.</em></p>
+    </div>
+
+    <h4>🔵 B. Directive Function</h4>
+    <p>It gives direction to the speaker or writer in order to pass orders, commands or instructions to others.</p>
+    <div class="example-box">
+        📢 <strong>Examples:</strong>
+        <ul>
+            <li>What is your name?</li>
+            <li>Leave me alone!</li>
+            <li>Do not close that door!</li>
+            <li>Give me your pen!</li>
+        </ul>
+    </div>
+
+    <h4>🟢 C. Cognitive (Informative) Function</h4>
+    <p>It is used to convey information about the world's objective realities.</p>
+
+   <p>📌 Of these functions of language, the <strong>cognitive function of language</strong> is relevant and important for logic because logic evaluates arguments, and arguments are built on informative claims (statements that can be True or False).</p>
+    <div class="example-box">
+        📖 <strong>Examples:</strong>
+        <ul>
+            <li>Ethiopia has its own prestigious airlines. <strong>(True)</strong></li>
+            <li>The capital city of the regional state of Afar is Hawassa. <strong>(False)</strong></li>
+            <li>Lake Tana is found in Amhara region. <strong>(True)</strong></li>
+        </ul>
+    </div>
+</section>
+
+<section class="card">
+    <h2>🔤 Meaning of Terms</h2>
+    <p>The reason why we study about definitions is:</p>
+    <ul>
+        <li>Words have meanings.</li>
+        <li>Meanings are conveyed through definitions.</li>
+        <li>Sometimes the meaning of certain words in an argument is vague or ambiguous.</li>
+        <li>Logic evaluates arguments, an argument consists of a group of statements, and statements are made up of words.</li>
+    </ul>
+
+    <div class="case-box">
+        📌 <strong>Definition of a Term:</strong> A <span class="highlight-purple">term</span> is any word or arrangement of words that may serve as the <strong>subject</strong> of a statement.
+    </div>
+
+    <p>Terms consist of proper names, common names, and descriptive phrases:</p>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Proper Names</th>
+                    <th>Common Names</th>
+                    <th>Descriptive Phrases</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <li>Ayele</li>
+                    <li>house</li>
+                    <li>The first president of Ethiopia</li>
+                </tr>
+                <tr>
+                    <li>John</li>
+                    <li>Person</li>
+                    <li>The king of England</li>
+                </tr>
+                <tr>
+                    <li>South Ethiopia</li>
+                    <li>Animal</li>
+                    <li>Those who study hard</li>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p><strong>Words that are NOT terms</strong> include verbs, non-substantive adjectives, adverbs, prepositions, conjunctions, and all non-syntactic arrangements of words.</p>
+    <div class="example-box">
+        ⚠️ <strong>Non-Terms Examples:</strong> dictatorial, run quickly, above and beyond, moreover, craves, cabbages, into again, the forest.
+    </div>
+</section>
+
+<section class="card">
+    <h2>🔍 Intension and Extension Meaning of Terms</h2>
+    <p>Every term has two types of meaning:</p>
+
+    <h3>1. Intensional Meaning (Connotation)</h3>
+    <p>📌 Refers to the qualities or attributes that the term connotes or implies.</p>
+    <div class="example-box">
+        💡 <strong>Example:</strong> "Inventor" means a person who is clever, intuitive, creative, and imaginative.
+        <br><em>(Meaning is based on attributes, qualities, or essential characteristics).</em>
+    </div>
+
+    <h3>2. Extensional Meaning (Denotation)</h3>
+    <p>📌 Consists of the members of the class that the term denotes or refers to.</p>
+    <div class="example-box">
+        💡 <strong>Example:</strong> "Inventor" means such as Thomas Edison, Alexander Graham Bell, and Samuel F.B. Morse.
+        <br><em>(Meaning is based on listing class members).</em>
+    </div>
+
+    <div class="case-box">
+        🔑 <strong>Key Relationship:</strong> The <strong>intensional meaning</strong> of a term serves as the criteria for deciding what the extension consists of. That is why <strong>intensional meaning determines extensional meaning</strong>.
+    </div>
+
+    <h3>🌐 Extensional Consistency & Empty Extension</h3>
+    <ul>
+        <li>The denotation (extensional meaning) of <em>"human being"</em> refers to all human beings in the universe, on which everybody agrees.</li>
+        <li><strong>Empty Extension (Null Class):</strong> Occurs when a term denotes a class that has no living or current objective members in reality.</li>
+        <li>Things without current objective reference: myths, spiritual realities, extinct creatures, historical figures of the past.</li>
+    </ul>
+    <div class="example-box">
+        🦕 <strong>Empty Extension Examples:</strong>
+        <ul>
+            <li>"The current king of Ethiopia" <em>(Empty class – no current king exists)</em></li>
+            <li>Dinosaur, Dragon, Satan, fictional characters.</li>
+        </ul>
+        <p><em>Satan is defined intensionally as "an evil spirit that causes people to suffer." Dinosaur is defined as "an extinct reptile of the Mesozoic era."</em></p>
+    </div>
+
+    <h3>📈 Order of Intension and Extension</h3>
+    <p>Terms can be placed in order based on increasing or decreasing attributes (intension) and class sizes (extension):</p>
+    <ul>
+        <li><strong>Increasing Intension:</strong> Attributes increase (class size gets smaller / more specific).
+            <br>📍 <em>Example:</em> Africa, East Africa, Ethiopia, Addis Ababa.</li>
+        <li><strong>Decreasing Intension:</strong> Attributes decrease (reverse of increasing intension).
+            <br>📍 <em>Example:</em> Addis Ababa, Ethiopia, East Africa, Africa.</li>
+        <li><strong>Increasing Extension:</strong> Class size gets larger / broader.
+            <br>📍 <em>Example:</em> Addis Ababa, Ethiopia, East Africa, Africa.</li>
+        <li><strong>Decreasing Extension:</strong> Class size gets smaller.
+            <br>📍 <em>Example:</em> Africa, East Africa, Ethiopia, Addis Ababa.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📘 Definitions and Their Purposes</h2>
+    <p>Many logicians define <strong>definition</strong> as a group of words that assigns a meaning to some word or group of words.</p>
+    
+    <div class="case-box">
+        🧩 <strong>Two Parts of Every Definition:</strong>
+        <ul>
+            <li><strong>Definiendum:</strong> The word or group of words that is supposed to be defined.</li>
+            <li><strong>Definiens:</strong> The word or group of words that does the defining or gives meaning to the definiendum.</li>
+        </ul>
+    </div>
+    
+    <div class="example-box">
+        💡 <strong>Example:</strong> <em>"Diffident"</em> means <em>lacking confidence in oneself</em>.
+        <ul>
+            <li><strong>Definiendum:</strong> "Diffident"</li>
+            <li><strong>Definiens:</strong> "lacking confidence in oneself"</li>
+        </ul>
+    </div>
+
+    <h3>🎯 Purposes of Definitions in Logic</h3>
+    <ul>
+        <li>To avoid confusion or misleading use of words and phrases;</li>
+        <li>To avoid obscurity, unintelligibility, subjectivity (bias), and complexity of words;</li>
+        <li>To introduce new words and to persuade others;</li>
+        <li>To avoid useless controversies, disputes, disagreements, and conflicts over the meaning of terms;</li>
+        <li>To prevent incorrect reasoning; and to develop the ability to reason logically.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📗 Types of Definitions and Their Purpose</h2>
+    <p>In logic, there are five distinct types of definitions:</p>
+
+    <h3>1️⃣ Stipulative Definition</h3>
+    <p>📌 Assigns a meaning to a word for the first time. This involves either creating a new word or giving a new meaning to an old word.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+        <li>Meaning is created, not discovered.</li>
+        <li>Words are assigned arbitrarily (no "right" or "wrong" meaning).</li>
+        <li>Has no truth value (neither true nor false).</li>
+        <li>Used for new phenomena, scientific developments, innovations, or setting up secret codes.</li>
+    </ul>
+    <div class="example-box">
+        💡 <strong>Examples:</strong>
+        <ul>
+            <li>Crossing a male tiger and female lion produced an offspring named <strong>"Tigon"</strong>.</li>
+            <li>Military Secret Codes: <em>"Operation Barbarossa"</em>, <em>"Operation Desert Storm"</em>, <em>"Operation Sunset"</em>.</li>
+        </ul>
+    </div>
+
+    <h3>2️⃣ Lexical Definition</h3>
+    <p>📌 Used to report the meaning that a word already has in a language. (Dictionary definitions).</p>
+    <p><strong>Purpose:</strong> To eliminate <span class="highlight-orange">ambiguity</span>.</p>
+    <ul>
+        <li><strong>Ambiguity:</strong> A word is ambiguous if it has more than one meaning in a context (e.g., <em>"Light"</em> = radiant energy OR light in weight; <em>"Bank"</em> = financial institution OR river edge).</li>
+        <li><strong>Vagueness:</strong> A word is vague if its meaning is imprecise or unclear, making it impossible to tell where it applies (e.g., <em>"rich"</em>, <em>"poor"</em>, <em>"love"</em>, <em>"normal"</em>).</li>
+    </ul>
+
+    <h3>3️⃣ Précising Definition</h3>
+    <p>📌 Provides a more precise, specific, exact, and restricting meaning to a term in order to <strong>reduce vagueness</strong>.</p>
+    <p><strong>Key Note:</strong> Unlike stipulative definitions, précisng definitions are <strong>not arbitrary</strong>; they must be appropriate and legitimate to the specific context (e.g., law, science, medicine).</p>
+    <div class="example-box">
+        💡 <strong>Example:</strong> Defining "Poor" as <em>"a person having a monthly income of less than Birr 150."</em>
+    </div>
+
+    <h3>4️⃣ Theoretical Definition</h3>
+    <p>📌 Assigns a meaning to a word by suggesting a theory that gives a certain characterization to the entities that the term denotes.</p>
+    <p>Common in science and philosophy (e.g., <em>"heat"</em>, <em>"substance"</em>, <em>"good"</em>, <em>"justice"</em>, <em>"mind"</em>).</p>
+    <div class="example-box">
+        💡 <strong>Examples:</strong>
+        <ul>
+            <li><em>"Good"</em> means the greatest happiness of the greatest number (Utilitarianism).</li>
+            <li><em>"Justice"</em> means to give each individual what he or she deserves.</li>
+        </ul>
+    </div>
+
+    <h3>5️⃣ Persuasive Definition</h3>
+    <p>📌 Intended to persuade or convince listeners/readers, influencing their attitude towards a certain point of view.</p>
+    <p>Uses emotionally charged or value-laden words to arouse emotion.</p>
+    <div class="example-box">
+        💡 <strong>Opposing Examples:</strong>
+        <ul>
+            <li><em>"Abortion"</em> means the ruthless murdering of innocent human beings.</li>
+            <li><em>"Abortion"</em> means a safe and established surgical procedure whereby a woman is relieved of an unwanted burden.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="card">
+    <h2>🛠️ Techniques of Definition</h2>
+    
+    <h3>A. Extensional (Denotative) Definition Techniques</h3>
+    <p>Defines terms by listing or indicating the members of the class denoted by the definiendum.</p>
+    
+    <h4>1. Demonstrative (Ostensive) Definition</h4>
+    <p>📌 Assigns meaning by pointing physically to the object. Uses gestures.</p>
+    <div class="example-box">
+        👉 <strong>Example:</strong> Pointing to objects one by one and saying, <em>"'Chair' means this and this and this."</em>
+    </div>
+
+    <h4>2. Enumerative Definition</h4>
+    <p>📌 Assigns meaning by naming individual members of the class (can be partial or complete).</p>
+    <div class="example-box">
+        🏃 <strong>Example:</strong> <em>"Athlete"</em> means a person such as Haile G/silassie, Kenenisa Bekele, or Derartu Tulu.
+    </div>
+
+    <h4>3. Definition by Subclass</h4>
+    <p>📌 Assigns meaning by naming subclasses of the class denoted by the term.</p>
+    <div class="example-box">
+        🌲 <strong>Example:</strong> <em>"Tree"</em> means an oak, pine, elm, spruce, or maple.
+    </div>
+
+    <hr style="margin: 16px 0; border: 0; border-top: 1px solid var(--border-color);">
+
+    <h3>B. Intensional (Connotative) Definition Techniques</h3>
+    <p>Defines terms by describing essential attributes or characteristics.</p>
+
+    <h4>1. Synonymous Definition</h4>
+    <p>📌 The definiens is a single word that connotes the same attributes as the definiendum.</p>
+    <div class="example-box">
+        💡 <strong>Examples:</strong> <em>"Physician"</em> means doctor | <em>"Intentional"</em> means willful | <em>"Observe"</em> means see.
+    </div>
+
+    <h4>2. Etymological Definition</h4>
+    <p>📌 Assigns meaning by revealing the word's root or ancestry in its own or foreign languages (Greek, Latin, Old English, French).</p>
+    <div class="example-box">
+        🏛️ <strong>Examples:</strong>
+        <ul>
+            <li><em>"Democracy"</em> comes from Greek <em>demos</em> (people) + <em>kratos</em> (power).</li>
+            <li><em>"Captain"</em> comes from Latin <em>caput</em> (head).</li>
+            <li><em>"License"</em> comes from Latin <em>licere</em> (to be permitted).</li>
+        </ul>
+    </div>
+
+    <h4>3. Operational Definition</h4>
+    <p>📌 Assigns meaning by specifying experimental procedures or operations performed. Frequently uses <em>"if and only if"</em>.</p>
+    <div class="example-box">
+        🧪 <strong>Example:</strong> A solution is an <em>"Acid"</em> if and only if litmus paper turns red when dipped into it.
+    </div>
+
+    <h4>4. Definition by Genus and Difference</h4>
+    <p>📌 Assigns meaning by identifying a <strong>Genus</strong> (larger class) and a <strong>Specific Difference</strong> (attribute distinguishing species within that genus).</p>
+    
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Species (Definiendum)</th>
+                    <th>= Specific Difference</th>
+                    <th>+ Genus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Ice</strong></td>
+                    <td>frozen</td>
+                    <td>water</td>
+                </tr>
+                <tr>
+                    <td><strong>Husband</strong></td>
+                    <td>married</td>
+                    <td>man</td>
+                </tr>
+                <tr>
+                    <td><strong>Mother</strong></td>
+                    <td>female</td>
+                    <td>parent</td>
+                </tr>
+                <tr>
+                    <td><strong>Tiger</strong></td>
+                    <td>large, striped, ferocious</td>
+                    <td>feline</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="card">
+    <h2>📏 Criteria / Rules for Lexical Definitions</h2>
+    <p>To avoid errors in logic, a lexical definition should follow these 8 fundamental rules:</p>
+
+    <ol>
+        <li><strong>Rule 1: Conform to Grammatical Standards</strong>
+            <br>❌ <em>Incorrect:</em> Vacation is when you don't have to go to work.
+            <br>✅ <em>Correct:</em> "Vacation" means a period during which activity is suspended from work or school.
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 2: Convey Essential Meaning</strong>
+            <br>❌ <em>Incorrect:</em> "Human being" means a featherless biped.
+            <br>✅ <em>Correct:</em> "Human being" means the rational animal that has the capacity to reason and speak.
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 3: Neither Too Broad nor Too Narrow</strong>
+            <br>❌ <em>Too Broad:</em> "Bird" means any warm-blooded animal having wings (includes bats).
+            <br>❌ <em>Too Narrow:</em> "Bird" means warm-blooded, feathered animal that can fly (excludes ostriches).
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 4: Avoid Circularity</strong>
+            <br>❌ <em>Incorrect:</em> "Scientist" means anyone who engages in science.
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 5: Be Affirmative, Not Negative (when possible)</strong>
+            <br>❌ <em>Negative:</em> "Concord" means the absence of discord.
+            <br>✅ <em>Affirmative:</em> "Concord" means harmony.
+            <br><em>(Note: Intrinsically negative words like "Bald", "Darkness", or "Death" are exceptions).</em>
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 6: Avoid Figurative, Obscure, Vague, or Ambiguous Language</strong>
+            <br>❌ <em>Figurative:</em> "Architecture" means frozen music.
+            <br>❌ <em>Obscure/Needlessly Technical:</em> "Bunny" means a mammalian of the family Leporidae...
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 7: Avoid Affective / Emotional Terminology</strong>
+            <br>Avoid sarcastic, biased, or emotional language meant to influence attitudes.
+        </li>
+        <li style="margin-top: 10px;"><strong>Rule 8: Indicate the Context</strong>
+            <br>Explicitly state the context when a word has multiple distinct contextual meanings.
+            <br>💡 <em>Example:</em> "Strike" means (in baseball) a pitch at which a batter swings and misses; "Strike" means (in fishing) a pull on a line made by a fish taking bait.
+        </li>
+    </ol>
+</section>
+
+
+<footer class="footer">
+
+    ⚖️ Logic Chapter 3
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
