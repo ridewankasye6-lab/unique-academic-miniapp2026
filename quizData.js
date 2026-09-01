@@ -19383,8 +19383,331 @@ const quizData = {
     englishExplanation: "\"Shall\" is commonly used with \"we\" to make a suggestion, offer, or proposal. \"Shall we leave now?\" asks the other person to make a joint decision.",
     amharicExplanation: "\"Shall\" በተለይ ከ \"we\" ጋር ሀሳብ ለማቅረብ፣ ለመጠየቅ ወይም የጋራ ውሳኔ ለመጠየቅ ይጠቅማል። \"Shall we leave now?\" ማለት \"አሁን እንሂድ?\" የሚል ነው።"
 }],
-        2: [],
-        3: [],
+        2: [{     question: "I think I don't want any dessert. I ________ too much to eat already.",     options: ["have", "ate", "had", "eat"],     answer: 2,     englishExplanation: "🍰 The sentence indicates a past action (eating) that directly affects the present decision (not wanting dessert). 'Had' (the simple past tense) is used here to state that the act of eating took place before the current decision to refuse dessert. 💡",     amharicExplanation: "🍰 ዓረፍተ ነገሩ ያለፈ እርምጃ (መብላት) አሁን ባለው ውሳኔ ላይ (ጣፋጭ አለመፈለግ) ቀጥታ ተጽዕኖ እንደሚያሳድር ይገልጻል። 'Had' (ቀላል ያለፈ ጊዜ) እዚህ ጥቅም ላይ የዋለው ከአሁኑ ውሳኔ በፊት መብላት መከሰቱን ለመግለጽ ነው። 💡" },  {     question: "He ________ his leg, so he can't play football.",     options: ["has broken", "broken", "breaks", "had broken"],     answer: 0,     englishExplanation: "🦵 The present perfect tense 'has broken' is used to indicate that the action of breaking the leg happened at an unspecified time in the past, and its result has direct relevance to the present situation (his present inability to play football). 💡",     amharicExplanation: "🦵 የአሁን ፍጹም ጊዜ 'has broken' ጥቅም ላይ የዋለው እግሩ መሰበር ባለፈው ጊዜ ባልተወሰነ ጊዜ መከሰቱን ለማመልከት ነው፣ እናም ውጤቱም አሁን ካለው ሁኔታ ጋር ቀጥተኛ ግንኙነት አለው (አሁን እግር ኳስ መጫወት አለመቻሉ)። 💡" },  {     question: "The students ________ their notes and books every day.",     options: ["read", "reads", "had read", "have read"],     answer: 0,     englishExplanation: "📚 'Every day' is a strong signal for the simple present tense. Since the subject 'students' is plural, the base form of the verb 'read' is used to describe a habitual, repeated action that occurs regularly. 💡",     amharicExplanation: "📚 'Every day' ለቀላል የአሁን ጊዜ ጠንካራ ምልክት ነው። ርዕሰ ጉዳዩ 'students' ብዙ ቁጥር ስለሆነ፣ መደበኛ እና ተደጋጋሚ የሆነ እንቅስቃሴን ለመግለጽ የግሱ መሠረታዊ ቅርጽ 'read' ጥቅም ላይ ይውላል። 💡" },  {     question: "Oh shit! I ________ my pen, how can I sit for the exam.",     options: ["lost", "have lost", "lose", "had lost"],     answer: 1,     englishExplanation: "🖊️ The present perfect tense 'have lost' is used because the action happened at an unspecified time before now, but the result is highly relevant to the present moment (the speaker cannot take the exam right now because they don't have the pen). 💡",     amharicExplanation: "🖊️ የአሁን ፍጹም ጊዜ 'have lost' ጥቅም ላይ የዋለው እርምጃው ከአሁን በፊት ባልተወሰነ ጊዜ ስለተከሰተ ነው፣ ነገር ግን ውጤቱ አሁን ላለው ሁኔታ በጣም ጠቃሚ ነው (ተናጋሪው በአሁኑ ጊዜ ወይዘሮው ስለሌለው ፈተናውን መፈተሽ አይችልም)። 💡" },  {     question: "He ________ that car since he was in high school.",     options: ["has", "had", "have", "has had"],     answer: 3,     englishExplanation: "🚗 'Since' is a key time marker that demands the present perfect tense. The action of owning the car began in the past (high school) and continues up to the present. Therefore, 'has had' is the correct grammatical structure. 💡",     amharicExplanation: "🚗 'Since' የአሁን ፍጹም ጊዜን የሚጠይቅ ቁልፍ የጊዜ ምልክት ነው። መኪናውን የመያዝ እርምጃ ከጥንት (ሁለተኛ ደረጃ ትምህርት ቤት) ጀምሮ እስከ አሁን ድረስ ይቀጥላል። ስለዚህ 'has had' ትክክለኛው ሰዋሰዋዊ አወቃቀር ነው። 💡" },  {     question: "Two years ago, my brother ________ an accident and he ________ since then.",     options: [         "have/did not recover",         "had/has not recovered",         "has/has not recovered",         "had/had not recovered"     ],     answer: 1,     englishExplanation: "🕰️ 'Two years ago' indicates a specific time in the past, so the first blank uses the simple past 'had'. 'Since then' indicates a duration that continues to the present, so the second blank uses the present perfect 'has not recovered'. 💡",     amharicExplanation: "🕰️ 'Two years ago' በያለፈው ጊዜ የተወሰነ ጊዜን ያሳያል፣ ስለዚህ የመጀመሪያው ባዶ ቦታ ቀላል ያለፈ ጊዜን 'had' ይጠቀማል። 'Since then' እስከ አሁን ድረስ የሚቀጥል ቆይታን ያሳያል፣ ስለዚህ ሁለተኛው ባዶ ቦታ የአሁን ፍጹም ጊዜን 'has not recovered' ይጠቀማል። 💡" },  {     question: "I first ________ this film in 2006 and I ________ it a couple of times since then.",     options: ["seen/had seen", "saw/saw", "saw/have seen", "have seen/saw"],     answer: 2,     englishExplanation: "🎬 The first blank requires the simple past tense 'saw' to indicate the specific time the film was first watched (2006). The second blank needs the present perfect tense 'have seen' to show that the action has occurred multiple times from then up to the present. 💡",     amharicExplanation: "🎬 የመጀመሪያው ባዶ ቦታ ፊልሙ ለመጀመሪያ ጊዜ የታየበትን የተወሰነ ጊዜ (2006) ለማመልከት ቀላል ያለፈ ጊዜን 'saw' ይጠይቃል። ሁለተኛው ባዶ ቦታ ከዚያን ጊዜ ጀምሮ እስከ አሁን ድረስ እርምጃው ብዙ ጊዜ መከሰቱን ለማሳየት የአሁን ፍጹም ጊዜን 'have seen' ይፈልጋል። 💡" },  {     question: "I ________ to Gondar for ages. - Let's go tomorrow.",     options: ["hasn't gone", "hadn't gone", "haven't gone", "didn't gone"],     answer: 2,     englishExplanation: "🏛️ 'For ages' is a signal for the present perfect tense, expressing an experience over a long period up to the present. 'Haven't gone' correctly shows that the action of not going to Gondar started in the past and continues to the present. 💡",     amharicExplanation: "🏛️ 'For ages' እስከ አሁን ድረስ ያለውን ረጅም ጊዜ የሚገልጽ የአሁን ፍጹም ጊዜ ምልክት ነው። 'Haven't gone' ወደ ጎንደር አለመሄድ ከጥንት ጀምሮ እስከ አሁን መቀጠሉን በትክክል ያሳያል። 💡" },  {     question: "The family usually ________ breakfast together during the week.",     options: ["has", "have", "had", "have had"],     answer: 0,     englishExplanation: "🥞 'Usually' and 'during the week' indicate a habitual action in the present, requiring the simple present tense. 'Family' is a collective noun treated as a single unit, so it takes the singular verb 'has'. 💡",     amharicExplanation: "🥞 'Usually' እና 'during the week' በአሁን ጊዜ የሚከሰት ልማዳዊ እንቅስቃሴን ያሳያሉ፣ ይህም ቀላል የአሁን ጊዜን ይጠይቃል። 'Family' እንደ አንድ ነጠላ አካል የሚቆጠር የጋራ ስም ስለሆነ፣ ነጠላ ግሱን 'has' ይወስዳል። 💡" },  {     question: "Long before he ________ the country, he ________ some traveler's gift.",     options: [         "had left/had bought",         "had left/bought",         "leave/bought",         "left/had bought"     ],     answer: 3,     englishExplanation: "🎁 The phrase 'Long before' indicates that the buying happened before the leaving. The action that happened further in the past uses the Past Perfect 'had bought', while the action that happened later (leaving) uses the Simple Past 'left'. 💡",     amharicExplanation: "🎁 'Long before' የሚለው ሐረግ መግዛቱ ከመውጣቱ በፊት መከሰቱን ያሳያል። በጣም ቀደም ብሎ የተከሰተው እርምጃ ያለፈ ፍጹም ጊዜን 'had bought' ይጠቀማል፣ በኋላ የተከሰተው እርምጃ (መውጣት) ቀላል ያለፈ ጊዜን 'left' ይጠቀማል። 💡" },  {     question: "After the rice ________ some salt ________ added to it.",     options: [         "had cooked/was added",         "had been cooked/was added",         "was cooked/had been added",         "cooked/added"     ],     answer: 2,     englishExplanation: "🍚 The rice and salt are objects, so the verbs must be passive. The sentence implies the rice was cooked first (simple past passive 'was cooked'), and then the salt was added before that (past perfect passive 'had been added'). 💡",     amharicExplanation: "🍚 ሩዝ እና ጨው እቃዎች ናቸው፣ ስለዚህ ግሶቹ ተገብሮ መሆን አለባቸው። ዓረፍተ ነገሩ ሩዙ መጀመሪያ እንደበሰለ (ቀላል ያለፈ ተገብሮ 'was cooked')፣ እና ከዚያ ጨው ከዚያ በፊት እንደተጨመረ (ያለፈ ፍጹም ተገብሮ 'had been added') ያሳያል። 💡" },  {     question: "Last year, I ________ this book by a friend.",     options: ["gave", "had given", "was given", "had been given"],     answer: 2,     englishExplanation: "📖 The past passive tense 'was given' is used to indicate that the book was given to the speaker by a friend in the past. The subject 'I' is receiving the action, not doing it. 💡",     amharicExplanation: "📖 ያለፈ ተገብሮ ጊዜ 'was given' መጽሐፉ ባለፈው ጊዜ በጓደኛ ለተናጋሪው መሰጠቱን ለማመልከት ያገለግላል። ርዕሰ ጉዳዩ 'I' እርምጃውን እየተቀበለ ነው እንጂ እየሰራው አይደለም። 💡" },  {     question: "By the end of next September, we ________ know our placement in universities.",     options: [         "will know",         "will have known",         "will have been known",         "will be knowing"     ],     answer: 1,     englishExplanation: "🎓 'By the end of next September' is a signal for the future perfect tense. 'Will have known' is used to indicate that by that specific future point, the action will have been completed. 💡",     amharicExplanation: "🎓 'By the end of next September' ለወደፊት ፍጹም ጊዜ ምልክት ነው። 'Will have known' በዚያ የተወሰነ የወደፊት ጊዜ እርምጃው ተጠናቆ እንደሚቆም ለማመልከት ያገለግላል። 💡" },  {     question: "Abebe: Goodbye! I hope you ________ a nice time. Alemu: The same to you.",     options: ["have", "had", "got", "get"],     answer: 0,     englishExplanation: "🤝 In the context of wishing someone well, 'hope you have' is the correct form. The present simple tense 'have' is used here to express a wish or hope for the future. 💡",     amharicExplanation: "🤝 ለአንድ ሰው መልካም ምኞት በማቅረብ ሁኔታ ውስጥ፣ 'hope you have' ትክክለኛው ቅርጽ ነው። ቀላል የአሁን ጊዜ 'have' እዚህ ላይ ለወደፊቱ የሆነ ምኞትን ወይም ተስፋን ለመግለጽ ያገለግላል። 💡" },  {     question: "Gemechu: Have you seen the ruins of the Roman forum? Mehari: Sure, nobody ________ Rome without going to see the ruins of the Roman forum.",     options: ["visit", "visits", "is visiting", "has visited"],     answer: 3,     englishExplanation: "🏛️ The present perfect tense 'has visited' is used to express a general experience or expectation about the past up to the present. It is used in the context of a universal truth about visitors to Rome. 💡",     amharicExplanation: "🏛️ የአሁን ፍጹም ጊዜ 'has visited' እስከ አሁን ድረስ ስላለው አጠቃላይ ተሞክሮ ወይም መጠበቂያ ለመግለጽ ያገለግላል። ስለ ሮም ጎብኚዎች አጠቃላይ እውነት ባለው ዐውደ-ነገር ውስጥ ጥቅም ላይ ይውላል። 💡" },  {     question: "Saron: Do you work out at the gym? Marta: Sure, I ________ to the gym twice a week.",     options: ["have gone", "am going", "went", "go"],     answer: 3,     englishExplanation: "🏋️‍♂️ 'Twice a week' signals a regular, habitual action. This requires the simple present tense. Since the subject is 'I', the base form 'go' is the correct choice. 💡",     amharicExplanation: "🏋️‍♂️ 'Twice a week' መደበኛ፣ ልማዳዊ እንቅስቃሴን ያሳያል። ይህ ቀላል የአሁን ጊዜን ይጠይቃል። ርዕሰ ጉዳዩ 'I' ስለሆነ፣ መሠረታዊ ቅርጽ 'go' ትክክለኛው ምርጫ ነው። 💡" },  {     question: "Haset: Have you ever visited the Eiffel Tower? Melat: Yes, I ________ there a year ago.",     options: ["have visited", "had visited", "visited", "visits"],     answer: 2,     englishExplanation: "🗼 The simple past tense 'visited' is used because the action occurred at a specific time in the past ('a year ago'). When a specific time is mentioned, we must use the simple past, not the present perfect. 💡",     amharicExplanation: "🗼 ቀላል ያለፈ ጊዜ 'visited' ጥቅም ላይ የዋለው እርምጃው ባለፈው ጊዜ በተወሰነ ጊዜ ('a year ago') ስለተከሰተ ነው። የተወሰነ ጊዜ ሲጠቀስ፣ የአሁን ፍጹም ጊዜን ሳይሆን ቀላል ያለፈ ጊዜን መጠቀም አለብን። 💡" },  {     question: "Berehanu: Sorry, I used your trainers. Germa: How disappointing! You know I ________ them.",     options: ["have used", "haven't used", "had used", "hadn't used"],     answer: 1,     englishExplanation: "👟 Germa is expressing disappointment because Berehanu broke a rule that has been in place up to the present. The present perfect negative 'haven't used' is used here to show a state that is still true in the present (Germa never uses Berehanu's things). 💡",     amharicExplanation: "👟 ገርማ ብስጭቱን የሚገልጸው በረሃኑ እስከ አሁን ድረስ የነበረ ሕግን ስለጣሰ ነው። የአሁን ፍጹም አሉታዊ 'haven't used' እዚህ ላይ አሁንም እውነት የሆነ ሁኔታን ለማሳየት ያገለግላል (ገርማ የበረሃኑን ነገር በጭራሽ አይጠቀምም)። 💡" },  {     question: "Bontu: ________ she took your camera? Chaltu: How dare she? She didn't ask me for it.",     options: ["Do you know", "Did you know", "have you knew", "don't you know"],     answer: 1,     englishExplanation: "📷 The past simple 'Did you know' is used to ask if someone was aware of a specific event that happened in the past (Chaltu taking the camera). It is a direct question about a past action. 💡",     amharicExplanation: "📷 ቀላል ያለፈ ጊዜ 'Did you know' አንድ ሰው ባለፈው ጊዜ ስለተከሰተ የተወሰነ ክስተት (ቻልቱ ካሜራውን ስለወሰደች) ተገንዝቦ እንደሆነ ለመጠየቅ ያገለግላል። ስለ ያለፈ እርምጃ ቀጥተኛ ጥያቄ ነው። 💡" },  {     question: "The soldiers ________ the village when the enemy arrived.",     options: ["had left/left", "left/left", "had left/left", "left/leaves"],     answer: 2,     englishExplanation: "🎖️ This uses the Past Perfect tense because the soldiers finished leaving before the enemy arrived (which is in the Simple Past). 'Had left' shows the earlier action, and 'left' or 'arrived' shows the later action. 💡",     amharicExplanation: "🎖️ ይህ ያለፈ ፍጹም ጊዜን ይጠቀማል ምክንያቱም ወታደሮቹ መውጣታቸውን ከጠላት ከመድረሱ (ይህም በቀላል ያለፈ ጊዜ ነው) በፊት ስለጨረሱ ነው። 'Had left' ቀደምቱን እርምጃ ያሳያል፣ 'left' ወይም 'arrived' ደግሞ የኋለኛውን እርምጃ ያሳያል። 💡" },{     question: "Alan was ten kilos overweight. That was why medical doctors ____________ him to go on a diet.",     options: [         "have been advised",         "advised",         "were advised",         "had been advised"     ],     answer: 1,     englishExplanation: "📝 The correct form is 'advised' because it matches the simple past tense used in the context of the sentence. 'Advised' is the past tense of 'advise' and perfectly fits the story about what the doctors recommended in the past. 💡",     amharicExplanation: "📝 ትክክለኛው ቃል 'advised' ነው ምክንያቱም በዓረፍተ ነገሩ ውስጥ ካለው ቀላል ያለፈ ጊዜ (simple past tense) ጋር ስለሚመሳሰል ነው። 'Advised' የ'advise' ያለፈ ጊዜ ሲሆን በዓረፍተ ነገሩ ውስጥ ያለውን የሐኪሞችን ያለፈ ምክር በትክክል ይገልጻል። 💡" },  {     question: "World war broke out when someone ____________ Franz Ferdinand at Sarajevo.",     options: [         "has assassinated",         "was assassinated",         "assassinated",         "assassinates"     ],     answer: 2,     englishExplanation: "🗺️ The correct answer is 'assassinated' because it correctly uses the simple past tense to indicate the action that happened in the past. We are stating a specific historical fact that occurred at a specific time. 💡",     amharicExplanation: "🗺️ ትክክለኛው መልስ 'assassinated' ነው ምክንያቱም በዓረፍተ ነገሩ ውስጥ ባለፈው ጊዜ የተከሰተውን ክስተት ለማመልከት ቀላል ያለፈ ጊዜን (simple past tense) በትክክል ስለሚጠቀም ነው። በተወሰነ ጊዜ የተከሰተን ታሪካዊ እውነታ ነው የምንናገረው። 💡" },  {     question: "Several face-mask packets ____________ in almost all health centers every day.",     options: [         "had been sold",         "have sold",         "are sold",         "were sold"     ],     answer: 2,     englishExplanation: "🏥 The sentence describes an ongoing action that happens regularly in the present. 'Every day' is a clear signal for the simple present tense. Therefore, 'are sold' correctly indicates a habitual action occurring in the present tense. 💡",     amharicExplanation: "🏥 ዓረፍተ ነገሩ በአሁን ጊዜ በመደበኛነት የሚከሰት ቀጣይነት ያለው እንቅስቃሴን ይገልጻል። 'Every day' ለቀላል የአሁን ጊዜ (simple present tense) ግልጽ ምልክት ነው። ስለዚህ 'are sold' በአሁን ጊዜ የሚከሰት ልማዳዊ እንቅስቃሴን በትክክል ይጠቁማል። 💡" },  {     question: "Supervisors found the corridor very dirty because the janitors ____________ it for days.",     options: [         "hadn't cleaned",         "have been cleaned",         "are not cleaned",         "must not be cleaned"     ],     answer: 0,     englishExplanation: "🧹 The corridor remained dirty because it was not cleaned before the supervisors found it. This requires the past perfect tense ('hadn't cleaned') because it refers to an action that happened before another past action (finding it dirty). 💡",     amharicExplanation: "🧹 ኮሪደሩ ቆሻሻ ሆኖ የቀረው በተቆጣጣሪዎቹ ከመገኘቱ በፊት ስላልጸዳ ነው። ይህ ከሌላ ያለፈ እንቅስቃሴ (ቆሻሻ ሆኖ መገኘት) በፊት የተከሰተን እንቅስቃሴ ስለሚያመለክት ያለፈ ፍጹም ጊዜን ('hadn't cleaned') ይጠይቃል። 💡" },  {     question: "It has been predicted that within the next 50 years, scientists ____________ prolong life up to 200 years.",     options: [         "are produced",         "will be produced",         "produced",         "will have produced"     ],     answer: 1,     englishExplanation: "🔮 The prediction is about a future event that is expected to happen within a specific timeframe. 'Will be produced' is the correct future simple tense used here to express what is expected to happen. 💡",     amharicExplanation: "🔮 ትንበያው በተወሰነ ጊዜ ውስጥ ይከሰታል ተብሎ ስለሚጠበቅ የወደፊት ክስተት ነው። 'Will be produced' እዚህ ላይ የሚጠበቀውን ነገር ለመግለጽ የሚያገለግል ትክክለኛው የወደፊት ቀላል ጊዜ (future simple tense) ነው። 💡" },  {     question: "We ____________ two chapters from communicative English courses.",     options: [         "already finished",         "already have finished",         "have already finished",         "finished"     ],     answer: 2,     englishExplanation: "📚 The sentence uses the present perfect tense to indicate that the action of finishing the chapters has been completed at an unspecified time before now. 'Have already finished' is the correct grammatical structure (has/have + past participle). 💡",     amharicExplanation: "📚 ዓረፍተ ነገሩ የምዕራፎችን ማጠናቀቅ ከአሁን በፊት ባልተወሰነ ጊዜ መጠናቀቁን ለማመልከት የአሁን ፍጹም ጊዜን (present perfect tense) ይጠቀማል። 'Have already finished' ትክክለኛው ሰዋሰዋዊ አወቃቀር ነው (has/have + past participle)። 💡" },  {     question: "The Greek philosopher Democritus, for example ____________ that technology is an imitation of nature.",     options: [         "believed",         "believes",         "has believed",         "has been believed"     ],     answer: 2,     englishExplanation: "🌟 The sentence refers to a belief held by Democritus that has persisted up to the present. 'Has believed' correctly indicates that this belief started in the past and continues to the present time. 💡",     amharicExplanation: "🌟 ዓረፍተ ነገሩ በዴሞክሪቶስ የተያዘ እና እስከ አሁን ድረስ የቀጠለ እምነትን ያመለክታል። 'Has believed' ይህ እምነት ከጥንት ጀምሮ እስከ አሁን ድረስ መቀጠሉን በትክክል ይገልጻል። 💡" },  {     question: "Ato Samuel ____________ our bank manager at the moment. He ____________ here for three years now.",     options: [         "has been/is",         "is/was",         "is/has been",         "was/is"     ],     answer: 2,     englishExplanation: "🏦 The first part of the sentence describes a current role, so 'is' is correct for present tense. The second part describes a duration that has continued up to now, so the present perfect tense 'has been' is correct. 💡",     amharicExplanation: "🏦 የዓረፍተ ነገሩ የመጀመሪያ ክፍል የአሁን ሚናን ስለሚገልጽ 'is' ለአሁን ጊዜ ትክክል ነው። ሁለተኛው ክፍል እስከ አሁን ድረስ የቀጠለውን ቆይታ ስለሚገልጽ የአሁን ፍጹም ጊዜ 'has been' ትክክል ነው። 💡" },  {     question: "John ate too much birthday cake, so he was sick. If he ____________ too much birthday cake, he ____________ sick.",     options: [         "had eaten/would have been",         "ate/would be",         "hadn't eaten/wouldn't have been",         "ate/will be"     ],     answer: 2,     englishExplanation: "🎂 This is a Type 3 (impossible) conditional sentence. It refers to a hypothetical situation in the past that did not happen. The structure is: If + past perfect (hadn't eaten) + would have + past participle (wouldn't have been). 💡",     amharicExplanation: "🎂 ይህ ዓይነት 3 (የማይቻል) ሁኔታዊ ዓረፍተ ነገር ነው። ባለፈው ጊዜ ያልተከሰተ መላምታዊ ሁኔታን ያመለክታል። አወቃቀሩ፡ If + past perfect (hadn't eaten) + would have + past participle (wouldn't have been) ነው። 💡" },  {     question: "This school ____________ in 1994. Since then, I ____________ in this school for 30 years.",     options: [         "built/am working",         "builds/worked",         "is built/was worked",         "was built/have worked"     ],     answer: 3,     englishExplanation: "🏫 The first blank requires the passive past tense to indicate that the school was built (an object). The second blank requires the present perfect tense because the action started in the past and has continued for 30 years up to the present. 💡",     amharicExplanation: "🏫 የመጀመሪያው ባዶ ቦታ ትምህርት ቤቱ እንደተገነባ (እቃ ስለሆነ) ለማመልከት ተገብሮ ያለፈ ጊዜን (passive past tense) ይጠይቃል። ሁለተኛው ባዶ ቦታ ድርጊቱ ከጥንት ጀምሮ እስከ አሁን ድረስ ለ30 ዓመታት ስለቀጠለ የአሁን ፍጹም ጊዜን (present perfect tense) ይጠይቃል። 💡" },  {     question: "John Grisham is a famous author who ____________ several thrillers. His latest book ____________ out a few months ago.",     options: [         "has written/came",         "wrote/came",         "was written/came",         "write/come"     ],     answer: 0,     englishExplanation: "✍️ The first blank describes his life's achievements up to the present, so the present perfect 'has written' is used. The second blank refers to a specific finished time in the past ('a few months ago'), so the simple past 'came' is used. 💡",     amharicExplanation: "✍️ የመጀመሪያው ባዶ ቦታ እስከ አሁን ድረስ ያሉትን የህይወት ስኬቶችን ስለሚገልጽ የአሁን ፍጹም ጊዜ 'has written' ይጠቀማል። ሁለተኛው ባዶ ቦታ በተወሰነ ያለፈ ጊዜ ('a few months ago') ስለሚያመለክት ቀላል ያለፈ ጊዜ 'came' ይጠቀማል። 💡" },  {     question: "He ____________ very thirsty when he replied...",     options: [         "feels",         "felt",         "was feeling",         "has felt"     ],     answer: 2,     englishExplanation: "💧 The past continuous tense 'was feeling' is used to indicate an ongoing state in the past. It emphasizes the state of being thirsty while he was replying. 💡",     amharicExplanation: "💧 ያለፈ ቀጣይ ጊዜ 'was feeling' በጥንት ጊዜ የነበረ ቀጣይ ሁኔታን ለማመልከት ያገለግላል። በምላሽ ሰጠበት ጊዜ የነበረውን የጥማት ሁኔታ ያጎላል። 💡" },  {     question: "\"I ____________ a bottle of lemonade that never ____________ out.\"",     options: [         "want, runs",         "wanted, runs",         "want, run",         "wanted, run"     ],     answer: 0,     englishExplanation: "🍋 The simple present tense 'want' is used to express a current desire. The simple present tense 'runs' is used to describe a habitual action (a lemonade that always runs out). 💡",     amharicExplanation: "🍋 ቀላል የአሁን ጊዜ 'want' የአሁን ፍላጎትን ለመግለጥ ያገለግላል። ቀላል የአሁን ጊዜ 'runs' ልማዳዊ እንቅስቃሴን ለመግለጥ ያገለግላል (ሁልጊዜ የሚያልቅ ሎሚ ጭማቂ)። 💡" },  {     question: "\"Great!\" said Sammy although he thought \"____________ true if I really want it?\"",     options: [         "will my wish come",         "does my wish come",         "has my wish come",         "is my wish coming"     ],     answer: 0,     englishExplanation: "🔮 The future simple tense 'will my wish come' is used to express a future possibility. Sammy is wondering if his wish will come true in the future. 💡",     amharicExplanation: "🔮 ቀላል የወደፊት ጊዜ 'will my wish come' የወደፊት እድልን ለመግለጥ ያገለግላል። ሳሚ ምኞቱ ወደፊት እውን ይሆን ወይ ብሎ እያሰበ ነው። 💡" },  {     question: "\"No problem,\" said the genie, and ____________ one instantly.",     options: [         "produces",         "produced",         "was producing",         "has produced"     ],     answer: 1,     englishExplanation: "✨ The simple past tense 'produced' is used to indicate a completed action in the past. The genie produced the bottle immediately after speaking. 💡",     amharicExplanation: "✨ ቀላል ያለፈ ጊዜ 'produced' ባለፈው ጊዜ የተጠናቀቀ እንቅስቃሴን ለማመልከት ያገለግላል። ጂኒው ከተናገረ በኋላ ወዲያውኑ ጠርሙሱን አመረተ። 💡" },  {     question: "Sammy picked up the bottle and ____________ all the lemonade in one go.",     options: [         "drinks",         "drank",         "was drinking",         "has drunk"     ],     answer: 1,     englishExplanation: "🧃 The simple past tense 'drank' is used to indicate a completed action in the past. He picked it up (past) and then drank all of it (past). 💡",     amharicExplanation: "🧃 ቀላል ያለፈ ጊዜ 'drank' ባለፈው ጊዜ የተጠናቀቀ እንቅስቃሴን ለማመልከት ያገለግላል። አነሳው (ያለፈ) እና ከዚያ ሁሉንም ጠጣው (ያለፈ)። 💡" },  {     question: "Magically, the bottle ____________ itself up again.",     options: [         "fills",         "filled",         "was filling",         "has filled"     ],     answer: 1,     englishExplanation: "🧞‍♂️ The simple past tense 'filled' is used to indicate a completed action in the past. The bottle completed the action of filling itself. 💡",     amharicExplanation: "🧞‍♂️ ቀላል ያለፈ ጊዜ 'filled' ባለፈው ጊዜ የተጠናቀቀ እንቅስቃሴን ለማመልከት ያገለግላል። ጠርሙሱ የመሙላቱን እንቅስቃሴ አጠናቋል። 💡" },  {     question: "Sammy drank all that, and exactly the same thing ____________ again.",     options: [         "happens",         "happened",         "was happening",         "has happened"     ],     answer: 1,     englishExplanation: "🔄 The simple past tense 'happened' is used to indicate a completed action in the past. After he drank, the exact same event occurred again in the past. 💡",     amharicExplanation: "🔄 ቀላል ያለፈ ጊዜ 'happened' ባለፈው ጊዜ የተጠናቀቀ እንቅስቃሴን ለማመልከት ያገለግላል። ከጠጣ በኋላ፣ ተመሳሳይ ክስተት በድጋሚ በያለፈው ጊዜ ተከስቷል። 💡" },  {     question: "\"You still ____________ two more wishes young man.\"",     options: [         "have",         "had",         "are having",         "has had"     ],     answer: 0,     englishExplanation: "🎁 The simple present tense 'have' is used to indicate a current state or fact. Sammy still possesses two more wishes right now. 💡",     amharicExplanation: "🎁 ቀላል የአሁን ጊዜ 'have' የአሁን ሁኔታን ወይም እውነታን ለማመልከት ያገለግላል። ሳሚ አሁን ሁለት ተጨማሪ ምኞቶች አሉት። 💡" },  {     question: "\"That's easy,\" said Sammy. \"I ____________ two more of these bottles of lemonade!\"",     options: [         "will have",         "have",         "am having",         "had"     ],     answer: 0,     englishExplanation: "🥤 The future simple tense 'will have' is used to express a future intention. Sammy is stating his intention to possess two more bottles in the future. 💡",     amharicExplanation: "🥤 ቀላል የወደፊት ጊዜ 'will have' የወደፊት ዓላማን ለመግለጽ ያገለግላል። ሳሚ በወደፊቱ ጊዜ ሁለት ተጨማሪ ጠርሙሶች የመያዝ ዓላማውን እየገለጸ ነው። 💡" }],
+        3: [{
+    question: "This problem __ by your brother yesterday.",
+    options: [
+        "is solved",
+        "will be solved",
+        "solves",
+        "was solved"
+    ],
+    answer: 3,
+    englishExplanation: "🔍 The sentence uses 'yesterday,' which is a past time marker. 🏗️ The subject 'problem' cannot solve itself; it receives the action. 🛠️ Therefore, we must use the Simple Past Passive Voice (was/were + past participle). ✅ 'Was solved' is the correct choice.",
+    amharicExplanation: "✨ 'Yesterday' ያለው ዓረፍተ ነገር ያለፈ ጊዜን ያሳያል። 🏗️ 'The problem' ችግሩ ራሱን መፍታት ስለማይችል ድርጊቱ በእሱ ላይ ተፈጽሟል ማለት ነው። 🛠️ በዚህ ምክንያት ያለፈ ጊዜ ያለው የ Passive Voice ቅርፅ (was + 3rd form of verb) መጠቀም አለብን። ✅ 'Was solved' ትክክለኛው መልስ ነው።"
+},
+
+{
+    question: "My father wrote this book. This book __ by my father.",
+    options: [
+        "will be wrote",
+        "was written",
+        "was write",
+        "will be written"
+    ],
+    answer: 1,
+    englishExplanation: "🔍 The original sentence is in the Simple Past (Active Voice). 🤖 When converting to Passive Voice, the object 'This book' becomes the subject. 🛠️ The verb changes to 'was/were + V3' (Past Participle). 'Written' is the V3 of 'write'. ✅ The correct answer is 'was written'.",
+    amharicExplanation: "🔍 ዋናው ዓረፍተ ነገር በንቃተ ህሊና (Active) ያለፈ ጊዜ ነው። 🤖 ወደ Passive ስንቀይር 'This book' ርዕሰ ጉዳይ (Subject) ይሆናል። 🛠️ ቀስቃሹ ወደ 'was/were + ሶስተኛ ቅርፅ (V3)' ይቀየራል። 'Written' የ 'write' ሶስተኛ ቅርፅ ነው። ✅ ትክክለኛው መልስ 'was written' ነው።"
+},
+
+{
+    question: "This clock __ in 1750.",
+    options: [
+        "is made",
+        "was made",
+        "is making",
+        "will be made"
+    ],
+    answer: 1,
+    englishExplanation: "🕰️ 'In 1750' is a specific time in the past. 🏺 A clock is an object and cannot make itself; it is made by someone. 🛠️ Thus, the correct form is Simple Past Passive: 'was made'.",
+    amharicExplanation: "🕰️ 'In 1750' የተወሰነ ያለፈ ጊዜን ያሳያል። 🏺 ሰዓት ራሱን መስራት አይችልም፤ የተሰራው በሌላ ሰው ነው። 🛠️ ስለዚህ ያለፈ ጊዜ ያለው Passive Voice ('was made') ትክክል ነው።"
+},
+
+{
+    question: "Bronson scored a goal. Yes, a goal __ by Bronson.",
+    options: [
+        "is scored",
+        "will be scored",
+        "scored",
+        "was scored"
+    ],
+    answer: 3,
+    englishExplanation: "🔍 The first sentence 'Bronson scored' is in the Simple Past. 🤖 To convert to passive, we look at the tense and use 'was/were + V3'. Since 'a goal' is singular, we use 'was'. ✅ 'Was scored' is the answer.",
+    amharicExplanation: "🔍 የመጀመሪያው ዓረፍተ ነገር 'Bronson scored' ያለፈ ጊዜን ያሳያል። 🤖 ወደ Passive ለመቀየር ጊዜውን ተመልክተን 'was/were + V3' እንጠቀማለን። 'A goal' ነጠላ ስለሆነ 'was' እንጠቀማለን። ✅ ትክክለኛው መልስ 'was scored' ነው።"
+},
+
+{
+    question: "This job __ by my friend next week.",
+    options: [
+        "is done",
+        "did",
+        "will be done",
+        "was done"
+    ],
+    answer: 2,
+    englishExplanation: "⏳ 'Next week' indicates the Future Simple tense. 🏗️ The job will be completed by someone else. 🛠️ Therefore, we use the Future Simple Passive form: 'will be + V3' (will be done).",
+    amharicExplanation: "⏳ 'Next week' የወደፊትን ጊዜ ያሳያል። 🏗️ ስራው በሌላ ሰው ይጠናቀቃል። 🛠️ ስለዚህ የ Future Simple Passive ቅርፅን ('will be + V3') እንጠቀማለን።"
+},
+
+{
+    question: "This house was __ my grandfather.",
+    options: [
+        "build for",
+        "build by",
+        "builded for",
+        "built by"
+    ],
+    answer: 3,
+    englishExplanation: "🏠 We need a Past Participle (V3) after 'was'. The V3 of 'build' is 'built'. 🚶‍♂️ To show who performed the action in passive voice, we use the preposition 'by'. ✅ Therefore, 'built by' is correct.",
+    amharicExplanation: "🏠 ከ 'was' በኋላ ሶስተኛ ቅርፅ (V3) ያስፈልገናል። የ 'build' ሶስተኛ ቅርፅ 'built' ነው። 🚶‍♂️ ድርጊቱን የፈጸመውን ሰው ለማሳየት 'by' የሚለውን ቅድመ ሁኔታ እንጠቀማለን። ✅ ስለዚህ 'built by' ትክክል ነው።"
+},
+
+{
+    question: "This exercise will __ at home.",
+    options: [
+        "be doing",
+        "have done",
+        "do",
+        "be done"
+    ],
+    answer: 3,
+    englishExplanation: "⏳ The word 'will' suggests a future action. 🏗️ Since the exercise doesn't do itself, it is passive. 🛠️ The correct form for future passive is 'will + be + past participle'. So, 'will be done'.",
+    amharicExplanation: "⏳ 'Will' የወደፊትን ድርጊት ያሳያል። 🏗️ ልምምዱ ራሱን የሚሰራ ስላልሆነ የ Passive ነው። 🛠️ የወደፊት Passive ትክክለኛ ቅርፅ 'will + be + ሶስተኛ ቅርፅ' ነው። ስለዚህ 'will be done' ነው።"
+},
+
+{
+    question: "Was the window pane __ the children?",
+    options: [
+        "broke",
+        "broken by",
+        "broke for",
+        "broken for"
+    ],
+    answer: 1,
+    englishExplanation: "🪟 'Was' requires a past participle (V3) to form a passive question. The V3 of 'break' is 'broken'. 🚶‍♂️ Since the children caused the action, we use 'by' to identify the agent. ✅ 'Broken by' is correct.",
+    amharicExplanation: "🪟 'Was' የ Passive ጥያቄ ለመፍጠር ሶስተኛ ቅርፅ (V3) ይፈልጋል። የ 'break' ሶስተኛ ቅርፅ 'broken' ነው። 🚶‍♂️ ልጆቹ ድርጊቱን ስለፈጸሙ 'by' እንጠቀማለን። ✅ 'Broken by' ትክክል ነው።"
+},
+
+{
+    question: "All the beds were __ my grandmother.",
+    options: [
+        "made by",
+        "made her",
+        "make by",
+        "make for"
+    ],
+    answer: 0,
+    englishExplanation: "🛏️ 'Were' needs a V3 verb. The V3 of 'make' is 'made'. 👵 To show that the grandmother performed the action, we use 'by'. ✅ Thus, 'made by' is correct.",
+    amharicExplanation: "🛏️ 'Were' ሶስተኛ ቅርፅ ይፈልጋል። የ 'make' ሶስተኛ ቅርፅ 'made' ነው። 👵 ሴት አያትዋ ድርጊቱን መፈጸሟን ለማሳየት 'by' እንጠቀማለን። ✅ ስለዚህ 'made by' ትክክል ነው።"
+},
+
+{
+    question: "Many writers were __ Shakespeare.",
+    options: [
+        "influence by",
+        "influenced by",
+        "influence for",
+        "influenced for"
+    ],
+    answer: 1,
+    englishExplanation: "✍️ 'Were' requires V3, so 'influenced' is needed. 🎭 Shakespeare is the source or cause of the influence, so we use 'by'. ✅ 'Influenced by' is correct.",
+    amharicExplanation: "✍️ 'Were' ሶስተኛ ቅርፅ ይፈልጋል፤ ስለዚህ 'influenced' ያስፈልጋል። 🎭 ሼክስፒር የተፅዕኖው ምንጭ ስለሆነ 'by' እንጠቀማለን። ✅ 'Influenced by' ትክክል ነው።"
+},
+
+{
+    question: "The money __ stolen by the thieves if you leave it there.",
+    options: [
+        "was",
+        "will be",
+        "has been",
+        "is"
+    ],
+    answer: 1,
+    englishExplanation: "🚨 The 'if' clause uses the present tense ('leave'), which signals a real future possibility. ⏳ The action hasn't happened yet; it will happen in the future. 🛠️ Therefore, we need the Future Passive form: 'will be stolen'.",
+    amharicExplanation: "🚨 የ 'if' ክፍል የአሁንን ጊዜ ('leave') ስለሚጠቀም የወደፊት እድልን ያሳያል። ⏳ ድርጊቱ ገና አልተፈጸመም፤ በወደፊት ይፈጸማል። 🛠️ ስለዚህ የ Future Passive ቅርፅ 'will be stolen' ያስፈልገናል።"
+},
+
+{
+    question: "Mr. Johnson __ the book.",
+    options: [
+        "is translated",
+        "translated by",
+        "translated",
+        "was translated"
+    ],
+    answer: 2,
+    englishExplanation: "🕵️‍♂️ Mr. Johnson is the subject performing the action. 📖 The book is the object receiving the action. 🏃‍♂️ This is an Active Voice sentence in the Simple Past. ✅ 'Translated' is the correct verb form.",
+    amharicExplanation: "🕵️‍♂️ ሚስተር ጆንሰን ድርጊቱን የሚፈጽም ርዕሰ ጉዳይ ነው። 📖 መጽሐፉ ድርጊቱን የሚቀበል ነገር ነው። 🏃‍♂️ ይህ በያለፈ ጊዜ የነበረ የ Active Voice ዓረፍተ ነገር ነው። ✅ 'Translated' ትክክለኛው የግስ ቅርፅ ነው።"
+},
+
+{
+    question: "The policeman __ that man.",
+    options: [
+        "was arrested by",
+        "arrested for",
+        "arrested",
+        "will be arrested"
+    ],
+    answer: 2,
+    englishExplanation: "👮‍♂️ The policeman is the agent performing the action. 🚨 He is the subject. 📝 This is an Active Voice sentence in the past. ✅ 'Arrested' is the correct choice.",
+    amharicExplanation: "👮‍♂️ ፖሊሱ ድርጊቱን የሚፈጽም ርዕሰ ጉዳይ ነው። 🚨 እሱ ርዕሰ ጉዳይ ነው። 📝 ይህ በያለፈ ጊዜ የነበረ የ Active Voice ዓረፍተ ነገር ነው። ✅ 'Arrested' ትክክለኛው ምርጫ ነው።"
+},
+
+{
+    question: "We will __ by that teacher.",
+    options: [
+        "be teached",
+        "have taught",
+        "be taught",
+        "been taught"
+    ],
+    answer: 2,
+    englishExplanation: "👩‍🏫 'Will' indicates the future. 🏗️ The subject 'We' is receiving the action, so we must use passive voice. 🛠️ The structure for Future Passive is 'will be + V3'. ✅ 'Be taught' is correct (taught is V3).",
+    amharicExplanation: "👩‍🏫 'Will' የወደፊትን ያሳያል። 🏗️ ርዕሰ ጉዳዩ 'We' ድርጊቱን ይቀበላል፤ ስለዚህ Passive Voice መጠቀም አለብን። 🛠️ የ Future Passive መዋቅር 'will be + V3' ነው። ✅ 'Be taught' ትክክል ነው ('taught' ሶስተኛ ቅርፅ ነው)።"
+},
+
+{
+    question: "Many things __ in this house.",
+    options: [
+        "is said",
+        "are said",
+        "they say",
+        "they are said"
+    ],
+    answer: 1,
+    englishExplanation: "🗣️ 'Many things' is a plural subject. 📚 When using the present passive, plural subjects require the verb 'are' (are + V3). 🧠 'They say' is grammatically incorrect as a passive structure. ✅ 'Are said' is correct.",
+    amharicExplanation: "🗣️ 'Many things' የ ብዙ ቁጥር ርዕሰ ጉዳይ ነው። 📚 የአሁንን Passive ስንጠቀም ብዙ ቁጥር ያላቸው ርዕሰ ጉዳዮች 'are' (are + V3) ይፈልጋሉ። 🧠 'They say' በ Passive አወቃቀር ላይ ትክክል አይደለም። ✅ 'Are said' ትክክል ነው።"
+},
+
+{
+    question: "This mansion __ in 1750.",
+    options: [
+        "is built",
+        "was built",
+        "will be built",
+        "builded"
+    ],
+    answer: 1,
+    englishExplanation: "🏰 'In 1750' is a specific date in the past. ⏳ The mansion cannot build itself, so it's passive. 🛠️ The correct form is Simple Past Passive 'was built'. ✅ Note: 'builded' is not a word; the V3 is 'built'.",
+    amharicExplanation: "🏰 'In 1750' በያለፈ ጊዜ የነበረ የተወሰነ ቀን ነው። ⏳ ቤተ መንግስቱ ራሱን መገንባት ስለማይችል Passive ነው። 🛠️ ትክክለኛው ቅርፅ Simple Past Passive 'was built' ነው። ✅ ማሳሰቢያ፡ 'builded' ቃል አይደለም፤ ሶስተኛ ቅርፁ 'built' ነው።"
+},
+
+{
+    question: "They will __ this car soon.",
+    options: [
+        "be bought",
+        "buying",
+        "be buying",
+        "is bought"
+    ],
+    answer: 2,
+    englishExplanation: "🚗 'They' are the subject actively performing the action. 🏃‍♂️ Therefore, this is Future Continuous (Active Voice). 🛠️ The structure is 'will be + verb-ing'. ✅ 'Be buying' is correct. (Option A is passive, which is wrong because 'They' is the doer).",
+    amharicExplanation: "🚗 'They' ድርጊቱን በንቃት የሚፈጽም ርዕሰ ጉዳይ ነው። 🏃‍♂️ ስለዚህ ይህ Future Continuous (Active Voice) ነው። 🛠️ መዋቅሩ 'will be + ግስ + ing' ነው። ✅ 'Be buying' ትክክል ነው። (ምርጫ A የ Passive ነው፤ ትክክል አይደለም ምክንያቱም 'They' ሰሪው ነው)።"
+},
+
+{
+    question: "This car will __ soon.",
+    options: [
+        "be bought",
+        "be buying",
+        "buy",
+        "is bought"
+    ],
+    answer: 0,
+    englishExplanation: "🚗 The subject 'This car' is the object receiving the action; it will be bought by someone. 🏗️ This is Future Passive. 🛠️ The structure is 'will be + V3'. ✅ 'Be bought' is correct.",
+    amharicExplanation: "🚗 ርዕሰ ጉዳዩ 'This car' ድርጊቱን የሚቀበል ነገር ነው፤ በሌላ ሰው ይገዛል። 🏗️ ይህ Future Passive ነው። 🛠️ መዋቅሩ 'will be + V3' ነው። ✅ 'Be bought' ትክክል ነው።"
+},
+
+{
+    question: "The jar __ by the maid.",
+    options: [
+        "was broken",
+        "broke",
+        "broken",
+        "breaks"
+    ],
+    answer: 0,
+    englishExplanation: "🏺 The jar is the patient; it was broken by the maid. 🏗️ This indicates Simple Past Passive. 🛠️ Structure: was/were + V3. ✅ 'Was broken' is correct. 'Broken' alone is incomplete.",
+    amharicExplanation: "🏺 ማሰሮው ድርጊቱን ይቀበላል፤ በሜይዱ ተሰብሯል። 🏗️ ይህ Simple Past Passive ያሳያል። 🛠️ መዋቅር፡ was/were + V3። ✅ 'Was broken' ትክክል ነው። 'Broken' ብቻውን ያልተሟላ ነው።"
+},
+
+{
+    question: "The center forward __ a goal.",
+    options: [
+        "was scored",
+        "scoring",
+        "is scored",
+        "has scored"
+    ],
+    answer: 3,
+    englishExplanation: "⚽ The center forward is actively scoring the goal (Active Voice). 📅 The Present Perfect tense is used for actions that happened at an unspecified time before now. 🛠️ Structure: has/have + V3. ✅ 'Has scored' is correct.",
+    amharicExplanation: "⚽ ግራ ቀኝ አጥቂው ጎል በንቃት ነው የሚያስቆጥረው (Active Voice)። 📅 የ Present Perfect ጊዜ ከአሁን በፊት ባልተወሰነ ጊዜ ለተፈጸሙ ድርጊቶች ያገለግላል። 🛠️ መዋቅር፡ has/have + V3። ✅ 'Has scored' ትክክል ነው።"
+},
+
+{
+    question: "The fire __ an electrical fault.",
+    options: [
+        "is caused",
+        "caused by",
+        "was caused by",
+        "was caused for"
+    ],
+    answer: 2,
+    englishExplanation: "🔥 The fire happened in the past, so we use Simple Past Passive. 🏗️ The electrical fault is the source of the cause. 🛠️ To show the source of cause in passive voice, we use 'by'. ✅ 'Was caused by' is correct.",
+    amharicExplanation: "🔥 እሳቱ በያለፈ ጊዜ ተከስቷል፤ ስለዚህ Simple Past Passive እንጠቀማለን። 🏗️ የኤሌክትሪክ ችግር የእሳቱ ምንጭ ነው። 🛠️ በ Passive ውስጥ የመንስኤውን ምንጭ ለማሳየት 'by' እንጠቀማለን። ✅ 'Was caused by' ትክክል ነው።"
+},
+
+{
+    question: "The missing child __ these boys.",
+    options: [
+        "found",
+        "was found by",
+        "founded",
+        "was founded by"
+    ],
+    answer: 1,
+    englishExplanation: "👦 The child is the receiver of the action (passive). 🏗️ 'Was' is used because it is past tense. 🛠️ The boys are the doers, so we use 'by'. ✅ 'Was found by' is correct. ⚠️ Note: 'Founded' means to establish a company, which is a different word and incorrect here.",
+    amharicExplanation: "👦 ልጁ ድርጊቱን የሚቀበል ነው (Passive)። 🏗️ ያለፈ ጊዜ ስለሆነ 'Was' እንጠቀማለን። 🛠️ ልጆቹ ሰሪዎች ስለሆኑ 'by' እንጠቀማለን። ✅ 'Was found by' ትክክል ነው። ⚠️ ማሳሰቢያ፡ 'Founded' ማለት ኩባንያ መመስረት ማለት ነው፤ የተለየ ቃል ነው እና እዚህ ላይ ትክክል አይደለም።"
+},
+
+{
+    question: "This car __ by Johnson in the morning tomorrow.",
+    options: [
+        "will drive",
+        "will be driven",
+        "is driven",
+        "has driven"
+    ],
+    answer: 1,
+    englishExplanation: "🚗 'Tomorrow' indicates the future. 🏗️ The car is receiving the action (it will be driven by Johnson). 🛠️ Therefore, this is the Future Passive (will be + V3). ✅ 'Will be driven' is correct.",
+    amharicExplanation: "🚗 'Tomorrow' የወደፊትን ያሳያል። 🏗️ መኪናው ድርጊቱን ይቀበላል (በጆንሰን ይነዳል)። 🛠️ ስለዚህ ይህ Future Passive (will be + V3) ነው። ✅ 'Will be driven' ትክክል ነው።"
+},
+
+{
+    question: "The center forward __ two goals.",
+    options: [
+        "were scored",
+        "was scored",
+        "scored",
+        "were scored for"
+    ],
+    answer: 2,
+    englishExplanation: "⚽ The center forward is the subject actively scoring goals (Active Voice). 🏗️ The verb is in the Simple Past. 🛠️ 'Scored' fits perfectly. (Passive forms 'was scored' are wrong because the player is the doer, not the receiver).",
+    amharicExplanation: "⚽ ግራ ቀኝ አጥቂው ጎሎችን በንቃት የሚያስቆጥር ርዕሰ ጉዳይ ነው (Active Voice)። 🏗️ ግሱ በ Simple Past ነው። 🛠️ 'Scored' በትክክል ይስማማል። (የ Passive ቅርፆች 'was scored' ትክክል አይደሉም ምክንያቱም ተጫዋቹ ሰሪው ነው እንጂ ተቀባዩ አይደለም)።"
+},
+
+{
+    question: "Therefore, it is important that bad celebrities should __ (take) off TV.",
+    options: [
+        "take",
+        "are taken",
+        "be taken",
+        "have taken"
+    ],
+    answer: 2,
+    englishExplanation: "📺 'Should be...' is used to give a suggestion or recommendation. 🏗️ The celebrities are the receivers of the action (removing them from TV), making it passive. 🛠️ After the modal 'should', we use the base form 'be' + V3. ✅ 'Be taken' is correct.",
+    amharicExplanation: "📺 'Should be...' ምክር ወይም የውሳኔ ሃሳብ ለመስጠት ያገለግላል። 🏗️ ታዋቂ ሰዎች ድርጊቱን ይቀበላሉ (ከቲቪ ላይ መወገድ)፤ ይህም Passive ያደርገዋል። 🛠️ ከ 'should' በኋላ መሰረታዊውን 'be' + V3 እንጠቀማለን። ✅ 'Be taken' ትክክል ነው።"
+}],
         4: [],
         5: []
 
