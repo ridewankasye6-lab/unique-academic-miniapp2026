@@ -16000,7 +16000,359 @@ const quizData = {
   amharicExplanation:
     "አዋሽ ወንዝ ወደ ባህር ወይም ውቅያኖስ የማይደርስ የውስጥ ማፋሰሻ (inland drainage) ነው። ወደ ሰሜን ምስራቅ አቅጣጫ በመፍሰስ በኢትዮጵያና ጅቡቲ ድንበር አካባቢ በሚገኘው የአቤ ሀይቅ አካባቢ ያበቃል።"
 }],
-        5: []
+        5: [ {
+    question: "Which one of the following lapse rates is characterized by the actual, observed change of temperature with altitude?",
+    options: [
+        "Atmospheric lapse rate",
+        "Wet adiabatic lapse rate",
+        "Dry adiabatic lapse rate",
+        "B and C",
+        "None"
+    ],
+    answer: 0,
+    englishExplanation: "The atmospheric lapse rate, also called the environmental lapse rate, describes the actual change in air temperature observed as altitude increases at a specific place and time. 🌡️📈",
+    amharicExplanation: "የከባቢ አየር ላፕስ ሬት (Atmospheric lapse rate) በተወሰነ ቦታና ጊዜ ከፍታ ሲጨምር በተግባር የሚታየውን የአየር ሙቀት ለውጥ ይገልጻል። 🌡️🏔️"
+},
+
+{
+    question: "The majority of Ethiopian regions receive rainfall during the summer season EXCEPT the:",
+    options: [
+        "Western lowlands",
+        "North western highlands",
+        "North-central massifs",
+        "Afar and southeastern lowlands"
+    ],
+    answer: 3,
+    englishExplanation: "Most parts of Ethiopia receive significant rainfall during the summer or Kiremt season because of the northward movement of the Intertropical Convergence Zone (ITCZ). However, the Afar and southeastern lowlands receive little rainfall and remain relatively dry. 🌧️🇪🇹",
+    amharicExplanation: "በኢትዮጵያ አብዛኛዎቹ አካባቢዎች በክረምት (Kiremt) ወቅት በITCZ እንቅስቃሴ ምክንያት በቂ ዝናብ ያገኛሉ። ሆኖም የአፋርና የደቡብ ምስራቅ ቆላማ አካባቢዎች በዚህ ወቅት አነስተኛ ዝናብ ስለሚያገኙ በአብዛኛው ደረቅ ይሆናሉ። ☀️🏜️"
+},
+
+{
+    question: "Which geographical area of Ethiopia receives rain from the northeasterly winds?",
+    options: [
+        "Central highland",
+        "Afar lowland",
+        "Southeastern highland",
+        "Southeastern lowland"
+    ],
+    answer: 1,
+    englishExplanation: "The Afar lowland can receive rainfall associated with northeasterly winds, particularly during the winter season. These winds may bring limited moisture to the region compared with the major summer rainfall systems. 💨🌦️",
+    amharicExplanation: "የአፋር ቆላማ አካባቢ ከሰሜን ምስራቅ አቅጣጫ በሚነፉ ነፋሶች የሚመጣ ውስን ዝናብ ሊያገኝ ይችላል፣ በተለይም በበጋ ወቅት። ይህ ዝናብ ከዋናው የክረምት የዝናብ ሥርዓት ጋር ሲነፃፀር አነስተኛ ነው። 💨🌧️"
+},
+
+{
+    question: "All of the following are true about equinox events EXCEPT:",
+    options: [
+        "The length of day and night are equal",
+        "The sun's rays reach their highest point above the equator",
+        "The sun's rays shine most directly on the equator",
+        "They occur in March and September"
+    ],
+    answer: 1,
+    englishExplanation: "During an equinox, the Sun's direct rays fall on the equator, and day and night are approximately equal in length around the world. Equinoxes occur around March and September. Therefore, the incorrect statement is that the Sun's rays reach their highest point above the equator. 🌍⚖️",
+    amharicExplanation: "በኢኩኖክስ ወቅት የፀሐይ ጨረሮች በቀጥታ በምድር ወገብ ላይ ይደርሳሉ፣ እንዲሁም የቀንና የሌሊት ርዝመት በአብዛኛው እኩል ይሆናል። ኢኩኖክስ በመጋቢትና በመስከረም አካባቢ ይከሰታል። ስለዚህ 'የፀሐይ ጨረሮች ከምድር ወገብ በላይ ከፍተኛ ነጥብ ይደርሳሉ' የሚለው ትክክል አይደለም። ☀️🌐"
+},
+
+{
+    question: "Identify the incorrect statement:",
+    options: [
+        "In Ethiopia the highest temperature is recorded in the months of winter season",
+        "In Ethiopia, September 23rd marks the onset of autumn season",
+        "In Ethiopia winter season occurs when the sun is directly overhead above the Tropic of Capricorn",
+        "September 23rd and March 20th days and nights are equal throughout the world"
+    ],
+    answer: 0,
+    englishExplanation: "The incorrect statement is that Ethiopia records its highest temperatures during the winter season. In general, the hottest period in many parts of Ethiopia occurs during the dry months before the main summer rains, especially from March to May. The winter or Bega season is generally dry and relatively cooler. 🔥🌡️",
+    amharicExplanation: "ትክክል ያልሆነው መግለጫ በኢትዮጵያ ከፍተኛ ሙቀት በበጋ ወቅት ይመዘገባል የሚለው ነው። በአብዛኛው የኢትዮጵያ አካባቢዎች በጣም ሞቃታማው ጊዜ ከዋናው የክረምት ዝናብ በፊት፣ በተለይም ከመጋቢት እስከ ግንቦት ነው። የበጋ ወቅት በአጠቃላይ ደረቅና በአንፃራዊነት ቀዝቃዛ ነው። 🌤️❄️"
+},
+
+{
+    question: "What does the Earth's tilt cause?",
+    options: [
+        "The seasons",
+        "Day and night",
+        "Tsunamis",
+        "Earthquakes"
+    ],
+    answer: 0,
+    englishExplanation: "The Earth's axial tilt, together with its revolution around the Sun, causes the seasons. As Earth moves around the Sun, different hemispheres receive different angles and amounts of sunlight during the year. 🌍☀️🍂",
+    amharicExplanation: "የምድር ዘንበል (axial tilt) ከፀሐይ ዙሪያ ከምታደርገው ሽክርክሪት ጋር በመጣመር ወቅቶችን ያስከትላል። ምድር በፀሐይ ዙሪያ ስትዞር የተለያዩ የምድር ክፍሎች የተለያየ መጠንና አቅጣጫ ያለው የፀሐይ ብርሃን ያገኛሉ። 🌎☀️🍃"
+},
+
+{
+    question: "Which of the following best describes the tilt of the Earth during the spring and fall equinoxes?",
+    options: [
+        "The Earth is tilted away from the Sun in the Northern Hemisphere",
+        "The Earth is tilted neither toward nor away from the Sun",
+        "The Earth is tilted toward the Sun in the Northern Hemisphere",
+        "The Earth is not tilted during spring and fall"
+    ],
+    answer: 1,
+    englishExplanation: "During the spring and fall equinoxes, neither hemisphere is tilted toward or away from the Sun. The Earth's axis remains tilted, but its position relative to the Sun is side-to-side. This allows the Sun's direct rays to fall on the equator and produces nearly equal lengths of day and night. 🌍☀️⚖️",
+    amharicExplanation: "በፀደይና በመፀው ኢኩኖክስ ወቅት ምድር አንዱ ንፍቀ ክበብ ወደ ፀሐይ ወይም ከፀሐይ ርቆ አይዘብልም። የምድር ዘንግ አሁንም የተዘነበለ ቢሆንም ከፀሐይ አንፃር ከጎን ወደ ጎን ይገኛል። ይህም የፀሐይ ቀጥተኛ ጨረሮች በምድር ወገብ ላይ እንዲደርሱና ቀንና ሌሊት በአብዛኛው እኩል እንዲሆኑ ያደርጋል። 🌞🌍⚖️"
+},{
+    question: "The Inter-Tropical Convergence Zone is a zone where poleward-flowing air masses meet.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "The Inter-Tropical Convergence Zone (ITCZ) is located near the equator, where trade winds from the Northern and Southern Hemispheres converge. These winds move generally toward the equatorial low-pressure zone, not poleward. 🌍💨",
+    amharicExplanation: "የኢንተር-ትሮፒካል ኮንቨርጀንስ ዞን (ITCZ) ከምድር ወገብ አካባቢ የሚገኝ ሲሆን ከሰሜንና ከደቡብ ንፍቀ ክበብ የሚመጡ የንግድ ነፋሶች የሚገናኙበት ቦታ ነው። እነዚህ ነፋሶች ወደ ዋልታ ሳይሆን ወደ ምድር ወገብ አቅጣጫ ይንቀሳቀሳሉ። 🌍💨"
+},
+
+{
+    question: "During the summer solstice, the Northern Hemisphere has its maximum tilt toward the Sun and experiences the longest daylight of the year.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "During the summer solstice, around June 21, the Northern Hemisphere is tilted most directly toward the Sun. This causes it to receive more direct sunlight and experience the longest day of the year. ☀️🕒",
+    amharicExplanation: "በበጋ ሶልስቲስ ወቅት፣ በሰኔ 21 አካባቢ፣ የሰሜን ንፍቀ ክበብ ወደ ፀሐይ በከፍተኛ ሁኔታ ይዘነብላል። ይህም ብዙ ቀጥተኛ የፀሐይ ብርሃን እንዲያገኝና የዓመቱን ረጅሙን ቀን እንዲያጋጥመው ያደርጋል። ☀️🕒"
+},
+
+{
+    question: "Autumn and spring rainfall is dominant in the western and southwestern highlands and lowlands of Ethiopia.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Autumn and spring rainfall is more dominant in the southeastern parts of Ethiopia, especially the southeastern lowlands. These areas receive moisture from winds associated with the Indian Ocean during the transitional seasons. 🌧️🌊",
+    amharicExplanation: "የመፀውና የፀደይ ዝናብ በዋናነት በኢትዮጵያ ደቡብ ምስራቅ አካባቢዎች፣ በተለይም በደቡብ ምስራቅ ቆላማ ክልሎች የበላይ ነው። በእነዚህ ወቅቶች ከህንድ ውቅያኖስ ጋር በተያያዙ ነፋሶች እርጥበት ያገኛሉ። 🌧️🌊"
+},
+
+{
+    question: "Because of altitudinal effect, the amount of insolation and temperature decreases as one moves poleward from the equator.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "As one moves from the equator toward the poles, insolation and temperature mainly decrease because of latitude, not altitude. Higher latitudes receive sunlight at a lower angle, while altitude affects temperature mainly according to elevation. 🧭☀️",
+    amharicExplanation: "ከምድር ወገብ ወደ ዋልታ ሲንቀሳቀሱ የፀሐይ ጨረርና የሙቀት መጠን መቀነስ በዋናነት በኬክሮስ ምክንያት እንጂ በከፍታ ምክንያት አይደለም። ከፍታ በዋናነት በቦታው ከፍታ መጠን መሠረት በሙቀት ላይ ተጽእኖ ያደርጋል። 🧭☀️"
+},
+
+{
+    question: "The countries that contribute more to climate change are more vulnerable to its adverse impacts than countries that contribute less.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Many countries that contribute the least to climate change are among the most vulnerable to its harmful effects. Lower-income countries often have fewer resources to adapt to droughts, floods, food shortages, and other climate-related disasters. 🌍⚠️",
+    amharicExplanation: "ለአየር ንብረት ለውጥ አነስተኛ አስተዋጽኦ የሚያደርጉ ብዙ አገሮች ለአሉታዊ ተጽእኖዎቹ በጣም ተጋላጭ ናቸው። ዝቅተኛ ገቢ ያላቸው አገሮች ድርቅን፣ ጎርፍን፣ የምግብ እጥረትንና ሌሎች የአየር ንብረት አደጋዎችን ለመቋቋም የተወሰነ አቅም አላቸው። 🌍⚠️"
+},
+
+{
+    question: "Spatially, the lowest and highest mean annual temperatures are recorded in the Bale Mountains and Afar Depression respectively.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "The Bale Mountains have very low mean annual temperatures because of their high elevation. In contrast, the Afar Depression is one of Ethiopia's hottest regions because of its very low altitude and arid environment. 🏔️🔥",
+    amharicExplanation: "የባሌ ተራሮች ከፍታቸው በጣም ከፍተኛ ስለሆነ ዝቅተኛ አማካይ ዓመታዊ ሙቀት ይመዘገብባቸዋል። በተቃራኒው የአፋር ዲፕሬሽን ዝቅተኛ ከፍታና ደረቅ ሁኔታ ስላለው ከኢትዮጵያ በጣም ሞቃታማ አካባቢዎች አንዱ ነው። 🏔️🔥"
+},
+
+{
+    question: "Each day after the summer solstice, the days get longer and longer until the fall equinox.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "After the summer solstice, daylight hours gradually become shorter in the Northern Hemisphere until the autumn equinox. The summer solstice marks the longest day of the year. 📉🌅",
+    amharicExplanation: "ከበጋ ሶልስቲስ በኋላ በሰሜን ንፍቀ ክበብ የቀን ብርሃን ሰዓታት ቀስ በቀስ ይቀንሳሉ፣ እስከ መፀው ኢኩኖክስ ድረስ። የበጋ ሶልስቲስ የዓመቱ ረጅሙ ቀን ነው። 📉🌅"
+},
+
+{
+    question: "The climate of Ethiopia is more highly controlled by its latitude than by altitude.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Although latitude affects Ethiopia's climate, altitude is generally more important. Ethiopia has large differences in elevation, and temperature usually decreases as altitude increases, creating diverse climatic conditions. 🏔️🌡️",
+    amharicExplanation: "ምንም እንኳን ኬክሮስ በኢትዮጵያ የአየር ንብረት ላይ ተጽእኖ ቢያደርግም፣ ከፍታ በአጠቃላይ የበለጠ ጠቃሚ ነው። ኢትዮጵያ ትልቅ የከፍታ ልዩነት ስላላት ከፍታ ሲጨምር የሙቀት መጠን በአብዛኛው ይቀንሳል፣ ይህም የተለያዩ የአየር ንብረት ሁኔታዎችን ይፈጥራል። 🏔️🌡️"
+},
+
+{
+    question: "The response to global warming may increase or decrease climate change impacts on ecosystems.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "Human responses to global warming can either reduce or worsen climate impacts on ecosystems. Actions such as conservation and reforestation can reduce damage, while continued environmental destruction can make ecosystem problems worse. 🌳🦋",
+    amharicExplanation: "ሰዎች ለአለም ሙቀት መጨመር የሚሰጡት ምላሽ በስነ-ምህዳር ላይ ያለውን ጉዳት ሊቀንስ ወይም ሊያባብስ ይችላል። እንደ ደን ጥበቃና ደን መልሶ መትከል ያሉ እርምጃዎች ጉዳትን ይቀንሳሉ፣ የአካባቢ ጥፋት ግን ችግሩን ያባብሳል። 🌳🦋"
+},
+
+{
+    question: "Awash and Nekemte are located on approximately the same latitude (9°N), therefore they experience similar annual average temperatures.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "Latitude is not the only factor controlling temperature. Awash and Nekemte have very different elevations, and higher places are generally cooler. Therefore, they can have different annual average temperatures despite being on similar latitudes. 🗺️🏔️",
+    amharicExplanation: "ኬክሮስ ብቻ የሙቀት መጠንን የሚወስን ነገር አይደለም። አዋሽና ነቀምቴ የተለያየ ከፍታ አላቸው፣ እና ከፍ ያሉ ቦታዎች በአብዛኛው ቀዝቃዛ ናቸው። ስለዚህ ተመሳሳይ ኬክሮስ ቢኖራቸውም የተለያየ አማካይ ዓመታዊ ሙቀት ሊኖራቸው ይችላል። 🗺️🏔️"
+},
+
+{
+    question: "When there is an absence of rainfall in Addis Ababa for three consecutive weeks, it is a sign of climate change.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "A three-week absence of rainfall is a short-term weather event. Climate change refers to long-term changes in average weather patterns over many years or decades, not a single short period. 🌦️📆",
+    amharicExplanation: "በአዲስ አበባ ለሶስት ተከታታይ ሳምንታት ዝናብ አለመኖር የአጭር ጊዜ የአየር ሁኔታ ክስተት ነው። የአየር ንብረት ለውጥ ግን ለብዙ ዓመታት ወይም ለአስርት ዓመታት በአማካይ የአየር ሁኔታ ቅርፅ ላይ የሚታይ የረጅም ጊዜ ለውጥ ነው። 🌦️📆"
+},
+
+{
+    question: "What is climate?",
+    options: [
+        "The amount of rain an area receives",
+        "The condition of the atmosphere at a certain place and time",
+        "The temperature of the air",
+        "The average weather over an extended period of time"
+    ],
+    answer: 3,
+    englishExplanation: "Climate refers to the long-term average pattern of weather in a particular area. It includes average temperature, rainfall, wind, and other weather conditions over many years. 🌍📊",
+    amharicExplanation: "የአየር ንብረት በአንድ አካባቢ ለረጅም ጊዜ የሚታየውን አማካይ የአየር ሁኔታ ቅርፅ ያመለክታል። አማካይ ሙቀትን፣ ዝናብን፣ ነፋስንና ሌሎች የአየር ሁኔታዎችን ለብዙ ዓመታት ያካትታል። 🌍📊"
+},
+
+{
+    question: "Which agro-ecological zone of Ethiopia has the least share of the country's landmass?",
+    options: [
+        "Cold to moist",
+        "Hot arid",
+        "Warm semiarid",
+        "Cool to humid"
+    ],
+    answer: 0,
+    englishExplanation: "The cold to moist agro-ecological zone, commonly associated with the Wurch highland zone, occupies the smallest proportion of Ethiopia's total land area. It is limited to very high mountain areas. 🏔️🗺️",
+    amharicExplanation: "ቀዝቃዛ እስከ እርጥብ የተባለው የአግሮ-ኢኮሎጂ ዞን፣ በአብዛኛው ከወርች ከፍተኛ ተራራማ አካባቢዎች ጋር የሚዛመድ፣ ከኢትዮጵያ ጠቅላላ የመሬት ስፋት ትንሹን ድርሻ ይይዛል። በጣም ከፍ ባሉ ተራራማ አካባቢዎች ብቻ ይገኛል። 🏔️🗺️"
+},
+
+{
+    question: "The general weather of an area over a long period of time is known as the ________.",
+    options: [
+        "Climate",
+        "Community",
+        "Barometer",
+        "Cold Front"
+    ],
+    answer: 0,
+    englishExplanation: "Climate describes the general or average weather conditions of an area over a long period of time. It includes long-term patterns of temperature, rainfall, and other atmospheric conditions. ⏳🌤️",
+    amharicExplanation: "የአየር ንብረት በአንድ አካባቢ ለረጅም ጊዜ የሚታየውን አጠቃላይ ወይም አማካይ የአየር ሁኔታ ይገልጻል። የረጅም ጊዜ የሙቀት፣ የዝናብና የሌሎች የከባቢ አየር ሁኔታዎችን ቅርፅ ያካትታል። ⏳🌤️"
+},
+
+{
+    question: "You hear someone say, 'The average temperature this week was 79 degrees.' What does this statement describe?",
+    options: [
+        "Tides",
+        "Weather",
+        "Current",
+        "Climate"
+    ],
+    answer: 1,
+    englishExplanation: "A weekly average temperature describes weather because it refers to atmospheric conditions over a short period. Climate requires observations over much longer periods, usually decades. 🌡️🗓️",
+    amharicExplanation: "የአንድ ሳምንት አማካይ የሙቀት መጠን የአየር ሁኔታን ይገልጻል፣ ምክንያቱም የአጭር ጊዜ የከባቢ አየር ሁኔታን ያመለክታል። የአየር ንብረት ግን ለብዙ ዓመታት፣ በተለምዶ ለአስርት ዓመታት የሚደረግ ምልከታ ያስፈልገዋል። 🌡️🗓️"
+},
+
+{
+    question: "A student climbs the stairs in her house on a summer day and notices that it is much hotter upstairs than downstairs. What is the best explanation for this?",
+    options: [
+        "Warm air moves upward in convection currents",
+        "The Coriolis effect heats air that is higher",
+        "The upstairs is closer to the Sun",
+        "Warm air sinks in convection currents"
+    ],
+    answer: 0,
+    englishExplanation: "Warm air is less dense than cool air, so it rises. Through convection, warm air moves upward and can accumulate near the upper floors of a building, making upstairs rooms warmer. 🏠⬆️",
+    amharicExplanation: "ሞቃት አየር ከቀዝቃዛ አየር ያነሰ ጥግግት ስላለው ወደ ላይ ይነሳል። በኮንቬክሽን ሂደት ሞቃት አየር ወደ ላይ በመንቀሳቀስ በህንፃው የላይኛው ፎቅ አካባቢ ሊከማች ይችላል፣ ስለዚህ የላይኛው ክፍል የበለጠ ሞቃት ይሆናል። 🏠⬆️"
+},
+
+{
+    question: "Which of the following is correct about the summer solstice of the Northern Hemisphere?",
+    options: [
+        "The overhead Sun lies on the Tropic of Capricorn",
+        "It occurs on both March 21 and September 23",
+        "The overhead Sun lies on the equator northwards",
+        "The overhead Sun lies on the Tropic of Cancer"
+    ],
+    answer: 3,
+    englishExplanation: "During the Northern Hemisphere's summer solstice, around June 21, the Sun's direct rays are overhead at the Tropic of Cancer. This produces the longest day of the year in the Northern Hemisphere. ☀️🌍",
+    amharicExplanation: "በሰሜን ንፍቀ ክበብ የበጋ ሶልስቲስ ወቅት፣ በሰኔ 21 አካባቢ፣ የፀሐይ ቀጥተኛ ጨረሮች በካንሰር ትሮፒክ ላይ ይደርሳሉ። ይህም በሰሜን ንፍቀ ክበብ የዓመቱን ረጅሙን ቀን ያስከትላል። ☀️🌍"
+},
+
+{
+    question: "The ________ is the air that surrounds the Earth.",
+    options: [
+        "Climate",
+        "Weather",
+        "Atmosphere",
+        "Wind"
+    ],
+    answer: 2,
+    englishExplanation: "The atmosphere is the layer of gases that surrounds the Earth. It provides the air needed for life and plays an important role in weather, climate, and protection from harmful solar radiation. 🌎💨",
+    amharicExplanation: "ከባቢ አየር (Atmosphere) ምድርን የሚከብብ የተለያዩ ጋዞች ንብርብር ነው። ለህይወት የሚያስፈልገውን አየር ያቀርባል እና በአየር ሁኔታ፣ በአየር ንብረትና ከጎጂ የፀሐይ ጨረር ጥበቃ ውስጥ አስፈላጊ ሚና አለው። 🌎💨"
+},
+
+{
+    question: "Among the following, which one does not characterize the Ethiopian climate?",
+    options: [
+        "It experiences high average annual temperature",
+        "Unlike altitude, latitude has significant influence on its climate condition",
+        "Temperature decreases from the peripheries towards the central part of the country",
+        "Tropical climate predominates in the peripheral lowlands"
+    ],
+    answer: 1,
+    englishExplanation: "Altitude has a stronger influence than latitude on Ethiopia's climate because the country has major differences in elevation. Therefore, the statement suggesting that latitude is more important than altitude does not correctly characterize Ethiopian climate. 🏔️🌦️",
+    amharicExplanation: "ከፍታ በኢትዮጵያ የአየር ንብረት ላይ ከኬክሮስ የበለጠ ተጽእኖ አለው፣ ምክንያቱም ሀገሪቱ ትልቅ የከፍታ ልዩነት አላት። ስለዚህ ኬክሮስ ከከፍታ የበለጠ አስፈላጊ ነው የሚለው መግለጫ የኢትዮጵያን የአየር ንብረት በትክክል አይገልጽም። 🏔️🌦️"
+},
+
+{
+    question: "The sum total of weather conditions and variations over a large area for a long period of time is called:",
+    options: [
+        "Weather",
+        "Climate",
+        "Hot weather",
+        "Cold weather"
+    ],
+    answer: 1,
+    englishExplanation: "Climate is the combined average of weather conditions and their variations over a long period of time. It includes patterns of temperature, rainfall, wind, humidity, and extreme events. 📊🌤️",
+    amharicExplanation: "የአየር ንብረት ለረጅም ጊዜ የሚታዩ የአየር ሁኔታዎችና ለውጦቻቸው አጠቃላይ ድምር ነው። የሙቀት፣ የዝናብ፣ የነፋስ፣ የእርጥበትና የከፍተኛ የአየር ክስተቶችን ቅርፅ ያካትታል። 📊🌤️"
+},
+
+{
+    question: "The state of the atmosphere over an area at any point in time is known as:",
+    options: [
+        "Weather",
+        "Climate",
+        "Heat",
+        "Cold"
+    ],
+    answer: 0,
+    englishExplanation: "Weather is the current condition of the atmosphere at a specific place and time. It includes elements such as temperature, rainfall, humidity, cloud cover, and wind. 🌦️💨",
+    amharicExplanation: "የአየር ሁኔታ በተወሰነ ቦታና ጊዜ የከባቢ አየር ወቅታዊ ሁኔታ ነው። እንደ ሙቀት፣ ዝናብ፣ እርጥበት፣ ደመናና ነፋስ ያሉ ነገሮችን ያካትታል። 🌦️💨"
+},
+
+{
+    question: "Which of the following climatic controls is the most important?",
+    options: [
+        "Latitude",
+        "Altitude",
+        "Pressure and wind system",
+        "Continentality"
+    ],
+    answer: 0,
+    englishExplanation: "Latitude is considered one of the most important global controls of climate because it determines the angle and intensity of solar energy received by a location. Areas near the equator receive more direct sunlight than areas closer to the poles. ☀️📍",
+    amharicExplanation: "ኬክሮስ በአለም አቀፍ ደረጃ ከአየር ንብረት ዋና መቆጣጠሪያዎች አንዱ ነው፣ ምክንያቱም አንድ ቦታ የሚያገኘውን የፀሐይ ኃይል ማዕዘንና ጥንካሬ ይወስናል። ከምድር ወገብ አጠገብ ያሉ ቦታዎች ከዋልታ አካባቢ ካሉ ቦታዎች የበለጠ ቀጥተኛ የፀሐይ ብርሃን ያገኛሉ። ☀️📍"
+} ]
 
     },
 
