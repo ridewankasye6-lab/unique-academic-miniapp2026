@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logic Chapter 5 | Complete Study Notes</title>
-
     <style>
         /* =================================================
-           UNIQUE ACADEMIC
-           LOGIC CHAPTER 5 COMPLETE STUDY NOTES
-        ================================================= */
-
-        /* =================================================
-           ROOT
+           MARAKI NOTES DESIGN SYSTEM
         ================================================= */
         :root {
-            --bg-color: #f3f4f6;
+            --bg-color: #f4f6f9;
             --card-bg: #ffffff;
             --text-main: #1f2937;
             --text-muted: #4b5563;
@@ -23,22 +17,16 @@
             --accent-green: #047857;
             --accent-orange: #c2410c;
             --accent-blue: #1d4ed8;
-            --border-color: #e5e7eb;
+            --border-color: #e2e8f0;
             --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
 
-        /* =================================================
-           RESET
-        ================================================= */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-        /* =================================================
-           BODY
-        ================================================= */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
@@ -50,9 +38,7 @@
             min-height: 100vh;
         }
 
-        /* =================================================
-           PAGE NAVIGATION
-        ================================================= */
+        /* PAGE NAVIGATION */
         .page-navigation {
             display: flex;
             justify-content: space-between;
@@ -75,26 +61,18 @@
             transform: scale(0.96);
         }
 
-        /* =================================================
-           BACK BUTTON
-        ================================================= */
         .back-btn {
             background-color: var(--primary-purple);
             color: white;
         }
 
-        /* =================================================
-           HOME BUTTON
-        ================================================= */
         .home-btn {
             background-color: white;
             color: var(--primary-purple);
             border: 1px solid var(--border-color);
         }
 
-        /* =================================================
-           HEADER
-        ================================================= */
+        /* HEADER */
         header {
             background: linear-gradient(135deg, #6b21a8, #4c1d95);
             color: white;
@@ -117,9 +95,7 @@
             color: white;
         }
 
-        /* =================================================
-           NOTES CARD
-        ================================================= */
+        /* CARD CONTAINER */
         .card {
             background-color: var(--card-bg);
             border-radius: 16px;
@@ -127,28 +103,34 @@
             margin-bottom: 16px;
             border: 1px solid var(--border-color);
             box-shadow: var(--shadow);
+            border-left: 4px solid #3b82f6;
         }
 
-        /* =================================================
-           HEADINGS
-        ================================================= */
+        /* HEADINGS */
         h2 {
             font-size: 1.2rem;
             color: var(--primary-purple);
             margin-bottom: 12px;
-            border-bottom: 2px solid #f3e8ff;
+            border-bottom: 2px solid #10b981;
             padding-bottom: 6px;
         }
 
         h3 {
             font-size: 1.05rem;
-            color: var(--text-main);
-            margin: 12px 0 8px 0;
+            color: var(--accent-green);
+            margin: 14px 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
-        /* =================================================
-           TEXT
-        ================================================= */
+        h4 {
+            font-size: 0.98rem;
+            color: var(--text-main);
+            margin: 10px 0 6px 0;
+        }
+
+        /* TEXT & FORMATTING */
         p {
             margin-bottom: 10px;
             color: var(--text-muted);
@@ -157,7 +139,7 @@
 
         ul, ol {
             margin-bottom: 12px;
-            padding-left: 20px;
+            padding-left: 22px;
             color: var(--text-muted);
             font-size: 0.95rem;
         }
@@ -166,9 +148,10 @@
             margin-bottom: 6px;
         }
 
-        /* =================================================
-           HIGHLIGHT COLORS
-        ================================================= */
+        strong {
+            color: var(--accent-orange);
+        }
+
         .highlight-green {
             color: var(--accent-green);
             font-weight: 600;
@@ -184,55 +167,39 @@
             font-weight: 600;
         }
 
-        .highlight-purple {
-            color: var(--primary-purple);
-            font-weight: 600;
-        }
-
-        /* =================================================
-           EXAMPLE BOX
-        ================================================= */
+        /* BOXES */
         .example-box {
             background-color: #f9fafb;
             border-left: 4px solid #f59e0b;
-            padding: 10px 12px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
-            font-size: 0.9rem;
+            padding: 12px;
+            border-radius: 0 10px 10px 0;
+            margin: 12px 0;
+            font-size: 0.92rem;
             color: var(--text-main);
         }
 
-        /* =================================================
-           CASE BOX
-        ================================================= */
         .case-box {
             background-color: #eff6ff;
             border-left: 4px solid var(--accent-blue);
-            padding: 10px 12px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
-            font-size: 0.9rem;
+            padding: 12px;
+            border-radius: 0 10px 10px 0;
+            margin: 12px 0;
+            font-size: 0.92rem;
         }
 
-        /* =================================================
-           DIAGRAM & LOGIC BLOCK
-        ================================================= */
-        .logic-block {
-            background-color: #f3f4f6;
-            border-left: 3px solid var(--primary-purple);
+        blockquote {
+            background: #ffffff;
+            border-left: 3px solid #6b21a8;
             padding: 8px 12px;
-            font-family: monospace;
-            font-size: 0.88rem;
             margin: 8px 0;
-            border-radius: 0 6px 6px 0;
+            font-style: italic;
+            border-radius: 4px;
         }
 
-        /* =================================================
-           TABLE
-        ================================================= */
+        /* TABLE */
         .table-responsive {
             overflow-x: auto;
-            margin: 12px 0;
+            margin: 14px 0;
         }
 
         table {
@@ -243,7 +210,7 @@
         }
 
         th, td {
-            padding: 8px 10px;
+            padding: 10px;
             border: 1px solid var(--border-color);
         }
 
@@ -257,9 +224,7 @@
             background-color: #f9fafb;
         }
 
-        /* =================================================
-           FOOTER
-        ================================================= */
+        /* FOOTER */
         .footer {
             text-align: center;
             padding: 25px 10px;
@@ -267,235 +232,500 @@
             font-size: 0.82rem;
         }
 
-        /* =================================================
-           MOBILE RESPONSIVE
-        ================================================= */
         @media (max-width: 480px) {
-            body {
-                padding: 12px;
-            }
-
-            .page-navigation a {
-                padding: 10px 14px;
-                font-size: 14px;
-            }
-
-            header {
-                padding: 20px 14px;
-            }
-
-            header h1 {
-                font-size: 1.35rem;
-            }
-
-            .card {
-                padding: 16px 14px;
-            }
-
-            h2 {
-                font-size: 1.1rem;
-            }
+            body { padding: 10px; }
+            .card { padding: 14px 12px; }
+            h2 { font-size: 1.1rem; }
         }
     </style>
 </head>
-
 <body>
 
-<!-- =================================================
-     PAGE NAVIGATION
-================================================= -->
+<!-- PAGE NAVIGATION -->
 <div class="page-navigation">
     <a href="logic-notes.html" class="back-btn">← Back</a>
     <a href="index.html" class="home-btn">🏠 Home</a>
 </div>
 
-<!-- =================================================
-     LOGIC CHAPTER HEADER
-================================================= -->
+<!-- LOGIC CHAPTER HEADER -->
 <header>
     <h1>⚖️ Logic Chapter 5</h1>
-    <p>Informal Fallacies & Logical Reasoning Notes</p>
+    <p>Logical Reasoning & Fallacies — Maraki Notes Study Guide 🧠✨</p>
 </header>
 
-<!-- =================================================
-     CHAPTER 5 NOTES CONTENT
-================================================= -->
-<section>
+<!-- CHAPTER 5 CONTENT CONTAINER -->
+<div id="content-container">
 
-    <!-- 1. Introduction to Fallacies -->
-    <div class="card">
-        <h2>✳️ 1. Introduction to Fallacies</h2>
-        <p>In ordinary language, a <span class="highlight-orange">fallacy</span> refers to a false or mistaken belief. However, in formal logic, a fallacy is a <span class="highlight-purple">defect or flaw in an argument</span> that makes it weak or invalid.</p>
+    <!-- CARD 1: MEANING & CAUSES OF FALLACY -->
+    <section class="card">
+        <h2>✳️ 3.1. The Meaning of 'Fallacy'</h2>
         
+        <p><strong>📖 Ordinary Language Usage:</strong></p>
+        <p>In ordinary language usage, the term <strong>‘fallacy’</strong> refers to a mistaken or false belief ❌.</p>
+        
+        <p><strong>🧠 Logician's Point of View:</strong></p>
+        <p>However, from the logician point of view, the term fallacy refers to a <strong>defect in an argument</strong> ⚙️. Generally, fallacies can be committed because of:</p>
+        <ul>
+            <li>Logical error (error in reasoning) 🧠❌</li>
+            <li>The creation of some illusion that makes a bad argument appear good 🎭✨</li>
+        </ul>
+
         <div class="case-box">
-            <strong>❗️ Essential Concept:</strong> A fallacy is a reasoning error that often allows a bad argument to appear sound or persuasive on the surface.
+            <p><strong>📌 Soundness & Cogency Connection:</strong></p>
+            <p>If deductive arguments are <strong>unsound</strong> or if inductive arguments are <strong>uncogent</strong>, then they contain fallacies 🚫. This is because such kinds of arguments have one or more false premises or they contain a fallacy (or both) 🧱.</p>
         </div>
 
-        <h3>🔍 Causes of Fallacies</h3>
+        <h3>⚙️ Causes of Fallacies</h3>
+        <p>Causes of fallacies, among others, include:</p>
         <ul>
-            <li><strong>Deductive Failures:</strong> Unsoundness due to false premises or invalid structure.</li>
-            <li><strong>Inductive Failures:</strong> Uncogency due to weak premise-to-conclusion support.</li>
-            <li>Lack of relevant evidence or misapplication of concepts.</li>
-            <li>Ambiguous, vague, or misleading language.</li>
+            <li>The failure to provide genuine evidences or premises for the conclusion 🚫</li>
+            <li>The failure to provide premises that provide good support of the premises and conclusion 🏗️</li>
+            <li>The failure to address the most important or relevant aspects of the issue the arguer arguing for and so forth 🎯❌</li>
         </ul>
-    </div>
+    </section>
 
-    <!-- 2. Formal vs Informal Fallacies -->
-    <div class="card">
-        <h2>🧩 2. Formal vs. Informal Fallacies</h2>
-        <p>Fallacies are broadly categorized based on where the error occurs—in the structural form or the conceptual content.</p>
+    <!-- CARD 2: CLASSIFICATIONS OF FALLACIES -->
+    <section class="card">
+        <h2>📊 The Classifications of Fallacies</h2>
+        <p>Fallacies are usually divided into <strong>formal</strong> and <strong>informal</strong> 🗂️.</p>
 
         <h3>1️⃣ Formal Fallacies</h3>
-        <p>Structural flaws found exclusively in <span class="highlight-blue">deductive arguments</span>. They can be identified purely by inspecting the logical form.</p>
-        <div class="logic-block">
-            All A are B.<br>
-            All C are B.<br>
-            Therefore, all A are C. (Invalid Form)
+        <p><strong>Formal fallacies</strong> are those fallacies that arise from an error or mistake in the form or structure of an argument and they are found <strong>only in deductive arguments</strong> such as in categorical syllogisms, disjunctive syllogisms, and hypothetical syllogisms 📐.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Example of Formal Fallacy:</strong></p>
+            <blockquote>
+                All tigers are animals. 🐅<br>
+                All mammals are animals. 🐅<br>
+                👉 Therefore, all tigers are mammals. ❌
+            </blockquote>
+            <p><strong>🧩 Form Analysis:</strong> Let A = tigers, B = animals, C = mammals.</p>
+            <blockquote>
+                All A are B.<br>
+                All C are B.<br>
+                👉 Therefore, all A are C.
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> This argument is invalid, because the conclusion does not follow from the premises and the conclusion proves false for there is no any A which is also found in C 🚫.</p>
         </div>
 
         <h3>2️⃣ Informal Fallacies</h3>
-        <p>Logical errors that can only be detected by analyzing the actual <span class="highlight-orange">content and context</span> of the argument, rather than its structural pattern.</p>
+        <p><strong>Informal fallacies</strong> are fallacies that can be detected <strong>only through analysis of content</strong> of the argument 🔍. Informal fallacies are logical errors in the content of the argument but not in the structure or form of the argument 📝.</p>
+
         <div class="example-box">
-            <strong>Example:</strong><br>
-            All factories are plants.<br>
-            All plants contain chlorophyll.<br>
-            Therefore, all factories contain chlorophyll.<br>
-            <em>(Error: Shift in word meaning/content of "plant").</em>
+            <p><strong>📚 Example 1 (Chlorophyll):</strong></p>
+            <blockquote>
+                All factories are plants. 🏭<br>
+                All plants are things that contain chlorophyll. 🌿<br>
+                👉 Therefore, all factories are things that contain chlorophyll. ❌
+            </blockquote>
+            <p><strong>🧩 Form:</strong> All A are B. All B are C. Therefore, All A are C.</p>
+            <p><strong>🎯 Analysis:</strong> Since this form is valid, one might conclude that the argument itself is valid. But the argument is invalid since it has true premises and false conclusion 🚫. The word “plant” is used in two different senses. In the first premise it means a building where something is manufactured 🏭, and in the second it means a life form 🌿. Hence, the argument has the following invalid form (using two letters to indicate different meanings):</p>
+            <blockquote>
+                All A are B.<br>
+                All C are D.<br>
+                👉 Therefore, All A are D.
+            </blockquote>
         </div>
-    </div>
 
-    <!-- 3. Inductive Logic Strength -->
-    <div class="card">
-        <h2>⚖️ 3. Strength vs. Truth in Inductive Arguments</h2>
-        <p>Truth and strength operate independently. An argument with true premises can still be inductive-weak if the premises fail to provide sufficient probability for the conclusion.</p>
-        
+        <div class="example-box">
+            <p><strong>📚 Example 2 (Bank):</strong></p>
+            <blockquote>
+                All river banks are made of soil. 🌊<br>
+                First National is a bank. 🏦<br>
+                👉 Therefore, First National is made of soil. ❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Structurally looks fine, but fails because "bank" changes meaning mid-argument! 🎭</p>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Example 3 (Feather):</strong></p>
+            <blockquote>
+                A feather is light. 🪶<br>
+                What is light cannot be dark. 💡<br>
+                👉 Therefore, a feather cannot be dark. ❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> "Light" shifts from weight to color/luminosity. It's a content error! 🪶❌</p>
+        </div>
+
         <div class="case-box">
-            <strong>Key Rule:</strong> If all premises are true but the conclusion is probably false, the inductive argument is <strong>always weak</strong>.
+            <p><strong>💡 Key Distinction:</strong> Formal fallacies are always invalid; however informal fallacies can be valid. But their validity is not genuine and logical 🎭. The correctness of reasoning in informal fallacies is only from psychological and rhetoric sense of the argument. Therefore, the effect of an informal fallacy is to make a bad argument appear good ✨.</p>
         </div>
 
+        <h3>⚠️ Important Distinctions</h3>
         <div class="table-responsive">
             <table>
                 <thead>
                     <tr>
-                        <th>Premise</th>
-                        <th>Conclusion</th>
-                        <th>Strong</th>
-                        <th>Weak</th>
+                        <th>Aspect</th>
+                        <th>Formal Fallacies 📐</th>
+                        <th>Informal Fallacies 📝</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>True</td>
-                        <td>Probably True</td>
-                        <td>✓</td>
-                        <td>✓</td>
+                        <td><strong>Based on</strong></td>
+                        <td>Structure of the argument 🏗️</td>
+                        <td>Content and meaning 🔍</td>
                     </tr>
                     <tr>
-                        <td>False</td>
-                        <td>Probably False</td>
-                        <td>✓</td>
-                        <td>✓</td>
+                        <td><strong>Type</strong></td>
+                        <td>Found in deductive reasoning 📐</td>
+                        <td>Found in both deductive & inductive 🧠</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Detection</strong></td>
+                        <td>Easy to spot by checking the form  Checking</td>
+                        <td>Requires analysis of language & context 🗣️</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Validity</strong></td>
+                        <td>Always invalid ❌</td>
+                        <td>May appear valid, but not logically sound 🎭</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Effect</strong></td>
+                        <td>Conclusion doesn't follow from premises 🚫</td>
+                        <td>Appears convincing, but logically flawed ✨</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    </div>
 
-    <!-- 4. Classifications of Informal Fallacies -->
-    <div class="card">
-        <h2>📚 4. The 5 Classifications of Informal Fallacies</h2>
-        <p>Informal fallacies are traditionally categorized into five main groups:</p>
+        <h3>📌 Major Causes of Informal Fallacies</h3>
+        <ul>
+            <li>When the premise becomes <strong>irrelevant</strong> to the conclusion (see fallacies of relevance) 🎯❌</li>
+            <li>When the premise becomes <strong>unacceptable</strong> to the claims of the conclusion (see fallacies of presumption) 🛑</li>
+            <li>When the premise becomes <strong>insufficient</strong> to provide evidence (see fallacies of weak induction) 📊❌</li>
+            <li>When the premise is expressed by <strong>unclear language</strong> (see fallacies of ambiguity and grammatical analogy) 🗣️💬</li>
+        </ul>
+
+        <h3>🎭 Characteristics of Informal Fallacies</h3>
+        <ul>
+            <li>They are frequently backed by some <strong>motive on the part of the arguer to deceive</strong> the reader or listener 😈</li>
+            <li>The arguer may not have sufficient evidence and attempts to win acceptance by <strong>restoring to a trick</strong> 🃏</li>
+            <li>Sometimes the trick fools even the arguer into thinking they present genuine evidence when they are not 🤦‍♂️</li>
+        </ul>
+
+        <h3>🗂️ The Five Major Classifications of Informal Fallacies (22 Types)</h3>
         <ol>
-            <li><span class="highlight-purple">Fallacies of Relevance</span></li>
-            <li><span class="highlight-blue">Fallacies of Weak Induction</span></li>
-            <li><span class="highlight-green">Fallacies of Presumption</span></li>
-            <li><span class="highlight-orange">Fallacies of Ambiguity</span></li>
-            <li><span class="highlight-purple">Fallacies of Grammatical Analogy</span></li>
+            <li>1️⃣ <strong>Fallacies of Relevance</strong> 🎯</li>
+            <li>2️⃣ <strong>Fallacies of Weak Induction</strong> 📊</li>
+            <li>3️⃣ <strong>Fallacies of Presumption</strong> 🛑</li>
+            <li>4️⃣ <strong>Fallacies of Ambiguity</strong> 🗣️</li>
+            <li>5️⃣ <strong>Fallacies of Grammatical Analogy</strong> 📝</li>
         </ol>
-    </div>
+    </section>
 
-    <!-- 5. Fallacies of Relevance -->
-    <div class="card">
-        <h2>🎯 5. Fallacies of Relevance</h2>
-        <p>Occur when premises are logically irrelevant to the conclusion, relying instead on psychological or emotional appeal.</p>
-
-        <h3>1. Appeal to Force (Argumentum ad Baculum)</h3>
-        <p>Using explicit or implicit threats of harm to force acceptance of a conclusion.</p>
-        <div class="example-box">"Agree with the manager's proposal, or your employment will be terminated."</div>
-
-        <h3>2. Appeal to Pity (Argumentum ad Misericordiam)</h3>
-        <p>Evoking sympathy to substitute for logical evidence.</p>
-        <div class="example-box">"Grade my exam higher; I stayed up all night and missing this mark puts me on probation."</div>
-
-        <h3>3. Appeal to the People (Argumentum ad Populum)</h3>
-        <p>Exploiting the desire to be accepted, admired, or part of a group (Direct Mob, Bandwagon, Vanity, Snobbery).</p>
-
-        <h3>4. Argument Against the Person (Ad Hominem)</h3>
+    <!-- CARD 3: FALLACIES OF RELEVANCE -->
+    <section class="card">
+        <h2>1. 🎯 Fallacies of Relevance</h2>
+        <p>They are fallacies that fail to provide relevant and acceptable premises to their conclusion 🚫. They provide <strong>irrelevant premises</strong> to the conclusion. The premises are relevant <strong>psychologically</strong> and the connection between premises and conclusion is emotional, not logical 💖.</p>
+        
+        <p><strong>📋 Fallacies of Relevance contain eight (8) different types:</strong></p>
         <ul>
-            <li><strong>Abusive:</strong> Direct verbal attack on character.</li>
-            <li><strong>Circumstantial:</strong> Discrediting based on personal circumstances/interests.</li>
-            <li><strong>Tu Quoque ("You Too"):</strong> Asserting the arguer is a hypocrite.</li>
+            <li>Appeal to Force 👊</li>
+            <li>Appeal to Pity 🥺</li>
+            <li>Appeal to People 📣</li>
+            <li>Argument Against the Person 👤➡️❌</li>
+            <li>Straw Man 🌾👨</li>
+            <li>Red Herring 🐟</li>
+            <li>Accident 🚦</li>
+            <li>Missing the Point 🎯❌</li>
         </ul>
 
-        <h3>5. Fallacy of Accident</h3>
-        <p>Wrongly applying a general rule to a specific case with exceptional circumstances.</p>
+        <!-- 1. APPEAL TO FORCE -->
+        <h3>👊 1. Appeal to Force (Argumentum ad Baculum: Appeal to the Stick)</h3>
+        <p>It occurs whenever an arguer creates a conclusion to another person and tells the person either implicitly or explicitly that <strong>some harm will come to him or her</strong> if he or she does not accept the conclusion 💥. In other words, an appeal to force fallacy occurs whenever one irrelevantly appeals to force or threat of force to win an argument 🗡️.</p>
+        <p>This fallacy always involves a threat by the arguer to the physical or psychological wellbeing of the listener or reader 😨. Premises of an argument are full of threat, intimidation, scary words, etc. 🗣️</p>
 
-        <h3>6. Straw Man</h3>
-        <p>Distorting an opponent's argument to make it easy to attack, then claiming the original argument was refuted.</p>
+        <div class="example-box">
+            <p><strong>📚 Example 1 (ETV Show):</strong></p>
+            <blockquote>
+                ‘‘Meet ETV’’ is the best show on ETV; and if you do not believe it, I am going to call my big brother over here and he is going to beat you up. 👊❌
+            </blockquote>
+        </div>
 
-        <h3>7. Missing the Point (Ignoratio Elenchi)</h3>
-        <p>Premises support one specific conclusion, but a radically different/unrelated conclusion is drawn instead.</p>
+        <div class="example-box">
+            <p><strong>📚 Example 2 (Government Authority):</strong></p>
+            <blockquote>
+                Anyone who believes the government has exceeded its proper authority under the constitution will be subjected to severe harassment by the provincial police 🚓. Therefore, the government has not exceeded its authority. ❌
+            </blockquote>
+        </div>
 
-        <h3>8. Red Herring</h3>
-        <p>Changing the subject to a completely different issue to divert attention away from the original argument.</p>
-    </div>
+        <div class="example-box">
+            <p><strong>📚 Example 3 (Teacher to Student):</strong></p>
+            <blockquote>
+                A teacher to his student: Aristotle has the only correct philosophical view on this matter 📜. If you do not think so, wait to see what mark I give you on the final exam. 📝❌
+            </blockquote>
+        </div>
 
-    <!-- 6. Fallacies of Weak Induction -->
-    <div class="card">
-        <h2>🔍 6. Fallacies of Weak Induction</h2>
-        <p>Occur when the connection between premises and conclusion is too weak to support the claim.</p>
+        <p><strong>🎯 Analysis:</strong> These arguments fail to provide logical evidence to the truth of their conclusion. Instead they provide a kind of harm or threat as a reason to accept their conclusion. The first two examples involve a physical threat 👊 whereas the last example involves a psychological threat 🧠.</p>
 
+        <!-- 2. APPEAL TO PITY -->
+        <h3>🥺 2. Appeal to Pity (Argumentum ad Misericordiam)</h3>
+        <p>It occurs when an arguer attempts to support a conclusion by simply <strong>evoking pity</strong> from the reader or listener in an effort to get him or her to accept the conclusion 😭. The pity does not have any logical connection or relevance to the conclusion 🚫. But it is <strong>psychologically relevant</strong> as the arguer can usually succeed in getting a pitying heart from his audience ❤️.</p>
+        <p>The appeal to pity is quite common and frequently appears in schools 🏫, courtrooms ⚖️, streets 🛣️, offices 🏢, etc.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Example 1 (Student Grade):</strong></p>
+            <blockquote>
+                A student to his instructor: Professor, this paper deserves at least a ‘B’ grade 📝. I stayed up all night working on it 🥱. And if I do not get a ‘B’, I will be on academic probation. 😭❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> The student tries to support "deserves a B" using pitiable ideas like staying up all night and probation. It is psychologically relevant but logically irrelevant 🚫.</p>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Example 2 (Courtroom Case):</strong></p>
+            <blockquote>
+                Your honor, it is true that I killed my parents 🔪. I fully admit that I murdered them in cold blood. But I should get a light sentence. After all, I am an orphan. 🥺❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Being an orphan resulting from one's own crime is not a logical defense against murder! ⚖️❌</p>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Example 3 (Traffic Ticket):</strong></p>
+            <blockquote>
+                Officer, please don't give me a speeding ticket 🚓. I was speeding because I just lost my job today, and my dog is very sick at home 🐕.
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Personal sadness does not change the law or driving speed! 🚗❌</p>
+        </div>
+
+        <!-- 3. APPEAL TO PEOPLE -->
+        <h3>📣 3. Appeal to People (Argumentum ad Populum)</h3>
+        <p>It occurs when the arguer attempts to persuade the reader or listener about a certain issue on the ground that <strong>most people approve it</strong> or disapprove the issue in question 👥. It consists of arguments with language calculated to excite enthusiasm, excitement, anger, or hate 🔥.</p>
+        
+        <p><strong>🎯 Two Approaches:</strong></p>
         <ul>
-            <li><strong>Appeal to Unqualified Authority:</strong> Citing an authority who lacks expertise, is biased, or is unreliable.</li>
-            <li><strong>Appeal to Ignorance:</strong> Claiming something is true because it hasn't been proven false (or vice versa).</li>
-            <li><strong>Hasty Generalization:</strong> Drawing a general conclusion from an unrepresentative or small sample.</li>
-            <li><strong>False Cause:</strong> Assuming a causal connection that does not exist (e.g., <em>Post Hoc Ergo Propter Hoc</em>).</li>
-            <li><strong>Slippery Slope:</strong> Claiming an initial step will inevitably lead to a chain reaction of catastrophic events without justification.</li>
-            <li><strong>Weak Analogy:</strong> Comparing two things that are not similar enough in relevant aspects.</li>
+            <li><strong>Direct Approach:</strong> Occurs when an arguer, addressing a large group of people, excites the emotions and enthusiasm of the crowd to win acceptance for his/her conclusion 🎤. Objective: arouse a <strong>mob mentality</strong> 🗣️. Used by propagandists, demagogues, preachers, and advertisers 📢.</li>
+            <li><strong>Indirect Approach:</strong> Appeals to one or more individuals separately, focusing upon some aspect of their relationship to the crowd 👤. Used heavily in the advertising industry 📺.</li>
         </ul>
-    </div>
 
-    <!-- 7. Fallacies of Presumption, Ambiguity & Analogy -->
-    <div class="card">
-        <h2>🎭 7. Presumption, Ambiguity & Grammatical Analogy</h2>
+        <h4>Three Varieties of Indirect Approach:</h4>
 
-        <h3>Presumption</h3>
+        <p><strong>A. 📈 Appeal to Bandwagon:</strong></p>
+        <p>Emphasizes that the majority choice is the correct one 👥. Fallacious because peer pressure urges acceptance on grounds of approval of friends or associates 🤝.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Bandwagon Example 1:</strong></p>
+            <blockquote>
+                Chewing chat cannot be all wrong because 70% of Werabe University students see nothing wrong with it. 🍃❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> The percentage is irrelevant to whether chewing chat is actually good or bad. Popularity ≠ Truth 🚫.</p>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Bandwagon Example 2:</strong></p>
+            <blockquote>
+                A film is good because there are long lines of people waiting to see it. 🎟️🎬
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> A long line shows interest, but says nothing about the actual logical quality of the movie 🍿❌.</p>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Bandwagon Example 3:</strong></p>
+            <blockquote>
+                Everyone in our school is getting the new smartphone model 📱! You should get it too so you aren't left out!
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Buying a phone because everyone else has it relies on fear of isolation, not phone utility 📱❌.</p>
+        </div>
+
+        <p><strong>B. ✨ Appeal to Vanity:</strong></p>
+        <p>Associates the product with certain celebrities such as artists 🎨, athletes 🏃, footballers ⚽, respected leaders, etc., informing audiences that using the item will make them admired ⭐.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Vanity Example 1:</strong></p>
+            <blockquote>
+                Who is going to wear this new fashion T-shirt worn by the famous artist Gosaye for the new Ethiopian Millennium? 👕✨
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Vanity Example 2:</strong></p>
+            <blockquote>
+                Who is going to buy this new fashion shoe, a shoe used by the famous Haile G/Sellassie in the London Marathon? 👟🏃
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Vanity Example 3:</strong></p>
+            <blockquote>
+                Drink this energizing drink—endorsed by world champion football stars! ⚽🥤
+            </blockquote>
+        </div>
+
+        <p><strong>C. 👑 Appeal to Snobbery:</strong></p>
+        <p>An appeal to the desire to be regarded as <strong>superior to others</strong> 💎. Occurs when an arguer associates a product with a selected few persons (distinguished persons) who have an exaggerated social position or quality 👑.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Snobbery Example 1:</strong></p>
+            <blockquote>
+                This is not for ordinary people. If you want to be from among the selected few dignitaries, buy the shoe. 👟👑
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Snobbery Example 2:</strong></p>
+            <blockquote>
+                Look at the mark of this cell phone—it is Nokia and Nokia is not for everyone. Buy Nokia and join the selected few. 📱💎
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Snobbery Example 3:</strong></p>
+            <blockquote>
+                First of all, did you see the mark of the shoe—it's Clark? You should know that Clark is not for ordinary citizens. Buy Clark and join with the dignitaries. 👞⚜️
+            </blockquote>
+        </div>
+
+        <!-- 4. ARGUMENT AGAINST THE PERSON -->
+        <h3>🚫 4. Argument Against the Person (Argumentum ad Hominem)</h3>
+        <p>This fallacy <strong>always involves two arguers</strong> 👥. One commits this fallacy if someone refuses to consider their opponent's argument on its merit alone, and instead <strong>attacks the opponent</strong> on the ground of their belief, motive, religion, character, or practice 🛑.</p>
+
+        <h4>4.1 🗣️ Ad Hominem Abusive</h4>
+        <p>The second person responds by verbally abusing the first person and discrediting their character, intelligence, or reasonableness 🤬. A person can be abused for being ugly, a smoker, gambler, conservative, etc. But character is logically irrelevant to the truth of what they say 🚫.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Abusive Example 1:</strong></p>
+            <blockquote>
+                How can a stingy person tell us about charity 💰? Hence, let us stop discussing this issue raised by Tamirat. ❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Abusive Example 2:</strong></p>
+            <blockquote>
+                Don't listen to Dr. Bekele's theory on environmental protection 🌿. He is an unkempt, rude person who dresses poorly. 👔❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Abusive Example 3:</strong></p>
+            <blockquote>
+                Sara's plan for student union elections is completely foolish because she is just a lazy student who failed maths last term. 📚❌
+            </blockquote>
+        </div>
+
+        <h4>4.2 📑 Ad Hominem Circumstantial</h4>
+        <p>Instead of verbal abuse, the respondent attempts to discredit the argument by pointing to <strong>circumstances that affect the opponent</strong> (e.g., religion, political affiliation, ethnic background, job position) 🏢. Form: <i>"Of course Mr. X argues this way; just look at the circumstances affecting him."</i></p>
+
+        <div class="example-box">
+            <p><strong>📚 Circumstantial Example 1:</strong></p>
+            <blockquote>
+                Dr. Tewodros advocates a policy of increasing financial spending for higher education 🎓. But that is not innocent advocacy, for the reason that he is a college professor and would benefit financially from such a policy. 💰❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Circumstantial Example 2:</strong></p>
+            <blockquote>
+                Of course the tax consultant argues that taxes are too complicated 📜! If tax laws were simple, he would lose his job. 💼❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Circumstantial Example 3:</strong></p>
+            <blockquote>
+                The landlord argues that rent control is harmful to the town 🏠. Naturally he says so, because he owns five apartment buildings! 🏢❌
+            </blockquote>
+        </div>
+
+        <h4>4.3 🔄 Tu Quoque ("You Too")</h4>
+        <p>Pronounced <i>"too kwo-kway"</i>. The second arguer attempts to make the first appear <strong>hypocritical or arguing in bad faith</strong> 🎭. <i>"How dare you argue that I should stop doing X, when you do (or have done) X yourself!"</i></p>
+
+        <div class="example-box">
+            <p><strong>📚 Tu Quoque Example 1:</strong></p>
+            <blockquote>
+                Child to parent: Your argument that I should stop stealing candy from the corner store is no good 🍬. You told me yourself just a week ago that you, too, stole candy when you were a kid. 👦❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Tu Quoque Example 2:</strong></p>
+            <blockquote>
+                My doctor told me to lose some weight ⚖️. Why should I listen to a doctor who is himself overweight? 🩺❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Tu Quoque Example 3:</strong></p>
+            <blockquote>
+                You tell me not to smoke cigarettes because it's bad for my lungs 🚬, but you smoke a pack a day yourself! So your argument is invalid. 🚭❌
+            </blockquote>
+        </div>
+
+        <div class="case-box">
+            <p><strong>💡 Exception — Discrediting a Witness (Not a Fallacy!):</strong></p>
+            <p>Personal factors ARE relevant when evaluating <strong>unsupported testimony</strong> or witness claims ⚖️.</p>
+            <blockquote>
+                "Geremew testified he saw Belay set fire to the building 🔥. But Geremew was recently convicted on ten counts of perjury, and he hates Belay with a passion. Therefore, you should not believe Geremew’s testimony." ✔️
+            </blockquote>
+            <p><strong>🎯 Note:</strong> Testimony is NOT an argument. Rejecting a liar's unsupported testimony is logically justified! ⚖️✔️</p>
+        </div>
+
+        <!-- 5. FALLACY OF ACCIDENT -->
+        <h3>🚦 5. Fallacy of Accident</h3>
+        <p>Committed when a <strong>general rule is applied to a specific case</strong> that was not intended to cover 🎯. The general rule is cited in the premises and wrongly applied to a specific case with "accidental" or atypical features 🛑.</p>
+
+        <div class="example-box">
+            <p><strong>📚 Example 1 (Freedom of Speech):</strong></p>
+            <blockquote>
+                Freedom of speech is a constitutionally guaranteed right 📜. Therefore, Abebe should not be arrested for his speech that inspired the riot last week. 📢❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> General rule: Freedom of speech ✔️. Specific case: Inciting riots ❌. The rule is misapplied!</p>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Example 2 (Obeying Doctors):</strong></p>
+            <blockquote>
+                Kidist! All good patients obey the order of their doctors 🩺. Hence, you should not refuse when your doctor invites you for bed. 🛌❌
+            </blockquote>
+        </div>
+
+        <div class="example-box">
+            <p><strong>📚 Example 3 (Cutting People with Knives):</strong></p>
+            <blockquote>
+                Cutting people with knives is a crime 🔪. Surgeons cut people with knives during surgery 🏥. Therefore, surgeons are criminals. ❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Medical surgery is an exception to the general rule against cutting people! 🏥✔️</p>
+        </div>
+
+        <!-- 6. STRAW MAN FALLACY -->
+        <h3>🌾👨 6. Straw Man Fallacy (Attacking a Distorted Version)</h3>
+        <p>Committed when an arguer <strong>distorts an opponent’s argument</strong> for the purpose of more easily attacking it, demolishes the distorted argument, and then concludes that the real argument has been demolished 🎯💥.</p>
+
+        <p><strong>⚙️ Three Essential Components:</strong></p>
         <ul>
-            <li><strong>Begging the Question:</strong> Circular reasoning assuming the truth of the premise in the conclusion.</li>
-            <li><strong>Complex Question:</strong> Framing a question in a way that presumes a hidden assumption.</li>
-            <li><strong>False Dilemma:</strong> Presenting two options as the only choices when others exist.</li>
-            <li><strong>Suppressed Evidence:</strong> Deliberately leaving out key evidence that alters the conclusion.</li>
+            <li>1. Pair of arguers in dialogue 👥</li>
+            <li>2. Arguing with each other 🗣️</li>
+            <li>3. Advocating opposing positions ⚔️</li>
         </ul>
 
-        <h3>Ambiguity & Grammatical Analogy</h3>
-        <ul>
-            <li><strong>Equivocation:</strong> Using a word with multiple meanings inconsistently across premises.</li>
-            <li><strong>Amphiboly:</strong> Misinterpretation caused by grammatical errors or ambiguous sentence structures.</li>
-            <li><strong>Composition:</strong> Wrongly transferring attributes from parts to the whole structure.</li>
-            <li><strong>Division:</strong> Wrongly transferring attributes from the whole structure to individual parts.</li>
-        </ul>
-    </div>
+        <div class="example-box">
+            <p><strong>📚 Example 1 (Beer Ads):</strong></p>
+            <blockquote>
+                <strong>Mengesha:</strong> It would be a good idea to ban advertising beer and wine on radio and television 📺. These ads encourage teenagers to drink with disastrous consequences.<br>
+                <strong>Tsegaye:</strong> You cannot get people to give up drinking; they have been doing it for thousands of years. 🍺❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Mengesha argued to ban <i>ads</i> 📺. Tsegaye distorted it to banning <i>drinking entirely</i> 🍷❌.</p>
+        </div>
 
-</section>
+        <div class="example-box">
+            <p><strong>📚 Example 2 (Terrorist Rights):</strong></p>
+            <blockquote>
+                <strong>Mary:</strong> We must not betray the principles of justice and democracy ⚖️. Suspected terrorists must be granted basic rights as well as legal representation and access to a fair court.<br>
+                <strong>Tom:</strong> Mary is advocating the release of known terrorists 🔓! We cannot afford to allow our enemies to move freely in our society. ❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Mary advocated fair legal trials ⚖️. Tom distorted it to mean releasing terrorists onto the streets 🔓❌.</p>
+        </div>
 
-<!-- =================================================
-     FOOTER
-================================================= -->
-<footer class="footer">
-    ⚖️ Logic Chapter 5
-    <br>
-    📚 Unique Academic — Complete Study Notes
-</footer>
-
-</body>
-</html>
+        <div class="example-box">
+            <p><strong>📚 Example 3 (School Budget):</strong></p>
+            <blockquote>
+                <strong>Teacher:</strong> We need to allocate a bit more budget toward our school art class 🎨.<br>
+                <strong>Parent:</strong> Why do you hate mathematics and science so much that you want to drain all money from them 🔬📊?❌
+            </blockquote>
+            <p><strong>🎯 Analysis:</strong> Supporting art doesn't mean hating science! It's a classic straw man distortion 🌾👨.</p>
+        </div>
+        
+        
+    
