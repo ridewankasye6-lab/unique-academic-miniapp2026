@@ -13613,7 +13613,275 @@ const quizData = {
 
     "geography": {
 
-        1: [{
+        1: [  { question: "Which of the following best explains the difference between absolute and relative location?",
+    options: [
+        "Their difference is that one is measured in latitude and the other in longitude",
+        "Relative location is an exact while absolute location is a vicinal measure",
+        "A and B",
+        "Absolute location is a precise while relative location is vicinal measure",
+        "None of the above"
+    ],
+    answer: 3,
+    englishExplanation: "📍 Absolute location identifies an exact position on Earth, usually using latitude and longitude coordinates. 🧭 Relative location describes where a place is in relation to other places. For example, saying Ethiopia is east of Sudan describes its relative location.",
+    amharicExplanation: "📍 ፍጹም አቀማመጥ (Absolute Location) አንድ ቦታ በምድር ላይ የሚገኝበትን ትክክለኛ ቦታ በኬክሮስና በኬንትሮስ ይገልጻል። 🧭 አንጻራዊ አቀማመጥ (Relative Location) ግን አንድ ቦታ ከሌሎች ቦታዎች ጋር ባለው ግንኙነት ይገልጻል። ለምሳሌ፣ ኢትዮጵያ ከሱዳን በምስራቅ ትገኛለች ማለት አንጻራዊ አቀማመጥ ነው።"
+},
+
+{
+    question: "Ethiopian meteorological agency announced that it is providing rainfall to several drought-prone regions using cloud mining/seeding. Which aspect is described by this example?",
+    options: [
+        "Adaptation",
+        "Dependency",
+        "None of the above",
+        "Modification"
+    ],
+    answer: 3,
+    englishExplanation: "🌧️ This is Modification because humans are using technology to change a natural environmental process. Cloud seeding attempts to increase rainfall by influencing clouds. Adaptation means adjusting human behavior to the environment, while dependency means relying on environmental resources.",
+    amharicExplanation: "🌧️ ይህ Modification (አካባቢን መለወጥ) ነው። ሰዎች ቴክኖሎጂን በመጠቀም የተፈጥሮን ሂደት ለመቀየር እየሞከሩ ነው። የደመና ዘር መበተን ዝናብን ለማሳደግ የሚደረግ ሙከራ ነው። Adaptation ማለት ሰው ከአካባቢው ጋር ራሱን ማስማማት ሲሆን Dependency ደግሞ በተፈጥሮ ሀብቶች ላይ መደገፍ ነው።"
+},
+
+{
+    question: "The North-South extension of Ethiopia does not have an implication on",
+    options: [
+        "The geopolitics of the country",
+        "The climatic condition",
+        "The natural resource distribution",
+        "Time zone division"
+    ],
+    answer: 3,
+    englishExplanation: "⏰ Time zones are mainly determined by East-West extension, which is related to longitude. North-South extension is related to latitude and can influence climate, environmental conditions, and resource distribution. Therefore, it does not directly determine time zone division.",
+    amharicExplanation: "⏰ የሰዓት ሰቅ (Time Zone) በዋናነት የሚወሰነው በምስራቅ-ምዕራብ መዘርጋት ወይም በኬንትሮስ ነው። የሰሜን-ደቡብ መዘርጋት ግን ከኬክሮስ ጋር የተያያዘ ሲሆን በአየር ንብረትና በተፈጥሮ ሀብት ስርጭት ላይ ተጽእኖ ሊኖረው ይችላል።"
+},
+
+{
+    question: "Geography studies physical and human features of the world.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🌍 Geography studies both the natural and human world. Physical geography examines features such as mountains, rivers, climate, and landforms, while human geography studies people, settlements, cultures, economies, and their activities.",
+    amharicExplanation: "🌍 ጂኦግራፊ ሁለቱንም የተፈጥሮ እና የሰው ገጽታዎች ያጠናል። ፊዚካል ጂኦግራፊ ተራራዎችን፣ ወንዞችን፣ የአየር ንብረትንና የመሬት ገጽታዎችን ሲያጠና፣ ሂውማን ጂኦግራፊ ደግሞ ሰዎችን፣ ሰፈራዎችን፣ ባህሎችንና ኢኮኖሚያዊ እንቅስቃሴዎችን ያጠናል።"
+},
+
+{
+    question: "The scope of geography means the extent of geography as a field of study.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "📚 Scope means the breadth or extent of a field of study. The scope of geography includes many topics such as landforms, climate, population, culture, resources, settlements, and human-environment relationships.",
+    amharicExplanation: "📚 Scope ማለት የአንድ የትምህርት ዘርፍ ስፋት ወይም የሚያካትታቸው ጉዳዮች መጠን ማለት ነው። የጂኦግራፊ ወሰን የመሬት ገጽታዎችን፣ የአየር ንብረትን፣ ህዝብን፣ ባህልን፣ ሀብቶችን፣ ሰፈራንና የሰው-አካባቢ ግንኙነትን ያካትታል።"
+},
+
+{
+    question: "\"Ethiopia is bounded by Eritrea in the north\". This is an expression of relative location.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🧭 This statement explains Ethiopia's position in relation to another country, Eritrea. Since it uses a neighboring place instead of exact latitude and longitude coordinates, it is an example of relative location.",
+    amharicExplanation: "🧭 ይህ አባባል የኢትዮጵያን ቦታ ከሌላ አገር ማለትም ከኤርትራ ጋር በማነጻጸር ይገልጻል። ትክክለኛ የኬክሮስና የኬንትሮስ መጋጠሚያዎችን ስለማይጠቀም የአንጻራዊ አቀማመጥ ምሳሌ ነው።"
+},
+
+{
+    question: "A classification of functional region usually takes into account the homogeneous characteristics of places.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🔗 A functional region is organized around a central point and connected through activities or interactions. For example, a city and its surrounding commuting area form a functional region. Homogeneous characteristics are mainly used to define formal regions.",
+    amharicExplanation: "🔗 Functional Region በአንድ ማዕከላዊ ቦታ ዙሪያ በተለያዩ ግንኙነቶችና ተግባራት የተገናኙ አካባቢዎችን ያመለክታል። ለምሳሌ አንድ ከተማና በየቀኑ ወደ ከተማው የሚጓዙ አካባቢዎች ተግባራዊ ክልል ሊፈጥሩ ይችላሉ። ተመሳሳይ ባህሪያት ግን Formal Region ለመለየት ይጠቅማሉ።"
+},
+
+{
+    question: "Since Kenya is part of the Horn and its size is greater than Ethiopia and Eritrea collectively.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🗺️ This statement is false because Kenya's land area is smaller than the combined land area of Ethiopia and Eritrea. Ethiopia alone has a much larger area than Kenya.",
+    amharicExplanation: "🗺️ ይህ አባባል ሐሰት ነው። የኬንያ የመሬት ስፋት ከኢትዮጵያና ከኤርትራ ጥምር ስፋት አይበልጥም። በተጨማሪም ኢትዮጵያ ብቻዋን ከኬንያ የበለጠ ሰፊ መሬት አላት።"
+},
+
+{
+    question: "Most of the lowlands in Ethiopia are found along the outlying part of the country.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🏞️ Ethiopia has extensive central highlands, while many of its lowland areas are located around the edges of the country. Examples include the Afar lowlands in the northeast and the Somali lowlands in the southeast.",
+    amharicExplanation: "🏞️ ኢትዮጵያ በዋናነት ከፍተኛ ማዕከላዊ ደጋማ አካባቢዎች አሏት። አብዛኛዎቹ ቆላማ አካባቢዎች ግን በአገሪቱ ዳርቻዎች ይገኛሉ። ለምሳሌ በሰሜን ምስራቅ የአፋር ቆላማ አካባቢዎችና በደቡብ ምስራቅ የሶማሌ ቆላማ አካባቢዎች ይገኛሉ።"
+},
+
+{
+    question: "The facts and principles of the natural sciences can be applied in geography.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🔬 Geography is an interdisciplinary subject that uses knowledge from natural sciences. Principles from biology, physics, chemistry, geology, and environmental science help geographers understand climate, soils, ecosystems, erosion, and other physical processes.",
+    amharicExplanation: "🔬 ጂኦግራፊ የተለያዩ ሳይንሶችን የሚያገናኝ የትምህርት ዘርፍ ነው። ከባዮሎጂ፣ ፊዚክስ፣ ኬሚስትሪ፣ ጂኦሎጂና አካባቢ ሳይንስ የሚገኙ መርሆዎች የአየር ንብረትን፣ አፈርን፣ ሥነ-ምህዳሮችንና የመሬት ለውጥ ሂደቶችን ለመረዳት በጂኦግራፊ ውስጥ ይጠቀማሉ።"
+},
+
+{
+    question: "A country of an elongated shape has a military advantage over compact-shaped countries.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🛡️ An elongated country usually faces greater challenges in transportation, communication, administration, and defense because its territory extends over a long distance. Compact countries are generally easier to connect and defend because their territory is more centralized.",
+    amharicExplanation: "🛡️ የተለጠጠ ቅርፅ ያለው አገር በትራንስፖርት፣ በመገናኛ፣ በአስተዳደርና በመከላከያ ላይ ብዙ ችግሮች ሊያጋጥሙት ይችላሉ። Compact ወይም ጥቅጥቅ ቅርፅ ያላቸው አገሮች ቦታቸው ተቀራራቢ ስለሆነ ለመገናኘትና ለመከላከል በአጠቃላይ የበለጠ ቀላል ናቸው።"
+},
+
+{
+    question: "Each place has unique physical environment and human characteristics.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🌎 Every place has its own combination of physical and human characteristics. Climate, landforms, vegetation, culture, population, and economic activities combine differently in each location, giving every place a unique identity.",
+    amharicExplanation: "🌎 እያንዳንዱ ቦታ የራሱ የሆነ ልዩ አካላዊና ሰብአዊ ባህሪ አለው። የአየር ንብረት፣ የመሬት ገጽታ፣ እፅዋት፣ ባህል፣ የህዝብ ቁጥርና ኢኮኖሚያዊ እንቅስቃሴዎች በየቦታው በተለያየ ሁኔታ ስለሚገኙ እያንዳንዱ ቦታ የራሱ መለያ አለው።"
+},
+
+{
+    question: "The location of Ethiopia determines the country has various bearings on its climatic conditions.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🌤️ Ethiopia's geographical location influences its climate. Its position within the tropical zone, together with differences in altitude and relief, affects temperature and rainfall. This is why Ethiopia has several different climatic conditions.",
+    amharicExplanation: "🌤️ የኢትዮጵያ ጂኦግራፊያዊ አቀማመጥ በአየር ንብረቷ ላይ ትልቅ ተጽእኖ አለው። በትሮፒካል ክልል ውስጥ መገኘቷ እና የከፍታና የመሬት ገጽታ ልዩነቶች የሙቀትና የዝናብ ሁኔታን ይነካሉ። ስለዚህ በኢትዮጵያ ውስጥ የተለያዩ የአየር ንብረቶች ይገኛሉ።"
+},
+
+{
+    question: "Geography is less practical in today's world than it was before.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🚀 Geography is highly practical in today's world. Geographic knowledge helps solve modern problems such as climate change, natural disasters, urban planning, environmental protection, transportation, and sustainable development.",
+    amharicExplanation: "🚀 ጂኦግራፊ በዛሬው ዓለም እጅግ ተግባራዊ እና ጠቃሚ ነው። እንደ የአየር ንብረት ለውጥ፣ የተፈጥሮ አደጋዎች፣ የከተማ ፕላን፣ የአካባቢ ጥበቃ፣ ትራንስፖርትና ዘላቂ ልማት ያሉ ዘመናዊ ችግሮችን ለመፍታት ይረዳል።"
+},
+
+{
+    question: "According to the determinist approach, humans cannot change or influence the environment.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🏗️ The statement is false. Environmental determinism emphasizes the influence of the physical environment on human life, but humans can still modify and influence their surroundings through technology, agriculture, construction, and other activities.",
+    amharicExplanation: "🏗️ ይህ አባባል ሐሰት ነው። Environmental Determinism የተፈጥሮ አካባቢ በሰው ሕይወት ላይ ተጽእኖ እንዳለው ያጎላል። ሆኖም ሰዎች በቴክኖሎጂ፣ በግብርና፣ በግንባታና በሌሎች ተግባራት አካባቢያቸውን መለወጥና ተጽእኖ ማሳደር ይችላሉ።"
+},
+
+{
+    question: "The higher boundary length to circle circumference ratio indicates a greater degree of compactness.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "⭕ A higher boundary-length ratio generally means the shape has a longer or more irregular boundary compared with an ideal compact shape. Therefore, a higher ratio indicates lower compactness, not greater compactness. A shape closer to a circle is more compact.",
+    amharicExplanation: "⭕ ከፍተኛ የድንበር ርዝመት ጥምርታ ቅርፁ የበለጠ ረጅም ወይም ያልተስተካከለ ድንበር እንዳለው ያሳያል። ስለዚህ ከፍተኛ ጥምርታ የበለጠ ጥቅጥቅነት ሳይሆን ዝቅተኛ ጥቅጥቅነትን ያሳያል። ከክብ ቅርፅ ጋር የሚቀራረብ ቅርፅ የበለጠ Compact ነው።"
+},
+
+{
+    question: "Because of its dynamic nature, geography has a particular definition.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🔄 Geography is dynamic and interdisciplinary, so it does not have only one narrow and fixed definition. Different geographers may emphasize physical processes, human activities, places, spaces, or human-environment relationships.",
+    amharicExplanation: "🔄 ጂኦግራፊ ተለዋዋጭና ብዙ የትምህርት ዘርፎችን የሚያገናኝ በመሆኑ አንድ ብቻ የሆነ ጠባብና ቋሚ ትርጉም የለውም። የተለያዩ የጂኦግራፊ ባለሙያዎች የተፈጥሮ ሂደቶችን፣ የሰው እንቅስቃሴዎችን፣ ቦታን፣ ስፔስን ወይም የሰው-አካባቢ ግንኙነትን በተለያየ ሁኔታ ያጎላሉ።"
+},
+
+{
+    question: "Geography is the study of the general characteristic of a region.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🔎 Geography is broader than studying only the general characteristics of a region. It examines physical features, human activities, spatial patterns, places, environments, and the relationships between people and their surroundings.",
+    amharicExplanation: "🔎 ጂኦግራፊ የአንድን ክልል አጠቃላይ ባህሪ ብቻ የሚያጠና አይደለም። የመሬት ገጽታዎችን፣ የሰው እንቅስቃሴዎችን፣ የቦታ ስርጭትን፣ አካባቢዎችንና በሰዎች እና በአካባቢያቸው መካከል ያሉ ግንኙነቶችን በሰፊው ያጠናል።"
+},
+
+{
+    question: "Mr. Fabian, an Austrian citizen, visited the Fasil Castel in Gondar and talked about the weather conditions of Gondar, stating it is hot and that he is not feeling comfortable even though the sky is free from cloud cover. Which aspect of a place was he expressing?",
+    options: [
+        "Location of the site",
+        "The situation of the place",
+        "Site of the place",
+        "Toponym of a place"
+    ],
+    answer: 1,
+    englishExplanation: "🌡️ The situation of a place refers to its broader geographical setting and its relationship with surrounding conditions. Mr. Fabian is describing the environmental and weather conditions experienced in Gondar. A site refers more specifically to the physical characteristics of the exact location, while a toponym simply means a place name.",
+    amharicExplanation: "🌡️ Situation ማለት የአንድ ቦታ ሰፊ ጂኦግራፊያዊ ሁኔታና ከአካባቢው ጋር ያለው ግንኙነት ነው። ሚስተር ፋቢያን በጎንደር ያጋጠመውን የአየር ሁኔታ እየገለጸ ነው። Site ግን የተወሰነውን ቦታ አካላዊ ባህሪያት ያመለክታል፤ Toponym ደግሞ የቦታ ስም ማለት ነው።"
+},
+
+{
+    question: "If state \"A\" has an areal coverage of 300,000 km² and its boundary length is 2000 km, while state \"B\" has an areal coverage of 700,000 km² and a boundary length of 6000 km, which state is more compact?",
+    options: [
+        "State \"A\"",
+        "State \"B\"",
+        "Both are compact",
+        "Both are not compact"
+    ],
+    answer: 0,
+    englishExplanation: "📐 Compactness can be compared using the area-to-boundary ratio. A higher ratio generally indicates greater compactness. State A: 300,000 ÷ 2,000 = 150. State B: 700,000 ÷ 6,000 ≈ 116.7. Since State A has the higher ratio, it is more compact.",
+    amharicExplanation: "📐 የአገርን ጥቅጥቅነት ለማነጻጸር የስፋት-ወደ-ድንበር ጥምርታን መጠቀም እንችላለን። ከፍተኛ ጥምርታ በአጠቃላይ የበለጠ ጥቅጥቅነትን ያሳያል። ሀገር A: 300,000 ÷ 2,000 = 150። ሀገር B: 700,000 ÷ 6,000 ≈ 116.7። ስለዚህ ሀገር A ከፍተኛ ጥምርታ ስላላት የበለጠ Compact ናት።"
+},{ question: "Latitude and longitude describe relative location, meaning they only give the general area around a place.", options: ["True", "False"], answer: 1, englishExplanation: "🧭 Latitude and longitude provide the exact position of a place on Earth using coordinates. This is called absolute location. For example, a location such as 9°N and 38°E identifies a precise point. Relative location, on the other hand, describes where a place is compared with other places, such as Ethiopia being east of Sudan.", amharicExplanation: "📍 ኬክሮስ (Latitude) እና ኬንትሮስ (Longitude) የአንድን ቦታ ትክክለኛ አቀማመጥ ያሳያሉ። ይህ ፍጹም አቀማመጥ (Absolute Location) ይባላል። አንጻራዊ አቀማመጥ (Relative Location) ግን አንድ ቦታ ከሌሎች ቦታዎች ጋር በማነጻጸር ይገልጻል።" },
+ 
+{ question: "Due to its vicinal location, Ethiopia experiences a tropical type of climate.", options: ["True", "False"], answer: 1, englishExplanation: "🌍 Ethiopia's general tropical location is mainly related to its latitude because the country lies within the tropical zone. Vicinal location refers to the relationship of a place with its neighboring countries. Ethiopia's climate is also strongly influenced by altitude, which creates cooler conditions in the highlands.", amharicExplanation: "🌡️ የኢትዮጵያ ትሮፒካል አቀማመጥ በዋናነት ከኬክሮስ አቀማመጧ (Latitudinal Location) ጋር ይያያዛል። Vicinal Location ግን አገሪቱ ከጎረቤት አገሮች ጋር ያላትን ግንኙነት ያመለክታል። ከፍታዋ ደግሞ በተለይ በደጋማ አካባቢዎች ቀዝቃዛ የአየር ጠባይ እንዲኖር ያደርጋል።" },
+ 
+{ question: "Because of their latitudinal location, most Ethiopian highlands are characterized by tropical climate conditions.", options: ["True", "False"], answer: 1, englishExplanation: "🏔️ Although Ethiopia is located in the tropical zone, its highlands are not typically hot because altitude has a strong effect on temperature. As elevation increases, temperature decreases. Therefore, Ethiopian highlands generally experience cooler and more temperate conditions.", amharicExplanation: "🏔️ ኢትዮጵያ በትሮፒካል ክልል ውስጥ ብትገኝም፣ የደጋማ አካባቢዎቿ በከፍታ ምክንያት በጣም ሞቃታማ አይደሉም። ከፍታ ሲጨምር የሙቀት መጠን ይቀንሳል። ስለዚህ የኢትዮጵያ ደጋማ አካባቢዎች ቀዝቃዛና ተመጣጣኝ የአየር ጠባይ አላቸው።" },
+ 
+{ question: "A map that displays one or more natural and cultural features of an area is called a statistical map.", options: ["True", "False"], answer: 1, englishExplanation: "🗺️ A topographic map shows both natural features such as mountains, rivers and valleys, and cultural features such as roads and settlements. A statistical map mainly presents the distribution of numerical or geographical data such as population, rainfall or temperature.", amharicExplanation: "🗺️ የቶፖግራፊክ ካርታ እንደ ተራራ፣ ወንዝ እና ሸለቆ ያሉ የተፈጥሮ ገጽታዎችን እንዲሁም እንደ መንገድና ከተማ ያሉ የሰው ሰራሽ ገጽታዎችን ያሳያል። ስታቲስቲክ ካርታ ግን እንደ ህዝብ፣ ዝናብ እና ሙቀት ያሉ መረጃዎችን ስርጭት ያሳያል።" },
+ 
+{ question: "The systematic approach of geography studies particular categories of physical or human phenomena and their distribution over the Earth.", options: ["True", "False"], answer: 0, englishExplanation: "🌐 The systematic approach focuses on one specific geographical phenomenon and studies it across different parts of the world. For example, it may study the global distribution of volcanoes, climate patterns or population. This differs from the regional approach, which studies many features within one specific area.", amharicExplanation: "🌐 ስልታዊ አቀራረብ (Systematic Approach) አንድ የተወሰነ ጂኦግራፊያዊ ጉዳይን በዓለም አቀፍ ደረጃ ያጠናል። ለምሳሌ የእሳተ ገሞራ ስርጭት፣ የአየር ንብረት ወይም የህዝብ እድገትን ማጥናት ይቻላል። ይህ ከክልላዊ አቀራረብ የተለየ ነው።" },
+ 
+{ question: "A single country can have characteristics of more than one type of shape.", options: ["True", "False"], answer: 0, englishExplanation: "🔷 A country may mainly belong to one shape category but still have characteristics of another shape. For example, a country may be generally compact while having a long narrow extension. Therefore, country shapes can sometimes show more than one characteristic.", amharicExplanation: "🔷 አንድ አገር በዋናነት አንድ የቅርጽ አይነት ሊኖራት ይችላል፣ ነገር ግን የሌላ ቅርጽ ባህሪያትንም ልትይዝ ትችላለች። ለምሳሌ በአጠቃላይ ጠቃሚ ቅርጽ ያላት አገር ረጅም የሚወጣ ክፍል ሊኖራት ይችላል።" },
+ 
+{ question: "A country with one portion much more elongated than the rest of the country is called an elongated shape country.", options: ["True", "False"], answer: 1, englishExplanation: "📐 When only one part of a country extends outward significantly, the country is described as having a protruded shape. An elongated country is long and narrow throughout most of its entire territory, like Chile. Therefore, the statement is false.", amharicExplanation: "📐 ከአገሪቱ ዋና አካል ወጥቶ አንድ ረጅም ክፍል ካለ፣ ይህ Protruded Shape ይባላል። Elongated Shape ግን አገሪቱ በአጠቃላይ ረጅምና ጠባብ ስትሆን ነው። ለምሳሌ ቺሊ የተለጠጠ ቅርጽ ያላት አገር ናት።" },
+ 
+{ question: "Vicinal location relates the location of places in relation to large landmasses and water bodies.", options: ["True", "False"], answer: 1, englishExplanation: "🤝 Vicinal location specifically describes the relationship of a place with its immediate neighboring countries or areas. Describing a place in relation to major landmasses and water bodies is a broader form of relative location rather than the specific meaning of vicinal location.", amharicExplanation: "🤝 Vicinal Location ማለት አንድ ቦታ ከቅርብ ጎረቤት አገሮች ወይም አካባቢዎች ጋር ያለውን ግንኙነት ማሳየት ነው። ከትላልቅ መሬቶች ወይም የውሃ አካላት ጋር ያለንን አቀማመጥ መግለጽ ሰፊ የአንጻራዊ አቀማመጥ ግለጻ ነው።" },
+ 
+{ question: "Suppose a cartographer wants to show the location of hills, valleys, lakes and roads on a single map. Which type of map should be used?", options: ["Topographic map", "Statistical map", "Special purpose map", "Topical map"], answer: 0, englishExplanation: "⛰️ A topographic map is designed to show detailed natural features such as hills, valleys and lakes together with human-made features such as roads and settlements. It provides a detailed picture of the Earth's surface.", amharicExplanation: "⛰️ የቶፖግራፊክ ካርታ እንደ ኮረብታ፣ ሸለቆ እና ሐይቅ ያሉ የተፈጥሮ ገጽታዎችን ከእንደ መንገድና መኖሪያ ያሉ የሰው ሰራሽ ገጽታዎች ጋር በአንድ ካርታ ላይ በዝርዝር ያሳያል።" },
+ 
+{ question: "Taking the course Geography of Ethiopia and the Horn will enable you for one of the following except:", options: [ "Understand your country's physical and human resource diversity and abundance", "Overlook your society's culture, lifestyle and language and appreciate others", "Develop a sense of place and time through geographic literacy", "Recognize the implications of the location, shape and size of Ethiopia", "None" ], answer: 1, englishExplanation: "🎓 Studying Geography of Ethiopia and the Horn helps students understand and appreciate their country's people, culture, resources and geographical characteristics. The word 'overlook' means to ignore, which contradicts the purpose of the course. The course encourages understanding and appreciation, not ignoring one's society.", amharicExplanation: "🎓 የኢትዮጵያ እና የአፍሪካ ቀንድ ጂኦግራፊን ማጥናት የራስን አገር ህዝብ፣ ባህል፣ ሀብት እና ጂኦግራፊያዊ ባህሪያት ለመረዳት ይረዳል። 'Overlook' ማለት ችላ ማለት ወይም መተው ማለት ስለሆነ፣ ይህ ከትምህርቱ ዓላማ ጋር ይቃረናል።" },
+ 
+{ question: "Which one of the following explains the importance of maps?", options: [ "Maps are used for measuring distance and area regardless of map scale", "Maps provide location and direction information without determining a north arrow", "Maps are used for making spatial analysis of geographical facts", "All explain the importance of maps" ], answer: 2, englishExplanation: "🔍 Maps help us understand the spatial distribution and relationships of geographical features. Accurate distance measurement depends on map scale, while direction is commonly indicated using orientation such as a north arrow. Therefore, spatial analysis of geographical facts is the correct answer.", amharicExplanation: "🔍 ካርታዎች የጂኦግራፊያዊ ገጽታዎችን የቦታ ስርጭትና ግንኙነት ለመተንተን ይረዳሉ። ትክክለኛ ርቀት ለመለካት የካርታ ሚዛን (Scale) ያስፈልጋል፣ አቅጣጫ ለማሳየትም የሰሜን አቅጣጫ ምልክት ይጠቅማል። ስለዚህ ትክክለኛው መልስ የጂኦግራፊያዊ እውነታዎችን በቦታ ስርጭት መተንተን ነው።" },
+ 
+{ question: "__________: latitude and longitude coordinates; __________: north, south, east and west of a place.", options: [ "Relative location / Relative location", "Relative location / Absolute location", "Absolute location / Absolute location", "Absolute location / Relative location" ], answer: 3, englishExplanation: "📍 Absolute location identifies the exact position of a place using latitude and longitude coordinates. Relative location describes where a place is in relation to another place or direction, such as north, south, east or west.", amharicExplanation: "📍 Absolute Location ማለት የአንድን ቦታ ትክክለኛ አቀማመጥ በLatitude እና Longitude መጋጠሚያዎች መግለጽ ነው። Relative Location ደግሞ አንድ ቦታ ከሌላ ቦታ ወይም ከሰሜን፣ ደቡብ፣ ምስራቅና ምዕራብ አቅጣጫዎች አንጻር ያለውን ቦታ ይገልጻል።" },
+ 
+{ question: "Long ago, there were very few roads and people traveled by horse and buggy. Today we have modern roads and cars. Which theme of geography does this situation describe?", options: ["Place", "Human-Environment Interaction", "Region", "None of the above"], answer: 1, englishExplanation: "🚗 This situation shows how humans modify their environment and adapt to changing needs. Building roads and developing modern transportation are examples of Human-Environment Interaction because people change their surroundings to make movement easier and more efficient.", amharicExplanation: "🚗 ይህ ሁኔታ ሰዎች አካባቢያቸውን እንዴት እንደሚቀይሩና እንደሚጠቀሙበት ያሳያል። መንገድ መስራትና ዘመናዊ መጓጓዣዎችን መጠቀም የHuman-Environment Interaction ጥሩ ምሳሌዎች ናቸው።" },
+ 
+{ question: "When we say we live in the south where most days are sunny and warm, we are describing our:", options: ["Location", "Place", "Region", "Locality"], answer: 2, englishExplanation: "☀️ A region is an area that shares common characteristics. In this example, the southern area is described using its shared climate of sunny and warm weather. Therefore, the statement describes a climatic region.", amharicExplanation: "☀️ Region ማለት ተመሳሳይ ባህሪያት ያሏቸው አካባቢዎች ማለት ነው። በዚህ ምሳሌ ደቡባዊው አካባቢ በፀሐያማና ሞቃታማ የአየር ጠባይ ስለሚለይ፣ ክልል (Region) እየተገለጸ ነው።" },
+ 
+{ question: "Which one of the following is a disadvantage of a large-size country?", options: [ "Diverse culture", "Large population size", "High costs of administration", "Greater depth in defense against external invasion", "None" ], answer: 2, englishExplanation: "🏛️ Managing a very large country can be expensive because government services, infrastructure, communication and administration must reach people across a wide territory. Therefore, high administrative costs are one of the major disadvantages of a large country.", amharicExplanation: "🏛️ ሰፊ የሆነ አገርን ማስተዳደር ከፍተኛ ወጪ ይጠይቃል። መንገድ፣ ትምህርት፣ ጤና እና ሌሎች አገልግሎቶችን ሰፊ በሆነ ግዛት ውስጥ ለማድረስ ብዙ ገንዘብ ያስፈልጋል። ስለዚህ ከፍተኛ የአስተዳደር ወጪ ዋነኛ ጉዳት ነው።" },
+ 
+{ question: "Which statement is correctly matched regarding country compactness?", options: [ "The lower the Area-Circumference ratio, the greater the degree of compactness", "The higher the Area-Circumference ratio, the greater the degree of compactness", "The nearer the Boundary-Circumference ratio is to 1, the less compact the country is", "The higher the Area-Boundary ratio, the lesser the degree of compactness" ], answer: 1, englishExplanation: "⭕ A more compact country has a larger area compared with the length of its boundary or circumference. A shape close to a circle is highly compact. Therefore, a higher Area-Circumference ratio generally indicates a greater degree of compactness.", amharicExplanation: "⭕ የአገር ቅርጽ ጥቅጥቅነት ስፋቷን ከድንበሯ ርዝመት ጋር በማነጻጸር ይለካል። ወደ ክብ ቅርጽ የምትጠጋ አገር የበለጠ ጠቃሚ ቅርጽ አላት። ስለዚህ የArea-Circumference ጥምርታ ከፍ ባለ ቁጥር የcompactness ደረጃው ይጨምራል።" },
+ 
+{ question: "Suppose the Boundary-Circumference ratios of four countries A, B, C and D are 1.05, 2.01, 1.45 and 1.51 respectively. Which country has the most compact shape?", options: ["Country B", "Country D", "Country C", "Country A"], answer: 3, englishExplanation: "🔵 For the Boundary-Circumference ratio, a value closer to 1 indicates a more compact shape. Country A has a ratio of 1.05, which is the closest value to 1 compared with the other countries. Therefore, Country A is the most compact.", amharicExplanation: "🔵 በBoundary-Circumference ጥምርታ ውስጥ ዋጋው ወደ 1 በተጠጋ ቁጥር የአገሪቱ ቅርጽ ይበልጥ ጠቃሚ (Compact) ይሆናል። Country A 1.05 ስለሆነ ከ1 በጣም ቀርቧል። ስለዚህ Country A በጣም ጠቃሚ ቅርጽ ያላት ናት።" },
+ 
+{ question: "Suppose the ratio of area to boundary length of Country A is greater than Country B, and Country C is less than Country B. From the given information, what can we say?", options: [ "Country B is more compact than Country A", "Country C is more compact than both Country A and Country B", "Country A is more compact than both Country A and Country B", "We cannot confidently select a correct option from the information and choices given" ], answer: 3, englishExplanation: "📊 The information mathematically suggests A > B > C in terms of the Area-Boundary ratio, meaning Country A should be the most compact. However, the available option containing this idea has a wording error because it repeats Country A instead of referring to Country C. Since the correct statement is not properly written among the choices, the credited answer is that we cannot confidently select a correct option from the given choices.", amharicExplanation: "📊 በተሰጠው መረጃ A > B እና C < B ስለሆነ፣ በሂሳብ A > B > C ማለት ነው። ይህም Country A በጣም ጠቃሚ ቅርጽ እንዳላት ያሳያል። ነገር ግን በአማራጮቹ ውስጥ ይህንን የሚገልጸው አማራጭ የጽሑፍ ስህተት አለበት። ስለዚህ በተሰጡት አማራጮች መሰረት በእርግጠኝነት ትክክለኛ ምርጫ ማድረግ አንችልም።" },
+ 
+{ question: "Ethiopia was exposed to different external invasions because of:", options: [ "Middle East geopolitical interests", "Geopolitical considerations of superpowers", "Its strategic relationship with the Red Sea region", "A and B", "All" ], answer: 4, englishExplanation: "🌍 Ethiopia's strategic position in the Horn of Africa has made it important to regional and global powers. Its proximity to the Red Sea region, Middle Eastern geopolitical interests and competition among major powers have all contributed to external political and military pressures. Therefore, all the listed factors are relevant.", amharicExplanation: "🌍 ኢትዮጵያ በአፍሪካ ቀንድ ያላት ስልታዊ አቀማመጥ ለክልላዊና ለዓለም አቀፍ ሀይሎች ጠቃሚ አድርጓታል። ከቀይ ባህር አካባቢ ጋር ያላት ቅርበት፣ የመካከለኛው ምስራቅ ጂኦፖለቲካዊ ፍላጎቶች እና የታላላቅ ሀይሎች ውድድር ሁሉም ለውጫዊ ግፊትና ወረራ ተጋላጭነት አስተዋጽኦ አድርገዋል።" },
+ 
+{ question: "Which of the following maps depicts the distribution of different aspects or geographic features?", options: ["Thematic maps", "Statistical map", "A and B", "Topographic map", "None"], answer: 1, englishExplanation: "📈 In the context of this course, a statistical map is used to show the distribution of geographical data or features such as population, rainfall, temperature and vegetation. Although thematic maps broadly present specific themes, the course specifically identifies statistical maps as maps that depict such distributions.", amharicExplanation: "📈 በዚህ የትምህርት ሞዱል አውድ ውስጥ ስታቲስቲክ ካርታ እንደ የህዝብ ብዛት፣ የዝናብ መጠን፣ ሙቀት እና እፅዋት ያሉ ጂኦግራፊያዊ መረጃዎችን ስርጭት ለማሳየት ይጠቅማል። Thematic Maps በአጠቃላይ የተወሰነ ጭብጥ ያሳያሉ፣ ነገር ግን በዚህ ሞዱል የስርጭት መረጃን የሚያሳየው በተለይ Statistical Map ተብሎ ተጠቅሷል።" },
+            
+            {
   "question": "1. The relative location expresses location of a place relative to the landmass and water bodies.",
   "options": [
     "True",
