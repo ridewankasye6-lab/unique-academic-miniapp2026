@@ -6040,12 +6040,738 @@ quizData["history"]["5"] = [{
     amharicExplanation: "የጀሱስ ጣልቃ ገብነት የረጅም ጊዜ ውጤት በኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን ውስጥ አዳዲስ ሥነ-መለኮታዊ ንቅናቄዎች/አስተምህሮዎች መፈጠር ነበር። ⛪🗣️ ስለ ክርስቶስ ተፈጥሮ የነበሩት ከባድ ውይይቶች በመጨረሻም ለዘመናት በኢትዮጵያ ኦርቶዶክስ ውስጥ የዘለቁ የተለያዩ ሥነ-መለኮታዊ ልማዶች (እንደ ተዋሕዶ፣ ቂባት እና ሦስት ልደት የአስተምህሮ ትምህርት ቤቶች) እንዲፈጠሩ ምክንያት ሆኗል።"
 } ];
 
-quizData["history"]["6"] = [
+quizData["history"]["6"] = [ {
+    question: "Which reform introduced by Lij Iyasu reflected his focus on integrating Ethiopian Muslims into governance?",
+    options: [
+        "The construction of Islamic educational institutions in major cities.",
+        "The appointment of Muslim officials to key government positions.",
+        "The abolition of the Quragna system and a focus on equitable administration.",
+        "Negotiations with the Ottoman Empire to promote trade among Ethiopian Muslims."
+    ],
+    answer: 2,
+    englishExplanation: "⚖️ Lij Iyasu was deeply committed to creating a more inclusive government. His most significant reform regarding Muslims was abolishing the harsh 'Quragna' system, where a victim was chained to a criminal until justice was served, and replacing it with a policy of equitable and fair administration for all religious groups. 🌍",
+    amharicExplanation: "⚖️ ልጅ ኢያሱ የበለጠ ሁሉን አካታች መንግስት ለመፍጠር ቁርጠኛ ነበር። ሙስሊሞችን በተመለከተ ያደረገው ትልቁ ማሻሻያ አሳዛኙን 'ቁራግና' ሥርዓት፣ ተጎጂው እስከ ፍትህ ድረስ ከወንጀለኛ ጋር የሚታሰርበትን፣ ሙሉ በሙሉ ማስወገድ እና ለሁሉም የሃይማኖት ቡድኖች ፍትሃዊ እና ሚዛናዊ አስተዳደር ያለው ፖሊሲ ማስተዋወቅ ነበር። 🌍"
+},
 
-    // History Chapter 6 questions
+{
+    question: "Which of the following reforms is correctly matched with its initiator?",
+    options: [
+        "Introduction of a ministerial system – Lij Iyasu",
+        "Establishment of Ethiopia's first constitution – Ras Teferi (Haile Selassie I)",
+        "Opening of Menelik II School – Emperor Yohannes IV",
+        "Building of Ethiopia's first embryonic road network – Emperor Menelik II"
+    ],
+    answer: 1,
+    englishExplanation: "📜 Ethiopia's very first constitution was officially introduced in 1931, during the reign of Emperor Haile Selassie I, who was previously known as Ras Teferi Makonnen. This modern constitution was a monumental step in legally defining the rights and duties of Ethiopian citizens. 🏛️",
+    amharicExplanation: "📜 የኢትዮጵያ የመጀመሪያ ሕገ መንግሥት በ1931 ዓ.ም በንጉሠ ነገሥት ኃይለ ሥላሴ የግዛት ዘመን በይፋ ተዘጋጅቷል፣ እሱም በዚያን ጊዜ ራስ ተፈሪ መኮንን በመባል ይታወቅ ነበር። ይህ ዘመናዊ ሕገ መንግሥት የኢትዮጵያን ዜጎች መብት እና ግዴታዎች በህጋዊ መንገድ ለመወሰን ትልቅ እርምጃ ነበር። 🏛️"
+},
 
+{
+    question: "Which of the following best describes the motive behind Emperor Yohannes IV's signing of the Hewett/Adwa Treaty in 1884?",
+    options: [
+        "To establish a permanent alliance with Italy against the Mahdists.",
+        "To restore lost territories and gain access to Massawa for trade and military purposes.",
+        "To gain British support for the abolition of slavery in Ethiopia.",
+        "To solidify Ethiopia's position in the League of Nations."
+    ],
+    answer: 1,
+    englishExplanation: "⚔️ Emperor Yohannes IV signed the Hewett Treaty primarily to secure vital access to the sea. He sought to regain territories lost to the Egyptians and obtain free transit rights for trade and military supplies through the key Red Sea port of Massawa. 🚢",
+    amharicExplanation: "⚔️ ንጉሠ ነገሥት ዮሐንስ አራተኛ የሄወት ስምምነትን የፈረመው በዋናነት ወሳኝ የባህር ተደራሽነትን ለማረጋገጥ ነው። ለግብፃውያን የጠፉትን ግዛቶች መልሶ ለማግኘት እና በቀይ ባህር ወደብ በሆነችው መሳዋ በኩል ለንግድ እና ለወታደራዊ አቅርቦት ነፃ የመጓጓዣ መብት ለማግኘት ጥረት አድርጓል። 🚢"
+},
 
-];
+{
+    question: "Why did Emperor Menelik II abrogate the Wuchale Treaty in 1893?",
+    options: [
+        "The treaty restricted Ethiopian foreign relations exclusively through Italy in its Italian version.",
+        "It required Ethiopia to cede all territories south of the Mereb River to Italy.",
+        "It imposed heavy taxation on Ethiopian merchants trading with Italian colonies.",
+        "It allowed Italy to recruit Ethiopian soldiers for its colonial army."
+    ],
+    answer: 0,
+    englishExplanation: "🚩 The Wuchale Treaty had a fatal flaw: a deliberate language discrepancy. The Italian version of Article 17 forced Ethiopia to conduct all foreign affairs through Italy, effectively making Ethiopia a protectorate. The Amharic version only gave Italy an optional role. Upon discovering this trap, Menelik II denounced and abrogated the treaty to preserve Ethiopia's full sovereignty. 🇪🇹",
+    amharicExplanation: "🚩 የውብጨሌ ስምምነት ለሞት የሚዳርግ ጉድለት ነበረው፡ ሆን ተብሎ የተደረገ የቋንቋ ልዩነት። የጣሊያን ቅጂ አንቀጽ 17 ኢትዮጵያን ሁሉንም የውጭ ጉዳዮችን በጣሊያን በኩል እንድትመራ አስገድዷት ነበር፣ ይህም የጥበቃ ግዛት ያደርጋት ነበር። የአማርኛው ቅጂ ግን ለጣሊያን አማራጭ ሚና ብቻ ሰጥቷት ነበር። ይህንን ወጥመድ በመረዳት፣ ምኒልክ ዳግማዊ ሙሉ ሉዓላዊነትን ለማስጠበቅ ስምምነቱን ሰርዘዋል። 🇪🇹"
+},
+
+{
+    question: "What was a significant consequence of Henry Salt's visits to Ethiopia in the early 19th century?",
+    options: [
+        "The establishment of permanent British embassies in Ethiopia.",
+        "The signing of an agreement with Ras Wolde-Selassie to strengthen British-Ethiopian relations.",
+        "The creation of a shared trade network between Ethiopia and Egypt.",
+        "The introduction of British missionaries to the Ethiopian highlands."
+    ],
+    answer: 1,
+    englishExplanation: "🤝 Henry Salt, a British diplomat and explorer, played a pivotal role in early British-Ethiopian relations. He successfully negotiated and signed a formal agreement with Ras Wolde-Selassie of Tigray, paving the way for diplomatic and military cooperation between the two sides. 🕊️",
+    amharicExplanation: "🤝 ሄንሪ ሶልት የብሪታንያ ዲፕሎማት እና አሳሽ በቀድሞ የብሪታንያ-ኢትዮጵያ ግንኙነት ወሳኝ ሚና ተጫውቷል። ከትግራይ ራስ ወልደ ሥላሴ ጋር መደበኛ ስምምነት በተሳካ ሁኔታ በማድረግ በሁለቱ ሀገራት መካከል ለዲፕሎማሲያዊ እና ወታደራዊ ትብብር መንገድ ከፍቷል። 🕊️"
+},
+
+{
+    question: "Which key factor contributed to Ethiopia's success at the Battle of Adwa in 1896?",
+    options: [
+        "Italy's inability to mobilize reinforcements from Eritrea due to a blockade by Ethiopia.",
+        "Ethiopia's decisive use of modern European weapons acquired from Russia and France.",
+        "The support of the League of Nations in providing military advisors.",
+        "A successful siege strategy designed by Empress Taytu at Mekelle, weakening Italian forces."
+    ],
+    answer: 3,
+    englishExplanation: "🏰 Empress Taytu Betul played a crucial role in Ethiopia's victory at Adwa. She personally led a large force alongside Emperor Menelik II and played an important role in the successful siege of the Italian-occupied fort at Mekelle. The siege trapped the Italians and disrupted their position before the main battle. 👑",
+    amharicExplanation: "🏰 እቴጌ ጣይቱ ብጡል በአድዋ ድል ወሳኝ ሚና ተጫውተዋል። ከባለቤታቸው ከንጉሠ ነገሥት ምኒልክ ዳግማዊ ጎን ትልቅ ሠራዊት በመምራት በኢጣሊያውያን የተያዘውን የመቀሌ ምሽግ በብልሃት በመክበብ ወሳኝ ሚና ተጫውተዋል። ይህ ከበባ ጣሊያኖችን አዳክሞ ከዋናው ጦርነት በፊት አቋማቸውን አዳክሟል። 👑"
+},
+
+{
+    question: "Why was Emperor Yohannes IV's death at the Battle of Metemma in 1889 significant in Ethiopian history?",
+    options: [
+        "It marked the end of Ethiopian resistance against the Mahdists.",
+        "It allowed Menelik II to rise to power and continue state-building efforts.",
+        "It ended Ethiopia's use of modern artillery in warfare.",
+        "It led to the Treaty of Addis Ababa with the Italians."
+    ],
+    answer: 1,
+    englishExplanation: "🕊️ Yohannes IV fell in battle against the Mahdists at Metemma. His death created a major power vacuum in the empire, allowing Menelik II, the King of Shewa, to rise to the throne and continue the expansion and consolidation of the modern Ethiopian state. 👑",
+    amharicExplanation: "🕊️ ንጉሠ ነገሥት ዮሐንስ አራተኛ በመጠማ ጦርነት ላይ ከመሐዲስቶች ጋር በመዋጋት በአሳዛኝ ሁኔታ ሞተ። ሞቱ በግዛቱ ውስጥ ከፍተኛ የስልጣን ክፍተት ፈጠረ። ይህ ወሳኝ ክስተት ምኒልክ ዳግማዊ ዙፋኑን እንዲይዙ እና የዘመናዊትን ኢትዮጵያ ግዛት የማስፋፋት እና የማጠናከር ሥራቸውን እንዲቀጥሉ አስችሏቸዋል። 👑"
+},
+
+{
+    question: "What role did Lij Iyasu's foreign policy play during World War I?",
+    options: [
+        "It aimed to align Ethiopia with the Allied Powers to protect its borders.",
+        "It sought to side with the Central Powers to expel European colonizers from the Horn of Africa.",
+        "It established a formal alliance with Italy to regain Eritrea.",
+        "It emphasized neutrality to maintain Ethiopia's independence."
+    ],
+    answer: 1,
+    englishExplanation: "🌍 During World War I, Lij Iyasu pursued a controversial foreign policy and sought closer relations with the Central Powers, including Germany and the Ottoman Empire. His broader strategic objective was connected to resisting European colonial influence in the Horn of Africa. ⚔️",
+    amharicExplanation: "🌍 በአንደኛው የዓለም ጦርነት ወቅት ልጅ ኢያሱ አወዛጋቢ የሆነ የውጭ ፖሊሲ ተከትሎ ከማዕከላዊ ኃይሎች፣ ጀርመንን እና የኦቶማን ኢምፓየርን ጨምሮ፣ ጋር ቅርብ ግንኙነት ለመፍጠር ሞክሯል። ሰፊው ስልታዊ ዓላማው በአፍሪካ ቀንድ ውስጥ የአውሮፓን የቅኝ ግዛት ተጽዕኖ መቋቋም ጋር የተያያዘ ነበር። ⚔️"
+},
+
+{
+    question: "Which diplomatic achievement of Emperor Menelik II helped shape Ethiopia's modern boundaries?",
+    options: [
+        "The inclusion of Ethiopia in the League of Nations.",
+        "The signing of boundary agreements with neighboring colonial powers.",
+        "The Treaty of Neutrality with Italy in 1887.",
+        "The establishment of a joint economic zone with French Somaliland."
+    ],
+    answer: 1,
+    englishExplanation: "🗺️ Menelik II's most enduring diplomatic legacy was his successful negotiation of boundary agreements with neighboring European colonial powers, including Britain, France, and Italy. These agreements helped establish the foundation of Ethiopia's modern national boundaries. 🛡️",
+    amharicExplanation: "🗺️ የምኒልክ ዳግማዊ በጣም ዘላቂ የዲፕሎማሲ ቅርስ ከአጎራባች የአውሮፓ ቅኝ ገዥ ኃይሎች፣ ብሪታንያ፣ ፈረንሳይ እና ኢጣሊያን ጨምሮ፣ ጋር የድንበር ስምምነቶችን በተሳካ ሁኔታ ማድረግ ነበር። እነዚህ ስምምነቶች ለዘመናዊቷ ኢትዮጵያ ብሄራዊ ድንበሮች መሠረት ጥለዋል። 🛡️"
+},
+
+{
+    question: "What was the primary objective of the Italian policy of subversion during their preparation for the invasion of Ethiopia?",
+    options: [
+        "Establishing diplomatic ties with Britain and France.",
+        "Weakening the unity of Ethiopia by fostering dissatisfaction in key provinces.",
+        "Promoting Italian culture and governance through propaganda.",
+        "Building alliances with Ethiopian provincial rulers."
+    ],
+    answer: 1,
+    englishExplanation: "🕵️‍♂️ Before invading Ethiopia in 1935, Italy used strategic subversive tactics. Their main objective was to destabilize the country from within by exploiting regional differences and fostering dissatisfaction in key provinces, thereby weakening Ethiopia's national unity before the invasion. 💣",
+    amharicExplanation: "🕵️‍♂️ በ1935 ዓ.ም ኢትዮጵያን ከመውረራቸው በፊት ኢጣሊያ ስልታዊ የማጥፋት ዘዴዎችን ተጠቀመች። ዋና ዓላማቸው የክልል ልዩነቶችን በመጠቀም እና በዋና ዋና ክልሎች ውስጥ ቅሬታ በመፍጠር ሀገሪቱን ከውስጥ ማዳከም እና ከጥቃቱ በፊት የኢትዮጵያን ማዕከላዊ አንድነት ማዳከም ነበር። 💣"
+},
+
+{
+    question: "How did the Walwal Incident serve as a pretext for Italy's invasion of Ethiopia in 1935?",
+    options: [
+        "It exposed Ethiopia's military collaboration with Britain and France.",
+        "It resulted from unresolved boundary issues and gave Mussolini an excuse to escalate tensions.",
+        "It highlighted Ethiopia's violation of the 1928 Italo-Ethiopian Treaty of Peace and Friendship.",
+        "It was a response to Ethiopia's annexation of disputed territories."
+    ],
+    answer: 1,
+    englishExplanation: "🔥 The Walwal Incident was a border clash connected to unresolved boundary disputes between Ethiopia and Italian Somaliland. Italy used the incident as a pretext to escalate tensions, creating an international crisis that helped justify the full-scale invasion of Ethiopia. 🌍",
+    amharicExplanation: "🔥 የወልዋል ክስተት በኢትዮጵያ እና በጣሊያን ሶማሊላንድ መካከል ባለው ያልተፈታ የድንበር አለመግባባት ጋር የተያያዘ የድንበር ግጭት ነበር። ኢጣሊያ ይህንን ክስተት እንደ ሰበብ በመጠቀም ውጥረቱን አባብሳ ዓለም አቀፍ ቀውስ ፈጠረች፣ ይህም ለሙሉ ወረራ ማረጋገጫ ሆነ። 🌍"
+},
+
+{
+    question: "Which factor most contributed to the failure of Ethiopia's counter-offensive against Italy at the Battle of Mekelle in 1936?",
+    options: [
+        "Inferior weaponry compared to the Italians.",
+        "Lack of coordination among Ethiopian commanders.",
+        "The desertion of Ethiopian soldiers to Italian forces.",
+        "Italian alliances with local Ethiopian rulers."
+    ],
+    answer: 1,
+    englishExplanation: "🎖️ Although Ethiopian forces showed bravery and determination, the counter-offensive failed largely because of poor coordination among different Ethiopian commanders. The forces did not effectively synchronize their operations, allowing the better-organized Italian army to gain the advantage. 🛡️",
+    amharicExplanation: "🎖️ ኢትዮጵያውያን ድፍረት እና ቁርጠኝነት ቢኖራቸውም፣ የመልሶ ማጥቃቱ በዋናነት በተለያዩ የኢትዮጵያ አዛዦች መካከል በነበረው የቅንጅት እጦት ምክንያት ወድቋል። ኃይሎቹ እንቅስቃሴያቸውን በትክክል ማመሳሰል ባለመቻላቸው በደንብ የተደራጁት የጣሊያን ኃይሎች ጥቅም እንዲያገኙ አስችሏል። 🛡️"
+},
+
+{
+    question: "What was a significant characteristic of Italian administration in occupied Ethiopia (1936–41)?",
+    options: [
+        "Effective rural governance supported by local Ethiopian collaborators.",
+        "The establishment of a strong cash economy supported by agricultural reforms.",
+        "Corruption and inefficiency within the administrative hierarchy.",
+        "A successful settlement of Italian farmers in regions like Jimma and Chercher."
+    ],
+    answer: 2,
+    englishExplanation: "🚩 Italian administration in occupied Ethiopia was characterized by serious corruption and inefficiency within its administrative hierarchy. Despite infrastructure projects in some areas, the colonial system faced major administrative problems and relied heavily on repression and military control. 🏚️",
+    amharicExplanation: "🚩 በተያዘችው ኢትዮጵያ የነበረው የኢጣሊያ አስተዳደር በአስተዳደራዊ ተዋረዱ ውስጥ በከፍተኛ ሙስና እና ብቃት ማነስ ተለይቶ ይታወቅ ነበር። በአንዳንድ አካባቢዎች የመሠረተ ልማት ሥራዎች ቢኖሩም፣ የቅኝ ግዛት ሥርዓቱ ከፍተኛ የአስተዳደር ችግሮች ነበሩት እና በአብዛኛው በጭቆና እና በወታደራዊ ቁጥጥር ላይ ይመሰረት ነበር። 🏚️"
+},
+
+{
+    question: "How did Ethiopian resistance evolve after the initial Italian occupation of Addis Ababa in 1936?",
+    options: [
+        "Coordinated guerrilla campaigns unified under a central command structure.",
+        "A transition from direct confrontation to guerrilla warfare due to Fascist terror.",
+        "Strategic alliances with Britain and France to liberate Ethiopia.",
+        "Effective utilization of modern weaponry acquired from foreign allies."
+    ],
+    answer: 1,
+    englishExplanation: "🌲 Facing overwhelming modern firepower and brutal Fascist repression, Ethiopian resistance forces adapted their strategy. They increasingly shifted from direct conventional battles toward guerrilla warfare, using mountains and difficult terrain to attack and disrupt Italian forces. ⚔️",
+    amharicExplanation: "🌲 ከላቀ የዘመናዊ የጦር መሳሪያ እና ከጭካኔ የፋሺስት ጭቆና ጋር በመጋፈጥ የኢትዮጵያ ተቃውሞ ስልቱን አስተካክሏል። ከቀጥታ መደበኛ ጦርነቶች ይልቅ ወደ ሽምቅ ውጊያ በመሸጋገር ተራራማ እና አስቸጋሪ መሬቶችን በመጠቀም የጣሊያን ኃይሎችን ያጠቁ እና እንቅስቃሴያቸውን አስተጓጉለዋል። ⚔️"
+},
+
+{
+    question: "The Medieval Kingdom of Shoa was founded during the reign of Menelik II.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "⏳ This statement is historically incorrect. The Kingdom of Shoa existed centuries before Menelik II, during the medieval period. Menelik II ruled in the late 19th and early 20th centuries and expanded Shoa as part of the process of building the modern Ethiopian state; he did not found the medieval kingdom. 🏛️",
+    amharicExplanation: "⏳ ይህ መግለጫ ከታሪክ አንጻር ትክክል አይደለም። የሸዋ መንግሥት ከምኒልክ ዳግማዊ በፊት በመካከለኛው ዘመን ከብዙ መቶ ዘመናት በፊት ነበር። ምኒልክ ዳግማዊ በ19ኛው እና በ20ኛው ክፍለ ዘመን መገባደጃ ላይ ገዙ እና ዘመናዊቷን ኢትዮጵያ በመገንባት ሂደት ውስጥ ሸዋን አስፋፉ፤ የመካከለኛውን ዘመን መንግሥት ግን አልመሰረቱትም። 🏛️"
+},
+
+{
+    question: "Emperor Yohannes IV attempted to introduce a decentralized system of administration more than Emperor Tewodros II.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🏛️ True. Emperor Tewodros II strongly emphasized centralization and attempted to reduce the power of regional lords. In contrast, Emperor Yohannes IV allowed significant autonomy to powerful regional rulers, including Menelik in Shewa and Tekle Haymanot in Gojjam, as part of his decentralized governing approach. 🤝",
+    amharicExplanation: "🏛️ እውነት ነው። ንጉሠ ነገሥት ቴዎድሮስ ዳግማዊ ማዕከላዊ አስተዳደርን በጥብቅ ያራምዱ እና የክልል መሳፍንትን ኃይል ለመቀነስ ሞክረዋል። በተቃራኒው ንጉሠ ነገሥት ዮሐንስ አራተኛ ለኃያላን የክልል መሪዎች፣ እንደ ሸዋ ምኒልክ እና ጎጃም ተክለ ሃይማኖት፣ ከፍተኛ ራስን በራስ የማስተዳደር መብት በመስጠት ያልተማከለ የአስተዳደር ስልት ተከትለዋል። 🤝"
+},
+
+{
+    question: "The long distance trade of the 19th century had no negative impact on the Ethiopian society.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "💔 This statement is false. Although long-distance trade brought valuable goods and wealth, it was also closely connected with the slave trade. This caused enormous human suffering, destroyed families, and contributed to the depopulation and destabilization of several communities. 🕊️",
+    amharicExplanation: "💔 ይህ መግለጫ ሐሰት ነው። የረጅም ርቀት ንግድ ጠቃሚ እቃዎችን እና ሀብትን ቢያመጣም፣ ከባሪያ ንግድ ጋር በእጅጉ የተያያዘ ነበር። ይህ ከፍተኛ ሰብዓዊ ስቃይ አስከትሏል፣ ቤተሰቦችን አፍርሷል እና የተለያዩ ማህበረሰቦችን የህዝብ ቅነሳ እና አለመረጋጋት አስከትሏል። 🕊️"
+},
+
+{
+    question: "The military victories of Ethiopia over Egypt liberated all occupied territories in the north.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🎖️ False. Although Ethiopian forces won major victories against Egyptian invaders at Gundet and Gura in the mid-1870s, these victories alone did not automatically liberate all northern territories. Further diplomatic negotiations, including the Hewett Treaty of 1884, were important in securing the withdrawal of Egyptian forces. 📜",
+    amharicExplanation: "🎖️ ሐሰት ነው። የኢትዮጵያ ኃይሎች በ1870ዎቹ አጋማሽ ላይ በጉንደት እና በጉራ ጦርነቶች የግብፅን ወራሪዎች በማሸነፍ ታላቅ ድል ቢያገኙም፣ እነዚህ ድሎች ብቻ ሁሉንም የሰሜን ግዛቶች በራሳቸው አላስለቀቁም። እንደ 1884 የሄወት ስምምነት ያሉ ተጨማሪ የዲፕሎማሲ ድርድሮች የግብፅ ኃይሎችን ለማስወገድ ወሳኝ ነበሩ። 📜"
+},
+
+{
+    question: "The victory of Adwa (1896) has been nothing to do with African Nationalism.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🌍 False. The Battle of Adwa became a landmark event for African and Black nationalism. It served as a powerful symbol of resistance against European colonialism and demonstrated that an African state could successfully defend its sovereignty, inspiring anti-colonial movements across Africa. ✊🏿",
+    amharicExplanation: "🌍 ሐሰት ነው። የአድዋ ጦርነት ለአፍሪካ እና ለጥቁር ብሔርተኝነት ታላቅ የታሪክ ምልክት ሆኗል። በአውሮፓ ቅኝ ግዛት ላይ የመቋቋም ኃያል ምልክት ሆኖ አገልግሏል እና የአፍሪካ ሀገር ሉዓላዊነቷን በተሳካ ሁኔታ መከላከል እንደምትችል አሳይቷል፣ ይህም በመላው አፍሪካ የቅኝ ግዛት ተቃውሞ እንቅስቃሴዎችን አነሳስቷል። ✊🏿"
+},
+
+{
+    question: "An epitome of Emperor Yohannes IV's willingness to give regional lords a great deal of autonomy was his recognition of Dajazmach Tessema as Negus Tekle Haymanot of Gojjam and Kaffa.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "👑 True. To promote peace and regional stability, Emperor Yohannes IV recognized the powerful regional leader Dajazmach Tessema and granted him the prestigious royal title of Negus Tekle Haymanot. This recognition and autonomy in governing Gojjam and Kaffa clearly illustrate Yohannes IV's decentralized approach to administration. 🏛️",
+    amharicExplanation: "👑 እውነት ነው። ሰላምን እና የክልል መረጋጋትን ለማረጋገጥ ንጉሠ ነገሥት ዮሐንስ አራተኛ ኃያሉን የክልል መሪ ደጃዝማች ተሰማን በይፋ እውቅና ሰጥተው የተከበረውን የ'ንጉስ' ማዕረግ በመስጠት ጎጃም እና ካፋን በሰፊ ራስን በራስ የማስተዳደር መብት ሰጡት። ይህ የእሱን ያልተማከለ የአስተዳደር ስልት ፍጹም ምሳሌ ነው። 🏛️"
+},{
+    question: "Which of the following Does Not belong to the group?",
+    options: [
+        "Battle of Temben",
+        "Battle of Amba-Aradom",
+        "Battle of Maychew",
+        "Battle of Qorahe"
+    ],
+    answer: 3,
+    englishExplanation: "⚔️ The Battles of Temben, Amba-Aradom, and Maychew were major military engagements fought during the Second Italo-Ethiopian War in the 1930s. However, the Battle of Qorahe happened much earlier (in 1887) during the reign of Emperor Yohannes IV against the Italians, so it does not belong to this 1930s group. 📅",
+    amharicExplanation: "⚔️ የተምቤን፣ የአምባ-አራዶም እና የማይጨው ጦርነቶች በ1930ዎቹ በሁለተኛው ኢትዮ-ኢጣሊያ ጦርነት ወቅት የተካሄዱ ዋና ዋና ወታደራዊ እንቅስቃሴዎች ነበሩ። ሆኖም የቆራሄ ጦርነት ከዚህ በጣም ቀደም ብሎ (በ1887 ዓ.ም) በንጉሠ ነገሥት ዮሐንስ አራተኛ ዘመነ መንግስት ወቅት ከጣሊያኖች ጋር የተካሄደ ነው፤ ስለዚህ ከዚህ የ1930ዎቹ ቡድን ውስጥ አይካተትም። 📅"
+},
+{
+    question: "Which of the following was a consequence of Ethiopian victory at the Battle of Adwa?",
+    options: [
+        "The signing of the Italo-Ethiopian Treaty of Peace and Friendship.",
+        "The restoration of the Port of Massawa to Ethiopia.",
+        "The opening of legations in Addis Ababa by European powers.",
+        "The end of Italian colonial ambitions in the Horn of Africa."
+    ],
+    answer: 2,
+    englishExplanation: "🏛️ The monumental victory at Adwa (1896) forced European nations to view Ethiopia as a legitimate, powerful sovereign state. Consequently, many European powers rushed to open their diplomatic legations (embassies) in Addis Ababa to establish official relations. 🌍",
+    amharicExplanation: "🏛️ በአድዋ የተገኘው ታላቅ ድል (1896) የአውሮፓ ሀገራት ኢትዮጵያን እንደ ህጋዊ፣ ኃያል እና ሉዓላዊ ሀገር እንዲመለከቷት አስገደዳቸው። በዚህ ምክንያት ብዙ የአውሮፓ ኃይሎች ዲፕሎማሲያዊ ግንኙነት ለመመስረት በአዲስ አበባ የራሳቸውን ዲፕሎማሲያዊ ተወካዮች (ኤምባሲዎች) ለመክፈት ቸኮሉ። 🌍"
+},
+{
+    question: "Which one of the following modernization attempts took place during the early period of Emperor Haile Selassie I's reign?",
+    options: [
+        "The establishment of the Imperial Body Guard.",
+        "The inauguration of a Russian-run hospital.",
+        "The setting up of a mechanically operated flourmill.",
+        "The introduction of auditing of government accounts."
+    ],
+    answer: 0,
+    englishExplanation: "🛡️ During the early period of his reign (before the Italian occupation), Emperor Haile Selassie I focused on establishing a strong, disciplined central military. He created the Kebur Zebegna (Imperial Body Guard), a highly trained elite unit, to secure his rule and modernize the army. 🪖",
+    amharicExplanation: "🛡️ በንጉሠ ነገሥት ኃይለ ሥላሴ የመጀመሪያ የግዛት ዘመን (ከጣሊያን ወረራ በፊት)፣ ጠንካራ እና የተለማመደ ማዕከላዊ ወታደራዊ ኃይል ለማቋቋም ከፍተኛ ትኩረት ሰጥተዋል። ስልጣናቸውን ለማስጠበቅ እና ሰራዊቱን ለማዘመን በጣም የሰለጠነ የሊፍት ክፍል የሆነውን ክቡር ዘበኛን ፈጠሩ። 🪖"
+},
+{
+    question: "Who was the translator of the Bible into Afan Oromo?",
+    options: [
+        "Asme Giorgis",
+        "Onesimos Nasib",
+        "Mahbuba",
+        "Herman Pickler"
+    ],
+    answer: 1,
+    englishExplanation: "📖 Onesimos Nasib, an Ethiopian scholar and pioneer, devoted his life to translating the Holy Bible into Afan Oromo. His monumental translation work was groundbreaking and played a vital role in the cultural and spiritual development of the Oromo-speaking people. ✍️",
+    amharicExplanation: "📖 የኢትዮጵያ ምሁር እና አቅኚ የነበረው ኦነሲሞስ ናሲብ ሕይወቱን ቅዱስ መጽሐፍን ወደ አፋን ኦሮሞ ለመተርጎም ሰጠ። የእሱ ታላቅ የትርጉም ሥራ ግንባር ቀደም የነበረ ሲሆን ለኦሮሞ ተናጋሪ ሕዝቦች ባህላዊ እና መንፈሳዊ እድገት ወሳኝ ሚና ተጫውቷል። ✍️"
+},
+{
+    question: "What was one of the primary reasons for the transformation of the Gadaa system into monarchical states among the Mecha Oromo?",
+    options: [
+        "The integration of Gurage merchants into local trade networks.",
+        "The accumulation of wealth by war leaders through taxation and trade control.",
+        "The adoption of Islam by the local rulers.",
+        "The influence of Nilotic Sheikhdoms in the region."
+    ],
+    answer: 1,
+    englishExplanation: "💰 As Mecha Oromo war leaders (Abbaa Duulaa) expanded their territories, they began controlling crucial trade routes and collecting taxes. This accumulation of massive economic wealth gave them permanent and concentrated power, leading to the breakdown of the traditional, rotating Gadaa democratic system and the rise of hereditary monarchies. 👑",
+    amharicExplanation: "💰 የመቻ ኦሮሞ የጦር መሪዎች (አባ ዱላ) ግዛታቸውን ሲያሰፉ፣ ወሳኝ የንግድ መስመሮችን መቆጣጠር እና ቀረጥ መሰብሰብ ጀመሩ። ይህ ከፍተኛ የኢኮኖሚ ሀብት ማካበት ቋሚ እና የተጠናከረ ስልጣን ሰጣቸው፤ ይህም ባህላዊውን ተዘዋዋሪ የገዳ ሥርዓት በማፍረስ ለዘር የሚተላለፍ ንግስና እንዲፈጠር ምክንያት ሆኗል። 👑"
+},
+{
+    question: "Which of the following accurately describes the administrative structure of the Leqa-Naqamte kingdom?",
+    options: [
+        "A decentralized system rooted in Gadaa traditions.",
+        "A feudal-like system reliant on land tenure and the sirna abba-qoro hierarchy.",
+        "A centralized system controlled by Muslim revivalist leaders.",
+        "A merchant-led system based on trade alliances with Gurage traders."
+    ],
+    answer: 1,
+    englishExplanation: "🏛️ The Leqa-Naqamte kingdom moved away from the Gadaa system and developed a strong feudal-like administrative system. It was heavily based on land ownership (tenure) and a strict social hierarchy known as sirna abba-qoro, where local chiefs controlled the people and resources through land grants. 🌾",
+    amharicExplanation: "🏛️ የለቃ-ነቀምት መንግሥት ከገዳ ሥርዓት በመራቅ ጠንካራ የፊውዳል መሰል የአስተዳደር ሥርዓት ፈጠረ። በመሬት ባለቤትነት እና ሲርና አባ-ቆሮ ተብሎ በሚጠራው ጥብቅ የማህበራዊ ተዋረድ ላይ የተመሰረተ ነበር፣ የአካባቢ አለቆች በመሬት በመስጠት ሕዝቡን እና ሀብቱን ይቆጣጠሩ ነበር። 🌾"
+},
+{
+    question: "What role did Qabena play in the spread of Islam in the South-Central region during the 19th century?",
+    options: [
+        "It was a hub for trade with the Arabian Peninsula, facilitating the spread of Islam.",
+        "It emerged as a center of Muslim revivalist movement influenced by Wollo refugees and Mahdist Sudan.",
+        "It hosted Islamic educational institutions established by traders from Djibouti.",
+        "It was the location of diplomatic agreements between Ethiopian rulers and Islamic leaders."
+    ],
+    answer: 1,
+    englishExplanation: "🕌 Qabena became a significant center for Islamic revivalism in the 19th century. This was largely influenced by Muslim refugees who fled from Wollo following Emperor Yohannes IV's campaigns, as well as by religious warriors (Mullahs) from Mahdist Sudan, making it a hotspot for renewed Islamic militancy and culture. ☪️",
+    amharicExplanation: "🕌 ቀበና በ19ኛው ክፍለ ዘመን የእስልምና መነቃቃት ዋና ማዕከል ሆነች። ይህ በአብዛኛው በንጉሠ ነገሥት ዮሐንስ አራተኛ ዘመቻ ምክንያት ከወሎ በሸሹ ሙስሊም ስደተኞች እንዲሁም ከሱዳን መሐዲስት በመጡ የሃይማኖት ተዋጊዎች ተጽዕኖ ነበር፤ ይህም ለታደሰ የእስልምና ወታደራዊ እና ባህላዊ እንቅስቃሴ ማዕከል አድርጓታል። ☪️"
+},
+{
+    question: "What was the primary economic activity that contributed to the prominence of Nilotic Sheikhdoms along the Abbay River?",
+    options: [
+        "Long-distance trade of luxury goods like ivory and slaves.",
+        "Frontier trade, agriculture, and gold mining.",
+        "Local craft production and salt mining.",
+        "Administrative taxation of Gadaa territories."
+    ],
+    answer: 1,
+    englishExplanation: "🌾 The Nilotic Sheikhdoms (like those of the Benishangul region) became powerful and prosperous through a diverse economy. They heavily engaged in frontier trade, practiced extensive agriculture along the fertile riverbanks, and actively mined gold. 🌍",
+    amharicExplanation: "🌾 የናይሎቲክ ሼኮች (እንደ ቤኒሻንጉል ክልል ያሉ) በተለያየ ኢኮኖሚ ኃያላን እና የበለጸጉ ሆኑ። በድንበር ንግድ በከፍተኛ ሁኔታ ተሳትፈዋል፣ በለምለም የወንዝ ዳርቻዎች ሰፊ ግብርና ሰርተዋል፣ እንዲሁም በንቃት ወርቅ አውጥተዋል። 🌍"
+},
+{
+    question: "Which factor most significantly distinguished the Gera kingdom from other Gibe states?",
+    options: [
+        "Its early adoption of feudal administrative systems similar to the Leqa states.",
+        "Its successful attraction of Muslim missionaries for the spread of Islam.",
+        "Its military alliances with the Nilotic Sheikhdoms against Ethiopian rulers.",
+        "Its dependence on coastal trade routes for economic prosperity."
+    ],
+    answer: 1,
+    englishExplanation: "🕌 Unlike the other Gibe states, the Gera kingdom successfully attracted many Muslim missionaries. By integrating Islamic scholars and religious leaders into their society, Gera played a truly unique and distinct role in peacefully spreading Islam throughout the southwestern region. ☪️",
+    amharicExplanation: "🕌 ከሌሎች የጊቤ ግዛቶች በተለየ መልኩ የገራ መንግሥት በርካታ የሙስሊም ሚሲዮናውያንን በተሳካ ሁኔታ ስቧል። የእስልምና ምሁራንን እና የሃይማኖት መሪዎችን ወደ ማህበረሰባቸው በማዋሃድ፣ ገራ በደቡብ ምዕራብ ክልል እስልምናን በሰላም በማስፋፋት ልዩ እና የተለየ ሚና ተጫውቷል። ☪️"
+},
+{
+    question: "Which of the following best describes the role of the town of Mekelle in the trade network of 19th-century Ethiopia?",
+    options: [
+        "It served as the main port for exporting Ethiopian products to the Middle East.",
+        "It was a center for processing ivory and rhinoceros horns for export.",
+        "It prospered as a hub for salt cutting and distribution to highland regions.",
+        "It acted as the final stop for the Maria Theresa Thalers trade route."
+    ],
+    answer: 2,
+    englishExplanation: "🧂 In the 19th century, Mekelle played a critical role as the primary hub for the salt trade. The town prospered because it served as a major cutting and distribution center, where salt bars (amole) from the Afar lowlands were processed and then traded to the highland regions of Ethiopia. 🏔️",
+    amharicExplanation: "🧂 በ19ኛው ክፍለ ዘመን መቀሌ የጨው ንግድ ዋና ማዕከል ሆና ወሳኝ ሚና ተጫውታለች። ከአፋር ቆላማ አካባቢ የሚመጣውን የጨው ጨው (አሞሌ) በመቁረጥ እና በማሰራጨት ዋና ማዕከል በመሆን ከፍተኛ እድገት አሳይታለች፣ ከዚያም ወደ ኢትዮጵያ ደጋማ አካባቢዎች ትሸጥ ነበር። 🏔️"
+},
+{
+    question: "Which of the following trade commodities was least likely to be exchanged in Ethiopia's 19th-century trade with the Middle East?",
+    options: [
+        "Musk",
+        "Mirrors",
+        "Rhinoceros horns",
+        "Coal"
+    ],
+    answer: 3,
+    englishExplanation: "⛔ During the 19th century, Ethiopia exported luxury goods like musk, ivory, rhino horns, and coffee to the Middle East, while importing manufactured items like mirrors and textiles. Coal was not a typical commodity of this trade. The industrial use of coal was not widespread in Ethiopia, and the country lacked the mining infrastructure to export it during that era. 🚂",
+    amharicExplanation: "⛔ በ19ኛው ክፍለ ዘመን ኢትዮጵያ እንደ ምሽጥ፣ የዝሆን ጥርስ፣ የአውራሪስ ቀንድ እና ቡና ያሉ የቅንጦት ዕቃዎችን ወደ መካከለኛው ምስራቅ ትልክ ነበር፣ በምላሹም እንደ መስታወት እና ጨርቃ ጨርቅ ያሉ የተመረቱ ዕቃዎችን ታስገባ ነበር። የድንጋይ ከሰል የዚህ ንግድ የተለመደ ምርት አልነበረም። በዚያ ዘመን የድንጋይ ከሰል የኢንዱስትሪ አገልግሎት በስፋት ስላልተስፋፋ እና ለማዕድን ማውጣት መሰረተ ልማት ስላልነበረ፣ ለውጭ ንግድ አይውልም ነበር። 🚂"
+},
+{
+    question: "What was the primary factor that contributed to the prominence of trade routes originating from Bonga during the 19th century?",
+    options: [
+        "The revival of external trade in the Red Sea region.",
+        "The establishment of Maria Theresa Thalers as the primary currency.",
+        "The agricultural surplus of the southwestern regions.",
+        "The dominance of Muslim merchants in coastal trade."
+    ],
+    answer: 0,
+    englishExplanation: "🌍 Bonga became a major trade hub primarily because of the massive revival of external trade in the Red Sea during the 19th century. As European and Middle Eastern demand for Ethiopian goods like coffee and spices skyrocketed, routes like Bonga flourished to connect the southwestern interior directly to coastal ports. ⛵",
+    amharicExplanation: "🌍 ቦንጋ ዋና የንግድ ማዕከል የሆነችው በዋናነት በ19ኛው ክፍለ ዘመን በቀይ ባህር ክልል የውጭ ንግድ እንደገና በመነቃቀሱ ምክንያት ነው። የአውሮፓ እና የመካከለኛው ምስራቅ የኢትዮጵያ ምርቶች (እንደ ቡና እና ቅመማ ቅመም) ፍላጎት በከፍተኛ ሁኔታ ሲጨምር፣ እንደ ቦንጋ ያሉ መስመሮች የደቡብ ምዕራብ ውስጠኛ ክፍልን በቀጥታ ከወደብ ከተሞች ጋር ለማገናኘት አደጉ። ⛵"
+},
+{
+    question: "What distinguished Muslim Oromo merchants (Afqala) in Ethiopia's 19th-century trade networks?",
+    options: [
+        "They established exclusive trade routes connecting Bonga to Massawa.",
+        "They dominated trade between southwestern Ethiopia and the coast.",
+        "They introduced Maria Theresa Thalers as a currency in internal trade.",
+        "They controlled the salt trade in the Afar region."
+    ],
+    answer: 1,
+    englishExplanation: "🐪 The Muslim Oromo merchants, known as Afqala, were famous for completely dominating the long-distance trade network that connected the rich southwestern coffee and ivory producing regions to the coastal markets of the Red Sea. 🌍",
+    amharicExplanation: "🐪 አፍቃላ በመባል የሚታወቁት የሙስሊም ኦሮሞ ነጋዴዎች በቡና እና በዝሆን ጥርስ የበለጸጉትን የደቡብ ምዕራብ ምርት ክልሎችን ከቀይ ባህር የባህር ዳርቻ ገበያዎች ጋር የሚያገናኘውን የረጅም ርቀት የንግድ አውታረመረብ ሙሉ በሙሉ በመቆጣጠር ታዋቂ ነበሩ። 🌍"
+},
+{
+    question: "What was one of the primary factors contributing to the prominence of trade routes linking southwestern Ethiopia to the coast in the 19th century?",
+    options: [
+        "The establishment of the Maria Theresa Thalers (MTT) as the exclusive currency of the region.",
+        "The revival of external trade in the Red Sea region.",
+        "The discovery of new salt mines in the Afar plains.",
+        "The establishment of centralized markets in Harar and Massawa."
+    ],
+    answer: 1,
+    englishExplanation: "📈 The revival of international trade in the Red Sea was the fundamental economic driver. Because the demand for Ethiopian goods like coffee, gold, and ivory by Europe and the Middle East drastically increased, the routes connecting the interior of the southwest to the Red Sea coast became highly prosperous and prominent. 🚢",
+    amharicExplanation: "📈 በቀይ ባህር ክልል የነበረው የዓለም አቀፍ ንግድ መነቃቀስ መሠረታዊው የኢኮኖሚ ምንዳ ነበር። በአውሮፓ እና በመካከለኛው ምስራቅ የኢትዮጵያ ምርቶች (ቡና፣ ወርቅ፣ የዝሆን ጥርስ) ፍላጎት በከፍተኛ ሁኔታ በመጨመሩ፣ የደቡብ ምዕራብ ውስጠኛ ክፍልን ከቀይ ባህር ዳርቻ ጋር የሚያገናኙ መስመሮች እጅግ የበለጸጉ እና ታዋቂ ሆኑ። 🚢"
+},
+{
+    question: "Which of the following accurately describes the role of the Maria Theresa Thaler (MTT) in the trade routes of Ethiopia and the Horn?",
+    options: [
+        "It served as the primary medium of exchange for internal trade, particularly in the Afar region.",
+        "It was used exclusively in southwestern Ethiopia for trade with Sudanese merchants.",
+        "It was a widely accepted coin for transactions on the Red Sea coast alongside other European and Middle Eastern currencies.",
+        "It replaced salt bars (amole) as the dominant currency in the highlands."
+    ],
+    answer: 2,
+    englishExplanation: "💰 The Maria Theresa Thaler (MTT) was the international currency of its time. It was widely accepted on the Red Sea coast and for international transactions, circulating alongside other European and Middle Eastern coins. In the highlands, internal trade still heavily relied on local currencies like the salt bar (amole). 🌐",
+    amharicExplanation: "💰 ማሪያ ተሬዛ ታለር (MTT) የዘመኑ ዓለም አቀፍ ምንዛሬ ነበር። በቀይ ባህር ዳርቻ እና ለዓለም አቀፍ ግብይቶች በሰፊው ይቀበል ነበር፣ ከሌሎች የአውሮፓ እና የመካከለኛው ምስራቅ ሳንቲሞች ጎን በመሰራጨት። በደጋማ አካባቢዎች ግን የውስጥ ንግድ እንደ ጨው (አሞሌ) ባሉ የአካባቢ ምንዛሬዎች ላይ በእጅጉ ይተማመን ነበር። 🌐"
+},
+{
+    question: "What made salt bars (amole) an essential commodity in Ethiopia's internal trade during the 19th century?",
+    options: [
+        "Their use as a luxury item among the elite.",
+        "Their role as a standardized medium of exchange and a source of wealth.",
+        "Their export demand in Middle Eastern markets.",
+        "Their exclusive production in the Kafa Kingdom."
+    ],
+    answer: 1,
+    englishExplanation: "🧂 Amole (salt bars) was considered the money of the Ethiopian highlands. Its standardized shape and weight made it the perfect medium of exchange for buying essential goods. Accumulating large quantities of amole was a direct representation of immense wealth and was crucial for internal trade. 💰",
+    amharicExplanation: "🧂 አሞሌ (የጨው ጨው) የኢትዮጵያ ደጋማ አካባቢዎች ገንዘብ ተደርጎ ይቆጠር ነበር። መደበኛ ቅርጽ እና ክብደቱ አስፈላጊ ዕቃዎችን ለመግዛት ፍጹም የገንዘብ መለዋወጫ ያደርገዋል። ከፍተኛ መጠን ያለው አሞሌ ማካበት ቀጥተኛ የከፍተኛ ሀብት ምልክት ሲሆን ለውስጥ ንግድ ወሳኝ ነበር። 💰"
+},
+{
+    question: "Which group of merchants played the most dominant role in long-distance trade between the interior and coastal regions of Ethiopia in the 19th century?",
+    options: [
+        "The Argoba traders from Shewa.",
+        "Northern Muslim merchants (Jabarti) and Muslim Oromo merchants (Afqala).",
+        "The local merchants of Gondar and Begemider.",
+        "Sudanese merchants (Jallaba) operating along the western routes."
+    ],
+    answer: 1,
+    englishExplanation: "🌍 The long-distance trade network was overwhelmingly controlled by Muslim merchants. The Jabarti (Northern Muslim traders) linked the central highlands to the northern Red Sea ports, while the Afqala (Muslim Oromo traders) dominated the southwestern trade routes connecting the interior to the coast. ☪️",
+    amharicExplanation: "🌍 የረጅም ርቀት የንግድ መረብ በአብዛኛው በሙስሊም ነጋዴዎች ቁጥጥር ስር ነበር። ጃባርቲ (የሰሜን ሙስሊም ነጋዴዎች) የመካከለኛውን ደጋማ አካባቢ ከሰሜን ቀይ ባህር ወደቦች ጋር ያገናኙ ሲሆን፣ አፍቃላ (የሙስሊም ኦሮሞ ነጋዴዎች) የደቡብ ምዕራብ የንግድ መስመሮችን ውስጠኛውን ክፍል ከባህር ዳርቻ ጋር በማገናኘት ሙሉ በሙሉ ተቆጣጠሩ። ☪️"
+},
+{
+    question: "What was one of the key motivations for Emperor Tewodros II's push for modernization in Ethiopia?",
+    options: [
+        "His desire to establish Ethiopia as a colonial power in the Horn of Africa.",
+        "The defeat at the Battle of Dabarki, which highlighted the need for modern military technology.",
+        "Pressure from European advisors to introduce Western ideas into Ethiopia.",
+        "The success of the Gadaa system among the Oromo states."
+    ],
+    answer: 1,
+    englishExplanation: "🔫 Before becoming emperor, Kassa (later Tewodros II) suffered a crushing defeat at the Battle of Dabarki due to the enemy's superior weaponry and modern firearms. This defeat transformed his thinking; he realized that without modern military technology, Ethiopia could not survive or maintain its power, motivating him to aggressively modernize his army. 🪖",
+    amharicExplanation: "🔫 ንጉሠ ነገሥት ከመሆናቸው በፊት (ካሳ) በዳባርኪ ጦርነት ላይ በጠላት የላቀ የጦር መሳሪያ እና ዘመናዊ ጠመንጃ ምክንያት አሳዛኝ ሽንፈት ደርሶባቸው ነበር። ይህ ሽንፈት አስተሳሰባቸውን ሙሉ በሙሉ ለውጦታል፤ ዘመናዊ ወታደራዊ ቴክኖሎጂ ከሌለ ኢትዮጵያ መቆየት እንደማትችል ተገነዘቡ፣ ይህም ሰራዊታቸውን በንቃት እንዲያዘምኑ አነሳስቷቸዋል። 🪖"
+},
+{
+    question: "Which of the following was not one of the modernization efforts of Emperor Yohannes IV?",
+    options: [
+        "The introduction of modern vaccines against smallpox.",
+        "The establishment of Ethiopia's first railway line.",
+        "The appointment of a foreign consul to represent Ethiopia in London.",
+        "Sending individuals abroad for modern education."
+    ],
+    answer: 1,
+    englishExplanation: "🚂 Emperor Yohannes IV was a practical modernizer. He introduced smallpox vaccines, opened foreign embassies, and sent students to Europe to gain modern knowledge. However, he did not establish Ethiopia's first railway line. The railway was not built until much later, during the reign of Menelik II. 🚫",
+    amharicExplanation: "🚂 ንጉሠ ነገሥት ዮሐንስ አራተኛ ተግባራዊ አሻሽሊ ነበሩ። የፈንጣጣ ክትባት አስተዋውቀዋል፣ የውጭ ኤምባሲዎችን ከፍተዋል፣ እና ዘመናዊ እውቀት እንዲያገኙ ተማሪዎችን ወደ አውሮፓ ልከዋል። ሆኖም የኢትዮጵያን የመጀመሪያ የባቡር መስመር አላቋቋሙም። የባቡር መስመሩ የተጀመረው በኋላ በንጉሠ ነገሥት ምኒልክ ዳግማዊ ዘመን ነው። 🚫"
+},
+{
+    question: "What was the significance of Emperor Tewodros II's workshop at Gafat?",
+    options: [
+        "It served as Ethiopia's first modern school.",
+        "It produced cannons, including the famous 'Sebastopol'.",
+        "It was the center for introducing the Amharic script.",
+        "It housed Ethiopia's first railway construction site."
+    ],
+    answer: 1,
+    englishExplanation: "🏭 The Gafat workshop was an extraordinary feat of early modernization. Emperor Tewodros II assembled European missionaries and local artisans to produce firearms and cannons. The most famous achievement of Gafat was the massive mortar named 'Sebastopol', which was one of the largest cannons ever built in Ethiopia at that time. 💣",
+    amharicExplanation: "🏭 የጋፋት ወርክሾፕ የመጀመሪያ ዘመናዊነት ድንቅ ስራ ነበር። ንጉሠ ነገሥት ቴዎድሮስ ዳግማዊ የአውሮፓ ሚሲዮናውያንን እና የአካባቢ የእጅ ባለሙያዎችን አሰባስበው የራሳቸውን የጦር መሳሪያዎች እና መድፍ እንዲያመርቱ አደረጉ። የጋፋት ታዋቂው ስራ በዚያን ጊዜ በኢትዮጵያ ከተሰሩት ትላልቅ መድፎች መካከል አንዱ የሆነውን 'ሴባስቶፖል' የተባለውን ግዙፍ የመድፍ ዓይነት ማምረት ነው። 💣"
+},{
+    question: "The process of the formation of modern Ethiopia had been an easy task that ended up with the peaceful submission of states to Menelik.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🔍 The formation of modern Ethiopia was not an easy task. While Emperor Menelik II is famous for his expansion, it involved both forceful military conquests and peaceful submissions. Many states fiercely resisted his armies, leading to sustained conflicts and significant battles before they were incorporated into the empire. ⚔️",
+    amharicExplanation: "🔍 የዘመናዊት ኢትዮጵያ ምስረታ ቀላል ሥራ አልነበረም። ምንም እንኳን ንጉሠ ነገሥት ምኒልክ ዳግማዊ በመስፋፋት ቢታወቁም፣ ይህ ሂደት በጦር ኃይል የተገዙ እና በሰላም የተገዙ ግዛቶችን ያካተተ ነበር። በርካታ ግዛቶች በከፍተኛ ሁኔታ በመቃወም ለረጅም ጊዜ ጦርነት እና ትላልቅ ውጊያዎች ተካሂደዋል። ⚔️"
+},
+
+{
+    question: "The process of territorial expansion was consummated with the signing of boundary agreements with the neighboring colonial powers that continued until 1908.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "📜 The massive territorial expansion under Menelik II was officially formalized through international law. He signed a series of boundary treaties with neighboring European colonial powers, such as Britain, France, and Italy, to demarcate the borders. This diplomatic process continued until 1908, helping to solidify the map of modern Ethiopia. 🗺️",
+    amharicExplanation: "📜 በምኒልክ ዳግማዊ የተካሄደው ሰፊ የግዛት መስፋፋት በአለም አቀፍ ህግ በይፋ ተጠናቋል። ድንበሮችን ለማወቅ ከአጎራባች የአውሮፓ ቅኝ ገዥ ኃይሎች እንደ ብሪታንያ፣ ፈረንሳይ እና ኢጣሊያ ጋር ተከታታይ የድንበር ስምምነቶችን ተፈራርመዋል። ይህ የዲፕሎማሲ ሂደት እስከ 1908 ድረስ በመቀጠል የዘመናዊት ኢትዮጵያን ካርታ አጠናክሯል። 🗺️"
+},
+
+{
+    question: "The Council of Boru Meda (1878) where Tewahdo was declared the only doctrine of the EOC was one of the triggering factors for opponents of Emperor Yohannes IV.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "⛪ The Council of Boru Meda in 1878 was a decisive religious meeting where Emperor Yohannes IV declared Tewahdo (Orthodox Christianity) as the only official doctrine. He aggressively forced conversion on Muslims, Catholics, and other groups. This harsh religious policy created massive resentment and fierce opposition against his rule. 🕊️",
+    amharicExplanation: "⛪ የቦሩ ሜዳ ጉባኤ በ1878 ዓ.ም የተካሄደ ወሳኝ ሃይማኖታዊ ስብሰባ ሲሆን፣ ንጉሠ ነገሥት ዮሐንስ አራተኛ ተዋሕዶን ብቸኛ ትምህርት አድርገው አወጁ። ሙስሊሞችን፣ ካቶሊኮችን እና ሌሎች ቡድኖችን በሃይል ወደ ኦርቶዶክስ እምነት እንዲገቡ ገፋፍተዋል። ይህ ጠንካራ ሃይማኖታዊ ፖሊሲ ከፍተኛ ተቃውሞ እና ጥላቻ በመፍጠር የእርሱን አገዛዝ ተቃውመዋል። 🕊️"
+},
+
+{
+    question: "The territorial expansion of the late nineteenth century was made to control lucrative resource bases and trade routes and thereby form a strong Ethiopian state.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "🌍 Emperor Menelik II's expansion in the late 19th century was highly strategic. He aimed to control resource-rich areas, such as gold and coffee-producing regions, and major trade routes to generate revenue. This economic consolidation was crucial for building a strong, unified, and independent Ethiopian state capable of resisting colonization. 💰",
+    amharicExplanation: "🌍 የንጉሠ ነገሥት ምኒልክ ዳግማዊ በ19ኛው ክፍለ ዘመን መገባደጃ ላይ የነበረው መስፋፋት በጣም ስልታዊ ነበር። ሀብት የበዛባቸውን አካባቢዎች እንደ ወርቅ እና ቡና እና ዋና ዋና የንግድ መስመሮችን ለመቆጣጠር ዓላማ ነበረው። ይህ የኢኮኖሚ ማጠናከር ቅኝ ግዛትን መቋቋም የሚችል ጠንካራ፣ የተዋሃደ እና ነፃ የኢትዮጵያ መንግስት ለመመስረት ወሳኝ ነበር። 💰"
+},
+
+{
+    question: "Abuna Petros was the head of the Black Lion organization.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 1,
+    englishExplanation: "🦁 Abuna Petros was a highly revered religious leader and a martyr who fiercely opposed the Italian occupation and was executed by them. However, the Black Lion organization, a famous patriotic resistance group during the Italian occupation, was led by different patriotic figures and military leaders, not Abuna Petros. 🇪🇹",
+    amharicExplanation: "🦁 አቡነ ጴጥሮስ በጣም የተከበሩ የሃይማኖት መሪ እና ሰማዕት ነበሩ፣ እነሱም የኢጣሊያን ወረራ በመቃወም በኢጣሊያውያን ተገድለዋል። ነገር ግን ታዋቂ የነበረው የአርበኝነት ተቃውሞ ቡድን የሆነው ጥቁር አንበሳ ድርጅት የሚመራው በሌሎች የአርበኝነት እና ወታደራዊ መሪዎች ነው እንጂ በአቡነ ጴጥሮስ አልነበረም። 🇪🇹"
+},
+
+{
+    question: "The Walwal Incident was the fundamental cause of the Second Ethio-Italian War.",
+    options: [
+        "True",
+        "False"
+    ],
+    answer: 0,
+    englishExplanation: "⚔️ The Walwal Incident in 1934 was a border clash between Ethiopian and Italian forces at the Walwal oasis. Although it was a localized dispute, Italy used it as a pretext to launch a full-scale invasion of Ethiopia in 1935, leading to the Second Ethio-Italian War. 🇮🇹",
+    amharicExplanation: "⚔️ በ1934 ዓ.ም የወልዋል ክስተት በወልዋል አካባቢ በኢትዮጵያ እና በኢጣሊያ ኃይሎች መካከል የተከሰተ የድንበር ግጭት ነበር። ምንም እንኳን የአካባቢ ግጭት ቢሆንም፣ ኢጣሊያ በ1935 ዓ.ም ኢትዮጵያን ሙሉ በሙሉ ለመውረር እንደ ምክንያት ተጠቅማለች፣ ይህም የሁለተኛው ኢትዮ-ኢጣሊያ ጦርነት መጀመሪያን አመለከተ። 🇮🇹"
+},
+
+{
+    question: "Which one of the following options explained Emperor Tewodros II better?",
+    options: [
+        "Had the dream of creating strong and united Ethiopia.",
+        "Adopted federal state structure.",
+        "Established ministerial government.",
+        "Introduced auditing system."
+    ],
+    answer: 0,
+    englishExplanation: "👑 Emperor Tewodros II is celebrated for his visionary dream of creating a strong, centralized, and united Ethiopia, ending the chaos of the Zemene Mesafint, or Era of Princes. While he introduced some administrative reforms, he did not establish a federal state or a modern ministerial cabinet during his reign. 🕊️",
+    amharicExplanation: "👑 ንጉሠ ነገሥት ቴዎድሮስ ዳግማዊ የዘመነ መሳፍንትን ብጥብጥ አቁሞ ጠንካራ፣ የተማከለ እና የተዋሃደ ኢትዮጵያን ለመፍጠር ባለው ራዕይ ይታወቃሉ። ምንም እንኳን አንዳንድ የአስተዳደር ሥራዎችን ቢሠሩም፣ በአገዛዛቸው ወቅት የፌዴራል መንግስት ወይም ዘመናዊ የሚኒስትሮች ምክር ቤት አላቋቋሙም። 🕊️"
+},
+
+{
+    question: "Werner Munzinger was",
+    options: [
+        "The Turkish governor of Harar during the time of Yohannes IV.",
+        "The architect of the whole Egyptian Khedive Ismail Pasha's scheme for invasion of the Horn of Africa in the 1870s.",
+        "Danish officer in service of Egyptian Khedive Ismail Pasha in Akale Guzay.",
+        "American mercenary in the service of the Egyptian army versus Ethiopia."
+    ],
+    answer: 1,
+    englishExplanation: "🕵️‍♂️ Werner Munzinger was a Swiss adventurer and diplomat who became an important strategist for the Egyptian Khedive Ismail Pasha. He played a major role in planning Egyptian expansion into the Horn of Africa during the 1870s and was involved in the Egyptian campaigns against Ethiopia. 🇨🇭",
+    amharicExplanation: "🕵️‍♂️ ቨርነር ሙንዚንገር የስዊስ ጀብደኛ እና ዲፕሎማት ነበር፣ እሱም ለግብፃዊው ኸዲቭ እስማኤል ፓሻ ዋና ስልታዊ አስተባባሪ ሆነ። በ1870ዎቹ የግብፅን የቀንደ አፍሪካ መስፋፋት እቅድ በመቅረጽ በኢትዮጵያ ላይ በተደረገው የግብፅ ወረራ ትልቅ ሚና ተጫውቷል። 🇨🇭"
+},
+
+{
+    question: "Iyasu made all of the following reforms except",
+    options: [
+        "Institution of police force called Terenbulle for the whole Ethiopia.",
+        "Tried to allay abuses of Lebashay, quirky customary criminal detection mode.",
+        "Outlawing quragna system whereby victim was chained to criminal until justice.",
+        "He abolished slave trade and slavery."
+    ],
+    answer: 3,
+    englishExplanation: "📜 Lij Iyasu introduced several reforms, including the establishment of a central police force called Terenbulle and attempts to stop abuses associated with the Lebashay and quragna systems. However, he did not abolish slavery and the slave trade during his brief reign; this was officially addressed by later governments. 👮‍♂️",
+    amharicExplanation: "📜 ልጅ ኢያሱ የማሻሻያ ስራዎችን ያከናወነ ንጉሠ ነገሥት ነበር። ማዕከላዊ የፖሊስ ኃይል ተረንቡሌ በማቋቋም እና ልብሻይ እና ቁራግና የሚባሉትን ጎጂ ልማዶች ለማስቆም ሞክሯል። ነገር ግን በአጭር የአገዛዙ ዘመን የባሪያ ንግድ እና ባርነትን አላስቀረም። 👮‍♂️"
+},
+
+{
+    question: "Which one of the following states was incorporated by Emperor Menelik II after the Battle of Adwa?",
+    options: [
+        "Jimma and Leqa Neqamte.",
+        "Arsi and Harari.",
+        "Kaffa and Borena.",
+        "Wolayta and Hadya."
+    ],
+    answer: 2,
+    englishExplanation: "🗺️ Following his victory at the Battle of Adwa in 1896, Menelik II continued his expansion southward. Kaffa and Borena were incorporated into the Ethiopian Empire after the Battle of Adwa, while several other regions such as Jimma, Arsi, and Wolayta had been incorporated earlier. 🇪🇹",
+    amharicExplanation: "🗺️ በ1896 ዓ.ም በአድዋ ጦርነት ከታላቅ ድል በኋላ ምኒልክ ዳግማዊ ወደ ደቡብ መስፋፋታቸውን ቀጠሉ። ከ1896 በኋላ ካፋን እና ቦረናን በተሳካ ሁኔታ ወደ ግዛታቸው አካተቱ። ሌሎች እንደ ጅማ፣ አርሲ እና ወላይታ ያሉ ግዛቶች ከአድዋ ጦርነት በፊት ቀድመው ተካተዋል። 🇪🇹"
+},
+
+{
+    question: "What was the motive of Emperor Menelik II's territorial expansion in the post-Adwa period?",
+    options: [
+        "Getting relief for the famine-affected people of the north.",
+        "Controlling lucrative trade routes.",
+        "Creating buffer zones between his empire and the neighboring states.",
+        "Consolidating the hegemony of Shewa over the Horn of Africa."
+    ],
+    answer: 2,
+    englishExplanation: "🛡️ After the Battle of Adwa, one major strategic motive of Menelik II's territorial expansion was creating buffer zones between his empire and neighboring colonial territories. This strategy was intended to strengthen border security and reduce the danger of future foreign attacks. 🗺️",
+    amharicExplanation: "🛡️ ከአድዋ ጦርነት በኋላ የምኒልክ ዳግማዊ ዋና ስልታዊ ዓላማ ከአጎራባች ቅኝ ገዥ ግዛቶች መካከል የመከላከያ ዞኖችን መፍጠር ነበር። ይህም ድንበሮቹን ለማጠናከር እና የወደፊት የውጭ ጥቃቶችን አደጋ ለመቀነስ የተደረገ ነበር። 🗺️"
+},
+
+{
+    question: "One of the following did not characterize 19th century Ethiopia.",
+    options: [
+        "The formation of new states in western and south western region.",
+        "The making of the modern Ethiopian state.",
+        "The consolidation and unification of polities in northern Ethiopia.",
+        "The declining of long-distance trade in Ethiopia and the Horn."
+    ],
+    answer: 3,
+    englishExplanation: "📈 The 19th century was a period of major political and economic transformation in Ethiopia. It witnessed the formation of new states, the consolidation of northern polities, and the making of the modern Ethiopian state. Long-distance trade did not simply decline; trade networks continued to play an important role in the Ethiopian region and the Horn of Africa. 🌍",
+    amharicExplanation: "📈 የ19ኛው ክፍለ ዘመን በኢትዮጵያ ውስጥ የትልቅ ፖለቲካዊ እና ኢኮኖሚያዊ ለውጥ ወቅት ነበር። አዳዲስ መንግስታት ተመሠረቱ፣ የሰሜን ፖለቲካዊ አካላት ተዋሃዱ እና የዘመናዊት ኢትዮጵያ መንግስት ተገነባ። የረጅም ርቀት ንግድ በቀላሉ አልቀነሰም፤ በኢትዮጵያ እና በቀንደ አፍሪካ አስፈላጊ ሚናውን ቀጥሏል። 🌍"
+},
+
+{
+    question: "During the brief Italian occupation of Ethiopia, the banda referred to",
+    options: [
+        "The women patriots who secretly supported patriotic forces.",
+        "The collaborators who allied with the Italians.",
+        "The patriotic resistance movement in south-west Ethiopia.",
+        "The members of the royal family who opposed Italian rule."
+    ],
+    answer: 1,
+    englishExplanation: "🚩 During the Italian occupation of Ethiopia from 1936 to 1941, the term banda referred to Ethiopian collaborators who cooperated with the Italian Fascist forces. They were viewed negatively by many members of the patriotic resistance movement. 🇪🇹",
+    amharicExplanation: "🚩 በኢጣሊያ ወረራ ወቅት ከ1936 እስከ 1941፣ ባንዳ የሚለው ቃል ከፋሺስት ኢጣሊያ ጋር የተባበሩ ኢትዮጵያዊ ተባባሪዎችን ለማመልከት ያገለግል ነበር። በአርበኝነት ተዋጊዎች ዘንድ በአሉታዊ መልኩ ይታዩ ነበር። 🇪🇹"
+},
+
+{
+    question: "What method did Tewodros use in strengthening the power of the monarchy?",
+    options: [
+        "Sharing power with members of the provincial ruling dynasties.",
+        "Establishing chewa regiments in strategic provinces such as Wollo and Shewa.",
+        "Appointing loyal individuals to the provinces by disregarding members of the local ruling houses.",
+        "Assigning members of the Solomonic dynasty to key central state offices."
+    ],
+    answer: 2,
+    englishExplanation: "👑 To centralize power, Emperor Tewodros II weakened the traditional authority of regional feudal lords. He appointed loyal soldiers and officials to govern provinces while disregarding members of the local ruling dynasties who had previously held power during the Zemene Mesafint. ⚔️",
+    amharicExplanation: "👑 ስልጣንን ለማማከል ንጉሠ ነገሥት ቴዎድሮስ ዳግማዊ የክልል መሳፍንትን ስልጣን ሰበሩ። የተገዙትን ግዛቶች ለማስተዳደር የራሳቸውን ታማኝ ወታደሮች እና ባለስልጣናት ሾሙ፣ በዘመነ መሳፍንት ወቅት ስልጣን የነበራቸውን የአካባቢ ሥርወ መንግስታት ችላ ብለዋል። ⚔️"
+},
+
+{
+    question: "Which one of the following regional lords of the Zemene Mesafint was defeated last by Tewodros II?",
+    options: [
+        "Ali Alula at Ayshal.",
+        "Goshu Zewde at Gur Amba.",
+        "Wube at Deresge.",
+        "Birru Aligaz at Gorgora Bichin."
+    ],
+    answer: 2,
+    englishExplanation: "⚔️ The Battle of Deresge in 1855 was the final and decisive confrontation with one of the major regional rulers. By defeating Wube Haile Mariam at Deresge, Tewodros II removed a major rival and strengthened his path toward imperial coronation, contributing to the end of the Zemene Mesafint. 👑",
+    amharicExplanation: "⚔️ በ1855 ዓ.ም የተካሄደው የደረስጌ ጦርነት የመጨረሻው እና በጣም ወሳኙ ፍጥጫ ነበር። ኃያሉን መስፍን ውቤ ኃይለ ማርያምን በደረስጌ በማሸነፍ ቴዎድሮስ ዳግማዊ ዋና ተቀናቃኙን አስወገደ እና ወደ ንግሥና የሚያደርገውን መንገድ አጠናከረ፣ ይህም የዘመነ መሳፍንት ማብቃት ላይ አስተዋጽኦ አድርጓል። 👑"
+},
+
+{
+    question: "Which of the following was a consequence of the Hewett or Adwa Treaty of 1884 for Ethiopia?",
+    options: [
+        "Restoration of control over the coastal areas of the Red Sea.",
+        "Mahdist Sudan hostility towards Ethiopia.",
+        "Unrestricted access to the port of Massawa.",
+        "Good diplomatic relations with Great Britain."
+    ],
+    answer: 1,
+    englishExplanation: "🤝 The Hewett Treaty of 1884 involved Ethiopian-British cooperation in relation to the Mahdist conflict. One important consequence was increased hostility and prolonged conflict between Ethiopia and the Mahdist Sudanese, eventually leading to major battles, including the conflict in which Emperor Yohannes IV lost his life. ⚔️",
+    amharicExplanation: "🤝 የሄወት ስምምነት በ1884 ዓ.ም የተፈረመው ከሱዳን መሐዲስቶች ጋር በተያያዘ የኢትዮ-ብሪታንያ ትብብርን ያካተተ ነበር። ከዚህ የተነሳ በኢትዮጵያ እና በሱዳን መሐዲስቶች መካከል ሰፊ እና የረጅም ጊዜ ግጭት እና ጠላትነት ተፈጠረ፣ ይህም ንጉሠ ነገሥት ዮሐንስ አራተኛ ሕይወታቸውን ያጡበትን ጦርነት ጨምሮ ብዙ ግጭቶችን አስከትሏል። ⚔️"
+},
+
+{
+    question: "A major economic and cultural center in the Ethiopian region which was ruled by the Egyptians from 1875 to 1885 was",
+    options: [
+        "Aussa.",
+        "Massawa.",
+        "Bogos.",
+        "Harar."
+    ],
+    answer: 3,
+    englishExplanation: "🕌 Harar, famous for its rich Islamic heritage and important commercial networks, was occupied and ruled by Egyptian forces from 1875 to 1885. It served as a major economic and cultural center until the Egyptian withdrawal, and it was later incorporated into Menelik II's expanding empire. 🌍",
+    amharicExplanation: "🕌 ሐረር በጥልቅ እስላማዊ ቅርስ እና በንግድ ታዋቂ የሆነችው ከ1875 እስከ 1885 በግብፃዊ ኃይሎች ተይዛ እና ተገዝታ ነበር። በዚያ ወቅት ዋና የኢኮኖሚ እና የባህል ማዕከል ነበረች፣ ከግብፃውያን መውጣት በኋላም በኋላ በምኒልክ ዳግማዊ ግዛት ውስጥ ተካተተች። 🌍"
+},
+
+{
+    question: "Which of the following battles is the earliest?",
+    options: [
+        "Battle of Dogali.",
+        "Battle of Mettema.",
+        "Battle of Kufit.",
+        "Battle of Maqdala."
+    ],
+    answer: 3,
+    englishExplanation: "📅 The Battle of Maqdala took place in 1868 between Emperor Tewodros II and British forces, marking the dramatic end of his reign. The other battles occurred later: Kufit in 1885, Dogali in 1887, and Metemma in 1889. Therefore, Maqdala was the earliest. ⚔️",
+    amharicExplanation: "📅 የመቅደላ ጦርነት በ1868 ዓ.ም በንጉሠ ነገሥት ቴዎድሮስ ዳግማዊ እና በእንግሊዝ ኃይሎች መካከል የተካሄደ ሲሆን፣ የአገዛዙን አሳዛኝ መጨረሻ ያመለክታል። ሌሎቹ ጦርነቶች ኩፊት 1885፣ ዶጋሊ 1887 እና መጠማ 1889 ላይ ተካሂደዋል። ስለዚህ መቅደላ ከሁሉ ቀዳሚው ነው። ⚔️"
+},
+
+{
+    question: "Among the following treaties, which one was drafted by Count Pietro Antonelli?",
+    options: [
+        "The Adwa Treaty.",
+        "The Wuchale Treaty.",
+        "The Neutrality Treaty.",
+        "The Treaty of Friendship and Commerce."
+    ],
+    answer: 1,
+    englishExplanation: "📜 Count Pietro Antonelli was an Italian diplomat associated with the drafting of the Wuchale Treaty of 1889 between Ethiopia and Italy. The differing interpretations of Article 17 in the Amharic and Italian versions became a major source of conflict and contributed to the First Ethio-Italian War. 🇮🇹",
+    amharicExplanation: "📜 ካውንት ፒዬትሮ አንቶኔሊ በ1889 ዓ.ም በኢትዮጵያ እና በኢጣሊያ መካከል የተፈረመውን የውብጨሌ ስምምነት ከማዘጋጀት ጋር የተያያዘ የኢጣሊያ ዲፕሎማት ነበር። በአንቀጽ 17 ላይ በአማርኛ እና በጣሊያን ቅጂዎች መካከል የነበረው ልዩነት ዋና የግጭት ምክንያት ሆኖ ለመጀመሪያው ኢትዮ-ኢጣሊያ ጦርነት አስተዋጽኦ አድርጓል። 🇮🇹"
+},
+
+{
+    question: "Which of the following served as medium of exchange for foreign trade in the nineteenth century?",
+    options: [
+        "Iron bars.",
+        "Maria Theresa Thalers.",
+        "Salt bars (amole).",
+        "Pieces of cotton cloth (abujadi)."
+    ],
+    answer: 1,
+    englishExplanation: "💰 For foreign trade in the 19th century, the silver Maria Theresa Thaler was the dominant and widely accepted currency. While salt bars (amole) and pieces of cotton cloth (abujadi) were used as media of exchange in local markets, they were not the primary currency for international trade. 🌍",
+    amharicExplanation: "💰 በ19ኛው ክፍለ ዘመን ለውጭ ንግድ፣ የብር ሳንቲም የሆነው ማሪያ ተሬዛ ታሌር በሰፊው ተቀባይነት ያለው ዋነኛ ምንዛሬ ነበር። የጨው ባሮች አሞሌ እና የጥጥ ጨርቅ አቡጃዲ ለአካባቢያዊ ገበያ እና ለመለዋወጥ ያገለግሉ ነበር፣ ነገር ግን ለውጭ ንግድ ዋና ምንዛሬ አልነበሩም። 🌍"
+} ];
 
 
 // =====================================================
