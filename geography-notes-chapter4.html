@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geography Chapter 4 | Drainage Systems and Water Resources of Ethiopia and the Horn</title>
-
+    
     <style>
         :root {
-            --bg-color: #f3f4f6;
+            --bg-color: #f8fafc;
             --card-bg: #ffffff;
-            --text-main: #1f2937;
-            --text-muted: #4b5563;
+            --text-main: #0f172a;
+            --text-muted: #475569;
             --primary-purple: #6b21a8;
+            --primary-purple-light: #f3e8ff;
             --accent-green: #047857;
+            --accent-green-bg: #ecfdf5;
             --accent-orange: #c2410c;
+            --accent-orange-bg: #fff7ed;
             --accent-blue: #1d4ed8;
-            --border-color: #e5e7eb;
-
-            --shadow:
-                0 4px 6px -1px rgba(0, 0, 0, 0.05),
-                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --accent-blue-bg: #eff6ff;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
         }
 
         * {
@@ -29,22 +31,14 @@
         }
 
         body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.6;
-
+            line-height: 1.65;
             padding: 12px;
             max-width: 680px;
             margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
         }
 
         .page-navigation {
@@ -62,7 +56,7 @@
             font-size: 15px;
             font-weight: 700;
             box-shadow: var(--shadow);
-            transition: 0.2s ease;
+            transition: all 0.2s ease;
         }
 
         .page-navigation a:active {
@@ -81,72 +75,80 @@
         }
 
         header {
-            background:
-                linear-gradient(
-                    135deg,
-                    #6b21a8,
-                    #4c1d95
-                );
-
+            background: linear-gradient(135deg, #6b21a8, #4c1d95);
             color: white;
-            padding: 20px 16px;
+            padding: 24px 18px;
             border-radius: 16px;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             text-align: center;
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-md);
         }
 
         header h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 4px;
+            font-size: 1.45rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
         }
 
         header p {
             font-size: 0.9rem;
-            opacity: 0.9;
-            color: white;
+            opacity: 0.95;
+            color: #f3e8ff;
+            font-weight: 500;
         }
 
         .card {
             background-color: var(--card-bg);
             border-radius: 16px;
-            padding: 18px 16px;
-            margin-bottom: 16px;
+            padding: 20px 18px;
+            margin-bottom: 20px;
             border: 1px solid var(--border-color);
             box-shadow: var(--shadow);
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--primary-purple);
-            margin-bottom: 12px;
-            border-bottom: 2px solid #f3e8ff;
-            padding-bottom: 6px;
+            margin-bottom: 14px;
+            border-bottom: 2px solid var(--primary-purple-light);
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
         }
 
         h3 {
             font-size: 1.05rem;
             color: var(--text-main);
-            margin: 12px 0 8px 0;
+            margin: 16px 0 10px 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         p {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: var(--text-muted);
             font-size: 0.95rem;
         }
 
-        ul,
-        ol {
-            margin-bottom: 12px;
-            padding-left: 20px;
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 22px;
             color: var(--text-muted);
             font-size: 0.95rem;
         }
 
         li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-main);
         }
 
         .highlight-green {
@@ -170,53 +172,77 @@
         }
 
         .example-box {
-            background-color: #f9fafb;
-            border-left: 4px solid #f59e0b;
-            padding: 10px 12px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
+            background-color: var(--accent-orange-bg);
+            border-left: 4px solid var(--accent-orange);
+            padding: 12px 14px;
+            border-radius: 0 10px 10px 0;
+            margin: 12px 0;
+            font-size: 0.93rem;
         }
 
         .case-box {
-            background-color: #eff6ff;
+            background-color: var(--accent-blue-bg);
             border-left: 4px solid var(--accent-blue);
-            padding: 10px 12px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
+            padding: 12px 14px;
+            border-radius: 0 10px 10px 0;
+            margin: 12px 0;
+            font-size: 0.93rem;
+        }
+
+        .note-box {
+            background-color: var(--accent-green-bg);
+            border-left: 4px solid var(--accent-green);
+            padding: 12px 14px;
+            border-radius: 0 10px 10px 0;
+            margin: 12px 0;
+            font-size: 0.93rem;
         }
 
         .table-responsive {
             overflow-x: auto;
-            margin: 12px 0;
+            margin: 14px 0;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.9rem;
             text-align: left;
-        }
-
-        th, td {
-            padding: 8px 10px;
-            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
         }
 
         th {
-            background-color: #f9fafb;
-            color: var(--primary-purple);
-            font-weight: 600;
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            padding: 10px 12px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
         }
 
         .footer {
             text-align: center;
             padding: 25px 10px;
             color: var(--text-muted);
-            font-size: 0.82rem;
+            font-size: 0.85rem;
+            font-weight: 500;
         }
     </style>
 </head>
-
 <body>
 
 <div class="page-navigation">
@@ -225,546 +251,409 @@
 </div>
 
 <header>
-    <h1>🌍 Geography Unit 4</h1>
-    <p>Drainage Systems and Water Resources of Ethiopia and the Horn</p>
+    <h1>🌍 Geography Chapter 4</h1>
+    <p>Drainage Systems and Water Resources of Ethiopia and the Horn 💧</p>
 </header>
 
 <section>
-
-    <!-- SECTION 4.1 -->
+    <!-- INTRODUCTION CARD -->
     <div class="card">
-        <h2>🌐 4.1. Introduction</h2>
-        
-        <h3>Global Water Distribution</h3>
-        <p>Globally, water bodies occupy nearly <strong>¾ (71%)</strong> of the earth's surface, mainly oceans and seas.</p>
-        
+        <h2>🌊 Introduction to Water Resources</h2>
         <ul>
-            <li>Nearly <span class="highlight-orange">97.5%</span> is alkaline (found in oceans and seas).</li>
-            <li>Only about <span class="highlight-green">2.5%</span> is fresh water, out of which:
+            <li>About <strong class="highlight-blue">71%</strong> of the earth’s total surface is covered by water bodies majorly occupied by seas and oceans, which accounts for about <strong class="highlight-blue">(97.5%)</strong>, alkaline.</li>
+            <li>The remaining <strong class="highlight-green">2.5%</strong> is fresh water, of which nearly:
                 <ul>
-                    <li>Nearly <strong>68.7%</strong> is deposited in glaciers / ice mass.</li>
-                    <li><strong>30.1%</strong> exists as ground water.</li>
-                    <li><strong>0.8%</strong> exists in permafrost / permanently frozen land of polar areas.</li>
-                    <li><strong>0.4%</strong> in surface waters (e.g., lakes, rivers, atmosphere, soil, and wetlands).</li>
+                    <li><strong>68.7%</strong> is deposited in glaciers 🧊</li>
+                    <li><strong>30.1%</strong> in ground water 🕳️</li>
+                    <li><strong>0.8%</strong> in permafrost ❄️</li>
+                    <li><strong>0.4%</strong> in surface waters (Lakes, rivers, atmosphere, soils and wetlands) 🌧️</li>
                 </ul>
             </li>
+            <li><strong>Surface and ground waters</strong> are the most abundant and easily available fresh waters. 💧</li>
+            <li>However, fresh water is distributed unevenly throughout the world following varied latitudinal locations, climatic and topographic setups. 🌐</li>
         </ul>
 
         <div class="case-box">
-            💡 <strong>Key Fact:</strong> Relatively, the most abundant and easily available fresh waters are <span class="highlight-blue">surface water</span> and <span class="highlight-blue">ground water</span>. Freshwater is unevenly distributed throughout the world based on latitudinal location, climate, and topography.
-        </div>
-
-        <h3>Ethiopia's Water Resource Potential</h3>
-        <ul>
-            <li>About <span class="highlight-purple">0.7%</span> of Ethiopia's land mass is covered by water bodies.</li>
-            <li>The country has a larger volume of surface and ground water mainly due to:
-                <ul>
-                    <li>The diverse topographical setup;</li>
-                    <li>Relatively higher rainfall;</li>
-                    <li>Nearness to the equator.</li>
-                </ul>
-            </li>
-            <li>Ethiopia's surface water potential (e.g., lakes, rivers, atmosphere, soil, and wetlands) is estimated to be <span class="highlight-green">124.4 billion cubic meters (BCM)</span>.</li>
-        </ul>
-
-        <div class="example-box">
-            🏆 <strong>Title:</strong> Hence, Ethiopia is referred to as <strong>"the water tower of Eastern Africa"</strong>.
-        </div>
-    </div>
-
-    <!-- SECTION 4.2 CONCEPTS -->
-    <div class="card">
-        <h2>🌊 4.2. Major Drainage System of Ethiopia</h2>
-
-        <h3>Core Concepts</h3>
-        <ul>
-            <li><strong>Drainage:</strong> Conceptualized as the flow of water through a well-defined channel.</li>
-            <li><strong>Drainage System:</strong> Consists of the channels through which a principal river and its tributaries flow.</li>
-            <li><strong>River System:</strong> Begins at the source or headwater &amp; ends at the mouth. Thus, a drainage system is a branched network of stream channels together with the adjacent land slopes they drain.</li>
-            <li><strong>Drainage Basin:</strong> The topographic region from which a river &amp; its tributaries collect both the surface runoff and subsurface flow. It is bounded by and separated from other river basins by a <strong>water divide</strong> or topographic divide.</li>
-        </ul>
-
-        <h3>Factors Influencing Drainage Patterns</h3>
-        <p>The drainage pattern of an area is the result of:</p>
-        <ul>
-            <li>The geological processes (faulting, folding);</li>
-            <li>Nature and structure of rocks (rough or smooth);</li>
-            <li>Topography (rugged or plain);</li>
-            <li>Slope (steep or gentle);</li>
-            <li>Amount and the periodicity (timing) of the flow.</li>
-        </ul>
-
-        <h3>Topographical Determinants in Ethiopia</h3>
-        <p>In Ethiopia, the general patterns of major river basins are highly determined by topographical structures:</p>
-        <ul>
-            <li><strong>Outward sloping</strong> of the Western and Southeastern plateaus result in:
-                <ul>
-                    <li><span class="highlight-blue">Western and Southeastern drainage systems</span></li>
-                </ul>
-            </li>
-            <li><strong>Inward sloping</strong> escarpments and the structural formation of the Rift Valley result in:
-                <ul>
-                    <li><span class="highlight-blue">Rift Valley or inland drainage system</span></li>
-                </ul>
-            </li>
-            <li>Faults structurally influence part of the course of some rivers.</li>
-        </ul>
-    </div>
-
-    <!-- SECTION 4.2.1 WESTERN DRAINAGE SYSTEM -->
-    <div class="card">
-        <h2>🗺️ The Major Drainage Systems</h2>
-        <p>The complex physiographic setup and geological makeup of Ethiopia result in three broadly classified drainage systems:</p>
-        <ol>
-            <li><strong>Western Drainage Systems</strong></li>
-            <li><strong>Southeastern Drainage Systems</strong></li>
-            <li><strong>Rift Valley Drainage Systems</strong></li>
-        </ol>
-
-        <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 14px 0;">
-
-        <h3>4.2.1. The Western Drainage Systems</h3>
-        <ul>
-            <li>They are the <strong>largest</strong> of all drainage systems;</li>
-            <li>Drain <span class="highlight-purple">40%</span> of Ethiopia's landmass;</li>
-            <li>Carry <span class="highlight-purple">60%</span> of the annual water flow of Ethiopia.</li>
-            <li>Most of the catchment extends to the westward sloping part of the western highlands and lowlands.</li>
-            <li>Consist of the basins of Rivers: <strong>Tekeze, Abay, Baro-Akobo, and Ghibe (Omo)</strong>.</li>
-            <li>The <strong>Ghibe (Omo)</strong> flows southward to join Lake Turkana (an elongated Rift Valley Lake).</li>
-            <li>Others (<strong>Tekeze, Abay &amp; Baro-Akobo</strong>) flow westward to join the White Nile and finally end at the Mediterranean Sea.</li>
-        </ul>
-
-        <div class="case-box">
-            💧 <strong>Abay River Basin Focus:</strong>
+            📍 <strong>Ethiopia's Topographic & Hydrological Setup:</strong>
             <ul>
-                <li><strong>Abay</strong> is the largest both in coverage &amp; discharge volume from the western drainage system.</li>
-                <li>It has an area coverage of <span class="highlight-green">199,812 km²</span>, with an estimated mean annual total flow volume of <strong>45-50 BCM</strong>.</li>
-                <li>Carries (together with its tributaries) <span class="highlight-orange">65%</span> of the annual water flow of the region.</li>
-                <li>Covers parts of <strong>Amhara, Oromia &amp; Benishangul-Gumuz</strong>.</li>
-                <li>Rises from Lake Tana (Sekela, Chocke mountain) &amp; flows for about <strong>1,450 km</strong>; joins the White Nile in Khartoum (forming the Nile).</li>
-                <li>It first flows eastward, then turns <strong>180°</strong> making a large bend flowing westward.</li>
-                <li>More than 60 streams drain the Abay within elevation ranging between <strong>500-4261 m.a.s.l.</strong></li>
-                <li><strong>Ghilgel Abay (Little Abay)</strong> is the largest of its tributaries.</li>
+                <li>As you have discussed in the third chapter, the topographic setup of Ethiopia is characterized by a complex blend of massive highlands, rugged terrain, and low plains. ⛰️</li>
+                <li>The diverse topographical setup, relatively higher rainfall, and its nearness to the equator made the country have a larger volume of ground and surface water. 🌧️</li>
+                <li>Around <strong class="highlight-purple">0.7%</strong> of the total land mass of Ethiopia is covered by water bodies. 🏞️</li>
+                <li>Although it requires further detailed investigation, the country’s surface water potential as studied in different integrated river basin master plans is estimated to be <strong class="highlight-purple">124.4 billion cubic meters (BCM)</strong>. 📊</li>
+                <li>Consequently, many call Ethiopia the <strong class="highlight-purple">“Water Tower of Eastern Africa”</strong>. 🏰💧</li>
             </ul>
         </div>
     </div>
 
- 
+    <!-- MAJOR DRAINAGE SYSTEM DEFINITIONS CARD -->
+    <div class="card">
+        <h2>🗺️ Major Drainage System of Ethiopia</h2>
+        
+        <div class="note-box">
+            📖 <strong>Definition:</strong> The flow of water through a well-defined channel is known as <strong>drainage</strong>.
+        </div>
+
+        <ul>
+            <li>A <strong>drainage system</strong> is made up of a principal river and its tributaries (the rivers that flow into it). 🌿</li>
+            <li>It begins at a place called the <strong>source or headwater</strong> 🏔️ and ends at a point called the <strong>mouth</strong> 🌊.</li>
+            <li>Therefore, a drainage system is a branched network of stream channels together with the adjacent land slopes they drain. 🌿</li>
+            <li>The drainage pattern of an area is the outcome of geological processes, the nature and structure of rocks, topography, slope, amount, and the periodicity of the flow. 🪨</li>
+            <li>A <strong>drainage basin</strong> is the topographic region from which a river and its tributaries collect both the surface runoff and subsurface flow. 🏞️</li>
+            <li>It is bounded by and separated from other river basins by a <strong>water divide</strong> or topographic divide. ⛰️</li>
+        </ul>
+
+        <h3>🧭 General Patterns of Major River Basins</h3>
+        <p>The general patterns of major river basins in Ethiopia are determined by topographical structures and can be classified as:</p>
+        <ol>
+            <li>The outward sloping of the Western plateaus 🏔️</li>
+            <li>South eastern plateaus 🌄</li>
+            <li>The structural formation of the Rift Valley with its inward-sloping escarpments resulting mainly in an inland drainage system 🌋</li>
+        </ol>
+        <p>⚡ <em>Faults and joints structurally influence part of the courses of many rivers.</em></p>
+    </div>
+
+    <!-- THREE MAJOR DRAINAGE SYSTEMS CARD -->
+    <div class="card">
+        <h2>🏞️ The Major Drainage Systems Overview</h2>
+        <p>Ethiopia possesses three broadly classified drainage systems, namely:</p>
+        <ol>
+            <li><strong>The Western Drainage System</strong> ⬅️</li>
+            <li><strong>The Southeastern Drainage System</strong> ↘️</li>
+            <li><strong>The Rift Valley Drainage System</strong> 🌋</li>
+        </ol>
+        
+        <div class="example-box">
+            💡 <strong>Key Structural Note:</strong> The Western and Southeastern drainage systems are separated by the Rift Valley system.
+        </div>
+    </div>
+
+    <!-- 1. THE WESTERN DRAINAGE SYSTEMS CARD -->
+    <div class="card">
+        <h2>⬅️ 1. The Western Drainage Systems</h2>
+        <ul>
+            <li>The <strong>largest</strong> of all drainage systems, draining <strong class="highlight-orange">40%</strong> of the total area and carrying <strong class="highlight-blue">60%</strong> of the annual water flow. 🌊</li>
+            <li>Most of the catchment area coextends with the westward sloping part of the western highlands and western lowlands. 🏔️</li>
+            <li>This drainage system comprises four major river basins:
+                <ul>
+                    <li><strong>The Tekeze</strong> 🌊</li>
+                    <li><strong>The Abay</strong> 🌊</li>
+                    <li><strong>The Baro-Akobo</strong> 🌊</li>
+                    <li><strong>The Ghibe (Omo)</strong> 🌊</li>
+                </ul>
+            </li>
+            <li>⚠️ <em>Unlike other river basins in the system, the Ghibe (Omo) flows southward.</em> ⬇️</li>
+            <li>The Abay, Tekeze, and Baro flow westward ultimately joining the Nile, which finally ends at the Mediterranean Sea. 🌊🇪🇬</li>
+        </ul>
+
+        <h3>🌊 Abay River Basin</h3>
+        <ul>
+            <li>The largest river both in volumetric discharge and coverage in the western drainage systems is the <strong>Abay</strong>. 🏆</li>
+            <li>Abay river basin covers an area of <strong class="highlight-purple">199,812 km²</strong>, covering parts of Amhara, Oromia, and Benishangul-Gumuz regional states. 📍</li>
+            <li>Together with its tributaries, most of which are left-bank tributaries, it carries <strong class="highlight-blue">65%</strong> of the annual water flow of the region. 💧</li>
+            <li>Abay, which rises from Lake Tana (some sources indicate its origin from Sekela, Choke mountain), flows about <strong class="highlight-orange">1,450 km</strong> and joins the White Nile in Khartoum, Sudan to form the Nile River. 🤝</li>
+            <li>More than 60 streams drain the Abay within elevations ranging between <strong>500 – 4261 masl</strong>.</li>
+            <li>The largest of these streams is <strong class="highlight-blue">Ghilgel Abay (Little Abay)</strong>.</li>
+            <li>Abay flows eastward, turns 180° to make a large bend, and after cutting an impressive and deep gorge, emerges out in the west. 🌀</li>
+        </ul>
+
+        <h3>🌊 Tekeze River Basin</h3>
+        <ul>
+            <li>The Tekeze and its tributaries, carrying <strong class="highlight-blue">12%</strong> of the annual water flow of the region, drain <strong class="highlight-purple">82,350 km²</strong> of land surface within elevations ranging between <strong>536 - 4517 masl</strong>. 🏔️</li>
+            <li>Erosion in the basin resulted in large tablelands, plateau blocks, and isolated mountain groups. 🪨</li>
+            <li>The basin has two main tributaries: <strong class="highlight-purple">Angereb</strong> and <strong class="highlight-purple">Goang</strong>, which rise in the central highlands of Ethiopia. 🏞️</li>
+            <li>Tekeze River is termed <strong>Atbara</strong> in Sudan, which is a tributary of the Nile. 🇸🇩</li>
+            <li>The total mean annual flow from the basin is estimated to be <strong class="highlight-blue">8.2 billion metric cubes (BMC)</strong>. 📊</li>
+        </ul>
+
+        <h3>🌊 Baro-Akobo & Ghibe/Omo River Basins</h3>
+        <ul>
+            <li>The Baro-Akobo and Ghibe/Omo rivers drain the wettest highlands in south and southwestern Ethiopia. 🌧️</li>
+            <li>They carry <strong class="highlight-blue">17%</strong> and <strong class="highlight-blue">6%</strong> of the annual water flow, respectively. 💧</li>
+            <li><strong>Baro-Akobo River Basin:</strong>
+                <ul>
+                    <li>Has an area of <strong class="highlight-purple">75,912 km²</strong>, covering parts of Benishangul-Gumuz, Gambella, Oromia, and SNNPR. 📍</li>
+                    <li>Total mean annual flow is estimated to be <strong class="highlight-blue">23.6 BMC</strong>. 📊</li>
+                    <li>In its lower course, the Baro River flows across an extensive marshy land. 🌾</li>
+                    <li>The Baro together with Akobo forms the <strong>Sobat River</strong> in South Sudan. 🇸🇸</li>
+                </ul>
+            </li>
+            <li><strong>Ghibe / Omo River Basin:</strong>
+                <ul>
+                    <li>Drains an area of <strong class="highlight-purple">79,000 km²</strong> with an estimated mean annual flow of <strong class="highlight-blue">16.6 BMC</strong>. 📊</li>
+                    <li>The Ghibe / Omo River finally empties into the <strong class="highlight-purple">Chew-Bahir</strong> at the mouth of Lake Turkana (an elongated Rift Valley lake), thereby forming an <strong>inland drainage</strong>. 🏞️</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 2. THE SOUTHEASTERN DRAINAGE SYSTEMS CARD -->
+    <div class="card">
+        <h2>↘️ II. The Southeastern Drainage Systems</h2>
+        <ul>
+            <li>Nearly the entire physiographic region of the southeastern part of Ethiopia is drained by the southeastern drainage systems. 🌄</li>
+            <li>The basin, which is mainly drained by <strong class="highlight-purple">Wabishebelle</strong> and <strong class="highlight-purple">Ghenale</strong>, slopes southeastwards across large water-deficient plains. 🏜️</li>
+            <li>Major highlands of this basin include the plateaus of <strong>Arsi, Bale, Sidama, and Harerghe</strong>. 🏔️</li>
+            <li>Wabishebelle and Ghenale rivers cross the border into Somalia, carrying <strong class="highlight-blue">25%</strong> of the annual water flow of Ethiopia. 🇸🇴</li>
+        </ul>
+
+        <h3>🌊 Wabishebelle River Basin</h3>
+        <ul>
+            <li>With a total catchment area of <strong class="highlight-purple">202,697 km²</strong>, Wabishebelle is the <strong>largest river in terms of catchment area</strong>. 📏</li>
+            <li>It drains parts of Oromia, Harari, and the Somali regions. 📍</li>
+            <li>It is the <strong>longest river in Ethiopia</strong>. 🏁</li>
+            <li>Its tributaries are mainly left-bank, and most of them are intermittent. ⏳</li>
+            <li>⚠️ <em>Despite its size, the Wabishebelle fails to reach the Indian Ocean; at the end of its journey, it flows parallel to the coast before its water disappears in the sands, just near the Juba River.</em> ⏳🏜️</li>
+        </ul>
+
+        <h3>🌊 Ghenale River Basin</h3>
+        <ul>
+            <li>Ghenale River basin has an area of <strong class="highlight-purple">171,042 km²</strong>, covering parts of Oromia, SNNPR, and Somali regions. 📍</li>
+            <li>Ghenale has fewer tributaries but <strong>carries more water than Wabishebelle</strong>, and successfully reaches the Indian Ocean. 🌊🏖️</li>
+            <li>The basin flow is estimated to be <strong class="highlight-blue">5.8 BMC</strong> within elevations ranging between <strong>171 - 4385 masl</strong>. 📊</li>
+            <li>In Somalia, it is named the <strong class="highlight-purple">Juba River</strong>. 🇸🇴</li>
+        </ul>
+    </div>
+
+    
 
 <section>
 
-    <!-- SECTION 4.1 -->
+    <!-- RIFT VALLEY DRAINAGE SYSTEM CARD -->
     <div class="card">
-        <h2>💧 4.1. Introduction</h2>
+        <h2>🌋 III. The Rift Valley Drainage System</h2>
+        <p>This drainage system is an area characterized by a <strong>small amount of rainfall</strong>, <strong>high evaporation rates</strong>, and a <strong>small catchment area</strong>. ☀️</p>
+        
         <ul>
-            <li>Globally water bodies occupy nearly <strong>¾ (71%)</strong> of the earth’s surface, mainly oceans and seas.
-                <ul>
-                    <li>Nearly <span class="highlight-orange">97.5%</span> is alkaline (found in oceans and seas);</li>
-                    <li>Only about <span class="highlight-green">2.5%</span> is fresh water, out of which:
-                        <ul>
-                            <li>Nearly <strong>68.7%</strong> is deposited in glaciers / ice mass;</li>
-                            <li><strong>30.1%</strong> exist as ground water;</li>
-                            <li><strong>0.8%</strong> exist in permafrost / permanently frozen land of polar areas;</li>
-                            <li><strong>0.4%</strong> in surface waters (e.g., Lakes, rivers, atmosphere, soil and wetlands).</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>Relatively, the most abundant and easily available fresh waters are:
-                <ul>
-                    <li><span class="highlight-blue">surface water</span> and <span class="highlight-blue">ground water</span>.</li>
-                </ul>
-            </li>
-            <li>Freshwater is unevenly distributed throughout the world (based on latitudinal location, climate and topography).</li>
-            <li>About <span class="highlight-purple">0.7%</span> of Ethiopia’s land mass is covered by water bodies.</li>
-            <li>The country has larger volume of surface and ground water. This is mainly due to:
-                <ul>
-                    <li>The diverse topographical setup;</li>
-                    <li>Relatively higher rainfall;</li>
-                    <li>Nearness to the equator.</li>
-                </ul>
-            </li>
-            <li>Ethiopia’s surface water potential (e.g., Lakes, rivers, atmosphere, soil and wetlands) is estimated to be <span class="highlight-green">124.4 billion cubic meters (BCM)</span>.</li>
+            <li>The size of the drainage area is restricted by the outward sloping highlands, which start right from the edge of the escarpment. ⛰️</li>
+            <li>The Rift Valley drainage system is therefore left with the slopes of the escarpment and the Rift Valley floor itself as its catchment area. 🏞️</li>
+            <li>In the Rift Valley drainage systems, there is <strong>no one general flow direction</strong>, as the streams flow in all directions. 🧭</li>
+        </ul>
+
+        <h3>🌊 Awash River Basin</h3>
+        <ul>
+            <li>The <strong>only major river basin</strong> in this system is that of the Awash. 🌊</li>
+            <li>Awash river basin has a catchment area of <strong class="highlight-purple">114,123 km²</strong> and has an average annual discharge of <strong class="highlight-blue">4.9 billion cubic meters (BCM)</strong>. 📊</li>
+            <li>The Awash River originates from the Shewan plateau in the central highlands of Ethiopia and flows <strong class="highlight-orange">1,250 km</strong>. 📍</li>
+            <li>It covers parts of the <strong>Amhara, Oromia, Afar, Somali, Dire Dawa, and Addis Ababa City Administration</strong>. 🗺️</li>
+            <li>🏆 <strong class="highlight-green">Awash is the most utilized river in the country.</strong></li>
+            <li>Following the Rift Valley orientation, the Awash flows in a <strong>northeast direction</strong>. ↗️</li>
+            <li>It finally ends in a maze of small lakes and marshy areas; the largest of which is <strong class="highlight-purple">Lake Abe</strong> on the Ethio-Djibouti border. 🇩🇯</li>
+        </ul>
+
+        <h3>🏜️ Afar Drainage Sub-Basin</h3>
+        <ul>
+            <li>The Afar drainage sub-basin has <strong>practically no stream flow</strong>. 🚫</li>
+            <li>It is an area of little rain, very high temperatures, and very high evaporation. 🌡️☀️</li>
+            <li><strong class="highlight-purple">Lake Afrera</strong> and <strong class="highlight-purple">Lake Asale</strong> are the only main surface waters in the basin which are not the result of any meaningful surface flow. 💧</li>
+            <li>Their formation is strictly related to <strong>tectonic activities</strong>. 🌋</li>
+        </ul>
+
+        <h3>🏞️ Southern Rift Valley Lakes Region</h3>
+        <ul>
+            <li>The Southern part of the Rift Valley sub-basin is characterized by a number of lakes and small streams. 🌊</li>
+            <li>It is described as the <strong>lakes region</strong>, and these lakes occupy fault depressions. 🕳️</li>
+            <li>Small streams drain down from nearby mountain slopes to supply water to the lakes:</li>
         </ul>
 
         <div class="example-box">
-            💡 <strong>Key Concept:</strong> Hence, Ethiopia is referred to as <strong>"the water tower of Eastern Africa"</strong>.
+            💡 <strong>Stream & Lake Inflows:</strong>
+            <ul>
+                <li><strong>Meki</strong> and <strong>Katar Rivers</strong> flow into 👉 <strong>Lake Ziway</strong></li>
+                <li><strong>Bilate River</strong> flows into 👉 <strong>Lake Abaya</strong></li>
+                <li><strong>Segen River</strong> flows into 👉 <strong>Chew Bahir</strong></li>
+            </ul>
+        </div>
+
+        <div class="note-box">
+            🔗 <strong>Interconnected Lakes:</strong>
+            <p>Lake Ziway and Lake Langano drain into <strong>Lake Abijata</strong> through the small streams of <strong class="highlight-blue">Bulbula</strong> and <strong class="highlight-blue">Horocolo</strong> respectively. 🌊</p>
         </div>
     </div>
 
-    <!-- SECTION 4.2 -->
+    <!-- WATER RESOURCES: RIVERS, LAKES, GROUNDWATER CARD -->
     <div class="card">
-        <h2>🌊 4.2. Major Drainage System of Ethiopia</h2>
+        <h2>💧 Water Resources: Rivers, Lakes, and Sub-Surface Water</h2>
+
+        <h3>🌊 The Ethiopian Rivers</h3>
+        <ul>
+            <li>Unlike many other African countries, Ethiopia is endowed with many rivers, where the majority originate from highland areas and cross the Ethiopian boundary. 🌍</li>
+            <li>Altogether, Ethiopian rivers form <strong class="highlight-purple">12 major watersheds</strong> separating the Mediterranean Sea from the Indian Ocean drainage systems. 🧭</li>
+        </ul>
+
+        <h3>📝 General Characteristics of Ethiopian Rivers</h3>
+        <p>Owing to the highland nature of the Ethiopian landmass, surface ruggedness, the outward inclination of the highlands, and climatic conditions, Ethiopian rivers have the following characteristics:</p>
         
-        <h3>Concepts</h3>
-        <ul>
-            <li><strong>Drainage</strong> is conceptualized as the flow of water through well-defined channel.</li>
-            <li>A <strong>drainage system</strong> consists of the channels through which a principal river and its tributaries flow.</li>
-            <li>A river system begins at the source or headwater &amp; ends at mouth.
-                <ul>
-                    <li>So, drainage system is a branched network of stream channels together with the adjacent land slopes they drain.</li>
-                </ul>
-            </li>
-            <li>A <strong>drainage basin</strong> is the topographic region from which a river &amp; its tributaries collect both the surface runoff and subsurface flow.
-                <ul>
-                    <li>It is bounded by and separated from other river basins by a water divide or topographic divide.</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h3>Factors Determining Drainage Patterns</h3>
-        <p>The drainage pattern of an area is the result of:</p>
-        <ul>
-            <li>The geological processes (faulting, folding),</li>
-            <li>Nature and structure of rocks (rough or smooth),</li>
-            <li>Topography (rugged or plain),</li>
-            <li>Slope (steep or gentle),</li>
-            <li>Amount and the periodicity (timing) of the flow.</li>
-        </ul>
-
-        <h3>Topographical Determinants in Ethiopia</h3>
-        <p>In Ethiopia, the general patterns of major river basins are highly determined by topographical structures:</p>
-        <ul>
-            <li>The <strong>outward sloping</strong> of the Western and Southeastern plateaus result in:
-                <ul>
-                    <li><span class="highlight-purple">Western and Southeastern drainage systems</span></li>
-                </ul>
-            </li>
-            <li>The <strong>inward sloping</strong> escarpments and the structural formation of the Rift Valley result in:
-                <ul>
-                    <li><span class="highlight-purple">Rift Valley or inland drainage system</span></li>
-                </ul>
-            </li>
-            <li>The faults structurally influence part of the course of some rivers.</li>
-        </ul>
-
-        <h3>Major Drainage Systems Classification</h3>
-        <p>The complex physiographic setup and geological makeup of Ethiopia result in three broadly classified drainage systems:</p>
         <ol>
-            <li>Western Drainage Systems</li>
-            <li>Southeastern Drainage Systems</li>
-            <li>Rift Valley Drainage Systems</li>
+            <li><strong>Highland Origin:</strong> Almost all major rivers originate from the highlands elevating more than <strong>1,500 meters above sea level</strong>. 🏔️</li>
+            <li><strong>Trans-Boundary Nature:</strong> The majority of Ethiopian rivers are trans-boundary. 🌐</li>
+            <li><strong>Extreme Seasonal Fluctuations:</strong> Due to the marked seasonality of rainfall, in the wet season, runoff is higher and rivers burst their banks (destroying small bridges, damaging roads, and flooding lowlands); during dry seasons, they become mere trickles of water or even dry up completely. 🌧️🍂</li>
+            <li><strong>Rapids & Waterfalls:</strong> Due to surface ruggedness, they feature rapids and waterfalls along their course. 🌊⚡</li>
+            <li><strong>Deep Gorges:</strong> They have deep cuts, steep-sided river valleys, and deep gorges along their courses. ⛰️</li>
+            <li><strong>Steep Profiles:</strong> Rivers in Ethiopia flow on steep slopes having steep profiles. 📈</li>
+            <li><strong>Administrative Boundaries:</strong> Some rivers serve as natural boundaries for both international borders and domestic administrative units. 🗺️</li>
         </ol>
     </div>
 
-    <!-- SECTION 4.2.1 -->
+    <!-- ETHIOPIAN LAKES CARD -->
     <div class="card">
-        <h2>🏞️ 4.2.1. The Western Drainage Systems</h2>
+        <h2>🏞️ The Ethiopian Lakes</h2>
         <ul>
-            <li>They are the <strong>largest</strong> of all drainage systems;</li>
-            <li>Drain <span class="highlight-purple">40%</span> of Ethiopia’s landmass, and</li>
-            <li>Carry <span class="highlight-purple">60%</span> of the annual water flow of Ethiopia.</li>
-            <li>Most of the catchment extends to the westward sloping part of the western highlands and lowlands.</li>
-            <li>Consist of the basins of Rivers: <strong>Tekeze, Abay, Baro-Akobo, Ghibe (Omo)</strong>.</li>
-            <li>The <strong>Ghibe (Omo)</strong> flows southward to join Lake Turkana (an elongated Rift Valley Lake);</li>
-            <li>Others (<strong>Tekeze, Abay &amp; Baro-Akobo</strong>) flow westward to join White Nile and finally ends at Mediterranean sea.</li>
-        </ul>
-
-        <h3>Abay River Basin</h3>
-        <ul>
-            <li><strong>Abay</strong> is the largest both in coverage &amp; discharge volume from the western drainage system.
+            <li>Relatively, Ethiopia is rich in lakes. 🌊</li>
+            <li>Almost all Ethiopian lakes are the result of <strong>tectonic processes</strong> that took place during the Quaternary period of the Cenozoic era. 🌋</li>
+            <li>Except for a few, the majority of lakes are located within the <strong>Rift Valley System</strong>. They are formed on faulted depressions and are clustered forming a linear pattern. 📍</li>
+            <li><strong class="highlight-purple">Lake Tana</strong>, the largest lake in Ethiopia, occupies a shallow depression in the highlands. 🏆</li>
+            <li>The Tana depression is believed to be formed following slower sinking and damming by lava flow between the Gojjam and Gonder massifs. 🌋</li>
+            <li>Ethiopia is also gifted with <strong>crater lakes</strong>:
                 <ul>
-                    <li>It has area coverage of <span class="highlight-green">199,812 km²</span>; with estimated mean annual total flow volume is <strong>45-50 BCM</strong>.</li>
-                    <li>Carries (together with its tributaries) <span class="highlight-orange">65%</span> of the annual water flow of the region.</li>
-                    <li>Covers parts of <strong>Amhara, Oromia &amp; Benishangul-Gumuz</strong>.</li>
-                    <li>Rises from Lake Tana (Sekela, Chocke mountain) &amp; flows for about <strong>1,450 km</strong>; joins White Nile in Khartoum (forming Nile).</li>
-                    <li>It first flows eastward then turns <strong>180°</strong> making a large bend flowing westward.</li>
-                    <li>More than 60 streams drain the Abay within elevation ranging between <strong>500-4261 m.a.s.l.</strong></li>
-                    <li><strong>Ghilgel Abay (Little Abay)</strong> is the largest of its tributaries.</li>
+                    <li>Lakes at and around <strong>Bishoftu</strong> 🌊</li>
+                    <li><strong>Lake Wonchi</strong> (near Ambo) 🌋</li>
+                    <li><strong>Lake Hayk</strong> (near Dessie) 🏞️</li>
+                    <li>The Crater Lake on top of <strong>Mount Zikwala</strong> ⛰️</li>
                 </ul>
             </li>
-        </ul>
-
-        <h3>Tekeze and its tributaries</h3>
-        <ul>
-            <li>Carries <span class="highlight-orange">12%</span> of the annual water flow of the region;</li>
-            <li>Drains <span class="highlight-green">82,350 km²</span> of land surface within elevation ranging between <strong>536–4517 m.a.s.l.</strong></li>
-            <li>Tekeze basin, rises in the <strong>central highlands</strong> and has two main tributaries: <strong>Angereb</strong> and <strong>Goang</strong>.</li>
-            <li>The total mean annual flow from the basin is about <strong>8.2 BCM</strong>.</li>
-            <li>In Sudan, Tekeze is named as <strong>Atbara</strong>, which is the tributary of Nile River.</li>
-        </ul>
-
-        <h3>Baro-Akobo and Ghibe/Omo Rivers</h3>
-        <ul>
-            <li>The two rivers drain the <strong>wettest highlands</strong> in the South and Southwestern Ethiopia.</li>
-            <li>In the lower course, the <strong>Baro River</strong> flows across an <strong>extensive marshy land</strong>.</li>
-            <li>Baro together with Akobo forms the <strong>Sobat River</strong> in South Sudan.</li>
-            <li><strong>Baro-Akobo basin</strong> carries <span class="highlight-orange">17%</span> of the annual water flow and has an area of <span class="highlight-green">75,912 km²</span>.
-                <ul>
-                    <li>The total mean annual flow from the basin is estimated to be <strong>23.6 BCM</strong>.</li>
-                    <li>Covers parts of the <strong>Benishangul-Gumuz, Gambella, Oromia, and SNNPR</strong>.</li>
-                </ul>
-            </li>
-            <li><strong>Ghibe/Omo basin</strong> carries <span class="highlight-orange">6%</span> of the annual water flow and drains an area of <span class="highlight-green">79,000 km²</span>.
-                <ul>
-                    <li>The total mean annual flow from the basin is estimated to be <strong>16.6 BCM</strong>.</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- SECTION 4.2.2 -->
-    <div class="card">
-        <h2>🏜️ 4.2.2. The Southeastern Drainage Systems</h2>
-        <ul>
-            <li>Drain nearly the entire <strong>southeastern physiographic region</strong>.</li>
-            <li>Comprises the outward sloping of the <strong>southeastern highlands</strong>.</li>
-            <li>It is mainly drained by Rivers <strong>Wabishebelle</strong> and <strong>Ghenale</strong> (plains of water deficient).</li>
-            <li>Wabishebelle and Ghenale rivers flow to Somalia, carrying <span class="highlight-orange">25%</span> of Ethiopia's annual water flow.</li>
-            <li><strong>Wabishebelle</strong> is the <strong>longest river in Ethiopia</strong> and has the largest catchment (<span class="highlight-green">202,697 km²</span>).
-                <ul>
-                    <li>It drains parts of <strong>Oromia, Harari</strong> and the <strong>Somali</strong> regions.</li>
-                    <li>Most of its tributaries are <strong>intermittent</strong>.</li>
-                    <li>Wabishebelle river <strong>disappears in the sands</strong>, just near Juba River.</li>
-                </ul>
-            </li>
-            <li><strong>Ghenale River basin</strong> has an area of <span class="highlight-green">171,042 km²</span>, covering parts of <strong>Oromia, SNNPR, and Somali</strong> regions.
-                <ul>
-                    <li>Ghenale, has <strong>fewer tributaries</strong> but <strong>carries more water than Wabishebelle</strong>, and so reaches the Indian Ocean.</li>
-                    <li>Ghenale basin flows is estimated to be <strong>5.8 BCM</strong> within elevation ranging between <strong>171-4385 m.a.s.l.</strong></li>
-                    <li>In Somalia it is named the <strong>Juba River</strong>.</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- SECTION 4.2.3 -->
-    <div class="card">
-        <h2>🌋 4.2.3. The Rift Valley Drainage Systems</h2>
-        <p>The catchment area of this drainage system comprises the <strong>slopes of the escarpment</strong> and <strong>the Rift Valley floor</strong>.</p>
-        <p>The drainage system is characterized by:</p>
-        <ul>
-            <li>Small catchment area,</li>
-            <li>Small amount of rainfall,</li>
-            <li>High evaporation.</li>
-        </ul>
-
-        <h3>Afar Drainage</h3>
-        <ul>
-            <li>Is a sub-basin which has <strong>no stream/river/flow</strong>.</li>
-            <li><strong>Little rain, very high temperature</strong> and <strong>very high evaporation</strong>.</li>
-            <li>Here, the <strong>only main surface waters</strong> are <strong>Lakes Afrera &amp; Asale</strong>.</li>
-        </ul>
-
-        <h3>Awash River</h3>
-        <ul>
-            <li>Is the <strong>only major river basin</strong> with catchment area of <span class="highlight-green">114,123 km²</span> and a mean annual discharge of <strong>4.9 BCM</strong>.</li>
-            <li>Originates from <strong>Shewan plateau</strong> in the <strong>central highlands</strong>;</li>
-            <li>Flows <strong>1250 km</strong> and covers parts of <strong>Amhara, Oromia, Afar, Somali, Dire Dawa and AA</strong>.</li>
-            <li>Is the <strong>most utilized river</strong> in Ethiopia.</li>
-            <li>Flows in a <strong>north east direction</strong> and finally ends in <strong>marshy area and small lakes</strong> (e.g. Lake Abe).</li>
-        </ul>
-
-        <h3>Lakes Region</h3>
-        <ul>
-            <li>Is the <strong>southern part</strong> of the Rift Valley sub-basin;</li>
-            <li>Characterized by <strong>many lakes</strong> that occupy the <strong>fault depression</strong>;</li>
-            <li>There are also small streams/rivers that drain from the nearby mountain slopes and supply water to the lakes:
-                <ul>
-                    <li><strong>Meki</strong> and <strong>Katar Rivers</strong> flow into <em>Ziway</em>;</li>
-                    <li><strong>Bilate</strong> flow into <em>Abaya</em>; and</li>
-                    <li><strong>Segen</strong> flow into <em>Chew Bahir</em>.</li>
-                </ul>
-            </li>
-            <li>Lakes <strong>Ziway, Langano</strong> and <strong>Abijiata</strong> are <strong>hydrologically interconnected</strong> via <strong>Bulbula</strong> and <strong>Horacolo</strong> rivers:
-                <ul>
-                    <li>Lake Ziway drains into Abijata through Bulbula stream/river.</li>
-                    <li>Lake Langano drains into Lake Abijata through the Horacolo stream/river.</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- SECTION 4.3 & 4.3.1 -->
-    <div class="card">
-        <h2>🌊 4.3. Water Resources: Rivers, Lakes (Surface) and Subsurface Water</h2>
-        
-        <h3>4.3.1. Ethiopian Rivers</h3>
-        <ul>
-            <li>Ethiopia is endowed with many rivers.</li>
-            <li>Majority of them originate from highland areas and cross the Ethiopian boundary.</li>
-            <li>Ethiopian rivers form <strong>12 major watersheds</strong>.</li>
-        </ul>
-
-        <h3>General Characteristics of Ethiopian Rivers</h3>
-        <p>The characteristics of Ethiopian rivers is influenced by:</p>
-        <ul>
-            <li>The highland nature of the Ethiopian landmass,</li>
-            <li>The surface ruggedness,</li>
-            <li>The outward inclination of the highlands, and</li>
-            <li>The climatic conditions (e.g., Rainfall seasonality).</li>
+            <li><strong class="highlight-purple">Lake Ashenge</strong> (Tigray) is formed on a tectonic basin. 🕳️</li>
+            <li><strong>Man-made Lakes:</strong> Lakes dammed following hydroelectric power generation projects include <strong>Koka, Fincha, and Melka Wakena</strong>. 🏗️⚡</li>
         </ul>
 
         <div class="case-box">
-            📌 <strong>Overall Characteristics:</strong>
+            📍 <strong>Rift Valley Lakes Features:</strong>
             <ul>
-                <li>Almost all major rivers originate from the highlands elevating <strong>more than 1500 m.a.s.l.</strong></li>
-                <li>Majority of Ethiopian rivers are <strong>trans-boundary</strong>.</li>
-                <li>They have <strong>rapids and waterfalls</strong> along their course, due to surface ruggedness.</li>
-                <li>They have <strong>cuts/dissections, steep-sided river valleys and deep gorges</strong> along their courses.</li>
-                <li>Ethiopian rivers are also characterized by <strong>extreme seasonal fluctuation</strong> due to the clear seasonality of rainfall:
-                    <ul>
-                        <li>In the <strong>wet seasons</strong>, there is higher runoff and rivers get full bursting their banks, destroying small bridges, damage roads and flooding low lands;</li>
-                        <li>During the <strong>dry seasons</strong> they become mere trickles/scarce of water or even some of them dry up.</li>
-                    </ul>
-                </li>
-                <li>They flow on steep slopes having steep profiles.</li>
-                <li>Some of the rivers serve as <strong>boundaries</strong>, both international and domestic administrative units.</li>
+                <li>Clusters of lakes are lined up within the main Ethiopian rift. 🔗</li>
+                <li><strong>Lake Abaya</strong> is the largest of all lakes within the Rift Valley system. 📏</li>
+                <li>The southern tip forms the marshy land called <strong class="highlight-purple">Chew Bahir</strong>, which is drained by the Segan and Woito rivers. 🌾</li>
+                <li><strong>Shala</strong> and <strong>Ziway</strong> are the deepest and shallowest lakes in the central Ethiopian Rift, respectively. ⚓</li>
             </ul>
+        </div>
+
+        <h3>📊 Area and Depth of Major Ethiopian Lakes</h3>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lake</th>
+                        <th>Area (km²)</th>
+                        <th>Max. Depth (m)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lake Tana</strong></td>
+                        <td>3,600</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Abaya</strong></td>
+                        <td>1,162</td>
+                        <td>13.1</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Chamo</strong></td>
+                        <td>551</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Ziway</strong></td>
+                        <td>442</td>
+                        <td>8.95</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Shala</strong></td>
+                        <td>409</td>
+                        <td>266 *</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Koka</strong></td>
+                        <td>205</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Abijata</strong></td>
+                        <td>205</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Awassa</strong></td>
+                        <td>129</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Beseka</strong></td>
+                        <td>48.5</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Ashenge</strong></td>
+                        <td>20</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lake Hayk</strong></td>
+                        <td>5</td>
+                        <td>23</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-    <!-- SECTION 4.3.2 -->
+    <!-- GROUNDWATER & DEVELOPMENT POTENTIAL CARD -->
     <div class="card">
-        <h2>⛵ 4.3.2. Ethiopian Lakes</h2>
+        <h2>🕳️ Subsurface (Groundwater) & Development Potentials</h2>
+        
+        <h3>💧 Subsurface (Ground) Water Potential</h3>
         <ul>
-            <li>Ethiopia is rich in lakes compared to other countries.</li>
-            <li>Almost all Ethiopian lakes are the result of <strong>tectonic processes</strong> that took place during <strong>Quaternary period of Cenozoic era</strong>.</li>
-            <li>Majority of lakes are located within the <strong>Rift Valley System</strong> &amp; are mainly formed on faulted depressions; clustered and lined up.</li>
-            <li>From the lakes in the Central Ethiopian Rift:
-                <ul>
-                    <li>The <strong>largest</strong> is <span class="highlight-blue">Lake Abaya</span>;</li>
-                    <li>The <strong>deepest</strong> is <span class="highlight-blue">Lake Shala</span>, and</li>
-                    <li>The <strong>shallowest</strong> is <span class="highlight-blue">Lake Ziway</span>.</li>
-                </ul>
-            </li>
-            <li>In the southern tip of the Rift Valley there is a marshy land - the <strong>Chew Bahir</strong> which is drained by Segan and Woito Rivers.</li>
-            <li>The <strong>largest lake in Ethiopia</strong> is <span class="highlight-purple">Lake Tana</span>, which is a highland lake.
-                <ul>
-                    <li>The lake is believed to have been formed following slower sinking of lava flow b/n Gojjam and Gonder massifs.</li>
-                </ul>
-            </li>
-            <li><strong>Lake Ashenge</strong> (Tigray) is also formed on a tectonic basin.</li>
-            <li>In Ethiopia there are also many <strong>crater lakes</strong> such as:
-                <ul>
-                    <li>Lakes at and around Bishoftu, Wonchi (near Ambo), Hayk (near Dessie) and lake on mount Zikwala.</li>
-                </ul>
-            </li>
-            <li><strong>Man-made lakes</strong> include Lakes Koka, Fincha and Melka Wakena.</li>
+            <li>As compared to surface water resources, Ethiopia has a lower groundwater potential; however, there exists a higher total exploitable potential. 🕳️</li>
+            <li>Climatic and geophysical conditions determine the availability of groundwater resources. ⛅</li>
+            <li>Based on previous scanty knowledge, the groundwater potential was estimated at <strong>2.6 - 6.5 BMC</strong>. 📊</li>
+            <li>However, recent studies estimate Ethiopia's actual groundwater potential to range between <strong class="highlight-green">12 - 30 BMC</strong>. 📈</li>
         </ul>
-    </div>
 
-    <!-- SECTION 4.3.3 -->
-    <div class="card">
-        <h2>🕳️ 4.3.3. Subsurface (Ground) Water Resource of Ethiopia</h2>
+        <h3>⚡ A) Hydro-Electric Potential</h3>
         <ul>
-            <li>Ethiopia has <strong>lower potential of ground water</strong> compared to surface water resources (124.4 BCM).</li>
-            <li>But there is <strong>higher total exploitable groundwater potential</strong>.</li>
-            <li>The availability of groundwater is determined by:
-                <ul>
-                    <li>Climate and geophysical conditions.</li>
-                </ul>
-            </li>
-            <li>The groundwater potential of Ethiopia was previously estimated to be <strong>2.6 - 6.5 BCM</strong>.
-                <ul>
-                    <li>This figure is now considered underestimated.</li>
-                </ul>
-            </li>
-            <li>Based on various separate studies, Ethiopia’s groundwater potential is expected to be between <span class="highlight-green">12-30 BCM</span>.</li>
-        </ul>
-    </div>
-
-    <!-- SECTION 4.4 -->
-    <div class="card">
-        <h2>⚡ 4.4. Water Resources Potentials and Development in Ethiopia</h2>
-        <p>Despite Ethiopia’s huge water resource potential, this potential is <strong>underutilized</strong> due to many factors: <em>seasonality, variability, sedimentation, rapids and waterfalls, invasive species</em>.</p>
-        <p>However, there are ample opportunities to transform Ethiopia’s water resources into different development uses including:</p>
-
-        <h3>a) Hydro-electric Potential</h3>
-        <ul>
-            <li>Ethiopia’s rivers have very high potential for electricity power generation.</li>
-            <li>The estimated exploitable potential of hydroelectric power is about <span class="highlight-green">45,000 megawatts (MW)</span>.</li>
-            <li>In Ethiopia, the first hydroelectric power generation plant - <strong>Aba Samuel</strong> - was installed in 1932, on Akaki River.</li>
-            <li>Currently Ethiopia is administering 14 hydroelectric power plants, generating close to <strong>4000 megawatts</strong> of energy.
-                <ul>
-                    <li>These plants are constructed on Lake Aba Samuel, Koka, Tis Abay, Awash, Melka Wakena, Sor, Fincha, Gibe/Omo, Tana Beles and Tekeze.</li>
-                </ul>
-            </li>
-            <li><strong>Gilgel Gibe III</strong> hydropower project has gone operational generating <strong>1870 megawatts</strong>.</li>
-            <li><strong>Grand Ethiopian Renaissance Dam (GERD)</strong> is Ethiopia’s largest dam under construction aiming to generate <strong>6400 megawatts</strong>.</li>
-            <li>Recently initiated is <strong>Gilgel Gibe IV (Koysha)</strong> – <strong>2160 megawatts</strong>.</li>
-            <li>Majority of hydro-electric reservoirs have <strong>multi-purpose</strong> (water supply, irrigation, fisheries, navigation, recreational activities etc).</li>
+            <li>Ethiopian rivers have a very high potential for generating electricity. ⚡</li>
+            <li>The total exploitable potential of hydroelectric power is estimated at about <strong class="highlight-purple">45,000 megawatts (MW)</strong>. 🔋</li>
+            <li>The first hydroelectric power plant was installed on the Akaki River (Aba Samuel) in <strong>1932</strong>. 📜</li>
+            <li>The <strong class="highlight-blue">Grand Ethiopian Renaissance Dam (GERD)</strong> is the country's largest dam, aiming to generate <strong>6,400 MW</strong>. 🏗️💧</li>
+            <li>The <strong class="highlight-blue">Gilgel Gibe III</strong> project generated <strong>1,870 MW</strong> upon going operational. ⚡</li>
+            <li>Currently, Ethiopia administers 14 hydroelectric power plants constructed on Aba Samuel, Koka, Tis Abay, Awash, Melka Wakena, Sor, Fincha, Gibe/Omo, Tana Beles, and Tekeze, generating close to <strong>4,000 MW</strong>. 🔌</li>
+            <li>Besides domestic consumption, Ethiopia exports electricity to neighboring countries. 🌍</li>
         </ul>
 
         <div class="example-box">
-            ⚠️ <strong>Major Challenges for Hydroelectric Power:</strong>
-            <ul>
-                <li>Seasonal flow fluctuations &amp; impact of climate change &amp; variability.</li>
-                <li>Severe erosion from the highlands and sedimentation in the reservoirs.</li>
-            </ul>
+            ⚠️ <strong>Major Challenges to River Utilization:</strong>
+            <ol>
+                <li>Extreme seasonal flow fluctuations & climate change impacts 🍂</li>
+                <li>Severe erosion from the highlands ⛰️</li>
+                <li>Sedimentation in dams and reservoirs 🪵</li>
+            </ol>
         </div>
 
-        <h3>b) Irrigation and Transportation</h3>
-        <p>The uses of Ethiopian rivers both for irrigation and transportation is <strong>hindered by the rugged topography</strong> (steep slopes, rapids, waterfalls, narrow &amp; deep valleys &amp; gorges).</p>
-        
-        <h4>Irrigation</h4>
+        <h3>🌾 B) Irrigation and Transportation</h3>
         <ul>
-            <li>Ethiopia’s potential of irrigation is estimated to be <span class="highlight-green">5.3 million hectares</span>.</li>
-            <li>The two rivers with large irrigation potential are the <strong>Baro-Akobo</strong> and <strong>Genale Dawa</strong>.</li>
-            <li>Of the total irrigated area of Ethiopia, <strong>more than 60%</strong> is located in the <strong>Rift Valley Drainage System</strong>.</li>
+            <li><strong>Irrigation:</strong> Ethiopia's potential for irrigation is estimated at <strong class="highlight-green">5.3 million hectares</strong>. 🌾</li>
+            <li>The <strong>Baro-Akobo</strong> and <strong>Genale-Dawa</strong> river systems have the largest irrigation potential. 💧</li>
+            <li>More than <strong class="highlight-orange">60%</strong> of the currently irrigated area is located in the Rift Valley Drainage System. 🚜</li>
+            <li><strong>Terrain Obstacles:</strong> Rugged terrain, steep slopes, rapids, waterfalls, and deep gorges hinder irrigation and river transport in highlands. ⛰️</li>
+            <li><strong>Navigation:</strong> Baro River at its lower course is the <strong>only navigable river</strong> in Ethiopia. 🚢</li>
+            <li>Lakes are much better suited for transport; <strong>Lake Tana</strong> and <strong>Lake Abaya</strong> are the most utilized. 🛥️</li>
         </ul>
 
-        <h4>Transportation</h4>
+        <h3>🎣 C) Fishing and Recreation</h3>
         <ul>
-            <li>Majority of Ethiopian rivers are <strong>not suitable for transportation</strong>.</li>
-            <li>The <strong>only navigable river is Baro</strong> at its lower course.</li>
-            <li>Ethiopian lakes are much suitable for transportation than rivers.</li>
-            <li><strong>Lake Tana</strong> and <strong>Lake Abaya</strong> are relatively the most used for transportation.</li>
-        </ul>
-
-        <h3>c) Fishing and Recreation</h3>
-
-        <h4>Fishing</h4>
-        <ul>
-            <li>Most of Ethiopian lakes are rich in fish resource.</li>
-            <li>The estimated annual fish production is <strong>31.5 thousand tons</strong>.</li>
-            <li>However, the exploitable potential is by far greater than the current production.</li>
-            <li>Ethiopia’s Lakes vary in their exploitable fish potential:
-                <ul>
-                    <li><strong>Lake Tana</strong> has the highest potential, estimated <span class="highlight-green">8,000-10,000 tons/year</span>.</li>
-                    <li><strong>Lake Chamo’s</strong> potential is estimated at <span class="highlight-green">4,500 tons/year</span>.</li>
-                </ul>
-            </li>
-            <li>More than <strong>60%</strong> of fish supplies is from main Rift Valley lakes.</li>
-        </ul>
-
-        <div class="case-box">
-            ⚠️ <strong>Threats to Ethiopian Rift Valley Lakes:</strong>
-            <ul>
-                <li>Sedimentation</li>
-                <li>Invasive species (e.g., Water hyacinth)</li>
-                <li>Over exploitation (of water, fish and other resources of the lakes)</li>
-                <li>Expansion of investments around lakes (e.g., Flower farm around Lake Ziway)</li>
-            </ul>
-        </div>
-
-        <h4>Recreation</h4>
-        <p>Most of Ethiopian rivers and lakes are important recreational and tourist attraction areas because of:</p>
-        <ul>
-            <li>The variety of fish, birds and other aquatic life forms in the lakes:
-                <ul>
-                    <li>e.g., White Pelicans and Pink Flamingos (Lake Abijata and Shala); Ostrich</li>
-                </ul>
-            </li>
-            <li>The natural scenery/beauty of the lakes,</li>
-            <li>The hot springs around them,</li>
-            <li>The spectacular river gorges and the most impressive waterfalls.</li>
-            <li>Habitats of wildlife (some endemic):
-                <ul>
-                    <li>Hippos (Lake Tana, Chamo and Hawassa)</li>
-                    <li>Crocodiles (Lake Chamo)</li>
-                </ul>
-            </li>
+            <li>Annual fish production is estimated at <strong>31.5 thousand tons</strong> per year. 🐟</li>
+            <li><strong>Lake Tana</strong> leads potential production with <strong>8,000–10,000 tons/year</strong>, followed by <strong>Lake Chamo</strong> at <strong>4,500 tons/year</strong>. 🎣</li>
+            <li>More than <strong>60%</strong> of total fish supplies come from main Rift Valley lakes. 🌊</li>
+            <li>⚠️ <em>Threats to lakes:</em> Sedimentation, invasive species (water hyacinth 🌿), over-exploitation, and expanding investments.</li>
+            <li><strong>Recreation & Tourism:</strong> Scenic beauty, endemic wildlife, hot springs, river gorges, and waterfalls make water bodies major tourist and scientific hubs. 🦅🏖️</li>
         </ul>
     </div>
 
 </section>
 
 <footer class="footer">
-    🌍 Geography Chapter 4
-    <br>
-    📚 Unique Academic — Complete Study Notes
+    🌍 Geography Chapter 4<br>
+    📚 Unique Academic — Complete Study Notes 🎓
 </footer>
 
 </body>
-</html> 
+</html>
