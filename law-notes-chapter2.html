@@ -1,1 +1,4196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Law Chapter 2 | Human Rights & Fundamental Freedoms</title>
+
+
+    <style>
+
+        :root {
+
+            --bg-color: #f8fafc;
+
+            --card-bg: #ffffff;
+
+            --text-main: #0f172a;
+
+            --text-muted: #475569;
+
+            --primary-brown: #7c2d12;
+
+            --primary-dark: #431407;
+
+            --accent-green: #047857;
+
+            --accent-orange: #c2410c;
+
+            --accent-blue: #1d4ed8;
+
+            --accent-purple: #6b21a8;
+
+            --border-color: #e2e8f0;
+
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+            --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+        }
+
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        body {
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+            background-color: var(--bg-color);
+
+            color: var(--text-main);
+
+            line-height: 1.65;
+
+            padding: 12px;
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
+        }
+
+
+        .page-navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 16px;
+
+            gap: 10px;
+
+        }
+
+
+        .page-navigation a {
+
+            text-decoration: none;
+
+            border-radius: 12px;
+
+            padding: 10px 16px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            box-shadow: var(--shadow);
+
+            transition: all 0.2s ease;
+
+        }
+
+
+        .back-btn {
+
+            background-color: var(--primary-brown);
+
+            color: white;
+
+        }
+
+
+        .home-btn {
+
+            background-color: white;
+
+            color: var(--primary-brown);
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        header {
+
+            background: linear-gradient(135deg, var(--primary-brown), var(--primary-dark));
+
+            color: white;
+
+            padding: 24px 18px;
+
+            border-radius: 20px;
+
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow-card);
+
+        }
+
+
+        header h1 {
+
+            font-size: 1.6rem;
+
+            margin-bottom: 6px;
+
+            font-weight: 800;
+
+            letter-spacing: -0.02em;
+
+        }
+
+
+        header p {
+
+            font-size: .95rem;
+
+            color: #ffedd5;
+
+            opacity: .95;
+
+            font-weight: 500;
+
+        }
+
+
+        .card {
+
+            background: var(--card-bg);
+
+            border-radius: 18px;
+
+            padding: 20px 18px;
+
+            margin-bottom: 20px;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow-card);
+
+        }
+
+
+        h2 {
+
+            font-size: 1.25rem;
+
+            color: var(--primary-brown);
+
+            margin-bottom: 14px;
+
+            border-bottom: 2px solid #ffedd5;
+
+            padding-bottom: 8px;
+
+            font-weight: 700;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+        }
+
+
+        h3 {
+
+            font-size: 1.08rem;
+
+            margin: 16px 0 10px;
+
+            color: var(--primary-dark);
+
+            font-weight: 700;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+        }
+
+
+        h4 {
+
+            font-size: 0.98rem;
+
+            margin: 12px 0 6px;
+
+            color: var(--text-main);
+
+            font-weight: 700;
+
+        }
+
+
+        p {
+
+            margin-bottom: 12px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+        }
+
+
+        ul, ol {
+
+            margin-bottom: 14px;
+
+            padding-left: 22px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+        }
+
+
+        li {
+
+            margin-bottom: 8px;
+
+        }
+
+
+        strong {
+
+            color: var(--text-main);
+
+        }
+
+
+        .example-box {
+
+            background: #fffaf5;
+
+            border-left: 4px solid #f59e0b;
+
+            padding: 12px 14px;
+
+            border-radius: 0 10px 10px 0;
+
+            margin: 12px 0;
+
+            font-size: .92rem;
+
+            color: #78350f;
+
+        }
+
+
+        .case-box {
+
+            background: #eff6ff;
+
+            border-left: 4px solid var(--accent-blue);
+
+            padding: 12px 14px;
+
+            border-radius: 0 10px 10px 0;
+
+            margin: 12px 0;
+
+            font-size: .92rem;
+
+            color: #1e40af;
+
+        }
+
+
+        .concept-card {
+
+            background: #f8fafc;
+
+            border: 1px solid #e2e8f0;
+
+            border-radius: 12px;
+
+            padding: 14px;
+
+            margin: 12px 0;
+
+        }
+
+
+        .table-responsive {
+
+            overflow-x: auto;
+
+            margin: 14px 0;
+
+            border-radius: 12px;
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            text-align: left;
+
+            font-size: 0.88rem;
+
+        }
+
+
+        th, td {
+
+            padding: 10px 12px;
+
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+
+        th {
+
+            background-color: #f1f5f9;
+
+            color: var(--primary-dark);
+
+            font-weight: 700;
+
+        }
+
+
+        tr:last-child td {
+
+            border-bottom: none;
+
+        }
+
+
+        tr:nth-child(even) {
+
+            background-color: #fafafa;
+
+        }
+
+
+        .diagram-container {
+
+            text-align: center;
+
+            margin: 16px 0;
+
+            padding: 12px;
+
+            background: #f1f5f9;
+
+            border-radius: 12px;
+
+            border: 1px dashed #cbd5e1;
+
+        }
+
+
+        .diagram-container img {
+
+            max-width: 100%;
+
+            height: auto;
+
+            border-radius: 8px;
+
+        }
+
+
+        .footer {
+
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: var(--text-muted);
+
+            font-size: .85rem;
+
+        }
+
+
+        @media (max-width:480px) {
+
+            body {
+
+                padding: 10px;
+
+            }
+
+
+            .page-navigation a {
+
+                padding: 8px 12px;
+
+                font-size: 13px;
+
+            }
+
+
+            header h1 {
+
+                font-size: 1.4rem;
+
+            }
+
+
+            .card {
+
+                padding: 16px 14px;
+
+            }
+
+
+            h2 {
+
+                font-size: 1.15rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a href="law-notes.html" class="back-btn">
+        ← Back
+    </a>
+
+    <a href="index.html" class="home-btn">
+        🏠 Home
+    </a>
+
+</div>
+
+
+
+<header>
+
+    <h1>
+        ⚖️ Law Chapter 2
+    </h1>
+
+    <p>
+        HUMAN RIGHTS &amp; FUNDAMENTAL FREEDOMS
+    </p>
+
+</header>
+
+
+
+<section>
+
+
+    <!-- Overview & Topics Covered Card -->
+
+    <div class="card">
+
+        <h2>
+            📌 Chapter Overview
+        </h2>
+
+        <p>
+            This chapter provides a comprehensive examination of human rights, fundamental freedoms, civics, ethics, citizenship, and constitutional legal concepts under the FDRE Constitution.
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>📖 Human Rights &amp; Fundamental Freedoms</strong>
+            </li>
+
+            <li>
+                <strong>🏛️ Civics, Ethics &amp; Citizenship</strong>
+            </li>
+
+            <li>
+                <strong>⚖️ Legal Concepts &amp; Institutions</strong>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Nature and Characteristics Card -->
+
+    <div class="card">
+
+        <h2>
+            🌿 Nature and Characteristics of Human Rights
+        </h2>
+
+        <p>
+            Human rights are fundamental rights and freedoms that belong to every person in the world, from birth until death. They apply regardless of where you are from, what you believe, or how you live.
+        </p>
+
+
+        <div class="concept-card">
+
+            <h3>
+                🧠 Core Understanding
+            </h3>
+
+            <ul>
+
+                <li>
+                    Human rights are <strong>inherent</strong> to all human beings
+                </li>
+
+                <li>
+                    They are <strong>not granted</strong> by any state or authority
+                </li>
+
+                <li>
+                    They <strong>cannot be taken away</strong> (except under specific legal conditions)
+                </li>
+
+                <li>
+                    They are based on shared values like <strong>dignity, fairness, equality, and respect</strong>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h3>
+            🔒 Inalienable and Inviolable Rights
+        </h3>
+
+
+        <h4>
+            A. Inalienable Rights
+        </h4>
+
+        <p>
+            Rights that cannot be taken away, surrendered, or transferred.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Cannot be sold, given away, or renounced
+            </li>
+
+            <li>
+                Cannot be forfeited through action or inaction
+            </li>
+
+            <li>
+                Belong to the person inherently
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Examples:</strong> Right to life, Right to human dignity, Freedom from torture and slavery.
+
+        </div>
+
+
+        <h4>
+            B. Inviolable Rights
+        </h4>
+
+        <p>
+            <strong>Definition:</strong> Rights that are absolutely protected and cannot be violated under any circumstances.
+        </p>
+
+        <p>
+            <strong>Key Points:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                These rights are absolute
+            </li>
+
+            <li>
+                Cannot be suspended even during states of emergency
+            </li>
+
+            <li>
+                Protected regardless of public interest or national security claims
+            </li>
+
+        </ul>
+
+        <div class="case-box">
+
+            📜 <strong>Under FDRE Constitution (Article 10):</strong> Human and democratic rights are inviolable and inalienable. The Constitution explicitly protects these rights from infringement.
+
+        </div>
+
+
+        <h4>
+            C. Non-Derogable Rights
+        </h4>
+
+        <p>
+            Even during states of emergency, certain rights cannot be suspended:
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Article</th>
+
+                        <th>Right</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Article 14</strong></td>
+
+                        <td>Right to life</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Article 15</strong></td>
+
+                        <td>Protection of right to life</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Article 18</strong></td>
+
+                        <td>Prohibition against inhuman treatment (torture, slavery)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Article 25</strong></td>
+
+                        <td>Right to equality</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Article 39(5)</strong></td>
+
+                        <td>Rights of Nations, Nationalities and Peoples</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="diagram-container">
+
+            <p>
+                ⚖️ <strong>Balance Scale:</strong> Human Rights Limitations vs Non-Derogable Absolute Protection Side
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Universal Applicability Card -->
+
+    <div class="card">
+
+        <h2>
+            🌐 Universal Applicability
+        </h2>
+
+        <p>
+            Human rights are universal—they apply to all people everywhere, regardless of nationality, race, gender, religion, or any other status.
+        </p>
+
+
+        <h3>
+            🔑 Key Principles of Universality
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Principle</th>
+
+                        <th>Explanation</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Universal Birthright</strong></td>
+
+                        <td>Every human being is born with these rights</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Geographic Universality</strong></td>
+
+                        <td>Rights apply in all countries and regions</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Cultural Universality</strong></td>
+
+                        <td>Rights transcend cultural differences</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Temporal Universality</strong></td>
+
+                        <td>Rights apply at all times, in all eras</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            ⚠️ Limitations and Debates
+        </h3>
+
+        <ul>
+
+            <li>
+                <strong>Cultural Relativism:</strong> Some argue that rights should be interpreted within cultural contexts.
+            </li>
+
+            <li>
+                <strong>Implementation Gaps:</strong> Universal recognition does not mean universal enforcement.
+            </li>
+
+            <li>
+                <strong>Progressive Realization:</strong> Some rights (economic, social) may be realized progressively based on resources.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            🇪🇹 Ethiopia's Commitment
+        </h3>
+
+        <ul>
+
+            <li>
+                FDRE Constitution incorporates universal human rights standards.
+            </li>
+
+            <li>
+                Ethiopia is party to major international human rights treaties.
+            </li>
+
+            <li>
+                <strong>Article 13</strong> requires interpretation of rights in conformity with international instruments.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Human Rights vs Democratic Rights Card -->
+
+    <div class="card">
+
+        <h2>
+            ⚖️ Democratic Rights vs. Human Rights Distinction
+        </h2>
+
+
+        <h3>
+            A. Human Rights
+        </h3>
+
+        <p>
+            Rights inherent to all human beings by virtue of their humanity.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Pre-exist the state
+            </li>
+
+            <li>
+                Not dependent on citizenship
+            </li>
+
+            <li>
+                Cannot be granted or revoked by government
+            </li>
+
+            <li>
+                Include: right to life, freedom from torture, etc.
+            </li>
+
+        </ul>
+
+        <p>
+            <strong>Source:</strong> Human dignity and nature
+        </p>
+
+
+        <h3>
+            B. Democratic Rights
+        </h3>
+
+        <p>
+            Rights that enable citizens to participate in the political process and governance of their country.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Depend on existence of democratic system
+            </li>
+
+            <li>
+                Typically limited to citizens
+            </li>
+
+            <li>
+                Granted and structured by constitution and laws
+            </li>
+
+            <li>
+                Include: right to vote, right to run for office, etc.
+            </li>
+
+        </ul>
+
+        <p>
+            <strong>Source:</strong> Constitutional provisions
+        </p>
+
+
+        <h3>
+            📊 Comparison Table
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Aspect</th>
+
+                        <th>Human Rights</th>
+
+                        <th>Democratic Rights</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Basis</strong></td>
+
+                        <td>Human nature</td>
+
+                        <td>Citizenship</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Recipients</strong></td>
+
+                        <td>All human beings</td>
+
+                        <td>Citizens</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Pre-existence</strong></td>
+
+                        <td>Pre-exist the state</td>
+
+                        <td>Created by state/constitution</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Revocability</strong></td>
+
+                        <td>Cannot be revoked</td>
+
+                        <td>Can be regulated/modified</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Examples</strong></td>
+
+                        <td>Life, dignity, freedom from torture</td>
+
+                        <td>Vote, hold office, form political party</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Constitutional Basis (FDRE)</strong></td>
+
+                        <td>Articles 14-28</td>
+
+                        <td>Articles 38-40</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🔗 Relationship Between the Two
+        </h3>
+
+        <ul>
+
+            <li>
+                Democratic rights are a subset of broader human rights.
+            </li>
+
+            <li>
+                Democratic rights enable exercise and protection of human rights.
+            </li>
+
+            <li>
+                Both are protected under the FDRE Constitution (Chapter Three).
+            </li>
+
+        </ul>
+
+
+        <div class="case-box">
+
+            📜 <strong>Article 10: Human and Democratic Rights</strong>
+            <br>
+            Article 10 of the FDRE Constitution states:
+            <ol>
+
+                <li>
+                    "Human rights and freedoms, emanating from the nature of mankind, are inviolable and inalienable."
+                </li>
+
+                <li>
+                    "Democratic rights of citizens and peoples, guaranteed by this Constitution, shall be respected."
+                </li>
+
+            </ol>
+
+            <strong>Implications:</strong>
+            <ul>
+
+                <li>
+                    Human rights are inherent and cannot be violated.
+                </li>
+
+                <li>
+                    Democratic rights are constitutionally guaranteed.
+                </li>
+
+                <li>
+                    Both must be respected by all organs of government.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Specific Rights under FDRE Card -->
+
+    <div class="card">
+
+        <h2>
+            📜 Specific Rights Under FDRE Constitution
+        </h2>
+
+
+        <h3>
+            ⚖️ Due Process Rights
+        </h3>
+
+        <p>
+            Due process refers to the legal requirement that the state must respect all legal rights owed to a person. It balances the power of law enforcement and protects individuals from the state.
+        </p>
+
+
+        <h4>
+            A. Right to Life (Article 14-15)
+        </h4>
+
+        <p>
+            <strong>Article 14:</strong> "Every person has the inviolable and inalienable right to life, the security of person and liberty."
+        </p>
+
+        <p>
+            <strong>Article 15:</strong> "Every person has the right to life. No person may be deprived of his life except as a punishment for a serious criminal offence determined by law."
+        </p>
+
+        <p>
+            <strong>Key Points:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Right to life is non-derogable.
+            </li>
+
+            <li>
+                Death penalty only for serious crimes as determined by law.
+            </li>
+
+            <li>
+                Cannot be imposed arbitrarily.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            B. Right to Liberty and Security (Article 17)
+        </h4>
+
+        <p>
+            <strong>Article 17(1):</strong> "No one shall be deprived of his or her liberty except on such grounds and in accordance with such procedure as established by law."
+        </p>
+
+        <p>
+            <strong>Key Points:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Freedom from arbitrary arrest and detention.
+            </li>
+
+            <li>
+                Detention only as provided by law.
+            </li>
+
+            <li>
+                Includes protection against unlawful imprisonment.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            C. Habeas Corpus (Article 19)
+        </h4>
+
+        <p>
+            Habeas corpus (Latin: "you shall have the body") is a legal principle requiring that a detained person be brought before a court to determine the legality of detention.
+        </p>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Right</th>
+
+                        <th>Description</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Right to be informed</strong></td>
+
+                        <td>Person arrested has right to be informed promptly and in detail of the nature and cause of the charge</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Right to remain silent</strong></td>
+
+                        <td>Cannot be compelled to make statements that may be used against them</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Right to counsel</strong></td>
+
+                        <td>Right to communicate with and be visited by legal counsel</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Judicial review</strong></td>
+
+                        <td>Must be brought before a court within 48 hours of arrest</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+            D. Presumption of Innocence (Article 20(3))
+        </h4>
+
+        <p>
+            <strong>Article 20(3):</strong> "During proceedings, accused persons have the right to be presumed innocent until proved guilty according to law."
+        </p>
+
+        <p>
+            <strong>Implications:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Burden of proof rests with prosecution.
+            </li>
+
+            <li>
+                Accused does not need to prove innocence.
+            </li>
+
+            <li>
+                Any doubt must benefit the accused.
+            </li>
+
+            <li>
+                Pre-trial detention is not punishment.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            E. Right to be Informed of Charges (Article 20(1))
+        </h4>
+
+        <p>
+            <strong>Article 20(1):</strong> "Accused persons have the right to be informed with sufficient particulars of the charge brought against them and to be given the charge in writing."
+        </p>
+
+        <p>
+            <strong>Purpose:</strong> Enables preparation of defense, prevents surprise at trial, and ensures fair proceedings.
+        </p>
+
+
+        <h3>
+            👤 Rights of Accused Persons (Article 20)
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Right</th>
+
+                        <th>Article</th>
+
+                        <th>Description</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Public Trial</strong></td>
+
+                        <td>20(1)</td>
+
+                        <td>Right to public hearing by an ordinary court of law</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Adequate Time for Defense</strong></td>
+
+                        <td>20(1)</td>
+
+                        <td>Sufficient time to prepare defense</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Right to Counsel</strong></td>
+
+                        <td>20(5)</td>
+
+                        <td>Right to be represented by legal counsel of choice; if unable to afford, state provides at its expense</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Right to Examine Witnesses</strong></td>
+
+                        <td>20(4)</td>
+
+                        <td>Right to examine prosecution witnesses and call defense witnesses</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Right to Interpreter</strong></td>
+
+                        <td>20(7)</td>
+
+                        <td>Free interpreter if accused cannot understand language of proceedings</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Right to Appeal</strong></td>
+
+                        <td>20(6)</td>
+
+                        <td>Right to appeal to competent court</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Speedy Trial</strong></td>
+
+                        <td>20(1)</td>
+
+                        <td>Trial without undue delay</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Double Jeopardy Protection</strong></td>
+
+                        <td>23</td>
+
+                        <td>Not to be tried twice for same offense</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="case-box">
+
+            📜 <strong>Right to Counsel Details (Article 20(5)):</strong>
+            <br>
+            "Accused persons have the right to be represented by legal counsel of their choice, and, if they do not have sufficient means to pay for it and miscarriage of justice would result, the state shall provide them with legal counsel at its own expense."
+            <br><br>
+
+            <strong>Key Elements:</strong>
+            <ul>
+
+                <li>
+                    Choice of counsel
+                </li>
+
+                <li>
+                    State-funded counsel for indigent accused when justice requires
+                </li>
+
+                <li>
+                    Access to counsel from the moment of arrest
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Privacy, Honor, Reputation & Double Jeopardy Card -->
+
+    <div class="card">
+
+        <h2>
+            🔒 Privacy, Honor, Reputation &amp; Protection
+        </h2>
+
+
+        <h3>
+            A. Right to Privacy (Article 26)
+        </h3>
+
+        <p>
+            <strong>Article 26(1):</strong> "Everyone has the right to privacy. This right shall include the right not to be subjected to searches of his home, person or property, or the seizure of any property under his personal possession."
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Area</th>
+
+                        <th>Protection</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Home</strong></td>
+
+                        <td>No unreasonable searches</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Person</strong></td>
+
+                        <td>No unlawful bodily searches</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Property</strong></td>
+
+                        <td>No unlawful seizure</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Correspondence</strong></td>
+
+                        <td>Privacy of mail, telephone, and electronic communications</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Personal Data</strong></td>
+
+                        <td>Protection of personal information</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p>
+            <strong>Exceptions:</strong> Justified searches with warrant, public safety and crime prevention, as provided by law with compelling reasons.
+        </p>
+
+
+        <h3>
+            B. Right to Honor and Reputation (Article 26)
+        </h3>
+
+        <p>
+            <strong>Article 26(2):</strong> "Everyone has the right to the inviolability of his notes and correspondence including postal letters, and communications made by means of telephone, telecommunications and electronic devices."
+        </p>
+
+        <p>
+            Article 27 (freedom of religion) also implicitly protects honor and reputation in religious contexts.
+        </p>
+
+        <p>
+            <strong>Protections Include:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Protection against defamation
+            </li>
+
+            <li>
+                Protection against false accusations
+            </li>
+
+            <li>
+                Right to dignity
+            </li>
+
+        </ul>
+
+
+        <h3>
+            C. Search and Seizure Limitations
+        </h3>
+
+        <ul>
+
+            <li>
+                Searches require warrant except in exigent circumstances
+            </li>
+
+            <li>
+                Evidence obtained illegally may be inadmissible
+            </li>
+
+            <li>
+                Balancing public safety with privacy rights
+            </li>
+
+        </ul>
+
+
+        <h3>
+            ⛔ Prohibition of Double Jeopardy (Article 23)
+        </h3>
+
+        <p>
+            Double jeopardy is the prosecution of a person twice for the same criminal offense.
+        </p>
+
+        <p>
+            <strong>Article 23:</strong> "No person shall be liable to be tried or punished again for an offence for which he has already been finally convicted or acquitted in accordance with the criminal law and procedure."
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Element</th>
+
+                        <th>Explanation</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Same Offense</strong></td>
+
+                        <td>Applies to same criminal act, not similar offenses</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Final Judgment</strong></td>
+
+                        <td>Applies after conviction or acquittal becomes final</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Jeopardy Attaches</strong></td>
+
+                        <td>At trial commencement (jury sworn or first witness heard)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Res Judicata</strong></td>
+
+                        <td>Matter finally decided cannot be relitigated</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p>
+            <strong>Purpose:</strong> Prevents harassment of accused, ensures finality in criminal proceedings, protects against government overreach, and preserves judicial resources.
+        </p>
+
+        <p>
+            <strong>Exceptions (Not Double Jeopardy):</strong> Retrial after hung jury/mistrial, appeal by prosecution on questions of law (if acquittal stands), civil proceedings following criminal case, different sovereign prosecuting (limited applicability).
+        </p>
+
+    </div>
+
+
+    <!-- Other Fundamental Rights Card -->
+
+    <div class="card">
+
+        <h2>
+            ✨ Other Fundamental Rights
+        </h2>
+
+
+        <h3>
+            🕊️ A. Freedom of Thought, Conscience, and Religion (Article 27)
+        </h3>
+
+        <ul>
+
+            <li>
+                Freedom to hold any religious belief
+            </li>
+
+            <li>
+                Freedom to practice and manifest religion
+            </li>
+
+            <li>
+                Freedom to change religion or belief
+            </li>
+
+            <li>
+                Protection from coercion
+            </li>
+
+            <li>
+                Religious institutions may establish places of worship
+            </li>
+
+        </ul>
+
+
+        <h3>
+            👩 Rights of Women (Article 35)
+        </h3>
+
+        <ul>
+
+            <li>
+                Equal rights with men
+            </li>
+
+            <li>
+                Affirmative action to remedy historical inequality
+            </li>
+
+            <li>
+                Right to maternity leave with pay
+            </li>
+
+            <li>
+                Protection from harmful practices
+            </li>
+
+            <li>
+                Equal representation in government
+            </li>
+
+        </ul>
+
+
+        <h3>
+            👶 Rights of Children (Article 36)
+        </h3>
+
+        <ul>
+
+            <li>
+                Right to life, name, and nationality
+            </li>
+
+            <li>
+                Right to care and guidance
+            </li>
+
+            <li>
+                Protection from exploitation
+            </li>
+
+            <li>
+                Not subject to death penalty
+            </li>
+
+            <li>
+                Not detained except as last resort
+            </li>
+
+        </ul>
+
+
+        <h3>
+            🏡 Right to Property (Article 40)
+        </h3>
+
+        <ul>
+
+            <li>
+                Right to acquire and dispose property
+            </li>
+
+            <li>
+                Protection from arbitrary deprivation
+            </li>
+
+            <li>
+                Expropriation only for public purpose with compensation
+            </li>
+
+            <li>
+                Land ownership vested in state and people
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Equality & Affirmative Action Card -->
+
+    <div class="card">
+
+        <h2>
+            ⚖️ Equality, Non-Discrimination &amp; Affirmative Action
+        </h2>
+
+
+        <h3>
+            ⚖️ Equality Provisions (Article 25)
+        </h3>
+
+        <div class="case-box">
+
+            📜 <strong>Article 25 Text:</strong>
+            <br>
+            "All persons are equal before the law and are entitled without any discrimination to the equal protection of the law. In this respect, the law shall guarantee to all persons equal and effective protection without discrimination on grounds of race, nation, nationality, or other social origin, color, sex, language, religion, political or other opinion, property, birth or other status."
+
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Component</th>
+
+                        <th>Meaning</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Equality Before the Law</strong></td>
+
+                        <td>Same laws apply to all persons in same circumstances</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Equal Protection of the Law</strong></td>
+
+                        <td>Laws must protect all persons equally; no discriminatory application</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🚫 Prohibited Grounds of Discrimination
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Category</th>
+
+                        <th>Examples</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Race/Color</strong></td>
+
+                        <td>Discrimination based on skin color or racial characteristics</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Nation/Nationality</strong></td>
+
+                        <td>Discrimination based on ethnic or national origin</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Social Origin</strong></td>
+
+                        <td>Discrimination based on class, caste, or social background</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Sex/Gender</strong></td>
+
+                        <td>Discrimination based on male/female identity</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Language</strong></td>
+
+                        <td>Discrimination based on language spoken</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Religion</strong></td>
+
+                        <td>Discrimination based on religious belief or non-belief</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Political Opinion</strong></td>
+
+                        <td>Discrimination based on political views</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Property</strong></td>
+
+                        <td>Discrimination based on wealth or property ownership</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Birth</strong></td>
+
+                        <td>Discrimination based on family background or birth status</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Other Status</strong></td>
+
+                        <td>Includes age, disability, marital status, etc.</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            ⚖️ Formal vs. Substantive Equality
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Type</th>
+
+                        <th>Definition</th>
+
+                        <th>Example</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Formal Equality</strong></td>
+
+                        <td>Treating everyone exactly the same</td>
+
+                        <td>Same admission criteria for all university applicants</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Substantive Equality</strong></td>
+
+                        <td>Recognizing differences and addressing disadvantage</td>
+
+                        <td>Different admission criteria to address historical exclusion</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🎯 Affirmative Action
+        </h3>
+
+        <p>
+            Affirmative action refers to measures designed to remedy past discrimination and achieve substantive equality by providing preferential treatment to historically disadvantaged groups.
+        </p>
+
+
+        <div class="case-box">
+
+            📜 <strong>Constitutional Basis:</strong>
+            <br>
+            <strong>Article 35(3) on women's rights:</strong>
+            <br>
+            "The historical legacy of inequality and discrimination suffered by women in Ethiopia taken into account, women, in order to remedy this legacy, are entitled to affirmative measures. The purpose of such measures shall be to provide special attention to women so as to enable them compete and participate on the basis of equality with men in political, social and economic life as well as in public and private institutions."
+            <br><br>
+            <strong>Article 89(4/5) on economic objectives:</strong>
+            <br>
+            "Government shall take measures to ensure equal participation of women in all economic and social development and to provide particular support to them in all development endeavors."
+
+        </div>
+
+
+        <h4>
+            🎯 Purpose of Affirmative Action
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Remedy Past Discrimination:</strong> Address historical disadvantages
+            </li>
+
+            <li>
+                <strong>Level Playing Field:</strong> Enable genuine equal competition
+            </li>
+
+            <li>
+                <strong>Increase Representation:</strong> Ensure diverse participation in all spheres
+            </li>
+
+            <li>
+                <strong>Break Stereotypes:</strong> Challenge assumptions about group capabilities
+            </li>
+
+            <li>
+                <strong>Promote Inclusion:</strong> Integrate marginalized groups into mainstream
+            </li>
+
+        </ul>
+
+
+        <h4>
+            🛑 Limits of Affirmative Action
+        </h4>
+
+        <ol>
+
+            <li>
+                Must be temporary (in principle)—until inequality is addressed
+            </li>
+
+            <li>
+                Must be proportional—not more than necessary
+            </li>
+
+            <li>
+                Cannot create reverse discrimination—should not unduly burden others
+            </li>
+
+            <li>
+                Must be based on objective criteria—not arbitrary
+            </li>
+
+            <li>
+                Must serve legitimate purpose—remedying inequality
+            </li>
+
+        </ol>
+
+
+        <div class="example-box">
+
+            💡 <strong>Examples in Practice:</strong>
+            <ul>
+
+                <li>
+                    Reserved seats for women in parliament
+                </li>
+
+                <li>
+                    Preferential admission for historically disadvantaged groups
+                </li>
+
+                <li>
+                    Special scholarships and training programs
+                </li>
+
+                <li>
+                    Employment quotas in public service
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sexism and Gender Equality Card -->
+
+    <div class="card">
+
+        <h2>
+            👭 Sexism and Gender Equality
+        </h2>
+
+        <p>
+            Sexism is discrimination, prejudice, or stereotyping based on gender. It typically involves the belief that one sex is superior to another.
+        </p>
+
+
+        <h3>
+            Forms of Sexism
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Form</th>
+
+                        <th>Description</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Hostile Sexism</strong></td>
+
+                        <td>Overt negative attitudes and discrimination</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Benevolent Sexism</strong></td>
+
+                        <td>Paternalistic attitudes that seem positive but reinforce stereotypes</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Institutional Sexism</strong></td>
+
+                        <td>Systemic discrimination embedded in institutions</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Cultural Sexism</strong></td>
+
+                        <td>Gender bias in cultural norms and practices</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            📜 Article 35 Comprehensive Protection
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Provision</th>
+
+                        <th>Content</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>35(1)</strong></td>
+
+                        <td>Women shall have equal rights with men</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(2)</strong></td>
+
+                        <td>Equal marriage rights upon consent</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(3)</strong></td>
+
+                        <td>Entitlement to affirmative measures</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(4)</strong></td>
+
+                        <td>Right to maternity leave with pay</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(5)</strong></td>
+
+                        <td>Protection from harmful practices</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(6)</strong></td>
+
+                        <td>Equal representation in government</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(7)</strong></td>
+
+                        <td>Equal employment and promotion rights</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>35(8)</strong></td>
+
+                        <td>Equal access to education and training</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            🚫 <strong>Harmful Practices Prohibited:</strong>
+            <ul>
+
+                <li>
+                    Female genital mutilation
+                </li>
+
+                <li>
+                    Early marriage
+                </li>
+
+                <li>
+                    Domestic violence
+                </li>
+
+                <li>
+                    Trafficking of women
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="concept-card">
+
+            💼 <strong>Economic Rights:</strong>
+            <ul>
+
+                <li>
+                    Equal pay for equal work
+                </li>
+
+                <li>
+                    Right to property ownership
+                </li>
+
+                <li>
+                    Access to credit and resources
+                </li>
+
+                <li>
+                    Equal participation in economic development
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h3>
+            📝 Summary Table: Equality Framework
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Concept</th>
+
+                        <th>Definition</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Formal Equality</strong></td>
+
+                        <td>Same treatment before law</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Substantive Equality</strong></td>
+
+                        <td>Addressing disadvantage</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Non-Discrimination</strong></td>
+
+                        <td>No unfair distinction on prohibited grounds</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Affirmative Action</strong></td>
+
+                        <td>Preferential measures for disadvantaged groups</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Gender Equality</strong></td>
+
+                        <td>Equal rights and opportunities for women</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+  
+<section>
+
+
+    <!-- 1. CITIZENSHIP & MODES OF ACQUISITION -->
+
+    <div class="card">
+
+        <h2>
+            🪪 1. Citizenship &amp; Modes of Acquisition
+        </h2>
+
+        <p>
+            <strong>Citizenship</strong> is the status of a person recognized under law as being a member of a state, with associated rights and duties.
+        </p>
+
+        <h3>
+            🌐 Modes of Acquiring Citizenship
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Mode</th>
+
+                        <th>Description</th>
+
+                        <th>Example</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Birth (Jus Soli)</strong></td>
+
+                        <td>Citizenship based on place of birth</td>
+
+                        <td>Being born in the territory</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Blood (Jus Sanguinis)</strong></td>
+
+                        <td>Citizenship based on parentage</td>
+
+                        <td>Being born to citizen parents</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Naturalization</strong></td>
+
+                        <td>Granting citizenship after birth</td>
+
+                        <td>Through residency and application (Varies by country)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Marriage</strong></td>
+
+                        <td>Citizenship through marriage to citizen</td>
+
+                        <td>Marriage to a national citizen</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🇪🇹 Ethiopian Citizenship
+        </h3>
+
+        <ul>
+
+            <li>
+                📌 Governed by <strong>Proclamation No. 378/2003</strong>
+            </li>
+
+            <li>
+                🧬 Primarily based on descent (<strong>jus sanguinis</strong>)
+            </li>
+
+            <li>
+                📝 Naturalization is possible after residence and fulfillment of legal conditions
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- 2. RIGHTS & DUTIES OF CITIZENSHIP -->
+
+    <div class="card">
+
+        <h2>
+            ⚖️ 2. Rights vs. Duties Correlation
+        </h2>
+
+        <div class="highlight-box">
+
+            💡 <strong>Core Concept:</strong> Rights and duties are two sides of the same coin. Every right implies a corresponding duty, and the exercise of rights requires fulfillment of duties.
+
+        </div>
+
+
+        <h3>
+            📜 Rights of Citizens (Under FDRE Constitution)
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Category</th>
+
+                        <th>Constitutional Basis</th>
+
+                        <th>Examples</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Political Rights</strong></td>
+
+                        <td>Article 25</td>
+
+                        <td>Right to vote, right to be elected, form political parties</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Civil Rights</strong></td>
+
+                        <td>Articles 35, 89</td>
+
+                        <td>Freedom of expression, assembly, association</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Economic Rights</strong></td>
+
+                        <td>Article 25</td>
+
+                        <td>Right to property, work, engage in economic activity</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Social Rights</strong></td>
+
+                        <td>Articles 35(3), 89(4)</td>
+
+                        <td>Right to education, health, social security</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🛠️ Duties of Citizens
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Duty</th>
+
+                        <th>Description</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Obey the Law</strong></td>
+
+                        <td>Comply with all laws and regulations</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Pay Taxes</strong></td>
+
+                        <td>Contribute to public finances</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Defend the Country</strong></td>
+
+                        <td>National service when required</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Respect Others' Rights</strong></td>
+
+                        <td>Exercise rights without violating others' rights</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Participate in Public Affairs</strong></td>
+
+                        <td>Engage in civic and political life</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Protect the Environment</strong></td>
+
+                        <td>Preserve natural resources</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Preserve National Unity</strong></td>
+
+                        <td>Promote harmony and solidarity</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🤝 Active Community Participation
+        </h3>
+
+        <p>
+            Active community participation refers to the engagement of citizens in the social, economic, cultural, and political affairs of their community.
+        </p>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Form</th>
+
+                        <th>Description</th>
+
+                        <th>Examples</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Political Participation</strong></td>
+
+                        <td>Involvement in governance and decision-making</td>
+
+                        <td>Voting, running for office, attending public meetings</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Social Participation</strong></td>
+
+                        <td>Engagement in community activities</td>
+
+                        <td>Volunteering, neighborhood associations</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Economic Participation</strong></td>
+
+                        <td>Contribution to economic development</td>
+
+                        <td>Cooperatives, local business initiatives</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Civic Participation</strong></td>
+
+                        <td>Involvement in public affairs</td>
+
+                        <td>Public consultations, community policing</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3. GOOD CITIZENSHIP CHARACTERISTICS -->
+
+    <div class="card">
+
+        <h2>
+            🌟 3. Good Citizenship Characteristics
+        </h2>
+
+        <p>
+            Key qualities that define a responsible and effective citizen:
+        </p>
+
+        <ul>
+
+            <li>
+                📜 <strong>Law-Abiding:</strong> Respects and follows laws and regulations.
+            </li>
+
+            <li>
+                🤝 <strong>Respectful:</strong> Treats others with dignity and respect.
+            </li>
+
+            <li>
+                🎯 <strong>Responsible:</strong> Takes responsibility for actions and obligations.
+            </li>
+
+            <li>
+                🧠 <strong>Informed:</strong> Stays informed about public affairs.
+            </li>
+
+            <li>
+                🙋‍♂️ <strong>Participatory:</strong> Engages in community and political life.
+            </li>
+
+            <li>
+                🕊️ <strong>Tolerant:</strong> Accepts diversity and different viewpoints.
+            </li>
+
+            <li>
+                ❤️ <strong>Compassionate:</strong> Shows concern for others' welfare.
+            </li>
+
+            <li>
+                🇪🇹 <strong>Patriotic:</strong> Loyal to country and its values.
+            </li>
+
+            <li>
+                🌱 <strong>Environmentally Conscious:</strong> Protects natural resources.
+            </li>
+
+            <li>
+                ⚖️ <strong>Ethical:</strong> Acts with integrity and honesty.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            🏛️ Citizen Responsibilities Under Ethiopian Law
+        </h3>
+
+        <div class="case-box">
+
+            📌 <strong>Article 43(3):</strong> "All persons have the right to participate in the formulation of development policies, projects and programmes which affect them."
+
+        </div>
+
+        <div class="case-box">
+
+            📌 <strong>Article 89(7):</strong> "Government shall ensure that all Ethiopians live in a clean and healthy environment."
+
+        </div>
+
+    </div>
+
+
+    <!-- 4. RULE OF LAW & CONSTITUTIONALISM -->
+
+    <div class="card">
+
+        <h2>
+            📜 4. Rule of Law &amp; Constitutionalism
+        </h2>
+
+        <p>
+            The <strong>rule of law</strong> is the principle that all persons, institutions, and entities, including the government itself, are accountable to laws that are publicly promulgated, equally enforced, and independently adjudicated.
+        </p>
+
+
+        <h3>
+            🏛️ Core Principles of Rule of Law
+        </h3>
+
+        <ul>
+
+            <li>
+                👑 <strong>Supremacy of Law:</strong> Law is supreme over all persons and institutions.
+            </li>
+
+            <li>
+                ⚖️ <strong>Equality Before the Law:</strong> No one is above the law; all are equally subject to it.
+            </li>
+
+            <li>
+                🎯 <strong>Accountability:</strong> Government officials are accountable under the law.
+            </li>
+
+            <li>
+                📖 <strong>Legal Certainty:</strong> Laws are clear, publicized, and prospective.
+            </li>
+
+            <li>
+                🔍 <strong>Fair Application:</strong> Laws are enforced consistently and without arbitrariness.
+            </li>
+
+            <li>
+                🚪 <strong>Access to Justice:</strong> All persons have access to courts and legal remedies.
+            </li>
+
+            <li>
+                🛡️ <strong>Due Process:</strong> Fair procedures in legal proceedings.
+            </li>
+
+            <li>
+                🏛️ <strong>Independent Judiciary:</strong> Courts are free from external interference.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            ⚖️ Constitutional Government vs. Rule by Law
+        </h3>
+
+        <h4>
+            A. Constitutional Government
+        </h4>
+
+        <p>
+            A government whose powers are limited by a constitution and that operates in accordance with constitutional principles.
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Limited Government:</strong> Government powers are defined and restricted.
+            </li>
+
+            <li>
+                <strong>Constitutional Supremacy:</strong> Constitution is the supreme law of the land.
+            </li>
+
+            <li>
+                <strong>Separation of Powers:</strong> Power is distributed among branches.
+            </li>
+
+            <li>
+                <strong>Protection of Rights:</strong> Fundamental rights are guaranteed.
+            </li>
+
+            <li>
+                <strong>Judicial Review:</strong> Courts ensure constitutionality.
+            </li>
+
+            <li>
+                <strong>Accountability:</strong> Government is answerable to the people.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            B. Rule by Law
+        </h4>
+
+        <p>
+            A situation where law is used as an instrument of government control, but the government itself is not bound by law.
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Law as Tool:</strong> Law used to control citizens, not government.
+            </li>
+
+            <li>
+                <strong>Government Above Law:</strong> Rulers are not subject to law.
+            </li>
+
+            <li>
+                <strong>Arbitrary Power:</strong> Decisions based on discretion, not legal constraints.
+            </li>
+
+            <li>
+                <strong>No Independent Judiciary:</strong> Courts serve government interests.
+            </li>
+
+            <li>
+                <strong>Rights Not Protected:</strong> Rights exist only at government pleasure.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- 5. ACCOUNTABILITY & TRANSPARENCY -->
+
+    <div class="card">
+
+        <h2>
+            🔍 5. Accountability &amp; Transparency
+        </h2>
+
+
+        <h3>
+            A. Accountability
+        </h3>
+
+        <p>
+            The obligation of government officials and institutions to answer for their actions, accept responsibility, and face consequences for failures.
+        </p>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Type</th>
+
+                        <th>Description</th>
+
+                        <th>Mechanism</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Political Accountability</strong></td>
+
+                        <td>Answerable to elected bodies and ultimately voters</td>
+
+                        <td>Elections, parliamentary questions</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Legal Accountability</strong></td>
+
+                        <td>Subject to judicial review and legal sanctions</td>
+
+                        <td>Courts, administrative tribunals</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Financial Accountability</strong></td>
+
+                        <td>Responsible for proper use of public funds</td>
+
+                        <td>Audits, budget oversight</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Administrative Accountability</strong></td>
+
+                        <td>Answerable within bureaucratic hierarchy</td>
+
+                        <td>Performance reviews, disciplinary procedures</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Social Accountability</strong></td>
+
+                        <td>Answerable to civil society and public</td>
+
+                        <td>Public hearings, citizen report cards</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            B. Transparency
+        </h3>
+
+        <p>
+            Openness and accessibility of government information and decision-making processes to the public.
+        </p>
+
+        <ul>
+
+            <li>
+                📄 <strong>Access to Information:</strong> Citizens can obtain government documents.
+            </li>
+
+            <li>
+                🚪 <strong>Open Meetings:</strong> Government deliberations open to the public.
+            </li>
+
+            <li>
+                📊 <strong>Public Reporting:</strong> Regular publication of activities and results.
+            </li>
+
+            <li>
+                👁️ <strong>Clear Procedures:</strong> Decision-making processes visible.
+            </li>
+
+            <li>
+                🛡️ <strong>Whistleblower Protection:</strong> Those exposing wrongdoing are protected.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            🏛️ Constitutional Basis in FDRE
+        </h3>
+
+        <div class="case-box">
+
+            📌 <strong>Article 12(1):</strong> "The conduct of affairs of government shall be transparent."
+
+        </div>
+
+        <div class="case-box">
+
+            📌 <strong>Article 12(2):</strong> "Any public official or an elected representative is accountable for any failure in official duties."
+
+        </div>
+
+    </div>
+
+
+    <!-- 6. ETHICAL VALUES & SOCIAL HARMONY -->
+
+    <div class="card">
+
+        <h2>
+            🤝 6. Ethical Values &amp; Social Harmony
+        </h2>
+
+
+        <h3>
+            A. Cultural Relativism vs. Ethnocentrism
+        </h3>
+
+
+        <h4>
+            1. Cultural Relativism
+        </h4>
+
+        <p>
+            The principle that an individual's beliefs and activities should be understood in terms of their own culture, not judged against the criteria of another culture.
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Non-Judgmental:</strong> Avoids imposing one culture's standards on another.
+            </li>
+
+            <li>
+                <strong>Contextual Understanding:</strong> Practices understood within cultural context.
+            </li>
+
+            <li>
+                <strong>Respect for Diversity:</strong> Acknowledges validity of different cultural practices.
+            </li>
+
+            <li>
+                <strong>Avoids Superiority Claims:</strong> No culture inherently superior to another.
+            </li>
+
+        </ul>
+
+
+        <div class="highlight-box">
+
+            ✅ <strong>Advantages:</strong>
+            <ul>
+                <li>Promotes cross-cultural understanding</li>
+                <li>Reduces prejudice and discrimination</li>
+                <li>Facilitates harmonious coexistence</li>
+                <li>Respects cultural autonomy</li>
+            </ul>
+
+        </div>
+
+
+        <div class="example-box">
+
+            ⚠️ <strong>Limitations:</strong>
+            <ul>
+                <li>May excuse harmful practices</li>
+                <li>Can hinder universal human rights</li>
+                <li>May lead to moral relativism</li>
+            </ul>
+
+        </div>
+
+
+        <h4>
+            2. Ethnocentrism
+        </h4>
+
+        <p>
+            Judging other cultures by the standards of one's own culture, often with a belief in the superiority of one's own culture.
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Cultural Superiority:</strong> Belief that own culture is best.
+            </li>
+
+            <li>
+                <strong>Negative Judgment:</strong> Other cultures viewed as inferior.
+            </li>
+
+            <li>
+                <strong>In-group Favoritism:</strong> Preference for own cultural group.
+            </li>
+
+            <li>
+                <strong>Out-group Hostility:</strong> Suspicion or hostility toward other groups.
+            </li>
+
+        </ul>
+
+
+        <p>
+            ❌ <strong>Effects:</strong> Prejudice and discrimination, intergroup conflict, misunderstanding of others, and cultural isolation.
+        </p>
+
+
+        <h3>
+            🌈 Unity in Diversity
+        </h3>
+
+        <p>
+            Unity in diversity is the concept of maintaining social cohesion and common purpose while respecting and celebrating cultural, ethnic, and religious differences.
+        </p>
+
+        <ul>
+
+            <li>
+                🆔 <strong>Shared Identity:</strong> Common national identity transcending differences.
+            </li>
+
+            <li>
+                🤝 <strong>Mutual Respect:</strong> Respect for different cultures and traditions.
+            </li>
+
+            <li>
+                ⚖️ <strong>Equality:</strong> Equal treatment and dignity for all groups.
+            </li>
+
+            <li>
+                🌐 <strong>Inclusion:</strong> All groups participate in national life.
+            </li>
+
+            <li>
+                🕊️ <strong>Tolerance:</strong> Acceptance of differences.
+            </li>
+
+            <li>
+                💬 <strong>Dialogue:</strong> Communication between groups.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            🇪🇹 Ethiopia's Diversity
+        </h4>
+
+        <ul>
+
+            <li>
+                Over <strong>80 ethnic groups</strong>
+            </li>
+
+            <li>
+                Multiple languages (with equal state recognition)
+            </li>
+
+            <li>
+                Diverse religious traditions and varied cultural practices
+            </li>
+
+        </ul>
+
+
+        <h4>
+            📜 Constitutional Framework
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Article 8:</strong> Sovereignty resides in Nations, Nationalities and Peoples.
+            </li>
+
+            <li>
+                <strong>Article 39:</strong> Rights of Nations, Nationalities and Peoples to Self-determination, Language and culture, and Self-government.
+            </li>
+
+            <li>
+                <strong>Article 46:</strong> States delineated on basis of settlement patterns, language, identity.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            🕊️ Tolerance and Compromise
+        </h3>
+
+
+        <h4>
+            1. Tolerance
+        </h4>
+
+        <p>
+            Willingness to allow the existence of opinions or behaviors that one dislikes or disagrees with.
+        </p>
+
+        <p>
+            <strong>Levels of Tolerance:</strong>
+        </p>
+
+        <ol>
+
+            <li>
+                <strong>Mere Tolerance:</strong> Putting up with differences
+            </li>
+
+            <li>
+                <strong>Respect:</strong> Recognizing value in differences
+            </li>
+
+            <li>
+                <strong>Appreciation:</strong> Valuing diversity positively
+            </li>
+
+            <li>
+                <strong>Celebration:</strong> Actively promoting diverse expressions
+            </li>
+
+        </ol>
+
+
+        <h4>
+            2. Compromise
+        </h4>
+
+        <p>
+            An agreement reached by mutual concession, essential for democratic decision-making.
+        </p>
+
+        <ul>
+
+            <li>
+                Both sides give something &amp; gain something
+            </li>
+
+            <li>
+                Neither gets everything
+            </li>
+
+            <li>
+                Maintains long-term relationships
+            </li>
+
+            <li>
+                <strong>Role in Governance:</strong> Legislative negotiations, policy formation, conflict resolution, coalition building.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- 7. JUSTICE CONCEPTS -->
+
+    <div class="card">
+
+        <h2>
+            ⚖️ 7. Justice Concepts
+        </h2>
+
+
+        <h3>
+            📊 Distributive Justice
+        </h3>
+
+        <p>
+            Concerns the fair allocation of resources, benefits, and burdens among members of society.
+        </p>
+
+        <ul>
+
+            <li>
+                ❓ <strong>Key Questions:</strong> Who gets what? How are resources distributed? What is a fair share? How should burdens be allocated?
+            </li>
+
+            <li>
+                💼 <strong>Application Areas:</strong> Taxation (who pays how much), public services (who receives), social welfare (who benefits), educational opportunities, and healthcare resources.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            🛠️ Corrective Justice
+        </h3>
+
+        <p>
+            Concerns the rectification of wrongs or injuries, restoring the balance upset by wrongful conduct.
+        </p>
+
+        <ul>
+
+            <li>
+                🚨 <strong>Wrongdoing:</strong> Some act that harms another.
+            </li>
+
+            <li>
+                👤 <strong>Responsibility:</strong> Wrongdoer should make amends.
+            </li>
+
+            <li>
+                🔄 <strong>Rectification:</strong> Restoring victim to prior position.
+            </li>
+
+            <li>
+                ⚖️ <strong>Proportionality:</strong> Remedy proportional to wrong.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            📋 Procedural Justice
+        </h3>
+
+        <p>
+            Concerns the fairness of the processes used to make decisions and resolve disputes, regardless of the outcome.
+        </p>
+
+        <ul>
+
+            <li>
+                🏛️ <strong>Neutrality:</strong> Decision-makers impartial.
+            </li>
+
+            <li>
+                🗣️ <strong>Voice:</strong> Affected parties can participate.
+            </li>
+
+            <li>
+                🤝 <strong>Respect:</strong> Parties treated with dignity.
+            </li>
+
+            <li>
+                🔒 <strong>Trustworthiness &amp; Transparency:</strong> Open and understandable processes seen as fair.
+            </li>
+
+            <li>
+                🔄 <strong>Consistency:</strong> Similar cases treated similarly.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            📌 Summary Table: Types of Justice
+        </h3>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Type</th>
+
+                        <th>Focus</th>
+
+                        <th>Key Question</th>
+
+                        <th>Examples</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Distributive</strong></td>
+
+                        <td>Allocation of resources</td>
+
+                        <td>Who gets what?</td>
+
+                        <td>Tax policy, welfare</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Corrective</strong></td>
+
+                        <td>Rectifying wrongs</td>
+
+                        <td>How to fix harm?</td>
+
+                        <td>Damages, punishment</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Procedural</strong></td>
+
+                        <td>Fairness of process</td>
+
+                        <td>How are decisions made?</td>
+
+                        <td>Fair trial, hearing rights</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- 8. LEGAL CONSTITUTIONAL INSTITUTIONS -->
+
+    <div class="card">
+
+        <h2>
+            🏛️ 8. Legal Concepts &amp; Institutions
+        </h2>
+
+
+        <h3>
+            🛡️ The Ombudsman
+        </h3>
+
+        <p>
+            An independent official appointed to investigate complaints against public authorities and ensure fair administration.
+        </p>
+
+        <p>
+            <em>Etymology: Swedish word meaning "representative" or "agent"</em>
+        </p>
+
+        <ul>
+
+            <li>
+                🏛️ <strong>Establishment in Ethiopia:</strong> Article 55(15) of the FDRE Constitution grants the House of Peoples' Representatives the power to establish the Office of the Ombudsman.
+            </li>
+
+            <li>
+                📜 <strong>Establishing Law:</strong> Institution of the Ombudsman Proclamation No. 211/2000.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            ⚙️ Functions &amp; Powers of the Ombudsman
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Investigation:</strong> Investigates complaints against administrative bodies.
+            </li>
+
+            <li>
+                <strong>Inquiry:</strong> Inquires into maladministration on own initiative.
+            </li>
+
+            <li>
+                <strong>Recommendation:</strong> Recommends remedial action, disciplinary action, or policy changes.
+            </li>
+
+            <li>
+                <strong>Reporting:</strong> Reports findings and recommendations to parliament.
+            </li>
+
+            <li>
+                <strong>Mediation &amp; Monitoring:</strong> Facilitates resolution of disputes and monitors implementation.
+            </li>
+
+        </ul>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Can Investigate</th>
+
+                        <th>Cannot Investigate</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>• Federal government ministries &amp; agencies</td>
+
+                        <td>• Court decisions</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>• Public enterprises</td>
+
+                        <td>• Legislative proceedings</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>• Administrative actions &amp; decisions</td>
+
+                        <td>• Private disputes (unless involving public body)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>• Delays and failures in service delivery</td>
+
+                        <td></td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🩺 Ethiopian Human Rights Commission (EHRC)
+        </h3>
+
+        <ul>
+
+            <li>
+                🏛️ <strong>Establishment:</strong> Article 55(14) of the FDRE Constitution grants power to establish.
+            </li>
+
+            <li>
+                📜 <strong>Establishing Law:</strong> Ethiopian Human Rights Commission Establishment Proclamation No. 210/2000.
+            </li>
+
+            <li>
+                🌐 <strong>Mandate Areas:</strong> Promotion, Protection, Monitoring, Investigation, Advisory, and Reporting.
+            </li>
+
+            <li>
+                ⚡ <strong>Powers:</strong> Investigate violations, enter any institution to investigate, recommend remedial measures, conduct research, provide education, and intervene in court cases involving human rights.
+            </li>
+
+        </ul>
+
+
+        <h3>
+            ⚖️ Judiciary: Roles and Independence Conditions
+        </h3>
+
+        <h4>
+            A. Roles of the Judiciary
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Adjudication:</strong> Resolve disputes between parties.
+            </li>
+
+            <li>
+                <strong>Interpretation:</strong> Interpret and apply laws.
+            </li>
+
+            <li>
+                <strong>Review:</strong> Review administrative actions.
+            </li>
+
+            <li>
+                <strong>Protection of Rights:</strong> Safeguard individual and group rights.
+            </li>
+
+            <li>
+                <strong>Law Development:</strong> Develop law through precedent.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            B. Constitutional Framework in Ethiopia
+        </h4>
+
+        <ul>
+
+            <li>
+                📌 <strong>Article 78:</strong> Establishment of federal and state courts.
+            </li>
+
+            <li>
+                📌 <strong>Article 79:</strong> Judicial independence (judiciary independent of interference, judges subject only to law).
+            </li>
+
+            <li>
+                📌 <strong>Article 81:</strong> Appointment of federal judges by Council of Ministers on recommendation of Judicial Administration Council.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- 9. BASIC LEGAL CONCEPTS & CRIMINAL LAW -->
+
+    <div class="card">
+
+        <h2>
+            💼 9. Basic Legal Concepts
+        </h2>
+
+
+        <h3>
+            💰 Tax Evasion vs. Tax Avoidance
+        </h3>
+
+
+        <h4>
+            A. Tax Evasion
+        </h4>
+
+        <p>
+            <strong>Definition:</strong> The illegal non-payment or underpayment of taxes through deliberate concealment, misrepresentation, or fraud.
+        </p>
+
+        <ul>
+
+            <li>
+                🚫 <strong>Illegality &amp; Intent:</strong> Violates tax laws; deliberate attempt to evade tax.
+            </li>
+
+            <li>
+                🕵️ <strong>Deception:</strong> Hiding income, inflating deductions, keeping two sets of books, offshore accounts.
+            </li>
+
+            <li>
+                ⚖️ <strong>Nature:</strong> Criminal offense subject to fines, penalties, and imprisonment.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            B. Tax Avoidance
+        </h4>
+
+        <p>
+            <strong>Definition:</strong> The legal arrangement of financial affairs to minimize tax liability within the framework of the law.
+        </p>
+
+        <ul>
+
+            <li>
+                ✅ <strong>Legality &amp; Intent:</strong> Within legal boundaries; aims to minimize tax liability legally.
+            </li>
+
+            <li>
+                📑 <strong>Transparency:</strong> Uses legal provisions, tax-advantaged accounts, deductions, and treaties.
+            </li>
+
+            <li>
+                💼 <strong>Nature:</strong> Civil matter; may be challenged but not criminal.
+            </li>
+
+        </ul>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Aspect</th>
+
+                        <th>Tax Evasion</th>
+
+                        <th>Tax Avoidance</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Legality</strong></td>
+
+                        <td>Illegal</td>
+
+                        <td>Legal</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Nature</strong></td>
+
+                        <td>Criminal offense</td>
+
+                        <td>Tax planning</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Intent</strong></td>
+
+                        <td>Fraudulent concealment</td>
+
+                        <td>Legitimate minimization</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Consequences</strong></td>
+
+                        <td>Fines, imprisonment</td>
+
+                        <td>May be challenged, adjusted</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Ethics</strong></td>
+
+                        <td>Unethical</td>
+
+                        <td>Ethically debatable</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Government Response</strong></td>
+
+                        <td>Prosecution</td>
+
+                        <td>Close loopholes</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🗡️ Homicide Definitions
+        </h3>
+
+        <p>
+            Homicide is the killing of one human being by another. Not all homicide is criminal; some is justified or excused.
+        </p>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Category</th>
+
+                        <th>Description</th>
+
+                        <th>Examples</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Criminal Homicide</strong></td>
+
+                        <td>Unlawful killing with culpable mental state</td>
+
+                        <td>Murder, manslaughter</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Justified Homicide</strong></td>
+
+                        <td>Lawful killing in specific circumstances</td>
+
+                        <td>Self-defense, execution of legal sentence</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Excusable Homicide</strong></td>
+
+                        <td>Killing without fault</td>
+
+                        <td>Accident, insanity</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Non-Criminal Homicide</strong></td>
+
+                        <td>Not subject to criminal liability</td>
+
+                        <td>War, lawful police action</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+            ⚖️ Degrees of Criminal Homicide
+        </h4>
+
+
+        <p>
+            <strong>A. Murder:</strong> Unlawful killing with malice aforethought (intent to kill or cause grievous bodily harm).
+        </p>
+
+        <ul>
+
+            <li>
+                🥇 <strong>First-Degree Murder:</strong> Premeditated, deliberate intent (e.g., Planned killing).
+            </li>
+
+            <li>
+                🥈 <strong>Second-Degree Murder:</strong> Intent to kill but without premeditation (e.g., Killing in sudden quarrel).
+            </li>
+
+            <li>
+                🚨 <strong>Felony Murder:</strong> Death caused during commission of felony (e.g., Death during robbery).
+            </li>
+
+        </ul>
+
+
+        <p>
+            <strong>B. Manslaughter:</strong> Unlawful killing without malice aforethought.
+        </p>
+
+        <ul>
+
+            <li>
+                🔥 <strong>Voluntary Manslaughter:</strong> Intentional killing in heat of passion with provocation (e.g., Killing spouse upon discovering adultery).
+            </li>
+
+            <li>
+                🚗 <strong>Involuntary Manslaughter:</strong> Unintentional killing through recklessness or negligence (e.g., Death from drunk driving).
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- 10. COURT SESSIONS & TRIAL PROCEDURES -->
+
+    <div class="card">
+
+        <h2>
+            🏛️ 10. Public vs. Closed Court Sessions
+        </h2>
+
+
+        <h3>
+            📢 A. Public Trial Principle
+        </h3>
+
+        <p>
+            The right to a public trial means court proceedings are open to the public and media.
+        </p>
+
+        <ul>
+
+            <li>
+                🔍 <strong>Transparency:</strong> Public scrutiny ensures fairness.
+            </li>
+
+            <li>
+                👤 <strong>Accountability:</strong> Judges and officials visible to public.
+            </li>
+
+            <li>
+                🤝 <strong>Public Confidence:</strong> Builds trust in the judicial system.
+            </li>
+
+            <li>
+                🚫 <strong>Deterrence &amp; Education:</strong> Public learns about legal process and consequences.
+            </li>
+
+        </ul>
+
+
+        <div class="case-box">
+
+            📌 <strong>Article 20(1) FDRE Constitution:</strong> "Accused persons have the right to a public trial by an ordinary court of law within a reasonable time after having been charged."
+
+        </div>
+
+
+        <h3>
+            🔒 B. Closed Court Sessions
+        </h3>
+
+        <p>
+            Proceedings held without public access, limited to parties, lawyers, and essential court personnel.
+        </p>
+
+
+        <p>
+            <strong>Grounds for Closed Sessions (Article 20(1) Exceptions):</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                ⚖️ <strong>Public Morality:</strong> Cases involving sensitive moral issues.
+            </li>
+
+            <li>
+                🛡️ <strong>National Security:</strong> Matters affecting state security.
+            </li>
+
+            <li>
+                🕊️ <strong>Peace and Order:</strong> Situations where public attendance might disrupt proceedings.
+            </li>
+
+            <li>
+                🔐 <strong>Privacy of Parties:</strong> Protecting legitimate privacy interests.
+            </li>
+
+            <li>
+                👶 <strong>Additional Grounds:</strong> Juvenile proceedings, sexual offenses, trade secrets/medical records, and witness protection.
+            </li>
+
+        </ul>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Aspect</th>
+
+                        <th>Public Session</th>
+
+                        <th>Closed Session</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Access</strong></td>
+
+                        <td>Open to public and media</td>
+
+                        <td>Restricted to parties and officials</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Transparency</strong></td>
+
+                        <td>High</td>
+
+                        <td>Limited</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Default Rule</strong></td>
+
+                        <td>General rule</td>
+
+                        <td>Exception</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Grounds</strong></td>
+
+                        <td>Not required</td>
+
+                        <td>Must be justified</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Constitutional Right</strong></td>
+
+                        <td>Protected</td>
+
+                        <td>Limited exceptions</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Judicial Discretion</strong></td>
+
+                        <td>Open</td>
+
+                        <td>Balanced with rights</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="highlight-box">
+
+            🛡️ <strong>Procedural Safeguards:</strong> Closure must be necessary and proportionate. Only parts of proceedings may be closed; judgments are still pronounced publicly.
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<footer class="footer">
+
+    ⚖️ Civics, Ethics &amp; Citizenship
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
 
