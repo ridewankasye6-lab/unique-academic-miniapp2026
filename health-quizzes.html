@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Health CoC — Chapter Quizzes</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f1f5f9 0%,
+                    #eaf4ff 100%
+                );
+
+            color: #172033;
+
+            min-height: 100vh;
+
+        }
+
+
+        .page {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        .topHeader {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background: #172536;
+
+            color: white;
+
+            height: 72px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding:
+                0 18px;
+
+            box-shadow:
+                0 3px 12px
+                rgba(0, 0, 0, 0.18);
+
+        }
+
+
+        .headerButton {
+
+            border: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 28px;
+
+            cursor: pointer;
+
+            width: 50px;
+
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 12px;
+
+        }
+
+
+        .headerButton:active {
+
+            background:
+                rgba(255,255,255,0.12);
+
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+        }
+
+
+        .brandIcon {
+
+            font-size: 28px;
+
+        }
+
+
+        .brandText {
+
+            font-size: 21px;
+
+            font-weight: 800;
+
+        }
+
+
+        /* =========================================
+           MAIN
+        ========================================= */
+
+        main {
+
+            width: 100%;
+
+            max-width: 760px;
+
+            margin: 0 auto;
+
+            padding:
+                35px 12px 40px;
+
+            flex: 1;
+
+        }
+
+
+        .pageTitle {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin:
+                0 4px 32px;
+
+        }
+
+
+        .pageTitleIcon {
+
+            font-size: 34px;
+
+        }
+
+
+        .pageTitle h1 {
+
+            font-size: 31px;
+
+            line-height: 1.2;
+
+            color: #2563eb;
+
+        }
+
+
+        .pageSubtitle {
+
+            margin:
+                -20px 8px 25px;
+
+            color: #64748b;
+
+            font-size: 15px;
+
+        }
+
+
+        /* =========================================
+           QUIZ CARD
+        ========================================= */
+
+        .quizCard {
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 22px;
+
+            width: 100%;
+
+            min-height: 205px;
+
+            margin-bottom: 26px;
+
+            padding:
+                28px 25px;
+
+            background: white;
+
+            border-radius: 0 32px 32px 0;
+
+            border-left:
+                10px solid #2563eb;
+
+            box-shadow:
+                0 8px 25px
+                rgba(15, 23, 42, 0.08);
+
+            text-decoration: none;
+
+            color: inherit;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+
+        }
+
+
+        .quizCard:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 12px 30px
+                rgba(15, 23, 42, 0.13);
+
+        }
+
+
+        .quizCard:active {
+
+            transform:
+                scale(0.985);
+
+        }
+
+
+        /* =========================================
+           PROGRESS CIRCLE
+        ========================================= */
+
+        .progressCircle {
+
+            flex:
+                0 0 140px;
+
+            width: 140px;
+
+            height: 140px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                conic-gradient(
+                    #22c55e 0deg,
+                    #22c55e 0deg,
+                    #e5e7eb 0deg,
+                    #e5e7eb 360deg
+                );
+
+            position: relative;
+
+        }
+
+
+        .progressCircle::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 112px;
+
+            height: 112px;
+
+            background: white;
+
+            border-radius: 50%;
+
+        }
+
+
+        .progressText {
+
+            position: relative;
+
+            z-index: 2;
+
+            font-size: 30px;
+
+            font-weight: 800;
+
+            color: #64748b;
+
+        }
+
+
+        /* =========================================
+           CARD CONTENT
+        ========================================= */
+
+        .quizInfo {
+
+            flex: 1;
+
+            min-width: 0;
+
+        }
+
+
+        .chapterBadge {
+
+            display: inline-block;
+
+            background: #e8f0ff;
+
+            color: #2563eb;
+
+            padding:
+                14px 19px;
+
+            border-radius: 18px;
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .quizTitle {
+
+            font-size: 25px;
+
+            line-height: 1.65;
+
+            font-weight: 800;
+
+            color: #202020;
+
+        }
+
+
+        /* =========================================
+           ARROW
+        ========================================= */
+
+        .arrowButton {
+
+            flex:
+                0 0 80px;
+
+            width: 80px;
+
+            height: 80px;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 47px;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+
+            text-align: center;
+
+            padding:
+                25px 15px;
+
+            color: #64748b;
+
+            font-size: 14px;
+
+        }
+
+
+        footer strong {
+
+            color: #2563eb;
+
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .topHeader {
+
+                height: 64px;
+
+                padding:
+                    0 10px;
+
+            }
+
+
+            .brandText {
+
+                font-size: 19px;
+
+            }
+
+
+            main {
+
+                padding:
+                    28px 0 35px;
+
+            }
+
+
+            .pageTitle {
+
+                padding:
+                    0 8px;
+
+                margin-bottom: 28px;
+
+            }
+
+
+            .pageTitle h1 {
+
+                font-size: 29px;
+
+            }
+
+
+            .pageSubtitle {
+
+                padding:
+                    0 8px;
+
+            }
+
+
+            .quizCard {
+
+                min-height: 190px;
+
+                gap: 17px;
+
+                padding:
+                    25px 15px 25px 18px;
+
+                border-left-width: 8px;
+
+                border-radius:
+                    0 28px 28px 0;
+
+            }
+
+
+            .progressCircle {
+
+                flex:
+                    0 0 108px;
+
+                width: 108px;
+
+                height: 108px;
+
+            }
+
+
+            .progressCircle::before {
+
+                width: 84px;
+
+                height: 84px;
+
+            }
+
+
+            .progressText {
+
+                font-size: 25px;
+
+            }
+
+
+            .chapterBadge {
+
+                font-size: 17px;
+
+                padding:
+                    11px 15px;
+
+                margin-bottom: 14px;
+
+            }
+
+
+            .quizTitle {
+
+                font-size: 19px;
+
+                line-height: 1.55;
+
+            }
+
+
+            .arrowButton {
+
+                flex:
+                    0 0 61px;
+
+                width: 61px;
+
+                height: 61px;
+
+                font-size: 36px;
+
+            }
+
+        }
+
+
+        @media (max-width: 400px) {
+
+            .quizCard {
+
+                gap: 12px;
+
+                padding-left: 12px;
+
+            }
+
+
+            .progressCircle {
+
+                flex:
+                    0 0 92px;
+
+                width: 92px;
+
+                height: 92px;
+
+            }
+
+
+            .progressCircle::before {
+
+                width: 72px;
+
+                height: 72px;
+
+            }
+
+
+            .progressText {
+
+                font-size: 21px;
+
+            }
+
+
+            .quizTitle {
+
+                font-size: 17px;
+
+            }
+
+
+            .arrowButton {
+
+                flex:
+                    0 0 54px;
+
+                width: 54px;
+
+                height: 54px;
+
+                font-size: 31px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="topHeader">
+
+        <button
+            class="headerButton"
+            onclick="history.back()"
+            aria-label="Go back"
+        >
+            ←
+        </button>
+
+
+        <div class="brand">
+
+            <span class="brandIcon">
+                🏥
+            </span>
+
+            <span class="brandText">
+                Unique Academic
+            </span>
+
+        </div>
+
+
+        <button
+            class="headerButton"
+            onclick="location.href='index.html'"
+            aria-label="Home"
+        >
+            ⌂
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================
+         CONTENT
+    ====================================== -->
+
+    <main>
+
+
+        <div class="pageTitle">
+
+            <span class="pageTitleIcon">
+                📝
+            </span>
+
+            <h1>
+                Chapter Quizzes
+            </h1>
+
+        </div>
+
+
+        <p class="pageSubtitle">
+            🏥 Health CoC — Test your knowledge chapter by chapter.
+        </p>
+
+
+
+        <!-- =====================================
+             CHAPTER 1
+        ====================================== -->
+
+        <a
+            class="quizCard"
+            href="quiz.html?subject=health-coc&chapter=1"
+        >
+
+            <div
+                class="progressCircle"
+                data-progress="0"
+            >
+
+                <span class="progressText">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="quizInfo">
+
+                <div class="chapterBadge">
+                    Chapter 1
+                </div>
+
+
+                <div class="quizTitle">
+                    Biology &amp; Biochemistry — Cell Structure &amp; Function
+                </div>
+
+            </div>
+
+
+            <div class="arrowButton">
+                →
+            </div>
+
+        </a>
+
+
+
+        <!-- =====================================
+             CHAPTER 2
+        ====================================== -->
+
+        <a
+            class="quizCard"
+            href="quiz.html?subject=health-coc&chapter=2"
+        >
+
+            <div
+                class="progressCircle"
+                data-progress="0"
+            >
+
+                <span class="progressText">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="quizInfo">
+
+                <div class="chapterBadge">
+                    Chapter 2
+                </div>
+
+
+                <div class="quizTitle">
+                    Biology: Human Anatomy &amp; Physiology
+                </div>
+
+            </div>
+
+
+            <div class="arrowButton">
+                →
+            </div>
+
+        </a>
+
+
+
+        <!-- =====================================
+             CHAPTER 3
+        ====================================== -->
+
+        <a
+            class="quizCard"
+            href="quiz.html?subject=health-coc&chapter=3"
+        >
+
+            <div
+                class="progressCircle"
+                data-progress="0"
+            >
+
+                <span class="progressText">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="quizInfo">
+
+                <div class="chapterBadge">
+                    Chapter 3
+                </div>
+
+
+                <div class="quizTitle">
+                    Health CoC — Chapter 3
+                </div>
+
+            </div>
+
+
+            <div class="arrowButton">
+                →
+            </div>
+
+        </a>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <strong>
+            🎓 Unique Academic
+        </strong>
+
+        <br>
+
+        Learn • Practice • Succeed
+
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
