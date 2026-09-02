@@ -1,0 +1,4161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Health Chapter 3 | Complete Study Notes</title>
+
+
+    <style>
+
+        /* =================================================
+           PREMIUM ACADEMIC MOBILE-FIRST STUDY NOTES DESIGN
+        ================================================= */
+
+        :root {
+
+            --bg-color: #f0fdf4;
+
+            --card-bg: #ffffff;
+
+            --text-main: #17324d;
+
+            --text-muted: #526575;
+
+            --primary-green: #047857;
+
+            --dark-green: #065f46;
+
+            --accent-blue: #0369a1;
+
+            --accent-teal: #0f766e;
+
+            --accent-orange: #c2410c;
+
+            --border-color: #d1fae5;
+
+            --shadow:
+                0 4px 10px rgba(0, 0, 0, 0.05),
+                0 2px 5px rgba(0, 0, 0, 0.03);
+
+        }
+
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        body {
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f0fdf4,
+                    #f8fafc
+                );
+
+            color: var(--text-main);
+
+            line-height: 1.6;
+
+            padding: 12px;
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
+        }
+
+
+        /* =================================================
+           NAVIGATION
+        ================================================= */
+
+        .page-navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 16px;
+
+        }
+
+
+        .page-navigation a {
+
+            text-decoration: none;
+
+            padding: 10px 15px;
+
+            border-radius: 13px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            box-shadow: var(--shadow);
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .page-navigation a:active {
+
+            transform: scale(0.96);
+
+        }
+
+
+        .back-btn {
+
+            background: var(--primary-green);
+
+            color: white;
+
+        }
+
+
+        .home-btn {
+
+            background: white;
+
+            color: var(--primary-green);
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        /* =================================================
+           HEADER
+        ================================================= */
+
+        header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary-green),
+                    var(--dark-green)
+                );
+
+            color: white;
+
+            padding: 23px 16px;
+
+            border-radius: 20px;
+
+            margin-bottom: 16px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .chapter-label {
+
+            display: inline-block;
+
+            padding: 4px 11px;
+
+            margin-bottom: 8px;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.15);
+
+            font-size: 0.75rem;
+
+            font-weight: 600;
+
+        }
+
+
+        header h1 {
+
+            font-size: 1.45rem;
+
+            font-weight: 700;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        header p {
+
+            color: white;
+
+            opacity: 0.9;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        /* =================================================
+           CARDS
+        ================================================= */
+
+        .card {
+
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 18px;
+
+            padding: 18px 16px;
+
+            margin-bottom: 16px;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        /* =================================================
+           HEADINGS
+        ================================================= */
+
+        h2 {
+
+            color: var(--primary-green);
+
+            font-size: 1.15rem;
+
+            margin-bottom: 12px;
+
+            padding-bottom: 7px;
+
+            border-bottom: 2px solid #d1fae5;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+        }
+
+
+        h3 {
+
+            color: var(--text-main);
+
+            font-size: 1rem;
+
+            margin: 14px 0 8px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+        }
+
+
+        h4 {
+
+            color: var(--accent-teal);
+
+            font-size: 0.95rem;
+
+            margin: 10px 0 6px;
+
+        }
+
+
+        /* =================================================
+           TEXT & LISTS
+        ================================================= */
+
+        p {
+
+            color: var(--text-muted);
+
+            font-size: 0.95rem;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        ul,
+        ol {
+
+            padding-left: 21px;
+
+            color: var(--text-muted);
+
+            font-size: 0.94rem;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        li {
+
+            margin-bottom: 6px;
+
+        }
+
+
+        /* =================================================
+           SPECIAL STUDY BOXES & HIGHLIGHTS
+        ================================================= */
+
+        .study-box {
+
+            background: #ecfdf5;
+
+            border-left: 4px solid var(--accent-teal);
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .important-box {
+
+            background: #eff6ff;
+
+            border-left: 4px solid var(--accent-blue);
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .warning-box {
+
+            background: #fff7ed;
+
+            border-left: 4px solid #f97316;
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .example-box {
+
+            background: #f8fafc;
+
+            border-left: 4px solid #64748b;
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        /* =================================================
+           TABLES (MOBILE RESPONSIVE)
+        ================================================= */
+
+        .table-responsive {
+
+            width: 100%;
+
+            overflow-x: auto;
+
+            -webkit-overflow-scrolling: touch;
+
+            margin: 14px 0;
+
+            border-radius: 10px;
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            text-align: left;
+
+            font-size: 0.88rem;
+
+            min-width: 480px;
+
+        }
+
+
+        th {
+
+            background-color: #ecfdf5;
+
+            color: var(--dark-green);
+
+            padding: 10px;
+
+            font-weight: 700;
+
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+
+        td {
+
+            padding: 9px 10px;
+
+            border-bottom: 1px solid #e2e8f0;
+
+            color: var(--text-main);
+
+        }
+
+
+        tr:nth-child(even) {
+
+            background-color: #f8fafc;
+
+        }
+
+
+        tr:last-child td {
+
+            border-bottom: none;
+
+        }
+
+
+        /* =================================================
+           DIAGRAMS & MEDIA
+        ================================================= */
+
+        .diagram-container {
+
+            text-align: center;
+
+            padding: 12px;
+
+            background: #f8fafc;
+
+            border: 1px dashed var(--border-color);
+
+            border-radius: 12px;
+
+            margin: 12px 0;
+
+        }
+
+
+        .diagram-container img {
+
+            max-width: 100%;
+
+            height: auto;
+
+            border-radius: 8px;
+
+        }
+
+
+        .diagram-caption {
+
+            font-size: 0.8rem;
+
+            color: var(--text-muted);
+
+            margin-top: 6px;
+
+            font-style: italic;
+
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        .footer {
+
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: var(--text-muted);
+
+            font-size: 0.82rem;
+
+        }
+
+
+        /* =================================================
+           MOBILE OPTIMIZATIONS
+        ================================================= */
+
+        @media (max-width: 480px) {
+
+            body {
+
+                padding: 10px;
+
+            }
+
+
+            .page-navigation a {
+
+                padding: 9px 12px;
+
+                font-size: 13px;
+
+            }
+
+
+            header {
+
+                padding: 20px 14px;
+
+            }
+
+
+            header h1 {
+
+                font-size: 1.3rem;
+
+            }
+
+
+            .card {
+
+                padding: 16px 14px;
+
+            }
+
+
+            h2 {
+
+                font-size: 1.08rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+
+<div class="page-navigation">
+
+
+    <a
+        href="health-notes.html"
+        class="back-btn"
+    >
+
+        ← Back
+
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+
+        🏠 Home
+
+    </a>
+
+
+</div>
+
+
+
+<!-- =================================================
+     HEADER
+================================================= -->
+
+<header>
+
+
+    <div class="chapter-label">
+
+        🏥 HEALTH CoC • CHAPTER 3
+
+    </div>
+
+
+    <h1>
+
+        🩺 Human Body Systems Notes
+
+    </h1>
+
+
+    <p>
+
+        Complete & Detailed Exam Study Notes
+
+    </p>
+
+
+</header>
+
+
+
+<!-- =================================================
+     CHAPTER CONTENT
+================================================= -->
+
+<section>
+
+
+    <!-- 1. NERVOUS SYSTEM -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🧠 1. Nervous System
+
+        </h2>
+
+
+        <h3>
+
+            📌 Divisions of the Nervous System
+
+        </h3>
+
+
+        <h4>
+
+            A. Structural Divisions
+
+        </h4>
+
+
+        <p>
+
+            <strong>Central Nervous System (CNS):</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Brain:</strong> Located in the cranial cavity
+            </li>
+
+            <li>
+                <strong>Spinal cord:</strong> Located in the vertebral canal
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Peripheral Nervous System (PNS):</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Cranial nerves:</strong> 12 pairs
+            </li>
+
+            <li>
+                <strong>Spinal nerves:</strong> 31 pairs
+            </li>
+
+            <li>
+                <strong>Ganglia</strong>
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            B. Functional Divisions
+
+        </h4>
+
+
+        <p>
+
+            <strong>Sensory (Afferent) Division:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Somatic sensory:</strong> From skin, muscles, joints
+            </li>
+
+            <li>
+                <strong>Visceral sensory:</strong> From internal organs
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Motor (Efferent) Division:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Subdivision</th>
+
+                        <th>Function</th>
+
+                        <th>Neurotransmitter</th>
+
+                        <th>Effect</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Somatic motor</strong></td>
+
+                        <td>Voluntary control of skeletal muscles</td>
+
+                        <td>Acetylcholine (ACh)</td>
+
+                        <td>Excitatory</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Autonomic motor</strong></td>
+
+                        <td>Involuntary control of smooth muscle, cardiac muscle, glands</td>
+
+                        <td>Various</td>
+
+                        <td>See autonomic breakdown below</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            ⚖️ Autonomic Nervous System (ANS)
+
+        </h3>
+
+
+        <p>
+
+            <strong>Sympathetic vs. Parasympathetic Divisions:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Feature</th>
+
+                        <th>Sympathetic</th>
+
+                        <th>Parasympathetic</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Function</strong></td>
+
+                        <td>"Fight or flight"</td>
+
+                        <td>"Rest and digest"</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Origin</strong></td>
+
+                        <td>Thoracolumbar (T1-L2)</td>
+
+                        <td>Craniosacral (brainstem, S2-S4)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Ganglia location</strong></td>
+
+                        <td>Near spinal cord (sympathetic chain)</td>
+
+                        <td>Near or within target organ</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Preganglionic fiber length</strong></td>
+
+                        <td>Short</td>
+
+                        <td>Long</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Postganglionic fiber length</strong></td>
+
+                        <td>Long</td>
+
+                        <td>Short</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Neurotransmitter (preganglionic)</strong></td>
+
+                        <td>ACh (nicotinic)</td>
+
+                        <td>ACh (nicotinic)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Neurotransmitter (postganglionic)</strong></td>
+
+                        <td>Norepinephrine (most targets)</td>
+
+                        <td>ACh (muscarinic)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Exception</strong></td>
+
+                        <td>Sweat glands (ACh)</td>
+
+                        <td>-</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🧩 Brain: Structure and Function
+
+        </h3>
+
+
+        <p>
+
+            <strong>Major Divisions of the Brain:</strong>
+
+        </p>
+
+
+        <h4>
+
+            A. Cerebrum (Telencephalon)
+
+        </h4>
+
+        <ul>
+
+            <li>
+                Largest part (<strong>83% of brain volume</strong>)
+            </li>
+
+            <li>
+                Divided into two hemispheres connected by the <strong>corpus callosum</strong>
+            </li>
+
+            <li>
+                <strong>Surface:</strong> Cerebral cortex (gray matter) with <strong>gyri</strong> (ridges) and <strong>sulci</strong> (grooves)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Lobes of Cerebrum:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Lobe</th>
+
+                        <th>Location</th>
+
+                        <th>Major Functions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Frontal</strong></td>
+
+                        <td>Anterior</td>
+
+                        <td>Voluntary movement (primary motor cortex), executive functions, personality, speech (Broca's area)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Parietal</strong></td>
+
+                        <td>Superior/posterior</td>
+
+                        <td>Somatosensory perception (touch, pain, temperature), spatial orientation</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Temporal</strong></td>
+
+                        <td>Lateral/inferior</td>
+
+                        <td>Hearing (auditory cortex), memory, language comprehension (Wernicke's area)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Occipital</strong></td>
+
+                        <td>Posterior</td>
+
+                        <td>Vision (visual cortex)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Insula</strong></td>
+
+                        <td>Deep within lateral sulcus</td>
+
+                        <td>Taste, visceral sensation, emotion</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="important-box">
+
+            <strong>🎯 Functional Areas:</strong>
+
+            <ul>
+
+                <li>
+                    <strong>Primary motor cortex:</strong> Precentral gyrus - controls voluntary movement
+                </li>
+
+                <li>
+                    <strong>Primary somatosensory cortex:</strong> Postcentral gyrus - receives sensory information
+                </li>
+
+                <li>
+                    <strong>Broca's area:</strong> Left frontal lobe - speech production
+                </li>
+
+                <li>
+                    <strong>Wernicke's area:</strong> Left temporal/parietal - language comprehension
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h4>
+
+            B. Diencephalon
+
+        </h4>
+
+
+        <p>
+
+            <strong>Thalamus:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Relay station for sensory information (except smell)
+            </li>
+
+            <li>
+                Filters and directs information to appropriate cortical areas
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Hypothalamus:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Homeostasis regulator (temperature, hunger, thirst)
+            </li>
+
+            <li>
+                Controls pituitary gland (endocrine)
+            </li>
+
+            <li>
+                Circadian rhythms (suprachiasmatic nucleus)
+            </li>
+
+            <li>
+                Autonomic control center
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Epithalamus:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Pineal gland (melatonin - sleep-wake cycles)
+            </li>
+
+            <li>
+                Habenular nuclei (emotional responses to odors)
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            C. Brainstem
+
+        </h4>
+
+
+        <p>
+
+            <strong>Midbrain (Mesencephalon):</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Superior colliculi (visual reflexes)
+            </li>
+
+            <li>
+                Inferior colliculi (auditory reflexes)
+            </li>
+
+            <li>
+                Substantia nigra (motor control - dopamine)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Pons:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Bridge connecting cerebellum to brainstem
+            </li>
+
+            <li>
+                Respiratory centers (with medulla)
+            </li>
+
+            <li>
+                Sleep and arousal
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Medulla Oblongata:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Vital autonomic centers:</strong>
+                <ul>
+
+                    <li>
+                        Cardiac center (heart rate)
+                    </li>
+
+                    <li>
+                        Vasomotor center (blood vessel diameter)
+                    </li>
+
+                    <li>
+                        Respiratory center (rhythm generation)
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <strong>Reflex centers:</strong> Coughing, sneezing, swallowing, vomiting
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            D. Cerebellum
+
+        </h4>
+
+        <ul>
+
+            <li>
+                "Little brain" - <strong>10% of brain mass</strong> but <strong>50% of neurons</strong>
+            </li>
+
+            <li>
+                <strong>Functions:</strong>
+                <ul>
+
+                    <li>
+                        Coordination of voluntary movement
+                    </li>
+
+                    <li>
+                        Balance and posture
+                    </li>
+
+                    <li>
+                        Motor learning
+                    </li>
+
+                    <li>
+                        Cognitive functions (attention, language)
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🦴 Spinal Cord
+
+        </h3>
+
+        <ul>
+
+            <li>
+                <strong>Length:</strong> ~45 cm
+            </li>
+
+            <li>
+                <strong>Extensions:</strong> Cervical and lumbar enlargements (for limb innervation)
+            </li>
+
+            <li>
+                <strong>Conus medullaris:</strong> Tapered end at L1-L2
+            </li>
+
+            <li>
+                <strong>Cauda equina:</strong> Nerve roots below conus
+            </li>
+
+        </ul>
+
+
+        <div class="study-box">
+
+            <strong>🔬 Cross-sectional structure:</strong>
+
+            <br><br>
+
+            <strong>Gray matter:</strong> Central "H" or butterfly shape (cell bodies)
+
+            <ul>
+
+                <li>
+                    <strong>Dorsal horn:</strong> Sensory processing
+                </li>
+
+                <li>
+                    <strong>Ventral horn:</strong> Motor neurons
+                </li>
+
+                <li>
+                    <strong>Lateral horn:</strong> Autonomic neurons (T1-L2)
+                </li>
+
+            </ul>
+
+            <strong>White matter:</strong> Surrounding tracts (myelinated axons)
+
+            <ul>
+
+                <li>
+                    <strong>Ascending tracts:</strong> Sensory to brain
+                </li>
+
+                <li>
+                    <strong>Descending tracts:</strong> Motor from brain
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h3>
+
+            ⚡ Reflexes
+
+        </h3>
+
+
+        <p>
+
+            <strong>Reflex arc components:</strong>
+
+        </p>
+
+        <ol>
+
+            <li>
+                Receptor
+            </li>
+
+            <li>
+                Sensory neuron
+            </li>
+
+            <li>
+                Integration center (CNS)
+            </li>
+
+            <li>
+                Motor neuron
+            </li>
+
+            <li>
+                Effector
+            </li>
+
+        </ol>
+
+
+        <p>
+
+            <strong>Types of Reflexes:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Monosynaptic:</strong> One synapse (e.g., patellar reflex)
+            </li>
+
+            <li>
+                <strong>Polysynaptic:</strong> Multiple interneurons (e.g., withdrawal reflex)
+            </li>
+
+        </ul>
+
+
+        <div class="warning-box">
+
+            <strong>⚠️ Clinical reflexes:</strong>
+
+            <ul>
+
+                <li>
+                    <strong>Patellar (knee-jerk):</strong> Tests L2-L4
+                </li>
+
+                <li>
+                    <strong>Achilles (ankle-jerk):</strong> Tests S1-S2
+                </li>
+
+                <li>
+                    <strong>Babinski:</strong> Plantar stimulation → toes fan (abnormal in adults = upper motor neuron lesion)
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- 2. RESPIRATORY SYSTEM -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🫁 2. Respiratory System
+
+        </h2>
+
+
+        <h3>
+
+            📌 Divisions of the Respiratory System
+
+        </h3>
+
+
+        <h4>
+
+            A. Upper Respiratory Tract
+
+        </h4>
+
+        <ul>
+
+            <li>
+                Nose and nasal cavity
+            </li>
+
+            <li>
+                Pharynx (nasopharynx, oropharynx, laryngopharynx)
+            </li>
+
+            <li>
+                Larynx
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            B. Lower Respiratory Tract
+
+        </h4>
+
+        <ul>
+
+            <li>
+                Trachea
+            </li>
+
+            <li>
+                Bronchi (primary, secondary, tertiary)
+            </li>
+
+            <li>
+                Bronchioles (terminal, respiratory)
+            </li>
+
+            <li>
+                Alveoli (alveolar ducts, alveolar sacs)
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            💨 Mechanism of Breathing (Ventilation)
+
+        </h3>
+
+
+        <h4>
+
+            Inspiration (Active Process)
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Muscles involved:</strong>
+                <ul>
+
+                    <li>
+                        <strong>Diaphragm:</strong> Contracts and flattens (main muscle)
+                    </li>
+
+                    <li>
+                        <strong>External intercostals:</strong> Contract, lift rib cage up and out
+                    </li>
+
+                    <li>
+                        <strong>Accessory muscles (during forced inspiration):</strong> SCM, scalenes, pectorals
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <strong>Pressure changes:</strong>
+                <ul>
+
+                    <li>
+                        <strong>Intrapleural pressure:</strong> -756 mmHg → -754 mmHg
+                    </li>
+
+                    <li>
+                        <strong>Intrapulmonary pressure:</strong> 760 mmHg → 758 mmHg
+                    </li>
+
+                    <li>
+                        Air flows in (down pressure gradient)
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            Expiration
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Quiet expiration (Passive):</strong>
+                <ul>
+
+                    <li>
+                        Diaphragm relaxes (moves upward)
+                    </li>
+
+                    <li>
+                        External intercostals relax (ribs move down)
+                    </li>
+
+                    <li>
+                        Elastic recoil of lungs
+                    </li>
+
+                    <li>
+                        <strong>Intrapulmonary pressure:</strong> 760 mmHg → 762 mmHg → air flows out
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🩸 Gas Exchange and Transport
+
+        </h3>
+
+
+        <p>
+
+            <strong>Partial Pressures:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Gas</th>
+
+                        <th>Atmospheric Air</th>
+
+                        <th>Alveoli</th>
+
+                        <th>Arterial Blood</th>
+
+                        <th>Venous Blood</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>O₂</strong></td>
+
+                        <td>160 mmHg</td>
+
+                        <td>100 mmHg</td>
+
+                        <td>95 mmHg</td>
+
+                        <td>40 mmHg</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>CO₂</strong></td>
+
+                        <td>0.3 mmHg</td>
+
+                        <td>40 mmHg</td>
+
+                        <td>40 mmHg</td>
+
+                        <td>45 mmHg</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>N₂</strong></td>
+
+                        <td>600 mmHg</td>
+
+                        <td>573 mmHg</td>
+
+                        <td>573 mmHg</td>
+
+                        <td>573 mmHg</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>H₂O</strong></td>
+
+                        <td>0 mmHg</td>
+
+                        <td>47 mmHg</td>
+
+                        <td>47 mmHg</td>
+
+                        <td>47 mmHg</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+
+            <strong>Lung Volumes and Capacities:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Volume/Capacity</th>
+
+                        <th>Definition</th>
+
+                        <th>Average Value (mL)</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Tidal Volume (TV)</strong></td>
+
+                        <td>Volume per normal breath</td>
+
+                        <td>500</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Inspiratory Reserve Volume (IRV)</strong></td>
+
+                        <td>Max inspiration above TV</td>
+
+                        <td>3000</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Expiratory Reserve Volume (ERV)</strong></td>
+
+                        <td>Max expiration below TV</td>
+
+                        <td>1100</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Residual Volume (RV)</strong></td>
+
+                        <td>Air remaining after max expiration</td>
+
+                        <td>1200</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Inspiratory Capacity (IC)</strong></td>
+
+                        <td>TV + IRV = 3500</td>
+
+                        <td>3500</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vital Capacity (VC)</strong></td>
+
+                        <td>IRV + TV + ERV = 4600</td>
+
+                        <td>4600</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Functional Residual Capacity (FRC)</strong></td>
+
+                        <td>ERV + RV = 2300</td>
+
+                        <td>2300</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Total Lung Capacity (TLC)</strong></td>
+
+                        <td>VC + RV = 5800</td>
+
+                        <td>5800</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- 3. REPRODUCTIVE SYSTEM -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🧬 3. Reproductive System
+
+        </h2>
+
+
+        <h3>
+
+            🔬 Gametogenesis
+
+        </h3>
+
+
+        <h4>
+
+            A. Spermatogenesis (Male)
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Seminiferous tubules of testes
+            </li>
+
+            <li>
+                <strong>Start:</strong> Puberty
+            </li>
+
+            <li>
+                <strong>Duration:</strong> ~64-72 days
+            </li>
+
+            <li>
+                <strong>Daily production:</strong> ~200 million sperm
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Process:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Stage</th>
+
+                        <th>Cell Type</th>
+
+                        <th>Chromosome #</th>
+
+                        <th>Process</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Spermatocytogenesis</strong></td>
+
+                        <td>Spermatogonia (2n)</td>
+
+                        <td>46</td>
+
+                        <td>Mitosis</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td></td>
+
+                        <td>Primary spermatocytes (2n)</td>
+
+                        <td>46</td>
+
+                        <td>Enter meiosis I</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Meiosis I</strong></td>
+
+                        <td>Secondary spermatocytes (n)</td>
+
+                        <td>23</td>
+
+                        <td>Reduction division</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Meiosis II</strong></td>
+
+                        <td>Spermatids (n)</td>
+
+                        <td>23</td>
+
+                        <td>Equatorial division</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Spermiogenesis</strong></td>
+
+                        <td>Spermatozoa (n)</td>
+
+                        <td>23</td>
+
+                        <td>Maturation</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="study-box">
+
+            <strong>💉 Hormonal control of Spermatogenesis:</strong>
+
+            <ul>
+
+                <li>
+                    <strong>Testosterone (from Leydig cells):</strong> Promotes spermatogenesis
+                </li>
+
+                <li>
+                    <strong>FSH (from anterior pituitary):</strong> Acts on Sertoli cells
+                </li>
+
+                <li>
+                    <strong>LH (from anterior pituitary):</strong> Stimulates testosterone production
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h4>
+
+            B. Oogenesis (Female)
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Ovaries
+            </li>
+
+            <li>
+                <strong>Start:</strong> Fetal life
+            </li>
+
+            <li>
+                <strong>Duration:</strong> Decades (from fetal life to menopause)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Process:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Stage</th>
+
+                        <th>Cell Type</th>
+
+                        <th>Chromosome #</th>
+
+                        <th>Timing</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Oocytogenesis</strong></td>
+
+                        <td>Oogonia (2n)</td>
+
+                        <td>46</td>
+
+                        <td>Fetal life (mitosis)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td></td>
+
+                        <td>Primary oocytes (2n)</td>
+
+                        <td>46</td>
+
+                        <td>Arrested in prophase I until puberty</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Meiosis I completion</strong></td>
+
+                        <td>Secondary oocyte (n) + polar body</td>
+
+                        <td>23</td>
+
+                        <td>At ovulation (triggered by LH surge)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Meiosis II completion</strong></td>
+
+                        <td>Ovum (n) + polar body</td>
+
+                        <td>23</td>
+
+                        <td>Only if fertilization occurs</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="important-box">
+
+            <strong>⭐ Key differences from spermatogenesis:</strong>
+
+            <ul>
+
+                <li>
+                    Meiosis I begins in fetal life, arrests, completes at ovulation
+                </li>
+
+                <li>
+                    Meiosis II completes only after fertilization
+                </li>
+
+                <li>
+                    Unequal cytoplasmic division (one large ovum, small polar bodies)
+                </li>
+
+                <li>
+                    Finite number: ~1-2 million at birth, ~400 ovulated in lifetime
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h3>
+
+            🚹 Male Reproductive System Structures
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Structure</th>
+
+                        <th>Function</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Testes</strong></td>
+
+                        <td>Produce sperm and testosterone</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Epididymis</strong></td>
+
+                        <td>Sperm maturation and storage</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vas deferens</strong></td>
+
+                        <td>Conducts sperm from epididymis</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Seminal vesicles</strong></td>
+
+                        <td>Produce 60% of semen (fructose, prostaglandins)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Prostate gland</strong></td>
+
+                        <td>Produce 30% of semen (alkaline fluid, citrate)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Bulbourethral glands</strong></td>
+
+                        <td>Produce pre-ejaculate (lubrication, neutralizes urine)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Urethra</strong></td>
+
+                        <td>Common passage for urine and semen</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+
+            <strong>🧪 Semen Composition:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Sperm (1-5% of volume)
+            </li>
+
+            <li>
+                Fructose (energy for sperm)
+            </li>
+
+            <li>
+                Prostaglandins (stimulate uterine contractions)
+            </li>
+
+            <li>
+                Fibrinogen (coagulates after ejaculation)
+            </li>
+
+            <li>
+                Fibrinolysin (liquefies coagulum after 15-30 min)
+            </li>
+
+            <li>
+                Alkaline pH (7.2-7.6) - neutralizes vaginal acidity
+            </li>
+
+            <li>
+                <strong>Volume:</strong> 2-5 mL per ejaculation
+            </li>
+
+            <li>
+                <strong>Sperm count:</strong> 20-100 million/mL
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🚺 Female Reproductive System Structures
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Structure</th>
+
+                        <th>Function</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Ovaries</strong></td>
+
+                        <td>Produce ova, estrogen, progesterone</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Fallopian tubes</strong></td>
+
+                        <td>Capture ovum, site of fertilization, transport to uterus</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Uterus</strong></td>
+
+                        <td>Implantation, fetal development, menstruation</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Cervix</strong></td>
+
+                        <td>Produces mucus (changes with cycle)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vagina</strong></td>
+
+                        <td>Birth canal, receives penis, outlet for menstrual flow</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>External genitalia</strong></td>
+
+                        <td>Protection, sexual sensation</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+
+            📅 Ovarian Cycle
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Follicular Phase (Days 1-14):</strong>
+                <ul>
+
+                    <li>
+                        FSH stimulates follicle growth
+                    </li>
+
+                    <li>
+                        Follicle produces estrogen
+                    </li>
+
+                    <li>
+                        One dominant follicle matures
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <strong>Ovulation (Day 14):</strong>
+                <ul>
+
+                    <li>
+                        Surge of LH triggers ovulation
+                    </li>
+
+                    <li>
+                        Secondary oocyte released
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <strong>Luteal Phase (Days 14-28):</strong>
+                <ul>
+
+                    <li>
+                        Ruptured follicle becomes corpus luteum
+                    </li>
+
+                    <li>
+                        Corpus luteum produces progesterone and estrogen
+                    </li>
+
+                    <li>
+                        If no pregnancy: Corpus luteum degenerates (corpus albicans)
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            🔄 Uterine (Menstrual) Cycle
+
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Phase</th>
+
+                        <th>Days</th>
+
+                        <th>Events</th>
+
+                        <th>Hormonal Control</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Menstrual</strong></td>
+
+                        <td>1-5</td>
+
+                        <td>Shedding of functional layer</td>
+
+                        <td>↓ Estrogen, ↓ progesterone</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Proliferative</strong></td>
+
+                        <td>6-14</td>
+
+                        <td>Endometrial regeneration, proliferation</td>
+
+                        <td>Estrogen from developing follicles</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Secretory</strong></td>
+
+                        <td>15-28</td>
+
+                        <td>Glandular secretion, vascularization</td>
+
+                        <td>Progesterone from corpus luteum</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🧬 Sex Determination
+
+        </h3>
+
+        <ul>
+
+            <li>
+                Sperm carries either X or Y chromosome
+            </li>
+
+            <li>
+                Ovum always carries X chromosome
+            </li>
+
+            <li>
+                <strong>XX:</strong> Female
+            </li>
+
+            <li>
+                <strong>XY:</strong> Male
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+
+    <!-- 4. ENDOCRINE SYSTEM -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🩸 4. Endocrine System
+
+        </h2>
+
+
+        <p>
+
+            The endocrine system consists of glands that secrete hormones directly into the bloodstream to regulate distant target organs.
+
+        </p>
+
+
+        <h3>
+
+            ⚖️ Comparison: Endocrine vs. Nervous System
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Feature</th>
+
+                        <th>Endocrine</th>
+
+                        <th>Nervous</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Signal</strong></td>
+
+                        <td>Hormones (chemical)</td>
+
+                        <td>Neurotransmitters/electrical</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Transmission</strong></td>
+
+                        <td>Bloodstream</td>
+
+                        <td>Neurons</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Speed</strong></td>
+
+                        <td>Slow (seconds to days)</td>
+
+                        <td>Fast (milliseconds)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Duration</strong></td>
+
+                        <td>Long-lasting</td>
+
+                        <td>Short-lived</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Target</strong></td>
+
+                        <td>Any cell with receptor</td>
+
+                        <td>Specific cells</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🧪 Hormone Classification
+
+        </h3>
+
+
+        <h4>
+
+            By Chemical Structure
+
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Class</th>
+
+                        <th>Examples</th>
+
+                        <th>Properties</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Peptide/protein</strong></td>
+
+                        <td>Insulin, GH, FSH, LH</td>
+
+                        <td>Water-soluble; act on surface receptors; rapid onset</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Steroid</strong></td>
+
+                        <td>Estrogen, testosterone, cortisol, aldosterone</td>
+
+                        <td>Lipid-soluble; act intracellularly; slow onset, long duration</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Amine</strong></td>
+
+                        <td>Epinephrine, thyroid hormones</td>
+
+                        <td>Derived from tyrosine; varied mechanisms</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Eicosanoid</strong></td>
+
+                        <td>Prostaglandins</td>
+
+                        <td>Local hormones (paracrine/autocrine)</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+
+            By Mechanism of Action
+
+        </h4>
+
+
+        <p>
+
+            <strong>Peptide hormones:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Bind to surface receptors
+            </li>
+
+            <li>
+                Second messenger systems (cAMP, IP₃, Ca²⁺)
+            </li>
+
+            <li>
+                Rapid effects
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Steroid hormones:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Cross cell membrane
+            </li>
+
+            <li>
+                Bind intracellular receptors
+            </li>
+
+            <li>
+                Hormone-receptor complex binds DNA
+            </li>
+
+            <li>
+                Slow effects (gene transcription)
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🏥 Major Endocrine Glands and Hormones
+
+        </h3>
+
+
+        <h4>
+
+            A. Hypothalamus
+
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Hormone</th>
+
+                        <th>Target</th>
+
+                        <th>Effect</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>TRH</strong></td>
+
+                        <td>Anterior pituitary</td>
+
+                        <td>↑ TSH, ↑ prolactin</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>CRH</strong></td>
+
+                        <td>Anterior pituitary</td>
+
+                        <td>↑ ACTH</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>GnRH</strong></td>
+
+                        <td>Anterior pituitary</td>
+
+                        <td>↑ FSH, ↑ LH</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>GHRH</strong></td>
+
+                        <td>Anterior pituitary</td>
+
+                        <td>↑ GH</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Somatostatin</strong></td>
+
+                        <td>Anterior pituitary</td>
+
+                        <td>↓ GH, ↓ TSH</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Dopamine (PIH)</strong></td>
+
+                        <td>Anterior pituitary</td>
+
+                        <td>↓ Prolactin</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>ADH (vasopressin)</strong></td>
+
+                        <td>Posterior pituitary</td>
+
+                        <td>Stored; released from posterior pituitary</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Oxytocin</strong></td>
+
+                        <td>Posterior pituitary</td>
+
+                        <td>Stored; released from posterior pituitary</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+
+            B. Pituitary Gland (Hypophysis)
+
+        </h4>
+
+
+        <p>
+
+            <strong>Anterior Pituitary (Adenohypophysis):</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Hormone</th>
+
+                        <th>Target</th>
+
+                        <th>Effect</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Growth Hormone (GH)</strong></td>
+
+                        <td>Liver, bones, tissues</td>
+
+                        <td>Growth, protein synthesis, lipolysis</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Thyroid-Stimulating Hormone (TSH)</strong></td>
+
+                        <td>Thyroid</td>
+
+                        <td>↑ Thyroid hormone synthesis</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Adrenocorticotropic Hormone (ACTH)</strong></td>
+
+                        <td>Adrenal cortex</td>
+
+                        <td>↑ Cortisol release</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Follicle-Stimulating Hormone (FSH)</strong></td>
+
+                        <td>Gonads</td>
+
+                        <td>Gametogenesis</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Luteinizing Hormone (LH)</strong></td>
+
+                        <td>Gonads</td>
+
+                        <td>Sex hormone production</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Prolactin (PRL)</strong></td>
+
+                        <td>Mammary glands</td>
+
+                        <td>Milk production</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+
+            <strong>Posterior Pituitary (Neurohypophysis):</strong> Stores and releases hormones made by hypothalamus
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Hormone</th>
+
+                        <th>Target</th>
+
+                        <th>Effect</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>ADH (vasopressin)</strong></td>
+
+                        <td>Kidneys</td>
+
+                        <td>Water reabsorption</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Oxytocin</strong></td>
+
+                        <td>Uterus, breasts</td>
+
+                        <td>Uterine contractions, milk ejection</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="diagram-container">
+
+            <p><strong>🖼️ Diagram: Hypothalamic-pituitary relationships</strong></p>
+
+            <span class="diagram-caption">[Hypothalamic-pituitary relationship diagram placeholder]</span>
+
+        </div>
+
+
+        <h4>
+
+            C. Thyroid Gland
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Anterior neck, below larynx
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Hormones:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Hormone</th>
+
+                        <th>Composition</th>
+
+                        <th>Effect</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>T₄ (Thyroxine)</strong></td>
+
+                        <td>4 iodine atoms</td>
+
+                        <td>↑ Metabolic rate, growth, development</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>T₃ (Triiodothyronine)</strong></td>
+
+                        <td>3 iodine atoms</td>
+
+                        <td>More active form (converted from T₄)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Calcitonin</strong></td>
+
+                        <td>Peptide</td>
+
+                        <td>↓ Blood Ca²⁺ (inhibits bone resorption)</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+
+            <strong>Regulation: Hypothalamic-pituitary-thyroid axis</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Hypothalamus: TRH
+            </li>
+
+            <li>
+                Anterior pituitary: TSH
+            </li>
+
+            <li>
+                Thyroid: T₃/T₄ (negative feedback)
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            D. Parathyroid Glands
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Posterior surface of thyroid (4 glands)
+            </li>
+
+            <li>
+                <strong>Hormone:</strong> Parathyroid hormone (PTH)
+            </li>
+
+        </ul>
+
+
+        <div class="study-box">
+
+            <strong>⚡ Actions of PTH:</strong>
+
+            <ol>
+
+                <li>
+                    <strong>Bone:</strong> Stimulates osteoclasts → ↑ Ca²⁺ release
+                </li>
+
+                <li>
+                    <strong>Kidney:</strong> ↑ Ca²⁺ reabsorption; ↓ PO₄³⁻ reabsorption; activates vitamin D
+                </li>
+
+                <li>
+                    <strong>Intestine:</strong> ↑ Ca²⁺ absorption (via vitamin D)
+                </li>
+
+            </ol>
+
+            <strong>Overall effect:</strong> ↑ Blood Ca²⁺
+
+        </div>
+
+
+        <h4>
+
+            E. Adrenal Glands
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Superior to each kidney
+            </li>
+
+            <li>
+                <strong>Adrenal Cortex (80% of gland):</strong> 3 zones
+            </li>
+
+            <li>
+                <strong>Adrenal Medulla (20%):</strong>
+                <ul>
+
+                    <li>
+                        Modified sympathetic ganglion
+                    </li>
+
+                    <li>
+                        <strong>Hormones:</strong> Epinephrine (80%), Norepinephrine (20%)
+                    </li>
+
+                    <li>
+                        <strong>Effects:</strong> "Fight or flight" response
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            F. Pancreas (Endocrine)
+
+        </h4>
+
+
+        <p>
+
+            <strong>Islets of Langerhans:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cell Type</th>
+
+                        <th>Hormone</th>
+
+                        <th>Effect</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Beta cells (60%)</strong></td>
+
+                        <td>Insulin</td>
+
+                        <td>↓ Blood glucose (uptake, storage)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Alpha cells (25%)</strong></td>
+
+                        <td>Glucagon</td>
+
+                        <td>↑ Blood glucose (glycogenolysis, gluconeogenesis)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Delta cells (10%)</strong></td>
+
+                        <td>Somatostatin</td>
+
+                        <td>Inhibits insulin, glucagon, GH</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>PP cells (5%)</strong></td>
+
+                        <td>Pancreatic polypeptide</td>
+
+                        <td>Regulates pancreatic secretion</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="diagram-container">
+
+            <p><strong>🖼️ Diagram: Pancreatic islet showing different cell types</strong></p>
+
+            <span class="diagram-caption">[Pancreatic islet cell layout placeholder]</span>
+
+        </div>
+
+
+        <h4>
+
+            G. Gonads
+
+        </h4>
+
+
+        <p>
+
+            <strong>Testes:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Testosterone:</strong> Male characteristics, spermatogenesis
+            </li>
+
+            <li>
+                <strong>Inhibin:</strong> Inhibits FSH
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Ovaries:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Estrogen:</strong> Female characteristics, menstrual cycle
+            </li>
+
+            <li>
+                <strong>Progesterone:</strong> Prepares uterus for pregnancy
+            </li>
+
+            <li>
+                <strong>Inhibin:</strong> Inhibits FSH
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            H. Pineal Gland
+
+        </h4>
+
+        <ul>
+
+            <li>
+                <strong>Melatonin:</strong> Regulates circadian rhythms (sleep-wake cycle)
+            </li>
+
+            <li>
+                Secretion increases in darkness, decreases in light
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+
+    <!-- 5. SENSORY SYSTEMS -->
+
+    <div class="card">
+
+
+        <h2>
+
+            👁️👂 5. Sensory Systems
+
+        </h2>
+
+
+        <h3>
+
+            👁️ The Eye (Vision)
+
+        </h3>
+
+
+        <h4>
+
+            Structure of the Eye
+
+        </h4>
+
+
+        <p>
+
+            <strong>Three layers (tunics):</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Layer</th>
+
+                        <th>Structures</th>
+
+                        <th>Function</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Fibrous tunic (outer)</strong></td>
+
+                        <td>Sclera, cornea</td>
+
+                        <td>Protection, light refraction</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vascular tunic (middle)</strong></td>
+
+                        <td>Choroid, ciliary body, iris</td>
+
+                        <td>Blood supply, light absorption, lens shape, pupil size</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Neural tunic (inner)</strong></td>
+
+                        <td>Retina</td>
+
+                        <td>Photoreception</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+
+            Detailed Structures
+
+        </h4>
+
+
+        <p>
+
+            <strong>Cornea:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Transparent anterior portion
+            </li>
+
+            <li>
+                Avascular (gets O₂ from air)
+            </li>
+
+            <li>
+                Major light refraction (bending)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Sclera:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                White of the eye
+            </li>
+
+            <li>
+                Protective collagenous layer
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Iris:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Colored part of eye
+            </li>
+
+            <li>
+                <strong>Contains smooth muscle:</strong>
+                <ul>
+
+                    <li>
+                        <strong>Circular muscles (parasympathetic):</strong> Constrict pupil (miosis)
+                    </li>
+
+                    <li>
+                        <strong>Radial muscles (sympathetic):</strong> Dilate pupil (mydriasis)
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Pupil:</strong> Opening in iris through which light enters
+
+        </p>
+
+
+        <p>
+
+            <strong>Lens:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Transparent, biconvex structure
+            </li>
+
+            <li>
+                Suspended by zonular fibers (suspensory ligaments)
+            </li>
+
+            <li>
+                Changes shape for accommodation (focusing)
+            </li>
+
+            <li>
+                <strong>Ciliary muscles:</strong> Contract for near vision (lens becomes rounder)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Retina:</strong> The retina is a thin, light-sensitive layer of neural tissue that lines the inner back of the eyeball. Acting much like the film or digital sensor in a camera, it captures incoming light and converts it into electrical signals that the brain translates into vision.
+
+        </p>
+
+
+        <p>
+
+            <strong>Aqueous humor:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                Produced by ciliary body
+            </li>
+
+            <li>
+                Drains via canal of Schlemm
+            </li>
+
+            <li>
+                Maintains intraocular pressure
+            </li>
+
+        </ul>
+
+
+        <div class="warning-box">
+
+            <strong>⚠️ Glaucoma:</strong> Impaired drainage → ↑ pressure → optic nerve damage
+
+        </div>
+
+
+        <h4>
+
+            Visual Pathway
+
+        </h4>
+
+        <ol>
+
+            <li>
+                Light → cornea → aqueous humor → lens → vitreous humor → retina
+            </li>
+
+            <li>
+                Photoreceptors → bipolar cells → ganglion cells
+            </li>
+
+            <li>
+                Optic nerve (CN II) → optic chiasm (partial crossing) → optic tract
+            </li>
+
+            <li>
+                Lateral geniculate nucleus (thalamus) → optic radiations
+            </li>
+
+            <li>
+                Primary visual cortex (occipital lobe)
+            </li>
+
+        </ol>
+
+
+        <h3>
+
+            👂 The Ear (Hearing and Balance)
+
+        </h3>
+
+
+        <h4>
+
+            Divisions of the Ear
+
+        </h4>
+
+
+        <p>
+
+            <strong>A. External Ear:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Pinna (auricle):</strong> Collects sound waves
+            </li>
+
+            <li>
+                <strong>External auditory canal:</strong> Channels sound to eardrum
+            </li>
+
+            <li>
+                Contains ceruminous glands (ear wax)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>B. Middle Ear (Tympanic Cavity):</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Tympanic membrane (eardrum):</strong> Vibrates in response to sound
+            </li>
+
+            <li>
+                <strong>Ossicles (three small bones):</strong>
+                <ul>
+
+                    <li>
+                        <strong>Malleus (hammer):</strong> Attached to eardrum
+                    </li>
+
+                    <li>
+                        <strong>Incus (anvil):</strong> Between malleus and stapes
+                    </li>
+
+                    <li>
+                        <strong>Stapes (stirrup):</strong> Attached to oval window
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <strong>Eustachian tube:</strong> Connects to nasopharynx; equalizes pressure
+            </li>
+
+            <li>
+                <strong>Muscles:</strong> Tensor tympani, stapedius (protect from loud sounds)
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>C. Inner Ear (Labyrinth):</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Bony labyrinth (filled with perilymph):</strong>
+                <ul>
+
+                    <li>
+                        <strong>Cochlea:</strong> Hearing
+                    </li>
+
+                    <li>
+                        <strong>Vestibule:</strong> Utricle and saccule (static balance)
+                    </li>
+
+                    <li>
+                        <strong>Semicircular canals:</strong> Dynamic balance (3)
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <strong>Membranous labyrinth (filled with endolymph):</strong>
+                <ul>
+
+                    <li>
+                        Inside bony labyrinth
+                    </li>
+
+                    <li>
+                        Contains sensory receptors
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h4>
+
+            Hearing Mechanism
+
+        </h4>
+
+        <ol>
+
+            <li>
+                Sound waves enter external auditory canal
+            </li>
+
+            <li>
+                Tympanic membrane vibrates
+            </li>
+
+            <li>
+                Ossicles amplify and transmit vibrations to oval window
+            </li>
+
+            <li>
+                Stapes moves oval window → creates pressure waves in perilymph
+            </li>
+
+            <li>
+                Waves travel through scala vestibuli → scala tympani
+            </li>
+
+            <li>
+                Basilar membrane vibrates → hair cells in organ of Corti bend
+            </li>
+
+            <li>
+                Hair cell depolarization → neurotransmitter release
+            </li>
+
+            <li>
+                Action potentials in cochlear nerve (CN VIII)
+            </li>
+
+            <li>
+                Signal to brainstem → inferior colliculus → medial geniculate → auditory cortex (temporal lobe)
+            </li>
+
+        </ol>
+
+
+        <h3>
+
+            👅 Taste (Gustation)
+
+        </h3>
+
+
+        <p>
+
+            <strong>Taste Buds:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Primarily on tongue, also soft palate, epiglottis
+            </li>
+
+            <li>
+                <strong>Number:</strong> ~10,000 taste buds
+            </li>
+
+            <li>
+                <strong>Structure:</strong> 50-100 taste cells per bud
+            </li>
+
+            <li>
+                <strong>Taste pores:</strong> Openings where microvilli contact saliva
+            </li>
+
+            <li>
+                <strong>Lifespan:</strong> Taste cells regenerate every 10-14 days
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Five Basic Taste Qualities:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Taste</th>
+
+                        <th>Stimulus</th>
+
+                        <th>Mechanism</th>
+
+                        <th>Location Preference</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Sweet</strong></td>
+
+                        <td>Sugars, some amino acids</td>
+
+                        <td>G-protein (gustducin) → cAMP</td>
+
+                        <td>Tip of tongue</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Salty</strong></td>
+
+                        <td>Na⁺ ions</td>
+
+                        <td>Na⁺ channels → depolarization</td>
+
+                        <td>Tip and sides</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Sour</strong></td>
+
+                        <td>H⁺ (acids)</td>
+
+                        <td>H⁺ channels, K⁺ channel block</td>
+
+                        <td>Sides</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Bitter</strong></td>
+
+                        <td>Alkaloids, toxins</td>
+
+                        <td>G-protein → IP₃ → ↑ Ca²⁺</td>
+
+                        <td>Back of tongue</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Umami</strong></td>
+
+                        <td>Glutamate</td>
+
+                        <td>G-protein (taste mGluR4)</td>
+
+                        <td>Throughout</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            👃 Olfaction (Smell)
+
+        </h3>
+
+
+        <p>
+
+            <strong>Olfactory Epithelium:</strong>
+
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>Location:</strong> Superior nasal cavity
+            </li>
+
+            <li>
+                <strong>Area:</strong> ~2.5 cm²
+            </li>
+
+            <li>
+                <strong>Cell types:</strong>
+                <ul>
+
+                    <li>
+                        <strong>Olfactory receptor cells:</strong> Bipolar neurons with cilia
+                    </li>
+
+                    <li>
+                        <strong>Supporting cells:</strong> Sustentacular cells
+                    </li>
+
+                    <li>
+                        <strong>Basal cells:</strong> Stem cells (regenerate every 30-60 days)
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Olfactory Transduction:</strong>
+
+        </p>
+
+        <ol>
+
+            <li>
+                Odorant binds to receptor protein (G-protein coupled)
+            </li>
+
+            <li>
+                G-protein (Golf) activates adenylyl cyclase
+            </li>
+
+            <li>
+                ↑ cAMP opens cyclic nucleotide-gated channels
+            </li>
+
+            <li>
+                Na⁺ and Ca²⁺ influx → depolarization
+            </li>
+
+            <li>
+                Action potential in olfactory nerve (CN I)
+            </li>
+
+        </ol>
+
+
+        <h3>
+
+            📊 Comparison of Sensory Receptors
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Receptor Type</th>
+
+                        <th>Stimulus</th>
+
+                        <th>Examples</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Chemoreceptors</strong></td>
+
+                        <td>Chemicals</td>
+
+                        <td>Taste, smell, O₂/CO₂ sensors</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Mechanoreceptors</strong></td>
+
+                        <td>Mechanical force</td>
+
+                        <td>Touch, pressure, hearing, balance</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Photoreceptors</strong></td>
+
+                        <td>Light</td>
+
+                        <td>Vision</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Thermoreceptors</strong></td>
+
+                        <td>Temperature</td>
+
+                        <td>Heat, cold</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Nociceptors</strong></td>
+
+                        <td>Pain (tissue damage)</td>
+
+                        <td>Free nerve endings</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<footer class="footer">
+
+
+    🩺 Health Chapter 3 • Complete Study Notes
+
+    <br>
+
+    📚 Unique Academic — High Quality Learning Interface
+
+
+</footer>
+
+
+</body>
+
+</html>
