@@ -1,100 +1,953 @@
-<!-- CHAPTER 1 -->
+<!DOCTYPE html>
+<html lang="en">
 
-<a
-    href="law-notes-chapter1.html"
-    class="chapter-card"
->
+<head>
 
-    <div class="chapter-icon">
-        ⚖️
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Unique Academic - Law CoC complete study notes."
+    >
+
+    <title>⚖️ Law CoC | Full Notes</title>
+
+
+    <style>
+
+        /* =================================================
+           UNIQUE ACADEMIC
+           LAW CoC FULL NOTES
+        ================================================= */
+
+        :root {
+
+            --bg-color: #f3f4f6;
+
+            --card-bg: #ffffff;
+
+            --text-main: #1f2937;
+
+            --text-muted: #4b5563;
+
+            --primary-gold: #8a6416;
+
+            --primary-dark: #60450e;
+
+            --border-color: #e4dcc8;
+
+            --shadow:
+                0 4px 12px rgba(0, 0, 0, 0.08),
+                0 2px 5px rgba(0, 0, 0, 0.04);
+
+        }
+
+
+        /* =================================================
+           RESET
+        ================================================= */
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f5f6 0%,
+                    #f1f0ec 100%
+                );
+
+            color: var(--text-main);
+
+            line-height: 1.5;
+
+            padding: 18px;
+
+            max-width: 700px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
+        }
+
+
+        /* =================================================
+           TOP NAVIGATION
+        ================================================= */
+
+        .top-navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 34px;
+
+        }
+
+
+        .nav-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-decoration: none;
+
+            min-height: 58px;
+
+            padding: 0 26px;
+
+            border-radius: 20px;
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+
+        }
+
+
+        .nav-button:active {
+
+            transform: scale(0.96);
+
+        }
+
+
+        /* =================================================
+           BACK
+        ================================================= */
+
+        .back-button {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #9b741d,
+                    #6e510f
+                );
+
+            color: white;
+
+            box-shadow:
+                0 5px 12px rgba(110, 81, 15, 0.22);
+
+        }
+
+
+        /* =================================================
+           HOME
+        ================================================= */
+
+        .home-button {
+
+            background: white;
+
+            color: var(--primary-gold);
+
+            border: 1px solid #dedede;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        /* =================================================
+           PAGE HEADER
+        ================================================= */
+
+        .page-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #98721c 0%,
+                    #61470d 100%
+                );
+
+            color: white;
+
+            padding: 52px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 36px;
+
+            text-align: center;
+
+            box-shadow:
+                0 8px 18px rgba(96, 69, 14, 0.18);
+
+        }
+
+
+        .page-header h1 {
+
+            font-size: 2.1rem;
+
+            font-weight: 800;
+
+            margin-bottom: 14px;
+
+            letter-spacing: -0.5px;
+
+        }
+
+
+        .page-header p {
+
+            color: rgba(255, 255, 255, 0.9);
+
+            font-size: 1.15rem;
+
+            font-weight: 500;
+
+        }
+
+
+        /* =================================================
+           NOTES HOME
+        ================================================= */
+
+        .notes-home {
+
+            background: var(--card-bg);
+
+            border-radius: 28px;
+
+            padding: 32px;
+
+            margin-bottom: 30px;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .notes-home-title {
+
+            color: var(--primary-gold);
+
+            font-size: 1.7rem;
+
+            font-weight: 800;
+
+            margin-bottom: 12px;
+
+            line-height: 1.3;
+
+        }
+
+
+        .notes-home-subtitle {
+
+            color: var(--text-muted);
+
+            font-size: 1.05rem;
+
+            margin-bottom: 32px;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =================================================
+           CHAPTER LIST
+        ================================================= */
+
+        .chapter-list {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+        }
+
+
+        /* =================================================
+           CHAPTER CARD
+        ================================================= */
+
+        .chapter-card {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 22px;
+
+            text-decoration: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #faf8f2,
+                    #f5f1e7
+                );
+
+            border: 1px solid #dfd3b7;
+
+            border-radius: 25px;
+
+            padding: 24px;
+
+            color: var(--text-main);
+
+            min-height: 148px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.04);
+
+        }
+
+
+        .chapter-card:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 8px 18px rgba(0, 0, 0, 0.09);
+
+            border-color: #c5aa67;
+
+        }
+
+
+        .chapter-card:active {
+
+            transform: scale(0.98);
+
+        }
+
+
+        /* =================================================
+           CHAPTER ICON
+        ================================================= */
+
+        .chapter-icon {
+
+            width: 78px;
+
+            height: 78px;
+
+            min-width: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: white;
+
+            border-radius: 22px;
+
+            font-size: 38px;
+
+            border: 1px solid #ded6c5;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.05);
+
+        }
+
+
+        /* =================================================
+           CHAPTER INFORMATION
+        ================================================= */
+
+        .chapter-info {
+
+            flex: 1;
+
+            min-width: 0;
+
+        }
+
+
+        .chapter-number {
+
+            display: block;
+
+            color: var(--primary-gold);
+
+            font-size: 1rem;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.4px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .chapter-title {
+
+            display: block;
+
+            color: #303947;
+
+            font-size: 1.25rem;
+
+            font-weight: 800;
+
+            line-height: 1.45;
+
+        }
+
+
+        .chapter-description {
+
+            display: block;
+
+            color: #59616d;
+
+            font-size: 1rem;
+
+            margin-top: 10px;
+
+        }
+
+
+        /* =================================================
+           ARROW
+        ================================================= */
+
+        .chapter-arrow {
+
+            color: var(--primary-gold);
+
+            font-size: 2.6rem;
+
+            font-weight: 900;
+
+            line-height: 1;
+
+            padding-left: 4px;
+
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        .footer {
+
+            text-align: center;
+
+            padding: 24px 10px 35px;
+
+            color: var(--text-muted);
+
+            font-size: 0.9rem;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 480px) {
+
+            body {
+
+                padding: 18px;
+
+            }
+
+
+            .top-navigation {
+
+                margin-bottom: 34px;
+
+            }
+
+
+            .nav-button {
+
+                min-height: 56px;
+
+                padding: 0 20px;
+
+                border-radius: 18px;
+
+                font-size: 1rem;
+
+            }
+
+
+            .page-header {
+
+                padding: 48px 18px;
+
+                border-radius: 28px;
+
+                margin-bottom: 36px;
+
+            }
+
+
+            .page-header h1 {
+
+                font-size: 2rem;
+
+            }
+
+
+            .page-header p {
+
+                font-size: 1.05rem;
+
+            }
+
+
+            .notes-home {
+
+                padding: 28px 16px;
+
+                border-radius: 26px;
+
+            }
+
+
+            .notes-home-title {
+
+                font-size: 1.5rem;
+
+            }
+
+
+            .notes-home-subtitle {
+
+                font-size: 1rem;
+
+                margin-bottom: 28px;
+
+            }
+
+
+            .chapter-list {
+
+                gap: 20px;
+
+            }
+
+
+            .chapter-card {
+
+                gap: 16px;
+
+                padding: 22px 18px;
+
+                min-height: 142px;
+
+                border-radius: 24px;
+
+            }
+
+
+            .chapter-icon {
+
+                width: 74px;
+
+                height: 74px;
+
+                min-width: 74px;
+
+                border-radius: 21px;
+
+                font-size: 34px;
+
+            }
+
+
+            .chapter-number {
+
+                font-size: 0.95rem;
+
+                margin-bottom: 8px;
+
+            }
+
+
+            .chapter-title {
+
+                font-size: 1.12rem;
+
+                line-height: 1.45;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.96rem;
+
+                margin-top: 8px;
+
+            }
+
+
+            .chapter-arrow {
+
+                font-size: 2.4rem;
+
+            }
+
+        }
+
+
+        /* =================================================
+           SMALL MOBILE
+        ================================================= */
+
+        @media (max-width: 380px) {
+
+            body {
+
+                padding: 12px;
+
+            }
+
+
+            .nav-button {
+
+                padding: 0 16px;
+
+                font-size: 0.95rem;
+
+            }
+
+
+            .chapter-card {
+
+                gap: 12px;
+
+                padding: 18px 14px;
+
+            }
+
+
+            .chapter-icon {
+
+                width: 62px;
+
+                height: 62px;
+
+                min-width: 62px;
+
+                font-size: 29px;
+
+            }
+
+
+            .chapter-title {
+
+                font-size: 1rem;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.88rem;
+
+            }
+
+
+            .chapter-arrow {
+
+                font-size: 2rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     TOP NAVIGATION
+================================================= -->
+
+<div class="top-navigation">
+
+
+    <!-- BACK TO MAIN HOME -->
+
+    <a
+        href="index.html"
+        class="nav-button back-button"
+    >
+        ← Back
+    </a>
+
+
+    <!-- HOME -->
+
+    <a
+        href="index.html"
+        class="nav-button home-button"
+    >
+        🏠 Home
+    </a>
+
+
+</div>
+
+
+<!-- =================================================
+     LAW HEADER
+================================================= -->
+
+<header class="page-header">
+
+    <h1>
+        ⚖️ Law CoC
+    </h1>
+
+    <p>
+        📚 Complete Full Notes
+    </p>
+
+</header>
+
+
+<!-- =================================================
+     NOTES HOME
+================================================= -->
+
+<main class="notes-home">
+
+
+    <div class="notes-home-title">
+
+        📖 Law CoC Full Notes
+
     </div>
 
-    <div class="chapter-info">
 
-        <span class="chapter-number">
-            Chapter 1
-        </span>
+    <div class="notes-home-subtitle">
 
-        <span class="chapter-title">
-            Constitutional Law &amp; FDRE Government Structure
-        </span>
-
-        <span class="chapter-description">
-            Complete study notes
-        </span>
+        Select a chapter to study its complete notes.
 
     </div>
 
-    <div class="chapter-arrow">
-        ➜
+
+    <!-- =================================================
+         CHAPTER LIST
+    ================================================= -->
+
+    <div class="chapter-list">
+
+
+        <!-- =================================================
+             CHAPTER 1
+        ================================================= -->
+
+        <a
+            href="law-notes-chapter1.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                ⚖️
+            </div>
+
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 1
+                </span>
+
+
+                <span class="chapter-title">
+                    Constitutional Law &amp;
+                    FDRE Government Structure
+                </span>
+
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             CHAPTER 2
+        ================================================= -->
+
+        <a
+            href="law-notes-chapter2.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📜
+            </div>
+
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 2
+                </span>
+
+
+                <span class="chapter-title">
+                    Human Rights &amp;
+                    Fundamental Freedoms
+                </span>
+
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             CHAPTER 3
+        ================================================= -->
+
+        <a
+            href="law-notes-chapter3.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                🧠
+            </div>
+
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 3
+                </span>
+
+
+                <span class="chapter-title">
+                    Logic &amp;
+                    Critical Thinking
+                </span>
+
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
     </div>
 
-</a>
+</main>
 
 
-<!-- CHAPTER 2 -->
+<!-- =================================================
+     FOOTER
+================================================= -->
 
-<a
-    href="law-notes-chapter2.html"
-    class="chapter-card"
->
+<footer class="footer">
 
-    <div class="chapter-icon">
-        📜
-    </div>
+    ⚖️ Law CoC
 
-    <div class="chapter-info">
+    <br>
 
-        <span class="chapter-number">
-            Chapter 2
-        </span>
+    📚 Unique Academic — Complete Full Notes
 
-        <span class="chapter-title">
-            Human Rights &amp; Fundamental Freedoms
-        </span>
-
-        <span class="chapter-description">
-            Complete study notes
-        </span>
-
-    </div>
-
-    <div class="chapter-arrow">
-        ➜
-    </div>
-
-</a>
+</footer>
 
 
-<!-- CHAPTER 3 -->
+</body>
 
-<a
-    href="law-notes-chapter3.html"
-    class="chapter-card"
->
-
-    <div class="chapter-icon">
-        🧠
-    </div>
-
-    <div class="chapter-info">
-
-        <span class="chapter-number">
-            Chapter 3
-        </span>
-
-        <span class="chapter-title">
-            Logic &amp; Critical Thinking
-        </span>
-
-        <span class="chapter-description">
-            Complete study notes
-        </span>
-
-    </div>
-
-    <div class="chapter-arrow">
-        ➜
-    </div>
-
-</a>
+</html>
