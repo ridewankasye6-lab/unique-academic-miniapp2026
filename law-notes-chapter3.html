@@ -1,1 +1,3947 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Law Chapter 3 | Complete Study Notes</title>
+
+
+    <style>
+
+        :root {
+
+            --bg-color: #f3f4f6;
+
+            --card-bg: #ffffff;
+
+            --text-main: #1f2937;
+
+            --text-muted: #4b5563;
+
+            --primary-brown: #7c2d12;
+
+            --primary-dark: #431407;
+
+            --accent-green: #047857;
+
+            --accent-orange: #c2410c;
+
+            --accent-blue: #1d4ed8;
+
+            --border-color: #e5e7eb;
+
+            --shadow:
+                0 4px 6px -1px rgba(0,0,0,.05),
+                0 2px 4px -1px rgba(0,0,0,.03);
+
+        }
+
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        body {
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background-color: var(--bg-color);
+
+            color: var(--text-main);
+
+            line-height: 1.6;
+
+            padding: 12px;
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
+        }
+
+
+        .page-navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 16px;
+
+            gap: 10px;
+
+        }
+
+
+        .page-navigation a {
+
+            text-decoration: none;
+
+            border-radius: 12px;
+
+            padding: 10px 16px;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .back-btn {
+
+            background-color: var(--primary-brown);
+
+            color: white;
+
+        }
+
+
+        .home-btn {
+
+            background-color: white;
+
+            color: var(--primary-brown);
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary-brown),
+                    var(--primary-dark)
+                );
+
+            color: white;
+
+            padding: 20px 16px;
+
+            border-radius: 16px;
+
+            margin-bottom: 16px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        header h1 {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 4px;
+
+        }
+
+
+        header p {
+
+            font-size: .9rem;
+
+            color: white;
+
+            opacity: .9;
+
+        }
+
+
+        .card {
+
+            background: var(--card-bg);
+
+            border-radius: 16px;
+
+            padding: 18px 16px;
+
+            margin-bottom: 16px;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        h2 {
+
+            font-size: 1.2rem;
+
+            color: var(--primary-brown);
+
+            margin-bottom: 12px;
+
+            border-bottom: 2px solid #ffedd5;
+
+            padding-bottom: 6px;
+
+        }
+
+
+        h3 {
+
+            font-size: 1.05rem;
+
+            margin: 12px 0 8px;
+
+            color: var(--primary-dark);
+
+        }
+
+
+        h4 {
+
+            font-size: .98rem;
+
+            margin: 10px 0 6px;
+
+            color: var(--accent-orange);
+
+        }
+
+
+        p {
+
+            margin-bottom: 10px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+        }
+
+
+        ul,
+        ol {
+
+            margin-bottom: 12px;
+
+            padding-left: 20px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+        }
+
+
+        li {
+
+            margin-bottom: 6px;
+
+        }
+
+
+        .example-box {
+
+            background: #fffaf5;
+
+            border-left: 4px solid #f59e0b;
+
+            padding: 10px 12px;
+
+            border-radius: 0 8px 8px 0;
+
+            margin: 10px 0;
+
+            font-size: .9rem;
+
+        }
+
+
+        .case-box {
+
+            background: #eff6ff;
+
+            border-left: 4px solid var(--accent-blue);
+
+            padding: 10px 12px;
+
+            border-radius: 0 8px 8px 0;
+
+            margin: 10px 0;
+
+            font-size: .9rem;
+
+        }
+
+
+        .table-responsive {
+
+            overflow-x: auto;
+
+            margin: 12px 0;
+
+            border-radius: 8px;
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            font-size: .88rem;
+
+            text-align: left;
+
+        }
+
+
+        th,
+        td {
+
+            padding: 10px 12px;
+
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+
+        th {
+
+            background-color: #fff7ed;
+
+            color: var(--primary-brown);
+
+            font-weight: 700;
+
+        }
+
+
+        tr:last-child td {
+
+            border-bottom: none;
+
+        }
+
+
+        .diagram-container {
+
+            text-align: center;
+
+            margin: 14px 0;
+
+            padding: 10px;
+
+            background: #f9fafb;
+
+            border: 1px dashed var(--border-color);
+
+            border-radius: 8px;
+
+        }
+
+
+        .diagram-container img {
+
+            max-width: 100%;
+
+            height: auto;
+
+            border-radius: 6px;
+
+        }
+
+
+        .footer {
+
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: var(--text-muted);
+
+            font-size: .82rem;
+
+        }
+
+
+        @media (max-width:480px) {
+
+            body {
+
+                padding: 12px;
+
+            }
+
+
+            .page-navigation a {
+
+                padding: 10px 14px;
+
+                font-size: 14px;
+
+            }
+
+
+            header h1 {
+
+                font-size: 1.35rem;
+
+            }
+
+
+            .card {
+
+                padding: 16px 14px;
+
+            }
+
+
+            h2 {
+
+                font-size: 1.1rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="law-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+
+<header>
+
+    <h1>
+        🧠 Chapter 3: LOGIC &amp; CRITICAL THINKING
+    </h1>
+
+    <p>
+        Argument structure, Common fallacies, and Deductive vs. inductive reasoning
+    </p>
+
+</header>
+
+
+
+<section>
+
+
+    <!-- BASIC LOGICAL REASONING -->
+    <div class="card">
+
+        <h2>
+            📖 BASIC LOGICAL REASONING
+        </h2>
+
+        <h3>
+            🔍 Introduction to Logic
+        </h3>
+
+        <p>
+            Logic is the study of reasoning—the methods and principles used to distinguish correct reasoning from incorrect reasoning. It provides the tools to analyze arguments and evaluate whether conclusions follow from premises.
+        </p>
+
+        <h3>
+            💡 Why Logic Matters
+        </h3>
+
+        <ul>
+
+            <li>
+                 Helps construct sound arguments
+            </li>
+
+            <li>
+                 Enables identification of flawed reasoning
+            </li>
+
+            <li>
+                 Essential for critical thinking and decision-making
+            </li>
+
+            <li>
+                 Fundamental to legal reasoning and analysis
+            </li>
+
+            <li>
+                 Improves communication and persuasion skills
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ARGUMENT STRUCTURE -->
+    <div class="card">
+
+        <h2>
+            🧩 Argument Structure
+        </h2>
+
+        <h3>
+            ❓ What is an Argument?
+        </h3>
+
+        <p>
+            An argument is a set of statements where some statements (premises) are claimed to provide support for another statement (conclusion).
+        </p>
+
+        <p>
+            <strong>Key Components:</strong>
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Component
+                        </th>
+
+                        <th>
+                            Definition
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Premises</strong>
+                        </td>
+
+                        <td>
+                            Statements that provide evidence or reasons
+                        </td>
+
+                        <td>
+                            "All humans are mortal. Socrates is human."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Conclusion</strong>
+                        </td>
+
+                        <td>
+                            The statement being supported
+                        </td>
+
+                        <td>
+                            "Therefore, Socrates is mortal."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Inference</strong>
+                        </td>
+
+                        <td>
+                            The reasoning process connecting premises to conclusion
+                        </td>
+
+                        <td>
+                            The logical step from premises to conclusion
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🔎 Identifying Premises and Conclusion
+        </h3>
+
+        <p>
+            <strong>Indicator Words:</strong>
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Premise Indicators
+                        </th>
+
+                        <th>
+                            Conclusion Indicators
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            since<br>
+                            because<br>
+                            for<br>
+                            as<br>
+                            given that<br>
+                            for the reason that<br>
+                            inasmuch as<br>
+                            owing to
+                        </td>
+
+                        <td>
+                            therefore<br>
+                            hence<br>
+                            thus<br>
+                            so<br>
+                            consequently<br>
+                            it follows that<br>
+                            which shows that<br>
+                            accordingly
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             "Since it's raining (premise), the ground will be wet (conclusion)."
+
+            <br>
+
+             "The ground is wet (premise); therefore, it must have rained (conclusion)."
+
+        </div>
+
+
+        <h3>
+            ⚙️ Types of Arguments
+        </h3>
+
+        <h4>
+            A. Simple Arguments
+        </h4>
+
+        <p>
+            One premise supporting one conclusion.
+        </p>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong> "She studied hard, so she will pass the exam."
+
+        </div>
+
+
+        <h4>
+            B. Complex Arguments
+        </h4>
+
+        <p>
+            Multiple premises, possibly with intermediate conclusions.
+        </p>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             Premise 1: All humans are mortal.
+
+            <br>
+
+             Premise 2: Socrates is human.
+
+            <br>
+
+             Intermediate Conclusion: Socrates is mortal.
+
+            <br>
+
+             Premise 3: Mortal beings eventually cease to exist.
+
+            <br>
+
+             Final Conclusion: Socrates will eventually cease to exist.
+
+        </div>
+
+
+        <h3>
+            ⚖️ Evaluating Arguments
+        </h3>
+
+        <p>
+            <strong>Two Key Questions:</strong>
+        </p>
+
+        <ol>
+
+            <li>
+                1. Are the premises true? (Factual accuracy)
+            </li>
+
+            <li>
+                2. Does the conclusion follow logically from the premises? (Logical validity)
+            </li>
+
+        </ol>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            If Premises Are...
+                        </th>
+
+                        <th>
+                            And Reasoning Is...
+                        </th>
+
+                        <th>
+                            Argument is...
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            True
+                        </td>
+
+                        <td>
+                            Valid
+                        </td>
+
+                        <td>
+                            Sound
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            True
+                        </td>
+
+                        <td>
+                            Invalid
+                        </td>
+
+                        <td>
+                            Unsound
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            False
+                        </td>
+
+                        <td>
+                            Valid
+                        </td>
+
+                        <td>
+                            Unsound (but valid)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            False
+                        </td>
+
+                        <td>
+                            Invalid
+                        </td>
+
+                        <td>
+                            Unsound
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- DEDUCTIVE VS INDUCTIVE REASONING -->
+    <div class="card">
+
+        <h2>
+            🔄 Deductive vs. Inductive Reasoning
+        </h2>
+
+        <h3>
+            📐 Deductive Reasoning
+        </h3>
+
+        <p>
+            Reasoning from general principles to specific conclusions. If premises are true, the conclusion must be true.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 Moves from general to specific
+            </li>
+
+            <li>
+                 Conclusion follows necessarily
+            </li>
+
+            <li>
+                 Aim is validity (logical correctness)
+            </li>
+
+            <li>
+                 Provides certainty (if premises true)
+            </li>
+
+        </ul>
+
+
+        <h4>
+            A. Syllogisms
+        </h4>
+
+        <p>
+            A syllogism is a deductive argument with two premises and a conclusion.
+        </p>
+
+        <p>
+            <strong>Standard Form:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 Major premise: General statement
+            </li>
+
+            <li>
+                 Minor premise: Specific statement
+            </li>
+
+            <li>
+                 Conclusion: Derived statement
+            </li>
+
+        </ul>
+
+
+        <p>
+            <strong>Classic Example (Categorical Syllogism):</strong>
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Component
+                        </th>
+
+                        <th>
+                            Statement
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Major Premise
+                        </td>
+
+                        <td>
+                            All humans are mortal.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Minor Premise
+                        </td>
+
+                        <td>
+                            Socrates is human.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Conclusion
+                        </td>
+
+                        <td>
+                            Therefore, Socrates is mortal.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 All A are B. (All humans are mortal)
+            </li>
+
+            <li>
+                 C is A. (Socrates is human)
+            </li>
+
+            <li>
+                 Therefore, C is B. (Socrates is mortal)
+            </li>
+
+        </ul>
+
+
+        <h4>
+            B. Types of Deductive Arguments
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Categorical Syllogism</strong>
+                        </td>
+
+                        <td>
+                            Uses "all," "no," or "some"
+                        </td>
+
+                        <td>
+                            All A are B; C is A; so C is B
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Hypothetical Syllogism</strong>
+                        </td>
+
+                        <td>
+                            Uses "if-then" statements
+                        </td>
+
+                        <td>
+                            If p then q; if q then r; so if p then r
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Disjunctive Syllogism</strong>
+                        </td>
+
+                        <td>
+                            Uses "either-or" statements
+                        </td>
+
+                        <td>
+                            Either p or q; not p; so q
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Hypothetical Syllogism Example:</strong>
+
+            <br>
+
+             If it rains, the ground will be wet.
+
+            <br>
+
+             If the ground is wet, the grass will grow.
+
+            <br>
+
+             Therefore, if it rains, the grass will grow.
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Disjunctive Syllogism Example:</strong>
+
+            <br>
+
+             Either the butler or the gardener committed the crime.
+
+            <br>
+
+             The butler did not commit the crime.
+
+            <br>
+
+             Therefore, the gardener committed the crime.
+
+        </div>
+
+
+        <h4>
+            C. Validity and Soundness
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Concept
+                        </th>
+
+                        <th>
+                            Definition
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Valid</strong>
+                        </td>
+
+                        <td>
+                            If premises are true, conclusion must be true
+                        </td>
+
+                        <td>
+                            All A are B; C is A; so C is B (valid structure)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Invalid</strong>
+                        </td>
+
+                        <td>
+                            Conclusion does not necessarily follow
+                        </td>
+
+                        <td>
+                            All A are B; C is B; so C is A (invalid)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Sound</strong>
+                        </td>
+
+                        <td>
+                            Valid argument with true premises
+                        </td>
+
+                        <td>
+                            Valid structure + true premises
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Unsound</strong>
+                        </td>
+
+                        <td>
+                            Invalid OR has false premise(s)
+                        </td>
+
+                        <td>
+                            Valid structure + false premise OR invalid structure
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Valid but Unsound Example:</strong>
+
+            <br>
+
+             All birds can fly. (False premise - penguins can't fly)
+
+            <br>
+
+             Penguins are birds.
+
+            <br>
+
+             Therefore, penguins can fly. (Valid but unsound)
+
+        </div>
+
+
+        <h3>
+            📊 Inductive Reasoning
+        </h3>
+
+        <p>
+            Reasoning from specific observations to general conclusions. Conclusions are probable but not certain.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 Moves from specific to general
+            </li>
+
+            <li>
+                 Conclusion follows with probability
+            </li>
+
+            <li>
+                 Aim is strength (degree of support)
+            </li>
+
+            <li>
+                 Provides probability, not certainty
+            </li>
+
+        </ul>
+
+
+        <h4>
+            A. Types of Inductive Arguments
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Generalization</strong>
+                        </td>
+
+                        <td>
+                            From specific cases to general rule
+                        </td>
+
+                        <td>
+                            Observed 100 swans, all white → all swans are white
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Statistical Syllogism</strong>
+                        </td>
+
+                        <td>
+                            From general statistic to specific case
+                        </td>
+
+                        <td>
+                            90% of students pass; John is student → John will pass
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Analogical Reasoning</strong>
+                        </td>
+
+                        <td>
+                            From similarity in some respects to similarity in others
+                        </td>
+
+                        <td>
+                            Drug A worked in mice; humans similar to mice → drug A will work in humans
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Causal Inference</strong>
+                        </td>
+
+                        <td>
+                            From observed correlation to causal claim
+                        </td>
+
+                        <td>
+                            Smoking correlated with lung cancer → smoking causes lung cancer
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Predictive Reasoning</strong>
+                        </td>
+
+                        <td>
+                            From past patterns to future events
+                        </td>
+
+                        <td>
+                            Sun rose every day → sun will rise tomorrow
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+            B. Strength of Inductive Arguments
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Strength Level
+                        </th>
+
+                        <th>
+                            Aspect / Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Strong</strong>
+                        </td>
+
+                        <td>
+                            Conclusion highly probable given premises
+                        </td>
+
+                        <td>
+                            99% of observed swans white → next swan likely white
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Weak</strong>
+                        </td>
+
+                        <td>
+                            Conclusion not well supported
+                        </td>
+
+                        <td>
+                            2 of 3 observed swans white → next swan likely white
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Cogent</strong>
+                        </td>
+
+                        <td>
+                            Strong argument with true premises
+                        </td>
+
+                        <td>
+                            Strong structure + true premises
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            ⚔️ Comparison: Deductive vs. Inductive Reasoning
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Aspect
+                        </th>
+
+                        <th>
+                            Deductive
+                        </th>
+
+                        <th>
+                            Inductive
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Direction</strong>
+                        </td>
+
+                        <td>
+                            General → Specific
+                        </td>
+
+                        <td>
+                            Specific → General
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Conclusion</strong>
+                        </td>
+
+                        <td>
+                            Necessarily follows
+                        </td>
+
+                        <td>
+                            Probably follows
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Certainty</strong>
+                        </td>
+
+                        <td>
+                            Certain (if premises true)
+                        </td>
+
+                        <td>
+                            Probabilistic
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Goal</strong>
+                        </td>
+
+                        <td>
+                            Validity
+                        </td>
+
+                        <td>
+                            Strength
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Failure Mode</strong>
+                        </td>
+
+                        <td>
+                            Invalid
+                        </td>
+
+                        <td>
+                            Weak
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Truth Transfer</strong>
+                        </td>
+
+                        <td>
+                            Guarantees truth of conclusion
+                        </td>
+
+                        <td>
+                            Makes conclusion plausible
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Typical Use</strong>
+                        </td>
+
+                        <td>
+                            Mathematics, logic, legal rules
+                        </td>
+
+                        <td>
+                            Scientific research, everyday reasoning
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="diagram-container">
+
+            📌 <em>[Diagram comparing deductive and inductive reasoning flow]</em>
+
+        </div>
+
+
+        <h3>
+            ⚖️ Examples in Legal Context
+        </h3>
+
+
+        <div class="case-box">
+
+            ⚖️ <strong>Deductive Reasoning in Law:</strong>
+
+            <br>
+
+             Major Premise: All theft is punishable by law.
+
+            <br>
+
+             Minor Premise: The defendant committed theft.
+
+            <br>
+
+             Conclusion: The defendant is punishable by law.
+
+        </div>
+
+
+        <div class="case-box">
+
+            ⚖️ <strong>Inductive Reasoning in Law:</strong>
+
+            <br>
+
+             Evidence: Defendant's fingerprints at scene, motive established, no alibi.
+
+            <br>
+
+             Inductive Conclusion: Defendant likely committed the crime (beyond reasonable doubt).
+
+        </div>
+
+    </div>
+
+
+    <!-- COMMON FALLACIES -->
+    <div class="card">
+
+        <h2>
+            ⚠️ Common Fallacies
+        </h2>
+
+        <h3>
+            ❓ What is a Fallacy?
+        </h3>
+
+        <p>
+            A fallacy is an error in reasoning that renders an argument invalid, unsound, or misleading. Fallacies can be formal (error in logical structure) or informal (error in content or context).
+        </p>
+
+        <h3>
+            🚨 Formal Fallacies
+        </h3>
+
+        <p>
+            Errors in the logical structure of a deductive argument.
+        </p>
+
+
+        <h4>
+            A. Affirming the Consequent
+        </h4>
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 If P, then Q.
+            </li>
+
+            <li>
+                 Q is true.
+            </li>
+
+            <li>
+                 Therefore, P is true. (INVALID)
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             If it rains, the ground will be wet.
+
+            <br>
+
+             The ground is wet.
+
+            <br>
+
+             Therefore, it rained. <em>(Fallacy - ground could be wet from other causes)</em>
+
+        </div>
+
+
+        <h4>
+            B. Denying the Antecedent
+        </h4>
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 If P, then Q.
+            </li>
+
+            <li>
+                 P is false.
+            </li>
+
+            <li>
+                 Therefore, Q is false. (INVALID)
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             If it rains, the ground will be wet.
+
+            <br>
+
+             It did not rain.
+
+            <br>
+
+             Therefore, the ground is not wet. <em>(Fallacy - sprinklers could wet ground)</em>
+
+        </div>
+
+
+        <h4>
+            C. Undistributed Middle
+        </h4>
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 All A are B.
+            </li>
+
+            <li>
+                 All C are B.
+            </li>
+
+            <li>
+                 Therefore, all A are C. (INVALID)
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             All dogs are mammals.
+
+            <br>
+
+             All cats are mammals.
+
+            <br>
+
+             Therefore, all dogs are cats. <em>(Clearly false)</em>
+
+        </div>
+
+    </div>
+  
+
+
+
+<section>
+
+
+    <!-- BASIC LOGICAL REASONING -->
+    <div class="card">
+
+        <h2>
+            📖 BASIC LOGICAL REASONING
+        </h2>
+
+        <h3>
+            🔍 Introduction to Logic
+        </h3>
+
+        <p>
+            Logic is the study of reasoning—the methods and principles used to distinguish correct reasoning from incorrect reasoning. It provides the tools to analyze arguments and evaluate whether conclusions follow from premises.
+        </p>
+
+        <h3>
+            💡 Why Logic Matters
+        </h3>
+
+        <ul>
+
+            <li>
+                 Helps construct sound arguments
+            </li>
+
+            <li>
+                 Enables identification of flawed reasoning
+            </li>
+
+            <li>
+                 Essential for critical thinking and decision-making
+            </li>
+
+            <li>
+                 Fundamental to legal reasoning and analysis
+            </li>
+
+            <li>
+                 Improves communication and persuasion skills
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ARGUMENT STRUCTURE -->
+    <div class="card">
+
+        <h2>
+            🧩 Argument Structure
+        </h2>
+
+        <h3>
+            ❓ What is an Argument?
+        </h3>
+
+        <p>
+            An argument is a set of statements where some statements (premises) are claimed to provide support for another statement (conclusion).
+        </p>
+
+        <p>
+            <strong>Key Components:</strong>
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Component
+                        </th>
+
+                        <th>
+                            Definition
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Premises</strong>
+                        </td>
+
+                        <td>
+                            Statements that provide evidence or reasons
+                        </td>
+
+                        <td>
+                            "All humans are mortal. Socrates is human."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Conclusion</strong>
+                        </td>
+
+                        <td>
+                            The statement being supported
+                        </td>
+
+                        <td>
+                            "Therefore, Socrates is mortal."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Inference</strong>
+                        </td>
+
+                        <td>
+                            The reasoning process connecting premises to conclusion
+                        </td>
+
+                        <td>
+                            The logical step from premises to conclusion
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🔎 Identifying Premises and Conclusion
+        </h3>
+
+        <p>
+            <strong>Indicator Words:</strong>
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Premise Indicators
+                        </th>
+
+                        <th>
+                            Conclusion Indicators
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            since<br>
+                            because<br>
+                            for<br>
+                            as<br>
+                            given that<br>
+                            for the reason that<br>
+                            inasmuch as<br>
+                            owing to
+                        </td>
+
+                        <td>
+                            therefore<br>
+                            hence<br>
+                            thus<br>
+                            so<br>
+                            consequently<br>
+                            it follows that<br>
+                            which shows that<br>
+                            accordingly
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             "Since it's raining (premise), the ground will be wet (conclusion)."
+
+            <br>
+
+             "The ground is wet (premise); therefore, it must have rained (conclusion)."
+
+        </div>
+
+
+        <h3>
+            ⚙️ Types of Arguments
+        </h3>
+
+        <h4>
+            A. Simple Arguments
+        </h4>
+
+        <p>
+            One premise supporting one conclusion.
+        </p>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong> "She studied hard, so she will pass the exam."
+
+        </div>
+
+
+        <h4>
+            B. Complex Arguments
+        </h4>
+
+        <p>
+            Multiple premises, possibly with intermediate conclusions.
+        </p>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             Premise 1: All humans are mortal.
+
+            <br>
+
+             Premise 2: Socrates is human.
+
+            <br>
+
+             Intermediate Conclusion: Socrates is mortal.
+
+            <br>
+
+             Premise 3: Mortal beings eventually cease to exist.
+
+            <br>
+
+             Final Conclusion: Socrates will eventually cease to exist.
+
+        </div>
+
+
+        <h3>
+            ⚖️ Evaluating Arguments
+        </h3>
+
+        <p>
+            <strong>Two Key Questions:</strong>
+        </p>
+
+        <ol>
+
+            <li>
+                1. Are the premises true? (Factual accuracy)
+            </li>
+
+            <li>
+                2. Does the conclusion follow logically from the premises? (Logical validity)
+            </li>
+
+        </ol>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            If Premises Are...
+                        </th>
+
+                        <th>
+                            And Reasoning Is...
+                        </th>
+
+                        <th>
+                            Argument is...
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            True
+                        </td>
+
+                        <td>
+                            Valid
+                        </td>
+
+                        <td>
+                            Sound
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            True
+                        </td>
+
+                        <td>
+                            Invalid
+                        </td>
+
+                        <td>
+                            Unsound
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            False
+                        </td>
+
+                        <td>
+                            Valid
+                        </td>
+
+                        <td>
+                            Unsound (but valid)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            False
+                        </td>
+
+                        <td>
+                            Invalid
+                        </td>
+
+                        <td>
+                            Unsound
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- DEDUCTIVE VS INDUCTIVE REASONING -->
+    <div class="card">
+
+        <h2>
+            🔄 Deductive vs. Inductive Reasoning
+        </h2>
+
+        <h3>
+            📐 Deductive Reasoning
+        </h3>
+
+        <p>
+            Reasoning from general principles to specific conclusions. If premises are true, the conclusion must be true.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 Moves from general to specific
+            </li>
+
+            <li>
+                 Conclusion follows necessarily
+            </li>
+
+            <li>
+                 Aim is validity (logical correctness)
+            </li>
+
+            <li>
+                 Provides certainty (if premises true)
+            </li>
+
+        </ul>
+
+
+        <h4>
+            A. Syllogisms
+        </h4>
+
+        <p>
+            A syllogism is a deductive argument with two premises and a conclusion.
+        </p>
+
+        <p>
+            <strong>Standard Form:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 Major premise: General statement
+            </li>
+
+            <li>
+                 Minor premise: Specific statement
+            </li>
+
+            <li>
+                 Conclusion: Derived statement
+            </li>
+
+        </ul>
+
+
+        <p>
+            <strong>Classic Example (Categorical Syllogism):</strong>
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Component
+                        </th>
+
+                        <th>
+                            Statement
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Major Premise
+                        </td>
+
+                        <td>
+                            All humans are mortal.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Minor Premise
+                        </td>
+
+                        <td>
+                            Socrates is human.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Conclusion
+                        </td>
+
+                        <td>
+                            Therefore, Socrates is mortal.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 All A are B. (All humans are mortal)
+            </li>
+
+            <li>
+                 C is A. (Socrates is human)
+            </li>
+
+            <li>
+                 Therefore, C is B. (Socrates is mortal)
+            </li>
+
+        </ul>
+
+
+        <h4>
+            B. Types of Deductive Arguments
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Categorical Syllogism</strong>
+                        </td>
+
+                        <td>
+                            Uses "all," "no," or "some"
+                        </td>
+
+                        <td>
+                            All A are B; C is A; so C is B
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Hypothetical Syllogism</strong>
+                        </td>
+
+                        <td>
+                            Uses "if-then" statements
+                        </td>
+
+                        <td>
+                            If p then q; if q then r; so if p then r
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Disjunctive Syllogism</strong>
+                        </td>
+
+                        <td>
+                            Uses "either-or" statements
+                        </td>
+
+                        <td>
+                            Either p or q; not p; so q
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Hypothetical Syllogism Example:</strong>
+
+            <br>
+
+             If it rains, the ground will be wet.
+
+            <br>
+
+             If the ground is wet, the grass will grow.
+
+            <br>
+
+             Therefore, if it rains, the grass will grow.
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Disjunctive Syllogism Example:</strong>
+
+            <br>
+
+             Either the butler or the gardener committed the crime.
+
+            <br>
+
+             The butler did not commit the crime.
+
+            <br>
+
+             Therefore, the gardener committed the crime.
+
+        </div>
+
+
+        <h4>
+            C. Validity and Soundness
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Concept
+                        </th>
+
+                        <th>
+                            Definition
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Valid</strong>
+                        </td>
+
+                        <td>
+                            If premises are true, conclusion must be true
+                        </td>
+
+                        <td>
+                            All A are B; C is A; so C is B (valid structure)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Invalid</strong>
+                        </td>
+
+                        <td>
+                            Conclusion does not necessarily follow
+                        </td>
+
+                        <td>
+                            All A are B; C is B; so C is A (invalid)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Sound</strong>
+                        </td>
+
+                        <td>
+                            Valid argument with true premises
+                        </td>
+
+                        <td>
+                            Valid structure + true premises
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Unsound</strong>
+                        </td>
+
+                        <td>
+                            Invalid OR has false premise(s)
+                        </td>
+
+                        <td>
+                            Valid structure + false premise OR invalid structure
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="example-box">
+
+            💡 <strong>Valid but Unsound Example:</strong>
+
+            <br>
+
+             All birds can fly. (False premise - penguins can't fly)
+
+            <br>
+
+             Penguins are birds.
+
+            <br>
+
+             Therefore, penguins can fly. (Valid but unsound)
+
+        </div>
+
+
+        <h3>
+            📊 Inductive Reasoning
+        </h3>
+
+        <p>
+            Reasoning from specific observations to general conclusions. Conclusions are probable but not certain.
+        </p>
+
+        <p>
+            <strong>Characteristics:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 Moves from specific to general
+            </li>
+
+            <li>
+                 Conclusion follows with probability
+            </li>
+
+            <li>
+                 Aim is strength (degree of support)
+            </li>
+
+            <li>
+                 Provides probability, not certainty
+            </li>
+
+        </ul>
+
+
+        <h4>
+            A. Types of Inductive Arguments
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Generalization</strong>
+                        </td>
+
+                        <td>
+                            From specific cases to general rule
+                        </td>
+
+                        <td>
+                            Observed 100 swans, all white → all swans are white
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Statistical Syllogism</strong>
+                        </td>
+
+                        <td>
+                            From general statistic to specific case
+                        </td>
+
+                        <td>
+                            90% of students pass; John is student → John will pass
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Analogical Reasoning</strong>
+                        </td>
+
+                        <td>
+                            From similarity in some respects to similarity in others
+                        </td>
+
+                        <td>
+                            Drug A worked in mice; humans similar to mice → drug A will work in humans
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Causal Inference</strong>
+                        </td>
+
+                        <td>
+                            From observed correlation to causal claim
+                        </td>
+
+                        <td>
+                            Smoking correlated with lung cancer → smoking causes lung cancer
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Predictive Reasoning</strong>
+                        </td>
+
+                        <td>
+                            From past patterns to future events
+                        </td>
+
+                        <td>
+                            Sun rose every day → sun will rise tomorrow
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h4>
+            B. Strength of Inductive Arguments
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Strength Level
+                        </th>
+
+                        <th>
+                            Aspect / Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Strong</strong>
+                        </td>
+
+                        <td>
+                            Conclusion highly probable given premises
+                        </td>
+
+                        <td>
+                            99% of observed swans white → next swan likely white
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Weak</strong>
+                        </td>
+
+                        <td>
+                            Conclusion not well supported
+                        </td>
+
+                        <td>
+                            2 of 3 observed swans white → next swan likely white
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Cogent</strong>
+                        </td>
+
+                        <td>
+                            Strong argument with true premises
+                        </td>
+
+                        <td>
+                            Strong structure + true premises
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            ⚔️ Comparison: Deductive vs. Inductive Reasoning
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Aspect
+                        </th>
+
+                        <th>
+                            Deductive
+                        </th>
+
+                        <th>
+                            Inductive
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Direction</strong>
+                        </td>
+
+                        <td>
+                            General → Specific
+                        </td>
+
+                        <td>
+                            Specific → General
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Conclusion</strong>
+                        </td>
+
+                        <td>
+                            Necessarily follows
+                        </td>
+
+                        <td>
+                            Probably follows
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Certainty</strong>
+                        </td>
+
+                        <td>
+                            Certain (if premises true)
+                        </td>
+
+                        <td>
+                            Probabilistic
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Goal</strong>
+                        </td>
+
+                        <td>
+                            Validity
+                        </td>
+
+                        <td>
+                            Strength
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Failure Mode</strong>
+                        </td>
+
+                        <td>
+                            Invalid
+                        </td>
+
+                        <td>
+                            Weak
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Truth Transfer</strong>
+                        </td>
+
+                        <td>
+                            Guarantees truth of conclusion
+                        </td>
+
+                        <td>
+                            Makes conclusion plausible
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Typical Use</strong>
+                        </td>
+
+                        <td>
+                            Mathematics, logic, legal rules
+                        </td>
+
+                        <td>
+                            Scientific research, everyday reasoning
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="diagram-container">
+
+            📌 <em>[Diagram comparing deductive and inductive reasoning flow]</em>
+
+        </div>
+
+
+        <h3>
+            ⚖️ Examples in Legal Context
+        </h3>
+
+
+        <div class="case-box">
+
+            ⚖️ <strong>Deductive Reasoning in Law:</strong>
+
+            <br>
+
+             Major Premise: All theft is punishable by law.
+
+            <br>
+
+             Minor Premise: The defendant committed theft.
+
+            <br>
+
+             Conclusion: The defendant is punishable by law.
+
+        </div>
+
+
+        <div class="case-box">
+
+            ⚖️ <strong>Inductive Reasoning in Law:</strong>
+
+            <br>
+
+             Evidence: Defendant's fingerprints at scene, motive established, no alibi.
+
+            <br>
+
+             Inductive Conclusion: Defendant likely committed the crime (beyond reasonable doubt).
+
+        </div>
+
+    </div>
+
+
+    <!-- FORMAL FALLACIES -->
+    <div class="card">
+
+        <h2>
+            ⚠️ Formal Fallacies
+        </h2>
+
+        <h3>
+            ❓ What is a Fallacy?
+        </h3>
+
+        <p>
+            A fallacy is an error in reasoning that renders an argument invalid, unsound, or misleading. Fallacies can be formal (error in logical structure) or informal (error in content or context).
+        </p>
+
+        <h3>
+            🚨 Formal Fallacies
+        </h3>
+
+        <p>
+            Errors in the logical structure of a deductive argument.
+        </p>
+
+
+        <h4>
+            A. Affirming the Consequent
+        </h4>
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 If P, then Q.
+            </li>
+
+            <li>
+                 Q is true.
+            </li>
+
+            <li>
+                 Therefore, P is true. (INVALID)
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             If it rains, the ground will be wet.
+
+            <br>
+
+             The ground is wet.
+
+            <br>
+
+             Therefore, it rained. <em>(Fallacy - ground could be wet from other causes)</em>
+
+        </div>
+
+
+        <h4>
+            B. Denying the Antecedent
+        </h4>
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 If P, then Q.
+            </li>
+
+            <li>
+                 P is false.
+            </li>
+
+            <li>
+                 Therefore, Q is false. (INVALID)
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             If it rains, the ground will be wet.
+
+            <br>
+
+             It did not rain.
+
+            <br>
+
+             Therefore, the ground is not wet. <em>(Fallacy - sprinklers could wet ground)</em>
+
+        </div>
+
+
+        <h4>
+            C. Undistributed Middle
+        </h4>
+
+        <p>
+            <strong>Structure:</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                 All A are B.
+            </li>
+
+            <li>
+                 All C are B.
+            </li>
+
+            <li>
+                 Therefore, all A are C. (INVALID)
+            </li>
+
+        </ul>
+
+        <div class="example-box">
+
+            💡 <strong>Example:</strong>
+
+            <br>
+
+             All dogs are mammals.
+
+            <br>
+
+             All cats are mammals.
+
+            <br>
+
+             Therefore, all dogs are cats. <em>(Clearly false)</em>
+
+        </div>
+
+    </div>
+
+
+    <!-- INFORMAL FALLACIES -->
+    <div class="card">
+
+        <h2>
+            📢 Informal Fallacies
+        </h2>
+
+        <p>
+            Errors in reasoning related to content, context, or relevance.
+        </p>
+
+
+        <h3>
+            🎯 A. Fallacies of Relevance
+        </h3>
+
+        <p>
+            Premises irrelevant to conclusion.
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Fallacy
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Ad Hominem</strong>
+                        </td>
+
+                        <td>
+                            Attacking person instead of argument
+                        </td>
+
+                        <td>
+                            "You can't trust his argument about climate change—he's not a scientist."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Ad Hominem (Abusive)</strong>
+                        </td>
+
+                        <td>
+                            Direct personal attack
+                        </td>
+
+                        <td>
+                            "Her opinion on tax reform is worthless because she's uneducated."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Ad Hominem (Circumstantial)</strong>
+                        </td>
+
+                        <td>
+                            Attacking based on circumstances
+                        </td>
+
+                        <td>
+                            "Of course he supports oil drilling—he works for an oil company."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Tu Quoque</strong>
+                        </td>
+
+                        <td>
+                            "You too" fallacy; accusing opponent of hypocrisy
+                        </td>
+
+                        <td>
+                            "You say smoking is bad, but you smoke yourself!"
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>StrawMan</strong>
+                        </td>
+
+                        <td>
+                            Misrepresenting opponent's argument to easier attack
+                        </td>
+
+                        <td>
+                            "Environmentalists want to shut down all industry and return to Stone Age."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Appeal to Force</strong>
+                        </td>
+
+                        <td>
+                            Using threats to win argument
+                        </td>
+
+                        <td>
+                            "You should agree with my proposal if you want to keep your job."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Appeal to Pity</strong>
+                        </td>
+
+                        <td>
+                            Using emotion to distract from logic
+                        </td>
+
+                        <td>
+                            "Please pass this student; he worked so hard and his mother is ill."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Appeal to Popularity</strong>
+                        </td>
+
+                        <td>
+                            Arguing something is true because many believe it
+                        </td>
+
+                        <td>
+                            "Millions of people believe in astrology, so it must be true."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Appeal to Authority</strong>
+                        </td>
+
+                        <td>
+                            Citing inappropriate authority
+                        </td>
+
+                        <td>
+                            "My celebrity endorsement proves this product is effective."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Appeal to Ignorance</strong>
+                        </td>
+
+                        <td>
+                            Arguing something is true because not proven false
+                        </td>
+
+                        <td>
+                            "No one has proven ghosts don't exist, so they must exist."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Red Herring</strong>
+                        </td>
+
+                        <td>
+                            Introducing irrelevant topic to divert attention
+                        </td>
+
+                        <td>
+                            "You ask about my tax evasion, but what about the other party's corruption?"
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🔍 B. Fallacies of Ambiguity
+        </h3>
+
+        <p>
+            Unclear or shifting meaning.
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Fallacy
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Equivocation</strong>
+                        </td>
+
+                        <td>
+                            Using same word with different meanings
+                        </td>
+
+                        <td>
+                            "The end of a thing is its perfection; death is the end of life; therefore, death is the perfection of life."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Amphiboly</strong>
+                        </td>
+
+                        <td>
+                            Ambiguous sentence structure
+                        </td>
+
+                        <td>
+                            "I shot an elephant in my pajamas." (Who wore the pajamas?)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Composition</strong>
+                        </td>
+
+                        <td>
+                            Assuming what's true of parts is true of whole
+                        </td>
+
+                        <td>
+                            "Each player on the team is excellent; therefore, the team is excellent."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Division</strong>
+                        </td>
+
+                        <td>
+                            Assuming what's true of whole is true of parts
+                        </td>
+
+                        <td>
+                            "This team is excellent; therefore, each player is excellent."
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🤔 C. Fallacies of Presumption
+        </h3>
+
+        <p>
+            Unwarranted assumptions.
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Fallacy
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Begging the Question</strong>
+                        </td>
+
+                        <td>
+                            Circular reasoning; assuming what you're trying to prove
+                        </td>
+
+                        <td>
+                            "The Bible is true because it is the word of God." (How do we know it's God's word? The Bible says so.)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>False Dilemma</strong>
+                        </td>
+
+                        <td>
+                            Presenting only two options when more exist
+                        </td>
+
+                        <td>
+                            "Either you're with us or against us."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Hasty Generalization</strong>
+                        </td>
+
+                        <td>
+                            Drawing conclusion from insufficient evidence
+                        </td>
+
+                        <td>
+                            "I met two rude people from that city; everyone there must be rude."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Slippery Slope</strong>
+                        </td>
+
+                        <td>
+                            Claiming one step inevitably leads to extreme outcome
+                        </td>
+
+                        <td>
+                            "If we allow same-sex marriage, next people will marry animals."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>False Cause</strong>
+                        </td>
+
+                        <td>
+                            Assuming correlation implies causation
+                        </td>
+
+                        <td>
+                            "Ice cream sales increase when drownings occur; therefore, ice cream causes drowning."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Genetic Fallacy</strong>
+                        </td>
+
+                        <td>
+                            Judging argument by its origin
+                        </td>
+
+                        <td>
+                            "This idea came from a communist, so it must be wrong."
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            ❓ D. Fallacies of Missing Evidence
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Fallacy
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Example
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Appeal to Ignorance</strong>
+                        </td>
+
+                        <td>
+                            Claiming something is true because not disproven
+                        </td>
+
+                        <td>
+                            "No one has proven UFOs don't exist, so they must be real."
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Burden of Proof</strong>
+                        </td>
+
+                        <td>
+                            Improperly shifting burden of proof
+                        </td>
+
+                        <td>
+                            "Prove that God doesn't exist; until then, I'll believe."
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+            🧠 Fallacy Detection Tips
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Tip
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>Identify conclusion first</strong>
+                        </td>
+
+                        <td>
+                            Know what's being argued before evaluating
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Check relevance</strong>
+                        </td>
+
+                        <td>
+                            Do premises actually support conclusion?
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Look for ambiguity</strong>
+                        </td>
+
+                        <td>
+                            Are key terms used consistently?
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Examine assumptions</strong>
+                        </td>
+
+                        <td>
+                            What is taken for granted that needs proof?
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Consider alternatives</strong>
+                        </td>
+
+                        <td>
+                            Are other explanations or options ignored?
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <strong>Watch emotions</strong>
+                        </td>
+
+                        <td>
+                            Is argument appealing to feelings instead of reason?
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<footer class="footer">
+
+    🧠 Law Chapter 3
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
