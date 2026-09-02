@@ -1,1 +1,2665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Health Chapter 2 | Complete Study Notes</title>
+
+
+    <style>
+
+        /* =================================================
+           UNIQUE ACADEMIC
+           HEALTH CHAPTER 2 COMPLETE STUDY NOTES
+        ================================================= */
+
+        :root {
+
+            --bg-color: #f0fdf4;
+
+            --card-bg: #ffffff;
+
+            --text-main: #17324d;
+
+            --text-muted: #526575;
+
+            --primary-green: #047857;
+
+            --dark-green: #065f46;
+
+            --accent-blue: #0369a1;
+
+            --accent-teal: #0f766e;
+
+            --accent-orange: #c2410c;
+
+            --border-color: #d1fae5;
+
+            --shadow:
+                0 4px 10px rgba(0, 0, 0, 0.05),
+                0 2px 5px rgba(0, 0, 0, 0.03);
+
+        }
+
+
+        /* =================================================
+           RESET
+        ================================================= */
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        /* =================================================
+           BODY
+        ================================================= */
+
+        body {
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f0fdf4,
+                    #f8fafc
+                );
+
+            color: var(--text-main);
+
+            line-height: 1.6;
+
+            padding: 12px;
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
+        }
+
+
+        /* =================================================
+           NAVIGATION
+        ================================================= */
+
+        .page-navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 16px;
+
+        }
+
+
+        .page-navigation a {
+
+            text-decoration: none;
+
+            padding: 10px 15px;
+
+            border-radius: 13px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            box-shadow: var(--shadow);
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .page-navigation a:active {
+
+            transform: scale(0.96);
+
+        }
+
+
+        .back-btn {
+
+            background: var(--primary-green);
+
+            color: white;
+
+        }
+
+
+        .home-btn {
+
+            background: white;
+
+            color: var(--primary-green);
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        /* =================================================
+           HEADER
+        ================================================= */
+
+        header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary-green),
+                    var(--dark-green)
+                );
+
+            color: white;
+
+            padding: 23px 16px;
+
+            border-radius: 20px;
+
+            margin-bottom: 16px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .chapter-label {
+
+            display: inline-block;
+
+            padding: 4px 11px;
+
+            margin-bottom: 8px;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.15);
+
+            font-size: 0.75rem;
+
+        }
+
+
+        header h1 {
+
+            font-size: 1.45rem;
+
+            font-weight: 700;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        header p {
+
+            color: white;
+
+            opacity: 0.9;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        /* =================================================
+           CARDS
+        ================================================= */
+
+        .card {
+
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 18px;
+
+            padding: 18px 16px;
+
+            margin-bottom: 16px;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        /* =================================================
+           HEADINGS
+        ================================================= */
+
+        h2 {
+
+            color: var(--primary-green);
+
+            font-size: 1.15rem;
+
+            margin-bottom: 12px;
+
+            padding-bottom: 7px;
+
+            border-bottom: 2px solid #d1fae5;
+
+        }
+
+
+        h3 {
+
+            color: var(--text-main);
+
+            font-size: 1rem;
+
+            margin: 14px 0 8px;
+
+        }
+
+        h4 {
+
+            color: var(--accent-teal);
+
+            font-size: 0.95rem;
+
+            margin: 10px 0 6px;
+
+        }
+
+
+        /* =================================================
+           TEXT & LISTS
+        ================================================= */
+
+        p {
+
+            color: var(--text-muted);
+
+            font-size: 0.95rem;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        ul,
+        ol {
+
+            padding-left: 21px;
+
+            color: var(--text-muted);
+
+            font-size: 0.94rem;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        li {
+
+            margin-bottom: 6px;
+
+        }
+
+
+        /* =================================================
+           STUDY BOXES & HIGHLIGHTS
+        ================================================= */
+
+        .study-box {
+
+            background: #ecfdf5;
+
+            border-left: 4px solid var(--accent-teal);
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .important-box {
+
+            background: #eff6ff;
+
+            border-left: 4px solid var(--accent-blue);
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .warning-box {
+
+            background: #fff7ed;
+
+            border-left: 4px solid #f97316;
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+        /* =================================================
+           TABLE RESPONSIVE STYLING
+        ================================================= */
+
+        .table-responsive {
+
+            width: 100%;
+
+            overflow-x: auto;
+
+            margin: 12px 0;
+
+            border-radius: 10px;
+
+            border: 1px solid var(--border-color);
+
+        }
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            font-size: 0.85rem;
+
+            text-align: left;
+
+            background: #ffffff;
+
+        }
+
+        th {
+
+            background: #e6f4ea;
+
+            color: var(--dark-green);
+
+            font-weight: 700;
+
+            padding: 10px 8px;
+
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+        td {
+
+            padding: 9px 8px;
+
+            border-bottom: 1px solid #f0fdf4;
+
+            color: var(--text-main);
+
+        }
+
+        tr:nth-child(even) {
+
+            background-color: #f9fbf9;
+
+        }
+
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+
+        .footer {
+
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: var(--text-muted);
+
+            font-size: 0.82rem;
+
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 480px) {
+
+            body {
+
+                padding: 10px;
+
+            }
+
+
+            .page-navigation a {
+
+                padding: 9px 12px;
+
+                font-size: 13px;
+
+            }
+
+
+            header {
+
+                padding: 20px 14px;
+
+            }
+
+
+            header h1 {
+
+                font-size: 1.3rem;
+
+            }
+
+
+            .card {
+
+                padding: 16px 14px;
+
+            }
+
+
+            h2 {
+
+                font-size: 1.08rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+
+<div class="page-navigation">
+
+
+    <a
+        href="health-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+
+</div>
+
+
+
+<!-- =================================================
+     HEADER
+================================================= -->
+
+<header>
+
+
+    <div class="chapter-label">
+
+        🏥 HEALTH CoC • CHAPTER 2
+
+    </div>
+
+
+    <h1>
+
+        🫀 Chapter 2: BIOLOGY: Human Anatomy &amp; Physiology
+
+    </h1>
+
+
+    <p>
+
+        Complete Study Notes (Health CoC Note)
+
+    </p>
+
+
+</header>
+
+
+
+<!-- =================================================
+     CHAPTER CONTENT
+================================================= -->
+
+<section>
+
+
+    <!-- CHAPTER OVERVIEW -->
+
+    <div class="card">
+
+
+        <h2>
+
+            📖 Chapter Overview
+
+        </h2>
+
+
+        <p>
+
+            <strong>Chapter 2 Focus:</strong> Human Anatomy &amp; Physiology, covering Digestive, Circulatory, Nervous, Respiratory, Reproductive, Endocrine, and Sensory Systems.
+
+        </p>
+
+
+        <div class="study-box">
+
+            <strong>🔬 Note Scope:</strong>
+
+            <br>
+
+            This section contains full exam notes covering the <strong>Digestive System</strong> and <strong>Circulatory System</strong> in complete detail.
+
+        </div>
+
+
+    </div>
+
+
+    <!-- DIGESTIVE SYSTEM OVERVIEW & FUNCTIONS -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🍔 DIGESTIVE SYSTEM
+
+        </h2>
+
+
+        <p>
+
+            The digestive system is responsible for breaking down food into absorbable molecules, absorbing nutrients, and eliminating indigestible waste. It consists of the <strong>alimentary canal</strong> (gastrointestinal tract) and <strong>accessory organs</strong>.
+
+        </p>
+
+
+        <h3>
+
+            ⚙️ Functions of the Digestive System
+
+        </h3>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Ingestion:</strong> Taking food into the mouth.
+
+            </li>
+
+            <li>
+
+                <strong>Propulsion:</strong> Movement of food through the tract (swallowing, peristalsis).
+
+            </li>
+
+            <li>
+
+                <strong>Mechanical digestion:</strong> Physical breakdown (chewing, churning).
+
+            </li>
+
+            <li>
+
+                <strong>Chemical digestion:</strong> Enzymatic breakdown of macromolecules.
+
+            </li>
+
+            <li>
+
+                <strong>Absorption:</strong> Passage of digested nutrients into blood/lymph.
+
+            </li>
+
+            <li>
+
+                <strong>Defecation:</strong> Elimination of indigestible waste.
+
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+
+    <!-- ORGANS OF THE DIGESTIVE SYSTEM -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🧱 Organs of the Digestive System
+
+        </h2>
+
+
+        <h3>
+
+            👄 A. Mouth (Oral Cavity)
+
+        </h3>
+
+
+        <p>
+
+            <strong>Structures:</strong>
+
+        </p>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Teeth:</strong> Mechanical breakdown (mastication).
+
+            </li>
+
+            <li>
+
+                <strong>Tongue:</strong> Manipulates food, contains taste buds, aids in swallowing.
+
+            </li>
+
+            <li>
+
+                <strong>Salivary glands:</strong> Parotid, submandibular, sublingual.
+
+            </li>
+
+            <li>
+
+                <strong>Saliva:</strong>
+
+                <ul>
+
+                    <li>
+
+                        <strong>Composition:</strong> 99% water, electrolytes, mucus, enzymes, lysozyme.
+
+                    </li>
+
+                    <li>
+
+                        <strong>Functions:</strong> Moistens food, begins starch digestion, antibacterial.
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🗣️ B. Pharynx and Esophagus
+
+        </h3>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Pharynx:</strong> Common passage for food and air.
+
+                <ul>
+
+                    <li>
+
+                        <strong>Divided into:</strong> Nasopharynx, oropharynx, laryngopharynx.
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+
+                <strong>Esophagus:</strong>
+
+                <ul>
+
+                    <li>Muscular tube (25 cm) connecting pharynx to stomach</li>
+
+                    <li>Passes through esophageal hiatus of diaphragm</li>
+
+                    <li>Contains upper and lower esophageal sphincters</li>
+
+                </ul>
+
+            </li>
+
+            <li>
+
+                <strong>Swallowing (Deglutition):</strong>
+
+                <ul>
+
+                    <li>
+
+                        <strong>Buccal phase:</strong> Voluntary - tongue pushes bolus to pharynx.
+
+                    </li>
+
+                    <li>
+
+                        <strong>Pharyngeal phase:</strong> Involuntary - soft palate elevates, epiglottis covers larynx.
+
+                    </li>
+
+                    <li>
+
+                        <strong>Esophageal phase:</strong> Peristalsis moves bolus to stomach.
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🧪 C. Stomach
+
+        </h3>
+
+
+        <p>
+
+            <strong>Regions:</strong>
+
+        </p>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Cardia:</strong> Entry area near esophagus.
+
+            </li>
+
+            <li>
+
+                <strong>Fundus:</strong> Dome-shaped upper portion.
+
+            </li>
+
+            <li>
+
+                <strong>Body:</strong> Main central region.
+
+            </li>
+
+            <li>
+
+                <strong>Pylorus:</strong> Lower portion with pyloric sphincter.
+
+            </li>
+
+        </ul>
+
+
+        <div class="important-box">
+
+            <strong>⚙️ Functions of the Stomach:</strong>
+
+            <ul>
+
+                <li>Mechanical digestion (churning)</li>
+
+                <li>Chemical digestion (proteins begin)</li>
+
+                <li>Storage of food</li>
+
+                <li>Production of intrinsic factor</li>
+
+                <li>Limited absorption (water, alcohol, some drugs)</li>
+
+            </ul>
+
+        </div>
+
+
+        <h3>
+
+            🌀 D. Small Intestine
+
+        </h3>
+
+
+        <p>
+
+            <strong>Length:</strong> ~6 meters
+
+        </p>
+
+
+        <p>
+
+            <strong>Regions:</strong> Duodenum (25 cm), Jejunum (~2.5 m), Ileum (~3.5 m)
+
+        </p>
+
+
+        <h4>
+
+            Structural Adaptations for Absorption:
+
+        </h4>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Structure</th>
+
+                        <th>Description</th>
+
+                        <th>Function</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Circular folds</strong> (plicae circulares)</td>
+
+                        <td>Permanent transverse folds</td>
+
+                        <td>Increase surface area 3x</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Villi</strong></td>
+
+                        <td>Finger-like projections (1 mm tall)</td>
+
+                        <td>Increase surface area 10x</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Microvilli</strong></td>
+
+                        <td>Microscopic projections on epithelial cells</td>
+
+                        <td>Increase surface area 20x (brush border)</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🪱 E. Large Intestine
+
+        </h3>
+
+
+        <p>
+
+            <strong>Length:</strong> ~1.5 meters
+
+        </p>
+
+
+        <p>
+
+            <strong>Regions:</strong> Cecum (with appendix), Colon (ascending, transverse, descending, sigmoid), Rectum, Anal canal.
+
+        </p>
+
+
+        <div class="study-box">
+
+            <strong>⚙️ Functions of Large Intestine:</strong>
+
+            <ul>
+
+                <li>Absorption of water and electrolytes</li>
+
+                <li>Compaction of indigestible material into feces</li>
+
+                <li>Bacterial fermentation of undigested carbohydrates</li>
+
+                <li>Vitamin production (Vitamin K, some B vitamins by gut bacteria)</li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- DIGESTIVE ENZYMES AND THEIR ACTIONS -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🧪 Digestive Enzymes and Their Actions
+
+        </h2>
+
+
+        <h3>
+
+            🍞 A. Carbohydrate-Digesting Enzymes
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Enzyme</th>
+
+                        <th>Source</th>
+
+                        <th>Substrate</th>
+
+                        <th>Product</th>
+
+                        <th>Optimal pH</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Salivary amylase</strong></td>
+
+                        <td>Salivary glands</td>
+
+                        <td>Starch (amylose, amylopectin)</td>
+
+                        <td>Maltose, maltotriose, dextrins</td>
+
+                        <td>6.8-7.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Pancreatic amylase</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>Starch</td>
+
+                        <td>Maltose, maltotriose</td>
+
+                        <td>7.0-8.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Maltase</strong></td>
+
+                        <td>Brush border</td>
+
+                        <td>Maltose</td>
+
+                        <td>Glucose</td>
+
+                        <td>~7.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Sucrase</strong></td>
+
+                        <td>Brush border</td>
+
+                        <td>Sucrose</td>
+
+                        <td>Glucose + Fructose</td>
+
+                        <td>~7.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Lactase</strong></td>
+
+                        <td>Brush border</td>
+
+                        <td>Lactose</td>
+
+                        <td>Glucose + Galactose</td>
+
+                        <td>~7.0</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🥩 B. Protein-Digesting Enzymes
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Enzyme</th>
+
+                        <th>Source</th>
+
+                        <th>Substrate</th>
+
+                        <th>Product</th>
+
+                        <th>Activation</th>
+
+                        <th>Optimal pH</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Pepsin</strong></td>
+
+                        <td>Chief cells (stomach)</td>
+
+                        <td>Proteins</td>
+
+                        <td>Peptides, proteoses</td>
+
+                        <td>HCl (pH 1.5-2.0)</td>
+
+                        <td>1.5-2.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Trypsin</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>Proteins, peptides</td>
+
+                        <td>Smaller peptides</td>
+
+                        <td>Enterokinase</td>
+
+                        <td>7.5-8.5</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🥑 C. Fat-Digesting Enzymes
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Enzyme</th>
+
+                        <th>Source</th>
+
+                        <th>Substrate</th>
+
+                        <th>Product</th>
+
+                        <th>Requirements</th>
+
+                        <th>Optimal pH</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Lingual lipase</strong></td>
+
+                        <td>Lingual glands</td>
+
+                        <td>Triglycerides</td>
+
+                        <td>Fatty acids + diglycerides</td>
+
+                        <td>-</td>
+
+                        <td>3.0-6.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Gastric lipase</strong></td>
+
+                        <td>Chief cells</td>
+
+                        <td>Triglycerides</td>
+
+                        <td>Fatty acids + diglycerides</td>
+
+                        <td>-</td>
+
+                        <td>4.0-6.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Pancreatic lipase</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>Triglycerides</td>
+
+                        <td>2-monoglycerides + fatty acids</td>
+
+                        <td>Colipase, bile salts</td>
+
+                        <td>7.0-8.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Phospholipase A₂</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>Phospholipids</td>
+
+                        <td>Fatty acid + lysophospholipid</td>
+
+                        <td>Trypsin activation</td>
+
+                        <td>7.0-8.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Cholesterol esterase</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>Cholesterol esters</td>
+
+                        <td>Cholesterol + fatty acid</td>
+
+                        <td>Bile salts</td>
+
+                        <td>7.0-8.0</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🧬 D. Nucleic Acid-Digesting Enzymes
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Enzyme</th>
+
+                        <th>Source</th>
+
+                        <th>Substrate</th>
+
+                        <th>Product</th>
+
+                        <th>Optimal pH</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Ribonuclease</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>RNA</td>
+
+                        <td>Nucleotides</td>
+
+                        <td>7.0-8.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Deoxyribonuclease</strong></td>
+
+                        <td>Pancreas</td>
+
+                        <td>DNA</td>
+
+                        <td>Nucleotides</td>
+
+                        <td>7.0-8.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Nucleotidases</strong></td>
+
+                        <td>Brush border</td>
+
+                        <td>Nucleotides</td>
+
+                        <td>Nucleosides + phosphate</td>
+
+                        <td>~7.0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Nucleosidases</strong></td>
+
+                        <td>Brush border</td>
+
+                        <td>Nucleosides</td>
+
+                        <td>Nitrogenous bases + sugars</td>
+
+                        <td>~7.0</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ABSORPTION SITES SUMMARY -->
+
+    <div class="card">
+
+
+        <h2>
+
+            📍 Absorption Sites &amp; Mechanisms
+
+        </h2>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nutrient</th>
+
+                        <th>Form Absorbed</th>
+
+                        <th>Primary Absorption Site</th>
+
+                        <th>Mechanism</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Carbohydrates</strong></td>
+
+                        <td>Monosaccharides (glucose, galactose, fructose)</td>
+
+                        <td>Small intestine (duodenum/jejunum)</td>
+
+                        <td>Active transport (glucose, galactose); facilitated diffusion (fructose)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Proteins</strong></td>
+
+                        <td>Amino acids, dipeptides, tripeptides</td>
+
+                        <td>Small intestine (duodenum/jejunum)</td>
+
+                        <td>Active transport (amino acids); H⁺-dependent transport (di/tripeptides)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Lipids</strong></td>
+
+                        <td>Fatty acids, monoglycerides, cholesterol</td>
+
+                        <td>Small intestine (jejunum)</td>
+
+                        <td>Diffusion after micelle formation; re-esterified in enterocytes</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Water</strong></td>
+
+                        <td>Water</td>
+
+                        <td>Small intestine, large intestine</td>
+
+                        <td>Osmosis</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Electrolytes</strong></td>
+
+                        <td>Na⁺, K⁺, Cl⁻, Ca²⁺, Fe²⁺, etc.</td>
+
+                        <td>Small intestine, large intestine</td>
+
+                        <td>Active transport, diffusion</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vitamins</strong></td>
+
+                        <td>Fat-soluble (A, D, E, K)</td>
+
+                        <td>Small intestine (jejunum)</td>
+
+                        <td>Micelle-mediated diffusion</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vitamins</strong></td>
+
+                        <td>Water-soluble (B complex, C)</td>
+
+                        <td>Small intestine</td>
+
+                        <td>Active transport or diffusion</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Vitamin B₁₂</strong></td>
+
+                        <td>B₁₂ + intrinsic factor</td>
+
+                        <td>Ileum</td>
+
+                        <td>Receptor-mediated endocytosis</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🗺️ Regional Breakdown of Absorption
+
+        </h3>
+
+
+        <ul>
+
+            <li>
+
+                <strong>A. Mouth:</strong> Limited absorption: Some drugs (nitroglycerin).
+
+            </li>
+
+            <li>
+
+                <strong>B. Stomach:</strong> Water (small amounts), Alcohol (ethanol), Aspirin (lipid-soluble form), Some lipid-soluble drugs.
+
+            </li>
+
+            <li>
+
+                <strong>C. Small Intestine (Primary absorption site):</strong>
+
+                <ul>
+
+                    <li>
+
+                        <strong>Duodenum:</strong> Iron (Fe²⁺), Calcium (Ca²⁺), Folate, Monosaccharides (glucose, galactose), Amino acids.
+
+                    </li>
+
+                    <li>
+
+                        <strong>Jejunum:</strong> Most monosaccharides, Most amino acids and dipeptides, Fatty acids and monoglycerides (after micelle formation), Fat-soluble vitamins (A, D, E, K), Water-soluble vitamins (except B₁₂), Electrolytes (Na⁺, K⁺, Cl⁻).
+
+                    </li>
+
+                    <li>
+
+                        <strong>Ileum:</strong> Vitamin B₁₂ (requires intrinsic factor), Bile salts (enterohepatic circulation), Remaining nutrients not absorbed earlier.
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+
+                <strong>D. Large Intestine:</strong> Water (80% of remaining water absorbed), Electrolytes (Na⁺, Cl⁻), Short-chain fatty acids (from bacterial fermentation of fiber), Vitamin K (produced by gut bacteria), Some B vitamins.
+
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+
+    <!-- CIRCULATORY SYSTEM -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🫀 CIRCULATORY SYSTEM
+
+        </h2>
+
+
+        <h3>
+
+            🧩 Components of the Circulatory System
+
+        </h3>
+
+
+        <p>
+
+            The circulatory system consists of:
+
+        </p>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Heart:</strong> Muscular pump.
+
+            </li>
+
+            <li>
+
+                <strong>Blood vessels:</strong> Arteries, arterioles, capillaries, venules, veins.
+
+            </li>
+
+            <li>
+
+                <strong>Blood:</strong> Fluid connective tissue.
+
+            </li>
+
+        </ul>
+
+
+        <div class="study-box">
+
+            <strong>⚙️ Functions of the Circulatory System:</strong>
+
+            <ul>
+
+                <li><strong>Transport:</strong> O₂, CO₂, nutrients, hormones, wastes</li>
+
+                <li><strong>Regulation:</strong> Temperature, pH, fluid balance</li>
+
+                <li><strong>Protection:</strong> Immunity, clotting</li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- BLOOD VESSELS -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🩺 Blood Vessels: Structure and Function
+
+        </h2>
+
+
+        <h3>
+
+            🅰️ A. Arteries
+
+        </h3>
+
+
+        <ul>
+
+            <li>Carry blood away from the heart</li>
+
+            <li>Thick walls with three layers:
+
+                <ul>
+
+                    <li><strong>Tunica intima:</strong> Endothelium + basement membrane</li>
+
+                    <li><strong>Tunica media:</strong> Smooth muscle + elastic fibers (thickest in arteries)</li>
+
+                    <li><strong>Tunica adventitia:</strong> Connective tissue</li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+
+        <p>
+
+            <strong>Types of Arteries:</strong>
+
+        </p>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Elastic arteries</strong> (aorta, pulmonary): Dampen pressure fluctuations.
+
+            </li>
+
+            <li>
+
+                <strong>Muscular arteries</strong> (femoral, renal): Distribute blood to organs.
+
+            </li>
+
+            <li>
+
+                <strong>Arterioles:</strong> Regulate blood flow into capillaries (resistance vessels).
+
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            🕸️ B. Capillaries
+
+        </h3>
+
+
+        <ul>
+
+            <li>Microscopic vessels (one cell thick)</li>
+
+            <li>Site of exchange between blood and tissues</li>
+
+        </ul>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Type</th>
+
+                        <th>Characteristics</th>
+
+                        <th>Location</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Continuous</strong></td>
+
+                        <td>Tight junctions; small gaps (4 nm)</td>
+
+                        <td>Muscles, lungs, CNS</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Fenestrated</strong></td>
+
+                        <td>Pores (60-80 nm) in endothelium</td>
+
+                        <td>Kidneys, intestines, endocrine glands</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Sinusoidal</strong></td>
+
+                        <td>Large gaps, incomplete basement membrane</td>
+
+                        <td>Liver, spleen, bone marrow</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🟦 C. Veins
+
+        </h3>
+
+
+        <ul>
+
+            <li>Carry blood toward the heart</li>
+
+            <li>Thinner walls, larger lumen than arteries</li>
+
+            <li>Contain valves (in limbs) to prevent backflow</li>
+
+            <li>Capacitance vessels (hold ~60% of blood volume)</li>
+
+        </ul>
+
+
+    </div>
+
+
+
+    <!-- BLOOD PRESSURE & CARDIAC CYCLE -->
+
+    <div class="card">
+
+
+        <h2>
+
+            📊 Blood Pressure &amp; Cardiac Cycle
+
+        </h2>
+
+
+        <p>
+
+            <strong>Blood pressure</strong> = Force exerted by blood against vessel walls
+
+        </p>
+
+
+        <h3>
+
+            🔄 Cardiac Cycle and Pressure
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Phase</th>
+
+                        <th>Ventricular Pressure</th>
+
+                        <th>Aortic Pressure</th>
+
+                        <th>AV Valves</th>
+
+                        <th>Semilunar Valves</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Ventricular systole</strong></td>
+
+                        <td>Rises (80-120 mmHg)</td>
+
+                        <td>80-120 mmHg</td>
+
+                        <td>Closed</td>
+
+                        <td>Open</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Ventricular diastole</strong></td>
+
+                        <td>Falls (0-10 mmHg)</td>
+
+                        <td>Drops to ~80 mmHg</td>
+
+                        <td>Open</td>
+
+                        <td>Closed</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            📈 Blood Pressure Values
+
+        </h3>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Systolic pressure:</strong> Peak pressure during ventricular contraction (~120 mmHg)
+
+            </li>
+
+            <li>
+
+                <strong>Diastolic pressure:</strong> Minimum pressure during ventricular relaxation (~80 mmHg)
+
+            </li>
+
+            <li>
+
+                <strong>Pulse pressure</strong> = Systolic - Diastolic (~40 mmHg)
+
+            </li>
+
+            <li>
+
+                <strong>Mean arterial pressure (MAP)</strong> = Diastolic + 1/3 Pulse pressure
+
+            </li>
+
+        </ul>
+
+
+        <h3>
+
+            ⚡ Factors Affecting Blood Pressure
+
+        </h3>
+
+
+        <p>
+
+            <strong>MAP = Cardiac Output × Total Peripheral Resistance</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Factor</th>
+
+                        <th>Effect on BP</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>↑ Cardiac output</td>
+
+                        <td>↑ BP</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>↑ Peripheral resistance</td>
+
+                        <td>↑ BP</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>↑ Blood volume</td>
+
+                        <td>↑ BP</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>↑ Blood viscosity</td>
+
+                        <td>↑ BP</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>↑ Venous return</td>
+
+                        <td>↑ BP</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- BLOOD GROUPS & RH FACTOR -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🩸 Blood Groups &amp; Genetics
+
+        </h2>
+
+
+        <h3>
+
+            🅰️🅱️🅾️ ABO Blood Group System
+
+        </h3>
+
+
+        <p>
+
+            <strong>Antigens and Antibodies:</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Blood Type</th>
+
+                        <th>Antigens on RBC</th>
+
+                        <th>Antibodies in Plasma</th>
+
+                        <th>Can Donate To</th>
+
+                        <th>Can Receive From</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>A</strong></td>
+
+                        <td>A</td>
+
+                        <td>Anti-B</td>
+
+                        <td>A, AB</td>
+
+                        <td>A, O</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>B</strong></td>
+
+                        <td>B</td>
+
+                        <td>Anti-A</td>
+
+                        <td>B, AB</td>
+
+                        <td>B, O</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>AB</strong></td>
+
+                        <td>A and B</td>
+
+                        <td>None</td>
+
+                        <td>AB only</td>
+
+                        <td>A, B, AB, O (universal recipient)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>O</strong></td>
+
+                        <td>None</td>
+
+                        <td>Anti-A and Anti-B</td>
+
+                        <td>A, B, AB, O (universal donor)</td>
+
+                        <td>O only</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🧬 Genetics of ABO System
+
+        </h3>
+
+
+        <ul>
+
+            <li>Gene located on chromosome 9</li>
+
+            <li>Three alleles: Iᴬ, Iᴮ, i</li>
+
+            <li>Iᴬ and Iᴮ are codominant; i is recessive</li>
+
+        </ul>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Genotype</th>
+
+                        <th>Blood Type</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>IᴬIᴬ or Iᴬi</td>
+
+                        <td>A</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>IᴮIᴮ or Iᴮi</td>
+
+                        <td>B</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>IᴬIᴮ</td>
+
+                        <td>AB</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>ii</td>
+
+                        <td>O</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            ➕➖ Rh Factor (Rhesus System)
+
+        </h3>
+
+
+        <ul>
+
+            <li><strong>Rh-positive:</strong> Have D antigen (~85% of population)</li>
+
+            <li><strong>Rh-negative:</strong> Lack D antigen (~15%)</li>
+
+        </ul>
+
+
+        <div class="warning-box">
+
+            <strong>⚠️ Clinical significance — Hemolytic Disease of Newborn (HDN):</strong>
+
+            <br>
+
+            Occurs when an <strong>Rh-negative mother</strong> carries an <strong>Rh-positive baby</strong>.
+
+            <ul>
+
+                <li><strong>First pregnancy:</strong> Sensitization occurs during delivery.</li>
+
+                <li><strong>Subsequent pregnancy:</strong> Maternal anti-D antibodies cross placenta and destroy fetal RBCs.</li>
+
+                <li><strong>Prevention:</strong> RhoGAM (anti-D antibodies) given to mother.</li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- BLOOD COMPOSITION AND FUNCTIONS -->
+
+    <div class="card">
+
+
+        <h2>
+
+            🧪 Blood Composition &amp; Functions
+
+        </h2>
+
+
+        <h3>
+
+            🩸 Components of Blood
+
+        </h3>
+
+
+        <p>
+
+            <strong>1. Plasma (55%):</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Component</th>
+
+                        <th>Percentage</th>
+
+                        <th>Contents</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Water</strong></td>
+
+                        <td>92%</td>
+
+                        <td>Solvent</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Proteins</strong></td>
+
+                        <td>7%</td>
+
+                        <td>Albumin, globulins, fibrinogen</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Electrolytes</strong></td>
+
+                        <td>&lt;1%</td>
+
+                        <td>Na⁺, K⁺, Ca²⁺, Cl⁻, HCO₃⁻</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Nutrients</strong></td>
+
+                        <td>&lt;1%</td>
+
+                        <td>Glucose, amino acids, lipids</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Waste products</strong></td>
+
+                        <td>&lt;1%</td>
+
+                        <td>Urea, creatinine</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Gases</strong></td>
+
+                        <td>&lt;1%</td>
+
+                        <td>O₂, CO₂</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Hormones</strong></td>
+
+                        <td>Trace</td>
+
+                        <td>Various</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+
+            <strong>2. Formed Elements (45%):</strong>
+
+        </p>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cell Type</th>
+
+                        <th>Number per µL</th>
+
+                        <th>Function</th>
+
+                        <th>Lifespan</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Erythrocytes (RBCs)</strong></td>
+
+                        <td>4.5-5.5 million</td>
+
+                        <td>O₂ and CO₂ transport</td>
+
+                        <td>120 days</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Leukocytes (WBCs)</strong></td>
+
+                        <td>4,000-11,000</td>
+
+                        <td>Immunity</td>
+
+                        <td>Hours to years</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Thrombocytes (Platelets)</strong></td>
+
+                        <td>150,000-450,000</td>
+
+                        <td>Hemostasis</td>
+
+                        <td>7-10 days</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🛡️ Types of White Blood Cells
+
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cell Type</th>
+
+                        <th>Percentage</th>
+
+                        <th>Function</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong>Neutrophils</strong></td>
+
+                        <td>50-70%</td>
+
+                        <td>Phagocytosis of bacteria</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Lymphocytes</strong></td>
+
+                        <td>20-40%</td>
+
+                        <td>B cells (antibodies), T cells (cell-mediated), NK cells</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Monocytes</strong></td>
+
+                        <td>2-8%</td>
+
+                        <td>Macrophages (phagocytosis, antigen presentation)</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Eosinophils</strong></td>
+
+                        <td>1-4%</td>
+
+                        <td>Parasitic infections, allergic reactions</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong>Basophils</strong></td>
+
+                        <td>0.5-1%</td>
+
+                        <td>Release histamine (allergic responses)</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <h3>
+
+            🛡️ Functions of Blood
+
+        </h3>
+
+
+        <ul>
+
+            <li>
+
+                <strong>Respiratory:</strong> O₂ transport (hemoglobin), CO₂ transport (as bicarbonate).
+
+            </li>
+
+            <li>
+
+                <strong>Nutritive:</strong> Transport absorbed nutrients.
+
+            </li>
+
+            <li>
+
+                <strong>Excretory:</strong> Transport wastes to kidneys.
+
+            </li>
+
+            <li>
+
+                <strong>Regulatory:</strong> Hormone transport, pH regulation (bicarbonate buffer).
+
+            </li>
+
+            <li>
+
+                <strong>Protective:</strong> Clotting, immunity.
+
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<footer class="footer">
+
+
+    🫀 Health Chapter 2
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+
+</footer>
+
+
+</body>
+
+</html>
 
