@@ -6772,5 +6772,332 @@ quizData["history"]["6"] = [ {
     englishExplanation: "💰 For foreign trade in the 19th century, the silver Maria Theresa Thaler was the dominant and widely accepted currency. While salt bars (amole) and pieces of cotton cloth (abujadi) were used as media of exchange in local markets, they were not the primary currency for international trade. 🌍",
     amharicExplanation: "💰 በ19ኛው ክፍለ ዘመን ለውጭ ንግድ፣ የብር ሳንቲም የሆነው ማሪያ ተሬዛ ታሌር በሰፊው ተቀባይነት ያለው ዋነኛ ምንዛሬ ነበር። የጨው ባሮች አሞሌ እና የጥጥ ጨርቅ አቡጃዲ ለአካባቢያዊ ገበያ እና ለመለዋወጥ ያገለግሉ ነበር፣ ነገር ግን ለውጭ ንግድ ዋና ምንዛሬ አልነበሩም። 🌍"
 } ];
+// =====================================================
+// HEALTH CoC — CHAPTERS 1–3
+// =====================================================
 
+if (!quizData["health-coc"]) {
+    quizData["health-coc"] = {};
+}
+
+
+// =====================================================
+// HEALTH CoC — CHAPTER 1
+// =====================================================
+
+quizData["health-coc"]["1"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የእውነተኛ የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    },
+
+    {
+        question: "PUT YOUR SECOND REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 1,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያ።"
+    }
+
+];
+
+
+// =====================================================
+// HEALTH CoC — CHAPTER 2
+// =====================================================
+
+quizData["health-coc"]["2"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያ።"
+    }
+
+];
+
+
+// =====================================================
+// HEALTH CoC — CHAPTER 3
+// =====================================================
+
+quizData["health-coc"]["3"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያ።"
+    }
+
+];
+
+
+// =====================================================
+// LAW CoC — CHAPTERS 1–3
+// =====================================================
+
+if (!quizData["law-coc"]) {
+    quizData["law-coc"] = {};
+}
+
+
+// =====================================================
+// LAW CoC — CHAPTER 1
+// =====================================================
+
+quizData["law-coc"]["1"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያ።"
+    }
+
+];
+
+
+// =====================================================
+// LAW CoC — CHAPTER 2
+// =====================================================
+
+quizData["law-coc"]["2"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያ።"
+    }
+
+];
+
+
+// =====================================================
+// LAW CoC — CHAPTER 3
+// =====================================================
+
+quizData["law-coc"]["3"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያ።"
+    }
+
+];
+// =====================================================
+// LAW CoC — CHAPTERS 1–3
+// =====================================================
+
+if (!quizData["law-coc"]) {
+    quizData["law-coc"] = {};
+}
+
+
+// =====================================================
+// LAW CoC — CHAPTER 1
+// Constitutional Law & FDRE Government Structure
+// =====================================================
+
+quizData["law-coc"]["1"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    },
+
+    {
+        question: "PUT YOUR SECOND REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 1,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    }
+
+];
+
+
+// =====================================================
+// LAW CoC — CHAPTER 2
+// Human Rights & Fundamental Freedoms
+// =====================================================
+
+quizData["law-coc"]["2"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    },
+
+    {
+        question: "PUT YOUR SECOND REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 1,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    }
+
+];
+
+
+// =====================================================
+// LAW CoC — CHAPTER 3
+// Logic & Critical Thinking
+// =====================================================
+
+quizData["law-coc"]["3"] = [
+
+    {
+        question: "PUT YOUR REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 0,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    },
+
+    {
+        question: "PUT YOUR SECOND REAL QUESTION HERE",
+
+        options: [
+            "OPTION A",
+            "OPTION B",
+            "OPTION C",
+            "OPTION D"
+        ],
+
+        answer: 1,
+
+        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+
+        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
+    }
+
+];
 
