@@ -1,1 +1,3952 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Health Chapter 1 | Complete Study Notes</title>
+
+    <style>
+
+        :root {
+
+            --bg-color: #f0fdf4;
+
+            --card-bg: #ffffff;
+
+            --text-main: #17324d;
+
+            --text-muted: #526575;
+
+            --primary-green: #047857;
+
+            --dark-green: #065f46;
+
+            --accent-blue: #0369a1;
+
+            --accent-teal: #0f766e;
+
+            --accent-orange: #c2410c;
+
+            --border-color: #d1fae5;
+
+            --shadow:
+                0 4px 10px rgba(0, 0, 0, 0.05),
+                0 2px 5px rgba(0, 0, 0, 0.03);
+
+        }
+
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        body {
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f0fdf4,
+                    #f8fafc
+                );
+
+            color: var(--text-main);
+
+            line-height: 1.6;
+
+            padding: 12px;
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
+        }
+
+
+        .page-navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 16px;
+
+        }
+
+
+        .page-navigation a {
+
+            text-decoration: none;
+
+            padding: 10px 15px;
+
+            border-radius: 13px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .back-btn {
+
+            background: var(--primary-green);
+
+            color: white;
+
+        }
+
+
+        .home-btn {
+
+            background: white;
+
+            color: var(--primary-green);
+
+            border: 1px solid var(--border-color);
+
+        }
+
+
+        header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary-green),
+                    var(--dark-green)
+                );
+
+            color: white;
+
+            padding: 23px 16px;
+
+            border-radius: 20px;
+
+            margin-bottom: 16px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        header h1 {
+
+            font-size: 1.45rem;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        header p {
+
+            color: white;
+
+            opacity: 0.9;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .chapter-label {
+
+            display: inline-block;
+
+            padding: 4px 11px;
+
+            margin-bottom: 8px;
+
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.15);
+
+            font-size: 0.75rem;
+
+        }
+
+
+        .card {
+
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 18px;
+
+            padding: 18px 16px;
+
+            margin-bottom: 16px;
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        h2 {
+
+            color: var(--primary-green);
+
+            font-size: 1.15rem;
+
+            margin-bottom: 12px;
+
+            padding-bottom: 7px;
+
+            border-bottom: 2px solid #d1fae5;
+
+        }
+
+
+        h3 {
+
+            color: var(--text-main);
+
+            font-size: 1rem;
+
+            margin: 14px 0 8px;
+
+        }
+
+        h4 {
+
+            color: var(--accent-teal);
+
+            font-size: 0.95rem;
+
+            margin: 10px 0 6px;
+
+        }
+
+
+        p {
+
+            color: var(--text-muted);
+
+            font-size: 0.95rem;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        ul,
+        ol {
+
+            padding-left: 21px;
+
+            color: var(--text-muted);
+
+            font-size: 0.94rem;
+
+        }
+
+
+        li {
+
+            margin-bottom: 6px;
+
+        }
+
+
+        .study-box {
+
+            background: #ecfdf5;
+
+            border-left: 4px solid var(--accent-teal);
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .important-box {
+
+            background: #eff6ff;
+
+            border-left: 4px solid var(--accent-blue);
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+        .example-box {
+
+            background: #fffbebfb;
+
+            border-left: 4px solid #f59e0b;
+
+            padding: 11px 12px;
+
+            margin-top: 12px;
+
+            margin-bottom: 12px;
+
+            border-radius: 0 10px 10px 0;
+
+            font-size: 0.9rem;
+
+        }
+
+        .table-responsive {
+
+            width: 100%;
+
+            overflow-x: auto;
+
+            margin: 12px 0;
+
+            border-radius: 10px;
+
+            border: 1px solid var(--border-color);
+
+        }
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            text-align: left;
+
+            font-size: 0.88rem;
+
+        }
+
+        th {
+
+            background-color: #e6f4ea;
+
+            color: var(--dark-green);
+
+            padding: 10px 8px;
+
+            font-weight: 700;
+
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+        td {
+
+            padding: 9px 8px;
+
+            border-bottom: 1px solid #f0f0f0;
+
+            color: var(--text-muted);
+
+        }
+
+        tr:last-child td {
+
+            border-bottom: none;
+
+        }
+
+
+        .footer {
+
+            text-align: center;
+
+            padding: 25px 10px;
+
+            color: var(--text-muted);
+
+            font-size: 0.82rem;
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            body {
+
+                padding: 10px;
+
+            }
+
+            .page-navigation a {
+
+                padding: 9px 12px;
+
+                font-size: 13px;
+
+            }
+
+            header {
+
+                padding: 20px 14px;
+
+            }
+
+            header h1 {
+
+                font-size: 1.3rem;
+
+            }
+
+            .card {
+
+                padding: 16px 14px;
+
+            }
+
+            table {
+
+                font-size: 0.82rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page-navigation">
+
+    <a
+        href="health-notes.html"
+        class="back-btn"
+    >
+        ← Back
+    </a>
+
+
+    <a
+        href="index.html"
+        class="home-btn"
+    >
+        🏠 Home
+    </a>
+
+</div>
+
+
+<header>
+
+    <div class="chapter-label">
+        🏥 HEALTH CoC • CHAPTER 1
+    </div>
+
+    <h1>
+        🧬 Health Chapter 1
+    </h1>
+
+    <p>
+        Biology &amp; Biochemistry: Cell Structure, Function &amp; Enzymes
+    </p>
+
+</header>
+
+
+<section>
+
+    <!-- SECTION 1: INTRODUCTION TO THE CELL -->
+    <div class="card">
+
+        <h2>
+            🧬 Biology &amp; Biochemistry — CELL STRUCTURE &amp; FUNCTION
+        </h2>
+
+        <h3>
+            🔍 Introduction to the Cell
+        </h3>
+
+        <p>
+            The cell is the fundamental structural and functional unit of all living organisms. The study of cell structure and function is called <strong>Cell Biology</strong>.
+        </p>
+
+        <p>
+            Cells can be broadly classified into two main categories:
+        </p>
+
+        <ul>
+            <li>
+                🧫 <strong>Prokaryotic cells:</strong> Lack a true nucleus and membrane-bound organelles (e.g., bacteria).
+            </li>
+            <li>
+                🔬 <strong>Eukaryotic cells:</strong> Possess a true nucleus and membrane-bound organelles (e.g., plant and animal cells).
+            </li>
+        </ul>
+
+    </div>
+
+
+    <!-- SECTION 2: CELL MEMBRANE -->
+    <div class="card">
+
+        <h2>
+            🛡️ Cell Membrane Structure and Function
+        </h2>
+
+        <h3>
+            🏗️ Structure of the Cell Membrane
+        </h3>
+
+        <p>
+            The cell membrane (plasma membrane) follows the <strong>Fluid Mosaic Model</strong> proposed by Singer and Nicolson in 1972.
+        </p>
+
+        <h4>
+            🔑 Key Components:
+        </h4>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Phospholipid bilayer</strong></td>
+                        <td>Two layers of phospholipids with hydrophilic heads (water-loving) facing outward and hydrophobic tails (water-fearing) facing inward</td>
+                        <td>Forms the basic structural barrier</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cholesterol</strong></td>
+                        <td>Steroid molecules interspersed within the bilayer</td>
+                        <td>Maintains membrane fluidity and stability</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Integral proteins</strong></td>
+                        <td>Proteins embedded partially or completely through the membrane</td>
+                        <td>Transport, signal reception</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Peripheral proteins</strong></td>
+                        <td>Proteins attached to the inner or outer surface</td>
+                        <td>Structural support, enzyme activity</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Glycoproteins</strong></td>
+                        <td>Proteins with carbohydrate chains attached</td>
+                        <td>Cell recognition and adhesion</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Glycolipids</strong></td>
+                        <td>Lipids with carbohydrate chains attached</td>
+                        <td>Cell recognition</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>
+            ⚙️ Functions of the Cell Membrane
+        </h3>
+
+        <ul>
+            <li>🧱 <strong>Physical barrier:</strong> Separates intracellular contents from extracellular environment.</li>
+            <li>🚪 <strong>Selective permeability:</strong> Controls what enters and exits the cell.</li>
+            <li>📡 <strong>Cell signaling:</strong> Contains receptors for hormones and neurotransmitters.</li>
+            <li>🤝 <strong>Cell adhesion:</strong> Helps cells adhere to each other.</li>
+            <li>🏷️ <strong>Cell recognition:</strong> Glycoproteins and glycolipids serve as identification markers.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- SECTION 3: TRANSPORT MECHANISMS -->
+    <div class="card">
+
+        <h2>
+            🔄 Membrane Transport Mechanisms
+        </h2>
+
+        <p>
+            Cells must exchange materials with their environment. Transport mechanisms are classified into <strong>passive</strong> and <strong>active transport</strong>.
+        </p>
+
+        <h3>
+            🅰️ Passive Transport (No Energy Required)
+        </h3>
+
+        <h4>
+            1. Simple Diffusion
+        </h4>
+        <ul>
+            <li>Movement of molecules from an area of higher concentration to lower concentration.</li>
+            <li>Occurs until equilibrium is reached.</li>
+            <li><strong>Factors affecting rate:</strong> Concentration gradient, temperature, molecular size, diffusion distance.</li>
+            <li><strong>Examples:</strong> O₂ and CO₂ movement across membranes.</li>
+        </ul>
+
+        <h4>
+            2. Facilitated Diffusion
+        </h4>
+        <ul>
+            <li>Movement of molecules across membrane with the help of transport proteins.</li>
+            <li>No energy required.</li>
+            <li><strong>Types of transport proteins:</strong>
+                <ul>
+                    <li>🚰 <em>Channel proteins:</em> Form hydrophilic pores (e.g., aquaporins for water).</li>
+                    <li>🔄 <em>Carrier proteins:</em> Change shape to transport molecules (e.g., glucose transporter).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>
+            3. Osmosis
+        </h4>
+        <ul>
+            <li>Special type of diffusion involving movement of water molecules across a semi-permeable membrane.</li>
+            <li>Water moves from an area of higher water concentration (lower solute concentration) to lower water concentration (higher solute concentration).</li>
+        </ul>
+
+        <div class="important-box">
+            <strong>💧 Tonicity Terms:</strong>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Term</th>
+                            <th>Definition</th>
+                            <th>Effect on cell</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Isotonic</strong></td>
+                            <td>Same solute concentration inside and outside</td>
+                            <td>No net water movement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hypotonic</strong></td>
+                            <td>Lower solute concentration outside</td>
+                            <td>Water enters cell; cell may burst (lysis)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hypertonic</strong></td>
+                            <td>Higher solute concentration outside</td>
+                            <td>Water leaves cell; cell shrinks (crenation)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3>
+            🅱️ Active Transport (Energy Required)
+        </h3>
+
+        <h4>
+            1. Primary Active Transport
+        </h4>
+        <ul>
+            <li>Uses ATP directly to move molecules against their concentration gradient.</li>
+            <li><strong>Example:</strong> Sodium-Potassium Pump (Na⁺/K⁺ ATPase)
+                <ul>
+                    <li>Pumps 3 Na⁺ out of cell and 2 K⁺ into cell.</li>
+                    <li>Maintains electrochemical gradient.</li>
+                    <li>Essential for nerve impulse transmission.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>
+            2. Secondary Active Transport (Co-transport)
+        </h4>
+        <ul>
+            <li>Uses energy stored in electrochemical gradients (established by primary active transport).</li>
+            <li><strong>Types:</strong>
+                <ul>
+                    <li>➡️➡️ <em>Symport:</em> Both molecules move in same direction (e.g., Na⁺-glucose co-transport).</li>
+                    <li>➡️⬅️ <em>Antiport:</em> Molecules move in opposite directions (e.g., Na⁺-Ca²⁺ exchanger).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            🔀 Vesicular Transport (Bulk Transport)
+        </h3>
+
+        <h4>
+            Endocytosis (bringing materials into cell)
+        </h4>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Phagocytosis</strong></td>
+                        <td>"Cell eating" - engulfment of large solid particles</td>
+                        <td>Macrophages engulfing bacteria</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pinocytosis</strong></td>
+                        <td>"Cell drinking" - uptake of fluids and dissolved substances</td>
+                        <td>Intestinal cells absorbing nutrients</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Receptor-mediated endocytosis</strong></td>
+                        <td>Specific uptake of molecules after binding to receptors</td>
+                        <td>Cholesterol (LDL) uptake</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>
+            Exocytosis (releasing materials from cell)
+        </h4>
+        <ul>
+            <li>Vesicles fuse with plasma membrane and release contents outside.</li>
+            <li><strong>Examples:</strong> Hormone secretion, neurotransmitter release.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- SECTION 4: CELL ORGANELLES -->
+    <div class="card">
+
+        <h2>
+            🏬 Cell Organelles: Structure and Function
+        </h2>
+
+        <p>
+            Eukaryotic cells contain various membrane-bound and non-membrane-bound organelles, each with specific functions.
+        </p>
+
+        <h3>
+            🧠 A. Nucleus
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Largest organelle; surrounded by double membrane called nuclear envelope with nuclear pores; contains chromatin (DNA + proteins) and nucleolus.</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li>Stores genetic material (DNA).</li>
+                    <li>Controls cellular activities through gene expression.</li>
+                    <li>Site of DNA replication and transcription (mRNA synthesis).</li>
+                    <li>Nucleolus produces ribosomal RNA (rRNA) and assembles ribosomes.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            🏗️ B. Ribosomes
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Non-membrane-bound organelles composed of rRNA and proteins; have large and small subunits.</li>
+            <li><strong>Types:</strong>
+                <ul>
+                    <li><em>Free ribosomes:</em> Suspended in cytoplasm; synthesize proteins for use inside cell.</li>
+                    <li><em>Bound ribosomes:</em> Attached to rough ER; synthesize proteins for secretion or membrane incorporation.</li>
+                </ul>
+            </li>
+            <li><strong>Function:</strong> Site of protein synthesis (translation).</li>
+        </ul>
+
+        <h3>
+            🏭 C. Endoplasmic Reticulum (ER)
+        </h3>
+        <h4>Rough Endoplasmic Reticulum (RER)</h4>
+        <ul>
+            <li><strong>Structure:</strong> Membrane network with ribosomes attached.</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li>Protein synthesis (by attached ribosomes).</li>
+                    <li>Protein folding and modification.</li>
+                    <li>Quality control of proteins.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Smooth Endoplasmic Reticulum (SER)</h4>
+        <ul>
+            <li><strong>Structure:</strong> Membrane network without ribosomes.</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li>Lipid synthesis (phospholipids, cholesterol, steroids).</li>
+                    <li>Detoxification of drugs and poisons.</li>
+                    <li>Calcium storage (in muscle cells - sarcoplasmic reticulum).</li>
+                    <li>Carbohydrate metabolism.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            📦 D. Golgi Apparatus
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Stack of flattened membrane sacs (cisternae) with cis-face (receiving end) and trans-face (shipping end).</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li>Modifies proteins (glycosylation, phosphorylation).</li>
+                    <li>Sorts and packages proteins into vesicles.</li>
+                    <li>Produces lysosomes.</li>
+                    <li>Synthesizes certain carbohydrates.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            ⚡ E. Mitochondria
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Double-membraned organelle with:
+                <ul>
+                    <li><em>Outer membrane:</em> Smooth, contains porins.</li>
+                    <li><em>Inner membrane:</em> Folded into cristae (increases surface area).</li>
+                    <li><em>Matrix:</em> Fluid-filled space containing DNA, ribosomes, and enzymes.</li>
+                </ul>
+            </li>
+            <li><strong>Function:</strong> Site of aerobic respiration; produces ATP (powerhouse of the cell).</li>
+            <li><strong>Unique features:</strong> Has its own circular DNA and ribosomes (semi-autonomous).</li>
+        </ul>
+
+        <h3>
+            🗑️ F. Lysosomes
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Single-membrane bound vesicles containing hydrolytic enzymes (acid hydrolases).</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li>Intracellular digestion (breakdown of macromolecules).</li>
+                    <li>Autophagy (recycling of worn-out organelles).</li>
+                    <li>Apoptosis (programmed cell death).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            🧪 G. Peroxisomes
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Single-membrane bound vesicles containing oxidative enzymes.</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li>Detoxification of harmful substances (hydrogen peroxide, alcohol).</li>
+                    <li>Fatty acid oxidation.</li>
+                    <li>Contains catalase enzyme that breaks down H₂O₂ to water and oxygen.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>
+            🕸️ H. Cytoskeleton
+        </h3>
+        <p>
+            <strong>Structure:</strong> Network of protein filaments throughout cytoplasm.
+        </p>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Diameter</th>
+                        <th>Composition</th>
+                        <th>Functions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Microfilaments</strong></td>
+                        <td>7 nm</td>
+                        <td>Actin</td>
+                        <td>Cell movement, muscle contraction, cytokinesis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intermediate filaments</strong></td>
+                        <td>10 nm</td>
+                        <td>Keratin, vimentin, etc.</td>
+                        <td>Structural support, anchor organelles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Microtubules</strong></td>
+                        <td>25 nm</td>
+                        <td>Tubulin (α and β)</td>
+                        <td>Cell shape, intracellular transport, form spindle fibers, cilia and flagella</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>
+            🎯 I. Centrioles
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Pair of cylindrical structures composed of microtubule triplets (9+0 arrangement).</li>
+            <li><strong>Function:</strong> Organize microtubules during cell division; form basal bodies for cilia and flagella.</li>
+        </ul>
+
+        <h3>
+            🏊 J. Cilia and Flagella
+        </h3>
+        <ul>
+            <li><strong>Structure:</strong> Hair-like extensions with microtubule core (9+2 arrangement).</li>
+            <li><strong>Function:</strong> Cell movement or movement of fluid over cell surface.</li>
+            <li><strong>Difference:</strong> Cilia are short and numerous; flagella are long and few (1-2 per cell).</li>
+        </ul>
+
+        <h3>
+            🌱 K. Plant Cell Specific Organelles
+        </h3>
+        <h4>Chloroplasts</h4>
+        <ul>
+            <li><strong>Structure:</strong> Double-membraned with internal thylakoid membrane system forming grana; contains stroma.</li>
+            <li><strong>Function:</strong> Site of photosynthesis.</li>
+            <li>Has own DNA and ribosomes.</li>
+        </ul>
+
+        <h4>Cell Wall</h4>
+        <ul>
+            <li><strong>Structure:</strong> Rigid layer outside plasma membrane composed of cellulose, hemicellulose, and pectin.</li>
+            <li><strong>Functions:</strong> Provides structural support, protection, prevents bursting in hypotonic conditions.</li>
+        </ul>
+
+        <h4>Vacuole (Central Vacuole)</h4>
+        <ul>
+            <li><strong>Structure:</strong> Large, fluid-filled sac surrounded by tonoplast membrane.</li>
+            <li><strong>Functions:</strong> Storage (water, ions, pigments, waste), maintains turgor pressure, waste disposal.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- SECTION 5: PROKARYOTIC VS EUKARYOTIC -->
+    <div class="card">
+
+        <h2>
+            ⚖️ Comparison: Prokaryotic vs. Eukaryotic Cells
+        </h2>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Prokaryotic Cells</th>
+                        <th>Eukaryotic Cells</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nucleus</strong></td>
+                        <td>Absent (nucleoid region)</td>
+                        <td>Present with nuclear membrane</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Membrane-bound organelles</strong></td>
+                        <td>Absent</td>
+                        <td>Present</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ribosomes</strong></td>
+                        <td>70S (smaller)</td>
+                        <td>80S (larger)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DNA structure</strong></td>
+                        <td>Circular, naked</td>
+                        <td>Linear, associated with histones</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cell size</strong></td>
+                        <td>0.1-5 μm</td>
+                        <td>10-100 μm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cell division</strong></td>
+                        <td>Binary fission</td>
+                        <td>Mitosis or meiosis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Examples</strong></td>
+                        <td>Bacteria, Archaea</td>
+                        <td>Animals, plants, fungi, protists</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <!-- SECTION 6: ENZYMES INTRODUCTION -->
+    <div class="card">
+
+        <h2>
+             ENZYMES
+        </h2>
+
+        <h3>
+            🧪 Introduction to Enzymes
+        </h3>
+
+        <p>
+            Enzymes are <strong>biological catalysts</strong> that accelerate chemical reactions without being consumed or permanently altered in the process. Most enzymes are globular proteins (some RNA molecules called <em>ribozymes</em> also have catalytic activity).
+        </p>
+
+        <div class="study-box">
+            <strong>📜 Historical Background:</strong>
+            <ul>
+                <li><strong>1897:</strong> Eduard Buchner discovered that cell-free extracts could ferment sugar (won Nobel Prize).</li>
+                <li><strong>1926:</strong> James Sumner crystallized urease, proving enzymes are proteins.</li>
+            </ul>
+        </div>
+
+        <h3>
+            💎 Properties of Enzymes
+        </h3>
+
+        <h4>A. Catalytic Properties</h4>
+        <ol>
+            <li><strong>High catalytic efficiency:</strong> Enzymes can increase reaction rates by factors of 10⁶ to 10¹².</li>
+            <li><strong>Not consumed in reaction:</strong> Enzymes are regenerated at the end of reaction.</li>
+            <li><strong>Small quantities required:</strong> A single enzyme molecule can convert many substrate molecules.</li>
+        </ol>
+
+        <h4>B. Specificity</h4>
+        <p>Enzymes show remarkable specificity for their substrates:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Specificity</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Absolute specificity</strong></td>
+                        <td>Enzyme acts on only one substrate</td>
+                        <td>Urease acts only on urea</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Group specificity</strong></td>
+                        <td>Enzyme acts on substrates with specific functional groups</td>
+                        <td>Hexokinase acts on various hexose sugars</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Linkage specificity</strong></td>
+                        <td>Enzyme acts on specific chemical bonds</td>
+                        <td>Proteases act on peptide bonds</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stereochemical specificity</strong></td>
+                        <td>Enzyme acts on one stereoisomer only</td>
+                        <td>L-amino acid oxidase acts only on L-amino acids</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>C. Protein Nature</h4>
+        <ul>
+            <li>Most enzymes are proteins (except ribozymes).</li>
+            <li>Sensitive to temperature and pH changes.</li>
+            <li>Denatured by heat, strong acids/bases, heavy metals.</li>
+        </ul>
+
+        <h4>D. Active Site</h4>
+        <ul>
+            <li>Specific region where substrate binds and catalysis occurs.</li>
+            <li>Usually a small pocket or cleft.</li>
+            <li>Has unique three-dimensional structure complementary to substrate.</li>
+        </ul>
+
+        <h4>E. Cofactors and Coenzymes</h4>
+        <p>Many enzymes require non-protein components for activity:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cofactor</strong></td>
+                        <td>Inorganic ions</td>
+                        <td>Mg²⁺, Zn²⁺, Fe²⁺, Ca²⁺</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coenzyme</strong></td>
+                        <td>Organic molecules (often vitamins)</td>
+                        <td>NAD⁺, FAD, Coenzyme A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prosthetic group</strong></td>
+                        <td>Tightly bound coenzyme</td>
+                        <td>Heme in cytochrome</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="important-box">
+            <strong>🧩 Key Equation:</strong><br>
+            Apoenzyme (protein part) + Cofactor/Coenzyme = <strong>Holoenzyme</strong> (active enzyme)
+        </div>
+
+    </div>
+
+
+    <!-- SECTION 7: MECHANISM OF ENZYME ACTION -->
+    <div class="card">
+
+        <h2>
+            🔑 Mechanism of Enzyme Action
+        </h2>
+
+        <h3>
+            🔒 Lock and Key Model (Emil Fischer, 1894)
+        </h3>
+        <ul>
+            <li>Proposes that the active site has a rigid, pre-formed shape perfectly complementary to the substrate.</li>
+            <li>Substrate fits into active site like a key fits into a lock.</li>
+        </ul>
+
+        <h3>
+            🤝 Induced Fit Model (Daniel Koshland, 1958)
+        </h3>
+        <ul>
+            <li>More widely accepted model.</li>
+            <li>Proposes that enzyme active site is flexible and changes shape upon substrate binding.</li>
+            <li>Substrate induces conformational changes in enzyme for optimal binding.</li>
+            <li>Explains how enzymes can act on related substrates.</li>
+        </ul>
+
+        <div class="study-box">
+            <strong>🔄 Steps in Enzyme Catalysis:</strong>
+            <ol>
+                <li>Substrate approaches active site</li>
+                <li>Enzyme-substrate complex (ES) forms</li>
+                <li>Induced fit occurs (strain on bonds)</li>
+                <li>Transition state is stabilized</li>
+                <li>Products formed</li>
+                <li>Products released</li>
+                <li>Enzyme regenerated</li>
+            </ol>
+            <br>
+            <strong>General Equation:</strong> E + S ⇌ ES ⇌ E + P
+        </div>
+
+    </div>
+
+
+    <!-- SECTION 8: FACTORS AFFECTING ENZYME ACTIVITY -->
+    <div class="card">
+
+        <h2>
+            📈 Factors Affecting Enzyme Activity
+        </h2>
+
+        <h3>
+            A. Substrate Concentration
+        </h3>
+        <ul>
+            <li>At low [S], reaction rate increases linearly with [S] (first-order kinetics).</li>
+            <li>At high [S], rate reaches maximum (Vmax) (zero-order kinetics).</li>
+            <li>Follows Michaelis-Menten kinetics.</li>
+        </ul>
+
+        <div class="important-box">
+            <strong>🎯 Key Terms:</strong>
+            <ul>
+                <li><strong>Vmax:</strong> Maximum velocity when all enzyme active sites are saturated.</li>
+                <li><strong>Km (Michaelis constant):</strong> Substrate concentration at half Vmax; indicates enzyme affinity for substrate (low Km = high affinity).</li>
+            </ul>
+        </div>
+
+        <h3>
+            B. Enzyme Concentration
+        </h3>
+        <ul>
+            <li>Reaction rate is directly proportional to enzyme concentration (when substrate is in excess).</li>
+            <li>Linear relationship: doubling [E] doubles reaction rate.</li>
+        </ul>
+
+        <h3>
+            C. Temperature
+        </h3>
+        <p><strong>Effect on enzyme activity:</strong></p>
+        <ul>
+            <li><em>Low temperatures:</em> Decreased molecular motion, slow reaction.</li>
+            <li><em>Optimal temperature:</em> Maximum activity (usually 37-40°C for human enzymes).</li>
+            <li><em>High temperatures:</em> Denaturation (loss of three-dimensional structure).</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🌡️ Temperature coefficient (Q₁₀):</strong><br>
+            Q₁₀ = Rate at (T+10°C) / Rate at T<br>
+            <em>For most enzymes, Q₁₀ ≈ 2 (rate doubles with 10°C rise until optimum).</em>
+        </div>
+
+        <h3>
+            D. pH
+        </h3>
+        <p><strong>Effect on enzyme activity:</strong></p>
+        <ul>
+            <li>Each enzyme has an optimal pH range.</li>
+            <li>pH changes alter ionization of amino acid residues at active site.</li>
+            <li>Extreme pH causes denaturation.</li>
+        </ul>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Enzyme</th>
+                        <th>Optimal pH</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Pepsin (stomach)</strong></td>
+                        <td>1.5-2.0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Salivary amylase</strong></td>
+                        <td>6.8-7.0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trypsin (pancreas)</strong></td>
+                        <td>7.5-8.5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alkaline phosphatase</strong></td>
+                        <td>9.0-10.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>
+            E. Time
+        </h3>
+        <p>Reaction rate may decrease over time due to:</p>
+        <ul>
+            <li>Substrate depletion</li>
+            <li>Product accumulation (may inhibit enzyme)</li>
+            <li>Enzyme denaturation</li>
+        </ul>
+
+        <h3>
+            F. Presence of Inhibitors and Activators
+        </h3>
+        <ul>
+            <li><strong>Inhibitors:</strong> Decrease enzyme activity.</li>
+            <li><strong>Activators:</strong> Increase enzyme activity.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- SECTION 9: ENZYME INHIBITION -->
+    <div class="card">
+
+        <h2>
+            🚫 Enzyme Inhibition
+        </h2>
+
+        <h3>
+            🅰️ Reversible Inhibition
+        </h3>
+
+        <h4>1. Competitive Inhibition</h4>
+        <ul>
+            <li>Inhibitor resembles substrate structurally.</li>
+            <li>Binds to active site, competing with substrate.</li>
+            <li>Effect can be overcome by increasing substrate concentration.</li>
+            <li><strong>Vmax unchanged, Km increased.</strong></li>
+        </ul>
+        <div class="example-box">
+            💡 <strong>Examples:</strong>
+            <ul>
+                <li>Malonate competes with succinate for succinate dehydrogenase.</li>
+                <li>Statin drugs compete with HMG-CoA reductase for cholesterol synthesis.</li>
+            </ul>
+        </div>
+
+        <h4>2. Non-competitive Inhibition</h4>
+        <ul>
+            <li>Inhibitor binds to site other than active site (allosteric site).</li>
+            <li>Causes conformational change that reduces enzyme activity.</li>
+            <li>Cannot be overcome by increasing substrate concentration.</li>
+            <li><strong>Vmax decreased, Km unchanged.</strong></li>
+        </ul>
+        <div class="example-box">
+            💡 <strong>Examples:</strong>
+            <ul>
+                <li>Heavy metals (Pb²⁺, Hg²⁺) binding to SH groups.</li>
+                <li>Cyanide binding to cytochrome oxidase.</li>
+            </ul>
+        </div>
+
+        <h4>3. Uncompetitive Inhibition</h4>
+        <ul>
+            <li>Inhibitor binds only to enzyme-substrate complex.</li>
+            <li>Prevents product formation.</li>
+            <li>Rare in single-substrate reactions.</li>
+            <li><strong>Both Vmax and Km decreased.</strong></li>
+        </ul>
+
+        <h3>
+            🅱️ Irreversible Inhibition
+        </h3>
+        <ul>
+            <li>Inhibitor binds permanently to enzyme (covalent bonding).</li>
+            <li>Enzyme activity cannot be restored.</li>
+        </ul>
+        <div class="example-box">
+            💡 <strong>Examples:</strong>
+            <ul>
+                <li>DFP (diisopropyl fluorophosphate) inhibits acetylcholinesterase.</li>
+                <li>Penicillin inhibits bacterial transpeptidase.</li>
+                <li>Aspirin irreversibly inhibits cyclooxygenase.</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!-- SECTION 10: CLASSIFICATION & APPLICATIONS -->
+    <div class="card">
+
+        <h2>
+            📋 Enzyme Classification &amp; Clinical Applications
+        </h2>
+
+        <h3>
+            🏷️ Enzyme Classification (International Union of Biochemistry)
+        </h3>
+
+        <p>Enzymes are classified into six main classes based on the type of reaction they catalyze:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Name</th>
+                        <th>Reaction Catalyzed</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Oxidoreductases</strong></td>
+                        <td>Oxidation-reduction</td>
+                        <td>Dehydrogenases, oxidases</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Transferases</strong></td>
+                        <td>Transfer of functional groups</td>
+                        <td>Kinases, transaminases</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><strong>Hydrolases</strong></td>
+                        <td>Hydrolysis reactions</td>
+                        <td>Lipases, proteases, amylases</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Lyases</strong></td>
+                        <td>Addition/removal of groups without hydrolysis</td>
+                        <td>Decarboxylases, aldolases</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Isomerases</strong></td>
+                        <td>Isomerization reactions</td>
+                        <td>Isomerases, mutases</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><strong>Ligases</strong></td>
+                        <td>Joining molecules with ATP</td>
+                        <td>Synthetases</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            <em>Note: Each enzyme has a unique EC number (e.g., EC 1.1.1.1 for alcohol dehydrogenase).</em>
+        </p>
+
+        <h3>
+            🩺 Clinical and Practical Applications of Enzymes
+        </h3>
+
+        <h4>Diagnostic Enzymes</h4>
+        <p>Enzyme levels in blood help diagnose diseases:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Enzyme</th>
+                        <th>Clinical Significance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ALT/SGPT</strong></td>
+                        <td>Liver damage (hepatitis)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AST/SGOT</strong></td>
+                        <td>Liver and heart damage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CK-MB</strong></td>
+                        <td>Myocardial infarction (heart attack)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amylase</strong></td>
+                        <td>Acute pancreatitis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alkaline phosphatase</strong></td>
+                        <td>Bone disorders, biliary obstruction</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LDH</strong></td>
+                        <td>Tissue damage, hemolysis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>Therapeutic Enzymes</h4>
+        <ul>
+            <li>💉 <strong>Streptokinase:</strong> Dissolves blood clots in myocardial infarction.</li>
+            <li>💊 <strong>Asparaginase:</strong> Treats certain leukemias (depletes asparagine).</li>
+            <li>🥛 <strong>Digestive enzymes:</strong> Pancreatic enzyme supplements for pancreatic insufficiency.</li>
+        </ul>
+
+        <h4>Industrial Enzymes</h4>
+        <ul>
+            <li>🧺 <strong>Proteases:</strong> Detergents, leather processing.</li>
+            <li>🍞 <strong>Amylases:</strong> Baking, brewing.</li>
+            <li>🧈 <strong>Lipases:</strong> Food processing, biodiesel.</li>
+            <li>🧶 <strong>Cellulases:</strong> Textile industry.</li>
+        </ul>
+
+    </div>
+  
+
+
+<section>
+
+
+<!-- SECTION 1: INTRODUCTION TO BIOENERGETICS -->
+
+<div class="card">
+
+    <h2>
+        ⚡ Introduction to Bioenergetics
+    </h2>
+
+    <p>
+        <strong>Bioenergetics</strong> is the study of energy flow through living systems. It deals with how cells transform energy through metabolic pathways to perform work.
+    </p>
+
+    <h3>
+        🔑 Key Concepts: Thermodynamics in Biological Systems
+    </h3>
+
+    <div class="study-box">
+
+        <strong>1️⃣ First Law of Thermodynamics:</strong>
+        <br>
+        Energy cannot be created or destroyed, only transformed.
+        <br>
+        <strong>Cells convert chemical energy from nutrients into:</strong>
+        <ul>
+
+            <li>
+                <strong>Mechanical work:</strong> e.g., muscle contraction 💪
+            </li>
+
+            <li>
+                <strong>Transport work:</strong> moving molecules across membranes 🚛
+            </li>
+
+            <li>
+                <strong>Chemical work:</strong> synthesis of macromolecules 🧪
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="study-box">
+
+        <strong>2️⃣ Second Law of Thermodynamics:</strong>
+        <br>
+        Energy transformations increase entropy (disorder) in the universe.
+        <br>
+        ✔ Living cells maintain order by constantly using energy from nutrients.
+    </div>
+
+    <h3>
+        🌡️ Free Energy (G)
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>ΔG:</strong> Change in free energy (energy available to do work).
+        </li>
+
+        <li>
+            <strong>Exergonic reactions:</strong> ΔG negative; release energy; spontaneous.
+        </li>
+
+        <li>
+            <strong>Endergonic reactions:</strong> ΔG positive; require energy input; non-spontaneous.
+        </li>
+
+    </ul>
+
+    <h3>
+        🔋 ATP: The Energy Currency of the Cell
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>Structure:</strong> Adenine + Ribose + 3 Phosphates (triphosphate).
+        </li>
+
+        <li>
+            High-energy bonds between phosphates (~P).
+        </li>
+
+        <li>
+            <strong>Hydrolysis of ATP:</strong>
+            <br>
+            <code>ATP + H₂O → ADP + Pi</code> (ΔG = -7.3 kcal/mol or -30.5 kJ/mol)
+        </li>
+
+        <li>
+            ✔ ATP couples exergonic and endergonic reactions.
+        </li>
+
+    </ul>
+
+    <h3>
+        📊 Energy-Rich Compounds Comparison
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Compound</th>
+
+                    <th>ΔG of hydrolysis (kJ/mol)</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Phosphoenolpyruvate (PEP)</td>
+
+                    <td>-61.9</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>1,3-Bisphosphoglycerate</td>
+
+                    <td>-49.3</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Creatine phosphate</td>
+
+                    <td>-43.1</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>ATP</td>
+
+                    <td>-30.5</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Glucose-6-phosphate</td>
+
+                    <td>-13.8</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 2: CELLULAR RESPIRATION OVERVIEW -->
+
+<div class="card">
+
+    <h2>
+        🫁 Cellular Respiration: Overview
+    </h2>
+
+    <p>
+        <strong>Cellular respiration</strong> is the process by which cells break down organic molecules (mainly glucose) to release energy, which is captured in ATP.
+    </p>
+
+    <div class="important-box">
+
+        <strong>🧪 Overall Equation:</strong>
+        <br>
+        <code>C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy (36-38 ATP)</code>
+
+    </div>
+
+    <h3>
+        🎯 Stages of Cellular Respiration
+    </h3>
+
+    <ol>
+
+        <li>
+            <strong>Glycolysis:</strong> occurs in cytoplasm 🧫
+        </li>
+
+        <li>
+            <strong>Pyruvate oxidation:</strong> in mitochondria 🔬
+        </li>
+
+        <li>
+            <strong>Krebs Cycle (Citric Acid Cycle):</strong> in mitochondrial matrix 🔄
+        </li>
+
+        <li>
+            <strong>Electron Transport Chain and Oxidative Phosphorylation:</strong> on inner mitochondrial membrane ⚡
+        </li>
+
+    </ol>
+
+</div>
+
+
+<!-- SECTION 3: GLYCOLYSIS -->
+
+<div class="card">
+
+    <h2>
+        🧬 Glycolysis
+    </h2>
+
+    <ul>
+
+        <li>
+            <strong>Location:</strong> Cytoplasm (cytosol)
+        </li>
+
+        <li>
+            <strong>Oxygen requirement:</strong> Anaerobic (does not require oxygen)
+        </li>
+
+        <li>
+            <strong>Starting molecule:</strong> Glucose (6C)
+        </li>
+
+        <li>
+            <strong>End products:</strong> 2 Pyruvate (3C), 2 ATP (net), 2 NADH
+        </li>
+
+    </ul>
+
+    <h3>
+        ⚙️ Phases of Glycolysis
+    </h3>
+
+    <h4>
+        1️⃣ Energy Investment Phase (Prep Phase) - Uses 2 ATP
+    </h4>
+
+    <ol>
+
+        <li>
+            Glucose → Glucose-6-phosphate <em>(enzyme: Hexokinase/Glucokinase)</em>
+        </li>
+
+        <li>
+            Glucose-6-phosphate → Fructose-6-phosphate <em>(enzyme: Phosphoglucose isomerase)</em>
+        </li>
+
+        <li>
+            Fructose-6-phosphate → Fructose-1,6-bisphosphate <em>(enzyme: Phosphofructokinase-1, PFK-1)</em> — <strong>Key regulatory step</strong>
+        </li>
+
+        <li>
+            Fructose-1,6-bisphosphate → Dihydroxyacetone phosphate (DHAP) + Glyceraldehyde-3-phosphate (G3P) <em>(enzyme: Aldolase)</em>
+        </li>
+
+        <li>
+            DHAP → G3P <em>(enzyme: Triose phosphate isomerase)</em>
+        </li>
+
+    </ol>
+
+    <h4>
+        2️⃣ Energy Payoff Phase - Produces 4 ATP and 2 NADH
+    </h4>
+
+    <ol start="6">
+
+        <li>
+            G3P → 1,3-Bisphosphoglycerate <em>(enzyme: G3P dehydrogenase)</em> — <strong>Produces NADH</strong>
+        </li>
+
+        <li>
+            1,3-Bisphosphoglycerate → 3-Phosphoglycerate <em>(enzyme: Phosphoglycerate kinase)</em> — <strong>Produces ATP (substrate-level phosphorylation)</strong>
+        </li>
+
+        <li>
+            3-Phosphoglycerate → 2-Phosphoglycerate <em>(enzyme: Phosphoglycerate mutase)</em>
+        </li>
+
+        <li>
+            2-Phosphoglycerate → Phosphoenolpyruvate (PEP) <em>(enzyme: Enolase)</em>
+        </li>
+
+        <li>
+            PEP → Pyruvate <em>(enzyme: Pyruvate kinase)</em> — <strong>Produces ATP (substrate-level phosphorylation)</strong>
+        </li>
+
+    </ol>
+
+    <div class="important-box">
+
+        <strong>🎯 Net yield per glucose:</strong> 2 ATP + 2 NADH + 2 Pyruvate
+
+    </div>
+
+    <h3>
+        🎛️ Regulation of Glycolysis
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Enzyme</th>
+
+                    <th>Activated by</th>
+
+                    <th>Inhibited by</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Hexokinase</td>
+
+                    <td>-</td>
+
+                    <td>Glucose-6-phosphate</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Phosphofructokinase-1 (PFK-1)</td>
+
+                    <td>AMP, ADP, Fructose-2,6-bisphosphate</td>
+
+                    <td>ATP, Citrate</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Pyruvate kinase</td>
+
+                    <td>Fructose-1,6-bisphosphate</td>
+
+                    <td>ATP, Alanine</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 4: PYRUVATE OXIDATION -->
+
+<div class="card">
+
+    <h2>
+        🔄 Pyruvate Oxidation (Transition Reaction)
+    </h2>
+
+    <ul>
+
+        <li>
+            <strong>Location:</strong> Mitochondrial matrix 🔬
+        </li>
+
+        <li>
+            <strong>Requirement:</strong> Oxygen (aerobic conditions) 🫁
+        </li>
+
+    </ul>
+
+    <p>
+        Pyruvate (3C) from glycolysis is converted to Acetyl CoA (2C):
+    </p>
+
+    <div class="important-box">
+
+        <code>Pyruvate + CoA + NAD⁺ → Acetyl CoA + CO₂ + NADH + H⁺</code>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <strong>Enzyme complex:</strong> Pyruvate dehydrogenase complex (3 enzymes, 5 cofactors)
+        </li>
+
+        <li>
+            <strong>Yield per glucose:</strong> 2 Acetyl CoA + 2 NADH + 2 CO₂
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- SECTION 5: KREBS CYCLE -->
+
+<div class="card">
+
+    <h2>
+        🔄 Krebs Cycle (Citric Acid Cycle / TCA Cycle)
+    </h2>
+
+    <ul>
+
+        <li>
+            <strong>Location:</strong> Mitochondrial matrix
+        </li>
+
+        <li>
+            <strong>Discoverer:</strong> Hans Krebs (1937) - Nobel Prize 1953 🏅
+        </li>
+
+        <li>
+            <strong>Starting molecule:</strong> Acetyl CoA (2C) combines with Oxaloacetate (4C)
+        </li>
+
+    </ul>
+
+    <h3>
+        ⚙️ Steps of Krebs Cycle (per Acetyl CoA)
+    </h3>
+
+    <ol>
+
+        <li>
+            <strong>Citrate formation:</strong> Acetyl CoA + Oxaloacetate → Citrate (6C)
+            <br>
+            • <em>Enzyme: Citrate synthase</em> | <em>CoA released</em>
+        </li>
+
+        <li>
+            <strong>Isocitrate formation:</strong> Citrate → Isocitrate (6C)
+            <br>
+            • <em>Enzyme: Aconitase</em>
+        </li>
+
+        <li>
+            <strong>First oxidative decarboxylation:</strong> Isocitrate → α-Ketoglutarate (5C)
+            <br>
+            • <em>Enzyme: Isocitrate dehydrogenase</em> | <strong>Produces: NADH + H⁺, CO₂</strong>
+        </li>
+
+        <li>
+            <strong>Second oxidative decarboxylation:</strong> α-Ketoglutarate → Succinyl CoA (4C)
+            <br>
+            • <em>Enzyme: α-Ketoglutarate dehydrogenase complex</em> | <strong>Produces: NADH + H⁺, CO₂</strong>
+        </li>
+
+        <li>
+            <strong>Substrate-level phosphorylation:</strong> Succinyl CoA → Succinate (4C)
+            <br>
+            • <em>Enzyme: Succinyl CoA synthetase (succinate thiokinase)</em> | <strong>Produces: GTP (or ATP in some organisms)</strong>
+        </li>
+
+        <li>
+            <strong>Succinate dehydrogenase reaction:</strong> Succinate → Fumarate (4C)
+            <br>
+            • <em>Enzyme: Succinate dehydrogenase (also ETC Complex II)</em> | <strong>Produces: FADH₂</strong>
+        </li>
+
+        <li>
+            <strong>Hydration:</strong> Fumarate → Malate (4C)
+            <br>
+            • <em>Enzyme: Fumarase</em>
+        </li>
+
+        <li>
+            <strong>Oxidation:</strong> Malate → Oxaloacetate (4C)
+            <br>
+            • <em>Enzyme: Malate dehydrogenase</em> | <strong>Produces: NADH + H⁺</strong>
+        </li>
+
+    </ol>
+
+    <h3>
+        📊 Summary of Krebs Cycle (per glucose = 2 Acetyl CoA)
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+
+                    <th>Yield per Acetyl CoA</th>
+
+                    <th>Total per Glucose</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>NADH</td>
+
+                    <td>3</td>
+
+                    <td>6</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>FADH₂</td>
+
+                    <td>1</td>
+
+                    <td>2</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>ATP/GTP</td>
+
+                    <td>1</td>
+
+                    <td>2</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>CO₂</td>
+
+                    <td>2</td>
+
+                    <td>4</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 6: ELECTRON TRANSPORT CHAIN -->
+
+<div class="card">
+
+    <h2>
+        ⚡ Electron Transport Chain (ETC)
+    </h2>
+
+    <ul>
+
+        <li>
+            <strong>Location:</strong> Inner mitochondrial membrane (cristae)
+        </li>
+
+        <li>
+            <strong>Function:</strong> Accept electrons from NADH and FADH₂ and transfer them to final electron acceptor (oxygen) 🫁
+        </li>
+
+    </ul>
+
+    <h3>
+        🧩 Components of ETC (4 Complexes)
+    </h3>
+
+    <p>
+        <strong>1. Complex I: NADH Dehydrogenase (NADH-CoQ Reductase)</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            Accepts electrons from NADH
+        </li>
+
+        <li>
+            Transfers electrons to Coenzyme Q (Ubiquinone)
+        </li>
+
+        <li>
+            Pumps 4 H⁺ from matrix to intermembrane space
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>2. Complex II: Succinate Dehydrogenase (Succinate-CoQ Reductase)</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            Accepts electrons from FADH₂ (from succinate in Krebs cycle)
+        </li>
+
+        <li>
+            Transfers electrons to Coenzyme Q
+        </li>
+
+        <li>
+            Does NOT pump protons
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>3. Coenzyme Q (Ubiquinone)</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            Mobile electron carrier
+        </li>
+
+        <li>
+            Accepts electrons from Complex I and Complex II
+        </li>
+
+        <li>
+            Transfers electrons to Complex III
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>4. Complex III: Cytochrome bc₁ Complex (CoQH₂-Cytochrome c Reductase)</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            Accepts electrons from Coenzyme Q
+        </li>
+
+        <li>
+            Transfers electrons to Cytochrome c
+        </li>
+
+        <li>
+            Pumps 4 H⁺
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>5. Cytochrome c</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            Mobile electron carrier (peripheral membrane protein)
+        </li>
+
+        <li>
+            Transfers electrons from Complex III to Complex IV
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>6. Complex IV: Cytochrome c Oxidase</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            Accepts electrons from Cytochrome c
+        </li>
+
+        <li>
+            Transfers electrons to O₂ (final electron acceptor)
+        </li>
+
+        <li>
+            Reduces O₂ to H₂O: <code>½O₂ + 2e⁻ + 2H⁺ → H₂O</code>
+        </li>
+
+        <li>
+            Pumps 2 H⁺
+        </li>
+
+    </ul>
+
+    <h3>
+        🌊 Proton Gradient and Chemiosmosis
+    </h3>
+
+    <p>
+        Proton pumping creates:
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>Chemical gradient:</strong> pH difference (more acidic in intermembrane space)
+        </li>
+
+        <li>
+            <strong>Electrical gradient:</strong> positive outside, negative inside matrix
+        </li>
+
+        <li>
+            Together = <strong>Proton Motive Force</strong>
+        </li>
+
+    </ul>
+
+    <h3>
+        ⚙️ ATP Synthase (Complex V)
+    </h3>
+
+    <ul>
+
+        <li>
+            Enzyme complex that synthesizes ATP using proton motive force.
+        </li>
+
+        <li>
+            <strong>Structure:</strong>
+            <ul>
+
+                <li>
+                    <strong>F₀ portion:</strong> Proton channel (embedded in membrane)
+                </li>
+
+                <li>
+                    <strong>F₁ portion:</strong> Catalytic subunit (projects into matrix)
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+            <strong>Mechanism:</strong> Proton flow through F₀ causes rotation, which drives conformational changes in F₁ to synthesize ATP.
+        </li>
+
+        <li>
+            This process is called <strong>Chemiosmosis</strong> (Peter Mitchell, 1961 - Nobel Prize 1978 🏅).
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- SECTION 7: ATP YIELD FROM CELLULAR RESPIRATION -->
+
+<div class="card">
+
+    <h2>
+        📊 ATP Yield from Cellular Respiration
+    </h2>
+
+    <h3>
+        📈 Theoretical Maximum Yield
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Source</th>
+
+                    <th>ATP per NADH</th>
+
+                    <th>ATP per FADH₂</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total ATP</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Glycolysis (substrate-level)</td>
+
+                    <td>-</td>
+
+                    <td>-</td>
+
+                    <td>-</td>
+
+                    <td>2 ATP</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Glycolysis (NADH)</td>
+
+                    <td>2.5 (or 1.5)*</td>
+
+                    <td>-</td>
+
+                    <td>2 NADH</td>
+
+                    <td>5 (or 3)</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Pyruvate oxidation (NADH)</td>
+
+                    <td>2.5</td>
+
+                    <td>-</td>
+
+                    <td>2 NADH</td>
+
+                    <td>5</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Krebs cycle (substrate-level)</td>
+
+                    <td>-</td>
+
+                    <td>-</td>
+
+                    <td>-</td>
+
+                    <td>2 ATP</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Krebs cycle (NADH)</td>
+
+                    <td>2.5</td>
+
+                    <td>-</td>
+
+                    <td>6 NADH</td>
+
+                    <td>15</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Krebs cycle (FADH₂)</td>
+
+                    <td>-</td>
+
+                    <td>1.5</td>
+
+                    <td>2 FADH₂</td>
+
+                    <td>3</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><strong>Total</strong></td>
+
+                    <td>-</td>
+
+                    <td>-</td>
+
+                    <td>-</td>
+
+                    <td><strong>32 (or 30)</strong></td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="important-box">
+
+        * <strong>Note:</strong> NADH from glycolysis must be shuttled into mitochondria:
+        <ul>
+
+            <li>
+                <strong>Malate-aspartate shuttle:</strong> 2.5 ATP per NADH
+            </li>
+
+            <li>
+                <strong>Glycerol phosphate shuttle:</strong> 1.5 ATP per NADH
+            </li>
+
+        </ul>
+
+    </div>
+
+    <h3>
+        🔬 Modern Estimates
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>Traditional textbook value:</strong> 36-38 ATP
+        </li>
+
+        <li>
+            <strong>Modern measurements:</strong> ~30-32 ATP per glucose
+        </li>
+
+        <li>
+            The rest of energy is lost as heat 🌡️
+        </li>
+
+    </ul>
+
+    <h3>
+        ⚡ Efficiency of Cellular Respiration
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>Energy in glucose:</strong> 686 kcal/mol
+        </li>
+
+        <li>
+            <strong>Energy captured in ATP (32 × 7.3 kcal):</strong> ~234 kcal/mol
+        </li>
+
+        <li>
+            <strong>Efficiency:</strong> ~34% (remaining 66% lost as heat)
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- SECTION 8: ANAEROBIC RESPIRATION AND FERMENTATION -->
+
+<div class="card">
+
+    <h2>
+        🧪 Anaerobic Respiration and Fermentation
+    </h2>
+
+    <p>
+        When oxygen is absent (anaerobic conditions), cells use alternative pathways to regenerate NAD⁺ so glycolysis can continue.
+    </p>
+
+    <h3>
+        🅰️ Lactic Acid Fermentation
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>Occurs in:</strong> Animal cells, some bacteria
+        </li>
+
+        <li>
+            <strong>Reaction:</strong> <code>Pyruvate + NADH → Lactate + NAD⁺</code>
+        </li>
+
+        <li>
+            <strong>Enzyme:</strong> Lactate dehydrogenase
+        </li>
+
+        <li>
+            <strong>Products:</strong> Lactic acid + NAD⁺ (recycled)
+        </li>
+
+    </ul>
+
+    <div class="example-box">
+
+        💡 <strong>Examples:</strong>
+        <ul>
+
+            <li>
+                Muscle cells during intense exercise (oxygen debt) 🏃‍♂️🏼‍♂️🏼‍♂️
+            </li>
+
+            <li>
+                Bacteria in yogurt production (Lactobacillus) 🥛
+            </li>
+
+        </ul>
+
+    </div>
+
+    <h3>
+        🅱️ Alcoholic Fermentation
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>Occurs in:</strong> Yeast, some plants
+        </li>
+
+        <li>
+            <strong>Two steps:</strong>
+            <ol>
+
+                <li>
+                    Pyruvate → Acetaldehyde + CO₂ <em>(enzyme: Pyruvate decarboxylase)</em>
+                </li>
+
+                <li>
+                    Acetaldehyde + NADH → Ethanol + NAD⁺ <em>(enzyme: Alcohol dehydrogenase)</em>
+                </li>
+
+            </ol>
+
+        </li>
+
+        <li>
+            <strong>Products:</strong> Ethanol + CO₂ + NAD⁺ (recycled)
+        </li>
+
+    </ul>
+
+    <div class="example-box">
+
+        💡 <strong>Examples:</strong>
+        <ul>
+
+            <li>
+                Bread making (CO₂ causes rising) 🍞
+            </li>
+
+            <li>
+                Beer and wine production 🍺🍷
+            </li>
+
+        </ul>
+
+    </div>
+
+    <h3>
+        📊 Comparison of Aerobic vs. Anaerobic Respiration
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Feature</th>
+
+                    <th>Aerobic Respiration</th>
+
+                    <th>Anaerobic Respiration/Fermentation</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Oxygen requirement</td>
+
+                    <td>Required</td>
+
+                    <td>Not required</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Final electron acceptor</td>
+
+                    <td>Oxygen</td>
+
+                    <td>Organic molecule (pyruvate or derivative)</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Location</td>
+
+                    <td>Cytoplasm + mitochondria</td>
+
+                    <td>Cytoplasm only</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>ATP yield</td>
+
+                    <td>~32 ATP/glucose</td>
+
+                    <td>2 ATP/glucose</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>End products</td>
+
+                    <td>CO₂ + H₂O</td>
+
+                    <td>Lactate or Ethanol + CO₂</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Efficiency</td>
+
+                    <td>High (~34%)</td>
+
+                    <td>Low (~2%)</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 9: REGULATION OF CELLULAR RESPIRATION -->
+
+<div class="card">
+
+    <h2>
+        🎛️ Regulation of Cellular Respiration
+    </h2>
+
+    <h3>
+        🔑 Key Regulatory Points
+    </h3>
+
+    <p>
+        <strong>1. Phosphofructokinase-1 (PFK-1) - Glycolysis</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>Inhibited by:</strong> High ATP, Citrate
+        </li>
+
+        <li>
+            <strong>Activated by:</strong> High AMP, Fructose-2,6-bisphosphate
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>2. Pyruvate dehydrogenase complex - Transition reaction</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>Inhibited by:</strong> High ATP, NADH, Acetyl CoA
+        </li>
+
+        <li>
+            <strong>Activated by:</strong> High ADP, Pyruvate
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>3. Isocitrate dehydrogenase - Krebs cycle</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>Inhibited by:</strong> High ATP, NADH
+        </li>
+
+        <li>
+            <strong>Activated by:</strong> High ADP
+        </li>
+
+    </ul>
+
+    <p>
+        <strong>4. Citrate synthase - Krebs cycle</strong>
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>Inhibited by:</strong> High ATP, NADH, Succinyl CoA
+        </li>
+
+    </ul>
+
+    <h3>
+        🔋 Energy Charge
+    </h3>
+
+    <ul>
+
+        <li>
+            <code>Energy charge = ([ATP] + ½[ADP]) / ([ATP] + [ADP] + [AMP])</code>
+        </li>
+
+        <li>
+            <strong>Range:</strong> 0 (all AMP) to 1 (all ATP)
+        </li>
+
+        <li>
+            ✔ When energy charge is high (0.9-1.0): Catabolic pathways inhibited
+        </li>
+
+        <li>
+            ✔ When energy charge is low (below 0.8): Catabolic pathways activated
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- SECTION 10: PHOTOSYNTHESIS (BASICS) -->
+
+<div class="card">
+
+    <h2>
+        🌱 PHOTOSYNTHESIS (BASICS)
+    </h2>
+
+    <p>
+        <strong>Photosynthesis</strong> is the process by which green plants, algae, and some bacteria convert light energy into chemical energy stored in organic molecules (glucose).
+    </p>
+
+    <div class="important-box">
+
+        <strong>🧪 Overall Equation:</strong>
+        <br>
+        <code>6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ + 6O₂</code>
+
+    </div>
+
+    <h3>
+        🔑 Key Facts
+    </h3>
+
+    <ul>
+
+        <li>
+            Occurs in chloroplasts (in eukaryotes) 🍃
+        </li>
+
+        <li>
+            Discovered by Jan Ingenhousz (1779) - plants produce oxygen in light 📜
+        </li>
+
+        <li>
+            <strong>Essential for life on Earth:</strong>
+            <ul>
+
+                <li>
+                    Produces oxygen for respiration 🫁
+                </li>
+
+                <li>
+                    Provides organic compounds for heterotrophs 🌾
+                </li>
+
+                <li>
+                    Removes CO₂ from atmosphere 🌍
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+    <h3>
+        🔬 Chloroplast Structure
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Structure</th>
+
+                    <th>Description</th>
+
+                    <th>Function</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Outer membrane</td>
+
+                    <td>Smooth, highly permeable</td>
+
+                    <td>Separates chloroplast from cytosol</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Inner membrane</td>
+
+                    <td>Less permeable, forms barrier</td>
+
+                    <td>Regulates passage of molecules</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Intermembrane space</td>
+
+                    <td>Region between outer and inner membranes</td>
+
+                    <td>-</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Stroma</td>
+
+                    <td>Fluid-filled matrix</td>
+
+                    <td>Site of Calvin cycle (dark reactions)</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Thylakoid membrane</td>
+
+                    <td>Internal membrane system</td>
+
+                    <td>Site of light reactions</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Thylakoid lumen</td>
+
+                    <td>Space inside thylakoids</td>
+
+                    <td>Accumulates protons during light reactions</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Grana</td>
+
+                    <td>Stacks of thylakoids</td>
+
+                    <td>Increase surface area for light capture</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <h3>
+        🎨 Photosynthetic Pigments
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Pigment</th>
+
+                    <th>Color</th>
+
+                    <th>Function</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Chlorophyll a</td>
+
+                    <td>Blue-green</td>
+
+                    <td>Primary pigment; reaction center</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Chlorophyll b</td>
+
+                    <td>Yellow-green</td>
+
+                    <td>Accessory pigment; transfers energy</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Carotenoids</td>
+
+                    <td>Orange-yellow</td>
+
+                    <td>Accessory; photoprotection</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Xanthophylls</td>
+
+                    <td>Yellow</td>
+
+                    <td>Accessory; photoprotection</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <strong>Absorption spectrum:</strong> Range of light wavelengths absorbed by a pigment
+        </li>
+
+        <li>
+            <strong>Action spectrum:</strong> Relative effectiveness of different wavelengths for photosynthesis
+        </li>
+
+    </ul>
+
+    <h3>
+        🌗 Two Stages of Photosynthesis
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Stage</th>
+
+                    <th>Location</th>
+
+                    <th>Inputs</th>
+
+                    <th>Outputs</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Light Reactions (Light-dependent)</td>
+
+                    <td>Thylakoid membrane</td>
+
+                    <td>Light, H₂O, NADP⁺, ADP</td>
+
+                    <td>ATP, NADPH, O₂</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Calvin Cycle (Light-independent)</td>
+
+                    <td>Stroma</td>
+
+                    <td>CO₂, ATP, NADPH</td>
+
+                    <td>G3P (sugar), ADP, NADP⁺</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 11: LIGHT REACTIONS -->
+
+<div class="card">
+
+    <h2>
+        ☀️ Light Reactions (Photochemical Phase)
+    </h2>
+
+    <h3>
+        🧩 A. Photosystems
+    </h3>
+
+    <p>
+        <code>Photosystem = Light-harvesting complex + Reaction center</code>
+    </p>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Feature</th>
+
+                    <th>Photosystem I (PSI)</th>
+
+                    <th>Photosystem II (PSII)</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Reaction center chlorophyll</td>
+
+                    <td>P700 (absorbs 700 nm)</td>
+
+                    <td>P680 (absorbs 680 nm)</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Primary electron acceptor</td>
+
+                    <td>Ferredoxin</td>
+
+                    <td>Pheophytin</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Location in thylakoid</td>
+
+                    <td>Non-appressed regions</td>
+
+                    <td>Appressed regions (grana)</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Main function</td>
+
+                    <td>Produces NADPH</td>
+
+                    <td>Splits water, produces ATP</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <h3>
+        ⚡ B. Electron Transport Pathways
+    </h3>
+
+    <h4>
+        1️⃣ Non-cyclic Photophosphorylation (Z-scheme)
+    </h4>
+
+    <p>
+        <strong>Process:</strong>
+    </p>
+
+    <ol>
+
+        <li>
+            Light excites PSII → electron ejected from P680
+        </li>
+
+        <li>
+            Electron passes to pheophytin → plastoquinone (PQ) → cytochrome b6f complex → plastocyanin (PC)
+        </li>
+
+        <li>
+            Electron transport pumps protons into thylakoid lumen (creates proton gradient)
+        </li>
+
+        <li>
+            Light excites PSI → electron ejected from P700
+        </li>
+
+        <li>
+            Electron passes to ferredoxin (Fd) → NADP⁺ reductase
+        </li>
+
+        <li>
+            Final product: NADPH formed (<code>NADP⁺ + 2e⁻ + H⁺ → NADPH</code>)
+        </li>
+
+        <li>
+            Electron replacement: Water splitting (photolysis)
+            <br>
+            • <code>2H₂O → O₂ + 4H⁺ + 4e⁻</code>
+        </li>
+
+    </ol>
+
+    <div class="important-box">
+
+        <strong>Products:</strong> ATP + NADPH + O₂
+
+    </div>
+
+    <h4>
+        2️⃣ Cyclic Photophosphorylation
+    </h4>
+
+    <p>
+        <strong>Process:</strong>
+    </p>
+
+    <ol>
+
+        <li>
+            Only PSI is involved
+        </li>
+
+        <li>
+            Electron from P700 cycles back to cytochrome b6f complex
+        </li>
+
+        <li>
+            Electron returns to PSI via plastocyanin
+        </li>
+
+        <li>
+            No NADPH produced
+        </li>
+
+        <li>
+            No water splitting (no O₂ produced)
+        </li>
+
+        <li>
+            ATP produced (via proton gradient)
+        </li>
+
+    </ol>
+
+    <p>
+        <strong>Purpose:</strong> Provides extra ATP when NADPH is sufficient
+    </p>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Feature</th>
+
+                    <th>Non-cyclic</th>
+
+                    <th>Cyclic</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Photosystems involved</td>
+
+                    <td>PSI and PSII</td>
+
+                    <td>PSI only</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Products</td>
+
+                    <td>ATP, NADPH, O₂</td>
+
+                    <td>ATP only</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Water splitting</td>
+
+                    <td>Yes</td>
+
+                    <td>No</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Electron source</td>
+
+                    <td>Water</td>
+
+                    <td>Cycled from PSI</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <h3>
+        🌊 C. Chemiosmosis in Photosynthesis
+    </h3>
+
+    <ul>
+
+        <li>
+            Electron transport pumps H⁺ into thylakoid lumen
+        </li>
+
+        <li>
+            Proton gradient drives ATP synthesis via ATP synthase (CF₀CF₁ complex)
+        </li>
+
+        <li>
+            <strong>Similar to mitochondrial chemiosmosis but:</strong>
+            <ul>
+
+                <li>
+                    Protons pumped INTO thylakoid lumen (not intermembrane space)
+                </li>
+
+                <li>
+                    ATP synthase faces stroma
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- SECTION 12: CALVIN CYCLE -->
+
+<div class="card">
+
+    <h2>
+        🔄 Calvin Cycle (Light-Independent Reactions / Dark Reactions)
+    </h2>
+
+    <ul>
+
+        <li>
+            <strong>Location:</strong> Stroma
+        </li>
+
+        <li>
+            <strong>Discoverer:</strong> Melvin Calvin (1940s-1950s) - Nobel Prize 1961 🏅
+        </li>
+
+        <li>
+            Also called: <strong>C3 cycle</strong> (first stable product is 3-carbon compound)
+        </li>
+
+    </ul>
+
+    <h3>
+        ⚙️ Three Phases of Calvin Cycle
+    </h3>
+
+    <div class="study-box">
+
+        <strong>Phase 1: Carbon Fixation</strong>
+        <ul>
+
+            <li>
+                CO₂ combines with Ribulose-1,5-bisphosphate (RuBP, 5C)
+            </li>
+
+            <li>
+                <strong>Enzyme:</strong> RuBisCO (Ribulose-1,5-bisphosphate carboxylase/oxygenase) - most abundant protein on Earth 🌍
+            </li>
+
+            <li>
+                <strong>Product:</strong> Unstable 6C intermediate → splits into two 3-phosphoglycerate (3PGA, 3C)
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="study-box">
+
+        <strong>Phase 2: Reduction</strong>
+        <ul>
+
+            <li>
+                3PGA → 1,3-bisphosphoglycerate (using ATP)
+            </li>
+
+            <li>
+                1,3-bisphosphoglycerate → Glyceraldehyde-3-phosphate (G3P) (using NADPH)
+            </li>
+
+            <li>
+                For every 3 CO₂ fixed: 6 G3P produced
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="study-box">
+
+        <strong>Phase 3: Regeneration of RuBP</strong>
+        <ul>
+
+            <li>
+                5 G3P (15C) → 3 RuBP (15C) (using ATP)
+            </li>
+
+            <li>
+                1 G3P (3C) is net gain (used to make glucose)
+            </li>
+
+        </ul>
+
+    </div>
+
+    <h3>
+        📊 Summary of Calvin Cycle (per 3 CO₂)
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Input</th>
+
+                    <th>Amount</th>
+
+                    <th>Output</th>
+
+                    <th>Amount</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>CO₂</td>
+
+                    <td>3</td>
+
+                    <td>G3P (net gain)</td>
+
+                    <td>1</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>ATP</td>
+
+                    <td>9</td>
+
+                    <td>ADP</td>
+
+                    <td>9</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>NADPH</td>
+
+                    <td>6</td>
+
+                    <td>NADP⁺</td>
+
+                    <td>6</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="important-box">
+
+        💡 <strong>To make one glucose (C₆H₁₂O₆):</strong> Need 6 CO₂, 18 ATP, 12 NADPH
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 13: COMPARISON C3, C4, AND CAM PLANTS -->
+
+<div class="card">
+
+    <h2>
+        🌾 Comparison: C3, C4, and CAM Plants
+    </h2>
+
+    <h3>
+        🌱 C3 Plants (e.g., rice, wheat, soybean)
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>First product:</strong> 3-phosphoglycerate (3C)
+        </li>
+
+        <li>
+            RuBisCO fixes CO₂ directly
+        </li>
+
+        <li>
+            <strong>Problem:</strong> Photorespiration (RuBisCO uses O₂ instead of CO₂ in hot, dry conditions)
+        </li>
+
+        <li>
+            <strong>Photorespiration:</strong> Wastes energy; produces no sugar; releases CO₂
+        </li>
+
+    </ul>
+
+    <h3>
+        🌽 C4 Plants (e.g., maize, sugarcane, sorghum)
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>First product:</strong> Oxaloacetate (4C)
+        </li>
+
+        <li>
+            <strong>Kranz anatomy:</strong> Two cell types (mesophyll and bundle sheath)
+        </li>
+
+        <li>
+            <strong>Mechanism:</strong>
+            <ul>
+
+                <li>
+                    <em>Mesophyll cells:</em> PEP carboxylase fixes CO₂ into 4C compound (oxaloacetate → malate)
+                </li>
+
+                <li>
+                    Malate transports to bundle sheath cells
+                </li>
+
+                <li>
+                    Malate releases CO₂ for Calvin cycle
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+            <strong>Advantage:</strong> Concentrates CO₂, minimizes photorespiration
+        </li>
+
+        <li>
+            <strong>Energy cost:</strong> Uses 2 extra ATP per CO₂
+        </li>
+
+    </ul>
+
+    <h3>
+        🌵 CAM Plants (e.g., cacti, succulents, pineapple)
+    </h3>
+
+    <ul>
+
+        <li>
+            <strong>Crassulacean Acid Metabolism</strong>
+        </li>
+
+        <li>
+            <strong>Temporal separation:</strong> Fix CO₂ at night, Calvin cycle during day
+        </li>
+
+        <li>
+            <strong>Mechanism:</strong>
+            <ul>
+
+                <li>
+                    <em>Night:</em> Stomata open; CO₂ fixed into malate (stored in vacuole) 🌙
+                </li>
+
+                <li>
+                    <em>Day:</em> Stomata closed; malate releases CO₂ for Calvin cycle ☀️
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+            <strong>Advantage:</strong> Conserves water (stomata open at night when cooler) 💧
+        </li>
+
+    </ul>
+
+    <h3>
+        📊 Comparison Table
+    </h3>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Feature</th>
+
+                    <th>C3 Plants</th>
+
+                    <th>C4 Plants</th>
+
+                    <th>CAM Plants</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>First product</td>
+
+                    <td>3PGA (3C)</td>
+
+                    <td>Oxaloacetate (4C)</td>
+
+                    <td>Oxaloacetate (4C) at night</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Anatomy</td>
+
+                    <td>No Kranz</td>
+
+                    <td>Kranz anatomy</td>
+
+                    <td>No Kranz</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Optimal temperature</td>
+
+                    <td>15-25°C</td>
+
+                    <td>25-35°C</td>
+
+                    <td>>35°C</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Water use efficiency</td>
+
+                    <td>Low</td>
+
+                    <td>Moderate</td>
+
+                    <td>High</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Photorespiration</td>
+
+                    <td>High</td>
+
+                    <td>Minimal</td>
+
+                    <td>Minimal</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Examples</td>
+
+                    <td>Rice, wheat, soybean</td>
+
+                    <td>Maize, sugarcane</td>
+
+                    <td>Cacti, succulent</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- SECTION 14: FACTORS AFFECTING PHOTOSYNTHESIS & SIGNIFICANCE -->
+
+<div class="card">
+
+    <h2>
+        🌤️ Factors Affecting Photosynthesis
+    </h2>
+
+    <p>
+        <strong>A. Light Intensity ☀️</strong>
+        <br>
+        • At low light: Rate increases linearly with intensity
+        <br>
+        • At high light: Rate plateaus (limited by other factors)
+        <br>
+        • Light saturation point varies by plant type
+    </p>
+
+    <p>
+        <strong>B. Carbon Dioxide Concentration 💨</strong>
+        <br>
+        • At low CO₂: Rate increases with CO₂ concentration
+        <br>
+        • At high CO₂: Rate plateaus (saturation)
+    </p>
+
+    <p>
+        <strong>C. Temperature 🌡️</strong>
+        <br>
+        • Optimal range: 25-35°C (varies by plant type)
+        <br>
+        • Too high: Enzyme denaturation, increased photorespiration
+        <br>
+        • Too low: Reduced enzyme activity
+    </p>
+
+    <p>
+        <strong>D. Water Availability 💧</strong>
+        <br>
+        • Water stress causes stomatal closure → reduced CO₂ entry
+    </p>
+
+    <p>
+        <strong>E. Chlorophyll Content 🍃</strong>
+        <br>
+        • More chlorophyll = more light absorption (up to a point)
+    </p>
+
+    <h2>
+        🌍 Significance of Photosynthesis
+    </h2>
+
+    <ol>
+
+        <li>
+            <strong>Primary production:</strong> Base of most food chains 🌾
+        </li>
+
+        <li>
+            <strong>Oxygen production:</strong> Maintains atmospheric O₂ levels 🫁
+        </li>
+
+        <li>
+            <strong>Carbon dioxide fixation:</strong> Removes CO₂ from atmosphere 🌲
+        </li>
+
+        <li>
+            <strong>Energy storage:</strong> Converts light energy to chemical energy 🔋
+        </li>
+
+        <li>
+            <strong>Fossil fuel formation:</strong> Ancient photosynthesis created coal, oil, natural gas ⛽
+        </li>
+
+        <li>
+            <strong>Building materials:</strong> Wood, fibers, etc. 🪵
+        </li>
+
+    </ol>
+
+</div>
+
+
+<!-- SECTION 15: SUMMARY DIFFERENCES -->
+
+<div class="card">
+
+    <h2>
+        🧠 Summary of Key Differences: Respiration vs. Photosynthesis
+    </h2>
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Feature</th>
+
+                    <th>Cellular Respiration</th>
+
+                    <th>Photosynthesis</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Function</td>
+
+                    <td>Energy release</td>
+
+                    <td>Energy capture</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Organelle</td>
+
+                    <td>Mitochondria</td>
+
+                    <td>Chloroplasts</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Equation</td>
+
+                    <td>C₆H₁₂O₆ + O₂ → CO₂ + H₂O + ATP</td>
+
+                    <td>CO₂ + H₂O + Light → C₆H₁₂O₆ + O₂</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Electron donor</td>
+
+                    <td>Glucose</td>
+
+                    <td>Water</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Electron acceptor</td>
+
+                    <td>Oxygen</td>
+
+                    <td>NADP⁺</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>ATP production</td>
+
+                    <td>Oxidative phosphorylation</td>
+
+                    <td>Photophosphorylation</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Occurs in</td>
+
+                    <td>All living cells</td>
+
+                    <td>Plants, algae, some bacteria</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>When</td>
+
+                    <td>Always (if O₂ available)</td>
+
+                    <td>In light</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<footer class="footer">
+
+    🧬 Health Chapter 1 • Bioenergetics
+
+    <br>
+
+    📚 Unique Academic — Complete Study Notes
+
+</footer>
+
+
+</body>
+
+</html>
