@@ -6975,43 +6975,781 @@ if (!quizData["law-coc"]) {
 // Constitutional Law & FDRE Government Structure
 // =====================================================
 
-quizData["law-coc"]["1"] = [
+quizData["law-coc"]["1"] = [ {
+  question: "Case: Regional state passes law on education contradicting federal law. Which prevails?",
+  options: [
+    "Regional law",
+    "Federal law",
+    "Both are invalid",
+    "Matter goes to referendum"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️🏛️ According to Article 171 of the FDRE Constitution and general federalism principles, federal laws enacted within the federal government's constitutional jurisdiction override conflicting state laws. 🇪🇹📜🔹",
+  amharicExplanation: "⚖️📜 በፌዴራሊዝም መርህና በኢፌዴሪ ሕገ-መንግሥት መሠረት የፌዴራል መንግሥቱ በሥልጣኑ ክልል ያወጣው ሕግ ከክልል ሕግ ጋር ከተቃረበ የፌዴራሉ ሕግ የበላይነት ይኖረዋል። 🇪🇹🏛️🔹"
+},
 
-    {
-        question: "PUT YOUR REAL QUESTION HERE",
+{
+  question: "Case: During emergency, government detains person without charge for 3 months. Which right is violated?",
+  options: [
+    "Right to liberty",
+    "Right to fair trial",
+    "Right to be informed of charges",
+    "All of the above"
+  ],
+  answer: 3,
+  englishExplanation: "🚨⚖️ Holding an individual for months without formal charges violates liberty rights, the specific procedural right to be informed promptly of charges, and the fundamental right to a fair trial. 🔒👨‍⚖️📜",
+  amharicExplanation: "🚨🔒 አንድን ሰው ያለ ክስ ለ3 ወራት ማሰር የነፃነት መብትን፣ የተከሰሰበትን ምክንያት በፍጥነት የመረዳት መብትን እና ፍትሃዊ ፍርድ የማግኘት መብትን በአንድነት ስለሚጥስ ሁሉም መልስ ይሆናሉ። ⚖️📜👨‍⚖️🔒"
+},
 
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
+{
+  question: "Case: Judge is member of ruling party and decides cases favoring party members. This violates:",
+  options: [
+    "Judicial independence",
+    "Rule of law",
+    "Principle of impartiality",
+    "All of the above"
+  ],
+  answer: 3,
+  englishExplanation: "🏛️⚖️ Political bias by a judge breaches judicial independence, violates equality before the law (rule of law), and completely undermines the fundamental requirement of judicial impartiality. 👨‍⚖️🚫📜",
+  amharicExplanation: "⚖️🏛️ ዳኛ ለገዢ ፓርቲ በማድላት የሚሰጠው ውሳኔ የዳኝነት ነፃነትን፣ የሕግ የበላይነትን እና የዳኞች ገለልተኝነትን በአንድነት የሚጥስ ተግባር ነው። 👨‍⚖️🚫📜⚖️"
+},
 
-        answer: 0,
+{
+  question: "Law requires all religions to register with government; unregistered religions banned. This likely violates:",
+  options: [
+    "Freedom of religion",
+    "Right to association",
+    "Equality before law",
+    "All of the above"
+  ],
+  answer: 0,
+  englishExplanation: "🕊️⚖️ Article 27 guarantees freedom of religion and belief. Banning religious practice based solely on state registration requirements restricts the inherent freedom to hold and manifest religious beliefs. 📜🙏🔓",
+  amharicExplanation: "🕊️📜 በሕገ-መንግሥቱ አንቀጽ 27 መሠረት የእምነት እና የሃይማኖት ነፃነት የተረጋገጠ በመሆኑ ሃይማኖቶችን በመንግሥት ምዝገባ ገድቦ ያልተመዘገቡትን ማገድ የሃይማኖት ነፃነትን ይጥሳል። 🙏⚖️📜🔓"
+},
 
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+{
+  question: "Which fundamental principle is NOT in FDRE Constitution?",
+  options: [
+    "Supremacy of constitution",
+    "Accountability of officials",
+    "Compromise of inalienable rights",
+    "Separation of state and religion"
+  ],
+  answer: 2,
+  englishExplanation: "❌📜 Fundamental human rights are inalienable and inviolable (Article 10). The Constitution does not allow fundamental human rights to be compromised or bargained away. ⚖️🛡️🔒",
+  amharicExplanation: "❌⚖️ ሰብአዊ መብቶች የማይገፈፉና የማይጣሱ (Inalienable) በመሆናቸው በሕገ-መንግሥቱ መሠረት ለድርድር ወይም ለድርድር ድርድር (Compromise) የሚቀርቡ አይደሉም። 📜🛡️🔒"
+},
 
-        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
-    },
+{
+  question: "Democratic right enjoyed ONLY by Ethiopian citizens:",
+  options: [
+    "Right to be elected",
+    "Right to elect",
+    "Right to affirmative action",
+    "All of the above"
+  ],
+  answer: 3,
+  englishExplanation: "🗳️🇪🇹 Under Article 38 and Article 35(3), political rights such as voting, standing for public office, and benefiting from national affirmative action frameworks are constitutionally reserved exclusively for Ethiopian citizens. ⚖️📜👥",
+  amharicExplanation: "🗳️🇪🇹 በሕገ-መንግሥቱ አንቀጽ 38 እና 35 መሠረት የመምረጥ፣ የመመረጥ እና የአዎንታዊ እርምጃ (Affirmative action) ተጠቃሚነት መብቶች ለኢትዮጵያውያን ዜጎች ብቻ የተከለሉ ዲሞክራሲያዊ መብቶች ናቸው። 📜⚖️👥🇪🇹"
+},
 
-    {
-        question: "PUT YOUR SECOND REAL QUESTION HERE",
+{
+  question: "Constitution interpretation power belongs to:",
+  options: [
+    "Federal Supreme Court",
+    "House of Peoples' Representatives",
+    "House of Federation",
+    "Human Rights Commission"
+  ],
+  answer: 2,
+  englishExplanation: "📜⚖️ Under Articles 62(1) and 83 of the FDRE Constitution, the ultimate authority to interpret constitutional disputes is explicitly vested in the House of Federation. 🏛️🇪🇹🔍",
+  amharicExplanation: "📜⚖️ በሕገ-መንግሥቱ አንቀጽ 62(1) እና 83 መሠረት የሕገ-መንግሥት ትርጉም የመስጠት የመጨረሻ ሥልጣን የተሰጠው ለፌዴሬሽን ምክር ቤት ነው። 🏛️🇪🇹🔍⚖️"
+},
 
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
+{
+  question: "Accurate description of FDRE Constitution timelines:",
+  options: [
+    "HPR elections every 5 years",
+    "Population census every 7 years",
+    "House of Federation elections every 5 years",
+    "All except B"
+  ],
+  answer: 3,
+  englishExplanation: "⏰📜 Elections for the House of Peoples' Representatives (Article 54) and the House of Federation (Article 61) occur every 5 years. Population censuses are constitutionally specified to occur every 10 years (Article 103), not 7 years. 🗳️🇪🇹⚖️",
+  amharicExplanation: "⏰📜 የሕዝብ ተወካዮች እና የፌዴሬሽን ምክር ቤት ምርጫዎች በየ 5 ዓመቱ ይካሄዳሉ። የሕዝብ ቆጠራ የሚካሄደው በየ 10 ዓመቱ በመሆኑ B ስህተት ነው፤ ስለዚህ መልሱ D ይሆናል። 🗳️🇪🇹⚖️📊"
+},
 
-        answer: 1,
+{
+  question: "Ethiopian federal parliament uses which electoral system?",
+  options: [
+    "Proportional representation",
+    "Plurality of votes",
+    "50%+ majority",
+    "None"
+  ],
+  answer: 1,
+  englishExplanation: "🗳️⚖️ Article 54(2) establishes the \"First-Past-The-Post\" or plurality electoral system, where the candidate who receives the highest number of votes in a constituency wins the seat. 🇪🇹📜🏆",
+  amharicExplanation: "🗳️🇪🇹 በኢፌዴሪ ሕገ-መንግስት አንቀጽ 54(2) መሠረት የፓርላማ አባላት የሚመረጡት በወረዳ ደረጃ ከፍተኛ ድምፅ (Plurality of votes / First-past-the-post) ባገኘው ዕጩ አሸናፊነት ነው። 📜⚖️🏆"
+},
 
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+{
+  question: "Which is NOT a key feature of government according to law?",
+  options: [
+    "Public bodies must do what law requires",
+    "Courts correct executive power abuses",
+    "Ministers acting officially cannot be sued",
+    "Judiciary enforces law against all"
+  ],
+  answer: 2,
+  englishExplanation: "🛑⚖️ Under the rule of law and Article 12, government officials and ministers enjoy no personal immunity for illegal acts done under official power and can be held accountable before courts. 🏛️👨‍⚖️📜",
+  amharicExplanation: "🛑⚖️ በሕግ የበላይነት መርህ መሠረት ሚኒስትሮችም ሆኑ ባለሥልጣናት ከሕግ በላይ ስላልሆኑ በሥራ አጋጣሚ ለሚፈጽሙት ሕገ-ወጥ ተግባር በፍርድ ቤት ሊከሰሱ ይችላሉ። 👨‍⚖️📜🏛️⚖️"
+},
 
-        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
-    }
+{
+  question: "A person arrested without being charged has which right violated?",
+  options: [
+    "Right of arrested person",
+    "Right to security",
+    "Right of accused person",
+    "Right to liberty"
+  ],
+  answer: 0,
+  englishExplanation: "🔒⚖️ Article 19 explicitly details the procedural rights of arrested persons, including the right to be informed immediately of reasons for arrest and charged within 48 hours. 📜👮‍♂️⏰",
+  amharicExplanation: "🔒📜 በሕገ-መንግሥቱ አንቀጽ 19 የተደነገገው የተያዙ ሰዎች መብት (Right of arrested person) ሲሆን፣ ያለ ክስ መታሰር ይህንን አንቀጽ ቀጥታ ይጥሳል። ⚖️👮‍♂️📜🚨"
+},
 
-];
+{
+  question: "Under Ethiopian penal law, which is homicide?",
+  options: [
+    "Drug trafficking",
+    "Human trafficking",
+    "Corruption",
+    "Deliberate disease transmission"
+  ],
+  answer: 3,
+  englishExplanation: "⚠️⚖️ Under the Ethiopian Criminal Code, knowingly/deliberately transmitting a fatal communicable disease that directly results in a person's death can be legally classified as homicide. 📜🔴👤",
+  amharicExplanation: "⚠️⚖️ በኢትዮጵያ የወንጀል ሕግ መሠረት ገዳይ የሆነን በሽታ ሆን ብሎ ወደ ሌላ ሰው በማስተላለፍ ሞት እንዲከሰት ማድረግ በነፍስ ግድያ ወንጀል (Homicide) ያስጠይቃል። ⚖️📜🚨"
+},
+
+{
+  question: "The all-inclusive term for fair legal procedures is:",
+  options: [
+    "Due notice",
+    "Impartial tribunal",
+    "Public trial",
+    "Due process of law"
+  ],
+  answer: 3,
+  englishExplanation: "⚖️📜 \"Due process of law\" is the comprehensive legal standard ensuring that all legal proceedings remain fair, transparent, and respectful of constitutional rights. 🏛️🔍🛡️",
+  amharicExplanation: "⚖️📜 \"Due process of law\" (ሕጋዊ የሥነ-ሥርዓት ፍትሕ) ማለት ሁሉንም ፍትሃዊ የሕግ አሰራሮች፣ የችሎት ሂደቶችና የመብት ጥበቃዎች በአንድ ላይ የሚያጠቃልል ፅንሰ-ሃሳብ ነው። 👨‍⚖️📜🛡️⚖️"
+},
+
+{
+  question: "People exposing corruption anonymously are:",
+  options: [
+    "Conscientious objectors",
+    "Whistleblowers",
+    "Arrogant",
+    "Brokers"
+  ],
+  answer: 1,
+  englishExplanation: "🕵️‍♂️🚨 A whistleblower is a person who exposes illegal, corrupt, or unethical practices within an organization or government entity to the public or authorities. ⚖️📢🔍",
+  amharicExplanation: "🕵️‍♂️🚨 ዊስልብሎወር (Whistleblower) ማለት በመንግሥት ወይም በድርጅቶች ውስጥ የሚፈጸምን ሙስና እና ሕገ-ወጥ አሰራር ምስጢራዊ በሆነ መንገድ የሚያጋልጥ ሰው ነው። 📢⚖️🔍🛡️"
+},
+
+{
+  question: "Accountability of state means:",
+  options: [
+    "Government duty to establish auditing system",
+    "Government responsibility to provide services",
+    "Popular power to hold government liable for misdeeds",
+    "Popular power to audit state accounts"
+  ],
+  answer: 2,
+  englishExplanation: "🏛️⚖️ State accountability (Article 12) means public officials and institutions remain answerable to the citizens and subject to legal consequences for wrongdoing or failure of duty. 📜👥🔍",
+  amharicExplanation: "🏛️⚖️ የመንግሥት ተጠያቂነት ማለት ሕዝቡ መንግሥትና ባለሥልጣናት ለሚፈጽሟቸው ጥፋቶችና ድክመቶች ተጠያቂ የሚያደርግበት ሥልጣንና አሰራር መኖሩ ነው። 👥📜⚖️🔍"
+},
+
+{
+  question: "Which is NOT correct about responsibility?",
+  options: [
+    "State of being answerable for obligation",
+    "Taking consequences of others' actions",
+    "Custom is major source of responsibility",
+    "Fulfilling responsibilities enables rights utilization"
+  ],
+  answer: 1,
+  englishExplanation: "📖⚖️ Responsibility is inherently personal or institutional based on one's own duties and actions; individuals are not generally held legally responsible for the independent actions of others. 👤🏛️🔍",
+  amharicExplanation: "📖⚖️ ኃላፊነት የራስን ተግባርና ግዴታ መወጣትን ይመለከታል እንጂ የሌሎችን ሰዎች ገለልተኛ ድርጊትና ጥፋት ውጤት በግድ መሸከም (B) የኃላፊነት ትርጉም አይደለም። 👤📜⚖️❌"
+},
+
+{
+  question: "Sexism means:",
+  options: [
+    "Economic, social, political equality of genders",
+    "Providing extra opportunities to women",
+    "Discrimination based on gender",
+    "Promoting gender sensitivity"
+  ],
+  answer: 2,
+  englishExplanation: "♀️♂️⚖️ Sexism refers specifically to prejudice, stereotyping, or discrimination directed against people based on their gender. 🚫👥🔍",
+  amharicExplanation: "♀️♂️⚖️ ሴክሲዝም (Sexism) ማለት በጾታ ላይ የተመሰረተ ማንኛውም ዓይነት አድልዎ፣ ግፋ እና የነጠላ አስተሳሰብ ጭቆና ማለት ነው። 🚫⚖️👥"
+},
+
+{
+  question: "Fair burden/benefit allocation concerns:",
+  options: [
+    "Corrective justice",
+    "Distributive justice",
+    "Legal justice",
+    "Procedural justice"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️🤝 Distributive justice deals specifically with the equitable and fair social distribution of societal resources, opportunities, benefits, and economic burdens. 🏛️📊⚖️",
+  amharicExplanation: "⚖️🤝 አከፋፋይ ፍትሕ (Distributive justice) ማለት በኅብረተሰብ ውስጥ ያሉ ጥቅሞች፣ ሀብቶችና ኃላፊነቶች/ሸክሞች በፍትሃዊ መንገድ መከፋፈላቸውን የሚያረጋግጥ የፍትሕ ዓይነት ነው። 🏛️📊🤝⚖️"
+},
+
+{
+  question: "Which right is different from others?",
+  options: [
+    "Right to honor and reputation",
+    "Right to privacy",
+    "Right to access justice",
+    "Prohibition of double jeopardy"
+  ],
+  answer: 2,
+  englishExplanation: "🔒⚖️ Options A, B, and D protect specific personal integrity and criminal procedure guarantees, while the Right to Access Justice (Article 37) is an overarching procedural right that enables individuals to enforce all other legal rights in court. 🏛️📜👨‍⚖️",
+  amharicExplanation: "🔒⚖️ ፍትሕ የማግኘት መብት (Right to access justice) ሌሎችን መብቶች ለማስከበር የሚያስችል ሰፊ የሥነ-ሥርዓት መብት ሲሆን፣ ሌሎቹ ግን የተወሰኑ የግልና የሕግ ጥበቃ መብቶች በመሆናቸው ይለያል። 🏛️📜⚖️👨‍⚖️"
+},
+
+{
+  question: "Feature of democratic rights is:",
+  options: [
+    "They are inalienable",
+    "Can exist without human rights",
+    "Granted by democratic constitution",
+    "Can exist without rule of law"
+  ],
+  answer: 2,
+  englishExplanation: "🗳️📜 Unlike universal human rights (which exist inherent to human nature), democratic rights (such as voting and holding office) are institutional political rights formally created, granted, and regulated by a democratic constitution. 🇪🇹⚖️🏛️",
+  amharicExplanation: "🗳️📜 ዲሞክራሲያዊ መብቶች (እንደ መምረጥና መመረጥ) ከተፈጥሮ ይልቅ በሕገ-መንግስትና በሕጋዊ አሰራሮች የሚሰጡና የሚደነገጉ የፖለቲካ መብቶች ናቸው። 🇪🇹⚖️🏛️📚"
+},{
+  question: "Which power belongs to Federal Government?",
+  options: [
+    "Formulating land use policy",
+    "Establishing state police force",
+    "Executing state development strategies",
+    "Administering inter-state immigration"
+  ],
+  answer: 0,
+  englishExplanation: "⚖️📜 Under Article 51(5) of the FDRE Constitution, the Federal Government is responsible for enacting laws and policy guidelines regarding the utilization and conservation of land and natural resources across the nation. 🇪🇹🌍 Police force establishment and executing local development plans belong to regional states. 🏛️🔹",
+  amharicExplanation: "⚖️📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 51(5) መሠረት የመሬት እና የተፈጥሮ ሀብት አጠቃቀምና ጥበቃ ፖሊሲዎችንና ሕጎችን ማውጣት የፌዴራል መንግሥት ሥልጣን ነው። 🇪🇹🏛️ የክልል ፖሊስ ማደራጀት እና የልማት ስትራቴጂዎችን መተግበር የክልሎች ሥልጣን ነው። ⚖️🔹"
+},
+
+{
+  question: "The doctrine advocating rule of law as state ideology is:",
+  options: [
+    "Anarchy",
+    "Apathy",
+    "Constitutionalism",
+    "Dictatorship"
+  ],
+  answer: 2,
+  englishExplanation: "📜⚖️ Constitutionalism is the political principle stating that government authority is derived from and limited by a fundamental body of law (the Constitution) and the Rule of Law. 🏛️🔒",
+  amharicExplanation: "📜⚖️ ሕገ-መንግሥታዊነት (Constitutionalism) የመንግሥት ሥልጣን በሕገ-መንግሥትና በሕግ የበላይነት የተገደበና የሚመራ መሆን አለበት የሚል መርህ ነው። 🏛️⚖️📚"
+},
+
+{
+  question: "Constitutional review power in FDRE rests with:",
+  options: [
+    "House of Federation",
+    "Prime Minister",
+    "House of Peoples' Representatives",
+    "President"
+  ],
+  answer: 0,
+  englishExplanation: "🏛️📜 Unlike many countries where the Supreme Court interprets the Constitution, Article 62(1) and Article 83 of the FDRE Constitution give the ultimate power of constitutional interpretation to the House of Federation (HoF). ⚖️🇪🇹🔍",
+  amharicExplanation: "🏛️📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 62(1) እና 83 መሠረት የሕገ-መንግሥት ትርጉም የመስጠት እና የመተርጎም የመጨረሻ ሥልጣን የተሰጠው ለፌዴሬሽን ምክር ቤት ነው። ⚖️🇪🇹🔍📖"
+},
+
+{
+  question: "Reserved powers (not given to federal or both governments) go to:",
+  options: [
+    "Federal government",
+    "States",
+    "House of Federation",
+    "House of Peoples' Representatives"
+  ],
+  answer: 1,
+  englishExplanation: "🗺️⚖️ Article 52(1) specifies the principle of residual powers: all powers not expressly given to the Federal Government alone or concurrently to both Federal and State governments are reserved for the Regional States. 🏛️🇪🇹🔹",
+  amharicExplanation: "🗺️📜 በሕገ-መንግሥቱ አንቀጽ 52(1) መሠረት ለፌዴራል መንግሥት ወይም ለሁለቱም በጋራ ያልተሰጡ ቀሪ ሥልጣናት (Reserved/Residual powers) ሙሉ በሙሉ የክልሎች ናቸው። 🇪🇹🏛️⚖️"
+},
+
+{
+  question: "Which is INCORRECT about House of Federation?",
+  options: [
+    "Members elected by state councils",
+    "Each nation/nationality represented by one member per population",
+    "Members directly elected by people",
+    "Composed of nations, nationalities, and peoples"
+  ],
+  answer: 2,
+  englishExplanation: "❌🏛️ Under Article 61(3), HoF members are primary chosen by State Councils. While State Councils may hold direct elections, the standard structural process defined is selection via State Councils, making direct popular election non-mandatory for all members. ⚖️📜 Moreover, option B states representation logic (1 member + 1 additional per 1 million). 🔹🇪🇹",
+  amharicExplanation: "❌📜 በሕገ-መንግሥቱ አንቀጽ 61(3) መሠረት የፌዴሬሽን ምክር ቤት አባላት በዋናነት የሚመረጡት በክልል ምክር ቤቶች ነው። 🏛️ በመሆኑም በሕዝብ በቀጥታ መመረጥ ግዴታ ባለመሆኑ 'C' ስህተት የሆነው አረፍተ ነገር ነው። ⚖️📚"
+},
+
+{
+  question: "The 1931 Constitution was innovative because it introduced:",
+  options: [
+    "Separation of church and state",
+    "Checks and balances",
+    "Annual budgeting",
+    "Federal system"
+  ],
+  answer: 2,
+  englishExplanation: "✍️📜 Written during Emperor Haile Selassie I's reign, the 1931 Constitution introduced Ethiopia's first formal centralized administrative structures, including a official parliament framework and a standardized annual state budget system. 🇪🇹🏛️💰",
+  amharicExplanation: "📜🇪🇹 በ1923 ዓ.ም (1931 G.C) በንጉሥ ኃይለ ሥላሴ ጊዜ የወጣው ሕገ-መንግሥት በኢትዮጵያ ታሪክ ለመጀመሪያ ጊዜ የተማከለ የመንግሥት በጀት (Annual budgeting) እና የፓርላማ መዋቅርን አስተዋውቋል። 🏛️💰📚"
+},
+
+{
+  question: "In parliamentary democracy:",
+  options: [
+    "Highest authority is parliament",
+    "Executive and legislature are fused",
+    "President has overriding power",
+    "Both A and B"
+  ],
+  answer: 3,
+  englishExplanation: "🗳️🏛️ In a parliamentary system (like Ethiopia or the UK), parliament holds supreme legislative authority (A), and the executive branch (Prime Minister and cabinet) is drawn directly from and accountable to the legislature, creating a fusion of powers (B). ⚖️📜",
+  amharicExplanation: "🗳️🏛️ በፓርላማዊ ዲሞክራሲ ሥርዓት ውስጥ ፓርላማው ከፍተኛው የመንግሥት ሥልጣን ባለቤት ነው (A)፣ እንዲሁም አስፈፃሚው አካል (ጠቅላይ ሚኒስትሩና ካቢኔው) ከፓርላማው የሚመረጥ በመሆኑ በሁለቱ አካላት መካከል ውህደት (Fusion of powers) አለ (B)። ⚖️📜🤝"
+},
+
+{
+  question: "A democratic government characteristic is:",
+  options: [
+    "Ultimate power resides in people",
+    "Authorities emerge from and are supervised by people",
+    "Constitution grants sovereign authority to people",
+    "All of the above"
+  ],
+  answer: 3,
+  englishExplanation: "✨🗳️ Popular sovereignty is the core pillar of democracy: all power originates from the citizens, officials are elected by and accountable to them, and constitutional authority rests in the public interest. 👥🏛️⚖️🇪🇹",
+  amharicExplanation: "✨🗳️ የዲሞክራሲያዊ መንግሥት ዋና ዋና መገለጫዎች የሥልጣን ባለቤቱ ሕዝብ መሆኑ፣ ባለሥልጣናት በሕዝብ የሚመረጡና የሚቆጣጠሩ መሆናቸው፣ እና ሕገ-መንግሥቱ የሕዝብን የበላይነት ማረጋገጡ በመሆናቸው ሁሉም መልስ ናቸው። 👥🇪🇹🏛️⚖️"
+},
+
+{
+  question: "Which is NOT a democratic constitution function?",
+  options: [
+    "Establishing government branches",
+    "Establishing citizen rights/duties rules",
+    "Determining system of government",
+    "None of the above"
+  ],
+  answer: 3,
+  englishExplanation: "🛑📜 All options listed (A, B, and C) are fundamental legal functions carried out by a democratic constitution. Therefore, \"None of the above\" is the correct selection as none are incorrect. ⚖️🏛️🔍",
+  amharicExplanation: "🛑📜 የመንግሥት አካላትን ማደራጀት፣ የዜጎችን መብትና ግዴታ መወሰን፣ እና የመንግሥትን አስተዳደር ሥርዓት መቅረፅ የሕገ-መንግሥት ዋና ተግባራት ናቸው። 📚🏛️ ስለዚህ የተሳሳተ ተግባር ስለሌለ መልሱ \"None of the above\" ይሆናል። ⚖️✅"
+},
+
+{
+  question: "Judiciary in democratic state should NOT be:",
+  options: [
+    "Governed by rule of law",
+    "Impartial",
+    "Adherent of ruling party",
+    "Independent"
+  ],
+  answer: 2,
+  englishExplanation: "⚖️🏛️ A democratic judiciary must remain politically non-partisan. Judges cannot align with or take directives from the ruling political party, as doing so destroys judicial independence. 🚫👨‍⚖️📜",
+  amharicExplanation: "⚖️🏛️ በዲሞክራሲያዊ ሥርዓት ውስጥ ዳኝነት/ፍርድ ቤት ገለልተኛ መሆን አለበት እንጂ የሚገዛው ገዢ ፓርቲ ደጋፊ ወይም ተላላኪ (Adherent of ruling party) መሆን የለበትም። 🚫👨‍⚖️📜"
+},
+
+{
+  question: "Correct constitution-making procedure is:",
+  options: [
+    "Drafting, initiation, ratification, deliberations, publishing",
+    "Drafting, initiation, publishing, ratification, deliberations",
+    "Initiation, ratification, deliberations, drafting, publishing",
+    "Initiation, drafting, deliberations, ratification, publishing"
+  ],
+  answer: 3,
+  englishExplanation: "📝📜 The legitimate process flows logically: **Initiation** (proposal to make a constitution) ➔ **Drafting** (writing the text) ➔ **Deliberations** (public/parliamentary debates) ➔ **Ratification** (formal legal approval) ➔ **Publishing** (promulgation). ⚖️🏛️✅",
+  amharicExplanation: "📝📜 ትክክለኛው ሕገ-መንግሥት የማውጣት ቅደም-ተከተል፡ ሃሳቡን ማስጀመር (Initiation) ➔ ረቂቅ ማዘጋጀት (Drafting) ➔ ውይይት ማድረግ (Deliberations) ➔ ማጽደቅ (Ratification) ➔ ማወጅ/ማተም (Publishing) ነው። 📚⚖️🏛️✅"
+},
+
+{
+  question: "Which is FALSE about 1995 Ethiopian Constitution?",
+  options: [
+    "All languages enjoy equal state recognition",
+    "Amharic is government working language",
+    "States determine their working language",
+    "It establishes federal system"
+  ],
+  answer: 0,
+  englishExplanation: "🗣️📜 Article 5 states that all Ethiopian languages enjoy equal *respect* (not equal state working recognition). Amharic is designated as the official working language of the Federal Government, while regional states can choose their own working languages. 🇪🇹⚖️🔤",
+  amharicExplanation: "🗣️📜 በሕገ-መንግሥቱ አንቀጽ 5 መሠረት ሁሉም የኢትዮጵያ ቋንቋዎች የእኩልነት **እውቅና/ክብር** አላቸው እንጂ ሁሉም የስራ ቋንቋ ናቸው አልተባለም። 🇪🇹📜 አማርኛ የፌዴራሉ መንግሥት የሥራ ቋንቋ ነው፣ ክልሎችም የየራሳቸውን መወሰን ይችላሉ። ⚖️🔤"
+},
+
+{
+  question: "About government conduct under Article 12, which is FALSE?",
+  options: [
+    "Government affairs must be transparent",
+    "Officials accountable for duty failures",
+    "Elected representatives can access other states' secrets",
+    "All are correct"
+  ],
+  answer: 2,
+  englishExplanation: "👁️📜 Article 12 establishes the principles of transparency and accountability of government conduct. It does not grant representatives unbounded access to bypass legal limitations or inspect classified security state secrets arbitrarily. ⚖️🔒🏛️",
+  amharicExplanation: "👁️📜 አንቀጽ 12 ስለ መንግሥት አሠራር ግልጽነትና ተጠያቂነት ይደነግጋል እንጂ የተመረጡ ተወካዮች ያለ ሕጋዊ አሰራር የሌሎች ክልሎችን ወይም የአገርን ሚስጥር እንዲያዩ ሥልጣን አይሰጥም። ⚖️🔒🏛️"
+},
+
+{
+  question: "Condition for judiciary independence is NOT:",
+  options: [
+    "Appointing judges based on executive loyalty",
+    "Long and secure judicial tenure",
+    "Close executive monitoring of judiciary",
+    "Both A and C"
+  ],
+  answer: 3,
+  englishExplanation: "🏛️⚖️ Appointing judges based on loyalty to politicians (A) and allowing the executive to monitor judges (C) actively destroy judicial independence. Thus, both are conditions that undermine judicial independence. 🚫👨‍⚖️📜",
+  amharicExplanation: "🏛️⚖️ ዳኞችን ለፖለቲከኞች ባላቸው ታማኝነት መሾም (A) እና ፍርድ ቤቶችን በአስፈፃሚው አካል ቁጥጥር ሥር ማድረግ (C) የዳኝነት ነፃነትን የሚያጠፉ በመሆናቸው ሁለቱም (D) ትክክለኛ የዳኝነት ነፃነት መስፈርቶች አይደሉም። ⚖️🚫📜"
+},
+
+{
+  question: "Which is NOT true about human rights?",
+  options: [
+    "They are inalienable by state",
+    "They have universal applicability",
+    "They are acquired by being human",
+    "They change with time and place"
+  ],
+  answer: 3,
+  englishExplanation: "🌍⚖️ Human rights are universal, inalienable, and inherent to all human beings from birth. They do not change or evaporate based on geographic location or time period. 🛡️👥📜",
+  amharicExplanation: "🌍⚖️ ሰብአዊ መብቶች ሁለንተናዊ (Universal) እና የተፈጥሮ በመሆናቸው በቦታና በጊዜ ሂደት አይቀያየሩም ወይም አይሻሩም። 📜🛡️👥"
+},
+
+{
+  question: "Highest authority in Ethiopian Federal Government resides with:",
+  options: [
+    "Council of Ministers",
+    "Prime Minister",
+    "Federal Supreme Court",
+    "House of Peoples' Representatives"
+  ],
+  answer: 3,
+  englishExplanation: "🏛️⚖️ According to Article 50(3) and Article 55 of the FDRE Constitution, the House of Peoples' Representatives (HoPR) is the highest authority of the Federal Government. 🇪🇹📜🔹",
+  amharicExplanation: "🏛️📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 50(3) መሠረት የፌዴራሉ መንግሥት ከፍተኛ ባለሥልጣን የሕዝብ ተወካዮች ምክር ቤት ነው። 🇪🇹⚖️📜"
+},
+
+{
+  question: "Independent judiciary does NOT mean:",
+  options: [
+    "Courts are impartial",
+    "Courts are free from political pressure",
+    "Judiciary controlled by executive",
+    "All of the above"
+  ],
+  answer: 2,
+  englishExplanation: "🛑⚖️ Executive control over judges directly contradicts the fundamental meaning of an independent judiciary. 👨‍⚖️🏛️🔒",
+  amharicExplanation: "🛑⚖️ የዳኝነት ነፃነት ማለት ፍርድ ቤቶች ከአስፈፃሚው አካል (Executive) ቁጥጥርና ጣልቃ ገብነት ነፃ መሆን ማለት ነው፤ ስለዚህ ቁጥጥር መኖሩ ነፃነት አይደለም። ⚖️🚫👨‍⚖️"
+},
+
+{
+  question: "Which is FALSE about rule of law?",
+  options: [
+    "It protects against excessive government power",
+    "It puts governing bodies above law",
+    "It requires both citizens and government subject to law",
+    "None of the above"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️📜 The rule of law mandates that no institution, governing body, or public official is above the law. Statement B asserts the exact opposite, making it false. 🚫🏛️🔍",
+  amharicExplanation: "⚖️📜 የሕግ የበላይነት የመንግሥት አካላትና ባለሥልጣናት ከሕግ በታች እንጂ ከሕግ በላይ መሆን የለባቸውም ይላል። ስለዚህ B የተሳሳተ አረፍተ ነገር ነው። 🚫🏛️📜"
+},
+
+{
+  question: "Strength of direct democracy is:",
+  options: [
+    "Citizens control their destinies",
+    "It maintains stability by distancing citizens from politics",
+    "Decisions are legitimate as people made them",
+    "All except B"
+  ],
+  answer: 3,
+  englishExplanation: "🗳️👥 Direct democracy allows citizens to directly decide on laws and policies (A) which creates high legitimacy (C). It encourages citizen participation rather than distancing them from politics (B). Thus, D is correct. 🏛️⚖️✅",
+  amharicExplanation: "🗳️👥 በቀጥታ ዲሞክራሲ ዜጎች በውሳኔዎች ላይ ቀጥታ ስለሚሳተፉ እጣፈንታቸውን በራሳቸው ይወስናሉ (A)፣ ውሳኔዎቹም ሕጋዊነት ይኖራቸዋል (C)። ዜጎችን ከፖለቲካ ማራቅ የዲሞክራሲ ጥንካሬ ስላልሆነ መልሱ D (All except B) ይሆናል። 🏛️⚖️🇪🇹✅"
+},
+
+{
+  question: "Case: Parliament passes law restricting media freedom. Media organizations challenge constitutionality. Who has final say?",
+  options: [
+    "Prime Minister",
+    "House of Peoples' Representatives",
+    "House of Federation",
+    "Federal Supreme Court"
+  ],
+  answer: 2,
+  englishExplanation: "⚖️📜 Under Article 62(1) and Article 83 of the FDRE Constitution, any challenge against a law passed by Parliament regarding its constitutionality must be finally decided by the House of Federation (assisted by the Council of Constitutional Inquiry). 🏛️🇪🇹🔍",
+  amharicExplanation: "⚖️📜 በኢፌዴሪ ሕገ-መንግሥት መሠረት በፓርላማ የወጣ ሕግ ከሕገ-መንግሥቱ ጋር ይቃረናል ተብሎ ሲካሰስ፣ ጉዳዩን መርምሮ የመጨረሻ ውሳኔ የመስጠት ሥልጣን የፌዴሬሽን ምክር ቤት (House of Federation) ነው። 🏛️🇪🇹⚖️📜"
+},{
+  question: "In which case is a court NOT expected to hear cases in a closed session?",
+  options: [
+    "Cases affecting public morality",
+    "Cases related to national security",
+    "Cases affecting privacy of parties",
+    "Cases where defendant committed crime by negligence"
+  ],
+  answer: 3,
+  englishExplanation: "⚖️🏛️ Courts conduct proceedings publicly to guarantee transparency. 👁️📖 Closed sessions (*in camera*) are exceptions allowed only for sensitive reasons like national security, public morality, or privacy. 🔒🛡️ Committing a crime by negligence is a routine legal matter and does not justify hiding proceedings from the public. 👨‍⚖️✅",
+  amharicExplanation: "⚖️🏛️ ፍርድ ቤቶች ግልጽነትን ለማረጋገጥ ችሎትን በግልጽ ያካሂዳሉ። 👁️📖 ዝግ ችሎት የሚፈቀደው ለብሔራዊ ደህንነት፣ ለሕዝብ ሞራል ወይም ለግለሰቦች የግል ሕይወት ጥበቃ ብቻ ነው። 🔒🛡️ በቸልተኝነት የተፈጸመ ወንጀል ተራ የህግ ጉዳይ በመሆኑ ችሎቱን ከህዝብ ለመሰወር ምክንያት አይሆንም። 👨‍⚖️✅"
+},
+
+{
+  question: "The principle of due process that gives an accused person the right to be informed of arrest reasons is:",
+  options: [
+    "Right against self-incrimination",
+    "Habeas corpus",
+    "Right to appeal",
+    "Presumption of innocence"
+  ],
+  answer: 1,
+  englishExplanation: "📜⚖️ *Habeas corpus* is a procedural right ensuring that an arrested person is brought before a judge quickly to know the reasons for detention and challenge any unlawful arrest. 👨‍⚖️🔍🔒",
+  amharicExplanation: "📜⚖️ *Habeas corpus* (ሀቤአስ ኮርፐስ) የተቀየደ/የተያዘ ሰው በፍጥነት ፍርድ ቤት ቀርቦ የተያዘበትን ምክንያት እንዲያውቅና የእስሩን ሕጋዊነት እንዲጠይቅ የሚያስችል የሕግ መብት ነው። ⚖️👨‍⚖️🔍"
+},
+
+{
+  question: "According to FDRE Constitution, who establishes the Office of Ombudsman and Human Rights Commission?",
+  options: [
+    "House of Federation",
+    "House of Peoples' Representatives",
+    "Council of Ministers",
+    "Prime Minister"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️📜 Under Article 55 of the FDRE Constitution, creating federal democratic institutions like the Ombudsman and the Ethiopian Human Rights Commission falls under the legislative powers of the House of Peoples' Representatives (HoPR). 🏛️🛡️",
+  amharicExplanation: "⚖️📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 55 መሠረት እንደ እንባ ጠባቂ ተቋምና ሰብአዊ መብት ኮሚሽን ያሉ ተቋማትን የማቋቋም ሥልጣን የሕዝብ ተወካዮች ምክር ቤት ነው። 🏛️🛡️✅"
+},
+
+{
+  question: "Constitutional amendment under Article 105 requires approval by:",
+  options: [
+    "Federal Supreme Court",
+    "Federal and State supreme courts jointly",
+    "State Administration Council by 2/3 majority",
+    "Councils of member states by 2/3 majority"
+  ],
+  answer: 3,
+  englishExplanation: "✍️📜 Article 105 of the FDRE Constitution specifies that constitutional amendments require formal legislative approval, including a two-thirds majority vote from the Councils of the Regional Member States. 🏛️🗳️⚖️",
+  amharicExplanation: "✍️📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 105 መሠረት ሕገ-መንግሥቱን ለማሻሻል ከሚያስፈልጉት መስፈርቶች አንዱ የክልል ምክር ቤቶች ባለ 2/3 እጅ (ሁለት ሦስተኛ) ድምፅ መደገፍ ነው። 🏛️🗳️✅"
+},
+
+{
+  question: "Supremacy of the constitution means:",
+  options: [
+    "It should state human and democratic rights",
+    "Federal and regional governments should have constitutions",
+    "Other laws must conform to the constitution",
+    "It can be amended easily"
+  ],
+  answer: 2,
+  englishExplanation: "👑📜 Constitutional supremacy means the constitution is the highest law of the land (Article 9). ⚖️ Any customary practice or law enacted by any authority that contradicts it has no legal effect. 🚫📖",
+  amharicExplanation: "👑📜 የሕገ-መንግሥት የበላይነት ማለት ሕገ-መንግሥቱ አገሪቱ ውስጥ ካሉ ሕጎች ሁሉ በላይ መሆኑ ነው (አንቀጽ 9)። ⚖️ ማንኛውም ሌላ ሕግ ወይም ልማዳዊ አሰራር ከሕገ-መንግሥቱ ጋር ከተቃረበ ዋጋ የለውም። 🚫📖"
+},
+
+{
+  question: "Which statement is TRUE about rule of law?",
+  options: [
+    "It jeopardizes democratic system functioning",
+    "It establishes a state ruled by judges",
+    "It exists whenever there's a constitution",
+    "No person should be above the law"
+  ],
+  answer: 3,
+  englishExplanation: "⚖️📖 The core concept of the Rule of Law is equality before the law, meaning every individual and government official is equally bound by and accountable to the law. 👥🏛️✅",
+  amharicExplanation: "⚖️📖 የሕግ የበላይነት ዋና መርህ ማንም ሰው—ተራ ዜጋም ሆነ የመንግሥት ባለሥልጣን—ከሕግ በላይ ሊሆን አይችልም የሚል ነው። 👥🏛️⚖️✅"
+},
+
+{
+  question: "If a law conflicts with the constitution, what should be done?",
+  options: [
+    "Revise constitution to match the law",
+    "Declare the law null and void",
+    "Declare the constitution null and void",
+    "Nullify both law and constitution"
+  ],
+  answer: 1,
+  englishExplanation: "🛑📜 Due to constitutional supremacy, any subordinate law, regulation, or decree that contradicts the constitution is invalid and declared null and void. ⚖️🚫✅",
+  amharicExplanation: "🛑📜 ሕገ-መንግሥቱ የበላይ በመሆኑ፣ ከሕገ-መንግሥቱ ጋር የሚቃረን ማንኛውም ሕግ ፈራሽ እና ውድቅ (null and void) ይደረጋል። ⚖️🚫"
+},
+
+{
+  question: "A feature of democratic constitution is:",
+  options: [
+    "Allows extra-constitutional practices",
+    "Protects government power by neglecting citizen rights",
+    "Limits government power",
+    "Creates conditions for rights transgression"
+  ],
+  answer: 2,
+  englishExplanation: "🛡️📜 Democratic constitutions establish constitutionalism by setting clear boundaries on institutional powers, preventing tyranny, and safeguarding civil liberties. ⚖️👥🔐",
+  amharicExplanation: "🛡️📜 የዲሞክራሲያዊ ሕገ-መንግሥት ዋነኛ መገለጫ የመንግሥትን ሥልጣን መገደብና አምባገነንነትን በመከላከል የዜጎችን መብት መጠበቅ ነው። ⚖️👥🔐"
+},
+
+{
+  question: "Under FDRE Constitution, who approves international agreements?",
+  options: [
+    "House of Peoples' Representatives",
+    "House of Federation",
+    "Executive organ",
+    "Judiciary Administration Council"
+  ],
+  answer: 0,
+  englishExplanation: "🌐📜 Per Article 55(12) of the FDRE Constitution, the House of Peoples' Representatives holds the explicit power to ratify international agreements negotiated by the executive branch. 🏛️🤝⚖️",
+  amharicExplanation: "🌐📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 55(12) መሠረት አስፈፃሚው አካል የሚፈራረማቸውን ዓለም አቀፍ ስምምነቶች መርምሮ የሚያጽደቀው የሕዝብ ተወካዮች ምክር ቤት ነው። 🏛️🤝✅"
+},
+
+{
+  question: "Who appoints judges for federal courts?",
+  options: [
+    "House of Peoples' Representatives",
+    "Council of Ministers",
+    "House of Federation",
+    "Federal Supreme Court President"
+  ],
+  answer: 0,
+  englishExplanation: "👨‍⚖️📜 Under Article 81 of the FDRE Constitution, Federal Supreme Court judges (submitted by the PM) and lower federal court judges (submitted by the Judicial Administration Council) are officially appointed by the House of Peoples' Representatives. 🏛️⚖️✅",
+  amharicExplanation: "👨‍⚖️📜 በሕገ-መንግሥቱ አንቀጽ 81 መሠረት የፌዴራል ዳኞችን የሚሾመው የሕዝብ ተወካዮች ምክር ቤት ነው። 🏛️⚖️✅"
+},
+
+{
+  question: "Declaration of state of emergency under Article 93 is done by:",
+  options: [
+    "State Council",
+    "Council of Ministers",
+    "House of Federation",
+    "House of Peoples' Representatives"
+  ],
+  answer: 1,
+  englishExplanation: "🚨📜 Article 93(1)(a) grants the Council of Ministers (executive branch) the power to decree a national state of emergency during external invasion, public health crises, or severe breakdown of law and order (subject to subsequent HoPR approval within 15 days). 🏛️⚖️⏰",
+  amharicExplanation: "🚨📜 በሕገ-መንግሥቱ አንቀጽ 93(1)(ሀ) መሠረት የአስቸኳይ ጊዜ አዋጅ የማወጅ ሥልጣን የተሰጠው ለሚኒስትሮች ምክር ቤት ነው (ከዚያም በ15 ቀናት ውስጥ ለሕዝብ ተወካዮች ምክር ቤት አቅርቦ ማጽደቅ አለበት)። 🏛️⏰⚖️"
+},
+
+{
+  question: "IGAD headquarters is located in:",
+  options: [
+    "Addis Ababa",
+    "Djibouti",
+    "Nairobi",
+    "Kampala"
+  ],
+  answer: 1,
+  englishExplanation: "🌍📍 The Intergovernmental Authority on Development (IGAD) regional trade bloc is headquartered in Djibouti City, Djibouti. 🏢🌐🇩🇯",
+  amharicExplanation: "🌍📍 የልማት በይነ-መንግስታት ባለስልጣን (IGAD) ዋና መስሪያ ቤት የሚገኘው በጅቡቲ ከተማ፣ ጅቡቲ ነው። 🏢🌐🇩🇯"
+},
+
+{
+  question: "The Council of Constitutional Inquiry's role is to:",
+  options: [
+    "Decide constitutional disputes",
+    "Submit constitutional disputes to House of Federation",
+    "Establish organs for constitutional disputes",
+    "Work with House of Federation on amendments"
+  ],
+  answer: 1,
+  englishExplanation: "🔍📜 Under Article 84, the Council of Constitutional Inquiry investigates constitutional interpretation issues and submits its recommendations to the House of Federation (HoF), which holds the ultimate power to decide. ⚖️🏛️✅",
+  amharicExplanation: "🔍📜 የሕገ-መንግሥት አጣሪ ጉባኤ የሕገ-መንግሥት ትርጉም የሚያስፈልጋቸውን ጉዳዮች አጣርቶ የመጨረሻ ውሳኔ ለሚሰጠው ለፌዴሬሽን ምክር ቤት የውሳኔ ሃሳብ ያቀርባል (አንቀጽ 84)። 🔍⚖️🏛️"
+},
+
+{
+  question: "Judiciary independence aims to ensure judges:",
+  options: [
+    "Decide cases by their emotions",
+    "Decide cases solely by the law",
+    "Make decisions influenced by others",
+    "Allow government interference"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️🛡️ Judicial independence protects judges from political and executive pressure, allowing them to remain impartial and rule strictly based on evidence and legal merits. 👨‍⚖️📖🔍✅",
+  amharicExplanation: "⚖️🛡️ የዳኝነት ነፃነት አላማ ዳኞች ከፖለቲካና ከአስፈፃሚው አካል ጫና ነፃ ሆነው ያለ አድልዎ በሕጉ እና በማስረጃው ላይ ብቻ ተመስርተው እንዲፈርዱ ለማስቻል ነው። 👨‍⚖️📖🔍✅"
+},
+
+{
+  question: "Which is NOT a judiciary role?",
+  options: [
+    "Defending international norms",
+    "Strengthening democracy",
+    "Safeguarding individual rights",
+    "Using stereotyping in decisions"
+  ],
+  answer: 3,
+  englishExplanation: "❌⚖️ Judges are ethically and legally mandated to be neutral. 🧑‍⚖️ Using stereotyping or bias violates fundamental trial rights and judicial integrity. 🛡️📖🚫",
+  amharicExplanation: "❌⚖️ ዳኞች ገለልተኛ መሆን አለባቸው። 🧑‍⚖️ በውሳኔ ወቅት በቅድመ-አመለካከት (stereotyping) ወይም በአድልዎ መመራት የዳኝነት መርህን ይጥሳል። 🚫🛡️"
+},
+
+{
+  question: "The highest political authority in Ethiopian regional states is:",
+  options: [
+    "State Supreme Court",
+    "State Administration",
+    "State President",
+    "State Council"
+  ],
+  answer: 3,
+  englishExplanation: "🏛️📜 According to Article 50(5) of the FDRE Constitution, the Regional State Council (the legislative organ) is the highest authority of the regional government. ⚖️👥✅",
+  amharicExplanation: "🏛️📜 በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 50(5) መሠረት የክልሉ ከፍተኛ ባለሥልጣን የክልሉ ምክር ቤት (State Council) ነው። ⚖️👥✅"
+},
+
+{
+  question: "In federal systems, transfer of power from center to regions is called:",
+  options: [
+    "Delegation",
+    "Division",
+    "Secularism",
+    "Devolution"
+  ],
+  answer: 3,
+  englishExplanation: "🔄🏛️ Devolution refers to the statutory granting of powers from the central government of a sovereign state to subnational levels (such as regional states). 🗺️⚖️📜",
+  amharicExplanation: "🔄🏛️ ዲቮሉሽን (Devolution) ማለት ሥልጣንን ከማዕከላዊ መንግሥት ወደ ክልሎች ወይም ዝቅተኛ የአስተዳደር እርከኖች በሕግ ማስተላለፍ/ማካፈል ማለት ነው። 🗺️⚖️📜"
+},
+
+{
+  question: "Law enforcement responsibility under FDRE Constitution belongs to:",
+  options: [
+    "Executive organ",
+    "Legislative organ",
+    "Judiciary organ",
+    "House of Federation"
+  ],
+  answer: 0,
+  englishExplanation: "👮‍♂️⚖️ Under the separation of powers principle, the legislature makes laws, the judiciary interprets them, and the executive organ enforces them. 🏛️📜👨‍⚖️✅",
+  amharicExplanation: "👮‍♂️⚖️ በሥልጣን ክፍፍል መርህ መሠረት ሕግ የማስፈጸም እና የሕግ የበላይነትን የማስከበር ኃላፊነት የአስፈፃሚው አካል (Executive organ) ነው። 🏛️📜⚖️"
+},
+
+{
+  question: "House of Federation members are elected by:",
+  options: [
+    "State President",
+    "State Council",
+    "State Judiciary Council",
+    "Direct popular vote"
+  ],
+  answer: 1,
+  englishExplanation: "🗳️🏛️ Under Article 61(3) of the FDRE Constitution, members of the House of Federation (HoF) are elected by State Councils (though State Councils may choose to hold direct popular elections). ⚖️👥✅",
+  amharicExplanation: "🗳️🏛️ በኢፌዴሪ ሕገ-መንግሥት አንቀጽ 61(3) መሠረት የፌዴሬሽን ምክር ቤት አባላት በክልል ምክር ቤቶች ይመረጣሉ። 🏛️⚖️✅"
+},
+
+{
+  question: "When federal and state governments have equal law-making authority on same subject, it's:",
+  options: [
+    "Concurrent power",
+    "Residual power",
+    "Exclusive power",
+    "Defined power"
+  ],
+  answer: 0,
+  englishExplanation: "🤝⚖️ Concurrent powers are responsibilities shared simultaneously by both federal and regional governments (such as taxation matters under Article 98). 🏛️📜🔄",
+  amharicExplanation: "🤝⚖️ የጋራ ሥልጣን (Concurrent power) ማለት በፌዴራል እና በክልል መንግሥታት መካከል በጥረት የሚጋሩት የሕግ ማውጣት ወይም የታክስ ሥልጣን ነው። 🏛️🔄📜"
+} ];
 
 
 // =====================================================
@@ -7063,41 +7801,5 @@ quizData["law-coc"]["2"] = [
 // Logic & Critical Thinking
 // =====================================================
 
-quizData["law-coc"]["3"] = [
-
-    {
-        question: "PUT YOUR REAL QUESTION HERE",
-
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
-
-        answer: 0,
-
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
-
-        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
-    },
-
-    {
-        question: "PUT YOUR SECOND REAL QUESTION HERE",
-
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
-
-        answer: 1,
-
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
-
-        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
-    }
-
-];
+quizData["law-coc"]["3"] = [ ];
 
