@@ -7757,43 +7757,265 @@ quizData["law-coc"]["1"] = [ {
 // Human Rights & Fundamental Freedoms
 // =====================================================
 
-quizData["law-coc"]["2"] = [
+quizData["law-coc"]["2"] = [ {
+  question: "Equality among citizens means:",
+  options: [
+    "Equal position in everything",
+    "Equal economic, political, social status",
+    "Different treatment based on background",
+    "Equal economic, social, political rights"
+  ],
+  answer: 3,
+  englishExplanation: "⚖️🤝 In a democratic society, equality does not imply that everyone will achieve the exact same wealth, status, or job position. Rather, it means that every citizen is granted equal legal rights, freedoms, and opportunities under the law without discrimination based on origin or status. 📜🌍",
+  amharicExplanation: "⚖️🤝 በዴሞክራሲያዊ ሥርዓት ውስጥ የዜጎች እኩልነት ሲባል ሁሉም ሰው ተመሳሳይ የሀብት ወይም የማዕረግ ደረጃ ይኖረዋል ማለት አይደለም። ይልቁንም ሁሉም ዜጋ ያለ ምንም ልዩነት ተመሳሳይ **ኢኮኖሚያዊ፣ ማህበራዊ እና ፖለቲካዊ መብቶች** እና ዕድሎች አሉት ማለት ነው። 📜🤝"
+},
 
-    {
-        question: "PUT YOUR REAL QUESTION HERE",
+{
+  question: "Non-partisan courts mean judges should:",
+  options: [
+    "Not belong to political parties",
+    "Not belong to religious groups",
+    "Not be biased on any ground",
+    "Not belong to ethnic groups"
+  ],
+  answer: 0,
+  englishExplanation: "⚖️🏛️ \"Non-partisan\" specifically refers to political independence. A non-partisan judiciary requires judges to remain neutral and unattached to political parties so their rulings are guided strictly by the law rather than political interests. 📜⚖️",
+  amharicExplanation: "⚖️🏛️ \"ከፖለቲካ ወገንተኝነት ነፃ\" (Non-partisan) የሆኑ ፍርድ ቤቶች ሲባል ዳኞች **የፖለቲካ ፓርቲ አባል መሆን የለባቸውም** ማለት ነው። ይህም ፍርድ ቤቶች ከፖለቲካ ተፅዕኖ ነፃ ሆነው በሕግ ብቻ እንዲዳኙ ያደርጋል። 📜⚖️"
+},
 
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
+{
+  question: "Cultural relativism advantage is:",
+  options: [
+    "Creates cultural superiority",
+    "Enables harmonious relations",
+    "Creates misunderstandings",
+    "Makes people undermine other cultures"
+  ],
+  answer: 1,
+  englishExplanation: "🌍🤝 Cultural relativism is the principle of understanding and evaluating a culture from its own perspective rather than judging it by the standards of another culture. This mindset reduces prejudice and fosters tolerance and peaceful coexistence among diverse communities. 🌈🕊️",
+  amharicExplanation: "🌍🤝 የባህል አንጻራዊነት (Cultural relativism) ማለት ማንኛውንም ባህል በራሱ መነጽር እና አውድ መገንዘብ ማለት ነው። ይህም በሰዎች መካከል መከባበርንና **ሰላማዊ አብሮነትን** በመፍጠር የባህል ግጭቶችን ይቀንሳል። 🤝🕊️🌈"
+},
 
-        answer: 0,
+{
+  question: "Tax evasion vs. avoidance difference:",
+  options: [
+    "Avoidance is criminal; evasion is legal",
+    "Evasion is criminal; avoidance is legal",
+    "Both are criminal",
+    "Neither is criminal in Ethiopia"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️💰 Tax evasion involves illegal acts such as misrepresenting income to avoid paying taxes, making it a punishable crime. In contrast, tax avoidance uses legal methods and loopholes within the tax code to minimize liability legally. 📊📜",
+  amharicExplanation: "⚖️💰 **የግብር ስወራ (Tax evasion)** ሕገ-ወጥ በመሆኑ ወንጀል ነው፤ **ግብርን መቀነስ (Tax avoidance)** ግን በሕጉ የተፈቀዱ ቀዳዳዎችን በመጠቀም ግብርን የመቀነስ ሕጋዊ መንገድ ነው። 📊⚖️"
+},
 
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+{
+  question: "Case: Citizen refuses to pay taxes claiming government misuses funds. This shows:",
+  options: [
+    "Responsible citizenship",
+    "Lack of civic responsibility",
+    "Exercise of democratic right",
+    "Patriotism"
+  ],
+  answer: 1,
+  englishExplanation: "🏛️⚖️ Paying taxes is a fundamental legal and civic obligation required to fund public infrastructure and safety. Refusing to pay taxes—even in response to government misallocation—violates the law and demonstrates a clear lack of civic duty. 📜🚫",
+  amharicExplanation: "🏛️⚖️ ግብር መክፈል የዜጎች ሕጋዊ እና ዜግነታዊ ግዴታ ነው። መንግሥት ገንዘብ ያባክናል በሚል ምክንያት ግብር አለመክፈል **የዜግነት ኃላፊነት ማደልን (ጉድለትን)** ያሳያል። 🛑📜"
+},
 
-        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
-    },
+{
+  question: "Globalization disadvantage is:",
+  options: [
+    "Knowledge/technology transfer",
+    "Developing country dependence on cheap products",
+    "Global information advancement",
+    "Increased goods/services flow"
+  ],
+  answer: 1,
+  englishExplanation: "🌍📉 While globalization accelerates technology transfer and global communication, a key vulnerability for developing nations is becoming overly dependent on foreign imports and low-cost goods, which can stifle domestic production and industrial growth. 🏭📦",
+  amharicExplanation: "🌍📉 የዓለም አቀፋዊነት (Globalization) አንዱ ጉዳት ታዳጊ ሀገራት የራሳቸውን ምርት ከማሳደግ ይልቅ **በውጭ ሀገራት ርካሽ ምርቶች ላይ ጥገኛ እንዲሆኑ** ማድረጉ ነው። 📦📉"
+},
 
-    {
-        question: "PUT YOUR SECOND REAL QUESTION HERE",
+{
+  question: "To attract foreign investment, Ethiopia should NOT:",
+  options: [
+    "Give tax holidays",
+    "Allow profit remittance",
+    "Block information on profitable ventures",
+    "Lease land and resources"
+  ],
+  answer: 2,
+  englishExplanation: "🌍📈 Foreign investors rely on transparent data and open market access to evaluate opportunities. Hiding or restricting information about profitable business sectors discourages investment rather than attracting it. 🚫💼",
+  amharicExplanation: "🌍📈 የውጭ ኢንቨስትመንትን ለመሳብ ግልጽነት አስፈላጊ ነው። ስለዚህ ስለ ትርፋማ የንግድ መስኮች **መረጃን መከልከል ወይም መደበቅ** ኢንቨስተሮችን ስለሚያሸሽ መደረግ የሌለበት ተግባር ነው። ❌📊"
+},
 
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
+{
+  question: "Dependent people do NOT manifest:",
+  options: [
+    "Submissive behavior",
+    "Excessive reliance on others",
+    "Dependable personality",
+    "Inconsistent actions/decisions"
+  ],
+  answer: 2,
+  englishExplanation: "🧠🤝 A dependent individual relies heavily on others for support, decisions, and resources, showing submissiveness and inconsistency. Being \"dependable\" means being reliable and trustworthy—a trait of independent, responsible individuals, not dependent ones. 🛡️📚",
+  amharicExplanation: "🧠🤝 ጥገኛ የሆኑ ሰዎች ሁልጊዜ በሌሎች ላይ ስለሚደገፉ የሚታመኑ ወይም ኃላፊነት የሚወስዱ (**Dependable**) አይደሉም። ታማኝነትና ተአማኒነት የራስ አቅም ያላቸው ሰዎች መገለጫ ነው። 💡🤝"
+},
 
-        answer: 1,
+{
+  question: "Prerequisite for national development is:",
+  options: [
+    "Periodic elections",
+    "Natural resources",
+    "Educated population",
+    "Strong military"
+  ],
+  answer: 2,
+  englishExplanation: "🎓🧠 Human capital is the foundational engine of long-term sustainable growth. An educated, skilled population generates innovation, drives productivity, and manages resources effectively to enable overall national development. 📈🌍",
+  amharicExplanation: "🎓📚 ለሀገር ዕድገትና ልማት መሠረታዊው ቅድመ-ሁኔታ **የተማረና የሰለጠነ የሰው ኃይል (Educated population)** ነው። የሰው ኃይል ካልሰለጠነ ተፈጥሮአዊ ሀብትን እንኳን በአግባቡ መጠቀም አይቻልም። 🌱📈"
+},
 
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+{
+  question: "Active community participation means involvement in:",
+  options: [
+    "Overall socio-economic affairs",
+    "Religious matters only",
+    "Private business only",
+    "Political party activities only"
+  ],
+  answer: 0,
+  englishExplanation: "🤝🏘️ True civic participation expands beyond narrow sector interests. It requires engaging broadly in community development, local governance, social welfare, and local economic affairs to improve living standards for all. 🌍📈",
+  amharicExplanation: "🤝🏘️ ንቁ የማህበረሰብ ተሳትፎ ማለት በጠበበ መስክ ብቻ ሳይሆን በማህበረሰቡ **ጠቅላላ ማህበራዊ እና ኢኮኖሚያዊ ጉዳዮች** ላይ በንቃት መሳተፍ ማለት ነው። 🌐🤝"
+},
 
-        amharicExplanation: "የአማርኛ ማብራሪያዎን እዚህ ያስገቡ።"
-    }
+{
+  question: "State of being answerable for obligation is:",
+  options: [
+    "Tolerance",
+    "Transparency",
+    "Accountability",
+    "Responsibility"
+  ],
+  answer: 2,
+  englishExplanation: "⚖️📜 While responsibility refers to the obligation to perform a duty, **accountability** is the specific legal and moral state of being required to answer for, explain, and justify one's actions, decisions, and outcomes. 🏛️🔍",
+  amharicExplanation: "⚖️📜 ለተሰጠ ኃላፊነት እና ለተከናወነ ተግባር መልስ የመስጠት እና የመጠየቅ ግዴታ **ተጠያቂነት (Accountability)** ይባላል። 🏛️🔍"
+},
 
-];
+{
+  question: "Civic-minded citizens serve mainly for:",
+  options: [
+    "Fame and recognition",
+    "Public office appointment",
+    "Monetary reward",
+    "Personal satisfaction"
+  ],
+  answer: 3,
+  englishExplanation: "🤝❤️ Civic-minded individuals engage in public service and community betterment out of intrinsic motivation, civic duty, and moral fulfillment—not for financial gain, political status, or public recognition. 🌟🏘️",
+  amharicExplanation: "🤝❤️ ቅን አሳቢና ለህዝብ ተቆርቋሪ የሆኑ ዜጎች ህብረተሰባቸውን የሚያገለግሉት ለገንዘብ ወይም ለስልጣን ሳይሆን ከውስጣዊ የዜግነት መንፈስና **የመንፈስ እርካታ** ለማግኘት ነው:: 🕊️❤️"
+},
+
+{
+  question: "Dependency syndrome means:",
+  options: [
+    "Strategy against poverty",
+    "Permanent tendency to rely on others",
+    "Strategy for self-reliance",
+    "Dependency on own power/knowledge"
+  ],
+  answer: 1,
+  englishExplanation: "🧠🔄 Dependency syndrome is a psychological and social condition where individuals or communities lose initiative and develop a chronic, long-term habit of relying on external aid or others for survival. 🛑🤝",
+  amharicExplanation: "🧠🔄 የጥገኝነት ህመም (Dependency syndrome) ማለት አንድ ሰው ወይም ማህበረሰብ በራሱ ከመስራት ይልቅ **ሁልጊዜ በሌሎች እርዳታ እና ድጋፍ ላይ ብቻ የመደገፍ አዜብ** ነው። ⚠️🤝"
+},
+
+{
+  question: "Affirmative action purpose is NOT:",
+  options: [
+    "Increase female students",
+    "Replace male with female dominance",
+    "Increase women's political participation",
+    "Increase women's job training"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️🤝 Affirmative action is a temporary corrective measure designed to bridge historical inequalities and level the playing field. Its purpose is to achieve equal opportunities, not to establish dominance of one group over another. 🌍📚",
+  amharicExplanation: "⚖️🤝 ልዩ ድጋፍ (Affirmative action) በታሪክ የደረሰን በደል ለማረም የተዘጋጀ እንጂ **የወንዶችን የበላይነት በሴቶች የበላይነት ለመተካት** የተሰበሰበ አይደለም። ዋና ዓላማው እኩልነትን ማረጋገጥ ነው። 🛡️⚖️"
+},
+
+{
+  question: "Behavior harming unity in diversity is:",
+  options: [
+    "Developing hostile relations with other groups",
+    "Accepting no inferior/superior culture",
+    "Willingness to work with different viewpoints",
+    "Treating ethnic groups equally"
+  ],
+  answer: 0,
+  englishExplanation: "🌍🤝 Diversity flourishes when groups coexist with mutual respect and openness. Cultivating hostile or antagonistic attitudes toward other social or ethnic groups destroys mutual trust and fractures national unity. 🚫💔",
+  amharicExplanation: "🌍🤝 በብዝሃነት ውስጥ ያለን አንድነት የሚጎዳው ከሌሎች ብሔሮች ወይም ቡድኖች ጋር **የጠላትነት እና የጥላቻ ግንኙነት መፍጠር** ነው። ❌💔"
+},
+
+{
+  question: "Treating someone based on apparent differences is:",
+  options: [
+    "Equality",
+    "Diversity",
+    "Discrimination",
+    "Fairness"
+  ],
+  answer: 2,
+  englishExplanation: "⚖️🚫 Discrimination is the unfair or prejudicial treatment of individuals or groups based on superficial traits such as race, ethnicity, gender, or religion rather than their individual merits. 🛑📜",
+  amharicExplanation: "⚖️🚫 ሰዎችን በማንነታቸው፣ በዘራቸው ወይም በውጫዊ ልዩነታቸው ብቻ በመለየት አድሎአዊ ድርጊት መፈጸም **መድልዎ (Discrimination)** ይባላል። ❌⚖️"
+},
+
+{
+  question: "Democratic government responsibility is to:",
+  options: [
+    "Provide all opportunities except education",
+    "Make citizens equal in everything",
+    "Make opportunities equally open to all",
+    "Make every citizen equally wealthy"
+  ],
+  answer: 2,
+  englishExplanation: "🏛️⚖️ A democratic government cannot mandate equal outcomes or equal wealth for all citizens. Its responsibility is to guarantee equal legal rights and ensure that educational, social, and economic opportunities are accessible to everyone equally. 🚪🤝",
+  amharicExplanation: "🏛️⚖️ የዴሞክራሲያዊ መንግሥት ዋና ኃላፊነት የሁሉንም ሰው ሀብት እኩል ማድረግ ሳይሆን **ዕድሎችን ለሁሉም ዜጎች እኩል ክፍት ማድረግ** ነው። ⚖️🤝📚"
+},
+
+{
+  question: "Federalism divides power between:",
+  options: [
+    "Strong national and weak regional governments",
+    "Three government branches",
+    "Weak national and strong regional governments",
+    "National and regional governments constitutionally"
+  ],
+  answer: 3,
+  englishExplanation: "🏛️🗺️ Federalism is a political system in which government power is constitutionally divided and shared between a central national government and regional state units, ensuring both shared rule and self-rule. ⚖️🤝",
+  amharicExplanation: "🏛️🗺️ ፌዴራሊዝም በሕገ-መንግሥቱ መሠረት በ**ማዕከላዊ (ብሔራዊ) መንግሥት እና በክልል መንግሥታት** መካከል የሥልጣን ክፍፍል የሚያደርግ የፖለቲካ ሥርዓት ነው። ⚖️🤝"
+},
+
+{
+  question: "Inherent legislative power under FDRE Constitution belongs to:",
+  options: [
+    "Council of Ministers",
+    "House of Peoples' Representatives",
+    "President",
+    "Federal courts"
+  ],
+  answer: 1,
+  englishExplanation: "📜🏛️ According to Article 55 of the FDRE Constitution, the House of Peoples' Representatives (HoPR) is the highest authority of the federal government and holds the supreme inherent power to enact federal laws. ⚖️📚",
+  amharicExplanation: "📜🏛️ በኢ.ፌ.ዴ.ሪ ሕገ-መንግሥት መሠረት ሕግ የማውጣት ከፍተኛ ሥልጣን የተሰጠው ለ**ሕዝብ ተወካዮች ምክር ቤት (HoPR)** ነው። 🏛️📜"
+},
+
+{
+  question: "Maximum time one can serve as head of state under FDRE Constitution is:",
+  options: [
+    "6 years",
+    "8 years",
+    "12 years",
+    "Unlimited"
+  ],
+  answer: 2,
+  englishExplanation: "🏛️📅 Under Article 70 of the FDRE Constitution, the President (Head of State) is elected for a six-year term and can be re-elected for a maximum of two consecutive terms, setting the total limit at 12 years. ⚖️📜",
+  amharicExplanation: "🏛️📅 በኢ.ፌ.ዴ.ሪ ሕገ-መንግሥት መሠረት የሀገሪቱ ፕሬዝዳንት የሥልጣን ዘመን 6 ዓመት ሲሆን፣ እንደገና ሊመረጥ የሚችለው ለአንድ ተጨማሪ ጊዜ ብቻ በመሆኑ ከፍተኛው የሥልጣን ጊዜ **12 ዓመት** ይሆናል። 📅⚖️"
+} ];
 
 
 // =====================================================
@@ -7801,5 +8023,266 @@ quizData["law-coc"]["2"] = [
 // Logic & Critical Thinking
 // =====================================================
 
-quizData["law-coc"]["3"] = [ ];
+quizData["law-coc"]["3"] = [{
+  question: "Accused person has right to:",
+  options: [
+    "Hear witnesses",
+    "Choose trial location",
+    "Choose judge",
+    "Change court"
+  ],
+  answer: 0,
+  englishExplanation: "⚖️📚 Under constitutional and human rights principles, an accused person has the right to a fair trial, which includes the right to confront, cross-examine, and **hear witnesses** testifying against them. 👂⚖️ The accused cannot freely pick their preferred judge, court, or trial location, as jurisdiction is determined by established legal procedure. 🏛️📜",
+  amharicExplanation: "⚖️📚 በሕገ-መንግሥታዊ እና በሰብዓዊ መብቶች መሠረት፣ የተከሰሰ ሰው ፍትሐዊ የመዳኘት መብት አለው። ይህም በእሱ ላይ ምስክርነት የሚሰጡ **ምስክሮችን የመስማት** እና የመጠየቅ መብትን ያካትታል። 👂⚖️ ተከሳሹ የራሱን ዳኛ፣ ችሎት ወይም የፍርድ ቤት ቦታ በራሱ ፈቃድ መምረጥ አይችልም። 🏛️📜"
+},
+
+{
+  question: "Human rights are NOT characterized by:",
+  options: [
+    "Emanating from human nature",
+    "Being inviolable and inalienable",
+    "Being universal",
+    "Changing with time/place"
+  ],
+  answer: 3,
+  englishExplanation: "🌍⚖️ Human rights are inherent, inviolable, inalienable, and universal—meaning they belong to every human being everywhere simply by virtue of being human. 🤝🌐 They do **not** change, expire, or fluctuate based on time or geographical location. ⏳🚫",
+  amharicExplanation: "⚖️🌍 ሰብዓዊ መብቶች የተፈጥሮ፣ የማይገፈጉ፣ የማይጣሱ እና ሁለንተናዊ (የማይለወጡ) ናቸው። 🤝📜 ስለዚህ እነዚህ መብቶች **በጊዜ እና በቦታ ሊለወጡ አይችሉም**፤ ሰው በመሆን ብቻ የሚያገኙ ዘላለማዊ መብቶች ናቸው። 🌐⏳"
+},
+
+{
+  question: "Right NOT recognized under FDRE Constitution:",
+  options: [
+    "Right to religion",
+    "Right to privacy",
+    "Right to bear arms",
+    "Right to form political parties"
+  ],
+  answer: 2,
+  englishExplanation: "📜⚖️ The FDRE Constitution protects freedom of religion (Art. 27), privacy (Art. 26), and political association (Art. 31). 🕊️🔒 However, unlike some foreign constitutions (like the US Second Amendment), the **right to bear arms** is not guaranteed as a constitutional right in Ethiopia; firearm ownership is strictly regulated by law. 🚫🔫",
+  amharicExplanation: "📜⚖️ የኢ.ፌ.ዴ.ሪ ሕገ-መንግሥት የሃይማኖት፣ የብቻነት (ፕራይቬሲ) እና የፖለቲካ ፓርቲ የመመስረት መብቶችን ያረጋግጣል። 🕊️🔒🗳️ ነገር ግን **የጦር መሣሪያ የመታጠቅ መብትን** እንደ ሕገ-መንግሥታዊ መብት አላካተተም፤ ይህም በልዩ ሕግ የሚመራ ጉዳይ ነው። 🛑📜"
+},
+
+{
+  question: "Case: Police search home without warrant, finding illegal items. Evidence is:",
+  options: [
+    "Admissible - police acted in public interest",
+    "Inadmissible - violated right to privacy",
+    "Admissible if owner is criminal",
+    "Inadmissible but owner still charged"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️🏠 Under Article 26 of the FDRE Constitution, citizens have a right to privacy, protecting their homes from unlawful searches. 🔒📜 Evidence obtained through unconstitutional means (without a court warrant or legal authorization) is generally **inadmissible** in court under the exclusionary rule. 🚫⚖️",
+  amharicExplanation: "⚖️🏠 በሕገ-መንግሥቱ አንቀጽ 26 መሠረት የዜጎች የመኖሪያ ቤት የማይደፈር እና የብቻነት መብት አለው። 🔒📜 ያለ ፍርድ ቤት ትዕዛዝ (ወራንት) የተገኘ ማንኛውም ማስረጃ ሕገ-ወጥ በመሆኑ ፍርድ ቤት ዘንድ **ተቀባይነት የለውም (Inadmissible)**። ❌⚖️"
+},
+
+{
+  question: "Case: Person tried twice for same crime after first acquittal. This violates:",
+  options: [
+    "Presumption of innocence",
+    "Right to appeal",
+    "Prohibition of double jeopardy",
+    "Right to fair trial"
+  ],
+  answer: 2,
+  englishExplanation: "⚖️🔄 The principle of **Double Jeopardy** (FDRE Constitution Art. 23) prohibits trying or punishing a person again for an offense for which they have already been finally acquitted or convicted according to the law. 🛡️📜",
+  amharicExplanation: "⚖️🔄 አንድ ሰው በአንድ ወንጀል ተከሶ በነፃ ከተሰናበተ ወይም ከተቀጣ በኋላ፣ እንደገና በዚያው ወንጀል አይከሰስም። 🛑⚖️ ይህ መብት **አንድን ሰው በዚያው ወንጀል ሁለቴ አለመከሰስ (Double Jeopardy)** ይባላል። 📜🛡️"
+},
+
+{
+  question: "Civics education aims to create citizens who:",
+  options: [
+    "Pursue rights without respecting others' rights",
+    "Work within constitution and rule of law",
+    "Are passive in political process",
+    "Make decisions based on emotions"
+  ],
+  answer: 1,
+  englishExplanation: "🎓🏛️ The primary objective of Civics and Ethical Education is to nurture active, informed, and responsible democratic citizens who obey the **rule of law**, support constitutional governance, and respect the rights of others. ⚖️🤝📜",
+  amharicExplanation: "🎓🏛️ የዜግነት ትምህርት ዋና ዓላማ **በሕገ-መንግሥቱ እና በሕግ የበላይነት** የሚያምኑ፣ መብታቸውን እና ግዴታቸውን ጠንቅቀው የሚያውቁ ንቁ ዜጎችን ማፍራት ነው። 📚⚖️🤝"
+},
+
+{
+  question: "If countries interfere in Ethiopia's internal affairs, which state element is violated?",
+  options: [
+    "Territorial integrity",
+    "Recognition",
+    "Population",
+    "Sovereignty"
+  ],
+  answer: 3,
+  englishExplanation: "🇪🇹⚖️ **Sovereignty** refers to the supreme, independent authority of a state to govern its internal affairs free from external control or foreign interference. 🏛️🌍 Interference directly undermines state sovereignty. 🚫",
+  amharicExplanation: "🇪🇹⚖️ **የሉዓላዊነት (Sovereignty)** መብት ማለት አንድ ሀገር ያለ ምንም የውጭ ጣልቃገብነት የራሷን የውስጥ ጉዳይ በነፃነት የመምራት ከፍተኛ ሥልጣን ነው። 🏛️🌍 የውጭ ሀገራት ጣልቃ ገብነት ይህንን መብት ይጥሳል። 🚫"
+},
+
+{
+  question: "Ethiopian multiparty politics faces challenges due to:",
+  options: [
+    "Lack of prior experience",
+    "Weak party institutionalization",
+    "Imported nature of system",
+    "All of the above"
+  ],
+  answer: 3,
+  englishExplanation: "🏛️🗳️ Ethiopian multiparty democracy historically faces obstacles including a lack of long-standing democratic culture (**lack of experience**), unstable internal structures within political parties (**weak institutionalization**), and challenges adopting Western-style political systems into local contexts (**imported system**). 📚🌍📈",
+  amharicExplanation: "🏛️🗳️ በኢትዮጵያ የብዙኃን ፓርቲ ፖለቲካ ሥርዓት ውጤታማ እንዳይሆን ያደረጉት የመልካም ልምድ ማነስ፣ የፖለቲካ ፓርቲዎች ድክመት እና ሥርዓቱ ከውጭ የተቀዳ መሆኑ **በሙሉ (All of the above)** ተፅዕኖ አሳድረዋል። 🔄📚🗳️"
+},
+
+{
+  question: "In democracy, ultimate decision-making power resides with:",
+  options: [
+    "Prime Minister",
+    "Council of Ministers",
+    "People",
+    "President"
+  ],
+  answer: 2,
+  englishExplanation: "🗳️👥 The fundamental principle of popular sovereignty dictates that supreme power in a democracy belongs to the **people**. 🏛️ Government officials only exercise derived power granted through elections. ⚖️📜",
+  amharicExplanation: "🗳️👥 በዴሞክራሲያዊ ሥርዓት ውስጥ የመጨረሻው የሥልጣን ባለቤት **ሕዝብ** ነው። 🏛️ መንግሥት ሥልጣንን የሚያገኘው ከሕዝብ በተሰጠ የውክልና ድምፅ ነው። ⚖️📜"
+},
+
+{
+  question: "Good citizens are NOT characterized by:",
+  options: [
+    "Self-discipline",
+    "Adhering to fundamental rules",
+    "Advancing personal interests at common expense",
+    "Being tolerant and open-minded"
+  ],
+  answer: 2,
+  englishExplanation: "🤝🏛️ A good citizen seeks the common good and balances individual interests with community welfare. **Putting personal interest above the public good** is a negative trait that sabotages civic unity. 🚫⚖️",
+  amharicExplanation: "🤝🏛️ ጥሩ ዜጋ የሕዝብን ጥቅም ከግል ፍላጎቱ ያስቀድማል። **የሕዝብን ጥቅም ለግል ጥቅም መሠዋት** የጥሩ ዜጋ ባህሪ አይደለም። ❌⚖️"
+},
+
+{
+  question: "Five-year election cycle refers to principle of:",
+  options: [
+    "Free and fair elections",
+    "Periodic elections",
+    "Secret ballot",
+    "Inclusiveness"
+  ],
+  answer: 1,
+  englishExplanation: "🗳️📅 Democratic elections must happen at fixed, regular intervals (such as every 5 years) to ensure governments remain accountable to the electorate—a principle known as **periodic elections**. ⏳🏛️",
+  amharicExplanation: "🗳️📅 በየአምስት ዓመቱ የሚካሄድ ምርጫ **በየጊዜው የሚደረግ ምርጫ (Periodic elections)** የሚባለውን የዴሞክራሲ መመሪያ ያመለክታል። ⏳📜"
+},
+
+{
+  question: "Harmonious coexistence in diverse societies requires:",
+  options: [
+    "Valuing differences",
+    "Group-centered mentality",
+    "Respecting differences",
+    "Recognizing differences"
+  ],
+  answer: 2,
+  englishExplanation: "🌈🤝 While recognizing or valuing differences is beneficial, actively **respecting differences** (cultural, religious, ethnic) creates mutual tolerance and peace required for peaceful coexistence. 🕊️🌍",
+  amharicExplanation: "🌈🤝 በልዩነት ውስጥ ሰላማዊ አብሮነትን ለመፍጠር የሌሎችን ባህል፣ ሃይማኖት እና ማንነት **ማክበር (Respecting differences)** ወሳኝ መሠረት ነው። 🕊️🤝🌍"
+},
+
+{
+  question: "Which statement about constitution is TRUE?",
+  options: [
+    "Source for other laws",
+    "Safeguards individual/collective rights",
+    "Framework for government activities",
+    "Supreme law of land",
+    "All of the above"
+  ],
+  answer: 4,
+  englishExplanation: "📜⚖️ A constitution serves as the **supreme law**, sets up government structures, protects fundamental individual/group rights, and forms the baseline legal framework for all sub-constitutional legislation. 🏛️🛡️✨",
+  amharicExplanation: "📜⚖️ ሕገ-መንግሥት የሕጎች ሁሉ የበላይ፣ የመንግሥት አሠራር መመሪያ፣ እና የመብቶች ሁሉ አስከባሪ በመሆኑ ከተጠቀሱት ሐሳቦች **ሁሉም (All of the above)** ትክክል ናቸው። ✨🏛️🛡️"
+},
+
+{
+  question: "Basic democratic value NOT included:",
+  options: [
+    "Popular sovereignty",
+    "Rule of men",
+    "Rule of law",
+    "Constitutional government"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️🏛️ Democracy relies on the **Rule of Law** (laws apply equally to all), which is the exact opposite of the **Rule of Men** (arbitrary power based on personal whims of leaders). 🚫📜",
+  amharicExplanation: "⚖️🏛️ ዴሞክራሲ በሕግ የበላይነት እንጂ **በሰው የበላይነት (Rule of men)** አይመራም። የሰው የበላይነት ለመልካም አስተዳደር ተቃራኒ ነው። ❌⚖️"
+},
+
+{
+  question: "International conflicts often arise due to:",
+  options: [
+    "Contradictory state goals",
+    "Inconvenient strategies",
+    "State selfishness",
+    "Scarce resources",
+    "All of the above"
+  ],
+  answer: 4,
+  englishExplanation: "🌍⚔️ Global disputes stem from competing national interests, resource scarcity, selfish geopolitics, and opposing diplomatic strategies, making **all options valid drivers of conflict**. 💥🕊️",
+  amharicExplanation: "🌍⚔️ የአለም አቀፍ ግጭቶች መንስኤዎች የተፎካካሪ ሃገራት ፍላጎት፣ የሀብት እጥረት፣ እና የሃገራት ስግብግብነት በመሆናቸው **ሁሉም (All of the above)** መልስ ይሆናሉ። 🌍💥📚"
+},
+
+{
+  question: "Ethiopia under 1995 Constitution is best described as:",
+  options: [
+    "Unitary state",
+    "Presidential democracy",
+    "Federal state",
+    "Democratic state"
+  ],
+  answer: 2,
+  englishExplanation: "🇪🇹📜 Article 1 of the 1995 FDRE Constitution establishes Ethiopia as a **Federal Democratic Republic**, dividing political power between the central federal government and regional states. 🏛️🗺️",
+  amharicExplanation: "🇪🇹📜 የ1987 (1995) የኢ.ፌ.ዴ.ሪ ሕገ-መንግሥት አንቀጽ 1 ኢትዮጵያን **ፌዴራላዊ (Federal state)** የመንግሥት አወቃቀር እንዳላት ይደነግጋል። 🏛️🇪🇹"
+},
+
+{
+  question: "Wrong statement about rights and duties:",
+  options: [
+    "They are inseparable",
+    "Rights have legal boundaries",
+    "Rights are entitlements for citizens",
+    "Duties are obligations for citizens",
+    "None are wrong"
+  ],
+  answer: 4,
+  englishExplanation: "⚖️🔗 All statements A through D accurately describe civics concepts: rights and duties are two sides of the same coin, rights carry legal limits, and duties reflect civic responsibilities. None of the statements are incorrect. ✅📚",
+  amharicExplanation: "⚖️🔗 መብት እና ግዴታ የተያያዙ ናቸው፣ መብት ወሰን አለው፣ እንዲሁም ግዴታዎች የዜጎች ኃላፊነቶች ናቸው። 📚🤝 ስለዚህ **ስህተት የሆነ ሐሳብ የለም (None are wrong)**። 🔄✅"
+},
+
+{
+  question: "Document outlining federal-regional powers is called:",
+  options: [
+    "Decree",
+    "Regulation",
+    "Directive",
+    "Constitution"
+  ],
+  answer: 3,
+  englishExplanation: "📜🏛️ The **Constitution** is the primary supreme document that defines the division of power between the central federal authority and regional states (e.g., FDRE Constitution Articles 51 & 52). ⚖️🗺️",
+  amharicExplanation: "📜🏛️ በፌዴራል እና በክልል መንግሥታት መካከል ያለውን የሥልጣን ክፍፍል የሚወስነው ዋናው ሰነድ **ሕገ-መንግሥት (Constitution)** ይባላል። ⚖️🏛️"
+},
+
+{
+  question: "Ethnocentric individuals:",
+  options: [
+    "Understand cultures from own perspective",
+    "Are open-minded to other cultures",
+    "Value others' cultures leading to harmony",
+    "Are less arrogant toward others' cultures"
+  ],
+  answer: 0,
+  englishExplanation: "🔍🌍 **Ethnocentrism** is the belief that one's own culture is superior to others, leading individuals to evaluate and judge all other cultures exclusively through the lens of their own cultural norms. 🚫👓",
+  amharicExplanation: "🔍🌍 **ትምክህተኛ (Ethnocentric)** የሆኑ ሰዎች የራሳቸውን ባህል ብቻ እንደ ትክክለኛ በመቁጠር፣ የሌሎችን ባህል **በራሳቸው አመለካከት ብቻ የመመዘን** እና የማነሰስ ባህሪ አላቸው። 🚫🌍"
+},
+
+{
+  question: "Unequal burden/benefit distribution leads to:",
+  options: [
+    "Urban development",
+    "Harmonious relations",
+    "Social unrest",
+    "Economic development"
+  ],
+  answer: 2,
+  englishExplanation: "⚖️📊 Unfairness and injustice in distributing national resources or civic obligations create deep public dissatisfaction, grievance, and eventual political and **social unrest**. 💥🏛️",
+  amharicExplanation: "⚖️📊 በሀገር ሀብት አጠቃቀም እና ጥቅም ክፍፍል ላይ የሚፈጠር አድሎአዊነትና ፍትሃዊ አለመሆን ለ**ህዝባዊ አመፅ እና ማህበራዊ አለመረጋጋት (Social unrest)** ይዳርጋል። ⚠️💥"
+} ];
 
