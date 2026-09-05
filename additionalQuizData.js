@@ -7442,26 +7442,657 @@ quizData["health-coc"]["1"] = [ {
 // HEALTH CoC — CHAPTER 2
 // =====================================================
 
-quizData["health-coc"]["2"] = [
+quizData["health-coc"]["2"] = [ {
+  question: "The final electron acceptor in aerobic respiration is:",
+  options: [
+    "Water",
+    "Carbon dioxide",
+    "Oxygen",
+    "NAD⁺"
+  ],
+  answer: 2,
+  englishExplanation: "🌬️ In the electron transport chain (ETC), oxygen acts as the final electron acceptor. ⚡ It accepts electrons along with hydrogen ions (H⁺) to form water (H₂O). 💧 Without oxygen, the ETC stops, halting ATP synthesis. 🔋",
+  amharicExplanation: "🌬️ በኤሮቢክ ሴሉላር እስትንፋስ (Aerobic respiration) የመጨረሻው ኤሌክትሮን ተቀባይ ኦክሲጅን (Oxygen) ነው። ⚡ ኦክሲጅን ኤሌክትሮኖችን እና ሃይድሮጅን አዮኖችን ተቀብሎ ውሃ (H₂O) ይፈጥራል። 💧"
+},
 
-    {
-        question: "PUT YOUR REAL QUESTION HERE",
+{
+  question: "Which yields the most ATP per molecule in cellular respiration?",
+  options: [
+    "NADH",
+    "FADH₂",
+    "GTP from substrate-level phosphorylation",
+    "All are equal"
+  ],
+  answer: 0,
+  englishExplanation: "🔋 Oxidation of one NADH molecule via the electron transport chain produces approximately 2.5 ATP, ⚡ whereas one FADH₂ produces about 1.5 ATP, and GTP yields 1 ATP. 🧬 Therefore, NADH provides the greatest ATP yield among these choices.",
+  amharicExplanation: "🔋 አንድ የ-NADH ሞለኪውል በኤሌክትሮን ትራንስፖርት ሲስተም ውስጥ በግምት 2.5 ATP ሲያመርት፣ ⚡ FADH₂ ደግሞ 1.5 ATP ብቻ ያመርታል። GTP ደግሞ 1 ATP ይሰጣል። 🧬 ስለዚህ NADH ከፍተኛ ኃይል ይሰጣል።"
+},
 
-        options: [
-            "OPTION A",
-            "OPTION B",
-            "OPTION C",
-            "OPTION D"
-        ],
+{
+  question: "Hypokalemia often leads to:",
+  options: [
+    "Metabolic acidosis",
+    "Metabolic alkalosis",
+    "Respiratory acidosis",
+    "No pH change"
+  ],
+  answer: 1,
+  englishExplanation: "🧪 Low extracellular potassium (hypokalemia) causes potassium ions (K⁺) to shift out of cells in exchange for hydrogen ions (H⁺) moving into cells. 🔄 This intracellular buffering depletes extracellular H⁺ ions, causing metabolic alkalosis. ⚖️",
+  amharicExplanation: "🧪 የፖታሺየም መጠን በደም ውስጥ መቀነስ (Hypokalemia) የሃይድሮጅን አዮኖች (H⁺) ወደ ሴል ውስጥ እንዲገቡ ያደርጋል። 🔄 ይህም በደም ውስጥ ያለውን አሲድ በመቀነስ ⚖️ Metabolic alkalosis ያስከትላል።"
+},
 
-        answer: 0,
+{
+  question: "Vitamin B12 absorption occurs mainly in the:",
+  options: [
+    "Stomach",
+    "Jejunum",
+    "Ileum",
+    "Colon"
+  ],
+  answer: 2,
+  englishExplanation: "🩺 Vitamin B12 binds to intrinsic factor, which is produced in the stomach, and is specifically absorbed in the terminal ileum of the small intestine. 🧬 This makes the ileum the main site of vitamin B12 absorption.",
+  amharicExplanation: "🩺 ቫይታሚን B12 በሆድ ዕቃ ውስጥ ከሚመረት 'Intrinsic factor' ጋር ከተያያዘ በኋላ በትንሹ አንጀት የመጨረሻ ክፍል ወይም Ileum ውስጥ ይወሰዳል። 🧬"
+},
 
-        explanation: "PUT YOUR REAL ENGLISH EXPLANATION HERE.",
+{
+  question: "Which immunoglobulin is most abundant in serum?",
+  options: [
+    "IgA",
+    "IgM",
+    "IgG",
+    "IgE"
+  ],
+  answer: 2,
+  englishExplanation: "🛡️ IgG makes up about 75% to 80% of total human antibodies in serum. 🩸 It is also the only antibody capable of crossing the placenta to protect the fetus. 👶",
+  amharicExplanation: "🛡️ በሰውነታችን የደም ሴረም ውስጥ በብዛት (ከ75%–80%) የሚገኘው የበሽታ መከላከያ አንቲቦዲ IgG ይባላል። 🩸 በተጨማሪም ከእናት ወደ ፅንስ በፕላሴንታ ማለፍ የሚችለው እሱ ብቻ ነው። 👶"
+},
 
-        amharicExplanation: "የአማርኛ ማብራሪያ።"
-    }
+{
+  question: "Which vitamin deficiency causes scurvy?",
+  options: [
+    "Vitamin A",
+    "Vitamin C",
+    "Vitamin D",
+    "Vitamin K"
+  ],
+  answer: 1,
+  englishExplanation: "🍋 Vitamin C (ascorbic acid) is essential for collagen synthesis. 🧬 Its deficiency weakens connective tissues, causing scurvy, which may lead to bleeding gums, skin spots, and poor wound healing. 🩸",
+  amharicExplanation: "🍋 የቫይታሚን C (Ascorbic acid) እጥረት ስከርቪ (Scurvy) የተባለውን በሽታ ያስከትላል። 🩸 ይህም የድድ ደም መፍሰስ እና የቁስል አለመዳን ያመጣል። 🧬"
+},
 
-];
+{
+  question: "Antibody production is the primary role of:",
+  options: [
+    "T cells",
+    "B cells",
+    "Macrophages",
+    "Neutrophils"
+  ],
+  answer: 1,
+  englishExplanation: "🦠 B lymphocytes (B cells) differentiate into plasma cells, which secrete antibodies into the bloodstream to target specific pathogens. 🛡️ These antibodies help the immune system recognize and fight invading microorganisms.",
+  amharicExplanation: "🦠 አንቲቦዲ (Antibody) የማምረት ዋነኛ ተግባር የB cells (B lymphocytes) ነው። 🛡️ B cells ወደ plasma cells ተቀይረው አንቲቦዲዎችን ያመርታሉ። T cells ደግሞ በቀጥታ የታመሙ ሴሎችን ለመቆጣጠር ወይም ለማጥፋት ይረዳሉ።"
+},
+
+{
+  question: "Competitive inhibitors bind to:",
+  options: [
+    "Allosteric sites",
+    "Active sites",
+    "Substrate molecules",
+    "Coenzyme sites"
+  ],
+  answer: 1,
+  englishExplanation: "🔒 Competitive inhibitors structurally resemble the natural substrate and compete for binding directly at the enzyme's active site. 🧪 By occupying the active site, they prevent the substrate from binding and reduce enzyme activity.",
+  amharicExplanation: "🔒 ኮምፔቲቲቭ ኢንሂቢተሮች (Competitive inhibitors) ከተፈጥሯዊው ሰብስትሬት ጋር ተመሳሳይ ቅርጽ ስላላቸው በቀጥታ ኢንዛይሙ Active site ላይ በመቀመጥ ሰብስትሬቱ እንዳይያዝ ይከለክላሉ። 🧪"
+},
+
+{
+  question: "Which is a protozoal disease?",
+  options: [
+    "Tuberculosis",
+    "Leishmaniasis",
+    "Typhoid",
+    "Tetanus"
+  ],
+  answer: 1,
+  englishExplanation: "🦠 Leishmaniasis is caused by protozoan parasites of the genus Leishmania and is transmitted by sandflies. 🦟 Tuberculosis, typhoid, and tetanus are bacterial diseases. 🔬",
+  amharicExplanation: "🦟 Leishmaniasis በፕሮቶዞአ (Protozoa) ጥገኛ ተህዋሲያን የሚመጣ በሽታ ነው። 🔬 ቲቢ፣ ታይፎይድ እና ቴታነስ በባክቴሪያ የሚመጡ ናቸው።"
+},
+
+{
+  question: "COVID-19 is caused by:",
+  options: [
+    "Bacterium",
+    "Virus",
+    "Fungus",
+    "Parasite"
+  ],
+  answer: 1,
+  englishExplanation: "👑 COVID-19 is an infectious respiratory illness caused by the SARS-CoV-2 coronavirus. 🦠 It is a viral infection, not a bacterial, fungal, or parasitic disease.",
+  amharicExplanation: "👑 ኮቪድ-19 (COVID-19) የሚመጣው SARS-CoV-2 በተባለ የቫይረስ (Virus) ዘርፍ ነው። 🦠"
+},
+
+{
+  question: "Phagocytosis refers to:",
+  options: [
+    "Cell drinking",
+    "Cell eating",
+    "Cell excretion",
+    "Cell division"
+  ],
+  answer: 1,
+  englishExplanation: "🍽️ Phagocytosis is the mechanism where a cell engulfs solid particles, such as bacteria. 🦠 It is commonly described as 'cell eating.' 💧 In contrast, pinocytosis is known as 'cell drinking.'",
+  amharicExplanation: "🍽️ ፋጎሳይቶሲስ (Phagocytosis) ማለት ሴሎች ጠጣር ነገሮችን ወይም ባክቴሪያዎችን አግበስብሰው የሚውጡበት ሂደት (Cell eating) ነው። 🦠"
+},
+
+{
+  question: "Human arms and bat wings are:",
+  options: [
+    "Analogous",
+    "Homologous",
+    "Vestigial",
+    "Convergent"
+  ],
+  answer: 1,
+  englishExplanation: "🦴 Homologous structures share a common evolutionary origin and underlying bone anatomical structure, even if they serve different functions. 🧬 Human arms and bat wings therefore provide evidence of common ancestry.",
+  amharicExplanation: "🦴 የሰው እጅ እና የሌሊት ወፍ ክንፍ ተመሳሳይ የአጥንት መዋቅርና የዘር አመጣጥ ስላላቸው Homologous ይባላሉ። 🧬"
+},
+
+{
+  question: "The living material of a cell is:",
+  options: [
+    "Cytoplasm",
+    "Protoplasm",
+    "Cytosol",
+    "Nucleolus"
+  ],
+  answer: 1,
+  englishExplanation: "🔬 Protoplasm includes both the cytoplasm and the nucleus, representing the entire living contents inside a cell boundary. 🧬 It therefore refers to the living material of the cell.",
+  amharicExplanation: "🔬 ፕሮቶፕላዝም (Protoplasm) የሴልን ሙሉ ሕያው አካል (ሳይቶፕላዝም + ኒዩክለስ) የሚያጠቃልል ቃል ነው። 🧬"
+},
+
+{
+  question: "Approximate body water percentage in adults:",
+  options: [
+    "40%",
+    "60%",
+    "80%",
+    "90%"
+  ],
+  answer: 1,
+  englishExplanation: "💧 Water makes up approximately 60% of total body weight in a healthy adult human. 🧍 This water is essential for circulation, temperature regulation, chemical reactions, and normal cellular function. ⚖️",
+  amharicExplanation: "💧 በአማካይ በጎልማሳ ሰው የሰውነት አካል ውስጥ 60% ገደማ የሚሆነው የሰውነት መጠን ውሃ ነው። 🧍"
+},
+
+{
+  question: "Influenza spreads mainly by:",
+  options: [
+    "Vector",
+    "Droplet",
+    "Fecal-oral",
+    "Direct contact"
+  ],
+  answer: 1,
+  englishExplanation: "🗣️ Influenza virus spreads mainly through respiratory droplets and particles released when an infected person coughs, sneezes, or talks. 🦠 These infectious particles can reach another person's respiratory tract.",
+  amharicExplanation: "🗣️ የኢንፍሉዌንዛ (ጉንፋን) ቫይረስ በዋናነት የሚሰራጨው በሳል ወይም በትምችት ወቅት ከሚወጡ አየር ወለድ የኤሮሶል ጠብታዎች (Droplet) አማካይነት ነው። 🦠"
+},
+
+{
+  question: "Trypanosomiasis is transmitted by:",
+  options: [
+    "Mosquito",
+    "Tsetse fly",
+    "Tick",
+    "Flea"
+  ],
+  answer: 1,
+  englishExplanation: "🪰 African trypanosomiasis, also known as sleeping sickness, is transmitted to humans through the bites of infected tsetse flies (Glossina). 🦠",
+  amharicExplanation: "🪰 የአፍሪካ እንቅልፍ በሽታ (Trypanosomiasis) በጸጸ ዝንብ (Tsetse fly) ንክሻ አማካይነት ወደ ሰው ይተላለፋል። 🦠"
+},
+
+{
+  question: "Case: A patient with polyuria, polydipsia, weight loss. Suspect:",
+  options: [
+    "Hypothyroidism",
+    "Diabetes mellitus",
+    "Addison’s disease",
+    "Hypertension"
+  ],
+  answer: 1,
+  englishExplanation: "🩺 Excessive urination (polyuria), excessive thirst (polydipsia), and unexpected weight loss are classic symptoms of diabetes mellitus. 💧 These symptoms are commonly associated with elevated blood glucose levels. 🩸",
+  amharicExplanation: "🩺 አብዝቶ መሸናት (Polyuria)፣ አብዝቶ መጠማት (Polydipsia) እና የሰውነት ክብደት መቀነስ የስኳር በሽታ (Diabetes mellitus) ዋነኛ ምልክቶች ናቸው። 🩸"
+},
+
+{
+  question: "Case: Recurrent pyogenic infections in a child, low immunoglobulins. Likely:",
+  options: [
+    "T-cell defect",
+    "B-cell defect",
+    "Phagocyte defect",
+    "Complement deficiency"
+  ],
+  answer: 1,
+  englishExplanation: "🧫 Immunoglobulins (antibodies) are created by B cells. 🛡️ A failure or reduction in immunoglobulins points directly to a B-cell defect, which can result in recurrent bacterial infections.",
+  amharicExplanation: "🧫 ኢሚዩኖግሎቡሊን (አንቲቦዲ) አነስተኛ መሆን እና ተደጋጋሚ የባክቴሪያ ጥቃት የሚከሰተው የB-cell ችግር ሲኖር ነው። 🦠"
+},
+
+{
+  question: "Highest blood pressure is in the:",
+  options: [
+    "Aorta",
+    "Pulmonary artery",
+    "Capillaries",
+    "Venae cavae"
+  ],
+  answer: 0,
+  englishExplanation: "🫀 Systemic blood pressure is highest in the aorta because it receives blood directly pumped from the left ventricle. 💓 The aorta therefore experiences the greatest pressure in the systemic circulation.",
+  amharicExplanation: "🫀 ከፍተኛው የደም ግፊት የሚመዘገበው በAorta (ዋናው የልብ የደም ስር) ውስጥ ነው፤ ምክንያቱም ደም በቀጥታ ከልብ በኃይል ስለሚገፋበት ነው። 💓"
+},
+
+{
+  question: "Enzyme working best in stomach acidity:",
+  options: [
+    "Amylase",
+    "Pepsin",
+    "Trypsin",
+    "Lipase"
+  ],
+  answer: 1,
+  englishExplanation: "🥩 Pepsin is a protein-digesting enzyme secreted in the stomach that functions optimally in acidic environments (pH 1.5 to 2.0). 🧪 The acidic stomach environment activates pepsin and supports protein digestion.",
+  amharicExplanation: "🥩 ፔፕሲን (Pepsin) በጨጓራ አሲድ (pH ≈ 1.5–2.0) ውስጥ ፕሮቲንን የመፈጨት ስራውን በብቃት የሚያከናውን ኢንዛይም ነው። 🧪"
+},
+
+{
+  question: "Fertilization normally occurs in the:",
+  options: [
+    "Ovary",
+    "Uterus",
+    "Fallopian tube",
+    "Cervix"
+  ],
+  answer: 2,
+  englishExplanation: "🥚 Fertilization of the egg by a sperm cell usually happens in the ampulla region of the fallopian tube (uterine tube). 🧬 This is where the sperm and egg normally meet and fuse.",
+  amharicExplanation: "🥚 የሴት እንቁላል እና የወንድ ስፐርም ውህደት (Fertilization) በመደበኛነት የሚካሄደው በFallopian tube ውስጥ ነው። 🧬"
+},
+
+{
+  question: "Vitamin essential for clotting factors:",
+  options: [
+    "A",
+    "K",
+    "E",
+    "D"
+  ],
+  answer: 1,
+  englishExplanation: "🩸 Vitamin K is crucial for the liver synthesis of clotting factors II, VII, IX, and X. 🧬 Adequate vitamin K is therefore essential for normal blood clotting.",
+  amharicExplanation: "🩸 Vitamin K ደም እንዲረጋ የሚያደርጉ ፕሮቲኖች (Clotting factors) በጉበት ውስጥ እንዲመረቱ በጣም አስፈላጊ ነው። 🧬"
+},
+
+{
+  question: "Color vision uses:",
+  options: [
+    "Rods",
+    "Cones",
+    "Both",
+    "Ganglion cells"
+  ],
+  answer: 1,
+  englishExplanation: "👁️ Cone photoreceptors in the retina process bright light and color vision, whereas rods detect dim light and black-and-white vision. 🌈 Therefore, cones are responsible for color vision.",
+  amharicExplanation: "👁️ በአይናችን ሬቲና ውስጥ የሚገኙት Cones የቀለም እና የበራ ብርሃን እይታን ሲያመቻቹ፣ 🌙 Rods ደግሞ በጨለማ የማየት ስራ ይሰራሉ።"
+},
+
+{
+  question: "Eustachian tube functions to:",
+  options: [
+    "Equalize ear pressure",
+    "Amplify sound",
+    "Produce wax",
+    "Detect motion"
+  ],
+  answer: 0,
+  englishExplanation: "👂 The Eustachian tube connects the middle ear to the nasopharynx and helps balance air pressure across the tympanic membrane. ⚖️ This pressure equalization is especially noticeable during swallowing or yawning.",
+  amharicExplanation: "👂 የኢዩስታቺያን ቲዩብ (Eustachian tube) የመካከለኛው ጆሮ አየር ግፊት ከውጪው አየር ግፊት ጋር እኩል እንዲሆን የመጠበቅ ተግባር አለው። ⚖️"
+},
+
+{
+  question: "Surfactant prevents:",
+  options: [
+    "Infection",
+    "Alveolar collapse",
+    "Edema",
+    "Bronchospasm"
+  ],
+  answer: 1,
+  englishExplanation: "🫁 Pulmonary surfactant reduces surface tension within alveoli, preventing them from collapsing during exhalation. 💨 This helps keep the alveoli open and supports efficient gas exchange.",
+  amharicExplanation: "🫁 ሳንባ ውስጥ የሚገኘው Surfactant የተባለው ፈሳሽ የሳንባ ከረጢቶች (Alveoli) አየር ሲወጣ ተጣብቀው እንዳይዘጉ (እንዳይሰበሰቡ) ይከላከላል። 💨"
+},
+
+{
+  question: "Krebs cycle occurs in:",
+  options: [
+    "Cytosol",
+    "Mitochondrial matrix",
+    "Inner mitochondrial membrane",
+    "Nucleus"
+  ],
+  answer: 1,
+  englishExplanation: "🌀 The enzymes involved in the citric acid cycle (Krebs cycle) are located in the mitochondrial matrix. 🔋 This cycle produces NADH and FADH₂, which later contribute to ATP production through the electron transport chain.",
+  amharicExplanation: "🌀 የክሬብስ ሳይክል (Krebs cycle) የሴሉላር እስትንፋስ ሂደት በሳይቶፕላዝም ሳይሆን በMitochondrial matrix ውስጥ ይካሄዳል። 🔋"
+},
+
+{
+  question: "Which is NOT a function of blood?",
+  options: [
+    "Transport",
+    "Immunity",
+    "Hormone production",
+    "Temperature regulation"
+  ],
+  answer: 2,
+  englishExplanation: "🩸 Hormones are manufactured by endocrine glands, not by the blood itself. 🧪 Blood transports hormones throughout the body and helps distribute their effects, but hormone production is not a primary function of blood.",
+  amharicExplanation: "🩸 ሆርሞኖች የሚመረቱት በኢንዶክሪን እጢዎች (Endocrine glands) ነው፤ ደም ሆርሞኖችን ያጓጉዛል እንጂ አይሠራም። 🚚"
+},
+
+{
+  question: "Nerve cells lack:",
+  options: [
+    "Nucleus",
+    "Centrioles",
+    "Mitochondria",
+    "Ribosomes"
+  ],
+  answer: 1,
+  englishExplanation: "🧠 Mature neurons lack centrioles, which is one reason they generally cannot undergo normal mitotic cell division. 🔬 Neurons still contain a nucleus, mitochondria, and ribosomes for their essential cellular functions.",
+  amharicExplanation: "🧠 የበሰሉ የነርቭ ሴሎች (Neurons) Centrioles ስለሌላቸው መከፋፈልና አዲስ ሴል መተካት አይችሉም። 🔬"
+},
+
+{
+  question: "Inspiration involves diaphragm:",
+  options: [
+    "Contracting",
+    "Relaxing",
+    "No change",
+    "Inverting"
+  ],
+  answer: 0,
+  englishExplanation: "🫁 During inhalation (inspiration), the diaphragm contracts and moves downward. 💨 This increases the volume of the thoracic cavity, causing air to move into the lungs.",
+  amharicExplanation: "🫁 አየር ወደ ሳንባችን በሚገባበት ጊዜ (Inspiration) ዲያፍራም ይኮማተራል (Contract ያደርጋል) እና ወደ ታች ይወርዳል። 💨"
+},
+
+{
+  question: "Which taste bud is on lateral tongue?",
+  options: [
+    "Sweet",
+    "Salty",
+    "Bitter",
+    "Umami"
+  ],
+  answer: 1,
+  englishExplanation: "👅 Traditionally, taste maps identify sour and salty sensitivity along the lateral margins of the tongue. 🧂 Therefore, among these choices, salty is the expected answer.",
+  amharicExplanation: "👅 በምላስ ጎኖች (Lateral side) አካባቢ ለጨዋማ (Salty) እና ለኮምጣጣ ጣዕሞች ምላሽ የሚሰጡ ጣዕም ተቀባዮች በብዛት ይገኛሉ። 🧂"
+},
+
+{
+  question: "Membrane-less organelle:",
+  options: [
+    "Ribosome",
+    "Mitochondria",
+    "Nucleus",
+    "Golgi"
+  ],
+  answer: 0,
+  englishExplanation: "🧫 Ribosomes consist of RNA and proteins without a surrounding phospholipid membrane envelope. 🧬 They are responsible for protein synthesis inside cells.",
+  amharicExplanation: "🧫 ራይቦሶም (Ribosome) የሴል ሽፋን (Membrane) የሌለው እና ፕሮቲን የሚያመርት የሴል አካል ነው። 🧬"
+},
+
+{
+  question: "Spermatogenesis is promoted by:",
+  options: [
+    "Estrogen",
+    "Testosterone",
+    "Progesterone",
+    "Prolactin"
+  ],
+  answer: 1,
+  englishExplanation: "♂️ Testosterone, produced by Leydig cells, is essential for stimulating and maintaining sperm production in the testes. 🧬 It works together with other reproductive hormones to support spermatogenesis.",
+  amharicExplanation: "♂️ Testosterone የወንድ ዘር (Sperm) ምርትን ለማፋጠን እና ለማስቀጠል ዋነኛው ሆርሞን ነው። 🧬"
+},
+
+{
+  question: "Sequence of ear ossicles (outer to inner):",
+  options: [
+    "Malleus, incus, stapes",
+    "Incus, stapes, malleus",
+    "Stapes, incus, malleus",
+    "Malleus, stapes, incus"
+  ],
+  answer: 0,
+  englishExplanation: "🎶 Sound vibrations pass through the middle ear ossicles in order: Malleus (hammer) → Incus (anvil) → Stapes (stirrup). 👂 This sequence transmits vibrations toward the inner ear.",
+  amharicExplanation: "🎶 በመካከለኛው ጆሮ ውስጥ ያሉትን ትንንሽ አጥንቶች ቅደም ተከተል ከውጭ ወደ ውስጥ፡ Malleus → Incus → Stapes ናቸው። 👂"
+},
+
+{
+  question: "Case: After cholecystectomy, patients should limit:",
+  options: [
+    "Carbs",
+    "Fats",
+    "Proteins",
+    "Fiber"
+  ],
+  answer: 1,
+  englishExplanation: "🥗 Cholecystectomy is gallbladder removal. Without a gallbladder to store bile, some people have difficulty digesting large amounts of fat, especially soon after surgery. 🩺 Therefore, limiting high-fat meals may be recommended.",
+  amharicExplanation: "🥗 የሐሞት ከረጢታቸው በኦፕሬሽን የተወጣላቸው (Cholecystectomy) ሰዎች የስብ ይዘት ያላቸውን ምስቦች መቀነስ አለባቸው። 🩺"
+},
+
+{
+  question: "Positive feedback example:",
+  options: [
+    "Insulin lowering glucose",
+    "Oxytocin in labor",
+    "Thermoregulation",
+    "Blood pH buffering"
+  ],
+  answer: 1,
+  englishExplanation: "👶 Oxytocin release intensifies uterine contractions during childbirth, causing further oxytocin secretion. 🔄 This strengthens the original response and represents a classic positive feedback loop.",
+  amharicExplanation: "👶 በወሊድ ጊዜ ኦክሲቶሲን (Oxytocin) ሆርሞን መጨመር የምጥ ቁስልን ያፋጥናል፤ 🔄 ይህም ተጨማሪ ሆርሞን እንዲወጣ ያደርጋል (Positive feedback)።"
+},
+
+{
+  question: "Colorblindness inheritance: Carrier mother + affected father, chance son is affected:",
+  options: [
+    "0%",
+    "50%",
+    "75%",
+    "100%"
+  ],
+  answer: 1,
+  englishExplanation: "🧬 The mother is XᴺXᶜ and the father is XᶜY. 👨‍👩‍👦 Sons receive the Y chromosome from their father and either Xᴺ or Xᶜ from their mother. Therefore, a son has a 50% chance of receiving Xᶜ and being colorblind. 👁️",
+  amharicExplanation: "🧬 እናት አጓጓዥ (XᴺXᶜ)፣ አባት ታማሚ (XᶜY) ቢሆኑ፤ 👨‍👩‍👦 ወንድ ልጅ ከእናት Xᶜ የማግኘት 50% እድል ስላለው የታማሚነት እድሉ 50% ይሆናል። 👁️"
+},
+
+{
+  question: "Lymphatic system is:",
+  options: [
+    "Closed",
+    "Open",
+    "Both",
+    "None"
+  ],
+  answer: 1,
+  englishExplanation: "🌊 The lymphatic system is an open-ended system that collects interstitial fluid through lymph capillaries and drains it back into blood circulation. 🩸 This helps maintain fluid balance and supports immune defense. 🛡️",
+  amharicExplanation: "🌊 የሊምፋቲክ ሲስተም (Lymphatic system) ክፍት የመዋቅር አይነት (Open system) ሲሆን ከሴሎች መካከል ያለውን ፈሳሽ ሰብስቦ ወደ ደም ስር ይመልሳል። 🌊"
+},
+
+{
+  question: "Glands of Moll are modified:",
+  options: [
+    "Sebaceous glands",
+    "Sweat glands",
+    "Tear glands",
+    "Salivary glands"
+  ],
+  answer: 1,
+  englishExplanation: "👁️ Glands of Moll (ciliary glands) located at the base of the eyelashes are modified apocrine sweat glands. 💧 They contribute to the secretions associated with the eyelid margin.",
+  amharicExplanation: "👁️ በዓይን ቆብ ጠርዝ አካባቢ የሚገኙት የሞል እጢዎች (Glands of Moll) የተቀየሩ የላብ እጢዎች (Sweat glands) ናቸው። 💧"
+},
+
+{
+  question: "Lacrimal secretion is:",
+  options: [
+    "Watery",
+    "Oily",
+    "Mucoid",
+    "Enzymatic"
+  ],
+  answer: 0,
+  englishExplanation: "💧 Lacrimal glands produce tears, which are predominantly watery fluid containing antibodies, inorganic salts, and lysozyme. 👁️ Tears help clean, protect, and keep the surface of the eye moist.",
+  amharicExplanation: "💧 የላክሪማል እጢ የሚረጨው የዓይን እንባ በዋናነት Watery የሆነ ፈሳሽ ነው፤ 👁️ ይህም ዓይንን ያጸዳል፣ እርጥበት ይሰጣል።"
+},
+
+{
+  question: "Eye color from:",
+  options: [
+    "Lens",
+    "Cornea",
+    "Iris",
+    "Retina"
+  ],
+  answer: 2,
+  englishExplanation: "👁️ Eye color is determined primarily by the amount and distribution of melanin pigment in the iris. 🎨 Differences in melanin concentration contribute to different eye colors.",
+  amharicExplanation: "👁️ የዓይናችን ቀለም የሚወሰነው በአይሪስ (Iris) ውስጥ በሚገኘው የሜላኒን (Melanin) ቀለም መጠን ነው። 🎨"
+},
+
+{
+  question: "Fertilized egg is called:",
+  options: [
+    "Blastocyst",
+    "Zygote",
+    "Morula",
+    "Embryo"
+  ],
+  answer: 1,
+  englishExplanation: "🥚 The single cell created when a sperm fertilizes an egg cell is called a zygote. 🧬 The zygote is the first stage after fertilization and then undergoes repeated cell divisions.",
+  amharicExplanation: "🥚 የሴት እና የወንድ የዘር ሴል ከተዋሃዱ በኋላ የሚፈጠረው የመጀመሪያው ነጠላ ሴል ዛይጎት (Zygote) ይባላል። 🧬"
+},
+
+{
+  question: "Urethra in males carries:",
+  options: [
+    "Urine only",
+    "Semen only",
+    "Both",
+    "Neither"
+  ],
+  answer: 2,
+  englishExplanation: "🚻 In human males, the urethra forms a common channel for discharging both urine from the bladder and semen during ejaculation. 🧬 It serves both the urinary and reproductive systems, although urine and semen are not normally passed at the same time.",
+  amharicExplanation: "🚽 በወንዶች አካል ውስጥ የሽንት ቱቦ (Urethra) ሽንትንም ሆነ የወንድ ዘር ፈሳሽን (Semen) ለማስተላለፍ ያገለግላል። 🧬"
+},
+
+{
+  question: "Placenta does NOT:",
+  options: [
+    "Exchange gases",
+    "Produce hormones",
+    "Produce antibodies",
+    "Transfer nutrients"
+  ],
+  answer: 2,
+  englishExplanation: "👶 The placenta transfers maternal antibodies to the fetus, but it does not synthesize or produce antibodies itself. 🛡️ It also participates in gas exchange, nutrient transfer, and hormone production during pregnancy.",
+  amharicExplanation: "👶 ፕላሴንታ (የእናትና የፅንስ ማያያዣ) የእናት አንቲቦዲዎችን ወደ ፅንስ ያስተላልፋል እንጂ እሱራሱ አንቲቦዲዎችን አያመርትም። 🛡️"
+},
+
+{
+  question: "Pupil constriction uses:",
+  options: [
+    "Radial muscles",
+    "Circular muscles",
+    "Both",
+    "Ciliary muscles"
+  ],
+  answer: 1,
+  englishExplanation: "👁️ The sphincter pupillae (circular muscles) of the iris contract via parasympathetic stimulation to narrow or constrict the pupil. 🔄 Radial muscles have the opposite effect and dilate the pupil.",
+  amharicExplanation: "👁️ የዓይን ብሌን እንዲጠበብ (Pupil constriction) የሚያደርጉት የአይሪስ ከበብ ባሉ ጡንቻዎች (Circular muscles) ማኮማተር ነው። 🔄"
+},
+
+{
+  question: "Which is upper respiratory tract?",
+  options: [
+    "Trachea",
+    "Bronchi",
+    "Larynx",
+    "Alveoli"
+  ],
+  answer: 2,
+  englishExplanation: "🫁 Anatomically, the upper respiratory tract includes the nasal cavity, pharynx, and larynx. 👃 The trachea, bronchi, and alveoli are generally considered part of the lower respiratory tract.",
+  amharicExplanation: "🫁 የላይኛው የመተንፈሻ አካል ክፍሎች የሚባሉት አፍንጫ፣ ፋሪንክስ እና ላሪንክስ (Larynx) ናቸው። 👃 ትራኪያ እና ብሮንካይ የታችኛው ክፍል ናቸው።"
+},
+
+// CHEMISTRY (46–50)
+
+{
+  question: "A buffer contains:",
+  options: [
+    "Strong acid + strong base",
+    "Weak acid + its salt",
+    "Salt only",
+    "Water only"
+  ],
+  answer: 1,
+  englishExplanation: "🧪 A buffer solution typically consists of a weak acid and its conjugate base (salt), or a weak base and its conjugate acid, to resist pH changes. ⚖️ This allows the solution to maintain a relatively stable pH when small amounts of acid or base are added.",
+  amharicExplanation: "🧪 የባፈር (Buffer) ሙሌት መፍትሄ የpH መጠን እንዳይቀያየር የሚከታተል ሲሆን የሚሰራው ከደካማ አሲድ እና ከጨው (Weak acid + its salt) ነው። ⚖️"
+},
+
+{
+  question: "Salt of weak acid + strong base gives pH:",
+  options: [
+    "<7",
+    ">7",
+    "=7",
+    "Variable"
+  ],
+  answer: 1,
+  englishExplanation: "⚖️ Dissolving a salt formed from a weak acid and a strong base generates a basic solution (pH > 7) because the conjugate base undergoes hydrolysis and produces additional OH⁻ ions. 🧪",
+  amharicExplanation: "⚖️ በደካማ አሲድ እና በጠንካራ ቤዝ የተሰራ ጨው በውሃ ውስጥ ሲሟሟ የሚፈጥረው መፍትሄ ቤዚክ (pH > 7) ይሆናል። 🧪"
+},
+
+{
+  question: "Moles of NaOH to neutralize 0.01 L of 0.1 M HCl:",
+  options: [
+    "0.001",
+    "0.01",
+    "0.1",
+    "1.0"
+  ],
+  answer: 0,
+  englishExplanation: "🧮 Moles of HCl = Molarity × Volume (L) = 0.1 × 0.01 = 0.001 moles. ⚗️ Since the reaction stoichiometry is 1:1 (HCl + NaOH → NaCl + H₂O), exactly 0.001 moles of NaOH are needed. ✅",
+  amharicExplanation: "🧮 የ-HCl ሞል ብዛት = M × V = 0.1 × 0.01 = 0.001 mol። ⚗️ አሲዱ እና ቤዙ በ1:1 ውህደት ስለሚቀላቀሉ የሚያስፈልገው የ-NaOH ሞል 0.001 ነው። ✅"
+},
+
+{
+  question: "IUPAC name for CH₃CH₂CH(CH₃)CH₂CH₃:",
+  options: [
+    "2-Methylpentane",
+    "3-Methylpentane",
+    "n-Hexane",
+    "Isohexane"
+  ],
+  answer: 1,
+  englishExplanation: "⚗️ The continuous carbon chain contains 5 carbons (pentane). 🧬 A methyl group (−CH₃) is attached at carbon-3 from either end. Therefore, the IUPAC name is 3-Methylpentane. ✅",
+  amharicExplanation: "⚗️ ረጅሙ የካርቦን ሰንሰለት 5 ካርቦኖች አሉት (Pentane)። 🧬 በ3ኛው ካርቦን ላይ Methyl (CH₃) ተያይዟል፤ ስለዚህ ስሙ 3-Methylpentane ይባላል። ✅"
+},
+
+{
+  question: "Aspirin contains functional groups:",
+  options: [
+    "Carboxylic acid + ester",
+    "Alcohol + ketone",
+    "Aldehyde + amine",
+    "Amide + ether"
+  ],
+  answer: 0,
+  englishExplanation: "💊 Chemical structure of aspirin (acetylsalicylic acid) has both a carboxylic acid group (−COOH) and an ester group (−OCOCH₃) on a benzene ring. 🧪 These are the two key functional groups present in aspirin.",
+  amharicExplanation: "💊 አስፕሪን (Acetylsalicylic acid) በኬሚካል መዋቅሩ ውስጥ Carboxylic acid እና Ester የተባሉ ሁለት የፈንክሽናል ግሩፕ ዓይነቶችን ይዟል። 🧪"
+} ];
 
 
 // =====================================================
