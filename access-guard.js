@@ -2,31 +2,29 @@
 =========================================================
  UNIQUE ACADEMIC
  STUDENT ACCESS GUARD + CONTENT PROTECTION
- + FREE TRIAL SYSTEM
+ + ALL-SUBJECT FREE TRIAL SYSTEM
 =========================================================
 
- FREE TRIAL SUBJECTS:
-    Anthropology
-    Psychology
+ FREE TRIAL:
+    ALL SUBJECTS
 
  FREE TRIAL ACCESS:
-    Chapter 1 Notes      -> UNLOCKED
-    Chapter 1 Quiz       -> UNLOCKED
-    Full Notes           -> UNLOCKED
+    Subject Home Page       -> UNLOCKED
+    Chapter 1 Lessons       -> UNLOCKED
+    Chapter 1 Quiz          -> UNLOCKED
+    Full / Complete Notes   -> UNLOCKED
 
  LOCKED FOR LOGGED-OUT USERS:
     Chapters 2-5 Notes
     Chapters 2-5 Quizzes
     Videos
 
- LOGGED-OUT USERS:
-    Anthropology trial -> ALLOWED
-    Psychology trial   -> ALLOWED
-    Other subjects     -> LOCKED
-
  REGISTERED APPROVED STUDENTS:
-    ALL SUBJECTS        -> ALLOWED
-    INCLUDING ALL TRIAL SUBJECT CONTENT
+    ALL SUBJECTS
+    ALL CHAPTERS
+    ALL QUIZZES
+    ALL NOTES
+    ALL VIDEOS
 
  ADMIN:
     Full access
@@ -70,21 +68,32 @@ const ADMIN_EMAIL =
 
 
 /* =====================================================
-   FREE TRIAL SUBJECTS
+   FREE TRIAL
 ===================================================== */
 
-const TRIAL_SUBJECTS = [
+/*
+   IMPORTANT:
 
-    "anthropology",
+   There is NO trial-subject list anymore.
 
-    "psychology"
+   The free trial works for ALL subjects.
 
-];
+   Example:
 
-
-/* =====================================================
-   FREE TRIAL CHAPTER
-===================================================== */
+   Logic
+   Economics
+   Psychology
+   Anthropology
+   History
+   Geography
+   Global Trends
+   Entrepreneurship
+   Emerging Technology
+   International Relations
+   Law
+   Civics
+   etc.
+*/
 
 const TRIAL_CHAPTER = 1;
 
@@ -180,7 +189,8 @@ function getCurrentSubject() {
 
     /*
     =============================================
-    ?subject=anthropology
+    ?subject=logic
+    ?subject=economics
     =============================================
     */
 
@@ -203,7 +213,7 @@ function getCurrentSubject() {
 
     /*
     =============================================
-    PAGE NAME
+    PAGE NAME DETECTION
     =============================================
     */
 
@@ -286,20 +296,71 @@ function getCurrentSubject() {
     }
 
 
+    if (
+        page.includes("emerging-technology") ||
+        page.includes("emerging_technology") ||
+        page.includes("emergingtechnology")
+    ) {
+
+        return "emerging-technology";
+
+    }
+
+
+    if (
+        page.includes("international-relations") ||
+        page.includes("international_relations") ||
+        page.includes("internationalrelations")
+    ) {
+
+        return "international-relations";
+
+    }
+
+
+    if (
+        page.includes("civics") ||
+        page.includes("civic")
+    ) {
+
+        return "civics";
+
+    }
+
+
+    if (
+        page.includes("law")
+    ) {
+
+        return "law";
+
+    }
+
+
     return "";
 
 }
 
 
 /* =====================================================
-   IS TRIAL SUBJECT?
+   ALL-SUBJECT TRIAL CHECK
 ===================================================== */
 
 function isTrialSubject(
     subject
 ) {
 
-    return TRIAL_SUBJECTS.includes(
+    /*
+    =============================================
+    IMPORTANT
+
+    Every recognized subject is now a trial subject.
+
+    We only need to make sure a subject exists.
+    =============================================
+    */
+
+    return Boolean(
         normalizeSubject(
             subject
         )
@@ -528,7 +589,7 @@ function canUseTrialAccess() {
 
     /*
     =============================================
-    NOT A TRIAL SUBJECT
+    ALL SUBJECTS ARE TRIAL SUBJECTS
     =============================================
     */
 
@@ -555,6 +616,16 @@ function canUseTrialAccess() {
     =============================================
     SUBJECT LANDING PAGE
     =============================================
+
+    Example:
+
+    logic.html
+    economics.html
+    psychology.html
+    anthropology.html
+
+    All are free.
+    =============================================
     */
 
     if (
@@ -568,7 +639,14 @@ function canUseTrialAccess() {
 
     /*
     =============================================
-    FULL NOTES
+    FULL / COMPLETE NOTES
+    =============================================
+
+    Example:
+
+    logic-notes.html
+    psychology-notes.html
+    economics-notes.html
     =============================================
     */
 
@@ -592,7 +670,9 @@ function canUseTrialAccess() {
     ) {
 
         /*
-        Chapter 1 Notes
+        =========================================
+        CHAPTER 1 NOTES
+        =========================================
         */
 
         if (
@@ -605,7 +685,9 @@ function canUseTrialAccess() {
 
 
         /*
-        Chapter 1 Quiz
+        =========================================
+        CHAPTER 1 QUIZ
+        =========================================
         */
 
         if (
@@ -783,8 +865,6 @@ onAuthStateChanged(
         =================================================
         PUBLIC PAGES
         =================================================
-
-        These pages are never blocked.
         */
 
         if (
@@ -809,12 +889,6 @@ onAuthStateChanged(
         /*
         =================================================
         ADMIN
-        =================================================
-
-        ADMIN MUST BE CHECKED BEFORE TRIAL LOCKING.
-
-        This fixes the main problem where an admin could
-        incorrectly receive the trial lock page.
         =================================================
         */
 
@@ -843,11 +917,17 @@ onAuthStateChanged(
 
         /*
         =================================================
-        LOGGED-OUT TRIAL ACCESS
+        LOGGED-OUT FREE TRIAL
         =================================================
 
-        Logged-out users may access ONLY the defined
-        free trial content.
+        ALL SUBJECTS:
+
+        Chapter 1
+        Chapter 1 Quiz
+        Full Notes
+        Subject Page
+
+        are available without login.
         =================================================
         */
 
@@ -878,7 +958,7 @@ onAuthStateChanged(
 
         /*
         =================================================
-        LOGGED-OUT NORMAL SUBJECT
+        LOGGED-OUT NORMAL PAGE
         =================================================
         */
 
@@ -921,12 +1001,6 @@ onAuthStateChanged(
             =============================================
             APPROVED STUDENT
             =============================================
-
-            APPROVED STUDENTS GET FULL ACCESS.
-
-            This is intentionally checked BEFORE the
-            trial-content lock.
-            =============================================
             */
 
             if (
@@ -951,11 +1025,10 @@ onAuthStateChanged(
 
             /*
             =============================================
-            TRIAL CONTENT FOR NON-APPROVED USERS
-            =============================================
+            TRIAL ACCESS
 
-            Trial remains available even if the user has
-            a pending/rejected registration.
+            Even logged-in but not-yet-approved users
+            can still use the free trial.
             =============================================
             */
 
@@ -983,23 +1056,10 @@ onAuthStateChanged(
                 !registration.rejected
             ) {
 
-                if (
-                    isTrial
-                ) {
-
-                    showTrialLockedPage(
-                        subject
-                    );
-
-                    return;
-
-                }
-
-
                 showLocked(
                     "📝",
                     "Registration Required",
-                    "Complete your registration and payment to access this course.",
+                    "Complete your registration and payment to access the full course.",
                     "📝 Register Now",
                     "registration.html",
                     "",
@@ -1022,19 +1082,6 @@ onAuthStateChanged(
             if (
                 registration.pending
             ) {
-
-                if (
-                    isTrial
-                ) {
-
-                    showTrialLockedPage(
-                        subject
-                    );
-
-                    return;
-
-                }
-
 
                 showLocked(
                     "⏳",
@@ -1059,23 +1106,10 @@ onAuthStateChanged(
                 registration.rejected
             ) {
 
-                if (
-                    isTrial
-                ) {
-
-                    showTrialLockedPage(
-                        subject
-                    );
-
-                    return;
-
-                }
-
-
                 showLocked(
                     "❌",
                     "Registration Not Approved",
-                    "Your registration has not been approved for course access.",
+                    "Your registration has not been approved for full course access.",
                     "📝 Register Again",
                     "registration.html",
                     "🏠 Home",
@@ -1096,7 +1130,7 @@ onAuthStateChanged(
             showLocked(
                 "🔒",
                 "Access Locked",
-                "Your account is not currently approved for course access.",
+                "Your account is not currently approved for full course access.",
                 "🏠 Back Home",
                 "index.html"
             );
@@ -1113,14 +1147,13 @@ onAuthStateChanged(
 
             /*
             =============================================
-            IF VERIFICATION FAILS ON TRIAL SUBJECT
-            =============================================
+            IMPORTANT
 
-            The free trial itself does not depend on
-            Firestore registration verification.
+            Trial content does NOT require Firestore
+            registration verification.
 
-            Therefore Chapter 1 / Full Notes remain usable
-            if the content qualifies as trial content.
+            Therefore the free trial still works if
+            registration verification temporarily fails.
             =============================================
             */
 
@@ -1206,11 +1239,11 @@ function enableTrialPage() {
 
     /*
     =============================================
-    TRIAL ACCESS GRANTED
+    ACCESS GRANTED EVENT
     =============================================
 
-    quiz.html waits for this event before loading
-    quizData.js / additionalQuizData.js / quiz.js.
+    quiz.html can listen for this event before
+    loading protected quiz data.
     */
 
     document.dispatchEvent(
@@ -1381,6 +1414,7 @@ function getElementInfo(
 
     if (
         combined.includes("full notes") ||
+        combined.includes("complete course notes") ||
         combined.includes("full-notes") ||
         combined.includes("full_notes") ||
         combined.includes("fullnotes")
@@ -1417,8 +1451,8 @@ function getElementInfo(
 
 
         /*
-        If this is a generic quiz link without
-        a chapter number, don't automatically lock it.
+        Generic quiz button with no chapter number.
+        Don't lock automatically.
         */
 
         if (
@@ -1715,9 +1749,9 @@ function addTrialBanner() {
 
 
     const subjectName =
-        subject === "anthropology"
-            ? "Anthropology"
-            : "Psychology";
+        formatSubjectName(
+            subject
+        );
 
 
     const banner =
@@ -1769,6 +1803,41 @@ function addTrialBanner() {
 
 
     addTrialStyles();
+
+}
+
+
+/* =====================================================
+   FORMAT SUBJECT NAME
+===================================================== */
+
+function formatSubjectName(
+    subject
+) {
+
+    const value =
+        normalizeSubject(
+            subject
+        );
+
+
+    if (
+        !value
+    ) {
+
+        return "Course";
+
+    }
+
+
+    return value
+        .split("-")
+        .map(
+            word =>
+                word.charAt(0).toUpperCase() +
+                word.slice(1)
+        )
+        .join(" ");
 
 }
 
@@ -1913,9 +1982,9 @@ function showTrialLockedPage(
 ) {
 
     const subjectName =
-        subject === "anthropology"
-            ? "Anthropology"
-            : "Psychology";
+        formatSubjectName(
+            subject
+        );
 
 
     document.body.innerHTML = `
@@ -1933,8 +2002,8 @@ function showTrialLockedPage(
                 </div>
 
                 <h2>
-                    This ${escapeHTML(subjectName)} Content
-                    is Locked
+                    This ${escapeHTML(subjectName)}
+                    Content is Locked
                 </h2>
 
                 <p>
@@ -2001,12 +2070,6 @@ function addTrialStyles() {
 
 
     style.textContent = `
-
-        /*
-        =============================================
-        TRIAL BANNER
-        =============================================
-        */
 
         #uniqueAcademicTrialBanner {
 
@@ -2112,12 +2175,6 @@ function addTrialStyles() {
         }
 
 
-        /*
-        =============================================
-        LOCKED ELEMENT
-        =============================================
-        */
-
         .trial-locked {
 
             position: relative !important;
@@ -2155,12 +2212,6 @@ function addTrialStyles() {
 
         }
 
-
-        /*
-        =============================================
-        MODAL
-        =============================================
-        */
 
         #uniqueAcademicTrialOverlay {
 
@@ -2355,12 +2406,6 @@ function addTrialStyles() {
         }
 
 
-        /*
-        =============================================
-        FULL LOCKED PAGE
-        =============================================
-        */
-
         .trial-page-lock {
 
             min-height: 100vh;
@@ -2508,12 +2553,6 @@ function addTrialStyles() {
 
         }
 
-
-        /*
-        =============================================
-        MOBILE
-        =============================================
-        */
 
         @media (max-width: 600px) {
 
@@ -2821,10 +2860,6 @@ function enableStudentProtection() {
                 );
 
 
-            /*
-            COPY
-            */
-
             if (
                 ctrl &&
                 key === "c" &&
@@ -2844,10 +2879,6 @@ function enableStudentProtection() {
             }
 
 
-            /*
-            CUT
-            */
-
             if (
                 ctrl &&
                 key === "x" &&
@@ -2860,10 +2891,6 @@ function enableStudentProtection() {
 
             }
 
-
-            /*
-            SAVE
-            */
 
             if (
                 ctrl &&
@@ -2883,10 +2910,6 @@ function enableStudentProtection() {
             }
 
 
-            /*
-            PRINT
-            */
-
             if (
                 ctrl &&
                 key === "p"
@@ -2905,10 +2928,6 @@ function enableStudentProtection() {
             }
 
 
-            /*
-            VIEW SOURCE
-            */
-
             if (
                 ctrl &&
                 key === "u"
@@ -2920,10 +2939,6 @@ function enableStudentProtection() {
 
             }
 
-
-            /*
-            DEVTOOLS
-            */
 
             if (
                 key === "f12"
