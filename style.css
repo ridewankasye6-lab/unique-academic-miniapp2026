@@ -5674,3 +5674,388 @@ body.dark-mode .subjectCard > img {
     }
 
 }
+/* =========================================================
+   LOGIC — PROFESSIONAL CHAPTER & LESSON DESIGN
+   ========================================================= */
+
+.logic-lessons {
+    width: 100%;
+    max-width: 1000px;
+    margin: 35px auto 45px;
+}
+
+
+/* =========================
+   SECTION HEADER
+   ========================= */
+
+.logic-lessons .section-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.logic-lessons .section-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border-radius: 16px;
+
+    font-size: 31px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+.logic-lessons .section-heading h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #2563eb;
+}
+
+.logic-lessons .section-heading p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CHAPTER CARD
+   ========================= */
+
+.logic-chapter {
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.logic-chapter:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   CHAPTER HEADER
+   ========================= */
+
+.logic-lessons .chapter-header {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 18px;
+}
+
+.logic-lessons .chapter-number {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.logic-lessons .chapter-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logic-lessons .chapter-emoji {
+    font-size: 28px;
+}
+
+.logic-lessons .chapter-title h3 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 22px;
+    font-weight: 750;
+}
+
+.logic-lessons .chapter-title p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LESSON LIST
+   ========================= */
+
+.logic-lessons .lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================
+   LESSON BUTTON
+   ========================= */
+
+.logic-lessons .logic-lesson {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    min-height: 70px;
+
+    padding: 10px 14px;
+
+    text-decoration: none;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.logic-lessons .logic-lesson:hover {
+    background: #eff6ff;
+
+    border-color: #93c5fd;
+
+    transform: translateX(4px);
+
+    box-shadow:
+        0 5px 14px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================
+   LESSON ICON
+   ========================= */
+
+.logic-lessons .lesson-icon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   LESSON TEXT
+   ========================= */
+
+.logic-lessons .lesson-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.logic-lessons .lesson-content small {
+    color: #64748b;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+.logic-lessons .lesson-content strong {
+    color: #1e40af;
+
+    font-size: 17px;
+
+    font-weight: 650;
+
+    line-height: 1.35;
+}
+
+
+/* =========================
+   ARROW
+   ========================= */
+
+.logic-lessons .lesson-arrow {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.logic-lessons .logic-lesson:hover .lesson-arrow {
+    transform: translateX(3px);
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .logic-lessons {
+        margin-top: 25px;
+        padding: 0 4px;
+    }
+
+    .logic-lessons .section-heading {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .logic-lessons .section-icon {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 13px;
+
+        font-size: 26px;
+    }
+
+    .logic-lessons .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .logic-lessons .section-heading p {
+        font-size: 13px;
+    }
+
+    .logic-chapter {
+        padding: 15px;
+
+        border-radius: 17px;
+
+        margin-bottom: 18px;
+    }
+
+    .logic-lessons .chapter-header {
+        gap: 10px;
+    }
+
+    .logic-lessons .chapter-number {
+        min-width: 42px;
+        height: 42px;
+
+        border-radius: 11px;
+
+        font-size: 14px;
+    }
+
+    .logic-lessons .chapter-emoji {
+        font-size: 23px;
+    }
+
+    .logic-lessons .chapter-title h3 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .logic-lessons .chapter-title p {
+        font-size: 12px;
+    }
+
+    .logic-lessons .logic-lesson {
+        min-height: 64px;
+
+        padding: 8px 10px;
+
+        gap: 10px;
+
+        border-radius: 12px;
+    }
+
+    .logic-lessons .lesson-icon {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+
+        font-size: 20px;
+    }
+
+    .logic-lessons .lesson-content strong {
+        font-size: 15px;
+    }
+
+    .logic-lessons .lesson-content small {
+        font-size: 9px;
+    }
+
+    .logic-lessons .lesson-arrow {
+        width: 32px;
+        height: 32px;
+
+        font-size: 17px;
+    }
+}
