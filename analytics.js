@@ -10,35 +10,75 @@ import {
 } from "./firebase-config.js";
 
 
-async function trackEvent(eventName, extraData = {}) {
+function getVisitorId() {
+
+    let visitorId =
+        localStorage.getItem("uniqueAcademicVisitorId");
+
+    if (!visitorId) {
+
+        visitorId =
+            "visitor_" +
+            crypto.randomUUID();
+
+        localStorage.setItem(
+            "uniqueAcademicVisitorId",
+            visitorId
+        );
+
+    }
+
+    return visitorId;
+}
+
+
+async function trackEvent(
+    eventName,
+    extraData = {}
+) {
 
     try {
 
         const user = auth.currentUser;
 
+        const visitorId =
+            getVisitorId();
+
+
         await addDoc(
-            collection(db, "analytics"),
+            collection(
+                db,
+                "analytics"
+            ),
             {
 
                 event: eventName,
 
-                userId: user
-                    ? user.uid
-                    : null,
+                userId:
+                    user
+                        ? user.uid
+                        : null,
 
-                registered: !!user,
+                visitorId:
+                    visitorId,
+
+                registered:
+                    !!user,
 
                 ...extraData,
 
-                timestamp: serverTimestamp()
+                timestamp:
+                    serverTimestamp()
 
             }
         );
+
 
         console.log(
             "Analytics recorded:",
             eventName
         );
+
 
     } catch (error) {
 
