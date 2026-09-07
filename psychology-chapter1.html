@@ -250,18 +250,20 @@ document.getElementById("pageHomeBtn").onclick = function () {
     type="module"
     src="access-guard.js"
 ></script>
+<script type="module">
+    import { trackEvent } from "./analytics.js";
 
- <script type="module">
-    import {
-        trackEvent
-    } from "./analytics.js";
+    console.log("✅ Analytics script loaded");
 
     trackEvent("note_open", {
         subject: "Psychology",
         chapter: 1,
         page: "psychology-chapter1.html"
     });
-</script>   
+
+    console.log("✅ note_open sent");
+</script>
+ 
 </body>
 
 </html>
