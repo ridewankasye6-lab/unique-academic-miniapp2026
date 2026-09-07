@@ -7,7 +7,7 @@ import {
 import {
     db,
     auth
-} from "./firebase.js";
+} from "./firebase-config.js";
 
 
 async function trackEvent(eventName, extraData = {}) {
