@@ -2731,7 +2731,17 @@ if (logoutBtn) {
 })();
 
 </script>
+<script
+    type="module"
+>
+    import {
+        trackEvent
+    } from "./analytics.js";
 
+    trackEvent("app_open", {
+        page: "home"
+    });
+</script>
 
 </body>
 
