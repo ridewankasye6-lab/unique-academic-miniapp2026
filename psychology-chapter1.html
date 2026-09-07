@@ -251,6 +251,17 @@ document.getElementById("pageHomeBtn").onclick = function () {
     src="access-guard.js"
 ></script>
 
+ <script type="module">
+    import {
+        trackEvent
+    } from "./analytics.js";
+
+    trackEvent("note_open", {
+        subject: "Psychology",
+        chapter: 1,
+        page: "psychology-chapter1.html"
+    });
+</script>   
 </body>
 
 </html>
