@@ -4,166 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Chapter 1 | Complete Study Notes</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Modern Premium Academic Design System (Maraki Notes Style) */
         :root {
-            --primary-purple: #6b46c1;
-            --primary-purple-light: #f3f0ff;
-            --text-dark: #1f2937;
-            --text-muted: #4b5563;
-            --bg-light: #f8fafc;
+            --bg-color: #f3f4f6;
             --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-            --accent-blue: #3182ce;
-            --accent-blue-bg: #ebf8ff;
-            --correct-green: #2f855a;
-            --incorrect-red: #c53030;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            margin: 0;
-            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             line-height: 1.6;
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
         }
 
-        .top-bar {
-            background-color: var(--primary-purple);
-            color: #ffffff;
-            padding: 14px 20px;
+        .page-navigation {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
         }
 
         .back-btn {
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
+            background-color: var(--primary-purple);
             color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-right: 15px;
         }
 
-        .top-bar h1 {
-            font-size: 1.1rem;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .notes-container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-
-        .notes-header {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 16px;
-            border-left: 5px solid var(--primary-purple);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .notes-header h2 {
-            margin: 0 0 4px 0;
+        .home-btn {
+            background-color: white;
             color: var(--primary-purple);
-            font-size: 1.4rem;
-        }
-
-        .notes-header p {
-            margin: 0;
-            color: var(--text-muted);
-            font-weight: 500;
-        }
-
-        /* Card Container Styles */
-        .card {
-            background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 18px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6b21a8, #4c1d95);
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
             margin-bottom: 16px;
-            box-shadow: var(--shadow-sm);
+            text-align: center;
+            box-shadow: var(--shadow);
         }
 
-        .card h2 {
-            font-size: 1.15rem;
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
             color: var(--primary-purple);
-            margin-top: 0;
             margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
         }
 
-        .card h3 {
+        h3 {
             font-size: 1.05rem;
-            color: var(--text-dark);
-            margin-top: 14px;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
         }
 
-        .card p {
-            margin: 6px 0 12px 0;
-            color: var(--text-dark);
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
         }
 
-        /* Inner Content Boxes */
-        .inner-box {
-            background: var(--primary-purple-light);
-            border-radius: 8px;
-            padding: 12px 16px;
-            margin: 12px 0;
-            border-left: 3px solid var(--primary-purple);
-        }
-
-        .inner-box-blue {
-            background: var(--accent-blue-bg);
-            border-radius: 8px;
-            padding: 12px 16px;
-            margin: 12px 0;
-            border-left: 3px solid var(--accent-blue);
-        }
-
-        /* Custom Lists */
         ul, ol {
+            margin-bottom: 12px;
             padding-left: 20px;
-            margin: 8px 0 12px 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
         }
 
         li {
             margin-bottom: 6px;
         }
 
-        /* Practice Input Fields */
-        .fill-blank {
-            display: inline-block;
-            border-bottom: 2px solid var(--primary-purple);
-            min-width: 90px;
-            font-weight: bold;
-            color: var(--primary-purple);
-            text-align: center;
-            padding: 0 4px;
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
         }
 
-        /* Table Styling */
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .answer-box {
+            background-color: #ecfdf5;
+            border-left: 4px solid var(--accent-green);
+            padding: 8px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 6px 0 14px 0;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
         .table-responsive {
             overflow-x: auto;
             margin: 12px 0;
@@ -172,334 +200,283 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
+            text-align: left;
         }
 
         th, td {
-            padding: 10px 12px;
-            text-align: left;
+            padding: 8px 10px;
             border: 1px solid var(--border-color);
         }
 
         th {
-            background-color: var(--primary-purple-light);
+            background-color: #f3e8ff;
             color: var(--primary-purple);
             font-weight: 600;
         }
 
-        /* Status Marks */
-        .mark-correct {
-            color: var(--correct-green);
-            font-weight: bold;
-        }
-
-        .mark-wrong {
-            color: var(--incorrect-red);
-            font-weight: bold;
-        }
-
-        /* Resource Box */
-        .resource-box {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 16px;
-            margin-top: 16px;
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .resource-box a {
-            display: inline-block;
-            background: var(--primary-purple);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 8px;
-        }
-
-        /* Floating Action Button */
-        .fab-up {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--text-muted);
-            color: white;
-            border: none;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: var(--shadow-md);
-            font-size: 1.2rem;
-            text-decoration: none;
+        tr:nth-child(even) {
+            background-color: #f9fafb;
         }
 
         .footer {
             text-align: center;
-            padding: 24px;
+            padding: 25px 10px;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <header class="top-bar">
-        <button class="back-btn" onclick="history.back()">←</button>
-        <h1>Maraki Notes</h1>
+    <nav class="page-navigation">
+        <a href="english-notes.html" class="back-btn">← Back</a>
+        <a href="index.html" class="home-btn">🏠 Home</a>
+    </nav>
+
+    <header>
+        <h1>📘 English Chapter 1</h1>
+        <p>Complete Study Notes</p>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="notes-container">
+    <!-- Main Notes Content Card -->
+    <main class="card">
+        <h2>📘 Modals of Suggestion and Advice: Should, Ought to, Had better</h2>
+        
+        <h3>💡 Introduction</h3>
+        <p>These three verbs are modal verbs:</p>
+        <ul>
+            <li><strong class="highlight-purple">should</strong></li>
+            <li><strong class="highlight-purple">ought to</strong></li>
+            <li><strong class="highlight-purple">had better</strong></li>
+        </ul>
+        <p>Modal verbs are helping/auxiliary verbs that express ideas like <strong>ability</strong>, <strong>advice</strong>, and <strong>obligation</strong>.</p>
+        <p>Many modal verbs have more than one meaning. They are always followed by the <strong>simple form</strong> of a verb.</p>
+        
+        <div class="example-box">
+            💡 <strong>For example:</strong> Amanda <span class="highlight-purple">should go</span> to the doctor.<br>
+            <i>This shows that we think it is a good idea for Amanda to visit the doctor.</i>
+        </div>
 
-        <!-- Header Title Card -->
-        <section class="notes-header">
-            <h2>📗 Modals of Advice: Should, Ought to, Had Better</h2>
-            <p>English — Chapter 1 Complete Grammar Notes</p>
-        </section>
+        <h3>💬 Giving Advice in English</h3>
+        <p>English speakers use the modal verbs <strong>“should,”</strong> <strong>“ought to”</strong> and <strong>“had better”</strong> to express that they think something is a good (or a bad) idea. <strong>“Should”</strong> is the most common way to give advice.</p>
 
-        <!-- Chapter Introduction -->
-        <section class="card">
-            <h2>📖 Overview & Introduction</h2>
-            <p>Modal verbs are essential in English for expressing various ideas. The three modal verbs we focus on here are:</p>
-            <ul>
-                <li><strong>Should</strong></li>
-                <li><strong>Ought to</strong></li>
-                <li><strong>Had better</strong></li>
-            </ul>
-            <p>These modals are crucial because your exam is concerned with these three! 🎯</p>
+        <h3>📊 Look at the following examples:</h3>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Form</th>
+                        <th>Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Affirmative</strong></td>
+                        <td>
+                            • <strong>A:</strong> I failed my test.<br>
+                              <strong>B:</strong> Really? You <span class="highlight-purple">should study</span> harder.<br><br>
+                            • <strong>A:</strong> It's really cold outside.<br>
+                              <strong>B:</strong> You <span class="highlight-purple">ought to wear</span> a warm jacket.<br><br>
+                            • <strong>A:</strong> You <span class="highlight-purple">had better slow</span> down. You are driving too fast!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Negative</strong></td>
+                        <td>
+                            • Young children <span class="highlight-orange">shouldn't watch</span> violent TV shows.<br><br>
+                            • You <span class="highlight-orange">ought not to watch</span> TV before finishing your homework.<br>
+                            <i>(“ought to” is rarely used in the negative form)</i><br><br>
+                            • You <span class="highlight-orange">had better not forget</span> to pay your tuition. If you do, the university will kick you out!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Question</strong></td>
+                        <td>
+                            • <strong>A:</strong> I have a problem. <span class="highlight-blue">Should I call</span> my parents or my friend?<br><br>
+                            <i>(“ought to” is not common in question form)</i><br>
+                            <i>(“had better” is not usually used in question form)</i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="inner-box">
-                <h3>❓ What are modal verbs?</h3>
-                <p>Modal verbs are auxiliary/helping verbs that help us express ideas such as:</p>
-                <ul>
-                    <li>🔹 <strong>Ability</strong></li>
-                    <li>💡 <strong>Advice</strong></li>
-                    <li>📌 <strong>Obligation</strong></li>
-                </ul>
-                <p>Many modal verbs have more than one meaning. They are always followed by the <strong>base (simple) form</strong> of a verb.</p>
-                <p><strong>Example:</strong> Amanda <u>should go</u> to the doctor.</p>
-                <p><i>→ This sentence suggests that we think it is a good idea for Amanda to visit the doctor.</i></p>
-            </div>
-        </section>
+        <h3>⚠️ Negative Forms & Contractions</h3>
+        <p>There is a difference in the negative form as well. You can make a contraction <strong>only</strong> with the verb <i>should</i>, not the other two. Also, note the position of the word <strong>not</strong> in negative sentences. The word <i>not</i> goes after <i>should</i> and <i>had better</i> but in the middle of <i>ought to</i> ("<strong>ought not to</strong>").</p>
 
-        <!-- Modals for Advice Overview -->
-        <section class="card">
-            <h2>💡 Modals for Advice</h2>
-            <p>English speakers use the modal verbs <strong>“should,”</strong> <strong>“ought to,”</strong> and <strong>“had better”</strong> to express that they think something is a good (or a bad) idea.</p>
-            <div class="inner-box-blue">
-                <p>📌 <strong>Should</strong> is the most common way to give advice in everyday English.</p>
-            </div>
-        </section>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Negative Sentence</th>
+                        <th>Contraction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>You <strong>should not</strong> put hot water on a burn.</td>
+                        <td>You <strong class="highlight-purple">shouldn't</strong> put hot water on a burn.</td>
+                    </tr>
+                    <tr>
+                        <td>You <strong>ought not to</strong> put hot water on a burn.</td>
+                        <td><i>(There is no contraction.)</i></td>
+                    </tr>
+                    <tr>
+                        <td>You <strong>had better not</strong> put hot water on a burn.</td>
+                        <td><i>(There is no contraction.)</i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <!-- Sentence Forms Table Card -->
-        <section class="card">
-            <h2>📊 Usage Patterns & Examples</h2>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Form</th>
-                            <th>Modal / Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Affirmative</strong></td>
-                            <td>
-                                • <strong>A:</strong> I failed my test.<br>
-                                  <strong>B:</strong> Really? You <strong>should study</strong> harder.<br><br>
-                                • <strong>A:</strong> It's really cold outside.<br>
-                                  <strong>B:</strong> You <strong>ought to wear</strong> a warm jacket.<br><br>
-                                • <strong>A:</strong> You <strong>had better slow</strong> down. You are driving too fast!
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Negative</strong></td>
-                            <td>
-                                • Young children <strong>shouldn't watch</strong> violent TV shows.<br><br>
-                                • You <strong>ought not to watch</strong> TV before finishing your homework.<br>
-                                <i>(Note: “Ought to” is rarely used in the negative form)</i><br><br>
-                                • You <strong>had better not forget</strong> to pay your tuition. If you do, the university will kick you out!
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Question</strong></td>
-                            <td>
-                                • <strong>A:</strong> I have a problem. <strong>Should I call</strong> my parents or my friend?<br><br>
-                                <i>(Note: “Ought to” and “Had better” are not common in question forms)</i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <h3>🚨 Degree of Strength (Had Better as a Warning)</h3>
+        <p>These examples have the same basic advice message, but <strong>“had better”</strong> is a bit stronger. It includes the idea of a <strong>warning</strong>: something bad will happen if you do not follow my advice.</p>
+        
+        <div class="example-box">
+            💡 <strong>For example:</strong><br>
+            • You <strong class="highlight-orange">had better not forget</strong> to pay your tuition. If you forget, the university will kick you out.<br>
+            • You <strong class="highlight-orange">had better do</strong> your homework. If you do not do your homework, the teacher will give you a low mark.
+        </div>
 
-        <!-- Negative Forms & Contractions -->
-        <section class="card">
-            <h2>⚠️ Negative Forms & Contractions</h2>
-            <p>There is a distinct difference in how negative forms and contractions are made:</p>
-            <ul>
-                <li>You can make a contraction <strong>only</strong> with the verb <strong>should</strong> (<i>shouldn't</i>).</li>
-                <li>The word <strong>not</strong> goes directly after <i>should</i> and <i>had better</i>, but in the middle of <i>ought to</i> (<strong>ought not to</strong>).</li>
-            </ul>
+        <div class="case-box">
+            📌 <strong>Note:</strong> “You had better...” can be contracted to become <strong>“You'd better....”</strong> This is correct grammar, and very common in speaking.<br>
+            <i>Some native speakers say, “You better ...,” but this is incorrect. The “had” is necessary in good grammar.</i>
+        </div>
 
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Negative Sentence</th>
-                            <th>Contraction Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>You <strong>should not</strong> put hot water on a burn.</td>
-                            <td>You <strong>shouldn't</strong> put hot water on a burn. <span class="mark-correct">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>You <strong>ought not to</strong> put hot water on a burn.</td>
-                            <td><i>No contraction available.</i></td>
-                        </tr>
-                        <tr>
-                            <td>You <strong>had better not</strong> put hot water on a burn.</td>
-                            <td><i>No contraction available.</i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <h3>✳️ Sentence Patterns & Common Errors</h3>
+        <p>In the above examples, you can see that the modals are followed by the simple form of a verb in these patterns:</p>
 
-        <!-- Degree of Strength & Warning -->
-        <section class="card">
-            <h2>🔥 Understanding "Had Better" (Strength & Warning)</h2>
-            <p>While all three modals share the same basic advice message, <strong>“had better” is stronger</strong>. It includes the idea of a <strong>warning</strong>: something bad will happen if you do not follow the advice.</p>
+        <div class="case-box">
+            <strong>Subject + modal + basic verb + ...</strong><br>
+            <span class="highlight-green">✓ You should study harder.</span>
+        </div>
 
-            <div class="inner-box">
-                <p>💡 <strong>Examples of Warnings:</strong></p>
-                <ul>
-                    <li>You <strong>had better not forget</strong> to pay your tuition. If you forget, the university will kick you out!</li>
-                    <li>You <strong>had better do</strong> your homework. If you do not do your homework, the teacher will give you a low mark.</li>
-                </ul>
-            </div>
+        <ul>
+            <li>❌ <i>You should to study harder.</i> <strong>(Wrong!)</strong></li>
+            <li>❌ <i>You had better slowing down.</i> <strong>(Wrong!)</strong></li>
+            <li>❌ <i>She ought to to drink more water.</i> <strong>(Wrong!)</strong></li>
+        </ul>
 
-            <div class="inner-box-blue">
-                <p>📝 <strong>Speaking Note:</strong> “You had better...” can be contracted to <strong>“You'd better...”</strong> in common speech.</p>
-                <p>⚠️ <i>Some native speakers say, “You better ...”, but this is grammatically incorrect. The word “had” is necessary in standard English.</i></p>
-            </div>
-        </section>
+        <p><strong>Remember:</strong> “ought to” is a modal verb and is followed by a simple verb. The “to” is not an infinitive “to.”</p>
 
-        <!-- Structural Patterns -->
-        <section class="card">
-            <h2>✳️ Sentence Structure Rules</h2>
-            <p>Modals are followed directly by the <strong>simple (base) form</strong> of a verb:</p>
+        <h3>❓ Forming Questions</h3>
+        <div class="case-box">
+            <strong>Modal + subject + basic verb + ...?</strong><br>
+            <span class="highlight-blue">Should I call my parents or my friend?</span>
+        </div>
 
-            <div class="inner-box-blue">
-                <strong>Pattern:</strong> [Subject] + [modal] + [basic verb] + ...<br>
-                <strong>Correct:</strong> You <strong>should study</strong> harder.
-            </div>
+        <p><strong>WH- (information) questions</strong> can also be formed by putting the WH- question word immediately before the modal.</p>
+        
+        <div class="example-box">
+            💡 <strong>For example:</strong><br>
+            • What <span class="highlight-blue">should I do</span> about my problem?<br>
+            • Where <span class="highlight-blue">should we have</span> dinner tonight?<br>
+            • Why <span class="highlight-blue">should you believe</span> them?<br>
+            • When <span class="highlight-blue">should they call</span> their boss?
+        </div>
 
-            <p><strong>Common Grammatical Errors to Avoid:</strong></p>
-            <ul>
-                <li>You <u>should to study</u> harder. <span class="mark-wrong">❌ Wrong!</span></li>
-                <li>You <u>had better slowing</u> down. <span class="mark-wrong">❌ Wrong!</span></li>
-                <li>She <u>ought to to drink</u> more water. <span class="mark-wrong">❌ Wrong!</span></li>
-            </ul>
+        <h3>📌 Summary</h3>
+        
+        <h3>1. Should – my opinion</h3>
+        <ul>
+            <li>You <strong>should finish</strong> your homework before you go out.</li>
+            <li>The builders <strong>should have finished</strong> by the end of the week.</li>
+        </ul>
 
-            <p>📌 <i>Remember that in “ought to,” the “to” is part of the modal verb itself and is not an infinitive “to.”</i></p>
+        <h3>2. Should – in wh-questions</h3>
+        <ul>
+            <li>Who <strong>should I pass</strong> the message to?</li>
+            <li>What <strong>should I do</strong> if I have any problems?</li>
+        </ul>
 
-            <h3>❓ Question Structure Rules</h3>
-            <div class="inner-box">
-                <strong>Pattern:</strong> [Modal] + [subject] + [basic verb] + ...?<br>
-                <strong>Example:</strong> <strong>Should I call</strong> my parents or my friend?
-            </div>
+        <h3>3. Should – giving advice to myself</h3>
+        <ul>
+            <li>I <strong>should read</strong> the script on the train tomorrow but I know that I'll be too tired.</li>
+            <li>I <strong>should wash</strong> my hair tonight, I haven't washed it for a week!</li>
+        </ul>
 
-            <p><strong>WH- (Information) Questions:</strong> Place the WH- word immediately before the modal.</p>
-            <ul>
-                <li><strong>What should I do</strong> about my problem?</li>
-                <li><strong>Where should we have</strong> dinner tonight?</li>
-                <li><strong>Why should you believe</strong> them?</li>
-                <li><strong>When should they call</strong> their boss?</li>
-            </ul>
-        </section>
+        <h3>4. Ought to – obligation</h3>
+        <ul>
+            <li>You <strong>ought to finish</strong> your homework before you go out. <i>(it is your obligation)</i></li>
+            <li>The builders <strong>ought to have finished</strong> by the end of the week. <i>(it is their obligation, contract limit)</i></li>
+        </ul>
 
-        <!-- Key Summary Breakdown -->
-        <section class="card">
-            <h2>📌 Quick Reference Summary</h2>
-
-            <h3>💡 Should — My Opinion & Personal Advice</h3>
-            <ul>
-                <li>You <strong>should finish</strong> your homework before you go out.</li>
-                <li>The builders <strong>should have finished</strong> by the end of the week.</li>
-                <li><strong>Who should I pass</strong> the message to? <i>(in WH- questions)</i></li>
-                <li><strong>What should I do</strong> if I have any problems?</li>
-                <li>I <strong>should read</strong> the script on the train tomorrow but I know that I'll be too tired. <i>(giving advice to myself)</i></li>
-                <li>I <strong>should wash</strong> my hair tonight, I haven't washed it for a week!</li>
-            </ul>
-
-            <h3>📜 Ought to — Obligation & Expectation</h3>
-            <ul>
-                <li>You <strong>ought to finish</strong> your homework before you go out. <i>(It is your obligation)</i></li>
-                <li>The builders <strong>ought to have finished</strong> by the end of the week. <i>(It is their obligation / contract limit)</i></li>
-            </ul>
-
-            <h3>🚨 Had better — Urgency, Demand, Threat & Worry</h3>
-            <ul>
-                <li>There's someone moving about downstairs. We <strong>had better call</strong> the police, quickly!</li>
-                <li>He <strong>had better not be</strong> late again or he'll be in trouble.</li>
-                <li>Damn. It is pouring down. We <strong>had better get</strong> a taxi or we'll get soaked.</li>
-            </ul>
-        </section>
+        <h3>5. Had better – urgency, demand, threat, worry</h3>
+        <ul>
+            <li>There's someone moving about downstairs. We <strong>had better call</strong> the police, quickly.</li>
+            <li>He <strong>had better not be</strong> late again or he'll be in trouble.</li>
+            <li>Damn. It is pouring down. We <strong>had better get</strong> a taxi or we'll get soaked.</li>
+        </ul>
 
         <!-- Practice Exercise Section -->
-        <section class="card">
-            <h2>🎯 Practice Exercise 1</h2>
-            <p>Complete each sentence with an appropriate modal (<i>should, ought to, had better</i>):</p>
-            <ol>
-                <li>My teacher told me that I <span class="fill-blank">should / ought to</span> review my notes every day. I guess it's a good idea to look at them after class.</li>
-                <li>Do you think Carol <span class="fill-blank">should</span> save her money or spend it? She is planning to go to Europe this summer.</li>
-                <li>I'm going to a party tonight. What <span class="fill-blank">should</span> I wear: a dress or black pants?</li>
-                <li>Our car's gas tank is almost empty. We <span class="fill-blank">had better</span> fill it up with gas soon or we will run out of gas!</li>
-                <li>If you are worried about getting fat, you <span class="fill-blank">shouldn't</span> eat at McDonald's every day. You <span class="fill-blank">should / ought to</span> eat healthy, low-fat foods like fruits and vegetables.</li>
-                <li>It's really raining outside right now. I <span class="fill-blank">had better not</span> forget my umbrella or I'll get wet!</li>
-                <li>Where <span class="fill-blank">should</span> we have lunch today: at home or in a restaurant?</li>
-                <li>My doctor feels that I <span class="fill-blank">should / ought to</span> exercise more because I'm out of shape and want to lose weight. I think he's right.</li>
-            </ol>
-        </section>
+        <h2>🎯 Practice Exercise 1</h2>
+        <p>Complete each sentence with an appropriate modal.</p>
+        
+        <ol>
+            <li>
+                <strong>Question 1:</strong> My teacher told me that I _________ review my notes every day. I guess it's a good idea to look at them after class.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> should / ought to
+                </div>
+            </li>
 
-        <!-- Telegram Link Container -->
-        <section class="resource-box">
-            <h3>📢 Official Telegram Channel</h3>
-            <p>Get the latest notes, quizzes, announcements, and study materials from Unique Academic.</p>
-            <a href="#" target="_blank">Join Official Channel</a>
-        </section>
+            <li>
+                <strong>Question 2:</strong> Do you think Carol _________ save her money or spend it? She is planning to go to Europe this summer.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> should
+                </div>
+            </li>
 
-        <!-- Feedback Section -->
-        <section class="resource-box">
-            <h3>💬 Feedback</h3>
-            <p>Found an error or have a suggestion? Send us your feedback.</p>
-            <a href="#" target="_blank">Send Feedback</a>
-        </section>
+            <li>
+                <strong>Question 3:</strong> I'm going to a party tonight. What _________ I wear: a dress or black pants?
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> should
+                </div>
+            </li>
 
+            <li>
+                <strong>Question 4:</strong> Our car's gas tank is almost empty. We _________ fill it up with gas soon or we will run out of gas!
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> had better
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 5:</strong> If you are worried about getting fat, you _________ eat at McDonald's every day. You _________ eat healthy, low-fat foods like fruits and vegetables.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> shouldn't / had better not | should / ought to
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 6:</strong> It's really raining outside right now. I _________ forget my umbrella or I'll get wet!
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> had better not
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 7:</strong> Where _________ we have lunch today: at home or in a restaurant?
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> should
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 8:</strong> My doctor feels that I _________ exercise more because I'm out of shape and want to lose weight. I think he's right.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> should / ought to
+                </div>
+            </li>
+        </ol>
     </main>
 
-    <!-- Floating Scroll-to-Top Button -->
-    <a href="#" class="fab-up">↑</a>
-
-    <!-- Footer -->
     <footer class="footer">
-        📘 English Chapter 1 Complete Notes <br>
-        📚 Unique Academic — Maraki Notes Design System
+        📘 English Chapter 1 <br>
+        📚 Unique Academic — Complete Study Notes
     </footer>
 
-    <!-- Access Protection -->
-    <script type="module" src="access-guard.js"></script>
 </body>
 </html>
