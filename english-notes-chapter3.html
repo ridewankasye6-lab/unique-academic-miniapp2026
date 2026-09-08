@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English 1 Chapter 3 | Complete Study Notes</title>
+    <style>
+        /* =================================================
+           UNIQUE ACADEMIC
+           ENGLISH 1 — CHAPTER 3 NOTES
+        ================================================= */
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* =================================================
+           TOP NAVIGATION
+        ================================================= */
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        /* =================================================
+           PAGE HEADER
+        ================================================= */
+        header {
+            background: linear-gradient(135deg, #6b21a8, #4c1d95);
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        /* =================================================
+           NOTE CARD
+        ================================================= */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        /* =================================================
+           HEADINGS
+        ================================================= */
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 0.98rem;
+            color: var(--primary-purple);
+            margin: 10px 0 6px 0;
+        }
+
+        /* =================================================
+           TEXT
+        ================================================= */
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* =================================================
+           HIGHLIGHT TEXT
+        ================================================= */
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        /* =================================================
+           SPECIAL BOXES
+        ================================================= */
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .success-box {
+            background-color: #ecfdf5;
+            border-left: 4px solid var(--accent-green);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .answer-box {
+            background-color: #ecfdf5;
+            border-left: 4px solid var(--accent-green);
+            padding: 8px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 6px 0 14px 0;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        /* =================================================
+           TABLE
+        ================================================= */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        /* =================================================
+           DIAGRAM / IMAGE
+        ================================================= */
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* =================================================
+           FOOTER
+        ================================================= */
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            line-height: 1.7;
+        }
+
+        /* =================================================
+           MOBILE RESPONSIVE
+        ================================================= */
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .page-navigation a {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+
+            header {
+                padding: 20px 14px;
+                border-radius: 16px;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            .card {
+                padding: 17px 14px;
+                border-radius: 15px;
+            }
+
+            h2 {
+                font-size: 1.15rem;
+            }
+
+            p, ul, ol {
+                font-size: 0.93rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            body {
+                padding: 10px;
+            }
+
+            .page-navigation {
+                gap: 8px;
+            }
+
+            .page-navigation a {
+                padding: 9px 12px;
+                font-size: 13px;
+            }
+
+            header h1 {
+                font-size: 1.3rem;
+            }
+
+            header p {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP NAVIGATION -->
+<div class="page-navigation">
+    <a href="english1-notes.html" class="back-btn">← Back</a>
+    <a href="index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<!-- CHAPTER HEADER -->
+<header>
+    <h1>📘 English 1 — Chapter 3</h1>
+    <p>Complete Study Notes — Conditional Sentences (If-Clauses)</p>
+</header>
+
+<section>
+
+    <!-- LESSON INTRODUCTION -->
+    <div class="card">
+        <h2>📖 Lesson: Conditional Sentences (If-Clauses) for Beginners</h2>
+        
+        <h3>🤔 What is a Conditional Sentence?</h3>
+        <p>A conditional sentence tells us what happens (or might happen) if something else happens.</p>
+        
+        <p>It often has two parts:</p>
+        <ol>
+            <li><strong class="highlight-purple">If-clause (condition)</strong> → shows the “if” part</li>
+            <li><strong class="highlight-purple">Main clause (result)</strong> → shows the result or consequence</li>
+        </ol>
+
+        <div class="example-box">
+            💡 <strong>Example:</strong><br>
+            If it rains, we will stay at home.<br>
+            • <i>“If it rains”</i> = the condition<br>
+            • <i>“We will stay at home”</i> = the result
+        </div>
+
+        <p>There are <strong>4 main types</strong> of Conditional Sentences:</p>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>0</strong></td>
+                        <td>Zero Conditional</td>
+                        <td>Always true / Facts</td>
+                        <td>If you heat water to 100°C, it boils.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>First Conditional</td>
+                        <td>Real and possible future</td>
+                        <td>If it rains, I will take an umbrella.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Second Conditional</td>
+                        <td>Unreal or imaginary present/future</td>
+                        <td>If I had a car, I would drive to work.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>Third Conditional</td>
+                        <td>Unreal past (regret or imagination)</td>
+                        <td>If I had studied, I would have passed the test.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- TYPE 0 -->
+    <div class="card">
+        <h2>🔬 Type 0 – Zero Conditional</h2>
+        
+        <p><strong>Meaning:</strong> We use it for facts, truths, or things that always happen.</p>
+        
+        <div class="case-box">
+            <strong>⚙️ Structure:</strong><br>
+            If + Present Simple, Present Simple
+        </div>
+
+        <h3>🗣 Example Sentences:</h3>
+        <ul>
+            <li>• If you heat ice, it melts.</li>
+            <li>• If I drink coffee at night, I can’t sleep.</li>
+            <li>• Plants die if they don’t get water.</li>
+        </ul>
+
+        <div class="success-box">
+            📌 <strong>Tip:</strong><br>
+            You can replace “if” with “when” because it’s always true:<br>
+            → <i>When you heat ice, it melts.</i>
+        </div>
+    </div>
+
+    <!-- TYPE 1 -->
+    <div class="card">
+        <h2>🌤 Type 1 – First Conditional</h2>
+        
+        <p><strong>Meaning:</strong> We use it for real or possible situations in the future.</p>
+        
+        <div class="case-box">
+            <strong>⚙️ Structure:</strong><br>
+            If + Present Simple, will + Base Verb
+        </div>
+
+        <h3>🗣 Example Sentences:</h3>
+        <ul>
+            <li>• If it rains tomorrow, I will stay home.</li>
+            <li>• If I study hard, I will pass the exam.</li>
+            <li>• If you hurry, you will catch the bus.</li>
+        </ul>
+
+        <div class="success-box">
+            📌 <strong>Tip:</strong><br>
+            Think of it as a real possibility.
+        </div>
+    </div>
+
+    <!-- TYPE 2 -->
+    <div class="card">
+        <h2>💭 Type 2 – Second Conditional</h2>
+        
+        <p><strong>Meaning:</strong> We use it for unreal or imaginary situations in the present or future.</p>
+        
+        <div class="case-box">
+            <strong>⚙️ Structure:</strong><br>
+            If + Past Simple, would + Base Verb
+        </div>
+
+        <h3>🗣 Example Sentences:</h3>
+        <ul>
+            <li>• If I had wings, I would fly.</li>
+            <li>• If I won the lottery, I would buy a big house.</li>
+            <li>• If he were taller, he would play basketball.</li>
+        </ul>
+
+        <div class="success-box">
+            📌 <strong>Tip:</strong><br>
+            We use “were” for all subjects (I/he/she/it).<br>
+            → <i>“If I were you, I would study more.”</i> (correct!)
+        </div>
+    </div>
+
+    <!-- TYPE 3 -->
+    <div class="card">
+        <h2>🌧 Type 3 – Third Conditional</h2>
+        
+        <p><strong>Meaning:</strong> We use it for unreal situations in the past — to express regret or imagine a different past.</p>
+        
+        <div class="case-box">
+            <strong>⚙️ Structure:</strong><br>
+            If + Past Perfect, would have + Past Participle
+        </div>
+
+        <h3>🗣 Example Sentences:</h3>
+        <ul>
+            <li>• If I had studied, I would have passed the test.</li>
+            <li>• If they had left earlier, they would have caught the train.</li>
+            <li>• If we had known, we would have come.</li>
+        </ul>
+
+        <div class="success-box">
+            📌 <strong>Tip:</strong><br>
+            Think: <i>“It didn’t happen, but I wish it did.”</i>
+        </div>
+    </div>
+
+    <!-- BONUS -->
+    <div class="card">
+        <h2>🎁 Bonus: Mixed Conditionals (Advanced – optional)</h2>
+        
+        <p>Sometimes we mix time frames, e.g.:</p>
+        <div class="example-box">
+            💡 <strong>Example:</strong><br>
+            • If I had studied (past), I would be a doctor now (present).
+        </div>
+        <p>This is called a mixed conditional, but beginners can skip it for now.</p>
+    </div>
+
+    <!-- SUMMARY TABLE -->
+    <div class="card">
+        <h2>📊 Summary Table</h2>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>When We Use It</th>
+                        <th>Structure</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zero</strong></td>
+                        <td>Facts / Truths</td>
+                        <td>If + Present, Present</td>
+                        <td>If you heat ice, it melts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>First</strong></td>
+                        <td>Possible Future</td>
+                        <td>If + Present, will + Verb</td>
+                        <td>If it rains, I will stay home.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Second</strong></td>
+                        <td>Unreal Present/Future</td>
+                        <td>If + Past, would + Verb</td>
+                        <td>If I had a car, I would drive.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Third</strong></td>
+                        <td>Unreal Past</td>
+                        <td>If + Past Perfect, would have + Past Participle</td>
+                        <td>If I had studied, I would have passed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- QUIZ SECTION -->
+    <div class="card">
+        <h2>📝 QUIZ – Conditional Sentences</h2>
+        <p>Choose the correct answer or fill in the blanks.</p>
+
+        <h3>Part A – Multiple Choice (1–10)</h3>
+        <p>Choose the correct option.</p>
+
+        <ol>
+            <li>
+                <strong>1. If water reaches 0°C, it ______.</strong><br>
+                a) freezes<br>
+                b) froze<br>
+                c) will freeze
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> a) freezes
+                </div>
+            </li>
+
+            <li>
+                <strong>2. If it rains tomorrow, we ______ at home.</strong><br>
+                a) stay<br>
+                b) stayed<br>
+                c) will stay
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> c) will stay
+                </div>
+            </li>
+
+            <li>
+                <strong>3. If I ______ you, I would apologize.</strong><br>
+                a) am<br>
+                b) were<br>
+                c) was
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> b) were
+                </div>
+            </li>
+
+            <li>
+                <strong>4. If they had studied harder, they ______ the exam.</strong><br>
+                a) will pass<br>
+                b) would pass<br>
+                c) would have passed
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> c) would have passed
+                </div>
+            </li>
+
+            <li>
+                <strong>5. If you heat ice, it ______.</strong><br>
+                a) melt<br>
+                b) melts<br>
+                c) melted
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> b) melts
+                </div>
+            </li>
+
+            <li>
+                <strong>6. If she ______ earlier, she will catch the bus.</strong><br>
+                a) leaves<br>
+                b) left<br>
+                c) had left
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> a) leaves
+                </div>
+            </li>
+
+            <li>
+                <strong>7. If I won a million dollars, I ______ a new house.</strong><br>
+                a) will buy<br>
+                b) would buy<br>
+                c) bought
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> b) would buy
+                </div>
+            </li>
+
+            <li>
+                <strong>8. If I had known about the meeting, I ______.</strong><br>
+                a) come<br>
+                b) would come<br>
+                c) would have come
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> c) would have come
+                </div>
+            </li>
+
+            <li>
+                <strong>9. If the weather is nice, we ______ a picnic.</strong><br>
+                a) will have<br>
+                b) would have<br>
+                c) have had
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> a) will have
+                </div>
+            </li>
+
+            <li>
+                <strong>10. If I don’t eat breakfast, I ______ hungry.</strong><br>
+                a) am<br>
+                b) was<br>
+                c) will be
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> c) will be
+                </div>
+            </li>
+        </ol>
+
+        <h3>Part B – Fill in the blanks (11–15)</h3>
+
+        <ol start="11">
+            <li>
+                <strong>11. If you ______ (study) more, you will pass the exam.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> study
+                </div>
+            </li>
+
+            <li>
+                <strong>12. Plants die if they ______ (not / get) enough water.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> don't get
+                </div>
+            </li>
+
+            <li>
+                <strong>13. If I ______ (be) you, I would call her.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> were
+                </div>
+            </li>
+
+            <li>
+                <strong>14. If we ______ (leave) earlier, we would have caught the bus.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> had left
+                </div>
+            </li>
+
+            <li>
+                <strong>15. If it ______ (rain), I will stay home.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> rains
+                </div>
+            </li>
+        </ol>
+
+        <h3>Part C – Identify the Type (16–20)</h3>
+        <p>Write Zero, First, Second, or Third.</p>
+
+        <ol start="16">
+            <li>
+                <strong>16. If you mix red and blue, you get purple.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> Zero
+                </div>
+            </li>
+
+            <li>
+                <strong>17. If I had wings, I would fly.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> Second
+                </div>
+            </li>
+
+            <li>
+                <strong>18. If it rains tomorrow, we will stay home.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> First
+                </div>
+            </li>
+
+            <li>
+                <strong>19. If I had studied harder, I would have passed.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> Third
+                </div>
+            </li>
+
+            <li>
+                <strong>20. If you heat water, it boils.</strong>
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> Zero
+                </div>
+            </li>
+        </ol>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    📘 English 1 — Chapter 3<br>
+    📚 Unique Academic — Complete Study Notes
+</footer>
+
+<!-- ACCESS GUARD -->
+<script type="module" src="access-guard.js"></script>
+
+</body>
+</html>
