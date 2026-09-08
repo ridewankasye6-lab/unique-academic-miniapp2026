@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Chapter 2 | Complete Study Notes</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-purple: #6b21a8;
+            --accent-green: #047857;
+            --accent-orange: #c2410c;
+            --accent-blue: #1d4ed8;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 12px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+
+        .page-navigation a {
+            text-decoration: none;
+            border-radius: 12px;
+            padding: 10px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            transition: 0.2s ease;
+        }
+
+        .page-navigation a:active {
+            transform: scale(0.96);
+        }
+
+        .back-btn {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .home-btn {
+            background-color: white;
+            color: var(--primary-purple);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, #6b21a8, #4c1d95);
+            color: white;
+            padding: 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-purple);
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f3e8ff;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 12px 0 8px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .highlight-blue {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .example-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .case-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .answer-box {
+            background-color: #ecfdf5;
+            border-left: 4px solid var(--accent-green);
+            padding: 8px 12px;
+            border-radius: 0 8px 8px 0;
+            margin: 6px 0 14px 0;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .diagram-container {
+            width: 100%;
+            text-align: center;
+            margin: 14px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f3e8ff;
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-navigation">
+    <a href="english1-notes.html" class="back-btn">← Back</a>
+    <a href="index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<header>
+    <h1>📘 English Chapter 2</h1>
+    <p>Complete Study Notes — Comprehensive Guide to Tenses</p>
+</header>
+
+<section>
+
+    <!-- Overview Card -->
+    <div class="card">
+        <h2>⏳ Tenses Overview</h2>
+        <p>Tenses denote the time of action. They show when the work is done. They are:</p>
+        <ol>
+            <li><strong class="highlight-purple">Present Tense</strong></li>
+            <li><strong class="highlight-purple">Past Tense</strong></li>
+            <li><strong class="highlight-purple">Future Tense</strong></li>
+        </ol>
+    </div>
+
+    <!-- PRESENT TENSE -->
+    <div class="card">
+        <h2>🌞 Present Tense</h2>
+
+        <h3>1. Simple Present Tense</h3>
+        <p>It is used to denote scientific facts, universal truths and work done on daily basis.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Sub + V1 + s/es + Object<br>
+            • <strong>Negative:</strong> Sub + does not + V1 + s/es + Object<br>
+            • <strong>Interrogative:</strong> Does + Sub + V1 + s/es + Object<br>
+            • <strong>Interrogative Negative Assertive:</strong> Does + Sub + not + V1 + s/es + Object
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • <i>Assertive:</i> She writes a letter.<br>
+            • <i>Negative:</i> She does not write a letter.<br>
+            • <i>Interrogative:</i> Does she write a letter?<br>
+            • <i>Interrogative Negative:</i> Does she not write a letter?
+        </div>
+
+        <h3>2. Present Continuous Tense</h3>
+        <p>It is used to express an action taking place at the time of speaking.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Sub + is/am/are + V1 + ing + Object<br>
+            • <strong>Negative:</strong> Sub + is/am/are + not + V1 + ing + Object<br>
+            • <strong>Interrogative:</strong> Is/am/are + Sub + V1 + ing + Object<br>
+            • <strong>Interrogative Negative:</strong> Is/am/are + Sub + not + V1 + ing + Object
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • <i>Assertive:</i> She is writing a letter.<br>
+            • <i>Negative:</i> She is not writing a letter.<br>
+            • <i>Interrogative:</i> Is she writing a letter?<br>
+            • <i>Interrogative Negative:</i> Is she not writing a letter?
+        </div>
+
+        <h3>3. Present Perfect Tense</h3>
+        <p>It is used to show an action that started in the past and has just finished.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Sub + has/have + V3 + Object<br>
+            • <strong>Negative:</strong> Sub + has/have + not + V3 + Object<br>
+            • <strong>Interrogative:</strong> Has/have + Sub + V3 + Object<br>
+            • <strong>Interrogative Negative:</strong> Has/have + Sub + not + V3 + Object
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • <i>Assertive:</i> She has written a letter.<br>
+            • <i>Negative:</i> She has not written a letter.<br>
+            • <i>Interrogative:</i> Has she written a letter?<br>
+            • <i>Interrogative Negative:</i> Has she not written a letter?
+        </div>
+
+        <h3>4. Present Perfect Continuous Tense</h3>
+        <p>This tense shows the action which started in the past and is still continuing.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Sub + has/have + been + V1 + ing + Object<br>
+            • <strong>Negative:</strong> Sub + has/have + not been + V1 + ing + Object<br>
+            • <strong>Interrogative:</strong> Has/have + Sub + been + V1 + ing + Object<br>
+            • <strong>Interrogative Negative:</strong> Has/have + Sub + not + been + V1 + ing + Object
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • <i>Assertive:</i> She has been writing a letter.<br>
+            • <i>Negative:</i> She has not been writing a letter.<br>
+            • <i>Interrogative:</i> Has she been writing a letter?<br>
+            • <i>Interrogative Negative:</i> Has she not been writing a letter?
+        </div>
+    </div>
+
+    <!-- PAST TENSE -->
+    <div class="card">
+        <h2>📜 Past Tense</h2>
+        <p>Tense symbolizes the ever moving, non-stop wheel of time which is forever busy gathering moments of future and throwing them into the dustbin of past.</p>
+
+        <h3>1. Simple Past Tense</h3>
+        <p>Used to indicate an action completed in the past. It often occurs with an adverb of time, but sometimes without. Also used for past habits.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + V2 + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + didn’t + V1 + Object + (.)<br>
+            • <strong>Interrogative:</strong> Did + Subject + V1 + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Did + Subject + not + V1 + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • I played football when I was a child.<br>
+            • <i>Assertive:</i> She wrote a letter.<br>
+            • <i>Negative:</i> She didn’t write a letter.<br>
+            • <i>Interrogative:</i> Did she write a letter?<br>
+            • <i>Interrogative Negative:</i> Did she not write a letter?
+        </div>
+
+        <h3>2. Past Continuous Tense</h3>
+        <p>Used to denote an action going on at some time in the past.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + was/were + V1 + ing + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + was/were + not + ing + Object + (.)<br>
+            • <strong>Interrogative:</strong> Was/were + Subject + ing + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Was/were + Subject + not + ing + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • I was driving a car.<br>
+            • <i>Assertive:</i> She was writing a letter.<br>
+            • <i>Negative:</i> She was not writing a letter.<br>
+            • <i>Interrogative:</i> Was she writing a letter?<br>
+            • <i>Interrogative Negative:</i> Was she not writing a letter?
+        </div>
+
+        <h3>3. Past Perfect Tense</h3>
+        <p>Used to describe an action completed before a certain moment in the past, usually a long time ago. If two actions happened in the past, past perfect is used to show the action that took place earlier.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + had + V3 + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + had + not + Object + (.)<br>
+            • <strong>Interrogative:</strong> Had + Subject + V3 + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Had + Subject + not + V3 + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • The patient had died before the doctor came.<br>
+            • <i>Assertive:</i> She had written a letter.<br>
+            • <i>Negative:</i> She had not written a letter.<br>
+            • <i>Interrogative:</i> Had she written a letter?<br>
+            • <i>Interrogative Negative:</i> Had she not written a letter?
+        </div>
+
+        <h3>4. Past Perfect Continuous Tense</h3>
+        <p>Used to denote an action that began before a certain point in the past and continued up to some time in past.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + had been + V1 + ing + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + had + not been + V1 + ing + Object + (.)<br>
+            • <strong>Interrogative:</strong> Had + Subject + been + V1 + ing + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Had + Subject + not + been + V1 + ing + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • I had been learning English in this school for 20 days.<br>
+            • <i>Assertive:</i> She had been writing a letter.<br>
+            • <i>Negative:</i> She had not been writing a letter.<br>
+            • <i>Interrogative:</i> Had she been writing a letter?<br>
+            • <i>Interrogative Negative:</i> Had she not been writing a letter?
+        </div>
+    </div>
+
+    <!-- FUTURE TENSE -->
+    <div class="card">
+        <h2>🚀 Future Tense</h2>
+        <p>Time and tide wait for no man. So, a period of time following the moment of speaking or writing is called future tense.</p>
+        <div class="case-box">
+            📌 <strong>Usage Note for Shall/Will:</strong><br>
+            • In Future Tense, helping verb 'Shall' is used with 'I' and 'We'. Helping verb 'Will' is used with all others.<br>
+            • When you are to make a commitment or warn someone or emphasize something, use of 'will/shall' is reversed. 'Will' is used with 'I' & 'We' and 'shall' is used with others.<br>
+            • In general speaking there is hardly any difference between 'shall & will' and normally 'Will' is used with all.
+        </div>
+
+        <h3>1. Simple Future Tense</h3>
+        <p>Tells us about an action which has not occurred yet and will occur after saying or in future.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + Will/Shall + Verb (1st form) + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + Will/Shall + Not + Verb (1st form) + Object + (.)<br>
+            • <strong>Interrogative:</strong> Will/Shall + Subject + Verb (1st form) + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Will/Shall + Subject + Not + Verb (1st form) + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • <i>Assertive:</i> She will write a letter.<br>
+            • <i>Negative:</i> She will not write a letter.<br>
+            • <i>Interrogative:</i> Will she write a letter?<br>
+            • <i>Interrogative Negative:</i> Will she not write a letter?
+        </div>
+
+        <h3>2. Future Continuous Tense</h3>
+        <p>Used to express an ongoing or continued action in future. We use it to talk about something that will be in progress at or around a time in the future.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + Will/Shall + Be + Verb (1st form) + Ing + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + Will/Shall + Not + Be + Verb (1st form) + Ing + Object + (.)<br>
+            • <strong>Interrogative:</strong> Will/Shall + Subject + Be + Verb (1st form) + Ing + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Will/Shall + Subject + Not + Be + Verb (1st form) + Ing + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • He will be distributing sweets in temple tomorrow at 12 o'clock.<br>
+            • They will be staying for a week.<br>
+            • <i>Assertive:</i> She will be writing a letter.<br>
+            • <i>Negative:</i> She will not be writing a letter.<br>
+            • <i>Interrogative:</i> Will she be writing a letter?<br>
+            • <i>Interrogative Negative:</i> Will she not be writing a letter?
+        </div>
+
+        <h3>3. Future Perfect Tense</h3>
+        <p>Used to express an action which will happen/occur in future and will be completed by a certain time in future.</p>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + Will/Shall + Have + Verb (3rd form) + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + Will/Shall + Not + Have + Verb (3rd form) + Object + (.)<br>
+            • <strong>Interrogative:</strong> Will/Shall + Subject + Have + Verb (3rd form) + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Will/Shall + Subject + Not + Have + Verb (3rd form) + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • They will have shifted the house by Sunday morning.<br>
+            • <i>Assertive:</i> She will have written a letter.<br>
+            • <i>Negative:</i> She will not have written a letter.<br>
+            • <i>Interrogative:</i> Will she have written a letter?<br>
+            • <i>Interrogative Negative:</i> Will she not have written a letter?
+        </div>
+
+        <h3>4. Future Perfect Continuous Tense</h3>
+        <p>Used to talk about actions that will commence at a fix time in future and will continue for some time in future. Emphasizes the duration of an activity that will be in progress before another time or event in the future.</p>
+        <div class="case-box">
+            <strong>⚠️ Crucial Rule:</strong> If there is no time reference, then it is not a Future perfect continuous tense. Without continued time reference, such sentences are Future Continuous Tense.
+        </div>
+        <div class="case-box">
+            <strong>⚙️ Structural Rules:</strong><br>
+            • <strong>Assertive:</strong> Subject + Will/Shall + Have been + Verb (1st form) + Ing + Object + (.)<br>
+            • <strong>Negative:</strong> Subject + Will/Shall + Not + Have been + Verb (1st form) + Ing + Object + (.)<br>
+            • <strong>Interrogative:</strong> Will/Shall + Subject + Have been + Verb (1st form) + Ing + Object + (?)<br>
+            • <strong>Interrogative Negative:</strong> Will/Shall + Subject + Not + Have been + Verb (1st form) + Ing + Object + (?)
+        </div>
+        <div class="example-box">
+            💡 <strong>Examples:</strong><br>
+            • This time tomorrow, I will be enjoying the cricket match in the stadium.<br>
+            • <i>Assertive:</i> She will have been writing a letter.<br>
+            • <i>Negative:</i> She will not have been writing a letter.<br>
+            • <i>Interrogative:</i> Will she have been writing a letter?<br>
+            • <i>Interrogative Negative:</i> Will she not have been writing a letter?
+        </div>
+    </div>
+
+    <!-- UNIVERSITY LEVEL PRACTICE EXERCISES -->
+    <div class="card">
+        <h2>🎯 University Level Mixed Tenses Practice</h2>
+        <p>Test your knowledge with these 10 advanced, mixed-tense examination questions. Answers are provided directly below each item.</p>
+
+        <ol>
+            <li>
+                <strong>Question 1:</strong> By the time the supreme court judge ____________ (deliver) the final verdict tomorrow, the jury ____________ (deliberate) for over forty hours continuous.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> delivers | will have been deliberating<br>
+                    <i>Explanation: Time clause takes Simple Present ("delivers"), while the main clause requires Future Perfect Continuous to emphasize duration before a future point.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 2:</strong> While the researchers ____________ (analyze) the empirical data last night, a system crash suddenly ____________ (wipe) out the unbacked server files.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> were analyzing | wiped<br>
+                    <i>Explanation: Past Continuous for an ongoing past action interrupted by a completed action in Simple Past.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 3:</strong> Water ____________ (freeze) at 0 degrees Celsius under standard atmospheric pressure, regardless of geographic location.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> freezes<br>
+                    <i>Explanation: Simple Present Tense used to denote universal truths and scientific facts.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 4:</strong> Professor Aberra ____________ (publish) three landmark studies on constitutional reform since he joined the university faculty in 2018.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> has published<br>
+                    <i>Explanation: Present Perfect Tense used for an action that began in the past and continues to have relevance in the present (marked by "since").</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 5:</strong> The defense attorney claimed that his client ____________ (leave) the country two days before the alleged incident ____________ (take) place.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> had left | took<br>
+                    <i>Explanation: Past Perfect Tense ("had left") denotes the earlier of two completed past actions.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 6:</strong> At this precise moment, the parliamentarians ____________ (debate) the draft fiscal policy bill in the main assembly hall.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> are debating<br>
+                    <i>Explanation: Present Continuous Tense used for an action occurring right at the moment of speaking.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 7:</strong> By next December, our academic platform ____________ (reach) over one hundred thousand active student users nationwide.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> will have reached<br>
+                    <i>Explanation: Future Perfect Tense used for an action that will be completed prior to a specified future deadline ("By next December").</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 8:</strong> Prior to her modern research presentation yesterday, the keynote speaker ____________ (rehearse) her theoretical framework for weeks.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> had been rehearsing<br>
+                    <i>Explanation: Past Perfect Continuous Tense highlights an ongoing activity in progress up to a specific past moment.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 9:</strong> I strictly promise that I ____________ (submit) the finalized legal draft to your desk first thing tomorrow morning.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> will submit<br>
+                    <i>Explanation: Simple Future Tense using "will" expresses a strong personal commitment or promise.</i>
+                </div>
+            </li>
+
+            <li>
+                <strong>Question 10:</strong> Why ____________ you ____________ (look) so exhausted right now? — Because I ____________ (study) non-stop since dawn.
+                <div class="answer-box">
+                    ✅ <strong>Answer:</strong> do... look | have been studying<br>
+                    <i>Explanation: Simple Present state query paired with Present Perfect Continuous for an action started in the past whose continuous duration explains a present condition.</i>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+</section>
+
+<footer class="footer">
+    📘 English Chapter 2 <br>
+    📚 Unique Academic — Complete Study Notes
+</footer>
+
+<script type="module" src="access-guard.js"></script>
+
+</body>
+</html>
