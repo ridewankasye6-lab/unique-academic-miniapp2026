@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -10,272 +11,471 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>📜 History | Complete Course Notes</title>
+    <title>📜 History | Full Notes</title>
+
 
     <style>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        /* =================================================
+           UNIQUE ACADEMIC
+           HISTORY FULL NOTES HOME
+        ================================================= */
+
+        :root {
+
+            --bg-color: #f3f4f6;
+
+            --card-bg: #ffffff;
+
+            --text-main: #1f2937;
+
+            --text-muted: #4b5563;
+
+            --primary-purple: #64229b;
+
+            --primary-dark: #4c1d7a;
+
+            --border-color: #ded7e6;
+
+            --shadow:
+                0 4px 12px rgba(0, 0, 0, 0.08),
+                0 2px 5px rgba(0, 0, 0, 0.04);
+
         }
+
+
+        /* =================================================
+           RESET
+        ================================================= */
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
 
         body {
+
             font-family:
-                Arial,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
                 Helvetica,
+                Arial,
                 sans-serif;
-            background: #f4f5f9;
-            color: #222;
-            line-height: 1.6;
-        }
 
-        .container {
-            width: 100%;
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f5f6 0%,
+                    #eef0f4 100%
+                );
+
+            color: var(--text-main);
+
+            line-height: 1.5;
+
+            padding: 18px;
+
             max-width: 700px;
-            margin: auto;
-            padding: 15px;
+
+            margin: 0 auto;
+
+            min-height: 100vh;
+
         }
 
 
         /* =================================================
-           NAVIGATION
+           TOP NAVIGATION
         ================================================= */
 
-        .page-navigation {
+        .top-navigation {
+
             display: flex;
+
             justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
 
-        .page-navigation a {
-            flex: 1;
-            text-align: center;
-            text-decoration: none;
-            color: white;
-            padding: 12px 10px;
-            border-radius: 12px;
-            font-size: 14px;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-            transition: 0.2s ease;
-        }
-
-        .back-btn {
-            background: linear-gradient(
-                135deg,
-                #7b2cbf,
-                #9d4edd
-            );
-        }
-
-        .home-btn {
-            background: linear-gradient(
-                135deg,
-                #5a189a,
-                #7b2cbf
-            );
-        }
-
-        .page-navigation a:active {
-            transform: scale(0.97);
-        }
-
-
-        /* =================================================
-           HEADER
-        ================================================= */
-
-        .header {
-            background: linear-gradient(
-                135deg,
-                #7b2cbf,
-                #9d4edd
-            );
-
-            color: white;
-            text-align: center;
-
-            padding: 30px 18px;
-
-            border-radius: 18px;
-
-            margin-bottom: 20px;
-
-            box-shadow:
-                0 7px 18px rgba(0, 0, 0, 0.15);
-        }
-
-        .header-icon {
-            font-size: 42px;
-            margin-bottom: 8px;
-        }
-
-        .header h1 {
-            font-size: 26px;
-            margin-bottom: 5px;
-        }
-
-        .header p {
-            font-size: 14px;
-            opacity: 0.95;
-        }
-
-
-        /* =================================================
-           INTRODUCTION CARD
-        ================================================= */
-
-        .intro-card {
-            background: white;
-            border-radius: 16px;
-            padding: 20px;
-
-            margin-bottom: 18px;
-
-            border: 1px solid #e7e7e7;
-
-            box-shadow:
-                0 4px 14px rgba(0, 0, 0, 0.07);
-        }
-
-        .intro-card h2 {
-            color: #6a1b9a;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .intro-card p {
-            color: #444;
-        }
-
-
-        /* =================================================
-           CHAPTER SECTION
-        ================================================= */
-
-        .section-title {
-            text-align: center;
-            color: #6a1b9a;
-            font-size: 21px;
-
-            margin: 24px 0 14px;
-        }
-
-
-        /* =================================================
-           CHAPTER CARDS
-        ================================================= */
-
-        .chapter-card {
-            display: flex;
             align-items: center;
 
+            gap: 16px;
+
+            margin-bottom: 34px;
+
+        }
+
+
+        .nav-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
             text-decoration: none;
-            color: inherit;
 
-            background: white;
+            min-height: 58px;
 
-            padding: 16px;
+            padding: 0 26px;
 
-            margin-bottom: 12px;
+            border-radius: 20px;
 
-            border-radius: 15px;
+            font-size: 1.1rem;
 
-            border: 1px solid #e5e5e5;
-
-            box-shadow:
-                0 4px 12px rgba(0, 0, 0, 0.07);
+            font-weight: 800;
 
             transition:
                 transform 0.2s ease,
                 box-shadow 0.2s ease;
+
         }
 
-        .chapter-card:hover {
-            transform: translateY(-2px);
 
-            box-shadow:
-                0 7px 18px rgba(0, 0, 0, 0.10);
-        }
+        .nav-button:active {
 
-        .chapter-number {
-            width: 48px;
-            height: 48px;
+            transform: scale(0.96);
 
-            min-width: 48px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            background: linear-gradient(
-                135deg,
-                #7b2cbf,
-                #9d4edd
-            );
-
-            color: white;
-
-            border-radius: 13px;
-
-            font-size: 20px;
-            font-weight: bold;
-
-            margin-right: 14px;
-        }
-
-        .chapter-info {
-            flex: 1;
-        }
-
-        .chapter-info h3 {
-            color: #5a189a;
-            font-size: 17px;
-            margin-bottom: 3px;
-        }
-
-        .chapter-info p {
-            color: #777;
-            font-size: 13px;
-        }
-
-        .chapter-arrow {
-            color: #7b2cbf;
-            font-size: 24px;
-            font-weight: bold;
-            margin-left: 8px;
         }
 
 
         /* =================================================
-           STUDY TIP
+           BACK BUTTON
         ================================================= */
 
-        .tip-card {
-            background: #e8f1ff;
+        .back-button {
 
-            border-left:
-                5px solid #3976d2;
+            background:
+                linear-gradient(
+                    135deg,
+                    #6f2aa8,
+                    #54208a
+                );
 
-            border-radius: 12px;
+            color: white;
 
-            padding: 16px;
+            box-shadow:
+                0 5px 12px rgba(91, 32, 145, 0.22);
 
-            margin-top: 20px;
         }
 
-        .tip-card h3 {
-            color: #245ca8;
-            margin-bottom: 7px;
-            font-size: 17px;
+
+        /* =================================================
+           HOME BUTTON
+        ================================================= */
+
+        .home-button {
+
+            background: white;
+
+            color: var(--primary-purple);
+
+            border: 1px solid #dedede;
+
+            box-shadow: var(--shadow);
+
         }
 
-        .tip-card p {
-            color: #333;
-            font-size: 14px;
+
+        /* =================================================
+           PAGE HEADER
+        ================================================= */
+
+        .page-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6a2aa0 0%,
+                    #4b1d78 100%
+                );
+
+            color: white;
+
+            padding: 52px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 36px;
+
+            text-align: center;
+
+            box-shadow:
+                0 8px 18px rgba(78, 27, 126, 0.18);
+
+        }
+
+
+        .page-header h1 {
+
+            font-size: 2.1rem;
+
+            font-weight: 800;
+
+            margin-bottom: 14px;
+
+            letter-spacing: -0.5px;
+
+        }
+
+
+        .page-header p {
+
+            color: rgba(255, 255, 255, 0.88);
+
+            font-size: 1.15rem;
+
+            font-weight: 500;
+
+        }
+
+
+        /* =================================================
+           NOTES HOME
+        ================================================= */
+
+        .notes-home {
+
+            background: var(--card-bg);
+
+            border-radius: 28px;
+
+            padding: 32px;
+
+            margin-bottom: 30px;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .notes-home-title {
+
+            color: var(--primary-purple);
+
+            font-size: 1.7rem;
+
+            font-weight: 800;
+
+            margin-bottom: 12px;
+
+            line-height: 1.3;
+
+        }
+
+
+        .notes-home-subtitle {
+
+            color: var(--text-muted);
+
+            font-size: 1.05rem;
+
+            margin-bottom: 32px;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =================================================
+           CHAPTER LIST
+        ================================================= */
+
+        .chapter-list {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+        }
+
+
+        /* =================================================
+           CHAPTER CARD
+        ================================================= */
+
+        .chapter-card {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 22px;
+
+            text-decoration: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7f4fa,
+                    #f1eef5
+                );
+
+            border: 1px solid #dccfea;
+
+            border-radius: 25px;
+
+            padding: 24px;
+
+            color: var(--text-main);
+
+            min-height: 148px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.04);
+
+        }
+
+
+        .chapter-card:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 8px 18px rgba(0, 0, 0, 0.09);
+
+            border-color: #b88bd7;
+
+        }
+
+
+        .chapter-card:active {
+
+            transform: scale(0.98);
+
+        }
+
+
+        /* =================================================
+           CHAPTER ICON
+        ================================================= */
+
+        .chapter-icon {
+
+            width: 78px;
+
+            height: 78px;
+
+            min-width: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: white;
+
+            border-radius: 22px;
+
+            font-size: 38px;
+
+            border: 1px solid #ded4e6;
+
+            box-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.05);
+
+        }
+
+
+        /* =================================================
+           CHAPTER INFORMATION
+        ================================================= */
+
+        .chapter-info {
+
+            flex: 1;
+
+            min-width: 0;
+
+        }
+
+
+        .chapter-number {
+
+            display: block;
+
+            color: var(--primary-purple);
+
+            font-size: 1rem;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.4px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .chapter-title {
+
+            display: block;
+
+            color: #303947;
+
+            font-size: 1.25rem;
+
+            font-weight: 800;
+
+            line-height: 1.45;
+
+        }
+
+
+        .chapter-description {
+
+            display: block;
+
+            color: #59616d;
+
+            font-size: 1rem;
+
+            margin-top: 10px;
+
+        }
+
+
+        /* =================================================
+           ARROW
+        ================================================= */
+
+        .chapter-arrow {
+
+            color: var(--primary-purple);
+
+            font-size: 2.6rem;
+
+            font-weight: 900;
+
+            line-height: 1;
+
+            padding-left: 4px;
+
         }
 
 
@@ -283,99 +483,237 @@
            FOOTER
         ================================================= */
 
-        footer {
+        .footer {
+
             text-align: center;
 
-            padding: 25px 10px;
+            padding: 24px 10px 35px;
 
-            color: #666;
+            color: var(--text-muted);
 
-            font-size: 13px;
+            font-size: 0.9rem;
 
-            line-height: 1.8;
+            line-height: 1.7;
+
         }
 
 
         /* =================================================
-           RESPONSIVE DESIGN
+           MOBILE
         ================================================= */
 
         @media (max-width: 480px) {
 
-            .container {
-                padding: 11px;
+            body {
+
+                padding: 18px;
+
             }
 
-            .header {
-                padding: 25px 14px;
+
+            .top-navigation {
+
+                margin-bottom: 34px;
+
             }
 
-            .header-icon {
-                font-size: 36px;
+
+            .nav-button {
+
+                min-height: 56px;
+
+                padding: 0 20px;
+
+                border-radius: 18px;
+
+                font-size: 1rem;
+
             }
 
-            .header h1 {
-                font-size: 23px;
+
+            .page-header {
+
+                padding: 48px 18px;
+
+                border-radius: 28px;
+
+                margin-bottom: 36px;
+
             }
 
-            .intro-card {
-                padding: 17px;
+
+            .page-header h1 {
+
+                font-size: 2rem;
+
             }
+
+
+            .page-header p {
+
+                font-size: 1.05rem;
+
+            }
+
+
+            .notes-home {
+
+                padding: 28px 16px;
+
+                border-radius: 26px;
+
+            }
+
+
+            .notes-home-title {
+
+                font-size: 1.5rem;
+
+            }
+
+
+            .notes-home-subtitle {
+
+                font-size: 1rem;
+
+                margin-bottom: 28px;
+
+            }
+
+
+            .chapter-list {
+
+                gap: 20px;
+
+            }
+
 
             .chapter-card {
-                padding: 14px;
+
+                gap: 16px;
+
+                padding: 22px 18px;
+
+                min-height: 142px;
+
+                border-radius: 24px;
+
             }
+
+
+            .chapter-icon {
+
+                width: 74px;
+
+                height: 74px;
+
+                min-width: 74px;
+
+                border-radius: 21px;
+
+                font-size: 34px;
+
+            }
+
 
             .chapter-number {
-                width: 44px;
-                height: 44px;
-                min-width: 44px;
-                font-size: 18px;
-                margin-right: 11px;
+
+                font-size: 0.95rem;
+
+                margin-bottom: 8px;
+
             }
 
-            .chapter-info h3 {
-                font-size: 15px;
+
+            .chapter-title {
+
+                font-size: 1.12rem;
+
+                line-height: 1.45;
+
             }
 
-            .chapter-info p {
-                font-size: 12px;
+
+            .chapter-description {
+
+                font-size: 0.96rem;
+
+                margin-top: 8px;
+
             }
+
 
             .chapter-arrow {
-                font-size: 21px;
-            }
 
-            .page-navigation a {
-                padding: 11px 7px;
-                font-size: 13px;
+                font-size: 2.4rem;
+
             }
 
         }
 
 
+        /* =================================================
+           SMALL MOBILE
+        ================================================= */
+
         @media (max-width: 380px) {
 
-            .page-navigation {
-                gap: 7px;
+            body {
+
+                padding: 12px;
+
             }
 
-            .page-navigation a {
-                font-size: 12px;
+
+            .nav-button {
+
+                padding: 0 16px;
+
+                font-size: 0.95rem;
+
             }
+
 
             .chapter-card {
-                padding: 12px;
+
+                gap: 12px;
+
+                padding: 18px 14px;
+
             }
 
-            .chapter-number {
-                width: 40px;
-                height: 40px;
-                min-width: 40px;
+
+            .chapter-icon {
+
+                width: 62px;
+
+                height: 62px;
+
+                min-width: 62px;
+
+                font-size: 29px;
+
             }
 
-            .chapter-info h3 {
-                font-size: 14px;
+
+            .chapter-title {
+
+                font-size: 1rem;
+
+            }
+
+
+            .chapter-description {
+
+                font-size: 0.88rem;
+
+            }
+
+
+            .chapter-arrow {
+
+                font-size: 2rem;
+
             }
 
         }
@@ -388,307 +726,322 @@
 <body>
 
 
-<div class="container">
+<!-- =================================================
+     TOP NAVIGATION
+================================================= -->
+
+<div class="top-navigation">
 
 
-    <!-- =================================================
-         TOP NAVIGATION
-    ================================================= -->
-
-    <div class="page-navigation">
-
-        <a
-            href="history.html"
-            class="back-btn"
-        >
-            ← Back
-        </a>
-
-        <a
-            href="index.html"
-            class="home-btn"
-        >
-            🏠 Home
-        </a>
-
-    </div>
-
-
-    <!-- =================================================
-         HEADER
-    ================================================= -->
-
-    <div class="header">
-
-        <div class="header-icon">
-            📜
-        </div>
-
-        <h1>
-            History
-        </h1>
-
-        <p>
-            📚 Complete Course Notes
-        </p>
-
-    </div>
-
-
-    <!-- =================================================
-         INTRODUCTION
-    ================================================= -->
-
-    <div class="intro-card">
-
-        <h2>
-            📖 Complete History Notes
-        </h2>
-
-        <p>
-            Welcome to the complete History course notes.
-            Select a chapter below to study the lessons,
-            important concepts, historical events, key
-            people, causes, consequences, and major points.
-        </p>
-
-    </div>
-
-
-    <!-- =================================================
-         CHAPTERS
-    ================================================= -->
-
-    <h2 class="section-title">
-        📚 History Chapters
-    </h2>
-
-
-    <!-- CHAPTER 1 -->
+    <!-- BACK TO HISTORY PAGE -->
 
     <a
-        href="history-notes-chapter1.html"
-        class="chapter-card"
+        href="history.html"
+        class="nav-button back-button"
     >
-
-        <div class="chapter-number">
-            1
-        </div>
-
-        <div class="chapter-info">
-
-            <h3>
-                📗 Chapter 1
-            </h3>
-
-            <p>
-                Introduction to History
-            </p>
-
-        </div>
-
-        <div class="chapter-arrow">
-            ➜
-        </div>
-
+        ← Back
     </a>
 
 
-    <!-- CHAPTER 2 -->
+    <!-- HOME -->
 
     <a
-        href="history-notes-chapter2.html"
-        class="chapter-card"
+        href="index.html"
+        class="nav-button home-button"
     >
-
-        <div class="chapter-number">
-            2
-        </div>
-
-        <div class="chapter-info">
-
-            <h3>
-                📗 Chapter 2
-            </h3>
-
-            <p>
-                Peoples and Cultures in Ethiopia and the Horn
-            </p>
-
-        </div>
-
-        <div class="chapter-arrow">
-            ➜
-        </div>
-
+        🏠 Home
     </a>
-
-
-    <!-- CHAPTER 3 -->
-
-    <a
-        href="history-notes-chapter3.html"
-        class="chapter-card"
-    >
-
-        <div class="chapter-number">
-            3
-        </div>
-
-        <div class="chapter-info">
-
-            <h3>
-                📗 Chapter 3
-            </h3>
-
-            <p>
-                Politics, Economy, and Society in Ethiopia and the Horn
-            </p>
-
-        </div>
-
-        <div class="chapter-arrow">
-            ➜
-        </div>
-
-    </a>
-
-
-    <!-- CHAPTER 4 -->
-
-    <a
-        href="history-notes-chapter4.html"
-        class="chapter-card"
-    >
-
-        <div class="chapter-number">
-            4
-        </div>
-
-        <div class="chapter-info">
-
-            <h3>
-                📗 Chapter 4
-            </h3>
-
-            <p>
-                Politics, Economy and Society from the Late Twentieth Century
-            </p>
-
-        </div>
-
-        <div class="chapter-arrow">
-            ➜
-        </div>
-
-    </a>
-
-
-    <!-- CHAPTER 5 -->
-
-    <a
-        href="history-notes-chapter5.html"
-        class="chapter-card"
-    >
-
-        <div class="chapter-number">
-            5
-        </div>
-
-        <div class="chapter-info">
-
-            <h3>
-                📗 Chapter 5
-            </h3>
-
-            <p>
-                Politics, Economy and Social Processes
-            </p>
-
-        </div>
-
-        <div class="chapter-arrow">
-            ➜
-        </div>
-
-    </a>
-
-
-    <!-- CHAPTER 6 -->
-
-    <a
-        href="history-notes-chapter6.html"
-        class="chapter-card"
-    >
-
-        <div class="chapter-number">
-            6
-        </div>
-
-        <div class="chapter-info">
-
-            <h3>
-                📗 Chapter 6
-            </h3>
-
-            <p>
-                Internal Developments and External Relations
-            </p>
-
-        </div>
-
-        <div class="chapter-arrow">
-            ➜
-        </div>
-
-    </a>
-
-
-    <!-- =================================================
-         STUDY TIP
-    ================================================= -->
-
-    <div class="tip-card">
-
-        <h3>
-            💡 How to Study History
-        </h3>
-
-        <p>
-            Focus on understanding the relationship between
-            events. When studying an event, ask yourself:
-            <b>What happened?</b> <b>Why did it happen?</b>
-            <b>Who was involved?</b> and
-            <b>What were the consequences?</b>
-        </p>
-
-    </div>
-
-
-    <!-- =================================================
-         FOOTER
-    ================================================= -->
-
-    <footer>
-
-        📜 History<br>
-
-        📚 Unique Academic — Complete Full Notes
-
-    </footer>
 
 
 </div>
 
 
+
 <!-- =================================================
-     ACCESS GUARD
+     PAGE HEADER
 ================================================= -->
 
-<script
-    type="module"
-    src="access-guard.js"
-></script>
+<header class="page-header">
+
+    <h1>
+        📜 History
+    </h1>
+
+    <p>
+        📚 Complete Full Notes
+    </p>
+
+</header>
+
+
+
+<!-- =================================================
+     FULL NOTES
+================================================= -->
+
+<main class="notes-home">
+
+
+    <div class="notes-home-title">
+
+        📖 History Full Notes
+
+    </div>
+
+
+    <div class="notes-home-subtitle">
+
+        Select a chapter to study its complete notes.
+
+    </div>
+
+
+
+    <div class="chapter-list">
+
+
+        <!-- =================================================
+             CHAPTER 1
+             NO ACCESS GUARD
+        ================================================= -->
+
+        <a
+            href="history-notes-chapter1.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📗
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 1
+                </span>
+
+                <span class="chapter-title">
+                    Introduction To History
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CHAPTER 2
+        ================================================= -->
+
+        <a
+            href="history-notes-chapter2.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📘
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 2
+                </span>
+
+                <span class="chapter-title">
+                    Peoples And Cultures In Ethiopia And The Horn
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CHAPTER 3
+        ================================================= -->
+
+        <a
+            href="history-notes-chapter3.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📙
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 3
+                </span>
+
+                <span class="chapter-title">
+                    Politics, Economy, And Society In Ethiopia And The Horn
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CHAPTER 4
+        ================================================= -->
+
+        <a
+            href="history-notes-chapter4.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📕
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 4
+                </span>
+
+                <span class="chapter-title">
+                    Politics, Economy And Society From The Late Twentieth Century
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CHAPTER 5
+        ================================================= -->
+
+        <a
+            href="history-notes-chapter5.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📔
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 5
+                </span>
+
+                <span class="chapter-title">
+                    Politics, Economy And Social Processes
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CHAPTER 6
+        ================================================= -->
+
+        <a
+            href="history-notes-chapter6.html"
+            class="chapter-card"
+        >
+
+            <div class="chapter-icon">
+                📚
+            </div>
+
+            <div class="chapter-info">
+
+                <span class="chapter-number">
+                    Chapter 6
+                </span>
+
+                <span class="chapter-title">
+                    Internal Developments And External Relations
+                </span>
+
+                <span class="chapter-description">
+                    Complete study notes
+                </span>
+
+            </div>
+
+            <div class="chapter-arrow">
+                ➜
+            </div>
+
+        </a>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================= -->
+
+<footer class="footer">
+
+    📜 History
+
+    <br>
+
+    📚 Unique Academic — Complete Full Notes
+
+</footer>
 
 
 </body>
