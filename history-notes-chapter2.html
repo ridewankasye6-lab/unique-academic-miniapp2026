@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>History - Chapter 2 Notes</title>
+
+    <script
+        type="module"
+        src="access-guard.js"
+    ></script>
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+
+            --primary-purple: #64229b;
+            --primary-dark: #4c1d7a;
+
+            --border-color: #ded7e6;
+
+            --shadow:
+                0 4px 12px rgba(0,0,0,.08),
+                0 2px 5px rgba(0,0,0,.04);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f3f7 0%,
+                    #eef0f3 100%
+                );
+
+            color: var(--text-main);
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* =========================
+           TOP NAVIGATION
+        ========================= */
+
+        .top-navigation {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 28px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 58px;
+
+            padding: 0 26px;
+
+            border-radius: 20px;
+
+            text-decoration: none;
+
+            font-size: 1.05rem;
+            font-weight: 800;
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-button:active {
+            transform: scale(.97);
+        }
+
+        .back-button {
+            color: #ffffff;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6f2aa8,
+                    #54208a
+                );
+
+            box-shadow: var(--shadow);
+        }
+
+        .home-button {
+            color: var(--primary-purple);
+
+            background: #ffffff;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================= */
+
+        .page-header {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6a2aa0,
+                    #4b1d78
+                );
+
+            color: #ffffff;
+
+            padding: 46px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 30px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .page-header h1 {
+            margin: 0;
+
+            font-size: 2rem;
+            line-height: 1.25;
+
+            font-weight: 800;
+        }
+
+        .page-header p {
+            margin: 12px 0 0;
+
+            font-size: 1.05rem;
+
+            line-height: 1.6;
+
+            opacity: .95;
+        }
+
+        /* =========================
+           NOTES CONTAINER
+        ========================= */
+
+        .notes-container {
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 28px;
+
+            padding: 30px;
+
+            box-shadow: var(--shadow);
+
+            margin-bottom: 28px;
+        }
+
+        .notes-title {
+            margin: 0 0 24px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.65rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LESSON CARD
+        ========================= */
+
+        .lesson-card {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f5fa,
+                    #f1edf5
+                );
+
+            border: 1px solid #dccfea;
+
+            border-radius: 23px;
+
+            padding: 24px;
+
+            margin-bottom: 20px;
+        }
+
+        .lesson-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-number {
+            display: inline-block;
+
+            margin-bottom: 10px;
+
+            color: var(--primary-purple);
+
+            font-size: .95rem;
+
+            font-weight: 800;
+
+            letter-spacing: .4px;
+
+            text-transform: uppercase;
+        }
+
+        .lesson-title {
+            margin: 0 0 14px;
+
+            color: #303947;
+
+            font-size: 1.3rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        .lesson-text {
+            margin: 0;
+
+            color: #4b5563;
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+           SUBHEADINGS
+        ========================= */
+
+        .subheading {
+            margin: 22px 0 10px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        .notes-list {
+            margin: 10px 0 0;
+
+            padding-left: 22px;
+
+            color: #4b5563;
+
+            line-height: 1.8;
+
+            font-size: 1rem;
+        }
+
+        .notes-list li {
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           IMPORTANT BOX & DIAGRAMS
+        ========================= */
+
+        .important-box {
+            margin-top: 20px;
+
+            padding: 18px;
+
+            border-radius: 18px;
+
+            background: #ffffff;
+
+            border: 1px solid #dccfea;
+
+            box-shadow:
+                0 2px 7px rgba(0,0,0,.04);
+        }
+
+        .important-box strong {
+            color: var(--primary-purple);
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+
+            padding: 24px 10px 35px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+            line-height: 1.6;
+        }
+
+        footer strong {
+            color: var(--primary-purple);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            body {
+                padding: 14px;
+            }
+
+            .top-navigation {
+                gap: 10px;
+
+                margin-bottom: 22px;
+            }
+
+            .nav-button {
+                min-height: 52px;
+
+                padding: 0 18px;
+
+                border-radius: 17px;
+
+                font-size: .98rem;
+            }
+
+            .page-header {
+                padding: 38px 16px;
+
+                border-radius: 25px;
+
+                margin-bottom: 24px;
+            }
+
+            .page-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .page-header p {
+                font-size: .98rem;
+            }
+
+            .notes-container {
+                padding: 20px;
+
+                border-radius: 23px;
+            }
+
+            .notes-title {
+                font-size: 1.4rem;
+            }
+
+            .lesson-card {
+                padding: 20px;
+
+                border-radius: 20px;
+            }
+
+            .lesson-title {
+                font-size: 1.15rem;
+            }
+
+            .lesson-text,
+            .notes-list {
+                font-size: .96rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            .nav-button {
+                padding: 0 14px;
+
+                font-size: .92rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .notes-container {
+                padding: 17px;
+            }
+
+            .lesson-card {
+                padding: 17px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================== -->
+
+    <nav class="top-navigation">
+
+        <a
+            href="history-notes.html"
+            class="nav-button back-button"
+        >
+            ← Back
+        </a>
+
+        <a
+            href="index.html"
+            class="nav-button home-button"
+        >
+            🏠 Home
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <header class="page-header">
+
+        <h1>
+            📜 UNIT TWO
+        </h1>
+
+        <p>
+            PEOPLES AND CULTURES IN ETHIOPIA AND THE HORN (4 HOURS)
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         NOTES
+    ========================== -->
+
+    <main class="notes-container">
+
+        <h2 class="notes-title">
+            🧠 Chapter 2: Peoples And Cultures In Ethiopia And The Horn
+        </h2>
+
+
+        <!-- 2.1. HUMAN EVOLUTION -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                2.1. Human Evolution
+            </span>
+
+            <h3 class="lesson-title">
+                🧬 Human Evolution Overview
+            </h3>
+
+            <p class="lesson-text">
+                Human evolution accounts for only a fraction of the history of the globe that had evolved since circa/c.4.5 billion years before present (BP). The earliest life came into being between 3 and 1 billion years BP. Blue green algae, small plants, fishes, birds and other small beings emerged at c. 800 million years BP. Primates branched into placental mammal as of 200-170 million years BP, and then some primates developed into <em>Pongidae</em> (chimpanzee, gorilla, gibbon, orangutan, baboon...) while others evolved into <em>Hominidae</em> (human ancestors).
+            </p>
+
+            <p class="lesson-text">
+                Archeological evidence shows that the East African Rift Valley is the cradle of humanity. Pieces of evidence related to both biological and cultural evolution have been discovered in the Lower Omo and Middle Awash River valleys by both Ethiopian and foreign scholars.
+            </p>
+
+            <div class="important-box">
+
+                <strong>📌 Fossil Discoveries Timeline:</strong>
+
+                <ul class="notes-list">
+
+                    <li>
+                        <strong>Chororapithecus:</strong> dated 10 million BP was unearthed in Anchar (in West Hararghe) in 2007.
+                    </li>
+
+                    <li>
+                        <strong>Ardipithecus kadabba:</strong> dated 5.8-5.2 million years BP was discovered in the Middle Awash.
+                    </li>
+
+                    <li>
+                        <strong>Ardipithecus ramidus:</strong> dated 4.2 million B.P. was discovered at Aramis in Afar in 1994.
+                    </li>
+
+                    <li>
+                        Earlier forms of <em>Australopithecines</em> were uncovered at Belohdelie (dated 3.6 million years BP) in Middle Awash.
+                    </li>
+
+                    <li>
+                        <strong>Selam:</strong> A 3-years old child's fossil termed <em>Australopithecus afarensis</em>, Selam, dated to 3.3 million years BP, was discovered at Dikika, Mille in 2000.
+                    </li>
+
+                    <li>
+                        <strong>Lucy/Dinkinesh:</strong> <em>Australopithecus afarensis</em> (Lucy/Dinkinesh, dated c. 3.18 million years BP) with 40% complete body parts, weighing 30 kg and with a height of 1.07 meters and a pelvis resembling that of a bipedal female was discovered at Hadar in 1974 AD.
+                    </li>
+
+                    <li>
+                        <strong>Australopithecus anamensis:</strong> discovered around Lake Turkana in 1995.
+                    </li>
+
+                    <li>
+                        <strong>Australopithecus garhi:</strong> An eco-fact named as <em>Australopithecus garhi</em> (literally 'surprise' in Afar language) dated to 2.5 million years BP was discovered at Bouri in Middle Awash between 1996 and 1999.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="diagram-container">
+                <img src="Picture1_Lucy.png" alt="Picture 1: the Fossil of Lucy">
+                <p class="lesson-text"><em>Picture 1: the Fossil of Lucy (Source: Bahru Zewde (compiled), A Short History... p. 12)</em></p>
+            </div>
+
+            <h4 class="subheading">
+                Evolution of the Genus Homo
+            </h4>
+
+            <p class="lesson-text">
+                The development of the human brain was the main feature of the next stage, which produced the genus <em>Homo</em>, believed to have emerged 2-2.5 million years BP. A partial skull of a fossil dated 1.9 million years BP and termed <em>Homo habilis</em>, which is derived from the Latin terms "Homo" (human being) and "Habilis" (skillful use of hands), was found in the Lower Omo. A fossil named <em>Homo erectus</em> (walking upright) and with 900-1100 cc brain size, dated 1.6 million years BP, was discovered at Melka Kunture, Konso Gardula and Gadeb. <em>Homo erectus</em> is said to have originated in Africa and then spread to the rest of the world.
+            </p>
+
+            <p class="lesson-text">
+                The skeleton of Archaic <em>Homo sapiens</em> ("wise" human being, dated 400,000 years BP) named Bodo and with a brain size of 1300-1400cc was discovered in Middle Awash. Fossils of <em>Homo sapiens sapiens</em> (100,000 years BP), a sub-species of <em>Homo sapiens</em> were discovered at Porc Epic near Dire Dawa and Kibish around Lower Omo in 1967. Kibish fossils were re-dated in 2004 to 195,000 BP, the oldest date in the world for modern <em>Homo sapiens</em>. <em>Homo sapiens idaltu</em>, another sub-species of <em>Homo sapiens</em> that was found in the Middle Awash in 1997, lived about 160, 000 years BP.
+            </p>
+
+            <h4 class="subheading">
+                Cultural Evolution & Stone Tools
+            </h4>
+
+            <p class="lesson-text">
+                Cultural evolution is related to socio-economic transformations, conventionally grouped into the Stone, Bronze and the Iron Ages. Stone tools were grouped into:
+            </p>
+
+            <ul class="notes-list">
+                <li><strong>Mode I (Oldowan):</strong> named based on the first report at Olduvai Gorge, Tanzania; characterized by crude and mono-facial styles, and were produced by direct percussion, i.e. striking the stone directly.</li>
+                <li><strong>Mode II (Acheulean):</strong> named after the first report at St. Acheul, France; produced by indirect percussion, i.e. striking the stone via an intermediate tool, using hand-axe or hammer and were mainly characterized by bifacial, pointed, and convex features.</li>
+                <li><strong>Mode III (Sangoon):</strong> characterized by a flexible and refined production form using obsidian, a black glass-like volcanic rock.</li>
+            </ul>
+
+            <div class="important-box">
+                <strong>📌 Tool Sites Evidence:</strong>
+                <p class="lesson-text">
+                    Fossilized animal bones dating back to 3.4 million years BP were found with stone-tool-inflicted marks (the oldest evidence of stone tool in the world) at Dikika (in the Afar Region) in 2010. Artifact findings suggest that Oldowan tools made by <em>Homo habilis</em> were discovered near Gona (2.52 million years BP) in 1992 and at Shungura, both in the Afar Region. <em>Homo erectus</em> produced Acheulean tools dated 1.7 million years BP, invented fire and started burial practice. Acheulian tools (aged over 1 million years) were found at Kella, Middle Awash, in 1963, as well as in Konso. <em>Homo sapiens</em> produced Sangoon tools that date back up to 300,000 years BP. The Gademotta site in the central Ethiopian Rift Valley has been dated back to 200,000 BP. Other important sites such as Gorgora, Ki'one, and Yabello in Ethiopia and Midhidhishi and Gudgud in Somalia have offered noteworthy information about Stone Age communities.
+                </p>
+            </div>
+
+            <h4 class="subheading">
+                Stone Age Sub-periods
+            </h4>
+
+            <ul class="notes-list">
+                <li><strong>Paleolithic (Old Stone Age, 3.4 million to 11,000 years BP):</strong> the period when humans developed language, sheltered in caves, and used stone, bone, wood, fur and skin materials to prepare food and clothing. There was a division of labor based on sex and age, whereby the able-bodied males hunted fauna (animals), and children and females gathered flora (plants).</li>
+                <li><strong>Mesolithic (Middle Stone Age, 11,000-10,000 BP):</strong> a transition from Paleolithic to Neolithic.</li>
+                <li><strong>Neolithic (New Stone Age, 10,000-6,000 BP)</strong>.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 2.2. NEOLITHIC REVOLUTION -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                2.2. Neolithic Revolution
+            </span>
+
+            <h3 class="lesson-title">
+                🌾 The Agricultural Revolution
+            </h3>
+
+            <p class="lesson-text">
+                During the Neolithic period, human beings transformed from a mobile to sedentary way of life with a radical shift from hunting and gathering to the domestication of plants and animals. Climatic change and an increased population of hunters and gatherers resulted in a decline in the number of animals and the availability of plants. As food gatherers were already aware of the growing cycle of most grass types, they began to grow those plants that were most common and yielded more edible seeds```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>History - Chapter 2 Notes</title>
+
+    <script
+        type="module"
+        src="access-guard.js"
+    ></script>
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+
+            --primary-purple: #64229b;
+            --primary-dark: #4c1d7a;
+
+            --border-color: #ded7e6;
+
+            --shadow:
+                0 4px 12px rgba(0,0,0,.08),
+                0 2px 5px rgba(0,0,0,.04);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f3f7 0%,
+                    #eef0f3 100%
+                );
+
+            color: var(--text-main);
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* =========================
+           TOP NAVIGATION
+        ========================= */
+
+        .top-navigation {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 28px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 58px;
+
+            padding: 0 26px;
+
+            border-radius: 20px;
+
+            text-decoration: none;
+
+            font-size: 1.05rem;
+            font-weight: 800;
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-button:active {
+            transform: scale(.97);
+        }
+
+        .back-button {
+            color: #ffffff;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6f2aa8,
+                    #54208a
+                );
+
+            box-shadow: var(--shadow);
+        }
+
+        .home-button {
+            color: var(--primary-purple);
+
+            background: #ffffff;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================= */
+
+        .page-header {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6a2aa0,
+                    #4b1d78
+                );
+
+            color: #ffffff;
+
+            padding: 46px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 30px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .page-header h1 {
+            margin: 0;
+
+            font-size: 2rem;
+            line-height: 1.25;
+
+            font-weight: 800;
+        }
+
+        .page-header p {
+            margin: 12px 0 0;
+
+            font-size: 1.05rem;
+
+            line-height: 1.6;
+
+            opacity: .95;
+        }
+
+        /* =========================
+           NOTES CONTAINER
+        ========================= */
+
+        .notes-container {
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 28px;
+
+            padding: 30px;
+
+            box-shadow: var(--shadow);
+
+            margin-bottom: 28px;
+        }
+
+        .notes-title {
+            margin: 0 0 24px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.65rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LESSON CARD
+        ========================= */
+
+        .lesson-card {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f5fa,
+                    #f1edf5
+                );
+
+            border: 1px solid #dccfea;
+
+            border-radius: 23px;
+
+            padding: 24px;
+
+            margin-bottom: 20px;
+        }
+
+        .lesson-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-number {
+            display: inline-block;
+
+            margin-bottom: 10px;
+
+            color: var(--primary-purple);
+
+            font-size: .95rem;
+
+            font-weight: 800;
+
+            letter-spacing: .4px;
+
+            text-transform: uppercase;
+        }
+
+        .lesson-title {
+            margin: 0 0 14px;
+
+            color: #303947;
+
+            font-size: 1.3rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        .lesson-text {
+            margin: 0 0 12px 0;
+
+            color: #4b5563;
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+           SUBHEADINGS
+        ========================= */
+
+        .subheading {
+            margin: 22px 0 10px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        .notes-list {
+            margin: 10px 0 16px;
+
+            padding-left: 22px;
+
+            color: #4b5563;
+
+            line-height: 1.8;
+
+            font-size: 1rem;
+        }
+
+        .notes-list li {
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           IMPORTANT BOX & MEDIA
+        ========================= */
+
+        .important-box {
+            margin-top: 20px;
+
+            padding: 18px;
+
+            border-radius: 18px;
+
+            background: #ffffff;
+
+            border: 1px solid #dccfea;
+
+            box-shadow:
+                0 2px 7px rgba(0,0,0,.04);
+        }
+
+        .important-box strong {
+            color: var(--primary-purple);
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+
+            padding: 24px 10px 35px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+            line-height: 1.6;
+        }
+
+        footer strong {
+            color: var(--primary-purple);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            body {
+                padding: 14px;
+            }
+
+            .top-navigation {
+                gap: 10px;
+
+                margin-bottom: 22px;
+            }
+
+            .nav-button {
+                min-height: 52px;
+
+                padding: 0 18px;
+
+                border-radius: 17px;
+
+                font-size: .98rem;
+            }
+
+            .page-header {
+                padding: 38px 16px;
+
+                border-radius: 25px;
+
+                margin-bottom: 24px;
+            }
+
+            .page-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .page-header p {
+                font-size: .98rem;
+            }
+
+            .notes-container {
+                padding: 20px;
+
+                border-radius: 23px;
+            }
+
+            .notes-title {
+                font-size: 1.4rem;
+            }
+
+            .lesson-card {
+                padding: 20px;
+
+                border-radius: 20px;
+
+            }
+
+            .lesson-title {
+                font-size: 1.15rem;
+            }
+
+            .lesson-text,
+            .notes-list {
+                font-size: .96rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            .nav-button {
+                padding: 0 14px;
+
+                font-size: .92rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .notes-container {
+                padding: 17px;
+            }
+
+            .lesson-card {
+                padding: 17px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================== -->
+
+    <nav class="top-navigation">
+
+        <a
+            href="history-notes.html"
+            class="nav-button back-button"
+        >
+            ← Back
+        </a>
+
+        <a
+            href="index.html"
+            class="nav-button home-button"
+        >
+            🏠 Home
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <header class="page-header">
+
+        <h1>
+            📜 History
+        </h1>
+
+        <p>
+            Chapter 2 — Complete Exam Notes 🤗
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         NOTES
+    ========================== -->
+
+    <main class="notes-container">
+
+        <h2 class="notes-title">
+            Unit Two: Peoples and Cultures in Ethiopia and the Horn 🧠
+        </h2>
+
+
+        <!-- LESSON 1 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                2.1 Human Evolution 🧬
+            </span>
+
+            <h3 class="lesson-title">
+                Early Hominids & Paleontological Discoveries 🦴
+            </h3>
+
+            <p class="lesson-text">
+                The East African Rift Valley is globally recognized as the cradle of humanity. Archaeological evidence discovered in the Lower Omo and Middle Awash River valleys provides critical insights into human biological and cultural progression.
+            </p>
+
+            <h4 class="subheading">
+                Key Fossil Discoveries in Ethiopia 📍
+            </h4>
+
+            <ul class="notes-list">
+
+                <li>
+                    <strong>Chororapithecus:</strong> Uncovered in Anchar (West Hararghe) in 2007, dated to approximately 10 million BP.
+                </li>
+
+                <li>
+                    <strong>Ardipithecus kadabba:</strong> Discovered in the Middle Awash, dated to 5.8–5.2 million BP.
+                </li>
+
+                <li>
+                    <strong>Ardipithecus ramidus:</strong> Found at Aramis in Afar in 1994, dated to 4.2 million BP.
+                </li>
+
+                <li>
+                    <strong>Australopithecus anamensis:</strong> Discovered around Lake Turkana in 1995.
+                </li>
+
+                <li>
+                    <strong>Australopithecus afarensis (Lucy / Dinkinesh):</strong> Uncovered at Hadar in 1974, dated to 3.18 million BP. Features include 40% skeletal completion, bipedal structure, 30 kg weight, and 1.07 m height.
+                </li>
+
+                <li>
+                    <strong>Australopithecus garhi:</strong> Uncovered at Bouri in Middle Awash (1996–1999), dated to 2.5 million BP.
+                </li>
+
+                <li>
+                    <strong>Selam:</strong> A 3-year-old child fossil dated to 3.3 million BP, found at Dikika, Mille in 2000.
+                </li>
+
+            </ul>
+
+            <div class="diagram-container">
+
+                <img
+                    src="fossil-lucy.jpg"
+                    alt="The Fossil of Lucy"
+                >
+
+                <p class="lesson-text"><em>Picture 1: The Fossil of Lucy (Australopithecus afarensis)</em></p>
+
+            </div>
+
+            <h4 class="subheading">
+                Evolution of the Genus Homo 🧠
+            </h4>
+
+            <ul class="notes-list">
+
+                <li>
+                    <strong>Homo habilis:</strong> Skillful use of hands; dated to 1.9 million BP, discovered in Lower Omo.
+                </li>
+
+                <li>
+                    <strong>Homo erectus:</strong> Upright walking; brain size 900–1100 cc; dated to 1.6 million BP. Sites: Melka Kunture, Konso Gardula, Gadeb.
+                </li>
+
+                <li>
+                    <strong>Archaic Homo sapiens (Bodo):</strong> Dated to 400,000 BP; brain size 1300–1400 cc; discovered in Middle Awash.
+                </li>
+
+                <li>
+                    <strong>Homo sapiens sapiens:</strong> Discovered at Porc Epic (Dire Dawa) and Kibish (Lower Omo). Kibish fossils date back to 195,000 BP.
+                </li>
+
+                <li>
+                    <strong>Homo sapiens idaltu:</strong> Discovered in Middle Awash (1997), dated to ~160,000 BP.
+                </li>
+
+            </ul>
+
+            <div class="important-box">
+
+                <strong>📌 Cultural Tool Stages (Stone Age Modes):</strong>
+
+                <ul class="notes-list">
+
+                    <li><strong>Mode I (Oldowan):</strong> Crude and mono-facial tools made by direct percussion. Sites: Gona (2.52 million BP), Shungura.</li>
+
+                    <li><strong>Mode II (Acheulean):</strong> Bifacial and pointed hand-axes made by indirect percussion. Sites: Kella, Middle Awash, Konso.</li>
+
+                    <li><strong>Mode III (Sangoon):</strong> Refined tools using obsidian. Sites: Gademotta, Gorgora, Ki'one, Yabello.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- LESSON 2 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                2.2 Neolithic Revolution 🌾
+            </span>
+
+            <h3 class="lesson-title">
+                Domestication of Plants & Animals
+            </h3>
+
+            <p class="lesson-text">
+                The shift from mobile hunting-gathering to sedentary agricultural life defines the Neolithic Revolution. In the Horn of Africa, indigenous crops such as teff (<em>eragrostis tef</em>), dagussa (<em>eleusine coracana</em>), nug (<em>guizotia</em>), and ensete (<em>ensete ventricosum</em>) were domesticated.
+            </p>
+
+            <h4 class="subheading">
+                Key Archeological Evidence 🏛️
+            </h4>
+
+            <ul class="notes-list">
+
+                <li><strong>Emba-Fakeda & Lalibela Cave:</strong> Polished axes, grinding stones, and domesticated cattle remains.</li>
+
+                <li><strong>Gobodara Rock Shelter (Aksum):</strong> Agricultural stone tools.</li>
+
+                <li><strong>Laga Oda (Chercher):</strong> Rock paintings of tamed animals and cutting tools.</li>
+
+                <li><strong>Lake Basaqa (Matahara):</strong> Domesticated animal remains.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LESSON 3 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                2.3 Peopling of the Region 🗣️
+            </span>
+
+            <h3 class="lesson-title">
+                Linguistic Classifications & Economic Formations
+            </h3>
+
+            <h4 class="subheading">
+                Language Superfamilies 💬
+            </h4>
+
+            <p class="lesson-text"><strong>1. Afro-Asiatic Superfamily:</strong></p>
+
+            <ul class="notes-list">
+
+                <li><strong>Cushitic:</strong> Subdivided into Northern (Beja), Central (Agaw: Awign, Kunfel, Qimant, Bilen), Eastern (Afar, Oromo, Somali, Sidama, Gedeo, Konso, etc.), and Southern (Dhalo, Nbugua).</li>
+
+                <li><strong>Semitic:</strong> Subdivided into Northern (Ge'ez, Tigre, Tigrigna) and Southern (Amharic, Argobba, Harari, Silte, Gurage).</li>
+
+                <li><strong>Omotic:</strong> Includes Ari, Bambasi, Wolayta, Gamo, Basketo, Dawuro, Kafa, etc.</li>
+
+            </ul>
+
+            <p class="lesson-text"><strong>2. Nilo-Saharan Superfamily:</strong></p>
+
+            <ul class="notes-list">
+
+                <li>Includes Anywa, Berta, Gumuz, Kunama, Kwama, Murle, Mursi, Nu'er, Suri, etc.</li>
+
+            </ul>
+
+            <h4 class="subheading">
+                Economic Formations 🌾 Pastoralism & Farming 🐫
+            </h4>
+
+            <ul class="notes-list">
+
+                <li><strong>Pastoral Economies:</strong> Dominant in lowlands (Afar, Somali, Karayu, Borana Oromo) focusing on cattle, camels, goats, and sheep.</li>
+
+                <li><strong>Mixed Farming:</strong> Practiced widely in highland regions by Cushitic, Semitic, and Omotic groups.</li>
+
+                <li><strong>Shifting Cultivation:</strong> Practiced predominantly by Nilotic communities along western river basins.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LESSON 4 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                2.4 Religion & Religious Processes 🕊️
+            </span>
+
+            <h3 class="lesson-title">
+                Indigenous & World Religions in the Horn
+            </h3>
+
+            <h4 class="subheading">
+                1. Indigenous Belief Systems ✨
+            </h4>
+
+            <ul class="notes-list">
+
+                <li><strong>Waqeffanna (Oromo):</strong> Belief in one Supreme Being, <em>Waaq/Waaqa</em>. Spiritual figures include <em>Qallu</em> (male) and <em>Qallitti</em> (female). Irrecha is celebrated as a thanksgiving festival.</li>
+
+                <li><strong>Hadiya:</strong> Belief in Supreme Being <em>Wa'a</em>.</li>
+
+                <li><strong>Kambata:</strong> Supreme Being known as <em>Negita/Aricho Magano</em>.</li>
+
+                <li><strong>Gedeo:</strong> Supreme Being called <em>Mageno</em>.</li>
+
+                <li><strong>Gurage:</strong> Worship of <em>Waq/Goita</em> (Supreme Being), <em>Bozha</em>, and <em>Damwamwit</em>.</li>
+
+                <li><strong>Wolayta:</strong> Worship of <em>Tosa</em>.</li>
+
+                <li><strong>Keficho:</strong> Supreme Being called <em>Yero</em>.</li>
+
+                <li><strong>Nuer:</strong> Belief in <em>Kuoth Nhial</em>.</li>
+
+            </ul>
+
+            <h4 class="subheading">
+                2. Judaism, Christianity & Islam 📜
+            </h4>
+
+            <ul class="notes-list">
+
+                <li><strong>Judaism:</strong> Practiced by Bete-Israel (Haymanot tradition). Traced through historical links to Dan tribe migrations, King Solomon, and Queen Saba.</li>
+
+                <li><strong>Christianity:</strong> Declared state religion in 334 AD under King Ezana. Early pioneers include Frumentius (Abba Salama). Expanded further by the Nine Saints during the 5th-6th centuries AD.</li>
+
+                <li><strong>Islam:</strong> Early introduction around 610 AD when Prophet Muhammad's followers sought refuge in Aksum under King Armah (Ashama b. Abjar). Spread peacefully through coastal trade (Dahlak Islands, Zeila) and key centers like Harar and Bale.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- EXAM REVIEW -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                📚 Exam Killer Review 🎯
+            </span>
+
+            <h3 class="lesson-title">
+                Chapter 2 Core Focus Points
+            </h3>
+
+            <div class="important-box">
+
+                <strong>🔑 High-Yield Exam Checklist:</strong>
+
+                <ul class="notes-list">
+
+                    <li>Understand the evolutionary sequence: <em>Ardipithecus → Australopithecus → Homo habilis → Homo erectus → Homo sapiens</em>.</li>
+
+                    <li>Differentiate Oldowan (Mode I), Acheulean (Mode II), and Sangoon (Mode III) stone tools.</li>
+
+                    <li>Memorize Indigenous crops: Teff, Dagussa, Nug, Ensete.</li>
+
+                    <li>Categorize Afro-Asiatic and Nilo-Saharan language sub-families accurately.</li>
+
+                    <li>Recognize traditional supreme names across indigenous religions (Waaq, Tosa, Yero, Mageno).</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        📜 <strong>History</strong>
+        <br>
+
+        📚 Unique Academic — Complete Full Notes
+
+    </footer>
+
+
+</body>
+
+</html>
