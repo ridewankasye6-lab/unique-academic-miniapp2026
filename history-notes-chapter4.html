@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>History - Chapter 4 Notes</title>
+
+    <script
+        type="module"
+        src="access-guard.js"
+    ></script>
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+
+            --primary-purple: #64229b;
+            --primary-dark: #4c1d7a;
+
+            --border-color: #ded7e6;
+
+            --shadow:
+                0 4px 12px rgba(0,0,0,.08),
+                0 2px 5px rgba(0,0,0,.04);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f3f7 0%,
+                    #eef0f3 100%
+                );
+
+            color: var(--text-main);
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            max-width: 700px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* =========================
+           TOP NAVIGATION
+        ========================= */
+
+        .top-navigation {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 28px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 58px;
+
+            padding: 0 26px;
+
+            border-radius: 20px;
+
+            text-decoration: none;
+
+            font-size: 1.05rem;
+            font-weight: 800;
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-button:active {
+            transform: scale(.97);
+        }
+
+        .back-button {
+            color: #ffffff;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6f2aa8,
+                    #54208a
+                );
+
+            box-shadow: var(--shadow);
+        }
+
+        .home-button {
+            color: var(--primary-purple);
+
+            background: #ffffff;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================= */
+
+        .page-header {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6a2aa0,
+                    #4b1d78
+                );
+
+            color: #ffffff;
+
+            padding: 46px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 30px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .page-header h1 {
+            margin: 0;
+
+            font-size: 2rem;
+            line-height: 1.25;
+
+            font-weight: 800;
+        }
+
+        .page-header p {
+            margin: 12px 0 0;
+
+            font-size: 1.05rem;
+
+            line-height: 1.6;
+
+            opacity: .95;
+        }
+
+        /* =========================
+           NOTES CONTAINER
+        ========================= */
+
+        .notes-container {
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 28px;
+
+            padding: 30px;
+
+            box-shadow: var(--shadow);
+
+            margin-bottom: 28px;
+        }
+
+        .notes-title {
+            margin: 0 0 24px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.65rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LESSON CARD
+        ========================= */
+
+        .lesson-card {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f5fa,
+                    #f1edf5
+                );
+
+            border: 1px solid #dccfea;
+
+            border-radius: 23px;
+
+            padding: 24px;
+
+            margin-bottom: 20px;
+        }
+
+        .lesson-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-number {
+            display: inline-block;
+
+            margin-bottom: 10px;
+
+            color: var(--primary-purple);
+
+            font-size: .95rem;
+
+            font-weight: 800;
+
+            letter-spacing: .4px;
+
+            text-transform: uppercase;
+        }
+
+        .lesson-title {
+            margin: 0 0 14px;
+
+            color: #303947;
+
+            font-size: 1.3rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        .lesson-text {
+            margin: 0 0 12px;
+
+            color: #4b5563;
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+        }
+
+        .lesson-text:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           SUBHEADINGS
+        ========================= */
+
+        .subheading {
+            margin: 22px 0 10px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        .notes-list {
+            margin: 10px 0 0;
+
+            padding-left: 22px;
+
+            color: #4b5563;
+
+            line-height: 1.8;
+
+            font-size: 1rem;
+        }
+
+        .notes-list li {
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           IMPORTANT BOX
+        ========================= */
+
+        .important-box {
+            margin-top: 20px;
+
+            padding: 18px;
+
+            border-radius: 18px;
+
+            background: #ffffff;
+
+            border: 1px solid #dccfea;
+
+            box-shadow:
+                0 2px 7px rgba(0,0,0,.04);
+        }
+
+        .important-box strong {
+            color: var(--primary-purple);
+        }
+
+        /* =========================
+           MAP / IMAGE BOX
+        ========================= */
+
+        .diagram-container {
+            margin-top: 18px;
+
+            padding: 14px;
+
+            border-radius: 18px;
+
+            background: #ffffff;
+
+            border: 1px dashed #c9b8db;
+
+            text-align: center;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+
+            border-radius: 12px;
+        }
+
+        .diagram-caption {
+            margin: 10px 0 0;
+
+            font-size: .9rem;
+
+            color: var(--text-muted);
+
+            font-style: italic;
+        }
+
+        /* =========================
+           HIGHLIGHT COLORS
+        ========================= */
+
+        .hl-purple  { color: #64229b; font-weight: 800; }
+        .hl-blue    { color: #1d4ed8; font-weight: 800; }
+        .hl-red     { color: #b91c1c; font-weight: 800; }
+        .hl-green   { color: #15803d; font-weight: 800; }
+        .hl-orange  { color: #c2410c; font-weight: 800; }
+        .hl-pink    { color: #be185d; font-weight: 800; }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+
+            padding: 24px 10px 35px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+            line-height: 1.6;
+        }
+
+        footer strong {
+            color: var(--primary-purple);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            body {
+                padding: 14px;
+            }
+
+            .top-navigation {
+                gap: 10px;
+
+                margin-bottom: 22px;
+            }
+
+            .nav-button {
+                min-height: 52px;
+
+                padding: 0 18px;
+
+                border-radius: 17px;
+
+                font-size: .98rem;
+            }
+
+            .page-header {
+                padding: 38px 16px;
+
+                border-radius: 25px;
+
+                margin-bottom: 24px;
+            }
+
+            .page-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .page-header p {
+                font-size: .98rem;
+            }
+
+            .notes-container {
+                padding: 20px;
+
+                border-radius: 23px;
+            }
+
+            .notes-title {
+                font-size: 1.4rem;
+            }
+
+            .lesson-card {
+                padding: 20px;
+
+                border-radius: 20px;
+            }
+
+            .lesson-title {
+                font-size: 1.15rem;
+            }
+
+            .lesson-text,
+            .notes-list {
+                font-size: .96rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            .nav-button {
+                padding: 0 14px;
+
+                font-size: .92rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .notes-container {
+                padding: 17px;
+            }
+
+            .lesson-card {
+                padding: 17px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================== -->
+
+    <nav class="top-navigation">
+
+        <a
+            href="history-notes.html"
+            class="nav-button back-button"
+        >
+            ← Back
+        </a>
+
+        <a
+            href="index.html"
+            class="nav-button home-button"
+        >
+            🏠 Home
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================= -->
+
+    <header class="page-header">
+
+        <h1>
+            📜 History
+        </h1>
+
+        <p>
+            Chapter 4 — Complete Notes 🎓
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         NOTES
+    ========================= -->
+
+    <main class="notes-container">
+
+        <h2 class="notes-title">
+            📘 Unit Four: Politics, Economy And Society From The Late Thirteenth To The Beginning Of The Sixteenth Centuries <span class="hl-purple">(4 Hours)</span>
+        </h2>
+
+
+        <!-- LESSON 1 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🧠 4.1
+            </span>
+
+            <h3 class="lesson-title">
+                The "Restoration" of the "Solomonid"<sup>1</sup> Dynasty
+            </h3>
+
+            <p class="lesson-text">
+                The <span class="hl-purple">Zagwe dynasty</span> was overthrown in <strong class="hl-red">1270</strong> by a powerful force that combined military, economic, and ideological resources. <strong>Yekunno-Amlak</strong>, a contender from Amhara, about whose origin and early career very little is known, launched a series of military campaigns from Lasta to Gayint, ultimately defeating <strong>Yetbarek</strong>, the last Zagwe king. Relatively quiet politically and militarily, the Zagwe rulers were unable to resist, much less control, Yekunno-Amlak's military power base in Shewa, which had grown rich by diverting trade away from traditional routes through Lasta.
+            </p>
+
+            <p class="lesson-text">
+                In the dominant ideological narrative of the "Solomonids", the Zagwe dynasty was cast as the <strong class="hl-red">"usurper"</strong> of the royal throne of the ancient kingdom of Aksum, despite its promotion of Christianity and adherence to Aksumite secular culture. The <strong class="hl-purple"><em>Kibre Negest</em></strong> ("The Glory of the Kings"), the foundational myth of the Christian kingdom of Ethiopia, claims that Ethiopian rulers have descended from the ancient rulers of Aksum and beyond that from <strong>King Solomon</strong> and the <strong>Queen of Sheba</strong>. This has been constantly evoked to delegitimize the Zagwe and legitimize the "Solomonid" dynasty. Taking the reign of Yekunno-Amlak (r. 1270-85) as the starting point of the "restoration" of the ancient "Solomonid" dynasty of Aksum, the legend essentially binds Ethiopia with the Judeo-Christian tradition.
+            </p>
+
+            <div class="important-box">
+                <strong>📌 Footnote 1:</strong>
+                <p class="lesson-text">
+                    The term "Solomonid" is enclosed in quotation marks to signify that the rulers who purportedly trace their lineage back to King Solomon and the Queen of Sheba lack historical evidence to support their claims. The same also applies to "restoration" of the dynasty, and the accusation levelled against the Zagwe dynasty as "usurper". These terms are loaded with the ideological narrative of the "Solomonid" claimants.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- LESSON 2 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                ⚔️ 4.2
+            </span>
+
+            <h3 class="lesson-title">
+                Internal Political Conflict
+            </h3>
+
+            <p class="lesson-text">
+                The formative years of the "Solomonids" were characterized by two vexing challenges: establishing a consistent modality of <strong class="hl-blue">succession to the throne</strong> and formulating an effective policy for regulating Christian-Muslim relations in Ethiopia. As the emperors practiced polygamy and arranged political marriages between their offspring(s) and those of the tributary kings and provincial nobilities, intrigues were rife even before the demise of a reigning monarch. For instance, such crises of succession erupted following the death of <strong>Yekunno-Amlak</strong> (1285) and his son and successor, <strong>Yegba-Tsion</strong> (r. 1285-94).
+            </p>
+
+            <p class="lesson-text">
+                To prevent a similar future power struggle between potential heirs, a <strong class="hl-red">"royal prison"</strong> was established at <strong>Amba Gishen</strong>, in Wollo, commissioned by <strong>Widim-Ra'ad</strong> (r. 1299-1314). The fortress served the intended purpose from the thirteenth century until it fell to <em>Imam</em> <strong>Ahmed ibn Ibrahim al-Ghazi's</strong> army in <strong class="hl-red">1540</strong>. This flat-topped mountain fortress, with its steep sides, accessible only through a heavily guarded entrance, became the residence of the sons of monarchs, their immediate predecessors, and other princes, providing them with all kinds of amenities befitting their royal status. According to a fifteenth century manuscript, by the middle of the same century, <strong class="hl-orange">590</strong> descendants of sovereigns were sequestered at Amba Gishen. 🏰
+            </p>
+
+        </section>
+
+
+        <!-- LESSON 3 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🗺️ 4.3
+            </span>
+
+            <h3 class="lesson-title">
+                Power Consolidation and Spatial Extension
+            </h3>
+
+            <p class="lesson-text">
+                When Yekunno-Amlak ascended the throne in 1270, the Christian kingdom had already expanded its territory to a large portion of present-day <strong>Eritrea</strong>, northern, northwestern and central Ethiopia. However, it had no control east of the Shewan plateau, a territory increasingly occupied by such Muslim states as <strong>Ifat</strong> and <strong>Hadiya</strong>. Moreover, there were other political entities of various sizes, including the kingdom of the Ethiopian Jews, the kingdom of Gojjam, the kingdom of Damot, and Muslim principalities along the coast from the Dahlak archipelago in the Red Sea to the Somali settlement of Brava on the coast of the Indian Ocean.
+            </p>
+
+            <p class="lesson-text">
+                Upon becoming king, <strong class="hl-purple">Amde-Tsion</strong> (r. 1314-44) embarked on two major projects: solidifying the power of the "Solomonid" dynasty in the Christian provinces, and enlarging the kingdom by conquering other political units. His efforts to consolidate power were resisted by governors seeking to strengthen their own positions at the expense of the central authority. Amde-Tsion dealt with the pressing internal problem by successfully suppressing politically motivated revolts, particularly in the northern region of <strong>Enderta</strong>. In the immediate aftermath of the suppression of the revolts, he reorganized the rebellious provinces into smaller, more easily governable units led by trusted governors, backed and controlled by strategically placed imperial garrisons.
+            </p>
+
+            <p class="lesson-text">
+                Under Amde-Tsion, the Christian kingdom saw <strong class="hl-green">rapid expansion</strong>, with no parallel in medieval Ethiopian history. The emperor marched south and successfully conquered the vast kingdoms of <strong>Damot</strong> and <strong>Hadiya</strong>, the strongest polities west and south of the Awash River, respectively, in <strong class="hl-red">1316-17</strong>. His kingdom's sphere of influence stretched to the region encompassing the basins of the Gibe, Gojeb and Omo rivers. Subsequently, Gojjam and the northern area of Lake Tana were also annexed around this time. Thus strengthened, Amde-Tsion was able to assert his authority over a chain of Muslim communities stretching from the Gulf of Aden to the Awash valley — <strong>Ifat, Dawaro, Sharkha, and Bali</strong>. In reducing the powerful Muslim principalities into tribute-paying vassalage and strengthening the Christian military positions on all fronts, Amde-Tsion's achievement was immense. The Arab historian <strong>Ibn Fadil al Umari</strong> described him as having "ninety-nine kings under him, and that he makes up the hundredth." Amde-Tsion is rightly credited for shaping and solidifying the medieval Christian kingdom of Ethiopia. 👑
+            </p>
+
+            <p class="lesson-text">
+                That said, it is important to bear in mind that the emperor's expansionist campaigns were primarily motivated by the ambition to seize new lands and gain control over the lucrative trade routes dominated by Ethiopian Muslims. In short, the "Solomonids" had set their eyes on <strong class="hl-orange">"terrain and trade."</strong> Yet, the kingdom's rapid expansion to the trade hubs of the southern and western regions entailed the subjugation of the indigenous peoples on the one hand and the admixture of linguistic, religious and cultural features on the other.
+            </p>
+
+            <div class="diagram-container">
+                <img
+                    src="map3-amde-tsion-kingdom.png"
+                    alt="Map 3: The Ethiopian Christian Kingdom during the Reign of Emperor Amde-Tsion"
+                >
+                <p class="diagram-caption">
+                    🗺️ Map 3: The Ethiopian Christian Kingdom during the Reign of Emperor Amde-Tsion.<br>
+                    Source: Taddesse Tamrat, <em>Church and State in Ethiopia, 1270-1527</em> (Oxford: Clarendon Press, 1972), p. 133.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- LESSON 4 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🏛️ 4.4
+            </span>
+
+            <h3 class="lesson-title">
+                Administration and Military Organization of the Ethiopian Christian Kingdom
+            </h3>
+
+            <h4 class="subheading">
+                4.4.1. Administration
+            </h4>
+
+            <p class="lesson-text">
+                Amde-Tsion's vast kingdom, with few additions by his descendants, was <strong class="hl-red">not a unified state</strong>. It was a loose confederation of numerous principalities with diverse religious, ethnic, and linguistic traits. Despite the constant use of military campaigns, the monarchs attempted to form a functional government and administrative machinery to render the kingdom more cohesive.
+            </p>
+
+            <p class="lesson-text">
+                The <strong class="hl-purple">hybrid administrative system</strong> served as the basic organization of the kingdom. It consisted of <strong>three concentric circles</strong> around a core:
+            </p>
+
+            <ul class="notes-list">
+                <li>
+                    🔵 <strong>Innermost circle</strong> — the core provinces directly controlled by the emperor and administered by his representatives, where centralized administration appeared stronger.
+                </li>
+                <li>
+                    🟣 <strong>Second circle (largest part)</strong> — territories whose rulers, upon submission to the king, payment of tribute and fulfilment of obligations, could retain their autonomy and hereditary positions; heavily garrisoned by the <em>chewa</em> military regiment.
+                </li>
+                <li>
+                    ⚪ <strong>Third circle</strong> — territories lying beyond the direct control of the king although considered part of the kingdom's political realm; authority here was more symbolic than real, and local rulers were expected to acknowledge suzerainty and pay tribute, or else face raids and devastation.
+                </li>
+            </ul>
+
+            <p class="lesson-text">
+                Despite the appointment of numerous titled officials at both the royal court and local levels, a centralized system of administration was <strong class="hl-red">never fully achieved</strong>. As the kingdom expanded, governing the realm through the traditional military administration became increasingly difficult. The daily lives of people in different regions were highly localized. Emperor <strong class="hl-purple">Zara-Yaqob</strong> (r. 1434-1468) was particularly determined to establish a centralized administrative system by strengthening the central authority, creating a body of state officials, reorganizing court officials, bolstering the army, and increasing control over revenue sources. He also sought the active involvement of the church hierarchy and monastic orders in implementing his reforms. However, unlike his predecessors' cautious approach, Zara-Yaqob's radical approach ultimately <strong class="hl-red">backfired</strong>, as it united rival factions and power holders against his reforms.
+            </p>
+
+            <h4 class="subheading">
+                4.4.2. Military Organization
+            </h4>
+
+            <p class="lesson-text">
+                For much of the medieval period, the kingdom's army consisted of <strong>four types of regiments</strong>:
+            </p>
+
+            <ol class="notes-list">
+                <li>Regular troops of the Emperor</li>
+                <li>Regular troops of individual military leaders</li>
+                <li>Specially mobilized territorial troops</li>
+                <li>Irregular troops</li>
+            </ol>
+
+            <p class="lesson-text">
+                The spearhead of the traditional military units were regiments called <strong class="hl-purple"><em>chewa</em></strong>. The word <em>chewa</em> has had a complex history, for its earliest meaning was a military regiment. Other terms used to describe units or armies included <em>serawit</em>, <em>hara</em> ('army'), and <em>chefra</em> ('body of troops'). These regiments were organized on the basis of region of origin and identity, and relied on provisions supplied by the peasantry.
+            </p>
+
+            <p class="lesson-text">
+                A network of <em>chewa</em> regiments formed the core of the state's army from the late fourteenth century to the early sixteenth century. The rapid expansion of territories allowed Amde-Tsion and his successors to create new <em>chewa</em> regiments from the conquered peoples, who were known for their martial abilities. These military units had diverse religious and ethnic composition. Emperor Yekunno-Amlak frequently participated in fierce battles, with his front line commanders often chosen from trusted friends and relatives. These officers held titles such as <strong>azmach, dejjazmach, ras, fitawrari, balambaras, azazh</strong> and <strong>basha</strong>. The number of soldiers under the command of each type of officer varied, with a <em>ras</em> typically commanding larger armies (up to <strong class="hl-orange">40,000</strong>), <em>dejjazmach</em> or <em>fitawrari</em> commanding mid-sized corps (up to <strong class="hl-orange">10,000</strong> men), and other officers commanding smaller groups of men (<strong class="hl-orange">2,000 to 5,000</strong>). 🪖
+            </p>
+
+            <p class="lesson-text">
+                During Amde-Tsion's reign, a significant reorganization and enhancement of the royal army occurred with the introduction of new units. The chronicle of Amde-Tsion documents <strong>three distinct types of units</strong>:
+            </p>
+
+            <ul class="notes-list">
+                <li>
+                    <strong>Territorial forces</strong> named after the provinces from which they were recruited, such as Amhara, Shewa, Gojjam, Damot, Hadiya, Seqelt, Gondar, Harb Gwanda (likely Gafat), and Nara.
+                </li>
+                <li>
+                    <strong>Elite contingents</strong> with prestigious names signifying their military prowess, such as <em>Tekula</em> ('Jackal'), <em>Qeste neheb</em> ('arrow of a bee'), and <em>Korem</em> ('cavalry').
+                </li>
+                <li>
+                    Units identified by <strong>weapons or equipment</strong>: <em>Tsewareyane warmat</em> ('carriers of spear(s)'), <em>Tsewareyane warmat abbiyan</em> ('carriers of large spears'), and <em>Tsewareyane asayeft</em> ('carriers of swords'), among others.
+                </li>
+            </ul>
+
+            <p class="lesson-text">
+                Regiments and units in the armies of later emperors followed similar patterns. Zara-Yaqob, in particular, reorganized the <em>chewa</em> regiment by keeping them in the royal camp as a mobile striking force and strengthening his bodyguards. He also attempted to introduce new technologies and methods of warfare into his army from <strong>Mamluk Egypt</strong> and <strong>Christian Europe</strong>. <strong>Shihab al-Din</strong> describes the army of Emperor <strong>Lebne-Dengel</strong> (r. 1508-1540) "as numerous as locusts", with approximately <strong class="hl-orange">16,000 cavalry</strong> and <strong class="hl-orange">200,000 infantry</strong> at one point around 1529.
+            </p>
+
+            <h4 class="subheading">
+                4.4.3. Temporal Administrative and Military Decline
+            </h4>
+
+            <p class="lesson-text">
+                The traditional dominance of the Christian kingdom in Ethiopia's balance of power began to <strong class="hl-red">wane</strong> in the last three decades of the fifteenth century. One significant factor for this decline was internal political rift, which began at the end of Zara-Yaqob's reign. Law and order reached a low point, the power of the monarchy weakened, and the economy suffered. Lords who resented centralized power often defected to the Muslim forces. By the early sixteenth century, the kingdom was once again divided amid internal rivalry, followed by large scale violent conflict.
+            </p>
+
+            <p class="lesson-text">
+                The second factor was the <strong class="hl-red">failure of national integration</strong>. The extensive conquests of the fourteenth and fifteenth centuries brought into the orbit of the Christian kingdom diverse communities. However, cultural assimilation and political integration could not be fully realized. Emperor Zara-Yaqob made serious attempts to forge a unified nation from various communities. However, in his efforts to achieve unity, he attempted to superimpose religious nationalism on his subjects, ultimately resulting in substantial failure. Worse yet, his successors proved to be powerless to remedy the situation. Thus, dynastic instability followed, worsened by the short reigns of youthful and inexperienced monarchs, and ambitious royal councillors. As can be anticipated, the weakening of the central power reduced the revenue flow as more of it was retained by local authorities due to the withdrawal or weakening of imperial garrisons.
+            </p>
+
+        </section>
+
+
+        <!-- LESSON 5 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                💰 4.5
+            </span>
+
+            <h3 class="lesson-title">
+                Economic Bases of the Kingdom
+            </h3>
+
+            <p class="lesson-text">
+                The economic power of the kingdom was primarily derived from control over <strong class="hl-green">land, labour, and trade routes</strong>. Possessing land and the revenue it generated enhanced the ability to maintain larger military forces. The conquests not only expanded the court and the army, but also enriched the monarchs themselves. Land was the cornerstone of the country's economy, supporting farming, animal husbandry, and mining of minerals such as <strong>copper, iron, gold, and silver</strong>. The numerous land grants associated with the "Solomonids" suggest that a significant source of their power stemmed from the allocation of fiefs to their extensive followers in exchange for primarily military services. Moreover, a significant portion of the wealth came from tributes imposed on dependent peripheries. Failure to pay tribute was viewed as a serious act of <strong class="hl-red">treason</strong> and subjected to punishment: disgrace, arrest, or execution of the responsible vassals.
+            </p>
+
+            <p class="lesson-text">
+                After conquering the Muslim territories along the eastern frontiers, the monarchs could tap into a profitable source of wealth through their control over trading activities. They capitalized on these activities to generate revenue by levying <strong>import and export taxes</strong> on all traded goods and organizing well-equipped caravans led by their own appointed commercial representatives.
+            </p>
+
+        </section>
+
+
+        <!-- LESSON 6 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🤝⚔️ 4.6
+            </span>
+
+            <h3 class="lesson-title">
+                Cooperation, Competition and Conflict between Christian and Muslim Rival Powers
+            </h3>
+
+            <p class="lesson-text">
+                By the end of the thirteenth century, the flourishing trade had given rise to powerful Muslim communities that formed well-organized principalities and states. Among the most significant were <strong>Shewa, Ifat, Fatagar, Dawaro, Hadiya, Bale, and Adal</strong>. In this regard, it is important to note the distinction between the sultanates of <strong class="hl-purple">Adal</strong> and <strong class="hl-purple">Ifat</strong>, which are often mistakenly conflated. Adal was a small state believed to have been situated south of Ifat, possibly in the direction of the Harar Plateau. It was conquered by the Walasma ruler of Ifat in <strong class="hl-red">1288</strong>, following his triumph over the Makhzumite dynasty of Shewa, and other Muslim principalities. In the years following 1288, Adal apparently regained its sovereignty. This is because during Amde-Tsion's conflicts with the Muslims, Adal operated independently from Ifat. It eventually formed an alliance with the Walasma ruler Jamaladdin, rather than being a vassal. However, this coalition was defeated by Amde-Tsion.
+            </p>
+
+            <p class="lesson-text">
+                Soon afterwards, however, Adal became subordinate to Ifat. This arrangement apparently persisted until <strong class="hl-red">1415</strong>. In this year, Zeila was captured by King Yishaq, and the Walasma <em>sultan</em> Sadaddin Abu l-Barakat Muhammad b. Ahmad was killed. The members of the Walasma family were forced to flee to Yemen but later returned. From then on, they no longer held the title <strong>"sultan of Ifat"</strong> but <strong>"sultan of Adal."</strong> It appears that their homeland Ifat was vulnerable to Christian attacks, forcing them to relocate the centre of their state farther south. Their capital shifted to <strong>Dakar</strong>, east of Harar. Adal was no longer part of Ifat; rather, Ifat was part of Adal. Adal inherited the political mantel and aspirations of Ifat, and solidified its authority using its new centre as a base to launch military campaigns against the Christian Kingdom.
+            </p>
+
+            <p class="lesson-text">
+                One of the most challenging tasks for the Christian Kingdom was to establish amicable relations with the influential Muslim Sultanates. In the absence of effective policy, the interactions between the Christian Kingdom and the Muslim principalities swung between <strong class="hl-green">peace</strong> and <strong class="hl-red">hostility</strong>. To the extent possible, peaceful cooperation was achieved through the implementation of a <strong>tributary system</strong>. Many Muslim principalities continued to be governed by their hereditary rulers as long as they acknowledged the suzerainty of the Christian monarch, paid tribute, and guaranteed the safe passage of traders to the coast. This peaceful approach benefited both parties, as each desired security on the trade routes that crisscrossed their respective territories.
+            </p>
+
+            <p class="lesson-text">
+                The desire for <strong class="hl-red">economic and political hegemony</strong> lay behind the causes of the hostility that for the most part characterized the relationship between the two rival Christian and Muslim power centres. Refusal to pay tribute and the prevention of free passage of messengers and agents were factors precipitating several armed confrontations, all stemming ultimately from the desire for economic and political hegemony. For instance, determined to expand the power of the "Solomonid" dynasty, Yekunno-Amlak reduced Ifat to a tributary status. Amde-Tsion's punitive campaigns against Ifat, and later against Hadiya, Fatagar, and Dawaro, were provoked by the attack of Ifat's ruler Haqaddin I on the Christian Kingdom in <strong class="hl-red">1328</strong>, as well as the arrest of a Christian servant of the emperor en route to the coast. He also ahead crushed the planned attacks of Ifat's Sultan Sabreddin, Dawaro's ruler Haydara and Hadya's king Amano in <strong class="hl-red">1332</strong>.
+            </p>
+
+            <p class="lesson-text">
+                <strong>Neway Maryam</strong> (r. 1371-80) launched a campaign against Adal after Haqaddin II (1363-86) refused to pay tribute. The confrontations of <strong>Dawit II</strong> (r. 1379-1412), <strong>Tewodros I</strong> (r. 1412-1413) and <strong>Yeshaq</strong> (r. 1413-1430) with successive leaders of Adal were driven by both parties' desire to assert dominance. The well-documented <strong class="hl-red">battle of Yeguba</strong> in <strong class="hl-red">1445</strong> was triggered by the refusal of the Adal king Ahmed Badlay to send tribute to Emperor Zara-Yaqob. Peaceful relations resumed when Mohammed Ahmed (r. 1445-71), the son and successor of Ahmed Badlay, sent the required tribute to Emperor Ba'ede Mariam (r.1468-78). Emir Mahfuz's advance against Emperor Lebne-Dengel ended in failure and resulted in his death in <strong class="hl-red">July 1517</strong>. These military campaigns were aimed at ending the economic hegemony of the Christian kingdom and establishing his own hegemony over the Christian Kingdom.
+            </p>
+
+            <div class="important-box">
+                <strong>📌 Important:</strong>
+                <p class="lesson-text">
+                    The religious difference between Christian emperors and Muslim rulers was <strong class="hl-red">not the primary cause</strong> of the conflicts. However, both rulers fortified their campaigns with religious motivations, as this allowed them to effectively mobilize their troops with crusading or jihadist fervour. Thus, the conflicts should not be viewed solely through ethno-religious lenses, but rather as a complex interplay of varying economic and political aspirations.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- LESSON 7 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌍 4.7
+            </span>
+
+            <h3 class="lesson-title">
+                Interaction and Integration of Peoples and Cultures
+            </h3>
+
+            <p class="lesson-text">
+                In the evolution of a multi-ethnic society, three key patterns underpin the Ethiopian collective experience: the continuous interaction between diverse peoples, the formation of shared cultural characteristics across Ethiopia, and a distinct mode of absorbing periodic influx of new peoples and cultures. The successive conquests of the Christian Kingdom brought into the fold a diverse array of peoples with varying identities. Of necessity, these peoples continuously interacted with one another, resulting in the process a shared sense of belongingness. The intricate web of interactions among the diverse peoples of Ethiopia laid the condition for the possibility of conceiving a composite version of Ethiopian history, one that avoids the pitfall of mechanical aggregation. This, as the record shows, came in the backdrop of the following historical factors.
+            </p>
+
+            <h4 class="subheading">
+                4.7.1. Expansion of the Christian Kingdom
+            </h4>
+
+            <p class="lesson-text">
+                The expansion of the Christian Kingdom in the fourteenth and fifteenth centuries promoted the integration of Ethiopia in two respects. First, it broadened the support base for the kingdom by attracting more people in the highland plateau who needed little prompting to identify with the Christian Kingdom and its Christian religion. Second, the expansion enthralled the outlying kingdoms and peoples with the grandeur of the imperial center and the power of its religion. They even began to associate themselves with the legend of the <strong class="hl-purple">Queen of Sheba</strong>. For example, the kings of <strong>Kafa</strong> and <strong>Kambata</strong> claimed descent from Solomon and Sheba. The <strong>Sidama</strong> have a legend that describes Emperor Zara-Yaqob's reign as their own golden age, while the <strong>Dizi</strong> and others in the Maji area remember the emperor as <strong>Seraqo</strong>. A more telling indication of the influence of the Christian Kingdom's ruling "Solomonid" dynasty is the use of Amharic terminologies in the political vocabulary of the Omotic kingdoms, such as <em>yegebir adarash</em> (royal hall), <em>amakari</em> (councilor), <em>awaj</em> (proclamation), <em>gebir</em> (tribute), <em>negarit</em> (royal drum), and <em>debab</em> (royal umbrella). 👑
+            </p>
+
+            <h4 class="subheading">
+                4.7.2. Population Movement, Interaction, and Integration
+            </h4>
+
+            <p class="lesson-text">
+                As the Christian Kingdom expanded, various populations also moved into the kingdom through both small and large-scale movements. A good number of Ethiopian people have travelled over time in search of new lands or on raiding expeditions, or to escape famine, or to conduct trade or in pursuit of religious studies and on pilgrimages. These frequent travels have helped to forge intimate relationship between otherwise distinct ethnic groups of Ethiopia.
+            </p>
+
+            <p class="lesson-text">
+                The <strong>Amarro</strong>, <strong>Konta</strong>, and other ethnic groups have credible traditions regarding the immigration of the Amhara from the north several centuries ago. Conversely, the <strong>Wolayta</strong> trace one of their prominent dynasties, called <strong>Tigre</strong>, to Tigrean immigrants. Likewise the kingdom of <strong>Dawuro</strong> is believed to have been established by refugees from Dawaro in the sixteenth century. During this period, groups of <strong>Gurage</strong> were even found as far north as Gondar. The <strong>Kafa</strong> minstrels have rich stories that tell of their origin from northern Agew immigrants who intermarried with and passed down their art to some noble Kafa clans. The Muslims of Shewa and the Gurage claim to have hailed from a locality in Tigray. What can be said with certainty is that Christians migrated from Tigray in the north to the Amhara province and eventually farther south to Shewa. 🚶‍♂️
+            </p>
+
+            <h4 class="subheading">
+                4.7.3. Roving Court
+            </h4>
+
+            <p class="lesson-text">
+                <strong>Adafa</strong>, the seat of the Zagwe rulers, served as the last permanent capital of the Ethiopian Christian Kingdom until the establishment of <strong>Debre Birhan</strong> for a brief period in the 1450s. While <strong>Aksum</strong> retained its status as a spiritual capital, Yekunno-Amlak and his successors governed their vast territories from mobile royal camps in regions such as Ifat, Amhara, Shewa, Dawaro, and Fatagar. This mobility allowed them to assert their authority, dispense justice, quell uprisings, deter raids from lowland pastoralists, and avoid resource diversion.
+            </p>
+
+            <p class="lesson-text">
+                Despite its mobility, the royal court played a crucial role as an <strong class="hl-green">integrative force</strong>. It remained the central hub of political and economic activity for all subjects, acting as a melting pot for the bearers of diverse customs and languages. The royal encampment also served as trading centre where Christian and Muslim artisans, vendors and merchants met to exchange goods and services. This regular traffic between the court and country no doubt fostered cultural exchange between large numbers of Ethiopians, contributing to the relative cohesion of the kingdom.
+            </p>
+
+            <h4 class="subheading">
+                4.7.4. Establishment of Military Garrisons
+            </h4>
+
+            <p class="lesson-text">
+                The military regiments of the Ethiopian Christian Kingdom also played a crucial role in both political and cultural integration. Military garrisons of <em>chewa</em> regiments were established in newly conquered territories. The regiments became less mobile, forming strong connections with the inhabitants of the territories they were stationed in, which in due course evolved into a territorial army over time. The soldiers of the <em>chewa</em> regiments gradually melded with the local population through marriage and other social ties. Their ambitious commanders were also married to the local nobility and began to identify with elites of the host community. This integration allowed the soldiers to promote Christianity, languages, class manners, and the land tenure system to the regions they were stationed in. Even if lopsided, this cultural integration served the kingdom's expansion further and influenced new territories.
+            </p>
+
+            <h4 class="subheading">
+                4.7.5. Warfare
+            </h4>
+
+            <p class="lesson-text">
+                Throughout history, various Ethiopian social groups have engaged in conflicts for a multitude of reasons, such as acquiring cattle, slaves, territory, control over trade routes, fulfilling ritual obligations or display of masculinity. These conflicts facilitated interactions among different groups. The resulting displacement and resettlement also fostered new forms of encounters.
+            </p>
+
+            <h4 class="subheading">
+                4.7.6. Market Centres as Cultural Melting Pots
+            </h4>
+
+            <p class="lesson-text">
+                Due to the limited resources available in Ethiopia's diverse ecological regions, the necessity of meeting consumption needs prevented any of the distinct peoples from remaining isolated for extended periods. Markets have served as a platform for interethnic interactions. Local and regional markets facilitated direct contact between different groups, and indirectly through caravan trades. Local markets, which typically convened weekly, attracted numerous traders and buyers from distant locations and diverse ethnic and religious backgrounds. Most Ethiopians are not confined to a single market but are rather familiar with markets networks in their area that meet on different days of the week. 🛒
+            </p>
+
+            <p class="lesson-text">
+                In addition to meeting local demands, goods from local markets are transported by traders to larger and distant regional centers. Regional markets draw people and products from more diverse locations and greater distances. Historical marketplaces such as <strong>Dabarwa</strong> in Eritrea, <strong>Manadalay</strong> in southern Tigray, <strong>Qorqora/Qoreta</strong> (around Waldiya) and <strong>Wasel</strong> near Ware-Illu had played an important integrative role. The ruins surrounding <strong>Jigjiga, Harar</strong> and <strong>Charchar</strong> attest to market towns that had once thrived along the main trade routes. <strong>Weez-Gebeya</strong> in western Shewa, <strong>Suq-Wayzaro</strong> in Damot, and <strong>Suq-Ameja</strong> and <strong>Gandabalo</strong> in Ifat-Awsa in eastern Shewa were famed hubs for commercial and cultural exchange. Gandabalo, in particular, stands out as a site of convivial interaction between Muslim and Christian communities.
+            </p>
+
+            <h4 class="subheading">
+                4.7.7. The Ethiopian Orthodox Church and Monastic Networks Fostered Integration
+            </h4>
+
+            <p class="lesson-text">
+                The Ethiopian Orthodox Church has historically been a force of integration particularly on the religious and cultural planes. It played a crucial role in uniting diverse groups whose heterogeneity was quite marked, particularly in the wake of the territorial expansions of the kingdom. The church wove a fabric of unity and identity where the administrative and military organization of the kingdom had little success.
+            </p>
+
+            <p class="lesson-text">
+                Two factors which prompted this role were the internal revival within the church and the emergence of monastic networks. The church's missionary work closely followed the kingdom's expansion in the fourteenth century, with support from the kingdom in the form of land grants to aid in the evangelization of non-Christian populations in newly conquered regions. The revival of the church also led to the rise of monastic activities, particularly in Amhara and Shewa, by monastic figures like <strong>Iyesus Mo'a</strong> of Debre Hayq and <strong>Tekle-Haymanot</strong> (1215-1313) of Debre Asbo (renamed in the fifteenth century as <strong>Debre Libanos</strong>). Monasteries became the epicenters of the dissemination of Christianity, with organized missionary activities dating back to the thirteenth century. Later, monastic fathers and their disciples went to the Ethiopian interior with little more than a cross. ✝️
+            </p>
+
+            <p class="lesson-text">
+                Christianity was evangelized without completely eradicating traditional beliefs and practices. Nevertheless, Emperor Zara-Yaqob's church reforms, which aimed to maintain the <strong class="hl-purple">"purity"</strong> of Christianity, were the last serious blow to this practice of syncretism. His reforms had grave consequences for people suspected of magical practices and monastic communities accused of alleged heresies. While the <strong>Ewostatean</strong> monastic movement, active since the fourteenth century and centered on the issue of the observance of the Sabbath, was peacefully resolved, others, like the <strong>Stephanites</strong>, who refused to bow before religious icons, faced gruesome persecution. Despite his zealous efforts to draw a clear line between Christian and indigenous practices, Zara-Yaqob had little success in eradicating non-Christian practices within the Christian faith.
+            </p>
+
+            <p class="lesson-text">
+                As a result, Christianity continued to intertwine with traditional beliefs, giving rise to a <strong class="hl-green">syncretism</strong> that persists to this day. The cultural repertoire of monastic missionaries laid the groundwork for the Judeo-Christian tradition in Ethiopia. To the Christian faithful, Christianity offered a sense of belonging to a new worldview, and a way of life. The faith drew converts from diverse linguistic and cultural backgrounds, manifested by the numerous monasteries and parishes that dotted the kingdom from north to south, and east to west.
+            </p>
+
+            <h4 class="subheading">
+                4.7.8. Islam Promoted Integration, Unity and Collective Identity
+            </h4>
+
+            <p class="lesson-text">
+                Islam has played a crucial role in Ethiopia in uniting diverse groups who had either abandoned their indigenous beliefs or converted from other faiths to embrace the tenets of the Islamic faith. In the views of most Muslims, Ethiopia enjoys a privileged status as a place of sanctuary for the persecuted companions of the prophet Mohamed. The story of <strong>Al-Najashi</strong> in Islamic tradition holds a unique place in Ethiopia's socio-political narrative, serving as a source of collective memory of interfaith harmony. ☪️
+            </p>
+
+            <p class="lesson-text">
+                Thanks to the preaching of itinerant Sufi Sheikhs and scholars, learned men, sometimes of foreign origin (especially Yemenites), and traders, Muslim communities thrived from eastern Ethiopia as far north as Tigray from the eighth to the sixteenth centuries. There was regular contact between the various Muslim communities through trade, education, pilgrimage and movement of peoples.
+            </p>
+
+            <p class="lesson-text">
+                Basic Islamic cultural institutions in Ethiopia did not take root in the first half of the fourteenth century, but developed in time. Islamic literature in Arabic and local languages flourished in <strong>Harar</strong> and <strong>Wollo</strong>. This was greatly facilitated by the mystical orders that inspired the composition of the hagiographies of Sufi masters. <em>Manzuma</em> poems in praise of the Prophet and the saints were recited throughout the country. Like Christianity, Islam offered wide room for local customs insofar as they did not contradict the fundamental tenets of the religion.
+            </p>
+
+            <div class="important-box">
+                <strong>📌 Remember:</strong>
+                <p class="lesson-text">
+                    In a nutshell, the missionary activities of Christians and Muslims intertwined Ethiopia with networks of supra-ethnic alliances. Despite occasional conflicts between the two religious groups, mutual accommodation later was common throughout the period in question. Given the syncretic nature of Islam and Christianity in Ethiopia, followers of both faiths have found common ground in shared religious practices. 🤝
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- LESSON 8 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌐 4.8
+            </span>
+
+            <h3 class="lesson-title">
+                External Relations
+            </h3>
+
+            <h4 class="subheading">
+                4.8.1. Relations with Egypt
+            </h4>
+
+            <p class="lesson-text">
+                Yekunno-Amlak sent an emissary to Egypt's sultan, <strong>Baybars</strong>, in <strong class="hl-red">1272</strong> requesting an <em>abun</em> from the Coptic Church. Furthermore, both Egypt and Ethiopia continued to act as protectors of religious minorities in their respective domain. Egypt also wanted to ensure the secure flow of the Blue Nile. The Egyptian ruler <strong>Mohammed ibn Qala'un</strong> persecuted the Copts and destroyed their churches in Cairo in the early fourteenth century. In response, Amde-Tsion demanded the restoration of the churches and warned that failure to do so would result in the <strong class="hl-blue">diversion of the Nile waters</strong>. Patriarch Marqos (1348-63) sent a message to Sayfa-Arad (r.1344-71), revealing his imprisonment by the then Egyptian Sultan. Sayfa-Arad is said to have mobilized a huge army against Egypt after which the Sultan released the patriarch and sent a delegation to the King. Besides, Patriarch Matewos (1328-1408), delegated by the sultan, established harmonious relations between Dawit II and Egypt. The sultan is said to have sent a piece of the <strong>"True Cross"</strong> and, in return, Dawit II is said to have given a number of religious paintings to the sultan.
+            </p>
+
+            <p class="lesson-text">
+                Zara-Yaqob wrote a friendly letter to Sultan Barsbay requesting the protection of Christians in Egypt in <strong class="hl-red">1437/8</strong>. Yet, three years later, Patriarch Yohannes XI wrote Zara-Yaqob a letter stating the demolition of the famous church of <strong>Debre-Mitmaq</strong>. Zara-Yaqob then sent an envoy to Sultan Jaqmaq (r. 1438-53) with a strongly worded letter. In reply to this, Jaqmaq sent an envoy to Ethiopia, with complimentary gifts to the emperor but rejected the reconstruction of the church.
+            </p>
+
+            <h4 class="subheading">
+                4.8.2. Relations with Christian Europe
+            </h4>
+
+            <p class="lesson-text">
+                Amde-Tsion sent a message to <strong>King Phillip of France</strong> in <strong class="hl-red">1332</strong>. The Ethiopian delegation that carried the letter was in attendance at Gian Galeazzo Visconti's coronation in Milan in 1395. The earliest known message to Ethiopia from a European monarch is the letter of <strong>King Henry IV of England</strong> dated <strong class="hl-red">1400 AD</strong> and addressed to "Prester John." Emperor Dawit II received some craftsmen, mainly Florentines. The emperor sent his first delegation to Europe led by a Florentine man, <strong>Antonio Bartoli</strong>, in 1402. Three Ethiopians attended an ecumenical council of the Catholic Church held in the diocese of <strong>Constance</strong>, in present-day Germany from November 1414 to April 1418, addressing issues such as the schism between the Western and Eastern churches, heresies, ecclesiastical conciliarism and papal supremacy. 🌍
+            </p>
+
+            <p class="lesson-text">
+                Alphonso de Paiva V of Aragon (today's Spain) received a delegation sent to ask for more artisans from Yishaq in the city of Valentia in 1427. The embassy of Charles, the Duke of Berry, consisting of craftsmen (the Neapolitan Pietro, a Spaniard and a Frenchman) reached Yishaq's court. A Silican, <strong>Pietro Rombulo</strong>, who had been in Ethiopia since the last years of Dawit's reign and who had previously carried out a successful trade mission to India on behalf of the king, was sent to Europe as Zara-Yaqob's ambassador in <strong class="hl-red">1450</strong>. Emperor Zara-Yaqob sent an Ethiopian priest, <strong>Fikre-Mariam</strong>, accompanied by two other individuals, to Alphonso of Aragon (also ruled as king of Naples and Sicily) to get political and technical assistance. Alphonso wrote a letter to Zara-Yaqob and informed him that he sent him artisans and masons he requested.
+            </p>
+
+            <p class="lesson-text">
+                The most authentic pieces of evidence on Ethio-Europe links are the maps of <strong>Egyptus Novelo</strong> (c. 1454) and <strong>Fra Mauro's Mappomondo</strong> (1460) which clearly depicted many places and peoples in the Horn. Venetian Gregorio or Hieronion Bicini visited Ethiopia in 1482. <strong>Pedros da Covilhao</strong> (Peter de Covilham) arrived at the court of Eskindir (r. 1478-1494) in 1493. Queen <strong>Elleni</strong> (the daughter of the Hadiya <em>garad</em>, married to Zara-Yaqob and regent of the under age Lebne-Dengel), anticipating the threat that would come from the Ottomans who showed a clear interest to support the Muslim sultanates, sent an Armenian called Mathew to Portugal around 1512. The Portuguese Embassy led by <strong>Rodrigo di Lima, Duwarto Galliba</strong> and <strong>Francisco Alvarez</strong> reached Ethiopia in <strong class="hl-red">1520</strong> and remained for six years. Its aim was to establish a naval port against the Turkish power in the Red Sea area, but it was not successful. ⛵
+            </p>
+
+        </section>
+
+
+        <!-- LEARNING ACTIVITIES -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                📚 Learning Activities
+            </span>
+
+            <h3 class="lesson-title">
+                Chapter 4 — Review Questions
+            </h3>
+
+            <ul class="notes-list">
+                <li>
+                    ➡️ What were the factors for the "restoration" of the "Solomonid" Dynasty?
+                </li>
+                <li>
+                    ➡️ Describe the causes of the internal political conflict in the royal court.
+                </li>
+                <li>
+                    ➡️ Discuss the dynamics of consolidation, territorial expansion, and unification.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- EXAM REVIEW -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🎯 Exam Review
+            </span>
+
+            <h3 class="lesson-title">
+                Chapter 4 Key Points
+            </h3>
+
+            <p class="lesson-text">
+                Review the most important concepts, events, people, institutions, and developments before taking the Chapter 4 quiz.
+            </p>
+
+            <ul class="notes-list">
+                <li>
+                    💡 Important definitions — <em>chewa</em>, Solomonid, syncretism, tributary system.
+                </li>
+                <li>
+                    ⚔️ Major political developments — restoration of the "Solomonid" dynasty, internal succession conflicts, Amba Gishen.
+                </li>
+                <li>
+                    💰 Major economic developments — land, labour, trade routes, tribute, taxation on caravans.
+                </li>
+                <li>
+                    🌍 Major social developments — population movement, market centres, the roving court, church and Islam as integrative forces.
+                </li>
+                <li>
+                    🧑‍🤝‍🧑 Important names and dates — Yekunno-Amlak (1270), Amde-Tsion (1314-44), Zara-Yaqob (1434-68), the battle of Yeguba (1445).
+                </li>
+                <li>
+                    📝 Possible examination points — causes of Christian-Muslim conflict, factors of decline, external relations with Egypt and Europe.
+                </li>
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        📜 <strong>History</strong>
+        <br>
+
+        📚 Unique Academic — Complete Full Notes
+
+    </footer>
+
+
+</body>
+
+</html>
