@@ -27,605 +27,6 @@
 
             --primary-purple: #64229b;
             --primary-dark: #4c1d7a;
-            --accent-gold: #d97706;
-            --accent-blue: #2563eb;
-
-            --border-color: #ded7e6;
-
-            --shadow:
-                0 4px 12px rgba(0,0,0,.08),
-                0 2px 5px rgba(0,0,0,.04);
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 18px;
-
-            min-height: 100vh;
-
-            background:
-                linear-gradient(
-                    180deg,
-                    #f5f3f7 0%,
-                    #eef0f3 100%
-                );
-
-            color: var(--text-main);
-
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
-            max-width: 760px;
-
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* =========================
-           TOP NAVIGATION
-        ========================= */
-
-        .top-navigation {
-            display: flex;
-
-            justify-content: space-between;
-            align-items: center;
-
-            gap: 16px;
-
-            margin-bottom: 28px;
-        }
-
-        .nav-button {
-            display: inline-flex;
-
-            align-items: center;
-            justify-content: center;
-
-            min-height: 54px;
-
-            padding: 0 24px;
-
-            border-radius: 18px;
-
-            text-decoration: none;
-
-            font-size: 1.05rem;
-            font-weight: 800;
-
-            transition:
-                transform .2s ease,
-                box-shadow .2s ease;
-        }
-
-        .nav-button:hover {
-            transform: translateY(-2px);
-        }
-
-        .nav-button:active {
-            transform: scale(.97);
-        }
-
-        .back-button {
-            color: #ffffff;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #6f2aa8,
-                    #54208a
-                );
-
-            box-shadow: var(--shadow);
-        }
-
-        .home-button {
-            color: var(--primary-purple);
-
-            background: #ffffff;
-
-            border: 1px solid var(--border-color);
-
-            box-shadow: var(--shadow);
-        }
-
-        /* =========================
-           PAGE HEADER
-        ========================= */
-
-        .page-header {
-            text-align: center;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #6a2aa0,
-                    #4b1d78
-                );
-
-            color: #ffffff;
-
-            padding: 40px 20px;
-
-            border-radius: 26px;
-
-            margin-bottom: 30px;
-
-            box-shadow: var(--shadow);
-        }
-
-        .page-header h1 {
-            margin: 0;
-
-            font-size: 2.1rem;
-            line-height: 1.25;
-
-            font-weight: 800;
-        }
-
-        .page-header p {
-            margin: 12px 0 0;
-
-            font-size: 1.05rem;
-
-            line-height: 1.6;
-
-            opacity: .95;
-        }
-
-        /* =========================
-           NOTES CONTAINER
-        ========================= */
-
-        .notes-container {
-            background: var(--card-bg);
-
-            border: 1px solid var(--border-color);
-
-            border-radius: 28px;
-
-            padding: 28px;
-
-            box-shadow: var(--shadow);
-
-            margin-bottom: 28px;
-        }
-
-        .notes-title {
-            margin: 0 0 24px;
-
-            color: var(--primary-purple);
-
-            font-size: 1.65rem;
-
-            line-height: 1.4;
-
-            font-weight: 800;
-            border-bottom: 2px solid #eedfef;
-            padding-bottom: 12px;
-        }
-
-        /* =========================
-           LESSON CARD
-        ========================= */
-
-        .lesson-card {
-            background:
-                linear-gradient(
-                    135deg,
-                    #fdfbfd,
-                    #f5f0f8
-                );
-
-            border: 1px solid #dccfea;
-
-            border-radius: 23px;
-
-            padding: 24px;
-
-            margin-bottom: 24px;
-        }
-
-        .lesson-card:last-child {
-            margin-bottom: 0;
-        }
-
-        .lesson-number {
-            display: inline-block;
-
-            margin-bottom: 10px;
-
-            color: #ffffff;
-            background: var(--primary-purple);
-            padding: 4px 12px;
-            border-radius: 12px;
-
-            font-size: .85rem;
-
-            font-weight: 800;
-
-            letter-spacing: .4px;
-
-            text-transform: uppercase;
-        }
-
-        .lesson-title {
-            margin: 6px 0 16px;
-
-            color: #2b1f3d;
-
-            font-size: 1.35rem;
-
-            line-height: 1.4;
-
-            font-weight: 800;
-        }
-
-        .lesson-text {
-            margin: 0 0 12px;
-
-            color: #374151;
-
-            font-size: 1rem;
-
-            line-height: 1.8;
-        }
-
-        /* =========================
-           SUBHEADINGS
-        ========================= */
-
-        .subheading {
-            margin: 22px 0 10px;
-
-            color: var(--primary-purple);
-
-            font-size: 1.15rem;
-
-            font-weight: 800;
-        }
-
-        .sub-subheading {
-            margin: 16px 0 8px;
-
-            color: #3b0764;
-
-            font-size: 1.05rem;
-
-            font-weight: 700;
-        }
-
-        /* =========================
-           LISTS
-        ========================= */
-
-        .notes-list {
-            margin: 10px 0 16px;
-
-            padding-left: 22px;
-
-            color: #374151;
-
-            line-height: 1.8;
-
-            font-size: 1rem;
-        }
-
-        .notes-list li {
-            margin-bottom: 10px;
-        }
-
-        /* =========================
-           IMPORTANT BOX & EXAMPLES
-        ========================= */
-
-        .important-box {
-            margin-top: 18px;
-            margin-bottom: 18px;
-
-            padding: 18px;
-
-            border-radius: 18px;
-
-            background: #ffffff;
-
-            border-left: 5px solid var(--primary-purple);
-            border-top: 1px solid #dccfea;
-            border-right: 1px solid #dccfea;
-            border-bottom: 1px solid #dccfea;
-
-            box-shadow: 0 2px 7px rgba(0,0,0,.04);
-        }
-
-        .important-box strong {
-            color: var(--primary-purple);
-        }
-
-        .example-box {
-            margin-top: 18px;
-            margin-bottom: 18px;
-
-            padding: 18px;
-
-            border-radius: 18px;
-
-            background: #f0fdf4;
-
-            border-left: 5px solid #16a34a;
-            border-top: 1px solid #bbf7d0;
-            border-right: 1px solid #bbf7d0;
-            border-bottom: 1px solid #bbf7d0;
-
-            box-shadow: 0 2px 7px rgba(0,0,0,.03);
-        }
-
-        /* =========================
-           DIAGRAM CONTAINER
-        ========================= */
-
-        .diagram-container {
-            text-align: center;
-            margin: 20px 0;
-            background: #ffffff;
-            padding: 14px;
-            border-radius: 18px;
-            border: 1px solid var(--border-color);
-        }
-
-        .diagram-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-        }
-
-        .diagram-caption {
-            margin-top: 8px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        /* =========================
-           TABLES
-        ========================= */
-
-        .table-responsive {
-            width: 100%;
-            overflow-x: auto;
-            margin: 20px 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
-
-        th, td {
-            padding: 12px 14px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        th {
-            background-color: #f3e8ff;
-            color: var(--primary-dark);
-            font-weight: 800;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            text-align: center;
-
-            padding: 24px 10px 35px;
-
-            color: var(--text-muted);
-
-            font-size: .95rem;
-
-            line-height: 1.6;
-        }
-
-        footer strong {
-            color: var(--primary-purple);
-        }
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 480px) {
-
-            body {
-                padding: 12px;
-            }
-
-            .top-navigation {
-                gap: 10px;
-
-                margin-bottom: 20px;
-            }
-
-            .nav-button {
-                min-height: 48px;
-
-                padding: 0 16px;
-
-                border-radius: 14px;
-
-                font-size: .95rem;
-            }
-
-            .page-header {
-                padding: 30px 14px;
-
-                border-radius: 20px;
-
-                margin-bottom: 20px;
-            }
-
-            .page-header h1 {
-                font-size: 1.55rem;
-            }
-
-            .page-header p {
-                font-size: .92rem;
-            }
-
-            .notes-container {
-                padding: 16px;
-
-                border-radius: 20px;
-            }
-
-            .notes-title {
-                font-size: 1.35rem;
-            }
-
-            .lesson-card {
-                padding: 16px;
-
-                border-radius: 18px;
-            }
-
-            .lesson-title {
-                font-size: 1.15rem;
-            }
-
-            .lesson-text,
-            .notes-list {
-                font-size: .94rem;
-            }
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-    <!-- =========================
-         TOP NAVIGATION
-    ========================== -->
-
-    <nav class="top-navigation">
-
-        <a
-            href="history-notes.html"
-            class="nav-button back-button"
-        >
-            ← Back
-        </a>
-
-        <a
-            href="index.html"
-            class="nav-button home-button"
-        >
-            🏠 Home
-        </a>
-
-    </nav>
-
-
-    <!-- =========================
-         PAGE HEADER
-    ========================= -->
-
-    <header class="page-header">
-
-        <h1>
-            📜 UNIT THREE
-        </h1>
-
-        <p>
-            POLITICS, ECONOMY AND SOCIETY IN ETHIOPIA AND THE HORN TO THE END OF THE THIRTEENTH CENTURY (6 HOURS)
-        </p>
-
-    </header>
-
-
-    <!-- =========================
-         NOTES
-    ========================= -->
-
-    <main class="notes-container">
-
-        <h2 class="notes-title">
-            📘 Complete PDF Course Notes
-        </h2>
-
-
-        <!-- SECTION 3.1 -->
-
-        <section class="lesson-card">
-
-            <span class="lesson-number">
-                Section 3.1
-            </span>
-
-            <h3 class="lesson-title">
-                🧠 3.1. Emergence of States
-            </h3>
-
-            <p class="lesson-text">
-                <strong style="color: #64229b;">State</strong> refers to an autonomous political unit with population, defined territory, sovereignty and government with power to decree and enforce laws. States arose independently in different regions and at various times. The first states were <em>theocratic states</em>, with priests (shaman) overseeing the social and religious affairs of their people. As production became market-oriented, the priests were gradually replaced by chiefs, who began collecting regular and compulsory tributes known as protectionHere is the complete, ready-to-use HTML document containing all the historical concepts from **Unit Three** formatted into your exact website design. 
-
-The original text from your textbook images has been fully restructured into clear academic summaries, structured bullet points, and key takeaway boxes while strictly preserving all of your existing CSS styling, layout elements, navigation buttons, card structures, and page functionality.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>History - Chapter 3 Notes</title>
-
-    <script
-        type="module"
-        src="access-guard.js"
-    ></script>
-
-    <style>
-
-        :root {
-            --bg-color: #f3f4f6;
-            --card-bg: #ffffff;
-            --text-main: #1f2937;
-            --text-muted: #4b5563;
-
-            --primary-purple: #64229b;
-            --primary-dark: #4c1d7a;
 
             --border-color: #ded7e6;
 
@@ -873,6 +274,10 @@ The original text from your textbook images has been fully restructured into cle
             line-height: 1.8;
         }
 
+        .lesson-text + .lesson-text {
+            margin-top: 14px;
+        }
+
         /* =========================
            SUBHEADINGS
         ========================= */
@@ -908,7 +313,7 @@ The original text from your textbook images has been fully restructured into cle
         }
 
         /* =========================
-           IMPORTANT BOX & DIAGRAMS
+           IMPORTANT BOX
         ========================= */
 
         .important-box {
@@ -930,20 +335,38 @@ The original text from your textbook images has been fully restructured into cle
             color: var(--primary-purple);
         }
 
-        .diagram-container {
-            text-align: center;
-
-            margin: 20px 0;
+        .important-box .lesson-text {
+            margin-top: 8px;
         }
 
-        .diagram-container img {
+        /* =========================
+           PICTURES
+        ========================= */
+
+        .picture-box {
+            margin-top: 18px;
+
+            text-align: center;
+        }
+
+        .picture-box img {
             max-width: 100%;
 
-            height: auto;
+            border-radius: 14px;
 
-            border-radius: 12px;
+            border: 1px solid #dccfea;
 
-            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        .picture-caption {
+            margin: 10px 0 0;
+
+            color: var(--text-muted);
+
+            font-size: .9rem;
+
+            font-style: italic;
         }
 
         /* =========================
@@ -1097,7 +520,7 @@ The original text from your textbook images has been fully restructured into cle
         </h1>
 
         <p>
-            Unit 3 — Complete Academic Notes
+            Chapter 3 — Complete Notes
         </p>
 
     </header>
@@ -1110,7 +533,7 @@ The original text from your textbook images has been fully restructured into cle
     <main class="notes-container">
 
         <h2 class="notes-title">
-            Unit 3: Politics, Economy, and Society in Ethiopia and the Horn to the End of the Thirteenth Century
+            📘 Unit Three — Chapter 3: Politics, Economy, And Society In Ethiopia And The Horn To The End Of The Thirteenth Century (6 Hours)
         </h2>
 
 
@@ -1119,36 +542,31 @@ The original text from your textbook images has been fully restructured into cle
         <section class="lesson-card">
 
             <span class="lesson-number">
-                Lesson 3.1
+                Lesson 1
             </span>
 
             <h3 class="lesson-title">
-                Emergence of States
+                🧠 3.1. Emergence Of States
             </h3>
 
+            <div class="important-box">
+                <strong>📖 Definition — State:</strong>
+                <p class="lesson-text">
+                    <strong>State</strong> refers to an autonomous political unit with <strong>population</strong>, <strong>defined territory</strong>, <strong>sovereignty</strong> and <strong>government</strong> with power to decree and enforce laws.
+                </p>
+            </div>
+
             <p class="lesson-text">
-                A <strong>state</strong> refers to a distinct political territory with a permanent population, defined borders, sovereignty, and a central administration capable of enforcing laws. In Ethiopia and the Horn, early political structures emerged through a sequence of socio-economic changes.
+                States arose independently in different regions and at various times. The first states were <strong>theocratic states</strong>, with <strong>priests (shaman)</strong> overseeing the social and religious affairs of their people. As production became market-oriented, the priests were gradually replaced by <strong>chiefs</strong>, who began collecting regular and compulsory tributes known as <strong>protection payments</strong> with which they maintained themselves and their supporters, chiefly the army, the bureaucracy, and other followers.
             </p>
 
-            <h4 class="subheading">
-                🌱 Key Factors Driving State Formation
-            </h4>
+            <p class="lesson-text">
+                One important factor in the emergence of states was the beginning of <strong>sedentary agriculture</strong>. People had to descend from mountainsides to build houses near cultivated plots, fencing both farming fields and residences, and harvested crops had to be stored and protected from humidity and rodents. Families preferred to live together, forming larger communities for better security and to help each other in the hard work involved. Using sticks or hoes for planting was steadily replaced by <strong>ox-drawn plough</strong> which resulted in surplus production. Farming communities exchanged their products with better woven clothes and tools from artisans who specialized in the production of these items. Gradually, intermediaries (<strong>traders</strong>) began to buy the products of both parties and take them to predetermined places or markets for exchange. Thus, states were formed mainly through the expansion of agriculture, which greatly contributed to the specialization of labor. Furthermore, the growth of trade facilitated the development of states.
+            </p>
 
-            <ul class="notes-list">
-
-                <li>
-                    <strong>Transition from Theocracy to Chiefdoms:</strong> Initial societies were governed by religious leaders (shamans). As agricultural trade developed, administrative responsibilities shifted to local chiefs who collected regular protection taxes to support standing armies and governance structures.
-                </li>
-
-                <li>
-                    <strong>Sedentary Agriculture:</strong> Settled farming forced communities to construct permanent housing near fertile land, adopt advanced tools like the <strong>ox-drawn plough</strong>, and organize labor to safeguard surplus yields.
-                </li>
-
-                <li>
-                    <strong>Trade & Regional Links:</strong> Geographical proximity to key maritime trade routes (Red Sea, Gulf of Aden, Indian Ocean) permitted early settlements to control local trade networks and transform into powerful regional kingdoms.
-                </li>
-
-            </ul>
+            <p class="lesson-text">
+                Ethiopia and the Horn is one of the regions in Africa where early state formation took place. From small beginnings, such states gradually developed into powerful kingdoms and even empires with a well-demarcated social structure. Geographical proximity to and control of international water bodies like the <strong>Red Sea</strong>, <strong>Gulf of Aden</strong> and <strong>Indian Ocean</strong> along with their ports as well as rich interior favored some of them to become stronger than their neighbors and to eventually dominate them.
+            </p>
 
         </section>
 
@@ -1158,60 +576,159 @@ The original text from your textbook images has been fully restructured into cle
         <section class="lesson-card">
 
             <span class="lesson-number">
-                Lesson 3.2
+                Lesson 2
             </span>
 
             <h3 class="lesson-title">
-                Ancient States in Northern & Eastern Regions
+                🏛️ 3.2. Ancient States
             </h3>
 
+            <h4 class="subheading">
+                📍 3.2.1. North And Northeast
+            </h4>
+
             <p class="lesson-text">
-                Several major ancient kingdoms developed across northern and eastern parts of the region:
+                <strong>Punt</strong>
+            </p>
+            <p class="lesson-text">
+                Punt is the earliest recorded state in Ethiopia and the Horn. The evidence for Punt comes from Egyptian hieroglyphic writings, accompanied by vivid paintings that describe a series of naval expeditions that the Egyptian Pharaohs dispatched to the area. <strong>Pharaoh Sahure</strong> (r. 2743-2731 BC) sent an expedition to collect myrrh, ebony and electrum (gold and silver alloy). During the reign of Pharaoh Asosi, the treasurer of God Bawardede took the dancing dwarf (<em>"dink"</em>) from Punt to Egypt. The best described and illustrated expedition was undertaken during the reign of <strong>Queen Hatshepsut/Hashepsowe (1490-1468 BC)</strong>. She sent five ships under the leadership of the black Nubian Captain Nehasi via Wadi-Tumilat. The expedition was warmly welcomed by the King of Punt, Perehu, and his wife, Ati. The expedition returned to Egypt, collecting frankincense, sweet-smelling woods, leopard and leopard skins, ostrich feathers and eggs, live monkeys and giraffes etc. Hatshepsut presented some of the items to her god, Amun. Because of the spiritual importance of its exports, Punt was also known as the <em>Khebis of the Ta Netjeru</em> ("divine or ghosts' land"). In return, axes, daggers, swords, knives, sickles, clothes, bracelets, necklaces, and other trinkets were imported from Egypt to Punt.
+            </p>
+
+            <div class="important-box">
+                <strong>⚠️ Debate — Location Of Punt:</strong>
+                <p class="lesson-text">
+                    Scholars have not reached agreement on the exact location of Punt. Looking at the varieties of incense and myrrh, some scholars suggested northern or northeastern Somalia while others pointed to Northern Ethiopia because of references to gold, ebony and monkeys. The latter reinforce their assertion by saying that, at that early period, Egyptian sailboats were not strong enough to pass through the Strait of Bab-el Mandeb (Gate of Tears) into the Gulf of Aden and the Indian Ocean. Considering these two suggestions, some others argue that it probably stretched from Swakim or Massawa to Babel Mandeb and Cape Guardafui.
+                </p>
+            </div>
+
+            <p class="lesson-text">
+                <strong>Da'amat</strong>
+            </p>
+            <p class="lesson-text">
+                Da'amat had its center a little to the south of Aksum. The kings of Da'amat used the politico-religious title <em>Mukarib</em>. Various gods and goddesses like <em>Almouqah</em> (principal god), <em>Astater</em> (Venus god), <em>Na'uran</em> (light god), <em>Shamsi</em> (sun god) and <em>Sin</em> (moon god) were worshipped in Da'amat and other pre-Aksumite cultural centers, similar to South Arabia at the time.
             </p>
 
             <h4 class="subheading">
-                👑 Punt, Da'amat, and Aksum
+                🏘️ Major Cultural Centers In Northern Ethiopia And Eritrea
             </h4>
 
             <ul class="notes-list">
-
                 <li>
-                    <strong>Punt:</strong> Recorded in ancient Egyptian inscriptions. Recognized for trading gold, incense, myrrh, ebony, and exotic items along the Red Sea coast.
+                    <strong>Yeha:</strong> is located 30 km northeast of Aksum and was the oldest of these centers. It probably emerged c.1000 BC as an emporium where South Arabian merchants stored commodities coming from the interior. Its zenith was from 750 to 500 BC. Remains of walls, stone masonry, a temple that is still standing and inscriptions indicate its glory.
                 </li>
-
                 <li>
-                    <strong>Da'amat:</strong> Situated south of Aksum. Led by rulers using the title <em>Mukarib</em>, practicing polytheistic religious traditions influenced by South Arabian contacts.
+                    <strong>Hawulti Melazo:</strong> is located to the southeast of Aksum, where stone tablets inscribed in a rectangular temple surrounded by a wall with paintings denoting herds of cattle have been excavated.
                 </li>
-
                 <li>
-                    <strong>Major Cultural Centers:</strong> Significant early urban centers included <em>Yeha</em> (renowned for its standing stone temple), <em>Hawulti Melazo</em>, and <em>Addi-Seglemeni</em>.
+                    <strong>Addi-Seglemeni:</strong> is 10 kms southwest of Aksum, from where a stone slab is fetched and the oldest Ethiopian monumental inscription is discovered.
                 </li>
-
-                <li>
-                    <strong>The Aksumite Kingdom:</strong> A major ancient trading empire extending from the Red Sea interior. Centered around its port city <strong>Adulis</strong>, Aksum exported ivory, spices, and exotic products while minting its own gold, silver, and bronze coinage.
-                </li>
-
             </ul>
 
-            <div class="diagram-container">
-                <img src="picture2-aksum-stele.png" alt="Third Tallest Aksumite Stele">
-            </div>
+            <p class="lesson-text">
+                There were also other centers like <strong>Addi Gelemo, Addi Grameten, Addi Kewih, Atsbi Dera, Feqiya, Hinzat, Sefra, Senafe,</strong> and <strong>Tekonda</strong>, etc.
+            </p>
+
+            <p class="lesson-text">
+                <strong>The Aksumite State</strong>
+            </p>
+            <p class="lesson-text">
+                The nucleus of the Aksumite state was formed in a small area comprising Aksum town and its environs c. 200-100 BC. In its heyday, it extended from the Red Sea coast in the east to the western edge of the plateau overlooking the Nile Valley in the west and from the northern corner of Eritrea in the north to northern Shewa in the south. According to the <em>Periplus of the Erythraean Sea</em>, <strong>Adulis</strong> on the western coast of the Red Sea was the major port of Aksum. The long distance trade routes from Adulis and other posts on the Red Sea coast passed inland through such centers as Kaskasse, Coloe, Matara, and even further west across the Takaze River. The document also mentioned ports of the Aden (Eudaemon) Gulf like Avalites (Zeila) and Malao (Berbera), and the Indian Ocean coasts of Benadir like Serapion (Moqadishu), Nicon (Brava) and Merca. The Aksumite export items included <strong>ivory, emerald, spices</strong> (like ginger, cassia and cinnamon), <strong>rhinoceros horns, hippopotamus hides, tortoise shells</strong> and curiosity animals like apes. In return, Aksum imported a variety of manufactured products like garments and textiles from Egypt, Italy, India, and Persia; glassware and jewelry from Egypt and other places; metallic sheets, tools or utensils of various kinds, oil and wine from Italy and Syria. The document also mentioned <strong>Zoscales'</strong>, king of Aksum (c. 76-89), and his acquaintance with the Greek language, the lingua franca of the Greco-Roman world.
+            </p>
+
+            <p class="lesson-text">
+                The <strong>Adulis Inscription</strong> written in Greek about an unknown king was published in <em>Christian Topography</em>, which in turn describes commercial activities of the Red Sea areas, and internal long distance trade between Aksum and <strong>Sasu</strong>, located most probably in Beni Shangul and the adjoining lands beyond the Blue Nile. A caravan of close to 500 merchants, some of them special agents of Aksumite kings, would take cattle, salt blocks and iron to Sasu in exchange for gold. Yet, as they did not speak each other's language, and did not even trust to be near and see each other to bargain through gestures, the whole exchange was done silently from a distance.
+            </p>
+
+            <p class="lesson-text">
+                The Aksumite ships were the main means of transportation from the first to the seventh centuries AD. Aksum was the only town with sufficient sources of timber for shipbuilding with its technology in Adulis. Aksum had a large fleet of ships, which was used not only for trade but also for its military campaigns across the Red Sea. Aksumite kings like <strong>Aphilas, Endybis, Ousanas II</strong> etc. minted coins from gold, silver and bronze for both local and overseas transactions from the third to the seventh centuries.
+            </p>
+
+            <p class="lesson-text">
+                The Aksumite kings had extensive contacts, notably with South Arabia, leading to the exchange of ideas, material and spiritual culture. Sometimes such contacts involved conflicts. One of these took place c. 200 AD, when peoples in the Southern Arabian Peninsula in present-day Yemen had difficulties in defending themselves from the army of the Aksumite king, <strong>Gadarat</strong>. <strong>Kaleb (r. 500-35)</strong> expanded Aksum's overseas territories beyond Himyar and Saba, but a local prince <strong>Dhu-Nuwas</strong>, who was converted to Judaism, killed many Christians in Zafar and Nagran. The Byzantine Emperor/Vasaliev Justinian (r. 527-65), with the blessing of Patriarch Timit III (518-38), provided Kaleb with ships to transport armies led by Julianos and Nonossus against Dhu Nuwas, who was defeated. Kaleb then appointed <strong>Abraha</strong> as his viceroy in Arabia and he continued to rule until his death in 570 AD. It was during the reign of Kaleb's son and successor <strong>Gabra Masqal (r. 535-48)</strong> that the famous composer <strong>Yared</strong> developed the Ethiopian Orthodox Church liturgical songs and hymns.
+            </p>
 
             <div class="important-box">
-
-                <strong>
-                    📌 The Zagwe Dynasty (c. 1150 – 1270 AD):
-                </strong>
-
+                <strong>📌 Decline Of The Aksumite State:</strong>
                 <p class="lesson-text">
-                    Following the decline of Aksum, power shifted south to Bugna in Wag and Lasta under the Agaw ruling elite. Known for building extraordinary monolithic rock-hewn churches at <strong>Roha (Lalibela)</strong>, replicating the Holy Land layout in Ethiopia.
+                    The decline of the Aksumite state was commenced in the late seventh century. It is primarily attributed to the disruption of its international and domestic trade network, the devastation of the port of Adulis in <strong>702 AD</strong> by the Muslim Arabs, ecological degradation, decreased agricultural productivity, and possibly plague outbreaks. Its economic decline led to the decline of its political and military prowess not only on the Red Sea coast but also in its interior, where its administrative control was challenged by rebellions of the Beja and the Queen of Bani al Hamwiyah, more popularly known as <strong>Gudit (Yodit)</strong>.
                 </p>
-
             </div>
 
-            <div class="diagram-container">
-                <img src="picture3-bete-giyorgis.png" alt="Bete Giyorgis Lalibela">
+            <p class="lesson-text">
+                <strong>Zagwe Dynasty (c. 1150 to 1270)</strong>
+            </p>
+            <p class="lesson-text">
+                After its decline, the center of Aksumite state shifted southwards to the Kubar rural highland in the territory of the <strong>Agaw</strong>. Agaw elites had been actively integrated in the Aksumite state structure, serving as soldiers and functionaries for at least four centuries. Accordingly, the Agaw prince <strong>Merra Teklehaimanot</strong> married Masobe Worq, the daughter of the last Aksumite king, <strong>Dil Na'od</strong>. Later, he overthrew his father-in-law and took power, which marked the beginning of Zagwe rule. The Zagwe Dynasty ruled from its center in <strong>Bugna District in Wag and Lasta</strong>, more exactly at Adafa near Roha (Lalibela). It administered a realm corresponding to much of today's Eritrea and northern and central Ethiopia, extending southwards to Lasta and Wag as well as to Damot, and thence westwards to Begemider. Merra-Teklehaimanot's successors include <strong>Yimirahana Kirstos, Harbe, Lalibela, Ne'akuto La'ab,</strong> and <strong>Yetbarek</strong>.
+            </p>
+
+            <p class="lesson-text">
+                The Agaw rulers renewed trade contact with the eastern Mediterranean region. The most important export items included slaves, ivory and rare spices, while cotton, linen, silver and copper vessels, various types of drugs, and newly minted coins were imported. The Zagwe period was marked by the production of paintings and the translation of some religious works from Arabic into Ge'ez. However, Zagwe rulers are best known for the construction of the famous monolithic churches of <strong>Lalibela</strong>. The idea behind the collection of <strong>11 churches</strong> was to replicate the Holy Land in Ethiopia. By constructing these churches, Zagwe rulers wanted to establish the second Jerusalem, and mitigate or even avoid the difficulties that Ethiopian pilgrims encountered in their journey to the Holy Land.
+            </p>
+
+            <p class="lesson-text">
+                The Zagwe Dynasty came to an end due to internal problems of royal succession and opposition from a group claiming descent from the ancient rulers of Aksum. The latter considered the Zagwe kings "illegitimate rulers" or usurpers. The allegation was based on the legend of the <strong>Queen of Sheba</strong>, whose journey to Jerusalem to visit King Solomon had resulted in the birth of a son, <strong>Menilek I</strong>, the founder of the so-called "Solomonid" dynasty. The story was documented in a book known as <em>Kebre-Negest</em> ('Glory of Kings'). The book was translated from Coptic to Arabic and then into Ge'ez.
+            </p>
+
+            <div class="important-box">
+                <strong>🔑 "Restoration" Of The Solomonid Dynasty:</strong>
+                <p class="lesson-text">
+                    According to the legend, the "Solomonid" Dynasty ruled the Aksumite state until power was "usurped" by the Zagwes. <strong>Yekunno-Amlak (r. 1270-1285)</strong>, who claimed descent from the last Aksumite King, Dil Na'od, assisted by the ecclesiastical hierarchy, organized his forces and defeated and killed the last king of Zagwe, <strong>Yetbarek</strong>, in Gayint. He took power and proclaimed the "restoration" of the "Solomonid" Dynasty.
+                </p>
             </div>
+
+            <h4 class="subheading">
+                🗺️ 3.2.2. East, Central, Southern, And Western States
+            </h4>
+
+            <p class="lesson-text">
+                <strong>3.2.2.1. Bizamo, Damot, Enarya, And Gafat</strong>
+            </p>
+
+            <ul class="notes-list">
+                <li>
+                    <strong>Bizamo:</strong> was a kingdom on the southern bend of the Abay River just opposite to the present region of Gojjam and around Wembera. It was founded in the eighth century and had early connections with Damot.
+                </li>
+                <li>
+                    <strong>Damot:</strong> was a strong kingdom that expanded its territories into most of the lands to the south of Abay and north of Lake Turkana as well as to the west of the Awash River and east of the Didessa River. <strong>Motalami</strong> was a prominent king of Damot in the thirteenth century.
+                </li>
+                <li>
+                    <strong>Enarya:</strong> was a kingdom in the Gibe region in southwestern Ethiopia. The royal clan was Hinnare Bushasho (Hinnario Busaso). Enarya's kingship was deemed divine: the king (<em>Hinnare-Tato</em>) was secluded and considered sacred. He communicated with visitors through an intermediary, <em>Afe-Busho</em>. Real power rested with the <em>Mikretcho</em> (council), including <em>Awa-rasha</em> (king's spokesperson) and <em>Atche-rasha</em> (royal treasurer). The kings had residences in Yadare and Gowi. The Aksumite King, <strong>Digna-Jan</strong>, is said to have led a campaign into Enarya, accompanied by Orthodox Christian priests carrying <em>tabotat</em> (singular <em>tabot</em>, also called <em>tsellat</em>, replica of the Ark of the Covenant) in the ninth century.
+                </li>
+                <li>
+                    <strong>Gafat:</strong> historically, Gafat's territory lies south of the Blue Nile River on the southwestern periphery of the Christian Kingdom, adjoining Damot. It is not clear from the available records whether Gafat formed a "state" or not, but the Gafat mountains provided a rich source of gold. Despite efforts by Christian evangelists, the people of Gafat largely remained practitioners of their own indigenous religion. As of the early medieval period, Gafat was paying tribute to the Christian Kingdom mainly in cattle, which came from six districts, among which Gambo and Shat are Gafat clan names. Gafat's rulers bore the title of <em>awalamo</em>.
+                </li>
+            </ul>
+
+            <p class="lesson-text">
+                <strong>3.2.2.2. Muslim Sultanates</strong>
+            </p>
+            <p class="lesson-text">
+                With the spread of Islam since the beginning of the eighth century, viable Muslim communities and states had been established in several locations, especially along the main trade routes from Zeila and its many branches penetrating the interior. These states include:
+            </p>
+
+            <ul class="notes-list">
+                <li>
+                    <strong>Shewa:</strong> Makhzumi Khalid ibn al-Walid, who claimed decent from Meca, founded the <strong>Makhzumite Sultanate</strong> on the northeastern foothills of Shewa in <strong>896 AD (283 AH)</strong>.
+                </li>
+                <li>
+                    <strong>Fatagar:</strong> was founded around Minjar, Shenkora and Ada'a in the eleventh century. It was a hilly lowland area with thoroughly cultivated fields of wheat and barley, fruits, and extensive grazing grounds full of numerous herds of cattle, sheep and goats.
+                </li>
+                <li>
+                    <strong>Dawaro:</strong> was located south of Fatagar between the upper waters of Awash and Wabi-Shebelle, extending to Chercher in the northeast and Gindhir in the southeast. Dawaro had a currency called <em>hakuna</em> for conducting commercial transactions.
+                </li>
+                <li>
+                    <strong>Bali:</strong> was an extensive land occupying high plateau, separating the basins of Shebelle River and the Rift valley lakes. It was separated from Dawaro by the Wabi-Shebelle River and extended southwards to the Gannale Dirre River. It had a strong army composed of cavalry and infantry. Trade was mainly based on barter, exchanging cattle, sheep, cloth, etc.
+                </li>
+                <li>
+                    <strong>Ifat:</strong> its territory ran from Afar plain to the Awash River. It was established by <strong>Umar Walasma</strong>, who claimed descent from the Hashemite clan of the Prophet, and came from Arabia between <strong>1271 and 1285</strong>. He intervened between the quarrelsome Makhzumite princes, Dil-Marrah and Dil-Gamis, weakened and annexed the Shewan sultanate. The sultanate was fertile and well watered. Its inhabitants earned their living from the cultivation of wheat, sorghum, millet and <em>teff</em>, and animal husbandry. Sugarcane, bananas, a variety of fruits, beans, squash, cucumbers and cabbage consisted of their diet. <em>Khat</em> was used for the first time as a stimulant in Ifat.
+                </li>
+                <li>
+                    <strong>Moqadishu:</strong> Abu Bakr Ibn Fukura al Din Sahil established the Moqadishu Sultanate <strong>c.1269</strong>.
+                </li>
+                <li>
+                    <strong>Others:</strong> mutually independent states like Arababani (between Hadiya and Dawaro), Biqulzar, Dera (between Dawaro and Bale), Fadise, Gidaya, Hargaya, Harla, Kwilgora, Qadise, Sharkah (West of Dawaro and North of Bale in Arsi) and Sim also flourished.
+                </li>
+            </ul>
 
         </section>
 
@@ -1221,56 +738,27 @@ The original text from your textbook images has been fully restructured into cle
         <section class="lesson-card">
 
             <span class="lesson-number">
-                Lesson 3.3
+                Lesson 3
             </span>
 
             <h3 class="lesson-title">
-                Southern, Central, and Muslim States
+                🌍 3.3. External Contacts
             </h3>
 
-            <h4 class="subheading">
-                ⚔️ Southern & Central Kingdoms
-            </h4>
+            <p class="lesson-text">
+                Ethiopia had contacts with Egypt since at least <strong>3,000 BC</strong>. It also had very close relations with all commercially active South Arabian kingdoms starting before <strong>1,000 BC</strong>. However, the rapid expansion and eventual control of the Muslim Arabs over the Near and Middle East, North Africa and the Nile valley led to the decline of Aksumite trade routes and shipping lines. Successive Egyptian sultans used the consecration and sending of a bishop as an instrument to further their own foreign policy objectives and squeeze concessions from Ethiopian Christian rulers, who reacted by threatening to divert the Abbay River. The coming to power of the <strong>Mamluks</strong> was followed by the reciprocal persecution of religious minorities. Moreover, the Mamluk presented a barrier to contacts between Christian Ethiopia and European states.
+            </p>
 
-            <ul class="notes-list">
+            <p class="lesson-text">
+                However, the tradition of visiting holy places in the Middle East began at the end of the first millennium AD. Ethiopian Christian pilgrims used the land route to Egypt and from Cairo to the Holy land. As a result, there were considerable numbers of Ethiopian Christian communities in Egyptian monasteries, holy places in Palestine and Armenia, and Italian city-states in subsequent centuries. These communities served as an important link between the Ethiopian Christian Kingdom and Europe. When pilgrims met their fellow Christians in these holy places, they transmitted information about the EOC's unique liturgical practices and the territorial extent of the Christian Kingdom.
+            </p>
 
-                <li>
-                    <strong>Bizamo:</strong> Located south of the Abay River bend opposite Gojjam.
-                </li>
-
-                <li>
-                    <strong>Damot:</strong> A powerful kingdom located south of the Abay, led by prominent historical rulers such as King Motalami.
-                </li>
-
-                <li>
-                    <strong>Enarya:</strong> A Gibe region kingdom where sacred rulers (<em>Hinnare-Tato</em>) governed alongside an advisory council (<em>Mikretcho</em>).
-                </li>
-
-                <li>
-                    <strong>Gafat:</strong> Located south of the Blue Nile; known historically for rich gold production and paying livestock tribute.
-                </li>
-
-            </ul>
-
-            <h4 class="subheading">
-                🕌 Muslim Sultanates
-            </h4>
-
-            <ul class="notes-list">
-
-                <li>
-                    <strong>Shewa Sultanate:</strong> Established around 896 AD (283 AH) by the Makhzumite dynasty.
-                </li>
-
-                <li>
-                    <strong>Ifat Sultanate:</strong> Founded by Umar Walasma along the Afar-Awash region; grew into a dominant commercial power specializing in agricultural trade and livestock.
-                </li>
-
-                <li>
-                    <strong>Other Sultanates:</strong> Included <em>Fatagar</em>, <em>Dawaro</em>, <em>Bali</em>, and <em>Moqadishu</em>, operating key commercial nodes linked to the port of Zeila.
-                </li>
-
-            </ul>
+            <div class="important-box">
+                <strong>👑 The Legend Of "Prester John":</strong>
+                <p class="lesson-text">
+                    From this information, a myth about a very rich and powerful Christian ruler known as <strong>"Prester John"</strong> began to circulate in Europe around the middle of the twelfth century, when the balance of the Wars of the Crusade (1095-1291) fought over Jerusalem between the Christians of Europe and the Muslims of the Middle East was tilted in the latter's favor. A letter addressed to European kings, thought to have been sent by the "Prester John," appeared in Europe in <strong>1165</strong>. The geographical location of the country of the "Prester John" was not accurately known in Europe for over a century. Ultimately, Europeans began to regard the Ethiopian Christian Kingdom as the true land of "Prester John" because it was seen as the most powerful Christian kingdom between the Red Sea and the Indian sub-continent. Then, they began to search for its exact location to form a Christian alliance against the Muslim powers.
+                </p>
+            </div>
 
         </section>
 
@@ -1280,43 +768,36 @@ The original text from your textbook images has been fully restructured into cle
         <section class="lesson-card">
 
             <span class="lesson-number">
-                Lesson 3.4
+                Lesson 4
             </span>
 
             <h3 class="lesson-title">
-                Economic Formations & Land Tenure
+                🌾 3.4. Economic Formations
             </h3>
 
             <p class="lesson-text">
-                Economy and social structure were shaped by agricultural organization, customary land holding systems, and international trade lines.
+                <strong>Agriculture And Land Tenure System</strong>
+            </p>
+            <p class="lesson-text">
+                The mainstay of these early states' economy was agriculture. Mastery of irrigation technology contributed to the growth of agricultural production. Small valley wetlands were drained for dry season cultivation that provided essential grains before the main upslope harvest became available. The people used diverse soil fertility enhancement strategies like manuring, composting and spreading residues as well as fallowing, crop rotation, intercropping and contour plowing. In times of labor shortage, farmers also developed teamwork.
             </p>
 
-            <h4 class="subheading">
-                🌾 Agriculture & Land Tenure
-            </h4>
-
-            <ul class="notes-list">
-
-                <li>
-                    <strong>Communal Rights:</strong> Earliest form of land ownership shared by community members.
-                </li>
-
-                <li>
-                    <strong>Rist System:</strong> Hereditary right to agricultural land based on lineage and ancestral claims.
-                </li>
-
-                <li>
-                    <strong>Gult System:</strong> Conditional right granted to state officials or elites to collect tribute from <em>rist</em> landholders on behalf of the central authority.
-                </li>
-
-            </ul>
-
-            <h4 class="subheading">
-                🛠️ Handicrafts & Commerce
-            </h4>
+            <p class="lesson-text">
+                The rules according to which members of the society hold, share, and use the land constitute what is known as the <strong>land tenure system</strong>. The most ancient system, which survived in many parts of the Horn, is the <strong>communal land tenure</strong>, which is a group right to the land of the community to which the individual belonged. In the northern part of the Horn, <em>rist</em> was the birth right to land by members of the kin or lineage, whose ancestors had settled in the area over a long period. It was inherited from generation to generation. The <em>bale-rist</em> (rist owners) paid tribute through a complex hierarchy of state functionaries, who were given <em>gult</em> right over the areas and populations they administered on behalf of the central government. <em>Gult</em> is the right to levy tribute on the produce of rist owners. The tribute collected by <em>bale-gults</em> was partly allotted for their own upkeep and the rest was sent to the imperial court. <em>Gult</em> right that became hereditary is known as <em>riste-gult</em>, whereby officials transfer their position to their offspring.
+            </p>
 
             <p class="lesson-text">
-                Metalworking, pottery, weaving, and leatherwork provided essential tools. Long-distance trade routes connected inland agricultural centers to Red Sea and Indian Ocean ports, encouraging regional cross-cultural interaction.
+                <strong>Handicraft</strong>
+            </p>
+            <p class="lesson-text">
+                The conditions of ancient states allowed the emergence of artisans in various fields. Metal workers produced javelins, bows, traps, slings, shields, slashes, machetes, hatchets etc. Carpenters were engaged in carving wood implements like stools, mortars, beams, yoke, stilt, coffins, etc. Potters produced ceramic utensils like saucepan, jars, kettles, granaries etc. Tanners produced leather tools used for bed covers, saddles, harnesses, sacks... and clothes until they were replaced by weavers' cotton dresses. However, except for the carpenters and in some cases masons, artisans were mostly despised and marginalized. The public attitude towards artisans was not at all encouraging. The ruling elites mostly spent their wealth on imported luxurious items rather than domestic technology although they were not actively engaged in importing foreign technological knowledge. Consequently, locally produced agricultural implements and house furniture did not show any significant improvement or sophistication.
+            </p>
+
+            <p class="lesson-text">
+                <strong>Trade</strong>
+            </p>
+            <p class="lesson-text">
+                The political centers of early states seem to have also been major trade centers with wide-ranging contacts in various directions within the region and with merchants coming to the area across the international water bodies. A network of roads connected the centers with the coast and various dependencies in the interior. Local and international merchants frequented these roads. The regular flow of trade was vital to the states as they obtained considerable income from it. Hence, one of their major concerns was to protect the trade routes and make them safe from robbers.
             </p>
 
         </section>
@@ -1327,48 +808,99 @@ The original text from your textbook images has been fully restructured into cle
         <section class="lesson-card">
 
             <span class="lesson-number">
-                Lesson 3.5
+                Lesson 5
             </span>
 
             <h3 class="lesson-title">
-                Socio-Cultural & Technical Achievements
+                🎨 3.5. Socio-Cultural Achievements
             </h3>
 
-            <h4 class="subheading">
-                ✍️ Writing Systems & Calendars
-            </h4>
+            <p class="lesson-text">
+                <strong>Architecture</strong>
+            </p>
+            <p class="lesson-text">
+                As the states expanded, architecture also began to flourish, and one of the unique architectural technologies was the carving of <strong>stelae</strong> (singular stela/stele). There were a total of <strong>58 stelae</strong> in and around Aksum that can be grouped into well-made, half-completed and megaliths (not hewn). According to traditions, the stelae were engraved at Gobodara, from where they were transported and planted in Aksum and its environs in the third century AD. The longest of the stelae, which now lies broken on the ground, measures <strong>33m tall</strong> (the first in the world). It is highly decorated on all of its four sides and represents a-14 storied building with many windows and a false door at the bottom, and bears pre-Christian symbols (disc and crescent/half-moon) at the top. Scholars suggest that it was broken while people were trying to erect it. The second stele measures <strong>24m tall</strong>, and represents a ten-storied building with many windows and a false door at the bottom. It was taken to Rome in <strong>1937</strong> by the invading Italians and was restored only in <strong>2005</strong>. The third measures <strong>21 meters</strong>, and represents a nine-storied building with many windows and a false door at the bottom that is smooth at its backside and with no decoration.
+            </p>
 
-            <ul class="notes-list">
+            <div class="picture-box">
+                <img
+                    src="images/picture2-aksumite-stele.jpg"
+                    alt="Picture 2: The third tallest Aksumite Stele"
+                >
+                <p class="picture-caption">
+                    📷 Picture 2: The third tallest Aksumite Stele — Source: http://whc.unesco.org
+                </p>
+            </div>
 
+            <p class="lesson-text">
+                Zagwe architecture used softer material like sandstone, which was cut and shaped all round, except the floor, in various delicately decorated churches. These were of three types:
+            </p>
+
+            <ol class="notes-list">
                 <li>
-                    <strong>Sabean & Ge'ez Scripts:</strong> Evolved from early vowelless consonantal scripts (abjad) into fully vocalized syllabic scripts (abugida) by the 4th century AD.
+                    <strong>Cave:</strong> with some decoration inside, almost similar to a natural cave, e.g. <em>Bete Meskel</em>.
                 </li>
-
                 <li>
-                    <strong>Oromo Calendar:</strong> Astronomical calendar based on lunar phases and star patterns (<em>Urjii Dhahaa</em>).
+                    <strong>Semi-hewn:</strong> with detailed interior decoration and partial exterior decoration. Their roofs or walls are still attached to the surrounding rock, eg. <em>Bete Denagil, Bete Debresina (Mikael), Bete Golgota, Bete Merqoriwos, Bete Gabri'el-Rufa'el,</em> and <em>Bete Abba Libanos</em>.
                 </li>
-
                 <li>
-                    <strong>Sidama Calendar:</strong> Solar-lunar system consisting of 13 months, featuring regular 28-day months and annual ceremonial observances like <em>Fichee-Chambalaalla</em>.
+                    <strong>Monolithic:</strong> detailed interior and exterior decoration being completely carved out from surrounding rock, e.g. <em>Bete Amanuel, Bete Giyorgis, Bete Mariyam</em> and <em>Bete Medhanialem</em>.
                 </li>
-
-                <li>
-                    <strong>Ethiopian Solar Calendar:</strong> Composed of 12 months of 30 days plus a 13th short month (<em>Pagume</em>) of 5 or 6 days.
-                </li>
-
-            </ul>
+            </ol>
 
             <div class="important-box">
-
-                <strong>
-                    📌 Historical Memory & Literature:
-                </strong>
-
+                <strong>🌟 UNESCO Recognition:</strong>
                 <p class="lesson-text">
-                    Literary works like the <em>Kebre-Negest</em> (Glory of Kings) documented foundational national narratives, genealogical legends (such as the Queen of Sheba and King Solomon), and the transfer of ideological legitimacy.
+                    The Zagwe churches were registered by UNESCO as part of world cultural heritage in <strong>1978</strong>, two years before that of the Aksumite monuments. Among these churches, <strong>Bete Medhanelem</strong> is the largest and <strong>Bete Giyorgis</strong> the most finely built in the shape of the cross.
                 </p>
-
             </div>
+
+            <div class="picture-box">
+                <img
+                    src="images/picture3-bete-giyorgis.jpg"
+                    alt="Picture 3: Bete Giyorgis"
+                >
+                <p class="picture-caption">
+                    📷 Picture 3: Bete Giyorgis — Source: https://hasanjasim.online
+                </p>
+            </div>
+
+            <p class="lesson-text">
+                <strong>Writing System</strong>
+            </p>
+            <p class="lesson-text">
+                The Sabean language had an alphabet written from left to right and right to left alternatively. The earliest Sabean inscriptions in Eritrea and Ethiopia date to the ninth century BC. The early Sabean inscriptions had no vowels as most of the words were written in consonants. For instance, <strong>Da'amat</strong> was described as <em>D'mt</em>, while its successive kings were written as <em>RDM, RBH</em> and <em>LMN</em> with their title as <em>mlkn</em>. However, variants of the script arose, evolving into Ge'ez script (an alpha syllabary) direction after the seventh and sixth centuries BC. "Ge'ez alphabet", an <em>abjad</em> (26 consonant letters only) written left-to-right with letters identical to the first-order forms of vocalized alphabet arose by the first century AD. Vocalized letters in Wazeba's coin had existed 30 or so years before the first completely vocalized <strong>Ezana's trilingual (Greek, Sabean and Ge'ez) inscriptions of c. 330 AD</strong>. The process was developed under the influence of Christian scripture by adding vocalic diacritics for vowels (u, i, a, e, ə, o) to consonants in a decipherable but slightly irregular way so that it is laid out as a syllabary. This indigenous writing system has made an immense contribution to the development of literature and art.
+            </p>
+
+            <p class="lesson-text">
+                <strong>Calendar</strong>
+            </p>
+            <p class="lesson-text">
+                People needed to know and remember the times when the rains would begin and end as well as the rise and fall of the water level. The responsibility of understanding these vital climatic cycles required expertise. In due course, calendars were invented, developed and adopted among various peoples of the Horn; in most cases, the length of the month was based on the movement of the moon or the apparent movement of the sun.
+            </p>
+
+            <p class="lesson-text">
+                <strong>Oromo calendar</strong> has been based on astronomical observations of the moon in conjunction with seven specific stars called <em>Urjii Dhahaa</em> (guiding stars consisting of Lemi, Busan, Algajima, Bakkalcha, Arba Gaddu, Walla and Besa). There are 29.5 dates in a month and 354 days in 12 months of a year. It has been suggested that pillars (dated 300BC) that were discovered in northwestern Kenya from 1978-86 by Archaeologists Lynch, Robbins and Doyl represent sites used to develop the Oromo calendar. In connection with this, an Oromo named Waqlim is said to have taken the art of shaping phallic bowls to Zimbabwe c. 900AD.
+            </p>
+
+            <p class="lesson-text">
+                The <strong>Sidama calendar</strong> rotates following the movements of stars with <strong>13 months</strong> a year, 12 of which are divided equally into 28 days while the thirteenth month has 29 days. The Sidama week has 4 days (<em>Dikko, Dela, Qawado</em> and <em>Qawalanka</em>) and each month has 7 weeks. The nominated <em>Mote</em> (King) is presented to the public at <em>Fiche Chambalala</em>, the New Year ritual, and the ceremony is known as <em>qetela</em> or popular demonstration.
+            </p>
+
+            <p class="lesson-text">
+                The <strong>Ethiopian solar calendar</strong> has 12 months of 30 days plus 5 or 6 (the latter occurring every 4 years) epagomenal days. This thirteenth month is known as <em>Pagume</em>. A gap of 7–8 years between the Ethiopic and Gregorian calendars results from alternative calculation in determining the date of Annunciation. Accordingly, the first day of the year, 1 <em>Meskerem (Enkutatash)</em> is usually on September 11 (Gregorian), or on September 12 in years before the Gregorian leap year.
+            </p>
+
+            <p class="lesson-text">
+                The <strong>Muslim (Islamic) calendar</strong> is a lunar calendar consisting of 12 months in a year of 354 or 355 days. It starts counting from the <em>Hijra</em> year of <strong>622 AD</strong>, when Prophet Muhammad and his followers fled from Makkah to Medina. Dates in this era are hence denoted <strong>AH</strong> (After Hijra, "in the year of the Hijra"). The years before the Hijra are reckoned as <strong>BH</strong> ("Before the Hijra").
+            </p>
+
+            <p class="lesson-text">
+                <strong>Numerals</strong>
+            </p>
+            <p class="lesson-text">
+                Ge'ez numerals comparable to those of the Hebrew, Arabic and Greek appeared at the beginning of fourth century AD. However, they lack characters for 100 multiples. Numbers are over- and underlined in typesetting to create single bar that some less sophisticated fonts cannot render.
+            </p>
 
         </section>
 
@@ -1382,31 +914,53 @@ The original text from your textbook images has been fully restructured into cle
             </span>
 
             <h3 class="lesson-title">
-                Unit 3 Key Takeaways
+                🎯 Chapter 3 Key Points — Learning Activities
             </h3>
 
             <p class="lesson-text">
-                Quick recap for end-of-unit preparation:
+                Review the most important concepts, events, people, institutions, and developments before taking the Chapter 3 quiz.
             </p>
 
             <ul class="notes-list">
-
                 <li>
-                    <strong>State Emergence:</strong> Driven by plough agriculture, surplus production, trade routes, and military organization.
+                    Undertake research on ancient states addressing the questions: what, where, when, why, how and by whom.
                 </li>
-
                 <li>
-                    <strong>Architecture:</strong> Monolithic stelae at Aksum and rock-hewn churches at Lalibela reflect unique engineering achievements.
+                    Explain role of agriculture and trade in the formation and consolidation of ancient states.
                 </li>
-
                 <li>
-                    <strong>Land Tenure:</strong> Distinguish clearly between hereditary <em>Rist</em> claims and tribute-collecting <em>Gult</em> rights.
+                    Assess importance of Christianity and Islam in the cultural life of ancient states.
                 </li>
-
                 <li>
-                    <strong>Timekeeping Systems:</strong> Understand the distinctive features of the Ge'ez, Oromo, and Sidama calendar structures.
+                    Discuss the various hypotheses on the location of Punt.
                 </li>
-
+                <li>
+                    What did the states of Punt and Aksum have in common?
+                </li>
+                <li>
+                    Explicate the origin, growth, and outstanding cultural achievements of Aksumite state.
+                </li>
+                <li>
+                    Elucidate internal and external factors for the decline and fall of the Aksumite kingdom.
+                </li>
+                <li>
+                    What were the major reasons that led King Lalibela to construct rock-hewn churches?
+                </li>
+                <li>
+                    What is the significance of the legend of Queen of Sheba in Ethiopian politics?
+                </li>
+                <li>
+                    What factors brought the Zagwe dynasty to an end?
+                </li>
+                <li>
+                    Explain the role of trade and trade routes in the interactions between peoples and states.
+                </li>
+                <li>
+                    Sketch the major trade routes that linked northern and southern Ethiopia and the Horn with the outside world.
+                </li>
+                <li>
+                    Clarify how Ethiopian societies were influenced by contact with the outside world while concurrently influencing external societies with whom they had contacts.
+                </li>
             </ul>
 
         </section>
