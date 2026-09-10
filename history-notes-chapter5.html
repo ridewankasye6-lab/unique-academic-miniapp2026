@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>History - Chapter 5 Notes</title>
+
+    <script
+        type="module"
+        src="access-guard.js"
+    ></script>
+
+    <style>
+
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+
+            --primary-purple: #64229b;
+            --primary-dark: #4c1d7a;
+
+            --border-color: #ded7e6;
+
+            --shadow:
+                0 4px 12px rgba(0,0,0,.08),
+                0 2px 5px rgba(0,0,0,.04);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #f5f3f7 0%,
+                    #eef0f3 100%
+                );
+
+            color: var(--text-main);
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            max-width: 700px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* =========================
+           TOP NAVIGATION
+        ========================= */
+
+        .top-navigation {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 28px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 58px;
+
+            padding: 0 26px;
+
+            border-radius: 20px;
+
+            text-decoration: none;
+
+            font-size: 1.05rem;
+            font-weight: 800;
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-button:active {
+            transform: scale(.97);
+        }
+
+        .back-button {
+            color: #ffffff;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6f2aa8,
+                    #54208a
+                );
+
+            box-shadow: var(--shadow);
+        }
+
+        .home-button {
+            color: var(--primary-purple);
+
+            background: #ffffff;
+
+            border: 1px solid var(--border-color);
+
+            box-shadow: var(--shadow);
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================= */
+
+        .page-header {
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6a2aa0,
+                    #4b1d78
+                );
+
+            color: #ffffff;
+
+            padding: 46px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 30px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .page-header h1 {
+            margin: 0;
+
+            font-size: 2rem;
+            line-height: 1.25;
+
+            font-weight: 800;
+        }
+
+        .page-header p {
+            margin: 12px 0 0;
+
+            font-size: 1.05rem;
+
+            line-height: 1.6;
+
+            opacity: .95;
+        }
+
+        /* =========================
+           NOTES CONTAINER
+        ========================= */
+
+        .notes-container {
+            background: var(--card-bg);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 28px;
+
+            padding: 30px;
+
+            box-shadow: var(--shadow);
+
+            margin-bottom: 28px;
+        }
+
+        .notes-title {
+            margin: 0 0 24px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.65rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LESSON CARD
+        ========================= */
+
+        .lesson-card {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f5fa,
+                    #f1edf5
+                );
+
+            border: 1px solid #dccfea;
+
+            border-radius: 23px;
+
+            padding: 24px;
+
+            margin-bottom: 20px;
+        }
+
+        .lesson-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-number {
+            display: inline-block;
+
+            margin-bottom: 10px;
+
+            color: var(--primary-purple);
+
+            font-size: .95rem;
+
+            font-weight: 800;
+
+            letter-spacing: .4px;
+
+            text-transform: uppercase;
+        }
+
+        .lesson-title {
+            margin: 0 0 14px;
+
+            color: #303947;
+
+            font-size: 1.3rem;
+
+            line-height: 1.4;
+
+            font-weight: 800;
+        }
+
+        .lesson-text {
+            margin: 0;
+
+            color: #4b5563;
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+           SUBHEADINGS
+        ========================= */
+
+        .subheading {
+            margin: 22px 0 10px;
+
+            color: var(--primary-purple);
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        .notes-list {
+            margin: 10px 0 0;
+
+            padding-left: 22px;
+
+            color: #4b5563;
+
+            line-height: 1.8;
+
+            font-size: 1rem;
+        }
+
+        .notes-list li {
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           IMPORTANT BOX
+        ========================= */
+
+        .important-box {
+            margin-top: 20px;
+
+            padding: 18px;
+
+            border-radius: 18px;
+
+            background: #ffffff;
+
+            border: 1px solid #dccfea;
+
+            box-shadow:
+                0 2px 7px rgba(0,0,0,.04);
+        }
+
+        .important-box strong {
+            color: var(--primary-purple);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+
+            padding: 24px 10px 35px;
+
+            color: var(--text-muted);
+
+            font-size: .95rem;
+
+            line-height: 1.6;
+        }
+
+        footer strong {
+            color: var(--primary-purple);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            body {
+                padding: 14px;
+            }
+
+            .top-navigation {
+                gap: 10px;
+
+                margin-bottom: 22px;
+            }
+
+            .nav-button {
+                min-height: 52px;
+
+                padding: 0 18px;
+
+                border-radius: 17px;
+
+                font-size: .98rem;
+            }
+
+            .page-header {
+                padding: 38px 16px;
+
+                border-radius: 25px;
+
+                margin-bottom: 24px;
+            }
+
+            .page-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .page-header p {
+                font-size: .98rem;
+            }
+
+            .notes-container {
+                padding: 20px;
+
+                border-radius: 23px;
+            }
+
+            .notes-title {
+                font-size: 1.4rem;
+            }
+
+            .lesson-card {
+                padding: 20px;
+
+                border-radius: 20px;
+            }
+
+            .lesson-title {
+                font-size: 1.15rem;
+            }
+
+            .lesson-text,
+            .notes-list {
+                font-size: .96rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            .nav-button {
+                padding: 0 14px;
+
+                font-size: .92rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .notes-container {
+                padding: 17px;
+            }
+
+            .lesson-card {
+                padding: 17px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================== -->
+
+    <nav class="top-navigation">
+
+        <a
+            href="history-notes.html"
+            class="nav-button back-button"
+        >
+            ← Back
+        </a>
+
+        <a
+            href="index.html"
+            class="nav-button home-button"
+        >
+            🏠 Home
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <header class="page-header">
+
+        <h1>
+            📜 History
+        </h1>
+
+        <p>
+            Chapter 5 — Complete Notes
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         NOTES
+    ========================= -->
+
+    <main class="notes-container">
+
+        <h2 class="notes-title">
+            📘 Chapter 5: Politics, Economy And Social Processes
+        </h2>
+
+
+        <!-- PDF CONTENT: PAGE 50 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                📜 Page 50
+            </span>
+
+            <h3 class="lesson-title">
+                ⚔️ Continuing Historical Developments
+            </h3>
+
+            <p class="lesson-text">
+                men and newly recruited personnel from the Christian territories. Mahfuz’s daughter and <strong>Imam Ahmed</strong>’s wife, <strong>Bati</strong> (also known as <strong>Batya</strong>) Del Wanbara, who had encouraged her husband to wage the war in order to avenge the death of her father, accompanied her husband throughout his expeditions as far north as Tigray.
+            </p>
+
+            <p class="lesson-text">
+                The military setback forced <strong>Lebne-Dengel</strong> to retreat, finally dying in 1540 as a fugitive. His son and successor, <strong>Gelawdewos</strong> (r. 1540-59), continued to face a more intensified war as <strong>Imam Ahmed</strong> had received two hundred Muslim Turkish musketeers and ten cannons in 1541. In the meantime, in response to an earlier request made by Lebne-Dengel to King <strong>Joao III of Portugal</strong> in 1535, about four hundred Portuguese soldiers led by <strong>Christopher da Gama</strong>, the son of Vasco da Gama, and armed with matchlocks arrived in the Christian court in 1541. The Portuguese governor of India who dispatched the army wanted to rescue what Portugal then considered a strategic ally in its war in the Red Sea against the Ottoman Empire. However, the Portuguese were defeated at the battle of <strong>Wafla</strong> in the present day southern Tigray in August 1542. Christopher was captured and killed-maybe even beheaded-by <strong>Imam Ahmad</strong>. The surviving soldiers finally joined Gelawdewos in Semen in October and continued to fight in his army.
+            </p>
+
+            <p class="lesson-text">
+                After his victory at Wafla, <strong>Imam Ahmed</strong> was so confident about his army’s ability to repulse any future attack by the Christian force that he sent his musketeer allies back home and let his army camp. In February 1543, a battle occurred between his army and that of Emperor Gelawdewos at <strong>Zantara (Woyna Dega)</strong>, east of Lake Tana, in which Imam Ahmed was killed. His death marked the end of the <strong>Adal conquest</strong> and its territorial control of the Ethiopian Christian Kingdom.
+            </p>
+
+        </section>
+
+
+        <!-- PDF CONTENT: PAGE 51 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                ⚔️ Page 51
+            </span>
+
+            <h3 class="lesson-title">
+                🏛️ After the Adal Conquest
+            </h3>
+
+            <p class="lesson-text">
+                Soon after the battle, Emperor <strong>Gelawdewos</strong> restored the former Christian kingdom's territories in the northern and central plateau in less than two years. Muslim communities in the highlands submitted to him as he was astoundingly tolerant towards them. He attempted to reorganize the <em>chewa</em> regiments which he stationed in the frontier regions. Nevertheless, his spirited endeavor to restore the administrative and military stamina of the weakened Christian kingdom met a final blow in 1559. He was killed in a battle and beheaded by <strong>Emir Nur Ibn al-Waazir Mujahid</strong> of Adal, who thus avenged the death of Imam Ahmed.
+            </p>
+
+            <p class="lesson-text">
+                Although the Adal threat, which cannot survive the death of its able leader <strong>Imam Ahmed</strong>, was neutralized, the Christian kingdom was soon challenged by foreign powers in various forms. Emperor <strong>Minas</strong> (r.1559-63) conducted military campaigns against the Turkish-backed <strong>Bahre Negash Yishaq</strong>, the most powerful regional lord of the time, and reclaimed territories in the coast, including Dabarwa. As Minas died in 1563, the challenge from Yishaq and the Turks was carried over to his successor. Emperor <strong>Sartsa-Dengel</strong> (r.1563-98), who defeated Turkish forces in 1587/89, neutralized Bahre negash Yishaq and won back the territories from the Turks. Although the Turkish threat was overcome militarily, the Portuguese presence brought yet another crisis, what is known as the <strong>Jesuit interlude</strong>.
+            </p>
+
+            <div class="important-box">
+
+                <strong>
+                    🌍 Consequences of the Conflict:
+                </strong>
+
+                <p class="lesson-text">
+                    The consequences of the conflict for both sides were far-reaching. One of the most obvious was the huge human and material cost. It is also evident that both the Muslim Sultanate and Christian Kingdom were weakened, thereby paving the way for the success of the <strong>Oromo population movement</strong>. On the positive side, linguistic and religious interactions were accompanied by intermarriages among various cultural groups.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PDF CONTENT: 5.2 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🏛️ Section 5.2
+            </span>
+
+            <h3 class="lesson-title">
+                5.2. Foreign Intervention and Religious Controversies
+            </h3>
+
+            <p class="lesson-text">
+                The Portuguese and Ottoman interventions in the affairs of the country reflected their competing political ambitions around the Red Sea and the Indian Ocean. However, an actual military alliance between Portugal and the Christian kingdom did not take place since Ethiopia was not a naval power to give meaningful maritime support to Portugal against the Ottoman Turks. After the conflict, the <strong>EOC</strong> as an ideological arm of the state was weakened and sought revival. At the same time, the monarchy could not count on the traditional political and military apparatus. As a result, the rulers of the Christian Kingdom may have regarded an alliance with Roman Catholicism as a tactic to secure sufficient modern weaponry to restore lost territories.
+            </p>
+
+            <p class="lesson-text">
+                The attempts to establish diplomatic and military relations between Portugal and the “Kingdom of Prester John,” first under King <strong>Manuel I</strong> (1495-1521) and later under <strong>Joao III</strong> (1521-1557), saw several representatives of the Portuguese power visit the Ethiopian royal court. This was followed by the arrival of several <strong>Jesuit missionaries</strong> in Ethiopia in 1557 to expand Catholicism. The Jesuits taught the Catholic doctrine of two different and therefore separate natures of Christ—divine and human-which was contrary to the <em>tewahedo</em> theology of the EOC. The EOC taught that Christ, through union or <em>tewahedo</em>, had a perfect human nature inseparable from the divine. The leading members of the mission who played key roles in efforts to evangelize the country included <strong>Joao Bermudez, Andreas de Oviedo, Pedro Paez, and Alfonso Mendez</strong>.
+            </p>
+
+            <p class="lesson-text">
+                The Jesuits began their evangelical effort with Emperor <strong>Gelawdewos</strong> hoping that the rest of the society would follow suit. Gelawdewos listened and engaged in doctrinal debates with the missionaries. He defended the teachings of EOC in a document entitled the <em>Confession of Faith</em>. The Jesuits were not active in the courts of <strong>Minas</strong> and <strong>Sertse-Dengel</strong>, who were not only hostile against their evangelical efforts but also too busy dealing with other internal and external challenges. The Jesuits, under the mission of <strong>Pedro Paez</strong>, had relative success with Emperor <strong>Za-Dengel</strong> (r. 1603-4), who was said to have been sympathetic to Catholicism. However, he was overthrown by <strong>Yaeqob</strong> (r. 1598-1603; 1604-7).
+            </p>
+
+            <p class="lesson-text">
+                The role of the Jesuits at the Ethiopian court had a serious impact on the reorganization of the Ethiopian monarchy in the early seventeenth century. <strong>Susenyos</strong> (r. 1607-32), aiming to consolidate his power, strengthened the military regiments by introducing new Oromo recruits from those Oromo groups who had settled across the core and fertile regions of the kingdom. However, he was challenged by the provincial governors as well as rebellions by the active fighting Oromo, Bete-Israel, and other groups. Thus, to consolidate his power all over the kingdom, he sought for an external alliance, which he got through the diplomatic support of Paez. Susenyos converted to Catholicism in 1612 and announced it to be the state religion in 1622. In the meantime, several anti-Catholic voices emerged following the changes in liturgy and religious practices. Even worse, with the monarch’s consent, another Spanish Jesuit, <strong>Mendez</strong>, ordered reconsecration of the EOC priests and deacons, and rebaptism of the masses. Besides, he called for the suspension of Old Testament customs such as male circumcision and the observance of the Sabbath. Additional injunctions included prohibition of preaching in Ge’ez, fasting on Wednesdays and Fridays, reverence for Ethiopian saints and the Ark of Covenant. Meanwhile, he ordered eating pork and the adoption of the Latin Mass and the Gregorian calendar. The reforms led to revolts led by the clergy and the nobility. Even loyal followers of the emperor, including his own son <strong>Fasiledes</strong> (r. 1632-67), opposed the changes.
+            </p>
+
+            <p class="lesson-text">
+                The Jesuits’ success in their mission to convert Ethiopia to Catholicism was short-lived and met with staunch anti-Catholic resistance, leading the country into a state of civil war and the threat of political disintegration. In June 1632, a large number of peasants lost their lives in one day battle alone. Finally, Emperor Susenyos abdicated in favor of his son Fasiledes, who restored the EOC. Fasiledes took serious measures against the Jesuits, most of them being expelled from the country. He also punished local converts, including Susenyos’ brother and the most fervent supporter of Catholicism, <strong>Se'ela Kristos</strong>, and <strong>Azazh Tino</strong>, the Oromo Catholic convert, who was a court intellectual, royal chronicler and councillor of Emperor Susenyos. Fasiledes introduced a “closed-door” policy, which isolated the country from all Europeans for about a century and a half until the beginning of the nineteenth century, with the exception of the visits by a French pharmacist, <strong>Charles Jacques Poncet</strong>, and a Scottish traveler, <strong>James Bruce</strong>, in 1700 and 1769, respectively. Conversely, he concluded an accord in 1647 with the Ottoman pasha at <strong>Suakin and Massawa</strong> to block Europeans from entering the Horn.
+            </p>
+
+            <div class="important-box">
+
+                <strong>
+                    ⛪ Doctrinal Divisions:
+                </strong>
+
+                <p class="lesson-text">
+                    Yet, the Jesuit intervention had lasting ramification as it triggered further doctrinal divisions and controversies within the EOC, which came to be divided into disputant sects and reached its peak during the <em>Zemene-Mesafint</em>. The <em>tewahedo</em> doctrine teaches <em>hulet lidet</em> (two births) of Christ: first in eternity as a Divine Being, the eternal birth, and second born again from St. Mary into the world as a perfect man and perfect divinity united in one nature. It was dominant in Tigray and Lasta. <em>Qibat</em> (Unction) initially branched off from the <em>hulet lidet</em> doctrine and accepted the eternal birth as the first birth of Christ, but claimed that at his incarnation, when he was born into the world, Holy Spirit anointed him. This sect was dominant in Gojjam. <em>Sost Lidet</em> (Three Births) (Ya Tsega Lij/Son through Grace) taught that Christ was first born in eternity as divine being, was born again in the womb of St. Mary and anointed by Holy Spirit, when he was born into the world. This sect was dominant in Gonder and Shewa. The doctrinal divisions, which usually took on regional forms, persisted until the Council of <strong>Boru Meda (1878)</strong>, when tewahedo was accepted as the official doctrine of the EOC. Over and above their doctrinal significance, these controversies had important political implications as regional rulers endorsed rival doctrines in their bid for dominance.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PDF CONTENT: 5.3 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🚶 Section 5.3
+            </span>
+
+            <h3 class="lesson-title">
+                5.3. Population Movements
+            </h3>
+
+            <p class="lesson-text">
+                Population movements that occurred on varied scales have played important roles in shaping the history of the Horn. People moved from place to place due to pull and push factors, which can be summed up as natural and social causes that could be attributed to the region's enduring socio-political conditions. The medieval population movements had extensive effects including peoples intermingling resulted in change of the original culture and evolution of new identities.
+            </p>
+
+            <h4 class="subheading">
+                5.3.1. Population Movements of the Argobba, Afar, and Somali
+            </h4>
+
+            <p class="lesson-text">
+                Although pressure on the environment was generally a major factor in population movements, the population movement of the Argobba, Afar and Somali was partly caused by the military conflict between the Christian Kingdom and the Sultanate of Adal in the late fifteenth and early sixteenth centuries. Their territories lay in the region where the caravan trade routes traversed, and they were affected by and moved back and forth in response to the ongoing conflict.
+            </p>
+
+        </section>
+
+
+        <!-- ARGOBBA -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🧭 Population Movement
+            </span>
+
+            <h3 class="lesson-title">
+                Argobba
+            </h3>
+
+            <p class="lesson-text">
+                there are two versions on the origin of the Argobba. The first holds that they descended from the followers of the Prophet Muhammad who came and settled in Ifat. The second claims that the Argobba are not Muslim-Arab immigrants as they are one of the ancient peoples that accepted Islam very early from religious leaders that came from Arabia. They were major agents of Islamic expansion and state formation in the Horn. For instance, the Makhzumite and Walasma Dynasties established the Shewan and Ifat sultanates respectively, in which the Argobba were dominant. The Christian-Muslim rivalry led to dispersion of the Argobba that can be observed from their fragmented settlements in various areas.
+            </p>
+
+        </section>
+
+
+        <!-- AFAR -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🐪 Population Movement
+            </span>
+
+            <h3 class="lesson-title">
+                Afar
+            </h3>
+
+            <p class="lesson-text">
+                The Afar lived predominantly in northeastern Ethiopia and northern Djibouti; but some have inhabited southern Eritrea. The Afar had an indigenous governance system known as <em>makabanto</em>, which has some democratic features. The Afar are first mentioned by the Arab geographer <strong>Ibn Said</strong> (1214-86), who described them as occupying the lowland territory near Bab el-Mandeb. Drought forced the Afar to move eastwards until they reached the middle Awash by the sixteenth century. Even though they were actors in the conflict, the Christian-Muslim conflict forced the Afar to move in different directions. Their pastoral economy helped the Afar survive the destructive effects of the wars of the sixteenth century.
+            </p>
+
+            <p class="lesson-text">
+                The Afar have many historically famous cities such as Maduna and Abasa. Following the Adal Sultanate’s collapse in the sixteenth century, the Afar established sultanates like Awsa, Girrifo, Tadjourah, Rahaito and Gobad. The Awsa Sultanate succeeded the earlier Awsa Imamate in the Middle Awash. The latter polity had come into existence in 1577, when <strong>Mohammed Jasa</strong> moved his capital from Harar to Awsa. Awsa declined and temporarily ended in conjunction with <strong>Imam Umar Din bin Adam</strong>'s ascension to the throne in 1672. The Sultanate was subsequently re-established by <strong>Kedafo</strong> around 1734 and was thereafter ruled by the <strong>Mudaito Dynasty</strong> that he founded. The primary symbol of the sultan was a silver baton. Awsa’s economy mainly depended on the <strong>Bati-Ginda’e trade route</strong>. Later it became a center of Islamic learning led by preachers like <strong>Tola Hanfire</strong>.
+            </p>
+
+        </section>
+
+
+        <!-- SOMALI -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🐪 Population Movement
+            </span>
+
+            <h3 class="lesson-title">
+                The Somali
+            </h3>
+
+            <p class="lesson-text">
+                the Somali practiced pastoral economy and led a nomadic life for centuries, possibly in search of sufficient pasture. Historically, a council known as <em>shir</em> governed the society. The decision-making process was highly democratic, with all adult males allowed equal participation. These councils at sub-clan, clan and inter-clan level provided a governing structure that enforced law and administered justice. The council ruled on wide-ranging affairs including resource allocation, marriage, trade and crime. A component of <em>shir</em>, the <em>guurti</em> (council of elders), was the highest political council mandated with resolving conflict and crisis.
+            </p>
+
+            <p class="lesson-text">
+                Ibn Said noted that Merca town located on the southern Somali coast near Shabele River was a major urban centre that brought large numbers of Somalis together in the thirteenth century AD. The Somali were a strong force behind the strength of <strong>Imam Ahmed</strong>. Yet, their movement did not last for long as they returned to their home base following the Imam’s defeat in 1543.
+            </p>
+
+        </section>
+
+
+        <!-- GADAA SYSTEM -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌳 Section 5.3.2
+            </span>
+
+            <h3 class="lesson-title">
+                5.3.2. Gadaa System and Oromo Population Movement (1522-1618)
+            </h3>
+
+            <h4 class="subheading">
+                🧠 The Gadaa System
+            </h4>
+
+            <p class="lesson-text">
+                The Gadaa system was an institution, through which the Oromo organized socially, administered their affairs, defended their territories, and managed their economies. At the beginning of the sixteenth century, the system was fully functional, which makes it reasonable to think that the Oromo had practiced the Gadaa system long before. Recent studies based on the Gadaa calendar suggest that the system evolved from the earlier Cushitic age-set social organization. In the system, eight years represented one Gadaa period, five Gadaa periods or forty years represented one generation, and nine generations represented an era. The earliest eras of Gadaa, which still remains obscure, was that of <em>Bidiri Dhogge</em>. Prior to the institution of the prevailing Gadaa Borana-Barentu at Madda Walabu around 1450 AD, the Oromo passed through eras known as Teya, Tesa, Munyo, Suftu, Madille, Abroji, Dhittacha and Warden. Gadaa was interrupted and restored during many eras because of various internal and external factors.
+            </p>
+
+            <p class="lesson-text">
+                The Gadaa system constituted elements of democracy such as periodic succession every eight years and power sharing to prevent one-man rule. Other principles of the system included representation of all lineages, clans and confederacies. It also served as a mechanism for socialization, education, the maintenance of peace and order, and social cohesion.
+            </p>
+
+            <p class="lesson-text">
+                The Oromo were organized into ten age-grades and generation sets defining members’ responsibilities. The system provided a framework that institutionalized relationships between seniors and juniors and egalitarian relations among members of a grade. Sons joined the first grade as members of the Gadaa class (generation class) forty years after their fathers. A common version of age grades and roles associated with them are indicated as follows:
+            </p>
+
+            <div class="important-box">
+
+                <strong>
+                    📊 Table 1: Age-grades and their roles
+                </strong>
+
+                <div style="overflow-x:auto; margin-top:14px;">
+
+                    <table style="width:100%; border-collapse:collapse; font-size:.95rem;">
+
+                        <thead>
+                            <tr>
+                                <th style="padding:10px; border:1px solid #dccfea; text-align:left;">Gadaa-Grade</th>
+                                <th style="padding:10px; border:1px solid #dccfea; text-align:left;">Age</th>
+                                <th style="padding:10px; border:1px solid #dccfea; text-align:left;">Roles</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Dabbale</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">birth-8 years</td>
+                                <td style="padding:9px; border:1px solid #dccfea;">Socialization and education</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Gamme</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">9-16</td>
+                                <td style="padding:9px; border:1px solid #dccfea;"></td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Folle</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">17-24</td>
+                                <td style="padding:9px; border:1px solid #dccfea;">training, agriculture etc</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Qondala</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">25-32</td>
+                                <td style="padding:9px; border:1px solid #dccfea;">military service</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Raba-Dori</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">33-40</td>
+                                <td style="padding:9px; border:1px solid #dccfea;">candidates for political power</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Luba</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">41-48</td>
+                                <td style="padding:9px; border:1px solid #dccfea;">leaders of Gadaa government</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Yuba I</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">49-56</td>
+                                <td rowspan="4" style="padding:9px; border:1px solid #dccfea;">senior advisors, educators and ritual leaders</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Yuba II</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">57-64</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Yuba III</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">65-72</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:9px; border:1px solid #dccfea;"><em>Yuba IV</em></td>
+                                <td style="padding:9px; border:1px solid #dccfea;">73-80</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <p class="lesson-text">
+                The <strong>Luba</strong> group assumed power for eight years. The head of the government, <strong>Abba-Gadaa Fite</strong> (literally “father of the period”), was assisted by several elected representatives. These included <strong>Abba Bokku</strong> (father of scepter), <strong>Abba Mati</strong> (in charge of <em>ada</em>/culture), <strong>Abba Chaffe</strong> (head of the assembly), <strong>Abba Dula</strong> (war leader), <strong>Abba Sera</strong> (father of law), <strong>Abba Alanga</strong> (judge), <strong>Abba Sa'a</strong> (father of treasury), etc. The <strong>Abba Muda</strong> (senior Qallu) played vital roles in power transfer and legitimizing the ruling Gadaa class. Women formed sisterhood and solidarity groups and maintained their rights by the <em>Sinqe</em> institution. Women from childhood to old age, i.e. <em>guduru</em> (pre-pubescent), <em>garre</em> (adolescent), <em>kalale</em> (wives of Luba and Yuba) and <em>cifire</em> (wives of Gadaamojji/above 80 years) were believed to have sacred power. They were involved on occasions like <em>arara</em> (conflict resolution), <em>guma</em> (blood compensation), <em>rakoo</em> (marriage commitment), etc.
+            </p>
+
+        </section>
+
+
+        <!-- OROMO POPULATION MOVEMENT -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🚶 Oromo Movement
+            </span>
+
+            <h3 class="lesson-title">
+                The Oromo Population Movement (1522-1618)
+            </h3>
+
+            <p class="lesson-text">
+                The factors for the Oromo movement are both natural and man-made. Natural factors include demographic increase and consequent need for extra land to accommodate the growing human and livestock population. In addition, the Christian-Muslim conflict from the thirteenth to the sixteenth centuries might have pressurized mainly pastoral Oromo groups to leave the lands they had inhabited for other areas. As a result, the Oromo organized under the Borana and Barentu confederacies and began moving northward from their common Gadaa center, Madda-Walabu.
+            </p>
+
+            <p class="lesson-text">
+                The Oromo movement took place from 1522 to 1618 under twelve successive Butta wars of successive Gogessa/Gadaa classes. Accordingly, the <strong>Melba (1522-30)</strong> fought and defeated the Christian regiment Batra Amora led by Fasil and occupied Bale while the <strong>Mudena (1530-8)</strong> reached the edge of the Awash River. The <strong>Kilole (1538-46)</strong> controlled Dawaro after defeating the Christian regiment, Adal Mabraq, while <strong>Bifole (1546-54)</strong> advanced to Waj and Erer. The <strong>Michille (1554-62)</strong> scored victories over the Christian commander, Dejjazmach Hamalmal at Dago, and the Jan Amora forces as well as the Adal force led by <strong>Emir Nur</strong> at Mount Hazalo. The <strong>Hambisa/Harmufa (1562-70)</strong> fought Minas’ force at Qacina and Wayyata, occupied Angot, Ganzyi, Sayint etc. Emperor Sartsa-Dengel’s cavalry led by <strong>Azazh Halibo</strong> defeated <strong>Robale Gadaa (1570-78)</strong> at Woyna Dega in 1574, but Robale recovered and defeated the force of <strong>Azmach Zara’a Yohannis</strong>, chief of the Christian dignitaries. The <strong>Birmaji (1578-86)</strong> controlled Ar'ine in Waj, crossed Jama to Welega and overwhelmed Azmach Deharegot’s army. The <strong>Mul'ata (1586-94)</strong> seized Bizamo, Damot, Gafat, Dambiya, etc.
+            </p>
+
+            <p class="lesson-text">
+                The <strong>Dulo (1594-1602)</strong>, <strong>Melba (1603-10)</strong> and <strong>Mudena (1610-18)</strong> expanded to West and Northern parts of the Horn of Africa while others like the Warday moved to Kenya, and Bur Haqaba and Majertin in Somalia. The organization of the Oromo under the <strong>Gadaa system</strong> played a crucial role in the success of the Oromo population movement.
+            </p>
+
+            <p class="lesson-text">
+                In due course, <strong>Oda Nabee</strong> of Tulama, <strong>Oda Roba</strong> of Sikko-Mando (Arsi), <strong>Oda Bultum</strong> of Itu-Anniyya and Qal’o, <strong>Oda Bisil</strong> of Mecha and <strong>Oda Bullug</strong> of Jawwi Mecha became major Gadaa centers. Other Gadaa centers included <strong>Gayo</strong> of Sabbo-Gona, <strong>Me'e Bokko</strong> of Guji, <strong>Oda Dogi</strong> of Tu, <strong>Oda Hulle</strong> of Jimma, <strong>Oda Gerado/Makodi</strong> of Wollo, etc. Gadaa leaders such as <strong>Dawe Gobbo</strong> of Borana, <strong>Anna Sorra</strong> of Guji, <strong>Changare Korbo</strong> of Tulama, <strong>Makko-Bili</strong> of Mecha, <strong>Babbo Koyye</strong> of Jimma and others laid down cardinal laws in their respective areas.
+            </p>
+
+        </section>
+
+
+        <!-- 5.4 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🤝 Section 5.4
+            </span>
+
+            <h3 class="lesson-title">
+                5.4. Ethnic and Religious Interaction and Integration
+            </h3>
+
+            <p class="lesson-text">
+                While territorial and religious expansion by the Christian kingdom and the Ethiopian Orthodox Church diffused Christian tradition from north to the south, the wars of <strong>Imam Ahmed</strong> and the population movements of the Argobba, the Afar and the Somali caused the expansion of Islam into the Christian kingdom.
+            </p>
+
+            <p class="lesson-text">
+                The Oromo population movement brought far-reaching changes to the socio-political map of Ethiopia and the Horn. First, it enabled the Oromo to control large territories in the region. Their advance continued unchecked by the imperial military regiments. Second, it led to the integration of people of diverse backgrounds into Oromo society and the integration of Oromo society into other communities. Within the Gadaa system, the Oromo applied two socialization mechanisms: <strong>Guddifacha</strong> and <strong>Moggasa</strong>. Guddifacha was the adoption (fostering) of a child, who would enjoy equal privileges with a biological child. Likewise, Moggasa was a system of amalgamation of groups into a clan through an oath of allegiance, with all the rights and obligations that such membership entailed.
+            </p>
+
+            <p class="lesson-text">
+                Third, the interactions resulted in the exchange of institutions. A number of people in the neighborhood of the Oromo adopted the Gadaa system and the Oromo language. Similarly, the Oromo adopted the traditions of the people with whom they came into contact. A case in point is the adoption of monarchical systems by the Gibe Oromo states, and the integration of the Oromo into the Christian kingdom’s political system, both at the expense of the Gadaa system, without abandoning their basic cultural and linguistic markers. It is important to mention the rise of Oromo political elites, warlords, land-owning nobles (Oromo <em>balabats</em>) and regional dynasties as a result of integration within the Ethiopian state. These have been outcomes of long processes of integrating the Oromo by the state, effectively implemented since the reign of Sertsa-Dengel. Military service, patrimonial, and political alliances were the three major avenues for Oromo integration into the establishments. The processes continued well into the Gondarine period, the <em>Zemene-Mesafint</em>, and the making of modern Ethiopia.
+            </p>
+
+        </section>
+
+
+        <!-- 5.5 -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌍 Section 5.5
+            </span>
+
+            <h3 class="lesson-title">
+                5.5. Peoples and States in Eastern, Central, Southern and Western Parts of the Region
+            </h3>
+
+            <p class="lesson-text">
+                As a prelude to the discussion, it is important to emphasize that it is not possible in the space of a brief teaching module such as this to exhaust all the peoples and states that existed in the region. Therefore, the section explores the history of some of the peoples and states (as illustrations) in the period under consideration. Besides, the discussion of these peoples and states in a separate section does not mean that they had no connection with peoples and polities in northern half of the country. The various peoples and states of the region maintained relations through various avenues of contact such as long-distance trade.
+            </p>
+
+        </section>
+
+
+        <!-- HARAR -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🕌 5.5.1 Peoples and States in the East
+            </span>
+
+            <h3 class="lesson-title">
+                The Emirate of Harar
+            </h3>
+
+            <p class="lesson-text">
+                During the reign of <strong>Emir Nur Mujahid</strong>, Harar became a walled city. <strong>Emir Ali ibn Da’ud</strong> (r. 1647-62) founded a new dynasty that ruled the Emirate for over two centuries and a half. It was later strengthened by Amirs like <strong>Abdul Shakur</strong> (1783-94). The Amir’s council, <em>Majlis</em>, supervised the mosque land called <em>wagf</em>, and assisted the Amirs. The Amirs would gradually extend their authority over the surrounding Afar, Argobba, Oromo and Somali through trade, inter-marriage, and Islamic teachings.
+            </p>
+
+        </section>
+
+
+        <!-- SHEWA -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                👑 Peoples and States
+            </span>
+
+            <h3 class="lesson-title">
+                The Kingdom of Shewa
+            </h3>
+
+            <p class="lesson-text">
+                The kingdom of Shewa was founded by <strong>Negasi Kristos</strong> (r. 1696-1703), originally from the district of Gera Meder in Menz. Claiming lineage from <strong>Abeto Yagob</strong>, son of Emperor Lebne-Dengel, he is traditionally considered the founder of the Shewan branch of the “Solomonids.” After establishing his ascendancy, he presided over the Christian communities that inhabited districts like Asendabo, Debadebo and Makfud. Negasi also formed alliance with the Argobba Muslims who lived in the lowlands of Yifat. The second king was <strong>Merid Azmatch Sebestie/Sebastyanos</strong> (r. 1703-18). <strong>Abuye/Abiyye</strong> (r. 1718-45) made Haramba his capital and tried to subjugate the surrounding Oromo before he was killed by the Karrayu Oromo. However, it was <strong>Amaha Iyesus/Amhayyes</strong> (r. 1745-75), the great grandson of Negasi, who asserted effective leadership in the whole districts (Bulga, Efrata, Menz, Tegulet etc.). His capital was at Doqaqit but later shifted to Ankober. In addition, he made futile attempts to control the Afar and Abichu Oromo. <strong>Asfa-Wosen</strong> (r. 1775-1808) conquered Antsokia, Asbo, Gedem, Gishe, Merhabete, Morat and Shewa Meda. Shewa’s economy was mainly based on agriculture, supplemented by trade and craft.
+            </p>
+
+        </section>
+
+
+        <!-- GURAGE -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌱 Peoples and States
+            </span>
+
+            <h3 class="lesson-title">
+                Gurage
+            </h3>
+
+            <p class="lesson-text">
+                The Sebat Bet Gurage, classified as the Western Gurage, included Chaha, Muher, Ezha, Gumer, Inamor, Endegegn/Enner and Gyeto. The other major Gurage group, classified as the Northern Gurage, is variously known as Kistane, Aymalal or Soddo. Additional groups included Dobbi, Gadabano, and Masqan. The Gurage had traditional system of governance developed over centuries: <em>Yajoka Qicha</em> among the Sebat Bet and <em>Gordanna Sera</em> among the Kistane. Yet, there was no centralized leadership. Power was vested in descent, clan or lineage groups that displayed corporate rights, obligations, and influence. The Gurage leaders also held the title of <em>abegaz</em> or <em>azmatch</em> combining political and military authority. The staple crop in Gurage is enset.
+            </p>
+
+        </section>
+
+
+        <!-- SILTE -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌾 Peoples and States
+            </span>
+
+            <h3 class="lesson-title">
+                Silte
+            </h3>
+
+            <p class="lesson-text">
+                Local traditions confirm the movement of notables like <strong>Hajji Aliye</strong> from the areas around the Chercher highlands in eastern Ethiopia with large number of followers chiefly the Silte before the sixteenth century. These people settled in the south and western parts of Ethiopia during the conflict between the Christian kingdom and the Adal sultanate as well as the Oromo population movement. Thus, it is possible that the ethnogenesis of the Silte had benefited from the inter-mixing of various peoples due to war and population movements. In the Silte highland areas, the cultivation of enset was the predominant staple crop while cereals constituted the base for peasant subsistence in the lowland parts. Khat and berbere (red pepper) remained the two major cash crops in the area although local merchants were also involved in the buying and selling of coffee, mainly from the highland parts of Sidama and Shewa as of the nineteenth century.
+            </p>
+
+        </section>
+
+
+        <!-- HADIYA -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🏛️ Peoples and States
+            </span>
+
+            <h3 class="lesson-title">
+                Hadiya
+            </h3>
+
+            <p class="lesson-text">
+                The origin of the Hadiya state goes back to the thirteenth century. Hadiya’s population became more heterogeneous after the wars between the Christian Kingdom and Adal, and the Oromo population movement, chiefly the latter. Among others, descendants of the old Hadiya can be traced among the Oromo, Sidama, Qabena and Halaba, and the Hadiya proper with its sub-groups: the Mareko, Lemu, Soro, Shashogo and Badowacho. Hadiya’s political importance was considerable, thanks to its sizable population and vast territory, from the thirteenth to the sixteenth centuries. Despite sporadic clashes, Hadiya’s relation with the Christian state was largely stable, particularly after the marriage of Emperor Zara-Yaqob to the Hadiya princess Ite Jan Zela, more famously known as Queen Elleni.
+            </p>
+
+        </section>
+
+
+        <!-- KAMBATA -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌾 Peoples and States
+            </span>
+
+            <h3 class="lesson-title">
+                Kambata
+            </h3>
+
+            <p class="lesson-text">
+                Four communities of separate origin (the Kambata in the narrow sense, the Dubamo, Donga and Tembaro) coalesced to form the nucleus of the state of Kambata by about 1550-70. This process of state formation was further assisted by Omotic and Semitic peoples who moved into the region at different times. The groups who called themselves Kambata related to one of the seven dominant clans (Kambata Lamala) at the end of the sixteenth century. The Kambata had a traditional administrative institution called the <strong>Hambericho Council</strong> that had seven members, each representing the seven clans. The council ruled Kambata with a king at the top. The people were enset cultivators, sharing similar culture and speaking the same language, Kambatissa.
+            </p>
+
+        </section>
+
+
+        <!-- HALABA -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌾 Peoples and States
+            </span>
+
+            <h3 class="lesson-title">
+                Halaba
+            </h3>
+
+            <p class="lesson-text">
+                The Halaba inhabited the territory between the Bilate River and Lake Hawasa. At the apex of the indigenous administration was the <strong>Woma</strong> (king) and below him were clan or village leaders. The <strong>Halabi Ogete</strong>, an assembly of village leaders, handled societal matters such as disputes between clans. The traditional administrative and judicial system functioned based on <strong>Sera</strong>, which constituted the laws and values of the society. The Halaba economy was largely based on subsistence agriculture and raising of livestock. The main cash crops included red pepper, maize and teff. Halaba’s principal center, Kolito, was once a principal market place.
+            </p>
+
+        </section>
+
+
+        <!-- SOUTH -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌍 5.5.3
+            </span>
+
+            <h3 class="lesson-title">
+                5.5.3. Peoples and States in the South
+            </h3>
+
+            <h4 class="subheading">
+                🌿 Sidama
+            </h4>
+
+            <p class="lesson-text">
+                The Sidama indigenous system of governance was led by the <strong>Mote</strong> (king), who exercised political authority in consultation with the council of elders called <strong>Songo</strong>. Meanwhile, the <strong>Woma</strong> handled ritual matters such as offering sacrifices to spirits, circumcision and marriage. Sidama society was divided into generation sets called <em>Luwa</em>. It had five grades: <em>Darara, Fullassa, Hirbora, Wawassa</em> and <em>Mogissa</em>, each lasting eight years. Each class had its own leader named <em>gaden</em>, who settled disputes and handled the defense of the society. The Sidama <em>sera</em> governed social life based on the moral code, <em>halale</em> (the ultimate truth), which was used to administer justice. Halale had no enforcement mechanisms, but people abided by its rules to avoid curse or ostracization by the society. Enset and coffee are important food and cash crops, respectively.
+            </p>
+
+            <h4 class="subheading">
+                🌿 Gedeo
+            </h4>
+
+            <p class="lesson-text">
+                The dominant tradition traces the ancestry of the Gedeo to <strong>Daraso</strong>, who was the older brother of <strong>Gujo</strong>, the father of the Guji Oromo. The seven major Gedeo clans descended from the seven sons of Daraso and were grouped in two houses: the <em>shole batte</em> (senior house), consisting of four clans, and the <em>sase batte</em> (junior house), containing three clans. The Gedeo had a traditional governance system called <em>balle</em>, which was based on age classes and ranking having seven grades with a 10-year period each creating a 70-year cycle. <em>Sasserogo</em> was a federation of three territories: Sobbho, Ributa and Rikuta sharing one <em>Abba Gadaa</em> who leaves office every eight years to be replaced by a new holder from the next age set. The Gedeo economy was mainly based on enset cultivation.
+            </p>
+
+            <h4 class="subheading">
+                🧱 Konso
+            </h4>
+
+            <p class="lesson-text">
+                The Konso practiced a balanced, integrated and specialized agricultural technology. They also adopted soil conservation techniques, notably the construction of terraces, which converted rugged and hilly areas into permanent cultivation. Furthermore, farmers were adept at selecting plant varieties that withstood hot and dry climatic conditions. Konso’s economy also depended on bee-keeping and crafts. The Konso lived in walled villages (<em>paletas</em>) which were further divided into wards called <em>kanta</em> until the late nineteenth century. Each village was ruled by a council of elders called <em>hayyota</em> who were selected through the direct participation of the adult males. Membership to the council was not hereditary but rotated every eighteen years.
+            </p>
+
+        </section>
+
+
+        <!-- SOUTHWEST -->
+
+        <section class="lesson-card">
+
+            <span class="lesson-number">
+                🌍 5.5.4
+            </span>
+
+            <h3 class="lesson-title">
+                5.5.4. Peoples and States in the Southwest
+            </h3>
+
+            <h4 class="subheading">
+                🌿 Wolayta
+            </h4>
+
+            <p class="lesson-text">
+                The Wolayta-Malla and the Tigre dynasties successively ruled Wolayta kingdom from the
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        📜 <strong>History</strong>
+        <br>
+
+        📚 Unique Academic — Complete Full Notes
+
+    </footer>
+
+
+</body>
+
+</html>
