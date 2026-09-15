@@ -1,0 +1,2384 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>🏆 Weekly Challenge — Unique Academic</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #172033;
+    }
+
+    .container {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    /* =========================================
+       HEADER
+    ========================================= */
+
+    .hero {
+        background: linear-gradient(135deg, #0d47a1, #1976d2);
+        color: white;
+        padding: 28px 20px;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+    }
+
+    .hero p {
+        margin: 6px 0;
+    }
+
+    .brand {
+        font-size: 14px;
+        opacity: 0.9;
+        margin-top: 15px;
+    }
+
+    /* =========================================
+       INFO CARDS
+    ========================================= */
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .info-card {
+        background: white;
+        border-radius: 15px;
+        padding: 16px 10px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .info-card .icon {
+        font-size: 25px;
+        margin-bottom: 6px;
+    }
+
+    .info-card strong {
+        display: block;
+        font-size: 14px;
+    }
+
+    .info-card span {
+        font-size: 12px;
+        color: #667085;
+    }
+
+    /* =========================================
+       START SCREEN
+    ========================================= */
+
+    .panel {
+        background: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    }
+
+    .start-panel {
+        text-align: center;
+    }
+
+    .start-panel h2 {
+        margin-top: 0;
+    }
+
+    .rules {
+        text-align: left;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    .rules div {
+        padding: 10px 0;
+        border-bottom: 1px solid #edf0f5;
+    }
+
+    .primary-btn {
+        border: none;
+        background: #1976d2;
+        color: white;
+        padding: 14px 25px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .primary-btn:hover {
+        transform: translateY(-1px);
+    }
+
+    .secondary-btn {
+        border: 1px solid #1976d2;
+        background: white;
+        color: #1976d2;
+        padding: 12px 20px;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* =========================================
+       CLOSED
+    ========================================= */
+
+    .closed-panel {
+        text-align: center;
+    }
+
+    .closed-icon {
+        font-size: 55px;
+    }
+
+    .closed-panel h2 {
+        color: #c62828;
+    }
+
+    .next-week {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #667085;
+    }
+
+    /* =========================================
+       QUIZ HEADER
+    ========================================= */
+
+    .quiz-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .question-counter {
+        font-weight: bold;
+        color: #1976d2;
+    }
+
+    .timer {
+        background: #fff3e0;
+        color: #e65100;
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-weight: bold;
+        min-width: 95px;
+        text-align: center;
+    }
+
+    .timer.warning {
+        background: #ffebee;
+        color: #c62828;
+    }
+
+    .progress-container {
+        width: 100%;
+        height: 9px;
+        background: #e8edf5;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 22px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background: #1976d2;
+        transition: width 0.3s;
+    }
+
+    /* =========================================
+       QUESTION
+    ========================================= */
+
+    .question-number {
+        font-size: 13px;
+        color: #667085;
+        margin-bottom: 8px;
+    }
+
+    .question-text {
+        font-size: 21px;
+        line-height: 1.5;
+        font-weight: bold;
+        margin-bottom: 22px;
+    }
+
+    .options {
+        display: grid;
+        gap: 12px;
+    }
+
+    .option {
+        border: 2px solid #e3e8ef;
+        background: white;
+        border-radius: 13px;
+        padding: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        transition: 0.2s;
+    }
+
+    .option:hover {
+        border-color: #1976d2;
+        background: #f7fbff;
+    }
+
+    .option.selected {
+        border-color: #1976d2;
+        background: #eaf4ff;
+    }
+
+    .option-letter {
+        min-width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        background: #edf3fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #1976d2;
+    }
+
+    .option.selected .option-letter {
+        background: #1976d2;
+        color: white;
+    }
+
+    .option-text {
+        line-height: 1.45;
+        padding-top: 4px;
+    }
+
+    /* =========================================
+       HINT
+    ========================================= */
+
+    .hint-box {
+        margin-top: 20px;
+        padding: 13px;
+        border-radius: 12px;
+        background: #fff8e1;
+        border: 1px solid #ffe082;
+    }
+
+    .hint-btn {
+        border: none;
+        background: transparent;
+        font-weight: bold;
+        color: #795548;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .hint-text {
+        display: none;
+        margin-top: 8px;
+        color: #5d4037;
+        line-height: 1.5;
+    }
+
+    /* =========================================
+       NAVIGATION
+    ========================================= */
+
+    .quiz-navigation {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .nav-btn {
+        border: none;
+        padding: 12px 20px;
+        border-radius: 11px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .previous-btn {
+        background: #edf0f5;
+        color: #344054;
+    }
+
+    .next-btn {
+        background: #1976d2;
+        color: white;
+    }
+
+    .submit-btn {
+        background: #2e7d32;
+        color: white;
+    }
+
+    /* =========================================
+       RESULT
+    ========================================= */
+
+    .result-panel {
+        text-align: center;
+    }
+
+    .result-trophy {
+        font-size: 65px;
+    }
+
+    .score-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 10px solid #1976d2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .score-circle strong {
+        font-size: 35px;
+    }
+
+    .score-circle span {
+        font-size: 13px;
+        color: #667085;
+    }
+
+    .result-message {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+
+    .result-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .result-stat {
+        background: #f6f8fb;
+        border-radius: 12px;
+        padding: 14px;
+    }
+
+    .result-stat strong {
+        display: block;
+        font-size: 21px;
+    }
+
+    .result-stat span {
+        font-size: 12px;
+        color: #667085;
+    }
+
+    /* =========================================
+       REVIEW
+    ========================================= */
+
+    .review-title {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .review-item {
+        text-align: left;
+        padding: 18px;
+        border-radius: 14px;
+        margin-top: 12px;
+        background: #f8fafc;
+        border-left: 5px solid #999;
+    }
+
+    .review-item.correct {
+        border-left-color: #2e7d32;
+    }
+
+    .review-item.wrong {
+        border-left-color: #c62828;
+    }
+
+    .review-question {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .review-answer {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 5px 0;
+    }
+
+    .explanation {
+        margin-top: 10px;
+        padding: 10px;
+        background: white;
+        border-radius: 9px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    .footer {
+        text-align: center;
+        margin: 25px 0 10px;
+        color: #667085;
+        font-size: 13px;
+    }
+
+    .home-btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #edf3fa;
+        color: #1976d2;
+        padding: 11px 18px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    /* =========================================
+       DARK MODE SUPPORT
+    ========================================= */
+
+    body.dark-mode {
+        background: #111;
+        color: white;
+    }
+
+    body.dark-mode .panel,
+    body.dark-mode .info-card,
+    body.dark-mode .option {
+        background: #1d1d1d;
+        color: white;
+    }
+
+    body.dark-mode .option {
+        border-color: #333;
+    }
+
+    body.dark-mode .option:hover,
+    body.dark-mode .option.selected {
+        background: #17283a;
+    }
+
+    body.dark-mode .result-stat,
+    body.dark-mode .review-item {
+        background: #181818;
+    }
+
+    body.dark-mode .explanation {
+        background: #222;
+    }
+
+    body.dark-mode .option-letter {
+        background: #333;
+    }
+
+    body.dark-mode .secondary-btn {
+        background: #1d1d1d;
+        color: white;
+    }
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 10px;
+        }
+
+        .hero {
+            padding: 23px 15px;
+        }
+
+        .hero h1 {
+            font-size: 25px;
+        }
+
+        .info-grid {
+            gap: 7px;
+        }
+
+        .info-card {
+            padding: 12px 5px;
+        }
+
+        .question-text {
+            font-size: 18px;
+        }
+
+        .panel {
+            padding: 18px;
+        }
+
+        .quiz-top {
+            align-items: flex-start;
+        }
+
+        .result-stats {
+            grid-template-columns: 1fr;
+        }
+
+        .quiz-navigation {
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            flex: 1;
+        }
+
+    }
+
+</style>
+
+</head><body><div class="container"><!-- =================================================
+     HERO
+================================================= --><div class="hero"><h1>
+    🏆 Weekly Academic Challenge
+</h1>
+
+<p id="weekTitle">
+    Weekly Challenge
+</p>
+
+<div class="brand">
+    🎓 Unique Academic
+</div>
+
+</div><!-- =================================================
+     INFO
+================================================= --><div class="info-grid"><div class="info-card">
+
+    <div class="icon">
+        📅
+    </div>
+
+    <strong>
+        Weekend
+    </strong>
+
+    <span>
+        Saturday & Sunday
+    </span>
+
+</div>
+
+
+<div class="info-card">
+
+    <div class="icon">
+        📝
+    </div>
+
+    <strong id="questionCount">
+        20 Questions
+    </strong>
+
+    <span>
+        Mixed Challenge
+    </span>
+
+</div>
+
+
+<div class="info-card">
+
+    <div class="icon">
+        ⏱️
+    </div>
+
+    <strong>
+        20 Minutes
+    </strong>
+
+    <span>
+        Time Limit
+    </span>
+
+</div>
+
+</div><!-- =================================================
+     CLOSED SCREEN
+================================================= --><div
+    id="closedScreen"
+    class="panel closed-panel"
+    style="display:none;"
+><div class="closed-icon">
+    🔒
+</div>
+
+<h2>
+    Weekly Quiz Is Closed
+</h2>
+
+<p>
+    The Weekly Academic Challenge is available only on
+    <b>Saturday and Sunday</b>.
+</p>
+
+<p>
+    Come back this weekend and test your knowledge! 🔥
+</p>
+
+<div
+    class="next-week"
+    id="nextOpening"
+></div>
+
+</div><!-- =================================================
+     START SCREEN
+================================================= --><div
+    id="startScreen"
+    class="panel start-panel"
+><h2>
+    🎯 Ready for the Challenge?
+</h2>
+
+<p>
+    This week's quiz is designed to test your
+    understanding, reasoning and exam readiness.
+</p>
+
+
+<div class="rules">
+
+    <div>
+        📌 <b>Questions:</b>
+        <span id="rulesQuestionCount">20</span>
+    </div>
+
+    <div>
+        ⏱️ <b>Time:</b>
+        20 minutes
+    </div>
+
+    <div>
+        🎯 <b>Format:</b>
+        Multiple Choice
+    </div>
+
+    <div>
+        🔥 <b>Difficulty:</b>
+        University Level
+    </div>
+
+    <div>
+        ⚠️ <b>Important:</b>
+        The quiz submits automatically when the timer reaches zero.
+    </div>
+
+</div>
+
+
+<button
+    class="primary-btn"
+    onclick="startQuiz()"
+>
+    🚀 Start Weekly Challenge
+</button>
+
+</div><!-- =================================================
+     QUIZ SCREEN
+================================================= --><div
+    id="quizScreen"
+    class="panel"
+    style="display:none;"
+><div class="quiz-top">
+
+    <div
+        id="questionCounter"
+        class="question-counter"
+    >
+        Question 1 of 20
+    </div>
+
+    <div
+        id="timer"
+        class="timer"
+    >
+        20:00
+    </div>
+
+</div>
+
+
+<div class="progress-container">
+
+    <div
+        id="progressBar"
+        class="progress-bar"
+    ></div>
+
+</div>
+
+
+<div
+    id="questionNumber"
+    class="question-number"
+>
+    Question 1
+</div>
+
+
+<div
+    id="questionText"
+    class="question-text"
+></div>
+
+
+<div
+    id="options"
+    class="options"
+></div>
+
+
+<div class="hint-box">
+
+    <button
+        class="hint-btn"
+        onclick="toggleHint()"
+    >
+        💡 Show Hint
+    </button>
+
+    <div
+        id="hintText"
+        class="hint-text"
+    ></div>
+
+</div>
+
+
+<div class="quiz-navigation">
+
+    <button
+        id="previousBtn"
+        class="nav-btn previous-btn"
+        onclick="previousQuestion()"
+    >
+        ← Previous
+    </button>
+
+
+    <button
+        id="nextBtn"
+        class="nav-btn next-btn"
+        onclick="nextQuestion()"
+    >
+        Next →
+    </button>
+
+
+    <button
+        id="submitBtn"
+        class="nav-btn submit-btn"
+        onclick="submitQuiz()"
+        style="display:none;"
+    >
+        🏁 Submit Quiz
+    </button>
+
+</div>
+
+</div><!-- =================================================
+     RESULT SCREEN
+================================================= --><div
+    id="resultScreen"
+    class="panel result-panel"
+    style="display:none;"
+><div class="result-trophy">
+    🏆
+</div>
+
+<h2>
+    Weekly Challenge Complete!
+</h2>
+
+<p id="resultWeek">
+    Weekly Challenge
+</p>
+
+
+<div class="score-circle">
+
+    <strong id="percentage">
+        0%
+    </strong>
+
+    <span>
+        SCORE
+    </span>
+
+</div>
+
+
+<div
+    id="resultMessage"
+    class="result-message"
+></div>
+
+
+<div class="result-stats">
+
+    <div class="result-stat">
+
+        <strong id="correctCount">
+            0
+        </strong>
+
+        <span>
+            Correct
+        </span>
+
+    </div>
+
+
+    <div class="result-stat">
+
+        <strong id="wrongCount">
+            0
+        </strong>
+
+        <span>
+            Wrong
+        </span>
+
+    </div>
+
+
+    <div class="result-stat">
+
+        <strong id="timeUsed">
+            0:00
+        </strong>
+
+        <span>
+            Time Used
+        </span>
+
+    </div>
+
+</div>
+
+
+<button
+    class="secondary-btn"
+    onclick="showReview()"
+>
+    📖 Review Answers
+</button>
+
+<button
+    class="primary-btn"
+    onclick="location.reload()"
+    style="margin-left:8px;"
+>
+    🔄 Try Again
+</button>
+
+
+<div
+    id="review"
+    style="display:none;"
+>
+
+    <h3 class="review-title">
+        📖 Answer Review
+    </h3>
+
+    <div id="reviewList"></div>
+
+</div>
+
+</div><!-- =================================================
+     FOOTER
+================================================= --><div class="footer"><a
+    href="index.html"
+    class="home-btn"
+>
+    🏠 Back Home
+</a>
+
+<p>
+    Learn. Understand. Succeed.
+</p>
+
+<p>
+    © Unique Academic
+</p>
+
+</div></div><script>
+
+/* =====================================================
+   WEEKLY QUIZ SETTINGS
+===================================================== */
+
+const QUIZ_DURATION = 20 * 60;
+
+
+/* =====================================================
+   WEEK NUMBER
+===================================================== */
+
+function getWeekNumber(date) {
+
+    const start = new Date(date.getFullYear(), 0, 1);
+
+    const difference =
+        Math.floor(
+            (date - start) /
+            (24 * 60 * 60 * 1000)
+        );
+
+    return Math.ceil(
+        (difference + start.getDay() + 1) / 7
+    );
+
+}
+
+
+const today = new Date();
+
+const weekNumber = getWeekNumber(today);
+
+const weekName =
+    "Weekly Challenge #" +
+    String(weekNumber).padStart(2, "0");
+
+
+document.getElementById("weekTitle").textContent =
+    weekName;
+
+document.getElementById("resultWeek").textContent =
+    weekName;
+
+
+/* =====================================================
+   WEEKEND CHECK
+=====================================================
+
+   JavaScript:
+   0 = Sunday
+   6 = Saturday
+
+===================================================== */
+
+const day = today.getDay();
+
+const isWeekend =
+    day === 0 ||
+    day === 6;
+
+
+/* =====================================================
+   WEEKLY QUESTIONS
+=====================================================
+
+   🔥 CHANGE ONLY THIS SECTION EACH WEEK.
+
+   Each question contains:
+
+   question
+   options
+   answer
+   explanation
+   hint
+
+===================================================== */
+
+const weeklyQuestions = [
+
+    {
+        question:
+            "Which economic problem exists because human wants are unlimited while resources are limited?",
+
+        options: [
+            "Scarcity",
+            "Inflation",
+            "Unemployment",
+            "Equilibrium"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "Scarcity exists because available resources are limited relative to unlimited human wants.",
+
+        hint:
+            "Think about the relationship between limited resources and unlimited wants."
+    },
+
+
+    {
+        question:
+            "What is opportunity cost?",
+
+        options: [
+            "The money spent on every choice",
+            "The value of the next best alternative forgone",
+            "The total benefit from all available choices",
+            "The amount of resources owned by a consumer"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Opportunity cost is the value of the next best alternative that is given up when a choice is made.",
+
+        hint:
+            "Focus on what is sacrificed when one alternative is selected."
+    },
+
+
+    {
+        question:
+            "According to the law of demand, other things remaining constant, what normally happens when the price of a good increases?",
+
+        options: [
+            "Quantity demanded increases",
+            "Quantity demanded decreases",
+            "Supply automatically becomes zero",
+            "Consumer income increases"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "The law of demand states that, ceteris paribus, quantity demanded generally decreases as price increases.",
+
+        hint:
+            "Think about the usual inverse relationship between price and quantity demanded."
+    },
+
+
+    {
+        question:
+            "At market equilibrium, which condition exists?",
+
+        options: [
+            "Quantity demanded equals quantity supplied",
+            "Demand is always greater than supply",
+            "Supply is always greater than demand",
+            "Price must always equal zero"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "Market equilibrium occurs where quantity demanded equals quantity supplied.",
+
+        hint:
+            "Equilibrium means the market is balanced."
+    },
+
+
+    {
+        question:
+            "Which factor of production refers primarily to human effort used in producing goods and services?",
+
+        options: [
+            "Land",
+            "Labour",
+            "Capital",
+            "Entrepreneurship"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Labour refers to human physical and mental effort used in the production process.",
+
+        hint:
+            "Look for the factor involving human work."
+    },
+
+
+    {
+        question:
+            "What does marginal utility measure?",
+
+        options: [
+            "Total satisfaction from all units consumed",
+            "Additional satisfaction from consuming one more unit",
+            "The price paid for a product",
+            "The total income of a consumer"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Marginal utility is the additional satisfaction obtained from consuming one additional unit of a good or service.",
+
+        hint:
+            "The word 'marginal' refers to an additional unit."
+    },
+
+
+    {
+        question:
+            "Which market structure is characterized by a single seller dominating the market?",
+
+        options: [
+            "Perfect competition",
+            "Monopolistic competition",
+            "Oligopoly",
+            "Monopoly"
+        ],
+
+        answer: 3,
+
+        explanation:
+            "A monopoly is a market structure in which a single seller is the dominant or sole supplier.",
+
+        hint:
+            "Focus on the market structure with one seller."
+    },
+
+
+    {
+        question:
+            "GDP is primarily used to measure what?",
+
+        options: [
+            "The total population of a country",
+            "The value of final goods and services produced within an economy",
+            "The amount of money held by households only",
+            "The number of firms in an economy"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Gross Domestic Product measures the market value of final goods and services produced within an economy during a specified period.",
+
+        hint:
+            "Think about production within a country's economy."
+    },
+
+
+    {
+        question:
+            "Inflation refers to what economic condition?",
+
+        options: [
+            "A sustained increase in the general price level",
+            "A permanent fall in population",
+            "A decrease in all production costs",
+            "An increase in the value of every currency"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "Inflation is a sustained increase in the general price level of goods and services.",
+
+        hint:
+            "It is associated with the general level of prices."
+    },
+
+
+    {
+        question:
+            "Which of the following is generally considered a macroeconomic issue?",
+
+        options: [
+            "The pricing decision of one small shop",
+            "The demand for one particular brand",
+            "National unemployment",
+            "The utility received from one additional apple"
+        ],
+
+        answer: 2,
+
+        explanation:
+            "National unemployment is a macroeconomic issue because it concerns the economy as a whole.",
+
+        hint:
+            "Macroeconomics focuses on economy-wide issues."
+    },
+
+
+    {
+        question:
+            "What does the production possibility frontier illustrate?",
+
+        options: [
+            "Only consumer preferences",
+            "Possible combinations of outputs given available resources and technology",
+            "Only the amount of money in circulation",
+            "The exact future price of every good"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "A production possibility frontier shows possible combinations of outputs that can be produced with given resources and technology.",
+
+        hint:
+            "Think about production choices under limited resources."
+    },
+
+
+    {
+        question:
+            "Which statement best describes economic efficiency?",
+
+        options: [
+            "Using resources without considering their alternative uses",
+            "Using resources in a way that avoids unnecessary waste",
+            "Producing only luxury goods",
+            "Increasing prices whenever possible"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Economic efficiency involves using scarce resources so that unnecessary waste is minimized and resources are allocated effectively.",
+
+        hint:
+            "Efficiency is closely related to avoiding waste."
+    },
+
+
+    {
+        question:
+            "Which of the following would most directly shift the demand curve for a normal good?",
+
+        options: [
+            "A change in the good's own price",
+            "A change in consumer income",
+            "A movement along the existing demand curve",
+            "A change in quantity demanded caused only by price"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "For a normal good, a change in consumer income can shift the demand curve, while a change in the good's own price causes movement along the curve.",
+
+        hint:
+            "Distinguish between a shift of the curve and movement along it."
+    },
+
+
+    {
+        question:
+            "In economics, capital as a factor of production generally refers to what?",
+
+        options: [
+            "Money used only for personal consumption",
+            "Produced resources used to produce other goods and services",
+            "All natural resources",
+            "Human wants"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Economic capital includes produced resources such as machinery and equipment that are used in further production.",
+
+        hint:
+            "Think of productive assets created by people."
+    },
+
+
+    {
+        question:
+            "What happens when quantity demanded exceeds quantity supplied at the current price?",
+
+        options: [
+            "A surplus exists",
+            "A shortage exists",
+            "The market is necessarily at equilibrium",
+            "Production becomes impossible"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "When quantity demanded exceeds quantity supplied, the market experiences a shortage.",
+
+        hint:
+            "More buyers want the product than sellers are supplying."
+    },
+
+
+    {
+        question:
+            "Which concept explains why producing more of one good may require giving up some production of another good?",
+
+        options: [
+            "Opportunity cost",
+            "Inflation",
+            "Money supply",
+            "Consumer surplus"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "Opportunity cost reflects the alternative production or benefit sacrificed when resources are used for another purpose.",
+
+        hint:
+            "Limited resources force choices between alternatives."
+    },
+
+
+    {
+        question:
+            "Which institution is primarily responsible for conducting monetary policy in a country?",
+
+        options: [
+            "The central bank",
+            "A private household",
+            "A retail shop",
+            "A single consumer"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "Monetary policy is generally conducted by a country's central bank or monetary authority.",
+
+        hint:
+            "Think about the institution responsible for money and interest-rate policy."
+    },
+
+
+    {
+        question:
+            "Unemployment exists when a person is willing and able to work but cannot find employment, within the relevant labour-force definition.",
+
+        options: [
+            "Correct description",
+            "A definition of inflation",
+            "A definition of scarcity",
+            "A definition of equilibrium"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "Unemployment concerns people who are part of the relevant labour force, are willing and able to work, and are without employment.",
+
+        hint:
+            "Focus on employment status rather than prices or resources."
+    },
+
+
+    {
+        question:
+            "Which economic system relies heavily on market forces to determine the allocation of resources?",
+
+        options: [
+            "Market economy",
+            "Command economy",
+            "Traditional economy only",
+            "Subsistence household"
+        ],
+
+        answer: 0,
+
+        explanation:
+            "A market economy relies substantially on market forces such as prices, demand and supply to allocate resources.",
+
+        hint:
+            "Look for the system in which prices and markets play the central allocation role."
+    },
+
+
+    {
+        question:
+            "Why is economics often described as the study of choices under scarcity?",
+
+        options: [
+            "Because resources have no alternative uses",
+            "Because people and societies must make choices about how to use limited resources",
+            "Because all goods are free",
+            "Because human wants are always limited"
+        ],
+
+        answer: 1,
+
+        explanation:
+            "Economics studies how individuals and societies make choices about allocating scarce resources among competing uses.",
+
+        hint:
+            "Connect scarcity with the need to make choices."
+    }
+
+];
+
+
+/* =====================================================
+   QUIZ VARIABLES
+===================================================== */
+
+let questions = [];
+
+let currentQuestion = 0;
+
+let userAnswers = [];
+
+let timeRemaining = QUIZ_DURATION;
+
+let timerInterval = null;
+
+let quizStarted = false;
+
+let quizSubmitted = false;
+
+let quizStartTime = null;
+
+
+/* =====================================================
+   PREPARE QUIZ
+===================================================== */
+
+function prepareQuiz() {
+
+    questions =
+        weeklyQuestions.map(
+            question => ({
+                ...question,
+                options:
+                    question.options.map(
+                        (text, index) => ({
+                            text: text,
+                            originalIndex: index
+                        })
+                    )
+            })
+        );
+
+
+    userAnswers =
+        new Array(questions.length).fill(null);
+
+
+    shuffleQuestions();
+
+    document.getElementById("questionCount").textContent =
+        questions.length + " Questions";
+
+    document.getElementById("rulesQuestionCount").textContent =
+        questions.length;
+
+    document.getElementById("questionCounter").textContent =
+        "Question 1 of " + questions.length;
+
+}
+
+
+/* =====================================================
+   SHUFFLE QUESTIONS
+===================================================== */
+
+function shuffleQuestions() {
+
+    for (
+        let i = questions.length - 1;
+        i > 0;
+        i--
+    ) {
+
+        const j =
+            Math.floor(
+                Math.random() * (i + 1)
+            );
+
+        [
+            questions[i],
+            questions[j]
+        ] =
+        [
+            questions[j],
+            questions[i]
+        ];
+
+    }
+
+}
+
+
+/* =====================================================
+   START QUIZ
+===================================================== */
+
+function startQuiz() {
+
+    if (!isWeekend) {
+
+        return;
+
+    }
+
+
+    quizStarted = true;
+
+    quizSubmitted = false;
+
+    quizStartTime = Date.now();
+
+    document.getElementById("startScreen").style.display =
+        "none";
+
+    document.getElementById("quizScreen").style.display =
+        "block";
+
+
+    startTimer();
+
+    showQuestion();
+
+}
+
+
+/* =====================================================
+   SHOW QUESTION
+===================================================== */
+
+function showQuestion() {
+
+    const question =
+        questions[currentQuestion];
+
+
+    document.getElementById("questionCounter").textContent =
+        "Question " +
+        (currentQuestion + 1) +
+        " of " +
+        questions.length;
+
+
+    document.getElementById("questionNumber").textContent =
+        "Question " +
+        (currentQuestion + 1);
+
+
+    document.getElementById("questionText").textContent =
+        question.question;
+
+
+    const progress =
+        ((currentQuestion + 1) /
+        questions.length) *
+        100;
+
+
+    document.getElementById("progressBar").style.width =
+        progress + "%";
+
+
+    const optionsContainer =
+        document.getElementById("options");
+
+
+    optionsContainer.innerHTML = "";
+
+
+    question.options.forEach(
+        (option, index) => {
+
+            const optionElement =
+                document.createElement("div");
+
+
+            optionElement.className =
+                "option";
+
+
+            if (
+                userAnswers[currentQuestion] ===
+                option.originalIndex
+            ) {
+
+                optionElement.classList.add(
+                    "selected"
+                );
+
+            }
+
+
+            optionElement.onclick =
+                function () {
+
+                    selectAnswer(
+                        option.originalIndex
+                    );
+
+                };
+
+
+            const letter =
+                document.createElement("span");
+
+
+            letter.className =
+                "option-letter";
+
+
+            letter.textContent =
+                String.fromCharCode(
+                    65 + index
+                );
+
+
+            const text =
+                document.createElement("span");
+
+
+            text.className =
+                "option-text";
+
+
+            text.textContent =
+                option.text;
+
+
+            optionElement.appendChild(letter);
+
+            optionElement.appendChild(text);
+
+            optionsContainer.appendChild(
+                optionElement
+            );
+
+        }
+    );
+
+
+    document.getElementById("hintText").textContent =
+        question.hint;
+
+
+    document.getElementById("hintText").style.display =
+        "none";
+
+
+    document.querySelector(".hint-btn").textContent =
+        "💡 Show Hint";
+
+
+    document.getElementById("previousBtn").style.display =
+        currentQuestion === 0
+            ? "none"
+            : "block";
+
+
+    if (
+        currentQuestion ===
+        questions.length - 1
+    ) {
+
+        document.getElementById("nextBtn").style.display =
+            "none";
+
+        document.getElementById("submitBtn").style.display =
+            "block";
+
+    } else {
+
+        document.getElementById("nextBtn").style.display =
+            "block";
+
+        document.getElementById("submitBtn").style.display =
+            "none";
+
+    }
+
+}
+
+
+/* =====================================================
+   SELECT ANSWER
+===================================================== */
+
+function selectAnswer(index) {
+
+    if (quizSubmitted) {
+        return;
+    }
+
+    userAnswers[currentQuestion] =
+        index;
+
+    showQuestion();
+
+}
+
+
+/* =====================================================
+   NEXT
+===================================================== */
+
+function nextQuestion() {
+
+    if (
+        currentQuestion <
+        questions.length - 1
+    ) {
+
+        currentQuestion++;
+
+        showQuestion();
+
+    }
+
+}
+
+
+/* =====================================================
+   PREVIOUS
+===================================================== */
+
+function previousQuestion() {
+
+    if (currentQuestion > 0) {
+
+        currentQuestion--;
+
+        showQuestion();
+
+    }
+
+}
+
+
+/* =====================================================
+   HINT
+===================================================== */
+
+function toggleHint() {
+
+    const hint =
+        document.getElementById("hintText");
+
+
+    const button =
+        document.querySelector(".hint-btn");
+
+
+    if (
+        hint.style.display ===
+        "none"
+    ) {
+
+        hint.style.display =
+            "block";
+
+        button.textContent =
+            "💡 Hide Hint";
+
+    } else {
+
+        hint.style.display =
+            "none";
+
+        button.textContent =
+            "💡 Show Hint";
+
+    }
+
+}
+
+
+/* =====================================================
+   TIMER
+===================================================== */
+
+function startTimer() {
+
+    updateTimer();
+
+
+    timerInterval =
+        setInterval(
+            function () {
+
+                timeRemaining--;
+
+                updateTimer();
+
+
+                if (
+                    timeRemaining <= 0
+                ) {
+
+                    clearInterval(
+                        timerInterval
+                    );
+
+                    submitQuiz(true);
+
+                }
+
+            },
+            1000
+        );
+
+}
+
+
+/* =====================================================
+   UPDATE TIMER
+===================================================== */
+
+function updateTimer() {
+
+    const minutes =
+        Math.floor(
+            timeRemaining / 60
+        );
+
+    const seconds =
+        timeRemaining % 60;
+
+
+    const timer =
+        document.getElementById("timer");
+
+
+    timer.textContent =
+        String(minutes).padStart(2, "0") +
+        ":" +
+        String(seconds).padStart(2, "0");
+
+
+    if (
+        timeRemaining <= 60
+    ) {
+
+        timer.classList.add(
+            "warning"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   SUBMIT QUIZ
+===================================================== */
+
+function submitQuiz(autoSubmit = false) {
+
+    if (quizSubmitted) {
+        return;
+    }
+
+
+    const unanswered =
+        userAnswers.filter(
+            answer => answer === null
+        ).length;
+
+
+    if (
+        !autoSubmit &&
+        unanswered > 0
+    ) {
+
+        const proceed =
+            confirm(
+                "You have " +
+                unanswered +
+                " unanswered question(s). Submit anyway?"
+            );
+
+
+        if (!proceed) {
+            return;
+        }
+
+    }
+
+
+    quizSubmitted = true;
+
+
+    clearInterval(
+        timerInterval
+    );
+
+
+    const timeUsed =
+        QUIZ_DURATION -
+        timeRemaining;
+
+
+    let correct = 0;
+
+
+    questions.forEach(
+        (question, index) => {
+
+            if (
+                userAnswers[index] ===
+                question.answer
+            ) {
+
+                correct++;
+
+            }
+
+        }
+    );
+
+
+    const wrong =
+        questions.length -
+        correct;
+
+
+    const percentage =
+        Math.round(
+            (correct /
+            questions.length) *
+            100
+        );
+
+
+    showResult(
+        correct,
+        wrong,
+        percentage,
+        timeUsed,
+        autoSubmit
+    );
+
+}
+
+
+/* =====================================================
+   SHOW RESULT
+===================================================== */
+
+function showResult(
+    correct,
+    wrong,
+    percentage,
+    timeUsed,
+    autoSubmit
+) {
+
+    document.getElementById("quizScreen").style.display =
+        "none";
+
+
+    document.getElementById("resultScreen").style.display =
+        "block";
+
+
+    document.getElementById("percentage").textContent =
+        percentage + "%";
+
+
+    document.getElementById("correctCount").textContent =
+        correct;
+
+
+    document.getElementById("wrongCount").textContent =
+        wrong;
+
+
+    document.getElementById("timeUsed").textContent =
+        formatTime(timeUsed);
+
+
+    let message = "";
+
+
+    if (percentage >= 90) {
+
+        message =
+            "🔥 Outstanding! You are performing at an excellent level.";
+
+    } else if (percentage >= 80) {
+
+        message =
+            "👏 Excellent work! Keep pushing your knowledge further.";
+
+    } else if (percentage >= 70) {
+
+        message =
+            "💪 Very good! You have a strong understanding.";
+
+    } else if (percentage >= 60) {
+
+        message =
+            "👍 Good effort! Review your mistakes and improve.";
+
+    } else if (percentage >= 50) {
+
+        message =
+            "📚 Keep studying. You are making progress.";
+
+    } else {
+
+        message =
+            "💡 Don't give up. Review the material and try again.";
+
+    }
+
+
+    if (autoSubmit) {
+
+        message +=
+            " ⏰ The time limit was reached.";
+
+    }
+
+
+    document.getElementById("resultMessage").textContent =
+        message;
+
+
+    saveResult(
+        correct,
+        wrong,
+        percentage,
+        timeUsed
+    );
+
+}
+
+
+/* =====================================================
+   FORMAT TIME
+===================================================== */
+
+function formatTime(seconds) {
+
+    const minutes =
+        Math.floor(
+            seconds / 60
+        );
+
+    const remainingSeconds =
+        seconds % 60;
+
+
+    return (
+        String(minutes).padStart(2, "0") +
+        ":" +
+        String(remainingSeconds).padStart(2, "0")
+    );
+
+}
+
+
+/* =====================================================
+   SAVE RESULT
+===================================================== */
+
+function saveResult(
+    correct,
+    wrong,
+    percentage,
+    timeUsed
+) {
+
+    const result = {
+
+        week:
+            weekName,
+
+        correct:
+            correct,
+
+        wrong:
+            wrong,
+
+        percentage:
+            percentage,
+
+        timeUsed:
+            timeUsed,
+
+        date:
+            new Date().toISOString()
+
+    };
+
+
+    localStorage.setItem(
+        "uniqueAcademicWeeklyQuizResult_" +
+        weekNumber,
+        JSON.stringify(result)
+    );
+
+}
+
+
+/* =====================================================
+   REVIEW
+===================================================== */
+
+function showReview() {
+
+    const review =
+        document.getElementById("review");
+
+
+    if (
+        review.style.display ===
+        "block"
+    ) {
+
+        review.style.display =
+            "none";
+
+        return;
+
+    }
+
+
+    review.style.display =
+        "block";
+
+
+    const reviewList =
+        document.getElementById("reviewList");
+
+
+    reviewList.innerHTML = "";
+
+
+    questions.forEach(
+        (question, index) => {
+
+            const item =
+                document.createElement("div");
+
+
+            const isCorrect =
+                userAnswers[index] ===
+                question.answer;
+
+
+            item.className =
+                "review-item " +
+                (
+                    isCorrect
+                        ? "correct"
+                        : "wrong"
+                );
+
+
+            const questionTitle =
+                document.createElement("div");
+
+
+            questionTitle.className =
+                "review-question";
+
+
+            questionTitle.textContent =
+                (index + 1) +
+                ". " +
+                question.question;
+
+
+            item.appendChild(
+                questionTitle
+            );
+
+
+            const userAnswer =
+                document.createElement("div");
+
+
+            userAnswer.className =
+                "review-answer";
+
+
+            if (
+                userAnswers[index] === null
+            ) {
+
+                userAnswer.textContent =
+                    "Your answer: Not answered";
+
+            } else {
+
+                userAnswer.textContent =
+                    "Your answer: " +
+                    question.options.find(
+                        option =>
+                            option.originalIndex ===
+                            userAnswers[index]
+                    ).text;
+
+            }
+
+
+            item.appendChild(
+                userAnswer
+            );
+
+
+            const correctAnswer =
+                document.createElement("div");
+
+
+            correctAnswer.className =
+                "review-answer";
+
+
+            correctAnswer.textContent =
+                "Correct answer: " +
+                question.options.find(
+                    option =>
+                        option.originalIndex ===
+                        question.answer
+                ).text;
+
+
+            item.appendChild(
+                correctAnswer
+            );
+
+
+            const explanation =
+                document.createElement("div");
+
+
+            explanation.className =
+                "explanation";
+
+
+            explanation.textContent =
+                "💡 " +
+                question.explanation;
+
+
+            item.appendChild(
+                explanation
+            );
+
+
+            reviewList.appendChild(
+                item
+            );
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   WEEKEND CONTROL
+===================================================== */
+
+function setupWeekendAccess() {
+
+    if (!isWeekend) {
+
+        document.getElementById("startScreen").style.display =
+            "none";
+
+
+        document.getElementById("closedScreen").style.display =
+            "block";
+
+
+        showNextOpening();
+
+    }
+
+}
+
+
+/* =====================================================
+   NEXT OPENING
+===================================================== */
+
+function showNextOpening() {
+
+    const message =
+        document.getElementById("nextOpening");
+
+
+    if (day >= 1 && day <= 5) {
+
+        message.textContent =
+            "🗓️ The next Weekly Challenge opens on Saturday.";
+
+    }
+
+}
+
+
+/* =====================================================
+   INITIALIZE
+===================================================== */
+
+prepareQuiz();
+
+setupWeekendAccess();
+
+
+/* =====================================================
+   OPTIONAL DARK MODE
+
+   This allows the page to work with the
+   Unique Academic dark-mode class.
+
+===================================================== */
+
+if (
+    localStorage.getItem(
+        "darkMode"
+    ) === "true"
+) {
+
+    document.body.classList.add(
+        "dark-mode"
+    );
+
+}
+
+</script></body></html>
