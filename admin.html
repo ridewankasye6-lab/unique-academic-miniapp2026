@@ -120,64 +120,7 @@
         .stat-card strong {
             font-size: 28px;
         }
-<!-- =====================================
-     WEEKLY ACADEMIC CHALLENGE
-====================================== -->
 
-<div class="registrations" style="margin-bottom:25px;">
-
-    <h2>
-        🏆 Weekly Academic Challenge
-    </h2>
-
-    <p
-        style="
-            color:#64748b;
-            line-height:1.6;
-            margin-bottom:15px;
-        "
-    >
-        👑 Admin view — see the questions,
-        correct answers, explanations and hints
-        used in the current Weekly Challenge.
-    </p>
-
-
-    <button
-        id="loadWeeklyQuestionsBtn"
-        type="button"
-        style="
-            border:none;
-            background:#2563eb;
-            color:white;
-            padding:11px 16px;
-            border-radius:8px;
-            font-weight:bold;
-            cursor:pointer;
-        "
-    >
-        📋 View Weekly Questions
-    </button>
-
-
-    <div
-        id="weeklyQuestionsStatus"
-        style="
-            margin-top:15px;
-            color:#64748b;
-            line-height:1.5;
-        "
-    ></div>
-
-
-    <div
-        id="weeklyQuestionsContainer"
-        style="margin-top:15px;"
-    ></div>
-
-</div>
-
-        
 
         /* =========================================
            REGISTRATIONS CONTAINER
@@ -687,7 +630,62 @@
 
     </div>
 
+<!-- =====================================
+     WEEKLY ACADEMIC CHALLENGE
+====================================== -->
 
+<div class="registrations" style="margin-bottom:25px;">
+
+    <h2>
+        🏆 Weekly Academic Challenge
+    </h2>
+
+    <p
+        style="
+            color:#64748b;
+            line-height:1.6;
+            margin-bottom:15px;
+        "
+    >
+        👑 Admin view — see the questions,
+        correct answers, explanations and hints
+        used in the current Weekly Challenge.
+    </p>
+
+
+    <button
+        id="loadWeeklyQuestionsBtn"
+        type="button"
+        style="
+            border:none;
+            background:#2563eb;
+            color:white;
+            padding:11px 16px;
+            border-radius:8px;
+            font-weight:bold;
+            cursor:pointer;
+        "
+    >
+        📋 View Weekly Questions
+    </button>
+
+
+    <div
+        id="weeklyQuestionsStatus"
+        style="
+            margin-top:15px;
+            color:#64748b;
+            line-height:1.5;
+        "
+    ></div>
+
+
+    <div
+        id="weeklyQuestionsContainer"
+        style="margin-top:15px;"
+    ></div>
+
+</div>
 
     <!-- =====================================
          REGISTRATION LIST
@@ -846,7 +844,436 @@
 
 </script>
 
+<script>
 
+/* =====================================================
+   WEEKLY ACADEMIC CHALLENGE — ADMIN VIEW
+===================================================== */
+
+const loadWeeklyQuestionsBtn =
+    document.getElementById(
+        "loadWeeklyQuestionsBtn"
+    );
+
+const weeklyQuestionsStatus =
+    document.getElementById(
+        "weeklyQuestionsStatus"
+    );
+
+const weeklyQuestionsContainer =
+    document.getElementById(
+        "weeklyQuestionsContainer"
+    );
+
+
+/* =====================================================
+   LOAD QUESTIONS FROM weekly-quiz.html
+===================================================== */
+
+loadWeeklyQuestionsBtn.addEventListener(
+    "click",
+    loadWeeklyQuestions
+);
+
+
+async function loadWeeklyQuestions() {
+
+    weeklyQuestionsStatus.textContent =
+        "⏳ Loading Weekly Challenge questions...";
+
+    weeklyQuestionsContainer.innerHTML = "";
+
+
+    try {
+
+        const response =
+            await fetch(
+                "weekly-quiz.html"
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "weekly-quiz.html could not be loaded."
+            );
+
+        }
+
+
+        const html =
+            await response.text();
+
+
+        /* =============================================
+           FIND weeklyQuestions
+        ============================================= */
+
+        const startText =
+            "const weeklyQuestions =";
+
+
+        const startIndex =
+            html.indexOf(startText);
+
+
+        if (startIndex === -1) {
+
+            throw new Error(
+                "weeklyQuestions was not found."
+            );
+
+        }
+
+
+        const arrayStart =
+            html.indexOf(
+                "[",
+                startIndex
+            );
+
+
+        const arrayEnd =
+            html.indexOf(
+                "];",
+                arrayStart
+            );
+
+
+        if (
+            arrayStart === -1 ||
+            arrayEnd === -1
+        ) {
+
+            throw new Error(
+                "The question list could not be read."
+            );
+
+        }
+
+
+        const arrayCode =
+            html.substring(
+                arrayStart,
+                arrayEnd + 1
+            );
+
+
+        /* =============================================
+           READ QUESTION ARRAY
+        ============================================= */
+
+        const weeklyQuestions =
+            Function(
+                '"use strict"; return (' +
+                arrayCode +
+                ')'
+            )();
+
+
+        displayWeeklyQuestions(
+            weeklyQuestions
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "Weekly Question Error:",
+            error
+        );
+
+
+        weeklyQuestionsStatus.textContent =
+            "❌ Could not load the Weekly Challenge questions.";
+
+
+        weeklyQuestionsContainer.innerHTML =
+
+            "<div style=\"" +
+            "padding:15px;" +
+            "border-radius:10px;" +
+            "background:#fee2e2;" +
+            "color:#991b1b;" +
+            "line-height:1.6;" +
+            "\">" +
+
+            "<b>Something went wrong.</b><br>" +
+
+            "Make sure <b>weekly-quiz.html</b> " +
+            "is in the same repository folder as this admin page." +
+
+            "</div>";
+
+    }
+
+}
+
+
+/* =====================================================
+   DISPLAY QUESTIONS
+===================================================== */
+
+function displayWeeklyQuestions(
+    questions
+) {
+
+    weeklyQuestionsStatus.textContent =
+        "✅ " +
+        questions.length +
+        " questions loaded successfully.";
+
+
+    weeklyQuestionsContainer.innerHTML = "";
+
+
+    questions.forEach(
+        function (
+            question,
+            index
+        ) {
+
+            const card =
+                document.createElement(
+                    "div"
+                );
+
+
+            card.style.cssText =
+
+                "border:1px solid #e5e7eb;" +
+                "border-radius:12px;" +
+                "padding:18px;" +
+                "margin-top:15px;" +
+                "background:#f8fafc;" +
+                "line-height:1.6;";
+
+
+            /* =========================================
+               QUESTION NUMBER
+            ========================================= */
+
+            const number =
+                document.createElement(
+                    "div"
+                );
+
+
+            number.style.cssText =
+
+                "font-weight:bold;" +
+                "color:#2563eb;" +
+                "margin-bottom:8px;";
+
+
+            number.textContent =
+                "Question " +
+                (index + 1);
+
+
+            card.appendChild(
+                number
+            );
+
+
+            /* =========================================
+               QUESTION
+            ========================================= */
+
+            const questionText =
+                document.createElement(
+                    "div"
+                );
+
+
+            questionText.style.cssText =
+
+                "font-size:17px;" +
+                "font-weight:bold;" +
+                "margin-bottom:12px;";
+
+
+            questionText.textContent =
+                question.question;
+
+
+            card.appendChild(
+                questionText
+            );
+
+
+            /* =========================================
+               OPTIONS
+            ========================================= */
+
+            question.options.forEach(
+                function (
+                    option,
+                    optionIndex
+                ) {
+
+                    const optionElement =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    const isCorrect =
+                        optionIndex ===
+                        question.answer;
+
+
+                    optionElement.style.cssText =
+
+                        "padding:10px 12px;" +
+                        "margin:6px 0;" +
+                        "border-radius:8px;" +
+                        "background:" +
+                        (
+                            isCorrect
+                                ? "#dcfce7"
+                                : "#ffffff"
+                        ) +
+                        ";" +
+                        "border:1px solid " +
+                        (
+                            isCorrect
+                                ? "#86efac"
+                                : "#e5e7eb"
+                        ) +
+                        ";" +
+                        "color:#111827;" +
+                        "font-weight:" +
+                        (
+                            isCorrect
+                                ? "bold"
+                                : "normal"
+                        ) +
+                        ";";
+
+
+                    optionElement.textContent =
+
+                        String.fromCharCode(
+                            65 + optionIndex
+                        ) +
+
+                        ". " +
+
+                        option;
+
+
+                    if (isCorrect) {
+
+                        optionElement.textContent +=
+                            "  ✅ CORRECT ANSWER";
+
+                    }
+
+
+                    card.appendChild(
+                        optionElement
+                    );
+
+                }
+            );
+
+
+            /* =========================================
+               EXPLANATION
+            ========================================= */
+
+            const explanation =
+                document.createElement(
+                    "div"
+                );
+
+
+            explanation.style.cssText =
+
+                "margin-top:14px;" +
+                "padding:12px;" +
+                "border-radius:9px;" +
+                "background:#fff8e1;" +
+                "color:#5d4037;";
+
+
+            explanation.innerHTML =
+                "<b>💡 Explanation:</b><br>" +
+                escapeWeeklyHTML(
+                    question.explanation
+                );
+
+
+            card.appendChild(
+                explanation
+            );
+
+
+            /* =========================================
+               HINT
+            ========================================= */
+
+            const hint =
+                document.createElement(
+                    "div"
+                );
+
+
+            hint.style.cssText =
+
+                "margin-top:10px;" +
+                "padding:12px;" +
+                "border-radius:9px;" +
+                "background:#eff6ff;" +
+                "color:#1e3a8a;";
+
+
+            hint.innerHTML =
+                "<b>🔎 Hint:</b><br>" +
+                escapeWeeklyHTML(
+                    question.hint
+                );
+
+
+            card.appendChild(
+                hint
+            );
+
+
+            weeklyQuestionsContainer.appendChild(
+                card
+            );
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   SAFE TEXT
+===================================================== */
+
+function escapeWeeklyHTML(
+    text
+) {
+
+    const div =
+        document.createElement(
+            "div"
+        );
+
+
+    div.textContent =
+        text || "";
+
+
+    return div.innerHTML;
+
+}
+
+</script>
 </body>
 
 </html>
