@@ -52,7 +52,7 @@ onAuthStateChanged(auth, async (user) => {
     if (!user) {
 
         window.location.href =
-            "login.html";
+           "student-login.html" ;
 
         return;
     }
@@ -860,7 +860,7 @@ logoutBtn.onclick =
 
 
             window.location.href =
-                "login.html";
+    "student-login.html";
 
         }
 
