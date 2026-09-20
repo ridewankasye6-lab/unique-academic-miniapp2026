@@ -845,435 +845,298 @@
 </script>
 
 <script>
+<!-- =====================================
+     WEEKLY ACADEMIC CHALLENGE MANAGER
+====================================== -->
+
+<div
+    class="registrations"
+    style="margin-bottom:25px;"
+>
+
+    <h2>
+        🏆 Weekly Academic Challenge Manager
+    </h2>
+
+    <p
+        style="
+            color:#64748b;
+            line-height:1.6;
+            margin-bottom:20px;
+        "
+    >
+        Create and publish the official weekend exam.
+        Students from any university or college can participate.
+    </p>
+
+
+    <!-- =================================
+         EXAM INFORMATION
+    ================================== -->
+
+    <div
+        style="
+            border:1px solid #dbeafe;
+            background:#eff6ff;
+            padding:18px;
+            border-radius:12px;
+            margin-bottom:20px;
+        "
+    >
+
+        <h3 style="margin-bottom:15px;">
+            📝 Exam Information
+        </h3>
+
+
+        <div
+            style="
+                display:grid;
+                grid-template-columns:
+                    repeat(auto-fit,minmax(220px,1fr));
+                gap:12px;
+            "
+        >
+
+            <div>
+
+                <label>
+                    <strong>Subject</strong>
+                </label>
+
+                <select
+                    id="weeklySubject"
+                    style="
+                        width:100%;
+                        padding:11px;
+                        margin-top:6px;
+                        border:1px solid #cbd5e1;
+                        border-radius:8px;
+                    "
+                >
+
+                    <option value="Logic">
+                        Logic
+                    </option>
+
+                    <option value="Psychology">
+                        Psychology
+                    </option>
+
+                    <option value="Economics">
+                        Economics
+                    </option>
+
+                    <option value="History">
+                        History
+                    </option>
+
+                    <option value="Geography">
+                        Geography
+                    </option>
+
+                    <option value="Civic Education">
+                        Civic Education
+                    </option>
+
+                    <option value="English">
+                        English
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    <strong>Chapter</strong>
+                </label>
+
+                <input
+                    id="weeklyChapter"
+                    type="text"
+                    value="Chapter 1"
+                    placeholder="Chapter 1"
+                    style="
+                        width:100%;
+                        padding:11px;
+                        margin-top:6px;
+                        border:1px solid #cbd5e1;
+                        border-radius:8px;
+                    "
+                >
+
+            </div>
 
-/* =====================================================
-   WEEKLY ACADEMIC CHALLENGE — ADMIN VIEW
-===================================================== */
+
+            <div>
+
+                <label>
+                    <strong>Exam Date</strong>
+                </label>
+
+                <input
+                    id="weeklyExamDate"
+                    type="date"
+                    style="
+                        width:100%;
+                        padding:11px;
+                        margin-top:6px;
+                        border:1px solid #cbd5e1;
+                        border-radius:8px;
+                    "
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    <strong>Start Time</strong>
+                </label>
+
+                <input
+                    id="weeklyStartTime"
+                    type="time"
+                    value="14:00"
+                    style="
+                        width:100%;
+                        padding:11px;
+                        margin-top:6px;
+                        border:1px solid #cbd5e1;
+                        border-radius:8px;
+                    "
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    <strong>End Time</strong>
+                </label>
+
+                <input
+                    id="weeklyEndTime"
+                    type="time"
+                    value="15:00"
+                    style="
+                        width:100%;
+                        padding:11px;
+                        margin-top:6px;
+                        border:1px solid #cbd5e1;
+                        border-radius:8px;
+                    "
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    <strong>Individual Time Limit</strong>
+                </label>
 
-const loadWeeklyQuestionsBtn =
-    document.getElementById(
-        "loadWeeklyQuestionsBtn"
-    );
+                <input
+                    type="number"
+                    id="weeklyDuration"
+                    value="20"
+                    min="1"
+                    max="60"
+                    style="
+                        width:100%;
+                        padding:11px;
+                        margin-top:6px;
+                        border:1px solid #cbd5e1;
+                        border-radius:8px;
+                    "
+                >
 
-const weeklyQuestionsStatus =
-    document.getElementById(
-        "weeklyQuestionsStatus"
-    );
+            </div>
 
-const weeklyQuestionsContainer =
-    document.getElementById(
-        "weeklyQuestionsContainer"
-    );
+        </div>
 
+    </div>
 
-/* =====================================================
-   LOAD QUESTIONS FROM weekly-quiz.html
-===================================================== */
 
-loadWeeklyQuestionsBtn.addEventListener(
-    "click",
-    loadWeeklyQuestions
-);
 
+    <!-- =================================
+         QUESTIONS
+    ================================== -->
 
-async function loadWeeklyQuestions() {
+    <div
+        style="
+            border:1px solid #e5e7eb;
+            background:#ffffff;
+            padding:18px;
+            border-radius:12px;
+        "
+    >
 
-    weeklyQuestionsStatus.textContent =
-        "⏳ Loading Weekly Challenge questions...";
+        <h3 style="margin-bottom:8px;">
+            ❓ Questions
+        </h3>
 
-    weeklyQuestionsContainer.innerHTML = "";
+        <p
+            style="
+                color:#64748b;
+                line-height:1.5;
+                margin-bottom:15px;
+            "
+        >
+            Add exactly 20 questions.
+            Select the correct answer for each question.
+        </p>
 
 
-    try {
+        <div id="weeklyQuestionEditor">
 
-        const response =
-            await fetch(
-                "weekly-quiz.html"
-            );
+            <!-- Questions will be created by admin.js -->
 
+        </div>
 
-        if (!response.ok) {
 
-            throw new Error(
-                "weekly-quiz.html could not be loaded."
-            );
+        <button
+            id="publishWeeklyExamBtn"
+            type="button"
+            style="
+                width:100%;
+                border:none;
+                background:#16a34a;
+                color:white;
+                padding:14px 18px;
+                border-radius:9px;
+                font-weight:bold;
+                font-size:16px;
+                cursor:pointer;
+                margin-top:20px;
+            "
+        >
+            🚀 Publish Weekly Exam
+        </button>
 
-        }
 
+        <div
+            id="weeklyExamStatus"
+            style="
+                margin-top:15px;
+                line-height:1.6;
+            "
+        ></div>
 
-        const html =
-            await response.text();
+    </div>
 
+</div>
 
-        /* =============================================
-           FIND weeklyQuestions
-        ============================================= */
 
-        const startText =
-            "const weeklyQuestions =";
 
 
-        const startIndex =
-            html.indexOf(startText);
+                
 
 
-        if (startIndex === -1) {
-
-            throw new Error(
-                "weeklyQuestions was not found."
-            );
-
-        }
-
-
-        const arrayStart =
-            html.indexOf(
-                "[",
-                startIndex
-            );
-
-
-        const arrayEnd =
-            html.indexOf(
-                "];",
-                arrayStart
-            );
-
-
-        if (
-            arrayStart === -1 ||
-            arrayEnd === -1
-        ) {
-
-            throw new Error(
-                "The question list could not be read."
-            );
-
-        }
-
-
-        const arrayCode =
-            html.substring(
-                arrayStart,
-                arrayEnd + 1
-            );
-
-
-        /* =============================================
-           READ QUESTION ARRAY
-        ============================================= */
-
-        const weeklyQuestions =
-            Function(
-                '"use strict"; return (' +
-                arrayCode +
-                ')'
-            )();
-
-
-        displayWeeklyQuestions(
-            weeklyQuestions
-        );
-
-
-    } catch (error) {
-
-        console.error(
-            "Weekly Question Error:",
-            error
-        );
-
-
-        weeklyQuestionsStatus.textContent =
-            "❌ Could not load the Weekly Challenge questions.";
-
-
-        weeklyQuestionsContainer.innerHTML =
-
-            "<div style=\"" +
-            "padding:15px;" +
-            "border-radius:10px;" +
-            "background:#fee2e2;" +
-            "color:#991b1b;" +
-            "line-height:1.6;" +
-            "\">" +
-
-            "<b>Something went wrong.</b><br>" +
-
-            "Make sure <b>weekly-quiz.html</b> " +
-            "is in the same repository folder as this admin page." +
-
-            "</div>";
-
-    }
-
-}
-
-
-/* =====================================================
-   DISPLAY QUESTIONS
-===================================================== */
-
-function displayWeeklyQuestions(
-    questions
-) {
-
-    weeklyQuestionsStatus.textContent =
-        "✅ " +
-        questions.length +
-        " questions loaded successfully.";
-
-
-    weeklyQuestionsContainer.innerHTML = "";
-
-
-    questions.forEach(
-        function (
-            question,
-            index
-        ) {
-
-            const card =
-                document.createElement(
-                    "div"
-                );
-
-
-            card.style.cssText =
-
-                "border:1px solid #e5e7eb;" +
-                "border-radius:12px;" +
-                "padding:18px;" +
-                "margin-top:15px;" +
-                "background:#f8fafc;" +
-                "line-height:1.6;";
-
-
-            /* =========================================
-               QUESTION NUMBER
-            ========================================= */
-
-            const number =
-                document.createElement(
-                    "div"
-                );
-
-
-            number.style.cssText =
-
-                "font-weight:bold;" +
-                "color:#2563eb;" +
-                "margin-bottom:8px;";
-
-
-            number.textContent =
-                "Question " +
-                (index + 1);
-
-
-            card.appendChild(
-                number
-            );
-
-
-            /* =========================================
-               QUESTION
-            ========================================= */
-
-            const questionText =
-                document.createElement(
-                    "div"
-                );
-
-
-            questionText.style.cssText =
-
-                "font-size:17px;" +
-                "font-weight:bold;" +
-                "margin-bottom:12px;";
-
-
-            questionText.textContent =
-                question.question;
-
-
-            card.appendChild(
-                questionText
-            );
-
-
-            /* =========================================
-               OPTIONS
-            ========================================= */
-
-            question.options.forEach(
-                function (
-                    option,
-                    optionIndex
-                ) {
-
-                    const optionElement =
-                        document.createElement(
-                            "div"
-                        );
-
-
-                    const isCorrect =
-                        optionIndex ===
-                        question.answer;
-
-
-                    optionElement.style.cssText =
-
-                        "padding:10px 12px;" +
-                        "margin:6px 0;" +
-                        "border-radius:8px;" +
-                        "background:" +
-                        (
-                            isCorrect
-                                ? "#dcfce7"
-                                : "#ffffff"
-                        ) +
-                        ";" +
-                        "border:1px solid " +
-                        (
-                            isCorrect
-                                ? "#86efac"
-                                : "#e5e7eb"
-                        ) +
-                        ";" +
-                        "color:#111827;" +
-                        "font-weight:" +
-                        (
-                            isCorrect
-                                ? "bold"
-                                : "normal"
-                        ) +
-                        ";";
-
-
-                    optionElement.textContent =
-
-                        String.fromCharCode(
-                            65 + optionIndex
-                        ) +
-
-                        ". " +
-
-                        option;
-
-
-                    if (isCorrect) {
-
-                        optionElement.textContent +=
-                            "  ✅ CORRECT ANSWER";
-
-                    }
-
-
-                    card.appendChild(
-                        optionElement
-                    );
-
-                }
-            );
-
-
-            /* =========================================
-               EXPLANATION
-            ========================================= */
-
-            const explanation =
-                document.createElement(
-                    "div"
-                );
-
-
-            explanation.style.cssText =
-
-                "margin-top:14px;" +
-                "padding:12px;" +
-                "border-radius:9px;" +
-                "background:#fff8e1;" +
-                "color:#5d4037;";
-
-
-            explanation.innerHTML =
-                "<b>💡 Explanation:</b><br>" +
-                escapeWeeklyHTML(
-                    question.explanation
-                );
-
-
-            card.appendChild(
-                explanation
-            );
-
-
-            /* =========================================
-               HINT
-            ========================================= */
-
-            const hint =
-                document.createElement(
-                    "div"
-                );
-
-
-            hint.style.cssText =
-
-                "margin-top:10px;" +
-                "padding:12px;" +
-                "border-radius:9px;" +
-                "background:#eff6ff;" +
-                "color:#1e3a8a;";
-
-
-            hint.innerHTML =
-                "<b>🔎 Hint:</b><br>" +
-                escapeWeeklyHTML(
-                    question.hint
-                );
-
-
-            card.appendChild(
-                hint
-            );
-
-
-            weeklyQuestionsContainer.appendChild(
-                card
-            );
-
-        }
-    );
-
-}
-
-
-/* =====================================================
-   SAFE TEXT
-===================================================== */
-
-function escapeWeeklyHTML(
-    text
-) {
-
-    const div =
-        document.createElement(
-            "div"
-        );
-
-
-    div.textContent =
-        text || "";
-
-
-    return div.innerHTML;
-
-}
-
-</script>
-</body>
-
-</html>
+            
