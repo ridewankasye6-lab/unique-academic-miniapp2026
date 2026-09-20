@@ -2,12 +2,13 @@ import {
     db,
     auth
 } from "./firebase-config.js";
-
 import {
     collection,
     getDocs,
     doc,
-    updateDoc
+    updateDoc,
+    addDoc,
+    serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 import {
@@ -874,3 +875,694 @@ logoutBtn.onclick =
         }
 
     };
+/* =====================================================
+   WEEKLY EXAM MANAGER
+===================================================== */
+
+const weeklyQuestionEditor =
+    document.getElementById(
+        "weeklyQuestionEditor"
+    );
+
+const publishWeeklyExamBtn =
+    document.getElementById(
+        "publishWeeklyExamBtn"
+    );
+
+const weeklyExamStatus =
+    document.getElementById(
+        "weeklyExamStatus"
+    );
+
+
+/* =====================================================
+   CREATE 20 QUESTION FIELDS
+===================================================== */
+
+function createWeeklyQuestionFields() {
+
+    if (!weeklyQuestionEditor) {
+        return;
+    }
+
+
+    weeklyQuestionEditor.innerHTML = "";
+
+
+    for (let i = 1; i <= 20; i++) {
+
+        const questionBox =
+            document.createElement("div");
+
+
+        questionBox.style.cssText = `
+            border:1px solid #e5e7eb;
+            border-radius:12px;
+            padding:18px;
+            margin-top:15px;
+            background:#f8fafc;
+        `;
+
+
+        questionBox.innerHTML = `
+
+            <h4
+                style="
+                    color:#2563eb;
+                    margin-bottom:12px;
+                "
+            >
+                Question ${i}
+            </h4>
+
+
+            <textarea
+                class="weekly-question"
+                data-question="${i}"
+                placeholder="Write question ${i}..."
+                rows="3"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    resize:vertical;
+                    margin-bottom:10px;
+                "
+            ></textarea>
+
+
+            <input
+                class="weekly-option"
+                data-question="${i}"
+                data-option="0"
+                type="text"
+                placeholder="Option A"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    margin-bottom:8px;
+                "
+            >
+
+
+            <input
+                class="weekly-option"
+                data-question="${i}"
+                data-option="1"
+                type="text"
+                placeholder="Option B"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    margin-bottom:8px;
+                "
+            >
+
+
+            <input
+                class="weekly-option"
+                data-question="${i}"
+                data-option="2"
+                type="text"
+                placeholder="Option C"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    margin-bottom:8px;
+                "
+            >
+
+
+            <input
+                class="weekly-option"
+                data-question="${i}"
+                data-option="3"
+                type="text"
+                placeholder="Option D"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    margin-bottom:10px;
+                "
+            >
+
+
+            <label
+                style="
+                    display:block;
+                    margin-bottom:8px;
+                    font-weight:bold;
+                "
+            >
+                Correct Answer
+            </label>
+
+
+            <select
+                class="weekly-answer"
+                data-question="${i}"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    margin-bottom:10px;
+                "
+            >
+
+                <option value="0">
+                    A
+                </option>
+
+                <option value="1">
+                    B
+                </option>
+
+                <option value="2">
+                    C
+                </option>
+
+                <option value="3">
+                    D
+                </option>
+
+            </select>
+
+
+            <textarea
+                class="weekly-explanation"
+                data-question="${i}"
+                placeholder="Write the explanation..."
+                rows="2"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    resize:vertical;
+                    margin-bottom:10px;
+                "
+            ></textarea>
+
+
+            <textarea
+                class="weekly-hint"
+                data-question="${i}"
+                placeholder="Write a hint..."
+                rows="2"
+                style="
+                    width:100%;
+                    padding:11px;
+                    border:1px solid #cbd5e1;
+                    border-radius:8px;
+                    resize:vertical;
+                "
+            ></textarea>
+
+        `;
+
+
+        weeklyQuestionEditor.appendChild(
+            questionBox
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   CREATE QUESTION FIELDS ON PAGE LOAD
+===================================================== */
+
+createWeeklyQuestionFields();
+
+
+/* =====================================================
+   PUBLISH EXAM
+===================================================== */
+
+if (publishWeeklyExamBtn) {
+
+    publishWeeklyExamBtn.addEventListener(
+        "click",
+        publishWeeklyExam
+    );
+
+}
+
+
+async function publishWeeklyExam() {
+
+    if (!auth.currentUser) {
+
+        alert(
+            "❌ Admin authentication required."
+        );
+
+        return;
+
+    }
+
+
+    const subject =
+        document.getElementById(
+            "weeklySubject"
+        ).value.trim();
+
+
+    const chapter =
+        document.getElementById(
+            "weeklyChapter"
+        ).value.trim();
+
+
+    const examDate =
+        document.getElementById(
+            "weeklyExamDate"
+        ).value;
+
+
+    const startTime =
+        document.getElementById(
+            "weeklyStartTime"
+        ).value;
+
+
+    const endTime =
+        document.getElementById(
+            "weeklyEndTime"
+        ).value;
+
+
+    const duration =
+        Number(
+            document.getElementById(
+                "weeklyDuration"
+            ).value
+        );
+
+
+    /* =============================================
+       VALIDATION
+    ============================================= */
+
+    if (!subject) {
+
+        alert(
+            "❌ Please select a subject."
+        );
+
+        return;
+
+    }
+
+
+    if (!chapter) {
+
+        alert(
+            "❌ Please enter the chapter."
+        );
+
+        return;
+
+    }
+
+
+    if (!examDate) {
+
+        alert(
+            "❌ Please select the exam date."
+        );
+
+        return;
+
+    }
+
+
+    if (!startTime || !endTime) {
+
+        alert(
+            "❌ Please enter the exam time."
+        );
+
+        return;
+
+    }
+
+
+    if (
+        duration < 1 ||
+        duration > 60
+    ) {
+
+        alert(
+            "❌ Time limit must be between 1 and 60 minutes."
+        );
+
+        return;
+
+    }
+
+
+    if (
+        startTime >= endTime
+    ) {
+
+        alert(
+            "❌ End time must be after start time."
+        );
+
+        return;
+
+    }
+
+
+    /* =============================================
+       COLLECT QUESTIONS
+    ============================================= */
+
+    const questionElements =
+        document.querySelectorAll(
+            ".weekly-question"
+        );
+
+
+    const optionElements =
+        document.querySelectorAll(
+            ".weekly-option"
+        );
+
+
+    const answerElements =
+        document.querySelectorAll(
+            ".weekly-answer"
+        );
+
+
+    const explanationElements =
+        document.querySelectorAll(
+            ".weekly-explanation"
+        );
+
+
+    const hintElements =
+        document.querySelectorAll(
+            ".weekly-hint"
+        );
+
+
+    const questions = [];
+
+
+    for (
+        let i = 0;
+        i < 20;
+        i++
+    ) {
+
+        const question =
+            questionElements[i]
+                .value
+                .trim();
+
+
+        const options = [];
+
+
+        for (
+            let j = 0;
+            j < 4;
+            j++
+        ) {
+
+            const option =
+                optionElements[
+                    (i * 4) + j
+                ]
+                .value
+                .trim();
+
+
+            options.push(
+                option
+            );
+
+        }
+
+
+        const answer =
+            Number(
+                answerElements[i].value
+            );
+
+
+        const explanation =
+            explanationElements[i]
+                .value
+                .trim();
+
+
+        const hint =
+            hintElements[i]
+                .value
+                .trim();
+
+
+        if (!question) {
+
+            alert(
+                `❌ Please write Question ${i + 1}.`
+            );
+
+            return;
+
+        }
+
+
+        for (
+            let j = 0;
+            j < 4;
+            j++
+        ) {
+
+            if (!options[j]) {
+
+                alert(
+                    `❌ Please complete all options for Question ${i + 1}.`
+                );
+
+                return;
+
+            }
+
+        }
+
+
+        questions.push({
+
+            question,
+
+            options,
+
+            answer,
+
+            explanation,
+
+            hint
+
+        });
+
+    }
+
+
+    /* =============================================
+       CONFIRM
+    ============================================= */
+
+    const confirmed =
+        confirm(
+            `Publish ${subject} ${chapter} exam for ${examDate} from ${startTime} to ${endTime}?`
+        );
+
+
+    if (!confirmed) {
+        return;
+    }
+
+
+    publishWeeklyExamBtn.disabled =
+        true;
+
+
+    publishWeeklyExamBtn.textContent =
+        "⏳ Publishing...";
+
+
+    weeklyExamStatus.textContent =
+        "⏳ Saving Weekly Exam to Firebase...";
+
+
+    try {
+
+        /* =========================================
+           FIRESTORE
+        ========================================= */
+
+        const examRef =
+            await addDoc(
+                collection(
+                    db,
+                    "weeklyExams"
+                ),
+                {
+
+                    subject,
+
+                    chapter,
+
+                    examDate,
+
+                    startTime,
+
+                    endTime,
+
+                    duration,
+
+                    questions,
+
+                    status: "published",
+
+                    timezone:
+                        "Africa/Addis_Ababa",
+
+                    createdBy:
+                        auth.currentUser.email,
+
+                    createdAt:
+                        serverTimestamp()
+
+                }
+            );
+
+
+        console.log(
+            "Weekly exam published:",
+            examRef.id
+        );
+
+
+        weeklyExamStatus.innerHTML = `
+
+            <div
+                style="
+                    padding:15px;
+                    border-radius:10px;
+                    background:#dcfce7;
+                    color:#166534;
+                "
+            >
+
+                <strong>
+                    ✅ Weekly Exam Published Successfully!
+                </strong>
+
+                <br><br>
+
+                📚 Subject:
+                ${escapeHTML(subject)}
+
+                <br>
+
+                📖 Chapter:
+                ${escapeHTML(chapter)}
+
+                <br>
+
+                📅 Date:
+                ${escapeHTML(examDate)}
+
+                <br>
+
+                ⏰ Time:
+                ${escapeHTML(startTime)}
+                –
+                ${escapeHTML(endTime)}
+
+                <br>
+
+                ⏱️ Individual Time:
+                ${duration} minutes
+
+                <br><br>
+
+                🔑 Exam ID:
+                ${escapeHTML(examRef.id)}
+
+            </div>
+
+        `;
+
+
+        alert(
+            "✅ Weekly Exam published successfully!"
+        );
+
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Publish Weekly Exam error:",
+            error
+        );
+
+
+        weeklyExamStatus.innerHTML = `
+
+            <div
+                style="
+                    padding:15px;
+                    border-radius:10px;
+                    background:#fee2e2;
+                    color:#991b1b;
+                "
+            >
+
+                ❌ Failed to publish the Weekly Exam.
+
+                <br><br>
+
+                ${escapeHTML(
+                    error.message ||
+                    "Unknown error"
+                )}
+
+            </div>
+
+        `;
+
+    }
+
+    finally {
+
+        publishWeeklyExamBtn.disabled =
+            false;
+
+
+        publishWeeklyExamBtn.textContent =
+            "🚀 Publish Weekly Exam";
+
+    }
+
+}
