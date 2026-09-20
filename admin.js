@@ -8,7 +8,8 @@ import {
     doc,
     updateDoc,
     addDoc,
-    serverTimestamp
+serverTimestamp,
+Timestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 import {
@@ -1432,13 +1433,25 @@ async function publishWeeklyExam() {
 
                     examDate,
 
-                    startTime,
+startTime,
 
-                    endTime,
+endTime,
 
-                    duration,
+duration,
 
-                    questions,
+startAt: Timestamp.fromDate(
+    new Date(
+        `${examDate}T${startTime}:00+03:00`
+    )
+),
+
+endAt: Timestamp.fromDate(
+    new Date(
+        `${examDate}T${endTime}:00+03:00`
+    )
+),
+
+questions,
 
                     status: "published",
 
