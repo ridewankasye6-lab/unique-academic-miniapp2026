@@ -948,511 +948,33 @@
 </p>
 
 </div></div><script>
+ <script type="module">
 
 /* =====================================================
-   WEEKLY QUIZ SETTINGS
+   FIREBASE
 ===================================================== */
 
-const QUIZ_DURATION = 20 * 60;
+import { db } from "./firebase-config.js";
 
-
-/* =====================================================
-   WEEK NUMBER
-===================================================== */
-
-function getWeekNumber(date) {
-
-    const start = new Date(date.getFullYear(), 0, 1);
-
-    const difference =
-        Math.floor(
-            (date - start) /
-            (24 * 60 * 60 * 1000)
-        );
-
-    return Math.ceil(
-        (difference + start.getDay() + 1) / 7
-    );
-
-}
-
-
-const today = new Date();
-
-const weekNumber = getWeekNumber(today);
-
-const weekName =
-    "Weekly Challenge #" +
-    String(weekNumber).padStart(2, "0");
-
-
-document.getElementById("weekTitle").textContent =
-    weekName;
-
-document.getElementById("resultWeek").textContent =
-    weekName;
+import {
+    collection,
+    query,
+    where,
+    getDocs,
+    addDoc,
+    serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 
 /* =====================================================
-   WEEKEND CHECK
-=====================================================
-
-   JavaScript:
-   0 = Sunday
-   6 = Saturday
-
+   SETTINGS
 ===================================================== */
 
-const day = today.getDay();
+const DEFAULT_DURATION = 20 * 60;
 
-const isWeekend =
-    day === 0 ||
-    day === 6;
+let QUIZ_DURATION = DEFAULT_DURATION;
 
-
-/* =====================================================
-   WEEKLY QUESTIONS
-=====================================================
-
-   🔥 CHANGE ONLY THIS SECTION EACH WEEK.
-
-   Each question contains:
-
-   question
-   options
-   answer
-   explanation
-   hint
-
-===================================================== */
-
-const weeklyQuestions = [
-
-    {
-        question:
-            "Which economic problem exists because human wants are unlimited while resources are limited?",
-
-        options: [
-            "Scarcity",
-            "Inflation",
-            "Unemployment",
-            "Equilibrium"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "Scarcity exists because available resources are limited relative to unlimited human wants.",
-
-        hint:
-            "Think about the relationship between limited resources and unlimited wants."
-    },
-
-
-    {
-        question:
-            "What is opportunity cost?",
-
-        options: [
-            "The money spent on every choice",
-            "The value of the next best alternative forgone",
-            "The total benefit from all available choices",
-            "The amount of resources owned by a consumer"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Opportunity cost is the value of the next best alternative that is given up when a choice is made.",
-
-        hint:
-            "Focus on what is sacrificed when one alternative is selected."
-    },
-
-
-    {
-        question:
-            "According to the law of demand, other things remaining constant, what normally happens when the price of a good increases?",
-
-        options: [
-            "Quantity demanded increases",
-            "Quantity demanded decreases",
-            "Supply automatically becomes zero",
-            "Consumer income increases"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "The law of demand states that, ceteris paribus, quantity demanded generally decreases as price increases.",
-
-        hint:
-            "Think about the usual inverse relationship between price and quantity demanded."
-    },
-
-
-    {
-        question:
-            "At market equilibrium, which condition exists?",
-
-        options: [
-            "Quantity demanded equals quantity supplied",
-            "Demand is always greater than supply",
-            "Supply is always greater than demand",
-            "Price must always equal zero"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "Market equilibrium occurs where quantity demanded equals quantity supplied.",
-
-        hint:
-            "Equilibrium means the market is balanced."
-    },
-
-
-    {
-        question:
-            "Which factor of production refers primarily to human effort used in producing goods and services?",
-
-        options: [
-            "Land",
-            "Labour",
-            "Capital",
-            "Entrepreneurship"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Labour refers to human physical and mental effort used in the production process.",
-
-        hint:
-            "Look for the factor involving human work."
-    },
-
-
-    {
-        question:
-            "What does marginal utility measure?",
-
-        options: [
-            "Total satisfaction from all units consumed",
-            "Additional satisfaction from consuming one more unit",
-            "The price paid for a product",
-            "The total income of a consumer"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Marginal utility is the additional satisfaction obtained from consuming one additional unit of a good or service.",
-
-        hint:
-            "The word 'marginal' refers to an additional unit."
-    },
-
-
-    {
-        question:
-            "Which market structure is characterized by a single seller dominating the market?",
-
-        options: [
-            "Perfect competition",
-            "Monopolistic competition",
-            "Oligopoly",
-            "Monopoly"
-        ],
-
-        answer: 3,
-
-        explanation:
-            "A monopoly is a market structure in which a single seller is the dominant or sole supplier.",
-
-        hint:
-            "Focus on the market structure with one seller."
-    },
-
-
-    {
-        question:
-            "GDP is primarily used to measure what?",
-
-        options: [
-            "The total population of a country",
-            "The value of final goods and services produced within an economy",
-            "The amount of money held by households only",
-            "The number of firms in an economy"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Gross Domestic Product measures the market value of final goods and services produced within an economy during a specified period.",
-
-        hint:
-            "Think about production within a country's economy."
-    },
-
-
-    {
-        question:
-            "Inflation refers to what economic condition?",
-
-        options: [
-            "A sustained increase in the general price level",
-            "A permanent fall in population",
-            "A decrease in all production costs",
-            "An increase in the value of every currency"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "Inflation is a sustained increase in the general price level of goods and services.",
-
-        hint:
-            "It is associated with the general level of prices."
-    },
-
-
-    {
-        question:
-            "Which of the following is generally considered a macroeconomic issue?",
-
-        options: [
-            "The pricing decision of one small shop",
-            "The demand for one particular brand",
-            "National unemployment",
-            "The utility received from one additional apple"
-        ],
-
-        answer: 2,
-
-        explanation:
-            "National unemployment is a macroeconomic issue because it concerns the economy as a whole.",
-
-        hint:
-            "Macroeconomics focuses on economy-wide issues."
-    },
-
-
-    {
-        question:
-            "What does the production possibility frontier illustrate?",
-
-        options: [
-            "Only consumer preferences",
-            "Possible combinations of outputs given available resources and technology",
-            "Only the amount of money in circulation",
-            "The exact future price of every good"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "A production possibility frontier shows possible combinations of outputs that can be produced with given resources and technology.",
-
-        hint:
-            "Think about production choices under limited resources."
-    },
-
-
-    {
-        question:
-            "Which statement best describes economic efficiency?",
-
-        options: [
-            "Using resources without considering their alternative uses",
-            "Using resources in a way that avoids unnecessary waste",
-            "Producing only luxury goods",
-            "Increasing prices whenever possible"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Economic efficiency involves using scarce resources so that unnecessary waste is minimized and resources are allocated effectively.",
-
-        hint:
-            "Efficiency is closely related to avoiding waste."
-    },
-
-
-    {
-        question:
-            "Which of the following would most directly shift the demand curve for a normal good?",
-
-        options: [
-            "A change in the good's own price",
-            "A change in consumer income",
-            "A movement along the existing demand curve",
-            "A change in quantity demanded caused only by price"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "For a normal good, a change in consumer income can shift the demand curve, while a change in the good's own price causes movement along the curve.",
-
-        hint:
-            "Distinguish between a shift of the curve and movement along it."
-    },
-
-
-    {
-        question:
-            "In economics, capital as a factor of production generally refers to what?",
-
-        options: [
-            "Money used only for personal consumption",
-            "Produced resources used to produce other goods and services",
-            "All natural resources",
-            "Human wants"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Economic capital includes produced resources such as machinery and equipment that are used in further production.",
-
-        hint:
-            "Think of productive assets created by people."
-    },
-
-
-    {
-        question:
-            "What happens when quantity demanded exceeds quantity supplied at the current price?",
-
-        options: [
-            "A surplus exists",
-            "A shortage exists",
-            "The market is necessarily at equilibrium",
-            "Production becomes impossible"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "When quantity demanded exceeds quantity supplied, the market experiences a shortage.",
-
-        hint:
-            "More buyers want the product than sellers are supplying."
-    },
-
-
-    {
-        question:
-            "Which concept explains why producing more of one good may require giving up some production of another good?",
-
-        options: [
-            "Opportunity cost",
-            "Inflation",
-            "Money supply",
-            "Consumer surplus"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "Opportunity cost reflects the alternative production or benefit sacrificed when resources are used for another purpose.",
-
-        hint:
-            "Limited resources force choices between alternatives."
-    },
-
-
-    {
-        question:
-            "Which institution is primarily responsible for conducting monetary policy in a country?",
-
-        options: [
-            "The central bank",
-            "A private household",
-            "A retail shop",
-            "A single consumer"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "Monetary policy is generally conducted by a country's central bank or monetary authority.",
-
-        hint:
-            "Think about the institution responsible for money and interest-rate policy."
-    },
-
-
-    {
-        question:
-            "Unemployment exists when a person is willing and able to work but cannot find employment, within the relevant labour-force definition.",
-
-        options: [
-            "Correct description",
-            "A definition of inflation",
-            "A definition of scarcity",
-            "A definition of equilibrium"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "Unemployment concerns people who are part of the relevant labour force, are willing and able to work, and are without employment.",
-
-        hint:
-            "Focus on employment status rather than prices or resources."
-    },
-
-
-    {
-        question:
-            "Which economic system relies heavily on market forces to determine the allocation of resources?",
-
-        options: [
-            "Market economy",
-            "Command economy",
-            "Traditional economy only",
-            "Subsistence household"
-        ],
-
-        answer: 0,
-
-        explanation:
-            "A market economy relies substantially on market forces such as prices, demand and supply to allocate resources.",
-
-        hint:
-            "Look for the system in which prices and markets play the central allocation role."
-    },
-
-
-    {
-        question:
-            "Why is economics often described as the study of choices under scarcity?",
-
-        options: [
-            "Because resources have no alternative uses",
-            "Because people and societies must make choices about how to use limited resources",
-            "Because all goods are free",
-            "Because human wants are always limited"
-        ],
-
-        answer: 1,
-
-        explanation:
-            "Economics studies how individuals and societies make choices about allocating scarce resources among competing uses.",
-
-        hint:
-            "Connect scarcity with the need to make choices."
-    }
-
-];
-
-
-/* =====================================================
-   QUIZ VARIABLES
-===================================================== */
+let exam = null;
 
 let questions = [];
 
@@ -1460,7 +982,7 @@ let currentQuestion = 0;
 
 let userAnswers = [];
 
-let timeRemaining = QUIZ_DURATION;
+let timeRemaining = DEFAULT_DURATION;
 
 let timerInterval = null;
 
@@ -1470,42 +992,514 @@ let quizSubmitted = false;
 
 let quizStartTime = null;
 
+let officialAttempt = true;
+
+let studentName = "";
+
+let university = "";
+
+let examId = null;
+
 
 /* =====================================================
-   PREPARE QUIZ
+   ETHIOPIA LOCAL DATE / TIME
 ===================================================== */
 
-function prepareQuiz() {
+function getEthiopiaNow() {
+
+    return new Date(
+        new Date().toLocaleString(
+            "en-US",
+            {
+                timeZone: "Africa/Addis_Ababa"
+            }
+        )
+    );
+
+}
+
+
+function getEthiopiaDateString(date = getEthiopiaNow()) {
+
+    const year =
+        date.getFullYear();
+
+    const month =
+        String(
+            date.getMonth() + 1
+        ).padStart(2, "0");
+
+    const day =
+        String(
+            date.getDate()
+        ).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+
+}
+
+
+function timeToMinutes(timeString) {
+
+    const parts =
+        timeString.split(":");
+
+    return (
+        Number(parts[0]) * 60 +
+        Number(parts[1])
+    );
+
+}
+
+
+function getCurrentMinutes() {
+
+    const now =
+        getEthiopiaNow();
+
+    return (
+        now.getHours() * 60 +
+        now.getMinutes()
+    );
+
+}
+
+
+/* =====================================================
+   WEEK NUMBER
+===================================================== */
+
+function getWeekNumber(date) {
+
+    const start =
+        new Date(
+            date.getFullYear(),
+            0,
+            1
+        );
+
+    const difference =
+        Math.floor(
+            (
+                date - start
+            ) /
+            (
+                24 *
+                60 *
+                60 *
+                1000
+            )
+        );
+
+    return Math.ceil(
+        (
+            difference +
+            start.getDay() +
+            1
+        ) / 7
+    );
+
+}
+
+
+const today =
+    getEthiopiaNow();
+
+const weekNumber =
+    getWeekNumber(today);
+
+const weekName =
+    "Weekly Challenge #" +
+    String(weekNumber)
+        .padStart(2, "0");
+
+
+document.getElementById(
+    "weekTitle"
+).textContent = weekName;
+
+document.getElementById(
+    "resultWeek"
+).textContent = weekName;
+
+
+/* =====================================================
+   HELPER MESSAGE
+===================================================== */
+
+function showClosedMessage(title, text) {
+
+    document.getElementById(
+        "startScreen"
+    ).style.display = "none";
+
+    document.getElementById(
+        "closedScreen"
+    ).style.display = "block";
+
+    const closedPanel =
+        document.getElementById(
+            "closedScreen"
+        );
+
+    const heading =
+        closedPanel.querySelector("h2");
+
+    const paragraphs =
+        closedPanel.querySelectorAll("p");
+
+    if (heading) {
+        heading.textContent = title;
+    }
+
+    if (paragraphs[0]) {
+        paragraphs[0].innerHTML = text;
+    }
+
+    if (paragraphs[1]) {
+        paragraphs[1].textContent = "";
+    }
+
+}
+
+
+/* =====================================================
+   LOAD PUBLISHED EXAM
+===================================================== */
+
+async function loadWeeklyExam() {
+
+    try {
+
+        const todayString =
+            getEthiopiaDateString();
+
+        const examQuery =
+            query(
+                collection(
+                    db,
+                    "weeklyExams"
+                ),
+                where(
+                    "examDate",
+                    "==",
+                    todayString
+                ),
+                where(
+                    "status",
+                    "==",
+                    "published"
+                )
+            );
+
+        const snapshot =
+            await getDocs(
+                examQuery
+            );
+
+
+        if (snapshot.empty) {
+
+            showClosedMessage(
+                "Weekly Quiz Is Closed",
+                "There is no published Weekly Academic Challenge for today."
+            );
+
+            return;
+
+        }
+
+
+        /*
+         * If multiple exams somehow exist
+         * for the same date, use the first one.
+         */
+
+        const examDoc =
+            snapshot.docs[0];
+
+
+        examId =
+            examDoc.id;
+
+        exam =
+            {
+                id: examDoc.id,
+                ...examDoc.data()
+            };
+
+
+        const startMinutes =
+            timeToMinutes(
+                exam.startTime
+            );
+
+        const endMinutes =
+            timeToMinutes(
+                exam.endTime
+            );
+
+        const nowMinutes =
+            getCurrentMinutes();
+
+
+        /* =================================================
+           BEFORE OFFICIAL START
+        ================================================= */
+
+        if (
+            nowMinutes <
+            startMinutes
+        ) {
+
+            document.getElementById(
+                "startScreen"
+            ).style.display = "block";
+
+            document.getElementById(
+                "closedScreen"
+            ).style.display = "none";
+
+
+            document.querySelector(
+                ".start-panel h2"
+            ).textContent =
+                "⏳ Challenge Not Open Yet";
+
+
+            document.querySelector(
+                ".start-panel > p"
+            ).textContent =
+                `${exam.subject} — ${exam.chapter} will open at ${formatDisplayTime(exam.startTime)} Ethiopia time.`;
+
+
+            const button =
+                document.querySelector(
+                    ".start-panel .primary-btn"
+                );
+
+            button.disabled = true;
+
+            button.style.opacity = "0.5";
+
+            button.textContent =
+                "🔒 Not Open Yet";
+
+
+            updateExamInformation();
+
+            return;
+
+        }
+
+
+        /* =================================================
+           AFTER OFFICIAL END
+        ================================================= */
+
+        if (
+            nowMinutes >=
+            endMinutes
+        ) {
+
+            /*
+             * Current exam has finished.
+             * Show practice option.
+             */
+
+            showPracticeAfterExam();
+
+            return;
+
+        }
+
+
+        /* =================================================
+           OFFICIAL EXAM IS OPEN
+        ================================================= */
+
+        prepareOfficialExam();
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Weekly exam loading error:",
+            error
+        );
+
+        showClosedMessage(
+            "Unable to Load Weekly Challenge",
+            "Please refresh the page and try again."
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   DISPLAY TIME
+===================================================== */
+
+function formatDisplayTime(time) {
+
+    const parts =
+        time.split(":");
+
+    let hour =
+        Number(parts[0]);
+
+    const minute =
+        parts[1];
+
+    const suffix =
+        hour >= 12
+            ? "PM"
+            : "AM";
+
+    hour =
+        hour % 12 ||
+        12;
+
+    return (
+        hour +
+        ":" +
+        minute +
+        " " +
+        suffix
+    );
+
+}
+
+
+/* =====================================================
+   EXAM INFORMATION
+===================================================== */
+
+function updateExamInformation() {
+
+    if (!exam) {
+        return;
+    }
+
+
+    document.getElementById(
+        "questionCount"
+    ).textContent =
+        (
+            exam.questions?.length ||
+            20
+        ) +
+        " Questions";
+
+
+    document.getElementById(
+        "rulesQuestionCount"
+    ).textContent =
+        exam.questions?.length ||
+        20;
+
+
+    document.querySelector(
+        ".info-card:nth-child(1) strong"
+    ).textContent =
+        exam.subject;
+
+
+    document.querySelector(
+        ".info-card:nth-child(1) span"
+    ).textContent =
+        exam.chapter;
+
+
+    document.querySelector(
+        ".info-card:nth-child(2) span"
+    ).textContent =
+        "University Challenge";
+
+
+    document.querySelector(
+        ".info-card:nth-child(3) strong"
+    ).textContent =
+        (
+            exam.duration ||
+            20
+        ) +
+        " Minutes";
+
+
+    document.querySelector(
+        ".info-card:nth-child(3) span"
+    ).textContent =
+        `${formatDisplayTime(exam.startTime)} – ${formatDisplayTime(exam.endTime)}`;
+
+
+    document.querySelector(
+        ".start-panel > p"
+    ).textContent =
+        `${exam.subject} — ${exam.chapter}. Test your understanding, reasoning and exam readiness.`;
+
+}
+
+
+/* =====================================================
+   PREPARE OFFICIAL EXAM
+===================================================== */
+
+function prepareOfficialExam() {
+
+    updateExamInformation();
+
 
     questions =
-        weeklyQuestions.map(
-            question => ({
-                ...question,
-                options:
-                    question.options.map(
-                        (text, index) => ({
-                            text: text,
-                            originalIndex: index
-                        })
-                    )
-            })
-        );
+        (exam.questions || [])
+            .map(
+                question => ({
+                    ...question,
+
+                    options:
+                        question.options.map(
+                            (text, index) => ({
+                                text,
+                                originalIndex:
+                                    index
+                            })
+                        )
+                })
+            );
 
 
     userAnswers =
-        new Array(questions.length).fill(null);
+        new Array(
+            questions.length
+        ).fill(null);
 
 
     shuffleQuestions();
 
-    document.getElementById("questionCount").textContent =
-        questions.length + " Questions";
 
-    document.getElementById("rulesQuestionCount").textContent =
-        questions.length;
+    const button =
+        document.querySelector(
+            ".start-panel .primary-btn"
+        );
 
-    document.getElementById("questionCounter").textContent =
-        "Question 1 of " + questions.length;
+    button.disabled = false;
+
+    button.style.opacity = "1";
+
+    button.textContent =
+        "🚀 Start Weekly Challenge";
+
+
+    document.getElementById(
+        "startScreen"
+    ).style.display = "block";
+
+    document.getElementById(
+        "closedScreen"
+    ).style.display = "none";
 
 }
 
@@ -1517,14 +1511,16 @@ function prepareQuiz() {
 function shuffleQuestions() {
 
     for (
-        let i = questions.length - 1;
+        let i =
+            questions.length - 1;
         i > 0;
         i--
     ) {
 
         const j =
             Math.floor(
-                Math.random() * (i + 1)
+                Math.random() *
+                (i + 1)
             );
 
         [
@@ -1542,12 +1538,169 @@ function shuffleQuestions() {
 
 
 /* =====================================================
+   STUDENT INFORMATION
+===================================================== */
+
+function askStudentInformation() {
+
+    const name =
+        prompt(
+            "Enter your Full Name:"
+        );
+
+
+    if (
+        !name ||
+        !name.trim()
+    ) {
+
+        return false;
+
+    }
+
+
+    const school =
+        prompt(
+            "Enter your University / College Name:"
+        );
+
+
+    if (
+        !school ||
+        !school.trim()
+    ) {
+
+        return false;
+
+    }
+
+
+    studentName =
+        name.trim();
+
+    university =
+        school.trim();
+
+
+    return true;
+
+}
+
+
+/* =====================================================
    START QUIZ
 ===================================================== */
 
-function startQuiz() {
+window.startQuiz =
+async function () {
 
-    if (!isWeekend) {
+    if (
+        !exam ||
+        quizStarted
+    ) {
+
+        return;
+
+    }
+
+
+    const now =
+        getEthiopiaNow();
+
+    const todayString =
+        getEthiopiaDateString(
+            now
+        );
+
+
+    if (
+        exam.examDate !==
+        todayString
+    ) {
+
+        alert(
+            "This exam is not scheduled for today."
+        );
+
+        return;
+
+    }
+
+
+    const currentMinutes =
+        getCurrentMinutes();
+
+    const startMinutes =
+        timeToMinutes(
+            exam.startTime
+        );
+
+    const endMinutes =
+        timeToMinutes(
+            exam.endTime
+        );
+
+
+    if (
+        currentMinutes <
+        startMinutes
+    ) {
+
+        alert(
+            "The Weekly Academic Challenge has not opened yet."
+        );
+
+        return;
+
+    }
+
+
+    if (
+        currentMinutes >=
+        endMinutes
+    ) {
+
+        alert(
+            "The official exam has already closed."
+        );
+
+        return;
+
+    }
+
+
+    if (
+        !askStudentInformation()
+    ) {
+
+        alert(
+            "Full Name and University/College Name are required."
+        );
+
+        return;
+
+    }
+
+
+    /*
+     * Prevent accidental second official attempt
+     * on the same browser.
+     */
+
+    const localAttemptKey =
+        "uniqueAcademicOfficialAttempt_" +
+        exam.id;
+
+
+    if (
+        localStorage.getItem(
+            localAttemptKey
+        ) === "true"
+    ) {
+
+        alert(
+            "You have already completed this official challenge on this device."
+        );
 
         return;
 
@@ -1558,20 +1711,90 @@ function startQuiz() {
 
     quizSubmitted = false;
 
-    quizStartTime = Date.now();
+    quizStartTime =
+        Date.now();
 
-    document.getElementById("startScreen").style.display =
-        "none";
 
-    document.getElementById("quizScreen").style.display =
-        "block";
+    QUIZ_DURATION =
+        (
+            Number(
+                exam.duration
+            ) ||
+            20
+        ) *
+        60;
+
+
+    /*
+     * Calculate remaining official time.
+     */
+
+    const nowMilliseconds =
+        Date.now();
+
+
+    const endParts =
+        exam.endTime.split(":");
+
+
+    const endDate =
+        new Date(
+            now.getFullYear(),
+            now.getMonth(),
+            now.getDate(),
+            Number(endParts[0]),
+            Number(endParts[1]),
+            0,
+            0
+        );
+
+
+    const secondsUntilClosing =
+        Math.max(
+            0,
+            Math.floor(
+                (
+                    endDate.getTime() -
+                    nowMilliseconds
+                ) / 1000
+            )
+        );
+
+
+    timeRemaining =
+        Math.min(
+            QUIZ_DURATION,
+            secondsUntilClosing
+        );
+
+
+    if (
+        timeRemaining <= 0
+    ) {
+
+        alert(
+            "The official challenge has closed."
+        );
+
+        return;
+
+    }
+
+
+    document.getElementById(
+        "startScreen"
+    ).style.display = "none";
+
+    document.getElementById(
+        "quizScreen"
+    ).style.display = "block";
 
 
     startTimer();
 
     showQuestion();
 
-}
+};
 
 
 /* =====================================================
@@ -1584,44 +1807,67 @@ function showQuestion() {
         questions[currentQuestion];
 
 
-    document.getElementById("questionCounter").textContent =
+    if (!question) {
+        return;
+    }
+
+
+    document.getElementById(
+        "questionCounter"
+    ).textContent =
         "Question " +
         (currentQuestion + 1) +
         " of " +
         questions.length;
 
 
-    document.getElementById("questionNumber").textContent =
+    document.getElementById(
+        "questionNumber"
+    ).textContent =
         "Question " +
         (currentQuestion + 1);
 
 
-    document.getElementById("questionText").textContent =
+    document.getElementById(
+        "questionText"
+    ).textContent =
         question.question;
 
 
     const progress =
-        ((currentQuestion + 1) /
-        questions.length) *
+        (
+            (currentQuestion + 1) /
+            questions.length
+        ) *
         100;
 
 
-    document.getElementById("progressBar").style.width =
+    document.getElementById(
+        "progressBar"
+    ).style.width =
         progress + "%";
 
 
     const optionsContainer =
-        document.getElementById("options");
+        document.getElementById(
+            "options"
+        );
 
 
-    optionsContainer.innerHTML = "";
+    optionsContainer.innerHTML =
+        "";
 
 
     question.options.forEach(
-        (option, index) => {
+        (
+            option,
+            index
+        ) => {
 
             const optionElement =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             optionElement.className =
@@ -1629,7 +1875,9 @@ function showQuestion() {
 
 
             if (
-                userAnswers[currentQuestion] ===
+                userAnswers[
+                    currentQuestion
+                ] ===
                 option.originalIndex
             ) {
 
@@ -1651,7 +1899,9 @@ function showQuestion() {
 
 
             const letter =
-                document.createElement("span");
+                document.createElement(
+                    "span"
+                );
 
 
             letter.className =
@@ -1665,7 +1915,9 @@ function showQuestion() {
 
 
             const text =
-                document.createElement("span");
+                document.createElement(
+                    "span"
+                );
 
 
             text.className =
@@ -1676,9 +1928,13 @@ function showQuestion() {
                 option.text;
 
 
-            optionElement.appendChild(letter);
+            optionElement.appendChild(
+                letter
+            );
 
-            optionElement.appendChild(text);
+            optionElement.appendChild(
+                text
+            );
 
             optionsContainer.appendChild(
                 optionElement
@@ -1688,19 +1944,28 @@ function showQuestion() {
     );
 
 
-    document.getElementById("hintText").textContent =
-        question.hint;
+    document.getElementById(
+        "hintText"
+    ).textContent =
+        question.hint ||
+        "Think carefully about the key concept in the question.";
 
 
-    document.getElementById("hintText").style.display =
+    document.getElementById(
+        "hintText"
+    ).style.display =
         "none";
 
 
-    document.querySelector(".hint-btn").textContent =
+    document.querySelector(
+        ".hint-btn"
+    ).textContent =
         "💡 Show Hint";
 
 
-    document.getElementById("previousBtn").style.display =
+    document.getElementById(
+        "previousBtn"
+    ).style.display =
         currentQuestion === 0
             ? "none"
             : "block";
@@ -1711,18 +1976,26 @@ function showQuestion() {
         questions.length - 1
     ) {
 
-        document.getElementById("nextBtn").style.display =
+        document.getElementById(
+            "nextBtn"
+        ).style.display =
             "none";
 
-        document.getElementById("submitBtn").style.display =
+        document.getElementById(
+            "submitBtn"
+        ).style.display =
             "block";
 
     } else {
 
-        document.getElementById("nextBtn").style.display =
+        document.getElementById(
+            "nextBtn"
+        ).style.display =
             "block";
 
-        document.getElementById("submitBtn").style.display =
+        document.getElementById(
+            "submitBtn"
+        ).style.display =
             "none";
 
     }
@@ -1736,12 +2009,20 @@ function showQuestion() {
 
 function selectAnswer(index) {
 
-    if (quizSubmitted) {
+    if (
+        quizSubmitted
+    ) {
+
         return;
+
     }
 
-    userAnswers[currentQuestion] =
+
+    userAnswers[
+        currentQuestion
+    ] =
         index;
+
 
     showQuestion();
 
@@ -1752,7 +2033,8 @@ function selectAnswer(index) {
    NEXT
 ===================================================== */
 
-function nextQuestion() {
+window.nextQuestion =
+function () {
 
     if (
         currentQuestion <
@@ -1765,16 +2047,19 @@ function nextQuestion() {
 
     }
 
-}
+};
 
 
 /* =====================================================
    PREVIOUS
 ===================================================== */
 
-function previousQuestion() {
+window.previousQuestion =
+function () {
 
-    if (currentQuestion > 0) {
+    if (
+        currentQuestion > 0
+    ) {
 
         currentQuestion--;
 
@@ -1782,21 +2067,26 @@ function previousQuestion() {
 
     }
 
-}
+};
 
 
 /* =====================================================
    HINT
 ===================================================== */
 
-function toggleHint() {
+window.toggleHint =
+function () {
 
     const hint =
-        document.getElementById("hintText");
+        document.getElementById(
+            "hintText"
+        );
 
 
     const button =
-        document.querySelector(".hint-btn");
+        document.querySelector(
+            ".hint-btn"
+        );
 
 
     if (
@@ -1820,7 +2110,7 @@ function toggleHint() {
 
     }
 
-}
+};
 
 
 /* =====================================================
@@ -1849,7 +2139,9 @@ function startTimer() {
                         timerInterval
                     );
 
-                    submitQuiz(true);
+                    submitQuiz(
+                        true
+                    );
 
                 }
 
@@ -1871,18 +2163,23 @@ function updateTimer() {
             timeRemaining / 60
         );
 
+
     const seconds =
         timeRemaining % 60;
 
 
     const timer =
-        document.getElementById("timer");
+        document.getElementById(
+            "timer"
+        );
 
 
     timer.textContent =
-        String(minutes).padStart(2, "0") +
+        String(minutes)
+            .padStart(2, "0") +
         ":" +
-        String(seconds).padStart(2, "0");
+        String(seconds)
+            .padStart(2, "0");
 
 
     if (
@@ -1890,6 +2187,12 @@ function updateTimer() {
     ) {
 
         timer.classList.add(
+            "warning"
+        );
+
+    } else {
+
+        timer.classList.remove(
             "warning"
         );
 
@@ -1902,16 +2205,24 @@ function updateTimer() {
    SUBMIT QUIZ
 ===================================================== */
 
-function submitQuiz(autoSubmit = false) {
+window.submitQuiz =
+async function (
+    autoSubmit = false
+) {
 
-    if (quizSubmitted) {
+    if (
+        quizSubmitted
+    ) {
+
         return;
+
     }
 
 
     const unanswered =
         userAnswers.filter(
-            answer => answer === null
+            answer =>
+                answer === null
         ).length;
 
 
@@ -1929,7 +2240,9 @@ function submitQuiz(autoSubmit = false) {
 
 
         if (!proceed) {
+
             return;
+
         }
 
     }
@@ -1944,15 +2257,25 @@ function submitQuiz(autoSubmit = false) {
 
 
     const timeUsed =
-        QUIZ_DURATION -
-        timeRemaining;
+        Math.max(
+            0,
+            Math.floor(
+                (
+                    Date.now() -
+                    quizStartTime
+                ) / 1000
+            )
+        );
 
 
     let correct = 0;
 
 
     questions.forEach(
-        (question, index) => {
+        (
+            question,
+            index
+        ) => {
 
             if (
                 userAnswers[index] ===
@@ -1974,13 +2297,15 @@ function submitQuiz(autoSubmit = false) {
 
     const percentage =
         Math.round(
-            (correct /
-            questions.length) *
+            (
+                correct /
+                questions.length
+            ) *
             100
         );
 
 
-    showResult(
+    await showResult(
         correct,
         wrong,
         percentage,
@@ -1988,14 +2313,14 @@ function submitQuiz(autoSubmit = false) {
         autoSubmit
     );
 
-}
+};
 
 
 /* =====================================================
    SHOW RESULT
 ===================================================== */
 
-function showResult(
+async function showResult(
     correct,
     wrong,
     percentage,
@@ -2003,54 +2328,78 @@ function showResult(
     autoSubmit
 ) {
 
-    document.getElementById("quizScreen").style.display =
+    document.getElementById(
+        "quizScreen"
+    ).style.display =
         "none";
 
 
-    document.getElementById("resultScreen").style.display =
+    document.getElementById(
+        "resultScreen"
+    ).style.display =
         "block";
 
 
-    document.getElementById("percentage").textContent =
+    document.getElementById(
+        "percentage"
+    ).textContent =
         percentage + "%";
 
 
-    document.getElementById("correctCount").textContent =
+    document.getElementById(
+        "correctCount"
+    ).textContent =
         correct;
 
 
-    document.getElementById("wrongCount").textContent =
+    document.getElementById(
+        "wrongCount"
+    ).textContent =
         wrong;
 
 
-    document.getElementById("timeUsed").textContent =
-        formatTime(timeUsed);
+    document.getElementById(
+        "timeUsed"
+    ).textContent =
+        formatTime(
+            timeUsed
+        );
 
 
     let message = "";
 
 
-    if (percentage >= 90) {
+    if (
+        percentage >= 90
+    ) {
 
         message =
             "🔥 Outstanding! You are performing at an excellent level.";
 
-    } else if (percentage >= 80) {
+    } else if (
+        percentage >= 80
+    ) {
 
         message =
             "👏 Excellent work! Keep pushing your knowledge further.";
 
-    } else if (percentage >= 70) {
+    } else if (
+        percentage >= 70
+    ) {
 
         message =
             "💪 Very good! You have a strong understanding.";
 
-    } else if (percentage >= 60) {
+    } else if (
+        percentage >= 60
+    ) {
 
         message =
             "👍 Good effort! Review your mistakes and improve.";
 
-    } else if (percentage >= 50) {
+    } else if (
+        percentage >= 50
+    ) {
 
         message =
             "📚 Keep studying. You are making progress.";
@@ -2063,7 +2412,9 @@ function showResult(
     }
 
 
-    if (autoSubmit) {
+    if (
+        autoSubmit
+    ) {
 
         message +=
             " ⏰ The time limit was reached.";
@@ -2071,16 +2422,28 @@ function showResult(
     }
 
 
-    document.getElementById("resultMessage").textContent =
+    document.getElementById(
+        "resultMessage"
+    ).textContent =
         message;
 
 
-    saveResult(
-        correct,
-        wrong,
-        percentage,
-        timeUsed
-    );
+    /*
+     * Official result is saved to Firestore.
+     */
+
+    if (
+        officialAttempt
+    ) {
+
+        await saveOfficialResult(
+            correct,
+            wrong,
+            percentage,
+            timeUsed
+        );
+
+    }
 
 }
 
@@ -2096,58 +2459,466 @@ function formatTime(seconds) {
             seconds / 60
         );
 
+
     const remainingSeconds =
         seconds % 60;
 
 
     return (
-        String(minutes).padStart(2, "0") +
+        String(minutes)
+            .padStart(2, "0") +
         ":" +
-        String(remainingSeconds).padStart(2, "0")
+        String(
+            remainingSeconds
+        ).padStart(2, "0")
     );
 
 }
 
 
 /* =====================================================
-   SAVE RESULT
+   SAVE OFFICIAL RESULT
 ===================================================== */
 
-function saveResult(
+async function saveOfficialResult(
     correct,
     wrong,
     percentage,
     timeUsed
 ) {
 
-    const result = {
+    try {
 
-        week:
-            weekName,
-
-        correct:
-            correct,
-
-        wrong:
-            wrong,
-
-        percentage:
-            percentage,
-
-        timeUsed:
-            timeUsed,
-
-        date:
-            new Date().toISOString()
-
-    };
+        const localAttemptKey =
+            "uniqueAcademicOfficialAttempt_" +
+            exam.id;
 
 
-    localStorage.setItem(
-        "uniqueAcademicWeeklyQuizResult_" +
-        weekNumber,
-        JSON.stringify(result)
+        /*
+         * Mark this browser as completed.
+         */
+
+        localStorage.setItem(
+            localAttemptKey,
+            "true"
+        );
+
+
+        const result =
+            {
+
+                examId:
+                    exam.id,
+
+                subject:
+                    exam.subject,
+
+                chapter:
+                    exam.chapter,
+
+                examDate:
+                    exam.examDate,
+
+                studentName:
+                    studentName,
+
+                university:
+                    university,
+
+                correct:
+                    correct,
+
+                wrong:
+                    wrong,
+
+                score:
+                    correct,
+
+                totalQuestions:
+                    questions.length,
+
+                percentage:
+                    percentage,
+
+                timeUsed:
+                    timeUsed,
+
+                officialAttempt:
+                    true,
+
+                submittedAt:
+                    serverTimestamp()
+
+            };
+
+
+        await addDoc(
+            collection(
+                db,
+                "weeklyExamResults"
+            ),
+            result
+        );
+
+
+        console.log(
+            "Official result saved."
+        );
+
+
+        await showRanking();
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Could not save result:",
+            error
+        );
+
+
+        alert(
+            "Your result was calculated, but there was a problem saving it online. Please take a screenshot of your result."
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   TOP 5 RANKING
+===================================================== */
+
+async function showRanking() {
+
+    if (!examId) {
+        return;
+    }
+
+
+    try {
+
+        const resultsQuery =
+            query(
+                collection(
+                    db,
+                    "weeklyExamResults"
+                ),
+                where(
+                    "examId",
+                    "==",
+                    examId
+                ),
+                where(
+                    "officialAttempt",
+                    "==",
+                    true
+                )
+            );
+
+
+        const snapshot =
+            await getDocs(
+                resultsQuery
+            );
+
+
+        const results =
+            snapshot.docs.map(
+                doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                })
+            );
+
+
+        results.sort(
+            (
+                a,
+                b
+            ) => {
+
+                if (
+                    Number(b.score || 0) !==
+                    Number(a.score || 0)
+                ) {
+
+                    return (
+                        Number(b.score || 0) -
+                        Number(a.score || 0)
+                    );
+
+                }
+
+
+                return (
+                    Number(a.timeUsed || 0) -
+                    Number(b.timeUsed || 0)
+                );
+
+            }
+        );
+
+
+        displayRanking(
+            results
+        );
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Ranking error:",
+            error
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   DISPLAY TOP 5
+===================================================== */
+
+function displayRanking(
+    results
+) {
+
+    const resultPanel =
+        document.getElementById(
+            "resultScreen"
+        );
+
+
+    /*
+     * Do not create duplicate ranking boxes.
+     */
+
+    const oldRanking =
+        document.getElementById(
+            "weeklyRanking"
+        );
+
+
+    if (oldRanking) {
+
+        oldRanking.remove();
+
+    }
+
+
+    const ranking =
+        document.createElement(
+            "div"
+        );
+
+
+    ranking.id =
+        "weeklyRanking";
+
+
+    ranking.style.marginTop =
+        "25px";
+
+    ranking.style.textAlign =
+        "left";
+
+
+    const title =
+        document.createElement(
+            "h3"
+        );
+
+
+    title.textContent =
+        "🏆 Top 5 Official Results";
+
+
+    ranking.appendChild(
+        title
     );
+
+
+    if (
+        results.length === 0
+    ) {
+
+        const empty =
+            document.createElement(
+                "p"
+            );
+
+        empty.textContent =
+            "No official results yet.";
+
+        ranking.appendChild(
+            empty
+        );
+
+    } else {
+
+        results
+            .slice(0, 5)
+            .forEach(
+                (
+                    result,
+                    index
+                ) => {
+
+                    const row =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    row.style.padding =
+                        "12px";
+
+                    row.style.marginTop =
+                        "8px";
+
+                    row.style.borderRadius =
+                        "10px";
+
+                    row.style.background =
+                        "rgba(25,118,210,0.08)";
+
+
+                    row.innerHTML =
+                        `
+                        <b>
+                            ${index + 1}.
+                            ${escapeHTML(result.studentName || "Student")}
+                        </b>
+                        <br>
+                        <span>
+                            ${escapeHTML(result.university || "")}
+                            — ${result.score}/${result.totalQuestions}
+                            (${result.percentage}%)
+                        </span>
+                        `;
+
+
+                    ranking.appendChild(
+                        row
+                    );
+
+                }
+            );
+
+    }
+
+
+    /*
+     * Show current student's position.
+     */
+
+    const myIndex =
+        results.findIndex(
+            result =>
+                result.studentName ===
+                    studentName &&
+                result.university ===
+                    university
+        );
+
+
+    if (
+        myIndex >= 0
+    ) {
+
+        const myResult =
+            results[myIndex];
+
+
+        const own =
+            document.createElement(
+                "div"
+            );
+
+
+        own.style.marginTop =
+            "15px";
+
+        own.style.padding =
+            "14px";
+
+        own.style.borderRadius =
+            "12px";
+
+        own.style.background =
+            "#eaf4ff";
+
+
+        own.innerHTML =
+            `
+            <b>👤 Your Official Position: #${myIndex + 1}</b>
+            <br>
+            Score: ${myResult.score}/${myResult.totalQuestions}
+            (${myResult.percentage}%)
+            `;
+
+
+        ranking.appendChild(
+            own
+        );
+
+    }
+
+
+    /*
+     * Insert ranking before Review Answers.
+     */
+
+    const reviewButton =
+        resultPanel.querySelector(
+            ".secondary-btn"
+        );
+
+
+    resultPanel.insertBefore(
+        ranking,
+        reviewButton
+    );
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHTML(
+    value
+) {
+
+    return String(
+        value
+    )
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /'/g,
+            "&#039;"
+        );
 
 }
 
@@ -2156,10 +2927,13 @@ function saveResult(
    REVIEW
 ===================================================== */
 
-function showReview() {
+window.showReview =
+function () {
 
     const review =
-        document.getElementById("review");
+        document.getElementById(
+            "review"
+        );
 
 
     if (
@@ -2180,17 +2954,25 @@ function showReview() {
 
 
     const reviewList =
-        document.getElementById("reviewList");
+        document.getElementById(
+            "reviewList"
+        );
 
 
-    reviewList.innerHTML = "";
+    reviewList.innerHTML =
+        "";
 
 
     questions.forEach(
-        (question, index) => {
+        (
+            question,
+            index
+        ) => {
 
             const item =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             const isCorrect =
@@ -2208,7 +2990,9 @@ function showReview() {
 
 
             const questionTitle =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             questionTitle.className =
@@ -2227,7 +3011,9 @@ function showReview() {
 
 
             const userAnswer =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             userAnswer.className =
@@ -2235,7 +3021,8 @@ function showReview() {
 
 
             if (
-                userAnswers[index] === null
+                userAnswers[index] ===
+                null
             ) {
 
                 userAnswer.textContent =
@@ -2243,13 +3030,21 @@ function showReview() {
 
             } else {
 
-                userAnswer.textContent =
-                    "Your answer: " +
+                const selected =
                     question.options.find(
                         option =>
                             option.originalIndex ===
                             userAnswers[index]
-                    ).text;
+                    );
+
+
+                userAnswer.textContent =
+                    "Your answer: " +
+                    (
+                        selected
+                            ? selected.text
+                            : "Unknown"
+                    );
 
             }
 
@@ -2260,20 +3055,30 @@ function showReview() {
 
 
             const correctAnswer =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             correctAnswer.className =
                 "review-answer";
 
 
-            correctAnswer.textContent =
-                "Correct answer: " +
+            const correctOption =
                 question.options.find(
                     option =>
                         option.originalIndex ===
                         question.answer
-                ).text;
+                );
+
+
+            correctAnswer.textContent =
+                "Correct answer: " +
+                (
+                    correctOption
+                        ? correctOption.text
+                        : "Unknown"
+                );
 
 
             item.appendChild(
@@ -2282,7 +3087,9 @@ function showReview() {
 
 
             const explanation =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             explanation.className =
@@ -2291,7 +3098,10 @@ function showReview() {
 
             explanation.textContent =
                 "💡 " +
-                question.explanation;
+                (
+                    question.explanation ||
+                    ""
+                );
 
 
             item.appendChild(
@@ -2306,67 +3116,173 @@ function showReview() {
         }
     );
 
-}
+};
 
 
 /* =====================================================
-   WEEKEND CONTROL
+   PRACTICE AFTER OFFICIAL EXAM
 ===================================================== */
 
-function setupWeekendAccess() {
+function showPracticeAfterExam() {
 
-    if (!isWeekend) {
+    document.getElementById(
+        "startScreen"
+    ).style.display =
+        "block";
 
-        document.getElementById("startScreen").style.display =
-            "none";
+    document.getElementById(
+        "closedScreen"
+    ).style.display =
+        "none";
 
 
-        document.getElementById("closedScreen").style.display =
-            "block";
+    updateExamInformation();
 
 
-        showNextOpening();
+    const panel =
+        document.querySelector(
+            ".start-panel"
+        );
+
+
+    const heading =
+        panel.querySelector(
+            "h2"
+        );
+
+
+    heading.textContent =
+        "📖 Official Challenge Closed";
+
+
+    const paragraph =
+        panel.querySelector(
+            "p"
+        );
+
+
+    paragraph.textContent =
+        `${exam.subject} — ${exam.chapter} is now available for practice. Practice results do not affect the official ranking.`;
+
+
+    const rules =
+        panel.querySelector(
+            ".rules"
+        );
+
+
+    if (rules) {
+
+        rules.innerHTML =
+            `
+            <div>
+                📌 <b>Questions:</b>
+                ${questions.length || exam.questions?.length || 20}
+            </div>
+
+            <div>
+                📚 <b>Mode:</b>
+                Practice
+            </div>
+
+            <div>
+                🏆 <b>Ranking:</b>
+                Practice result does not affect official ranking
+            </div>
+
+            <div>
+                🔄 <b>Attempts:</b>
+                You may practice again
+            </div>
+
+            <div>
+                💡 <b>Purpose:</b>
+                Review your knowledge and improve
+            </div>
+            `;
 
     }
 
+
+    const button =
+        panel.querySelector(
+            ".primary-btn"
+        );
+
+
+    button.disabled =
+        false;
+
+    button.style.opacity =
+        "1";
+
+    button.textContent =
+        "📖 Start Practice";
+
+
+    button.onclick =
+        function () {
+
+            startPractice();
+
+        };
+
+
+    officialAttempt =
+        false;
+
 }
 
 
 /* =====================================================
-   NEXT OPENING
+   START PRACTICE
 ===================================================== */
 
-function showNextOpening() {
+function startPractice() {
 
-    const message =
-        document.getElementById("nextOpening");
+    officialAttempt =
+        false;
 
 
-    if (day >= 1 && day <= 5) {
+    quizStarted =
+        true;
 
-        message.textContent =
-            "🗓️ The next Weekly Challenge opens on Saturday.";
+    quizSubmitted =
+        false;
 
-    }
+    quizStartTime =
+        Date.now();
+
+
+    QUIZ_DURATION =
+        DEFAULT_DURATION;
+
+
+    timeRemaining =
+        DEFAULT_DURATION;
+
+
+    document.getElementById(
+        "startScreen"
+    ).style.display =
+        "none";
+
+
+    document.getElementById(
+        "quizScreen"
+    ).style.display =
+        "block";
+
+
+    startTimer();
+
+    showQuestion();
 
 }
 
 
 /* =====================================================
-   INITIALIZE
-===================================================== */
-
-prepareQuiz();
-
-setupWeekendAccess();
-
-
-/* =====================================================
-   OPTIONAL DARK MODE
-
-   This allows the page to work with the
-   Unique Academic dark-mode class.
-
+   DARK MODE
 ===================================================== */
 
 if (
@@ -2381,4 +3297,14 @@ if (
 
 }
 
-</script></body></html>
+
+/* =====================================================
+   INITIALIZE
+===================================================== */
+
+loadWeeklyExam();
+
+
+</script>     
+
+</body></html>
