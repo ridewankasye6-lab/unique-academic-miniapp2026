@@ -8,10 +8,9 @@ import {
     doc,
     updateDoc,
     addDoc,
-serverTimestamp,
-Timestamp
+    serverTimestamp,
+    Timestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
-
 import {
     onAuthStateChanged,
     signOut
