@@ -2594,13 +2594,14 @@ const incorrectMessages = [
 
 
         /*
-         * Next button available only when
-         * every question on current page
-         * is correctly answered.
-         */
+ * Next button is always available.
+ *
+ * The student can continue whether the
+ * current questions are correct, wrong,
+ * unanswered, or skipped.
+ */
 
-        nextBtn.disabled =
-            !isCurrentPageComplete();
+nextBtn.disabled = false;
 
     }
 
