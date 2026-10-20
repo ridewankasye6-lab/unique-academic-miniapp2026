@@ -2605,59 +2605,48 @@ nextBtn.disabled = false;
 
     }
 
+// =================================================
+// NEXT
+// Allows moving forward regardless of answers
+// =================================================
 
-    // =================================================
-    // NEXT
-    // =================================================
+nextBtn.addEventListener(
+    "click",
+    () => {
 
-    nextBtn.addEventListener(
-        "click",
-        () => {
+        if (
+            quizFinished
+        ) {
 
-            if (
-                quizFinished
-            ) {
-
-                return;
-
-            }
-
-
-            if (
-                !isCurrentPageComplete()
-            ) {
-
-                return;
-
-            }
-
-
-            const totalPages =
-                Math.ceil(
-                    questions.length /
-                    QUESTIONS_PER_PAGE
-                );
-
-
-            if (
-                currentPage <
-                totalPages - 1
-            ) {
-
-                currentPage++;
-
-                loadPage();
-
-            }
-
-            else {
-
-                finishQuiz();
-
-            }
+            return;
 
         }
-    );
+
+        const totalPages =
+            Math.ceil(
+                questions.length /
+                QUESTIONS_PER_PAGE
+            );
+
+        if (
+            currentPage <
+            totalPages - 1
+        ) {
+
+            currentPage++;
+
+            loadPage();
+
+        }
+
+        else {
+
+            finishQuiz();
+
+        }
+
+    }
+);
 
 
     // =================================================
@@ -2705,21 +2694,8 @@ nextBtn.disabled = false;
 
         }
 
-
-        const allQuestionsComplete =
-            userAnswers.every(
-                answer =>
-                    answer !== null
-            );
-
-
-        if (
-            !allQuestionsComplete
-        ) {
-
-            return;
-
-        }
+// Allow the quiz to finish even if questions are skipped.
+        
 
 
         quizFinished =
