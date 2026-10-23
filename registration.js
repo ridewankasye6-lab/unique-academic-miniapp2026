@@ -932,7 +932,7 @@ document
 
 
                     amount:
-                        300,
+                        200,
 
 
                     currency:
