@@ -734,55 +734,51 @@ document.addEventListener(
                 }
 
 
+// =============================================
+// FIND CHAPTER
+// =============================================
 
-                // =============================================
-                // FIND CHAPTER
-                // =============================================
-
-                const chapterData =
-                    subjectData[
-                        requestedChapter
-                    ];
-
-
-                if (
-                    !Array.isArray(
-                        chapterData
-                    ) ||
-                    chapterData.length === 0
-                ) {
+const chapterData =
+    subjectData[
+        requestedChapter
+    ];
 
 
-                    console.error(
-                        "No quiz questions found."
-                    );
+// =============================================
+// CHECK CHAPTER DATA
+// =============================================
 
+if (
+    !Array.isArray(chapterData) ||
+    chapterData.length === 0
+) {
 
-                    console.error(
-                        "Subject:",
-                        requestedSubject
-                    );
+    console.warn(
+        "No quiz questions found for this chapter."
+    );
 
+    console.log(
+        "Subject:",
+        requestedSubject
+    );
 
-                    console.error(
-                        "Chapter:",
-                        requestedChapter
-                    );
+    console.log(
+        "Chapter:",
+        requestedChapter
+    );
 
+    console.log(
+        "Available chapters:",
+        Object.keys(subjectData)
+    );
 
-                    console.log(
-                        "Available chapters:",
-                        Object.keys(
-                            subjectData
-                        )
-                    );
+    // IMPORTANT:
+    // Do not return here.
+    // Continue loading quiz.js so it can
+    // display the empty-state message and
+    // register the Back and Home handlers.
 
-
-                    return;
-
-                }
-
-
+}
 
                 // =============================================
                 // SUCCESSFUL DATA CHECK
