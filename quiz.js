@@ -1185,43 +1185,79 @@ const incorrectMessages = [
         "Questions found:",
         questions.length
     );
+// =================================================
+// NO QUESTIONS — MINIMAL FIX
+// =================================================
 
+if (
+    questions.length === 0
+) {
 
-    // =================================================
-    // NO QUESTIONS
-    // =================================================
+    questionsPage.innerHTML = `
+        <section class="questionCard">
 
-    if (
-        questions.length === 0
-    ) {
+            <h2 class="questionText">
+                No questions found for this chapter.
+            </h2>
 
-        questionsPage.innerHTML = `
-            <section class="questionCard">
+        </section>
+    `;
 
-                <h2 class="questionText">
-                    No questions found for this chapter.
-                </h2>
+    previousQuestionBtn.style.display =
+        "none";
 
-            </section>
-        `;
+    nextBtn.style.display =
+        "none";
 
+    completionMessage.hidden =
+        true;
 
-        previousQuestionBtn.style.display =
-            "none";
+    // BACK BUTTON
+    backBtn.addEventListener(
+        "click",
+        () => {
 
+            if (
+                window.history.length > 1
+            ) {
 
-        nextBtn.style.display =
-            "none";
+                window.history.back();
 
+            }
 
-        completionMessage.hidden =
-            true;
+            else if (
+                subject
+            ) {
 
+                window.location.href =
+                    `chapter.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter)}`;
 
-        return;
+            }
 
-    }
+            else {
 
+                window.location.href =
+                    "index.html";
+
+            }
+
+        }
+    );
+
+    // HOME BUTTON
+    homeBtn.addEventListener(
+        "click",
+        () => {
+
+            window.location.href =
+                "index.html";
+
+        }
+    );
+
+    return;
+
+}
 
     // =================================================
     // PREPARE ANSWER ARRAY
