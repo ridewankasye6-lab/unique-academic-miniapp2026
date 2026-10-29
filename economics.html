@@ -10,141 +10,58 @@
 <link
     rel="stylesheet"
     href="style.css"
-><style>
-/* =====================================================
-   ECONOMICS VIDEO TUTORIAL CARD
-   Scoped styles: will not change other sections
-===================================================== */
+>
+    <!-- VIDEO TUTORIAL CARD -->
 
-.economics-video-card {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 20px 0;
-    padding: 24px 20px 16px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #2563eb, #4338ca, #6d28d9);
-    color: #ffffff;
-    text-decoration: none;
-    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.22);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+<div class="video-tutorial-card">
+
+    <h2>🎥 VIDEO TUTORIAL</h2>
+
+    <a
+        href="economics-videos.html"
+        class="video-tutorial-button"
+    >
+        Go to Videos&nbsp; →
+    </a>
+
+</div>
+
+<style>
+.video-tutorial-card {
+    margin: 22px 0 30px;
+    padding: 28px 20px;
+    border-radius: 24px;
+    background: linear-gradient(120deg, #2563eb, #6429d0);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
 }
 
-.economics-video-card:active {
-    transform: scale(0.99);
-}
-
-.economics-video-card,
-.economics-video-card * {
-    box-sizing: border-box;
-}
-
-.economics-video-top {
-    display: inline-block;
-    padding: 7px 12px;
-    margin-bottom: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.16);
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.economics-video-content {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.economics-video-icon {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 66px;
-    height: 66px;
-    border-radius: 17px;
-    background: rgba(255, 255, 255, 0.16);
-    font-size: 39px;
-}
-
-.economics-video-text {
-    flex: 1;
-    min-width: 0;
-}
-
-.economics-video-text h3 {
-    margin: 0 0 8px;
-    color: #ffffff;
-    font-size: clamp(22px, 5vw, 29px);
-    line-height: 1.3;
-}
-
-.economics-video-text p {
-    margin: 0;
-    color: #eef2ff;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.economics-video-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    margin-top: 20px;
-    padding: 13px 16px;
-    border-radius: 12px;
-    background: #ffffff;
-    color: #1d4ed8;
-    font-size: 16px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.economics-video-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    margin-top: 18px;
-    padding-top: 13px;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-    color: #ffffff;
-    font-size: 12px;
+.video-tutorial-card h2 {
+    margin: 0 0 24px;
+    color: white;
+    font-size: 25px;
     font-weight: 700;
 }
 
-.economics-video-footer span {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
+.video-tutorial-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 12px;
+    border-radius: 16px;
+    background: #ffffff;
+    color: #2855c7;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 800;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
 }
 
-@media (min-width: 600px) {
-    .economics-video-card {
-        padding: 28px;
-    }
-
-    .economics-video-content {
-        gap: 20px;
-    }
-
-    .economics-video-icon {
-        width: 82px;
-        height: 82px;
-        font-size: 46px;
-    }
-
-    .economics-video-button {
-        width: auto;
-        min-width: 180px;
-    }
+.video-tutorial-button:active {
+    transform: scale(0.98);
 }
 </style>
-    
 
 </head><body><!-- =================================================
      ECONOMICS HEADER
