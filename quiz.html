@@ -168,8 +168,7 @@
              BACK BUTTON
         ================================== -->
 
-        <button
-            id="backBtn"
+        <button id="backBtn" onclick="if (window.history.length > 1) { window.history.back(); } else { window.location.href='index.html'; }">Back</button>
             class="topNavBtn backBtn"
             type="button"
             aria-label="Go back"
@@ -218,9 +217,7 @@
         <!-- =================================
              HOME BUTTON
         ================================== -->
-
-        <button
-            id="homeBtn"
+<button id="homeBtn" onclick="window.location.href='index.html'">Home</button>
             class="topNavBtn homeBtn"
             type="button"
             aria-label="Go to home"
