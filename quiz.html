@@ -29,31 +29,18 @@
         ================================================= */
 
         .reviewQuizBtn {
-
             display: inline-flex;
-
             align-items: center;
-
             justify-content: center;
-
             gap: 8px;
-
             margin-top: 20px;
-
             padding: 13px 22px;
-
             border: none;
-
             border-radius: 12px;
-
             background: #8e44ad;
-
             color: white;
-
             font-size: 15px;
-
             font-weight: 700;
-
             cursor: pointer;
 
             transition:
@@ -68,15 +55,10 @@
                     173,
                     0.25
                 );
-
         }
 
-
         .reviewQuizBtn:hover {
-
-            transform:
-                translateY(-2px);
-
+            transform: translateY(-2px);
             background: #732d91;
 
             box-shadow:
@@ -86,30 +68,21 @@
                     173,
                     0.32
                 );
-
         }
-
 
         .reviewQuizBtn:active {
-
-            transform:
-                translateY(0);
-
+            transform: translateY(0);
         }
 
-
         .reviewQuizBtn:focus-visible {
-
-            outline:
-                3px solid rgba(
-                    142,
-                    68,
-                    173,
-                    0.35
-                );
+            outline: 3px solid rgba(
+                142,
+                68,
+                173,
+                0.35
+            );
 
             outline-offset: 3px;
-
         }
 
 
@@ -118,33 +91,24 @@
         ================================================= */
 
         body.dark-mode .reviewQuizBtn {
-
             background: #9b59b6;
-
             color: white;
-
         }
 
-
         body.dark-mode .reviewQuizBtn:hover {
-
             background: #8e44ad;
-
         }
 
 
         /* =================================================
            HIDE DUPLICATE CURRENT QUIZ CARD
-           
-           IMPORTANT:
-           The elements remain in the DOM because
+
+           Keep the elements in the DOM because
            quiz.js may use subjectName and chapterName.
         ================================================= */
 
         .subjectCard {
-
             display: none !important;
-
         }
 
     </style>
@@ -168,7 +132,8 @@
              BACK BUTTON
         ================================== -->
 
-        <button id="backBtn" onclick="if (window.history.length > 1) { window.history.back(); } else { window.location.href='index.html'; }">Back</button>
+        <button
+            id="backBtn"
             class="topNavBtn backBtn"
             type="button"
             aria-label="Go back"
@@ -185,7 +150,6 @@
         </button>
 
 
-
         <!-- =================================
              HEADER TITLE
         ================================== -->
@@ -196,13 +160,11 @@
                 📖
             </span>
 
-
             <div>
 
                 <h1 id="headerTitle">
                     Unique Academic
                 </h1>
-
 
                 <p id="headerChapter">
                     Quiz
@@ -213,11 +175,12 @@
         </div>
 
 
-
         <!-- =================================
              HOME BUTTON
         ================================== -->
-<button id="homeBtn" onclick="window.location.href='index.html'">Home</button>
+
+        <button
+            id="homeBtn"
             class="topNavBtn homeBtn"
             type="button"
             aria-label="Go to home"
@@ -249,18 +212,16 @@
 
         <!-- =====================================
              SUBJECT / CHAPTER
-             
-             KEPT IN HTML FOR QUIZ.JS
+
+             KEPT IN HTML FOR QUIZ.JS.
              HIDDEN VISUALLY BY CSS ABOVE.
         ====================================== -->
 
         <section class="subjectCard">
 
-
             <div class="subjectIcon">
                 🎓
             </div>
-
 
             <div class="subjectInfo">
 
@@ -268,11 +229,9 @@
                     CURRENT QUIZ
                 </p>
 
-
                 <h2 id="subjectName">
                     Subject
                 </h2>
-
 
                 <p id="chapterName">
                     Chapter 1
@@ -287,12 +246,10 @@
         <!-- =====================================
              QUESTIONS
 
-             Quiz progress bar removed.
+             Original question container preserved.
         ====================================== -->
 
-        <div
-            id="questionsPage"
-        ></div>
+        <div id="questionsPage"></div>
 
 
 
@@ -303,9 +260,7 @@
         <div class="questionNavigation">
 
 
-            <!-- =================================
-                 PREVIOUS
-            ================================== -->
+            <!-- PREVIOUS QUESTION -->
 
             <button
                 id="previousQuestionBtn"
@@ -317,7 +272,6 @@
                     ←
                 </span>
 
-
                 <span>
                     Previous
                 </span>
@@ -326,9 +280,7 @@
 
 
 
-            <!-- =================================
-                 NEXT
-            ================================== -->
+            <!-- NEXT QUESTION -->
 
             <button
                 id="nextBtn"
@@ -339,7 +291,6 @@
                 <span>
                     Next
                 </span>
-
 
                 <span class="navArrow">
                     →
@@ -352,7 +303,7 @@
 
 
         <!-- =====================================
-             COMPLETION
+             COMPLETION MESSAGE
         ====================================== -->
 
         <div
@@ -361,25 +312,20 @@
             hidden
         >
 
-
             <div class="completionIcon">
                 🎉
             </div>
 
-
             <h2>
                 Quiz Completed!
             </h2>
-
 
             <p>
                 Great job! You have reached the end of this quiz.
             </p>
 
 
-            <!-- =================================
-                 REVIEW QUIZ
-            ================================== -->
+            <!-- REVIEW QUIZ BUTTON -->
 
             <button
                 id="reviewQuizBtn"
@@ -398,9 +344,7 @@
 
             </button>
 
-
         </div>
-
 
     </main>
 
@@ -412,16 +356,13 @@
 
     <footer class="quizFooter">
 
-
         <p>
             🎓 Unique Academic
         </p>
 
-
         <span>
             Learn • Practice • Succeed
         </span>
-
 
     </footer>
 
@@ -431,16 +372,95 @@
 
 
 <!-- =====================================================
+     BACK AND HOME BUTTON HANDLERS
+
+     These work independently of quiz.js.
+
+     Therefore, the buttons can work even when:
+     - A chapter has no questions.
+     - quiz.js has not loaded.
+     - The quiz engine returns early.
+===================================================== -->
+
+<script>
+
+(function () {
+
+    "use strict";
+
+
+    // =============================================
+    // GET BUTTONS
+    // =============================================
+
+    const backBtn =
+        document.getElementById("backBtn");
+
+    const homeBtn =
+        document.getElementById("homeBtn");
+
+
+    // =============================================
+    // BACK BUTTON
+    // =============================================
+
+    if (backBtn) {
+
+        backBtn.addEventListener(
+            "click",
+            function () {
+
+                // Return to the previous page when possible.
+                if (window.history.length > 1) {
+
+                    window.history.back();
+
+                } else {
+
+                    // Otherwise, return to the home page.
+                    window.location.href = "index.html";
+
+                }
+
+            }
+        );
+
+    }
+
+
+    // =============================================
+    // HOME BUTTON
+    // =============================================
+
+    if (homeBtn) {
+
+        homeBtn.addEventListener(
+            "click",
+            function () {
+
+                window.location.href = "index.html";
+
+            }
+        );
+
+    }
+
+})();
+
+</script>
+
+
+
+<!-- =====================================================
      QUIZ DATA LOADER
 
-     IMPORTANT ORDER:
+     LOAD ORDER:
 
-     1. access-guard.js
-     2. quizData.js
-     3. additionalQuizData.js
-     4. quiz.js
+     1. quizData.js
+     2. additionalQuizData.js
+     3. quiz.js
 
-     quiz.js is NOT loaded until the data files finish.
+     The quiz engine loads after the data files.
 ===================================================== -->
 
 <script type="module">
@@ -449,123 +469,86 @@ document.addEventListener(
     "uniqueAcademicAccessGranted",
     function () {
 
-
         console.log(
             "Unique Academic access granted."
         );
 
 
-
-        // =================================================
+        // =============================================
         // PREVENT DOUBLE LOADING
-        // =================================================
+        // =============================================
 
         if (
             window.uniqueAcademicQuizStarted === true
         ) {
 
-
             console.log(
                 "Quiz system already started."
             );
-
 
             return;
 
         }
 
-
-        window.uniqueAcademicQuizStarted =
-            true;
+        window.uniqueAcademicQuizStarted = true;
 
 
-
-        // =================================================
+        // =============================================
         // LOAD SCRIPT FUNCTION
-        // =================================================
+        // =============================================
 
         function loadScript(
             src,
             required = true
         ) {
 
-
             return new Promise(
-                function (
-                    resolve,
-                    reject
-                ) {
-
+                function (resolve, reject) {
 
                     const script =
-                        document.createElement(
-                            "script"
+                        document.createElement("script");
+
+                    script.src = src;
+                    script.async = false;
+
+
+                    script.onload = function () {
+
+                        console.log(
+                            "Loaded:",
+                            src
                         );
 
+                        resolve();
 
-                    script.src =
-                        src;
-
-
-                    script.async =
-                        false;
+                    };
 
 
+                    script.onerror = function () {
 
-                    script.onload =
-                        function () {
+                        console.error(
+                            "FAILED TO LOAD:",
+                            src
+                        );
 
+                        if (required) {
 
-                            console.log(
-                                "Loaded:",
-                                src
+                            reject(
+                                new Error(
+                                    "Could not load " + src
+                                )
                             );
 
+                        } else {
 
                             resolve();
 
-                        };
+                        }
+
+                    };
 
 
-
-                    script.onerror =
-                        function () {
-
-
-                            console.error(
-                                "FAILED TO LOAD:",
-                                src
-                            );
-
-
-                            if (
-                                required
-                            ) {
-
-
-                                reject(
-                                    new Error(
-                                        "Could not load " +
-                                        src
-                                    )
-                                );
-
-                            }
-
-                            else {
-
-
-                                resolve();
-
-                            }
-
-                        };
-
-
-
-                    document.body.appendChild(
-                        script
-                    );
+                    document.body.appendChild(script);
 
                 }
             );
@@ -574,42 +557,36 @@ document.addEventListener(
 
 
 
-        // =================================================
+        // =============================================
         // START QUIZ
-        // =================================================
+        // =============================================
 
         async function startQuiz() {
-
 
             try {
 
 
-                // =============================================
-                // STEP 1
-                // LOAD ORIGINAL QUIZ DATA
-                // =============================================
+                // =====================================
+                // STEP 1: LOAD ORIGINAL QUIZ DATA
+                // =====================================
 
                 await loadScript(
                     "quizData.js",
                     true
                 );
 
-
                 console.log(
                     "quizData.js finished loading."
                 );
 
 
-
-                // =============================================
+                // =====================================
                 // CHECK quizData
-                // =============================================
+                // =====================================
 
                 if (
-                    typeof quizData ===
-                    "undefined"
+                    typeof quizData === "undefined"
                 ) {
-
 
                     throw new Error(
                         "quizData is not defined after quizData.js loaded."
@@ -617,23 +594,20 @@ document.addEventListener(
 
                 }
 
-
                 console.log(
                     "quizData is available."
                 );
 
 
 
-                // =============================================
-                // STEP 2
-                // LOAD ADDITIONAL QUIZ DATA
-                // =============================================
+                // =====================================
+                // STEP 2: LOAD ADDITIONAL QUIZ DATA
+                // =====================================
 
                 await loadScript(
                     "additionalQuizData.js",
                     false
                 );
-
 
                 console.log(
                     "additionalQuizData.js finished loading."
@@ -641,33 +615,26 @@ document.addEventListener(
 
 
 
-                // =============================================
+                // =====================================
                 // GET URL PARAMETERS
-                // =============================================
+                // =====================================
 
                 const params =
                     new URLSearchParams(
                         window.location.search
                     );
 
-
                 const requestedSubject =
-                    params.get(
-                        "subject"
-                    );
-
+                    params.get("subject");
 
                 const requestedChapter =
-                    params.get(
-                        "chapter"
-                    );
+                    params.get("chapter");
 
 
                 console.log(
                     "Requested subject:",
                     requestedSubject
                 );
-
 
                 console.log(
                     "Requested chapter:",
@@ -676,20 +643,18 @@ document.addEventListener(
 
 
 
-                // =============================================
+                // =====================================
                 // CHECK URL
-                // =============================================
+                // =====================================
 
                 if (
                     !requestedSubject ||
                     !requestedChapter
                 ) {
 
-
                     console.error(
                         "Quiz URL is missing subject or chapter."
                     );
-
 
                     return;
 
@@ -697,128 +662,91 @@ document.addEventListener(
 
 
 
-                // =============================================
+                // =====================================
                 // FIND SUBJECT
-                // =============================================
+                // =====================================
 
                 const subjectData =
-                    quizData[
-                        requestedSubject
-                    ];
+                    quizData[requestedSubject];
 
 
-                if (
-                    !subjectData
-                ) {
-
+                if (!subjectData) {
 
                     console.error(
                         "Subject does not exist:",
                         requestedSubject
                     );
 
-
                     console.log(
                         "Available subjects:",
-                        Object.keys(
-                            quizData
-                        )
+                        Object.keys(quizData)
                     );
-
 
                     return;
 
                 }
 
 
-// =============================================
-// FIND CHAPTER
-// =============================================
 
-const chapterData =
-    subjectData[
-        requestedChapter
-    ];
+                // =====================================
+                // FIND CHAPTER
+                // =====================================
 
-
-// =============================================
-// CHECK CHAPTER DATA
-// =============================================
-
-if (
-    !Array.isArray(chapterData) ||
-    chapterData.length === 0
-) {
-
-    console.warn(
-        "No quiz questions found for this chapter."
-    );
-
-    console.log(
-        "Subject:",
-        requestedSubject
-    );
-
-    console.log(
-        "Chapter:",
-        requestedChapter
-    );
-
-    console.log(
-        "Available chapters:",
-        Object.keys(subjectData)
-    );
-
-    // IMPORTANT:
-    // Do not return here.
-    // Continue loading quiz.js so it can
-    // display the empty-state message and
-    // register the Back and Home handlers.
-
-}
-
-                // =============================================
-                // SUCCESSFUL DATA CHECK
-                // =============================================
-
-                console.log(
-                    "================================="
-                );
-
-
-                console.log(
-                    "QUIZ DATA FOUND"
-                );
-
-
-                console.log(
-                    "Subject:",
-                    requestedSubject
-                );
-
-
-                console.log(
-                    "Chapter:",
-                    requestedChapter
-                );
-
-
-                console.log(
-                    "Number of questions:",
-                    chapterData.length
-                );
-
-
-                console.log(
-                    "================================="
-                );
+                const chapterData =
+                    subjectData[requestedChapter];
 
 
 
-                // =============================================
-                // STEP 3
-                // LOAD QUIZ ENGINE LAST
-                // =============================================
+                // =====================================
+                // CHECK CHAPTER DATA
+                //
+                // IMPORTANT:
+                // Do not return when questions are missing.
+                // quiz.js must still load so it can display
+                // the empty-state message.
+                // =====================================
+
+                if (
+                    !Array.isArray(chapterData) ||
+                    chapterData.length === 0
+                ) {
+
+                    console.warn(
+                        "No quiz questions found for this chapter."
+                    );
+
+                    console.log(
+                        "Subject:",
+                        requestedSubject
+                    );
+
+                    console.log(
+                        "Chapter:",
+                        requestedChapter
+                    );
+
+                    console.log(
+                        "Available chapters:",
+                        Object.keys(subjectData)
+                    );
+
+                } else {
+
+                    console.log(
+                        "Quiz questions found:",
+                        chapterData.length
+                    );
+
+                }
+
+
+
+                // =====================================
+                // STEP 3: LOAD QUIZ ENGINE
+                //
+                // Load quiz.js whether the chapter
+                // contains questions or is empty.
+                // =====================================
 
                 await loadScript(
                     "quiz.js",
@@ -830,34 +758,22 @@ if (
                     "quiz.js loaded successfully."
                 );
 
-
                 console.log(
                     "Quiz engine started."
                 );
 
 
-            }
-
-
-            catch (
-                error
-            ) {
-
+            } catch (error) {
 
                 console.error(
                     "================================="
                 );
 
-
                 console.error(
                     "QUIZ START ERROR"
                 );
 
-
-                console.error(
-                    error
-                );
-
+                console.error(error);
 
                 console.error(
                     "================================="
@@ -869,9 +785,9 @@ if (
 
 
 
-        // =================================================
-        // START
-        // =================================================
+        // =============================================
+        // START LOADING
+        // =============================================
 
         startQuiz();
 
@@ -885,7 +801,7 @@ if (
 <!-- =====================================================
      FIREBASE ACCESS CHECK
 
-     This MUST remain AFTER THE LOADER ABOVE.
+     Keep this AFTER the quiz loader.
 ===================================================== -->
 
 <script
