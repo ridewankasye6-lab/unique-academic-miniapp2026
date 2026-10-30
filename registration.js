@@ -1112,3 +1112,112 @@ document
 
         }
     );
+/* =========================================
+   REGISTRATION GUIDE BOX
+   Unique Academic
+   ========================================= */
+
+.registration-guide-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin: 24px 0;
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid #2563eb;
+    border-radius: 16px;
+
+    box-sizing: border-box;
+}
+
+.guide-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.guide-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.guide-content h3 {
+    margin: 0 0 8px;
+    color: #1e3a8a;
+    font-size: 18px;
+}
+
+.guide-content p {
+    margin: 0 0 10px;
+    color: #374151;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.guide-content .guide-amharic {
+    line-height: 1.9;
+}
+
+.registration-guide-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 14px;
+    padding: 13px 16px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.registration-guide-btn:hover {
+    background: #1d4ed8;
+}
+
+.registration-guide-btn span {
+    font-size: 20px;
+}
+
+.guide-content small {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+
+    .registration-guide-box {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .guide-icon {
+        font-size: 26px;
+    }
+
+    .guide-content h3 {
+        font-size: 16px;
+    }
+
+    .registration-guide-btn {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+}
