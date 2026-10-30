@@ -1029,3 +1029,294 @@ footer {
     }
 
 }
+/* =========================================
+   UNIQUE ACADEMIC — ULTRA-PREMIUM GUIDE
+========================================= */
+
+.registration-guide-box {
+    position: relative;
+    overflow: hidden;
+
+    margin: 24px 0;
+    padding: 23px;
+
+    background: linear-gradient(
+        145deg,
+        #ffffff 0%,
+        #f5f8ff 100%
+    );
+
+    border: 1px solid #dce5f4;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 26px rgba(24, 48, 92, 0.08);
+
+    box-sizing: border-box;
+}
+
+.registration-guide-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #173b78,
+        #d6ad55,
+        #173b78
+    );
+}
+
+.guide-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.guide-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+
+    background: linear-gradient(
+        145deg,
+        #183c79,
+        #2858a2
+    );
+
+    border: 2px solid #e4c779;
+    border-radius: 16px;
+
+    font-size: 28px;
+
+    box-shadow: 0 5px 12px rgba(24, 60, 121, 0.16);
+}
+
+.guide-heading {
+    flex: 1;
+    min-width: 0;
+}
+
+.guide-eyebrow {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #a17b2f;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.guide-heading h3 {
+    margin: 0;
+
+    color: #173567;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.guide-heading p {
+    margin: 4px 0 0;
+
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.guide-divider {
+    height: 1px;
+    margin: 19px 0;
+
+    background: linear-gradient(
+        90deg,
+        #e4c779,
+        #e5eaf3,
+        transparent
+    );
+}
+
+.guide-description {
+    margin: 0 0 12px;
+
+    color: #344256;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.guide-amharic {
+    margin: 0 0 19px;
+
+    color: #344256;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.registration-guide-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    background: linear-gradient(
+        110deg,
+        #17376d,
+        #2855a0
+    );
+
+    border: 1px solid #d6b45d;
+    border-radius: 13px;
+
+    box-shadow: 0 5px 13px rgba(23, 55, 109, 0.17);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.registration-guide-btn:hover {
+    box-shadow: 0 8px 18px rgba(23, 55, 109, 0.24);
+    transform: translateY(-1px);
+}
+
+.guide-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 11px;
+
+    font-size: 23px;
+}
+
+.guide-button-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+
+    min-width: 0;
+}
+
+.guide-button-text strong {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.guide-button-text small {
+    color: #e6edff;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.guide-arrow {
+    color: #f0d58c;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.guide-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+
+    margin-top: 17px;
+}
+
+.guide-meta span {
+    padding: 7px 10px;
+
+    color: #475569;
+    background: #edf2fa;
+
+    border: 1px solid #e0e7f1;
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+
+    .registration-guide-box {
+        margin: 20px 0;
+        padding: 18px;
+        border-radius: 17px;
+    }
+
+    .guide-top {
+        gap: 12px;
+    }
+
+    .guide-icon {
+        width: 49px;
+        height: 49px;
+        font-size: 24px;
+        border-radius: 13px;
+    }
+
+    .guide-eyebrow {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+
+    .guide-heading h3 {
+        font-size: 18px;
+    }
+
+    .guide-description,
+    .guide-amharic {
+        font-size: 13px;
+    }
+
+    .registration-guide-btn {
+        gap: 9px;
+        padding: 12px;
+    }
+
+    .guide-button-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .guide-button-text strong {
+        font-size: 12px;
+    }
+
+    .guide-button-text small {
+        font-size: 11px;
+    }
+
+    .guide-meta {
+        gap: 6px;
+    }
+
+    .guide-meta span {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+}
