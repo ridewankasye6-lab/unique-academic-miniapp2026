@@ -274,7 +274,179 @@
             .video-back a {
                 transition: none;
             }
-        }
+      
+    }
+/* =========================================
+   UNIQUE ACADEMIC
+   REAL YOUTUBE VIDEO THUMBNAILS
+   ========================================= */
+
+.video-chapter {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.video-chapter-header {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+/* Video lesson card */
+
+.video-lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    color: #1e293b;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-lesson:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* YouTube thumbnail */
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.video-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Play button */
+
+.video-thumbnail-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(220, 38, 38, 0.96);
+    color: white;
+    font-size: 23px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.video-lesson:hover .video-thumbnail-play {
+    background: #b91c1c;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Lesson information */
+
+.video-lesson-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 14px;
+    flex: 1;
+}
+
+.video-lesson .video-lesson-icon {
+    display: none;
+}
+
+.video-lesson-info {
+    display: block;
+    min-width: 0;
+}
+
+.video-lesson-info small {
+    display: block;
+    margin-bottom: 7px;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+.video-lesson-info strong {
+    display: block;
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Watch button */
+
+.video-lesson .watch-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    white-space: normal;
+}
+
+.video-lesson:hover .watch-button {
+    background: #1d4ed8;
+}
+
+/* Tablet and mobile screens */
+
+@media (max-width: 560px) {
+    .video-chapter {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        padding: 14px;
+    }
+
+    .video-chapter-header {
+        gap: 10px;
+    }
+
+    .video-lesson-content {
+        padding: 13px;
+    }
+
+    .video-lesson-info strong {
+        font-size: 15px;
+    }
+
+    .video-thumbnail-play {
+        width: 54px;
+        height: 39px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .video-lesson,
+    .video-thumbnail-play {
+        transition: none;
+    }
+}
+        
     </style>
 </head>
 
@@ -603,6 +775,118 @@
     </div>
 
 </main>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    "use strict";
+
+    const lessons = document.querySelectorAll(
+        ".video-chapter .video-lesson"
+    );
+
+    lessons.forEach(function (lesson) {
+
+        const link = lesson.getAttribute("href");
+
+        if (!link) return;
+
+        let videoId = "";
+
+        try {
+            const url = new URL(link);
+
+            if (url.hostname === "youtu.be" ||
+                url.hostname.endsWith(".youtu.be")) {
+
+                videoId = url.pathname.split("/").filter(Boolean)[0] || "";
+
+            } else if (
+                url.hostname === "youtube.com" ||
+                url.hostname.endsWith(".youtube.com")
+            ) {
+
+                if (url.pathname === "/watch") {
+                    videoId = url.searchParams.get("v") || "";
+                } else {
+                    const match = url.pathname.match(
+                        /^\/(?:embed|shorts|live)\/([^/]+)/
+                    );
+
+                    if (match) videoId = match[1];
+                }
+            }
+
+        } catch (error) {
+            console.warn("Invalid video URL:", link);
+            return;
+        }
+
+        // Accept standard YouTube video IDs only.
+        if (!/^[a-zA-Z0-9_-]{11}$/.test(videoId)) {
+            return;
+        }
+
+        // Avoid inserting the same thumbnail twice.
+        if (lesson.querySelector(".video-thumbnail")) {
+            return;
+        }
+
+        // Create the thumbnail container.
+        const thumbnail = document.createElement("div");
+        thumbnail.className = "video-thumbnail";
+
+        // Load the thumbnail associated with this YouTube video.
+        const image = document.createElement("img");
+
+        image.src =
+            "https://img.youtube.com/vi/" +
+            videoId +
+            "/hqdefault.jpg";
+
+        image.alt =
+            lesson.querySelector(".video-lesson-info strong")?.textContent.trim()
+            || "Economics video lesson";
+
+        image.loading = "lazy";
+        image.decoding = "async";
+
+        // Hide the image if its thumbnail cannot load.
+        image.addEventListener("error", function () {
+            thumbnail.style.display = "none";
+        });
+
+        // Create the play button.
+        const playButton = document.createElement("span");
+
+        playButton.className = "video-thumbnail-play";
+        playButton.setAttribute("aria-hidden", "true");
+        playButton.textContent = "▶";
+
+        thumbnail.appendChild(image);
+        thumbnail.appendChild(playButton);
+
+        // Group the lesson title and Watch button together.
+        const content = document.createElement("div");
+        content.className = "video-lesson-content";
+
+        const lessonInfo = lesson.querySelector(".video-lesson-info");
+        const watchButton = lesson.querySelector(".watch-button");
+
+        if (lessonInfo) {
+            content.appendChild(lessonInfo);
+        }
+
+        if (watchButton) {
+            content.appendChild(watchButton);
+        }
+
+        // Add the thumbnail and lesson information to the card.
+        lesson.prepend(thumbnail);
+        lesson.appendChild(content);
+
+    });
+
+});
+</script>
 </body>
 </html>
